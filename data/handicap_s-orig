@@ -36,7 +36,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+ 12558,11920 12617,1
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024)
-#: last_checked: 2024-04-21
+#: last_checked: 2024-05-03
 #: check_frequency: 60d
 #: next_check: 2024-05-07
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -2364,7 +2364,8 @@ KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 
 Hauptweg - Uferweg: einige Fußgänger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
-(Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
+(Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
+(Am Hohenzollernkanal - Bernauer Str.): einige Fußgänger	q0- -192,16054 -206,16066 -207,16083 -215,16088 -257,16103
 Saatwinkler Steg, Rohrbruchwiesen: einige Fußgänger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fußgänger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fußgänger	q1 -2587,16600 -2632,16347
@@ -4911,6 +4912,10 @@ Heiner-Müller-Str. (Mittelstreifen): einige Fußgänger	q2 17640,8627 17648,8626
 #: note: die Gegenrichtung wird in gesperrt-orig behandelt
 Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 # 
+#: by: mapillary
+#: note: Ausschilderung: Privatgelände... Fahrrad fahren verboten...
+Borkumstr.: Schulgelände	q2 11335,17807 11412,17823
+# 
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -5296,16 +5301,23 @@ Weinstr.: Fußgänger, Schulen	q3 11774,13251 11914,13381
 #: note: früher "q2"
 (Mollstr. - Barnimstr.): Fußgänger, Radfahren offiziell nicht erlaubt	q4+ 11723,13139 11749,13215
 Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
+# 
 #: note: nach den Bauarbeiten im Sommer/Herbst 2021 stellenweise etwas breiter geworden
 (zum Anhalter Steg): Fußgänger	q2+ 8668,10219 8668,10236 8715,10314
 (zum Anhalter Steg): Fußgänger, im Kurvenbereich unübersichtlich	q3 8715,10314 8711,10322
 (Anhalter Steg): Fußgänger	q1 8711,10322 8726,10351 8760,10408 8773,10429
-#: XXX Existieren hier auch neue FH-KB-Grünanlagenschilder mit einem Radfahrverbot?
-(Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8773,10429 8776,10548 8808,10598 8853,10708
+#: historical_note: früher Fußgänger, q1
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
+(Anhalter Steg - Anhalter Bahnhof): Fußgänger, Grünanlage	q3 8773,10429 8776,10548 8808,10598
+#: note: im Bereich des Tempodroms möglicherweise keine Grünanlage?
+(Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8808,10598 8853,10708
 #: historical_note: früher Fußgänger, q1
 #: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
 (Anhalter Steg - Anhalter Bahnhof): Fußgänger, Grünanlage	q3 8853,10708 8912,10846 8938,10872
-(Weg im Elise-Tilse-Park): Fußgänger	q1 8776,10548 8778,10578 8812,10662
+#: historical_note: früher Fußgänger, q1
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
+(Weg im Elise-Tilse-Park): Fußgänger	q3 8776,10548 8778,10578 8812,10662
+# 
 #: XXX_prog BS (an der Linkstr.), ansonsten trotzdem q4 
 Fontaneplatz: Fußgänger, Bordsteinkante	q4 8474,11350 8427,11365
 (Fontaneplatz - Alte Potsdamer Str.): Fußgänger, schmal	q4 8427,11365 8389,11378

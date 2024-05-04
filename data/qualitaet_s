@@ -190,7 +190,7 @@ Suadicanistr.: Asphalt	Q0 7858,7462 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Kopfsteinpflaster	Q2 10675,8940 10661,8914
 Lilienthalstr.: Asphalt	Q0 10661,8914 10640,8832 10633,8705
-Lilienthalstr.: Asphalt, etwas rau	Q1 10633,8705 10615,8558
+Lilienthalstr.: rauer Asphalt	Q1 10633,8705 10615,8558
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 12330,8636 12392,8724 12434,8776 12478,8829 12590,8977 12682,9089
 Weichselstr.: Asphalt	Q0 12682,9089 12755,9188
 Weichselstr./Maybachufer: Asphalt	Q0 12755,9188 12845,9304 12837,9353
@@ -2333,7 +2333,7 @@ Spekteweg: Asphalt	Q0 -4053,15167 -4277,14981 -4303,14960 -4466,14817 -4671,1481
 Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4076,16017 4089,15978 4084,15859
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
-(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -206,16066
 Bergstr.: Asphalt	Q0 -7344,12854 -7345,12930 -7334,13058 -7322,13161 -7302,13253 -7266,13341 -7273,13354
 Hahnebergweg: Asphalt	Q0 -6854,12478 -6891,12489
 Hahnebergweg: Kleinsteinpflaster	Q1 -6891,12489 -7294,12560
@@ -3720,7 +3720,7 @@ Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
 (Am Hohenzollernkanal): Asphalt	Q0 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768
-(Am Hohenzollernkanal): Asphalt	Q0 -203,16064 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
+(Am Hohenzollernkanal): Asphalt	Q0 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 Juliushof: Asphalt	Q0 13129,6535 13143,6499 13142,6453
 Juliushof: Asphalt	Q0 13168,6444 13142,6453 13070,6449
 Altgrabauer Str.: Beton	Q0 21910,7206 21875,7300 21864,7358 21865,7397
@@ -8424,8 +8424,8 @@ Rue Dominique Larrey: Beton mit Schäden	Q1 3738,16648 3659,16507 3624,16445
 Mecklenburgweg: Verbundsteinpflaster	Q1 1921,15936 1872,16081 1797,16083 1708,16061
 (Mecklenburgweg - Singdrosselsteig): unbefestigte Straße	Q2 1708,16061 1543,16003
 (Mecklenburgweg - Singdrosselsteig): Verbundsteinpflaster	Q1 1543,16003 1321,15944
-(Uferweg am Hohenzollernkanal - Bernauer Str.): Asphalt	Q0 -203,16064 -207,16083 -216,16084
-(Bernauer Str. - Uferweg am Hohenzollernkanal): Asphalt	Q0 -216,16084 -257,16103
+(Uferweg am Hohenzollernkanal - Bernauer Str.): Asphalt	Q0 -206,16066 -207,16083 -215,16088
+(Bernauer Str. - Uferweg am Hohenzollernkanal): Asphalt	Q0 -215,16088 -257,16103
 (Uferweg am Hohenzollernkanal - KGA Vor den Toren III): Verbundsteinpflaster	Q1 1349,15797 1321,15944 1318,15959 1311,16003
 (KGA Vor den Toren III): Rasengittersteine	Q2 1311,16003 1273,16189 1233,16230
 (KGA Vor den Toren III): Gras	Q3 1233,16230 1033,16278
@@ -16210,7 +16210,8 @@ Privatstr. 10: Asphalt mit Schäden	Q1 17182,17375 17167,17331 17162,17294 17153,
 Privatstr. 10: Asphalt mit Schäden	Q1 17125,17147 17119,17071
 Privatstr. 10: Asphalt mit Schäden	Q1 17167,17145 17160,17068
 Privatstr. 10: Asphalt mit Schäden	Q1 17141,17070 17134,16988 17129,16922 17120,16849 17117,16785
-Parkstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14466,20455 14309,20486 13931,20549 13888,20558
+Parkstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14466,20455 14309,20486 13931,20549
+Parkstr. (Blankenburg): Asphalt	Q0 13931,20549 13888,20558
 Söllerpfad: gutes Verbundsteinpflaster	Q1 1950,25763 1843,25746
 Rauentaler Str.: mäßiges Kopfsteinpflaster	Q2 3124,26288 3138,26315 3168,26445 3170,26502 3162,26562 3130,26657 3069,26756
 Flatower Str.: schlechter Asphalt	Q1 -5049,16987 -4999,16971 -4875,16928

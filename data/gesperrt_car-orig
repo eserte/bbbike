@@ -886,7 +886,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: osm_watch: way id="155071540" version="22"
 #: last_checked: 2024-04-13
 #: check_frequency: 60d
-#: next_check: 2024-04-24
+# REMOVED --- #: next_check: 2024-04-24
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
 Scharnhorststr.: Poller	3 7877,14504 7804,14445 *
@@ -1993,6 +1993,8 @@ Wallenbergstr.	1 4319,8493 4229,8499 4143,8501
 # 
 # REMOVED --- #: add_fragezeichen: Wird die Einbahnstraße für Radfahrer geöffnet? --- #: osm_watch: way id="57356015" version="18" --- #: XXX Es existiert ein noch durchgestrichenes "Radfahrer frei"-Schild --- #: last_checked: 2024-03-13 (mapillary)
 Cardinalstr.	1 21896,5724 21828,5623 21706,5541
+# 
+Schloßstr. - Feuerbachstr.: vorgeschrieben Fahrtrichtung geradeaus	3 5269,6305 5244,6261 5390,6299
 # 
 ######################################################################
 #: note: Kiezblock Reuterkiez vvv

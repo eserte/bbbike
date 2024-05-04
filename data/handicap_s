@@ -831,7 +831,8 @@ KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4883,15289 4777,15398 4675,15529 
 Hauptweg - Uferweg: einige Fuﬂg‰nger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
-(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
+(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
+(Am Hohenzollernkanal - Bernauer Str.): einige Fuﬂg‰nger	q0 -192,16054 -206,16066 -207,16083 -215,16088 -257,16103
 Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1 -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fuﬂg‰nger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fuﬂg‰nger	q1 -2587,16600 -2632,16347
@@ -2554,6 +2555,7 @@ Lugierring: einige Fuﬂg‰nger	q2 20116,836 20142,824
 Ruth-Baumgarte-Str. (Mittelstreifen): einige Fuﬂg‰nger	q2 17608,8483 17599,8485
 Heiner-M¸ller-Str. (Mittelstreifen): einige Fuﬂg‰nger	q2 17640,8627 17648,8626
 Degnerstr.: Tramzufahrt, auf B¸rgersteig ausweichen	q3; 16449,15604 16445,15590
+Borkumstr.: Schulgel‰nde	q2 11335,17807 11412,17823
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2714,9 +2716,10 @@ Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (zum Anhalter Steg): Fuﬂg‰nger	q2 8668,10219 8668,10236 8715,10314
 (zum Anhalter Steg): Fuﬂg‰nger, im Kurvenbereich un¸bersichtlich	q3 8715,10314 8711,10322
 (Anhalter Steg): Fuﬂg‰nger	q1 8711,10322 8726,10351 8760,10408 8773,10429
-(Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger	q1 8773,10429 8776,10548 8808,10598 8853,10708
+(Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger, Gr¸nanlage	q3 8773,10429 8776,10548 8808,10598
+(Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger	q1 8808,10598 8853,10708
 (Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger, Gr¸nanlage	q3 8853,10708 8912,10846 8938,10872
-(Weg im Elise-Tilse-Park): Fuﬂg‰nger	q1 8776,10548 8778,10578 8812,10662
+(Weg im Elise-Tilse-Park): Fuﬂg‰nger	q3 8776,10548 8778,10578 8812,10662
 Fontaneplatz: Fuﬂg‰nger, Bordsteinkante	q4 8474,11350 8427,11365
 (Fontaneplatz - Alte Potsdamer Str.): Fuﬂg‰nger, schmal	q4 8427,11365 8389,11378
 Voxstr.: Fuﬂg‰nger, Restaurantbetrieb	q4 8309,11390 8375,11368

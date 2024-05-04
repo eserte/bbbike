@@ -1570,6 +1570,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6168,6467
 	X 6083,6451
 	X 6071,6559
+#: note: Grüner Pfeil für Radfahrer (Thorwaldsenstr. -> Bergstr., SO -> W)
 	X 6696,5854
 	X 5966,6747
 	X 4786,8007
@@ -3362,7 +3363,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-04-21 vvv
+#: last_checked: 2024-05-02 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3629,7 +3630,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5187,22601
 # REMOVED (bei osm wieder eingezeichnet) --- #: next_check_id: TEGELERBRUECKE-2021 --- #: XXX wird diese Ampel jemals wieder in Betrieb genommen? zumindest gibt es noch die Haltelinien, aber alle Masten wurden zurückgebaut --- #: osm_watch: node id="28321258" version="11" --- #: last_checked: 2023-11-25 (mapillary) --- #: check_frequency: 180d --- #: next_check: 2024-04-30
 #: note: Anforderungsampel
-	F -216,16084
+	F -215,16088
 #: note: Anforderungsampel
 #: off: Sunday (gesehen 2016-10-03 gegen 15:45)
 #: on: Samstag (gesehen 2016-10-08 gegen 15:00)

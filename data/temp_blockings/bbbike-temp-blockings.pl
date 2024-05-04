@@ -32699,7 +32699,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Passauer Str.: Fahrbahn gesperrt (Stand Februar 2024), Ende der Bauarbeiten unbekannt',
+       text  => 'Passauer Str.: Fahrbahn gesperrt (Stand Mai 2024), Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
        data  => <<EOF,
@@ -32714,13 +32714,12 @@ EOF
 #: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: by: https://berliner-abendblatt.de/berlin-news/mehrere-berliner-bauprojekte-von-signa-insolvent-id241669
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/passauer-stra%C3%9Fe-1%E2%80%933-no-1-passauer.531/page-3#post-22316
-#: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das?)) (inaktiv)
+#: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="9"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2024-02-10 (architektur-urbanistik)
+#: last_checked: 2024-05-04
 #: check_frequency: 120d
-#: next_check: 2024-04-22
 	q4::inwork 6021,10405 6116,10688
 EOF
      },
@@ -37587,7 +37586,7 @@ EOF
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-04-06 (architektur-urbanistik)
+#: last_checked: 2024-05-04
 #: check_frequency: 150d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -37804,11 +37803,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Straße R (Umleitung Berlin-Kopenhagen-Radweg): Zaun, Durchfahrt für Radfahrer nicht möglich',
+       #text  => 'Straße R (Umleitung Berlin-Kopenhagen-Radweg): Zaun, Durchfahrt für Radfahrer nicht möglich',
+       text  => 'Straße R: Zaun, Durchfahrt für Radfahrer nicht möglich',
        type  => 'gesperrt',
-       source_id => 'https://www.bz-berlin.de/berlin/reinickendorf/anwohner-stoppen-rad-raser-mit-einem-eigenen-zaun',
        data  => <<EOF,
 #: next_check_id: TEGELERBRUECKE-2021
+#: by: https://www.bz-berlin.de/berlin/reinickendorf/anwohner-stoppen-rad-raser-mit-einem-eigenen-zaun
 #: by: https://www.tagesspiegel.de/berlin/berliner-radweg-mit-hinderniszaun-sollen-fahrradfahrer-hier-klettern-8877799.html
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/anwohner-einer-privatstrasse-in-saatwinkel-bremsen-rad-raser-aus_a364934
 #: by: https://nitter.net/txtnso/status/1609517082110201857
@@ -38297,7 +38297,7 @@ EOF
      { from  => $isodate2epoch->("2023-11-26 00:00:00"), # $isodate2epoch->("2023-07-23 00:00:00"), # 1676329200, # 2023-02-14 00:00
        until => $isodate2epoch->("2024-05-31 18:00:00"), # 1700765306, # $isodate2epoch->("2023-11-30 23:59:59"), # $isodate2epoch->("2023-10-31 18:00:00"), # undef, # 1681595999, # 2023-04-15 23:59
        #text  => 'Volkspark Wilmersdorf: Weg zwischen Bundesallee und Prinzregentenstr. wird saniert, Komplettsperrung, voraussichtlich bis Ende Oktober 2023, evtl. wird verlängert (Stand Anfang November Oktober 2023: noch immer gesperrt)',
-       text  => 'Volkspark Wilmersdorf: Weg zwischen Livländische Str. und Schoelerpark wird saniert, Sperrungen möglich, voraussichtlich bis zum Frühjahr 2024',
+       text  => 'Volkspark Wilmersdorf: Weg zwischen Livländische Str. und Schoelerpark wird saniert, Stand Mai 2024: Weg ist gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: VOLKSPARKWILMERSDORF-2023
@@ -38313,7 +38313,8 @@ EOF
 # REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
 # REMOVED (hier fertig) ---	2::inwork 5730,8207 5918,8221
 # REMOVED (hier fertig) ---	2::inwork 5433,8407 5454,8403 5617,8258
-#: last_checked: 2024-04-03
+#: last_checked: 2024-05-04
+#: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-03-25
 	2::inwork 5166,8467 5212,8602
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -38489,7 +38490,7 @@ EOF
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (G,W) vvv
 #: osm_watch: way id="151353924" version="14"
-#: last_checked: 2024-03-26 vvv
+#: last_checked: 2024-05-04 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
 # REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
@@ -41028,7 +41029,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GEORGWILHELM-2024
-#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv) (bis 29.01.2024) (bis 13.03.2024) (bis 25.03.2024) (bis 04.05.2024)
+#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv) (bis 29.01.2024) (bis 13.03.2024) (bis 25.03.2024) (bis 04.05.2024) (inaktiv)
 	q4::inwork 2702,10006 2687,10053
 EOF
      },
@@ -41428,13 +41429,13 @@ EOF
      { from  => 1699340417, # 2023-11-07 08:00
        until => undef, # 1704063600, # 2024-01-01 00:00
        #text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, voraussichtlich bis Dezember 2023, vermutlich noch länger',
-       text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte April 2024: Sperrung besteht weiterhin)',
+       text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Anfang Mai 2024: Sperrung besteht weiterhin)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
 #: by: mapillary
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-04-14
+#: last_checked: 2024-05-02 (mapillary)
 # REMOVED --- #: next_check: 2023-12-31
 	2::inwork 9462,18234 9460,18053
 EOF
@@ -41913,14 +41914,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1714833623, # undef, # XXX
        text  => 'Genthiner Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt?
-#: also_indoor: traffic (B,G,W)
-#: last_checked: 2024-04-09
-# REMOVED --- #: next_check: 2024-01-08
+# REMOVED (nein) --- #: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt? --- #: also_indoor: traffic (B,G,W) --- #: last_checked: 2024-04-09 --- #: next_check: 2024-01-08
 	q4::inwork 7461,11051 7415,10883
 EOF
      },
@@ -42004,7 +42002,7 @@ EOF
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-04-06 (mapillary)
+#: last_checked: 2024-05-02 (mapillary)
 	2::inwork 9586,17665 9396,17863
 # REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 EOF
@@ -42129,7 +42127,7 @@ EOF
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
 #: priority: #B vvv
-#: last_checked: 2024-04-12 vvv
+#: last_checked: 2024-05-02 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-09-23 vvv
 #: osm_watch: way id="375991056" version="17"
@@ -42457,7 +42455,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
 #: by[nocache]: https://twitter.com/SaskiaEllenbeck/status/1780312309820235976 (zur Umgestaltung)
-#: last_checked: 2024-04-09 vvv
+#: last_checked: 2024-05-04 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
 #: next_check: 2024-05-22 vvv
@@ -42601,13 +42599,13 @@ EOF
 #: also_indoor: traffic (B,ex-H,G,W)
 #: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
 #: note: bei rbb "bis auf weiteres"
-#: last_checked: 2024-04-13 vvv
-#: next_check: 2024-04-30 vvv
+#: last_checked: 2024-05-04 vvv
+# REMOVED --- #: next_check: 2024-04-30 vvv
 	q4::inwork 7007,9220 6994,9288
 	q3::inwork 6994,9288 7118,9315
 	q3::inwork 7002,9526 6994,9288
 # REMOVED (hier nicht)	2::inwork 6994,9288 6921,9275
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 EOF
@@ -42748,6 +42746,17 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1443204.php
 	2::inwork 7562,1796 7565,1806 7592,1892 7612,1918 7646,2019 7645,2110 7636,2161 7634,2267 7665,2357 7704,2482 7779,2722 7783,2730 7798,2765 7807,2961
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Eisenbahnstr.: Wochenmarkt vor der Markthalle 9, samstags 10 bis 18 Uhr',
+       type  => 'handicap',
+       recurring => 1,
+       data  => <<EOF,
+#: by: https://www.tagesspiegel.de/berlin/bezirke/wochenmarkt-vor-der-markthalle-erweiterung-fur-markthalle-neun-in-berlin-kreuzberg-genehmigt-10575601.html (befristet bis 13. September 2024)
+#: next_check: 2024-09-13
+	q4::temp:clock 12294,10663 12363,10781
 EOF
      },
     );

@@ -4967,19 +4967,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: by: https://berliner-abendblatt.de/berlin-news/mehrere-berliner-bauprojekte-von-signa-insolvent-id241669
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/passauer-stra%C3%9Fe-1%E2%80%933-no-1-passauer.531/page-3#post-22316
-#: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das?)) (inaktiv)
+#: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="9"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2024-02-10 (architektur-urbanistik)
+#: last_checked: 2024-05-04
 #: check_frequency: 120d
-#: next_check: 2024-04-22
 	q4::inwork 6021,10405 6116,10688
 ',
          'from' => undef,
          'id' => 3320,
          'source_id' => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
-         'text' => 'Passauer Str.: Fahrbahn gesperrt (Stand Februar 2024), Ende der Bauarbeiten unbekannt',
+         'text' => 'Passauer Str.: Fahrbahn gesperrt (Stand Mai 2024), Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6194,7 +6193,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-04-06 (architektur-urbanistik)
+#: last_checked: 2024-05-04
 #: check_frequency: 150d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -6257,6 +6256,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        {
          'data' => '#: next_check_id: TEGELERBRUECKE-2021
+#: by: https://www.bz-berlin.de/berlin/reinickendorf/anwohner-stoppen-rad-raser-mit-einem-eigenen-zaun
 #: by: https://www.tagesspiegel.de/berlin/berliner-radweg-mit-hinderniszaun-sollen-fahrradfahrer-hier-klettern-8877799.html
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/anwohner-einer-privatstrasse-in-saatwinkel-bremsen-rad-raser-aus_a364934
 #: by: https://nitter.net/txtnso/status/1609517082110201857
@@ -6270,8 +6270,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 ',
          'from' => undef,
          'id' => 3687,
-         'source_id' => 'https://www.bz-berlin.de/berlin/reinickendorf/anwohner-stoppen-rad-raser-mit-einem-eigenen-zaun',
-         'text' => 'Straße R (Umleitung Berlin-Kopenhagen-Radweg): Zaun, Durchfahrt für Radfahrer nicht möglich',
+         'text' => 'Straße R: Zaun, Durchfahrt für Radfahrer nicht möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6453,14 +6452,15 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 # REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
 # REMOVED (hier fertig) ---	2::inwork 5730,8207 5918,8221
 # REMOVED (hier fertig) ---	2::inwork 5433,8407 5454,8403 5617,8258
-#: last_checked: 2024-04-03
+#: last_checked: 2024-05-04
+#: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-03-25
 	2::inwork 5166,8467 5212,8602
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 ',
          'from' => 1700953200,
          'id' => 3725,
-         'text' => 'Volkspark Wilmersdorf: Weg zwischen Livländische Str. und Schoelerpark wird saniert, Sperrungen möglich, voraussichtlich bis zum Frühjahr 2024',
+         'text' => 'Volkspark Wilmersdorf: Weg zwischen Livländische Str. und Schoelerpark wird saniert, Stand Mai 2024: Weg ist gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => 1717171200
        },
@@ -6549,7 +6549,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (G,W) vvv
 #: osm_watch: way id="151353924" version="14"
-#: last_checked: 2024-03-26 vvv
+#: last_checked: 2024-05-04 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
 # REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
@@ -7330,17 +7330,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: GEORGWILHELM-2024
-#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv) (bis 29.01.2024) (bis 13.03.2024) (bis 25.03.2024) (bis 04.05.2024)
-	q4::inwork 2702,10006 2687,10053
-',
-         'from' => 1696309200,
-         'id' => 3930,
-         'text' => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 04.05.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1714834800
-       },
+       undef,
        {
          'data' => '#: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
@@ -7503,13 +7493,13 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
 #: by: mapillary
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-04-14
+#: last_checked: 2024-05-02 (mapillary)
 # REMOVED --- #: next_check: 2023-12-31
 	2::inwork 9462,18234 9460,18053
 ',
          'from' => 1699340417,
          'id' => 3959,
-         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte April 2024: Sperrung besteht weiterhin)',
+         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Anfang Mai 2024: Sperrung besteht weiterhin)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7639,19 +7629,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Ist die Genthiner Straße weiterhin gesperrt?
-#: also_indoor: traffic (B,G,W)
-#: last_checked: 2024-04-09
-# REMOVED --- #: next_check: 2024-01-08
-	q4::inwork 7461,11051 7415,10883
-',
-         'from' => undef,
-         'id' => 3991,
-         'text' => 'Genthiner Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7682,7 +7660,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-04-06 (mapillary)
+#: last_checked: 2024-05-02 (mapillary)
 	2::inwork 9586,17665 9396,17863
 # REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 ',
@@ -7749,7 +7727,7 @@ Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
 #: priority: #B vvv
-#: last_checked: 2024-04-12 vvv
+#: last_checked: 2024-05-02 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-09-23 vvv
 #: osm_watch: way id="375991056" version="17"
@@ -7899,7 +7877,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
 #: by[nocache]: https://twitter.com/SaskiaEllenbeck/status/1780312309820235976 (zur Umgestaltung)
-#: last_checked: 2024-04-09 vvv
+#: last_checked: 2024-05-04 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
 #: next_check: 2024-05-22 vvv
@@ -8013,13 +7991,13 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 #: also_indoor: traffic (B,ex-H,G,W)
 #: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
 #: note: bei rbb "bis auf weiteres"
-#: last_checked: 2024-04-13 vvv
-#: next_check: 2024-04-30 vvv
+#: last_checked: 2024-05-04 vvv
+# REMOVED --- #: next_check: 2024-04-30 vvv
 	q4::inwork 7007,9220 6994,9288
 	q3::inwork 6994,9288 7118,9315
 	q3::inwork 7002,9526 6994,9288
 # REMOVED (hier nicht)	2::inwork 6994,9288 6921,9275
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',
@@ -8151,6 +8129,18 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'text' => 'Grünzug Pappritz-Wichura-Straße: Bauarbeiten, Wege können gesperrt sein, vom 2.5.2024 bis voraussichtlich Anfang Juli 2024',
          'type' => 'gesperrt',
          'until' => 1719957599
+       },
+       {
+         'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/wochenmarkt-vor-der-markthalle-erweiterung-fur-markthalle-neun-in-berlin-kreuzberg-genehmigt-10575601.html (befristet bis 13. September 2024)
+#: next_check: 2024-09-13
+	q4::temp:clock 12294,10663 12363,10781
+',
+         'from' => undef,
+         'id' => 4051,
+         'recurring' => 1,
+         'text' => 'Eisenbahnstr.: Wochenmarkt vor der Markthalle 9, samstags 10 bis 18 Uhr',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

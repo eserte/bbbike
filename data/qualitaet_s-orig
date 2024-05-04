@@ -175,7 +175,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung) (3. Quartal 2024 - 3. Quartal 2024)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
 #: osm_watch: way id="102486250" version="23"
-#: last_checked: 2023-12-26
+#: last_checked: 2024-05-04
 #: check_frequency: 120d
 #: next_check: 2024-09-30
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
@@ -193,7 +193,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2024-04-23
+#: last_checked: 2024-05-04
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -205,7 +205,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2024-04-23 vvv
+#: last_checked: 2024-05-04 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -334,7 +334,7 @@ Suadicanistr.: Asphalt	Q0 7858,7462 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Kopfsteinpflaster	Q2 10675,8940 10661,8914
 Lilienthalstr.: Asphalt	Q0 10661,8914 10640,8832 10633,8705
-Lilienthalstr.: Asphalt, etwas rau	Q1+ 10633,8705 10615,8558
+Lilienthalstr.: rauer Asphalt	Q1 10633,8705 10615,8558
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12392,8724 12434,8776 12478,8829 12590,8977 12682,9089
 #: note: Parkstreifen gepflastert
 Weichselstr.: Asphalt	Q0 12682,9089 12755,9188
@@ -3234,7 +3234,7 @@ Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4076,16017 4089,1597
 #: corrected_by: srt (asphaltiert -> Verbundsteinpflaster)
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
 #: corrected_by: srt (mittlerweile Wurzelschäden)
-(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -206,16066
 #: by: ^^^
 # 
 #: corrected_by: Sven Baltuttis (Kopfsteinpflaster Q2 -> Asphalt Q0)
@@ -4878,7 +4878,7 @@ Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
 (Am Hohenzollernkanal): Asphalt	Q0 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768
-(Am Hohenzollernkanal): Asphalt	Q0 -203,16064 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
+(Am Hohenzollernkanal): Asphalt	Q0 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 Juliushof: Asphalt	Q0 13129,6535 13143,6499 13142,6453
 Juliushof: Asphalt	Q0 13168,6444 13142,6453 13070,6449
 Altgrabauer Str.: Beton	Q0 21910,7206 21875,7300 21864,7358 21865,7397
@@ -10052,8 +10052,8 @@ Rue Dominique Larrey: Beton mit Schäden	Q1- 3738,16648 3659,16507 3624,16445
 Mecklenburgweg: Verbundsteinpflaster	Q1 1921,15936 1872,16081 1797,16083 1708,16061
 (Mecklenburgweg - Singdrosselsteig): unbefestigte Straße	Q2 1708,16061 1543,16003
 (Mecklenburgweg - Singdrosselsteig): Verbundsteinpflaster	Q1 1543,16003 1321,15944
-(Uferweg am Hohenzollernkanal - Bernauer Str.): Asphalt	Q0 -203,16064 -207,16083 -216,16084
-(Bernauer Str. - Uferweg am Hohenzollernkanal): Asphalt	Q0 -216,16084 -257,16103
+(Uferweg am Hohenzollernkanal - Bernauer Str.): Asphalt	Q0 -206,16066 -207,16083 -215,16088
+(Bernauer Str. - Uferweg am Hohenzollernkanal): Asphalt	Q0 -215,16088 -257,16103
 (Uferweg am Hohenzollernkanal - KGA Vor den Toren III): Verbundsteinpflaster	Q1 1349,15797 1321,15944 1318,15959 1311,16003
 (KGA Vor den Toren III): Rasengittersteine	Q2 1311,16003 1273,16189 1233,16230
 (KGA Vor den Toren III): Gras	Q3 1233,16230 1033,16278
@@ -17306,7 +17306,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="15"
-#: last_checked: 2023-12-09
+#: last_checked: 2024-05-04
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -26861,9 +26861,12 @@ Privatstr. 10: Asphalt mit Schäden	Q1- 17141,17070 17134,16988 17129,16922 17120
 #: corrected_by ^^^
 #: by: ^^^
 # 
-#: by: Wachholz:
+#: by: Wachholz: vvv
 #: confirmed_by: srt
-Parkstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14466,20455 14309,20486 13931,20549 13888,20558
+Parkstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14466,20455 14309,20486 13931,20549
+#: corrected_by: mapillary (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht)
+Parkstr. (Blankenburg): Asphalt	Q0 13931,20549 13888,20558
+#: by ^^^
 # 
 #: by: Oliver Blankenstein:
 Söllerpfad: gutes Verbundsteinpflaster	Q1 1950,25763 1843,25746
@@ -33056,4 +33059,7 @@ Kreuzungsbereich asphaltiert	Q0 2294,19328
 Kreuzungsbereich asphaltiert	Q0 2353,19217
 Einmündungsbereich asphaltiert	Q0 2320,19212
 Kreuzungsbereich mit Kleinsteinpflaster	Q1+ 2081,19072
+Einmündungsbereich mit Kopfsteinpflaster	Q2 5177,8139
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 7817,5719
+Kreuzungsbereich asphaltiert	Q0 13931,20549
 #: ignore ^^^

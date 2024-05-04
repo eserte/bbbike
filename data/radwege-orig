@@ -140,7 +140,7 @@ sehr schmal, Verbundsteinpflaster	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,735
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2024-03-26 vvv
+#: last_checked: 2024-05-04 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -243,7 +243,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2024-04-09 vvv
+#: last_checked: 2024-05-04 vvv
 #: check_frequency: 45d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
@@ -417,7 +417,7 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtregelung noch prüfen
 #: osm_watch: way id="940399849" version="11"
 #: osm_watch: way id="1203072585" version="3"
-#: last_checked: 2024-04-18
+#: last_checked: 2024-05-01 (mapillary)
 	RW0;RW0 13033,8628 13124,8562 13217,8493
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
@@ -1457,7 +1457,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="22"
-#: last_checked: 2024-02-07
+#: last_checked: 2024-05-04
 #: check_frequency: 90d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -1474,8 +1474,8 @@ Verbundsteinpflaster	RW1; 4769,8563 4629,8461 4521,8379 4473,8351 4423,8315 4344
 	RW1; 4280,8188 4344,8246 4423,8315 4473,8351 4521,8379 4629,8461 4769,8563 4892,8624 4918,8740 4917,8772
 	RW2; 4917,8772 4918,8872
 	RW1;RW1 3346,7369 3279,7386 3228,7401 3042,7465 2757,7604
-	RW1; 5346,7860 5344,7729 5343,7681 5344,7620 5350,7554
-	RW1; 5350,7554 5352,7428
+Gehwegplatten, teilweise recht schmal	RW1; 5346,7860 5344,7729 5343,7681 5344,7620 5350,7554
+Gehwegplatten	RW1; 5350,7554 5352,7428
 Gehwegplatten, Bord gegen Gehweg	RW1; 5352,7428 5350,7554
 Gehwegplatten, teilweise recht schmal	RW1; 5350,7554 5353,7617 5353,7680 5353,7730 5346,7860
 Gehwegplatten	RW1; 5352,7428 5357,7391
@@ -1934,7 +1934,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 #: note: Detmolder Str.
 #: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen)
 #: XXX Sanierung der Radwege vvv
-#: last_checked: 2024-03-22 vvv
+#: last_checked: 2024-05-04 vvv
 #: next_check: 2026-12-31 vvv
 	RW1;RW1 5363,8024 5325,8023 5058,8012 5048,8012
 # REMOVED (hängt nicht mehr) --- #: note: ein vergessenes Radwegschild?
@@ -5093,13 +5093,13 @@ Verbundsteinpflaster	RW1;RW1 16873,14236 16881,14063 16875,13834
 	RW2;RW4 9816,16565 9781,16569
 	RW4;RW4 9781,16569 9617,16590
 	RW2;RW1 9617,16590 9514,16603 9442,16610
-	RW3; -216,16084 -208,16120 -198,16161 -193,16186 -168,16269
+	RW3; -215,16088 -208,16120 -198,16161 -193,16186 -168,16269
 	RW4; -168,16269 -193,16186 -198,16161
-	RW4; -198,16161 -208,16120 -216,16084
-asphaltiert	RW1; -216,16084 -224,16041 -233,15997
+	RW4; -198,16161 -208,16120 -215,16088
+asphaltiert	RW1; -215,16088 -224,16041 -233,15997
 # REMOVED --- #: next_check_id: TEGELERBRUECKE-2021 --- #: XXX noch nicht fertiggestellt --- #: last_checked: 2023-10-03 --- #	RW3; -233,15997 -252,15903
 	RW3; -233,15997 -252,15903
-asphaltiert	RW1; -233,15997 -224,16041 -216,16084
+asphaltiert	RW1; -233,15997 -224,16041 -215,16088
 	RW1; -344,15200 -286,15354 -302,15546 -302,15602 -292,15715 -261,15858 -252,15903
 alte Gehwegplatten, schmal, Bord gegen Gehweg	RW1; -252,15903 -261,15858 -292,15715 -302,15602 -302,15546 -286,15354 -344,15200
 	RW3; -252,15903 -233,15997
@@ -5593,7 +5593,9 @@ die letzten 10 Meter werden auf dem Gehweg geführt	RW3; 3800,6418 3836,6550
 	RW1; 5467,9866 5477,9621 5479,9367 5483,9262 5492,8982 5494,8843
 	RW1; 5494,8843 5498,8726 5493,8599 5469,8524 5427,8412 5399,8344
 	RW1; 5399,8344 5354,8236
-	RW1; 5354,8236 5304,8144 5304,8088 5325,8023
+	RW1; 5354,8236 5304,8144
+neu asphaltiert	RW1; 5304,8144 5304,8088
+Verbundsteinpflaster	RW1; 5304,8088 5325,8023
 	RW2; 5325,8023 5346,7860
 Verbundsteinpflaster	RW1; 5346,7860 5350,7915 5363,8024
 Verbundsteinpflaster	RW1; 5363,8024 5376,8104
@@ -6514,7 +6516,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel-und-dorotheenstadt-n%C3%B6rdl-der-behrenstr-kleinere-projekte/?postID=744461#post744461
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neust%C3%A4dtische-kirchstra%C3%9Fe-4-5-herrichtung-f%C3%BCr-bundesministerium.775/#post-22250
 #: by: https://www.n-tv.de/politik/Bundestags-BER-verschlingt-weitere-Millionen-article24709001.html (Hochbauarbeiten bis 2027?)
-#: last_checked: 2024-04-09 vvv
+#: last_checked: 2024-05-02 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -6898,7 +6900,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? vvv
-#: last_checked: 2024-04-17 vvv
+#: last_checked: 2024-05-02 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
