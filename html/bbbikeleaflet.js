@@ -317,6 +317,9 @@ function doLeaflet() {
     var bbbikeOrgCyclewayUrl = cycleway_map_url + '/{z}/{x}/{y}.png';
     var bbbikeCyclewayTileLayer = new L.TileLayer(bbbikeOrgCyclewayUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
+    var bbbikeCyclerouteUrl = bbbikeTempRoot + '/geojson/comments_route.geojson';
+    var bbbikeCyclerouteLayer = new L.GeoJSON(null, stdGeojsonLayerOptions);
+
     var bbbikeOrgUnlitUrl = unlit_map_url + '/{z}/{x}/{y}.png';
     var bbbikeUnlitTileLayer = new L.TileLayer(bbbikeOrgUnlitUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
@@ -431,6 +434,7 @@ function doLeaflet() {
 	 {label:M("Qualit\u00e4t"),           layer:bbbikeSmoothnessTileLayer, abbrev:'Q',  inControl:true}
 	,{label:M("Handicaps"),               layer:bbbikeHandicapTileLayer,   abbrev:'H',  inControl:true}
 	,{label:M("Radwege"),                 layer:bbbikeCyclewayTileLayer,   abbrev:'RW', inControl:true}
+	,{label:M("Radrouten"),               layer:bbbikeCyclerouteLayer,     abbrev:'CR', inControl:true,  geojsonurl:bbbikeCyclerouteUrl}
 	,{label:M("Unbeleuchtet"),            layer:bbbikeUnlitTileLayer,      abbrev:'NL', inControl:true}
 	,{label:M("Gr\u00fcne Wege"),         layer:bbbikeGreenTileLayer,      abbrev:'GR', inControl:true}
 	,{label:M("Fragezeichen"),            layer:bbbikeUnknownTileLayer,    abbrev:'FZ', inControl:true,  geojsonurl:bbbikeUnknownUrl}
