@@ -8320,12 +8320,12 @@ EOF
 	q4::temp 6173,12396 6276,12506 6314,12518 6442,12545
 EOF
      },
-     { from  => $isodate2epoch->("2022-05-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-05-08 23:59:59"),
+     { from  => $isodate2epoch->("2024-09-19 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-09-22 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 7, months => 5, start => "2023-05-13T00:00:00"]],
+       recurrences => [['yearly', days => 7, months => 5, start => "2023-05-13T00:00:00"]], # normalerweise zum Muttertag, kann aber auch im Herbst stattfinden
        recurrence_prewarn_days => 1,
-       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (7. und 8. Mai 2022)',
+       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (20. bis 22. September 2024)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/ (Aktualisierungen nur bis 2020)
@@ -8335,6 +8335,7 @@ EOF
 #: by: https://www.laubinger.de/event/30-fest-auf-der-boelschestrasse/ (geplant für 7.05.2022 - 8.05.2022)
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20220416 (geplant für 7. und 8. Mai 2022)
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20230325 (wegen Bauarbeiten für 2023 abgesagt)
+#: by: https://www.facebook.com/events/1572185126967043/?ref_source=NEWS_FEED&__hwl=1&_rdr (20.9.-22.9.2024)
 #: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00
 	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
@@ -14172,7 +14173,7 @@ EOF
        until => $isodate2epoch->("2023-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2021-10-25T00:00:00"]],
-       recurrence_prewarn_days => 1,
+       recurrence_prewarn_days => -5,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2023)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16393,8 +16394,8 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche?
-#: last_checked: 2024-04-21
+#: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen.
+#: last_checked: 2024-05-05
 #: check_frequency: 120d
 #: next_check: 2024-05-12
 	q4::temp:clock 12378,11806 12413,11901
@@ -22000,9 +22001,9 @@ EOF
 #: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
 #: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
 #: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
-#: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023)
-#: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024)
-#: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024)
+#: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023) (inaktiv)
+#: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024) (inaktiv)
+#: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024) (inaktiv)
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -28613,6 +28614,7 @@ EOF
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/auf-der-treskowallee-wird-seit-acht-jahren-gebuddelt_a397984
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18372.pdf (Abschluss im Juli 2024? im Anschluss Sanierung der östlichen Fahrbahnseite, bis Herbst 2025)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1435818.php (Abschluss in der zweiten Augusthälfte 2024)
+#: by: https://www.berliner-woche.de/karlshorst/c-bauen/treskowallee-bekommt-neuen-asphalt_a414176
 #: source_id: 2147342174 (inaktiv)
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024)
@@ -31889,10 +31891,10 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
-#: last_checked: 2022-10-24 vvv
+#: last_checked: 2024-05-05 vvv
 #: next_check: 2024-05-31 vvv
-	q3::inwork; 4214,4595 4039,4500
-Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
+# REMOVED (hier nicht mehr) ---	q3::inwork; 4214,4595 4039,4500
+# REMOVED (hier nicht mehr) --- Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
 zwischen Moltkestr. und Tietzenweg	q4::inwork; 3934,4441 3643,4232
 #: next_check ^^^
@@ -32716,7 +32718,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/passauer-stra%C3%9Fe-1%E2%80%933-no-1-passauer.531/page-3#post-22316
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="9"
+#: osm_watch: way id="362719487" version="10"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2024-05-04
 #: check_frequency: 120d
@@ -35231,7 +35233,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: osm_watch: note 3065138 9
+#: osm_watch: note 3065138 11
 #: last_checked: 2024-05-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-05-13 vvv
@@ -40645,15 +40647,18 @@ EOF
 #: XXX zukünftige Einschränkungen:
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
+#: XXX bei osm mittlerweile als offen getaggt, stimmt das?
+#: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
 #: last_checked: 2024-04-21 (architektur-urbanistik) vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-06-28 vvv
+#: next_check: 2024-05-04 vvv
+# REMOVED --- #: next_check: 2024-06-28 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
-#: osm_watch: way id="1142005449" version="2"
+#: osm_watch: way id="1142005449" version="3"
 	q4::inwork 17826,6495 17991,6431
 #: note: der westliche Gehweg ist komplett gesperrt und man kommt nur über die gepflasterte Service-Straße zum Ufer und dort via Treppe wieder zur Edisonstraße; besser den östlichen Gehweg benutzen (Stand Mitte November 2023)
-#: osm_watch: way id="176072020" version="34"
+#: osm_watch: way id="176072020" version="35"
 	q4::inwork 17991,6431 17948,6248
 #: next_check ^^^
 #: check_frequency ^^^
@@ -42598,14 +42603,14 @@ EOF
 #: source_id: bvg2021:n7#BVG346248_0
 #: also_indoor: traffic (B,ex-H,G,W)
 #: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
-#: note: bei rbb "bis auf weiteres"
+#: note: bei rbb "bis auf weiteres"; mittlerweile bis 31.05.2024
 #: last_checked: 2024-05-04 vvv
-# REMOVED --- #: next_check: 2024-04-30 vvv
+#: next_check: 2024-05-31 vvv
 	q4::inwork 7007,9220 6994,9288
 	q3::inwork 6994,9288 7118,9315
 	q3::inwork 7002,9526 6994,9288
 # REMOVED (hier nicht)	2::inwork 6994,9288 6921,9275
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 EOF
@@ -42702,12 +42707,12 @@ EOF
      },
      { from  => 1713696856, # 2024-04-21 12:54
        until => 1717192800, # 2024-06-01 00:00
-       text  => 'Krautstr.: Fahrbahn kann zwischen Lange Str. und Holzmarktstr. gesperrt sein, voraussichtlich bis 31.05.2024',
+       text  => 'Krautstr.: Bauarbeiten, Fahrbahn zwischen Lange Str. und Holzmarktstr. gesperrt, voraussichtlich bis Ende Mai 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Außerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
 #: by: https://www.deutsches-architekturforum.de/thread/14527-holzmarktstra%C3%9Fe-51-krautstra%C3%9Fe-30-friedrichshain-in-bau/?postID=759966#post759966
-#: last_checked: 2024-04-22 (daf)
+#: last_checked: 2024-05-05
 #: check_frequency: 21d
 #: next_check: 2024-05-31
 	q4::inwork 11966,11832 11993,11978
@@ -42757,6 +42762,43 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/wochenmarkt-vor-der-markthalle-erweiterung-fur-markthalle-neun-in-berlin-kreuzberg-genehmigt-10575601.html (befristet bis 13. September 2024)
 #: next_check: 2024-09-13
 	q4::temp:clock 12294,10663 12363,10781
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Südendstr.: Bauarbeiten zwischen Körnerstr. und Filandastr., vermutlich sind Radfahrer betroffen, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (G[falsch?],B)
+#: note: nur Umleitungsschilder für Radfahrer gesehen
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2024-05-05
+	q4::inwork 5466,5523 5555,5508 5676,5488
+EOF
+     },
+     { from  => 1714860000, # 2024-05-05 00:00
+       until => 1722031200, # 2024-07-27 00:00
+       text  => 'Straße des 17. Juni und Ebertstr.: Sperrung wegen Veranstaltungen (EM und weitere), vom 6.5.2024 bis 26.7.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-strasse-des-17-juni-bis-ende-juli/ (6.5.2024 - 26.7.2024)
+#: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787175928923099290 (hier auch: Heinrich-von-Gagern-Str., Otto-von Bismarck-Allee, Paul-Löbe-Allee)
+Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+Yitzhak-Rabin-Str.	2::temp 8119,12414 8055,12186
+EOF
+     },
+     { from  => $isodate2epoch->("2024-05-12 00:00:00"),
+       until => 1722031200, # 2024-07-27 00:00
+       text  => 'John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.: Sperrung wegen Veranstaltungen (EM und weitere), vom 13.5.2024 bis 26.7.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-strasse-des-17-juni-bis-ende-juli/ (13.5.2024 - 26.7.2024)
+#: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
+#: XXX wird auch der gesamte Tiergarten gesperrt? oder vielleicht nur an Veranstaltungstagen?
+#: next_check: 2024-05-13
+John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
 EOF
      },
     );

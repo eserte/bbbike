@@ -36,9 +36,9 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+ 12558,11920 12617,1
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024)
-#: last_checked: 2024-05-03
-#: check_frequency: 60d
-#: next_check: 2024-05-07
+#: last_checked: 2024-05-05
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-05-07
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
 # 
 # REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- W¸hlischstr.: Bauarbeiten an der Einm¸ndung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
@@ -76,7 +76,7 @@ Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2024-03-11 vvv
+#: last_checked: 2024-05-05 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -448,7 +448,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-04-21 vvv
+#: last_checked: 2024-05-05 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1044,6 +1044,17 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen B¸rgerste
 # 
 ### Zehlendorf ###
 # 
+#: next_check_id: KOENIGSWEG-2024
+#: last_checked: 2024-05-05
+#: check_frequency: 120d
+#: next_check: 2024-11-18
+Kˆnigsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -197,2634 -155,2658
+# 
+#: next_check_id: SCHLETTSTADTER-2024
+#: last_checked: 2024-05-05
+#: check_frequency: 90d
+Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 1077,3753 1422,3637 1485,3630
+# 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.618687.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.623391.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.655961.php (Sperrung doch nicht erfolgt? Daf¸r Einbahnstraﬂenregelung ab Dez. 2017)
@@ -1084,10 +1095,10 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen B¸rgerste
 #: osm_watch: way id="1056377426" version="5"
 #: also_indoor: traffic (ex-G,ex-H,B)
 #: priority: #A
-#: last_checked: 2023-11-19 (architektur-urbanistik)
-#: check_frequency: 180d
-#: next_check: 2024-03-01
-Moltkestraﬂenbr¸cke: f¸r Fuﬂg‰nger existiert eine Behelfsbr¸cke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
+#: last_checked: 2024-05-05
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-03-01
+Moltkestraﬂenbr¸cke: Fuﬂg‰nger, verschwenkte Wegf¸hrung	q4::inwork 3839,4577 3867,4537 3898,4490 3934,4441
 # 
 # REMOVED (hier nicht mehr bzw. integriert in die Moltkestraﬂenbr¸ckensperrung) --- #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-01-20 (osm) --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
@@ -1947,7 +1958,7 @@ Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9170 (Antrag: Radverkehrsf¸hrung abordnen) (durch Verwaltungshandeln erledigt)
 #: XXX falls die Abordnung durchgef¸hrt wird -> auf q4 degradieren; vielleicht passiert das im Zuge der neuen Radspuren in der Hauptstraﬂe?
 #: osm_watch: way id="268579841" version="14"
-#: last_checked: 2024-04-23
+#: last_checked: 2024-05-05
 #: check_frequency: 120d
 #: next_check: 2024-09-01
 Richard-von-Weizs‰cker-Platz: einige Fuﬂg‰nger	q2 7201,8870 7307,8945
@@ -2934,7 +2945,7 @@ Mutter-Mochow-Weg: Fuﬂg‰nger	q1 -1849,2043 -1802,1919
 Ronnebypromenade: Fuﬂg‰nger	q2 -4905,1514 -4943,1439 -5002,1382 -5067,1400
 (Ronnebypromenade - Kˆnigstr.): Fuﬂg‰nger, Rampe	q3 -5067,1400 -5127,1392 -5135,1377
 (Paul-Krause-Str. - Borussenstr.): steil, eng	q3 -3983,2280 -3966,2291 -3972,2265 -3955,2283 -3938,2287
-Rehsprung: Fuﬂg‰nger	q1 -3521,1681 -3300,1663 -3236,1776 -3153,1837 -3126,1858 -3098,1922 -3112,2106 -3156,2134 -3177,2205 -3284,2323 -3290,2420
+Rehsprung: Fuﬂg‰nger	q1 -3521,1681 -3408,1671 -3358,1683 -3311,1665 -3281,1682 -3245,1769 -3153,1837 -3126,1858 -3098,1922 -3112,2106 -3156,2134 -3177,2205 -3284,2323 -3290,2420
 #: note: offiziell nur ein Gehweg
 (Weg an der Kolonie am Nordgraben): eng, Fuﬂg‰nger	q4 5833,20273 5912,20308 5977,20337 6040,20364 6097,20398 6152,20452 6176,20482 6165,20517 6176,20545
 Am Lehnshof: enge Straﬂe	q1; 4202,23034 4264,22992 4291,22986
@@ -4915,6 +4926,12 @@ Degnerstr.: Tramzufahrt, auf B¸rgersteig ausweichen	q3; 16449,15604 16445,15590
 #: by: mapillary
 #: note: Ausschilderung: Privatgel‰nde... Fahrrad fahren verboten...
 Borkumstr.: Schulgel‰nde	q2 11335,17807 11412,17823
+# 
+#: note: explizit f¸r Radfahrer freigegeben ("keine Mofas")
+#: XXX_prog BS: zumindest an der der Schlettstadter Str. an beiden Seiten Bordsteine, evtl. gibt es noch mehr (ansonsten q1?)
+Karl-Schmidt-Rottluff-Weg: einige Fuﬂg‰nger, Bordsteine	q2 1787,3905 1781,3807 1796,3765 1817,3732 1868,3626
+# 
+Anna- und Hermann-Muthesius-Steig: einige Fuﬂg‰nger, B‰ume auf dem Weg	q2 -3126,1798 -3087,1734
 # 
 ######################### User Contributions #################################
 # 

@@ -2598,7 +2598,9 @@ Eltesterstr.: Kopfsteinpflaster	Q2 -12062,-1378 -11981,-1390
 Daimlerstr. (Potsdam): Betonplatten, unbenutzte Straßenbahnschienen auf Fahrbahn	Q1 -10772,-2153 -10754,-2056 -10737,-2011 -10721,-1964 -10678,-1860
 Voltastr. (Potsdam): Kopfsteinpflaster, OK	Q1 -10588,-1975 -10646,-1989 -10721,-1964
 Glasmeisterstr. (Potsdam): Asphalt	Q0 -10804,-1818 -10809,-1842 -10836,-1857
-Glasmeisterstr. (Potsdam): Kopfsteinpflaster	Q2 -10836,-1857 -11055,-1937 -11104,-1913
+#: note: frühere alte asphaltierte Radwege werden zum Parken genutzt
+Glasmeisterstr. (Potsdam): Kopfsteinpflaster	Q2 -10836,-1857 -11055,-1937
+Glasmeisterstr. (Potsdam): Verbundsteinpflaster	Q1+ -11055,-1937 -11063,-1912 -11059,-1894 -11076,-1881
 Mövenstr. (Potsdam): asphaltiert	Q0 -10252,414 -10185,280 -10120,234 -10097,200
 (Uferweg - Humboldtring): Beton	Q1+ -11755,-1322 -11611,-1328
 Humboldtring: Beton	Q1+ -11743,-1546 -11643,-1389 -11611,-1328 -11566,-1263
@@ -3070,7 +3072,7 @@ Alter Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542
 #: next_check_id: AMALTENMARKT-2018
 #: XXX früher provisorisch asphaltiert, jetzt ein provisorischer Weg
 #: osm_watch: way id="760022943" version="11" brb
-#: last_checked: 2024-03-07 (osm)
+#: last_checked: 2024-05-05
 #: check_frequency: 180d
 Alter Markt: unbefestigt	Q2 -12719,-1542 -12790,-1560
 Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12812,-1490 -12870,-1493
@@ -3100,8 +3102,10 @@ August-Bebel-Str.: Kopfsteinpflaster	Q2 -8469,-1541 -8485,-1445
 Paul-Gerhard-Str.: Asphalt	Q0- 3232,803 3271,745 3412,534
 Alte B101-Trasse: feiner Schotter	Q1 7097,-527 6959,-743
 (Postenweg): Beton, einige Fugen	Q0- 17245,-683 17806,-561 18170,-449
-Peter-Huchel-Str.: Asphalt	Q0 -13257,1337 -13263,1394 -13277,1490 -13285,1588 -13294,1681
-Erich-Arendt-Str.: Asphalt	Q0 -13277,1490 -13125,1508
+Peter-Huchel-Str.: Asphalt	Q0 -13424,1290 -13253,1310 -13263,1394 -13277,1490 -13285,1588 -13294,1681
+Erich-Arendt-Str.: Asphalt	Q0 -13420,1478 -13277,1490 -13125,1508
+Bonner Str.: Betonsteinpflaster	Q1+ -13418,1576 -13285,1588
+Hans-Paasche-Str.: Betonsteinpflaster	Q1+ -13422,1383 -13263,1394
 Graf-von-Schwerin-Str.: Asphalt	Q0 -13133,1698 -13084,1700
 Friedrich-Klausing-Str.: Kopfsteinpflaster	Q1- -13083,1692 -12965,1694
 (Friedrich-Klausing-Str. - Vogelweide): Gehwegpflasterung	Q0- -12965,1694 -12930,1694
@@ -3960,10 +3964,12 @@ Diepenseer Str. (Waltersdorf): Verbundsteinpflaster	Q1 21084,-4728 20594,-4690
 Waltersdorf - Siedlung Hubertus: Asphalt	Q0 20711,-3869 20659,-3787 20630,-3690 20632,-3603 20687,-3424 20666,-3280 20564,-3076 20496,-3003 20401,-2960 20347,-2959 20238,-2931 20190,-2892 20120,-2774 20138,-2716 20208,-2688 20265,-2720 20285,-2775
 Bohnsdorfer Chaussee: Asphalt, teilweise mit Unebenheiten	Q1+ 19248,-771 19054,-903 18773,-1095
 Gartenstr.: Beton	Q0 18773,-1095 18819,-1163 18859,-1223 18892,-1273
-Jochen-Klepper-Str.: Asphalt	Q0 -13259,586 -13270,563 -13436,595 -13668,669
+Jochen-Klepper-Str.: Asphalt	Q0 -13270,563 -13348,578 -13436,595 -13668,669
 Reinhold-Schneider-Str.: Asphalt	Q0 -13243,645 -13433,693 -13642,750
 Hermann-Kasack-Str.: Asphalt	Q0 -13432,782 -13220,728
 Hermann-Kasack-Str.: Verbundsteinpflaster	Q0- -13432,782 -13618,839
+Gertrud-Feiertag-Str.: Asphalt	Q0 -13270,563 -13243,645 -13220,728
+Annemarie-Wolff-Platz: Betonsteinpflaster	Q0- -13348,578 -13372,478
 (Fachhochschule Potsdam): gutes Kopfsteinpflaster	Q1 -13338,188 -13321,264 -13356,274
 (Fachhochschule Potsdam): Verbundsteinpflaster	Q1+ -13356,274 -13311,462
 Richard-Schäfer-Str.: Asphalt	Q0 -13226,157 -13167,154 -13164,175 -13225,179
@@ -4873,10 +4879,9 @@ B166 - Meyenburg: Asphalt	Q0 65632,76166 65608,76120 65592,76043 65535,75912 654
 Dr.-Theodor-Neubauer-Str.: Asphalt	Q0 68933,74089 68794,73965 68960,73751 68932,73669 68694,73474
 Hanns-Eisler-Weg: Asphalt	Q0 68694,73474 68608,73622 68594,73737 68643,73843 68794,73965
 Platz der Befreiung: Betonplatten	Q0- 68960,73751 69121,73868
-#: XXX wie wird die Qualität nach den Bauarbeiten sein?
-#: last_checked: 2014-12-06
-#: check_frequency: 120d
-Am Palais Lichtenau: noch unbefestigt, teilweise ist die Fahrbahn wegen Bauarbeiten gesperrt	Q2 -12514,-340 -12488,-451
+# REMOVED --- #: XXX wie wird die Qualität nach den Bauarbeiten sein? --- #: last_checked: 2014-12-06 --- #: check_frequency: 120d
+#: historical_note: früher (~2014): noch unbefestigt, teilweise ist die Fahrbahn wegen Bauarbeiten gesperrt, Q2
+Am Palais Lichtenau: Betonsteinpflaster	Q0- -12510,-339 -12488,-432 -12493,-453 -12488,-475
 #: by: Benno Koch & osm
 Rieth - Warsin: Asphalt	Q0 62674,144822 62975,144800 63254,144654 63777,144581 63921,144506
 # REMOVED (noch immer asphaltiert) --- #: XXX wie sieht die endgültige Fahrbahnbeschaffenheit aus? (vermutlich Betonpflastersteine) --- #: by: http://www.dafmap.de/d/berlin.html?id=3797&mt=0&zoom=16 --- #: last_checked: 2016-03-05 --- #: check_frequency: 90d
@@ -6770,6 +6775,10 @@ Freimuthstr. (Falkensee): schlechtes Kopfsteinpflaster	Q3 -10354,17616 -10357,17
 Freimuthstr. (Falkensee): Asphalt	Q0 -10258,17508 -10229,17460
 Freimuthstr. (Falkensee): schlechtes Kopfsteinpflaster	Q3 -10229,17460 -10082,17402 -9984,17418 -9875,17447
 (Freimuthstr. - Falkenhagener Str.): schlechtes Kopfsteinpflaster	Q3 -9984,17418 -9981,17489
+Behlertstr. (Potsdam): Asphalt	Q0 -12370,-354 -12510,-339 -12621,-359 -12821,-417 -12865,-425
+(Friedrich-List-Str. - Eva-Laube-Weg): Betonsteinpflaster	Q0- -11735,-1968 -11730,-1948
+Eva-Laube-Weg: Betonsteinpflaster	Q0- -11730,-1948 -11725,-1919 -11774,-1911 -11769,-1873 -11804,-1838
+Steinstr. (Potsdam): Kopfsteinpflaster	Q2 -8419,-1916 -8173,-2151 -8095,-2219
 ######################### User Contributions #################################
 #: by: osm vvv
 Oderfähre - Gozdowice: Asphalt	Q0 72051,40928 72101,41016 72237,40974 72361,41057
@@ -6965,7 +6974,7 @@ Golzow: Verbundsteinpflaster	Q1 36621,56807 37029,56698 37471,56609
 # 
 #: by: Katharin (...rufledt...):
 #: confirmed_by: http://www.potsdam.de/cms/beitrag/10046686/620526/ ("Pflasterstraße")
-Am Sportplatz: gutes Kopfsteinpflaster	Q1- -9121,-2489 -9024,-2192 -8981,-2009 -8980,-1942
+Am Sportplatz: gutes Kopfsteinpflaster	Q1- -9121,-2489 -9024,-2192 -8989,-2026 -8990,-1943
 # 
 #: by: susan (suse_p): vvv
 Bodelschwinghstr. (Lobetal): Asphalt	Q0 23428,35951 23296,35986
@@ -7510,7 +7519,7 @@ Paul-Neumann-Str.: Asphalt	Q1 -9725,-1892 -9698,-1987 -9660,-2082 -9653,-2100
 Paul-Neumann-Str.: Kopfsteinpflaster	Q2 -9626,-2096 -9478,-2379
 Paul-Neumann-Str.: Asphalt	Q0 -9478,-2379 -9445,-2389 -9313,-2429 -9206,-2461 -9121,-2489 -9052,-2510
 An den Windmühlen: Asphalt	Q0 -9905,-2695 -9840,-2413
-Stahnsdorfer Str.: Asphalt	Q0 -7983,-1896 -8029,-1897 -8141,-1904 -8194,-1908 -8419,-1916 -8905,-1939 -8980,-1942 -9164,-1947 -9225,-1950 -9442,-1922 -9725,-1892
+Stahnsdorfer Str.: Asphalt	Q0 -7983,-1896 -8029,-1897 -8141,-1904 -8194,-1908 -8419,-1916 -8905,-1939 -8990,-1943 -9164,-1947 -9225,-1950 -9442,-1922 -9725,-1892
 Benzstr.: Asphalt	Q0 -9725,-1892 -9976,-1935 -10350,-1997
 Benzstr.: Asphalt	Q1 -10350,-1997 -10467,-2018
 Schulstr.: Asphalt	Q1 -10467,-2018 -10633,-2086
@@ -9468,4 +9477,6 @@ Kreuzungsbereich glatt gepflastert	Q1 -31796,57116
 #: by: mapillary
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- -10254,-5307
 Kreuzungsbereich mit Kopfsteinpflaster	Q3+ -9494,16777
+Kreuzungsbereich asphaltiert	Q0 -12621,-359
+Wendehammerbereich asphaltiert	Q0 -11055,-1937
 #: ignore ^^^

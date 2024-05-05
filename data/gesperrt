@@ -1103,6 +1103,14 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s -8417,-2862 -8410,-2884
 Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
 Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
+Straßenbahntrasse	3nocross::ignrte -13418,1668 -13418,1576 -13420,1478
+Georg-Hermann-Allee -> Bonner Str.: Straßenbahntrasse	3::igndisp -13418,1668 -13418,1576 -13285,1588
+Bonner Str. -> Georg-Hermann-Allee: Straßenbahntrasse	3::igndisp -13285,1588 -13418,1576 -13420,1478
+Straßenbahntrasse	3nocross::ignrte -13420,1478 -13422,1383 -13424,1290 -13429,1069
+Georg-Hermann-Allee -> Hans-Paasche-Str.: Straßenbahntrasse	3::igndisp -13420,1478 -13422,1383 -13263,1394
+Hans-Paasche-Str. -> Georg-Hermann-Allee: Straßenbahntrasse	3::igndisp -13263,1394 -13422,1383 -13424,1290
+Georg-Hermann-Allee -> Peter-Huchel-Str.: Straßenbahntrasse	3::igndisp -13422,1383 -13424,1290 -13253,1310
+Peter-Huchel-Str. -> Georg-Hermann-Allee: Straßenbahntrasse	3::igndisp -13253,1310 -13424,1290 -13429,1069
 Trebbiner Str.	2 11065,-5338 11040,-5252 11091,-5242 11107,-5326 11119,-5326
 Marwitzer Str. (Falkensee)	1 -10239,17791 -10344,17792 -10417,17770
 Osramplatz (Hohen Neuendorf)	1 1261,28406 1229,28298 1198,28265
@@ -2380,6 +2388,9 @@ Mittelstreifen	3nocross::ignrte -2280,2177 -2074,2258 -2023,2279
 Wiesenschlag -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -2036,2150 -2074,2258 -2280,2177
 Mittelstreifen	3nocross::ignrte -2023,2279 -1959,2305 -1646,2434
 Potsdamer Chaussee -> Mutter-Mochow-Weg: Mittelstreifen	3::igndisp -1646,2434 -1959,2305 -1849,2043
+Mittelstreifen	3nocross::ignrte -3011,1761 -3031,1747 -3077,1716
+Potsdamer Chaussee -> Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee) [Nebenstr.]: Mittelstreifen	3::igndisp -3077,1716 -3031,1747 -3040,1763
+Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee) [Nebenstr.] -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -3040,1763 -3031,1747 -3011,1761
 Straßenbahntrasse	3nocross::ignrte 22116,5442 22090,5402 22067,5367 22056,5350 21979,5251 21961,5228
 Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22006,5460 22090,5402 22116,5442
 Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22057,5305 22056,5350 21979,5251
@@ -2871,6 +2882,7 @@ tragen (Treppe, 31 Stufen)	0:30:-213 17983,8960
 Schranke	BNP:3:-213:trailer=10 13081,14090
 tragen (Treppe, 5 Stufen)	0:10:-30 10290,12742
 tragen (8 weite Stufen)	0:30:-164 18121,10314
+tragen (insgesamt 61 Stufen)	0:60:-34 -3126,1798
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382
@@ -4132,3 +4144,4 @@ Streitstr.: linker Gehweg	1::igndisp -3019,17129 -3009,17090
 Grunerstr./Alexanderstr. -> Jacobystr.: linker Gehweg	1::igndisp 11234,12742 11184,12774 11141,12806
 Jacobystr. -> Alexanderstr.: linker Gehweg bis zur Ampel	1::igndisp 11256,12647 11221,12725
 Ferdinand-Schultze-Str. -> Rhinstr./Marzahner Str.: linker Gehweg bis zur Ampel	1::igndisp 17488,15766 17486,15736
+Potsdamer Chaussee: linker Gehweg bis zur Ampel	1::igndisp -3011,1761 -3019,1774 -3040,1763

@@ -1717,6 +1717,9 @@ Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 #: by: osm, mapillary (Rückseite eines länglichen Schildes)
 Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
 Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
+Georg-Hermann-Allee: Straßenbahntrasse	3nocross -13418,1668 -13418,1576 -13420,1478
+#: note: eine Überquerungsmöglichkeit (auch für Autos) existiert zwischen Peter-Huchel-Str. und Hans-Paasche-Str.
+Georg-Hermann-Allee: Straßenbahntrasse	3nocross -13420,1478 -13422,1383 -13424,1290 -13429,1069
 ###################################################################### 
 # elsewhere in Brandenburg
 # 
@@ -2429,6 +2432,7 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -739,2793 -726,2799 -563,2
 Potsdamer Chaussee: Mittelstreifen	3nocross -391,2914 -267,2945 -151,2975
 Potsdamer Chaussee: Mittelstreifen	3nocross -2280,2177 -2074,2258 -2023,2279
 Potsdamer Chaussee: Mittelstreifen	3nocross -2023,2279 -1959,2305 -1646,2434
+Potsdamer Chaussee: Mittelstreifen	3nocross -3011,1761 -3031,1747 -3077,1716
 Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22090,5402 22067,5367 22056,5350 21979,5251 21961,5228
 #: note: ein "Stützpunkt" für die Abbiegebeschränkung enthalten
 Lindenstr.: Straßenbahnhaltestelle	3nocross 21979,5208 22023,5160 22033,5148 22078,5093
@@ -2621,6 +2625,7 @@ tragen (4+6+7 Stufen)	0:30 4502,21525
 tragen (27 Stufen)	0:30 3195,24825
 #: by: mmholz...
 tragen (4 Stufen)	0:10 -440,4554
+#: note: die unterste Treppe hat genau genommen 11 Stufen
 tragen (5 x 10 Stufen)	0:60 -3646,1539
 tragen (41 Stufen)	0:45 -3813,2459
 tragen (18 Stufen)	0:30 -1802,1919
@@ -2939,6 +2944,7 @@ tragen (Treppe, 31 Stufen)	0:30 17983,8960
 Schranke	BNP:3::trailer=10 13081,14090
 tragen (Treppe, 5 Stufen)	0:10 10290,12742
 tragen (8 weite Stufen)	0:30 18121,10314
+tragen (insgesamt 61 Stufen)	0:60 -3126,1798
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -3067,7 +3073,6 @@ Schranke (Umfahrung auf dem Gehweg)	BNP:5::trailer=15 -12413,-789
 Schranke	BNP:3::trailer=10 -12360,-772
 Schranke, leicht umfahrbar	BNP:2::trailer=4 -12303,-867
 Schranke (enge Umfahrung)	BNP:5:trailer=no -11267,-1832
-#: XXX Schranke nicht vor Ort geprüft
 Schranke	BNP:3::trailer=10 -11162,-1913
 #: note: oder man nimmt den parallel zum Netto-Parkplatz führenden Gehweg ohne Schranke
 Schranke	BNP:3::trailer=10 11884,13145
@@ -4072,7 +4077,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: next_check_id: KANZLERPARK-2024
 #: XXX Bauarbeiten am Kanzlerpark
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
-#: last_checked: 2024-02-24 vvv
+#: last_checked: 2024-05-05 vvv
 #: check_frequency: 180d vvv
 #: XXX laut osm gesperrt vvv
 #: osm_watch: way id="256450718" version="7"
@@ -4732,7 +4737,7 @@ George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inw
 #: XXX mittlerweile bis zur Georgenstr. ausgeweitet, check_frequency deswegen angepasst
 #: XXX evtl. wird die Qualität nach den Bauarbeiten besser sein (vielleicht keine Straßenbahnschienen mehr, neuer Asphalt?)
 #: osm_watch: note 3954448 2
-#: last_checked: 2024-04-21
+#: last_checked: 2024-05-05
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2024-12-31
@@ -5327,7 +5332,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="37"
 #: also_indoor: traffic
-#: last_checked: 2024-04-30 (osm) vvv
+#: last_checked: 2024-05-05 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
@@ -5460,7 +5465,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
 #: osm_watch: way id="765539341" version="16" brb
-#: last_checked: 2024-04-24 (osm)
+#: last_checked: 2024-05-05
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
@@ -5471,7 +5476,7 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-14
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf
 #: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."
 #: osm_watch: way id="760022943" version="11" brb
-#: last_checked: 2024-04-24 (osm)
+#: last_checked: 2024-05-05
 #: check_frequency: 180d
 Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
 # 
@@ -5661,7 +5666,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/erweiterungsbau-bundesministerium-des-innern.562/#post-22257
 #: osm_watch: way id="257432926" version="11"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2024-03-18 (daf)
+#: last_checked: 2024-05-05
 #: check_frequency: 180d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754 7556,12763
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

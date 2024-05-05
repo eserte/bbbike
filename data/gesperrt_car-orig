@@ -436,7 +436,7 @@ Emser Str.	1 13051,7157 12872,7134
 Stuthirtenweg: Gitter	3 * 13542,1268 *
 # REMOVED --- Grunerstr.: Mittelstreifen	3nocross 10697,12303 10746,12364 10804,12461 10838,12496 10849,12557 10954,12635
 Bayernring	1 8616,8605 8454,8574 8380,8545
-Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13424,1290 -13422,1383 -13420,1478 -13418,1576 -13418,1668
+# REMOVED --- Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13424,1290 -13422,1383 -13420,1478 -13418,1576 -13418,1668
 Ruhlebener Str.: Mittelstreifen	3nocross -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2725,13287
 An der Wuhlheide: Brückenauffahrt	3nocross 18492,6893 18404,6946 18225,7004 18010,7133
 #: note: Fußgängerfurt existiert auf der südöstlichen Seite der Kreuzung
@@ -883,7 +883,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: by: http://www.flickr.com/photos/lapidarium42/7708833948/in/pool-gwb
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt? laut osm mittweile ja (aber eine Anfrage läuft noch)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
-#: osm_watch: way id="155071540" version="22"
+#: osm_watch: way id="155071540" version="23"
 #: last_checked: 2024-04-13
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-04-24
@@ -1065,8 +1065,9 @@ Dennewitzplatz	1 7906,10098 7869,9917
 #: note: ab 2014-10-01 für Radfahrer offen
 Buolstr.	1 559,15342 429,15284
 Liepnitzstr.: nur für Anlieger und Radfahrer	2:Anlieger 17856,8162 17803,8079 17808,8042 17793,8012 17762,7931 17771,7880 17678,7850 17590,7828 17527,7812
-#: note: zurzeit (2014-12, wegen Bauarbeiten) ist die Einbahnstraßenregelung im westlichen Abschnitt umgedreht und gilt eigentlich für alle Verkehrsteilnehmer
-Behlertstr.	1 -12370,-354 -12514,-340 -12621,-359 -12821,-417
+# REMOVED --- #: note: zurzeit (2014-12, wegen Bauarbeiten) ist die Einbahnstraßenregelung im westlichen Abschnitt umgedreht und gilt eigentlich für alle Verkehrsteilnehmer
+Behlertstr.	1 -12370,-354 -12510,-339 -12621,-359
+Behlertstr.	1 -12821,-417 -12621,-359
 Schadowstr. - Unter den Linden	3 9011,12423 9028,12307 9141,12320
 Unter den Linden	3nocross 9858,12410 9934,12420 9984,12426 10024,12431
 Richardstr.	1 13103,7889 13085,7904 13045,7938

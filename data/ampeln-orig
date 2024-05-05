@@ -62,7 +62,7 @@ Allee der Kosmonauten/Straßenbahn	X::inwork 17778,13438
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/michaelkirchstra%C3%9Fe-22-23.408/post-22461
 #: XXX eigentlich zwei Ampeln
 #: osm_watch: way id="124182482" version="9"
-#: last_checked: 2024-04-21
+#: last_checked: 2024-05-05
 Michaelbrücke	F::inwork 11676,11839
 # 
 #: next_check_id: SCHOENEWEIDE-2018
@@ -2602,7 +2602,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: by: mfuss75:
 	X 7085,12610
 	F 1800,3903
-	F 1847,3620
+	F 1868,3626
 	F 5182,8880
 	F 5297,9579
 	F 5907,10821
@@ -3363,7 +3363,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-05-02 (mapillary) vvv
+#: last_checked: 2024-05-05 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3913,6 +3913,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X -12318,-2192
 	X -13062,-2901
 	X -11104,-1913
+#: note: Anforderungsampel
+	F -11076,-1881
 	X -11125,-1954
 	X -10327,-2262
 	X -10418,-2624

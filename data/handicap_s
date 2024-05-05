@@ -54,7 +54,9 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 Eisenacher Str.: Bauarbeiten Höhe Hohenstaufenstr., Engstellen	q2::inwork 6747,9912 6753,9814 6743,9678
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
-Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
+Königsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -197,2634 -155,2658
+Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 1077,3753 1422,3637 1485,3630
+Moltkestraßenbrücke: Fußgänger, verschwenkte Wegführung	q4::inwork 3839,4577 3867,4537 3898,4490 3934,4441
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 Börnestr.: Bauarbeiten, einige Meter der Fahrbahn sind gesperrt	q3::inwork 13214,15830 13263,15930
 Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
@@ -1241,7 +1243,7 @@ Mutter-Mochow-Weg: Fußgänger	q1 -1849,2043 -1802,1919
 Ronnebypromenade: Fußgänger	q2 -4905,1514 -4943,1439 -5002,1382 -5067,1400
 (Ronnebypromenade - Königstr.): Fußgänger, Rampe	q3 -5067,1400 -5127,1392 -5135,1377
 (Paul-Krause-Str. - Borussenstr.): steil, eng	q3 -3983,2280 -3966,2291 -3972,2265 -3955,2283 -3938,2287
-Rehsprung: Fußgänger	q1 -3521,1681 -3300,1663 -3236,1776 -3153,1837 -3126,1858 -3098,1922 -3112,2106 -3156,2134 -3177,2205 -3284,2323 -3290,2420
+Rehsprung: Fußgänger	q1 -3521,1681 -3408,1671 -3358,1683 -3311,1665 -3281,1682 -3245,1769 -3153,1837 -3126,1858 -3098,1922 -3112,2106 -3156,2134 -3177,2205 -3284,2323 -3290,2420
 (Weg an der Kolonie am Nordgraben): eng, Fußgänger	q4 5833,20273 5912,20308 5977,20337 6040,20364 6097,20398 6152,20452 6176,20482 6165,20517 6176,20545
 Am Lehnshof: enge Straße	q1; 4202,23034 4264,22992 4291,22986
 Am Lehnshof: enge Straße	q1 4291,22986 4336,22984 4403,22981 4444,22989
@@ -2556,6 +2558,8 @@ Ruth-Baumgarte-Str. (Mittelstreifen): einige Fußgänger	q2 17608,8483 17599,8485
 Heiner-Müller-Str. (Mittelstreifen): einige Fußgänger	q2 17640,8627 17648,8626
 Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 Borkumstr.: Schulgelände	q2 11335,17807 11412,17823
+Karl-Schmidt-Rottluff-Weg: einige Fußgänger, Bordsteine	q2 1787,3905 1781,3807 1796,3765 1817,3732 1868,3626
+Anna- und Hermann-Muthesius-Steig: einige Fußgänger, Bäume auf dem Weg	q2 -3126,1798 -3087,1734
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3586,3 +3590,4 @@ Streitstr.: linker Gehweg	q4::igndisp; -3009,17090 -3019,17129
 Grunerstr./Alexanderstr. -> Jacobystr.: linker Gehweg	q3::igndisp; 11141,12806 11184,12774 11234,12742
 Jacobystr. -> Alexanderstr.: linker Gehweg bis zur Ampel	q4::igndisp; 11221,12725 11256,12647
 Ferdinand-Schultze-Str. -> Rhinstr./Marzahner Str.: linker Gehweg bis zur Ampel	q3::igndisp; 17486,15736 17488,15766
+Potsdamer Chaussee: linker Gehweg bis zur Ampel	q3::igndisp; -3040,1763 -3019,1774 -3011,1761

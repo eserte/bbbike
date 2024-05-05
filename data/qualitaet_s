@@ -523,7 +523,7 @@ Königstr.: schlechtes Kopfsteinpflaster, provisorischer Asphaltstreifen	Q2; -298
 Königsweg: Beton	Q0 -3096,1026 -3024,1069 -2813,1188 -2669,1266 -2605,1302
 Königsweg: Waldweg, mäßig bis OK	Q2 -3096,1026 -3413,843
 Königsweg: Kleinsteinpflaster	Q1 -3413,843 -3506,791
-Königsweg: gut befahrbarer Waldweg	Q1 -3506,791 -4256,369 -5960,-604 -6380,-848 -6793,-1085 -6919,-1072
+Königsweg: gut befahrbarer Waldweg	Q1 -3506,791 -4256,369 -5971,-610 -6380,-848 -6793,-1085 -6919,-1072
 Königsweg: Asphalt	Q0 -1082,2140 -1278,2034 -1296,2025
 Königsweg: Asphalt	Q0 -1296,2025 -1309,2017 -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2140,1555 -2605,1302
 Sonntagstr.: Kopfsteinpflaster	Q2 14460,11455 14453,11439 14535,11327 14598,11245 14669,11157 14760,11044
@@ -1605,7 +1605,7 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
-Kurfürstenweg: fester Waldweg	Q1 -5960,-604 -5863,-426 -5762,-145 -5752,-44 -5658,135 -5567,231 -5539,308 -5376,450 -5295,545 -5155,758 -4978,918
+Kurfürstenweg: fester Waldweg	Q1 -5971,-610 -5868,-420 -5763,-116 -5754,-27 -5668,131 -5579,227 -5543,326 -5412,437 -5304,552 -5164,765 -4978,918
 Schönburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8961,6490 8995,6473
 Schönburgstr.: Kopfsteinpflaster	Q2 8995,6473 9031,6355
 Parkstr.: unebenes Kleinsteinpflaster	Q2 8944,6293 8992,6312 9031,6355
@@ -7934,7 +7934,7 @@ Am Wildgatter: Asphalt	Q0 -7716,599 -7477,739 -7368,794
 Stimmingstr.: Kleinsteinpflaster	Q2 -7445,615 -7477,739
 Golfweg: Asphalt	Q0 -7394,918 -7975,785 -8136,700
 Rehsprung: Asphalt	Q1 -3720,1464 -3646,1539
-Rehsprung: fester Sandweg, teilweise mit Schotterstellen	Q2 -3521,1681 -3300,1663 -3236,1776 -3153,1837 -3126,1858 -3098,1922 -3112,2106 -3156,2134
+Rehsprung: fester Sandweg, teilweise mit Schotterstellen	Q2 -3521,1681 -3408,1671 -3358,1683 -3311,1665 -3281,1682 -3245,1769 -3153,1837 -3126,1858 -3098,1922 -3112,2106 -3156,2134
 Rehsprung: fester Sandweg, Feinschotter	Q1 -3156,2134 -3177,2205 -3284,2323 -3290,2420
 Rykestr.: Kopfsteinpflaster	Q2 11374,14363 11380,14316
 Simmelstr.: Verbundsteinpflaster	Q1 7533,17673 7615,17684
@@ -9792,7 +9792,7 @@ Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10423,21701 10388,2
 (Lauenburger Str. - Stadtpark Steglitz): Asphalt	Q0 5870,4992 5907,4949 5945,4828 5947,4791
 zur Müller-Breslau-Str.: Kleinsteinpflaster	Q1 5756,11618 5725,11644
 Carpinusweg: Verbundsteinpflaster	Q1 715,5209 715,5129 825,5130 827,5201
-Colmarer Weg: Verbundsteinpflaster	Q1 1847,3620 1918,3511 1977,3414
+Colmarer Weg: Verbundsteinpflaster	Q1 1868,3626 1918,3511 1977,3414
 (Hampstedtstr. - Schneckenbrücke): unbefestigter Weg	Q1 1641,2914 1642,2937 1575,3054 1557,3086 1682,3168 1689,3189 1755,3229 1802,3235
 Floningweg: Kopfsteinpflaster	Q3 10169,2617 10180,2681
 Floningweg: Asphalt	Q0 10180,2681 10196,2771
@@ -11499,6 +11499,9 @@ Nollendorfplatz [Parkplatz]: Verbundsteinpflaster	Q1 7036,10313 6978,10319 6941,
 (Beckumer Str. - Biedenkopfer Str.): Kleinsteinpflaster	Q2 2338,19246 2320,19212
 Sterkrader Str.: Kleinsteinpflaster	Q1 2073,19111 2081,19072
 Namslaustr.: Kleinsteinpflaster	Q1 2081,19072 1735,19045
+Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee) [Nebenstraße]: Kopfsteinpflaster	Q2 -3031,1747 -3040,1763 -3087,1734 -3241,1643
+Anna- und Hermann-Muthesius-Steig: Mosaikpflaster	Q1 -3126,1798 -3153,1837
+Anna- und Hermann-Muthesius-Steig: Gehwegplatten	Q1 -3126,1798 -3087,1734
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -17105,8 +17108,8 @@ Zaberner Str.: Beton	Q0 1276,3892 1252,3821
 Isenheimer Weg: Beton	Q0 1389,3900 1387,3821
 Forbacher Str.: Beton	Q1 1474,3688 1607,3708 1604,3770 1603,3909
 Ersteiner Str.: Beton	Q1 1604,3770 1781,3807 1935,3827
-Schlettstadter Str.: Asphalt	Q1 1070,3741 1429,3609 1485,3630
-Schlettstadter Str.: Beton	Q0 1485,3630 1814,3719 1926,3758 1935,3827 1939,3893
+Schlettstadter Str.: Asphalt	Q1 1077,3753 1422,3637 1485,3630
+Schlettstadter Str.: Beton	Q0 1485,3630 1817,3732 1926,3758 1935,3827 1939,3893
 Buchsweilerstr.: Kopfsteinpflaster	Q2 2160,3854 2191,3992 2203,4045 2212,4089 2233,4156
 Markircher Weg: Kopfsteinpflaster	Q2 2154,4103 2212,4089
 Gebweilerstr.: Kopfsteinpflaster	Q2 2133,4005 2191,3992
