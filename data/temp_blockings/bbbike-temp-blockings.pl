@@ -22179,8 +22179,8 @@ EOF
 #: note: kann auch im Juni oder Juli stattfinden
 #: source_id: IM_025248 (inaktiv)
 #: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00 (inaktiv)
-#: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024)
-#: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024)
+#: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024) (inaktiv)
+#: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -28625,7 +28625,7 @@ EOF
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: priority: #B vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 60d vvv
 #: next_check: 2024-08-30 vvv
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
@@ -28636,7 +28636,7 @@ EOF
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch[closed]: note 3658253 6
-#: last_checked: 2024-03-20 (kartaview)
+#: last_checked: 2024-05-06
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
 #: last_checked: 2024-04-10
@@ -34382,13 +34382,15 @@ EOF
 	3 11656,11106 11726,11265 11542,11342
 EOF
      },
-     { from  => 1633816800, # 2021-10-10 00:00
-       until => 1634335200, # 2021-10-16 00:00
-       text  => 'Grüntal - Gratze: Sperrung (Neubau Durchlassbauwerk),11.10.2021 bis 15.10.2021',
+     { from  => $isodate2epoch->("2024-05-12 00:00:00"), # 1633816800, # 2021-10-10 00:00
+       until => $isodate2epoch->("2024-06-14 16:00:00"), # 1634335200, # 2021-10-16 00:00
+       #text  => 'Grüntal - Gratze: Sperrung (Neubau Durchlassbauwerk), 11.10.2021 bis 15.10.2021',
+       text  => 'Grüntal - Gratze: Sperrung wegen Deckenerneuerung, 13.05.2024 bis 14.06.2024',
        type  => 'gesperrt',
-       source_id => 'LS/721-E/21/116',
        data  => <<EOF,
-	2::inwork 32854,37244 31663,37734
+# REMOVED (frühere Sperrung) --- #: source_id: LS/721-E/21/116 (inaktiv) ---	2::inwork 32854,37244 31663,37734
+#: source_id: LS/221-F/24/076
+	2::inwork 31613,37843 31663,37734 32854,37244 33877,36906
 EOF
      },
 
@@ -35791,6 +35793,7 @@ EOF
 #: by: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html
 #: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1444072.php
 	2::temp 17782,5698 17807,5730 17916,5675
 	2::temp 17810,5736 17877,5860
 	2::temp 18013,5627 17916,5675 17931,5695
@@ -40436,7 +40439,7 @@ EOF
        text  => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 13.02.2024, 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024) (inaktiv)
+#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024) (inaktiv) (bis 31.05.2024, nur noch Gegenverkehrsregelung)
 	2::inwork -19289,63424 -19675,64106
 EOF
      },
@@ -40647,13 +40650,12 @@ EOF
 #: XXX zukünftige Einschränkungen:
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
-#: XXX bei osm mittlerweile als offen getaggt, stimmt das?
+#: XXX bei osm mittlerweile als offen getaggt, stimmt das? -> nein, siehe https://www.openstreetmap.org/changeset/150876600
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-04-21 (architektur-urbanistik) vvv
+#: last_checked: 2024-05-06 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-05-04 vvv
-# REMOVED --- #: next_check: 2024-06-28 vvv
+#: next_check: 2024-06-28 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="3"
 	q4::inwork 17826,6495 17991,6431
@@ -40793,7 +40795,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZOSSENB246-2023
-#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024)
+#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024)
 	2::inwork 13526,-20548 13412,-20513 13271,-20531
 EOF
      },
@@ -41126,12 +41128,12 @@ EOF
 EOF
      },
      { from  => 1697346000, # 2023-10-15 07:00
-       until => $isodate2epoch->("2024-05-15 17:00:00"), # 1702656000, # 2023-12-15 17:00
+       until => 1715021710, # $isodate2epoch->("2024-05-15 17:00:00"), # 1702656000, # 2023-12-15 17:00
        text  => 'Blumberger Damm: Bauarbeiten im Kreuzungsbereich Mehrower Allee/Glambecker Ring, Sperrung, evtl. sind auch Radfahrer betroffen, vom 16.10.2023 07:00 bis 15.05.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BLUMBERGER-2023
-#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024) (bis 03.05.2024) (bis 15.05.2024)
+#: source_id: viz2021:13.57491,52.55616,16.10.2023,07:00 (bis 15.12.2023) (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024) (bis 03.05.2024) (bis 15.05.2024) (inaktiv)
 # REMOVED (hier laut osm nicht) ---	q4::inwork 21869,16719 21889,16817
 #: osm_watch: way id="1126670512" version="12"
 	q4::inwork 21889,16817 21925,16981
@@ -41140,6 +41142,7 @@ EOF
 #: source_id: viz2021:13.574594,52.555119,16.10.2023,07:00 (bis 14.03.2024) (inaktiv)
 #: source_id: viz2021:13.574594,52.555119,14.03.2024,10:33 (bis 12.04.2024) (inaktiv)
 #: source_id: viz2021:13.574844,52.555123,16.10.2023,07:00 (bis 01.03.2024) (bis 14.03.2024) (bis 12.04.2024) (bis 03.05.2024) (bis 15.05.2024)
+#: source_id: viz2021:13.574528,52.55511,06.05.2024,00:00 (bis 15.05.2024)
 #: osm_watch: way id="9030384" version="39"
 #: osm_watch: way id="9030545" version="19"
 	q4::inwork 21944,16805 21889,16817
@@ -42385,12 +42388,12 @@ EOF
 EOF
      },
      { from  => 1710170340, # 2024-03-11 16:19
-       until => $isodate2epoch->("2024-05-10 17:00:00"), # 1711753140, # 2024-03-29 23:59
-       text  => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), vermutlich sind auch Radfahrer betroffen (absteigen und schieben), vom 12.03.2024 16:19 bis 10.05.2024 23:59',
+       until => $isodate2epoch->("2024-06-30 17:00:00"), # 1711753140, # 2024-03-29 23:59
+       text  => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), vermutlich sind auch Radfahrer betroffen (absteigen und schieben), vom 12.03.2024 16:19 bis 30.06.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.33304,52.4907,12.03.2024,16:19 (bis 29.03.2024) (inaktiv)
-#: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024)
+#: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024) (bis 30.06.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767537882204434779 (hier nur Kfz-Verkehr)
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/wasserrohrbruch-fuehrt-zu-sperrung_a411536
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/sperrung-wegen-bauarbeiten_a412256
@@ -42778,15 +42781,21 @@ EOF
      },
      { from  => 1714860000, # 2024-05-05 00:00
        until => 1722031200, # 2024-07-27 00:00
-       text  => 'Straße des 17. Juni und Ebertstr.: Sperrung wegen Veranstaltungen (EM und weitere), vom 6.5.2024 bis 26.7.2024',
+       text  => 'Straße des 17. Juni und Ebertstr.: Sperrung wegen Veranstaltung (EM 2024), außerdem kann die Durchfahrt durch das Brandenburger Tor eingeschränkt sein, vom 6.5.2024 bis 26.7.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-strasse-des-17-juni-bis-ende-juli/ (6.5.2024 - 26.7.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787175928923099290 (hier auch: Heinrich-von-Gagern-Str., Otto-von Bismarck-Allee, Paul-Löbe-Allee)
+#: by[nocache]: https://twitter.com/BA_Mitte_Berlin/status/1787472473597813136
+#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
+#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024)
+#: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024)
+#: note: es sieht so aus, als ob man vom Bremer Weg nur über Umwege (bis fast Behrenstr.?) zum Brandenburger Tor fahren kann
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 Yitzhak-Rabin-Str.	2::temp 8119,12414 8055,12186
+Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 EOF
      },
      { from  => $isodate2epoch->("2024-05-12 00:00:00"),
@@ -42799,6 +42808,17 @@ EOF
 #: XXX wird auch der gesamte Tiergarten gesperrt? oder vielleicht nur an Veranstaltungstagen?
 #: next_check: 2024-05-13
 John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+EOF
+     },
+     { from  => 1715032800, # 2024-05-07 00:00
+       until => 1715724000, # 2024-05-15 00:00
+       text  => 'Rudolf-Rühl-Allee: Sperrung des Bahnübergangs am S-Bahnhof Wuhlheide, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 08.05.2024 bis 14.05.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: laut rbb
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787427025860399586 (Gleissanierung, nur eine Sperrung für den Kfz-Verkehr wird erwähnt)
+#: by: https://pbs.twimg.com/media/GM43HeoWoAA3oFf?format=jpg&name=large
+	2::inwork 20653,7289 20616,7292 20510,7325
 EOF
      },
     );
