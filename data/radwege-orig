@@ -524,7 +524,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2024-04-21 vvv
+#: last_checked: 2024-05-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -2840,7 +2840,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12497,11459 12543,11521
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: last_checked: 2024-04-09
+#: last_checked: 2024-05-07
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 	RW2; 12543,11521 12645,11673
@@ -4192,7 +4192,8 @@ Verbundsteinpflaster, mit Betonplatten neben Bäumen, Unebenheiten	RW1;RW1 20755,
 neu asphaltiert, relativ breit	RW2; 21724,15955 21782,16253
 	RW3; 21782,16253 21724,15955
 	RW3; 21889,16817 21869,16719
-	RW4;RW4 21869,16719 21824,16506 21785,16273 21782,16253
+	RW4; 21869,16719 21824,16506 21785,16273 21782,16253
+	RW4; 21782,16253 21785,16273 21824,16506 21869,16719 21889,16817
 #: by: Stefan Strowich:
 	RW6;RW6 -1522,16438 -1611,16460
 mäßiges Verbundsteinpflaster	RW1; 3563,20589 3598,20545 3901,20348 4076,20268 4319,20182 4491,20125
@@ -7121,7 +7122,7 @@ Gehweg für Radfahrer frei	RW1; 19328,5304 19405,5284
 Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 # REMOVED (realisiert) --- #: XXX wird hier eine Grünbeschichtung entstehen? --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1085777.php (Fahrbahndeckenerneuerung und anschließend Markierungsarbeiten; 24.05. - 16.06.2021) --- #: by: https://viz.berlin.de/2021/05/schnellerstrasse/ --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-auf-der-schnellerstrasse_a310437 --- # REMOVED --- #: XXX während der Bauarbeiten gibt es eine Einbahnstraßenregelung stadteinwärts sowie für Radfahrer in beiden Richtungen einen benutzungspflichtigen Geh- und Radweg --- #: source_id: 2147347210 (25.5.2021 bis 16.7.2021) --- #: also_indoor: traffic --- #: priority: #D --- #: last_checked: 2021-09-03 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2021-07-16
 #: note: etwa 150m westlich der Einmündung Köllnische Str. sind wegen Hochbauarbeiten noch nicht eingefärbt
-Grünbeschichtung	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316
+Grünbeschichtung	RW3;RW3 18236,5548 18370,5511 18680,5413 18955,5320 19037,5316
 Grünbeschichtung	RW4;RW3 19037,5316 19186,5310 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
 	RW6;RW6 11874,20656 11826,20722
@@ -7300,7 +7301,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2024-03-13
+#: last_checked: 2024-04-18
 #: check_frequency: 60d
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.

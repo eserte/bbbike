@@ -2280,7 +2280,7 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
-#: last_checked: 2024-01-20
+#: last_checked: 2024-05-06 (mapillary)
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: by: ^^^
@@ -10490,9 +10490,9 @@ Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 Allee der Kosmonauten: Beton mit einigen Hebungen und Asphaltflicken	Q1+ 17698,13134 17690,13365 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 (Königsheideweg - Weststr.): wassergebundene Decke	Q1+ 17115,4757 17129,4837 17173,4902
-Fennstr.: Asphalt	Q0 18080,5376 18245,5551
-Fennstr.: Beton	Q0-; 18245,5551 18260,5746
-Fennstr.: Asphalt	Q0; 18260,5746 18245,5551
+Fennstr.: Asphalt	Q0 18080,5376 18236,5548
+Fennstr.: Beton	Q0-; 18236,5548 18257,5743
+Fennstr.: Asphalt	Q0; 18257,5743 18236,5548
 (Wuhlewanderweg - Bahnhofstr.): Verbundsteinpflaster mit großen Fugen	Q2 22204,6016 22332,5949 22358,5918
 Ehrenfelsstr.: Verbundsteinpflaster	Q0- 18846,8616 18778,8663
 (Weg 1 im KGA Hochspannung): Asphalt	Q0 18224,9795 18182,9623 18165,9627 18164,9623
@@ -13420,7 +13420,7 @@ Am Seegraben: Asphalt	Q0+ 21829,1351 21865,1441 21866,1492 21878,1500
 # 
 Am Werkstor: Asphalt	Q0 18019,5786 18062,5856 18075,5880
 Kupferkamp: Asphalt	Q0 17935,5961 18075,5880
-Helga-Hahnemann-Str.: Asphalt	Q0 18260,5746 18062,5856
+Helga-Hahnemann-Str.: Asphalt	Q0 18257,5743 18062,5856
 # 
 Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 # 
@@ -30510,8 +30510,10 @@ Diedenhofener Str.: Verbundsteinpflaster	Q1 -3672,13597 -3618,13588
 Ziegelhof: Kleinsteinpflaster	Q1 -3803,13464 -3692,13480
 Ziegelhof: Kopfsteinpflaster	Q2 -3692,13480 -3651,13476 -3529,13452
 (Wachheimer Weg - Götelstr.): Gehwegplatten	Q1 -3437,12258 -3350,12260 -3349,12232
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> mäßiges bis schlechtes Kopfsteinpflaster	Q3+ -> ..., neu gemacht)
+Jakobikirchstr.: relativ glattes Kopfsteinpflaster	Q2+ 10511,10800 10537,10862 10552,10896
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
-Jakobikirchstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 10511,10800 10564,10925
+Jakobikirchstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 10552,10896 10564,10925
 (Neuenburger Str. - Lindenstr.): Gehwegplatten	Q0 9853,10543 9848,10526 9795,10512
 Enckestr.: Asphalt/Beton	Q0 9653,10950 9666,10848
 Fanny-Hensel-Weg: Kopfsteinpflaster/Gehwegplatten	Q2 8784,10824 8742,10868 8659,10910
@@ -32239,7 +32241,7 @@ Kreuzungsbereich asphaltiert	Q0 12066,9558
 Kreuzungsbereich asphaltiert	Q0 12054,9429
 Kreuzungsbereich mit Verbundsteinpflaster	Q1 20773,12621
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 19251,18248
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 19213,18195
+Einmündungsbereich mit Kopfsteinpflaster	Q2 19213,18195
 Kreuzungsbereich asphaltiert	Q0 5882,13548
 Einmündungsbereich asphaltiert	Q0 5964,13535
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6104,13530

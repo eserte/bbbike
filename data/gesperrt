@@ -2087,8 +2087,6 @@ unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 7507,9458 7512,95
 Potsdamer Str. -> Kleistpark: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7507,9458 7512,9572 7501,9573
 Kleistpark -> Potsdamer Str.: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7501,9573 7512,9572 7518,9791
 unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 14501,10169 14405,10027 14323,9913 14289,9870
-An den Treptowers -> Treppe zum Allianz-Gebäude: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14323,9913 14405,10027 14383,10036
-Treppe zum Allianz-Gebäude -> Elsenbrücke: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14383,10036 14405,10027 14501,10169
 Mittelstreifen	3nocross::ignrte 12028,12519 12006,12464 11920,12266
 Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11920,12266 12006,12464 11712,12614
 Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12028,12519 12006,12464 12118,12462
@@ -3459,7 +3457,6 @@ Matthäikirchplatz: Durchgang gesperrt	2::inwork 7933,11407 7970,11396 7934,11275
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,22604
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
-Jakobikirchstr.: gesperrt	2::inwork 10511,10800 10564,10925
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -45,15503 59,15518
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
@@ -3520,6 +3517,7 @@ Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::in
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
 Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
+Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
