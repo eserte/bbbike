@@ -8058,14 +8058,22 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 #: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787175928923099290 (hier auch: Heinrich-von-Gagern-Str., Otto-von Bismarck-Allee, Paul-Löbe-Allee)
 #: by[nocache]: https://twitter.com/BA_Mitte_Berlin/status/1787472473597813136
-#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024)
 #: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024)
 #: note: es sieht so aus, als ob man vom Bremer Weg nur über Umwege (bis fast Behrenstr.?) zum Brandenburger Tor fahren kann
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+Kleine Querallee, Überquerung	3 8391,12389 8344,12221 8327,12174
+Kleine Querallee, Überquerung	3 8327,12174 8344,12221 8391,12389
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 Yitzhak-Rabin-Str.	2::temp 8119,12414 8055,12186
-Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
+#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
+#: last_checked: 2024-05-08 (webcam)
+#: check_frequency: 3d
+Brandenburger Tor	q4::temp 8538,12245 8592,12252 8637,12258
+zum Bremer Weg	3 8592,12252 8538,12245 8522,12239
+zum Bremer Weg	3 8522,12239 8538,12245 8592,12252
+zum Ahornsteig	3 8592,12252 8538,12245 8522,12187
+zum Ahornsteig	3 8522,12187 8538,12245 8592,12252
 ',
          'from' => 1714860000,
          'id' => 4053,
@@ -8090,12 +8098,14 @@ John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.	2::temp 7031,12320 7
          'data' => '#: note: laut rbb
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787427025860399586 (Gleissanierung, nur eine Sperrung für den Kfz-Verkehr wird erwähnt)
 #: by: https://pbs.twimg.com/media/GM43HeoWoAA3oFf?format=jpg&name=large
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1788065037354955072
+#: by: https://pbs.twimg.com/media/GNAFqsWWsAIOcOj?format=jpg&name=medium (auch Fußgänger)
 #: source_id: viz2021:13.552425,52.469822,08.05.2024,08:00 (bis 14.05.2024)
 	2::inwork 20653,7289 20616,7292 20510,7325
 ',
          'from' => 1715032800,
          'id' => 4055,
-         'text' => 'Rudolf-Rühl-Allee: Sperrung des Bahnübergangs am S-Bahnhof Wuhlheide, evtl. sind auch Radfahrer betroffen, vom 08.05.2024 08:00 Uhr bis 14.05.2024 17:00 Uhr',
+         'text' => 'Rudolf-Rühl-Allee: Sperrung des Bahnübergangs am S-Bahnhof Wuhlheide, auch Fußgänger und Radfahrer sind betroffen, vom 08.05.2024 08:00 Uhr bis 14.05.2024 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1715698800
        },
@@ -8115,16 +8125,21 @@ John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.	2::temp 7031,12320 7
 #: by: https://www.bvg.de/dam/jcr:af2cde0c-259c-48dd-a34e-a6451c81540d/Kartenausschnitt-Johannisthal_240319.png
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,798920#msg-798920
 #: by: http://thomas.krickstadt.de/strassenbahnen/2024-05-04-gleisschleife-johannisthal/index.html
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1788060004194341063
+#: by: https://pbs.twimg.com/media/GM-T_ItXAAEbotS?format=jpg&name=large (Sterndamm)
+#: by: https://pbs.twimg.com/media/GM-UPCQXoAAPE8L?format=jpg&name=large (Winckelmannstr.)
 #: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024)
-	q4::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
-	q4::inwork 17428,4503 17476,4337
-	q4::inwork 17471,4570 17612,4460
+#: source_id: viz2021:13.50508,52.44526,08.05.2024,07:00 (bis 08.05.2024)
+Sterndamm: gemeinsamer Rad- und Gehweg	q3::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
+Winckelmannstr. am Sterndamm	q4::inwork 17428,4503 17476,4337
+Trützschlerstr.	q2::inwork 17471,4570 17612,4460
 #: source_id: viz2021:13.506038,52.441227,08.05.2024,07:00 (Winckelmannstr., bis 08.08.2024)
-	q4::inwork 17503,4148 17498,4078 17468,3979
+#: source_id: viz2021:13.5056,52.44039,08.05.2024,07:00 (bis 08.05.2024)
+Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979
 ',
          'from' => 1715058000,
          'id' => 4057,
-         'text' => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung, evtl. sind auch Radfahrer betroffen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis 08.08.2024 17:00',
+         'text' => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis 08.08.2024 17:00',
          'type' => 'handicap',
          'until' => 1723129200
        }
