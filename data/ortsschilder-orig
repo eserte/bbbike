@@ -127,6 +127,10 @@ Schmölln	OS 55708,99673
 Grünz	OS 58458,98537
 Grünz	OS 58109,98687
 # 
+Radewitz	OS 59679,99539
+Radewitz	OS 59574,99518
+Radewitz	OS 59199,99484
+# 
 Grünberg	OS 59525,107015
 Grünberg	OS 59120,106895
 Grünberg	OS 58430,106415
@@ -209,12 +213,11 @@ Mescherin	OS 78106,94045
 Vierraden	OS 71582,78858
 Vierraden	OS 69531,77125
 Vierraden	OS 70401,77887
-#: XXX geschätzte Position
-Vierraden	OS 70014,78585
+Vierraden	OS 70001,78573
 # 
-Blumenhagen	OS 69565,79460
+Blumenhagen	OS 69567,79436
 Blumenhagen	OS 69356,80336
-# 
+#
 Schwedt|/Oder	OS 70570,76523
 Schwedt|/Oder	OS 69364,76624
 Schwedt|/Oder	OS 66229,75625
@@ -469,11 +472,20 @@ Horst	OS 32610,101305
 # 
 Güstow	OS 34174,101912
 Güstow	OS 34671,102369
+Güstow	OS 34394,102529
 #: by: mapillary
 Güstow	OS 34830,102804
 # 
+#: linked: Schönermark|(bei Prenzlau) vvv
+Schönermark	OS 29429,103287
+Schönermark	OS 27781,103459
+Schönermark	OS 28711,103517
+#: linked ^^^
+# 
+Wilhelmshof	OS 31134,103263
+Wilhelmshof	OS 30633,103268
+# 
 Mühlhof	OS 36137,101580
-Wilhelmshof	OS 31129,103246
 Boitzenburg	OS 21977,95749
 Boitzenburg	OS 22963,95207
 Boitzenburg	OS 22575,95098
@@ -1171,7 +1183,7 @@ Lüttenhagen	OS 7389,103555
 Weggun	OS 19828,102682
 Weggun	OS 20935,102760
 # 
-Arendsee	OS 22504,103807
+Arendsee	OS 22510,103820
 Arendsee	OS 24670,103515
 # 
 Milmersdorf	OS 24689,77347
@@ -1787,6 +1799,11 @@ Klosterwalde	OS 19533,85103
 Klosterwalde	OS 19100,85571
 # 
 Metzelthin	OS 16341,85962
+#
+#: linked: Warthe|(bei Jakobshagen) vvv 
+Warthe	OS 16356,90069
+Warthe	OS 16435,89546
+#: linked ^^^
 # 
 Birkenstein	OS 26904,13065
 Birkenstein	OS 27566,13555
@@ -2101,10 +2118,9 @@ Roter Dudel	OS 11336,-4018
 Roter Dudel	OS 11658,-3419
 # 
 #: linked: Kummerow|(Uckermark) vvv
-#: by: http://fotos.benno-koch.de/v/Radfernwege_Deutschland/Radfernwege_und_Radwege_Brandenburg_im_Test/Oder-Neisse-Radweg/Pinnow-Stettin/P1440854.JPG.html
-Kummerow	OS 62597,84046
-#: by: http://fotos.benno-koch.de/v/Radfernwege_Deutschland/Radfernwege_und_Radwege_Brandenburg_im_Test/Oder-Neisse-Radweg/Pinnow-Stettin/P1440857.JPG.html
+Kummerow	OS 64070,83638
 Kummerow	OS 63505,83927
+Kummerow	OS 63093,83903
 #: linked ^^^
 # 
 #: by: http://fotos.benno-koch.de/v/Radfernwege_Deutschland/Radfernwege_und_Radwege_Brandenburg_im_Test/Oder-Neisse-Radweg/Pinnow-Stettin/P1440873.JPG.html
@@ -2127,8 +2143,9 @@ Herrenhof	OS 59280,80363
 Stendell	OS 60330,81769
 Stendell	OS 60675,83382
 # 
-Jamikow	OS 61346,85020
-Jamikow	OS 61090,85518
+Jamikow	OS 61338,85003
+Jamikow	OS 61094,85513
+Jamikow	OS 61521,85462
 # 
 Schönow|(Uckermark)	OS 60206,86603
 Schönow|(Uckermark)	OS 59766,87273
@@ -2222,6 +2239,9 @@ Immenheim	OHT 27755,88677
 # 
 Templin	OS 17426,80173
 Templin	OS 13789,77521
+Templin	OS 16404,80916
+# 
+Schmidtshof	OHT 16776,81216
 # 
 #: linked: Ahrensdorf|(Templin) vvv
 Ahrensdorf	OS 20814,79486
