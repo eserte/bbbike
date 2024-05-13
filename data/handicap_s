@@ -29,7 +29,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9822 17738,9922
-Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17747,5452 17736,5441 17695,5394
+Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17765,5469 17747,5452 17736,5441 17695,5394
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2::inwork; 10178,10411 10122,10294
 Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
@@ -1495,10 +1495,11 @@ Wischbergweg: sehr enger Pfad	q4 13733,18161 13751,18180
 (Scheibenbergstr. - Blenheimstr.): Fußgänger, Bordstein an der Blenheimstr.	q3 20693,15144 20689,15175
 Bordstein	q3 22004,17470 21992,17479
 (An der Margaretenhöhe - Astridstr.): schmaler Pfad	q3 16634,19839 16550,19829 16472,19818 16390,19806
-Cajamarcaplatz: viele Fußgänger	q4 17728,5756 17713,5728 17730,5698
-Cajamarcaplatz: viele Fußgänger, Bordstein	q4 17730,5698 17782,5698
-(Fußgängertunnel S-Bhf. Schöneweide): viele Fußgänger, ggfs. schieben	q4 17730,5698 17639,5612
-(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Fußgänger, Bordstein	q3 17639,5612 17675,5521
+Cajamarcaplatz: viele Fußgänger	q4 17698,5727 17766,5659
+(Fußgängertunnel S-Bhf. Schöneweide): viele Fußgänger, schieben	q4 17702,5672 17634,5607
+(zum Fußgängertunnel S-Bhf. Schöneweide): viele Fußgänger, schieben	q4 17728,5756 17698,5727 17674,5705 17702,5672
+(zum Fußgängertunnel S-Bhf. Schöneweide): viele Fußgänger, schieben	q4 17765,5469 17634,5607
+(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Fußgänger, Bordstein	q3 17634,5607 17675,5521
 (Ella-Trebe-Str. - Invalidenstr.): einige Fußgänger	q1 7938,13302 7968,13335 8003,13374
 Europaplatz: einige Fußgänger	q1 7880,13315 7938,13302
 Wuhlestr. [Wohngebiet]: Fußgänger	q1 21580,13583 21430,13602
@@ -3517,6 +3518,7 @@ Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,65
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
 Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben: gesperrt, ggfs. schieben	q4:inwork::igndisp 17619,8558 17599,8485 17581,8422
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine: gesperrt, ggfs. schieben	q4:inwork::igndisp 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
+Bremer Weg - Pariser Platz: Umwege und Engstellen wegen Absperrungen zur EM 2024	q3 8466,12197 8499,12207 8522,12187 8600,12165 8599,12221 8637,12258
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003
 Treskowallee, linker Radweg	q0::igndisp; 18715,10003 18748,9922

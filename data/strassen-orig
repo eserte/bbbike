@@ -262,7 +262,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/berlin-news/geplante-umbenennung-der-mohrenstrasse-zieht-sich-weiter-hin-id231791
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2024-05-02 (mapillary) vvv
+#: last_checked: 2024-05-13 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 #: osm_watch: way id="47755711" version="23"
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
@@ -1432,7 +1432,7 @@ Uber-Platz	NN 12990,11006 13067,11145
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="16"
 #: priority: #C
-#: last_checked: 2024-04-09
+#: last_checked: 2024-05-13
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-01-01
 Planstraße C	N 12926,11224 12848,11093
@@ -6130,15 +6130,17 @@ Rixdorfer Str. (Niederschöneweide, Johannisthal, Baumschulenweg)	N 17160,6239 17
 Radenzer Str.	N 15996,6144 16012,6177 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374
 Hallberger Zeile	N 15954,6297 16068,6216
 Südostallee	H 15768,6214 15871,6187 15996,6144 16049,6121 16122,6084 16169,6064 16510,5917 16868,5938 16911,5905 16993,5841 17024,5816 17128,5736 17337,5574 17366,5552 17473,5471 17482,5464 17601,5374 17648,5338
-Sterndamm	H 17886,5587 17747,5452 17736,5441 17695,5394 17648,5338 17601,5090 17542,4772 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
+Sterndamm	H 17886,5587 17765,5469 17747,5452 17736,5441 17695,5394 17648,5338 17601,5090 17542,4772 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
 Sterndamm	H 17648,5338 17700,5232 17705,5223
 # REMOVED (nun als Gehweg dauerhaft markiert) --- #: next_check_id: STERNDAMM-2020 --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: XXX provisorische Verbindung, asphaltiert --- #: last_checked: 2021-10-02 --- #: check_frequency: 30d --- #: next_check: 2021-10-31
 Sterndamm [Gehweg zur Nebenfahrbahn]	NN 17648,5338 17697,5347
 Sterndamm [Nebenfahrbahn]	N 17697,5347 17762,5408
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide)	NN 17736,5441 17675,5521 17588,5573 17578,5566
-Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
-(Fußgängertunnel S-Bhf. Schöneweide)	NN 17730,5698 17639,5612
-(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle)	NN 17639,5612 17675,5521
+Cajamarcaplatz	NN 17698,5727 17766,5659
+(Fußgängertunnel S-Bhf. Schöneweide)	NN 17702,5672 17634,5607
+(zum Fußgängertunnel S-Bhf. Schöneweide)	NN 17728,5756 17698,5727 17674,5705 17702,5672
+(zum Fußgängertunnel S-Bhf. Schöneweide)	NN 17765,5469 17634,5607
+(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle)	NN 17634,5607 17675,5521
 (Friedrich-List-Str. - KGA An der Südostallee)	NN 17459,5634 17480,5666
 #: note: Anlieger dürfen hier auch fahren, max. 10km/h
 #: note: Beleuchtung existiert
@@ -20380,7 +20382,7 @@ Krügerstr. (Lichtenrade)	N 9961,-2136 9967,-2408 9969,-2643
 Karlstr. (Lichtenrade)	N 10069,-2405 10085,-2643
 Goldschmidtweg	N 9271,-1609 9282,-1442 9296,-1228 9276,-973
 Maffeistr.	N 9228,-1609 9271,-1609 9329,-1618 9443,-1626 9609,-1625 9757,-1621 9908,-1614
-Abendrotweg	N 9606,-1507 9746,-1501 9860,-1475
+Abendrotweg	N 9606,-1507 9653,-1504 9746,-1501 9793,-1498 9860,-1475
 Gätzschmannpfad	N 9228,-1609 9206,-1771
 Hoeschweg	N 9312,-1832 9329,-1618
 Friedensweg	N 9756,-1221 9738,-1290

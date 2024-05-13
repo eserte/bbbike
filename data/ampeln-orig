@@ -70,7 +70,7 @@ Michaelbrücke	F::inwork 11676,11839
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024)
 #: note: etwa 20m südöstlich
-#: last_checked: 2024-04-07
+#: last_checked: 2024-05-12 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 #: valid: -20240630
@@ -380,7 +380,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2024-05-07
+#: last_checked: 2024-05-13
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -1556,6 +1556,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 17003,19035
 	X 18196,18254
 	X 18738,16957
+#: note: Anforderung für linksabbiegende Radfahrer aus dem Blumberger Damm (sowohl in die Mehrower Allee als auch in den Glambecker Ring)
 	X 21889,16817
 	X 20571,11698
 	X 20540,11660
@@ -3364,7 +3365,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-05-09 (daf) vvv
+#: last_checked: 2024-05-13 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

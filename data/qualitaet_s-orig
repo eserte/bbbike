@@ -10993,8 +10993,8 @@ Hinter der Mühle: Beton	Q0 21090,15525 21228,15449
 (Allmendeweg - Tegeler Fließ): Kleinsteinpflaster	Q1- 2990,22018 2966,22084
 (Weg am Tegeler Fließ): Verbundsteinpflaster	Q1 2074,21256 2061,21308 2048,21343
 (Weg am Tegeler Fließ): Waldweg	Q2 2048,21343 2074,21469
-Cajamarcaplatz: Gehwegplatten	Q0- 17728,5756 17713,5728 17730,5698 17782,5698
-(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Asphalt	Q0 17639,5612 17675,5521
+Cajamarcaplatz: Gehwegplatten	Q0- 17698,5727 17766,5659
+(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Asphalt	Q0 17634,5607 17675,5521
 (Zufahrt Sersa): Asphalt	Q0 18541,4125 18445,4035
 (Ella-Trebe-Str. - Invalidenstr.): Asphalt	Q0 7938,13302 7968,13335 8003,13374
 Blumberger Damm [Nebenfahrbahn]: Beton mit leichten Schäden	Q0- 21413,13459 21430,13602 21466,13903
@@ -13544,6 +13544,8 @@ Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee) [Nebenstraße]: Kopfst
 #: note: zwischen den Treppenabschnitten
 Anna- und Hermann-Muthesius-Steig: Mosaikpflaster	Q1 -3126,1798 -3153,1837
 Anna- und Hermann-Muthesius-Steig: Gehwegplatten	Q1 -3126,1798 -3087,1734
+# 
+Köpenicker Str.: Asphalt/Beton mit Unebenheiten/Schäden	Q0- 11569,11587 11715,11522 11808,11482 11947,11398 12021,11349
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -31775,8 +31777,14 @@ Karlstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 10069,-2405 10085,-2643
 Goldschmidtweg: Beton	Q0 9271,-1609 9282,-1442 9296,-1228 9276,-973
 #: confirmed_by: srt (östlicher+mittlerer Abschnitt)
 Maffeistr.: Beton	Q0 9228,-1609 9271,-1609 9329,-1618 9443,-1626 9609,-1625 9757,-1621 9908,-1614
-#: corrected_by: srt (Beton -> Asphalt)
-Abendrotweg: Asphalt	Q0 9606,-1507 9746,-1501 9860,-1475
+#: corrected_by: srt (Beton -> Asphalt) vvv
+Abendrotweg: Asphalt	Q0 9606,-1507 9653,-1504
+#: osm_watch: note 3992556 2
+#: corrected_by: osm (abschnittsweise Kopfsteinpflaster)
+#: XXX genauen Abschnitt des Kleinsteinpflasters ermitteln, stimmt Q2?
+Abendrotweg: Kleinsteinpflaster	Q2 9653,-1504 9746,-1501 9793,-1498
+Abendrotweg: Asphalt	Q0 9793,-1498 9860,-1475
+#: corrected_by ^^^
 Gätzschmannpfad: Beton	Q0 9228,-1609 9206,-1771
 #: confirmed_by: srt
 Hoeschweg: Beton	Q0 9312,-1832 9329,-1618

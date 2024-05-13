@@ -2352,9 +2352,6 @@ Michael-Brückner-Str. -> Hartriegelstr.: Mittelstreifen	3::igndisp 18080,5376 18
 Hartriegelstr. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 18514,5028 18425,5032 18457,5000
 Mittelstreifen	3nocross::ignrte 17728,5756 17782,5698 17808,5669
 Michael-Brückner-Str. -> Spreestr.: Mittelstreifen	3::igndisp 17728,5756 17782,5698 17807,5730
-Michael-Brückner-Str. -> Cajamarcapl.: Mittelstreifen	3::igndisp 17808,5669 17782,5698 17730,5698
-Cajamarcapl. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17728,5756
-Cajamarcapl. -> Spreestr.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17807,5730
 Straßenbahngleise	3nocross::ignrte 17488,15766 17493,15752 17532,15645 17569,15561 17626,15433 17706,15269 17774,15129 17789,15098 17829,15015
 Rhinstr. -> Ferdinand-Schultze-Str. [am Friedhof Hohenschönhausen]: Straßenbahngleise	3::igndisp 17532,15645 17493,15752 17486,15736
 Ferdinand-Schultze-Str. [am Friedhof Hohenschönhausen] -> Rhinstr.: Straßenbahngleise	3::igndisp 17486,15736 17493,15752 17488,15766
@@ -3537,9 +3534,8 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174 9254,13171
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
-(Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
-(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
+(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17634,5607 17675,5521
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409

@@ -3973,7 +3973,7 @@ An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 #: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Geländer
 #: XXX mittlerweile ist auch die südliche Fahrbahn der Paul-Löbe-Allee gesperrt
 #: osm_watch: note 3977175 3
-#: last_checked: 2024-04-08
+#: last_checked: 2024-05-13
 #: check_frequency: 120d
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 # 
@@ -4100,7 +4100,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2024-05-07
+#: last_checked: 2024-05-13
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4173,7 +4173,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
-#: last_checked: 2024-04-21 vvv
+#: last_checked: 2024-05-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -4681,7 +4681,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: last_checked: 2024-05-12
-#: check_frequency: 180d
+#: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 # 
@@ -4867,7 +4867,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-05-12 (webcam)
+#: last_checked: 2024-05-13
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
@@ -4969,41 +4969,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 # REMOVED (hier fertig) --- Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
 # REMOVED --- #: osm_watch: way id="32591917" version="17" --- #: next_check_id: KYNASTSTRASSE-2018 --- #: last_checked: 2019-07-06 --- #: next_check: 2019-06-15 --- Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,10476 14820,10473
 # REMOVED (offen) --- #: next_check_id: MERGENTHALERRING-2018 --- #: osm_watch: way id="20595738" version="13" --- #: last_checked: 2018-12-10 --- #: check_frequency: 30d --- Mergenthalerring: Bauarbeiten, komplett gesperrt	2:inwork 14258,8520 14262,8564
-# 
-#: next_check_id: SCHOENEWEIDE-2018
-#: XXX Fußgängertunnel wird abgerissen --- wie sieht es danach aus, wird man hier noch durchgehen können?
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/anfang-dezember-beginnt-der-abriss-der-alten-halle_a188158
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.757485.php
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bahnhof-bleibt-waehrend-bauarbeiten-barrierefrei_a189259
-#: by: https://twitter.com/SBahnBerlin/status/1067817140139581440
-#: by: https://sbahn.berlin/aktuelles/artikel/schoenheitskur-fuer-schoeneweide/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.762277.php
-#: by: https://twitter.com/SBahnBerlin/status/1069471682337869825
-#: by: https://twitter.com/BVG_Tram/status/1069471426967670784
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/baustart-fuer-den-neuen-bahnhof_a192223
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/neue-trasse-fuer-die-strassenbahn_a198208
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/planunterlagen-fuer-strassenbahnbau-liegen-aus_a197470
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-am-bahnhof-schoeneweide-gehen-weiter_a208213
-#: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/25-2019-10-06-180.html (Gesamtfertigstellung: 2022)
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3808 (Antrag)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1302846.php
-#: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bahnhof-schoeneweide-vorplatz-soll-schoener-werden-id211216
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/buerger-koennen-sich-an-gestaltung-des-vorplatzes-beteiligen_a375338
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.php
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/beteiligung-zum-bahnhofsvorplatz_a377763
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (voraussichtlich ab Frühjahr 2024 offen)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1345344.php
-#: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/infoveranstaltung-zur-vorplatzgestaltung-am-bahnhof-schoeneweide_a404271
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_06_0305_0356_online.pdf (Infoveranstaltung)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/7260/docs/GR_berlin_schoeneweide_wegeleitung_20240419.pdf (13.05.2024)
-#: last_checked: 2024-04-28 (krickstadt)
-#: check_frequency: 360d
-#: next_check: 2024-05-13
-(Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
+# REMOVED (wieder offen) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: XXX Fußgängertunnel wird abgerissen --- wie sieht es danach aus, wird man hier noch durchgehen können? --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/anfang-dezember-beginnt-der-abriss-der-alten-halle_a188158 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.757485.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bahnhof-bleibt-waehrend-bauarbeiten-barrierefrei_a189259 --- #: by: https://twitter.com/SBahnBerlin/status/1067817140139581440 --- #: by: https://sbahn.berlin/aktuelles/artikel/schoenheitskur-fuer-schoeneweide/ --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.762277.php --- #: by: https://twitter.com/SBahnBerlin/status/1069471682337869825 --- #: by: https://twitter.com/BVG_Tram/status/1069471426967670784 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/baustart-fuer-den-neuen-bahnhof_a192223 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/neue-trasse-fuer-die-strassenbahn_a198208 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/planunterlagen-fuer-strassenbahnbau-liegen-aus_a197470 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-am-bahnhof-schoeneweide-gehen-weiter_a208213 --- #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/25-2019-10-06-180.html (Gesamtfertigstellung: 2022) --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3808 (Antrag) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1302846.php --- #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bahnhof-schoeneweide-vorplatz-soll-schoener-werden-id211216 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/buerger-koennen-sich-an-gestaltung-des-vorplatzes-beteiligen_a375338 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/beteiligung-zum-bahnhofsvorplatz_a377763 --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (voraussichtlich ab Frühjahr 2024 offen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1345344.php --- #: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/ --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/infoveranstaltung-zur-vorplatzgestaltung-am-bahnhof-schoeneweide_a404271 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_06_0305_0356_online.pdf (Infoveranstaltung) --- #: by: https://bauprojekte.deutschebahn.com/media/projects/7260/docs/GR_berlin_schoeneweide_wegeleitung_20240419.pdf (13.05.2024) --- #: last_checked: 2024-04-28 (krickstadt) --- #: check_frequency: 360d --- #: next_check: 2024-05-13 --- (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17702,5672 17634,5607
 # 
 #: next_check_id: SCHOENEWEIDE-2018
 #: XXX wird dieser Zugang bleiben, wenn die Straßenbahn verlegt ist?
@@ -5035,7 +5001,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: osm_watch: way id="1085382250" version="3"
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
 # REMOVED --- #: osm_watch: way id="226163591" version="6"
-(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
+(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17634,5607 17675,5521
 # REMOVED --- Sterndamm: keine Überquerungsmöglichkeit	3nocross::inwork 17695,5394 17736,5441 17747,5452
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5051,7 +5017,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="21"
-#: last_checked: 2024-04-28 (krickstadt)
+#: last_checked: 2024-05-12 (krickstadt)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-02-02
 # REMOVED --- #: valid: -20230901
@@ -5285,7 +5251,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="5"
 #: osm_watch: note 3748854 1
-#: last_checked: 2024-04-09
+#: last_checked: 2024-05-13
 #: check_frequency: 180d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
@@ -5488,12 +5454,12 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-14
 Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2024-04-09
+#: last_checked: 2024-05-13
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2024-04-09
+#: last_checked: 2024-05-13
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 

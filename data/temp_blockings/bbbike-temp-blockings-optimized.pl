@@ -826,36 +826,7 @@ Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,99
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
-#: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022)
-#: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00
-#: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
-#: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
-	2::temp 7201,8870 7101,9027 7029,9156 7007,9220 6994,9288
-	2::temp 7308,9163 7101,9027 6958,8941
-	2::temp 6936,9138 7029,9156
-	2::temp 7007,9220 7124,9226
-',
-         'from' => 1715292000,
-         'id' => 728,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              4,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (11.05.2024 und 12.05.2024)',
-         'type' => 'gesperrt',
-         'until' => 1715551199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4166,7 +4137,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-05-07
+#: last_checked: 2024-05-13
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5433,11 +5404,13 @@ Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 128
        {
          'data' => '#: next_check_id: NIEMETZ-2022
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1789884274977444028
+#: by: https://pbs.twimg.com/media/GNOrZk9WYAAt6bo?format=jpg&name=large (Umleitungen)
 #: XXX evtl. nach handicap_s-orig übertragen
 #: source_id: viz2021:13.452161,52.471082,21.02.2022,07:00 (bis 31.1.2023) (inaktiv)
 #: source_id: viz2021:13.452161,52.471082,02.02.2023,12:12 (bis 02.06.2023) (inaktiv)
 #: source_id: viz2021:13.452161,52.471082,01.06.2023,20:20 (bis 29.12.2023) (inaktiv)
-#: source_id: viz2021:13.452362,52.470898,21.02.2022,07:00 (bis 31.12.2022) (bis 31.1.2023) (bis 2.6.2023) (bis 31.12.2023) (bis 30.04.2024) (bis 13.05.2024)
+#: source_id: viz2021:13.452362,52.470898,21.02.2022,07:00 (bis 31.12.2022) (bis 31.1.2023) (bis 2.6.2023) (bis 31.12.2023) (bis 30.04.2024) (bis 13.05.2024) (inaktiv)
 #: source_id: viz2021:13.452181,52.471098,13.05.2024,07:00 (bis 11.12.2025)
 #: source_id: viz2021:13.452222,52.471093,13.05.2024,07:00 (bis 11.12.2025)
 #: also_indoor: traffic (B,H(unvollständig),G)
@@ -7304,7 +7277,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-04-28 (osm) vvv
+#: last_checked: 2024-05-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7877,15 +7850,16 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
 #: by: https://berliner-abendblatt.de/berlin-news/stahlkonstruktion-soll-schoeneberger-wohnhaus-abstuetzen-id249921
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grunewaldstrasse-gesperrt_a413459
 #: by: https://berliner-abendblatt.de/berlin-news/aufbau-der-stahlstuetzen-an-schoeneberger-haus-soll-beginnen-id250477
+#: by: https://berliner-abendblatt.de/berlin-news/stuetzung-an-wohnhaus-freigegeben-mieter-koennen-zurueck-id251880
 #: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36 (inaktiv)
 #: source_id: viz2021:13.35319,52.48988,12.04.2024,08:59 (bis 30.04.2024) (inaktiv)
 #: source_id: viz2021:13.353178,52.489857,12.04.2024,08:59 (bis 21.05.2024)
 #: source_id: bvg2021:n7#BVG346248_0
-#: also_indoor: traffic (B,ex-H,G,W)
+#: also_indoor: traffic (ex-B,ex-H,G,W)
 #: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
 #: note: bei rbb "bis auf weiteres"; mittlerweile bis 31.05.2024
 #: last_checked: 2024-05-04 vvv
-#: next_check: 2024-05-21 vvv
+#: next_check: 2024-05-08 vvv
 	q4::inwork 7007,9220 6994,9288
 	q3::inwork 6994,9288 7118,9315
 	q3::inwork 7002,9526 6994,9288
@@ -8036,7 +8010,8 @@ Anzengruberstr.: Einbahnstraßenregelung	q4::inwork; 12856,8344 12689,8289
          'until' => undef
        },
        {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-strasse-des-17-juni-bis-ende-juli/ (6.5.2024 - 26.7.2024)
+         'data' => '#: next_check_id: EM-2024
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-strasse-des-17-juni-bis-ende-juli/ (6.5.2024 - 26.7.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787175928923099290 (hier auch: Heinrich-von-Gagern-Str., Otto-von Bismarck-Allee, Paul-Löbe-Allee)
 #: by[nocache]: https://twitter.com/BA_Mitte_Berlin/status/1787472473597813136
@@ -8046,16 +8021,14 @@ Anzengruberstr.: Einbahnstraßenregelung	q4::inwork; 12856,8344 12689,8289
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Kleine Querallee, Überquerung	3 8391,12389 8344,12221 8327,12174
 Kleine Querallee, Überquerung	3 8327,12174 8344,12221 8391,12389
-Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-Yitzhak-Rabin-Str.	2::temp 8119,12414 8055,12186
+Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+# REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2024-05-12 (webcam)
+#: last_checked: 2024-05-13
 #: check_frequency: 3d
 Brandenburger Tor	q4::temp 8538,12245 8592,12252 8637,12258
-zum Bremer Weg	3 8592,12252 8538,12245 8522,12239
-zum Bremer Weg	3 8522,12239 8538,12245 8592,12252
-zum Ahornsteig	3 8592,12252 8538,12245 8522,12187
-zum Ahornsteig	3 8522,12187 8538,12245 8592,12252
+Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
+Ahornsteig - Brandenburger Tor	2::temp 8522,12187 8538,12245
 ',
          'from' => 1714860000,
          'id' => 4053,
@@ -8064,34 +8037,23 @@ zum Ahornsteig	3 8522,12187 8538,12245 8592,12252
          'until' => 1722031200
        },
        {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-strasse-des-17-juni-bis-ende-juli/ (13.5.2024 - 26.7.2024)
+         'data' => '#: next_check_id: EM-2024
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-strasse-des-17-juni-bis-ende-juli/ (13.5.2024 - 26.7.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
 #: source_id: viz2021:13.365723,52.517491,13.05.2024,06:00 (bis 26.07.2024)
-#: XXX wird auch der gesamte Tiergarten gesperrt? oder vielleicht nur an Veranstaltungstagen?
-#: next_check: 2024-05-13
-John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+# REMOVED --- #: XXX wird auch der gesamte Tiergarten gesperrt? oder vielleicht nur an Veranstaltungstagen? --- #: next_check: 2024-05-13
+# REMOVED (Radweg scheint passierbar zu bleiben) --- John-Foster-Dulles-Allee	2::temp 7031,12320 7215,12295 7437,12368
+John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.: für Kfz-Verkehr gesperrt	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+Yitzhak-Rabin-Str.: für Kfz-Verkehr gesperrt	2::temp 8119,12414 8055,12186
+Heinrich-von-Gagern-Str. - Annemarie-Renger-Str.: Fahrbahn gesperrt	q4::temp 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 ',
          'from' => 1715464800,
          'id' => 4054,
-         'text' => 'John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.: Sperrung wegen Veranstaltungen (EM und weitere), vom 13.5.2024 bis 26.7.2024',
+         'text' => 'John-Foster-Dulles-Allee, Scheidemannstr., Dorotheenstr., Yitzhak-Rabin-Str., Heinrich-von-Gagern-Str.: Sperrung wegen Veranstaltungen (EM und weitere), Sperrungen möglich, vom 13.5.2024 bis 26.7.2024',
          'type' => 'gesperrt',
          'until' => 1722031200
        },
-       {
-         'data' => '#: note: laut rbb
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787427025860399586 (Gleissanierung, nur eine Sperrung für den Kfz-Verkehr wird erwähnt)
-#: by: https://pbs.twimg.com/media/GM43HeoWoAA3oFf?format=jpg&name=large
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1788065037354955072
-#: by: https://pbs.twimg.com/media/GNAFqsWWsAIOcOj?format=jpg&name=medium (auch Fußgänger)
-#: source_id: viz2021:13.552425,52.469822,08.05.2024,08:00 (bis 14.05.2024)
-	2::inwork 20653,7289 20616,7292 20510,7325
-',
-         'from' => 1715032800,
-         'id' => 4055,
-         'text' => 'Rudolf-Rühl-Allee: Sperrung des Bahnübergangs am S-Bahnhof Wuhlheide, auch Fußgänger und Radfahrer sind betroffen, vom 08.05.2024 08:00 Uhr bis 14.05.2024 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1715698800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024)
 	q4::inwork; 17096,11585 16915,11634
@@ -8111,6 +8073,7 @@ John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.	2::temp 7031,12320 7
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1788060004194341063
 #: by: https://pbs.twimg.com/media/GM-T_ItXAAEbotS?format=jpg&name=large (Sterndamm)
 #: by: https://pbs.twimg.com/media/GM-UPCQXoAAPE8L?format=jpg&name=large (Winckelmannstr.)
+#: note: laut Baustellenplakat (siehe bahninfo-forum) nur bis 05.07.2024, oder gibt es da nur eine Änderung der Verkehrsführung?
 #: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024)
 #: source_id: viz2021:13.50508,52.44526,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
 Sterndamm: gemeinsamer Rad- und Gehweg	q3::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
@@ -8151,6 +8114,16 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
          'text' => 'Wassertorplatz: in Höhe Kastanienplatz donnerstags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 04. Juli 2024 bis 25. Juli 2024',
          'type' => 'handicap',
          'until' => 1721926800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.565575,52.531868,12.05.2024,10:30 (bis 07.06.2024)
+	q4::inwork; 21378,14490 21342,14096 21358,13909
+',
+         'from' => 1715416200,
+         'id' => 4060,
+         'text' => 'Blumberger Damm: Richtung Süden zwischen Elisabethstr. und Cecilienstr. wegen eines gesperrt, gegenüberliegender Gehweg ist frei, vom 12.05.2024 10:30 bis 07.06.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1717772400
        }
      
 );

@@ -9290,8 +9290,8 @@ Hinter der Mühle: Beton	Q0 21090,15525 21228,15449
 (Allmendeweg - Tegeler Fließ): Kleinsteinpflaster	Q1 2990,22018 2966,22084
 (Weg am Tegeler Fließ): Verbundsteinpflaster	Q1 2074,21256 2061,21308 2048,21343
 (Weg am Tegeler Fließ): Waldweg	Q2 2048,21343 2074,21469
-Cajamarcaplatz: Gehwegplatten	Q0 17728,5756 17713,5728 17730,5698 17782,5698
-(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Asphalt	Q0 17639,5612 17675,5521
+Cajamarcaplatz: Gehwegplatten	Q0 17698,5727 17766,5659
+(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Asphalt	Q0 17634,5607 17675,5521
 (Zufahrt Sersa): Asphalt	Q0 18541,4125 18445,4035
 (Ella-Trebe-Str. - Invalidenstr.): Asphalt	Q0 7938,13302 7968,13335 8003,13374
 Blumberger Damm [Nebenfahrbahn]: Beton mit leichten Schäden	Q0 21413,13459 21430,13602 21466,13903
@@ -11502,6 +11502,7 @@ Namslaustr.: Kleinsteinpflaster	Q1 2081,19072 1735,19045
 Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee) [Nebenstraße]: Kopfsteinpflaster	Q2 -3031,1747 -3040,1763 -3087,1734 -3241,1643
 Anna- und Hermann-Muthesius-Steig: Mosaikpflaster	Q1 -3126,1798 -3153,1837
 Anna- und Hermann-Muthesius-Steig: Gehwegplatten	Q1 -3126,1798 -3087,1734
+Köpenicker Str.: Asphalt/Beton mit Unebenheiten/Schäden	Q0 11569,11587 11715,11522 11808,11482 11947,11398 12021,11349
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -18489,7 +18490,9 @@ Krügerstr. (Lichtenrade): Beton	Q0 9967,-2408 9969,-2643
 Karlstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 10069,-2405 10085,-2643
 Goldschmidtweg: Beton	Q0 9271,-1609 9282,-1442 9296,-1228 9276,-973
 Maffeistr.: Beton	Q0 9228,-1609 9271,-1609 9329,-1618 9443,-1626 9609,-1625 9757,-1621 9908,-1614
-Abendrotweg: Asphalt	Q0 9606,-1507 9746,-1501 9860,-1475
+Abendrotweg: Asphalt	Q0 9606,-1507 9653,-1504
+Abendrotweg: Kleinsteinpflaster	Q2 9653,-1504 9746,-1501 9793,-1498
+Abendrotweg: Asphalt	Q0 9793,-1498 9860,-1475
 Gätzschmannpfad: Beton	Q0 9228,-1609 9206,-1771
 Hoeschweg: Beton	Q0 9312,-1832 9329,-1618
 Friedensweg: schlechtes Kopfsteinpflaster	Q3 9756,-1221 9738,-1290
