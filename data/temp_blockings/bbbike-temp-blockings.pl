@@ -9276,7 +9276,7 @@ EOF
        text  => 'L 023 Templin-Lychen von OL Densow bis OE Lychen Straßenbauarbeiten Vollsperrung 16.07.2007-20.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 4239,85382 5194,83184
+	2::inwork 4239,85382 5127,83198
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -28056,12 +28056,13 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/abriss-hat-begonnen_a388837
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=749078#post749078 (Rückbau der Rauchgasentschwefelungsanlage am Heizkraftwerk Charlottenburg)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/teilabriss-heizkraftwerk-charlottenburg.1423/#post-23000
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-03-01 (daf)
+#: last_checked: 2024-04-21 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -35242,7 +35243,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: osm_watch: note 3065138 11
+#: osm_watch: note 3065138 13
 #: last_checked: 2024-05-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-05-13 vvv
@@ -35739,7 +35740,7 @@ EOF
      { from  => 1713897172, # 1652122429, # 2022-05-09 20:53
        until => $isodate2epoch->("2024-07-29 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
        #text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023',
-       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, evtl. sind auch Radfahrer betroffen, bis 29.07.2024',
+       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 29.07.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -35767,7 +35768,7 @@ EOF
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
-#: note: keine Sperrung für Fußgänger
+# REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 	q4::inwork; 16166,25767 16121,25818
 #	2::inwork 16166,25767 16121,25818
 EOF
@@ -38892,7 +38893,7 @@ EOF
 #: osm_watch: note 3834145 3
 #: osm_watch: note 3834144 1
 #: also_indoor: traffic (ex-H,G,B,W)
-#: last_checked: 2024-05-01 (traffic)
+#: last_checked: 2024-05-14 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 14d
 #: next_check: 2024-05-24
@@ -39413,7 +39414,7 @@ EOF
 #: last_checked: 2024-05-02
 #: check_frequency: 30d
 #: next_check: 2024-10-31
-#: osm_watch: way id="58182828" version="26"
+#: osm_watch: way id="58182828" version="27"
 # REMOVED (hier nicht mehr) --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
 #: osm_watch: way id="1025826786" version="8"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
@@ -42919,6 +42920,17 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.565575,52.531868,12.05.2024,10:30 (bis 07.06.2024)
 	q4::inwork; 21378,14490 21342,14096 21358,13909
+EOF
+     },
+     { from  => 1715593020, # 2024-05-13 11:37
+       until => 1717106340, # 2024-05-30 23:59
+       text  => 'Schönhauser Allee: Sperrung zwischen Saarbrücker Str. und Schwedter Str., Wasserrohrbruch, evtl. sind auch Radfahrer betroffen, vom 14.05.2024 bis 30.05.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.41244,52.531775,14.05.2024,11:37 (bis 30.05.2024)
+#: by: https://www.berliner-zeitung.de/news/wasserrohrbruch-in-prenzlauer-berg-schoenhauser-allee-fuer-zwei-wochen-gesperrt-li.2214928
+#: note: "Einbahnstraße", da der Gehweg hier sowieso gesperrt ist und die Umleitung via Kollwitzstr. vermutlich sowieso günstiger ist
+	1::inwork 10908,13978 10933,14122
 EOF
      },
     );

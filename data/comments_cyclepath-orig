@@ -1423,7 +1423,14 @@ Gehwegplatten	RW8;RW2 16187,80684 16015,80500 15699,80294
 	RW3;RW3 15687,79466 15751,79428 15779,79412
 Gehweg für Radfahrer frei	RW1;RW1 15201,79780 15170,79840
 Verbundsteinpflaster	RW2;RW8 15361,80057 15314,80016 15133,79941
+Verbundsteinpflaster	RW8;RW2 15170,79840 15117,79832 14950,79874
+Asphalt	RW2;RW8 13750,79021 13847,79079
+Verbundsteinpflaster	RW2;RW8 13847,79079 14215,79301 14950,79874
 ######################### User Contributions #################################
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (Fahrradstraße geplant)
+#: by: mapillary, osm
+	RW7;RW7 -11672,-2958 -11322,-3332 -11162,-3502 -11097,-3570 -11036,-3654 -10963,-3762 -10899,-3866 -10795,-3996 -10748,-4065
+# 
 #: by: Johannes (...schmeisser...)
 #: confirmed_by: mapillary
 gemeinsamer Geh- und Radweg	RW2; -7917,-4792 -7969,-4828 -8021,-4937

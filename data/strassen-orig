@@ -1897,7 +1897,7 @@ Lisa-Fittko-Str.	NN 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 George-Stephenson-Str.	N 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: osm_watch: way id="977556359" version="15"
+#: osm_watch: way id="977556359" version="16"
 #: last_checked: 2024-04-06 (mapillary)
 #: check_frequency: 90d
 #: osm.highway: service
@@ -4991,7 +4991,7 @@ Rübländerstr.	N 14321,23378 14382,23574
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3988&date=20151213
 #: XXX Planstraße D --- bleibt dieser Weg erhalten?
 #: osm_watch: way id="224122378" version="17"
-#: last_checked: 2023-07-17 (mapillary)
+#: last_checked: 2024-05-13 (mapillary)
 #: check_frequency: 360d
 (S-Bahndamm - Hobrechtsfelder Chaussee)	NN 15469,24813 15339,24861 14434,25388
 (Bucher Teiche - Schönerlinder Chaussee)	NN 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
@@ -5045,7 +5045,7 @@ Kirchstr. (Moabit)	N 6608,12858 6661,13130
 Klara-Franke-Str.	N 7366,14067 7443,14107 7547,13946 7630,13810 7535,13754
 (Lehrter Str. - Klara-Franke-Str.)	NN 7468,13876 7493,13918 7547,13946
 (Lehrter Str. - Klara-Franke-Str.)	NN 7438,13930 7493,13918
-Lehrter Str.	N 7759,13246 7651,13447 7647,13461 7653,13480 7660,13506 7655,13539 7630,13584 7535,13754 7468,13876 7452,13904 7438,13930 7366,14067 7331,14132 7180,14419
+Lehrter Str.	N 7759,13246 7651,13447 7647,13461 7653,13480 7660,13506 7655,13539 7630,13584 7535,13754 7468,13876 7452,13904 7438,13930 7366,14067 7331,14132 7303,14185 7180,14419
 Lehrter Str. [6-8]	N 7630,13584 7735,13626
 #: osm:highway: service
 (Seydlitzstr. - Lehrter Str.)	N 7613,13517 7651,13447
@@ -9900,7 +9900,8 @@ Straße 3 (Heinersdorf)	N 12889,19471 12741,19474 12725,19459
 Straße 4 (Heinersdorf)	N 13014,19218 12956,19218 12945,19239 12799,19242
 # REMOVED (jetzt gibt's aber ein Schild (2013-09)) --- #: note: keine Ausschilderung für einen "Platz A" vor Ort gefunden
 Straße 4 (Heinersdorf)	N 12814,19202 12937,19194 12956,19218
-Straße 5 (Heinersdorf)	N 12674,19188 12631,19169
+#: oldname: -20240506: Straße 5 (Heinersdorf)
+Emblastr.	N 12674,19188 12631,19169
 Ingeborgstr.	N 13011,19111 12861,19072 12809,19050
 Midgardstr.	N 12861,19072 12814,19202 12799,19242 12760,19344 12725,19459 12692,19552 12664,19631
 Sigurdstr.	N 12627,19317 12674,19188 12706,19107
@@ -17914,7 +17915,9 @@ Rhönstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1392285.php (Baubeginn für 2025 geplant)
 #: by: https://www.berliner-woche.de/blankenburg/c-bauen/im-blankenburger-siedlungsgebiet-wird-gebaut_a404616
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_19_1131_1182_online.pdf (zum Bebauungsplan 3-67 VE)
-#: osm_watch: way id="59573616" version="2"
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan/bebauungsplan.716464.php
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan/vorhabenbezogener-bebauungsplan.pdf
+#: osm_watch: way id="59573616" version="3"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraße entstehen (vermutlich müssen alle abhängigen Einträge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
 #: last_checked: 2024-05-06 (mapillary)
 #: check_frequency: 180d

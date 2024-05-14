@@ -4214,7 +4214,6 @@ Bertolt-Brecht-Str.: Asphalt	Q1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.: Beton	Q0- -10360,-4236 -10399,-4335 -10277,-4471 -10183,-4402
 Kuckucksruf: Beton	Q0 -10588,-4336 -10394,-4204
 Tiroler Damm: Beton	Q0 -10394,-4204 -10362,-4158
-Eduard-Claudius-Str.: Beton	Q0 -10451,-4149 -10542,-4204
 Käthe-Kollwitz-Str.: Beton	Q0 -10630,-3994 -10594,-3966
 Binsenhof: Beton	Q0 -10584,-3535 -10470,-3536
 Schilfhof: Asphalt	Q0 -10585,-3440 -10439,-3440
@@ -6849,6 +6848,11 @@ Arendsee - Parmen: Asphalt	Q0 22287,103823 22204,103841 21952,104097 21875,10424
 Arendsee - Feldberg: etwas unebener Asphalt	Q0- 22510,103820 22394,103830 22287,103823 21524,103430
 Arendsee - Feldberg: Kopfsteinpflaster	Q2 21524,103430 21488,103411
 Weggun - Waldsiedlung: Asphalt	Q0 21130,102752 21176,102752 21827,102725
+Parkstr. (Templin): Asphalt	Q0 15170,79840 15117,79832 14950,79874 14875,79902
+Neuplachter Weg (Templin): Asphalt	Q0 14373,80120 14572,80036
+Neuplachter Weg (Templin): Verbundsteinpflaster	Q1+ 14572,80036 14875,79902
+Annenwalder Weg (Templin): Asphalt	Q0 14875,79902 14272,79766
+Röddeliner Str. (Templin): Asphalt	Q0 13750,79021 13847,79079 14215,79301 14950,79874 15004,79919
 ######################### User Contributions #################################
 #: by: osm vvv
 Wilhelmstr. (Dallgow-Döberitz): Asphalt	Q0 -13426,14823 -13375,13886
@@ -9128,6 +9132,10 @@ Marwitzer Str.: Asphalt	Q2+ -10417,17770 -10344,17792 -10239,17791 -10114,17740
 #: by ^^^
 # 
 #: by: mapillary vvv
+Käuzchenweg (Potsdam): rauer und schadhafter Asphalt	Q1 -10048,-4288 -9808,-4484
+Am Stadtrand (Potsdam): Beton	Q1+ -9928,-4643 -9860,-4555 -9808,-4484
+Eduard-Claudius-Str.: Beton	Q1+ -10451,-4149 -10542,-4204 -10626,-4260
+(Saarmunder Str. - Eduard-Claudius-Str.) (Potsdam): unbefestigt/Betonplatten/Kopfsteinpflaster	Q2 -10662,-4280 -10626,-4260
 Elsterstr. (Falkensee): Asphalt	Q0 -11920,16276 -12196,16192 -12228,16165
 Gartenstr. (Falkensee): Asphalt	Q0 -12228,16165 -12294,15985 -12500,15658
 Fontanestr. (Dallgow-Döberitz): Asphalt	Q0 -12500,15658 -12515,15630 -12533,15538 -12587,15256
