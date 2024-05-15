@@ -1103,7 +1103,7 @@ Buchenhainer Str.: Asphalt	Q0 21164,8243 21325,8217
 Nitzwalder Str.: Asphalt	Q0 21325,8217 21461,8094 21535,8026
 Nitzwalder Str.: Asphalt	Q0 21519,8006 21578,7947
 Nitzwalder Str.: unbefestigter Weg	Q2 21578,7947 21593,7934
-Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22186,6672 22192,6659 22305,6404 22325,6385
+Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22189,6668 22193,6659 22305,6404 22325,6385
 Marksburgstr.: Asphalt	Q0 19048,9146 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
 Marksburgstr.: Asphalt mit einigen Schäden	Q1 19048,9146 19131,9187 19195,9249
 Walkürenstr.: Asphalt	Q0 18070,9292 18022,9324
@@ -1627,7 +1627,7 @@ Uferweg: Parkweg	Q1 15260,10048 15295,10022 15296,10000 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15561,9809 15626,9710
 (Dora-Benjamin-Park - Spreeufer): Parkweg	Q1 14702,10020 14690,9993
 An der Mole: asphaltiert	Q0 14805,10518 14815,10516 14832,10512 14828,10561 14843,10621 14882,10732 14886,10748 14904,10812
-(Rummelsburger Ufer - Hauptstr.): glattes Pflaster	Q0 15249,10564 15307,10701
+(Rummelsburger Ufer - Hauptstr.): glattes Pflaster	Q0 15249,10564 15295,10674 15307,10701
 (Spreeufer): Parkweg	Q1 14569,10055 14599,10039 14690,9993 14776,9949 15000,9820
 Caroline-Tübbecke-Ufer: Parkweg	Q1 15000,9820 15043,9790 15367,9691
 (Wendenwiese): Parkweg	Q1 15367,9691 15405,9675 15466,9633 15497,9644 15498,9681 15505,9688
@@ -2826,7 +2826,7 @@ Kaisersteg: Asphalt, leicht uneben	Q0 18420,6009 18393,5964 18353,5897 18326,585
 Britzer Str.: Asphalt	Q0 18470,5600 18370,5511 18307,5440 18214,5354 18080,5376
 Farnstr.: Asphalt	Q0 19402,4900 19384,5010 19328,5188
 Erikastr.: Asphalt	Q0 19500,4919 19477,5048 19424,5217
-Eisblumensteig: Asphalt	Q0 19579,4931 19576,4986 19553,5079 19541,5100 19520,5176 19524,5201 19534,5242
+Eisblumensteig: Asphalt	Q0 19579,4931 19576,4986 19553,5079 19541,5100 19520,5176 19524,5201 19532,5234 19534,5242
 Silbergrasweg: mäßiger Asphalt	Q1 19686,4894 19761,4907
 Silbergrasweg: Asphalt	Q0 19761,4907 19805,4914 19858,4960 19901,5015 19926,5055 19940,5090
 Weiderichstr.: Asphalt	Q0 19744,5063 19820,5054 19842,5046 19901,5015
@@ -2846,7 +2846,8 @@ Plehmpfad: Beton	Q0 23384,3563 23564,3283 23630,3180 23741,2979 23777,2887 23799
 Sandschurrepfad: Asphalt	Q0 23680,3371 23758,3275 24032,2964 24074,2904
 Grüne Trift (Köpenick) [Wohngebiet]: Beton	Q1 23036,3929 23088,4001 23257,3884 23237,3845 23316,3778
 (Grüne Trift - Salvador-Allende-Str.): sandig	Q3 23257,3884 23368,3894
-Grüne Trift am Walde: Asphalt mit Wurzelhebungen	Q1 23343,3750 23412,3766 23657,3508 23740,3418 24102,3055 24179,2977
+Grüne Trift am Walde: Asphalt mit erheblichen Wurzelhebungen	Q1 23337,3762 23402,3779 23657,3508
+Grüne Trift am Walde: Asphalt mit Wurzelhebungen	Q1 23657,3508 23740,3418 24102,3055 24179,2977
 Kienappelweg: Beton	Q0 24102,3055 24101,3447
 (Bukesweg - Grüne Trift am Walde): Schotterstraße	Q2 23668,2792 23799,2823 23845,2846 23943,2853 24010,2865 24074,2904 24179,2977
 (Grüne Trift am Walde - Müggelheimer Damm): Waldweg, uneben	Q2 24179,2977 24206,2986 24236,2981 24369,2973 24513,2878 24640,2860 24917,2929 25008,2889
@@ -4187,15 +4188,15 @@ Wolfsteiner Weg: Asphalt	Q0 27329,786 27497,981
 Am Müggelberg: Beton	Q0 27074,863 27119,996 27170,1149 27213,1302
 Am Müggelberg: Verbundsteinpflaster	Q0 27213,1302 27229,1359
 Norheimer Str.: Asphalt mit Wurzelschäden	Q1 28488,1307 28301,1467
-Müggellandstr.: Beton/Asphalt	Q0 28301,1467 28128,1621
-Müggellandstr.: Asphalt	Q0 28128,1621 28052,1606 27999,1570 27804,1337
+Müggellandstr.: Beton/Asphalt	Q0 28301,1467 28122,1625
+Müggellandstr.: Asphalt	Q0 28122,1625 28050,1609 27999,1570 27804,1337
 Hirseländerweg: Kopfsteinpflaster	Q2 28036,1136 28106,1211
 Hirseländerweg: Asphalt	Q0 28301,1467 28327,1525 28369,1616
 Hirseländerweg: unbefestigte Straße	Q2 28369,1616 28499,1833
 Hirseländerweg: Asphalt	Q0 28499,1833 28561,1912
 Hirseländerweg: Beton	Q0 28561,1912 28640,2015 28703,2104 28717,2121 28829,2269
 Hirseländerweg: Asphalt	Q0 28829,2269 28993,2397 29071,2457 29196,2548
-Kirsteinstr.: Asphalt	Q0 28632,1469 28495,1575 28369,1616 28205,1630 28128,1621
+Kirsteinstr.: Asphalt	Q0 28632,1469 28495,1575 28369,1616 28205,1630 28122,1625
 Kallbacher Str.: etwas rauer Asphalt	Q0 28817,1679 28727,1766 28642,1840 28561,1912 28452,2007
 Tongrubenweg: Asphalt	Q0 28493,2315 28415,2233 28308,2120 28278,2068
 Tongrubenweg: Asphalt mit einigen Schäden	Q1 28278,2068 28257,1991
@@ -4205,6 +4206,7 @@ Glottertaler Str.: Asphalt	Q0 29376,1738 29275,1821 29176,1897 29077,1973
 Hinter der Düne: Asphalt	Q0 29414,2373 29296,2467 29196,2548
 Privatstr. 659: sandige Straße	Q2 29196,2548 28898,2775
 (R1): Asphalt	Q0 27218,2300 27214,2281 27761,2124
+(Straße zum Müggelhort/R1 - Tongrubenweg): Waldweg, einige Wurzeln	Q2 27761,2124 28168,2000 28253,1960
 Straße zum Müggelhort: Asphalt	Q0 28729,3084 28639,3005 28442,2926 28359,2722 28106,2509 27911,2465 27849,2400 27761,2124
 Straße zum Müggelhort: Asphalt	Q0 27761,2124 27599,1521
 Straße zum Müggelhort: Asphalt	Q0 28729,3084 28715,3198 28751,3243 28853,3279 28958,3273 29069,3264
@@ -6829,7 +6831,7 @@ Apfelwicklerstr.: Verbundsteinpflaster	Q0 21456,10631 21553,10671
 (Bültenring - Wuhlewanderweg): Verbundsteinpflaster	Q0 21546,10352 21579,10345
 (Bültenring - Wuhlewanderweg): Kleinsteinpflaster	Q1 21579,10345 21586,10344
 Dramburger Str.: Asphalt	Q0 21594,9895 21606,10010 21571,10128 21556,10232 21573,10296 21584,10329
-Birnbaumer Str.: Beton	Q0 22093,6630 22186,6672
+Birnbaumer Str.: Asphalt	Q0 22093,6630 22189,6668
 Birnbaumer Str.: gepflastert	Q2 22050,6619 22093,6630
 Am Flutgraben: Asphalt	Q0 13333,9929 13418,9944 13579,10146
 Feldtmannstr.: Kopfsteinpflaster	Q2 14766,17702 14671,17735
@@ -9036,7 +9038,8 @@ Ortolfstr. [Wohngebiet]: Beton	Q1 19210,-85 19205,-219 19214,-313
 (Ortolfstr., Verbindungsweg): unbefestigter Weg	Q2 19214,-313 19026,-283
 (Preußensiedlung): wassergebundene Decke	Q1 20971,1046 20957,1043 20850,963
 (Am Gartenstadtweg - Paradiesstr./Johannes-Tobei-Str.): Asphalt	Q0 21199,309 21205,286 21247,143 21250,118
-Oberspreestr. [Wohngebiet]: Asphalt	Q0 19632,5211 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
+Oberspreestr. [Wohngebiet]: Asphalt	Q0 19632,5211 19628,5193 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
+Oberspreestr. [Nebenfahrbahn]: Asphalt	Q0 19445,5271 19451,5262 19532,5234 19572,5220 19587,5206 19628,5193 19735,5158 19940,5090 19957,5083 19965,5101
 Helene-Weigel-Platz: Asphalt	Q0 19628,13517 19625,13576
 (westlicher Wuhlewanderweg): teilweise Schotter	Q1 22110,13639 22140,13649 22263,13758 22347,13858
 (westlicher Wuhlewanderweg): wassergebundene Decke	Q1 22347,13858 22404,13984 22407,14111 22416,14148
@@ -9232,7 +9235,7 @@ Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19
 Dürerplatz: Verbundsteinpflaster	Q1 6234,7020 6276,6995
 Fischerstr.: Asphaltschäden	Q2 16404,10286 16423,10259
 Fischerstr.: Asphaltschäden	Q1 16423,10259 16492,10163 16539,10097
-(Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1 23412,3766 23368,3894
+(Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1 23402,3779 23368,3894
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
 (Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen möglich	Q2 19407,6660 19515,6934 19599,7075
@@ -13834,7 +13837,7 @@ Czarnikauer Str.: Kopfsteinpflaster	Q2 10225,16436 10449,16415 10613,16403
 Orchideenweg: Beton	Q1 15510,3778 15737,3609 16048,3378
 Orchideenweg: Asphalt/Beton	Q0 16048,3378 16221,3248
 Orchideenweg: Beton	Q1 16221,3248 16618,2965 16541,2866
-Brassenpfad: guter Beton	Q0 23641,3342 23452,3613 23343,3750 23316,3778
+Brassenpfad: guter Beton	Q0 23641,3342 23452,3613 23337,3762 23316,3778
 Graf-Haeseler-Str.: gutes Kopfsteinpflaster	Q1 4096,17890 4139,18091 4181,18284
 Driesener Str.: Kopfsteinpflaster	Q2 10458,16509 10449,16415
 Driesener Str.: Kopfsteinpflaster	Q2 10449,16415 10438,16340 10421,16175 10405,16017
@@ -16476,7 +16479,7 @@ Robert-Koch-Str.: asphaltiert	Q1 23955,12974 24142,12943 24421,12887
 Brodenbacher Weg: Beton, mit Schäden	Q1 14897,17093 15178,17134 15278,17152
 Straße 44 (Karow): guter Asphalt	Q0 15464,21894 15377,21921 15281,21960 15209,21985 15121,22016 15053,22039 14932,22083
 Nordische Str.: Verbundsteinpflaster	Q1 15126,21799 15209,21985
-Hoernlestr.: Asphalt	Q0 22645,6431 22509,6519 22301,6683 22265,6689 22192,6659
+Hoernlestr.: Asphalt	Q0 22645,6431 22509,6519 22301,6683 22265,6689 22193,6659
 Huttwiler Weg: Asphalt	Q0 7071,18232 7120,18295 7098,18383 7035,18413 6961,18453 6913,18460
 Walliser Str.: guter Asphalt	Q0 6887,18330 6913,18460 6921,18560
 Kornblumenring: Beton	Q0 16502,2314 16678,2330 16812,2347

@@ -1686,7 +1686,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024)
-#: last_checked: 2024-04-17 (okas) vvv
+#: last_checked: 2024-05-15 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-10-25 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
@@ -2169,7 +2169,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2024-05-06 vvv
+#: last_checked: 2024-05-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2945,6 +2945,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id: bvg2021:m43#BVG315176_0
+#: source_id: bvg2024:m43#HIM_FREETEXT_222564
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
@@ -4263,7 +4264,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2024-04-02 (architektur-urbanistik) vvv
+#: last_checked: 2024-05-15 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -6104,8 +6105,7 @@ asphaltiert	RW1;RW9 15639,10469 15758,10578
 	RW6;RW6 19303,8005 19176,8098
 	RW6;RW6 19176,8098 19121,8131 19113,8121 19077,8149
 	RW6;RW6 19157,8070 19116,8096 19060,8125
-#: note: Nebenstraße könnte in beiden Richtungen befahrbar sein
-	RW10; 19445,5271 19534,5242 19632,5211 19715,5185 19733,5177 19757,5169 19965,5101
+# REMOVED (separat eingetragen) --- #: note: Nebenstraße könnte in beiden Richtungen befahrbar sein ---	RW10; 19445,5271 19534,5242 19632,5211 19715,5185 19733,5177 19757,5169 19965,5101
 	RW3; 19965,5101 20142,5043 20383,4963 20689,4862
 asphaltiert	RW1; 20689,4862 20383,4963
 Gehweg für Radfahrer frei, asphaltiert	RW1; 20383,4963 20142,5043 19965,5101
@@ -6434,7 +6434,7 @@ neu asphaltiert	RW2; 23370,5589 23379,5559 23384,5541 23402,5483
 	RW6;RW6 27213,1302 27229,1359
 	RW6;RW6 27325,1265 27344,1329
 	RW6;RW6 27476,1287 27468,1279 27453,1229
-Verbundsteinpflasterradweg	RW1;RW1 27804,1337 27999,1570 28052,1606 28128,1621
+Verbundsteinpflasterradweg	RW1;RW1 27804,1337 27999,1570 28050,1609 28122,1625
 	RW3;RW3 28729,3084 28639,3005 28442,2926 28359,2722 28106,2509 27911,2465 27849,2400 27761,2124
 #: by: Reinhard Stenzel (d.h. corrected from Fußgängerzone -> RW6, nachträglich bestätigt) vvv
 	RW6;RW6 -1768,1882 -1750,1843 -1734,1806
@@ -6888,7 +6888,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2024-04-20 (okas)
+#: last_checked: 2024-05-15
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
@@ -7989,7 +7989,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="35"
-#: last_checked: 2024-05-06 vvv
+#: last_checked: 2024-05-15 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788
