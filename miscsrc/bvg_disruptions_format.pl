@@ -16,13 +16,14 @@ use strict;
 use warnings;
 use 5.010; # //
 use FindBin;
-use lib "$FindBin::RealBin/..";
+use lib "$FindBin::RealBin/..", $FindBin::RealBin;
 
 use Getopt::Long;
 use JSON::XS qw(decode_json);
 use List::Util qw(any first uniqstr);
 use YAML::XS qw(LoadFile);
 use Term::ANSIColor qw(colored);
+use Text::Wrap qw(wrap);
 use Tie::IxHash;
 
 use BBBikeUtil qw(bbbike_root is_in_path);
@@ -32,31 +33,38 @@ my $highlight_days = 3;
 GetOptions(
 	   'pager!'           => \$use_pager,
 	   'highlight-days=i' => \$highlight_days,
+	   '2024'             => \my $variant_2024,
 	  )
     or die "usage: $0 [--no-pager] [--highlight-days days]\n";
+
+if ($variant_2024) {
+    require "bvg_checker.pl";
+}
 
 my $sourceids_all     = LoadFile(bbbike_root . "/tmp/sourceid-all.yml");
 my $sourceids_current = LoadFile(bbbike_root . "/tmp/sourceid-current.yml");
 
-my $json = `cat /tmp/bvg_checker_disruption_reports.json`;
+my $json_file = $variant_2024 ? '/tmp/bvg_checker_disruptions_2024.json' : '/tmp/bvg_checker_disruption_reports.json';
+
+my $json = `cat $json_file`;
 my $d = decode_json $json;
 
 my $qr = qr{(U-Bahn U?\d+|(?:Bus|Tram) [MXN]?\d+)};
 
 my %combinedRecords;
-if (0) { # until Apr 2023
-    for my $dd (@{ $d->{data}->{allDisruptions} }) {
-	next if $dd->{"__typename"} eq "Elevator";
-	my $from = "$dd->{gueltigVonDatum} $dd->{gueltigVonZeit}";
-	my $sourceid = "bvg2021:" . lc($dd->{linie}) . "#" . $dd->{meldungsId};
-	my $date_row = "$from - " . ($dd->{gueltigBisDatum} // "?") . " " . ($dd->{gueltigBisZeit} // "");
-	my $title_row = "$dd->{beginnAbschnittName} - $dd->{endeAbschnittName}";
-	my $text_without_line = $dd->{textIntAuswirkung};
-	my $line;
-	if ($text_without_line =~ m{^$qr}) {
-	    $line = $1;
-	    $text_without_line =~ s{^$qr:\s+}{};
+if ($variant_2024) {
+    for my $dd (@$d) {
+	next if $dd->{"messageType"} eq "ELEVATOR";
+	my $from = $dd->{startDate};
+	my $line = bvg_checker::get_primary_line_2024($dd);
+	my $sourceid = "bvg2024:" . $line . "#" . $dd->{id};
+	my $date_row = "$from - " . ($dd->{endDate} // "?");
+	my $title_row = remove_boring_unicode(join(" - ", grep { defined } $dd->{stationOne}{name}, $dd->{stationTwo}{name}));
+	if ($title_row =~ /^\s*$/) {
+	    $title_row = remove_boring_unicode($dd->{content}[0]{headline});
 	}
+	my $text_without_line = remove_boring_unicode($dd->{content}[0]{content}); $text_without_line =~ s{<p>}{}g; $text_without_line =~ s{</p>}{\n}g; # XXX maybe remove more possible HTML?
+	$text_without_line = wrap("", "", $text_without_line);
 	my $key = "$date_row|$title_row|$text_without_line";
 	push @{ $combinedRecords{$key} }, {
 					   from              => $from,
@@ -65,7 +73,6 @@ if (0) { # until Apr 2023
 					   title_row         => $title_row,
 					   line              => $line,
 					   text_without_line => $text_without_line,
-					   sev               => $dd->{sev},
 					  }
     }
 } else {
@@ -104,8 +111,13 @@ for my $record (values %combinedRecords) {
     my $formatted_sourceids = '';; # already contains "\n" if non-empty
     for my $sourceid (map { $_->{sourceid} } @$record) {
 	$formatted_sourceids .= ($sourceids_all->{$sourceid} ? colored($sourceid, (!$sourceids_current->{$sourceid} ? "yellow on_black" : "green on_black")) . " INUSE" : $sourceid) . "\n";
-    } 
-    my $lines_combined = combine($record, 'line');
+    }
+    my $lines_combined;
+    if ($variant_2024) {
+	# no output of lines needed, it's already part of text_without_line (despite the variable name)
+    } else {
+	$lines_combined = combine($record, 'line');
+    }
     my $sev_combined = combine($record, 'sev');
     my $text_without_line = $record->[0]->{text_without_line};
 

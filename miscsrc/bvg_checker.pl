@@ -12,6 +12,8 @@
 # WWW:  http://www.rezic.de/eserte/
 #
 
+package bvg_checker;
+
 use strict;
 use warnings;
 use FindBin;
@@ -25,12 +27,15 @@ use Tie::IxHash;
 
 use Strassen::Core;
 
+return 1 if caller;
+
 my $id_prefix = 'bvg2021';
 
 GetOptions(
 	   "list-only" => \my $list_only,
 	   "log=s" => \my $log,
 	   "debug!" => \my $debug,
+	   "2024" => \my $variant_2024,
 	  )
     or die "usage: $0 [--list-only] [--log logfile] [--debug]\n";
 
@@ -81,6 +86,12 @@ for my $file (@files) {
 	     }
 	 }
 	);
+}
+
+if ($variant_2024) {
+    my %links = find_active_sourceids_bvg2024();
+    warn "INFO: found " . scalar(keys %links) . " items. Stopping now.\n";
+    exit 0;
 }
 
 my $errors = 0;
@@ -140,6 +151,56 @@ sub find_active_sourceids {
     } else {
 	find_active_sourceids_bvg2023();
     }
+}
+
+# Valid since May 2024
+# Using new "bvg2024:" source_id prefix
+sub find_active_sourceids_bvg2024 {
+    my $disruptions_query_url_pattern = sub { my %opts = @_; 'https://www.bvg.de/disruption-reports-service/disruptions?type=all&timeFrame=ALL&page=' . $opts{page} };
+    require LWP::UserAgent;
+    require JSON::XS;
+    my $ua = LWP::UserAgent->new;
+    $ua->cookie_jar({});
+
+    my $page = 1;
+    my $max_pages;
+    my @disruptions;
+    while () {
+	my $disruptions_query_url = $disruptions_query_url_pattern->(page => $page);
+	my $resp = $ua->get($disruptions_query_url);
+	die "Request to $disruptions_query_url failed:\n" . $resp->dump
+	    if !$resp->is_success;
+	my $json = $resp->decoded_content;
+	my $data = JSON::XS::decode_json($json);
+	push @disruptions, @{ $data->{elements} };
+	$max_pages = $data->{numPages};
+	$page++;
+	last if $page > $max_pages;
+    }
+    if ($debug) {
+	my $ofile = '/tmp/bvg_checker_disruptions_2024.json';
+	warn "INFO: write JSON to $ofile...\n";
+	open my $ofh, '>', $ofile or die $!;
+	print $ofh JSON::XS::encode_json(\@disruptions);
+	close $ofh or die $!;
+    }
+    my %links;
+    for my $disruption (@disruptions) {
+	my $line = get_primary_line_2024($disruption);
+	next if !defined $line;
+	my $id = $disruption->{id};
+	my $source_id = $line.'#'.$id;
+	$links{"bvg2024:$source_id"} = 1;
+    }
+    if ($debug) {
+	my $ofile = '/tmp/bvg_checker_disruption_ids_2024.json';
+	my $jsoner = JSON::XS->new->pretty->canonical->utf8;
+	warn "INFO: write active IDs to $ofile...\n";
+	open my $ofh, '>', $ofile or die $!;
+	print $ofh $jsoner->encode(\%links);
+	close $ofh or die $!;
+    }
+    return %links;
 }
 
 # Valid since Apr 2023
@@ -266,6 +327,30 @@ sub find_active_sourceids_bvg2021 {
 	%links = map {("$id_prefix:$_",1)} @links;
     }
     return %links;
+}
+
+sub get_primary_line_2024 {
+    my $disruption = shift;
+
+    # find suitable line, prefer busses
+    my $first_line;
+    for (@{ $disruption->{lines} }) {
+	if ($_->{bus} && @{ $_->{bus} }) {
+	    return $_->{bus}->[0]->{slug};
+	}
+	for my $type (sort keys %$_) {
+	    if ($_->{$type} && @{ $_->{$type} }) {
+		$first_line = $_->{$type}->[0]->{slug};
+		last;
+	    }
+	}
+    }
+    if (defined $first_line) {
+	return $first_line;
+    } else {
+	warn "WARNING: Cannot find line for id $disruption->{id} ($disruption->{messageType}).\n";
+	return undef;
+    }
 }
 
 __END__
