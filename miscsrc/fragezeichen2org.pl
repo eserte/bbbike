@@ -438,10 +438,14 @@ for my $file (@files) {
 	     }
 	     if (@source_id_defs) {
 		 my @viz_source_ids;
+		 my %seen_bvg_url;
 		 for my $source_id_def (@source_id_defs) {
 		     my($source_id, $inactive) = @$source_id_def;
 		     if      ($source_id =~ m{^(?:bvg2021|bvg2024):([^#\s]+)}) { # match the BVG line only; the BVG id cannot be used for linking
-			 push @extra_url_defs, ['BVG' . ($inactive ? '(inactive)' : ''), "https://www.bvg.de/de/verbindungen/linienuebersicht/$1#stoerungsmeldungen"];
+			 my $bvg_url = "https://www.bvg.de/de/verbindungen/linienuebersicht/$1#stoerungsmeldungen";
+			 if (!$seen_bvg_url{$bvg_url}++) {
+			     push @extra_url_defs, ['BVG' . ($inactive ? '(inactive)' : ''), $bvg_url];
+			 }
 		     } elsif ($source_id =~ m{^viz2021:}) {
 			 if ($source_id =~ m{^viz2021:(-?[\d\.]+),(-?[\d\.]+)}) {
 			     ($px,$py) = ($1,$2);
