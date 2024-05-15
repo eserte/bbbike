@@ -28,23 +28,31 @@ use Tie::IxHash;
 
 use BBBikeUtil qw(bbbike_root is_in_path);
 
+my $variant = 'bvg2024';
+
 my $use_pager = -t STDOUT && is_in_path('less');
 my $highlight_days = 3;
 GetOptions(
 	   'pager!'           => \$use_pager,
 	   'highlight-days=i' => \$highlight_days,
-	   '2024'             => \my $variant_2024,
+	   "variant=s" => sub {
+	       if ($_[1] =~ m{^bvg(2021|2024)$}) {
+		   $variant = $_[1];
+	       } else {
+		   die "Invalid variant '$_[1]', currently only bvg2021 and bvg2024 valid.\n";
+	       }
+	   },
 	  )
     or die "usage: $0 [--no-pager] [--highlight-days days]\n";
 
-if ($variant_2024) {
-    require "bvg_checker.pl";
+if ($variant eq 'bvg2024') {
+    require "bvg_checker.pl"; # for get_primary_line_2024
 }
 
 my $sourceids_all     = LoadFile(bbbike_root . "/tmp/sourceid-all.yml");
 my $sourceids_current = LoadFile(bbbike_root . "/tmp/sourceid-current.yml");
 
-my $json_file = $variant_2024 ? '/tmp/bvg_checker_disruptions_2024.json' : '/tmp/bvg_checker_disruption_reports.json';
+my $json_file = $variant eq 'bvg2024' ? '/tmp/bvg_checker_disruptions_2024.json' : '/tmp/bvg_checker_disruption_reports.json';
 
 my $json = `cat $json_file`;
 my $d = decode_json $json;
@@ -52,7 +60,7 @@ my $d = decode_json $json;
 my $qr = qr{(U-Bahn U?\d+|(?:Bus|Tram) [MXN]?\d+)};
 
 my %combinedRecords;
-if ($variant_2024) {
+if ($variant eq 'bvg2024') {
     for my $dd (@$d) {
 	next if $dd->{"messageType"} eq "ELEVATOR";
 	my $from = $dd->{startDate};
@@ -113,7 +121,7 @@ for my $record (values %combinedRecords) {
 	$formatted_sourceids .= ($sourceids_all->{$sourceid} ? colored($sourceid, (!$sourceids_current->{$sourceid} ? "yellow on_black" : "green on_black")) . " INUSE" : $sourceid) . "\n";
     }
     my $lines_combined;
-    if ($variant_2024) {
+    if ($variant eq 'bvg2024') {
 	# no output of lines needed, it's already part of text_without_line (despite the variable name)
     } else {
 	$lines_combined = combine($record, 'line');

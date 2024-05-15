@@ -931,7 +931,7 @@
   ;; recognize "#: source_id" bvg directives in bbd files
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*source_id\\(\\[inactive\\]\\)?:?[ ]\\(bvg2021\\):\\([^# \n]+\\)\\([^ \n]*\\)" nil t)
+    (while (search-forward-regexp "^#:[ ]*source_id\\(\\[inactive\\]\\)?:?[ ]\\(bvg2021\\|bvg2024\\):\\([^# \n]+\\)\\([^ \n]*\\)" nil t)
       (let* ((is-inactive (if (match-beginning 1) t nil))
 	     (button-type (if is-inactive 'bbbike-inactive-bvg-button 'bbbike-bvg-button))
 	     (link-begin-pos (match-beginning 2))

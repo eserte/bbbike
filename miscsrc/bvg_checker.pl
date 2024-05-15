@@ -29,15 +29,23 @@ use Strassen::Core;
 
 return 1 if caller;
 
-my $id_prefix = 'bvg2021';
+my $variant = 'bvg2024';
 
 GetOptions(
 	   "list-only" => \my $list_only,
 	   "log=s" => \my $log,
 	   "debug!" => \my $debug,
-	   "2024" => \my $variant_2024,
+	   "variant=s" => sub {
+	       if ($_[1] =~ m{^bvg(2021|2024)$}) {
+		   $variant = $_[1];
+	       } else {
+		   die "Invalid variant '$_[1]', currently only bvg2021 and bvg2024 valid.\n";
+	       }
+	   },
 	  )
     or die "usage: $0 [--list-only] [--log logfile] [--debug]\n";
+
+my $id_prefix = $variant;
 
 my $logfh;
 if ($log) {
@@ -88,12 +96,6 @@ for my $file (@files) {
 	);
 }
 
-if ($variant_2024) {
-    my %links = find_active_sourceids_bvg2024();
-    warn "INFO: found " . scalar(keys %links) . " items. Stopping now.\n";
-    exit 0;
-}
-
 my $errors = 0;
 if (%check_sourceids || %check_inactive_sourceids) {
     if ($list_only) {
@@ -138,18 +140,22 @@ if ($logfh) {
 }
 
 sub find_active_sourceids {
-    # www.bvg.de is not reliable anymore (connection errors seen in March 2024), so do a retry once if Sub::Retry is available
-    if (eval { require Sub::Retry; 1 }) {
-	Sub::Retry::retry(3, 10, sub {
-			      my %res = eval { find_active_sourceids_bvg2023() };
-			      if ($@) {
-				  warn $@;
-				  die $@;
-			      }
-			      %res;
-			  });
+    if ($variant eq 'bvg2024') {
+	find_active_sourceids_bvg2024();
     } else {
-	find_active_sourceids_bvg2023();
+	# www.bvg.de is not reliable anymore (connection errors seen in March 2024), so do a retry once if Sub::Retry is available
+	if (eval { require Sub::Retry; 1 }) {
+	    Sub::Retry::retry(3, 10, sub {
+				  my %res = eval { find_active_sourceids_bvg2023() };
+				  if ($@) {
+				      warn $@;
+				      die $@;
+				  }
+				  %res;
+			      });
+	} else {
+	    find_active_sourceids_bvg2023();
+	}
     }
 }
 
