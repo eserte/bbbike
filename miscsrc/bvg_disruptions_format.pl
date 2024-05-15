@@ -19,6 +19,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..", $FindBin::RealBin;
 
 use Getopt::Long;
+use HTML::FormatText;
 use JSON::XS qw(decode_json);
 use List::Util qw(any first uniqstr);
 use YAML::XS qw(LoadFile);
@@ -67,12 +68,30 @@ if ($variant eq 'bvg2024') {
 	my $line = bvg_checker::get_primary_line_2024($dd);
 	my $sourceid = "bvg2024:" . $line . "#" . $dd->{id};
 	my $date_row = "$from - " . ($dd->{endDate} // "?");
-	my $title_row = remove_boring_unicode(join(" - ", grep { defined } $dd->{stationOne}{name}, $dd->{stationTwo}{name}));
-	if ($title_row =~ /^\s*$/) {
+
+	my $title_row;
+	if (($dd->{stationOne}{name}//'') ne '') {
+	    if (($dd->{stationOne}{name}//'') eq ($dd->{stationTwo}{name}//'')) {
+		$title_row = remove_boring_unicode($dd->{stationOne}{name});
+	    } else {
+		$title_row = remove_boring_unicode($dd->{stationOne}{name} . " - " . $dd->{stationTwo}{name})
+	    }
+	} else {
 	    $title_row = remove_boring_unicode($dd->{content}[0]{headline});
 	}
-	my $text_without_line = remove_boring_unicode($dd->{content}[0]{content}); $text_without_line =~ s{<p>}{}g; $text_without_line =~ s{</p>}{\n}g; # XXX maybe remove more possible HTML?
-	$text_without_line = wrap("", "", $text_without_line);
+
+	my $text_without_line = remove_boring_unicode($dd->{content}[0]{content});
+	if (!eval {
+	    my $plain_text = HTML::FormatText->format_string($text_without_line, leftmargin => 0, rightmargin => 79);
+	    if ($plain_text ne '') {
+		$text_without_line = $plain_text;
+	    }
+	}) {
+	    warn "WARNING: Parsing HTML for id $dd->{id} failed ($@)";
+	    # fallback to unformatted content, just wrap it
+	    $text_without_line = wrap("", "", $text_without_line);
+	}
+
 	my $key = "$date_row|$title_row|$text_without_line";
 	push @{ $combinedRecords{$key} }, {
 					   from              => $from,
