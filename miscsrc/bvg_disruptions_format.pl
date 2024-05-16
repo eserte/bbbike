@@ -71,7 +71,7 @@ if ($variant eq 'bvg2024') {
 
 	my $title_row;
 	if (($dd->{stationOne}{name}//'') ne '') {
-	    if (($dd->{stationOne}{name}//'') eq ($dd->{stationTwo}{name}//'')) {
+	    if ((($dd->{stationOne}{name}//'') eq ($dd->{stationTwo}{name}//'')) || (($dd->{stationTwo}{name}//'') eq '')) {
 		$title_row = remove_boring_unicode($dd->{stationOne}{name});
 	    } else {
 		$title_row = remove_boring_unicode($dd->{stationOne}{name} . " - " . $dd->{stationTwo}{name})
