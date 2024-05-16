@@ -638,7 +638,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2024-04-17
+#: last_checked: 2024-05-15 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -12251,7 +12251,7 @@ Dorfstr. (Wartenberg) [Nebenstraße]: Beton	Q0- 17824,18963 17874,18936 17958,189
 (Am Städtischen Zentralfriedhof - Landschaftspark Herzberge): wassergebundene Decke	Q1 17580,12625 17548,12703 17507,12760 17507,12781
 (Oderstr. - Kirchhofweg): Verbundsteinpflaster	Q1 11565,7402 11602,7375
 (Oderstr. - Kirchhofweg): wassergebundene Decke	Q1 11602,7375 11656,7375 11677,7351 11687,7284
-(Weg im Anita-Berber-Park): wassergebundene Decke	Q1- 11677,7351 11751,7366 12158,7449
+(Weg im Anita-Berber-Park): wassergebundene Decke	Q1 11677,7351 11751,7366 12158,7449
 Am Westkreuz: Kleinsteinpflaster	Q1 2157,10497 2170,10497 2203,10455
 # REMOVED (weitgehend zurückgebaut) --- (zum Mauerpark, temporäre Umgehung): Asphalt	Q0- 10297,14961 10279,15033 10295,15078 10319,15090
 # REMOVED --- (Mauerpark, temporäre Baustraße): Asphalt	Q0 10295,15078 10193,15384 10210,15407
@@ -12576,8 +12576,7 @@ Parkweg Thielpark: Parkweg	Q1 2214,4992 2208,5060 2232,5118 2279,5112 2313,5111
 (Rampe Yorckbrücke 5): Asphalt mit Metallquerleisten	Q0- 8227,9621 8257,9684 8243,9766
 #: by: mapillary
 (Straße 50 - Straße 50): Asphalt und Verbundsteinpflaster	Q1+ 15305,22017 15325,22070 15353,22105
-Saalestr.: Asphalt mit einigen Schäden	Q1+ 14015,7631 13980,7548
-Saalestr.: Asphalt mit einigen Schäden	Q0- 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321
+Saalestr.: Asphalt mit einigen Schäden	Q1+ 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321
 #: historical_note: am Anfang asphaltiert gewesen vvv
 Hawaiiweg: Verbundsteinpflaster	Q1+ -2413,18765 -2455,18767 -2485,18768 -2558,18771 -2622,18772 -2656,18772 -2743,18776 -2757,18800 -2759,18843 -2769,18853
 Trinidadweg: Verbundsteinpflaster	Q1+ -2663,18634 -2660,18717 -2656,18772
@@ -13331,9 +13330,10 @@ Lietzenburger Str. - Fürther Str.: Gehwegplatten, Mosaikpflaster	Q1 5764,10322 5
 Mauerstr.: Kleinpflastersteine	Q1- 9405,11413 9459,11371
 Mauerstr. - Friedrichstr.: Gehwegplatten	Q0 9459,11371 9474,11360
 Leinestr. [Stichstraße]: Beton	Q1+ 11878,7501 11888,7455
-Leinestr. [Stichstraße]: schadhafter Beton	Q2+ 11731,7473 11738,7431
+#: historical_note: früher (bis Mai 2024): schadhafter Beton, Q2+
+Leinestr. [Stichstraße]: Betonsteinpflaster	Q0- 11731,7473 11738,7431
 (Leinestr. - Anita-Berber-Park): Gitter	Q1- 11738,7431 11727,7423 11740,7423
-(Leinestr. - Anita-Berber-Park): wassergebundene Decke	Q1- 11740,7423 11751,7366
+(Leinestr. - Anita-Berber-Park): wassergebundene Decke	Q1 11740,7423 11751,7366
 (Weg entlang der Straßenbahnstrecke): Asphalt	Q0 18836,3203 18834,3315 18833,3388 18835,3562
 (Weg entlang der Straßenbahnstrecke): glattes Kleinsteinpflaster	Q1- 18835,3562 18851,3598
 (Straßenbahnstrecke - Konrad-Zuse-Str.): glattes Kleinsteinpflaster	Q1- 18833,3388 18857,3418

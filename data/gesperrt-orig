@@ -185,7 +185,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt, wonach es aussieht, dann nur nach gesperrt_car verschieben)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2024-05-02
+#: last_checked: 2024-05-16
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -3840,7 +3840,7 @@ Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::i
 # 
 #: next_check_id: KANZLERPARK-2024
 #: note: ein längerer temp_blockings-Eintrag existiert ebenfalls
-#: last_checked: 2024-02-23
+#: last_checked: 2024-05-15 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2025-01-24
 #: valid: -20250124
@@ -3874,6 +3874,7 @@ Weg entlang der A100: gesperrt, Durchfahrt zumindest an der Sonnenallee wegen Ba
 #: by: https://www.bonava.de/immobilien/berlin/mariendorf/quartier-hugos
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=736121#post736121
+#: by: https://www.deutsches-architekturforum.de/thread/15360-quartier-hugos-mariendorf/?postID=731063#post731063 ("Quartier Hugos")
 #: osm_watch: way id="287142081" version="14"
 #: osm_watch: way id="255588538" version="13"
 #: osm_watch: way id="1022315542" version="9"
@@ -4080,7 +4081,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: next_check_id: KANZLERPARK-2024
 #: XXX Bauarbeiten am Kanzlerpark
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
-#: last_checked: 2024-05-05 vvv
+#: last_checked: 2024-05-15 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: XXX laut osm gesperrt vvv
 #: osm_watch: way id="256450718" version="7"
@@ -4437,7 +4438,7 @@ Ruth-Baumgarte-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17738,
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2024-04-17
+#: last_checked: 2024-05-15 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4669,7 +4670,7 @@ Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2024-05-12 vvv
+#: last_checked: 2024-05-16 vvv
 #: next_check: 2028-01-01 vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -4893,7 +4894,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-04-18 (daf)
+#: last_checked: 2024-05-15 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -5171,7 +5172,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2024-03-18 vvv
+#: last_checked: 2024-05-15 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"

@@ -8,9 +8,14 @@ push @temp_blocking,
 #: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
 #: by: https://nitter.cz/VIZ_Berlin/status/1660949370760486913#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnd6Z2s0Ulh3QU1ZSWNJLmpwZw==
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1791092486695211121 (2024)
+#: by: https://pbs.twimg.com/media/GNmvjxnXgAE5jzf?format=jpg
 #: source_id: viz2021:13.3896,52.49594,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
 #: source_id: viz2021:13.39512,52.49691,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
 #: source_id: viz2021:13.39524,52.49454,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
+#: source_id: viz2021:13.389478,52.495996,16.05.2024,10:00 (bis 21.05.2024)
+#: source_id: viz2021:13.3893,52.497538,16.05.2024,17:00 (bis 21.05.2024)
+#: source_id: viz2021:13.395267,52.49454,16.05.2024,10:00 (bis 21.05.2024)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -5448,13 +5453,14 @@ Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 128
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 13
-#: last_checked: 2024-05-12 vvv
+#: last_checked: 2024-05-16 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-05-13 vvv
+#: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
 Niemetzstr.	2::inwork 13797,7267 13762,7321
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
-Saalestr.	2::inwork 13648,7284 13762,7321 13794,7333
+#: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
+Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 13648,7284 13762,7321 13794,7333
 # REMOVED (frei) ---	2::inwork 13693,7228 13575,7200
 # REMOVED (mittlerweile frei) --- #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs ---	q4::inwork; 13484,7140 13575,7200 13627,7047
 #: next_check ^^^
@@ -5463,7 +5469,7 @@ Saalestr.	2::inwork 13648,7284 13762,7321 13794,7333
 ',
          'from' => 1645336800,
          'id' => 3517,
-         'text' => 'Niemetzstr. und Saalestr.: Brückenneubau, Sperrung, auch für Fußgänger und Radfahrer; außerdem ist die Fahrbahn des Mittelbuschwegs gesperrt, vom 13.05.2024 07:00 bis Dezember 2025',
+         'text' => 'Niemetzstr.: Brückenneubau, Sperrung, auch für Fußgänger und Radfahrer; außerdem sind die Fahrbahnen von Saalestr. und Mittelbuschweg gesperrt, vom 13.05.2024 07:00 bis Dezember 2025',
          'type' => 'handicap',
          'until' => 1765468800
        },
@@ -6121,6 +6127,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/sch%C3%B6neberger-eck.652/page-3#post-22745
 #: by: http://www.deal-magazin.com/news/3/133880/Berlin-Bauarbeiten-fuer-Buerohochhaus-Schoeneberger-Eck-gehen-weiter (Fertigstellung nun Mitte 2025)
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/barbarossadreieck-bau-geht-weiter_a412889
+#: by: https://www.deutsches-architekturforum.de/thread/15363-bv-sch%C3%B6neberger-eck-hochhaus-barbarossadreieck/?pageNo=1
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
@@ -7145,7 +7152,7 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
-#: last_checked: 2024-05-06 (mapillary) vvv
+#: last_checked: 2024-05-15 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn --- oder das Schild existiert noch, ist aber dauerhaft umgedreht) ---	q4::inwork; 10908,13978 10933,14122
@@ -7727,7 +7734,17 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'type' => 'gesperrt',
          'until' => 1716393600
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.43407,52.4526,21.03.2024,07:00 (bis 16.05.2024) (vorzeitig inaktiv)
+#: note: bei rbb nun verlängert, bis zum 6.6.2024
+	2::inwork 12582,5232 12518,5508 12482,5648
+',
+         'from' => 1710914400,
+         'id' => 4029,
+         'text' => 'Am Straßenbahnhof: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.03.2024 07:00 bis 06.06.2024',
+         'type' => 'handicap',
+         'until' => 1717693200
+       },
        undef,
        undef,
        {
@@ -8084,20 +8101,6 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
          'text' => 'Blumberger Damm: Richtung Süden zwischen Elisabethstr. und Cecilienstr. wegen eines gesperrt, gegenüberliegender Gehweg ist frei, vom 12.05.2024 10:30 bis 07.06.2024 17:00',
          'type' => 'handicap',
          'until' => 1717772400
-       },
-       {
-         'data' => '#: source_id: viz2021:13.41244,52.531775,14.05.2024,11:37 (bis 30.05.2024) (inaktiv)
-#: source_id: bvg2024:n2#HIM_FREETEXT_222467
-#: source_id: viz2021:13.412041,52.531248,14.05.2024,11:37 (bis 30.05.2024)
-#: by: https://www.berliner-zeitung.de/news/wasserrohrbruch-in-prenzlauer-berg-schoenhauser-allee-fuer-zwei-wochen-gesperrt-li.2214928
-#: note: "Einbahnstraße", da der Gehweg hier sowieso gesperrt ist und die Umleitung via Kollwitzstr. vermutlich sowieso günstiger ist
-	1::inwork 10908,13978 10933,14122
-',
-         'from' => 1715593020,
-         'id' => 4061,
-         'text' => 'Schönhauser Allee: Sperrung zwischen Saarbrücker Str. und Schwedter Str., Wasserrohrbruch, evtl. sind auch Radfahrer betroffen, vom 14.05.2024 bis 30.05.2024',
-         'type' => 'gesperrt',
-         'until' => 1717106340
        }
      
 );
