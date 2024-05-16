@@ -54,9 +54,31 @@ my @check_points       = ($perl, "$miscsrcdir/check_points");
 
 my @orig_files = bsd_glob("*-orig");
 my @fragezeichen_lowprio_bbd = defined $bbbikeauxdir ? "$bbbikeauxdir/bbd/fragezeichen_lowprio.bbd" : ();
-#my @additional_sourceid_files = ('routing_helper-orig', @fragezeichen_lowprio_bbd); # XXX use once everything is migrated to doit.pl
-my @additional_sourceid_files;
-my @source_targets_sources;
+
+my @ADDITIONAL_SOURCEID_FILES	= ('routing_helper-orig', @fragezeichen_lowprio_bbd);
+my @COMMENTS_PARTIAL	= qw(comments_cyclepath comments_danger comments_ferry comments_misc
+			     comments_mount comments_path comments_route
+			     comments_trafficjam comments_tram comments_kfzverkehr comments_scenic);
+my @SOURCE_TARGETS	= (qw(strassen plaetze landstrassen landstrassen2 strassen_bab
+			     flaechen
+			     wasserstrassen wasserumland wasserumland2
+			     sbahn sbahnhof rbahn rbahnhof
+			     ubahn ubahnhof
+			     faehren hoehe orte orte2 orte_city ortsschilder
+			     ampeln ampelschaltung
+			     plz potsdam deutschland grenzuebergaenge
+			     sehenswuerdigkeit obst radwege
+			     qualitaet_s qualitaet_l
+			     handicap_s handicap_l
+			     handicap_directed
+			     vorfahrt nolighting
+			     housenumbers green brunnels
+			     gesperrt gesperrt_car
+			     gesperrt_u gesperrt_s gesperrt_r
+			    ), @COMMENTS_PARTIAL,
+			   qw(fragezeichen exits
+			      culdesac));
+my @SOURCE_TARGETS_SOURCES = map { $_.'-orig' } @SOURCE_TARGETS;
 
 sub _need_rebuild ($@) {
     my($dest, @srcs) = @_;
@@ -143,27 +165,6 @@ sub _repeat_on_changing_sources {
 	    }
 	    last;
 	}
-    }
-}
-
-{
-    my %done;
-    sub _set_make_variable {
-	my($d, $varref, $makevar) = @_;
-	last if $done{$makevar};
-	require BBBikeBuildUtil;
-	my $pmake = BBBikeBuildUtil::get_pmake(canV => 1, fallback => 0);
-	chomp(my $varline = $d->info_qx({quiet=>1}, $pmake, "-V$makevar"));
-	@$varref = split /\s+/, $varline;
-	$done{$makevar} = 1;
-    }
-    sub _set_variable_source_targets_sources {
-	my($d) = @_;
-	_set_make_variable($d, \@source_targets_sources, 'SOURCE_TARGETS_SOURCES');
-    }
-    sub _set_variable_additional_sourceid_files {
-	my($d) = @_;
-	_set_make_variable($d, \@additional_sourceid_files, 'ADDITIONAL_SOURCEID_FILES');
     }
 }
 
@@ -466,8 +467,6 @@ sub action_fragezeichen_nextcheck_without_osm_watch_org {
 
 sub action_sourceid {
     my $d = shift;
-    _set_variable_source_targets_sources($d);
-    _set_variable_additional_sourceid_files($d);
 
     for my $variant_def (
         ["sourceid-all.yml",     "bbbike-temp-blockings.bbd"],
@@ -475,7 +474,7 @@ sub action_sourceid {
     ) {
 	my($dest_base, $temp_blockings_base) = @$variant_def;
 	my $dest = "$persistenttmpdir/$dest_base";
-	my @srcs = ("$persistenttmpdir/$temp_blockings_base", @source_targets_sources, @additional_sourceid_files);
+	my @srcs = ("$persistenttmpdir/$temp_blockings_base", @SOURCE_TARGETS_SOURCES, @ADDITIONAL_SOURCEID_FILES);
 	if (_need_rebuild $dest, @srcs) {
 	    _repeat_on_changing_sources(sub {
 	        $d->run([$perl, "$miscsrcdir/bbd_to_sourceid_exists", @srcs], '>', "$dest~");
@@ -562,6 +561,26 @@ sub action_check_do_check_nearest {
     if ($dist < 20) {
 	warning Strassen::arr2line2($r);
 	error "Distance $dist m found. Please check and add to @{[ cwd() ]}/check_nearest_ignore, if necessary";
+    }
+}
+
+sub action_makefile_vars {
+    my($d) = @_;
+    my $dest_file = "Makefile.vars";
+    if (_need_rebuild $dest_file, __FILE__) {
+	my $out = <<"EOF";
+# DO NOT EDIT, CHANGE THE VARIABLES in doit.pl and re-run doit.pl!
+
+EOF
+	for my $var (qw(ADDITIONAL_SOURCEID_FILES SOURCE_TARGETS_SOURCES COMMENTS_PARTIAL SOURCE_TARGETS)) {
+	    my @vals = eval '@'.$var; die "Can't evaluate \@$var: $@" if $@;
+	    $out .= "$var=\t" . join(" ", @vals) . "\n\n";
+	}
+	$d->add_component('file');
+	$d->file_atomic_write($dest_file, sub {
+				  my $ofh = shift;
+				  $ofh->print($out);
+			      });
     }
 }
 
@@ -926,6 +945,7 @@ sub action_all {
     action_fragezeichen_nextcheck_home_home_org($d);
     action_fragezeichen_nextcheck_without_osm_watch_org($d);
     action_sourceid($d);
+    action_makefile_vars($d);
 }
 
 return 1 if caller;

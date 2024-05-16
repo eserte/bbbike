@@ -11,6 +11,8 @@
 # (This is a slightly modified version of the original pmake as found in
 # the FreeBSD sources)
 
+.include "Makefile.vars"
+
 UNAME!=	uname
 
 BBBIKEDIR=		..
@@ -68,33 +70,6 @@ CREATE_COOKED_BBD=	${PERL} ${MISCSRCDIR}/create_cooked_bbd
 BBD_TO_BBBGEOJSONP=	${PERL} ${MISCSRCDIR}/bbd2geojson -bbbgeojsonp -multiline
 BBD_TO_GEOJSON=		${PERL} ${MISCSRCDIR}/bbd2geojson -multiline
 
-COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
-			comments_mount comments_path comments_route \
-			comments_trafficjam comments_tram comments_kfzverkehr comments_scenic
-
-SOURCE_TARGETS=		strassen plaetze landstrassen landstrassen2 strassen_bab
-SOURCE_TARGETS+=	flaechen
-SOURCE_TARGETS+=	wasserstrassen wasserumland wasserumland2
-SOURCE_TARGETS+=	sbahn sbahnhof rbahn rbahnhof
-SOURCE_TARGETS+=	ubahn ubahnhof
-SOURCE_TARGETS+=	faehren hoehe orte orte2 orte_city ortsschilder
-SOURCE_TARGETS+=	ampeln ampelschaltung
-SOURCE_TARGETS+=	plz potsdam deutschland grenzuebergaenge
-SOURCE_TARGETS+=	sehenswuerdigkeit obst radwege
-SOURCE_TARGETS+=	qualitaet_s qualitaet_l
-SOURCE_TARGETS+=	handicap_s handicap_l
-SOURCE_TARGETS+=	handicap_directed
-SOURCE_TARGETS+=	vorfahrt nolighting
-SOURCE_TARGETS+=	housenumbers green brunnels
-SOURCE_TARGETS+=	gesperrt gesperrt_car
-.for i in u s r
-SOURCE_TARGETS+=	gesperrt_$(i)
-.endfor
-SOURCE_TARGETS+=	${COMMENTS_PARTIAL} fragezeichen exits
-SOURCE_TARGETS+=	culdesac
-
-SOURCE_TARGETS_SOURCES=	${SOURCE_TARGETS:S|$|-orig|}
-
 # These do not have a -orig file of their own, or another type of source file
 COMPUTED_TARGETS=	sbahnhof_bg ubahnhof_bg berlin berlin_ortsteile
 COMPUTED_TARGETS+=	radwege_exact mount
@@ -113,11 +88,6 @@ INTERMEDIATE_TARGETS=	.strassen.tmp \
 			${PERSISTENTTMPDIR}/gesperrt-orig-valid \
 			${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 			${PERSISTENTTMPDIR}/radwege-orig-valid
-
-ADDITIONAL_SOURCEID_FILES=	routing_helper-orig
-.if exists($(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd)
-ADDITIONAL_SOURCEID_FILES+=	$(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd
-.endif
 
 ADDITIONAL_FRAGEZEICHEN_FILES=	routing_helper-orig
 
