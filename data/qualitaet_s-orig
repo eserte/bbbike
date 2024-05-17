@@ -638,7 +638,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2024-05-15 (mapillary)
+#: last_checked: 2024-05-17
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -10558,8 +10558,11 @@ Rhinstr. [Nebenstraße]: Beton	Q1+ 18258,11827 18340,11830 18381,11857 18417,1185
 (Rhinstr. - Am Mühlenberg): Beton	Q1+ 18215,11690 18242,11793 18258,11827
 #: note: interpoliert
 Am Kleinen Platz: Asphalt	Q0 -7292,14811 -7248,14826
-Jean-Monnet-Str.: Verbundsteinpflaster	Q0- 7995,13537 8048,13578
-(Heidestr. - nördlicher Vorplatz des Hauptbahnhofs): Asphalt	Q0- 8071,13521 8016,13455
+#: historical_note: früher: Verbundsteinpflaster, Q0-
+Jean-Monnet-Str.: Asphalt	Q0 7995,13537 8048,13578
+(Jean-Monnet-Str. - Europaplatz Nord): provisorischer Asphalt	Q1 7995,13537 7963,13489
+Europaplatz [Nord]: asphalt/betonähnliche Oberfläche	Q0 8057,13400 8010,13450 7963,13489
+(Heidestr. - nördlicher Vorplatz des Hauptbahnhofs): Asphalt	Q0- 8071,13521 8010,13450
 Heidenelkenweg: Verbundsteinpflaster	Q0- 16112,12622 16111,12685 16095,12685 16073,12685 16071,12623
 Heidenelkenweg: Verbundsteinpflaster	Q0- 16095,12685 16098,12743
 Freesienweg: Verbundsteinpflaster	Q0- 16000,12625 15997,12743
@@ -11746,6 +11749,7 @@ Hedwig-Porschütz-Str.: Asphalt	Q0 7652,14257 7735,14305
 Hedwig-Porschütz-Str.: glatt gepflastert	Q2+ 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238
 Hedwig-Porschütz-Str.: Asphalt	Q0 7781,14238 7697,14187
 (Hedwig-Porschütz-Str. - Uferweg): glatt gepflastert	Q2+ 7802,14250 7830,14268
+(Hedwig-Porschütz-Str. - George-Stephenson-Str.): Mosaikpflaster	Q1 7697,14187 7614,14136
 # REMOVED (wird neu gemacht) --- Gustav-Böß-Str.: Asphalt mit leichten Schäden	Q0- 10673,12434 10772,12515
 Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 (Gerhard-Sedlmayr-Str. - Landschaftspark): Asphalt	Q0 18228,4168 18178,4125 18176,4105
@@ -12939,7 +12943,7 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
 Lisa-Fittko-Str.: Verbundsteinpflaster	Q1+ 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2024-04-06 (mapillary) vvv
+#: last_checked: 2024-05-17 vvv
 #: check_frequency: 45d vvv
 (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7569,14209 7652,14257
 George-Stephenson-Str.: Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136

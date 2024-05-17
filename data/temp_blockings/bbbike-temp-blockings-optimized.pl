@@ -91,6 +91,13 @@ Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,99
 	3 11274,9492 11208,9345 11136,9183 11141,9107
 	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
 	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1447817.php (2024; "Sperrung einzelner Eingänge des Volksparks Hasenheide")
+Hasenheide Eingang Lilienthalstr.	2 11708,8747 11768,8739
+Hasenheide Eingang Graefestr.	2 11136,9183 11141,9107
+Hasenheide Eingang Jahnstr. West	2 10709,9192 11111,9104
+Hasenheide Eingang Jahnstr. Ost	2 11515,9066 11550,9104
+Hasenheide Eingang Lucy-Lameck-Str.	2 11439,9049 11449,9125
+
 ',
          'from' => 1715983200,
          'id' => 4,
@@ -4173,7 +4180,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-05-13
+#: last_checked: 2024-05-17
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4425,43 +4432,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-teamstaffel.de/der-tag/strecke.html
-#: by: https://www.berliner-teamstaffel.de/event/strecke
-#: by: https://www.berliner-teamstaffel.de/
-#: source_id: 2147344332 (inaktiv)
-#: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
-#: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
-#: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023) (inaktiv)
-#: source_id: viz2021:13.362236,52.517659,06.06.2023,18:00 (John-Foster-Dulles-Allee, bis 10.06.2023) (inaktiv)
-	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
-	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
-	3 6689,12632 7031,12320 7051,12426
-	3 6689,12632 7031,12320 7001,12274
-	3 7654,12464 7627,12380 7603,12353
-	3 7001,12274 7031,12320 7051,12426
-	3 7001,12274 7031,12320 6689,12632
-	3 7051,12426 7031,12320 7001,12274
-	3 7051,12426 7031,12320 6689,12632
-	3 7603,12353 7627,12380 7654,12464
-',
-         'from' => 1715529600,
-         'id' => 3113,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              12,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 14. Mai 2024 bis 16. Mai 2024',
-         'type' => 'gesperrt',
-         'until' => 1715929200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6673,6 +6644,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: by: https://nitter.cz/VIZ_Berlin/status/1662153122070790145#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
 #: by: https://www.family-and-friends-ev.de/?date=20240303
+#: source_id: viz2021:13.259512,52.513271,18.05.2024,05:00 (bis 20.05.2024)
 # REMOVED (hier nicht, fängt erst an der Bayernallee an) ---	2::temp 589,11953 577,11837
 	2::temp 577,11837 562,11710 560,11695 550,11607
 ',
@@ -7040,6 +7012,7 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,792696#msg-792696 (Vollsperrung im gesamten Bereich Königsplatz vom 29.06.2024 bis 10.8.2024, danach weitere Arbeiten)
 #: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Bauarbeiten bis 20. Oktober 2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,797608#msg-797608 (Ende der Bauarbeiten am 20.10.2024)
+#: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024)
 #: XXX zukünftige Einschränkungen:
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
@@ -7049,12 +7022,12 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
 #: priority: #A vvv
 #: last_checked: 2024-05-15 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-06-28 vvv
+#: next_check: 2024-07-05 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
-#: osm_watch: way id="1142005449" version="3"
+#: osm_watch: way id="1142005449" version="5"
 	q4::inwork 17826,6495 17991,6431
 #: note: der westliche Gehweg ist komplett gesperrt und man kommt nur über die gepflasterte Service-Straße zum Ufer und dort via Treppe wieder zur Edisonstraße; besser den östlichen Gehweg benutzen (Stand Mitte November 2023)
-#: osm_watch: way id="176072020" version="35"
+#: osm_watch: way id="176072020" version="37"
 	q4::inwork 17991,6431 17948,6248
 #: next_check ^^^
 #: check_frequency ^^^
@@ -7152,10 +7125,11 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
+#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht, manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
 #: last_checked: 2024-05-15 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
-# REMOVED (mittlerweile wurde das Radfahren-verboten-Schild entfernt, und Radfahrer benutzen auch die Fahrbahn --- oder das Schild existiert noch, ist aber dauerhaft umgedreht) ---	q4::inwork; 10908,13978 10933,14122
+# REMOVED (s.o.) ---	q4::inwork; 10908,13978 10933,14122
 #: note: früher wurde man zur nördlichen Fußgängerampel geführt, aber mittlerweile ist hier auch gesperrt, Umweg zur nächsten Überquerungsmöglichkeit mindestens 2x 135m; besser den linken Gehweg benutzen
 Metzer Str.: Fahrbahn gesperrt	q4::inwork; 11006,14087 10933,14122
 Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
@@ -7260,7 +7234,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-05-13 vvv
+#: last_checked: 2024-05-17 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7394,16 +7368,16 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024)
+         'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024)
 #: note: bei rbb nur bis 30.04.2024, mittlerweile auch bis 21.05.2024
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
 Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
 ',
          'from' => 1694494800,
          'id' => 3976,
-         'text' => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 21.05.2024, evtl. noch länger',
+         'text' => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 12.07.2024, evtl. noch länger',
          'type' => 'gesperrt',
-         'until' => 1716303600
+         'until' => 1720796400
        },
        undef,
        undef,
@@ -7991,7 +7965,7 @@ Anzengruberstr.: Einbahnstraßenregelung	q4::inwork; 12856,8344 12689,8289
 #: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787175928923099290 (hier auch: Heinrich-von-Gagern-Str., Otto-von Bismarck-Allee, Paul-Löbe-Allee)
 #: by[nocache]: https://twitter.com/BA_Mitte_Berlin/status/1787472473597813136
-#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024)
+#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024) (bis 26.07.2024)
 #: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024)
 #: note: es sieht so aus, als ob man vom Bremer Weg nur über Umwege (bis fast Behrenstr.?) zum Brandenburger Tor fahren kann
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
@@ -8000,17 +7974,18 @@ Kleine Querallee, Überquerung	3 8327,12174 8344,12221 8391,12389
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2024-05-15
-#: check_frequency: 3d
-Brandenburger Tor	q4::temp 8538,12245 8592,12252 8637,12258
+#: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg
+#: last_checked: 2024-05-17 (webcam)
+#: check_frequency: 7d
+Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
 Ahornsteig - Brandenburger Tor	2::temp 8522,12187 8538,12245
 ',
          'from' => 1714860000,
          'id' => 4053,
-         'text' => 'Straße des 17. Juni und Ebertstr.: Sperrung wegen Veranstaltung (EM 2024), außerdem kann die Durchfahrt durch das Brandenburger Tor eingeschränkt sein, vom 6.5.2024 bis 29.7.2024',
+         'text' => 'Straße des 17. Juni und Ebertstr.: Sperrung wegen Veranstaltung (EM 2024), außerdem kann die Durchfahrt durch das Brandenburger Tor eingeschränkt sein, vom 6.5.2024 bis 26.7.2024',
          'type' => 'gesperrt',
-         'until' => 1722268800
+         'until' => 1722009600
        },
        {
          'data' => '#: next_check_id: EM-2024

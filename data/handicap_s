@@ -33,6 +33,7 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17765,5469 1
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2::inwork; 10178,10411 10122,10294
 Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
+(Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
@@ -2036,6 +2037,7 @@ Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 (entlang des Kreuzgrabens): Fußgänger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10172,20142
 (entlang des Kreuzgrabens): Fußgänger, eng	q4 10172,20142 10157,20128 10095,20108
 Europaplatz: sehr viele Fußgänger	q4 7938,13302 8015,13303 8102,13304
+Europaplatz [Nord]: einige Fußgänger	q2 8057,13400 8010,13450 7963,13489
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
 Böhmische Str.: Fußgängerzone, Radfahrer frei	q2 13553,7594 13566,7649
@@ -2098,6 +2100,7 @@ Waldweg - Köpenicker Str.: Bordstein	q2 20872,7268 20892,7236
 Binger Str.: einige Fußgänger	q2 4067,6809 4061,6753
 (Kieler Brücke - Heidestr.): einige Fußgänger	q1 7740,14409 7705,14383 7612,14325
 (Hedwig-Porschütz-Str. - Uferweg/Kieler Brücke): einige Fußgänger, Kurven	q2 7757,14318 7763,14332 7754,14354 7769,14364
+(Hedwig-Porschütz-Str. - George-Stephenson-Str.): einige Fußgänger	q1 7697,14187 7614,14136
 Am Heidekampgraben: an der S-Bahnunterführung unübersichtlich und kurvig	q2 15204,7236 15187,7240 15168,7269
 Eigerstr. [81-91]: Bodenschwellen	q2 13043,18126 12910,18003 12945,17958
 (Straße 16 - Eigerstr.): einige Fußgänger	q2 13034,17895 12995,17873 12945,17958

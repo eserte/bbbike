@@ -2502,9 +2502,11 @@ Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7880,13315
 Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13276 7842,13292 7822,13323
 Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292 7880,13315
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
-Straßenbahntrasse und -haltestelle	3nocross::ignrte 7880,13315 8003,13374 8098,13419
-Invalidenstr. -> Ella-Trebe-Str.: Straßenbahntrasse und -haltestelle	3::igndisp 8098,13419 8003,13374 7968,13335
+Straßenbahntrasse und -haltestelle	3nocross::ignrte 7880,13315 8003,13374 8057,13400 8098,13419
+Invalidenstr. -> Ella-Trebe-Str.: Straßenbahntrasse und -haltestelle	3::igndisp 8057,13400 8003,13374 7968,13335
 Ella-Trebe-Str. -> Invalidenstr.: Straßenbahntrasse und -haltestelle	3::igndisp 7968,13335 8003,13374 7880,13315
+Invalidenstr. -> Europapl. [Nord]: Straßenbahntrasse und -haltestelle	3::igndisp 8003,13374 8057,13400 8010,13450
+Europapl. [Nord] -> Invalidenstr.: Straßenbahntrasse und -haltestelle	3::igndisp 8010,13450 8057,13400 8098,13419
 Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross::ignrte 7822,12937 7776,12945 7595,12980
 Alt-Moabit -> Ingeborg-Drewitz-Allee: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7822,12937 7776,12945 7623,12764
 Ingeborg-Drewitz-Allee -> Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7623,12764 7776,12945 7595,12980

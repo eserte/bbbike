@@ -1897,8 +1897,12 @@ Lydia-Rabinowitsch-Str. -> Heidestr.: Mittelstreifen	3::igndisp 7959,13982 7865,
 Heidestr. -> Uferweg: Mittelstreifen	3::igndisp 7865,13924 7910,13848 7997,13892
 Uferweg -> Heidestr.: Mittelstreifen	3::igndisp 7997,13892 7910,13848 7973,13743
 Mittelstreifen	3nocross::ignrte 7652,14257 7697,14187 7732,14131
+Heidestr. -> George-Stephenson-Str.: Mittelstreifen	3::igndisp 7732,14131 7697,14187 7614,14136
 Heidestr. -> Hedwig-Porschütz-Str.: Mittelstreifen	3::igndisp 7652,14257 7697,14187 7781,14238
 Hedwig-Porschütz-Str. -> Heidestr.: Mittelstreifen	3::igndisp 7781,14238 7697,14187 7732,14131
+Hedwig-Porschütz-Str. -> George-Stephenson-Str.: Mittelstreifen	3::igndisp 7781,14238 7697,14187 7614,14136
+George-Stephenson-Str. -> Heidestr.: Mittelstreifen	3::igndisp 7614,14136 7697,14187 7652,14257
+George-Stephenson-Str. -> Hedwig-Porschütz-Str.: Mittelstreifen	3::igndisp 7614,14136 7697,14187 7781,14238
 Mittelstreifen	3nocross::ignrte -3789,13519 -3764,13613 -3716,13724
 Klosterstr. -> Diedenhofener Str.: Mittelstreifen	3::igndisp -3716,13724 -3764,13613 -3672,13597
 Diedenhofener Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3672,13597 -3764,13613 -3789,13519

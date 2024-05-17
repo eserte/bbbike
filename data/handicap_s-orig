@@ -22,6 +22,7 @@
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-friedrichshain-kreuzberg.58/page-7#post-22363
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/schulneubau-genehmigt_a411137
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11464 (Anfrage)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_20_1183_1234_online.pdf (Einziehung einer Grünanlage (nördlich dieser Stelle))
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
@@ -36,7 +37,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+ 12558,11920 12617,1
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024) (bis 24.05.2024)
-#: last_checked: 2024-05-14
+#: last_checked: 2024-05-17
 #: check_frequency: 30d
 #: next_check: 2024-05-24
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -449,7 +450,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-05-13 vvv
+#: last_checked: 2024-05-17 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -660,6 +661,16 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463650.php --- #: note: vor Ort sahen die Beeinträchtigungen nicht so groß aus --- #: source_id: 2147339863 --- #: valid: 20160627-20161130 --- S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
 # 
 ### Moabit ###
+# 
+#: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
+#: by: https://www.berliner-woche.de/moabit/c-bauen/plaene-fuer-europaplatz-nord_a415834
+#: by: https://mein.berlin.de/projekte/neugestaltung-europaplatz-nord/
+#: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
+#: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
+#: osm_watch: note 3913793 4
+#: last_checked: 2024-05-17
+#: check_frequency: 60d
+(Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 # 
 # REMOVED --- #: next_check_id: TRAMTURM-2021 --- #: source_id[inactive]: bvg2021:m27#BVG305466_0 --- #: next_check: 2023-09-06 vvv --- #: check_frequency: 90d vvv --- #: last_checked: 2023-05-14 (osm) vvv
 # REMOVED (sieht offen aus) --- #: source_id: viz2021:13.35534,52.52683,28.04.2022,07:00 (bis 07.07.2023) (inaktiv) (bis 06.09.2023) --- #: source_id: viz2021:13.355319,52.52676,28.04.2022,07:00 (bis 7.7.2023) (inaktiv) --- #: osm_watch: way id="140336721" version="33" --- #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
@@ -3441,7 +3452,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-05-14
+#: last_checked: 2024-05-17
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4057,6 +4068,7 @@ Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 (entlang des Kreuzgrabens): Fußgänger, eng	q4 10172,20142 10157,20128 10095,20108
 #: note ^^^
 Europaplatz: sehr viele Fußgänger	q4 7938,13302 8015,13303 8102,13304
+Europaplatz [Nord]: einige Fußgänger	q2 8057,13400 8010,13450 7963,13489
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
 Böhmische Str.: Fußgängerzone, Radfahrer frei	q2 13553,7594 13566,7649
@@ -4133,6 +4145,7 @@ Waldweg - Köpenicker Str.: Bordstein	q2 20872,7268 20892,7236
 Binger Str.: einige Fußgänger	q2 4067,6809 4061,6753
 (Kieler Brücke - Heidestr.): einige Fußgänger	q1 7740,14409 7705,14383 7612,14325
 (Hedwig-Porschütz-Str. - Uferweg/Kieler Brücke): einige Fußgänger, Kurven	q2 7757,14318 7763,14332 7754,14354 7769,14364
+(Hedwig-Porschütz-Str. - George-Stephenson-Str.): einige Fußgänger	q1 7697,14187 7614,14136
 Am Heidekampgraben: an der S-Bahnunterführung unübersichtlich und kurvig	q2 15204,7236 15187,7240 15168,7269
 #: by: mapillary vvv
 Eigerstr. [81-91]: Bodenschwellen	q2 13043,18126 12910,18003 12945,17958
@@ -4831,7 +4844,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1412637.php ("... Radverkehr zu verlangsamen")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
-#: last_checked: 2024-05-14
+#: last_checked: 2024-05-17
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
