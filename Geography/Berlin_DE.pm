@@ -193,6 +193,9 @@ sub parse_street_type_nr {
     } elsif ($strname =~ /berlin\s*-\s*kopenhagen/i) {
 	$type = 'BK';
 	$image = "BK.gif";
+    } elsif ($strname =~ /berlin\s*-\s*leipzig/i) {
+	$type = 'BL';
+	$image = 'BL.png';
     } elsif ($strname =~ /mauer.*weg/i) {
 	$type = 'M';
 	$image = 'M.png';
