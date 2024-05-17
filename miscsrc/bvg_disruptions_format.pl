@@ -33,6 +33,7 @@ my $variant = 'bvg2024';
 
 my $use_pager = -t STDOUT && is_in_path('less');
 my $highlight_days = 3;
+my $mod_since;
 GetOptions(
 	   'pager!'           => \$use_pager,
 	   'highlight-days=i' => \$highlight_days,
@@ -43,11 +44,25 @@ GetOptions(
 		   die "Invalid variant '$_[1]', currently only bvg2021 and bvg2024 valid.\n";
 	       }
 	   },
+	   'mod-since=s' => \$mod_since,
+	   'debug' => \my $debug,
 	  )
-    or die "usage: $0 [--no-pager] [--highlight-days days]\n";
+    or die "usage: $0 [--no-pager] [--highlight-days days] [--mod-since <num>d] [--debug]\n";
 
 if ($variant eq 'bvg2024') {
     require "bvg_checker.pl"; # for get_primary_line_2024
+}
+
+if ($mod_since) {
+    require Time::Moment;
+    if ($variant ne 'bvg2024') {
+	die "--mod-since only supported for --variant bvg2024.\n";
+    }
+    if ($mod_since =~ /^(\d+(?:\.\d+)?)d$/) {
+	$mod_since = time - $1 * 86400; # ignore DST glitches
+    } else {
+	die "Only <num>d (days) allow for --mod-since.\n";
+    }
 }
 
 my $sourceids_all     = LoadFile(bbbike_root . "/tmp/sourceid-all.yml");
@@ -64,6 +79,11 @@ my %combinedRecords;
 if ($variant eq 'bvg2024') {
     for my $dd (@$d) {
 	next if $dd->{"messageType"} eq "ELEVATOR";
+	if ($mod_since) {
+	    next if !$dd->{modDate};
+	    my $msg_epoch = Time::Moment->from_string($dd->{modDate})->epoch;
+	    next if $msg_epoch < $mod_since;
+	}
 	my $from = $dd->{startDate};
 	my $line = bvg_checker::get_primary_line_2024($dd);
 	my $sourceid = "bvg2024:" . $line . "#" . $dd->{id};
@@ -100,6 +120,7 @@ if ($variant eq 'bvg2024') {
 					   title_row         => $title_row,
 					   line              => $line,
 					   text_without_line => $text_without_line,
+					   mod_date          => $dd->{modDate},
 					  }
     }
 } else {
@@ -150,6 +171,7 @@ for my $record (values %combinedRecords) {
 
     my $text =
 	$date_row . "\n" .
+	($debug && $mod_since ? "modified $record->[0]->{mod_date}\n" : "") .
 	$formatted_sourceids . 
 	$title_row . "\n";
     $text .= $lines_combined . "\n" if defined $lines_combined;
