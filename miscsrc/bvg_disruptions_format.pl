@@ -73,8 +73,6 @@ my $json_file = $variant eq 'bvg2024' ? '/tmp/bvg_checker_disruptions_2024.json'
 my $json = `cat $json_file`;
 my $d = decode_json $json;
 
-my $qr = qr{(U-Bahn U?\d+|(?:Bus|Tram) [MXN]?\d+)};
-
 my %combinedRecords;
 if ($variant eq 'bvg2024') {
     for my $dd (@$d) {
@@ -124,6 +122,8 @@ if ($variant eq 'bvg2024') {
 					  }
     }
 } else {
+    my $qr = qr{(U-Bahn U?\d+|(?:Bus|Tram) [MXN]?\d+)};
+
     for my $dd (@$d) {
 	next if $dd->{"notificationType"} eq "ELEVATOR";
 	my $from = $dd->{startDate};
@@ -156,7 +156,7 @@ for my $record (values %combinedRecords) {
     my $from      = $record->[0]->{from};
     my $date_row  = $record->[0]->{date_row};
     my $title_row = $record->[0]->{title_row};
-    my $formatted_sourceids = '';; # already contains "\n" if non-empty
+    my $formatted_sourceids = ''; # already contains "\n" if non-empty
     for my $sourceid (map { $_->{sourceid} } @$record) {
 	$formatted_sourceids .= ($sourceids_all->{$sourceid} ? colored($sourceid, (!$sourceids_current->{$sourceid} ? "yellow on_black" : "green on_black")) . " INUSE" : $sourceid) . "\n";
     }
