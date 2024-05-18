@@ -47,7 +47,7 @@
 provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: last_checked: 2024-04-05 (okas)
+#: last_checked: 2024-05-15 (okas)
 #: check_frequency: 120d
 #: next_check: 2024-08-05
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -417,7 +417,7 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtregelung noch prüfen
 #: osm_watch: way id="940399849" version="11"
 #: osm_watch: way id="1203072585" version="3"
-#: last_checked: 2024-05-12
+#: last_checked: 2024-05-18
 	RW0;RW0 13033,8628 13124,8562 13217,8493
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
@@ -1287,7 +1287,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-05-16 vvv
+#: last_checked: 2024-05-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2855,9 +2855,9 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12878,12430 12891,12549
 	RW3; 12899,10595 12978,10581
 	RW2; 12978,10581 13028,10629
 	RW4;RW3 13535,10184 13487,10227 13449,10262
-	RW3; 13449,10262 13369,10337
+	RW4; 13449,10262 13369,10337
 Zeichen 237 steht zwischen den Einmündungen Taborstr. und Heckmannufer	RW4; 13369,10337 13449,10262
-	RW3; 13369,10337 13249,10445 13142,10530 13136,10535
+	RW4; 13369,10337 13249,10445 13142,10530 13136,10535
 	RW4; 13136,10535 13028,10629 12985,10665
 	RW4; 12985,10665 13028,10629
 Radspur teilweise hinter den parkenden Autos	RW4; 13028,10629 13136,10535
@@ -5705,7 +5705,7 @@ Verbundsteinpflaster	RW1;RW1 14754,17673 14214,17754
 #: by: Thomas Weiner
 #: confirmed_by: srt (außerdem RW4? -> RW4)
 	RW4;RW4 9695,1563 9782,1474 9832,1380 9854,1274 9853,1172 9828,998 9825,953 9839,814 9858,744
-	RW4;RW4 9626,1604 9695,1563
+	RW4;RW4 9618,1608 9695,1563
 #: by: Tom Bschor
 #: confirmed_by: srt
 	RW1;RW0 5053,21452 5099,21410 5297,21243
@@ -7257,7 +7257,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2024-05-12 vvv
+#: last_checked: 2024-05-18 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7297,7 +7297,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2024-05-12
+#: last_checked: 2024-05-18
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
@@ -8681,7 +8681,12 @@ Busspur gilt Mo-Fr 7-9 Uhr und 13-19 Uhr	RW5; 3813,10435 3783,10517 3753,10578 3
 Bushaltestelle	RW3; 8739,6701 8787,6660
 Bushaltestelle	RW3; 8787,6660 8739,6701
 # 
-Tempo 10	RW6;RW6 9423,5227 9478,5041 9482,5012 9507,4838 9486,4748 9494,4658
+Tempo 10	RW6;RW6 9439,5229 9458,5098
+#: historical_note: früher (bis 2024) hier auch Tempo 10
+	RW6;RW6 9458,5098 9478,5041 9482,5012 9507,4838 9485,4741
+Tempo 10	RW6;RW6 9485,4741 9494,4658
+	RW6;RW6 9482,5012 9360,4996
+	RW6;RW6 9507,4838 9382,4826
 # 
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 19171,8280 19333,8165 19407,8143
 # REMOVED (wie am besten darstellen?) ---	RW9;RW0 19171,8280 18949,8437 18787,8540

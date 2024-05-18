@@ -4926,7 +4926,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: last_checked: 2024-04-16 (youtube)
+#: last_checked: 2024-05-17 (okas)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-01-15
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
@@ -5264,7 +5264,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="17"
 #: add_fragezeichen: Ist die Unterf¸hrung noch immer gesperrt?
-#: last_checked: 2024-03-05 (okas)
+#: last_checked: 2024-05-18
 #: check_frequency: 120d
 	2::inwork 9699,-600 9562,-619
 ',
@@ -5330,7 +5330,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund f¸r die Sperrung?)
 #: note: Halteverbotsschilder mittlerweile bis 07.06.2024
 #: add_fragezeichen: Existiert die Einbahnstraﬂenregelung noch immer? vvv
-#: last_checked: 2024-04-01 vvv
+#: last_checked: 2024-05-18 vvv
 #: next_check: 2024-06-07 vvv
 Jahnstr.	q4::inwork; 12833,6127 13027,6168
 Jahnstr.: Einbahnstraﬂe schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127
@@ -5423,7 +5423,7 @@ Jahnstr.: Einbahnstraﬂe schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 128
 #: also_indoor: traffic (B,H(unvollst‰ndig),G)
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
-#: osm_watch: note 3065138 13
+#: osm_watch: note 3065138 14
 #: last_checked: 2024-05-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 vvv
@@ -5483,8 +5483,9 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="734271970" version="6"
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
+#: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-05-12
+#: last_checked: 2024-05-18
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5885,11 +5886,12 @@ Woelckpromenade: Einbahnstraﬂenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zus‰tzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraﬂe fertig? vvv
-#: last_checked: 2024-04-28 (mapillary) vvv
+#: last_checked: 2024-05-18 vvv
 #: next_check: 2024-05-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
 Lˆptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
+Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
 #: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -5897,7 +5899,7 @@ Lˆptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
          'from' => 1663524336,
          'id' => 3623,
          'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1242149.php',
-         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraﬂenregelung, auﬂerdem ist die Lˆptener Str. Einbahnstraﬂe, ab 19.9.2022',
+         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraﬂenregelung; auﬂerdem sind Lˆptener Str. und Gerstnerweg Einbahnstraﬂen; ab 19.9.2022',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5998,22 +6000,25 @@ Lˆptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
        {
          'data' => '#: next_check_id: URBANTECHREPUBLIC-2022
 #: by: https://berliner-abendblatt.de/2023/01/11/senat-plant-auszug-der-fluechtlinge-aus-terminals-in-tegel/ (bis Mitte M‰rz 2023; allerdings bleibt Terminal C mˆglicherweise weiterhin als Unterkunft erhalten)
-#: osm_watch: way id="8039689" version="17"
 #: XXX Wie lange bleibt das Gel‰nde gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man ¸ber die Straﬂe zur Luftfracht auf das Gel‰nde gelangen
 #: last_checked: 2023-10-03 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
-	2 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
+#: osm_watch: way id="272993611" version="7"
+	2 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337
+#: osm_watch: way id="139880221" version="9"
+	2 2809,16143 2853,16293 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
 # REMOVED (hier keine Einschr‰nkungen) ---	2::temp 2226,16096 2290,16022 2580,15939 2595,15922 2604,15875 2638,15842 2701,15853 2787,15870
 # REMOVED (hier nicht mehr) ---	2 2787,15870 2828,15903 2880,15884 2787,15870
 # REMOVED ---	2 2996,15930 2960,15847
 # REMOVED ---	2 2960,15847 2944,15880 2913,15944
 # REMOVED ---	2 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
 # REMOVED ---	2 2880,15884 2960,15847
+#: osm_watch: way id="8039689" version="17"
 Br¸ckenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
-	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293 2839,16337
-	2 2809,16143 2853,16293
+#: osm_watch: way id="100690609" version="4"
+	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6382,7 +6387,6 @@ Br¸ckenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1296743.php
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://w‰rme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
-#: osm_watch: way id="46907541" version="15"
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch: note 3631207 6
@@ -6391,8 +6395,11 @@ Br¸ckenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: last_checked: 2024-01-28 (osm note) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
-	2::inwork 4064,2293 4209,2641 4247,2652 4272,2704 4274,2717
-	2::inwork 4209,2641 4220,2664
+#: osm_watch: way id="46907541" version="15"
+#: osm_watch: way id="1116849053" version="3"
+	2::inwork 4064,2293 4209,2641 4220,2664
+#: osm_watch: way id="77098244" version="17"
+	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6645,6 +6652,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
 #: by: https://www.family-and-friends-ev.de/?date=20240303
 #: source_id: viz2021:13.259512,52.513271,18.05.2024,05:00 (bis 20.05.2024)
+#: source_id: viz2021:13.2597,52.51486,18.05.2024,05:00 (bis 20.05.2024)
 # REMOVED (hier nicht, f‰ngt erst an der Bayernallee an) ---	2::temp 589,11953 577,11837
 	2::temp 577,11837 562,11710 560,11695 550,11607
 ',
@@ -7404,6 +7412,7 @@ Charlottenstr. (Einbahnstraﬂenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
          'data' => '#: add_fragezeichen: Existiert die Einbahnstraﬂenregelung in der Wichmannstraﬂe weiterhin?
 #: note: Halteverbotsschilder bis 31.01.2024, wurden trotz Baustelle nicht verl‰ngert, mittlerweile bis 17.05.2024
 #: note: Ein traffic-Watcher lohnt nicht, weil hier f¸r Autos immer eine Einbahnstraﬂenregelung gilt
+#: osm_watch: way id="150513369" version="16"
 #: last_checked: 2024-04-09
 #: next_check: 2024-05-17
 	q4::inwork; 6549,11015 6681,10959

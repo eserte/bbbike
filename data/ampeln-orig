@@ -41,7 +41,7 @@ Schnellerstr./Köllnische Str.: Gegenverkehrsregelung	X::inwork::alternating 1895
 #: note: die Radwege in der Eschersheimer Str. sind nicht gesperrt (Stand Mitte März 2024)
 #: note: zum Carl-Weder-Park kommt man mit einem kleinen Umweg via westlicher Ampel
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-03-13
+#: last_checked: 2024-05-18
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 75d
 #: next_check: 2024-10-25
@@ -175,14 +175,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-05-15
+#: last_checked: 2024-05-18
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-05-15
+#: last_checked: 2024-05-18
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Gürtelstr.	F::inwork 15153,11691
@@ -373,7 +373,8 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX außerdem wurde der Zebrastreifen nördlich der Kreuzung deaktiviert
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (wird vermutlich permanent gemacht)
-#: last_checked: 2023-11-18
+#: osm_watch: node id="7978101859" version="1"
+#: last_checked: 2024-05-18
 #: check_frequency: 180d
 #: next_check: 2024-09-30
 	X::inwork 10096,-2137
@@ -1496,7 +1497,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX bis wann wird es diesen Bahnübergang geben?
-#: last_checked: 2023-11-18
+#: last_checked: 2024-05-18
 #: check_frequency: 180d
 #: next_check: 2024-09-30
 	B 10221,-2225
@@ -2678,13 +2679,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-03-28
+#: last_checked: 2024-05-18
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50)
-#: last_checked: 2024-05-16
+#: last_checked: 2024-05-18
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

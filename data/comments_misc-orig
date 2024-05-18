@@ -573,7 +573,7 @@ Bus 172, Bus 373	busroute_N 14120,1991 14231,1952
 Bus 373	busroute_N 14231,1952 14252,1945 14523,1847 14549,1922 14587,2032
 Bus 172	busroute_N 14231,1952 14224,1925 14203,1873 14124,1857 14062,1846 14008,1835 13890,1817 13794,1799 13679,1782 13614,1772 13657,1587 13708,1383
 Bus M44, ...	busroute_N 13708,1383 13634,1371 13413,1363 13300,1359 13194,1355 13089,1351 12938,1348
-Bus 172	busroute_N 12938,1348 12785,1308 12617,1121 12403,1011 12307,964 12107,898
+Bus 172	busroute_N 12938,1348 12785,1308 12617,1121 12538,1075 12403,1011 12307,964 12107,898
 Bus 172	busroute_N 10266,-1473 10460,-1471 10496,-1486 10508,-1511 10531,-1633 10539,-1689 10537,-1785 10513,-1954 10512,-1994 10507,-2016 10465,-2129
 Bus 172	busroute_N 10021,-1918 9959,-1918 9982,-1818
 Bus 175	busroute_N 9959,-1918 9853,-1921 9750,-1925 9648,-1928 9534,-1926 9428,-1892 9431,-1800 9443,-1626 9445,-1460 9457,-1329 9456,-1271 9379,-935
@@ -1074,6 +1074,7 @@ Rosenthaler Str.: Richtung Kleine Rosenthaler Str.	CP2; 10324,13459 10318,13528
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11850 (Erneuerung der Hinweisschilder im 1. Quartal 2024)
 #: confirmed_by: srt
 #: XXX werden größere Schilder aufgestellt?
+#: osm_watch: note 2273417 11
 #: next_check: 2024-03-31
 (Finsterwalder Str. - Quickborner Str.): am Bruckstückengraben, "Möbelweg" steht auf "wegweiserartigen" Schildern	CS 6434,22244 6593,22302 6651,22324 6755,22331 6943,22324 7439,22306
 nicht ausgeschildert	CP2; 8501,25358 8584,25371
@@ -1845,7 +1846,7 @@ Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wann sind die Straßen ausgeschildert? vvv
-#: last_checked: 2024-05-15 vvv
+#: last_checked: 2024-05-18 vvv
 #: check_frequency: 60d vvv
 # REMOVED (ausgeschildert) --- #: note: nur ein kleines provisorisches Papierschild an der Kreuzung Ulrich-Plenzdorf-Str. hängt an der Hauswand --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15163,10758 15151,10699
 # REMOVED (ausgeschildert) --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15151,10699 15140,10647 15138,10638

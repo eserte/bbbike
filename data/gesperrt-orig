@@ -185,7 +185,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt, wonach es aussieht, dann nur nach gesperrt_car verschieben)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2024-05-16
+#: last_checked: 2024-05-18
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -791,7 +791,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="17"
-#: last_checked: 2024-03-03 (mapillary)
+#: last_checked: 2024-05-18
 #: check_frequency: 270d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
@@ -1330,7 +1330,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/einbahnstrassenregelung-nicht-fuer-radler_a400589 (siehe Antrag oben)
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="20"
-#: last_checked: 2023-11-04
+#: last_checked: 2024-05-18
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
@@ -3763,6 +3763,7 @@ Drängelgitter	BNP:3::trailer=10 15646,93690
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
+#: osm_watch: note 4211143 1
 #: also_indoor: traffic (none)
 #: last_checked: 2024-05-17
 #: check_frequency: 21d
@@ -4160,7 +4161,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-05-15
+#: last_checked: 2024-05-18
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4208,9 +4209,10 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11381 (Ersuchen: Durchgang zu den Sportstätten)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764364116091961423 (enthält Baustellenplan)
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
 #: last_checked: 2024-03-18 (okas)
-#: check_frequency: 360d
+# REMOVED --- #: check_frequency: 360d
 #: next_check: 2025-04-15
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 # 
@@ -4649,7 +4651,7 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9288 (Antrag)
 #: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024)
 #: XXX hier wird eine neue Unterführung gebaut vvv
-#: last_checked: 2024-03-29 (architektur-urbanistik) vvv
+#: last_checked: 2024-05-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-09-30 vvv
 #: osm_watch: way id="152434836" version="26"
@@ -4682,7 +4684,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-05-12
+#: last_checked: 2024-05-18
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4869,14 +4871,14 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-05-13
+#: last_checked: 2024-05-17 (webcam)
 #: check_frequency: 90d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-05-12 (webcam)
+#: last_checked: 2024-05-17 (webcam)
 #: check_frequency: 90d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 

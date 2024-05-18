@@ -183,7 +183,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: source_id: 2147345858
-#: last_checked: 2023-11-18
+#: last_checked: 2024-05-18
 #: check_frequency: 180d
 #: next_check: 2024-09-30
 (Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, Fahrrad ggfs. schieben	q3 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
@@ -667,7 +667,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: by: https://mein.berlin.de/projekte/neugestaltung-europaplatz-nord/
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verl‰ngert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
-#: osm_watch: note 3913793 4
+#: osm_watch: note 3913793 5
 #: last_checked: 2024-05-17
 #: check_frequency: 60d
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -793,7 +793,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: add_fragezeichen: Besteht die Sperrung in der B¸rgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2024-04-24 (architektur-urbanistik)
+#: last_checked: 2024-05-18
 #: check_frequency: 90d
 B¸rgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
@@ -933,6 +933,7 @@ Plauener Str.: Fahrbahn noch gesperrt, s¸dlicher Gehweg frei	q3-::inwork 17531,1
 # 
 #: note: Halteverbotsschilder gelten bis zum 30.04.2026
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10359 (Antrag)
 #: osm_watch: note 4126168 2
 #: osm_watch: note 4126169 1
 #: priority: #C
@@ -1008,7 +1009,7 @@ Merler Weg: tempor‰re Einbahnstraﬂenregelung	q3::inwork; 19180,13219 18852,13269
 # 
 #: XXX Hohenstaufenstraﬂe (Schˆneberg) in beiden Richtungen im Kreuzungsbereich Eisenacher Straﬂe: Leitungsarbeiten, eine Baustellenampel regelt den Verkehr, vom 28.03.2024 07:00 bis 29.05.2024 17:00
 #: source_id: viz2021:13.349791,52.494637,28.03.2024,07:00 (bis 29.05.2024)
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (G,B)
 #: last_checked: 2024-04-03
 #: next_check: 2024-05-29
 #: valid: -20240529
@@ -1368,7 +1369,7 @@ Tiergarten: Parkweg, Bordstein	q3 7603,12353 7627,12380
 Tiergarten: einige Fuﬂg‰nger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
 Tiergarten: einige Fuﬂg‰nger	q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 Tiergarten: einige Fuﬂg‰nger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
-(Parkweg entlang der Tiergartenstr.): einige Fuﬂg‰nger, einige B‰ume auf dem Weg	q1- 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553 7621,11541 7463,11538 7220,11542 7111,11524 7080,11508 6966,11490 6844,11496 6826,11479
+(Parkweg entlang der Tiergartenstr.): einige Fuﬂg‰nger, einige B‰ume auf dem Weg	q1- 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553 7621,11541 7463,11538 7359,11538 7220,11542 7111,11524 7080,11508 6966,11490 6844,11496 6826,11479
 (Bremer Weg - Fasanerieallee): einige Fuﬂg‰nger	q1 6337,11887 6379,11843 6395,11806 6417,11796 6438,11784 6540,11754
 (Bremer Weg/Lˆwenbr¸cke - Groﬂer Weg): einige Fuﬂg‰nger	q1 6395,11806 6353,11730
 (zum Rosengarten): einige Fuﬂg‰nger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
@@ -2103,7 +2104,7 @@ Germaniagarten: Fuﬂg‰nger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fuﬂg‰nger	q1 12052,6660 12059,6642 12092,6616 12155,6526
 #: XXX_prog BS (Bordstein am Mariendorfer Weg, ansonsten mit dem anderen Fuﬂg‰nger-Eintrag verkn¸pfen)
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
-Mauerweg: einige Fuﬂg‰nger	q1 12984,1011 12557,799 12246,706 12014,620 11956,599 11928,588 11794,550 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: einige Fuﬂg‰nger	q1 12984,1011 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11794,550 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fuﬂg‰nger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 Bayernring: enge Straﬂe	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -4844,6 +4845,7 @@ Wickenhagenweg: Gr¸nanlage, einige Fuﬂg‰nger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1412637.php ("... Radverkehr zu verlangsamen")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
 #: last_checked: 2024-05-17
 #: check_frequency: 90d
 Singerstr.: Fuﬂg‰ngerzone f¸r Radfahrer frei, hˆhere Fuﬂg‰ngerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
