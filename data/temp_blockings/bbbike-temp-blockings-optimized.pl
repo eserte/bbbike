@@ -7394,6 +7394,8 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
        undef,
        {
          'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
+#: also_indoor: traffic (G,B,W)
 	q3::inwork 12228,14083 12077,14186
 ',
          'from' => 1701237600,
@@ -7984,7 +7986,7 @@ Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg
-#: last_checked: 2024-05-17 (webcam)
+#: last_checked: 2024-05-19 (webcam)
 #: check_frequency: 7d
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
@@ -8077,12 +8079,13 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
        },
        {
          'data' => '#: source_id: viz2021:13.565575,52.531868,12.05.2024,10:30 (bis 07.06.2024)
-#: source_id: bvg2024:191#HIM_FREETEXT_222105
+#: source_id[inactive]: bvg2024:191#HIM_FREETEXT_222105
+#: source_id: bvg2024:191#HIM_FREETEXT_222870 (bis 31.08.2024)
 	q4::inwork; 21378,14490 21342,14096 21358,13909
 ',
          'from' => 1715416200,
          'id' => 4060,
-         'text' => 'Blumberger Damm: Richtung Süden zwischen Elisabethstr. und Cecilienstr. wegen eines gesperrt, gegenüberliegender Gehweg ist frei, vom 12.05.2024 10:30 bis 07.06.2024 17:00',
+         'text' => 'Blumberger Damm: Richtung Süden zwischen Elisabethstr. und Cecilienstr. wegen eines Wasserrohrbruchs gesperrt, gegenüberliegender Gehweg ist frei, vom 12.05.2024 10:30 bis 07.06.2024 17:00',
          'type' => 'handicap',
          'until' => 1717772400
        }
