@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.08;
+$VERSION = 2.09;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists);
 
@@ -953,7 +953,7 @@ sub showmap_url_historic_maps_berlin {
     my $mapscale_scale = $args{mapscale_scale};
 
     my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
-    sprintf "https://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=2&mt0=e-historicmaps-1220&mt1=bbbike-bbbike&eo-match-id=e-historicmaps", $px, $py, $scale;
+    sprintf "https://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=2&mt0=e-historicmaps-210&mt1=bbbike-bbbike&eo-match-id=e-historicmaps", $px, $py, $scale;
 }
 
 sub showmap_historic_maps_berlin {
