@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.09;
+$VERSION = 2.10;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists);
 
@@ -1779,7 +1779,7 @@ sub showmap_url_qwantmaps {
 	$scale = 20 if $scale > 20;
     }
 
-    sprintf 'https://www.qwant.com/maps/#map=%.2f/%f/%f', $scale, $py, $px;
+    sprintf 'https://map.qwant.com/#map=%.2f/%f/%f', $scale, $py, $px;
 }
 
 sub showmap_qwantmaps {
