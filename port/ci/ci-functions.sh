@@ -241,6 +241,14 @@ install_perl_testonly_dependencies() {
 install_old_perl_dependencies() {
     if [ ! "$USE_SYSTEM_PERL" = "1" ]
     then
+	# Early phase
+	case "$PERLBREW_PERL" in
+	    5.8)
+		# Module::Build::Tiny: Plack needs in a deeper prereq this module, which requires CPAN::Requirements::Dynamic, which needs perl 5.10
+		cpanm --quiet --notest Module::Build::Tiny~"<0.048"
+		;;
+	esac
+	# Next phase
         case "$PERLBREW_PERL" in
 	    5.8|5.10|5.12|5.14|5.16|5.18)
 		# Object::Iterate 1.143 runs only with perl 5.20+
