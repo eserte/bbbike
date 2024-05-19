@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2019,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2019,2021,2022,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -25,7 +24,7 @@ use POSIX 'strftime';
 use BBBikeUtil qw(save_pwd2 bbbike_root);
 use GPS::BBBikeGPS::MountedDevice;
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 sub usage () {
     die "usage: @{[ basename $0 ]} [--keep] [--description ...] [--number ...] directory_or_url\n";
@@ -40,7 +39,8 @@ my $country_name = 'DE'; # XXX make configurable
 my $country_abbr = $country_name;
 my $number = 1;
 
-my $today = strftime("%d%m%y", localtime);
+my $today_short = strftime("%y%m%d", localtime); # 6 digits, used for internal garmin map name and should not be too long
+my $today_long  = strftime("%Y%m%d", localtime); # used for temporary directories
 
 GetOptions(
 	   'keep!' => \$keep,
@@ -60,7 +60,7 @@ if ($dir_or_url =~ m{\.osm\.gz$}) {
     $dir = download_and_convert_osm($dir_or_url);
 } elsif ($dir_or_url =~ m{^https?://}) {
     require File::Temp;
-    my $tmpdir = File::Temp::tempdir("garmin-upload-$today-XXXXXXXX", CLEANUP => !$keep, TMPDIR => 1);
+    my $tmpdir = File::Temp::tempdir("garmin-upload-${today_long}-XXXXXXXX", CLEANUP => !$keep, TMPDIR => 1);
     my $ua = _get_ua();
     my $resp = $ua->get($dir_or_url, ':content_file' => "$tmpdir/download.zip");
     $resp->is_success
@@ -70,7 +70,7 @@ if ($dir_or_url =~ m{\.osm\.gz$}) {
     $kept_file = "$tmpdir/download.zip" if $keep;
 } elsif ($dir_or_url =~ m{\.zip$}) {
     require File::Temp;
-    my $tmpdir = File::Temp::tempdir("garmin-upload-$today-XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
+    my $tmpdir = File::Temp::tempdir("garmin-upload-${today_long}-XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
     my $zip_path = realpath $dir_or_url;
     {
 	my $save_pwd = save_pwd2;
@@ -148,7 +148,7 @@ sub download_and_convert_osm {
     }
 
     require File::Temp;
-    my $tmpdir = File::Temp::tempdir("garmin-upload-$today-XXXXXXXX", CLEANUP => !$keep, TMPDIR => 1);
+    my $tmpdir = File::Temp::tempdir("garmin-upload-${today_long}-XXXXXXXX", CLEANUP => !$keep, TMPDIR => 1);
     chdir $tmpdir
 	or die "Can't chdir to $tmpdir: $!";
 
@@ -165,7 +165,7 @@ sub download_and_convert_osm {
 	$file = $file_or_url;
     }
 
-    my $mapname = $today . sprintf("%02d", $number); # XXX better mapname?
+    my $mapname = $today_short . sprintf("%02d", $number); # XXX better mapname?
 
     {
 	my @cmd = (
