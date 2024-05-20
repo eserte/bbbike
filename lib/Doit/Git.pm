@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2022,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Doit::Git; # Convention: all commands here should be prefixed with 'git_
 
 use strict;
 use warnings;
-our $VERSION = '0.028';
+our $VERSION = '0.030';
 
 use Doit::Log;
 use Doit::Util qw(in_directory);
@@ -72,6 +72,7 @@ sub git_repo_update {
 			error
 			    "In $directory: remote $origin does not point to $repository" . (@repository_aliases ? " (or any of the following aliases: @repository_aliases)" : "") . ", but to $actual_repository\n" .
 			    "Please run manually\n" .
+			    "    cd $directory\n" .
 			    "    @change_cmd\n" .
 			    "or specify allow_remote_url_change=>1\n";
 		    }
@@ -401,16 +402,35 @@ sub git_config {
     my($self, %opts) = @_;
     my $directory = delete $opts{directory};
     my $key       = delete $opts{key};
+    my $all       = delete $opts{all};
+    my $add       = delete $opts{add};
     my $val       = delete $opts{val};
     my $unset     = delete $opts{unset};
     error "Unhandled options: " . join(" ", %opts) if %opts;
-    if (defined $val && $unset) {
-	error "Don't specify both 'unset' and 'val'";
+    if ($all && defined $val) {
+	error "Cannot handle 'all' together with 'val'";
+    }
+    if ($add) {
+	if ($unset) {
+	    error "'add' cannot be used together with 'unset'";
+	}
+	if (!defined $val) {
+	    error "'add' must be used together with 'val'";
+	}
+	if (ref $val eq 'ARRAY') {
+	    error "'add' only implemented for single-value 'val'";
+	}
+    }
+    if (ref $val eq 'ARRAY') {
+	if (@$val == 0) { # if array is empty, then just fallback to --unset-all
+	    $unset = 1;
+	    $all = 1;
+	}
     }
 
     in_directory {
-	no warnings 'uninitialized'; # $old_val may be undef
-	chomp(my($old_val) = eval { $self->info_qx({quiet=>1}, qw(git config), $key) });
+	my $ret = eval { $self->info_qx({quiet=>1}, qw(git config --null --get-all), $key) };
+	my @old_vals = defined $ret ? split(/\0/, $ret) : ();
 	if ($unset) {
 	    if ($@) {
 		if ($@->{exitcode} == 1) {
@@ -420,18 +440,92 @@ sub git_config {
 		    error "git config $key failed with exitcode $@->{exitcode}";
 		}
 	    } else {
-		$self->system(qw(git config --unset), $key, (defined $val ? $val : ()));
-		1;
+		if ($all) {
+		    if (@old_vals) {
+			$self->system(qw(git config --unset-all), $key);
+			return 1;
+		    } else {
+			# may not be reached, as getting values above probably exited with exitcode=1
+			return 0;
+		    }
+		} else {
+		    my $do_unset = 0;
+		    if (defined $val) {
+			for my $i (0 .. $#old_vals) {
+			    if ($val eq $old_vals[$i]) {
+				$do_unset = 1;
+				last;
+			    }
+			}
+		    } elsif (@old_vals) {
+			$do_unset = 1;
+		    } else {
+			# may not be reached, as getting values above probably exited with exitcode=1
+			$do_unset = 0;
+		    }
+		    if ($do_unset) {
+			eval {
+			    $self->system(qw(git config --unset --null), $key, (defined $val ? quotemeta($val) : ()));
+			};
+			if ($@) {
+			    if ($@->{exitcode} == 5) {
+				if (@old_vals <= 1) {
+				    # "you try to unset an option which does not exist" -> this is accepted
+				    return 0;
+				} else {
+				    error "Multiple values when using 'unset', please specify 'all => 1' if wanted";
+				}
+			    } else {
+				error $@;
+			    }
+			}
+			return 1;
+		    } else {
+			return 0;
+		    }
+		}
 	    }
 	} else {
 	    if (!defined $val) {
-		$old_val;
-	    } else {
-		if (!defined $old_val || $old_val ne $val) {
-		    $self->system(qw(git config), $key, $val);
-		    1;
+		if ($all) {
+		    @old_vals;
 		} else {
-		    0;
+		    $old_vals[-1];
+		}
+	    } else {
+		if (ref $val eq 'ARRAY') {
+		    my $do_set = @old_vals != @$val;
+		    if (!$do_set) {
+			for my $i (0 .. $#old_vals) {
+			    if ($old_vals[$i] ne $val->[$i]) {
+				$do_set = 1;
+				last;
+			    }
+			}
+		    }
+		    if ($do_set) {
+			$self->system(qw(git config --null --replace-all), $key, $val->[0]);
+			for my $i (1..$#$val) {
+			    $self->system(qw(git config --null --add), $key, $val->[$i]);
+			}
+			return 1;
+		    } else {
+			return 0;
+		    }
+		} else {
+		    my $do_set = 1;
+		    for my $i (0 .. $#old_vals) {
+			if ($val eq $old_vals[$i]) {
+			    $do_set = 0;
+			    last;
+			}
+		    }
+		    if ($do_set) {
+			$self->system(qw(git config --null), ($add ? '--add' : ()), $key, $val);
+			return 1;
+		    } else {
+			return 0;
+		    }
 		}
 	    }
 	}

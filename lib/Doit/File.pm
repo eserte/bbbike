@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2021,2023 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,13 +15,13 @@ package Doit::File;
 
 use strict;
 use warnings;
-our $VERSION = '0.024';
+our $VERSION = '0.025';
 
 use Doit::Log;
 use Doit::Util qw(copy_stat new_scope_cleanup);
 
 sub new { bless {}, shift }
-sub functions { qw(file_atomic_write) }
+sub functions { qw(file_atomic_write file_digest_matches) }
 
 sub file_atomic_write {
     my($doit, $file, $code, %opts) = @_;
@@ -157,6 +157,24 @@ sub _make_writeable {
     my $old_mode = $s[2] & 07777;
     return if ($old_mode & 0200); # already writable
     $doit->chmod(($old_mode | 0200), $file);
+}
+
+sub file_digest_matches {
+    my(undef, $file, $digest, $type, %options) = @_;
+    my $got_digest_ref = delete $options{got_digest};
+    error "Option got_digest needs to point to a scalar reference"
+	if $got_digest_ref && ref $got_digest_ref ne 'SCALAR';
+    error "Unhandled options: " . join(" ", %options) if %options;
+
+    return 0 if ! -r $file; # shortcut
+    $type ||= 'MD5';
+    require Digest::file;
+    my $got_digest = eval { Digest::file::digest_file_hex($file, $type) };
+    if (!$got_digest) {
+	error "Cannot get digest $type from $file: $@";
+    }
+    $$got_digest_ref = $got_digest if $got_digest_ref;
+    $got_digest eq $digest;
 }
 
 1;
