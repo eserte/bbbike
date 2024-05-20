@@ -55,66 +55,7 @@ Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,99
          'type' => 'gesperrt',
          'until' => 1716264000
        },
-       {
-         'data' => '#: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt)
-#: by: https://www.karneval.berlin/de/aktuell.html (fällt 2021 wieder aus)
-#: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
-#: by: https://berliner-abendblatt.de/berlin-news/chialo-will-karneval-der-kulturen-sichern-id222039
-#: by: https://viz.berlin.de/2023/05/karneval-der-kulturen/
-	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670
-# REMOVED (2023 hier nicht) --- Yorckstr.	2::temp 9334,9670 9243,9696 9047,9750
-# REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
-	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
-# REMOVED ---	3 8774,9534 8777,9601 8778,9759 8778,9759 8779,9812
-# REMOVED ---	3 8779,9812 8778,9759 8778,9759 8777,9601 8774,9534
-# REMOVED ---	3 9000,9509 9047,9750 9078,9916
-# REMOVED ---	3 9078,9916 9047,9750 9000,9509
-# REMOVED (2023 hier nicht) --- Mehringdamm	3 9283,9487 9334,9670 9387,9804
-# REMOVED (2023 hier nicht) --- Mehringdamm	3 9387,9804 9334,9670 9283,9487
-	3 9524,9426 9552,9602 9588,9827
-	3 9588,9827 9552,9602 9524,9426
-	3 9650,9404 9676,9564 9705,9732
-	3 9705,9732 9676,9564 9650,9404
-	3 9767,9386 9790,9528 9820,9718
-	3 9820,9718 9790,9528 9767,9386
-	3 9892,9286 9927,9487 9957,9692
-	3 9957,9692 9927,9487 9892,9286
-	3 10004,9268 10032,9456 10067,9674
-	3 10067,9674 10032,9456 10004,9268
-	3 10123,9233 10198,9405 10306,9640
-	3 10306,9640 10198,9405 10123,9233
-	3 10547,9233 10564,9292 10580,9361
-	3 10580,9361 10564,9292 10547,9233
-	3 10705,9234 10713,9260 10749,9342
-	3 10749,9342 10713,9260 10705,9234
-	3 11141,9107 11136,9183 11208,9345 11274,9492
-	3 11274,9492 11208,9345 11136,9183 11141,9107
-	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
-	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1447817.php (2024; "Sperrung einzelner Eingänge des Volksparks Hasenheide")
-Hasenheide Eingang Lilienthalstr.	2 11708,8747 11768,8739
-Hasenheide Eingang Graefestr.	2 11136,9183 11141,9107
-Hasenheide Eingang Jahnstr. West	2 10709,9192 11111,9104
-Hasenheide Eingang Jahnstr. Ost	2 11515,9066 11550,9104
-Hasenheide Eingang Lucy-Lameck-Str.	2 11439,9049 11449,9125
-
-',
-         'from' => 1715983200,
-         'id' => 4,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'easter',
-                              49,
-                              'start',
-                              '2022-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.karneval.berlin/',
-         'text' => 'Karneval der Kulturen, 19.05.2024',
-         'type' => 'gesperrt',
-         'until' => 1716155999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2383,10 +2324,10 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://berliner-abendblatt.de/berlin-news/karlshorst-antikflohmarkt-startet-in-saison-id215216
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat, allerdings vermutlich nicht im Winter (Januar - März)
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen.
-#: last_checked: 2024-05-05
+#: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen.
+#: last_checked: 2024-05-19
 #: check_frequency: 120d
-#: next_check: 2024-05-19
+#: next_check: 2024-06-09
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
 ',
@@ -5262,7 +5203,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
-#: osm_watch: way id="114381366" version="17"
+#: osm_watch: way id="114381366" version="18"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2024-05-18
 #: check_frequency: 120d
@@ -6646,32 +6587,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/1-wein-und-winzerfest-westend-baa4f759-86d7-46dc-a637-0f50e53fceac/
-#: by: https://nitter.cz/VIZ_Berlin/status/1662153122070790145#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
-#: by: https://www.family-and-friends-ev.de/?date=20240303
-#: source_id: viz2021:13.259512,52.513271,18.05.2024,05:00 (bis 20.05.2024)
-#: source_id: viz2021:13.2597,52.51486,18.05.2024,05:00 (bis 20.05.2024)
-# REMOVED (hier nicht, fängt erst an der Bayernallee an) ---	2::temp 589,11953 577,11837
-	2::temp 577,11837 562,11710 560,11695 550,11607
-',
-         'from' => 1715914800,
-         'id' => 3788,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn zwischen Bayernallee und Badenallee gesperrt, vom 18.05.2024 bis 20.05.2024',
-         'type' => 'gesperrt',
-         'until' => 1716238800
-       },
+       undef,
        undef,
        undef,
        undef,

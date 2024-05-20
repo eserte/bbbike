@@ -3799,7 +3799,7 @@ Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:q3:inwork 799
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="4"
 #: osm_watch: note 4180739 1
-#: last_checked: 2024-05-07 vvv
+#: last_checked: 2024-05-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-01 vvv
 #: osm_watch: way id="1054783030" version="3"
@@ -4161,7 +4161,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-05-18
+#: last_checked: 2024-05-20
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4457,7 +4457,7 @@ Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 1637
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2024-05-07
+#: last_checked: 2024-05-19
 #: check_frequency: 120d
 #: next_check: 2026-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4654,8 +4654,8 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: last_checked: 2024-05-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-09-30 vvv
-#: osm_watch: way id="152434836" version="26"
-#: osm_watch: way id="30084962" version="35"
+#: osm_watch: way id="152434836" version="27"
+#: osm_watch: way id="30084962" version="36"
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
 Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
@@ -5002,10 +5002,10 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: last_checked: 2024-05-01 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-07-15 vvv
-#: osm_watch: way id="1085382250" version="3"
-(Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
+#: osm_watch: way id="1085382250" version="4"
+(Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17578,5566 17588,5573 17736,5441
 # REMOVED --- #: osm_watch: way id="226163591" version="6"
-(S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17634,5607 17675,5521
+# REMOVED (wurde in strassen-orig entfernt) --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17634,5607 17675,5521
 # REMOVED --- Sterndamm: keine Überquerungsmöglichkeit	3nocross::inwork 17695,5394 17736,5441 17747,5452
 #: next_check ^^^
 #: check_frequency ^^^
