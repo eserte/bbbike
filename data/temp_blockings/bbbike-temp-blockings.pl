@@ -51,9 +51,9 @@ my $isodate2epoch = sub {
 #: source_id: viz2021:13.3896,52.49594,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
 #: source_id: viz2021:13.39512,52.49691,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
 #: source_id: viz2021:13.39524,52.49454,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.389478,52.495996,16.05.2024,10:00 (bis 21.05.2024)
-#: source_id: viz2021:13.3893,52.497538,16.05.2024,17:00 (bis 21.05.2024)
-#: source_id: viz2021:13.395267,52.49454,16.05.2024,10:00 (bis 21.05.2024)
+#: source_id: viz2021:13.389478,52.495996,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
+#: source_id: viz2021:13.3893,52.497538,16.05.2024,17:00 (bis 21.05.2024) (inaktiv)
+#: source_id: viz2021:13.395267,52.49454,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -28545,7 +28545,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-05-17
+#: last_checked: 2024-05-21
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -41428,23 +41428,29 @@ EOF
 	2::inwork 9131,12438 9179,12444
 EOF
      },
-     { from  => 1699164000, # 2023-11-05 07:00
-       until => 1715781398, # undef, # $isodate2epoch->("2024-03-15 17:00:00"), # 1702051200, # 2023-12-08 17:00
+     { from  => 1716308738, # 1699164000, # 2023-11-05 07:00
+       until => $isodate2epoch->("2024-05-31 18:00:00"), # 1715781398, # undef, # $isodate2epoch->("2024-03-15 17:00:00"), # 1702051200, # 2023-12-08 17:00
        #text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, auch Kreuzungsbereich Wildensteiner Str. betroffen, vom 06.11.2023 07:00 bis 08.12.2023 17:00',
        #text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 15.03.2024 17:00',
-       text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+       #text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+       text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, bis Ende Mai 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WANDLITZ-2021
 #: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv)
+#: source_id: viz2021:13.524428,52.480538,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 31.05.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1792780861257155058
+#: by: https://pbs.twimg.com/media/GNyEOMQXwAA2maW?format=png&name=900x900
 #: also_indoor: traffic (G,W)
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 # REMOVED --- #: last_checked: 2024-04-20 vvv
 # REMOVED --- #: next_check: 2024-03-15 vvv
 # REMOVED ---	q4::inwork 18704,8427 18627,8475
 # REMOVED ---	q3::inwork 18627,8475 18557,8525
-	q3::inwork; 18704,8427 18627,8475
+# REMOVED ---	q3::inwork; 18704,8427 18627,8475
+#: note: nur der halbe Abschnitt gesperrt, deshalb q3
+	q3::inwork 18704,8427 18627,8475
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: last_checked ^^^
 EOF
@@ -42621,7 +42627,7 @@ EOF
 EOF
      },
      { from  => 1712683045, # 2024-04-09 19:17
-       until => undef, # $isodate2epoch->("2024-04-30 18:00:00"),
+       until => 1716313165, # undef, # $isodate2epoch->("2024-04-30 18:00:00"),
        #text  => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs, Umwege über Gehwege, Ende der Einschränkungen umbekannt',
        text  => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs, Umwege über Gehwege, voraussichtlich bis 21.05.2024',
        type  => 'handicap',
@@ -42637,21 +42643,15 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/stuetzung-an-wohnhaus-freigegeben-mieter-koennen-zurueck-id251880
 #: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36 (inaktiv)
 #: source_id: viz2021:13.35319,52.48988,12.04.2024,08:59 (bis 30.04.2024) (inaktiv)
-#: source_id: viz2021:13.353178,52.489857,12.04.2024,08:59 (bis 21.05.2024)
+#: source_id: viz2021:13.353178,52.489857,12.04.2024,08:59 (bis 21.05.2024) (inaktiv)
 #: source_id: bvg2021:n7#BVG346248_0
 #: source_id: bvg2024:n7#HIM_FREETEXT_219517
-#: also_indoor: traffic (ex-B,ex-H,G,W)
-#: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
-#: note: bei rbb "bis auf weiteres"; mittlerweile bis 31.05.2024
-#: last_checked: 2024-05-04 vvv
-#: next_check: 2024-05-08 vvv
+# REMOVED --- #: also_indoor: traffic (ex-B,ex-H,G,W) --- #: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv --- #: note: bei rbb "bis auf weiteres"; mittlerweile bis 31.05.2024 --- #: last_checked: 2024-05-04 vvv --- #: next_check: 2024-05-08 vvv
 	q4::inwork 7007,9220 6994,9288
 	q3::inwork 6994,9288 7118,9315
 	q3::inwork 7002,9526 6994,9288
 # REMOVED (hier nicht)	2::inwork 6994,9288 6921,9275
-#: next_check ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1713074400, # 2024-04-14 08:00
@@ -42957,6 +42957,48 @@ EOF
 #: note: "Einbahnstraße", da der Gehweg hier sowieso gesperrt ist und die Umleitung via Kollwitzstr. vermutlich sowieso günstiger ist
 #: note: mittlerweile Verengung auf eine Fahrspur, also gleiche Situation wie vorher
 	1::inwork 10908,13978 10933,14122
+EOF
+     },
+     { from  => 1716181200, # 2024-05-20 07:00
+       until => 1720789200, # 2024-07-12 15:00
+       text  => 'Stiftsweg: Leitungsarbeiten zwischen Mendelstr. und Damerowstr., Sperrung der Fahrbahn Mo-Do bis 17 Uhr, Fr bis 15 Uhr, vom 21.05.2024 07:00 bis 12.07.2024 15:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
+#: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
+	q4::inwork; 11239,18832 11001,18528
+EOF
+     },
+     { from  => 1716181200, # 2024-05-20 07:00
+       until => 1717426800, # 2024-06-03 17:00
+       text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr. sowie zwischen Boxhagener Str. und Siegfried-Hirschmann-Park, Fahrtrichtung jeweils gesperrt, vom 21.05.2024 07:00 bis 03.06.2024 17:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
+#: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
+#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten)
+	q4; 14639,11512 14575,11407
+#: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024)
+	q4; 14639,11512 14676,11572
+EOF
+     },
+     { from  => 1680415200, # 2023-04-02 08:00
+       until => 1719756000, # 2024-06-30 16:00
+       text  => 'Kuhdammweg - Am Umspannwerk: Bauarbeitem, Sperrung, evtl. sind auch Radfahrer betroffen, 03.04.2023 08:00 Uhr bis 30.06.2024 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 236320002 (bis 30.06.2024)
+	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
+EOF
+     },
+     { from  => 1716278400, # 2024-05-21 10:00
+       until => 1716404400, # 2024-05-22 21:00
+       text  => 'Niederkirchnerstr.: Sperrung zwischen Stresemannstr. und Wilhelmstr. (Gelöbnis der Bundeswehr), vom 22.05.2024 10:00 bis 22.05.2024 21:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.382425,52.507243,22.05.2024,10:00 (bis 22.05.2024)
+	2::temp 9155,11283 8720,11226
 EOF
      },
     );

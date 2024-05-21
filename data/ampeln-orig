@@ -402,7 +402,7 @@ Straﬂe der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # 
 #: note: Anforderung f¸r Radfahrer in Richtung Nord -> S¸d, Richtung S¸d -> Nord keine Ampel
 #: osm_watch: node id="1646650915" version="4"
-#: last_checked: 2024-03-13 (mapillary)
+#: last_checked: 2024-05-19 (kartaview)
 #: check_frequency: 180d
 Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 # 
@@ -4677,8 +4677,8 @@ Doppelte Bettelampel (beim ‹berqueren der Pudagla-Straﬂe)	X 52868,176203
 	X 18423,-843
 	X 19909,-2863
 #: next_check_id: BER-20XX vvv
-#: XXX: Ampel noch ausgeschaltet vvv
-#: last_checked: 2022-06-11 (mapillary)
+#: XXX: Ampel noch ausgeschaltet --- oder ist es eine "Dunkelampel"? vvv
+#: last_checked: 2024-05-19 (kartaview)
 #: check_frequency: 90d
 	F0 18517,-4502
 #: osm_watch: node id="1736933178" version="6"

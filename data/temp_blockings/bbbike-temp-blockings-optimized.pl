@@ -1,130 +1,6 @@
-$#temp_blocking = 2;
+$#temp_blocking = 73;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
-#: by: https://www.gratis-in-berlin.de/festivals/item/2009881-strassenfest-am-bluecherplatz-kreuzberg-karneval-der-kulturen (geplant 03.06.2022 bis 06.06.2022)
-#: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt --- gibt es überhaupt ein Straßenfest vorher?)
-#: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
-#: by: https://nitter.cz/VIZ_Berlin/status/1660949370760486913#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnd6Z2s0Ulh3QU1ZSWNJLmpwZw==
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1791092486695211121 (2024)
-#: by: https://pbs.twimg.com/media/GNmvjxnXgAE5jzf?format=jpg
-#: source_id: viz2021:13.3896,52.49594,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.39512,52.49691,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.39524,52.49454,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.389478,52.495996,16.05.2024,10:00 (bis 21.05.2024)
-#: source_id: viz2021:13.3893,52.497538,16.05.2024,17:00 (bis 21.05.2024)
-#: source_id: viz2021:13.395267,52.49454,16.05.2024,10:00 (bis 21.05.2024)
-	2::temp 9521,10010 9827,10051
-	2::temp 9521,10010 9448,10014
-	2::temp 9599,10175 9687,10180 9825,10206
-	2::temp 9416,10196 9472,10182 9599,10175
-	2::temp 9579,10122 9536,10064
-	2::temp 9579,10122 9631,10142 9702,10129
-	2::temp 9837,10117 9827,10051
-	2::temp 9837,10117 9858,10199
-	2::temp 9599,10175 9579,10122
-	2::temp 9702,10129 9827,10051
-	2::temp 9702,10129 9816,10119
-	2::temp 9599,10175 9631,10142 9687,10180
-	2::temp 9825,10206 9865,10227 9948,10280
-	2::temp 9873,10285 9865,10227 9858,10199
-	2::temp 9825,10206 9858,10199
-	3 9922,10010 9827,10051 9837,9856
-	3 9837,9856 9827,10051 9922,10010
-	2::temp 9827,10051 9837,9856
-	2::temp 9837,9856 9723,9842
-# REMOVED (hier doch nicht) --- Baruther Str.	2::temp 9723,9842 9588,9827 9387,9804
-Johanniterstr.	2::temp 10066,10071 9837,10117
-Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,9942
-',
-         'from' => 1715724000,
-         'id' => 3,
-         'periodic' => 1,
-         'prewarn_days' => 2,
-         'recurrences' => [
-                            [
-                              'easter',
-                              47,
-                              'start',
-                              '2022-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Straßenfest rund um den Blücherplatz, 17.05.2024 bis 20.05.2024, Sperrungen fangen schon einen Tag vorher an',
-         'type' => 'gesperrt',
-         'until' => 1716264000
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.stadtfest.berlin/de/index.html
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
@@ -4121,7 +3997,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-05-17
+#: last_checked: 2024-05-21
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -7213,7 +7089,31 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: WANDLITZ-2021
+#: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv)
+#: source_id: viz2021:13.524428,52.480538,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 31.05.2024)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1792780861257155058
+#: by: https://pbs.twimg.com/media/GNyEOMQXwAA2maW?format=png&name=900x900
+#: also_indoor: traffic (G,W)
+# REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
+# REMOVED --- #: last_checked: 2024-04-20 vvv
+# REMOVED --- #: next_check: 2024-03-15 vvv
+# REMOVED ---	q4::inwork 18704,8427 18627,8475
+# REMOVED ---	q3::inwork 18627,8475 18557,8525
+# REMOVED ---	q3::inwork; 18704,8427 18627,8475
+#: note: nur der halbe Abschnitt gesperrt, deshalb q3
+	q3::inwork 18704,8427 18627,8475
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
+',
+         'from' => 1716308738,
+         'id' => 3957,
+         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, bis Ende Mai 2024',
+         'type' => 'handicap',
+         'until' => 1717171200
+       },
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
@@ -7717,40 +7617,7 @@ Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::
          'type' => 'handicap',
          'until' => 1718978400
        },
-       {
-         'data' => '#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778015024818094305
-#: by: https://www.rbb24.de/panorama/beitrag/2024/04/berlin-schoeneberg-risse-hauswand-feuerwehr-polizei.html
-#: by: https://www.tagesspiegel.de/berlin/mietshaus-in-berlin-schoneberg-evakuiert-absenkungen-risse-in-den-wanden-einsturzgefahr-11494301.html
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778682517517631737 (voraussichtlich bis Ende April 2024)
-#: by: https://berliner-abendblatt.de/berlin-news/risse-an-fassade-von-schoeneberger-wohnhaus-einsturzgefahr-id249463
-#: by: https://berliner-abendblatt.de/berlin-news/stahlkonstruktion-soll-schoeneberger-wohnhaus-abstuetzen-id249921
-#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grunewaldstrasse-gesperrt_a413459
-#: by: https://berliner-abendblatt.de/berlin-news/aufbau-der-stahlstuetzen-an-schoeneberger-haus-soll-beginnen-id250477
-#: by: https://berliner-abendblatt.de/berlin-news/stuetzung-an-wohnhaus-freigegeben-mieter-koennen-zurueck-id251880
-#: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36 (inaktiv)
-#: source_id: viz2021:13.35319,52.48988,12.04.2024,08:59 (bis 30.04.2024) (inaktiv)
-#: source_id: viz2021:13.353178,52.489857,12.04.2024,08:59 (bis 21.05.2024)
-#: source_id: bvg2021:n7#BVG346248_0
-#: source_id: bvg2024:n7#HIM_FREETEXT_219517
-#: also_indoor: traffic (ex-B,ex-H,G,W)
-#: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv
-#: note: bei rbb "bis auf weiteres"; mittlerweile bis 31.05.2024
-#: last_checked: 2024-05-04 vvv
-#: next_check: 2024-05-08 vvv
-	q4::inwork 7007,9220 6994,9288
-	q3::inwork 6994,9288 7118,9315
-	q3::inwork 7002,9526 6994,9288
-# REMOVED (hier nicht)	2::inwork 6994,9288 6921,9275
-#: next_check ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => 1712683045,
-         'id' => 4038,
-         'text' => 'Grunewaldstr./Goltzstr./Akazienstr.: Sperrung des Kreuzungsbereichs, Umwege über Gehwege, voraussichtlich bis 21.05.2024',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024)
@@ -8004,6 +7871,53 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
          'text' => 'Blumberger Damm: Richtung Süden zwischen Elisabethstr. und Cecilienstr. wegen eines Wasserrohrbruchs gesperrt, gegenüberliegender Gehweg ist frei, vom 12.05.2024 10:30 bis 07.06.2024 17:00',
          'type' => 'handicap',
          'until' => 1717772400
+       },
+       undef,
+       {
+         'data' => '#: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
+#: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
+	q4::inwork; 11239,18832 11001,18528
+',
+         'from' => 1716181200,
+         'id' => 4062,
+         'text' => 'Stiftsweg: Leitungsarbeiten zwischen Mendelstr. und Damerowstr., Sperrung der Fahrbahn Mo-Do bis 17 Uhr, Fr bis 15 Uhr, vom 21.05.2024 07:00 bis 12.07.2024 15:00',
+         'type' => 'handicap',
+         'until' => 1720789200
+       },
+       {
+         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
+#: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
+#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten)
+	q4; 14639,11512 14575,11407
+#: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024)
+	q4; 14639,11512 14676,11572
+',
+         'from' => 1716181200,
+         'id' => 4063,
+         'text' => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr. sowie zwischen Boxhagener Str. und Siegfried-Hirschmann-Park, Fahrtrichtung jeweils gesperrt, vom 21.05.2024 07:00 bis 03.06.2024 17:00',
+         'type' => 'gesperrt',
+         'until' => 1717426800
+       },
+       {
+         'data' => '#: source_id: 236320002 (bis 30.06.2024)
+	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
+',
+         'from' => 1680415200,
+         'id' => 4064,
+         'text' => 'Kuhdammweg - Am Umspannwerk: Bauarbeitem, Sperrung, evtl. sind auch Radfahrer betroffen, 03.04.2023 08:00 Uhr bis 30.06.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1719756000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.382425,52.507243,22.05.2024,10:00 (bis 22.05.2024)
+	2::temp 9155,11283 8720,11226
+',
+         'from' => 1716278400,
+         'id' => 4065,
+         'text' => 'Niederkirchnerstr.: Sperrung zwischen Stresemannstr. und Wilhelmstr. (Gelöbnis der Bundeswehr), vom 22.05.2024 10:00 bis 22.05.2024 21:00',
+         'type' => 'gesperrt',
+         'until' => 1716404400
        }
      
 );
