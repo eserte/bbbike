@@ -1883,7 +1883,7 @@ sub showmap_url_gdi_berlin {
     my(%args) = @_;
 
     my $layerids = {
-        radverkehrsnetz => 'k_alkis_land:1,webatlas_wms_grau,radverkehrsnetz:0,radverkehrsnetz:2,radverkehrsnetz:1',
+        radverkehrsnetz => 'webatlas_wms_grau,radverkehrsnetz:0,radverkehrsnetz:2,radverkehrsnetz:1',
     }->{$args{layers}};
     if (!$layerids) {
 	main::status_message('error', 'no layers found or invalid layers');
