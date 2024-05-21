@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.11;
+$VERSION = 2.12;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists);
 
@@ -201,12 +201,8 @@ sub register {
     }
     $main::info_plugins{__PACKAGE__ . "_BKG"} =
 	{ name => "BKG (TopPlusOpen)",
-	  (module_exists('Geo::Proj4')
-	   ? (callback => sub { showmap_bkg(@_) },
-	      callback_3_std => sub { showmap_url_bkg(@_) },
-	     )
-	   : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
-	  ),
+	  callback => sub { showmap_bkg(@_) },
+	  callback_3_std => sub { showmap_url_bkg(@_) },
 	  ($images{BKG} ? (icon => $images{BKG}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . 'QwantMaps'} =
@@ -1777,10 +1773,7 @@ sub showmap_qwantmaps {
 
 sub showmap_url_bkg {
     my(%args) = @_;
-    require Geo::Proj4;
-    my $proj4 = Geo::Proj4->new("+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs") # see https://epsg.io/25832
-	or die Geo::Proj4->error;
-    my($x,$y) = $proj4->forward($args{py}, $args{px});
+    my($x,$y) = _wgs84_to_utm_ze($args{py}, $args{px}, 32);
     my $scale = 14 - log(($args{mapscale_scale})/1111)/log(2); # XXX very rough, works for smaller mapscale_scale numbers
     $scale = 15 if $scale > 15;
     sprintf 'http://sg.geodatenzentrum.de/web_bkg_webmap/applications/bkgmaps/minimal.html?zoom=%.f&lat=%f&lon=%f', $scale, $y, $x;
@@ -2044,6 +2037,13 @@ sub _wgs84_to_utm33U {
     if ("$utm_ze$utm_zn" ne "33U") {
 	warn "Unexpected UTM zone $utm_ze$utm_zn, expect wrong coordinate transformation...\n";
     }
+    ($utm_x,$utm_y);
+}
+
+sub _wgs84_to_utm_ze {
+    my($y,$x,$ze) = @_;
+    require Karte::UTM;
+    my($utm_ze, $utm_zn, $utm_x, $utm_y) = Karte::UTM::DegreesToUTM($y, $x, "WGS 84", ze => $ze);
     ($utm_x,$utm_y);
 }
 
