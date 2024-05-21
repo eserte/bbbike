@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2018,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2018,2023,2024 Slaven Rezic. All rights reserved.
 #
 #      This program is free software; you can redistribute it and/or modify
 #      it under the terms of the GNU General Public License as published by
@@ -87,10 +87,15 @@ $ZGRID{"UTM/UPS"} = 1;
 
 Convert position in lat/long signed degrees and given datum to UTM/UPS.
 
+With option ze another UTM zone may be forced.
+
 =cut
 
 sub DegreesToUTM {
-    my($lat, $long, $datum) = @_;
+    my($lat, $long, $datum, %opts) = @_;
+    my $opts_ze = delete $opts{ze};
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
     my($zn, $ze, $x, $y);
     if ($lat >= -80 && $lat <= 84) {
         $zn = 67 + int(floor(($lat+80)/8.0));
@@ -98,13 +103,19 @@ sub DegreesToUTM {
         $zn++ if ($zn > 72);
         $zn++ if ($zn > 78);
         $zn = chr($zn);
-        my $long0 =  6*int(floor($long/6.0))+3;
+	my $long0;
+	if ($opts_ze) {
+	    $long0 = $opts_ze*6-183;
+	} else {
+	    $long0 =  6*int(floor($long/6.0))+3;
+	}
         $ze = sprintf "%02d", int(floor(($long0+183)/6.0));
         my(@cs) = ConvToTM($lat, $long, $UTMlat0, $long0, $UTMk0, $datum);#XXXsub
         $x = sprintf "%.0f", 5e5+$cs[0];
 	$y = $cs[1];
         if ($lat < 0) { $y = int(1e7+$y) }
     } else {
+	if ($opts_ze) { die "Cannot handle ze option with coordinates in polar regions" }
         $ze = "00";
         if ($lat > 0) {
             if ($long < 0) { $zn = "Y" } else { $zn = "Z" }

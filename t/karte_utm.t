@@ -14,7 +14,7 @@ use Test::More;
 
 use Karte::UTM qw(ConvertDatum DegreesToGKK GKKToDegrees DegreesToUTM UTMToDegrees);
 
-plan tests => 16;
+plan tests => 19;
 
 check(53,13,"WGS 84", 4567136, 5875088);
 my($clat,$clong) = ConvertDatum(53,13,"WGS 84", "Potsdam", "DDD");
@@ -33,6 +33,19 @@ check($clat,$clong,"Potsdam", 4567242, 5874643);
     cmp_ok abs($x-13.5), '<', 0.000005,  'easting in UTMToDegrees call';
 }
 
+# force other UTM zones
+{
+    my($zone, $hemisphere, $easting, $northing) = DegreesToUTM(52.516249, 13.377581, "WGS 84");
+    is "[$zone/$hemisphere] $easting/$northing", "[33/U] 389910/5819696", 'default zone';
+}
+{
+    my($zone, $hemisphere, $easting, $northing) = DegreesToUTM(52.516249, 13.377581, "WGS 84", ze => 33);
+    is "[$zone/$hemisphere] $easting/$northing", "[33/U] 389910/5819696", 'force the expected default zone';
+}
+{
+    my($zone, $hemisphere, $easting, $northing) = DegreesToUTM(52.516249, 13.377581, "WGS 84", ze => 32);
+    is "[$zone/$hemisphere] $easting/$northing", "[32/U] 796979/5827470", 'force another zone';
+}
 
 sub check {
     my($lat, $long, $datum,
