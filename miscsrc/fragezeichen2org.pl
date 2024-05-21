@@ -34,6 +34,7 @@ use BBBikeBuildUtil qw(get_pmake);
 use BBBikeUtil qw(int_round bbbike_root);
 use Karte::Polar;
 use Karte::Standard;
+use Karte::UTM;
 use Strassen::Util ();
 use StrassenNextCheck;
 use VectorUtil qw(get_polygon_center);
@@ -187,11 +188,6 @@ my $crossings;
     $crossings = Kreuzungen->new(UseCache => 1, Strassen => $ms, WantPos => 1);
 }
 
-my $can_proj4 = eval {
-    require Geo::Proj4;
-    1;
-};
-
 # Usually all -orig and bbbike-temp-blockings files should be supplied
 # here. See data/Makefile.
 my @files = @ARGV
@@ -205,16 +201,6 @@ $SIG{INT} = sub { exit };
 my %files_add_street_name = map{($_,1)} ('radwege', 'ampeln', 'vorfahrt');
 
 my $today = strftime "%Y-%m-%d", localtime;
-
-# for VIZ links
-my $proj4_epsg2078;
-if ($can_proj4) {
-    $proj4_epsg2078 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=intl +units=m +no_defs") # see http://www.spatialreference.org/ref/epsg/2078/
-	or do {
-	    warn Geo::Proj4->error;
-	    $can_proj4 = 0;
-	};
-}
 
 for my $file (@files) {
     debug("$file...\n");
@@ -468,17 +454,9 @@ for my $file (@files) {
 			 else                   { return 0 }
 		     } @viz_source_ids;
 		     my($source_id, $px, $py, $inactive) = @{$viz_source_ids[0]}{qw(source_id px py inactive)};
-		     if ($proj4_epsg2078) {
-			 # NOTE: taken from MultiMap.pm
-			 my($x,$y) = $proj4_epsg2078->forward($py, $px);
-			 $y -= 125; # XXX why? otherwise the selected coordinate is at the bottom of the screen
-			 my $viz_url = sprintf 'vizmap:%d,%d', $x, $y;
-			 push @extra_url_defs, ['VIZ', $viz_url, ($inactive ? "(inactive)" : ())];
-		     } else {
-			 if (!state $warned_proj4++) {
-			     warn "No proj4 handling available, cannot create VIZ links (warn only once)...\n";
-			 }
-		     }
+		     my($x,$y) = _wgs84_to_utm33U($py, $px);
+		     my $viz_url = sprintf 'vizmap:%d,%d', $x, $y;
+		     push @extra_url_defs, ['VIZ', $viz_url, ($inactive ? "(inactive)" : ())];
 		 }
 	     }
 
@@ -1047,6 +1025,16 @@ sub print_org_visibility {
   :VISIBILITY: $visibility
   :END:
 EOF
+}
+
+# XXX duplicated from MultiMap.pm
+sub _wgs84_to_utm33U {
+    my($y,$x) = @_;
+    my($utm_ze, $utm_zn, $utm_x, $utm_y) = Karte::UTM::DegreesToUTM($y, $x, "WGS 84");
+    if ("$utm_ze$utm_zn" ne "33U") {
+	warn "Unexpected UTM zone $utm_ze$utm_zn, expect wrong coordinate transformation...\n";
+    }
+    ($utm_x,$utm_y);
 }
 
 __END__
