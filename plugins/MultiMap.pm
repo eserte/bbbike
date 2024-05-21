@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.10;
+$VERSION = 2.11;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists);
 
@@ -170,11 +170,8 @@ sub register {
     if ($is_berlin) {
 	$main::info_plugins{__PACKAGE__ . "_FIS_Broker_1_5000"} =
 	    { name => "FIS-Broker (1:5000)",
-	      (module_exists('Geo::Proj4')
-	       ? (callback => sub { showmap_fis_broker(@_) },
-		  callback_3 => sub { show_fis_broker_menu(@_) })
-	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
-	      ),
+	      callback => sub { showmap_fis_broker(@_) },
+	      callback_3 => sub { show_fis_broker_menu(@_) },
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . "_LGB"} =
@@ -185,30 +182,20 @@ sub register {
 	    };
 	$main::info_plugins{__PACKAGE__ . "_LSB"} =
 	    { name => "LS Brandenburg Verkehrsstärke 2021",
-	      (module_exists('Geo::Proj4')
-	       ? (callback => sub { showmap_bbviewer(@_, layers => 'verkehrsstaerke-2021') },
-		  callback_3 => sub { show_bbviewer_menu(@_) },
-		 )
-	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
-	      ),
+	      callback => sub { showmap_bbviewer(@_, layers => 'verkehrsstaerke-2021') },
+	      callback_3 => sub { show_bbviewer_menu(@_) },
 	      ($images{BRB} ? (icon => $images{BRB}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . '_VIZ'} =
 	    { name => 'VIZ Berlin',
-	      (module_exists('Geo::Proj4')
-	       ? (callback => sub { showmap_viz(@_) },
-		  callback_3_std => sub { showmap_url_viz(@_) })
-	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
-	      ),
+	      callback => sub { showmap_viz(@_) },
+	      callback_3_std => sub { showmap_url_viz(@_) },
 	      ($images{VIZ} ? (icon => $images{VIZ}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . '_BerlinRadverkehr'} =
 	    { name => 'Radverkehrsnetz Berlin',
-	      (module_exists('Geo::Proj4')
-	       ? (callback => sub { showmap_gdi_berlin(layers => 'radverkehrsnetz', @_) },
-		  callback_3_std => sub { showmap_url_gdi_berlin(layers => 'radverkehrsnetz', @_) })
-	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
-	      ),
+	      callback => sub { showmap_gdi_berlin(layers => 'radverkehrsnetz', @_) },
+	      callback_3_std => sub { showmap_url_gdi_berlin(layers => 'radverkehrsnetz', @_) },
 	      ($images{Berlin} ? (icon => $images{Berlin}) : ()),
 	    };
     }
@@ -1529,11 +1516,8 @@ sub showmap_architektur_urbanistik {
 sub showmap_url_fis_broker {
     my(%args) = @_;
     my $mapId = delete $args{mapId} || 'k5_farbe@senstadt';
-    require Geo::Proj4;
-    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=GRS80 +units=m +no_defs") # see https://www.spatialreference.org/ref/epsg/25833/
-	or die Geo::Proj4->error;
-    my($x0,$y0) = $proj4->forward($args{py0}, $args{px0});
-    my($x1,$y1) = $proj4->forward($args{py1}, $args{px1});
+    my($x0,$y0) = _wgs84_to_utm33U($args{py0}, $args{px0});
+    my($x1,$y1) = _wgs84_to_utm33U($args{py1}, $args{px1});
     sprintf 'https://fbinter.stadt-berlin.de/fb/index.jsp?loginkey=zoomStart&mapId=%s&bbox=%d,%d,%d,%d', $mapId, $x0, $y0, $x1, $y1;
 }
 
@@ -1880,15 +1864,10 @@ sub showmap_hierbautberlin {
 
 sub showmap_url_viz {
     my(%args) = @_;
-    require Geo::Proj4;
-    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=intl +units=m +no_defs") # see http://www.spatialreference.org/ref/epsg/2078/
-	or die Geo::Proj4->error;
-    my($x,$y) = $proj4->forward($args{py}, $args{px});
-    $y -= 125; # XXX why? otherwise the selected coordinate is at the bottom of the screen
+    my($x,$y) = _wgs84_to_utm33U($args{py}, $args{px});
     my $scale = 11; # XXX hardcoded for now
     # note: when bookmarking then center has additional [...], but it works also without (and less problems regarding escaping or org-mode links)
     sprintf 'https://viz.berlin.de/site/_masterportal/berlin/index.html?Map/layerIds=basemap_raster_farbe,Verkehrslage,Baustellen_OCIT&visibility=true,true,true&transparency=40,0,0&Map/center=%d,%d&Map/zoomLevel=%d', $x, $y, $scale;
-
 }
 
 sub showmap_viz {
@@ -1914,10 +1893,7 @@ sub showmap_url_gdi_berlin {
     my $visibility = join ',', ("true") x $number_layerids;
     my $transparency = join ',', ("0") x $number_layerids;
 
-    require Geo::Proj4;
-    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=intl +units=m +no_defs") # see http://www.spatialreference.org/ref/epsg/2078/
-	or die Geo::Proj4->error;
-    my($x,$y) = $proj4->forward($args{py}, $args{px});
+    my($x,$y) = _wgs84_to_utm33U($args{py}, $args{px});
     my $scale = 5; # XXX hardcoded for now
     sprintf 'https://gdi.berlin.de/viewer/radverkehrsnetz/?Map/layerIds=%s&visibility=%s&transparency=%s&Map/center=[%s,%s]&Map/zoomLevel=%d', $layerids, $visibility, $transparency, $x, $y, $scale;
 }
@@ -1950,10 +1926,7 @@ sub showmap_url_bbviewer {
     my $visibility = join ',', ("true") x $number_layerids;
     my $transparency = join ',', ("0") x $number_layerids;
     my $rooturl = "$baseurl?layerIDs=$layerids&visibility=$visibility&transparency=$transparency&";
-    require Geo::Proj4;
-    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs") # see https://epsg.io/25833
-	or die Geo::Proj4->error;
-    my($x,$y) = $proj4->forward($args{py}, $args{px});
+    my($x,$y) = _wgs84_to_utm33U($args{py}, $args{px});
     my $scale = 7 - log(($args{mapscale_scale})/12000)/log(2);
     $scale = 15 if $scale > 15;
     sprintf "${rooturl}center=%d,%d&zoomlevel=%d", $x, $y, $scale;
@@ -2062,6 +2035,16 @@ sub start_browser {
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
+}
+
+sub _wgs84_to_utm33U {
+    my($y,$x) = @_;
+    require Karte::UTM;
+    my($utm_ze, $utm_zn, $utm_x, $utm_y) = Karte::UTM::DegreesToUTM($y, $x, "WGS 84");
+    if ("$utm_ze$utm_zn" ne "33U") {
+	warn "Unexpected UTM zone $utm_ze$utm_zn, expect wrong coordinate transformation...\n";
+    }
+    ($utm_x,$utm_y);
 }
 
 ######################################################################
