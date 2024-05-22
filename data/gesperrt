@@ -1012,6 +1012,7 @@ Hausvaterweg [Wohngebiet]	1s 19789,18423 19704,18459
 (zu den Depotgebäuden)	2 24734,5592 24733,5553
 (Zufahrt U-Bahn-Abstellanlage Hönow): üblicherweise durch ein Tor versperrt	2 25919,14963 25809,14991
 Bahnhofsplatz S-Bhf. Hermsdorf	1 3624,23540 3610,23527 3590,23541 3581,23557 3596,23581
+Daimler-Parkplatz: Zufahrt Köpenicker Str. oft (immer?) gesperrt, auch an Werktagen	2 18471,2166 18448,2182 18320,2195
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2386,10 +2387,10 @@ Potsdamer Chaussee -> Mutter-Mochow-Weg: Mittelstreifen	3::igndisp -1646,2434 -1
 Mittelstreifen	3nocross::ignrte -3011,1761 -3031,1747 -3077,1716
 Potsdamer Chaussee -> Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee) [Nebenstr.]: Mittelstreifen	3::igndisp -3077,1716 -3031,1747 -3040,1763
 Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee) [Nebenstr.] -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -3040,1763 -3031,1747 -3011,1761
-Straßenbahntrasse	3nocross::ignrte 22116,5442 22090,5402 22067,5367 22056,5350 21979,5251 21961,5228
+Straßenbahntrasse	3nocross::ignrte 22116,5442 22090,5402 22065,5364 22056,5350 21979,5251 21961,5228
 Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22006,5460 22090,5402 22116,5442
 Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22057,5305 22056,5350 21979,5251
-Bhf.str. -> Lindenstr.: Straßenbahntrasse	3::igndisp 22067,5367 22056,5350 22057,5305
+Bhf.str. -> Lindenstr.: Straßenbahntrasse	3::igndisp 22065,5364 22056,5350 22057,5305
 Uferweg -> Bhf.str.: Straßenbahntrasse	3::igndisp 22035,5217 21979,5251 21961,5228
 Bhf.str. -> Uferweg: Straßenbahntrasse	3::igndisp 22056,5350 21979,5251 22035,5217
 Straßenbahnhaltestelle	3nocross::ignrte 21979,5208 22023,5160 22033,5148 22078,5093
@@ -3437,6 +3438,7 @@ Drängelgitter	BNP:3:-18:trailer=10 10092,15627
 Betonbarriere	BNP:3:-229:trailer=no 7466,19492
 Drängelgitter	BNP:3:-115:trailer=10 17457,94793
 Drängelgitter	BNP:3:-171:trailer=10 15646,93690
+Schranke über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5:-207:trailer=15 18471,2166
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
@@ -3477,7 +3479,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7418,12601 7377,12729
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
-Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22057,5305 22100,5348
+Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22057,5305 22095,5344
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:inwork 14535,11327 14506,11275
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031

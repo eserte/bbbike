@@ -445,7 +445,7 @@ B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
 #: note: Luftbild
 Neuköllner Str.: Mittelstreifen	3nocross 16643,1460 16698,1392 16815,1278
 Storkower Str.: Mittelstreifen	3nocross 13148,14850 13107,14873 12807,15045
-Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17581,8422 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
+# REMOVED (mittlerweile eine normale Wohngebietsstraße) --- Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17581,8422 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 #: note: Luftbild
 Mariendorfer Damm: Mittelstreifen	3nocross 9248,4904 9239,4980 9206,5193
 #: note: Luftbild
@@ -1841,7 +1841,7 @@ Radieschenpfad	1 20582,18475 20635,18381
 #: osm_watch: way id="24202434" version="27"
 #: XXX Wird der Asphalt ersetzt werden?
 #: note: Durch die neue Schrankenanlage scheint es für Radfahrer keine Einschränkungen zu geben.
-#: last_checked: 2024-05-06
+#: last_checked: 2024-05-22
 #: check_frequency: 30d
 Dammweg: per Schranke für den Autoverkehr gesperrt	2 15869,8355 16388,8821
 # 

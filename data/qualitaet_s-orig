@@ -1399,7 +1399,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2024-04-10 vvv
+#: last_checked: 2024-05-22 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="8"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -2331,7 +2331,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: XXX möglicherweise Änderung des Wegbelags
 #: osm_watch: way id="176112031" version="16"
 #: osm_watch: way id="640883366" version="5"
-#: last_checked: 2024-01-27
+#: last_checked: 2024-05-22
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -2534,7 +2534,7 @@ Griebnitzseepromenade: Waldweg	Q1- -7252,-422 -7276,-482 -7337,-515 -7358,-605 -
 (Frankfurter Allee, Nebenfahrbahn): Asphalt	Q0 16865,11931 16837,11920
 (Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1- 16837,11920 16764,11919 16702,11916
 (Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11916 16630,11915 16535,11920
-Nalepastr.: Asphalt mit Schäden	Q1 17079,8456 17065,8396
+Nalepastr.: Asphalt mit Schäden	Q1 17079,8456 17069,8411 17065,8396
 Nalepastr.: unbefestigt	Q2 17065,8396 17057,8235
 Nalepastr.: Kleinsteinpflaster	Q1- 17057,8235 17056,8159
 Nalepastr.: Beton	Q1+ 17056,8159 17059,8097
@@ -2545,6 +2545,7 @@ Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17050,7687 17047,7619
 Nalepastr.: fester enger Sandweg	Q2 17052,7507 17047,7619
 Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17052,7507 17135,7377 17165,7338
 Nalepastr.: sehr guter Asphalt	Q0 17165,7338 17190,7306 17211,7280 17286,7173 17352,7051 17459,6854 17510,6751 17550,6677 17614,6571
+(am Funkhaus Berlin): Kleinsteinpflaster, etwas uneben	Q1- 17057,8235 16928,8237 16930,8351 16951,8390 16993,8410 17069,8411
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21357,5278 21355,5254 21346,5165 21345,5157 21343,5140 21335,5075 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21299,4831 21263,4804 21287,4757 21332,4655
 Eiselenweg: Asphalt	Q0 21206,5420 21364,5430 21442,5414
@@ -5468,7 +5469,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2024-04-10
+#: last_checked: 2024-05-22
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
@@ -5478,7 +5479,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 (Uferweg): Mosaikpflaster	Q1 22059,5172 22085,5111 22078,5093
 (Lindenstr. - Uferweg): alter, unebener Asphalt	Q1 21979,5251 22035,5217
 (Lindenstr. - Uferweg): Mosaikpflaster	Q1 22035,5217 22059,5172
-Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22140,5392 22100,5348 22057,5305
+Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22140,5392 22095,5344 22057,5305
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19255,5164 19294,5033 19306,4969 19312,4940
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19245,4931 19241,4958 19236,5025 19233,5076 19210,5150
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19294,5033 19236,5025
@@ -10814,7 +10815,7 @@ Fischadlerweg: Verbundsteinpflaster	Q1+ 16519,-265 16478,-399 16513,-510 16572,-
 Eulenweg: Verbundsteinpflaster	Q1+ 16600,-475 16513,-510
 (Fischadlerweg - Seeadlerweg): wassergebundene Decke	Q1 16572,-666 16581,-675 16613,-670 16658,-660 16665,-641
 (Seeadlerweg - Mauerweg): wassergebundene Decke	Q1 16613,-670 16628,-731
-(Rudower Str. - Köpenicker Str.): Asphalt	Q0 18491,2128 18448,2182 18320,2195
+(Rudower Str. - Köpenicker Str.): Asphalt	Q0 18491,2128 18471,2166 18448,2182 18320,2195
 # REMOVED (realisiert) --- #: XXX nach der Radwegsanierung bessere Qualität? --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf
 Dirschelweg: Asphalt	Q0 10165,4386 10059,4396 9997,4398
 Finchleystr.: Beton	Q0 10695,-1515 10699,-1499 10717,-1429 10720,-1340
@@ -13427,7 +13428,7 @@ Ida-Wolff-Platz: Verbundsteinpflaster	Q1 9161,10574 9192,10528
 # 
 Am Seegraben: Asphalt	Q0+ 21829,1351 21865,1441 21866,1492 21878,1500
 # 
-#: note: einige wenige Stellen mit etwas loserem Schotter, ansonsten gut befahrbar
+#: note: einige wenige Stellen mit etwas loserem Schotter, ansonsten gut befahrbar; 2024: gesamter Weg gut befahrbar
 (Parkplatz am Langen See/Müggelberg - Straße zur Krampenburg): verdichteter Waldweg	Q1- 25562,1038 25990,825 25954,692 25997,658 26380,545 27082,336 27161,156 27182,110
 # 
 (Umfahrung Baustelle Behrens-Ufer): unbefestigter Weg	Q2 19139,5627 19137,5613 19165,5568
@@ -13444,7 +13445,7 @@ Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 # 
 An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125
 #: next_check_id: MARIENUFER-2023
-#: last_checked: 2024-02-06 (daf)
+#: last_checked: 2024-05-22
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 An der Villa Bolle: Baustraße	Q2 22668,3125 22477,3109

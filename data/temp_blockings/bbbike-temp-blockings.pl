@@ -1137,7 +1137,7 @@ EOF
        text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); zw. Stolpe und AS Stolpe Straßenbauarbeiten Vollsperrung 04.10.2004-17.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 5,27813 -250,27739
+	2 5,27813 -212,27762
 EOF
      },
      { from  => 1096927200, # 2004-10-05 00:00
@@ -1219,7 +1219,7 @@ EOF
        text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); Bereich Anschlußstelle; Ausbau AS Stolpe; Vollsperrung; 18.10.2004-28.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 375,28109 524,28171 938,28349
+	2 375,28109 524,28171 869,28320 938,28349
 EOF
      },
      { from  => 1137804913, # 2006-01-21 01:55
@@ -29700,19 +29700,19 @@ EOF
        until => 1557426749, # 1557504000, # 2019-05-10 18:00
        text  => 'Alt-Biesdorf: zwischen Grabensprung und Köpenicker Str. für Radfahrer gesperrt, bis 10. Mai 2019 (könnte aber bereits wieder offen sein)',
        type  => 'gesperrt',
-       source_id => '2147344050',
        data  => <<EOF,
-#: source_id: 2147344103 (bis Mitte Mai 2019)
+#: source_id: 2147344050 (inaktiv)
+#: source_id: 2147344103 (bis Mitte Mai 2019) (inaktiv)
 	2::inwork 20540,11660 20633,11651 20739,11641 20838,11631 20963,11618 21108,11628
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1716380521, # undef, # -> permanente Sperrung in gesperrt-orig
        text  => 'Daimler-Parkplatz: Zufahrt Köpenicker Str. kann gesperrt sein (z.B. am Wochenende), ansonsten eigentlich nur für Besucher frei',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	2::night:weekend 18320,2195 18448,2182 18491,2128
+	2::night:weekend 18471,2166 18448,2182 18320,2195
 EOF
      },
      { from  => 1557083664, # 1556566625, # 2019-04-29 21:37
@@ -37623,7 +37623,7 @@ EOF
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-05-04
+#: last_checked: 2024-05-22 (daf)
 #: check_frequency: 150d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -38157,8 +38157,8 @@ EOF
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
 #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
-#: last_checked: 2024-04-07
-#: check_frequency: 120d
+#: last_checked: 2024-05-22
+#: check_frequency: 90d
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
      },
@@ -42487,16 +42487,17 @@ Togostr. -> Antwerpener Str.	3::inwork 6530,15849 6555,15827 6690,15671
 EOF
      },
      { from  => 1710741600, # 2024-03-18 07:00
-       until => $isodate2epoch->("2024-05-22 18:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
+       until => $isodate2epoch->("2024-06-06 17:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
        #text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der östlichen Anbindung, vom 19.03.2024 07:00 bis 11.04.2024 23:59',
-       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 22.05.2024',
+       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 06.06.2024',
        type  => 'gesperrt',
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 6499,10086 6504,9961 6504,9865\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
 #       3nocross::ignrte 6499,10086 6504,9961 6504,9865
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
 #: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024)
+#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024) (bis 23.05.2024)
+#: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
@@ -42504,7 +42505,7 @@ EOF
 #: last_checked: 2024-05-04 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
-#: next_check: 2024-05-22 vvv
+#: next_check: 2024-06-06 vvv
 Martin-Luther-Str. -> östliche Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
@@ -42641,6 +42642,7 @@ EOF
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grunewaldstrasse-gesperrt_a413459
 #: by: https://berliner-abendblatt.de/berlin-news/aufbau-der-stahlstuetzen-an-schoeneberger-haus-soll-beginnen-id250477
 #: by: https://berliner-abendblatt.de/berlin-news/stuetzung-an-wohnhaus-freigegeben-mieter-koennen-zurueck-id251880
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1793180167650660546 (offen)
 #: source_id: viz2021:13.360095,52.490517,10.04.2024,13:36 (inaktiv)
 #: source_id: viz2021:13.35319,52.48988,12.04.2024,08:59 (bis 30.04.2024) (inaktiv)
 #: source_id: viz2021:13.353178,52.489857,12.04.2024,08:59 (bis 21.05.2024) (inaktiv)
@@ -42998,6 +43000,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.382425,52.507243,22.05.2024,10:00 (bis 22.05.2024)
+#: source_id: viz2021:13.37905,52.507,22.05.2024,12:00 (bis 22.05.2024)
 	2::temp 9155,11283 8720,11226
 EOF
      },

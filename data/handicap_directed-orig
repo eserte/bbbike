@@ -202,7 +202,7 @@ Müggelheimer Str. - Dorotheenstr.: linker Gehweg	DH:h=q3,25 22965,4124 22949,413
 # 
 Rudower Str. - Köllnischer Platz: linker Gehweg	DH:h=q3,30 21585,4459 21781,4470 21789,4520
 # 
-Bahnhofstr. - Platz des 23. April: linker Gehweg	DH:h=q3,100 22116,5442 22090,5402 22067,5367 22056,5350 22057,5305
+Bahnhofstr. - Platz des 23. April: linker Gehweg	DH:h=q3,100 22116,5442 22090,5402 22065,5364 22056,5350 22057,5305
 # 
 Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg	DH:h=q3,60 22982,11157 22996,11264 22937,11265
 Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg	DH:h=q3,90 23113,11262 22996,11264 22982,11157
@@ -477,9 +477,9 @@ Scharnweberstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=2
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2024-05-06 vvv
+#: last_checked: 2024-05-22 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-05-22 vvv
+#: next_check: 2024-06-18 vvv
 # REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 16747,6813 16720,6845
 # REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:t=20 16720,6845 16677,6892
 #: note: eine Anforderungsampel, die aber recht flott grün wird
@@ -498,8 +498,8 @@ Minna-Todenhagen-Brücke - Köpenicker Landstr: zusätzliche Ampel	DH:t=20 16834,69
 #: next_check_id: ALTFRIEDRICHSFELDE-2024
 #: source_id: viz2021:13.529089,52.510269,06.07.2023,16:00 (bis 04.08.2023) (bis 09.08.2023) (bis 11.08.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.53005,52.510351,11.08.2023,10:00 (bis 22.09.2023, im Anschluss weitere Arbeiten) (inaktiv)
+#: source_id: viz2021:13.531111,52.510266,18.05.2024,05:01 (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.53005,52.510351,25.07.2023,10:00 (bis 06.10.2023) (bis 24.11.2023) (bis 24.05.2024)
-#: source_id: viz2021:13.531111,52.510266,18.05.2024,05:01 (kein Endedatum)
 #: note: Luftlinie 307m, Umleitungsstrecke 341m
 #: note: laut Bauschild der Wasserbetriebe bis Frühjahr 2024, mittlerweile bis Juni 2024
 #: osm_watch: way id="460741797" version="8"

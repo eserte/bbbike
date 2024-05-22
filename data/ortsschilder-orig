@@ -1976,8 +1976,20 @@ Glienicke|/Nordbahn	OS 4914,24366
 Glienicke|/Nordbahn	OS 3827,24622
 Glienicke|/Nordbahn	OS 4665,24436
 # 
-Hohen Neuendorf|b. Berlin	OS 2150,28127
-Hohen Neuendorf|b. Berlin	OS 1938,28171
+#: linked: Hohen Neuendorf|b. Berlin vvv
+Hohen Neuendorf	OS 2150,28127
+Hohen Neuendorf	OS 1938,28171
+#: by: mapillary
+Hohen Neuendorf	OS 869,28320
+#: linked ^^^
+# 
+#: linked: Stolpe-Dorf vvv
+#: by: mapillary vvv
+Stolpe	OS 451,28174
+Stolpe	OS 184,27837
+Stolpe	OS -212,27762
+#: by ^^^
+#: linked ^^^
 # 
 Ruhlsdorf	OS 20118,46214
 Ruhlsdorf	OS 21538,47215

@@ -77,7 +77,7 @@ Michaelbrücke	F::inwork 11676,11839
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024)
 #: note: etwa 20m südöstlich
-#: last_checked: 2024-05-12 (krickstadt)
+#: last_checked: 2024-05-22
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 #: valid: -20240630
@@ -175,14 +175,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-05-20
+#: last_checked: 2024-05-22
 #: check_frequency: 120d
 #: next_check: 2024-06-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-05-20
+#: last_checked: 2024-05-22
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Gürtelstr.	F::inwork 15153,11691
@@ -214,14 +214,14 @@ Gürtelstr.	F::inwork 15153,11691
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2024-04-07
+#: last_checked: 2024-05-22
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2024-04-07
+#: last_checked: 2024-05-22
 #: next_check: 2024-06-30
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
@@ -294,7 +294,7 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2024-05-15
+#: last_checked: 2024-05-22
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9622
 # 
@@ -308,12 +308,13 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8234,19936
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8311,19458
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8268,19558
-#: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024) (bis 24.05.2024)
+#: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024) (bis 24.05.2024) (inaktiv)
+#: source_id: viz2021:13.374486,52.583736,27.02.2024,07:00 (bis 07.10.2024)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/ende-der-baustelle-endlich-in-sicht_a412148 (Bauarbeiten bis Juni/Juli 2024)
 #: last_checked: 2024-04-14 vvv
-#: next_check: 2024-05-24 vvv
+#: next_check: 2024-10-07 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
-Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
+# REMOVED (diese Ampel ist nicht mehr gelistet) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -4141,12 +4142,13 @@ Umgehung mit Treppen existiert	Zbr 47077,-15816
 	F 25435,22733
 #: note: Anforderungsampel, zumindest in N-S-Richtung
 	X 11330,-4277
-#: by: mapillary:
+#: by: mapillary: vvv
+	X 5,27813
+	X -615,27411
 	X -11312,13478
-#: by: mapillary:
 	X -13019,13904
-#: by: mapillary:
 	X 34521,5351
+#: by ^^^
 #: note: Anforderungsampel; temporär
 	X 23759,49971
 	X 39036,101318

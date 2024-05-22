@@ -1803,7 +1803,7 @@ Griebnitzseepromenade: Waldweg	Q1 -7252,-422 -7276,-482 -7337,-515 -7358,-605 -7
 (Frankfurter Allee, Nebenfahrbahn): Asphalt	Q0 16865,11931 16837,11920
 (Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1 16837,11920 16764,11919 16702,11916
 (Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11916 16630,11915 16535,11920
-Nalepastr.: Asphalt mit Schäden	Q1 17079,8456 17065,8396
+Nalepastr.: Asphalt mit Schäden	Q1 17079,8456 17069,8411 17065,8396
 Nalepastr.: unbefestigt	Q2 17065,8396 17057,8235
 Nalepastr.: Kleinsteinpflaster	Q1 17057,8235 17056,8159
 Nalepastr.: Beton	Q1 17056,8159 17059,8097
@@ -1813,6 +1813,7 @@ Nalepastr.: Beton, Eisenbahnschienen	Q1 17050,7687 17047,7619
 Nalepastr.: fester enger Sandweg	Q2 17052,7507 17047,7619
 Nalepastr.: Beton, Eisenbahnschienen	Q1 17052,7507 17135,7377 17165,7338
 Nalepastr.: sehr guter Asphalt	Q0 17165,7338 17190,7306 17211,7280 17286,7173 17352,7051 17459,6854 17510,6751 17550,6677 17614,6571
+(am Funkhaus Berlin): Kleinsteinpflaster, etwas uneben	Q1 17057,8235 16928,8237 16930,8351 16951,8390 16993,8410 17069,8411
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21357,5278 21355,5254 21346,5165 21345,5157 21343,5140 21335,5075 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21299,4831 21263,4804 21287,4757 21332,4655
 Eiselenweg: Asphalt	Q0 21206,5420 21364,5430 21442,5414
@@ -4260,7 +4261,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 (Uferweg): Mosaikpflaster	Q1 22059,5172 22085,5111 22078,5093
 (Lindenstr. - Uferweg): alter, unebener Asphalt	Q1 21979,5251 22035,5217
 (Lindenstr. - Uferweg): Mosaikpflaster	Q1 22035,5217 22059,5172
-Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22140,5392 22100,5348 22057,5305
+Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22140,5392 22095,5344 22057,5305
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19255,5164 19294,5033 19306,4969 19312,4940
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19245,4931 19241,4958 19236,5025 19233,5076 19210,5150
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19294,5033 19236,5025
@@ -9117,7 +9118,7 @@ Fischadlerweg: Verbundsteinpflaster	Q1 16519,-265 16478,-399 16513,-510 16572,-6
 Eulenweg: Verbundsteinpflaster	Q1 16600,-475 16513,-510
 (Fischadlerweg - Seeadlerweg): wassergebundene Decke	Q1 16572,-666 16581,-675 16613,-670 16658,-660 16665,-641
 (Seeadlerweg - Mauerweg): wassergebundene Decke	Q1 16613,-670 16628,-731
-(Rudower Str. - Köpenicker Str.): Asphalt	Q0 18491,2128 18448,2182 18320,2195
+(Rudower Str. - Köpenicker Str.): Asphalt	Q0 18491,2128 18471,2166 18448,2182 18320,2195
 Dirschelweg: Asphalt	Q0 10165,4386 10059,4396 9997,4398
 Finchleystr.: Beton	Q0 10695,-1515 10699,-1499 10717,-1429 10720,-1340
 an der Tiergartenschleuse: Kleinsteinpflaster	Q1 5818,11722 5831,11697 5826,11682 5802,11677
