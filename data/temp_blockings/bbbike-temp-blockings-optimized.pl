@@ -7901,16 +7901,19 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
          'type' => 'gesperrt',
          'until' => 1719756000
        },
+       undef,
        {
-         'data' => '#: source_id: viz2021:13.382425,52.507243,22.05.2024,10:00 (bis 22.05.2024)
-#: source_id: viz2021:13.37905,52.507,22.05.2024,12:00 (bis 22.05.2024)
-	2::temp 9155,11283 8720,11226
+         'data' => '#: source_id: viz2021:13.387836,52.51696,23.05.2024,05:00 (bis 23.05.2024)
+	2::temp 10438,12671 10431,12709 10373,12776
+	2::temp 10733,12967 10695,12933 10525,12789 10515,12780 10431,12709 10542,12587 10601,12521 10644,12469 10685,12422
+	2::temp 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
+	2::temp 10704,12595 10783,12502
 ',
-         'from' => 1716278400,
-         'id' => 4065,
-         'text' => 'Niederkirchnerstr.: Sperrung zwischen Stresemannstr. und Wilhelmstr. (Gelöbnis der Bundeswehr), vom 22.05.2024 10:00 bis 22.05.2024 21:00',
+         'from' => 1716346800,
+         'id' => 4066,
+         'text' => 'Karl-Liebknecht-Str. und Spandauer Str.: Veranstaltung (75 Jahre Grundgesetz), Sperrung, vom 23.05.2024 05:00 bis 23.05.2024 12:00',
          'type' => 'gesperrt',
-         'until' => 1716404400
+         'until' => 1716458400
        }
      
 );
