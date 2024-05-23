@@ -36998,7 +36998,7 @@ EOF
 #: note: bei rbb mittlerweile entfernt
 #: osm_watch: way id="1094113747" version="2"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-03-01 (daf)
+#: last_checked: 2024-05-23 (daf)
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 	q4::inwork; 3429,13227 3400,13107
@@ -39490,7 +39490,7 @@ EOF
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-270723/ (Umbau der Baustelle, Gesamtmaßnahme bis März 2024)
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fahrbahn-wird-neu-asphaltiert_a395108
 #: source_id: viz2021:13.325275,52.602903,10.01.2023,08:00 (bis 24.07.2023) (bis 29.03.2024) (bis 27.07.2023) (inaktiv)
-#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023) (bis 16.11.2023) (bis 29.03.2024) (bis 30.09.2024)
+#: source_id: viz2021:13.324746,52.601916,27.07.2023,11:00 (bis 27.10.2023) (bis 03.11.2023) (bis 16.11.2023) (bis 29.03.2024) (bis 30.09.2024) (inaktiv)
 #: note: laut Mapillary (2024-03-12) keine Einschränkungen mehr
 # REMOVED (hier nicht mehr) --- Hermsdorfer Str.	q2::inwork 4778,21633 4805,21715 4812,21737
 Hermsdorfer Str.	q2::inwork 4812,21737 4887,21944
@@ -40815,13 +40815,14 @@ EOF
 	q4::inwork 12407,8177 12545,8209
 EOF
      },
-     { from  => 1693720800, # 2023-09-03 08:00
-       until => 1699286400, # 2023-11-06 17:00
-       text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 04.09.2023 08:00 Uhr bis 06.11.2023 17:00 Uhr',
+     { from  => $isodate2epoch->("2024-05-26 00:00:00"), # 1693720800, # 2023-09-03 08:00
+       until => $isodate2epoch->("2024-08-09 16:00:00"), # 1699286400, # 2023-11-06 17:00
+       #text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 04.09.2023 08:00 Uhr bis 06.11.2023 17:00 Uhr',
+       text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 27.05.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZOSSENB246-2023
-#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024)
+#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024)
 	2::inwork 13526,-20548 13412,-20513 13271,-20531
 EOF
      },
@@ -40890,7 +40891,7 @@ EOF
 	2::inwork 23305,14914 23318,14847 23297,14772
 #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv
 #: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (ex-B,G)
 	q3::inwork 23222,14809 23297,14772 23369,14756
 	q3::inwork 23288,14719 23297,14772
 #: note ^^^
@@ -41429,16 +41430,16 @@ EOF
 EOF
      },
      { from  => 1716308738, # 1699164000, # 2023-11-05 07:00
-       until => $isodate2epoch->("2024-05-31 18:00:00"), # 1715781398, # undef, # $isodate2epoch->("2024-03-15 17:00:00"), # 1702051200, # 2023-12-08 17:00
+       until => $isodate2epoch->("2024-05-24 18:00:00"), # 1715781398, # undef, # $isodate2epoch->("2024-03-15 17:00:00"), # 1702051200, # 2023-12-08 17:00
        #text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, auch Kreuzungsbereich Wildensteiner Str. betroffen, vom 06.11.2023 07:00 bis 08.12.2023 17:00',
        #text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, bis 15.03.2024 17:00',
        #text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
-       text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, bis Ende Mai 2024',
+       text  => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, bis zum 24. Mai 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WANDLITZ-2021
 #: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv)
-#: source_id: viz2021:13.524428,52.480538,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 31.05.2024)
+#: source_id: viz2021:13.524428,52.480538,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 31.05.2024) (bis 24.05.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792780861257155058
 #: by: https://pbs.twimg.com/media/GNyEOMQXwAA2maW?format=png&name=900x900
@@ -42496,7 +42497,7 @@ EOF
 #       3nocross::ignrte 6499,10086 6504,9961 6504,9865
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
 #: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024) (bis 23.05.2024)
+#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024) (bis 23.05.2024) (inaktiv)
 #: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
@@ -42842,7 +42843,7 @@ Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg
-#: last_checked: 2024-05-19 (webcam)
+#: last_checked: 2024-05-23 (webcam)
 #: check_frequency: 7d
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
@@ -42979,6 +42980,7 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
 #: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
+#: source_id: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten)
 	q4; 14639,11512 14575,11407
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024)
@@ -42999,8 +43001,8 @@ EOF
        text  => 'Niederkirchnerstr.: Sperrung zwischen Stresemannstr. und Wilhelmstr. (Gelöbnis der Bundeswehr), vom 22.05.2024 10:00 bis 22.05.2024 21:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.382425,52.507243,22.05.2024,10:00 (bis 22.05.2024)
-#: source_id: viz2021:13.37905,52.507,22.05.2024,12:00 (bis 22.05.2024)
+#: source_id: viz2021:13.382425,52.507243,22.05.2024,10:00 (bis 22.05.2024) (inaktiv)
+#: source_id: viz2021:13.37905,52.507,22.05.2024,12:00 (bis 22.05.2024) (inaktiv)
 	2::temp 9155,11283 8720,11226
 EOF
      },
@@ -43009,7 +43011,7 @@ EOF
        text  => 'Karl-Liebknecht-Str. und Spandauer Str.: Veranstaltung (75 Jahre Grundgesetz), Sperrung, vom 23.05.2024 05:00 bis 23.05.2024 12:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.387836,52.51696,23.05.2024,05:00 (bis 23.05.2024)
+#: source_id: viz2021:13.387836,52.51696,23.05.2024,05:00 (bis 23.05.2024) (inaktiv)
 	2::temp 10438,12671 10431,12709 10373,12776
 	2::temp 10733,12967 10695,12933 10525,12789 10515,12780 10431,12709 10542,12587 10601,12521 10644,12469 10685,12422
 	2::temp 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709

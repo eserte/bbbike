@@ -5724,7 +5724,7 @@ Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
 #: note: bei rbb mittlerweile entfernt
 #: osm_watch: way id="1094113747" version="2"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-03-01 (daf)
+#: last_checked: 2024-05-23 (daf)
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 	q4::inwork; 3429,13227 3400,13107
@@ -6885,7 +6885,17 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
          'type' => 'handicap',
          'until' => 1774972800
        },
-       undef,
+       {
+         'data' => '#: next_check_id: ZOSSENB246-2023
+#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024)
+	2::inwork 13526,-20548 13412,-20513 13271,-20531
+',
+         'from' => 1716674400,
+         'id' => 3913,
+         'text' => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 27.05.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1723212000
+       },
        undef,
        undef,
        undef,
@@ -6898,7 +6908,7 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
 	2::inwork 23305,14914 23318,14847 23297,14772
 #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv
 #: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (ex-B,G)
 	q3::inwork 23222,14809 23297,14772 23369,14756
 	q3::inwork 23288,14719 23297,14772
 #: note ^^^
@@ -7083,7 +7093,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        {
          'data' => '#: next_check_id: WANDLITZ-2021
 #: source_id: viz2021:13.524565,52.480535,06.11.2023,07:00 (bis 08.12.2023) (bis 19.12.2023) (bis 21.12.2023) (bis 31.01.2024) (bis 29.02.2024) (bis 15.03.2024) (bis 01.03.2024) (inaktiv)
-#: source_id: viz2021:13.524428,52.480538,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 31.05.2024)
+#: source_id: viz2021:13.524428,52.480538,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 31.05.2024) (bis 24.05.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20231105 (explizite Erwähnung des Radverkehrs)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792780861257155058
 #: by: https://pbs.twimg.com/media/GNyEOMQXwAA2maW?format=png&name=900x900
@@ -7101,9 +7111,9 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 ',
          'from' => 1716308738,
          'id' => 3957,
-         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, bis Ende Mai 2024',
+         'text' => 'Wandlitzstr.: Bauarbeiten zwischen Treskowallee und Wildensteiner Str., Sperrung der Fahrbahn, bis zum 24. Mai 2024',
          'type' => 'handicap',
-         'until' => 1717171200
+         'until' => 1716566400
        },
        undef,
        {
@@ -7494,7 +7504,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'data' => '#       3nocross::ignrte 6499,10086 6504,9961 6504,9865
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
 #: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024) (bis 23.05.2024)
+#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024) (bis 23.05.2024) (inaktiv)
 #: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
@@ -7761,7 +7771,7 @@ Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg
-#: last_checked: 2024-05-19 (webcam)
+#: last_checked: 2024-05-23 (webcam)
 #: check_frequency: 7d
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
@@ -7880,6 +7890,7 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
 #: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
+#: source_id: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten)
 	q4; 14639,11512 14575,11407
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024)
@@ -7900,20 +7911,6 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
          'text' => 'Kuhdammweg - Am Umspannwerk: Bauarbeitem, Sperrung, evtl. sind auch Radfahrer betroffen, 03.04.2023 08:00 Uhr bis 30.06.2024 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1719756000
-       },
-       undef,
-       {
-         'data' => '#: source_id: viz2021:13.387836,52.51696,23.05.2024,05:00 (bis 23.05.2024)
-	2::temp 10438,12671 10431,12709 10373,12776
-	2::temp 10733,12967 10695,12933 10525,12789 10515,12780 10431,12709 10542,12587 10601,12521 10644,12469 10685,12422
-	2::temp 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
-	2::temp 10704,12595 10783,12502
-',
-         'from' => 1716346800,
-         'id' => 4066,
-         'text' => 'Karl-Liebknecht-Str. und Spandauer Str.: Veranstaltung (75 Jahre Grundgesetz), Sperrung, vom 23.05.2024 05:00 bis 23.05.2024 12:00',
-         'type' => 'gesperrt',
-         'until' => 1716458400
        }
      
 );
