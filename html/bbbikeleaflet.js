@@ -281,7 +281,9 @@ var stdGeojsonLayerOptions = {
 			} else if (attribs['temp']) { // should be last, as it is sometimes too unspecific
 			    l = L.marker(centerLatLng, { icon: clockIcon });
 			} else if (cat == '?') {
-			    l = L.marker(centerLatLng, { icon: questionMarkIcon });
+			    if (!symbolDrawingIsSlow()) {
+				l = L.marker(centerLatLng, { icon: questionMarkIcon });
+			    }
 			}
 			if (l) {
 			    currentLayer.addLayer(l); // XXX hacky!!! need a better solution!!!
@@ -1250,6 +1252,10 @@ function adjustHistory() {
 	q = new HTTP.Query;
 	URLchanged = true;
     }
+}
+
+function symbolDrawingIsSlow() {
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }
 
 ////////////////////////////////////////////////////////////////////////
