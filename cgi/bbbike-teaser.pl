@@ -56,7 +56,7 @@ sub teaser {
 				teaser_beta(),
 				#teaser_mapserver(),
 				#teaser_fahrradstadt(),
-				teaser_twitter(),
+				#teaser_twitter(),
 			       ];
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
@@ -74,7 +74,7 @@ sub teaser {
 				teaser_other_cities_tagcloud(),
 				#teaser_beta(), # XXX There's no beta version in English yet!
 				#teaser_mapserver(),
-				teaser_twitter(),
+				#teaser_twitter(),
 			       ];
 
     my $use_lang = $lang eq 'en' ? "en" : "de";
@@ -217,9 +217,8 @@ EOF
 
 sub teaser_twitter {
     my $twitter_url = "http://twitter.com/BBBikeDE/";
-    my $twitter_img = "$bbbike_images/logo_twitter_withbird_60_allblack.png";
     my $teaser;
-    if (0) { # purely textual
+    { # purely textual
 	if ($lang eq 'en') {
 	    $teaser = <<EOF;
 <div class="teaser"><a href="$twitter_url">BBBikeDE @ Twitter</a></div>
@@ -227,16 +226,6 @@ EOF
 	} else {
 	    $teaser = <<EOF;
 <div class="teaser"><a href="$twitter_url">BBBikeDE bei Twitter</a></div>
-EOF
-	}
-    } else { # graphical
-	if ($lang eq 'en') {
-	    $teaser = <<EOF;
-<div class="teaser"><a href="$twitter_url">BBBikeDE @ <img border="0" src="$twitter_img" alt="Twitter"></a></div>
-EOF
-	} else {
-	    $teaser = <<EOF;
-<div class="teaser"><a href="$twitter_url">BBBikeDE bei <img border="0" src="$twitter_img" alt="Twitter"></a></div>
 EOF
 	}
     }
