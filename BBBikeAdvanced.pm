@@ -1313,7 +1313,7 @@ sub _find_coords {
     } else {
 	# OpenStreetMap URL
 	# OpenTopoMap marker URL (e.g. https://opentopomap.org/#marker=16/52.52590/13.36746)
-	# Qwant URL (e.g. https://www.qwant.com/maps#map=15.38/52.5163923/13.3818718)
+	# former Qwant URL (e.g. https://www.qwant.com/maps#map=15.38/52.5163923/13.3818718)
 	while ($s =~ m{(?:map|marker)=\d+(?:\.\d+)?/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)}g) {
 	    my($y,$x) = ($1,$2);
 	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));

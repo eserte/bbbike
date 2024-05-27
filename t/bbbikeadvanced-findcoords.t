@@ -20,7 +20,7 @@ use Karte::Polar;
 # bbbike coordinates
 eq_or_diff [_find_coords("Mittlerer Stern\tHH 1111,2222 3333,4444")], [[1111,2222], [3333,4444]];
 
-# openstreetmap, opentopomap, qwant
+# openstreetmap, opentopomap, former qwant
 eq_or_diff [_find_coords('https://www.openstreetmap.org/#map=19/52.51627/13.37770&layers=N')], [[8600,12254]];
 eq_or_diff [_find_coords('https://opentopomap.org/#marker=16/52.51627/13.37770')], [[8600,12254]];
 eq_or_diff [_find_coords('https://www.qwant.com/maps#map=15.38/52.51627/13.37770')], [[8600,12254]];
