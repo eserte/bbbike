@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.13;
+$VERSION = 2.14;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists);
 
@@ -174,6 +174,12 @@ sub register {
 	      callback_3 => sub { show_fis_broker_menu(@_) },
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
 	    };
+	$main::info_plugins{__PACKAGE__ . '_VIZ'} =
+	    { name => 'VIZ Berlin',
+	      callback => sub { showmap_viz(@_) },
+	      callback_3_std => sub { showmap_url_viz(@_) },
+	      ($images{VIZ} ? (icon => $images{VIZ}) : ()),
+	    };
 	$main::info_plugins{__PACKAGE__ . "_LGB"} =
 	    { name => "LGB Brandenburg Topo DTK10 (via mc)",
 	      callback => sub { showmap_mapcompare(@_, maps => 'lgb-topo-10') },
@@ -186,11 +192,11 @@ sub register {
 	      callback_3 => sub { show_bbviewer_menu(@_) },
 	      ($images{BRB} ? (icon => $images{BRB}) : ()),
 	    };
-	$main::info_plugins{__PACKAGE__ . '_VIZ'} =
-	    { name => 'VIZ Berlin',
-	      callback => sub { showmap_viz(@_) },
-	      callback_3_std => sub { showmap_url_viz(@_) },
-	      ($images{VIZ} ? (icon => $images{VIZ}) : ()),
+	$main::info_plugins{__PACKAGE__ . "_RadverkehrsatlasBRB"} =
+	    { name => "Radverkehrsatlas Brandenburg",
+	      callback => sub { showmap_radverkehrsatlas(@_) },
+	      callback_3_std => sub { showmap_url_radverkehrsatlas(@_) },
+	      ($images{BRB} ? (icon => $images{BRB}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . '_BerlinRadverkehr'} =
 	    { name => 'Radverkehrsnetz Berlin',
@@ -1891,6 +1897,23 @@ sub show_bbviewer_menu {
     my $e = $w->XEvent;
     $link_menu->Post($e->X, $e->Y);
     Tk->break;
+}
+
+######################################################################
+# Radverkehrsatlas
+
+sub showmap_url_radverkehrsatlas {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://radverkehrsatlas.de/regionen/bb-kampagne?v=1&map=%.1f/%s/%s", $scale, $py, $px;
+}
+
+sub showmap_radverkehrsatlas {
+    my(%args) = @_;
+    my $url = showmap_url_radverkehrsatlas(%args);
+    start_browser($url);
 }
 
 ######################################################################
