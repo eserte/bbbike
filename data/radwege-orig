@@ -341,7 +341,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-05-23 vvv
+#: last_checked: 2024-05-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1318,6 +1318,7 @@ Gehweg für Radfahrer frei	RW1; 7733,14570 7960,14794
 	RW3; 7566,14404 7532,14446 7487,14472 7401,14526
 Fahrradschleuse	RW3; 7401,14526 7368,14573
 #: note: Radfahrer haben Richtung Süden zwei Möglichkeiten: auf dem Radweg bleiben und eine zusätzliche Ampel über die Rechtsabbiegespur in Kauf nehmen; oder auf der Fahrbahn bleiben, hier gibt es eine für Radfahrer freigegebene Busspur (und unsinnigerweise in Höhe des Mittelstreifens eine Benutzungspflicht für den Radweg)
+#: note: für Radfahrer aus An der Urania ist es wegen der mehreren Rechtsabbiegerspuren schwer, direkt auf die Martin-Luther-Str. zu gelangen
 Verbundsteinpflaster	RW1; 6532,10529 6494,10440
 	RW2; 6494,10440 6532,10529
 	RW3;RW4 3427,9771 3469,9807
@@ -1958,8 +1959,12 @@ Busspur ist immer gültig	RW5; 7268,8960 7201,8870
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7201,8870 7105,8788 7005,8701 6986,8683 6912,8617 6765,8480 6733,8441 6687,8385
 #: note: Hauptstr. Richtung Mitte
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6687,8385 6733,8441
-#: historical_note: früher (bis Frühjahr 2024): Busspur gilt Mo-Fr 7-18 Uhr
-	RW3; 6733,8441 6765,8480 6912,8617 6986,8683 7005,8701 7105,8788 7201,8870
+#: historical_note: früher (bis Frühjahr 2024): Busspur gilt Mo-Fr 7-18 Uhr vvv
+Poller	RW3; 6733,8441 6765,8480 6912,8617
+Bushaltestelle	RW5; 6912,8617 6986,8683
+	RW3; 6986,8683 7005,8701
+Poller	RW3; 7005,8701 7105,8788 7201,8870
+#: historical_note ^^^
 Busspur ist immer gültig	RW5; 7201,8870 7268,8960
 provisorische asphaltierte Kaphaltestelle	RW1; 7268,8960 7299,9022
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7299,9022 7308,9041 7354,9135 7363,9152 7382,9187 7388,9199 7471,9360
@@ -2785,7 +2790,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-05-27 vvv
+#: last_checked: 2024-05-28 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -7835,7 +7840,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-05-05
+#: last_checked: 2024-05-28
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2024-08-30
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -7843,10 +7848,16 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
-# REMOVED ((noch?) nicht) --- #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv --- #: next_check: 2024-06-09 vvv
-	RW4; 10975,10334 10871,10322
-	RW4; 10871,10322 10975,10334 11117,10326
-# REMOVED --- #: next_check ^^^ --- #: XXX ^^^
+#: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
+#: last_checked: 2024-05-28 vvv
+#: next_check: 2024-06-09 vvv
+#XXX	RW4; 10975,10334 10871,10322
+#XXX	RW4; 10871,10322 10975,10334 11117,10326
+	RW0; 10975,10334 10871,10322
+	RW0; 10871,10322 10975,10334 11117,10326
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
 	RW6;RW6 11715,11522 11767,11662 11821,11733
 neu asphaltiert	RW2;RW2 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813
 # 
@@ -8224,7 +8235,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-05-05 vvv
+#: last_checked: 2024-05-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024)

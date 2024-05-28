@@ -3767,8 +3767,8 @@ Schranke über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5::trail
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
 #: osm_watch: note 4211143 1
 #: also_indoor: traffic (none)
-#: last_checked: 2024-05-21
-#: check_frequency: 21d
+#: last_checked: 2024-05-28
+#: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 # 
@@ -5254,11 +5254,13 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.deutsches-architekturforum.de/thread/11490-hochh%C3%A4user-max-und-moritz-upside-berlin-95-86m-in-bau/?postID=747798#post747798 (Insolvenz)
 #: by: https://www.thomas-daily.de/td-morning-news/1558743-berlin-mikare-gibt-wohnturm-projekt-max-auf/
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
+#: XXX laut daf-Post könnten die Wohngebäude im Sommer 2025 fertig werden
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="5"
 #: osm_watch: note 3748854 1
 #: last_checked: 2024-05-13
 #: check_frequency: 180d
+#: next_check: 2025-09-20
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16 --- #: osm_watch: way id="276821479" version="5" --- #: XXX möglicherweise mittlerweile offen --- #: last_checked: 2023-01-11 --- #: check_frequency: 90d --- #: next_check: 2023-01-22 --- Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310

@@ -5233,7 +5233,7 @@ Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 128
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2024-05-16 vvv
+#: last_checked: 2024-05-23 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5637,7 +5637,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2024-02-04
+#: last_checked: 2024-05-28
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
@@ -5884,7 +5884,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-05-22 (daf)
+#: last_checked: 2024-05-28
 #: check_frequency: 150d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -6145,16 +6145,16 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
-#: osm_watch: note 3631207 6
-#: osm_watch: note 3631209 6
+#: osm_watch[closed]: note 3631207 6
+#: osm_watch[closed]: note 3631209 6
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: last_checked: 2024-01-28 (osm note) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
-#: osm_watch: way id="46907541" version="15"
-#: osm_watch: way id="1116849053" version="3"
+#: osm_watch: way id="46907541" version="16"
+#: osm_watch: way id="1116849053" version="4"
 	2::inwork 4064,2293 4209,2641 4220,2664
-#: osm_watch: way id="77098244" version="17"
+#: osm_watch: way id="77098244" version="19"
 	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6162,7 +6162,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 ',
          'from' => 1697320800,
          'id' => 3727,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg voraussichtlich bis Dezember 2024 gesperrt, kann aber zeitweise (an Wochenenden?) offen sein',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg sollte voraussichtlich bis Dezember 2024 gesperrt sein, ist möglicherweise aber wieder dauerhaft offen',
          'type' => 'gesperrt',
          'until' => 1735664400
        },
@@ -6905,15 +6905,15 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_09_0481_0548_online.pdf (Grundstücksnummerierung)
 #: also_indoor: traffic (ex-G,ex-W)
 #: osm_watch: way id="977478749" version="1"
-#: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3
-#: last_checked: 2024-04-11 (daf)
-# REMOVED --- #: next_check: 2024-03-31
+#: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
+#: last_checked: 2024-05-28
+#: next_check: 2024-07-31
 	q3::inwork 7103,11247 7171,11510
 ',
          'dont_check_date' => 1,
          'from' => 1695746966,
          'id' => 3926,
-         'text' => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende März 2024, evtl. länger',
+         'text' => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Juli 2024, evtl. länger',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7153,11 +7153,11 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
        undef,
        {
          'data' => '#: add_fragezeichen: Existiert die Einbahnstraßenregelung in der Wichmannstraße weiterhin?
-#: note: Halteverbotsschilder bis 31.01.2024, wurden trotz Baustelle nicht verlängert, mittlerweile bis 17.05.2024
+#: note: Halteverbotsschilder bis 31.01.2024, wurden trotz Baustelle nicht verlängert, mittlerweile bis 17.05.2024; wurde nicht verlängert, aber Einbahnstraße noch immer nicht offen für Radfahrer
 #: note: Ein traffic-Watcher lohnt nicht, weil hier für Autos immer eine Einbahnstraßenregelung gilt
 #: osm_watch: way id="150513369" version="16"
-#: last_checked: 2024-04-09
-#: next_check: 2024-05-17
+#: last_checked: 2024-05-28
+# REMOVED --- #: next_check: 2024-05-17
 	q4::inwork; 6549,11015 6681,10959
 ',
          'from' => 1702731104,
@@ -7174,7 +7174,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-04-09
+#: last_checked: 2024-05-28
 #: check_frequency: 60d
 	q4::inwork; 6681,10959 6607,10801
 ',
@@ -7345,10 +7345,10 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'data' => '#: next_check_id: SPREERADWEGIBURGER-2024
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2024-03-04 (daf)
+#: last_checked: 2024-05-27 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-05-31
-	2::inwork 3867,12616 3888,12618 4131,12641
+	2::inwork 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578
 ',
          'from' => 1709576392,
          'id' => 4016,
@@ -7434,7 +7434,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
 #: by[nocache]: https://twitter.com/SaskiaEllenbeck/status/1780312309820235976 (zur Umgestaltung)
-#: last_checked: 2024-05-04 vvv
+#: last_checked: 2024-05-28 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
 #: next_check: 2024-06-06 vvv
@@ -7449,8 +7449,8 @@ Winterfeldtstr. -> Winterfeldtstr.	3::inwork 6630,9990 6504,9961 6366,9926
 Winterfeldtstr. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6630,9990 6504,9961 6518,9867
 Martin-Luther-Str.: linker Gehweg -> Martin-Luther-Str.	3::inwork 6518,9867 6504,9961 6504,9865
 Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,9961 6366,9926
-# REMOVED Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 6504,9961 6630,9990
-Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 6504,9961 6366,9926
+# REMOVED --- Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 6504,9961 6630,9990
+# REMOVED (heute war hier schon offen) --- Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 6504,9961 6366,9926
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
@@ -7869,6 +7869,24 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
          'text' => 'Kleine Waldstr. - Waldstr.: während der Bauarbeiten zur neuen A117-Anschlussstelle vermutlich gesperrt, voraussichtlich ab 3. Juni 2024 bis Juni 2025',
          'type' => 'gesperrt',
          'until' => 1748901600
+       },
+       {
+         'data' => '#: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-auf-der-sonnenallee-strassensperrung-id253457
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1795325596953624776
+#: by[nocache]: https://x.com/BerlinNkl/status/1795429185839940060
+#: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
+#: last_checked: 2024-05-28 (Verkehrsmeldungen) vvv
+#: check_frequency: 3d vvv
+Braunschweiger Str.: vermutete Vollsperrung	2::inwork 13858,7617 13919,7707
+Sonnenallee (linker Gehweg könnte benutzt werden)	q4::inwork; 13919,7707 14015,7631
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 4069,
+         'text' => 'Sonnenallee/Braunschweiger Str.: mögliche Einschränkungen wegen eines Wasserrohrbruchs',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

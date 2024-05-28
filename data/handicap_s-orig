@@ -42,7 +42,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024) (bis 24.05.2024) (inaktiv)
-#: last_checked: 2024-05-27
+#: last_checked: 2024-05-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-05-24
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -611,7 +611,7 @@ Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::i
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2024-04-13 vvv
+#: last_checked: 2024-05-28 vvv
 #: next_check: 2024-05-31 vvv
 #: valid: -20240531 vvv
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294
@@ -1018,9 +1018,9 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 #: XXX Hohenstaufenstraße (Schöneberg) in beiden Richtungen im Kreuzungsbereich Eisenacher Straße: Leitungsarbeiten, eine Baustellenampel regelt den Verkehr, vom 28.03.2024 07:00 bis 29.05.2024 17:00
 #: source_id: viz2021:13.349791,52.494637,28.03.2024,07:00 (bis 29.05.2024)
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-04-03
+#: last_checked: 2024-05-28
 #: next_check: 2024-05-29
-#: valid: -20240529
+# REMOVED --- #: valid: -20240529
 Eisenacher Str.: Bauarbeiten Höhe Hohenstaufenstr., Engstellen	q2::inwork 6747,9912 6753,9814 6743,9678
 # 
 # REMOVED (laut osm note+osm wurde die Sperrung aufgehoben) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/microappartments-rembrandtstra%C3%9Fe-20%E2%80%9321-neubau-rubensstra%C3%9Fe.1261/#post-19867 --- #: osm_watch: way id="1146544138" version="6" --- #: osm_watch: way id="1145470730" version="4" --- #: note: Länge der Engstelle etwa 40m --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-01-13 --- #: check_frequency: 120d --- #: next_check: 2023-12-31 --- Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
@@ -2002,7 +2002,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/ (1. Quartal 2026: Einreichung der Planfeststellungsunterlagen) (2. Quartal 2029 - 3. Quartal 2031) (3. Quartal 2030 - 4. Quartal 2032)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
-#: osm_watch: way id="77098244" version="17"
+#: osm_watch: way id="77098244" version="19"
 #: last_checked: 2023-11-04
 #: check_frequency: 360d
 #: next_check: 2026-03-31
@@ -3459,7 +3459,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-05-21
+#: last_checked: 2024-05-28
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4852,7 +4852,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
-#: last_checked: 2024-05-21
+#: last_checked: 2024-05-28
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
