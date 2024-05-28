@@ -20,9 +20,9 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.14;
+$VERSION = 2.15;
 
-use BBBikeUtil qw(bbbike_aux_dir module_exists);
+use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
 use vars qw(%images);
 
@@ -247,6 +247,11 @@ sub register {
 	  callback => sub { showmap_streckeninfo(@_) },
 	  callback_3_std => sub { showmap_url_streckeninfo(@_) },
 	  ($images{DB} ? (icon => $images{DB}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . 'travic'} =
+	{ name => 'travic',
+	  callback => sub { showmap_travic(@_) },
+	  callback_3_std => sub { showmap_url_travic(@_) },
 	};
     if ($is_berlin) {
 	$main::info_plugins{__PACKAGE__ . '_HierBautBerlin'} =
@@ -1917,6 +1922,22 @@ sub showmap_radverkehrsatlas {
 }
 
 ######################################################################
+# travic
+
+sub showmap_url_travic {
+    my(%args) = @_;
+    my($x, $y) = _wgs84_to_pseudo_mercator($args{px}, $args{py});
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://travic.app/?z=%d&x=%.1f&y=%.1f", $scale, $x, $y;
+}
+
+sub showmap_travic {
+    my(%args) = @_;
+    my $url = showmap_url_travic(%args);
+    start_browser($url);
+}
+
+######################################################################
 
 sub show_all_traffic_maps {
     my(%args) = @_;
@@ -2000,6 +2021,22 @@ sub _wgs84_to_utm_ze {
     require Karte::UTM;
     my($utm_ze, $utm_zn, $utm_x, $utm_y) = Karte::UTM::DegreesToUTM($y, $x, "WGS 84", ze => $ze);
     ($utm_x,$utm_y);
+}
+
+# target is EPSG:3857
+sub _wgs84_to_pseudo_mercator {
+    my($lon,$lat) = @_;
+
+    # Earth's radius in meters (WGS84)
+    my $R = 6378137;
+    
+    my $lambda_rad = deg2rad($lon);
+    my $phi_rad = deg2rad($lat);
+
+    my $x = $R * $lambda_rad;
+    my $y = $R * log(Math::Trig::tan(Math::Trig::pi() / 4.0 + $phi_rad / 2.0));
+
+    ($x, $y);
 }
 
 ######################################################################
