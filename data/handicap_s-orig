@@ -10,6 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
+#: osm_watch: way id="482690912" version="6"
 #: add_fragezeichen: Gibt es die Engstellen weiterhin?
 #: last_checked: 2024-05-27
 #: check_frequency: 90d
@@ -274,10 +275,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="32"
+#: osm_watch: way id="549316654" version="33"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2024-05-10 (osm)
+#: last_checked: 2024-05-28 (osm)
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -357,7 +358,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-05-12 (webcam)
+#: last_checked: 2024-05-29 (webcam)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -611,7 +612,7 @@ Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::i
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2024-05-28 vvv
+#: last_checked: 2024-05-29 vvv
 #: next_check: 2024-05-31 vvv
 #: valid: -20240531 vvv
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294
@@ -799,7 +800,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2024-05-18
+#: last_checked: 2024-05-29
 #: check_frequency: 90d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
@@ -807,11 +808,11 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
-#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024)
+#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
 #: osm_watch: way id="640465875" version="13"
 #: last_checked: 2024-03-13
 #: check_frequency: 120d
-#: next_check: 2024-07-01
+#: next_check: 2025-04-30
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 # 
 # REMOVED (durch andere Sperrung ersetzt) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-01022022/ --- #: by: https://twitter.com/VIZ_Berlin/status/1488418565413871617 (verschoben) --- #: by: https://www.kms-sonne.de/baustellennews --- #: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf --- #: by: https://berliner-abendblatt.de/2022/02/04/sperrung-flughafenstrasse/ --- #: by: https://twitter.com/VIZ_Berlin/status/1491648121176145925 (Sperrung ab 10.2.2022) --- #: XXX Flughafenstraße (Neukölln) Richtung Hermannstraße zwischen Karl-Marx-Straße und Isarstraße: Umbau Karl-Marx-Straße, Fahrtrichtung gesperrt, vom 01.02.2022 08:00 bis 31.07.2022 17:00, mittlerweile bis 01.09.2022 --- #: XXX Am 1.2.2022 wurde der VIZ-Eintrag wieder entfernt, ohne dass was passiert ist. --- #: source_id: viz2021:13.432818,52.481758,01.02.2022,08:00 (inaktiv) --- #: source_id: viz2021:13.43372,52.4819,11.10.2022,15:00 (bis 31.10.2023) (inaktiv) --- #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert) (bis 6.10.2022) (bis 11.10.2022) (bis 31.10.2023) (bis 4.10.2023) --- #: osm_watch: way id="137623800" version="31" --- #: osm_watch: way id="625667165" version="22" --- #: also_indoor: traffic (G[falsch],B,H) --- #: priority: #B --- #: last_checked: 2023-09-15 --- #: check_frequency: 90d --- #: next_check: 2023-10-04 --- #: valid: -20231004 --- Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
@@ -1015,12 +1016,12 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 # 
 ### Schöneberg ###
 # 
-#: XXX Hohenstaufenstraße (Schöneberg) in beiden Richtungen im Kreuzungsbereich Eisenacher Straße: Leitungsarbeiten, eine Baustellenampel regelt den Verkehr, vom 28.03.2024 07:00 bis 29.05.2024 17:00
-#: source_id: viz2021:13.349791,52.494637,28.03.2024,07:00 (bis 29.05.2024)
+#: XXX Hohenstaufenstraße (Schöneberg) in beiden Richtungen im Kreuzungsbereich Eisenacher Straße: Leitungsarbeiten, eine Baustellenampel regelt den Verkehr, vom 28.03.2024 07:00 bis 29.05.2024 17:00 --- verlängert
+#: source_id: viz2021:13.349791,52.494637,28.03.2024,07:00 (bis 29.05.2024) (bis 14.06.2024)
 #: also_indoor: traffic (G,B)
 #: last_checked: 2024-05-28
-#: next_check: 2024-05-29
-# REMOVED --- #: valid: -20240529
+#: next_check: 2024-06-14
+# REMOVED --- #: valid: -20240614
 Eisenacher Str.: Bauarbeiten Höhe Hohenstaufenstr., Engstellen	q2::inwork 6747,9912 6753,9814 6743,9678
 # 
 # REMOVED (laut osm note+osm wurde die Sperrung aufgehoben) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/microappartments-rembrandtstra%C3%9Fe-20%E2%80%9321-neubau-rubensstra%C3%9Fe.1261/#post-19867 --- #: osm_watch: way id="1146544138" version="6" --- #: osm_watch: way id="1145470730" version="4" --- #: note: Länge der Engstelle etwa 40m --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-01-13 --- #: check_frequency: 120d --- #: next_check: 2023-12-31 --- Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
@@ -1736,7 +1737,7 @@ Am Rummelsburger See: Fußgänger an schönen Tagen	q2+ 16120,9653 16182,9591 16268
 # REMOVED (hier eigentlich Service-Straße) --- Am Rummelsburger See: Fußgänger an schönen Tagen	q1 16268,9670 16347,9594
 # REMOVED (ist jetzt breiter) --- Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20939,2413 20904,2426 20810,2398
 # REMOVED (nun komplett gesperrt) --- Vorfahrt Reichstagsgebäude: Fußgänger	q4 8400,12417 8399,12616
-Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3710,1317 3635,1215 3424,1052 3381,1022 3366,1007
+Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3710,1317 3635,1215 3419,1049 3381,1022 3366,1007
 #: XXX_prog BS (es gibt an beiden Seiten Bordsteine sowie eine zusätzliche Stufe im südlichen Bereich, ansonsten wäre es wohl q2)
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 # REMOVED (separater Radweg existiert) --- Fregestr. zur Feuerbachstr.: Gehweg, Fußgänger	q2 5622,6400 5582,6360
@@ -2112,7 +2113,7 @@ Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fußgänger	q1 12052,6660 12059,6642 12092,6616 12155,6526
 #: XXX_prog BS (Bordstein am Mariendorfer Weg, ansonsten mit dem anderen Fußgänger-Eintrag verknüpfen)
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
-Mauerweg: einige Fußgänger	q1 12984,1011 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11794,550 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: einige Fußgänger	q1 12984,1011 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fußgänger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -4956,6 +4957,8 @@ Karl-Schmidt-Rottluff-Weg: einige Fußgänger, Bordsteine	q2 1787,3905 1781,3807 1
 # 
 Anna- und Hermann-Muthesius-Steig: einige Fußgänger, Bäume auf dem Weg	q2 -3126,1798 -3087,1734
 # 
+Delmer Steig: einige Fußgänger	q2 11895,1489 11865,1564
+# 
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -6540,9 +6543,12 @@ Semmelweg: einige Fußgänger	q1 1218,18751 1101,18611 915,18352 766,18083 492,178
 #: corrected_by: srt/policy (q1 -> q0-)
 Langenbeckplatz: enge Straße	q0- 25030,9626 25095,9627 25084,9743 25018,9735 25030,9626
 # 
-#: by: Klaus Didrich
-#: corrected_by: srt/policy (q4 -> q3)
-(Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q3 4279,459 4218,439 4158,461 4136,505
+#: by: Klaus Didrich vvv
+#: corrected_by: srt (q4 -> ..., hier Rampe)
+(Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q2 4279,459 4218,439
+#: corrected_by: srt (q4 -> ..., Treppe/Aufzug nur zu einer Seite)
+(Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q3 4218,439 4147,465 4137,468
+#: by ^^^
 # 
 #: by: Bertil Schwotzer vvv
 #: corrected_by: srt/policy (q2 -> q0-)
@@ -6632,7 +6638,7 @@ Grünrockweg: Fußgängerzone, Radfahrer frei	q1 7377,18498 7269,18460
 Kollostr.: enge Straße	q0- 9668,4403 9677,4518 9695,4638
 # 
 #: by: Niels (nathelbiya):
-(Mauerweg - Töpchiner Weg): einige Fußgänger	q1 11794,550 11672,554 11596,583
+(Mauerweg - Töpchiner Weg): einige Fußgänger	q1 11802,554 11672,554 11596,583
 # 
 #: by: Bernhard Husch: vvv
 #: confirmed_by: srt vvv

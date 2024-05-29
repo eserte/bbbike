@@ -398,7 +398,7 @@ Am Rummelsburger See: Fußgänger, kurvenreich	q1 14892,10411 14864,10451 14861,10
 Am Rummelsburger See: teilweise enge Kurven, Fußgänger an schönen Tagen	q2 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Fußgänger an schönen Tagen	q1 15931,9846 16002,9787 16049,9749 16119,9689 16125,9678 16120,9653
 Am Rummelsburger See: Fußgänger an schönen Tagen	q2 16120,9653 16182,9591 16268,9670
-Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3710,1317 3635,1215 3424,1052 3381,1022 3366,1007
+Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3710,1317 3635,1215 3419,1049 3381,1022 3366,1007
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 Weisestr.: Bordsteine	q3 11767,8330 11770,8292
 Helgoländer Ufer - Stromstr.: Fußgänger, Café	q3 6551,12901 6535,12934 6443,12952 6271,12985
@@ -642,7 +642,7 @@ Oberlandgarten: Fußgänger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fußgänger	q1 12052,6660 12059,6642 12092,6616 12155,6526
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
-Mauerweg: einige Fußgänger	q1 12984,1011 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11794,550 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: einige Fußgänger	q1 12984,1011 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fußgänger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -2563,6 +2563,7 @@ Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 Borkumstr.: Schulgelände	q2 11335,17807 11412,17823
 Karl-Schmidt-Rottluff-Weg: einige Fußgänger, Bordsteine	q2 1787,3905 1781,3807 1796,3765 1817,3732 1868,3626
 Anna- und Hermann-Muthesius-Steig: einige Fußgänger, Bäume auf dem Weg	q2 -3126,1798 -3087,1734
+Delmer Steig: einige Fußgänger	q2 11895,1489 11865,1564
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3230,7 +3231,8 @@ Kissingenplatz: Bordsteine	q4 11405,17985 11390,17962
 Ruben-Wolf-Str.: einige Fußgänger	q1 19906,217 19865,263 19785,360
 Semmelweg: einige Fußgänger	q1 1218,18751 1101,18611 915,18352 766,18083 492,17831 396,17648 240,17524
 Langenbeckplatz: enge Straße	q0 25030,9626 25095,9627 25084,9743 25018,9735 25030,9626
-(Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q3 4279,459 4218,439 4158,461 4136,505
+(Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q2 4279,459 4218,439
+(Réaumurstr. - Fürstenstr., S-Bahnunterführung): Fußgänger	q3 4218,439 4147,465 4137,468
 Beerbaumstr.: enge Straße	q0 15689,24045 15723,24060 15755,24039 15843,23980 15906,24088
 (Beerbaumstr. - Karower Chaussee): schmal	q2 15906,24088 15940,24142
 Ossietzkyplatz: Parkplatz	q4 10257,19542 10215,19532 10228,19480
@@ -3262,7 +3264,7 @@ Walliser Str.: Fußweg	q1 6921,18560 6924,18599
 Nordische Str.: enge Straße	q1 15126,21799 15209,21985
 Grünrockweg: Fußgängerzone, Radfahrer frei	q1 7377,18498 7269,18460
 Kollostr.: enge Straße	q0 9668,4403 9677,4518 9695,4638
-(Mauerweg - Töpchiner Weg): einige Fußgänger	q1 11794,550 11672,554 11596,583
+(Mauerweg - Töpchiner Weg): einige Fußgänger	q1 11802,554 11672,554 11596,583
 (Marienfelder Allee - Hildburghauser Str., Grünzug): Fußgänger	q1 7501,83 7457,101 7444,118 7398,131 7302,186 7290,206 7256,219 7234,237
 (Marienfelder Allee - Hildburghauser Str., Grünzug): Fußgänger	q1 7234,237 7216,250 7135,350 7107,397 7083,415 7063,444 7055,498 7021,557 7016,655 7019,694 7023,772 7056,835 7058,844
 Janischweg: enge Straße	q1 537,14919 481,15088 473,15169 453,15173 431,15230 429,15284

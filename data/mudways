@@ -121,18 +121,22 @@ Am Betriebsbahnhof Schöneweide: unbefestigt, mit vielen kleinen Kuhlen	X 18160,4
 # 
 #: mud: 2020-03-14: keine Beeinträchtigungen	h=q0
 #: mud: 2023-12-26: einige Pfützen	h=q2
+#: mud: 2024-05-29: einige Pfützen	h=q2+
 Stadtpark Stegltz: etwas älterer Parkweg	X 5890,4674 5841,4557 5836,4469 5787,4400
 # 
 #: mud: 2024-02-07: einige große Pfützen, matschige Stellen	h=q3
+#: mud: 2024-05-29: einige große Pfützen	h=q2
 #: note: mittlerweile hat sich eine etwas breitere Spur neben dem eigentlichen Weg gebildet, die sowohl von Fußgängern als auch Radfahrern genutzt wird, sofern der Platz da ist
 Weverpromenade: wassergebundene Decke	X 5787,4400 5738,4361 5541,4305
 # 
 #: mud: 2020-03-14: keine Beeinträchtigungen	h=q0
 #: mud: 2023-12-26: einige feuchtere Stellen	h=q1-
+#: mud: 2024-05-29: einige größere Pfützen	h=q2
 Paul-Schwarz-Promenade: Parkweg	X 5018,3810 4947,3672 4910,3599 4822,3431
 # 
 #: mud: 2020-03-14: etwas feuchtere Oberfläche, aber keine Beeinträchtigungen	h=q0-,wet
 #: mud: 2023-12-26: etwas feuchtere Oberfläche, aber keine Beeinträchtigungen	h=q0-,wet
+#: mud: 2024-05-29: keine Beeinträchtigungen	h=q0
 Parkweg Schloßpark Lichterfelde: Parkweg	X 4910,3599 4858,3613 4815,3615 4754,3651 4723,3681 4694,3702 4657,3711 4617,3706 4611,3705 4603,3704
 # 
 #: mud: 2020-03-15: keine Beeinträchtigungen	h=q0
@@ -389,9 +393,11 @@ Tiergarten, Bellevueallee - Floraplatz: Parkweg	X 8016,11770 8020,11937 8022,120
 (Parkweg entlang der Tiergartenstr.): Parkweg	X 7713,11553 7621,11541 7463,11538 7359,11538 7220,11542 7111,11524 7080,11508 6966,11490 6844,11496 6826,11479
 # 
 #: mud: 2021-02-20: sehr matschig
+#: mud: 2024-05-29: einige matschige Stellen	h=q3,wet
 (Jenbacher Weg - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	X 6233,412 6256,363
 # 
 #: mud: 2023-04-11: matschige Stellen	h=q3,wet
+#: mud: 2024-05-29: einige matschige Stellen	h=q3,wet
 (Stanzer Zeile - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	X 6175,372 6204,331
 # 
 #: mud: 2021-02-20: sehr matschig
@@ -566,12 +572,15 @@ Uferweg am Paul-Lincke-Ufer, östlich Hobrechtbrücke	X 12116,9825 12165,9786 1228
 (Görlitzer Park, zur Forster Str.): wassergebundene Decke	X 12670,10160 12592,10112 12564,10121
 # 
 #: mud: 2022-02-05: einige leicht matschige Stellen	h=q1-,wet
+#: mud: 2024-05-29: trocken	h=q0
 (Stadtpark Steglitz): wassergebundene Decke, etwas Schotter	X 5797,4846 5806,4840 5852,4814 5885,4813 5947,4791 6022,4746 6026,4744
 # 
 #: mud: 2022-02-05: mäßig matschig	h=q2-,wet
+#: mud: 2024-05-29: einige umfahrbare Pfützen	h=q1,wet
 Teltowkanal: Parkweg, OK	X 4209,2641 4064,2293 3980,2102 3821,1725
 # 
 #: mud: 2022-02-05: mäßig matschig	h=q2-,wet
+#: mud: 2024-05-29: einige matschige Stellen unter der Brücke	h=q2,wet
 Unterführung Emil-Schulz-Brücke: unbefestigt, Schotter	X 4274,2717 4272,2704 4247,2652 4209,2641
 # 
 #: mud: 2022-04-24: leicht bis mäßig sandig, die meisten Stellen umfahrbar	h=q2-,dry
@@ -611,13 +620,17 @@ Orankestrand: unbefestigter Weg	X 15731,16208 15664,16115 15592,16069 15479,1606
 #: mud: 2023-02-25: zahlreiche Pfützen	h=q3,wet	by=mapillary
 #: mud: 2023-05-13: keine Beeinträchtigungen	h=q0
 #: mud: 2024-05-18: keine Beeinträchtigungen	h=q0
+#: mud: 2024-05-29: einige Pfützen	h=q2,wet
 (Mauerweg - Gerlinger Str.): wassergebundene Decke	X 11928,588 12016,781 11997,874
 # 
 #: mud: 2023-02-25: zahlreiche Pfützen	h=q3,wet	by=mapillary
 #: mud: 2023-05-13: keine Beeinträchtigungen	h=q0
 #: mud: 2023-11-18: einige Pfützen und matschige Stellen	h=q2,wet
 #: mud: 2024-05-18: leicht sandig	h=q1+,dry
-Mauerweg: wassergebundene Decke	X 11596,583 11672,554 11794,550 11928,588 11956,599
+Mauerweg: wassergebundene Decke	X 11596,583 11672,554 11802,554 11928,588 11956,599
+# 
+#: mud: 2024-05-29: einige Pfützen	h=q2,wet
+(Drusenheimer Weg - Mauerweg): wassergebundene Decke	X 11804,617 11802,554
 # 
 #: mud: 2023-11-18: matschige Stellen	h=q3,wet
 Stuthirtenweg: unbefestigter holpriger Weg	X 13040,1021 13113,1046 13181,1082

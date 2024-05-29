@@ -71,6 +71,8 @@ Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	
 # 
 #: by: https://www.howoge.de/schulbau/allee-der-kosmonauten-projektuebersicht.html
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/lichtenberg-baut-schulen-und-sporthallen_a408641 (Eröffnung der Schule zum Schuljahr 2024/25)
+#: by: https://www.deutsches-architekturforum.de/thread/11104-neubauprojekte-in-marzahn-hellersdorf/?postID=761767#post761767
+#: by: https://entwicklungsstadt.de/lichtenberg-berlins-groesster-schulneubau-abgeschlossen/
 #: XXX evtl. wurde die Ampel wegen der Hochbauarbeiten (Schule) eingerichtet
 #: osm_watch: way id="29432246" version="24"
 #: osm_watch: note 3707299 9
@@ -2487,6 +2489,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3612,12377
 	X 4572,7936
 	X 15077,11910
+#: note: Rechtsabbiegeampel für Radfahrer von Norden, ist (immer? manchmal?) mit der Ampel an der Belziger Str. gekoppelt
 	X 6454,8653
 #: off: night (seen 2013-08-25 23:30)
 	X 14652,10201
@@ -2687,13 +2690,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-05-18
+#: last_checked: 2024-05-29
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50)
-#: last_checked: 2024-05-18
+#: last_checked: 2024-05-29
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

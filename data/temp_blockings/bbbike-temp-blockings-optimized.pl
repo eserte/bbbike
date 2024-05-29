@@ -4393,7 +4393,25 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
+#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
+#: source_id: 2147345598 (inaktiv)
+# REMOVED (hier nicht) --- #: last_checked: 2020-05-01 (Radfahrer dürfen hier noch fahren) ---	q4::inwork 6009,5691 6007,5785
+# REMOVED (hier wohl nicht) ---	q4::inwork 5993,5422 6009,5691
+#: osm_watch: note 4060014 2
+#: also_indoor: traffic (G)
+#: note: hier etwa 120m der Fahrbahn gesperrt (eigentlich q4+::inwork)
+#: add_fragezeichen: Sind die Bauarbeiten in der Lauenburger Str. beendet?
+#: last_checked: 2024-05-29
+	q4::inwork 6009,5691 5993,5422
+',
+         'from' => 1587765600,
+         'id' => 3211,
+         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Bergstr., Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -5139,7 +5157,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?)
 #: note: Halteverbotsschilder mittlerweile bis 07.06.2024
 #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv
-#: last_checked: 2024-05-18 vvv
+#: last_checked: 2024-05-29 vvv
 #: next_check: 2024-06-07 vvv
 Jahnstr.	q4::inwork; 12833,6127 13027,6168
 Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127
@@ -5233,7 +5251,7 @@ Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 128
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2024-05-23 (architektur-urbanistik) vvv
+#: last_checked: 2024-05-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5660,7 +5678,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2024-05-18 vvv
+#: last_checked: 2024-05-29 vvv
 #: next_check: 2024-05-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
@@ -5903,7 +5921,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2024-05-01
+#: last_checked: 2024-05-29
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -6148,12 +6166,12 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch[closed]: note 3631207 6
 #: osm_watch[closed]: note 3631209 6
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
-#: last_checked: 2024-01-28 (osm note) vvv
+#: last_checked: 2024-05-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: osm_watch: way id="46907541" version="16"
 #: osm_watch: way id="1116849053" version="4"
-	2::inwork 4064,2293 4209,2641 4220,2664
+	2::inwork 3980,2102 4064,2293 4209,2641 4220,2664
 #: osm_watch: way id="77098244" version="19"
 	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
 #: next_check ^^^
@@ -6162,7 +6180,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 ',
          'from' => 1697320800,
          'id' => 3727,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg sollte voraussichtlich bis Dezember 2024 gesperrt sein, ist möglicherweise aber wieder dauerhaft offen',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann bis Dezember 2024 gesperrt sein (Stand Ende Mai 2024: Weg ist offen)',
          'type' => 'gesperrt',
          'until' => 1735664400
        },
@@ -6983,7 +7001,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-05-17 vvv
+#: last_checked: 2024-05-28 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -6992,11 +7010,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031
-#: osm_watch: way id="389101374" version="18"
+#: osm_watch: way id="389101374" version="19"
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
-#: osm_watch: way id="1149365724" version="5"
-#: osm_watch: way id="1149365723" version="5"
+#: osm_watch: way id="1149365724" version="6"
+#: osm_watch: way id="1149365723" version="6"
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: next_check ^^^
@@ -7546,7 +7564,8 @@ Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,99
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024)
+         'data' => '#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
+#: source_id: bvg2024:m43#HIM_FREETEXT_224595 (30.05.2024 bis 31.08.2024)
 # REMOVED --- #: add_fragezeichen: Gibt es hier überhaupt eine Sperrung?
 #: by: https://www.kms-sonne.de/baustellennews?date=20240416 (voraussichtlich ab Ende April 2024 bis April 2025) (mittlerweile Beginn auf Ende Mai 2024 verschoben)
 #: by: https://www.kms-sonne.de/assets/2024/04/Baustellenuebersicht-A4-04-2024-v3-Web.pdf
@@ -7560,9 +7579,9 @@ Anzengruberstr.: Einbahnstraßenregelung	q4::inwork; 12856,8344 12689,8289
 #: next_check ^^^
 #: last_checked ^^^
 ',
-         'from' => 1717106400,
+         'from' => 1717020000,
          'id' => 4040,
-         'text' => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen; außerdem Einbahnstraßenregelung in der Anzengruberstr.; möglicherweise ab Ende Mai 2024 bis April 2025',
+         'text' => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen; außerdem Einbahnstraßenregelung in der Anzengruberstr.; voraussichtlich ab Ende Mai 2024 bis April 2025',
          'type' => 'handicap',
          'until' => 1746028800
        },
@@ -7672,7 +7691,7 @@ Anzengruberstr.: Einbahnstraßenregelung	q4::inwork; 12856,8344 12689,8289
          'data' => '#: also_indoor: traffic (G[falsch?],B)
 #: note: nur Umleitungsschilder für Radfahrer gesehen
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-05-05
+#: last_checked: 2024-05-29
 	q4::inwork 5466,5523 5555,5508 5676,5488
 ',
          'from' => undef,
@@ -7697,7 +7716,7 @@ Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg
-#: last_checked: 2024-05-23 (webcam)
+#: last_checked: 2024-05-29 (webcam)
 #: check_frequency: 7d
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
@@ -7804,6 +7823,7 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
        undef,
        {
          'data' => '#: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
+#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
 #: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
 	q4::inwork; 11239,18832 11001,18528
@@ -7875,10 +7895,11 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1795325596953624776
 #: by[nocache]: https://x.com/BerlinNkl/status/1795429185839940060
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
-#: last_checked: 2024-05-28 (Verkehrsmeldungen) vvv
+#: also_indoor: traffic (G,B,W)
+#: last_checked: 2024-05-29 vvv
 #: check_frequency: 3d vvv
-Braunschweiger Str.: vermutete Vollsperrung	2::inwork 13858,7617 13919,7707
-Sonnenallee (linker Gehweg könnte benutzt werden)	q4::inwork; 13919,7707 14015,7631
+Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
+Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -7887,6 +7908,17 @@ Sonnenallee (linker Gehweg könnte benutzt werden)	q4::inwork; 13919,7707 14015,7
          'text' => 'Sonnenallee/Braunschweiger Str.: mögliche Einschränkungen wegen eines Wasserrohrbruchs',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1451042.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/up_onkel-tom-strasse.jpg
+	2::inwork -138,6681 -150,6168 -119,5885 40,5606 67,5404
+',
+         'from' => 1717884000,
+         'id' => 4070,
+         'text' => 'Onkel-Tom-Str.: Bauarbeiten zwischen Fenngraben und Hüttenweg, Sperrung der Straße, vom 10.06.2024 bis 22.06.2024',
+         'type' => 'gesperrt',
+         'until' => 1719093600
        }
      
 );

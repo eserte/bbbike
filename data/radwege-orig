@@ -100,7 +100,7 @@ neu asphaltiert	RW1; 10198,9405 10564,9292
 Zeichen 237 gegenüber der Polizeiausfahrt nur senkrecht zur Fahrtrichtung einsehbar	RW1; 10209,8661 10269,8770 10291,8810
 	RW1;RW0 10291,8810 10481,8814 10675,8940
 # REMOVED (im südlichen Abschnitt der Großbeerenstr. wohl nicht) --- #: XXX Grünbeschichtung vorgesehen vvv --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (2018/2019) --- #: by: https://www.infravelo.de/projekt/grossbeerenstrasse/ (1. Halbjahr 2019) --- #: priority: #D vvv --- #: last_checked: 2019-05-08 vvv --- #: check_frequency: 7d vvv
-	RW3;RW3 8970,9323 9000,9509 9047,9750
+	RW3;RW3 8970,9323 9000,9509 9032,9673
 Grünbeschichtung	RW3; 9047,9750 9078,9916 9111,10090 9146,10284
 Grünbeschichtung	RW3; 9146,10284 9111,10090 9078,9916 9047,9750
 	RW1;RW1 8769,9295 8774,9534 8777,9601
@@ -1287,7 +1287,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-05-27 vvv
+#: last_checked: 2024-05-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1952,22 +1952,25 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 geschützter Radstreifen	RW4; 5363,8024 5472,8024 5522,8024 5570,8024
 	RW3; 5570,8024 5632,8024
 # 
-# REMOVED (zumindest an der Kolonnenstr. ist nichts mehr) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/bauarbeiten-auf-der-hauptstrasse_a310431 (Länge der Baustelle 300m, Dauer ein halbes Jahr, kein Startdatum) --- #: source_id: 2147347198 (Markierungsarbeiten bis 20.5.2021) (inaktiv) --- #: source_id: 2147347199 (bis 31.1.2022) --- #: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 31.1.2022) (mittlerweile bis 17.2.2022) (mittlerweile bis 1.4.2022) --- #: last_checked: 2021-09-05 --- #: next_check: 2022-02-17 --- #: XXX Hauptstr.: Bauarbeiten der Wasserbetriebe, die östliche Fahrbahn ist gesperrt --- temporäre Radspuren	RW4;RW4 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7299,9022 7268,8960
+# REMOVED (zumindest an der Kolonnenstr. ist nichts mehr) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/bauarbeiten-auf-der-hauptstrasse_a310431 (Länge der Baustelle 300m, Dauer ein halbes Jahr, kein Startdatum) --- #: source_id: 2147347198 (Markierungsarbeiten bis 20.5.2021) (inaktiv) --- #: source_id: 2147347199 (bis 31.1.2022) --- #: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 31.1.2022) (mittlerweile bis 17.2.2022) (mittlerweile bis 1.4.2022) --- #: last_checked: 2021-09-05 --- #: next_check: 2022-02-17 --- #: XXX Hauptstr.: Bauarbeiten der Wasserbetriebe, die östliche Fahrbahn ist gesperrt --- temporäre Radspuren	RW4;RW4 7471,9360 7430,9281 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7299,9022 7268,8960
 #: note: Hauptstr. Richtung Steglitz
-Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7299,9022 7268,8960
+Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7471,9360 7430,9281 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7299,9022 7268,8960
 Busspur ist immer gültig	RW5; 7268,8960 7201,8870
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7201,8870 7105,8788 7005,8701 6986,8683 6912,8617 6765,8480 6733,8441 6687,8385
 #: note: Hauptstr. Richtung Mitte
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6687,8385 6733,8441
 #: historical_note: früher (bis Frühjahr 2024): Busspur gilt Mo-Fr 7-18 Uhr vvv
-Poller	RW3; 6733,8441 6765,8480 6912,8617
+Leitboys	RW3; 6733,8441 6765,8480 6912,8617
 Bushaltestelle	RW5; 6912,8617 6986,8683
 	RW3; 6986,8683 7005,8701
-Poller	RW3; 7005,8701 7105,8788 7201,8870
+Leitboys	RW3; 7005,8701 7105,8788 7201,8870
 #: historical_note ^^^
 Busspur ist immer gültig	RW5; 7201,8870 7268,8960
+#: historical_note: früher (bis Frühjahr 2024): Busspur gilt Mo-Fr 7-18 Uhr vvv
 provisorische asphaltierte Kaphaltestelle	RW1; 7268,8960 7299,9022
-Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7299,9022 7308,9041 7354,9135 7363,9152 7382,9187 7388,9199 7471,9360
+Leitboys	RW3; 7299,9022 7308,9041 7354,9135 7363,9152 7382,9187 7388,9199 7430,9281
+Busspur ist immer gültig	RW5; 7430,9281 7471,9360
+#: historical_note ^^^
 # 
 #: note: Haltestellenbereich
 Busspur ist immer gültig	RW5; 6532,10529 6602,10504
@@ -2118,7 +2121,7 @@ asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
 asphaltiert	RW2; 10685,12422 10783,12502
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/
-#: last_checked: 2024-05-23 (mapillary)
+#: last_checked: 2024-05-29 (webcam)
 # REMOVED --- #: next_check: 2023-08-25
 provisorische Radspur	RW4; 10783,12502 10849,12557 10873,12577
 asphaltiert	RW2; 10873,12577 10951,12637
@@ -2954,7 +2957,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-05-22
+#: last_checked: 2024-05-29
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5004,7 +5007,7 @@ alte Gehwegplatten, Bord	RW1; -163,1564 -306,1700 -356,1740 -375,1754 -418,1787 
 Radweg nur aufgemalt	RW1;RW1 7317,12751 7111,12743
 	RW6;RW6 7346,13022 7330,12871 7317,12751
 unebenes Verbundsteinpflaster	RW1; 11762,1040 11767,1007 11777,927 11791,834
-	RW1; 11791,834 11777,927 11767,1007 11762,1040 11729,1102
+	RW1; 11791,834 11777,927 11767,1007 11762,1040 11736,1100
 	RW1; 11563,501 11596,583 11634,673 11671,750 11720,803 11791,834
 #: note: ... und vor und hinter den Kreuzungen normale Verbundsteinpflasterradwege
 Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 11596,583 11563,501 11459,225 11453,208 11447,192 11418,120 11381,28 11364,-16
@@ -5782,7 +5785,7 @@ Gehwegplatten, etwas uneben	RW1; 19251,1240 19379,1357 19412,1387
 	RW6;RW6 3302,2476 3293,2218
 #: by: Carsten (bamser):
 #: confirmed_by: srt
-	RW1;RW1 3655,752 3834,502 3898,466
+unebene Gehwegplatten, Bord gegen Gehweg	RW1;RW1 3655,752 3834,502 3898,466
 # REMOVED ---	RW;RW 3898,466 3912,362 3899,305 3849,250 3795,221 3721,195
 	RW1;RW3 17876,11217 18027,11244
 	RW1; 18027,11244 18061,11240
@@ -7840,7 +7843,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-05-28
+#: last_checked: 2024-05-29
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2024-08-30
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -7849,7 +7852,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
-#: last_checked: 2024-05-28 vvv
+#: last_checked: 2024-05-29 vvv
 #: next_check: 2024-06-09 vvv
 #XXX	RW4; 10975,10334 10871,10322
 #XXX	RW4; 10871,10322 10975,10334 11117,10326
@@ -8241,8 +8244,9 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024)
 # REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle
 provisorischer Radstreifen	RW4; 10871,10322 10708,10312
-# REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle, Radfahrer überholen verboten
-provisorischer Radfahrer	RW4; 10708,10312 10605,10312
+#: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle, Radfahrer überholen verboten
+#provisorischer Radstreifen	RW4; 10708,10312 10605,10312
+	RW0; 10708,10312 10605,10312
 provisorischer Radstreifen	RW4; 10605,10312 10708,10312 10871,10322
 provisorisch geschützter Radstreifen	RW4; 10605,10312 10363,10303
 #: historical_note: früher provisorisch geschützter Radstreifen, mittlerweile Engstelle (etwa 120m), Radfahrer überholen verboten
