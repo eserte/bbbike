@@ -31239,7 +31239,7 @@ EOF
 #: source_id: 2147345598 (inaktiv)
 # REMOVED (hier nicht) --- #: last_checked: 2020-05-01 (Radfahrer dürfen hier noch fahren) ---	q4::inwork 6009,5691 6007,5785
 # REMOVED (hier wohl nicht) ---	q4::inwork 5993,5422 6009,5691
-#: osm_watch: note 4060014 2
+#: osm_watch: note 4060014 3
 #: also_indoor: traffic (G)
 #: note: hier etwa 120m der Fahrbahn gesperrt (eigentlich q4+::inwork)
 #: add_fragezeichen: Sind die Bauarbeiten in der Lauenburger Str. beendet?
@@ -32036,9 +32036,9 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
-#: source_id: 2147346566 (bis 22.12.2020)
-#: source_id: 2147346747 (Restarbeiten bis zum 20.1.2021)
-#: XXX bei rbbtext bereits entfernt
+#: source_id: 2147346566 (bis 22.12.2020) (inaktiv)
+#: source_id: 2147346747 (Restarbeiten bis zum 20.1.2021) (inaktiv)
+#: note: bei rbbtext bereits entfernt
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-12-19
 #: next_check: 2020-12-22
@@ -35560,8 +35560,8 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
 #: osm_watch: note 4090527 4
-#: last_checked: 2024-05-12
-#: check_frequency: 21d
+#: last_checked: 2024-05-30
+#: check_frequency: 14d
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
 # REMOVED (hier noch nicht) --- zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 # REMOVED --- #: next_check: 2023-07-31
@@ -36252,16 +36252,20 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-fuenf-jahren-ist-die-schoenstrasse-baustelle_a388111 (voraussichtlich bis Ende 2024)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731917567688913337#m
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1419805.php (Baumfällungen)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1451630.php (voraussichtlich teilweise Freigabe, der Rest wird bis Juni 2025 gemacht (also etwas kürzer als bei VIZ))
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2024-04-14 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-07-31 vvv
+#: next_check: 2025-06-30 vvv
 #: osm_watch: way id="1043813287" version="3"
 #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
-	q4::inwork 13996,16959 13974,16924 13870,16837 13794,16773
+#: XXX teilweise Freigabe am 3.6.2024 (voraussichtlich!)
+#: next_check: 2024-06-03
+	q4::inwork 13996,16959 13974,16924 13870,16837
+	q4::inwork 13870,16837 13794,16773
 Schönstr. vor Kreuzungsbereich Amalienstr.	q2::inwork 13794,16773 13630,16629
 Amalienstr.	q3::inwork 13722,16843 13794,16773 13848,16721
 Paul-Oestreich-Str.: Einbahnstraßenregelung	q4::inwork; 13630,16629 13710,16544
@@ -36929,10 +36933,10 @@ EOF
 #: by: https://az-lichtenrade.de/wp-content/uploads/2022/09/220907_ba1_umleitung_karte_komprimiert.pdf
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
-#: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024)
+#: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: last_checked: 2024-05-29 vvv
-#: next_check: 2024-05-31 vvv
+#: next_check: 2024-08-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
 Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
@@ -39836,7 +39840,7 @@ EOF
 #: next_check_id: BUERGER-2023
 # REMOVED --- #: also_indoor: traffic (G,B,W)
 #: source_id: viz2021:13.434679,52.461938,14.08.2023,07:00 (bis 31.05.2024) (inaktiv)
-#: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024) (bis 31.05.2024)
+#: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024) (bis 31.05.2024) (keine Erwähnung der Bürgerstr., bis 31.08.2024)
 #: source_id: bvg2021:m44#BVG326176_0
 #: by: https://nitter.net/VIZ_Berlin/status/1690957168931913729#m
 # REMOVED --- #: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
@@ -40469,7 +40473,7 @@ EOF
        text  => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 13.02.2024, 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024) (inaktiv) (bis 31.05.2024, nur noch Gegenverkehrsregelung)
+#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024) (inaktiv) (bis 31.05.2024, nur noch Gegenverkehrsregelung) (bis 28.06.2024)
 	2::inwork -19289,63424 -19675,64106
 EOF
      },
@@ -41236,7 +41240,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-05-28 (osm) vvv
+#: last_checked: 2024-05-29 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -41607,7 +41611,7 @@ Bettina-von-Arnim-Ufer	2::temp 7437,12368 7561,12527 7670,12576
 EOF
      },
      { from  => undef, # 1700499546, # 2023-11-20 17:59
-       until => undef, # 1708974733, # $isodate2epoch->("2024-03-08 17:00:00"), # 1706716800, # 2024-01-31 17:00
+       until => 1717087950, # undef, # 1708974733, # $isodate2epoch->("2024-03-08 17:00:00"), # 1706716800, # 2024-01-31 17:00
        #text  => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn auf etwa 40-50m Länge, bis 08.03.2024',
        text  => 'Bouchéstr.: Bauarbeiten, Sperrung der Fahrbahn nordöstlich der Karl-Kunger-Str. auf etwa 40m Länge, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
@@ -41621,12 +41625,7 @@ EOF
 # REMOVED (beendet) ---	q2::inwork 13860,9861 13704,9691
 # REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
 #: note Baustellenschild der Wasserbetriebe: bis Mai 2024; Halteverbotsschilder bis 26.04.2024 (mittlerweile abgelaufen und nicht erneuert)
-#: also_indoor: traffic (B,W)
-#: add_fragezeichen: Ist die Bouchéstr. weiterhin wegen Bauarbeiten gesperrt?
-#: last_checked: 2024-05-27
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2024-04-26
-#: next_check: 2024-05-31
+# REMOVED --- #: also_indoor: traffic (B,W) --- #: add_fragezeichen: Ist die Bouchéstr. weiterhin wegen Bauarbeiten gesperrt? --- #: last_checked: 2024-05-27 --- #: check_frequency: 7d --- #: next_check: 2024-04-26 --- #: next_check: 2024-05-31
 	q2::inwork 13489,9456 13602,9581
 EOF
      },
@@ -42179,16 +42178,16 @@ EOF
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
 #: priority: #B vvv
-#: last_checked: 2024-05-02 (mapillary) vvv
+#: last_checked: 2024-05-29 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-09-23 vvv
 #: osm_watch: way id="375991056" version="17"
 #: osm_watch: way id="375958863" version="11"
 # REMOVED (hier existiert eine durchgängige Verbindung für Radfahrer, im Baustellenbereich meist als Radspur, kurzer Abschnitt als getrennter Rad/Gehweg) --- Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
-#: osm_watch: way id="1250738798" version="1"
+#: osm_watch: way id="1250738798" version="2"
 Wilsnacker Str.: Anbindung gesperrt	q4::inwork 6646,13951 6746,13826
 #: note: Ampel ist zumindest Richtung Nordosten ausgeschaltet, allerdings gibt's dafür eine Fußgängerampel etwa 50m weiter nordöstlich
-#: osm_watch: way id="417687029" version="14"
+#: osm_watch: way id="417687029" version="15"
 Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 #: next_check ^^^
 #: check_frequency ^^^
@@ -42672,24 +42671,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-05-30 00:00:00"), # 1713246879,
-       until => $isodate2epoch->("2025-04-30 18:00:00"), # 1719846000, # 2024-07-01 17:00
+       until => 1717087502, # -> handicap_s-orig --- $isodate2epoch->("2025-04-30 18:00:00"), # 1719846000, # 2024-07-01 17:00
        text  => 'Erkstr.: Anbindung zur Karl-Marx-Str. unterbrochen, evtl. sind auch Radfahrer betroffen; außerdem Einbahnstraßenregelung in der Anzengruberstr.; voraussichtlich ab Ende Mai 2024 bis April 2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
-#: source_id: bvg2024:m43#HIM_FREETEXT_224595 (30.05.2024 bis 31.08.2024)
-# REMOVED --- #: add_fragezeichen: Gibt es hier überhaupt eine Sperrung?
-#: by: https://www.kms-sonne.de/baustellennews?date=20240416 (voraussichtlich ab Ende April 2024 bis April 2025) (mittlerweile Beginn auf Ende Mai 2024 verschoben)
-#: by: https://www.kms-sonne.de/assets/2024/04/Baustellenuebersicht-A4-04-2024-v3-Web.pdf
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/vollsperrung-auf-der-erkstrasse_a415525
-#: XXX außerdem: Baustellenampel an der Kreuzung Donaustr./Anzengruberstr.
-#: also_indoor: traffic (none)
-#: last_checked: 2024-05-12 vvv
-#: next_check: 2024-05-30 vvv
 Erkstr.	q4::inwork 12765,8435 12598,8390
 Anzengruberstr.: Einbahnstraßenregelung	q4::inwork; 12856,8344 12689,8289
-#: next_check ^^^
-#: last_checked ^^^
 EOF
      },
      { from  => 1713204639, # 2024-04-15 20:10
@@ -42759,15 +42746,15 @@ EOF
 EOF
      },
      { from  => 1713696856, # 2024-04-21 12:54
-       until => 1717192800, # 2024-06-01 00:00
-       text  => 'Krautstr.: Bauarbeiten, Fahrbahn zwischen Lange Str. und Holzmarktstr. gesperrt, voraussichtlich bis Ende Mai 2024',
+       until => undef, # 1717192800, # 2024-06-01 00:00
+       text  => 'Krautstr.: Bauarbeiten, Fahrbahn zwischen Lange Str. und Holzmarktstr. gesperrt, voraussichtlich bis Ende Mai 2024, evtl. noch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Außerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
 #: by: https://www.deutsches-architekturforum.de/thread/14527-holzmarktstra%C3%9Fe-51-krautstra%C3%9Fe-30-friedrichshain-in-bau/?postID=759966#post759966
-#: last_checked: 2024-05-27
-#: check_frequency: 14d
-#: next_check: 2024-05-31
+#: last_checked: 2024-05-30
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2024-05-31
 	q4::inwork 11966,11832 11993,11978
 EOF
      },
@@ -43063,6 +43050,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-auf-der-sonnenallee-strassensperrung-id253457
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1795325596953624776
 #: by[nocache]: https://x.com/BerlinNkl/status/1795429185839940060
+#: by: https://berliner-abendblatt.de/berlin-news/verkehrseinschraenkungen-in-neukoelln-id253562
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
 #: also_indoor: traffic (G,B,W)
 #: last_checked: 2024-05-29 vvv
