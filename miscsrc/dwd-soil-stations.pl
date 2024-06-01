@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2020,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2020,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,16 +17,30 @@
 #
 #    ~/src/bbbike/tmp/dwd-soil-stations.bbd
 #
+# To fetch and open automatically in bbbike use
+#
+#    ~/src/bbbike-aux/misc/dwd-soil-stations.pl --open
+# 
 
 use lib "$ENV{HOME}/src/bbbike/lib";
 use Doit;
 use Doit::Log;
+use Getopt::Long;
 
-my $url = 'ftp://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_stations_list.txt';
-my $cache = "$ENV{HOME}/src/bbbike/tmp/derived_germany_soil_daily_recent_stations_list.txt";
-my $bbd = "$ENV{HOME}/src/bbbike/tmp/dwd-soil-stations.bbd";
+my $bbbike_root = "$ENV{HOME}/src/bbbike";
+my $url = 'https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_stations_list.txt';
+my $cache = "$bbbike_root/tmp/derived_germany_soil_daily_recent_stations_list.txt";
+my $bbd = "$bbbike_root/tmp/dwd-soil-stations.bbd";
+my $number_first;
 
 my $doit = Doit->init;
+
+GetOptions(
+	   "open" => \my $do_open,
+	   "number-first!" => \$number_first,
+	  )
+    or error "usage: $0 [--dry-run] [--number-first] [--open]\n";
+
 $doit->add_component('lwp');
 $doit->add_component('file');
 if ($doit->lwp_mirror($url, $cache) || !-s $bbd) {
@@ -47,9 +61,13 @@ if ($doit->lwp_mirror($url, $cache) || !-s $bbd) {
 	     while(<$ifh>) {
 		 chomp; s/\r$//; s/^\s+//;
 		 my(@f) = split /\s*;\s*/, $_;
-		 print $ofh "$f[0] - $f[4]\tX $f[3],$f[2]\n";
+		 my $name = $number_first ? "$f[0] - $f[4]" : "$f[4] - $f[0]";
+		 print $ofh "$name\tX $f[3],$f[2]\n";
 	     }
 	 });
+}
+if ($do_open) {
+    $doit->system("$bbbike_root/bbbikeclient", "-strlist", $bbd);
 }
 
 __END__
