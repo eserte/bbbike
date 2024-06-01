@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -62,7 +62,7 @@ chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 FETCH_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     my $pid = $pm and $pm->start and next FETCH_LOOP;
     warn "INFO: update station $station ($stations{$station})...\n" unless $q;
-    my @cmd = ('wget', '--quiet', '-N', "ftp://opendata.dwd.de:/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_$station.txt.gz");
+    my @cmd = ('wget', '--quiet', '-N', "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_$station.txt.gz");
     system @cmd;
     if ($? != 0) { die "Command '@cmd' failed" }
     $pm and $pm->finish;
@@ -94,7 +94,7 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     }
     if ($need_update) {
 	my $pid = $pm and $pm->start and next FETCH_HISTORICAL_LOOP;
-	my @cmd = ('curl', '--silent', '-O', "ftp://opendata.dwd.de:/climate_environment/CDC/derived_germany/soil/daily/historical/derived_germany_soil_daily_historical_${station}.txt.gz");
+	my @cmd = ('curl', '--silent', '-O', "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/historical/derived_germany_soil_daily_historical_${station}.txt.gz");
 	system @cmd;
 	if ($? != 0) { die "Command '@cmd' failed" }
 	$pm and $pm->finish;
