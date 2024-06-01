@@ -483,12 +483,12 @@ EOF
 				  maybe_orig_file => 1,
 				  above => $str_layer_level,
 				 ),
-		layer_checkbutton([$do_compound->('mudways')],
+		layer_checkbutton([$do_compound->('mudways', main::load_photo($mf, 'rain_snow', -persistent => 1))],
 				  'str', "$main::datadir/mudways",
 				  maybe_orig_file => 0, # no orig file
 				  above => $str_layer_level,
 			         ),
-		layer_checkbutton([$do_compound->('current mudways')],
+		layer_checkbutton([$do_compound->('current mudways', main::load_photo($mf, 'rain_snow', -persistent => 1))],
 				  'str', "/tmp/mudways_prognosis.bbd",
 				  above => $str_layer_level,
 				  preparecallback => sub {
