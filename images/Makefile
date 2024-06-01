@@ -378,3 +378,8 @@ png-to-jpg:	\
 #   wget https://upload.wikimedia.org/wikipedia/commons/5/5b/Music-eighthnote.svg
 #   edited (removed lines) and exported (to 9x16 png) in inkscape
 # License: public domain
+
+# Creation of rain_snow.png
+# Manual work: combined using gimp and the following icons
+#   https://www.iconduck.com/icons/173707/snow-flake (MIT License)
+#   https://www.iconduck.com/icons/22478/tint (CC BY 4.0; "Font Awesome Icons")
