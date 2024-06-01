@@ -31899,7 +31899,8 @@ EOF
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id[inactive]: bvg2021:188#BVG259885_0
 #: source_id[inactive]: bvg2021:188#BVG323876_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024)
+#: source_id: viz2021:13.30246,52.44494,31.05.2024,10:09 (bis 12.07.2024)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (ex-H,G,B[weiter westlich],W) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -31913,7 +31914,7 @@ EOF
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2024-05-05 vvv
-#: next_check: 2024-05-31 vvv
+#: next_check: 2024-07-12 vvv
 # REMOVED (hier nicht mehr) ---	q3::inwork; 4214,4595 4039,4500
 # REMOVED (hier nicht mehr) --- Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
@@ -35561,7 +35562,7 @@ EOF
 #: osm_watch: way id="1246171055" version="1"
 #: last_checked: 2024-05-30 vvv
 #: check_frequency: 14d vvv
-#: osm_watch: note 4090527 4
+#: osm_watch: note 4090527 5
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
 #: osm_watch: way id="36738527" version="45"
 zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
@@ -36826,7 +36827,7 @@ EOF
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2024-05-28
+#: last_checked: 2024-05-31
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 EOF
@@ -37805,7 +37806,7 @@ EOF
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
 #: source_id: viz2021:13.29209,52.64198,08.01.2024,07:00 (bis 31.05.2024) (inaktiv)
-#: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024)
+#: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024) (inaktiv)
 #: also_indoor: traffic (ex-H,G,B,W)
 # REMOVED --- #: note: Fahrbahn wird neu gemacht ---	q4::inwork 2112,26066 2207,26090 2293,26111
 # REMOVED --- #: note: Vorbereitungen für Neubau der Fahrbahn ---	q3::inwork 2293,26111 2402,26121
@@ -37920,7 +37921,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (ex-W,ex-G)
-#: last_checked: 2024-03-13
+#: last_checked: 2024-05-31
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -40690,11 +40691,11 @@ EOF
 #: XXX bei osm mittlerweile als offen getaggt, stimmt das? -> nein, siehe https://www.openstreetmap.org/changeset/150876600
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-05-15 vvv
+#: last_checked: 2024-05-30 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-07-05 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
-#: osm_watch: way id="1142005449" version="5"
+#: osm_watch: way id="1142005449" version="6"
 	q4::inwork 17826,6495 17991,6431
 #: note: der westliche Gehweg ist komplett gesperrt und man kommt nur über die gepflasterte Service-Straße zum Ufer und dort via Treppe wieder zur Edisonstraße; besser den östlichen Gehweg benutzen (Stand Mitte November 2023)
 #: osm_watch: way id="176072020" version="37"
@@ -41242,7 +41243,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-05-29 (mapillary) vvv
+#: last_checked: 2024-05-31 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -41960,7 +41961,7 @@ EOF
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-05-28
+#: last_checked: 2024-05-31
 #: check_frequency: 60d
 	q4::inwork; 6681,10959 6607,10801
 EOF
@@ -42754,7 +42755,7 @@ EOF
        data  => <<EOF,
 #: note: Außerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
 #: by: https://www.deutsches-architekturforum.de/thread/14527-holzmarktstra%C3%9Fe-51-krautstra%C3%9Fe-30-friedrichshain-in-bau/?postID=759966#post759966
-#: last_checked: 2024-05-30
+#: last_checked: 2024-05-31
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-31
 	q4::inwork 11966,11832 11993,11978
@@ -42840,7 +42841,7 @@ Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg
-#: last_checked: 2024-05-29 (webcam)
+#: last_checked: 2024-05-31
 #: check_frequency: 7d
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
@@ -42927,7 +42928,7 @@ EOF
      },
      { from  => $isodate2epoch->("2024-07-03 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2024-07-25 19:00:00"),
-       text  => 'Wassertorplatz: in Höhe Kastanienplatz donnerstags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 04. Juli 2024 bis 25. Juli 2024',
+       text  => 'Wassertorstr.: in Höhe Kastanienplatz donnerstags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 04. Juli 2024 bis 25. Juli 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1445054.php (2024)
@@ -43055,7 +43056,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/verkehrseinschraenkungen-in-neukoelln-id253562
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
 #: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
-#: source_id: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
+#: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: also_indoor: traffic (G,B,W)
 #: last_checked: 2024-05-29 vvv
 #: check_frequency: 3d vvv
@@ -43082,9 +43083,38 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796409264266936344 (Dauer ca. drei Wochen)
 #: source_id: bvg2024:108#HIM_FREETEXT_224826 (hier nur bis 9.6.2024)
+#: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024)
 #: also_indoor: traffic (H,B)
+#: note: bei rbb bis Mitte Juni (2024)
 #: next_check: 2024-06-09
 	q4::inwork 23012,8575 23118,8495 23207,8421
+EOF
+     },
+     { from  => $isodate2epoch->("2024-06-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-09-20 18:00:00"),
+       text  => 'Armenische Str.: zwischen Ungarnstr. und Sackgassenende am 1. und 3. Freitag im Monat zwischen 15:00 und 18:00 Uhr temporäre Spielstraße, Juni bis September',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::temp::play 7177,16715 7150,16760 7144,16781 7147,16800
+EOF
+     },
+     { from  => 1718229600, # 2024-06-13 00:00
+       until => 1721426399, # 2024-07-19 23:59
+       text  => 'Schustehrusstr.: zwischen Nithackstr. und Kaiser-Friedrich-Str mittwochs von 14 bis 17 Uhr temporäre Spielstraße, vom 14. Juni 2024 bis 19. Juli 2024 ',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::temp::play 3217,12239 3072,12222
+EOF
+     },
+     { from  => 1717092000, # 2024-05-30 20:00
+       until => 1717387200, # 2024-06-03 06:00
+       text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 31.05.2024 20:00 bis 03.06.2024 06:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
+#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
+	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
 EOF
      },
     );

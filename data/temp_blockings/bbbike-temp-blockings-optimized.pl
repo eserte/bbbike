@@ -2507,7 +2507,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2998,7 +2998,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Mai 8.00 - 20.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Juni 8.00 - 20.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -4517,7 +4517,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id[inactive]: bvg2021:188#BVG259885_0
 #: source_id[inactive]: bvg2021:188#BVG323876_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024)
+#: source_id: viz2021:13.30246,52.44494,31.05.2024,10:09 (bis 12.07.2024)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (ex-H,G,B[weiter westlich],W) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -4531,7 +4532,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2024-05-05 vvv
-#: next_check: 2024-05-31 vvv
+#: next_check: 2024-07-12 vvv
 # REMOVED (hier nicht mehr) ---	q3::inwork; 4214,4595 4039,4500
 # REMOVED (hier nicht mehr) --- Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
@@ -5330,7 +5331,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="1246171055" version="1"
 #: last_checked: 2024-05-30 vvv
 #: check_frequency: 14d vvv
-#: osm_watch: note 4090527 4
+#: osm_watch: note 4090527 5
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
 #: osm_watch: way id="36738527" version="45"
 zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
@@ -5661,7 +5662,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2024-05-28
+#: last_checked: 2024-05-31
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
@@ -5944,28 +5945,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SCHOENFLIESSER-2023
-#: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
-#: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
-#: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
-#: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
-#: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
-#: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
-#: source_id: viz2021:13.29209,52.64198,08.01.2024,07:00 (bis 31.05.2024) (inaktiv)
-#: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024)
-#: also_indoor: traffic (ex-H,G,B,W)
-# REMOVED --- #: note: Fahrbahn wird neu gemacht ---	q4::inwork 2112,26066 2207,26090 2293,26111
-# REMOVED --- #: note: Vorbereitungen für Neubau der Fahrbahn ---	q3::inwork 2293,26111 2402,26121
-	q4::inwork 2402,26121 2490,26126 2560,26139
-	q4::inwork 2484,25984 2490,26126 2531,26251
-',
-         'from' => 1668540097,
-         'id' => 3683,
-         'text' => 'Schönfließer Str.: Bauarbeiten im Kreuzungsbereich Senheimer Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Mai 2024',
-         'type' => 'handicap',
-         'until' => 1717167600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6008,7 +5988,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (ex-W,ex-G)
-#: last_checked: 2024-03-13
+#: last_checked: 2024-05-31
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -6135,32 +6115,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2023
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1294594.php
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1328147.php (ab 25.5.2023 für voraussichtlich zwei Monate)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1347368.php (ab KW 30/2023 für voraussichtlich drei Monate, zwischen Bundesallee und Prinzregentenstraße)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1388333.php (abgeschlossen + neue Bauarbeiten)
-#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/neue-wege-im-volkspark_a400700
-#: add_fragezeichen: Sind die Bauarbeiten im Volkspark Wilmersdorf beendet?
-# REMOVED --- #: last_checked: 2023-11-06 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-10-31 vvv
-# REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
-# REMOVED (hier vermutlich fertig) ---	2::inwork 5730,8207 5700,8241
-# REMOVED (hier fertig) ---	2::inwork 5700,8241 5687,8280 5699,8308
-# REMOVED (hier fertig) ---	2::inwork 5730,8207 5918,8221
-# REMOVED (hier fertig) ---	2::inwork 5433,8407 5454,8403 5617,8258
-#: last_checked: 2024-05-04
-#: check_frequency: 45d
-# REMOVED --- #: next_check: 2024-03-25
-	2::inwork 5166,8467 5212,8602
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-',
-         'from' => 1700953200,
-         'id' => 3725,
-         'text' => 'Volkspark Wilmersdorf: Weg zwischen Livländische Str. und Schoelerpark wird saniert, Stand Mai 2024: Weg ist gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => 1717171200
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: TELTOWKANALUFERWEG-2023
@@ -6783,11 +6738,11 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
 #: XXX bei osm mittlerweile als offen getaggt, stimmt das? -> nein, siehe https://www.openstreetmap.org/changeset/150876600
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-05-15 vvv
+#: last_checked: 2024-05-30 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-07-05 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
-#: osm_watch: way id="1142005449" version="5"
+#: osm_watch: way id="1142005449" version="6"
 	q4::inwork 17826,6495 17991,6431
 #: note: der westliche Gehweg ist komplett gesperrt und man kommt nur über die gepflasterte Service-Straße zum Ufer und dort via Treppe wieder zur Edisonstraße; besser den östlichen Gehweg benutzen (Stand Mitte November 2023)
 #: osm_watch: way id="176072020" version="37"
@@ -7007,7 +6962,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-05-29 (mapillary) vvv
+#: last_checked: 2024-05-31 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7175,7 +7130,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-05-28
+#: last_checked: 2024-05-31
 #: check_frequency: 60d
 	q4::inwork; 6681,10959 6607,10801
 ',
@@ -7328,16 +7283,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 4748e35a-4fa8-43f7-946d-dd4c10baccb9- (bis 01.06.2024)
-	2::inwork -16704,58891 -16495,58858
-',
-         'from' => 1687730400,
-         'id' => 4011,
-         'text' => 'Seebeck: Bauarbeiten, Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, 26.06.2023 bis 31.05.2024',
-         'type' => 'gesperrt',
-         'until' => 1717192800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7586,7 +7532,7 @@ Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,99
        {
          'data' => '#: note: Außerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
 #: by: https://www.deutsches-architekturforum.de/thread/14527-holzmarktstra%C3%9Fe-51-krautstra%C3%9Fe-30-friedrichshain-in-bau/?postID=759966#post759966
-#: last_checked: 2024-05-30
+#: last_checked: 2024-05-31
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-31
 	q4::inwork 11966,11832 11993,11978
@@ -7678,7 +7624,7 @@ Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg
-#: last_checked: 2024-05-29 (webcam)
+#: last_checked: 2024-05-31
 #: check_frequency: 7d
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
@@ -7765,7 +7711,7 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
 ',
          'from' => 1719957600,
          'id' => 4059,
-         'text' => 'Wassertorplatz: in Höhe Kastanienplatz donnerstags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 04. Juli 2024 bis 25. Juli 2024',
+         'text' => 'Wassertorstr.: in Höhe Kastanienplatz donnerstags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 04. Juli 2024 bis 25. Juli 2024',
          'type' => 'handicap',
          'until' => 1721926800
        },
@@ -7859,7 +7805,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: by: https://berliner-abendblatt.de/berlin-news/verkehrseinschraenkungen-in-neukoelln-id253562
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
 #: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
-#: source_id: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
+#: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: also_indoor: traffic (G,B,W)
 #: last_checked: 2024-05-29 vvv
 #: check_frequency: 3d vvv
@@ -7888,7 +7834,9 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1796409264266936344 (Dauer ca. drei Wochen)
 #: source_id: bvg2024:108#HIM_FREETEXT_224826 (hier nur bis 9.6.2024)
+#: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024)
 #: also_indoor: traffic (H,B)
+#: note: bei rbb bis Mitte Juni (2024)
 #: next_check: 2024-06-09
 	q4::inwork 23012,8575 23118,8495 23207,8421
 ',
@@ -7897,6 +7845,36 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
          'text' => 'Kohlisstr.: Wasserrohrbruch, Sperrung zwischen Lessingstr. und Wielandstr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 21.6.2024',
          'type' => 'handicap',
          'until' => 1718985600
+       },
+       {
+         'data' => '	q4::temp::play 7177,16715 7150,16760 7144,16781 7147,16800
+',
+         'from' => 1717624800,
+         'id' => 4072,
+         'text' => 'Armenische Str.: zwischen Ungarnstr. und Sackgassenende am 1. und 3. Freitag im Monat zwischen 15:00 und 18:00 Uhr temporäre Spielstraße, Juni bis September',
+         'type' => 'handicap',
+         'until' => 1726848000
+       },
+       {
+         'data' => '	q4::temp::play 3217,12239 3072,12222
+',
+         'from' => 1718229600,
+         'id' => 4073,
+         'text' => 'Schustehrusstr.: zwischen Nithackstr. und Kaiser-Friedrich-Str mittwochs von 14 bis 17 Uhr temporäre Spielstraße, vom 14. Juni 2024 bis 19. Juli 2024 ',
+         'type' => 'handicap',
+         'until' => 1721426399
+       },
+       {
+         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
+#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
+	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
+',
+         'from' => 1717092000,
+         'id' => 4074,
+         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 31.05.2024 20:00 bis 03.06.2024 06:00',
+         'type' => 'handicap',
+         'until' => 1717387200
        }
      
 );
