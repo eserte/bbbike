@@ -19,15 +19,18 @@
 #
 # To fetch and open automatically in bbbike use
 #
-#    ~/src/bbbike-aux/misc/dwd-soil-stations.pl --open
+#    ~/src/bbbike/miscsrc/dwd-soil-stations.pl --open
 # 
 
-use lib "$ENV{HOME}/src/bbbike/lib";
+use FindBin;
+use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
 use Doit;
 use Doit::Log;
 use Getopt::Long;
 
-my $bbbike_root = "$ENV{HOME}/src/bbbike";
+use BBBikeUtil qw(bbbike_root);
+
+my $bbbike_root = bbbike_root;
 my $url = 'https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_stations_list.txt';
 my $cache = "$bbbike_root/tmp/derived_germany_soil_daily_recent_stations_list.txt";
 my $bbd = "$bbbike_root/tmp/dwd-soil-stations.bbd";
