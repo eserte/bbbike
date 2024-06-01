@@ -3023,6 +3023,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        {
          'data' => '#: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
 #: by: https://www.facebook.com/KreutzigerStrassenfest/posts/pfbid02u1jwCHS1jzLAUNvuRXbJd3tsDEyJavnjqAy9uE4a9eHTHCxd9QBAjayHHy1TqK5ul (3.6.2023)
+#: source_id: viz2021:13.45938,52.51251,01.06.2024,08:00 (bis 01.06.2024)
 # REMOVED --- #: tempex: 20170630T2000-20170701T2359
 	2::temp 14161,11930 14274,12190
 ',
@@ -4591,7 +4592,34 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1111500.php
+#: by: https://viz.berlin.de/2023/05/wochenendverkehr-in-berlin-zum-dfb-pokalfinale-und-zur-adfc-sternfahrt/
+#: note: betroffene BVG-Linien fahren nicht zwischen 10h und 21h
+#: source_id: viz2021:13.491317,52.469108,12.06.2022,07:00 (inaktiv)
+#: source_id: viz2021:13.479325,52.484519,11.06.2022,13:00 (inaktiv)
+#: source_id: viz2021:13.479325,52.484519,12.06.2022,09:00 (inaktiv)
+#: source_id: viz2021:13.47948,52.48449,11.06.2022,12:00 (inaktiv)
+#: source_id: viz2021:13.47948,52.48449,11.06.2022,16:00 (inaktiv)
+#: source_id: viz2021:13.479413,52.484459,03.06.2023,12:00 (bis 05.06.2023) (inaktiv)
+#: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023) (inaktiv)
+#: source_id: viz2021:13.47948,52.48449,04.06.2023,07:00 (bis 04.06.2023) (inaktiv)
+#: source_id: viz2021:13.47948,52.48449,01.06.2024,12:00 (bis 03.06.2024)
+#: source_id: viz2021:13.47948,52.48449,01.06.2024,15:00 (bis 02.06.2024)
+	q4::temp 16507,7254 16428,7144
+	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
+	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
+	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16619,8606 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
+	q4::temp 15778,8990 15678,8911 15591,8848
+	q4::temp; 15591,8848 15534,8943 15445,9090 15440,9098 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
+',
+         'from' => 1717236000,
+         'id' => 3274,
+         'text' => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Puschkinallee, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 2.6.2024 07:00 bis 20:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1717351200
+       },
        undef,
        undef,
        undef,
@@ -7629,10 +7657,15 @@ Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
 Ahornsteig - Brandenburger Tor	2::temp 8522,12187 8538,12245
+#: note: Sperrungen im Regierungsviertel
+vor dem Bundeskanzleramt	2::temp 8120,12756 8122,12603
+Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
+Paul-Löbe-Allee	2::temp 8306,12609 8207,12606 8122,12603
+Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
 ',
          'from' => 1714860000,
          'id' => 4053,
-         'text' => 'Straße des 17. Juni und Ebertstr.: Sperrung wegen Veranstaltung (EM 2024), außerdem kann die Durchfahrt durch das Brandenburger Tor eingeschränkt sein, vom 6.5.2024 bis 26.7.2024',
+         'text' => 'Straße des 17. Juni, Ebertstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee: Sperrungen wegen Veranstaltung (EM 2024), außerdem kann die Durchfahrt durch das Brandenburger Tor eingeschränkt sein, vom 6.5.2024 bis 26.7.2024',
          'type' => 'gesperrt',
          'until' => 1722009600
        },
@@ -7645,11 +7678,10 @@ Ahornsteig - Brandenburger Tor	2::temp 8522,12187 8538,12245
 # REMOVED (Radweg scheint passierbar zu bleiben) --- John-Foster-Dulles-Allee	2::temp 7031,12320 7215,12295 7437,12368
 John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.: für Kfz-Verkehr gesperrt	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
 Yitzhak-Rabin-Str.: für Kfz-Verkehr gesperrt	2::temp 8119,12414 8055,12186
-Heinrich-von-Gagern-Str. - Annemarie-Renger-Str.: Fahrbahn gesperrt	q4::temp 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 ',
          'from' => 1715464800,
          'id' => 4054,
-         'text' => 'John-Foster-Dulles-Allee, Scheidemannstr., Dorotheenstr., Yitzhak-Rabin-Str., Heinrich-von-Gagern-Str.: Sperrung wegen Veranstaltungen (EM und weitere), Sperrungen möglich, vom 13.5.2024 bis 26.7.2024',
+         'text' => 'John-Foster-Dulles-Allee, Scheidemannstr., Dorotheenstr., Yitzhak-Rabin-Str.: mögliche Sperrungen wegen Veranstaltung (EM 2024), vom 13.5.2024 bis 26.7.2024',
          'type' => 'gesperrt',
          'until' => 1722031200
        },
