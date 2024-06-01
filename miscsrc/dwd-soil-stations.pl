@@ -26,6 +26,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
 use Doit;
 use Doit::Log;
+use File::Basename qw(basename);
 use Getopt::Long;
 
 use BBBikeUtil qw(bbbike_root);
@@ -60,7 +61,11 @@ if ($doit->lwp_mirror($url, $cache) || !-s $bbd) {
 	     error "Unexpected column 3 ($f[3])" if $f[3] ne 'Länge';
 	     error "Unexpected column 4 ($f[4])" if $f[4] ne 'Name';
 	     print $ofh "#: map: polar\n";
+	     print $ofh "#: title.de: DWD-Bodenfeuchte-Stationen\n";
+	     print $ofh "#: title.en: DWD soil stations\n";
 	     print $ofh "#:\n";
+	     print $ofh "# Generated using @{[ basename $0 ]}\n";
+	     print $ofh "#\n";
 	     while(<$ifh>) {
 		 chomp; s/\r$//; s/^\s+//;
 		 my(@f) = split /\s*;\s*/, $_;
