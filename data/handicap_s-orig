@@ -43,7 +43,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024) (bis 24.05.2024) (inaktiv)
-#: last_checked: 2024-05-31
+#: last_checked: 2024-06-02
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-05-24
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -332,7 +332,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-05-13 vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -358,7 +358,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-05-29 (webcam)
+#: last_checked: 2024-06-02
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -456,7 +456,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-05-31 vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -593,7 +593,7 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 1
 #: next_check_id: SCHOENEWEIDE-2018
 #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024)
 #: also_indoor: traffic (H,W)
-#: last_checked: 2024-05-22
+#: last_checked: 2024-06-01 (krickstadt)
 #: next_check: 2024-06-30
 #: valid: -20240630
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
@@ -869,18 +869,7 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 #: check_frequency: 90d
 Heldburger Str.: Hochbauarbeiten, Fahrbahn gesperrt	q4::inwork 17249,14575 17392,14591
 # 
-#: next_check_id: RUSCHEAMPEL-2024
-#: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert?
-#: last_checked: 2024-05-02 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2024-06-14 vvv
-#: valid: -20240614 vvv
-# REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886
-Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883
-#: valid ^^^
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (nicht mehr) --- #: next_check_id: RUSCHEAMPEL-2024 --- #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert? --- #: last_checked: 2024-05-02 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-14 vvv --- #: valid: -20240614 vvv --- # REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886 --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="36"
@@ -976,10 +965,10 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Marzahn ###
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-05-24 (mapillary)
+#: last_checked: 2024-06-02
 #: check_frequency: 60d
 #: next_check: 2024-06-17
-Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2-::inwork 18831,14823 19013,14905 19175,14968 19196,14976 19200,14963 19214,14966
+Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2::inwork 18831,14823 19013,14905 19175,14968 19196,14976 19200,14963 19214,14966
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246724.php (Gesamtbaumaßnahme bis Ende 2025, auch werden neue Radwege gebaut)
@@ -1021,7 +1010,7 @@ Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: also_indoor: traffic (G,H,B)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2024-05-23 (daf) vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv
 #: valid: -20241231 vvv
@@ -1934,7 +1923,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: osm_watch: way id="223184082" version="8"
-#: last_checked: 2024-05-02
+#: last_checked: 2024-06-02
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -2066,7 +2055,7 @@ S-Bhf. Raoul-Wallenberg-Str. - Märkische Allee: einige Fußgänger	q2 20133,16256 
 #: XXX_prog BS (am Wendehammer, ohne q2)
 (Otto-Rosenberg-Platz - Unterführung S-Bhf. Raoul-Wallenberg-Str.): Bordstein, einige Fußgänger	q3 19991,16322 20036,16299
 (Unterführung S-Bhf. Raoul-Wallenberg-Str.): einige Fußgänger	q2 20036,16299 20050,16292 20120,16258
-(Kinderbad Platsch - Max-Herrmann-Str.): Fußgänger	q1 21129,16426 21176,16480 21177,16499 21238,16627
+(Kinderbad Platsch - Max-Herrmann-Str.): Fußgänger	q1 21129,16426 21137,16436 21176,16480 21177,16499 21238,16627
 (Bürgerpark Marzahn): einige Fußgänger	q1 20898,16420 21020,16298
 (oberer Wuhlewanderweg - Alte Hellersdorfer Str.): einige Fußgänger	q1 22851,14603 22876,14594 23057,14582
 Wuhlewanderweg: Fußgänger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
@@ -2076,13 +2065,13 @@ Wuhlewanderweg: Fußgänger	q1 22295,13530 22259,13508 22191,13414 22187,13304 222
 Wuhlewanderweg: Fußgänger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
 Wuhlewanderweg: Fußgänger	q1 22244,11311 22268,11285
 Wuhlewanderweg: enge Unterführung	q3 22268,11285 22279,11272 22270,11210
-Wuhlewanderweg: Fußgänger	q1 22270,11210 22236,11208
+Wuhlewanderweg: Fußgänger	q1 22270,11210 22234,11198
 Wuhlewanderweg: Fußgänger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22027,6608 22050,6619 21976,6848 21896,6937 21590,7211 21569,7252 21567,7284 21611,7548 21609,7579 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921
 Bismarcksfelder Str.: enge Brücke	q2 21629,7921 21599,7904
 Wuhlewanderweg: Fußgänger	q1 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21190,8467 21173,8576 21183,8738 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21354,9059
 Wuhlewanderweg: Fußgänger	q1 21383,9045 21467,9236 21517,9489 21587,9609 21633,9731 21675,9798 21691,9874
 Wuhlewanderweg: Fußgänger	q1 21611,9893 21620,9979 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21727,10582 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
-Wuhlewanderweg: Fußgänger	q1 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
+Wuhlewanderweg: Fußgänger	q1 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22215,11137
 Wuhlewanderweg: Fußgänger	q1 22059,10782 22103,10814 22166,10839
 Klompenweg - Mosbacher Str.: Fußgänger	q1 22172,10996 22195,10993
 Birnbaumer Str.: Fußgänger	q1 22050,6619 22093,6630
@@ -4684,7 +4673,7 @@ Wildmeisterdamm: Bordstein am Kölner Damm	q2 13640,2229 13827,2280
 Torgauer Str. (Hellersdorf) [am Kinder- und Jugendhaus]: als Fußgängerzone ausgeschildert	q3 25311,15355 25315,15404 25215,15413 25135,15419 25127,15412
 (Hönower Weiherkette - Torgauer Str.): einige Fußgänger	q1 25234,15577 25216,15462 25215,15413
 #: note: Grünanlagen-Schild ohne weitere Zusatzschilder vvv
-Theodorpark: einige Fußgänger	q2 24922,10785 24954,10770 25017,10767 25062,10762 25148,10769
+Theodorpark: einige Fußgänger	q2 24922,10785 24954,10770 25017,10767 25062,10762 25136,10768 25148,10769
 Theodorpark: einige Fußgänger	q2 25017,10767 25018,10747 25022,10715
 #: note ^^^
 #: XXX_prog BS an der Rominter Allee (ansonsten entfernen) vvv
@@ -4874,7 +4863,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
-#: last_checked: 2024-06-01
+#: last_checked: 2024-06-02
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
@@ -4979,6 +4968,8 @@ Karl-Schmidt-Rottluff-Weg: einige Fußgänger, Bordsteine	q2 1787,3905 1781,3807 1
 Anna- und Hermann-Muthesius-Steig: einige Fußgänger, Bäume auf dem Weg	q2 -3126,1798 -3087,1734
 # 
 Delmer Steig: einige Fußgänger	q2 11895,1489 11865,1564
+# 
+(Theodorpark - Hultschiner Damm): kurvig, ein kurzer steiler Abschnitt	q2 24762,10850 24707,10862 24690,10859 24672,10867
 # 
 ######################### User Contributions #################################
 # 

@@ -24,6 +24,7 @@ Zabel-Krüger-Damm/Alt-Lübars: Gegenverkehrsregelung	X::inwork::alternating 6805,
 #: source_id: viz2021:13.524783,52.514028,27.05.2024,13:00 (bis 21.06.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1795047296100647162
 #: by: https://pbs.twimg.com/media/GOW6QvLXUAY5vpt?format=jpg&name=large (direkte Zufahrt zur südlichen Marzahner Chaussee nicht möglich)
+#: last_checked: 2024-06-02
 #: next_check: 2024-06-21
 #: valid: -20240621
 Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
@@ -83,7 +84,7 @@ Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	
 #: XXX evtl. wurde die Ampel wegen der Hochbauarbeiten (Schule) eingerichtet
 #: osm_watch: way id="29432246" version="24"
 #: osm_watch: note 3707299 9
-#: last_checked: 2024-03-16
+#: last_checked: 2024-06-02
 #: check_frequency: 90d
 #: next_check: 2024-08-31
 Allee der Kosmonauten/Straßenbahn	X::inwork 17778,13438
@@ -100,7 +101,7 @@ Michaelbrücke	F::inwork 11676,11839
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024)
 #: note: etwa 20m südöstlich
-#: last_checked: 2024-05-22
+#: last_checked: 2024-06-01 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 #: valid: -20240630
@@ -119,7 +120,7 @@ Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternati
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2024-05-17
+#: last_checked: 2024-06-01 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-01-02
 #: valid: -20250102
@@ -204,7 +205,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 Gürtelstr.	F::inwork 15153,11691
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-05-24 (mapillary) vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-06-17 vvv
 # REMOVED --- #: next_check: 2026-12-31 vvv
@@ -327,7 +328,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 #: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024) (bis 24.05.2024) (inaktiv)
 #: source_id: viz2021:13.374486,52.583736,27.02.2024,07:00 (bis 07.10.2024)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/ende-der-baustelle-endlich-in-sicht_a412148 (Bauarbeiten bis Juni/Juli 2024)
-#: last_checked: 2024-04-14 vvv
+#: last_checked: 2024-06-01 (mapillary) vvv
 #: next_check: 2024-10-07 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 # REMOVED (diese Ampel ist nicht mehr gelistet) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
@@ -427,6 +428,8 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 # 
 ################################################################################
 # Ampeln und Bahnübergänge in Berlin
+#: note: Anforderungsampel
+	F 10679,17441
 #: note: Herbst 2023: noch eine provisorische Ampel, aber die richtigen Masten stehen bereits
 #: note: Anforderungsampel
 	F 11913,13077
@@ -3391,7 +3394,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-05-31 vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3579,7 +3582,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2024-06-01
+#: last_checked: 2024-06-02
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3587,7 +3590,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="6"
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2024-06-01
+#: last_checked: 2024-06-02
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 
@@ -3626,7 +3629,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 23810,7946
 # REMOVED --- #: next_check_id: ZIMMERMANNSTRBR-2015 vvv --- #: XXX temporäre Ampeln vvv --- #: last_checked: 2016-06-19 vvv --- #: next_check: 2016-09-15 vvv ---	X::inwork 21164,9960 ---	X::inwork 22129,9702
 #: note: Anforderung für Radfahrer & Kontaktschleife; Anforderung auch für Linksabbieger aus Alt-Mahlsdorf
-	X 24801,11261
+	X 24806,11261
 #: off: weekend (gesehen: Sa 2015-09-12 nachmittags)
 	F 9274,13963
 	X 9148,13944
@@ -3820,7 +3823,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
-#: last_checked: 2024-04-05 (mapillary) vvv
+#: last_checked: 2024-06-01 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

@@ -3020,67 +3020,10 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
-#: by: https://www.facebook.com/KreutzigerStrassenfest/posts/pfbid02u1jwCHS1jzLAUNvuRXbJd3tsDEyJavnjqAy9uE4a9eHTHCxd9QBAjayHHy1TqK5ul (3.6.2023)
-#: source_id: viz2021:13.45938,52.51251,01.06.2024,08:00 (bis 01.06.2024)
-# REMOVED --- #: tempex: 20170630T2000-20170701T2359
-	2::temp 14161,11930 14274,12190
-',
-         'from' => 1717178400,
-         'id' => 2433,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              5,
-                              'start',
-                              '2021-10-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
-         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, voraussichtlich am 01.06.2024',
-         'type' => 'gesperrt',
-         'until' => 1717286400
-       },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mögliche Termine: 1.6.2021 + 6.6.2021)
-#: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
-#: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
-#: by: https://fez-berlin.de/fezveranstaltungen2023/kindertag
-#: by: https://fez-berlin.de/veranstaltungen2024/internationales-kindertagsfest
-#: tempex: YYYY0531-YYYY0603 vvv
-	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
-	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
-	2::temp 20199,6318 20262,6493 20225,6631
-	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-	2::temp 19939,5999 20064,6290 20086,6307 20106,6357
-#: tempex ^^^
-',
-         'from' => 1717106400,
-         'id' => 2436,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              5,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
-         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2024',
-         'type' => 'gesperrt',
-         'until' => 1717279199
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -4592,34 +4535,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1111500.php
-#: by: https://viz.berlin.de/2023/05/wochenendverkehr-in-berlin-zum-dfb-pokalfinale-und-zur-adfc-sternfahrt/
-#: note: betroffene BVG-Linien fahren nicht zwischen 10h und 21h
-#: source_id: viz2021:13.491317,52.469108,12.06.2022,07:00 (inaktiv)
-#: source_id: viz2021:13.479325,52.484519,11.06.2022,13:00 (inaktiv)
-#: source_id: viz2021:13.479325,52.484519,12.06.2022,09:00 (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,11.06.2022,12:00 (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,11.06.2022,16:00 (inaktiv)
-#: source_id: viz2021:13.479413,52.484459,03.06.2023,12:00 (bis 05.06.2023) (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023) (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,04.06.2023,07:00 (bis 04.06.2023) (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,01.06.2024,12:00 (bis 03.06.2024)
-#: source_id: viz2021:13.47948,52.48449,01.06.2024,15:00 (bis 02.06.2024)
-	q4::temp 16507,7254 16428,7144
-	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
-	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
-	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16619,8606 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
-	q4::temp 15778,8990 15678,8911 15591,8848
-	q4::temp; 15591,8848 15534,8943 15445,9090 15440,9098 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
-',
-         'from' => 1717236000,
-         'id' => 3274,
-         'text' => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Puschkinallee, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 2.6.2024 07:00 bis 20:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1717351200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5357,7 +5273,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
-#: last_checked: 2024-05-30 vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
@@ -5370,7 +5286,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 ',
          'from' => 1690668000,
          'id' => 3538,
-         'text' => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Ende Mai 2024)',
+         'text' => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Anfang Juni 2024)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5884,21 +5800,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: mapillary
-#: confirmed_by: srt
-#: osm_watch: way id="978727717" version="8"
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: note: am 2024-01-20 (Sa) waren die Absperrungen weggeschoben und man konnte vermutlich passieren; Anfang April 2024: Wegearbeiten
-#: last_checked: 2024-04-06
-	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
-',
-         'from' => undef,
-         'id' => 3658,
-         'text' => 'Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg kann gesperrt sein, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6465,7 +6367,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-05-02
+#: last_checked: 2024-06-02
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -6856,24 +6758,18 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2024-03-27 vvv
+         'data' => '#: last_checked: 2024-06-02 vvv
 #: check_frequency: 60d vvv
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
 #: osm_watch: way id="381691526" version="9"
 	2::inwork 23305,14914 23318,14847 23297,14772
-#: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv
-#: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv
-#: also_indoor: traffic (ex-B,G)
-	q3::inwork 23222,14809 23297,14772 23369,14756
-	q3::inwork 23288,14719 23297,14772
-#: note ^^^
-#: add_fragezeichen ^^^
+# REMOVED (offen) --- #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv --- #: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv --- #: also_indoor: traffic (ex-B,G) ---	q3::inwork 23222,14809 23297,14772 23369,14756 --- 	q3::inwork 23288,14719 23297,14772 --- #: note ^^^ --- #: add_fragezeichen ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3918,
-         'text' => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt; außerdem Sperrung der Kreuzung Cottbusser Str./Cottbusser Platz',
+         'text' => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6881,8 +6777,8 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
-#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht, manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-05-15 (mapillary) vvv
+#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
+#: last_checked: 2024-06-01 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (s.o.) ---	q4::inwork; 10908,13978 10933,14122
@@ -7199,7 +7095,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-05-02 (mapillary)
+#: last_checked: 2024-06-01 (mapillary)
 	2::inwork 9586,17665 9396,17863
 # REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 ',
@@ -7301,7 +7197,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2024-02-23
+#: last_checked: 2024-06-02
 #: next_check: 2025-01-24
 	2::inwork 7772,12694 7521,12581
 ',
@@ -7747,19 +7643,7 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
          'type' => 'handicap',
          'until' => 1721926800
        },
-       {
-         'data' => '#: source_id: viz2021:13.565575,52.531868,12.05.2024,10:30 (bis 07.06.2024)
-#: source_id[inactive]: bvg2024:191#HIM_FREETEXT_222105
-#: source_id: bvg2024:154#HIM_FREETEXT_222105
-#: source_id: bvg2024:191#HIM_FREETEXT_222870 (bis 31.08.2024)
-	q4::inwork; 21378,14490 21342,14096 21358,13909
-',
-         'from' => 1715416200,
-         'id' => 4060,
-         'text' => 'Blumberger Damm: Richtung Süden zwischen Elisabethstr. und Cecilienstr. wegen eines Wasserrohrbruchs gesperrt, gegenüberliegender Gehweg ist frei, vom 12.05.2024 10:30 bis 07.06.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1717772400
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
@@ -7778,7 +7662,8 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
 #: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024)
-	q4::inwork; 14639,11512 14676,11572
+#: note: Länge des gesperrten Abschnitts etwa 35m
+	q3::inwork; 14639,11512 14676,11572
 #: source_id: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten)
 	q4::inwork; 14639,11512 14575,11407
@@ -7840,7 +7725,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: also_indoor: traffic (G,ex-B,W)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
-#: last_checked: 2024-06-01 vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 3d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
@@ -7870,12 +7755,15 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
 #: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024)
 #: also_indoor: traffic (H,B)
 #: note: bei rbb bis Mitte Juni (2024)
+#: note: gesperrter Bereich nur etwa 60m
+#: last_checked: 2024-06-02
 #: next_check: 2024-06-09
-	q4::inwork 23012,8575 23118,8495 23207,8421
+	q3::inwork 23012,8575 23118,8495
+# REMOVED (hier nicht) ---	q4::inwork 23118,8495 23207,8421
 ',
          'from' => undef,
          'id' => 4071,
-         'text' => 'Kohlisstr.: Wasserrohrbruch, Sperrung zwischen Lessingstr. und Wielandstr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 21.6.2024',
+         'text' => 'Kohlisstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Klopstockstr. und Wielandstr., voraussichtlich bis 21.6.2024',
          'type' => 'handicap',
          'until' => 1718985600
        },

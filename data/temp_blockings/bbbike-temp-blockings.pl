@@ -7126,7 +7126,7 @@ EOF
        text  => 'Hultschiner Damm zwischen Alt-Mahlsdorf und Elsenstr. gesperrt, geplatzte Wasserleitung bis 19.01.2007 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 24639,10766 24653,10831 24740,10992 24726,11037 24693,11141 24654,11265
+	2::inwork 24639,10766 24653,10831 24672,10867 24740,10992 24726,11037 24693,11141 24654,11265
 EOF
      },
      { from  => 1182281811, # 2007-06-19 21:36
@@ -7213,7 +7213,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004452',
        data  => <<EOF,
-	2::inwork 24639,10766 24653,10831 24740,10992 24726,11037 24693,11141 24654,11265
+	2::inwork 24639,10766 24653,10831 24672,10867 24740,10992 24726,11037 24693,11141 24654,11265
 EOF
      },
      { from  => 1170098849, # 2007-01-29 20:27
@@ -11093,7 +11093,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007852',
        data  => <<EOF,
-	1::inwork 24654,11265 24693,11141 24726,11037 24740,10992 24653,10831 24639,10766
+	1::inwork 24654,11265 24693,11141 24726,11037 24740,10992 24672,10867 24653,10831 24639,10766
 EOF
      },
      { from  => 1203374120, # 2008-02-18 23:35
@@ -22114,7 +22114,7 @@ EOF
        data  => <<EOF,
 #: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
 #: by: https://www.facebook.com/KreutzigerStrassenfest/posts/pfbid02u1jwCHS1jzLAUNvuRXbJd3tsDEyJavnjqAy9uE4a9eHTHCxd9QBAjayHHy1TqK5ul (3.6.2023)
-#: source_id: viz2021:13.45938,52.51251,01.06.2024,08:00 (bis 01.06.2024)
+#: source_id: viz2021:13.45938,52.51251,01.06.2024,08:00 (bis 01.06.2024) (inaktiv)
 # REMOVED --- #: tempex: 20170630T2000-20170701T2359
 	2::temp 14161,11930 14274,12190
 EOF
@@ -32102,7 +32102,7 @@ EOF
 #: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023) (inaktiv)
 #: source_id: viz2021:13.47948,52.48449,04.06.2023,07:00 (bis 04.06.2023) (inaktiv)
 #: source_id: viz2021:13.47948,52.48449,01.06.2024,12:00 (bis 03.06.2024)
-#: source_id: viz2021:13.47948,52.48449,01.06.2024,15:00 (bis 02.06.2024)
+#: source_id: viz2021:13.47948,52.48449,01.06.2024,15:00 (bis 02.06.2024) (inaktiv)
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
@@ -35556,14 +35556,14 @@ EOF
      },
      { from  => $isodate2epoch->("2023-07-30 00:00:00"), # undef, # 
        until => undef, # 1654702215, # undef, # XXX
-       text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Ende Mai 2024)',
+       text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Anfang Juni 2024)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
-#: last_checked: 2024-05-30 vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
@@ -37457,17 +37457,15 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1717346670, # undef, # XXX
        text  => 'Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg kann gesperrt sein, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: mapillary
 #: confirmed_by: srt
 #: osm_watch: way id="978727717" version="8"
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
-#: note: am 2024-01-20 (Sa) waren die Absperrungen weggeschoben und man konnte vermutlich passieren; Anfang April 2024: Wegearbeiten
-#: last_checked: 2024-04-06
-	2::inwork 21176,16480 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
+# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein? --- #: note: am 2024-01-20 (Sa) waren die Absperrungen weggeschoben und man konnte vermutlich passieren; Anfang April 2024: Wegearbeiten --- #: last_checked: 2024-04-06
+	2::inwork 21176,16480 21137,16436 21129,16426 21107,16418 21070,16415 20996,16429 20923,16435 20898,16420
 EOF
      },
      { from  => undef,
@@ -39461,7 +39459,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-05-02
+#: last_checked: 2024-06-02
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -40896,21 +40894,16 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt; außerdem Sperrung der Kreuzung Cottbusser Str./Cottbusser Platz',
+       #text  => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt; außerdem Sperrung der Kreuzung Cottbusser Str./Cottbusser Platz',
+       text  => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2024-03-27 vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 60d vvv
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
 #: osm_watch: way id="381691526" version="9"
 	2::inwork 23305,14914 23318,14847 23297,14772
-#: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv
-#: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv
-#: also_indoor: traffic (ex-B,G)
-	q3::inwork 23222,14809 23297,14772 23369,14756
-	q3::inwork 23288,14719 23297,14772
-#: note ^^^
-#: add_fragezeichen ^^^
+# REMOVED (offen) --- #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv --- #: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv --- #: also_indoor: traffic (ex-B,G) ---	q3::inwork 23222,14809 23297,14772 23369,14756 --- 	q3::inwork 23288,14719 23297,14772 --- #: note ^^^ --- #: add_fragezeichen ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -40924,8 +40917,8 @@ EOF
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
-#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht, manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-05-15 (mapillary) vvv
+#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
+#: last_checked: 2024-06-01 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (s.o.) ---	q4::inwork; 10908,13978 10933,14122
@@ -42058,7 +42051,7 @@ EOF
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-05-02 (mapillary)
+#: last_checked: 2024-06-01 (mapillary)
 	2::inwork 9586,17665 9396,17863
 # REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 EOF
@@ -42278,7 +42271,7 @@ EOF
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2024-02-23
+#: last_checked: 2024-06-02
 #: next_check: 2025-01-24
 	2::inwork 7772,12694 7521,12581
 EOF
@@ -42943,7 +42936,7 @@ EOF
 EOF
      },
      { from  => 1715416200, # 2024-05-11 10:30
-       until => 1717772400, # 2024-06-07 17:00
+       until => 1717348295, # 1717772400, # 2024-06-07 17:00
        text  => 'Blumberger Damm: Richtung Süden zwischen Elisabethstr. und Cecilienstr. wegen eines Wasserrohrbruchs gesperrt, gegenüberliegender Gehweg ist frei, vom 12.05.2024 10:30 bis 07.06.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
@@ -42951,6 +42944,7 @@ EOF
 #: source_id[inactive]: bvg2024:191#HIM_FREETEXT_222105
 #: source_id: bvg2024:154#HIM_FREETEXT_222105
 #: source_id: bvg2024:191#HIM_FREETEXT_222870 (bis 31.08.2024)
+#: note: betroffene Stelle ist nur 40m lang und kann auf dem Bürgersteig umfahren werden
 	q4::inwork; 21378,14490 21342,14096 21358,13909
 EOF
      },
@@ -42988,7 +42982,8 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
 #: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024)
-	q4::inwork; 14639,11512 14676,11572
+#: note: Länge des gesperrten Abschnitts etwa 35m
+	q3::inwork; 14639,11512 14676,11572
 #: source_id: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten)
 	q4::inwork; 14639,11512 14575,11407
@@ -43066,7 +43061,7 @@ EOF
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: also_indoor: traffic (G,ex-B,W)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
-#: last_checked: 2024-06-01 vvv
+#: last_checked: 2024-06-02 vvv
 #: check_frequency: 3d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
@@ -43086,7 +43081,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2024-06-21 18:00:00"),
-       text  => 'Kohlisstr.: Wasserrohrbruch, Sperrung zwischen Lessingstr. und Wielandstr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 21.6.2024',
+       text  => 'Kohlisstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Klopstockstr. und Wielandstr., voraussichtlich bis 21.6.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796409264266936344 (Dauer ca. drei Wochen)
@@ -43094,8 +43089,11 @@ EOF
 #: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024)
 #: also_indoor: traffic (H,B)
 #: note: bei rbb bis Mitte Juni (2024)
+#: note: gesperrter Bereich nur etwa 60m
+#: last_checked: 2024-06-02
 #: next_check: 2024-06-09
-	q4::inwork 23012,8575 23118,8495 23207,8421
+	q3::inwork 23012,8575 23118,8495
+# REMOVED (hier nicht) ---	q4::inwork 23118,8495 23207,8421
 EOF
      },
      { from  => $isodate2epoch->("2024-06-06 00:00:00"), # 1 Tag Vorlauf
