@@ -89,11 +89,13 @@ for my $station_nr (@station_nrs) {
     }
 }
 
+my $srcbase = "mudways";
 my $ofile = "/tmp/mudways_enriched.bbd";
-open my $fh, "$data_dir/mudways" or die $!;
-open my $ofh, ">", "$ofile~" or die $!;
+open my $fh, "$data_dir/$srcbase" or die "Can't open $data_dir/$srcbase: $!";
+open my $ofh, ">", "$ofile~" or die "Can't write to $ofile~: $!";
 my $in_global_directives = 1;
 my @current_local_directives;
+my $source_file_printed = 0;
 while(<$fh>) {
     if ($in_global_directives) {
 	s{(#: title: Matschige Wege und Pfützen)}{"$1 (angereichert mit Bodenfeuchtewerten" . ($fix_station ? " aus $fix_station_name" : "") . ")"}e;
@@ -112,6 +114,11 @@ while(<$fh>) {
 	    print $ofh $_;
 	} else {
 	    my $bbd_line = $_;
+	    if (!$source_file_printed) {
+		print $ofh "#: source_file: $srcbase\n";
+		$source_file_printed = 1;
+	    }
+	    print $ofh "#: source_line: $.\n";
 	    my $use_station_nr;
 	    if (!$fix_station) {
 		my $r = Strassen::parse($bbd_line);

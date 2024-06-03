@@ -81,7 +81,6 @@ if ($outfile) {
     select $ofh;
 }
 
-my $mudways_enriched_linenumber_offset;
 if (!$do_consistency_check) {
     print "#: line_width: 5\n";
     print "#: line_dash.?: 4,4\n";
@@ -104,9 +103,6 @@ if (!$do_consistency_check) {
 
     print "# Angenommener BF10-Wert: $current_bf10\n";
     print "# \n";
-
-    print "#: source_file: mudways\n"; # XXX Eigentlich müsste source_file in mudways_enriched.bbd reingeschrieben und hier übernommen werden
-    $mudways_enriched_linenumber_offset = 2; # XXX besser wäre es, wenn in mudways_enriched.bbd auch source_file/line abgelegt werden würde, und wenn man das übernehmen könnte
 }
 
 my $f = "/tmp/mudways_enriched.bbd";
@@ -118,7 +114,12 @@ if (!$do_consistency_check) {
 	my $best_mud_candidate = find_best_mud_candidate($dir->{mud}, $f, $linenumber);
 	my $h_directed = $best_mud_candidate->{h} . ($r->[Strassen::CAT] =~ /;$/ ? ';' : '');
 
-	print "#: source_line: " . ($linenumber-$mudways_enriched_linenumber_offset) . "\n";
+	if ($dir->{source_file}) {
+	    print "#: source_file: $dir->{source_file}[0]\n";
+	}
+	if ($dir->{source_line}) {
+	    print "#: source_line: $dir->{source_line}[0]\n";
+	}
 	print "$r->[Strassen::NAME]; $best_mud_candidate->{text_de}\t$h_directed @{ $r->[Strassen::COORDS] }\n";
     });
 } else {
