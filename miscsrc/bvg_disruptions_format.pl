@@ -45,9 +45,14 @@ GetOptions(
 	       }
 	   },
 	   'mod-since=s' => \$mod_since,
+	   'last-check-file=s' => sub {
+	       my $file = $_[1];
+	       $mod_since = since_last_check($file);
+	       $mod_since .= 'd';
+	   },
 	   'debug' => \my $debug,
 	  )
-    or die "usage: $0 [--no-pager] [--highlight-days days] [--mod-since <num>d] [--debug]\n";
+    or die "usage: $0 [--no-pager] [--highlight-days days] [--mod-since <num>d | --last-check-file /path/to/file.org] [--debug]\n";
 
 if ($variant eq 'bvg2024') {
     require "bvg_checker.pl"; # for get_primary_line_2024
@@ -258,6 +263,37 @@ sub remove_boring_unicode {
     my $s = shift;
     $s =~ s/[\x{200b}\x{2060}]//g;
     $s;
+}
+
+sub since_last_check {
+    my $file = shift;
+    require DateTime;
+    require DateTime::Format::Strptime;
+    require DateTime::Duration;
+    require POSIX;
+
+    my $found = 0; 
+    my $now = DateTime->now(time_zone => "local");
+    my $parser = DateTime::Format::Strptime->new(
+        pattern => "%Y-%m-%d %H:%M",
+        time_zone => "local"
+    );
+
+    open my $fh, $file or die $!;
+    while(<$fh>) {
+	if (/^\*+\s+TODO\s+BVG disruptions/) { $found = 1; }
+	if ($found && /- State\s+"DONE"\s+from\s+"TODO"\s+\[(\d{4}-\d{2}-\d{2}\s+\w{2}\s+\d{2}:\d{2})\]/) {
+	    my $date_str = $1;
+	    $date_str =~ s/\s+\w{2}\s+/ /;  # Remove the weekday
+	    my $date = $parser->parse_datetime($date_str);
+	    my $duration = $now->subtract_datetime($date);
+	    my $days = $duration->in_units("days") + $duration->in_units("hours") / 24 + $duration->in_units("minutes") / 1440;
+	    return sprintf("%.1f", POSIX::ceil($days * 10) / 10);  # Round up to one decimal place
+	}
+    }
+    if (!$found) {
+	die "Cannot find last date of 'BVG disruptions' line in $file";
+    }
 }
 
 __END__
