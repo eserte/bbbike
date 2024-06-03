@@ -800,7 +800,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2024-05-29
+#: last_checked: 2024-06-01 (mapillary)
 #: check_frequency: 90d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
@@ -985,6 +985,7 @@ Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2::inwork 18831,14823
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11496 (Anfrage)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1448969.php (zum Ersatzneubau der Hellersdorfer Brücken)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hellersdorfer-bruecken/
+#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-bauen/der-senat-stellt-planungen-fuer-ersatzbauwerk-ueber-die-wuhle-vor_a416776 (Sperrung 2025, Hilfsbrücke für Fußgänger+Radfahrer, Bauarbeiten bis Ende 2025)
 #: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022) (bis 16.11.2022) (bis 29.11.2022) (bis 13.11.2023) (bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025)
 #: source_id: viz2021:13.575415,52.540241,04.07.2023,06:00 (hier nur Kfz-Verkehr, bis 13.11.2023) (bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025)
 #: source_id: viz2021:13.590289,52.539403,04.07.2023,06:00 (östlicher Abschnitt der Eisenacher; bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025)
@@ -1126,7 +1127,7 @@ Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 10
 # REMOVED --- #: osm_watch: way id="1056377427" version="3"
 #: osm_watch: way id="1032897295" version="9"
 #: osm_watch: way id="1056377426" version="6"
-#: also_indoor: traffic (ex-G,ex-H,B)
+#: also_indoor: traffic (G,ex-H,B,W)
 #: priority: #A
 #: last_checked: 2024-05-05
 #: check_frequency: 30d
@@ -4970,6 +4971,8 @@ Anna- und Hermann-Muthesius-Steig: einige Fußgänger, Bäume auf dem Weg	q2 -3126,
 Delmer Steig: einige Fußgänger	q2 11895,1489 11865,1564
 # 
 (Theodorpark - Hultschiner Damm): kurvig, ein kurzer steiler Abschnitt	q2 24762,10850 24707,10862 24690,10859 24672,10867
+# 
+(Raoul-Wallenberg-Str. - Marzahner Promenade): Fußgänger, eng, Kurve	q3 20832,15981 20788,15968 20761,15940
 # 
 ######################### User Contributions #################################
 # 

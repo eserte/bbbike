@@ -9668,7 +9668,7 @@ EOF
        text  => 'Calau, L52: Sperrung des Bahnübergangs, vom 13.05.2024 bis 03.06.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 246600218 (bis 03.06.2024)
+#: source_id: 246600218 (bis 03.06.2024) (inaktiv)
 	2::inwork 51046,-73683 51081,-73709 51147,-73755
 EOF
      },
@@ -13045,12 +13045,16 @@ EOF
 	2::inwork 45751,72662 46186,72249 46555,72293 46765,72194 47233,71473 48093,70968 48162,70928 48237,70892 48672,70933
 EOF
      },
-     { from  => 1221948000, # 2008-09-21 00:00
-       until => 1229295600, # 2008-12-15 00:00
-       text  => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-14.12.2008 ',
-       type  => 'handicap',
+     { from  => $isodate2epoch->("2024-06-09 00:00:00"), # 1221948000, # 2008-09-21 00:00
+       until => $isodate2epoch->("2024-07-13 16:00:00"), # 1229295600, # 2008-12-15 00:00
+       #text  => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-14.12.2008 ',
+       text  => 'Biesenthal - Sophienstädt: Deckensanierung, Sperrung der Straße, vom 10.06.2024 08:00 Uhr bis 13.07.2024 16:00 Uhr',
+       type  => 'gesperrt',
        data  => <<EOF,
-	q4::inwork 24120,41684 24102,41213 24106,41050 24185,40670 24374,40395
+# alt:	q4::inwork 24120,41684 24102,41213 24106,41050 24185,40670 24374,40395
+#: next_check_id: SOPHIENSTAEDT-2024
+#: source_id: LS/221-E/24/059 (bis 13.07.2024)
+	2::inwork 24102,41213 24120,41684 23394,42958 23357,43131 23086,43442 22931,43755 22555,44075 22254,44560 22072,44842
 EOF
      },
      { from  => 1224540000, # 2008-10-21 00:00
@@ -31901,7 +31905,7 @@ EOF
 #: source_id[inactive]: bvg2021:188#BVG259885_0
 #: source_id[inactive]: bvg2021:188#BVG323876_0
 #: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024)
-#: source_id: viz2021:13.30246,52.44494,31.05.2024,10:09 (bis 12.07.2024)
+#: source_id: viz2021:13.30246,52.44494,31.05.2024,10:09 (bis 12.07.2024) (inaktiv)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (ex-H,G,B[weiter westlich],W) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -32101,7 +32105,7 @@ EOF
 #: source_id: viz2021:13.479413,52.484459,03.06.2023,12:00 (bis 05.06.2023) (inaktiv)
 #: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023) (inaktiv)
 #: source_id: viz2021:13.47948,52.48449,04.06.2023,07:00 (bis 04.06.2023) (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,01.06.2024,12:00 (bis 03.06.2024)
+#: source_id: viz2021:13.47948,52.48449,01.06.2024,12:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.47948,52.48449,01.06.2024,15:00 (bis 02.06.2024) (inaktiv)
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
@@ -33076,7 +33080,7 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: last_checked: 2024-05-17 (okas)
+#: last_checked: 2024-05-29 (okas)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-01-15
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
@@ -34707,7 +34711,7 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="18"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-05-18
+#: last_checked: 2024-05-29 (okas)
 #: check_frequency: 120d
 	2::inwork 9699,-600 9562,-619
 EOF
@@ -34934,7 +34938,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?)
 #: note: Halteverbotsschilder mittlerweile bis 07.06.2024
 #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv
-#: last_checked: 2024-05-29 vvv
+#: last_checked: 2024-06-01 (mapillary) vvv
 #: next_check: 2024-06-07 vvv
 Jahnstr.	q4::inwork; 12833,6127 13027,6168
 Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127
@@ -35548,7 +35552,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-05-18
+#: last_checked: 2024-06-01 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -40901,7 +40905,7 @@ EOF
 #: last_checked: 2024-06-02 vvv
 #: check_frequency: 60d vvv
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt? Falls nicht, hat sich die Wegoberfläche geändert?
-#: osm_watch: way id="381691526" version="9"
+#: osm_watch: way id="381691526" version="10"
 	2::inwork 23305,14914 23318,14847 23297,14772
 # REMOVED (offen) --- #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv --- #: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv --- #: also_indoor: traffic (ex-B,G) ---	q3::inwork 23222,14809 23297,14772 23369,14756 --- 	q3::inwork 23288,14719 23297,14772 --- #: note ^^^ --- #: add_fragezeichen ^^^
 #: check_frequency ^^^
@@ -42762,7 +42766,8 @@ EOF
        text  => 'Am Rosenhag: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025)
+#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025)
+#: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 	q4::inwork; 25050,13539 25163,13494
@@ -42921,7 +42926,7 @@ EOF
 #: by: https://wilhelmstadt-bewegt.de/ba3-weissenburger-adamstrasse/?proj=Umbau%20der%20Pichelsdorfer%20Stra%C3%9Fe&singlec=baustellen-ticker-pichelsdorfer-strasse (März bis Herbst 2024)
 #: by: https://wilhelmstadt-bewegt.de/wp-content/uploads/2024/02/230720_BA3_Infoflyer-Ausschnitt-1024x269.jpg (hier allerdings keine Sackgasse zu sehen)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1428086.php (18.03.2024 bis Herbst 2024)
-#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024)
+#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024) (bis 21.06.2024, weitere Bauabschnitte folgen)
 Franzstr.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3637,12668 -3446,12728
 Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12762 -3739,12756
 EOF
@@ -42975,17 +42980,19 @@ EOF
 EOF
      },
      { from  => 1716181200, # 2024-05-20 07:00
-       until => 1717426800, # 2024-06-03 17:00
-       text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr. sowie zwischen Boxhagener Str. und Siegfried-Hirschmann-Park, Fahrtrichtung jeweils gesperrt, vom 21.05.2024 07:00 bis 03.06.2024 17:00',
+       until => $isodate2epoch->("2024-06-27 17:00:00"), # 1717426800, # 2024-06-03 17:00
+       #text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr. sowie zwischen Boxhagener Str. und Siegfried-Hirschmann-Park, Fahrtrichtung jeweils gesperrt, vom 21.05.2024 07:00 bis 03.06.2024 17:00',
+       text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr., Fahrtrichtung gesperrt, bis 27.06.2024 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
 #: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
-#: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024)
-#: note: Länge des gesperrten Abschnitts etwa 35m
-	q3::inwork; 14639,11512 14676,11572
+#: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024) (inaktiv)
+# REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 35m ---	q3::inwork; 14639,11512 14676,11572
 #: source_id: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
-#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten)
+#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024)
+#: also_indoor: traffic (B)
+#: note: bei rbb in beiden Richtungen gesperrt
 	q4::inwork; 14639,11512 14575,11407
 EOF
      },
@@ -43117,10 +43124,19 @@ EOF
        text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 31.05.2024 20:00 bis 03.06.2024 06:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024)
+#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
 #: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
 	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
+EOF
+     },
+     { from  => 1717304400, # 2024-06-02 07:00
+       until => 1718982000, # 2024-06-21 17:00
+       text  => 'Bruno-Bürgel-Weg: Bauarbeiten in Höhe Stadion, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.06.2024 07:00 bis 21.06.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.543945,52.454049,03.06.2024,07:00 (bis 21.06.2024)
+	q4::inwork 20435,5460 20348,5509 20065,5534 19814,5512
 EOF
      },
     );

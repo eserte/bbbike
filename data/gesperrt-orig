@@ -3950,8 +3950,7 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 #: last_checked: 2024-05-29 (osm) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-11-11 vvv
-#: osm_watch: way id="1198442169" version="9"
-Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
+# REMOVED (laut osm hier offen) --- #: osm_watch: way id="1198442169" version="10" --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
 #: osm_watch: way id="1152661787" version="27"
 # REMOVED (hier offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503
 Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -45,15503 59,15518
@@ -4333,7 +4332,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED (offen) --- #: next_check_id: AUERDREIECK-2022 --- #: last_checked: 2023-10-08 --- #: check_frequency: 7d --- #: next_check: 2023-10-31 --- Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
-#: osm_watch: note 3250345 2
+#: osm_watch: note 3250345 3
 #: last_checked: 2024-06-02
 #: check_frequency: 180d
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
@@ -4614,9 +4613,9 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
 # REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
-#: osm_watch: way id="4713304" version="45"
+#: osm_watch: way id="4713304" version="46"
 #: priority: #A
-#: last_checked: 2024-03-26
+#: last_checked: 2024-05-30
 #: check_frequency: 360d
 #: next_check: 2025-12-31
 Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
@@ -4656,7 +4655,7 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9288 (Antrag)
 #: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024)
 #: XXX hier wird eine neue Unterführung gebaut vvv
-#: last_checked: 2024-05-18 vvv
+#: last_checked: 2024-05-29 (okas) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-09-30 vvv
 #: osm_watch: way id="152434836" version="27"
