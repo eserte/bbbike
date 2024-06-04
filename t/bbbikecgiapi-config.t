@@ -21,6 +21,8 @@ BEGIN {
     }
 }
 
+use Scalar::Util qw(looks_like_number);
+
 use BBBikeTest qw(check_cgi_testing $cgidir eq_or_diff get_cgi_config);
 
 check_cgi_testing;
@@ -108,6 +110,19 @@ my $cgitesturl = "$cgidir/bbbike-test.cgi";
 	 with_cat_display	    => JSON::XS::false,
 	 with_comments		    => JSON::XS::true
 	};
+}
+
+{
+    my $resp = get_cgi_config cgiurl => $cgiurl, optmod => 1;
+    my $optmod = 'Apache::Session'; # a random optional module
+    my $optmod_info = $resp->{modules_info}{$optmod};
+    ok $optmod_info, "info for optional module $optmod";
+    my $installed = $optmod_info->{installed};
+    ok $installed eq JSON::XS::true || $installed eq JSON::XS::false, 'installed is a boolean';
+    if ($installed) {
+	ok looks_like_number($optmod_info->{version}), "$optmod has a version which looks like a number"
+	    or diag explain $optmod_info;
+    }
 }
 
 {

@@ -1187,6 +1187,7 @@ sub get_cgi_config (;@) {
 	set_user_agent($ua);
     }
     my $respref = delete $opts{resp};
+    my $optmod = delete $opts{optmod};
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
     my $decode_json = eval { require JSON::XS; \&JSON::XS::decode_json };
@@ -1196,6 +1197,9 @@ sub get_cgi_config (;@) {
     }
 
     my $url = $_cgiurl . "?api=config";
+    if ($optmod) {
+	$url .= "&with=optmod";
+    }
     my $resp = $ua->get($url);
     if ($respref) { $$respref = $resp }
     my $data = $decode_json->($resp->decoded_content(charset => 'none'));

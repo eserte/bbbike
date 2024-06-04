@@ -17,9 +17,12 @@ package BBBikeCGI::API;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 use JSON::XS qw();
+use List::Util qw(first);
+
+use BBBikeCGI::Util;
 
 require Karte::Polar;
 require Karte::Standard;
@@ -69,11 +72,32 @@ sub action_config {
     require BBBikeCGI::Config;
     my $r = BBBikeCGI::Config->the_config('json');
 
+    my @optional_modules;
+    if (first { /^(opt|optional)_?(mod|module|modules)$/ } BBBikeCGI::Util::my_multi_param($q, 'with')) {
+	push @optional_modules, qw(
+	    Apache::Session
+	    Apache::Session::Counted
+	    GD
+	    Imager
+	    Image::Magick
+	    PDF::Create
+	    Cairo
+	    Pango
+	    SVG
+	    GD::Barcode::QRcode
+	    Imager::QRCode
+	    Palm::PalmDoc
+	    XML::LibXML
+	    XML::Twig
+	);
+    }
+
     my %modules_info;
     for my $module_name (
 			 'Geo::Distance::XS',
 			 'Geo::SpaceManager',
 			 'YAML::XS', # for BBBikeYAML
+			 @optional_modules,
 			) {
 	$modules_info{$module_name} = _module_info($module_name);
     }
