@@ -101,7 +101,7 @@ sub _module_info_via_module_metadata {
     if ($mod) {
 	my $ret = { installed => JSON::XS::true };
 	my $ver = $mod->version;
-	if ($ver->can('stringify'))  {
+	if (ref $ver && $ver->can('stringify'))  {
 	    $ret->{version} = $ver->stringify; # stringify for json
 	} else {
 	    warn "Unexpected: cannot get version for '$module_name' via Module::Metadata";
