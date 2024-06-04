@@ -31886,7 +31886,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
        until => undef, # $isodate2epoch->("2024-02-05 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende Mai 2024, vermutlich noch länger',
+       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende Juni 2024, vermutlich noch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
@@ -31904,7 +31904,7 @@ EOF
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id[inactive]: bvg2021:188#BVG259885_0
 #: source_id[inactive]: bvg2021:188#BVG323876_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024)
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024) (bis 29.06.2024 + weitere Arbeiten)
 #: source_id: viz2021:13.30246,52.44494,31.05.2024,10:09 (bis 12.07.2024) (inaktiv)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (ex-H,G,B[weiter westlich],W) vvv
@@ -31919,7 +31919,7 @@ EOF
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2024-05-05 vvv
-#: next_check: 2024-07-12 vvv
+#: next_check: 2024-06-29 vvv
 # REMOVED (hier nicht mehr) ---	q3::inwork; 4214,4595 4039,4500
 # REMOVED (hier nicht mehr) --- Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
@@ -42766,8 +42766,9 @@ EOF
        text  => 'Am Rosenhag: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025)
+#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025)
+#: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 	q4::inwork; 25050,13539 25163,13494
@@ -43066,9 +43067,9 @@ EOF
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
 #: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: also_indoor: traffic (G,ex-B,W)
+#: also_indoor: traffic (H,G,B,W)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
-#: last_checked: 2024-06-02 vvv
+#: last_checked: 2024-06-04 (traffic) vvv
 #: check_frequency: 3d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
@@ -43087,18 +43088,18 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-06-21 18:00:00"),
-       text  => 'Kohlisstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Klopstockstr. und Wielandstr., voraussichtlich bis 21.6.2024',
+       until => $isodate2epoch->("2024-06-25 17:00:00"),
+       text  => 'Kohlisstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Klopstockstr. und Wielandstr., voraussichtlich bis 25.6.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796409264266936344 (Dauer ca. drei Wochen)
 #: source_id: bvg2024:108#HIM_FREETEXT_224826 (hier nur bis 9.6.2024)
-#: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024)
+#: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024) (inaktiv)
+#: source_id: viz2021:13.589683,52.480279,31.05.2024,01:30 (bis 25.06.2024)
 #: also_indoor: traffic (H,B)
-#: note: bei rbb bis Mitte Juni (2024)
+#: note: bei rbb bis Mitte Juni (2024); mittlerweile bis 25.06.2024
 #: note: gesperrter Bereich nur etwa 60m
-#: last_checked: 2024-06-02
-#: next_check: 2024-06-09
+# REMOVED --- #: last_checked: 2024-06-02 --- #: next_check: 2024-06-09
 	q3::inwork 23012,8575 23118,8495
 # REMOVED (hier nicht) ---	q4::inwork 23118,8495 23207,8421
 EOF
@@ -43127,6 +43128,7 @@ EOF
 #: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
 #: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
+#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
 	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
 EOF
      },
@@ -43137,6 +43139,38 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.543945,52.454049,03.06.2024,07:00 (bis 21.06.2024)
 	q4::inwork 20435,5460 20348,5509 20065,5534 19814,5512
+EOF
+     },
+     { from  => 1719871200, # 2024-07-02 00:00
+       until => 1725141599, # 2024-08-31 23:59
+       text  => 'Uferpromenade zwischen Weidendammer Brücke und Ebertsbrücke: Bauarbeiten, Sperrung, voraussichtlich vom 3. Juli 2024 bis Ende August 2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1452894.php
+#: XXX Wirken sich die Bauarbeiten auf die Wegbeschaffenheit aus? Stimmt q2 eigentlich noch?
+#: next_check: 2024-08-31
+	2::inwork 9538,12993 9508,12991 9279,12953
+EOF
+     },
+     { from  => 1717416660, # 2024-06-03 14:11
+       until => 1718679600, # 2024-06-18 05:00
+       text  => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Moissistr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, vom 04.06.2024 14:11 bis 18.06.2024 05:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.55316,52.43396,04.06.2024,14:11 (bis 18.06.2024)
+#: note: bei rbb "bis auf weiteres"
+	q4::inwork 20717,3310 20478,3156
+EOF
+     },
+     { from  => 1717394400, # 2024-06-03 08:00
+       until => 1717783200, # 2024-06-07 20:00
+       text  => 'Schinkelplatz, Niederlagstr.: Veranstaltung, mögliche Sperrung, vom 04.06.2024 08:00 bis 07.06.2024 20:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Sperrung der südlichen Fahrbahn UdL erwähnt; bis 07.06.2024)
+#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erwähnt; bis 07.06.2024)
+	2::temp 9934,12420 9943,12364
+	2::temp 9990,12404 9996,12372
 EOF
      },
     );
