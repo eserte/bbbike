@@ -1874,7 +1874,7 @@ Hielscherstr.: Asphaltierung geplant	?::projected 7558,19886 7604,19988 7695,201
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/senatsverkehrsverwaltung-legt-zwei-radwegprojekte-wegen-wegfalls-von-parkplaetzen-auf-eis_a386966
 #: source_id: viz2021:13.176418,52.539708,25.08.2022,10:00 (Leitungsarbeiten bis 31.10.2022) (inaktiv)
 #: source_id: viz2021:13.181672,52.538612,27.02.2023,09:00 (Leitungsarbeiten bis 05.05.2023) (bis 11.08.2023) (inaktiv)
-#: last_checked: 2023-08-20
+#: last_checked: 2024-04-27 (mapilio)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-08-11
 Seegefelder Str.: Umbau/Sanierung des Radwegs	?::projected -5257,14668 -5097,14599 -5013,14565 -4924,14535 -4724,14482
@@ -1901,7 +1901,7 @@ Kisselnallee: Radweg bzw. Radstreifen geplant	?::projected -4337,16494 -4544,159
 #: XXX oder vielleicht passiert hier was im Zuge des Bebauungsplans VIII-320 (Verbreiterung des Seegefelder Weges zwischen Finkenkruger Weg und Hamburger Str.)?
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/b-plan-reinplan-21-05-2019.pdf
 #: osm_watch: way id="22907573" version="31"
-#: last_checked: 2023-10-11
+#: last_checked: 2024-04-27 (mapilio)
 #: check_frequency: 180d
 Seegefelder Weg: Radweg geplant	?::projected -8198,15648 -8309,15691 -8339,15657 -8450,15702
 # 
@@ -1909,7 +1909,7 @@ Seegefelder Weg: Radweg geplant	?::projected -8198,15648 -8309,15691 -8339,15657
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11794 (Anfrage; Abh‰ngung vom Altst‰dter Ring?)
 #: osm_watch: way id="30718922" version="25"
-#: last_checked: 2024-02-17
+#: last_checked: 2024-04-27 (mapilio)
 #: check_frequency: 120d
 Seegefelder Str.: aus dem Radweg werden Radstreifen	?::projected -3842,14171 -3624,14113 -3552,14082
 # 
@@ -3756,7 +3756,7 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8917,5986 -8871,628
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11326
 #: XXX Bebauungsplan VIII-320
 #: osm_watch: way id="815559895" version="12"
-#: last_checked: 2023-10-11
+#: last_checked: 2024-04-27 (mapilio)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-09-01
 Seegefelder Weg: Verbreiterung der Straﬂe + Anlage von Radspuren geplant	?::projected -7416,15328 -7513,15368 -7736,15460 -7840,15503 -7961,15552 -8066,15595 -8198,15648
@@ -4792,7 +4792,7 @@ Rauchstr.: Busspur in "finaler Abstimmung"	?::projected; -2728,17038 -2908,17072
 #: by: https://www.berliner-zeitung.de/mensch-metropole/busspuren-in-gefahr-warum-in-berlin-noch-mehr-bvg-fahrstreifen-verschwinden-koennten-li.2206041 (Erw‰hnung)
 #: osm_watch: way id="323528039" version="11"
 #: XXX: eine Stummel-Busspur existiert mittlerweile im Bereich der Haltestelle, kommt noch mehr?
-#: last_checked: 2024-02-06 (viz)
+#: last_checked: 2024-04-27 (mapilio)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-06-30
 Brunsb¸tteler Damm: neue Busspur wurde angeordnet	?::projected; -3824,13947 -3625,13889
@@ -8294,11 +8294,13 @@ Schichauweg - Freizeitpark Marienfelde: Planung einer Erschlieﬂungsstraﬂe (verke
 #: next_check: 2026-12-31
 Bruno-Taut-Straﬂe 6: Erschlieﬂungsstraﬂe entsteht	? 21685,916 21745,997 21882,1026
 # 
+#: next_check_id: FLORIANGEYER-2023
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1417686.php ("Cheops-Pflaster", bis September/Oktober 2024)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/fahrbahnarbeiten-gehen-weiter_a407945
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1453440.php
 #: note: Halteverbotsschilder ab April 2024, allerdings ist im Mai 2024 noch immer nichts passiert
 #: last_checked: 2024-05-15
-#: next_check: 2024-10-31
+#: next_check: 2024-09-16
 Florian-Geyer-Str.: Bauarbeiten geplant, Verbesserung der Qualit‰t	? 20066,3746 19992,3839
 # 
 #: by: https://www.maz-online.de/lokales/potsdam/umwege-in-potsdam-nord-sued-verbindung-kuhfortdamm-wird-ein-jahr-saniert-HCY5W2M7WVEM3GAK2XMAQSQME4.html (bis 31. Oktober 2024, Radfahrer kommen noch durch)

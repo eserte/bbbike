@@ -5193,8 +5193,7 @@ Verbundsteinpflaster	RW1;RW1 -6098,15559 -6116,15407 -6148,15306 -6175,15261 -62
 	RW3;RW4 -6405,14971 -6429,14879 -6439,14837 -6438,14770
 	RW4;RW3 -6438,14770 -6438,14609 -6442,14535
 	RW1; -6276,14924 -5999,14829 -5774,14843
-	RW;RW1 -6276,14924 -6405,14971
-	RW1;RW1 -6405,14971 -6507,15007
+	RW1;RW1 -6276,14924 -6405,14971 -6507,15007
 	RW1;RW2 -3625,13889 -3824,13947
 	RW1;RW1 -3824,13947 -3891,13968 -3935,13980
 	RW1; -3935,13980 -4018,14001
@@ -5334,9 +5333,9 @@ Verbundsteinpflaster, uneben und Wurzelhebungen	RW1; 12507,5228 12336,5219 12060
 Verbundsteinpflaster	RW1; 11799,5191 11676,5185
 #: note: am Anfang existiert keine Möglichkeit, um auf die Fahrbahn zu fahren (Bordstein, parkende Autos)
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 11676,5185 11473,5131
-gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 11473,5131 11386,5107
-	RW4; 11386,5107 11266,5097
-Gehweg für Radfahrer frei	RW1; 11266,5097 10868,5187 10800,5203
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 11473,5131 11376,5102
+	RW4; 11376,5102 11302,5098
+Gehweg für Radfahrer frei	RW1; 11302,5098 10868,5187 10800,5203
 neues Verbundsteinpflaster	RW1; 23082,15329 23067,15429 23060,15588 23080,15700
 neues Verbundsteinpflaster	RW2; 23080,15700 23060,15588
 neues Verbundsteinpflaster	RW1; 23060,15588 23067,15429 23082,15329
@@ -6654,7 +6653,7 @@ Verbundsteinpflaster	RW1; 2375,19554 2310,19575 1966,19548 1945,19622 1896,19801
 	RW1; 1966,19548 2310,19575 2375,19554 2477,19520
 	RW2; 12165,22323 12179,22369 12185,22465 12187,22486
 	RW3; 10800,5203 10868,5187
-Gehweg für Radfahrer frei	RW1; 10868,5187 11266,5097 11386,5107 11473,5131 11676,5185 11799,5191 11871,5195 12060,5204 12336,5219
+Gehweg für Radfahrer frei	RW1; 10868,5187 11302,5098 11376,5102 11473,5131 11676,5185 11799,5191 11871,5195 12060,5204 12336,5219
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 12336,5219 12507,5228
 	RW3;RW3 7690,4563 7911,4465
 	RW3; 7911,4465 7994,4430
@@ -8799,7 +8798,7 @@ Radspur teilweise hinter parkenden Autos, teilweise mit Leitboys	RW4; 6846,4808 
 #: XXX Radweg wegen Bauarbeiten aufgehoben, Radfahrüberholverbot
 #: source_id: viz2021:13.35316,52.44914,07.11.2023,18:41 (bis 10.01.2024) (inaktiv)
 #: source_id: viz2021:13.35316,52.44914,20.02.2024,16:21 (bis 05.04.2024) (inaktiv)
-#: source_id: viz2021:13.354446,52.449029,22.05.2023,07:00 (bis 8.11.2023) (bis 10.01.2024) (bis 21.02.2024) (bis 05.04.2024) (bis 05.06.2024)
+#: source_id: viz2021:13.354446,52.449029,22.05.2023,07:00 (bis 8.11.2023) (bis 10.01.2024) (bis 21.02.2024) (bis 05.04.2024) (bis 05.06.2024) (inaktiv)
 #: osm_watch: note 3870927 2
 #: last_checked: 2024-02-06 (mapillary)
 #: next_check: 2024-06-05

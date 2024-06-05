@@ -31,10 +31,10 @@ Zabel-Krüger-Damm/Alt-Lübars: Gegenverkehrsregelung	X::inwork::alternating 6805,
 #: valid: -20240621
 Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
 # 
-#: source_id: viz2021:13.593606,52.444772,15.04.2024,10:00 (bis 17.06.2024)
+#: source_id: viz2021:13.593606,52.444772,15.04.2024,10:00 (bis 17.06.2024) (bis 02.08.2024)
 #: last_checked: 2024-05-15
-#: next_check: 2024-06-17
-#: valid: -20240617
+#: next_check: 2024-08-02
+#: valid: -20240802
 Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
 # 
 #: source_id: viz2021:13.533233,52.421662,28.02.2024,12:14 (bis 31.05.2024) (inaktiv)
@@ -1329,9 +1329,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderung und Kontaktschleifen für Radfahrer Richtung Westen
 	X 10291,4353
 	X 10800,5203
-	X 11266,5097
+	X 11302,5098
 #: note: Anforderungsampel für Radfahrer in Richtung Westen
-	X 11386,5107
+	X 11376,5102
 	X 6780,3497
 	X 6996,3762
 	X 7159,4023
@@ -4020,7 +4020,6 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F -12235,-713
 	B -8429,-2860
 	B -9996,-5596
-#: note: ^^^
 	X -12358,-2278
 	F -10069,-4508
 	F -12432,-226

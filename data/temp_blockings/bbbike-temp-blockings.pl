@@ -39051,9 +39051,10 @@ EOF
 	2::inwork 39383,33334 39478,33359 40356,33162 41112,33306 41500,33497 41751,33561 41925,33512
 EOF
      },
-     { from  => 1682892000, # 2023-05-01 00:00
-       until => $isodate2epoch->("2023-12-31 23:59:59"), # undef, # $isodate2epoch->("2023-07-08 18:00:00"), # 1688162399, # 2023-06-30 23:59
-       text  => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., voraussichtlich bis Ende 2023', # was: Ende der Bauarbeiten unbekannt', # was: "voraussichtlich bis 08.07.2023"
+     { from  => $isodate2epoch->("2024-06-16 00:00:00"), # 1682892000, # 2023-05-01 00:00
+       until => $isodate2epoch->("2024-09-16 18:00:00"), # $isodate2epoch->("2023-12-31 23:59:59"), # undef, # $isodate2epoch->("2023-07-08 18:00:00"), # 1688162399, # 2023-06-30 23:59
+       #text  => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., voraussichtlich bis Ende 2023', # was: Ende der Bauarbeiten unbekannt', # was: "voraussichtlich bis 08.07.2023"
+       text  => 'Florian-Geyer-Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Altheider Str. und Silberberger Str., voraussichtlich bis Mitte September 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: FLORIANGEYER-2023
@@ -39063,9 +39064,11 @@ EOF
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1453440.php (ab 17. Juni 2024 für 3 Monate)
 #: source_id: viz2021:13.54378,52.43796,20.11.2023,06:00 (hier zwischen Altheider Str. und Silberberger Str.; bis 31.12.2023) (inaktiv)
-# REMOVED --- #: osm_watch: way id="1172668082" version="12" --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm --- #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht? --- #: last_checked: 2023-11-24 (osm) --- #: check_frequency: 90d --- #: next_check: 2023-12-31
-	q4::inwork 20159,3623 20066,3746
+# REMOVED --- #: osm_watch: way id="1172668082" version="12" --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm --- #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht? --- #: last_checked: 2023-11-24 (osm) --- #: check_frequency: 90d --- #: next_check: 2023-12-31 ---	q4::inwork 20159,3623 20066,3746
+#: next_check: 2024-09-16
+	q4::inwork 20066,3746 19992,3839
 EOF
      },
      { from  => 1682571600, # 2023-04-27 07:00
@@ -42496,9 +42499,9 @@ Togostr. -> Antwerpener Str.	3::inwork 6530,15849 6555,15827 6690,15671
 EOF
      },
      { from  => 1710741600, # 2024-03-18 07:00
-       until => $isodate2epoch->("2024-06-06 17:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
+       until => $isodate2epoch->("2024-06-21 17:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
        #text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der östlichen Anbindung, vom 19.03.2024 07:00 bis 11.04.2024 23:59',
-       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 06.06.2024',
+       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 21.06.2024',
        type  => 'gesperrt',
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 6499,10086 6504,9961 6504,9865\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
@@ -42506,7 +42509,7 @@ EOF
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
 #: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
 #: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024) (bis 23.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024)
+#: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024) (bis 21.06.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
@@ -42514,7 +42517,7 @@ EOF
 #: last_checked: 2024-05-28 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
-#: next_check: 2024-06-06 vvv
+#: next_check: 2024-06-21 vvv
 Martin-Luther-Str. -> östliche Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
@@ -43197,6 +43200,21 @@ EOF
 #: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028)
 	q4::inwork 5848,14977 5984,14819
+EOF
+     },
+     { from  => 1717884000, # 2024-06-09 00:00
+       dont_check_date => 1, until => undef, # 1719698400, # 2024-06-30 00:00
+       text  => 'Grüne Trift am Walde: Bauarbeiten zwischen Brassenpfad bis Waldnesselweg, Sperrung, vom 10.06.2024 bis 29.06.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: GRUENETRIFTAMWALDE-2024
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1453468.php (10. Juni 2024 - 03.08.2024, in drei Bauphasen)
+#: note: kein Bürgersteig, deshalb 2 statt q4
+#: XXX nächste Bauphasen
+#: XXX - Waldnesselweg bis Pritstabelstraße - 01.07. bis 13.07.2024 
+#: XXX - Pritstabelstraße bis Kienappelweg - 15.07. bis 03.08.2024 
+#: next_check: 2024-06-29
+	2::inwork 23657,3508 23402,3779 23337,3762
 EOF
      },
     );
