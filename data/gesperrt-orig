@@ -1212,7 +1212,7 @@ Wittenbergplatz	1 6335,10589 6268,10588 6216,10614 6171,10657
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/amalienstrasse-einbahnstrasse-in-beide-richtungen-befahrbar_a369287 (BVV-Beschluss)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6273 (Zwischenbericht)
 #: XXX Wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
-#: last_checked: 2024-04-14
+#: last_checked: 2024-06-05
 #: check_frequency: 90d
 Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14127,17237 14151,17234 14167,17215
@@ -1620,6 +1620,8 @@ Hausvaterweg [Wohngebiet]	1s:q3 19789,18423 19704,18459
 Bahnhofsplatz S-Bhf. Hermsdorf	1 3624,23540 3610,23527 3590,23541 3581,23557 3596,23581
 # 
 Daimler-Parkplatz: Zufahrt Köpenicker Str. oft (immer?) gesperrt, auch an Werktagen	2 18471,2166 18448,2182 18320,2195
+# 
+Cotheniusstr.: Schulgelände, gesperrt	2 13430,13733 13519,13785
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3833,8 +3835,8 @@ Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 1900
 #: osm_watch: way id="1106303945" version="6"
 #: osm_watch: way id="176338611" version="18"
 #: osm_watch: note 4126450 4
-#: last_checked: 2024-05-26 (osm)
-#: check_frequency: 120d
+#: last_checked: 2024-06-05
+#: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
 Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
@@ -3852,9 +3854,10 @@ Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::i
 #: valid: -20250124
 Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581
 # 
-#: priority: #C
+#: osm_watch: note 4248173 1
 #: note: laut Baustellenschild bis Mai 2024
 #: XXX außerdem prüfen, ob die ehemaligen Schwingtore wieder angebracht werden --- Schwingtor an der westlichen Seite existiert noch immer (2024-05-07)
+#: priority: #C
 #: last_checked: 2024-05-07
 # REMOVED --- #: next_check: 2024-05-30
 # REMOVED (hier nicht mehr) --- (Berolinastr. - Mollstr.): wegen Bauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
@@ -4069,7 +4072,7 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: next_check_id: MAUERPARK-2022
 # REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"
 #: osm_watch: way id="1218990564" version="6"
-#: last_checked: 2024-05-05 (osm)
+#: last_checked: 2024-06-05
 #: check_frequency: 30d
 Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
 # 
@@ -4165,7 +4168,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-05-27
+#: last_checked: 2024-06-05
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4621,29 +4624,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
 # 
 # REMOVED (-> temp blockings) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: next_check: 2021-03-15 --- Katharina-Boll-Dornberger-Str.: Durchgang gesperrt	2::inwork 18836,3611 18943,3508
-# 
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Parkplatzfläche wird eingezogen)
-#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.713561.php
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/noch-im-fruehjahr-beginnen-bauarbeiten-fuer-neue-grundschule-an-der-conrad-blenkle-strasse_a256156 (Bauarbeiten fangen im Frühjahr 2020 an)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schulweg-zur-grundschule-im-blumenviertel-soll-sicherer-werden_a265732
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.952347.php (Baustart am 29. Juni 2020, Bauzeit zwei Jahre)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/neue-grundschule-entsteht_a279808
-#: by: https://www.deutsches-architekturforum.de/thread/14507-bauprojekte-am-velodrom-prenzlauer-berg/?postID=677089#post677089
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (Einziehung einer Grünanlage, Einziehung von Straßenland)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/spatenstich-fuer-schule_a323396
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1194420.php (Wiedereröffnung eines Spielplatzes)
-#: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2206/nachricht7294.html (Richtfest)
-#: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
-#: XXX laut osm ist die Schule 2023-02 fertig
-# REMOVED (es gibt nun einen besseren Watch) --- #: osm_watch: way id="860287005" version="6"
-# REMOVED (wurde für etwas anderes wiederverwendet) --- #: osm_watch: way id="1095306828" version="7"
-#: also_indoor: traffic (G)
-#: last_checked: 2024-02-25
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2023-02-28
-Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
-# 
+# REMOVED (-> permanenter Eintrag) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Parkplatzfläche wird eingezogen) --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.713561.php --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/noch-im-fruehjahr-beginnen-bauarbeiten-fuer-neue-grundschule-an-der-conrad-blenkle-strasse_a256156 (Bauarbeiten fangen im Frühjahr 2020 an) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schulweg-zur-grundschule-im-blumenviertel-soll-sicherer-werden_a265732 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.952347.php (Baustart am 29. Juni 2020, Bauzeit zwei Jahre) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/neue-grundschule-entsteht_a279808 --- #: by: https://www.deutsches-architekturforum.de/thread/14507-bauprojekte-am-velodrom-prenzlauer-berg/?postID=677089#post677089 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (Einziehung einer Grünanlage, Einziehung von Straßenland) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/spatenstich-fuer-schule_a323396 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1194420.php (Wiedereröffnung eines Spielplatzes) --- #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2206/nachricht7294.html (Richtfest) --- #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben --- #: XXX laut osm ist die Schule 2023-02 fertig --- # REMOVED (es gibt nun einen besseren Watch) --- #: osm_watch: way id="860287005" version="6" --- # REMOVED (wurde für etwas anderes wiederverwendet) --- #: osm_watch: way id="1095306828" version="7" --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-25 --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2023-02-28 --- Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XVI-81 --- #: XXX Wie wird die Qualität der Straße sein?--- #: osm_watch: way id="567597390" version="5" --- #: last_checked: 2021-05-09 --- #: check_frequency: 120d --- Abendseglersteig: noch in Bau	2::inwork 33167,2940 33139,2835 33267,2810 33383,2792
 # REMOVED (hier offen) --- Abendseglersteig: noch in Bau	2::inwork 33383,2792 33406,2852
 # 
@@ -4833,9 +4814,12 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
 #: check_frequency: 90d vvv
 # REMOVED (laut osm offen) --- #: osm_watch: way id="719023971" version="15" --- #: last_checked: 2024-03-04 (daf) --- Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
-#: osm_watch: way id="719023970" version="13"
+# REMOVED --- #: osm_watch: way id="719023970" version="16"
+#: osm_watch: node id="11956061128" version="1"
+#: osm_watch: node id="9814568851" version="1"
 #: last_checked: 2024-04-14 (architektur-urbanistik)
-Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251 21514,5310
+Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251
+# REMOVED (laut osm ist dieser Abschnitt offen) --- #: osm_watch: way id="719023970" version="16" --- #: last_checked: 2024-04-14 (architektur-urbanistik) --- Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21386,5251 21514,5310
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
@@ -4900,7 +4884,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-05-30 (mapillary)
+#: last_checked: 2024-06-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171

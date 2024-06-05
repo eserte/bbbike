@@ -14,7 +14,6 @@ Marggraffbr¸cke: Behelfsbr¸cke, Engstellen	q2::inwork 16747,6813 16720,6845 1667
 G¸ldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
-Antwerpener Str.: Baustelle vor der Seestr., einige Meter muss geschoben werden	q2::inwork 6555,15827 6690,15671
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (L¸tticher Str. - Luxemburger Str. (¸ber das Gel‰nde der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -1731,7 +1730,7 @@ Erich-Lodemann-Str.: einige Fuﬂg‰nger, Rampe	q2 15288,8134 15242,8182
 Allee der Kosmonauten: enge Straﬂe	q1; 20096,14127 20097,14039 20081,13993 20080,13941
 Allee der Kosmonauten [Wohngebietsweg]: einige Fuﬂg‰nger	q1 19859,13765 20038,13771 20075,13758 20114,13762
 Einbecker Str.: einige Fuﬂg‰nger	q2 17734,11408 17764,11371
-Greifenhagener Str.: einige Fuﬂg‰nger	q1 11150,15908 11176,15958
+Greifenhagener Str.: Fuﬂg‰nger	q2 11150,15908 11176,15958
 Am Landwehrkanal: Fuﬂg‰nger	q2 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897
 Knobelsdorffstr.: einige Moabiter Kissen	q0 3117,11852 2953,11830 2728,11805 2547,11788
 Wegenerstr.: ein Moabiter Kissen	q0 4495,9184 4619,9200
@@ -2987,7 +2986,7 @@ Rosenorter Steig: enge Straﬂe	q0 -1349,23497 -1451,23525 -1535,23575 -1617,23624
 Straﬂe 40 (Blankenburg): enge Straﬂe	q0 14893,20583 14945,20748 15035,21026
 (Mˆrchinger Str. - Berliner Str.): Fuﬂg‰nger	q2 1393,3183 1388,3197 1338,3300
 Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0 9030,16853 9245,16758
-Tassostr.: enge Straﬂe	q1 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13677,16281
+Tassostr.: enge Straﬂe	q1 13623,15954 13614,15984 13625,16054 13639,16113 13654,16152 13645,16192 13677,16281
 An der Wildbahn: viele parkende Autos in enger Straﬂe	q1 -1581,22553 -1447,22522 -1333,22495 -1270,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
 Wolmirstedter Weg: enge Straﬂe	q1 -4150,15638 -4216,15635 -4283,15639
 Landschˆppenpfad: Bordsteine, Fuﬂg‰nger	q2 12609,1780 12574,1866
@@ -3524,6 +3523,7 @@ Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8339,65
 Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben: gesperrt, ggfs. schieben	q4:inwork::igndisp 17619,8558 17599,8485 17581,8422
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine: gesperrt, ggfs. schieben	q4:inwork::igndisp 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
 Bremer Weg - Pariser Platz: Umwege und Engstellen wegen Absperrungen zur EM 2024	q3 8466,12197 8499,12207 8522,12187 8600,12165 8599,12221 8637,12258
+Platz des 18. M‰rz: Umwege und Engstellen wegen Absperrungen zur EM 2024	q3 8599,12221 8592,12252 8573,12325
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003
 Treskowallee, linker Radweg	q0::igndisp; 18715,10003 18748,9922

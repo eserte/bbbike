@@ -258,7 +258,7 @@ Böttgerstr.: Kopfsteinpflaster	Q2 8867,15868 8720,15914 8655,15979 8578,16057
 Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8735,15295 8899,15147
 Hussitenstr.: Kopfsteinpflaster	Q2 8899,15147 9034,14910 9108,14777
 Grenzstr.: Kopfsteinpflaster	Q2 8735,15295 8654,15201
-Grenzstr.: asphaltiert	Q0 8654,15201 8614,15156
+Grenzstr.: asphaltiert	Q0 8654,15201 8634,15178 8614,15156
 Grenzstr.: Kopfsteinpflaster	Q2 8614,15156 8570,15107
 Grenzstr.: Kopfsteinpflaster	Q2 8570,15107 8412,14923
 Scheringstr.: Kopfsteinpflaster	Q2 8899,15147 8700,14956
@@ -319,7 +319,7 @@ Pillauer Str.: Kopfsteinpflaster	Q2 13366,11651 13274,11585
 Wriezener Karree: Asphalt	Q0 12728,11850 12959,11631
 Prenzlauer Promenade: Asphalt	Q0 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12087,16322 12097,16263 12090,16199
 Straße 59: Asphalt	Q0 12458,21013 12519,20870
-Charlottenburger Str.: Asphalt	Q0 13712,16089 13642,16118 13479,16182 13445,16198 13410,16214
+Charlottenburger Str.: Asphalt	Q0 13713,16079 13639,16113 13479,16182 13445,16198 13410,16214
 Charlottenburger Str.: teilweise mäßiger Asphalt	Q1 13410,16214 13286,16267 13033,16387
 Charlottenburger Str.: Asphalt	Q0 13033,16387 12919,16438 12798,16493
 Charlottenburger Str.: teilweise mäßiger Asphalt	Q1 12798,16493 12646,16563 12560,16602
@@ -5638,6 +5638,7 @@ Gürtelstr. (Weißensee, Prenzlauer Berg) [36-39]: Beton	Q1 13378,15709 13325,1561
 (Michelangelostr. - Gürtelstr.): Beton	Q1 13337,15560 13358,15596 13325,15619
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Beton	Q0 13801,15256 13724,15309
 (Kniprodestr./Michelangelostr. - Puccinistr./Gürtelstr.): Asphalt	Q0 13724,15309 13700,15375 13687,15387 13716,15437
+(Wohngebiet Michelangelostr.): Beton	Q0 13687,15387 13597,15443
 Syringenplatz: Asphalt	Q0 14025,14519 14042,14249
 Syringenweg: Asphalt	Q0 14042,14249 14032,14099 14015,14061 13961,14020
 Straße 18: unbefestigte Straße	Q2 12942,18154 12939,18081 12902,18033
@@ -7548,6 +7549,10 @@ Goerdelerdamm: Verbundsteinpflaster	Q1 4653,14528 4897,14609 5043,14671
 Goerdelerdamm: Asphalt	Q0 4653,14528 3705,14290 3595,14267
 Goerdelerdamm: Gehwegplatten	Q0 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
 (Bernhard-Lichtenberg-Str. - Goerdelerdamm): Asphalt	Q0 3229,14224 3184,14265
+Reichweindamm: Asphalt über Beton, einige Schäden	Q1 3184,14265 3269,14316 3434,14323 3459,14337 3472,14366 3464,14407 3455,14460 3443,14535 3431,14586 3418,14661 3408,14741
+Heckerdamm: Beton mit einigen leichten Hebungen, einige kurze Asphaltabschnitte	Q0 3408,14741 3765,14746 3956,14750 4046,14754 4148,14791 4291,14947
+Friedrich-Olbricht-Damm: Beton mit einigen Schäden	Q1 4291,14947 4551,14800 4867,14636
+Friedrich-Olbricht-Damm: Asphalt	Q0 4867,14636 4894,14634 5048,14710
 (Goerdelerdamm - Nonnendamm): Beton	Q0 3106,14195 3025,14099 3007,14078
 (Goerdelerdamm - Nonnendamm): Verbundsteinpflaster	Q1 3007,14078 2912,14040
 (Goerdelerdamm - Nonnendamm): Kopfsteinpflaster	Q2 2912,14040 2817,14003 2734,13970
@@ -14529,7 +14534,7 @@ Walterhöferstr.: guter Asphalt	Q0 339,1484 338,1521 266,1815
 Straße 339: Asphalt	Q0 -8450,15702 -8479,15609
 Straße 339: Asphalt	Q0 -8479,15609 -8558,15306 -8612,15086
 Lauenburger Platz: Asphalt	Q0 6014,6160 6112,6173
-Tassostr.: guter Asphalt	Q0 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13677,16281
+Tassostr.: guter Asphalt	Q0 13623,15954 13614,15984 13625,16054 13639,16113 13654,16152 13645,16192 13677,16281
 Grunowstr. (Pankow): Kopfsteinpflaster	Q2 10705,17931 10636,18013 10582,18159
 Auguste-Viktoria-Str. (Hermsdorf): schlechtes Kopfsteinpflaster	Q3 3939,23345 3953,23401
 Auguste-Viktoria-Str. (Hermsdorf): guter Asphalt	Q0 3953,23401 3941,23486 3947,23547 3960,23647 3979,23675 4007,23709
@@ -16533,7 +16538,7 @@ Lönsstr.: guter Asphalt	Q0 14109,23278 14338,23187
 Boca-Raton-Str.: Verbundsteinpflaster	Q0 -2170,17024 -2152,17108
 Ashdodstr.: Verbundsteinpflaster	Q0 -2234,16939 -2212,17031
 Straße 265: Sandweg	Q2 -4751,9033 -4771,9033 -4862,9079 -5635,9464
-Straße 265: loser Sandweg	Q3 -5635,9464 -6306,9794 -6324,9778
+Straße 265: loser Sandweg	Q3 -5635,9464 -5825,9558 -6306,9794 -6324,9778
 Reimerweg: guter Asphalt	Q0 -6590,12606 -6791,12429
 Spieroweg: Sandweg	Q2 -6563,13403 -6575,13317
 Spieroweg: schlechter Asphalt	Q2 -6575,13317 -6595,13198
@@ -16981,7 +16986,7 @@ Simonring: guter Beton	Q1 -945,14999 -896,14888 -836,14765
 Berthold-Schwarz-Str.: guter Asphalt	Q1 -834,15053 -784,14940 -756,14884
 Stöckelstr.: guter Asphalt	Q0 -896,14888 -784,14940 -663,14996
 Straße Z: Asphalt	Q0 -638,16459 -671,16488 -708,16516
-Straße 269: fester Sandweg, stark witterungsabhängig	Q2 -5382,8880 -5657,8897 -6406,8933 -7000,8967 -7252,8982
+Straße 269: fester Sandweg, stark witterungsabhängig	Q2 -5382,8880 -5657,8897 -6087,8918 -6406,8933 -7000,8967 -7252,8982
 Straße 269: mäßiges Kopfsteinpflaster	Q2 -7252,8982 -7417,8988
 (Maximilian-Kolbe-Str. - Straße 269): witterungsabhängiger fester Sandweg	Q2 -6370,9802 -6417,9703 -6445,9266 -6406,8933
 Malschweg: mäßiger Asphalt	Q1 -5462,11326 -5416,11306

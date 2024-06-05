@@ -436,7 +436,7 @@ Bus M27	busroute_N 3556,13200 3585,13320 3642,13548
 Bus M27	busroute_N 3739,13563 3724,13702 3713,13787 3702,13865 3695,13902
 Bus M21, Bus M27	busroute_N 3005,13728 3320,13796 3695,13902
 Bus M21	busroute_N 3695,13902 3656,14150
-Bus 123	busroute_N 3408,14741 3418,14661 3431,14586 3443,14535 3455,14460 3464,14407 3472,14366 3421,14318 3269,14316 3184,14265 3169,14256 3126,14216 3106,14195
+Bus 123	busroute_N 3408,14741 3418,14661 3431,14586 3443,14535 3455,14460 3464,14407 3472,14366 3459,14337 3434,14323 3269,14316 3184,14265 3169,14256 3126,14216 3106,14195
 Bus 123	busroute_N 4291,14947 4172,15098 4148,15205 4148,15220 4150,15304 4080,15458 3992,15664
 Bus 123	busroute_N 2673,14756 2671,14653 2657,14486 2591,14296 2526,14252 2378,14249 2371,14392 2362,14582 2207,14576 2142,14573 2081,14570 2009,14567 1974,14565 1871,14561 1881,14425 1361,14431 1361,14384
 Bus 123	busroute_N 1232,15717 1232,15804 1164,15902
@@ -1911,7 +1911,7 @@ Aaron-Bernstein-Platz: nicht ausgeschildert	CS 9353,13273 9382,13265 9385,13246 
 # REMOVED --- #: XXX im Quartier Am Tacheles werden zwei Privatplätze entstehen und bekommen die Namen (fehlen in Berlin.coords.data): --- #: XXX Johannisplatz (PLZ=10117 laut LOR und DPAG) --- #: XXX laut daf ist der Zugang zum Johannisplatz provisorisch geöffnet; Mosaikpflaster
 # REMOVED --- #: XXX Aaron-Bernstein-Platz (PLZ=10117 laut LOR und DPAG)
 #: XXX noch Bauarbeiten, ein Strang noch gesperrt, wird es Schilder geben? mittlerweile sind die Bauarbeiten weitgehend vorbei, aber nicht ganz (die Johannisstr. ist noch Einbahnstraße)
-#: last_checked: 2024-05-30 (mapillary) vvv
+#: last_checked: 2024-06-05 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-03-31 vvv
 #: osm_watch: way id="941599318" version="7"

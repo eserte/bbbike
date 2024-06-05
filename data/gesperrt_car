@@ -702,8 +702,8 @@ Berliner Allee -> Mahlerstr.: Straßenbahn	3::igndisp 13737,15994 13623,15954 136
 Mahlerstr. -> Berliner Allee: Straßenbahn	3::igndisp 13665,15840 13623,15954 13508,15912
 Mahlerstr. -> Tassostr.: Straßenbahn	3::igndisp 13665,15840 13623,15954 13614,15984
 Straßenbahntrasse	3nocross::ignrte 13826,16026 13737,15994 13623,15954
-Berliner Allee -> Parkstr.: Straßenbahntrasse	3::igndisp 13623,15954 13737,15994 13712,16089
-Parkstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13712,16089 13737,15994 13826,16026
+Berliner Allee -> Parkstr.: Straßenbahntrasse	3::igndisp 13623,15954 13737,15994 13713,16079
+Parkstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13713,16079 13737,15994 13826,16026
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
 Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10276,906
 Glaserweg -> Buckower Chaussee: Mittelstreifen	3::igndisp 10237,749 10187,872 10047,813
@@ -1599,7 +1599,7 @@ Einbecker Str. -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17221,11777 172
 Ehrensfelsstr.: Durchfahrt verboten	3 18737,8686 18778,8663 18846,8616
 Ehrensfelsstr.: Durchfahrt verboten	3 18846,8616 18778,8663 18737,8686
 Buggenhagenstr.	1 14425,13780 14371,13619
-Tassostr.	1 13677,16281 13645,16192 13654,16152 13642,16118 13625,16054 13614,15984 13623,15954
+Tassostr.	1 13677,16281 13645,16192 13654,16152 13639,16113 13625,16054 13614,15984 13623,15954
 Pasedagplatz: nur für Straßenbahnen	2 14167,17215 14151,17234 14127,17237 14099,17195
 Straßenbahntrasse	3nocross::ignrte 16416,16236 16476,16216 16520,16200 16653,16150
 Suermondtstr. -> Degnerstr.: Straßenbahntrasse	3::igndisp 16520,16200 16476,16216 16458,16104
@@ -2535,7 +2535,6 @@ Kastanienallee: nur für Tram und Radfahrer	1 10916,15098 10900,15075 10881,15047
 Wallenbergstr.	1 4319,8493 4229,8499 4143,8501
 Cardinalstr.	1 21896,5724 21828,5623 21706,5541
 Schloßstr. - Feuerbachstr.: vorgeschrieben Fahrtrichtung geradeaus	3 5269,6305 5244,6261 5390,6299
-Adele-Schreiber-Krieger-Str.	1 8735,12780 8589,12772
 Blumenstr.	1 12305,12440 12118,12462
 Pflügerstr./Friedelstr.: Diagonalsperre	3 12054,9429 12066,9558 12074,9689
 Pflügerstr./Friedelstr.: Diagonalsperre	3 12074,9689 12066,9558 12054,9429
