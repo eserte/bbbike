@@ -3914,6 +3914,7 @@ Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahre
 #  PRIVATE FRAGEZEICHEN
 #
 #: ignore vvv
+#: section private Fragezeichen vvv
 # In diesem Abschnitt kommen Straßen rein, die erst einmal nicht in
 # die Datenbank aufgenommen werden sollen und somit nicht öffentlich sind.
 # Das heißt diese Strecken werden nicht bei einer erweiterten Suche aufgenommen
@@ -8382,6 +8383,7 @@ Altstadt Köpenick: Bauarbeiten an Straßenbahngleisen und Wasserleitungen geplant
 #: next_check: 2027-12-31
 Königsberger Str.: Verbreiterung und Erneuerung der Radwege	? 5256,2379 5229,2395 5191,2416 5060,2490 4968,2543 4943,2557 4750,2667 4702,2676 4526,2648 4392,2628 4348,2627 4317,2638 4233,2675 4170,2727
 # 
+#: section ^^^
 #: ignore ^^^
 # 
 ######################################################################
@@ -11200,6 +11202,7 @@ S21 2. Bauabschnitt (Richtung Norden)	? 8591,12154 8555,12483 8537,12687 8407,12
 #
 #  ÖFFENTLICHE FRAGEZEICHEN
 # 
+#: section: öffentliche Fragezeichen vvv
 # REMOVED (ja) --- #: next_check_id: KWEISENBAHNBRUECKE-2022 --- #: by: https://www.vbb.de/presse/deutsche-bahn-erneuert-bruecke-ueber-storkower-strasse-in-koenigs-wusterhausen/ (möglicherweise nur noch Richtung Norden befahrbar) --- Maxim-Gorki-Str. (Königs Wusterhausen): gibt es hier eine Einbahnstraßenregelung, gilt diese auch für Radfahrer?	? 26300,-11727 26301,-11824 26300,-11864 26299,-11896 26306,-11954 26289,-12055 26288,-12089 26274,-12153 26252,-12298
 # 
 #: XXX_osm: laut osm cobblestone
@@ -12543,3 +12546,4 @@ Triftstr. (Hohen Neuendorf): Qualität?	? 1470,29391 1483,29433 1604,29508 1646,2
 Waldstr. (Hohen Neuendorf): Qualität des westlichen Abschnitts?	? 1604,29508 1717,29541
 Am Rathaus (Hohen Neuendorf): Qualität?	? 1717,29541 1730,29579 1733,29664
 # 
+#: section ^^^

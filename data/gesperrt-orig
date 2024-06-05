@@ -3,8 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #:
 ###################################################################
-#
-# permanente Sperrungen (Einbahnstraßen etc.)
+#: section: permanente Sperrungen (Einbahnstraßen etc.) vvvvvvvvvvv
 #
 # die Richtung gibt bei Einbahnstraßen die Sperrung an
 # 
@@ -1623,8 +1622,10 @@ Daimler-Parkplatz: Zufahrt Köpenicker Str. oft (immer?) gesperrt, auch an Werkta
 # 
 Cotheniusstr.: Schulgelände, gesperrt	2 13430,13733 13519,13785
 # 
+#: section ^^^
 ######################################################################
-# empfohlene und unechte Sperrungen
+#: section: empfohlene und unechte Sperrungen vvvvvvvvvvvvvvvvvvvvvvvv
+# 
 #: by: Stefan Klinkusch vvv
 #: note: "das Befahren der Heerstraße dort [ist] zwar nicht verboten, aber nicht empfehlenswert" (starker Verkehr, Busse, Schwerlastverkehr, kaum Bebauung, Tempolimit wird nicht eingehalten)
 Heerstr.	1::igndisp -6675,12632 -7294,12833
@@ -1642,9 +1643,9 @@ B2	2::igndisp -13096,5584 -12865,5567 -12718,5571
 Glienicker Str. (Köpenick): Radweg	1::igndisp 21363,3699 21308,3644
 Nordufer: Radweg	1::igndisp 7156,14763 7129,14787
 (Spandauer Damm - Wiesendamm)	1::igndisp -278,13094 -227,12994
+#: section ^^^
 ######################################################################
-#
-# Potsdam
+#: section: Sperrungen in Potsdam vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 Türkstr.	1 -12226,-1069 -12187,-1092
 Türkstr.	1 -12187,-1092 -12248,-1107
@@ -1730,8 +1731,9 @@ Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
 Georg-Hermann-Allee: Straßenbahntrasse	3nocross -13418,1668 -13418,1576 -13420,1478
 #: note: eine Überquerungsmöglichkeit (auch für Autos) existiert zwischen Peter-Huchel-Str. und Hans-Paasche-Str.
 Georg-Hermann-Allee: Straßenbahntrasse	3nocross -13420,1478 -13422,1383 -13424,1290 -13429,1069
+#: section ^^^
 ###################################################################### 
-# elsewhere in Brandenburg
+#: section: Sperrungen anderswo in Brandenburg vvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: by: osm
 Trebbiner Str.	2 11065,-5338 11040,-5252 11091,-5242 11107,-5326 11119,-5326
@@ -1952,8 +1954,10 @@ Poststr. (Wittstock)	1s:q4 -53717,83024 -53602,83076
 Kirchstr. (Falkensee)	1s:q4 -10082,17402 -10046,17514
 Freimuthstr. (Falkensee)	1s:q4 -10354,17616 -10357,17603 -10258,17508
 # 
+#: section ^^^
 ######################################################################
-# elsewhere not in Brandenburg
+#: section: Sperrungen außerhalb Brandenburgs vvvvvvvvvvvvvvvvvvvvvvvv
+# 
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
 B104 - Am Neuen Friedhof	1 6,127935 -27,127909
 Einbahnstraßen in Altlandsberg	1 32206,18073 32185,17995 32096,18020 32125,18092 32206,18073
@@ -1975,9 +1979,9 @@ Speck - Kargow: Fahrbahn explizit für Radfahrer verboten	2 -32984,116919 -33080,
 Dessau - Aken	1::igndisp -68807,-64778 -68658,-64803
 Bauhausplatz (Dessau)	1 -68072,-64470 -68162,-64513 -68180,-64466 -68093,-64424
 #
+#: section ^^^
 #####################################################################
-#
-# Einbahnstraßen, die man als Radfahrer halbwegs ignorieren kann:
+#: section: Einbahnstraßen, die man als Radfahrer halbwegs ignorieren kann vvv
 # 
 #: note: relativ eng, Kurve, deshalb etwas unübersichtlich
 Am Krusenick	1s:q3 22751,4970 22652,4966 22667,4912 22705,4874
@@ -2056,10 +2060,12 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 # 
 Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
 # 
+#: section ^^^
 ####################################################################
+#: section: gesperrte Wegführung vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
-# gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
-# Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
+# (nicht möglich zu umgehen --- wenn es eine Umgehung gibt, sollte sie
+# in comments_path-orig als PI; kommentiert sein)
 # 
 Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3nocross 4507,11936 4596,11912 4653,11896
 Otto-Suhr-Allee: Mittelstreifen	3nocross 3279,12533 3328,12512 3350,12502
@@ -2543,9 +2549,10 @@ abgeschlossenes Tor	3 * 14701,0 *
 # 
 abgeschlossenes Tor	3 * 20561,17 *
 #
+#: section ^^^
 ####################################################################
+#: section: Stellen, an denen getragen werden muss vvvvvvvvvvvvvvvvv
 #
-# Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
 #: note: Aufzug existiert (S-Bhf. Biesdorf)
@@ -2951,14 +2958,13 @@ tragen (eine Stufe) oder wilden Pfad benutzen	0:5 21660,5424
 tragen oder Aufzug benutzen (Treppe, 49 Stufen)	0:45 -10,12256
 tragen (Treppe, 14 Stufen)	0:25 -1667,16828
 tragen (Treppe, 31 Stufen)	0:30 17983,8960
-#: note: zwar überspannt die Schranke nicht die gesamte Fahrbahn, aber die Lücke mit Poller kann zugeparkt sein
-Schranke	BNP:3::trailer=10 13081,14090
 tragen (Treppe, 5 Stufen)	0:10 10290,12742
 tragen (8 weite Stufen)	0:30 18121,10314
 tragen (insgesamt 61 Stufen)	0:60 -3126,1798
 #
+#: section ^^^
 ###################################################################
-# Drängelgitter (BLOCKED_NARROWPASSAGE)
+#: section: Drängelgitter (BLOCKED_NARROWPASSAGE) vvvvvvvvvvvvvvvvv
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
@@ -3750,7 +3756,10 @@ Drängelgitter	BNP:3::trailer=10 15646,93690
 Schranke über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5::trailer=15 18471,2166
 Drängelgitter	BNP:3::trailer=10 3550,810
 Schwingtor	BNP:5::trailer=10 25136,10768
+#: note: zwar überspannt die Schranke nicht die gesamte Fahrbahn, aber die Lücke mit Poller kann zugeparkt sein
+Schranke	BNP:3::trailer=10 13081,14090
 #
+#: section ^^^
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

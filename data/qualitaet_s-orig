@@ -3,8 +3,8 @@
 #: note: XXX_* categorization done 2008-01-26
 #:
 ######################################################################
-# Vorübergehende Einschränkungen
 # 
+#: section: vorübergehende Einschränkungen vvv
 #: temporary vvv
 # 
 # REMOVED --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 --- #: last_checked: 2023-08-23 --- #: check_frequency: 30d --- #: next_check: 2023-09-30 --- Neuköllnische Allee: welliger Asphalt	Q2 14344,7003 14319,7001 14276,7021 14246,7042 14236,7058 14196,7086
@@ -38,8 +38,10 @@
 #: last_checked ^^^
 # 
 #: temporary ^^^
+#: section ^^^
 ######################################################################
 # 
+#: section: permanente Einträge vvv
 Mozartstr.: Kopfsteinpflaster	Q3+ 10259,-2660 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10474,-3186 10467,-3201
 #: corrected_by: Ulrike Burchardt: (was: Kopfsteinpflaster, now: "wunderbar zu fahren")
@@ -13595,6 +13597,7 @@ Morsbronner Weg: Beton	Q0- 9428,4419 9465,4173
 Delmer Steig: Gehwegplatten, schadhafte Stellen	Q1+ 11895,1489 11865,1564
 # 
 ######################### User Contributions #################################
+#: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
 # 
 #: confirmed_by: srt
@@ -14694,8 +14697,9 @@ Dillgesstr.: Asphalt	Q0 6218,3302 6308,3204 6401,3113 6456,3038 6482,3004 6514,2
 (Wernsdorfer Str. - ehemaliger Schmöckwitzwerdersteg): unbefestigt	Q2 30531,-3115 30508,-3189 30511,-3202
 #: by: osm:
 Fuß- und Radverkehrsbrücke Schmöckwitzwerder: Asphalt	Q0 30526,-3168 30535,-3148 30558,-3053 30588,-3000
+#: section ^^^
 ######################################################################
-# non-anonymous:
+#: section User Contributions (non-anonymous) vvv
 #: by: Dominik Seelow vvv
 #: corrected_by: srt (mäßiges -> schlechtes)
 Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3528,4118 3766,4058
@@ -32118,8 +32122,10 @@ Heinrich-Hertz-Str.: Asphalt	Q0 37,15597 59,15518 149,15237
 Elsa-Neumann-Str.: Asphalt	Q0 149,15237 -159,15486 -213,15529 -218,15558
 #: by ^^^
 # 
+#: section ^^^
+#: section ^^^
 ######################################################################
-# Gepflasterte Kreuzungsbereiche
+#: section: gepflasterte Kreuzungsbereiche vvv
 #: ignore vvv
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 9627,14229
 Kreuzungsbereich asphaltiert (umgebene Straßen sind zumeist gepflastert)	Q0 9750,14132
@@ -33140,3 +33146,4 @@ Einmündungsbereich asphaltiert	Q0 5486,461
 Einmündungsbereich asphaltiert	Q0 5688,312
 Kreuzungsbereich asphaltiert	Q0 10259,-2660
 #: ignore ^^^
+#: section ^^^

@@ -4,7 +4,7 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 ######################################################################
-# Vor¸bergehende Einschr‰nkungen
+#: section vor¸bergehende Einschr‰nkungen vvv
 #
 #: temporary vvv
 # 
@@ -1229,7 +1229,9 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # REMOVED (Bauarbeiten beendet, keine ƒnderung) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1289889.php (31. Januar 2023 bis 8. Mai 2023) --- #: by: https://berliner-abendblatt.de/2023/01/31/bauarbeiten-in-rosenthal-in-der-hauptstrasse-wird-es-eng/ --- #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/arbeiten-an-der-abwasserleitung_a371543 --- #: XXX Fahrbahn schlechtes Kopfsteinpflaster --- wird das nach den Bauarbeiten vielleicht besser werden? (ggfs. nach fragezeichen-orig verschieben) --- #: note: laut Bauschild der Wasserbetriebe bis Juli 2024 --- #: osm_watch: way id="22966091" version="37" --- #: source_id: viz2021:13.379045,52.601105,07.11.2022,06:00 (bis 8.5.2023) (inaktiv) (bis 30.6.2023) (bis 30.9.2023) (inaktiv) vvv --- #: last_checked: 2023-09-02 (mapillary) vvv --- #: next_check: 2023-09-30 vvv --- #: valid: -20230930 vvv --- Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8568,21863 8473,21633 8460,21602 --- Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8479,21590 8473,21633 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # 
 #: temporary ^^^
+#: section ^^^
 ######################################################################
+#: section: permanente Eintr‰ge vvv
 # REMOVED (mittlerweile flacher) --- #: next_check_id: WUHLEWANDERWEG-2014 vvv --- #: by: https://api.fixmyberlin.de/api/projects/270 --- #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv --- #: last_checked: 2020-10-03 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2020-09-30 vvv --- Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 22031,12208 21995,12153 --- Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21995,12153 22031,12208 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 (Wuhlewanderweg - Parchimer Str.): einige Fuﬂg‰nger	q1+ 22031,12208 22080,12218
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -4969,7 +4971,7 @@ Delmer Steig: einige Fuﬂg‰nger	q2 11895,1489 11865,1564
 (Raoul-Wallenberg-Str. - Marzahner Promenade): Fuﬂg‰nger, eng, Kurve	q3 20832,15981 20788,15968 20761,15940
 # 
 ######################### User Contributions #################################
-# 
+#: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
 #: corrected_by: srt (q4 -> q2)
 #: note: Michael meint, dass man nur "die Strecke von Heinersdorf kommend _in Richtung Pankow_ empfehlen" kann
@@ -6904,3 +6906,5 @@ Vulkanstr./Landsberger Allee - Altenhofer Str.: schmal	q2 15796,14310 15791,1432
 (Blankenfelder Str. - Goetheweg): einige Fuﬂg‰nger	q1 10968,22546 11220,22886 11228,22914 11219,22932 11162,22939
 (KGA Freies Land, G-Weg): gemeinsamer Geh- und Radweg, schmal	q2 12908,17807 12764,17725 12630,17636
 #: by: ^^^
+#: section ^^^
+#: section ^^^

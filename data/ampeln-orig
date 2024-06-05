@@ -3,8 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #:
 ################################################################################
-# Temporäre Ampeln
-# 
+#: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
 #: last_checked: 2024-06-05
@@ -429,9 +428,10 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 # 
 #: temporary ^^^
+#: section ^^^
 # 
 ################################################################################
-# Ampeln und Bahnübergänge in Berlin
+#: section: Ampeln und Bahnübergänge in Berlin vvv
 #: note: Anforderungsampel
 	F 10679,17441
 #: note: Herbst 2023: noch eine provisorische Ampel, aber die richtigen Masten stehen bereits
@@ -3878,8 +3878,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 9704,19428
 #: note: Ampel nur mit Rot-Gelb-Signalisierung, Busse aus der Endhaltestelle können auf die Storkower Str. gelassen werden
 	X 14559,13248
+#: section ^^^
 ################################################################################
-#: note: Potsdam vvv
+#: section: Potsdam vvv
 	X -17127,-554
 	F -12868,-502
 	X -12940,-1625
@@ -4043,9 +4044,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X -13181,2285
 	X -13142,1989
 	F -14457,-1797
-# 
+#: section ^^^
 ################################################################################
-#: note: Ampeln elsewhere vvv
+#: section: Ampeln elsewhere vvv
 	B 69068,74310
 	B -94274,71791
 	X -10179,17565
@@ -4829,7 +4830,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 #: by: osm
 	F -9380,17229
 # 
-#: note: ^^^
+#: section: ^^^
 ################################################################################
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
