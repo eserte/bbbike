@@ -364,6 +364,14 @@
   (run-hooks 'bbbike-mode-hook)
   )
 
+(defun bbbike-imenu-setup ()
+  "Setup imenu for bbbike mode."
+  (setq imenu-generic-expression
+        '((nil "^#:[ ]+section:?[ ]+\\(.*?\\)[ ]+vvv+[ ]*$" 1))))
+
+(add-hook 'bbbike-mode-hook 'bbbike-imenu-setup)
+(add-hook 'bbbike-mode-hook 'imenu-add-menubar-index)
+
 (defun bbbike-set-grep-command ()
   (set (make-local-variable 'grep-command)
        (let ((is-windowsnt (and (or (string-match "i386-.*-windows.*" system-configuration)
