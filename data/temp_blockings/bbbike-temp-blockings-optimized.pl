@@ -3944,7 +3944,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-05-21
+#: last_checked: 2024-06-06
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -6908,7 +6908,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-05-31 vvv
+#: last_checked: 2024-06-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7263,7 +7263,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'until' => 1718982000
        },
        {
-         'data' => '#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024) (bis 07.05.2024) (bis 17.05.2024) (bis 07.06.2024)
+         'data' => '#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024) (bis 07.05.2024) (bis 17.05.2024) (bis 07.06.2024) (bis 21.06.2024)
 #: note: Gehweg nur auf der westlichen Seite, für Radfahrer in beiden Richtungen frei, 2 Ampeln zum Überqueren
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764537508510216685
 #: by: https://pbs.twimg.com/media/GHmMbjuXYAAbLcY?format=jpg&name=large
@@ -7271,9 +7271,9 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 ',
          'from' => 1709445600,
          'id' => 4018,
-         'text' => 'Malchower Teichweg: Anbindung an die B2 kann wegen Bauarbeiten gesperrt sein, vom 04.03.2024 07:00 bis 07.06.2024 17:00',
+         'text' => 'Malchower Teichweg: Anbindung an die B2 kann wegen Bauarbeiten gesperrt sein, vom 04.03.2024 07:00 bis 21.06.2024 17:00',
          'type' => 'gesperrt',
-         'until' => 1717772400
+         'until' => 1718982000
        },
        undef,
        undef,
@@ -7354,17 +7354,7 @@ Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,99
          'type' => 'gesperrt',
          'until' => 1718982000
        },
-       {
-         'data' => '#: source_id: viz2021:13.43407,52.4526,21.03.2024,07:00 (bis 16.05.2024) (vorzeitig inaktiv)
-#: note: bei rbb nun verlängert, bis zum 6.6.2024
-	2::inwork 12582,5232 12518,5508 12482,5648
-',
-         'from' => 1710914400,
-         'id' => 4029,
-         'text' => 'Am Straßenbahnhof: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.03.2024 07:00 bis 06.06.2024',
-         'type' => 'handicap',
-         'until' => 1717693200
-       },
+       undef,
        undef,
        undef,
        {
@@ -7755,7 +7745,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: also_indoor: traffic (H,G,B,W)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
-#: last_checked: 2024-06-04 (traffic) vvv
+#: last_checked: 2024-06-06 (traffic) vvv
 #: check_frequency: 3d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
@@ -7816,7 +7806,20 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
          'type' => 'handicap',
          'until' => 1721426399
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
+#: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
+#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
+#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
+	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
+',
+         'from' => 1717624800,
+         'id' => 4074,
+         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 07.06.2024 20:00 bis 08.06.2024 06:00',
+         'type' => 'handicap',
+         'until' => 1717819200
+       },
        {
          'data' => '#: source_id: viz2021:13.543945,52.454049,03.06.2024,07:00 (bis 21.06.2024)
 	q4::inwork 20435,5460 20348,5509 20065,5534 19814,5512
@@ -7853,12 +7856,15 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
        {
          'data' => '#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Sperrung der südlichen Fahrbahn UdL erwähnt; bis 07.06.2024)
 #: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erwähnt; bis 07.06.2024)
-	2::temp 9934,12420 9943,12364
-	2::temp 9990,12404 9996,12372
+#: by: https://www.bertelsmann.de/news-und-media/nachrichten/bertelsmann-party-2024-vielfalt-kreativitaet-und-jede-menge-stars-in-berlin.jsp?atn=2862170&abp=2862170,2862222, (Bertelsmann Party)
+#: note: eigentlich gibt es einen engen Durchgang am Schinkelplatz, aber UdL muss man zusätzlich einen 1x70m oder 2x70m langen Umweg nehmen
+Schinkelplatz	2::temp 9990,12404 9996,12372
+Niederlagstr.	q4::temp 9934,12420 9943,12364
+An der Kommandantur	q4::temp 9996,12372 9943,12364
 ',
          'from' => 1717394400,
          'id' => 4078,
-         'text' => 'Schinkelplatz, Niederlagstr.: Veranstaltung, mögliche Sperrung, vom 04.06.2024 08:00 bis 07.06.2024 20:00',
+         'text' => 'Schinkelplatz, Niederlagstr., An der Kommandantur: Veranstaltung, mögliche Sperrung, vom 04.06.2024 08:00 bis 07.06.2024 20:00',
          'type' => 'gesperrt',
          'until' => 1717783200
        },
