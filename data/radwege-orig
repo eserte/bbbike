@@ -5390,7 +5390,7 @@ Gehweg für Radfahrer frei, Gehwegplatten	RW1; 12121,20969 12095,20832 12076,2073
 	RW3;RW4? 4787,7213 4743,7212
 	RW1;RW1 17169,11677 17251,11789
 neues Verbundsteinpflaster	RW1;RW1 17169,11677 17208,11658 17275,11626 17341,11595 17609,11467 17734,11408
-Verbundsteinpflaster	RW1; 17734,11408 17732,11374 17730,11330
+Verbundsteinpflaster	RW1; 17734,11408 17732,11374 17730,11340
 Verbundsteinpflaster	RW1; 17732,11374 17734,11408
 30 Meter nicht benutzungspflichtiger Radweg an der Rummelsburger Str.	RW0;RW0 17621,10994 17569,10801
 	RW1;RW1 17621,10994 17645,11028 17680,11058 17719,11092 17848,11204
@@ -8503,7 +8503,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385943,52.444677,31.08.2023,10:00 (bis 22.09.2023) (bis 18.09.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023) (inaktiv)
 #: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024)
-#: source_id: viz2021:13.384655,52.451843,04.03.2024,07:00 (bis 17.05.2024) (bis 07.06.2024) (bis 17.06.2024)
+#: source_id: viz2021:13.384655,52.451843,04.03.2024,07:00 (bis 17.05.2024) (bis 07.06.2024) (bis 17.06.2024) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2024-04-07 vvv
@@ -8511,7 +8511,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: next_check: 2024-06-17 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
-#: osm_watch: way id="111048866" version="18"
+#: osm_watch: way id="111048866" version="19"
 provisorische Führung als getrennter Rad/Gehweg	RW2; 9206,5193 9239,4980 9248,4904
 #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
 provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9248,4904 9259,4815 9275,4672

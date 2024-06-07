@@ -6423,6 +6423,7 @@ Alfred-Kowalke-Str.	H 18027,11244 18061,11240 18202,11253 18229,11256
 Alfred-Kowalke-Str.	H 18229,11256 18200,11269 18179,11278 18059,11256 18027,11244
 Alfred-Kowalke-Str.	H 18229,11256 18280,11266
 Alfred-Kowalke-Str.	N 18280,11266 18421,11344 18477,11388 18619,11463
+Alfred-Kowalke-Str. [Wohngebiet]	N 18421,11344 18399,11423 18387,11480
 Alfred-Kowalke-Str. [Nebenfahrbahn]	N 18066,11215 18203,11227 18245,11233
 Alfred-Kowalke-Str. [Hauptfahrbahn - Nebenfahrbahn]	N 18202,11253 18203,11227
 Alfred-Kowalke-Str. [Mittelstreifen]	NN 18200,11269 18202,11253
@@ -6451,7 +6452,7 @@ Am Tierpark [zur Nebenfahrbahn]	N 18263,11393 18304,11407
 Am Tierpark [Nebenfahrbahn]	N 18304,11407 18272,11552 18264,11596 18285,11637
 Am Tierpark [Nebenfahrbahn]	N 18245,11233 18276,11146 18301,11033 18368,10763
 Am Tierpark [Nebenfahrbahn]	N 18442,10471 18397,10608
-Am Tierpark [Wohngebiet]	N 18304,11407 18387,11427
+Am Tierpark [Wohngebiet]	N 18304,11407 18399,11423
 Am Tierpark [Wohngebiet]	N 18484,10326 18538,10189 18552,10135
 Am Tierpark [Wohngebiet]	N 18538,10189 18552,10220 18512,10337
 Am Tierpark [Wohngebiet]	N 18160,11635 18188,11592 18178,11515 18179,11481 18202,11383 18208,11298 18200,11269
@@ -13422,7 +13423,7 @@ Einbecker Str.	NN 17734,11408 17764,11371
 Einbecker Str.	N 17764,11371 17876,11217
 (Einbecker Str. - Frankfurter Allee)	N 17020,11748 17034,11797 17221,11777
 (Einbecker Str. - Frankfurter Allee)	NN 17221,11777 17251,11789
-Robert-Uhrig-Str.	N 17746,11748 17744,11703 17742,11636 17741,11607 17734,11408 17732,11374 17730,11330 17725,11228 17719,11092
+Robert-Uhrig-Str.	N 17746,11748 17744,11703 17742,11636 17741,11607 17734,11408 17732,11374 17730,11340 17725,11228 17719,11092
 (Fußgängerbrücke)	NN 17744,11703 17758,11701 17760,11665 17769,11770
 (Fußgängerbrücke - Rosenfelder Ring)	NN 17769,11770 17775,11858
 (Fußgängerbrücke - Alt-Friedrichsfelde)	NN 17769,11770 17759,11768 17746,11767 17746,11748
@@ -15641,7 +15642,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2024-05-15
+#: last_checked: 2024-06-07
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16031,7 +16032,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2024-05-15
+#: last_checked: 2024-06-07
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -17931,7 +17932,7 @@ Rhönstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan/vorhabenbezogener-bebauungsplan.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6841 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6844 (Vorlage zur Kenntnisnahme)
-#: osm_watch: way id="59573616" version="3"
+#: osm_watch: way id="59573616" version="4"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraße entstehen (vermutlich müssen alle abhängigen Einträge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
 #: last_checked: 2024-06-01 (mapillary)
 #: check_frequency: 180d

@@ -3557,7 +3557,28 @@ Schlossinsel	2::temp 22093,4499 22076,4422
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neu)
+#: by: https://berliner-abendblatt.de/berlin-news/israels-ministerpraesident-in-berlin-grosses-polizeiaufgebot-id212454
+#: by: https://nitter.net/DasBoes/status/1636082561859350528#m (die Joachimsthaler ist entgegen der Karte in beiden Richtungen gesperrt)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_24_1479_1538_online.pdf
+#: note: um das Hotel Waldorf Astoria herum
+# REMOVED (diesmal nicht) --- Hardenbergstr.	2::temp 5459,11135 5542,11075
+Hardenbergstr.	2::temp 5542,11075 5652,11004
+Kantstr.	2::temp 5652,11004 5613,10963 5488,10978
+# REMOVED (diesmal nicht) --- Joachimsthaler südl. Kantstr.	2::temp 5488,10978 5475,10808
+Budapester Str.	2::temp 5652,11004 5716,10978
+# REMOVED (diesmal nicht) --- Kantstr. westl. Joachimsthaler Str.	2::temp 5373,10981 5488,10978
+Joachimsthaler Str.	2::temp 5488,10978 5542,11075
+# REMOVED (diesmal nicht) --- Hardenbergplatz	3 5600,11114 5542,11075 5560,11124
+# REMOVED (diesmal nicht) ---	3 5560,11124 5542,11075 5600,11114
+',
+         'from' => 1717884000,
+         'id' => 2769,
+         'text' => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 10. Juni 2024, 13:00 Uhr bis zum 11. Juni 2024, 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1718121600
+       },
        undef,
        undef,
        undef,
@@ -3703,7 +3724,24 @@ Schlossinsel	2::temp 22093,4499 22076,4422
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neuer Staatsbesuch)
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
+#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_24_1479_1538_online.pdf
+	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
+	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6831,12150 7001,12274 7031,12320 7383,12095
+	2::temp 6689,12632 7031,12320
+	3 7183,12372 7122,12384 7051,12426 6859,12567 6808,12604
+	3 6808,12604 6859,12567 7051,12426 7122,12384 7183,12372
+',
+         'from' => 1717970400,
+         'id' => 2873,
+         'text' => 'Straßen am Schloss Bellevue (inklusive Großer Stern): wegen eines Staatsbesuchs Sperrungen möglich, 11. Juni 2024 von 10:00 bis 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1718121600
+       },
        undef,
        undef,
        undef,
@@ -5495,7 +5533,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731917567688913337#m
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1419805.php (Baumfällungen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1451630.php (voraussichtlich teilweise Freigabe, der Rest wird bis Juni 2025 gemacht (also etwas kürzer als bei VIZ))
-#: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025)
+#: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2024-06-05 vvv
@@ -7073,11 +7111,14 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landgrafenstra%C3%9Fe-3-6-umbau-hotel.1166/
 #: by: https://www.deutsches-architekturforum.de/thread/13804-bauprojekte-an-der-urania-schillstra%C3%9Fe-kurf%C3%BCrstenstra%C3%9Fe/?postID=749605#post749605
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1750031927669608944#m (mögliche zusätzliche Einschränkung: Überqueren der Kurfürstenstr. an dieser Stelle möglicherweise nicht mehr möglich)
+#: by: https://www.deutsches-architekturforum.de/thread/13804-bauprojekte-an-der-urania-schillstra%C3%9Fe-kurf%C3%BCrstenstra%C3%9Fe/?postID=762284#post762284 (Büro-Neubau Equalizer, geplante Fertigstellung: 1. Quartal 2026)
+#: by: https://equalizer.berlin/
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
 #: last_checked: 2024-05-31
-#: check_frequency: 60d
+#: check_frequency: 90d
+#: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801
 ',
          'from' => undef,
@@ -7482,7 +7523,7 @@ Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,99
        {
          'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025)
-#: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025)
+#: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 	q4::inwork; 25050,13539 25163,13494
@@ -7666,7 +7707,7 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
        undef,
        {
          'data' => '#: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
-#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024)
+#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
 #: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
 	q4::inwork; 11239,18832 11001,18528
@@ -7682,7 +7723,7 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
 #: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024) (inaktiv)
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 35m ---	q3::inwork; 14639,11512 14676,11572
-#: source_id: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
+#: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024)
 #: also_indoor: traffic (B)
 #: note: bei rbb in beiden Richtungen gesperrt (stimmt aber nicht)
@@ -7809,6 +7850,7 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
        {
          'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024)
+#: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
 #: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
 #: by: https://www.youtube.com/watch?v=YI1O5phpGiE
@@ -7832,6 +7874,7 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1452894.php
+#: by: https://www.berliner-woche.de/mitte/c-bauen/uferpromenade-gesperrt_a417283
 #: XXX Wirken sich die Bauarbeiten auf die Wegbeschaffenheit aus? Stimmt q2 eigentlich noch?
 #: next_check: 2024-08-31
 	2::inwork 9538,12993 9508,12991 9279,12953
@@ -7853,21 +7896,7 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
          'type' => 'handicap',
          'until' => 1718679600
        },
-       {
-         'data' => '#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Sperrung der südlichen Fahrbahn UdL erwähnt; bis 07.06.2024)
-#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erwähnt; bis 07.06.2024)
-#: by: https://www.bertelsmann.de/news-und-media/nachrichten/bertelsmann-party-2024-vielfalt-kreativitaet-und-jede-menge-stars-in-berlin.jsp?atn=2862170&abp=2862170,2862222, (Bertelsmann Party)
-#: note: eigentlich gibt es einen engen Durchgang am Schinkelplatz, aber UdL muss man zusätzlich einen 1x70m oder 2x70m langen Umweg nehmen
-Schinkelplatz	2::temp 9990,12404 9996,12372
-Niederlagstr.	q4::temp 9934,12420 9943,12364
-An der Kommandantur	q4::temp 9996,12372 9943,12364
-',
-         'from' => 1717394400,
-         'id' => 4078,
-         'text' => 'Schinkelplatz, Niederlagstr., An der Kommandantur: Veranstaltung, mögliche Sperrung, vom 04.06.2024 08:00 bis 07.06.2024 20:00',
-         'type' => 'gesperrt',
-         'until' => 1717783200
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
 #: note: keine Freigabe der Gehwege für Radfahrer

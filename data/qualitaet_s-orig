@@ -6366,7 +6366,7 @@ Charlottenstr.: Beton	Q0- 18520,11707 18520,11685 18520,11662 18520,11631 18462,
 Charlottenstr: Asphalt	Q0 18462,11602 18477,11388
 Am Tierpark [zur Nebenfahrbahn]: Beton	Q1+ 18263,11393 18304,11407
 Am Tierpark [Nebenfahrbahn]: Beton	Q1+ 18304,11407 18272,11552 18264,11596 18285,11637
-Am Tierpark [Wohngebiet]: Beton	Q1+ 18304,11407 18387,11427
+Am Tierpark [Wohngebiet]: Beton	Q1+ 18304,11407 18399,11423
 Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q1+ 18285,11637 18329,11654 18381,11655 18520,11662
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18317,11734 18382,11740 18461,11767 18600,11814 18716,11810 18717,11821 18717,11835 18719,11903
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18717,11821 18574,11833 18525,11806 18453,11804 18461,11767
@@ -10505,6 +10505,8 @@ Saatwinkler Damm: glatt gepflastert	Q1- -622,15502 -573,15516 -302,15546
 Hunckemüllerweg: Beton	Q0 -556,15128 -504,15092
 (Uferweg an der Schleuse - Tegeler Weg): unbefestigter Weg	Q2 2817,14003 2881,14061
 Bahnunterführung: Asphalt	Q0 18278,9818 18266,9853
+Alfred-Kowalke-Str. [Wohngebiet]: Beton, teilweise neu gemacht	Q0 18421,11344 18399,11423
+Alfred-Kowalke-Str. [Wohngebiet]: Beton	Q1+ 18399,11423 18387,11480
 Alfred-Kowalke-Str. [Nebenfahrbahn]: Asphalt	Q0- 18066,11215 18203,11227 18245,11233
 Am Tierpark [Nebenfahrbahn]: Beton	Q0- 18245,11233 18276,11146
 #: note: teilweise neu gemachter Asphalt, teilweise OK
@@ -13417,7 +13419,7 @@ Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 1
 Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2024-05-31 vvv
+#: last_checked: 2024-06-07 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677

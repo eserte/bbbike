@@ -62,7 +62,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-06-01
+#: last_checked: 2024-06-07
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -555,7 +555,8 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Friedrichsfelde ###
 # 
-#: last_checked: 2024-05-06 vvv
+#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger
+#: last_checked: 2024-06-07 vvv
 #: also_indoor: traffic (G,B)
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
@@ -867,13 +868,13 @@ Heldburger Str.: Hochbauarbeiten, Fahrbahn gesperrt	q4::inwork 17249,14575 17392
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="36"
 #: osm_watch: way id="1193560283" version="5"
-#: last_checked: 2024-03-30
+#: last_checked: 2024-06-07
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-05-27
+#: last_checked: 2024-06-07
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
