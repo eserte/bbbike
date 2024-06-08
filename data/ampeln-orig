@@ -6,6 +6,11 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: SCHOENEWEIDE-2018
+#: last_checked: 2024-06-08
+#: next_check: 2024-06-30
+Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17736,5441
+# 
 #: last_checked: 2024-06-05
 Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
@@ -44,6 +49,7 @@ Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
 Rudower Str.: Gegenverkehrsregelung zwischen Dorothea-Viehmann-Str. und Alter Schönefelder Weg	X::inwork::alternating 19564,1871
 # 
 #: source_id: viz2021:13.490616,52.463117,15.04.2024,07:30 (bis 12.07.2024)
+#: last_checked: 2024-06-08
 #: next_check: 2024-07-12
 #: valid: -20240712
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16425,6445
@@ -104,7 +110,7 @@ Michaelbrücke	F::inwork 11676,11839
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024)
 #: note: etwa 20m südöstlich
-#: last_checked: 2024-06-01 (krickstadt)
+#: last_checked: 2024-06-08
 #: check_frequency: 90d
 #: next_check: 2024-06-30
 #: valid: -20240630
@@ -234,14 +240,14 @@ Gürtelstr.	F::inwork 15153,11691
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2024-05-22
+#: last_checked: 2024-06-08
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2024-05-22
+#: last_checked: 2024-06-08
 #: next_check: 2024-06-30
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
@@ -1271,7 +1277,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 17960,5511
 	X 17728,5756
 	X 17886,5587
-# REMOVED (an der Einmündung keine Ampel mehr) ---	X 17736,5441
 	X 21332,4655
 	X 21789,4520
 #: note: Grüner Pfeil für Radfahrer (Alt-Köpenick -> Lange Brücke, N->W)
@@ -1389,7 +1394,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5240 (Prüfung für einen Umbau)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036154063735/154063735/00111219/19-Anlagen/05/B1138ZB2.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7226 (Antrag) (wurde abgelehnt)
-#: last_checked: 2024-03-25
+#: last_checked: 2024-06-08
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -2704,13 +2709,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-06-01
+#: last_checked: 2024-06-08
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50)
-#: last_checked: 2024-06-01
+#: last_checked: 2024-06-08
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

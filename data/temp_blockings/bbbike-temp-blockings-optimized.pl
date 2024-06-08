@@ -4731,6 +4731,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210716/
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (voraussichtliche Freigabe im Herbst 2023)
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20231117 (voraussichtliche Freigabe Anfang 2024)
+#: by. https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240608 (voraussichtliche Freigabe Sommer 2024)
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 #: XXX Wird nach der Wiedereröffnung der Kfz-Verkehr möglich sein? Dann: NN -> N!
@@ -4740,7 +4741,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="1060570985" version="2"
 #: last_checked: 2024-05-29 (okas)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2024-01-15
+#: next_check: 2024-09-01
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 ',
          'from' => undef,
@@ -7784,8 +7785,9 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
 #: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: also_indoor: traffic (H,G,B,W)
+#: also_indoor: traffic (ex-H,G,ex-B,W)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
+#: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen
 #: last_checked: 2024-06-06 (traffic) vvv
 #: check_frequency: 3d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -7847,21 +7849,7 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
          'type' => 'handicap',
          'until' => 1721426399
        },
-       {
-         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
-#: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024)
-#: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
-#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
-#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
-	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
-',
-         'from' => 1717624800,
-         'id' => 4074,
-         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 07.06.2024 20:00 bis 08.06.2024 06:00',
-         'type' => 'handicap',
-         'until' => 1717819200
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.543945,52.454049,03.06.2024,07:00 (bis 21.06.2024)
 	q4::inwork 20435,5460 20348,5509 20065,5534 19814,5512

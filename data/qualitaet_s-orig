@@ -9467,7 +9467,7 @@ Ahornallee (Rosenthal): schlechtes Kopfsteinpflaster	Q3 9740,20719 9859,20542
 (Schloßpark Schönhausen): Parkweg	Q1 10600,19225 10638,19149
 Theanolte-Bähnisch-Str.: Asphalt	Q0 11320,13095 11235,13143
 (Keibelstr. - Karl-Liebknecht-Str.): Gehwegplatten	Q0- 11045,13183 10976,13229
-(Weg am Stadion): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 20074,4379 20017,4441 19864,4607
+(Weg am Stadion): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 20087,4389 20074,4397 20017,4441 19864,4607
 (Weg am Stadion): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 19864,4607 19759,4711
 # REMOVED --- (Weg am Stadion): Schotterstraße	Q2+ 19759,4711 19710,4760 19642,4838
 (Waldweg): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 19765,4876 19774,4810 19759,4711
@@ -12687,11 +12687,15 @@ Frieda-Arnheim-Promenade: Betonpflaster	Q0- -2779,15358 -2769,15389 -2751,15383 
 Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 (An der Ostbahn - S-Bhf. Warschauer Str.): Asphalt	Q0 13377,11345 13546,11280
 #: note: nach Regenfällen etwas matschig, bei trockenem Wetter problemlos befahrbar
-(Kattunsteig - Hartriegelstr.): Waldweg	Q2 19723,4348 19644,4432 19306,4791 19301,4814 19250,4830 19251,4879
-(Sonnenallee, KGA Am Adlergestell): holprig, etwas sandig	Q3+ 19370,4166 19610,4394
+(Kattunsteig - Hartriegelstr.): Waldweg	Q2 19723,4348 19661,4414 19644,4432 19306,4791 19301,4814 19250,4830 19251,4879
+#: historical_note: früher (bis etwa 2024): holprig, etwas sandig, Q3+ 
+#: by: osm
+(Sonnenallee, KGA Am Adlergestell): Asphalt	Q0 19370,4166 19610,4394
 (Sonnenallee - Köllnische Heide): Waldweg	Q2- 19610,4394 19644,4432
-(Sonnenallee - Adlergestell): Beton	Q1- 19370,4166 19399,4133 19369,4099
-(Sonnenallee - Adlergestell): Verbundsteinpflaster	Q1- 19369,4099 19345,4077 19335,4067
+#: historical_note: früher (bis etwa 2024): Beton, Q1-
+(Sonnenallee - Adlergestell): Asphalt	Q0 19370,4166 19399,4133 19369,4099
+#: historical_note: früher (bis etwa 2024): Verbundsteinpflaster, Q1-
+(Sonnenallee - Adlergestell): Asphalt	Q0 19369,4099 19345,4077 19335,4067
 #: note: "gelber Asphalt" (aber mittlerweile gar nicht mehr so gelb)
 (Gustav-Heinemann-Brücke - Paul-Löbe-Haus): Asphalt	Q0 8115,12912 8252,12757
 (Schlosspark - Mollwitzstr.): unbefestigter Weg	Q2+ 2688,12701 2663,12699
@@ -13419,7 +13423,7 @@ Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 1
 Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2024-06-07 vvv
+#: last_checked: 2024-06-08 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
@@ -18786,7 +18790,7 @@ Hartriegelstr.: Beton, einige leichte Hebungen	Q0- 18724,5022 18918,4971 19184,4
 Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
 #: note: laut ADFC-Karte ebenfalls schlecht geeignet
 #: corrected_by: srt (Q3 -> Q2+) vvv
-Kattunsteig: Waldweg	Q2+ 19765,4876 19710,4760 19710,4682 19715,4410 19723,4348 19766,4288 19807,4248
+Kattunsteig: Waldweg	Q2+ 19765,4876 19710,4760 19710,4682 19717,4404 19723,4348 19766,4288 19807,4248
 Kattunsteig: Waldweg	Q2+ 19766,4288 19754,4266 19760,4256 19756,4245
 #: corrected_by ^^^
 #: note: "Note 3":

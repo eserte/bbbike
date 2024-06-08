@@ -1292,7 +1292,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-06-01 vvv
+#: last_checked: 2024-06-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2964,7 +2964,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-05-31
+#: last_checked: 2024-06-08
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5310,8 +5310,9 @@ Verbundsteinpflaster	RW2; 20010,3340 20002,3349 19946,3415
 neu asphaltiert	RW2; 19946,3415 19904,3464
 Verbundsteinpflaster	RW2; 19904,3464 19857,3514 19806,3567
 #: note: Radspur fängt ein paar Meter nördlich der Einmündung Altheider Str. an
-mittelhohe Leitboys	RW4; 19806,3567 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183
-provisorische Radspur, Baken	RW4; 19226,4183 18725,4715 18457,5000 18425,5032 18080,5376
+Grünbeschichtung, mittelhohe Leitboys	RW4; 19806,3567 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000
+#: note: Radspur hört wenige Meter vor der Fennstr./Britzer Str. auf
+Grünbeschichtung	RW4; 18457,5000 18425,5032 18080,5376
 Verbundsteinpflaster	RW2; 18080,5376 17960,5511
 #: note: Adlergestell, Michael-Brückner-Str., Richtung Südwesten
 Grünbeschichtung, mittelhohe Leitboys	RW4; 17886,5587 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19226,4183
