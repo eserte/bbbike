@@ -112,7 +112,6 @@ init_apt() {
 
 # Reasons for the following dependencies
 # - freebsd-buildutils or bmake: provides freebsd-make resp. fmake resp. pmake
-# - libproj-dev + proj-bin: prerequisites for Geo::Proj4
 # - libdb-dev:              prerequisite for DB_File
 # - agrep + tre-agrep:      needed as String::Approx alternative
 # - libgd2-xpm-dev or libgd-dev: prerequisite for GD
@@ -155,14 +154,6 @@ install_non_perl_dependencies() {
 	pdftk_package=pdftk
     fi
 
-    if [ "$CODENAME" = "precise" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
-    then
-	# Not needed on Ubuntu 20.04, Alien::Proj4 is used for Geo::Proj4 (see below)
-	libproj_packages=
-    else
-	libproj_packages="libproj-dev proj-bin"
-    fi
-
     if [ "$GITHUB_WORKFLOW" != "" -a "$USE_SYSTEM_PERL" = "" ]
     then
 	cpanminus_package=cpanminus
@@ -191,7 +182,7 @@ install_non_perl_dependencies() {
 	imager_ext_packages=
     fi
 
-    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package $imager_ext_packages
+    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package $imager_ext_packages
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver
@@ -283,10 +274,8 @@ install_old_perl_dependencies() {
 		#
 		# Inline::C 0.77 (and probably newer) runs only on perl 5.10.0 and newer.
 		#
-		# Geo::Proj4 1.11 increased perl minimum version to 5.10.0 (and is now deprecated anyway).
-		#
 		# non-commented modules increased the perl minimum version at some point in time
-		cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" Geo::Proj4~"==1.09" HTML::Tagset~"<3.22"
+		cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" HTML::Tagset~"<3.22"
 		;;
 	esac
     fi
@@ -389,14 +378,6 @@ install_perl_dependencies() {
 	# Geo::Distance::XS is not available anymore on CPAN
 	# and must now be installed by specifying an exact version
 	cpanm --quiet --notest 'Geo::Distance::XS@0.13'
-
-	# Geo::Proj4 does not compile anymore with newer proj4 versions
-	# https://rt.cpan.org/Ticket/Display.html?id=129389
-	if [ "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
-	then
-	    cpanm --quiet --notest Alien::Base::Wrapper Alien::Proj4
-	    cpanm --quiet https://github.com/eserte/perl5-Geo-Proj4.git@use-alien
-	fi
 
 	if [ "$CPAN_INSTALLER" = "cpanm" ]
 	then

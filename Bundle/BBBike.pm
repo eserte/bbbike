@@ -163,9 +163,7 @@ DBD::XBase	- Für das Parsen des ESRI-Shapefile-Formats
 
 XBase	- Ebenfalls für das Parsen des ESRI-Shapefile-Formats
 
-Geo::GDAL	- Für das Parsen des ESRI-Projection-Formats
-
-Geo::Proj4	- Für das Konvertieren von ESRI-Shapefiles
+Geo::LibProj::FFI	- Für das Konvertieren von ESRI-Shapefiles
 
 Tie::IxHash 1.23	- Damit Direktiven in Straßen-Daten geordnet bleiben
 
