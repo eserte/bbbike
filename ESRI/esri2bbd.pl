@@ -1,16 +1,14 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 # -*- perl -*-
 
 #
-# $Id: esri2bbd.pl,v 1.12 2003/11/11 23:32:25 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2012,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use FindBin;
@@ -18,6 +16,7 @@ use lib "$FindBin::RealBin/..";
 use BBBikeESRI;
 use Getopt::Long;
 use strict;
+use warnings;
 
 my $dbfinfo;
 my $dbfcol;
@@ -119,7 +118,7 @@ Increase verbosity.
 
 =head2 COORDINATE CONVERSION
 
-If the perl modules L<Geo::GDAL> and L<Geo::Proj4> are installed and
+If the perl module L<Geo::LibProj::FFI> is installed and
 the ESRI shapefile comes with a projection file ending with C<.prj>,
 then the converted bbd file will contain WGS84 coordinates which can
 be plotted and used directly in BBBike.

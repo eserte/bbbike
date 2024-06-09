@@ -3,24 +3,23 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package ESRI::Shapefile::Projection;
 
 use strict;
-use vars qw($VERSION);
-$VERSION = '0.01';
+use warnings;
 
-use Class::Accessor; # workaround 5.00503 bug (???)
+our $VERSION = '1.00';
+
 use base qw(Class::Accessor::Fast);
 
-__PACKAGE__->mk_accessors(qw/File Root Proj4/);
+__PACKAGE__->mk_accessors(qw/File Root Proj/);
 
 sub new {
     my $this = shift;
@@ -44,21 +43,30 @@ sub new {
 sub Init {
     my $self = shift;
 
-    require Geo::GDAL;
-    require Geo::Proj4;
+    require Geo::LibProj::FFI;
+    my $ctx = Geo::LibProj::FFI::PJ_DEFAULT_CTX();
 
-    my $srs = Geo::OSR::SpatialReference->new;
     my $prj_text = do { open my $fh, $self->File or die "Can't open file '" . $self->File . "': $!"; local $/; <$fh> };
-    $srs->ImportFromWkt($prj_text);
-    my $proj4_string = $srs->ExportToProj4;
-    my $proj4 = Geo::Proj4->new($proj4_string);
-    $self->Proj4($proj4);
+    my $proj = Geo::LibProj::FFI::proj_create_crs_to_crs($ctx, $prj_text, 'EPSG:4326', undef)
+	or die "Error while calling proj_create_crs_to_crs with projection '$prj_text'";
+    $self->Proj($proj);
 }
 
 # Returns ($lat,$lon)
 sub convert_to_polar {
     my($self, $x, $y) = @_;
-    $self->Proj4->inverse($x, $y);
+    my $c_from = Geo::LibProj::FFI::proj_coord($x, $y, 0, 0);
+    my $c_to = Geo::LibProj::FFI::proj_trans($self->Proj, Geo::LibProj::FFI::PJ_FWD(), $c_from);
+    ($c_to->enu_e, $c_to->enu_n);
+#    ($c_to->lam, $c_to->phi); # would return the same
+}
+
+sub DESTROY {
+    my $self = shift;
+    if ($self->Proj) {
+	Geo::LibProj::FFI::proj_destroy($self->Proj);
+	$self->Proj(undef);
+    }
 }
 
 1;
