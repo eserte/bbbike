@@ -1248,9 +1248,13 @@ function getLineStringCenter(latLngArray) {
 function adjustHistory() {
     var func = URLchanged ? history.replaceState : history.pushState;
     if (func) {
-	func.call(history, null, null, q.toString('&'));
-	q = new HTTP.Query;
-	URLchanged = true;
+	try {
+	    func.call(history, null, null, q.toString('&'));
+	    q = new HTTP.Query;
+	    URLchanged = true;
+	} catch (e) {
+	    console.debug("Cannot call " + func + ", which is call if this is an embedded window.");
+	}
     }
 }
 
