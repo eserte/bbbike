@@ -32,7 +32,7 @@
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2024-05-19
+#: last_checked: 2024-06-09
 #: check_frequency: 90d
 #: next_check: 2026-08-01
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -43,7 +43,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024) (bis 24.05.2024) (inaktiv)
-#: last_checked: 2024-06-06
+#: last_checked: 2024-06-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-05-24
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -62,7 +62,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-06-08
+#: last_checked: 2024-06-09
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -81,9 +81,10 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/friedrichshain-ploetzlich-wurde-es-hell-was-passiert-eigentlich-im-berliner-ostbahnhof-li.418658 (bis 2026)
 #: XXX Wann sind die Bauarbeiten beendet?
+#: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2024-05-24 vvv
+#: last_checked: 2024-06-09 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -574,7 +575,7 @@ Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9
 #: next_check_id: SCHOENEWEIDE-2018
 #: next_check_id: STERNDAMM-2023
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
-#: last_checked: 2024-06-08 vvv
+#: last_checked: 2024-06-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-06-30 vvv
 # REMOVED (hier verlaufen Fußgängerverkehr und Radverkehr getrennt) --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17765,5469
@@ -587,7 +588,7 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 1
 #: next_check_id: SCHOENEWEIDE-2018
 #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024)
 #: also_indoor: traffic (H,W)
-#: last_checked: 2024-06-05 (bahninfo-forum)
+#: last_checked: 2024-06-09
 #: next_check: 2024-06-30
 #: valid: -20240630
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
@@ -669,7 +670,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 5
-#: last_checked: 2024-05-17
+#: last_checked: 2024-06-09 (webcam)
 #: check_frequency: 60d
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 # 
@@ -818,6 +819,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796226841063158214
 #: by[nocache]: https://x.com/BerlinNkl/status/1796226274622333004
 #: by: https://pbs.twimg.com/media/GO16Rh0XIAEUtqi?format=jpg&name=large
+#: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: also_indoor: traffic (none)
 #: last_checked: 2024-05-12 vvv
 #: check_frequency: 30d vvv
@@ -874,7 +876,7 @@ Heldburger Str.: Hochbauarbeiten, Fahrbahn gesperrt	q4::inwork 17249,14575 17392
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-06-07
+#: last_checked: 2024-06-09
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -3327,9 +3329,9 @@ Wischbergweg: sehr enger Pfad	q4 13733,18161 13751,18180
 Bordstein	q3 22004,17470 21992,17479
 (An der Margaretenhöhe - Astridstr.): schmaler Pfad	q3 16634,19839 16550,19829 16472,19818 16390,19806
 Cajamarcaplatz: viele Fußgänger	q4 17698,5727 17766,5659
-(Fußgängertunnel S-Bhf. Schöneweide): viele Fußgänger, schieben	q4 17702,5672 17634,5607
-(zum Fußgängertunnel S-Bhf. Schöneweide): viele Fußgänger, schieben	q4 17728,5756 17698,5727 17674,5705 17702,5672
-(zum Fußgängertunnel S-Bhf. Schöneweide): viele Fußgänger, schieben	q4 17765,5469 17634,5607
+(Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17702,5672 17634,5607
+(zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17728,5756 17698,5727 17674,5705 17702,5672
+(zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17765,5469 17634,5607
 # REMOVED (wurde in strassen-orig entfernt) --- #: XXX_prog BS an der Tram-Haltestelle, ansonsten trotzdem q3 --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Fußgänger, Bordstein	q3 17634,5607 17675,5521
 # REMOVED (Bordstein wurde abgesenkt) --- #: XXX_prog BS, sonst entfernen --- Wasserweg: Bordstein	q2 15678,8911 15698,8903 15873,8884
 (Ella-Trebe-Str. - Invalidenstr.): einige Fußgänger	q1 7938,13302 7968,13335 8003,13374
@@ -3499,7 +3501,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2024-05-15 vvv
+#: last_checked: 2024-06-09 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -4970,6 +4972,8 @@ Delmer Steig: einige Fußgänger	q2 11895,1489 11865,1564
 (Theodorpark - Hultschiner Damm): kurvig, ein kurzer steiler Abschnitt	q2 24762,10850 24707,10862 24690,10859 24672,10867
 # 
 (Raoul-Wallenberg-Str. - Marzahner Promenade): Fußgänger, eng, Kurve	q3 20832,15981 20788,15968 20761,15940
+# 
+Köllnische Heide: schmaler Weg, kurvig	q3+ 20511,4781 20589,4795 20651,4854 20689,4862
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
