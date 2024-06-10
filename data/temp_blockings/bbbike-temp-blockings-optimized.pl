@@ -3617,6 +3617,9 @@ Schlossinsel	2::temp 22093,4499 22076,4422
 #: by: https://nitter.net/DasBoes/status/1636082561859350528#m (die Joachimsthaler ist entgegen der Karte in beiden Richtungen gesperrt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_24_1479_1538_online.pdf
 #: by: https://www.tagesspiegel.de/berlin/grosse-verkehrseinschrankungen-in-berlin-erwartet-hohe-sicherheitsstufe-fur-ukraine-wiederaufbaukonferenz--polizei-im-grosseinsatz-11787479.html
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staatsbesuch-aenderungen-auf-bvg-linien_a417820
+#: source_id: viz2021:13.322084,52.512028,10.06.2024,13:00 (hier bereits ab Ernst-Reuter-Platz (bei rbb: Anlieger frei), bis 12.06.2024)
+#: source_id: viz2021:13.331732,52.505347,10.06.2024,13:00 (bis 12.06.2024)
 #: note: um das Hotel Waldorf Astoria herum
 # REMOVED (diesmal nicht) --- Hardenbergstr.	2::temp 5459,11135 5542,11075
 Hardenbergstr.	2::temp 5542,11075 5652,11004
@@ -5369,7 +5372,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
-#: last_checked: 2024-06-02 vvv
+#: last_checked: 2024-06-10 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
@@ -5589,7 +5592,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731917567688913337#m
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1419805.php (Baumfällungen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1451630.php (voraussichtlich teilweise Freigabe, der Rest wird bis Juni 2025 gemacht (also etwas kürzer als bei VIZ))
-#: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024)
+#: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
@@ -5638,32 +5641,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://berliner-abendblatt.de/2022/08/03/spandauer-havelfest-nach-zwei-jahren-pause-zurueck/
-#: by: https://partner-fuer-spandau.de/veranstaltungen/spandauer-sommerklassiker-das-spandauer-havelfest/263
-#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11798 (Anfrage (findet 2023 nicht statt?))
-#: by: https://www.berlin.de/events/3467999-2229501-spandauer-havelfest.html (2024)
-	2::temp -2918,14496 -2964,14478 -3026,14358 -3054,14305 -3091,14220 -3135,14183 -3275,14114
-	2::temp -3054,14305 -3019,14286
-	2::temp -2964,14478 -2939,14433 -3019,14286 -3042,14255 -3059,14230 -3090,14198 -3153,14141 -3187,14116 -3291,14043 -3306,14035 -3345,13994
-	2::temp -3042,14255 -3091,14220
-',
-         'from' => 1717624800,
-         'id' => 3598,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              6
-                            ]
-                          ],
-         'text' => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 7. bis 9. Juni 2024',
-         'type' => 'gesperrt',
-         'until' => 1717959600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6112,6 +6090,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
 #: last_checked: 2024-05-22
 #: check_frequency: 90d
+#: next_check: 2024-07-18
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
          'from' => undef,
@@ -6643,7 +6622,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        {
          'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
 #: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
-#: last_checked: 2024-05-03 vvv
+#: last_checked: 2024-06-06 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2024-06-15 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
@@ -6756,7 +6735,18 @@ Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.301291,52.5098,14.08.2023,06:00 (inaktiv)
+#: source_id: viz2021:13.30003,52.50977,10.06.2024,07:00 (neu, bis 18.08.2024)
+# REMOVED --- Schillerstr.	q4::inwork 3460,11441 3339,11433
+Fritschestr.	q4::inwork 3339,11433 3368,11237
+',
+         'from' => 1718044283,
+         'id' => 3888,
+         'text' => 'Fritschestr.: Bauarbeiten zwischen Schillerstr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, vom 10.06.2024 07:00 bis 18.08.2024 18:00',
+         'type' => 'handicap',
+         'until' => 1723996800
+       },
        undef,
        undef,
        undef,
@@ -7564,20 +7554,7 @@ Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,99
          'until' => 1729009800
        },
        undef,
-       {
-         'data' => '#: note: Außerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
-#: by: https://www.deutsches-architekturforum.de/thread/14527-holzmarktstra%C3%9Fe-51-krautstra%C3%9Fe-30-friedrichshain-in-bau/?postID=759966#post759966
-#: last_checked: 2024-05-31
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2024-05-31
-	q4::inwork 11966,11832 11993,11978
-',
-         'from' => 1713696856,
-         'id' => 4047,
-         'text' => 'Krautstr.: Bauarbeiten, Fahrbahn zwischen Lange Str. und Holzmarktstr. gesperrt, voraussichtlich bis Ende Mai 2024, evtl. noch länger',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025)
@@ -7844,8 +7821,8 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: also_indoor: traffic (ex-H,G,ex-B,W)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
-#: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen
-#: last_checked: 2024-06-06 (traffic) vvv
+#: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht)
+#: last_checked: 2024-06-10 vvv
 #: check_frequency: 3d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
@@ -7861,22 +7838,24 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1451042.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/up_onkel-tom-strasse.jpg
+#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/fahrbahn-wird-erneuert_a417244 (Gehweg ist nicht betroffen: deshalb 2 -> q4)
 #: source_id: viz2021:13.247352,52.462076,10.06.2024,06:00 (bis 22.06.2024)
-	2::inwork -138,6681 -150,6168 -119,5885 40,5606 67,5404
+	q4::inwork -138,6681 -150,6168 -119,5885 40,5606 67,5404
 ',
          'from' => 1717884000,
          'id' => 4070,
-         'text' => 'Onkel-Tom-Str.: Bauarbeiten zwischen Fenngraben und Hüttenweg, Sperrung der Straße, vom 10.06.2024 bis 22.06.2024',
-         'type' => 'gesperrt',
+         'text' => 'Onkel-Tom-Str.: Bauarbeiten zwischen Fenngraben und Hüttenweg, Sperrung der Fahrbahn, vom 10.06.2024 bis 22.06.2024',
+         'type' => 'handicap',
          'until' => 1719068400
        },
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1796409264266936344 (Dauer ca. drei Wochen)
 #: source_id[inactive]: bvg2024:108#HIM_FREETEXT_224826 (hier nur bis 9.6.2024)
-#: source_id: bvg2024:108#HIM_FREETEXT_225358 (bis 30.06.2024)
+#: source_id[inactive]: bvg2024:108#HIM_FREETEXT_225358 (bis 30.06.2024)
+#: source_id: bvg2024:108#HIM_FREETEXT_225921
 #: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024) (inaktiv)
 #: source_id: viz2021:13.589683,52.480279,31.05.2024,01:30 (bis 25.06.2024)
-#: also_indoor: traffic (H,B)
+#: also_indoor: traffic (H,B,G)
 #: note: bei rbb bis Mitte Juni (2024); mittlerweile bis 25.06.2024
 #: note: gesperrter Bereich nur etwa 60m
 # REMOVED --- #: last_checked: 2024-06-02 --- #: next_check: 2024-06-09
@@ -7933,7 +7912,7 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
        },
        {
          'data' => '#: source_id: viz2021:13.55316,52.43396,04.06.2024,14:11 (bis 18.06.2024)
-#: note: bei rbb "bis auf weiteres"
+#: note: bei rbb "bis auf weiteres", mittlerweile auch bis 18.6.2024
 	q4::inwork 20717,3310 20478,3156
 ',
          'from' => 1717416660,
@@ -7990,6 +7969,41 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
          'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.06.2024 07:00 bis 29.07.2024 17:00',
          'type' => 'handicap',
          'until' => 1722265200
+       },
+       {
+         'data' => '#: source_id: viz2021:13.299377,52.44785,10.06.2024,07:00 (bis 09.08.2024)
+#: also_indoor: traffic (W)
+	q3::inwork 3185,4894 3425,4541
+',
+         'from' => 1717909200,
+         'id' => 4083,
+         'text' => 'Fabeckstr.: Anbindung Unter den Eichen gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.06.2024 07:00 bis 09.08.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1723215600
+       },
+       {
+         'data' => '#: note: Länge der Einbahnstraßenregelung etwa 80m; außerdem ist auch die Inselstraße Einbahnstraße, hier aber für Radfahrer frei
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
+#: last_checked: 2024-06-10
+#: check_frequency: 14d
+	q3::inwork; 10908,11908 10722,11816
+',
+         'from' => undef,
+         'id' => 4084,
+         'text' => 'Wallstr.: Bauarbeiten, zwischen Inselstr. und Neue Roßstr. Richtung Westen gesperrt, Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.272157,52.498814,10.06.2024,18:00 (bis 12.06.2024)
+#: note: möglicherweise auch im Zusammenhang mit der Ukraine-Konferenz
+	2::temp 683,11270 711,11199 787,11121 928,10948 998,10723 1049,10568 1127,10403 1247,10270 1398,10201 1457,10168
+',
+         'from' => 1717948800,
+         'id' => 4085,
+         'text' => 'Jafféstr.: zwischen Messedamm und Heerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.06.2024 18:00 bis 12.06.2024 23:59',
+         'type' => 'gesperrt',
+         'until' => 1718229540
        }
      
 );
