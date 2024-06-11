@@ -216,8 +216,11 @@ my @req_table =
    'Für das Parsen des ESRI-Shapefile-Formats'],
   [qw/XBase	0	all	0	base/,
    'Ebenfalls für das Parsen des ESRI-Shapefile-Formats'],
-  [qw/Geo::LibProj::FFI	0	all	0	base/,
-   'Für das Konvertieren von ESRI-Shapefiles'],
+  ($] >= 5.014 ? # does not build with older perls
+   [qw/Geo::LibProj::FFI	0	all	0	base/,
+    'Für das Konvertieren von ESRI-Shapefiles']
+   : ()
+  ),
   [qw/Tie::IxHash	1.23	all	0|4	base/, # 1.23 for Clear method
    'Damit Direktiven in Straßen-Daten geordnet bleiben'],
   [qw/CDB_File		0	all	0|4	base/,
