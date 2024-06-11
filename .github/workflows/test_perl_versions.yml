@@ -23,7 +23,7 @@ jobs:
             bbbike_test_skip_mapserver: 1
           - perl_version:               5.38.2-bookworm
             bbbike_test_skip_mapserver: 1
-          - perl_version:               5.39.10-bookworm
+          - perl_version:               5.40.0-bookworm
             bbbike_test_skip_mapserver: 1
           # XXX need to fix things for bbbike_test_skip_mapserver: 0
     env:
