@@ -25729,12 +25729,14 @@ EOF
        text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 10. Juni 2024, 13:00 Uhr bis zum 11. Juni 2024, 18:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://viz.berlin.de/2023/03/staatsbesuch/ (neu)
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/
 #: by: https://berliner-abendblatt.de/berlin-news/israels-ministerpraesident-in-berlin-grosses-polizeiaufgebot-id212454
 #: by: https://nitter.net/DasBoes/status/1636082561859350528#m (die Joachimsthaler ist entgegen der Karte in beiden Richtungen gesperrt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_24_1479_1538_online.pdf
 #: by: https://www.tagesspiegel.de/berlin/grosse-verkehrseinschrankungen-in-berlin-erwartet-hohe-sicherheitsstufe-fur-ukraine-wiederaufbaukonferenz--polizei-im-grosseinsatz-11787479.html
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staatsbesuch-aenderungen-auf-bvg-linien_a417820
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1800101801108336978
+#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zur-ukraine-wiederaufbaukonferenz/ (2024-06)
 #: source_id: viz2021:13.322084,52.512028,10.06.2024,13:00 (hier bereits ab Ernst-Reuter-Platz (bei rbb: Anlieger frei), bis 12.06.2024)
 #: source_id: viz2021:13.331732,52.505347,10.06.2024,13:00 (bis 12.06.2024)
 #: note: um das Hotel Waldorf Astoria herum
@@ -26969,6 +26971,7 @@ EOF
 #: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
 #: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_24_1479_1538_online.pdf
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1800450239750406366 (doch keine durchgängige Sperrung des Großen Sterns) (Juni 2024)
 	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
 	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6831,12150 7001,12274 7031,12320 7383,12095
 	2::temp 6689,12632 7031,12320
@@ -28559,7 +28562,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-06-06
+#: last_checked: 2024-06-11
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -42854,6 +42857,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787175928923099290 (hier auch: Heinrich-von-Gagern-Str., Otto-von Bismarck-Allee, Paul-Löbe-Allee)
 #: by[nocache]: https://twitter.com/BA_Mitte_Berlin/status/1787472473597813136
+#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsinformationen-zur-uefa-euro-2024-in-berlin/
 #: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024) (bis 26.07.2024)
 #: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024)
 #: note: es sieht so aus, als ob man vom Bremer Weg nur über Umwege (bis fast Behrenstr.?) zum Brandenburger Tor fahren kann
@@ -42865,8 +42869,9 @@ Ebertstr.	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-06-05
+#: last_checked: 2024-06-11
 #: check_frequency: 7d
+#: next_check: 2024-06-12
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
 Ahornsteig - Brandenburger Tor	2::temp 8522,12187 8538,12245
@@ -43000,7 +43005,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
-#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv)
+#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
 #: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
 	q4::inwork; 11239,18832 11001,18528
@@ -43024,11 +43029,11 @@ EOF
 EOF
      },
      { from  => 1680415200, # 2023-04-02 08:00
-       until => 1719756000, # 2024-06-30 16:00
-       text  => 'Kuhdammweg - Am Umspannwerk: Bauarbeitem, Sperrung, evtl. sind auch Radfahrer betroffen, 03.04.2023 08:00 Uhr bis 30.06.2024 16:00 Uhr',
+       until => $isodate2epoch->("2024-08-02 16:00:00"), # 1719756000, # 2024-06-30 16:00
+       text  => 'Kuhdammweg - Am Umspannwerk: Bauarbeitem, Sperrung, evtl. sind auch Radfahrer betroffen, 03.04.2023 08:00 Uhr bis 02.08.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 236320002 (bis 30.06.2024)
+#: source_id: 236320002 (bis 30.06.2024) (bis 02.08.2024)
 	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
 EOF
      },
@@ -43095,7 +43100,7 @@ EOF
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: also_indoor: traffic (ex-H,G,ex-B,W)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
-#: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht)
+#: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert)
 #: last_checked: 2024-06-10 vvv
 #: check_frequency: 3d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -43266,13 +43271,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Wallstr.: Bauarbeiten, zwischen Inselstr. und Neue Roßstr. Richtung Westen gesperrt, Ende unbekannt',
+       text  => 'Wallstr.: Bauarbeiten, zwischen Inselstr. und Neue Roßstr. Richtung Westen gesperrt, vermutlich bis Mitte Juli 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Länge der Einbahnstraßenregelung etwa 80m; außerdem ist auch die Inselstraße Einbahnstraße, hier aber für Radfahrer frei
+#: note: Halteverbotsschilder bis 17.07.2024
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: last_checked: 2024-06-10
-#: check_frequency: 14d
+#: check_frequency: 30d
+#: next_check: 2024-07-17
 	q3::inwork; 10908,11908 10722,11816
 EOF
      },
@@ -43284,6 +43291,15 @@ EOF
 #: source_id: viz2021:13.272157,52.498814,10.06.2024,18:00 (bis 12.06.2024)
 #: note: möglicherweise auch im Zusammenhang mit der Ukraine-Konferenz
 	2::temp 683,11270 711,11199 787,11121 928,10948 998,10723 1049,10568 1127,10403 1247,10270 1398,10201 1457,10168
+EOF
+     },
+     { from  => 1718085600, # 2024-06-11 08:00
+       until => 1720796400, # 2024-07-12 17:00
+       text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 12.06.2024 08:00 bis 12.07.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024)
+	q3::inwork 20302,1613 20366,1479
 EOF
      },
     );
