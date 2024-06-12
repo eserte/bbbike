@@ -40514,7 +40514,7 @@ EOF
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
 #: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
 #: source_id: bvg2021:240#BVG326189_0
-#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024)
+#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024)
 #: also_indoor: traffic (H[ungenau],G,W,B)
 #: osm_watch: way id="198589911" version="20"
 #: note: gesperrter Bereich ist etwa 90m lang
@@ -42640,7 +42640,7 @@ EOF
        text  => 'Bredow - Brieselang/Falkensee: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, bis zum 12.06.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/23/189 (bis 12.06.2024)
+#: source_id: LS/223-P/23/189 (bis 12.06.2024) (inaktiv)
 	2::inwork -23452,18658 -22367,19503 -22236,19745 -22145,19713 -21989,19969 -21864,20015 -21364,20346 -20944,20402 -20850,20447 -20387,21160 -19973,21481 -19431,22888
 EOF
      },
@@ -43030,7 +43030,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
-#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024)
+#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
 #: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
 	q4::inwork; 11239,18832 11001,18528
@@ -43123,10 +43123,10 @@ EOF
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
 #: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: also_indoor: traffic (ex-H,G,ex-B,W)
+#: also_indoor: traffic (ex-H,G,re-B,W)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert)
-#: last_checked: 2024-06-10 vvv
+#: last_checked: 2024-06-12 (traffic) vvv
 #: check_frequency: 3d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
@@ -43321,10 +43321,12 @@ EOF
      },
      { from  => 1718085600, # 2024-06-11 08:00
        until => 1720796400, # 2024-07-12 17:00
-       text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 12.06.2024 08:00 bis 12.07.2024 17:00',
+       text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 12.07.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1800742824524259711
+#: by: https://pbs.twimg.com/media/GPzFCzlWcAAoKgR?format=jpg&name=large
 	q3::inwork 20302,1613 20366,1479
 EOF
      },

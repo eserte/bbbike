@@ -2521,6 +2521,8 @@ Kˆnigsweg: geplante Asphaltierung	?::projected -1082,2140 -1078,2154 -987,2205 -
 #: by: https://weddingweiser.de/bitte-nicht-nur-etikettenschwindel/
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/blau-weisse-schilder-im-afrikanischen-viertel_a329798
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10995 (Antrag zur Ampelschaltung an der Seestr.)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (2024?)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/service-und-organisationseinheiten/sozialraumorientierte-planungskoordination/buero-fuer-buergerbeteiligung/vhl2024.pdf (2024?)
 #: osm_watch: way id="597289462" version="9"
 #: osm_watch: way id="4605293" version="29"
 #: osm_watch: note 3954758 1
@@ -2528,6 +2530,7 @@ Kˆnigsweg: geplante Asphaltierung	?::projected -1082,2140 -1078,2154 -987,2205 -
 # REMOVED (hier bereits realisiert) --- #: osm_watch: way id="281071129" version="8"
 #: last_checked: 2024-06-05
 #: check_frequency: 120d
+#: next_check: 2024-12-31
 # REMOVED (hier realisiert) --- Togostr.: Ausweisung als Fahrradstraﬂe?	? 6530,15849 6383,15972 6244,16096
 # REMOVED (hier sowieso nur Radweg) --- Togostr.: Ausweisung als Fahrradstraﬂe?	? 6244,16096 6104,16223
 Togostr.: Ausweisung als Fahrradstraﬂe?	? 6104,16223 6005,16313 5906,16403 5700,16584 5596,16662
@@ -4661,7 +4664,7 @@ Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11380,11863 11324,11689
 # 
 #: by: https://www.luisenstadt-mitte.de/projekte/adalbertstrasse-0 (ab 2024) (mittlerweile ab 2025)
 #: XXX verschwindet dabei auch das Kopfsteinpflaster?
-#: last_checked: 2024-04-12
+#: last_checked: 2024-06-11 (daf)
 #: next_check: 2025-06-30
 Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,11106 11726,11265 11808,11482
 # 
@@ -5225,12 +5228,15 @@ Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 Pankstr.: gesch¸tzter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907 8430,15901 8271,15734 8176,15635 8156,15614 8049,15470
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (2022)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (2024?)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/service-und-organisationseinheiten/sozialraumorientierte-planungskoordination/buero-fuer-buergerbeteiligung/vhl2024.pdf (2024?)
 #: osm_watch: note 3954748 1
 #: osm_watch: note 4127416 1
-#: last_checked: 2024-04-17
+#: last_checked: 2024-06-11 (mapillary)
 #: check_frequency: 360d
-# REMOVED --- #: next_check: 2022-12-31
-Schwedter Str.: Fahrradstraﬂe geplant, wo genau?	? 10933,14122 10822,14179 10739,14228 10629,14299 10567,14337 10530,14452 10506,14521 10472,14632 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
+#: next_check: 2024-12-31
+# REMOVED (hier nicht) --- Schwedter Str.: Fahrradstraﬂe geplant, wo genau?	? 10933,14122 10822,14179 10739,14228 10629,14299
+Schwedter Str.: Fahrradstraﬂe zwischen Bernauer und Choriner Str. geplant	? 10629,14299 10567,14337 10530,14452 10506,14521 10472,14632 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
 # 
 # REMOVED (Evaluierung ist zu Ende) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.741426.php ("Dunkelampel") --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird daf¸r die Ampel an der Nostitzstr. aufgegeben?) --- #: XXX zurzeit gibt es hier nur einen provisorischen Zebrastreifen --- #: last_checked: 2019-09-24 (mapillary) --- #: check_frequency: 60d --- Bergmannstr.: entsteht hier eine weitere Fuﬂg‰ngerampel?	? 9404,9345 9309,9347 9398,9311
 # REMOVED --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/einstimmen-auf-die-testphase-fuer-die-begegnungszone-bergmannstrasse_a182777 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/infos-zur-testphase_a187582 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/auf-der-bergmannstrasse-stehen-erste-module-fuer-die-begegnungszone_a188443 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/cdu-und-spd-fordern-parklet-abbau-an-der-bergmannstrasse_a196570 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780380.php (Beendigung August 2019) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/vorzeitiges-ende-fuer-begegnungszone-an-der-bergmannstrasse_a199381 (Beendigung Ende Juli 2019) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8927 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/der-preis-fuer-die-testphase_a204442 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8999 (kein Ende im Juli 2019) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.809103.php --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813379.php --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/begegnungszone-bergmannstrasse-als-arbeitsprozess_a215350 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.822926.php (wo genau werden die Findlinge aufgestellt?) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/sitzmoebel-und-strassenpunkte-auf-der-bergmannstrasse-kommen-ab-23-september-weg_a226615 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.835750.php --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/ausstellung-an-den-parklets-stellt-varianten-fuer-gestaltung-der-bergmannstrasse-vor_a231553 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.847532.php --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.848152.php (Abbau: Begin KW 39/2019, Dauer 3 Wochen) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/wie-es-mit-der-begegnungszone-bergmannstrasse-weiter-geht_a233467 --- #: by: https://www.abendblatt-berlin.de/2019/09/28/berlin-kreuzberg-parklets-in-der-bergmannstrasse-werden-abgebaut/ --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/steine-statt-parklets_a234229 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/die-bvv-und-die-findlinge-in-der-bergmannstrasse_a234952 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/was-auf-den-flaechen-an-der-bergmannstrasse-passieren-soll_a238405 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9378 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9349 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.991740.php (verkehrliche Umgestaltung des Bergmannkiezes) --- #: by: https://www.berlin.de/bergmannkiez/ --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/zukunft-bergmannkiez_a286807 --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9768 (Finanzierung des Umbaus der Bergmannstraﬂe) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1040993.php (Leitungsarbeiten bis Mitte Februar 2021) --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/arbeiten-an-kabelanlagen_a298826 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1053358.php (Tempo 20 im Kiez, Durchfahrtsperren, Einbahnstraﬂen, Anlieger-frei-Schilder) --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/im-bergmannkiez-werden-erste-massnahmen-realisiert_a302916 (bauliche Maﬂnahmen in der Bergmannstraﬂe ab 2022) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Fuﬂg‰ngerzone, Geschwindigkeitsbegrenzung f¸r Radfahrer) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084639.php (erste Realisierung KW 19/2021) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/durchfahrt-verboten_a310398 --- #: by: https://www.berlin.de/bergmannkiez/_assets/210202_bergmannkiez_informationsschreiben-poster.pdf --- #: by: https://taz.de/Verkehrsberuhigung-der-Bergmannstrasse/!5762811/ --- #: by: https://taz.de/picture/4824322/624/taz-grafik-270421-Bergmannstrasse-verkehrliche-massnahmen-online-1.png
@@ -9383,6 +9389,7 @@ Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraﬂe? entsteht eine Paral
 #: note: Gel‰nde auch als "Napoleonkai" bekannt
 #: osm_watch: way id="113631587" version="6"
 #: osm_watch: note 4039470 3
+#: priority: #A
 #: last_checked: 2024-04-28 (osm note)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-05-15
