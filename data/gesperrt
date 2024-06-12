@@ -1013,6 +1013,7 @@ Hausvaterweg [Wohngebiet]	1s 19789,18423 19704,18459
 Bahnhofsplatz S-Bhf. Hermsdorf	1 3624,23540 3610,23527 3590,23541 3581,23557 3596,23581
 Daimler-Parkplatz: Zufahrt Köpenicker Str. oft (immer?) gesperrt, auch an Werktagen	2 18471,2166 18448,2182 18320,2195
 Cotheniusstr.: Schulgelände, gesperrt	2 13430,13733 13519,13785
+Lichtenberger Str. [Wohngebiet]	1 11947,12494 11867,12284
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2089,12 +2090,12 @@ Potsdamer Str. -> Kleistpark: unbequemes Überqueren, stark befahrene Straße	3::i
 Kleistpark -> Potsdamer Str.: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7501,9573 7512,9572 7518,9791
 unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 14501,10169 14405,10027 14323,9913 14289,9870
 Mittelstreifen	3nocross::ignrte 12028,12519 12006,12464 11920,12266
-Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11920,12266 12006,12464 11712,12614
+Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11920,12266 12006,12464 11947,12494
 Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12028,12519 12006,12464 12118,12462
-Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 11712,12614 12006,12464 12028,12519
-Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11712,12614 12006,12464 12118,12462
+Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 11947,12494 12006,12464 12028,12519
+Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11947,12494 12006,12464 12118,12462
 Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11920,12266
-Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11712,12614
+Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11947,12494
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 7696,7562 7858,7462 7938,7406
 Sachsendamm -> Suadicanistr.: unbequem passierbarer Mittelstreifen	3::igndisp 7696,7562 7858,7462 7858,7506
 Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3::igndisp 7858,7506 7858,7462 7938,7406
@@ -2817,8 +2818,7 @@ tragen (21 Stufen)	0:30:-263 9557,12992
 tragen (Treppe)	0:30:86 9508,12991
 tragen (41 Stufen)	0:45:-226 9983,16561
 tragen (Treppe)	0:45:38 9982,16527
-tragen (Treppe, 6+7 Stufen)	0:30:-69 3762,12599
-tragen (Treppe, 3 Stufen)	0:10:-91 3810,12600
+tragen (Treppe, 7+10 Stufen)	0:30:-66 3766,12596
 tragen (Treppe, 18 Stufen)	0:30:-266 4321,12566
 tragen (Jungfernbrücke, 10 Stufen)	0:15:53 10212,12002
 tragen (Jungfernbrücke, 4 Stufen)	0:10:53 10223,12010
@@ -3547,7 +3547,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
 Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 8015,13303
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
-Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
+Wikingerufer: neuer Uferweg ist noch nicht freigegeben	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006

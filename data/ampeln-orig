@@ -6,6 +6,12 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: SCHLANGENBADERTUNNEL-2023
+#: last_checked: 2024-06-12
+#: check_frequency: 120d
+#: next_check: 2028-01-01
+Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
+# 
 #: next_check_id: SCHOENEWEIDE-2018
 #: last_checked: 2024-06-09
 #: next_check: 2024-07-18
@@ -189,7 +195,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2024-05-28
+#: last_checked: 2024-06-12
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 #: valid: -20240701
@@ -3404,7 +3410,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-06-02 vvv
+#: last_checked: 2024-06-12 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

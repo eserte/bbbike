@@ -341,7 +341,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-06-03 vvv
+#: last_checked: 2024-06-12 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -965,7 +965,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-06-02
+#: last_checked: 2024-06-12
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1362,7 +1362,7 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 #: by: https://api.fixmyberlin.de/api/plannings/216
 #: by: https://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026)
 #: osm_watch: way id="963841938" version="6"
-#: last_checked: 2024-03-22
+#: last_checked: 2024-06-12
 #: check_frequency: 720d
 #: next_check: 2026-12-31
 	RW2; 4349,8118 4280,8188
@@ -6530,7 +6530,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neust%C3%A4dtische-kirchstra%C3%9Fe-4-5-herrichtung-f%C3%BCr-bundesministerium.775/#post-22250
 #: by: https://www.n-tv.de/politik/Bundestags-BER-verschlingt-weitere-Millionen-article24709001.html (Hochbauarbeiten bis 2027?)
 #: by[nocache]: https://www.bz-berlin.de/berlin/mitte/berlins-laengstes-halteverbot (bis 2027)
-#: last_checked: 2024-06-02 vvv
+#: last_checked: 2024-06-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -8887,3 +8887,4 @@ niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13970,11366 14134,11
 # 
 	RW6;RW6 11731,7473 11738,7431
 # 
+	RW1; 3915,9120 3919,9085

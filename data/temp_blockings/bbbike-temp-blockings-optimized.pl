@@ -4665,8 +4665,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
+         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-89ve/7-89-ve-pas_ol_11_mit-deckblatt_internetfassung_gez.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8371 (Bebauungsplan 7-89 VE)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8370
@@ -4678,16 +4677,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/passauer-stra%C3%9Fe-1%E2%80%933-no-1-passauer.531/page-3#post-22316
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="10"
+#: osm_watch: way id="362719487" version="11"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2024-05-04
+#: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
+#: last_checked: 2024-06-12 (osm)
 #: check_frequency: 120d
 	q4::inwork 6021,10405 6116,10688
 ',
          'from' => undef,
          'id' => 3320,
          'source_id' => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
-         'text' => 'Passauer Str.: Fahrbahn gesperrt (Stand Mai 2024), Ende der Bauarbeiten unbekannt',
+         'text' => 'Passauer Str.: Fahrbahn gesperrt (Stand Juni 2024), Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6286,15 +6286,15 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: osm_watch: note 3834145 3
 #: osm_watch: note 3834144 1
 #: also_indoor: traffic (ex-H,ex-G,B,ex-W)
-#: last_checked: 2024-05-14 (traffic)
-# REMOVED --- #: check_frequency: 30d
-#: check_frequency: 14d
-#: next_check: 2024-05-24
+#: last_checked: 2024-06-12
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 14d
+# REMOVED --- #: next_check: 2024-05-24
 	q4::inwork 3869,10760 4267,10724 4393,10712
 ',
          'from' => 1681189200,
          'id' => 3763,
-         'text' => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, voraussichtlich bis 24.05.2024',
+         'text' => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6404,12 +6404,12 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-05-27
+#: last_checked: 2024-06-11 (osm)
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="27"
 # REMOVED (hier nicht mehr) --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="9"
+#: osm_watch: way id="1025826786" version="10"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 ',
          'from' => undef,
@@ -6997,7 +6997,16 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024)
+	2::inwork 23015,30519 23113,30450
+',
+         'from' => 1705186800,
+         'id' => 3947,
+         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung bis 30.08.2024',
+         'type' => 'gesperrt',
+         'until' => 1725026400
+       },
        undef,
        undef,
        undef,
@@ -7284,11 +7293,16 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        {
          'data' => '#: next_check_id: SPREERADWEGIBURGER-2024
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
+#: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2024-05-27 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2025-05-31
-	2::inwork 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578
+#: last_checked: 2024-06-12 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2025-05-31 vvv
+	2::inwork 3867,12616 3888,12618 4131,12641
+	2::inwork 4340,12578 4441,12578
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1709576392,
          'id' => 4016,
@@ -7593,15 +7607,21 @@ Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,99
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Kleine Querallee, Überquerung	3 8391,12389 8344,12221 8327,12174
 Kleine Querallee, Überquerung	3 8327,12174 8344,12221 8391,12389
-Ebertstr.	q3::temp 8540,12420 8573,12325
+#: note: zwischenzeitlich q3::temp
+Ebertstr.	2::temp 8540,12420 8573,12325
 Ebertstr.	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+#: note: zwischenzeitlich waren hier wenigstens die Bürgersteige passierbar
+Ebertstr.	2::temp 8600,12165 8595,12066
+Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-06-11
+#: last_checked: 2024-06-12
 #: check_frequency: 7d
-#: next_check: 2024-06-12
+# REMOVED --- #: next_check: 2024-06-12
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
+Pariser Platz	2::temp 8637,12258 8722,12268
+Pariser Platz	2::temp 8722,12268 8728,12220 8705,12217
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
 Ahornsteig - Brandenburger Tor	2::temp 8522,12187 8538,12245
 #: note: Sperrungen im Regierungsviertel
@@ -7609,10 +7629,23 @@ Yitzhak-Rabin-Str.: nach 60m von der Heinrich-von-Gagern-Str. komplett gesperrt	
 Heinrich-von-Gagern-Str.: westlicher Bürgersteig ist passierbar	q4::temp 8119,12414 8122,12603
 Paul-Löbe-Allee	2::temp 8306,12609 8207,12606
 Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
+#: note: Tiergarten östlich Bellevueallee gesperrt
+	2::temp 8571,11846 8501,11815 8244,11878 8221,11876 8221,11885 8244,11878 8327,12174 8466,12197
+	2::temp 8214,12205 8215,12156 8122,12147 8107,12068 8099,12058 8102,12043 8099,12022 8091,12023 8091,12011 8091,11992 8104,11984 8095,11919 8020,11937 8022,12016
+	2::temp 8122,12147 8049,12140 8055,12186 7816,12150 7383,12095
+	2::temp 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
+	2::temp 7429,12070 7775,12114 7772,12040 7717,11918
+	2::temp 8522,12187 8453,12099 8262,11883
+	2::temp 8221,11690 8210,11775 8221,11876 8167,11865 8132,11910 8221,11885 8215,12156
+	2::temp 8026,11764 8140,11850
+	2::temp 8327,12174 8344,12221
+	2::temp 7816,12150 7823,12120 7832,12036 7822,11952 7793,11878
+	2::temp 8210,11775 8172,11679
+	2::temp 8020,11937 8016,11770
 ',
          'from' => 1714860000,
          'id' => 4053,
-         'text' => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Heinrich-von-Gagern-Str., Brandenburger Tor: Sperrungen und Engstellen wegen Veranstaltung (EM 2024), vom 6.5.2024 bis 26.7.2024',
+         'text' => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Heinrich-von-Gagern-Str., Brandenburger Tor, Pariser Platz, östlicher Tiergarten: Sperrungen wegen Veranstaltung (EM 2024), vom 6.5.2024 bis 26.7.2024',
          'type' => 'gesperrt',
          'until' => 1722009600
        },
@@ -7731,14 +7764,14 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
          'until' => 1719500400
        },
        {
-         'data' => '#: source_id: 236320002 (bis 30.06.2024) (bis 02.08.2024)
+         'data' => '#: source_id: 236320002 (bis 30.06.2024) (bis 02.08.2024) (bis 30.08.2024)
 	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
 ',
          'from' => 1680415200,
          'id' => 4064,
-         'text' => 'Kuhdammweg - Am Umspannwerk: Bauarbeitem, Sperrung, evtl. sind auch Radfahrer betroffen, 03.04.2023 08:00 Uhr bis 02.08.2024 16:00 Uhr',
+         'text' => 'Kuhdammweg - Am Umspannwerk: Bauarbeitem, Sperrung, evtl. sind auch Radfahrer betroffen, 03.04.2023 08:00 Uhr bis 30.08.2024 16:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1722607200
+         'until' => 1725026400
        },
        undef,
        undef,
@@ -7885,6 +7918,7 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
        {
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
 #: note: keine Freigabe der Gehwege für Radfahrer
+#: note: Absperrungen können teilweise weggeschoben sein und die Fahrbahn ist nur in der Mitte aufgebuddelt (Stand Mitte Juni 2024)
 	q4::inwork 15077,11910 15110,12107
 ',
          'from' => 1717538400,
@@ -7956,17 +7990,7 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.272157,52.498814,10.06.2024,18:00 (bis 12.06.2024)
-#: note: möglicherweise auch im Zusammenhang mit der Ukraine-Konferenz
-	2::temp 683,11270 711,11199 787,11121 928,10948 998,10723 1049,10568 1127,10403 1247,10270 1398,10201 1457,10168
-',
-         'from' => 1717948800,
-         'id' => 4085,
-         'text' => 'Jafféstr.: zwischen Messedamm und Heerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.06.2024 18:00 bis 12.06.2024 23:59',
-         'type' => 'gesperrt',
-         'until' => 1718229540
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024)
 	q3::inwork 20302,1613 20366,1479

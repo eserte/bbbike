@@ -131,7 +131,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED --- #: next_check: 2020-12-15 vvv
 # REMOVED (Termin kann nicht gehalten werden) --- #: next_check: 2020-11-06 --- #: valid: -20201106
 # REMOVED --- Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nördliche Seite geht besser), Bordstein	q2::inwork 12081,12236 11920,12266
-# REMOVED --- Singerstr.: Bauarbeiten westlich der Lichtenberger Str., Ausweichen auf Gehweg, Bordstein	q3::inwork 11920,12266 11845,12292
+# REMOVED --- Singerstr.: Bauarbeiten westlich der Lichtenberger Str., Ausweichen auf Gehweg, Bordstein	q3::inwork 11920,12266 11867,12284 11845,12292
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (wieder (in eine Richtung) befahrbar) --- #: next_check_id: RIGAER-2018 --- #: osm_watch: way id="516827454" version="5" --- #: priority: #A --- #: last_checked: 2019-05-02
 # REMOVED --- #: next_check: 2019-04-30 (Ende der Regelung, ggfs. wird verlängert)
@@ -326,7 +326,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-06-05 vvv
+#: last_checked: 2024-06-12 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -450,7 +450,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-06-02 vvv
+#: last_checked: 2024-06-12 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1026,10 +1026,10 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 ### Schöneberg ###
 # 
 #: XXX Hohenstaufenstraße (Schöneberg) in beiden Richtungen im Kreuzungsbereich Eisenacher Straße: Leitungsarbeiten, eine Baustellenampel regelt den Verkehr, vom 28.03.2024 07:00 bis 29.05.2024 17:00 --- verlängert
-#: source_id: viz2021:13.349791,52.494637,28.03.2024,07:00 (bis 29.05.2024) (bis 14.06.2024)
+#: source_id: viz2021:13.349791,52.494637,28.03.2024,07:00 (bis 29.05.2024) (bis 14.06.2024) (bis 13.06.2024)
 #: also_indoor: traffic (G,B)
 #: last_checked: 2024-05-28
-#: next_check: 2024-06-14
+#: next_check: 2024-06-13
 # REMOVED --- #: valid: -20240614
 Eisenacher Str.: Bauarbeiten Höhe Hohenstaufenstr., Engstellen	q2::inwork 6747,9912 6753,9814 6743,9678
 # 
@@ -4867,7 +4867,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
-#: last_checked: 2024-06-11
+#: last_checked: 2024-06-12
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
@@ -4978,6 +4978,10 @@ Delmer Steig: einige Fußgänger	q2 11895,1489 11865,1564
 (Raoul-Wallenberg-Str. - Marzahner Promenade): Fußgänger, eng, Kurve	q3 20832,15981 20788,15968 20761,15940
 # 
 Köllnische Heide: schmaler Weg, kurvig	q3+ 20511,4781 20589,4795 20651,4854 20689,4862
+# 
+(Wintersteinstr. - Iburger Ufer/Spreeuferweg): einige Fußgänger, Rampe	q3 3741,12607 3766,12596 3809,12596
+(Wintersteinstr. - Iburger Ufer): einige Fußgänger	q3 3809,12596 3889,12591
+(Wintersteinstr. - Spreeuferweg): einige Fußgänger	q3 3809,12596 3836,12614
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

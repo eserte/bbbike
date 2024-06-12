@@ -1155,7 +1155,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2024-06-05
+#: last_checked: 2024-06-12
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2625,7 +2625,7 @@ Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6277,11397 6337,11365 6346,11326
 (südliches Spreeufer): asphaltähnlicher Belag	Q0 5573,12242 5604,12244 5643,12253
 #: next_check_id: SPREEUFER-2022
 #: XXX evtl. wird der Weg nach der Sanierung der Uferwand auch neu gemacht
-#: last_checked: 2024-04-03
+#: last_checked: 2024-06-12
 #: check_frequency: 180d
 (südliches Spreeufer): unbefestigter Weg	Q2+ 5643,12253 5714,12290 5770,12346
 (südliches Spreeufer): Kleinsteinpflaster	Q1- 5770,12346 5796,12372
@@ -9005,9 +9005,9 @@ Fischerinsel [Wohngebiet]: Beton mit einigen Schäden	Q1+ 10604,11941 10474,11843
 (Fischerinsel - Grünstraßenbrücke): Gehwegplatten	Q0 10474,11843 10515,11785
 (Fischerinsel, Spreeufer): wassergebundene Decke	Q1 10824,11992 10827,12044 10748,12061 10699,12089 10600,12102 10578,12083
 (Fischerinsel, Spreeufer): Betonpflaster	Q0- 10578,12083 10585,12106 10562,12087 10550,12096
-Neue Blumenstr.: Beton mit einigen Schden	Q1+ 11613,12408 11712,12614
+Neue Blumenstr.: Beton mit einigen Schäden	Q1 11613,12408 11712,12614
 #: note: einige Meter glattes Kopfsteinpflaster vor der Lichtenberger Str.
-Neue Blumenstr.: Asphalt	Q0- 11712,12614 12006,12464
+Neue Blumenstr.: Asphalt	Q0- 11712,12614 11947,12494 12006,12464
 (Rampe Wriezener Park): Beton	Q0 13427,11431 13416,11425 13442,11400
 (Wriezener Park): Asphalt	Q0 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497
 (Wriezener Park): Beton	Q0- 13323,11497 13308,11515
@@ -13605,6 +13605,11 @@ Morsbronner Weg: Beton	Q0- 9428,4419 9465,4173
 # 
 Delmer Steig: Gehwegplatten, schadhafte Stellen	Q1+ 11895,1489 11865,1564
 # 
+Lichtenberger Str. [Wohngebiet]: etwas rauer Asphalt, einige leichte Schäden	Q1+ 11867,12284 11947,12494
+# 
+(Wintersteinstr. - Iburger Ufer): gepflastert	Q2+ 3809,12596 3889,12591
+(Wintersteinstr. - Iburger Ufer/Spreeuferweg): Mosaikpflaster	Q1- 3741,12607 3766,12596 3809,12596
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -16352,7 +16357,7 @@ Sentastr.: Asphalt	Q0 5458,7683 5353,7680
 Elsastr. (Friedenau): Asphalt	Q0 5490,7651 5493,7590 5492,7543
 Ortrudstr.: Asphalt	Q0 5493,7590 5353,7617
 Kundrystr.: Asphalt	Q0 5450,7494 5350,7554
-Straße am Güterbahnhof Wilmersdorf: Kopfsteinpflaster	Q2 6273,7849 5817,7824
+Straße am Güterbahnhof Wilmersdorf: Kopfsteinpflaster	Q2 6273,7849 6147,7840
 Schnackenburgstr.: Asphalt	Q0 5636,7540 5812,7536
 Stierstr.: Asphalt	Q0 5957,7773 5956,7686 5955,7420
 Hähnelstr.: Asphalt	Q0 5812,7685 5956,7686 6118,7688 6144,7677
@@ -29393,7 +29398,8 @@ Berolinastr.: Asphalt	Q0 11476,13052 11590,12995 11609,12986 11659,12962 11673,1
 Berolinastr.: Beton	Q2 11771,12909 11826,12883 11847,12927
 #: corrected_by: srt (Q0 -> ...)
 Berolinastr.: Beton	Q1+ 11541,12886 11590,12995
-Mollstr.: Beton	Q0 11739,13131 11736,13126 11719,13088 11659,12962
+#: corrected_by: srt (Q0 -> ...)
+Mollstr.: Beton	Q0- 11739,13131 11736,13126 11719,13088 11659,12962
 Mollstr.: Beton	Q0 11673,12955 11630,12867 11622,12850
 Weydemeyerstr.: Asphalt	Q0 12112,12861 12054,12903
 Weydemeyerstr.: Beton	Q0 12054,12903 11987,12946
