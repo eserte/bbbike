@@ -1768,6 +1768,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1209970.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331265.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1450216.php
+#: source_id: viz2021:13.57552,52.44722,13.06.2024,06:00 (hier auch Alt-Köpenick gesperrt, bis 17.06.2024)
 #: note: früher auch "vielleicht auch Sperrung im Kietz (Kietzer Sommer)"
 # REMOVED (Kietzer Sommer) ---	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 # REMOVED (Alt-Köpenick nicht, die Straßenbahn fährt noch) ---	2::temp 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
@@ -5554,7 +5555,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2024-06-05 vvv
+#: last_checked: 2024-06-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-30 vvv
 #: osm_watch: way id="1043813287" version="3"
@@ -5562,11 +5563,10 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 # REMOVED (offen) --- #: XXX teilweise Freigabe am 3.6.2024 (voraussichtlich!) --- #: next_check: 2024-06-03 ---	q4::inwork 13996,16959 13974,16924 13870,16837
 	q4::inwork 13870,16837 13794,16773
-#: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche?
-#: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4
-#: next_check: 2024-06-10
+# REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
 Schönstr. vor Kreuzungsbereich Amalienstr.	q4::inwork 13794,16773 13630,16629
-Amalienstr.	q3::inwork 13722,16843 13794,16773 13848,16721
+#: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
+Amalienstr.	q4::inwork 13722,16843 13794,16773 13848,16721
 Paul-Oestreich-Str.: Einbahnstraßenregelung	q4::inwork; 13630,16629 13710,16544
 Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 13848,16721
 # REMOVED (fertig) ---	q3::inwork 13996,16959 14136,17170
@@ -6422,7 +6422,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-06-02
+#: last_checked: 2024-06-13
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -7993,6 +7993,36 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
          'text' => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 12.07.2024 17:00',
          'type' => 'handicap',
          'until' => 1720796400
+       },
+       {
+         'data' => '#: note: Halteverbotsschilder bis 06.09.2024
+	q4::inwork 14330,15978 14411,16008 14484,16035
+',
+         'from' => 1718298660,
+         'id' => 4087,
+         'text' => 'Meyerbeerstr.: Bauarbeiten zwischen Lindenallee und Benfelder Str., Fahrbahn gesperrt, voraussichtlich bis 06.09.2024',
+         'type' => 'handicap',
+         'until' => 1725660000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024)
+	q4::inwork; 5476,20372 5801,20339
+',
+         'from' => 1718254800,
+         'id' => 4088,
+         'text' => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, vom 14.06.2024 07:00 bis 30.08.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1725030000
+       },
+       {
+         'data' => '#: source_id: 247201110 (bis 28.06.2024)
+	2::inwork -4146,-34505 -4356,-34162 -4269,-33725
+',
+         'from' => 1719122400,
+         'id' => 4089,
+         'text' => 'Luckenwalde: Bauarbeiten an der Bahnbrücke, Sperrung, evtl. sind auch Radfahrer betroffen, 24.06.2024 08:00 Uhr bis 28.06.2024 14:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1719576000
        }
      
 );
