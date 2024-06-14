@@ -4632,7 +4632,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-05-23 (mapillary)
+#: last_checked: 2024-06-14
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -5025,17 +5025,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (frühere Sperrung) --- #: source_id: LS/721-E/21/116 (inaktiv) ---	2::inwork 32854,37244 31663,37734
-#: source_id: LS/221-F/24/076
-	2::inwork 31613,37843 31663,37734 32854,37244 33877,36906
-',
-         'from' => 1715464800,
-         'id' => 3460,
-         'text' => 'Grüntal - Gratze: Sperrung wegen Deckenerneuerung, 13.05.2024 bis 14.06.2024',
-         'type' => 'gesperrt',
-         'until' => 1718373600
-       },
+       undef,
        {
          'data' => '# REMOVED --- #: next_check_id: CORONA-2020 --- #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv --- #: last_checked: 2023-03-25 vvv --- #: check_frequency: 90d vvv
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
@@ -5315,7 +5305,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-06-01 (mapillary)
+#: last_checked: 2024-06-14
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5331,7 +5321,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
-#: last_checked: 2024-06-10 vvv
+#: last_checked: 2024-06-14 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
@@ -6283,8 +6273,8 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024) (inaktiv)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
-#: osm_watch: note 3834145 3
-#: osm_watch: note 3834144 1
+#: osm_watch: note 3834145 4
+#: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,ex-G,B,ex-W)
 #: last_checked: 2024-06-12
 #: check_frequency: 30d
@@ -6578,7 +6568,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (B,G[unvollständig],W[unvollständig])
+         'data' => '#: also_indoor: traffic (B,ex-G[unvollständig],ex-W[unvollständig])
 #: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
 #: last_checked: 2024-06-06 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d vvv
@@ -6796,7 +6786,7 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2024-05-23 (mapillary)
+#: last_checked: 2024-06-14
 #: check_frequency: 120d
 #: next_check: 2024-12-29
 	q4::inwork 12407,8177 12545,8209
@@ -6952,7 +6942,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-06-06 vvv
+#: last_checked: 2024-06-12 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -6964,7 +6954,7 @@ Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 #: osm_watch: way id="389101374" version="19"
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
-#: osm_watch: way id="1149365724" version="6"
+#: osm_watch: way id="1149365724" version="7"
 #: osm_watch: way id="1149365723" version="6"
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
@@ -7803,10 +7793,10 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
 #: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: also_indoor: traffic (ex-H,G,re-B,W)
+#: also_indoor: traffic (re-H,G,re-B,W)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert)
-#: last_checked: 2024-06-12 (traffic) vvv
+#: last_checked: 2024-06-14 (traffic) vvv
 #: check_frequency: 3d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
@@ -7836,7 +7826,7 @@ Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbah
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1796409264266936344 (Dauer ca. drei Wochen)
 #: source_id[inactive]: bvg2024:108#HIM_FREETEXT_224826 (hier nur bis 9.6.2024)
 #: source_id[inactive]: bvg2024:108#HIM_FREETEXT_225358 (bis 30.06.2024)
-#: source_id: bvg2024:108#HIM_FREETEXT_225921
+#: source_id[inactive]: bvg2024:108#HIM_FREETEXT_225921
 #: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024) (inaktiv)
 #: source_id: viz2021:13.589683,52.480279,31.05.2024,01:30 (bis 25.06.2024)
 #: also_indoor: traffic (H,B,G)

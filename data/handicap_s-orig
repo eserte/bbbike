@@ -62,7 +62,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-06-10
+#: last_checked: 2024-06-14
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -211,7 +211,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"
 #: osm_watch: way id="1008972168" version="7"
-#: last_checked: 2024-03-19
+#: last_checked: 2024-06-14
 #: check_frequency: 90d
 #: next_check: 2027-12-31
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -577,7 +577,7 @@ Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
 #: last_checked: 2024-06-09 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-07-18 vvv
+#: next_check: 2024-08-15 vvv
 # REMOVED (hier verlaufen Fußgängerverkehr und Radverkehr getrennt) --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17765,5469
 Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 17736,5441 17695,5394
 # REMOVED (hier keine mehr) --- Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17747,5452
@@ -586,11 +586,11 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 1
 #: last_checked ^^^
 # 
 #: next_check_id: SCHOENEWEIDE-2018
-#: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024)
+#: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024)
 #: also_indoor: traffic (H,W)
 #: last_checked: 2024-06-09
-#: next_check: 2024-06-30
-#: valid: -20240718
+#: next_check: 2024-08-15
+#: valid: -20240815
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
 # 
 # REMOVED (abgesperrt, wird vermutlich bald zurückgebaut) --- #: next_check_id: STERNDAMM-2020 --- #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: last_checked: 2021-10-02 --- #: check_frequency: 21d --- #: next_check: 2021-10-31 --- Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
@@ -824,7 +824,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: note: Die Absperrung beginnt 50m vor dem Einmündungsbereich.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-06-10 vvv
+#: last_checked: 2024-06-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
@@ -942,7 +942,7 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
-#: osm_watch: way id="435611568" version="8"
+#: osm_watch: way id="435611568" version="9"
 #: last_checked: 2024-06-13
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-12-21
