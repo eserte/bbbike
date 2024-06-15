@@ -118,6 +118,26 @@ my $root_or_user_sub = sub {
     $$var = $arg;
 };
 
+eval {
+    use Encode qw(decode);
+    use I18N::Langinfo qw(langinfo CODESET);
+    my $codeset = langinfo(CODESET());
+    $codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
+    # XXX Possible problems: if an ASCII-like codeset is selected
+    # (e.g. with LC_ALL=C XXX ansi_x3.4-1968 is used), then it seems
+    # that a loop is generated when umlauts are printed (umlaut not
+    # possible to output -> generate a warning, maybe using the
+    # problematic umlaut in the diagnostics?). It seems to be safe to
+    # switch encoding only for utf-8, and don't do anything for
+    # latin1, ascii, and everything else.
+    if ($codeset =~ /utf.*8/i) {
+	binmode STDOUT, ":encoding($codeset)";
+	binmode STDERR, ":encoding($codeset)";
+    }
+    $_ = decode($codeset, $_) for @ARGV;
+};
+warn "WARNING: failure while setting up encoding correctly: $@" if $@;
+
 my @options =
   ('kdeinstall=s' => sub { $root_or_user_sub->(\$kde_install, @_) },
 #     sub { my $arg = $_[1];
