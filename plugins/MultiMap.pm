@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.15;
+$VERSION = 2.16;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1043,6 +1043,16 @@ sub show_openstreetmap_menu {
 	(-label => 'iD Editor',
 	 -command => sub { showmap_openstreetmap(editor => 'id', %args) },
 	);
+    $link_menu->command
+	(-label => 'Latest changes',
+	 -command => sub {
+	     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+	     $scale = 17 if $scale > 17;
+	     my $px = $args{px};
+	     my $py = $args{py};
+	     my $url = sprintf "https://tyrasd.github.io/latest-changes/#%d/%s/%s", $scale, $py, $px;
+	     start_browser($url);
+	 });
     $link_menu->separator;
     $link_menu->command
 	(-label => ".de-Link kopieren", # XXX lang!
