@@ -2,15 +2,13 @@
 # -*- perl -*-
 
 #
-# $Id: install.pl,v 4.15 2007/07/07 20:15:33 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2001,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2001,2007,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use FindBin;
@@ -224,6 +222,7 @@ if ($use_tk) {
 	$gridy++;
     }
     my $wait = 0;
+    my $do_cancel;
     my $ff = $f->Frame->grid(-column => 0, -columnspan => 2,
 			     -row => $gridy, -sticky => "ew");
     my $ib = $ff->Button(-text => M"Installieren",
@@ -231,7 +230,7 @@ if ($use_tk) {
 			)->pack(-side => "left", -expand => 1);
     $ib->focus;
     $ff->Button(-text => M"Abbrechen",
-		-command => sub { Tk::exit() },
+		-command => sub { $do_cancel = $wait = 1 },
 	       )->pack(-side => "left", -expand => 1);
 
     if ($auto) {
@@ -240,6 +239,10 @@ if ($use_tk) {
 
     $f->waitVariable(\$wait);
     $f->destroy;
+
+    if ($do_cancel) {
+	exit 1;
+    }
 
     # to prevent segfaults:
     $top->protocol('WM_DELETE_WINDOW' => sub { $top->destroy });
