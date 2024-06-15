@@ -1,7 +1,13 @@
 #!/usr/bin/env perl
 # -*- perl -*-
 
-use if !$ENV{DOIT_IN_REMOTE}, lib => "$ENV{HOME}/src/Doit/lib";
+use FindBin;
+use lib "$FindBin::RealBin/..";
+use BBBikeUtil qw(bbbike_root);
+my $bbbike_root;
+BEGIN { $bbbike_root = bbbike_root }
+use lib "$bbbike_root/lib", "$bbbike_root/plugins";
+
 use Doit; # install from CPAN or do "git clone https://github.com/eserte/doit.git ~/src/Doit"
 use Doit::Log;
 
@@ -10,13 +16,6 @@ use Getopt::Long;
 use List::Util qw(first);
 use LWP::UserAgent;
 use XML::LibXML;
-
-use FindBin;
-use lib "$FindBin::RealBin/..";
-use BBBikeUtil qw(bbbike_root);
-my $bbbike_root;
-BEGIN { $bbbike_root = bbbike_root }
-use lib "$bbbike_root/lib", "$bbbike_root/plugins";
 
 return 1 if caller;
 
