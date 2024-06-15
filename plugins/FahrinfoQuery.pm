@@ -22,7 +22,7 @@ $VERSION = '2024.06';
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
-use constant PLUGIN_DISABLED => 0; # since 2021-12-13 or so the mobile search is not working and there's no replacement yet
+use constant PLUGIN_DISABLED => 0;
 
 use vars qw($icon %city_border_points $menu);
 
