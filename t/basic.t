@@ -230,7 +230,6 @@ EOF
 		     | FURadar.pm
 		     | MasterPunkte.pm
 		     | Wizards.pm
-		     | install.pl
 		     | cgi/configure-bbbike.cgi
 		     | Karte/SatmapGIF.pm
 		     | PointEdit.pm

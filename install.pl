@@ -11,13 +11,15 @@
 # WWW:  https://github.com/eserte/bbbike
 #
 
+use strict;
+use warnings;
 use FindBin;
 use lib ("$FindBin::Bin", "$FindBin::Bin/lib"); # XXX necessary???
+
 use Config;
 use File::Path;
 use File::Basename;
 use File::Copy;
-use strict;
 use Getopt::Long;
 use Cwd;
 
@@ -62,7 +64,6 @@ BEGIN {
     );
 }
 
-use strict;
 use vars values %config_vars;
 use vars qw($is_bbbike);
 $is_bbbike = 1;
@@ -86,7 +87,7 @@ $debuginstall = 0 if defined $debug_switch;
 my $auto = 0;
 my $perlbat;
 my $os;
-my $Print_indent = "";
+my $Print_indent = 0;
 my $debug = 0;
 
 my $start_program;
@@ -388,7 +389,7 @@ sub Win32Install {
 	$public = 1;
     }
 
-    my($realbin, $perlexe, $wperlexe);
+    my($realbin, $perlexe);
     if ($networkinstall) {
 	$realbin = Win32Util::path2unc($FindBin::Bin);
 	$perlexe = Win32Util::path2unc($^X);
