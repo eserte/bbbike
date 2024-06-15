@@ -84,6 +84,18 @@ sub running {
 	}
 	return undef;
     }
+    # check zombie status (Linux only)
+    if (open my $stat_file, "/proc/$pid/stat") {
+	my $stat_line = <$stat_file>;
+	my @stat_fields = split / /, $stat_line;
+	my $process_state = $stat_fields[2];
+	if ($process_state eq 'Z') {
+	    if ($VERBOSE) {
+		print STDERR "Process $pid is a zombie.\n";
+	    }
+	    return undef;
+	}
+    }
     if ($use_inet) {
 	# wie testen? XXX
     } else {
