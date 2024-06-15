@@ -78,7 +78,6 @@ if (BBBikeServer::running()) {
 	push @argv, "-routefile", $arg;
     }
     warn "Send to bbbike server: " . (!@argv ? "<empty array>" : "@argv") . "\n" if $VERBOSE;
-    exit 0 if !@argv;
     $BBBikeServer::VERBOSE = $VERBOSE;
     exit 0 if (BBBikeServer::send_to_server(-argv => \@argv));
     exit 1;
