@@ -21,6 +21,8 @@ use strict;
 use Getopt::Long;
 use Cwd;
 
+use BBBikeUtil qw(save_pwd2 bbbike_root);
+
 BEGIN {
     if (!eval '
 use Msg;
@@ -1448,34 +1450,33 @@ sub my_die {
 }
 
 sub load_Makefile_PL {
-    my $file = "$FindBin::Bin/Makefile.PL";
+    my $bbbike_root = bbbike_root;
+    my $file = "$bbbike_root/Makefile.PL";
     return unless -r $file;
 
-    $INC{"ExtUtils/MakeMaker.pm"} = "__cheat__";
-    package ExtUtils::MakeMaker;
-    use vars qw($Makefile_PL @EXPORT @ISA);
-    require Exporter;
-    @ISA = qw(Exporter);
-    @EXPORT = qw(WriteMakefile);
+    my $Makefile_PL;
 
-    sub WriteMakefile {
-	$Makefile_PL = { @_ };
+    require ExtUtils::MakeMaker;
+    {
+	no warnings 'redefine', 'once';
+	*ExtUtils::MakeMaker::WriteMakefile = sub {
+	    $Makefile_PL = { @_ };
+	}
+    };
+
+    {
+	my $save_pwd = save_pwd2;
+	chdir $bbbike_root or die "Can't chdir to $bbbike_root: $!";
+	do $file;
     }
 
-    package main;
-
-    my $origcwd = getcwd();
-    chdir $FindBin::Bin || warn "Can't chdir to $FindBin::Bin: $!";
-    do $file;
-    chdir $origcwd || warn "Can't change back to $origcwd: $!";
-
-    my $h = $ExtUtils::MakeMaker::Makefile_PL->{INSTALLER};
+    my $h = $Makefile_PL->{INSTALLER};
     if ($h) {
 
 	while(my($k,$v) = each %config_vars) {
 
 	    if ($debug) {
-		print STDERR "  from Makefile.PL: $k => $v\n";
+		print STDERR "  from Makefile.PL: $k => $v (value '$h->{$k}')\n";
 	    }
 	    next if eval 'defined ' . $v;
 	    next unless exists $h->{$k};
@@ -1491,10 +1492,12 @@ sub load_Makefile_PL {
 	    warn $@ if $@;
 
 	}
+    } else {
+	warn "WARNING: INSTALLER in Makefile.PL did not return anything.\n";
     }
 
     # Sonderfälle
-    $h = $ExtUtils::MakeMaker::Makefile_PL;
+    $h = $Makefile_PL;
     if (!defined $program_title && exists $h->{NAME}) {
 	$program_title = $h->{NAME};
     }

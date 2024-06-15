@@ -578,7 +578,7 @@ WriteMakefile
    'INSTALLER'    =>
    { CONSOLE_PROGRAM        => "cbbbike",
      CLIENT_PROGRAM         => "bbbikeclient",
-     USE_CLIENT_SERVER_MODE => 0,
+     USE_CLIENT_SERVER_MODE => 1,
      USE_AUTOSTART          => undef,
      HTML_DOCUMENTATION     => "bbbike.html",
      HOMEPAGE               => $BBBike::BBBIKE_WWW,
