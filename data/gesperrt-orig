@@ -184,7 +184,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt, wonach es aussieht, dann nur nach gesperrt_car verschieben)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2024-06-14
+#: last_checked: 2024-06-15
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -1623,6 +1623,8 @@ Daimler-Parkplatz: Zufahrt Köpenicker Str. oft (immer?) gesperrt, auch an Werkta
 Cotheniusstr.: Schulgelände, gesperrt	2 13430,13733 13519,13785
 # 
 Lichtenberger Str. [Wohngebiet]	1 11947,12494 11867,12284
+# 
+Hauptstr.: Mittelstreifen mit Gitter	3nocross 7268,8960 7239,8907 7201,8870
 # 
 #: section ^^^
 ######################################################################
@@ -4877,7 +4879,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-06-13 (webcam)
+#: last_checked: 2024-06-15
 #: check_frequency: 60d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
@@ -5263,7 +5265,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="5"
 #: osm_watch: note 3748854 1
-#: last_checked: 2024-05-30
+#: last_checked: 2024-06-15
 #: check_frequency: 180d
 #: next_check: 2025-09-20
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372

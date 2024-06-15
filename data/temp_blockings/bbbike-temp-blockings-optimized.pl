@@ -5305,7 +5305,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-06-14
+#: last_checked: 2024-06-15
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5321,7 +5321,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraﬂe und Treptower Straﬂe, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraﬂe zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraﬂe)
 #: osm_watch: way id="1246171055" version="1"
-#: last_checked: 2024-06-14 vvv
+#: last_checked: 2024-06-15 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
 zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
@@ -6786,7 +6786,7 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: note: Halteverbotsschilder sogar bis Ende M‰rz 2026
 #: note: L‰nge der Einbahnstraﬂenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2024-06-14
+#: last_checked: 2024-06-15
 #: check_frequency: 120d
 #: next_check: 2024-12-29
 	q4::inwork 12407,8177 12545,8209

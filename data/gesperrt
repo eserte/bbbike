@@ -1014,6 +1014,9 @@ Bahnhofsplatz S-Bhf. Hermsdorf	1 3624,23540 3610,23527 3590,23541 3581,23557 359
 Daimler-Parkplatz: Zufahrt Köpenicker Str. oft (immer?) gesperrt, auch an Werktagen	2 18471,2166 18448,2182 18320,2195
 Cotheniusstr.: Schulgelände, gesperrt	2 13430,13733 13519,13785
 Lichtenberger Str. [Wohngebiet]	1 11947,12494 11867,12284
+Mittelstreifen mit Gitter	3nocross::ignrte 7268,8960 7239,8907 7201,8870
+Richard-von-Weizsäcker-Pl. -> Hauptstr.: Mittelstreifen mit Gitter	3::igndisp 7307,8945 7239,8907 7201,8870
+Hauptstr. -> Richard-von-Weizsäcker-Pl.: Mittelstreifen mit Gitter	3::igndisp 7268,8960 7239,8907 7307,8945
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -4144,3 +4147,4 @@ Grunerstr./Alexanderstr. -> Jacobystr.: linker Gehweg	1::igndisp 11234,12742 111
 Jacobystr. -> Alexanderstr.: linker Gehweg bis zur Ampel	1::igndisp 11256,12647 11221,12725
 Ferdinand-Schultze-Str. -> Rhinstr./Marzahner Str.: linker Gehweg bis zur Ampel	1::igndisp 17488,15766 17486,15736
 Potsdamer Chaussee: linker Gehweg bis zur Ampel	1::igndisp -3011,1761 -3019,1774 -3040,1763
+Richard-von-Weizsäcker-Platz: Gehweg bis Akazienstr.	1::igndisp 7201,8870 7242,8902 7307,8945
