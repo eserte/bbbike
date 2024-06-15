@@ -32,6 +32,8 @@ jobs:
           set -ex
           brew install cpanminus
           PATH="/usr/local/opt/libxml2/bin:$PATH" LDFLAGS="-L/usr/local/opt/libxml2/lib" CPPFLAGS="-I/usr/local/opt/libxml2/include" PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig" cpanm --quiet --notest XML::LibXML || ( cat ~/.cpanm/work/*/build.log; false )
+          # https://rt.cpan.org/Ticket/Display.html?id=153923
+          cpanm --quiet 'GD~<=2.78'
           cpanm --quiet --notest \
               Archive::Zip \
               CDB_File MLDBM \
@@ -41,7 +43,6 @@ jobs:
               DateTime DateTime::Format::ISO8601 Date::Calc \
               DB_File::Lock \
               DBI DBD::XBase \
-              GD \
               Geo::METAR \
               HTML::Form HTML::FormatText \
               Image::ExifTool Image::Info \
