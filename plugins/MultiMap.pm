@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.16;
+$VERSION = 2.17;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -160,6 +160,12 @@ sub register {
 	  callback => sub { showmap_bing_street(@_) },
 	  callback_3 => sub { show_bing_menu(@_) },
 	  ($images{Bing} ? (icon => $images{Bing}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_TomTom"} =
+	{ name => "tomtom",
+	  callback => sub { showmap_tomtom(@_) },
+	  callback_3_std => sub { showmap_url_tomtom(@_) },
+	  ($images{TomTom} ? (icon => $images{TomTom}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . "_Waze"} =
 	{ name => "Waze",
@@ -535,6 +541,29 @@ R0lGODlhEAAQAIQPAP+mFf+sJP+xMv+3Qf+8UP/Hbf/Ne//Tiv/Ymf/ep//jtv/pxf/u0//0
 /yH5BAEKABAALAAAAAAQABAAAAVaICCOZGme5UAMaLk8S0u+MRAQ6/kySPP8PwVhBmwccIXX
 IzFSJgKlwg8hUkJNiYdDpHg0UIefyPAblgK+r4ihNZAIbAdLFED8HIuF78GYkwQGCnkLRzKG
 hyMhADs=
+EOF
+    }
+
+    if (!defined $images{TomTom}) {
+	# Created with:
+	#   wget 'https://www.tomtom.com/kenai/favicon.svg'
+	#   convert -resize 16x16 favicon.svg favicon.png
+	#   pngcrush -brute -reduce -rem allb -m 0 favicon.png favicon2.png
+	#   base64 favicon2.png
+	$images{TomTom} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAYBQTFRF
+/////vv798fE7Xx36FlS6WFb8JWR++Lg/vb175CL4i4m3xkQ3hYN3hcO3xwT5UhB9sG/////8JeT
+3x4V3xgP4Sgf5UdA5D423x4V3hcN4zkx+dLQ+t3c4zcv3hcO5EE69r+9/fDw/Ojn8JKO4CQc3hcN
+63Js//z886uo3xwT4CAX9K+s/vn56mpk3hYN4zsz++bl8JWQ3hcO4i4m+tnX8JaS3xgP4S0l+djW
+8qSg3xoR4CQb9r+9//7+7Hl03hYN4zYu++Hg+dPR4i0l3xgO6FhR+t3c//7+/vr69bSx4i8n3hYN
+6WFb/vj4/vv77X553xkQ3xoR5Dw16mtm6F9Y4Skh3hcO4Soh9r67/Ovq621n3x4W3hUM3hQL3hQL
+3hYN4i8m8qKf//z8/fPy86uo6WVf5UlC5k9I7Hp1+MvJ//39//39/e/v++bl/Ojn/vX0/////O3s
+6m1n5k1G5kxF8Z6a8JSQ3hcO4jEp+dPR/Ovq5lBJ742J////98jG++TjbALhHwAAAHpJREFUGFdj
+YgACRiZmFlY2dhCTgQmIOaBAACogyAUD0hABbgRQBwvwAMGD+/c4QQAsAGEwXAEZAxaAMBhsUVS4
+uXuAdPLAzYCCzWCBTXBruaAOW84JBfOgAgxz2cFgGszpDAxsIDCBASHQzwIEDEgCDBgCbczMzRAW
+ANziDx7V367aAAAAAElFTkSuQmCC
 EOF
     }
 
@@ -1429,6 +1458,22 @@ sub show_bing_menu {
     my $e = $w->XEvent;
     $link_menu->Post($e->X, $e->Y);
     Tk->break;
+}
+
+######################################################################
+# tomtom
+sub showmap_url_tomtom {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://plan.tomtom.com/de/?p=%s,%s,%.2fz", $py, $px, $scale;
+}
+
+sub showmap_tomtom {
+    my(%args) = @_;
+    my $url = showmap_url_tomtom(%args);
+    start_browser($url);
 }
 
 ######################################################################
