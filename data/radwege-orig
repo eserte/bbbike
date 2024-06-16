@@ -269,7 +269,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="11"
 #: osm_watch: way id="25042039" version="37"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2024-06-15
+#: last_checked: 2024-06-16
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -2086,13 +2086,13 @@ Busspur ist immer gültig	RW5; 10512,12039 10550,12096 10574,12131
 #: check_frequency: 90d vvv
 #: next_check: 2024-08-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2024-05-13 vvv
+#: last_checked: 2024-06-16 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
 provisorische Radspur	RW4; 10574,12131 10625,12206
 #: note: vorher: provisorische Radspur, RW4;
 	RW0; 10625,12206 10646,12234
 #: histotical_note: bis 2024-06-13 provisorische Radspur, RW4;
-	RW2; 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
+asphaltiert	RW2; 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10710,12377 10714,12355 10703,12313 10697,12303 10662,12255 10646,12234 10625,12206
@@ -2345,7 +2345,7 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024)
 #: also_indoor: traffic (ex-B[minor])
-#: last_checked: 2024-05-31
+#: last_checked: 2024-06-16
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 #	RW3; 5764,10322 5808,10396
@@ -2804,7 +2804,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-06-11 vvv
+#: last_checked: 2024-06-16 vvv
 #: next_check: 2024-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -4499,8 +4499,8 @@ Radweg nur aufgemalt	RW1; 9751,3769 9732,3883
 	RW1;RW4 6288,14661 6281,14630
 # REMOVED --- #: by: https://berliner-abendblatt.de/2022/02/09/putlitzbruecke-soll-sicherer-werden/ (Erneuerung der Radwege 2022 geplant) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-17890.pdf (Antwort vom 26. Januar 2024: konkreter Zeitpunkt für die Ausführung kann nicht benannt werden) --- #: source_id: viz2021:13.343546,52.535428,02.04.2024,07:00 ("Einrichtung eines Fahrradwegs", bis 26.04.2024) (bis 10.05.2024) (inaktiv) --- #: XXX Im Radspurenbereich neu asphaltiert; wird es noch weitere Änderungen (Protektion?) geben? --- #: last_checked: 2024-06-05 --- #: check_frequency: 120d --- #: next_check: 2024-05-10
 #: historical_note: im Frühjahr 2024 neu asphaltiert, davor brüchiger Asphalt
-neu asphaltiert	RW4;RW4 6281,14630 6231,14308
-etwas brüchiger Asphalt	RW4;RW4 6231,14308 6230,14246 6230,14184 6228,14077
+neu asphaltiert	RW4;RW4 6281,14630 6231,14308 6230,14246 6230,14212
+etwas brüchiger Asphalt	RW4;RW4 6230,14212 6230,14184 6228,14077
 	RW2; 6228,14077 6226,13951 6227,13938
 	RW3; 6227,13938 6226,13951
 Gehwegplatten	RW2; 6226,13951 6228,14077
@@ -6919,7 +6919,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? vvv
-#: last_checked: 2024-06-05 vvv
+#: last_checked: 2024-06-16 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -7459,7 +7459,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-06-06 (mapillary) vvv
+#: last_checked: 2024-06-16 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -8332,7 +8332,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,771277#msg-771277
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8781 (Antrag)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8615 (Antrag - Antwort)
-#: last_checked: 2024-06-08 (mapillary) vvv
+#: last_checked: 2024-06-16 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
@@ -8514,6 +8514,8 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023) (inaktiv)
 #: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024)
 #: source_id: viz2021:13.384655,52.451843,04.03.2024,07:00 (bis 17.05.2024) (bis 07.06.2024) (bis 17.06.2024) (inaktiv)
+#: source_id: viz2021:13.385286,52.448073,17.06.2024,07:00 (bis 27.06.2024, Gesamtbaumaßnahme bis Ende Juli 2024)
+#: source_id: viz2021:13.385297,52.44832,17.06.2024,07:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2024-06-15 vvv

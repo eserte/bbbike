@@ -51,10 +51,11 @@ Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
 Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
 # 
 #: source_id: viz2021:13.533233,52.421662,28.02.2024,12:14 (bis 31.05.2024) (inaktiv)
-#: note: bei rbb bis 01.07.2024 verlängert
-#: next_check: 2024-07-01
-#: valid: -20240701
-Rudower Str.: Gegenverkehrsregelung zwischen Dorothea-Viehmann-Str. und Alter Schönefelder Weg	X::inwork::alternating 19564,1871
+#: source_id: viz2021:13.53226,52.421897,17.06.2024,10:00 (bis 15.07.2024)
+#: note: bei rbb bis 01.07.2024 verlängert, mittlerweile entfernt
+#: next_check: 2024-07-15
+#: valid: -20240715
+Rudower Str.: Gegenverkehrsregelung Nähe Dorothea-Viehmann-Str.	X::inwork::alternating 19266,1968
 # 
 #: source_id: viz2021:13.490616,52.463117,15.04.2024,07:30 (bis 12.07.2024)
 #: last_checked: 2024-06-08
@@ -100,7 +101,9 @@ Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	
 #: by: https://entwicklungsstadt.de/lichtenberg-berlins-groesster-schulneubau-abgeschlossen/
 #: XXX evtl. wurde die Ampel wegen der Hochbauarbeiten (Schule) eingerichtet
 #: osm_watch: way id="29432246" version="24"
-#: osm_watch: note 3707299 11
+#: osm_watch: node id="603053800" version="6"
+#: osm_watch: node id="11762067970" version="1"
+#: osm_watch: note 3707299 12
 #: last_checked: 2024-06-02
 #: check_frequency: 90d
 #: next_check: 2024-08-31
@@ -111,7 +114,7 @@ Allee der Kosmonauten/Straßenbahn	X::inwork 17778,13438
 #: by: https://www.luise-nord.de/bauprojekte-mediaspree-mit-bauruinen-elements-steht-auf-der-kippe-postfuhramt-verzoegert-sich/
 #: XXX eigentlich zwei Ampeln
 #: osm_watch: way id="124182482" version="9"
-#: last_checked: 2024-06-10
+#: last_checked: 2024-06-16
 Michaelbrücke	F::inwork 11676,11839
 # 
 #: next_check_id: SCHOENEWEIDE-2018
@@ -225,7 +228,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: next_check_id: KNOTENMARZAHN-2022
 #: last_checked: 2024-06-02 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2024-06-17 vvv
+#: next_check: 2024-06-18 vvv
 # REMOVED --- #: next_check: 2026-12-31 vvv
 #: valid: 20240617- vvv
 #: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
@@ -1306,7 +1309,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2024-06-15
+#: last_checked: 2024-06-16
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	F::inwork 8096,11393
@@ -3412,7 +3415,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-06-12 vvv
+#: last_checked: 2024-06-16 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
