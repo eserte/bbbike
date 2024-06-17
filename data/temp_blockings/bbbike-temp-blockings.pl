@@ -35650,19 +35650,22 @@ EOF
 	q4::temp 11831,8989 11909,9155 12012,9092
 EOF
      },
-     { from  => 1650924000, # 2022-04-26 00:00
-       until => 1652306400, # 2022-05-12 00:00
-       text  => 'Treskowstr.: Einbahnstraßenregelung, offen Richtung Prenzlauer Promenade, voraussichtlich bis 11.5.2022',
+     { from  => 1718602827, # 1650924000, # 2022-04-26 00:00
+       until => $isodate2epoch->("2024-08-01 17:00:00"), # 1652306400, # 2022-05-12 00:00
+       #text  => 'Treskowstr.: Einbahnstraßenregelung, offen Richtung Prenzlauer Promenade, voraussichtlich bis 11.5.2022',
+       text  => 'Treskowstr.: Einbahnstraßenregelung, offen Richtung Prenzlauer Promenade, vermutlich sind auch Radfahrer betroffen, bis 1.8.2024',
        type  => 'handicap',
-       source_id => 'https://www.bahninfo-forum.de/read.php?9,701070,732194#msg-732194',
        data  => <<EOF,
-#: source_id: viz2021:13.440009,52.567594,26.04.2022,07:00 (26.4.-11.5.2022)
-#: source_id: bvg2021:x54#BVG301047_0
+#: source_id: viz2021:13.440009,52.567594,26.04.2022,07:00 (26.4.-11.5.2022) (inaktiv)
+#: source_id[inactive]: bvg2021:x54#BVG301047_0
+#: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024)
+#: by: https://www.bahninfo-forum.de/read.php?9,701070,732194#msg-732194
 #: by: https://nitter.net/VIZ_Berlin/status/1517050882063581184#m (2.BA -> Tino-Schwierzina-Str. (bis 30.5.2022?))
 #: by: https://nitter.net/VIZ_Berlin/status/1518605828533727234#m
 #: by: https://nitter.net/pic/media%2FFRMr68PXsAUrCyR.jpg%3Fname%3Dorig (Radfahrer können den nordöstlichen Gehweg benutzen)
-#: note: SEV wird über die Treskowstr. geführt
-#: confirmed_by: mapillary
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1802558286950289549
+#: by: https://pbs.twimg.com/media/GQCzlBvXIAAQQx6?format=jpg&name=large
+# REMOVED --- #: note: SEV wird über die Treskowstr. geführt --- #: confirmed_by: mapillary
 	q4::inwork; 11893,17397 12324,17213
 EOF
      },
@@ -40515,9 +40518,10 @@ EOF
 	2::inwork -19289,63424 -19675,64106
 EOF
      },
-     { from  => 1691906400, # 2023-08-13 08:00
-       until => $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
-       text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
+     { from  => 1718603825, # 1691906400, # 2023-08-13 08:00
+       until => $isodate2epoch->("2024-06-22 17:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
+       #text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
+       text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 22.06.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -40525,14 +40529,19 @@ EOF
 #: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
 #: source_id: bvg2021:240#BVG326189_0
 #: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024)
-#: also_indoor: traffic (H[ungenau],G,W,B)
+#: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024)
+#: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024)
+#: source_id: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028
+#: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fußverkehr)
+#: also_indoor: traffic (H,G,W)
 #: osm_watch: way id="198589911" version="20"
-#: note: gesperrter Bereich ist etwa 90m lang
-#: last_checked: 2023-11-19
-#: next_check: 2023-11-30
-# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821
-#: note: eigentlich q3-::inwork
-	q3::inwork 15856,10821 15681,10801
+# REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
+# REMOVED --- #: last_checked: 2023-11-19
+#: priority: #A
+#: next_check: 2024-06-17
+# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
+	q4::inwork 15856,10821 15681,10801
 EOF
      },
      { from  => 1691862875, # 2023-08-12 19:54
@@ -43134,7 +43143,7 @@ EOF
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
 #: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: also_indoor: traffic (ex-H,G,re-B[nur_Braunschweiger],W,T[nur_Braunschweiger])
+#: also_indoor: traffic (ex-H,G,re-B[nur_Braunschweiger],W[nur_noch_Sonnenallee],T[nur_Braunschweiger])
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert)
 #: last_checked: 2024-06-14 (traffic) vvv
@@ -43368,6 +43377,17 @@ EOF
        data  => <<EOF,
 #: source_id: 247201110 (bis 28.06.2024)
 	2::inwork -4146,-34505 -4356,-34162 -4269,-33725
+EOF
+     },
+     { from  => 1718517600, # 2024-06-16 08:00
+       until => 1725634800, # 2024-09-06 17:00
+       text  => 'Am Stener Berg: Bauarbeiten, Richtung Osten gesperrt,, vom 17.06.2024 08:00 bis 06.09.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.507816,52.637174,17.06.2024,08:00 (bis 06.09.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1802568101801717762
+#: by: https://pbs.twimg.com/media/GQCRGJeXwAAhEes?format=jpg&name=large (Einbahnstraßenbereich etwa 100m)
+	q3::inwork; 17011,25830 17446,25914
 EOF
      },
     );
