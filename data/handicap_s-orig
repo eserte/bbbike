@@ -862,6 +862,19 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 # 
 ### Lichtenberg ###
 # 
+#: next_check_id: LICHTENBERGERBRUECKEN-2022
+#: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024)
+#: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024)
+#: source_id: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028
+#: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fußverkehr)
+#: also_indoor: traffic (H,G,W)
+#: priority: #A
+#: last_checked: 2024-06-17
+#: next_check: 2024-06-22
+#: valid: -20240622
+Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, Fußgängertunnel	q3::inwork 15856,10821 15793,10814
+# 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-315-341-343.837/page-2#post-22878
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1135879798" version="2"
@@ -882,7 +895,7 @@ Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-06-09
+#: last_checked: 2024-06-17
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -894,7 +907,7 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 # REMOVED (hier auch offen, Einbahnstraßenregelung für Nicht-Radfahrer) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16159,12293 16056,12317
 # REMOVED (hier mittlerweile offen) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16144,12388 16159,12293 16158,12191
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# REMOVED (wieder beendet) --- #: XXX Bis wann dauern die Bauarbeiten an? --- #: XXX Mittlerweile nur etwa 100m --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg) --- #: also_indoor: traffic (G,B(beide zu viel)) vvv --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="1002249853" version="2" --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="198589916" version="9" --- #: osm_watch: way id="198589913" version="6" --- #: last_checked: 2022-01-10 vvv --- #: check_frequency: 14d vvv --- Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15856,10821 15681,10801 --- # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
+# REMOVED (wieder beendet) --- #: XXX Bis wann dauern die Bauarbeiten an? --- #: XXX Mittlerweile nur etwa 100m --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg) --- #: also_indoor: traffic (G,B(beide zu viel)) vvv --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="1002249853" version="2" --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="198589916" version="9" --- #: osm_watch: way id="198589913" version="6" --- #: last_checked: 2022-01-10 vvv --- #: check_frequency: 14d vvv --- Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15856,10821 15793,10814 15681,10801 --- # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/neue-vorstreckungen-ueberwege-mittelinseln-und-abgesenkte-bordsteine_a319370 (Erwähnung der Wege in der Grünanlage) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8710 (Abschluss der Bauarbeiten im 3. Quartal 2021) --- #: last_checked: 2021-09-11 vvv --- #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861
@@ -1905,13 +1918,13 @@ Wanzlikpfad: eng und kurvig, Fußgänger	q3 13268,7801 13309,7911
 #: note: 2010 war das Radfahren noch explizit erlaubt (Bild existiert), heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder
 Caroline-Tübbecke-Ufer: Fußgänger, Grünanlage	q3 15000,9820 15043,9790 15367,9691
 # REMOVED (Einschränkung existiert nicht mehr) --- Caroline-Tübbecke-Ufer: Fußgänger, sehr eng, Radfahren erlaubt	q3
-#: note: 2010 war das Radfahren noch explizit erlaubt, heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder vvv
+#: note: 2010 war das Radfahren noch explizit erlaubt, heute ist hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer vvv
 (Wendenwiese): Fußgänger, Grünanlage	q3 15367,9691 15405,9675 15466,9633 15497,9644 15498,9681 15505,9688
 (Wendenwiese): Fußgänger, Grünanlage	q3 15436,9731 15405,9675
 #: note ^^^
 #: note: 2010 war das Radfahren noch explizit erlaubt (dennoch q2), heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder
 (Alt-Stralau - Spreeufer): Fußgänger, Grünanlage, kurze Rampe	q3 15031,9876 15000,9820
-#: note: 2010 war das Radfahren noch explizit erlaubt (Bild existiert), heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder
+#: note: 2010 war das Radfahren noch explizit erlaubt (Bild existiert), heute ist hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
 (Strela-Platz): Fußgänger, Grünanlage	q3 15400,9742 15465,9860
 Hildburghauser Str.: Bahnunterführung für Fußgänger	q1 4595,1387 4514,1402
 (zur Pfaueninselfähre): an schönen Tagen viele Fußgänger	q3 -8542,2216 -8561,2236 -8564,2276

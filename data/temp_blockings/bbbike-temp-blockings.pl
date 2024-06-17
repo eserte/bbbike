@@ -9567,7 +9567,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006236',
        data  => <<EOF,
-	1::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15681,10801 15433,10765 15388,10758 15272,10790
+	1::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15793,10814 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1186081587, # 2007-08-02 21:06
@@ -13089,7 +13089,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-	1::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15681,10801 15433,10765 15388,10758 15272,10790
+	1::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15793,10814 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1223416800, # 2008-10-08 00:00
@@ -13388,7 +13388,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-	1::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15681,10801 15433,10765 15388,10758 15272,10790
+	1::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15793,10814 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1228431600, # 2008-12-05 00:00
@@ -14718,7 +14718,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1209970.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331265.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1450216.php
-#: source_id: viz2021:13.57552,52.44722,13.06.2024,06:00 (hier auch Alt-Köpenick gesperrt, bis 17.06.2024)
+#: source_id: viz2021:13.57552,52.44722,13.06.2024,06:00 (hier auch Alt-Köpenick gesperrt, bis 17.06.2024) (inaktiv)
 #: note: früher auch "vielleicht auch Sperrung im Kietz (Kietzer Sommer)"
 # REMOVED (Kietzer Sommer) ---	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 # REMOVED (Alt-Köpenick nicht, die Straßenbahn fährt noch) ---	2::temp 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
@@ -30217,7 +30217,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (keine Einschränkungen) --- #: XXX gibt es noch immer eine Einbahnstraßenregelung, oder ist die Verkehrsführung an der Baustelle mittlerweile anders? --- #: last_checked: 2019-07-03
-	q3::inwork; 15932,10830 15856,10821 15681,10801
+	q3::inwork; 15932,10830 15856,10821 15793,10814 15681,10801
 EOF
      },
      { from  => 1547074800, # 2019-01-10 00:00
@@ -37083,7 +37083,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-05-27
+#: last_checked: 2024-06-17
 #: check_frequency: 60d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -39479,7 +39479,7 @@ EOF
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-06-11 (osm)
+#: last_checked: 2024-06-17
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="27"
@@ -40518,30 +40518,22 @@ EOF
 	2::inwork -19289,63424 -19675,64106
 EOF
      },
-     { from  => 1718603825, # 1691906400, # 2023-08-13 08:00
-       until => $isodate2epoch->("2024-06-22 17:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
-       #text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
-       text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 22.06.2024 17:00',
+     { from  => 1691906400, # 2023-08-13 08:00
+       until => $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
+       text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
+       #text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 22.06.2024 17:00', # -> handicap_s-orig
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
 #: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
 #: source_id: bvg2021:240#BVG326189_0
-#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024)
-#: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024)
-#: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024)
-#: source_id: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028
-#: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fußverkehr)
-#: also_indoor: traffic (H,G,W)
+#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
 #: osm_watch: way id="198589911" version="20"
 # REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
 # REMOVED --- #: last_checked: 2023-11-19
-#: priority: #A
-#: next_check: 2024-06-17
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
-	q4::inwork 15856,10821 15681,10801
+	q4::inwork 15856,10821 15793,10814
 EOF
      },
      { from  => 1691862875, # 2023-08-12 19:54
@@ -40754,11 +40746,11 @@ EOF
 EOF
      },
      { from  => 1689487200, # 2023-07-16 08:00
-       until => 1725112800, # 2024-08-31 16:00
-       text  => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, außerdem Einbahnstraßenregelung in der Hussitenstr., 17.07.2023 08:00 Uhr bis 31.08.2024 16:00 Uhr',
+       until => $isodate2epoch->("2024-09-13 16:00:00"), # 1725112800, # 2024-08-31 16:00
+       text  => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, außerdem Einbahnstraßenregelung in der Hussitenstr., 17.07.2023 08:00 Uhr bis 13.09.2024 16:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 236001332 (bis 31.08.2024)
+#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024)
 	q4::inwork 22917,30635 22770,30813
 # REMOVED (hier nicht) ---	q4::inwork 22770,30813 22690,30909
 	q4::inwork; 22850,30562 22917,30635
@@ -42656,11 +42648,11 @@ EOF
 EOF
      },
      { from  => 1711267200, # 2024-03-24 09:00
-       until => 1718200800, # 2024-06-12 16:00
-       text  => 'Bredow - Brieselang/Falkensee: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, bis zum 12.06.2024',
+       until => $isodate2epoch->("2024-06-21 16:00:00"), # 1718200800, # 2024-06-12 16:00
+       text  => 'Bredow - Brieselang/Falkensee: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, bis zum 21.06.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/23/189 (bis 12.06.2024) (inaktiv)
+#: source_id: LS/223-P/23/189 (bis 12.06.2024) (inaktiv) (bis 21.06.2024)
 	2::inwork -23452,18658 -22367,19503 -22236,19745 -22145,19713 -21989,19969 -21864,20015 -21364,20346 -20944,20402 -20850,20447 -20387,21160 -19973,21481 -19431,22888
 EOF
      },
@@ -43050,7 +43042,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
-#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv)
+#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
 #: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
 	q4::inwork; 11239,18832 11001,18528
@@ -43140,7 +43132,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1795325596953624776
 #: by[nocache]: https://x.com/BerlinNkl/status/1795429185839940060
 #: by: https://berliner-abendblatt.de/berlin-news/verkehrseinschraenkungen-in-neukoelln-id253562
-#: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum)
+#: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei)
 #: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: also_indoor: traffic (ex-H,G,re-B[nur_Braunschweiger],W[nur_noch_Sonnenallee],T[nur_Braunschweiger])
@@ -43217,11 +43209,11 @@ EOF
 EOF
      },
      { from  => 1717304400, # 2024-06-02 07:00
-       until => 1718982000, # 2024-06-21 17:00
-       text  => 'Bruno-Bürgel-Weg: Bauarbeiten in Höhe Stadion, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.06.2024 07:00 bis 21.06.2024 17:00',
+       until => $isodate2epoch->("2024-06-19 15:00:00"), # 1718982000, # 2024-06-21 17:00
+       text  => 'Bruno-Bürgel-Weg: Bauarbeiten in Höhe Stadion, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.06.2024 07:00 bis 19.06.2024 15:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.543945,52.454049,03.06.2024,07:00 (bis 21.06.2024)
+#: source_id: viz2021:13.543945,52.454049,03.06.2024,07:00 (bis 21.06.2024) (bis 19.06.2024)
 	q4::inwork 20435,5460 20348,5509 20065,5534 19814,5512
 EOF
      },
