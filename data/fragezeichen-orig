@@ -949,7 +949,7 @@ Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 # 
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868 (inaktiv)
-#: last_checked: 2024-06-15
+#: last_checked: 2024-06-18
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -2073,7 +2073,7 @@ Marienpark: Straße geplant	?::projected 8163,3660 8116,3754
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
-#: last_checked: 2024-06-15
+#: last_checked: 2024-06-18
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -3171,12 +3171,12 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
 #: osm_watch: way id="36738527" version="45"
-#: last_checked: 2024-06-10
+#: last_checked: 2024-06-18
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (3. Bauabschnitt (Innstr. - Ederstr.): bis Ende 2025)
-#: last_checked: 2024-06-10
+#: last_checked: 2024-06-18
 #: next_check: 2027-12-31
 Ederstr.: Planung einer Fahrradstraße	?::projected 13946,7918 13919,7707
 # 
@@ -3383,6 +3383,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): Qualität? Ist hier das Radfahren erl
 #: by: https://www.berliner-zeitung.de/mensch-metropole/autobahn-a100-in-berlin-droht-verzoegerung-warum-das-gut-fuer-die-stadt-waere-li.2176487 (erst 2025 fertig?)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/berliner-landespolitik-im-fokus-zum-ausbau-der-a100_a410175 (Abschluss im Juni 2025)
 #: by: https://www.tagesspiegel.de/berlin/verlangerung-der-a100-in-berlin-eroffnungstermin-nun-wohl-im-juni-2025-11177887.html
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2024/pressemitteilung.1457459.php
 #: XXX -> strassen_bab-orig, wenn fertig
 #: XXX vermutlich wird es weitere begleitende Wege geben, die hoffentlich für Radfahrer befahrbar sein werden (bis zur Grenzallee? zwischen Kiefholzstr. und Görlitzer Damm auf der westlichen Seite der Autobahn?) (bis Am Treptower Park allerdings nicht, da ist kein Platz mehr übrig)
 #: next_check: 2025-06-30
@@ -7429,14 +7430,14 @@ Blücherstr., Blücherplatz: Umgestaltung	?::projected 9448,10014 9521,10010 9722,
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2023/pressemitteilung.1367785.php (Bauarbeiten in der Heerstr. bis 29.10.2023)
 #: by: https://www.berliner-woche.de/staaken/c-verkehr/letzte-etappe-der-bauarbeiten_a394178
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1376686.php (weiter Bauarbeiten in der Heerstr.)
-#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1450766.php (bis Ende der Sommerferien 2024)
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1450766.php (bis Ende der Sommerferien 2024 (30.08.2024))
 #: XXX laut Plan mit Radspuren, beidseitig, sowie einer neuen Ampel an der Heerstr.
 #: XXX außerdem Ampel am Nennhauser Damm
 #: osm_watch: way id="1043511851" version="6"
 #: also_indoor: traffic (G,H,B,W)
 #: source_id: viz2021:13.129186,52.527231,21.09.2023,09:00 (bis 27.10.2023) (inaktiv)
 #: source_id: viz2021:13.12808,52.527468,20.10.2023,16:00 (bis 22.10.2023) (inaktiv)
-#: source_id: viz2021:13.123925,52.52891,31.05.2024,09:00 (bis 01.07.2024)
+#: source_id: viz2021:13.123925,52.52891,31.05.2024,09:00 (bis 01.07.2024) (bis 16.08.2024)
 #: source_id: bvg2024:m32#HIM_FREETEXT_224777
 #: last_checked: 2024-05-28 (Pressemitteilung)
 # REMOVED --- #: check_frequency: 30d
@@ -7539,14 +7540,14 @@ Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Ramp
 #: by: https://www.berliner-zeitung.de/mensch-metropole/betonkrebs-und-risse-in-berlin-startet-das-naechste-grosse-brueckenbauprojekt-li.315212
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/an-der-marggraffbruecke-wurde-eine-behelfsbruecke-eingehoben_a387520
 #: source_id: viz2021:13.494841,52.466736,11.10.2022,07:00 (bis 2022-11-25) (bis 2023-01-31) (inaktiv)
-#: source_id: viz2021:13.49523,52.466495,27.02.2023,08:00 (bis 30.09.2023) (bis 12.06.2023, Gesamtbauzeit bis 2027) (inaktiv) (bis 02.07.2023) (inaktiv) (bis 30.04.2024, Gesamtbauzeit bis 2027) (bis 22.05.2024) (bis 18.06.2024)
+#: source_id: viz2021:13.49523,52.466495,27.02.2023,08:00 (bis 30.09.2023) (bis 12.06.2023, Gesamtbauzeit bis 2027) (inaktiv) (bis 02.07.2023) (inaktiv) (bis 30.04.2024, Gesamtbauzeit bis 2027) (bis 22.05.2024) (bis 18.06.2025)
 #: source_id: viz2021:13.49476,52.46667,29.04.2024,16:26 (bis 22.05.2024) (inaktiv)
 #: source_id: bvg2021:165#BVG316743_0
 #: source_id: bvg2024:165#HIM_FREETEXT_222562
 #: XXX Zurzeit (Ende Februar 2023) kaum Einschränkungen für Radfahrer, nur stadtauswärts ist es auf dem Bürgersteig ein bisschen enger; mittlerweile (Mitte März 2023) existiert diese Einschränkung nicht mehr; Juli 2023: siehe handicap_directed
 #: last_checked: 2024-05-22
 #: check_frequency: 90d
-#: next_check: 2024-06-18
+#: next_check: 2025-06-18
 Marggraffbrücke: Abriss und Neubau	?::inwork 16677,6892 16720,6845
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=35938
@@ -7826,10 +7827,10 @@ Friedrichstr.: Straße soll zwischen Checkpoint Charlie und Schützenstr. "eingezo
 #: XXX Straßen fehlen in Berlin.coords.data (PLZ=13587 für Meta-London-Str. laut DPAG+LOR, ebenso für Marius-Carpentier-Str. laut DPAG+LOR); private Erschließungsstraßen vvv
 #: XXX Wirksamkeit der Benennung zum 11.3.2023 vvv
 #: osm_watch: way id="1092621335" version="2"
-#: last_checked: 2023-12-18 (daf) vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2024-06-16 (osm) vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-10-09 vvv
-#: osm_watch: way id="367781611" version="8"
+#: osm_watch: way id="367781611" version="9"
 Marius-Carpentier-Str.: genaue Lage? Qualität? Wird man die Streitstr. überqueren können?	? -3034,16719 -2904,16703 -2629,16653
 #: osm_watch: way id="367813140" version="4"
 Meta-London-Str.: genaue Lage? Qualität?	? -2939,16495 -2904,16703
@@ -9951,7 +9952,7 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/157240c5-461d-4429-b245-84b875667312/U%2016.4%20Baustra%C3%9Fen%20und%20BE-Fl%C3%A4chen%20Blatt%209.pdf (im Bereich Knotenpunkt B1/B158 kommt es während der Bauarbeiten zur Verschwenkung der Straße und anscheinend zu einem Zweirichtungsradweg auf der südlichen Seite)
 #: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/157240c5-461d-4429-b245-84b875667312/U%2016.4%20Baustra%C3%9Fen%20und%20BE-Fl%C3%A4chen%20Blatt%2010.pdf (dito)
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/buergerinitiative-wuhlheide-bi-fordert-mehr-transparenz-bei-tvo-verfahren_a414668
-#: by: osm
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2024/pressemitteilung.1457463.php
 #: osm_watch: way id="154505652" version="16"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
 #: XXX widersprüchliche Angaben zum Wechsel von Ost- auf Westseite: Höhe Irmastr. (BW) oder Höhe Lauchhammerstr. (SEN)
@@ -10222,7 +10223,7 @@ Ortsumfahrung Ahrensfelde: geplante Straße, vermutlich Kfz-Straße	?::projected 2
 # REMOVED (realisiert) --- wird hier die Kleingartenanlage aufgehoben?
 #: XXX Bebauungsplan 5-107 in Spandau
 # REMOVED (eingetragen) --- #: XXX neue private Erschließungsstraßen, fehlen in Berlin.coords.data --- #: XXX Elsa-Neumann-Str. (entlang der S-Bahn) (laut DPAG-Mitteilungsblatt PLZ=13629) --- #: XXX Heinrich-Hertz-Str. (etwa in N-S-Richtung) (laut DPAG-Mitteilungsblatt PLZ=13629)
-#: osm_watch: way id="125758273" version="17"
+#: osm_watch: way id="125758273" version="18"
 #: last_checked: 2024-05-30 (daf)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-11-11
@@ -10673,6 +10674,10 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/monatelange-vollsperrung-am-marzahner-knoten_a409091 (Sanierung bis 2029)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11642 (Antrag)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801240959629304227
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1802948357419347974
+#: by: https://pbs.twimg.com/media/GQVbZPRX0AAUiSW?format=jpg&name=large (neue Verkehrsführung ab 18.06.2024, westliches Ende)
+#: by: https://pbs.twimg.com/media/GQVbffkXgAA_AHO?format=jpg&name=large (neue Verkehrsführung ab 18.06.2024, östliches Ende)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1457608.php
 #: source_id: viz2021:13.539245,52.540066,05.12.2022,07:00 (Vorbereitungsarbeiten bis 9.12.2022) (inaktiv)
 #: source_id: viz2021:13.539533,52.539819,19.12.2022,07:00 (bis 6.1.2023) (bis 31.12.2026) (bis 6.1.2023) (inaktiv)
 #: source_id: viz2021:13.539363,52.5398,06.01.2023,13:06 (bis 03.03.2023) (inaktiv)
@@ -10680,8 +10685,9 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: source_id: viz2021:13.544291,52.541009,20.09.2023,20:00 (Nacht-Vollsperrung für Kfz-Verkehr, bis 21.09.2023) (inaktiv)
 #: source_id: viz2021:13.539533,52.539819,06.01.2023,15:00 (bis 31.12.2026)
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024)
-#: source_id: viz2021:13.538004,52.539507,04.03.2024,07:00 (Sperrung für Kfz-Verkehr, bis 17.06.2024) (bis 18.06.2024)
+#: source_id: viz2021:13.538004,52.539507,04.03.2024,07:00 (Sperrung für Kfz-Verkehr, bis 17.06.2024) (bis 18.06.2024) (inaktiv)
 #: source_id: viz2021:13.538004,52.539507,18.06.2024,10:00 (bis 21.12.2025)
+#: source_id: viz2021:13.52479,52.5364,04.03.2024,07:00 (bis 19.12.2024)
 #: XXX ampelgesicherte Kreuzungen werden entstehen, direkt am Knoten sowie bei der Zufahrt Frank-Schweitzer-Str.
 #: alias: Marzahner Knoten
 #: alias: Großbaustelle Marzahner Brücken
@@ -10894,6 +10900,7 @@ Schumacher-Quartier: neues Viertel entsteht	?::projected 3976,17559 4849,17312 4
 #: by: https://berliner-abendblatt.de/berlin-news/plaene-vorgestellt-flughafen-soll-zum-landschaftspark-werden-id246154
 #: by: https://www.berliner-woche.de/tegel/c-umwelt/tegeler-stadtheide-wird-freizeit-und-erholungsraum_a409828
 #: by: https://berliner-abendblatt.de/berlin-news/entwicklungsprojekt-tegelmitsubishi-electric-beteiligt-sich-id252512
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2024/pressemitteilung.1457474.php
 #: XXX werden die alten Zufahrtstraßen während der Bauarbeiten noch benutzbar sein?
 #: last_checked: 2023-10-03
 #: check_frequency: 180d
@@ -11277,6 +11284,20 @@ Bebauungsplan 3-43 (Brunnengalerie Buch - Süd): ein neuer Geh/Radweg in Fortsetz
 S21 2. Bauabschnitt (Richtung Süden)	? 8061,13303 8204,12930 8289,12723 8320,12595 8436,12435 8562,12273 8591,12154
 S21 2. Bauabschnitt (Richtung Norden)	? 8591,12154 8555,12483 8537,12687 8407,12846 8169,13066 8061,13303
 #: next_check ^^^
+# 
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/bebauungsplaene/bebauungsplan.1450041.php
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/bebauungsplaene/entwurf-vorhabenbezogener-bebauungsplan-12-70-ve.pdf
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1457606.php
+#: last_checked: 2024-06-18 (Pressemitteilung)
+#: check_frequency: 1000d
+Bebauungsplan 12-70 (ehemaliges TetraPak-Gelände): Planstraßen werden entstehen	?::projected -1947,24216 -2207,24273 -2145,24507 -2029,24477 -1919,24295 -1947,24216
+# 
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1457423.php (Öffentlichkeitsbeteiligung zur "Alten Schäferei")
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.1134934.php
+#: XXX Außerdem wird wohl auch das Gelände Richtung Bucher Straße neu bebaut.
+#: last_checked: 2024-06-18 (Pressemitteilung)
+#: check_frequency: 1000d
+Alte Schäferei: neues Wohnviertel (mit Straßen) geplant	?::projected 11499,24252 11292,23958 12006,23404 11908,23940 11499,24252
 # 
 #: ignore ^^^
 #: section ^^^

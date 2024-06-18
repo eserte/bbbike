@@ -62,7 +62,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-06-15
+#: last_checked: 2024-06-18
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -200,7 +200,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: next_check_id: MARGGRAFFBRUECKE-2023
 #: last_checked: 2024-05-22 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-06-18 vvv
+#: next_check: 2025-06-18 vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
 #: also_indoor: traffic (B,T)
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
@@ -223,7 +223,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2024-05-01
+#: last_checked: 2024-06-18
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -723,7 +723,8 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: next_check_id: RANKE-2023
 #: note: Länge des gesperrten Bereichs etwa 20-30m
 #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt
-#: also_indoor: traffic (G,B,W)
+#: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch?
+#: also_indoor: traffic (ex-G,ex-B,ex-W)
 #: last_checked: 2024-05-31
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-07-29
@@ -979,11 +980,11 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 # 
 ### Marzahn ###
 # 
-#: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-06-02
-#: check_frequency: 60d
-#: next_check: 2024-06-18
-Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2::inwork 18831,14823 19013,14905 19175,14968 19196,14976 19200,14963 19214,14966
+# REMOVED --- #: next_check_id: KNOTENMARZAHN-2022
+# REMOVED --- #: last_checked: 2024-06-02
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- #: next_check: 2024-06-18
+# REMOVED --- Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2::inwork 18831,14823 19013,14905 19175,14968 19196,14976 19200,14963 19214,14966
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246724.php (Gesamtbaumaßnahme bis Ende 2025, auch werden neue Radwege gebaut)

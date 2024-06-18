@@ -34435,13 +34435,13 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-05-12 00:00:00"), # 1633816800, # 2021-10-10 00:00
-       until => $isodate2epoch->("2024-06-14 16:00:00"), # 1634335200, # 2021-10-16 00:00
+       until => $isodate2epoch->("2024-07-12 16:00:00"), # 1634335200, # 2021-10-16 00:00
        #text  => 'Grüntal - Gratze: Sperrung (Neubau Durchlassbauwerk), 11.10.2021 bis 15.10.2021',
-       text  => 'Grüntal - Gratze: Sperrung wegen Deckenerneuerung, 13.05.2024 bis 14.06.2024',
+       text  => 'Grüntal - Gratze: Sperrung wegen Deckenerneuerung, 13.05.2024 bis 12.07.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (frühere Sperrung) --- #: source_id: LS/721-E/21/116 (inaktiv) ---	2::inwork 32854,37244 31663,37734
-#: source_id: LS/221-F/24/076 (inaktiv)
+#: source_id: LS/221-F/24/076 (inaktiv) (bis 12.07.2024)
 	2::inwork 31613,37843 31663,37734 32854,37244 33877,36906
 EOF
      },
@@ -42176,11 +42176,12 @@ Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
 EOF
      },
      { from  => 1707087600, # 2024-02-05 00:00
-       until => 1722635940, # 2024-08-02 23:59
-       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 02.08.2024 23:59',
+       until => $isodate2epoch->("2024-08-09 18:00:00"), # 1722635940, # 2024-08-02 23:59
+       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 09.08.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
+#: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024)
 #: note: explizite Umleitung für Radfahrer vor Ort
 	q4::inwork 3450,12722 3370,12725 3291,12721
 EOF
@@ -42667,15 +42668,21 @@ EOF
 # REMOVED --- #: last_checked ^^^ --- #: add_fragezeichen ^^^ --- #: also_indoor ^^^
 EOF
      },
-     { from  => 1712466000, # 2024-04-07 07:00
-       until => 1718978400, # 2024-06-21 16:00
-       text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Gierkeplatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.04.2024 07:00 bis 21.06.2024 16:00',
+     { from  => 1718733032, # 1712466000, # 2024-04-07 07:00
+       until => $isodate2epoch->("2024-07-31 16:00:00"), # 1718978400, # 2024-06-21 16:00
+       #text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Gierkeplatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.04.2024 07:00 bis 21.06.2024 16:00',
+       text  => 'Behaimstr. und Schustehrusstr.: Bauarbeiten zwischen Wilmersdorfer Str. und Gierkezeile bzw. Gierkeplatz, evtl. sind auch Radfahrer betroffen, bis 31.07.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024) (am nächsten Tag schon inaktiv)
-#: also_indoor: traffic (H,G,B,W)
-#: note: bei rbb wieder aktiv
-	q4::inwork 3493,12228 3495,12185 3507,12076
+#: source_id: viz2021:13.30305,52.51725,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024)
+#: source_id: viz2021:13.30263,52.5165,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024)
+# REMOVED --- #: also_indoor: traffic (H,G,B,W)
+#: also_indoor: traffic (H,G,B[teilweise],T[teilweise])
+# REMOVED --- #: note: bei rbb wieder aktiv
+# REMOVED (hier nicht mehr) ---	q4::inwork 3493,12228 3495,12185 3507,12076
+Behaimstr.	q4::inwork 3495,12185 3630,12201
+Schustehrusstr.	q4::inwork 3528,12276 3623,12284
 EOF
      },
      { from  => 1712683045, # 2024-04-09 19:17
@@ -43106,15 +43113,16 @@ EOF
 EOF
      },
      { from  => 1717279200, # 2024-06-02 00:00
-       until => 1748901600, # 2025-06-03 00:00
-       text  => 'Kleine Waldstr. - Waldstr.: während der Bauarbeiten zur neuen A117-Anschlussstelle vermutlich gesperrt, voraussichtlich ab 3. Juni 2024 bis Juni 2025',
+       until => $isodate2epoch->("2025-12-31 23:59:59"), # 1748901600, # 2025-06-03 00:00
+       text  => 'Kleine Waldstr. - Waldstr.: während der Bauarbeiten zur neuen A117-Anschlussstelle vermutlich gesperrt, voraussichtlich ab 3. Juni 2024 bis Ende 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: A117-2024
-#: osm_watch: way id="153260813" version="3"
+#: osm_watch: way id="153260813" version="4"
 #: osm_watch: note 4162190 4
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
-#: XXX laut osm-Notiz wird der Weg ab Ostern 2024 für ca. 1 Jahr gesperrt (Ostern ist aber schon vorbei...)
+#: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2024/03/2024-05-22_Anwohnerbrief.pdf (bis Ende 2025)
+#: XXX Vermutlich schon gesperrt, dokumentieren!
 #: add_fragezeichen: Ist der Weg tatsächlich gesperrt?
 #: last_checked: 2024-04-07
 # REMOVED --- #: check_frequency: 30d
@@ -43125,23 +43133,25 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Sonnenallee/Braunschweiger Str.: mögliche Einschränkungen wegen eines Wasserrohrbruchs',
+       #text  => 'Sonnenallee/Braunschweiger Str.: mögliche Einschränkungen wegen eines Wasserrohrbruchs',
+       text  => 'Braunschweiger Str.: Wasserrohrbruch, nur ein enger Gehweg offen',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-auf-der-sonnenallee-strassensperrung-id253457
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1795325596953624776
 #: by[nocache]: https://x.com/BerlinNkl/status/1795429185839940060
 #: by: https://berliner-abendblatt.de/berlin-news/verkehrseinschraenkungen-in-neukoelln-id253562
-#: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei)
+#: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
 #: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
+#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee)
 #: also_indoor: traffic (ex-H,G,re-B[nur_Braunschweiger],W[nur_noch_Sonnenallee],T[nur_Braunschweiger])
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
-#: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert)
-#: last_checked: 2024-06-14 (traffic) vvv
-#: check_frequency: 3d vvv
+#: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
+#: last_checked: 2024-06-18 vvv
+#: check_frequency: 14d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
-Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
+# REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -43159,16 +43169,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-06-25 17:00:00"),
-       text  => 'Kohlisstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Klopstockstr. und Wielandstr., voraussichtlich bis 25.6.2024',
+       until => $isodate2epoch->("2024-06-20 17:00:00"),
+       text  => 'Kohlisstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Klopstockstr. und Wielandstr., voraussichtlich bis 20.6.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796409264266936344 (Dauer ca. drei Wochen)
 #: source_id[inactive]: bvg2024:108#HIM_FREETEXT_224826 (hier nur bis 9.6.2024)
 #: source_id[inactive]: bvg2024:108#HIM_FREETEXT_225358 (bis 30.06.2024)
 #: source_id[inactive]: bvg2024:108#HIM_FREETEXT_225921
+#: source_id: bvg2024:108#HIM_FREETEXT_227597 (bis 05.07.2024)
 #: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024) (inaktiv)
-#: source_id: viz2021:13.589683,52.480279,31.05.2024,01:30 (bis 25.06.2024)
+#: source_id: viz2021:13.589683,52.480279,31.05.2024,01:30 (bis 25.06.2024) (bis 20.06.2024)
 #: also_indoor: traffic (H,B,G)
 #: note: bei rbb bis Mitte Juni (2024); mittlerweile bis 25.06.2024
 #: note: gesperrter Bereich nur etwa 60m
@@ -43230,11 +43241,11 @@ EOF
 EOF
      },
      { from  => 1717416660, # 2024-06-03 14:11
-       until => 1718679600, # 2024-06-18 05:00
-       text  => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Moissistr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, vom 04.06.2024 14:11 bis 18.06.2024 05:00',
+       until => $isodate2epoch->("2024-07-18 05:00:00"), # 1718679600, # 2024-06-18 05:00
+       text  => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Moissistr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, vom 04.06.2024 14:11 bis 18.07.2024 05:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.55316,52.43396,04.06.2024,14:11 (bis 18.06.2024)
+#: source_id: viz2021:13.55316,52.43396,04.06.2024,14:11 (bis 18.06.2024) (bis 18.07.2024)
 #: note: bei rbb "bis auf weiteres", mittlerweile auch bis 18.6.2024
 	q4::inwork 20717,3310 20478,3156
 EOF
@@ -43332,11 +43343,13 @@ EOF
 EOF
      },
      { from  => 1718085600, # 2024-06-11 08:00
-       until => 1720796400, # 2024-07-12 17:00
-       text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 12.07.2024 17:00',
+       until => $isodate2epoch->("2024-09-30 17:00:00"), # 1720796400, # 2024-07-12 17:00
+       dont_check_date => 1,
+       text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 12.07.2024 17:00, evtl. auch bis September 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024)
+#: note: bei rbb mittlerweile bis 30.09.2024, go with rbb
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1800742824524259711
 #: by: https://pbs.twimg.com/media/GPzFCzlWcAAoKgR?format=jpg&name=large
 	q3::inwork 20302,1613 20366,1479
@@ -43380,6 +43393,29 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1802568101801717762
 #: by: https://pbs.twimg.com/media/GQCRGJeXwAAhEes?format=jpg&name=large (Einbahnstraßenbereich etwa 100m)
 	q3::inwork; 17011,25830 17446,25914
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Treptower Str.: zwischen Sonnenallee und Stuttgarter Str. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Sperrung der Anbindung Stuttgarter Str. (beide Seiten), Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (B,T)
+#: last_checked: 2024-06-18 vvv
+	q4::inwork; 13474,8060 13478,8095 13510,8138
+Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
+#: note: relativ zum Straßenabschnitt kurzer Abschnitt, deshalb q3 statt q4
+Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
+#: last_checked ^^^
+EOF
+     },
+     { from  => 1718600400, # 2024-06-17 07:00
+       until => 1727733540, # 2024-09-30 23:59
+       text  => 'Lise-Meitner-Str.: Bauarbeiten zwischen Mierendorffplatz und Olbersstr./ Gaußstr., Sperrung Richtung Norden, evtl. sind auch Radfahrer betroffen, vom 18.06.2024 07:00 bis 30.09.2024 23:59',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.30616,52.52644,18.06.2024,07:00 (bis 30.09.2024)
+	q4::inwork; 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
 EOF
      },
     );

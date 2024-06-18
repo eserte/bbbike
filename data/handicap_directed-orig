@@ -406,7 +406,8 @@ Delmer Steig -> Marienfelder Chaussee: Mittelstreifen, zunächst den linken Gehwe
 #: source_id: viz2021:13.457474,52.491787,29.07.2021,07:00 (bis 30.04.2024) (bis 30.12.2024) (bis 31.12.2024)
 #: osm_watch: way id="1005683568" version="16"
 #: osm_watch: way id="1022420059" version="16"
-#: last_checked: 2024-06-15 vvv
+#: note: mittlerweile (2024-06-18) sind die Baustellenabsperrungen weggeschoben, dass man theoretisch direkt überqueren kann
+#: last_checked: 2024-06-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: allerdings spart man hier eine Ampel
@@ -431,12 +432,13 @@ Südliche Blumberger-Damm-Brücke: Radfahrer müssen den gegenüberliegenden Radweg 
 #: next_check_id: KNOTENMARZAHN-2022
 #: note: Mindestwartezeit an den Ampeln etwa eine Minute
 #: XXX zurzeit sind die Ampeln wegen Sperrung für den Kfz-Verkehr abgeschaltet, siehe valid-Direktive
+#: XXX vermutlich ab Mitte Juni 2024 für die andere Richtung gültig, falls man nicht den Bürgersteig nutzt
 #: last_checked: 2024-06-02 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: valid: 20240618- vvv
-Landsberger Allee	DH:t=50 18553,14678 18831,14823 19013,14905
-Landsberger Allee	DH:t=50 19175,14968 19196,14976 19200,14963
+Landsberger Allee	DH:t=50 19205,14980 19196,14976 19200,14963
+Landsberger Allee	DH:t=50 19013,14905 18831,14823 18553,14678
 #: valid: ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -482,7 +484,7 @@ Scharnweberstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=2
 #: next_check_id: MARGGRAFFBRUECKE-2023
 #: last_checked: 2024-05-22 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-06-18 vvv
+#: next_check: 2025-06-18 vvv
 # REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 16747,6813 16720,6845
 # REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:t=20 16720,6845 16677,6892
 #: note: eine Anforderungsampel, die aber recht flott grün wird
