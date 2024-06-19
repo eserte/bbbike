@@ -350,16 +350,6 @@ EOF
 				special_raise => 1,
 				Width => 1,
 			       ),
-	      (map {
-		  my $year = $_;
-		  layer_checkbutton([$do_compound->("Add streets-accurate-categorized-split-since".$year.".bbd")],
-				    'str', $acc_cat_split_streets_byyear_track->($year),
-				    set_layer_highlightning => 1,
-				    special_raise => 1,
-				    Width => 1,
-				   );
-	      } ($acc_cat_split_streets_years[0], $acc_cat_split_streets_years[-1]), # only first and last year, rest will be done in a submenu
-	      ),
 	      [Cascade => $do_compound->("Add streets-accurate-categorized-split-since ..."), -menuitems =>
 	       [
 		(map {
@@ -391,7 +381,7 @@ EOF
 				      special_raise => 1,
 				      Width => 1,
 				     );
-		} @acc_cat_split_streets_years[1..$#acc_cat_split_streets_years-1],
+		} (reverse @acc_cat_split_streets_years),
 		),
 	       ],
 	      ],
