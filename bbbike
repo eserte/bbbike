@@ -533,6 +533,7 @@ $min_cache_decider_time = 0.500; # 500ms, dann wird gecached
 $steady_mark = 0;
 $lowmem = 0;
 $use_logo = 1 if !defined $use_logo;
+$route_arrowed = 1;
 $center_loaded_route = 1;
 $zoom_loaded_route = 0;
 $zoom_new_route = 0;
