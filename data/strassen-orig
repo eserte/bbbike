@@ -675,7 +675,7 @@ Hauptstr. (Rummelsburg) [Wohngebiet]	N 15404,10633 15358,10562 15334,10528
 Saganer Str.	N 16187,10033 16206,10047
 Saganer Str.	N 16182,10069 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
 #: note: gemeinsamer Rad- und Gehweg
-(Rummelsburger Ufer - Hauptstr.)	NN 15249,10564 15295,10674 15307,10701
+(Rummelsburger Ufer - Hauptstr.)	NN 15249,10564 15298,10682 15307,10701
 Karlshorster Str. (Rummelsburg)	H 15261,10738 15272,10790 15279,10862
 Alt-Stralau	NH 14558,10264 14619,10223 14652,10201
 Alt-Stralau	N 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031 14879,9961 14908,9939 15031,9876 15088,9842 15201,9794 15400,9742 15436,9731 15472,9720
@@ -2397,7 +2397,7 @@ Landsberger Allee [Nebenfahrbahn]	N 16669,14438 16845,14461
 (Georg-Knorr-Str. - Landsberger Allee)	NN 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979 19163,14981 19171,14984 19175,14968
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.)	NN 19157,14979 19171,14938 19173,14931 19175,14926 19180,14915 19255,14911
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-06-02
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 (Knoten Marzahn, Fußgängerüberweg)	NN 19196,14976 19200,14963
@@ -6652,8 +6652,8 @@ Georg-Knorr-Str.	N 19414,15132 19191,15043 19169,15015
 (Fußgängerbrücke S-Bhf. Marzahn - Eastgate)	NN 19653,15544 19671,15561 19657,15527 19672,15519 19687,15513 19767,15473
 (Fußgängerbrücke - Märkische Allee)	NN 19687,15513 19694,15529 19733,15511
 Frank-Schweitzer-Str.	N 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911 19347,14936 19400,15027 19424,15068 19414,15132
-(Landsberger Allee - Frank-Schweitzer-Str.)	N 19214,14966 19244,14980 19400,15027
-(Frank-Schweitzer-Str. - Landsberger Allee)	N 19244,14980 19205,14980
+(Landsberger Allee - Frank-Schweitzer-Str.)	N 19200,14963 19244,14980 19400,15027
+# REMOVED (zurzeit geht die Verkehrsführung via südliche Fahrbahn) --- (Frank-Schweitzer-Str. - Landsberger Allee)	N 19244,14980 19205,14980
 Dahmeweg	N 19347,14936 19241,14561
 Dahmeweg	NN 19241,14561 19235,14511
 Dahmeweg	NN 19235,14511 19290,14503 19395,14477
@@ -18844,7 +18844,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7343 (Antrag) (abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5TQj0X86Z3AV6QO6ibyHnoLSeLd4YmEqqKXJTU7c/vMYbgDSP/73-Anlagen/06/B1481SB.pdf (Schlussbericht)
-#: last_checked: 2024-05-15
+#: last_checked: 2024-06-19
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
 Parrisiusstr.	N 22358,5918 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835
@@ -20639,14 +20639,14 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2024-05-22
+#: last_checked: 2024-06-19
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
-#: last_checked: 2024-05-22
+#: last_checked: 2024-06-19
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
 #: osm_watch: way id="1138047106" version="4"
-#: last_checked: 2024-05-22
+#: last_checked: 2024-06-19
 #: check_frequency: 90d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21669,5700 21623,5661
 # 

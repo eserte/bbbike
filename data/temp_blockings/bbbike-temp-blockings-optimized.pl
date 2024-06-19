@@ -6180,7 +6180,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="26"
-#: last_checked: 2024-05-15
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 #: next_check: 2024-10-25
 	q4::inwork; 22431,6068 22467,6135
@@ -6497,7 +6497,30 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'until' => 1721406600
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10935 (Antrag)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10936 (Anfrage)
+#: source_id[inactive]: bvg2021:190#BVG320324_0
+# REMOVED --- #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
+#: also_indoor: traffic (ex-G)
+#: last_checked: 2024-06-19 vvv
+# REMOVED --- #: check_frequency: 120d vvv
+# REMOVED --- #: next_check: 2024-05-10 vvv
+# REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
+# REMOVED (hier nicht mehr) --- Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
+Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,9999 21146,9988
+# REMOVED (nicht mehr gesperrt) --- #: XXX_prog eigentlich q3+ --- Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1686407303,
+         'id' => 3817,
+         'text' => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -6695,7 +6718,7 @@ Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 1168
 #: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
-#: last_checked: 2024-05-15 vvv
+#: last_checked: 2024-06-19 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
 # REMOVED (nicht mehr) --- Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -7536,20 +7559,7 @@ Schustehrusstr.	q4::inwork 3528,12276 3623,12284
          'until' => 1738339200
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1439363.php
-#: source_id: bvg2021:234#BVG345341_0
-#: by: https://www.berliner-woche.de/kladow/c-verkehr/sperrung-wegen-neuer-fahrbahn_a413546
-#: XXX: die BVG-Verkehrsmeldung geht bis Ende August
-#: next_check: 2024-08-31
-	q4::inwork -7529,4853 -7582,4850 -7643,4846 -7797,4850 -8098,4899
-',
-         'from' => 1713650400,
-         'id' => 4044,
-         'text' => 'Krampnitzer Weg: Bauarbeiten, Erneuerung der Fahrbahn, vom 22.04.2024 bis 05.07.2024',
-         'type' => 'handicap',
-         'until' => 1720216800
-       },
+       undef,
        {
          'data' => '	q4::temp::play 9570,10566 9556,10666
 ',
@@ -7650,7 +7660,7 @@ Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-06-12
+#: last_checked: 2024-06-19
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-06-12
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
@@ -7822,7 +7832,7 @@ Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12
        {
          'data' => '#: next_check_id: A117-2024
 #: osm_watch: way id="153260813" version="4"
-#: osm_watch: note 4162190 4
+#: osm_watch[closed]: note 4162190 4
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2024/03/2024-05-22_Anwohnerbrief.pdf (bis Ende 2025)
 #: XXX Vermutlich schon gesperrt, dokumentieren!
@@ -7877,27 +7887,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'type' => 'handicap',
          'until' => 1719068400
        },
-       {
-         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1796409264266936344 (Dauer ca. drei Wochen)
-#: source_id[inactive]: bvg2024:108#HIM_FREETEXT_224826 (hier nur bis 9.6.2024)
-#: source_id[inactive]: bvg2024:108#HIM_FREETEXT_225358 (bis 30.06.2024)
-#: source_id[inactive]: bvg2024:108#HIM_FREETEXT_225921
-#: source_id: bvg2024:108#HIM_FREETEXT_227597 (bis 05.07.2024)
-#: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024) (inaktiv)
-#: source_id: viz2021:13.589683,52.480279,31.05.2024,01:30 (bis 25.06.2024) (bis 20.06.2024)
-#: also_indoor: traffic (H,B,G)
-#: note: bei rbb bis Mitte Juni (2024); mittlerweile bis 25.06.2024
-#: note: gesperrter Bereich nur etwa 60m
-# REMOVED --- #: last_checked: 2024-06-02 --- #: next_check: 2024-06-09
-	q3::inwork 23012,8575 23118,8495
-# REMOVED (hier nicht) ---	q4::inwork 23118,8495 23207,8421
-',
-         'from' => undef,
-         'id' => 4071,
-         'text' => 'Kohlisstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Klopstockstr. und Wielandstr., voraussichtlich bis 20.6.2024',
-         'type' => 'handicap',
-         'until' => 1718895600
-       },
+       undef,
        {
          'data' => '	q4::temp::play 7177,16715 7150,16760 7144,16781 7147,16800
 ',
@@ -7917,16 +7907,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1721426399
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.543945,52.454049,03.06.2024,07:00 (bis 21.06.2024) (bis 19.06.2024)
-	q4::inwork 20435,5460 20348,5509 20065,5534 19814,5512
-',
-         'from' => 1717304400,
-         'id' => 4075,
-         'text' => 'Bruno-Bürgel-Weg: Bauarbeiten in Höhe Stadion, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.06.2024 07:00 bis 19.06.2024 15:00',
-         'type' => 'handicap',
-         'until' => 1718802000
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1452894.php
 #: by: https://www.berliner-woche.de/mitte/c-bauen/uferpromenade-gesperrt_a417283

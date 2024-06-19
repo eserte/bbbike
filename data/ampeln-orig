@@ -228,20 +228,19 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 Gürtelstr.	F::inwork 15153,11691
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: XXX gibt es die Ampeln wieder?
-#: last_checked: 2024-06-02 vvv
+# REMOVED (ja) --- #: XXX gibt es die Ampeln wieder?
+#: last_checked: 2024-06-19 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2024-06-18 vvv
-# REMOVED --- #: next_check: 2026-12-31 vvv
-#: valid: 20240618- vvv
-#: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
+#: next_check: 2026-12-31 vvv
+# REMOVED --- #: valid: 20240618- vvv
+#: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
 #: note: kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30)
 #: note: Anforderungsampel
 	F::inwork 18831,14823
-#: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
+#: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
 #: note: Anforderungsampel
 	F::inwork 19196,14976
-#: valid ^^^
+# REMOVED --- #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -302,23 +301,23 @@ Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating 
 # 
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7596 (Antrag auf Verstetigung)
-#: last_checked: 2024-02-10
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2024-02-10
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2024-02-10
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2024-02-10
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2024-02-10
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
@@ -335,7 +334,7 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2024-05-22
+#: last_checked: 2024-06-19
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9622
 # 
@@ -3280,6 +3279,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 3542,13203
 	X 3429,13227
 	X 7733,8023
+#: note: Anforderungsampel (N-S-Relation)
 	X 17533,14484
 	X 18166,14277
 #: XXX_prog gilt auch für das Linksabbiegen in die Wadzeckstr.

@@ -19665,6 +19665,9 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8873 (Anfrage)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-maientage-wieder-kein-volksfest-auf-der-hasenheide-li.2202306 (2024 auch nicht)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9029 (Anfrage)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9093 (Antrag)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9109 (Antrag)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9131 (Anfrage)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -38098,8 +38101,9 @@ EOF
 #: also_indoor: traffic (B,G,H)
 # REMOVED --- #: last_checked: 2023-01-04 (traffic) --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2023-01-02
-	2::inwork 19205,14980 19244,14980 19400,15027
-	2::inwork 19214,14966 19244,14980
+# REMOVED (Straßenstück existiert nicht mehr) ---	2::inwork 19205,14980 19244,14980
+	2::inwork 19244,14980 19400,15027
+	2::inwork 19200,14963 19244,14980
 EOF
      },
      { from  => undef, # 
@@ -38560,7 +38564,7 @@ EOF
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="26"
-#: last_checked: 2024-05-15
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 #: next_check: 2024-10-25
 	q4::inwork; 22431,6068 22467,6135
@@ -39643,26 +39647,28 @@ EOF
 EOF
      },
      { from  => 1686407303, # 2023-06-10 16:28
-       until => 1715378400, # 2024-05-11 00:00
+       until => undef, # 1715378400, # 2024-05-11 00:00
        #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, außerdem Kreuzungsbereich Gleiwitzer Str./Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
        #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
-       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn vor der Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+       #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn vor der Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10935 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10936 (Anfrage)
-#: source_id: bvg2021:190#BVG320324_0
-#: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
-#: also_indoor: traffic (G)
-#: last_checked: 2024-03-30 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2024-05-10 vvv
+#: source_id[inactive]: bvg2021:190#BVG320324_0
+# REMOVED --- #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
+#: also_indoor: traffic (ex-G)
+#: last_checked: 2024-06-19 vvv
+# REMOVED --- #: check_frequency: 120d vvv
+# REMOVED --- #: next_check: 2024-05-10 vvv
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
-Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
+# REMOVED (hier nicht mehr) --- Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
+Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,9999 21146,9988
 # REMOVED (nicht mehr gesperrt) --- #: XXX_prog eigentlich q3+ --- Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
-#: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -40462,7 +40468,7 @@ EOF
 #: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
-#: last_checked: 2024-05-15 vvv
+#: last_checked: 2024-06-19 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
 # REMOVED (nicht mehr) --- Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -42768,15 +42774,15 @@ Finkenstr./Adolf-Menzel-Str.: Sperrung des Kreuzungsbereichs	q3::inwork 21954,96
 EOF
      },
      { from  => 1713650400, # 2024-04-21 00:00
-       until => 1720216800, # 2024-07-06 00:00
+       until => 1718820253, # 1720216800, # 2024-07-06 00:00
        text  => 'Krampnitzer Weg: Bauarbeiten, Erneuerung der Fahrbahn, vom 22.04.2024 bis 05.07.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1439363.php
 #: source_id: bvg2021:234#BVG345341_0
 #: by: https://www.berliner-woche.de/kladow/c-verkehr/sperrung-wegen-neuer-fahrbahn_a413546
-#: XXX: die BVG-Verkehrsmeldung geht bis Ende August
-#: next_check: 2024-08-31
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1458079.php (vorzeitig abgeschlossen)
+# REMOVED --- #: XXX: die BVG-Verkehrsmeldung geht bis Ende August --- #: next_check: 2024-08-31
 	q4::inwork -7529,4853 -7582,4850 -7643,4846 -7797,4850 -8098,4899
 EOF
      },
@@ -42898,7 +42904,7 @@ Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-06-12
+#: last_checked: 2024-06-19
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-06-12
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
@@ -43119,7 +43125,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: A117-2024
 #: osm_watch: way id="153260813" version="4"
-#: osm_watch: note 4162190 4
+#: osm_watch[closed]: note 4162190 4
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2024/03/2024-05-22_Anwohnerbrief.pdf (bis Ende 2025)
 #: XXX Vermutlich schon gesperrt, dokumentieren!
@@ -43169,7 +43175,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-06-20 17:00:00"),
+       until => 1718820983, # $isodate2epoch->("2024-06-20 17:00:00"),
        text  => 'Kohlisstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Klopstockstr. und Wielandstr., voraussichtlich bis 20.6.2024',
        type  => 'handicap',
        data  => <<EOF,
@@ -43181,7 +43187,7 @@ EOF
 #: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024) (inaktiv)
 #: source_id: viz2021:13.589683,52.480279,31.05.2024,01:30 (bis 25.06.2024) (bis 20.06.2024)
 #: also_indoor: traffic (H,B,G)
-#: note: bei rbb bis Mitte Juni (2024); mittlerweile bis 25.06.2024
+#: note: bei rbb bis Mitte Juni (2024); mittlerweile bis 25.06.2024; mittlerweile nur Gegenverkehrsregelung
 #: note: gesperrter Bereich nur etwa 60m
 # REMOVED --- #: last_checked: 2024-06-02 --- #: next_check: 2024-06-09
 	q3::inwork 23012,8575 23118,8495
@@ -43224,7 +43230,7 @@ EOF
        text  => 'Bruno-Bürgel-Weg: Bauarbeiten in Höhe Stadion, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.06.2024 07:00 bis 19.06.2024 15:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.543945,52.454049,03.06.2024,07:00 (bis 21.06.2024) (bis 19.06.2024)
+#: source_id: viz2021:13.543945,52.454049,03.06.2024,07:00 (bis 21.06.2024) (bis 19.06.2024) (inaktiv)
 	q4::inwork 20435,5460 20348,5509 20065,5534 19814,5512
 EOF
      },

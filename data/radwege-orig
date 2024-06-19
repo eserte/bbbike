@@ -966,7 +966,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-06-13
+#: last_checked: 2024-06-19
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1693,7 +1693,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024)
-#: last_checked: 2024-06-05 (okas) vvv
+#: last_checked: 2024-06-19 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-10-25 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
@@ -2187,7 +2187,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2024-06-09 vvv
+#: last_checked: 2024-06-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -5383,12 +5383,8 @@ Gehwegplatten	RW2; 16852,14412 17055,14432
 asphaltiert	RW2; 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 Gehwegplatten	RW1; 18057,14549 18183,14573
 meist alter Asphalt mit einigen Schäden	RW2; 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823
-#: next_check_id: KNOTENMARZAHN-2022
-#: XXX Wie sieht die Radverkehrsführung nun aus?
-#: last_checked: 2024-06-02
-#: check_frequency: 120d
-#: next_check: 2026-12-31
-Gehweg für Radfahrer frei	RW1; 18831,14823 19013,14905 19156,14953 19200,14963 19214,14966 19350,14997
+neu asphaltiert, breit, Gehweg für Radfahrer frei	RW1; 18831,14823 19013,14905 19156,14953 19200,14963
+Gehweg für Radfahrer frei	RW1; 19200,14963 19214,14966 19350,14997
 	RW3; 19852,15201 19987,15280 20135,15364
 Fahrradschleuse	RW3; 20135,15364 20260,15434
 	RW2; 20260,15434 20532,15564 20580,15586 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
@@ -5404,8 +5400,7 @@ neues Verbundsteinpflaster	RW2; 22739,16203 22696,16208 22631,16215 22495,16165 
 Gehweg für Radfahrer frei, eng	RW1; 19502,15089 19364,15045 19205,14980 19196,14976 19175,14968
 # REMOVED (temporär nicht verfügbar?) --- Gehweg für Radfahrer frei, eng	RW1; 19175,14968 19013,14905
 #: next_check_id: KNOTENMARZAHN-2022
-#: XXX Wie sieht die Radverkehrsführung nun aus?
-#: last_checked: 2024-06-02
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 Gehweg für Radfahrer frei	RW9; 19200,14963 19156,14953 19013,14905 18831,14823
@@ -6909,7 +6904,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2024-06-05 (okas)
+#: last_checked: 2024-06-19
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435

@@ -42,6 +42,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwork 12765,8435 12598,8390
 Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, Fußgängertunnel	q3::inwork 15856,10821 15793,10814
 Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 17249,14575 17392,14591
+Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,14451
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 Plauener Str.: Fahrbahn noch gesperrt, südlicher Gehweg frei	q3::inwork 17531,14923 17610,14935 17638,14945
@@ -1735,7 +1736,7 @@ Knobelsdorffstr.: einige Moabiter Kissen	q0 3117,11852 2953,11830 2728,11805 254
 Wegenerstr.: ein Moabiter Kissen	q0 4495,9184 4619,9200
 Sigmaringer Str.: ein Moabiter Kissen	q0 4700,9179 4713,8997
 (Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
-(Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1 15249,10564 15295,10674 15307,10701
+(Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1 15249,10564 15298,10682 15307,10701
 Lepsiusstr.: Bordsteine, Fußgänger	q4 4913,6538 4894,6509
 (Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
 Mirabellenblütenweg: schmale Straße	q1 11308,21550 11296,21456
@@ -2018,8 +2019,6 @@ Siegfried-Hirschmann-Park: einige Fußgänger	q4 14779,11505 14745,11487
 Siegfried-Hirschmann-Park: einige Fußgänger	q2 14745,11487 14684,11456
 Tuchollaplatz: Bordstein	q3; 15626,10915 15616,10920
 Heilbronner Str.: einige Fußgänger	q1 6140,9338 6144,9295 6132,9246
-Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19214,14966 19244,14980
-Frank-Schweitzer-Str. - Landsberger Allee: Bordstein	q4 19244,14980 19205,14980
 (Weg im Anita-Berber-Park): einige Fußgänger	q1 11677,7351 11751,7366 12158,7449
 Henriettenplatz: Fußgänger, stellenweise eng	q3 2770,9945 2768,9980 2784,9992 2770,10024
 (Ottomar-Geschke-Str., Gehweg): Fußgänger	q3 21073,4165 21148,4220
@@ -3475,7 +3474,6 @@ Oberspreestr. [Nebenfahrbahn]: gegen die Einbahnstraßenrichtung, ggfs. schieben	
 Buschwindröschenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21367,84 21354,142
 Weidenkätzchenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21435,99 21421,158
 Straße 3: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 18816,19648 18730,19672 18644,19695 18544,19722
-Irmtraud-Morgner-Str.: schwarz-weiße Einfahrt-verboten-Schilder: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17521,8549 17619,8558
 Hausvaterweg [Wohngebiet]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 19789,18423 19704,18459
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
@@ -3523,7 +3521,6 @@ Walter-Friedrich-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::ignd
 Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 24362,11954 24317,11754
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
-Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben: gesperrt, ggfs. schieben	q4:inwork::igndisp 17619,8558 17599,8485 17581,8422
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine: gesperrt, ggfs. schieben	q4:inwork::igndisp 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003

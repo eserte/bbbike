@@ -58,11 +58,12 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ostkreuz-campus.1015/page-3#post-22544
 #: by: https://officehome.de/projekt/pandion-officehome-zinc
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=760470#post760470
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11534 (Einwohneranfrage)
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-06-18
+#: last_checked: 2024-06-19
 #: check_frequency: 90d
 #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -270,6 +271,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12522 (Anfrage)
 #: osm_watch: way id="549316654" version="33"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
@@ -866,24 +868,32 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024)
 #: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024)
-#: source_id: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024)
+#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024)
+#: source_id: bvg2024:194#HIM_FREETEXT_228154 (bis 31.08.2024)
+#: source_id: bvg2024:240#HIM_FREETEXT_228155 (bis 31.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028
 #: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fußverkehr)
 #: also_indoor: traffic (H,G,W)
 #: priority: #A
 #: last_checked: 2024-06-17
 #: next_check: 2024-06-22
-#: valid: -20240622
+# REMOVED --- #: valid: -20240622
+#: valid: -20240831
 Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, Fußgängertunnel	q3::inwork 15856,10821 15793,10814
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-315-341-343.837/page-2#post-22878
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1135879798" version="2"
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2024-06-13
-#: check_frequency: 90d
-#: next_check: 2024-06-17
+#: last_checked: 2024-06-19
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2024-06-17
 Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 17249,14575 17392,14591
+# 
+#: note: nur etwa der halbe Abschnitt ist verengt, deshalb q3 statt q4
+#: also_indoor: traffic (G)
+#: last_checked: 2024-06-19
+Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,14451
 # 
 # REMOVED (nicht mehr) --- #: next_check_id: RUSCHEAMPEL-2024 --- #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert? --- #: last_checked: 2024-05-02 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-14 vvv --- #: valid: -20240614 vvv --- # REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886 --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
@@ -896,7 +906,7 @@ Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-06-17
+#: last_checked: 2024-06-19
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -931,7 +941,7 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 # REMOVED (laut osm beendet) --- #: osm_watch: way id="4782474" version="12" --- #: next_check_id: DEUTSCHMEISTER-2015 --- #: last_checked: 2015-09-23 --- Deutschmeisterstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15370,12264 15443,12222
 # REMOVED --- #: next_check_id: SANDINO-2014 --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-09-27 --- #: check_frequency: 21d --- Sandinostr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15799,14674 15706,14752
 # REMOVED --- #: last_checked: 2015-03-15 --- #: check_frequency: 60d --- Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
-# REMOVED (keine Behinderungen mehr) --- #: next_check_id: HAUPTBUCHT-2014 --- #: last_checked: 2014-10-05 (Absperrgitter existieren noch, werden aber oft von Fußgängern weggeschoben) (deshalb nur q3) --- #: check_frequency: 60d --- (Rummelsburger Ufer - Hauptstr.): Bauarbeiten, ggfs. Umweg über Norma-Parkplatz notwendig	q3::inwork 15249,10564 15295,10674 15307,10701
+# REMOVED (keine Behinderungen mehr) --- #: next_check_id: HAUPTBUCHT-2014 --- #: last_checked: 2014-10-05 (Absperrgitter existieren noch, werden aber oft von Fußgängern weggeschoben) (deshalb nur q3) --- #: check_frequency: 60d --- (Rummelsburger Ufer - Hauptstr.): Bauarbeiten, ggfs. Umweg über Norma-Parkplatz notwendig	q3::inwork 15249,10564 15298,10682 15307,10701
 # REMOVED (anscheinend schon beendet) --- #: last_checked: 2014-05-06 --- #: next_check: 2014-05-31 (Bauarbeiten bis Mai 2014) --- #: valid: -20140531 --- Archibaldweg: Bauarbeiten zwischen Leopoldstr. und Rupprechtstr. Richtung Nordosten	q3::inwork; 15950,10987 16034,11053
 # REMOVED (wieder Einbahnstraße) --- #: source_id: IM_024674 --- #: last_checked: 2015-04-26 --- #: next_check: 2015-04-30 --- #: priority: #A --- Archibaldweg: Bauarbeiten, teilweise über Gehweg ausweichen	q2::inwork 15674,10851 15777,10897 15820,10916 15870,10938
 # REMOVED (nicht mehr Einbahnstraße) --- #: osm_watch: way id="31526264" version="6" --- #: last_checked: 2015-04-08 --- #: check_frequency: 30d --- Stadthausstr.: Bauarbeiten, Einbahnstraße, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
@@ -3688,7 +3698,7 @@ Wegenerstr.: ein Moabiter Kissen	q0- 4495,9184 4619,9200
 #: XXX_prog: für Anhänger größere Behinderung (q1?)
 Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4713,8997
 (Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
-(Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1+ 15249,10564 15295,10674 15307,10701
+(Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1+ 15249,10564 15298,10682 15307,10701
 #: XXX_prog BS 2x Bordsteine, ansonsten q3 für Fußgänger
 Lepsiusstr.: Bordsteine, Fußgänger	q4 4913,6538 4894,6509
 (Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
@@ -4088,10 +4098,7 @@ Siegfried-Hirschmann-Park: einige Fußgänger	q2 14745,11487 14684,11456
 #: XXX_prog BS am südlichen Ende, ansonsten entfernen
 Tuchollaplatz: Bordstein	q3; 15626,10915 15616,10920
 Heilbronner Str.: einige Fußgänger	q1- 6140,9338 6144,9295 6132,9246
-#: XXX_prog BS, ansonsten entfernen
-Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19214,14966 19244,14980
-#: XXX_prog BS, ansonsten entfernen
-Frank-Schweitzer-Str. - Landsberger Allee: Bordstein	q4 19244,14980 19205,14980
+# REMOVED (mit der neuen Verkehrsführung kann man via Fußgängerampel und Anrampung den Bordstein umfahren) --- #: XXX_prog BS, ansonsten entfernen --- Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19200,14963 19244,14980 --- #: XXX_prog BS, ansonsten entfernen --- Frank-Schweitzer-Str. - Landsberger Allee: Bordstein	q4 19244,14980 19205,14980
 (Weg im Anita-Berber-Park): einige Fußgänger	q1 11677,7351 11751,7366 12158,7449
 Henriettenplatz: Fußgänger, stellenweise eng	q3 2770,9945 2768,9980 2784,9992 2770,10024
 (Ottomar-Geschke-Str., Gehweg): Fußgänger	q3 21073,4165 21148,4220
