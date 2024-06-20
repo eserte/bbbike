@@ -43,7 +43,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024) (bis 24.05.2024) (inaktiv)
-#: last_checked: 2024-06-16
+#: last_checked: 2024-06-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-05-24
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -356,7 +356,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-06-16
+#: last_checked: 2024-06-20
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -1165,6 +1165,12 @@ Moltkestraßenbrücke: Fußgänger, verschwenkte Wegführung	q4::inwork 3839,4577 386
 # REMOVED (hier nicht mehr bzw. integriert in die Moltkestraßenbrückensperrung) --- #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-01-20 (osm) --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
 ### Prenzlauer Berg ###
+# 
+#: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
+#: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
+#: last_checked: 2024-06-20
+#: check_frequency: 60d
+Diesterwegstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q3::inwork 12060,15141 11995,15012
 # 
 #: osm_watch: way id="1047231711" version="3"
 #: note: Halteverbotsschilder bis Juli 2024
@@ -4894,7 +4900,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
-#: last_checked: 2024-06-16
+#: last_checked: 2024-06-20
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 

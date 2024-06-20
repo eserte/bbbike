@@ -35578,7 +35578,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-06-15
+#: last_checked: 2024-06-20 (daf)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -40162,12 +40162,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,ex-G[unvollst‰ndig],ex-W[unvollst‰ndig],T)
-#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im ˆstlichen Abschnitt noch aufgebuddelt
-#: last_checked: 2024-06-06 (mapillary) vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im ˆstlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2023
+#: last_checked: 2024-06-20 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2024-06-15 vvv
+#: next_check: 2024-07-05 vvv
 Einfahrt von der Stahlheimer Str. mˆglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
+Varnhagenstr.: Kreuzungsbereich gesperrt	q3::inwork 11614,16034 11680,16151
+Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
@@ -40963,7 +40965,7 @@ EOF
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
 #: note: Ein Radfahren-verboten-Schild steht an der Schˆnhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-06-01 (mapillary) vvv
+#: last_checked: 2024-06-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (s.o.) ---	q4::inwork; 10908,13978 10933,14122
@@ -41284,7 +41286,7 @@ EOF
 #: note: auﬂerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraﬂe wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraﬂenregelungen noch immer? vvv
-#: last_checked: 2024-06-16 vvv
+#: last_checked: 2024-06-19 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -42782,6 +42784,7 @@ EOF
 #: source_id: bvg2021:234#BVG345341_0
 #: by: https://www.berliner-woche.de/kladow/c-verkehr/sperrung-wegen-neuer-fahrbahn_a413546
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1458079.php (vorzeitig abgeschlossen)
+#: by: https://www.berliner-woche.de/kladow/c-verkehr/krampnitzer-weg-fuer-verkehr-wieder-freigegeben_a418703
 # REMOVED --- #: XXX: die BVG-Verkehrsmeldung geht bis Ende August --- #: next_check: 2024-08-31
 	q4::inwork -7529,4853 -7582,4850 -7643,4846 -7797,4850 -8098,4899
 EOF
@@ -43185,7 +43188,7 @@ EOF
 #: source_id[inactive]: bvg2024:108#HIM_FREETEXT_225921
 #: source_id: bvg2024:108#HIM_FREETEXT_227597 (bis 05.07.2024)
 #: source_id: viz2021:13.589973,52.480143,31.05.2024,01:30 (bis 14.06.2024) (inaktiv)
-#: source_id: viz2021:13.589683,52.480279,31.05.2024,01:30 (bis 25.06.2024) (bis 20.06.2024)
+#: source_id: viz2021:13.589683,52.480279,31.05.2024,01:30 (bis 25.06.2024) (bis 20.06.2024) (inaktiv)
 #: also_indoor: traffic (H,B,G)
 #: note: bei rbb bis Mitte Juni (2024); mittlerweile bis 25.06.2024; mittlerweile nur Gegenverkehrsregelung
 #: note: gesperrter Bereich nur etwa 60m
@@ -43332,7 +43335,7 @@ EOF
 #: note: L‰nge der Einbahnstraﬂenregelung etwa 80m; auﬂerdem ist auch die Inselstraﬂe Einbahnstraﬂe, hier aber f¸r Radfahrer frei
 #: note: Halteverbotsschilder bis 17.07.2024
 #: add_fragezeichen: Besteht die Einbahnstraﬂenregelung noch immer?
-#: last_checked: 2024-06-16
+#: last_checked: 2024-06-20
 #: check_frequency: 30d
 #: next_check: 2024-07-17
 	q3::inwork; 10908,11908 10722,11816

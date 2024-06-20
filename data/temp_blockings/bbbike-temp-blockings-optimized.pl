@@ -5324,7 +5324,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-06-15
+#: last_checked: 2024-06-20 (daf)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -6630,12 +6630,14 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
        undef,
        {
          'data' => '#: also_indoor: traffic (B,ex-G[unvollständig],ex-W[unvollständig],T)
-#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt
-#: last_checked: 2024-06-06 (mapillary) vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2023
+#: last_checked: 2024-06-20 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2024-06-15 vvv
+#: next_check: 2024-07-05 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
+Varnhagenstr.: Kreuzungsbereich gesperrt	q3::inwork 11614,16034 11680,16151
+Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
@@ -6895,7 +6897,7 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-06-01 (mapillary) vvv
+#: last_checked: 2024-06-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (s.o.) ---	q4::inwork; 10908,13978 10933,14122
@@ -7003,7 +7005,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-06-16 vvv
+#: last_checked: 2024-06-19 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7997,7 +7999,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'data' => '#: note: Länge der Einbahnstraßenregelung etwa 80m; außerdem ist auch die Inselstraße Einbahnstraße, hier aber für Radfahrer frei
 #: note: Halteverbotsschilder bis 17.07.2024
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2024-06-16
+#: last_checked: 2024-06-20
 #: check_frequency: 30d
 #: next_check: 2024-07-17
 	q3::inwork; 10908,11908 10722,11816
