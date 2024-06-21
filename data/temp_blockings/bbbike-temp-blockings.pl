@@ -31911,7 +31911,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
        until => undef, # $isodate2epoch->("2024-02-05 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende Juni 2024, vermutlich noch länger',
+       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Anfang Juli 2024, vermutlich noch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
@@ -31929,7 +31929,7 @@ EOF
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id[inactive]: bvg2021:188#BVG259885_0
 #: source_id[inactive]: bvg2021:188#BVG323876_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024) (bis 29.06.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024) (bis 29.06.2024 + weitere Arbeiten) (bis 05.07.2024)
 #: source_id: viz2021:13.30246,52.44494,31.05.2024,10:09 (bis 12.07.2024) (inaktiv)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (ex-H,G,B[weiter westlich],W) vvv
@@ -31944,7 +31944,7 @@ EOF
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2024-05-05 vvv
-#: next_check: 2024-06-29 vvv
+#: next_check: 2024-07-05 vvv
 # REMOVED (hier nicht mehr) ---	q3::inwork; 4214,4595 4039,4500
 # REMOVED (hier nicht mehr) --- Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
@@ -39736,7 +39736,7 @@ EOF
        text  => 'Gransee: Sperrung zwischen Oranienburger Str. und Vogelsangstr. vom 19.06.2023, 08:00 Uhr bis 10.05.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/23/077 (bis 10.05.2024) (bis 25.08.2023) (inaktiv) (bis 10.05.2024) (inaktiv) (bis 21.06.2024)
+#: source_id: LS/221-E/23/077 (bis 10.05.2024) (bis 25.08.2023) (inaktiv) (bis 10.05.2024) (inaktiv) (bis 21.06.2024) (inaktiv)
 	2::inwork -7332,66101 -7636,65571
 EOF
      },
@@ -42402,11 +42402,11 @@ EOF
 EOF
      },
      { from  => 1709449200, # 2024-03-03 08:00
-       until => $isodate2epoch->("2024-06-21 17:00:00"), # 1717167600, # 2024-05-31 17:00
-       text  => 'Charlottenstr.: Anbindung Chausseestr. gesperrt, vom 04.03.2024 08:00 bis 21.06.2024 17:00 ',
+       until => $isodate2epoch->("2024-07-26 17:00:00"), # 1717167600, # 2024-05-31 17:00
+       text  => 'Charlottenstr.: Anbindung Chausseestr. gesperrt, vom 04.03.2024 08:00 bis 26.07.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024) (bis 21.06.2024)
+#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024) (bis 21.06.2024) (bis 26.07.2024)
 #: note: außerdem Gegenverkehrsregelung, dafür fällt die Fußgängerampel weg
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764546320277086229
 #: by: https://pbs.twimg.com/media/GHmM9cLWgAI8oMM?format=jpg&name=large
@@ -42414,11 +42414,11 @@ EOF
 EOF
      },
      { from  => 1709445600, # 2024-03-03 07:00
-       until => $isodate2epoch->("2024-06-21 17:00:00"), # 1714143600, # 2024-04-26 17:00
-       text  => 'Malchower Teichweg: Anbindung an die B2 kann wegen Bauarbeiten gesperrt sein, vom 04.03.2024 07:00 bis 21.06.2024 17:00',
+       until => $isodate2epoch->("2024-07-05 17:00:00"), # 1714143600, # 2024-04-26 17:00
+       text  => 'Malchower Teichweg: Anbindung an die B2 kann wegen Bauarbeiten gesperrt sein, vom 04.03.2024 07:00 bis 05.07.2024 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024) (bis 07.05.2024) (bis 17.05.2024) (bis 07.06.2024) (bis 21.06.2024)
+#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024) (bis 07.05.2024) (bis 17.05.2024) (bis 07.06.2024) (bis 21.06.2024) (bis 05.07.2024)
 #: note: Gehweg nur auf der westlichen Seite, für Radfahrer in beiden Richtungen frei, 2 Ampeln zum Überqueren
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764537508510216685
 #: by: https://pbs.twimg.com/media/GHmMbjuXYAAbLcY?format=jpg&name=large
@@ -42547,9 +42547,9 @@ Togostr. -> Antwerpener Str.	3::inwork 6530,15849 6555,15827 6690,15671
 EOF
      },
      { from  => 1710741600, # 2024-03-18 07:00
-       until => $isodate2epoch->("2024-06-21 17:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
+       until => $isodate2epoch->("2024-06-28 17:00:00"), # $isodate2epoch->("2024-04-11 18:00:00"), # 1712699940, # 2024-04-09 23:59
        #text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der östlichen Anbindung, vom 19.03.2024 07:00 bis 11.04.2024 23:59',
-       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 21.06.2024',
+       text  => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 28.06.2024',
        type  => 'gesperrt',
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 6499,10086 6504,9961 6504,9865\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
@@ -42557,7 +42557,7 @@ EOF
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
 #: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
 #: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024) (bis 23.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024) (bis 21.06.2024)
+#: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024) (bis 21.06.2024) (bis 28.06.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
@@ -42565,7 +42565,7 @@ EOF
 #: last_checked: 2024-05-28 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
-#: next_check: 2024-06-21 vvv
+#: next_check: 2024-06-28 vvv
 Martin-Luther-Str. -> östliche Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
@@ -42661,7 +42661,7 @@ EOF
        text  => 'Bredow - Brieselang/Falkensee: Bauarbeiten, Sperrung der Straße, evtl. sind auch Radfahrer betroffen, bis zum 21.06.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/23/189 (bis 12.06.2024) (inaktiv) (bis 21.06.2024)
+#: source_id: LS/223-P/23/189 (bis 12.06.2024) (inaktiv) (bis 21.06.2024) (inaktiv)
 	2::inwork -23452,18658 -22367,19503 -22236,19745 -22145,19713 -21989,19969 -21864,20015 -21364,20346 -20944,20402 -20850,20447 -20387,21160 -19973,21481 -19431,22888
 EOF
      },
@@ -43002,7 +43002,7 @@ Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979
 EOF
      },
      { from  => 1714550400, # 2024-05-01 10:00
-       until => 1725116400, # 2024-08-31 17:00
+       until => 1718993232, # 1725116400, # 2024-08-31 17:00
        text  => 'Pichelsdorfer Str.: Anbindungen westliche Weißenburger Str. und Franzstr. gesperrt, vom 02.05.2024 10:00 bis 31.08.2024 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -43011,7 +43011,7 @@ EOF
 #: by: https://wilhelmstadt-bewegt.de/ba3-weissenburger-adamstrasse/?proj=Umbau%20der%20Pichelsdorfer%20Stra%C3%9Fe&singlec=baustellen-ticker-pichelsdorfer-strasse (März bis Herbst 2024)
 #: by: https://wilhelmstadt-bewegt.de/wp-content/uploads/2024/02/230720_BA3_Infoflyer-Ausschnitt-1024x269.jpg (hier allerdings keine Sackgasse zu sehen)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1428086.php (18.03.2024 bis Herbst 2024)
-#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024) (bis 21.06.2024, weitere Bauabschnitte folgen)
+#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024) (bis 21.06.2024, weitere Bauabschnitte folgen) (ohne Verlängerung inaktiv)
 Franzstr.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3637,12668 -3446,12728
 Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12762 -3739,12756
 EOF
@@ -43166,7 +43166,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 EOF
      },
      { from  => 1717884000, # 2024-06-09 00:00
-       until => $isodate2epoch->("2024-06-22 17:00:00"),
+       until => $isodate2epoch->("2024-06-22 13:00:00"),
        text  => 'Onkel-Tom-Str.: Bauarbeiten zwischen Fenngraben und Hüttenweg, Sperrung der Fahrbahn, vom 10.06.2024 bis 22.06.2024',
        type  => 'handicap',
        data  => <<EOF,
@@ -43425,6 +43425,15 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.30616,52.52644,18.06.2024,07:00 (bis 30.09.2024)
 	q4::inwork; 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
+EOF
+     },
+     { from  => 1719122400, # 2024-06-23 08:00
+       until => 1732978800, # 2024-11-30 16:00
+       text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 30.11.2024 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-F/24/125 (bis 30.11.2024)
+	2::inwork 54410,20569 54169,20358 53940,20148
 EOF
      },
     );

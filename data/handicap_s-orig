@@ -871,14 +871,15 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024)
 #: source_id: bvg2024:194#HIM_FREETEXT_228154 (bis 31.08.2024)
 #: source_id: bvg2024:240#HIM_FREETEXT_228155 (bis 31.08.2024)
+#: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (Gegenverkehrsregelung, bis 31.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028
 #: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fußverkehr)
 #: also_indoor: traffic (H,G,W)
 #: priority: #A
 #: last_checked: 2024-06-17
 #: next_check: 2024-06-22
-# REMOVED --- #: valid: -20240622
-#: valid: -20240831
+#: valid: -20240622
+# REMOVED --- #: valid: -20240831
 Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, Fußgängertunnel	q3::inwork 15856,10821 15793,10814
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-315-341-343.837/page-2#post-22878
@@ -1168,6 +1169,7 @@ Moltkestraßenbrücke: Fußgänger, verschwenkte Wegführung	q4::inwork 3839,4577 386
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
 #: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
+#: osm_watch: way id="156800019" version="6"
 #: last_checked: 2024-06-20
 #: check_frequency: 60d
 Diesterwegstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q3::inwork 12060,15141 11995,15012
