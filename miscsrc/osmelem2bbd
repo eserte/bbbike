@@ -25,8 +25,11 @@ use Strassen::Core;
 
 sub get_node ($);
 sub get_way  ($);
+sub get_relation ($);
+sub get_geom_for_feature ($$);
 
 my $api_root_url = 'https://api.openstreetmap.org/api/0.6';
+my $overpass_api_url = 'https://overpass-api.de/api/interpreter';
 
 sub usage () { die "usage: $0 [--full-features] osmURL ...\n" }
 
@@ -34,7 +37,6 @@ GetOptions(
     "full-feature|full-features!" => \my $do_full_features,
 )
     or usage;
-die "--full-features NYI" if $do_full_features;
 
 my @in_urls = @ARGV
     or usage;
@@ -43,9 +45,6 @@ my @elems;
 for my $in_url (@in_urls) {
     if ($in_url =~ m{(node|way|relation)/(\d+)}) {
 	my($type, $id) = ($1, $2);
-	if ($type !~ m{^(node|way)$}) {
-	    die "Sorry, no support yet for '$type'";
-	}
 	push @elems, [$type, $id];
     } else {
 	die "Cannot parse '$in_url'";
@@ -57,18 +56,31 @@ $s->set_global_directive(map => 'polar');
 $s->set_global_directive(encoding => 'utf-8');
 
 my $ua = LWP::UserAgent->new;
+
 for my $elem (@elems) {
     my($type, $id) = @$elem;
     if      ($type eq 'node') {
 	my $node = get_node $id;
 	$s->push([$node->{name}, [$node->{pos}], 'X']);
-    } elsif ($type eq 'way') {
-	my $way = get_way $id;
-	my $first_node_id = $way->{node_ids}->[0];
-	my $node = get_node $first_node_id;
-	$s->push([$way->{name}, [$node->{pos}], 'X']); # XXX it would be better to get all nodes' coordinates --- how to do this most efficiently?
     } else {
-	die "SHOULD NEVER HAPPEN: unhandled type $type";
+	my @coords = get_geom_for_feature($type, $id);
+	if ($type eq 'way') {
+	    my $way = get_way $id;
+	    if (!$do_full_features) {
+		$s->push([$way->{name}, [@coords[$#coords/2]], 'X']);
+	    } else {
+		$s->push([$way->{name}, [@coords], 'X']);
+	    }
+	} elsif ($type eq 'relation') {
+	    my $relation = get_relation $id;
+	    if (!$do_full_features) {
+		$s->push([$relation->{name}, [@coords[$#coords/2]], 'X']);
+	    } else {
+		$s->push([$relation->{name}, [@coords], 'X']);
+	    }
+	} else {
+	    die "SHOULD NEVER HAPPEN: unhandled type $type";
+	}
     }
 }
 
@@ -129,6 +141,53 @@ sub get_way ($) {
     } else {
 	die "Failed to fetch $api_url: " . $resp->as_string;
     }
+}
+
+# just return name, no coordinates
+sub get_relation ($) {
+    my $id = shift;
+    my $api_url = "$api_root_url/relation/$id";
+    my $resp = $ua->get($api_url);
+    if ($resp->is_success) {
+	my $data = $resp->decoded_content(charset => 'none');
+	my $dom = XML::LibXML->load_xml(string => $data);
+	my $root = $dom->documentElement;
+	my($elem) = $root->findnodes('/osm/*');
+	my $name = _get_name($elem);
+	return {
+		name => $name,
+	       };
+    } else {
+	die "Failed to fetch $api_url: " . $resp->as_string;
+    }
+}
+
+sub get_geom_for_feature ($$) {
+    my($type, $id) = @_;
+    $type =~ m{^(way|relation)$}
+	or die "Only way or relation allowed";
+    $id =~ m{^\d+$}
+	or die "id does not look like a number";
+    my $query = <<"EOF";
+[out:xml];
+$type($id);
+(._;>;);
+out geom;
+EOF
+    my $resp = $ua->post($overpass_api_url, { data => $query });
+    if (!$resp->is_success) {
+	die "ERROR: while fetching $overpass_api_url:\n" . $resp->dump(maxlength => 4) . "\n" . $resp->decoded_content;
+    }
+
+    my @coords;
+
+    my $root = XML::LibXML->new->parse_string($resp->decoded_content)->documentElement;
+    for my $node ($root->findnodes('/osm/node')) {
+	my($lat,$lon) = ($node->findvalue('./@lat'), $node->findvalue('./@lon'));
+	push @coords, "$lon,$lat";
+    }
+
+    @coords;
 }
 
 __END__
