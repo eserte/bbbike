@@ -191,3 +191,47 @@ EOF
 }
 
 __END__
+
+=head1 NAME
+
+osmelem2bbd - download OSM features and convert into bbd format
+
+=head1 SYNOPSIS
+
+    osmelem2bbd [--full-features] https://www.openstreetmap.org/node/1234 https://www.openstreetmap.org/way/5678 https://www.openstreetmap.org/relation/9012
+
+=head1 DESCRIPTION
+
+Download name and coordinates of the specified openstreetmap features
+(nodes, ways, or relations). Feature specification may be a full or
+partial URL, that is, both C<https://www.openstreetmap.org/node/1234>
+and C<node/1234> is recognized.
+
+By default, only the only (nodes) or middle (ways) or a random one
+(relations) coordinate is used. With option C<--full-features> the
+generated output contains all feature coordinates.
+
+=head2 BUGS
+
+With C<--full-features>, a centroid should probably be used instead of
+a random coordinate for relation features.
+
+With C<--full-features>, all coordinates are connected for relation
+features, even between unconnected child features.
+
+=head2 EXAMPLES
+
+Download some sights in Berlin, convert them to a GPX waypoints file,
+and upload to a GPS device:
+
+    (
+    TARGET_GPX=/tmp/berlin_sights.gpx
+    ./miscsrc/osmelem2bbd https://www.openstreetmap.org/way/518071791 https://www.openstreetmap.org/node/2418372191 https://www.openstreetmap.org/relation/2198410 | ./miscsrc/bbd2gpx - > $TARGET_GPX
+    ./miscsrc/gps-mount.pl --gpx-cp $TARGET_GPX
+    )
+
+=head1 SEE ALSO
+
+L<gps-mount.pl>.
+
+=cut
