@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2019,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,11 +28,16 @@ sub get_way  ($);
 
 my $api_root_url = 'https://api.openstreetmap.org/api/0.6';
 
-GetOptions
-    or die "usage: $0 osmURL ...\n";
+sub usage () { die "usage: $0 [--full-features] osmURL ...\n" }
+
+GetOptions(
+    "full-feature|full-features!" => \my $do_full_features,
+)
+    or usage;
+die "--full-features NYI" if $do_full_features;
 
 my @in_urls = @ARGV
-    or die "usage: $0 osmURL ...\n";
+    or usage;
 
 my @elems;
 for my $in_url (@in_urls) {
