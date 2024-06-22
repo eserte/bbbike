@@ -131,17 +131,18 @@ if (!$do_consistency_check) {
 	    my $count = 0;
 	    my $sum_percentage = 0;
 	    for my $i (0 .. $#categorized_mud_directives-1) {
-		my($this_current_bf10) = $categorized_mud_directives[$i+1] =~ /:\s+BF10=(\d+)/;
+		my($this_current_date, $this_current_bf10) = $categorized_mud_directives[$i+1] =~ /(\d{4}-\d{2}-\d{2}):\s+BF10=(\d+)/;
 		next if !defined $this_current_bf10;
 		my $best_mud_candidate = find_best_mud_candidate([@categorized_mud_directives[0..$i]], $f, $linenumber, $this_current_bf10);
 		if ($best_mud_candidate->{type} eq 'best') {
 		    my($current_h) = $categorized_mud_directives[$i+1] =~ /\th=(q\d[+-]?)/;
 		    my $prognosis_h = $best_mud_candidate->{h};
+		    my $past_bf10 = $best_mud_candidate->{bf10};
 		    my $current_h_number = q_string_to_number($current_h);
 		    my $prognosis_h_number = q_string_to_number($prognosis_h);
 		    my $delta = $prognosis_h_number-$current_h_number;
 		    my $percentage = (100 * (4+2/3-abs($delta))) / (4+2/3);
-		    print "$r->[Strassen::NAME]: $best_mud_candidate->{date}: BF10=$this_current_bf10: prognosis=$prognosis_h vs real=$current_h => " .
+		    print "$r->[Strassen::NAME]: $this_current_date: BF10=$this_current_bf10 (used for prognosis: $best_mud_candidate->{date} BF10=$past_bf10): prognosis=$prognosis_h vs real=$current_h => " .
 			($delta == 0 ? "!OK!" : "DELTA=".$delta) .
 			"\n";
 		    $count++;
@@ -202,7 +203,7 @@ sub find_best_mud_candidate {
 	return { type => 'today', text_de => "Ist-Zustand: $today_candidate->{desc}", date => $today, h => $today_candidate->{h} };
     } elsif (@mud_candidates) {
 	my($used_mud_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } @mud_candidates;
-	return { type => 'best', text_de => "Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})", date => $used_mud_candidate->{date}, h => $used_mud_candidate->{h} };
+	return { type => 'best', text_de => "Prognose: $used_mud_candidate->{desc} ($used_mud_candidate->{date}, BF10=$used_mud_candidate->{bf10})", date => $used_mud_candidate->{date}, h => $used_mud_candidate->{h}, bf10 => $used_mud_candidate->{bf10} };
     } elsif (@other_candidates) {
 	my($lower_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } grep { $_->{bf10} <= $used_current_bf10 } @other_candidates;
 	my($upper_candidate) = sort { $a->{delta} <=> $b->{delta} || $b->{date} cmp $a->{date} } grep { $_->{bf10} >  $used_current_bf10 } @other_candidates;
