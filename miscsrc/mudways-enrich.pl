@@ -70,7 +70,7 @@ sub trim { $_[0] =~ s/^\s+//r }
 my @station_nrs = $fix_station ? ($fix_station) : (sort keys %stations);
 
 for my $station_nr (@station_nrs) {
-    my $glob = "$soil_dwd_dir/*/*_${station_nr}.txt.gz";
+    my $glob = "$soil_dwd_dir/*/*_v2_${station_nr}.txt.gz";
     my @files = bsd_glob($glob); 
     if (!@files) {
 	die "No files found for station $station_nr (tried glob '$glob')\n";
@@ -83,7 +83,7 @@ for my $station_nr (@station_nrs) {
 	$csv->column_names(@cols);
 	while(my $row = $csv->getline_hr($fh)) {
 	    my $Datum = $row->{Datum} // die "No Datum?";
-	    my $bf10 = trim($row->{BF10} // die "No BF10?");
+	    my $bf10 = trim($row->{BFGL01_AG} // die "No BFGL01_AG?"); # note: in v1 BF10 was used; keep the variable name $bf10
 	    $station_to_date_to_bf10{$station_nr}{$Datum} = $bf10;
 	}
     }

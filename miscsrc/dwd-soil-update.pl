@@ -62,7 +62,7 @@ chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 FETCH_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     my $pid = $pm and $pm->start and next FETCH_LOOP;
     warn "INFO: update station $station ($stations{$station})...\n" unless $q;
-    my @cmd = ('wget', '--quiet', '-N', "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_$station.txt.gz");
+    my @cmd = ('wget', '--quiet', '-N', "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_v2_$station.txt.gz");
     system @cmd;
     if ($? != 0) { die "Command '@cmd' failed" }
     $pm and $pm->finish;
@@ -72,7 +72,7 @@ $pm and $pm->wait_all_children;
 chdir "$soil_dwd_dir/historical" or die "Can't chdir to $soil_dwd_dir/historical: $!";
 FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     print STDERR "INFO: check for historical data from station $station ($stations{$station})... " unless $q;
-    my $historical_file = "derived_germany_soil_daily_historical_${station}.txt.gz";
+    my $historical_file = "derived_germany_soil_daily_historical_v2_${station}.txt.gz";
     my $need_update;
     if (!-e $historical_file) {
 	print STDERR " historical file does not exist -> need update\n";
@@ -94,7 +94,7 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     }
     if ($need_update) {
 	my $pid = $pm and $pm->start and next FETCH_HISTORICAL_LOOP;
-	my @cmd = ('curl', '--silent', '-O', "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/historical/derived_germany_soil_daily_historical_${station}.txt.gz");
+	my @cmd = ('curl', '--silent', '-O', "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/historical/$historical_file");
 	system @cmd;
 	if ($? != 0) { die "Command '@cmd' failed" }
 	$pm and $pm->finish;
@@ -102,11 +102,16 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
 }
 $pm and $pm->wait_all_children;
 
+# Note:
+# - for v1 files the BF10 field (index 11) was printed
+# - for v2 files the BFGL01_AG field (index 12) is printed
+my $date_index = 1;
+my $bf_index = 12;
 chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 for my $station (sort {$a<=>$b} keys %stations) {
-    chomp(my $last_line = `gunzip -c derived_germany_soil_daily_recent_${station}.txt.gz | tail -1`);
+    chomp(my $last_line = `gunzip -c derived_germany_soil_daily_recent_v2_${station}.txt.gz | tail -1`);
     my @f = split /;/, $last_line;
-    printf "%-12s: %s %s\n", $stations{$station}||$station, $f[1], $f[11];
+    printf "%-12s: %s %s\n", $stations{$station}||$station, $f[$date_index], $f[$bf_index];
 }
 
 __END__
