@@ -22,18 +22,6 @@ use lib "$FindBin::RealBin/..";
 
 use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
 
-my $soil_dwd_dir;
-if (bbbike_aux_dir) {
-    $soil_dwd_dir = bbbike_aux_dir . "/data/soil_dwd";
-} else {
-    $soil_dwd_dir = bbbike_root . "/tmp/soil_dwd";
-    for my $subdir (qw(recent historical)) {
-	if (!-d "$soil_dwd_dir/$subdir") {
-	    warn "INFO: create $soil_dwd_dir/$subdir directory...";
-	    make_path "$soil_dwd_dir/$subdir";
-	}
-    }
-}
 # XXX make list of stations configurable?
 my %stations = qw(
     400 Buch
@@ -47,8 +35,24 @@ my %stations = qw(
 # but observations stopped at 20210502.
 
 my $q;
-GetOptions("q|quiet" => \$q)
-    or die "usage: $0 [-q]\n";
+my $soil_dwd_dir;
+GetOptions(
+    "q|quiet" => \$q,
+    "soil-dwd-dir=s" => \$soil_dwd_dir,
+)
+    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory]\n";
+
+if (bbbike_aux_dir) {
+    $soil_dwd_dir = bbbike_aux_dir . "/data/soil_dwd";
+} else {
+    $soil_dwd_dir = bbbike_root . "/tmp/soil_dwd";
+    for my $subdir (qw(recent historical)) {
+	if (!-d "$soil_dwd_dir/$subdir") {
+	    warn "INFO: create $soil_dwd_dir/$subdir directory...";
+	    make_path "$soil_dwd_dir/$subdir";
+	}
+    }
+}
 
 my $pm = do {
     if (eval { require Parallel::ForkManager; 1 }) {
