@@ -1307,7 +1307,7 @@ Askanischer Platz	1s 8889,10906 8938,10872 8983,10846 9022,10857
 Sophie-Taeuber-Arp-Weg	1s 3302,2476 3293,2218
 Johanna-Spyri-Weg	1s 3211,2221 3221,2479
 Seelbuschring	1s 8477,4615 8457,4707 8430,4723 8309,4700 8244,4649
-Walsroder Str.	1s 6395,5154 6295,5158 6202,5163 6094,5171
+Walsroder Str.	1s 6395,5154 6295,5158 6202,5163 6087,5171
 Hünensteig	1s 6419,5048 6387,5057
 Hünensteig	1s 6387,5057 6395,5154
 Paul-Lincke-Ufer	1s 12116,9825 11946,9913 11735,10022 11512,10105
@@ -2529,14 +2529,14 @@ Mittelstreifen	3nocross::ignrte 22883,13013 22924,12833 22967,12647
 Hellersdorfer Str. -> Bansiner Str.: Mittelstreifen	3::igndisp 22967,12647 22924,12833 22896,12827
 Bansiner Str. -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22896,12827 22924,12833 22883,13013
 Mittelstreifen	3nocross::ignrte 12564,4308 12637,4014 12655,3882
-Mittelstreifen	3nocross::ignrte 6048,4797 6006,4852 6034,4893 6055,4950
-Albrechtstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6048,4797 6006,4852 5920,4976
-Albrechtstr. -> Stadtpark Steglitz, Brückenstr.: Mittelstreifen	3::igndisp 6048,4797 6006,4852 6000,4846
-zur Albrechtstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5920,4976 6006,4852 6034,4893
-Stadtpark Steglitz, Brückenstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 6000,4846 6006,4852 6034,4893
-Stadtpark Steglitz, Brückenstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6000,4846 6006,4852 5920,4976
-Bismarckstr. -> Karl-Stieler-Str.: Mittelstreifen	3::igndisp 6055,4950 6034,4893 6097,4858
-Karl-Stieler-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 6097,4858 6034,4893 6006,4852
+Mittelstreifen	3nocross::ignrte 6048,4797 6003,4857 6029,4902 6048,4952
+Albrechtstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6048,4797 6003,4857 5926,4966
+Albrechtstr. -> Stadtpark Steglitz, Brückenstr.: Mittelstreifen	3::igndisp 6048,4797 6003,4857 5984,4851
+zur Albrechtstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5926,4966 6003,4857 6029,4902
+Stadtpark Steglitz, Brückenstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5984,4851 6003,4857 6029,4902
+Stadtpark Steglitz, Brückenstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 5984,4851 6003,4857 5926,4966
+Bismarckstr. -> Karl-Stieler-Str.: Mittelstreifen	3::igndisp 6048,4952 6029,4902 6097,4858
+Karl-Stieler-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 6097,4858 6029,4902 6003,4857
 Mittelstreifen, parkende Autos	3nocross::ignrte 4909,7436 4874,7382 4836,7327
 Südwestkorso -> Rheingaustr.: Mittelstreifen, parkende Autos	3::igndisp 4909,7436 4874,7382 4874,7326
 Rheingaustr. -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4874,7326 4874,7382 4836,7327
@@ -3462,7 +3462,6 @@ Matthäikirchplatz: Durchgang gesperrt	2::inwork 7933,11407 7970,11396 7934,11275
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,22604
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
-Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -45,15503 59,15518
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
@@ -4101,7 +4100,7 @@ Königsberger Str., linker Gehweg	1::igndisp 4236,2678 4170,2727
 Bornholmer Str., linker Gehweg	1::igndisp 10197,16528 10118,16561
 Platz der Vereinten Nationen, linker Gehweg	1::igndisp 11984,13081 11962,13089 11952,13095
 Reinickendorfer Str., linker Gehweg	1::igndisp 7966,15571 7962,15533 7975,15484
-Bismarckstr., linke Seite	1::igndisp 6055,4950 6027,4896 6000,4846
+Bismarckstr., linke Seite	1::igndisp 6048,4952 6017,4908 5984,4851
 Altentreptower Str., linker Gehweg	1::igndisp 21401,12155 21310,12150 21294,12167 21276,12241 21199,12258
 Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	1::igndisp 5524,21034 5599,21025

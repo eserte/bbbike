@@ -179,7 +179,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung) (3. Quartal 2024 - 3. Quartal 2024)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
 #: osm_watch: way id="102486250" version="23"
-#: last_checked: 2024-05-04
+#: last_checked: 2024-06-22
 #: check_frequency: 120d
 #: next_check: 2024-09-30
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
@@ -1122,7 +1122,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
 #: osm_watch: way id="717490209" version="23"
-#: last_checked: 2024-04-17
+#: last_checked: 2024-06-22
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2024-12-31
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
@@ -1794,7 +1794,7 @@ Werderstr.: unebenes Kleinsteinpflaster	Q2- 8968,5554 8981,5692
 Werderstr.: asphaltiert	Q0 8981,5692 8996,5823
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8930 (Antrag - Antwort: nach der Fertigstellung der Parkstraße)
 #: XXX eventuell wird in Zukunft eine vollständige Asphaltierung passieren, möglicherweise auch im nördlich angrenzenden Abschnitt der Blumenthalstr.
-#: last_checked: 2023-12-30
+#: last_checked: 2024-06-22
 #: check_frequency: 180d
 Werderstr.: Kopfsteinpflaster	Q2; 8996,5823 8996,5956
 Werderstr.: Asphalt	Q0; 8996,5956 8996,5823
@@ -2116,7 +2116,9 @@ Parforceweg: Waldweg	Q2+ -1852,8155 -2038,8304 -2161,8354 -2388,8437
 (Waldweg parallel zur Straßenbahn): Waldweg, Schotter, teilweise sandig	Q2- 30410,5450 30505,5474 32053,5870 32192,5915
 Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1- 33526,2771 33419,2765 33406,2738 33255,2762 33086,2790 33002,2826
 Schönhorster Str.: asphaltiert	Q0 29902,2379 29558,2261 29414,2373
-Südendstr.: Kopfsteinpflaster	Q2+ 5676,5488 5840,5456 5993,5422
+Südendstr.: glattes Pflaster	Q1- 5274,5557 5115,5551
+Südendstr.: Asphalt	Q0 5274,5557 5466,5523 5555,5508 5676,5488 5709,5482
+Südendstr.: glattes Pflaster	Q1- 5709,5482 5840,5456 5993,5422
 Am Teltowkanal: Parkweg mit schmalem Verbundsteinradweg	Q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095 8881,5143 9080,5225
 Am Teltowkanal: Verbundsteinpflaster	Q1 9080,5225 9171,5263 9196,5272
 Unterführung Emil-Schulz-Brücke: unbefestigt, Schotter	Q2 4274,2717 4272,2704 4247,2652 4209,2641
@@ -3348,7 +3350,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 #: osm_watch: way id="30893534" version="25"
 #: osm_watch: way id="1155399359" version="2"
-#: last_checked: 2023-12-30
+#: last_checked: 2024-06-22
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
@@ -6574,7 +6576,7 @@ Smyrnaer Weg: Asphalt	Q0 10248,3897 10348,3888
 Äneasstr.: Asphalt	Q0- 10178,4477 10257,4471 10270,4571
 Illzacher Weg: Beton	Q0- 9580,4201 9564,4305 9562,4412
 Monopolstr.: Kleinsteinpflaster	Q2+ 9494,4658 9485,4741 9507,4838 9482,5012 9478,5041 9458,5098 9439,5229
-Schwalbenweg: Kleinsteinpflaster	Q2+ 9382,4826 9507,4838
+Schwalbenweg: Kleinsteinpflaster	Q2+ 9382,4826 9427,4830 9507,4838
 Finkenweg (Mariendorf): Kleinsteinpflaster	Q2+ 9360,4996 9482,5012
 (Finkenweg - Mariendorfer Damm): Asphalt	Q0- 9360,4996 9239,4980
 (Zufahrt Kolonie Zur Windmühle): Asphalt mit Schäden	Q1 12430,2804 12351,2814 12237,2854
@@ -7764,7 +7766,7 @@ Mühlenstr.: Asphalt	Q0 6842,2995 6763,2879 6745,2848
 #: by: https://www.infravelo.de/projekt/muehlenstrasse-1/ (bis 2. Quartal 2022) ("abgeschlossen", tatsächlich fehlt dieses Teilstück in der Kartendarstellung)
 #: XXX Wird das Kopfsteinpflaster auch hier durch Asphalt ersetzt? Und bedeutet das, dass die Route durch den Gemeindepark nicht realisiert wird?
 #: osm_watch: way id="702312697" version="5"
-#: last_checked: 2024-03-26
+#: last_checked: 2024-06-22
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 Mühlenstr.: Kopfsteinpflaster	Q2+ 6745,2848 6665,2836
@@ -11150,7 +11152,6 @@ Am Tierpark [Wohngebiet]: Beton	Q1 18538,10189 18552,10220 18512,10337
 (Hultschiner Damm - Immortellenweg): Verbundsteinpflaster	Q1 24402,9987 24282,10015
 Wolframstr.: Asphalt	Q0 8433,5108 8288,4955
 Wolframstr.: einige schadhafte Stellen im Asphalt	Q0- 8288,4955 8198,4861
-Südendstr.: Kopfsteinpflaster	Q2+ 5274,5557 5115,5551
 (Brentanostr. - Breitenbachplatz): Gehwegplatten	Q0- 4058,6602 4034,6642
 Mainzer Str.: Kopfsteinpflaster	Q2 4874,8140 5050,8140 5177,8139 5304,8144
 Tübinger Str.: Kopfsteinpflaster	Q2 5501,8253 5454,8198 5363,8170
@@ -13622,6 +13623,8 @@ Lichtenberger Str. [Wohngebiet]: etwas rauer Asphalt, einige leichte Schäden	Q1+
 # 
 Krautstr.: Asphalt mit einigen Schäden	Q0- 11993,11978 11966,11832 11963,11813
 # 
+Birkbuschstr.: Asphalt mit einigen Rissen	Q0-; 5588,4210 5624,4112 5654,4033
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -14656,7 +14659,7 @@ Helmstedter Str.: Asphalt	Q0 5725,9041 5711,9357 5704,9557
 #: corrected_by: srt (Q2 -> Q3)
 Hubertusstr. (Waidmannslust): schlechtes Kopfsteinpflaster	Q3 4050,22428 4137,22301 4241,22168
 #: confirmed_by: srt
-Steinstr.: Asphalt	Q0 6089,5145 5927,5182 5778,5234
+Steinstr.: Asphalt	Q0 6083,5147 5927,5182 5778,5234
 #: confirmed_by: srt
 Carl-Scheele-Str.: Asphalt	Q0 19215,2906 19194,2888 19053,2890 18904,2865 18779,2773
 #: confirmed_by: srt
@@ -15078,11 +15081,11 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="13"
 #: osm_watch: way id="1159154133" version="2"
-#: last_checked: 2023-12-26
+#: last_checked: 2024-06-22
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
-Stadtpark Steglitz: Asphalt	Q0 5890,4674 5947,4791 6000,4846 6006,4852
+Stadtpark Steglitz: Asphalt	Q0 5890,4674 5947,4791 5984,4851 6003,4857
 #: corrected_by: srt (Parkweg -> ...)
 Barsekowstr.: Gehwegplatten	Q0- 5336,4676 5406,4631
 #: confirmed_by: srt
@@ -15593,7 +15596,7 @@ Immenweg: Asphalt	Q0 6744,4983 6529,5026
 Immenweg: Beton mit Schäden	Q1- 6529,5026 6419,5048
 #: corrected_by: srt (Asphalt, Q0 -> ...)
 Immenweg: Beton	Q0- 6419,5048 6385,4896
-Hünensteig: Verbundsteinpflaster	Q1 6419,5048 6387,5057 6395,5154 6405,5238 6108,5253
+Hünensteig: Verbundsteinpflaster	Q1 6419,5048 6387,5057 6395,5154 6405,5238 6100,5254
 #: by: ^^^
 # 
 #: by: Jan Voigt: vvv
@@ -16282,9 +16285,10 @@ Finkenstr. (Dahlem): Asphalt	Q0 2513,6581 2430,6564 2281,6469 2173,6424 2039,639
 Franz-Cornelsen-Weg: Asphalt	Q1 3594,7191 3596,7199 3612,7335
 Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3619,7587
 # REMOVED (hier ist nichts passiert) --- #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/auch-der-patschkauer-weg-steht-auf-der-liste-der-sanierungsbeduerftigen-strassen-hier-koennte-die-massnahme-in-diesem-jahr-beginnen_pic198143_a164600 --- #: XXX wird sich hier die Qualität verbessern? vvv --- #: osm_watch: way id="191538263" version="4" vvv --- #: also_indoor: traffic vvv --- #: last_checked: 2018-10-25 vvv --- #: next_check: 2019-01-03 vvv
-Patschkauer Weg: Kopfsteinpflaster	Q2 2992,5011 3132,4803
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
+Patschkauer Weg: unebenes Kleinsteinpflaster	Q2- 2992,5011 3132,4803 3214,4682
 #: confirmed_by: srt
-Patschkauer Weg: schlechtes Kopfsteinpflaster	Q3 3132,4803 3325,4517
+Patschkauer Weg: schlechtes Kopfsteinpflaster	Q3 3214,4682 3325,4517
 #: corrected_by: srt (kleines Stück ist asphaltiert)
 Patschkauer Weg: Asphalt	Q0 3325,4517 3344,4488
 Reichensteiner Weg: Kopfsteinpflaster	Q3 3095,4680 3243,4469
@@ -16452,8 +16456,8 @@ Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4307,3959 4234,4020
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4234,4020 4092,4217 4012,4325
 #: corrected_by: srt (Q3 -> Q2)
 Moltkestr.: Kopfsteinpflaster	Q2 4012,4325 3934,4441 3898,4490
-#: corrected_by: srt (Q3 -> Q2+)
-Moltkestr.: Kopfsteinpflaster	Q2+ 3898,4490 3867,4537
+#: historical_note: früher Kopfsteinpflaster, Q2+, nach dem Brückenneubau asphaltiert
+Moltkestr.: Asphalt	Q0 3898,4490 3867,4537
 #: corrected_by: srt (Q1 -> Q2)
 Zionskirchstr.: Kopfsteinpflaster	Q2 10090,14458 10277,14350
 #: confirmed_by: srt (added "einige Wurzelhebungen")
@@ -17059,7 +17063,7 @@ Lemkestr.: Asphalt	Q0 25109,12196 25072,12107
 #: by: ^^^
 # 
 #: by: Sabine Schwitzke:
-Stirnerstr.: guter Asphalt	Q0 5905,5088 6070,5044
+Stirnerstr.: guter Asphalt	Q0 5905,5088 6066,5045
 # 
 #: by: Tatze:
 Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2750,7444 2719,7415 2637,7344 2535,7257 2441,7176 2360,7107
@@ -18485,7 +18489,7 @@ Corneliusstr. (Lankwitz): schlechtes Kopfsteinpflaster	Q3+ 6040,3675 6225,3759 6
 Corneliusstr. (Lankwitz): gut asphaltiert	Q0 6291,3789 6378,3828
 #: confirmed_by: srt
 Kaulbachstr. (Lankwitz): gut asphaltiert	Q0 5478,3276 5692,3369 5848,3438 6098,3548 6281,3629 6435,3697
-#: confirmed_by: srt (südlicher Abschnitt)
+#: confirmed_by: srt
 Nicolaistr.: Kopfsteinpflaster	Q2 6171,3400 6139,3473 6098,3548
 #: corrected_by: srt (Kopfsteinpflaster -> ...) vvv
 #: note: teilweise noch brüchiger asphaltierter Radstreifen vorhanden, größtenteils zugeparkt
@@ -19166,7 +19170,8 @@ Treskowstr. (Niederschönhausen): unbefestigt	Q2 9372,20065 9360,20152 9359,20215
 #: by: ^^^
 # 
 #: by: Stephan Fleischer:
-Goethestr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 4526,2648 4568,2424 4620,2155 4660,2116
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
+Goethestr. (Lichterfelde): unebenes Kleinsteinpflaster	Q2 4526,2648 4568,2424 4620,2155 4660,2116
 # 
 #: by: sylvia1510:
 #: confirmed_by: srt
@@ -31065,7 +31070,7 @@ Groscurthstr.: Asphalt	Q0- 16369,25230 16458,25193 16428,25107
 #: by: anonymous [AM] vvv
 Dinnendahlstr.: Kopfsteinpflaster	Q2 9139,-1350 9282,-1442 9445,-1460
 #: corrected_by: srt (Q1 -> Q0)
-Karl-Stieler-Str.: Asphalt	Q0 6034,4893 6097,4858 6204,4835 6267,4825 6312,4806 6342,4783 6414,4723
+Karl-Stieler-Str.: Asphalt	Q0 6029,4902 6097,4858 6204,4835 6267,4825 6312,4806 6342,4783 6414,4723
 #: confirmed_by: srt
 Michael-Bohnen-Ring: Asphalt	Q0 15229,6602 15251,6635 15251,6745 15284,6783 15350,6781 15453,6784 15453,6434 15429,6403
 Otzenstr.: Asphalt	Q1 6410,7722 6429,7532 6352,7523
@@ -31290,9 +31295,12 @@ Brahmsstr.: Asphalt	Q0 4932,4152 4972,4055
 #: confirmed_by: srt
 Gertraudstr.: Kopfsteinpflaster	Q2 198,1689 181,1703 80,1998
 # 
-#: by: Elke Reinecke [AM]
+#: by: Elke Reinecke [AM] vvv
+#: corrected_by: srt (sehr guter Asphalt -> ...)
+Lerchenweg (Mariendorf): Beton	Q1+ 9405,4667 9382,4826
 #: corrected_by: srt (sehr guter Asphalt -> Kopfsteinpflaster)
-Lerchenweg (Mariendorf): Kopfsteinpflaster	Q2+ 9405,4667 9382,4826 9360,4996 9350,5060
+Lerchenweg (Mariendorf): Kopfsteinpflaster	Q2+ 9382,4826 9360,4996 9350,5060
+#: by ^^^
 # 
 #: by: Peter Scherbarth [AM] vvv
 #: corrected_by: srt (Q1 -> Q0)
@@ -32268,8 +32276,11 @@ Kreuzungsbereich asphaltiert	Q0 20583,3983
 Kreuzungsbereich asphaltiert	Q0 19221,9517
 Kreuzungsbereich asphaltiert	Q0 19128,9523
 Kreuzungsbereich mit Verbundsteinpflaster	Q1 4685,10689
+Einmündungsbereich asphaltiert	Q0 5993,5422
+Kreuzungsbereich glatt gepflastert	Q1- 5840,5456
+Einmündungsbereich asphaltiert	Q0 5466,5523
 Kreuzungsbereich asphaltiert	Q0 5274,5557
-Kreuzungsbereich asphaltiert	Q0 5115,5551
+Einmündungsbereich asphaltiert	Q0 5115,5551
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21846,7096
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21791,7126
 Kreuzungsbereich asphaltiert	Q0 12573,14581
@@ -33173,5 +33184,11 @@ Einmündungsbereich asphaltiert	Q0 5486,461
 Einmündungsbereich asphaltiert	Q0 5688,312
 Kreuzungsbereich asphaltiert	Q0 10259,-2660
 Kreuzungsbereich asphaltiert	Q0 12392,8724
+Kreuzungsbereich mit Kleinsteinpflaster	Q2 4568,2424
+Einmündungsbereich betoniert	Q1+ 9382,4826
+Kreuzungsbereich asphaltiert	Q0 5710,3751
+Einmündungsbereich asphaltiert	Q0 5791,3563
+Kreuzungsbereich asphaltiert	Q0 5848,3438
+Kreuzungsbereich asphaltiert	Q0 6098,3548
 #: ignore ^^^
 #: section ^^^

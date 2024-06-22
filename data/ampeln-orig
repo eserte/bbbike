@@ -30,7 +30,7 @@ Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 # 
 #: source_id: viz2021:13.353581,52.617702,28.05.2024,13:00 (bis 21.06.2024) (bis 19.07.2024)
-#: source_id: bvg2024:222#HIM_FREETEXT_224258
+#: source_id[inactive]: bvg2024:222#HIM_FREETEXT_224258
 #: next_check: 2024-07-19
 #: valid: -20240719
 Zabel-Krüger-Damm/Alt-Lübars: Gegenverkehrsregelung	X::inwork::alternating 6805,23554
@@ -1164,7 +1164,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: ausgeschaltet (gesehen 2017-02-18 gegen 0:00)
 	X -6805,1075
 	X -580,3912
-	X 6055,4950
+	X 6048,4952
 	X 4356,12009
 	X 4337,11721
 	X 3689,11637
@@ -2057,7 +2057,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 5482,4965
 #: note: Anforderungsampel
-	F 6115,5302
+	F 6104,5302
 	X 6123,5798
 	X 8318,4566
 	X 8511,4336
@@ -3778,7 +3778,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2024-05-17
+#: last_checked: 2024-06-22
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-15
 	X::inwork 8250,14672

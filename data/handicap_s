@@ -40,7 +40,6 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwork 12765,8435 12598,8390
-Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, Fußgängertunnel	q3::inwork 15856,10821 15793,10814
 Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 17249,14575 17392,14591
 Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,14451
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -65,6 +64,8 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9200,562 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9123,533 9160,460 9200,450
+Mozartstr./Calandrellistr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege	q2::inwork 5619,3958 5710,3751 5791,3563
+Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5549,3679 5710,3751 5954,3861
 (Wuhlewanderweg - Parchimer Str.): einige Fußgänger	q1 22031,12208 22080,12218
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
@@ -406,7 +407,7 @@ Helgoländer Ufer - Stromstr.: einige Fußgänger	q1 6271,12985 6289,13081
 Helgoländer Ufer - Stromstr.: einige Fußgänger	q1 6417,13052 6289,13081 6207,13093 6183,13083
 Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6122,12971 6118,12980
 Lehmbruckstr.: Bordsteine	q4 13678,10685 13690,10715
-(Stadtpark Steglitz): Fußgänger	q1 5787,4400 5836,4469 5841,4557 5890,4674 5947,4791 6000,4846 6006,4852
+(Stadtpark Steglitz): Fußgänger	q1 5787,4400 5836,4469 5841,4557 5890,4674 5947,4791 5984,4851 6003,4857
 Barsekowstr.: Fußgänger	q2 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 (Stadtpark Steglitz): Fußgänger	q2 5588,4629 5643,4626
 (Stadtpark Steglitz): Fußgänger, Bordstein	q3 5643,4626 5691,4636
@@ -2656,7 +2657,7 @@ Gritznerstr.: enge Straße	q0 4312,5889 4380,6049 4414,6134 4430,6165 4472,6242 4
 Im Jagen: Fußgänger, Hundeauslaufgebiet	q1 902,6642 909,6584 1057,6461 1375,6138
 Worpsweder Str.: eng mit ein- und ausparkenden Autos	q1 6182,4931 6202,5163
 Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5158 6276,4915
-Hünensteig: Fußgänger	q2 6395,5154 6405,5238 6108,5253
+Hünensteig: Fußgänger	q2 6395,5154 6405,5238 6100,5254
 (Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9404,6392 9389,6348 9381,6277 9374,6189
 (Götzstr. - Albrechtstr.): Fußgänger, Rampe	q4 9374,6189 9373,6179
 (Götzstr. - Albrechtstr.): Fußgänger	q2 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
@@ -3484,7 +3485,7 @@ Askanischer Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp;
 Sophie-Taeuber-Arp-Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 3302,2476 3293,2218
 Johanna-Spyri-Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 3211,2221 3221,2479
 Seelbuschring: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8477,4615 8457,4707 8430,4723 8309,4700 8244,4649
-Walsroder Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6395,5154 6295,5158 6202,5163 6094,5171
+Walsroder Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6395,5154 6295,5158 6202,5163 6087,5171
 Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 6419,5048 6387,5057
 Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6387,5057 6395,5154
 Paul-Lincke-Ufer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12116,9825 11946,9913 11735,10022 11512,10105
@@ -3556,7 +3557,7 @@ Königsberger Str., linker Gehweg	q3::igndisp; 4170,2727 4236,2678
 Bornholmer Str., linker Gehweg	q3::igndisp; 10118,16561 10197,16528
 Platz der Vereinten Nationen, linker Gehweg	q3::igndisp; 11952,13095 11962,13089 11984,13081
 Reinickendorfer Str., linker Gehweg	q3::igndisp; 7975,15484 7962,15533 7966,15571
-Bismarckstr., linke Seite	q0::igndisp; 6000,4846 6027,4896 6055,4950
+Bismarckstr., linke Seite	q0::igndisp; 5984,4851 6017,4908 6048,4952
 Altentreptower Str., linker Gehweg	q3::igndisp; 21199,12258 21276,12241 21294,12167 21310,12150 21401,12155
 Altentreptower Str., linker Gehweg	q2::igndisp; 21401,12155 21573,12140
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	q3::igndisp; 5599,21025 5524,21034
