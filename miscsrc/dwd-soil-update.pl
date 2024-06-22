@@ -15,8 +15,10 @@
 use strict;
 use warnings;
 use FindBin;
+use File::Basename qw(basename);
 use File::Path qw(make_path);
 use Getopt::Long;
+use LWP::UserAgent;
 
 use lib "$FindBin::RealBin/..";
 
@@ -62,13 +64,16 @@ my $pm = do {
     }
 };
 
+my $ua = LWP::UserAgent->new;
+
 chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 FETCH_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     my $pid = $pm and $pm->start and next FETCH_LOOP;
     warn "INFO: update station $station ($stations{$station})...\n" unless $q;
-    my @cmd = ('wget', '--quiet', '-N', "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_v2_$station.txt.gz");
-    system @cmd;
-    if ($? != 0) { die "Command '@cmd' failed" }
+    my $url = "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_v2_$station.txt.gz";
+    my $resp = $ua->mirror($url, basename($url));
+    $resp->code < 400
+	or die "Mirroring $url failed: " . $resp->dump;
     $pm and $pm->finish;
 }
 $pm and $pm->wait_all_children;
@@ -98,9 +103,10 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     }
     if ($need_update) {
 	my $pid = $pm and $pm->start and next FETCH_HISTORICAL_LOOP;
-	my @cmd = ('curl', '--silent', '-O', "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/historical/$historical_file");
-	system @cmd;
-	if ($? != 0) { die "Command '@cmd' failed" }
+	my $url = "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/historical/$historical_file";
+	my $resp = $ua->get($url, ':content_file' => basename($url));
+	$resp->is_success
+	    or die "Fetching $url failed: " . $resp->dump;
 	$pm and $pm->finish;
     }
 }
