@@ -137,7 +137,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2024-06-20 (daf)
+#: last_checked: 2024-06-23
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -5110,9 +5110,11 @@ Willstätterstr.: Asphalt	Q0 14187,6555 14306,6651
 (Rundkurs auf dem Flughafen Tempelhof): teils sehr guter Asphalt	Q0+ 11460,7802 11470,7744 11472,7732 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9474,7182
 (Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9474,7182 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof - südliche Landebahn): Asphalt/Beton	Q0 9545,7426 9592,7330 9712,7215
+(Rundkurs auf dem Flughafen Tempelhof, innerer Ring): Asphalt	Q0 11078,7009 11374,7224 11366,7307 11366,7326 11279,7768 11264,7882
+(innerer Ring - äußerer Ring): Asphalt	Q0 11374,7224 11407,7198
 (Südliche Landebahn - Eingang Oderstr.): Asphalt	Q0 11555,7314 11596,7280 11608,7267
-(Südliche Landebahn): Asphalt	Q0+ 9474,7182 9528,7205 9712,7215 10537,7257 11332,7305 11518,7314 11555,7314 11593,7314
-(Südliche Landebahn - Rundkurs): Asphalt	Q0 11332,7305 11438,7371 11460,7447
+(Südliche Landebahn): Asphalt	Q0+ 9474,7182 9528,7205 9712,7215 10537,7257 11332,7305 11366,7307 11518,7314 11555,7314 11593,7314
+(Südliche Landebahn - Rundkurs): Asphalt	Q0 11332,7305 11366,7326 11438,7371 11460,7447
 (Nördliche Landebahn): Beton	Q0 9362,7616 9522,7624 9653,7635
 (Nördliche Landebahn): Asphalt	Q0 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781
 (Herrfurthstr. - Rundkurs): unbefestigt	Q2+ 11439,7894 11355,7871
@@ -6728,10 +6730,10 @@ Scharfe Lanke: Asphalt	Q0 -4255,11600 -4246,11438 -4245,11400
 #: source_id: viz2021:13.172174,52.511623,16.08.2023,13:00 (Erdgasleitungssanierung, bis 29.02.2024) (bis 29.03.2024) (inaktiv)
 #: XXX geplanter Straßenausbau; evtl. wird dabei die Asphaltierung verbessert
 #: osm_watch: note 3653798 1
-#: last_checked: 2023-04-21
-#: check_frequency: 360d
+#: last_checked: 2024-03-08 (Luftbilder)
+#: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-12-31
-#: next_check: 2024-03-29
+# REMOVED --- #: next_check: 2024-03-29
 Weinmeisterhornweg: Asphalt mit Schäden	Q1- -5061,11305 -5188,11342 -5202,11347 -5292,11378 -5399,11426
 # 
 Stritteweg: Asphalt	Q0 -5202,11347 -5202,11342 -5224,11248 -5229,11230
@@ -24564,7 +24566,8 @@ Attendorner Weg: Beton	Q0 1932,18610 1975,18431 2022,18225 2031,18184
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Buschower Weg: Asphalt	Q0 -8022,13332 -8033,13204 -8040,13077
 #: corrected_by: srt (mäßiger Asphalt -> ...)
-Buschower Weg: schlechtes Kopfsteinpflaster	Q3 -8040,13077 -8056,12916
+#: corrected_by: Luftbilder (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht, etwa 2023-2024)
+Buschower Weg: Asphalt	Q0 -8040,13077 -8056,12916
 #: corrected_by: srt (mäßiger Asphalt -> Beton, Q1- -> unbefestigte Baustraße	Q2)
 #: corrected_by: osm (... -> ...)
 Buschower Weg: Asphalt	Q0 -8056,12916 -8074,12686 -8078,12647
@@ -28954,8 +28957,9 @@ Klingenhofer Steig: Asphalt	Q0 -3554,16849 -3564,17007 -3567,17137
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.837073.php (Beginn der Straßenbauarbeiten voraussichtlich im Juni 2021)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022)
 #: osm_watch: way id="27493508" version="20"
-#: last_checked: 2023-04-21
-#: check_frequency: 180d
+#: osm_watch: way id="1149416827" version="8"
+#: last_checked: 2024-03-08 (Luftbilder) (Bauarbeiten zu sehen)
+#: check_frequency: 90d
 Hauptstr. (Staaken): überasphaltiertes Kopfsteinpflaster, teilweise ist der Asphalt löchrig oder fehlt völlig	Q2 -7550,13528 -7847,13604 -7879,13613 -7884,13614
 #: confirmed_by: srt
 Gummiweg: fester Sandweg	Q1- -7879,13613 -7917,13505 -7971,13467
