@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.17;
+$VERSION = 2.18;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1609,6 +1609,10 @@ sub show_fis_broker_menu {
 	 -command => sub { showmap_fis_broker(mapId => 'gris_oeffgruen@senstadt', %args) },
 	);
     $link_menu->separator;
+    $link_menu->command
+	(-label => 'Orthophotos 2024',
+	 -command => sub { showmap_fis_broker(mapId => 'k_luftbild2024_true_rgbi@senstadt', %args) },
+	);
     $link_menu->command
 	(-label => 'Orthophotos 2023',
 	 -command => sub { showmap_fis_broker(mapId => 'k_luftbild2023_true_rgbi@senstadt', %args) },
