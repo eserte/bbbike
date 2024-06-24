@@ -3020,7 +3020,17 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: IM_019584 (alter Eintrag von 2013, inaktiv)
+#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen)
+	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633
+',
+         'from' => 1719205200,
+         'id' => 2417,
+         'text' => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Müggelseedamm und Mühlweg, Richtung Bölschestr. gesperrt, vom 25.06.2024 07:00 bis 26.08.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1724684400
+       },
        undef,
        undef,
        {
@@ -3873,11 +3883,17 @@ Schlossinsel	2::temp 22093,4499 22076,4422
 	q4 14719,9419 14774,9437 14809,9466
 	q4 14588,9473 14556,9581
 	q4 14531,9244 14485,9271 14398,9373
-	q4 14531,9244 14612,9190 14628,9158 14644,9130
-#: note: mittlerweile gibt\'s auch im südöstlichen Teil einige Verbotsschilder, aber nicht durchgängig; deshalb als "q4;" gekennzeichnet
-	q4; 15378,8668 15335,8714
-	q4; 14852,8799 14883,8823 14918,8813
-	q4; 14614,9052 14705,9034
+	q4 14531,9244 14612,9190 14628,9158 14644,9130 14705,9034
+#: note: im südwestlichen Teil des Parks wurden die letzten Radfahren-verboten-Zusatzschilder 2023/2024 montiert
+	q4 15378,8668 15335,8714 15298,8781 15235,8841 15223,8893 15159,8934
+	q4 15558,8820 15439,8839 15297,8921 15245,8916 15181,8967
+	q4 15245,8916 15223,8893
+	q4 14889,9381 15003,9337 15163,9200 15183,9186 15213,9166 15275,9140 15359,9131 15407,9151
+	q4 15183,9186 15214,9090 15190,9027
+	q4 14852,8799 14883,8823 14918,8813
+	q4 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
+	q4 14705,9034 14855,9046 14947,8993 14980,8940
+	q4 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
 ',
          'from' => undef,
          'id' => 2953,
@@ -4411,7 +4427,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: 2147345598 (inaktiv)
 # REMOVED (hier nicht) --- #: last_checked: 2020-05-01 (Radfahrer dürfen hier noch fahren) ---	q4::inwork 6009,5691 6007,5785
 # REMOVED (hier wohl nicht) ---	q4::inwork 5993,5422 6009,5691
-#: osm_watch: note 4060014 3
+#: osm_watch: note 4060014 5
 #: also_indoor: traffic (G)
 #: note: hier etwa 120m der Fahrbahn gesperrt (eigentlich q4+::inwork)
 #: add_fragezeichen: Sind die Bauarbeiten in der Lauenburger Str. beendet?
@@ -5637,7 +5653,17 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (früherer Eintrag) --- #: note: laut rbb --- #: note: anscheinend sind nur wenige Meter im Norden des Abschnitts betroffen, deshalb nun q3 (vorher q4)
+#: source_id: viz2021:13.31321,52.53005,24.06.2024,07:00 (bis 12.07.2024)
+	q4::inwork 4186,13710 4295,13234
+',
+         'from' => 1719118800,
+         'id' => 3607,
+         'text' => 'Goslarer Ufer: Sperrung zwischen Gaußstr. und Kaiserin-Augusta-Allee, evtl. sind auch Radfahrer betroffen, vom 24.06.2024 07:00 bis 12.07.2024 16:00',
+         'type' => 'handicap',
+         'until' => 1720792800
+       },
        undef,
        undef,
        undef,
@@ -5738,9 +5764,9 @@ Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id[inactive]: bvg2021:396#BVG307357_0
 #: source_id[inactive]: bvg2021:396#BVG323890_0
-#: source_id: bvg2021:396#BVG339330_0
+#: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024)
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="8"
+#: osm_watch: way id="1117348911" version="9"
 #: also_indoor: traffic (G,ex-B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
@@ -5748,14 +5774,14 @@ Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-06-17
-#: check_frequency: 60d
+#: last_checked: 2024-06-24
+#: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
 ',
          'from' => undef,
          'id' => 3630,
-         'text' => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024',
+         'text' => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024, vielleicht wird verlängert',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6271,12 +6297,12 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
          'data' => '#: next_check_id: HEBAMMENSTEIGBRUECKE-2021
 #: note: laut osm "Baustelle bis Ende 2023"
 #: osm_watch: way id="1153745378" version="3"
-#: last_checked: 2024-04-06 (mapillary)
+#: last_checked: 2024-06-23 (mapillary)
 	2::inwork 13078,21754 13031,21538 12980,21411
 ',
          'from' => 1678819239,
          'id' => 3747,
-         'text' => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt',
+         'text' => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt (Stand Ende Juni 2024)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7276,15 +7302,15 @@ Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
        },
        {
          'data' => '#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
-#: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024)
+#: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024) (inaktiv)
 #: note: explizite Umleitung für Radfahrer vor Ort
 	q4::inwork 3450,12722 3370,12725 3291,12721
 ',
          'from' => 1707087600,
          'id' => 4005,
-         'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 09.08.2024',
+         'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 02.08.2024',
          'type' => 'handicap',
-         'until' => 1723219200
+         'until' => 1722614400
        },
        undef,
        undef,
@@ -7762,7 +7788,7 @@ Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979
        undef,
        {
          'data' => '#: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
-#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024)
+#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
 #: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
 	q4::inwork; 11239,18832 11001,18528
@@ -8056,12 +8082,14 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.30616,52.52644,18.06.2024,07:00 (bis 30.09.2024)
+         'data' => '#: source_id: viz2021:13.30616,52.52644,18.06.2024,07:00 (bis 30.09.2024) (vorfristig inaktiv)
+#: also_indoor: traffic (H,G,B,T,W)
+#: next_check: 2024-05-24
 	q4::inwork; 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
 ',
          'from' => 1718600400,
          'id' => 4092,
-         'text' => 'Lise-Meitner-Str.: Bauarbeiten zwischen Mierendorffplatz und Olbersstr./ Gaußstr., Sperrung Richtung Norden, evtl. sind auch Radfahrer betroffen, vom 18.06.2024 07:00 bis 30.09.2024 23:59',
+         'text' => 'Lise-Meitner-Str.: Bauarbeiten zwischen Mierendorffplatz und Olbersstr./ Gaußstr., Sperrung Richtung Norden, evtl. sind auch Radfahrer betroffen, vom 18.06.2024 07:00 bis 30.09.2024 (möglicherweise sind die Bauarbeiten schon beendet?)',
          'type' => 'handicap',
          'until' => 1727733540
        },
@@ -8074,6 +8102,30 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
          'text' => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 30.11.2024 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1732978800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022) (mittlerweile: Baubeginn Juni 2024) (mittlerweile: "Voraussichtliche Bauzeit: Juni 2024 - Juni 2027")
+#: by: https://www.berliner-woche.de/mitte/c-bauen/krausenstrasse-soll-umgestaltet-werden_a317781
+#: by: https://mein.berlin.de/projekte/krausenstrasse-zwischen-friedrichstrasse-und-axel-/
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/in-der-krausenstrasse-fallen-ersatzlos-alle-parkplaetze-weg_a318782
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10849 (Antrag)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10854 (Frage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10884 (Antrag)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11864 (Anfrage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12227 (Anfrage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/8zzfJDFOpujRSzpRpuAKoOiyEE5LqVAeWvsxgUFr/NTHepxW/54-Anlagen/02/GA_1290_VI.pdf (Beginn Juni 2024 (Antwort vom Februar 2024))
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1459217.php (Bauarbeiten ab 26. Juni 2024 bis III. Quartal 2027, Sperrung auch für Radfahrer)
+#: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
+#: last_checked: 2024-06-20
+#: next_check: 2024-06-26
+	q4::inwork 10176,11593 10001,11577 9925,11568
+',
+         'from' => 1719266400,
+         'id' => 4094,
+         'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Süd), Sperrung der Fahrbahn, ab 26.6.2024',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

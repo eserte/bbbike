@@ -21878,12 +21878,14 @@ EOF
 #: next_check_id ^^^
 EOF
      },
-     { from  => 1361168940, # 2013-02-18 07:29
-       until => 1364227200, # 2013-03-25 17:00
-       text  => 'Fürstenwalder Damm (Köpenick) Richtung Bölschestr. zwischen Müggelseedamm und Mühlweg Baustelle, Fahrtrichtung gesperrt (bis Ende 03/13)',
+     { from  => 1719205200, # 1361168940, # 2013-02-18 07:29
+       until => 1724684400, # 1364227200, # 2013-03-25 17:00
+       #text  => 'Fürstenwalder Damm (Köpenick) Richtung Bölschestr. zwischen Müggelseedamm und Mühlweg Baustelle, Fahrtrichtung gesperrt (bis Ende 03/13)',
+       text  => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Müggelseedamm und Mühlweg, Richtung Bölschestr. gesperrt, vom 25.06.2024 07:00 bis 26.08.2024 17:00',
        type  => 'handicap',
-       source_id => 'IM_019584',
        data  => <<EOF,
+#: source_id: IM_019584 (alter Eintrag von 2013, inaktiv)
+#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen)
 	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633
 EOF
      },
@@ -28006,11 +28008,17 @@ EOF
 	q4 14719,9419 14774,9437 14809,9466
 	q4 14588,9473 14556,9581
 	q4 14531,9244 14485,9271 14398,9373
-	q4 14531,9244 14612,9190 14628,9158 14644,9130
-#: note: mittlerweile gibt's auch im südöstlichen Teil einige Verbotsschilder, aber nicht durchgängig; deshalb als "q4;" gekennzeichnet
-	q4; 15378,8668 15335,8714
-	q4; 14852,8799 14883,8823 14918,8813
-	q4; 14614,9052 14705,9034
+	q4 14531,9244 14612,9190 14628,9158 14644,9130 14705,9034
+#: note: im südwestlichen Teil des Parks wurden die letzten Radfahren-verboten-Zusatzschilder 2023/2024 montiert
+	q4 15378,8668 15335,8714 15298,8781 15235,8841 15223,8893 15159,8934
+	q4 15558,8820 15439,8839 15297,8921 15245,8916 15181,8967
+	q4 15245,8916 15223,8893
+	q4 14889,9381 15003,9337 15163,9200 15183,9186 15213,9166 15275,9140 15359,9131 15407,9151
+	q4 15183,9186 15214,9090 15190,9027
+	q4 14852,8799 14883,8823 14918,8813
+	q4 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
+	q4 14705,9034 14855,9046 14947,8993 14980,8940
+	q4 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
 EOF
      },
      { from  => 1526323594, # 2018-05-14 20:46
@@ -31271,7 +31279,7 @@ EOF
 #: source_id: 2147345598 (inaktiv)
 # REMOVED (hier nicht) --- #: last_checked: 2020-05-01 (Radfahrer dürfen hier noch fahren) ---	q4::inwork 6009,5691 6007,5785
 # REMOVED (hier wohl nicht) ---	q4::inwork 5993,5422 6009,5691
-#: osm_watch: note 4060014 3
+#: osm_watch: note 4060014 5
 #: also_indoor: traffic (G)
 #: note: hier etwa 120m der Fahrbahn gesperrt (eigentlich q4+::inwork)
 #: add_fragezeichen: Sind die Bauarbeiten in der Lauenburger Str. beendet?
@@ -36727,14 +36735,15 @@ EOF
 	q4::inwork 21742,115 21769,-30 21800,-109
 EOF
      },
-     { from  => 1661193050, # 2022-08-22 20:30
-       until => 1664475355, # 1664575200, # 2022-10-01 00:00
-       text  => 'Goslarer Ufer: Sperrung der Fahrbahn südlich der Gaußstr., evtl. sind auch Radfahrer betroffen, bis 30.09.2022',
+     { from  => 1719118800, # 2024-06-23 07:00, # 1661193050, # 2022-08-22 20:30
+       until => 1720792800, # 2024-07-12 16:00, # 1664475355, # 1664575200, # 2022-10-01 00:00
+       #text  => 'Goslarer Ufer: Sperrung der Fahrbahn südlich der Gaußstr., evtl. sind auch Radfahrer betroffen, bis 30.09.2022',
+       text  => 'Goslarer Ufer: Sperrung zwischen Gaußstr. und Kaiserin-Augusta-Allee, evtl. sind auch Radfahrer betroffen, vom 24.06.2024 07:00 bis 12.07.2024 16:00',
        type  => 'handicap',
        data  => <<EOF,
-#: note: laut rbb
-#: note: anscheinend sind nur wenige Meter im Norden des Abschnitts betroffen, deshalb nun q3 (vorher q4)
-	q3::inwork 4186,13710 4295,13234
+# REMOVED (früherer Eintrag) --- #: note: laut rbb --- #: note: anscheinend sind nur wenige Meter im Norden des Abschnitts betroffen, deshalb nun q3 (vorher q4)
+#: source_id: viz2021:13.31321,52.53005,24.06.2024,07:00 (bis 12.07.2024)
+	q4::inwork 4186,13710 4295,13234
 EOF
      },
      { from  => 1661032800, # 2022-08-21 00:00
@@ -37072,15 +37081,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2023-07-24 17:00:00"), # 1668255773, # offen --- undef, # XXX
-       text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024',
+       text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024, vielleicht wird verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id[inactive]: bvg2021:396#BVG307357_0
 #: source_id[inactive]: bvg2021:396#BVG323890_0
-#: source_id: bvg2021:396#BVG339330_0
+#: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024)
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="8"
+#: osm_watch: way id="1117348911" version="9"
 #: also_indoor: traffic (G,ex-B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
@@ -37088,8 +37097,8 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-06-17
-#: check_frequency: 60d
+#: last_checked: 2024-06-24
+#: check_frequency: 30d
 #: next_check: 2024-06-30
 	2::inwork 15777,10897 15820,10916 15870,10938
 EOF
@@ -38727,13 +38736,13 @@ EOF
      { from  => 1678819239, # 2023-03-14 19:40
        until => undef, # 1688162400, # 2023-07-01 00:00
        #text  => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt, voraussichtlich bis Ende 2023, vielleicht noch länger',
-       text  => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt',
+       text  => 'Pankeweg: im Bereich der zukünftigen Hebammensteigbrücke wegen Bauarbeiten gesperrt (Stand Ende Juni 2024)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HEBAMMENSTEIGBRUECKE-2021
 #: note: laut osm "Baustelle bis Ende 2023"
 #: osm_watch: way id="1153745378" version="3"
-#: last_checked: 2024-04-06 (mapillary)
+#: last_checked: 2024-06-23 (mapillary)
 	2::inwork 13078,21754 13031,21538 12980,21411
 EOF
      },
@@ -39469,7 +39478,7 @@ EOF
        text  => 'Littenstr.: Fahrbahn an der Stralauer Str. gesperrt, voraussichtlich bis 30.9.2023',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.414599,52.516503,02.11.2022,08:00 (bis 29.12.2023) (bis 29.03.2024) (bis 30.04.2024) (bis 28.06.2024)
+#: source_id: viz2021:13.414599,52.516503,02.11.2022,08:00 (bis 29.12.2023) (bis 29.03.2024) (bis 30.04.2024) (bis 28.06.2024) (bis 28.02.2025)
 #: note: vorzeitige Aufhebung der Sperrung
 # REMOVED --- #: last_checked: 2023-08-27 --- #: check_frequency: 30d --- #: next_check: 2023-09-30
 	q4::inwork 11139,12243 11155,12184
@@ -42187,12 +42196,12 @@ Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
 EOF
      },
      { from  => 1707087600, # 2024-02-05 00:00
-       until => $isodate2epoch->("2024-08-09 18:00:00"), # 1722635940, # 2024-08-02 23:59
-       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 09.08.2024',
+       until => $isodate2epoch->("2024-08-02 18:00:00"), # 1722635940, # 2024-08-02 23:59
+       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 02.08.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
-#: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024)
+#: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024) (inaktiv)
 #: note: explizite Umleitung für Radfahrer vor Ort
 	q4::inwork 3450,12722 3370,12725 3291,12721
 EOF
@@ -43063,7 +43072,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
-#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024)
+#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
 #: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
 	q4::inwork; 11239,18832 11001,18528
@@ -43427,10 +43436,12 @@ EOF
      },
      { from  => 1718600400, # 2024-06-17 07:00
        until => 1727733540, # 2024-09-30 23:59
-       text  => 'Lise-Meitner-Str.: Bauarbeiten zwischen Mierendorffplatz und Olbersstr./ Gaußstr., Sperrung Richtung Norden, evtl. sind auch Radfahrer betroffen, vom 18.06.2024 07:00 bis 30.09.2024 23:59',
+       text  => 'Lise-Meitner-Str.: Bauarbeiten zwischen Mierendorffplatz und Olbersstr./ Gaußstr., Sperrung Richtung Norden, evtl. sind auch Radfahrer betroffen, vom 18.06.2024 07:00 bis 30.09.2024 (möglicherweise sind die Bauarbeiten schon beendet?)',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.30616,52.52644,18.06.2024,07:00 (bis 30.09.2024)
+#: source_id: viz2021:13.30616,52.52644,18.06.2024,07:00 (bis 30.09.2024) (vorfristig inaktiv)
+#: also_indoor: traffic (H,G,B,T,W)
+#: next_check: 2024-05-24
 	q4::inwork; 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
 EOF
      },
@@ -43441,6 +43452,29 @@ EOF
        data  => <<EOF,
 #: source_id: LS/221-F/24/125 (bis 30.11.2024)
 	2::inwork 54410,20569 54169,20358 53940,20148
+EOF
+     },
+     { from  => 1719266400, # 2024-06-25 00:00
+       until => undef, # XXX
+       text  => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Süd), Sperrung der Fahrbahn, ab 26.6.2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022) (mittlerweile: Baubeginn Juni 2024) (mittlerweile: "Voraussichtliche Bauzeit: Juni 2024 - Juni 2027")
+#: by: https://www.berliner-woche.de/mitte/c-bauen/krausenstrasse-soll-umgestaltet-werden_a317781
+#: by: https://mein.berlin.de/projekte/krausenstrasse-zwischen-friedrichstrasse-und-axel-/
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/in-der-krausenstrasse-fallen-ersatzlos-alle-parkplaetze-weg_a318782
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10849 (Antrag)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10854 (Frage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10884 (Antrag)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11864 (Anfrage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12227 (Anfrage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/8zzfJDFOpujRSzpRpuAKoOiyEE5LqVAeWvsxgUFr/NTHepxW/54-Anlagen/02/GA_1290_VI.pdf (Beginn Juni 2024 (Antwort vom Februar 2024))
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1459217.php (Bauarbeiten ab 26. Juni 2024 bis III. Quartal 2027, Sperrung auch für Radfahrer)
+#: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
+#: last_checked: 2024-06-20
+#: next_check: 2024-06-26
+	q4::inwork 10176,11593 10001,11577 9925,11568
 EOF
      },
     );

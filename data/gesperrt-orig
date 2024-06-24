@@ -4059,7 +4059,7 @@ Clara-Müller-Jahnke-Str.: Straße noch nicht fertig	2::inwork 31800,3091 31810,30
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-06-17 vvv
+#: last_checked: 2024-06-24 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -4099,7 +4099,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,1582
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2024-06-17
+#: last_checked: 2024-06-24
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4138,7 +4138,7 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: XXX wird dieser Abschnitt in Zukunft befahrbar bleiben?
 #: XXX kann auch offen sein, evtl. nur während Arbeitszeiten gesperrt?
 #: osm_watch: way id="26190195" version="18"
-#: osm_watch: way id="1157662852" version="1"
+#: osm_watch: way id="1157662852" version="2"
 #: priority: #C
 #: last_checked: 2024-02-10
 #: check_frequency: 180d
@@ -4186,7 +4186,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-06-19
+#: last_checked: 2024-06-24
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4516,7 +4516,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv)
 #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv)
 #: XXX wird abgerissen und neu gebaut
-#: last_checked: 2024-04-06 (mapillary)
+#: last_checked: 2024-06-23 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-06-30
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734 13008,21783
@@ -4679,7 +4679,7 @@ Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2024-06-23 vvv
+#: last_checked: 2024-06-24 vvv
 #: next_check: 2028-01-01 vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -4691,7 +4691,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-06-23
+#: last_checked: 2024-06-24
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259

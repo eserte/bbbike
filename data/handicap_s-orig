@@ -53,19 +53,21 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # REMOVED (weggedreht) --- #: also_indoor: traffic (G,W) --- #: note: Wobei vermutlich nur das Radfahrer-frei-Schild fehlt oder verlorengegangen ist, denn das entsprechende Einbahnstraßen-Schild hat so etwas. --- #: last_checked: 2024-01-15 --- Weserstr.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14710,11626 14651,11666
 # 
-#: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?))
+#: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?)) (wurde mittlerweile umbenannt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11263 (Antrag: nach Ende des Bauvorhabens zu einem Rad/Fußweg umbauen)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ostkreuz-campus.1015/page-3#post-22544
 #: by: https://officehome.de/projekt/pandion-officehome-zinc
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=760470#post760470
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11534 (Einwohneranfrage)
+#: by: https://officehome.de/news/officehome-ostkreuz-campus-feiert-hoffest
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
 #: last_checked: 2024-06-22
-#: check_frequency: 90d
-#: next_check: 2024-07-01
+#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2024-07-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 # REMOVED (keine Einbahnstraßenregelung in der Scharnweberstr.; neue Einbahnstraßenregelung in der Kinzigstr., Radfahrer frei) --- #: also_indoor: traffic (B[unvollständig],H[unvollständig],G[unvollständig],W) --- #: last_checked: 2024-01-22 vvv --- #: check_frequency: 14d vvv --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975 --- # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -907,7 +909,7 @@ Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,144
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-06-19
+#: last_checked: 2024-06-24
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1019,14 +1021,14 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: source_id: viz2021:13.588897,52.538931,04.07.2023,07:00 (nur Kfz-Verkehr, bis 31.07.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 2
-#: last_checked: 2024-04-30 (mapillary) vvv
+#: last_checked: 2024-06-23 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-31 vvv
 #: osm_watch: way id="175916583" version="10"
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 #: osm_watch: way id="26692569" version="17"
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2+::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
-#: osm_watch: way id="26505949" version="25"
+#: osm_watch: way id="26505949" version="26"
 Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
 Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 #: next_check ^^^
@@ -1152,9 +1154,9 @@ Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 10
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-4#post-21871
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/moltkebruecke/
 #: XXX Neubau der Brücke, laut osm bis 2024
-#: osm_watch: way id="13860352" version="26"
+#: osm_watch: way id="13860352" version="27"
 # REMOVED --- #: osm_watch: way id="1056377427" version="3"
-#: osm_watch: way id="1032897295" version="9"
+#: osm_watch: way id="1032897295" version="10"
 #: osm_watch: way id="1056377426" version="6"
 #: also_indoor: traffic (G,re-H,B,W,T)
 #: priority: #A
