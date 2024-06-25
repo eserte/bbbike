@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2009,2012,2013,2016,2017,2018,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2016,2017,2018,2020,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -58,6 +58,7 @@ if ($retry_def) {
 
 my $ua = LWP::UserAgent->new;
 $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
+$ua->timeout(30);
 
 my @sites;
 if ($wanted_site_code) {
