@@ -151,8 +151,15 @@ Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
+#: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
+#: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
+#: last_checked: 2024-06-17 vvv
+#: next_check: 2026-12-31 vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
 Adlergestell (extra Radweg)	2 22096,1136 21837,1340 21812,1366 21506,1768 21388,1895
 Adlergestell (extra Radweg)	2 21998,1239 21937,1343 21878,1500 21862,1532
 # REMOVED (aufgeboben) Richterstr.	1s:q3 22092,999 22092,977 22100,941 22120,886
@@ -4070,10 +4077,10 @@ Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
 # REMOVED (nicht mehr) --- #: last_checked: 2023-08-21 --- #: check_frequency: 14d --- Ingrid-Reschke-Str.: wegen Bauarbeiten wieder gesperrt	2::inwork 15163,10758 15151,10699
 # 
 #: next_check_id: SONYCENTER-2023
-#: last_checked: 2024-06-16
-#: check_frequency: 90d
-#: next_check: 2024-07-01
-#: valid: -20240701
+#: last_checked: 2024-06-25
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2024-07-01
+# REMOVED --- #: valid: -20240701
 Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesperrt	2::inwork 8542,11502 8442,11555
 # 
 #: next_check_id: GOETEL-2023
@@ -4654,18 +4661,20 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9288 (Antrag)
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article242522652/Aufatmen-in-Lichtenrade-Bahnhofstrasse-bald-fuer-Verkehr-frei.html (Eröffnung am 28.06.2024)
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240608
-#: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024)
+#: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024) (bis 28.06.2024)
 #: XXX hier wird eine neue Unterführung gebaut vvv
 #: priority: #A vvv
 #: last_checked: 2024-05-29 (okas) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-06-28 vvv
+#: valid: -20240628 vvv
 #: osm_watch: way id="152434836" version="27"
 #: osm_watch: way id="30084962" version="36"
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
 Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 # REMOVED (gibt es nicht mehr) --- Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-2135 10296,-2156 10318,-2156
+#: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4756,7 +4765,7 @@ George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inw
 #: XXX evtl. wird die Qualität nach den Bauarbeiten besser sein (vielleicht keine Straßenbahnschienen mehr, neuer Asphalt?)
 #: osm_watch: note 3954448 3
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2024-05-29 (mapillary)
+#: last_checked: 2024-06-25
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2024-12-31
@@ -4879,20 +4888,20 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2024-06-20
+#: last_checked: 2024-06-25
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-06-16
+#: last_checked: 2024-06-25
 #: check_frequency: 60d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-06-20
+#: last_checked: 2024-06-25
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -5397,14 +5406,15 @@ Wikingerufer: neuer Uferweg ist noch nicht freigegeben	2:inwork 5354,12552 5366,
 #: by: https://www.bz-berlin.de/berlin/mitte/berlin-bekommt-seine-loewenbruecke-wieder (Bauarbeiten voraussichtlich ab Sommer 2023 + 15 Monate Bauzeit)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1361549.php (Fertigstellung Ende 2024)
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/loewenbruecke-wird-bis-ende-2024-wieder-aufgebaut_a394430
+#: by: https://www.deutsches-architekturforum.de/thread/6927-rund-um-die-siegess%C3%A4ule-gro%C3%9Fer-tiergarten/?postID=763239#post763239 (Fertigstellung Q1 2025)
 #: XXX: existiert nicht mehr, die Brücke wird aber wieder aufgebaut; einer der vier Löwen wurde entfernt
 #: also_indoor: search Löwenbrücke Tiergarten
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
 #: osm_watch: node id="245006076" version="6"
 #: osm_watch: node id="245006075" version="7"
-#: last_checked: 2022-06-26 (mapillary)
+#: last_checked: 2024-06-25 (daf)
 # REMOVED --- #: check_frequency: 720d
-#: next_check: 2024-12-31
+#: next_check: 2025-03-31
 Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
 # REMOVED (-> temp blockings) --- #: last_checked: 2013-10-22 --- #: check_frequency: 540d --- Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129

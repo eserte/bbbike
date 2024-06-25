@@ -202,10 +202,10 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2024-06-12
-#: check_frequency: 90d
-#: next_check: 2024-07-01
-#: valid: -20240701
+#: last_checked: 2024-06-25
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2024-07-01
+# REMOVED --- #: valid: -20240701
 Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # 
 # REMOVED --- #: next_check_id: ADELESCHREIBERKRIEGER-2014 --- #: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm --- #: source_id: viz2021:13.380011,52.520356,17.02.2023,12:00 (bis 31.03.2023) (inaktiv) --- #: source_id: viz2021:13.37994,52.52093,17.02.2023,12:00 (neuer Eintrag, bis 13.04.2023) (inaktiv) --- #: last_checked: 2023-04-18 --- #: check_frequency: 7d --- #: next_check: 2023-04-13 --- #: valid: -20230427 --- Gegenverkehrsregelung	X::inwork::alternating 8737,12757
@@ -827,6 +827,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 10776,13005
 #: note: Anforderungsampel
 	F 9054,12154
+#: note: Grüner Pfeil für Radfahrer (Oranienburger Str. -> Tucholskystr., W->N)
 	X 9611,13245
 	X 10270,13101
 	X 10341,13376
@@ -1311,7 +1312,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2024-06-16
+#: last_checked: 2024-06-25
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	F::inwork 8096,11393
@@ -3418,7 +3419,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-06-19 (mapillary) vvv
+#: last_checked: 2024-06-25 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

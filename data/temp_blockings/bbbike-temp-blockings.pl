@@ -32784,7 +32784,7 @@ EOF
 #: osm_watch: way id="362719487" version="11"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2024-06-16
+#: last_checked: 2024-06-25
 #: check_frequency: 120d
 	q4::inwork 6021,10405 6116,10688
 EOF
@@ -35029,7 +35029,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14423-neubau-firmenzentrale-der-berlin-hyp-mitte-in-bau/?postID=749004#post749004
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024)
-#: last_checked: 2024-04-29 (daf)
+#: last_checked: 2024-06-25
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -35947,12 +35947,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2022-07-01 07:00:00"), # 1655010000, # 2022-06-12 07:00
-       until => $isodate2epoch->("2024-07-31 17:00:00"), # 1656514800, # 2022-06-29 17:00
-       text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, bis 31.07.2024 17:00',
+       until => $isodate2epoch->("2024-08-31 17:00:00"), # 1656514800, # 2022-06-29 17:00
+       text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, bis 31.08.2024 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.38248,52.53138,13.06.2022,07:00',
        data  => <<EOF,
-#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr) (bis 31.07.2024)
+#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr) (bis 31.07.2024) (bis 31.08.2024)
 #: osm_watch: way id="364468604" version="14"
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 	q4::inwork; 9011,14019 8870,13926
@@ -37677,13 +37677,13 @@ EOF
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/barbarossadreieck-bau-geht-weiter_a412889
 #: by: https://www.deutsches-architekturforum.de/thread/15363-bv-sch%C3%B6neberger-eck-hochhaus-barbarossadreieck/?pageNo=1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_25_1539_1734_online.pdf (Grundstücksnummerierungen)
-#: note: Halteverbotsschilder bis 31.12.2023
+#: note: Halteverbotsschilder bis 31.12.2023, mittlerweile bis Juli 2024
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-05-28
+#: last_checked: 2024-06-25
 #: check_frequency: 150d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -41077,7 +41077,7 @@ EOF
 #: also_indoor: traffic (ex-G,ex-W)
 #: osm_watch: way id="977478749" version="1"
 #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
-#: last_checked: 2024-05-28
+#: last_checked: 2024-06-25
 #: next_check: 2024-07-31
 	q3::inwork 7103,11247 7171,11510
 EOF
@@ -41999,7 +41999,7 @@ EOF
 #: note: Halteverbotsschilder bis 31.01.2024, wurden trotz Baustelle nicht verlängert, mittlerweile bis 17.05.2024; wurde nicht verlängert, aber Einbahnstraße noch immer nicht offen für Radfahrer
 #: note: Ein traffic-Watcher lohnt nicht, weil hier für Autos immer eine Einbahnstraßenregelung gilt
 #: osm_watch: way id="150513369" version="16"
-#: last_checked: 2024-05-28
+#: last_checked: 2024-06-25
 # REMOVED --- #: next_check: 2024-05-17
 	q4::inwork; 6549,11015 6681,10959
 EOF
@@ -42181,13 +42181,13 @@ EOF
 EOF
      },
      { from  => 1681974000, # 2023-04-20 09:00
-       until => $isodate2epoch->("2024-08-05 17:00:00"), # 1709913600, # 2024-03-08 17:00
+       until => 1719346105, # $isodate2epoch->("2024-08-05 17:00:00"), # 1709913600, # 2024-03-08 17:00
        #text  => 'Am Waldfriedhof: Anbindung am Hüttenweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.04.2023 09:00 bis 27.03.2024 17:00',
        text  => 'Marshallstr.: Anbindung am Hüttenweg gesperrt, auch Radfahrer sind betroffen, bis 05.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.271402,52.453716,21.04.2023,09:00 (bis 08.03.2024) (bis 27.03.2024) (bis 27.05.2024) (bis 27.03.2024) (inaktiv)
-#: source_id: viz2021:13.270887,52.453816,27.03.2024,10:00 (bis 27.05.2024) (bis 05.08.2024)
+#: source_id: viz2021:13.270887,52.453816,27.03.2024,10:00 (bis 27.05.2024) (bis 05.08.2024) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772908920014614884
 #: by: https://pbs.twimg.com/media/GJnVMrXWsAAKIn1?format=jpg&name=large
 #: note: außerdem Gegenverkehrsregelung im Hüttenweg
@@ -42574,7 +42574,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
 #: by[nocache]: https://twitter.com/SaskiaEllenbeck/status/1780312309820235976 (zur Umgestaltung)
-#: last_checked: 2024-05-28 vvv
+#: last_checked: 2024-06-25 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
 #: next_check: 2024-06-28 vvv
@@ -42921,7 +42921,7 @@ Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-06-19
+#: last_checked: 2024-06-25
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-06-12
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
@@ -43471,10 +43471,65 @@ EOF
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12227 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/8zzfJDFOpujRSzpRpuAKoOiyEE5LqVAeWvsxgUFr/NTHepxW/54-Anlagen/02/GA_1290_VI.pdf (Beginn Juni 2024 (Antwort vom Februar 2024))
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1459217.php (Bauarbeiten ab 26. Juni 2024 bis III. Quartal 2027, Sperrung auch für Radfahrer)
+#: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: last_checked: 2024-06-20
 #: next_check: 2024-06-26
 	q4::inwork 10176,11593 10001,11577 9925,11568
+EOF
+     },
+     { from  => undef, #
+       until => 1719611999, #
+       text  => 'Oranienburger Str.: Gleisbauarbeiten, Fahrtrichtung gesperrt, kann auch für Radfahrer relevant sein, bis 28.06.2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1802568353367924911 (keine genaueren Infos)
+#: source_id: viz2021:13.396751,52.524035,17.06.2024,07:00 (bis 28.06.2024)
+#: last_checked: 2024-06-25
+	q4::inwork; 9938,13114 9786,13178
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2024-08-31 18:00:00"),
+       text  => 'Jannowitzbrücke/Brückenstr.: kurze Abschnitte Richtung Süden gesperrt, voraussichtlich bis Ende August 2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: bvg2024:n8#HIM_FREETEXT_229164 (bis 31.08.2024)
+#: also_indoor: traffic (H,B,T)
+#: last_checked: 2024-06-25 vvv
+#: check_frequency: 7d vvv
+	q4::inwork; 11347,12223 11343,12182
+	q3::inwork; 11325,12021 11291,11876
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => 1719291600, # 2024-06-25 07:00
+       until => 1725030000, # 2024-08-30 17:00
+       text  => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2024 07:00 bis 30.08.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.301956,52.432374,26.06.2024,07:00 (hier auch Radverkehr, bis 30.08.2024)
+Finckensteinallee (trotz Radweg?)	q4::inwork; 3456,2835 3641,2827 3738,2821
+Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
+EOF
+     },
+     { from  => 1719291600, # 2024-06-25 07:00
+       until => 1725116400, # 2024-08-31 17:00
+       text  => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024)
+	q4::inwork; 2625,2850 2737,2866 3019,2858
+EOF
+     },
+     { from  => 1719291600, # 2024-06-25 07:00
+       until => 1725116400, # 2024-08-31 17:00
+       text  => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024)
+	q4::inwork 2290,2864 2570,2844 2625,2850
 EOF
      },
     );

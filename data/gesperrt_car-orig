@@ -1755,7 +1755,7 @@ Kaulsdorfer Str. - Mahlsdorfer Str. (BVG frei)	3 22325,6385 22534,6249 22645,643
 #: source_id: viz2021:13.410565,52.516096,15.01.2023,18:00 (bis 30.08.2024)
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
 #: note: mittlerweile ist die Fahrbahn und die Markierungen größtenteils schon fertig
-#: last_checked: 2024-06-20 vvv
+#: last_checked: 2024-06-25 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-08-30 vvv
 Stralauer Str.: Einbahnstraße wegen Bauarbeiten	1::inwork 10830,12279 10772,12288 10697,12303
@@ -1904,25 +1904,7 @@ Müncheberger Str. (Strausberg)	1 42708,19887 42942,19864 43018,19841
 Föhrer Str.: Überfahrt für Kfz nicht erlaubt	3nocross 6528,15000 6504,14969 6445,14893
 # 
 # REMOVED (laut osm wurden die Poller mittlerweile wieder entfernt) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1356563.php --- #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/nesselweg-mit-pollern-abgesperrt_a390452 --- #: by: https://www.rbb24.de/politik/beitrag/2024/01/berlin-eilantrag-gegen-kiezblocks-poller-pankow-verkehr.html --- #: by: https://berliner-abendblatt.de/berlin-news/gericht-verkehrsberuhigung-nur-bei-erhoehter-gefahr-id241201 --- #: by: https://www.stadtrand-nachrichten.de/pankower-kiezblock-steglitz-zehlendorf/ --- # REMOVED --- #: osm_watch: node id="11141489273" version="2" --- #: osm_watch: note 3846442 2 --- #: osm_watch: note 4051988 2 --- #: XXX Werden die Poller nun abgebaut? --- #: last_checked: 2024-01-20 (mapillary) --- # REMOVED --- #: osm_watch: way id="145671825" version="12" --- #: osm_watch: way id="33870322" version="19" --- #: priority: #D --- #: last_checked: 2023-08-17 (mapillary) --- #: next_check: 2023-08-21 --- Nesselweg: Poller, Durchfahrt für Kfz nicht möglich	2 8587,21218 8605,21248
-# 
-#: next_check_id: RANKE-2023
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/senat-und-bezirksamt-erarbeiten-verkehrskonzept_a359765
-#: source_id: viz2021:13.33567,52.50437,27.02.2024,15:29 (Bauarbeiten in der Tauenzienstraße, bis 31.05.2024) (inaktiv)
-#: source_id: bvg2021:m19#BVG320914_0 (hat die Verlegung der Haltestelle was mit diesem Vorhaben zu tun?)
-#: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_222548
-#: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_226011
-#: source_id: viz2021:13.335684,52.504406,18.10.2023,09:50 (Anbindung Rankestr. gesperrt, bis 31.01.2024) (inaktiv) (bis 31.05.2024) (bis 16.06.2024) (bis 29.07.2024)
-#: osm_watch[closed]: note 3910207 3
-#: osm_watch: way id="4491984" version="27"
-#: osm_watch: way id="1139162576" version="5"
-#: also_indoor: traffic (G,B)
-#: note: vermutlich seit Mai 2023 provisorisch gesperrt
-#: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt
-#: last_checked: 2024-05-31
-# REMOVED --- #: check_frequency: 60d
-# REMOVED --- #: next_check: 2024-07-29
-#: next_check: 2024-06-13
-Rankestr.: Mittelstreifen provisorisch gesperrt	3nocross 5725,10892 5782,10884 5907,10821
+# REMOVED --- #: next_check_id: RANKE-2023 --- #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/senat-und-bezirksamt-erarbeiten-verkehrskonzept_a359765 --- #: source_id: viz2021:13.33567,52.50437,27.02.2024,15:29 (Bauarbeiten in der Tauenzienstraße, bis 31.05.2024) (inaktiv) --- #: source_id: bvg2021:m19#BVG320914_0 (hat die Verlegung der Haltestelle was mit diesem Vorhaben zu tun?) --- #: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_222548 --- #: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_226011 --- #: source_id: viz2021:13.335684,52.504406,18.10.2023,09:50 (Anbindung Rankestr. gesperrt, bis 31.01.2024) (inaktiv) (bis 31.05.2024) (bis 16.06.2024) (bis 29.07.2024) --- #: osm_watch[closed]: note 3910207 3 --- #: osm_watch: way id="4491984" version="27" --- #: osm_watch: way id="1139162576" version="5" --- #: also_indoor: traffic (G,B) --- #: note: vermutlich seit Mai 2023 provisorisch gesperrt --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Mittelstreifen provisorisch gesperrt	3nocross 5725,10892 5782,10884 5907,10821
 # 
 Stavangerstr.: Einfahrt verboten	1 10886,16893 10883,16824
 # 
