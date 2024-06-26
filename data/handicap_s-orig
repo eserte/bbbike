@@ -64,7 +64,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-06-22
+#: last_checked: 2024-06-26
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -214,7 +214,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: next_check_id: ELSENBRUECKE-2018
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"
-#: osm_watch: way id="1008972168" version="7"
+#: osm_watch: way id="1008972168" version="9"
 #: last_checked: 2024-06-14
 #: check_frequency: 90d
 #: next_check: 2027-12-31
@@ -595,7 +595,7 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 1
 #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024)
 #: also_indoor: traffic (H,W)
-#: last_checked: 2024-06-09
+#: last_checked: 2024-06-26 (krickstadt)
 #: next_check: 2024-07-06
 #: valid: -20240706
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
@@ -4240,7 +4240,7 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 #: next_check_id: VIRCHOW-2023
 #: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+
 #: XXX hat möglicherweise was mit den Leitungsarbeiten am Nordufer zu tun
-#: osm_watch: way id="1168244288" version="1"
+#: osm_watch: way id="1168244288" version="2"
 #: osm_watch: way id="1239079511" version="1"
 #: last_checked: 2024-03-18
 #: check_frequency: 90d
@@ -4249,7 +4249,7 @@ Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,1496
 #: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+
 #: XXX laut osm Sperrung bis 2028
 #: osm_watch: way id="1238623806" version="1"
-#: osm_watch: way id="1168244288" version="1"
+#: osm_watch: way id="1168244288" version="2"
 #: last_checked: 2024-03-18
 #: check_frequency: 360d
 #: next_check: 2028-12-31
@@ -4452,7 +4452,7 @@ Voigtstr.: einige Fußgänger	q4+ 14836,12826 14835,12801
 (Gorgasring - Nonnendammallee): gemeinsamer Geh- und Radweg, nicht besonders breit	q2 -695,14819 -676,14773 -679,14743 -941,14637
 (Uferweg an der Stockholmer Str.): Fußgänger	q2 8982,17299 8957,17217 8870,17073
 Heubudenbrücke: Fußgänger	q2 9017,17290 8982,17299 8973,17301
-(Rudower Höhe): Fußgänger, geschützte Grünanlage	q4 18245,1699 18300,1612
+(Rudower Höhe): Fußgänger, geschützte Grünanlage	q4 18245,1699 18300,1612 18347,1557 18405,1453 18450,1417 18491,1413
 (Stanzer Zeile - Mauerweg): schmal	q3 6175,372 6204,331
 Lange Str. (Friedrichshain): mehrere Bodenschwellen	q3 12002,12008 12212,11963
 Caligariplatz: Fußgänger, ggfs. schieben	q3 12121,16317 12097,16263

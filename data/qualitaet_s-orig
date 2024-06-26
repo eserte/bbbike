@@ -301,7 +301,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-06-09
+#: last_checked: 2024-06-26
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1406,7 +1406,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2024-06-19 vvv
+#: last_checked: 2024-06-26 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="8"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -3677,6 +3677,7 @@ Sputendorfer Str.: Beton	Q0 -546,1516 -545,1611
 Gerhardsdorfer Str.: Beton	Q0 -464,1522 -468,1614
 Paplitzer Str.: Kopfsteinpflaster	Q2 10722,-3191 10735,-3142
 (Paplitzer Str. - Mauerweg): unbefestigter enger Weg, kurze Steigung	Q3+ 10722,-3191 10687,-3270
+(Mauerweg Unterführung Dresdener Bahn): Asphalt	Q0 10467,-3201 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
 (Mauerweg Lichtenrade): Asphalt	Q0 10687,-3270 11157,-3295 11522,-3319 11570,-3356 11647,-3360 11704,-3336 11742,-3336
 (Mauerweg - Gerlinger Str.): wassergebundene Decke	Q1 11928,588 12016,781 11997,874
 Mauerweg: wassergebundene Decke	Q1 11802,554 11928,588 11956,599
@@ -5730,7 +5731,7 @@ Am Kiesberg: Beton	Q1 18919,1888 18839,1715 18750,1522
 (Wegedornstr. - Mauerweg): Feinschotter	Q1 18807,1758 18699,1541 18673,1487
 (Hornkleepfad - Mauerweg): Feinschotter	Q1 18750,1522 18699,1541 18659,1551
 (Mauerweg - Künnekeweg): Feinschotter	Q1 18673,1487 18627,1396
-(Künnekeweg - Dankmarsteig): Asphalt, Wurzeln	Q1 18432,1352 18556,1394 18627,1396 18649,1378 18688,1260
+(Künnekeweg - Dankmarsteig): Asphalt, Wurzeln	Q1- 18432,1352 18556,1394 18627,1396 18649,1378 18688,1260
 (Künnekeweg - Dankmarsteig): Asphalt	Q0 18688,1260 18628,1078 18727,1040 18737,1033
 (Schönbergweg - Dankmarsteig): wassergebundene Decke	Q1 18566,866 18557,891 18574,954 18592,1018 18628,1078
 (Künnekeweg - Mauerweg): Kleinsteinpflaster	Q1- 18688,1260 18720,1247
@@ -5890,7 +5891,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1266800.php
 #: XXX bleibt es hier beim Asphalt?
 #: priority: #C
-#: last_checked: 2024-03-25
+#: last_checked: 2024-06-26
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
@@ -6009,7 +6010,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 #: XXX heißt dieser Abschnitt auch "Höhensteig"?
 # REMOVED (dieser Stummel ist bereits asphaltiert) --- #: osm_watch: way id="226981995" version="4"
 #: osm_watch: way id="226982293" version="4"
-#: last_checked: 2024-02-10
+#: last_checked: 2024-06-26
 #: check_frequency: 360d
 Mohnblütenweg: unbefestigte Straße	Q2 21712,215 21688,312
 Zur Gartenstadt: Asphalt	Q0 21712,215 21742,115 21769,-30 21800,-109
@@ -11770,9 +11771,10 @@ Obrikatstr. (Niederschöneweide): Asphalt	Q0 17681,6212 17847,6089
 (Verlängerter Sandbacher Weg): Asphalt/Beton	Q0 23657,-1020 23786,-1108 23811,-1126 23903,-1187
 (Verlängerter Sandbacher Weg): Waldweg	Q2 23903,-1187 23955,-1223 24056,-1295
 (Brücke über die Görlitzer Bahn): Asphalt/Beton	Q0 23955,-1223 23980,-1220 24001,-1225 24053,-1241 24121,-1219 24154,-1219 24188,-1248 24216,-1273 24224,-1271
-(Alter Radelander Weg/Brücke - Adlergestell): Waldweg	Q2 24158,-1153 24485,-667
+#: note: das Gras zwischen den Spuren kann sehr hoch stehen, gesehen 2024-06-26
+(Alter Radelander Weg/Brücke - Adlergestell): zweispuriger Waldweg	Q2+ 24158,-1153 24485,-667
 # REMOVED --- #: last_checked: 2021-09-09 --- #: check_frequency: 150d --- #: add_fragezeichen: wird sich die Qualität hier bessern (insbesondere: was passiert mit dem losen Schotter)?
-(Adlergestell - Sportpromenade/Bammelecke): Waldweg	Q2+ 24485,-667 24758,-268 25172,345
+(Adlergestell - Sportpromenade/Bammelecke): Waldweg, Feinschotter, an einigen Stellen etwas lose	Q2+ 24485,-667 24758,-268 25172,345
 (Sportpromenade - Bammelecke): Waldweg	Q2+ 25172,345 25287,434 25473,449
 (Sportpromenade - Bammelecke): Waldweg, teilweise sehr sandig	Q3+ 25537,167 25552,177 25564,340
 (Sportpromenade - Bammelecke): Waldweg	Q2+ 25564,340 25513,385 25473,449
@@ -13070,7 +13072,7 @@ Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
 Heubudenbrücke: Holzbohlen	Q1- 9017,17290 8982,17299
 zur Heubudenbrücke: wassergebundene Decke	Q1 8982,17299 8973,17301
 (Uferweg an der Stockholmer Str.): wassergebundene Decke	Q1 8982,17299 8957,17217 8870,17073
-(Rudower Höhe): Verbundsteinpflaster	Q1 18245,1699 18300,1612
+(Rudower Höhe): Verbundsteinpflaster	Q1 18245,1699 18300,1612 18347,1557 18405,1453 18450,1417 18491,1413
 (Stanzer Zeile - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	Q2 6175,372 6204,331
 zum Mauerweg: Asphalt	Q0 11671,-3400 11600,-3382
 zum Mauerweg: Waldweg	Q1- 11600,-3382 11570,-3356

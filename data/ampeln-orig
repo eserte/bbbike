@@ -14,7 +14,7 @@
 Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # 
 #: next_check_id: SCHOENEWEIDE-2018
-#: last_checked: 2024-06-09
+#: last_checked: 2024-06-26
 #: next_check: 2024-08-15
 Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17736,5441
 # 
@@ -60,7 +60,7 @@ Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
 Rudower Str.: Gegenverkehrsregelung östlich der Dorothea-Viehmann-Str.	X::inwork::alternating 19266,1968
 # 
 #: source_id: viz2021:13.490616,52.463117,15.04.2024,07:30 (bis 12.07.2024)
-#: last_checked: 2024-06-08
+#: last_checked: 2024-06-26
 #: next_check: 2024-07-12
 #: valid: -20240712
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16425,6445
@@ -254,14 +254,14 @@ Gürtelstr.	F::inwork 15153,11691
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2024-06-08
+#: last_checked: 2024-06-26
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2024-06-08
+#: last_checked: 2024-06-26
 #: next_check: 2024-06-30
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
@@ -286,7 +286,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2024-06-05 (okas) vvv
+#: last_checked: 2024-06-26 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-09-27 vvv
 #: valid: -20240927 vvv
@@ -2730,7 +2730,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50)
-#: last_checked: 2024-06-23
+#: last_checked: 2024-06-26
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

@@ -18285,13 +18285,13 @@ EOF
 	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => $isodate2epoch->("2023-07-21 00:00:00"), # 1658440800, # 2022-07-22 00:00
-       until => $isodate2epoch->("2023-07-22 23:59:59"), # 1658613599, # 2022-07-23 23:59
+     { from  => $isodate2epoch->("2024-07-26 00:00:00"), # 1658440800, # 2022-07-22 00:00
+       until => $isodate2epoch->("2024-07-27 23:59:59"), # 1658613599, # 2022-07-23 23:59
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 6, start => "2020-07-30T00:00:00"]], # Absage 2020
-       recurrence_prewarn_days => -7,
+       #recurrence_prewarn_days => -7,
        source_id => 'https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html',
-       text  => 'CSD am 22.7.2023',
+       text  => 'CSD am 27. Juli 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://csd-berlin.de/event-info-en/
@@ -18301,8 +18301,12 @@ EOF
 #: by: https://csd-berlin.de/demo-route-finale-2022/
 #: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
 #: by: https://csd-berlin.de/csd-berlin-2023/route-finale
+#: by: https://csd-berlin.de/route-finale
 #: source_id: viz2021:13.3899,52.51036,21.07.2023,19:32 (bis 22.07.2023) (inaktiv)
-	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6826,11479 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
+	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396
+	2::temp 7033,10396 6937,10407 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6685,10690 6740,10755 6824,10904
+# Route via Karl-Heinrich-Ulrichs-Str.	2::temp 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904
+Route via An der Urania	2::temp 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6826,11479 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
 	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8546,12279 8570,12302
 	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165
 	3 8573,11404 8542,11502 8548,11571
@@ -18337,7 +18341,6 @@ EOF
 	3 9155,11283 9058,11564 9000,11727
 	3 7963,10716 7820,10768 7534,10850
 	3 7534,10850 7820,10768 7963,10716
-	3 6681,10959 6824,10904 6740,10755
 	3 8102,11099 8000,11137 7828,11133
 	3 6540,11754 6778,11742 6980,11790
 	3 8592,11541 8596,11508 8599,11474
@@ -18346,7 +18349,16 @@ EOF
 	3 8442,11555 8542,11502 8573,11404
 	3 7033,10328 7033,10396 6937,10407
 	3 7033,10328 7033,10396 7227,10489
-	3 7110,10613 6972,10665 6818,10725
+# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 7110,10613 6972,10665 6818,10725
+# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 6818,10725 6972,10665 7110,10613
+An der Urania/Kurfürstenstr.	3 6607,10801 6740,10755 6818,10725
+An der Urania/Kurfürstenstr.	3 6818,10725 6740,10755 6607,10801
+Eisenacher Str./Courbièrestr.	3 6719,10347 6753,10446 6743,10615
+Eisenacher Str./Courbièrestr.	3 6743,10615 6753,10446 6719,10347
+# Wichmannstr./Schillstr.	3 6681,10959 6824,10904 6740,10755
+# Wichmannstr./Schillstr.	3 6740,10755 6824,10904 6681,10959
+Wichmannstr./Lützowplatz	3 6681,10959 6824,10904 6918,10858
+Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
 	3 7429,10366 7413,10244 7384,10127
 	3 7429,12070 7383,12095 7031,12320
 	3 7384,10127 7413,10244 7429,10366
@@ -18361,11 +18373,9 @@ EOF
 	3 7823,12120 7816,12150 7822,12201
 	3 7828,11133 8000,11137 8102,11099
 	3 9559,11715 9569,11631 9581,11523
-	3 6740,10755 6824,10904 6681,10959
 	3 7526,9969 7579,10183 7698,10147
 	3 8522,12187 8538,12245 8522,12239
 	3 6692,11365 6851,11346 7103,11247
-	3 6818,10725 6972,10665 7110,10613
 	3 9234,11683 9268,11590 9331,11497
 	3 7209,10205 7238,10299 7275,10418
 	3 7275,10418 7238,10299 7209,10205
@@ -21881,12 +21891,15 @@ EOF
      { from  => 1719205200, # 1361168940, # 2013-02-18 07:29
        until => 1724684400, # 1364227200, # 2013-03-25 17:00
        #text  => 'Fürstenwalder Damm (Köpenick) Richtung Bölschestr. zwischen Müggelseedamm und Mühlweg Baustelle, Fahrtrichtung gesperrt (bis Ende 03/13)',
-       text  => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Müggelseedamm und Mühlweg, Richtung Bölschestr. gesperrt, vom 25.06.2024 07:00 bis 26.08.2024 17:00',
+       text  => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Liebstadter Gang und Mühlweg, Richtung Bölschestr. gesperrt, außerdem Einbahnstraßenregelung im Straßenzug Jastrower Weg - Stillerzeile, vom 25.06.2024 07:00 bis 26.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: IM_019584 (alter Eintrag von 2013, inaktiv)
 #: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen)
-	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633
+# REMOVED (hier nicht) ---	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544
+Fürstenwalder Damm, linker Gehweg existiert	q4::inwork; 24471,5544 24700,5633
+Jastrower Weg: Einbahnstraße	q4::inwork; 23877,5503 23866,5515 23863,5549 23845,5558 23696,5529 23657,5467
+Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5831 24506,5780 24429,5749 24387,5672 24362,5635 24320,5621 24236,5594 24125,5547 24126,5521
 EOF
      },
      { from  => 1364875200, # 2013-04-02 06:00
@@ -28690,7 +28703,7 @@ EOF
 #: last_checked: 2024-05-06
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
-#: last_checked: 2024-05-15
+#: last_checked: 2024-06-26
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
@@ -35781,7 +35794,7 @@ EOF
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar)
 #: also_indoor: traffic (G,B,W)
 # REMOVED --- #: priority: #A
-#: last_checked: 2024-05-10 (daf) vvv
+#: last_checked: 2024-06-26 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-03-11 vvv
 # REMOVED --- #: next_check: 2023-08-27 vvv
@@ -38219,7 +38232,7 @@ EOF
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
 #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
-#: last_checked: 2024-05-22
+#: last_checked: 2024-06-26
 #: check_frequency: 90d
 #: next_check: 2024-07-18
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
@@ -42113,7 +42126,8 @@ EOF
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-06-16
+#: last_checked: 2024-06-24 (okas)
+#: check_frequency: 45d
 	2::inwork 9586,17665 9396,17863
 # REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 EOF
@@ -43079,9 +43093,9 @@ EOF
 EOF
      },
      { from  => 1716181200, # 2024-05-20 07:00
-       until => $isodate2epoch->("2024-06-27 17:00:00"), # 1717426800, # 2024-06-03 17:00
+       until => $isodate2epoch->("2024-07-02 10:00:00"), # 1717426800, # 2024-06-03 17:00
        #text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr. sowie zwischen Boxhagener Str. und Siegfried-Hirschmann-Park, Fahrtrichtung jeweils gesperrt, vom 21.05.2024 07:00 bis 03.06.2024 17:00',
-       text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr., Fahrtrichtung gesperrt, bis 27.06.2024 17:00',
+       text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr., Fahrtrichtung gesperrt, bis 02.07.2024 10:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
@@ -43089,7 +43103,7 @@ EOF
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024) (inaktiv)
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 35m ---	q3::inwork; 14639,11512 14676,11572
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
-#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024)
+#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024)
 #: also_indoor: traffic (B)
 #: note: bei rbb in beiden Richtungen gesperrt (stimmt aber nicht)
 	q4::inwork; 14639,11512 14575,11407
@@ -43136,21 +43150,14 @@ EOF
 EOF
      },
      { from  => 1717279200, # 2024-06-02 00:00
-       until => $isodate2epoch->("2025-12-31 23:59:59"), # 1748901600, # 2025-06-03 00:00
-       text  => 'Kleine Waldstr. - Waldstr.: während der Bauarbeiten zur neuen A117-Anschlussstelle vermutlich gesperrt, voraussichtlich ab 3. Juni 2024 bis Ende 2025',
+       until => undef, # $isodate2epoch->("2025-12-31 23:59:59"), # 1748901600, # 2025-06-03 00:00
+       text  => 'Kleine Waldstr. - Waldstr.: während der Bauarbeiten zur neuen A117-Anschlussstelle gesperrt, voraussichtlich bis Ende 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: A117-2024
-#: osm_watch: way id="153260813" version="4"
-#: osm_watch[closed]: note 4162190 4
-#: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
-#: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2024/03/2024-05-22_Anwohnerbrief.pdf (bis Ende 2025)
-#: XXX Vermutlich schon gesperrt, dokumentieren!
-#: add_fragezeichen: Ist der Weg tatsächlich gesperrt?
-#: last_checked: 2024-04-07
-# REMOVED --- #: check_frequency: 30d
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2024-06-03
+#: add_fragezeichen: Ist der Weg noch immer gesperrt?
+#: note: gesperrt-orig-Eintrag existiert, bis Ende 2025 gültig
+#: next_check: 2025-12-31
 Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
 EOF
      },
@@ -43471,6 +43478,7 @@ EOF
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12227 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/8zzfJDFOpujRSzpRpuAKoOiyEE5LqVAeWvsxgUFr/NTHepxW/54-Anlagen/02/GA_1290_VI.pdf (Beginn Juni 2024 (Antwort vom Februar 2024))
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1459217.php (Bauarbeiten ab 26. Juni 2024 bis III. Quartal 2027, Sperrung auch für Radfahrer)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1805830095908532353
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: last_checked: 2024-06-20
@@ -43479,27 +43487,32 @@ EOF
 EOF
      },
      { from  => undef, #
-       until => 1719611999, #
-       text  => 'Oranienburger Str.: Gleisbauarbeiten, Fahrtrichtung gesperrt, kann auch für Radfahrer relevant sein, bis 28.06.2024',
+       until => $isodate2epoch->("2024-06-27 08:00:00"), # 1719611999, #
+       text  => 'Oranienburger Str.: Gleisbauarbeiten, Fahrtrichtung gesperrt, kann auch für Radfahrer relevant sein, bis 27.06.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1802568353367924911 (keine genaueren Infos)
-#: source_id: viz2021:13.396751,52.524035,17.06.2024,07:00 (bis 28.06.2024)
+#: source_id: viz2021:13.396751,52.524035,17.06.2024,07:00 (bis 28.06.2024) (bis 27.06.2024)
 #: last_checked: 2024-06-25
 	q4::inwork; 9938,13114 9786,13178
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-08-31 18:00:00"),
-       text  => 'Jannowitzbrücke/Brückenstr.: kurze Abschnitte Richtung Süden gesperrt, voraussichtlich bis Ende August 2024',
+       until => $isodate2epoch->("2024-07-03 17:00:00"), # $isodate2epoch->("2024-08-31 18:00:00"),
+       text  => 'Jannowitzbrücke/Brückenstr.: kurze Abschnitte Richtung Süden gesperrt, voraussichtlich bis zum 03.07.2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: bvg2024:n8#HIM_FREETEXT_229164 (bis 31.08.2024)
+#: source_id: bvg2024:n8#HIM_FREETEXT_229164 (hier bis 31.08.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1805852486105722903 (hier für eine Woche)
 #: also_indoor: traffic (H,B,T)
 #: last_checked: 2024-06-25 vvv
 #: check_frequency: 7d vvv
+#: next_check: 2024-06-27 vvv
+#: source_id: viz2021:13.417885,52.514531,26.06.2024,08:27 (bis 27.06.2024)
 	q4::inwork; 11347,12223 11343,12182
+#: source_id: viz2021:13.41771,52.51389,27.06.2024,15:00 (bis 03.07.2024)
 	q3::inwork; 11325,12021 11291,11876
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -43530,6 +43543,18 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024)
 	q4::inwork 2290,2864 2570,2844 2625,2850
+EOF
+     },
+     { from  => 1719382667, # 2024-06-26 08:17
+       until => 1740783599, # 2025-02-28 23:59
+       text  => 'Dircksenstr.: Anbindung Stralauer Str. wegen Bauarbeiten gesperrt, voraussichtlich bis Ende Februar 2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
+#: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
+#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
+	q4::inwork; 11273,12301 11300,12241
+	q3::inwork; 11300,12241 11273,12301
 EOF
      },
     );

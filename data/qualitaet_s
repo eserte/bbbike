@@ -2681,6 +2681,7 @@ Sputendorfer Str.: Beton	Q0 -546,1516 -545,1611
 Gerhardsdorfer Str.: Beton	Q0 -464,1522 -468,1614
 Paplitzer Str.: Kopfsteinpflaster	Q2 10722,-3191 10735,-3142
 (Paplitzer Str. - Mauerweg): unbefestigter enger Weg, kurze Steigung	Q3 10722,-3191 10687,-3270
+(Mauerweg Unterführung Dresdener Bahn): Asphalt	Q0 10467,-3201 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
 (Mauerweg Lichtenrade): Asphalt	Q0 10687,-3270 11157,-3295 11522,-3319 11570,-3356 11647,-3360 11704,-3336 11742,-3336
 (Mauerweg - Gerlinger Str.): wassergebundene Decke	Q1 11928,588 12016,781 11997,874
 Mauerweg: wassergebundene Decke	Q1 11802,554 11928,588 11956,599
@@ -9983,8 +9984,8 @@ Obrikatstr. (Niederschöneweide): Asphalt	Q0 17681,6212 17847,6089
 (Verlängerter Sandbacher Weg): Asphalt/Beton	Q0 23657,-1020 23786,-1108 23811,-1126 23903,-1187
 (Verlängerter Sandbacher Weg): Waldweg	Q2 23903,-1187 23955,-1223 24056,-1295
 (Brücke über die Görlitzer Bahn): Asphalt/Beton	Q0 23955,-1223 23980,-1220 24001,-1225 24053,-1241 24121,-1219 24154,-1219 24188,-1248 24216,-1273 24224,-1271
-(Alter Radelander Weg/Brücke - Adlergestell): Waldweg	Q2 24158,-1153 24485,-667
-(Adlergestell - Sportpromenade/Bammelecke): Waldweg	Q2 24485,-667 24758,-268 25172,345
+(Alter Radelander Weg/Brücke - Adlergestell): zweispuriger Waldweg	Q2 24158,-1153 24485,-667
+(Adlergestell - Sportpromenade/Bammelecke): Waldweg, Feinschotter, an einigen Stellen etwas lose	Q2 24485,-667 24758,-268 25172,345
 (Sportpromenade - Bammelecke): Waldweg	Q2 25172,345 25287,434 25473,449
 (Sportpromenade - Bammelecke): Waldweg, teilweise sehr sandig	Q3 25537,167 25552,177 25564,340
 (Sportpromenade - Bammelecke): Waldweg	Q2 25564,340 25513,385 25473,449
@@ -11112,7 +11113,7 @@ Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
 Heubudenbrücke: Holzbohlen	Q1 9017,17290 8982,17299
 zur Heubudenbrücke: wassergebundene Decke	Q1 8982,17299 8973,17301
 (Uferweg an der Stockholmer Str.): wassergebundene Decke	Q1 8982,17299 8957,17217 8870,17073
-(Rudower Höhe): Verbundsteinpflaster	Q1 18245,1699 18300,1612
+(Rudower Höhe): Verbundsteinpflaster	Q1 18245,1699 18300,1612 18347,1557 18405,1453 18450,1417 18491,1413
 (Stanzer Zeile - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	Q2 6175,372 6204,331
 zum Mauerweg: Asphalt	Q0 11671,-3400 11600,-3382
 zum Mauerweg: Waldweg	Q1 11600,-3382 11570,-3356
