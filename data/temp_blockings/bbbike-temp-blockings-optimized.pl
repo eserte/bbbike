@@ -6210,16 +6210,16 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1349287.php (ab 24. Juli 2023)
 #: by: https://www.berliner-woche.de/buch/c-bauen/brueckenbau-ueber-die-panke_a389479
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radweg-panke.pdf
-#: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023) (inaktiv) (bis 30.06.2024)
+#: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023) (inaktiv) (bis 30.06.2024) (bis 30.07.2024)
 #: osm_watch: way id="1153732901" version="4"
 #: last_checked: 2024-05-23 (mapillary)
 #: check_frequency: 150d
-#: next_check: 2024-06-30
+#: next_check: 2024-07-30
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 ',
          'from' => 1690063200,
          'id' => 3694,
-         'text' => 'Pölnitzwiesen: Neubau der Pankebrücke, Weg gesperrt, ab 24. Juli 2023 bis voraussichtlich Mitte 2024',
+         'text' => 'Pölnitzwiesen: Neubau der Pankebrücke, Weg gesperrt, ab 24. Juli 2023 bis voraussichtlich Ende Juli 2024',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7001,11 +7001,11 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 #: XXX bei osm mittlerweile als offen getaggt, stimmt das? -> nein, siehe https://www.openstreetmap.org/changeset/150876600
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-06-09 vvv
+#: last_checked: 2024-06-26 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-07-05 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
-#: osm_watch: way id="1142005449" version="6"
+#: osm_watch: way id="1142005449" version="7"
 	q4::inwork 17826,6495 17991,6431
 #: note: der westliche Gehweg ist komplett gesperrt und man kommt nur über die gepflasterte Service-Straße zum Ufer und dort via Treppe wieder zur Edisonstraße; besser den östlichen Gehweg benutzen (Stand Mitte November 2023)
 #: osm_watch: way id="176072020" version="38"
@@ -7111,7 +7111,7 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-06-20 vvv
+#: last_checked: 2024-06-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (s.o.) ---	q4::inwork; 10908,13978 10933,14122
@@ -7606,7 +7606,8 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        },
        {
          'data' => '#: source_id: viz2021:13.33304,52.4907,12.03.2024,16:19 (bis 29.03.2024) (inaktiv)
-#: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024) (bis 30.06.2024)
+#: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024) (bis 30.06.2024) (bis 31.07.2024)
+#: source_id: viz2021:13.33304,52.4907,27.06.2024,17:18 (bis 31.07.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767537882204434779 (hier nur Kfz-Verkehr)
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/wasserrohrbruch-fuehrt-zu-sperrung_a411536
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/sperrung-wegen-bauarbeiten_a412256
@@ -7616,9 +7617,9 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 ',
          'from' => 1710170340,
          'id' => 4023,
-         'text' => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), vermutlich sind auch Radfahrer betroffen (absteigen und schieben), vom 12.03.2024 16:19 bis 30.06.2024',
+         'text' => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), vermutlich sind auch Radfahrer betroffen (absteigen und schieben), vom 12.03.2024 16:19 bis 31.07.2024',
          'type' => 'handicap',
-         'until' => 1719759600
+         'until' => 1722438000
        },
        undef,
        {
@@ -8160,7 +8161,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'data' => '#: note: Länge der Einbahnstraßenregelung etwa 80m; außerdem ist auch die Inselstraße Einbahnstraße, hier aber für Radfahrer frei
 #: note: Halteverbotsschilder bis 17.07.2024
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2024-06-20
+#: last_checked: 2024-06-27
 #: check_frequency: 30d
 #: next_check: 2024-07-17
 	q3::inwork; 10908,11908 10722,11816
@@ -8284,49 +8285,25 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805830095908532353
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-06-20
-#: next_check: 2024-06-26
-	q4::inwork 10176,11593 10001,11577 9925,11568
-',
-         'from' => 1719266400,
-         'id' => 4094,
-         'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Süd), Sperrung der Fahrbahn, ab 26.6.2024',
-         'type' => 'handicap',
-         'until' => undef
-       },
-       {
-         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1802568353367924911 (keine genaueren Infos)
-#: source_id: viz2021:13.396751,52.524035,17.06.2024,07:00 (bis 28.06.2024) (bis 27.06.2024)
-#: last_checked: 2024-06-25
-	q4::inwork; 9938,13114 9786,13178
-',
-         'from' => undef,
-         'id' => 4095,
-         'text' => 'Oranienburger Str.: Gleisbauarbeiten, Fahrtrichtung gesperrt, kann auch für Radfahrer relevant sein, bis 27.06.2024',
-         'type' => 'handicap',
-         'until' => 1719468000
-       },
-       {
-         'data' => '#: source_id: bvg2024:n8#HIM_FREETEXT_229164 (hier bis 31.08.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1805852486105722903 (hier für eine Woche)
-#: also_indoor: traffic (H,B,T)
-#: last_checked: 2024-06-25 vvv
-#: check_frequency: 7d vvv
-#: next_check: 2024-06-27 vvv
-#: source_id: viz2021:13.417885,52.514531,26.06.2024,08:27 (bis 27.06.2024)
-	q4::inwork; 11347,12223 11343,12182
-#: source_id: viz2021:13.41771,52.51389,27.06.2024,15:00 (bis 03.07.2024)
-	q3::inwork; 11325,12021 11291,11876
+#: last_checked: 2024-06-27 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2027-07-01 vvv
+Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
+# REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
+Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 9725,11445 9711,11543
+Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
-         'from' => undef,
-         'id' => 4096,
-         'text' => 'Jannowitzbrücke/Brückenstr.: kurze Abschnitte Richtung Süden gesperrt, voraussichtlich bis zum 03.07.2024',
+         'from' => 1719266400,
+         'id' => 4094,
+         'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Jerusalemer Str. und Markgrafenstr., voraussichtlich bis 2027',
          'type' => 'handicap',
-         'until' => 1720018800
+         'until' => 1814457600
        },
+       undef,
+       undef,
        {
          'data' => '#: source_id: viz2021:13.301956,52.432374,26.06.2024,07:00 (hier auch Radverkehr, bis 30.08.2024)
 Finckensteinallee (trotz Radweg?)	q4::inwork; 3456,2835 3641,2827 3738,2821

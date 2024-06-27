@@ -1607,7 +1607,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.infravelo.de/projekt/petersburger-strasse-1/ (2. Quartal 2024 - 1. Quartal 2027)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="26"
-#: last_checked: 2024-06-20
+#: last_checked: 2024-06-26
 #: check_frequency: 120d
 #: next_check: 2027-03-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1621,7 +1621,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="43"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2024-06-20
+#: last_checked: 2024-06-26
 #: check_frequency: 120d
 #: next_check: 2027-03-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -1694,10 +1694,11 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 	RW2;RW2 22358,5918 22431,6068
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
-#: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024)
+#: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss)
+#: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024)
 #: last_checked: 2024-06-19 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2024-10-25 vvv
+#: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
@@ -2807,7 +2808,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-06-25 vvv
+#: last_checked: 2024-06-27 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -4528,12 +4529,12 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2024-06-20 vvv
+#: last_checked: 2024-06-26 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-07-01 vvv
+# REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -7962,7 +7963,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2024-06-20
+#: last_checked: 2024-06-26
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -7988,7 +7989,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2024-06-20 vvv
+#: last_checked: 2024-06-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-09-30 vvv
 #: osm_watch: way id="335479077" version="23"
@@ -8528,7 +8529,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023) (inaktiv)
 #: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024)
 #: source_id: viz2021:13.384655,52.451843,04.03.2024,07:00 (bis 17.05.2024) (bis 07.06.2024) (bis 17.06.2024) (inaktiv)
-#: source_id: viz2021:13.385286,52.448073,17.06.2024,07:00 (bis 27.06.2024, Gesamtbaumaßnahme bis Ende Juli 2024)
+#: source_id: viz2021:13.385286,52.448073,17.06.2024,07:00 (bis 27.06.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: viz2021:13.385297,52.44832,17.06.2024,07:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024)
 #: source_id: viz2021:13.385351,52.448083,27.06.2024,10:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv

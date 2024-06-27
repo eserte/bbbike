@@ -3806,7 +3806,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
 #: osm_watch: note 4211143 1
 #: also_indoor: traffic (none)
-#: last_checked: 2024-06-20
+#: last_checked: 2024-06-27
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -3840,7 +3840,7 @@ Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:q3:inwork 799
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="4"
 #: osm_watch: note 4180739 1
-#: last_checked: 2024-06-10 vvv
+#: last_checked: 2024-06-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-01 vvv
 #: osm_watch: way id="1054783030" version="3"
@@ -4306,7 +4306,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022) (inaktiv)
 #: source_id[inactive]: bvg2021:369#BVG310116_0
 #: source_id[inactive]: bvg2021:369#BVG310521_0
-#: source_id: viz2021:13.70381,52.40265,28.10.2022,06:00 (bis 01.03.2024) (inaktiv) (bis 30.06.2024) (inaktiv)
+#: source_id: viz2021:13.70381,52.40265,28.10.2022,06:00 (bis 01.03.2024) (inaktiv) (bis 30.06.2024) (inaktiv) (bis 31.07.2024)
 #: source_id: viz2021:13.704581,52.402425,19.07.2023,17:30 (bis 20.07.2023) (inaktiv)
 #: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023) (bis 01.03.2024) (bis 30.06.2024) (bis 31.07.2024)
 #: note: die Verkehrsmeldung wurde beim rbb am nächsten Tag (11.10.2022) bereits entfernt
@@ -4379,7 +4379,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
-#: source_id: 226110967 (hier: bis 27.6.2023) (inaktiv) (bis 27.06.2024)
+#: source_id: 226110967 (hier: bis 27.6.2023) (inaktiv) (bis 27.06.2024) (inaktiv)
 #: by: https://www.vbb.de/presse/deutsche-bahn-erneuert-bruecke-ueber-storkower-strasse-in-koenigs-wusterhausen/ (SEV bis 26.8.2022, danach gibt's Hilfsbrücken für die Bahn)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (Brückenbauarbeiten)
 #: by[nocache]: https://archive.ph/ZHatW (MAZ)
@@ -4976,6 +4976,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025)
+#: source_id: viz2021:13.55807,52.56199,27.06.2024,15:13 (bis 31.03.2025)
 #: XXX Wann wird die Brücke wieder eröffnet?
 #: last_checked: 2024-05-06 (mapillary)
 #: check_frequency: 360d
@@ -5344,9 +5345,9 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="38"
+#: osm_watch: way id="186329816" version="39"
 #: also_indoor: traffic
-#: last_checked: 2024-05-27 vvv
+#: last_checked: 2024-06-26 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
