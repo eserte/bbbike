@@ -7032,12 +7032,6 @@ EOF
 	}
 	print qq{</div>\n};
     }
-
-    if ($ENV{SERVER_NAME} =~ /cs\.tu-berlin\.de/ &&
-	open(U, "$FindBin::RealBin/bbbike-umzug.html")) {
-	while(<U>) { print }
-	close U;
-    }
 }
 
 sub footer { print footer_as_string() }

@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,11 +17,6 @@ package BBBikeGooglemap;
 
 use strict;
 use FindBin;
-BEGIN {
-    if (($ENV{SERVER_NAME}||'') =~ m{\Quser.cs.tu-berlin.de}) {
-	use lib "/home/eserte/lib/site_perl";
-    }
-}
 use lib (grep { -d }
 	 ("$FindBin::RealBin/..",
 	  "$FindBin::RealBin/../lib",
@@ -203,7 +198,6 @@ sub get_html {
 	 '83.169.19.137'      => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhSIqv_shXeYhPRHJYvhhlve40RasBRI6WpGYyWT9EJigb4eNrqNhQkqSQ',
 	 'bbbike.lvps176-28-19-132.dedicated.hosteurope.de' => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhR1a2Mn5lCCKUDYSFfuCVGW4Ye_FhRhw_1E4wz6JOkiJ2PLXtE3mf_NbQ',
 	 'bbbike.lvps83-169-19-137.dedicated.hosteurope.de' => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhQzU4FpitV0WsqI42ZHyXuB_4og4xSjtsqjECenvg7m7jSSPGu1rc1w4A',
-	 'user.cs.tu-berlin.de' => 'ABQIAAAACNG-XP3VVgdpYda6EwQUyhSBtzeMHRPjsDce2pdCviKWsp6ivRQM5jfqAYX2iYe9oBJyTM_QLOjtZw',
 
         'bbbike.org' =>
 'ABQIAAAAX99Vmq6XHlL56h0rQy6IShRC_6-KTdKUFGO0FTIV9HYn6k4jEBS45YeLakLQU48-9GshjYiSza7RMg',
