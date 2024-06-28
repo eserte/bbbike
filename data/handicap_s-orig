@@ -64,7 +64,7 @@ Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind g
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-06-26
+#: last_checked: 2024-06-28
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -195,7 +195,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: source_id: 2147345858
 #: last_checked: 2024-05-18
 #: check_frequency: 180d
-#: next_check: 2024-09-30
+#: next_check: 2024-06-28
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
 # 
 ### Treptow ###
@@ -366,6 +366,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1461126.php
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am Archäologischen Haus
 #: last_checked: 2024-06-16
@@ -900,7 +901,7 @@ Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,144
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-06-24
+#: last_checked: 2024-06-28
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -5023,6 +5024,9 @@ Köllnische Heide: schmaler Weg, kurvig	q3+ 20511,4781 20589,4795 20651,4854 2068
 (Wintersteinstr. - Iburger Ufer/Spreeuferweg): einige Fußgänger, Rampe	q3 3741,12607 3766,12596 3809,12596
 (Wintersteinstr. - Iburger Ufer): einige Fußgänger	q3 3809,12596 3889,12591
 (Wintersteinstr. - Spreeuferweg): einige Fußgänger	q3 3809,12596 3836,12614
+# 
+#: note: unklar, ob der Weg als Grünanlage gilt; entsprechendes Schild steht mehrere Meter weiter versetzt
+(Huronseestr. - Am Kraatzgraben): einige Fußgänger	q2 16622,10338 16599,10283
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

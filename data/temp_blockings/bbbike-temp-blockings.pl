@@ -30704,7 +30704,7 @@ EOF
        data  => <<EOF,
 #: by: Tsp 2019-09-10
 #: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/1562-schienenersatzverkehr-auch-mit-schnellbussen (nicht für Fahrräder)
-	2::inwork 10259,-2660 10287,-2644 10365,-2603 10382,-2598
+	2::inwork 10259,-2660 10287,-2644 10307,-2633 10365,-2603 10382,-2598
 EOF
      },
      { from  => $isodate2epoch->("2019-09-23 12:00:00"), # 1568498400, # 2019-09-15 00:00
@@ -31388,7 +31388,7 @@ EOF
        type  => 'handicap',
        source_id => '2147345675',
        data  => <<EOF,
-	q3::inwork 10365,-2603 10287,-2644 10259,-2660
+	q3::inwork 10365,-2603 10307,-2633 10287,-2644 10259,-2660
 EOF
      },
      { from  => undef, # 
@@ -31613,13 +31613,28 @@ EOF
 	q3::inwork 14134,11272 13970,11366
 EOF
      },
-     { from  => 1590276600, # 2020-05-24 01:30
-       until => 1590347417, # -> gesperrt-orig etc. --- $isodate2epoch->("2023-07-31 17:00:00"), # 1734710400, # 2024-12-20 17:00
-       text  => 'Bahnhofstr: Bahnübergang gesperrt, "Notweg" für den Fuß- und Radverkehr, vom 25.05.2020 01:30 Uhr bis Ende Juli 2023',
-       type  => 'handicap',
-       source_id => '2147345858',
+     { from  => 1719595822, # 1590276600, # 2020-05-24 01:30
+       until => 1719597615, # undef, # 1590347417, # -> gesperrt-orig etc. --- $isodate2epoch->("2023-07-31 17:00:00"), # 1734710400, # 2024-12-20 17:00
+       #text => 'Bahnhofstr.: Bahnübergang gesperrt, "Notweg" für den Fuß- und Radverkehr, vom 25.05.2020 01:30 Uhr bis Ende Juli 2023',
+       text  => 'Bahnhofstr.: Bahnübergang gesperrt, möglicherweise ist die neue Unterführung seit dem 28.06.2024 fertig und befahrbar',
+       type  => 'gesperrt',
        data  => <<EOF,
-	q4::inwork 10096,-2137 10194,-2138 10228,-2136
+#: next_check_id: BAHNHOFSTR-2020
+#: by: https://berliner-abendblatt.de/2022/05/08/die-s2-wird-wochenlang-unterbrochen/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8677 (Antrag zum Radweg in der Unterführung)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,779064#msg-779064
+#: by: https://www.deutsches-architekturforum.de/thread/15269-wiederaufbau-der-dresdener-bahn/?postID=757978#post757978
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9288 (Antrag)
+#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article242522652/Aufatmen-in-Lichtenrade-Bahnhofstrasse-bald-fuer-Verkehr-frei.html (Eröffnung am 28.06.2024)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240608
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1460977.php
+#: source_id: 2147345858 (inaktiv)
+#: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024) (bis 28.06.2024) (inaktiv)
+# REMOVED ---	q4::inwork 10096,-2137 10191,-2137 10228,-2136
+#: osm_watch: way id="152434836" version="27"
+#: osm_watch: way id="30084962" version="36"
+# REMOVED --- #: add_fragezeichen: Ist die neue Unterführung fertig? Existieren Radwege? --- #: next_check: 2024-06-28
+	2::inwork 10096,-2137 10191,-2137 10228,-2136
 EOF
      },
      { from  => 1590175096, # --- 1590301800, # 2020-05-24 08:30
@@ -37094,7 +37109,8 @@ EOF
      },
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2023-07-24 17:00:00"), # 1668255773, # offen --- undef, # XXX
-       text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024, vielleicht wird verlängert',
+       #text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024, vielleicht wird verlängert',
+       text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, vermutlich bis Ende August 2024, vielleicht wird verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -37110,9 +37126,9 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-06-24
+#: last_checked: 2024-06-28
 #: check_frequency: 30d
-#: next_check: 2024-06-30
+#: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
 EOF
      },
@@ -39525,7 +39541,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-06-13
+#: last_checked: 2024-06-28
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -40547,7 +40563,7 @@ EOF
        text  => 'Lindow: Sperrung der L19 vom 21.08.2023, 08:00 Uhr bis 13.02.2024, 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024) (inaktiv) (bis 31.05.2024, nur noch Gegenverkehrsregelung) (bis 28.06.2024)
+#: source_id: LS/223-K/23/078 (bis 22.12.2023) (inaktiv) (bis 1.3.2024) (bis 13.02.2024) (inaktiv) (bis 31.05.2024, nur noch Gegenverkehrsregelung) (bis 28.06.2024) (inaktiv)
 	2::inwork -19289,63424 -19675,64106
 EOF
      },
@@ -42584,15 +42600,15 @@ EOF
 #: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
 #: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
 #: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024) (bis 23.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024) (bis 21.06.2024) (bis 28.06.2024)
+#: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024) (bis 21.06.2024) (bis 28.06.2024) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
 #: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
 #: by[nocache]: https://twitter.com/SaskiaEllenbeck/status/1780312309820235976 (zur Umgestaltung)
-#: last_checked: 2024-06-25 vvv
+# REMOVED --- #: last_checked: 2024-06-25 vvv
 # REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-04-11 vvv
-#: next_check: 2024-06-28 vvv
+# REMOVED --- #: next_check: 2024-06-28 vvv
 Martin-Luther-Str. -> östliche Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
 Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
@@ -42606,9 +42622,9 @@ Martin-Luther-Str.: linker Gehweg -> Martin-Luther-Str.	3::inwork 6518,9867 6504
 Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,9961 6366,9926
 # REMOVED --- Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 6504,9961 6630,9990
 # REMOVED (heute war hier schon offen) --- Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 6504,9961 6366,9926
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: last_checked ^^^
 EOF
      },
      { from  => 1710914400, # 2024-03-20 07:00
@@ -43173,7 +43189,7 @@ EOF
 #: by[nocache]: https://x.com/BerlinNkl/status/1795429185839940060
 #: by: https://berliner-abendblatt.de/berlin-news/verkehrseinschraenkungen-in-neukoelln-id253562
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
-#: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
+#: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee)
 #: also_indoor: traffic (ex-H,G,re-B[nur_Braunschweiger],W[nur_noch_Sonnenallee],T[nur_Braunschweiger])
@@ -43316,8 +43332,10 @@ EOF
 EOF
      },
      { from  => 1717884000, # 2024-06-09 00:00
+       #from  => $isodate2epoch->("2024-06-30 00:00:00"), # 1717884000, # 2024-06-09 00:00
        dont_check_date => 1, until => undef, # 1719698400, # 2024-06-30 00:00
        text  => 'Grüne Trift am Walde: Bauarbeiten zwischen Brassenpfad bis Waldnesselweg, Sperrung, vom 10.06.2024 bis 29.06.2024',
+       #text  => 'Grüne Trift am Walde: Bauarbeiten zwischen Waldnesselweg bis Pritstabelstr., Sperrung, vom 01.07.2024 bis 13.07.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: GRUENETRIFTAMWALDE-2024
@@ -43412,7 +43430,7 @@ EOF
        text  => 'Luckenwalde: Bauarbeiten an der Bahnbrücke, Sperrung, evtl. sind auch Radfahrer betroffen, 24.06.2024 08:00 Uhr bis 28.06.2024 14:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 247201110 (bis 28.06.2024)
+#: source_id: 247201110 (bis 28.06.2024) (inaktiv)
 	2::inwork -4146,-34505 -4356,-34162 -4269,-33725
 EOF
      },
@@ -43523,7 +43541,7 @@ EOF
      },
      { from  => 1719291600, # 2024-06-25 07:00
        until => 1725030000, # 2024-08-30 17:00
-       text  => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2024 07:00 bis 30.08.2024 17:00',
+       text  => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, auch sind Radfahrer betroffen, vom 26.06.2024 07:00 bis 30.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.301956,52.432374,26.06.2024,07:00 (hier auch Radverkehr, bis 30.08.2024)
@@ -43533,19 +43551,22 @@ EOF
      },
      { from  => 1719291600, # 2024-06-25 07:00
        until => 1725116400, # 2024-08-31 17:00
-       text  => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+       text  => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024)
-	q4::inwork; 2625,2850 2737,2866 3019,2858
+	q4::inwork; 2625,2850 2737,2866
+# REMOVED (scheint kürzer zu sein) ---	q4::inwork; 2737,2866 3019,2858
 EOF
      },
      { from  => 1719291600, # 2024-06-25 07:00
        until => 1725116400, # 2024-08-31 17:00
-       text  => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+       text  => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
 	q4::inwork 2290,2864 2570,2844 2625,2850
 EOF
      },
@@ -43559,6 +43580,15 @@ EOF
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
 	q4::inwork; 11273,12301 11300,12241
 	q3::inwork; 11300,12241 11273,12301
+EOF
+     },
+     { from  => 1719698400, # 2024-06-30 00:00
+       until => undef, # XXX
+       text  => 'Wolziger Zeile: Sperrung des Bahnübergangs ab 1.7.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: WOLZIGERZEILE-2024
+	2::inwork 10382,-2598 10365,-2603 10307,-2633
 EOF
      },
     );

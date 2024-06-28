@@ -153,7 +153,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2024-06-17 vvv
+#: last_checked: 2024-06-28 vvv
 #: next_check: 2026-12-31 vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -3804,7 +3804,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
-#: osm_watch: note 4211143 1
+#: osm_watch: note 4211143 2
 #: also_indoor: traffic (none)
 #: last_checked: 2024-06-27
 #: check_frequency: 30d
@@ -4077,7 +4077,7 @@ Clara-Müller-Jahnke-Str.: Straße noch nicht fertig	2::inwork 31800,3091 31810,30
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-06-24 vvv
+#: last_checked: 2024-06-28 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -4117,7 +4117,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,1582
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2024-06-24
+#: last_checked: 2024-06-28
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4204,7 +4204,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2024-06-24
+#: last_checked: 2024-06-28
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4306,9 +4306,9 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022) (inaktiv)
 #: source_id[inactive]: bvg2021:369#BVG310116_0
 #: source_id[inactive]: bvg2021:369#BVG310521_0
-#: source_id: viz2021:13.70381,52.40265,28.10.2022,06:00 (bis 01.03.2024) (inaktiv) (bis 30.06.2024) (inaktiv) (bis 31.07.2024)
+#: source_id: viz2021:13.70381,52.40265,28.10.2022,06:00 (bis 01.03.2024) (inaktiv) (bis 30.06.2024) (inaktiv) (bis 31.07.2024) (inaktiv)
 #: source_id: viz2021:13.704581,52.402425,19.07.2023,17:30 (bis 20.07.2023) (inaktiv)
-#: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023) (bis 01.03.2024) (bis 30.06.2024) (bis 31.07.2024)
+#: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023) (bis 01.03.2024) (bis 30.06.2024) (bis 31.07.2024) (bis 03.07.2024)
 #: note: die Verkehrsmeldung wurde beim rbb am nächsten Tag (11.10.2022) bereits entfernt
 #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv
 # REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17"
@@ -4319,7 +4319,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: last_checked: 2023-08-13 (mapillary)
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-10-28
-#: next_check: 2024-07-31
+#: next_check: 2024-07-03
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 # 
 # REMOVED (by osm) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023)
@@ -4461,6 +4461,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17608,8483 1768
 #: last_checked ^^^
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
+#: by: https://www.berliner-woche.de/karlshorst/c-bauen/arbeiten-fuer-parkstadt-karlshorst-gehen-voran_a418592 (bis Ende 2024)
 #: note: Halteverbotsschilder bis 31.12.2024
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
@@ -4576,7 +4577,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="2"
-#: last_checked: 2024-04-20
+#: last_checked: 2024-06-28
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -4665,27 +4666,17 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
 # REMOVED (hier offen) --- Abendseglersteig: noch in Bau	2::inwork 33383,2792 33406,2852
 # 
 #: next_check_id: BAHNHOFSTR-2020
-#: by: https://berliner-abendblatt.de/2022/05/08/die-s2-wird-wochenlang-unterbrochen/
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8677 (Antrag zum Radweg in der Unterführung)
-#: by: https://www.bahninfo-forum.de/read.php?9,578649,779064#msg-779064
-#: by: https://www.deutsches-architekturforum.de/thread/15269-wiederaufbau-der-dresdener-bahn/?postID=757978#post757978
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9288 (Antrag)
-#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article242522652/Aufatmen-in-Lichtenrade-Bahnhofstrasse-bald-fuer-Verkehr-frei.html (Eröffnung am 28.06.2024)
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240608
-#: source_id: viz2021:13.39689,52.386687,25.05.2020,01:30 (bis 30.09.2024) (bis 28.06.2024)
 #: XXX hier wird eine neue Unterführung gebaut vvv
 #: priority: #A vvv
 #: last_checked: 2024-05-29 (okas) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-06-28 vvv
-#: valid: -20240628 vvv
-#: osm_watch: way id="152434836" version="27"
-#: osm_watch: way id="30084962" version="36"
-Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
+# REMOVED --- #: valid: -20240628 vvv
+# REMOVED (-> temp blockings) --- Prinzessinnenstr./Bahnhofstr. (Lichtenrade): neue Unterführung wird gebaut	2::inwork 10096,-2137 10194,-2138 10228,-2136 10258,-2135 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am ehemaligen Bahnübergang	2::inwork 10228,-2136 10231,-2159
 Pfarrer-Lütkehaus-Platz: Bauarbeiten, Sperrung	2::inwork 10296,-2156 10300,-2135
 # REMOVED (gibt es nicht mehr) --- Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-2135 10296,-2156 10318,-2156
-#: valid ^^^
+# REMOVED --- #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5037,7 +5028,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: last_checked: 2024-06-09 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-08-15 vvv
-#: osm_watch: way id="1085382250" version="4"
+#: osm_watch: way id="1085382250" version="5"
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17578,5566 17588,5573 17736,5441
 # REMOVED --- #: osm_watch: way id="226163591" version="6"
 # REMOVED (wurde in strassen-orig entfernt) --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17634,5607 17675,5521

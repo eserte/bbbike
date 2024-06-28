@@ -270,19 +270,12 @@
 #: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
 #: by: https://berliner-abendblatt.de/2022/12/12/dresdner-bahn-bau-kommt-voran-bahnhof-lichtenrade-eroeffnet/
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/der-s-bahnhof-ist-verschoben-zuege-fahren-wieder-bis-mahlow_a366917
-#: XXX bauzeitlicher Zugang vvv
-#: priority: #C vvv
-#: last_checked: 2023-11-18 vvv
-#: next_check: 2024-09-30 vvv
-#: note: ebenerdig vvv
-# REMOVED (alter provisorischer Zugang)	X 10310,-2136 10307,-2086 10166,-2070
-# REMOVED (alter provisorischer Zugang)	X 10303,-1954 10307,-2086 10166,-2070
-	X 10166,-2070 10201,-2131 10210,-2175
-#: note ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: XXX ^^^
+# REMOVED --- #: XXX bauzeitlicher Zugang vvv --- #: priority: #C vvv --- #: last_checked: 2023-11-18 vvv --- #: next_check: 2024-06-28 vvv --- #: note: ebenerdig vvv
+# REMOVED (alter provisorischer Zugang) ---	X 10310,-2136 10307,-2086 10185,-2120
+# REMOVED (alter provisorischer Zugang) ---	X 10303,-1954 10307,-2086 10185,-2120
+# REMOVED (späterer provisorischer Zugang) ---	X 10185,-2120 10201,-2131 10210,-2175
+	X 10185,-2120 10191,-2137
+# REMOVED --- #: note ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^
 # 
 #: note: Treppe
 	X 21224,18519 21205,18487 21170,18504 21218,18601

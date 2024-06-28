@@ -5959,14 +5959,14 @@ Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-06-24
+#: last_checked: 2024-06-28
 #: check_frequency: 30d
-#: next_check: 2024-06-30
+#: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
 ',
          'from' => undef,
          'id' => 3630,
-         'text' => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024, vielleicht wird verlängert',
+         'text' => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, vermutlich bis Ende August 2024, vielleicht wird verlängert',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6664,7 +6664,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-06-13
+#: last_checked: 2024-06-28
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -7634,43 +7634,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        },
        undef,
        undef,
-       {
-         'data' => '#       3nocross::ignrte 6499,10086 6504,9961 6504,9865
-#: source_id: viz2021:13.346242,52.495249,19.03.2024,07:00 (bis 09.04.2024) (inaktiv)
-#: source_id: viz2021:13.34608,52.495921,11.04.2024,07:00 (bis 03.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,11.04.2024,07:00 (bis 03.05.2024) (bis 22.05.2024) (bis 23.05.2024) (inaktiv)
-#: source_id: viz2021:13.346137,52.495886,23.05.2024,11:00 (bis 06.06.2024) (bis 21.06.2024) (bis 28.06.2024)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240410 (westliche Seite)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1778275531894686173 (westliche Seite)
-#: by: https://pbs.twimg.com/media/GKy422UWIAIeE_t?format=jpg
-#: by[nocache]: https://twitter.com/SaskiaEllenbeck/status/1780312309820235976 (zur Umgestaltung)
-#: last_checked: 2024-06-25 vvv
-# REMOVED --- #: check_frequency: 7d vvv
-# REMOVED --- #: next_check: 2024-04-11 vvv
-#: next_check: 2024-06-28 vvv
-Martin-Luther-Str. -> östliche Winterfeldtstr.	3::inwork 6499,10086 6504,9961 6630,9990
-Martin-Luther-Str. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6499,10086 6504,9961 6518,9867
-Martin-Luther-Str. -> Winterfeldtstr.	3::inwork 6504,9865 6504,9961 6366,9926
-Winterfeldtstr. -> Martin-Luther-Str.	3::inwork 6366,9926 6504,9961 6499,10086
-Winterfeldtstr. -> Winterfeldtstr.	3::inwork 6366,9926 6504,9961 6630,9990
-Winterfeldtstr. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6366,9926 6504,9961 6518,9867
-Winterfeldtstr. -> Martin-Luther-Str.	3::inwork 6630,9990 6504,9961 6504,9865
-Winterfeldtstr. -> Winterfeldtstr.	3::inwork 6630,9990 6504,9961 6366,9926
-Winterfeldtstr. -> Martin-Luther-Str.: linker Gehweg	3::inwork 6630,9990 6504,9961 6518,9867
-Martin-Luther-Str.: linker Gehweg -> Martin-Luther-Str.	3::inwork 6518,9867 6504,9961 6504,9865
-Martin-Luther-Str.: linker Gehweg -> Winterfeldtstr.	3::inwork 6518,9867 6504,9961 6366,9926
-# REMOVED --- Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 6504,9961 6630,9990
-# REMOVED (heute war hier schon offen) --- Winterfeldtstr.: östliche Anbindung zur Martin-Luther-Str. gesperrt, Umwege	q4::inwork 6504,9961 6366,9926
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1710741600,
-         'id' => 4028,
-         'text' => 'Martin-Luther-Str.: in Höhe Winterfeldtstr. ist wegen Bauarbeiten die Querung nicht möglich, Sperrung der westlichen Anbindung, möglicherweise bis 28.06.2024',
-         'type' => 'gesperrt',
-         'until' => 1719586800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8030,7 +7994,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: by[nocache]: https://x.com/BerlinNkl/status/1795429185839940060
 #: by: https://berliner-abendblatt.de/berlin-news/verkehrseinschraenkungen-in-neukoelln-id253562
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
-#: source_id: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
+#: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee)
 #: also_indoor: traffic (ex-H,G,re-B[nur_Braunschweiger],W[nur_noch_Sonnenallee],T[nur_Braunschweiger])
@@ -8209,16 +8173,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'type' => 'handicap',
          'until' => 1725030000
        },
-       {
-         'data' => '#: source_id: 247201110 (bis 28.06.2024)
-	2::inwork -4146,-34505 -4356,-34162 -4269,-33725
-',
-         'from' => 1719122400,
-         'id' => 4089,
-         'text' => 'Luckenwalde: Bauarbeiten an der Bahnbrücke, Sperrung, evtl. sind auch Radfahrer betroffen, 24.06.2024 08:00 Uhr bis 28.06.2024 14:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1719576000
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.507816,52.637174,17.06.2024,08:00 (bis 06.09.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1802568101801717762
@@ -8311,27 +8266,30 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
 ',
          'from' => 1719291600,
          'id' => 4097,
-         'text' => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2024 07:00 bis 30.08.2024 17:00',
+         'text' => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, auch sind Radfahrer betroffen, vom 26.06.2024 07:00 bis 30.08.2024 17:00',
          'type' => 'handicap',
          'until' => 1725030000
        },
        {
          'data' => '#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024)
-	q4::inwork; 2625,2850 2737,2866 3019,2858
+	q4::inwork; 2625,2850 2737,2866
+# REMOVED (scheint kürzer zu sein) ---	q4::inwork; 2737,2866 3019,2858
 ',
          'from' => 1719291600,
          'id' => 4098,
-         'text' => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+         'text' => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
          'type' => 'handicap',
          'until' => 1725116400
        },
        {
          'data' => '#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
 	q4::inwork 2290,2864 2570,2844 2625,2850
 ',
          'from' => 1719291600,
          'id' => 4099,
-         'text' => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+         'text' => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
          'type' => 'handicap',
          'until' => 1725116400
        },
@@ -8347,6 +8305,16 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'text' => 'Dircksenstr.: Anbindung Stralauer Str. wegen Bauarbeiten gesperrt, voraussichtlich bis Ende Februar 2025',
          'type' => 'handicap',
          'until' => 1740783599
+       },
+       {
+         'data' => '#: next_check_id: WOLZIGERZEILE-2024
+	2::inwork 10382,-2598 10365,-2603 10307,-2633
+',
+         'from' => 1719698400,
+         'id' => 4101,
+         'text' => 'Wolziger Zeile: Sperrung des Bahnübergangs ab 1.7.2024',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
