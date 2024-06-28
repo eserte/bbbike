@@ -42,6 +42,7 @@ use BBBikeTest qw(eq_or_diff);
 	 can_mapserver		    => JSON::XS::false,
 	 can_palmdoc		    => JSON::XS::false,
 	 can_pdf		    => JSON::XS::true,
+	 can_qrcode_link    	    => JSON::XS::false,
 	 can_svg		    => JSON::XS::false,
 	 can_wbmp		    => JSON::XS::false,
 	 city			    => 'Berlin_DE',

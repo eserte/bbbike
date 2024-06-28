@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2021,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2021,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeCGI::Config;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 sub the_config {
     my(undef, $output_for, $ns) = @_;
@@ -47,6 +47,7 @@ sub the_config {
       can_gpx                    => $bool->($var->('can_gpx')),
       can_kml                    => $bool->($var->('can_kml')),
       can_mapserver              => $bool->($var->('can_mapserver')),
+      can_qrcode_link            => $bool->($var->('can_qrcode_link')),
       show_start_ziel_url        => $bool->($var->('show_start_ziel_url')),
       show_weather               => $bool->($var->('show_weather')),
       use_select                 => $bool->($var->('use_select')),
