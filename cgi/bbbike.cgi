@@ -85,7 +85,7 @@ use vars qw($VERSION $VERBOSE
 	    $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
 	    $can_wbmp $can_palmdoc $can_gpx $can_kml
 	    $can_google_maps
-	    $can_mapserver $mapserver_address_url
+	    $can_mapserver $mapserver_address_url $can_qrcode_link
 	    $bbbikedraw_pdf_module
 	    $mapserver_init_url $no_berlinmap $max_plz_streets $with_comments
 	    $with_cat_display
@@ -396,6 +396,15 @@ below for special mapserver variables.
 =cut
 
 $can_mapserver = 0;
+
+=item $can_qrcode_link
+
+Set this to a true value if links to QR code can be created. Default:
+false. Needs either L<Imager::QRCode> or L<GD::Barcode::QRcode>.
+
+=cut
+
+$can_qrcode_link = 0;
 
 =back
 
@@ -5130,7 +5139,7 @@ EOF
 		    $qq2->param('output_as', "gpx-route");
 		    my $href = $bbbike_script . '?' . $qq2->query_string;
 		    print qq{<a href="$href">GPX (Route)</a>};
-		    if ($is_beta) {
+		    if ($can_qrcode_link) {
 			print add_qrcode_html($href, 'GPX Route');
 		    }
 		}
@@ -5142,7 +5151,7 @@ EOF
 		    $qq2->param('output_as', "gpx-track");
 		    my $href = $bbbike_script . '?' . $qq2->query_string;
 		    print qq{<a href="$href">GPX (Track)</a>};
-		    if ($is_beta) {
+		    if ($can_qrcode_link) {
 			print add_qrcode_html($href, 'GPX Track');
 		    }
 		}
@@ -5155,7 +5164,7 @@ EOF
 		$qq2->param('output_as', "kml-track");
 		my $href = $bbbike_script . '?' . $qq2->query_string;
 		print qq{<a title="view route with Google Earth" href="$href">KML (Google Earth)</a>};
-		if ($is_beta) {
+		if ($can_qrcode_link) {
 		    print add_qrcode_html($href, 'KML');
 		}
 		print "</td>";
@@ -5173,7 +5182,7 @@ EOF
 	    if ($bbbikeleaflet_url) {
 		print "<td>";
 	        print qq{<a href="$bbbikeleaflet_url">Leaflet<img style="vertical-align:bottom;" src="$bbbike_images/bbbike_leaflet_16.png" border="0" alt=""></a>};
-		if ($is_beta) {
+		if ($can_qrcode_link) {
 		    print add_qrcode_html($bbbikeleaflet_loc_url, 'BBBikeLeaflet');
 		}
 		print "</td>";
