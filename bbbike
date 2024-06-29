@@ -14723,9 +14723,14 @@ sub show_info {
 	if ($city_obj->cityname eq 'Berlin') { # only mapserver links for Berlin data
 	    # Mapserver XXX move to function for creating URL
 	    my @mapserver_def = ([$BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
-				  "BBBike Mapserver"]);
+				  "BBBike Mapserver",
+				  '',
+				  '_public']);
 	    if ($devel_host) {
-		push @mapserver_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/mapserver_address.cgi" : "http://localhost/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver", "is_local"];
+		push @mapserver_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/mapserver_address.cgi" : "http://localhost/bbbike/cgi/mapserver_address.cgi",
+				      "Lokaler Mapserver",
+				      "is_local",
+				      '_local'];
 	    }
 
 	    my @mapext = $c->get_corners;
@@ -14752,43 +14757,48 @@ sub show_info {
 	    push @layers, "route"; # the "mark" is also in the "route" layer
 
 	    my $mapserver_logo_photo = load_photo($top, 'mapserver_logo', -persistent => 1);
-	    my $need_indentation = !$mapserver_logo_photo;
+
 	    for my $def (@mapserver_def) {
-		my($mapserver_url, $mapserver_label, $is_local) = @$def;
+		my($mapserver_url, $mapserver_label, $is_local, $key_suffix) = @$def;
+
+		my $key = 'mapillary' . $key_suffix;
+		push @builtin_links_order, $key;
+
 		my $url = "$mapserver_url/coords=" . $real_coords;
 		$url .= "/mapext=" . join(",",@mapext);
 		if (@layers) {
 		    $url .= "/" . join("/", map { "layer=$_" } @layers);
 		}
-		if ($mapserver_logo_photo) {
-		    $info_text->imageCreate("end", -image => $mapserver_logo_photo,
-					    -align => "bottom", -padx => 2, -pady => 1);
-		}
-		$info_text->insert("end", $mapserver_label, ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-		$show_url->($linkcount, $url);
-		$info_text->insert("end", "\n");
-		$linkcount++;
+
+		$builtin_links{$key} = {
+		    name => $mapserver_label,
+		    callback => sub { $open_url->($url) },
+		    callback_3_std => sub { $url },
+		    ($mapserver_logo_photo ? (icon => $mapserver_logo_photo) : ()),
+		};
 
 		if ($advanced && !$is_local) {
-		    if ($mapserver_logo_photo) {
-			$info_text->imageCreate("end", -image => $mapserver_logo_photo,
-						-align => "bottom", -padx => 2, -pady => 1);
-		    }
-		    $info_text->insert("end", $mapserver_label . " (kurzer Link)",
-				       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-		    $show_url->($linkcount, sub {
-				    if (exists $long_url_to_short_url{$url}) {
-					return $long_url_to_short_url{$url};
-				    }
-				    if (!eval { require WWW::Shorten; WWW::Shorten->import(); 1 }) {
-					status_message("Das Modul WWW::Shorten ist nicht vorhanden.", "die");
-				    }
-				    my $short_url = makeashorterlink($url);
-				    $long_url_to_short_url{$url} = $short_url;
-				    $short_url;
-				});
-		    $info_text->insert("end", "\n");
-		    $linkcount++;
+		    my $key = 'mapillary' . $key_suffix . '_shortlink';
+		    push @builtin_links_order, $key;
+
+		    my $create_short_url = sub {
+			if (exists $long_url_to_short_url{$url}) {
+			    return $long_url_to_short_url{$url};
+			}
+			if (!eval { require WWW::Shorten; WWW::Shorten->import(); 1 }) {
+			    status_message("Das Modul WWW::Shorten ist nicht vorhanden.", "die");
+			}
+			my $short_url = makeashorterlink($url);
+			$long_url_to_short_url{$url} = $short_url;
+			$short_url;
+		    };
+
+		    $builtin_links{$key} = {
+			name => $mapserver_label . " (kurzer Link)",
+			callback => sub { $open_url->($create_short_url->()) },
+			callback_3_std => sub { $create_short_url->() },
+			($mapserver_logo_photo ? (icon => $mapserver_logo_photo) : ()),
+		    };
 		}
 	    }
 	}
