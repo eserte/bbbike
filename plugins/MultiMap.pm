@@ -79,7 +79,7 @@ sub register {
 	  },
 	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
 	  order => 'first',
-	  tags => [qw(pubtrans)],
+	  tags => [qw(pubtrans bicycle)],
 	};
     $main::info_plugins{__PACKAGE__ . "_MapCompare"} =
 	{ name => "Map Compare (Google/OSM)",
