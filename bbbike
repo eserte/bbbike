@@ -14650,25 +14650,8 @@ sub show_info {
 	    $info_text->insert("end", "\n");
 	}
 
-	$info_text->insert("end", "Links", "bold");
-	{
-	    my $tagcount = 0;
-	    for my $tag ('traffic', 'pubtrans', 'bicycle', 'aerial', 'osmedit', 'all') {
-		my $tagactivetag = (!defined $current_tag_filter && $tag eq 'all') || (defined $current_tag_filter && $tag eq $current_tag_filter) ? 'tagactive' : 'taginactive';
-		$info_text->insert('end', ' ');
-		$info_text->insert('end', " $tag ", ['tag', $tagactivetag, "tag$tagcount"]);
-		$info_text->tagBind("tag$tagcount", "<ButtonRelease-1>" => sub {
-					if ($tag eq 'all') {
-					    $current_tag_filter = undef;
-					} else {
-					    $current_tag_filter = $tag;
-					}
-					$show_info_sub->();
-				    });
-		$tagcount++;
-	    }
-	    $info_text->insert('end', "\n");
-	}
+	$info_text->insert("end", "Links\n", "bold");
+	$info_text->markSet('taglist', 'end-2c');
 
 	my %builtin_links;
 	my @builtin_links_order;
@@ -15109,12 +15092,19 @@ sub show_info {
 	    }
 	} keys %info_plugins;
 
+	my %seen_tags;
+
 	for my $plugin (
 	    (map { $builtin_links{$_} } @builtin_links_order),
 	    (map { $info_plugins{$_} } @sorted_info_plugins),
 	) {
+	    my @tags = @{ $plugin->{tags} || [] };
+	    if (@tags) {
+		for my $tag (@tags) {
+		    $seen_tags{$tag} = 1;
+		}
+	    }
 	    if (defined $current_tag_filter) {
-		my @tags = @{ $plugin->{tags} || [] };
 		next if !first { $_ eq $current_tag_filter} @tags;
 	    }
 
@@ -15173,6 +15163,28 @@ sub show_info {
 		     });
 	    }
 	    $linkcount++;
+	}
+
+	{
+	    my @tags_for_list = grep { $seen_tags{$_} } qw(traffic pubtrans bicycle aerial osmedit);
+	    if (@tags_for_list) {
+		$info_text->markSet('insert', 'taglist');
+		my $tagcount = 0;
+		for my $tag ('all', @tags_for_list) {
+		    my $tagactivetag = (!defined $current_tag_filter && $tag eq 'all') || (defined $current_tag_filter && $tag eq $current_tag_filter) ? 'tagactive' : 'taginactive';
+		    $info_text->insert('insert', ' ');
+		    $info_text->insert('insert', " $tag ", ['tag', $tagactivetag, "tag$tagcount"]);
+		    $info_text->tagBind("tag$tagcount", "<ButtonRelease-1>" => sub {
+					    if ($tag eq 'all') {
+						$current_tag_filter = undef;
+					    } else {
+						$current_tag_filter = $tag;
+					    }
+					    $show_info_sub->();
+					});
+		    $tagcount++;
+		}
+	    }
 	}
 
 	{
