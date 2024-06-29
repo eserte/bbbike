@@ -21070,6 +21070,13 @@ sub show_logo { # und About
 		$os_info .= " (Real OS, maybe: $real_os)";
 	    }
 	}
+	eval {
+	    require Doit;
+	    my $os_release = Doit::Util::get_os_release();
+	    if ($os_release->{PRETTY_NAME}) {
+		$os_info .= "\n" . $os_release->{PRETTY_NAME};
+	    }
+	};
 	$f->Label(-text => "perl $]\nTk $Tk::VERSION\n$os_info",
 		  -font => $font{'small'},
 		  -justify => 'left',
