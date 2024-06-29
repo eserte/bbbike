@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2016,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW: https://github.com/eserte/bbbike
 #
 
 # Description (en): Launch Merkaartor or JOSM
@@ -20,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.08';
+$VERSION = '0.09';
 
 use vars qw(%images);
 
@@ -35,6 +34,7 @@ sub register {
 	  callback => sub { josm_via_cmdline(@_) },
 	  ($images{JOSM} ? (icon => $images{JOSM}) : ()),
 	  order => -102,
+	  tags => [qw(osmedit)],
 	};
     $main::info_plugins{__PACKAGE__ . "_MerkaartorCmdline"} =
 	{ name => "Merkaartor (via Kommandozeile)",
@@ -42,6 +42,7 @@ sub register {
 	  callback => sub { merkaartor_via_cmdline(@_) },
 	  ($images{Merkaartor} ? (icon => $images{Merkaartor}) : ()),
 	  order => -101,
+	  tags => [qw(osmedit)],
 	};
     $main::info_plugins{__PACKAGE__ . "_MerkaartorURL"} =
 	{ name => "Merkaartor/JOSM (via URL)",
@@ -51,6 +52,7 @@ sub register {
 	  allmaps => 0, # do not show in allmaps list
 	  ($images{MerkaartorJOSM} ? (icon => $images{MerkaartorJOSM}) : ()),
 	  order => -100,
+	  tags => [qw(osmedit)],
 	};
 }
 
