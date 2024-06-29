@@ -14167,6 +14167,8 @@ sub handle_show_info_url {
     substr($show_info_url, $offset, $maxbytes);
 }
 
+my $current_tag_filter = undef;
+
 # Zeigt Informationen zum aktuellen Tag.
 ### AutoLoad Sub
 sub show_info {
@@ -14477,6 +14479,20 @@ sub show_info {
 	    $info_top->Button(Name => 'close',
 			      -command => sub { $info_top->destroy },
 			     )->pack(-fill => "x");
+	    $info_text->tagConfigure(
+		'tag', 
+		-borderwidth => 1,
+		-relief => 'solid',
+		-font => $font{'small'},
+	    );
+	    $info_text->tagConfigure(
+		'tagactive',
+		-background => 'yellow',
+	    );
+	    $info_text->tagConfigure(
+		'taginactive',
+		-background => 'grey80',
+	    );
 	    toplevel_checker($info_top);
 	} else {
 	    $info_top = $toplevel{$tl_tag};
@@ -14634,7 +14650,25 @@ sub show_info {
 	    $info_text->insert("end", "\n");
 	}
 
-	$info_text->insert("end", "Links\n", "bold");
+	$info_text->insert("end", "Links", "bold");
+	{
+	    my $tagcount = 0;
+	    for my $tag ('traffic', 'pubtrans', 'bicycle', 'aerial', 'osmedit', 'all') {
+		my $tagactivetag = (!defined $current_tag_filter && $tag eq 'all') || (defined $current_tag_filter && $tag eq $current_tag_filter) ? 'tagactive' : 'taginactive';
+		$info_text->insert('end', ' ');
+		$info_text->insert('end', " $tag ", ['tag', $tagactivetag, "tag$tagcount"]);
+		$info_text->tagBind("tag$tagcount", "<ButtonRelease-1>" => sub {
+					if ($tag eq 'all') {
+					    $current_tag_filter = undef;
+					} else {
+					    $current_tag_filter = $tag;
+					}
+					$show_info_sub->();
+				    });
+		$tagcount++;
+	    }
+	    $info_text->insert('end', "\n");
+	}
 
 	my %builtin_links;
 	my @builtin_links_order;
@@ -15079,6 +15113,11 @@ sub show_info {
 	    (map { $builtin_links{$_} } @builtin_links_order),
 	    (map { $info_plugins{$_} } @sorted_info_plugins),
 	) {
+	    if (defined $current_tag_filter) {
+		my @tags = @{ $plugin->{tags} || [] };
+		next if !first { $_ eq $current_tag_filter} @tags;
+	    }
+
 	    my @args = (coords => $real_coords,
 			street => $strname,
 			px => $px,
