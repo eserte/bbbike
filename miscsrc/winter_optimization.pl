@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2010,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2010,2016,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -415,7 +415,7 @@ Note that currently the winter hardness has to be set in the config
 file F<bbbike.cgi.config> as variable C<$winter_hardness>. Winter
 optimization is turned on only if C<$use_winter_optimization> is set
 to true. Usually this could be done automatically for the winter
-months, see F<bbbike-biokovo.cgi.config> for an example.
+months, see F<../cgi/bbbike2-test.cgi.config> for an example.
 
 =head2 Perl/Tk application
 
