@@ -14514,6 +14514,9 @@ sub show_info {
 
 	$info_text->insert("end", "Links\n", "bold");
 
+	my %builtin_links;
+	my @builtin_links_order;
+
 	if ($city_obj->cityname eq 'Berlin') { # only bbbike.de links for Berlin data (XXX but maybe bbbike.org links could be done instead?)
 	    my @bbbike_cgi_def = ([$BBBike::BBBIKE_DIRECT_WWW, "BBBike im WWW"]);
 	    if ($devel_host) {
@@ -14871,17 +14874,12 @@ sub show_info {
 	}
 
 	{
-	    my $need_indentation;
+	    my $key = 'google';
+	    push @builtin_links_order, $key;
+
 	    if (!$google_photo) {
 		$google_photo = load_photo($top, 'google');
 	    }
-	    if ($google_photo) {
-		$info_text->imageCreate("end", -image => $google_photo,
-					-align => "bottom", -padx => 2, -pady => 1);
-	    } else {
-		$need_indentation = 1;
-	    }
-
 	    my $normal_url = do {
 		my $scale = int(17 - log(($mapscale_scale)/2907)/log(2) + 0.5);
 		"http://www.google.com/maps/\@$py,$px,${scale}z";
@@ -14910,11 +14908,23 @@ sub show_info {
 		 -command => sub { $copy_link->($normal_url) },
 		);
 
-	    $info_text->insert("end", "Google Maps" . ($devel_host ? " (Original)" : ""),
-			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_url->($linkcount, $normal_url, $googlemaps_menu);
-	    $info_text->insert("end", "\n");
-	    $linkcount++;
+	    $builtin_links{$key} = {
+		name => 'Google Maps' . ($devel_host ? ' (Original)' : ''),
+		callback => sub {
+		    require WWWBrowser;
+		    main::status_message("Start browser with URL $normal_url", 'info');
+		    WWWBrowser::start_browser($normal_url);
+		},
+		callback_3 => sub {
+		    my(%args) = @_;
+		    my $w = $args{widget};
+		    my $e = $w->XEvent;
+		    $googlemaps_menu->Post($e->X, $e->Y);
+		    Tk->break;
+		},		    
+		($google_photo ? (icon => $google_photo) : ()),
+		tags => [qw(aerial streetview bicycle)],
+	    };
 	}
 
 	my($px0,$py0,$px1,$py1) = get_current_bbox_as_wgs84();
@@ -14931,9 +14941,10 @@ sub show_info {
 	    }
 	} keys %info_plugins;
 
-	for my $key (@sorted_info_plugins) {
-	    my $plugin = $info_plugins{$key};
-
+	for my $plugin (
+	    (map { $builtin_links{$_} } @builtin_links_order),
+	    (map { $info_plugins{$_} } @sorted_info_plugins),
+	) {
 	    my @args = (coords => $real_coords,
 			street => $strname,
 			px => $px,
