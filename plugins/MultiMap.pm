@@ -258,6 +258,7 @@ sub register {
 	{ name => 'travic',
 	  callback => sub { showmap_travic(@_) },
 	  callback_3_std => sub { showmap_url_travic(@_) },
+	  ($images{Travic} ? (icon => $images{Travic}) : ()),
 	};
     if ($is_berlin) {
 	$main::info_plugins{__PACKAGE__ . '_HierBautBerlin'} =
@@ -892,6 +893,21 @@ TZ4yddp0J2cGlxkzZ82eM3fe/AULFy1e4urG4O6xdNnyFStXrV6zdt36DZ5eDLzePhs3bd6y1Xfb
 QE6Vzs7JlWGAAgBbcEehwmrrtAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0xMS0yMFQxODozNDow
 NyswMTowMHlDTeAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTEtMjBUMTg6MzQ6MDcrMDE6MDAI
 HvVcAAAAAElFTkSuQmCC
+EOF
+    }
+
+    if (!defined $images{Travic}) {
+	# Created with:
+	#   wget https://travic.app/static/icon.png
+	#   convert -resize 16x16 icon.png icon16.png
+	#   pngcrush -brute -reduce -rem allb -m 0 icon16.png icon16_2.png
+	#   base64 icon16_2.png 
+	$images{Travic} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAABGdBTUEAALGPC/xhBQAAAGBJREFU
+GFdj8EADDEDsDgcQAa+oGCgIAgu4R91+9+bN69dv3nyY5QoX+Pb/7zuYAEhL5Nr/b/OioVpAhjov
+/v862hVmKBC4Lvn/OgbEpamAW9myWUHIAh5uLq4QBkwAAQDfD2Si0ao6dwAAAABJRU5ErkJggg==
 EOF
     }
 }
