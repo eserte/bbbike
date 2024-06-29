@@ -14828,46 +14828,47 @@ sub show_info {
 		$bbbike_google_photo = load_photo($top, 'bbbike_google');
 	    }
 	    my @bbbike_google_map_defs = (($devel_host
-					   ? ["lokal: Google Maps (BBBike)", "http://localhost/bbbike/cgi/bbbikegooglemap.cgi"]
+					   ? ["lokal: Google Maps (BBBike)", "http://localhost/bbbike/cgi/bbbikegooglemap.cgi", '_local']
 					   : ()
 					  ),
-					  ["Google Maps (BBBike)", $BBBike::BBBIKE_GOOGLEMAP_URL],
+					  ["Google Maps (BBBike)", $BBBike::BBBIKE_GOOGLEMAP_URL, '_public'],
 					 );
 	    for my $def (@bbbike_google_map_defs) {
-		my($label, $baseurl) = @$def;
-		my $need_indentation;
-		if ($bbbike_google_photo) {
-		    $info_text->imageCreate("end", -image => $bbbike_google_photo,
-					    -align => "bottom", -padx => 2, -pady => 1);
-		} else {
-		    $need_indentation = 1;
-		}
-		$info_text->insert("end", $label,
-				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-		$show_url->($linkcount, sub {
-				my $center = "$px,$py";
-				my $zoom;
-				if ($mapscale_scale < 2000) {
-				    $zoom = 18;
-				} elsif ($mapscale_scale < 4000) {
-				    $zoom = 17;
-				} elsif ($mapscale_scale < 8000) {
-				    $zoom = 16;
-				} elsif ($mapscale_scale < 16000) {
-				    $zoom = 15;
-				} else {
-				    $zoom = 14;
-				}
-				BBBikeUtil::uri_with_query($baseurl,
-							   [center => $center,
-							    zoom => $zoom,
-							    autosel => 1,
-							    maptype => "hybrid",
-							    coordsystem => "polar",
-							    mapmode => "addroute"]);
-			    });
-		$info_text->insert("end", "\n");
-		$linkcount++;
+		my($label, $baseurl, $key_suffix) = @$def;
+
+		my $key = 'bbbike_google_' . $key_suffix;
+		push @builtin_links_order, $key;
+
+		my $url = do {
+		    my $center = "$px,$py";
+		    my $zoom;
+		    if ($mapscale_scale < 2000) {
+			$zoom = 18;
+		    } elsif ($mapscale_scale < 4000) {
+			$zoom = 17;
+		    } elsif ($mapscale_scale < 8000) {
+			$zoom = 16;
+		    } elsif ($mapscale_scale < 16000) {
+			$zoom = 15;
+		    } else {
+			$zoom = 14;
+		    }
+		    BBBikeUtil::uri_with_query($baseurl,
+					       [center => $center,
+						zoom => $zoom,
+						autosel => 1,
+						maptype => "hybrid",
+						coordsystem => "polar",
+						mapmode => "addroute"]);
+		};
+
+		$builtin_links{$key} = {
+		    name => $label,
+		    callback => sub { $open_url->($url) },
+		    callback_3_std => sub { $url },
+		    ($bbbike_google_photo ? (icon => $bbbike_google_photo) : ()),
+		    tags => [qw(aerial)],
+		};
 	    }
 	}
 
