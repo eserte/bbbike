@@ -14378,14 +14378,18 @@ sub show_info {
 	    (-label => M"Link kopieren",
 	     -command => sub { $copy_link->() },
 	    );
+	my $open_url = sub {
+	    my $url = shift;
+	    $url = ref $url eq 'CODE' ? $url->() : $url;
+	    require WWWBrowser;
+	    main::status_message("URL: $url", "info");
+	    WWWBrowser::start_browser($url);
+	};
 	my $show_url = sub {
 	    my($linkcount, $url, $my_link_menu) = @_;
 	    $info_text->tagBind
 		("link$linkcount", "<ButtonRelease-1>" => sub {
-		     my $url = ref $url eq 'CODE' ? $url->() : $url;
-		     require WWWBrowser;
-		     main::status_message("URL: $url", "info");
-		     WWWBrowser::start_browser($url);
+		     $open_url->($url);
 		 }
 		);
 	    if (!$my_link_menu) {
@@ -14444,9 +14448,7 @@ sub show_info {
 		    $www_link_menu->command
 			(-label => M"Allgemeine Google-Suche",
 			 -command => sub {
-			     require WWWBrowser;
-			     main::status_message("URL: $common_url", "info");
-			     WWWBrowser::start_browser($common_url);
+			     $open_url->($common_url);
 			 }
 		     );
 		}
@@ -14677,9 +14679,7 @@ sub show_info {
 		$leaflet_menu->command
 		    (-label => M"BBBike Leaflet mit Marker",
 		     -command => sub {
-			 require WWWBrowser;
-			 main::status_message("URL: $marker_url", "info");
-			 WWWBrowser::start_browser($marker_url);
+			 $open_url->($marker_url);
 		     }
 		    );
 		$leaflet_menu->command
@@ -14689,9 +14689,7 @@ sub show_info {
 		$leaflet_menu->command
 		    (-label => M"Private Fragezeichen",
 		     -command => sub {
-			 require WWWBrowser;
-			 main::status_message("URL: $privfz_url", "info");
-			 WWWBrowser::start_browser($privfz_url);
+			 $open_url->($privfz_url);
 		     },
 		    );
 
@@ -14892,9 +14890,7 @@ sub show_info {
 		$googlemaps_menu->command
 		    (-label => $label,
 		     -command => sub {
-			 require WWWBrowser;
-			 main::status_message("URL: $url", "info");
-			 WWWBrowser::start_browser($url);
+			 $open_url->($url);
 		     },
 		    );
 	    };
@@ -14911,9 +14907,7 @@ sub show_info {
 	    $builtin_links{$key} = {
 		name => 'Google Maps' . ($devel_host ? ' (Original)' : ''),
 		callback => sub {
-		    require WWWBrowser;
-		    main::status_message("Start browser with URL $normal_url", 'info');
-		    WWWBrowser::start_browser($normal_url);
+		    $open_url->($normal_url);
 		},
 		callback_3 => sub {
 		    my(%args) = @_;
