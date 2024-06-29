@@ -14343,8 +14343,128 @@ sub show_info {
 	}
     }
 
-    my $show_info_sub = sub {
-	my($name, $good_link_for_strname, $outside_berlin, $important_txt_and_tag, $unimportant_txt_and_tag) = @_;
+    my @important_txt_and_tag;
+    my @info_txt_and_tag;
+    my @internal_canvas_tags;
+
+ FIND_INFO: {
+	if (defined $str_file{$base_tag} && $str_file{$base_tag} =~ /\.shp$/) {
+	    (my $dbf_file = $str_file{$base_tag}) =~ s/\.shp$/.dbf/;
+	    require BBBikeAdvanced;
+	    my $index;
+	    for (@tags) {
+		if (/^$base_tag-(\d+)/) {
+		    $index = $1;
+		    last;
+		}
+	    }
+	    if (defined $index) {
+		my $dbf_info = get_dbf_info($dbf_file, $index);
+		if (defined $dbf_info) {
+		    if (@tags > 3) {
+			my $text = splice @tags, 2, 1;
+			unshift @tags, $text, "";
+		    }
+		    push @important_txt_and_tag, "$dbf_info\n", undef;
+		    push @internal_canvas_tags, join("\n", @tags), undef;
+		    last FIND_INFO;
+		}
+	    }
+	}
+
+	my(%info, $info_file);
+	eval {
+	    require DB_File;
+	    require Fcntl;
+	    if (!$is_p) {
+		if ($str_file{$base_tag} !~ m|^/|) {
+		    $str_file{$base_tag} = "$datadir/$str_file{$base_tag}";
+		}
+		$info_file = $str_file{$base_tag} . "-info";
+	    } else {
+		if ($p_file{$base_tag} !~ m|^/|) {
+		    $p_file{$base_tag} = "$datadir/$p_file{$base_tag}";
+		}
+		$info_file = $p_file{$base_tag} . "-info";
+	    }
+	}; warn $@ if $@;
+
+	if ($info_file && tie %info, 'DB_File', $info_file, &Fcntl::O_RDONLY) {
+	    warn "Use $info_file ...\n";
+	TRY: {
+		foreach my $i (1 .. 4) {
+		    if (defined $tags[$i]) {
+			if (defined $info{$tags[$i]}) {
+			    push @info_txt_and_tag, $info{$tags[$i]}, undef;
+			    last TRY;
+			}
+			if ($tags[$i] =~ /^L\d+-(\d+)/) {
+			    my $id = $1;
+			    foreach my $type (qw(s p)) {
+				if (defined $info{"$type-$id"}) {
+				    push @info_txt_and_tag, $info{"$type-$id"}, undef;
+				    last TRY;
+				}
+			    }
+			    if (defined $info{$id}) {
+				push @info_txt_and_tag, $info{$id}, undef;
+				last TRY;
+			    }
+			}
+		    }
+		}
+	    }
+	    push @internal_canvas_tags, join("\n", @tags), undef;
+	    untie %info;
+	    last FIND_INFO;
+	}
+
+	if ($advanced) {
+	    if (@tags > 3) {
+		my $text = splice @tags, 2, 1;
+		unshift @tags, $text, "";
+	    }
+
+	    # XXX slightly hackish: link to the OSM node/way/... browser
+	    # XXX and a tag for osm_watch
+	    {
+		my $osm_version;
+		my $osm_type;
+		my $osm_id;
+		for (@tags) {
+		    if (my($_type,$_id) = $_ =~ m{^osm-(node|way|relation)-(\d+)$}) {
+			push @tags, "https://www.openstreetmap.org/$_type/$_id";
+			push @tags, "https://osm.mapki.com/history/$_type/$_id";
+			($osm_type, $osm_id) = ($_type, $_id);
+		    } elsif ($_ =~ m{\bversion=(\d+)}) {
+			$osm_version = $1;
+		    }
+		}
+		if ($osm_version && $osm_id && $osm_type) {
+		    push @tags, qq{#: osm_watch: $osm_type id="$osm_id" version="$osm_version"};
+		}
+	    }
+
+	    push @internal_canvas_tags, map { ($_, undef) } @tags;
+	}
+    }
+
+    if (@internal_canvas_tags) {
+	unshift @internal_canvas_tags, M("Interne Canvas-Tags").":\n", "bold";
+    }
+    if (@above_tags) {
+	push @internal_canvas_tags, "\n".M("Oben liegende interne Canvas-Tags").":\n", "bold";
+    }
+    if (@info_txt_and_tag) {
+	unshift @info_txt_and_tag, M("Info").":\n", "bold";
+    }
+
+    my $show_info_sub;
+    $show_info_sub = sub {
+	my $name = $strname;
+	my $important_txt_and_tag = [ @important_txt_and_tag, @info_txt_and_tag ];
+	my $unimportant_txt_and_tag = [ @internal_canvas_tags ];
+
 	#my $tl_tag = "info-$base_tag"; # one window per canvas type
 	my $tl_tag = "info"; # one window for all
 	my $info_top = redisplay_top($top, $tl_tag,
@@ -14970,7 +15090,7 @@ sub show_info {
 			mapscale_scale => $mapscale_scale,
 			tags => \@tags,
 		       );
-	    if ($name =~ /last checked: (\d{4}-\d{2}-\d{2})/) {
+	    if (($name||'') =~ /last checked: (\d{4}-\d{2}-\d{2})/) {
 		push @args, last_checked => $1;
 	    }
 	    if ($plugin->{visibility} && !$plugin->{visibility}->(@args)) {
@@ -15141,132 +15261,7 @@ EOF
 
     };
 
-    my @important_txt_and_tag;
-    my @info_txt_and_tag;
-    my @internal_canvas_tags;
-
- FIND_INFO: {
-	if (defined $str_file{$base_tag} && $str_file{$base_tag} =~ /\.shp$/) {
-	    (my $dbf_file = $str_file{$base_tag}) =~ s/\.shp$/.dbf/;
-	    require BBBikeAdvanced;
-	    my $index;
-	    for (@tags) {
-		if (/^$base_tag-(\d+)/) {
-		    $index = $1;
-		    last;
-		}
-	    }
-	    if (defined $index) {
-		my $dbf_info = get_dbf_info($dbf_file, $index);
-		if (defined $dbf_info) {
-		    if (@tags > 3) {
-			my $text = splice @tags, 2, 1;
-			unshift @tags, $text, "";
-		    }
-		    push @important_txt_and_tag, "$dbf_info\n", undef;
-		    push @internal_canvas_tags, join("\n", @tags), undef;
-		    last FIND_INFO;
-		}
-	    }
-	}
-
-	my(%info, $info_file);
-	eval {
-	    require DB_File;
-	    require Fcntl;
-	    if (!$is_p) {
-		if ($str_file{$base_tag} !~ m|^/|) {
-		    $str_file{$base_tag} = "$datadir/$str_file{$base_tag}";
-		}
-		$info_file = $str_file{$base_tag} . "-info";
-	    } else {
-		if ($p_file{$base_tag} !~ m|^/|) {
-		    $p_file{$base_tag} = "$datadir/$p_file{$base_tag}";
-		}
-		$info_file = $p_file{$base_tag} . "-info";
-	    }
-	}; warn $@ if $@;
-
-	if ($info_file && tie %info, 'DB_File', $info_file, &Fcntl::O_RDONLY) {
-	    warn "Use $info_file ...\n";
-	TRY: {
-		foreach my $i (1 .. 4) {
-		    if (defined $tags[$i]) {
-			if (defined $info{$tags[$i]}) {
-			    push @info_txt_and_tag, $info{$tags[$i]}, undef;
-			    last TRY;
-			}
-			if ($tags[$i] =~ /^L\d+-(\d+)/) {
-			    my $id = $1;
-			    foreach my $type (qw(s p)) {
-				if (defined $info{"$type-$id"}) {
-				    push @info_txt_and_tag, $info{"$type-$id"}, undef;
-				    last TRY;
-				}
-			    }
-			    if (defined $info{$id}) {
-				push @info_txt_and_tag, $info{$id}, undef;
-				last TRY;
-			    }
-			}
-		    }
-		}
-	    }
-	    push @internal_canvas_tags, join("\n", @tags), undef;
-	    untie %info;
-	    last FIND_INFO;
-	}
-
-	if ($advanced) {
-	    if (@tags > 3) {
-		my $text = splice @tags, 2, 1;
-		unshift @tags, $text, "";
-	    }
-
-	    # XXX slightly hackish: link to the OSM node/way/... browser
-	    # XXX and a tag for osm_watch
-	    {
-		my $osm_version;
-		my $osm_type;
-		my $osm_id;
-		for (@tags) {
-		    if (my($_type,$_id) = $_ =~ m{^osm-(node|way|relation)-(\d+)$}) {
-			push @tags, "https://www.openstreetmap.org/$_type/$_id";
-			push @tags, "https://osm.mapki.com/history/$_type/$_id";
-			($osm_type, $osm_id) = ($_type, $_id);
-		    } elsif ($_ =~ m{\bversion=(\d+)}) {
-			$osm_version = $1;
-		    }
-		}
-		if ($osm_version && $osm_id && $osm_type) {
-		    push @tags, qq{#: osm_watch: $osm_type id="$osm_id" version="$osm_version"};
-		}
-	    }
-
-	    push @internal_canvas_tags, map { ($_, undef) } @tags;
-	}
-    }
-
-    if (@internal_canvas_tags) {
-	unshift @internal_canvas_tags, M("Interne Canvas-Tags").":\n", "bold";
-    }
-    if (@above_tags) {
-	push @internal_canvas_tags, "\n".M("Oben liegende interne Canvas-Tags").":\n", "bold";
-    }
-    if (@info_txt_and_tag) {
-	unshift @info_txt_and_tag, M("Info").":\n", "bold";
-    }
-    $show_info_sub->($strname,
-		     $good_link_for_strname,
-		     $outside_berlin,
-		     [
-		      @important_txt_and_tag,
-		      @info_txt_and_tag,
-		     ],
-		     [
-		      @internal_canvas_tags,
-		     ],
-		    );
+    $show_info_sub->();
 }
 
 # Used for mapping bbbike perl/tk layers to mapserver or leaflet layers
