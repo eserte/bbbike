@@ -14614,16 +14614,15 @@ sub show_info {
 
 	my($mapscale_scale) = $mapscale =~ /:\s*(\d+)/;
 
+	# BBBikeLeaflet
 	{
 	    if (!$bbbike_leaflet_photo) {
 		$bbbike_leaflet_photo = load_photo($top, 'bbbike_leaflet_16');
 	    }
-	    my $need_indentation;
-	    if (!$bbbike_leaflet_photo) {
-		$need_indentation = 1;
-	    }
-	    my $show_leaflet_url = sub {
-		my($baseurl, $linkcount) = @_;
+
+	    # 
+	    my $prepare_leaflet_urls = sub {
+		my($baseurl) = @_;
 
 		my($marker_url, $normal_url, $privfz_url);
 		{
@@ -14693,30 +14692,44 @@ sub show_info {
 		     },
 		    );
 
-		$show_url->($linkcount, $normal_url, $leaflet_menu);
+		($normal_url, $leaflet_menu);
 	    };
 
+	    my @bbbike_leaflet_defs;
 	    if ($devel_host) {
-		if ($bbbike_leaflet_photo) {
-		    $info_text->imageCreate('end', -image => $bbbike_leaflet_photo,
-					    -align => "bottom", -padx => 2, -pady => 1);
-		}
-		$info_text->insert("end", "BBBike Leaflet (local)",
-				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-		$show_leaflet_url->("http://localhost/bbbike/cgi/bbbikeleaflet.cgi", $linkcount);
-		$info_text->insert("end", "\n");
-		$linkcount++;
+		push @bbbike_leaflet_defs, [
+		    'http://localhost/bbbike/cgi/bbbikeleaflet.cgi',
+		    'BBBike Leaflet (local)',
+		    '_local',
+		];
 	    }
+	    push @bbbike_leaflet_defs, [
+		$BBBike::BBBIKE_LEAFLET_CGI_URL,
+		'BBBike Leaflet',
+		'_public',
+	    ];
 
-	    if ($bbbike_leaflet_photo) {
-		$info_text->imageCreate('end', -image => $bbbike_leaflet_photo,
-					-align => "bottom", -padx => 2, -pady => 1);
+	    for my $def (@bbbike_leaflet_defs) {
+		my($base_url, $label, $key_suffix) = @$def;
+
+		my $key = 'bbbike_leaflet' . $key_suffix;
+		push @builtin_links_order, $key;
+
+		my($normal_url, $leaflet_menu) = $prepare_leaflet_urls->($base_url);
+
+		$builtin_links{$key} = {
+		    name => $label,
+		    callback => sub { $open_url->($normal_url) },
+		    callback_3 => sub {
+			my(%args) = @_;
+			my $w = $args{widget};
+			my $e = $w->XEvent;
+			$leaflet_menu->Post($e->X, $e->Y);
+			Tk->break;
+		    },
+		    ($bbbike_leaflet_photo ? (icon => $bbbike_leaflet_photo) : ()),
+		};
 	    }
-	    $info_text->insert("end", "BBBike Leaflet",
-			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_leaflet_url->($BBBike::BBBIKE_LEAFLET_CGI_URL, $linkcount);
-	    $info_text->insert("end", "\n");
-	    $linkcount++;
 	}
 
 	# Mapserver
