@@ -14903,6 +14903,7 @@ sub show_info {
 	    $googlemaps_show_url_menu_item->("Aerial",  "$normal_url/data=!3m1!1e3");
 	    $googlemaps_show_url_menu_item->("Traffic", "$normal_url/data=!5m1!1e1");
 	    $googlemaps_show_url_menu_item->("Bicycle", "$normal_url/data=!5m1!1e3");
+	    $googlemaps_show_url_menu_item->('Street View', sprintf('https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=%s,%s',$py,$px));
 	    $googlemaps_menu->separator;
 	    $googlemaps_menu->command
 		(-label => M"Link kopieren",
