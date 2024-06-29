@@ -1198,13 +1198,16 @@ Kurpark: Verbesserung der Befahrbarkeit geplant	?::projected 24964,6046 25183,60
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1410852.php (Erwähnung eines barrierefreien Ausbaus)
 #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/gleisbauarbeiten-in-drei-ortsteilen_a406467
 #: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Gleiserneuerung in der Ostendstr. 28.06.2024 - 20.10.2024, vielleicht wird auch an Radspuren weiter gearbeitet?)
+#: by: https://www.bahninfo-forum.de/read.php?9,726524,803137#msg-803137 (Gleiserneuerung 6.7.2024 - 20.10.2024 --- wird es zu Sperrungen kommen? gibt es danach Radverkehrsanlagen?)
 #: source_id: 2147343845 (Gesamtmaßnahme bis Mitte April 2019) (inaktiv)
 #: source_id: 2147343951 (bis Mitte April 2019) (inaktiv)
 #: osm_watch: way id="93704161" version="23"
 #: last_checked: 2024-05-06 vvv
 #: check_frequency: 90d vvv
+#: next_check: 2024-07-06 vvv
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19957,5941 19795,5935
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19010,5833
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1763,7 +1766,7 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::p
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10124 (Antrag: Sanierung und Verkehrsberuhigung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-22166
 #: osm_watch: way id="27959240" version="47"
-#: osm_watch: way id="878343305" version="13"
+#: osm_watch: way id="878343305" version="14"
 #: osm_watch: note 4041955 5
 #: XXX Ab AdK wird Richtung Süden ein neuer Verbundsteinpflasterradweg (oder teilweise sogar asphaltiert?) gebaut, vermutlich nur bis Merler Weg, vielleicht auch bis Ruwersteig
 #: last_checked: 2024-06-02
@@ -2567,7 +2570,7 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: last_checked: 2024-06-23 (mapillary)
 #: check_frequency: 120d
 #: XXX Qualität? culdesac-Eintrag zu culdesac_pseudo machen
-#: osm_watch: way id="1289391017" version="1"
+#: osm_watch: way id="1289391017" version="2"
 (Blütenweißweg - Harnischweg): Wegverbindung in Bau (vermutlich nur für Radfahrer/Fußgänger); Qualität? Beleuchtung?	?::inwork 21427,5347 21399,5336 21363,5336
 # REMOVED (laut osm offen) --- #: last_checked: 2022-11-12 --- #: check_frequency: 120d --- #: osm_watch: way id="721602418" version="4" --- (Uferweg - Eiselenweg): wird hier die Radroute neu geführt? Weg ist asphaltiert	?::inwork 21518,5389 21483,5374
 # REMOVED (-> strassen-orig) --- #: XXX Planstraße 1+2 -> Carl-Spindler-Str. --- #: XXX laut Amtsblatt auch Privatstraße? --- Carl-Spindler-Str.: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität: Asphalt. Anbindung zum Uferweg?	?::projected 21442,5414 21482,5388 21483,5374 21514,5310 21547,5245 21408,5178 21345,5157
@@ -4623,9 +4626,11 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: by: https://www.glienicke.eu/portal/meldungen/gemeinde-setzt-bei-diskussion-ueber-strassensperrungen-im-waldseeviertel-auf-dialog-904012538-22451.html?rubrik=904000002
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11271 (Anfrage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11339 (Anfrage)
+#: by: https://changing-cities.org/fuer-das-recht-auf-ruhe-und-sicherheit/
+#: by: https://www.berliner-zeitung.de/news/reinickendorf-waldseeviertel-erbitterter-kampf-der-buergerinitiativen-li.2222754
 #: priority: #C vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2024-05-01 (indoor) vvv
+#: last_checked: 2024-06-29 (indoor) vvv
 #: check_frequency: 60d vvv
 #: also_indoor: search Schildower_Straße
 Schildower Str.: wird hier ein modaler Filter entstehen?	? 4914,24366 4898,24351
@@ -5485,7 +5490,7 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 31.08.2023, Gesamtbaumaßnahme bis 11/2023) (bis 15.10.2023) (inaktiv) (bis 31.01.2024) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024) (inaktiv)
 #: source_id: viz2021:13.438124,52.520164,18.04.2024,06:00 (bis 30.06.2024) (bis 26.07.2024)
 #: source_id: viz2021:13.43794,52.52035,18.04.2024,06:00 (bis 30.06.2024) (inaktiv)
-#: source_id: viz2021:13.43786,52.52023,27.06.2024,15:16 (bis 26.07.2024)
+#: source_id: viz2021:13.43786,52.52023,27.06.2024,15:16 (bis 26.07.2024) (inaktiv)
 #: osm_watch: note 4161500 4
 #: note: (weggedrehte) Masten steht schon
 #: last_checked: 2024-06-26
@@ -6085,13 +6090,13 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf (temporär für 3 Monate)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2024-06-28
+#: last_checked: 2024-06-29
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/an-der-landsberger-allee-kracht-es-im-bezirk-am-haeufigsten_a377796
 #: XXX In welcher Richtung (vermutlich Richtung Westen offen)? Wird die Einbahnstraße auch für Radfahrer gelten?
-#: last_checked: 2024-06-28
+#: last_checked: 2024-06-29
 #: check_frequency: 90d
 Hirschberger Str.: Planung einer Einbahnstraße	? 14988,11130 15021,11152 15056,11138 15102,11120
 # 
@@ -6099,7 +6104,7 @@ Hirschberger Str.: Planung einer Einbahnstraße	? 14988,11130 15021,11152 15056,1
 #: by: https://www.infravelo.de/projekt/hauptstrasse/ (wird auf der Website falsch verlinkt) (4. Quartal 2023 - 2. Quartal 2024)
 #: by: https://www.infravelo.de/api/v1/project/9110031/ (korrekte Verlinkung auf JSON-Daten)
 #: osm_watch: note 4247704 6
-#: osm_watch: way id="1286852473" version="3"
+#: osm_watch: way id="1286852473" version="4"
 #: XXX Sieht weitgehend fertig aus --- wann erfolgt die Freigabe?
 #: last_checked: 2024-06-28
 #: check_frequency: 7d
@@ -7542,7 +7547,9 @@ Marggraffbrücke: Abriss und Neubau	?::inwork 16677,6892 16720,6845
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=35938
 #: source_id: LS/221-F/24/020 (vorbereitende Arbeiten? bis 22.02.2024) (inaktiv)
-#: next_check: 2024-06-30
+#: osm_watch: way id="480741330" version="4"
+#: last_checked: 2024-06-29 (inddor)
+#: check_frequency: 120d
 Treplin: gemeinsamer Rad- und Gehweg geplant (Südseite)	?::projected 77835,204 78034,231 78222,234 78407,105
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=67129
@@ -7550,7 +7557,9 @@ Treplin: gemeinsamer Rad- und Gehweg geplant (Südseite)	?::projected 77835,204 7
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=46869 (Planänderung)
 #: by: https://www.o-sp.de/download/lbvbrandenburg/237545
 #: by: https://www.o-sp.de/download/lbvbrandenburg/237547
-#: next_check: 2024-06-30
+#: osm_watch: way id="210944853" version="11"
+#: last_checked: 2024-06-29 (indoor)
+#: check_frequency: 120d
 Petersdorf: gemeinsamer Rad -und Gehweg geplant (Westseite)	?::projected 56609,-8625 56222,-9173 55893,-9428 55825,-9556 55610,-10222
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
@@ -8436,6 +8445,13 @@ Altstadt Köpenick: Bauarbeiten an Straßenbahngleisen und Wasserleitungen geplant
 #: last_checked: 2024-06-22
 #: next_check: 2027-12-31
 Königsberger Str.: Verbreiterung und Erneuerung der Radwege	? 5256,2379 5229,2395 5191,2416 5060,2490 4968,2543 4943,2557 4750,2667 4702,2676 4526,2648 4392,2628 4348,2627 4317,2638 4233,2675 4170,2727
+# 
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=75609 (2021)
+# REMOVED --- #: XXX bis wann ist gilt hier die Einbahnstraßenregelung? --- #: XXX_prog: eigentlich 1s:q4:inwork, kollidiert aber mit dem normalen handicap_s-orig-Eintrag --- #: last_checked: 2021-05-29 --- #: next_check: 2021-05-31 --- #: valid: -20210531 --- 1::inwork ---
+#: by: https://www.bahninfo-forum.de/read.php?9,726524,803137#msg-803137
+#: by: https://www.bvg.de/dam/jcr:c5acc41d-c7a8-49fb-82cd-b827cf3191b5/240706_Karte_Schoeneweide_Karlshorst_240625.png (SEV-Wendeschleife)
+#: next_check: 2024-07-06
+Wildensteiner Str.: mögliche Einbahnstraßenregelung (wegen SEV), prüfen!	? 18627,8475 18528,8331
 # 
 #: section ^^^
 #: ignore ^^^
@@ -9401,7 +9417,7 @@ Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Paral
 #: XXX Vermutlich entsteht hier eine Abkürzung für den B-K-Radweg
 #: note: Gelände auch als "Napoleonkai" bekannt
 #: osm_watch: way id="113631587" version="6"
-#: osm_watch: note 4039470 3
+#: osm_watch: note 4039470 4
 #: priority: #A
 #: last_checked: 2024-04-28 (osm note)
 # REMOVED --- #: check_frequency: 45d
@@ -10096,10 +10112,10 @@ Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -31
 # REMOVED --- #: XXX Sarah-Kirsch-Str. (PLZ 12629) (laut LOR PLZ=12627+12629)
 # REMOVED --- #: XXX Ingeborg-Feustel-Str. (Privatstraße) (PLZ 12629) (laut LOR PLZ=12627+12629)
 # REMOVED --- #: next_check: 2023-12-31 vvv
-#: osm_watch: way id="198375762" version="9"
+#: osm_watch: way id="198375762" version="11"
 #: last_checked: 2024-06-02
 #: check_frequency: 30d
-Bebauungsplan 10-45: Stadtplatz geplant (geplanter Straßenname Gut Hellersdorf)	?::inwork 23265,15054 23283,15061 23339,15079 23348,15042 23452,15046
+Bebauungsplan 10-45: Stadtplatz geplant (geplanter Straßenname Gut Hellersdorf)	?::inwork 23265,15054 23282,15055 23305,15054 23314,15008 23452,15046
 # REMOVED (realisiert) --- #: osm_watch: way id="1098688706" version="2" --- Bebauungsplan 10-45: Planstraße C geplant (geplanter Straßenname Sarah-Kirsch-Str.)	?::projected 23452,15046 23569,15062 23693,15080
 # REMOVED (realisiert) --- #: osm_watch: way id="1098688708" version="2" --- Bebauungsplan 10-45: Rad/Gehweg geplant (geplanter Straßenname Elfriede-Brüning-Str.)	?::projected 23452,15046 23418,15234
 # REMOVED (realisiert) --- #: osm_watch: way id="1098688710" version="5" --- Bebauungsplan 10-45: Rad/Gehweg geplant (hier vielleicht auch Elfriede-Brüning-Str.?)	?::inwork 23418,15234 23399,15252

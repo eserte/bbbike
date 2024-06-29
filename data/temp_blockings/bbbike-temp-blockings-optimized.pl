@@ -7997,7 +7997,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee)
-#: also_indoor: traffic (ex-H,G,re-B[nur_Braunschweiger],W[nur_noch_Sonnenallee],T[nur_Braunschweiger])
+#: also_indoor: traffic (ex-H,ex-G,re-B,ex-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
 #: last_checked: 2024-06-18 vvv
@@ -8087,15 +8087,15 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1453468.php (10. Juni 2024 - 03.08.2024, in drei Bauphasen)
 #: note: kein Bürgersteig, deshalb 2 statt q4
 #: XXX nächste Bauphasen
-#: XXX - Waldnesselweg bis Pritstabelstraße - 01.07. bis 13.07.2024 
+# REMOVED (nun aktiv) --- #: XXX - Waldnesselweg bis Pritstabelstraße - 01.07. bis 13.07.2024 
 #: XXX - Pritstabelstraße bis Kienappelweg - 15.07. bis 03.08.2024 
-#: next_check: 2024-06-29
+#: next_check: 2024-07-13
 	2::inwork 23657,3508 23402,3779 23337,3762
 ',
          'dont_check_date' => 1,
-         'from' => 1717884000,
+         'from' => 1719698400,
          'id' => 4081,
-         'text' => 'Grüne Trift am Walde: Bauarbeiten zwischen Brassenpfad bis Waldnesselweg, Sperrung, vom 10.06.2024 bis 29.06.2024',
+         'text' => 'Grüne Trift am Walde: Bauarbeiten zwischen Waldnesselweg bis Pritstabelstr., Sperrung, vom 01.07.2024 bis 13.07.2024',
          'type' => 'gesperrt',
          'until' => undef
        },

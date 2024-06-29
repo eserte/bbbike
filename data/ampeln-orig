@@ -23,7 +23,7 @@ Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17736,5441
 Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2024-06-01 (mapillary)
+#: last_checked: 2024-06-15
 #: check_frequency: 30d
 #: next_check: 2025-04-30
 #: valid: -20250430
@@ -215,9 +215,10 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-06-24
+#: note: Halteverbotsschilder bis 30.09.2025
+#: last_checked: 2024-06-29
 #: check_frequency: 120d
-#: next_check: 2024-06-30
+#: next_check: 2025-09-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
@@ -262,7 +263,7 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
 #: last_checked: 2024-06-26
-#: next_check: 2024-06-30
+#: next_check: 2024-08-15
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
