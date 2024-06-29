@@ -14794,6 +14794,9 @@ sub show_info {
 	}
 
 	{
+	    my $key = 'wikipedia';
+	    push @builtin_links_order, $key;
+
 	    if (!$wikipedia_photo) {
 		$wikipedia_photo = load_photo($top, 'wikipedia');
 	    }
@@ -14808,19 +14811,12 @@ sub show_info {
 	    $url .= '&params=' . join("_", @y, @x) .
 		($city_obj->cityname eq 'Berlin' ? '_region:DE-BE_type:city&pagename=Berlin' : '');
 
-	    my $need_indentation;
-	    if ($wikipedia_photo) {
-		$info_text->imageCreate("end", -image => $wikipedia_photo,
-					-align => "bottom", -padx => 2, -pady => 1);
-	    } else {
-		$need_indentation = 1;
-	    }
-
-	    $info_text->insert("end", "Wikipedia Mapsources",
-			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_url->($linkcount, $url);
-	    $info_text->insert("end", "\n");
-	    $linkcount++;
+	    $builtin_links{$key} = {
+		name => 'Wikipedia Mapsources',
+		callback => sub { $open_url->($url) },
+		callback_3_std => sub { $url },
+		($wikipedia_photo ? (icon => $wikipedia_photo) : ()),
+	    };
 	}
 
 	if ($devel_host) {
