@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2021,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2021,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,13 +24,13 @@ use Image::ExifTool ();
 
 use GPS::GpsmanData;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub usage (;$) {
     my $msg = shift;
     print STDERR $msg, "\n" if $msg;
     die <<EOF;
-usage: $0 [-o ...] [--vehicle ...] [--brand ...] [--max-time-gap seconds] [--silent] [--debug] imagefiles ...
+usage: $0 [-o ...] [--vehicle ...] [--brand ...] [--max-time-gap seconds] [--fallback-device-clock] [--silent] [--debug] imagefiles ...
 EOF
 }
 
@@ -38,6 +38,7 @@ my $outfile;
 my $vehicle;
 my $brand;
 my $max_time_gap = 30;
+my $fallback_device_clock;
 my $silent;
 
 my $debug;
@@ -49,6 +50,7 @@ GetOptions(
 	   'vehicle=s'    => \$vehicle,
 	   'brand=s'      => \$brand,
 	   'max-time-gap=i'   => \$max_time_gap,
+	   'fallback-device-clock!' => \$fallback_device_clock,
 	   's|silent'     => \$silent,
 	   'debug'        => \$debug,
 	  )
@@ -118,8 +120,16 @@ IMAGE: for my $image_file (@image_files) {
 	{
 	    my $raw_date_time = $info->{"GPSDateTime$framespec"};
 	    if (!$raw_date_time) {
-		warn "WARN: Cannot get GPSDateTime from $image_file$framespec, ignoring file/frame...\n";
-		next FRAME_LOOP;
+		if ($fallback_device_clock) {
+		    $raw_date_time = $info->{"DateTimeOriginal$framespec"};
+		    if (!$raw_date_time) {
+			warn "WARN: Cannot get GPSDateTime nor Date/Time Original from $image_file$framespec, ignoring file/frame...\n";
+			next FRAME_LOOP;
+		    }
+		} else {
+		    warn "WARN: Cannot get GPSDateTime from $image_file$framespec, ignoring file/frame (consider to use --fallback-device-clock)...\n";
+		    next FRAME_LOOP;
+		}
 	    }
 	    $date_time = eval { DateTime::Format::ISO8601->parse_datetime($raw_date_time) };
 	    if (!$date_time) {
@@ -237,7 +247,7 @@ exif2gpsman - extract coordinates from image files and create a GPSMan file out 
 
 =head1 SYNOPSIS
 
-    exif2gpsman [-o outfile.trk] [--vehicle ...] [--brand ...] [--max-time-gap seconds] [--silent] image1 image2 ...
+    exif2gpsman [-o outfile.trk] [--vehicle ...] [--brand ...] [--max-time-gap seconds] [--fallback-device-clock] [--silent] image1 image2 ...
 
 =head1 DESCRIPTION
 
@@ -261,6 +271,11 @@ Set the C<srt:brand> property of the generated file.
 Maximum gap allowed for subsequent points to be in the same track
 segment. Defaults to 30s. If the gap is larger, then a new track
 segment will be created.
+
+=item C<--fallback-device-clock>
+
+Allow to use the "Date/Time Original" timestamp as a fallback if
+"GPSDateTime" is not available (seen on iPhone images).
 
 =item C<-o ...>
 
