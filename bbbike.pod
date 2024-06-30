@@ -961,51 +961,6 @@ Es wird eine Routenbeschreibung in der folgenden Form angezeigt:
 Diese Beschreibung kann in eine Datei geschrieben, ausgedruckt oder
 als Mail verschickt werden.
 
-B<Routenbeschreibung in den Palm laden>
-
-Folgendes gilt nur fE<uuml>r Unix-E<auml>hnliche Betriebssysteme.
-
-In C<$PATH> muss sich mindestens eins der folgenden Programme
-befinden: C<iSiloBSD>, C<iSiloLinux> oder C<pilot_makedoc>.
-
-Die Sourcen zu C<pilot_makedoc> bekommt man z.B. bei
-
-=over 4
-
-=item *
-
-L<ftp://ftp.forth.org/pub/PalmOS/>
-
-=item *
-
-L<ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/>
-
-=item *
-
-L<ftp://ftp.cso.uiuc.edu/pub/systems/PalmOS/>
-
-=back
-
-C<iSilo> ist ein anderes Format, das einen speziellen Palm-Viewer
-braucht, der allerdings HypertextfE<auml>hig ist. Die Binaries für die
-Umwandlung findet man unter L<ftp://ftp.iSilo.com/pub/>. Hinweise zum
-PalmViewer befinden sich auf der L<Homepage von iSilo|http://www.iSilo.com/>.
-
-Die E<Uuml>bertragung erfolgt automatisch, wenn C<pilot-xfer> installiert
-ist, welches man auf folgenden FTP-Servern bekommt:
-
-=over 4
-
-=item *
-
-L<ftp://ryeham.ee.ryerson.ca/pub/PalmOS>
-
-=item *
-
-L<ftp://ftp.forth.org/pub/PalmOS/ryerson/>
-
-=back
-
 =item Route löschen
 
 =for html <img src="images/cross.gif" alt="icon kreuz">

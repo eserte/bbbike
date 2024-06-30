@@ -839,53 +839,6 @@ Es wird eine Routenbeschreibung in der folgenden Form angezeigt:
 Diese Beschreibung kann in eine Datei geschrieben, ausgedruckt oder
 als Mail verschickt werden.
 </p>
-<p class="POD_TEXT">
-<b>Routenbeschreibung in den Palm laden</b>
-</p>
-<p class="POD_TEXT">
-Folgendes gilt nur f&uuml;r Unix-&auml;hnliche Betriebssysteme.
-</p>
-<p class="POD_TEXT">
-In <code>$PATH</code> muss sich mindestens eins der folgenden Programme
-befinden: <code>iSiloBSD</code>, <code>iSiloLinux</code> oder <code>pilot_makedoc</code>.
-</p>
-<p class="POD_TEXT">
-Die Sourcen zu <code>pilot_makedoc</code> bekommt man z.B. bei
-</p>
-<ul class="POD_LIST">
-<li class="POD_ITEM"><a name="_9"></a>
-<p class="POD_TEXT">
-<a class="POD_LINK" href="ftp://ftp.forth.org/pub/PalmOS/">ftp://ftp.forth.org/pub/PalmOS/</a>
-</p>
-<li class="POD_ITEM"><a name="_10"></a>
-<p class="POD_TEXT">
-<a class="POD_LINK" href="ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/">ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/</a>
-</p>
-<li class="POD_ITEM"><a name="_11"></a>
-<p class="POD_TEXT">
-<a class="POD_LINK" href="ftp://ftp.cso.uiuc.edu/pub/systems/PalmOS/">ftp://ftp.cso.uiuc.edu/pub/systems/PalmOS/</a>
-</p>
-</ul>
-<p class="POD_TEXT">
-<code>iSilo</code> ist ein anderes Format, das einen speziellen Palm-Viewer
-braucht, der allerdings Hypertextf&auml;hig ist. Die Binaries f&uuml;r die
-Umwandlung findet man unter <a class="POD_LINK" href="ftp://ftp.iSilo.com/pub/">ftp://ftp.iSilo.com/pub/</a>. Hinweise zum
-PalmViewer befinden sich auf der <a class="POD_LINK" href="http://www.iSilo.com/">Homepage von iSilo</a>.
-</p>
-<p class="POD_TEXT">
-Die &Uuml;bertragung erfolgt automatisch, wenn <code>pilot-xfer</code> installiert
-ist, welches man auf folgenden FTP-Servern bekommt:
-</p>
-<ul class="POD_LIST">
-<li class="POD_ITEM"><a name="_12"></a>
-<p class="POD_TEXT">
-<a class="POD_LINK" href="ftp://ryeham.ee.ryerson.ca/pub/PalmOS">ftp://ryeham.ee.ryerson.ca/pub/PalmOS</a>
-</p>
-<li class="POD_ITEM"><a name="_13"></a>
-<p class="POD_TEXT">
-<a class="POD_LINK" href="ftp://ftp.forth.org/pub/PalmOS/ryerson/">ftp://ftp.forth.org/pub/PalmOS/ryerson/</a>
-</p>
-</ul>
 <dt class="POD_ITEM"><a name="Route_l_schen1">Route l&ouml;schen</a>
 <dd><p class="POD_RAW"><img alt="icon kreuz" src="../images/cross.gif" />
 Mit Klick auf dieses Icon wird die aktuelle Route gel&ouml;scht.
@@ -1200,15 +1153,15 @@ F&uuml;r das Zeichnen der realen Karten sind folgende Programme aus
 dem pbmplus- bzw. netpbm-Paket notwendig:
 </p>
 <ul class="POD_LIST">
-<li class="POD_ITEM"><a name="_14"></a>
+<li class="POD_ITEM"><a name="_9"></a>
 <p class="POD_TEXT">
 giftoppm
 </p>
-<li class="POD_ITEM"><a name="_15"></a>
+<li class="POD_ITEM"><a name="_10"></a>
 <p class="POD_TEXT">
 pnmscale
 </p>
-<li class="POD_ITEM"><a name="_16"></a>
+<li class="POD_ITEM"><a name="_11"></a>
 <p class="POD_TEXT">
 djpeg (aus libjpeg)
 </p>
@@ -1245,13 +1198,13 @@ Direktive PixmapPath). Die zweite Zeile sorgt daf&uuml;r, dass
 Zu viele...
 </p>
 <ul class="POD_LIST">
-<li class="POD_ITEM"><a name="_17"></a>
+<li class="POD_ITEM"><a name="_12"></a>
 <p class="POD_TEXT">
 Entfernungen von manuell erzeugten Strecken werden bei der
 Wegbeschreibung nicht ber&uuml;cksichtigt, wenn eine Neuberechnung
 oder R&uuml;ckweg angew&auml;hlt wurde.
 </p>
-<li class="POD_ITEM"><a name="_18"></a>
+<li class="POD_ITEM"><a name="_13"></a>
 <p class="POD_TEXT">
 Suche: Das Anw&auml;hlen eines Punktes innerhalb einer gesperrten
 Stra&szlig;e ist f&auml;lschlicherweise erlaubt. =&gt; L&ouml;sung:
@@ -1259,27 +1212,27 @@ mit inaccessible_streets feststellen, ob der Punkt (oder beide
 Nachbarnpunkte) nicht erreicht werden kann und das Anw&auml;hlen
 verhindern.
 </p>
-<li class="POD_ITEM"><a name="_19"></a>
+<li class="POD_ITEM"><a name="_14"></a>
 <p class="POD_TEXT">
 optionadd...*search hat auch Auswirkungen auf den Men&uuml;punkt in
 Tk::Pod ... wie kann das begrenzt werden? Vielleicht MainWindow statt
 Toplevel f&uuml;r das Pod-Widget benutzen?
 </p>
-<li class="POD_ITEM"><a name="_20"></a>
+<li class="POD_ITEM"><a name="_15"></a>
 <p class="POD_TEXT">
 Beim Anzeigen einer Routenbeschreibung, die Landstra&szlig;en
 enth&auml;lt, wird nichts ausgegeben, wenn Landstra&szlig;en nicht
 gezeichnet sind. =&gt; in nearest_points evtl. Landstra&szlig;en bei
 Bedarf nachladen (wie feststellen???).
 </p>
-<li class="POD_ITEM"><a name="_21"></a>
+<li class="POD_ITEM"><a name="_16"></a>
 <p class="POD_TEXT">
 Vias verschieben etc.: wenn eine Via-Flagge sich unterhalb eines
 anderen Symbol befindet, kann es nicht angeklickt werden =&gt;
 L&ouml;sung: Start,Via,Zielflagge bekommen ein zus&auml;tzliches
 Tag, das relativ weit hinten in stack_order steht.
 </p>
-<li class="POD_ITEM"><a name="_22"></a>
+<li class="POD_ITEM"><a name="_17"></a>
 <p class="POD_TEXT">
 Ab und zu, besonders beim Wechseln zwischen Kartenmodi, reagiert bbbike
 beim Setzen eines Startpunktes nicht. Aushilfe: einmal &quot;Route l&ouml;schen&quot;
@@ -1289,7 +1242,7 @@ ausw&auml;hlen, danach geht es wieder. =&gt; scheint behoben zu sein
 </ul>
 <h2 class="POD_HEAD1"><a name="LIMITATIONS">LIMITATIONS</a></h2>
 <ul class="POD_LIST">
-<li class="POD_ITEM"><a name="_23"></a>
+<li class="POD_ITEM"><a name="_18"></a>
 <p class="POD_TEXT">
 Der Canvas-Postscript-Treiber kann mit rotierten Fonts nichts anfangen.
 </p>
