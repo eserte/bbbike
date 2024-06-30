@@ -6862,16 +6862,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	2::inwork 61299,108828 61164,108987 61054,109046 61261,109631 61517,110776
-',
-         'from' => 1689487200,
-         'id' => 3856,
-         'source_id' => '237300187',
-         'text' => 'Wollschow: Bauarbeiten, Sperrung, vom 17.07.2023, 08:00 Uhr bis 30.06.2024, 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1719756000
-       },
+       undef,
        undef,
        undef,
        undef,

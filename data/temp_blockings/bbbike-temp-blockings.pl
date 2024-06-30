@@ -40220,8 +40220,8 @@ EOF
        until => $isodate2epoch->("2024-06-30 16:00:00"),
        text  => 'Wollschow: Bauarbeiten, Sperrung, vom 17.07.2023, 08:00 Uhr bis 30.06.2024, 16:00 Uhr',
        type  => 'gesperrt',
-       source_id => '237300187',
        data  => <<EOF,
+#: source_id: 237300187 (inaktiv)
 	2::inwork 61299,108828 61164,108987 61054,109046 61261,109631 61517,110776
 EOF
      },
