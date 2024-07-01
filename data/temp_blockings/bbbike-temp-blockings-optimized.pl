@@ -2523,7 +2523,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2739,41 +2739,7 @@ Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
-#: by: https://kreuzberg-festival.de/
-#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
-#: by: https://nitter.net/VIZ_Berlin/status/1542565377942532096#m (auch Großbeerenstr.)
-#: by: https://berliner-abendblatt.de/2022/06/30/kreuzberg-festival-wir-haben-nicht-aufgegeben/
-#: historical_note: früher Bergmannstraßenfest, zwischenzeitlich Kreuzbergstraßenfest
-#: source_id: viz2021:13.38274,52.49156,01.07.2022,06:00
-#: source_id: viz2021:13.3767,52.4894,01.07.2022,06:00
-#: source_id: viz2021:13.3767,52.4894,30.06.2023,06:00 (bis 02.07.2023) (inaktiv)
-#: source_id: viz2021:13.3767,52.4894,30.06.2023,08:00 (bis 02.07.2023) (inaktiv)
-	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
-	3 9000,9509 8970,9323 9007,9264
-	3 9007,9264 8970,9323 9000,9509
-	2::temp 9000,9509 8970,9323
-',
-         'from' => 1719439200,
-         'id' => 2089,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              6,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
-         'text' => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28.06.2024 bis 30.06.2024)',
-         'type' => 'gesperrt',
-         'until' => 1719784799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3207,7 +3173,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Juni 8.00 - 20.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Juli 8.00 - 20.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -7467,13 +7433,15 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'data' => '#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
 #: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024) (inaktiv)
 #: note: explizite Umleitung für Radfahrer vor Ort
+#: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024
 	q4::inwork 3450,12722 3370,12725 3291,12721
 ',
+         'dont_check_date' => 1,
          'from' => 1707087600,
          'id' => 4005,
-         'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 02.08.2024',
+         'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 02.08.2024, evtl. länger bis 09.08.2024',
          'type' => 'handicap',
-         'until' => 1722614400
+         'until' => 1723219200
        },
        undef,
        undef,
@@ -7776,7 +7744,7 @@ Schustehrusstr.	q4::inwork 3528,12276 3623,12284
          'until' => undef
        },
        {
-         'data' => '#: also_indoor: traffic (G[falsch?],B)
+         'data' => '#: also_indoor: traffic (ex-G[falsch?],B,T)
 # REMOVED --- #: note: nur Umleitungsschilder für Radfahrer gesehen
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2024-06-22
@@ -7812,7 +7780,7 @@ Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-06-25
+#: last_checked: 2024-07-01 (webcam)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-06-12
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
@@ -7988,11 +7956,11 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee)
-#: also_indoor: traffic (ex-H,ex-G,re-B,ex-W,T)
+#: also_indoor: traffic (ex-H,ex-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-06-18 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2024-07-01 (traffic) vvv
+#: check_frequency: 7d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
 #: check_frequency ^^^
@@ -8299,6 +8267,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
        },
        {
          'data' => '#: next_check_id: WOLZIGERZEILE-2024
+#: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/unterfuehrung-am-s-bahnhof-lichtenrade-ist-fertig_a419600
 	2::inwork 10382,-2598 10365,-2603 10307,-2633
 ',
          'from' => 1719698400,
@@ -8306,6 +8275,17 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'text' => 'Wolziger Zeile: Sperrung des Bahnübergangs ab 1.7.2024',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: note: by rbb
+#: also_indoor: traffic (H,G,B,T,W)
+	q4::inwork 4415,11053 4399,10854
+',
+         'from' => 1719859975,
+         'id' => 4102,
+         'text' => 'Wielandstr.: zwischen Niebuhrstr. und Kantstr. Sperrung wegen Arbeiten an einer Brücke, evtl. sind auch Radfahrer betroffen, bis 26.07.2024 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1722031200
        }
      
 );

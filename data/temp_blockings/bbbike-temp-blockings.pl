@@ -42226,13 +42226,15 @@ Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
 EOF
      },
      { from  => 1707087600, # 2024-02-05 00:00
-       until => $isodate2epoch->("2024-08-02 18:00:00"), # 1722635940, # 2024-08-02 23:59
-       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 02.08.2024',
+       until => $isodate2epoch->("2024-08-09 18:00:00"), # 1722635940, # 2024-08-02 23:59
+       dont_check_date => 1,
+       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 02.08.2024, evtl. länger bis 09.08.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
 #: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024) (inaktiv)
 #: note: explizite Umleitung für Radfahrer vor Ort
+#: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024
 	q4::inwork 3450,12722 3370,12725 3291,12721
 EOF
      },
@@ -42917,7 +42919,7 @@ EOF
        text  => 'Südendstr.: Bauarbeiten zwischen Körnerstr. und Plantagenstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G[falsch?],B)
+#: also_indoor: traffic (ex-G[falsch?],B,T)
 # REMOVED --- #: note: nur Umleitungsschilder für Radfahrer gesehen
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2024-06-22
@@ -42952,7 +42954,7 @@ Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-06-25
+#: last_checked: 2024-07-01 (webcam)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-06-12
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
@@ -43192,11 +43194,11 @@ EOF
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee)
-#: also_indoor: traffic (ex-H,ex-G,re-B,ex-W,T)
+#: also_indoor: traffic (ex-H,ex-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-06-18 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2024-07-01 (traffic) vvv
+#: check_frequency: 7d vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
 #: check_frequency ^^^
@@ -43588,7 +43590,18 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLZIGERZEILE-2024
+#: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/unterfuehrung-am-s-bahnhof-lichtenrade-ist-fertig_a419600
 	2::inwork 10382,-2598 10365,-2603 10307,-2633
+EOF
+     },
+     { from  => 1719859975, # 2024-07-01 20:52
+       until => 1722031200, # 2024-07-27 00:00
+       text  => 'Wielandstr.: zwischen Niebuhrstr. und Kantstr. Sperrung wegen Arbeiten an einer Brücke, evtl. sind auch Radfahrer betroffen, bis 26.07.2024 17:00 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: by rbb
+#: also_indoor: traffic (H,G,B,T,W)
+	q4::inwork 4415,11053 4399,10854
 EOF
      },
     );

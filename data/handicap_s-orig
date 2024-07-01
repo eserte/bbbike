@@ -1113,51 +1113,6 @@ Königsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -19
 #: check_frequency: 90d
 Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 1077,3753 1422,3637 1485,3630
 # 
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.618687.php
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.623391.php
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.655961.php (Sperrung doch nicht erfolgt? Dafür Einbahnstraßenregelung ab Dez. 2017)
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6613
-#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/einbahnstrasse-ueberfluessig_a164510
-#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/zweiter-ausgang-am-s-bahnhof_a185615 (Neubau ab 2020)
-#: by: http://www.abendblatt-berlin.de/2019/04/29/lichterfelde-bruecken-neubau-startet-im-naechsten-jahr/ (Fertigstellung Ende 2021)
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltke-bruecke-beginnt-anfang-2020_a212011
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/abriss-der-moltkebruecke-ist-alternativlos_a237607
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1099457.php (Bauarbeiten voraussichtlich ab Oktober 2021)
-#: by: https://abendblatt-berlin.de/2021/07/05/steglitz-zehlendorf-die-marode-moltkebruecke-verschwindet/ (Bauarbeiten beginnen ab Oktober 2021, Behelfsbrücken ab Februar 2022, Abbruch der alten Brücke April 2022, Verkehrsfreigabe September 2023)
-#: by: https://mein.berlin.de/projekte/ersatzneubau-der-moltkebrucke-in-steglitz-zehlendo/
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltkebruecke-beginnt_a316440
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-neubau-der-moltkebruecke-startet-anfang-2022_a330836 (Fertigstellung Anfang 2024)
-#: by: https://sbahn.berlin/aktuelles/artikel/diese-bauprojekte-stehen-2022-an/
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1178507.php
-#: by: https://berliner-abendblatt.de/2022/01/24/bauprojekte-der-s-bahn-2022/
-#: by: https://berliner-abendblatt.de/2022/02/21/moltkebruecke/
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/alte-moltkebruecke-wird-abgerissen-und-durch-neubau-ersetzt_a337406 (Freigabe der Behelfsbrücke Ende April 2022)
-#: by: https://berliner-abendblatt.de/2022/02/28/titel-bruecken/
-#: by: https://berliner-abendblatt.de/2022/04/20/abriss-der-moltkebruecke-infotermin-fuer-anwohner/
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1200158.php (Abriss der Moltkebrücke bis 2.5.2022)
-#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/s-bahnhof-botanischer-garten-gesperrt_a344162
-#: by: https://berliner-abendblatt.de/2022/04/28/abriss-der-moltkebruecke-ersatzverkehr-am-wochenende/
-#: by: https://www.bz-berlin.de/berlin/steglitz-zehlendorf/moltkebruecke-in-lichterfelde-ist-nur-noch-geschichte
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1306410.php
-#: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/neubau-der-moltkebruecke-s1-unterbrochen-id213531
-#: by: https://nitter.cz/VIZ_Berlin/status/1639304567061102592#m
-#: by: https://www.stadtrand-nachrichten.de/moltkebruecke/
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/buerger-machen-sich-gedanken-ueber-die-zukunft-ihres-wohnviertels-am-botanischen-garten_a382252
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8816 (Antrag)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-4#post-21871
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/moltkebruecke/
-#: XXX Neubau der Brücke, laut osm bis 2024
-#: osm_watch: way id="13860352" version="27"
-# REMOVED --- #: osm_watch: way id="1056377427" version="3"
-#: osm_watch: way id="1032897295" version="10"
-#: osm_watch: way id="1056377426" version="6"
-#: also_indoor: traffic (G,re-H,B,W,T)
-#: priority: #A
-#: last_checked: 2024-06-22
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-03-01
-Moltkestraßenbrücke: Fußgänger, verschwenkte Wegführung	q4::inwork 3839,4577 3867,4537 3898,4490 3934,4441
-# 
 # REMOVED (hier nicht mehr bzw. integriert in die Moltkestraßenbrückensperrung) --- #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-01-20 (osm) --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
 ### Prenzlauer Berg ###

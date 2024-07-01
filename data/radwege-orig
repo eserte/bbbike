@@ -3412,10 +3412,11 @@ die letzten Meter über Gehweg geführt	RW4; -6704,16179 -6722,16112
 überwiegend Radspur, teilweise über Gehweg geführt	RW3; -6316,17363 -6518,16795
 überwiegend Radspur, teilweise über Gehweg geführt	RW4; -6518,16795 -6550,16706
 #: note: anonymous meint: "teilweise ja (zur Frage, ob es Radwege gibt), den Rest kann man auf dem Fußweg fahren oder ein kleines Stück auf glatter Straße. Ist aber eine Hauptverkehrsstraße. " (leider ungenau)
-	RW1; -410,21496 -249,21420 -130,21396
-#: historical_note: früher (bis Ende 2023/Anfang 2024) Zweirichtungsradweg)
-Gehweg für Radfahrer frei	RW1; -130,21396 415,21334 469,21303 598,21257 886,21221 1293,21123
-	RW4?; 1293,21123 886,21221 598,21257 469,21303 415,21334 -130,21396 -249,21420 -410,21496
+#: historical_note: früher (bis etwa Mitte 2024) Radweg
+	RW4?; -410,21496 -249,21420 -130,21396
+#: historical_note: früher (bis Ende 2023/Anfang 2024) Zweirichtungsradweg, (bis Mitte 2024) Gehweg für Radfahrer frei
+	RW4?; -130,21396 415,21334 469,21303 598,21257 886,21221 1293,21123
+	RW4?; 1293,21123 886,21221 598,21257 469,21303 415,21334 -130,21396 -249,21420 -410,21496 -459,21508
 	RW2;RW1 1293,21123 1445,21216
 Busspur ist immer gültig	RW5;RW5 2015,20336 1955,20435
 # REMOVED (keine Benutzungspflicht) --- #: XXX wird die Benutzungspflicht aufgehoben? --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3657 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3657 (Abordnung wird erfolgen) --- #: last_checked: 2015-09-12 --- #: check_frequency: 180d
@@ -4836,11 +4837,11 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 #: note: Asphalt sah älter aus
 #: note: stellenweise (etwa 100m) sollen Radfahrer absteigen
 # REMOVED (früher) --- Gehweg für Radfahrer frei, asphaltiert, schmal	RW9;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
-#: osm_watch: way id="24403109" version="42"
+#: osm_watch: way id="24403109" version="43"
 #: last_checked: 2023-03-08 (mapillary)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2024-09-30
-wegen Bauarbeiten ist der Gehweg gesperrt	RW0;RW0 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
+	RW4?;RW0 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
 # 
 # REMOVED ---	RW2;RW2 -1788,19663 -1726,19725 -1619,19754 -1419,19815 -1240,19869 -1202,19877
 	RW4; -1787,19341 -1774,19299 -1689,19056 -1661,18749
@@ -5239,7 +5240,8 @@ asphaltiert	RW1; -2087,16909 -1832,16858
 Verbundsteinpflaster	RW1; -1832,16858 -1771,16841
 	RW3; -1771,16841 -1675,16813
 Verbundsteinpflaster	RW1; -2728,17038 -2908,17072
-	RW1;RW1 -1654,22119 -1452,21978 -1198,21801 -1178,21786 -1035,21684 -908,21618 -751,21579 -481,21513 -459,21508 -410,21496
+	RW1;RW1 -1654,22119 -1452,21978 -1198,21801 -1178,21786 -1035,21684 -908,21618 -751,21579 -481,21513 -459,21508
+	RW1; -459,21508 -410,21496
 Verbundsteinpflaster	RW1;RW1 -1281,23746 -1328,23580 -1349,23497 -1392,23342 -1410,23283 -1425,23222 -1440,23163 -1500,22940 -1506,22923 -1538,22800 -1561,22649 -1581,22553 -1602,22422 -1633,22239 -1641,22189 -1647,22153 -1654,22119
 altes Verbundsteinpflaster	RW1; -2508,22627 -2343,22350 -2308,22304 -2259,22274 -2068,22213 -1943,22187 -1808,22158 -1701,22134 -1679,22127 -1654,22119
 	RW1; -1654,22119 -1679,22127 -1701,22134 -1808,22158 -1943,22187 -2068,22213 -2259,22274 -2308,22304 -2343,22350 -2508,22627

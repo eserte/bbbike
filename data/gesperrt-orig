@@ -4212,7 +4212,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: by: https://www.deutsches-architekturforum.de/thread/14770-wilmersdorf-halensee-grunewald-schmargendorf-kleinere-projekte/?postID=757826#post757826
 #: source_id: viz2021:13.33184,52.48035,31.07.2023,06:00 (Komplettsperrung bis 04.08.2023) (inaktiv)
 #: note: nur kurzer Einbahnstraßenabschnitt, etwa 20-30m
-#: last_checked: 2024-04-06 (architektur-urbanistik)
+#: last_checked: 2024-06-26 (architektur-urbanistik)
 #: check_frequency: 120d
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 5522,8024 5521,8087
 # REMOVED (hier nicht) --- Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5521,8087 5519,8159 5560,8204
@@ -5344,8 +5344,10 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.deutsches-architekturforum.de/thread/11563-kleinere-projekte-moabit/?postID=645524#post645524
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
-#: osm_watch: way id="501191631" version="4"
-#: osm_watch: note 4173331 2
+#: XXX Anschluss an der Gotzkowskybrücke ist noch nicht fertig
+#: osm_watch: way id="501191631" version="5"
+#: osm_watch: way id="1297686366" version="1"
+#: osm_watch: note 4173331 4
 #: last_checked: 2024-06-12
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 45d

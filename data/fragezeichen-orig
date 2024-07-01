@@ -313,7 +313,7 @@ Müllerstr.: zwischen Seestr. und Leopoldplatz werden Radspuren markiert (wegen B
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: XXX wenn hier, dann vielleicht auch in der Kongostraße?
 #: XXX laut osm mittlerweile asphaltiert
-#: osm_watch: way id="1204844078" version="6"
+#: osm_watch: way id="1204844078" version="7"
 #: last_checked: 2024-06-16
 #: check_frequency: 90d
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
@@ -1803,7 +1803,7 @@ Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::project
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf
 #: osm_watch: way id="352683182" version="19"
-#: osm_watch: way id="501402607" version="13"
+#: osm_watch: way id="501402607" version="14"
 #: last_checked: 2024-06-16
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -2126,7 +2126,7 @@ Friedenstr.: was wird hier genau gemacht?	?::projected 12325,13148 12382,13097 1
 #: by: https://abendblatt-berlin.de/2020/05/08/berlin-reinickendorf-radwege/ (bis Ende Mai 2020)
 #: by: https://www.infravelo.de/projekt/friederikestrasse/ ("abgeschlossen", nur der Abschnitt durch den Wald)
 #: XXX oder ist der schon realisierte Radstreifen im nördlichen Abschnitt gemeint?
-#: osm_watch: way id="5046356" version="16"
+#: osm_watch: way id="5046356" version="17"
 #: last_checked: 2024-03-08 (Luftbilder)
 #: check_frequency: 180d
 Friederikestr.: entsteht hier ein Radstreifen?	?::projected -1661,18749 -1654,18711 -1629,18417 -1616,18112
@@ -7113,8 +7113,8 @@ Wandlitz - Wensickendorf: Radwegbau, weitgehend realisiert, aber die Ausschilder
 Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltierungen?)	?::projected 2206,25649 2139,25830 2112,26066
 # REMOVED (fertig) --- Schönfließer Str.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltierungen?)	?::projected 2112,26066 2207,26090 2293,26111 2402,26121 2490,26126
 #: osm_watch: way id="54440179" version="30"
-#: osm_watch: way id="1294888596" version="1"
-#: osm_watch: way id="1294888597" version="1"
+#: osm_watch: way id="1294888596" version="2"
+#: osm_watch: way id="1294888597" version="2"
 Senheimer Str..: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltierungen?)	?::projected 2490,26126 2499,26128 2490,26126 2484,25984 2496,25915 2519,25772 2515,25666
 #: next_check ^^^
 #: last_checked ^^^
@@ -9571,6 +9571,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: by: https://www.rbb24.de/panorama/beitrag/2024/01/berlin-coral-world-rummelsburger-bucht-hotel-aquarium.html (Frist bis Mai 2026)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10088 (Antrag)
 #: by: https://www.tagesspiegel.de/berlin/mega-aquarium-an-der-rummelsburger-bucht-so-konnte-das-ocean-berlin-aussehen-11313115.html (Eröffnung Mai 2026)
+#: by: https://www.berliner-woche.de/rummelsburg/c-bauen/grosses-meeresmuseum-entsteht-an-der-rummelsburger-bucht_a418595
 # REMOVED (alle eingetragen) --- #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
 # REMOVED (eingetragen) --- #: XXX * bestehende Untere Kynaststr. -> An der Mole (PLZ=10317 laut LOR)
 # REMOVED --- #: XXX * Paul-und-Paula-Promenade --- #: XXX * Rummelsburger Seeblick (PLZ=10317 laut LOR) --- #: XXX * Ulrich-Plenzdorf-Str. (PLZ=10317 laut LOR) --- #: XXX * An den Eiswerken --- #: XXX * Heiner-Carow-Str. --- #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR) --- #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
@@ -11112,25 +11113,6 @@ Grünanlage neben dem Berghain: wann wird es hier eine benutzbare Grünfläche gebe
 #: check_frequency: 360d
 #: next_check: 2027-03-31
 Bebauungsplan 9-68 VE: Straßen geplant	? 20560,518 20722,562 20796,520 20841,354 20634,307 20599,423 20560,518
-# 
-#: by: https://www.infravelo.de/projekt/heiligenseestrasse/ (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023, noch in Planung) (4. Quartal 2023 - 2. Quartal 2024)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1315351.php (Umsetzung 2023)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11543 (Anfrage - Antwort: Radfahrstreifen beginnt erst am Schwarzen Weg)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11674 (Umsetzung noch 2023)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1382258.php (bis Ende November 2023; keine Änderung im Einmündungsbereich Konradshöher Str.)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11751 (Anfrage)
-#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/heiligenseestrasse-erhaelt-radstreifen_a398536
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11844 (Empfehlung)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11868 (Empfehlung)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11882 (Anfrage - Antwort)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1422388.php (Richtung Westen fertig)
-#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/radweg-an-der-heiligenseestrasse-freigegeben_a409061
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12205 (Fertigstellung 2024)
-#: osm_watch: way id="237303964" version="14"
-#: osm_watch: way id="37585560" version="18"
-#: last_checked: 2024-03-08 (Luftbilder)
-#: next_check: 2024-06-30
-Heiligenseestr.: Radfahrstreifen wird entstehen	?::inwork; -459,21508 -410,21496 -249,21420 -130,21396 415,21334 469,21303 598,21257 886,21221 1293,21123 1445,21216
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_17_1761_1912_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_19_1997_2128_online.pdf (Grundstücksnummerierungen)
