@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.19;
+$VERSION = 2.20;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -247,6 +247,13 @@ sub register {
 	  ($images{KartaView} ? (icon => $images{KartaView}) : ()),
 	  tags => [qw(streetview)],
 	};
+    $main::info_plugins{__PACKAGE__ . 'Mapilio'} =
+	{ name => 'Mapilio',
+	  callback => sub { showmap_mapilio(@_) },
+	  callback_3_std => sub { showmap_url_mapilio(@_) },
+	  ($images{Mapilio} ? (icon => $images{Mapilio}) : ()),
+	  tags => [qw(streetview)],
+        };
     $main::info_plugins{__PACKAGE__ . 'BerlinerLinien'} =
 	{ name => 'berliner-linien.de (VBB)',
 	  callback => sub { showmap_berlinerlinien(@_) },
@@ -699,6 +706,35 @@ aHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE2MDMyNzgw
 NDBt1/UOAAAAD3RFWHRUaHVtYjo6U2l6ZQAwQkKUoj7sAAAAVnRFWHRUaHVtYjo6VVJJAGZpbGU6
 Ly8vbW50bG9nL2Zhdmljb25zLzIwMjAtMTAtMjEvYWM0YzUxNTIxZmI3OWVmOTljMjQ2NjliMTg3
 NjE5NzUuaWNvLnBuZ/8pIS0AAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{Mapilio}) {
+	# Created with:
+	#   wget https://mapilio.com/mapilio_fav.png
+	#   convert -resize 16x16 mapilio_fav.png mapilio_fav2.png
+	#   pngcrush -brute -reduce -rem allb -m 0 mapilio_fav2.png mapilio_fav3.png
+	#   base64 mapilio_fav3.png
+	$images{Mapilio} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAkxQTFRF
+AAAAAFXu////AFXx3un9AEzVAE7bAFDwAFf1AE/wAEnPAEbvAFHyB07Vscjz////////////////
+////////AFbyAFLuM3Dgeab4ocH68vf+AErQAFTsAFPrIWzzocH6////AGP/AFDfAE3YV4/29vn/
+////AFLoAE/e7PP+////AEvS////AFPo////AFby////AFbx////AFbx////AFbx2OT5AFbxAFbx
+psT5QHzpAFb2AFbwAFHjkrf5HmjyABLsAE7cAE3ZAFTqg634EmDyAEnwAFbzAFTsAE3YbJ73Dl3y
+AEvwAEfKAE7eAFbwAFbxAFbxAFbxAFDhAU3fAlHyAEHv4er6////4ev9krf5fqXs4+39QoL1AFXx
+AFXxB1Latcvzkbb5AVXxAFbxAFbxAFPxAEvVEF3mydv7apz3AFPxAFbxAFTxMXb0AEvTAFPqDF7y
+wdb8faj4AFTxAFbxAFPxQoL19fj+AE/dAFDhAlfxnr/6yNv8HGjyAFPxAFTxBVjxlbn5AFTtAE3Y
+AFHoWJD2+fv//v7/r8r7P4D1Mnf0hK748/f+AFbxAFLlAE3ZEWDvudH7////8vb+7fP+/f7/AFbx
+AFbwAE7cAE7gOnz04Ov9////AFbxAFbxAFTsAEzWAFLoWZH27fP++Pr+AFbxAFPoAEzVAFHlAlfy
+Y5fz7fP8+/z/AE3XAFLmAFbwAFHlA07YY5Tt6/L9+fv/AFTsAE/cAE3ZAFPoAlXuV4rm4+z79fn/
+AFDhAFXvAFbxAFbxAE3bRYDqi8GEXAAAAFd0Uk5TAAAAAAAAAAAAAAAABkWi4PfgokUGF47r644W
+Fq3+/q0WBIz+/owEROnoQ6Cg3dv29fX13t6hoUXq6UQFkP7+jgUXrv7+rhcXjuvrjhcGRaLg9/fg
+okUGAVTq4gAAALdJREFUGBkFwTErxAEAB9Dfy9F1Ft1gMRlkkJBk+OdOYWM7420Wy5XkM1zKYvIF
+jMYz4cRgMVkuyWS4weAy6FLIexLjEPj4i4xUWZfQ5f3H6CS136SEW95Ms2aYVKCLWXUGSZXvsivm
+NtFPpnxOoGN+G6/JDOj1LDTgKYvg8dlSEx6SAvd5sbwHrpMk2Tqzsg90kiQ7p1a1gIskuycUHADn
+aR5jrOAQ0OZOynWOQJuboaSyAeDyK//KPCoKXDyvaAAAAABJRU5ErkJggg==
 EOF
     }
 
@@ -1790,6 +1826,23 @@ sub showmap_url_kartaview {
 sub showmap_kartaview {
     my(%args) = @_;
     my $url = showmap_url_kartaview(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Mapilio
+
+sub showmap_url_mapilio {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf 'https://mapilio.com/app?lat=%s&lng=%s&zoom=%f', $py, $px, $scale;
+}
+
+sub showmap_mapilio {
+    my(%args) = @_;
+    my $url = showmap_url_mapilio(%args);
     start_browser($url);
 }
 
