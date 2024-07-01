@@ -15166,14 +15166,14 @@ sub show_info {
 	}
 
 	{
-	    my @tags_for_list = grep { $seen_tags{$_} } qw(traffic pubtrans bicycle aerial osmedit);
+	    my @tags_for_list = grep { $seen_tags{$_} } qw(traffic pubtrans bicycle aerial streetview); # further tags would cause line overflow: osmedit
 	    if (@tags_for_list) {
 		$info_text->markSet('insert', 'taglist');
 		my $tagcount = 0;
 		for my $tag ('all', @tags_for_list) {
 		    my $tagactivetag = (!defined $current_tag_filter && $tag eq 'all') || (defined $current_tag_filter && $tag eq $current_tag_filter) ? 'tagactive' : 'taginactive';
-		    $info_text->insert('insert', ' ');
-		    $info_text->insert('insert', " $tag ", ['tag', $tagactivetag, "tag$tagcount"]);
+		    $info_text->insert('insert', " ");
+		    $info_text->insert('insert', "\x{a0}$tag\x{a0}", ['tag', $tagactivetag, "tag$tagcount"]);
 		    $info_text->tagBind("tag$tagcount", "<ButtonRelease-1>" => sub {
 					    if ($tag eq 'all') {
 						$current_tag_filter = undef;
