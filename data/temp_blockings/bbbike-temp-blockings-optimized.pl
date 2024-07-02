@@ -8286,6 +8286,32 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'text' => 'Wielandstr.: zwischen Niebuhrstr. und Kantstr. Sperrung wegen Arbeiten an einer Brücke, evtl. sind auch Radfahrer betroffen, bis 26.07.2024 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1722031200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.961546.php
+#: by: https://www.berliner-woche.de/lichtenrade/c-bauen/berlin-und-blankenfelde-mahlow-einigen-sich-auf-untertunnelung-der-s-bahnlinie-2-und-der-dresdner-bahn_a281032
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=62187
+#: by: https://www.o-sp.de/download/lbvbrandenburg/307076
+#: by: https://www.tagesspiegel.de/berlin/baustart-fuer-mauerweg-tunnel-in-berlin-nach-20-jahren-kampf-die-luecke-im-radweg-wird-geschlossen/28216968.html (2024 fertig)
+#: by: https://www.berliner-woche.de/lichtenrade/c-bauen/lueckenschluss-am-mauerweg_a341195
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20220724_Mahlow/
+#: by[nocache]: https://x.com/Verkehrshassel/status/1799455523164631267
+# REMOVED (deleted) --- #: osm_watch: way id="1049317376" version="1"
+# REMOVED (deleted) --- #: osm_watch: way id="1049317378" version="3"
+#: osm_watch: way id="1049317377" version="6"
+#: osm_watch: way id="383652784" version="11"
+#: osm_watch: way id="35002100" version="13"
+#: osm_watch: note 3115482 10
+#: add_fragezeichen: Ist der Weg offen? Wurden die Radroutenschilder (Mauerweg, Berlin-Leipzig) bereits angepasst?
+#: last_checked: 2024-05-29
+#: next_check: 2024-07-18
+	2::inwork 10467,-3201 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
+',
+         'from' => undef,
+         'id' => 4103,
+         'text' => 'Mauerweg, Unterführung Dresdener Bahn: vermutlich noch bis zu den Sommerferien (18.7.2024) gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
