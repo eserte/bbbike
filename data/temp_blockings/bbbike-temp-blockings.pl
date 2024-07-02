@@ -28594,7 +28594,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-06-11
+#: last_checked: 2024-06-28 (mapillary)
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30564,7 +30564,7 @@ EOF
 #: source_id: 2147344558 (bis 10.09.2020) (inaktiv)
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -30573,8 +30573,8 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (ex-G,H,B,W)
 #: last_checked: 2024-04-15 (okas)
-#: check_frequency: 90d
-#: next_check: 2024-07-27
+#: check_frequency: 120d
+#: next_check: 2024-11-30
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -35616,7 +35616,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-06-23
+#: last_checked: 2024-06-30 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35624,17 +35624,17 @@ EOF
      },
      { from  => $isodate2epoch->("2023-07-30 00:00:00"), # undef, # 
        until => undef, # 1654702215, # undef, # XXX
-       text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Anfang Juni 2024)',
+       text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Anfang Juli 2024)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
-#: last_checked: 2024-06-23 vvv
+#: last_checked: 2024-06-30 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
-zwischen Wildenbruchstr. und Elbestr.	q3::inwork 13033,8628 12881,8750
+zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
 #: osm_watch: way id="36738527" version="45"
 zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 #: check_frequency ^^^
@@ -41373,15 +41373,17 @@ EOF
 # REMOVED (hier fertig) ---	q4::inwork 6910,18861 6960,19047
 EOF
      },
-     { from  => 1698051600, # 2023-10-23 11:00
-       until => 1700780340, # 2023-11-23 23:59
-       text  => 'Rungestr.: Anbindung Brückenstr. wegen Bauarbeiten gesperrt, vom 24.10.2023 11:00 bis 23.11.2023 23:59',
+     { from  => undef, # 1698051600, # 2023-10-23 11:00
+       until => undef, # 1700780340, # 2023-11-23 23:59
+       #text  => 'Rungestr.: Anbindung Brückenstr. wegen Bauarbeiten gesperrt, vom 24.10.2023 11:00 bis 23.11.2023 23:59',
+       text  => 'Rungestr.: Anbindung Brückenstr. wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: RUNGE-2023
 #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv)
-#: note: Ampeleintrag beachten! (-> REMOVED)
-#: note: wenige Meter gesperrt; möglicher Bordstein
+# REMOVED --- #: note: Ampeleintrag beachten! (-> REMOVED)
+#: note: etwa 40 Meter gesperrt; möglicher Bordstein
+#: last_checked: 2024-06-30 (mapillary)
 	q3::inwork 11291,11876 11185,11883
 EOF
      },
@@ -43025,8 +43027,8 @@ EOF
 EOF
      },
      { from  => 1715058000, # 2024-05-07 07:00
-       until => 1723129200, # 2024-08-08 17:00
-       text  => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis 08.08.2024 17:00',
+       until => $isodate2epoch->("2024-08-15 17:00:00"), # 1723129200, # 2024-08-08 17:00
+       text  => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis 15.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2024
@@ -43038,6 +43040,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GM-T_ItXAAEbotS?format=jpg&name=large (Sterndamm)
 #: by: https://pbs.twimg.com/media/GM-UPCQXoAAPE8L?format=jpg&name=large (Winckelmannstr.)
 #: note: laut Baustellenplakat (siehe bahninfo-forum) nur bis 05.07.2024, oder gibt es da nur eine Änderung der Verkehrsführung?
+#: note: laut rbb bis 15.8.2024 (go with it)
 #: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024)
 #: source_id: viz2021:13.50508,52.44526,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
 Sterndamm: gemeinsamer Rad- und Gehweg	q3::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
@@ -43122,7 +43125,7 @@ EOF
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024) (inaktiv)
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 35m ---	q3::inwork; 14639,11512 14676,11572
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
-#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024)
+#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: also_indoor: traffic (B)
 #: note: bei rbb in beiden Richtungen gesperrt (stimmt aber nicht)
 	q4::inwork; 14639,11512 14575,11407
@@ -43378,7 +43381,7 @@ EOF
 #: note: Länge der Einbahnstraßenregelung etwa 80m; außerdem ist auch die Inselstraße Einbahnstraße, hier aber für Radfahrer frei
 #: note: Halteverbotsschilder bis 17.07.2024
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2024-06-27
+#: last_checked: 2024-06-30 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-07-17
 	q3::inwork; 10908,11908 10722,11816
@@ -43502,7 +43505,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805830095908532353
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-06-27 vvv
+#: last_checked: 2024-06-28 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -43627,6 +43630,28 @@ EOF
 #: last_checked: 2024-05-29
 #: next_check: 2024-07-18
 	2::inwork 10467,-3201 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
+EOF
+     },
+     { from  => 1719941867, # 2024-07-02 19:37
+       until => 1735686000, # 2025-01-01 00:00
+       text  => 'Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Sperrung, bis Dezember 2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462140.php
+#: by: https://mierendorffinsel.org/projekte/aktuelle-projekte/insel-rundweg/
+	2::inwork 4151,13961 4156,13914 4186,13710
+EOF
+     },
+     { from  => 1719846420, # 2024-07-01 17:07
+       until => 1723759140, # 2024-08-15 23:59
+       text  => 'Königsheideweg: Bauarbeiten zwischen Segelfliegerdamm und Sterndamm, Richtung Nordwesten gesperrt, evtl. sind auch Radfahrer betroffen, vom 02.07.2024 17:07 bis 15.08.2024 23:59',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.51055,52.44458,02.07.2024,17:07 (bis 15.08.2024)
+#: source_id: viz2021:13.508246,52.445764,02.07.2024,07:00 (hier nur Kfz-Verkehr, bis 15.08.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1808152802205503982 (hier auch nur Kfz-Verkehr)
+#: add_fragezeichen: Sind Radfahrer von der Sperrung betroffen?
+	q4::inwork; 17794,4443 17676,4540 17516,4657
 EOF
      },
     );

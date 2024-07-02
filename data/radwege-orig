@@ -416,13 +416,13 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 	RW1;RW1 12740,8862 12881,8750
 #: next_check_id: WESER-2021
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraﬂe noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtregelung noch pr¸fen
-#: last_checked: 2024-06-15
+#: last_checked: 2024-06-30 (mapillary)
 	RW0;RW0 12881,8750 13033,8628
 #: next_check_id: WESER-2021
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraﬂe noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtsschild ist noch abgedeckt
 #: osm_watch: way id="940399849" version="11"
 #: osm_watch: way id="1203072585" version="3"
-#: last_checked: 2024-06-23
+#: last_checked: 2024-06-30 (mapillary)
 	RW0;RW0 13033,8628 13124,8562 13217,8493
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
@@ -529,7 +529,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straﬂenbahnarbeiten Hˆhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2024-06-25 vvv
+#: last_checked: 2024-06-28 (mapillary) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -3246,7 +3246,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2024-06-13 vvv
+#: last_checked: 2024-07-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -8656,11 +8656,11 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaﬂnahme bis 2024) (bis 27.07.2024) vvv
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaﬂnahme bis 2024) (bis 27.07.2024) (bis 30.11.2024) vvv
 #: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
 #: last_checked: 2024-03-19 (baustellen-doku) vvv
 # REMOVED -- #: check_frequency: 90d
-#: next_check: 2024-07-27 vvv
+#: next_check: 2024-11-30 vvv
 # REMOVED --- #: next_check: 2024-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 provisorische Radspur	RW4; 8579,2265 8560,2181 8490,2084

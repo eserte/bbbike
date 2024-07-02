@@ -274,8 +274,6 @@ Landsberger Allee -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13543,13568 13635
 Landsberger Allee -> Hausburgstr.: Straßenbahn	3::igndisp 13702,13634 13635,13605 13706,13460
 Fritz-Riedel-Str. -> Landsberger Allee: Straßenbahn	3::igndisp 13519,13785 13635,13605 13702,13634
 Fritz-Riedel-Str. -> Hausburgstr.: Straßenbahn	3::igndisp 13519,13785 13635,13605 13706,13460
-Hausburgstr. -> Landsberger Allee: Straßenbahn	3::igndisp 13706,13460 13635,13605 13543,13568
-Hausburgstr. -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13706,13460 13635,13605 13519,13785
 Straßenbahn	3nocross::ignrte 21398,15671 21475,15705 21584,15753 21709,15808
 Landsberger Allee -> Pöhlbergstr. [zur/von Landsberger Allee]: Straßenbahn	3::igndisp 21584,15753 21475,15705 21491,15671
 Pöhlbergstr. [zur/von Landsberger Allee] -> Landsberger Allee: Straßenbahn	3::igndisp 21491,15671 21475,15705 21398,15671
@@ -2552,3 +2550,8 @@ Reuterstr.	1 12150,9545 12148,9426
 Gartenstr.: Poller	2 9514,13826 9535,13801
 Heiner-Müller-Str.: schwarz-weiße Einfahrt-verboten-Schilder	1 17497,8623 17640,8627
 Irmtraud-Morgner-Str.: schwarz-weiße Einfahrt-verboten-Schilder	1 17521,8549 17619,8558
+Straßmannstr.	1 13835,13149 13741,13107
+Hausburgstr.	1 13895,13017 13835,13149
+Hausburgstr.	1 13742,13376 13835,13149
+Hausburgstr.	1 13742,13376 13706,13460 13635,13605
+Kochhannstr.	1 13644,13332 13742,13376
