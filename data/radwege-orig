@@ -47,7 +47,7 @@
 provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: last_checked: 2024-06-22
+#: last_checked: 2024-07-03
 #: check_frequency: 120d
 #: next_check: 2024-08-05
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -422,7 +422,7 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtsschild ist noch abgedeckt
 #: osm_watch: way id="940399849" version="11"
 #: osm_watch: way id="1203072585" version="3"
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-03
 	RW0;RW0 13033,8628 13124,8562 13217,8493
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
@@ -1295,7 +1295,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-06-26 vvv
+#: last_checked: 2024-07-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1880,9 +1880,10 @@ Verbundsteinpflasterradweg	RW1; 6881,1743 6844,1813 6799,1922 6759,2137
 #: by: Andreas Grünky:
 	RW6;RW6 7234,1045 7437,1144
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich wieder getrennt --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4095.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4987.html (Fertigstellung) --- #: last_checked: 2011-09-10 --- #: next_check: 2012-02-15
-asphaltiert	RW1;RW1 11073,-2037 11130,-2120 11172,-2224 11232,-2377 11308,-2535
-asphaltiert	RW1; 11308,-2535 11360,-2648 11579,-3093 11663,-3266
-breiter Gehweg für Radfahrer frei, asphaltiert	RW1; 11663,-3266 11579,-3093 11360,-2648 11308,-2535
+asphaltiert	RW1; 11073,-2037 11130,-2120 11172,-2224 11232,-2377 11308,-2535
+asphaltiert	RW1; 11308,-2535 11360,-2648 11411,-2750 11579,-3093 11663,-3266
+breiter Gehweg für Radfahrer frei, asphaltiert	RW1; 11663,-3266 11579,-3093 11411,-2750
+asphaltiert	RW1; 11411,-2750 11360,-2648 11308,-2535 11232,-2377 11172,-2224 11130,-2120 11073,-2037
 neues Verbundsteinpflaster	RW1; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517 12703,2454 12712,2378
 neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtbar	RW1; 12712,2378 12703,2454 12694,2517 12694,2544 12694,2570 12693,2746 12695,2789 12701,2955 12687,3319 12684,3406 12673,3619 12673,3627 12663,3762 12655,3882 12637,4014 12564,4308
 	RW3; 13651,11731 13696,11920 13745,12118
@@ -1945,7 +1946,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 #: note: Detmolder Str.
 #: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen)
 #: XXX Sanierung der Radwege vvv
-#: last_checked: 2024-05-04 vvv
+#: last_checked: 2024-07-03 vvv
 #: next_check: 2026-12-31 vvv
 	RW1;RW1 5363,8024 5325,8023 5058,8012 5048,8012
 # REMOVED (hängt nicht mehr) --- #: note: ein vergessenes Radwegschild?
@@ -2972,7 +2973,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-06-24
+#: last_checked: 2024-07-03
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -6313,7 +6314,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2024-06-25 vvv
+#: last_checked: 2024-07-03 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -7869,7 +7870,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-06-25
+#: last_checked: 2024-07-03
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2024-08-30
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -7878,7 +7879,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
-#: last_checked: 2024-06-25 vvv
+#: last_checked: 2024-07-03 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2024-06-09 vvv
 #XXX	RW4; 10975,10334 10871,10322
@@ -7948,9 +7949,10 @@ Tempo 10	RW6;RW6 20110,8355 20144,8355
 Tempo 10	RW6;RW6 20348,7634 20459,7445 20501,7472 20540,7532
 	RW6;RW6 7366,14067 7443,14107 7547,13946 7630,13810 7535,13754
 # 
-# REMOVED (früher, vor Bau der Unterführung) --- RW3;RW3 10228,-2136 10191,-2137 10096,-2137
-niedrige Protektionselemente	RW4; 10191,-2137 10228,-2136 10258,-2135
-niedrige Protektionselemente	RW4; 10191,-2137 10096,-2137
+# REMOVED (früher, vor Bau der Unterführung) --- RW3;RW3 10228,-2136 10191,-2135 10163,-2136 10096,-2137
+Bushaltestelle	RW5;RW5 10163,-2136 10191,-2135 10228,-2136
+niedrige Protektionselemente	RW4; 10228,-2136 10258,-2135 10300,-2135
+niedrige Protektionselemente	RW4; 10163,-2136 10096,-2137
 # 
 	RW6;RW6 12422,21492 12472,21510
 Grünbeschichtung, Leitboys	RW4; 22092,999 22092,977 22100,941
@@ -8270,7 +8272,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-05-28 vvv
+#: last_checked: 2024-07-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv)
@@ -8351,7 +8353,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,771277#msg-771277
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8781 (Antrag)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8615 (Antrag - Antwort)
-#: last_checked: 2024-06-16 vvv
+#: last_checked: 2024-07-03 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
@@ -8830,17 +8832,18 @@ Reste von sehr schmalen asphaltierten Radwegen erkennbar	RW0;RW0 3161,2482 3163,
 #: by ^^^
 # 
 #: note: Steglitzer Damm Richtung Osten
-Radspur teilweise hinter parkenden Autos, teilweise mit Leitboys	RW4; 6846,4808 6922,4794 7039,4773 7092,4763
+Radspur teilweise hinter parkenden Autos, teilweise mit Pollern	RW4; 6846,4808 6922,4794 7039,4773 7092,4763
 # REMOVED (Bauarbeiten beendet) --- #: XXX Radweg wegen Bauarbeiten aufgehoben, Radfahrüberholverbot --- #: source_id: viz2021:13.35316,52.44914,07.11.2023,18:41 (bis 10.01.2024) (inaktiv) --- #: source_id: viz2021:13.35316,52.44914,20.02.2024,16:21 (bis 05.04.2024) (inaktiv) --- #: source_id: viz2021:13.354446,52.449029,22.05.2023,07:00 (bis 8.11.2023) (bis 10.01.2024) (bis 21.02.2024) (bis 05.04.2024) (bis 05.06.2024) (inaktiv) --- #: osm_watch: note 3870927 2 --- #: last_checked: 2024-02-06 (mapillary) --- #: next_check: 2024-06-05
-	RW4; 7092,4763 7205,4741
+Bushaltestelle	RW5; 7092,4763 7146,4753
+	RW4; 7146,4753 7205,4741
 Radspur hinter parkenden Autos	RW4; 7205,4741 7285,4724
-	RW4; 7285,4724 7364,4704
+Bushaltestelle	RW5; 7285,4724 7364,4704
 Radspur teilweise hinter parkenden Autos, teilweise mit Leitboys	RW4; 7364,4704 7387,4696 7485,4659 7532,4605
 	RW4; 7532,4605 7544,4587 7561,4560 7573,4540
 Bushaltestelle	RW5; 7573,4540 7597,4499
 #: note: Steglitzer Damm Richtung Westen
 Bushaltestelle	RW5; 7597,4499 7573,4540 7561,4560
-	RW4; 7561,4560 7544,4587 7532,4605 7485,4659 7387,4696 7364,4704 7285,4724 7205,4741 7092,4763
+	RW4; 7561,4560 7544,4587 7532,4605 7485,4659 7387,4696 7364,4704 7285,4724 7205,4741 7146,4753 7092,4763
 Bushaltestelle	RW5; 7092,4763 7039,4773
 Leitboys	RW4; 7039,4773 6922,4794
 Bushaltestelle	RW5; 6922,4794 6846,4808

@@ -2117,7 +2117,7 @@ Markgrafenstr. (Mariendorf)	N 8827,4874 8929,4882 9020,4890 9248,4904
 Küterstr.	N 8989,4366 9006,4196
 Mariendorfer Damm	HH 9188,5333 9196,5272 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672 9294,4536 9310,4407 9333,4229 9346,4144 9375,4022 9426,3797 9438,3745 9455,3671 9462,3642 9489,3525 9510,3446 9621,3155 9720,2887 9801,2663 9934,2307 9954,2252 10024,2059 10067,1939 10127,1778 10172,1657 10226,1515 10239,1481 10276,1383 10329,1231 10379,1097 10427,968
 Lichtenrader Damm	HH 10427,968 10485,807 10522,708 10534,674 10590,525 10617,452 10620,445 10638,403 10676,299 10713,197 10735,137 10753,83 10782,-24 10793,-161 10822,-806 10849,-1332 10853,-1475 10870,-1645 10903,-1768 10909,-1790 10980,-1919 11073,-2037
-Kirchhainer Damm	HH 11073,-2037 11130,-2120 11172,-2224 11232,-2377 11308,-2535 11360,-2648 11579,-3093 11663,-3266
+Kirchhainer Damm	HH 11073,-2037 11130,-2120 11172,-2224 11232,-2377 11308,-2535 11360,-2648 11411,-2750 11579,-3093 11663,-3266
 Alt-Mariendorf	H 9051,3692 9106,3703 9275,3753 9426,3797 9732,3883 9831,3876 9953,3806
 Upstallweg (Mariendorf)	N 9275,3753 9261,3791 9264,3874
 Großbeerenstr. (Mariendorf, Marienfelde)	H 9051,3692 8964,3539 8889,3363 8840,3265 8820,3188 8792,3082 8752,2931 8735,2866 8674,2627 8655,2556 8602,2377 8579,2265
@@ -2142,7 +2142,7 @@ Kruckenbergstr.	N 9720,2887 9416,2781 9105,2779
 Körtingstr.	N 8820,3188 8910,3171 8996,3150 9152,3114 9359,3083 9488,3115 9621,3155
 Freibergstr.	N 9177,3281 9323,3281 9410,3292 9462,3205 9488,3115
 Hirzerweg	N 9323,3281 9359,3083
-Hirzerweg	NN 9359,3083 9416,2781
+Hirzerweg	NN 9359,3083 9392,2923 9386,2882 9416,2781
 Hirzerweg	N 9416,2781 9437,2649 9487,2391
 Hirzerweg	NN 9487,2391 9539,2105
 Hirzerweg	N 9539,2105 9585,1899 9630,1636 9618,1608
@@ -3957,7 +3957,7 @@ Wedellstr.	N 7517,2574 7489,2787 7498,2845 7528,2964 7487,3089 7463,3182 7455,32
 (Lankegrabenpark)	NN 7365,3199 7409,3331 7458,3451
 (Hospitalgrabenpark)	NN 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
 Dittersbacher Weg	N 7855,3355 7852,3183
-Steglitzer Damm	H 7597,4499 7573,4540 7561,4560 7544,4587 7532,4605 7485,4659 7387,4696 7364,4704 7285,4724 7205,4741 7092,4763 7039,4773 6922,4794 6846,4808 6827,4810 6651,4843 6554,4861 6531,4865 6385,4896 6354,4901 6276,4915 6215,4926 6187,4930 6182,4931 6048,4952 5926,4966 5870,4992
+Steglitzer Damm	H 7597,4499 7573,4540 7561,4560 7544,4587 7532,4605 7485,4659 7387,4696 7364,4704 7285,4724 7205,4741 7146,4753 7092,4763 7039,4773 6922,4794 6846,4808 6827,4810 6651,4843 6554,4861 6531,4865 6385,4896 6354,4901 6276,4915 6215,4926 6187,4930 6182,4931 6048,4952 5926,4966 5870,4992
 Langensteiner Weg	N 7285,4724 7335,4879 7437,4855
 Kelchstr.	N 7387,4696 7424,4821 7437,4855 7456,4934
 Doldenweg	NN 7424,4821 7487,4802
@@ -10831,9 +10831,9 @@ Gosener Damm	H 28317,891 28331,877 28414,811 28512,704 28543,675 28570,649 28617
 Gosener Landstr.	H 28789,468 28809,462 29116,502 29406,540 29562,603 29632,594 30028,417 30551,276 30621,235 30820,117 31009,19 31080,-19 31127,-45 31219,-87 31320,-129 31608,-476 31624,-496 31651,-530
 #: next_check_id: FAHLENBERGBRUECKE-2022
 # früher: (Gosener Landstr. - Parkplatz)	N
-(Gosener Landstr. - Ersatzbrücke)	H 30621,235 30808,52 30817,43 30869,-5 30926,-53
+(Gosener Landstr. - Ersatzbrücke)	N 30621,235 30808,52 30817,43 30869,-5 30926,-53
 #: next_check_id: FAHLENBERGBRUECKE-2022
-(Neue Fahlenbergbrücke [Ersatzbrücke])	H 30926,-53 31103,-142 31219,-87
+(Neue Fahlenbergbrücke [Ersatzbrücke])	N 30926,-53 31103,-142 31219,-87
 #: note: in der Literatur teilweise als "Winterweg" bekannt
 (Gosener Damm - Seddinsee)	NN 28809,462 29120,271 29481,44 29979,-120 30233,-293 30421,-424
 #: note: bei osm als "Tabbertweg" bezeichnet
@@ -11014,6 +11014,8 @@ Pfarrer-Wenke-Weg	N 11777,927 11940,937
 Gerlinger Str.	H 11791,834 11997,874 12107,898 12307,964 12403,1011 12538,1075 12617,1121 12785,1308 12938,1348
 Christian-Henkel-Str.	N 12054,1044 12175,1101 12256,1111 12350,1088 12403,1011
 Töpchiner Weg	H 11791,834 11720,803 11671,750 11634,673 11596,583 11563,501 11459,225 11453,208 11447,192 11418,120 11381,28 11364,-16 11335,-90 11242,-332 11207,-413 11176,-489 11125,-613 11077,-714 11054,-740
+Töpchiner Weg [40-48]	N 11984,1300 11969,1295 11950,1275 11918,1211
+(Gerlinger Str. - Warmensteinacher Str.)	NN 11997,874 11944,1102 11918,1149 11918,1211
 (Alt-Lichtenrade - Töpchiner Weg)	NN 10950,-438 11207,-413
 (Mauerweg - Töpchiner Weg)	NN 11802,554 11672,554 11596,583
 Seltersstr.	N 11447,192 11564,195
@@ -11092,31 +11094,19 @@ Bornhagenweg	N 11174,-1719 11244,-1729 11315,-1766 11445,-1846 11666,-1825 11784
 Groß-Ziethener Str.	H 10849,-1332 11003,-1303 11149,-1274 11240,-1262 11311,-1252 11548,-1223 11578,-1220 11666,-1209 11717,-1204 11761,-1199 11858,-1189 11953,-1181 12023,-1174 12058,-1170
 Goltzstr. (Lichtenrade)	H 11073,-2037 10983,-2116
 Goltzstr. (Lichtenrade)	N 10983,-2116 10763,-2276 10642,-2371 10563,-2432 10454,-2520 10394,-2567 10382,-2598
-Rehagener Str.	N 10657,-2639 10648,-2547 10638,-2452 10642,-2371 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10767,-1850
+Rehagener Str.	N 10657,-2639 10648,-2547 10638,-2452 10642,-2371 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10765,-1860
 Klausdorfer Weg	N 10505,-2552 10648,-2547 10833,-2544 10989,-2543
 Rohrbachstr.	N 9658,-2640 9658,-2419 9650,-2135
 Wolziger Zeile	N 10382,-2598 10365,-2603 10307,-2633 10287,-2644
 Wolziger Zeile	N 10259,-2660 10287,-2644 10253,-2643 10085,-2643 9969,-2643 9872,-2642 9762,-2642 9658,-2640 9608,-2642
 Hohenzollernstr. (Lichtenrade)	N 9559,-2417 9658,-2419 9756,-2415 9864,-2411 9967,-2408 10069,-2405 10173,-2402
-Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2128 10465,-2129 10310,-2136 10300,-2135 10258,-2135 10228,-2136 10191,-2137
+Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2128 10465,-2129 10310,-2136 10300,-2135 10258,-2135 10228,-2136 10191,-2135
 # 
-#: next_check_id: BAHNHOFSTR-2020
-#: by: https://twitter.com/VIZ_Berlin/status/1264598301892108289
-#: by: https://pbs.twimg.com/media/EYzBdB6XgAEfb0h?format=jpg&name=large
-#: by: https://www.berliner-woche.de/lichtenrade/c-bauen/bahnuebergang-in-der-lichtenrader-bahnhofstrasse-ist-seit-25-mai-geschlossen_a271258
-#: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (evtl. mittlerweile etwas verlegt?)
-#: osm_watch: way id="855309801" version="10"
-# REMOVED --- #: osm_watch: way id="810461577" version="5"
-#: osm_watch: way id="997120420" version="4"
-#: XXX bis wann wird es diesen Weg geben?
-#: last_checked: 2024-05-18
-#: check_frequency: 180d
-#: next_check: 2024-06-28
-(Notweg Bahnübergang Bahnhofstr.)	NN 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
+# REMOVED (abgesperrt) --- #: next_check_id: BAHNHOFSTR-2020 --- #: by: https://twitter.com/VIZ_Berlin/status/1264598301892108289 --- #: by: https://pbs.twimg.com/media/EYzBdB6XgAEfb0h?format=jpg&name=large --- #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/bahnuebergang-in-der-lichtenrader-bahnhofstrasse-ist-seit-25-mai-geschlossen_a271258 --- #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (evtl. mittlerweile etwas verlegt?) --- #: osm_watch: way id="855309801" version="10" --- #: osm_watch: way id="810461577" version="5" --- #: osm_watch: way id="997120420" version="4" --- #: XXX bis wann wird es diesen Weg geben? --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 --- (Notweg Bahnübergang Bahnhofstr.)	NN 10273,-2158 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
 # 
 Zescher Str.	N 10513,-2397 10509,-2128
 Haeselerstr. (Lichtenrade)	N 10404,-2404 10513,-2397 10563,-2432
-Prinzessinnenstr. (Lichtenrade)	H 10191,-2137 10096,-2137
+Prinzessinnenstr. (Lichtenrade)	H 10191,-2135 10163,-2136 10096,-2137
 Prinzessinnenstr. (Lichtenrade)	N 10096,-2137 9961,-2136 9856,-2135 9757,-2135 9650,-2135 9576,-2135
 Alt-Lichtenrade	N 11119,-1992 11115,-1969 11085,-1969 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11070,-1574 11147,-1346 11149,-1274 11120,-976 11099,-857 11054,-740 10971,-499 10950,-438 10938,-405 10835,-145 10782,-24
 Alt-Lichtenrade	N 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
@@ -11136,13 +11126,9 @@ Nuthestr.	NN 9813,-822 9849,-911
 Rieflerstr.	N 9989,-1278 10147,-1273
 Dossestr. (Lichtenrade)	N 10082,-986 10030,-1066 9925,-1106
 Rhinstr. (Lichtenrade)	N 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-1348 10255,-1345
-Pfarrer-Lütkehaus-Platz	N 10318,-2156 10296,-2156 10231,-2159 10228,-2136
-#: next_check_id: BAHNHOFSTR-2020
-#: XXX möglicherweise provisorische Verbindung; mittlerweile wieder gesperrt (siehe gesperrt-orig) oder sogar zurückgebaut
-#: last_checked: 2024-05-18
-#: check_frequency: 180d
-#: next_check: 2024-06-28
-(Pfarrer-Lütkehaus-Platz - Bahnhofstr.)	N 10296,-2156 10300,-2135
+Pfarrer-Lütkehaus-Platz	N 10318,-2156 10296,-2156 10273,-2158
+# REMOVED (dieser Abschnitt existiert nicht mehr) --- Pfarrer-Lütkehaus-Platz	N 10273,-2158 10228,-2136
+# REMOVED --- #: next_check_id: BAHNHOFSTR-2020 --- #: XXX möglicherweise provisorische Verbindung; mittlerweile wieder gesperrt (siehe gesperrt-orig) oder sogar zurückgebaut --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 --- (Pfarrer-Lütkehaus-Platz - Bahnhofstr.)	N 10296,-2156 10300,-2135
 Briesingstr.	N 10310,-2136 10318,-2156 10404,-2404 10454,-2520
 Schichauweg	H 9640,-833 9598,-846 9498,-890 9379,-935 9276,-973 9155,-1017
 Schichauweg	N 9155,-1017 8953,-1089 8873,-1118 8698,-1165 8511,-1182 8297,-1161 8085,-1120
@@ -11469,7 +11455,7 @@ Wilsnacker Str.	N 6757,13112 6814,13349 6783,13551 6760,13714 6746,13826 6646,13
 Kruppstr.	N 6746,13826 6817,13862 6890,13900 6917,13917 7331,14132
 Unionstr.	N 5943,14049 5782,14067
 Unionstr.	NN 5782,14067 5708,14077
-Warmensteinacher Str.	NH 12107,898 12054,1044 12018,1152 11967,1255 11975,1309 12011,1361 12066,1440 12127,1564 12215,1581 12260,1597
+Warmensteinacher Str.	NH 12107,898 12054,1044 12018,1152 11981,1252 11984,1300 12011,1361 12066,1440 12127,1564 12215,1581 12260,1597
 #: XXX_osm: fehlt bei osm
 #: note: Schreibweise ("kleinen") extra geprüft
 Zum kleinen Pfuhl	N 12127,1564 12162,1651
@@ -13727,14 +13713,14 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: XXX Gehweg wird vermutlich verlegt
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
-#: last_checked: 2024-03-08 (Luftbilder)
+#: last_checked: 2024-07-03
 #: check_frequency: 180d
 (Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9271,323
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/GR_dresdner_bahn_wegefuehrung_buckower_chaussee_ab_20231010n.pdf (westl. Bahnsteig gesperrt, keine Änderung zur bisherigen Wegführung zu erkennen)
 #: XXX bauzeitliche Umleitung, vermutlich bis 2025 vvv
-#: last_checked: 2024-03-26 vvv
+#: last_checked: 2024-07-03 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-12-31 vvv
 #: note: hier auch parallel eine Servicestraße, die zumindest Richtung Süden legal befahren werden kann
@@ -16995,8 +16981,8 @@ Kapelle-Ufer	NH 8274,13052 8315,13042 8411,12992 8488,12920 8503,12895
 Alexanderufer	N 8315,13042 8315,13181 8314,13323 8356,13404
 Alexanderufer	NN 8356,13404 8365,13431 8362,13466 8354,13523 8342,13536 8332,13548
 Löptener Str.	N 10980,-1919 10906,-1946 10758,-1949
-Mellener Str.	N 10772,-1748 10771,-1782 10767,-1850 10758,-1949 10756,-2128 10763,-2276 10789,-2451
-(Lichtenrader Damm - Mellener Str.)	NN 10903,-1768 10771,-1782
+Mellener Str.	N 10772,-1748 10772,-1770 10765,-1860 10758,-1949 10756,-2128 10763,-2276 10789,-2451
+(Lichtenrader Damm - Mellener Str.)	NN 10903,-1768 10772,-1770
 Darmstädter Str.	N 4456,10092 4623,10066
 Wuthenowstr.	N 5673,5664 5840,5679
 Ufnaustr.	N 4421,13793 4455,13567
@@ -17855,7 +17841,7 @@ Bodmerstr.	N 10266,-1473 10095,-1482
 Finchleystr.	N 10720,-1340 10717,-1429 10699,-1499 10695,-1515
 (Finchleystr. - John-Locke-Str.)	NN 10699,-1499 10508,-1511
 (Am Lichtenrader Graben)	NN 10513,-1954 10537,-1943 10615,-1772 10695,-1515
-(Mellener Str. - Lichtenrader Graben)	NN 10771,-1782 10615,-1772
+(Mellener Str. - Lichtenrader Graben)	NN 10772,-1770 10615,-1772
 Hannah-Arendt-Str.	H 8577,11896 8783,11959 8844,11984 8901,12008
 (Wuhlewanderweg - Teterower Ring)	NN 22196,12961 22279,12938 22308,12940 22357,12956
 # REMOVED (existiert nicht) --- (Dahrendorfzeile - Kurt-Schumacher-Damm)	NN 2680,14287 2803,14288

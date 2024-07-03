@@ -712,7 +712,9 @@ Berliner Str.: Mittelstreifen und Straﬂennbahntrasse	3nocross 10849,17848 10853,
 Hundekehlestr.: Mittelstreifen	3nocross 2346,7684 2460,7658 2565,7637
 Lietzenburger Str.	3nocross 5047,10381 5196,10398 5313,10420
 Sybelstr.	1 3981,10590 3883,10585
-Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
+Giesebrechtstr.	1 3912,10699 3997,10607
+# REMOVED (im Bereich des Meyerinckplatzes auch f¸r Radfahrer g¸ltig -> gesperrt-orig) --- Giesebrechtstr.	1 3997,10607 4017,10585 4030,10575
+Giesebrechtstr.	1 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559
 #: note ^^^
 Greifswalder Str.: Straﬂenbahntrasse	3nocross 12228,14404 12188,14350 12177,14335 12172,14328 12077,14186

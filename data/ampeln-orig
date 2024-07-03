@@ -133,7 +133,7 @@ Michael-Brückner-Str.	F::inwork 17808,5669
 #: source_id: viz2021:13.379736,52.496265,03.11.2023,10:00 (bis 23.04.2025)
 #: note: gilt auch für Radfahrer (provisorische Radspur Richtung Norden, auch eine Fahrradampel an der Radspur Richtung Süden)
 #: note: etwa 40m nördlich des Punktes
-#: last_checked: 2024-05-31
+#: last_checked: 2024-07-03
 #: check_frequency: 90d
 #: next_check: 2025-04-23
 #: valid: -20250423
@@ -414,11 +414,12 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX außerdem wurde der Zebrastreifen nördlich der Kreuzung deaktiviert
+#: XXX Ampel wird vermutlich permanent gemacht
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (wird vermutlich permanent gemacht)
 #: osm_watch: node id="7978101859" version="1"
-#: last_checked: 2024-05-18
-#: check_frequency: 180d
-#: next_check: 2024-06-28
+#: last_checked: 2024-07-03
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2024-06-28
 	X::inwork 10096,-2137
 # 
 # REMOVED (fertig) --- #: by: https://www.bahninfo-forum.de/read.php?9,581614,688517#msg-688517 --- #: confirmed_by: srt --- #: source_id: 2147346700 (bis 30.11.2021) --- #: source_id: viz2021:13.479483,52.501885,16.12.2020,09:00 (bis 30.11.2021) (mittlerweile bis 31.03.2022) (mittlerweile bis 6.4.2022) --- #: also_indoor: traffic --- #: priority: #C --- #: last_checked: 2022-03-30 --- #: check_frequency: 14d --- #: next_check: 2022-04-06 --- #: valid: -20220406 --- Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
@@ -1148,6 +1149,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10427,968
 	X 10067,1939
 	X 12655,3882
+#: note: gilt nicht für Radfahrer auf dem Radweg Richtung Norden
 	X 12564,4308
 	X 12731,4841
 	X 12883,5257
@@ -1539,13 +1541,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10849,-1332
 	X 11073,-2037
 # REMOVED (wird durch eine Unterführung ersetzt) ---	B 10188,-2139
-# 
-#: next_check_id: BAHNHOFSTR-2020
-#: XXX bis wann wird es diesen Bahnübergang geben?
-#: last_checked: 2024-05-18
-#: check_frequency: 180d
-#: next_check: 2024-06-28
-	B 10221,-2225
+# REMOVED (wurde durch eine Unterführung ersetzt) --- #: next_check_id: BAHNHOFSTR-2020 --- #: XXX bis wann wird es diesen Bahnübergang geben? --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 ---	B 10221,-2225
 # 
 	X 12938,1348
 	X 12911,1815
@@ -2660,6 +2656,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 1800,3903
 	F 1868,3626
 	F 5182,8880
+#: note: Anforderungsampel
 	F 5297,9579
 	F 5907,10821
 	F 8358,11477
@@ -2977,6 +2974,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	X 18770,8898
 # 
 	X 18704,8427
+#: note: Anforderungsampel
 	F 4920,9029
 	X 21647,15496
 #: XXX_prog: zusammenhängende Ampelanlage vvv
@@ -4460,7 +4458,7 @@ UBB, halbstündlich	B 51270,179246
 	B -84994,-47451
 	B -89777,-42832
 	B -93557,-39865
-S-Bahn ca. alle 10 Minuten	B 10778,-3988
+# REMOVED (Unterführung existiert mittlerweile) --- S-Bahn ca. alle 10 Minuten	B 10778,-3988
 # REMOVED (Unterführung existiert) --- S-Bahn ca. alle 10 Minuten	B 10896,-4469
 	B 99765,-46542
 	B 99245,-43974

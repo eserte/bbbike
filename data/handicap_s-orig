@@ -191,12 +191,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 ### Lichtenrade ###
 # 
-#: next_check_id: BAHNHOFSTR-2020
-#: source_id: 2147345858
-#: last_checked: 2024-05-18
-#: check_frequency: 180d
-#: next_check: 2024-06-28
-(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
+# REMOVED --- #: next_check_id: BAHNHOFSTR-2020 --- #: source_id: 2147345858 --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 --- (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10273,-2158 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
 # 
 ### Treptow ###
 # 
@@ -616,7 +611,7 @@ Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::i
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2024-06-10 (eric) vvv
+#: last_checked: 2024-07-03 vvv
 #: next_check: 2024-07-31 vvv
 #: valid: -20240731 vvv
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294
@@ -798,7 +793,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2024-06-22
+#: last_checked: 2024-07-03
 #: check_frequency: 90d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
@@ -3922,7 +3917,8 @@ Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1655,615
 Wolfgang-Seifert-Weg: Bordstein	q1 12725,1429 12939,1469
 (Alt-Lichtenrade - Töpchiner Weg): einige Fußgänger	q1 10950,-438 11207,-413
 Am Lichtenrader Graben: einige Fußgänger	q1 10695,-1515 10615,-1772 10537,-1943 10513,-1954
-(Mellener Str. - Lichtenrader Graben): einige Fußgänger	q1 10771,-1782 10615,-1772
+#: note: Grünanlage, Radfahrer erlaubt
+(Mellener Str. - Lichtenrader Graben): einige Fußgänger	q1 10772,-1770 10615,-1772
 (Schwedter Str. - Alt-Lichtenrade): schmal	q2 11023,-374 11010,-378 10938,-405
 #: XXX_prog: BS an der Sackgasse, ansonsten q2
 Dorotheenstr.: Bordstein, Fußgänger	q3 22926,4123 22949,4136
@@ -4377,7 +4373,8 @@ Am Berlin Museum: einige Katzenkopfreihen	q2 10032,10752 9829,10830
 (Klara-Weyl-Str. - Landschaftspark Herzberge): Spielplatz, Fußgänger, kurvig	q3 17418,12797 17422,12811 17400,12842 17363,12856 17347,12845 17299,12851
 (Allee der Kosmonauten - Wohngebiet): einige Fußgänger	q2 19628,13517 19649,13481
 #: XXX_prog BS nur beim Überqueren, ansonsten q1
-(Lichtenrader Damm - Mellener Str.): einige Fußgänger, Bordsteine beim Überqueren des Lichtenrader Damms	q2 10903,-1768 10771,-1782
+#: note: Grünanlage, Radfahren erlaubt
+(Lichtenrader Damm - Mellener Str.): einige Fußgänger, Bordsteine beim Überqueren des Lichtenrader Damms	q2 10903,-1768 10772,-1770
 Traberweg: einige Fußgänger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18116,8424 18072,8470 18005,8517 17930,8567 17851,8662
 (Trautenauer Str. - Liepnitzstr.): einige Fußgänger	q1 17838,8611 17873,8578 17912,8515 18037,8420
 #: note: und zwar legal, per Schild

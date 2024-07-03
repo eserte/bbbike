@@ -5030,6 +5030,7 @@ Markgrafenstr. (Mariendorf): Kopfsteinpflaster, OK	Q1 8827,4874 8929,4882 9020,4
 Küterstr.: Asphalt mit einigen Schäden	Q1 8989,4366 9006,4196
 Freibergstr.: Beton	Q0 9177,3281 9323,3281 9410,3292 9462,3205 9488,3115
 Hirzerweg: Beton	Q0 9539,2105 9585,1899 9630,1636 9618,1608
+Hirzerweg: Asphalt	Q0 9359,3083 9392,2923 9386,2882 9416,2781
 Schwechtenstr.: Asphalt	Q0 9828,998 9773,1000 9398,899
 Fignerweg: Verbundsteinpflaster	Q1 9745,522 9787,503 9894,453
 Norstedter Weg: Verbundsteinpflaster	Q1 9732,379 9777,364 9812,348 9838,327
@@ -11065,7 +11066,7 @@ Märkische Allee [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19653,13253 19743,1
 (Märkische Allee - Biesdorfer Promenade): teilweise schadhafter Asphalt	Q2 19743,13210 19757,13191 19830,13170
 (Märkische Allee - Biesdorfer Promenade): Verbundsteinpflaster	Q1 19830,13170 19842,13144 19873,13129
 (Allee der Kosmonauten - Wohngebiet): Asphalt	Q0 19628,13517 19649,13481
-(Lichtenrader Damm - Mellener Str.): Verbundsteinpflaster	Q1 10903,-1768 10771,-1782
+(Lichtenrader Damm - Mellener Str.): Verbundsteinpflaster	Q1 10903,-1768 10772,-1770
 Wünsdorfer Str.: Beton	Q0 9697,-997 9798,-1288 9864,-1480
 Wünsdorfer Str.: Asphalt mit leichten Schäden	Q0 9864,-1480 9908,-1614 9970,-1787
 Wünsdorfer Str.: schadhafter Asphalt	Q1 9970,-1787 9982,-1818 10021,-1918 10096,-2137
@@ -11547,6 +11548,10 @@ Krautstr.: Asphalt mit einigen Schäden	Q0 11993,11978 11966,11832 11963,11813
 Birkbuschstr.: Asphalt mit einigen Rissen	Q0; 5588,4210 5624,4112 5654,4033
 Huronseestr. [40-58 gerade]: Asphalt	Q0 16742,10303 16622,10338
 (Huronseestr. - Am Kraatzgraben): Asphalt	Q0 16622,10338 16599,10283
+Töpchiner Weg [40-48]: Asphalt	Q0 11984,1300 11969,1295 11950,1275
+Töpchiner Weg [40-48]: Verbundsteinpflaster	Q1 11950,1275 11918,1211
+(Gerlinger Str. - Warmensteinacher Str.): unebener Asphalt	Q1 11997,874 11944,1102 11918,1149
+(Gerlinger Str. - Warmensteinacher Str.): unbefestigter Weg	Q2 11918,1149 11918,1211
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12938,10 +12943,10 @@ Tieckstr.: asphaltiert mit Aufpflasterungen	Q1 9094,13641 9275,13720
 Tieckstr.: asphaltiert	Q0 9275,13720 9376,13765 9514,13826
 Löptener Str.: sehr guter Asphalt	Q0 10980,-1919 10906,-1946
 Löptener Str.: Beton	Q0 10906,-1946 10758,-1949
-Mellener Str.: Asphalt/Beton	Q0 10756,-2128 10758,-1949 10767,-1850 10771,-1782 10772,-1748
+Mellener Str.: Asphalt/Beton	Q0 10756,-2128 10758,-1949 10765,-1860 10772,-1770 10772,-1748
 Mellener Str.: schlecht befahrbares Kopfsteinpflaster	Q3 10756,-2128 10763,-2276 10789,-2451
 (Am Lichtenrader Graben): asphaltiert	Q0 10513,-1954 10537,-1943 10615,-1772 10695,-1515
-Mellener Str. - Lichtenrader Graben: asphaltiert	Q0 10771,-1782 10615,-1772
+Mellener Str. - Lichtenrader Graben: Asphalt mit Unebenheiten	Q1 10772,-1770 10615,-1772
 Darmstädter Str.: sehr guter Asphalt	Q0 4456,10092 4623,10066
 Wuthenowstr.: Kleinsteinpflaster	Q2 5673,5664 5840,5679
 Ufnaustr.: guter Asphalt	Q0 4421,13793 4455,13567
@@ -15048,7 +15053,7 @@ Schünemannweg: Kopfsteinpflaster	Q2 7171,4200 6986,4258 6965,4219
 Rehagener Str.: schlechtes Kopfsteinpflaster	Q3 10657,-2639 10648,-2547 10638,-2452
 Rehagener Str.: schlechtes Kopfsteinpflaster	Q3 10638,-2452 10642,-2371
 Rehagener Str.: schlechtes Kopfsteinpflaster	Q3 10642,-2371 10631,-2130
-Rehagener Str.: guter Beton	Q0 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10767,-1850
+Rehagener Str.: guter Beton	Q0 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10765,-1860
 Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17799,3183 17910,3004 18014,2830 18017,2751
 Gilgenburger Str.: Betonpflaster	Q0 24387,5672 24434,5645 24549,5685
 Gilgenburger Str.: Betonpflaster	Q0 24549,5685 24666,5726
@@ -16065,7 +16070,7 @@ Pfabener Weg: Asphalt	Q0 6982,88 7015,85
 Pfabener Weg: Beton	Q0 7015,85 7179,147
 Wiesauer Str.: Beton	Q0 7179,147 7158,212
 Lenaustr. (Lichtenrade): Verbundsteinpflaster, unbefestigte Seitenstreifen, Pflasterung renovierungsbedürftig	Q2 10380,757 10281,749 10237,749 10179,744 10021,741
-Pfarrer-Lütkehaus-Platz: Asphalt	Q0 10318,-2156 10296,-2156 10231,-2159 10228,-2136
+Pfarrer-Lütkehaus-Platz: Asphalt	Q0 10318,-2156 10296,-2156 10273,-2158
 Lauxweg: guter Asphalt	Q0 8979,3347 8921,3208
 Malmedyer Str.: Asphalt	Q0 16481,26413 16415,26481 16354,26542 16262,26637
 Bielckenweg: schlechtes Kopfsteinpflaster, Radfahrer werden auf dem Gehweg geduldet	Q3 16795,26560 16696,26651 16564,26773
