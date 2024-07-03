@@ -770,7 +770,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.012';
+$VERSION = '11.013';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -5093,6 +5093,18 @@ EOF
 	    $bbbikeleaflet_url     = $href . '?' . CGI->new({coordssession => $sess->{_session_id}})->query_string;
 	    $bbbikeleaflet_loc_url = $href . '?' . CGI->new({coordssession => $sess->{_session_id}, loc => 1})->query_string;
 	}
+	my $maybe_use_coordssession_query = sub {
+	    my($q) = @_;
+	    my $qs = $q->query_string;
+	    if ($sess && $apache_session_module eq 'Apache::Session::Counted') {
+		if (length($qs) > 7500) { # probably there's a 8k limit
+		    $q->delete('coords');
+		    $q->param('coordssession' => $sess->{_session_id});
+		    $qs = $q->query_string;
+		}
+	    }
+	    $qs;
+	};
 
 	if (!$printmode) {
 	    my $col_i = 0;
@@ -5137,7 +5149,7 @@ EOF
 		{
 		    my $qq2 = CGI->new($q->query_string);
 		    $qq2->param('output_as', "gpx-route");
-		    my $href = $bbbike_script . '?' . $qq2->query_string;
+		    my $href = $bbbike_script . '?' . $maybe_use_coordssession_query->($qq2);
 		    print qq{<a href="$href">GPX (Route)</a>};
 		    if ($can_qrcode_link) {
 			print add_qrcode_html($href, 'GPX Route');
@@ -5149,7 +5161,7 @@ EOF
 		{
 		    my $qq2 = CGI->new($q->query_string);
 		    $qq2->param('output_as', "gpx-track");
-		    my $href = $bbbike_script . '?' . $qq2->query_string;
+		    my $href = $bbbike_script . '?' . $maybe_use_coordssession_query->($qq2);
 		    print qq{<a href="$href">GPX (Track)</a>};
 		    if ($can_qrcode_link) {
 			print add_qrcode_html($href, 'GPX Track');
@@ -5162,7 +5174,7 @@ EOF
 		print "<td>";
 		my $qq2 = CGI->new($q->query_string);
 		$qq2->param('output_as', "kml-track");
-		my $href = $bbbike_script . '?' . $qq2->query_string;
+		my $href = $bbbike_script . '?' . $maybe_use_coordssession_query->($qq2);
 		print qq{<a title="view route with Google Earth" href="$href">KML (Google Earth)</a>};
 		if ($can_qrcode_link) {
 		    print add_qrcode_html($href, 'KML');
@@ -7363,8 +7375,6 @@ sub show_routelist_from_file {
     die $err;
 }
 
-# XXX should also implement coordssession param
-#
 # XXX gple is implemented but due to floating point inaccuracies
 # XXX coordinates are not exactly as expected, so mapping to
 # XXX streets only works partially. Best is to use gple only for
@@ -7386,6 +7396,15 @@ sub show_routelist_from_coords {
 	for my $gple (@gple) {
 	    my @polyline = Algorithm::GooglePolylineEncoding::decode_polyline($gple);
 	    push @coords, map { join ',', convert_wgs84_to_data($_->{lon}, $_->{lat}) } @polyline;
+	}
+    }
+    my $coordssession = scalar $q->param('coordssession');
+    if ($coordssession) {
+	if (my $sess = tie_session(scalar $q->param('coordssession'))) {
+	    @coords = $sess->{routestringrep};
+	    # XXX In draw_route @cache=@weak_cache is set. Can we do something similar here?
+	} else {
+	    return show_session_expired_error();
 	}
     }
     if (!@coords) {
