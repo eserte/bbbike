@@ -2152,6 +2152,9 @@ Bödikerstr. -> Stralauer Allee: unbequem passierbare Straße	3::igndisp 14447,104
 Mittelstreifen	3nocross::ignrte 11221,12250 11300,12241 11347,12223
 Stralauer Str. -> Dircksenstr.: Mittelstreifen	3::igndisp 11221,12250 11300,12241 11273,12301
 Dircksenstr. -> Stralauer Str.: Mittelstreifen	3::igndisp 11273,12301 11300,12241 11347,12223
+Mittelstreifen	3nocross::ignrte 14379,7372 14430,7348 14530,7301
+Sonnenallee -> Neucölln Carree, Parkpl.zufahrt: Mittelstreifen	3::igndisp 14530,7301 14430,7348 14423,7333
+Neucölln Carree, Parkpl.zufahrt -> Sonnenallee: Mittelstreifen	3::igndisp 14423,7333 14430,7348 14379,7372
 Mittelstreifen	3nocross::ignrte 12152,9015 12078,9055 12012,9092
 Sonnenallee -> Friedelstr.: Mittelstreifen	3::igndisp 12012,9092 12078,9055 12074,9217
 Friedelstr. -> Sonnenallee: Mittelstreifen	3::igndisp 12074,9217 12078,9055 12152,9015
@@ -4138,3 +4141,4 @@ Jacobystr. -> Alexanderstr.: linker Gehweg bis zur Ampel	1::igndisp 11256,12647 
 Ferdinand-Schultze-Str. -> Rhinstr./Marzahner Str.: linker Gehweg bis zur Ampel	1::igndisp 17488,15766 17486,15736
 Potsdamer Chaussee: linker Gehweg bis zur Ampel	1::igndisp -3011,1761 -3019,1774 -3040,1763
 Richard-von-Weizsäcker-Platz: Gehweg bis Akazienstr.	1::igndisp 7201,8870 7242,8902 7307,8945
+Sonnenallee: linker Gehweg bis zur Ampel	1::igndisp 14334,7395 14423,7333

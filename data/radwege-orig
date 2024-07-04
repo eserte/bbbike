@@ -342,7 +342,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-06-26 vvv
+#: last_checked: 2024-07-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1011,11 +1011,17 @@ teilweise Gehwegplatten, teilweise neu asphaltiert	RW1; 10938,14159 10910,14488
 neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
 neu asphaltiert	RW2; 10884,14952 10881,15047
 	RW4; 10881,15047 10883,15129
-neu asphaltiert	RW1; 10883,15129 10884,15152
-Radspur, niedrige Protektion	RW3; 10884,15152 10886,15251
-asphaltiert	RW1; 10886,15251 10887,15287
-Radspur, niedrige Protektion	RW3; 10887,15287 10902,15422 10917,15525 10941,15697
-Gehwegplatten	RW2; 10941,15697 10953,15787
+neu asphaltiert	RW2; 10883,15129 10884,15152
+Radspur, niedrige Protektion	RW4; 10884,15152 10886,15251
+asphaltiert	RW2; 10886,15251 10887,15287
+Radspur, niedrige Protektion	RW4; 10887,15287 10902,15422 10917,15525
+Bushaltestelle	RW5; 10917,15525 10925,15581
+#: next_check_id: SCHOENHAUSERALLEE-2024
+#: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: Radspur, niedrige Protektion
+#: last_checked: 2024-07-03 (mapillary)
+getrennter Rad- und Gehweg	RW2; 10925,15581 10941,15697
+#: historical_note: früher: Gehwegplatten	RW2;
+Radspur, niedrige Protektion	RW4; 10941,15697 10953,15787
 größtenteils neu asphaltiert	RW1; 10953,15787 10964,15896 10969,15944 10975,16010
 größtenteils neu asphaltiert	RW2; 10975,16010 10982,16121
 neu asphaltiert	RW1; 10982,16121 10989,16197 10997,16280 11004,16360
@@ -1028,8 +1034,15 @@ neu asphaltiert	RW1; 10982,16121 10989,16197 10997,16280 11004,16360
 neu asphaltiert	RW2; 10997,16280 10989,16197 10982,16121
 	RW1; 10982,16121 10975,16010 10969,15944 10964,15896 10953,15787
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert, allerdings Mosaikpflaster an allen Auffahrten 
-Radspur, niedrige Protektion	RW3; 10953,15787 10941,15697 10917,15525
-neu asphaltiert	RW1; 10917,15525 10902,15422 10887,15287 10883,15251 10883,15129
+#: note: an Kreuzungen grün-rot-grün beschichtet
+Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,15525
+#: next_check_id: SCHOENHAUSERALLEE-2024
+#: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
+#: last_checked: 2024-07-03 (mapillary)
+neu asphaltiert	RW1; 10917,15525 10902,15422
+#: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
+Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
+neu asphaltiert	RW1; 10883,15251 10883,15129
 Gehwegplatten	RW2; 10883,15129 10881,15047
 	RW4; 10881,15047 10884,14952
 #: note: allerdings Mosaikpflaster an allen Auffahrten 
@@ -1295,7 +1308,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-07-03 vvv
+#: last_checked: 2024-07-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1724,13 +1737,13 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
 # REMOVED --- #: next_check_id: SONNENALLEE-2014 --- #: XXX laut fritz & vmz bis Ende Dezember 2017 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111 --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: last_checked: 2018-06-06 --- #: next_check: 2018-08-17 --- #: check_frequency: 30d
-	RW2; 14530,7301 14379,7372 14369,7376 14334,7395 14174,7505
+	RW2; 14530,7301 14430,7348 14379,7372 14369,7376 14334,7395 14174,7505
 überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14334,7395 14369,7376
-	RW1; 14369,7376 14379,7372 14530,7301
+	RW1; 14369,7376 14379,7372 14430,7348 14530,7301
 	RW2; 14530,7301 14617,7243
 	RW1; 14015,7631 13919,7707
 	RW1; 14617,7243 14530,7301
-	RW1;RW2 14617,7243 14344,7003
+	RW1;RW2 14617,7243 14507,7146 14344,7003
 # 
 # REMOVED --- #: osm_watch: way id="679376891" version="11"
 # REMOVED --- #: osm_watch: way id="693065560" version="14"
@@ -2973,7 +2986,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-07-03
+#: last_checked: 2024-07-04
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264

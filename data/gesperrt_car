@@ -281,12 +281,12 @@ Landsberger Allee -> Schönagelstr.: Straßenbahn	3::igndisp 21475,15705 21584,157
 Schönagelstr. -> Landsberger Allee: Straßenbahn	3::igndisp 21602,15908 21584,15753 21709,15808
 Topsstr.	1 10598,15150 10865,15244
 Topsstr.	1 10883,15251 10865,15244
-Schönhauser Allee	3nocross::ignrte 10902,15422 10917,15525 10941,15697
+Schönhauser Allee	3nocross::ignrte 10902,15422 10917,15525 10925,15581 10941,15697
 Schönhauser Allee -> Milastr.: Schönhauser Allee	3::igndisp 10902,15422 10917,15525 10768,15534
-Schönhauser Allee -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10941,15697 10917,15525 11055,15504
+Schönhauser Allee -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10925,15581 10917,15525 11055,15504
 Buchholzer Str. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 11055,15504 10917,15525 10902,15422
 Buchholzer Str. -> Milastr.: Schönhauser Allee	3::igndisp 11055,15504 10917,15525 10768,15534
-Milastr. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 10768,15534 10917,15525 10941,15697
+Milastr. -> Schönhauser Allee: Schönhauser Allee	3::igndisp 10768,15534 10917,15525 10925,15581
 Milastr. -> Buchholzer Str.: Schönhauser Allee	3::igndisp 10768,15534 10917,15525 11055,15504
 Am Kupfergraben	1 9754,12775 9815,12705 9870,12657 9900,12643 9919,12613
 Uthmannstr.	1 13156,7839 12916,7775
@@ -2556,3 +2556,4 @@ Hausburgstr.	1 13895,13017 13835,13149
 Hausburgstr.	1 13742,13376 13835,13149
 Hausburgstr.	1 13742,13376 13706,13460 13635,13605
 Kochhannstr.	1 13644,13332 13742,13376
+Neucölln Carree - Grenzallee: nur Rechtsabbiegen erlaubt	3 14378,7236 14507,7146 14617,7243
