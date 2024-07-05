@@ -1537,10 +1537,22 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: by: https://www.berliner-woche.de/wedding/c-bauen/bau-des-neuen-herzzentrums-der-charit-hat-begonnen_a414476 (bis 2028)
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2024-03-18
+#: last_checked: 2024-07-05
 #: check_frequency: 180d
 #: next_check: 2028-12-31
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
+# 
+#: XXX nach den Bauarbeiten die alte Einbahnstraßenregelung eintragen
+#: note: es gibt eine provisorische Verbindung zur Weststr. (nicht bei bbbike eingezeichnet)
+#: last_checked: 2024-07-05 vvv
+#: check_frequency: 120d vvv
+#: osm_watch: way id="273858820" version="10"
+#: osm_watch: way id="1239079510" version="1"
+(Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5926,14997 5935,14948 5940,14911 6030,14924
+#: osm_watch: way id="273858819" version="11"
+(Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5879,14981 5893,14945 5935,14948
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 Am Feuchten Winkel	1 12020,19333 11937,19175
 # 
@@ -2559,6 +2571,11 @@ abgeschlossenes Tor	3 * 14701,0 *
 # 
 abgeschlossenes Tor	3 * 20561,17 *
 #
+#: next_check_id: TEGELERBRUECKE-2021
+#: note: Die Sperrung der Straße R bleibt wohl dauerhaft.
+#: osm_watch: node id="10202117536" version="9"
+Zaun, Durchfahrt für Radfahrer nicht möglich	3 * -761,16641 *
+# 
 #: section ^^^
 ####################################################################
 #: section: Stellen, an denen getragen werden muss vvvvvvvvvvvvvvvvv
@@ -2889,9 +2906,10 @@ tragen (Treppe)	0:30 6172,12878
 #: by: Andreas Mühlhausen: vvv
 #: corrected_by: srt (30 -> 40 Sekunden)
 tragen (Treppe)	0:40 2915,13610
-tragen (Treppe)	0:40 3016,13615
+# REMOVED (existiert nicht (mehr?)) --- tragen (Treppe)	0:40 3016,13615
 #: by: ^^^
 #: by: rjoop:
+#: confirmed_by: srt
 tragen (Treppe, 32 Stufen)	0:40 3054,13638
 #: by: Sirko:
 #: corrected_by: srt (10 -> 19 Stufen)
@@ -3870,7 +3888,7 @@ Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 1900
 #: osm_watch: way id="1106303945" version="6"
 #: osm_watch: way id="176338611" version="18"
 #: osm_watch: note 4126450 4
-#: last_checked: 2024-06-05
+#: last_checked: 2024-07-05
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4073,7 +4091,7 @@ Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesp
 #: next_check_id: GOETEL-2023
 #: XXX Bleibt die Einbahnstraßenregelung permanent?
 #: osm_watch: way id="1193389996" version="1"
-#: last_checked: 2024-02-17
+#: last_checked: 2024-07-05
 #: check_frequency: 120d
 #: next_check: 2024-10-04
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
@@ -4188,7 +4206,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt nicht erlaubt	2 14249,8075 
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
 #: by: https://entwicklungsstadt.de/berlin-mitte-sichtbarer-fortschritt-beim-umbau-des-gendarmenmarktes/
-#: last_checked: 2024-06-06 vvv
+#: last_checked: 2024-07-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -4396,7 +4414,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.berliner-woche.de/mitte/c-bauen/katholisches-forum-am-bebelplatz-wird-komplettiert_a385644 (Umbauarbeiten: Kathedrale bis Ende 2024, Bernhard-Lichtenberg-Haus bis Mitte 2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2024/03/sankt-hedwigs-kathedrale-sanierung-wiedereroeffnung-umbau-24-november-berlin-mitte.html (Eröffnung der Kathedrale am 24.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-oeffnet-nach-langer-sanierung-id248135
-#: last_checked: 2024-06-28 (mapillary)
+#: last_checked: 2024-07-05
 #: check_frequency: 360d
 #: next_check: 2024-11-24
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -4523,7 +4541,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734 13008,21783
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2024-06-02 vvv
+#: last_checked: 2024-07-05 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-10 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -4695,16 +4713,10 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2024-06-30 (daf)
+#: last_checked: 2024-07-05
 #: check_frequency: 90d
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
-#: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken
-#: last_checked: 2024-06-30 (daf) vvv
-#: check_frequency: 45d vvv
-George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136
-(Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (offen) --- #: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken --- #: last_checked: 2024-06-30 (daf) vvv --- #: check_frequency: 45d vvv --- George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136 --- (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (offen) --- George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7614,14136 7679,14030
 # REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (realisiert) --- #: next_check_id: WRIEZENERPARK-2019 --- #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm --- #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php --- #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag --- #: last_checked: 2020-07-09 --- #: check_frequency: 7d --- Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13161,11795 13120,11725 13095,11703
@@ -4861,7 +4873,7 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-06-25
+#: last_checked: 2024-07-05
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -4879,7 +4891,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-06-15 (mapillary)
+#: last_checked: 2024-07-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -5160,7 +5172,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2024-05-17 vvv
+#: last_checked: 2024-07-05 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"

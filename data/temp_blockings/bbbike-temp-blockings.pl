@@ -15709,8 +15709,12 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: tempex: night
+#: tempex: night vvv
 	2::night 3332,12742 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595
+	2::night 2953,13489 2925,13516 2858,13530
+	2::night 2906,13610 2876,13594 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
+	2::night 2625,13229 2534,13214 2466,13232 2419,13232 2331,13173 2285,13023
+#: tempex ^^^
 EOF
      },
      { from  => undef, #
@@ -28124,7 +28128,7 @@ EOF
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-04-21 (architektur-urbanistik)
+#: last_checked: 2024-07-05
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -37083,9 +37087,9 @@ EOF
 #: note: bei rbb mittlerweile entfernt
 #: osm_watch: way id="1094113747" version="2"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-05-23 (daf)
+#: last_checked: 2024-07-05
 #: check_frequency: 90d
-#: next_check: 2024-06-30
+#: next_check: 2024-09-15
 	q4::inwork; 3429,13227 3400,13107
 EOF
      },
@@ -37927,7 +37931,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1720191543, # -> gesperrt-orig # undef, # XXX
        #text  => 'Straße R (Umleitung Berlin-Kopenhagen-Radweg): Zaun, Durchfahrt für Radfahrer nicht möglich',
        text  => 'Straße R: Zaun, Durchfahrt für Radfahrer nicht möglich',
        type  => 'gesperrt',
@@ -37938,12 +37942,10 @@ EOF
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/anwohner-einer-privatstrasse-in-saatwinkel-bremsen-rad-raser-aus_a364934
 #: by: https://nitter.net/txtnso/status/1609517082110201857
 # REMOVED (superseded by non-note watch) --- #: osm_watch: note 3442821 2
-#: osm_watch: node id="10202117536" version="9"
-#: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
-#: last_checked: 2024-03-08 (Luftbilder)
+# REMOVED --- #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen? --- #: last_checked: 2024-03-08 (Luftbilder)
 # REMOVED --- #: next_check: 2023-12-01
-#: next_check: 2024-04-30
-	2 -784,16658 -719,16608
+# REMOVED --- #: next_check: 2024-04-30
+	2 -784,16658 -761,16641 -719,16608
 EOF
      },
      { from  => 1668598860, # 2022-11-16 12:41
@@ -38746,7 +38748,7 @@ EOF
 #: osm_watch: way id="1191704604" version="1"
 #: note: Endedatum anhand Halteverbotsschilder
 #: add_fragezeichen: Gibt es in der Warburgzeile weiterhin eine Einbahnstraßenregelung?
-#: last_checked: 2024-06-12
+#: last_checked: 2024-07-05
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 	q4::inwork; 4032,12167 4101,12356
@@ -39077,7 +39079,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder in der Umgebung bis 04.10.2024
 #: also_indoor: traffic (re-G)
-#: last_checked: 2024-03-08 (Luftbilder)
+#: last_checked: 2024-07-05
 #: check_frequency: 120d
 #: next_check: 2024-10-04
 	q4::inwork -3269,12406 -3260,12540
@@ -41171,7 +41173,7 @@ EOF
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
 #: osm_watch: way id="4543441" version="41"
-#: last_checked: 2024-06-16 vvv
+#: last_checked: 2024-07-05 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-09-18 vvv
 	q2::inwork; 6334,14756 6513,14725 6596,14740 6709,14782
@@ -41326,7 +41328,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-06-19 (mapillary) vvv
+#: last_checked: 2024-07-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -41334,7 +41336,7 @@ EOF
 #: osm_watch: note 4045330 6
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
-Markgrafenstr.	q4::inwork 9666,11935 9656,12031
+Markgrafenstr.	q4::inwork 9666,11935 9656,12031 9645,12133
 #: osm_watch: way id="389101374" version="19"
 Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
@@ -43169,13 +43171,13 @@ EOF
        text  => 'Wildenbruchstr.: Bauarbeiten zwischen Karl-Kunger-Str. und Kiefholzstr., Sperrung der Fahrbahn, vom 27.05.2024 07:00 bis 05.07.2024 17:00, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.451021,52.489535,27.05.2024,07:00 (bis 05.07.2024)
+#: source_id: viz2021:13.451021,52.489535,27.05.2024,07:00 (bis 05.07.2024) (inaktiv)
 #: XXX Sieht nicht nach einem baldigen Ende der Bauarbeiten aus.
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt's eine offizielle Wegführung für Radfahrer über den Hochbord.
-#: also_indoor: traffic (H,G,W)
+#: also_indoor: traffic (ex-H,ex-G,W)
 #: last_checked: 2024-07-03
 #: check_frequency: 14d
-	q4::inwork; 13715,9455 13614,9333
+	q4::inwork 13715,9455 13614,9333
 EOF
      },
      { from  => 1717279200, # 2024-06-02 00:00
@@ -43203,14 +43205,16 @@ EOF
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee)
+#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt)
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
 #: last_checked: 2024-07-03 vvv
-#: check_frequency: 7d vvv
+#: check_frequency: 14d vvv
+#: next_check: 2024-08-31 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
+#: next_check ^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -43340,7 +43344,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028)
-	q4::inwork 5848,14977 5984,14819
+#: note: außerdem ist eine Umleitung via Eckernförder Platz durch den Wald ausgeschildert
+	q2::inwork; 5848,14977 5984,14819
+#: note: offiziell keine Durchfahrt erlaubt, Umweg via Nordufer
+	q4::inwork; 5984,14819 5848,14977
 EOF
      },
      { #from  => 1717884000, # 2024-06-09 00:00
@@ -43407,10 +43414,10 @@ EOF
      { from  => 1718085600, # 2024-06-11 08:00
        until => $isodate2epoch->("2024-09-30 17:00:00"), # 1720796400, # 2024-07-12 17:00
        dont_check_date => 1,
-       text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 12.07.2024 17:00, evtl. auch bis September 2024',
+       text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 25.07.2024 17:00, evtl. auch bis September 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024)
+#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024) (bis 25.07.2024)
 #: note: bei rbb mittlerweile bis 30.09.2024, go with rbb
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1800742824524259711
 #: by: https://pbs.twimg.com/media/GPzFCzlWcAAoKgR?format=jpg&name=large
@@ -43473,13 +43480,13 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 EOF
      },
      { from  => 1718600400, # 2024-06-17 07:00
-       until => 1727733540, # 2024-09-30 23:59
+       until => 1720192884, # 1727733540, # 2024-09-30 23:59
        text  => 'Lise-Meitner-Str.: Bauarbeiten zwischen Mierendorffplatz und Olbersstr./ Gaußstr., Sperrung Richtung Norden, evtl. sind auch Radfahrer betroffen, vom 18.06.2024 07:00 bis 30.09.2024 (möglicherweise sind die Bauarbeiten schon beendet?)',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.30616,52.52644,18.06.2024,07:00 (bis 30.09.2024) (vorfristig inaktiv)
 #: also_indoor: traffic (H,G,B,T,W)
-#: next_check: 2024-05-24
+# REMOVED (für Radfahrer existiert ein eigener Weg bzw. werden über den Hochbord geführt) --- #: next_check: 2024-05-24
 	q4::inwork; 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
 EOF
      },
@@ -43510,6 +43517,7 @@ EOF
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/8zzfJDFOpujRSzpRpuAKoOiyEE5LqVAeWvsxgUFr/NTHepxW/54-Anlagen/02/GA_1290_VI.pdf (Beginn Juni 2024 (Antwort vom Februar 2024))
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1459217.php (Bauarbeiten ab 26. Juni 2024 bis III. Quartal 2027, Sperrung auch für Radfahrer)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805830095908532353
+#: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: last_checked: 2024-06-28 (mapillary) vvv
@@ -43700,8 +43708,8 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
 EOF
      },
      { from  => 1718628480, # 2024-06-17 14:48
-       until => undef, # XXX
-       text  => 'Bäkebrücke: Sperrung, Brückenbau, vermutlich sind auch Radfahrer und Fußgänger betroffen, vom 18.06.2024',
+       until => $isodate2epoch->("2024-08-30 17:00:00"), # undef, # XXX
+       text  => 'Bäkebrücke: Sperrung, Brückenbau, vermutlich sind auch Radfahrer und Fußgänger betroffen, bis 30.08.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BAEKEBRUECKE-2022
@@ -43716,7 +43724,7 @@ EOF
 #: by: https://khp.berlin/referenzen/ingenieurbau/planungen/baekebruecke-in-berlin-lichterfelde/
 #: by: https://www.facebook.com/groups/274489925939434/posts/7611685488886471 (in einem Kommentar steht, dass Fußgänger rüberkommen)
 #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
-#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48
+#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024)
 #: also_indoor: search Bäkebrücke
 #: also_indoor: traffic (G,B,T,W)
 #: add_fragezeichen: Sind auch Radfahrer und Fußgänger von der Sperrung betroffen?
@@ -43724,6 +43732,15 @@ EOF
 #: check_frequency: 90d
 #: next_check: 2024-06-18
 	2::inwork 4587,3097 4659,3065
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Virchow-Klinikum, Eingang Sylter Str: nur Mo-Fr tagsüber ab 5 Uhr offen',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+	2::temp 5848,14977 5867,14993
 EOF
      },
     );

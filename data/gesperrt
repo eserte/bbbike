@@ -954,6 +954,8 @@ Südring, Virchow-Klinikum	1 6252,14812 6231,14952
 Südring, Virchow-Klinikum	1 6158,14851 6078,14864 6073,14892
 Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
+(Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5926,14997 5935,14948 5940,14911 6030,14924
+(Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5879,14981 5893,14945 5935,14948
 Am Feuchten Winkel	1 12020,19333 11937,19175
 Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 15261,10738 15163,10758 15081,10775 15004,10791
 Hauptstr. -> Ingrid-Reschke-Str.: Mittelstreifen, unbequemes Überqueren	3::igndisp 15261,10738 15163,10758 15151,10699
@@ -2624,6 +2626,8 @@ abgeschlossenes Tor	3 14556,409 14701,0 14710,-25
 abgeschlossenes Tor	3 14710,-25 14701,0 14556,409
 abgeschlossenes Tor	3 20555,15 20561,17 20685,52
 abgeschlossenes Tor	3 20685,52 20561,17 20555,15
+Zaun, Durchfahrt für Radfahrer nicht möglich	3 -719,16608 -761,16641 -784,16658
+Zaun, Durchfahrt für Radfahrer nicht möglich	3 -784,16658 -761,16641 -719,16608
 tragen (ca. 33 Stufen)	0:30:-86 20661,12140
 tragen	0:30:5 20657,12101
 tragen (16 Stufen)	0:25:-233 20330,12025
@@ -2840,7 +2844,6 @@ tragen (36 Stufen)	0:45:-124 1667,3232
 tragen (31 Stufen)	0:35:-114 1715,3257
 tragen (Treppe)	0:30:-97 6172,12878
 tragen (Treppe)	0:40:68 2915,13610
-tragen (Treppe)	0:40:-262 3016,13615
 tragen (Treppe, 32 Stufen)	0:40:-7 3054,13638
 tragen (Treppe, 19 Stufen)	0:25:41 20939,2389
 tragen (Treppe)	0:30:-45 -633,12739
@@ -3184,7 +3187,7 @@ steiler Weg	BNP:0:-233:trailer=no -2046,12036
 steiler Weg	BNP:0:29:trailer=no -1431,12284
 enger Pfad	BNP:0:80:trailer=no 17952,16675
 enges Drängelgitter	BNP:5:-206:trailer=no 30862,3816
-Schranke, Durchfahrtsbreite nur 60cm	BNP:3:-232:trailer=no -784,16658
+Schranke, Durchfahrtsbreite nur 60cm	BNP:3:-233:trailer=no -784,16658
 Drängelgitter	BNP:3:-12:trailer=10 -992,16688
 Drängelgitter	BNP:2:-266:trailer=5 18583,2972
 Drängelgitter	BNP:2:90:trailer=5 18390,2972
@@ -3521,8 +3524,6 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
-George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136
-(Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9441,12670 9429,12728 9402,12792 9386,12833 9375,12911
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,12496 10849,12557

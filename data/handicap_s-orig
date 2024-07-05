@@ -43,7 +43,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024) (bis 24.05.2024) (inaktiv)
-#: last_checked: 2024-06-27
+#: last_checked: 2024-07-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-05-24
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -353,7 +353,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-05
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -730,7 +730,7 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: osm_watch: way id="152832871" version="23"
 #: osm_watch: way id="1132383957" version="1"
 #: note: mittlerweile eine Art "Drängelgitter" aus dem Bauzaun gemacht
-#: last_checked: 2024-02-17
+#: last_checked: 2024-07-05
 #: check_frequency: 120d
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
@@ -2406,7 +2406,7 @@ KGA Plötzensee: einige Fußgänger	q1 4963,15259 4624,15671 4444,15906 4378,15922
 KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: einige Fußgänger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
-(Am Hohenzollernkanal): einige Fußgänger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
+(Am Hohenzollernkanal): einige Fußgänger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
 (Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 (Am Hohenzollernkanal - Bernauer Str.): einige Fußgänger	q0- -192,16054 -206,16066 -207,16083 -215,16088 -257,16103
 Saatwinkler Steg, Rohrbruchwiesen: einige Fußgänger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
@@ -4217,6 +4217,9 @@ Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,1496
 (Nordstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6056,15162 6254,15191 6380,15210
 (Nordring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6265,15349 6275,15335 6293,15330
 (Nordring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6275,15335 6262,15323 6272,15249 6249,15237 6254,15191
+(Virchow-Klinikum, Einfahrt Sylter Str.): Krankenhausgelände, 20km/h-Zone	q2+ 5848,14977 5867,14993 5879,14981
+(Westring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 5879,14981 5893,14945 5935,14948 5926,14997 5889,14991 5879,14981
+(Westring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 5935,14948 5940,14911 6030,14924
 #: note ^^^
 # 
 Dresdener Str.: Fußgänger	q3 11021,11287 11000,11327
@@ -4518,6 +4521,7 @@ Hans-Baluschek-Park: enge Rampe, Fußgänger	q2 7252,6080 7278,6101
 (provisorischer Weg zum Golda-Meir-Steg): Fußgänger	q3 7825,14173 7861,14133
 Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Fußgänger	q2 7861,14133 7850,14100
+(Heidestr./Kieler Brücke - George-Stephenson-Str.): Fußgänger	q2 7612,14325 7529,14274
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): schmal, einige Fußgänger	q2 21440,300 21435,323
 #: note: Fußgängerzone, Radfahrer frei
 (Dolgenseestr., Fußgängerzone): Fußgänger	q3+ 17457,10083 17412,9911 17384,9807
@@ -4862,7 +4866,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
-#: last_checked: 2024-06-27
+#: last_checked: 2024-07-05
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
@@ -4982,6 +4986,10 @@ Köllnische Heide: schmaler Weg, kurvig	q3+ 20511,4781 20589,4795 20651,4854 2068
 (Huronseestr. - Am Kraatzgraben): einige Fußgänger	q2 16622,10338 16599,10283
 # 
 (Neucölln Carree, Parkplatzzufahrt): Parkplatzverkehr	q2 14430,7348 14423,7333 14378,7236 14507,7146
+# 
+(Uferweg - Vor den Toren): enger Weg	q3 2649,15783 2648,15827
+# 
+Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,13634 3053,13646 3054,13638
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
@@ -6251,7 +6259,7 @@ Lindenhoekweg: enge Straße	q1 12382,15802 12310,15837 12247,15868
 #: by: Sebastian (baumberlin):
 Taxusweg: enge Straße	q1 25649,13728 25671,13840 25681,13943 25681,14049
 #: by: Sara Köhler: vvv
-Brauereihof: recht verwinkelt	q1 -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2775,15446 -2809,15459
+Brauereihof: recht verwinkelt	q1 -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2789,15399 -2775,15446 -2809,15459
 Freudenberger Weg: als Gehweg ausgeschildert, Bordsteinkanten	q1 -4967,15414 -4793,15369
 (Wunderwaldstr. - Dyrotzer Str.): schmal	q2 -5442,14738 -5481,14622
 Frieda-Arnheim-Promenade: einige Fußgänger, Bordstein zur Triftstraße	q1 -2830,15208 -2801,15280 -2779,15358 -2801,15365

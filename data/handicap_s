@@ -832,7 +832,7 @@ KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4624,15671 4444,15906 4378,15922
 KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: einige Fuﬂg‰nger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
-(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
+(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 (Am Hohenzollernkanal - Bernauer Str.): einige Fuﬂg‰nger	q0 -192,16054 -206,16066 -207,16083 -215,16088 -257,16103
 Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1 -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
@@ -2129,6 +2129,9 @@ Virchow-Klinikum, S¸dstraﬂe: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,1496
 (Nordstr., Virchow-Klinikum): Krankenhausgel‰nde, 20km/h-Zone	q2 6056,15162 6254,15191 6380,15210
 (Nordring, Virchow-Klinikum): Krankenhausgel‰nde, 20km/h-Zone	q2 6265,15349 6275,15335 6293,15330
 (Nordring, Virchow-Klinikum): Krankenhausgel‰nde, 20km/h-Zone	q2 6275,15335 6262,15323 6272,15249 6249,15237 6254,15191
+(Virchow-Klinikum, Einfahrt Sylter Str.): Krankenhausgel‰nde, 20km/h-Zone	q2 5848,14977 5867,14993 5879,14981
+(Westring, Virchow-Klinikum): Krankenhausgel‰nde, 20km/h-Zone	q2 5879,14981 5893,14945 5935,14948 5926,14997 5889,14991 5879,14981
+(Westring, Virchow-Klinikum): Krankenhausgel‰nde, 20km/h-Zone	q2 5935,14948 5940,14911 6030,14924
 Dresdener Str.: Fuﬂg‰nger	q3 11021,11287 11000,11327
 (Lutterbacher Str. - Dahlemer Weg): einige Fuﬂg‰nger, Umlaufgitter am Bahn¸bergang	q3 2151,3126 2166,3138 2193,3142
 Fischer-Dieskau-Weg: einige Fuﬂg‰nger	q1 -151,2975 -81,2699
@@ -2324,6 +2327,7 @@ Hans-Baluschek-Park: enge Rampe, Fuﬂg‰nger	q2 7252,6080 7278,6101
 (provisorischer Weg zum Golda-Meir-Steg): Fuﬂg‰nger	q3 7825,14173 7861,14133
 Golda-Meir-Steg: Fuﬂg‰nger	q2 7861,14133 7899,14157 7962,14198
 (Golda-Meir-Steg - s¸dlicher Otto-Weidt-Platz): Fuﬂg‰nger	q2 7861,14133 7850,14100
+(Heidestr./Kieler Br¸cke - George-Stephenson-Str.): Fuﬂg‰nger	q2 7612,14325 7529,14274
 (Wilhelmine-Duncker-Str. - Gr¸nzug am Falkenberg): schmal, einige Fuﬂg‰nger	q2 21440,300 21435,323
 (Dolgenseestr., Fuﬂg‰ngerzone): Fuﬂg‰nger	q3 17457,10083 17412,9911 17384,9807
 (Gaudystr. - Sonneberger Weg): einige Fuﬂg‰nger, Bordstein	q4 10547,15586 10542,15609
@@ -2568,6 +2572,8 @@ Kˆllnische Heide: schmaler Weg, kurvig	q3 20511,4781 20589,4795 20651,4854 20689
 (Wintersteinstr. - Spreeuferweg): einige Fuﬂg‰nger	q3 3809,12596 3836,12614
 (Huronseestr. - Am Kraatzgraben): einige Fuﬂg‰nger	q2 16622,10338 16599,10283
 (Neucˆlln Carree, Parkplatzzufahrt): Parkplatzverkehr	q2 14430,7348 14423,7333 14378,7236 14507,7146
+(Uferweg - Vor den Toren): enger Weg	q3 2649,15783 2648,15827
+Jungfernheidesteg: enge Br¸cke, einige Fuﬂg‰nger	q2 2906,13610 2921,13618 3003,13634 3053,13646 3054,13638
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3123,7 +3129,7 @@ Hohenschˆnhausener Weg: Fuﬂg‰nger haben Vorrang	q1 15600,18551 15825,18385 16306
 Murtzaner Ring: enge Straﬂe	q1 19593,14472 19593,14452 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179 20051,14191 20061,14220 20056,14373 20051,14441
 Lindenhoekweg: enge Straﬂe	q1 12382,15802 12310,15837 12247,15868
 Taxusweg: enge Straﬂe	q1 25649,13728 25671,13840 25681,13943 25681,14049
-Brauereihof: recht verwinkelt	q1 -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2775,15446 -2809,15459
+Brauereihof: recht verwinkelt	q1 -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2789,15399 -2775,15446 -2809,15459
 Freudenberger Weg: als Gehweg ausgeschildert, Bordsteinkanten	q1 -4967,15414 -4793,15369
 (Wunderwaldstr. - Dyrotzer Str.): schmal	q2 -5442,14738 -5481,14622
 Frieda-Arnheim-Promenade: einige Fuﬂg‰nger, Bordstein zur Triftstraﬂe	q1 -2830,15208 -2801,15280 -2779,15358 -2801,15365

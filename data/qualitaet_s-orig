@@ -3138,9 +3138,9 @@ Sophienwerderweg: Asphalt	Q0 -1188,13988 -1575,14098 -2396,14245
 #: corrected_by: mapillary (früher: wassergebundene Decke)
 (Uferweg): Asphalt	Q0 4242,12684 4206,12691 4147,12699 3938,12687 3862,12675 3819,12676
 (Uferweg): wassergebundene Decke	Q1 3819,12676 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
-(Schloßpark Charlottenburg, westlicher Weg): wassergebundene Decke	Q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
+(Schloßpark Charlottenburg, westlicher Weg): wassergebundene Decke	Q1 2906,13610 2876,13594 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Schloßpark Charlottenburg): wassergebundene Decke	Q1 2953,13489 2925,13516 2858,13530
-(Sophie-Charlotten-Str. - Schloßpark Charlottenburg): wassergebundene Decke	Q1 2295,13031 2331,13173 2419,13232 2466,13232 2534,13214 2625,13229
+(Sophie-Charlotten-Str. - Schloßpark Charlottenburg): wassergebundene Decke	Q1 2285,13023 2331,13173 2419,13232 2466,13232 2534,13214 2625,13229
 Trendelenburgstr.: Asphalt	Q0 2740,11076 2845,10840
 (Uferweg): wassergebundene Decke	Q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157
 (Uferweg): Kleinkopfsteinpflaster	Q1 4742,13157 4751,13245
@@ -3247,7 +3247,7 @@ Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4076,16017 4089,1597
 # 
 #: by: Igor Smikalla vvv
 #: corrected_by: srt (mittlerweile Wurzelschäden)
-(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
 #: corrected_by: srt (asphaltiert -> Verbundsteinpflaster)
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
 #: corrected_by: srt (mittlerweile Wurzelschäden)
@@ -4841,7 +4841,7 @@ Straße N: Asphalt	Q0 209,16004 175,15895
 Straße O: Asphalt	Q0 133,16036 81,15925
 Straße P: Asphalt	Q0 42,16074 -6,15963
 Straße Q: Asphalt	Q0 -145,16059 -112,16117
-Straße R: Asphalt	Q0 -198,16161 -269,16241 -312,16288 -386,16347 -460,16408 -542,16475 -632,16541 -719,16608 -784,16658 -792,16659
+Straße R: Asphalt	Q0 -198,16161 -269,16241 -312,16288 -386,16347 -460,16408 -542,16475 -632,16541 -719,16608 -761,16641 -784,16658 -792,16659
 Straße R: Asphalt	Q0 -719,16608 -734,16589
 Straße S: Asphalt	Q0 -303,16194 -269,16241
 Straße T: Asphalt	Q0 -352,16233 -303,16194
@@ -4905,7 +4905,7 @@ KGA Plötzensee: Verbundsteinpflaster, teilweise etwas uneben, zweispurig	Q1- 496
 (KGA Plötzensee, Hauptweg): Asphalt	Q0 4963,15259 4883,15289 4777,15398
 (KGA Plötzensee, Hauptweg): Verbundsteinpflaster, zweispurig	Q1 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
-(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
+(Am Hohenzollernkanal): Asphalt, teilweise erhebliche Wurzelschäden	Q1- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
 (Am Hohenzollernkanal): Asphalt	Q0 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768
 (Am Hohenzollernkanal): Asphalt	Q0 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
@@ -10089,11 +10089,12 @@ Rue Dominique Larrey: Beton mit Schäden	Q1- 3738,16648 3659,16507 3624,16445
 (Kurt-Schumacher-Damm - KGA Vor den Toren): unbefestigte holprige Straße	Q2 3237,15858 3058,15846 3009,15811
 (Kurt-Schumacher-Damm - KGA Vor den Toren): Asphalt mit einigen Schäden	Q1 3009,15811 2972,15799 2950,15824 2701,15829
 (KGA Vor den Toren - Zur Luftfracht): Kopfsteinpflaster	Q2 2701,15829 2701,15853
+(Uferweg - Vor den Toren): unbefestigter Weg	Q2 2649,15783 2648,15827
 (Adlerweg): Rasengittersteine	Q2 1033,16278 960,16294
 (Adlerweg): Rasengittersteine, zweispurig	Q2+ 960,16294 842,16265 762,16207 687,16105
 (Adlerweg): unbefestigte Straße	Q2 687,16105 665,16025 665,15949
 #: note: Aufpflasterungen an jeder Kreuzung, aber gut umfahrbar
-(KGA Vor den Toren): Verbundsteinpflaster	Q1 2701,15829 2636,15827 2603,15838 2592,15856 2396,15897 2083,15999 1921,15936
+(KGA Vor den Toren): Verbundsteinpflaster	Q1 2701,15829 2648,15827 2636,15827 2603,15838 2592,15856 2396,15897 2083,15999 1921,15936
 Mecklenburgweg: Verbundsteinpflaster	Q1 1921,15936 1872,16081 1797,16083 1708,16061
 (Mecklenburgweg - Singdrosselsteig): unbefestigte Straße	Q2 1708,16061 1543,16003
 (Mecklenburgweg - Singdrosselsteig): Verbundsteinpflaster	Q1 1543,16003 1321,15944
@@ -11793,6 +11794,7 @@ Hedwig-Porschütz-Str.: glatt gepflastert	Q2+ 7735,14305 7757,14318 7769,14300 78
 Hedwig-Porschütz-Str.: Asphalt	Q0 7781,14238 7697,14187
 (Hedwig-Porschütz-Str. - Uferweg): glatt gepflastert	Q2+ 7802,14250 7830,14268
 (Hedwig-Porschütz-Str. - George-Stephenson-Str.): Mosaikpflaster	Q1 7697,14187 7614,14136
+(Heidestr./Kieler Brücke - George-Stephenson-Str.): Mosaikpflaster	Q1 7612,14325 7529,14274
 # REMOVED (wird neu gemacht) --- Gustav-Böß-Str.: Asphalt mit leichten Schäden	Q0- 10673,12434 10772,12515
 Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 (Gerhard-Sedlmayr-Str. - Landschaftspark): Asphalt	Q0 18228,4168 18178,4125 18176,4105
@@ -12715,7 +12717,7 @@ Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 (Schlosspark - Mollwitzstr.): unbefestigter Weg	Q2+ 2688,12701 2663,12699
 (Schlosspark - Mollwitzstr.): Verbundsteinpflaster	Q1 2663,12699 2663,12695 2561,12686
 (Schlosspark - Mollwitzstr.): Verbundsteinpflaster, einige Moabiter Kissen	Q1- 2561,12686 2539,12835
-Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1+ 2332,12793 2397,12513 2411,12428
+Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1+; 2332,12793 2397,12513 2411,12428
 (Reuterstr. - Weserstr./Nansenstr.): Kopfsteinpflaster	Q2 12149,9153 12180,9193
 (Kieler Brücke - Heidestr.): Asphalt	Q0 7740,14409 7705,14383
 (Kieler Brücke - Heidestr.): Kleinsteinpflaster	Q1 7705,14383 7612,14325
@@ -12801,6 +12803,8 @@ Riedingerstr.: Asphalt	Q0 10512,-1994 10507,-2016 10465,-2129
 (Nordring, Virchow-Klinikum): Beton	Q0 6275,15335 6262,15323 6272,15249 6249,15237
 (Nordring, Virchow-Klinikum): Asphalt/Beton	Q0 6249,15237 6254,15191
 (Südstr. - Südring, Virchow-Klinikum): Asphalt	Q0 6104,14937 6106,14890
+(Virchow-Klinikum, Einfahrt Sylter Str.): Asphalt	Q0 5848,14977 5867,14993 5879,14981
+(Westring, Virchow-Klinikum): Asphalt	Q0 5879,14981 5889,14991 5926,14997
 # 
 (Lutterbacher Str. - Dahlemer Weg): Gehwegplatten	Q0- 2151,3126 2166,3138 2193,3142
 (Fischtalpark): wassergebundene Decke	Q1- 719,4268 574,4150
@@ -12989,14 +12993,8 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 (Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0- 4674,12076 4608,11935 4596,11912
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
 Lisa-Fittko-Str.: Verbundsteinpflaster	Q1+ 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
-#: next_check_id: EUROPACITY-2015
-#: last_checked: 2024-05-17 vvv
-#: check_frequency: 45d vvv
-(Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7569,14209 7652,14257
-George-Stephenson-Str.: Asphalt, letzte Deckschicht fehlt, Kanaldeckel ragen heraus	Q1- 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136
-#: check_frequency ^^^
-#: last_checked ^^^
-George-Stephenson-Str.: Asphalt	Q0 7614,14136 7679,14030 7734,13944
+Clara-Mleinek-Str.: Asphalt	Q0 7569,14209 7652,14257
+George-Stephenson-Str.: Asphalt	Q0 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
 (Straße A, Innovationspark Wuhlheide): Asphalt	Q0 21484,7326 21346,7321 21284,7289 21233,7246
 (Straße B, Innovationspark Wuhlheide): Asphalt	Q0 21346,7321 21341,7487
 (Straße E, Innovationspark Wuhlheide): Asphalt	Q0 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
@@ -25168,7 +25166,7 @@ Borchertweg: mäßiger Asphalt	Q1 -3853,15097 -4017,15077
 Bramwaldweg: guter Beton	Q0 -4798,16050 -4828,15974 -4837,15894
 Bratringweg: gutes Verbundsteinpflaster	Q1 -5228,14750 -5338,14798
 #: confirmed_by: srt
-Brauereihof: Platten in Betonqualität	Q0- -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2775,15446 -2809,15459
+Brauereihof: Platten in Betonqualität	Q0- -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2789,15399 -2775,15446 -2809,15459
 #: confirmed_by: srt
 Burbacher Weg: guter Beton	Q0 -5095,15432 -4967,15414
 #: confirmed_by: srt
@@ -30246,9 +30244,9 @@ Am Bahnhof Jungfernheide: fester Sandweg teilweise mit Schlaglöchern	Q2 3702,138
 (Verlängerung der Ilsenburger Str.): Kopfsteinpflaster	Q2 3969,13341 3969,13405
 #: corrected_by: srt
 (Verlängerung der Ilsenburger Str.): fester Sand oder Verbundsteinpflaster	Q1- 3969,13405 3969,13487
-Sophie-Charlotten-Str.: Kopfsteinpflaster mit Asphalt ausgebessert	Q2 2293,13112 2343,13324 2439,13389
+Sophie-Charlotten-Str.: Kopfsteinpflaster mit Asphalt ausgebessert	Q2 2281,13092 2343,13324 2439,13389
 Heubnerweg: Asphalt	Q0 2539,12835 2516,13060
-Pulsstr.: Asphalt	Q0 2516,13060 2455,13058 2362,13046 2295,13031
+Pulsstr.: Asphalt	Q0 2516,13060 2455,13058 2362,13046 2285,13023
 #: confirmed_by: srt
 Ernst-Bumm-Weg: Asphalt	Q0 2397,12513 2467,12525
 #: confirmed_by: srt
