@@ -263,6 +263,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: by: https://berliner-abendblatt.de/berlin-news/gericht-urteilt-ueber-umbenennung-der-mohrenstrasse-id226365
 #: by: https://berliner-abendblatt.de/berlin-news/geplante-umbenennung-der-mohrenstrasse-zieht-sich-weiter-hin-id231791
+#: by: https://www.tagesspiegel.de/berlin/bezirke/fast-vier-jahre-nach-dem-beschluss-umbenennung-der-mohrenstrasse-in-berlin-mitte-verzogert-sich-weiter-11863142.html
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
 #: last_checked: 2024-06-19 (mapillary) vvv
@@ -5887,7 +5888,9 @@ Feldstr. (Spandau)	NN -3582,15244 -3585,15221
 Feldstr. (Spandau)	N -3585,15221 -3635,15213 -3630,15268
 Schäferstr. (Hakenfelde)	N -2915,15994 -2673,16021 -2656,16010
 Schützenstr. (Hakenfelde)	N -2869,15782 -2859,15785 -2813,15871 -2656,16010 -2624,16049
-Brauereihof	N -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365
+Brauereihof	N -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383
+#: note: hier Fußgängerzone, Radfahrer frei
+Brauereihof	NN -2856,15383 -2801,15365
 #: note: hier Fußgängerzone, Radfahrer frei
 Brauereihof	NN -2801,15365 -2789,15399
 Brauereihof	N -2789,15399 -2775,15446 -2809,15459
@@ -6977,7 +6980,7 @@ Hauptstr. (Alt-Hohenschönhausen)	H 16961,16042 17130,16032 17178,16029 17330,160
 Hauptstr. (Alt-Hohenschönhausen)	N 17418,16014 17474,15988 17495,15949 17516,15850 17510,15789
 (Rhinstr./Marzahner Str. - Hauptstr.)	NN 17510,15789 17488,15766
 Köpenicker Chaussee	H 16374,9760 16432,9673 16791,9137 16831,9078 17067,8725 17105,8666
-Blockdammweg	H 17067,8725 17126,8750 17380,8858 17729,8850
+Blockdammweg	H 17067,8725 17126,8750 17380,8858 17701,8851 17729,8850
 Blockdammweg	N 17754,8863 17760,8853 17904,8924 17972,8968
 Blockdammweg	NN 17972,8968 17979,8967 17990,8963 18070,9022
 Hönower Wiesenweg	N 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617,8363 17588,8413 17581,8422 17554,8458 17533,8505 17521,8549 17515,8567 17497,8623 17468,8692 17416,8767 17380,8858 17335,8971 17308,9090 17282,9135
@@ -6994,6 +6997,8 @@ Ruth-Baumgarte-Str.	N 17794,8429 17738,8450 17682,8464 17608,8483
 Ruth-Baumgarte-Str.	NN 17608,8483 17599,8485
 Irmtraud-Morgner-Str.	N 17521,8549 17619,8558 17627,8556 17755,8519
 Samuel-Lewin-Str.	N 17792,8660 17773,8588 17755,8519 17738,8450
+(Blockdammweg - Adolf-Wermuth-Allee)	NN 17701,8851 17699,8843 17674,8738 17659,8698
+(Blockdammweg - Adolf-Wermuth-Allee)	NN 17674,8738 17668,8696
 #: note ^^^
 # 
 Sangeallee	NN 18070,9022 18088,9049 18134,9080
@@ -15169,7 +15174,7 @@ Hirtschulzstr.	N 24316,12566 24195,12558 24077,12544 24018,12541
 Briesener Weg	N 24075,12100 24179,12260 24229,12329 24292,12415 24354,12510 24459,12664 24553,12885 24603,13003 24696,13120 24775,13218 24879,13338 24967,13438 25050,13539 25185,13720 25229,13730 25289,13705
 Uslarer Str.	N 25094,13362 24967,13438 24924,13461 24833,13484 24709,13513 24557,13549 24444,13549 24371,13561 24347,13465
 Lily-Braun-Str.	N 23173,12769 23213,13003 23240,13130 23259,13231 23296,13439
-Ernst-Bloch-Str.	N 23038,12706 22981,12794 23004,12908 23015,12963 23068,12955 23077,13002 23136,12993 23165,13010 23213,13003
+Ernst-Bloch-Str.	N 23038,12706 22981,12794 22992,12848 23004,12908 23015,12963 23068,12955 23077,13002 23136,12993 23165,13010 23213,13003
 (Weg entlang der U-Bahn)	NN 23405,14410 23350,14387 23217,14295 23228,14265
 #: note: blaues Straßenschild
 Lili-Grün-Weg	N 23642,14002 23712,13990 23728,13987
@@ -15655,7 +15660,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2024-06-26
+#: last_checked: 2024-07-06
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16045,7 +16050,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2024-06-26
+#: last_checked: 2024-07-06
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -16364,12 +16369,14 @@ Manga-Bell-Platz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,1
 #: by: https://www.berliner-zeitung.de/news/petersallee-im-wedding-in-berlin-mitte-umbenannt-gericht-bestaetigt-beschluss-li.2205297
 #: by: https://weddingweiser.de/wedding-kurz-knapp-125/
 #: by: https://taz.de/Dekoloniale-Strassenumbenennungen/!6004688/
+#: by[nocache]: https://x.com/GUnrecht/status/1803112760286273885 (Umbenennung am 23.08.2024?)
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="29"
 #: also_indoor: search Maji-Maji-Allee
 #: last_checked: 2024-06-05
-#: check_frequency: 21d
+# REMOVED --- #: check_frequency: 21d
 # REMOVED --- #: check_frequency: 90d
+#: next_check: 2024-08-23
 Petersallee	N 5426,16539 5533,16662
 #: next_check_id: AFRIKANISCHESVIERTEL-2020
 #: XXX_indoor: str_cont_ausnahme-Eintrag kann vermutlich entfernt werden
@@ -16383,8 +16390,9 @@ Petersallee	N 5426,16539 5533,16662
 #: osm_watch: way id="47347069" version="20"
 #: also_indoor: search Anna-Mungunda-Allee
 #: last_checked: 2024-06-16
-#: check_frequency: 21d
+# REMOVED --- #: check_frequency: 21d
 # REMOVED --- #: check_frequency: 90d
+#: next_check: 2024-08-23
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815
 Ghanastr.	N 5423,17076 5358,17132 5257,17046 5255,17007 5315,16936

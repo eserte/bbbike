@@ -2587,6 +2587,9 @@ Berliner Str. -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9490,23531 95
 Mittelstreifen	3nocross::ignrte 9528,23240 9747,22694 9973,22133
 Blankenfelder Chaussee -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9469,22606 9747,22694 9528,23240
 Blankenfelder Chaussee -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9973,22133 9747,22694 9469,22606
+Straﬂenbahnhaltestelle	3nocross::ignrte 17729,8850 17701,8851 17380,8858
+Blockdammweg -> Adolf-Wermuth-Allee: Straﬂenbahnhaltestelle	3::igndisp 17729,8850 17701,8851 17699,8843
+Adolf-Wermuth-Allee -> Blockdammweg: Straﬂenbahnhaltestelle	3::igndisp 17699,8843 17701,8851 17380,8858
 Gel‰nder am Gehweg	3nocross::ignrte 7628,4521 7667,4549 7690,4563
 unbequemes ‹berqueren	3nocross::ignrte 6613,3320 6647,3292 6712,3237
 Paul-Schneider-Str. -> Schulstr.: unbequemes ‹berqueren	3::igndisp 6613,3320 6647,3292 6653,3297
@@ -4143,3 +4146,4 @@ Ferdinand-Schultze-Str. -> Rhinstr./Marzahner Str.: linker Gehweg bis zur Ampel	
 Potsdamer Chaussee: linker Gehweg bis zur Ampel	1::igndisp -3011,1761 -3019,1774 -3040,1763
 Richard-von-Weizs‰cker-Platz: Gehweg bis Akazienstr.	1::igndisp 7201,8870 7242,8902 7307,8945
 Sonnenallee: linker Gehweg bis zur Ampel	1::igndisp 14334,7395 14423,7333
+Blockdammweg: linker Gehweg bis zum Fuﬂg‰ngerbereich in der Parkstadt Karlshorst	1::igndisp 17699,8843 17729,8850

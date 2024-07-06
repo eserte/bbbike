@@ -301,7 +301,7 @@ Wallensteinstr.: Fahrbahn m‰ﬂiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-06-26
+#: last_checked: 2024-07-06
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Sch‰den	Q1 18037,9195 18092,9141 18134,9080
@@ -5891,7 +5891,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1266800.php
 #: XXX bleibt es hier beim Asphalt?
 #: priority: #C
-#: last_checked: 2024-06-26
+#: last_checked: 2024-07-06
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
@@ -13188,6 +13188,8 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17659,8698 17640,8627
 Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1+ 17640,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17627,8556 17608,8483 17588,8413
+(Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17701,8851 17699,8843 17674,8738 17659,8698
+(Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17674,8738 17668,8696
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2024-03-09 (architektur-urbanistik) --- #: check_frequency: 30d
 Irmtraud-Morgner-Str.: Asphalt	Q0 17521,8549 17619,8558 17627,8556
 Heiner-M¸ller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -13438,7 +13440,7 @@ Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 1
 Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endg¸ltige Belag aussehen? vvv
-#: last_checked: 2024-06-17 vvv
+#: last_checked: 2024-07-06 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade: unbefestigte Baustraﬂe	Q2 14886,10748 14909,10732 14984,10677
@@ -13578,7 +13580,8 @@ Mandrellaplatz: Kopfsteinpflaster	Q2 22464,5751 22482,5706
 # 
 (Zufahrt U-Bahn-Abstellanlage Hˆnow): Beton	Q1 25919,14963 25809,14991
 # 
-Sewanstr. [Wohngebiet]: Asphalt mit Unebenheiten und Sch‰den	Q2 18220,10051 18039,9970
+#: historical_note: fr¸her (bis 2024?): Asphalt mit Unebenheiten und Sch‰den, Q2
+Sewanstr. [Wohngebiet]: Asphalt	Q0 18220,10051 18039,9970
 Sewanstr. [Wohngebiet]: Beton	Q1 18039,9970 18007,10040 17995,10070 17970,10132 17962,10147
 Sewanstr. [Wohngebiet]: Asphalt	Q0 18007,10040 17958,10012
 # 
@@ -16550,7 +16553,8 @@ Braillestr.: Asphalt	Q0 4516,5194 4477,5250 4430,5324
 #: by: maja wegener: vvv
 # REMOVED (Bauarbeiten beendet, keine Besserung) --- #: next_check_id: WANDLITZ-2021 --- #: XXX Asphaltierungsarbeiten, mˆglicherweise bessere Qualit‰t? --- #: last_checked: 2024-05-15 --- #: next_check: 2024-03-01
 #: corrected_by: srt (m‰ﬂiger Asphalt -> Asphalt; mittlerweile wieder schlechter)
-Wandlitzstr.: Asphalt mit einigen Sch‰den	Q1+ 18704,8427 18627,8475
+#: corrected_by: srt (Asphalt mit einigen Sch‰den, Q1+ -> nach Bauarbeiten wieder besser)
+Wandlitzstr.: Asphalt	Q0 18704,8427 18627,8475
 #: corrected_by: srt (Q2 -> Q0-)
 Wandlitzstr.: Asphalt mit leichten Sch‰den	Q0- 18627,8475 18557,8525 18494,8569 18448,8602
 #: confirmed_by: srt
@@ -16574,7 +16578,7 @@ Wandlitzstr.: Asphalt mit leichten Sch‰den	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.deutsches-architekturforum.de/thread/11397-lichtenberg-kleinere-projekte/?postID=736614#post736614 (BV Kaiserg‰rten)
 #: XXX neue H‰user geplant (zwischen Liepnitzstr. und St¸hlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2024-04-20
+#: last_checked: 2024-07-06
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-12-31
 Wandlitzstr.: m‰ﬂiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
@@ -18085,7 +18089,7 @@ Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
 # 
 #: by: Birgit Graffunder vvv
 #: corrected_by: srt (Beton -> ...)
-Ernst-Bloch-Str.: Asphalt	Q0 23038,12706 22981,12794 23004,12908
+Ernst-Bloch-Str.: Asphalt	Q0 23038,12706 22981,12794 22992,12848 23004,12908
 #: confirmed_by: srt
 Ernst-Bloch-Str.: Beton	Q0- 23004,12908 23015,12963 23068,12955 23077,13002 23136,12993 23165,13010
 #: corrected_by: srt (Beton -> ...)
@@ -31412,7 +31416,7 @@ Johannes-Zoschke-Str.: m‰ﬂiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/ausbau-der-rheinpfalzallee-auf-der-kippe_a387334 (Baubeginn 2025?)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/ausbau-der-rheinpfalzallee-sollte-laut-spd-dringend-in-die-investitionsplanung_a391367
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
-#: last_checked: 2024-01-09 vvv
+#: last_checked: 2024-07-06 vvv
 #: next_check: 2025-03-01 vvv
 #: confirmed_by: srt
 Rheinpfalzallee: Sandweg	Q2+ 18865,9608 18931,9629

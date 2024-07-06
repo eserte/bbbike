@@ -30,6 +30,7 @@ Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9822 17738,9922
 Sterndamm: Engstellen, Behinderungen mˆglich	q2::inwork; 17765,5469 17747,5452 17736,5441 17695,5394
 Br¸ckenstr.: Anbindung an Schnellerstraﬂe/Michael-Br¸ckner-Straﬂe gesperrt	q3::inwork 17728,5756 17900,6072
+Michael-Br¸ckner-Str.: Umwege an der Einm¸ndung Br¸ckenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2::inwork; 10178,10411 10122,10294
 Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -2574,6 +2575,9 @@ Kˆllnische Heide: schmaler Weg, kurvig	q3 20511,4781 20589,4795 20651,4854 20689
 (Neucˆlln Carree, Parkplatzzufahrt): Parkplatzverkehr	q2 14430,7348 14423,7333 14378,7236 14507,7146
 (Uferweg - Vor den Toren): enger Weg	q3 2649,15783 2648,15827
 Jungfernheidesteg: enge Br¸cke, einige Fuﬂg‰nger	q2 2906,13610 2921,13618 3003,13634 3053,13646 3054,13638
+(Blockdammweg - Adolf-Wermuth-Allee): einige Fuﬂg‰nger	q1 17701,8851 17699,8843 17674,8738
+(Blockdammweg - Adolf-Wermuth-Allee): einige Fuﬂg‰nger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17659,8698
+(Blockdammweg - Adolf-Wermuth-Allee): einige Fuﬂg‰nger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17668,8696
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3604,3 +3608,4 @@ Ferdinand-Schultze-Str. -> Rhinstr./Marzahner Str.: linker Gehweg bis zur Ampel	
 Potsdamer Chaussee: linker Gehweg bis zur Ampel	q3::igndisp; -3040,1763 -3019,1774 -3011,1761
 Richard-von-Weizs‰cker-Platz: Gehweg bis Akazienstr.	q3::igndisp; 7307,8945 7242,8902 7201,8870
 Sonnenallee: linker Gehweg bis zur Ampel	q4::igndisp; 14423,7333 14334,7395
+Blockdammweg: linker Gehweg bis zum Fuﬂg‰ngerbereich in der Parkstadt Karlshorst	q4::igndisp; 17729,8850 17699,8843

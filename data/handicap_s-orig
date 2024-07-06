@@ -452,7 +452,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-06-25 vvv
+#: last_checked: 2024-06-28 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -534,7 +534,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024) (bis 05.04.2024) (bis 30.08.2024)
 #: source_id: bvg2021:396#BVG308894_0
 #: osm_watch: way id="30043322" version="29"
-#: last_checked: 2024-05-06
+#: last_checked: 2024-07-06
 #: check_frequency: 100d
 #: next_check: 2024-08-30
 #: valid: -20240830
@@ -558,14 +558,16 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Friedrichsfelde ###
 # 
-#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger
-#: last_checked: 2024-06-07 vvv
+#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31
+#: last_checked: 2024-07-06 vvv
+#: next_check: 2024-07-31 vvv
 #: also_indoor: traffic (G,B)
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
 #: osm_watch[closed]: note 4145495 1
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9822 17738,9922
+#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED (laut mapillary weitgehend beendet) --- #: next_check_id: WALLENSTEIN-2020 --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-11-29 --- #: check_frequency: 10d --- # REMOVED --- #: next_check: 2020-11-16 --- # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
@@ -577,7 +579,7 @@ Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9
 #: next_check_id: SCHOENEWEIDE-2018
 #: next_check_id: STERNDAMM-2023
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
-#: last_checked: 2024-06-09 vvv
+#: last_checked: 2024-07-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-08-15 vvv
 # REMOVED (hier verlaufen Fußgängerverkehr und Radverkehr getrennt) --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17765,5469
@@ -592,10 +594,14 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 1
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024)
 #: note: Da der Königsplatz am 6.7.2024 weiterhin gesperrt sein wird, wird es hier erstmal keinen Straßenbahnverkehr geben.
 #: also_indoor: traffic (H,W)
-#: last_checked: 2024-06-26 (krickstadt)
-#: next_check: 2024-07-06
-#: valid: -20240706
+#: last_checked: 2024-07-06 vvv
+#: next_check: 2024-08-15 vvv
+#: valid: -20240815 vvv
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
+Michael-Brückner-Str.: Umwege an der Einmündung Brückenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED (abgesperrt, wird vermutlich bald zurückgebaut) --- #: next_check_id: STERNDAMM-2020 --- #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: last_checked: 2021-10-02 --- #: check_frequency: 21d --- #: next_check: 2021-10-31 --- Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
@@ -891,13 +897,13 @@ Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,144
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="36"
 #: osm_watch: way id="1193560283" version="5"
-#: last_checked: 2024-06-07
+#: last_checked: 2024-07-06
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-07-04
+#: last_checked: 2024-07-06
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -2746,14 +2752,14 @@ Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/lion-feuchtwanger-61-euroboden.1201/page-2#post-22689
 #: by: https://www.die-hellersdorfer.berlin/2024/03/22/eigentumswohnungen-in-kaulsdorf-nord-vor-der-fertigstellung/ (Fertigstellung am 30.06.2024)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/vielfaeltige-probleme-beim-bauprojekt-lion_a411971
-#: by: https://portfolio.bestplace-immobilien.de/lion/
+#: by: https://portfolio.bestplace-immobilien.de/lion/ (Seite existiert nicht mehr, 500er)
 #: note: gemeinsamer Geh- und Radweg
 #: XXX_prog BS am nördlichen Ende (ansonsten q1)
 #: XXX bleibt es beim Bordstein? Möglicherweise nur wegen der benachbarten Hochbauarbeiten?
 # REMOVED (ist jetzt was anderes) --- #: osm_watch: way id="733001657" version="5"
-#: last_checked: 2023-11-25
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2024-06-30
+#: last_checked: 2024-07-06
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2024-06-30
 Lion-Feuchtwanger-Weg: Fußgänger, Bordstein	q3 22516,12946 22493,12999
 (Erich-Kästner-Str. - Peter-Huchel-Str.): eng, Fußgänger	q2 23070,13711 23042,13657 23060,13624 23052,13586 23019,13551 23007,13509
 (Carola-Neher-Str. - U-Bhf. Cottbusser Platz): Fußgänger	q1 23438,14355 23476,14409 23458,14439
@@ -3501,7 +3507,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2024-06-09 vvv
+#: last_checked: 2024-07-06 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -4990,6 +4996,10 @@ Köllnische Heide: schmaler Weg, kurvig	q3+ 20511,4781 20589,4795 20651,4854 2068
 (Uferweg - Vor den Toren): enger Weg	q3 2649,15783 2648,15827
 # 
 Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,13634 3053,13646 3054,13638
+# 
+(Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger	q1 17701,8851 17699,8843 17674,8738
+(Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17659,8698
+(Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17668,8696
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

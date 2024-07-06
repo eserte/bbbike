@@ -3374,7 +3374,25 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: OSTEND-2024
+# REMOVED (alte Notiz) --- #: note: der zweite Bauabschnitt dürfte für Radfahrer nicht relevant sein, siehe
+#: by: http://www.htw-berlin.de/uploads/media/Bauabschnitt-2-Umleitung-Wilhelminenhof.pdf
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1809452214483652953
+#: by: https://pbs.twimg.com/media/GRuNzPkXgAANqwk?format=jpg&name=large
+#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024)
+hier einige Bordsteine ohne Anrampung	q3::inwork; 19403,5885 19388,5883 19273,5866 19010,5833
+vermutlich weniger Fußgängerverkehr	q2::inwork; 19010,5833 19273,5866 19388,5883 19403,5885
+Scharnweberstr.: Einfahrt verboten	q4::inwork; 19650,5920 19495,6029
+Slabystr.: einige Meter der Fahrbahn vor der Ostendstr. gesperrt	q3::inwork 19180,6020 19273,5866
+#	q4::inwork; 19957,5941 19795,5935 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19010,5833 18928,5920
+',
+         'from' => 1720130400,
+         'id' => 2486,
+         'text' => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Steffelbauerstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, außerdem Einbahnstraßenregelung in der Scharnweberstr., voraussichtlich bis 26.08.2024',
+         'type' => 'handicap',
+         'until' => 1724688000
+       },
        undef,
        undef,
        undef,
@@ -4203,7 +4221,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
-#: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt
+#: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: priority: #B vvv
@@ -4219,7 +4237,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="27"
-#: last_checked: 2024-05-06
+#: last_checked: 2024-07-06
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
 #: last_checked: 2024-06-26
@@ -6228,10 +6246,10 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
          'data' => '#: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
-#: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
-#: last_checked: 2024-06-26
-#: check_frequency: 90d
-#: next_check: 2024-07-18
+# REMOVED --- #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
+#: last_checked: 2024-07-06
+#: check_frequency: 30d
+#: next_check: 2024-08-15
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
          'from' => undef,
@@ -6934,14 +6952,14 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 #: XXX bei osm mittlerweile als offen getaggt, stimmt das? -> nein, siehe https://www.openstreetmap.org/changeset/150876600
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-06-26 (osm) vvv
+#: last_checked: 2024-07-06 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-07-05 vvv
+#: next_check: 2024-08-10 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="7"
 	q4::inwork 17826,6495 17991,6431
 #: note: der westliche Gehweg ist komplett gesperrt und man kommt nur über die gepflasterte Service-Straße zum Ufer und dort via Treppe wieder zur Edisonstraße; besser den östlichen Gehweg benutzen (Stand Mitte November 2023)
-#: osm_watch: way id="176072020" version="38"
+#: osm_watch: way id="176072020" version="39"
 	q4::inwork 17991,6431 17948,6248
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6950,7 +6968,7 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 ',
          'from' => undef,
          'id' => 3901,
-         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis Ende Oktober 2024',
+         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, Sperrung im Kreuzungsbereich, Umwege, voraussichtlich bis Dezember 2024',
          'type' => 'handicap',
          'until' => 1734019200
        },
@@ -7263,7 +7281,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 # REMOVED (beendet) ---	q2::inwork 13860,9861 13704,9691
 # REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
 # REMOVED --- #: note Baustellenschild der Wasserbetriebe: bis Mai 2024; Halteverbotsschilder bis 26.04.2024 (mittlerweile abgelaufen und nicht erneuert)
-#: also_indoor: traffic (B,T)
+#: also_indoor: traffic (B,T,G)
 #: add_fragezeichen: Ist die Bouchéstr. weiterhin wegen Bauarbeiten gesperrt?
 #: note Halteverbotsschilder bis 08.07.2024 (scheint aber nicht schaffbar zu sein)
 #: last_checked: 2024-07-04
@@ -7756,7 +7774,7 @@ Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-07-01 (webcam)
+#: last_checked: 2024-07-06 (webcam)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-06-12
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
@@ -8290,19 +8308,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'type' => 'gesperrt',
          'until' => 1735686000
        },
-       {
-         'data' => '#: source_id: viz2021:13.51055,52.44458,02.07.2024,17:07 (bis 15.08.2024) (inaktiv)
-#: source_id: viz2021:13.508246,52.445764,02.07.2024,07:00 (hier nur Kfz-Verkehr, bis 15.08.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1808152802205503982 (hier auch nur Kfz-Verkehr)
-#: add_fragezeichen: Sind Radfahrer von der Sperrung betroffen?
-	q4::inwork; 17794,4443 17676,4540 17516,4657
-',
-         'from' => 1719846420,
-         'id' => 4105,
-         'text' => 'Königsheideweg: Bauarbeiten zwischen Segelfliegerdamm und Sterndamm, Richtung Nordwesten gesperrt, evtl. sind auch Radfahrer betroffen, vom 02.07.2024 17:07 bis 15.08.2024 23:59',
-         'type' => 'handicap',
-         'until' => 1723759140
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (none)
 #: last_checked: 2024-07-03

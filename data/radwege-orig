@@ -2199,7 +2199,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2024-06-19 vvv
+#: last_checked: 2024-07-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3946,8 +3946,8 @@ Busspur ist immer gültig	RW5; 3710,13290 3711,13210
 	RW6;RW6 6201,2125 6159,2176
 	RW1; 17067,8725 17126,8750
 	RW3; 17126,8750 17380,8858
-die letzten Meter sind benutzungspflichtig	RW3; 17380,8858 17729,8850
-die ersten 80 Meter sind nicht benutzungspflichtig	RW4; 17729,8850 17380,8858
+die letzten Meter sind benutzungspflichtig	RW3; 17380,8858 17701,8851 17729,8850
+die ersten 80 Meter sind nicht benutzungspflichtig	RW4; 17729,8850 17701,8851 17380,8858
 	RW4; 17380,8858 17126,8750
 	RW1; 17126,8750 17067,8725
 	RW2; 18615,8269 18672,8238
@@ -5298,10 +5298,8 @@ Gehweg für Radfahrer frei	RW1; 9073,20606 9027,20603 8904,20596
 Verbundsteinpflaster	RW2; 20010,3340 20002,3349 19946,3415
 neu asphaltiert	RW2; 19946,3415 19904,3464
 Verbundsteinpflaster	RW2; 19904,3464 19857,3514 19806,3567
-#: note: Radspur fängt ein paar Meter nördlich der Einmündung Altheider Str. an
-Grünbeschichtung, mittelhohe Leitboys	RW4; 19806,3567 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000
-#: note: Radspur hört wenige Meter vor der Fennstr./Britzer Str. auf
-Grünbeschichtung	RW4; 18457,5000 18425,5032 18080,5376
+#: note: Radspur fängt ein paar Meter nördlich der Einmündung Altheider Str. an und hört wenige Meter vor der Fennstr./Britzer Str. auf
+Grünbeschichtung, mittelhohe Leitboys	RW4; 19806,3567 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000 18425,5032 18080,5376
 Verbundsteinpflaster	RW2; 18080,5376 17960,5511
 #: note: Adlergestell, Michael-Brückner-Str., Richtung Südwesten
 Grünbeschichtung, mittelhohe Leitboys	RW4; 17886,5587 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19226,4183
@@ -6246,7 +6244,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7609 (Antrag)
-#: last_checked: 2024-06-09
+#: last_checked: 2024-07-06
 #: check_frequency: 90d
 #: next_check: 2024-08-15
 provisorische Radspur, auf den letzten Metern getrennter Fuß- und Radweg	RW4; 17886,5587 17765,5469 17747,5452 17736,5441
@@ -6369,7 +6367,7 @@ Gehwegplatten	RW1; 1403,11428 1308,11506
 	RW3; 1308,11506 1220,11583 1200,11600 1133,11664 1036,11761 884,11896
 	RW6;RW6 -2783,15538 -2809,15459
 	RW6;RW6 -2858,15475 -2809,15459 -2775,15446 -2789,15399
-	RW6;RW6 -2801,15365 -2856,15383 -2886,15393 -2858,15475
+	RW6;RW6 -2856,15383 -2886,15393 -2858,15475
 #: confirmed_by: Stefan Klinkusch
 	RW6;RW6 -2856,15383 -2878,15304
 Gehweg für Radfahrer frei	RW1; 19468,8168 19558,8064
@@ -8048,7 +8046,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="35"
-#: last_checked: 2024-06-09 vvv
+#: last_checked: 2024-07-06 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788
