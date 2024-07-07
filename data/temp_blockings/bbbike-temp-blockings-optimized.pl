@@ -2553,6 +2553,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
 #: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
 #: by: https://csd-berlin.de/csd-berlin-2023/route-finale
 #: by: https://csd-berlin.de/route-finale
+#: by: https://www.berlin.de/events/3889775-2229501-pride-village-csd-finale.html
 #: source_id: viz2021:13.3899,52.51036,21.07.2023,19:32 (bis 22.07.2023) (inaktiv)
 	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396
 	2::temp 7033,10396 6937,10407 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6685,10690 6740,10755 6824,10904
@@ -6487,7 +6488,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
-#: also_indoor: traffic (ex-H,ex-G,B,ex-W)
+#: also_indoor: traffic (ex-H,ex-G,B,ex-W,T)
 #: last_checked: 2024-06-12
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 14d
@@ -6565,7 +6566,18 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: add_fragezeichen: Ist die Forumszufahrt wieder offen? Kann man als Radfahrer wieder zum Wuhlewanderweg gelangen?
+#: next_check: 2024-07-06
+	2::inwork 22280,6128 22296,6170
+',
+         'from' => undef,
+         'id' => 3785,
+         'text' => 'Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt, aber möglicherweise wieder offen',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -7093,7 +7105,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (ex-G,ex-W)
 #: osm_watch: way id="977478749" version="1"
 #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
-#: last_checked: 2024-06-25
+#: last_checked: 2024-07-05 (architektur-urbanistik)
 #: next_check: 2024-07-31
 	q3::inwork 7103,11247 7171,11510
 ',
@@ -7603,7 +7615,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        undef,
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
-#: also_indoor: traffic (B) vvv
+#: also_indoor: traffic (B,G,T) vvv
 #: last_checked: 2024-05-10 (mapillary) vvv
 #: check_frequency: 60d vvv
 	q4::inwork 7948,15802 8048,15829 8140,15859 8187,15965
@@ -8281,13 +8293,13 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
 #: by[nocache]: https://x.com/Verkehrshassel/status/1799455523164631267
 # REMOVED (deleted) --- #: osm_watch: way id="1049317376" version="1"
 # REMOVED (deleted) --- #: osm_watch: way id="1049317378" version="3"
-#: osm_watch: way id="1049317377" version="6"
-#: osm_watch: way id="383652784" version="11"
+#: osm_watch: way id="1049317377" version="7"
+#: osm_watch: way id="383652784" version="12"
 #: osm_watch: way id="35002100" version="13"
 #: osm_watch: note 3115482 11
 #: add_fragezeichen: Ist der Weg offen? Wurden die Radroutenschilder (Mauerweg, Berlin-Leipzig) bereits angepasst?
 #: XXX Zumindest die Ausschilderung für den Mauerweg wurde schon vorbereitet
-#: last_checked: 2024-07-03
+#: last_checked: 2024-07-05 (osm)
 #: next_check: 2024-07-18
 	2::inwork 10467,-3201 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
 ',

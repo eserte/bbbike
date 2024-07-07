@@ -2106,8 +2106,6 @@ Busspur ist immer gültig	RW5; 10512,12039 10550,12096 10574,12131
 #: last_checked: 2024-06-25 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
 provisorische Radspur	RW4; 10574,12131 10625,12206 10646,12234
-#: historical_note: bis 2024-06-13 provisorische Radspur, RW4;
-asphaltiert	RW2; 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10710,12377 10714,12355 10703,12313 10697,12303 10662,12255 10646,12234 10625,12206
@@ -2116,6 +2114,9 @@ provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
 #: priority ^^^
+# 
+#: historical_note: bis 2024-06-13 provisorische Radspur, RW4;
+asphaltiert	RW2; 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
 # 
 #: note: Benutzungspflicht "per Fortsetzung"
 #: note: es wird suggeriert, dass Radfahrer Richtung Stralauer Str. bereits auf dem Gehweg abbiegen dürfen
@@ -4867,7 +4868,7 @@ schmaler Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1; 22797,697
 Verbundsteinpflaster	RW1; 22724,6608 22675,6498 22645,6431
 #: note: Busspur ist nicht für Radfahrer freigegeben, aber der Radweg ist auch nicht benutzungspflichtig 
 schmaler Unterstreifen gegen parkende Autos, Beton	RW1; 22645,6431 22534,6249
-Gehweg für Radfahrer frei	RW1; 22467,6135 22603,6141 22777,6151 22857,6155
+Gehweg für Radfahrer frei	RW1; 22467,6135 22656,6142 22700,6138 22777,6151 22857,6155
 	RW1;RW1 21979,5208 22023,5160 22033,5148 22078,5093 22101,5064 22128,5003
 Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
 	RW1; 27189,5169 27097,5108 26971,5025 26620,4936
@@ -5510,7 +5511,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.bvwp-projekte.de/strasse/B2-G20-BE/B2-G20-BE.html
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
-#: osm_watch: way id="176753739" version="21"
+#: osm_watch: way id="176753739" version="22"
 #: last_checked: 2024-05-21 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
@@ -6930,7 +6931,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2024-06-19
+#: last_checked: 2024-07-06 (architektur-urbanistik)
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
@@ -7089,9 +7090,9 @@ zusammen mit Bushaltestelle	RW3; 8715,7384 8713,7423
 Radspur hinter den parkenden Autos	RW4; 8713,7423 8706,7585 8704,7603 8690,7704
 #: next_check_id: BOELCKE-2023
 #: XXX ist das nur provisorisch?
-#: last_checked: 2024-04-13
-#: check_frequency: 90d
-#: next_check: 2024-06-30
+#: last_checked: 2024-07-07
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2024-06-30
 semi-provisorischer asphaltierter Haltestellenkap	RW1; 8690,7704 8686,7726
 	RW4; 8686,7726 8642,7876 8627,7941
 Radspur hinter den parkenden Autos	RW4; 8627,7941 8623,8018 8620,8095

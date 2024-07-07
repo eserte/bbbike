@@ -2221,7 +2221,7 @@ Buckower Damm: Radfahrstreifen sollen entstehen	?::projected 12712,2378 12738,21
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_04.pdf
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_05.pdf
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_06.pdf
-#: last_checked: 2024-07-03
+#: last_checked: 2024-07-07
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-06-30
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
@@ -5448,7 +5448,7 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 #: source_id: viz2021:13.43786,52.52023,27.06.2024,15:16 (bis 26.07.2024) (inaktiv)
 #: osm_watch: note 4161500 4
 #: note: (weggedrehte) Masten steht schon
-#: last_checked: 2024-06-26
+#: last_checked: 2024-07-07
 #: check_frequency: 30d
 #: next_check: 2024-07-26
 Friedenstr./Koppenstr.: Zebrastreifen in Bau	?::inwork 12694,12798 12690,12769 12653,12762
@@ -5815,6 +5815,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: source_id: viz2021:13.48067,52.49917,20.10.2023,09:55 (Bauarbeiten bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
+#: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024)
 #: last_checked: 2024-07-06
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
@@ -6154,7 +6155,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
 #: XXX mittlerweile Bauarbeiten hinter der Kreuzung Zeughofstr. Richtung NW, unklare Einbahnstraßenregelung; 2024-05-27: alle Einfahrt-verboten-Schilder haben nun Radfahrer-frei-Zusatzschilder, bei den Einbahnstraßenschildern fehlen sie weiterhin
-#: last_checked: 2024-07-03
+#: last_checked: 2024-07-07
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -6625,6 +6626,16 @@ Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -
 #: check_frequency: 720d
 Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected 23327,5817 23327,5854 23031,5849 23011,6181
 # 
+#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/umbau-bahnhof-k%C3%B6penick.1298/#post-23369
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze (Erwähnung der östlichen Personenunterführung; Gesamtbauarbeiten bis 2027)
+#: XXX Wird der Zugang für Radfahrer befahrbar sein? Wird es eine Verbindung zum Elcknerplatz geben?
+#: osm_watch: way id="1295825812" version="1"
+#: last_checked: 2024-07-06 (architektur-urbanistik)
+#: check_frequency: 360d
+#: next_check: 2027-12-31
+Bahnhof Köpenick: neuer Ostzugang	?::inwork 22700,6138 22700,6045 22624,6044
+# 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5415 (Schlussbericht 12.03.2024: zwei bis drei Jahre)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/bhTKxQEZumkXlAtNeZoUvByIuJVCsWmyB2B8mLJn/yZeQiQEh/57-Anlagen/03/B01313SB.pdf
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze?date=20240607
@@ -6988,7 +6999,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12114,125
 #: osm_watch: way id="1273991435" version="2"
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht
-#: last_checked: 2024-07-05
+#: last_checked: 2024-07-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-11-30
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7157,14 +7168,14 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2024-07-05
+#: last_checked: 2024-07-07
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2024-07-05
+#: last_checked: 2024-07-07
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -7205,7 +7216,7 @@ Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1461923.php (Anradeln am 10.7.2024)
 #: XXX Markierungsarbeiten nördlich der Torstr. laufen; Poller sind bereits eingetragen
 #: osm_watch[closed]: note 3910311 4
-#: osm_watch: way id="1295086735" version="1"
+#: osm_watch: way id="1295086735" version="2"
 #: osm_watch: note 4292600 3
 #: last_checked: 2024-07-03 (mapillary)
 #: check_frequency: 14d
@@ -7393,7 +7404,7 @@ Paradiesstr.: evtl. werden hier noch Radwege als Zufahrt zur B96a erstellt, viel
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10587 (Anfrage)
-#: last_checked: 2024-07-03
+#: last_checked: 2024-07-07
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -11038,10 +11049,20 @@ Bebauungsplan 12-63a: wird es hier einen Verbindungsweg geben?	? 2645,20011 2653
 #: osm_watch: way id="741298766" version="7" brb
 #: osm_watch: way id="741297437" version="10" brb
 #: XXX laut osm alle mittlerweile fertiggestellt, allerdings fehlen Angaben zu surface etc.; mittlerweile sind surface+smoothness verfügbar
-#: last_checked: 2023-03-13 (osm)
-#: check_frequency: 360d
-#: next_check: 2024-01-10
-Schulzendorf: weitere Straßen entstehen	?::inwork 22906,-4982 22835,-5312
+#: last_checked: 2023-03-13 (osm) vvv
+#: check_frequency: 360d vvv
+#: next_check: 2024-01-10 vvv
+Kamillenweg (Schulzendorf): Qualität (laut osm Verbundsteinpflaster)? Einbahnstraße (laut osm nicht für Radfahrer)?	? 22814,-4986 22798,-5036 22739,-5062
+Milanstr. (Schulzendorf): Qualität (laut osm Verbundsteinpflaster)?	? 22802,-4959 22814,-4986 22854,-5002 22814,-5119
+Am Feldrain (Schulzendorf): Qualität (laut osm Verbundsteinpflaster)?	? 22854,-5002 22874,-4946 22906,-4932
+Zum Feldrain (Schulzendorf): Qualität (laut osm Verbundsteinpflaster)?	? 22906,-4932 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130
+Reiherhorst (Schulzendorf): Qualität (laut osm Verbundsteinpflaster)?	? 22814,-5119 22860,-5130 22848,-5176
+Falkenring (Schulzendorf): Qualität (laut osm Verbundsteinpflaster)?	? 22787,-5165 22848,-5176 22832,-5257 22778,-5350 22763,-5343 22690,-5300
+Falkenring (Schulzendorf): Qualität (laut osm Verbundsteinpflaster)?	? 22763,-5343 22731,-5402 22685,-5414
+Sperberring (Schulzendorf): Qualität (laut osm Verbundsteinpflaster)? Einbahnstraße (laut osm nicht für Radfahrer)?	? 22778,-5350 22794,-5360 22852,-5347 22880,-5197 22867,-5180 22848,-5176
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: by: https://www.berlin.de/sen/stadtentwicklung/staedtebau/einzelprojekte/siemensstadt-square/ (Bebauungsplan 5-123)
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/am-24-juli-startet-das-beteiligungsverfahren-fuer-den-eingangsbereich_a387032 (Fertigstellung Anfang 2027)
@@ -12533,6 +12554,8 @@ Leipziger Str. (Schöneiche): wie ist die Qualität im nördlichen Abschnitt? ebenf
 # REMOVED --- #: source_id: LS/721-F/20/189 --- #: osm_watch: way id="888613960" version="8" brb --- #: XXX laut osm fertiggestellt, Mapillary-Bilder hoffentlich bald verfügbar --- #: next_check: 2021-06-30 --- Hönow - Neuenhagen: Bau eines Radwegs	?::inwork 27692,15066 28042,14883 28314,14660
 #: XXX vermutlich größtenteils asphaltiert
 Technologiepark KW - Funkerberg: Qualität der Verbindung?	? 24452,-10414 24518,-10498 24950,-10965 25233,-11257 25366,-11396 25528,-11392
+# 
+Am Amtsgarten (Königs Wusterhausen): Qualität?	? 25709,-11610 25719,-11644 25696,-11770 25676,-11852 25694,-11921
 # 
 # REMOVED (ja) --- Takustr.: wurde nach den Bauarbeiten die alte Einbahnstraßenregelung wieder hergestellt?	? 3079,5411 3179,5267 3226,5227 3273,5214
 # 

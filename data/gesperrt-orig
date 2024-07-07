@@ -3942,7 +3942,7 @@ Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork
 #: by: https://www.deutsches-architekturforum.de/thread/15360-quartier-hugos-mariendorf/?postID=731063#post731063 ("Quartier Hugos")
 #: osm_watch: way id="287142081" version="14"
 #: osm_watch: way id="255588538" version="13"
-#: osm_watch: way id="1022315542" version="9"
+#: osm_watch: way id="1022315542" version="10"
 #: osm_watch: way id="1202387366" version="3"
 # REMOVED --- #: osm_watch: way id="271172796" version="6"
 # REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
@@ -4043,22 +4043,6 @@ An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 # 
 # REMOVED (laut osm wieder offen) --- #: by: l.epp --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11479 (Instandsetzung frühestens 2025) --- #: confirmed_by: osm, srt --- #: osm_watch: note 3359195 7 --- #: osm_watch: way id="311338440" version="4" --- #: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt? --- #: last_checked: 2023-06-24 --- #: check_frequency: 360d --- #: next_check: 2025-09-01 --- Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
-# 
-#: next_check_id: RBAHNHOFKOEPENICK-2022
-#: by: https://www.bahninfo-forum.de/read.php?9,726467,767543#msg-767543
-#: by: https://phoenix1554.wordpress.com/2023/07/09/umbau-bahnhof-berlin-kopenick-09-07-2023/
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/umbau-bahnhof-k%C3%B6penick.1298/#post-22353
-#: confirmed_by: srt
-#: osm_watch: way id="25370127" version="12"
-#: osm_watch: way id="25370128" version="11"
-#: note: am 2023-05-13 (Sa) mittags konnte man an der Absperrung vorbeifahren; am 2023-06-19 war eine Durchfahrt unmöglich, Trümmerteile der Brücke liegen auf der Straße
-#: note: ein inaktiver Eintrag in temp-blockings existiert ebenso, kann bei Bedarf wieder aktiviert werde
-#: priority: #A
-#: last_checked: 2024-06-05 (okas)
-#: check_frequency: 120d
-#: next_check: 2027-07-31
-Forumszufahrt: Bahnunterführung wegen Bauarbeiten gesperrt	2::inwork 22280,6128 22296,6170
-# 
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-am-franz-mehring-platz_a340931 --- #: by: https://www.competitionline.com/de/news/ergebnisse/neugestaltung-franz-mehring-platz-in-berlin-280286/prizegroup/1-preis-101800.html --- #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742 --- #: by: https://www.gm013.la/work/fmp --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593 --- #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können --- #: last_checked: 2023-06-20 --- #: check_frequency: 30d --- #: next_check: 2023-07-01 --- (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, südliches Ende kan mit Bauzäunen abgesperrt sein	2::inwork 12788,11898 12891,12008
 # REMOVED --- #: osm_watch: way id="1195364871" version="3" --- #: note: am 2023-04-25 gab es einen recht schmalen Durchgang, mit einem Fahrrad ist man noch gerade so durchgekommen; am 2023-05-04 auch der gleiche schmale Durchgang, aber ein davor geparktes Auto hätte vielleicht einiges an Rangierarbeit verursacht; am 2023-05-16 existiert wieder ein schmaler Durchgang -> von gesperrt nach handicap_s verschoben, am 2023-06-15 kein Kran mehr, aber nun wieder komplett gesperrt --- #: last_checked: 2023-09-21 --- Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,12094 10050,11942
 # 
@@ -4868,14 +4852,14 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-07 (webcam)
 #: check_frequency: 60d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-07-05
+#: last_checked: 2024-07-07 (webcam)
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
