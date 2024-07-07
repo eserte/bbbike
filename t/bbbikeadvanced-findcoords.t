@@ -44,6 +44,9 @@ eq_or_diff [_find_coords('https://www.google.com/maps/place/Brandenburger+Tor/@5
 eq_or_diff [_find_coords('https://kartaview.org/map/@52.51625735865977,13.37810327600232,17z')], [[8627,12253]];
 eq_or_diff [_find_coords("Coordinate:\t52.51628113, 13.37769890")], [[8599,12255]];
 
+# tomtom
+eq_or_diff [_find_coords('https://plan.tomtom.com/de/route/plan?p=52.52908,13.38559,14.48z')], [[9107,13688]];
+
 # image with gps data in exif
 SKIP: {
     skip "Image::ExifTool needed for parsing GPS position out of images", 1
