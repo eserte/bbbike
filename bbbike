@@ -14656,7 +14656,7 @@ sub show_info {
 	my %builtin_links;
 	my @builtin_links_order;
 
-	if ($city_obj->cityname eq 'Berlin') { # only bbbike.de links for Berlin data (XXX but maybe bbbike.org links could be done instead?)
+	if ($city_obj->cityname eq 'Berlin' && !defined $current_tag_filter) { # only bbbike.de links for Berlin data (XXX but maybe bbbike.org links could be done instead?)
 	    my @bbbike_cgi_def = ([$BBBike::BBBIKE_DIRECT_WWW, "BBBike im WWW"]);
 	    if ($devel_host) {
 		push @bbbike_cgi_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/bbbike.cgi" : "http://localhost/bbbike/cgi/bbbike.cgi", "lokal: BBBike im WWW"];
@@ -14728,7 +14728,8 @@ sub show_info {
 
 	if ($advanced
 	    && !$city_obj->is_osm_source # no fragezeichen form link for osm data
-	    && grep { $_ eq 'fz' } @tags
+	    && (grep { $_ eq 'fz' } @tags)
+	    && !defined $current_tag_filter
 	   ) {
 	    my $need_indentation = 1; # XXX unless I have an icon
 	    $info_text->insert("end", "fragezeichenform",
