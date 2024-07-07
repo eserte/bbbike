@@ -1389,6 +1389,21 @@ sub _find_coords {
 	    }
 	}
 
+	# TomTom map URL, e.g.
+	# https://plan.tomtom.com/de/route/plan?p=52.50987,13.45191,14.48z
+	{
+	    my @_coords;
+	    while ($s =~ m{[?&]p=([-+]?[0-9\.]+),([-+]?[0-9\.]+),[0-9\.]+z($|&)}g) {
+		my($y,$x) = ($1,$2);
+		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		push @_coords, [$x,$y];
+	    }
+	    if (@_coords) {
+		push @coords, @_coords;
+		return @coords; # shortcut search, lat,lon order may conflict with further regexps
+	    }
+	}
+
 	# DDD or BBBike coordinates
 	while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
 	    my($x,$y) = ($1,$2);
