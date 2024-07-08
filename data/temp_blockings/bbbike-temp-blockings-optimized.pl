@@ -1806,7 +1806,19 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: IM_013591 (inaktiv)
+#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum)
+#: also_indoor: traffic (H,G,B,T,W)
+#: last_checked: 2024-07-08 (traffic)
+	q4::inwork; 7532,4605 7544,4587 7561,4560 7573,4540 7597,4499
+',
+         'from' => 1720470111,
+         'id' => 1748,
+         'text' => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -4844,7 +4856,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-06-23
+#: last_checked: 2024-07-05 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -5499,7 +5511,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-05 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -7298,7 +7310,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: note Halteverbotsschilder bis 08.07.2024 (scheint aber nicht schaffbar zu sein)
 #: last_checked: 2024-07-04
 #: next_check: 2024-07-08
-	q2::inwork 13489,9456 13602,9581
+	q2::inwork 13489,9456 13357,9313
 ',
          'from' => undef,
          'id' => 3968,
@@ -7440,7 +7452,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-06-22
+#: last_checked: 2024-07-08
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -7709,14 +7721,16 @@ Schustehrusstr.	q4::inwork 3528,12276 3623,12284
          'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
+#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 	q4::inwork; 25050,13539 25163,13494
 	q3::inwork 25163,13494 25287,13464
+Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 ',
          'from' => 1713942000,
          'id' => 4048,
-         'text' => 'Am Rosenhag: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
+         'text' => 'Am Rosenhag und Uslarer Str.: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
          'type' => 'handicap',
          'until' => 1747839600
        },
@@ -7956,7 +7970,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-07-03 vvv
+#: last_checked: 2024-07-05 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-08-31 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -8396,6 +8410,17 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
          'text' => 'Virchow-Klinikum, Eingang Sylter Str: nur Mo-Fr tagsüber ab 5 Uhr offen',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (H,G,B,T,W)
+#: note: laut rbb
+	q4::inwork 4381,9620 4351,9633 4224,9690
+',
+         'from' => 1720469919,
+         'id' => 4111,
+         'text' => 'Pommersche Str.: zwischen Bayerischer und Württembergischer Str. Sperrung, evtl. sind auch Radfahrer betroffen, bis 19.07.2024',
+         'type' => 'handicap',
+         'until' => 1721426400
        }
      
 );

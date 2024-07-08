@@ -15118,12 +15118,16 @@ EOF
 	2::inwork 14308,25196 14217,24999 14182,24940 14112,24843 14023,24756
 EOF
      },
-     { from  => 1247723876, # 2009-07-16 07:57
-       until => 1249077599, # 2009-07-31 23:59
-       text  => 'Steglitzer Damm (Steglitz) Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt (bis Ende 07.2009)',
+     { from  => 1720470111, # 1247723876, # 2009-07-16 07:57
+       until => undef, # 1249077599, # 2009-07-31 23:59
+       #text  => 'Steglitzer Damm (Steglitz) Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt (bis Ende 07.2009)',
+       text  => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen',
        type  => 'handicap',
-       source_id => 'IM_013591',
        data  => <<EOF,
+#: source_id: IM_013591 (inaktiv)
+#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum)
+#: also_indoor: traffic (H,G,B,T,W)
+#: last_checked: 2024-07-08 (traffic)
 	q4::inwork; 7532,4605 7544,4587 7561,4560 7573,4540 7597,4499
 EOF
      },
@@ -32520,7 +32524,7 @@ EOF
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-06-23
+#: last_checked: 2024-07-05 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -35626,7 +35630,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-05 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -41733,7 +41737,7 @@ EOF
 #: note Halteverbotsschilder bis 08.07.2024 (scheint aber nicht schaffbar zu sein)
 #: last_checked: 2024-07-04
 #: next_check: 2024-07-08
-	q2::inwork 13489,9456 13602,9581
+	q2::inwork 13489,9456 13357,9313
 EOF
      },
      { from  => 1700504750, # 2023-11-20 19:25
@@ -42173,7 +42177,7 @@ EOF
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-06-22
+#: last_checked: 2024-07-08
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -42883,16 +42887,18 @@ EOF
      },
      { from  => 1713942000, # 2024-04-24 09:00
        until => 1747839600, # 2025-05-21 17:00
-       text  => 'Am Rosenhag: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
+       text  => 'Am Rosenhag und Uslarer Str.: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
+#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 	q4::inwork; 25050,13539 25163,13494
 	q3::inwork 25163,13494 25287,13464
+Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 EOF
      },
      { from  => 1714280400, # 2024-04-28 07:00
@@ -43221,7 +43227,7 @@ EOF
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-07-03 vvv
+#: last_checked: 2024-07-05 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-08-31 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -43753,6 +43759,16 @@ EOF
        recurring => 1,
        data  => <<EOF,
 	2::temp 5848,14977 5867,14993
+EOF
+     },
+     { from  => 1720469919, # 2024-07-08 22:18
+       until => 1721426400, # 2024-07-20 00:00
+       text  => 'Pommersche Str.: zwischen Bayerischer und Württembergischer Str. Sperrung, evtl. sind auch Radfahrer betroffen, bis 19.07.2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (H,G,B,T,W)
+#: note: laut rbb
+	q4::inwork 4381,9620 4351,9633 4224,9690
 EOF
      },
     );

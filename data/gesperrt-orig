@@ -2959,8 +2959,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #: osm_watch: way id="43205335" version="3"
 # REMOVED --- #: last_checked: 2019-10-26 (wosch) (keine Anzeichen f¸r Bauarbeiten) --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-01-01
-#: last_checked: 2024-04-06 (mapillary)
-#: check_frequency: 120d
+#: last_checked: 2024-07-06 (mapillary)
+#: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-06-30
 tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 # 
@@ -3913,10 +3913,10 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Hˆhe Kanzlergarten	2::inwork 7772,12694 
 #: note: laut Baustellenschild bis Mai 2024
 #: XXX auﬂerdem pr¸fen, ob die ehemaligen Schwingtore wieder angebracht werden --- Schwingtor an der westlichen Seite existiert noch immer (2024-05-07)
 #: priority: #C
-#: last_checked: 2024-06-12
+#: last_checked: 2024-07-08
 # REMOVED --- #: next_check: 2024-05-30
 # REMOVED (hier nicht mehr) --- (Berolinastr. - Mollstr.): wegen Bauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
-Berolinastr. in Hˆhe Spielplatz	2::inwork 11870,13024 11815,13045
+Berolinastr. in Hˆhe Spielplatz	2::inwork 11870,13024 11862,13027 11857,13014 11825,13029 11829,13039 11815,13045
 # 
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der ˆstlichen Seite f¸hrt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neukˆllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
@@ -4299,21 +4299,23 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: next_check: 2024-12-31
 Neue Fahlenbergbr¸cke (Ersatzbr¸cke)	2::inwork 30926,-53 31103,-142
 # 
-# REMOVED (by osm) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023)
-# REMOVED --- #: by: https://berliner-abendblatt.de/2022/08/04/marktplatz-adlershof-baumassnahmen-haben-begonnen/
-# REMOVED --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/umbau-des-marktplatzes-adlershof-hat-anfang-august-begonnen_a353228
-# REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237306.php
-# REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1391572.php (zweiter Bauabschnitt ab 4. Dezember 2023, Abschluss Mitte 2025)
-# REMOVED --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/neue-bauarbeiten-am-marktplatz-adlershof_a401378
-# REMOVED --- #: XXX was ist mit der Erweiterung im nˆrdlichen Bereich? entf‰llt die dortige Fahrbahn dauerhaft?
-# REMOVED --- #: osm_watch: way id="20554168" version="22"
-# REMOVED --- #: osm_watch: way id="1155308749" version="1"
-# REMOVED --- #: last_checked: 2024-01-27
-# REMOVED --- #: check_frequency: 90d
-# REMOVED --- #: next_check: 2025-06-30
-# REMOVED --- # REMOVED (zwischendurch) --- : Marktplatz Adlershof: Fahrbahn gesperrt wegen Umbauarbeiten	2s:q4:inwork 20336,3783 20362,3750
-# REMOVED --- # REMOVED --- Marktplatz Adlershof: Umbauarbeiten, keine Einbahnstraﬂenregelung	1no 20336,3783 20362,3750
-# REMOVED --- Marktplatz Adlershof: Einbahnstraﬂenregelung wegen Umbauarbeiten	1s:q3:inwork 20290,3756 20336,3783
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023)
+#: by: https://berliner-abendblatt.de/2022/08/04/marktplatz-adlershof-baumassnahmen-haben-begonnen/
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/umbau-des-marktplatzes-adlershof-hat-anfang-august-begonnen_a353228
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237306.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1391572.php (zweiter Bauabschnitt ab 4. Dezember 2023, Abschluss Mitte 2025)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/neue-bauarbeiten-am-marktplatz-adlershof_a401378
+#: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=763887#post763887 (bis Mitte 2025)
+#: by: https://www.aktives-adlershof.de/das-aktive-zentrum/projekte/historischer-marktplatz
+#: by: https://www.wista.de/aktuelles/news/marktplatz-doerpfeldstrasse-wird-zur-gruenen-mitte-von-adlershof (mit Karte)
+#: by: https://www.wista.de/fileadmin/_processed_/8/c/csm_marktplatz_Adlershof_f75006337a.webp
+#: XXX laut osm Baustelle
+#: osm_watch: way id="20554168" version="22"
+#: osm_watch: way id="1155308749" version="1"
+#: last_checked: 2024-07-08 (daf)
+#: check_frequency: 90d
+#: next_check: 2025-07-01
+Marktplatz Adlershof: mˆglicherweise wird die nˆrdliche Fahrbahn dauerhaft eingezogen	2::inwork 20336,3783 20290,3756
 # 
 # REMOVED --- #: next_check_id: SCHLESISCHERBUSCH-2023 --- #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/begonnene-bauarbeiten-enden-im-sommer-2023-im-schlesischen-busch_a357557 (bis Sommer 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1570686227954954240#m --- #: by: https://nitter.cz/pic/orig/media%2FFcwyqHOXgAAeape.jpg --- #: by: https://www.facebook.com/vizberlin/posts/pfbid06LxJBbLf7E1BWSREAZxyQLbEtMmoQWyekoQVyZwYzUNCuLidZWQjvAgVxps92bz4l --- #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-aufwertung-des-historischen-rundwegs --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf --- #: XXX Qualit‰t nach den Bauarbeiten? vvv --- #: last_checked: 2023-07-09 vvv -- #: check_frequency: 30d vvv --- #: next_check: 2023-09-15 vvv
 # REMOVED (laut osm hier nicht mehr) --- #: osm_watch: way id="358602468" version="12" --- #: osm_watch: way id="24189226" version="29" --- #: XXX Achtung: alten Eintrag in handicap_s-orig reaktivieren! --- Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert	2s:q3:inwork 13333,9929 13271,9927 13225,9897
@@ -4512,7 +4514,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv)
 #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am n‰chsten Tag inaktiv)
 #: XXX wird abgerissen und neu gebaut
-#: last_checked: 2024-06-23 (mapillary)
+#: last_checked: 2024-07-06 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-06-30
 Hebammensteigbr¸cke	2::inwork 13168,21706 13046,21734 13008,21783
@@ -5420,9 +5422,9 @@ Bhf. Blankenfelde: Bahn¸bergang gesperrt, neue Unterf¸hrung wird gebaut	2::inwor
 #: XXX Schlossstraﬂe (ˆstlicher Verlauf) -> Anna-Zielenziger-Straﬂe (PLZ: 14467) (siehe auch handicap_l-Eintrag)
 #: XXX Schwertfegerstraﬂe (ˆstlicher Verlauf) -> Erika-Wolf-Straﬂe (bereits eingetragen)
 #: osm_watch: way id="534669300" version="11" brb
-#: last_checked: 2024-01-21 (daf)
+#: last_checked: 2024-07-08 (daf)
 # REMOVED --- #: next_check: 2020-09-01
-#: check_frequency: 180d
+#: check_frequency: 60d
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-1449 -12694,-1408 -12727,-1416 -12747,-1336
 # 
 #: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz
@@ -5433,9 +5435,9 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: XXX die derzeitige Straﬂe ist asphaltiert, bleibt das so?
 #: osm_watch: way id="765539341" version="17" brb
 #: osm_watch: way id="1285592463" version="1" brb
-#: last_checked: 2024-05-05
+#: last_checked: 2024-07-08 (daf)
 # REMOVED --- #: next_check: 2020-09-01
-#: check_frequency: 180d
+#: check_frequency: 60d
 Erika-Wolf-Str. (Potsdam): w‰hrend der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
 # 
 #: next_check_id: AMALTENMARKT-2018
@@ -5444,8 +5446,8 @@ Erika-Wolf-Str. (Potsdam): w‰hrend der Bauarbeiten gesperrt	2::inwork -12812,-14
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf
 #: XXX hier wird eine neue "Schloﬂstr." entstehen --- bei osm "Anna-Zielenziger-Str."
 #: osm_watch: way id="760022943" version="13" brb
-#: last_checked: 2024-05-16 (osm)
-#: check_frequency: 180d
+#: last_checked: 2024-07-08 (daf)
+#: check_frequency: 60d
 Alter Markt (Potsdam): w‰hrend der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html

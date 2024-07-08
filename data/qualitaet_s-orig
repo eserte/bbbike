@@ -137,7 +137,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-05 (mapillary)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -398,7 +398,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2024-07-04
+#: last_checked: 2024-07-06 (mapillary)
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -1156,7 +1156,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2024-06-28
+#: last_checked: 2024-07-08
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -13641,6 +13641,8 @@ Töpchiner Weg [40-48]: Verbundsteinpflaster	Q1+ 11950,1275 11918,1211
 (Gerlinger Str. - Warmensteinacher Str.): unbefestigter Weg	Q2 11918,1149 11918,1211
 # 
 (Neucölln Carree, Parkplatzzufahrt): Asphalt	Q0 14430,7348 14423,7333 14378,7236 14507,7146
+# 
+(Uferweg): asphaltähnliche Decke	Q0- 11821,11733 11957,11603
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -29465,7 +29467,7 @@ Weydemeyerstr.: Asphalt	Q0- 12039,12675 12064,12673
 #: corrected_by: srt (Gehwegplatten -> ...)
 #: note: nur einige Meter am westlichen Ende neu asphaltiert, dort besser
 (Berolinastr.): unebener Asphalt	Q1 11987,12946 11921,12990 11870,13024
-(Berolinastr.): Gehwegplatten	Q0 11870,13024 11815,13045 11719,13088
+(Berolinastr.): Gehwegplatten	Q0 11870,13024 11862,13027 11857,13014 11825,13029 11829,13039 11815,13045 11719,13088
 (Berolinastr. - Mollstr.): Betonsteinpflaster	Q0 11870,13024 11878,13046 11896,13075
 #: confirmed_by: srt (but splitted)
 (Berolinastr. - Mollstr.): Beton und kurz gepflastert	Q1- 11609,12986 11656,13100

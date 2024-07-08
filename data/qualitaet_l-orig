@@ -207,9 +207,9 @@ Ortsdurchfahrt Krampnitz: sandige Straße, holprig	Q3+ -12891,5317 -12953,5373 -1
 #: source_id: viz2021:13.096345,52.428593,01.08.2022,07:00 (Sanierung bis 5.8.2022)
 #: by: https://nitter.it/VIZ_Berlin/status/1553956184771571712#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlkxN3JPdlgwQUFqWGQxLnBuZw==
-#: add_fragezeichen: Ist die Fahrbahnoberfläche nach der Sanierung besser geworden?
-#: next_check: 2022-08-05
-Ortsdurchfahrt Sacrow: teilweise mäßiger Asphalt	Q1+ -10722,2111 -10633,2154 -10489,2151 -10309,2155 -10123,2226 -10118,2280 -10105,2458
+# REMOVED --- #: add_fragezeichen: Ist die Fahrbahnoberfläche nach der Sanierung besser geworden? --- #: next_check: 2022-08-05
+#: historical_note: früher (bis August 2022): teilweise mäßiger Asphalt, Q1+
+Ortsdurchfahrt Sacrow: Asphalt	Q0 -10722,2111 -10633,2154 -10489,2151 -10309,2155 -10123,2226 -10118,2280 -10105,2458
 (Schlosspark Sacrow): Parkweg	Q1 -10087,1952 -10205,1923 -10285,1845 -10339,1714 -10426,1724 -10620,1731 -10783,1840
 Spitzmühle - Buchholz: schlechter sandiger Weg	Q3 38663,19949 38108,20189 37725,20454 37088,20332 36479,20207
 Bahnhof Müncheberg - Dahmsdorf: Kopfsteinpflaster	Q2 57435,13914 57794,14044 57918,14089
@@ -3074,8 +3074,8 @@ Alter Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542
 #: next_check_id: AMALTENMARKT-2018
 #: XXX früher provisorisch asphaltiert, jetzt ein provisorischer Weg
 #: osm_watch: way id="760022943" version="13" brb
-#: last_checked: 2024-05-16 (osm)
-#: check_frequency: 180d
+#: last_checked: 2024-07-08 (daf)
+#: check_frequency: 60d
 Alter Markt: unbefestigt	Q2 -12719,-1542 -12790,-1560
 Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12812,-1490 -12870,-1493
 Am Neuen Markt: mäßiges bis schlechtes Kopfsteinpflaster	Q2- -12882,-1565 -12870,-1493
@@ -5960,7 +5960,8 @@ Sophienstädt - Biesenthal: schadhafter Asphalt	Q1 24120,41684 24102,41213
 #: add_fragezeichen ^^^
 Biesenthal: Asphalt	Q0 24102,41213 24106,41050 24185,40670 24374,40395
 Am Hämphorn: rauer Asphalt	Q1 -9842,2798 -9705,2679
-Weinmeisterweg: Asphalt	Q1 -10118,2280 -10373,2541
+#: historical_note: früher Asphalt, Q1
+Weinmeisterweg: Asphalt	Q0 -10118,2280 -10373,2541
 entlang der Deponie: Asphalt, mit leichten Unebenheiten	Q0- 14626,1768 14632,1759 14654,1759 14710,1715 14750,1659 14768,1592 14768,1534 14750,1480 14593,1112 14574,1041 14150,839 13957,748
 #: by: mapillary
 entlang der Deponie: Asphalt mit Wurzelhebungen	Q1- 13957,748 13776,659
