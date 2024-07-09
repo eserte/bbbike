@@ -1809,8 +1809,12 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        {
          'data' => '#: source_id: IM_013591 (inaktiv)
 #: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum)
+#: source_id: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2024-07-08 (traffic)
+#: check_frequency: 30d
+#: next_check: 2024-08-31
 	q4::inwork; 7532,4605 7544,4587 7561,4560 7573,4540 7597,4499
 ',
          'from' => 1720470111,
@@ -3393,7 +3397,10 @@ Kleistpark	2::night 7310,9622 7307,9528
 #: by: http://www.htw-berlin.de/uploads/media/Bauabschnitt-2-Umleitung-Wilhelminenhof.pdf
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1809452214483652953
 #: by: https://pbs.twimg.com/media/GRuNzPkXgAANqwk?format=jpg&name=large
+#: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240709 (erste Bauphase bis 24.08.2024, Gesamtbaumaßnahme bis voraussichtlich 27.10.2024)
 #: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024)
+#: XXX Änderung der Bauphase: Bauarbeiten dann zwischen Waldowstr. und Ostendstr. 20
+#: next_check: 2024-08-24
 hier einige Bordsteine ohne Anrampung	q3::inwork; 19403,5885 19388,5883 19273,5866 19010,5833
 vermutlich weniger Fußgängerverkehr	q2::inwork; 19010,5833 19273,5866 19388,5883 19403,5885
 Scharnweberstr.: Einfahrt verboten	q4::inwork; 19650,5920 19495,6029
@@ -3402,7 +3409,7 @@ Slabystr.: einige Meter der Fahrbahn vor der Ostendstr. gesperrt	q3::inwork 1918
 ',
          'from' => 1720130400,
          'id' => 2486,
-         'text' => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Steffelbauerstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, außerdem Einbahnstraßenregelung in der Scharnweberstr., voraussichtlich bis 26.08.2024',
+         'text' => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Steffelbauerstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, außerdem Einbahnstraßenregelung in der Scharnweberstr., voraussichtlich bis 26.08.2024, voraussichtlich wird bis Oktober 2024 verlängert',
          'type' => 'handicap',
          'until' => 1724688000
        },
@@ -5754,12 +5761,13 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1731917567688913337#m
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1419805.php (Baumfällungen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1451630.php (voraussichtlich teilweise Freigabe, der Rest wird bis Juni 2025 gemacht (also etwas kürzer als bei VIZ))
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2024-06-13 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
 #: next_check: 2025-06-30 vvv
 #: osm_watch: way id="1043813287" version="3"
 #: osm_watch: way id="1043813288" version="2"
@@ -5780,7 +5788,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
          'from' => 1656799200,
          'id' => 3579,
          'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
-         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis 30.04.2024',
+         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Juni 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6206,7 +6214,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: Halteverbotsschilder bis Ende September 2024
-#: last_checked: 2024-06-05
+#: last_checked: 2024-07-09
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
@@ -6223,12 +6231,12 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch: way id="1170463985" version="3"
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
-#: note: Halteverbote bis Ende Juni 2024
+#: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-06-05
+#: last_checked: 2024-07-09
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 30d
-#: next_check: 2024-06-30
+# REMOVED --- #: next_check: 2024-06-30
 	q3::inwork 13263,15930 13140,16000
 ',
          'from' => undef,
@@ -6828,10 +6836,10 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
        undef,
        {
          'data' => '#: also_indoor: traffic (B,ex-G[unvollständig],ex-W[unvollständig],T)
-#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2023
-#: last_checked: 2024-07-03 (mapillary) (Sackgassenschild in der Wisbyer) vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2024; nun bis 30.08.2024
+#: last_checked: 2024-07-09 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2024-07-05 vvv
+#: next_check: 2024-08-30 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
 Varnhagenstr.: Kreuzungsbereich gesperrt	q3::inwork 11614,16034 11680,16151
@@ -6968,8 +6976,9 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,792696#msg-792696 (Vollsperrung im gesamten Bereich Königsplatz vom 29.06.2024 bis 10.8.2024, danach weitere Arbeiten)
 #: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Bauarbeiten bis 20. Oktober 2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,797608#msg-797608 (Ende der Bauarbeiten am 20.10.2024)
-#: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024)
+#: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024)
+#: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024)
 #: XXX zukünftige Einschränkungen:
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
@@ -7719,7 +7728,7 @@ Schustehrusstr.	q4::inwork 3528,12276 3623,12284
        undef,
        {
          'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025)
+#: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
@@ -8021,13 +8030,15 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1725141599
        },
        {
-         'data' => '#: source_id: viz2021:13.55316,52.43396,04.06.2024,14:11 (bis 18.06.2024) (bis 18.07.2024)
+         'data' => '#: source_id: viz2021:13.55316,52.43396,04.06.2024,14:11 (bis 18.06.2024) (bis 18.07.2024) (inaktiv)
+#: source_id: viz2021:13.553865,52.434226,04.06.2024,14:11 (bis 18.07.2024)
 #: note: bei rbb "bis auf weiteres", mittlerweile auch bis 18.6.2024
-	q4::inwork 20717,3310 20478,3156
+# REMOVED (hier nicht mehr) ---	q4::inwork 20717,3310 20478,3156
+	q4::inwork 20717,3310 20808,3374
 ',
          'from' => 1717416660,
          'id' => 4077,
-         'text' => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Moissistr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, vom 04.06.2024 14:11 bis 18.07.2024 05:00',
+         'text' => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Arndtstr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, vom 04.06.2024 14:11 bis 18.07.2024 05:00',
          'type' => 'handicap',
          'until' => 1721271600
        },
@@ -8205,7 +8216,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-06-28 (mapillary) vvv
+#: last_checked: 2024-07-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8385,20 +8396,19 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
 #: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/08_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.pdf?__blob=publicationFile&v=2 (Stand 1.3.2023, in Planung: Bäkebrücke, aber auch Knesebeckbrücke und Altglienicker Brücke)
 #: by: https://khp.berlin/referenzen/ingenieurbau/planungen/baekebruecke-in-berlin-lichterfelde/
 #: by: https://www.facebook.com/groups/274489925939434/posts/7611685488886471 (in einem Kommentar steht, dass Fußgänger rüberkommen)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
 #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024)
 #: also_indoor: search Bäkebrücke
 #: also_indoor: traffic (G,B,T,W)
-#: add_fragezeichen: Sind auch Radfahrer und Fußgänger von der Sperrung betroffen?
-#: last_checked: 2024-05-29
-#: check_frequency: 90d
-#: next_check: 2024-06-18
-	2::inwork 4587,3097 4659,3065
+# REMOVED --- #: add_fragezeichen: Sind auch Radfahrer und Fußgänger von der Sperrung betroffen? --- #: last_checked: 2024-05-29 --- #: check_frequency: 90d --- 
+#: next_check: 2024-08-30
+	q4::inwork 4587,3097 4659,3065
 ',
          'from' => 1718628480,
          'id' => 4109,
-         'text' => 'Bäkebrücke: Sperrung, Brückenbau, vermutlich sind auch Radfahrer und Fußgänger betroffen, bis 30.08.2024',
-         'type' => 'gesperrt',
+         'text' => 'Bäkebrücke: Sperrung, nur für Fußgänger offen, ggfs. schieben, bis 30.08.2024',
+         'type' => 'handicap',
          'until' => 1725030000
        },
        {
@@ -8421,6 +8431,18 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
          'text' => 'Pommersche Str.: zwischen Bayerischer und Württembergischer Str. Sperrung, evtl. sind auch Radfahrer betroffen, bis 19.07.2024',
          'type' => 'handicap',
          'until' => 1721426400
+       },
+       {
+         'data' => '#: also_indoor: traffic (B,T,W)
+#: note: bei rbb
+#: note: nur ein Teilstück, deshalb q3 statt q4
+	q3::inwork 5463,9961 5246,10168
+',
+         'from' => 1720414800,
+         'id' => 4112,
+         'text' => 'Meierottostr.: Bauarbeiten in Höhe Bundesallee, evtl. sind auch Radfahrer betroffen, von 09.07.2024 07:00 bis 27.09.2024 15:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1727442000
        }
      
 );

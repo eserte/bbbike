@@ -974,6 +974,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.56657,52.45535,13.07.2023,17:06 (bis 15.07.2023) (inaktiv)
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
+#: osm_watch: way id="428260957" version="8"
 #: last_checked: 2024-06-19 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 vvv
@@ -4087,7 +4088,7 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: next_check_id: MAUERPARK-2022
 # REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"
 #: osm_watch: way id="1218990564" version="6"
-#: last_checked: 2024-06-05
+#: last_checked: 2024-07-09
 #: check_frequency: 30d
 Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
 # 
@@ -4124,7 +4125,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2024-06-16
+#: last_checked: 2024-07-03 (mapillary)
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4848,7 +4849,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-09
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -4861,7 +4862,7 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-07-07 (webcam)
+#: last_checked: 2024-07-09
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -5333,14 +5334,13 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: http://www.berliner-woche.de/moabit/bauen/mit-schwerem-geraet-d149617.html
 #: by: https://www.berliner-woche.de/moabit/c-bauen/neue-uferwand-fuer-das-wikingerufer_a218326 (Ende 2021 Eröffnung der Uferpromenade)
 #: by: https://www.deutsches-architekturforum.de/thread/11563-kleinere-projekte-moabit/?postID=642359#post642359
-#: by: https://www.deutsches-architekturforum.de/thread/11563-kleinere-projekte-moabit/?postID=645524#post645524
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: XXX Anschluss an der Gotzkowskybrücke ist noch nicht fertig
 #: osm_watch: way id="501191631" version="5"
 #: osm_watch: way id="1297686366" version="1"
 #: osm_watch: note 4173331 4
-#: last_checked: 2024-06-12
+#: last_checked: 2024-07-09 (daf)
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-09-01

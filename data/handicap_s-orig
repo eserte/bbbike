@@ -327,7 +327,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-06-25 vvv
+#: last_checked: 2024-07-09 (daf) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -354,7 +354,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-07-07 (webcam)
+#: last_checked: 2024-07-09
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -1038,7 +1038,7 @@ Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/richtfeste-fuer-290-wohnungen_a417760
 #: also_indoor: traffic (G,H,B)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2024-06-02 vvv
+#: last_checked: 2024-07-03 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv
 #: valid: -20241231 vvv
@@ -1123,15 +1123,15 @@ Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 10
 #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
 #: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
 #: osm_watch: way id="156800019" version="6"
-#: last_checked: 2024-06-20
+#: last_checked: 2024-07-09
 #: check_frequency: 60d
 Diesterwegstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q3::inwork 12060,15141 11995,15012
 # 
 #: osm_watch: way id="1047231711" version="3"
 #: note: Halteverbotsschilder bis Juli 2024
-#: last_checked: 2024-06-07 (mapillary)
+#: last_checked: 2024-07-09
 #: check_frequency: 60d
-#: next_check: 2024-07-01
+# REMOVED --- #: next_check: 2024-07-01
 Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 # 
 # REMOVED (mittlerweile wurde die Sperrung entfernt und die provisorische Asphaltdecke zur Hälfte zurückgebaut) --- #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220 --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1119011.php (Erwähnung) --- #: by: https://dstrctberlin.com/de/2021/10/18/auf-gute-nachbarschaft/ --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dstrctberlin-ist-bald-bezugsfertig_a338513 --- #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4 --- # REMOVED (keine construction mehr) --- #: osm_watch: way id="164816805" version="12" --- #: osm_watch: node id="1425174760" version="5" --- #: priority: #C --- #: last_checked: 2023-10-16 --- #: check_frequency: 30d --- Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
@@ -1147,15 +1147,16 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 ### Weißensee ###
 # 
 #: note: Endedatum laut Halteverbotsschilder
-#: last_checked: 2024-06-05
+#: last_checked: 2024-07-09
 #: next_check: 2024-07-15
+#: valid: -20240715
 Börnestr.: Bauarbeiten, einige Meter der Fahrbahn sind gesperrt	q3::inwork 13214,15830 13263,15930
 # 
 #: also_indoor: traffic (G,B,W)
 #: note: Endedatum laut Halteverbotsschilder; Länge ca. 50-60m
 #: osm_watch: way id="1170355847" version="1"
 #: osm_watch: way id="1170355851" version="1"
-#: last_checked: 2024-06-07 (mapillary)
+#: last_checked: 2024-07-09
 #: check_frequency: 120d
 #: next_check: 2024-12-20
 #: valid: -20241220

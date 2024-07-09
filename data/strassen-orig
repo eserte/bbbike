@@ -264,15 +264,18 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/berlin-news/gericht-urteilt-ueber-umbenennung-der-mohrenstrasse-id226365
 #: by: https://berliner-abendblatt.de/berlin-news/geplante-umbenennung-der-mohrenstrasse-zieht-sich-weiter-hin-id231791
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fast-vier-jahre-nach-dem-beschluss-umbenennung-der-mohrenstrasse-in-berlin-mitte-verzogert-sich-weiter-11863142.html
+#: by: https://berliner-abendblatt.de/berlin-news/umbenennung-mohrenstrasse-weiter-offen-warten-aufs-gericht-id257025
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
 #: last_checked: 2024-06-19 (mapillary) vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 #: osm_watch: way id="47755711" version="23"
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 #: osm_watch: way id="1110751835" version="5"
 (Mohrenstr.)	N 9042,11839 9075,11756
 # REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -20663,9 +20666,11 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
+#: osm_watch: way id="1277899794" version="1"
 #: last_checked: 2024-06-19
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
+#: osm_watch: way id="1156287321" version="2"
 #: last_checked: 2024-06-19
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
