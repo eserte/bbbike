@@ -6,6 +6,12 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: KOENIGSPLATZ-2024
+#: last_checked: 2024-07-10
+#: next_check: 2024-08-31
+#: valid: -20241212
+Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
+# 
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: osm_watch: note 4289251 1
 #: last_checked: 2024-06-19 (mapillary)
@@ -58,6 +64,13 @@ Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
 #: next_check: 2024-07-15
 #: valid: -20240715
 Rudower Str.: Gegenverkehrsregelung östlich der Dorothea-Viehmann-Str.	X::inwork::alternating 19266,1968
+# 
+#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 25.07.2024)
+#: note: Die VIZ-Meldung erwähnt nur die Keltenstr., aber möglicherweise hängen die beiden Baustellen zusammen.
+#: note: Länge der Gegenverkehrsstrecke: etwa 100m
+#: next_check: 2024-07-25
+#: valud: -20240725
+Grünauer Str./Werderstr.: Gegenverkehrsregelung	X::inwork::alternating 20028,1673
 # 
 #: source_id: viz2021:13.490616,52.463117,15.04.2024,07:30 (bis 12.07.2024)
 #: last_checked: 2024-07-02 (mapillary)
@@ -287,7 +300,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2024-06-26 vvv
+#: last_checked: 2024-07-10 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-09-27 vvv
 #: valid: -20240927 vvv
@@ -2722,13 +2735,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-06-23
+#: last_checked: 2024-07-10
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50)
-#: last_checked: 2024-06-26
+#: last_checked: 2024-07-10
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

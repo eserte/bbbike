@@ -422,7 +422,7 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtsschild ist noch abgedeckt
 #: osm_watch: way id="940399849" version="11"
 #: osm_watch: way id="1203072585" version="3"
-#: last_checked: 2024-07-03
+#: last_checked: 2024-07-10
 	RW0;RW0 13033,8628 13124,8562 13217,8493
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
@@ -1203,8 +1203,8 @@ Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 1
 #: note: Waltersdorfer Chaussee/Neuköllner Str. Richtung Norden
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
 #: XXX Inkonsistenz: Busspur ist für Radfahrer freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
-#: last_checked: 2024-04-07
-#: check_frequency: 90d
+#: last_checked: 2024-07-10
+#: check_frequency: 120d
 für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
 Bushaltestelle mit Radspur	RW5;RW5 16908,1217 16839,1262
@@ -1308,7 +1308,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-07-04 vvv
+#: last_checked: 2024-07-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1654,14 +1654,14 @@ Verbundsteinpflaster	RW1; 11898,8362 11884,8492 11882,8519 11882,8527 11879,8672
 	RW3;RW3 12155,5611 12214,5554
 die letzten 70 Meter werden zunächst auf dem Gehweg, dann hinter der Rechtsabbiegerstelle als Radstreifen (benutzungspflichtig) geführt	RW3; 12214,5554 12507,5228
 teilweise schlechte Qualität (eng, uneben)	RW1; 12507,5228 12214,5554
-	RW1; 12507,5228 12626,5057 12652,5006
+alte Gehwegplatten, Bord gegen Gehweg	RW1; 12507,5228 12626,5057
+neues Verbundsteinpflaster	RW1; 12626,5057 12652,5006 12731,4841
 neues Verbundsteinpflaster	RW2; 12652,5006 12626,5057 12507,5228
-	RW1; 12652,5006 12731,4841
 Verbundsteinpflaster	RW1; 12731,4841 12652,5006
-	RW1; 12731,4841 12819,4780 12916,4757
+Verbundsteinpflaster	RW1; 12731,4841 12819,4780 12916,4757 12998,4715
+Asphalt	RW1; 12998,4715 13056,4678 13213,4565
 	RW2; 12916,4757 12819,4780
 Radweg nur aufgemalt	RW2; 12819,4780 12731,4841
-	RW1; 12916,4757 12998,4715 13056,4678 13213,4565
 	RW1; 13266,4507 13305,4504
 	RW1; 13305,4504 13266,4507 13213,4565 13056,4678 12998,4715 12916,4757
 Verbundsteinpflasterradweg, in beide Richtungen befahrbar	RW1; 13305,4504 13394,4500
@@ -2200,7 +2200,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2024-07-06 vvv
+#: last_checked: 2024-07-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2984,7 +2984,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-07-04
+#: last_checked: 2024-07-10
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4277,7 +4277,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2024-05-22 vvv
+#: last_checked: 2024-07-10 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -5511,7 +5511,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.bvwp-projekte.de/strasse/B2-G20-BE/B2-G20-BE.html
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
-#: osm_watch: way id="176753739" version="22"
+#: osm_watch: way id="176753739" version="23"
 #: last_checked: 2024-07-07 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
@@ -6931,7 +6931,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2024-07-06 (architektur-urbanistik)
+#: last_checked: 2024-07-10
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
@@ -7291,7 +7291,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung geben
-#: last_checked: 2024-05-30 vvv
+#: last_checked: 2024-07-10 vvv
 #: check_frequency: 60d vvv
 # REMOVED (hier wegen der Bauarbeiten an der Erkstr. keine Radspur mehr) --- Gelbmarkierung	RW3; 12639,8344 12598,8390
 Gelbmarkierung	RW3; 12598,8390 12639,8344
@@ -7300,7 +7300,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2024-07-05 (mapillary) vvv
+#: last_checked: 2024-07-10 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7340,11 +7340,11 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2024-07-05 (mapillary)
+#: last_checked: 2024-07-10
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2024-05-12
+#: last_checked: 2024-07-10
 #: check_frequency: 60d
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
@@ -8047,7 +8047,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="35"
-#: last_checked: 2024-07-06 vvv
+#: last_checked: 2024-07-10 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788

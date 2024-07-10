@@ -153,7 +153,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2024-06-28 vvv
+#: last_checked: 2024-07-10 vvv
 #: next_check: 2026-12-31 vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -191,7 +191,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt, wonach es aussieht, dann nur nach gesperrt_car verschieben)
 #: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
-#: last_checked: 2024-07-04
+#: last_checked: 2024-07-10
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 13860,9861
@@ -4022,7 +4022,7 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 # 
 #: next_check_id: MARIENUFER-2023
 #: osm_watch: way id="1272560911" version="1"
-#: last_checked: 2024-05-22
+#: last_checked: 2024-07-10
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
@@ -4163,7 +4163,7 @@ Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-generalshof-1-k%C3%B6penick.874/#post-22500
 # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="770592585" version="5"
 #: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straße und der neuen Anbindung was gemacht
-#: last_checked: 2024-06-19
+#: last_checked: 2024-07-10
 #: check_frequency: 21d
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22057,5305 22095,5344
 # REMOVED (hier schon passierbar --- Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22095,5344 22140,5392
@@ -4311,7 +4311,7 @@ Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 #: by: https://www.wista.de/aktuelles/news/marktplatz-doerpfeldstrasse-wird-zur-gruenen-mitte-von-adlershof (mit Karte)
 #: by: https://www.wista.de/fileadmin/_processed_/8/c/csm_marktplatz_Adlershof_f75006337a.webp
 #: XXX laut osm Baustelle
-#: osm_watch: way id="20554168" version="22"
+#: osm_watch: way id="20554168" version="23"
 #: osm_watch: way id="1155308749" version="1"
 #: last_checked: 2024-07-08 (daf)
 #: check_frequency: 90d
@@ -4667,7 +4667,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-07-03
+#: last_checked: 2024-07-10
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4926,7 +4926,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025)
-#: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025)
+#: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
 #: source_id: viz2021:13.55807,52.56199,27.06.2024,15:13 (bis 31.03.2025) (inaktiv)
 #: XXX Wann wird die Brücke wieder eröffnet?
 #: last_checked: 2024-06-29 (mapillary)
