@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.20;
+$VERSION = 2.21;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -314,6 +314,13 @@ sub register {
 	      tags => [qw(construction)],
 	    };
     }
+    $main::info_plugins{__PACKAGE__ . '_Windy'} =
+	{ name => 'Windy',
+	  callback => sub { showmap_windy(@_) },
+	  callback_3_std => sub { showmap_url_windy(@_) },
+	  ($images{Windy} ? (icon => $images{Windy}) : ()),
+	  tags => [qw(met)],
+	};
     if ($is_berlin && $main::devel_host) {
 	$main::info_plugins{__PACKAGE__ . "_AllTrafficMaps"} =
 	    { name => "All Traffic Maps",
@@ -968,6 +975,33 @@ EOF
 iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAABGdBTUEAALGPC/xhBQAAAGBJREFU
 GFdj8EADDEDsDgcQAa+oGCgIAgu4R91+9+bN69dv3nyY5QoX+Pb/7zuYAEhL5Nr/b/OioVpAhjov
 /v862hVmKBC4Lvn/OgbEpamAW9myWUHIAh5uLq4QBkwAAQDfD2Si0ao6dwAAAABJRU5ErkJggg==
+EOF
+    }
+
+    if (!defined $images{Windy}) {
+	# Created with:
+	#   wget https://www.windy.com/img/favicon.png
+	#   convert -resize 16x16 favicon.png favicon2.png 
+	#   pngcrush -brute -reduce -rem allb -m 0 favicon2.png favicon3.png
+	#   base64 favicon3.png 
+	$images{Windy} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAftQTFRF
+AAAAowAApgAAogAAowAAowAApAAAogAAoQAAoQAAoAAAoAAAowAAoQAAoAAAowAAoQAAoAAAoAAA
+oQAApQAAoQAAoAAAoAAAoQAAogAAoAAAoAAAoQAAoQAAoAAAoQAAoAAAowAAoQAAoAAApAAAogAA
+oAAAoAAAoAAAoAAAnwAAoAAAnwAAnwAAoAAAoAAAoAAAoAAAqyEhrCYmoAEBrSkpqiEhoAAAogcH
+3q2t5sHBqyYm6MfH3aenoQUFoAAAoAAAoAAAoAAAoAAAoQUF4LCw8uDgsjw88d/f4bS0oQYGoAAA
+oAAAoQcHpBQUoQUFnwAA042N9urqtUJC79jY3aenoAICoAAAoAAAqygosDw8ogcHoAAAngAAxGZm
++fDwuElJ6svL256eoAAAoAAApRAQu1ZWtEFBoAAAnwAAtT099+3tvllZ4rW13qqqoAMDnwAAuEpK
+xnNzry4unwAAoAAApxgY7dTUzH191JGR5Lu7oQYGry4uzIGBynp6pA0NoAAAoAAAoAAAoAAA0YmJ
+5r+/xW5u7M/Psjc30YuL1ZiYvVVVnwAAnwAArCQk6cjI26am8d3d7tXV5cDA1ZeXpQ8PoAAAnwAA
+szc33Kam4LKy4bS01ZSUqyMjnwAAnwAAoQYGoggIogYGoAQEnwAAoAAAoAAAoAAAoAAA2Z6u8AAA
+ACd0Uk5TAAAAAAAAB0in4/v7F5DuGK/+/q8GkP//kEnt7abi+pD/F5DuB0j7mMOSigAAAKNJREFU
+GBlFwU8KAXEYx+H3M15FxorNlD8rV7DhIk7hBhxB2bqGC7iFhVlgoSykNGRM89Uk/Z4HM+pUSkkf
+GRFNSMCki/QS3oKEnyNFRhd6VN6y/EZBwoBgX3qtExOMDk4eE7RTx9oEO9wsJjBzKSaQXDOC7WxD
+Ek3H/G2uJd0WjTk/67uyWl4WWTrxyuqUPx9EDMAXwPIivYRZfciZvp0lfWRfheZAKhmSgB8AAAAA
+SUVORK5CYII=
 EOF
     }
 }
@@ -2086,6 +2120,24 @@ sub showmap_url_travic {
 sub showmap_travic {
     my(%args) = @_;
     my $url = showmap_url_travic(%args);
+    start_browser($url);
+}
+
+######################################################################
+# windy
+
+sub showmap_url_windy {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    my $lang = defined $Msg::lang && $Msg::lang =~ m{^(en|de)$} ? $Msg::lang : 'de'; # XXX allow more languages if supported by Windy
+    sprintf "https://www.windy.com/%s/?radar,%f,%f,%d", $lang, $py, $px, $scale;
+}
+
+sub showmap_windy {
+    my(%args) = @_;
+    my $url = showmap_url_windy(%args);
     start_browser($url);
 }
 
