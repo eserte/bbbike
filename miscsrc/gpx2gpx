@@ -190,7 +190,7 @@ sub trkpts_delete {
 	$deletions++;
 	$prev_siblings{$prev_sibling} = $prev_sibling if $prev_sibling;
     }
-    warn "Deleted $deletions node(s)\n" if $v;
+    warn "Deleted $deletions node" . ($deletions == 1 ? '' : 's') . "\n" if $v;
 
     # Split <trkseg> after each unique previous sibling
     foreach my $prev_sibling (values %prev_siblings) {
