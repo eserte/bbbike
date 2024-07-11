@@ -15119,13 +15119,14 @@ EOF
 EOF
      },
      { from  => 1720470111, # 1247723876, # 2009-07-16 07:57
-       until => undef, # 1249077599, # 2009-07-31 23:59
+       until => $isodate2epoch->("2024-10-01 17:00:00"), # undef, # 1249077599, # 2009-07-31 23:59
        #text  => 'Steglitzer Damm (Steglitz) Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt (bis Ende 07.2009)',
-       text  => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen',
+       text  => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Oktober 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: IM_013591 (inaktiv)
-#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum)
+#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024)
+#: source_id: viz2021:13.360599,52.446803,11.07.2024,14:26 (Einschränkung in der anderen Richtung, bis 01.10.2024)
 #: source_id: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024) (bis 11.07.2024)
 #: source_id: bvg2024:282#HIM_FREETEXT_230965 (bis 31.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
@@ -30860,11 +30861,10 @@ EOF
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
-     { from  => $isodate2epoch->("2023-07-07 17:00:00"), # 1571266200, # 2019-10-17 00:50
-       until => $isodate2epoch->("2023-07-09 21:30:00"), # 1571522399, # 2019-10-19 23:59
-       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 8.7.2023 17:00 bis 23:30 Uhr sowie 9.7.2023 17:30 bis 21:30 Uhr',
+     { from  => $isodate2epoch->("2024-07-11 17:00:00"), # 1571266200, # 2019-10-17 00:50
+       until => $isodate2epoch->("2024-07-13 21:30:00"), # 1571522399, # 2019-10-19 23:59
+       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 12.7.2024 17:00 bis 23:30 Uhr sowie 13.7.2024 17:30 bis 21:30 Uhr',
        type  => 'gesperrt',
-       #source_id => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
        data  => <<EOF,
 #: also_indoor: traffic (G,H)
 #: source_id: 2147344351 (inaktiv)
@@ -30872,9 +30872,12 @@ EOF
 #: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00 (inaktiv)
 #: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00 (inaktiv)
 #: source_id: viz2021:13.38883,52.5169,08.07.2023,17:00 (bis 08.07.2023) (inaktiv)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1183048455884816386
 #: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-08_090723/
 #: by: https://berliner-abendblatt.de/berlin-news/staatsoper-fuer-alle-unter-freiem-himmel-id226575
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240711
+#: by: https://www.staatsoper-berlin.de/de/spielplan/staatsoper-fuer-alle-2024/
 	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
 	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
 	2::temp 9664,12387 9680,12232
@@ -30888,7 +30891,7 @@ EOF
 	3 9956,12617 10063,12438 10102,12384
 	3 9990,12404 9984,12426 9953,12533
 	3 9846,12516 9858,12410 9873,12315
-#: note: vermutete Sperrung des Bebelplatzes
+#: note: Sperrung des Bebelplatzes
 Bebelplatz	2::temp 9664,12387 9680,12232
 Bebelplatz	2::temp 9713,12392 9730,12238
 Bebelplatz, diagonal über den Platz	2::temp 9737,12238 9702,12307 9664,12387
@@ -39032,10 +39035,10 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
-#: also_indoor: traffic (ex-H,ex-G,B,ex-W,T)
-#: last_checked: 2024-06-12
-#: check_frequency: 30d
-# REMOVED --- #: check_frequency: 14d
+#: also_indoor: traffic (ex-H,re-G,B,ex-W,T)
+#: last_checked: 2024-07-11 (traffic)
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
 	q4::inwork 3869,10760 4267,10724 4393,10712
 EOF
@@ -42259,15 +42262,15 @@ Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
 EOF
      },
      { from  => 1707087600, # 2024-02-05 00:00
-       until => $isodate2epoch->("2024-08-02 18:00:00"), # 1722635940, # 2024-08-02 23:59
+       until => $isodate2epoch->("2024-12-31 18:00:00"), # $isodate2epoch->("2024-08-02 18:00:00"), # 1722635940, # 2024-08-02 23:59
        dont_check_date => 1,
-       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, vom 06.02.2024 00:00 bis 02.08.2024',
+       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, voraussichtlich bis Ende 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024)
+#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024) (bis 31.12.2024)
 #: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024) (inaktiv)
 #: note: explizite Umleitung für Radfahrer vor Ort
-#: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024
+#: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024
 	q4::inwork 3450,12722 3370,12725 3291,12721
 EOF
      },
@@ -43809,6 +43812,27 @@ EOF
 #: source_id: viz2021:13.525899,52.482661,10.07.2024,08:00 (bis 07.08.2024)
 #: note: Einbahnstraßenabschnitt ist etwa 65m lang, deshalb q3 statt q4
 	q3::inwork; 18737,8686 18865,8740
+EOF
+     },
+     { from  => 1720936800, # 2024-07-14 08:00
+       until => 1725112800, # 2024-08-31 16:00
+       text  => 'Heckelberg - Brunow: Bauarbeiten, Sperrung, 15.07.2024 08:00 Uhr bis 31.08.2024 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-F/24/131 (bis 31.08.2024)
+	2::inwork 41624,36648 39488,37315
+EOF
+     },
+     { from  => 1720614180, # 2024-07-10 14:23
+       until => 1723215600, # 2024-08-09 17:00
+       text  => 'Maxstr.: Anbindung Seestr. wegen Bauarbeiten gesperrt, vom 11.07.2024 14:23 bis 09.08.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.364381,52.549655,11.07.2024,14:23 (bis 09.08.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1811376928051364138
+#: by: https://pbs.twimg.com/media/GSNNci7WMAEH-87?format=jpg&name=large (keine Regelung für den Radverkehr)
+#: note: q4 -> q3, weil der gesperrte Abschnitt sehr kurz ist
+	q4::inwork 7673,15897 7622,15946
 EOF
      },
     );
