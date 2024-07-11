@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2022,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,6 +13,7 @@ use strict;
 use warnings;
 
 use Getopt::Long;
+use Text::ParseWords;
 use XML::LibXML;
 
 use constant XMLNS_SRT     => 'http://rezic.de/gpxext/1';
@@ -25,9 +26,18 @@ my $geo_distance;
 my $op_needs_argv;
 my $need_xpath_context_functions;
 
+Getopt::Long::Configure("pass_through");
+GetOptions(
+    'edits-file=s'           => sub { push @ARGV, load_edits_file($_[1], 1) },
+    'edits-file-if-exists=s' => sub { push @ARGV, load_edits_file($_[1], 0) },
+);
+Getopt::Long::Configure("no_pass_through"); # Revert configuration
+
 GetOptions
     (
      'verbose|v' => \$v,
+     'edits-file=s' => sub {}, # handled before
+     'edits-file-if-exists=s' => sub {}, # handled before
      'trkseg-split-by-time-gap|trkseg-split-by-time=f' => sub {
 	 my $delta_time = $_[1];
 	 require DateTime::Format::ISO8601;
@@ -250,6 +260,24 @@ sub trk_attrib {
     }
 }
 
+sub load_edits_file {
+    my ($file, $mandatory) = @_;
+    if (-e $file) {
+        open my $fh, '<', $file or die "Cannot open file '$file': $!";
+        while (my $line = <$fh>) {
+            chomp $line;
+            # Parse the line like a shell would
+            my @parsed_args = shellwords($line);
+            return @parsed_args;
+        }
+        close $fh;
+    } elsif ($mandatory) {
+        die "File '$file' does not exist.";
+    } else {
+	return ();
+    }
+}
+
 __END__
 
 =head1 NAME
@@ -258,7 +286,7 @@ gpx2gpx - apply operations on GPX files
 
 =head1 SYNOPSIS
 
-    gpx2gpx [--trkseg-split-by-time-gap=...] [--trkseg-split-by-dist-gap=...] [--trkpts-delete=xpath] src.gpx [--trkcat src2.gpx ...] > dst.gpx
+    gpx2gpx [--trkseg-split-by-time-gap=...] [--trkseg-split-by-dist-gap=...] [--trkpts-delete=xpath] src.gpx [--trkcat src2.gpx ...] [--edits-file file | --edits-file-if-exists file] > dst.gpx
 
 =head1 DESCRIPTION
 
@@ -320,6 +348,20 @@ allowed. Possible attributes are for example:
 Concat the primary gpx file and further files. Only trk files are
 supported. Only the C<< <trkseg> >> elements of the further files are
 appended to the first one.
+
+=head3 GENERAL OPTIONS
+
+=head3 C<--verbose> (alias C<-v>)
+
+Be verbose i.e. log the effects of operations.
+
+=head3 C<--edits-file I<file>>
+
+Take list of operations from the named file. Fails if the file does not exist.
+
+=head3 C<--edits-file-if-exists I<file>>
+
+Like C<--edits-file>, but does not fail if the named file does not exist.
 
 =head2 EXAMPLES
 
