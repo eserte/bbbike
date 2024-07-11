@@ -264,13 +264,13 @@ sub load_edits_file {
     my ($file, $mandatory) = @_;
     if (-e $file) {
         open my $fh, '<', $file or die "Cannot open file '$file': $!";
+	my @parsed_args;
         while (my $line = <$fh>) {
             chomp $line;
             # Parse the line like a shell would
-            my @parsed_args = shellwords($line);
-            return @parsed_args;
+            push @parsed_args, shellwords($line);
         }
-        close $fh;
+	return @parsed_args;
     } elsif ($mandatory) {
         die "File '$file' does not exist.";
     } else {
