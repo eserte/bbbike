@@ -15127,7 +15127,7 @@ EOF
 #: source_id: IM_013591 (inaktiv)
 #: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024)
 #: source_id: viz2021:13.360599,52.446803,11.07.2024,14:26 (Einschränkung in der anderen Richtung, bis 01.10.2024)
-#: source_id: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024) (bis 11.07.2024)
+#: source_id[inactive]: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024) (bis 11.07.2024)
 #: source_id: bvg2024:282#HIM_FREETEXT_230965 (bis 31.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
 #: also_indoor: traffic (H,G,B,T,W)
@@ -30872,6 +30872,7 @@ EOF
 #: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00 (inaktiv)
 #: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00 (inaktiv)
 #: source_id: viz2021:13.38883,52.5169,08.07.2023,17:00 (bis 08.07.2023) (inaktiv)
+#: source_id: viz2021:13.388916,52.516905,12.07.2024,00:00 (bis 13.07.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1183048455884816386
 #: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-08_090723/
@@ -31998,10 +31999,10 @@ EOF
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
 #: source_id[inactive]: bvg2021:188#BVG259885_0
 #: source_id[inactive]: bvg2021:188#BVG323876_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024) (bis 29.06.2024 + weitere Arbeiten) (bis 05.07.2024) (bis 12.07.2024)
+#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024) (bis 29.06.2024 + weitere Arbeiten) (bis 05.07.2024) (bis 12.07.2024) (inaktiv)
 #: source_id: viz2021:13.30246,52.44494,31.05.2024,10:09 (bis 12.07.2024) (inaktiv)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
-#: also_indoor: traffic (ex-H,G,B[weiter westlich],W) vvv
+#: also_indoor: traffic (ex-H,G,ex-B[weiter westlich],W) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
 # REMOVED --- #: XXX NEW	Gardeschützenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straße: Leitungsbau,Vollsperrung, Fußverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
 # REMOVED (hier nicht mehr) --- #: note: nur etwa 100m, deshalb q3 statt q4 ---	q3::inwork 4515,4760 4214,4595
@@ -34513,7 +34514,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (frühere Sperrung) --- #: source_id: LS/721-E/21/116 (inaktiv) ---	2::inwork 32854,37244 31663,37734
-#: source_id: LS/221-F/24/076 (inaktiv) (bis 12.07.2024)
+#: source_id: LS/221-F/24/076 (inaktiv) (bis 12.07.2024) (inaktiv)
 	2::inwork 31613,37843 31663,37734 32854,37244 33877,36906
 EOF
      },
@@ -36798,7 +36799,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (früherer Eintrag) --- #: note: laut rbb --- #: note: anscheinend sind nur wenige Meter im Norden des Abschnitts betroffen, deshalb nun q3 (vorher q4)
-#: source_id: viz2021:13.31321,52.53005,24.06.2024,07:00 (bis 12.07.2024)
+#: source_id: viz2021:13.31321,52.53005,24.06.2024,07:00 (bis 12.07.2024) (inaktiv)
 	q4::inwork 4186,13710 4295,13234
 EOF
      },
@@ -41771,7 +41772,7 @@ EOF
        text  => 'B5/L204/L863: Bauarbeiten, Sperrung der Kreuzung, evtl. sind auch Radfahrer betroffen, 13.11.2023 09:00 Uhr bis 12.07.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/23/182 (bis 12.07.2024)
+#: source_id: LS/223-P/23/182 (bis 12.07.2024) (inaktiv)
 #: XXX nach den Umbauarbeiten wird hier ein Kreisverkehr sein
 #: also_indoor: traffic (H,G,B,W)
 #: next_check: 2024-07-12
@@ -41849,11 +41850,11 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-09-12 07:00:00"),
-       until => $isodate2epoch->("2024-07-12 17:00:00"),
-       text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 12.07.2024, evtl. noch länger',
+       until => $isodate2epoch->("2024-08-29 17:00:00"),
+       text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 29.08.2024, evtl. noch länger',
        type  => 'gesperrt', # handicap
        data  => <<EOF,
-#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024)
+#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024)
 #: note: bei rbb nur bis 30.04.2024, mittlerweile auch bis 21.05.2024
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
 Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
@@ -42994,9 +42995,9 @@ Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-07-06 (webcam)
+#: last_checked: 2024-07-12 (webcam)
 #: check_frequency: 7d
-# REMOVED --- #: next_check: 2024-06-12
+#: next_check: 2024-07-15
 Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
 Pariser Platz	2::temp 8637,12258 8722,12268
 Pariser Platz	2::temp 8722,12268 8728,12220 8705,12217
@@ -43145,7 +43146,7 @@ EOF
        text  => 'Stiftsweg: Leitungsarbeiten zwischen Mendelstr. und Damerowstr., Sperrung der Fahrbahn Mo-Do bis 17 Uhr, Fr bis 15 Uhr, vom 21.05.2024 07:00 bis 12.07.2024 15:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024)
+#: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024) (inaktiv)
 #: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
 #: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
@@ -43296,9 +43297,10 @@ EOF
      },
      { from  => 1718229600, # 2024-06-13 00:00
        until => 1721426399, # 2024-07-19 23:59
-       text  => 'Schustehrusstr.: zwischen Nithackstr. und Kaiser-Friedrich-Str mittwochs von 14 bis 17 Uhr temporäre Spielstraße, vom 14. Juni 2024 bis 19. Juli 2024 ',
+       text  => 'Schustehrusstr.: zwischen Nithackstr. und Kaiser-Friedrich-Str mittwochs von 14 bis 17 Uhr temporäre Spielstraße, vom 14. Juni 2024 bis 19. Juli 2024',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/spielstrasse-vor-schule_a417921
 	q4::temp::play 3217,12239 3072,12222
 EOF
      },
