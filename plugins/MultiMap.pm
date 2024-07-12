@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.22;
+$VERSION = 2.23;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -326,6 +326,18 @@ sub register {
 	  callback => sub { show_links_to_all_maps(@_) },
 	  order => 9000,
 	};
+}
+
+sub unregister {
+    my $deleted = 0;
+    for my $info_plugin_name (keys %main::info_plugins) {
+	if ($info_plugin_name =~ /^\Q@{[ __PACKAGE__ ]}/) {
+	    delete $main::info_plugins{$info_plugin_name};
+	    $deleted++;
+	}
+    }
+    %images = ();
+    main::status_message("Removed " . $deleted . " map link definition(s)", "info");
 }
 
 sub _create_images {
