@@ -232,7 +232,7 @@ sub register {
 	  callback_3_std => sub { showmap_url_bkg(@_) },
 	  ($images{BKG} ? (icon => $images{BKG}) : ()),
 	};
-    $main::info_plugins{__PACKAGE__ . 'Mapillary'} =
+    $main::info_plugins{__PACKAGE__ . '_Mapillary'} =
 	{ name => 'Mapillary',
 	  callback => sub { showmap_mapillary(@_) },
 	  callback_3 => sub { show_mapillary_menu(@_) },
@@ -240,41 +240,41 @@ sub register {
 	  ($images{Mapillary} ? (icon => $images{Mapillary}) : ()),
 	  tags => [qw(streetview)],
 	};
-    $main::info_plugins{__PACKAGE__ . 'KartaView'} =
+    $main::info_plugins{__PACKAGE__ . '_KartaView'} =
 	{ name => 'KartaView',
 	  callback => sub { showmap_kartaview(@_) },
 	  callback_3_std => sub { showmap_url_kartaview(@_) },
 	  ($images{KartaView} ? (icon => $images{KartaView}) : ()),
 	  tags => [qw(streetview)],
 	};
-    $main::info_plugins{__PACKAGE__ . 'Mapilio'} =
+    $main::info_plugins{__PACKAGE__ . '_Mapilio'} =
 	{ name => 'Mapilio',
 	  callback => sub { showmap_mapilio(@_) },
 	  callback_3_std => sub { showmap_url_mapilio(@_) },
 	  ($images{Mapilio} ? (icon => $images{Mapilio}) : ()),
 	  tags => [qw(streetview)],
         };
-    $main::info_plugins{__PACKAGE__ . 'BerlinerLinien'} =
+    $main::info_plugins{__PACKAGE__ . '_BerlinerLinien'} =
 	{ name => 'berliner-linien.de (VBB)',
 	  callback => sub { showmap_berlinerlinien(@_) },
 	  callback_3_std => sub { showmap_url_berlinerlinien(@_) },
 	  ($images{BerlinerLinien} ? (icon => $images{BerlinerLinien}) : ()),
 	  tags => [qw(pubtrans)],
 	};
-    $main::info_plugins{__PACKAGE__ . 'F4map'} =
+    $main::info_plugins{__PACKAGE__ . '_F4map'} =
 	{ name => 'F4map',
 	  callback => sub { showmap_f4map(@_) },
 	  callback_3_std => sub { showmap_url_f4map(@_) },
 	  ($images{F4map} ? (icon => $images{F4map}) : ()),
 	};
-    $main::info_plugins{__PACKAGE__ . 'SentinelHub'} =
+    $main::info_plugins{__PACKAGE__ . '_SentinelHub'} =
 	{ name => 'Sentinel Hub',
 	  callback => sub { showmap_sentinelhub(@_) },
 	  callback_3_std => sub { showmap_url_sentinelhub(@_) },
 	  ($images{SentinelHub} ? (icon => $images{SentinelHub}) : ()),
 	  tags => [qw(aerial)],
 	};
-    $main::info_plugins{__PACKAGE__ . 'travic'} =
+    $main::info_plugins{__PACKAGE__ . '_travic'} =
 	{ name => 'travic',
 	  callback => sub { showmap_travic(@_) },
 	  callback_3_std => sub { showmap_url_travic(@_) },
