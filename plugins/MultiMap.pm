@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.21;
+$VERSION = 2.22;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -273,13 +273,6 @@ sub register {
 	  callback_3_std => sub { showmap_url_sentinelhub(@_) },
 	  ($images{SentinelHub} ? (icon => $images{SentinelHub}) : ()),
 	  tags => [qw(aerial)],
-	};
-    $main::info_plugins{__PACKAGE__ . 'StreckenInfo'} =
-	{ name => 'strecken.info',
-	  callback => sub { showmap_streckeninfo(@_) },
-	  callback_3_std => sub { showmap_url_streckeninfo(@_) },
-	  ($images{DB} ? (icon => $images{DB}) : ()),
-	  tags => [qw(pubtrans)],
 	};
     $main::info_plugins{__PACKAGE__ . 'travic'} =
 	{ name => 'travic',
@@ -906,29 +899,6 @@ amubGgWF2rr6BoVGoMOaFJpbWtvaOzq7unsUeoEO61PonzBx0uQpU6dNV1CYIcfAP3PW7Dlz581f
 sHDR4iVLl/EzMCxfsXLV6jVr163fsHHT5i0MABrnSmdAqo40AAAAJXRFWHRkYXRlOmNyZWF0ZQAy
 MDIzLTAxLTIwVDIxOjAzOjUyKzAxOjAwhjYFLgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wOC0x
 MFQxODowMjowNyswMjowMHHB1SsAAAAASUVORK5CYII=
-EOF
-    }
-
-    if (!defined $images{DB}) {
-	# Fetched https://www.bahn.de/favicon.ico
-	# converted:
-	#   convert -resize 16x16 favicon.ico db.png
-	#   cat db-0.png | base64
-	$images{DB} = $main::top->Photo
-	    (-format => 'png',
-	     -data => <<EOF);
-iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUAAADwFBTwFBTwFBTw
-FBTwFBTwFBTwFBTwFBTwFBTwFBTwFBT0W1v3iYn2cnLwFBT6uLj1aGjzQ0P0UlL5r6/////7xsb4
-k5P+9vb95+fwGxv4oKDzRkb6vr75oaH0WFj0WVn2enrwHx/93t71Zmb6r6/+8vL+/v7wGBjzR0fz
-TU3xJSX7yMj+/f3wFxfzSkryOTnyOjr4mZn80tL1bW3yOzvwHh7wGRn3g4PyNTXwFhb7ycn2fn75
-o6PxMTH2e3v0Wlr1amr7w8P5qqrxKyvxLi7zUVH7zMzzS0v0XV2jfZPwAAAADHRSTlMALpKa4t76
-6OQ+rLJ3D//WAAAAAWJLR0QV5dj5owAAAAd0SU1FB+YFHwgjKT5bJDMAAACSSURBVBjTY2AgCBiZ
-mJEAEyMDCw8vEuBjZeAXEBQSEhYRFePj4xOXkGQDCghJScvwy8rxyyvwK0IElESV+VXk+FXV+Hlg
-AuoamnL8WpraOjABXT19OX4DQykjmIAxvwlQi7qpGUTA3MLSylqO38ZWyQ4sYO/g4Ogk6uzi4urm
-DhRg9+BDAp4cDJxc3EiAi5OwZwGPyhIaEtAInAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wNi0y
-NVQyMjoyMzoyNyswMjowMA6Xa+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDUtMzFUMDg6MzU6
-NDErMDI6MDA9FeOMAAAAAElFTkSuQmCC
 EOF
     }
 
@@ -1945,23 +1915,6 @@ sub showmap_url_sentinelhub {
 sub showmap_sentinelhub {
     my(%args) = @_;
     my $url = showmap_url_sentinelhub(%args);
-    start_browser($url);
-}
-
-######################################################################
-# strecken.info
-sub showmap_url_streckeninfo {
-    my(%args) = @_;
-    my $px = $args{px} * 1e6;
-    my $py = $args{py} * 1e6;
-    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    $scale = 13 if $scale > 13;
-    sprintf 'http://db-livemaps.hafas.de/bin/query.exe/dn?L=vs_baustellen&tpl=fullscreenmap&mapCenterX=%f&mapCenterY=%f&mapZoom=%d&', $px, $py, $scale;
-}
-
-sub showmap_streckeninfo {
-    my(%args) = @_;
-    my $url = showmap_url_streckeninfo(%args);
     start_browser($url);
 }
 
