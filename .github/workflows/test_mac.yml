@@ -2,6 +2,8 @@ name: CI on mac
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron:  '38 5 * * 6'
 
 jobs:
   test_mac:
