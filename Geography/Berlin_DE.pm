@@ -254,6 +254,9 @@ sub parse_street_type_nr {
 	$image = 'dahme_radweg.png';
     } elsif ($strname =~ m{Reinickendorfer Route (\d+)}) {
 	$type = "Rdf$1";
+    } elsif ($strname =~ m{Tegeler See Radroute}i) {
+	$type = 'TSR';
+	$image = 'TSR.png';
     }
     if (defined $type) {
 	$do_round = 1;
