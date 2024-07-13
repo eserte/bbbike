@@ -53,7 +53,11 @@ SKIP: {
 {
     local $ENV{HTTP_HOST} = "bbbike.de";
     my $q = CGI->new;
-    is(BBBikeCGI::Util::my_url($q), "http://bbbike.de", 'only Host header, no Request-Uri');
+    # Since CGI 4.66 a trailing slash is added to the ->url call.
+    # It's unclear if the new behavior is problematic, so for now
+    # just accept both variants, with and without trailing slash.
+    # See also https://github.com/leejo/CGI.pm/issues/267
+    like(BBBikeCGI::Util::my_url($q), qr{^\Qhttp://bbbike.de\E/?$}, 'only Host header, no Request-Uri');
 }
 
 {
