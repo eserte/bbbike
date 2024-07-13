@@ -236,7 +236,8 @@ install_old_perl_dependencies() {
 	case "$PERLBREW_PERL" in
 	    5.8)
 		# Module::Build::Tiny: Plack needs in a deeper prereq this module, which requires CPAN::Requirements::Dynamic, which needs perl 5.10
-		cpanm --quiet --notest Module::Build::Tiny~"<0.048"
+		# IO::Socket::SSL does not compile anymore with 5.8.9, see https://github.com/noxxi/p5-io-socket-ssl/issues/157
+		cpanm --quiet --notest Module::Build::Tiny~"<0.048" IO::Socket::SSL~"!=2.087"
 		;;
 	esac
 	# Next phase
