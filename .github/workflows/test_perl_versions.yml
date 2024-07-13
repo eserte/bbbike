@@ -2,6 +2,8 @@ name: CI for different perl versions
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron:  '38 5 * * 6'
 
 jobs:
   test_perl_versions:
