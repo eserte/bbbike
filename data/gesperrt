@@ -71,7 +71,7 @@ Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13712,20919 13909,20928
 Alt-Blankenburg	1 13909,20928 13677,20873 13576,20849
 Seestr.	1 5043,14671 5255,14757 5311,14786 5437,14844
 Seestr.	1 5437,14844 5331,14735 5293,14699 5264,14671 5051,14606
-Waidmannsluster Damm	1 2146,20887 1843,21440 1870,21491 2188,20910
+Waidmannsluster Damm	1 2146,20887 1843,21440 1864,21479 1958,21301 2117,21081 2188,20910
 Flughafen Tegel	1 2809,16143 2757,16194 2696,16271 2720,16353 2800,16368 2839,16337 2853,16293 2809,16143
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2788,14364 2905,14754
@@ -2192,13 +2192,6 @@ Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp
 Möllendorffstr. -> Deutschmeisterstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15420,12178 15443,12222 15435,12226
 Möllendorffstr. -> Vorfahrt am Rathaus Lichtenberg: Mittelstreifen mit Straßenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
 Vorfahrt am Rathaus Lichtenberg -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15531,12300 15480,12306 15443,12222
-Zaun auf dem Mittelstreifen	3nocross::ignrte 6781,16026 6914,15908 6936,15888
-Müllerstr. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 6936,15888 6914,15908 6802,15790
-Müllerstr. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6781,16026 6914,15908 7077,16078
-Brüsseler Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 6781,16026
-Brüsseler Str. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 7077,16078
-Amsterdamer Str. -> Müllerstr.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6936,15888
-Amsterdamer Str. -> Brüsseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6802,15790
 Zaun auf dem Mittelstreifen	3nocross::ignrte 5524,21034 5596,21043 5819,21057
 Wilhelmsruher Damm -> Amboßweg: Zaun auf dem Mittelstreifen	3::igndisp 5819,21057 5596,21043 5599,21025
 Amboßweg -> Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3::igndisp 5599,21025 5596,21043 5524,21034
@@ -3449,6 +3442,7 @@ Schranke über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5:-207:t
 Drängelgitter	BNP:3:-207:trailer=10 3550,810
 Schwingtor	BNP:5:-94:trailer=10 25136,10768
 Schranke	BNP:3:-213:trailer=10 13081,14090
+weites Drängelgitter	BNP:2:-78:trailer=7 7157,18810
 Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
 (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19156,14953 19160,14935 19171,14938
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -3494,6 +3488,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 5522,8024 5521,8087
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
+Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 Marktplatz Adlershof: möglicherweise wird die nördliche Fahrbahn dauerhaft eingezogen	2::inwork 20336,3783 20290,3756

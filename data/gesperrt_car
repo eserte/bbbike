@@ -2564,3 +2564,10 @@ Hausburgstr.	1 13742,13376 13835,13149
 Hausburgstr.	1 13742,13376 13706,13460 13635,13605
 Kochhannstr.	1 13644,13332 13742,13376
 Neucölln Carree - Grenzallee: nur Rechtsabbiegen erlaubt	3 14378,7236 14507,7146 14617,7243
+Abbiegen verboten	3nocross::ignrte 6781,16026 6851,15964 6914,15908 6936,15888
+Müllerstr. -> Brüsseler Str.: Abbiegen verboten	3::igndisp 6936,15888 6914,15908 6802,15790
+Müllerstr. -> Amsterdamer Str.: Abbiegen verboten	3::igndisp 6851,15964 6914,15908 7077,16078
+Brüsseler Str. -> Müllerstr.: Abbiegen verboten	3::igndisp 6802,15790 6914,15908 6851,15964
+Brüsseler Str. -> Amsterdamer Str.: Abbiegen verboten	3::igndisp 6802,15790 6914,15908 7077,16078
+Amsterdamer Str. -> Müllerstr.: Abbiegen verboten	3::igndisp 7077,16078 6914,15908 6936,15888
+Amsterdamer Str. -> Brüsseler Str.: Abbiegen verboten	3::igndisp 7077,16078 6914,15908 6802,15790

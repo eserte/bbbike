@@ -25,7 +25,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17736,5441
 # 
 #: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325
-#: last_checked: 2024-06-26
+#: last_checked: 2024-07-13
 Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -73,7 +73,7 @@ Rudower Str.: Gegenverkehrsregelung östlich der Dorothea-Viehmann-Str.	X::inwork
 Grünauer Str./Werderstr.: Gegenverkehrsregelung	X::inwork::alternating 20028,1673
 # 
 #: source_id: viz2021:13.490616,52.463117,15.04.2024,07:30 (bis 12.07.2024) (bis 24.07.2024)
-#: last_checked: 2024-07-02 (mapillary)
+#: last_checked: 2024-07-11 (mapillary)
 #: next_check: 2024-07-24
 #: valid: -20240724
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16425,6445
@@ -268,14 +268,14 @@ Gürtelstr.	F::inwork 15153,11691
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2024-07-06
+#: last_checked: 2024-07-11 (mapillary)
 #: check_frequency: 120d
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2024-07-06
+#: last_checked: 2024-07-11 (mapillary)
 #: next_check: 2024-08-15
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
@@ -365,7 +365,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 #: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024) (bis 24.05.2024) (inaktiv)
 #: source_id: viz2021:13.374486,52.583736,27.02.2024,07:00 (bis 07.10.2024)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/ende-der-baustelle-endlich-in-sicht_a412148 (Bauarbeiten bis Juni/Juli 2024)
-#: last_checked: 2024-06-01 (mapillary) vvv
+#: last_checked: 2024-07-13 vvv
 #: next_check: 2024-10-07 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 # REMOVED (diese Ampel ist nicht mehr gelistet) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
@@ -385,7 +385,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 # REMOVED (closed) --- #: osm_watch: note 2356634 3
 #: osm_watch: node id="9569639494" version="1"
 #: osm_watch: node id="9569639496" version="1"
-#: last_checked: 2024-04-14
+#: last_checked: 2024-07-13
 #: check_frequency: 60d
 	X::inwork 9868,19023
 # 
@@ -1934,7 +1934,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 25579,5958
 	X 22074,9273
 #: XXX_prog eigentlich zwei leicht versetzte Ampeln, die aber für die Reinickendorfer Str. gleich geschaltet sind; ein Geradeausfahren aus der Schererstr. in die Wiesenstr. ist also nicht möglich
+#: XXX_prog: zusammenhängende Ampelanlage vvv
 	X 7948,15802
+	X 7941,15823
+#: XXX_prog ^^^
 	X 9640,-833
 	X 6211,16343
 	X 7534,10850
@@ -3431,7 +3434,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-06-25 vvv
+#: last_checked: 2024-07-09 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

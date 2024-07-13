@@ -1544,18 +1544,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       {
-         'data' => '# alt:	q4::inwork 24120,41684 24102,41213 24106,41050 24185,40670 24374,40395
-#: next_check_id: SOPHIENSTAEDT-2024
-#: source_id: LS/221-E/24/059 (bis 13.07.2024)
-	2::inwork 24102,41213 24120,41684 23394,42958 23357,43131 23086,43442 22931,43755 22555,44075 22254,44560 22072,44842
-',
-         'from' => 1717884000,
-         'id' => 1507,
-         'text' => 'Biesenthal - Sophienstädt: Deckensanierung, Sperrung der Straße, vom 10.06.2024 08:00 Uhr bis 13.07.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1720879200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5096,7 +5085,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
 #: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
 #: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -5107,7 +5097,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => 1717106400,
          'id' => 3367,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+         'recurring' => 1,
          'text' => 'Bänschstr.: zwischen Voigtstr. und Pettenkoferstr. sonntags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 31.08., außer in den Sommerferien',
          'type' => 'handicap',
          'until' => 1725120000
@@ -5119,6 +5109,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => 1714428000,
          'id' => 3368,
+         'recurring' => 1,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
          'text' => 'Richard-Sorge-Str.: zwischen Mühsamstr. und Straßmannstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
          'type' => 'handicap',
@@ -5131,6 +5122,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => 1714428000,
          'id' => 3369,
+         'recurring' => 1,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
          'text' => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. mittwochs zwischen 15.30 und 18.30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
          'type' => 'handicap',
@@ -5163,6 +5155,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => 1715724000,
          'id' => 3376,
+         'recurring' => 1,
          'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
          'text' => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
          'type' => 'handicap',
@@ -5177,6 +5170,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => 1715724000,
          'id' => 3377,
+         'recurring' => 1,
          'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
          'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
          'type' => 'handicap',
@@ -5703,6 +5697,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 ',
          'from' => 1716415200,
          'id' => 3551,
+         'recurring' => 1,
          'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
          'type' => 'handicap',
          'until' => 1727454600
@@ -6136,7 +6131,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-06-25
+#: last_checked: 2024-07-13 (daf)
 #: check_frequency: 150d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -6290,7 +6285,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
 # REMOVED --- #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
-#: last_checked: 2024-07-06
+#: last_checked: 2024-07-11 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-08-15
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
@@ -6709,6 +6704,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 ',
          'from' => 1719439200,
          'id' => 3815,
+         'recurring' => 1,
          'text' => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 28. Juni 2024 bis 19. Juli 2024',
          'type' => 'handicap',
          'until' => 1721406600
@@ -6758,6 +6754,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
 ',
          'from' => 1712181600,
          'id' => 3830,
+         'recurring' => 1,
          'text' => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2024 bis November 2024',
          'type' => 'handicap',
          'until' => 1730502000
@@ -6768,7 +6765,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
          'data' => '#: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2024-03-18 (okas)
+#: last_checked: 2024-07-13
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -6784,7 +6781,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024)
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2023-10-11 (daf)
+#: last_checked: 2024-07-13
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3267,18767 3008,18464
@@ -7154,7 +7151,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2024-04-17
+#: last_checked: 2024-07-13
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 	q3::inwork 4335,17642 4392,17777
@@ -7214,20 +7211,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: STEGEWEG-2023
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12146 (Anfrage)
-#: last_checked: 2024-04-30 (mapillary)
-#: check_frequency: 90d
-	q4::inwork 6869,18721 6879,18737 6910,18861
-# REMOVED (hier fertig) ---	q4::inwork 6910,18861 6960,19047
-',
-         'from' => 1699225200,
-         'id' => 3944,
-         'text' => 'Stegeweg: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: RUNGE-2023
 #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv)
@@ -7264,20 +7248,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
-#: by: mapillary
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-05-02 (mapillary)
-# REMOVED --- #: next_check: 2023-12-31
-	2::inwork 9462,18234 9460,18053
-',
-         'from' => 1699340417,
-         'id' => 3959,
-         'text' => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Anfang Mai 2024: Sperrung besteht weiterhin)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7606,11 +7577,18 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        undef,
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
+#: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-05-10 (mapillary) vvv
+#: last_checked: 2024-07-13 vvv
 #: check_frequency: 60d vvv
-	q4::inwork 7948,15802 8048,15829 8140,15859 8187,15965
-	q4::inwork 8164,15840 8140,15859
+#: osm_watch: way id="1156267450" version="6"
+Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
+#: osm_watch: way id="120633718" version="20"
+Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
+#: osm_watch: note 3816582 3
+Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
+#: osm_watch: note 3393893 4
+Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -7690,6 +7668,7 @@ Schustehrusstr.	q4::inwork 3528,12276 3623,12284
 ',
          'from' => 1713132000,
          'id' => 4045,
+         'recurring' => 1,
          'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 16. April bis zum 15. Oktober (außer Sommerferien) ',
          'type' => 'gesperrt',
          'until' => 1729009800
@@ -7876,6 +7855,7 @@ Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979
 ',
          'from' => 1719957600,
          'id' => 4059,
+         'recurring' => 1,
          'text' => 'Wassertorstr.: in Höhe Kastanienplatz donnerstags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 04. Juli 2024 bis 25. Juli 2024',
          'type' => 'handicap',
          'until' => 1721926800
@@ -7959,6 +7939,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 ',
          'from' => 1717624800,
          'id' => 4072,
+         'recurring' => 1,
          'text' => 'Armenische Str.: zwischen Ungarnstr. und Sackgassenende am 1. und 3. Freitag im Monat zwischen 15:00 und 18:00 Uhr temporäre Spielstraße, Juni bis September',
          'type' => 'handicap',
          'until' => 1726848000
@@ -7969,6 +7950,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 ',
          'from' => 1718229600,
          'id' => 4073,
+         'recurring' => 1,
          'text' => 'Schustehrusstr.: zwischen Nithackstr. und Kaiser-Friedrich-Str mittwochs von 14 bis 17 Uhr temporäre Spielstraße, vom 14. Juni 2024 bis 19. Juli 2024',
          'type' => 'handicap',
          'until' => 1721426399
@@ -8048,7 +8030,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 ',
          'from' => 1717909200,
          'id' => 4082,
-         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.06.2024 07:00 bis 29.07.2024 17:00',
+         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.07.2024 17:00',
          'type' => 'handicap',
          'until' => 1722265200
        },
@@ -8430,7 +8412,7 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1811376928051364138
 #: by: https://pbs.twimg.com/media/GSNNci7WMAEH-87?format=jpg&name=large (keine Regelung für den Radverkehr)
 #: note: q4 -> q3, weil der gesperrte Abschnitt sehr kurz ist
-	q4::inwork 7673,15897 7622,15946
+	q4::inwork 7663,15906 7622,15946
 ',
          'from' => 1720614180,
          'id' => 4115,

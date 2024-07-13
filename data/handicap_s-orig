@@ -44,7 +44,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024) (bis 24.05.2024) (inaktiv)
-#: last_checked: 2024-07-08
+#: last_checked: 2024-07-13
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-05-24
 Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
@@ -359,16 +359,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 # REMOVED --- #: by: wosch --- #: confirmed_by: srt --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-03-30 --- #: check_frequency: 10d --- Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10129,12200 10207,12055
-# 
-#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
-#: by: https://www.berliner-woche.de/mitte/c-bauen/schluesseluebergabe-fuers-haus-petri_a420407
-#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1461126.php
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: XXX verursachende Bauarbeiten sind die am Archäologischen Haus
-#: last_checked: 2024-06-16
-#: check_frequency: 60d
-Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
+# REMOVED (Bauarbeiten beendet) --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/schluesseluebergabe-fuers-haus-petri_a420407 --- #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1461126.php --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: XXX verursachende Bauarbeiten sind die am Archäologischen Haus --- #: last_checked: 2024-07-09 (mapillary) --- #: check_frequency: 60d --- Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
 #: by: http://www.deal-magazin.com/news/3/123294/Berlin-Naechste-Projektphase-fuer-das-Mehrreligionenhaus-House-of-One
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
@@ -454,7 +445,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-06-28 (mapillary) vvv
+#: last_checked: 2024-07-09 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -681,8 +672,8 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: by: https://mein.berlin.de/projekte/neugestaltung-europaplatz-nord/
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
-#: osm_watch: note 3913793 5
-#: last_checked: 2024-06-09 (webcam)
+#: osm_watch: note 3913793 6
+#: last_checked: 2024-07-13 (webcam)
 #: check_frequency: 60d
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 # 
@@ -1123,7 +1114,7 @@ Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 10
 #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
 #: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
 #: osm_watch: way id="156800019" version="6"
-#: last_checked: 2024-07-09
+#: last_checked: 2024-07-13
 #: check_frequency: 60d
 Diesterwegstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q3::inwork 12060,15141 11995,15012
 # 
@@ -1558,8 +1549,8 @@ südlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -1204,4328 -1196,4351 -1247
 nördlicher/westlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1239,4436
 Krumme Lanke - Parkplatz am Fischerhüttenweg: Fußgänger	q2 -1287,4486 -1304,4450 -1297,4385
 Pankeweg, Bürgerpark: Fußgänger	q2 9905,18329 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9324,18137 9310,18108
-Bürgerpark: Fußgänger	q2 9460,18053 9462,18234 9701,18256 9716,18290
-Bürgerpark: Fußgänger	q1 9419,18330 9424,18276 9462,18234
+Bürgerpark: Fußgänger	q2 9460,18053 9467,18226 9700,18269 9716,18290
+Bürgerpark: Fußgänger	q1 9419,18330 9424,18276 9467,18226
 # 
 #: note: Altstadt Spandau vvv
 Breite Str.: Fußgängerzone	q1 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
@@ -6126,7 +6117,7 @@ Hedwigstr. (Alt-Hohenschönhausen): enge Straße	q1 16616,16046 16505,16096 16520,
 # REMOVED --- #: by: anonymous --- Hopfenweg: enge Straße	q1 15745,2294 15745,2320 15593,2495 15588,2520 15590,2724
 #: by: Kai (regionalorenz): vvv
 #: corrected_by: srt/policy (q2 -> ...)
-Kasinoweg: enge Straße	q0- 2624,24710 2444,24950 2364,24886 2340,24872
+Kasinoweg: enge Straße	q0- 2624,24710 2444,24950 2364,24886 2344,24879
 #: corrected_by: srt/policy (q2 -> ...)
 Knappenpfad: enge Straße	q0- 2471,24709 2410,24837 2364,24886
 #: by: ^^^

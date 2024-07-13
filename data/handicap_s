@@ -21,7 +21,6 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,124
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
-Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10364,11896 10332,11929 10392,11991
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
@@ -270,8 +269,8 @@ südlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -1204,4328 -1196,4351 -1247
 nördlicher/westlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1239,4436
 Krumme Lanke - Parkplatz am Fischerhüttenweg: Fußgänger	q2 -1287,4486 -1304,4450 -1297,4385
 Pankeweg, Bürgerpark: Fußgänger	q2 9905,18329 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9324,18137 9310,18108
-Bürgerpark: Fußgänger	q2 9460,18053 9462,18234 9701,18256 9716,18290
-Bürgerpark: Fußgänger	q1 9419,18330 9424,18276 9462,18234
+Bürgerpark: Fußgänger	q2 9460,18053 9467,18226 9700,18269 9716,18290
+Bürgerpark: Fußgänger	q1 9419,18330 9424,18276 9467,18226
 Breite Str.: Fußgängerzone	q1 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
 Markt: Fußgängerzone	q1 -3155,14340 -3204,14368 -3231,14383 -3275,14407
 Kirchgasse (Spandau): Fußgängerzone	q1 -3089,14440 -3150,14478
@@ -3081,7 +3080,7 @@ Rotdornstr.: enge Straße	q1 5139,7216 5141,7158 5121,7132 5081,7112
 Im Eichengrund: Fußweg	q3 976,15195 919,15365 902,15362 877,15474
 Im Eichengrund: Fußweg, Bordstein	q3 919,15365 1009,15400
 Hedwigstr. (Alt-Hohenschönhausen): enge Straße	q1 16616,16046 16505,16096 16520,16200
-Kasinoweg: enge Straße	q0 2624,24710 2444,24950 2364,24886 2340,24872
+Kasinoweg: enge Straße	q0 2624,24710 2444,24950 2364,24886 2344,24879
 Knappenpfad: enge Straße	q0 2471,24709 2410,24837 2364,24886
 Auerhahnbalz: enge Straße	q2 636,4765 650,4712 668,4653 697,4605 723,4572
 Welsestr.: enge Straße	q1 18601,18342 18624,18259 18656,18222 18709,18159 18746,18116 18744,18050 18480,17836 18357,17735 18300,17740 18253,17796 18269,17807

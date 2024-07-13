@@ -460,7 +460,7 @@ EOF
 	2 7024,15810 7129,15717 7198,15656
 	2 7024,15810 6936,15888 6914,15908
 	2 7198,15656 7277,15586
-	2 6781,16026 6914,15908
+	2 6781,16026 6851,15964 6914,15908
 EOF
      },
      { from  => 1083491594, # 2004-05-02 11:53
@@ -501,7 +501,7 @@ EOF
 	2 7024,15810 7129,15717 7198,15656
 	2 7024,15810 6936,15888 6914,15908
 	2 7198,15656 7277,15586
-	2 6781,16026 6914,15908
+	2 6781,16026 6851,15964 6914,15908
 EOF
      },
      { from  => 1147522145, # 2006-05-13 14:09
@@ -4917,7 +4917,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002867',
        data  => <<EOF,
-	2 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
+	2 6781,16026 6851,15964 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -7686,7 +7686,7 @@ EOF
        text  => 'Vom 20.03. bis voraussichtlich zum 30.04.2007 wird die Fahrbahndecke der Namslaustraße zwischen Berliner Straße und Sterkrader Straße erneuert. Während der Bauzeit wird die Namslaustraße in Richtung Berliner Straße als Einbahnstraße ausgewiesen. ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1::inwork 2690,19099 2585,19091 2460,19083 2081,19072
+	1::inwork 2690,19099 2585,19091 2455,19089 2414,19088 2083,19078
 EOF
      },
      { from  => 1175292000, # 2007-03-31 00:00
@@ -12418,7 +12418,7 @@ EOF
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Leopoldplatz und Seestr. Veranstaltung (Stadtteilfest Müllerstraße), Straße vollständig gesperrt (2. bis 4. August 2013)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
+	2::temp 6781,16026 6851,15964 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
 EOF
      },
      { from  => 1217625939, # 2008-08-01 23:25
@@ -13054,7 +13054,7 @@ EOF
        data  => <<EOF,
 # alt:	q4::inwork 24120,41684 24102,41213 24106,41050 24185,40670 24374,40395
 #: next_check_id: SOPHIENSTAEDT-2024
-#: source_id: LS/221-E/24/059 (bis 13.07.2024)
+#: source_id: LS/221-E/24/059 (bis 13.07.2024) (inaktiv)
 	2::inwork 24102,41213 24120,41684 23394,42958 23357,43131 23086,43442 22931,43755 22555,44075 22254,44560 22072,44842
 EOF
      },
@@ -17841,7 +17841,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.marktcom.de/veranstaltung/16203-Traditionelles-Muellerstra%C3%9Fenfest (Termin 2014)
-	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
+	2::temp 6781,16026 6851,15964 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
 EOF
      },
      undef, # früher:
@@ -28601,7 +28601,7 @@ EOF
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/mullerstra%C3%9Fe-wedding-vollsperrung-in-hohe-seestra%C3%9Fe-%C2%B7-gleisbauarbeiten',
        data  => <<EOF,
 #: source_id: 2147343041
-	q4::inwork 6914,15908 6781,16026 6712,16087
+	q4::inwork 6914,15908 6851,15964 6781,16026 6712,16087
 EOF
      },
      { from  => 1534629600, # 2018-08-19 00:00
@@ -29344,7 +29344,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: NEUERMAUERWEG-2018 --- #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv --- #: osm_watch: way id="42031978" version="14" --- #: priority: #B vvv --- #: last_checked: 2019-03-23 vvv --- #: check_frequency: 14d vvv
-(Neuer Mauerweg): noch abgesperrt	2::inwork 7512,19480 7572,19490 7679,19421 7704,19366 7763,19318 7824,19269 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
+(Neuer Mauerweg): noch abgesperrt	2::inwork 7512,19480 7572,19490 7679,19421 7704,19366 7763,19318 7824,19269 7873,19261 8016,19143 8176,19034 8311,18941 8347,18916 8476,18773
 (Neuer Mauerweg): noch abgesperrt	2::inwork 7572,19490 7540,19550
 EOF
      },
@@ -31532,8 +31532,9 @@ EOF
        # eigentlich angesagt war 12-18h, mittlerweile scheint es überall 13-19h zu sein
        text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen können für den Radverkehr gesperrt sein, jeden Sonntag zwischen 13 und 19 Uhr',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
+       recurring => 0,
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/angebot-auf-der-baenschstrasse-wurde-verkuerzert_a268825
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/fuenf-antraege-auf-temporaere-spielstrassen_a283528 ("bis Ende des Sommers" (2020))
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.993677.php (22.9.2020 - Tag der Spielstraßen --- nicht eingetragen)
@@ -31735,8 +31736,9 @@ EOF
        accept_multi_feature_distance => 2500,
        text  => 'Temporäre Spielstraßen in Neukölln: einige Straßen (Selkestr., Hobrechtstr., Karl-Marx-Platz, Anzengruberstr.) sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Ende September 2020 zwischen 13 und 19 Uhr',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
+       recurring => 0,
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.931493.php
 #: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.963342.php (Verlängerung von drei der vier Spielstraßen bis zum 27. September 2020)
@@ -33379,8 +33381,9 @@ EOF
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-08-31 18:00:00") },
        text  => 'Bänschstr.: zwischen Voigtstr. und Pettenkoferstr. sonntags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 31.08., außer in den Sommerferien',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+       recurring => 1,
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
 #: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
 #: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
@@ -33395,6 +33398,7 @@ EOF
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:00:00") },
        text  => 'Richard-Sorge-Str.: zwischen Mühsamstr. und Straßmannstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -33406,6 +33410,7 @@ EOF
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:30:00") },
        text  => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. mittwochs zwischen 15.30 und 18.30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -33417,6 +33422,7 @@ EOF
        until => do { my $year = (localtime)[5]+1900; $year = 2023; $isodate2epoch->("$year-09-30 18:00:00") },
        text  => 'Dresdener Str.: zwischen Erkelenzdamm und NKZ freitags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -33440,6 +33446,7 @@ EOF
        until => 1633039199, # 2021-09-30 23:59
        text  => 'Waldemarstr.: zwischen Leuschnerdamm und Adalbertstr. Spielstraße sonntags 15 bis 19 Uhr, 23. Mai 2021 bis 30. September 2021',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
 #: XXX wird diese Spielstraße verstetigt?
@@ -33451,6 +33458,7 @@ EOF
        until => 1633039199, # 2021-09-30 23:59
        text  => 'Wrangelstr.: zwischen Falckensteinstr. und Oppelner Str. Spielstraße sonntags, 14.30 bis 19 Uhr, 16. Mai 2021 bis 30. September 2021, außer in den Sommerferien ',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
 #: XXX wird diese Spielstraße verstetigt? (hier vermutlich erst nach der Beteiligung für die verkehrliche Umgestaltung)
@@ -33505,6 +33513,7 @@ EOF
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-15 18:00:00") },
        text  => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
@@ -33518,6 +33527,7 @@ EOF
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-15 18:00:00") },
        text  => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
@@ -35742,6 +35752,7 @@ EOF
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2024-06-25 18:00:00") }, # nur temporäre Schilder
        text  => 'Jessnerstr.: zwischen Travestr. und Oderstr. dienstags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, im Juni 2024',
        type  => 'handicap',
+       recurring => 1,
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 #: confirmed_by: srt (am 2022-05-03 gesehen)
@@ -35903,6 +35914,7 @@ EOF
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-27 18:30:00") }, # nur temporäre Schilder, gibt es die Spielstraße auch 2024?
        text  => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
        type  => 'handicap',
+       recurring => 1,
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 #: by: http://spielstraßen.de/uebersicht.php#kreu
@@ -37744,7 +37756,7 @@ EOF
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-06-25
+#: last_checked: 2024-07-13 (daf)
 #: check_frequency: 150d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -38005,7 +38017,7 @@ EOF
        source_id => 'viz2021:13.32306,52.603568,22.11.2022,07:00',
        data  => <<EOF,
 #: by: https://nitter.cz/VIZ_Berlin/status/1594927404748709889#m (Erwähnung des Radverkehrs)
-	q4::inwork 4812,21737 4655,21939 4613,21997 4598,22066 4584,22107 4556,22148 4456,22278
+	q4::inwork 4812,21737 4655,21939 4604,22011 4598,22066 4584,22107 4556,22148 4456,22278
 EOF
      },
      { from  => undef, # 
@@ -38278,7 +38290,7 @@ EOF
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
 # REMOVED --- #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
-#: last_checked: 2024-07-06
+#: last_checked: 2024-07-11 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-08-15
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
@@ -39699,6 +39711,7 @@ EOF
        #text  => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 16. Juni 2023 bis 28. Juli 2023',
        text  => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 28. Juni 2024 bis 19. Juli 2024',
        type  => 'handicap',
+       recurring => 1,
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/spielstrassen-988767.php (Haus Nr. 18-22)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1445054.php (2024)
@@ -39858,6 +39871,7 @@ EOF
        until => $isodate2epoch->("2023-10-25 23:59:59"), # 1698443999, # 2023-10-27 23:59
        text  => 'Steinmetzstr.: zwischen Bülowstr. und Alvenslebenstr freitags zwischen 15 bis 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 14. April 2023 bis zum 27. Oktober 2023',
        type  => 'handicap',
+       recurring => 1,
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
 #: by: http://spielstraßen.de/uebersicht.php?date=20230620
@@ -39869,6 +39883,7 @@ EOF
        until => $isodate2epoch->("2024-11-02 00:00:00"), # 1699052399, # 2023-11-03 23:59
        text  => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2024 bis November 2024',
        type  => 'handicap',
+       recurring => 1,
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
 #: by: http://spielstraßen.de/uebersicht.php?date=20230620
@@ -39908,7 +39923,7 @@ EOF
 #: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2024-03-18 (okas)
+#: last_checked: 2024-07-13
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -39923,7 +39938,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024)
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2023-10-11 (daf)
+#: last_checked: 2024-07-13
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3267,18767 3008,18464
@@ -41278,7 +41293,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2024-04-17
+#: last_checked: 2024-07-13
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 	q3::inwork 4335,17642 4392,17777
@@ -41393,15 +41408,14 @@ EOF
 EOF
      },
      { from  => 1699225200, # 2023-11-06 00:00
-       until => undef, # 1703285999, # 2023-12-22 23:59
+       until => 1720876006, # undef, # 1703285999, # 2023-12-22 23:59
        #text  => 'Stegeweg: Fahrbahninstandsetzung, evtl. gibt es Einschränkungen für Radfahrer, vom 06. November 2023 bis zum 22. Dezember 2023',
        text  => 'Stegeweg: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: STEGEWEG-2023
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12146 (Anfrage)
-#: last_checked: 2024-04-30 (mapillary)
-#: check_frequency: 90d
+# REMOVED (offen) --- #: last_checked: 2024-07-13 --- #: check_frequency: 90d
 	q4::inwork 6869,18721 6879,18737 6910,18861
 # REMOVED (hier fertig) ---	q4::inwork 6910,18861 6960,19047
 EOF
@@ -41600,17 +41614,16 @@ EOF
 EOF
      },
      { from  => 1699340417, # 2023-11-07 08:00
-       until => undef, # 1704063600, # 2024-01-01 00:00
+       until => 1720876631, # undef, # 1704063600, # 2024-01-01 00:00
        #text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, voraussichtlich bis Dezember 2023, vermutlich noch länger',
        text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Anfang Mai 2024: Sperrung besteht weiterhin)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1372691.php (bis Dezember 2023, Verzögerungen sind möglich)
 #: by: mapillary
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-05-02 (mapillary)
+# REMOVED (keine Sperrung mehr) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-07-13
 # REMOVED --- #: next_check: 2023-12-31
-	2::inwork 9462,18234 9460,18053
+	2::inwork 9467,18226 9460,18053
 EOF
      },
      { from  => 1699333200, # 2023-11-07 06:00
@@ -42702,11 +42715,18 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
+#: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-05-10 (mapillary) vvv
+#: last_checked: 2024-07-13 vvv
 #: check_frequency: 60d vvv
-	q4::inwork 7948,15802 8048,15829 8140,15859 8187,15965
-	q4::inwork 8164,15840 8140,15859
+#: osm_watch: way id="1156267450" version="6"
+Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
+#: osm_watch: way id="120633718" version="20"
+Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
+#: osm_watch: note 3816582 3
+Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
+#: osm_watch: note 3393893 4
+Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -42876,6 +42896,7 @@ EOF
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-10-15 18:30:00") },
        text  => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 16. April bis zum 15. Oktober (außer Sommerferien) ',
        type  => 'gesperrt',
+       recurring => 1,
        data  => <<EOF,
 	q4::temp::play 9570,10566 9556,10666
 EOF
@@ -43109,6 +43130,7 @@ EOF
        until => $isodate2epoch->("2024-07-25 19:00:00"),
        text  => 'Wassertorstr.: in Höhe Kastanienplatz donnerstags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 04. Juli 2024 bis 25. Juli 2024',
        type  => 'handicap',
+       recurring => 1,
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1445054.php (2024)
 	q4::temp::play 10685,10483 10857,10411
@@ -43147,7 +43169,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.416194,52.57324,21.05.2024,07:00 (bis 12.07.2024) (inaktiv)
-#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024)
+#: source_id: viz2021:13.41849,52.57486,21.05.2024,07:00 (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv) (bis 12.07.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792773059692101800
 #: by: https://pbs.twimg.com/media/GNyKjSnXgAAFhMj?format=jpg&name=large
 	q4::inwork; 11239,18832 11001,18528
@@ -43291,6 +43313,7 @@ EOF
        until => $isodate2epoch->("2024-09-20 18:00:00"),
        text  => 'Armenische Str.: zwischen Ungarnstr. und Sackgassenende am 1. und 3. Freitag im Monat zwischen 15:00 und 18:00 Uhr temporäre Spielstraße, Juni bis September',
        type  => 'handicap',
+       recurring => 1,
        data  => <<EOF,
 	q4::temp::play 7177,16715 7150,16760 7144,16781 7147,16800
 EOF
@@ -43299,6 +43322,7 @@ EOF
        until => 1721426399, # 2024-07-19 23:59
        text  => 'Schustehrusstr.: zwischen Nithackstr. und Kaiser-Friedrich-Str mittwochs von 14 bis 17 Uhr temporäre Spielstraße, vom 14. Juni 2024 bis 19. Juli 2024',
        type  => 'handicap',
+       recurring => 1,
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/spielstrasse-vor-schule_a417921
 	q4::temp::play 3217,12239 3072,12222
@@ -43409,7 +43433,7 @@ EOF
      },
      { from  => 1717909200, # 2024-06-09 07:00
        until => 1722265200, # 2024-07-29 17:00
-       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 10.06.2024 07:00 bis 29.07.2024 17:00',
+       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.07.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024)
@@ -43834,7 +43858,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1811376928051364138
 #: by: https://pbs.twimg.com/media/GSNNci7WMAEH-87?format=jpg&name=large (keine Regelung für den Radverkehr)
 #: note: q4 -> q3, weil der gesperrte Abschnitt sehr kurz ist
-	q4::inwork 7673,15897 7622,15946
+	q4::inwork 7663,15906 7622,15946
 EOF
      },
     );

@@ -120,7 +120,7 @@ Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13712,20919 13909,20928
 Alt-Blankenburg	1 13909,20928 13677,20873 13576,20849
 Seestr.	1 5043,14671 5255,14757 5311,14786 5437,14844
 Seestr.	1 5437,14844 5331,14735 5293,14699 5264,14671 5051,14606
-Waidmannsluster Damm	1 2146,20887 1843,21440 1870,21491 2188,20910
+Waidmannsluster Damm	1 2146,20887 1843,21440 1864,21479 1958,21301 2117,21081 2188,20910
 Flughafen Tegel	1 2809,16143 2757,16194 2696,16271 2720,16353 2800,16368 2839,16337 2853,16293 2809,16143
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2788,14364 2905,14754
@@ -2398,7 +2398,6 @@ Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10512,12039 10550,
 Molkenmarkt: unbequemes Passieren des Mittelstreifens	3nocross 10697,12303 10703,12313 10714,12355 10710,12377
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5341,10756 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
-Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888
 Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3nocross 5524,21034 5596,21043 5819,21057
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14653,15738
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14552,16171 14522,16260 14499,16341
@@ -3788,6 +3787,7 @@ Drängelgitter	BNP:3::trailer=10 3550,810
 Schwingtor	BNP:5::trailer=10 25136,10768
 #: note: zwar überspannt die Schranke nicht die gesamte Fahrbahn, aber die Lücke mit Poller kann zugeparkt sein
 Schranke	BNP:3::trailer=10 13081,14090
+weites Drängelgitter	BNP:2::trailer=7 7157,18810
 #
 #: section ^^^
 ############################################################################
@@ -3922,7 +3922,7 @@ Berolinastr. in Höhe Spielplatz	2::inwork 11870,13024 11862,13027 11857,13014 11
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
-#: last_checked: 2024-07-02 (mapillary) vvv
+#: last_checked: 2024-07-11 (mapillary) vvv
 #: osm_watch: way id="1199463691" version="3"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050
@@ -4229,10 +4229,15 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2024-03-18 (okas)
+#: last_checked: 2024-07-13
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2025-04-15
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
+#
+#: next_check_id: U6-2022
+#: last_checked: 2024-07-13
+#: next_check: 2025-04-15
+Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
 # 
 # REMOVED (kein Gerüst mehr) --- #: next_check_id: U6-2022 --- #: XXX Wie sieht die Situation nach den Bauarbeiten aus? --- #: last_checked: 2022-09-26 (mapillary) --- #: next_check: 2022-11-30 --- Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,17938 3706,17931 3833,17929
 # 
@@ -4464,7 +4469,7 @@ Ruth-Baumgarte-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17738,
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2024-06-22
+#: last_checked: 2024-07-13
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4880,7 +4885,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-07-05
+#: last_checked: 2024-07-13
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
