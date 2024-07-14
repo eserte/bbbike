@@ -1195,7 +1195,7 @@ EOF
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Herbstfest auf der Hauptstraße), Straße gesperrt (13.9.2014 10:00 - 14.9.2014 20:00)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 6687,8385 6733,8441 6765,8480 6912,8617 6986,8683 7005,8701 7105,8788 7201,8870 7239,8907 7268,8960
+	q4; 6687,8385 6733,8441 6765,8480 6912,8617 6986,8683 7005,8701 7051,8741 7105,8788 7201,8870 7239,8907 7268,8960
 EOF
      },
      { from  => 1097618400, # 2004-10-13 00:00
@@ -24855,7 +24855,7 @@ EOF
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 6687,8385 6733,8441 6765,8480 6912,8617 6986,8683 7005,8701 7105,8788 7201,8870 7239,8907 7268,8960
+	q4; 6687,8385 6733,8441 6765,8480 6912,8617 6986,8683 7005,8701 7051,8741 7105,8788 7201,8870 7239,8907 7268,8960
 EOF
      },
      { from  => 1426719600, # 2015-03-19 00:00
@@ -30872,7 +30872,7 @@ EOF
 #: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00 (inaktiv)
 #: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00 (inaktiv)
 #: source_id: viz2021:13.38883,52.5169,08.07.2023,17:00 (bis 08.07.2023) (inaktiv)
-#: source_id: viz2021:13.388916,52.516905,12.07.2024,00:00 (bis 13.07.2024)
+#: source_id: viz2021:13.388916,52.516905,12.07.2024,00:00 (bis 13.07.2024) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1183048455884816386
 #: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
 #: by: https://viz.berlin.de/2023/07/verkehrsvorschau-08_090723/

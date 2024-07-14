@@ -190,6 +190,7 @@ alte Gehwegplatten	RW1; 7986,4808 8014,4832
 	RW3; 7735,9121 7790,9126
 	RW1;RW1 7735,9121 7647,9196 7604,9242 7509,9337
 Poller	RW4; 7471,9360 7509,9337
+	RW3; 7509,9337 7471,9360
 	RW1; 7829,9723 7725,9748 7631,9770 7625,9771
 	RW1; 7625,9771 7631,9770 7725,9748 7829,9723
 Busspur ist nicht für Radfahrer freigegeben	RW1; 7829,9723 7906,9703
@@ -342,7 +343,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-07-11 vvv
+#: last_checked: 2024-07-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1978,25 +1979,34 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 geschützter Radstreifen	RW4; 5363,8024 5472,8024 5522,8024 5570,8024
 	RW3; 5570,8024 5632,8024
 # 
-# REMOVED (zumindest an der Kolonnenstr. ist nichts mehr) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/bauarbeiten-auf-der-hauptstrasse_a310431 (Länge der Baustelle 300m, Dauer ein halbes Jahr, kein Startdatum) --- #: source_id: 2147347198 (Markierungsarbeiten bis 20.5.2021) (inaktiv) --- #: source_id: 2147347199 (bis 31.1.2022) --- #: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 31.1.2022) (mittlerweile bis 17.2.2022) (mittlerweile bis 1.4.2022) --- #: last_checked: 2021-09-05 --- #: next_check: 2022-02-17 --- #: XXX Hauptstr.: Bauarbeiten der Wasserbetriebe, die östliche Fahrbahn ist gesperrt --- temporäre Radspuren	RW4;RW4 7471,9360 7430,9281 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7299,9022 7268,8960
+# REMOVED (zumindest an der Kolonnenstr. ist nichts mehr) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/bauarbeiten-auf-der-hauptstrasse_a310431 (Länge der Baustelle 300m, Dauer ein halbes Jahr, kein Startdatum) --- #: source_id: 2147347198 (Markierungsarbeiten bis 20.5.2021) (inaktiv) --- #: source_id: 2147347199 (bis 31.1.2022) --- #: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 31.1.2022) (mittlerweile bis 17.2.2022) (mittlerweile bis 1.4.2022) --- #: last_checked: 2021-09-05 --- #: next_check: 2022-02-17 --- #: XXX Hauptstr.: Bauarbeiten der Wasserbetriebe, die östliche Fahrbahn ist gesperrt --- temporäre Radspuren	RW4;RW4 7471,9360 7430,9281 7388,9199 7382,9187 7363,9152 7354,9135 7326,9078 7308,9041 7299,9022 7268,8960
 #: note: Hauptstr. Richtung Steglitz
-Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7471,9360 7430,9281 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7299,9022 7268,8960
-Busspur ist immer gültig	RW5; 7268,8960 7239,8907 7201,8870
-Busspur gilt Mo-Fr 7-18 Uhr	RW5; 7201,8870 7105,8788 7005,8701 6986,8683 6912,8617 6765,8480 6733,8441 6687,8385
+#: historical_note: früher (bis 2024) Busspur gilt Mo-Fr 7-18 Uhr, stellenweise auch: Busspur ist immer gültig, RW5 vvv
+Leitboys	RW3; 7471,9360 7430,9281 7388,9199 7382,9187 7363,9152 7354,9135 7326,9078
+Bushaltestelle	RW5; 7326,9078 7308,9041 7299,9022
+Leitboys	RW4; 7299,9022 7268,8960
+#: note: am Anfang noch ein paar Leitboys
+Bushaltestelle	RW5; 7268,8960 7239,8907 7201,8870
+Leitboys	RW3; 7201,8870 7105,8788 7051,8741
+Bushaltestelle	RW5; 7051,8741 7005,8701
+	RW3; 7005,8701 6986,8683
+Leitboys	RW3; 6986,8683 6912,8617 6765,8480
+Bushaltestelle	RW5; 6765,8480 6733,8441 6687,8385
+#: historical_note ^^^
 #: note: Hauptstr. Richtung Mitte
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6687,8385 6733,8441
 #: historical_note: früher (bis Frühjahr 2024): Busspur gilt Mo-Fr 7-18 Uhr vvv
 Leitboys	RW4; 6733,8441 6765,8480 6912,8617
 Bushaltestelle	RW5; 6912,8617 6986,8683
 	RW4; 6986,8683 7005,8701
-Leitboys	RW4; 7005,8701 7105,8788 7201,8870
+Leitboys	RW4; 7005,8701 7051,8741 7105,8788 7201,8870
 #: historical_note ^^^
-Busspur ist immer gültig	RW5; 7201,8870 7239,8907
+Bushaltestelle	RW5; 7201,8870 7239,8907
 #: historical_note: früher: Busspur ist immer gültig, RW5;
-	RW4; 7239,8907 7268,8960
+Poller	RW4; 7239,8907 7268,8960
 #: historical_note: früher (bis Frühjahr 2024): Busspur gilt Mo-Fr 7-18 Uhr vvv
 provisorische asphaltierte Kaphaltestelle	RW1; 7268,8960 7299,9022
-Leitboys	RW3; 7299,9022 7308,9041 7354,9135 7363,9152 7382,9187 7388,9199 7430,9281
+Leitboys	RW3; 7299,9022 7308,9041 7326,9078 7354,9135 7363,9152 7382,9187 7388,9199 7430,9281
 Busspur ist immer gültig	RW5; 7430,9281 7471,9360
 #: historical_note ^^^
 # 
@@ -7094,7 +7104,7 @@ zusammen mit Bushaltestelle	RW3; 8715,7384 8713,7423
 Radspur hinter den parkenden Autos	RW4; 8713,7423 8706,7585 8704,7603 8690,7704
 #: next_check_id: BOELCKE-2023
 #: XXX ist das nur provisorisch?
-#: last_checked: 2024-07-07
+#: last_checked: 2024-07-14
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-30
 semi-provisorischer asphaltierter Haltestellenkap	RW1; 8690,7704 8686,7726
@@ -7884,7 +7894,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-07-03
+#: last_checked: 2024-07-14
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2024-08-30
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -7893,7 +7903,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
-#: last_checked: 2024-07-03 vvv
+#: last_checked: 2024-07-14 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2024-06-09 vvv
 #XXX	RW4; 10975,10334 10871,10322
@@ -8286,7 +8296,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-07-03 vvv
+#: last_checked: 2024-07-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv)

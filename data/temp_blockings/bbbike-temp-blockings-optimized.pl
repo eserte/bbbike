@@ -4579,45 +4579,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (G,H)
-#: source_id: 2147344351 (inaktiv)
-#: source_id: 2147344352 (inaktiv)
-#: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00 (inaktiv)
-#: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00 (inaktiv)
-#: source_id: viz2021:13.38883,52.5169,08.07.2023,17:00 (bis 08.07.2023) (inaktiv)
-#: source_id: viz2021:13.388916,52.516905,12.07.2024,00:00 (bis 13.07.2024)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1183048455884816386
-#: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
-#: by: https://viz.berlin.de/2023/07/verkehrsvorschau-08_090723/
-#: by: https://berliner-abendblatt.de/berlin-news/staatsoper-fuer-alle-unter-freiem-himmel-id226575
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240711
-#: by: https://www.staatsoper-berlin.de/de/spielplan/staatsoper-fuer-alle-2024/
-	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
-	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
-	2::temp 9664,12387 9680,12232
-	2::temp 9737,12238 9702,12307 9664,12387
-	2::temp 9680,12232 9702,12307 9713,12392
-	3 10291,12600 10300,12587 10363,12535
-	3 10102,12384 10063,12438 9956,12617
-	3 9873,12315 9858,12410 9846,12516
-	3 9953,12533 9984,12426 9990,12404
-	3 10363,12535 10300,12587 10291,12600
-	3 9956,12617 10063,12438 10102,12384
-	3 9990,12404 9984,12426 9953,12533
-	3 9846,12516 9858,12410 9873,12315
-#: note: Sperrung des Bebelplatzes
-Bebelplatz	2::temp 9664,12387 9680,12232
-Bebelplatz	2::temp 9713,12392 9730,12238
-Bebelplatz, diagonal über den Platz	2::temp 9737,12238 9702,12307 9664,12387
-Bebelplatz, diagonal über den Platz	2::temp 9680,12232 9702,12307 9713,12392
-',
-         'from' => 1720710000,
-         'id' => 3172,
-         'text' => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 12.7.2024 17:00 bis 23:30 Uhr sowie 13.7.2024 17:30 bis 21:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1720899000
-       },
+       undef,
        undef,
        undef,
        undef,

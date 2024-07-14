@@ -367,7 +367,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9330 (Antrag)
 #: osm_watch: way id="306702294" version="26"
 # REMOVED (closed) --- #: osm_watch: note 4003302 1
-#: last_checked: 2024-05-28 vvv
+#: last_checked: 2024-07-14 vvv
 #: check_frequency: 30d vvv
 #: historical_note: früher (bis Herbst/Winter 2023): mäßiges, teils schlechtes Kopfsteinpflaster, bergab waren 17 km/h möglich, Q3 bzw Q3+
 Torgauer Str.: Asphalt, letzte Deckschicht fehlt	Q1+ 7225,8219 7158,8208 7014,8165 7001,8161
@@ -13446,7 +13446,7 @@ Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 1
 Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2024-07-06 vvv
+#: last_checked: 2024-07-14 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
@@ -28997,10 +28997,12 @@ Klingenhofer Steig: Asphalt	Q0 -3554,16849 -3564,17007 -3567,17137
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.837073.php (Beginn der Straßenbauarbeiten voraussichtlich im Juni 2021)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022)
 #: osm_watch: way id="27493508" version="20"
-#: osm_watch: way id="1149416827" version="8"
-#: last_checked: 2024-03-08 (Luftbilder) (Bauarbeiten zu sehen)
+#: osm_watch: way id="1149416827" version="9"
+#: last_checked: 2024-03-08 (Luftbilder) (Bauarbeiten im westlichen Abschnitt zu sehen)
 #: check_frequency: 90d
-Hauptstr. (Staaken): überasphaltiertes Kopfsteinpflaster, teilweise ist der Asphalt löchrig oder fehlt völlig	Q2 -7550,13528 -7847,13604 -7879,13613 -7884,13614
+Hauptstr. (Staaken): überasphaltiertes Kopfsteinpflaster, teilweise ist der Asphalt löchrig oder fehlt völlig	Q2 -7550,13528 -7847,13604
+#: corrected_by: osm (überasphaltiertes Kopfsteinpflaster, teilweise ist der Asphalt löchrig oder fehlt völlig, Q2 -> ...)
+Hauptstr. (Staaken): Asphalt	Q0 -7847,13604 -7879,13613 -7884,13614
 #: confirmed_by: srt
 Gummiweg: fester Sandweg	Q1- -7879,13613 -7917,13505 -7971,13467
 #: confirmed_by: srt
