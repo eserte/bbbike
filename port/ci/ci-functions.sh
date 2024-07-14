@@ -126,6 +126,7 @@ init_apt() {
 # - poppler-utils:          provides pdfinfo for testing
 # - tzdata:                 t/geocode_images.t needs to set TZ
 # - libgif-dev:             required for GIF support when building Imager
+# - curl:                   make sure it's available for downloading cpm
 install_non_perl_dependencies() {
     if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "buster" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
     then
@@ -161,6 +162,13 @@ install_non_perl_dependencies() {
 	cpanminus_package=
     fi
 
+    if [ "$CPAN_INSTALLER" = "cpm" ]
+    then
+	cpm_dep_packages=curl
+    else
+	cpm_dep_packages=
+    fi
+
     if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]
     then
 	freebsdmake_package=freebsd-buildutils
@@ -182,7 +190,7 @@ install_non_perl_dependencies() {
 	imager_ext_packages=
     fi
 
-    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package $imager_ext_packages
+    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package $cpm_dep_packages $imager_ext_packages
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver
@@ -386,28 +394,18 @@ install_perl_dependencies() {
 	    # if the TRAVIS environment variable is set, so unset it here.
 	    TRAVIS= cpanm --quiet --installdeps --notest .
 	else
-	    # install cpm; and install also https support for LWP because of
-	    # https://github.com/miyagawa/cpanminus/issues/519
-	    #
-	    # 0.293 needed for
-	    # * better diagnostics
-	    # * https://github.com/skaji/cpm/issues/42 (optional core modules)
-	    #
-	    # In the process EUMM would be upgraded, but the current latest stable
-	    # is broken (see https://rt.cpan.org/Ticket/Display.html?id=121924), so
-	    # use another one.
-	    #
-	    # PERL_CPM_OPT can be defined, for example to set --sudo if needed
-	    cpanm --quiet --notest 'ExtUtils::MakeMaker~!=7.26' 'App::cpm~>=0.293' LWP::Protocol::https
-	    perl Makefile.PL
-	    mymeta-cpanfile > cpanfile~ && mv cpanfile~ cpanfile
-	    # implement suggestion for more diagnostics in case of failures
-	    # https://github.com/skaji/cpm/issues/51#issuecomment-261754382
-	    #
+	    if ! which cpm >/dev/null 2>&1
+	    then
+	        # https://github.com/skaji/cpm?tab=readme-ov-file#install
+	        # + and install cpm in /usr/local/bin, so it's in PATH
+	        curl -fsSL https://raw.githubusercontent.com/skaji/cpm/main/cpm > /tmp/cpm
+	        sudo cp /tmp/cpm /usr/local/bin/cpm
+	        sudo chmod +x /usr/local/bin/cpm
+	    fi
+	    cpm --version
 	    # There is at least Apache::Session which adds unwanted dependencies
 	    # if the TRAVIS environment variable is set, so unset it here.
 	    if ! TRAVIS= cpm $PERL_CPM_OPT install -g -v; then cat ~/.perl-cpm/build.log; false; fi
-	    rm cpanfile
 	fi
     fi
 }
