@@ -3828,7 +3828,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-15
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4021,7 +4021,7 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: MARIENUFER-2023
-#: osm_watch: way id="1272560911" version="1"
+#: osm_watch: way id="1272560911" version="2"
 #: last_checked: 2024-07-10
 #: check_frequency: 120d
 #: next_check: 2026-12-31
@@ -4294,8 +4294,8 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv
 # REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17"
 # REMOVED (gelöscht) --- #: osm_watch: way id="897616703" version="2"
-#: osm_watch: way id="1110732558" version="14"
-#: osm_watch: way id="325319592" version="14"
+#: osm_watch: way id="1110732558" version="15"
+#: osm_watch: way id="325319592" version="15"
 #: priority: #A
 #: last_checked: 2023-08-13 (mapillary)
 # REMOVED --- #: check_frequency: 60d
@@ -4855,20 +4855,20 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2024-07-09
+#: last_checked: 2024-07-15
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-07-07 (webcam)
+#: last_checked: 2024-07-15 (webcam)
 #: check_frequency: 60d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-07-09
+#: last_checked: 2024-07-15
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 

@@ -1798,7 +1798,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        {
          'data' => '#: source_id: IM_013591 (inaktiv)
 #: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024)
-#: source_id: viz2021:13.360599,52.446803,11.07.2024,14:26 (Einschränkung in der anderen Richtung, bis 01.10.2024)
+#: source_id: viz2021:13.360599,52.446803,11.07.2024,14:26 (Einschränkung in der anderen Richtung, bis 01.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024) (bis 11.07.2024)
 #: source_id: bvg2024:282#HIM_FREETEXT_230965 (bis 31.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
@@ -7711,20 +7711,21 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Kleine Querallee, Überquerung	3 8391,12389 8344,12221 8327,12174
 Kleine Querallee, Überquerung	3 8327,12174 8344,12221 8391,12389
-#: note: zwischenzeitlich q3::temp
-Ebertstr.	2::temp 8540,12420 8573,12325
+#: note: zwischenzeitlich q3::temp, dann gesperrt
+Ebertstr.	q3::temp 8540,12420 8573,12325
 Ebertstr.	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-#: note: zwischenzeitlich waren hier wenigstens die Bürgersteige passierbar
-Ebertstr.	2::temp 8600,12165 8595,12066
-Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
+#: note: zwischenzeitlich waren hier wenigstens die Bürgersteige passierbar, dann komplett gesperrt
+Ebertstr.	q3::temp 8600,12165 8595,12066
+# REMOVED (vermutlich nicht mehr) --- Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-07-12 (webcam)
-#: check_frequency: 7d
-#: next_check: 2024-07-15
-Brandenburger Tor	2::temp 8538,12245 8592,12252 8637,12258
-Pariser Platz	2::temp 8637,12258 8722,12268
+#: last_checked: 2024-07-15 (webcam)
+#: check_frequency: 3d
+#: next_check: 2024-07-26
+Brandenburger Tor	2::temp 8538,12245 8592,12252
+# REMOVED --- Brandenburger Tor	2::temp 8592,12252 8637,12258
+# REMOVED --- Pariser Platz	2::temp 8637,12258 8722,12268
 Pariser Platz	2::temp 8722,12268 8728,12220 8705,12217
 Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
 Ahornsteig - Brandenburger Tor	2::temp 8522,12187 8538,12245
@@ -7733,19 +7734,20 @@ Yitzhak-Rabin-Str.: nach 60m von der Heinrich-von-Gagern-Str. komplett gesperrt	
 Heinrich-von-Gagern-Str.: westlicher Bürgersteig ist passierbar	q4::temp 8119,12414 8122,12603
 Paul-Löbe-Allee	2::temp 8306,12609 8207,12606
 Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
-#: note: Tiergarten östlich Bellevueallee gesperrt
-	2::temp 8571,11846 8501,11815 8244,11878 8221,11876 8221,11885 8244,11878 8327,12174 8466,12197
-	2::temp 8214,12205 8215,12156 8122,12147 8107,12068 8099,12058 8102,12043 8099,12022 8091,12023 8091,12011 8091,11992 8104,11984 8095,11919 8020,11937 8022,12016
-	2::temp 8122,12147 8049,12140 8055,12186 7816,12150 7383,12095
-	2::temp 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
-	2::temp 7429,12070 7775,12114 7772,12040 7717,11918
-	2::temp 8522,12187 8453,12099 8262,11883
-	2::temp 8221,11690 8210,11775 8221,11876 8167,11865 8132,11910 8221,11885 8215,12156
-	2::temp 8026,11764 8140,11850
-	2::temp 8327,12174 8344,12221
-	2::temp 7816,12150 7823,12120 7832,12036 7822,11952 7793,11878
-	2::temp 8210,11775 8172,11679
-	2::temp 8020,11937 8016,11770
+# REMOVED (vermutlich nicht mehr)
+##: note: Tiergarten östlich Bellevueallee gesperrt
+#	2::temp 8571,11846 8501,11815 8244,11878 8221,11876 8221,11885 8244,11878 8327,12174 8466,12197
+#	2::temp 8214,12205 8215,12156 8122,12147 8107,12068 8099,12058 8102,12043 8099,12022 8091,12023 8091,12011 8091,11992 8104,11984 8095,11919 8020,11937 8022,12016
+#	2::temp 8122,12147 8049,12140 8055,12186 7816,12150 7383,12095
+#	2::temp 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
+#	2::temp 7429,12070 7775,12114 7772,12040 7717,11918
+#	2::temp 8522,12187 8453,12099 8262,11883
+#	2::temp 8221,11690 8210,11775 8221,11876 8167,11865 8132,11910 8221,11885 8215,12156
+#	2::temp 8026,11764 8140,11850
+#	2::temp 8327,12174 8344,12221
+#	2::temp 7816,12150 7823,12120 7832,12036 7822,11952 7793,11878
+#	2::temp 8210,11775 8172,11679
+#	2::temp 8020,11937 8016,11770
 ',
          'from' => 1714860000,
          'id' => 4053,
@@ -8012,14 +8014,15 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'data' => '#: note: Länge der Einbahnstraßenregelung etwa 80m; außerdem ist auch die Inselstraße Einbahnstraße, hier aber für Radfahrer frei
 #: note: Halteverbotsschilder bis 17.07.2024
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2024-07-03 (mapillary)
-#: check_frequency: 30d
-#: next_check: 2024-07-17
+#: last_checked: 2024-07-15
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-07-17
 	q3::inwork; 10908,11908 10722,11816
 ',
          'from' => undef,
          'id' => 4084,
-         'text' => 'Wallstr.: Bauarbeiten, zwischen Inselstr. und Neue Roßstr. Richtung Westen gesperrt, vermutlich bis Mitte Juli 2024',
+         'text' => 'Wallstr.: Bauarbeiten, zwischen Inselstr. und Neue Roßstr. Richtung Westen gesperrt, vermutlich bis Mitte Juli 2024, evtl. wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8050,7 +8053,8 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1725660000
        },
        {
-         'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024)
+         'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
+#: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
 #: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
 	q3::inwork; 5476,20372 5801,20339
@@ -8118,7 +8122,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-07-09 vvv
+#: last_checked: 2024-07-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8262,6 +8266,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462538.php (Widerspruch: "nie vollständig gesperrt" & "temporäre Umleitung")
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/weverpromenade-wird-erneuert_a420569
 #: XXX Nach den Bauarbeiten bessere Qualität & der mudways-Eintrag kann wohl erstmal entfernt werden.
 #: osm_watch: way id="26158804" version="25"
 #: next_check: 2024-10-08
@@ -8381,6 +8386,18 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
          'text' => 'Maxstr.: Anbindung Seestr. wegen Bauarbeiten gesperrt, vom 11.07.2024 14:23 bis 09.08.2024 17:00',
          'type' => 'handicap',
          'until' => 1723215600
+       },
+       {
+         'data' => '#: next_check_id: SCHILDOWER-2024
+#: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
+#: next_check: 2025-04-15
+	q4::inwork 4614,24233 4510,24170 4425,24067
+',
+         'from' => 1721512800,
+         'id' => 4116,
+         'text' => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Gertrudstr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 22. Juli 2024',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
