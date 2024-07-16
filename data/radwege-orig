@@ -39,12 +39,7 @@
 #
 #: temporary vvv
 # 
-#: next_check_id: FAHLENBERGBRUECKE-2022
-#: note: Umfahrung Fahlenbergbrücke
-#: note: laut mapillary Benutzungspflicht (bzw. Verbot für Radfahrer auf der Fahrbahn)
-#: last_checked: 2023-08-13 (mapillary)
-#: next_check: 2024-07-31
-provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
+# REMOVED (nicht mehr ausgeschildert) --- #: next_check_id: FAHLENBERGBRUECKE-2022 --- #: note: Umfahrung Fahlenbergbrücke --- #: note: laut mapillary Benutzungspflicht (bzw. Verbot für Radfahrer auf der Fahrbahn) --- #: last_checked: 2024-07-14 (mapillary) --- #: next_check: 2024-07-31 --- provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: last_checked: 2024-07-03
@@ -938,10 +933,10 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8542,11502 8548,11571 8553,11
 für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11630 8548,11571
 	RW1; 8548,11571 8542,11502
 # REMOVED --- #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren --- #: source_id: 2147345481 (vermutlich inaktiv) --- #: source_id: 2147345753 (vermutlich inaktiv) --- #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023) (bis 30.08.2024) --- #: last_checked: 2023-01-05 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2023-06-30 vvv
-	RW4; 10685,12422 10644,12469 10601,12521
-	RW4; 10601,12521 10644,12469 10685,12422
+	RW4; 10687,12421 10646,12470 10599,12526
+	RW4; 10599,12526 10646,12470 10687,12421
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-	RW4;RW4 10601,12521 10542,12587 10431,12709
+	RW4;RW4 10599,12526 10542,12587 10431,12709
 # 
 #: note: Frankfurter Allee ab Möllendorffstr. Richtung Westen
 	RW3; 15361,12071 15110,12107
@@ -969,7 +964,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-06-28
+#: last_checked: 2024-07-16
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -2132,28 +2127,20 @@ provisorische Radspur	RW4; 10574,12131 10550,12096 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/umbau-des-molkenmarktes-beginnt-mit-stauchaos-und-baumfaellungen_a197140
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: by: https://twitter.com/VIZ_Berlin/status/1369264298120388614 (Umstellung der Baustelle ab 2021-03-09)
-# REMOVED --- #: osm_watch: way id="882672444" version="6"
-#: osm_watch: way id="82654055" version="21"
+# REMOVED --- #: osm_watch: way id="882672444" version="6" --- #: osm_watch: way id="82654055" version="21"
+# REMOVED --- #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten? --- checked: 2024-07-15 vvv --- # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255 --- # REMOVED (siehe oben) --- provisorische Radspur	RW4; 10574,12131 10625,12206 10646,12234 --- #: last_checked ^^^
+# REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10716,12382 10722,12349 10703,12313 10697,12303 10662,12255 10646,12234 10625,12206
 #: source_id: 2147343632 (bis Mitte 2023) (inaktiv)
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
-#: priority: #A vvv
-#: check_frequency: 90d vvv
-#: next_check: 2024-08-30 vvv
-#: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2024-07-15 vvv
-# REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10646,12234 10662,12255
-# REMOVED (siehe oben) --- provisorische Radspur	RW4; 10574,12131 10625,12206 10646,12234
-#: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
-# REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10710,12377 10714,12355 10703,12313 10697,12303 10662,12255 10646,12234 10625,12206
-#: last_checked: 2024-04-21
+#: osm_watch: way id="81112790" version="25"
+#: last_checked: 2024-07-10 (mapillary)
+#: check_frequency: 90d
+#: next_check: 2024-08-30
 provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
-#: next_check ^^^
-#: check_frequency ^^^
-#: priority ^^^
 # 
 #: historical_note: bis 2024-06-13 provisorische Radspur, RW4;
-asphaltiert	RW2; 10697,12303 10703,12313 10714,12355 10710,12377 10685,12422
+asphaltiert	RW2; 10697,12303 10703,12313 10722,12349 10716,12382 10687,12421
 # 
 #: note: Benutzungspflicht "per Fortsetzung"
 #: note: es wird suggeriert, dass Radfahrer Richtung Stralauer Str. bereits auf dem Gehweg abbiegen dürfen
@@ -2163,7 +2150,7 @@ asphaltiert, relativ breit	RW2; 10646,12234 10662,12255 10697,12303
 	RW4; 10746,12364 10807,12451 10838,12496
 provisorische Radspur	RW4; 10838,12496 10849,12557
 # 
-asphaltiert	RW2; 10685,12422 10710,12377 10714,12355 10703,12313 10697,12303
+asphaltiert	RW2; 10687,12421 10716,12382 10722,12349 10703,12313 10697,12303
 # 
 Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847 10314,11804 10299,11786
@@ -2178,8 +2165,8 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 	RW4; 11055,12717 11013,12684
 #: note: Fahrbahn mit Radfahren-verboten-Schild
 Lieferstraße	RW10; 11013,12684 10950,12640
-asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10685,12422
-asphaltiert	RW2; 10685,12422 10783,12502
+asphaltiert	RW2; 10950,12640 10873,12577 10849,12557 10783,12502 10687,12421
+asphaltiert	RW2; 10687,12421 10783,12502
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: also_indoor: webcam https://molkenmarkt01.hi-res-cam.com/ --- #: last_checked: 2024-06-25 --- #: next_check: 2023-08-25
 asphaltiert	RW2; 10783,12502 10849,12557 10873,12577
 asphaltiert	RW2; 10873,12577 10951,12637
@@ -3293,7 +3280,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="12"
 #: osm_watch: way id="420112509" version="13"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2024-07-09 vvv
+#: last_checked: 2024-07-16 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -8314,7 +8301,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.40304,52.49845,28.02.2024,07:00 (bis 15.04.2024) (inaktiv)
 #: source_id: viz2021:13.401157,52.498364,06.10.2021,08:00 (bis 29.03.2024) (bis 15.04.2024) (bis 28.02.2024) (inaktiv)
 #: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024) (bis 31.12.2024)
-#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (Gitschiner/Alexandrinenstr., bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024)
+#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (Gitschiner/Alexandrinenstr., bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"

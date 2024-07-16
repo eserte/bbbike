@@ -517,28 +517,8 @@ Minna-Todenhagen-Brücke - Köpenicker Landstr: zusätzliche Ampel	DH:t=20 16834,69
 # REMOVED --- #: valid: -20241231
 Alt-Friedrichsfelde: Umweg über einen asphaltierten Notweg, kurvig	DH:len=34:h=q1,341 19092,11776 19389,11761
 # 
-#: source_id: viz2021:13.492436,52.558772,17.10.2023,07:00 (bis 04.03.2024) (bis 18.04.2024) (bis 17.06.2024) (bis 19.06.2024) (inaktiv)
-#: note: außerdem besteht im Baustellenbereich Benutzungspflicht auf dem Radweg Richtung Hohenschönhausen
-#: last_checked: 2024-05-29 (mapillary) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2024-06-19 vvv
-#: valid: -20240619 vvv
-Hansastr.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:tl:len=30 16525,17253 16460,17214 16352,17150
-Hansastr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:tl:len=30 16296,17114 16139,17017 15986,16922
-#: valid ^^^
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
-# REMOVED --- #: next_check_id: RUSCHEAMPEL-2024
-# REMOVED --- #: next_check: 2024-05-02 vvv
-# REMOVED --- #: valid: -20240502 vvv
-# REMOVED --- Bornitzstr.: Umweg über Netto-Parkplatz	DH:len=100 15747,12880 15950,12886 16073,12883
-# REMOVED --- Bornitzstr.: Umweg über Gehweg/Parkplatz	DH:len=60:h=q3,60 16073,12883 15950,12886 15747,12880
-# REMOVED --- Ruschestr. -> Bornitzstr.: über Parkplatz/Gehweg	DH:h=q3,60 15912,13153 15950,12886 16073,12883
-# REMOVED --- Bornitzstr. -> Ruschestr.: über Gehweg/Parkplatz	DH:h=q3,60 16073,12883 15950,12886 15912,13153
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
+# REMOVED --- #: source_id: viz2021:13.492436,52.558772,17.10.2023,07:00 (bis 04.03.2024) (bis 18.04.2024) (bis 17.06.2024) (bis 19.06.2024) (inaktiv) --- #: note: außerdem besteht im Baustellenbereich Benutzungspflicht auf dem Radweg Richtung Hohenschönhausen --- #: last_checked: 2024-07-16 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2024-06-19 vvv --- #: valid: -20240619 vvv --- Hansastr.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:tl:len=30 16525,17253 16460,17214 16352,17150 --- Hansastr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:tl:len=30 16296,17114 16139,17017 15986,16922 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED --- #: next_check_id: RUSCHEAMPEL-2024 --- #: next_check: 2024-05-02 vvv --- #: valid: -20240502 vvv --- Bornitzstr.: Umweg über Netto-Parkplatz	DH:len=100 15747,12880 15950,12886 16073,12883 --- Bornitzstr.: Umweg über Gehweg/Parkplatz	DH:len=60:h=q3,60 16073,12883 15950,12886 15747,12880 --- Ruschestr. -> Bornitzstr.: über Parkplatz/Gehweg	DH:h=q3,60 15912,13153 15950,12886 16073,12883 --- Bornitzstr. -> Ruschestr.: über Gehweg/Parkplatz	DH:h=q3,60 16073,12883 15950,12886 15912,13153 --- #: valid ^^^ --- #: next_check ^^^
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782634252464541935

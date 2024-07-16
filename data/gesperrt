@@ -2179,11 +2179,11 @@ Rolandufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10512,12039 10550,12096 10574,12131
 Mühlendamm -> Fischerinsel, Spreeufer: unbequemes Passieren des Mittelstreifens	3::igndisp 10574,12131 10550,12096 10562,12087
 Fischerinsel, Spreeufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10562,12087 10550,12096 10512,12039
-unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10697,12303 10703,12313 10714,12355 10710,12377
+unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10697,12303 10703,12313 10722,12349 10716,12382
 Spandauer Str. -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10697,12303 10703,12313 10671,12356
-Eiergasse -> Spandauer Str.: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10703,12313 10714,12355
-Spandauer Str. -> Spandauer Str. (Mitte) [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10703,12313 10714,12355 10665,12413
-Spandauer Str. (Mitte) [Gehweg] -> Spandauer Str.: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10714,12355 10710,12377
+Eiergasse -> Spandauer Str.: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10703,12313 10722,12349
+Spandauer Str. -> Spandauer Str. (Mitte) [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10703,12313 10722,12349 10665,12413
+Spandauer Str. (Mitte) [Gehweg] -> Spandauer Str.: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10722,12349 10716,12382
 unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,10711 5341,10756 5475,10808
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5341,10756 5313,10420
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5313,10420 5341,10756 5215,10711
@@ -3468,7 +3468,6 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,2
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
-(Clara-Müller-Jahnke-Str. - Einkaufszentrum Lagunenweg): gibt es nach den Bauarbeiten hier eine Durchwegung?	2::inwork 31799,3192 31762,3202
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
 Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699

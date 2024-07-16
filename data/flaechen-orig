@@ -179,6 +179,7 @@ Spreewaldplatz	F:P 12292,10374 12243,10274 12341,10218 12292,10374
 #: by: https://berliner-abendblatt.de/berlin-news/im-goerlitzer-park-nun-bus-fuer-drogenkonsum-postiert-id256663 (Bau der Eingangstore ab Ende September 2024)
 #: by: https://berliner-abendblatt.de/berlin-news/zaun-um-goerlitzer-park-bezirk-scheitert-vor-gericht-id257192
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/klage-gegen-zaun-gescheitert_a420802
+#: by: https://berliner-abendblatt.de/berlin-news/streit-um-zaun-am-goerlitzer-park-geht-vor-gericht-weiter-id257748
 #: XXX Werden die Wege nachts (genaue Schließzeiten?) abgeschlossen sein? Oder wird das nur situationsbedingt (wann?) passieren?
 #: XXX Neue Lampen werden geplant -> nolighting-Einträge ggfs. prüfen.
 #: priority: #A
@@ -1483,7 +1484,7 @@ Friedhof Wartenberg	F:Cemetery 18073,18918 18061,18922 18042,18851 18081,18836 1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_44_4149_4196_online.pdf (Benennung)
 #: osm_watch: way id="51691170" version="10"
 #: XXX "Platz an den Drei Grazien": Werden hier entsprechende Straßenschilder aufgehängt? (bei osm wurde schon der neue Name eingetragen)
-#: last_checked: 2024-07-09
+#: last_checked: 2024-07-16
 Generationenpark	F:P 13434,15045 13516,14997 13548,14980 13556,14993 13524,15009 13536,15033 13455,15078 13434,15045
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1330765.php
 Sportplatz am Bildungscampus Schöneberger Linse	F:Sport 7255,8148 7362,8137 7356,8068 7250,8079 7255,8148
@@ -1497,7 +1498,7 @@ Franz-Mehring-Platz	F:P 12822,12067 12758,11915 12788,11898 12891,12008 12822,12
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_52_4789_4920_online.pdf (Benennung einer öffentlichen Grünanlage, tatsächlich ohne Bindestrich?)
 #: osm_watch: way id="759545001" version="4"
 #: XXX neuer Name: "Riwne Platz" (tatsächlich ohne Bindestrich?); bei osm schon eingetragen mit start_date:name=2023-11-24, hier mit Bindestrich
-#: last_checked: 2024-07-09
+#: last_checked: 2024-07-16
 #: check_frequency: 60d
 	F:P 13546,15464 13604,15430 13540,15329 13479,15361 13546,15464
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_30_3225_3284_online.pdf (Widmung als Grünanlage)
@@ -1902,7 +1903,7 @@ Hauptwerkstatt Schöneweide	F:Industrial 19234,4326 19249,4310 19416,4460 19484,
 ehem. Osthafen	F:Industrial 13922,10462 14459,10204 14456,10168 14481,10142 14558,10264 14405,10340 14218,10430 14103,10489 13986,10549 13919,10583 13865,10606 13850,10612 13779,10642 13700,10676 13678,10685 13633,10705 13596,10722 13573,10731 13544,10644
 # REMOVED (eigentlich keine Grünanlage) --- Charité	F:P 8368,13556 8396,13507 8381,13467 8431,13332 8358,13296 8418,13142 8535,12967 8578,13020 8632,13037 8701,13058 8665,13353 8648,13498 8611,13494 8601,13584 8548,13577 8532,13642 8453,13611
 Invalidenfriedhof	F:Cemetery 8101,13901 8227,13974 8200,14016 8180,14063 8094,14055 8058,14123 8000,14089
-Marx-Engels-Forum	F:P 10405,12384 10601,12521 10542,12587 10431,12709 10359,12634 10280,12573
+Marx-Engels-Forum	F:P 10405,12384 10599,12526 10542,12587 10431,12709 10359,12634 10280,12573
 (Sportplatz)	F:Sport 9808,13590 9750,13512 9785,13448 9822,13460 9815,13479 9835,13486 9853,13511 9853,13511 9871,13540
 Lustgarten	F:P 10024,12431 10063,12438 10152,12491 10176,12506 10094,12635 10054,12699 10017,12675 9948,12631 9932,12620 9988,12513
 Berl. Innovations- u. Gründerzentrum	F:Industrial 9034,14910 9182,14987 9355,15078 9566,15188 9540,15238 9443,15430 9363,15388 9138,15278 8929,15176 8899,15147

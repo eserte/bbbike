@@ -56,14 +56,14 @@ Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
 #: valid: -20240812
 Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
 # 
-#: source_id: viz2021:13.533233,52.421662,28.02.2024,12:14 (bis 31.05.2024) (inaktiv)
-#: source_id: viz2021:13.53226,52.421897,17.06.2024,10:00 (bis 15.07.2024) (bis 16.07.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1802597047226581013
-#: by: https://pbs.twimg.com/media/GQCNH8OWIAAiTlR?format=jpg&name=large
-#: note: bei rbb bis 01.07.2024 verlängert, mittlerweile entfernt
-#: next_check: 2024-07-16
-#: valid: -20240716
-Rudower Str.: Gegenverkehrsregelung östlich der Dorothea-Viehmann-Str.	X::inwork::alternating 19266,1968
+# REMOVED --- #: source_id: viz2021:13.533233,52.421662,28.02.2024,12:14 (bis 31.05.2024) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.53226,52.421897,17.06.2024,10:00 (bis 15.07.2024) (bis 16.07.2024) (inaktiv)
+# REMOVED --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1802597047226581013
+# REMOVED --- #: by: https://pbs.twimg.com/media/GQCNH8OWIAAiTlR?format=jpg&name=large
+# REMOVED --- #: note: bei rbb bis 01.07.2024 verlängert, mittlerweile entfernt
+# REMOVED --- #: next_check: 2024-07-16
+# REMOVED --- #: valid: -20240716
+# REMOVED --- Rudower Str.: Gegenverkehrsregelung östlich der Dorothea-Viehmann-Str.	X::inwork::alternating 19266,1968
 # 
 #: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 25.07.2024)
 #: note: Die VIZ-Meldung erwähnt nur die Keltenstr., aber möglicherweise hängen die beiden Baustellen zusammen.
@@ -114,6 +114,7 @@ Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/lichtenberg-baut-schulen-und-sporthallen_a408641 (Eröffnung der Schule zum Schuljahr 2024/25)
 #: by: https://www.deutsches-architekturforum.de/thread/11104-neubauprojekte-in-marzahn-hellersdorf/?postID=761767#post761767
 #: by: https://entwicklungsstadt.de/lichtenberg-berlins-groesster-schulneubau-abgeschlossen/
+#: by: https://www.nd-aktuell.de/artikel/1183759.verkehrssicherheit-kinder-im-strassenverkehr-im-zickzack-zur-riesenschule.html
 #: XXX evtl. wurde die Ampel wegen der Hochbauarbeiten (Schule) eingerichtet
 #: osm_watch: way id="29432246" version="25"
 #: osm_watch: node id="603053800" version="7"
@@ -822,7 +823,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9358,12351
 	X 10213,11728
 	X 10512,12039
-	X 10685,12422
+	X 10687,12421
 	X 10697,12303
 	X 11347,12223
 #: note: eventuell im gleichen Zyklus wie die benachbarte Ampel?
@@ -831,7 +832,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11094,11377
 	X 10431,12709
 	F 10515,12780
-	X 10601,12521
+	X 10599,12526
 #: related vvv
 	X 11141,12806
 	F 11105,12764

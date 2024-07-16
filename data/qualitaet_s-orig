@@ -9740,7 +9740,7 @@ Werner-Kube-Str.: Kopfsteinpflaster	Q2- 12881,14342 12947,14428 13013,14523
 (Uferweg): Gehwegplatten	Q1+ 22241,4911 22204,4910 22180,4938 22146,4934 22131,4914 22153,4861 22153,4840
 (Freiheit/Lindenstr. - Uferweg): Gehwegplatten	Q1+ 22196,4847 22204,4910
 (An der Wuhlheide - Uferweg): Verbundsteinpflaster	Q1 21002,5755 21054,5666 21059,5596 21002,5594
-Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
+Rathausstr.: Verbundsteinpflaster	Q0- 10599,12526 10696,12601
 # 
 # REMOVED (wieder das alte Pflaster) --- #: next_check_id: AUERDREIECK-2022 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.725993.php --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019") --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021) --- #: by: https://mein.berlin.de/projekte/sanierung-grunflache-auerdreieck/?initialSlide=6 (vermutlich bleiben die Stufen am nördlichen Ende) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11067 (Anfrage) --- #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022; Stand Mai 2023: laut Papieraushang bis Juni 2023, laut Baustellenschild bis Herbst 2023 --- #: last_checked: 2023-10-03 --- #: check_frequency: 7d --- #: next_check: 2023-10-31
 # REMOVED (während der Bauarbeiten) --- Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
@@ -10589,7 +10589,7 @@ Am Tierpark [Wohngebiet]: Asphalt	Q0 18484,10326 18538,10189 18552,10135
 (Ebersstr. - Cheruskerstr.): Asphalt	Q0 7353,8633 7371,8660 7382,8658
 Eyke-von-Repkow-Platz: Gehwegplatten	Q0- 5556,12536 5531,12501
 #: note: 2018 neu gemacht
-Rathausstr.: Asphalt	Q0 10601,12521 10584,12507 10476,12432
+Rathausstr.: Asphalt	Q0 10599,12526 10580,12513 10475,12438
 (Straße zum Kraftwerksgelände): Asphalt	Q0 8478,13941 8453,13966 8388,13993
 (Weg an der Südpanke): Beton	Q0 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8271,14222 8273,14269 8266,14346 8267,14395 8293,14453 8302,14517 8301,14576 8323,14599
 (Weg an der Südpanke - Am Pankepark): Pflasterung	Q1- 8307,14175 8323,14142
@@ -11310,7 +11310,7 @@ Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7615,5938
 Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 (Borussenstr. - Kronprinzessinnenweg): Verbundsteinpflaster	Q1+ -4134,1984 -4139,1976 -4166,1941 -4180,1941
 (Rasthof Dreilinden): Asphalt	Q0 -4003,1234 -3994,1170 -3642,1199 -3577,1148
-# REMOVED (neu asphaltiert) --- #: next_check_id: SPANDAUERSTR-2014 --- #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- Spandauer Str.: mäßiger Asphalt im Bereich Kreuzung Rathausstr.	Q1 10431,12709 10542,12587 10601,12521 10644,12469
+# REMOVED (neu asphaltiert) --- #: next_check_id: SPANDAUERSTR-2014 --- #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- Spandauer Str.: mäßiger Asphalt im Bereich Kreuzung Rathausstr.	Q1 10431,12709 10542,12587 10599,12526 10646,12470
 # REMOVED --- #: next_check_id: INVALIDENSTRMOABIT-2014 --- #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/invalidenstr/de/bau.shtml ---#: XXX ab April 2014 wird hier neu gebaut --- #: last_checked: 2014-06-02 --- #: check_frequency: 14d --- Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7573,13149 7563,13143 7512,13115 7433,13070 7415,13060 --- Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7415,13060 7346,13022
 # REMOVED (ist schon jetzt gut befahrbar) --- #: next_check_id: INVALIDEN-2014 --- #: XXX nach den Bauarbeiten wahrscheinlich neuer Asphalt --- #: last_checked: 2014-06-26 --- #: next_check: 2015-05-31
 Invalidenstr.: Asphalt	Q0 8935,13844 9085,13919 9148,13944
@@ -12240,7 +12240,9 @@ Ankerweg: Betonpflaster	Q1+ 22118,2559 22159,2585 22197,2612
 #: by: mapillary, osm
 Clara-Müller-Jahnke-Str.: Betonpflaster	Q1+ 31971,3170 31799,3192 31800,3091 31810,3009 31965,2999
 # REMOVED --- (Fahlenbergstr. - Einkaufszentrum Lagunenweg): Asphalt, etwas rau	Q0- 31971,3170 31799,3192
-(Clara-Müller-Jahnke-Str. - Einkaufszentrum Lagunenweg): Asphalt, etwas rau	Q0- 31799,3192 31762,3202
+#: historical_note: früher (bis ca. 2023/2024): Asphalt, etwas rau, Q0-
+#: by: mapillary
+(Clara-Müller-Jahnke-Str. - Einkaufszentrum Lagunenweg): Verbundsteinpflaster	Q1+ 31799,3192 31762,3202
 (Einkaufszentrum Lagunenweg): Verbundsteinpflaster, Gehwegplatten	Q0- 31762,3202 31650,3218
 (Einkaufszentrum Lagunenweg): Verbundsteinpflaster	Q0- 31650,3218 31609,3232
 (Einkaufszentrum Lagunenweg - Parkweg): Verbundsteinpflaster	Q1 31650,3218 31660,3193
@@ -25510,7 +25512,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="8"
-#: last_checked: 2024-06-13
+#: last_checked: 2024-07-16
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452
@@ -30538,11 +30540,11 @@ Heidereutergasse: Asphalt	Q0 10427,12873 10390,12842
 #: confirmed_by: srt
 Bauhofstr.: Asphalt mit Löchern	Q1 9815,12705 9673,12661
 Panoramastr.: Asphalt	Q0 10801,12901 10739,12844
-Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10584,12507 10626,12455 10665,12413 10714,12355
-Poststr.: Kopfsteinpflaster	Q2 10476,12432 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10662,12255
+Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10580,12513 10626,12455 10665,12413 10722,12349
+Poststr.: Kopfsteinpflaster	Q2 10475,12438 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10662,12255
 Nikolaikirchplatz: Kopfsteinpflaster	Q2 10639,12394 10671,12356 10625,12315 10595,12328 10569,12311
 Eiergasse: Gehwegplatten	Q0 10671,12356 10703,12313
-Am Nußbaum: Verbundsteine	Q1 10644,12469 10626,12455 10611,12444 10597,12405 10611,12378
+Am Nußbaum: Verbundsteine	Q1 10646,12470 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nußbaum): Verbundsteine	Q1 10597,12405 10536,12355
 Jägerstr. (Mitte): Asphalt	Q0 9656,12031 9913,12068 9961,12094 10003,12113
 Kleine Kurstr.: Asphalt	Q0 10241,11830 10281,11876

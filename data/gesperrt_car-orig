@@ -205,7 +205,7 @@ Gustav-Freytag-Str. (Grunewald)	1 834,8273 815,8283 748,8456 765,8481
 Schumannstr.	1 8701,13058 8957,13134
 Albrechtstr. (Mitte)	1 8957,13134 8997,13037 9042,12931 9102,12790
 Charitéstr.	1 8693,12951 8676,12976 8632,13037
-Spandauer Str. (Mitte)	3nocross 10710,12377 10685,12422 10644,12469 10601,12521
+Spandauer Str. (Mitte)	3nocross 10716,12382 10687,12421 10646,12470 10599,12526
 Siegfriedstr.	1 12342,6936 12479,6969 12664,7013 12810,7047
 Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759
 Paulstr.	3nocross 7051,12426 7077,12575 7085,12610
@@ -1768,7 +1768,7 @@ Stralauer Str.: Einbahnstraße wegen Bauarbeiten	1::inwork 10830,12279 10772,1228
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-Gustav-Böß-Str./Grunerstr./Jüdenstr.	3nocross 10685,12422 10783,12502 10849,12557
+Gustav-Böß-Str./Grunerstr./Jüdenstr.	3nocross 10687,12421 10783,12502 10849,12557
 Grunerstr./Klosterstr.	3nocross 10849,12557 10873,12577 10950,12640
 # 
 #: note: für Radfahrer entweder rechts über Gehweg umfahrbar, abgesenkte Bordsteine, oder links an der Barriere vorbei, knapp einen Meter Breite
@@ -2051,4 +2051,11 @@ Neucölln Carree - Grenzallee: nur Rechtsabbiegen erlaubt	3 14378,7236 14507,7146
 # 
 #: historical_note: früher (bis 2023/2024): Zaun auf dem Mittelstreifen, 3nocross in gesperrt-orig
 Müllerstr.: Abbiegen verboten	3nocross 6781,16026 6851,15964 6914,15908 6936,15888
+# 
+# REMOVED --- #: next_check_id: CLARAMUELLERJAHNKE-2023 --- #: also_indoor: traffic (none) --- #: last_checked: 2023-11-11 (mapillary) --- #: check_frequency: 120d --- #: next_check: 2023-12-31
+# REMOVED --- (Fahlenbergstr. - Einkaufszentrum Lagunenweg): Bauarbeiten, Straße wird neu gemacht	2::inwork 31971,3170 31799,3192
+#: by: mapillary vvv
+(Clara-Müller-Jahnke-Str. - Einkaufszentrum Lagunenweg): Poller	3 31650,3218 31762,3202 31799,3192
+(Clara-Müller-Jahnke-Str. - Einkaufszentrum Lagunenweg): Poller	3 31799,3192 31762,3202 31650,3218
+#: by ^^^
 # 

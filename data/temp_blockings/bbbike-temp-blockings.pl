@@ -6647,7 +6647,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003844',
        data  => <<EOF,
-	2::temp 10710,12377 10685,12422 10644,12469 10601,12521 10542,12587 10431,12709
+	2::temp 10716,12382 10687,12421 10646,12470 10599,12526 10542,12587 10431,12709
 EOF
      },
      { from  => 1161542089, # 2006-10-22 20:34
@@ -14065,7 +14065,7 @@ EOF
        source_id => 'IM_012342',
        data  => <<EOF,
 	q4::inwork 10285,12306 10357,12356
-	q4::inwork 10416,12394 10476,12432
+	q4::inwork 10416,12394 10475,12438
 EOF
      },
      { from  => 1240518036, # 2009-04-23 22:20
@@ -23618,8 +23618,8 @@ EOF
 # REMOVED (Pariser Platz) ---	2::temp 8089,12190 8214,12205
 # REMOVED (Pariser Platz) ---	3::temp 8391,12389 8344,12221 8327,12174
 # REMOVED (Pariser Platz) ---	3::temp 8327,12174 8344,12221 8391,12389
-Rathausstr.	2::temp 10601,12521 10704,12595
-Jüdenstr.	2::temp 10704,12595 10783,12502
+Rathausstr.	2::temp 10599,12526 10696,12601
+Jüdenstr.	2::temp 10696,12601 10783,12502
 #: tempex ^^^
 EOF
      },
@@ -26702,12 +26702,12 @@ EOF
 	2::temp 9919,12613 9953,12533 9846,12516
 	2::temp 9953,12533 9984,12426 10024,12431 10063,12438 9956,12617 9948,12631
 	2::temp 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587
-	2::temp 10704,12595 10601,12521 10644,12469 10685,12422 10783,12502 10704,12595
+	2::temp 10696,12601 10599,12526 10646,12470 10687,12421 10783,12502 10696,12601
 	2::temp 10094,12635 10176,12506
 	3 9877,12293 9873,12315 9858,12410 9780,12401
-	3 10431,12709 10542,12587 10601,12521 10584,12507
+	3 10431,12709 10542,12587 10599,12526 10580,12513
 	3 9780,12401 9858,12410 9873,12315 9877,12293
-	3 10584,12507 10601,12521 10542,12587 10431,12709
+	3 10580,12513 10599,12526 10542,12587 10431,12709
 EOF
      },
      { from  => 1485206028, # 2017-01-23 22:13
@@ -27335,7 +27335,7 @@ EOF
        text  => 'Spandauer Str.: zwischen Rathausstr. und Karl-Liebknecht-Str. wegen einer Veranstaltung bis 13.08.2017 6 Uhr früh gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 10601,12521 10542,12587 10431,12709
+	2::temp 10599,12526 10542,12587 10431,12709
 EOF
      },
      { from  => 1502994466, # 2017-08-17 20:27
@@ -29089,14 +29089,14 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/tag-der-deutschen-einheit-viele-sperrungen-in-mitte-und-tiergarten?redirect=https%3A%2F%2Fviz.berlin.de%2Fhome%3Fp_p_id%3D101_INSTANCE_ZQE04eyJSiIC%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D2',
        data  => <<EOF,
-	2::temp 10243,12546 10300,12587 10359,12634 10431,12709 10542,12587 10601,12521 10644,12469 10685,12422 10710,12377
+	2::temp 10243,12546 10300,12587 10359,12634 10431,12709 10542,12587 10599,12526 10646,12470 10687,12421 10716,12382
 	2::temp 10308,12859 10360,12793 10373,12776 10431,12709 10515,12780 10525,12789 10695,12933
 	2::temp 10176,12506 10243,12546
 	2::temp 10094,12635 10176,12506
 	3 10363,12535 10300,12587 10291,12600
-	3 10584,12507 10601,12521 10704,12595
+	3 10580,12513 10599,12526 10696,12601
 	3 10291,12600 10300,12587 10363,12535
-	3 10704,12595 10601,12521 10584,12507
+	3 10696,12601 10599,12526 10580,12513
 EOF
      },
      { from  => 1538431200, # 2018-10-02 00:00
@@ -29653,7 +29653,7 @@ EOF
 #: XXX Wann können Radfahrer wieder durchkommen?
 #: source_id: 2147343931 (bis Ende Mai 2019)
 #: last_checked: 2019-05-28
-	2::inwork 10783,12502 10685,12422
+	2::inwork 10783,12502 10687,12421
 EOF
      },
      { from  => undef, # 
@@ -30968,7 +30968,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: XXX bis wann geht die Sperrung? --- #: osm_watch: way id="729492933" version="2" --- #: last_checked: 2019-11-20 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen --- mittlerweile steht ein solider Bauzaun) --- #: check_frequency: 30d
-	2::inwork 10685,12422 10783,12502
+	2::inwork 10687,12421 10783,12502
 EOF
      },
      { from  => undef,
@@ -38064,8 +38064,8 @@ EOF
 #: by: https://www.berliner-woche.de/buch/c-bauen/brueckenbau-ueber-die-panke_a389479
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radweg-panke.pdf
 #: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023) (inaktiv) (bis 30.06.2024) (bis 30.07.2024)
-#: osm_watch: way id="1153732901" version="4"
-#: last_checked: 2024-05-23 (mapillary)
+#: osm_watch: way id="1153732901" version="6"
+#: last_checked: 2024-07-16 (osm)
 #: check_frequency: 150d
 #: next_check: 2024-07-30
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
@@ -38145,7 +38145,7 @@ EOF
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: Halteverbotsschilder bis Ende September 2024
-#: last_checked: 2024-07-09
+#: last_checked: 2024-07-16
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
@@ -38163,7 +38163,7 @@ EOF
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-07-09
+#: last_checked: 2024-07-16
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-06-30
@@ -39048,8 +39048,8 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
-#: also_indoor: traffic (ex-H,re-G,B,ex-W,T)
-#: last_checked: 2024-07-11 (traffic)
+#: also_indoor: traffic (ex-H,re-G,B,re-W,T)
+#: last_checked: 2024-07-16 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -39584,7 +39584,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-06-28
+#: last_checked: 2024-07-16
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -39963,7 +39963,7 @@ EOF
 #: next_check_id: ROTESRATHAUS-2023
 #: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023)
 # REMOVED --- #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg --- #: last_checked: 2023-07-05 (webcam) --- #: check_frequency: 7d --- #: next_check: 2023-07-06
-	2::temp 10704,12595 10601,12521
+	2::temp 10696,12601 10599,12526
 EOF
      },
      { from  => undef, # 
@@ -40956,6 +40956,7 @@ EOF
 #: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
 #: osm_watch: way id="1207706195" version="2"
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
+#: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
 #: last_checked: 2024-06-15
@@ -43001,6 +43002,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787175928923099290 (hier auch: Heinrich-von-Gagern-Str., Otto-von Bismarck-Allee, Paul-Löbe-Allee)
 #: by[nocache]: https://twitter.com/BA_Mitte_Berlin/status/1787472473597813136
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsinformationen-zur-uefa-euro-2024-in-berlin/
+#: by: https://berliner-abendblatt.de/berlin-news/fanmeile-wird-abgebaut-strasse-des-17-juni-bleibt-gesperrt-id257684
 #: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024) (bis 26.07.2024)
 #: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024)
 #: note: es sieht so aus, als ob man vom Bremer Weg nur über Umwege (bis fast Behrenstr.?) zum Brandenburger Tor fahren kann
@@ -43110,7 +43112,9 @@ Winckelmannstr. am Sterndamm	q4::inwork 17428,4503 17476,4337
 Trützschlerstr.	q2::inwork 17471,4570 17612,4460
 #: source_id: viz2021:13.506038,52.441227,08.05.2024,07:00 (Winckelmannstr., bis 08.08.2024)
 #: source_id: viz2021:13.5056,52.44039,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
-Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979
+Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979 17465,3768
+#: by: krickstadt
+Haeckelstr.	q4::inwork 17379,3932 17468,3979
 EOF
      },
      { from  => 1714550400, # 2024-05-01 10:00
@@ -43220,9 +43224,9 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.387836,52.51696,23.05.2024,05:00 (bis 23.05.2024) (inaktiv)
 	2::temp 10438,12671 10431,12709 10373,12776
-	2::temp 10733,12967 10695,12933 10525,12789 10515,12780 10431,12709 10542,12587 10601,12521 10644,12469 10685,12422
+	2::temp 10733,12967 10695,12933 10525,12789 10515,12780 10431,12709 10542,12587 10599,12526 10646,12470 10687,12421
 	2::temp 10176,12506 10243,12546 10300,12587 10359,12634 10431,12709
-	2::temp 10704,12595 10783,12502
+	2::temp 10696,12601 10783,12502
 EOF
      },
      { from  => 1716699600, # 2024-05-26 07:00
@@ -43772,6 +43776,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1463120.php
+#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/quermatenweg-wird-saniert_a420563
 #: next_check: 2024-09-02
 zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,5042 -473,5002 -670,4903
 #zwischen Ottmachauer Steig bis Hirschhorner Weg bis zum 17.10.2024	q4::inwork -670,4903 -820,4772
