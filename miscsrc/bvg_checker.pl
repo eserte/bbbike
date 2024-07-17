@@ -162,7 +162,8 @@ sub find_active_sourceids {
 # Valid since May 2024
 # Using new "bvg2024:" source_id prefix
 sub find_active_sourceids_bvg2024 {
-    my $disruptions_query_url_pattern = sub { my %opts = @_; 'https://www.bvg.de/disruption-reports-service/disruptions?type=all&timeFrame=ALL&page=' . $opts{page} };
+    #my $disruptions_query_url_pattern = sub { my %opts = @_; 'https://www.bvg.de/disruption-reports-service/disruptions?type=all&timeFrame=ALL&page=' . $opts{page} };
+    my $disruptions_query_url_pattern = sub { my %opts = @_; 'https://www.bvg.de/disruption-reports-service/disruptions/v1/de?type=all&timeFrame=ALL&page=' . $opts{page} };
     require LWP::UserAgent;
     require JSON::XS;
     my $ua = LWP::UserAgent->new;
