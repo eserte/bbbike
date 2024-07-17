@@ -16,7 +16,7 @@
 # 
 #: next_check_id: BHFZEUTHEN-2018
 #: osm_watch: way id="1008829290" version="1"
-#: last_checked: 2023-04-22 (zdf)
+#: last_checked: 2024-07-17
 #: check_frequency: 180d
 Bahnstr.: Bauarbeiten am Bahnhof Zeuthen, Umfahrung auf teilweise engem Gehweg notwendig, Bordstein	q3::inwork 25961,-6132 25893,-6002
 # 
@@ -239,7 +239,8 @@ Altlandsberg, entlang der Stadtmauer: einige Fuﬂg‰nger	q1 32003,17810 31946,1785
 Schlossgut Altlandsberg: einige Fuﬂg‰nger	q1 32213,18316 32217,18331 32238,18334 32255,18443 32245,18459
 Augustinum-Gel‰nde: enger Weg, einige Fuﬂg‰nger	q2 15,-27 82,6 123,3
 Augustinum-Gel‰nde: einige Fuﬂg‰nger	q2 -62,-37 13,-39 15,-27
-Weg am Nottekanal: einige Fuﬂg‰nger, eng	q2 25694,-11921 25769,-11887 25825,-11847 25861,-11801 25862,-11752
+#: note: nicht f¸r Radfahrer freigegeben, Gehwegschild
+Weg am Nottekanal: Fuﬂg‰nger, eng	q3 25694,-11921 25769,-11887 25825,-11847 25861,-11801 25862,-11752
 Groﬂbeerenstr. - An der Sandscholle: einige Fuﬂg‰nger	q1 -9114,-2650 -9092,-2599
 Bahnhofsunterf¸hrung KW: Fuﬂg‰nger, Rampe	q4+ 26406,-11815 26390,-11814 26386,-11833 26382,-11815 26337,-11817 26301,-11824
 Campingpark Sanssouci: viele Fuﬂg‰nger	q2 -16435,-5680 -16342,-5706 -16295,-5696 -16262,-5635 -16221,-5594 -16208,-5534 -16214,-5496 -16211,-5431 -16179,-5354
@@ -312,3 +313,4 @@ Fontaneplatz: doppeltes Dr‰ngelgitter	q3; -25976,76040 -25862,76030
 Wittstock, Laga-Park: einige Fuﬂg‰nger	q2 -53369,82615 -53497,82639 -53518,82683 -53586,82801 -53609,82816 -53620,82822
 Templin, zum Bahnhof: einige Fuﬂg‰nger	q1 16010,79219 16160,79258
 Templin, zum Bahnhof: einige Fuﬂg‰nger	q2 16160,79258 16189,79279
+(Sperberring - Verbindungweg): Gehweg f¸r Radfahrer frei	q2 22788,-5356 22796,-5392

@@ -880,7 +880,7 @@ Groß-Köris - Motzen: Verbundsteinpflaster	Q1 23775,-22788 23482,-22742
 #: last_checked: 2023-06-04
 #: next_check: 2024-09-01
 Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26787,-3194 26748,-3285 26651,-3554 26636,-3596 26562,-3781 26554,-3814 26482,-4108 26447,-4251 26319,-4776 26228,-5150 26259,-5681 26085,-5839 25996,-5921
-Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26376,-6676 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26782,-8032 26749,-8481 26727,-8668 26679,-8825 26589,-9108 26429,-9618 26381,-9753 26365,-9875 26376,-9924 26386,-9964 26420,-10035 26434,-10054
+Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26376,-6676 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26782,-8032 26749,-8481 26727,-8668 26702,-8750 26679,-8825 26589,-9108 26429,-9618 26381,-9753 26365,-9875 26376,-9924 26386,-9964 26420,-10035 26434,-10054
 #: by: ^^^
 Friesenstr. (Zeuthen): Asphalt	Q0 25817,-5856 25782,-5801 25671,-5632 25652,-5602 25610,-5468 25600,-5426 25571,-5188 25572,-5126 25476,-4811 25448,-4785 25345,-4806 25183,-4565 25042,-4334
 Friesenstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 25817,-5856 25842,-5903 25893,-6002
@@ -940,7 +940,7 @@ Kiefernring (Miersdorf): Asphalt	Q0 24474,-6626 24580,-6691 24602,-6624 24666,-6
 Kiefernring (Miersdorf): Asphalt	Q0 24735,-6415 24607,-6516
 Freiligrathstr. (Schulzendorf): schlechtes Kopfsteinpflaster	Q3 24307,-6451 24297,-6439 24233,-6370 24216,-6348
 Freiligrathstr. (Schulzendorf): Asphalt	Q0 24216,-6348 24142,-6265 24062,-6169 23977,-6071 23889,-5967 23798,-5864 23753,-5811 23713,-5765 23623,-5663
-Freiligrathstr. (Schulzendorf): Beton mit Schäden	Q1 23623,-5663 23296,-5280
+Freiligrathstr. (Schulzendorf): Beton mit Schäden	Q1- 23623,-5663 23296,-5280
 Freiligrathstr. (Schulzendorf): Asphalt	Q0 23296,-5280 23103,-4956 23034,-4850
 Heinrich-Heine-Str. (Schulzendorf): Verbundsteinpflaster	Q1+ 23172,-4893 23384,-5202
 Albrecht-Dürer-Str. (Schulzendorf): Verbundsteinpflaster	Q1+ 23161,-4729 23240,-4827 23474,-5124
@@ -1010,7 +1010,7 @@ Badstr. (Pätz): Verbundsteinpflaster	Q1+ 28843,-19695 28843,-19850 28918,-19941
 Waldweg Pätz - Bestensee: Verbundsteinpflaster	Q1 28853,-19212 28805,-19189 28868,-18929 28827,-18707
 Uferweg Pätz - Bestensee: Verbundsteinpflaster	Q0- 28827,-18707 28800,-18565 28667,-18389
 Uferweg Pätz - Bestensee: Waldweg, meist OK, teilweise eng	Q2 28667,-18389 28106,-18265 27898,-18103 27627,-18031 27599,-17988
-Mozartstr. (Bestensee): Asphalt	Q0 28042,-18007 28037,-17946 27971,-17847
+Mozartstr. (Bestensee): Asphalt	Q0 28046,-18007 28037,-17946 27971,-17847
 Mozartstr. (Bestensee): Asphalt	Q0 28279,-17744 27971,-17847 27913,-17868 27640,-17955 27605,-17958
 (Mozartstr. - Friedenstr.) (Bestensee): Verbundsteinpflaster	Q1 27913,-17868 27897,-17819 27882,-17766
 Freiligrathstr. (Bestensee): Verbundsteinpflaster	Q1 28365,-17654 28363,-17664 28297,-17703 28254,-17703 27897,-17819 27617,-17909
@@ -1048,7 +1048,8 @@ Rudolf-Breitscheid-Str.: Verbundsteinpflaster	Q1+ 26469,-17688 26498,-17523 2651
 #: by: osm
 Rudolf-Breitscheid-Str.: Verbundsteinpflaster	Q1+ 26518,-17415 26504,-17242
 Schmiedeweg: Asphalt	Q0 26459,-17745 26354,-17641 26321,-17629 26297,-17628 26245,-17623
-Pätz - Bestensee: Verbundsteinpflaster	Q0- 28667,-18389 28651,-18369 28011,-18007
+Pätz - Bestensee: Verbundsteinpflaster	Q0- 28667,-18389 28651,-18369 28055,-18031 28011,-18007
+Mozartstr. (Bestensee) - neuer Waldweg Pätz: Schotterweg	Q2 28046,-18007 28055,-18031
 Groß Köris - Pätz: Kopfsteinpflaster	Q3+ 28391,-25727 28320,-25493 28318,-25324
 #: by: mapillary
 Groß Köris - Pätz: Asphalt	Q0 28318,-25324 28238,-25120 28234,-25098
@@ -2031,7 +2032,7 @@ Wallmow: schlechtes Kopfsteinpflaster, Betonplattengehweg existiert	Q3 55256,104
 Wallmow - Trampe: Asphalt	Q0 55273,104992 55359,105119 55493,105350 55546,105536 55683,105896 55956,106270 56179,106456 56522,106607 56938,106879 57259,107134 57345,107207 57356,107216
 Steinhöfel - B198: asphaltiert	Q0 41799,77216 42847,77291 43081,77252 43252,77234 44326,77553
 Greiffenberg: Kopfsteinplaster	Q3 44760,75287 44842,75350
-Fahrbahn und Radweg asphaltiert	Q0 28642,-17918 28415,-18028 28101,-18011 28042,-18007 28011,-18007 27599,-17988
+Fahrbahn und Radweg asphaltiert	Q0 28642,-17918 28415,-18028 28101,-18011 28046,-18007 28011,-18007 27599,-17988
 Fahrbahn asphaltiert, freiwillige Radwege auf Gehweg	Q0 27599,-17988 27416,-17969 27304,-17961
 Fahrbahn asphaltiert, freiwillige Radwege auf Gehweg	Q0 26623,-17859 26533,-17858 26431,-17830
 	Q0 26431,-17830 26317,-17820 26236,-17785 26192,-17789
@@ -3476,6 +3477,10 @@ Asphalt	Q0- -86670,-45979 -86472,-46031 -86219,-46273 -85807,-46872 -84976,-4741
 Asphalt	Q0 -84237,-48234 -84110,-48294 -83887,-48317 -82956,-49248 -82684,-49649 -82312,-49701 -82189,-49677 -82107,-49691 -80621,-49973 -79719,-50149 -79138,-50258 -79016,-50315 -78823,-50279
 Kopfsteinpflaster	Q2 59474,34284 59482,34218
 Asphalt	Q0 26070,-23160 25954,-22818
+#: by: https://www.meetingpoint-dahme-spreewald.de/neuigkeiten/artikel/166381-wildau-vollsperrung-des-westkorsos-ab-dem-1-juli-2024
+#: XXX Bauarbeiten, bleibt es beim Kleinkopfsteinpflaster?
+#: last_checked: 2024-07-17
+#: next_check: 2024-11-28
 Westkorso, Zeuthen: Kleinkopfsteinpflaster	Q1- 26033,-7207 26328,-7191 26430,-7173 26609,-7136
 Franz-Mehring-Str.: Asphalt	Q0 26644,-18866 26743,-18604 26782,-18462 26840,-18414 26766,-18117 26736,-17975
 Franz-Mehring-Str.: Kopfsteinpflaster	Q2 26736,-17975 26716,-17857
@@ -5451,17 +5456,20 @@ Luckenwalder Str. - Nottekanal: Verbundsteinpflaster	Q1 25098,-13447 24743,-1291
 #: by: osm
 #: confirmed_by: srt
 Radweg entalng der B179n: Asphalt	Q0 24561,-12631 24531,-12634 24483,-12540 24474,-12453 24408,-12045 24344,-11733 24367,-11520 24371,-11283 24361,-11236
-Am Nottekanal: Asphalt	Q0 24511,-12528 25153,-12208 25666,-11973
+Am Nottekanal: Asphalt	Q0 24511,-12528 25174,-12196 25666,-11973
 Am Nottekanal: Verbundsteinpflaster	Q1 25666,-11973 25703,-11953 25883,-11875
 Brücke über den Nottekanal: Holzbohlen	Q1- 25703,-11953 25694,-11921
 Weg am Nottekanal: Verbundsteinpflaster	Q1 25694,-11921 25769,-11887 25825,-11847 25861,-11801 25862,-11752
 #: by: osm
-Schreederstr.: Verbundsteinpflaster	Q1 25102,-11974 25549,-11749 25696,-11770
-Schreederstr.: Asphalt	Q0 25696,-11770 25783,-11778 25862,-11752 25868,-11721 25876,-11715
+Schreederstr.: Verbundsteinpflaster	Q1 25102,-11974 25450,-11798
+Schreederstr.: Asphalt	Q0 25450,-11798 25549,-11749 25696,-11770 25783,-11778 25862,-11752 25868,-11721 25876,-11715
+Am Amtsgarten (Königs Wusterhausen): Asphalt	Q0 25709,-11610 25719,-11644 25696,-11770 25676,-11852
+Am Amtsgarten (Königs Wusterhausen): Verbundsteinpflaster	Q1 25676,-11852 25694,-11921
 Funkerberg/Goethebahn: Asphalt	Q0 25632,-11361 25487,-11195 25470,-11166 25398,-10876 25345,-10636 25307,-10467 25262,-10376 25253,-10325 25260,-10259 25209,-10021 25107,-9554 25081,-9433 25102,-9256 25096,-9239
 #: by: osm
-#: confirmed_by: srt (westlicher Abschnitt)
-Freiheitstr. (Wildau): Asphalt	Q0 25192,-8936 25251,-8868 25455,-8814 25578,-8781 25725,-8743 25910,-8697 26133,-8639 26277,-8527 26514,-8526 26589,-8499 26652,-8493 26749,-8481 26914,-8452
+#: confirmed_by: srt
+Freiheitstr. (Wildau): Asphalt	Q0 25192,-8936 25251,-8868 25455,-8814 25578,-8781 25725,-8743 25910,-8697 26133,-8639 26277,-8527 26514,-8526 26589,-8499 26652,-8493 26749,-8481 26835,-8465 26914,-8452
+Friedrich-Engels-Str. [Wohngebietsstraße] (Wildau): Verbundsteinpflaster	Q1 26702,-8750 26786,-8777 26823,-8665 26835,-8465
 Am Friedhof (Wildau): Asphalt	Q0 25118,-8791 25106,-8797 24916,-8686
 Schillerallee (Wildau): Asphalt	Q0 25478,-9638 25494,-9532 25502,-9335 25518,-9218 25535,-9055 25578,-8781
 Schubertstr. (Wildau): Asphalt	Q0 25494,-9532 25363,-9500 25242,-9466
@@ -6192,8 +6200,17 @@ Waltersdorf - Schulzendorf: Asphalt	Q0 21687,-3601 21709,-3605
 ehemalige B179 (Berlin - Königs Wusterhausen): asphaltiert, einige Wurzelschäden	Q0 21516,-3839 21541,-3878 21537,-3901 21516,-3919 21489,-3916 21462,-3900
 Im Ritterschlag: Asphalt	Q0 22437,-5335 22527,-5312
 #: by: osm + mapillary
+#: confirmed_by: srt
 Im Ritterschlag: Asphalt	Q0 22527,-5312 22554,-5376 22596,-5368 22619,-5360 22627,-5358 22636,-5348 22651,-5335 22685,-5305 22690,-5300 22743,-5253 22765,-5234 22787,-5165 22814,-5119 22739,-5062 22711,-5004
-(Miersdorfer Str. - Walther-Rathenau-Str.): Verbundsteinpflaster	Q1+ 22469,-5470 22572,-5444 22677,-5418 22983,-5346
+Kamillenweg (Schulzendorf): Verbundsteinpflaster	Q1+ 22814,-4986 22798,-5036 22739,-5062
+Milanstr. (Schulzendorf): Verbundsteinpflaster	Q1+ 22802,-4959 22814,-4986 22854,-5002 22814,-5119
+Zum Feldrain (Schulzendorf): Verbundsteinpflaster	Q1+ 22854,-5002 22874,-4946 22906,-4932 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130
+Reiherhorst (Schulzendorf): Verbundsteinpflaster	Q1+ 22814,-5119 22860,-5130 22848,-5176
+Falkenring (Schulzendorf): Verbundsteinpflaster	Q1+ 22787,-5165 22848,-5176 22832,-5257 22778,-5350 22763,-5343 22690,-5300
+Falkenring (Schulzendorf): Verbundsteinpflaster	Q1+ 22763,-5343 22731,-5402 22685,-5414
+Sperberring (Schulzendorf): Verbundsteinpflaster	Q1+ 22778,-5350 22788,-5356 22794,-5360 22852,-5347 22880,-5197 22867,-5180 22848,-5176
+(Sperberring - Verbindungweg): Verbundsteinpflaster	Q1+ 22788,-5356 22796,-5392
+(Miersdorfer Str. - Walther-Rathenau-Str.): Verbundsteinpflaster	Q1+ 22469,-5470 22572,-5444 22677,-5420 22796,-5392 22983,-5346
 (Miersdorfer Str. - Zum Mühlenschlag): Verbundsteinpflaster	Q1 22866,-5844 22830,-5878
 Zum Mühlenschlag: Verbundsteinpflaster	Q1 22794,-5842 22830,-5878 22883,-5923 22992,-6018 23041,-6154 23089,-6242 23097,-6282
 Kornblumenweg: Verbundsteinpflaster	Q1 22883,-5923 22857,-5955 22889,-6026 22916,-6082 22940,-6134 22965,-6188 23011,-6169 23041,-6154

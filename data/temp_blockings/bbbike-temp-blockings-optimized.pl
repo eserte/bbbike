@@ -4178,7 +4178,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Fertigstellung der Fußgängerunterführung: November 2024)
 #: osm_watch: way id="36936021" version="10" brb
 #: also_indoor: search Bahnhof Zeuthen
-#: last_checked: 2024-05-24 (osm)
+#: last_checked: 2024-07-17
 #: check_frequency: 360d
 #: next_check: 2024-11-30
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
@@ -6247,7 +6247,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
 # REMOVED --- #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
-#: last_checked: 2024-07-11 (mapillary)
+#: last_checked: 2024-07-17
 #: check_frequency: 30d
 #: next_check: 2024-08-15
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
@@ -7722,7 +7722,7 @@ Ebertstr.	q3::temp 8600,12165 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-07-15 (webcam)
+#: last_checked: 2024-07-17 (webcam)
 #: check_frequency: 3d
 #: next_check: 2024-07-26
 Brandenburger Tor	2::temp 8538,12245 8592,12252
@@ -7941,15 +7941,15 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        {
          'data' => '#: source_id: viz2021:13.55316,52.43396,04.06.2024,14:11 (bis 18.06.2024) (bis 18.07.2024) (inaktiv)
 #: source_id: viz2021:13.553865,52.434226,04.06.2024,14:11 (bis 18.07.2024)
-#: note: bei rbb "bis auf weiteres", mittlerweile auch bis 18.6.2024
+#: note: bei rbb "bis auf weiteres", mittlerweile auch bis 18.6.2024, mittlerweile bis 30.09.2024
 # REMOVED (hier nicht mehr) ---	q4::inwork 20717,3310 20478,3156
 	q4::inwork 20717,3310 20808,3374
 ',
          'from' => 1717416660,
          'id' => 4077,
-         'text' => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Arndtstr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, vom 04.06.2024 14:11 bis 18.07.2024 05:00',
+         'text' => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Arndtstr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende September 2024',
          'type' => 'handicap',
-         'until' => 1721271600
+         'until' => 1727712000
        },
        undef,
        {
@@ -8403,6 +8403,16 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
          'text' => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Gertrudstr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 22. Juli 2024',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: 246001321 (bis 09.08.2024)
+	2::inwork 27822,49878 27566,49942
+',
+         'from' => 1721541600,
+         'id' => 4117,
+         'text' => 'Finowfurt, B167: Sanierung der Autobahnbrücke), Sperrung, evtl. sind auch Radfahrer betroffen, 22.07.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1723212000
        }
      
 );
