@@ -33999,6 +33999,7 @@ EOF
        source_id => 'viz2021:13.526597,52.556118,16.07.2021,08:00', # mittlerweile inaktiv wegen Startzeitänderung (und dadurch Id-Änderung)
        data  => <<EOF,
 #: source_id: viz2021:13.526597,52.556118,16.07.2021,04:00
+#: source_id: bvg2024:294#HIM_FREETEXT_232032 (evtl. neue Bauarbeiten ab 2024-07-25?)
 	2::inwork 18527,16789 18587,16834 18674,16904 18738,16957
 EOF
      },
@@ -41376,7 +41377,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-07-05 vvv
+#: last_checked: 2024-07-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -43270,10 +43271,10 @@ EOF
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt)
-#: also_indoor: traffic (ex-H,ex-G,re-B,re-W,T)
+#: also_indoor: traffic (ex-H,re-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-07-05 (mapillary) vvv
+#: last_checked: 2024-07-18 (traffic) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-08-31 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -43373,11 +43374,13 @@ EOF
      { from  => 1717416660, # 2024-06-03 14:11
        until => $isodate2epoch->("2024-09-30 18:00:00"), # $isodate2epoch->("2024-07-18 05:00:00"), # 1718679600, # 2024-06-18 05:00
        #text  => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Moissistr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, vom 04.06.2024 14:11 bis 18.07.2024 05:00',
-       text  => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Arndtstr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende September 2024',
+       #text  => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Arndtstr.: geplatzte Wasserleitung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende September 2024',
+       text  => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Arndtstr., Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende August 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.55316,52.43396,04.06.2024,14:11 (bis 18.06.2024) (bis 18.07.2024) (inaktiv)
-#: source_id: viz2021:13.553865,52.434226,04.06.2024,14:11 (bis 18.07.2024)
+#: source_id: viz2021:13.553865,52.434226,04.06.2024,14:11 (bis 18.07.2024) (inaktiv)
+#: source_id: viz2021:13.553861,52.434215,18.07.2024,10:00 (bis 30.08.2024)
 #: note: bei rbb "bis auf weiteres", mittlerweile auch bis 18.6.2024, mittlerweile bis 30.09.2024
 # REMOVED (hier nicht mehr) ---	q4::inwork 20717,3310 20478,3156
 	q4::inwork 20717,3310 20808,3374
@@ -43459,13 +43462,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Wallstr.: Bauarbeiten, zwischen Inselstr. und Neue Roßstr. Richtung Westen gesperrt, vermutlich bis Mitte Juli 2024, evtl. wird verlängert',
+       #text  => 'Wallstr.: Bauarbeiten, zwischen Inselstr. und Neue Roßstr. Richtung Westen gesperrt, vermutlich bis Mitte Juli 2024, evtl. wird verlängert',
+       text  => 'Wallstr.: Bauarbeiten, zwischen Inselstr. und Neue Roßstr. Richtung Westen gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Länge der Einbahnstraßenregelung etwa 80m; außerdem ist auch die Inselstraße Einbahnstraße, hier aber für Radfahrer frei
-#: note: Halteverbotsschilder bis 17.07.2024
+#: note: Halteverbotsschilder bis 17.07.2024; wurde trotz Bauarbeiten nicht verlängert
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2024-07-15
+#: last_checked: 2024-07-18
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-07-17
@@ -43593,7 +43597,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-07-15 vvv
+#: last_checked: 2024-07-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -43672,8 +43676,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
-	q4::inwork; 11273,12301 11300,12241
-	q3::inwork; 11300,12241 11273,12301
+	q4::inwork 11273,12301 11300,12241
 EOF
      },
      { from  => 1719698400, # 2024-06-30 00:00
@@ -43889,6 +43892,17 @@ EOF
        data  => <<EOF,
 #: source_id: 246001321 (bis 09.08.2024)
 	2::inwork 27822,49878 27566,49942
+EOF
+     },
+     { from  => 1721203200, # 2024-07-17 10:00
+       until => 1725030000, # 2024-08-30 17:00
+       text  => 'Nipkowstr.: Bauarbeiten zwischen Büchnerweg und Otto-Franke-Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.07.2024 10:00 bis 30.08.2024 17:00 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.552614,52.434372,18.07.2024,10:00 (hier nur Kfz-Verkehr, bis 30.08.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1813903899440410995
+#: by: https://pbs.twimg.com/media/GSxHkSDX0AAbFwX?format=png&name=900x900
+	q4::inwork 20717,3310 20644,3395
 EOF
      },
     );
