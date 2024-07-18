@@ -26,7 +26,7 @@ use I18N::Langinfo qw(langinfo CODESET);
 use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
 use Strassen::Core;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 my $bbbike_datadir = bbbike_root . '/data';
 my $bbbike_aux_datadir = defined bbbike_aux_dir() ? bbbike_aux_dir() . '/bbd' : undef;
@@ -42,9 +42,14 @@ $_ = decode($codeset, $_) for @ARGV;
 # - either filename
 # - or hashref with filename and encoding as fields
 my @search_file_defs = (
-			bsd_glob("$bbbike_datadir/*-orig"),
+			# following files on top, because of importance
+			"$bbbike_datadir/strassen-orig",
+			"$bbbike_datadir/fragezeichen-orig",
+			{ encoding => 'iso-8859-1', filename => "$bbbike_datadir/temp_blockings/bbbike-temp-blockings.pl" },
+			# rest of files
+			(grep { !m{/(strassen|fragezeichen)-orig$} } bsd_glob("$bbbike_datadir/*-orig")),
 			(map { +{ encoding => 'iso-8859-1', filename => $_ } }
-			 bsd_glob("$bbbike_datadir/*.coords.data"), "$bbbike_datadir/temp_blockings/bbbike-temp-blockings.pl",
+			 bsd_glob("$bbbike_datadir/*.coords.data"),
 			),
 			"$bbbike_datadir/mudways",
 			"$bbbike_datadir/zebrastreifen",
