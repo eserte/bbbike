@@ -14,6 +14,7 @@ push @temp_blocking,
 	2::temp 6487,10277 6628,10318 6719,10347
 	2::temp 6719,10347 6729,10212 6739,10120
 	2::temp 6609,10147 6630,9990
+	2::temp 6941,10329 6978,10319 7036,10313
 ',
          'from' => 1721340000,
          'id' => 74,
@@ -29,7 +30,7 @@ push @temp_blocking,
                               '2021-10-25T00:00:00'
                             ]
                           ],
-         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (20.7.2024 und 21.7.2024)',
+         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Gossowstr./Nollendorfplatz (20.7.2024 und 21.7.2024)',
          'type' => 'gesperrt',
          'until' => 1721599199
        },
@@ -3954,7 +3955,44 @@ Schlossinsel	2::temp 22093,4499 22076,4422
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147341611 (inaktiv)
+#: source_id: viz2021:13.36257,52.50591,11.04.2024,14:00 (bis 11.04.2024, zu spät gesehen) (inaktiv)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschränkung)
+#: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Großer Zapfenstreich 2021, neuer Termin)
+#: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großes Zapfenstreichs)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Großer Zapfenstreich für Merkel)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_28_1693_1828_online.pdf (feierliches Gelöbnis 2022)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_45_3033_3096_online.pdf (feierliches Gelöbnis 2022)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_30_2055_2122_online.pdf (feierliches Gelöbnis 2024)
+Hildebrandstr.	2::temp 7435,11514 7322,11177
+Stauffenbergstr.	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
+Reichpietschufer ab Hitzigallee	2::temp 7690,11108 7595,11086
+Reichpietschufer	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
+Hitzigallee	2::temp 7690,11108 7745,11332
+Sigismundstr. ab Hitzigallee	2::temp 7745,11332 7665,11353
+Lützowufer	2::temp 7089,11073 7248,11143 7461,11051 7579,11032
+#: note: allerdings ist 2024 die Sperrung des Stegs unklar
+Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7248,11143
+# REMOVED --- Hiroshimastr.	2::temp 7253,11208 7356,11517
+# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
+# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
+# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
+# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7233,11189 7160,11186 7135,11171
+# REMOVED ---	2::temp 7665,11353 7745,11332
+# REMOVED ---	2::temp 7745,11332 7690,11108
+# REMOVED --- Herkulesufer	2::temp 7595,11086 7575,11076 7252,11188
+',
+         'from' => 1721372400,
+         'id' => 2875,
+         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2024 von 09:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1721494800
+       },
        undef,
        undef,
        undef,
@@ -5522,7 +5560,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
-#: last_checked: 2024-07-10 vvv
+#: last_checked: 2024-07-14 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
 zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
@@ -6032,6 +6070,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024)
+#: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024)
 #: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
@@ -6040,9 +6079,9 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 ',
          'from' => 1718575200,
          'id' => 3648,
-         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, bis 01.08.2024',
+         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 16.08.2024',
          'type' => 'handicap',
-         'until' => 1722524400
+         'until' => 1723820400
        },
        undef,
        undef,
@@ -6655,22 +6694,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/spielstrassen-988767.php (Haus Nr. 18-22)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1445054.php (2024)
-#: XXX außerdem nach den Sommerferien: 1. bis 22. September 2023
-#: note: Länge des Spielstraßenbereichs etwas weniger als 100m; Bordsteine
-# REMOVED --- #: last_checked: 2023-07-02
-#: next_check: 2024-08-22
-	q4::temp::play 14208,12235 14055,11964
-',
-         'from' => 1719439200,
-         'id' => 3815,
-         'recurring' => 1,
-         'text' => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 28. Juni 2024 bis 19. Juli 2024',
-         'type' => 'handicap',
-         'until' => 1721406600
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
@@ -7233,7 +7257,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: also_indoor: traffic (B,T,G)
 #: add_fragezeichen: Ist die Bouchéstr. weiterhin wegen Bauarbeiten gesperrt?
 #: note Halteverbotsschilder bis 08.07.2024 (scheint aber nicht schaffbar zu sein)
-#: last_checked: 2024-07-10
+#: last_checked: 2024-07-19
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-07-08
 	q2::inwork 13489,9456 13357,9313
@@ -7489,7 +7513,19 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'type' => 'handicap',
          'until' => 1722006000
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024) (bis 07.05.2024) (bis 17.05.2024) (bis 07.06.2024) (bis 21.06.2024) (bis 05.07.2024) (bis 31.07.2024)
+#: note: Gehweg nur auf der westlichen Seite, für Radfahrer in beiden Richtungen frei, 2 Ampeln zum Überqueren
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764537508510216685
+#: by: https://pbs.twimg.com/media/GHmMbjuXYAAbLcY?format=jpg&name=large
+	2::inwork 16082,19754 15617,19775
+',
+         'from' => 1709445600,
+         'id' => 4018,
+         'text' => 'Malchower Teichweg: Anbindung an die B2 kann wegen Bauarbeiten gesperrt sein, vom 04.03.2024 07:00 bis 31.07.2024 17:00',
+         'type' => 'gesperrt',
+         'until' => 1722438000
+       },
        undef,
        undef,
        undef,
@@ -7722,7 +7758,7 @@ Ebertstr.	q3::temp 8600,12165 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-07-17 (webcam)
+#: last_checked: 2024-07-19 (webcam)
 #: check_frequency: 3d
 #: next_check: 2024-07-26
 Brandenburger Tor	2::temp 8538,12245 8592,12252
@@ -7849,7 +7885,7 @@ Haeckelstr.	q4::inwork 17379,3932 17468,3979
 #: XXX Sieht nicht nach einem baldigen Ende der Bauarbeiten aus.
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt\'s eine offizielle Wegführung für Radfahrer über den Hochbord.
 #: also_indoor: traffic (ex-H,ex-G,W)
-#: last_checked: 2024-07-10
+#: last_checked: 2024-07-19
 #: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 ',
@@ -8425,6 +8461,21 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
          'text' => 'Nipkowstr.: Bauarbeiten zwischen Büchnerweg und Otto-Franke-Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.07.2024 10:00 bis 30.08.2024 17:00 ',
          'type' => 'handicap',
          'until' => 1725030000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.480108,52.608447,19.07.2024,07:00 (bis 16.08.2024)
+#: source_id: viz2021:13.481613,52.609635,19.07.2024,07:00 (bis 16.08.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1814149414740754617
+#: by: https://pbs.twimg.com/media/GSxWYnnXsAEbN9r?format=jpg&name=medium (Sackgasse, Radfahrer frei im eigentlichen Baubereich; Einbahnstraßenregelung in der Lankestr.)
+#: by: https://pbs.twimg.com/media/GSxWYnqXsAAUWqH?format=jpg&name=medium
+#: by: https://www.berliner-woche.de/karow/c-verkehr/blankenburger-chaussee-gesperrt_a421315
+	q4::inwork; 15050,22765 15141,22896
+',
+         'from' => 1721278800,
+         'id' => 4119,
+         'text' => 'Lanker Str.: Einbahnstraßenregelung zwischen Schräger Weg und Bahnhofstr., vom 19.07.2024 07:00 bis 16.08.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1723820400
        }
      
 );
