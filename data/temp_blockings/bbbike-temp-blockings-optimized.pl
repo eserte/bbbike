@@ -3960,44 +3960,7 @@ Schlossinsel	2::temp 22093,4499 22076,4422
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147341611 (inaktiv)
-#: source_id: viz2021:13.36257,52.50591,11.04.2024,14:00 (bis 11.04.2024, zu spät gesehen) (inaktiv)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschränkung)
-#: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Großer Zapfenstreich 2021, neuer Termin)
-#: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großes Zapfenstreichs)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Großer Zapfenstreich für Merkel)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_28_1693_1828_online.pdf (feierliches Gelöbnis 2022)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_45_3033_3096_online.pdf (feierliches Gelöbnis 2022)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_30_2055_2122_online.pdf (feierliches Gelöbnis 2024)
-Hildebrandstr.	2::temp 7435,11514 7322,11177
-Stauffenbergstr.	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
-Reichpietschufer ab Hitzigallee	2::temp 7690,11108 7595,11086
-Reichpietschufer	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
-Hitzigallee	2::temp 7690,11108 7745,11332
-Sigismundstr. ab Hitzigallee	2::temp 7745,11332 7665,11353
-Lützowufer	2::temp 7089,11073 7248,11143 7461,11051 7579,11032
-#: note: allerdings ist 2024 die Sperrung des Stegs unklar
-Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7248,11143
-# REMOVED --- Hiroshimastr.	2::temp 7253,11208 7356,11517
-# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
-# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
-# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
-# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7233,11189 7160,11186 7135,11171
-# REMOVED ---	2::temp 7665,11353 7745,11332
-# REMOVED ---	2::temp 7745,11332 7690,11108
-# REMOVED --- Herkulesufer	2::temp 7595,11086 7575,11076 7252,11188
-',
-         'from' => 1721372400,
-         'id' => 2875,
-         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2024 von 09:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1721494800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4943,6 +4906,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: by: https://berliner-abendblatt.de/berlin-news/mehrere-berliner-bauprojekte-von-signa-insolvent-id241669
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/passauer-stra%C3%9Fe-1%E2%80%933-no-1-passauer.531/page-3#post-22316
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9359
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/f1xVVWdH7BUSbxjFsOp6AEXWZMJyBuoG9emzGe5M/oJAIYPaA/64-Anlagen/09/attach_F1D1.pdf (Baustelleneinrichtung bis 31.03.2025 genehmigt)
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="11"
@@ -4950,6 +4915,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2024-06-25
 #: check_frequency: 120d
+#: next_check: 2025-03-31
 	q4::inwork 6021,10405 6116,10688
 ',
          'from' => undef,
@@ -6565,7 +6531,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder in der Umgebung bis 04.10.2024
 #: also_indoor: traffic (re-G)
-#: last_checked: 2024-07-05
+#: last_checked: 2024-07-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2024-10-04
 	q4::inwork -3269,12406 -3260,12540
@@ -6705,10 +6671,12 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10935 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10936 (Anfrage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
 #: source_id[inactive]: bvg2021:190#BVG320324_0
-# REMOVED --- #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
+# REMOVED --- #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023
+#: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert)
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2024-06-19 vvv
+#: last_checked: 2024-07-20 vvv
 # REMOVED --- #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-05-10 vvv
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
@@ -6816,7 +6784,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
 #: note: Anfang März 2024: freitags kann man anscheinend auch schon früher (um 17h) hier langfahren; Mai 2025: donnerstags bereits um 16:40 Uhr
-#: last_checked: 2024-05-09 (mapillary)
+#: last_checked: 2024-07-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -8204,6 +8172,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/weitraeumige-umleitungen-notwendig_a419753
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9186 (Anfrage)
 	q4::inwork 2290,2864 2570,2844 2625,2850
 ',
          'from' => 1719291600,

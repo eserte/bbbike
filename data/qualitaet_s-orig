@@ -301,7 +301,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-07-17
+#: last_checked: 2024-07-20
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -7511,7 +7511,7 @@ Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 #: priority: #C
 #: source_id: 2147344935 (inaktiv)
 #: source_id: 2147347061 (Leitungsbau, bis 7.5.2021) (inaktiv)
-#: last_checked: 2024-04-17
+#: last_checked: 2024-07-13 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-05-07
 Veitstr.: Fahrbahn Beton	Q0- 1886,19835 1606,19775 1557,19765
@@ -12895,7 +12895,7 @@ Münstersche Str.: Kopfsteinpflaster	Q2 3840,9683 3869,9699
 Münstersche Str.: Asphalt	Q0 3869,9699 3980,9761
 #: next_check_id: HEER-2020
 #: XXX nach der geplanten Sanierung hoffentlich asphaltiert
-#: last_checked: 2024-02-17
+#: last_checked: 2024-07-13 (mapillary)
 #: check_frequency: 360d
 Heerstr.: holprige, enge Radwege	Q1- -2317,11254 -2413,11283 -2476,11301 -2871,11423 -3069,11487
 (Parkweg im Zuge der Furkastr.): wassergebundene Decke	Q1- 10322,2815 10318,2839 10329,2882
@@ -13192,11 +13192,13 @@ Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17659,8698
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-11-26 --- #: check_frequency: 45d
 Georg-Klingenberg-Str.: Asphalt	Q0 17659,8698 17668,8696 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17659,8698 17640,8627
-#: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2024-07-17
-Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1+ 17640,8627 17619,8558 17599,8485 17581,8422
+Adolf-Wermuth-Allee: Asphalt	Q0 17640,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17627,8556 17608,8483 17588,8413
+#: next_check_id: PARKSTADTKARLSHORST-2021
+#: last_checked: 2024-07-20
+#: check_frequency: 90d
+An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17701,8851 17699,8843 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17674,8738 17668,8696
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2024-03-09 (architektur-urbanistik) --- #: check_frequency: 30d
@@ -13500,7 +13502,7 @@ Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 # 
 An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125
 #: next_check_id: MARIENUFER-2023
-#: last_checked: 2024-07-10
+#: last_checked: 2024-07-20
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 An der Villa Bolle: Baustraße	Q2 22668,3125 22477,3109
@@ -13533,6 +13535,7 @@ Alte Potsdamer Str.: Betonpflaster	Q0- 8280,11296 8318,11324 8375,11368 8389,113
 # REMOVED (ersetzte) --- Alte Potsdamer Str.: Kleinsteinpflaster	Q1 8389,11378 8375,11368
 # 
 #: by: https://www.infravelo.de/projekt/ollenhauerstrasse/ (1. Quartal 2025 - 4. Quartal 2028)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12437
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: next_check: 2028-12-31 vvv
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5243,18162 5301,18447 5324,18560 5345,18675
@@ -23369,10 +23372,9 @@ Schlehdornsteig: Wechsel zwischen Kopfsteinpflaster und Verbundsteinpflaster	Q1-
 Mittelstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 104,2802 50,3031
 # 
 #: by: Fabian Jakob: vvv
-#: confirmed_by: srt (schlechtes Kopfsteinpflaster -> ...)
-Trautenauer Str.: Kopfsteinpflaster	Q2-; 17753,8290 17771,8349 17794,8429
-#: corrected_by: srt (schlechtes Kopfsteinpflaster -> Kopfsteinpflaster, Q2- -> ...)
-Trautenauer Str.: unbefestigte Straße	Q2; 17794,8429 17771,8349 17753,8290
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> Kopfsteinpflaster	Q2-; bzw. unbefestigte Straße	Q2;)
+#: corrected_by: srt (neu gemacht)
+Trautenauer Str.: Asphalt, letzte Deckschicht fehlt	Q1 17753,8290 17771,8349 17794,8429
 #: confirmed_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Trautenauer Str.: Kopfsteinpflaster	Q2- 17794,8429 17813,8508
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)

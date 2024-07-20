@@ -220,6 +220,7 @@ Kreisverkehr	Roundabout -18722,5775
 Kreisverkehr	Roundabout -18598,5444
 Kreisverkehr	Roundabout 17183,14358
 #: by: mapillary vvv
+Kreisverkehr	Roundabout 1717,29541
 Kreisverkehr	Roundabout 938,28349
 Kreisverkehr	Roundabout -8821,-3036
 Kreisverkehr	Roundabout -8782,-2910
@@ -1533,7 +1534,7 @@ ausgeschildert nach Bernau	CP; 32543,18082 32537,18066 32519,18076
 ausgeschildert Sophie-Charlotte-Platz	CP; 3064,11657 3144,11659 3159,11562
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: last_checked: 2024-07-17 vvv
+#: last_checked: 2024-07-20 vvv
 #: check_frequency: 180d vvv
 # REMOVED (wieder da) --- #: note: hier ist das Schild wohl verloren gegangen? --- Henriette-Lustig-Str.: nicht ausgeschildert	CS 21476,5048 21611,5119
 Henriette-Lustig-Str.: nicht ausgeschildert	CS 21611,5119 21631,5079
@@ -1735,7 +1736,7 @@ Upstallweg: nicht ausgeschildert	CP2; 17915,10350 17960,10378
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9724 (Anfrage)
-#: last_checked: 2024-06-19 vvv
+#: last_checked: 2024-07-20 vvv
 #: check_frequency: 60d vvv
 #: historical_note: bis Januar/Februar 2024: "stattdessen Wegweiser zu fünf Straßen im Wohngebiet"
 Ruth-Baumgarte-Str.: nicht ausgeschildert	CS; 17794,8429 17738,8450
@@ -1852,7 +1853,7 @@ Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wann sind die Straßen ausgeschildert? vvv
-#: last_checked: 2024-07-14 vvv
+#: last_checked: 2024-07-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED (ausgeschildert) --- #: note: nur ein kleines provisorisches Papierschild an der Kreuzung Ulrich-Plenzdorf-Str. hängt an der Hauswand --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15163,10758 15151,10699
 # REMOVED (ausgeschildert) --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15151,10699 15140,10647 15138,10638
@@ -1882,12 +1883,11 @@ Paradiesstr.: nicht ausgeschildert	CP2; 21115,271 21171,222
 # 
 ausgeschildert "Jelena-Šantić-Friedenspark"	CP2; 22854,14018 22903,14063
 # 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_02_0141_0296_online.pdf
-#: add_fragezeichen: Hängen hier mittlerweile Straßenschilder?
-#: last_checked: 2024-06-07
-#: check_frequency: 45d
-# REMOVED --- #: next_check: 2023-02-13
-Zur Märkischen Aue: nicht ausgeschildert	CS 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17900,10730 17892,10713 17870,10619 17856,10560 17864,10537
+# REMOVED (mittlerweile ausgeschildert) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_02_0141_0296_online.pdf --- #: add_fragezeichen: Hängen hier mittlerweile Straßenschilder? --- #: last_checked: 2024-07-20 --- #: check_frequency: 45d --- # REMOVED --- #: next_check: 2023-02-13 --- Zur Märkischen Aue: nicht ausgeschildert	CS 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17900,10730 17892,10713 17870,10619 17856,10560 17864,10537
+# 
+Agnes-Kraus-Weg: nicht ausgeschildert, entlang des Tränkegrabens	CS 17156,10164 17157,10173 17143,10186 17144,10297 17163,10374 17239,10632 17249,10651 17255,10662 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615
+# REMOVED (in Höhe Zur Märkischen Aue hängen Schilder) --- Agnes-Kraus-Weg: nicht ausgeschildert, entlang des Tränkegrabens	CS 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584
+Agnes-Kraus-Weg: nicht ausgeschildert, entlang des Tränkegrabens	CS 17999,10584 18034,10567 18059,10556 18150,10543
 # 
 Havelwerke	CS -1854,14989 -1945,15018 -2009,15033 -2070,15046
 Havelwerke	CS -1985,14916 -1946,14907 -1937,14955 -1959,14962 -1945,15018

@@ -877,8 +877,9 @@ Groß-Köris - Motzen: Verbundsteinpflaster	Q1 23775,-22788 23482,-22742
 #: by: https://www.o-sp.de/download/lbvbrandenburg/193421 (Lageplan 1)
 #: by: https://www.o-sp.de/download/lbvbrandenburg/193435 (Lageplan 13)
 #: source_id: LS/222-W/24/007 (Baufeldfreimachung, bis 23.02.2024) (bis 29.02.2024) (inaktiv)
-#: last_checked: 2023-06-04
-#: next_check: 2024-09-01
+#: last_checked: 2024-07-11 (mapillary)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2024-09-01
 Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26787,-3194 26748,-3285 26651,-3554 26636,-3596 26562,-3781 26554,-3814 26482,-4108 26447,-4251 26319,-4776 26228,-5150 26259,-5681 26085,-5839 25996,-5921
 Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26376,-6676 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26782,-8032 26749,-8481 26727,-8668 26702,-8750 26679,-8825 26589,-9108 26429,-9618 26381,-9753 26365,-9875 26376,-9924 26386,-9964 26420,-10035 26434,-10054
 #: by: ^^^
@@ -1996,14 +1997,14 @@ Russ. Kolonie: Parkweg	Q1 -13036,342 -13003,384 -12968,421 -12918,431 -12850,412
 Charlottenstr. (Potsdam): Asphalt	Q0 -12285,-1174 -12359,-1096 -12488,-999
 Posthofstr.: Kopfsteinpflaster	Q2 -12552,-1233 -12359,-1096
 Brandenburgische Str. (Hennigsdorf): Asphalt	Q0 -4642,25672 -4496,26002 -4359,26315
+#: by: mapillary
+Brandenburgische Str. (Hennigsdorf): Asphalt	Q0 -4359,26315 -4048,26914
 Heideweg (Hennigsdorf): Asphalt	Q0 -4121,26209 -4359,26315 -4600,26443
 Waidmannsweg (Hennigsdorf): Asphalt	Q0 -4293,27146 -4600,26443
 #: by: mapillary
 Waidmannsweg (Hennigsdorf): unbefestigte Straße	Q2+ -4600,26443 -4929,25719
-#: add_fragezeichen: ist hier tatsächlich auch asphaltiert? vvv
-Brandenburgische Str. (Hennigsdorf): Asphalt	Q0 -4359,26315 -4048,26914
+#: add_fragezeichen: ist hier tatsächlich auch asphaltiert?
 Heideweg (Hennigsdorf): Asphalt	Q0 -3738,26172 -4121,26209
-#: add_fragezeichen ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Hafenstr. (Hennigsdorf): Asphalt	Q0 -2808,25489 -2825,25293 -2869,25239 -2933,25212 -3203,25328
 #Bahnstr. (Hohen Neuendorf): schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 2071,29185 2059,28767
 #Hainweg (Hohen Neuendorf): Feldweg	Q2 2059,28767 2062,28409 2037,28393
@@ -2048,7 +2049,7 @@ Fahrbahn asphaltiert, freiwillige Radwege auf Gehweg	Q0 26623,-17859 26533,-1785
 	Q0 -2446,25386 -2356,25540 -2326,25625 -2130,26026 -2109,26055 -1941,26218 -926,27132 -615,27411 -212,27762 5,27813 184,27837 281,27968 375,28109 524,28171 869,28320 938,28349 978,28400 1007,28446 1009,28662 1020,28712 1078,28830 1124,28923 1234,29120 1304,29256 1366,29416 1470,29391 1492,29386 1596,29362
 	Q0 -3049,25593 -3036,25575 -2808,25489 -2446,25386 -2366,25297 -2170,25074 -2139,25038 -1996,24889 -1950,24762 -1944,24634 -1982,24514
 #	Q0 938,28349 1195,28435 1539,28328 2003,28396
-#	Q0 2853,28918 3450,28728 4171,28472 4578,28328 4807,28338
+#	Q0 2853,28918 3483,28719 4171,28472 4578,28328 4807,28338
 	Q0 4167,29307 4267,29149 4408,28909 4435,28862 4807,28338 5486,27745 5643,27752 5939,27781 6880,27351
 	Q0 5939,27781 7125,28106 7365,28253 7546,28255 8303,28478
 	Q0 11078,30562 10991,30494 9996,29712 9640,29628 9507,29505 9405,29434 9174,29243 9060,29111 8937,28846
@@ -7744,7 +7745,7 @@ Schleuse Schönwalde - Schönwalde: Schotter	Q2 -11417,22161 -11456,22120 -11454,2
 Schleuse Schönwalde - Schönwalde: Asphalt	Q0 -11454,22094 -11450,21930 -11599,21799 -11322,21654 -11273,21581 -11272,21497 -10897,21378 -10854,21315 -10642,21204 -10606,21259 -10373,21158 -10343,21093
 nördlich des Havellandkanals: Schotter	Q2 -12182,22042 -11570,22082 -11471,22178 -11417,22161 -11351,22090 -10425,22139
 #: note: laut "Berliner Umland" gut geeigneter Radweg, nur der westliche Teil ist witterungsabhängige Strecke
-Am Havelkanal: Asphalt	Q0 -3408,23277 -3491,23179 -3479,23141 -3996,22969 -4635,22801 -7161,22297 -8625,22267
+Am Havelkanal: Asphalt	Q0 -3408,23277 -3491,23179 -3479,23141 -4012,22963 -4635,22801 -7161,22297 -8625,22267
 Am Havelkanal: Schotter	Q2 -8625,22267 -9012,22250
 Am Havelkanal: Sand	Q3 -9012,22250 -9046,22376
 #: note: laut "Berliner Umland" und laut neuer ADFC-Karte gut geeigneter Radweg
@@ -9158,6 +9159,9 @@ Marwitzer Str.: Asphalt	Q2+ -10417,17770 -10344,17792 -10239,17791 -10114,17740
 #: by ^^^
 # 
 #: by: mapillary vvv
+Am Neuen Kanal: Asphalt mit Unebenenheiten	Q1- -4012,22963 -3994,23162 -3961,23204
+Trappenallee: Plattenweg, teilweise mit Asphaltstreifen in der Mitte	Q2+ -3961,23204 -3503,23811
+Waldstr. (Hohen Neuendorf): Asphalt	Q0 1604,29508 1717,29541 1744,29537 1873,29566 2015,29598 2199,29639
 Schönfeld - Tempelfelde: überasphaltierter Betonplattenweg	Q2 32896,31165 32722,31273
 Schönfeld - Tempelfelde: zweispuriger Betonplattenweg, Längsplatten	Q2 32722,31273 33310,33365
 Straße der Einheit (Falkensee): Asphalt	Q0 -11205,15994 -11920,16276

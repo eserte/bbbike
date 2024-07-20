@@ -32852,6 +32852,8 @@ EOF
 #: by: https://www.bz-berlin.de/berlin/benko-baustellen (Baustopp?)
 #: by: https://berliner-abendblatt.de/berlin-news/mehrere-berliner-bauprojekte-von-signa-insolvent-id241669
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/passauer-stra%C3%9Fe-1%E2%80%933-no-1-passauer.531/page-3#post-22316
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9359
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/f1xVVWdH7BUSbxjFsOp6AEXWZMJyBuoG9emzGe5M/oJAIYPaA/64-Anlagen/09/attach_F1D1.pdf (Baustelleneinrichtung bis 31.03.2025 genehmigt)
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="11"
@@ -32859,6 +32861,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2024-06-25
 #: check_frequency: 120d
+#: next_check: 2025-03-31
 	q4::inwork 6021,10405 6116,10688
 EOF
      },
@@ -34463,7 +34466,7 @@ EOF
        data  => <<EOF,
 #: osm_watch: way id="8069460" version="16"
 #: also_indoor: traffic (G,H(ungenau))
-	2::inwork 2885,28906 3450,28728
+	2::inwork 2885,28906 3483,28719
 EOF
      },
      { from  => 1633212000, # 2021-10-03 00:00
@@ -39133,7 +39136,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder in der Umgebung bis 04.10.2024
 #: also_indoor: traffic (re-G)
-#: last_checked: 2024-07-05
+#: last_checked: 2024-07-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2024-10-04
 	q4::inwork -3269,12406 -3260,12540
@@ -39755,10 +39758,12 @@ EOF
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10935 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10936 (Anfrage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
 #: source_id[inactive]: bvg2021:190#BVG320324_0
-# REMOVED --- #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023, Baustellenschild der Wasserbetriebe bis 10.05.2024
+# REMOVED --- #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023
+#: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert)
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2024-06-19 vvv
+#: last_checked: 2024-07-20 vvv
 # REMOVED --- #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-05-10 vvv
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
@@ -40153,7 +40158,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
 #: note: Anfang März 2024: freitags kann man anscheinend auch schon früher (um 17h) hier langfahren; Mai 2025: donnerstags bereits um 16:40 Uhr
-#: last_checked: 2024-05-09 (mapillary)
+#: last_checked: 2024-07-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -43677,6 +43682,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/weitraeumige-umleitungen-notwendig_a419753
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9186 (Anfrage)
 	q4::inwork 2290,2864 2570,2844 2625,2850
 EOF
      },
