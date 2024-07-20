@@ -8,13 +8,18 @@ push @temp_blocking,
 #: by: https://www.siegessaeule.de/magazin/lesbisch-schwules-stadtfest-2021-auf-der-kippe/ (Absage)
 #: by: https://www.stadtfest.berlin/de/index.html?date=20220515
 #: by: https://www.berlin.de/events/2094393-2229501-lesbischschwules-stadtfest.html
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1814521868080050462
+#: by: https://pbs.twimg.com/media/GSsvMEiWsAALOVt?format=jpg&name=large
 	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
 	2::temp 6729,10212 6941,10329 6971,10346
-	2::temp 6628,10318 6626,10155
+	2::temp 6636,10492 6628,10318 6626,10155
 	2::temp 6487,10277 6628,10318 6719,10347
-	2::temp 6719,10347 6729,10212 6739,10120
-	2::temp 6609,10147 6630,9990
+	2::temp 6753,10446 6719,10347 6729,10212 6739,10120
 	2::temp 6941,10329 6978,10319 7036,10313
+#: note: laut Karte nur eingeschränktes Halteverbot vvv
+Eisenacher Str. ab Nollendorfstr.	q4::temp 6739,10120 6741,10017
+Gossowstr.	q4::temp 6609,10147 6630,9990
+#: note ^^^
 ',
          'from' => 1721340000,
          'id' => 74,
@@ -30,7 +35,7 @@ push @temp_blocking,
                               '2021-10-25T00:00:00'
                             ]
                           ],
-         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Gossowstr./Nollendorfplatz (20.7.2024 und 21.7.2024)',
+         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (20.7.2024 und 21.7.2024)',
          'type' => 'gesperrt',
          'until' => 1721599199
        },
@@ -5796,8 +5801,8 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: last_checked: 2024-06-13 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-06-30 vvv
-#: osm_watch: way id="1043813287" version="3"
-#: osm_watch: way id="1043813288" version="2"
+# REMOVED --- #: osm_watch: way id="1043813287" version="3"
+# REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 # REMOVED (offen) --- #: XXX teilweise Freigabe am 3.6.2024 (voraussichtlich!) --- #: next_check: 2024-06-03 ---	q4::inwork 13996,16959 13974,16924 13870,16837
 	q4::inwork 13870,16837 13794,16773
@@ -7948,17 +7953,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'type' => 'handicap',
          'until' => 1726848000
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/spielstrasse-vor-schule_a417921
-	q4::temp::play 3217,12239 3072,12222
-',
-         'from' => 1718229600,
-         'id' => 4073,
-         'recurring' => 1,
-         'text' => 'Schustehrusstr.: zwischen Nithackstr. und Kaiser-Friedrich-Str mittwochs von 14 bis 17 Uhr temporäre Spielstraße, vom 14. Juni 2024 bis 19. Juli 2024',
-         'type' => 'handicap',
-         'until' => 1721426399
-       },
+       undef,
        undef,
        undef,
        {
@@ -8370,17 +8365,7 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (H,G,B,T,W)
-#: note: laut rbb
-	q4::inwork 4381,9620 4351,9633 4224,9690
-',
-         'from' => 1720469919,
-         'id' => 4111,
-         'text' => 'Pommersche Str.: zwischen Bayerischer und Württembergischer Str. Sperrung, evtl. sind auch Radfahrer betroffen, bis 19.07.2024',
-         'type' => 'handicap',
-         'until' => 1721426400
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (B,T,W)
 #: note: bei rbb
