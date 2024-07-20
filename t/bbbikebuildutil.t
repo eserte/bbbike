@@ -23,10 +23,10 @@ BEGIN {
 use IO::Pipe ();
 use File::Temp qw(tempdir);
 
-use BBBikeBuildUtil qw(get_pmake get_modern_perl module_path module_version monkeypatch_manifind);
+use BBBikeBuildUtil qw(get_pmake get_modern_perl module_path module_version monkeypatch_manifind is_system_perl);
 use BBBikeUtil qw(save_pwd2);
 
-plan tests => 17;
+plan tests => 24;
 
 my $pmake = get_pmake;
 ok $pmake, "pmake call worked, result is $pmake";
@@ -123,6 +123,33 @@ SKIP: {
 
 {
     is module_version("BBBikeBuildUtil"), $BBBikeBuildUtil::VERSION, "module_version of BBBikeBuildUtil";
+}
+
+{
+    my $tmpdir = tempdir(TMPDIR => 1, CLEANUP => 1);
+    ok BBBikeBuildUtil::is_same_file(__FILE__, __FILE__), 'same file';
+    ok !BBBikeBuildUtil::is_same_file(__FILE__, $^X), 'not the same file';
+
+    { open my $ofh, ">", "$tmpdir/original" or die $! };
+
+ SKIP: {
+	my $symlink_exists = eval { symlink("",""); 1 };
+	skip "No symlink support", 2 if !$symlink_exists;
+
+	symlink("$tmpdir/original", "$tmpdir/symlink");
+	ok BBBikeBuildUtil::is_same_file("$tmpdir/original", "$tmpdir/symlink"), 'same file for symlinks';
+	ok BBBikeBuildUtil::is_same_file("$tmpdir/symlink", "$tmpdir/original"), 'same file for symlinks, reversed';
+    }
+
+    link "$tmpdir/original", "$tmpdir/hardlink";
+    ok BBBikeBuildUtil::is_same_file("$tmpdir/original", "$tmpdir/hardlink"), 'same file for hardlinks';
+}
+
+SKIP: {
+    skip "No is_system_perl check available for this system", 2
+	if $^O ne 'linux' || $^X ne '/usr/bin/perl';
+    ok is_system_perl(), 'running on system perl';
+    ok is_system_perl('/usr/bin/perl'), '/usr/bin/perl is system perl';
 }
 
 # should be last (as it is monkeypatching things)

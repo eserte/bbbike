@@ -15,10 +15,10 @@ package BBBikeBuildUtil;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = '0.09';
+$VERSION = '0.10';
 
 use Exporter 'import';
-@EXPORT_OK = qw(get_pmake run_pmake module_path module_version get_modern_perl monkeypatch_manifind);
+@EXPORT_OK = qw(get_pmake run_pmake module_path module_version get_modern_perl monkeypatch_manifind is_system_perl);
 
 use File::Glob qw(bsd_glob);
 
@@ -172,6 +172,32 @@ sub monkeypatch_manifind {
 	    warn "INFO: monkey-patched ExtUtils::Manifest::manifind.\n";
 	}
     }
+}
+
+# not exported
+sub is_same_file ($$) {
+    my($file1, $file2) = @_;
+    return 1 if $file1 eq $file2;
+
+    my @stat1 = stat($file1) or do { warn "Cannot stat $file1: $!"; return 0 };
+    my @stat2 = stat($file2) or do { warn "Cannot stat $file2: $!"; return 0 };
+
+    if ($stat1[0] == $stat2[0] && $stat1[1] == $stat2[1]) {
+	return 1; # hardlinked
+    } elsif (-l $file1 && readlink($file1) eq $file2) {
+	return 1; # symlinked
+    } elsif (-l $file2 && readlink($file2) eq $file1) {
+	return 1; # symlinked
+    } else {
+	return 0;
+    }
+}
+
+sub is_system_perl (;$) {
+    my($check_perl) = @_;
+    $check_perl = $^X if !defined $check_perl;
+    my $system_perl = $^O =~ /bsd/i ? '/usr/local/bin/perl' : '/usr/bin/perl';
+    is_same_file($check_perl, $system_perl);
 }
 
 1;
