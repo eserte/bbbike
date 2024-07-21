@@ -127,6 +127,7 @@ init_apt() {
 # - tzdata:                 t/geocode_images.t needs to set TZ
 # - libgif-dev:             required for GIF support when building Imager
 # - libproj-dev:            for Alien::Proj, but use only if new enough
+# - sqlite3:                for Alien::sqlite
 # - curl:                   make sure it's available for downloading cpm
 install_non_perl_dependencies() {
     if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "buster" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
@@ -189,7 +190,7 @@ install_non_perl_dependencies() {
 	# probably too old here for Alien::Proj, needs minimum 6.1
         libproj_packages=
     else
-	libproj_packages=libproj-dev
+	libproj_packages="libproj-dev sqlite3"
     fi
 
     if [ "$USE_SYSTEM_PERL" = "0" ]
