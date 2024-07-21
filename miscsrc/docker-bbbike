@@ -585,6 +585,8 @@ WORKDIR bbbike
 # "-e" -> init_travis must not be run anymore
 # init_env_vars does not work in a Dockerbuild environment. Set some env vars manually
 ENV CODENAME $real_distver
+
+ENV BBBIKE_DOCKER 1
 EOF
 
     # Apply --build-env

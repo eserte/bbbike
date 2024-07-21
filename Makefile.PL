@@ -453,6 +453,7 @@ sub build_prereq {
 	    }
 	    if ( # XXX actually, check for "batch environment where difficult modules cannot be installed easily"
 		($ENV{TRAVIS}||'') eq 'true' #    travis
+		|| $ENV{BBBIKE_DOCKER}       # or miscsrc/docker-bbbike
 		|| -f "/.dockerenv"          # or docker
 	       ) {
 		next if $_->[REQTABLE_MODNAME] =~ m{^(
