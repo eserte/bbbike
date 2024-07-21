@@ -126,6 +126,7 @@ init_apt() {
 # - poppler-utils:          provides pdfinfo for testing
 # - tzdata:                 t/geocode_images.t needs to set TZ
 # - libgif-dev:             required for GIF support when building Imager
+# - libproj-dev:            for Alien::Proj, but use only if new enough
 # - curl:                   make sure it's available for downloading cpm
 install_non_perl_dependencies() {
     if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "buster" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
@@ -183,6 +184,14 @@ install_non_perl_dependencies() {
         dejavu_package=fonts-dejavu
     fi
 
+    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" ]
+    then
+	# probably too old here for Alien::Proj, needs minimum 6.1
+        libproj_packages=
+    else
+	libproj_packages=libproj-dev
+    fi
+
     if [ "$USE_SYSTEM_PERL" = "0" ]
     then
 	imager_ext_packages=libgif-dev
@@ -190,7 +199,7 @@ install_non_perl_dependencies() {
 	imager_ext_packages=
     fi
 
-    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package $cpm_dep_packages $imager_ext_packages
+    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package $cpm_dep_packages $imager_ext_packages $libproj_packages
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver
