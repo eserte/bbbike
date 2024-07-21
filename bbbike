@@ -341,7 +341,6 @@ use your qw($Karte::Standard::obj $Karte::Standard::init_scrollregion
 	    $BikePower::has_xs
 	    $Radwege::bez @Radwege::bbbike_category_order
 	    %Radwege::category_plural
-	    $FURadar::use_map $FURadar::progress
 	    $PLZ::VERBOSE $Devel::Trace::TRACE
 	    $Tk::Config::xlib
 	   );
@@ -17700,75 +17699,6 @@ sub show_overview_populate {
 
     my($km100_pixel) = ($ov_transpose->(100000,0))[0] - ($ov_transpose->(0,0))[0];
 
-    # Radar button
-    if ($advanced && $devel_host) {
-	my $radar_onoff = 0;
-	my $radar_button;
-	my $show_radar_image;
-	$radar_button = $overview_top->Checkbutton
-	    (-font => $font{'small'},
-	     -indicatoron => 0,
-	     -padx => 0,
-	     -pady => ($os eq 'win' ? 0 : 1), # for Checkbuttons 1, for Buttons 0 (why?)
-	     -highlightthickness => 0,
-	     -takefocus => 0,
-	     -text => 'Radar',
-	     -variable => \$radar_onoff,
-	     -command => sub {
-		 $radar_button->after(50, $show_radar_image);
-	     }
-	    );
-	$show_radar_image = sub {
-	    if ($radar_image) {
-		eval q{ $radar_image->delete };
-	    }
-	    $overview_canvas->delete('radarimage');
-	    return if !$radar_onoff;
-
-	    IncBusy($top);
-	    $progress->Init(-label => M"Radarschirm");
-	    eval {
-		require FURadar;
-		$FURadar::progress = $progress;
-		$FURadar::VERBOSE = $verbose;
-		#	       $FURadar::use_map = ($show_overview_mode eq 'region'
-		#				    ? 'FURadar2' : 'FURadar');
-		$FURadar::use_map = 'FURadar2'; # the only left...
-		# XXXX use fetch and cache routine
-		my $origimgfile = FURadar::fetch();
-		#XXX	    my $origimgfile = FURadar::latest_dwd();
-		if ($origimgfile) {
-		    my $time = (stat($origimgfile))[STAT_MODTIME];
-		    my $imgfile = FURadar::interesting_parts
-			($origimgfile,
-			 -km100pixel => $km100_pixel);
-		    if (-r $imgfile) {
-			$radar_image = $overview_canvas->Photo(-file => $imgfile);
-			my($xoff,$yoff) = ($show_overview_mode eq 'region'
-					   ? (3,20)
-					   : $ov_transpose->(0,0));
-			$overview_canvas->createImage
-			    ($xoff, $yoff,
-			     -image => $radar_image,
-			     -tags => 'radarimage');
-			foreach my $raise (qw(g gP gD gBO O o)) { # XXX evtl. andere Tags auch raisen
-			    $overview_canvas->raise($raise);
-			}
-		    }
-		    if ($time) {
-			$balloon->attach($radar_button,
-					 -msg => scalar localtime $time);
-		    }
-		}
-	    };
-	    warn __LINE__ . ": $@" if $@;
-	    $progress->Finish;
-	    DecBusy($top);
-	};
-	$radar_button->configure(-selectcolor => $radar_button->cget(-background));
-	$radar_button->place("-x" => $button_x+2, "-y" => 2);
-    }
-
     my @layer_errors;
 
     # Zeichnen von Gew‰ssern, S-Bahnen, Regionalbahnen, Straﬂen
@@ -22204,7 +22134,7 @@ sub make_backup {
 use your qw($StrassenNetz::VERBOSE $Strassen::VERBOSE $wettermeldung2::VERBOSE
 	    $Tk::SRTProgress::VERBOSE
 	    $GfxConvert::VERBOSE $Hooks::VERBOSE
-	    $FURadar::VERBOSE);
+	   );
 
 # Setzt die VERBOSE-Variable in den geladenen Modulen
 ### AutoLoad Sub
@@ -22214,7 +22144,6 @@ sub set_verbose {
     $Tk::SRTProgress::VERBOSE = $verbose;
     $GfxConvert::VERBOSE      = $verbose;
     $Hooks::VERBOSE           = $verbose;
-    $FURadar::VERBOSE         = $verbose;
     $PLZ::VERBOSE             = $verbose;
 }
 

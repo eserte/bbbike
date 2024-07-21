@@ -81,7 +81,6 @@ ESRI/Shapefile/Projection.pm
 ESRI/TODO
 ESRI/esri2bbd.pl
 ESRI/t/shapefile.t
-FURadar.pm
 GIS/Globe.pm
 GIS/NSD.pm
 GIS/globe_to_bbd.pl
@@ -144,9 +143,6 @@ Karte/Cityinfo.pm
 Karte/Deinplan.pm
 Karte/Demap2002.pm
 Karte/ETRS89.pm
-Karte/FURadar.pm
-Karte/FURadar2.pm
-Karte/FURadar3.pm
 Karte/GDF.pm
 Karte/GIS.pm
 Karte/GISmap.pm

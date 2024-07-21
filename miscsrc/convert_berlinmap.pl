@@ -1,16 +1,14 @@
-#!/usr/local/bin/perl -w
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
-# $Id: convert_berlinmap.pl,v 1.43 2007/08/02 21:55:32 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2003,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # Hiermit können die Koeffizienten für die lineare Regression berechnet werden
@@ -25,6 +23,7 @@ use lib ("$FindBin::RealBin/..",
 use Cov;
 use Getopt::Long;
 use strict;
+use warnings;
 
 my @berlinmap_data = split(/\n/, <<'EOF');
 # real (hafas)	berlinmap
@@ -389,43 +388,6 @@ if (0) {
     }
 }
 
-
-# Koordinaten der Radarkarte vom Meteorologischen Institut der FU
-# Vergrößerte Karte (nur Brandenburg) (obsolet)
-my @furadar_data = split(/\n/, <<'EOF');
-# hafas         radar data
-88867,-4205	436,277	# Frankfurt/Oder
-49206,68859	364,120 # Angermünde
--30679,56900	203,134 # Neuruppin
-76030,-70384	410,401	# Cottbus
--101605,65048	60,120	# Wittenberge
-#1979,28091	263,190	# Invalidensiedlung Frohnau, Nordwestspitze
-#-10735,459	233,261	# Glienicker Brücke
-#33537,2687	337,263	# Dämeritzsee (Grenze Berlin/Erkner an der Spree)
-EOF
-
-# Koordinaten der Radarkarte vom Meteorologischen Institut der FU
-# Karte von Norddeutschland (die beiden anderen sind veraltet)
-my @furadar2_data = split(/\n/, <<'EOF');
-# hafas         radar data
-88867,-4205	338,273	# Frankfurt/Oder
-49206,68859	303,194 # Angermünde
-76030,-70384	324,334	# Cottbus
--40974,-60689	210,322	# Lutherstadt Wittenberg
--12919,-1132	234,264	# Potsdam (Fr.-Ebert-Str.)
-EOF
-
-# Koordinaten der Radarkarte vom Meteorologischen Institut der FU
-# Karte von Brandenburg (obsolet)
-my @furadar3_data = split(/\n/, <<'EOF');
-# hafas         radar data
-88867,-4205	419,265	# Frankfurt/Oder
-49206,68859	349,107 # Angermünde
-76030,-70384	395,388	# Cottbus
--40974,-60689	45,108	# Wittenberge
--12919,-1132	215,255	# Potsdam (Fr.-Ebert-Str.)
-EOF
-
 # Soldner-alt (Umweltatlas-Höhendaten, hm96.dat)
 # In eckigen Klammern die Punktnummern
 my @soldneralt_data = split(/\n/, <<'EOF');
@@ -506,10 +468,6 @@ my @maps =
 	  ['t2001',     \@t2001_data,            't2001'],
 	  ['gdf',       \@gdf_data,              'gdf'],
 	  ['gps',       \@gps_data,              'gps'],
-	  ['furadar',   \@furadar_data,          'fub'],
-	  ['furadar2',  \@furadar2_data,         'fub2'],
-	  ['furadar3',  \@furadar3_data,         'fub3'],
-	  ['furadar3',  \@furadar3_data,         'fub3'],
 	  ['soldneralt',\@soldneralt_data,       'sa'],
 	  ['soldnerneu',\@soldnerneu_data,       'sn'],
 	  ['cityinfo',  \@city_info_data,        'cityinfo'],

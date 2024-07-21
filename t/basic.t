@@ -227,7 +227,6 @@ EOF
 		     | Strassen/MapInfo.pm
 		     | lib/GD/Convert.pm
 		     | lib/Tk/StippleLine.pm
-		     | FURadar.pm
 		     | MasterPunkte.pm
 		     | Wizards.pm
 		     | cgi/configure-bbbike.cgi

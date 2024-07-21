@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Karte.pm,v 1.42 2007/08/02 21:55:50 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2002,2024 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -15,7 +14,7 @@
 package Karte;
 #use AutoLoader 'AUTOLOAD';
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.42 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = '1.43';
 
 use strict;
 use vars qw(%map %map_by_modname %map_by_coordsys @map $cache_root $map_root);
@@ -36,7 +35,6 @@ sub preload {
 		    Berlinmap2004
 		    Potsdammap2002 Demap2002 Nbrbmap2004
 		    Satmap SatmapGIF GISmap Polar T99 T2001 GDF
-		    FURadar FURadar2 FURadar3
                     GPS Soldner_alt Cityinfo PilotPl PilotPl12 Tk50
 		    Deinplan
 		   );
