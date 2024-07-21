@@ -5,7 +5,7 @@
 #:
 (entlang des Stadtbahnviadukts): Engstellen wegen Hochbauarbeiten	q3::inwork 12132,11788 12207,11763
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4::inwork 12558,11920 12617,11888
-Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
+Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn können gesperrt sein	q2::inwork 12573,12227 12592,12472
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
@@ -16,6 +16,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
+Schillingbrücke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,11475
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423 9028,12307
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
@@ -3532,7 +3533,7 @@ Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine: gesperrt, ggfs. schieben	q4:inwork::igndisp 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
-Bremer Weg - Pariser Platz: Umwege und Engstellen wegen Absperrungen zur EM 2024	q3 8466,12197 8499,12207 8522,12187 8600,12165 8599,12221 8637,12258
+Bremer Weg - Pariser Platz: Umwege und Engstellen wegen Absperrungen zur EM 2024	q3 8466,12197 8499,12207 8522,12187 8579,12142 8595,12066 8607,12165 8599,12221 8637,12258
 Platz des 18. März: Umwege und Engstellen wegen Absperrungen zur EM 2024	q3 8599,12221 8592,12252 8573,12325
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003

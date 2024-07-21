@@ -28634,7 +28634,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-06-28 (mapillary)
+#: last_checked: 2024-07-19 (mapillary)
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -40929,10 +40929,10 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024) (inaktiv) (bis 30.11.2024)
 #: also_indoor: traffic (B)
-#: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m; mittlerweile (Juni 2024) ist der gesamte Abschnitt betroffen; mittlerweile (2024-06) ist die Baustelle nach Süden gewandert und nicht sehr lang (q3 -> q2)
+#: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m; mittlerweile (Juni 2024) ist der gesamte Abschnitt betroffen; mittlerweile (2024-06) ist die Baustelle nach Süden gewandert und nicht sehr lang (q3 -> q2); mittlerweile: Richtung Norden wird man für ca. 180m auf dem Hochbord geführt
 #: note: bei rbb bis 30.11.2024; bei Bing bis 8.4.2024, mittlerweile auch bis November 2024
 #: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
-#: last_checked: 2024-06-05
+#: last_checked: 2024-07-19 (mapillary)
 #: next_check: 2024-11-30
 	q2::inwork 8486,16425 8467,16718
 EOF
@@ -41394,7 +41394,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-07-18 vvv
+#: last_checked: 2024-07-19 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -42736,11 +42736,11 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-07-13 vvv
+#: last_checked: 2024-07-21 (osm) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="6"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="20"
+#: osm_watch: way id="120633718" version="21"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -43003,8 +43003,8 @@ EOF
 #: also_indoor: traffic (ex-G[falsch?],B,T)
 # REMOVED --- #: note: nur Umleitungsschilder für Radfahrer gesehen
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-06-22
-#: check_frequency: 10d
+#: last_checked: 2024-07-21 (traffic)
+#: check_frequency: 7d
 	q4::inwork 5466,5523 5555,5508
 # REMOVED (hier nicht (mehr?)) ---	q4::inwork 5555,5508 5676,5488
 EOF
@@ -43031,12 +43031,12 @@ Kleine Querallee, Überquerung	3 8327,12174 8344,12221 8391,12389
 Ebertstr.	q3::temp 8540,12420 8573,12325
 Ebertstr.	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
 #: note: zwischenzeitlich waren hier wenigstens die Bürgersteige passierbar, dann komplett gesperrt
-Ebertstr.	q3::temp 8600,12165 8595,12066
+Ebertstr.	2::temp 8600,12165 8595,12066
 # REMOVED (vermutlich nicht mehr) --- Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-07-19 (webcam)
+#: last_checked: 2024-07-21 (webcam)
 #: check_frequency: 3d
 #: next_check: 2024-07-26
 Brandenburger Tor	2::temp 8538,12245 8592,12252
@@ -43068,7 +43068,8 @@ EOF
      },
      { from  => $isodate2epoch->("2024-05-12 00:00:00"),
        until => 1722031200, # 2024-07-27 00:00
-       text  => 'John-Foster-Dulles-Allee, Scheidemannstr., Dorotheenstr., Paul-Löbe-Allee, Otto-von-Bismarck-Allee, Konrad-Adenauer-Str., Willy-Brandt-Str.: mögliche Sperrungen wegen Veranstaltung (EM 2024), vom 13.5.2024 bis 26.7.2024',
+       #text  => 'John-Foster-Dulles-Allee, Scheidemannstr., Dorotheenstr., Paul-Löbe-Allee, Otto-von-Bismarck-Allee, Konrad-Adenauer-Str., Willy-Brandt-Str.: mögliche Sperrungen wegen Veranstaltung (EM 2024), vom 13.5.2024 bis 26.7.2024',
+       text  => 'Regierungsviertel: einige Sperrungen noch möglich, bis 26.7.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: EM-2024
@@ -43077,12 +43078,13 @@ EOF
 #: source_id: viz2021:13.365723,52.517491,13.05.2024,06:00 (bis 26.07.2024)
 # REMOVED --- #: XXX wird auch der gesamte Tiergarten gesperrt? oder vielleicht nur an Veranstaltungstagen? --- #: next_check: 2024-05-13
 # REMOVED (Radweg scheint passierbar zu bleiben) --- John-Foster-Dulles-Allee	2::temp 7031,12320 7215,12295 7437,12368
-John-Foster-Dulles-Allee, Scheidemannstr. und Dorotheenstr.: für Kfz-Verkehr gesperrt	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+# REMOVED (hier möglicherweise nicht mehr) --- John-Foster-Dulles-Allee: für Kfz-Verkehr gesperrt	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+Scheidemannstr. und Dorotheenstr.: für Kfz-Verkehr gesperrt	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
 Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
-vor dem Bundeskanzleramt	2::temp 8120,12756 8122,12603
+# REMOVED (hier nicht mehr) --- vor dem Bundeskanzleramt	2::temp 8120,12756 8122,12603
 Paul-Löbe-Allee	2::temp 8306,12609 8207,12606 8122,12603
 Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
-Willy-Brandt-Str. bis Konrad-Adenauer-Str.	2::temp 7930,12912 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853 8503,12895
+# REMOVED (hier wohl nicht mehr) --- Willy-Brandt-Str. bis Konrad-Adenauer-Str.	2::temp 7930,12912 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853 8503,12895
 EOF
      },
      { from  => 1715032800, # 2024-05-07 00:00
@@ -43894,13 +43896,15 @@ EOF
      },
      { from  => 1721512800, # 2024-07-21 00:00
        until => undef, # XXX
-       text  => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Gertrudstr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 22. Juli 2024',
+       #text  => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Gertrudstr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 22. Juli 2024',
+       text  => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 22. Juli 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHILDOWER-2024
+#: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025)
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
-#: next_check: 2025-04-15
-	q4::inwork 4614,24233 4510,24170 4425,24067
+#: next_check: 2025-04-30
+	q4::inwork 4683,24275 4614,24233 4510,24170 4425,24067
 EOF
      },
      { from  => 1721541600, # 2024-07-21 08:00
@@ -43935,6 +43939,18 @@ EOF
 #: by: https://pbs.twimg.com/media/GSxWYnqXsAAUWqH?format=jpg&name=medium
 #: by: https://www.berliner-woche.de/karow/c-verkehr/blankenburger-chaussee-gesperrt_a421315
 	q4::inwork; 15050,22765 15141,22896
+EOF
+     },
+     { from  => 1729720800, # 2024-10-24 00:00
+       until => 1730069999, # 2024-10-27 23:59
+       text  => 'Köpenicker Herbstspektakel: Luisenhain kann vom 25. Oktober 2024 bis 27. Oktober 2024 gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/events/8521846-2229501-koepenicker-herbstspektakel.html
+	2::temp 22071,4501 22057,4531
+	2::temp 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
+	2::temp 22074,4664 22138,4642
+	2::temp 22153,4840 22153,4861
 EOF
      },
     );

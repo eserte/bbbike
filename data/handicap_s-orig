@@ -44,10 +44,11 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+::inwork 12558,11920
 #: next_check_id: KARLMARXALLEE-2023
 #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) (bis 01.12.2023) (inaktiv) (bis 29.03.2024) (bis 27.03.2024) (inaktiv)
 #: source_id: viz2021:13.436487,52.517601,19.04.2024,06:00 (bis 07.05.2024) (bis 24.05.2024) (inaktiv)
-#: last_checked: 2024-07-18
+#: note: allerdings sind mittlerweile seit einiger Zeit die Absperrungen weggeschoben, deshalb: q3 -> q2
+#: last_checked: 2024-07-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-05-24
-Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn sind gesperrt	q3::inwork 12573,12227 12592,12472
+Koppenstr.: Bauarbeiten an der Karl-Marx-Allee, einige Meter der Fahrbahn kˆnnen gesperrt sein	q2::inwork 12573,12227 12592,12472
 # 
 # REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- W¸hlischstr.: Bauarbeiten an der Einm¸ndung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 # REMOVED (fertig) --- #: next_check_id: NIEMANN-2023 --- #: by: https://nitter.cz/VIZ_Berlin/status/1673932919125995523#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnpzQkhnQVhzQUFlekE3LmpwZw== --- #: XXX Bauarbeiten dauern mˆglicherweise bis November 2023 (Halteverbotsschilder) --- #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen --- #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023) --- #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv --- #: last_checked: 2023-11-24 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-12-29 vvv --- #: valid: -20231229 vvv --- Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377 --- Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229 --- Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14286,11186 14328,11320 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
@@ -280,6 +281,17 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
+#: XXX Laut Umleitungsschildern vom 19.7.2024 bis 30.8.2024
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1468227.php (Radverkehr wird ¸ber den Gehweg gef¸hrt)
+#: source_id: bvg2024:140#3780ae13-a443-4ae7-ad58-90608cbd5ef1 (2024-07-19 - 2024-08-30, hier: f¸r Fuﬂg‰ngerverkehr frei)
+#: source_id: viz2021:13.429228,52.509161,19.07.2024,07:00 (bis 30.08.2024)
+#: note: laut VIZ-Mail keine Sperrung f¸r den Rad- und Fuﬂverkehr; auﬂerdem wird hier als Beginn der 22.7.2024 (was passender w‰re, da Montag) erw‰hnt
+#: note: -> gemeinsamer Rad- und Gehweg, recht eng
+#: last_checked: 2024-07-19 (mapillary)
+#: next_check: 2024-08-30
+#: valid: -20240830
+Schillingbr¸cke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,11475
+# 
 # REMOVED --- #: XXX Oranienburger Straﬂe (Mitte) Richtung Monbijouplatz zwischen Groﬂe Pr‰sidentenstraﬂe und Groﬂe Hamburger Straﬂe: Gleisarbeiten, Vollsperrung f¸r den Kfz-Verkehr. Die Groﬂe Hamburger Straﬂe ist von der Oranienburger Straﬂe abgeh‰ngt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00
 # REMOVED --- #: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024) (bis 26.04.2024) (bis 24.04.2024) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (H,G,B,W)
@@ -445,7 +457,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-07-09 (mapillary) vvv
+#: last_checked: 2024-07-19 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -673,7 +685,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verl‰ngert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 7
-#: last_checked: 2024-07-13 (webcam)
+#: last_checked: 2024-07-21 (webcam)
 #: check_frequency: 60d
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 # 
