@@ -893,16 +893,12 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: way id="1135879798" version="2"
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2024-06-19
+#: last_checked: 2024-07-22
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-06-17
 Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 17249,14575 17392,14591
 # 
-#: note: nur etwa der halbe Abschnitt ist verengt, deshalb q3 statt q4
-#: also_indoor: traffic (G)
-#: last_checked: 2024-06-19
-Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,14451
-# 
+# REMOVED (beendet) --- #: note: nur etwa der halbe Abschnitt ist verengt, deshalb q3 statt q4 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-06-19 --- Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,14451
 # REMOVED (nicht mehr) --- #: next_check_id: RUSCHEAMPEL-2024 --- #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert? --- #: last_checked: 2024-05-02 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-14 vvv --- #: valid: -20240614 vvv --- # REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886 --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: ONTARIOSEE-2023
@@ -977,7 +973,7 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="10"
-#: last_checked: 2024-06-13
+#: last_checked: 2024-07-22
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-12-21
 Plauener Str.: Fahrbahn noch gesperrt, südlicher Gehweg frei	q3-::inwork 17531,14923 17610,14935 17638,14945

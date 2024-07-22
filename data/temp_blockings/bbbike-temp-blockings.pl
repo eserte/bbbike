@@ -31336,7 +31336,7 @@ EOF
 # REMOVED (hier nicht) --- #: last_checked: 2020-05-01 (Radfahrer dürfen hier noch fahren) ---	q4::inwork 6009,5691 6007,5785
 # REMOVED (hier wohl nicht) ---	q4::inwork 5993,5422 6009,5691
 #: osm_watch: note 4060014 5
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (ex-G)
 #: note: hier etwa 120m der Fahrbahn gesperrt (eigentlich q4+::inwork)
 #: add_fragezeichen: Sind die Bauarbeiten in der Lauenburger Str. beendet?
 #: last_checked: 2024-06-22
@@ -36387,7 +36387,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1451630.php (voraussichtlich teilweise Freigabe, der Rest wird bis Juni 2025 gemacht (also etwas kürzer als bei VIZ))
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
-#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen)
+#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2024-06-13 vvv
@@ -37451,7 +37451,7 @@ EOF
 #: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024)
-#: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024)
+#: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
 #: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
@@ -39065,7 +39065,7 @@ EOF
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-07-16 (traffic)
+#: last_checked: 2024-07-22 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -43425,7 +43425,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
 #: note: keine Freigabe der Gehwege für Radfahrer
-#: note: Absperrungen können teilweise weggeschoben sein und die Fahrbahn ist nur in der Mitte aufgebuddelt (Stand Mitte Juni 2024)
+#: note: Absperrungen können teilweise weggeschoben sein und die Fahrbahn ist nur in der Mitte aufgebuddelt (Stand Mitte Juni 2024, Ende Juli 2024)
 	q4::inwork 15077,11910 15110,12107
 EOF
      },
@@ -43897,14 +43897,20 @@ EOF
      { from  => 1721512800, # 2024-07-21 00:00
        until => undef, # XXX
        #text  => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Gertrudstr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 22. Juli 2024',
-       text  => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 22. Juli 2024',
+       text  => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, vermutlich sind auch Radfahrer betroffen, ab 22. Juli 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHILDOWER-2024
 #: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1815251677278060801
+#: by: https://pbs.twimg.com/media/GS3L_VJWQAAhbAU?format=jpg&name=medium
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
-#: next_check: 2025-04-30
-	q4::inwork 4683,24275 4614,24233 4510,24170 4425,24067
+#: next_check: 2025-04-30 vvv
+Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233
+Schildower Str.	q4::inwork 4614,24233 4510,24170 4425,24067
+Bertastr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4448,24277 4510,24170 4613,24032
+Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24233 4565,24327
+#: next_check ^^^
 EOF
      },
      { from  => 1721541600, # 2024-07-21 08:00

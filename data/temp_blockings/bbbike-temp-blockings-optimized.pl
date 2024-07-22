@@ -1,81 +1,6 @@
-$#temp_blocking = 73;
+$#temp_blocking = 111;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.stadtfest.berlin/de/index.html
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
-#: by: https://www.stadtfest.berlin/de/index.html (2.+3. Oktober 2021)
-#: by: https://www.siegessaeule.de/magazin/lesbisch-schwules-stadtfest-2021-auf-der-kippe/ (Absage)
-#: by: https://www.stadtfest.berlin/de/index.html?date=20220515
-#: by: https://www.berlin.de/events/2094393-2229501-lesbischschwules-stadtfest.html
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1814521868080050462
-#: by: https://pbs.twimg.com/media/GSsvMEiWsAALOVt?format=jpg&name=large
-	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
-	2::temp 6729,10212 6941,10329 6971,10346
-	2::temp 6636,10492 6628,10318 6626,10155
-	2::temp 6487,10277 6628,10318 6719,10347
-	2::temp 6753,10446 6719,10347 6729,10212 6739,10120
-	2::temp 6941,10329 6978,10319 7036,10313
-#: note: laut Karte nur eingeschränktes Halteverbot vvv
-Eisenacher Str. ab Nollendorfstr.	q4::temp 6739,10120 6741,10017
-Gossowstr.	q4::temp 6609,10147 6630,9990
-#: note ^^^
-',
-         'from' => 1721340000,
-         'id' => 74,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (20.7.2024 und 21.7.2024)',
-         'type' => 'gesperrt',
-         'until' => 1721599199
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.hier-in-rudow.de/meilenfeste.html
 #: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
@@ -3213,35 +3138,7 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk
-#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021)
-#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
-#: by: https://berliner-abendblatt.de/2022/07/11/tegeler-hafenfest-startet-am-donnerstag/
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1310556.php
-#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/gruenes-licht-fuer-tegeler-hafenfest-id216068
-#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/das-tegeler-hafenfest-ist-wieder-da-und-will-an-grosse-zeiten-anschliessen-id226835
-# REMOVED (was) : tempex: 20160714-20160717
-	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
-',
-         'from' => 1721167200,
-         'id' => 2420,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              7,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (18.07.2024 bis 21.07.2024)',
-         'type' => 'gesperrt',
-         'until' => 1721584800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4631,7 +4528,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED (hier nicht) --- #: last_checked: 2020-05-01 (Radfahrer dürfen hier noch fahren) ---	q4::inwork 6009,5691 6007,5785
 # REMOVED (hier wohl nicht) ---	q4::inwork 5993,5422 6009,5691
 #: osm_watch: note 4060014 5
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (ex-G)
 #: note: hier etwa 120m der Fahrbahn gesperrt (eigentlich q4+::inwork)
 #: add_fragezeichen: Sind die Bauarbeiten in der Lauenburger Str. beendet?
 #: last_checked: 2024-06-22
@@ -5761,7 +5658,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1451630.php (voraussichtlich teilweise Freigabe, der Rest wird bis Juni 2025 gemacht (also etwas kürzer als bei VIZ))
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
-#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen)
+#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2024-06-13 vvv
@@ -6041,7 +5938,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024)
-#: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024)
+#: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
 #: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
@@ -6498,7 +6395,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-07-16 (traffic)
+#: last_checked: 2024-07-22 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -7956,7 +7853,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        {
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
 #: note: keine Freigabe der Gehwege für Radfahrer
-#: note: Absperrungen können teilweise weggeschoben sein und die Fahrbahn ist nur in der Mitte aufgebuddelt (Stand Mitte Juni 2024)
+#: note: Absperrungen können teilweise weggeschoben sein und die Fahrbahn ist nur in der Mitte aufgebuddelt (Stand Mitte Juni 2024, Ende Juli 2024)
 	q4::inwork 15077,11910 15110,12107
 ',
          'from' => 1717538400,
@@ -8386,13 +8283,19 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
        {
          'data' => '#: next_check_id: SCHILDOWER-2024
 #: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1815251677278060801
+#: by: https://pbs.twimg.com/media/GS3L_VJWQAAhbAU?format=jpg&name=medium
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
-#: next_check: 2025-04-30
-	q4::inwork 4683,24275 4614,24233 4510,24170 4425,24067
+#: next_check: 2025-04-30 vvv
+Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233
+Schildower Str.	q4::inwork 4614,24233 4510,24170 4425,24067
+Bertastr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4448,24277 4510,24170 4613,24032
+Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24233 4565,24327
+#: next_check ^^^
 ',
          'from' => 1721512800,
          'id' => 4116,
-         'text' => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 22. Juli 2024',
+         'text' => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, vermutlich sind auch Radfahrer betroffen, ab 22. Juli 2024',
          'type' => 'handicap',
          'until' => undef
        },
