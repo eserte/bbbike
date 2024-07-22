@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.23;
+$VERSION = 2.24;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1921,7 +1921,9 @@ sub showmap_url_sentinelhub {
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
     $scale = 16 if $scale > 16;
-    sprintf 'https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=%f&lng=%f&zoom=%d&preset=1-NATURAL-COLOR&layers=B01,B02,B03&maxcc=31&gain=1.0&gamma=1.0', $py, $px, $scale;
+    ## Old URL, redirects now to browser.dataspace.copernicus.eu
+    #sprintf 'https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=%f&lng=%f&zoom=%d&preset=1-NATURAL-COLOR&layers=B01,B02,B03&maxcc=31&gain=1.0&gamma=1.0', $py, $px, $scale;
+    sprintf 'https://browser.dataspace.copernicus.eu/?zoom=%d&lat=%f&lng=%f&themeId=DEFAULT-THEME', $scale, $py, $px;
 }
 
 sub showmap_sentinelhub {
