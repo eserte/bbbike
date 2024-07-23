@@ -28634,7 +28634,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-07-19 (mapillary)
+#: last_checked: 2024-07-23
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -36387,7 +36387,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1451630.php (voraussichtlich teilweise Freigabe, der Rest wird bis Juni 2025 gemacht (also etwas kürzer als bei VIZ))
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
-#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv)
+#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2024-06-13 vvv
@@ -40500,6 +40500,7 @@ EOF
        until => 1693080000, # 2023-08-26 22:00
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 8]],
+       recurrence_prewarn_days => 21,
        text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 26. August 2023 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
@@ -41394,7 +41395,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-07-19 (mapillary) vvv
+#: last_checked: 2024-07-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -41404,7 +41405,7 @@ EOF
 #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031 9645,12133
 #: osm_watch: way id="389101374" version="19"
-Mohrenstr.	q3::inwork; 9679,11834 9547,11819
+# REMOVED (hier ist die Einbahnstraße mittlerweile für Radfahrer offen) --- Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
 #: osm_watch: way id="1149365724" version="7"
 #: osm_watch: way id="1149365723" version="6"
@@ -43010,8 +43011,9 @@ EOF
 EOF
      },
      { from  => 1714860000, # 2024-05-05 00:00
-       until => $isodate2epoch->("2024-07-26 18:00:00"), # 1722031200, # 2024-07-27 00:00
-       text  => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Heinrich-von-Gagern-Str., Brandenburger Tor, Pariser Platz, östlicher Tiergarten: Sperrungen wegen Veranstaltung (EM 2024), vom 6.5.2024 bis 26.7.2024',
+       until => $isodate2epoch->("2024-08-05 18:00:00"), # 1722031200, # 2024-07-27 00:00
+       #text  => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Heinrich-von-Gagern-Str., Brandenburger Tor, Pariser Platz, östlicher Tiergarten: Sperrungen wegen Veranstaltung (EM 2024), vom 6.5.2024 bis 26.7.2024',
+       text  => 'Straße des 17. Juni, Ebertstr., Brandenburger Tor: Sperrungen wegen Veranstaltungen, voraussichtlich bis 05.08.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: EM-2024
@@ -43021,7 +43023,7 @@ EOF
 #: by[nocache]: https://twitter.com/BA_Mitte_Berlin/status/1787472473597813136
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsinformationen-zur-uefa-euro-2024-in-berlin/
 #: by: https://berliner-abendblatt.de/berlin-news/fanmeile-wird-abgebaut-strasse-des-17-juni-bleibt-gesperrt-id257684
-#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024) (bis 26.07.2024)
+#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024) (bis 26.07.2024) (bis 05.08.2024)
 #: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024)
 #: note: es sieht so aus, als ob man vom Bremer Weg nur über Umwege (bis fast Behrenstr.?) zum Brandenburger Tor fahren kann
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
@@ -43036,7 +43038,7 @@ Ebertstr.	2::temp 8600,12165 8595,12066
 # REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: note: siehe auch Routing-Helper-Eintrag für Wegführung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-07-21 (webcam)
+#: last_checked: 2024-07-23 (webcam)
 #: check_frequency: 3d
 #: next_check: 2024-07-26
 Brandenburger Tor	2::temp 8538,12245 8592,12252
@@ -43488,7 +43490,7 @@ EOF
 #: note: Länge der Einbahnstraßenregelung etwa 80m; außerdem ist auch die Inselstraße Einbahnstraße, hier aber für Radfahrer frei
 #: note: Halteverbotsschilder bis 17.07.2024; wurde trotz Bauarbeiten nicht verlängert
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2024-07-18
+#: last_checked: 2024-07-23
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-07-17
@@ -43616,7 +43618,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-07-18 vvv
+#: last_checked: 2024-07-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -43823,6 +43825,7 @@ EOF
 #: by: https://khp.berlin/referenzen/ingenieurbau/planungen/baekebruecke-in-berlin-lichterfelde/
 #: by: https://www.facebook.com/groups/274489925939434/posts/7611685488886471 (in einem Kommentar steht, dass Fußgänger rüberkommen)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/baekebruecke-wird-erneuert_a421024
 #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024)
 #: also_indoor: search Bäkebrücke
@@ -43957,6 +43960,17 @@ EOF
 	2::temp 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
 	2::temp 22074,4664 22138,4642
 	2::temp 22153,4840 22153,4861
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Holzhauser Str./Autobahnbrücke: Sperrung, auch für Fußgänger und Radfahrer, Ende der Sperrung unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.29786,52.57817,23.07.2024,07:00
+#: by: https://viz.berlin.de/aktuelle-meldungen/holzhauser-strasse-tegel-nach-einer-stromhavarie-zwischen-wittestrasse-und-berliner-strasse-fur-den-gesamten/
+#: also_indoor: traffic (H,G[ungenau],T)
+	2::inwork 3045,19032 2994,18979
 EOF
      },
     );

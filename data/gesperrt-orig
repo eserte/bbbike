@@ -3826,11 +3826,11 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1415395.php (Bauarbeiten voraussichtlich bis zum zweiten Quartal 2026)
 #: by: https://www.berliner-woche.de/karlshorst/c-bildung/start-fuer-den-bau-einer-integrierten-sekundarschule_a411179
-#: osm_watch: way id="25796737" version="16"
+#: osm_watch: way id="25796737" version="17"
 #: osm_watch: way id="1272701939" version="4"
 #: XXX Nebau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date 2026-08-24 (ohne Quelle)
-#: last_checked: 2024-05-06
+#: last_checked: 2024-07-22 (osm)
 #: check_frequency: 180d
 #: next_check: 2026-06-30
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -3841,7 +3841,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-07-18
+#: last_checked: 2024-07-23
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -3875,7 +3875,7 @@ Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:q3:inwork 799
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="4"
 #: osm_watch: note 4180739 1
-#: last_checked: 2024-06-30 vvv
+#: last_checked: 2024-07-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-01 vvv
 #: osm_watch: way id="1054783030" version="3"
@@ -4011,9 +4011,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,2
 #: next_check_id: ONTARIOSEE-2023
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ontarioseestra%C3%9Fe-22.1332/#post-22779
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
-#: osm_watch: way id="25796640" version="25"
+#: osm_watch: way id="25796640" version="26"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-07-20
+#: last_checked: 2024-07-22 (osm)
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4133,7 +4133,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2024-07-18
+#: last_checked: 2024-07-23
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4868,13 +4868,13 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2024-07-18
+#: last_checked: 2024-07-23
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-07-18 (Asphaltierungsarbeiten)
+#: last_checked: 2024-07-23 (neu asphaltiert)
 #: check_frequency: 30d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
