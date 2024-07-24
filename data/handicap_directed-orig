@@ -407,7 +407,7 @@ Delmer Steig -> Marienfelder Chaussee: Mittelstreifen, zunächst den linken Gehwe
 #: osm_watch: way id="1005683568" version="17"
 #: osm_watch: way id="1022420059" version="17"
 #: note: mittlerweile (2024-06-18, 2024-07-10) sind die Baustellenabsperrungen weggeschoben, dass man theoretisch direkt überqueren kann
-#: last_checked: 2024-07-10 vvv
+#: last_checked: 2024-07-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: allerdings spart man hier eine Ampel
@@ -418,7 +418,7 @@ Elsenstr. -> Am Treptower Park: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9
 #: last_checked ^^^
 # 
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
-#: last_checked: 2024-03-27 vvv
+#: last_checked: 2024-05-06 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-11-30 vvv
 Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21166,12023 21152,11945
@@ -504,15 +504,16 @@ Minna-Todenhagen-Brücke - Köpenicker Landstr: zusätzliche Ampel	DH:t=20 16834,69
 #: source_id: viz2021:13.529089,52.510269,06.07.2023,16:00 (bis 04.08.2023) (bis 09.08.2023) (bis 11.08.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.53005,52.510351,11.08.2023,10:00 (bis 22.09.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.531111,52.510266,18.05.2024,05:01 (kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.53005,52.510351,25.07.2023,10:00 (bis 06.10.2023) (bis 24.11.2023) (bis 24.05.2024) (bis 16.08.2024)
+#: source_id: viz2021:13.53005,52.510351,25.07.2023,10:00 (bis 06.10.2023) (bis 24.11.2023) (bis 24.05.2024) (bis 16.08.2024) (bis 31.08.2024)
 #: source_id: viz2021:13.54125,52.50984,04.06.2024,18:25 (bis 07.06.2024) (inaktiv)
+#: source_id: viz2021:13.529675,52.51028,24.07.2024,11:02 (bis 31.08.2024)
 #: note: Luftlinie 307m, Umleitungsstrecke 341m
 #: note: laut Bauschild der Wasserbetriebe bis Frühjahr 2024, mittlerweile bis Juni 2024
 #: osm_watch: way id="460741797" version="8"
 #: osm_watch: way id="1225572236" version="1"
 #: last_checked: 2024-06-07
 #: check_frequency: 90d
-#: next_check: 2024-08-16
+#: next_check: 2024-08-31
 # REMOVED --- #: valid: -20231006
 # REMOVED --- #: valid: -20241231
 Alt-Friedrichsfelde: Umweg über einen asphaltierten Notweg, kurvig	DH:len=34:h=q1,341 19092,11776 19389,11761

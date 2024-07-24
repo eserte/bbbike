@@ -379,7 +379,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2024-07-19
+#: last_checked: 2024-07-24
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -2416,7 +2416,7 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 #: by: https://www.kms-sonne.de/projekte/elbestrasse/ (Baubeginn voraussichtlich 2025/2026)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/online-beteiligung-zur-elbestrasse-laeuft-bis-zum-27-november_a399343
 #: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-24
 #: check_frequency: 270d
 #: next_check: 2025-01-01
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
@@ -2448,7 +2448,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021)
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-03 (mapillary)
 #: check_frequency: 90d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -29395,6 +29395,7 @@ Forbacher Str.: Beton	Q1 1474,3688 1607,3708 1604,3770 1603,3909
 Ersteiner Str.: Beton	Q1 1604,3770 1781,3807 1935,3827
 #: next_check_id: SCHLETTSTADTER-2024
 #: by: https://berliner-abendblatt.de/2022/07/18/huckelpiste-schlettstadter-strasse-wird-saniert/
+#: osm_watch: note 4231879 1
 #: XXX Sanierung ab 2024
 #: note: Laut Baustellenschild der Wasserbetriebe bis Mai 2024
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen?
