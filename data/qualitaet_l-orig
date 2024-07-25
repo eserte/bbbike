@@ -3075,7 +3075,7 @@ Alter Markt: gepflastert	Q2+ -12614,-1487 -12619,-1549 -12624,-1598
 Alter Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542
 #: next_check_id: AMALTENMARKT-2018
 #: XXX früher provisorisch asphaltiert, jetzt ein provisorischer Weg
-#: osm_watch: way id="760022943" version="13" brb
+#: osm_watch: way id="760022943" version="14" brb
 #: last_checked: 2024-07-08 (daf)
 #: check_frequency: 60d
 Alter Markt: unbefestigt	Q2 -12719,-1542 -12790,-1560
@@ -7180,6 +7180,8 @@ asphaltiert	Q0 21303,19918 21329,19947 21318,19984 21174,20436 21142,20575 21140
 Lindenberger Str. (Ahrensfelde): gut asphaltiert	Q0 21975,19068 21895,19198 21878,19226 21801,19325 21692,19455 21675,19477 21665,19490
 #: corrected_by: srt (früher mäßiger Asphalt, neu gemacht)
 Mehrow - Hönow: Asphalt	Q0 25232,18413 25253,18365 25497,17801
+#: add_fragezeichen: Ist der Asphalt nach der Fahrbahnsanierung besser?
+#: next_check: 2024-09-06
 Mehrow - Hönow: mäßiger Asphalt	Q1 25497,17801 25524,17739 25587,17593 25686,17365 25764,17255 25889,17093 25923,17002 25958,16901 26132,16385
 Tanklager Seefeld: sehr guter Asphalt	Q0 26764,23083 26860,22984 27428,23161 28267,23147 28563,23176 28936,23307
 #: corrected_by: srt (sehr guter Asphalt, Q0 -> ...)

@@ -35672,7 +35672,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-07-10
+#: last_checked: 2024-07-24 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -41081,7 +41081,7 @@ EOF
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-06-26 vvv
+#: last_checked: 2024-07-24 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (s.o.) ---	q4::inwork; 10908,13978 10933,14122
@@ -43520,10 +43520,10 @@ EOF
      { from  => 1718085600, # 2024-06-11 08:00
        until => $isodate2epoch->("2024-09-30 17:00:00"), # 1720796400, # 2024-07-12 17:00
        dont_check_date => 1,
-       text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 25.07.2024 17:00, evtl. auch bis September 2024',
+       text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 12.08.2024 17:00, evtl. auch bis September 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024) (bis 25.07.2024)
+#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024) (bis 25.07.2024) (bis 12.08.2024)
 #: note: bei rbb mittlerweile bis 30.09.2024, go with rbb
 #: note: Länge der Baustelle: etwa 40m
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1800742824524259711
@@ -43735,8 +43735,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Mauerweg, Unterführung Dresdener Bahn: vermutlich noch bis zu den Sommerferien (18.7.2024) gesperrt',
+       until => 1721924892, # undef, # XXX
+       text  => 'Mauerweg, Unterführung Dresdener Bahn: voraussichtliche Eröffnung am 25.7.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.961546.php
@@ -43747,16 +43747,15 @@ EOF
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/lueckenschluss-am-mauerweg_a341195
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20220724_Mahlow/
 #: by[nocache]: https://x.com/Verkehrshassel/status/1799455523164631267
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,805165#msg-805165 (Eröffnung am 25.7.2024)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1470911.php
 # REMOVED (deleted) --- #: osm_watch: way id="1049317376" version="1"
 # REMOVED (deleted) --- #: osm_watch: way id="1049317378" version="3"
 #: osm_watch: way id="1049317377" version="8"
 #: osm_watch: way id="383652784" version="13"
 #: osm_watch: way id="35002100" version="14"
 #: osm_watch: note 3115482 11
-#: add_fragezeichen: Ist der Weg offen? Wurden die Radroutenschilder (Mauerweg, Berlin-Leipzig) bereits angepasst?
-#: XXX Zumindest die Ausschilderung für den Mauerweg wurde schon vorbereitet
-#: last_checked: 2024-07-08 (osm)
-#: next_check: 2024-07-18
+# REMOVED (-> Restfragen -> fragezeichen-orig) --- #: add_fragezeichen: Ist der Weg offen? Wurden die Radroutenschilder (Mauerweg, Berlin-Leipzig) bereits angepasst? --- #: XXX Zumindest die Ausschilderung für den Mauerweg wurde schon vorbereitet --- #: last_checked: 2024-07-08 (osm) --- #: next_check: 2024-07-25
 	2::inwork 10467,-3201 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
 EOF
      },
@@ -43973,12 +43972,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-07-26 18:00:00"), # undef, # XXX
-       text  => 'Holzhauser Str./Autobahnbrücke: Sperrung, auch für Fußgänger und Radfahrer, voraussichtliche Freigabe am 26. Juli 2024',
+       until => $isodate2epoch->("2024-08-01 23:59:59"), # $isodate2epoch->("2024-07-26 18:00:00"), # undef, # XXX
+       text  => 'Holzhauser Str./Autobahnbrücke: Sperrung, auch für Fußgänger und Radfahrer, möglicherweise bis 1. August 2024, Freigabe vielleicht auch schon früher',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.29786,52.57817,23.07.2024,07:00
-#: source_id: bvg2024:x33#HIM_FREETEXT_232902
+#: source_id: viz2021:13.29786,52.57817,23.07.2024,07:00 (inaktiv)
+#: source_id[inactive]: bvg2024:x33#HIM_FREETEXT_232902
+#: source_id: viz2021:13.29786,52.57817,25.07.2024,08:35 (bis 01.08.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/holzhauser-strasse-tegel-nach-einer-stromhavarie-zwischen-wittestrasse-und-berliner-strasse-fur-den-gesamten/
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1816030805652631855 (Freigabe am 26.7.2024)
 #: also_indoor: traffic (H,G,T,B,W)
@@ -43995,6 +43995,15 @@ EOF
 #: last_checked: 2024-07-24
 #: check_frequency: 14d
 Elsenstr.	q3::inwork 13766,9200 13664,9073
+EOF
+     },
+     { from  => 1722146400, # 2024-07-28 08:00
+       until => 1725631200, # 2024-09-06 16:00
+       text  => 'Hönow, Dorfstr.: Bauarbeiten, Fahrbahnerneuerung, evtl sind auch Radfahrer von der Sperrung betroffen, 29.07.2024 08:00 Uhr bis 06.09.2024 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-F/24/148 (bis 06.09.2024)
+	2::inwork 25686,17365 25764,17255 25889,17093 25923,17002 25958,16901
 EOF
      },
     );

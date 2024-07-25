@@ -5414,7 +5414,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-07-10
+#: last_checked: 2024-07-24 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -6937,7 +6937,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-06-26 vvv
+#: last_checked: 2024-07-24 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 # REMOVED (s.o.) ---	q4::inwork; 10908,13978 10933,14122
@@ -7731,17 +7731,7 @@ Haeckelstr.	q4::inwork 17379,3932 17468,3979
          'until' => 1723734000
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1445054.php (2024)
-	q4::temp::play 10685,10483 10857,10411
-',
-         'from' => 1719957600,
-         'id' => 4059,
-         'recurring' => 1,
-         'text' => 'Wassertorstr.: in Höhe Kastanienplatz donnerstags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 04. Juli 2024 bis 25. Juli 2024',
-         'type' => 'handicap',
-         'until' => 1721926800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7938,7 +7928,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024) (bis 25.07.2024)
+         'data' => '#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024) (bis 25.07.2024) (bis 12.08.2024)
 #: note: bei rbb mittlerweile bis 30.09.2024, go with rbb
 #: note: Länge der Baustelle: etwa 40m
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1800742824524259711
@@ -7948,7 +7938,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'dont_check_date' => 1,
          'from' => 1718085600,
          'id' => 4086,
-         'text' => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 25.07.2024 17:00, evtl. auch bis September 2024',
+         'text' => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 12.08.2024 17:00, evtl. auch bis September 2024',
          'type' => 'handicap',
          'until' => 1727708400
        },
@@ -8124,33 +8114,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'type' => 'handicap',
          'until' => 1722031200
        },
-       {
-         'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.961546.php
-#: by: https://www.berliner-woche.de/lichtenrade/c-bauen/berlin-und-blankenfelde-mahlow-einigen-sich-auf-untertunnelung-der-s-bahnlinie-2-und-der-dresdner-bahn_a281032
-#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=62187
-#: by: https://www.o-sp.de/download/lbvbrandenburg/307076
-#: by: https://www.tagesspiegel.de/berlin/baustart-fuer-mauerweg-tunnel-in-berlin-nach-20-jahren-kampf-die-luecke-im-radweg-wird-geschlossen/28216968.html (2024 fertig)
-#: by: https://www.berliner-woche.de/lichtenrade/c-bauen/lueckenschluss-am-mauerweg_a341195
-#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20220724_Mahlow/
-#: by[nocache]: https://x.com/Verkehrshassel/status/1799455523164631267
-# REMOVED (deleted) --- #: osm_watch: way id="1049317376" version="1"
-# REMOVED (deleted) --- #: osm_watch: way id="1049317378" version="3"
-#: osm_watch: way id="1049317377" version="8"
-#: osm_watch: way id="383652784" version="13"
-#: osm_watch: way id="35002100" version="14"
-#: osm_watch: note 3115482 11
-#: add_fragezeichen: Ist der Weg offen? Wurden die Radroutenschilder (Mauerweg, Berlin-Leipzig) bereits angepasst?
-#: XXX Zumindest die Ausschilderung für den Mauerweg wurde schon vorbereitet
-#: last_checked: 2024-07-08 (osm)
-#: next_check: 2024-07-18
-	2::inwork 10467,-3201 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
-',
-         'from' => undef,
-         'id' => 4103,
-         'text' => 'Mauerweg, Unterführung Dresdener Bahn: vermutlich noch bis zu den Sommerferien (18.7.2024) gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462140.php
 #: by: https://mierendorffinsel.org/projekte/aktuelle-projekte/insel-rundweg/
@@ -8359,8 +8323,9 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => 1730069999
        },
        {
-         'data' => '#: source_id: viz2021:13.29786,52.57817,23.07.2024,07:00
-#: source_id: bvg2024:x33#HIM_FREETEXT_232902
+         'data' => '#: source_id: viz2021:13.29786,52.57817,23.07.2024,07:00 (inaktiv)
+#: source_id[inactive]: bvg2024:x33#HIM_FREETEXT_232902
+#: source_id: viz2021:13.29786,52.57817,25.07.2024,08:35 (bis 01.08.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/holzhauser-strasse-tegel-nach-einer-stromhavarie-zwischen-wittestrasse-und-berliner-strasse-fur-den-gesamten/
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1816030805652631855 (Freigabe am 26.7.2024)
 #: also_indoor: traffic (H,G,T,B,W)
@@ -8368,9 +8333,9 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 ',
          'from' => undef,
          'id' => 4121,
-         'text' => 'Holzhauser Str./Autobahnbrücke: Sperrung, auch für Fußgänger und Radfahrer, voraussichtliche Freigabe am 26. Juli 2024',
+         'text' => 'Holzhauser Str./Autobahnbrücke: Sperrung, auch für Fußgänger und Radfahrer, möglicherweise bis 1. August 2024, Freigabe vielleicht auch schon früher',
          'type' => 'gesperrt',
-         'until' => 1722009600
+         'until' => 1722549599
        },
        {
          'data' => '#: also_indoor: traffic (H,G,W,T)
@@ -8384,6 +8349,16 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Elsenstr.: Bauarbeiten an der Karl-Kunger-Str., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: LS/221-F/24/148 (bis 06.09.2024)
+	2::inwork 25686,17365 25764,17255 25889,17093 25923,17002 25958,16901
+',
+         'from' => 1722146400,
+         'id' => 4123,
+         'text' => 'Hönow, Dorfstr.: Bauarbeiten, Fahrbahnerneuerung, evtl sind auch Radfahrer von der Sperrung betroffen, 29.07.2024 08:00 Uhr bis 06.09.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1725631200
        }
      
 );

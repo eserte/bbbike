@@ -831,7 +831,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: note: Die Absperrung beginnt 50m vor dem Einmündungsbereich.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-07-10 vvv
+#: last_checked: 2024-07-24 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
@@ -972,11 +972,11 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
-#: osm_watch: way id="435611568" version="10"
+#: osm_watch: way id="435611568" version="11"
 #: last_checked: 2024-07-22
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-12-21
-Plauener Str.: Fahrbahn noch gesperrt, südlicher Gehweg frei	q3-::inwork 17531,14923 17610,14935 17638,14945
+Plauener Str.: Fahrbahn noch gesperrt, Gehwege frei	q3-::inwork 17531,14923 17610,14935 17638,14945
 # 
 #: note: Halteverbotsschilder gelten bis zum 30.04.2026
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
@@ -1017,26 +1017,31 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hellersdorfer-bruecken/
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-bauen/der-senat-stellt-planungen-fuer-ersatzbauwerk-ueber-die-wuhle-vor_a416776 (Sperrung 2025, Hilfsbrücke für Fußgänger+Radfahrer, Bauarbeiten bis Ende 2025)
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240724 (Umstellung der Verkehrsführung, weiterhin Sperrung bis Mitte 2025)
-#: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022) (bis 16.11.2022) (bis 29.11.2022) (bis 13.11.2023) (bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (bis 25.07.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1816390896482398274
+#: by: https://pbs.twimg.com/media/GTUdyWiWUAEX0Jl?format=jpg&name=large
+#: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022) (bis 16.11.2022) (bis 29.11.2022) (bis 13.11.2023) (bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (bis 25.07.2024) (inaktiv)
 #: source_id: viz2021:13.575415,52.540241,04.07.2023,06:00 (hier nur Kfz-Verkehr, bis 13.11.2023) (bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.590289,52.539403,04.07.2023,06:00 (östlicher Abschnitt der Eisenacher; bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (bis 25.07.2024)
-#: source_id: viz2021:13.588897,52.538931,04.07.2023,07:00 (nur Kfz-Verkehr, bis 31.07.2025) (bis 24.07.2024)
+#: source_id: viz2021:13.590289,52.539403,04.07.2023,06:00 (östlicher Abschnitt der Eisenacher; bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (bis 25.07.2024) (inaktiv)
+#: source_id: viz2021:13.588897,52.538931,04.07.2023,07:00 (nur Kfz-Verkehr, bis 31.07.2025) (bis 24.07.2024) (inaktiv)
 #: source_id: viz2021:13.584338,52.539646,25.07.2024,10:00 (Eisenacher, bis 31.07.2025)
 #: source_id: viz2021:13.588822,52.539542,25.07.2024,10:00 (Gothaer, bis 31.07.2025)
-#: source_id: viz2021:13.588853,52.539896,04.07.2023,06:00 (Gothaer, bis 25.07.2024)
+#: source_id: viz2021:13.588853,52.539896,04.07.2023,06:00 (Gothaer, bis 25.07.2024) (inaktiv)
 #: source_id: viz2021:13.588897,52.538931,25.07.2024,10:00 (Gothaer, bis 31.07.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 2
 #: last_checked: 2024-06-23 (osm) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-07-31 vvv
+#: next_check: 2024-07-25 vvv
+# REMOVED --- #: next_check: 2025-07-31 vvv
 #: osm_watch: way id="175916583" version="11"
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 #: osm_watch: way id="26692569" version="17"
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2+::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 #: osm_watch: way id="26505949" version="26"
-Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
-Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
+# REMOVED --- Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
+Eisenacher Str.: Einbahnstraßenregelung, evtl. auch für Radfahrer gültig	q3::inwork; 23113,15110 22899,15073
+# REMOVED --- Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
+Gothaer Str.: Fahrbahn gesperrt, mögliche Umwege	q2::inwork 22899,15073 22905,14925
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

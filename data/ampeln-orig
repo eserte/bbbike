@@ -29,7 +29,7 @@ Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17736,5441
 Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2024-06-30 (mapillary)
+#: last_checked: 2024-07-24 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-04-30
 #: valid: -20250430
@@ -65,11 +65,11 @@ Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
 # REMOVED --- #: valid: -20240716
 # REMOVED --- Rudower Str.: Gegenverkehrsregelung östlich der Dorothea-Viehmann-Str.	X::inwork::alternating 19266,1968
 # 
-#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 25.07.2024)
+#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 25.07.2024) (bis 12.08.2024)
 #: note: Die VIZ-Meldung erwähnt nur die Keltenstr., aber möglicherweise hängen die beiden Baustellen zusammen.
 #: note: Länge der Gegenverkehrsstrecke: etwa 100m
-#: next_check: 2024-07-25
-#: valud: -20240725
+#: next_check: 2024-08-12
+#: valud: -20240812
 Grünauer Str./Werderstr.: Gegenverkehrsregelung	X::inwork::alternating 20028,1673
 # 
 # REMOVED --- #: source_id: viz2021:13.490616,52.463117,15.04.2024,07:30 (bis 12.07.2024) (bis 24.07.2024) (inaktiv)
@@ -142,7 +142,7 @@ Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternati
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2024-06-26
+#: last_checked: 2024-07-24 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-01-02
 #: valid: -20250102
