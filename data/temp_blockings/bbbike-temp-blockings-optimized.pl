@@ -2465,7 +2465,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2482,201 +2482,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://csd-berlin.de/event-info-en/
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/gesamte-innenstadt-verkehrseinschrankungen-zum-christopher-street-day
-#: by: https://csd-berlin.de/ (24.7.2021, Route steht noch nicht fest)
-#: by: https://csd-berlin.de/csd-berlin-2021/demo-route-2/
-#: by: https://csd-berlin.de/demo-route-finale-2022/
-#: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
-#: by: https://csd-berlin.de/csd-berlin-2023/route-finale
-#: by: https://csd-berlin.de/route-finale
-#: by: https://www.berlin.de/events/3889775-2229501-pride-village-csd-finale.html
-#: source_id: viz2021:13.3899,52.51036,21.07.2023,19:32 (bis 22.07.2023) (inaktiv)
-	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396
-	2::temp 7033,10396 6937,10407 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6685,10690 6740,10755 6824,10904
-# Route via Karl-Heinrich-Ulrichs-Str.	2::temp 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904
-Route via An der Urania	2::temp 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6826,11479 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
-	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8546,12279 8570,12302
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165
-	3 8573,11404 8542,11502 8548,11571
-	3 8573,11404 8542,11502 8442,11555
-	3 9997,11713 10000,11691 9992,11682
-	3 8743,11489 8740,11524 8736,11557
-	3 7103,11247 6851,11346 6692,11365
-	3 6716,11439 6826,11479 6914,11487
-	3 6716,11439 6826,11479 6750,11550
-	3 9456,11513 9444,11616 9432,11702
-	3 8119,12414 8055,12186 8049,12140
-	3 8049,12140 8055,12186 8119,12414
-	3 8630,12310 8637,12258 8641,12227 8643,12208
-	3 6841,11114 6880,11110 7004,11168 7115,11220
-	3 6742,11099 6873,11011 7002,11034
-	3 8232,11414 8217,11455 8172,11679
-	3 8548,11571 8542,11502 8442,11555
-	3 8548,11571 8542,11502 8573,11404
-	3 7444,10479 7633,10394 7744,10372
-	3 7698,10147 7579,10183 7526,9969
-	3 8327,12174 8344,12221 8391,12389
-	3 7002,11034 6873,11011 6742,11099
-	3 8643,12208 8641,12227 8637,12258 8630,12310
-	3 7744,10372 7633,10394 7444,10479
-	3 9581,11523 9569,11631 9559,11715
-	3 9331,11497 9268,11590 9234,11683
-	3 9000,11727 9058,11564 9155,11283
-	3 6164,11947 6642,12010 6550,11954
-	3 8522,12239 8538,12245 8522,12187
-	3 8104,11037 7980,11070 7747,11075
-	3 7031,12320 7383,12095 7429,12070
-	3 9155,11283 9058,11564 9000,11727
-	3 7963,10716 7820,10768 7534,10850
-	3 7534,10850 7820,10768 7963,10716
-	3 8102,11099 8000,11137 7828,11133
-	3 6540,11754 6778,11742 6980,11790
-	3 8592,11541 8596,11508 8599,11474
-	3 7822,12201 7816,12150 7823,12120
-	3 8442,11555 8542,11502 8548,11571
-	3 8442,11555 8542,11502 8573,11404
-	3 7033,10328 7033,10396 6937,10407
-	3 7033,10328 7033,10396 7227,10489
-# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 7110,10613 6972,10665 6818,10725
-# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 6818,10725 6972,10665 7110,10613
-An der Urania/Kurfürstenstr.	3 6607,10801 6740,10755 6818,10725
-An der Urania/Kurfürstenstr.	3 6818,10725 6740,10755 6607,10801
-Eisenacher Str./Courbièrestr.	3 6719,10347 6753,10446 6743,10615
-Eisenacher Str./Courbièrestr.	3 6743,10615 6753,10446 6719,10347
-# Wichmannstr./Schillstr.	3 6681,10959 6824,10904 6740,10755
-# Wichmannstr./Schillstr.	3 6740,10755 6824,10904 6681,10959
-Wichmannstr./Lützowplatz	3 6681,10959 6824,10904 6918,10858
-Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
-	3 7429,10366 7413,10244 7384,10127
-	3 7429,12070 7383,12095 7031,12320
-	3 7384,10127 7413,10244 7429,10366
-	3 6750,11550 6826,11479 6716,11439
-	3 6750,11550 6826,11479 6914,11487
-	3 7849,10488 7689,10514 7478,10612
-	3 7115,11220 7004,11168 6880,11110 6841,11114
-	3 8391,12389 8344,12221 8327,12174
-	3 8736,11557 8740,11524 8743,11489
-	3 6980,11790 6778,11742 6540,11754
-	3 6679,11602 6809,11570 6869,11567
-	3 7823,12120 7816,12150 7822,12201
-	3 7828,11133 8000,11137 8102,11099
-	3 9559,11715 9569,11631 9581,11523
-	3 7526,9969 7579,10183 7698,10147
-	3 8522,12187 8538,12245 8522,12239
-	3 6692,11365 6851,11346 7103,11247
-	3 9234,11683 9268,11590 9331,11497
-	3 7209,10205 7238,10299 7275,10418
-	3 7275,10418 7238,10299 7209,10205
-	3 8599,11474 8596,11508 8592,11541
-	3 7478,10612 7689,10514 7849,10488
-	3 7747,11075 7980,11070 8104,11037
-	3 6937,10407 7033,10396 7033,10328
-	3 6937,10407 7033,10396 7227,10489
-	3 6914,11487 6826,11479 6750,11550
-	3 6914,11487 6826,11479 6716,11439
-	3 9992,11682 10000,11691 9997,11713
-	3 6869,11567 6809,11570 6679,11602
-	3 6550,11954 6642,12010 6164,11947
-	3 8172,11679 8217,11455 8232,11414
-	3 9692,11732 9701,11656 9702,11647
-	3 9432,11702 9444,11616 9456,11513
-	3 7227,10489 7033,10396 6937,10407
-	3 7227,10489 7033,10396 7033,10328
-	3 9702,11647 9701,11656 9692,11732
-# REMOVED ---	2::temp 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6778,11742 6809,11570 6826,11479 6851,11346 6880,11110 6882,11061 6873,11011 6824,10904 6740,10755 6685,10690 6532,10529 6494,10440
-# REMOVED ---	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-# REMOVED ---	3 8592,11541 8596,11508 8599,11474
-# REMOVED ---	3 9992,11682 10000,11691 9997,11713
-# REMOVED ---	3 6841,11114 6880,11110 7004,11168 7115,11220
-# REMOVED ---	3 9234,11683 9268,11590 9331,11497
-# REMOVED ---	3 6550,11954 6642,12010 6164,11947
-# REMOVED ---	3 7002,11034 6873,11011 6742,11099
-# REMOVED ---	3 7031,12320 7383,12095 7429,12070
-# REMOVED ---	3 8481,11638 8553,11638 8743,11663
-# REMOVED ---	3 6869,11567 6809,11570 6679,11602
-# REMOVED ---	3 9331,11497 9268,11590 9234,11683
-# REMOVED ---	3 8599,11474 8596,11508 8592,11541
-# REMOVED ---	3 6540,11754 6778,11742 6980,11790
-# REMOVED ---	3 6750,11550 6826,11479 6914,11487
-# REMOVED ---	3 6750,11550 6826,11479 6716,11439
-# REMOVED ---	3 9432,11702 9444,11616 9456,11513
-# REMOVED ---	3 6742,11099 6873,11011 7002,11034
-# REMOVED ---	3 8327,12174 8344,12221 8391,12389
-# REMOVED ---	3 8546,12279 8538,12245 8592,12252
-# REMOVED ---	3 8546,12279 8538,12245 8522,12239
-# REMOVED ---	3 8546,12279 8538,12245 8522,12187
-# REMOVED ---	3 7823,12120 7816,12150 7822,12201
-# REMOVED ---	3 8119,12414 8055,12186 8049,12140
-# REMOVED ---	3 7429,12070 7383,12095 7031,12320
-# REMOVED ---	3 8391,12389 8344,12221 8327,12174
-# REMOVED ---	3 6980,11790 6778,11742 6540,11754
-# REMOVED ---	3 8743,11663 8553,11638 8481,11638
-# REMOVED ---	3 8442,11555 8542,11502 8479,11493
-# REMOVED ---	3 8442,11555 8542,11502 8573,11404
-# REMOVED ---	3 9702,11647 9701,11656 9692,11732
-# REMOVED ---	3 7115,11220 7004,11168 6880,11110 6841,11114
-# REMOVED ---	3 7822,12201 7816,12150 7823,12120
-# REMOVED ---	3 6692,11365 6851,11346 7103,11247
-# REMOVED ---	3 6607,10801 6740,10755 6818,10725
-# REMOVED ---	3 6679,11602 6809,11570 6869,11567
-# REMOVED ---	3 7103,11247 6851,11346 6692,11365
-# REMOVED ---	3 6918,10858 6824,10904 6681,10959
-# REMOVED ---	3 9581,11523 9569,11631 9559,11715
-# REMOVED ---	3 6636,10492 6602,10504 6532,10529 6468,10550
-# REMOVED ---	3 9456,11513 9444,11616 9432,11702
-# REMOVED ---	3 8736,11557 8740,11524 8743,11489
-# REMOVED ---	3 8743,11489 8740,11524 8736,11557
-# REMOVED ---	3 8489,11782 8571,11846 8501,11815
-# REMOVED ---	3 8522,12187 8538,12245 8522,12239
-# REMOVED ---	3 8522,12187 8538,12245 8592,12252
-# REMOVED ---	3 8522,12187 8538,12245 8546,12279
-# REMOVED ---	3 8522,12239 8538,12245 8522,12187
-# REMOVED ---	3 8522,12239 8538,12245 8592,12252
-# REMOVED ---	3 8522,12239 8538,12245 8546,12279
-# REMOVED ---	3 8573,11404 8542,11502 8442,11555
-# REMOVED ---	3 8573,11404 8542,11502 8479,11493
-# REMOVED ---	3 8479,11493 8542,11502 8442,11555
-# REMOVED ---	3 8479,11493 8542,11502 8573,11404
-# REMOVED ---	3 8501,11815 8571,11846 8489,11782
-# REMOVED ---	3 6681,10959 6824,10904 6918,10858
-# REMOVED ---	3 9559,11715 9569,11631 9581,11523
-# REMOVED ---	3 9000,11727 9058,11564 9155,11283
-# REMOVED ---	3 9155,11283 9058,11564 9000,11727
-# REMOVED ---	3 6914,11487 6826,11479 6750,11550
-# REMOVED ---	3 6914,11487 6826,11479 6716,11439
-# REMOVED ---	3 9997,11713 10000,11691 9992,11682
-# REMOVED ---	3 6818,10725 6740,10755 6607,10801
-# REMOVED ---	3 8592,12252 8538,12245 8546,12279
-# REMOVED ---	3 8592,12252 8538,12245 8522,12239
-# REMOVED ---	3 8592,12252 8538,12245 8522,12187
-# REMOVED ---	3 6164,11947 6642,12010 6550,11954
-# REMOVED ---	3 6468,10550 6532,10529 6602,10504 6636,10492
-# REMOVED ---	3 9692,11732 9701,11656 9702,11647
-# REMOVED ---	3 8049,12140 8055,12186 8119,12414
-# REMOVED ---	3 6716,11439 6826,11479 6750,11550
-# REMOVED ---	3 6716,11439 6826,11479 6914,11487
-',
-         'from' => 1721944800,
-         'id' => 2083,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              6,
-                              'start',
-                              '2020-07-30T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html',
-         'text' => 'CSD am 27. Juli 2024',
-         'type' => 'gesperrt',
-         'until' => 1722117599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3116,7 +2922,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Juli 8.00 - 20.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: August 8.00 - 20.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -5453,7 +5259,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
        {
          'data' => '#: source_id: viz2021:13.440009,52.567594,26.04.2022,07:00 (26.4.-11.5.2022) (inaktiv)
 #: source_id[inactive]: bvg2021:x54#BVG301047_0
-#: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024)
+#: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,701070,732194#msg-732194
 #: by: https://nitter.net/VIZ_Berlin/status/1517050882063581184#m (2.BA -> Tino-Schwierzina-Str. (bis 30.5.2022?))
 #: by: https://nitter.net/VIZ_Berlin/status/1518605828533727234#m
@@ -5465,7 +5271,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 ',
          'from' => 1718602827,
          'id' => 3542,
-         'text' => 'Treskowstr.: Einbahnstraßenregelung, offen Richtung Prenzlauer Promenade, vermutlich sind auch Radfahrer betroffen, bis 1.8.2024',
+         'text' => 'Treskowstr.: Einbahnstraßenregelung, offen Richtung Prenzlauer Promenade, vermutlich sind auch Radfahrer betroffen, voraussichtlich bis 02.09.2024',
          'type' => 'handicap',
          'until' => 1722524400
        },
@@ -5546,7 +5352,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
-#: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024)
+#: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -5555,9 +5361,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 ',
          'from' => 1713897172,
          'id' => 3550,
-         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 29.07.2024',
+         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 01.11.2024',
          'type' => 'gesperrt',
-         'until' => 1722265200
+         'until' => 1730476800
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -5700,7 +5506,17 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LS/721-F/22/001 (bis 14.09.2024) (vorfristig inaktiv) (bis 14.09.2024)
+#: next_check_id: BADFREIENWALDE-2022
+	2::inwork 52984,42973 53249,43276
+',
+         'from' => 1644793200,
+         'id' => 3591,
+         'text' => 'Bad Freienwalde, Schiffmühler Str.: Sperrung, evtl. sind auch Radfahrer betroffen, 14.02.2022 bis 14.09.2024',
+         'type' => 'gesperrt',
+         'until' => 1726351200
+       },
        undef,
        undef,
        undef,
@@ -5939,7 +5755,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.42925,52.55644,06.01.2023,08:58 (bis 30.3.2023) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,02.06.2023,11:19 (bis 14.07.2023) (inaktiv)
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
-#: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024)
+#: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024)
 #: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
 #: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 	q3::inwork; 12010,16774 12230,16915
@@ -5949,9 +5765,9 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 ',
          'from' => 1718575200,
          'id' => 3648,
-         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 16.08.2024',
+         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 02.09.2024',
          'type' => 'handicap',
-         'until' => 1723820400
+         'until' => 1725289200
        },
        undef,
        undef,
@@ -6075,27 +5891,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/ # Ende der Bauarbeiten voraussichtlich im I. oder II. Quartal 2024 (mittlerweile bis II. Quartal 2024) (mittlerweile Eröffnung der Brücken 2024)
-#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radfernweg-berlin-usedom.pdf
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1349287.php (ab 24. Juli 2023)
-#: by: https://www.berliner-woche.de/buch/c-bauen/brueckenbau-ueber-die-panke_a389479
-#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecken-poelnitzwiesen/umleitung-radweg-panke.pdf
-#: source_id: viz2021:13.503115,52.640698,25.07.2023,08:00 (bis 31.12.2023) (inaktiv) (bis 30.06.2024) (bis 30.07.2024)
-#: osm_watch: way id="1153732901" version="6"
-#: last_checked: 2024-07-16 (osm)
-#: check_frequency: 30d
-# REMOVED --- #: check_frequency: 150d
-# REMOVED --- #: next_check: 2024-07-30
-#: next_check: 2024-12-31
-	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
-',
-         'from' => 1690063200,
-         'id' => 3694,
-         'text' => 'Pölnitzwiesen: Neubau der Pankebrücke, Weg gesperrt, ab 24. Juli 2023 bis voraussichtlich Ende Juli 2024, evtl. auch länger',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6818,15 +6614,14 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 #: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024)
-#: XXX zukünftige Einschränkungen:
+#: XXX zukünftige Einschränkungen (mittlerweile: der Bauzustand wird vermutlich erst am 17.07.2024 gewechselt):
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
-#: XXX bei osm mittlerweile als offen getaggt, stimmt das? -> nein, siehe https://www.openstreetmap.org/changeset/150876600
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-07-10 vvv
+#: last_checked: 2024-07-30 (bahninfo-forum) vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-08-10 vvv
+#: next_check: 2024-08-17 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="7"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -7180,16 +6975,16 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024)
+         'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: also_indoor: traffic (G,B,W)
 	q3::inwork 12228,14083 12077,14186
 ',
          'from' => 1701237600,
          'id' => 3982,
-         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 31.07.2024 17:00',
+         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 30.08.2024 17:00',
          'type' => 'handicap',
-         'until' => 1722438000
+         'until' => 1725030000
        },
        undef,
        undef,
@@ -7378,7 +7173,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
          'until' => 1748728800
        },
        {
-         'data' => '#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024) (bis 21.06.2024) (bis 26.07.2024)
+         'data' => '#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024) (bis 21.06.2024) (bis 26.07.2024) (bis 27.09.2024)
 #: note: außerdem Gegenverkehrsregelung, dafür fällt die Fußgängerampel weg
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764546320277086229
 #: by: https://pbs.twimg.com/media/GHmM9cLWgAI8oMM?format=jpg&name=large
@@ -7386,12 +7181,12 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 ',
          'from' => 1709449200,
          'id' => 4017,
-         'text' => 'Charlottenstr.: Anbindung Chausseestr. gesperrt, vom 04.03.2024 08:00 bis 26.07.2024 17:00',
+         'text' => 'Charlottenstr.: Anbindung Chausseestr. gesperrt, vom 04.03.2024 08:00 bis 27.09.2024 17:00',
          'type' => 'handicap',
-         'until' => 1722006000
+         'until' => 1727449200
        },
        {
-         'data' => '#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024) (bis 07.05.2024) (bis 17.05.2024) (bis 07.06.2024) (bis 21.06.2024) (bis 05.07.2024) (bis 31.07.2024)
+         'data' => '#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024) (bis 07.05.2024) (bis 17.05.2024) (bis 07.06.2024) (bis 21.06.2024) (bis 05.07.2024) (bis 31.07.2024) (bis 12.08.2024)
 #: note: Gehweg nur auf der westlichen Seite, für Radfahrer in beiden Richtungen frei, 2 Ampeln zum Überqueren
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764537508510216685
 #: by: https://pbs.twimg.com/media/GHmMbjuXYAAbLcY?format=jpg&name=large
@@ -7399,9 +7194,9 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 ',
          'from' => 1709445600,
          'id' => 4018,
-         'text' => 'Malchower Teichweg: Anbindung an die B2 kann wegen Bauarbeiten gesperrt sein, vom 04.03.2024 07:00 bis 31.07.2024 17:00',
+         'text' => 'Malchower Teichweg: Anbindung an die B2 kann wegen Bauarbeiten gesperrt sein, vom 04.03.2024 07:00 bis 12.08.2024 17:00',
          'type' => 'gesperrt',
-         'until' => 1722438000
+         'until' => 1723474800
        },
        undef,
        undef,
@@ -7418,7 +7213,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
        },
        {
          'data' => '#: source_id: viz2021:13.33304,52.4907,12.03.2024,16:19 (bis 29.03.2024) (inaktiv)
-#: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024) (bis 30.06.2024) (bis 31.07.2024)
+#: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024) (bis 30.06.2024) (bis 31.07.2024) (bis 19.08.2024)
 #: source_id: viz2021:13.33304,52.4907,27.06.2024,17:18 (bis 31.07.2024) (vorzeitig inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767537882204434779 (hier nur Kfz-Verkehr)
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/wasserrohrbruch-fuehrt-zu-sperrung_a411536
@@ -7430,9 +7225,9 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
 ',
          'from' => 1710170340,
          'id' => 4023,
-         'text' => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), vermutlich sind auch Radfahrer betroffen (absteigen und schieben), vom 12.03.2024 16:19 bis 31.07.2024',
+         'text' => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), vermutlich sind auch Radfahrer betroffen (absteigen und schieben), vom 12.03.2024 16:19 bis 19.08.2024',
          'type' => 'handicap',
-         'until' => 1722438000
+         'until' => 1724079600
        },
        undef,
        {
@@ -7506,23 +7301,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024) (am nächsten Tag schon inaktiv)
-#: source_id: viz2021:13.30305,52.51725,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024)
-#: source_id: viz2021:13.30263,52.5165,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024)
-# REMOVED --- #: also_indoor: traffic (H,G,B,W)
-#: also_indoor: traffic (H,G,B[teilweise],T[teilweise])
-# REMOVED --- #: note: bei rbb wieder aktiv
-# REMOVED (hier nicht mehr) ---	q4::inwork 3493,12228 3495,12185 3507,12076
-Behaimstr.	q4::inwork 3495,12185 3630,12201
-Schustehrusstr.	q4::inwork 3528,12276 3623,12284
-',
-         'from' => 1718733032,
-         'id' => 4037,
-         'text' => 'Behaimstr. und Schustehrusstr.: Bauarbeiten zwischen Wilmersdorfer Str. und Gierkezeile bzw. Gierkeplatz, evtl. sind auch Radfahrer betroffen, bis 31.07.2024',
-         'type' => 'handicap',
-         'until' => 1722434400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7621,7 +7400,7 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsinformationen-zur-uefa-euro-2024-in-berlin/
 #: by: https://berliner-abendblatt.de/berlin-news/fanmeile-wird-abgebaut-strasse-des-17-juni-bleibt-gesperrt-id257684
 #: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024) (bis 26.07.2024) (bis 05.08.2024)
-#: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024)
+#: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024) (inaktiv)
 #: note: es sieht so aus, als ob man vom Bremer Weg nur über Umwege (bis fast Behrenstr.?) zum Brandenburger Tor fahren kann
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Kleine Querallee, Überquerung	3 8391,12389 8344,12221 8327,12174
@@ -7670,27 +7449,7 @@ Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
          'type' => 'gesperrt',
          'until' => 1722873600
        },
-       {
-         'data' => '#: next_check_id: EM-2024
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-strasse-des-17-juni-bis-ende-juli/ (13.5.2024 - 26.7.2024)
-#: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
-#: source_id: viz2021:13.365723,52.517491,13.05.2024,06:00 (bis 26.07.2024)
-# REMOVED --- #: XXX wird auch der gesamte Tiergarten gesperrt? oder vielleicht nur an Veranstaltungstagen? --- #: next_check: 2024-05-13
-# REMOVED (Radweg scheint passierbar zu bleiben) --- John-Foster-Dulles-Allee	2::temp 7031,12320 7215,12295 7437,12368
-# REMOVED (hier möglicherweise nicht mehr) --- John-Foster-Dulles-Allee: für Kfz-Verkehr gesperrt	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-Scheidemannstr. und Dorotheenstr.: für Kfz-Verkehr gesperrt	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
-Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
-# REMOVED (hier nicht mehr) --- vor dem Bundeskanzleramt	2::temp 8120,12756 8122,12603
-Paul-Löbe-Allee	2::temp 8306,12609 8207,12606 8122,12603
-Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
-# REMOVED (hier wohl nicht mehr) --- Willy-Brandt-Str. bis Konrad-Adenauer-Str.	2::temp 7930,12912 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853 8503,12895
-',
-         'from' => 1715464800,
-         'id' => 4054,
-         'text' => 'Regierungsviertel: einige Sperrungen noch möglich, bis 26.7.2024',
-         'type' => 'gesperrt',
-         'until' => 1722031200
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024)
@@ -7889,14 +7648,14 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1722700800
        },
        {
-         'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024)
+         'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024)
 	q3::inwork 10573,17566 10466,17464
 ',
          'from' => 1717909200,
          'id' => 4082,
-         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.07.2024 17:00',
+         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 01.11.2024 17:00',
          'type' => 'handicap',
-         'until' => 1722265200
+         'until' => 1730476800
        },
        {
          'data' => '#: source_id: viz2021:13.299377,52.44785,10.06.2024,07:00 (bis 09.08.2024)
@@ -8103,17 +7862,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: note: by rbb
-#: also_indoor: traffic (H,G,B,T,W)
-	q4::inwork 4415,11053 4399,10854
-',
-         'from' => 1719859975,
-         'id' => 4102,
-         'text' => 'Wielandstr.: zwischen Niebuhrstr. und Kantstr. Sperrung wegen Arbeiten an einer Brücke, evtl. sind auch Radfahrer betroffen, bis 26.07.2024 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1722031200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462140.php
@@ -8322,21 +8071,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => 1730069999
        },
-       {
-         'data' => '#: source_id: viz2021:13.29786,52.57817,23.07.2024,07:00 (inaktiv)
-#: source_id[inactive]: bvg2024:x33#HIM_FREETEXT_232902
-#: source_id: viz2021:13.29786,52.57817,25.07.2024,08:35 (bis 01.08.2024)
-#: by: https://viz.berlin.de/aktuelle-meldungen/holzhauser-strasse-tegel-nach-einer-stromhavarie-zwischen-wittestrasse-und-berliner-strasse-fur-den-gesamten/
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1816030805652631855 (Freigabe am 26.7.2024)
-#: also_indoor: traffic (H,G,T,B,W)
-	2::inwork 3045,19032 2994,18979
-',
-         'from' => undef,
-         'id' => 4121,
-         'text' => 'Holzhauser Str./Autobahnbrücke: Sperrung, auch für Fußgänger und Radfahrer, möglicherweise bis 1. August 2024, Freigabe vielleicht auch schon früher',
-         'type' => 'gesperrt',
-         'until' => 1722549599
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (H,G,W,T)
 #: XXX Gehwegvorstreckungen werden gebaut
@@ -8359,6 +8094,26 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Hönow, Dorfstr.: Bauarbeiten, Fahrbahnerneuerung, evtl sind auch Radfahrer von der Sperrung betroffen, 29.07.2024 08:00 Uhr bis 06.09.2024 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1725631200
+       },
+       {
+         'data' => '#: source_id: LS/221-E/24/100 (bis 31.08.2024)
+	2::inwork 36914,54197 36647,55090 36576,55996 36535,56402 36621,56807
+',
+         'from' => 1723356000,
+         'id' => 4124,
+         'text' => 'Britz - Golzow: Deckenerneuerung, Sperrung, vom 12.08.2024 08:00 Uhr bis 31.08.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1725112800
+       },
+       {
+         'data' => '#: source_id: 246100872 (bis 16.08.2024)
+	2::inwork 32538,-34303 32236,-34064 32119,-33902 31884,-33395
+',
+         'from' => 1722146400,
+         'id' => 4125,
+         'text' => 'Halbe - Teurow: Bauarbeiten, Sperrung, vom 29.07.2024 08:00 Uhr bis 16.08.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1723816800
        }
      
 );
