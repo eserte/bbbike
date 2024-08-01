@@ -1733,6 +1733,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
 #: source_id[inactive]: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024) (bis 11.07.2024)
 #: source_id: bvg2024:282#HIM_FREETEXT_230965 (bis 31.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1470949.php
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2024-07-08 (traffic)
 #: check_frequency: 30d
@@ -3307,7 +3308,35 @@ Schlossinsel	2::temp 22093,4499 22076,4422
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.turmstrasse.de/aktuelles
+#: by: https://www.gratis-in-berlin.de/festivals/item/2056177-moabiter-kiezfest-2022
+#: by: https://www.gratis-in-berlin.de/images/stories/tipps/l_plakat_kiezfest_2022_dina4_2.jpg
+#: by: https://www.turmstrasse.de/mitgestalten/kiezfest
+# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
+# REMOVED --- : tempex YYYY09 & sa3 & T14-T18
+# REMOVED --- : tempex YYYY09 & sa1 & T12-T21
+# REMOVED ---	2::temp 5857,13342 5868,13441 5882,13548
+	2::temp 5857,13342 5868,13441 5956,13433 5956,13338
+',
+         'from' => 1726178400,
+         'id' => 2625,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              8,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2029, voraussichtlich 12 bis 21 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1726340400
+       },
        undef,
        undef,
        undef,
@@ -4047,7 +4076,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berliner-woche.de/karow/c-verkehr/wasserbetriebe-bauen-am-bahnhof-karow_a359438 (Erˆffnung 2023)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15236.pdf (Freigabe im 3. Quartal 2024)
 #: by: https://www.berliner-woche.de/karow/c-bauen/strasse-am-bahnhof-karow-wird-tiefer-gelegt_a382636 (voraussichtliche Freigabe im Herbst 2024)
-#: last_checked: 2024-03-25 (mapillary)
+#: last_checked: 2024-07-24 (mapillary)
 #: next_check: 2024-12-31
 	2::inwork 14539,23306 14573,23295 14597,23280
 ',
@@ -4329,25 +4358,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
-#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nˆrdliche Abschnitt)
-#: source_id: 2147345598 (inaktiv)
-# REMOVED (hier nicht) --- #: last_checked: 2020-05-01 (Radfahrer d¸rfen hier noch fahren) ---	q4::inwork 6009,5691 6007,5785
-# REMOVED (hier wohl nicht) ---	q4::inwork 5993,5422 6009,5691
-#: osm_watch: note 4060014 5
-#: also_indoor: traffic (ex-G)
-#: note: hier etwa 120m der Fahrbahn gesperrt (eigentlich q4+::inwork)
-#: add_fragezeichen: Sind die Bauarbeiten in der Lauenburger Str. beendet?
-#: last_checked: 2024-06-22
-	q4::inwork 6009,5691 5993,5422
-',
-         'from' => 1587765600,
-         'id' => 3211,
-         'text' => 'Lauenburger Str.: Bauarbeiten zwischen S¸dendstr. und Bergstr., Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4567,7 +4578,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-07-05 (mapillary)
+#: last_checked: 2024-07-24 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -5215,7 +5226,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/
 #: by: https://www.kalle-neukoelln.com/#architektur (Erstbez¸ge ab 2022 mˆglich)
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/kalle-neukoelln-wird-nach-und-nach-bezogen_a413054
-#: osm_watch: way id="734271970" version="6"
+#: osm_watch: way id="734271970" version="7"
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
@@ -5256,25 +5267,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.440009,52.567594,26.04.2022,07:00 (26.4.-11.5.2022) (inaktiv)
-#: source_id[inactive]: bvg2021:x54#BVG301047_0
-#: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024)
-#: by: https://www.bahninfo-forum.de/read.php?9,701070,732194#msg-732194
-#: by: https://nitter.net/VIZ_Berlin/status/1517050882063581184#m (2.BA -> Tino-Schwierzina-Str. (bis 30.5.2022?))
-#: by: https://nitter.net/VIZ_Berlin/status/1518605828533727234#m
-#: by: https://nitter.net/pic/media%2FFRMr68PXsAUrCyR.jpg%3Fname%3Dorig (Radfahrer kˆnnen den nordˆstlichen Gehweg benutzen)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1802558286950289549
-#: by: https://pbs.twimg.com/media/GQCzlBvXIAAQQx6?format=jpg&name=large
-# REMOVED --- #: note: SEV wird ¸ber die Treskowstr. gef¸hrt --- #: confirmed_by: mapillary
-	q4::inwork; 11893,17397 12324,17213
-',
-         'from' => 1718602827,
-         'id' => 3542,
-         'text' => 'Treskowstr.: Einbahnstraﬂenregelung, offen Richtung Prenzlauer Promenade, vermutlich sind auch Radfahrer betroffen, voraussichtlich bis 02.09.2024',
-         'type' => 'handicap',
-         'until' => 1722524400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5836,6 +5829,7 @@ Br¸ckenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024)
 #: last_checked: 2024-07-24 vvv
 #: check_frequency: 60d vvv
 nˆrdlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn tempor‰r aufgegeben, Wechseln auf die andere Straﬂenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
@@ -6197,7 +6191,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-07-24 (traffic)
+#: last_checked: 2024-08-01 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -6698,14 +6692,14 @@ Edisonstr. (Nord): L‰nge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
        },
        {
          'data' => '#: next_check_id: ZOSSENB246-2023
-#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024)
+#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024)
 	2::inwork 13526,-20548 13412,-20513 13271,-20531
 ',
          'from' => 1716674400,
          'id' => 3913,
-         'text' => 'B246, Zossen: Sperrung des Bahn¸bergangs, evtl. sind auch Radfahrer betroffen, 27.05.2024 08:00 Uhr bis 30.08.2024 16:00 Uhr',
+         'text' => 'B246, Zossen: Sperrung des Bahn¸bergangs, evtl. sind auch Radfahrer betroffen, 27.05.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1725026400
+         'until' => 1723212000
        },
        undef,
        undef,
@@ -6754,13 +6748,29 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier f‰lschlicherweise nur f¸r den Kfz-Verkehr) (inaktiv)
+#: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
+#: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
+# REMOVED (alte Notizen) --- #: note: bei VIZ inaktiv, tats‰chlich noch aktiv --- #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
+# REMOVED (bei mapillary nicht mehr gesehen) --- #: last_checked: 2023-11-07 --- #: check_frequency: 14d
+#: add_fragezeichen: Gilt die Einbahnstraﬂenregelung auch f¸r Radfahrer?
+	q4::inwork; 10722,11816 10815,11662
+',
+         'dont_check_date' => 1,
+         'from' => 1722204000,
+         'id' => 3925,
+         'text' => 'Neue Roﬂstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 23.08.2024',
+         'type' => 'handicap',
+         'until' => 1724425200
+       },
        {
          'data' => '#: add_fragezeichen: Existiert die Sperrung noch immer?
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
 #: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_09_0481_0548_online.pdf (Grundst¸cksnummerierung)
-#: also_indoor: traffic (ex-G,ex-W)
+#: also_indoor: traffic (re-G,ex-W)
 #: osm_watch: way id="977478749" version="1"
 #: note: Halteverbotsschilder bis Ende M‰rz 2024; L‰nge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: last_checked: 2024-07-05 (architektur-urbanistik)
@@ -7301,7 +7311,25 @@ Kˆsliner Str.: Einm¸ndungsbereich betroffen	q3::inwork 8048,15829 8066,15610
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024) (am n‰chsten Tag schon inaktiv)
+#: source_id: viz2021:13.30305,52.51725,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024) (inaktiv)
+#: source_id: viz2021:13.30263,52.5165,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024) (inaktiv)
+#: source_id: viz2021:13.30279,52.51551,01.08.2024,07:00 (bis 30.09.2024)
+# REMOVED --- #: also_indoor: traffic (H,G,B,W)
+#: also_indoor: traffic (H,G,B[teilweise],T[teilweise])
+# REMOVED (hier nicht mehr) --- #: note: bei rbb wieder aktiv
+# REMOVED Gierkezeile, nˆrdlicher Abschnitt	q4::inwork 3493,12228 3495,12185 3507,12076
+Gierkezeile, s¸dlicher Abschnitt	q4::inwork 3507,12076 3514,11988 3528,11852
+# REMOVED (hier nicht mehr) --- Behaimstr.	q4::inwork 3495,12185 3630,12201
+# REMOVED (hier nicht mehr) --- Schustehrusstr.	q4::inwork 3528,12276 3623,12284
+',
+         'from' => 1722463200,
+         'id' => 4037,
+         'text' => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Zillestr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 30.09.2024 16:00',
+         'type' => 'handicap',
+         'until' => 1727704800
+       },
        undef,
        undef,
        undef,
@@ -7376,79 +7404,8 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (ex-G[falsch?],B,T)
-# REMOVED --- #: note: nur Umleitungsschilder f¸r Radfahrer gesehen
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-07-24 (traffic)
-#: check_frequency: 7d
-	q4::inwork 5466,5523 5555,5508
-# REMOVED (hier nicht (mehr?)) ---	q4::inwork 5555,5508 5676,5488
-',
-         'from' => undef,
-         'id' => 4052,
-         'text' => 'S¸dendstr.: Bauarbeiten zwischen Kˆrnerstr. und Plantagenstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
-       {
-         'data' => '#: next_check_id: EM-2024
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-strasse-des-17-juni-bis-ende-juli/ (6.5.2024 - 26.7.2024)
-#: by: https://berliner-abendblatt.de/berlin-news/fanmeile-und-veranstaltungen-strasse-des-17-juni-gesperrt-id251516
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1787175928923099290 (hier auch: Heinrich-von-Gagern-Str., Otto-von Bismarck-Allee, Paul-Lˆbe-Allee)
-#: by[nocache]: https://twitter.com/BA_Mitte_Berlin/status/1787472473597813136
-#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsinformationen-zur-uefa-euro-2024-in-berlin/
-#: by: https://berliner-abendblatt.de/berlin-news/fanmeile-wird-abgebaut-strasse-des-17-juni-bleibt-gesperrt-id257684
-#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024) (bis 26.07.2024) (bis 05.08.2024)
-#: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024) (inaktiv)
-#: note: es sieht so aus, als ob man vom Bremer Weg nur ¸ber Umwege (bis fast Behrenstr.?) zum Brandenburger Tor fahren kann
-Straﬂe des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-Kleine Querallee, ‹berquerung	3 8391,12389 8344,12221 8327,12174
-Kleine Querallee, ‹berquerung	3 8327,12174 8344,12221 8391,12389
-#: note: zwischenzeitlich q3::temp, dann gesperrt
-Ebertstr.	q3::temp 8540,12420 8573,12325
-Ebertstr.	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-#: note: zwischenzeitlich waren hier wenigstens die B¸rgersteige passierbar, dann komplett gesperrt
-Ebertstr.	2::temp 8600,12165 8595,12066
-# REMOVED (vermutlich nicht mehr) --- Behrenstr.: Fahrbahn gesperrt	q4::temp 8737,12098 8595,12066
-# REMOVED (hier noch passierbar) --- Ebertstr.	2::temp 8600,12165 8595,12066
-#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: note: siehe auch Routing-Helper-Eintrag f¸r Wegf¸hrung zum Bremer Weg und entlang des Brandenburger Tors
-#: last_checked: 2024-07-24
-#: check_frequency: 3d
-#: next_check: 2024-08-05
-Brandenburger Tor	2::temp 8538,12245 8592,12252
-# REMOVED --- Brandenburger Tor	2::temp 8592,12252 8637,12258
-# REMOVED --- Pariser Platz	2::temp 8637,12258 8722,12268
-# REMOVED --- Pariser Platz	2::temp 8722,12268 8728,12220 8705,12217
-Bremer Weg - Brandenburger Tor	2::temp 8466,12197 8522,12239 8538,12245
-Ahornsteig - Brandenburger Tor	2::temp 8522,12187 8538,12245
-#: note: Sperrungen im Regierungsviertel
-Yitzhak-Rabin-Str.: nach 60m von der Heinrich-von-Gagern-Str. komplett gesperrt	2::temp 8119,12414 8055,12186
-Heinrich-von-Gagern-Str.: westlicher B¸rgersteig ist passierbar	q4::temp 8119,12414 8122,12603
-Paul-Lˆbe-Allee	2::temp 8306,12609 8207,12606
-Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
-# REMOVED (vermutlich nicht mehr)
-##: note: Tiergarten ˆstlich Bellevueallee gesperrt
-#	2::temp 8571,11846 8501,11815 8244,11878 8221,11876 8221,11885 8244,11878 8327,12174 8466,12197
-#	2::temp 8214,12205 8215,12156 8122,12147 8107,12068 8099,12058 8102,12043 8099,12022 8091,12023 8091,12011 8091,11992 8104,11984 8095,11919 8020,11937 8022,12016
-#	2::temp 8122,12147 8049,12140 8055,12186 7816,12150 7383,12095
-#	2::temp 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
-#	2::temp 7429,12070 7775,12114 7772,12040 7717,11918
-#	2::temp 8522,12187 8453,12099 8262,11883
-#	2::temp 8221,11690 8210,11775 8221,11876 8167,11865 8132,11910 8221,11885 8215,12156
-#	2::temp 8026,11764 8140,11850
-#	2::temp 8327,12174 8344,12221
-#	2::temp 7816,12150 7823,12120 7832,12036 7822,11952 7793,11878
-#	2::temp 8210,11775 8172,11679
-#	2::temp 8020,11937 8016,11770
-',
-         'from' => 1714860000,
-         'id' => 4053,
-         'text' => 'Straﬂe des 17. Juni, Ebertstr., Brandenburger Tor: Sperrungen wegen Veranstaltungen, voraussichtlich bis 05.08.2024',
-         'type' => 'gesperrt',
-         'until' => 1722873600
-       },
+       undef,
+       undef,
        undef,
        undef,
        {
@@ -7610,7 +7567,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        {
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
 #: note: keine Freigabe der Gehwege f¸r Radfahrer
-#: note: Absperrungen kˆnnen teilweise weggeschoben sein und die Fahrbahn ist nur in der Mitte aufgebuddelt (Stand Mitte Juni 2024, Ende Juli 2024)
+#: note: Absperrungen kˆnnen teilweise weggeschoben sein und die Fahrbahn ist nur in der Mitte aufgebuddelt (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024)
 	q4::inwork 15077,11910 15110,12107
 ',
          'from' => 1717538400,
@@ -7968,7 +7925,7 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
          'until' => 1727442000
        },
        {
-         'data' => '#: source_id: bvg2024:296#HIM_FREETEXT_230337 (10.07.2024-31.08.2024)
+         'data' => '#: source_id: bvg2024:296#HIM_FREETEXT_230337 (10.07.2024-31.08.2024, mittlerweile bis 2024-08-02)
 #: source_id: viz2021:13.525899,52.482661,10.07.2024,08:00 (bis 07.08.2024)
 #: note: Einbahnstraﬂenabschnitt ist etwa 65m lang, deshalb q3 statt q4
 	q3::inwork; 18737,8686 18865,8740
@@ -8007,6 +7964,7 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
 #: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1815251677278060801
 #: by: https://pbs.twimg.com/media/GS3L_VJWQAAhbAU?format=jpg&name=medium
+#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/arbeiten-an-der-schildower-strasse-dauern-18-monate_a421648
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, n‰chster Bauabschnitt ist Gertrudstr. - Landesgrenze
 #: next_check: 2025-04-30 vvv
 Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233

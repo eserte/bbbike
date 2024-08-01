@@ -964,7 +964,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-07-22
+#: last_checked: 2024-08-01
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3274,18 +3274,18 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20201122 (geschützt oder ungeschützt?)
-#: by: https://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2025)
+#: by: https://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2025) (4. Quartal 2025 - 4. Quartal 2026)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20210720 (Baubeginn Ende 2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6412 (Antrag)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: viz2021:13.593488,52.449407,07.11.2022,15:00 (inaktiv)
-#: osm_watch: way id="420112505" version="12"
-#: osm_watch: way id="420112509" version="13"
+#: osm_watch: way id="420112505" version="13"
+#: osm_watch: way id="420112509" version="15"
 #: osm_watch: way id="966685279" version="7"
 #: last_checked: 2024-07-16 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2025-12-31 vvv
+#: next_check: 2026-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
@@ -8310,7 +8310,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-07-14 vvv
+#: last_checked: 2024-07-24 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv)
@@ -8539,7 +8539,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/info-abend-zur-radverkehrsanlage_a339422
 #: by: https://berliner-abendblatt.de/2022/03/16/radweg-tempelhofer-damm/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198245.php (bis August 2022 Weiterführung bis Alt-Mariendorf)
-#: by: https://www.infravelo.de/projekt/mariendorfer-damm/ (4. Quartal 2021 - 4. Quartal 2022) (mittlerweile bis 2. Quartal 2023) (1. Quartal 2023 - 3. Quartal 2023) (1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2023 - 2. Quartal 2024) (1. Quartal 2023 - 3. Quartal 2024)
+#: by: https://www.infravelo.de/projekt/mariendorfer-damm/ (4. Quartal 2021 - 4. Quartal 2022) (mittlerweile bis 2. Quartal 2023) (1. Quartal 2023 - 3. Quartal 2023) (1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2023 - 2. Quartal 2024) (1. Quartal 2023 - 3. Quartal 2024) (1. Quartal 2023 - 4. Quartal 2024)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1255443.php (Erwähnung)
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/arbeiten-fuer-radweg-beginnen_a369521 (bis III. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2023/01/17/mariendorf-baustart-fuer-radfahrstreifen/
@@ -8581,8 +8581,8 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2024-06-22 vvv
-# REMOVED --- #: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2024-06-17 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2024-12-31 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 # REMOVED --- #: osm_watch: way id="111048866" version="19" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
@@ -8599,8 +8599,8 @@ provisorischer gemeinsamer Rad/Gehweg	RW2; 9275,4672 9259,4815 9248,4904 9239,49
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 # REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^

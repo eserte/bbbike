@@ -425,9 +425,11 @@ RB26	R 39654,14564 40259,14530 40496,14524 43033,14393 45640,14267 45740,14260 5
 #: by: https://www.berliner-zeitung.de/mensch-metropole/ostbahn-berlin-polen-fertigstellung-oderbruecke-neuer-termin-li.2188014
 #: by: https://www.msn.com/de-de/nachrichten/panorama/oderbr%C3%BCcke-nach-k%C3%BCstrin-kostrzyn-berlin-erh%C3%A4lt-eine-internationale-bahnverbindung-zur%C3%BCck/ar-AA1nTSd2 (Inbetriebnahme: 29.07.2024)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/kuestrin-kietz-kostrzyn-ueber-oderbruecke-endlich-wieder-schneller-mit-der-bahn-nach-berlin-li.2237597
-#: XXX wegen Bauarbeiten gesperrt, voraussichtlich keine Inbetriebnahme 2022 und auch nicht im Mai 2023 und auch nicht im Dezember 2023
-#: next_check: 2024-07-29
-RB26	RBau 92076,19533 92620,19877 93094,20453 93791,21339 94157,21692 94630,21978
+#: by: https://berliner-abendblatt.de/berlin-news/pendler-koennen-aufatmen-neue-oderbruecke-feierlich-eroeffnet-id259170
+#: by: https://berliner-abendblatt.de/berlin-news/neue-oderbruecke-fertig-weiterer-ostbahn-ausbau-gefordert-id259056
+#: by: https://berliner-abendblatt.de/berlin-news/neue-oderbruecke-rb26-faehrt-wieder-ins-polnische-kostrzyn-id259006
+# REMOVED --- #: XXX wegen Bauarbeiten gesperrt, voraussichtlich keine Inbetriebnahme 2022 und auch nicht im Mai 2023 und auch nicht im Dezember 2023 --- #: next_check: 2024-07-29
+RB26	R 92076,19533 92620,19877 93094,20453 93791,21339 94157,21692 94630,21978
 # Strausberg - Strausberg-Nord
 	R0 39654,14564 40259,14530 40496,14524 40693,14553 41100,14790 41275,15058 41668,16174 41748,16421 42081,17089 42444,17710 42647,17909 42910,18107 43079,18347 43130,18578 43114,19289 43151,19585 43192,19730 43256,19851 43498,20071 44181,20584 44323,20764 44484,21068
 # Seddiner Kreuz  - Beelitz Stadt

@@ -283,6 +283,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: XXX Laut Umleitungsschildern vom 19.7.2024 bis 30.8.2024
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1468227.php (Radverkehr wird über den Gehweg geführt)
+#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/schillingbruecke-voll-gesperrt_a421537
 #: source_id: bvg2024:140#3780ae13-a443-4ae7-ad58-90608cbd5ef1 (2024-07-19 - 2024-08-30, hier: für Fußgängerverkehr frei)
 #: source_id: viz2021:13.429228,52.509161,19.07.2024,07:00 (bis 30.08.2024)
 #: note: laut VIZ-Mail keine Sperrung für den Rad- und Fußverkehr; außerdem wird hier als Beginn der 22.7.2024 (was passender wäre, da Montag) erwähnt
@@ -339,14 +340,14 @@ Schillingbrücke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,1
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-07-24 vvv
+#: last_checked: 2024-07-30 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 #: osm_watch: way id="930343902" version="4"
 #: osm_watch: way id="1241756428" version="1"
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423 9028,12307
-#: osm_watch: note 3469300 3
+#: osm_watch: note 3469300 7
 #: osm_watch: way id="111833186" version="15"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: osm_watch: way id="153698413" version="15"
@@ -684,8 +685,8 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: by: https://mein.berlin.de/projekte/neugestaltung-europaplatz-nord/
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
-#: osm_watch: note 3913793 7
-#: last_checked: 2024-07-21 (webcam)
+#: osm_watch: note 3913793 8
+#: last_checked: 2024-07-30 (mapillary)
 #: check_frequency: 60d
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 # 
@@ -3525,7 +3526,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
-#: osm_watch: way id="979814386" version="4"
+#: osm_watch: way id="979814386" version="5"
 (Uferweg an der Spree): Radfahren verboten	q4 18667,5467 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 #: osm_watch: way id="26995547" version="8"
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850

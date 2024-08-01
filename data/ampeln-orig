@@ -101,7 +101,7 @@ Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	
 #: by: https://entwicklungsstadt.de/lichtenberg-berlins-groesster-schulneubau-abgeschlossen/
 #: by: https://www.nd-aktuell.de/artikel/1183759.verkehrssicherheit-kinder-im-strassenverkehr-im-zickzack-zur-riesenschule.html
 #: XXX evtl. wurde die Ampel wegen der Hochbauarbeiten (Schule) eingerichtet
-#: osm_watch: way id="29432246" version="25"
+#: osm_watch: way id="29432246" version="27"
 #: osm_watch: node id="603053800" version="7"
 #: osm_watch: node id="11762067970" version="2"
 #: osm_watch: note 3707299 12
@@ -202,7 +202,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-07-22
+#: last_checked: 2024-08-01
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Gürtelstr.	F::inwork 15153,11691
@@ -1006,13 +1006,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4777,8870
 	X 5479,9367
 #: related vvv
-#: XXX_prog: nur für W->O relevant; für W->S eher wie eine Fußgängerampel zu handhaben; S->O evtl. mit Grünen Pfeil (prüfen!)
+#: XXX_prog: nur für W->O relevant, allerdings Zebrastreifen in W->S-Richtung
 	X 12028,12519
-#: XXX_prog: nur für S->N relevant
+#: XXX_prog: nur für S->N relevant, allerdings Zebrastreifen in S->O-Richtung
 	X 12114,12546
-#: XXX_prog: nur für O->W relevant; für O->N eher wie eine Fußgängerampel zu handhaben; N->W evtl. mit Grünen Pfeil (prüfen!)
+#: XXX_prog: nur für O->W relevant; allerdings Zebrastreifen in O->N-Richtung
 	X 12050,12616
-#: XXX_prog: nur für N->S relevant
+#: XXX_prog: nur für N->S relevant, allerdings Zebrastreifen in W->O-Richtung
 	X 11976,12595
 #: related ^^^
 #: XXX_prog: Anforderungsampel für Radfahrer aus der Schillingstr.; für Linksabbieger sogar eine zweite (die aber vermutlich synchron geschaltet ist)
@@ -1558,7 +1558,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 23181,14371
 	X 889,14392
 	B 21332,18819
-	B 10365,-2603
+# REMOVED (wird zur Unterführung) ---	B 10365,-2603
 # REMOVED (wird zur Unterführung) ---	B 9024,906
 	B 19405,5284
 	B 20616,7292
@@ -3798,7 +3798,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2024-07-05 (mapillary)
+#: last_checked: 2024-07-23 (mapillary)
 #: check_frequency: 120d
 	X::inwork 12185,7381
 # 

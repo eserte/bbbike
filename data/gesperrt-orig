@@ -372,6 +372,8 @@ Große Präsidentenstr.	1 10105,13004 10219,13102
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr-rat-19-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1818150528448118831
+#: by: https://pbs.twimg.com/media/GTqgmAvWEAMTCD_?format=jpg&name=medium
 #: source_id: viz2021:13.312025,52.498061,30.07.2024,07:00 (Sackgasse, bis 28.02.2025)
 #: osm_watch: way id="4437134" version="17"
 #: last_checked: 2024-06-12
@@ -437,13 +439,13 @@ Im Amseltal	1 1960,25229 1982,25108
 Gundelfinger Str.	1 18735,9421 18697,9153 18653,8922 18609,8717
 Dorotheenstr.	1 18653,8922 18770,8898
 # 
-#: by: https://www.infravelo.de/projekt/y-trasse/ (Planfeststellung: 2. Quartal 2026) (Planfeststellung: 2. Quartal 2027) (Baustart: 3. Quartal 2029) (4. Quartal 2029 - 1. Quartal 2032)
+#: by: https://www.infravelo.de/projekt/y-trasse/ (Planfeststellung: 2. Quartal 2026) (Planfeststellung: 2. Quartal 2027) (Baustart: 3. Quartal 2029) (4. Quartal 2029 - 1. Quartal 2032) (1. Quartal 2030 - 2. Quartal 2032)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf (Inbetriebnahme möglich?)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ergebnisbericht-zur-radschnellverbindung-zwischen-kreuzberg-neukoelln-und-adlershof-liegt-vor_a288769 (nur allgemein zur Y-Trasse)
 #: by: https://www.berliner-woche.de/rudow/c-verkehr/neukoellner-verordnete-fordern-vorfahrt-fuer-radler-auf-der-krokusstrasse-und-linksabbiegespur-auf-der-massantebruecke_a300891
 #: XXX könnte im Zuge der Realisierung "Y-Trasse" wieder in Betrieb genommen werden (Bauphase für den Radschnellweg: mindestens 18 Monate)
 #: last_checked: 2024-03-03
-#: next_check: 2028-12-31
+#: next_check: 2032-06-30
 Alte Späthbrücke	2 14466,5087 14544,5123
 # 
 # REMOVED (nach temp-blockings verschoben) --- Rutherfordstr.: nicht permanent geöffnet	2 19071,2746 19136,2673 19207,2592
@@ -2049,7 +2051,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: by: https://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
-#: osm_watch: way id="24852084" version="15"
+#: osm_watch: way id="24852084" version="16"
 #: last_checked: 2024-02-17
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
@@ -3851,7 +3853,7 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
 #: osm_watch: way id="618834389" version="15"
 #: osm_watch: way id="43619494" version="8"
-#: also_indoor: traffic (G,H[ungenau])
+#: also_indoor: traffic (G,ex-H[ungenau])
 #: priority: #C
 #: last_checked: 2024-04-30 (osm)
 #: check_frequency: 90d
@@ -3875,7 +3877,7 @@ Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:q3:inwork 799
 #: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
 #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
 #: also_indoor: traffic (B)
-#: osm_watch: way id="1120450475" version="4"
+#: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
 #: last_checked: 2024-07-23 vvv
 #: check_frequency: 90d vvv
@@ -3903,9 +3905,10 @@ Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 1900
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
-#: osm_watch: way id="1106303945" version="6"
+#: osm_watch: way id="1106303945" version="7"
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch: note 4126450 4
+#: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
 #: last_checked: 2024-07-05
 #: check_frequency: 360d
 #: next_check: 2028-12-31
@@ -4173,7 +4176,7 @@ Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-generalshof-1-k%C3%B6penick.874/#post-22500
 # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="770592585" version="5"
 #: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straße und der neuen Anbindung was gemacht
-#: last_checked: 2024-07-10
+#: last_checked: 2024-07-30 (mapillary)
 #: check_frequency: 21d
 Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22057,5305 22095,5344
 # REMOVED (hier schon passierbar --- Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22095,5344 22140,5392
@@ -4717,6 +4720,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_35_2301_2352_online.pdf (Straßenlandwidmung des schon eröffneten Abschnitts)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_53_4921_5172_online.pdf (Grundstücksnummerierung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_31_2123_2242_online.pdf (Widmung von öffentlichen Straßenland, zweiter Bauabschnitt)
 #: source_id: viz2021:13.362267,52.536335,05.02.2024,07:00 (Leitungsarbeiten, in der Heidestr., bis 29.03.2024) (inaktiv)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
@@ -4762,8 +4766,8 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/aenderungen-bei-drei-u-bahnlinien_a354389
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18170.pdf (Neubau der Brücke: vsl. 2027 bis 2029)
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
-#: osm_watch: way id="848716360" version="9"
-#: last_checked: 2024-07-18 (mapillary)
+#: osm_watch: way id="848716360" version="10"
+#: last_checked: 2024-07-25 (osm)
 #: check_frequency: 120d
 #: next_check: 2029-12-31
 #: priority: #A
@@ -5317,9 +5321,9 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="39"
+#: osm_watch: way id="186329816" version="40"
 #: also_indoor: traffic
-#: last_checked: 2024-06-26 (osm) vvv
+#: last_checked: 2024-07-24 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
@@ -5360,9 +5364,9 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: XXX Anschluss an der Gotzkowskybrücke ist noch nicht fertig
 #: osm_watch: way id="501191631" version="7"
 #: osm_watch: way id="1085168609" version="2"
-#: osm_watch: way id="1297686366" version="1"
+#: osm_watch: way id="1297686366" version="2"
 #: osm_watch: note 4173331 4
-#: last_checked: 2024-07-09 (daf)
+#: last_checked: 2024-07-28 (osm)
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-09-01
@@ -5473,12 +5477,12 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-14
 Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-01 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-01 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 
