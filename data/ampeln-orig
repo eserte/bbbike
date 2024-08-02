@@ -24,9 +24,9 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 #: next_check: 2024-08-15
 Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17736,5441
 # 
-#: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325
-#: last_checked: 2024-07-13
-Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
+# REMOVED (steht noch, ist aber ausgeschaltet) --- #: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325
+# REMOVED --- #: last_checked: 2024-08-01 (mapillary)
+# REMOVED --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: last_checked: 2024-07-24 (mapillary)
@@ -45,7 +45,7 @@ Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 #: source_id: viz2021:13.524783,52.514028,27.05.2024,13:00 (bis 21.06.2024) (bis 22.07.2024) (bis 19.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1795047296100647162
 #: by: https://pbs.twimg.com/media/GOW6QvLXUAY5vpt?format=jpg&name=large (direkte Zufahrt zur südlichen Marzahner Chaussee nicht möglich)
-#: last_checked: 2024-06-02
+#: last_checked: 2024-07-30 (mapillary)
 #: next_check: 2024-08-19
 #: valid: -20240819
 Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
@@ -105,7 +105,7 @@ Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	
 #: osm_watch: node id="603053800" version="7"
 #: osm_watch: node id="11762067970" version="2"
 #: osm_watch: note 3707299 12
-#: last_checked: 2024-06-26 (mapillary)
+#: last_checked: 2024-07-30 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2024-08-31
 Allee der Kosmonauten/Straßenbahn	X::inwork 17778,13438
@@ -410,7 +410,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2024-06-10
+#: last_checked: 2024-08-02
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -2704,7 +2704,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-02
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3798,7 +3798,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2024-07-23 (mapillary)
+#: last_checked: 2024-08-02
 #: check_frequency: 120d
 	X::inwork 12185,7381
 # 
@@ -3939,7 +3939,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X -13553,115
 	X -14435,357
 	X -14676,418
-	F -13141,1945
+#: historical_note: früher Fußgängerampel etwas weiter nördlich
+	X -13141,1933
 	X -13133,1698
 	X -13125,1508
 	X -13091,1150

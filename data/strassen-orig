@@ -268,7 +268,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: osm_watch: note 4168370 2
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2024-07-23 vvv
+#: last_checked: 2024-08-02 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 #: osm_watch: way id="47755711" version="23"
@@ -1444,9 +1444,9 @@ Uber-Platz	NN 12990,11006 13067,11145
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="16"
 #: osm_watch: note 3982085 6
-#: priority: #C
-#: last_checked: 2024-06-15
-#: check_frequency: 60d
+#: priority: #B
+#: last_checked: 2024-08-02
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-01-01
 Planstraße C	N 12926,11224 12848,11093
 # 
@@ -10271,8 +10271,18 @@ Nienhagener Str.	N 16365,18335 16469,18409 16534,18457
 Reriker Str.	N 16144,18521 16268,18551 16350,18575 16385,18524 16469,18409
 Wiecker Str.	N 16589,18075 16526,18164 16459,18257
 (Wiecker Str. - Ribnitzer Str.)	N 16459,18257 16491,18278 16473,18302
-(S-Bahnunterführung Wartenberg)	NN 16939,18652 16998,18695 17024,18674 17008,18701 17068,18736 17086,18719 17077,18744 17109,18772
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_32_2243_2298_online.pdf (Benennung)
+#: XXX neuer Name: Willy-Abel-Platz
+#: last_checked: 2024-08-02 (Amtsblatt)
+(S-Bahnunterführung Wartenberg)	NN 16939,18652 16998,18695
+(S-Bahnunterführung Wartenberg)	NN 16998,18695 17024,18674 17008,18701 17068,18736 17086,18719 17077,18744
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_32_2243_2298_online.pdf (Benennung)
+#: XXX neuer Name: Postplatz vvv
+#: last_checked: 2024-08-02 (Amtsblatt) vvv
+(S-Bahnunterführung Wartenberg)	NN 17077,18744 17109,18772
 (S-Bahnunterführung Wartenberg)	NN 17077,18744 17117,18761
+#: last_checked ^^^
+#: XXX ^^^
 (Crivitzer Str. - Woldegker Str./Rostocker Str.)	NN 17584,18551 17511,18636
 Rostocker Str. (Neu-Hohenschönhausen)	N 17264,18580 17282,18595 17393,18588 17456,18641 17480,18661 17511,18636
 Rostocker Str. (Neu-Hohenschönhausen)	N 17456,18641 17430,18678 17426,18695 17443,18858 17337,18871 17343,19000
@@ -16385,10 +16395,12 @@ Manga-Bell-Platz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,1
 #: by: https://weddingweiser.de/wedding-kurz-knapp-125/
 #: by: https://taz.de/Dekoloniale-Strassenumbenennungen/!6004688/
 #: by[nocache]: https://x.com/GUnrecht/status/1803112760286273885 (Umbenennung am 23.08.2024?)
-#: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_32_2243_2298_online.pdf (Umbenennung, Enthüllung der Straßenschilder am 23.8.2024)
+#: XXX Umbenennung zu "Maji-Maji-Allee" steht an; Berlin.coords.data-Eintrag fehlt
 #: XXX bei osm wurde die Umbenennung schon vollzogen, allerdings anscheinend nicht anhand eines Surveys. Anfrage auf https://www.openstreetmap.org/changeset/154409730 gemacht.
 #: osm_watch: way id="5199719" version="30"
 #: also_indoor: search Maji-Maji-Allee
+#: priority: #B
 #: last_checked: 2024-06-05
 # REMOVED --- #: check_frequency: 21d
 # REMOVED --- #: check_frequency: 90d
@@ -16402,9 +16414,11 @@ Petersallee	N 5426,16539 5533,16662
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2020/pressemitteilung.1024065.php (Vereinfachung von Umbenennungen von Straßen mit Kolonialnamen)
 #: by: https://www.berliner-zeitung.de/news/petersallee-im-wedding-in-berlin-mitte-umbenannt-gericht-bestaetigt-beschluss-li.2205297
-#: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_32_2243_2298_online.pdf (Umbenennung, Enthüllung der Straßenschilder am 23.8.2024)
+#: XXX Umbenennung zu "Anna-Mungunda-Allee" steht an; Berlin.coords.data-Eintrag fehlt
 #: osm_watch: way id="47347069" version="20"
 #: also_indoor: search Anna-Mungunda-Allee
+#: priority: #B
 #: last_checked: 2024-07-13
 # REMOVED --- #: check_frequency: 21d
 # REMOVED --- #: check_frequency: 90d
@@ -20683,15 +20697,15 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: osm_watch: way id="1277899794" version="1"
-#: last_checked: 2024-06-19
+#: last_checked: 2024-07-30 (mapillary)
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
 #: osm_watch: way id="1156287321" version="2"
-#: last_checked: 2024-06-19
+#: last_checked: 2024-07-30 (mapillary)
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
 #: osm_watch: way id="1138047106" version="4"
-#: last_checked: 2024-06-19
+#: last_checked: 2024-07-30 (mapillary)
 #: check_frequency: 90d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21669,5700 21623,5661
 # 

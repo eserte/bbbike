@@ -112,6 +112,7 @@ Detmolder Str. (Süd)	1 4711,8013 4572,7936 4353,8035 4323,8119 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
+Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s 14089,9610 13860,9861
 Am Treptower Park	1 13860,9861 13795,9941
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928
 Bethaniendamm	1 12060,11323 12010,11224 11944,11152 11845,11095 11750,11065 11640,11067 11458,11136
@@ -1070,7 +1071,11 @@ Lennéstr.	1 -13876,-1263 -14149,-1264
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Straßenbahntrasse	3nocross::ignrte -12790,-1560 -12812,-1490 -12839,-1371
 Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12790,-1560 -12812,-1490 -12870,-1493
+Friedrich-Ebert-Str. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12839,-1371 -12812,-1490 -12708,-1445
+Erika-Wolf-Str. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12708,-1445 -12812,-1490 -12790,-1560
+Erika-Wolf-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12708,-1445 -12812,-1490 -12870,-1493
 Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12812,-1490 -12839,-1371
+Schwertfegerstr. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12812,-1490 -12708,-1445
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
@@ -3549,8 +3554,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
 Bhf. Blankenfelde: Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11667,-7536 11601,-7560 11551,-7599
-Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-1449 -12694,-1408 -12727,-1416 -12747,-1336
-Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449 -12628,-1423
+Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
