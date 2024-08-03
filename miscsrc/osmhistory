@@ -94,6 +94,7 @@ sub history_log {
 	print "id $changeset->{id}\n";
 	print "OSMCha-URL: https://osmcha.org/changesets/$changeset->{id}\n";
 	print "achavi-URL: https://overpass-api.de/achavi/?changeset=$changeset->{id}&relations=true\n";
+	print "OSM-URL:    https://www.openstreetmap.org/changeset/$changeset->{id}\n";
 	print "Author: $changeset->{user}\n";
 
 	print "Date:   $changeset->{closed_at}";
