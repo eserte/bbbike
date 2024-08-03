@@ -4021,7 +4021,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="27"
-#: last_checked: 2024-07-10
+#: last_checked: 2024-08-03
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
 #: last_checked: 2024-06-26
@@ -5671,7 +5671,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-07-10
+#: last_checked: 2024-08-03
 #: check_frequency: 30d
 #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6344,7 +6344,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-07-10
+#: last_checked: 2024-08-03
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="27"
@@ -6594,7 +6594,27 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: http://dunckerstrassenfest.de/ (zwischen Stargarder Str. und Ahlbecker Str., laut Videobildern auch bis zur S-Bahnbrücke)
+#: by: https://www.berlin.de/events/4978409-2229501-dunckerstrassenfest.html
+	2::temp 11595,15460 11632,15530 11654,15572 11689,15639
+',
+         'from' => 1724968800,
+         'id' => 3876,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              8
+                            ]
+                          ],
+         'text' => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 31. August 2024 von 14 bis 22 Uhr',
+         'type' => 'handicap',
+         'until' => 1725134400
+       },
        undef,
        undef,
        undef,
@@ -7624,21 +7644,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'type' => 'handicap',
          'until' => 1861891200
        },
-       {
-         'data' => '#: next_check_id: GRUENETRIFTAMWALDE-2024
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1453468.php (10. Juni 2024 - 03.08.2024, in drei Bauphasen)
-#: note: kein Bürgersteig, deshalb 2 statt q4
-# REMOVED (nun aktiv) --- #: XXX - Waldnesselweg bis Pritstabelstraße - 01.07. bis 13.07.2024 
-# REMOVED (nun aktiv) --- #: XXX - Pritstabelstraße bis Kienappelweg - 15.07. bis 03.08.2024 
-# REMOVED ---	2::inwork 23657,3508 23402,3779 23337,3762
-	2::inwork 23740,3418 24102,3055 24179,2977
-',
-         'from' => 1719698400,
-         'id' => 4081,
-         'text' => 'Grüne Trift am Walde: Bauarbeiten zwischen Pritstabelstr. und Kienappelweg, Sperrung, voraussichtlich bis 03.08.2024',
-         'type' => 'gesperrt',
-         'until' => 1722700800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024)
 	q3::inwork 10573,17566 10466,17464
@@ -7960,18 +7966,7 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
          'type' => 'handicap',
          'until' => 1727442000
        },
-       {
-         'data' => '#: source_id: bvg2024:296#HIM_FREETEXT_230337 (10.07.2024-31.08.2024, mittlerweile bis 2024-08-02)
-#: source_id: viz2021:13.525899,52.482661,10.07.2024,08:00 (bis 07.08.2024)
-#: note: Einbahnstraßenabschnitt ist etwa 65m lang, deshalb q3 statt q4
-	q3::inwork; 18737,8686 18865,8740
-',
-         'from' => 1720504800,
-         'id' => 4113,
-         'text' => 'Rheinsteinstr.: Bauarbeiten zwischen Treskowallee bis Weseler Str., Fahrtrichtung gesperrt, vom 10.07.2024 08:00 bis 07.08.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1723042800
-       },
+       undef,
        {
          'data' => '#: source_id: LS/221-F/24/131 (bis 31.08.2024)
 	2::inwork 41624,36648 39488,37315
@@ -8123,9 +8118,9 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
        {
          'data' => '#: also_indoor: traffic (H,B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-03
 #: check_frequency: 30d
-#: next_check: 2024-09-15
+#: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
 ',
          'from' => 1722618239,

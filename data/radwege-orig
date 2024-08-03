@@ -1306,7 +1306,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-08-02 vvv
+#: last_checked: 2024-08-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1618,7 +1618,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.infravelo.de/projekt/petersburger-strasse-1/ (2. Quartal 2024 - 1. Quartal 2027)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="26"
-#: last_checked: 2024-08-01
+#: last_checked: 2024-08-03
 #: check_frequency: 120d
 #: next_check: 2027-03-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1632,7 +1632,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="43"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2024-07-24 (mapillary)
+#: last_checked: 2024-08-03
 #: check_frequency: 120d
 #: next_check: 2027-03-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -3010,7 +3010,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-03
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3254,8 +3254,31 @@ asphaltiertes Straßenbahnkap	RW1; 7512,13115 7563,13143 7573,13149
 	RW3;RW3 9085,13919 9148,13944 9189,13953 9274,13963
 Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 	RW3; 8935,13844 8841,13800
+# 
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/bagger-heben-baugrube-fuer-schuldrehscheibe-aus_a335846
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6176 (Antrag zur Eschenallee auf dem Bürgersteig)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/neuer-weg-an-der-wiese-entsteht_a365723
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6359 (Einwohnerantrag zum Gehweg)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1406047.php (Erwähnung eines separaten Radwegs)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/baumfaellungen-in-der-eschenallee_a406128
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1460688.php (Bau eines Hochbordradwegs, voraussichtlich 15. Juli 2024 bis 3. Quartal 2025)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/neuer-gehweg-fuer-kniprodestrasse_a419672
+#: osm_watch: way id="318031558" version="14"
+#: osm_watch: way id="154261295" version="16"
+#: XXX Werden die Busspuren zu Radspuren umgewandelt? Oder entsteht hier ein neuer Hochbordradweg? Vermutlich Letzteres. Hier sind gerade Bauarbeiten vvv
+#: last_checked: 2024-08-03 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2025-09-30 vvv
+#: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
+	RW0; 12640,13814 12701,13873 12766,13942
 #: note: hier existiert noch ein alter enger Radweg, der aber nicht weiter "beworben" wird
-Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
+Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
 	RW1; 12856,14042 12901,14093
 	RW3; 12901,14093 12856,14042 12766,13942 12701,13873 12640,13814
 	RW4;RW3 12640,13814 12578,13800
@@ -3513,7 +3536,7 @@ asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW2; 15557,8077 15
 	RW1; 16563,7012 16627,6945 16677,6892
 	RW2; 16677,6892 16627,6945 16563,7012
 #: note: einige Leitboys nach der Kreuzung Baumschulenstr.
-	RW4; 16563,7012 16428,7144
+Grünbeschichtung	RW4; 16563,7012 16428,7144
 etwas älterer Asphalt	RW2;RW2 16677,6892 16720,6845
 neu asphaltiert	RW2;RW2 16720,6845 16747,6813 16805,6747
 	RW2;RW2 16805,6747 16838,6708
@@ -7932,7 +7955,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 neu asphaltiert	RW2;RW2 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813
 # 
 #: note: allerdings nur am westlichen Ende ausgeschildert
-Tempo 10	RW6;RW6 19972,8935 19984,8944 20059,8951
+Tempo 10	RW6;RW6 19972,8935 19980,8942 20059,8951
 #: note: allerdings nur am südlichen Ende ausgeschildert
 Tempo 10	RW6;RW6 20173,8580 20174,8443
 #: note: allerdings nur am westlichen Ende ausgeschildert
@@ -7940,7 +7963,8 @@ Tempo 10	RW6;RW6 20110,8355 20144,8355
 # früher 10er-Zone, heute 20er-Zone, einige Tempo-10-Schilder (keine Zone) gibt es weiterhin (siehe Mapillary)
 #10er-Zone	RW6;RW6 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 #10er-Zone	RW6;RW6 20059,8951 20150,8962 20220,8976
-#10er-Zone	RW6;RW6 19950,9234 19972,8935 19983,8861 20002,8730 20006,8706 20012,8670 20037,8508 20041,8480 20046,8448 20058,8355 20096,8077
+#10er-Zone	RW6;RW6 19950,9234 19962,9074 19980,8942
+#10er-Zone	RW6;RW6 19972,8935 19983,8861 20002,8730 20006,8706 20012,8670 20037,8508 20041,8480 20046,8448 20058,8355 20096,8077
 #10er-Zone	RW6;RW6 19946,9328 20008,9340 20018,9262 20059,8951 20089,8706 20108,8583 20129,8444
 #10er-Zone	RW6;RW6 20091,9330 20150,8962 20172,8703 20173,8580
 #10er-Zone	RW6;RW6 20006,8706 20089,8706 20172,8703
@@ -8009,7 +8033,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2024-08-01 (mapillary)
+#: last_checked: 2024-08-03
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470

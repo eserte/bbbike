@@ -155,7 +155,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2024-07-30 (mapillary) vvv
+#: last_checked: 2024-08-03 vvv
 #: next_check: 2026-12-31 vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -281,7 +281,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder
-#: last_checked: 2024-07-06
+#: last_checked: 2024-08-03
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -358,7 +358,7 @@ Müggelstr.	1 14901,11808 14965,11924
 # REMOVED (stimmt nicht (mehr?)) --- Schmollerplatz/str.	1 13231,9422 13178,9363 13206,9335
 Isarstr.	1s:q4 12349,8464 12368,8356
 Ohmstr.	1 11324,11689 11380,11863
-Anton-Saefkow-Str.	1s:q4 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
+Anton-Saefkow-Str.	1s:q4 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12780,14675 12700,14726 12575,14812 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Große Präsidentenstr.	1 10105,13004 10219,13102
@@ -3849,8 +3849,9 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: osm_watch: way id="618834389" version="15"
 #: osm_watch: way id="43619494" version="8"
 #: also_indoor: traffic (G,ex-H[ungenau])
+#: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg
 #: priority: #C
-#: last_checked: 2024-04-30 (osm)
+#: last_checked: 2024-08-03
 #: check_frequency: 90d
 Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 # 
@@ -3901,6 +3902,7 @@ Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 1900
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
 #: osm_watch: way id="1106303945" version="7"
+#: osm_watch: way id="4543436" version="34"
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch: note 4126450 4
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
@@ -3925,12 +3927,12 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 # 
 #: osm_watch: note 4248173 1
 #: note: laut Baustellenschild bis Mai 2024
-#: XXX außerdem prüfen, ob die ehemaligen Schwingtore wieder angebracht werden --- Schwingtor an der westlichen Seite existiert noch immer (2024-05-07)
+# REMOVED (ja, gibt es weiterhin) --- #: XXX außerdem prüfen, ob die ehemaligen Schwingtore wieder angebracht werden --- Schwingtor an der westlichen Seite existiert noch immer (2024-05-07)
 #: priority: #C
-#: last_checked: 2024-07-08
+#: last_checked: 2024-08-03
 # REMOVED --- #: next_check: 2024-05-30
 # REMOVED (hier nicht mehr) --- (Berolinastr. - Mollstr.): wegen Bauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
-Berolinastr. in Höhe Spielplatz	2::inwork 11870,13024 11862,13027 11857,13014 11825,13029 11829,13039 11815,13045
+Berolinastr. in Höhe Spielplatz	2::inwork 11862,13027 11857,13014 11825,13029 11829,13039 11815,13045
 # 
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
@@ -3983,7 +3985,7 @@ Matthäikirchplatz: Durchgang gesperrt	2::inwork 7933,11407 7970,11396 7934,11275
 # 
 #: next_check_id: PLANSTRASSE9-2023
 #: osm_watch: way id="20420585" version="33"
-#: last_checked: 2024-07-06
+#: last_checked: 2024-08-03
 #: check_frequency: 60d
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
@@ -4013,7 +4015,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,2
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="26"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-07-22 (osm)
+#: last_checked: 2024-08-03
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4105,7 +4107,7 @@ Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,1582
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: priority: #C
-#: last_checked: 2024-07-20
+#: last_checked: 2024-08-03
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4430,7 +4432,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-neubau-mehrfamilienhaus-wohnanlage-parkstadt-karlshorst-berlin-deutschland-637598.html
-#: last_checked: 2024-07-20 vvv
+#: last_checked: 2024-08-03 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
@@ -4438,7 +4440,7 @@ Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 #: osm_watch: way id="1084269868" version="15"
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
-Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17640,8627 17648,8626
+# REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17640,8627 17648,8626
 #: osm_watch: way id="1061057025" version="10"
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
@@ -4462,7 +4464,7 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: note: Halteverbotsschilder bis 31.12.2024
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
-#: last_checked: 2024-07-20
+#: last_checked: 2024-08-03
 #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
 #: last_checked: 2024-07-20
@@ -4573,7 +4575,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="2"
-#: last_checked: 2024-07-20
+#: last_checked: 2024-08-03
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -4672,7 +4674,7 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2024-08-02 vvv
+#: last_checked: 2024-08-03 vvv
 #: next_check: 2028-01-01 vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5471,10 +5473,10 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 # REMOVED --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
 # 
 # REMOVED --- #: note: offiziell für allen Verkehr gesperrt, praktisch aber für Fußgänger + Radfahrer offen
-#: osm_watch: way id="104156160" version="11" brb
-#: XXX Brücke wird neu gebaut, laut osm Fertigstellung frühestens Ende 2023
+#: osm_watch: way id="104156160" version="12" brb
+#: XXX Brücke wird neu gebaut, laut osm Fertigstellung frühestens Ende 2023, mittlerweile Ende 2024
 #: last_checked: 2023-05-01 (osm)
-#: next_check: 2023-12-31
+#: next_check: 2024-12-31
 Liepe - Bralitz: Brücke wurde abgerissen und wird neu gebaut	2::inwork 48210,51009 48230,50933
 # 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -5530,7 +5532,8 @@ Bozener Str.	1 5971,8926 5974,9100
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6602,10504 6636,10492 6753,10446
 # REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Queren nicht möglich	3nocross 5354,8236 5363,8170 5376,8104 5363,8024
 (Los-Angeles-Platz)	1s:q3 5669,10704 5802,10621
-# REMOVED (existiert nicht mehr, oder wird vielleicht weiter hinten wieder aufgebaut?) --- Schwingtor zum Spielplatz	BNP:10 11870,13024
+#: historical_note: früher etwas weiter östlich, 11870,13024
+Schwingtor zum Spielplatz	BNP:10 11862,13027
 # REMOVED (existiert nicht mehr) --- Schwingtor zum Spielplatz	BNP:10 11878,13046
 Schwingtor zum Spielplatz	BNP:10 11815,13045
 tragen (Treppe, 14 Stufen)	0:20 8190,10960

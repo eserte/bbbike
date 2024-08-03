@@ -972,7 +972,7 @@ Köpenicker Allee: holpriger Fahrweg mit asphaltierten Stellen	Q2 19898,8410 1999
 Köpenicker Allee: unbefestigter Weg, sandige Stellen	Q2 20226,7846 20280,7749
 Köpenicker Allee: Beton	Q0 19500,9043 19575,8978 19633,8892 19697,8776 19813,8564
 Köpenicker Allee: Asphalt	Q0 18939,9417 19020,9364
-Köpenicker Allee: Asphalt mit Rissen	Q1; 19206,9243 19267,9201 19392,9116 19500,9043
+Köpenicker Allee: Asphalt	Q0; 19206,9243 19267,9201 19392,9116 19500,9043
 Vulkanstr.: Asphalt	Q0 15912,13153 15912,13301 15896,13387 15896,13512 15896,13547 15896,13594 15896,13760 15897,13942 15871,14106 15860,14208 15850,14308
 Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
 Sandinostr.: unebenes Kleinsteinpflaster	Q2 15899,14598 15841,14641 15799,14674
@@ -4076,7 +4076,8 @@ Johannes-Zoschke-Str.: mäßiger Asphalt	Q2 19037,9636 19042,9708
 Roßmäßlerstr.: Beton	Q0 19479,10053 19487,10205
 Grafenauer Weg: Kleinsteinpflaster	Q1 19488,9223 19510,9497
 Grafenauer Weg: Plattenweg	Q2 19510,9497 19523,9648 19437,9653
-Biesenhorster Weg (Karlshorst): unbefestigter Fahrweg	Q2 19950,9234 19972,8935 19983,8861 20002,8730 20006,8706 20012,8670 20037,8508 20041,8480 20046,8448
+Biesenhorster Weg (Karlshorst): unbefestigter Fahrweg	Q2 19950,9234 19962,9074 19980,8942
+Biesenhorster Weg (Karlshorst): unbefestigter Fahrweg	Q2 19972,8935 19983,8861 20002,8730 20006,8706 20012,8670 20037,8508 20041,8480 20046,8448
 Biesenhorster Weg (Karlshorst): unbefestigter Fahrweg, sandig	Q2 20046,8448 20058,8355 20096,8077
 Drosselweg (Karlshorst): unbefestigter Fahrweg, Schotter	Q2 19946,9328 20008,9340 20018,9262 20059,8951 20089,8706 20108,8583 20129,8444
 Amselweg (Karlshorst): unbefestigter Fahrweg, leicht sandig	Q2 20091,9330 20150,8962 20172,8703 20173,8580 20174,8443
@@ -9164,9 +9165,9 @@ Linienstr.: Kleinsteinpflaster	Q1 10709,13629 10740,13621
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12639,14913 12592,14838 12575,14812
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12592,14838 12640,14800
 Volkspark Anton Saefkow: wassergebundene Decke	Q1 12547,14873 12557,14865 12563,14860 12592,14838
-Volkspark Anton Saefkow: Beton	Q1 12789,14670 12794,14678
-Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12794,14678
-Volkspark Anton Saefkow: wassergebundene Decke	Q1 12794,14678 12862,14632
+Volkspark Anton Saefkow: Beton	Q1 12780,14675 12786,14684
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12786,14684
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12786,14684 12862,14632
 Volkspark Anton Saefkow: Kleinpflastersteine	Q1 12862,14632 12888,14625
 Volkspark Anton Saefkow: Betonpflastersteine	Q0 12901,14594 12888,14625 12900,14637 12932,14640 12970,14632 12982,14629
 Volkspark Anton Saefkow: wassergebundene Decke	Q1 12982,14629 13009,14616
@@ -9901,6 +9902,8 @@ Helen-Keller-Weg: Asphalt	Q0 -3243,17763 -3270,17728 -3276,17669 -3325,17629 -33
 (Quenzseeweg - Strausseeweg): Verbundsteinpflaster	Q1 -1671,16653 -1666,16652 -1627,16643
 (Röddelinseeweg - Kindelseeweg): Verbundsteinpflaster	Q1 -1705,16515 -1699,16513 -1661,16506
 Regener Str.: Asphalt	Q0 19646,9490 19722,9483 19790,9478 19859,9473 19894,9470 19889,9400 19874,9151
+Regener Str.: provisorischer Asphalt, uneben	Q1 19870,9079 19874,9151
+(Regener Str. - Biesenhorster Weg): Schotterweg	Q2 19870,9079 19962,9074
 Eisensteiner Str.: Asphalt	Q0 19727,9672 19722,9483
 Rinchnacher Weg: Asphalt	Q0 19801,9680 19790,9478
 Teisnacher Str.: Asphalt	Q0 19871,9680 19859,9473
@@ -12386,7 +12389,7 @@ Aspenweg: Asphalt	Q0 -3288,17831 -3244,17883 -3224,17943 -3203,18014 -3168,18051
 Aspenweg: unbefestigte Straße	Q2 -2956,18203 -2900,18214
 Oldenburger Str.: Asphalt, "Moabiter Kissen"	Q1 5705,13359 5725,13566
 Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 5786,14106
-Anton-Saefkow-Str.: Asphalt mit leichten Schäden	Q0 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594
+Anton-Saefkow-Str.: Asphalt mit leichten Schäden	Q0 12528,14845 12575,14812 12700,14726 12780,14675 12862,14618 12901,14594
 Anton-Saefkow-Str.: Asphalt/Beton mit leichten Schäden	Q0 12901,14594 13013,14523
 Anton-Saefkow-Str.: Asphalt	Q0 13013,14523 13088,14469
 Anton-Saefkow-Str.: Asphalt mit leichten Schäden	Q0 13088,14469 13183,14400
@@ -14422,7 +14425,7 @@ DGZ-Ring: Verbundsteinpflaster	Q0 12858,16825 12837,16853 12813,16884 12783,1692
 Röländer Str.: Asphalt	Q0 15130,24012 15256,24056 15367,24118 15490,24198 15579,24305 15602,24338
 Brieger Str.: Beton	Q1 7528,2964 7560,2966 7606,2981 7748,3037
 Krusauer Str.: schlechtes Kopfsteinpflaster	Q3 9894,453 9984,222 10066,-3 10181,-300 10258,-517 10268,-546 10280,-578 10339,-749 10344,-802 10365,-996 10379,-1194
-Am Alten Flugplatz: Beton	Q0 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935 19984,8944 20059,8951 20150,8962 20220,8976
+Am Alten Flugplatz: Beton	Q0 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935 19980,8942 20059,8951 20150,8962 20220,8976
 Edithstr.: guter Asphalt	Q0 987,4293 1161,4419
 Geraer Ring: Asphalt und Beton	Q0 20591,18037 20746,17984 20778,17996 20818,18075 20866,18174 20911,18258 20932,18328
 Geraer Ring: Beton	Q0 20932,18328 20909,18379 20823,18329 20706,18269
@@ -15443,7 +15446,7 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Feinschotter
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Feinschotter	Q1 7576,18837 7480,18828 7332,18818
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Feinschotter	Q1 7332,18818 7313,18781
 Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,18793
-Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17468,8692
+Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17443,8729 17468,8692
 Hönower Wiesenweg: Asphalt	Q0 17468,8692 17497,8623
 Hönower Wiesenweg: Asphalt	Q0 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17581,8422 17588,8413
 Hönower Wiesenweg: Asphalt	Q0 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
@@ -17445,7 +17448,7 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12393,15030 12357,15020 1231
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1 11860,15309 11919,15314 11937,15349
 (Verlängerte Diesterwegstr.): Verbundsteine	Q0 12056,15159 12082,15206 12103,15218
 Olga-Benario-Prestes-Str.: Asphalt und einige Kopfsteinpflasterabschnitte	Q1 12628,14650 12473,14763
-Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12789,14670 12745,14613 12814,14556
+Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12780,14675 12737,14614 12814,14556
 (Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13088,14469 13031,14390 13022,14378 13016,14370 12954,14287
 Hans-Otto-Str.: Kopfsteinpflaster	Q2 12832,14378 12783,14312 12722,14232 12659,14149 12594,14065 12537,13987 12478,13903 12398,13792
 Heinz-Kapelle-Str.: Kopfsteinpflaster	Q2 12783,14312 12972,14173

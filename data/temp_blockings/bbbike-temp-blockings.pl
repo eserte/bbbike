@@ -28746,7 +28746,7 @@ EOF
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="27"
-#: last_checked: 2024-07-10
+#: last_checked: 2024-08-03
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
 #: last_checked: 2024-06-26
@@ -32955,7 +32955,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch) (mittlerweile sieht es ganz anders aus)
 # REMOVED (keine weiteren Bauarbeiten & Sperrungen zu erwarten) --- #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer? --- #: osm_watch: way id="26322046" version="30" --- #: osm_watch: way id="165832806" version="34" --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
-	2::inwork 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17581,8422 17588,8413
+	2::inwork 17380,8858 17416,8767 17443,8729 17468,8692 17497,8623 17515,8567 17521,8549 17533,8505 17554,8458 17581,8422 17588,8413
 # REMOVED (hier weitgehend fertig) ---	2::inwork 17588,8413 17617,8363 17652,8349 17707,8328 17753,8290
 EOF
      },
@@ -37193,7 +37193,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-07-10
+#: last_checked: 2024-08-03
 #: check_frequency: 30d
 #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -39600,7 +39600,7 @@ EOF
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-07-10
+#: last_checked: 2024-08-03
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="27"
@@ -40513,12 +40513,11 @@ EOF
 	q3::inwork 23575,10972 23648,11265
 EOF
      },
-     { from  => 1692964800, # 2023-08-25 14:00
-       until => 1693080000, # 2023-08-26 22:00
+     { from  => $isodate2epoch->("2024-08-30 00:00:00"), # 1692964800, # 2023-08-25 14:00
+       until => $isodate2epoch->("2024-08-31 22:00:00"), # 1693080000, # 2023-08-26 22:00
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 8]],
-       recurrence_prewarn_days => 21,
-       text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 26. August 2023 von 14 bis 22 Uhr',
+       text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 31. August 2024 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://dunckerstrassenfest.de/ (zwischen Stargarder Str. und Ahlbecker Str., laut Videobildern auch bis zur S-Bahnbrücke)
@@ -43889,11 +43888,11 @@ EOF
 EOF
      },
      { from  => 1720504800, # 2024-07-09 08:00
-       until => 1723042800, # 2024-08-07 17:00
+       until => 1722682699, # vorzeitig aufgehoben --- 1723042800, # 2024-08-07 17:00
        text  => 'Rheinsteinstr.: Bauarbeiten zwischen Treskowallee bis Weseler Str., Fahrtrichtung gesperrt, vom 10.07.2024 08:00 bis 07.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: bvg2024:296#HIM_FREETEXT_230337 (10.07.2024-31.08.2024, mittlerweile bis 2024-08-02)
+#: source_id[inactive]: bvg2024:296#HIM_FREETEXT_230337 (10.07.2024-31.08.2024, mittlerweile bis 2024-08-02)
 #: source_id: viz2021:13.525899,52.482661,10.07.2024,08:00 (bis 07.08.2024)
 #: note: Einbahnstraßenabschnitt ist etwa 65m lang, deshalb q3 statt q4
 	q3::inwork; 18737,8686 18865,8740
@@ -44058,9 +44057,9 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H,B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-03
 #: check_frequency: 30d
-#: next_check: 2024-09-15
+#: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
 EOF
      },

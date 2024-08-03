@@ -301,7 +301,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-07-20
+#: last_checked: 2024-08-03
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1454,7 +1454,8 @@ Köpenicker Allee: Beton	Q0- 19500,9043 19575,8978 19633,8892 19697,8776 19813,85
 # REMOVED --- #: next_check_id: KOEPENICKERALLEE-2022 --- #: add_fragezeichen: Ist die Qualität des Asphalts nach den Bauarbeiten besser geworden? --- #: last_checked: 2022-09-25 --- #: check_frequency: 14d
 #: historical_note: früher (bis September/Oktober 2022): mäßiger Asphalt, Q1
 Köpenicker Allee: Asphalt	Q0 18939,9417 19020,9364
-Köpenicker Allee: Asphalt mit Rissen	Q1+; 19206,9243 19267,9201 19392,9116 19500,9043
+#: historical_note: früher: Asphalt mit Rissen	Q1+;
+Köpenicker Allee: Asphalt	Q0-; 19206,9243 19267,9201 19392,9116 19500,9043
 #: by: Roy Fischer [AM]
 #: confirmed_by: srt
 Vulkanstr.: Asphalt	Q0 15912,13153 15912,13301 15896,13387 15896,13512 15896,13547 15896,13594 15896,13760 15897,13942 15871,14106 15860,14208 15850,14308
@@ -1726,7 +1727,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-umgestaltet_a408782 (2025 Fahrradstraße; Umgestaltung des Dreiecksplatzes)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/anwohner-gegen-durchgangsverkehr_a409202
 #: osm_watch: way id="4615063" version="36"
-#: last_checked: 2024-06-26 (mapillary)
+#: last_checked: 2024-08-03
 #: check_frequency: 180d
 #: next_check: 2027-09-30
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -2325,7 +2326,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: XXX möglicherweise Änderung des Wegbelags
 #: osm_watch: way id="176112031" version="16"
 #: osm_watch: way id="640883366" version="5"
-#: last_checked: 2024-06-17
+#: last_checked: 2024-08-03
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -5259,7 +5260,8 @@ Johannes-Zoschke-Str.: mäßiger Asphalt	Q2 19037,9636 19042,9708
 Roßmäßlerstr.: Beton	Q0- 19479,10053 19487,10205
 Grafenauer Weg: Kleinsteinpflaster	Q1 19488,9223 19510,9497
 Grafenauer Weg: Plattenweg	Q2 19510,9497 19523,9648 19437,9653
-Biesenhorster Weg (Karlshorst): unbefestigter Fahrweg	Q2 19950,9234 19972,8935 19983,8861 20002,8730 20006,8706 20012,8670 20037,8508 20041,8480 20046,8448
+Biesenhorster Weg (Karlshorst): unbefestigter Fahrweg	Q2 19950,9234 19962,9074 19980,8942
+Biesenhorster Weg (Karlshorst): unbefestigter Fahrweg	Q2 19972,8935 19983,8861 20002,8730 20006,8706 20012,8670 20037,8508 20041,8480 20046,8448
 Biesenhorster Weg (Karlshorst): unbefestigter Fahrweg, sandig	Q2 20046,8448 20058,8355 20096,8077
 Drosselweg (Karlshorst): unbefestigter Fahrweg, Schotter	Q2 19946,9328 20008,9340 20018,9262 20059,8951 20089,8706 20108,8583 20129,8444
 Amselweg (Karlshorst): unbefestigter Fahrweg, leicht sandig	Q2 20091,9330 20150,8962 20172,8703 20173,8580 20174,8443
@@ -10862,9 +10864,9 @@ Linienstr.: Kleinsteinpflaster	Q1 10709,13629 10740,13621
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12639,14913 12592,14838 12575,14812
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12592,14838 12640,14800
 Volkspark Anton Saefkow: wassergebundene Decke	Q1 12547,14873 12557,14865 12563,14860 12592,14838
-Volkspark Anton Saefkow: Beton	Q1 12789,14670 12794,14678
-Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12794,14678
-Volkspark Anton Saefkow: wassergebundene Decke	Q1 12794,14678 12862,14632
+Volkspark Anton Saefkow: Beton	Q1 12780,14675 12786,14684
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12786,14684
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12786,14684 12862,14632
 Volkspark Anton Saefkow: Kleinpflastersteine	Q1- 12862,14632 12888,14625
 Volkspark Anton Saefkow: Betonpflastersteine	Q0- 12901,14594 12888,14625 12900,14637 12932,14640 12970,14632 12982,14629
 Volkspark Anton Saefkow: wassergebundene Decke	Q1 12982,14629 13009,14616
@@ -11661,6 +11663,10 @@ Helen-Keller-Weg: Asphalt	Q0 -3243,17763 -3270,17728 -3276,17669 -3325,17629 -33
 (Quenzseeweg - Strausseeweg): Verbundsteinpflaster	Q1 -1671,16653 -1666,16652 -1627,16643
 (Röddelinseeweg - Kindelseeweg): Verbundsteinpflaster	Q1 -1705,16515 -1699,16513 -1661,16506
 Regener Str.: Asphalt	Q0 19646,9490 19722,9483 19790,9478 19859,9473 19894,9470 19889,9400 19874,9151
+#: osm_watch: way id="1271700192" version="1"
+Regener Str.: provisorischer Asphalt, uneben	Q1- 19870,9079 19874,9151
+#: osm_watch: way id="1271700191" version="1"
+(Regener Str. - Biesenhorster Weg): Schotterweg	Q2 19870,9079 19962,9074
 #: note: mit Aufpflasterungen an den beiden Einfahrten
 Eisensteiner Str.: Asphalt	Q0 19727,9672 19722,9483
 #: note: mit Aufpflasterungen an den beiden Einfahrten
@@ -12673,7 +12679,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
 #: osm_watch: way id="1061650562" version="1"
-#: last_checked: 2024-07-19
+#: last_checked: 2024-08-03
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): unebener Asphalt	Q1 16084,8833 16086,8860
@@ -15412,7 +15418,7 @@ Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 
 # 
 #: by: Sebastian Kröger/Andreas Mühlhausen vvv
 #: corrected_by: srt (Asphalt/Beton mit Löchern und Kanten, Q2 -> ..., teilweise neu gemacht?) vvv
-Anton-Saefkow-Str.: Asphalt mit leichten Schäden	Q0- 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594
+Anton-Saefkow-Str.: Asphalt mit leichten Schäden	Q0- 12528,14845 12575,14812 12700,14726 12780,14675 12862,14618 12901,14594
 Anton-Saefkow-Str.: Asphalt/Beton mit leichten Schäden	Q0- 12901,14594 13013,14523
 Anton-Saefkow-Str.: Asphalt	Q0 13013,14523 13088,14469
 Anton-Saefkow-Str.: Asphalt mit leichten Schäden	Q0- 13088,14469 13183,14400
@@ -21266,7 +21272,7 @@ Krusauer Str.: schlechtes Kopfsteinpflaster	Q3 9894,453 9984,222 10066,-3 10181,
 # 
 #: by: marion (rehauge):
 #: corrected_by: srt (mäßiger Beton, Q1- -> Beton, Q0-)
-Am Alten Flugplatz: Beton	Q0- 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935 19984,8944 20059,8951 20150,8962 20220,8976
+Am Alten Flugplatz: Beton	Q0- 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935 19980,8942 20059,8951 20150,8962 20220,8976
 # 
 #: by: Christa Kohlhaas:
 Edithstr.: guter Asphalt	Q0 987,4293 1161,4419
@@ -24258,7 +24264,7 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1- 7313,18781 7248,
 # REMOVED (früher) --- #: note: erlaubte Höchstgeschwindigkeit 10 km/h
 #: confirmed_by: Christian Marwitz meint "Unebener Weg mit teilweise Schienen und Betonflächen... Bodenmängel":
 #: corrected_by: srt (Q3 -> Q2+, kein Kopfsteinpflaster, Beton mit alten Bahngleisen -> ...; ... -> ..., neu gemacht)
-Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17468,8692
+Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17443,8729 17468,8692
 # REMOVED (früher) --- Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17468,8692 17497,8623 17515,8567
 #: corrected_by: srt (... -> ..., neu gemacht)
 Hönower Wiesenweg: Asphalt	Q0 17468,8692 17497,8623
@@ -29808,7 +29814,7 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12393,15030 12357,15020 1231
 #: corrected_by: srt (Asphalt -> ...)
 Olga-Benario-Prestes-Str.: Asphalt und einige Kopfsteinpflasterabschnitte	Q1- 12628,14650 12473,14763
 #: corrected_by: srt (Asphalt -> Asphalt mit Schäden)
-Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12789,14670 12745,14613 12814,14556
+Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12780,14675 12737,14614 12814,14556
 #: confirmed_by: srt
 (Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13088,14469 13031,14390 13022,14378 13016,14370 12954,14287
 #: confirmed_by: srt
@@ -31427,7 +31433,7 @@ Johannes-Zoschke-Str.: mäßiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/ausbau-der-rheinpfalzallee-auf-der-kippe_a387334 (Baubeginn 2025?)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/ausbau-der-rheinpfalzallee-sollte-laut-spd-dringend-in-die-investitionsplanung_a391367
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
-#: last_checked: 2024-07-06 vvv
+#: last_checked: 2024-08-03 vvv
 #: next_check: 2025-03-01 vvv
 #: confirmed_by: srt
 Rheinpfalzallee: Sandweg	Q2+ 18865,9608 18931,9629
@@ -33233,5 +33239,9 @@ Kreuzungsbereich mit Kleinsteinpflaster	Q2 1730,25441
 Einmündungsbereich asphaltiert	Q0 2364,24886
 Einmündungsbereich mit Kleinsteinpflaster	Q2 2624,24710
 Einmündungsbereich asphaltiert	Q0 12878,7415
+Einmündungsbereich asphaltiert	Q0 11418,14290
+Einmündungsbereich asphaltiert	Q0 11380,14316
+Einmündungsbereich asphaltiert	Q0 11331,14350
+Einmündungsbereich asphaltiert	Q0 11316,14360
 #: ignore ^^^
 #: section ^^^

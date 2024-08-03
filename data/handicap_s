@@ -23,6 +23,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
+Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg f¸r Radfahrer frei	q2; 17380,8858 17701,8851 17729,8850
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
@@ -1987,11 +1988,11 @@ Melli-Besse-Anlage: einige Fuﬂg‰nger	q1 2628,9702 2664,9744
 (Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23163,11113 23131,11124 23113,11262
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12620,14979 12632,14956 12639,14913 12592,14838
 Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q3 12592,14838 12575,14812
-Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12592,14838 12640,14800 12709,14745 12794,14678 12862,14632
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12592,14838 12640,14800 12709,14745 12786,14684 12862,14632
 Volkspark Anton Saefkow: einige Fuﬂg‰nger, Rampe	q3 12862,14632 12888,14625
 Volkspark Anton Saefkow: einige Fuﬂg‰nger, Steigung/Gef‰lle	q3 12901,14594 12888,14625 12900,14637 12932,14640 12970,14632 12982,14629
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12709,14745 12700,14726
-Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12794,14678 12789,14670
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12786,14684 12780,14675
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12982,14629 13009,14616 13036,14596 13053,14578 13195,14487 13240,14460
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 13036,14596 13049,14623 13119,14622 13231,14583 13266,14541
 Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q4 13266,14541 13294,14515
@@ -3392,7 +3393,7 @@ Breslauer Platz/Lauterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:
 Tannenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3023,17889 -3012,17940 -3028,18027
 Tannenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3038,18063 -3028,18027
 Isarstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 12349,8464 12368,8356
-Anton-Saefkow-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
+Anton-Saefkow-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12780,14675 12700,14726 12575,14812 12528,14845
 Niederlagstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 9943,12364 9934,12420
 Barbarastr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 6456,3038 6372,2959 6329,2916 6359,2875
 Parchimer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 22212,12403 22212,12422 22257,12481 22258,12573 22272,12610

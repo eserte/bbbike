@@ -66,7 +66,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-03
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -198,7 +198,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2024-05-22 vvv
+#: last_checked: 2024-08-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -538,6 +538,14 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Karlshorst ###
 # 
+#: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00
+#: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024)
+#: source_id: bvg2024:n40#HIM_FREETEXT_232184
+#: last_checked: 2024-08-03
+#: next_check: 2024-10-20
+#: valid: -20241020
+Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17701,8851 17729,8850
+# 
 #: next_check_id: TRESKOWALLEE-2023
 #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023) (bis 30.11.2023) (bis 25.11.2023) (inaktiv)
 #: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024) (bis 05.04.2024) (bis 30.08.2024)
@@ -567,9 +575,9 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Friedrichsfelde ###
 # 
-#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31
-#: last_checked: 2024-07-06 vvv
-#: next_check: 2024-07-31 vvv
+#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19
+#: last_checked: 2024-08-03 vvv
+#: next_check: 2024-08-19 vvv
 #: also_indoor: traffic (G,B,T)
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
@@ -908,7 +916,7 @@ Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="37"
 #: osm_watch: way id="1193560283" version="6"
-#: last_checked: 2024-07-22 (osm)
+#: last_checked: 2024-08-03
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -4046,11 +4054,11 @@ Melli-Besse-Anlage: einige Fußgänger	q1 2628,9702 2664,9744
 Volkspark Anton Saefkow: einige Fußgänger	q2 12620,14979 12632,14956 12639,14913 12592,14838
 #: XXX_prog BS, ansonsten q2
 Volkspark Anton Saefkow: einige Fußgänger, Bordstein	q3 12592,14838 12575,14812
-Volkspark Anton Saefkow: einige Fußgänger	q2 12592,14838 12640,14800 12709,14745 12794,14678 12862,14632
+Volkspark Anton Saefkow: einige Fußgänger	q2 12592,14838 12640,14800 12709,14745 12786,14684 12862,14632
 Volkspark Anton Saefkow: einige Fußgänger, Rampe	q3 12862,14632 12888,14625
 Volkspark Anton Saefkow: einige Fußgänger, Steigung/Gefälle	q3 12901,14594 12888,14625 12900,14637 12932,14640 12970,14632 12982,14629
 Volkspark Anton Saefkow: einige Fußgänger	q2 12709,14745 12700,14726
-Volkspark Anton Saefkow: einige Fußgänger	q2 12794,14678 12789,14670
+Volkspark Anton Saefkow: einige Fußgänger	q2 12786,14684 12780,14675
 Volkspark Anton Saefkow: einige Fußgänger	q2 12982,14629 13009,14616 13036,14596 13053,14578 13195,14487 13240,14460
 Volkspark Anton Saefkow: einige Fußgänger	q2 13036,14596 13049,14623 13119,14622 13231,14583 13266,14541
 #: XXX_prog BS, wenn man von Südwesten kommt sogar zwei weitere Bordsteine am Mittelstreifen (aber hier ist sowieso ein 3nocross getaggt), ansonsten q2
