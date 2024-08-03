@@ -86,11 +86,13 @@ if ($do_gpx_copy) {
 	}
 	if ($^O eq 'MSWin32') {
 	    for my $file (@files) {
+		warn "DEBUG: cp '$file' to '$dest'\n" if $debug;
 		cp($file, $dest)
 		    or die "Failed top copy '$file' to '$dest': $!";
 	    }
 	} else {
 	    my @cmd = ('cp', ($gpx_copy_force ? '-f' : '-i'), @files, $dest);
+	    warn "DEBUG: run '@cmd'\n" if $debug;
 	    system @cmd;
 	    if ($? != 0) {
 		die "Running '@cmd' failed";
