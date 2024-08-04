@@ -1,6 +1,113 @@
-$#temp_blocking = 111;
+$#temp_blocking = 30;
 push @temp_blocking,
 (
+       {
+         'data' => '#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
+#: by: https://www.family-and-friends-ev.de/?date=20210418 (10.-12. September 2021)
+#: by: https://www.vinoflix.com/blog/wein-und-winzerfest-lichtenrade
+#: by: https://www.visitberlin.de/en/event/wine-festival-lichtenrade
+#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/35-wein-und-winzerfest-29d68374-a7db-402e-9595-697a7fb58cc1/
+#: by: https://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-lichtenrade.html
+	2::temp 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1725487200,
+         'id' => 31,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              9,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 06.09.2024 14:00 Uhr bis 08.09.2024 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1725822000
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'data' => '#: by: http://www.hier-in-rudow.de/meilenfeste.html
 #: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
@@ -2724,7 +2831,34 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
+#: by: https://www.wollenschlaeger-berlin.de/51-fest-an-der-panke/
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1226411.php (evtl. nur auf der Nordseite?)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1345861.php (findet 2023 nicht statt)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6806 (Anfrage)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/hinweise/artikel.1226093.php
+	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
+	2::temp 10602,18382 10562,18506 10532,18601
+',
+         'from' => 1726178400,
+         'id' => 2281,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              9,
+                              'start',
+                              '2023-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (14.09.2024-15.09.2024)',
+         'type' => 'gesperrt',
+         'until' => 1726437599
+       },
        undef,
        undef,
        undef,
@@ -2843,8 +2977,97 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
+#: by: https://www.bmw-berlin-marathon.com/
+#: by: https://viz.berlin.de/2021/09/berlin-marathon/
+#: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
+#: by: https://viz.berlin.de/2022/09/marathon/
+#: by: https://viz.berlin.de/2023/09/marathon/
+#: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.369855,52.515768,18.09.2023,06:00 (bis 26.09.2023) (inaktiv)
+#: source_id: viz2021:13.360266,52.515154,24.09.2023,22:00 (bis 06.10.2023) (inaktiv)
+# REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
+	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+# REMOVED --- #: tempex ^^^
+',
+         'dont_check_date' => 1,
+         'from' => 1726977600,
+         'id' => 2387,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              9,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 23.10.2024 bis 01.10.2024',
+         'type' => 'gesperrt',
+         'until' => 1727236800
+       },
+       {
+         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
+#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00 (inaktiv)
+#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30 (inaktiv)
+#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00 (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023) (inaktiv)
+#: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023) (inaktiv)
+# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
+	2::temp 8573,12325 8540,12420
+	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	2::temp 8119,12414 8055,12186
+	2::temp 8538,12245 8522,12239 8466,12197 8327,12174 8215,12156 8122,12147 8049,12140 8018,12135 7823,12120 7775,12114 7429,12070
+	2::temp 8538,12245 8522,12187 8453,12099 8262,11883 8244,11878 8221,11876 8167,11865 8140,11850 8026,11764
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
+	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201 7875,12363
+	3 7875,12363 7822,12201 7816,12150 7823,12120
+	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
+	2::temp 8207,12606 8206,12734 8206,12757
+	3 7945,12592 8122,12603 8120,12756
+	3 8120,12756 8122,12603 7945,12592
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+#: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
+	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8221,11690
+	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
+	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
+	2::temp 7823,12120 7832,12036 7822,11952 7793,11878
+	2::temp 7775,12114 7772,12040 7717,11918
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1727236800,
+         'id' => 2388,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              12,
+                              'months',
+                              9,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 25.09.2024 bis 30.09.2024',
+         'type' => 'gesperrt',
+         'until' => 1727668800
+       },
        undef,
        undef,
        undef,
@@ -2974,9 +3197,11 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
 #: source_id: viz2021:13.3546,52.51713,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
 #: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
 #: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (bis 05.08.2024)
+#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (bis 05.08.2024) (inaktiv)
 #: source_id: viz2021:13.36973,52.517661,02.08.2024,18:00 (bis 05.08.2024)
-#: source_id: viz2021:13.376835,52.51775,02.08.2024,18:00 (bis 05.08.2024)
+#: source_id: viz2021:13.376835,52.51775,02.08.2024,18:00 (bis 05.08.2024) (inaktiv)
+#: source_id: viz2021:13.377158,52.515908,06.05.2024,06:00 (bis 05.08.2024)
+#: source_id: viz2021:13.366231,52.515535,06.05.2024,06:00 (bis 05.08.2024)
 # REMOVED --- #: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee --- #: next_check: 2023-07-03
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
@@ -7068,7 +7293,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-07-03
+#: last_checked: 2024-08-03 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801
@@ -8118,7 +8343,7 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
        {
          'data' => '#: also_indoor: traffic (H,B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-03
+#: last_checked: 2024-08-04
 #: check_frequency: 30d
 #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -8128,6 +8353,18 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, voraussichtlich bis 14.9.2024',
          'type' => 'handicap',
          'until' => 1726351200
+       },
+       {
+         'data' => '#: osm_watch: way id="27457006" version="14"
+#: last_checked: 2024-07-01
+#: check_frequency: 180d
+	2::inwork 9017,17290 8982,17299
+',
+         'from' => undef,
+         'id' => 4128,
+         'text' => 'Heubuder Brücke: wegen Bauschäden gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

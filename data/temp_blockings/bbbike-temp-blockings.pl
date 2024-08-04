@@ -287,11 +287,11 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2023-09-07 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2023-09-10 21:00:00"),
+     { from  => $isodate2epoch->("2024-09-05 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-09-08 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 08.09.2023 14:00 Uhr bis 10.09.2023 20:00 Uhr',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 06.09.2024 14:00 Uhr bis 08.09.2024 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
@@ -299,6 +299,7 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
 #: by: https://www.vinoflix.com/blog/wein-und-winzerfest-lichtenrade
 #: by: https://www.visitberlin.de/en/event/wine-festival-lichtenrade
 #: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/35-wein-und-winzerfest-29d68374-a7db-402e-9595-697a7fb58cc1/
+#: by: https://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-lichtenrade.html
 	2::temp 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -20426,11 +20427,11 @@ EOF
 	2::inwork -13658,-4896 -13712,-6415
 EOF
      },
-     { from  => $isodate2epoch->("2022-09-09 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-09-11 23:59:59"),
+     { from  => $isodate2epoch->("2024-09-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2024-09-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 9, start => "2023-10-25T00:00:00"]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (10.09.2022-11.09.2022)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (14.09.2024-15.09.2024)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
@@ -20438,6 +20439,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1226411.php (evtl. nur auf der Nordseite?)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1345861.php (findet 2023 nicht statt)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6806 (Anfrage)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/hinweise/artikel.1226093.php
 	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
 	2::temp 10602,18382 10562,18506 10532,18601
 EOF
@@ -21507,11 +21509,11 @@ EOF
 EOF
      },
      { do {
-           my $from1  = $isodate2epoch->("2023-09-17 06:00:00"); # 1 Tag Vorlauf
-           my $until1 = $isodate2epoch->("2023-09-20 06:00:00");
+           my $from1  = $isodate2epoch->("2024-09-22 06:00:00"); # So vor dem Marathon; ein Tag Vorlauf
+           my $until1 = $isodate2epoch->("2024-09-25 06:00:00"); # Mi vor dem Marathon
            # in der Zwischenzeit ist die erweiterte Sperrung aktiv, siehe unten
-           my $from2  = $isodate2epoch->("2023-09-25 06:00:00");
-           my $until2 = $isodate2epoch->("2023-09-26 23:30:00");
+           my $from2  = $isodate2epoch->("2024-09-30 06:00:00"); # Mo nach dem Marathon
+           my $until2 = $isodate2epoch->("2024-10-01 23:30:00"); # Di nach dem Marathon
            if (time <= $until1) {
                (from => $from1, until => $until1);
            } else {
@@ -21522,7 +21524,7 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9, start => "2020-10-25T00:00:00"]],
        #recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 18.09.2023 bis 26.09.2023',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 23.10.2024 bis 01.10.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -21541,12 +21543,12 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2023-09-20 06:00:00"),
-       until => $isodate2epoch->("2023-09-25 06:00:00"),
+     { from  => $isodate2epoch->("2024-09-25 06:00:00"), # Mi vor dem Marathon
+       until => $isodate2epoch->("2024-09-30 06:00:00"), # Mo nach dem Marathon
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9, start => "2020-10-25T00:00:00"]],
        #recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 20.09.2023 bis 25.09.2023',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 25.09.2024 bis 30.09.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -22264,9 +22266,11 @@ EOF
 #: source_id: viz2021:13.3546,52.51713,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
 #: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
 #: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (bis 05.08.2024)
+#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (bis 05.08.2024) (inaktiv)
 #: source_id: viz2021:13.36973,52.517661,02.08.2024,18:00 (bis 05.08.2024)
-#: source_id: viz2021:13.376835,52.51775,02.08.2024,18:00 (bis 05.08.2024)
+#: source_id: viz2021:13.376835,52.51775,02.08.2024,18:00 (bis 05.08.2024) (inaktiv)
+#: source_id: viz2021:13.377158,52.515908,06.05.2024,06:00 (bis 05.08.2024)
+#: source_id: viz2021:13.366231,52.515535,06.05.2024,06:00 (bis 05.08.2024)
 # REMOVED --- #: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee --- #: next_check: 2023-07-03
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
@@ -39943,7 +39947,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDENKOPPEN-2023
 #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 15.10.2023) (inaktiv) (bis 31.01.2024, weitere Arbeiten im Anschluss) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024) (inaktiv)
-#: osm_watch: note 4161500 2
+#: osm_watch: note 4161500 5
 # REMOVED --- #: last_checked: 2024-04-17
 # REMOVED --- #: next_check: 2024-06-30
 # REMOVED --- #: next_check: 2024-04-18
@@ -42137,7 +42141,7 @@ EOF
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-07-03
+#: last_checked: 2024-08-03 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801
@@ -43045,7 +43049,7 @@ EOF
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsinformationen-zur-uefa-euro-2024-in-berlin/
 #: by: https://berliner-abendblatt.de/berlin-news/fanmeile-wird-abgebaut-strasse-des-17-juni-bleibt-gesperrt-id257684
 #: by: https://berliner-abendblatt.de/berlin-news/sperrungen-an-strasse-des-17-juni-in-wenigen-tagen-vorbei-id259105
-#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024) (bis 26.07.2024) (bis 05.08.2024)
+#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (Str. des 17. Juni + Ebertstr., bis 26.07.2024) (bis 29.07.2024) (bis 26.07.2024) (bis 05.08.2024) (inaktiv)
 #: source_id: viz2021:13.372528,52.52083,06.05.2024,06:00 (Heinrich-Gagern-Str. etc, nur Kfz-Verkehr, bis 26.07.2024) (inaktiv)
 #: note: es sieht so aus, als ob man vom Bremer Weg nur über Umwege (bis fast Behrenstr.?) zum Brandenburger Tor fahren kann
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
@@ -44057,10 +44061,21 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H,B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-03
+#: last_checked: 2024-08-04
 #: check_frequency: 30d
 #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Heubuder Brücke: wegen Bauschäden gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: osm_watch: way id="27457006" version="14"
+#: last_checked: 2024-07-01
+#: check_frequency: 180d
+	2::inwork 9017,17290 8982,17299
 EOF
      },
     );

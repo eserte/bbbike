@@ -670,7 +670,7 @@ Alt-Tempelhof/Schönburgstr.: Überquerungshilfe in Planung	?::projected 8961,6662
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Abwägung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9318 (Antrag)
 #: XXX evtl. gibt's auch nur eine Busspur zwischen Hranitzkystr. und Friedenfelser Str. Richtung Süden, siehe pardok
-#: osm_watch: way id="25415937" version="42"
+#: osm_watch: way id="25415937" version="43"
 #: osm_watch: way id="30483116" version="19"
 #: last_checked: 2024-06-19 (mapillary)
 #: check_frequency: 120d
@@ -1916,7 +1916,7 @@ Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur i
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/radweg-clayallee-wird-saniert_a396988
 #: last_checked: 2024-02-07 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2023-11-30
+# REMOVED --- #: next_check: 2023-11-30
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected; 1757,5976 1862,6297 1894,6387 1904,6415
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected; 1960,6826 1960,6986 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected; 1967,7561 1955,7531 1956,7453 1957,7365 1959,7225 1959,7107 1960,6986 1960,6826 1954,6567 1949,6539 1918,6456 1904,6415 1894,6387 1862,6297 1757,5976 1746,5922
@@ -2935,8 +2935,8 @@ August-Froehlich-Str.: sehr breiter asphaltierter Zweirichtungsradweg wird gebau
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-#: osm_watch: way id="640313616" version="9"
-#: last_checked: 2024-08-03
+#: osm_watch: way id="640313616" version="11"
+#: last_checked: 2024-08-04 (osm)
 #: check_frequency: 60d
 Planstraße 9: Fortsetzung der Regener Str.; Qualität etc?	?::inwork 19705,9039 19806,9040 19863,9073 19870,9079
 # 
@@ -4056,6 +4056,7 @@ Hardenbergstr.: Poller geplant	?::projected; 5459,11135 5542,11075
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462896.php (Bauarbeiten in der Sömmeringstr. bis zum 12. Juli 2024)
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/opernroute-naechste-bauphase_a420392
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1471751.php (Grünbeschichtung in der Sömmeringstr., eine oder beide Richtungen?)
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/radweg-gruen-markiert_a421852
 #: source_id: viz2021:13.306024,52.524038,03.07.2024,07:00 (bis 08.07.2024) (inaktiv)
 #: source_id: viz2021:13.306097,52.525724,18.06.2024,07:00 (bis 30.09.2024)
 #: osm_watch: way id="4410427" version="40"
@@ -5050,7 +5051,7 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (noch nicht terminiert)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11897 (Antrag)
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
-#: last_checked: 2024-07-03
+#: last_checked: 2024-08-03 (daf)
 #: check_frequency: 120d
 Kurfürstenstr.: Umbau/Erneuerung der Radverkehrsanlagen	? 6740,10755 6607,10801 6471,10851 6359,10891 6277,10924 6266,10927 6145,10975
 # 
@@ -5408,7 +5409,7 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 #: source_id: viz2021:13.438124,52.520164,18.04.2024,06:00 (bis 30.06.2024) (bis 26.07.2024) (inaktiv)
 #: source_id: viz2021:13.43794,52.52035,18.04.2024,06:00 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.43786,52.52023,27.06.2024,15:16 (bis 26.07.2024) (inaktiv)
-#: osm_watch: note 4161500 4
+#: osm_watch: note 4161500 5
 #: note: (weggedrehte) Masten steht schon
 #: last_checked: 2024-08-03
 #: check_frequency: 30d
@@ -7914,7 +7915,7 @@ Hauptstr.: Radfahrstreifen zwischen Kleistpark und Dominicusstr. wurden markiert
 #: by: https://www.maz-online.de/lokales/teltow-flaeming/zossen-informationsabend-zum-bahnumbau-baustellen-bis-2028-5CJ2ESYUVNAU7PTYW45CNVZM3A.html (2022-2024)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7165/docs/PR_berlin-dresden_infoveranstaltung_zossen_20230330.pdf (neue Unterführung wird nördlich gebaut, Beginn etwa 450m nördlich von der jetzigen Einmündung; Bauzeit Q2/2023 - 06/2024)
 #: osm_watch: way id="186897941" version="10"
-#: osm_watch: way id="1205904882" version="3"
+#: osm_watch: way id="1205904882" version="4"
 #: last_checked: 2023-08-10 (indoor)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2024-08-09
@@ -10138,7 +10139,7 @@ Am Bahndamm - Elsa-Neumann-Str.: existiert hier bereits eine Verbindung? Qualitä
 #: next_check_id: POTSDAMSPEICHERSTADT-2022
 #: last_checked: 2022-05-08 vvv
 #: check_frequency: 360d vvv
-#: next_check: 2023-01-09 vvv
+# REMOVED --- #: next_check: 2023-01-09 vvv
 #: XXX neue Straßen in Potsdam: Genauer Verlauf? vvv
 # REMOVED (realisiert) --- #: by: http://www.dafmap.de/d/berlin.html?id=3576&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-06-30) --- #: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv --- #: osm_watch: way id="174465897" version="3" brb --- An der Kornmühle (Potsdam): Qualität der Straße?	? -12712,-2172 -12731,-2218
 # REMOVED (realisiert) --- #: osm_watch: way id="174465898" version="9" brb --- #: XXX laut osm living_street und surface=paved --- Am Speicher (Potsdam): Qualität der Straße?	? -12783,-2269 -12768,-2207 -12754,-2154
@@ -10171,7 +10172,7 @@ Am Magazin: genaue Lage, Qualität?	? -12656,-2076 -12665,-2019
 #: last_checked: 2023-10-13 (osm)
 An der Kornmühle (Verlängerung der bestehenden Straße?): bereits gebaut?	? -12712,-2172 -12680,-2134 -12647,-2114 -12547,-2070
 #: XXX ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -10894,10 +10895,10 @@ An der Kanalbrücke: befindet sich hier die Straße? Qualität?	? -18547,4524 -1847
 #: by: https://berliner-abendblatt.de/berlin-news/herta-mueller-exilmuseum-ist-verpflichtung-fuer-deutschland-id214221
 #: by: https://berliner-abendblatt.de/berlin-news/sechs-meter-hoher-turm-informiert-ueber-geplantes-exilmuseum-id227916
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/exilmuseum-berlin.951/#post-21587
-#: by: https://stiftung-exilmuseum.berlin/de/der-neubau/der-neubau (Baugenehmigung 2024, Eröffnung 2028)
+#: by: https://stiftung-exilmuseum.berlin/de/der-neubau/der-neubau (Baugenehmigung 2024, Eröffnung 2028) (mittlerweile wird mit der Baugenehmigung 2025 gerechnet)
 #: XXX Bebauungsplan VI-150g-1-1
 #: last_checked: 2024-05-04
-#: check_frequency: 180d
+#: check_frequency: 270d
 #: next_check: 2028-03-15
 Exilmuseum: in Planung, evtl. gibt es Änderungen an den Wegen/Straßen	?::projected 8916,10855 8947,10815 8987,10821
 # 
