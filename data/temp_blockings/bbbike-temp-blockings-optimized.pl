@@ -3188,42 +3188,7 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2023/06/velocity-radrennen/
-#: source_id: IM_019938 (inaktiv)
-#: source_id: viz2021:13.35105,52.51478,29.06.2023,06:00 (bis 04.07.2023) (inaktiv)
-#: source_id: viz2021:13.37737,52.51457,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.370818,52.517831,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.3546,52.51713,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
-#: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (bis 05.08.2024) (inaktiv)
-#: source_id: viz2021:13.36973,52.517661,02.08.2024,18:00 (bis 05.08.2024)
-#: source_id: viz2021:13.376835,52.51775,02.08.2024,18:00 (bis 05.08.2024) (inaktiv)
-#: source_id: viz2021:13.377158,52.515908,06.05.2024,06:00 (bis 05.08.2024)
-#: source_id: viz2021:13.366231,52.515535,06.05.2024,06:00 (bis 05.08.2024)
-# REMOVED --- #: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee --- #: next_check: 2023-07-03
-Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
-# REMOVED (bis 3.7.2023) --- Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-#: note vermutet
-# REMOVED (bis 3.7.2023) --- Platz des 18. März	2::temp 8538,12245 8592,12252 8637,12258
-# REMOVED (bis 3.7.2023) --- Scheidemannstr. + Dorotheenstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
-# REMOVED (bis 3.7.2023) --- Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
-# REMOVED (bis 3.7.2023) --- Paul-Löbe-Allee	2::temp 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
-#: note vermutet
-	2::temp 7823,12120 7816,12150
-#: note vermutet
-	2::temp 7429,12070 7383,12095
-John-Foster-Dulles-Allee	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-Scheidemannstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
-',
-         'from' => 1722549600,
-         'id' => 2440,
-         'text' => 'Straße des 17. Juni, Yitzak-Rabin-Str., John-Foster-Dulles-Allee, Scheidemannstr. und weitere angrenzende Straßen wegen Vorbereitungen zur Velocity gesperrt, evtl. sind auch Radfahrer betroffen, 02.08.2024 06:00 bis 05.08.2024 06:00',
-         'type' => 'gesperrt',
-         'until' => 1722830400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5719,12 +5684,12 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1451630.php (voraussichtlich teilweise Freigabe, der Rest wird bis Juni 2025 gemacht (also etwas kürzer als bei VIZ))
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
-#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen)
+#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2024-06-13 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-06-30 vvv
+#: next_check: 2025-08-16 vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -5744,7 +5709,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
          'from' => 1656799200,
          'id' => 3579,
          'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
-         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Juni 2025',
+         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis August 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7045,25 +7010,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'type' => 'handicap',
          'until' => 1724425200
        },
-       {
-         'data' => '#: add_fragezeichen: Existiert die Sperrung noch immer?
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
-#: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_09_0481_0548_online.pdf (Grundstücksnummerierung)
-#: also_indoor: traffic (re-G,ex-W)
-#: osm_watch: way id="977478749" version="1"
-#: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
-#: last_checked: 2024-07-05 (architektur-urbanistik)
-#: next_check: 2024-07-31
-	q3::inwork 7103,11247 7171,11510
-',
-         'dont_check_date' => 1,
-         'from' => 1695746966,
-         'id' => 3926,
-         'text' => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Juli 2024, evtl. länger',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7130,7 +7077,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-08-02 vvv
+#: last_checked: 2024-08-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7164,8 +7111,8 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '#: next_check_id: RUNGE-2023
 #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv)
 # REMOVED --- #: note: Ampeleintrag beachten! (-> REMOVED)
-#: note: etwa 40 Meter gesperrt; möglicher Bordstein
-#: last_checked: 2024-07-26 (mapillary)
+#: note: etwa 40 Meter gesperrt; möglicher Bordstein; mittlerweile (2024-08-02) offiziell noch Durchfahrt verboten, aber eine Fahrgasse kann offen sein
+#: last_checked: 2024-08-02 (mapillary)
 	q3::inwork 11291,11876 11185,11883
 ',
          'from' => undef,
@@ -7897,7 +7844,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 #: note: Halteverbotsschilder bis 17.07.2024; wurde trotz Bauarbeiten nicht verlängert
 #: note: mittlerweile (Ende Juli/Anfang August 2024) wurde die Einbahnstraßenregelung bis zur Neue Roßstr. verlängert, deshalb q3 -> q4
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-05
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-07-17
@@ -8005,7 +7952,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-08-02 vvv
+#: last_checked: 2024-08-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8365,6 +8312,18 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Heubuder Brücke: wegen Bauschäden gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.33276,52.47726,05.08.2024,07:00 (bis 25.10.2024)
+#: also_indoor: traffic (H,G,B,T,W)
+#: add_fragezeichen: Sind Radfahrer und Fußgänger von der Sperrung betroffen?
+	2::inwork 5630,7875 5632,8024
+',
+         'from' => 1722747600,
+         'id' => 4129,
+         'text' => 'Prinzregentenstr.: Brückenarbeiten zwischen Handjerystr. und Wexstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 05.08.2024 07:00 bis 25.10.2024 18:00',
+         'type' => 'gesperrt',
+         'until' => 1729872000
        }
      
 );

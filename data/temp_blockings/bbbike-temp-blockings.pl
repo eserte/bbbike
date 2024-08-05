@@ -22267,10 +22267,10 @@ EOF
 #: source_id: viz2021:13.37495,52.51939,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
 #: source_id: viz2021:13.374751,52.51778,30.06.2023,18:00 (bis 03.07.2023) (inaktiv)
 #: source_id: viz2021:13.351095,52.514567,06.05.2024,06:00 (bis 05.08.2024) (inaktiv)
-#: source_id: viz2021:13.36973,52.517661,02.08.2024,18:00 (bis 05.08.2024)
+#: source_id: viz2021:13.36973,52.517661,02.08.2024,18:00 (bis 05.08.2024) (inaktiv)
 #: source_id: viz2021:13.376835,52.51775,02.08.2024,18:00 (bis 05.08.2024) (inaktiv)
-#: source_id: viz2021:13.377158,52.515908,06.05.2024,06:00 (bis 05.08.2024)
-#: source_id: viz2021:13.366231,52.515535,06.05.2024,06:00 (bis 05.08.2024)
+#: source_id: viz2021:13.377158,52.515908,06.05.2024,06:00 (bis 05.08.2024) (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,06.05.2024,06:00 (bis 05.08.2024) (inaktiv)
 # REMOVED --- #: XXX weitere Sperrungen ab 30.06.2023 18:00 bis 03.07.2023 06:00: Ebertstraße zwischen Scheidemannstraße und Behrenstraße, John-Foster-Dulles-Allee, Scheidemannstraße und Dorotheenstraße zwischen Heinrich-von-Gagern-Straße und Wilhelmstraße, Heinrich-von-Gagern-Straße, Paul-Löbe-Allee --- #: next_check: 2023-07-03
 Straße des 17. Juni	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Yitzak-Rabin-Str.	2::temp 8055,12186 8119,12414
@@ -36384,7 +36384,7 @@ EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
        until => undef, # $isodate2epoch->("2024-04-30 17:00:00"), # undef, # 1667861999, # 2022-11-07 23:59
-       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Juni 2025', # früher: nur bis Amalienstr.
+       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis August 2025', # früher: nur bis Amalienstr.
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
@@ -36401,12 +36401,12 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1451630.php (voraussichtlich teilweise Freigabe, der Rest wird bis Juni 2025 gemacht (also etwas kürzer als bei VIZ))
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
-#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen)
+#: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2024-06-13 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-06-30 vvv
+#: next_check: 2025-08-16 vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -41185,20 +41185,18 @@ EOF
 EOF
      },
      { from  => 1695746966, # 2023-09-26 18:49
-       until => undef, # 1711922399, # 2024-03-31 23:59
+       until => 1722877242, # undef, # 1711922399, # 2024-03-31 23:59
        dont_check_date => 1,
        text  => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Juli 2024, evtl. länger',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Existiert die Sperrung noch immer?
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
 #: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_09_0481_0548_online.pdf (Grundstücksnummerierung)
 #: also_indoor: traffic (re-G,ex-W)
 #: osm_watch: way id="977478749" version="1"
 #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
-#: last_checked: 2024-07-05 (architektur-urbanistik)
-#: next_check: 2024-07-31
+# REMOVED --- #: add_fragezeichen: Existiert die Sperrung noch immer? --- #: last_checked: 2024-07-05 (architektur-urbanistik) --- #: next_check: 2024-07-31
 	q3::inwork 7103,11247 7171,11510
 EOF
      },
@@ -41418,7 +41416,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-08-02 vvv
+#: last_checked: 2024-08-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -41472,8 +41470,8 @@ EOF
 #: next_check_id: RUNGE-2023
 #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv)
 # REMOVED --- #: note: Ampeleintrag beachten! (-> REMOVED)
-#: note: etwa 40 Meter gesperrt; möglicher Bordstein
-#: last_checked: 2024-07-26 (mapillary)
+#: note: etwa 40 Meter gesperrt; möglicher Bordstein; mittlerweile (2024-08-02) offiziell noch Durchfahrt verboten, aber eine Fahrgasse kann offen sein
+#: last_checked: 2024-08-02 (mapillary)
 	q3::inwork 11291,11876 11185,11883
 EOF
      },
@@ -43517,7 +43515,7 @@ EOF
 #: note: Halteverbotsschilder bis 17.07.2024; wurde trotz Bauarbeiten nicht verlängert
 #: note: mittlerweile (Ende Juli/Anfang August 2024) wurde die Einbahnstraßenregelung bis zur Neue Roßstr. verlängert, deshalb q3 -> q4
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-05
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-07-17
@@ -43645,7 +43643,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-08-02 vvv
+#: last_checked: 2024-08-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44076,6 +44074,17 @@ EOF
 #: last_checked: 2024-07-01
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
+EOF
+     },
+     { from  => 1722747600, # 2024-08-04 07:00
+       until => 1729872000, # 2024-10-25 18:00
+       text  => 'Prinzregentenstr.: Brückenarbeiten zwischen Handjerystr. und Wexstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 05.08.2024 07:00 bis 25.10.2024 18:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.33276,52.47726,05.08.2024,07:00 (bis 25.10.2024)
+#: also_indoor: traffic (H,G,B,T,W)
+#: add_fragezeichen: Sind Radfahrer und Fußgänger von der Sperrung betroffen?
+	2::inwork 5630,7875 5632,8024
 EOF
      },
     );
