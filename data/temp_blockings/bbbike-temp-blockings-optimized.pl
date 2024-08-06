@@ -1842,7 +1842,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1470949.php
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-07-08 (traffic)
+#: last_checked: 2024-08-06 (traffic)
 #: check_frequency: 30d
 #: next_check: 2024-08-30
 	q4::inwork; 7532,4605 7544,4587 7561,4560 7573,4540 7597,4499
@@ -7077,7 +7077,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-08-05 vvv
+#: last_checked: 2024-08-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7336,6 +7336,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: bvg2021:123#BVG342289_0
 #: source_id[inactive]: bvg2024:123#HIM_FREETEXT_222657
 #: source_id: viz2021:13.34718,52.53079,14.02.2024,07:00 (bis 29.09.2025) (inaktiv)
+#: source_id: viz2021:13.35116,52.531839,07.08.2024,07:00 (bis 30.08.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/erneuerung-abwasserdruckleitung-unter-der-perleberger-strasse/
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
@@ -7349,8 +7350,9 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1250738798" version="3"
 Wilsnacker Str.: Anbindung gesperrt	q4::inwork 6646,13951 6746,13826
 #: note: Ampel ist zumindest Richtung Nordosten ausgeschaltet, allerdings gibt\'s dafür eine Fußgängerampel etwa 50m weiter nordöstlich
+#: note: mittlerweile Änderung laut VMZ, evtl. nur noch eine Fahrtrichtung betroffen
 #: osm_watch: way id="417687029" version="15"
-Rathenower Str.: Anbindung gesperrt	q4::inwork 6817,13862 6730,14021
+Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7733,7 +7735,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: also_indoor: traffic (ex-H,re-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-07-24 (traffic) vvv
+#: last_checked: 2024-08-06 (traffic) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-08-31 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -7828,16 +7830,16 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1730476800
        },
        {
-         'data' => '#: source_id: viz2021:13.299377,52.44785,10.06.2024,07:00 (bis 09.08.2024)
+         'data' => '#: source_id: viz2021:13.299377,52.44785,10.06.2024,07:00 (bis 09.08.2024) (bis 27.09.2024)
 #: also_indoor: traffic (W)
 #: note: 210m des Abschnitts ist betroffen, deshalb q1 (eher q1-), ansonsten q2
 	q1::inwork 3185,4894 3425,4541
 ',
          'from' => 1717909200,
          'id' => 4083,
-         'text' => 'Fabeckstr.: Anbindung Unter den Eichen gesperrt, Gehweg für Radfahrer frei, vom 10.06.2024 07:00 bis 09.08.2024 17:00',
+         'text' => 'Fabeckstr.: Anbindung Unter den Eichen gesperrt, Gehweg für Radfahrer frei, vom 10.06.2024 07:00 bis 27.09.2024 17:00',
          'type' => 'handicap',
-         'until' => 1723215600
+         'until' => 1727449200
        },
        {
          'data' => '#: note: Länge der Einbahnstraßenregelung etwa 80m; außerdem ist auch die Inselstraße Einbahnstraße, hier aber für Radfahrer frei
@@ -7952,7 +7954,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-08-05 vvv
+#: last_checked: 2024-08-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8022,7 +8024,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
        {
          'data' => '#: next_check_id: WOLZIGERZEILE-2024
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/unterfuehrung-am-s-bahnhof-lichtenrade-ist-fertig_a419600
-#: osm_watch: note 4283578 3
+#: osm_watch: note 4283578 4
 #: note: Schranke existiert noch, man kann als Radfahrer/Fußgänger noch halb-legal durch (Stand 2024-07-03)
 #: last_checked: 2024-07-03
 	2::inwork 10382,-2598 10365,-2603 10307,-2633
@@ -8150,7 +8152,7 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
          'until' => 1725112800
        },
        {
-         'data' => '#: source_id: viz2021:13.364381,52.549655,11.07.2024,14:23 (bis 09.08.2024)
+         'data' => '#: source_id: viz2021:13.364381,52.549655,11.07.2024,14:23 (bis 09.08.2024) (bis 23.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1811376928051364138
 #: by: https://pbs.twimg.com/media/GSNNci7WMAEH-87?format=jpg&name=large (keine Regelung für den Radverkehr)
 #: note: q4 -> q3, weil der gesperrte Abschnitt sehr kurz ist
@@ -8158,9 +8160,9 @@ zwischen Ithweg und und Ottmachauer Steig bis zum 02.09.2024	q4::inwork -326,504
 ',
          'from' => 1720614180,
          'id' => 4115,
-         'text' => 'Maxstr.: Anbindung Seestr. wegen Bauarbeiten gesperrt, vom 11.07.2024 14:23 bis 09.08.2024 17:00',
+         'text' => 'Maxstr.: Anbindung Seestr. wegen Bauarbeiten gesperrt, vom 11.07.2024 14:23 bis 23.08.2024 17:00',
          'type' => 'handicap',
-         'until' => 1723215600
+         'until' => 1724425200
        },
        {
          'data' => '#: next_check_id: SCHILDOWER-2024
@@ -8324,6 +8326,29 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Prinzregentenstr.: Brückenarbeiten zwischen Handjerystr. und Wexstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 05.08.2024 07:00 bis 25.10.2024 18:00',
          'type' => 'gesperrt',
          'until' => 1729872000
+       },
+       {
+         'data' => '#: also_indoor: traffic (B,T)
+#: add_fragezeichen: Gibt es die Baustelle noch immer?
+#: note: Die Länge der Einengung beträgt etwa 40m, deshalb q3. Durch den Wasserrohrbruch in der Tiergartenstr. erhöhter Kfz-Verkehr in der Gegenrichtung.
+#: last_checked: 2024-08-05
+	q3::inwork; 7253,11208 7356,11517
+',
+         'from' => undef,
+         'id' => 4130,
+         'text' => 'Hiroshimastr.: Einbahnstraßenregelung, offen Richtung Süden, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: LS/221-F/24/152 (bis 16.09.2024)
+	2::inwork 49801,26449 49808,26346 49255,26084 48885,25629 48104,24510 47857,24214 47671,23769 47695,23516 47541,23208 47180,22939 46782,22769 46072,21966 45602,21749
+',
+         'from' => 1723356000,
+         'id' => 4131,
+         'text' => 'Prötzel - Strausberg: Bauarbeiten, Sperrung, vom 12.08.2024 08:00 Uhr bis 16.09.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1726495200
        }
      
 );
