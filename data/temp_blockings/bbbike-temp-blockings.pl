@@ -3828,7 +3828,7 @@ EOF
        text  => 'B 096 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-30.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -5962,74421 -6037,73865
+	2 -5982,74385 -6037,73865
 EOF
      },
      { from  => 1140994800, # 2006-02-27 00:00
@@ -5351,7 +5351,7 @@ EOF
        text  => 'B 096 Gransee-Fürstenberg OD Dannenwalde grundhafter Straßenbau Vollsperrung 21.07.2006-30.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -5962,74421 -5737,74650
+	q4::inwork -5982,74385 -5862,74553 -5778,74667
 EOF
      },
      { from  => 1153000800, # 2006-07-16 00:00
@@ -6003,7 +6003,7 @@ EOF
        text  => 'B 096 Gransee-Fürstenberg Brücke über Wentowkanal bei Dannenwalde Brückenabriß- u. -neubau Vollsperrung 20.02.2006-30.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -5962,74421 -6037,73865
+	2::inwork -5982,74385 -6037,73865
 EOF
      },
      { from  => 1152482400, # 2006-07-10 00:00
@@ -8824,7 +8824,7 @@ EOF
        text  => 'K 6515 Blumenow-B 96 Dannenwalde zw. Blumenow und Dannenwalde Straßenbauarbeiten Vollsperrung 11.06.2007-31.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -5737,74650 -5525,74800 -4541,75943 -4428,75969 -4067,76257 -1317,77071
+	2::inwork -5778,74667 -5713,74671 -5525,74800 -4541,75943 -4428,75969 -4067,76257 -1317,77071
 EOF
      },
      { from  => 1182204000, # 2007-06-19 00:00
@@ -35402,7 +35402,7 @@ EOF
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2024-07-03 vvv
+#: last_checked: 2024-08-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -37868,7 +37868,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024)
-#: last_checked: 2024-08-02 vvv
+#: last_checked: 2024-08-07 vvv
 #: check_frequency: 60d vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 14242,9448 14316,9542
@@ -39087,7 +39087,7 @@ EOF
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-08-01 (traffic)
+#: last_checked: 2024-08-07 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -43898,7 +43898,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id[inactive]: bvg2024:296#HIM_FREETEXT_230337 (10.07.2024-31.08.2024, mittlerweile bis 2024-08-02)
-#: source_id: viz2021:13.525899,52.482661,10.07.2024,08:00 (bis 07.08.2024)
+#: source_id: viz2021:13.525899,52.482661,10.07.2024,08:00 (bis 07.08.2024) (inaktiv)
 #: note: Einbahnstraßenabschnitt ist etwa 65m lang, deshalb q3 statt q4
 	q3::inwork; 18737,8686 18865,8740
 EOF
@@ -44109,6 +44109,15 @@ EOF
        data  => <<EOF,
 #: source_id: LS/221-F/24/152 (bis 16.09.2024)
 	2::inwork 49801,26449 49808,26346 49255,26084 48885,25629 48104,24510 47857,24214 47671,23769 47695,23516 47541,23208 47180,22939 46782,22769 46072,21966 45602,21749
+EOF
+     },
+     { from  => 1722751200, # 2024-08-04 08:00
+       until => 1723820400, # 2024-08-16 17:00
+       text  => 'Westphalweg: Bauarbeiten zwischen Morsbronner Weg und Kollostr., evtl. sind Radfahrer betroffen, vom 05.08.2024 08:00 bis 16.08.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.389248,52.445645,05.08.2024,08:00 (bis 16.08.2024)
+	q4::inwork 9428,4419 9562,4412 9668,4403
 EOF
      },
     );

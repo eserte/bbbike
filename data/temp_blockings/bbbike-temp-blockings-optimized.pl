@@ -5395,7 +5395,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2024-07-03 vvv
+#: last_checked: 2024-08-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -6055,7 +6055,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024)
-#: last_checked: 2024-08-02 vvv
+#: last_checked: 2024-08-07 vvv
 #: check_frequency: 60d vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 14242,9448 14316,9542
@@ -6416,7 +6416,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-08-01 (traffic)
+#: last_checked: 2024-08-07 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -8349,6 +8349,16 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Prötzel - Strausberg: Bauarbeiten, Sperrung, vom 12.08.2024 08:00 Uhr bis 16.09.2024 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1726495200
+       },
+       {
+         'data' => '#: source_id: viz2021:13.389248,52.445645,05.08.2024,08:00 (bis 16.08.2024)
+	q4::inwork 9428,4419 9562,4412 9668,4403
+',
+         'from' => 1722751200,
+         'id' => 4132,
+         'text' => 'Westphalweg: Bauarbeiten zwischen Morsbronner Weg und Kollostr., evtl. sind Radfahrer betroffen, vom 05.08.2024 08:00 bis 16.08.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1723820400
        }
      
 );

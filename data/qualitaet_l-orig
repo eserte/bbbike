@@ -2359,7 +2359,7 @@ Prenzlauer Allee (Templin): Asphalt	Q0 16331,79764 16203,79768 15846,79628
 Templin: Asphalt	Q0 15846,79628 15887,79456 15840,79375
 Templin - Vietmannsdorf: Asphalt	Q0 15432,79232 15441,79046 15496,78845
 #: confirmed_by: rj
-Zehdenick - Burgwall/Marienthal [Berlin - Kopenhagen]: Asphalt	Q0 3484,63902 3525,64198 3636,65210 3621,65212 3610,65215 3631,65327 3671,65656 3698,65768 3690,65866 3556,66001 3203,66345 3230,66445 3309,66790 3292,66935 3350,67075 3307,67157 3171,67282 3185,67393 3166,67480 2989,67674 2946,67767 2646,68084 2689,68142 2824,68271
+Zehdenick - Burgwall/Marienthal [Berlin - Kopenhagen]: Asphalt	Q0 3484,63902 3525,64198 3636,65210 3621,65212 3610,65215 3631,65327 3671,65656 3698,65768 3701,65787 3683,65874 3556,66001 3203,66345 3230,66445 3309,66790 3292,66935 3350,67075 3307,67157 3171,67282 3185,67393 3166,67480 2989,67674 2946,67767 2646,68084 2689,68142 2824,68271
 #: by: rj vvv
 Lychen - Feldberg: Asphalt	Q0 -71,91020 49,91473 151,91581 285,91620 493,91785 691,92134 767,92276 1130,92676 1274,92952 1487,93057 1942,93455
 Lychen - Feldberg: Kopfsteinpflaster (mit Gehwegradweg)	Q2 1942,93455 2091,94065
@@ -2965,12 +2965,14 @@ Hardenbeck: Kopfsteinpflaster, Ausweichen auf Banketten/Gehweg möglich	Q2 19032,
 Mahlendorf - L15: Asphalt	Q0 12245,91459 12303,92218 11886,93180
 - Himmelpfort: Asphalt	Q0 -4847,88034 -4392,87269
 Havelstr.: Kopfsteinpflaster	Q2 -8903,86328 -8909,86294 -8772,86237 -8755,86211 -8724,86192
-Bahnhofstr.: kleinteiliges Kopfsteinpflaster	Q1 -9085,86489 -8994,86399 -8903,86328 -8839,86313 -8734,86281
+Bahnhofstr.: kleinteiliges Kopfsteinpflaster	Q1- -9085,86489 -8994,86399 -8903,86328 -8839,86313 -8734,86281
+Fritz-Reuter-Str.: kleinteiliges Kopfsteinpflaster	Q1- -8994,86399 -8984,86417 -8940,86681
+Rathenaustr.: kleinteiliges Kopfsteinpflaster	Q1- -9015,86660 -8996,86660 -8940,86681 -8723,86756
 Gelderner Str.: Asphalt	Q0 -8856,87139 -8951,87081 -8977,87028 -8981,86964 -8951,86926 -8955,86818
 Luisenstr.: Asphalt	Q0 -8955,86818 -9015,86660 -9085,86489
 Steinförder Str.: Asphalt	Q0 -8800,85923 -8847,85920 -8959,85869 -9028,85866
 Steinförder Str.: teilweise rauer Beton	Q1 -9028,85866 -9096,85872 -9439,86006 -9576,86015
-Steinförder Str.: Asphalt	Q0 -9576,86015 -9782,86012 -9882,85998 -10475,85837
+Steinförder Str.: Asphalt	Q0 -9576,86015 -9782,86012 -9882,85998 -10085,85923 -10311,85895 -10474,85846
 Kreuzdamm: Asphalt	Q0 -9028,85866 -8899,85749 -8818,85700
 Röblinseepromenade: teils Asphalt, teils Kleinkopfsteinpflaster	Q1 -9782,86012 -9823,86051 -9993,86080 -10163,86144 -10204,86177 -10341,86115
 Kröchlendorff - Wichmannsdorf: Waldweg, teilweise witterungsbedingt matschig oder sandig	Q3 28388,96768 27932,96381 27329,95990 26502,95959 25857,95376 25403,94606
@@ -4974,7 +4976,8 @@ Dammhaststr. (Zehdenick): Asphalt	Q0 5004,64359 4991,64328 4899,64261 4760,64120
 Dammhaststr. (Zehdenick): Verbundsteinpflaster	Q1+ 4701,64073 4615,63954
 Berliner Str. (Zehdenick): Verbundsteinpflaster	Q1+ 4600,63927 4549,63855 4506,63785 4462,63714
 Berliner Str. (Zehdenick): Kopfsteinpflaster	Q2 4462,63714 4416,63600
-Uferweg (Zehdenick): Verbundsteinpflaster	Q1 4614,63929 4662,63884 4702,63857 4863,63737 4926,63634
+Uferweg (Zehdenick): Verbundsteinpflaster	Q1 4614,63929 4662,63884 4702,63857 4863,63737 4926,63634 4953,63579 4981,63552
+Uferweg (Zehdenick): unebener Asphalt	Q1- 4981,63552 5043,63520
 Verlängerte Klosterstr. (Zehdenick): Asphalt	Q0 4926,63634 4852,63587 4819,63584 4680,63594
 Parkstr.: Asphalt	Q0 4948,63424 5014,63359 5112,63250
 Freiarche (Zehdenick): Asphalt	Q0 5112,63250 5285,63354
@@ -5677,8 +5680,8 @@ Schwarzschildstr. (Potsdam): Beton	Q1+ -7838,-3260 -7856,-3397
 Chopinstr.: Asphalt	Q0 -7577,-3093 -7582,-3196 -7643,-3328
 #: by: osm
 #: confirmed_by: srt (im Norden)
-Steinförder Str. - Menz: Asphalt	Q0 -10475,85837 -10476,85656 -10434,85640 -10282,85431 -10356,85146 -10315,85098 -9865,84833 -9834,84789
-Fürstenberg - Steinförde: Asphalt	Q0 -10475,85837 -10519,85830 -10709,85824 -11177,85718 -11620,85809 -11703,85847 -11702,85865 -11755,85901 -11982,86116 -12336,86414 -12369,86365 -12533,86471 -12573,86500
+Steinförder Str. - Menz: Asphalt	Q0 -10474,85846 -10476,85656 -10434,85640 -10282,85431 -10356,85146 -10315,85098 -9865,84833 -9834,84789
+Fürstenberg - Steinförde: Asphalt	Q0 -10474,85846 -10519,85830 -10709,85824 -11177,85718 -11620,85809 -11703,85847 -11702,85865 -11755,85901 -11982,86116 -12336,86414 -12369,86365 -12533,86471 -12573,86500
 Steinförde - Peetschsee: Kopfsteinpflaster mit festen Banketten	Q2 -12609,86521 -12737,86336 -12845,86099
 Steinförde - Peetschsee: teilweise schlechtes Kopfsteinpflaster	Q3 -12845,86099 -12768,85837
 Steinförde - Peetschsee: unbefestigte Straße	Q2 -12768,85837 -12723,85677
@@ -6891,6 +6894,22 @@ Neuplachter Weg (Templin): Asphalt	Q0 14373,80120 14572,80036
 Neuplachter Weg (Templin): Verbundsteinpflaster	Q1+ 14572,80036 14875,79902
 Annenwalder Weg (Templin): Asphalt	Q0 14875,79902 14272,79766
 Röddeliner Str. (Templin): Asphalt	Q0 13750,79021 13847,79079 14215,79301 14950,79874 15004,79919
+Altlüdersdorf - Zabelsdorf: Asphalt	Q0 -2391,69914 -1170,71073
+Burgwall - Neuhof: Asphalt	Q0 1993,71059 2055,71042
+Siedlung 1 (Mildenberg): Asphalt	Q0 2646,68084 2492,68083 1595,68322
+Am Welsengraben: unbefestigte Straße	Q2+ 3309,66790 3366,66726 3416,66622 3483,66625 3556,66537 3664,66480 3759,66472 3759,66388
+(Am Raminstich): unbefestigter Pfad, einige matschige Stellen	Q3+ 3759,66388 3756,66297 3656,66240 3790,66037 3863,65967
+(zwischen Raminstich und Bahnstrecke): unbefestigte Straße	Q2 3701,65787 3812,65917 3863,65967 3966,66028 4035,66058
+Krewelin: Asphalt	Q0- 7454,60033 7565,60056 7758,60081 7822,60059
+Himmelpfort: schlechtes Kopfsteinpflaster	Q3 -3030,85609 -2956,85524
+Himmelpfort: schlechtes Kopfsteinpflaster	Q3 -3121,85703 -3131,85714 -3144,85719
+Himmelpfort - Fürstenberg [Berlin - Kopenhagen]: Asphalt	Q0 -3144,85719 -3865,85958 -3917,85969 -4452,86363 -5920,86778 -6426,86836 -6856,87139
+Himmelpfort - Fürstenberg [Berlin - Kopenhagen]: Asphalt mit leichten Schäden	Q0- -6856,87139 -7057,87219 -7440,87207
+Himmelpfort - Fürstenberg [Berlin - Kopenhagen]: Asphalt mit einigen Schäden	Q1+ -7440,87207 -7734,87287
+Himmelpfort - Fürstenberg [Berlin - Kopenhagen]: Kleinsteinpflaster, etwas uneben	Q2+ -7734,87287 -8096,87386 -8527,87454
+Bredereiche: Mitte Kopfsteinpflaster, Ränder Verbundsteinpflaster	Q1 -2175,81732 -2148,81554 -1990,81230 -2100,81061 -2331,80975 -2359,80862
+Dannenwalde - Bredereiche [Berlin - Kopenhagen]: Asphalt	Q0 -5525,74800 -5541,75053 -5514,75209 -5433,75874 -5182,77209 -5062,77525 -5230,77645 -4778,78424 -4299,79234 -4088,79514 -4015,79583 -3857,79663 -3692,79849 -3525,79877 -3112,80075 -2608,80507 -2359,80862
+Dannenwalde (Umfahrung): Verbundsteinpflaster, Asphalt, unbefestigte Stelle	Q1- -5713,74671 -5718,74649 -5790,74599 -5814,74539 -5836,74529 -5862,74553
 ######################### User Contributions #################################
 #: by: osm vvv
 Wilhelmstr. (Dallgow-Döberitz): Asphalt	Q0 -13426,14823 -13375,13886
@@ -7647,7 +7666,7 @@ Pestalozzistr.: Asphalt/Kopfsteinpflaster	Q2 -9754,-2424 -9759,-2438
 #: by: rjoop: vvv
 Burgwall - Marienthal: Asphalt	Q0 1993,71059 1974,71154 1879,71172 1917,71354 1912,71400 1701,71522 1672,71523 857,71554 650,71562
 #: confirmed_by: srt
-Zabelsdorf - Dannenwalde: Asphalt	Q0 -1170,71073 -1987,71562 -2334,71698 -2768,71868
+Zabelsdorf - Dannenwalde: Asphalt	Q0 -1170,71073 -1753,71422 -1987,71562 -2334,71698 -2768,71868
 #: confirmed_by: email@spathnagel.de ("asphaltiert")
 Gransee - Meseberg: Asphalt	Q0 -7749,66036 -7920,65807 -8112,65637 -8621,65300 -9187,65205 -9408,65119 -9666,64913 -9772,64718 -9799,64585 -9979,64409 -10150,64386 -10274,64271 -10432,64236 -10484,64174 -10470,63915 -10833,63011
 #: note: auf der westlichen Seite
@@ -8262,10 +8281,10 @@ Freienhagener Weg - Nassenheider Weg: Asphalt	Q0 -653,42781 -642,42775 -578,4274
 Friedrichsthaler Weg: Sandweg	Q3 1514,43129 1815,43212 1862,43239 2001,43409
 #: confirmed_by: srt
 (Grabowsee - Bernöwe): Asphalt	Q0 2206,42386 3965,44290 4465,44532 4638,44659
-#: corrected_by: srt (Asphalt -> ...)
-Oder-Havel-Kanal (Westufer): Schotterweg	Q1- 1317,40350 1328,40378 1330,40483 1325,40509
+#: corrected_by: srt (Asphalt -> Schotterweg; mittlerweile neu asphaltiert)
+Oder-Havel-Kanal (Westufer): Asphalt	Q0 1317,40350 1328,40378 1330,40483 1325,40509
 #: confirmed_by: srt
-Oder-Havel-Kanal (Westufer): Asphalt	Q0 1325,40509 1356,41871 1381,42120 1483,42412 1601,42604 1715,42726 1790,42810 1762,42849
+Oder-Havel-Kanal (Westufer): Asphalt	Q0 1325,40509 1356,41871 1381,42120 1483,42412 1601,42604 1715,42726 1790,42810 1772,42835 1762,42849
 Schwarzer Weg: mäßiger bis schlechter Sandweg	Q2 3345,41629 3167,41284 2335,39725
 Schmachtenhagen - Bernöwe: Asphalt	Q0 4696,40926 4592,41098 4581,41115 4490,41251 4353,41568 4160,41835 4112,41939 4035,42443 4037,42653 4082,42854 4042,43095 4195,43501 4457,43957 4637,44431 4638,44659
 Schmachtenhagen - Grabowsee: sehr schlechter Asphalt	Q2 3946,41517 3917,41535 3648,41520 3504,41560 3345,41629 3031,41918 2665,42145 2498,42207 2373,42235 2206,42386
