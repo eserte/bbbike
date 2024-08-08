@@ -611,10 +611,11 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 1
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024)
 #: note: Da der Königsplatz am 6.7.2024 weiterhin gesperrt sein wird, wird es hier erstmal keinen Straßenbahnverkehr geben.
 #: also_indoor: traffic (H,W)
-#: last_checked: 2024-07-08 (okas) vvv
+#: last_checked: 2024-08-05 (krickstadt) vvv
 #: next_check: 2024-08-15 vvv
 #: valid: -20240815 vvv
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
+#: XXX hier kann man möglicherweise mittlerweile illegal abkürzen
 Michael-Brückner-Str.: Umwege an der Einmündung Brückenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865
 #: valid ^^^
 #: next_check ^^^
@@ -1150,7 +1151,7 @@ Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 10
 #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
 #: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
 #: osm_watch: way id="156800019" version="6"
-#: last_checked: 2024-07-13
+#: last_checked: 2024-08-08 (daf)
 #: check_frequency: 60d
 Diesterwegstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q3::inwork 12060,15141 11995,15012
 # 

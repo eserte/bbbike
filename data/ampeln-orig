@@ -125,7 +125,7 @@ Michaelbrücke	F::inwork 11676,11839
 #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024) (bis 15.08.2024)
 #: source_id: viz2021:13.509893,52.456325,14.06.2024,14:49 (bis 15.08.2024) (inaktiv)
 #: note: etwa 20m südöstlich
-#: last_checked: 2024-07-06
+#: last_checked: 2024-07-29 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2024-08-15
 #: valid: -20240815
@@ -4366,11 +4366,14 @@ Bahn kommt ca. halbstündlich	B 40222,103642
 	B 44496,-51922
 # 
 #: by: https://berliner-abendblatt.de/berlin-news/grosses-bauvorhaben-in-luebbenau-startet-id227435 (Bahnübergänge werden beseitigt, bis Ende 2027)
+#: by: https://www.rbb24.de/wirtschaft/beitrag/2024/08/brandenburg-luebbenau-bahn-unterwasser-baustelle-unterfuehrung-taucher.html (bis Ende 2026)
 #: osm_watch: node id="440824347" version="10"
-#: next_check: 2027-12-31
+#: osm_watch: way id="1291223017" version="2"
+#: osm_watch: way id="56672802" version="5"
+#: next_check: 2026-12-31
 	B 49226,-59451
 #: osm_watch: node id="1492003972" version="8"
-#: next_check: 2027-12-31
+#: next_check: 2026-12-31
 	B 50161,-60073
 # 
 	B 50153,-67024

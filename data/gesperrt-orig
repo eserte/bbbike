@@ -1882,7 +1882,7 @@ Marktstr.	1s:q4 -8714,86352 -8806,86379 -8787,86427 -8698,86400
 Alte Poststr.	1 -8806,86379 -8850,86390 -8903,86328
 Fürstenberg	1 -8786,85877 -8764,85874 -8690,85638
 Fürstenberg	1 -8690,85638 -8799,85690
-Fürstenberg	1 -8899,85749 -9028,85866
+# REMOVED (stimmt nicht (mehr?)) --- Fürstenberg	1 -8899,85749 -9028,85866
 Fürstenberg	1 -9028,85866 -8959,85869 -8847,85920 -8800,85923
 Markt (Neustrelitz)	1 -14823,106096 -14782,106096 -14747,106096 -14745,106058 -14745,106011 -14780,106011 -14821,106013 -14824,106060 -14823,106096
 Schönermark	1 54542,78720 54850,78769 55047,78740 54850,78692 54542,78720
@@ -3904,11 +3904,11 @@ Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 1900
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
 #: osm_watch: way id="1106303945" version="7"
-#: osm_watch: way id="4543436" version="34"
+#: osm_watch: way id="4543436" version="35"
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch: note 4126450 4
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2024-07-05
+#: last_checked: 2024-08-07 (osm)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4529,14 +4529,15 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1707775993488855468#m (Brücke wird eingehoben)
 #: by: https://my.greenprofi.de/bauprojekte/1323594 (alte Ausschreibung, Bauausführung: 12 Monate)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1790700693709279405 (Einschränkung auf der A114 nur bis 21.05.2024)
+#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=765099#post765099
 # REMOVED (im del-Changeset kommentiert) --- #: osm_watch: way id="298416172" version="9"
 #: osm_watch: way id="43205335" version="3"
 #: osm_watch: way id="298416172" version="12"
 #: osm_watch[closed]: note 4100166 2
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv)
 #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv)
-#: XXX wird abgerissen und neu gebaut
-#: last_checked: 2024-07-06 (mapillary)
+#: XXX Rampen auf Westseite mit Verbundsteinpflaster, auf Ostseite mit welligen Asphalt, parallel zur Autobahn
+#: last_checked: 2024-08-07 (daf)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-06-30
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734 13008,21783
@@ -5031,7 +5032,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="21"
-#: last_checked: 2024-07-08 (okas)
+#: last_checked: 2024-08-05 (krickstadt)
 #: check_frequency: 60d
 #: next_check: 2024-08-15
 # REMOVED --- #: next_check: 2024-02-02

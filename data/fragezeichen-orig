@@ -1406,7 +1406,7 @@ Messedamm: Verbesserung -> vermutlich Radspuren? in beiden Richtungen oder nur a
 #: XXX einige wenige Meter wurden provisorisch mit unebenen Asphalt versehen, vermutlich nur zur "Gefahrenabwehr"
 #: osm_watch: way id="505566314" version="17"
 #: osm_watch: way id="824819927" version="8"
-#: last_checked: 2024-05-23 (mapillary)
+#: last_checked: 2024-08-06 (mapillary)
 #: check_frequency: 120d
 Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361,14384 1420,14369 1479,14343 1709,14243 1932,14146 2087,14078
 # REMOVED (weggekürzt) --- Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 2087,14078 2211,14074 2301,14078 2795,14161
@@ -3101,6 +3101,7 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/voraussichtlich-bis-2025-soll-die-weserstrasse-zur-fahrradstrasse-umgestaltet-werden_a388723
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/bauarbeiten-auf-der-weserstrasse_a401051 (zwischen Innstr. und Wildenbruchstr. Restarbeiten bis Ende 2023, Markierungsarbeiten im Frühjahr 2024)
 #: by: https://www.berliner-woche.de/bezirk-neukoelln/c-verkehr/was-in-diesem-jahr-geplant-ist_a414779 (Fertigstellung zwischen Fuldastr. und Innstr. bis November 2023)
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/im-september-soll-neuer-radstreifen-fertig-sein_a422155 (Erwähnung, "in rund drei Jahren" (ab Sommer 2024))
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
 #: osm_watch: way id="36738527" version="45"
@@ -3145,12 +3146,13 @@ Oderstr.: Planung einer Fahrradstraße (nördlicher Abschnitt)	?::projected 11472,
 #: by: https://www.berliner-woche.de/bezirk-neukoelln/c-verkehr/senatorin-gibt-gruenes-licht-fuer-sonnenallee-und-hermannstrasse_a388366
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8683 (Anfrage)
 #: by: https://www.berliner-woche.de/bezirk-neukoelln/c-verkehr/was-in-diesem-jahr-geplant-ist_a414779 (Arbeiten zwischen August und Oktober 2024)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1472806.php (Arbeiten ab Mitte August 2024; "Flexpoller", Leitboys, Schwellen)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1472806.php (Arbeiten ab Mitte August 2024; Fertigstellung im September 2024; "Flexpoller", Leitboys, Schwellen)
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/im-september-soll-neuer-radstreifen-fertig-sein_a422155
 #: source_id: viz2021:13.47618,52.462748,22.05.2024,07:00 (haben die Bauarbeiten etwas mit dem Radweg zu tun? bis 21.06.2024) (inaktiv)
 #: last_checked: 2024-07-02 (mapillary)
-#: check_frequency: 120d
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
-#: next_check: 2024-10-31
+#: next_check: 2024-09-30
 Sonnenallee: geschützer Radfahrstreifen im Neuköllner Abschnitt geplant	?::projected 15505,6342 15452,6384 15429,6403 15334,6492 15275,6554 15229,6602 15146,6690 15058,6784 14803,7056 14752,7108 14693,7168
 # 
 #: by: https://api.fixmyberlin.de/api/projects/302
@@ -3319,6 +3321,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): Qualität? Ist hier das Radfahren erl
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/berliner-landespolitik-im-fokus-zum-ausbau-der-a100_a410175 (Abschluss im Juni 2025)
 #: by: https://www.tagesspiegel.de/berlin/verlangerung-der-a100-in-berlin-eroffnungstermin-nun-wohl-im-juni-2025-11177887.html
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2024/pressemitteilung.1457459.php
+#: source_id: viz2021:13.460605,52.471641,09.08.2024,07:00 (Bauarbeiten in der Sonnenallee, bis 27.09.2024)
 #: XXX -> strassen_bab-orig, wenn fertig
 #: XXX vermutlich wird es weitere begleitende Wege geben, die hoffentlich für Radfahrer befahrbar sein werden (bis zur Grenzallee? zwischen Kiefholzstr. und Görlitzer Damm auf der westlichen Seite der Autobahn?) (bis Am Treptower Park allerdings nicht, da ist kein Platz mehr übrig)
 #: next_check: 2025-06-30
@@ -4276,7 +4279,7 @@ Bouchéstr.: Prüfung einer Fahrradstraße	? 13188,9134 13298,9252 13357,9313 13489
 #: osm_watch: way id="33492395" version="20"
 # REMOVED (entfernt) --- #: osm_watch: way id="58648979" version="12"
 #: osm_watch: way id="1092954638" version="8"
-#: last_checked: 2024-02-17
+#: last_checked: 2024-08-06 (mapillary)
 #: check_frequency: 180d
 Wundtstr./Horstweg: "Qualifizierung" des Stadtplatzes; wird sich etwas für Radfahrer ändern?	?::projected 2888,11670 2910,11697 2869,11690 2888,11670
 # 
@@ -4954,6 +4957,8 @@ Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	?::projected 24895
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9390 (Anfrage)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Umsetzung 2022 unwahrscheinlich)
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/fussgaengerueberweg-an-marzahner-promenade-verzoegert-sich_a403272 (Frühling 2024)
+#: source_id: bvg2024:191#HIM_FREETEXT_234444
+#: source_id: bvg2024:192#HIM_FREETEXT_234443
 #: osm_watch: note 4276325 4
 #: osm_watch: node id="10750878558" version="3"
 #: priority: #D
@@ -5296,20 +5301,7 @@ Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßn
 # REMOVED (realisiert) --- #: next_check_id: CURTIUS-2020 --- #: by: http://www.berliner-woche.de/lichterfelde/bauen/anwohner-kritisiert-zebrastreifen-an-der-kreuzung-curtiusstrasse-ecke-baselerstrasse-d140290.html --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Realisierung 2020 geplant) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.944813.php (Bauarbeiten bis 24.07.2020; außerdem wird der Kreuzungsbereich asphaltiert) --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/neuer-ueberweg-fuer-fussgaenger_a277117 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.958167.php --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/kreuzungsumbau-in-curtiusstrasse-spaltet-den-kiez-in-lichterfelde-west_a280681 --- #: source_id: 2147345984 (bis 7.8.2020) --- #: priority: #D --- #: last_checked: 2019-08-04 --- #: next_check: 2020-08-07 --- Curtiusstr./Baseler Str.: Zebrastreifen in Bau	?::inwork 3164,3964 3185,3958 3175,3936
 # REMOVED (-> zebrastreifen) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf --- #: priority: #D --- #: last_checked: 2020-05-03 --- #: check_frequency: 90d --- Kastanienallee/Havelländer Ring: Zebrastreifen in Bau	?::inwork 23617,15369 23643,15392 23673,15383
 # REMOVED (realisiert) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020) --- #: priority: #D --- #: next_check: 2020-06-01 --- Pölnitzweg/Zufahrt L.-Hoffmann-Quartier: Zebrastreifen geplant, wo genau?	?::projected 16106,26651 16149,26556 16202,26464
-# 
-#: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
-#: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
-#: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
-#: osm_watch: note 3820152 5
-#: osm_watch: node id="6543227539" version="3"
-#: osm_watch: node id="6543227540" version="3"
-#: priority: #D
-#: last_checked: 2024-06-20 (Masten stehen schon, noch keine Fahrbahnmarkierungen)
-#: check_frequency: 45d
-Neumann/Elsa-Brändström-Str.: Zebrastreifen in Bau	?::inwork 11510,17172 11536,17153 11570,17129
-# 
+# REMOVED (laut Pressemitteilung realisiert) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095 --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen) --- #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1474253.php (Freigabe) --- #: osm_watch: note 3820152 5 --- #: osm_watch: node id="6543227539" version="3" --- #: osm_watch: node id="6543227540" version="3" --- #: priority: #D --- #: last_checked: 2024-06-20 (Masten stehen schon, noch keine Fahrbahnmarkierungen) --- #: check_frequency: 45d --- Neumann/Elsa-Brändström-Str.: Zebrastreifen in Bau	?::inwork 11510,17172 11536,17153 11570,17129
 # REMOVED (realisiert) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen) --- #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege --- #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (2022) --- #: XXX möglicherweise Bauarbeiten ab 21.3.2022 (Halteverbotschilder, kein Endedatum) --- mittlerweile stehen schon die Masten --- #: priority: #D --- #: last_checked: 2022-08-24 (Streifen wurden bereits gemalt) --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2022-04-21 --- Piesporter Str./Feldtmannstr.: Zebrastreifen in Bau	?::inwork 15225,17572 15239,17599 15265,17573
 # REMOVED (weitgehend fertig) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen) --- #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege --- #: priority: #D --- #: last_checked: 2022-04-12 (mapillary) --- #: check_frequency: 14d --- Pistoriusstr./Heinersdorfer Str.: Zebrastreifen in Bau	?::inwork 12263,16857 12258,16873 12275,16882
 # REMOVED (laut osm fertig) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1097928.php (im Zuge der Bauarbeiten für die Fahrradstraße Stargarder Str.) --- #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege --- #: priority: #D --- #: last_checked: 2021-11-29 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2021-11-30 --- Dunckerstr./Stargarder Str.: Zebrastreifen in Bau, nördliche der Kreuzung in der Dunckerstr.	?::inwork 11629,15467 11595,15460 11581,15493
@@ -6548,7 +6540,7 @@ L25 (Schmölln - Güstow): entsteht hier ein Radweg?	? 55977,100103 56030,100076 5
 #: source_id: viz2021:13.21502,52.56076,05.04.2022,13:25 (Sperrung wegen Bauarbeiten bis zum 25.4.2022) (inaktiv)
 #: XXX erst nach der Bebauung Carossa-Quartier (Baubeginn hier: frühestens 2020)
 #: also_indoor: traffic (G,B)
-#: last_checked: 2023-10-11
+#: last_checked: 2024-08-06 (mapillary)
 # REMOVED --- #: next_check: 2021-03-01
 #: check_frequency: 360d
 Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -2602,16809
@@ -7701,7 +7693,7 @@ Friedrichstr.: Straße soll zwischen Checkpoint Charlie und Schützenstr. "eingezo
 #: XXX Straßen fehlen in Berlin.coords.data (PLZ=13587 für Meta-London-Str. laut DPAG+LOR, ebenso für Marius-Carpentier-Str. laut DPAG+LOR); private Erschließungsstraßen vvv
 #: XXX Wirksamkeit der Benennung zum 11.3.2023 vvv
 #: osm_watch: way id="1092621335" version="2"
-#: last_checked: 2024-07-05 vvv
+#: last_checked: 2024-08-06 (mapillary) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-10-09 vvv
 #: osm_watch: way id="367781611" version="9"
@@ -8323,7 +8315,7 @@ Radickestr.: Planung einer Fahrradstraße	? 20499,3572 20592,3633 20683,3693 2077
 Mittelstr. (Rosenthal): Umbenennungsabsicht, neuer Name Maud-von-Ossietzky-Straße	? 9911,20664 10114,20732
 # 
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12270
-#: last_checked: 2024-07-17 (BVV)
+#: last_checked: 2024-08-06 (mapillary)
 #: check_frequency: 120d
 Carossastr.: mögliche Umbenennung in Elisa-Gérard-Straße	? -2602,16809 -2946,16869
 # 
@@ -8343,6 +8335,10 @@ Carossastr.: mögliche Umbenennung in Elisa-Gérard-Straße	? -2602,16809 -2946,168
 Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?	? 7010,8189 7001,8161 6995,8140
 # 
 Teutonenstr.: Verlängerung; uneingeschränkt befahrbar? Qualität?	? 19929,1593 20186,1522
+# 
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1474634.php
+#: next_check: 2024-08-12
+Hauptstr. (Rosenthal): Modalsperre entsteht	? 8389,21468 8419,21446 8474,21524
 # 
 #: section ^^^
 #: ignore ^^^
@@ -11392,7 +11388,6 @@ Schönermark - Rauschendorf: Qualität?	? -10063,66541 -10039,66700 -10137,66797 -
 Sonnenberg - Rauschendorf: Qualität?	? -12191,67825 -11266,68231 -10685,69040 -10644,69197 -10466,69247
 Rauschendorf - Neulögow: Qualität?	? -10466,69247 -10399,69296 -10393,69338 -10368,69424 -9265,70801 -9253,70868 -9058,71794 -9247,72391 -9125,72659
 Neulögow - Seilershof: Qualität?	? -8775,72512 -8174,72513 -8034,72635 -7937,72970 -7851,73171 -7839,73769 -7486,74341 -7458,74437
-Himmelpfort - Fürstenberg [Berlin - Kopenhagen]: Qualität (zumindest auf der Fürstenberger Seite Kopfsteinpflaster)? Nur für Radfahrer (zumindest auf der Fürstenberger Seite für Autos offen)?	? -3131,85714 -3144,85719 -3865,85958 -3917,85969 -4452,86363 -5920,86778 -6426,86836 -6856,87139 -7057,87219 -7440,87207 -7734,87287 -8096,87386 -8527,87454
 #: XXX am Anfang im Ort Großmenow noch Verbundsteinpflaster (bei osm falsch)
 Großmenow - Strasen [Berlin - Kopenhagen]: Qualität?	? -15648,87296 -15908,87109 -16140,87028 -16366,86883 -16537,86912 -16687,87187 -16975,87387 -17212,87675 -17750,88037 -18287,88225 -18587,88437 -18897,88369
 Strasen - Wesenberg [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? -20371,90012 -20370,89877 -20652,89526 -20654,89372 -20862,89360 -20907,89252 -21112,89187 -21197,89248 -21650,89287 -21650,89125 -21962,89212 -22025,89325 -22475,89287 -22825,89075 -23012,89337 -23020,89541 -22987,90087 -22850,90312 -22825,90625 -22387,90637 -22387,90800 -22587,90875 -23175,90787 -23200,90925 -22812,91737 -22637,92025 -22625,92350 -22675,92437 -22637,92650 -22425,92650 -22050,93775 -22237,94075 -22037,94512 -21362,95487
@@ -11412,6 +11407,7 @@ Köthen - Krausnick [Gurkenradweg]: Qualität?	? 39087,-36914 38750,-37212 38087,-
 Schulstr. (Hennigsdorf): Qualität? Hauptstraße oder Nebenstraße?	? -3049,25593 -3042,25667 -3094,25719
 Fabrikstr. (Hennigsdorf): Qualität? Hauptstraße oder Nebenstraße?	? -3094,25719 -3119,25786 -3063,26112 -3218,26335
 Maurerstr. (Hennigsdorf): Qualität? Hauptstraße oder Nebenstraße?	? -3218,26335 -3254,26516 -3300,26587 -3313,26931 -3347,27389 -3484,27387
+#: XXX laut osm asphalt+excellent
 Bei Liebenwalde an der Havel: Qualität?	? 7037,51950 7107,52868 7817,53807 7920,54101
 Görke - Bossin: Qualität (am nördlichen Ende ein Plattenweg)?	? 54219,165539 54418,164734 54493,164609
 #: XXX laut osm "unpaved"

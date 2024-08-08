@@ -15126,13 +15126,13 @@ EOF
 EOF
      },
      { from  => 1720470111, # 1247723876, # 2009-07-16 07:57
-       until => $isodate2epoch->("2024-08-30 17:00:00"), # undef, # 1249077599, # 2009-07-31 23:59
+       until => $isodate2epoch->("2024-09-14 17:00:00"), # undef, # 1249077599, # 2009-07-31 23:59
        #text  => 'Steglitzer Damm (Steglitz) Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt (bis Ende 07.2009)',
-       text  => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende August 2024',
+       text  => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 14.09.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: IM_013591 (inaktiv)
-#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024) (bis 30.08.2024)
+#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024) (bis 30.08.2024) (bis 14.09.2024)
 #: source_id: viz2021:13.360599,52.446803,11.07.2024,14:26 (Einschränkung in der anderen Richtung, bis 01.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024) (bis 11.07.2024)
 #: source_id: bvg2024:282#HIM_FREETEXT_230965 (bis 31.08.2024)
@@ -15141,7 +15141,7 @@ EOF
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2024-08-06 (traffic)
 #: check_frequency: 30d
-#: next_check: 2024-08-30
+#: next_check: 2024-09-14
 	q4::inwork; 7532,4605 7544,4587 7561,4560 7573,4540 7597,4499
 EOF
      },
@@ -30712,6 +30712,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1470416.php (Umbau abgeschlossen)
+#: by: https://www.berliner-woche.de/friedrichshain/c-umwelt/wriezener-park-fertig-saniert_a422077
 # REMOVED (ja) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: XXX "voraussichtlich ab September 2023 können die neuen Wege genutzt werden", aber weitere Bauarbeiten bis Ende Oktober 2023
 #: note: die Sperrung im Mittelteil kann über einen engen und teilweise verwurzelten Trampelpfad umgangen werden, für Radfahrer nur bedingt praktikabel
 # REMOVED --- #: last_checked: 2024-04-11 vvv --- #: check_frequency: 14d vvv
@@ -40691,13 +40692,14 @@ EOF
 EOF
      },
      { from  => 1718044283, # 1691899200, # 2023-08-13 06:00
-       until => $isodate2epoch->("2024-08-18 18:00:00"), # 1692374400, # 2023-08-18 18:00
+       until => $isodate2epoch->("2024-09-20 18:00:00"), # 1692374400, # 2023-08-18 18:00
        #text  => 'Schillerstr.: Bauarbeiten zwischen Fritschestr. und Kaiser-Friedrich-Str., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 18.08.2023 18:00',
-       text  => 'Fritschestr.: Bauarbeiten zwischen Schillerstr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, vom 10.06.2024 07:00 bis 18.08.2024 18:00',
+       text  => 'Fritschestr.: Bauarbeiten zwischen Schillerstr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, vom 10.06.2024 07:00 bis 20.09.2024 18:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.301291,52.5098,14.08.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.30003,52.50977,10.06.2024,07:00 (neu, bis 18.08.2024)
+#: source_id: viz2021:13.30003,52.50977,10.06.2024,07:00 (neu, bis 18.08.2024) (vorfristig inaktiv)
+#: note: bei rbb bis 20.09.2024 verlängert
 # REMOVED --- Schillerstr.	q4::inwork 3460,11441 3339,11433
 Fritschestr.	q4::inwork 3339,11433 3368,11237
 EOF
@@ -41565,6 +41567,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GOERLITZERUFER-2023
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-umwelt/zwei-projekte-gewinnen-regenial-wettbewerb_a421939
 # REMOVED --- #: XXX unklare Verkehrsführung für Radfahrer: teilweise sind provisorische Markierungen auf der Fahrbahn angebracht, aber an der Görlitzer Str. geht die Absperrung über die volle Breite der Fahrbahn
 #: osm_watch: way id="4782403" version="27"
 #: osm_watch: way id="148176599" version="16"
@@ -43152,12 +43155,13 @@ EOF
 #: by: https://pbs.twimg.com/media/GM-UPCQXoAAPE8L?format=jpg&name=large (Winckelmannstr.)
 #: note: laut Baustellenplakat (siehe bahninfo-forum) nur bis 05.07.2024, oder gibt es da nur eine Änderung der Verkehrsführung?
 #: note: laut rbb bis 15.8.2024 (go with it)
-#: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024)
+#: note: bei VIZ seit dem 8.8.2024 inaktiv (zu früh?)
+#: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024) (inaktiv)
 #: source_id: viz2021:13.50508,52.44526,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
 Sterndamm: gemeinsamer Rad- und Gehweg	q3::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
 Winckelmannstr. am Sterndamm	q4::inwork 17428,4503 17476,4337
 Trützschlerstr.	q2::inwork 17471,4570 17612,4460
-#: source_id: viz2021:13.506038,52.441227,08.05.2024,07:00 (Winckelmannstr., bis 08.08.2024)
+#: source_id: viz2021:13.506038,52.441227,08.05.2024,07:00 (Winckelmannstr., bis 08.08.2024) (inaktiv)
 #: source_id: viz2021:13.5056,52.44039,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
 Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979 17465,3768
 #: by: krickstadt
