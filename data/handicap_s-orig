@@ -613,7 +613,7 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 1
 #: also_indoor: traffic (H,W)
 #: last_checked: 2024-08-05 (krickstadt) vvv
 #: next_check: 2024-08-15 vvv
-#: valid: -20240815 vvv
+#: valid: -20240817 vvv
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
 #: XXX hier kann man möglicherweise mittlerweile illegal abkürzen
 Michael-Brückner-Str.: Umwege an der Einmündung Brückenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865
@@ -1140,7 +1140,7 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 Königsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -197,2634 -155,2658
 # 
 #: next_check_id: SCHLETTSTADTER-2024
-#: last_checked: 2024-05-05
+#: last_checked: 2024-08-09
 #: check_frequency: 90d
 Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 1077,3753 1422,3637 1485,3630
 # 
@@ -4978,7 +4978,7 @@ Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: einige Fußgänger	q1 16
 Lugierring: einige Fußgänger	q2 20162,929 20116,836 20100,801
 Lugierring: einige Fußgänger	q2 20116,836 20142,824
 #: XXX bleibt es beim Provisorium?
-#: osm_watch: way id="862863229" version="2"
+#: osm_watch: way id="862863229" version="3"
 #: last_checked: 2024-04-07
 #: check_frequency: 180d
 (Lugierring - Bohnsdorfer Weg): provisorisch, schmal	q3- 20162,929 20192,975

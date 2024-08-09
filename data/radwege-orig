@@ -338,7 +338,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-08-06 vvv
+#: last_checked: 2024-08-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -2424,7 +2424,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="21"
-#: last_checked: 2024-07-18 (mapillary)
+#: last_checked: 2024-08-09
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -2530,13 +2530,17 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1411,4654 1441,4741
 Gehwegplatten	RW1; 1479,4853 1511,4955
 neu asphaltiert	RW1; 1511,4955 1573,5152
 Gehwegplatten	RW1; 1573,5152 1607,5259 1640,5383 1652,5426
-	RW1; 1652,5426 1714,5722 1736,5850 1746,5922 1757,5976 1862,6297 1894,6387 1904,6415
+	RW1; 1652,5426 1714,5722 1736,5850 1746,5922 1757,5976
+neu asphaltiert, 2m breit	RW1; 1757,5976 1862,6297
+	RW1; 1862,6297 1894,6387 1904,6415
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1033005.php
 #: by: https://abendblatt-berlin.de/2020/12/23/steglitz-zehlendorf-mehr-sicherheit-fuer-radfahrer-an-der-clayallee/
 #: by: https://www.berliner-woche.de/dahlem/c-verkehr/radweg-umbau-abgeschlossen_a297254
 #: note: angrenzender Parkstreifen hat einen Sicherheitsstreifen von 0,75m, um Dooring-Unfälle zu vermeiden
 neu asphaltiert, 2m breit	RW1; 1904,6415 1918,6456 1949,6539 1954,6567 1960,6826
-	RW1; 1960,6826 1960,6986 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561
+	RW1; 1960,6826 1960,6986
+neu asphaltiert, 2m breit	RW1; 1960,6986 1959,7107
+	RW1; 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561
 # 
 	RW4;RW3 9811,16112 10005,16150 10045,16157
 auf der Radspur stehen regelmäßig wartende Autos vor dem BSR-Recyclinghof	RW4; 10045,16157 10301,16186
@@ -7080,8 +7084,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 824,2210 809,2309 790,2
 	RW1; 824,2210 846,2130 980,1893 1025,1813 1080,1637
 	RW1;RW1 1080,1637 1142,1350 1181,1169 1207,1051 1248,871 1267,789 1286,704 1304,537 1322,352 1345,184
 	RW6;RW6 882,396 910,278
-	RW1;RW1 1283,4260 1385,4138 1442,4065
-altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 1442,4065 1451,4026 1462,3906 1474,3688 1485,3630 1504,3555 1552,3460
+altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 1283,4260 1385,4138 1442,4065 1451,4026 1462,3906 1474,3688 1485,3630 1504,3555 1552,3460
 	RW1;RW1 10148,1023 10162,1054 10228,1194 10329,1231
 	RW6;RW6 10659,1370 10737,1397 10816,1411
 	RW6;RW6 10737,1397 10795,1251

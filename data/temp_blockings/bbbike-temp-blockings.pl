@@ -32006,7 +32006,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
-       until => undef, # $isodate2epoch->("2024-02-05 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       until => 1723241439, # undef, # $isodate2epoch->("2024-02-05 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
        text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Mitte Juli 2024, vermutlich noch länger',
        type  => 'handicap',
        data  => <<EOF,
@@ -32038,16 +32038,12 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork; 3934,4441 3643,4232
 # REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
 # REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
-#: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
-#: last_checked: 2024-06-22 vvv
-#: next_check: 2024-07-12 vvv
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2024-06-22 vvv --- #: next_check: 2024-07-12 vvv
 # REMOVED (hier nicht mehr) ---	q3::inwork; 4214,4595 4039,4500
 # REMOVED (hier nicht mehr) --- Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 # REMOVED (hier nicht mehr) --- Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
 zwischen Moltkestr. und Tietzenweg	q4::inwork; 3934,4441 3643,4232
-#: next_check ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # REMOVED (hier nicht) --- q4::inwork 4214,4595 4515,4760
 # REMOVED --- #: note: Einbahnstraßenregelung, bis 30.6.2022 ---	q4::inwork; 3643,4232 3523,4139
 # REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
@@ -38331,7 +38327,7 @@ EOF
 # REMOVED --- #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
 #: last_checked: 2024-07-17
 #: check_frequency: 30d
-#: next_check: 2024-08-15
+#: next_check: 2024-08-17
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
      },
@@ -44084,13 +44080,13 @@ EOF
 EOF
      },
      { from  => 1722747600, # 2024-08-04 07:00
-       until => 1729872000, # 2024-10-25 18:00
+       until => 1723240772, # 1729872000, # 2024-10-25 18:00
        text  => 'Prinzregentenstr.: Brückenarbeiten zwischen Handjerystr. und Wexstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 05.08.2024 07:00 bis 25.10.2024 18:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.33276,52.47726,05.08.2024,07:00 (bis 25.10.2024)
 #: also_indoor: traffic (H,G,B,T,W)
-#: add_fragezeichen: Sind Radfahrer und Fußgänger von der Sperrung betroffen?
+# REMOVED (nein, nur der MIV) --- #: add_fragezeichen: Sind Radfahrer und Fußgänger von der Sperrung betroffen?
 	2::inwork 5630,7875 5632,8024
 EOF
      },

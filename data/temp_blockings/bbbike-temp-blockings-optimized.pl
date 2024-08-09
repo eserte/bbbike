@@ -4671,57 +4671,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
-#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-#: by: https://viz.berlin.de/2021/05/verkehrsvorschau-310521/ (Fuß- und Radverkehr ist frei)
-#: by: https://www.openstreetmap.org/note/3032478 (nicht mehr gesperrt!)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/18-12-00003_anwohnerinformation-ueber-trink-und-abwasserauswechslung.pdf (bis Juni 2023)
-# REMOVED --- #: XXX laut osm-Notiz nicht mehr gesperrt --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: source_id: 2147345834 (inaktiv)
-#: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021) (inaktiv)
-#: source_id: 2147347233 (bis 23.12.2021) (inaktiv)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022) (inaktiv)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022) (inaktiv)
-#: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
-#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv) (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023) (bis 31.1.2023) (bis 30.11.2023) (bis 20.7.2023, Gesamtzeitraum bis 11/2023) (inaktiv)
-#: source_id[inactive]: bvg2021:188#BVG259885_0
-#: source_id[inactive]: bvg2021:188#BVG323876_0
-#: source_id: viz2021:13.306741,52.446776,20.07.2023,07:00 (bis 30.11.2023, zwischen Moltkestr. und Tietzenweg) (inaktiv) (bis 22.12.2023) (bis 05.01.2024) (bis 19.01.2024) (bis 05.02.2024, im Anschluss weitere Arbeiten) (bis 31.05.2024 + weitere Arbeiten) (bis 12.07.2024) (bis 29.06.2024 + weitere Arbeiten) (bis 05.07.2024) (bis 12.07.2024) (inaktiv)
-#: source_id: viz2021:13.30246,52.44494,31.05.2024,10:09 (bis 12.07.2024) (inaktiv)
-# REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
-#: also_indoor: traffic (ex-H,G,ex-B[weiter westlich],W) vvv
-#: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
-# REMOVED --- #: XXX NEW	Gardeschützenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straße: Leitungsbau,Vollsperrung, Fußverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
-# REMOVED (hier nicht mehr) --- #: note: nur etwa 100m, deshalb q3 statt q4 ---	q3::inwork 4515,4760 4214,4595
-#: note: Einbahnstraßenregelung, Bauarbeiten laut Baustellenschild bis September 2022
-# REMOVED (doppelt) ---	q4::inwork; 4214,4595 4039,4500
-# REMOVED (doppelt) ---	q4::inwork; 4039,4500 3934,4441
-# REMOVED (hier nicht) ---	q4::inwork; 3934,4441 3643,4232
-# REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
-# REMOVED (beendet?) ---	q4::inwork; 3643,4232 3523,4139
-#: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
-#: last_checked: 2024-06-22 vvv
-#: next_check: 2024-07-12 vvv
-# REMOVED (hier nicht mehr) ---	q3::inwork; 4214,4595 4039,4500
-# REMOVED (hier nicht mehr) --- Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
-# REMOVED (hier nicht mehr) --- Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
-zwischen Moltkestr. und Tietzenweg	q4::inwork; 3934,4441 3643,4232
-#: next_check ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-# REMOVED (hier nicht) --- q4::inwork 4214,4595 4515,4760
-# REMOVED --- #: note: Einbahnstraßenregelung, bis 30.6.2022 ---	q4::inwork; 3643,4232 3523,4139
-# REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
-# REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
-#: also_indoor ^^^
-',
-         'from' => 1622356200,
-         'id' => 3261,
-         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Mitte Juli 2024, vermutlich noch länger',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6177,7 +6127,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 # REMOVED --- #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
 #: last_checked: 2024-07-17
 #: check_frequency: 30d
-#: next_check: 2024-08-15
+#: next_check: 2024-08-17
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
          'from' => undef,
@@ -6936,17 +6886,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
          'type' => 'handicap',
          'until' => 1774972800
        },
-       {
-         'data' => '#: next_check_id: ZOSSENB246-2023
-#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024)
-	2::inwork 13526,-20548 13412,-20513 13271,-20531
-',
-         'from' => 1716674400,
-         'id' => 3913,
-         'text' => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 27.05.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1723212000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8186,16 +8126,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 246001321 (bis 09.08.2024)
-	2::inwork 27822,49878 27566,49942
-',
-         'from' => 1721541600,
-         'id' => 4117,
-         'text' => 'Finowfurt, B167: Sanierung der Autobahnbrücke), Sperrung, evtl. sind auch Radfahrer betroffen, 22.07.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1723212000
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.552614,52.434372,18.07.2024,10:00 (hier nur Kfz-Verkehr, bis 30.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1813903899440410995
@@ -8317,18 +8248,7 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.33276,52.47726,05.08.2024,07:00 (bis 25.10.2024)
-#: also_indoor: traffic (H,G,B,T,W)
-#: add_fragezeichen: Sind Radfahrer und Fußgänger von der Sperrung betroffen?
-	2::inwork 5630,7875 5632,8024
-',
-         'from' => 1722747600,
-         'id' => 4129,
-         'text' => 'Prinzregentenstr.: Brückenarbeiten zwischen Handjerystr. und Wexstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 05.08.2024 07:00 bis 25.10.2024 18:00',
-         'type' => 'gesperrt',
-         'until' => 1729872000
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (B,T)
 #: add_fragezeichen: Gibt es die Baustelle noch immer?

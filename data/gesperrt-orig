@@ -4219,7 +4219,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 # 
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
-#: osm_watch: way id="1115686082" version="3"
+#: osm_watch: way id="1115686082" version="5"
 #: last_checked: 2024-05-27 (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23
@@ -4229,7 +4229,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: by: https://www.deutsches-architekturforum.de/thread/14770-wilmersdorf-halensee-grunewald-schmargendorf-kleinere-projekte/?postID=757826#post757826
 #: source_id: viz2021:13.33184,52.48035,31.07.2023,06:00 (Komplettsperrung bis 04.08.2023) (inaktiv)
 #: note: nur kurzer Einbahnstraßenabschnitt, etwa 20-30m
-#: last_checked: 2024-06-26 (architektur-urbanistik)
+#: last_checked: 2024-08-09
 #: check_frequency: 120d
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 5522,8024 5521,8087
 # REMOVED (hier nicht) --- Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5521,8087 5519,8159 5560,8204
@@ -4921,7 +4921,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 #: next_check_id: DRESDNERBAHN-2021
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: XXX laut Baustellenschild Erneuerung der EÜ Attilastr. bis 2023
-#: osm_watch: way id="588431071" version="7"
+#: osm_watch: way id="588431071" version="8"
 #: osm_watch: way id="696227207" version="4"
 #: source_id: viz2021:13.3621,52.447308,22.12.2020,10:00 (angrenzende Attilastr., bis 31.7.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile inaktiv)
 #: source_id: viz2021:13.361171,52.446982,10.11.2023,17:30 (angrenzende Attilastr., Brückenarbeiten, bis 12.11.2023) (inaktiv)
@@ -5010,9 +5010,10 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,793943#msg-793943
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (signalisierter Fußgängerüberweg Höhe Ecksteinweg ab Ende März 2024)
 #: by: https://nachgefragt.bvg.de/faq-schoeneweide/ (zum Zugang Schwarzer Weg --- ungewiss, ob es diesen noch geben wird)
+#: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20240809 (Inbetriebnahme am 17.8.2024)
 #: last_checked: 2024-07-17 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2024-08-15 vvv
+#: next_check: 2024-08-17 vvv
 #: osm_watch: way id="1085382250" version="7"
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17578,5566 17588,5573 17736,5441
 # REMOVED --- #: osm_watch: way id="226163591" version="6"
@@ -5034,7 +5035,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: osm_watch: way id="40451054" version="21"
 #: last_checked: 2024-08-05 (krickstadt)
 #: check_frequency: 60d
-#: next_check: 2024-08-15
+#: next_check: 2024-08-17
 # REMOVED --- #: next_check: 2024-02-02
 # REMOVED --- #: valid: -20230901
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
