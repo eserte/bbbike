@@ -20,12 +20,14 @@ use warnings;
 
 my $dbfinfo;
 my $dbfcol;
+my $dbfencoding = 'utf-8';
 my $forcelines;
 my $do_int;
 my $do_autoconv;
 my $verbose;
 if (!GetOptions("dbfinfo=s"   => \$dbfinfo,
 		"dbfcol=i"    => \$dbfcol,
+		"dbfencoding=s" => \$dbfencoding,
 		"forcelines!" => \$forcelines,
 		"int|integer!"=> \$do_int,
 		"autoconv!"   => \$do_autoconv,
@@ -57,6 +59,7 @@ $shapefile->set_file($from);
 $shapefile->dump_bbd($to,
 		     -dbfinfo    => $dbfinfo,
 		     -dbfcol     => $dbfcol,
+		     -dbfencoding => $dbfencoding,
 		     -forcelines => $forcelines,
 		     ($do_int ? (-conv => \&do_int) : ()),
 		     ($do_autoconv ? (-autoconv => 1) : ()),
@@ -97,6 +100,10 @@ has to be C<NAME>.
 Use the specified column from the DBase database to set the "name"
 attribute of the generated bbd file. Index is zero-based. Currently
 the option C<-dbfinfo NAME> also has to be set.
+
+=item -dbfencoding encoding
+
+Default encoding is C<utf-8>, but may be changed using this option.
 
 =item -forcelines
 

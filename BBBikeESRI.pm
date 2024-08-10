@@ -3,19 +3,18 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2012,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeESRI;
 use strict;
 use ESRI::Shapefile;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 sub null_conv {
     map {
@@ -120,8 +119,17 @@ sub as_bbd {
     }
 
     my $bbd_preamble = "";
+    my $need_globdir_separator;
     if ($is_polar) {
-	$bbd_preamble .= "#: map: polar\n#:\n";
+	$bbd_preamble .= "#: map: polar\n";
+	$need_globdir_separator = 1;
+    }
+    if ($args{-dbfencoding}) {
+	$bbd_preamble .= "#: encoding: $args{-dbfencoding}\n";
+	$need_globdir_separator = 1;
+    }
+    if ($need_globdir_separator) {
+	$bbd_preamble .= "#:\n";
     }
 
     if ($outfh && length $bbd_preamble) {
