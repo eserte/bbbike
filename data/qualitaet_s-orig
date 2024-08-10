@@ -495,7 +495,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 1 (Fahrradstraße?)
-#: last_checked: 2024-07-13 vvv
+#: last_checked: 2024-08-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: osm_watch: way id="169459736" version="14"
@@ -2698,7 +2698,7 @@ Uferweg: Kopfsteinpflaster	Q2 8011,14096 8001,14096
 Uferweg: Verbundsteinpflaster	Q1 8001,14096 7966,14148 7972,14185
 Uferweg: Kopfsteinpflaster	Q2 7972,14185 7973,14195 7968,14202
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 7968,14202 7804,14445
-(Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
+(Uferweg am Nordhafen): Asphalt, einige Wurzelschäden	Q0- 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
 Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731 1518,20615 1407,20563
 #: XXX Eventuell wird hier auch noch saniert
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10160 (Sanierung der Gabrielenstraße: noch kein Zeitplan)
@@ -2706,7 +2706,7 @@ Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731 1518,20615 1407,20563
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10362
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11387 (Ersuchen)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12250 (Beginn der Baumaßnahme: Herbst 2025)
-#: last_checked: 2022-06-12
+#: last_checked: 2024-08-10
 # REMOVED --- #: check_frequency: 720d
 #: next_check: 2025-10-31
 Gabrielenstr.: mäßiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 1031,20394
@@ -3233,7 +3233,9 @@ Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4076,16017 4089,1597
 # 
 #: by: Igor Smikalla vvv
 #: corrected_by: srt (mittlerweile Wurzelschäden)
-(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
+(Am Hohenzollernkanal): Asphalt, einige teils größere Wurzelschäden	Q1+ 3775,15768 3371,15777
+#: corrected_by: srt (mittlerweile Wurzelschäden)
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
 #: corrected_by: srt (asphaltiert -> Verbundsteinpflaster)
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
 #: corrected_by: srt (mittlerweile Wurzelschäden)
@@ -7452,7 +7454,7 @@ Beatestr.: Asphalt	Q0 -1478,18107 -1478,18407
 Beatestr.: schlechtes Kopfsteinpflaster	Q3 -1478,18407 -1479,18515
 Barschelplatz: Fahrbahn schlechtes Kopfsteinpflaster, Uferweg wassergebundene Decke	Q1 -1478,17889 -1423,17881
 Scharfenberger Str.: schlechtes Kopfsteinpflaster	Q3 -1423,17881 -1346,17937 -1098,18121
-Tegelorter Ufer: schlechtes Kopfsteinpflaster	Q3 -1346,17937 -1197,17860
+Tegelorter Ufer: schlechtes Kopfsteinpflaster	Q3+ -1346,17937 -1197,17860
 Ottilienweg: schlechtes Kopfsteinpflaster	Q3 -1478,18048 -1220,18191
 Theresenweg: schlechtes Kopfsteinpflaster	Q3 -1098,18121 -1220,18191 -1352,18328 -1351,18407
 Am Eulenhorst: Verbundsteinpflaster	Q1 -1787,19341 -1764,19343 -1612,19362 -1584,19363 -1492,19370 -1428,19381
@@ -7494,7 +7496,7 @@ Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 #: priority: #C
 #: source_id: 2147344935 (inaktiv)
 #: source_id: 2147347061 (Leitungsbau, bis 7.5.2021) (inaktiv)
-#: last_checked: 2024-07-13 (mapillary)
+#: last_checked: 2024-08-10
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-05-07
 Veitstr.: Fahrbahn Beton	Q0- 1886,19835 1606,19775 1557,19765
@@ -29407,7 +29409,7 @@ Ersteiner Str.: Beton	Q1 1604,3770 1781,3807 1935,3827
 #: by: https://berliner-abendblatt.de/2022/07/18/huckelpiste-schlettstadter-strasse-wird-saniert/
 #: osm_watch: note 4231879 1
 #: XXX Sanierung ab 2024
-#: note: Laut Baustellenschild der Wasserbetriebe bis Mai 2024
+#: note: Laut Baustellenschild der Wasserbetriebe bis Mai 2024; mittlerweile bis August 2024
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen?
 #: last_checked: 2024-08-09
 #: check_frequency: 90d
@@ -29768,8 +29770,8 @@ Nikischstr.: Kleinsteinpflaster	Q2 1113,8189 1011,8060
 Regerstr.: Kopfsteinpflaster	Q2 937,8113 1011,8060 1092,8009 1176,8000 1277,8064
 (Zur Hagenstr.): Gehwegplatten	Q0 1111,8225 1181,8301
 Spohrstr.: Kopfsteinpflaster	Q2 1363,7997 1274,7866
-#: confirmed_by: srt
-Wildpfad: kleinteiliges, aber unebenes Kopfsteinpflaster	Q2 1741,7920 1709,7848 1664,7773 1621,7741 1509,7700 1274,7866
+#: corrected_by: srt (Q2 -> Q2+)
+Wildpfad: kleinteiliges, aber unebenes Kopfsteinpflaster	Q2+ 1741,7920 1709,7848 1664,7773 1621,7741 1509,7700 1274,7866
 Königsmarckstr.: Kopfsteinpflaster	Q2 2088,7723 1971,7738 1749,7800
 #: note: slight coords corrections
 Kronberger Str.: Kopfsteinpflaster	Q2 1987,7593 1971,7738 1971,7797
@@ -33247,5 +33249,7 @@ Einmündungsbereich asphaltiert	Q0 11418,14290
 Einmündungsbereich asphaltiert	Q0 11380,14316
 Einmündungsbereich asphaltiert	Q0 11331,14350
 Einmündungsbereich asphaltiert	Q0 11316,14360
+Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 2781,2493
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 3011,2487
 #: ignore ^^^
 #: section ^^^

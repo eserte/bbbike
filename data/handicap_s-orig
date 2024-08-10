@@ -252,7 +252,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="1"
-#: last_checked: 2024-06-05
+#: last_checked: 2024-08-10
 #: check_frequency: 150d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
@@ -340,7 +340,7 @@ Schillingbrücke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,1
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-08-05 (daf) vvv
+#: last_checked: 2024-08-10 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -370,7 +370,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-08-02 (webcam)
+#: last_checked: 2024-08-10
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -378,6 +378,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 # REMOVED (Bauarbeiten beendet) --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/schluesseluebergabe-fuers-haus-petri_a420407 --- #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1461126.php --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: XXX verursachende Bauarbeiten sind die am Archäologischen Haus --- #: last_checked: 2024-07-09 (mapillary) --- #: check_frequency: 60d --- Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
 #: by: http://www.deal-magazin.com/news/3/123294/Berlin-Naechste-Projektphase-fuer-das-Mehrreligionenhaus-House-of-One
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf (Einziehung von benachbarten Flurstücken)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
@@ -461,7 +462,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-07-31 vvv
+#: last_checked: 2024-08-10 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -3503,7 +3504,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-08-06
+#: last_checked: 2024-08-10
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4900,7 +4901,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
-#: last_checked: 2024-08-06
+#: last_checked: 2024-08-10
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 

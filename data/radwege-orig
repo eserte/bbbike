@@ -823,7 +823,7 @@ Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 
 	RW1; 4016,17918 3930,17923
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2024-07-13 vvv
+#: last_checked: 2024-08-10 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-04-15 vvv
 	RW8; 3930,17923 3833,17929 3706,17931 3628,17935 3570,17938
@@ -839,7 +839,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 #: note: Scharnweberstraße/Seidelstr./Berliner Str. Richtung Wedding
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben; außerdem Zweirichtungsradweg im Bereich der Seidelstraßenbrücke vvv
-#: last_checked: 2023-12-11 (mapillary) vvv
+#: last_checked: 2024-08-10 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-04-15 vvv
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2015,20336 2044,20289 2109,20188 2169,20095 2224,20007 2268,19919
@@ -2530,17 +2530,17 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1411,4654 1441,4741
 Gehwegplatten	RW1; 1479,4853 1511,4955
 neu asphaltiert	RW1; 1511,4955 1573,5152
 Gehwegplatten	RW1; 1573,5152 1607,5259 1640,5383 1652,5426
-	RW1; 1652,5426 1714,5722 1736,5850 1746,5922 1757,5976
+Gehwegplatten	RW1; 1652,5426 1714,5722 1736,5850 1746,5922 1757,5976
 neu asphaltiert, 2m breit	RW1; 1757,5976 1862,6297
-	RW1; 1862,6297 1894,6387 1904,6415
+Gehwegplatten mit einigen Schäden, Bord gegen Gehweg	RW1; 1862,6297 1894,6387 1904,6415
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1033005.php
 #: by: https://abendblatt-berlin.de/2020/12/23/steglitz-zehlendorf-mehr-sicherheit-fuer-radfahrer-an-der-clayallee/
 #: by: https://www.berliner-woche.de/dahlem/c-verkehr/radweg-umbau-abgeschlossen_a297254
 #: note: angrenzender Parkstreifen hat einen Sicherheitsstreifen von 0,75m, um Dooring-Unfälle zu vermeiden
 neu asphaltiert, 2m breit	RW1; 1904,6415 1918,6456 1949,6539 1954,6567 1960,6826
-	RW1; 1960,6826 1960,6986
+Gehwegplatten, Bord gegen Gehweg	RW1; 1960,6826 1960,6986
 neu asphaltiert, 2m breit	RW1; 1960,6986 1959,7107
-	RW1; 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561
+Gehwegplatten	RW1; 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561
 # 
 	RW4;RW3 9811,16112 10005,16150 10045,16157
 auf der Radspur stehen regelmäßig wartende Autos vor dem BSR-Recyclinghof	RW4; 10045,16157 10301,16186
@@ -5302,8 +5302,8 @@ Gehweg für Radfahrer frei	RW1; -2295,16951 -2414,16975 -2563,17004
 	RW1; -2563,17004 -2667,17026
 Verbundsteinpflaster	RW1; -2667,17026 -2563,17004 -2414,16975 -2295,16951 -2234,16939 -2149,16921 -2087,16909
 asphaltiert	RW1; -2087,16909 -1832,16858
-Verbundsteinpflaster	RW1; -1832,16858 -1771,16841
-	RW3; -1771,16841 -1675,16813
+#: historical_note: früher im ersten Abschnitt Verbundsteinpflaster, im weiteren Abschnitt ein Radstreifen
+asphaltiert, relativ breit	RW1; -1832,16858 -1771,16841 -1675,16813
 Verbundsteinpflaster	RW1; -2728,17038 -2908,17072
 	RW1;RW1 -1654,22119 -1452,21978 -1198,21801 -1178,21786 -1035,21684 -908,21618 -751,21579 -481,21513 -459,21508
 	RW1; -459,21508 -410,21496

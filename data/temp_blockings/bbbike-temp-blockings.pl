@@ -39960,7 +39960,7 @@ EOF
 #: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2024-07-13
+#: last_checked: 2024-08-10
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -39975,7 +39975,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024)
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2024-07-13
+#: last_checked: 2024-08-10
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3267,18767 3008,18464
@@ -41167,14 +41167,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-07-29 00:00:00"), # 1695531600, # 2023-09-24 07:00
-       until => $isodate2epoch->("2024-08-23 17:00:00"), # 1699476063, # undef, # 1698681600, # 2023-10-30 17:00
+       until => $isodate2epoch->("2024-09-01 17:00:00"), # 1699476063, # undef, # 1698681600, # 2023-10-30 17:00
        dont_check_date => 1,
        #text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00, evtl. wird verlängert',
-       text  => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, bis 23.08.2024',
+       text  => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, bis 01.09.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
-#: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024)
+#: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024) (bis 01.09.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
 #: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
 # REMOVED (alte Notizen) --- #: note: bei VIZ inaktiv, tatsächlich noch aktiv --- #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
@@ -41260,12 +41260,13 @@ EOF
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
 #: osm_watch: way id="4543441" version="41"
-#: last_checked: 2024-07-05 vvv
+#: last_checked: 2024-08-10 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-09-18 vvv
-	q2::inwork; 6334,14756 6513,14725 6596,14740 6709,14782
-#: note: Richtung Westen mit ~100m Umweg an der Buchstr., hier nur Gehweg
-	q3::inwork; 6709,14782 6596,14740 6513,14725
+	q2::inwork; 6334,14756 6513,14725 6596,14740
+# REMOVED (hier nicht mehr) ---	q2::inwork; 6596,14740 6709,14782
+# REMOVED (nicht mehr) --- #: note: Richtung Westen mit ~100m Umweg an der Buchstr., hier nur Gehweg ---	q3::inwork; 6709,14782 6596,14740
+	q3::inwork; 6596,14740 6513,14725
 	q3::inwork; 6513,14725 6334,14756
 #: next_check ^^^
 #: check_frequency ^^^
@@ -41333,7 +41334,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2024-07-13
+#: last_checked: 2024-08-10
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 	q3::inwork 4335,17642 4392,17777
@@ -43949,7 +43950,7 @@ EOF
        text  => 'Finowfurt, B167: Sanierung der Autobahnbrücke), Sperrung, evtl. sind auch Radfahrer betroffen, 22.07.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 246001321 (bis 09.08.2024)
+#: source_id: 246001321 (bis 09.08.2024) (inaktiv)
 	2::inwork 27822,49878 27566,49942
 EOF
      },
@@ -44118,6 +44119,18 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.389248,52.445645,05.08.2024,08:00 (bis 16.08.2024)
 	q4::inwork 9428,4419 9562,4412 9668,4403
+EOF
+     },
+     { from  => 1723125720, # 2024-08-08 16:02
+       until => 1727708400, # 2024-09-30 17:00
+       text  => 'Invalidenstr.: Sperrung für Radfahrer zwischen Hessische Str. und Chausseestr., vom 09.08.2024 16:02 bis 30.09.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.382396,52.530372,09.08.2024,16:02 (nur der Radverkehr wird umgeleitet! bis 30.09.2024)
+#: source_id: viz2021:13.3794,52.52949,09.08.2024,17:31 (bis 30.09.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1821911366766084588
+#: by: https://pbs.twimg.com/media/GUi6qtgW4AAgG3O?format=jpg&name=large
+	q4::inwork; 8685,13728 8841,13800 8935,13844
 EOF
      },
     );
