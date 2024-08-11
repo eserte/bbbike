@@ -72,3 +72,19 @@ sub extract_headline {
 }
 
 __END__
+
+=head1 NAME
+
+org2bbd - find org-mode TODO items with geolocations and convert to bbd
+
+=head1 SYNOPSIS
+
+    org2bbd TODO.org > TODO.bbd
+
+=head1 TODO
+
+ * maybe make it public by moving to bbbike?
+ * document pipe together with bbd2gpx
+ * probably a better fallback for the location name would be a string on the same line like the geo link
+
+=cut
