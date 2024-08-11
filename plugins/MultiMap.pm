@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.24;
+$VERSION = 2.25;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -67,8 +67,28 @@ sub register {
 	    };
     }
     $main::info_plugins{__PACKAGE__ . '_OpenStreetMap'} =
-	{ name => 'OpenStreetMap',
-	  callback => sub { showmap_openstreetmap(osmmarker => 0, @_) },
+	{ name => sub {
+	      my %args = @_;
+	      my $current_tag_filter = $args{current_tag_filter}||'';
+	      if ($current_tag_filter eq 'pubtrans') {
+		  'OpenRailwayMap';
+	      } elsif ($current_tag_filter eq 'bicycle') {
+		  'CyclOSM @ OSM';
+	      } else {
+		  'OpenStreetMap',
+	      }
+	  },
+	  callback => sub {
+	      my %args = @_;
+	      my $current_tag_filter = $args{current_tag_filter}||'';
+	      if ($current_tag_filter eq 'pubtrans') {
+		  showmap_openrailwaymap(@_);
+	      } elsif ($current_tag_filter eq 'bicycle') {
+		  showmap_cyclosm_at_osm(@_);
+	      } else {
+		  showmap_openstreetmap(osmmarker => 0, @_);
+	      }
+	  },
 	  callback_3 => sub { show_openstreetmap_menu(@_) },
 	  allmaps_cb => sub {
 	      (
@@ -1076,6 +1096,16 @@ sub showmap_openstreetmap {
 sub showmap_openstreetmap_de {
     my(%args) = @_;
     my $url = showmap_url_openstreetmap(%args, variant => 'de');
+    start_browser($url);
+}
+
+sub showmap_url_cyclosm_at_osm {
+    showmap_url_openstreetmap(@_, layers => 'Y');
+}
+
+sub showmap_cyclosm_at_osm {
+    my(%args) = @_;
+    my $url = showmap_url_cyclosm_at_osm(%args);
     start_browser($url);
 }
 

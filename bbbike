@@ -15039,6 +15039,20 @@ sub show_info {
 		my $scale = int(17 - log(($mapscale_scale)/2907)/log(2) + 0.5);
 		"http://www.google.com/maps/\@$py,$px,${scale}z";
 	    };
+	    my %special_name = (
+		'aerial'     => 'Aerial',
+		'traffic'    => 'Traffic',
+		'pubtrans'   => 'Public Transit',
+		'bicycle'    => 'Bicycle',
+		'streetview' => 'Street View',
+	    );
+	    my %special_url = (
+		'aerial'     => "$normal_url/data=!3m1!1e3",
+		'traffic'    => "$normal_url/data=!5m1!1e1",
+		'pubtrans'   => "$normal_url/data=!5m1!1e2",
+		'bicycle'    => "$normal_url/data=!5m1!1e3",
+		'streetview' => sprintf('https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=%s,%s',$py,$px),
+	    );
 
 	    my $googlemaps_menu = $info_text->Menu(-title => M"Google Maps",
 						   -tearoff => 0);
@@ -15051,20 +15065,30 @@ sub show_info {
 		     },
 		    );
 	    };
-	    $googlemaps_show_url_menu_item->("Aerial",  "$normal_url/data=!3m1!1e3");
-	    $googlemaps_show_url_menu_item->("Traffic", "$normal_url/data=!5m1!1e1");
-	    $googlemaps_show_url_menu_item->("Bicycle", "$normal_url/data=!5m1!1e3");
-	    $googlemaps_show_url_menu_item->('Street View', sprintf('https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=%s,%s',$py,$px));
+	    $googlemaps_show_url_menu_item->($special_name{aerial},     $special_url{aerial});
+	    $googlemaps_show_url_menu_item->($special_name{traffic},    $special_url{traffic});
+	    $googlemaps_show_url_menu_item->($special_name{pubtrans},   $special_url{pubtrans});
+	    $googlemaps_show_url_menu_item->($special_name{bicycle},    $special_url{bicycle});
+	    $googlemaps_show_url_menu_item->($special_name{streetview}, $special_url{streetview});
 	    $googlemaps_menu->separator;
 	    $googlemaps_menu->command
 		(-label => M"Link kopieren",
 		 -command => sub { $copy_link->($normal_url) },
 		);
 
+	    my($linklist_name, $linklist_url);
+	    if (defined $current_tag_filter && $special_url{$current_tag_filter}) {
+		$linklist_name = 'Google Maps (' . $special_name{$current_tag_filter} . ')';
+		$linklist_url  = $special_url{$current_tag_filter};
+	    } else {
+		$linklist_name = 'Google Maps' . ($devel_host ? ' (Original)' : '');
+		$linklist_url  = $normal_url;
+	    }
+
 	    $builtin_links{$key} = {
-		name => 'Google Maps' . ($devel_host ? ' (Original)' : ''),
+		name => $linklist_name,
 		callback => sub {
-		    $open_url->($normal_url);
+		    $open_url->($linklist_url);
 		},
 		callback_3 => sub {
 		    my(%args) = @_;
@@ -15074,7 +15098,7 @@ sub show_info {
 		    Tk->break;
 		},		    
 		($google_photo ? (icon => $google_photo) : ()),
-		tags => [qw(aerial streetview bicycle)],
+		tags => [qw(aerial streetview pubtrans bicycle)],
 	    };
 	}
 
@@ -15118,6 +15142,7 @@ sub show_info {
 			py1 => $py1, # bottom
 			mapscale_scale => $mapscale_scale,
 			tags => \@tags,
+			current_tag_filter => $current_tag_filter,
 		       );
 	    if (($name||'') =~ /last checked: (\d{4}-\d{2}-\d{2})/) {
 		push @args, last_checked => $1;
@@ -15137,7 +15162,11 @@ sub show_info {
 		$need_indentation = 1;
 	    }
 
-	    $info_text->insert("end", $plugin->{name},
+	    my $name = $plugin->{name};
+	    if (ref $name eq 'CODE') {
+		$name = $name->(@args);
+	    }
+	    $info_text->insert("end", $name,
 			       ["link$linkcount", $need_indentation ? 'iconindent' : ()]);
 	    if ($plugin->{using_current_region}) {
 		$info_text->insert('end', " \x{2610}" # BALLOT BOX
