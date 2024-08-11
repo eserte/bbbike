@@ -52,7 +52,7 @@ if (!@locations) {
 binmode STDOUT, ':encoding(utf-8)';
 print <<EOF;
 #: encoding: utf-8
-#: polar: map
+#: map: polar
 #: 
 # Converted from $file at @{[ strftime("%Y-%m-%d %H:%M:%S", localtime) ]}
 # 
