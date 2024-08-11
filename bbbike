@@ -10386,7 +10386,7 @@ sub plotstr {
 	}
 	if ($abk ne 'w') { # XXX get_cache_identifier benutzen
 	    if ((!$dont_set_cache && cache_decider()) ||
-		$abk =~ /^[sl]$/ ||
+		$abk =~ /^[sle]$/ ||
 		$edit_normal_mode # Always cache in edit mode to make "reload all" work
 	       ) {
 		# für nearest_line_points Caching erzwingen
@@ -19222,6 +19222,10 @@ sub make_net {
 		    }
 		}
 	    }
+	    if ($use_faehre) {
+		push @net_source, $str_obj{'e'} || _get_ferry_obj();
+		push @net_source_abk, 'e';
+	    }
 	    while(my($token, $bool) = each %add_net) {
 		next if !$bool;
 		if ($token eq 'custom') {
@@ -19306,9 +19310,10 @@ sub make_net {
 			}
 		    }; warn $@ if $@;
 		}
-		if ($use_faehre) {
-		    $net->add_faehre($str_file{'e'});
-		}
+		## XXX Delete?
+		#if ($use_faehre) {
+		#    $net->add_faehre($str_file{'e'});
+		#}
 	    } elsif ($net_type eq 'us' || $net_type eq 'rus') {
 		my @abk = ($net_type eq 'us' ? qw(u b) : qw(u b r));
 
