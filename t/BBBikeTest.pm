@@ -605,9 +605,9 @@ sub xml_eq {
     SKIP: {
 	    Test::More::skip("simulate skips", 1) if $simulate_skips;
 	    if (!defined $schema_file) {
-		if (!is_in_path('rnv')) {
+		if (!is_in_path('jing')) {
 		    $schema_file = ''; # defined but false
-		    Test::More::skip('rnv needed for XML schema validation, but not available', 1);
+		    Test::More::skip('jing needed for XML schema validation, but not available', 1);
 		} else {
 		    $schema_file = "$testdir/../misc/bbbikecgires.rnc";
 		    if (!-r $schema_file) {
@@ -628,7 +628,7 @@ sub xml_eq {
 		or die $!;
 	    close $tmpfh
 		or die $!;
-	    my @cmd = (qw(rnv -q), $schema_file, $tmpfile);
+	    my @cmd = (qw(jing -c), $schema_file, $tmpfile);
 	    system @cmd;
 	    Test::More::ok(($? == 0), $test_name);
 	}
