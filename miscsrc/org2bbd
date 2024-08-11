@@ -1,0 +1,72 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2024 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use warnings;
+use POSIX qw(strftime);
+
+my $headline_start_rx = qr{^\*+\s+(?:TODO|DONE)\s+};
+
+my $file = shift or die "org mode file?";
+
+my @locations;
+
+open my $fh, '<:encoding(utf-8)', $file
+    or die "Can't open $file: $!";
+my $active_headline;
+while(<$fh>) {
+    if (/$headline_start_rx/) {
+	$active_headline = $_;
+    }
+    if (m{\[\[geo:([-+]?\d+(?:\.\d+)?),([-+]?\d+(?:\.\d+)?)(?:\?z=(\d+(?:\.\d+)?))?\](?:\[(.*?)\])?\]}) {
+	my($lat, $lon, $zoom, $link_title) = ($1,$2,$3,$4); # $zoom not yet used
+	if (!defined $active_headline) {
+	    warn "Found geo URI for $lat/$lon, but without an associated org-mode headline, skipping...\n";
+	    next;
+	}
+	push @locations, {
+	    link_title => (defined $link_title ? $link_title : extract_headline($active_headline)),
+	    lon => $lon,
+	    lat => $lat,
+	};
+    }
+}
+
+if (!@locations) {
+    die "No locations found in $file.\n";
+}
+
+binmode STDOUT, ':encoding(utf-8)';
+print <<EOF;
+#: encoding: utf-8
+#: polar: map
+#: 
+# Converted from $file at @{[ strftime("%Y-%m-%d %H:%M:%S", localtime) ]}
+# 
+EOF
+for my $location (@locations) {
+    my $link_title = $location->{link_title};
+    $link_title =~ s{[\t\n]}{ }g;
+    print "$link_title\tX $location->{lon},$location->{lat}\n";
+}
+
+sub extract_headline {
+    my $headline = shift;
+    $headline =~ s{$headline_start_rx}{}; # TODO/DONE
+    $headline =~ s{\[#A-F\]\s*}{}; # priority
+    $headline =~ s{\s+:.*?:\s*$}{}; # tags
+    $headline;
+}
+
+__END__
