@@ -40862,7 +40862,7 @@ EOF
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-07-30 (bahninfo-forum) vvv
+#: last_checked: 2024-08-11 (krickstadt) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-08-17 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -43537,7 +43537,7 @@ EOF
 EOF
      },
      { from  => 1718085600, # 2024-06-11 08:00
-       until => $isodate2epoch->("2024-09-30 17:00:00"), # 1720796400, # 2024-07-12 17:00
+       until => 1723441837, # $isodate2epoch->("2024-09-30 17:00:00"), # 1720796400, # 2024-07-12 17:00
        dont_check_date => 1,
        text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 12.08.2024 17:00, evtl. auch bis September 2024',
        type  => 'handicap',
@@ -43547,6 +43547,7 @@ EOF
 #: note: Länge der Baustelle: etwa 40m
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1800742824524259711
 #: by: https://pbs.twimg.com/media/GPzFCzlWcAAoKgR?format=jpg&name=large
+#: by: https://pbs.twimg.com/media/GUh0blsWoAAR-uT?format=jpg&name=large (nicht mehr gesperrt)
 	q3::inwork 20302,1613 20366,1479
 EOF
      },
@@ -44139,7 +44140,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.545904,52.542197,12.08.2024,07:00 (bis 06.09.2024)
-	q4::inwork 20226,15512 19960,15337 19875,15324 19768,15361 19681,15405
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1822847981323981227
+#: by: https://pbs.twimg.com/media/GUh9Zq3XwAALRml?format=jpg&name=medium (laut Verkehrszeichenplan keine Ausnahme für Radfahrer, kleinerer Bereich)
+# REMOVED (hier nicht) ---	q4::inwork 20226,15512 19960,15337
+	q4::inwork 19960,15337 19875,15324 19768,15361
+# REMOVED (hier nicht) ---	q4::inwork 19768,15361 19681,15405
 EOF
      },
     );
