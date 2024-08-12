@@ -10029,8 +10029,8 @@ Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1+ 13168,13125 13126,1310
 Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1+ 13168,13013 13126,13104 13103,13153
 Matenzeile: Beton	Q0- 17365,17632 17474,17478 17582,17335 17714,17285
 (Vulkanstr./Landsberger Allee - Große-Leege-Str.): Verbundsteinpflaster	Q1+ 15923,14334 15922,14344 15920,14357
-(Parkplatz an der Altenhofer Str.): Beton	Q0 15675,14360 15516,14445 15367,14512
-(Weg zum Hohenschönhauser Tor): Asphalt	Q0 15367,14512 15225,14545
+(Parkplatz an der Altenhofer Str.): Beton	Q0 15675,14360 15516,14445 15367,14519 15324,14540
+(Weg zum Hohenschönhauser Tor): Asphalt	Q0 15367,14519 15225,14545
 (Anlieferung Hohenschönhauser Tor): Verbundsteinpflaster	Q1 15120,14481 15225,14545 15174,14638
 (Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): Betonplatten	Q1 15256,14237 15249,14218 15221,14198 15225,14150 15204,14087
 (Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): wassergebundene Decke	Q1 15204,14087 15189,14027 15118,13961
@@ -11327,7 +11327,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2024-06-13 vvv
+#: last_checked: 2024-08-12 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -12051,7 +12051,7 @@ Feuerdornweg: unbefestigte Straße	Q2 11008,23572 10887,23796
 Kirschlorbeerweg: unbefestigte Straße	Q2 11069,23647 11028,23624 10927,23816
 # REMOVED (Fahrbahn ist OK) --- Gallwitzallee: schadhafter Radweg sowie Asphalt auf Fahrbahn mit Schäden	Q1 6844,1813 6799,1922 6759,2137
 # REMOVED --- (Parkplatz S-Bhf. Buckower Chaussee): Asphalt	Q0 9200,562 9218,458 9249,434 9296,335 9271,323
-(Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9271,323 9253,370 9178,556
+# REMOVED --- (Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9271,323 9253,370 9178,556
 Zachenberger Str.: Verbundsteinpflaster	Q1+ 19889,9400 19824,9405 19780,9409
 Am S-Bhf. Bellevue: Gehwegplatten	Q1 6689,12632 6516,12650
 Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
@@ -16675,9 +16675,9 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
 #: osm_watch: way id="1033468087" version="2"
-#: last_checked: 2024-06-13
+#: last_checked: 2024-08-12
 #: check_frequency: 60d
-Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
+Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14906,15859 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
 Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15599,15786
 #: by: ^^^

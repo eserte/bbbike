@@ -11249,7 +11249,7 @@ Buddestr. (Tegel)	N 2297,20353 2352,20224 2381,20157 2395,20126 2435,20032 2471,
 (Vorfahrt S-Bhf. Tegel)	N 2381,20157 2398,20166 2384,20196 2371,20225 2352,20224
 (Weg am Stadion Borsigpark)	NN 2436,19606 2498,19682 2482,19787 2495,19808 2492,19897
 Gropiusstr. (Alt-Hohenschönhausen)	N 15876,15670 15825,15547
-Orankeweg	N 14609,15921 14695,15911 14769,15867 14936,15857
+Orankeweg	N 14609,15921 14695,15911 14769,15867 14906,15859 14936,15857
 Orankeweg	N 14967,15885 14994,15861 15313,15858 15395,15852
 Orankeweg	NN 15395,15852 15441,15850
 Orankestr.	N 15441,15850 15599,15786 15659,15759 15799,15701 15876,15670 15996,15620 16331,15486
@@ -11977,14 +11977,11 @@ An der Apostelkirche	N 7275,10418 7298,10430 7322,10495 7312,10505 7281,10510 72
 Lessingstr. (Lichtenrade)	N 10735,137 10613,108 10512,83 10425,67 10300,42 10169,20 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
 Dörfelweg	N 9730,-33 9593,-45 9507,-85
 Eisnerstr.	N 9507,-85 9653,-483 9698,-556
-(Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9271,323
+(ehemaliger Weg zum S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9271,323
 (Buckower Chaussee - Fußgängerbrücke)	NN 9123,533 9160,460
 (Buckower Chaussee - Fußgängerbrücke)	NN 9160,460 9200,450
 (Fußgängerbrücke S-Bhf. Buckower Chaussee)	NN 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 (Fußgängerbrücke - Buckower Chaussee)	NN 9254,413 9239,461 9200,562
-#: osm.highway: service
-(Eisnerstr. - S-Bhf Buckower Chaussee)	N 9271,323 9253,370
-(Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9253,370 9178,556
 (unter der S-Bahn)	NN 9699,-600 9562,-619 9520,-641
 Miethepfad	N 9520,-641 9561,-748 9598,-846
 Poleigrund	N 9156,-883 9340,-829 9561,-748
@@ -13137,12 +13134,12 @@ Bennigsenstr.	N 5813,7774 5957,7773 6195,7775 6209,7765
 Traegerstr.	N 6209,7765 6271,7733 6332,7721 6410,7722 6471,7742
 Lauterstr.	N 5817,7223 5810,7337 5811,7433 5812,7536 5812,7662 5812,7685 5812,7721 5813,7774 5813,7807
 (Vulkanstr./Landsberger Allee - Altenhofer Str.)	NN 15850,14308 15796,14310 15791,14320 15699,14350 15675,14360
-(Parkplatz an der Altenhofer Str.)	N 15675,14360 15516,14445 15367,14512
+(Parkplatz an der Altenhofer Str.)	N 15675,14360 15516,14445 15367,14519 15324,14540
 (Mittelstr./Altenhofer Str. - Landsberger Allee)	N 15539,14493 15528,14470 15516,14445 15500,14416 15468,14430 15425,14360 15430,14272 15430,14262
 (Altenhofer Str. - Landsberger Allee)	N 15698,14386 15769,14355 15841,14351 15920,14357
 (Weg im Altenhofer Dreieck)	NN 15500,14416 15514,14398 15545,14328 15580,14307 15624,14330 15696,14321 15709,14332 15699,14350
 (Weg im Altenhofer Dreieck - Landsberger Allee)	NN 15580,14307 15588,14279
-(Weg zum Hohenschönhauser Tor)	NN 15367,14512 15225,14545
+(Weg zum Hohenschönhauser Tor)	NN 15367,14519 15225,14545
 (Hohenschönhauser Tor)	NN 15225,14545 15066,14579
 (Anlieferung Hohenschönhauser Tor)	NN 15120,14481 15225,14545 15174,14638
 (Am Orankesee)	NN 15856,15924 15815,15939 15758,15932 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
@@ -18646,3 +18643,4 @@ Potsdamer Chaussee: linker Gehweg bis zur Ampel	NN::igndisp -3040,1763 -3019,177
 Richard-von-Weizsäcker-Platz: Gehweg bis Akazienstr.	NN::igndisp 7307,8945 7242,8902 7201,8870
 Sonnenallee: linker Gehweg bis zur Ampel	NN::igndisp 14423,7333 14334,7395
 Blockdammweg: linker Gehweg bis zum Fußgängerbereich in der Parkstadt Karlshorst	NN::igndisp 17729,8850 17699,8843
+Orankeweg -> Hansastr./Orankeweg: linker Gehweg bis zur Überquerungsmöglichkeit, Bordstein	NN::igndisp 14906,15859 14967,15885

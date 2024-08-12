@@ -2481,6 +2481,7 @@ Lindenstr.: Straßenbahnhaltestelle	3nocross 21979,5208 22023,5160 22033,5148 220
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18484,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14686,15608
 Hansastr.: Straßenbahntrasse	3nocross 16460,17214 16525,17253 16578,17285 16837,17440
+Hansastr.: Mittelstreifen	3nocross 14967,15885 14936,15857 14808,15788
 Groß-Berliner Damm: Straßenbahntrasse	3nocross 18930,3703 18884,3752 18856,3783 18826,3816
 Groß-Berliner Damm: Straßenbahntrasse	3nocross 18826,3816 18779,3866 18739,3909
 Groß-Berliner Damm: Mittelstreifen	3nocross 18930,3703 19029,3595 19125,3491
@@ -4618,7 +4619,8 @@ Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,481
 #: last_checked: 2024-07-03 vvv
 #: check_frequency: 180d vvv
 # REMOVED (Sperrung erst weiter hinten) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9473,-92
-Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9178,556
+Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323
+# REMOVED (hier wird es keinen Weg mehr geben) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9253,370 9178,556
 # REMOVED (hier wird die bauzeitliche Umleitung für Fußgänger/Radfahrer sein) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9178,556 9218,458 9178,556
 # REMOVED --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
 #: check_frequency ^^^

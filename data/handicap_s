@@ -1288,7 +1288,7 @@ am Oder-Spree-Kanal: teilweise enger Pfad	q3 29037,-2817 29101,-2794 29457,-2835
 Strandbad	q3 30015,-3906 29783,-3739 29597,-3674
 (Magistratsweg - Maulbeerallee): Fußgänger (Schule)	q1 -6051,12673 -5830,12712 -5613,12750 -5594,12832
 Henrionweg: eng	q3 11154,21760 11145,21698
-(Weg zum Hohenschönhauser Tor): Fußgänger	q1 15367,14512 15225,14545
+(Weg zum Hohenschönhauser Tor): Fußgänger	q1 15367,14519 15225,14545
 (Hohenschönhauser Tor): Fußgänger (Einkaufszentrum)	q4 15225,14545 15066,14579
 (Anlieferung Hohenschönhauser Tor): Lieferverkehr, Fußgänger	q1 15120,14481 15225,14545 15174,14638
 (Weg durch den Geschichtspark): Fußgänger	q1 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470 7651,13447
@@ -1445,7 +1445,7 @@ Fromet-und-Moses-Mendelssohn-Platz: einige Fußgänger	q1 9797,10771 9733,10827 96
 (Grillostr. - Wehnertstr.): eng, Fußgänger, Bordstein	q2 8790,854 8672,919
 (Otisstr. - Wackerweg): eng	q2 3753,18889 3784,18881 3789,18863 3803,18855
 Breitkopfstr.: einige Fußgänger	q1 7789,17853 7809,17708 7820,17549
-Orankeweg: Bordstein	q2 14936,15857 14769,15867
+Orankeweg: Bordstein	q2 14936,15857 14906,15859 14769,15867
 Jenneweg: einige Fußgänger, eng, Bordstein	q3 -3978,14766 -4015,14744
 (Viktoriaufer/Jüdenstr. - Am Juliusturm): einige Fußgänger, Bordstein	q2 -3239,14641 -3209,14662
 (Kirchhofstr., Verlängerung): einige Fußgänger	q1 -3295,15356 -3294,15366 -3359,15426
@@ -3610,3 +3610,4 @@ Potsdamer Chaussee: linker Gehweg bis zur Ampel	q3::igndisp; -3040,1763 -3019,17
 Richard-von-Weizsäcker-Platz: Gehweg bis Akazienstr.	q3::igndisp; 7307,8945 7242,8902 7201,8870
 Sonnenallee: linker Gehweg bis zur Ampel	q4::igndisp; 14423,7333 14334,7395
 Blockdammweg: linker Gehweg bis zum Fußgängerbereich in der Parkstadt Karlshorst	q4::igndisp; 17729,8850 17699,8843
+Orankeweg -> Hansastr./Orankeweg: linker Gehweg bis zur Überquerungsmöglichkeit, Bordstein	q3::igndisp; 14906,15859 14967,15885

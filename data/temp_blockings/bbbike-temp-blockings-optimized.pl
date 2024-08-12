@@ -4507,8 +4507,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-300623/ (neue Bauphase)
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
-#: also_indoor: traffic (ex-G,H,B,W)
-#: last_checked: 2024-04-15 (okas)
+#: also_indoor: traffic (re-G,ex-H,B,T,W)
+#: last_checked: 2024-08-12 (traffic)
 #: check_frequency: 120d
 #: next_check: 2024-11-30
 # REMOVED --- #: next_check: 2024-01-01
@@ -6502,7 +6502,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-07-16
+#: last_checked: 2024-08-12
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -7366,19 +7366,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
          'type' => 'handicap',
          'until' => 1727449200
        },
-       {
-         'data' => '#: source_id: viz2021:13.483344,52.583136,04.03.2024,07:00 (bis 26.04.2024) (bis 07.05.2024) (bis 17.05.2024) (bis 07.06.2024) (bis 21.06.2024) (bis 05.07.2024) (bis 31.07.2024) (bis 12.08.2024)
-#: note: Gehweg nur auf der westlichen Seite, für Radfahrer in beiden Richtungen frei, 2 Ampeln zum Überqueren
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764537508510216685
-#: by: https://pbs.twimg.com/media/GHmMbjuXYAAbLcY?format=jpg&name=large
-	2::inwork 16082,19754 15617,19775
-',
-         'from' => 1709445600,
-         'id' => 4018,
-         'text' => 'Malchower Teichweg: Anbindung an die B2 kann wegen Bauarbeiten gesperrt sein, vom 04.03.2024 07:00 bis 12.08.2024 17:00',
-         'type' => 'gesperrt',
-         'until' => 1723474800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7601,12 +7589,12 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 #: note: laut Baustellenplakat (siehe bahninfo-forum) nur bis 05.07.2024, oder gibt es da nur eine Änderung der Verkehrsführung?
 #: note: laut rbb bis 15.8.2024 (go with it)
 #: note: bei VIZ seit dem 8.8.2024 inaktiv (zu früh?)
-#: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024) (inaktiv)
+#: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024) (inaktiv) (bis 20.08.2024)
 #: source_id: viz2021:13.50508,52.44526,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
 Sterndamm: gemeinsamer Rad- und Gehweg	q3::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
 Winckelmannstr. am Sterndamm	q4::inwork 17428,4503 17476,4337
 Trützschlerstr.	q2::inwork 17471,4570 17612,4460
-#: source_id: viz2021:13.506038,52.441227,08.05.2024,07:00 (Winckelmannstr., bis 08.08.2024) (inaktiv)
+#: source_id: viz2021:13.506038,52.441227,08.05.2024,07:00 (Winckelmannstr., bis 08.08.2024) (inaktiv) (bis 20.08.2024)
 #: source_id: viz2021:13.5056,52.44039,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
 Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979 17465,3768
 #: by: krickstadt
@@ -7614,9 +7602,9 @@ Haeckelstr.	q4::inwork 17379,3932 17468,3979
 ',
          'from' => 1715058000,
          'id' => 4057,
-         'text' => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis 15.08.2024 17:00',
+         'text' => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis voraussichtlich 20.08.2024 17:00',
          'type' => 'handicap',
-         'until' => 1723734000
+         'until' => 1724166000
        },
        undef,
        undef,
@@ -8271,7 +8259,7 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
        },
        {
          'data' => '#: source_id: viz2021:13.382396,52.530372,09.08.2024,16:02 (nur der Radverkehr wird umgeleitet! bis 30.09.2024)
-#: source_id: viz2021:13.3794,52.52949,09.08.2024,17:31 (bis 30.09.2024)
+#: source_id: viz2021:13.3794,52.52949,09.08.2024,17:31 (bis 30.09.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1821911366766084588
 #: by: https://pbs.twimg.com/media/GUi6qtgW4AAgG3O?format=jpg&name=large
 	q4::inwork; 8685,13728 8841,13800 8935,13844
@@ -8295,6 +8283,38 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Marzahner Promenade: Bauarbeiten zwischen Landsberger Allee und Märkische Allee, evtl. sind auch Radfahrer betroffen, vom 12.08.2024 07:00 bis 06.09.2024 17:00',
          'type' => 'handicap',
          'until' => 1725634800
+       },
+       {
+         'data' => '#: next_check_id: SIEGFRIED-2024
+#: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024)
+#: note: (noch) keine Einschränkung in der Rüdigerstr.
+	q2; 16820,12339 16831,12419 16857,12600 16859,12613 16860,12861
+',
+         'from' => 1723413600,
+         'id' => 4135,
+         'text' => 'Siegfriedstr.: Bauarbeiten zwischen Rüdigerstr. und Bornitzstr., Richtung Norden gemeinsamer Geh- und Radweg, mögliche Engstellen, bis 23.08.2024 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1724450400
+       },
+       {
+         'data' => '#: source_id: LS/221-E/24/116 (bis 31.10.2024)
+	2::inwork 76863,101305 76791,101034 76787,98891 76787,98838
+',
+         'from' => 1723960800,
+         'id' => 4136,
+         'text' => 'B2 bei Mescherin: Deckenerneuerung, Sperrung, evtl. sind auch Radfahrer betroffen, 19.08.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1730386800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.24754,52.50541,12.08.2024,06:00 (bis 31.01.2025)
+	q4::inwork -45,10912 -220,10893 -466,10860
+',
+         'from' => 1723348800,
+         'id' => 4137,
+         'text' => 'Tannenbergallee: Baustelle in Höhe Hohensteinallee, evtl. sind auch Radfahrer von der Sperrung betroffen, vom 12.08.2024 06:00 bis 31.01.2025 18:00',
+         'type' => 'handicap',
+         'until' => 1738342800
        }
      
 );
