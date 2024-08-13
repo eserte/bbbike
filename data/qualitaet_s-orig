@@ -613,7 +613,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2024-06-01 (mapillary)
+#: last_checked: 2024-08-10 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-09-30
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -1000,7 +1000,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="26"
-#: last_checked: 2024-06-02 (mapillary)
+#: last_checked: 2024-08-10 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -2449,7 +2449,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021)
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2024-07-03 (mapillary)
+#: last_checked: 2024-08-09 (mapillary)
 #: check_frequency: 90d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -9350,7 +9350,8 @@ Viktoriastr. (Französisch Buchholz): unbefestigte Straße	Q2 12528,22140 12606,22
 Gellertstr. (Französisch Buchholz): Asphalt	Q0 12841,21925 12724,21943 12647,21954 12450,21984
 Wodanstr. (Französisch Buchholz): Asphalt	Q0 12216,21945 12162,21743
 (Pasewalker Str. - Einsiedelring): Verbundsteinpflaster	Q0- 12039,20538 11996,20545
-Straße 171: Asphalt	Q0 12694,22570 12657,22596 12628,22604
+Straße 171: Asphalt	Q0 12694,22570 12657,22596
+# REMOVED --- Straße 171: Asphalt	Q0 12657,22596 12628,22604
 Borkumstr.: Kopfsteinpflaster	Q2 11259,17792 11275,17690
 Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0- 10815,18074 10900,18113 10970,18164 10993,18203 11123,18343
 Hadlichstr.: Asphalt	Q0 11123,18343 11001,18528
@@ -12845,6 +12846,8 @@ Ruppiner Chaussee: Asphalt, einige Schäden	Q1+;Q0- 488,22275 455,22285 355,22344
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XVI-81 --- #: osm_watch: way id="567597386" version="8" --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1217133.php (Bauarbeiten im Einmündungsbereich Fürstenwalder Allee/Mausohrweg bis zum 18. August 2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_22_2249_2332_online.pdf (Straßenlandwidmung) --- #: osm_watch: way id="567597383" version="14" --- #: add_fragezeichen: wann wird die Fahrbahndecke endgültig hergestellt? vvv --- #: last_checked: 2022-05-11 vvv --- #: check_frequency: 120d vvv --- #: next_check: 2022-08-18 vvv
 #: historical_note: früher: Asphalt, letzte Deckschicht fehlt, Q1+ vvv
 #: by: mapillary vvv
+An der Streuobstwiese: Betonsteinpflaster	Q0- 12657,22751 12616,22697 12628,22604
+An der Streuobstwiese: Baustraße, noch unbefestigt	Q2 12628,22604 12668,22537
 (Otto-Suhr-Allee - Eosanderstr.): Asphalt	Q0 3328,12512 3357,12562 3357,12615
 Mausohrweg: Asphalt	Q0 33327,2979 33296,2894
 Mausohrweg: Asphalt	Q0 33167,2940 33296,2894 33406,2852 33503,2818
@@ -13650,6 +13653,8 @@ Töpchiner Weg [40-48]: Verbundsteinpflaster	Q1+ 11950,1275 11918,1211
 (Uferweg): asphaltähnliche Decke	Q0- 11821,11733 11957,11603
 # 
 Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4495
+# 
+(Mauerpark - Schwedter Str.): Kleinsteinpflaster	Q1- 10071,15684 10110,15678 10123,15681
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -15908,7 +15913,8 @@ Koblenzer Str.: Kopfsteinpflaster	Q2 4874,8354 4874,8140 4873,8007 4873,7967
 #: by: ^^^
 # 
 #: by: Stefan Wietstock:
-(Livländische Str. - Schoelerpark): Steinpflasterweg	Q1 5166,8467 5212,8602
+#: corrected_by: srt (Steinpflasterweg, Q1 -> ..., neu gemacht)
+(Livländische Str. - Schoelerpark): Mosaikpflaster	Q1 5166,8467 5212,8602
 #: by: Max Hoffmann:
 Undinestr.: Kopfsteinpflaster	Q2 4787,4133 4681,4537 4651,4638 4568,4789
 # 
@@ -26230,7 +26236,7 @@ Gravensteinstr.: Kopfsteinpflaster	Q3; 12257,22452 12366,22434
 Gravensteinstr.: guter Asphalt	Q0; 12366,22434 12257,22452
 #: confirmed_by: Andreas R.
 #: confirmed_by: srt
-Gravensteinstr.: guter Asphalt	Q0 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12694,22570 12738,22630 12766,22668 12773,22678 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
+Gravensteinstr.: guter Asphalt	Q0 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12668,22537 12694,22570 12738,22630 12766,22668 12773,22678 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
 Gravensteinstr.: Kopfsteinpflaster	Q3 12366,22434 12397,22429
 # 
 #: by: Andreas R.
@@ -33253,5 +33259,8 @@ Einmündungsbereich asphaltiert	Q0 11331,14350
 Einmündungsbereich asphaltiert	Q0 11316,14360
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 2781,2493
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3011,2487
+Kreuzungsbereich asphaltiert	Q0 9254,14849
+Kreuzungsbereich asphaltiert	Q0 9432,14936
+Einmündungsbereich asphaltiert	Q0 10018,15211
 #: ignore ^^^
 #: section ^^^

@@ -7784,7 +7784,7 @@ Viktoriastr. (Französisch Buchholz): unbefestigte Straße	Q2 12528,22140 12606,22
 Gellertstr. (Französisch Buchholz): Asphalt	Q0 12841,21925 12724,21943 12647,21954 12450,21984
 Wodanstr. (Französisch Buchholz): Asphalt	Q0 12216,21945 12162,21743
 (Pasewalker Str. - Einsiedelring): Verbundsteinpflaster	Q0 12039,20538 11996,20545
-Straße 171: Asphalt	Q0 12694,22570 12657,22596 12628,22604
+Straße 171: Asphalt	Q0 12694,22570 12657,22596
 Borkumstr.: Kopfsteinpflaster	Q2 11259,17792 11275,17690
 Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0 10815,18074 10900,18113 10970,18164 10993,18203 11123,18343
 Hadlichstr.: Asphalt	Q0 11123,18343 11001,18528
@@ -10913,6 +10913,8 @@ Fredersdorfer Str.: Kopfsteinpflaster	Q2 13051,12167 13086,12186
 Ruppiner Chaussee: Asphalt, einige Schäden	Q0 1445,21216 1427,21237 1347,21428 1254,21718 1146,21901 919,22068 488,22275
 Ruppiner Chaussee: Asphalt, einige Schäden	Q1;Q0 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011
 (Einfahrt Bauhaus): Asphalt	Q0 4988,17172 5020,17157 5158,17138
+An der Streuobstwiese: Betonsteinpflaster	Q0 12657,22751 12616,22697 12628,22604
+An der Streuobstwiese: Baustraße, noch unbefestigt	Q2 12628,22604 12668,22537
 (Otto-Suhr-Allee - Eosanderstr.): Asphalt	Q0 3328,12512 3357,12562 3357,12615
 Mausohrweg: Asphalt	Q0 33327,2979 33296,2894
 Mausohrweg: Asphalt	Q0 33167,2940 33296,2894 33406,2852 33503,2818
@@ -11567,6 +11569,7 @@ Töpchiner Weg [40-48]: Verbundsteinpflaster	Q1 11950,1275 11918,1211
 (Neucölln Carree, Parkplatzzufahrt): Asphalt	Q0 14430,7348 14423,7333 14378,7236 14507,7146
 (Uferweg): asphaltähnliche Decke	Q0 11821,11733 11957,11603
 Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4495
+(Mauerpark - Schwedter Str.): Kleinsteinpflaster	Q1 10071,15684 10110,15678 10123,15681
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12551,7 +12554,7 @@ Dickhardtstr.: guter Asphalt	Q0 5533,6753 5604,6709 5752,6751 5811,6833 5826,687
 Wetzlarer Str.: Asphalt	Q0 4482,6866 4599,6933 4673,6983 4737,7036
 Laubenheimer Str.: asphaltiert	Q0 4322,7085 4384,7029 4434,6957 4482,6866 4506,6811 4528,6715
 Koblenzer Str.: Kopfsteinpflaster	Q2 4874,8354 4874,8140 4873,8007 4873,7967
-(Livländische Str. - Schoelerpark): Steinpflasterweg	Q1 5166,8467 5212,8602
+(Livländische Str. - Schoelerpark): Mosaikpflaster	Q1 5166,8467 5212,8602
 Undinestr.: Kopfsteinpflaster	Q2 4787,4133 4681,4537 4651,4638 4568,4789
 Vogelbeerstr.: schlechtes Kopfsteinpflaster	Q3 19723,4175 19759,4160 19815,4148 19869,4151 19917,4168 19963,4198
 Florian-Geyer-Str.: Asphalt	Q0 19869,4151 19884,4018 19888,3990 19924,3939
@@ -16059,7 +16062,7 @@ Matthieustr.: guter Asphalt	Q0 11235,22590 11176,22526 11108,22445
 (Kniprodestr./Michelangelostr. - Puccinistr.): wassergebundene Decke, herutergefahrener Belag	Q2 13973,15259 13905,15306
 Gravensteinstr.: Kopfsteinpflaster	Q3; 12257,22452 12366,22434
 Gravensteinstr.: guter Asphalt	Q0; 12366,22434 12257,22452
-Gravensteinstr.: guter Asphalt	Q0 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12694,22570 12738,22630 12766,22668 12773,22678 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
+Gravensteinstr.: guter Asphalt	Q0 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12668,22537 12694,22570 12738,22630 12766,22668 12773,22678 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
 Gravensteinstr.: Kopfsteinpflaster	Q3 12366,22434 12397,22429
 Gravensteinstr.: Kopfsteinpflaster	Q3; 12185,22465 12229,22457
 Gravensteinstr.: Kopfsteinpflaster	Q3 12229,22457 12257,22452

@@ -240,7 +240,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2024-08-05 vvv
+#: last_checked: 2024-08-09 (mapillary) vvv
 #: check_frequency: 45d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
@@ -1036,7 +1036,7 @@ neu asphaltiert	RW2; 10997,16280 10989,16197 10982,16121
 Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,15525
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
-#: last_checked: 2024-07-03 (mapillary)
+#: last_checked: 2024-08-13
 neu asphaltiert	RW1; 10917,15525 10902,15422
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
@@ -2112,7 +2112,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-m%C3%BChlendammbr%C3%BCcke.1088/#post-23477
 #: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2024-08-06 vvv
+#: last_checked: 2024-08-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-09-30 vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2848,7 +2848,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-08-05 vvv
+#: last_checked: 2024-08-13 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -5628,7 +5628,7 @@ die ersten Meter Radstreifen, dann auf dem Gehweg geführt	RW2; 21251,18508 21446
 Gehwegplatten, Unebenheiten	RW1; 20196,2392 20100,2373 19968,2381 19592,2403 19091,2443 18929,2454
 Verbundsteinpflaster	RW1; 18929,2454 19091,2443 19592,2403 19968,2381 20100,2373 20196,2392
 	RW1;RW1 17377,3571 17431,3599 17490,3630 17522,3653 17552,3675 17585,3745
-	RW7;RW7 10081,15853 10105,15752 10130,15653
+	RW7;RW7 10081,15853 10105,15752 10123,15681 10130,15653
 	RW2;RW2 683,11270 571,11255 504,11243 438,11236
 	RW10;RW2 1381,11335 1206,11324
 	RW10;RW10 1206,11324 1051,11311 1028,11309 943,11302 683,11270
@@ -6929,7 +6929,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17741,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: source_id: viz2021:13.504732,52.563446,11.07.2023,07:00 (Erneuerung Radweg, bis 12.09.2023) (bis 20.09.2023) (inaktiv)
 #: XXX Asphaltierung des Radwegs --- wird auch dieser Abschnitt asphaltiert? (noch keine Bauarbeiten) vvv
-#: last_checked: 2024-04-06 vvv
+#: last_checked: 2024-08-08 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-31 vvv
 Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16905,17949 16945,17900 16981,17855
@@ -7541,7 +7541,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-07-13 vvv
+#: last_checked: 2024-08-13 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -8340,7 +8340,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-08-05 vvv
+#: last_checked: 2024-08-09 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-06-30 vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv)
@@ -8990,4 +8990,6 @@ niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13970,11366 14134,11
 	RW1; 3915,9120 3919,9085
 # 
 	RW7;RW7 9670,13637 9535,13801 9514,13826 9383,13986
+# 
+	RW7;RW7 12657,22751 12616,22697 12628,22604 12668,22537
 # 

@@ -1998,7 +1998,7 @@ Marthashof	N 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,1
 # REMOVED (wird zurückgebaut) --- #: next_check_id: MAUERPARK-2019 --- #: XXX vermutlich wird diese Straße zurückgebaut (abhängige Einträge in qualitaet_s-orig etc. auch bearbeiten!) --- #: last_checked: 2020-03-22 --- (Mauerpark, temporäre Baustraße)	NN 10295,15078 10193,15384 10210,15407
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10379,14963 10367,14946 10377,14909 10402,14835 10440,14730 10448,14707 10472,14632 10506,14521 10530,14452 10567,14337 10629,14299 10739,14228 10822,14179 10933,14122
 Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
-Schwedter Str. (Mitte, Prenzlauer Berg)	N 10130,15653 10105,15752 10081,15853
+Schwedter Str. (Mitte, Prenzlauer Berg)	N 10130,15653 10123,15681 10105,15752 10081,15853
 Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10081,15853 10064,15920 10062,15927
 Schwedter Steg	NN 10062,15927 10005,16150
 (Gleimstr. - Mauerpark)	NN 10170,15659 10228,15488
@@ -4956,12 +4956,14 @@ Rosenapfelweg	N 13219,22689 13127,22716 12917,22829
 #: oldname: -2014: Rosenweg (KGA Gravenstein)
 #: ignore_oldname_file: yes
 Silberapfelweg	N 13200,22766 13160,22776 13006,22858
-Gravensteinstr.	N 12185,22465 12229,22457 12257,22452 12366,22434 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12694,22570 12738,22630 12766,22668 12773,22678 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
+Gravensteinstr.	N 12185,22465 12229,22457 12257,22452 12366,22434 12397,22429 12475,22428 12489,22428 12565,22425 12583,22428 12668,22537 12694,22570 12738,22630 12766,22668 12773,22678 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
 #: note: sowohl osm als auch google glauben, dass sich hier die "Straße 17" befindet, aber in der Realität ist das nur die Gravensteinstr. mit weiteren Hausnummern
 #: note: Privatstraße
 Gravensteinstr. [Wohngebiet]	N 12694,22570 12738,22546 12781,22593 12738,22630
 # 
-Straße 171	N 12694,22570 12657,22596 12628,22604
+Straße 171	N 12694,22570 12657,22596
+# REMOVED (zumindest dieses Teilstück existiert nicht mehr) --- Straße 171	N 12657,22596 12628,22604
+An der Streuobstwiese	N 12657,22751 12616,22697 12628,22604 12668,22537
 # 
 Straße 76a	N 12773,22678 12883,22615 12920,22597
 Straße 73 (Französisch Buchholz)	N 12565,22425 12597,22374 12635,22369 12853,22342 13110,22313
@@ -19098,7 +19100,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9153,12928
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
 #: osm_watch: way id="327518240" version="10"
-#: last_checked: 2024-05-17
+#: last_checked: 2024-08-13
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9153,12928
 Karlplatz	N 8711,12986 8676,12976
@@ -19206,6 +19208,7 @@ Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 (Lortzingstr. - Mauerpark)	NN 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel)	NN 10070,15626 10091,15630
 (Mauerpark, über den Gleimtunnel)	NN 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684 10079,15661 10091,15630 10092,15627 10155,15473
+(Mauerpark - Schwedter Str.)	NN 10071,15684 10110,15678 10123,15681
 (Mauerpark - Lichtburgring)	NN 10071,15684 10057,15680
 # REMOVED (Bauarbeiten) --- (Mauerpark, über den Gleimtunnel)	NN 10091,15630 10070,15624 10162,15349
 (Weg im erweiterten Mauerpark)	NN 10235,14934 10215,14977 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10233,15147 10274,15024 10297,14961

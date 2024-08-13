@@ -2993,6 +2993,7 @@ tragen (Treppe, 31 Stufen)	0:30 17983,8960
 tragen (Treppe, 5 Stufen)	0:10 10290,12742
 tragen (8 weite Stufen)	0:30 18121,10314
 tragen (insgesamt 61 Stufen)	0:60 -3126,1798
+tragen (Treppe, 33 Stufen)	0:35 10110,15678
 #
 #: section ^^^
 ###################################################################
@@ -3843,7 +3844,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-08-05
+#: last_checked: 2024-08-13
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -3890,12 +3891,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: ALTFRIEDRICHSFELDE-2024
-#: last_checked: 2024-06-07
-#: check_frequency: 90d
-#: next_check: 2024-08-31
-#: valid: -20240831
-Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 19004,11780 18853,11780
+# REMOVED --- #: next_check_id: ALTFRIEDRICHSFELDE-2024 --- #: last_checked: 2024-08-08 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2024-08-31 --- #: valid: -20240831 --- Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 19004,11780 18853,11780
 # 
 #: next_check_id: VIRCHOW-2023
 #: XXX Nordufer (Wedding) in beiden Richtungen zwischen Eckernförder Platz und Föhrer Straße: wegen Baustelle gesperrt, vom 24.02.2024 00:00 bis 29.12.2028 23:59
@@ -3994,6 +3990,27 @@ Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,90
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
 # 
 #: next_check_id: ANDERSTREUOBSTWIESE-2021
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5547 (Straßenbenennung)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5624
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036557299209/557299209/00215425/25-Dateien/image001.png (Anlage zur Straßenbenennung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_47_5497_5582_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/strasse-entsteht-an-streuobstwiese_a295426
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_15_1089_1220_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_49_4457_4624_online.pdf (Straßenbenennung, Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_52_4785_4880_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Benennung, Wirksamkeit ab 14.2.2022)
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/erste-haeuser-im-kokoni-one-fast-fertig_a385494 (endgültige Fertigstellung von Kokoni One bis Herbst 2024)
+#: XXX Privatstraße, fehlt bei Berlin.coords.data (PLZ=13127 laut LOR und DPAG-Mitteilungsblatt)
+#: XXX gehört das hier auch zu "Kokoni One"?
+#: XXX wird vermutlich Betonpflaster sein
+#: XXX nördlicher Abschnitt vermutlich schon fertig (siehe Luftbild 2024)
+#: osm_watch: way id="1119861689" version="9"
+#: last_checked: 2024-08-12 (mapillary)
+# REMOVED --- #: check_frequency: 180d
+#: check_frequency: 90d
+An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,22604 12668,22537
+# 
+#: next_check_id: ANDERSTREUOBSTWIESE-2021
 #: XXX Teilfläche soll eingezogen werden ---laut Amtsblatt 50/2019 ist das so gut wie die gesamte Straße; könnte was mit den Bauvorhaben "An der Streuobstwiese" zu tun haben
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_50_7633_7832_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_05_0549_0672_online.pdf
@@ -4006,10 +4023,12 @@ Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,90
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/gebaut-wird-in-holztafelbauweise_a339233 (bis Herbst 2024)
 #: by: https://www.dafmap.de/d/berlin.html?id=7898&mt=4&zoom=17
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/haeuser-fuer-kokoni-one-entstehen-in-holztafelbauweise_a358049
+#: XXX Wird die Straße komplett aufgegeben?
 #: last_checked: 2024-03-08 (Luftbilder)
 #: check_frequency: 180d
 #: next_check: 2024-10-01
-Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596 12628,22604
+Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
+# REMOVED --- Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12657,22596 12628,22604
 # 
 # REMOVED (keine Absperrung mehr) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11239 --- #: note: Außerdem baustellenbedingte Einbahnstraßenregelung in der Krautstr., offen Richtung Süden sowie offen für Radfahrer --- #: last_checked: 2024-04-03 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2024-03-31 --- Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,11985
 # 
@@ -4100,9 +4119,17 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: next_check_id: MAUERPARK-2022
 # REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"
 #: osm_watch: way id="1218990564" version="6"
-#: last_checked: 2024-07-09
+#: last_checked: 2024-08-13
 #: check_frequency: 30d
 Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
+# 
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1465666.php (ab Anfang 2024; Abschluss der Bauarbeiten im Frühjahr 2026)
+#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
+#: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
+#: priority: #C
+#: last_checked: 2024-08-13
+# REMOVED --- #: next_check: 2024-08-07
+Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9863 (Erwähnung)
@@ -4752,7 +4779,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX evtl. wird die Qualität nach den Bauarbeiten besser sein (vielleicht keine Straßenbahnschienen mehr, neuer Asphalt?)
 #: osm_watch: note 3954448 3
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2024-08-05 (daf)
+#: last_checked: 2024-08-13
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2024-12-31
@@ -4908,7 +4935,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-07-19 (mapillary)
+#: last_checked: 2024-08-13
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -4928,7 +4955,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 #: osm_watch: way id="696227207" version="4"
 #: source_id: viz2021:13.3621,52.447308,22.12.2020,10:00 (angrenzende Attilastr., bis 31.7.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile inaktiv)
 #: source_id: viz2021:13.361171,52.446982,10.11.2023,17:30 (angrenzende Attilastr., Brückenarbeiten, bis 12.11.2023) (inaktiv)
-#: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023) (bis 04.09.2023) (bis 18.09.2023) (bis 31.10.2023) (bis 27.11.2023) (bis 05.08.2024) (bis 31.12.2024)
+#: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023) (bis 04.09.2023) (bis 18.09.2023) (bis 31.10.2023) (bis 27.11.2023) (bis 05.08.2024) (bis 31.12.2024) (bis 30.04.2025)
 #: source_id: viz2021:13.361226,52.446957,15.12.2023,20:00 (angrenzende Attilastr., bis 17.12.2023) (inaktiv)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: last_checked: 2024-07-03
