@@ -45,9 +45,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 Plauener Str.: Fahrbahn noch gesperrt, Gehwege frei	q3::inwork 17531,14923 17610,14935 17638,14945
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3::inwork 15937,15134 16075,15069
-Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
-Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
-Eisenacher Str.: Einbahnstraßenregelung, evtl. auch für Radfahrer gültig	q3::inwork; 23113,15110 22899,15073
+Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork 22577,15109 22599,15105 22726,15082 22899,15073
 Gothaer Str.: Fahrbahn gesperrt, mögliche Umwege	q2::inwork 22899,15073 22905,14925
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
 Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
@@ -3488,6 +3486,7 @@ Buschwindröschenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndis
 Weidenkätzchenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21435,99 21421,158
 Straße 3: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 18816,19648 18730,19672 18644,19695 18544,19722
 Hausvaterweg [Wohngebiet]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 19789,18423 19704,18459
+Eilenburger Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 25743,15118 25752,15219 25578,15238
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
@@ -3612,3 +3611,5 @@ Richard-von-Weizsäcker-Platz: Gehweg bis Akazienstr.	q3::igndisp; 7307,8945 7242
 Sonnenallee: linker Gehweg bis zur Ampel	q4::igndisp; 14423,7333 14334,7395
 Blockdammweg: linker Gehweg bis zum Fußgängerbereich in der Parkstadt Karlshorst	q4::igndisp; 17729,8850 17699,8843
 Orankeweg -> Hansastr./Orankeweg: linker Gehweg bis zur Überquerungsmöglichkeit, Bordstein	q3::igndisp; 14906,15859 14967,15885
+Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg bis zur Ampel "Am Feldberg"	q3::igndisp; 22994,11251 22937,11265
+Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg ab Ampel Myslowitzer Str.	q3::igndisp; 23113,11262 22994,11251

@@ -4050,7 +4050,7 @@ Hohenseeweg: Verbundsteinpflaster	Q0 22972,11066 23152,11065
 Steffenshagener Str.: Verbundsteinpflaster	Q0 22947,10998 22972,11066 22983,11098 22991,11133
 Steffenshagener Str.: Verbundsteinpflaster	Q0 22983,11098 23159,11097
 (Steffenshagener Str. - Lidl-Parkplatz): Verbundsteinpflaster	Q0 22991,11133 22982,11157
-(Lidl-Parkplatz): Verbundsteinpflaster	Q0 22982,11157 22996,11264
+(Lidl-Parkplatz): Verbundsteinpflaster	Q0 22982,11157 22994,11251 22996,11264
 Auf der Höh: unbefestigte Straße	Q2 22898,11125 22782,11127
 Adolfstr. (Kaulsdorf): schlechtes Kopfsteinpflaster mit Asphaltflicken	Q3 22756,11261 22751,11381 22743,11540 22734,11662 22633,11769
 Tychyer Str.: Asphalt	Q0 21392,11486 21300,11369
@@ -6572,7 +6572,7 @@ Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1 23580,14970 23543,14966
 (Weg am Beerenpfuhlgraben): Asphalt	Q0 23369,14756 23368,14771 23412,14899 23521,14973
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Kleinsteinpflaster	Q1 23521,14973 23529,14973 23543,14966
 Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23300,14933 23305,14914
-(Alt-Hellersdorf - Cottbusser Str.): Betonplatten	Q1 23305,14914 23318,14847 23297,14772
+(Alt-Hellersdorf - Cottbusser Str.): Asphalt	Q1 23305,14914 23318,14847 23297,14772
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23304,14473 23290,14493
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23211,14451 23290,14493 23366,14537
 Cottbusser Platz: Asphalt	Q0 23297,14772 23288,14719 23298,14685 23366,14537
@@ -11305,7 +11305,8 @@ Grüne Trift: Asphalt	Q0 23416,2808 23370,3024 23338,3173 23298,3295 23231,3480 2
 (KGA Alt-Hellersdorf): wassergebundene Decke	Q1 23109,15140 23263,15162 23271,15164 23400,15195
 (KGA Alt-Hellersdorf - Neuruppiner Str.): Asphalt	Q0 23263,15162 23257,15223
 (KGA Alt-Hellersdorf - Alt-Hellersdorf): Asphalt	Q0 23271,15164 23285,15104 23282,15055
-(KGA Alt-Hellersdorf - Alt-Hellersdorf): unbefestigter Weg	Q2 23265,15054 23282,15055
+Gut Hellersdorf: Asphalt	Q0 23265,15054 23282,15055
+Gut Hellersdorf: Kopfsteinpflaster, Reihe mit glatten Randsteinen existiert	Q2 23282,15055 23305,15054 23314,15008 23362,15021 23385,15027 23452,15046
 (Heidenauer Str. - Sebnitzer Str.): welliger Asphalt	Q1 24277,14747 24317,14768 24404,14770 24443,14756
 Kärntener Str.: Asphalt	Q0 6608,8277 6621,8221 6634,8134 6648,8064 6669,7974 6683,7847
 (Uferweg - Heidestr.): Kleinsteinpflaster	Q1 8057,13923 7997,13892 7910,13848
@@ -11570,6 +11571,7 @@ Töpchiner Weg [40-48]: Verbundsteinpflaster	Q1 11950,1275 11918,1211
 (Uferweg): asphaltähnliche Decke	Q0 11821,11733 11957,11603
 Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4495
 (Mauerpark - Schwedter Str.): Kleinsteinpflaster	Q1 10071,15684 10110,15678 10123,15681
+(Hellersdorfer Str. - Ernst-Bloch-Str.): neu asphaltierter Radweg	Q0 22933,12837 22954,12843 22991,12844
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13383,7 +13385,7 @@ Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
 (Park am Nordbahnhof): Beton	Q0 8913,14485 9119,14255 9175,14193 9181,14186
 (Park am Nordbahnhof): betonierte Rampe	Q0 9181,14186 9147,14151 9224,14169
 (Park am Nordbahnhof): betonierte Rampe	Q0 9147,14151 9070,14058
-Ernst-Bloch-Str.: Asphalt	Q0 23038,12706 22981,12794 22992,12848 23004,12908
+Ernst-Bloch-Str.: Asphalt	Q0 23038,12706 22981,12794 22991,12844 23004,12908
 Ernst-Bloch-Str.: Beton	Q0 23004,12908 23015,12963 23068,12955 23077,13002 23136,12993 23165,13010
 Ernst-Bloch-Str.: Asphalt	Q0 23165,13010 23213,13003
 Breitensteinweg: Asphalt	Q0 518,360 726,379 808,388 882,396 924,405 967,446 1020,496

@@ -66,7 +66,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-08-04
+#: last_checked: 2024-08-14
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -549,13 +549,14 @@ Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,88
 # 
 #: next_check_id: TRESKOWALLEE-2023
 #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023) (bis 30.11.2023) (bis 25.11.2023) (inaktiv)
-#: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024) (bis 05.04.2024) (bis 30.08.2024)
+#: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024) (bis 05.04.2024) (bis 30.08.2024) (bis 27.09.2024)
+#: source_id: viz2021:13.52679,52.48659,14.08.2024,14:28 (bis 27.09.2024)
 #: source_id: bvg2021:396#BVG308894_0
 #: osm_watch: way id="30043322" version="31"
 #: last_checked: 2024-08-10 (osm)
 #: check_frequency: 100d
-#: next_check: 2024-08-30
-#: valid: -20240830
+#: next_check: 2024-09-27
+#: valid: -202409-27
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 # 
 # REMOVED (Bauarbeiten sind beendet) --- #: next_check_id: WANDLITZ-2021 --- #: note: am 2022-04-22 war die Fahrbahn offen, aber möglicherweise war das nur "zufällig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauzäune, die umgeklappt werden können --- #: also_indoor: traffic --- #: note: Halteverbotsschilder vor und hinter der Baustelle bis 22.12.2023 --- #: XXX evtl. bessere Qualität nach den Bauarbeiten? --- #: last_checked: 2023-11-26 --- #: check_frequency: 30d --- #: next_check: 2023-12-22 --- #: valid: -20231222 --- Wandlitzstr.: in Höhe Lehndorffstr. Bauarbeiten, Sperrung der Fahrbahn	q4::inwork 18401,8636 18448,8602
@@ -577,7 +578,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 ### Friedrichsfelde ###
 # 
 #: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19
-#: last_checked: 2024-08-03 vvv
+#: last_checked: 2024-08-14 vvv
 #: next_check: 2024-08-19 vvv
 #: also_indoor: traffic (G,B,T)
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
@@ -918,13 +919,13 @@ Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="38"
 #: osm_watch: way id="1193560283" version="7"
-#: last_checked: 2024-08-10 (osm)
+#: last_checked: 2024-08-14
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-07-30 (mapillary)
+#: last_checked: 2024-08-14
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1042,19 +1043,19 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: source_id: viz2021:13.588853,52.539896,04.07.2023,06:00 (Gothaer, bis 25.07.2024) (inaktiv)
 #: source_id: viz2021:13.588897,52.538931,25.07.2024,10:00 (Gothaer, bis 31.07.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
-#: osm_watch: note 3581028 2
-#: last_checked: 2024-06-23 (osm) vvv
+#: osm_watch: note 3581028 5
+#: last_checked: 2024-08-14 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-07-25 vvv
+#: next_check: 2025-07-31 vvv
 # REMOVED --- #: next_check: 2025-07-31 vvv
-#: osm_watch: way id="175916583" version="11"
-Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
-#: osm_watch: way id="26692569" version="17"
-Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2+::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
-#: osm_watch: way id="26505949" version="26"
+# REMOVED --- #: osm_watch: way id="175916583" version="11" --- Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
+# REMOVED --- #: osm_watch: way id="26692569" version="17" --- Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2+::inwork; 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
+#: osm_watch: way id="1278425789" version="3"
+Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork 22577,15109 22599,15105 22726,15082 22899,15073
 # REMOVED --- Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
-Eisenacher Str.: Einbahnstraßenregelung, evtl. auch für Radfahrer gültig	q3::inwork; 23113,15110 22899,15073
+# REMOVED (für Radfahrer frei) --- #: osm_watch: way id="26505949" version="26" --- Eisenacher Str.: Einbahnstraßenregelung, evtl. auch für Radfahrer gültig	q3::inwork; 23113,15110 22899,15073
 # REMOVED --- Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
+#: osm_watch: way id="997498311" version="5"
 Gothaer Str.: Fahrbahn gesperrt, mögliche Umwege	q2::inwork 22899,15073 22905,14925
 #: next_check ^^^
 #: check_frequency ^^^

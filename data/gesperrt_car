@@ -6,6 +6,7 @@ Mecklenburgische Str. -> Rudolf-Mosse-Str.: Überfahrt gesperrt, für Radfahrer is
 Rudolf-Mosse-Str. -> Mecklenburgische Str.: Überfahrt gesperrt, für Radfahrer ist ein bisschen Platz frei gelassen	3::igndisp 3662,7580 3631,7598 3619,7587
 Sodener Str.: Einbahnstraßenregelung, Radfahrer frei	1 3688,7093 3703,7324
 Schlangenbader Str.: Einbahnstraßenregelung, mit entgegengesetzter provisorischer Radspur	1 3981,6850 3958,7040 3965,7297
+Gut Hellersdorf: noch Bauarbeiten, nur Gehweg frei	2::inwork 23385,15027 23452,15046
 Mittelweg	1 12335,7770 12224,7799 12176,7811
 Privatweg (Kronenstr.)	2 10132,11810 10114,11789 10079,11765 9910,11755 9896,11760
 Maulbronner Ufer	1 7161,4110 7307,4087 7389,4088 7484,4109 7539,4127 7585,4154 7673,4223
@@ -2581,3 +2582,13 @@ Kamillenweg (Schulzendorf)	1 22739,-5062 22798,-5036 22814,-4986
 Zum Feldrain (Schulzendorf)	1 22854,-5002 22874,-4946 22906,-4932 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130
 Sperberring (Schulzendorf)	1 22848,-5176 22867,-5180 22880,-5197 22852,-5347 22794,-5360 22788,-5356 22778,-5350
 Karl-Marx-Str. -> Fuldastr.	3 12330,8636 12494,8501 12551,8612
+Hirtengasse (Altlandsberg)	1 32161,17822 32028,17866
+Eilenburger Str.: Poller	3 25569,15140 25578,15238 25752,15219
+Eilenburger Str.: Poller	3 25590,15342 25578,15238 25752,15219
+Mittelstreifen	3nocross::ignrte 22883,13013 22933,12837 22967,12647
+Hellersdorfer Str. -> Bansiner Str.: Mittelstreifen	3::igndisp 22967,12647 22933,12837 22896,12827
+Hellersdorfer Str. -> Ernst-Bloch-Str.: Mittelstreifen	3::igndisp 22883,13013 22933,12837 22954,12843
+Bansiner Str. -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22896,12827 22933,12837 22883,13013
+Bansiner Str. -> Ernst-Bloch-Str.: Mittelstreifen	3::igndisp 22896,12827 22933,12837 22954,12843
+Ernst-Bloch-Str. -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22954,12843 22933,12837 22967,12647
+Ernst-Bloch-Str. -> Bansiner Str.: Mittelstreifen	3::igndisp 22954,12843 22933,12837 22896,12827

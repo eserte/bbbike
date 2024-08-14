@@ -281,7 +281,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder
-#: last_checked: 2024-08-03
+#: last_checked: 2024-08-14
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -1646,6 +1646,8 @@ Lichtenberger Str. [Wohngebiet]	1 11947,12494 11867,12284
 # 
 Hauptstr.: Mittelstreifen mit Gitter	3nocross 7268,8960 7239,8907 7201,8870
 # 
+Eilenburger Str.	1s:q2 25743,15118 25752,15219 25578,15238
+# 
 #: section ^^^
 ######################################################################
 #: section: empfohlene und unechte Sperrungen vvvvvvvvvvvvvvvvvvvvvvvv
@@ -1759,6 +1761,8 @@ Georg-Hermann-Allee: Straßenbahntrasse	3nocross -13420,1478 -13422,1383 -13424,1
 ###################################################################### 
 #: section: Sperrungen anderswo in Brandenburg vvvvvvvvvvvvvvvvvvvvvvv
 # 
+Heinrich-Dorrenbach-Str.	1s:q4 39533,14774 39578,14967
+Mahlsdorfer Str. [zur Böhlener Str.]	1 26014,15039 26093,15098
 #: by: osm
 Trebbiner Str.	2 11065,-5338 11040,-5252 11091,-5242 11107,-5326 11119,-5326
 #: by: osm, mapilio
@@ -1984,7 +1988,7 @@ Freimuthstr. (Falkensee)	1s:q4 -10354,17616 -10357,17603 -10258,17508
 # 
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
 B104 - Am Neuen Friedhof	1 6,127935 -27,127909
-Einbahnstraßen in Altlandsberg	1 32206,18073 32185,17995 32096,18020 32125,18092 32206,18073
+Einbahnstraßen in Altlandsberg	1 32214,18070 32185,17995 32096,18020 32125,18092 32214,18070
 Korswandt - Ahlbeck: für Radfahrer gesperrt	2 59081,169443 59316,169501 59514,169815 59738,170055 59924,170158 60059,170169 60186,170284 60245,170509 60347,170633 60601,170748 60636,170816
 Bansin	1 57181,174881 57031,174737
 Bansin	1 57181,174881 57341,175031 57406,175093
@@ -2048,7 +2052,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: https://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="16"
-#: last_checked: 2024-02-17
+#: last_checked: 2024-03-25 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
@@ -2526,7 +2530,6 @@ Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21133,11348 211
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 Hansastr.: Straßenbahntrasse	3nocross 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870
 Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
-Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22924,12833 22967,12647
 Buckower Damm: Mittelstreifen	3nocross 12564,4308 12637,4014 12655,3882
 Albrechtstr.: Mittelstreifen	3nocross 6048,4797 6003,4857 6029,4902 6048,4952
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7327
@@ -2700,7 +2703,7 @@ tragen (15 Stufen)	0:25 27728,-3146
 # REMOVED (existiert wohl nicht mehr --- barrierefreier Ausbau?) --- tragen (4 Stufen)	0:6 27361,-1551
 tragen (2 Stufen)	0:5 3431,1987
 tragen	0:35 3580,4309
-tragen (ca. 34 Stufen)	0:35 22675,12008
+tragen (ca. 34 Stufen)	0:35 22670,12004
 tragen (13+14 Stufen)	0:30 22859,12059
 tragen (12+13 Stufen)	0:30 22857,12014
 tragen (20 Stufen)	0:30 -1887,16673
@@ -3800,6 +3803,13 @@ weites Drängelgitter	BNP:2::trailer=7 1772,42835
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-marzahn-hellersdorf.42/page-7#post-23307
+#: osm_watch: way id="1306238147" version="1"
+#: osm_watch: way id="25795669" version="13"
+#: last_checked: 2024-08-14
+#: check_frequency: 120d
+(Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
+# 
 #: last_checked: 2024-07-17 vvv
 #: check_frequency: 360d vvv
 #: osm_watch: way id="741297435" version="11" brb
@@ -4037,7 +4047,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="27"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-08-10 (osm)
+#: last_checked: 2024-08-14
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4089,7 +4099,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-07-30 (mapillary) vvv
+#: last_checked: 2024-08-14 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -4777,7 +4787,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX wann sind die Bauarbeiten beendet?
 #: XXX mittlerweile bis zur Georgenstr. ausgeweitet, check_frequency deswegen angepasst
 #: XXX evtl. wird die Qualität nach den Bauarbeiten besser sein (vielleicht keine Straßenbahnschienen mehr, neuer Asphalt?)
-#: osm_watch: note 3954448 3
+#: osm_watch: note 3954448 4
 #: osm_watch: way id="195397561" version="20"
 #: last_checked: 2024-08-13
 #: check_frequency: 30d

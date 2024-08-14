@@ -4027,7 +4027,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/crfs-protokoll-fahrrat-mahe-_2022-04-19.pdf (Projekt pausiert)
 #: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert?
 #: osm_watch: way id="100280204" version="11"
-#: last_checked: 2024-03-27
+#: last_checked: 2024-08-14
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23363,11600 23225,11649
@@ -5233,7 +5233,7 @@ Hohenseeweg: Verbundsteinpflaster	Q0- 22972,11066 23152,11065
 Steffenshagener Str.: Verbundsteinpflaster	Q0- 22947,10998 22972,11066 22983,11098 22991,11133
 Steffenshagener Str.: Verbundsteinpflaster	Q0- 22983,11098 23159,11097
 (Steffenshagener Str. - Lidl-Parkplatz): Verbundsteinpflaster	Q0- 22991,11133 22982,11157
-(Lidl-Parkplatz): Verbundsteinpflaster	Q0- 22982,11157 22996,11264
+(Lidl-Parkplatz): Verbundsteinpflaster	Q0- 22982,11157 22994,11251 22996,11264
 Auf der Höh: unbefestigte Straße	Q2 22898,11125 22782,11127
 Adolfstr. (Kaulsdorf): schlechtes Kopfsteinpflaster mit Asphaltflicken	Q3+ 22756,11261 22751,11381 22743,11540 22734,11662 22633,11769
 Tychyer Str.: Asphalt	Q0 21392,11486 21300,11369
@@ -8030,7 +8030,8 @@ Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1+ 23580,14970 23543,14966
 (Weg am Beerenpfuhlgraben): Asphalt	Q0+ 23369,14756 23368,14771 23412,14899 23521,14973
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Kleinsteinpflaster	Q1- 23521,14973 23529,14973 23543,14966
 Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23300,14933 23305,14914
-(Alt-Hellersdorf - Cottbusser Str.): Betonplatten	Q1 23305,14914 23318,14847 23297,14772
+#: historical_note: früher (bis 2024): Betonplatten, Q1
+(Alt-Hellersdorf - Cottbusser Str.): Asphalt	Q1 23305,14914 23318,14847 23297,14772
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23304,14473 23290,14493
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23211,14451 23290,14493 23366,14537
 Cottbusser Platz: Asphalt	Q0 23297,14772 23288,14719 23298,14685 23366,14537
@@ -8237,7 +8238,7 @@ Blumberger Damm: Verbundsteinpflaster	Q1+ 21733,15755 21719,15666
 Blumberger Damm: Verbundsteinpflaster	Q1+ 21706,15626 21680,15489 21657,15352 21631,15223
 Gottfried-Funeck-Weg: Asphalt	Q0 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22416,14148 22503,14104
 Gottfried-Funeck-Weg: wassergebundene Decke	Q1 22783,14034 22854,14018 22987,13989
-Wuhlesteg: Gitterbrücke	Q1 22503,14104 22783,14034
+Wuhlesteg: Gitterbrücke	Q1+ 22503,14104 22783,14034
 (entlang Kienberg und Gärten der Welt): Asphalt	Q0 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513
 Irmfriedstr.: Beton	Q0- 21737,13844 21758,13934 21764,13981 21766,13995 21794,14229 21814,14407 21822,14468
 Völklinger Str.: Beton	Q0- 21814,14407 21940,14413 22003,14400
@@ -13287,8 +13288,8 @@ Grüne Trift: Asphalt	Q0 23416,2808 23370,3024 23338,3173 23298,3295 23231,3480 2
 (KGA Alt-Hellersdorf): wassergebundene Decke	Q1 23109,15140 23263,15162 23271,15164 23400,15195
 (KGA Alt-Hellersdorf - Neuruppiner Str.): Asphalt	Q0 23263,15162 23257,15223
 (KGA Alt-Hellersdorf - Alt-Hellersdorf): Asphalt	Q0 23271,15164 23285,15104 23282,15055
-#: note: hier noch provisorisch
-(KGA Alt-Hellersdorf - Alt-Hellersdorf): unbefestigter Weg	Q2 23265,15054 23282,15055
+Gut Hellersdorf: Asphalt	Q0 23265,15054 23282,15055
+Gut Hellersdorf: Kopfsteinpflaster, Reihe mit glatten Randsteinen existiert	Q2+ 23282,15055 23305,15054 23314,15008 23362,15021 23385,15027 23452,15046
 (Heidenauer Str. - Sebnitzer Str.): welliger Asphalt	Q1- 24277,14747 24317,14768 24404,14770 24443,14756
 Kärntener Str.: Asphalt	Q0 6608,8277 6621,8221 6634,8134 6648,8064 6669,7974 6683,7847
 (Uferweg - Heidestr.): Kleinsteinpflaster	Q1- 8057,13923 7997,13892 7910,13848
@@ -13446,7 +13447,7 @@ Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 1
 Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2024-07-14 vvv
+#: last_checked: 2024-08-14 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
@@ -13655,6 +13656,8 @@ Töpchiner Weg [40-48]: Verbundsteinpflaster	Q1+ 11950,1275 11918,1211
 Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4495
 # 
 (Mauerpark - Schwedter Str.): Kleinsteinpflaster	Q1- 10071,15684 10110,15678 10123,15681
+# 
+(Hellersdorfer Str. - Ernst-Bloch-Str.): neu asphaltierter Radweg	Q0 22933,12837 22954,12843 22991,12844
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -17090,6 +17093,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: osm_watch: way id="593503609" version="9"
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553
 #: osm_watch: way id="24204822" version="29"
+#: last_checked: 2024-08-14
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -18107,7 +18111,7 @@ Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
 # 
 #: by: Birgit Graffunder vvv
 #: corrected_by: srt (Beton -> ...)
-Ernst-Bloch-Str.: Asphalt	Q0 23038,12706 22981,12794 22992,12848 23004,12908
+Ernst-Bloch-Str.: Asphalt	Q0 23038,12706 22981,12794 22991,12844 23004,12908
 #: confirmed_by: srt
 Ernst-Bloch-Str.: Beton	Q0- 23004,12908 23015,12963 23068,12955 23077,13002 23136,12993 23165,13010
 #: corrected_by: srt (Beton -> ...)
