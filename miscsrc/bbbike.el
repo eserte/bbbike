@@ -672,7 +672,7 @@
 	(description "")
 	source-id)
     (cond
-     ((string-match "\t\\([A-Za-z0-9_/-]+\\)\t\\(INUSE\\)?$" sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
+     ((string-match "\t\\([A-Za-z0-9_/.-]+\\)\t\\(INUSE\\)?$" sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
      ((string-match (concat "\\(" bbbike-viz2021-regexp "\\)") sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
      ((string-match "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/\\(.*\\)" sel) (setq source-id (concat "bvg2021:" (substring sel (match-beginning 1) (match-end 1)))))
      (t (error "No X selection or X selection does not contain a source-id")))
@@ -790,8 +790,8 @@
   'face 'bbbike-button
   'help-echo "Click button to browse (cached) URL")
 
-(setq bbbike-sourceid-in-pl-regexp  (concat "^[ ]*source_id\\(\\[inactive\\]\\)?[ ]*=>[ ]*'\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^'\"]*\\|LS/[A-Z0-9/-]*\\|AdB/[0-9-]+\\)"))
-(setq bbbike-sourceid-in-bbd-regexp (concat "^#:[ ]*source_id\\(\\[inactive\\]\\)?:?[ ]*\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^ \n]*\\|LS/[A-Z0-9/-]*\\|AdB/[0-9-]+\\)"))
+(setq bbbike-sourceid-in-pl-regexp  (concat "^[ ]*source_id\\(\\[inactive\\]\\)?[ ]*=>[ ]*'\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^'\"]*\\|LS/[A-Z0-9/.-]*\\|AdB/[0-9-]+\\)"))
+(setq bbbike-sourceid-in-bbd-regexp (concat "^#:[ ]*source_id\\(\\[inactive\\]\\)?:?[ ]*\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^ \n]*\\|LS/[A-Z0-9/.-]*\\|AdB/[0-9-]+\\)"))
 (setq bbbike-vmz-diff-file "~/cache/misc/diffnewvmz.bbd")
 
 ;; old definition when it was possible to create deeplinks for VMZ ids
