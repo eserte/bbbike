@@ -68,6 +68,7 @@ sub extract_headline {
     $headline =~ s{$headline_start_rx}{}; # TODO/DONE
     $headline =~ s{\[#A-F\]\s*}{}; # priority
     $headline =~ s{\s+:.*?:\s*$}{}; # tags
+    $headline =~ s{^\s+}{}; $headline =~ s{\s+$}{}; # trim
     $headline;
 }
 
