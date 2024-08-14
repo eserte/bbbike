@@ -82,10 +82,25 @@ org2bbd - find org-mode TODO items with geolocations and convert to bbd
 
     org2bbd TODO.org > TODO.bbd
 
-=head1 TODO
+=head1 DESCRIPTION
 
- * maybe make it public by moving to bbbike?
- * document pipe together with bbd2gpx
- * probably a better fallback for the location name would be a string on the same line like the geo link
+Search for geo locations in emacs org-mode files (i.e. links in the
+form C<< [[geo:lat,lon]] >>) and convert them into bbd data, which is
+written to stdout.
+
+Only items marked as C<TODO> are taken into account.
+
+The bbd record name is the link name, if it exists, otherwise it's the
+item headline (note: the latter might change in future).
+
+=head2 EXAMPLES
+
+To convert into a gpx file do something like the following:
+
+    ./miscsrc/org2bbd /path/to/file.org | ./miscsrc/bbd2gpx - > /path/to/file.gpx
+
+Same, but prettify the XML (requires C<xmllint>):
+
+    ./miscsrc/org2bbd /path/to/file.org | ./miscsrc/bbd2gpx - | xmllint -format - > /path/to/file.gpx
 
 =cut
