@@ -4697,6 +4697,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-rave-the-planet-auf-der-strasse-des-17-juni-in-tiergarten/
 #: by: https://www.ravetheplanet.com/demoroute-2024/
 #: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023) (inaktiv)
+#: source_id: viz2021:13.371607,52.515899,16.08.2024,18:00 (bis 18.08.2024)
 #: note: Sperrung des Pariser Platzes auf Webcam gesehen
 Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
@@ -16656,6 +16657,7 @@ EOF
        until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9, start => "2023-10-25T00:00:00"]], # findet 2023 nicht stat
+       recurrence_prewarn_days => 14,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -28738,7 +28740,7 @@ EOF
 #: source_id: 2147342174 (inaktiv)
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024) (bis 27.09.2024)
-#: source_id: viz2021:13.52779,52.49067,14.08.2024,14:30 (bis 27.09.2024)
+#: source_id: viz2021:13.52779,52.49067,14.08.2024,14:30 (bis 27.09.2024) (inaktiv)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -38337,7 +38339,7 @@ EOF
 #: also_indoor: traffic (G[falsch],W[falsch])
 # REMOVED --- #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
 #: last_checked: 2024-07-17
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2024-08-17
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
@@ -41433,7 +41435,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-08-06 vvv
+#: last_checked: 2024-08-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -42996,7 +42998,7 @@ EOF
 #: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
-#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024)
+#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 	q4::inwork; 25050,13539 25163,13494
@@ -43156,7 +43158,8 @@ EOF
      },
      { from  => 1715058000, # 2024-05-07 07:00
        until => $isodate2epoch->("2024-08-20 17:00:00"), # 1723129200, # 2024-08-08 17:00
-       text  => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis voraussichtlich 20.08.2024 17:00',
+       #text  => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis voraussichtlich 20.08.2024 17:00',
+       text  => 'Winckelmannstr.: einige Abschnitte wegen Gleisarbeiten gesperrt, bis voraussichtlich 20.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2024
@@ -43170,11 +43173,11 @@ EOF
 #: note: laut Baustellenplakat (siehe bahninfo-forum) nur bis 05.07.2024, oder gibt es da nur eine Änderung der Verkehrsführung?
 #: note: laut rbb bis 15.8.2024 (go with it)
 #: note: bei VIZ seit dem 8.8.2024 inaktiv (zu früh?)
-#: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024) (inaktiv) (bis 20.08.2024) (bis 15.08.2024, im Anschluss weitere Arbeiten)
+#: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024) (inaktiv) (bis 20.08.2024) (bis 15.08.2024, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.50508,52.44526,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
-Sterndamm: gemeinsamer Rad- und Gehweg	q3::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
-Winckelmannstr. am Sterndamm	q4::inwork 17428,4503 17476,4337
-Trützschlerstr.	q2::inwork 17471,4570 17612,4460
+# REMOVED --- Sterndamm: gemeinsamer Rad- und Gehweg	q3::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
+# REMOVED --- Winckelmannstr. am Sterndamm	q4::inwork 17428,4503 17476,4337
+# REMOVED --- Trützschlerstr.	q2::inwork 17471,4570 17612,4460
 #: source_id: viz2021:13.506038,52.441227,08.05.2024,07:00 (Winckelmannstr., bis 08.08.2024) (inaktiv) (bis 20.08.2024) (bis 19.08.2024, im Anschluss weitere Arbeiten)
 #: source_id: viz2021:13.5056,52.44039,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
 Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979 17465,3768
@@ -43304,7 +43307,7 @@ EOF
 #: source_id: viz2021:13.451021,52.489535,27.05.2024,07:00 (bis 05.07.2024) (inaktiv)
 #: XXX Sieht nicht nach einem baldigen Ende der Bauarbeiten aus.
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt's eine offizielle Wegführung für Radfahrer über den Hochbord.
-#: also_indoor: traffic (re-H[falsch],re-G[ungenau],W[ungenau],T[ungenau])
+#: also_indoor: traffic (ex-H[falsch],re-G,W[ungenau],T[ungenau])
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße und Kiefholzstraße beendet?
 #: last_checked: 2024-08-02
 #: check_frequency: 14d
@@ -43664,7 +43667,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-08-13 vvv
+#: last_checked: 2024-08-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -43811,7 +43814,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.51055,52.44458,02.07.2024,17:07 (bis 15.08.2024) (inaktiv)
-#: source_id: viz2021:13.508246,52.445764,02.07.2024,07:00 (hier nur Kfz-Verkehr, bis 15.08.2024) (bis 20.08.2024) (bis 15.08.2024)
+#: source_id: viz2021:13.508246,52.445764,02.07.2024,07:00 (hier nur Kfz-Verkehr, bis 15.08.2024) (bis 20.08.2024) (bis 15.08.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1808152802205503982 (hier auch nur Kfz-Verkehr)
 # REMOVED (Anlieger frei, keine Bauarbeiten erkennbar) --- #: add_fragezeichen: Sind Radfahrer von der Sperrung betroffen?
 	q4::inwork; 17794,4443 17676,4540 17516,4657
@@ -44033,7 +44036,7 @@ EOF
        text  => 'Elsenstr.: Bauarbeiten an der Karl-Kunger-Str., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (H,G,W,T)
+#: also_indoor: traffic (H,G,W,T,B)
 #: XXX Gehwegvorstreckungen werden gebaut
 #: last_checked: 2024-08-02
 #: check_frequency: 14d
@@ -44220,6 +44223,17 @@ EOF
 #: by: https://www.mercalisto.com/de/markt/78/wochenmarkt-cecilienplatz-ernst-bloch-strasse
 #: tempex: mo,mi,fr T09-T18
 	q4::temp:clock 23028,13062 23022,13133 22977,13148
+EOF
+     },
+     { from  => 1723932000, # 2024-08-18 00:00
+       until => 1733007599, # 2024-11-30 23:59
+       text  => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Wegs, voraussichtlich ab 19.08.2024 bis Ende November 2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
+#: XXX Wird tatsächlich dieser Weg gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
+#: next_check: 2024-08-18
+	2::inwork 12056,15159 12082,15206 12103,15218 12003,15311 11937,15349 11877,15366
 EOF
      },
     );

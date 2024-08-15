@@ -550,7 +550,7 @@ Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,88
 #: next_check_id: TRESKOWALLEE-2023
 #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023) (bis 30.11.2023) (bis 25.11.2023) (inaktiv)
 #: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024) (bis 05.04.2024) (bis 30.08.2024) (bis 27.09.2024)
-#: source_id: viz2021:13.52679,52.48659,14.08.2024,14:28 (bis 27.09.2024)
+#: source_id: viz2021:13.52679,52.48659,14.08.2024,14:28 (bis 27.09.2024) (inaktiv)
 #: source_id: bvg2021:396#BVG308894_0
 #: osm_watch: way id="30043322" version="31"
 #: last_checked: 2024-08-10 (osm)
@@ -609,12 +609,12 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 1
 #: last_checked ^^^
 # 
 #: next_check_id: SCHOENEWEIDE-2018
-#: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024)
+#: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024)
 #: note: Da der Königsplatz am 6.7.2024 weiterhin gesperrt sein wird, wird es hier erstmal keinen Straßenbahnverkehr geben.
 #: also_indoor: traffic (H,W)
 #: last_checked: 2024-08-05 (krickstadt) vvv
-#: next_check: 2024-08-15 vvv
+#: next_check: 2024-08-16 vvv
 #: valid: -20240817 vvv
 Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
 #: XXX hier kann man möglicherweise mittlerweile illegal abkürzen
@@ -3506,7 +3506,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-08-13
+#: last_checked: 2024-08-15
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4903,7 +4903,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
-#: last_checked: 2024-08-13
+#: last_checked: 2024-08-15
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 

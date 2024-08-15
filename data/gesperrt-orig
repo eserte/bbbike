@@ -147,7 +147,7 @@ Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
 #: XXX während der Bauarbeiten in der Brückenstraße ist die Einbahnstraßenregelung mindestens bis Fließstr. aufgehoben (aber auch die Radspur)
 #: XXX später könnte man den Abschnitt bis Kupferkamp mit 1s:q4 versehen
 #: last_checked: 2024-08-11 (krickstadt)
-#: next_check: 2024-08-15
+#: next_check: 2024-08-16
 Spreestr.	1no 17900,6072 17939,5968 17935,5961 17877,5860
 Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
@@ -3854,7 +3854,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-08-13
+#: last_checked: 2024-08-15
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -3889,7 +3889,7 @@ Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:q3:inwork 799
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2024-08-11 vvv
+#: last_checked: 2024-08-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-01 vvv
 #: osm_watch: way id="1054783030" version="3"
@@ -4242,7 +4242,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
 #: by: https://entwicklungsstadt.de/berlin-mitte-sichtbarer-fortschritt-beim-umbau-des-gendarmenmarktes/
-#: last_checked: 2024-08-05 vvv
+#: last_checked: 2024-08-15 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -5051,6 +5051,8 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (signalisierter Fußgängerüberweg Höhe Ecksteinweg ab Ende März 2024)
 #: by: https://nachgefragt.bvg.de/faq-schoeneweide/ (zum Zugang Schwarzer Weg --- ungewiss, ob es diesen noch geben wird)
 #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20240809 (Inbetriebnahme am 17.8.2024)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/die-bvg-faehrt-wieder-zum-bahnhof-berlin-schoeneweide-aber-vorher-wird-es-spannend-li.2245055
+#: by: https://www.nd-aktuell.de/artikel/1184528.oepnv-bvg-etappenziel-nach-jahren.html
 #: last_checked: 2024-07-17 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-08-17 vvv
@@ -5688,7 +5690,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/erweiterungsbau-bundesministerium-des-innern.562/#post-22257
 #: osm_watch: way id="257432926" version="11"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2024-06-02
+#: last_checked: 2024-08-15 (daf)
 #: check_frequency: 180d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754 7556,12763
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731
