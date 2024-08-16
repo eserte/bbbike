@@ -7243,9 +7243,9 @@ asphaltiert	Q0 21303,19918 21329,19947 21318,19984 21174,20436 21142,20575 21140
 Lindenberger Str. (Ahrensfelde): gut asphaltiert	Q0 21975,19068 21895,19198 21878,19226 21801,19325 21692,19455 21675,19477 21665,19490
 #: corrected_by: srt (fr¸her m‰ﬂiger Asphalt, neu gemacht)
 Mehrow - Hˆnow: Asphalt	Q0 25232,18413 25253,18365 25497,17801
-#: add_fragezeichen: Ist der Asphalt nach der Fahrbahnsanierung besser?
-#: next_check: 2024-09-06
-Mehrow - Hˆnow: m‰ﬂiger Asphalt	Q1 25497,17801 25524,17739 25587,17593 25686,17365 25764,17255 25889,17093 25923,17002 25958,16901 26132,16385
+#: historical_note: bis August 2024: m‰ﬂiger Asphalt, Q1
+# REMOVED (s¸dliches Ende durch mapillary best‰tigt) --- #: add_fragezeichen: Ist der Asphalt nach der Fahrbahnsanierung besser? --- #: next_check: 2024-09-06
+Mehrow - Hˆnow: Asphalt	Q0 25497,17801 25524,17739 25587,17593 25686,17365 25764,17255 25889,17093 25923,17002 25958,16901 26132,16385
 Tanklager Seefeld: sehr guter Asphalt	Q0 26764,23083 26860,22984 27428,23161 28267,23147 28563,23176 28936,23307
 #: corrected_by: srt (sehr guter Asphalt, Q0 -> ...)
 #: note: in diesem Bereich zwei Aufpflasterungen mit schlechtem Kopfsteinpflaster, nur Richtung Nordwesten einigermaﬂen auf Kleinsteinpflaster umfahrbar
@@ -9030,7 +9030,7 @@ Am Schlangenfenn (Potsdam): guter Asphalt	Q0 -10585,-5528 -10630,-5440 -10652,-5
 #: by: ^^^
 # 
 #: by: Kalle Seeberg
-Fritz-Lang-Str.: guter Beton	Q0- -7204,-4352 -7149,-4407 -7136,-4418 -7107,-4449 -7076,-4482 -7049,-4505 -6961,-4588 -6940,-4609
+Fritz-Lang-Str.: guter Beton	Q0- -7204,-4352 -7189,-4365 -7149,-4407 -7136,-4418 -7107,-4449 -7076,-4482 -7049,-4505 -6961,-4588 -6940,-4609
 # 
 #: by: urb vvv
 Am Alten Krug: sehr schlechtes Pflaster	Q3 1695,-12417 1557,-12572
@@ -9224,6 +9224,13 @@ Marwitzer Str.: Asphalt	Q2+ -10417,17770 -10344,17792 -10239,17791 -10114,17740
 #: by ^^^
 # 
 #: by: mapillary vvv
+Eduard-von-Winterstein-Str. (Potsdam): Beton	Q0- -7531,-4446 -7408,-4562
+Oskar-Meﬂter-Str. (Potsdam): Verbundsteinpflaster/Beton	Q1+ -7702,-4629 -7582,-4742
+Gauﬂstr.: Beton	Q0- -7094,-3976 -7081,-3952 -7084,-3919 -7085,-3897 -7094,-3679
+Gauﬂstr.: Beton	Q0- -6953,-3680 -6959,-3804 -6965,-3891 -7085,-3897
+(Konrad-Wolf-Allee - Gauﬂstr.): Asphalt	Q0 -7189,-4365 -7142,-4288 -7104,-4204 -7084,-4122 -7094,-3976
+Slatan-Dudow-Str. (Potsdam): Asphalt	Q0 -7498,-4655 -7476,-4673
+Hermann-Muthesius-Str. (Potsdam): Asphalt	Q0 -11008,-3382 -10929,-3508 -10875,-3578
 (Kirschallee - R¸ckertstr.): Wechsel aus Asphalt, Beton und Rasengittersteinen	Q1 -15671,1990 -15875,2079 -15942,2110 -16004,2136 -16034,2150 -16396,2310
 Schneiderweg (Potsdam): Beton	Q0- -15795,2756 -15757,2526
 Lindenallee: Betonplatten	Q2 -15169,1741 -15160,1798

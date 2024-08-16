@@ -176,12 +176,12 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: by[removed]: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023) (umbenannt)
-#: by: https://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung) (3. Quartal 2024 - 3. Quartal 2024)
+#: by: https://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung) (3. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2025 - 3. Quartal 2025)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
 #: osm_watch: way id="102486250" version="23"
 #: last_checked: 2024-06-22
 #: check_frequency: 120d
-#: next_check: 2024-09-30
+#: next_check: 2025-09-30
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
@@ -495,7 +495,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 1 (Fahrradstraße?)
-#: last_checked: 2024-08-10 vvv
+#: last_checked: 2024-08-14 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: osm_watch: way id="169459736" version="14"
@@ -10985,7 +10985,8 @@ Fischerstr.: Asphaltschäden	Q1+ 16423,10259 16492,10163 16539,10097
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel): wassergebundene Decke	Q1 10070,15626 10091,15630
 (Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10050,15824
-(Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10050,15824 10061,15775 10045,15754 10071,15684
+#: historical_note: bis 2024: wassergebundene Decke, Q1
+(Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0- 10050,15824 10061,15775 10045,15754 10071,15684
 #: historical_note: bis Herbst 2023: wassergebundene Decke, Q1
 (Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0- 10071,15684 10079,15661
 (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10079,15661 10091,15630
@@ -11809,6 +11810,7 @@ In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
 #: XXX Ist die Qualität zwischen Morsbronner Weg und Kollostr. nach den Bauarbeiten besser geworden?
 #: osm_watch: way id="30699235" version="29"
+#: osm_watch: note 4386758 1
 #: next_check: 2024-08-16
 Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403
 # REMOVED (nicht perfekt, Richtung Westen noch immer etwas wellig, aber keine Schlaglöcher mehr) --- #: XXX verschwinden die Schlaglöcher nach den Bauarbeiten? --- #: source_id: 2147345133 (bis 21.1.2021) (mittlerweile inaktiv) --- #: last_checked: 2020-08-29 --- #: next_check: 2021-01-21 --- #: next_check: 2020-12-17

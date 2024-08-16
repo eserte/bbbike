@@ -24,9 +24,9 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 #: next_check: 2024-08-17
 Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17736,5441
 # 
-# REMOVED (steht noch, ist aber ausgeschaltet) --- #: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325
-# REMOVED --- #: last_checked: 2024-08-01 (mapillary)
-# REMOVED --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
+#: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325
+#: last_checked: 2024-08-14 (mapillary)
+Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: last_checked: 2024-07-24 (mapillary)
@@ -44,12 +44,12 @@ Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 # REMOVED (reguläre Ampel existiert bereits, Doppelung nicht möglich) --- #: source_id: viz2021:13.343826,52.613505,05.08.2024,09:00 (bis 02.09.2024) --- #: next_check: 2024-09-02 --- #: valid: -20240902 --- Zabel-Krüger-Damm/Am Vierrutenberg: Gegenverkehrsregelung	X::inwork::alternating 6075,23022
 # 
 #: source_id: viz2021:13.52539,52.51456,27.05.2024,13:00 (bis 21.06.2024) (inaktiv)
-#: source_id: viz2021:13.524783,52.514028,27.05.2024,13:00 (bis 21.06.2024) (bis 22.07.2024) (bis 19.08.2024)
+#: source_id: viz2021:13.524783,52.514028,27.05.2024,13:00 (bis 21.06.2024) (bis 22.07.2024) (bis 19.08.2024) (bis 09.09.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1795047296100647162
 #: by: https://pbs.twimg.com/media/GOW6QvLXUAY5vpt?format=jpg&name=large (direkte Zufahrt zur südlichen Marzahner Chaussee nicht möglich)
-#: last_checked: 2024-07-30 (mapillary)
-#: next_check: 2024-08-19
-#: valid: -20240819
+#: last_checked: 2024-08-14 (mapillary)
+#: next_check: 2024-09-09
+#: valid: -20240909
 Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
 # 
 #: source_id: viz2021:13.593606,52.444772,15.04.2024,10:00 (bis 17.06.2024) (bis 02.08.2024) (bis 09.08.2024) (bis 12.08.2024) (bis 18.10.2024)
@@ -124,7 +124,7 @@ Michaelbrücke	F::inwork 11676,11839
 #: next_check_id: STERNDAMM-2023
 #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024)
 #: source_id: viz2021:13.509893,52.456325,14.06.2024,14:49 (bis 15.08.2024) (inaktiv)
-#: source_id: viz2021:13.509919,52.456406,16.08.2024,07:00 (bis 16.08.2024)
+#: source_id: viz2021:13.509919,52.456406,16.08.2024,07:00 (bis 16.08.2024) (inaktiv)
 #: source_id: viz2021:13.509919,52.456406,16.08.2024,18:00 (bis 06.09.2024)
 #: note: etwa 20m südöstlich
 #: last_checked: 2024-07-29 (krickstadt)
@@ -414,7 +414,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-14 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -1298,7 +1298,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2024-08-05
+#: last_checked: 2024-08-16 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	F::inwork 8096,11393

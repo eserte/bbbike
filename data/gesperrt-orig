@@ -143,12 +143,12 @@ Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 
 Antonienstr.	1 3930,17923 3946,18003 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	1s:q3 4228,19024 4223,18982
 Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
-#: next_check_id: SCHOENEWEIDE-2018
-#: XXX während der Bauarbeiten in der Brückenstraße ist die Einbahnstraßenregelung mindestens bis Fließstr. aufgehoben (aber auch die Radspur)
-#: XXX später könnte man den Abschnitt bis Kupferkamp mit 1s:q4 versehen
-#: last_checked: 2024-08-11 (krickstadt)
-#: next_check: 2024-08-16
-Spreestr.	1no 17900,6072 17939,5968 17935,5961 17877,5860
+# REMOVED --- #: next_check_id: SCHOENEWEIDE-2018
+# REMOVED --- #: XXX während der Bauarbeiten in der Brückenstraße ist die Einbahnstraßenregelung mindestens bis Fließstr. aufgehoben (aber auch die Radspur)
+# REMOVED --- #: XXX später könnte man den Abschnitt bis Kupferkamp mit 1s:q4 versehen
+# REMOVED --- #: last_checked: 2024-08-11 (krickstadt)
+# REMOVED --- #: next_check: 2024-08-16
+# REMOVED --- Spreestr.	1no 17900,6072 17939,5968 17935,5961 17877,5860
 Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
@@ -1538,6 +1538,7 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=760082#post760082
 #: by: https://www.berliner-woche.de/wedding/c-bauen/bau-des-neuen-herzzentrums-der-charit-hat-begonnen_a414476 (bis 2028)
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2024/pressemitteilung.1473927.php (Bebauungsplan)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/herzzentrum-wedding.533/#post-23580
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
 #: last_checked: 2024-08-10
@@ -1673,6 +1674,7 @@ Nordufer: Radweg	1::igndisp 7156,14763 7129,14787
 ######################################################################
 #: section: Sperrungen in Potsdam vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+Konrad-Wolf-Allee [Nebenstraße]	1 -7189,-4365 -7476,-4673
 Türkstr.	1 -12226,-1069 -12187,-1092
 Türkstr.	1 -12187,-1092 -12248,-1107
 (Wollestr. - Mühlenstr.)	1 -10790,-1178 -10787,-1162 -10730,-1103 -10691,-1097 -10648,-1130
@@ -3803,6 +3805,10 @@ weites Drängelgitter	BNP:2::trailer=7 1772,42835
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: mapillary
+#: last_checked: 2024-08-10
+Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
+# 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-marzahn-hellersdorf.42/page-7#post-23307
 #: osm_watch: way id="1306238147" version="1"
 #: osm_watch: way id="25795669" version="13"
@@ -3877,7 +3883,7 @@ Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: historical_note: am Anfang Einbahnstraße, offen Richtung Norden (1s:q3:inwork), später komplett zu (q4::inwork in handicap_s-orig), dann wieder (laut osm) Einbahnstraße
 #: osm_watch: way id="4596985" version="28"
-#: last_checked: 2024-06-22
+#: last_checked: 2024-08-14 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:q3:inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -4014,7 +4020,7 @@ Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,90
 #: XXX gehört das hier auch zu "Kokoni One"?
 #: XXX wird vermutlich Betonpflaster sein
 #: XXX nördlicher Abschnitt vermutlich schon fertig (siehe Luftbild 2024)
-#: osm_watch: way id="1119861689" version="9"
+#: osm_watch: way id="1119861689" version="10"
 #: last_checked: 2024-08-12 (mapillary)
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 90d
@@ -4126,12 +4132,7 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 # 
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: MAUERPARK-2022 --- #: osm_watch: way id="30441457" version="31" --- #: last_checked: 2024-04-08 --- #: check_frequency: 60d --- Mauerpark: Weg gesperrt	2::inwork 10091,15630 10155,15473
 # 
-#: next_check_id: MAUERPARK-2022
-# REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"
-#: osm_watch: way id="1218990564" version="6"
-#: last_checked: 2024-08-13
-#: check_frequency: 30d
-Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
+# REMOVED --- #: next_check_id: MAUERPARK-2022 --- # REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"--- #: osm_watch: way id="1218990564" version="6" --- #: last_checked: 2024-08-13 --- #: check_frequency: 30d --- Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
 # 
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1465666.php (ab Anfang 2024; Abschluss der Bauarbeiten im Frühjahr 2026)
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
@@ -5056,7 +5057,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: last_checked: 2024-07-17 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-08-17 vvv
-#: osm_watch: way id="1085382250" version="7"
+# REMOVED --- #: osm_watch: way id="1085382250" version="7"
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17578,5566 17588,5573 17736,5441
 # REMOVED --- #: osm_watch: way id="226163591" version="6"
 # REMOVED (wurde in strassen-orig entfernt) --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17634,5607 17675,5521

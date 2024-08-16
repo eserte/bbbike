@@ -274,7 +274,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="33"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2024-06-22
+#: last_checked: 2024-08-14 (mapillary)
 #: check_frequency: 60d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -608,20 +608,20 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 1
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: SCHOENEWEIDE-2018
-#: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024)
-#: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024)
-#: note: Da der Königsplatz am 6.7.2024 weiterhin gesperrt sein wird, wird es hier erstmal keinen Straßenbahnverkehr geben.
-#: also_indoor: traffic (H,W)
-#: last_checked: 2024-08-05 (krickstadt) vvv
-#: next_check: 2024-08-16 vvv
-#: valid: -20240817 vvv
-Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
-#: XXX hier kann man möglicherweise mittlerweile illegal abkürzen
-Michael-Brückner-Str.: Umwege an der Einmündung Brückenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: SCHOENEWEIDE-2018
+# REMOVED --- #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024)
+# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024)
+# REMOVED --- #: note: Da der Königsplatz am 6.7.2024 weiterhin gesperrt sein wird, wird es hier erstmal keinen Straßenbahnverkehr geben.
+# REMOVED --- #: also_indoor: traffic (H,W)
+# REMOVED --- #: last_checked: 2024-08-05 (krickstadt) vvv
+# REMOVED --- #: next_check: 2024-08-16 vvv
+# REMOVED --- #: valid: -20240817 vvv
+# REMOVED --- Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
+# REMOVED --- #: XXX hier kann man möglicherweise mittlerweile illegal abkürzen
+# REMOVED --- Michael-Brückner-Str.: Umwege an der Einmündung Brückenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED (abgesperrt, wird vermutlich bald zurückgebaut) --- #: next_check_id: STERNDAMM-2020 --- #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: last_checked: 2021-10-02 --- #: check_frequency: 21d --- #: next_check: 2021-10-31 --- Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
@@ -729,7 +729,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="16096289" version="32"
 #: osm_watch: way id="707100249" version="21"
-#: last_checked: 2024-08-05
+#: last_checked: 2024-08-16 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1043,14 +1043,14 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: source_id: viz2021:13.588853,52.539896,04.07.2023,06:00 (Gothaer, bis 25.07.2024) (inaktiv)
 #: source_id: viz2021:13.588897,52.538931,25.07.2024,10:00 (Gothaer, bis 31.07.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
-#: osm_watch: note 3581028 5
+#: osm_watch: note 3581028 6
 #: last_checked: 2024-08-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-31 vvv
 # REMOVED --- #: next_check: 2025-07-31 vvv
 # REMOVED --- #: osm_watch: way id="175916583" version="11" --- Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 # REMOVED --- #: osm_watch: way id="26692569" version="17" --- Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2+::inwork; 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
-#: osm_watch: way id="1278425789" version="3"
+#: osm_watch: way id="1278425789" version="4"
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork 22577,15109 22599,15105 22726,15082 22899,15073
 # REMOVED --- Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
 # REMOVED (für Radfahrer frei) --- #: osm_watch: way id="26505949" version="26" --- Eisenacher Str.: Einbahnstraßenregelung, evtl. auch für Radfahrer gültig	q3::inwork; 23113,15110 22899,15073

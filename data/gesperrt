@@ -1025,6 +1025,7 @@ B2	2::igndisp -13096,5584 -12865,5567 -12718,5571
 Glienicker Str. (Köpenick): Radweg	1::igndisp 21363,3699 21308,3644
 Nordufer: Radweg	1::igndisp 7156,14763 7129,14787
 (Spandauer Damm - Wiesendamm)	1::igndisp -278,13094 -227,12994
+Konrad-Wolf-Allee [Nebenstraße]	1 -7189,-4365 -7476,-4673
 Türkstr.	1 -12226,-1069 -12187,-1092
 Türkstr.	1 -12187,-1092 -12248,-1107
 (Wollestr. - Mühlenstr.)	1 -10790,-1178 -10787,-1162 -10730,-1103 -10691,-1097 -10648,-1130
@@ -3458,6 +3459,7 @@ Schwingtor	BNP:5:-94:trailer=10 25136,10768
 Schranke	BNP:3:-213:trailer=10 13081,14090
 weites Drängelgitter	BNP:2:-78:trailer=7 7157,18810
 weites Drängelgitter	BNP:2:-215:trailer=7 1772,42835
+Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 Zum Feldrain (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130
 Milanstr. (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22854,-5002 22814,-5119
@@ -3492,7 +3494,6 @@ Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
 Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
 Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesperrt	2::inwork 8542,11502 8442,11555
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
-Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 (Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7789,12764 7649,12764

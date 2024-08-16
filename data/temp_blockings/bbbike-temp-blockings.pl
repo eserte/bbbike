@@ -4698,6 +4698,10 @@ EOF
 #: by: https://www.ravetheplanet.com/demoroute-2024/
 #: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,16.08.2024,18:00 (bis 18.08.2024)
+#: source_id: viz2021:13.349991,52.514511,17.08.2024,09:00 (bis 18.08.2024)
+#: source_id: viz2021:13.354603,52.517071,17.08.2024,21:00 (bis 18.08.2024)
+#: source_id: viz2021:13.35107,52.51429,16.08.2024,18:00 (bis 18.08.2024)
+#: source_id: viz2021:13.370518,52.51725,16.08.2024,18:00 (bis 18.08.2024)
 #: note: Sperrung des Pariser Platzes auf Webcam gesehen
 Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
@@ -42159,7 +42163,7 @@ EOF
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-08-03 (daf)
+#: last_checked: 2024-08-16 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801
@@ -43994,8 +43998,8 @@ EOF
        text  => 'Lanker Str.: Einbahnstraßenregelung zwischen Schräger Weg und Bahnhofstr., vom 19.07.2024 07:00 bis 16.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.480108,52.608447,19.07.2024,07:00 (bis 16.08.2024)
-#: source_id: viz2021:13.481613,52.609635,19.07.2024,07:00 (bis 16.08.2024)
+#: source_id: viz2021:13.480108,52.608447,19.07.2024,07:00 (bis 16.08.2024) (inaktiv)
+#: source_id: viz2021:13.481613,52.609635,19.07.2024,07:00 (bis 16.08.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1814149414740754617
 #: by: https://pbs.twimg.com/media/GSxWYnnXsAEbN9r?format=jpg&name=medium (Sackgasse, Radfahrer frei im eigentlichen Baubereich; Einbahnstraßenregelung in der Lankestr.)
 #: by: https://pbs.twimg.com/media/GSxWYnqXsAAUWqH?format=jpg&name=medium
@@ -44067,7 +44071,7 @@ EOF
        text  => 'Halbe - Teurow: Bauarbeiten, Sperrung, vom 29.07.2024 08:00 Uhr bis 16.08.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 246100872 (bis 16.08.2024)
+#: source_id: 246100872 (bis 16.08.2024) (inaktiv)
 	2::inwork 32538,-34303 32236,-34064 32119,-33902 31884,-33395
 EOF
      },
@@ -44142,7 +44146,7 @@ EOF
        text  => 'Westphalweg: Bauarbeiten zwischen Morsbronner Weg und Kollostr., evtl. sind Radfahrer betroffen, vom 05.08.2024 08:00 bis 16.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.389248,52.445645,05.08.2024,08:00 (bis 16.08.2024)
+#: source_id: viz2021:13.389248,52.445645,05.08.2024,08:00 (bis 16.08.2024) (inaktiv)
 	q4::inwork 9428,4419 9562,4412 9668,4403
 EOF
      },

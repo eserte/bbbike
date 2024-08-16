@@ -564,6 +564,10 @@ Krokusstr.	2::temp 16610,1715 16767,1831
 #: by: https://www.ravetheplanet.com/demoroute-2024/
 #: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,16.08.2024,18:00 (bis 18.08.2024)
+#: source_id: viz2021:13.349991,52.514511,17.08.2024,09:00 (bis 18.08.2024)
+#: source_id: viz2021:13.354603,52.517071,17.08.2024,21:00 (bis 18.08.2024)
+#: source_id: viz2021:13.35107,52.51429,16.08.2024,18:00 (bis 18.08.2024)
+#: source_id: viz2021:13.370518,52.51725,16.08.2024,18:00 (bis 18.08.2024)
 #: note: Sperrung des Pariser Platzes auf Webcam gesehen
 Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
@@ -7231,7 +7235,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-08-03 (daf)
+#: last_checked: 2024-08-16 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801
@@ -8152,21 +8156,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'handicap',
          'until' => 1725030000
        },
-       {
-         'data' => '#: source_id: viz2021:13.480108,52.608447,19.07.2024,07:00 (bis 16.08.2024)
-#: source_id: viz2021:13.481613,52.609635,19.07.2024,07:00 (bis 16.08.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1814149414740754617
-#: by: https://pbs.twimg.com/media/GSxWYnnXsAEbN9r?format=jpg&name=medium (Sackgasse, Radfahrer frei im eigentlichen Baubereich; Einbahnstraßenregelung in der Lankestr.)
-#: by: https://pbs.twimg.com/media/GSxWYnqXsAAUWqH?format=jpg&name=medium
-#: by: https://www.berliner-woche.de/karow/c-verkehr/blankenburger-chaussee-gesperrt_a421315
-	q4::inwork; 15050,22765 15141,22896
-',
-         'from' => 1721278800,
-         'id' => 4119,
-         'text' => 'Lanker Str.: Einbahnstraßenregelung zwischen Schräger Weg und Bahnhofstr., vom 19.07.2024 07:00 bis 16.08.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1723820400
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/events/8521846-2229501-koepenicker-herbstspektakel.html
 	2::temp 22071,4501 22057,4531
@@ -8215,16 +8205,7 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'type' => 'gesperrt',
          'until' => 1725112800
        },
-       {
-         'data' => '#: source_id: 246100872 (bis 16.08.2024)
-	2::inwork 32538,-34303 32236,-34064 32119,-33902 31884,-33395
-',
-         'from' => 1722146400,
-         'id' => 4125,
-         'text' => 'Halbe - Teurow: Bauarbeiten, Sperrung, vom 29.07.2024 08:00 Uhr bis 16.08.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1723816800
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2024-08-02
@@ -8286,16 +8267,7 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'type' => 'gesperrt',
          'until' => 1726495200
        },
-       {
-         'data' => '#: source_id: viz2021:13.389248,52.445645,05.08.2024,08:00 (bis 16.08.2024)
-	q4::inwork 9428,4419 9562,4412 9668,4403
-',
-         'from' => 1722751200,
-         'id' => 4132,
-         'text' => 'Westphalweg: Bauarbeiten zwischen Morsbronner Weg und Kollostr., evtl. sind Radfahrer betroffen, vom 05.08.2024 08:00 bis 16.08.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1723820400
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.382396,52.530372,09.08.2024,16:02 (nur der Radverkehr wird umgeleitet! bis 30.09.2024)
 #: source_id: viz2021:13.3794,52.52949,09.08.2024,17:31 (bis 30.09.2024) (inaktiv)
