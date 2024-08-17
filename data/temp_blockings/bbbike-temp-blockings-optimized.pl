@@ -5466,7 +5466,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-07-24 (mapillary)
+#: last_checked: 2024-08-17
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5482,12 +5482,13 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
-#: last_checked: 2024-08-02 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2024-08-17 vvv
+#: check_frequency: 21d vvv
 #: osm_watch: note 4090527 5
-zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
+# REMOVED --- zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
 #: osm_watch: way id="36738527" version="45"
 zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
+Elbestr./Weserstr.: Umwege	q3::inwork 12822,8675 12881,8750 12954,8840
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED --- #: next_check: 2023-07-31
@@ -5495,7 +5496,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 ',
          'from' => 1690668000,
          'id' => 3538,
-         'text' => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Anfang August 2024)',
+         'text' => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, Umwege im Kreuzungsbereich Elbestr. (Stand Mitte August 2024)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6186,9 +6187,10 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
 # REMOVED --- #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
-#: last_checked: 2024-07-17
+#: last_checked: 2024-08-17
+#: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2024-08-17
+# REMOVED --- #: next_check: 2024-08-17
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 ',
          'from' => undef,
@@ -6872,9 +6874,9 @@ Fritschestr.	q4::inwork 3339,11433 3368,11237
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-08-11 (krickstadt) vvv
+#: last_checked: 2024-08-17 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-08-17 vvv
+#: next_check: 2024-10-20 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="7"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -7161,7 +7163,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: add_fragezeichen: Ist die Bouchéstr. weiterhin wegen Bauarbeiten gesperrt?
 # REMOVED --- #: note Halteverbotsschilder bis 08.07.2024 (scheint aber nicht schaffbar zu sein)
 #: note: neues Baustellenschild der Wasserbetriebe: bis November 2024
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-17
 #: check_frequency: 30d
 #: next_check: 2024-11-30
 	q2::inwork 13489,9456 13357,9313
@@ -7452,16 +7454,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
          'until' => 1724079600
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.296893,52.528484,18.03.2024,07:00 (bis 29.06.2024) (bis 17.08.2024)
-	q4::inwork 3066,13514 3159,13492
-',
-         'from' => 1710655200,
-         'id' => 4025,
-         'text' => 'Brahestr.: Bauarbeiten zwischen Tegeler Weg und Fabriciusstr., evtl. sind auch Radfahrer betroffen, vom 18.03.2024 07:00 bis 17.08.2024 20:00',
-         'type' => 'handicap',
-         'until' => 1723917600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7630,35 +7623,7 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
          'type' => 'handicap',
          'until' => 1725634800
        },
-       {
-         'data' => '#: next_check_id: STERNDAMM-2024
-#: by: https://www.bahninfo-forum.de/read.php?9,726524,798077#msg-798077 (Umleitungsplan)
-#: by: https://www.bvg.de/dam/jcr:af2cde0c-259c-48dd-a34e-a6451c81540d/Kartenausschnitt-Johannisthal_240319.png
-#: by: https://www.bahninfo-forum.de/read.php?9,726524,798920#msg-798920
-#: by: http://thomas.krickstadt.de/strassenbahnen/2024-05-04-gleisschleife-johannisthal/index.html
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1788060004194341063
-#: by: https://pbs.twimg.com/media/GM-T_ItXAAEbotS?format=jpg&name=large (Sterndamm)
-#: by: https://pbs.twimg.com/media/GM-UPCQXoAAPE8L?format=jpg&name=large (Winckelmannstr.)
-#: note: laut Baustellenplakat (siehe bahninfo-forum) nur bis 05.07.2024, oder gibt es da nur eine Änderung der Verkehrsführung?
-#: note: laut rbb bis 15.8.2024 (go with it)
-#: note: bei VIZ seit dem 8.8.2024 inaktiv (zu früh?)
-#: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024) (inaktiv) (bis 20.08.2024) (bis 15.08.2024, im Anschluss weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.50508,52.44526,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
-# REMOVED --- Sterndamm: gemeinsamer Rad- und Gehweg	q3::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
-# REMOVED --- Winckelmannstr. am Sterndamm	q4::inwork 17428,4503 17476,4337
-# REMOVED --- Trützschlerstr.	q2::inwork 17471,4570 17612,4460
-#: source_id: viz2021:13.506038,52.441227,08.05.2024,07:00 (Winckelmannstr., bis 08.08.2024) (inaktiv) (bis 20.08.2024) (bis 19.08.2024, im Anschluss weitere Arbeiten)
-#: source_id: viz2021:13.5056,52.44039,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
-Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979 17465,3768
-#: by: krickstadt
-Haeckelstr.	q4::inwork 17379,3932 17468,3979
-',
-         'from' => 1715058000,
-         'id' => 4057,
-         'text' => 'Winckelmannstr.: einige Abschnitte wegen Gleisarbeiten gesperrt, bis voraussichtlich 20.08.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1724166000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7683,7 +7648,7 @@ Haeckelstr.	q4::inwork 17379,3932 17468,3979
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt\'s eine offizielle Wegführung für Radfahrer über den Hochbord.
 #: also_indoor: traffic (ex-H[falsch],re-G,W[ungenau],T[ungenau])
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße und Kiefholzstraße beendet?
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-17
 #: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 ',
@@ -7719,7 +7684,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: also_indoor: traffic (ex-H,re-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-08-06 (traffic) vvv
+#: last_checked: 2024-08-17 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-08-31 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -8174,7 +8139,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: also_indoor: traffic (H,G,W,T,B)
 #: XXX Gehwegvorstreckungen werden gebaut
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-17
 #: check_frequency: 14d
 Elsenstr.	q3::inwork 13766,9200 13664,9073
 ',
@@ -8220,7 +8185,7 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
        {
          'data' => '#: also_indoor: traffic (H,B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-04
+#: last_checked: 2024-08-16
 #: check_frequency: 30d
 #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -8232,8 +8197,8 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'until' => 1726351200
        },
        {
-         'data' => '#: osm_watch: way id="27457006" version="14"
-#: last_checked: 2024-07-01
+         'data' => '#: osm_watch: way id="27457006" version="15"
+#: last_checked: 2024-08-17 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -8357,7 +8322,7 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
 #: XXX Wird tatsächlich dieser Weg gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
-#: next_check: 2024-08-18
+#: next_check: 2024-08-19
 	2::inwork 12056,15159 12082,15206 12103,15218 12003,15311 11937,15349 11877,15366
 ',
          'from' => 1723932000,

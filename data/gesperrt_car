@@ -2592,3 +2592,11 @@ Bansiner Str. -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22896,12827 22933
 Bansiner Str. -> Ernst-Bloch-Str.: Mittelstreifen	3::igndisp 22896,12827 22933,12837 22954,12843
 Ernst-Bloch-Str. -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22954,12843 22933,12837 22967,12647
 Ernst-Bloch-Str. -> Bansiner Str.: Mittelstreifen	3::igndisp 22954,12843 22933,12837 22896,12827
+(Straßenbahnwendeschleife Schöneweide): nur für BVG und Radfahrer	2 17754,5460 17619,5594 17597,5614
+Straßenbahntrasse	3nocross::ignrte 17754,5460 17736,5441 17695,5394
+Sterndamm -> Ecksteinweg: Straßenbahntrasse	3::igndisp 17754,5460 17736,5441 17762,5408
+Sterndamm -> Bushaltestelle und Str.nbahnwendeschleife Schöneweide: Straßenbahntrasse	3::igndisp 17695,5394 17736,5441 17592,5552
+Bushaltestelle und Str.nbahnwendeschleife Schöneweide -> Sterndamm: Straßenbahntrasse	3::igndisp 17592,5552 17736,5441 17754,5460
+Bushaltestelle und Str.nbahnwendeschleife Schöneweide -> Ecksteinweg: Straßenbahntrasse	3::igndisp 17592,5552 17736,5441 17762,5408
+Ecksteinweg -> Sterndamm: Straßenbahntrasse	3::igndisp 17762,5408 17736,5441 17695,5394
+Ecksteinweg -> Bushaltestelle und Str.nbahnwendeschleife Schöneweide: Straßenbahntrasse	3::igndisp 17762,5408 17736,5441 17592,5552

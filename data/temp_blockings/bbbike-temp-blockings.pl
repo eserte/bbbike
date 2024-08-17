@@ -22641,7 +22641,7 @@ EOF
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124
 #: source_id: 2147339574 (inaktiv)
 #: confirmed_by: srt
-	1::inwork 17886,5587 17765,5469 17747,5452 17736,5441
+	1::inwork 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
 EOF
      },
      { from  => 1376816220, # 2013-08-18 10:57
@@ -24852,7 +24852,7 @@ EOF
 #: note: laut BA Treptow-Köpenick geht die Sperrung bis zum 2018-06-16, laut vmz bis Mitte Juni 2018
 #: by http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
 #: source_id: 2147342409
-	2::inwork 17886,5587 17765,5469 17747,5452 17736,5441
+	2::inwork 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
 EOF
      },
      { from  => 1425164400, # 2015-03-01 00:00
@@ -35696,7 +35696,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-07-24 (mapillary)
+#: last_checked: 2024-08-17
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -35704,19 +35704,21 @@ EOF
      },
      { from  => $isodate2epoch->("2023-07-30 00:00:00"), # undef, # 
        until => undef, # 1654702215, # undef, # XXX
-       text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Anfang August 2024)',
+       #text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Anfang August 2024)',
+       text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, Umwege im Kreuzungsbereich Elbestr. (Stand Mitte August 2024)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="1"
-#: last_checked: 2024-08-02 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2024-08-17 vvv
+#: check_frequency: 21d vvv
 #: osm_watch: note 4090527 5
-zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
+# REMOVED --- zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
 #: osm_watch: way id="36738527" version="45"
 zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
+Elbestr./Weserstr.: Umwege	q3::inwork 12822,8675 12881,8750 12954,8840
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED --- #: next_check: 2023-07-31
@@ -38342,9 +38344,10 @@ EOF
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022, Seite 16)
 #: also_indoor: traffic (G[falsch],W[falsch])
 # REMOVED --- #: note: Einbahnstraßenschilder fehlen mittlerweile am Sterndamm, aber am anderen Ende sind weiterhin die Einfahrt-verboten-Schilder da
-#: last_checked: 2024-07-17
+#: last_checked: 2024-08-17
+#: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2024-08-17
+# REMOVED --- #: next_check: 2024-08-17
 	q4::temp; 17763,5104 17729,5091 17652,5082 17601,5090
 EOF
      },
@@ -40881,9 +40884,9 @@ EOF
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-08-11 (krickstadt) vvv
+#: last_checked: 2024-08-17 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-08-17 vvv
+#: next_check: 2024-10-20 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="7"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -41830,7 +41833,7 @@ EOF
 #: add_fragezeichen: Ist die Bouchéstr. weiterhin wegen Bauarbeiten gesperrt?
 # REMOVED --- #: note Halteverbotsschilder bis 08.07.2024 (scheint aber nicht schaffbar zu sein)
 #: note: neues Baustellenschild der Wasserbetriebe: bis November 2024
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-17
 #: check_frequency: 30d
 #: next_check: 2024-11-30
 	q2::inwork 13489,9456 13357,9313
@@ -42674,11 +42677,11 @@ EOF
 EOF
      },
      { from  => 1710655200, # 2024-03-17 07:00
-       until => $isodate2epoch->("2024-08-17 20:00:00"), # 1719684000, # 2024-06-29 20:00
+       until => 1723915335, # $isodate2epoch->("2024-08-17 20:00:00"), # 1719684000, # 2024-06-29 20:00
        text  => 'Brahestr.: Bauarbeiten zwischen Tegeler Weg und Fabriciusstr., evtl. sind auch Radfahrer betroffen, vom 18.03.2024 07:00 bis 17.08.2024 20:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.296893,52.528484,18.03.2024,07:00 (bis 29.06.2024) (bis 17.08.2024)
+#: source_id: viz2021:13.296893,52.528484,18.03.2024,07:00 (bis 29.06.2024) (bis 17.08.2024) (inaktiv)
 	q4::inwork 3066,13514 3159,13492
 EOF
      },
@@ -43161,7 +43164,7 @@ EOF
 EOF
      },
      { from  => 1715058000, # 2024-05-07 07:00
-       until => $isodate2epoch->("2024-08-20 17:00:00"), # 1723129200, # 2024-08-08 17:00
+       until => 1723898534, # $isodate2epoch->("2024-08-20 17:00:00"), # 1723129200, # 2024-08-08 17:00
        #text  => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis voraussichtlich 20.08.2024 17:00',
        text  => 'Winckelmannstr.: einige Abschnitte wegen Gleisarbeiten gesperrt, bis voraussichtlich 20.08.2024 17:00',
        type  => 'handicap',
@@ -43313,7 +43316,7 @@ EOF
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt's eine offizielle Wegführung für Radfahrer über den Hochbord.
 #: also_indoor: traffic (ex-H[falsch],re-G,W[ungenau],T[ungenau])
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße und Kiefholzstraße beendet?
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-17
 #: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 EOF
@@ -43347,7 +43350,7 @@ EOF
 #: also_indoor: traffic (ex-H,re-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-08-06 (traffic) vvv
+#: last_checked: 2024-08-17 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-08-31 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -44042,7 +44045,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H,G,W,T,B)
 #: XXX Gehwegvorstreckungen werden gebaut
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-17
 #: check_frequency: 14d
 Elsenstr.	q3::inwork 13766,9200 13664,9073
 EOF
@@ -44092,7 +44095,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H,B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-04
+#: last_checked: 2024-08-16
 #: check_frequency: 30d
 #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -44103,8 +44106,8 @@ EOF
        text  => 'Heubuder Brücke: wegen Bauschäden gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="27457006" version="14"
-#: last_checked: 2024-07-01
+#: osm_watch: way id="27457006" version="15"
+#: last_checked: 2024-08-17 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 EOF
@@ -44236,7 +44239,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
 #: XXX Wird tatsächlich dieser Weg gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
-#: next_check: 2024-08-18
+#: next_check: 2024-08-19
 	2::inwork 12056,15159 12082,15206 12103,15218 12003,15311 11937,15349 11877,15366
 EOF
      },

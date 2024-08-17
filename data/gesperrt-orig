@@ -269,11 +269,15 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: by: https://www.nalepaland.de/
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
-#: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22), aber das südliche Tor ist immer zu
+#: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17), aber das südliche Tor ist immer zu -> mittlerweile ist nur das südliche Tor als gesperrt markiert
 #: osm_watch: way id="207757723" version="6"
-#: last_checked: 2024-05-22
+#: osm_watch: way id="275795707" version="3"
+#: osm_watch: node id="2804650438" version="3"
+#: last_checked: 2024-08-17
 #: check_frequency: 90d
-Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
+# REMOVED --- Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159
+Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
+# 
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 Kietzer Str.	1s:q3 22372,4496 22383,4470
 # 
@@ -1309,7 +1313,7 @@ Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 Schillerhof	1 7069,17204 6928,17154
 Bahnhofstr.	1 12166,21208 12202,21158
 Bahnhofstr.	1 12202,21158 12158,21166
-# REMOVED (aber man kann durch) --- (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): Betriebsgelände	2 17675,5521 17588,5573 17578,5566
+# REMOVED (aber man kann durch) --- (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): Betriebsgelände	2 17675,5521 17578,5566
 Allee der Kosmonauten	1 20184,14140 20111,14140 20096,14127
 Augustaplatz	1 3936,4014 3955,4039 3986,4051 4015,4053 4034,4033 4045,4005 4042,3982 4025,3958 4000,3950 3971,3950 3946,3967 3937,3993 3936,4014
 Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 17268,16526
@@ -1648,6 +1652,11 @@ Lichtenberger Str. [Wohngebiet]	1 11947,12494 11867,12284
 Hauptstr.: Mittelstreifen mit Gitter	3nocross 7268,8960 7239,8907 7201,8870
 # 
 Eilenburger Str.	1s:q2 25743,15118 25752,15219 25578,15238
+# 
+(Straßenbahnwendeschleife Schöneweide - Brückenstr.): nur BVG frei	2 17597,5614 17667,5697
+# 
+Poggendorffweg	1 17202,8391 17143,8422
+Poggendorffweg	1 17143,8422 17188,8431
 # 
 #: section ^^^
 ######################################################################
@@ -3866,12 +3875,12 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
-#: osm_watch: way id="618834389" version="15"
+#: osm_watch: way id="618834389" version="16"
 #: osm_watch: way id="43619494" version="8"
 #: also_indoor: traffic (G,ex-H[ungenau])
 #: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg
 #: priority: #C
-#: last_checked: 2024-08-03
+#: last_checked: 2024-08-16 (osm)
 #: check_frequency: 90d
 Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 # 
@@ -3952,7 +3961,8 @@ Berolinastr. in Höhe Spielplatz	2::inwork 11862,13027 11857,13014 11825,13029 11
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
-#: last_checked: 2024-07-19 vvv
+#: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt)
+#: last_checked: 2024-08-17 vvv
 #: osm_watch: way id="1199463691" version="3"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050
@@ -3960,6 +3970,12 @@ Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork
 Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
 #: osm_watch: way id="693633081" version="9"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
+#: osm_watch: way id="1199463688" version="3"
+Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
+#: osm_watch: way id="1199465847" version="2"
+#: osm_watch: way id="801304797" version="4"
+#: XXX außerdem: wird es eine Anbindung an die Sonnenallee geben?
+Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549
 #: last_checked ^^^
 # 
 #: next_check_id: ANDERGAERTNEREI-2022
@@ -4223,9 +4239,10 @@ Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22057,5305 22095,53
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen
-#: last_checked: 2024-07-19
-#: check_frequency: 30d
-Dieselstr. - westlicher Mergenthalerring: Durchfahrt durch Bauzäune versperrt	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
+#: last_checked: 2024-08-17
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 60d
+Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14258,8520
 # 
 # REMOVED (mittlerweile fest eingezäunt) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: XXX strassen-orig etc.-Einträge können entfernt werden, sobald nichts mehr vom Weg sichtbar ist. --- #: last_checked: 2023-07-03 --- #: check_frequency: 180d --- Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # REMOVED (laut osm offen) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: last_checked: 2023-01-20 --- #: check_frequency: 14d --- #: next_check: 2023-02-01 --- (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
@@ -4401,7 +4418,7 @@ Marktplatz Adlershof: möglicherweise wird die nördliche Fahrbahn dauerhaft einge
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10452 (Vorlage zur Beschlussfassung)
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2024-06-09
+#: last_checked: 2024-08-17
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -4533,7 +4550,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2024-06-19
+#: last_checked: 2024-08-17
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -5026,45 +5043,11 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 # REMOVED --- #: osm_watch: way id="32591917" version="17" --- #: next_check_id: KYNASTSTRASSE-2018 --- #: last_checked: 2019-07-06 --- #: next_check: 2019-06-15 --- Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,10476 14820,10473
 # REMOVED (offen) --- #: next_check_id: MERGENTHALERRING-2018 --- #: osm_watch: way id="20595738" version="13" --- #: last_checked: 2018-12-10 --- #: check_frequency: 30d --- Mergenthalerring: Bauarbeiten, komplett gesperrt	2:inwork 14258,8520 14262,8564
 # REMOVED (wieder offen) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: XXX Fußgängertunnel wird abgerissen --- wie sieht es danach aus, wird man hier noch durchgehen können? --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/anfang-dezember-beginnt-der-abriss-der-alten-halle_a188158 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.757485.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bahnhof-bleibt-waehrend-bauarbeiten-barrierefrei_a189259 --- #: by: https://twitter.com/SBahnBerlin/status/1067817140139581440 --- #: by: https://sbahn.berlin/aktuelles/artikel/schoenheitskur-fuer-schoeneweide/ --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.762277.php --- #: by: https://twitter.com/SBahnBerlin/status/1069471682337869825 --- #: by: https://twitter.com/BVG_Tram/status/1069471426967670784 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/baustart-fuer-den-neuen-bahnhof_a192223 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/neue-trasse-fuer-die-strassenbahn_a198208 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/planunterlagen-fuer-strassenbahnbau-liegen-aus_a197470 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-am-bahnhof-schoeneweide-gehen-weiter_a208213 --- #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/25-2019-10-06-180.html (Gesamtfertigstellung: 2022) --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3808 (Antrag) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1302846.php --- #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bahnhof-schoeneweide-vorplatz-soll-schoener-werden-id211216 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/buerger-koennen-sich-an-gestaltung-des-vorplatzes-beteiligen_a375338 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/beteiligung-zum-bahnhofsvorplatz_a377763 --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (voraussichtlich ab Frühjahr 2024 offen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1345344.php --- #: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/ --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/infoveranstaltung-zur-vorplatzgestaltung-am-bahnhof-schoeneweide_a404271 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_06_0305_0356_online.pdf (Infoveranstaltung) --- #: by: https://bauprojekte.deutschebahn.com/media/projects/7260/docs/GR_berlin_schoeneweide_wegeleitung_20240419.pdf (13.05.2024) --- #: last_checked: 2024-04-28 (krickstadt) --- #: check_frequency: 360d --- #: next_check: 2024-05-13 --- (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17702,5672 17634,5607
-# 
-#: next_check_id: SCHOENEWEIDE-2018
-#: XXX wird dieser Zugang bleiben, wenn die Straßenbahn verlegt ist?
-#: XXX weitere Änderungen: durchgängige Radspuren in der Michael-Brückner-Str. stadtauswärts; durchgängige Radspuren im Sterndamm unter der Brücke; Linksabbiegemöglichkeit Michael-Brückner-Str. -> Sterndamm ...
-#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=8F65755E-26C7-45A4-878D-BE88BA12B4B3&plugid=/ingrid-group:ige-iplug-be&docid=8F65755E-26C7-45A4-878D-BE88BA12B4B3
-#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/3A22FF18-9B17-4F51-B470-2F50F0C68929/U05-1_Lageplan_29270.pdf
-#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/867CA30D-7AEB-49AD-9196-B5479AA8CB68/U05_1_Lageplan_gesiegelt.pdf
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.832329.php
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-am-bahnhof-schoeneweide-gehen-voran_a225649
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838064.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838345.php (Erst Ende August 2019)
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/aufzuege-bleiben-ausser-betrieb_a228484
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.843618.php (neue Aufzüge werden Mitte September 2019 in Betrieb genommen)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.846562.php (Sperrung des Johannisthaler Zugangs --- ist aber vielleicht nicht erfolgt)
-#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/seit-13-september-ist-der-aufzug-am-bahnhof-schoeneweide-in-betrieb_a232699
-#: by: https://www.abendblatt-berlin.de/2019/09/25/treptow-schoeneweider-fahrstuehle-endlich-in-betrieb/
-#: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
-#: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022)
-#: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (neues Bauende: Frühjahr 2024)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/bvg-baut-bis-herbst-in-berlin-schoeneweide-warum-muss-das-so-lange-dauern-li.2186715 (Verkehrslösung Schöneweide geht voraussichtlich im Sommer 2024 in Betrieb)
-#: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Inbetriebnahme im Sommer 2024, Verkerswegebau bis 3. Quartal 2024)
-#: by: https://www.bahninfo-forum.de/read.php?9,726524,793943#msg-793943
-#: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (signalisierter Fußgängerüberweg Höhe Ecksteinweg ab Ende März 2024)
-#: by: https://nachgefragt.bvg.de/faq-schoeneweide/ (zum Zugang Schwarzer Weg --- ungewiss, ob es diesen noch geben wird)
-#: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20240809 (Inbetriebnahme am 17.8.2024)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/die-bvg-faehrt-wieder-zum-bahnhof-berlin-schoeneweide-aber-vorher-wird-es-spannend-li.2245055
-#: by: https://www.nd-aktuell.de/artikel/1184528.oepnv-bvg-etappenziel-nach-jahren.html
-#: last_checked: 2024-07-17 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2024-08-17 vvv
-# REMOVED --- #: osm_watch: way id="1085382250" version="7"
-(Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17578,5566 17588,5573 17736,5441
+# REMOVED --- #: next_check_id: SCHOENEWEIDE-2018 --- #: XXX wird dieser Zugang bleiben, wenn die Straßenbahn verlegt ist? --- #: XXX weitere Änderungen: durchgängige Radspuren in der Michael-Brückner-Str. stadtauswärts; durchgängige Radspuren im Sterndamm unter der Brücke; Linksabbiegemöglichkeit Michael-Brückner-Str. -> Sterndamm ... --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=8F65755E-26C7-45A4-878D-BE88BA12B4B3&plugid=/ingrid-group:ige-iplug-be&docid=8F65755E-26C7-45A4-878D-BE88BA12B4B3 --- #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/3A22FF18-9B17-4F51-B470-2F50F0C68929/U05-1_Lageplan_29270.pdf --- #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/867CA30D-7AEB-49AD-9196-B5479AA8CB68/U05_1_Lageplan_gesiegelt.pdf --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.832329.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-am-bahnhof-schoeneweide-gehen-voran_a225649 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838064.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838345.php (Erst Ende August 2019) --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/aufzuege-bleiben-ausser-betrieb_a228484 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.843618.php (neue Aufzüge werden Mitte September 2019 in Betrieb genommen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.846562.php (Sperrung des Johannisthaler Zugangs --- ist aber vielleicht nicht erfolgt) --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/seit-13-september-ist-der-aufzug-am-bahnhof-schoeneweide-in-betrieb_a232699 --- #: by: https://www.abendblatt-berlin.de/2019/09/25/treptow-schoeneweider-fahrstuehle-endlich-in-betrieb/ --- #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch) --- #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022) --- #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (neues Bauende: Frühjahr 2024) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/bvg-baut-bis-herbst-in-berlin-schoeneweide-warum-muss-das-so-lange-dauern-li.2186715 (Verkehrslösung Schöneweide geht voraussichtlich im Sommer 2024 in Betrieb) --- #: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Inbetriebnahme im Sommer 2024, Verkerswegebau bis 3. Quartal 2024) --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,793943#msg-793943 --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (signalisierter Fußgängerüberweg Höhe Ecksteinweg ab Ende März 2024) --- #: by: https://nachgefragt.bvg.de/faq-schoeneweide/ (zum Zugang Schwarzer Weg --- ungewiss, ob es diesen noch geben wird) --- #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20240809 (Inbetriebnahme am 17.8.2024) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/die-bvg-faehrt-wieder-zum-bahnhof-berlin-schoeneweide-aber-vorher-wird-es-spannend-li.2245055 --- #: by: https://www.nd-aktuell.de/artikel/1184528.oepnv-bvg-etappenziel-nach-jahren.html --- #: last_checked: 2024-07-17 vvv --- #: check_frequency: 120d vvv --- #: next_check: 2024-08-17 vvv --- # REMOVED --- #: osm_watch: way id="1085382250" version="7" --- (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17592,5552 17736,5441 --- 
 # REMOVED --- #: osm_watch: way id="226163591" version="6"
 # REMOVED (wurde in strassen-orig entfernt) --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17634,5607 17675,5521
-# REMOVED --- Sterndamm: keine Überquerungsmöglichkeit	3nocross::inwork 17695,5394 17736,5441 17747,5452
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- Sterndamm: keine Überquerungsmöglichkeit	3nocross::inwork 17695,5394 17736,5441 17754,5460
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,726545#msg-726545
@@ -5075,10 +5058,10 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
-#: osm_watch: way id="40451054" version="21"
-#: last_checked: 2024-08-05 (krickstadt)
+#: osm_watch: way id="40451054" version="22"
+#: last_checked: 2024-08-17
 #: check_frequency: 60d
-#: next_check: 2024-08-17
+# REMOVED --- #: next_check: 2024-08-17
 # REMOVED --- #: next_check: 2024-02-02
 # REMOVED --- #: valid: -20230901
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701

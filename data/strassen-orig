@@ -1442,7 +1442,7 @@ Uber-Platz	NN 12990,11006 13067,11145
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_31_2123_2242_online.pdf (Benennung)
 #: XXX Vorschlag: Freia-Eisner-Straße; mittlerweile tatsächlich als "Planstraße C" offiziell ausgeschildert
 #: note: "Privatgelände"
-#: osm_watch: way id="491906864" version="16"
+#: osm_watch: way id="491906864" version="17"
 #: osm_watch: note 3982085 7
 #: priority: #B
 #: last_checked: 2024-08-02
@@ -6175,16 +6175,21 @@ Rixdorfer Str. (Niederschöneweide, Johannisthal, Baumschulenweg)	N 17160,6239 17
 Radenzer Str.	N 15996,6144 16012,6177 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374
 Hallberger Zeile	N 15954,6297 16068,6216
 Südostallee	H 15768,6214 15871,6187 15996,6144 16049,6121 16122,6084 16169,6064 16510,5917 16868,5938 16911,5905 16993,5841 17024,5816 17128,5736 17337,5574 17366,5552 17473,5471 17482,5464 17601,5374 17648,5338
-Sterndamm	H 17886,5587 17765,5469 17747,5452 17736,5441 17695,5394 17648,5338 17601,5090 17542,4772 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
+Sterndamm	H 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441 17695,5394 17648,5338 17601,5090 17542,4772 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
 Sterndamm	H 17648,5338 17700,5232 17705,5223
 # REMOVED (nun als Gehweg dauerhaft markiert) --- #: next_check_id: STERNDAMM-2020 --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: XXX provisorische Verbindung, asphaltiert --- #: last_checked: 2021-10-02 --- #: check_frequency: 30d --- #: next_check: 2021-10-31
 Sterndamm [Gehweg zur Nebenfahrbahn]	NN 17648,5338 17697,5347
 Sterndamm [Nebenfahrbahn]	N 17697,5347 17762,5408
-(Bushaltestelle und Straßenbahnwendeschleife Schöneweide)	NN 17736,5441 17588,5573 17578,5566
+(Bushaltestelle und Straßenbahnwendeschleife Schöneweide)	NN 17736,5441 17592,5552
 Cajamarcaplatz	NN 17698,5727 17766,5659
-(Fußgängertunnel S-Bhf. Schöneweide)	NN 17702,5672 17634,5607
-(zum Fußgängertunnel S-Bhf. Schöneweide)	NN 17728,5756 17698,5727 17674,5705 17702,5672
+(Fußgängertunnel S-Bhf. Schöneweide)	NN 17696,5665 17634,5607
+(zum Fußgängertunnel S-Bhf. Schöneweide)	NN 17728,5756 17698,5727 17667,5697 17696,5665
 (zum Fußgängertunnel S-Bhf. Schöneweide)	NN 17765,5469 17634,5607
+#: osm.highway: service
+(Straßenbahnwendeschleife Schöneweide)	N 17754,5460 17619,5594 17597,5614
+(Straßenbahnwendeschleife Schöneweide, Überquerungsmöglichkeit)	NN 17592,5552 17591,5565 17619,5594 17634,5607
+#: osm.highway: service
+(Straßenbahnwendeschleife Schöneweide - Brückenstr.)	N 17597,5614 17667,5697
 # REMOVED (stattdessen existiert der neue Fußweg) --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle)	NN 17634,5607 17675,5521
 (Friedrich-List-Str. - KGA An der Südostallee)	NN 17459,5634 17480,5666
 #: note: Anlieger dürfen hier auch fahren, max. 10km/h
@@ -7050,7 +7055,7 @@ Fritz-König-Weg	N 17527,7812 17301,7754 17050,7687
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke)	NN 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 Minna-Todenhagen-Str.	H 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: XXX entfernen, sobald die eigentliche Straße offen ist --- #: last_checked: 2017-11-05 --- #: next_check: 2017-12-21 --- (Gehweg an der zukünftigen Minna-Todenhagen-Str.)	NN 17681,7589 17470,7473 17294,7367
-Rummelsburger Landstr.	H 17105,8666 17143,8565 17202,8391 17292,8151 17311,8123 17527,7812 17619,7679 17681,7589
+Rummelsburger Landstr.	H 17105,8666 17143,8565 17188,8431 17202,8391 17292,8151 17311,8123 17527,7812 17619,7679 17681,7589
 Rummelsburger Str. (Oberschöneweide)	H 17681,7589 17769,7465 17847,7356 18010,7133
 Treskowallee	H 18010,7133 18086,7243 18165,7371 18198,7425 18256,7520 18382,7724 18406,7760 18471,7862 18577,8033 18626,8114 18657,8163 18672,8238 18704,8427 18718,8583 18727,8634 18737,8686 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464 18878,9517 18875,9570 18865,9608 18823,9708 18807,9746 18769,9839 18740,9907 18703,9997 18694,10018
 Ontarioseestr.	N 18339,10048 18411,10037 18585,10024 18552,10135
@@ -13662,7 +13667,7 @@ Drübecker Weg	N 13909,8471 13812,8530
 Aronsstr.	N 14758,7373 14650,7500 14593,7584 14583,7623 14611,8029
 Aronsstr. [Richtung Sonnenallee]	N 14571,7427 14579,7576 14593,7584
 (Sonnenallee - Aronsstr.)	NN 14530,7301 14558,7350 14571,7427
-Dieselstr.	N 14850,7855 14777,7921 14679,8006 14642,8022 14611,8029 14484,8044 14440,8050 14425,8052 14384,8056 14366,8058 14326,8062 14249,8075 14236,8077
+Dieselstr.	N 14850,7855 14777,7921 14679,8006 14642,8022 14611,8029 14484,8044 14440,8050 14425,8052 14384,8056 14375,8057 14326,8062 14249,8075 14236,8077
 # REMOVED (existiert nicht mehr) --- #: next_check_id: DIESEL-2015 --- #: last_checked: 2017-07-31 --- #: check_frequency: 60d --- Dieselstr.	NN 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
 (Mergenthalerring (Kolonie) - Dieselstr.)	NN 14419,8112 14429,8074 14484,8044
 #: osm.highway: service
@@ -13678,8 +13683,12 @@ Mergenthalerring	N 14229,8278 14258,8520 14262,8564 14276,8729 14252,8829 14261,
 (Dieselstr. - Kiefholzstr.)	NN 14832,8199 14841,8207
 # 
 #: note: eigentlich eine Service-Straße, aber vermutlich werden hier nur sehr selten Fahrzeuge langfahren
-(Weg entlang der A100)	NN 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
+(Weg entlang der A100, östliche Seite)	NN 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
 (Weg an der A100 - Mergenthalerring)	NN 14409,8102 14419,8112
+#: note: hier tatsächlich nur eine Hochbord-Anbindung
+(Weg entlang der A100, westliche Seite)	NN 14261,8851 14264,8829
+#: note: eigentlich eine Service-Straße, aber vermutlich werden hier nur sehr selten Fahrzeuge langfahren
+(Weg entlang der A100, westliche Seite)	NN 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549
 # 
 #: osm.highway: service
 (Neuköllnische Wiesen, Wiesenallee)	N 14771,8142 14903,7997 14962,7934
@@ -17327,7 +17336,8 @@ Weg Q	N 28644,560 28733,665
 # REMOVED --- Quellenweg|Westend|14050|1219,13310
 (Höhenweg)	NN 1610,13380 1551,13377 1523,13377 1293,13332 1244,13316 1171,13320 1137,13321 1084,13322 1027,13304 969,13290 919,13281 783,13275 738,13277 730,13286 721,13296
 Kolonie Bismarckruh	NN 1293,13332 1311,13210 1336,12967 1335,12921 1242,12535
-Poggendorffweg	N 17079,8456 17202,8391
+Poggendorffweg	N 17079,8456 17143,8422 17202,8391
+Poggendorffweg	N 17188,8431 17143,8422
 Hohenbornweg	N 7846,1718 7754,1806 7675,1885
 Pappritzstr.	N 7562,1796 7675,1885 7736,1969 7741,2096
 Berlinickestr.	N 5080,5498 5016,5401 4942,5312 4829,5173
@@ -17509,7 +17519,7 @@ Henriette-Lustig-Str.	N 21375,4974 21380,5003 21476,5048 21611,5119
 Henriette-Lustig-Str.	N 21611,5119 21631,5079
 (Henriette-Lustig-Str. - Uferweg)	NN 21611,5119 21645,5135
 #: note: Privatstraße (laut Amtsblatt)
-#: note: in LOR 1/2022, 7/2023, 1/2024 fälschlicherweise "Wäschnerinnenweg", war auch im DPAG-Mitteilungsblatt so und wurde am 05.12.2019 korrigiert
+#: note: in LOR 1/2022, 7/2023, 1/2024, 6/2024 fälschlicherweise "Wäschnerinnenweg", war auch im DPAG-Mitteilungsblatt so und wurde am 05.12.2019 korrigiert
 Wäscherinnenweg	N 21444,5112 21358,5072 21335,5075
 #: note: Privatstraße (laut Amtsblatt)
 Blütenweißweg	N 21483,5374 21427,5347

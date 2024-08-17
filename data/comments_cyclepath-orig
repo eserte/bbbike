@@ -245,9 +245,8 @@ Gehweg für Radfahrer frei	RW1;RW 37364,2132 37449,1992 37870,1620 38164,1564 385
 #: osm_watch: way id="209222181" version="4"
 #: next_check: 2023-08-11
 Verbundsteinpflasterradweg für beide Richtungen, etwas abseits der Straße	RW8;RW2 36719,2420 36771,2581 37084,2693 37712,2659 38023,2687 38308,2636 38512,2600
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 38512,2600 38636,2578 39044,2686 39243,2759
-#: XXX: genaue Position und Qualität?
-Radweg (?)	RW;RW 39243,2759 39534,3037
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 38512,2600 38636,2578 39044,2686
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2;RW8 39044,2686 39243,2759
 #: XXX: genaue Position und Qualität?
 Radweg (?)	RW;RW 39968,3795 40463,4020 41051,4427 41275,5229 41987,5693
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 39044,2686 39032,2481 38973,2311 39090,2169 39096,2149
@@ -291,6 +290,8 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 22216,30138 22252,29989 222
 feiner Schotter	RW9;RW1 -14659,-678 -15166,-622 -15264,-612
 Radweg auf Gehweg	RW; -18130,-837 -18631,-778 -18682,-719 -18725,-673
 Verbundsteinpflaster	RW1; -19247,-20 -19192,166 -19100,407 -19010,706
+#: by: mapillary
+Asphalt	RW; -18832,1034 -18717,1144 -18673,1266
 #: by: http://www.wsd-ost.wsv.de/aktuelles/Planfeststellung/Ersatzneubau_Strassenbruecke_Marquardt/Beilage_2.pdf
 #: by: http://www.wsd-ost.wsv.de/aktuelles/Planfeststellung/Ersatzneubau_Strassenbruecke_Marquardt/Beilage_4.1.PDF
 #: by: https://www.boote-magazin.de/aktuell/termine_events/verkehrsfreigabe-der-bruecke-marquardt/a47349.html
@@ -2217,6 +2218,11 @@ asphaltiert	RW8;RW2 66140,22621 65524,23028
 # 
 ######################################################################
 #: by: mapillary vvv
+älterer Betonradweg	RW2;RW8 39243,2759 39534,3037 39645,3307 39729,3433
+asphaltiert	RW2;RW9 -19656,2362 -19721,2368
+asphaltiert	RW8;RW2 -18728,2153 -18985,2226 -19106,2228 -19243,2246 -19422,2220 -19656,2362
+asphaltiert	RW2;RW8 -18152,1606 -18302,1546 -18492,1354 -18522,1325
+asphaltiert	RW2;RW8 -18522,1325 -18673,1266 -18702,1408 -18673,1785 -18728,2153
 	RW3; -7969,-4828 -7917,-4792
 asphaltiert	RW8;RW2 -1801,30024 -2192,29334
 asphaltiert	RW2;RW8 -2192,29334 -2245,29315 -3356,29260 -3379,29255 -3633,29200 -3876,29096

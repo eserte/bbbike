@@ -66,7 +66,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-08-14
+#: last_checked: 2024-08-17
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -223,7 +223,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2024-07-19
+#: last_checked: 2024-08-17
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -595,34 +595,8 @@ Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9
 # 
 ### Niederschöneweide ###
 # 
-#: next_check_id: SCHOENEWEIDE-2018
-#: next_check_id: STERNDAMM-2023
-#: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
-#: last_checked: 2024-07-17 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2024-08-15 vvv
-# REMOVED (hier verlaufen Fußgängerverkehr und Radverkehr getrennt) --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17765,5469
-Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 17736,5441 17695,5394
-# REMOVED (hier keine mehr) --- Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17747,5452
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
-# REMOVED --- #: next_check_id: SCHOENEWEIDE-2018
-# REMOVED --- #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024)
-# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024)
-# REMOVED --- #: note: Da der Königsplatz am 6.7.2024 weiterhin gesperrt sein wird, wird es hier erstmal keinen Straßenbahnverkehr geben.
-# REMOVED --- #: also_indoor: traffic (H,W)
-# REMOVED --- #: last_checked: 2024-08-05 (krickstadt) vvv
-# REMOVED --- #: next_check: 2024-08-16 vvv
-# REMOVED --- #: valid: -20240817 vvv
-# REMOVED --- Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072
-# REMOVED --- #: XXX hier kann man möglicherweise mittlerweile illegal abkürzen
-# REMOVED --- Michael-Brückner-Str.: Umwege an der Einmündung Brückenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: last_checked ^^^
-# 
+# REMOVED (nur noch eine kleine Verschwenkung übrig, keine Engstellen mehr) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: next_check_id: STERNDAMM-2023 --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?) --- #: last_checked: 2024-08-17 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-08-15 vvv --- (hier verlaufen Fußgängerverkehr und Radverkehr getrennt) --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17822,5524 17765,5469 --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17754,5460 17736,5441 17695,5394 --- # REMOVED (hier keine mehr) --- Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17754,5460 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED --- #: next_check_id: SCHOENEWEIDE-2018 --- #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024) --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024) --- #: note: Da der Königsplatz am 6.7.2024 weiterhin gesperrt sein wird, wird es hier erstmal keinen Straßenbahnverkehr geben. --- #: also_indoor: traffic (H,W) --- #: last_checked: 2024-08-05 (krickstadt) vvv --- #: next_check: 2024-08-16 vvv --- #: valid: -20240817 vvv --- Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072 --- #: XXX hier kann man möglicherweise mittlerweile illegal abkürzen --- Michael-Brückner-Str.: Umwege an der Einmündung Brückenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (abgesperrt, wird vermutlich bald zurückgebaut) --- #: next_check_id: STERNDAMM-2020 --- #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: last_checked: 2021-10-02 --- #: check_frequency: 21d --- #: next_check: 2021-10-31 --- Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
 ### Oberschöneweide ###
@@ -846,7 +820,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: note: Die Absperrung beginnt 50m vor dem Einmündungsbereich.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-07-24 (mapillary) vvv
+#: last_checked: 2024-08-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
@@ -925,7 +899,7 @@ Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-08-14
+#: last_checked: 2024-08-17
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -3186,7 +3160,9 @@ Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
 (Kolonie Sanssouci): einige Fußgänger	q1 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
 (Kolonie Sanssouci): einige Fußgänger	q1 16288,10637 16265,10681
 Müggelstr., Hausdurchfahrt: einige Fußgänger	q3 14837,11706 14858,11744
-(Straßenbahnwendeschleife Schöneweide): Straßenbahnverkehr, Gehweg, Bordsteine	q4 17736,5441 17588,5573 17578,5566
+(Straßenbahnwendeschleife Schöneweide): Gehweg	q4+ 17736,5441 17592,5552
+(Straßenbahnwendeschleife Schöneweide): Busse, Straßenbahnen	q2 17754,5460 17619,5594 17597,5614
+(Straßenbahnwendeschleife Schöneweide, Überquerungsmöglichkeit): Busse, Straßenbahnen	q2 17592,5552 17591,5565 17619,5594 17634,5607
 (Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 #: XXX_prog: BS (2x)
 (Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8961,6490 8929,6363 8930,6295
@@ -3366,8 +3342,8 @@ Wischbergweg: sehr enger Pfad	q4 13733,18161 13751,18180
 Bordstein	q3 22004,17470 21992,17479
 (An der Margaretenhöhe - Astridstr.): schmaler Pfad	q3 16634,19839 16550,19829 16472,19818 16390,19806
 Cajamarcaplatz: viele Fußgänger	q4 17698,5727 17766,5659
-(Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17702,5672 17634,5607
-(zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17728,5756 17698,5727 17674,5705 17702,5672
+(Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17696,5665 17634,5607
+(zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17728,5756 17698,5727 17667,5697 17696,5665
 (zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17765,5469 17634,5607
 # REMOVED (wurde in strassen-orig entfernt) --- #: XXX_prog BS an der Tram-Haltestelle, ansonsten trotzdem q3 --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Fußgänger, Bordstein	q3 17634,5607 17675,5521
 # REMOVED (Bordstein wurde abgesenkt) --- #: XXX_prog BS, sonst entfernen --- Wasserweg: Bordstein	q2 15678,8911 15698,8903 15873,8884

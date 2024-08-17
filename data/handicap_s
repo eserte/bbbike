@@ -28,7 +28,6 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9822 17738,9922
-Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17747,5452 17736,5441 17695,5394
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2::inwork; 10178,10411 10122,10294
 Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -1366,7 +1365,9 @@ Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
 (Kolonie Sanssouci): einige Fußgänger	q1 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
 (Kolonie Sanssouci): einige Fußgänger	q1 16288,10637 16265,10681
 Müggelstr., Hausdurchfahrt: einige Fußgänger	q3 14837,11706 14858,11744
-(Straßenbahnwendeschleife Schöneweide): Straßenbahnverkehr, Gehweg, Bordsteine	q4 17736,5441 17588,5573 17578,5566
+(Straßenbahnwendeschleife Schöneweide): Gehweg	q4 17736,5441 17592,5552
+(Straßenbahnwendeschleife Schöneweide): Busse, Straßenbahnen	q2 17754,5460 17619,5594 17597,5614
+(Straßenbahnwendeschleife Schöneweide, Überquerungsmöglichkeit): Busse, Straßenbahnen	q2 17592,5552 17591,5565 17619,5594 17634,5607
 (Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 (Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8961,6490 8929,6363 8930,6295
 (Prühßstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fußgänger	q1 9869,4271 9965,4299 10051,4295 10143,4283 10220,4236
@@ -1492,8 +1493,8 @@ Wischbergweg: sehr enger Pfad	q4 13733,18161 13751,18180
 Bordstein	q3 22004,17470 21992,17479
 (An der Margaretenhöhe - Astridstr.): schmaler Pfad	q3 16634,19839 16550,19829 16472,19818 16390,19806
 Cajamarcaplatz: viele Fußgänger	q4 17698,5727 17766,5659
-(Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17702,5672 17634,5607
-(zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17728,5756 17698,5727 17674,5705 17702,5672
+(Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17696,5665 17634,5607
+(zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17728,5756 17698,5727 17667,5697 17696,5665
 (zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17765,5469 17634,5607
 (Ella-Trebe-Str. - Invalidenstr.): einige Fußgänger	q1 7938,13302 7968,13335 8003,13374
 Europaplatz: einige Fußgänger	q1 7880,13315 7938,13302
