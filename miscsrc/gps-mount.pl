@@ -35,6 +35,7 @@ my $garmin_disk_type;
 my $device;
 my $cd;
 my $do_gpx_copy;
+my $do_gpx_copy_with_diff;
 my $gpx_copy_force;
 my $debug;
 my $without_tty;
@@ -53,6 +54,10 @@ GetOptions
      'device|prefer-device=s' => \$device,
      'cd:s'               => \$cd,
      'gpxcp|gpx-cp|gpx-copy' => \$do_gpx_copy,
+     'gpx-cp-with-diff' => sub {
+	 $do_gpx_copy = 1;
+	 $do_gpx_copy_with_diff = 1;
+     },
      'force|f'            => \$gpx_copy_force,
      'debug'              => \$debug,
      'without-tty'        => \$without_tty,
@@ -84,18 +89,26 @@ if ($do_gpx_copy) {
 	if (!-d $dest) {
 	    die "Target directory $dest does not exist, cannot proceed.\n";
 	}
-	if ($^O eq 'MSWin32') {
+	if ($do_gpx_copy_with_diff) {
+	    require Doit;
+	    my $doit = Doit->init;
 	    for my $file (@files) {
-		warn "DEBUG: cp '$file' to '$dest'\n" if $debug;
-		cp($file, $dest)
-		    or die "Failed top copy '$file' to '$dest': $!";
+		$doit->copy($file, $dest);
 	    }
 	} else {
-	    my @cmd = ('cp', ($gpx_copy_force ? '-f' : '-i'), @files, $dest);
-	    warn "DEBUG: run '@cmd'\n" if $debug;
-	    system @cmd;
-	    if ($? != 0) {
-		die "Running '@cmd' failed";
+	    if ($^O eq 'MSWin32') {
+		for my $file (@files) {
+		    warn "DEBUG: cp '$file' to '$dest'\n" if $debug;
+		    cp($file, $dest)
+			or die "Failed top copy '$file' to '$dest': $!";
+		}
+	    } else {
+		my @cmd = ('cp', ($gpx_copy_force ? '-f' : '-i'), @files, $dest);
+		warn "DEBUG: run '@cmd'\n" if $debug;
+		system @cmd;
+		if ($? != 0) {
+		    die "Running '@cmd' failed";
+		}
 	    }
 	}
     };
@@ -141,7 +154,7 @@ gps-mount.pl - mount GPS device
 
 =head1 SYNOPSIS
 
-    gps-mount.pl [--perl 'perl code' | --shell 'shell code'] [--device GARMIN|Falk|IGS630|...] [--garmin-disk-type flash|card] [--cd | --cd reldir] [--gpx-cp | --gpx-copy file1 ...] [--debug]
+    gps-mount.pl [--perl 'perl code' | --shell 'shell code'] [--device GARMIN|Falk|IGS630|...] [--garmin-disk-type flash|card] [--cd | --cd reldir] [--gpx-cp | --gpx-copy | --gpx-cp-with-diff file1 ...] [--debug]
 
 =head1 DESCRIPTION
 
@@ -208,6 +221,14 @@ Note that by default an interactive C<cp> is used on Unix systems,
 unless C<--force> (see below) is used.
 
 Aliases: C<--gpx-copy> and C<--gpxcp>.
+
+=item C<--gpx-cp-with-diff I<file1> ...>
+
+A variant of C<--gpx-cp>: copy the specified files only if it is
+required (destination is missing or different). Also, the diffs are
+made visible. This is implemented using L<Doit/copy>. Note that the
+C<--force>/C<-f> option is not used in this variant; the file is
+always overwritten.
 
 =item C<--force>
 
