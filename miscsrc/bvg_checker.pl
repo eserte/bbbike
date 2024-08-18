@@ -24,8 +24,11 @@ use File::Glob qw(bsd_glob);
 use Getopt::Long;
 use Term::ANSIColor qw(colored);
 use Tie::IxHash;
+use POSIX qw(strftime);
 
 use Strassen::Core;
+
+use constant BVG_SITE_IS_BROKEN => strftime("%Y-%m-%d", localtime) le "2024-08-19";
 
 return 1 if caller;
 
@@ -126,7 +129,21 @@ if (%check_sourceids || %check_inactive_sourceids) {
 }
 
 if ($errors) {
-    exit 1;
+    if (BVG_SITE_IS_BROKEN) {
+	printerr "BVG site is currently likely to be broken, so don't fail the script run.", "yellow on_black";
+	printerr "\n";
+	exit 0;
+    } else {
+	if ($errors > 5) { # arbitrary number, or maybe work with percentages?
+	    printerr "Check if the BVG site is broken, and if so, define the BVG_SITE_IS_BROKEN constant in this script.", "red on_black";
+	}
+	exit 1;
+    }
+} else {
+    if (BVG_SITE_IS_BROKEN) {
+	printerr "BVG site is marked as broken (see the BVG_SITE_IS_BROKEN constant in this script), but actually all sourceids were found. Consider to remove the breakage indication.", "red on_black";
+	printerr "\n";
+    }
 }
 
 # Only rename in the success case. So only bvg_checks.log~ stays around
