@@ -2284,7 +2284,8 @@ Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	
 Kurfürstenweg: fester Waldweg	Q1- -5971,-610 -5868,-420 -5763,-116 -5754,-27 -5668,131 -5579,227 -5543,326 -5412,437 -5304,552 -5164,765 -4978,918
 Schönburgstr.: schlechtes Kopfsteinpflaster	Q3 8949,6644 8961,6490 8995,6473
 Schönburgstr.: Kopfsteinpflaster	Q2 8995,6473 9031,6355
-Parkstr.: unebenes Kleinsteinpflaster	Q2 8944,6293 8992,6312 9031,6355
+#: historical_note: früher (bis 2024): unebenes Kleinsteinpflaster, Q2
+Parkstr.: Asphalt	Q0  8944,6293 8992,6312 9031,6355
 Parkstr.: Asphalt	Q0 9031,6355 9078,6360 9143,6415
 #: historical_note: früher (bis 2023): schlechtes Kopfsteinpflaster, Q3
 #: note: Parkstreifen gepflastert
@@ -3001,6 +3002,8 @@ Im Dol: Asphalt	Q0 1757,5976 1811,5973 1912,6024 1946,6042 2191,6217 2204,6226 2
 Elvirasteig: Asphalt	Q0 -1536,3314 -1501,3448 -1487,3505 -1475,3552 -1470,3566 -1449,3656 -1422,3785 -1409,3834 -1392,3915 -1360,4014 -1323,4111 -1282,4244 -1245,4351
 #: by: MichaelM
 #: corrected_by: srt (Asphalt -> Asphalt und Beton, siehe http://farm5.static.flickr.com/4144/5190716473_c6a9f95017.jpg)
+#: XXX Ist die Fahrbahn nun komplett asphaltiert, ohne Beton?
+#: next_check: 2024-10-31
 Quermatenweg: Asphalt und Beton	Q0 -1096,4267 -1025,4422 -927,4638 -857,4725 -820,4772 -670,4903 -473,5002 -326,5042 -255,5059 -191,5075 -117,5092 -22,5115 88,5136
 # REMOVED (ja) --- #: XXX nach den Bauarbeiten bessere Qualität? --- #: next_check: 2020-11-18
 Matterhornstr: sehr guter Asphalt	Q0+ -1161,3252 -1187,3264 -1360,3314 -1536,3314 -1628,3311 -1706,3311 -1782,3311 -1855,3308 -1892,3316 -1981,3353 -2096,3402 -2137,3408 -2245,3378
@@ -11809,11 +11812,10 @@ Ottomar-Geschke-Str. [Nebenfahrbahn]: Asphalt	Q0 21279,4567 21196,4392 21171,433
 #: note: einige kürzere Verbundsteinpflasterabschnitte
 In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
-#: XXX Ist die Qualität zwischen Morsbronner Weg und Kollostr. nach den Bauarbeiten besser geworden?
-#: osm_watch: way id="30699235" version="29"
-#: osm_watch: note 4386758 1
-#: next_check: 2024-08-16
-Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403
+Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419
+# REMOVED (ja) --- #: XXX Ist die Qualität zwischen Morsbronner Weg und Kollostr. nach den Bauarbeiten besser geworden? --- #: osm_watch: way id="30699235" version="29" --- #: osm_watch: note 4386758 1 --- #: next_check: 2024-08-16
+#: historical_note: früher (bis August 2024): Asphalt, einige Schlaglöcher, Q0-
+Westphalweg: Asphalt	Q0 9428,4419 9562,4412 9668,4403
 # REMOVED (nicht perfekt, Richtung Westen noch immer etwas wellig, aber keine Schlaglöcher mehr) --- #: XXX verschwinden die Schlaglöcher nach den Bauarbeiten? --- #: source_id: 2147345133 (bis 21.1.2021) (mittlerweile inaktiv) --- #: last_checked: 2020-08-29 --- #: next_check: 2021-01-21 --- #: next_check: 2020-12-17
 Westphalweg: Asphalt	Q0 9668,4403 9877,4386
 Westphalweg: Asphalt	Q0 9877,4386 9995,4375
@@ -33275,5 +33277,7 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 3011,2487
 Kreuzungsbereich asphaltiert	Q0 9254,14849
 Kreuzungsbereich asphaltiert	Q0 9432,14936
 Einmündungsbereich asphaltiert	Q0 10018,15211
+Einmündungsbereich asphaltiert	Q0 9031,6355
+Einmündungsbereich asphaltiert	Q0 8944,6293
 #: ignore ^^^
 #: section ^^^

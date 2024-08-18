@@ -66,7 +66,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-08-17
+#: last_checked: 2024-08-18
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -793,7 +793,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2024-08-01 (mapillary)
+#: last_checked: 2024-08-18
 #: check_frequency: 90d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
@@ -1730,8 +1730,18 @@ Zauritzweg: Fußgänger	q1 4182,11831 4194,11703
 #: note: früher "q2"
 (Blücherplatz - Zossener Str.): Fußgänger, Grünanlage	q4+ 9702,10129 9827,10051
 Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
-#: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
-Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
+# 
+#: by: https://www.berlinerbaeder.de/baeder/detail/wellenbad-am-spreewaldplatz/ (Bauarbeiten ab Ende Juni 2023 für 3½ Jahre)
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/wellenbad-am-spreewaldplatz-schliesst-ende-juni_a374657 (bis Januar 2027)
+#: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
+#: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
+#: osm_watch: note 4103526 1
+#: osm_watch: way id="30909343" version="26"
+#: last_checked: 2024-08-18
+#: check_frequency: 180d
+#: next_check: 2027-01-31
+Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
+# 
 #: XXX_prog BS auf beiden Seiten, ansonsten q2 oder q2+ (GPS-Tracks anschauen)
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8373
 #: XXX_prog BS an der Boelckestr., ansonsten q1 oder q2

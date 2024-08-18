@@ -135,7 +135,7 @@ sehr schmal, Verbundsteinpflaster	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,735
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2024-05-04 vvv
+#: last_checked: 2024-08-18 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -161,7 +161,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: https://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021) (mittlerweile gelöscht) (wieder da, "abgeschlossen")
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2024-06-22 vvv
+#: last_checked: 2024-08-18 vvv
 #: check_frequency: 90d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -338,7 +338,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-08-16 vvv
+#: last_checked: 2024-08-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1306,7 +1306,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-08-04 vvv
+#: last_checked: 2024-08-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3015,7 +3015,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-08-04
+#: last_checked: 2024-08-18
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -8630,7 +8630,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385351,52.448083,27.06.2024,10:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
-#: last_checked: 2024-06-22 vvv
+#: last_checked: 2024-08-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-31 vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -8638,13 +8638,10 @@ Leitboys	RW4; 9254,6542 9249,6642
 # REMOVED --- #: osm_watch: way id="111048866" version="19" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
 # REMOVED (hier realisiert) --- #: osm_watch: way id="28680188" version="24"
 # REMOVED --- #: osm_watch: way id="28680187" version="20"
-Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
+# REMOVED (Radspur realisiert) --- Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 # REMOVED (hier realisiert) --- #: osm_watch: way id="30958674" version="23"
 # REMOVED (hier realisiert) --- #: osm_watch: way id="28680189" version="22"
-#: osm_watch: way id="1214584012" version="2"
-#: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
-#provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
-provisorischer gemeinsamer Rad/Gehweg	RW2; 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
+# REMOVED (hier realisiert) --- #: osm_watch: way id="1214584012" version="2" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs) --- # provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193 --- provisorischer gemeinsamer Rad/Gehweg	RW2; 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
 #: osm_watch: way id="4526218" version="30"
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
@@ -8657,7 +8654,8 @@ provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 917
 #: note: Mariendorfer Damm Richtung Süden
 #: note: Poller fangen einige Meter nach der Kreuzung an (Bushaltestelle)
 Poller	RW4; 9206,5193 9239,4980 9248,4904
-Leitboys	RW4; 9248,4904 9259,4815 9275,4672
+Leitboys	RW4; 9248,4904 9259,4815
+	RW4; 9259,4815 9275,4672
 #: note: Leitboys fangen etwa 50m nach der Kreuzung an
 Leitboys	RW4; 9275,4672 9294,4536
 #: note: Leitboys hören etwa 50m vor der Kreuzung auf (Bushaltestelle)
@@ -8665,12 +8663,17 @@ Leitboys	RW4; 9294,4536 9310,4407
 Leitboys	RW4; 9310,4407 9333,4229 9346,4144 9375,4022
 #: note: Leitboys hören etwa 80m vor der Kreuzung auf (Bushaltestelle)
 Leitboys	RW4; 9375,4022 9426,3797
+	RW3; 9426,3797 9438,3745 9455,3671
 #: note: Mariendorfer Damm Richtung Norden
 Leitboys	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407
 #: note: Leitboys fangen etwa 50m nach der Kreuzung an (Bushaltestelle)
 Leitboys	RW4; 9310,4407 9294,4536
 #: note: keine Leitboys im Bereich der Bushaltestelle
 Leitboys	RW4; 9294,4536 9275,4672
+Leitboys	RW4; 9275,4672 9259,4815
+	RW4; 9259,4815 9248,4904
+#: note: keine Poller im Bereich der Bushaltestelle
+Poller	RW4; 9248,4904 9239,4980 9206,5193
 # 
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # 
@@ -8702,7 +8705,7 @@ Leitboys	RW4; 9294,4536 9275,4672
 #: osm_watch: way id="4357826" version="22"
 #: osm_watch: way id="354645907" version="18"
 #: osm_watch: way id="354645904" version="13"
-#: last_checked: 2024-04-13 vvv
+#: last_checked: 2024-08-18 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv
 	RW3; 8739,6701 8653,6781

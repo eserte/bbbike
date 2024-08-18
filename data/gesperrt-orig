@@ -1876,7 +1876,7 @@ Bernau - Tempelfelde	1 23179,31047 23103,30923
 # REMOVED (permanent entfernt) --- Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 18301,-6019 18367,-5665 18411,-5428
 # REMOVED (permanent entfernt) --- Straße gesperrt - Baustelle Großflughafen Schönefeld, Durchfahrt nicht möglich	2 15493,-4693 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18693,-5516
 # REMOVED (permanent entfernt) --- #: by: ^^^
-Dallgower Str.	1 -10799,15946 -10853,16230
+Dallgower Str.	1 -10799,15946 -10840,16133 -10853,16230
 # REMOVED (jetzt Sackgasse) --- Altlandsberger Chaussee	1 40487,16703 40660,16720
 Bernau, Bahnhofstr.	1 22892,30426 22850,30562
 # REMOVED (auf Mapillary-Bildern nicht erkennbar) --- Elisenau - Börnicke: Privatgelände?	2 24311,26512 24412,26796
@@ -3994,7 +3994,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 # REMOVED --- #: osm_watch: way id="271172796" version="6"
 # REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
 #: XXX Bebauungsplan 7-77VE: ggfs. gibt es hier noch weitere Straßen/Wegverbindungen (z.B. sieht man bei osm einen vollständigen Kreis)
-#: last_checked: 2024-04-07
+#: last_checked: 2024-08-18
 #: check_frequency: 120d
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
 # 
@@ -4734,7 +4734,7 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2024-08-03 vvv
+#: last_checked: 2024-08-18 vvv
 #: next_check: 2028-01-01 vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -4746,7 +4746,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-08-04
+#: last_checked: 2024-08-18
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259

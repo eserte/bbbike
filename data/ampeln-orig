@@ -547,10 +547,10 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 #: related ^^^
 #: related antidromic vvv
 #: note: kann nachts ausgeschaltet sein (gesehen 2014-12 (Fr) gegen 23:30, 2024-05-29 (Mi) um 23:00) vvv
-#: note: mittlerweile auch an Sonntagen, Feiertagen und an Samstagabenden ausgeschaltet, gesehen: 2022-12-18 (So) gegen 12:00, 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50), 2023-10-15 (So) vormittags und abends, 2023-12-26 (Mo, Weihnachten) 11:54, 2024-06-23 (So) 11:47, 2024-07-07 (So) 14:18 und 19:17, 2024-07-14 (So) 17:48
+#: note: mittlerweile auch an Sonntagen, Feiertagen und an Samstagabenden ausgeschaltet, gesehen: 2022-12-18 (So) gegen 12:00, 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50), 2023-10-15 (So) vormittags und abends, 2023-12-26 (Mo, Weihnachten) 11:54, 2024-06-23 (So) 11:47, 2024-07-07 (So) 14:18 und 19:17, 2024-07-14 (So) 17:48, 2024-08-18 (So) 13:08
 #: note: nicht ausgeschaltet am Samstag (zu früh?): 2023-10-21 (Sa) 12:40, 2023-11-04 (Sa) 11:34, 2024-01-13 (Sa) 14:20
 	X 11089,9751
-#: note: vermutlich zur gleichen Zeit wie die zusammenhängende Ampel ausgeschaltet, gesehen: 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50, 2023-12-26 (Mo, Weihnachten) 11:54, 2024-05-29 (Mi) um 23:00, 2024-07-14 (So) 17:48
+#: note: vermutlich zur gleichen Zeit wie die zusammenhängende Ampel ausgeschaltet, gesehen: 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50, 2023-12-26 (Mo, Weihnachten) 11:54, 2024-05-29 (Mi) um 23:00, 2024-07-14 (So) 17:48, 2024-08-18 (So) 13:08
 	X 11141,9732
 #: note ^^^
 #: related ^^^
@@ -2696,13 +2696,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-18
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50)
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-18
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 

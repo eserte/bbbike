@@ -555,39 +555,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2023/07/rave-the-planet-parade/
-#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
-#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-300-000-menschen-laut-polizei-angemeldet-id260300
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1823248945088270542
-#: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-rave-the-planet-auf-der-strasse-des-17-juni-in-tiergarten/
-#: by: https://www.ravetheplanet.com/demoroute-2024/
-#: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023) (inaktiv)
-#: source_id: viz2021:13.371607,52.515899,16.08.2024,18:00 (bis 18.08.2024)
-#: source_id: viz2021:13.349991,52.514511,17.08.2024,09:00 (bis 18.08.2024)
-#: source_id: viz2021:13.354603,52.517071,17.08.2024,21:00 (bis 18.08.2024)
-#: source_id: viz2021:13.35107,52.51429,16.08.2024,18:00 (bis 18.08.2024)
-#: source_id: viz2021:13.370518,52.51725,16.08.2024,18:00 (bis 18.08.2024)
-#: note: Sperrung des Pariser Platzes auf Webcam gesehen
-Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 8119,12414 8055,12186 8049,12140
-	3 8049,12140 8055,12186 8119,12414
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-	3 7822,12201 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7822,12201
-Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-',
-         'from' => 1723759200,
-         'id' => 536,
-         'text' => 'Straße des 17. Juni: Veranstaltung (Rave the planet), Straße gesperrt, am 17.08.2024',
-         'type' => 'gesperrt',
-         'until' => 1723968000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5370,9 +5338,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt), 2023-12-26 (Mo, Weihnachten) 12:13 (100cm breiter Spalt, Torflügel ist fest verankert), 2024-04-23 (Di) 17:35 (Spalt, Mofa passt durch)
+         'data' => '#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt), 2023-12-26 (Mo, Weihnachten) 12:13 (100cm breiter Spalt, Torflügel ist fest verankert), 2024-04-23 (Di) 17:35 (Spalt, Mofa passt durch), 2024-08-18 (So) 13:20 (weiterhin 100cm breiter Spalt)
 #: osm_watch: node id="575826622" version="4" vvv
-#: last_checked: 2024-04-23 vvv
+#: last_checked: 2024-08-18 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -6067,7 +6035,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024)
-#: last_checked: 2024-08-07 vvv
+#: last_checked: 2024-08-18 vvv
 #: check_frequency: 60d vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 14242,9448 14316,9542
@@ -6311,8 +6279,8 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 #: also_indoor: traffic (G,W) vvv
 #: osm_watch: way id="151353924" version="14"
-#: last_checked: 2024-06-22 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2024-08-18 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2023-06-11 vvv
 # REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
 # REMOVED (hier nicht mehr) ---	q2::inwork 8961,6490 8949,6644
@@ -6327,7 +6295,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 ',
          'from' => undef,
          'id' => 3735,
-         'text' => 'Parkstr.: Bauarbeiten, Fahrbahn gesperrt, Umwege an der Dorfkirche',
+         'text' => 'Parkstr.: Bauarbeiten, Fahrbahn offiziell noch gesperrt (Stand Mitte August 2024), Umwege an der Dorfkirche',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6607,6 +6575,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 # REMOVED --- #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023
 #: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert)
 #: also_indoor: traffic (ex-G)
+#: add_fragezeichen: Sind die Bauarbeiten in der Gleiwitzer Str. beendet?
 #: last_checked: 2024-07-20 vvv
 # REMOVED --- #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-05-10 vvv
@@ -7465,11 +7434,11 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-07-29 (mapillary) vvv
+#: last_checked: 2024-08-18 (osm) vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="1156267450" version="6"
+#: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="21"
+#: osm_watch: way id="120633718" version="22"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -7832,7 +7801,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        },
        {
          'data' => '#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
-#: last_checked: 2024-08-02 vvv
+#: last_checked: 2024-08-18 vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
 Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
@@ -7971,7 +7940,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
        undef,
        {
          'data' => '#: also_indoor: traffic (none)
-#: last_checked: 2024-08-01 (mapillary)
+#: last_checked: 2024-08-18
 	q4::inwork; 12997,6290 13239,6344 13283,6354
 ',
          'from' => undef,
@@ -7999,11 +7968,10 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1463120.php
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/quermatenweg-wird-saniert_a420563
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1476212.php
-#: next_check: 2024-08-18
-#: historical_note: ursprünglich bis zum 02.09.2024
-zwischen Ithweg und und Ottmachauer Steig 15.07.2024 - 18.08.2024	q4::inwork -326,5042 -473,5002 -670,4903
-# #: historical_note: ursprünglich bis zum 17.10.2024
-#zwischen Ottmachauer Steig bis Hirschhorner Weg 19.08.2024 - 18.09.2024	q4::inwork -670,4903 -820,4772
+# REMOVED --- #: next_check: 2024-08-18 --- #: historical_note: ursprünglich bis zum 02.09.2024 --- zwischen Ithweg und und Ottmachauer Steig 15.07.2024 - 18.08.2024	q4::inwork -326,5042 -473,5002 -670,4903
+#: historical_note: ursprünglich bis zum 17.10.2024
+#: next_check: 2024-09-18
+zwischen Ottmachauer Steig bis Hirschhorner Weg 19.08.2024 - 18.09.2024	q4::inwork -670,4903 -820,4772
 # #: historical_note: ursprünglich bis zum 29.11.2024
 #zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwork -820,4772 -857,4725 -927,4638
 ',
@@ -8185,7 +8153,7 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
        {
          'data' => '#: also_indoor: traffic (H,B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-16
+#: last_checked: 2024-08-18
 #: check_frequency: 30d
 #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -8330,6 +8298,18 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Wegs, voraussichtlich ab 19.08.2024 bis Ende November 2024',
          'type' => 'gesperrt',
          'until' => 1733007599
+       },
+       {
+         'data' => '#: also_indoor: traffic (none)
+#: add_fragezeichen: Bestehen die Bauarbeiten weiterhin? Ist die Qualität der Fahrbahn besser geworden?
+#: last_checked: 2024-08-18
+	q4::inwork 8750,5173 8623,5104
+',
+         'from' => undef,
+         'id' => 4141,
+         'text' => 'Wulfila-Ufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
