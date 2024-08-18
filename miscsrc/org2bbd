@@ -18,35 +18,40 @@ use POSIX qw(strftime);
 
 my $headline_start_rx = qr{^\*+\s+(TODO|DONE|WAITING|WONTFIX|LATER)\s+};
 
-my $file = shift or die "org mode file?";
+my @files = @ARGV;
+if (!@files) {
+    die "Please specify one or more org mode files.\n";
+}
 
 my @locations;
 
-open my $fh, '<:encoding(utf-8)', $file
-    or die "Can't open $file: $!";
-my $active_headline;
-my $active_headline_is_TODO;
-while(<$fh>) {
-    if (/$headline_start_rx/) {
-	$active_headline = $_;
-	$active_headline_is_TODO = $1 eq 'TODO';
-    }
-    if ($active_headline_is_TODO && m{\[\[geo:([-+]?\d+(?:\.\d+)?),([-+]?\d+(?:\.\d+)?)(?:\?z=(\d+(?:\.\d+)?))?\](?:\[(.*?)\])?\]}) {
-	my($lat, $lon, $zoom, $link_title) = ($1,$2,$3,$4); # $zoom not yet used
-	if (!defined $active_headline) {
-	    warn "Found geo URI for $lat/$lon, but without an associated org-mode headline, skipping...\n";
-	    next;
+for my $file (@files) {
+    open my $fh, '<:encoding(utf-8)', $file
+	or die "Can't open $file: $!";
+    my $active_headline;
+    my $active_headline_is_TODO;
+    while(<$fh>) {
+	if (/$headline_start_rx/) {
+	    $active_headline = $_;
+	    $active_headline_is_TODO = $1 eq 'TODO';
 	}
-	push @locations, {
-	    link_title => (defined $link_title ? $link_title : extract_headline($active_headline)),
-	    lon => $lon,
-	    lat => $lat,
-	};
+	if ($active_headline_is_TODO && m{\[\[geo:([-+]?\d+(?:\.\d+)?),([-+]?\d+(?:\.\d+)?)(?:\?z=(\d+(?:\.\d+)?))?\](?:\[(.*?)\])?\]}) {
+	    my($lat, $lon, $zoom, $link_title) = ($1,$2,$3,$4); # $zoom not yet used
+	    if (!defined $active_headline) {
+		warn "Found geo URI for $lat/$lon, but without an associated org-mode headline, skipping...\n";
+		next;
+	    }
+	    push @locations, {
+		link_title => (defined $link_title ? $link_title : extract_headline($active_headline)),
+		lon => $lon,
+		lat => $lat,
+	    };
+	}
     }
 }
 
 if (!@locations) {
-    die "No locations found in $file.\n";
+    die "No locations found in @files.\n";
 }
 
 binmode STDOUT, ':encoding(utf-8)';
@@ -54,7 +59,7 @@ print <<EOF;
 #: encoding: utf-8
 #: map: polar
 #: 
-# Converted from $file at @{[ strftime("%Y-%m-%d %H:%M:%S", localtime) ]}
+# Converted from @files at @{[ strftime("%Y-%m-%d %H:%M:%S", localtime) ]}
 # 
 EOF
 for my $location (@locations) {
