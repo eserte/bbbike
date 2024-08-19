@@ -747,7 +747,36 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html
+#: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
+#: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022)
+#: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00 (inaktiv)
+#: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
+#: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
+	2::temp 7201,8870 7101,9027 7029,9156 7007,9220 6994,9288
+	2::temp 7308,9163 7101,9027 6958,8941
+	2::temp 6936,9138 7029,9156
+	2::temp 7007,9220 7124,9226
+',
+         'from' => 1746741600,
+         'id' => 728,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              4,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (10.05.2025 und 11.05.2025)',
+         'type' => 'gesperrt',
+         'until' => 1747000799
+       },
        undef,
        undef,
        {
@@ -3303,7 +3332,18 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: außerhalb der Bühnenprogrammzeiten keine Behinderungen
+#: by: https://www.berlin.de/events/5983059-2229501-radioeins-parkfest.html
+#: by: https://www.radioeins.de/themen/_/parkfest/
+	q3::temp 8652,9870 8571,9896
+',
+         'from' => 1724364000,
+         'id' => 2473,
+         'text' => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, vom 24. August 2024 bis 1. September 2024',
+         'type' => 'handicap',
+         'until' => 1725213600
+       },
        undef,
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
@@ -3508,41 +3548,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.laubinger.de/event/koepenickerwinzersommer/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1353303.php
-# REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
-# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22111,4562 22093,4499
-# REMOVED (hier wohl nicht) ---	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
-# REMOVED (hier wohl nicht) ---	2::temp 22212,4655 22214,4548
-# REMOVED (hier wohl nicht) ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
-# REMOVED (hier wohl nicht) ---	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
-# REMOVED (hier wohl nicht) ---	2::temp 22175,4730 22246,4711
-# REMOVED (hier wohl nicht) ---	2::temp 22074,4664 22138,4642
-# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
-Luisenhain	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
-Schlossinsel	2::temp 22093,4499 22076,4422
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1723723200,
-         'id' => 2610,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              8,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.winzerfest-köpenick.de/',
-         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 16.8.2024 bis 18.8.2024 möglich',
-         'type' => 'gesperrt',
-         'until' => 1724018399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7056,7 +7062,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-08-15 vvv
+#: last_checked: 2024-08-19 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7406,7 +7412,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
        },
        {
          'data' => '#: source_id: viz2021:13.33304,52.4907,12.03.2024,16:19 (bis 29.03.2024) (inaktiv)
-#: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024) (bis 30.06.2024) (bis 31.07.2024) (bis 19.08.2024)
+#: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024) (bis 30.06.2024) (bis 31.07.2024) (bis 19.08.2024) (bis 06.09.2024)
 #: source_id: viz2021:13.33304,52.4907,27.06.2024,17:18 (bis 31.07.2024) (vorzeitig inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767537882204434779 (hier nur Kfz-Verkehr)
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/wasserrohrbruch-fuehrt-zu-sperrung_a411536
@@ -7418,9 +7424,9 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
 ',
          'from' => 1710170340,
          'id' => 4023,
-         'text' => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), vermutlich sind auch Radfahrer betroffen (absteigen und schieben), vom 12.03.2024 16:19 bis 19.08.2024',
+         'text' => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), vermutlich sind auch Radfahrer betroffen (absteigen und schieben), vom 12.03.2024 16:19 bis 06.09.2024',
          'type' => 'handicap',
-         'until' => 1724079600
+         'until' => 1725634800
        },
        undef,
        undef,
@@ -7843,7 +7849,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-08-15 vvv
+#: last_checked: 2024-08-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8310,6 +8316,16 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Wulfila-Ufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: LS/221-E/24/094 (bis 30.08.2024)
+	2::inwork 37481,69171 37365,69000
+',
+         'from' => 1722751200,
+         'id' => 4142,
+         'text' => 'Glambeck: Sperrung einer Brücke im Zuge der L239, vom 05.08.2024 08:00 Uhr bis 30.08.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1725026400
        }
      
 );

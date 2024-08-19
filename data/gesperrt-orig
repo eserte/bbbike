@@ -3869,7 +3869,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-08-15
+#: last_checked: 2024-08-19
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -3904,7 +3904,7 @@ Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:q3:inwork 799
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2024-08-15 vvv
+#: last_checked: 2024-08-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-01 vvv
 #: osm_watch: way id="1054783030" version="3"
@@ -4192,7 +4192,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2024-08-06
+#: last_checked: 2024-08-19
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4260,7 +4260,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
 #: by: https://entwicklungsstadt.de/berlin-mitte-sichtbarer-fortschritt-beim-umbau-des-gendarmenmarktes/
-#: last_checked: 2024-08-15 (daf) vvv
+#: last_checked: 2024-08-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -4479,7 +4479,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.berliner-woche.de/mitte/c-bauen/katholisches-forum-am-bebelplatz-wird-komplettiert_a385644 (Umbauarbeiten: Kathedrale bis Ende 2024, Bernhard-Lichtenberg-Haus bis Mitte 2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2024/03/sankt-hedwigs-kathedrale-sanierung-wiedereroeffnung-umbau-24-november-berlin-mitte.html (Eröffnung der Kathedrale am 24.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-oeffnet-nach-langer-sanierung-id248135
-#: last_checked: 2024-08-05
+#: last_checked: 2024-08-19
 #: check_frequency: 360d
 #: next_check: 2024-11-24
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -4586,6 +4586,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: by: https://my.greenprofi.de/bauprojekte/1323594 (alte Ausschreibung, Bauausführung: 12 Monate)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1790700693709279405 (Einschränkung auf der A114 nur bis 21.05.2024)
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=765099#post765099
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1825419928171675942 (Einschränkung auf der A114 diese Woche)
 # REMOVED (im del-Changeset kommentiert) --- #: osm_watch: way id="298416172" version="9"
 #: osm_watch: way id="43205335" version="3"
 #: osm_watch: way id="298416172" version="12"
@@ -5052,6 +5053,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,726545#msg-726545
 #: by: https://viz.berlin.de/2023/09/bhf-schoeneweide/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1477330.php
 #: source_id: viz2021:13.50984,52.45636,05.08.2022,11:36 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 5.8.2022) (bis 31.3.2023) (bis 01.09.2023) (bis 02.02.2024) (seit November 2023 inaktiv)
 #: note: auch als "Verlängerte Brückenstraße" bezeichnet
