@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.25;
+$VERSION = 2.26;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1684,8 +1684,9 @@ sub show_fis_broker_menu {
 	 -command => sub { showmap_fis_broker(mapId => 'wmsk_radverkehrsanlagen@senstadt', %args) },
 	);
     $link_menu->command
-	(-label => 'Übergeordnetes Fahrradroutennetz (Stand 2014)',
-	 -command => sub { showmap_fis_broker(mapId => 'k_fahrradroutennetz@senstadt', %args) },
+	# früher (bis 2024): 'Übergeordnetes Fahrradroutennetz (Stand 2014)', 'k_fahrradroutennetz@senstadt'
+	(-label => 'Radverkehrsnetz',
+	 -command => sub { showmap_fis_broker(mapId => 'k_radverkehrsnetz@senstadt', %args) },
 	);
     $link_menu->separator;
     $link_menu->command
