@@ -226,7 +226,8 @@ for my $sequence (@sequences) {
 	"sequence=$sequence->[0]->{sequence}",
 	;
     my @coords = map { join(",", @{ $_->{$geometry_field}->{coordinates} || [] }) } @$sequence;
-    print $ofh "#: url: https://www.mapillary.com/app/user/$creator?pKey=$id&focus=photo&dateFrom=$start_date&dateTo=$end_date\n";
+    my($lng0,$lat0) = split /,/, $coords[0];
+    print $ofh "#: url: https://www.mapillary.com/app/user/$creator?pKey=$id&focus=photo&dateFrom=$start_date&dateTo=$end_date&z=15&lat=$lat0&lng=$lng0\n";
     print $ofh "$name\tX @coords\n";
 }
 
