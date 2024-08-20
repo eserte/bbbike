@@ -33220,7 +33220,7 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: last_checked: 2024-07-03
+#: last_checked: 2024-07-27 (kartaview)
 #: check_frequency: 120d
 #: next_check: 2024-09-01
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
@@ -37471,9 +37471,9 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 EOF
      },
      { from  => $isodate2epoch->("2024-06-17 00:00:00"), # 1665385200, # 2022-10-10 09:00
-       until => $isodate2epoch->("2024-09-02 17:00:00"), # $isodate2epoch->("2023-08-10 17:00:00"), # 1667664000, # 2022-11-05 17:00
-       #text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 10.08.2023 17:00',
-       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 02.09.2024',
+       until => $isodate2epoch->("2024-09-30 17:00:00"), # $isodate2epoch->("2023-08-10 17:00:00"), # 1667664000, # 2022-11-05 17:00
+#      text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 10.08.2023 17:00',
+       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 30.09.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
@@ -37484,7 +37484,7 @@ EOF
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024)
 #: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
-#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024)
+#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024)
 #: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
@@ -39107,7 +39107,7 @@ EOF
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-08-13 (traffic)
+#: last_checked: 2024-08-20 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -40499,9 +40499,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1352930.php (unklare Instandsetzung)
-#: osm_watch: way id="238032318" version="5"
+#: osm_watch: way id="238032318" version="6"
 #: add_fragezeichen: Wann ist der Steg wieder offen?
-#: last_checked: 2023-10-08
+#: last_checked: 2023-10-08 (osm)
 #: check_frequency: 120d
 	2::inwork 11162,22939 11150,22898
 EOF
@@ -40879,6 +40879,7 @@ EOF
 #: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Bauarbeiten bis 20. Oktober 2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,797608#msg-797608 (Ende der Bauarbeiten am 20.10.2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
+#: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024)
@@ -40890,7 +40891,7 @@ EOF
 #: priority: #A vvv
 #: last_checked: 2024-08-17 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2024-10-20 vvv
+#: next_check: 2024-10-17 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="7"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -41446,7 +41447,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-08-19 vvv
+#: last_checked: 2024-08-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -43678,7 +43679,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-08-19 vvv
+#: last_checked: 2024-08-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -43948,11 +43949,11 @@ EOF
 EOF
      },
      { from  => 1720614180, # 2024-07-10 14:23
-       until => $isodate2epoch->("2024-08-23 17:00:00"), # 1723215600, # 2024-08-09 17:00
+       until => 1724174853, # $isodate2epoch->("2024-08-23 17:00:00"), # 1723215600, # 2024-08-09 17:00
        text  => 'Maxstr.: Anbindung Seestr. wegen Bauarbeiten gesperrt, vom 11.07.2024 14:23 bis 23.08.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.364381,52.549655,11.07.2024,14:23 (bis 09.08.2024) (bis 23.08.2024)
+#: source_id: viz2021:13.364381,52.549655,11.07.2024,14:23 (bis 09.08.2024) (bis 23.08.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1811376928051364138
 #: by: https://pbs.twimg.com/media/GSNNci7WMAEH-87?format=jpg&name=large (keine Regelung für den Radverkehr)
 #: note: q4 -> q3, weil der gesperrte Abschnitt sehr kurz ist
@@ -44264,6 +44265,49 @@ EOF
        data  => <<EOF,
 #: source_id: LS/221-E/24/094 (bis 30.08.2024)
 	2::inwork 37481,69171 37365,69000
+EOF
+     },
+     { from  => 1725141600, # 2024-09-01 00:00
+       until => undef, # XXX
+       text  => 'Mauerweg entlang des Buschgrabens: Bauarbeiten, Sperrung, voraussichtlich vom 02. September 2024 bis zum Frühjahr 2025',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
+#: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: next_check: 2025-05-01
+	2::inwork -4,1133 25,1018 16,950 31,830 51,752 75,715 118,407 123,3
+EOF
+     },
+     { from  => 1727647200, # 2024-09-30 00:00
+       until => undef, # XXX
+       text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich am dem IV. Quartal 2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
+#: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
+#: add_fragezeichen: Haben die Bauarbeiten bereits begonnen?
+#: next_check: 2024-10-01
+	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
+EOF
+     },
+     { from  => 1725746400, # 2024-09-08 00:00
+       until => 1727647200, # 2024-09-30 00:00
+       text  => 'Pfaueninselchaussee: Sanierung der Fahrbahn, Sperrung, vom 09.09.2024 bis 29.09.2024 ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477879.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/24-105_vfp_240710.jpg (Umleitungsstrecke)
+	2::inwork -6442,1150 -6492,1204 -6577,1395 -6648,1613 -6784,1815 -6903,1906 -6999,1933 -7165,1978 -7304,1970 -7443,1915 -7640,1837 -7866,1862 -8106,2034 -8284,2156 -8422,2155
+EOF
+     },
+     { from  => 1729182600, # 2024-10-17 18:30
+       until => 1729864800, # 2024-10-25 16:00
+       text  => 'Wandlitz: Sanierung des Bahnübergangs, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.10.2024 18:30 Uhr bis 25.10.2024 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 246001451 (bis 25.10.2024)
+	2::inwork 12056,34918 12025,35002 11964,35230
 EOF
      },
     );
