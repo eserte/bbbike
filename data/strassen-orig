@@ -1102,9 +1102,10 @@ Straße des 17. Juni	HH 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 80
 Ernst-Reuter-Platz	HH 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 (Charlottenburger Ufer - Uferweg)	NN 3370,12725 3396,12741
 (Rad- und Wanderweg an Spree und Landwehrkanal)	NN 3332,12742 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
-(Uferweg)	NN 4242,12684 4206,12691 4147,12699 3938,12687 3862,12675 3819,12676 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
+(Uferweg)	NN 4242,12684 4206,12691 4147,12699 4038,12693 3938,12687 3862,12675 3819,12676 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
+(Uferweg - Siemenssteg/Am Spreebord)	NN 4038,12693 4039,12706 4124,12713
 (Uferweg - Sömmeringstr.)	NN 3572,12866 3574,12916 3716,12925
-(Am Spreebord - Uferweg)	NN 4234,12710 4206,12691
+(Am Spreebord - Uferweg)	NN 4234,12710 4225,12693 4206,12691
 (Cauerstr. - Uferweg)	NN 4591,12511 4642,12491
 Einsteinufer	N 5381,11847 5372,11888 5348,11926 5229,12001 5132,12136 5046,12224 4976,12262 4807,12348 4658,12450 4591,12511
 Salzufer	N 5478,11860 5472,11893 5417,11949 5286,12043 5233,12109 5181,12195 5133,12240 5016,12332 4900,12372 4648,12559
@@ -6952,6 +6953,7 @@ Wassergrundstr.	N 18623,15587 18702,15248
 Plauener Str.	NH 17940,15771 17953,15221 17959,15084 17902,15039 17829,15015
 Plauener Str.	N 17829,15015 17762,14993 17718,14979 17638,14945
 #: note: dieses Teilstück existiert seit 2024
+#: note: hier blaue Straßenschilder
 Plauener Str.	N 17638,14945 17610,14935 17531,14923
 Plauener Str.	N 17531,14923 17475,14912 17415,14906 17340,14898 17236,14882 17117,14885 16917,14905 16784,14922
 Plauener Str. [94-96]	N 17558,14840 17531,14923
@@ -15700,7 +15702,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2024-08-14
+#: last_checked: 2024-08-21
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16090,7 +16092,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2024-08-14
+#: last_checked: 2024-08-21
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens
@@ -16322,7 +16324,7 @@ Apostel-Paulus-Str.	N 6442,9068 6366,9056 6276,9042 6214,9003
 #: XXX mögliche Umbenennung der Straße (z.B. nach Cécile Vogt)
 #: also_indoor: search Robert-Rössle-Straße
 #: osm_watch: way id="10951433" version="27"
-#: last_checked: 2024-07-24 (indoor research)
+#: last_checked: 2024-08-20 (indoor research)
 #: check_frequency: 30d
 Robert-Rössle-Str.	N 16521,24864 16681,24764 16719,24734
 Ernst-Ludwig-Heim-Str.	N 16681,24764 16613,24643 16487,24721
@@ -19219,7 +19221,10 @@ Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 (Lortzingstr. - Mauerpark)	NN 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark)	NN 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel)	NN 10070,15626 10091,15630
-(Mauerpark, über den Gleimtunnel)	NN 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684 10079,15661 10091,15630 10092,15627 10155,15473
+(Mauerpark, nördlicher Eingang Lichtburgring)	NN 10016,15823 10018,15826 10046,15844
+(Mauerpark, Schwedter Str. - Gleimtunnel)	NN 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684
+(Mauerpark, über den Gleimtunnel)	NN 10071,15684 10079,15661 10091,15630
+(Mauerpark, zum Gleimtunnel)	NN 10091,15630 10092,15627 10155,15473
 (Mauerpark - Schwedter Str.)	NN 10071,15684 10110,15678 10123,15681
 (Mauerpark - Lichtburgring)	NN 10071,15684 10057,15680
 # REMOVED (Bauarbeiten) --- (Mauerpark, über den Gleimtunnel)	NN 10091,15630 10070,15624 10162,15349
@@ -19292,7 +19297,7 @@ Ilsenburger Str. (Charlottenburg)	N 3968,12947 3968,13024 3970,13097 3967,13218 
 Wernigeroder Str.	N 4092,12947 4092,13021 4096,13095 4100,13224 4100,13269
 Klaustaler Str. (Charlottenburg)	N 4209,12944 4215,13098 4214,13230
 Harlingeroder Weg	N 4092,13021 3968,13024
-Siemenssteg	NN 4129,12619 4128,12637 4124,12706 4124,12721
+Siemenssteg	NN 4129,12619 4128,12637 4124,12706 4124,12713 4124,12721
 (Schwarzer Weg)	NN 4237,13231 4167,13375 4093,13429 3969,13487 3823,13540
 (Dahlienweg)	NN 3823,13540 3829,13572 3833,13590
 Gallesteig	N 3365,13609 3365,13695
@@ -19376,7 +19381,7 @@ Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036923752617/923752617/00406668/68-Anlagen/02/MA_1265_V.pdf
 #: osm_watch: way id="26590565" version="22"
-#: last_checked: 2024-05-27
+#: last_checked: 2024-08-21
 #: check_frequency: 120d
 (Zufahrt Parkplätze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
 (Cuxhavener Str. - Altonaer Str.)	NN 5982,12291 6030,12363 6067,12381 6098,12446
@@ -20709,7 +20714,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025)
-#: last_checked: 2024-07-05
+#: last_checked: 2024-08-21
 #: check_frequency: 180d
 #: next_check: 2025-01-10
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

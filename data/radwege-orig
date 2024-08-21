@@ -1014,12 +1014,13 @@ Radspur, niedrige Protektion	RW4; 10884,15152 10886,15251
 asphaltiert	RW2; 10886,15251 10887,15287
 Radspur, niedrige Protektion	RW4; 10887,15287 10902,15422 10917,15525
 Bushaltestelle	RW5; 10917,15525 10925,15581
+Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
-#: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: Radspur, niedrige Protektion
-#: last_checked: 2024-07-24 (mapillary)
-getrennter Rad- und Gehweg	RW2; 10925,15581 10941,15697
+#: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
+#: last_checked: 2024-08-21
 #: historical_note: früher: Gehwegplatten	RW2;
-Radspur, niedrige Protektion	RW4; 10941,15697 10953,15787
+#Radspur, niedrige Protektion	RW4;
+	RW2; 10941,15697 10953,15787
 größtenteils neu asphaltiert	RW1; 10953,15787 10964,15896 10969,15944 10975,16010
 größtenteils neu asphaltiert	RW2; 10975,16010 10982,16121
 neu asphaltiert	RW1; 10982,16121 10989,16197 10997,16280 11004,16360
@@ -1036,7 +1037,7 @@ neu asphaltiert	RW2; 10997,16280 10989,16197 10982,16121
 Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,15525
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
-#: last_checked: 2024-08-15 (mapillary)
+#: last_checked: 2024-08-21
 neu asphaltiert	RW1; 10917,15525 10902,15422
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
@@ -2850,7 +2851,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-08-15 vvv
+#: last_checked: 2024-08-21 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -6638,7 +6639,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://www.bz-berlin.de/berlin/mitte/berlins-laengstes-halteverbot (bis 2027)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
-#: last_checked: 2024-07-24 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -7561,7 +7562,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-08-13 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015

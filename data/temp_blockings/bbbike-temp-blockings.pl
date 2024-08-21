@@ -16961,15 +16961,18 @@ EOF
 	2::inwork 3310,15790 3398,16000 3564,16294
 EOF
      },
-     { from  => 1270235189, # 2010-04-02 21:06
-       until => Time::Local::timelocal(reverse(2010-1900,9-1,30,16,0,0)), # 1283205600, # 2010-08-31 00:00
-       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.09.2010 16:00 Uhr ',
+     { from  => $isodate2epoch->("2024-08-12 00:00:00"), # 1270235189, # 2010-04-02 21:06
+       until => $isodate2epoch->("2024-08-23 17:00:00"), # Time::Local::timelocal(reverse(2010-1900,9-1,30,16,0,0)), # 1283205600, # 2010-08-31 00:00
+#       text  => 'Neustädtische Kirchstr. (Mitte) Richtung Unter den Linden zwischen Dorotheenstr. und Unter den Linden Baustelle, Fahrtrichtung gesperrt bis 30.09.2010 16:00 Uhr ',
+       text  => 'Neustädtische Kirchstr.: Richtung Unter den Linden zwischen Dorotheenstr. und Mittelstr. Baustelle, Fahrtrichtung gesperrt, voraussichtlich bis 23.08.2024',
        type  => 'handicap',
-       source_id => 'IM_014421',
        data  => <<EOF,
-	2::inwork; 9121,12514 9131,12438
-Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9179,12444 9131,12438
-	q4::inwork; 9131,12438 9141,12320
+#: source_id: IM_014421 (inactive)
+# REMOVED (2010er-Eintrag) ---	2::inwork; 9121,12514 9131,12438
+# REMOVED (2010er-Eintrag) --- Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9179,12444 9131,12438
+# REMOVED (2010er-Eintrag) ---	q4::inwork; 9131,12438 9141,12320
+#: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (hier nur Kfz-Verkehr, stimmt aber nicht, bis 23.08.2024)
+	q4::inwork; 9121,12514 9131,12438
 EOF
      },
      { from  => 1255467829, # 2009-10-13 23:03
@@ -22127,13 +22130,19 @@ EOF
 	q4::inwork; 25552,4829 25720,4828 25796,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936
 EOF
      },
-     { from  => undef, # 
-       until => 1371066874, # undef, # XXX
-       text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
+     { from  => 1719810000, # 2024-07-01 07:00, # undef, # 
+       until => 1730822400, # 2024-11-05 17:00, # 1371066874, # undef, # XXX
+#       text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
+       text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Triftstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis 05.11.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
-	q4::inwork; 7085,15226 7131,15109
+# REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
+#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, bis 05.11.2024)
+#: source_id: bvg2024:142#HIM_FREETEXT_230218
+#: source_id: bvg2024:142#HIM_FREETEXT_230219
+# REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
+	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109 7085,15226
 EOF
      },
      { from  => $isodate2epoch->("2024-05-02 00:00:00"), # 1 Tag Vorlauf
@@ -28189,7 +28198,7 @@ EOF
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-07-05
+#: last_checked: 2024-08-21
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -30275,6 +30284,7 @@ EOF
        text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, Ende unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: CHARLOTTENBURGERUFER-2024
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
@@ -30290,9 +30300,9 @@ EOF
 #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-07-23 (osm)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2019-10-30
+#: last_checked: 2024-08-21
+#: check_frequency: 60d
+#: next_check: 2024-12-31
 	2::inwork 3231,12749 3332,12742
 EOF
      },
@@ -38202,7 +38212,7 @@ EOF
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: Halteverbotsschilder bis Ende September 2024
-#: last_checked: 2024-07-16
+#: last_checked: 2024-08-21
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
@@ -38218,12 +38228,11 @@ EOF
 #: osm_watch: way id="1170463985" version="3"
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
-#: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert
+#: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-07-16
+#: last_checked: 2024-08-21
 # REMOVED --- #: check_frequency: 90d
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-06-30
+#: next_check: 2024-09-30
 	q3::inwork 13263,15930 13140,16000
 EOF
      },
@@ -39984,7 +39993,7 @@ EOF
 #: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -39999,7 +40008,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024)
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3267,18767 3008,18464
@@ -41030,13 +41039,16 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-05-26 00:00:00"), # 1693720800, # 2023-09-03 08:00
-       until => $isodate2epoch->("2024-08-09 16:00:00"), # 1699286400, # 2023-11-06 17:00
-       #text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 04.09.2023 08:00 Uhr bis 06.11.2023 17:00 Uhr',
-       text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 27.05.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
+       until => undef, # $isodate2epoch->("2024-08-09 16:00:00"), # 1699286400, # 2023-11-06 17:00
+#      text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 04.09.2023 08:00 Uhr bis 06.11.2023 17:00 Uhr',
+#      text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 27.05.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
+       text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. dauerhaft',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZOSSENB246-2023
 #: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024)
+#: also_indoor: traffic (G,W,T)
+#: next_check: 2024-08-30
 	2::inwork 13526,-20548 13412,-20513 13271,-20531
 EOF
      },
@@ -41456,11 +41468,11 @@ EOF
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031 9645,12133
-#: osm_watch: way id="389101374" version="19"
+#: osm_watch: way id="389101374" version="20"
 # REMOVED (hier ist die Einbahnstraße mittlerweile für Radfahrer offen) --- Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
-#: osm_watch: way id="1149365724" version="7"
-#: osm_watch: way id="1149365723" version="6"
+#: osm_watch: way id="1149365724" version="8"
+#: osm_watch: way id="1149365723" version="7"
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: next_check ^^^
@@ -42355,6 +42367,7 @@ EOF
        text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, voraussichtlich bis Ende 2024',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: CHARLOTTENBURGERUFER-2024
 #: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024) (bis 31.12.2024)
 #: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024) (inaktiv)
 #: note: explizite Umleitung für Radfahrer vor Ort
@@ -42561,11 +42574,13 @@ EOF
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2024-06-12 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-05-31 vvv
 	2::inwork 3867,12616 3888,12618 4131,12641
-	2::inwork 4340,12578 4441,12578
+# REMOVED (hier nicht mehr?)	2::inwork 4340,12578 4441,12578
+	2::inwork 4441,12578 4529,12570 4642,12491
+Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -42857,9 +42872,9 @@ EOF
      },
      { from  => $isodate2epoch->("2024-08-01 00:00:00"), # 1718733032, # 1712466000, # 2024-04-07 07:00
        until => $isodate2epoch->("2024-09-30 16:00:00"), # 1718978400, # 2024-06-21 16:00
-       #text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Gierkeplatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.04.2024 07:00 bis 21.06.2024 16:00',
-       #text  => 'Behaimstr. und Schustehrusstr.: Bauarbeiten zwischen Wilmersdorfer Str. und Gierkezeile bzw. Gierkeplatz, evtl. sind auch Radfahrer betroffen, bis 31.07.2024',
-       text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Zillestr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 30.09.2024 16:00',
+#      text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Gierkeplatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.04.2024 07:00 bis 21.06.2024 16:00',
+#      text  => 'Behaimstr. und Schustehrusstr.: Bauarbeiten zwischen Wilmersdorfer Str. und Gierkezeile bzw. Gierkeplatz, evtl. sind auch Radfahrer betroffen, bis 31.07.2024',
+       text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Zillestr., Sperrung, vermutlich sind auch Radfahrer betroffen, bis 30.09.2024 16:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024) (am nächsten Tag schon inaktiv)
@@ -43863,6 +43878,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1463120.php
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/quermatenweg-wird-saniert_a420563
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1476212.php
+#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/bauarbeiten-schneller-fertig_a423159
 # REMOVED --- #: next_check: 2024-08-18 --- #: historical_note: ursprünglich bis zum 02.09.2024 --- zwischen Ithweg und und Ottmachauer Steig 15.07.2024 - 18.08.2024	q4::inwork -326,5042 -473,5002 -670,4903
 #: historical_note: ursprünglich bis zum 17.10.2024
 #: next_check: 2024-09-18
@@ -44238,13 +44254,16 @@ EOF
      },
      { from  => 1723932000, # 2024-08-18 00:00
        until => 1733007599, # 2024-11-30 23:59
-       text  => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Wegs, voraussichtlich ab 19.08.2024 bis Ende November 2024',
+       text  => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Wegs, ab 19.08.2024 bis Ende November 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
-#: XXX Wird tatsächlich dieser Weg gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
-#: next_check: 2024-08-19
-	2::inwork 12056,15159 12082,15206 12103,15218 12003,15311 11937,15349 11877,15366
+#: XXX Werden noch weitere Wege gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
+#: last_checked: 2024-08-21
+#: check_frequency: 45d
+#: next_check: 2024-11-30
+	2::inwork 12056,15159 12082,15206 12103,15218
+# REMOVED (hier (noch) nicht gesperrt	2::inwork 12103,15218 12003,15311 11937,15349 11877,15366
 EOF
      },
      { from  => undef, # 
@@ -44308,6 +44327,16 @@ EOF
        data  => <<EOF,
 #: source_id: 246001451 (bis 25.10.2024)
 	2::inwork 12056,34918 12025,35002 11964,35230
+EOF
+     },
+     { from  => 1724241259, # 2024-08-21 13:54
+       until => 1725406200, # 2024-09-04 01:30
+       text  => 'Neustädtische Kirchstr.: Einbahnstraßenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung Süden, voraussichtlich bis 04.09.2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/erneuerung-fuek-weichenerneuerung-in-friedrichstrasse-brueckenarbeiten-alt-moabit/#con-29937 (SEV)
+#: note: wegen SEV-Haltestelle
+	q4::temp; 9121,12514 9108,12635 9098,12687
 EOF
      },
     );

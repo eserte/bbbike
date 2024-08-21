@@ -2379,7 +2379,20 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: IM_014421 (inactive)
+# REMOVED (2010er-Eintrag) ---	2::inwork; 9121,12514 9131,12438
+# REMOVED (2010er-Eintrag) --- Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9179,12444 9131,12438
+# REMOVED (2010er-Eintrag) ---	q4::inwork; 9131,12438 9141,12320
+#: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (hier nur Kfz-Verkehr, stimmt aber nicht, bis 23.08.2024)
+	q4::inwork; 9121,12514 9131,12438
+',
+         'from' => 1723413600,
+         'id' => 1946,
+         'text' => 'Neustädtische Kirchstr.: Richtung Unter den Linden zwischen Dorotheenstr. und Mittelstr. Baustelle, Fahrtrichtung gesperrt, voraussichtlich bis 23.08.2024',
+         'type' => 'handicap',
+         'until' => 1724425200
+       },
        undef,
        undef,
        undef,
@@ -3233,7 +3246,21 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
+# REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
+#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, bis 05.11.2024)
+#: source_id: bvg2024:142#HIM_FREETEXT_230218
+#: source_id: bvg2024:142#HIM_FREETEXT_230219
+# REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
+	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109 7085,15226
+',
+         'from' => 1719810000,
+         'id' => 2430,
+         'text' => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Triftstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis 05.11.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1730822400
+       },
        undef,
        undef,
        undef,
@@ -4111,7 +4138,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-07-05
+#: last_checked: 2024-08-21
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -4447,7 +4474,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php
+         'data' => '#: next_check_id: CHARLOTTENBURGERUFER-2024
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/schlossbruecke/de/bau.shtml (bis zum IV. Quartal 2019)
@@ -4462,9 +4490,9 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-07-23 (osm)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2019-10-30
+#: last_checked: 2024-08-21
+#: check_frequency: 60d
+#: next_check: 2024-12-31
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => undef,
@@ -6107,7 +6135,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: Halteverbotsschilder bis Ende September 2024
-#: last_checked: 2024-07-16
+#: last_checked: 2024-08-21
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
@@ -6124,12 +6152,11 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: osm_watch: way id="1170463985" version="3"
 #: osm_watch: way id="1170463986" version="1"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
-#: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert
+#: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-07-16
+#: last_checked: 2024-08-21
 # REMOVED --- #: check_frequency: 90d
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-06-30
+#: next_check: 2024-09-30
 	q3::inwork 13263,15930 13140,16000
 ',
          'from' => undef,
@@ -6630,7 +6657,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
          'data' => '#: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024)
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3213,18115 3420,18470
@@ -6646,7 +6673,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024)
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 	q2::inwork 3267,18767 3008,18464
@@ -6927,7 +6954,19 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
          'type' => 'handicap',
          'until' => 1774972800
        },
-       undef,
+       {
+         'data' => '#: next_check_id: ZOSSENB246-2023
+#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024)
+#: also_indoor: traffic (G,W,T)
+#: next_check: 2024-08-30
+	2::inwork 13526,-20548 13412,-20513 13271,-20531
+',
+         'from' => 1716674400,
+         'id' => 3913,
+         'text' => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. dauerhaft',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -7072,11 +7111,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031 9645,12133
-#: osm_watch: way id="389101374" version="19"
+#: osm_watch: way id="389101374" version="20"
 # REMOVED (hier ist die Einbahnstraße mittlerweile für Radfahrer offen) --- Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
-#: osm_watch: way id="1149365724" version="7"
-#: osm_watch: way id="1149365723" version="6"
+#: osm_watch: way id="1149365724" version="8"
+#: osm_watch: way id="1149365723" version="7"
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: next_check ^^^
@@ -7288,7 +7327,8 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024) (bis 31.12.2024)
+         'data' => '#: next_check_id: CHARLOTTENBURGERUFER-2024
+#: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024) (bis 31.12.2024)
 #: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024) (inaktiv)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024
@@ -7369,11 +7409,13 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2024-06-12 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-05-31 vvv
 	2::inwork 3867,12616 3888,12618 4131,12641
-	2::inwork 4340,12578 4441,12578
+# REMOVED (hier nicht mehr?)	2::inwork 4340,12578 4441,12578
+	2::inwork 4441,12578 4529,12570 4642,12491
+Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7507,7 +7549,7 @@ Gierkezeile, südlicher Abschnitt	q4::inwork 3507,12076 3514,11988 3528,11852
 ',
          'from' => 1722463200,
          'id' => 4037,
-         'text' => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Zillestr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 30.09.2024 16:00',
+         'text' => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Zillestr., Sperrung, vermutlich sind auch Radfahrer betroffen, bis 30.09.2024 16:00',
          'type' => 'handicap',
          'until' => 1727704800
        },
@@ -7975,6 +8017,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1463120.php
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/quermatenweg-wird-saniert_a420563
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1476212.php
+#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/bauarbeiten-schneller-fertig_a423159
 # REMOVED --- #: next_check: 2024-08-18 --- #: historical_note: ursprünglich bis zum 02.09.2024 --- zwischen Ithweg und und Ottmachauer Steig 15.07.2024 - 18.08.2024	q4::inwork -326,5042 -473,5002 -670,4903
 #: historical_note: ursprünglich bis zum 17.10.2024
 #: next_check: 2024-09-18
@@ -8284,13 +8327,16 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
-#: XXX Wird tatsächlich dieser Weg gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
-#: next_check: 2024-08-19
-	2::inwork 12056,15159 12082,15206 12103,15218 12003,15311 11937,15349 11877,15366
+#: XXX Werden noch weitere Wege gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
+#: last_checked: 2024-08-21
+#: check_frequency: 45d
+#: next_check: 2024-11-30
+	2::inwork 12056,15159 12082,15206 12103,15218
+# REMOVED (hier (noch) nicht gesperrt	2::inwork 12103,15218 12003,15311 11937,15349 11877,15366
 ',
          'from' => 1723932000,
          'id' => 4140,
-         'text' => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Wegs, voraussichtlich ab 19.08.2024 bis Ende November 2024',
+         'text' => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Wegs, ab 19.08.2024 bis Ende November 2024',
          'type' => 'gesperrt',
          'until' => 1733007599
        },
@@ -8362,6 +8408,17 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Wandlitz: Sanierung des Bahnübergangs, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.10.2024 18:30 Uhr bis 25.10.2024 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1729864800
+       },
+       {
+         'data' => '#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/erneuerung-fuek-weichenerneuerung-in-friedrichstrasse-brueckenarbeiten-alt-moabit/#con-29937 (SEV)
+#: note: wegen SEV-Haltestelle
+	q4::temp; 9121,12514 9108,12635 9098,12687
+',
+         'from' => 1724241259,
+         'id' => 4147,
+         'text' => 'Neustädtische Kirchstr.: Einbahnstraßenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung Süden, voraussichtlich bis 04.09.2024',
+         'type' => 'handicap',
+         'until' => 1725406200
        }
      
 );

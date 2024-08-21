@@ -495,7 +495,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 3 (Fahrradstraße?)
-#: last_checked: 2024-08-14 (mapillary) vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: osm_watch: way id="169459736" version="14"
@@ -613,7 +613,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2024-08-10 (mapillary)
+#: last_checked: 2024-08-21
 #: check_frequency: 90d
 #: next_check: 2025-09-30
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -627,7 +627,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2024-06-26
+#: last_checked: 2024-07-26 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1106,7 +1106,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
 #: osm_watch: way id="717490209" version="23"
-#: last_checked: 2024-06-22
+#: last_checked: 2024-08-21
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2024-12-31
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
@@ -1726,6 +1726,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6711 (Einwohnerantrag)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-umgestaltet_a408782 (2025 Fahrradstraße; Umgestaltung des Dreiecksplatzes)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/anwohner-gegen-durchgangsverkehr_a409202
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblöcken, u.a. Bötzow-Kiez)
 #: osm_watch: way id="4615063" version="36"
 #: last_checked: 2024-08-03
 #: check_frequency: 180d
@@ -3124,8 +3125,8 @@ Quellenweg: Schotterweg	Q2+ 1027,13304 969,13290 919,13281 783,13275 738,13277 7
 Werkring: Beton	Q0 -990,13502 -975,13574 -978,13665 -1000,13764 -1084,13933 -1132,13972 -1188,13988
 #: note: auch by anonymous:
 Sophienwerderweg: Asphalt	Q0 -1188,13988 -1575,14098 -2396,14245
-#: corrected_by: mapillary (früher: wassergebundene Decke)
-(Uferweg): Asphalt	Q0 4242,12684 4206,12691 4147,12699 3938,12687 3862,12675 3819,12676
+#: corrected_by: mapillary (früher: wassergebundene Decke), srt
+(Uferweg): Asphalt, leicht wellig	Q0- 4242,12684 4206,12691 4147,12699 4038,12693 3938,12687 3862,12675 3819,12676
 (Uferweg): wassergebundene Decke	Q1 3819,12676 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
 (Schloßpark Charlottenburg, westlicher Weg): wassergebundene Decke	Q1 2906,13610 2876,13594 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Schloßpark Charlottenburg): wassergebundene Decke	Q1 2953,13489 2925,13516 2858,13530
@@ -4320,7 +4321,7 @@ Katharina-Paulus-Str.: Kopfsteinpflaster	Q2 7867,13106 7867,13127
 Priesterweg (Britz): sehr schlechtes Kopfsteinpflaster	Q3- 13227,6209 13220,6237 13239,6344
 Mackenroder Weg: schlechtes Kopfsteinpflaster, mit einigen Asphaltflicken	Q3+ 12805,6248 12833,6127
 Otto-Krüger-Zeile: Asphalt	Q0 17456,7132 17484,7087 17552,6959 17574,6908
-Rampe: asphaltiert	Q0 4206,12691 4234,12710
+Rampe: asphaltiert	Q0 4206,12691 4225,12693 4234,12710
 #: note: "gelber Asphalt"
 (Neues Ufer - Kaiserin-Augusta-Allee): Asphalt	Q0 4456,12918 4514,12936 4581,13066 4582,13086
 (Neues Ufer - Kaiserin-Augusta-Allee): Kopfsteinpflaster	Q2 4582,13086 4576,13121 4592,13127
@@ -4731,7 +4732,7 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wann wird hier saniert?
 #: XXX möglicherweise gibt es aktuelle Bauarbeiten im Mittelteil, prüfen!
-#: last_checked: 2024-05-03
+#: last_checked: 2024-08-21
 #: check_frequency: 360d
 #: next_check: 2025-12-31
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
@@ -10988,15 +10989,20 @@ Fischerstr.: Asphaltschäden	Q1+ 16423,10259 16492,10163 16539,10097
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel): wassergebundene Decke	Q1 10070,15626 10091,15630
-(Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10050,15824
+#: note: flache Rampe
+(Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844
+(Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10046,15844 10050,15824
 #: historical_note: bis 2024: wassergebundene Decke, Q1
-(Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0- 10050,15824 10061,15775 10045,15754 10071,15684
+(Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0- 10050,15824 10061,15775
+(Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10061,15775 10045,15754
+(Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0- 10045,15754 10071,15684
 #: historical_note: bis Herbst 2023: wassergebundene Decke, Q1
 (Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0- 10071,15684 10079,15661
 (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10079,15661 10091,15630
 # REMOVED --- (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10091,15630 10070,15624 10162,15349
 #: historical_note: bis Frühjahr 2024: wassergebundene Decke, teilweise Schotter, Q2+
 (Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10091,15630 10092,15627 10155,15473
+(Mauerpark, Eingang Lichtburgring): Asphalt	Q0 10016,15823 10018,15826 10046,15844
 (Mauerpark - Lichtburgring): Kleinsteinpflaster	Q1 10071,15684 10057,15680
 Lindenschwärmerweg: Asphalt	Q0 21308,11075 21294,11097 21187,11132
 Apollofalterallee [64-98]: Asphalt	Q0 21354,11101 21326,11122
@@ -13456,7 +13462,7 @@ Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 1
 Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2024-08-14 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
@@ -13671,6 +13677,8 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 (Mauerpark - Schwedter Str.): Kleinsteinpflaster	Q1- 10071,15684 10110,15678 10123,15681
 # 
 (Hellersdorfer Str. - Ernst-Bloch-Str.): neu asphaltierter Radweg	Q0 22933,12837 22954,12843 22991,12844
+# 
+(Uferweg - Siemenssteg/Am Spreebord): Kleinsteinpflaster	Q2+ 4038,12693 4039,12706 4124,12713
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -33282,5 +33290,8 @@ Kreuzungsbereich asphaltiert	Q0 9432,14936
 Einmündungsbereich asphaltiert	Q0 10018,15211
 Einmündungsbereich asphaltiert	Q0 9031,6355
 Einmündungsbereich asphaltiert	Q0 8944,6293
+Einmündungsbereich mit Kopfsteinpflaster	Q2 3539,11784
+Einmündungsbereich mit Kopfsteinpflaster	Q2 8735,15295
+Platzbereich asphaltiert	Q0 10046,15844
 #: ignore ^^^
 #: section ^^^

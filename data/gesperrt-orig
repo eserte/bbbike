@@ -3025,7 +3025,7 @@ Drängelgitter	BNP:3::trailer=10 10969,10015
 Drängelgitter	BNP:3::trailer=10 10879,10037
 langes Drängelgitter	BNP:10::trailer=20 20284,12064
 Drängelgitter	BNP:3::trailer=10 21911,6938
-# REMOVED (mittlerweile ist das große Tor dauerhaft (?) offen) --- Tor, verwinkelt	BNP:3::trailer=10 17571,12557
+# REMOVED (mittlerweile ist das große Tor dauerhaft (?) offen) (2024: es gibt keine Torflügel mehr) --- Tor, verwinkelt	BNP:3::trailer=10 17571,12557
 #: note: ggfs. über Bordsteine auf den Gehwegbereich tragen
 Schranke	BNP:5::trailer=15 22221,10985
 Drängelgitter	BNP:3::trailer=10 11892,12760
@@ -3807,6 +3807,7 @@ Schwingtor	BNP:5::trailer=10 25136,10768
 Schranke	BNP:3::trailer=10 13081,14090
 weites Drängelgitter	BNP:2::trailer=7 7157,18810
 weites Drängelgitter	BNP:2::trailer=7 1772,42835
+Drängelgitter	BNP:3::trailer=10 10018,15826
 #
 #: section ^^^
 ############################################################################
@@ -3892,7 +3893,7 @@ Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: historical_note: am Anfang Einbahnstraße, offen Richtung Norden (1s:q3:inwork), später komplett zu (q4::inwork in handicap_s-orig), dann wieder (laut osm) Einbahnstraße
 #: osm_watch: way id="4596985" version="28"
-#: last_checked: 2024-08-14 (mapillary)
+#: last_checked: 2024-08-21
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:q3:inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -4121,7 +4122,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-08-14 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -4154,7 +4155,7 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
 #: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
 #: priority: #C
-#: last_checked: 2024-08-13
+#: last_checked: 2024-08-21
 # REMOVED --- #: next_check: 2024-08-07
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
@@ -4260,13 +4261,13 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
 #: by: https://entwicklungsstadt.de/berlin-mitte-sichtbarer-fortschritt-beim-umbau-des-gendarmenmarktes/
-#: last_checked: 2024-08-19 vvv
+#: last_checked: 2024-08-20 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
-#: osm_watch: way id="766868087" version="13"
+#: osm_watch: way id="766868087" version="14"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
-#: osm_watch: way id="766868090" version="15"
+#: osm_watch: way id="766868090" version="16"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: note ^^^
 #: next_check ^^^
@@ -4285,7 +4286,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: by: https://www.deutsches-architekturforum.de/thread/14770-wilmersdorf-halensee-grunewald-schmargendorf-kleinere-projekte/?postID=757826#post757826
 #: source_id: viz2021:13.33184,52.48035,31.07.2023,06:00 (Komplettsperrung bis 04.08.2023) (inaktiv)
 #: note: nur kurzer Einbahnstraßenabschnitt, etwa 20-30m
-#: last_checked: 2024-08-09
+#: last_checked: 2024-08-20 (architektur-urbanistik)
 #: check_frequency: 120d
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 5522,8024 5521,8087
 # REMOVED (hier nicht) --- Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5521,8087 5519,8159 5560,8204
@@ -4296,13 +4297,13 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-20 (okas)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2025-04-15
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #
 #: next_check_id: U6-2022
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-20 (okas)
 #: next_check: 2025-04-15
 Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
 # 
@@ -4609,7 +4610,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734 13008,21783
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2024-07-05 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-10 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -4863,7 +4864,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="34"
 #: osm_watch: way id="289966097" version="24"
 #: priority: #A
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-21
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 # REMOVED (existiert nicht mehr) --- Grunerstr.: Straßenzug wird entfernt	2::inwork 10697,12303 10746,12364
@@ -4933,20 +4934,20 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-21
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-21
 #: check_frequency: 30d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-08-10 (webcam)
+#: last_checked: 2024-08-21
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -5395,7 +5396,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: osm_watch: way id="1085168609" version="2"
 #: osm_watch: way id="1297686366" version="2"
 #: osm_watch: note 4173331 4
-#: last_checked: 2024-07-28 (osm)
+#: last_checked: 2024-08-21
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-09-01
@@ -5440,7 +5441,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2024-03-07 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006

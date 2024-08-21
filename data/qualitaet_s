@@ -2255,7 +2255,7 @@ Quellenweg: Asphalt mit Schäden	Q1 1137,13321 1084,13322 1027,13304
 Quellenweg: Schotterweg	Q2 1027,13304 969,13290 919,13281 783,13275 738,13277 730,13286 721,13296
 Werkring: Beton	Q0 -990,13502 -975,13574 -978,13665 -1000,13764 -1084,13933 -1132,13972 -1188,13988
 Sophienwerderweg: Asphalt	Q0 -1188,13988 -1575,14098 -2396,14245
-(Uferweg): Asphalt	Q0 4242,12684 4206,12691 4147,12699 3938,12687 3862,12675 3819,12676
+(Uferweg): Asphalt, leicht wellig	Q0 4242,12684 4206,12691 4147,12699 4038,12693 3938,12687 3862,12675 3819,12676
 (Uferweg): wassergebundene Decke	Q1 3819,12676 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
 (Schloßpark Charlottenburg, westlicher Weg): wassergebundene Decke	Q1 2906,13610 2876,13594 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Schloßpark Charlottenburg): wassergebundene Decke	Q1 2953,13489 2925,13516 2858,13530
@@ -3212,7 +3212,7 @@ Katharina-Paulus-Str.: Kopfsteinpflaster	Q2 7867,13106 7867,13127
 Priesterweg (Britz): sehr schlechtes Kopfsteinpflaster	Q3 13227,6209 13220,6237 13239,6344
 Mackenroder Weg: schlechtes Kopfsteinpflaster, mit einigen Asphaltflicken	Q3 12805,6248 12833,6127
 Otto-Krüger-Zeile: Asphalt	Q0 17456,7132 17484,7087 17552,6959 17574,6908
-Rampe: asphaltiert	Q0 4206,12691 4234,12710
+Rampe: asphaltiert	Q0 4206,12691 4225,12693 4234,12710
 (Neues Ufer - Kaiserin-Augusta-Allee): Asphalt	Q0 4456,12918 4514,12936 4581,13066 4582,13086
 (Neues Ufer - Kaiserin-Augusta-Allee): Kopfsteinpflaster	Q2 4582,13086 4576,13121 4592,13127
 (Neues Ufer - Kaiserin-Augusta-Allee): Asphalt	Q0 4592,13127 4613,13210 4617,13243
@@ -9273,11 +9273,15 @@ Fischerstr.: Asphaltschäden	Q1 16423,10259 16492,10163 16539,10097
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel): wassergebundene Decke	Q1 10070,15626 10091,15630
-(Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10050,15824
-(Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0 10050,15824 10061,15775 10045,15754 10071,15684
+(Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844
+(Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10046,15844 10050,15824
+(Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0 10050,15824 10061,15775
+(Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10061,15775 10045,15754
+(Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0 10045,15754 10071,15684
 (Mauerpark, über den Gleimtunnel): Betonpflastersteine	Q0 10071,15684 10079,15661
 (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10079,15661 10091,15630
 (Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10091,15630 10092,15627 10155,15473
+(Mauerpark, Eingang Lichtburgring): Asphalt	Q0 10016,15823 10018,15826 10046,15844
 (Mauerpark - Lichtburgring): Kleinsteinpflaster	Q1 10071,15684 10057,15680
 Lindenschwärmerweg: Asphalt	Q0 21308,11075 21294,11097 21187,11132
 Apollofalterallee [64-98]: Asphalt	Q0 21354,11101 21326,11122
@@ -11577,6 +11581,7 @@ Töpchiner Weg [40-48]: Verbundsteinpflaster	Q1 11950,1275 11918,1211
 Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4495
 (Mauerpark - Schwedter Str.): Kleinsteinpflaster	Q1 10071,15684 10110,15678 10123,15681
 (Hellersdorfer Str. - Ernst-Bloch-Str.): neu asphaltierter Radweg	Q0 22933,12837 22954,12843 22991,12844
+(Uferweg - Siemenssteg/Am Spreebord): Kleinsteinpflaster	Q2 4038,12693 4039,12706 4124,12713
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

@@ -66,7 +66,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-08-18
+#: last_checked: 2024-08-21
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -340,7 +340,7 @@ Schillingbrücke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,1
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-08-10 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -370,7 +370,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-21
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -462,7 +462,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-08-10 vvv
+#: last_checked: 2024-08-21 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -577,9 +577,9 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Friedrichsfelde ###
 # 
-#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19
-#: last_checked: 2024-08-14 vvv
-#: next_check: 2024-08-19 vvv
+#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29
+#: last_checked: 2024-08-21 vvv
+#: next_check: 2024-08-29 vvv
 #: also_indoor: traffic (G,B,T)
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
@@ -862,31 +862,8 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 #: next_check: 2025-05-31
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
 # 
-# REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022
-# REMOVED --- #: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024) (inaktiv)
-# REMOVED --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024)
-# REMOVED --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_228154 (bis 31.08.2024)
-# REMOVED --- #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_228155 (bis 31.08.2024)
-# REMOVED --- #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (Gegenverkehrsregelung, bis 31.08.2024)
-# REMOVED --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028
-# REMOVED --- #: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fußverkehr)
-# REMOVED --- #: also_indoor: traffic (H,G,W)
-# REMOVED --- #: priority: #A
-# REMOVED --- #: last_checked: 2024-06-17
-# REMOVED --- #: next_check: 2024-06-22
-# REMOVED --- #: valid: -20240622
-# REMOVED --- # REMOVED --- #: valid: -20240831
-# REMOVED --- Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, Fußgängertunnel	q3::inwork 15856,10821 15793,10814
-# 
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-315-341-343.837/page-2#post-22878
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: way id="1135879798" version="2"
-#: also_indoor: traffic (ex-G)
-#: last_checked: 2024-07-22
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2024-06-17
-Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 17249,14575 17392,14591
-# 
+# REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022 --- #: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_228154 (bis 31.08.2024) --- #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_228155 (bis 31.08.2024) --- #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (Gegenverkehrsregelung, bis 31.08.2024) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028 --- #: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fußverkehr) --- #: also_indoor: traffic (H,G,W) --- #: priority: #A --- #: last_checked: 2024-06-17 --- #: next_check: 2024-06-22 --- #: valid: -20240622 --- #: valid: -20240831 --- Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, Fußgängertunnel	q3::inwork 15856,10821 15793,10814
+# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-315-341-343.837/page-2#post-22878 --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: osm_watch: way id="1135879798" version="2" --- #: also_indoor: traffic (ex-G) --- #: last_checked: 2024-07-22 --- #: check_frequency: 60d --- #: next_check: 2024-06-17 --- Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 17249,14575 17392,14591
 # REMOVED (beendet) --- #: note: nur etwa der halbe Abschnitt ist verengt, deshalb q3 statt q4 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-06-19 --- Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,14451
 # REMOVED (nicht mehr) --- #: next_check_id: RUSCHEAMPEL-2024 --- #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert? --- #: last_checked: 2024-05-02 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-14 vvv --- #: valid: -20240614 vvv --- # REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886 --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
@@ -899,7 +876,7 @@ Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-08-17
+#: last_checked: 2024-08-21
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -962,7 +939,7 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="11"
-#: last_checked: 2024-07-22
+#: last_checked: 2024-08-21
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-12-21
 Plauener Str.: Fahrbahn noch gesperrt, Gehwege frei	q3-::inwork 17531,14923 17610,14935 17638,14945
@@ -1127,7 +1104,7 @@ Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 10
 #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
 #: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
 #: osm_watch: way id="156800019" version="6"
-#: last_checked: 2024-08-08 (daf)
+#: last_checked: 2024-08-21
 #: check_frequency: 60d
 Diesterwegstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q3::inwork 12060,15141 11995,15012
 # 
@@ -2264,7 +2241,7 @@ Uferweg: Fußgänger	q1 3444,12804 3510,12809
 Uferweg: Fußgänger, enge Kurven	q2 3510,12809 3547,12864 3572,12866 3559,12793
 Uferweg: Fußgänger	q1 3559,12793 3641,12753 3747,12679
 Uferweg: Fußgänger, Biergarten	q3 3747,12679 3819,12676 3862,12675
-Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
+Uferweg: Fußgänger	q1 3862,12675 3938,12687 4038,12693 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q2 4456,12918 4514,12936 4581,13066 4582,13086 4576,13121 4592,13127 4613,13210 4617,13243
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fußgänger	q4 5938,12848 5922,12765
 # REMOVED --- (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3 14712,11039 14727,11005 14808,10978
@@ -3492,7 +3469,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-08-20
+#: last_checked: 2024-08-21
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -3718,8 +3695,9 @@ Rütli-Campus: einige Fußgänger, Schulgelände	q3 12526,9125 12554,9178 12592,9249
 (Ossastr. - Rütlistr.): einige Fußgänger, Schulgelände	q2 12623,9134 12554,9178
 (Kleiner Tiergarten): Fußgänger	q2 6390,13187 6377,13321
 (Einsteinufer - TU-Mathegebäude): Fußgänger	q2 5132,12136 5105,12118 5141,11816
-(Mauerpark, über den Gleimtunnel): Fußgänger, einige enge Kurven	q2 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684 10079,15661 10091,15630
+(Mauerpark, über den Gleimtunnel): Fußgänger	q2 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684 10079,15661 10091,15630
 (Mauerpark - Lichtburgring): Fußgänger	q2 10071,15684 10057,15680
+(Mauerpark, Eingang Lichtburgring): Fußgänger	q2 10016,15823 10018,15826 10046,15844
 # REMOVED --- (Mauerpark, über den Gleimtunnel): Fußgänger, einige enge Kurven	q2 10091,15630 10070,15624
 #: XXX_prog BS, ansonsten q1 (was aber bei der kurzen Strecke eh' nicht erreicht werden kann)
 Delbrückstr.: flacher Bordstein, Fußgänger	q2 17123,10844 17141,10838
@@ -5550,7 +5528,7 @@ Rossitter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Bonhoefferufer - Tegeler Weg): Fußgänger	q2 3154,12936 3164,13067
 Eosanderstr.: Fußgänger	q1 3323,12615 3271,12609
 #: XXX_prog BS am südlichen Ende (ansonsten bleibt's bei q2)
-Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
+Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12713 4124,12721
 #: note: Grünanlagenschild mit "Radfahren verboten"-Zusatzschild am nordöstlichen Ende
 #: note: früher q2
 (Müllerstr. - Gerichtstr.): Fußgänger	q3 7607,15282 7723,15417

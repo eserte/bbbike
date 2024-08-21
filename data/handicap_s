@@ -37,7 +37,6 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwork 12765,8435 12598,8390
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
-Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 17249,14575 17392,14591
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 Plauener Str.: Fahrbahn noch gesperrt, Gehwege frei	q3::inwork 17531,14923 17610,14935 17638,14945
@@ -718,7 +717,7 @@ Uferweg: Fußgänger	q1 3444,12804 3510,12809
 Uferweg: Fußgänger, enge Kurven	q2 3510,12809 3547,12864 3572,12866 3559,12793
 Uferweg: Fußgänger	q1 3559,12793 3641,12753 3747,12679
 Uferweg: Fußgänger, Biergarten	q3 3747,12679 3819,12676 3862,12675
-Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
+Uferweg: Fußgänger	q1 3862,12675 3938,12687 4038,12693 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q2 4456,12918 4514,12936 4581,13066 4582,13086 4576,13121 4592,13127 4613,13210 4617,13243
 (Ostkreuz, Zugang Marktstr.): Fußgängerschutztunnel, Radfahrer sollen absteigen	q4 15069,10927 15054,10910 14945,10945
 (Ostkreuz, Zugang Marktstr.): Fußgänger	q4 14945,10945 14902,10967
@@ -1759,8 +1758,9 @@ Rütli-Campus: einige Fußgänger, Schulgelände	q3 12526,9125 12554,9178 12592,9249
 (Ossastr. - Rütlistr.): einige Fußgänger, Schulgelände	q2 12623,9134 12554,9178
 (Kleiner Tiergarten): Fußgänger	q2 6390,13187 6377,13321
 (Einsteinufer - TU-Mathegebäude): Fußgänger	q2 5132,12136 5105,12118 5141,11816
-(Mauerpark, über den Gleimtunnel): Fußgänger, einige enge Kurven	q2 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684 10079,15661 10091,15630
+(Mauerpark, über den Gleimtunnel): Fußgänger	q2 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684 10079,15661 10091,15630
 (Mauerpark - Lichtburgring): Fußgänger	q2 10071,15684 10057,15680
+(Mauerpark, Eingang Lichtburgring): Fußgänger	q2 10016,15823 10018,15826 10046,15844
 Delbrückstr.: flacher Bordstein, Fußgänger	q2 17123,10844 17141,10838
 Semkensteig: Fußgänger, eng	q2 7844,17504 7845,17455
 (Uferweg - Sömmeringstr.): Fußgänger	q1 3572,12866 3574,12916 3716,12925
@@ -2841,7 +2841,7 @@ Rossitter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Lambertstr. - Lise-Meitner-Str.): Fußgänger, schmal	q3 3508,13727 3713,13787
 (Bonhoefferufer - Tegeler Weg): Fußgänger	q2 3154,12936 3164,13067
 Eosanderstr.: Fußgänger	q1 3323,12615 3271,12609
-Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
+Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12713 4124,12721
 (Müllerstr. - Gerichtstr.): Fußgänger	q3 7607,15282 7723,15417
 (südliches Spreeufer): Fußgänger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5770,12346 5796,12372 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887
 (südliches Spreeufer): Fußgänger	q2 6123,12887 6182,12900
