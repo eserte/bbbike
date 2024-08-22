@@ -4485,7 +4485,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
 # REMOVED --- #: osm_watch: way id="72660098" version="8" --- #: XXX laut osm offen
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
-#: osm_watch: note 4210973 4
+#: osm_watch: note 4210973 5
 #: osm_watch: node id="27306736" version="12"
 #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
@@ -5272,7 +5272,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
-#: osm_watch: way id="114381366" version="19"
+#: osm_watch: way id="114381366" version="20"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2024-07-03
 #: check_frequency: 120d
@@ -8271,15 +8271,15 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
        },
        {
          'data' => '#: next_check_id: SIEGFRIED-2024
-#: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024)
+#: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024) (bis 02.09.2024)
 #: note: (noch) keine Einschränkung in der Rüdigerstr.
 	q2; 16820,12339 16831,12419 16857,12600 16859,12613 16860,12861
 ',
          'from' => 1723413600,
          'id' => 4135,
-         'text' => 'Siegfriedstr.: Bauarbeiten zwischen Rüdigerstr. und Bornitzstr., Richtung Norden gemeinsamer Geh- und Radweg, mögliche Engstellen, bis 23.08.2024 17:00 Uhr',
+         'text' => 'Siegfriedstr.: Bauarbeiten zwischen Rüdigerstr. und Bornitzstr., Richtung Norden gemeinsamer Geh- und Radweg, mögliche Engstellen, voraussichtlich bis 02.09.2024 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1724450400
+         'until' => 1725289200
        },
        {
          'data' => '#: source_id: LS/221-E/24/116 (bis 31.10.2024)
@@ -8419,6 +8419,16 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Neustädtische Kirchstr.: Einbahnstraßenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung Süden, voraussichtlich bis 04.09.2024',
          'type' => 'handicap',
          'until' => 1725406200
+       },
+       {
+         'data' => '#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024)
+	q4::inwork 13530,13014 13470,12990
+',
+         'from' => 1724302800,
+         'id' => 4148,
+         'text' => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.08.2024 07:00 bis 16.09.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1726498800
        }
      
 );

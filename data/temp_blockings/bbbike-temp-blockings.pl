@@ -30295,7 +30295,7 @@ EOF
 # REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
 # REMOVED --- #: osm_watch: way id="72660098" version="8" --- #: XXX laut osm offen
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
-#: osm_watch: note 4210973 4
+#: osm_watch: note 4210973 5
 #: osm_watch: node id="27306736" version="12"
 #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
@@ -34868,7 +34868,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
-#: osm_watch: way id="114381366" version="19"
+#: osm_watch: way id="114381366" version="20"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2024-07-03
 #: check_frequency: 120d
@@ -37989,7 +37989,7 @@ EOF
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
 #: source_id: viz2021:13.29209,52.64198,08.01.2024,07:00 (bis 31.05.2024) (inaktiv)
 #: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024) (inaktiv)
-#: source_id: viz2021:13.286611,52.641435,19.08.2024,07:00 (neue Baustelle, nur Kfz-Verkehr, bis 26.08.2024)
+#: source_id: viz2021:13.286611,52.641435,19.08.2024,07:00 (neue Baustelle, nur Kfz-Verkehr, bis 26.08.2024) (bis 23.08.2024)
 #: also_indoor: traffic (ex-H,G,B,W)
 # REMOVED --- #: note: Fahrbahn wird neu gemacht ---	q4::inwork 2112,26066 2207,26090 2293,26111
 # REMOVED --- #: note: Vorbereitungen für Neubau der Fahrbahn ---	q3::inwork 2293,26111 2402,26121
@@ -38545,6 +38545,7 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1388333.php (abgeschlossen + neue Bauarbeiten)
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/neue-wege-im-volkspark_a400700
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1475931.php
+#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/volkspark-wege-sind-fertig-saniert_a423309
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Volkspark Wilmersdorf beendet?
 # REMOVED --- #: last_checked: 2023-11-06 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-10-31 vvv
 # REMOVED (hier nicht) ---	2::inwork 5651,8218 5730,8207
@@ -44202,12 +44203,12 @@ EOF
 EOF
      },
      { from  => 1723413600, # 2024-08-12 00:00
-       until => 1724450400, # 2024-08-24 00:00
-       text  => 'Siegfriedstr.: Bauarbeiten zwischen Rüdigerstr. und Bornitzstr., Richtung Norden gemeinsamer Geh- und Radweg, mögliche Engstellen, bis 23.08.2024 17:00 Uhr',
+       until => $isodate2epoch->("2024-09-02 17:00:00"), # 1724450400, # 2024-08-24 00:00
+       text  => 'Siegfriedstr.: Bauarbeiten zwischen Rüdigerstr. und Bornitzstr., Richtung Norden gemeinsamer Geh- und Radweg, mögliche Engstellen, voraussichtlich bis 02.09.2024 17:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SIEGFRIED-2024
-#: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024)
+#: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024) (bis 02.09.2024)
 #: note: (noch) keine Einschränkung in der Rüdigerstr.
 	q2; 16820,12339 16831,12419 16857,12600 16859,12613 16860,12861
 EOF
@@ -44337,6 +44338,15 @@ EOF
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/erneuerung-fuek-weichenerneuerung-in-friedrichstrasse-brueckenarbeiten-alt-moabit/#con-29937 (SEV)
 #: note: wegen SEV-Haltestelle
 	q4::temp; 9121,12514 9108,12635 9098,12687
+EOF
+     },
+     { from  => 1724302800, # 2024-08-22 07:00
+       until => 1726498800, # 2024-09-16 17:00
+       text  => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.08.2024 07:00 bis 16.09.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024)
+	q4::inwork 13530,13014 13470,12990
 EOF
      },
     );
