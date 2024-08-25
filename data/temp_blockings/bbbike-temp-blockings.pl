@@ -10307,7 +10307,7 @@ EOF
        text  => 'L 314 Zepernicker Chaussee OD Bernau grundhafter Straßenbau Vollsperrung 04.10.2007-21.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 22178,30343 21872,30139 21561,30131 21117,29968
+	q4::inwork 22178,30343 21872,30139 21561,30131 21111,29964
 EOF
      },
      { from  => 1191362400, # 2007-10-03 00:00
@@ -11092,7 +11092,7 @@ EOF
        text  => 'L 314 Zepernicker Chaussee OD Bernau grundhafter Straßenbau Vollsperrung 31.01.2008-18.04.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 22178,30343 21872,30139 21561,30131 21117,29968
+	2::inwork 22178,30343 21872,30139 21561,30131 21111,29964
 EOF
      },
      { from  => 1207420756, # 2008-04-05 20:39
@@ -13068,10 +13068,11 @@ EOF
        text  => 'Biesenthal - Sophienstädt: Deckensanierung, Sperrung der Straße, vom 10.06.2024 08:00 Uhr bis 13.07.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-# alt:	q4::inwork 24120,41684 24102,41213 24106,41050 24185,40670 24374,40395
+# alt:	q4::inwork 24120,41684 24102,41213 24106,41050 24160,40714 24318,40443 24388,40389
 #: next_check_id: SOPHIENSTAEDT-2024
 #: source_id: LS/221-E/24/059 (bis 13.07.2024) (inaktiv)
-	2::inwork 24102,41213 24120,41684 23394,42958 23357,43131 23086,43442 22931,43755 22555,44075 22254,44560 22072,44842
+#: note: nur ein kurzes Stück, etwa 500m im südlichen Abschnitt, wurden im Sommer 2024 ausgebessert
+	2::inwork 24102,41213 24120,41684 24078,41757 23394,42958 23357,43131 23086,43442 22931,43755 22555,44075 22254,44560 22072,44842
 EOF
      },
      { from  => 1224540000, # 2008-10-21 00:00
@@ -16971,7 +16972,7 @@ EOF
 # REMOVED (2010er-Eintrag) ---	2::inwork; 9121,12514 9131,12438
 # REMOVED (2010er-Eintrag) --- Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9179,12444 9131,12438
 # REMOVED (2010er-Eintrag) ---	q4::inwork; 9131,12438 9141,12320
-#: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (hier nur Kfz-Verkehr, stimmt aber nicht, bis 23.08.2024)
+#: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (hier nur Kfz-Verkehr, stimmt aber nicht, bis 23.08.2024) (inaktiv)
 	q4::inwork; 9121,12514 9131,12438
 EOF
      },
@@ -16996,7 +16997,7 @@ EOF
        text  => 'L 220 B167 - Joachimsthal zw. Eichhorst u. Joachimsthal, Chausseestr. Deckenerneuerung Vollsperrung 14.10.2009-31.12.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 30781,60566 30784,60950 30960,61370 31147,61555 31880,61589 32748,62327
+	2::inwork 30795,60595 30784,60950 30960,61370 31147,61555 31880,61589 32748,62327
 EOF
      },
      { from  => 1255812887, # 2009-10-14 19:00 1255539600
@@ -19860,7 +19861,7 @@ EOF
        type  => 'handicap',
        source_id => 'LS/O-SG33-E/11/027',
        data  => <<EOF,
-	q4::inwork 19595,27953 19855,28134 20114,28315 20362,28420
+	q4::inwork 19595,27953 19794,28091 19855,28134 20038,28262 20114,28315 20362,28420
 EOF
      },
      { from  => 1307174400, # 2011-06-04 10:00
@@ -21929,13 +21930,13 @@ EOF
 EOF
      },
      { from  => 1719205200, # 1361168940, # 2013-02-18 07:29
-       until => 1724684400, # 1364227200, # 2013-03-25 17:00
-       #text  => 'Fürstenwalder Damm (Köpenick) Richtung Bölschestr. zwischen Müggelseedamm und Mühlweg Baustelle, Fahrtrichtung gesperrt (bis Ende 03/13)',
-       text  => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Liebstadter Gang und Mühlweg, Richtung Bölschestr. gesperrt, außerdem Einbahnstraßenregelung im Straßenzug Jastrower Weg - Stillerzeile, vom 25.06.2024 07:00 bis 26.08.2024 17:00',
+       until => $isodate2epoch->("2024-10-28 17:00:00"), # 1724684400, # 1364227200, # 2013-03-25 17:00
+#      text  => 'Fürstenwalder Damm (Köpenick) Richtung Bölschestr. zwischen Müggelseedamm und Mühlweg Baustelle, Fahrtrichtung gesperrt (bis Ende 03/13)',
+       text  => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Liebstadter Gang und Mühlweg, Richtung Bölschestr. gesperrt, außerdem Einbahnstraßenregelung im Straßenzug Jastrower Weg - Stillerzeile, vom 25.06.2024 07:00 bis 28.10.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: IM_019584 (alter Eintrag von 2013, inaktiv)
-#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen)
+#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen) (bis 28.10.2024)
 # REMOVED (hier nicht) ---	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544
 Fürstenwalder Damm, linker Gehweg existiert	q4::inwork; 24471,5544 24700,5633
 Jastrower Weg: Einbahnstraße	q4::inwork; 23877,5503 23866,5515 23863,5549 23845,5558 23696,5529 23657,5467
@@ -22817,9 +22818,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-07-05 00:00:00"), # 1378576083, # 2013-09-07 19:48
-       until => $isodate2epoch->("2024-08-26 18:00:00"), # 1379270619, # 1380499200, # 2013-09-30 02:00
+       until => $isodate2epoch->("2024-10-28 18:00:00"), # 1379270619, # 1380499200, # 2013-09-30 02:00
        #text  => 'Ostendstr./Weiskopffstr.: Einbahnstraße Richtung Osten wegen Bauarbeiten an den Straßenbahngleisen, bis 30.09.2013 02:00',
-       text  => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Steffelbauerstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, außerdem Einbahnstraßenregelung in der Scharnweberstr., voraussichtlich bis 26.08.2024, voraussichtlich wird bis Oktober 2024 verlängert',
+       text  => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Steffelbauerstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, außerdem Einbahnstraßenregelung in der Scharnweberstr., zunächst bis 26.08.2024, voraussichtlich wird bis Oktober 2024 verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: OSTEND-2024
@@ -22828,7 +22829,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1809452214483652953
 #: by: https://pbs.twimg.com/media/GRuNzPkXgAANqwk?format=jpg&name=large
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240709 (erste Bauphase bis 24.08.2024, Gesamtbaumaßnahme bis voraussichtlich 27.10.2024)
-#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024)
+#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024) (bis 28.10.2024)
 #: XXX Änderung der Bauphase: Bauarbeiten dann zwischen Waldowstr. und Ostendstr. 20
 #: note: die Rathenaustraße wird als Umleitungsstrecke benutzt und ist eigentlich zu eng, ein comments_trafficjam-Eintrag würde sich anbieten
 #: next_check: 2024-08-24
@@ -25037,12 +25038,14 @@ EOF
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 EOF
      },
-     { from  => 1429736139, # 2015-04-22 22:55
-       until => $isodate2epoch->("2015-07-12 23:59:59"), # 1434052361, # 1437429600, # 2015-07-21 00:00
-       text  => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 12.07.2015 ',
+     { from  => $isodate2epoch->("2024-07-01 00:00:00"), # 1429736139, # 2015-04-22 22:55
+       until => $isodate2epoch->("2024-10-13 18:00:00"), # $isodate2epoch->("2015-07-12 23:59:59"), # 1434052361, # 1437429600, # 2015-07-21 00:00
+#       text  => 'Schönermark-Günterberg: Anpassung der Signal- und Bahnübergangstechnik Bahnübergang zw. Schönermark und Günterberg, gesperrt für Fahrzeuge, 22.04.2015 bis 12.07.2015',
+       text  => 'Schönermark - Biesenbrow: Bahnübergang gesperrt, 01.07.2024 bis 13.10.2024',
        type  => 'gesperrt',
-       source_id => '157300093',
        data  => <<EOF,
+#: source_id: 157300093 (alter Eintrag von 2015, inaktiv)
+#: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin (neue Sperrung 2024)
 	2::inwork 51806,78469 51798,78477 51668,78605
 EOF
      },
@@ -35723,7 +35726,7 @@ EOF
 #: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
-#: osm_watch: way id="1246171055" version="1"
+#: osm_watch: way id="1246171055" version="2"
 #: last_checked: 2024-08-17 vvv
 #: check_frequency: 21d vvv
 #: osm_watch: note 4090527 5
@@ -37989,7 +37992,7 @@ EOF
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
 #: source_id: viz2021:13.29209,52.64198,08.01.2024,07:00 (bis 31.05.2024) (inaktiv)
 #: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024) (inaktiv)
-#: source_id: viz2021:13.286611,52.641435,19.08.2024,07:00 (neue Baustelle, nur Kfz-Verkehr, bis 26.08.2024) (bis 23.08.2024)
+#: source_id: viz2021:13.286611,52.641435,19.08.2024,07:00 (neue Baustelle, nur Kfz-Verkehr, bis 26.08.2024) (bis 23.08.2024) (inaktiv)
 #: also_indoor: traffic (ex-H,G,B,W)
 # REMOVED --- #: note: Fahrbahn wird neu gemacht ---	q4::inwork 2112,26066 2207,26090 2293,26111
 # REMOVED --- #: note: Vorbereitungen für Neubau der Fahrbahn ---	q3::inwork 2293,26111 2402,26121
@@ -39652,7 +39655,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-08-12
+#: last_checked: 2024-08-23
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -41529,11 +41532,12 @@ EOF
 EOF
      },
      { from  => 1705186800, # 2024-01-14 00:00
-       until => $isodate2epoch->("2024-08-30 16:00:00"), # 1706137200, # 2024-01-25 00:00
-       text  => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung bis 30.08.2024', # 'vom 15.01.2024 bis 24.01.2024',
+       until => $isodate2epoch->("2024-11-08 16:00:00"), # 1706137200, # 2024-01-25 00:00
+       text  => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung bis 08.11.2024', # 'vom 15.01.2024 bis 24.01.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024)
+#: source_id: 246001315 (bis 08.11.2024)
 	2::inwork 23015,30519 23113,30450
 EOF
      },
@@ -41950,11 +41954,11 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-09-12 07:00:00"),
-       until => $isodate2epoch->("2024-08-29 17:00:00"),
-       text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 29.08.2024, evtl. noch länger',
+       until => $isodate2epoch->("2024-08-27 17:00:00"),
+       text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 27.08.2024, evtl. noch länger',
        type  => 'gesperrt', # handicap
        data  => <<EOF,
-#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024)
+#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024) (bis 27.08.2024)
 #: note: bei rbb nur bis 30.04.2024, mittlerweile auch bis 21.05.2024
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
 Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
@@ -43735,31 +43739,31 @@ EOF
 EOF
      },
      { from  => 1719291600, # 2024-06-25 07:00
-       until => 1725030000, # 2024-08-30 17:00
-       text  => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, auch sind Radfahrer betroffen, vom 26.06.2024 07:00 bis 30.08.2024 17:00',
+       until => $isodate2epoch->("2024-09-04 17:00:00"), # 1725030000, # 2024-08-30 17:00
+       text  => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, auch sind Radfahrer betroffen, vom 26.06.2024 07:00 bis 04.09.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.301956,52.432374,26.06.2024,07:00 (hier auch Radverkehr, bis 30.08.2024)
+#: source_id: viz2021:13.301956,52.432374,26.06.2024,07:00 (hier auch Radverkehr, bis 30.08.2024) (bis 04.09.2024)
 Finckensteinallee (trotz Radweg?)	q4::inwork; 3456,2835 3641,2827 3738,2821
 Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
 EOF
      },
      { from  => 1719291600, # 2024-06-25 07:00
-       until => 1725116400, # 2024-08-31 17:00
-       text  => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+       until => $isodate2epoch->("2024-11-29 17:00:00"), # 1725116400, # 2024-08-31 17:00
+       text  => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 29.11.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024)
+#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024) (bis 29.11.2024)
 	q4::inwork; 2625,2850 2737,2866
 # REMOVED (scheint kürzer zu sein) ---	q4::inwork; 2737,2866 3019,2858
 EOF
      },
      { from  => 1719291600, # 2024-06-25 07:00
-       until => 1725116400, # 2024-08-31 17:00
-       text  => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+       until => $isodate2epoch->("2024-11-29 17:00:00"), # 1725116400, # 2024-08-31 17:00
+       text  => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 29.11.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024)
+#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/weitraeumige-umleitungen-notwendig_a419753
@@ -44347,6 +44351,29 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024)
 	q4::inwork 13530,13014 13470,12990
+EOF
+     },
+     { from  => 1724611975, # 2024-08-25 20:52
+       until => undef, # 1735685999, # 2024-12-31 23:59
+       text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (kein Endedatum)
+#: by: https://www.berlin-usedom-radweginfo.de/ (bis Ende 2024)
+#: osm_watch: way id="105827200" version="11"
+#: osm_watch: note 4244536 2
+#: last_checked: 2024-08-23
+#: next_check: 2024-12-31
+	2::inwork 24769,48739 24781,48768 24766,48828
+EOF
+     },
+     { from  => 1724558400, # 2024-08-25 06:00
+       until => 1724925600, # 2024-08-29 12:00
+       text  => 'Bergmannstr.: zwischen Am Tempelhofer Berg und Nostitzstr. Kranarbeiten, Sperrung der Fahrbahn, vom 26.08.2024 06:00 bis 29.08.2024 12:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.388702,52.489836,26.08.2024,06:00 (auch Radverkehr, bis 29.08.2024)
+	q4::inwork 9489,9309 9309,9347
 EOF
      },
     );

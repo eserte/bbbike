@@ -306,7 +306,7 @@ Oderbruchstr./Hohenschönhauser Str.: werden hier Radspuren markiert?	?::projecte
 #: source_id: 2147342170 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72 (möglicherweise inaktiv)
 #: osm_watch: way id="336565341" version="20"
-#: last_checked: 2024-08-12
+#: last_checked: 2024-08-23
 #: check_frequency: 120d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -1146,7 +1146,7 @@ Kurpark: Verbesserung der Befahrbarkeit geplant	?::projected 24964,6046 25183,60
 #: source_id: 2147343845 (Gesamtmaßnahme bis Mitte April 2019) (inaktiv)
 #: source_id: 2147343951 (bis Mitte April 2019) (inaktiv)
 #: source_id: bvg2024:n65#HIM_FREETEXT_230516 (bis 31.08.2024)
-#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (Gleisbauarbeiten zwischen Wilhelminenhofstraße und Steffelbauerstraße, nur Kfz-Verkehr, bis 26.08.2024)
+#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (Gleisbauarbeiten zwischen Wilhelminenhofstraße und Steffelbauerstraße, nur Kfz-Verkehr, bis 26.08.2024) (bis 28.10.2024)
 #: osm_watch: way id="93704161" version="25"
 #: last_checked: 2024-07-06 vvv
 #: check_frequency: 90d vvv
@@ -1588,7 +1588,7 @@ Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::pro
 #: source_id: viz2021:13.515237,52.567077,08.09.2023,07:00 (Leitungsarbeiten bis 22.12.2023) (inaktiv)
 #: source_id: viz2021:13.514671,52.566742,08.09.2023,07:00 (bis 23.02.2024) (inaktiv)
 #: source_id: viz2021:13.515237,52.567077,06.10.2023,10:00 (Leitungsarbeiten bis 17.11.2023) (bis 22.12.2023) (bis 23.02.2024) (bis 07.03.2024) (inaktiv)
-#: last_checked: 2024-05-23 (mapillary)
+#: last_checked: 2024-08-23
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-03-07
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs stadtauswärts?	?::projected; 17744,18016 17843,18078
@@ -2178,6 +2178,7 @@ Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projec
 #: by: https://www.berliner-woche.de/moabit/c-bauen/beusselstrasse-bald-mit-radweg_a395923
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12119 (Anfrage)
 #: by: https://www.infravelo.de/projekt/beusselstrasse/ (2. Quartal 2024 - 3. Quartal 2024)
+#: source_id: viz2021:13.328613,52.53126,26.08.2024,07:00 (bis 13.09.2024)
 #: XXX die Busspur bleibt ab Wiclefstr. erhalten; 2,25m breit
 #: XXX Baustart verzögert sich auf unbestimmte Zeit (siehe osm-Notiz); mittlerweile möglicher Baubeginn: 2024-07-27
 #: source_id: viz2021:13.328464,52.530987,14.05.2024,08:00 (Gehwegarbeiten bis 31.05.2024) (bis 07.06.2024) (inaktiv)
@@ -3302,7 +3303,7 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 # REMOVED --- #: next_check_id: HILDBURGHAUSER-2018 --- #: XXX nach dem Straßenausbau besserer Asphalt, Radwege wird es nur bis zur Zerbster Str. in Westrichtung und ab Stadtilmer Weg in Ostrichtung geben --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20131129.0640.392180.html (Straßenausbau geplant) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95087.php?date=20160124 (Beginn im Jahr 2016) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.732983.php --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/auf-der-hildburghauser-geht-es-weiter-voran_a179492 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/pressemitteilung.743646.php --- # REMOVED (kein Platz für Radspuren) --- #: source_id: 2147339913 --- #: XXX zurzeit Bauarbeiten (laut fritz bis bis 13.01.2017), gibt es Einschränkungen für Radfahrer? --- #: last_checked: 2017-03-26 --- #: check_frequency: 90d --- Hildburghauser Str.: Ausbau der Straße, wie werden die Radwege später aussehen?	?::inwork 4795,1362 4897,1352 5059,1337 --- # REMOVED (hier vermutlich fertig, siehe add_fragezeichen-Einträge) --- #: source_id: 2147341614 --- #: source_id: LMS-BR_r_LMS-BR_103980_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_104112_LMS-BR_72 --- #: last_checked: 2018-08-22 vvv --- #: next_check: 2018-10-01 (Eröffnung zwischen Heinersdorfer Straße und Steinheilpfad) --- Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 5223,1318 5414,1304 5585,1275 --- #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustopp-auf-der-hildburghauser-bezirk-trennt-sich-von-baufirma_a205954 (Bauarbeiten gehen im Oktober 2020 weiter) --- #: by: https://www.stadtrand-nachrichten.de/deckenueberzug-hildburghauser-strasse/?utm_source=rss&utm_medium=rss&utm_campaign=deckenueberzug-hildburghauser-strasse (Sanierung bis 07.05.2020, davor Vollsperrung in zwei Abschnitten) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.911629.php --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/fahrbahn-in-der-hildburghauser-strasse-erhaelt-eine-neue-deckschicht_a259753 --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/ausbau-der-hildburghauser-strasse-kann-erst-2022-fortgesetzt-werden_a262843 --- #: XXX prüfen, ob der Asphalt tatsächlich besser geworden ist (bereits eingetragen) --- #: priority: #B --- #: last_checked: 2020-04-16 --- #: next_check: 2020-05-07 --- Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 5585,1275 5733,1240 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133
 # REMOVED (ja) --- #: last_checked: 2020-01-18 (mapillary) --- #: next_check: 2020-10-01 --- Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6446,1033 6515,1010 6631,968
 # REMOVED (aufgenommen) --- Segelfliegerdamm (Zernsdorf - Niederlehme): Qualität? Gibt's hier Radwege?	? 28499,-10164 28454,-10018 28385,-9820 28312,-9695
-Segelfliegerdamm (Zernsdorf - Niederlehme): Qualität? Ist hier das Radfahren erlaubt?	?  29192,-10630 29088,-10386 29021,-10333 28918,-10301 28723,-10326 28656,-10329 28539,-10255 28499,-10164
+# REMOVED (keine Einschränkungen) --- Segelfliegerdamm (Zernsdorf - Niederlehme): Qualität? Ist hier das Radfahren erlaubt?	?  29192,-10630 29088,-10386 29021,-10333 28918,-10301 28723,-10326 28656,-10329 28539,-10255 28499,-10164
 # REMOVED --- #: XXX in Niederlehme entsteht außerdem ein Kreisverkehr --- #: XXX laut osm eröffnet --- #: XXX laut osm "Ausgewiesenes Radfahrverbot" --- wurde nun geändert, Radfahrer ist also doch erlaubt? --- #: source_id: LS/722-W/20/231 --- #: source_id: LS/722-W/20/231-9 --- #: osm_watch: way id="341596787" version="24" brb --- #: last_checked: 2020-04-12 (mapillary) --- #: next_check: 2021-09-23 --- L30n: ist hier tatsächlich Radfahren verboten? von beiden Seiten?	? 28312,-9695 27950,-8900 27754,-8708
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html --- #: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2012/1213_KOE.pdf --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016) --- #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straßenbenennung, Vorschlag) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5720.html --- #: XXX Brücke selbst wird Minna-Todenhagen-Brücke heißen (Berlin.coords.data-Eintrag oder nicht?) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5323 (Brückenbenennung) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016 (Brückenbenennung) --- #: by: www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160916 (fertig im Januar 2018) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00249733/33-Anlagen/01/DRS0054VK.pdf --- #: by: http://www.dafmap.de/d/berlin.html?id=5213&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung) --- #: by: https://www.facebook.com/baustellen.berlin/posts/380735465708220 (Eröffnung) --- #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig --- #: XXX Radwege werden vermutlich asphaltiert sein --- #: XXX vermutlich wird die F11 nach Eröffnung eingestellt werden --- auch Testcase in cgi.t beachten und ggfs. auf eine andere Fähre umschreiben! --- #: XXX Ampeln an der Köpenicker Landstr. & Rummelsburger Str. --- #: last_checked: 2017-11-05 --- #: next_check: 2017-12-21 --- #: priority: #A --- Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813 --- 
 # REMOVED --- #: priority: #C --- Schnellerstr./Köpenicker Landstr.: genaue Lage des asphaltierten Radwegabschnitts	? 16646,6925 16677,6892 16720,6845 16747,6813 16805,6747 16838,6708 16909,6628
@@ -5351,6 +5352,7 @@ Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der sch
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/an-vielen-strassen-sollen-fussgaenger-sicherer-ueber-die-fahrbahn-kommen_a411164 (vorgesehen, kein Termin genannt)
 #: XXX weitere Planungen: Schottstraße/Fanninger Straße, Robert-Sievert-Straße/Römerweg, Normannenstraße/Rudolf-Reusch-Straße, Malchower Weg/Königswalder Straße, Lindenberger Straße/Dorfstraße, Vincent-van-Gogh-Straße/Welsestraße
 #: next_check: 2024-12-31 vvv
+#: last_checked: 2024-08-23
 Simon-Bolivar-Str./Goeckestr.: entsteht hier ein neuer Zebrastreifen?	? 16104,14678 16128,14685 16152,14691
 #: last_checked: 2024-07-16
 Werneuchener Str./Küstriner Str.: entsteht hier ein neuer Zebrastreifen?	? 16301,15247 16314,15223 16327,15193
@@ -5818,7 +5820,7 @@ Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,885
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18076,10324 18085,10244 18114,10215
 # 
 # REMOVED (hier liegt bereits Verbundsteinpflaster --- keine Änderung?) --- Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18114,10215 18130,10201 18132,10183
-#: last_checked: 2024-08-12
+#: last_checked: 2024-08-23
 #: check_frequency: 90d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16439,12872 16484,12871 16860,12861
 # 
@@ -5847,7 +5849,7 @@ Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird 
 #: osm_watch: way id="6060511" version="38"
 #: osm_watch: way id="1097289892" version="2"
 #: osm_watch: way id="1092554599" version="5"
-#: last_checked: 2024-03-23
+#: last_checked: 2024-08-23
 #: check_frequency: 90d
 Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 18223,18153 18279,18079 18412,17920 18480,17836 18553,17749 18635,17649
 # REMOVED (hier vermutlich sowieso nicht) --- Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 18635,17649 18694,17577 18704,17565
@@ -5884,7 +5886,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2024-08-12
+#: last_checked: 2024-08-23
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -5904,7 +5906,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/diese-projekte-sind-bis-ende-2024-im-bezirk-geplant_a407472 (bereits 2024?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1452308.php (ab 11. Juni 2024 bis Mai 2025, abschnittsweise Poller und Schwellen)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/fahrradautobahn-waechst-weiter_a418916 (bis Mai 2025, Grünbeschichtung)
-#: last_checked: 2024-08-01
+#: last_checked: 2024-08-23
 #: check_frequency: 45d
 #: next_check: 2025-05-31
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::inwork 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
@@ -5915,7 +5917,7 @@ Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Fertigstellung 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.bahninfo-forum.de/read.php?9,769715,786561#msg-786561 (Vorplanung)
-#: last_checked: 2024-08-12
+#: last_checked: 2024-08-23
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
@@ -5924,7 +5926,7 @@ Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: check_frequency: 120d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18846,9532 18765,9426 18735,9421
 #: osm_watch: way id="261883742" version="13"
-#: last_checked: 2024-04-06
+#: last_checked: 2024-08-23
 #: check_frequency: 120d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18118,19394 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="18"
@@ -7527,7 +7529,7 @@ Thorwaldsenstr.: Sanierung und Verbreiterung der Radwege zwischen Canovastr. und
 #: source_id: viz2021:13.485931,52.520804,25.01.2024,07:00 (Sperrung nur für Kfz-Verkehr, bis 02.05.2024) (nun auch Radverkehr, bis 24.05.2024, stimmt aber nicht) (bis 14.06.2024) (bus 21.06.2024) (bis 27.06.2024) (inaktiv)
 #: osm_watch: note 4243680 3
 #: XXX Ampelanlage steht schon, Markierungen fehlen
-#: last_checked: 2024-08-12
+#: last_checked: 2024-08-23
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-06-27
 Bornitzstr./Ruschestr.: Ampel (anstelle des Zebrastreifens) in Bau	?::inwork 15923,12853 15950,12886 15985,12920
@@ -8072,7 +8074,7 @@ Falkentaler Steig: entsteht hier ein Zebrastreifen?	? 2842,24293 2903,24264 2971
 # REMOVED --- #: note: Halteverbotsschilder bis 20.11.2023; auf der nördlichen Seite ab Jessnerstr. markiert, noch ohne Radwegschilder; es wurden nur kleine Stellen saniert (bereits eingetragen, inkl. neuen qualitaet_s-Eintrag) --- #: note: Richtung Osten: zwischen Weichselstr. und Müggelstr. bereits markiert und ausgeschildert, trotzdem parken hier noch Autos; am 2024-02-13 zum ersten Mal frei gesehen; mittlerweile dauerhaft frei und eingetragen
 #: note: Richtung Osten: ab Müggelstr. teilweise noch unsaniert (Kopfsteinpflaster) und eine Hochbaustelle; Halteverbotsschilder bis 30.06.2024; mittlerweile wurde das Gerüst abgebaut, das Haus ist noch immer eine Baustelle, auf dem zukünftigen Radstreifen steht ein Container --- nichts passiert hier!
 #: XXX An die comments_tram-Einträge denken!
-#: last_checked: 2024-08-12 vvv
+#: last_checked: 2024-08-23 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2024-09-30 vvv
@@ -8359,11 +8361,6 @@ Hauptstr. (Rosenthal): Modalsperre entsteht	? 8389,21468 8419,21446
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf
 #: last_checked: 2024-08-20
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
-# 
-#: XXX vermutlich eine Art Verbundsteinpflaster
-Strandpromenade (Feriendorf Grimnitzsee): Qualität? verkehrsberuhigt?	? 33742,63095 33739,63124 33931,63354
-#: XXX vermutlich asphaltiert
-Zum Strandbad Wolletzsee: Qualität?	? 46964,67922 46921,68106 46915,68285 46777,68397 46531,68674 46303,69087 46268,69203
 # 
 #: section ^^^
 #: ignore ^^^
@@ -8949,7 +8946,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 # REMOVED --- #: XXX: am Wartenberger Weg habe ich ein Straßenschild "An der Margaretenhöhe" gesehen --- kann das sein? --- Schnitterinnenweg: Benennung?	? 16736,19193 16768,19191 17015,19287 17351,19411 17679,19532
 # REMOVED (Schild steht) --- Am Alten Malchower Graben: Benennung?	? 15424,19861 15393,19671 15383,19610 15386,19485 15426,19216 15412,19082 15407,19024 15376,18908 15400,18840 15399,18782 15434,18731 15413,18626
 #: XXX beim ersten Vorschlag war der Name noch offen
-#: last_checked: 2024-06-16 (mapillary)
+#: last_checked: 2024-08-23
 #: check_frequency: 180d
 Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,20587 18061,20715 18083,20782 18026,20847 17946,20889 17475,20851 17287,20837 17080,21288 17073,21329
 # REMOVED --- Ahornallee: Benennung?	? 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716 17287,20837
@@ -11058,7 +11055,7 @@ Bebauungsplan 9-68 VE: Straßen geplant	? 20560,518 20722,562 20796,520 20841,354
 #: by: https://www.luftbildsuche.de/info/luftbilder/neubau-holzbauprojekt-mehrfamilienhaus-wohnanlage-ortsteil-kaulsdorf-berlin-deutschland-637816.html
 #: XXX Berlin.coords.data-Eintrag fehlt (PLZ=12621 laut DPAG-Mitteilungsblatt 6/2023)
 #: XXX es wird wohl eine Anbindung zur Franzburger Str. entstehen
-#: osm_watch: way id="1246660907" version="3"
+#: osm_watch: way id="1246660907" version="4"
 #: osm_watch: way id="676848100" version="7"
 #: note: Privatstraße
 #: last_checked: 2024-08-14
@@ -11287,6 +11284,7 @@ Fichtenallee (Potsdam): Qualität?	? -8563,-3805 -8451,-3728 -8226,-3592
 Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -7077,-4186 -6902,-4397 -6775,-4326 -6767,-4463 -6669,-6430 -6655,-6763 -6610,-6839 -6435,-6954 -6470,-7079 -6191,-7587 -6319,-7795 -5766,-8911 -5387,-8896
 Königsdamm in Schlänitzsee: Qualität? Führt hier die F3 entlang?	? -19316,4365 -19392,4605
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19392,4605 -18701,4578
+#: XXX: am südöstlichen Ende habe ich "unbefestigt" notiert, aber bei osm steht "cobblestone" --- vielleicht wechselt hier die Fahrbahnbeschaffenheit?
 Joachimsthal - Altkünkendorf: Qualität?	? 35457,66637 38125,66800 39287,67537 39575,67262 39875,66425
 Mescherin - B113: Qualität?	? 78641,95024 78662,95275 78787,95425 78812,95825 78921,96072
 B2 - Rosow: Qualität?	? 76863,101305 76087,101337 75912,101137 75359,101224
@@ -11298,7 +11296,6 @@ BER - Karlshof: laut "Berliner Umland" witterungsabhängige Strecke	? 19858,-6330
 #: XXX laut osm asphalt, allerdings mit unterschiedlicher smoothness (good - bad - intermediate)
 Karlshof - Brusendorf: laut "Berliner Umland" geeigneter Radweg (möglicherweise asphaltiert)	? 19092,-9677 18847,-9629 18205,-10432
 Mürow - Henriettenhof: Qualität? südlich des Dorfes sah es wie ein Feldweg oder Kopfsteinpflaster aus (Q2 oder schlechter)	? 52372,72018 52810,70961 52988,70653 53129,70522 53344,70175 53482,69816 53953,69208
-Passow, Mittelstr.: Qualität im westlichen Abschnitt? Hier auch Beton?	? 56975,82627 57185,82724
 #: XXX zumindest an der Bundesstraße Feldwege
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51034,165181 50994,165390 50715,166093 50464,166650 50472,166804 50661,166901 50993,167239 51565,167859
 Mauerweg am Griebnitzsee: Qualität (vermutlich Asphalt?)?	? -9795,-230 -9585,-277 -9445,-377 -9375,-502
@@ -11671,9 +11668,6 @@ Wollup - Spadille: Qualität?	? 78680,25852 78756,27072 78680,27516
 #: XXX vermutlich betoniert (aus dem Zug gesehen)
 Fürstenwalder Str. (Zernsdorf): Qualität?	? 27906,-11638 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
 Am Möllenberg (Zernsdorf): Qualität?	? 27934,-10286 28016,-10429 28241,-10904 28388,-11093
-Mürow - Pinnow: Qualität?	? 52072,72613 52455,72591 52492,72539
-Mürow - Pinnow: Qualität?	? 53374,72966 54305,73196 54677,73196 55225,73549 55450,73574
-Hohenlandin - Heinersdorf: Qualität (vermutlich asphaltiert)?	? 58614,76616 59256,76805 61339,77148 61595,77118 62816,76674 62876,76669 63021,76637 63144,76624 63211,76623
 Heinersdorf - Berkholz: Qualität des südlichen Abschnitts? Hier auch asphaltiert?	? 63283,75793 63732,73976 63805,73769 63945,73688
 Berkholz - Meyenburg: Qualität?	? 63945,73688 64048,73386 64272,73434 64491,73284 64797,73259 64976,73094 65440,72548 65658,72501 65817,72245
 Meyenburg - Schwedt: Qualität?	? 65817,72245 65801,72127 67117,71540
@@ -11697,7 +11691,6 @@ Klein Sperrenwalde - Gollmitz: Qualität (zumindest das Gollmitzer Ende ist aspha
 Ellingen - Uckerfeld: Qualität (wahrscheinlich asphaltiert?)?	? 37521,105452 37934,105127
 Wublitzbrücke - Töplitz: Qualität (wahrscheinlich Feld- oder Waldweg)?	? -21681,702 -22045,765 -22525,1230 -22911,1634 -23105,2016 -23207,2284
 Nattwerder - Golm: Qualität (wahrscheinlich Feldweg)?	? -21043,1586 -20807,1383 -20955,978 -21221,764
-Neugrimnitz - Ziethen: Qualität?	? 38272,63836 38577,63641 38759,63647 39131,63537 39637,63244 39741,63220 39832,63263
 Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 39375,62148 39180,61605 39156,61459 39003,61246
 Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, vom südlichen Ende aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
@@ -12373,7 +12366,6 @@ Straßen in Döberitz: genaue Straßennamen, Qualität?	? -12956,13814 -13017,13815 
 # REMOVED --- #: next_check: 2023-09-01
 Heerstr. - Fichtenstr. - Chemnitzer Str.: wird hier ein Verbindungsweg für Radfahrer und Fußgänger gebaut? Qualität? Nachts beleuchtet?	? 22366,9571 22219,9545 22137,9532
 # 
-Heinersdorf: Qualität? Liegt hier auch Verbundsteinpflaster?	? 63261,76791 63225,76949 63279,77202 63342,77286 63390,77441 63293,77739
 Umfahrung B5 bei Karstädt: ist das eine Kraftfahrzeugstraße?	? -102187,80033 -102492,80202 -102824,80211 -103579,80166 -104020,80374 -104246,80597 -104370,80854 -104406,81222 -104370,81603 -104546,81975
 # 
 #: by: https://www.facebook.com/benno.koch.berlin/posts/763398590416461?notif_t=like vvv
@@ -12572,13 +12564,7 @@ Am Rathaus (Hohen Neuendorf): Qualität?	? 1717,29541 1730,29579 1733,29664
 # REMOVED --- #: next_check: 2024-07-25
 Mauerweg, Unterführung Dresdener Bahn: Wurden alle Radroutenschilder (insbesondere Berlin-Leipzig) bereits angepasst?	? 10467,-3201 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
 # 
-#: XXX bei osm nur track4, aber bei Mapillary Asphalt
-Passow - Hohenlandin: Qualität (vermutlich asphaltiert)?	? 56975,82627 56972,82460 57049,82257 57073,82086
-#: XXX bei osm nur track4
-Passow - Hohenlandin: Qualität (vermutlich unbefestigter Weg)?	? 57073,82086 57083,81981 57376,81651 57538,81460 57506,81197 57595,80940 57579,80739 57611,80578 57874,80111 57776,79930 57928,79365
-#: XXX fehlt bei osm, bei Mapillary Verbundsteinpflaster
-Passow - Hohenlandin: Qualität (vermutlich Verbundsteinpflaster)?	? 57928,79365 57946,79298
-#: XXX bei osm nur track4
-Passow - Stendel: Qualität (vermutlich unbefestigter Weg)?	? 57928,79365 57981,79367
+#: XXX am östlichen Ende asphaltiert
+Seilerstr. (Gramzow): Qualität?	? 49787,90264 49854,90252 49851,90216 49968,90211 50031,90234
 # 
 #: section ^^^

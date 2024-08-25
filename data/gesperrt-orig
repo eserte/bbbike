@@ -1772,6 +1772,7 @@ Georg-Hermann-Allee: Straßenbahntrasse	3nocross -13420,1478 -13422,1383 -13424,1
 ###################################################################### 
 #: section: Sperrungen anderswo in Brandenburg vvvvvvvvvvvvvvvvvvvvvvv
 # 
+Marienwerder, Kirche	1 22907,48770 22935,48771 22944,48746 22933,48718 22903,48724 22894,48744 22907,48770
 Heinrich-Dorrenbach-Str.	1s:q4 39533,14774 39578,14967
 Mahlsdorfer Str. [zur Böhlener Str.]	1 26014,15039 26093,15098
 #: by: osm
@@ -1792,8 +1793,8 @@ Jüterboger Str., Wallstr. (Kloster Zinna)	1 -8922,-43250 -9006,-43232 -9050,-432
 Heidestr. (Luckenwalde)	1 -5029,-35945 -5086,-35837
 Heidestr. (Luckenwalde)	1 -5062,-35834 -5029,-35945
 #: by: osm, mapillary
-#: note: explizites Radfahrer-verboten-Schild, zumindest am nördlichen Ende
-Segelfliegerdamm (Zernsdorf - Niederlehme)	2 28499,-10164 28454,-10018 28385,-9820 28312,-9695 27950,-8900 27754,-8708
+#: note: explizite Radfahrer-verboten-Schilder
+Segelfliegerdamm (Zernsdorf - Niederlehme)	2 27754,-8708 27950,-8900 28312,-9695
 Königs Wusterhausen - Wernsdorf	1 27704,-8747 27719,-8666
 #: by: mapillary
 Am Tonberg (Zeuthen)	1 24593,-7405 24492,-7311 24416,-7241
@@ -1867,8 +1868,8 @@ Krumme Str.	1 25490,14601 25444,14665 25418,14835
 Margaretenstr.	1 25418,14835 25503,14842
 Sophienstr.	1 25503,14842 25527,14696 25555,14657
 Straße am Haussee: abgesperrt, Privatstraße	2 25846,16082 25787,16229
-#: note: möglicherweise nur im Frühling/Sommer? Gesehen auch Im Sommer 2022.
-#: osm_watch: note 1414569 3
+#: note: möglicherweise nur im Frühling/Sommer? Gesehen auch im Sommer 2022 + August 2024
+#: osm_watch: note 1414569 4
 Freilichtbühne Schwedt	2 69562,73280 69634,73330
 #: note: Radweg in einer Richtung
 Bernau - Tempelfelde	1 23179,31047 23103,30923
@@ -2069,7 +2070,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
 #: add_fragezeichen ^^^
-Gramzow	1s:q3 49779,90206 49810,90444
+Gramzow	1s:q3 49779,90206 49787,90264 49810,90444
 Alt-Tegel	1s:q3 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s:q3 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 May-Ayim-Ufer	1s:q1 13206,10651 13077,10747
@@ -3808,6 +3809,10 @@ Schranke	BNP:3::trailer=10 13081,14090
 weites Drängelgitter	BNP:2::trailer=7 7157,18810
 weites Drängelgitter	BNP:2::trailer=7 1772,42835
 Drängelgitter	BNP:3::trailer=10 10018,15826
+Drängelgitter	BNP:3::trailer=10 25515,54428
+Drängelgitter	BNP:3::trailer=10 26718,56454
+Drängelgitter	BNP:3::trailer=10 26803,56547
+Tor	BNP:10 33926,63348
 #
 #: section ^^^
 ############################################################################
@@ -4635,7 +4640,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-l%C3%BCckstra%C3%9Fe-33-37.1405/#post-22786
 #: osm_watch: way id="830757933" version="2"
 #: osm_watch: way id="610818155" version="5"
-#: osm_watch: way id="1171090939" version="3"
+#: osm_watch: way id="1171090939" version="4"
 #: last_checked: 2024-08-03
 #: check_frequency: 180d
 #: next_check: 2025-12-31

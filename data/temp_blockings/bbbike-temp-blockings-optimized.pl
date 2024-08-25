@@ -2379,20 +2379,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: IM_014421 (inactive)
-# REMOVED (2010er-Eintrag) ---	2::inwork; 9121,12514 9131,12438
-# REMOVED (2010er-Eintrag) --- Kein Durchgang von Mittelstr. zur Neustädtischen Kirchstr., auch nicht für Fußgänger	2::inwork 9343,12464 9179,12444 9131,12438
-# REMOVED (2010er-Eintrag) ---	q4::inwork; 9131,12438 9141,12320
-#: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (hier nur Kfz-Verkehr, stimmt aber nicht, bis 23.08.2024)
-	q4::inwork; 9121,12514 9131,12438
-',
-         'from' => 1723413600,
-         'id' => 1946,
-         'text' => 'Neustädtische Kirchstr.: Richtung Unter den Linden zwischen Dorotheenstr. und Mittelstr. Baustelle, Fahrtrichtung gesperrt, voraussichtlich bis 23.08.2024',
-         'type' => 'handicap',
-         'until' => 1724425200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3222,7 +3209,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        {
          'data' => '#: source_id: IM_019584 (alter Eintrag von 2013, inaktiv)
-#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen)
+#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen) (bis 28.10.2024)
 # REMOVED (hier nicht) ---	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544
 Fürstenwalder Damm, linker Gehweg existiert	q4::inwork; 24471,5544 24700,5633
 Jastrower Weg: Einbahnstraße	q4::inwork; 23877,5503 23866,5515 23863,5549 23845,5558 23696,5529 23657,5467
@@ -3230,9 +3217,9 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
 ',
          'from' => 1719205200,
          'id' => 2417,
-         'text' => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Liebstadter Gang und Mühlweg, Richtung Bölschestr. gesperrt, außerdem Einbahnstraßenregelung im Straßenzug Jastrower Weg - Stillerzeile, vom 25.06.2024 07:00 bis 26.08.2024 17:00',
+         'text' => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Liebstadter Gang und Mühlweg, Richtung Bölschestr. gesperrt, außerdem Einbahnstraßenregelung im Straßenzug Jastrower Weg - Stillerzeile, vom 25.06.2024 07:00 bis 28.10.2024 17:00',
          'type' => 'handicap',
-         'until' => 1724684400
+         'until' => 1730131200
        },
        undef,
        undef,
@@ -3415,7 +3402,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1809452214483652953
 #: by: https://pbs.twimg.com/media/GRuNzPkXgAANqwk?format=jpg&name=large
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240709 (erste Bauphase bis 24.08.2024, Gesamtbaumaßnahme bis voraussichtlich 27.10.2024)
-#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024)
+#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024) (bis 28.10.2024)
 #: XXX Änderung der Bauphase: Bauarbeiten dann zwischen Waldowstr. und Ostendstr. 20
 #: note: die Rathenaustraße wird als Umleitungsstrecke benutzt und ist eigentlich zu eng, ein comments_trafficjam-Eintrag würde sich anbieten
 #: next_check: 2024-08-24
@@ -3428,9 +3415,9 @@ Slabystr.: einige Meter der Fahrbahn vor der Ostendstr. gesperrt	q3::inwork 1918
 ',
          'from' => 1720130400,
          'id' => 2486,
-         'text' => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Steffelbauerstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, außerdem Einbahnstraßenregelung in der Scharnweberstr., voraussichtlich bis 26.08.2024, voraussichtlich wird bis Oktober 2024 verlängert',
+         'text' => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Steffelbauerstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, außerdem Einbahnstraßenregelung in der Scharnweberstr., zunächst bis 26.08.2024, voraussichtlich wird bis Oktober 2024 verlängert',
          'type' => 'handicap',
-         'until' => 1724688000
+         'until' => 1730134800
        },
        undef,
        undef,
@@ -3725,7 +3712,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 157300093 (alter Eintrag von 2015, inaktiv)
+#: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin (neue Sperrung 2024)
+	2::inwork 51806,78469 51798,78477 51668,78605
+',
+         'from' => 1719784800,
+         'id' => 2701,
+         'text' => 'Schönermark - Biesenbrow: Bahnübergang gesperrt, 01.07.2024 bis 13.10.2024',
+         'type' => 'gesperrt',
+         'until' => 1728835200
+       },
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-f-24-geht-erst-spaeter-in-betrieb_a261679
@@ -5483,7 +5480,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
          'data' => '#: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
-#: osm_watch: way id="1246171055" version="1"
+#: osm_watch: way id="1246171055" version="2"
 #: last_checked: 2024-08-17 vvv
 #: check_frequency: 21d vvv
 #: osm_watch: note 4090527 5
@@ -6566,7 +6563,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-08-12
+#: last_checked: 2024-08-23
 #: check_frequency: 90d
 #: next_check: 2024-09-30
 	q3::inwork; 15648,12687 15643,12875
@@ -7136,13 +7133,14 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        {
          'data' => '#: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024)
+#: source_id: 246001315 (bis 08.11.2024)
 	2::inwork 23015,30519 23113,30450
 ',
          'from' => 1705186800,
          'id' => 3947,
-         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung bis 30.08.2024',
+         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung bis 08.11.2024',
          'type' => 'gesperrt',
-         'until' => 1725026400
+         'until' => 1731078000
        },
        undef,
        undef,
@@ -7207,16 +7205,16 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024)
+         'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024) (bis 27.08.2024)
 #: note: bei rbb nur bis 30.04.2024, mittlerweile auch bis 21.05.2024
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
 Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
 ',
          'from' => 1694494800,
          'id' => 3976,
-         'text' => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 29.08.2024, evtl. noch länger',
+         'text' => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 27.08.2024, evtl. noch länger',
          'type' => 'gesperrt',
-         'until' => 1724943600
+         'until' => 1724770800
        },
        undef,
        undef,
@@ -7912,29 +7910,29 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.301956,52.432374,26.06.2024,07:00 (hier auch Radverkehr, bis 30.08.2024)
+         'data' => '#: source_id: viz2021:13.301956,52.432374,26.06.2024,07:00 (hier auch Radverkehr, bis 30.08.2024) (bis 04.09.2024)
 Finckensteinallee (trotz Radweg?)	q4::inwork; 3456,2835 3641,2827 3738,2821
 Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
 ',
          'from' => 1719291600,
          'id' => 4097,
-         'text' => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, auch sind Radfahrer betroffen, vom 26.06.2024 07:00 bis 30.08.2024 17:00',
+         'text' => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, auch sind Radfahrer betroffen, vom 26.06.2024 07:00 bis 04.09.2024 17:00',
          'type' => 'handicap',
-         'until' => 1725030000
+         'until' => 1725462000
        },
        {
-         'data' => '#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024)
+         'data' => '#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024) (bis 29.11.2024)
 	q4::inwork; 2625,2850 2737,2866
 # REMOVED (scheint kürzer zu sein) ---	q4::inwork; 2737,2866 3019,2858
 ',
          'from' => 1719291600,
          'id' => 4098,
-         'text' => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+         'text' => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 29.11.2024 17:00',
          'type' => 'handicap',
-         'until' => 1725116400
+         'until' => 1732896000
        },
        {
-         'data' => '#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024)
+         'data' => '#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/weitraeumige-umleitungen-notwendig_a419753
@@ -7943,9 +7941,9 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
 ',
          'from' => 1719291600,
          'id' => 4099,
-         'text' => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
+         'text' => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 29.11.2024 17:00',
          'type' => 'handicap',
-         'until' => 1725116400
+         'until' => 1732896000
        },
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
@@ -8429,6 +8427,31 @@ Elsenstr.	q3::inwork 13766,9200 13664,9073
          'text' => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.08.2024 07:00 bis 16.09.2024 17:00',
          'type' => 'handicap',
          'until' => 1726498800
+       },
+       {
+         'data' => '#: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (kein Endedatum)
+#: by: https://www.berlin-usedom-radweginfo.de/ (bis Ende 2024)
+#: osm_watch: way id="105827200" version="11"
+#: osm_watch: note 4244536 2
+#: last_checked: 2024-08-23
+#: next_check: 2024-12-31
+	2::inwork 24769,48739 24781,48768 24766,48828
+',
+         'from' => 1724611975,
+         'id' => 4149,
+         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2024',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.388702,52.489836,26.08.2024,06:00 (auch Radverkehr, bis 29.08.2024)
+	q4::inwork 9489,9309 9309,9347
+',
+         'from' => 1724558400,
+         'id' => 4150,
+         'text' => 'Bergmannstr.: zwischen Am Tempelhofer Berg und Nostitzstr. Kranarbeiten, Sperrung der Fahrbahn, vom 26.08.2024 06:00 bis 29.08.2024 12:00',
+         'type' => 'handicap',
+         'until' => 1724925600
        }
      
 );

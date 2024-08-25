@@ -22,7 +22,7 @@ Schlangenbader Str.: Einbahnstraßenregelung, mit entgegengesetzter provisorische
 # REMOVED (laut osm existiert die Unterführung) --- #: XXX neue Unterführung wird gebaut --- #: last_checked: 2021-08-27 --- #: check_frequency: 360d --- Wünsdorf: Bahnübergang gesperrt	2 15353,-26857 15536,-26728 15580,-26698 15602,-26674
 # 
 #: next_check_id: GUTHELLESDORF-2024
-#: osm_watch: way id="198375762" version="11"
+#: osm_watch: way id="198375762" version="15"
 #: osm_watch: note 4362261 4
 #: last_checked: 2024-08-14
 #: check_frequency: 30d
@@ -1828,7 +1828,7 @@ Weißenseer Weg: Straßenbahntrasse	3nocross 15066,14579 15120,14481 15168,14395
 Schwedt - Angermünde	1 50831,68659 50958,68666
 # 
 #: note: eigentlich motorisierter Verkehr verboten, Anlieger frei, aber in der Praxis gibt es hier einiges an Autoverkehr
-Görlsdorf - Peetzig	2:Anlieger 45683,72646 45651,72706 45595,72753 45557,72838 45503,72909 45468,73067 45425,73282 45273,73431 45178,73581 45098,73740 45178,73830 45193,73919 45141,74055 44912,74243 44857,74294 44571,74470 44344,74590 44297,74757 44356,74890 44412,74962 44403,75026
+Görlsdorf - Peetzig	2:Anlieger 45683,72646 45651,72706 45595,72753 45557,72838 45511,72911 45512,72964 45436,73265 45273,73431 45178,73581 45140,73677 45092,73733 45178,73830 45197,73921 45116,74091 45030,74125 44912,74243 44857,74294 44571,74470 44344,74590 44297,74757 44356,74890 44412,74962 44403,75026
 # 
 Habelschwerdter Allee: Mittelstreifen	3nocross 2732,4741 2745,4729 2762,4713
 # 
@@ -2087,4 +2087,6 @@ Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22933,12837 22967,12647
 # 
 (Straßenbahnwendeschleife Schöneweide): nur für BVG und Radfahrer	2 17754,5460 17619,5594 17597,5614
 Straßenbahntrasse	3nocross 17754,5460 17736,5441 17695,5394
+# 
+Gluckstr. (Zepernick)	1 19960,27783 20044,27979
 # 

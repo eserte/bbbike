@@ -1124,6 +1124,7 @@ Georg-Hermann-Allee -> Hans-Paasche-Str.: Straßenbahntrasse	3::igndisp -13420,14
 Hans-Paasche-Str. -> Georg-Hermann-Allee: Straßenbahntrasse	3::igndisp -13263,1394 -13422,1383 -13424,1290
 Georg-Hermann-Allee -> Peter-Huchel-Str.: Straßenbahntrasse	3::igndisp -13422,1383 -13424,1290 -13253,1310
 Peter-Huchel-Str. -> Georg-Hermann-Allee: Straßenbahntrasse	3::igndisp -13253,1310 -13424,1290 -13429,1069
+Marienwerder, Kirche	1 22907,48770 22935,48771 22944,48746 22933,48718 22903,48724 22894,48744 22907,48770
 Heinrich-Dorrenbach-Str.	1s 39533,14774 39578,14967
 Mahlsdorfer Str. [zur Böhlener Str.]	1 26014,15039 26093,15098
 Trebbiner Str.	2 11065,-5338 11040,-5252 11091,-5242 11107,-5326 11119,-5326
@@ -1140,7 +1141,7 @@ Promenade (Jüterbog)	1 -10193,-46048 -10165,-45794
 Jüterboger Str., Wallstr. (Kloster Zinna)	1 -8922,-43250 -9006,-43232 -9050,-43212 -9091,-43151 -9044,-42958
 Heidestr. (Luckenwalde)	1 -5029,-35945 -5086,-35837
 Heidestr. (Luckenwalde)	1 -5062,-35834 -5029,-35945
-Segelfliegerdamm (Zernsdorf - Niederlehme)	2 28499,-10164 28454,-10018 28385,-9820 28312,-9695 27950,-8900 27754,-8708
+Segelfliegerdamm (Zernsdorf - Niederlehme)	2 27754,-8708 27950,-8900 28312,-9695
 Königs Wusterhausen - Wernsdorf	1 27704,-8747 27719,-8666
 Am Tonberg (Zeuthen)	1 24593,-7405 24492,-7311 24416,-7241
 Am Tonberg (Zeuthen)	1 24493,-7282 24616,-7384
@@ -1333,7 +1334,7 @@ Björnsonstr	1s 10209,16674 10197,16528
 Ibsenstr.	1s 10295,16667 10209,16674
 Eichhornstr.	1s 8232,11414 8253,11306 8280,11296
 Lindenallee	1s 1429,11528 1403,11428
-Gramzow	1s 49779,90206 49810,90444
+Gramzow	1s 49779,90206 49787,90264 49810,90444
 Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 May-Ayim-Ufer	1s 13206,10651 13077,10747
@@ -3463,6 +3464,10 @@ Schranke	BNP:3:-213:trailer=10 13081,14090
 weites Drängelgitter	BNP:2:-78:trailer=7 7157,18810
 weites Drängelgitter	BNP:2:-215:trailer=7 1772,42835
 Drängelgitter	BNP:3:-146:trailer=10 10018,15826
+Drängelgitter	BNP:3:-161:trailer=10 25515,54428
+Drängelgitter	BNP:3:58:trailer=10 26718,56454
+Drängelgitter	BNP:3:-12:trailer=10 26803,56547
+Tor	BNP:10:-140 33926,63348
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 Zum Feldrain (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130
