@@ -29471,7 +29471,7 @@ EOF
 #: by: https://www.berliner-woche.de/karow/c-verkehr/wasserbetriebe-bauen-am-bahnhof-karow_a359438 (Eröffnung 2023)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15236.pdf (Freigabe im 3. Quartal 2024)
 #: by: https://www.berliner-woche.de/karow/c-bauen/strasse-am-bahnhof-karow-wird-tiefer-gelegt_a382636 (voraussichtliche Freigabe im Herbst 2024)
-#: last_checked: 2024-07-24 (mapillary)
+#: last_checked: 2024-08-21 (mapillary)
 #: next_check: 2024-12-31
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
@@ -35904,20 +35904,21 @@ EOF
 #: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1758065960009744712#m (auch Fußgänger sind betroffen!)
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOu2XcAAADii.jpg (Detailkarte der Sperrung)
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOxmWwAAhC4Z.png (Umleitung für Radfahrer)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1479228.php (nächste Sperrung der Hämmerlingstr.: 23.9.2024-2.10.2024)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025)
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar)
 #: also_indoor: traffic (G,B,W)
-# REMOVED --- #: priority: #A
+#: priority: #A
 #: last_checked: 2024-07-10 vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2024-03-11 vvv
-# REMOVED --- #: next_check: 2023-08-27 vvv
+#: next_check: 2024-09-21 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 # REMOVED --- #: osm_watch: way id="794278028" version="10"
 # REMOVED --- #: osm_watch: way id="1181902719" version="1"
 # REMOVED (laut VIZ nicht mehr gesperrt) --- Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
 #: osm_watch: way id="1163982841" version="3"
 Schubertstr.	2::inwork 21984,6317 21856,6390
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -37486,7 +37487,8 @@ EOF
      { from  => $isodate2epoch->("2024-06-17 00:00:00"), # 1665385200, # 2022-10-10 09:00
        until => $isodate2epoch->("2024-09-30 17:00:00"), # $isodate2epoch->("2023-08-10 17:00:00"), # 1667664000, # 2022-11-05 17:00
 #      text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 10.08.2023 17:00',
-       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 30.09.2024',
+#       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 30.09.2024',
+       text  => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 30.09.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
@@ -37498,10 +37500,10 @@ EOF
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024)
 #: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
 #: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024)
-#: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
-	q3::inwork; 12010,16774 12230,16915
+# REMOVED ---#: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
+# REMOVED ---	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
-# REMOVED ---	q4::inwork; 12230,16915 12267,16946
+	q4::inwork; 12230,16915 12267,16946
 # REMOVED --- Einbahnstraßenregelung	q4::inwork; 12230,16915 12257,16876 12226,16757
 EOF
      },
@@ -39120,7 +39122,7 @@ EOF
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-08-20 (traffic)
+#: last_checked: 2024-08-26 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -40573,13 +40575,14 @@ EOF
 	q4::inwork 9417,6063 9339,6076 9321,6079 9212,6096
 EOF
      },
-     { from  => $isodate2epoch->("2023-10-09 00:00:00"), # 1691298000, # 2023-08-06 07:00
-       until => $isodate2epoch->("2023-10-16 17:00:00"), # 1692972000, # 2023-08-25 16:00
-       text  => 'Babelsberger Str.: Bauarbeiten zwischen Badensche Str. und Berliner Str., Fahrbahn gesperrt, vom 10.10.2023 07:00 bis 16.10.2023 17:00',
+     { from  => $isodate2epoch->("2024-08-26 00:00:00"), # $isodate2epoch->("2023-10-09 00:00:00"), # 1691298000, # 2023-08-06 07:00
+       until => $isodate2epoch->("2024-09-20 16:00:00"), # $isodate2epoch->("2023-10-16 17:00:00"), # 1692972000, # 2023-08-25 16:00
+       text  => 'Babelsberger Str.: Bauarbeiten zwischen Badensche Str. und Berliner Str., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 26.08.2024 07:00 bis 20.09.2024 16:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.33522,52.4859,07.08.2023,07:00 (inaktiv)
 #: source_id: viz2021:13.335186,52.487058,10.10.2023,07:00 (bis 16.10.2023) (inaktiv)
+#: source_id: viz2021:13.33522,52.4859,26.08.2024,07:00 (bis 20.09.2024)
 	q4::inwork 5782,8828 5783,9060
 EOF
      },
@@ -40612,11 +40615,12 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2023-08-27 00:00:00"),
-       until => 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
-       text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick, Ende der Einschränkungen unbekannt',
-# ursprünglich: text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
-# ursprünglich: text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
+     { from  => $isodate2epoch->("2024-10-22 00:00:00"), # $isodate2epoch->("2023-08-27 00:00:00"),
+       until => $isodate2epoch->("2024-11-04 20:00:00"), # 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
+#      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick, Ende der Einschränkungen unbekannt',
+#      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
+#      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
+      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, evtl. ist der Durchgang durch den Bahnhof Köpenick möglich, vom 23.10.2024 bis voraussichtlich 04.11.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -40626,6 +40630,7 @@ EOF
 #: by: https://viz.berlin.de/2023/08/bahnhofstr/
 #: by: https://www.youtube.com/watch?v=Y73X25IYfTM
 #: by: https://viz.berlin.de/2023/10/verkehrsvorschau-091023/ ("wird am Abend aufgehoben")
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (nächste Sperrungen: 23.10.2024-04.11.2024 + 18.6.2025-7.7.2025)
 # REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id[inactive]: bvg2021:269#BVG326513_0
 #: source_id[inactive]: bvg2021:63#BVG326792_0
@@ -40633,13 +40638,12 @@ EOF
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
-# REMOVED (nicht mehr) --- Bahnbrücke	q4::inwork 22431,6068 22467,6135
+Bahnbrücke	q4::inwork 22431,6068 22467,6135
 # REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
 # REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
 # REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
 # REMOVED (nicht mehr) --- Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
-#: osm_watch: way id="25663270" version="21"
-Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
+# REMOVED --- #: osm_watch: way id="25663270" version="21" --- Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
@@ -43640,7 +43644,7 @@ EOF
 #: source_id: viz2021:13.507816,52.637174,17.06.2024,08:00 (bis 06.09.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1802568101801717762
 #: by: https://pbs.twimg.com/media/GQCRGJeXwAAhEes?format=jpg&name=large (Einbahnstraßenbereich etwa 100m)
-	q3::inwork; 17011,25830 17446,25914
+	q3::inwork; 17446,25914 17011,25830
 EOF
      },
      { from  => undef, # 
@@ -44120,7 +44124,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H,B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-18
+#: last_checked: 2024-08-26
 #: check_frequency: 30d
 #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -44373,7 +44377,20 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.388702,52.489836,26.08.2024,06:00 (auch Radverkehr, bis 29.08.2024)
-	q4::inwork 9489,9309 9309,9347
+#: source_id: viz2021:13.38727,52.49006,26.08.2024,06:00 (bis 29.08.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1827912099877544007
+#: by: https://pbs.twimg.com/media/GVrGzy4WwAA0TF7?format=jpg&name=large
+#: note: q4+, weil nicht der gesamte Abschnitt betroffen ist (Am Tempelhofer Berg - Zebrastreifen)
+	q4+::inwork 9489,9309 9309,9347
+EOF
+     },
+     { from  => 1724562000, # 2024-08-25 07:00
+       until => 1729526400, # 2024-10-21 18:00
+       text  => 'Kochhannstr.: Bauarbeiten zwischen Ebertystr. und Weisbachstr., evtl. sind auch Radfahrer betroffen, vom 26.08.2024 07:00 bis 21.10.2024 18:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.45222,52.52515,26.08.2024,07:00 (bis 21.10.2024)
+	q4::inwork 13644,13332 13548,13290
 EOF
      },
     );
