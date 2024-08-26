@@ -47,6 +47,11 @@ eq_or_diff [_find_coords("Coordinate:\t52.51628113, 13.37769890")], [[8599,12255
 # tomtom
 eq_or_diff [_find_coords('https://plan.tomtom.com/de/route/plan?p=52.52908,13.38559,14.48z')], [[9107,13688]];
 
+# mapy.cz
+eq_or_diff [_find_coords('https://de.mapy.cz/turisticka?l=0&x=13.3776989&y=52.5162811&z=15')], [[8599,12255]];
+eq_or_diff [_find_coords('https://de.mapy.cz/turisticka?l=0&y=52.5162811&x=13.3776989&z=15')], [[8599,12255]];
+eq_or_diff [_find_coords('https://en.mapy.cz/zakladni?x=13.3776989&y=52.5162811&z=15')], [[8599,12255]];
+
 # image with gps data in exif
 SKIP: {
     skip "Image::ExifTool needed for parsing GPS position out of images", 1

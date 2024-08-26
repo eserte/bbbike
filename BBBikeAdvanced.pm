@@ -1404,6 +1404,29 @@ sub _find_coords {
 	    }
 	}
 
+	# mapy.sz URL, e.g.
+	# https://de.mapy.cz/turisticka?l=0&x=13.3688463&y=52.5176458&z=15
+	{
+	    my @_coords;
+	    while ($s =~ m{\bmapy\.cz/.*?[?&](x|y)=([-+]?[0-9\.]+).*(x|y)=([-+]?[0-9\.]+)}g) {
+		my($param1key, $param1val, $param2key, $param2val) = ($1,$2,$3,$4);
+		my($x,$y);
+		if ($param1key eq 'x' && $param2key eq 'y') {
+		    ($x,$y) = ($param1val, $param2val);
+		} elsif ($param1key eq 'y' && $param2key eq 'x') {
+		    ($y,$x) = ($param1val, $param2val);
+		}
+		if (defined $x && defined $y) {
+		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		    push @_coords, [$x,$y];
+		}
+	    }
+	    if (@_coords) {
+		push @coords, @_coords;
+		return @coords; # shortcut search
+	    }
+	}
+
 	# DDD or BBBike coordinates
 	while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
 	    my($x,$y) = ($1,$2);
