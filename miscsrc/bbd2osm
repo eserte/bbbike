@@ -33,7 +33,7 @@ use Strassen::Strasse;
 use VectorUtil qw(get_polygon_center);
 
 use vars qw($VERSION);
-$VERSION = '1.08';
+$VERSION = '1.09';
 
 # Monkeypatch for performance reasons
 # See http://rt.cpan.org/Ticket/Display.html?id=39619
@@ -811,7 +811,12 @@ sub handle_ropeway {
 sub handle_railway_like {
     my($r, $dir) = @_;
 
-    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::?(.*))?};
+    my($cat, $cat_attribs);
+    #my $is_onedirection = 0; # note: oneways do not exist in railways, so this information is unlikely to be ever used
+    if (($cat = $r->[Strassen::CAT]) =~ s/;$//) {
+	#$is_onedirection = 1;
+    }
+    ($cat, $cat_attribs) = $cat =~ m{^([^:]+)(?:::?(.*))?};
     if ($cat eq 'Ropeway') {
 	return handle_ropeway($r, $dir);
     }
