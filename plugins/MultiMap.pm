@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.26;
+$VERSION = 2.27;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1099,6 +1099,17 @@ sub showmap_openstreetmap_de {
     start_browser($url);
 }
 
+sub showmap_mapycz {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    $scale = 17 if $scale > 17;
+    my $lang = $Msg::lang =~ m{^(en|de)$} ? $1 : 'de';
+    my $url = sprintf "https://%s.mapy.cz/turisticka?x=%s&y=%s&z=%d", $lang, $px, $py, $scale;
+    start_browser($url);
+}
+
 sub showmap_url_cyclosm_at_osm {
     showmap_url_openstreetmap(@_, layers => 'Y');
 }
@@ -1177,6 +1188,11 @@ sub show_openstreetmap_menu {
 	     my $url = sprintf "https://cycling-qa.lorenz.lu/#%.2f/%s/%s", $scale, $py, $px;
 	     start_browser($url);
 	 });
+    $link_menu->command
+	(-label => 'mapy.cz',
+	 -command => sub { showmap_mapycz(%args) },
+        );
+    $link_menu->separator;
     $link_menu->command
 	(-label => 'OpenStreetMap.de',
 	 -command => sub { showmap_openstreetmap_de(%args) },
