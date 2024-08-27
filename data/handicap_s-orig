@@ -10,6 +10,18 @@
 # 
 ### Friedrichshain ###
 # 
+#: next_check_id: KNIPRODE-2024
+#: add_fragezeichen: Sind hier noch immer Bauarbeiten?
+#: also_indoor: traffic (B,T)
+#: last_checked: 2024-08-27
+#: check_frequency: 30d
+#: next_check: 2025-09-30
+Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
+# 
+#: last_checked: 2024-08-27
+Straßenbahnwendeschleife Virchowstr.: Bauarbeiten, Sperrungen möglich	q4::inwork 12925,13373 13081,13457 13151,13367
+# 
+# 
 #: osm_watch: way id="482690912" version="6"
 #: add_fragezeichen: Gibt es die Engstellen weiterhin?
 #: last_checked: 2024-07-31
@@ -288,7 +300,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: source_id: viz2021:13.429228,52.509161,19.07.2024,07:00 (bis 30.08.2024)
 #: note: laut VIZ-Mail keine Sperrung für den Rad- und Fußverkehr; außerdem wird hier als Beginn der 22.7.2024 (was passender wäre, da Montag) erwähnt
 #: note: -> gemeinsamer Rad- und Gehweg, recht eng; morgens weniger Fußgängerverkehr, dann geht es
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-27
 #: next_check: 2024-08-30
 #: valid: -20240830
 Schillingbrücke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,11475
@@ -1215,6 +1227,14 @@ Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5
 ### Rosenthal ###
 # 
 # REMOVED (Bauarbeiten beendet, keine Änderung) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1289889.php (31. Januar 2023 bis 8. Mai 2023) --- #: by: https://berliner-abendblatt.de/2023/01/31/bauarbeiten-in-rosenthal-in-der-hauptstrasse-wird-es-eng/ --- #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/arbeiten-an-der-abwasserleitung_a371543 --- #: XXX Fahrbahn schlechtes Kopfsteinpflaster --- wird das nach den Bauarbeiten vielleicht besser werden? (ggfs. nach fragezeichen-orig verschieben) --- #: note: laut Bauschild der Wasserbetriebe bis Juli 2024 --- #: osm_watch: way id="22966091" version="37" --- #: source_id: viz2021:13.379045,52.601105,07.11.2022,06:00 (bis 8.5.2023) (inaktiv) (bis 30.6.2023) (bis 30.9.2023) (inaktiv) vvv --- #: last_checked: 2023-09-02 (mapillary) vvv --- #: next_check: 2023-09-30 vvv --- #: valid: -20230930 vvv --- Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8568,21863 8473,21633 8460,21602 --- Hauptstr. (Rosenthal): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 8479,21590 8473,21633 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
+# 
+### Wilhelmsruh ###
+# 
+#: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt)
+#: also_indoor: traffic (G,H,B,T,W) [alle falsch]
+#: last_checked: 2024-08-24 (mapillary)
+#: next_check: 2024-09-20
+Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450
 # 
 #: temporary ^^^
 #: section ^^^

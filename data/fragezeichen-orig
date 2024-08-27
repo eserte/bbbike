@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2024-08-26
+#: last_checked: 2024-08-27
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -456,7 +456,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: source_id: 2147346774 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: source_id: viz2021:13.388829,52.59131,05.01.2021,07:00 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: osm_watch: way id="36954368" version="19"
-#: last_checked: 2024-07-29 (mapillary)
+#: last_checked: 2024-08-24 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-10-29
 Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904,20596 9027,20603 9073,20606 9162,20613 9175,20613 9227,20617 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
@@ -1452,7 +1452,7 @@ Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Sü
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1073173.php (Vollsperrungen werden verschoben, die zweite bis 26.4.2021)
 #: by: https://www.berliner-woche.de/haselhorst/c-verkehr/friedensburg-platz-voll-gesperrt_a306162
 #: source_id: 2147346226 (Bauarbeiten am Ferdinand-Friedensburg-Platz) (möglicherweise inaktiv)
-#: last_checked: 2024-08-01 (mapillary)
+#: last_checked: 2024-08-26 (mapillary)
 #: check_frequency: 120d
 Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected -1484,14513 -1564,14489 -1947,14394 -2074,14366 -2233,14384 -2343,14446 -2460,14493 -2597,14532 -2647,14532 -2794,14511 -2831,14512 -2946,14533 -3014,14559 -3150,14631 -3209,14662 -3255,14685
 # 
@@ -3511,7 +3511,7 @@ Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,1271
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/sicherer-zur-neuen-schuldrehscheibe-kommen_a409193 (vielleicht sogar eine Fußgängerampel?)
 #: source_id: viz2021:13.439487,52.530759,03.07.2023,10:00 (bis 21.07.2023) (inaktiv)
 #: priority: #D
-#: last_checked: 2024-08-03
+#: last_checked: 2024-08-27
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-07-21
 Kniprodestr./Pasteurstr.: wird hier ein Zebrastreifen gebaut?	?::projected 12723,13934 12766,13942 12758,13896
@@ -3651,6 +3651,7 @@ Chemnitzer Str.: Verlegung der Straße, Radwege	?::projected  22436,11054 22483,1
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10839 (Anfrage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10868 (Anfrage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11229 (Ersuchen)
+#: by: https://www.berliner-woche.de/wittenau/c-verkehr/brodersenstrasse-auf-400-meter-grundhaft-saniert_a423456
 #: XXX ursprüngliche Bauzeit: Frühjahr 2019 - Ende 2020; laut Baustellenschild der Wasserbetriebe bis April 2025 vvv
 #: XXX Bauphase 1 - westlicher Schmitzweg: 07.02.2022 - 31.10.2022 (Stand 2022-10-22: wird wohl verlängert werden) (mittlerweise bis 30.11.2022) (fertiggestellt)
 #: XXX Bauphase 2 - Brodersenstraße:       25.08.2022 - 26.10.2023 (Stand 2022-10-22: teilweise Bauarbeiten) (Stand 2023-03-18: Bauarbeiten, Fahrbahn gesperrt) (Stand 2024-04-17: halbe Straße fertig)
@@ -3663,7 +3664,7 @@ Chemnitzer Str.: Verlegung der Straße, Radwege	?::projected  22436,11054 22483,1
 # REMOVED (fertig) --- Schmitzweg: Neubau, danach bessere Qualität?	?::inwork 5885,19920 5803,19874 5742,19840
 # REMOVED (hier fertig) --- Schmitzweg: Neubau, danach bessere Qualität?	?::projected 5742,19840 5731,19824 5823,19544
 Heiligental: Neubau, danach vermutlich bessere Qualität, evtl. auch verkehrsberuhigt	?::inwork 5929,19574 5897,19668 5858,19761 5803,19874
-Brodersenstr.: Neubau, danach vermutlich durchgängig Verbundsteinpflaster	?::inwork 6033,19611 5885,19920
+# REMOVED (fertig laut Pressemeldung) --- Brodersenstr.: Neubau, danach vermutlich durchgängig Verbundsteinpflaster	?::inwork 6033,19611 5885,19920
 # REMOVED (hier außerhalb des Baubereichs) --- Brodersenstr.: Neubau, danach vermutlich durchgängig Verbundsteinpflaster	?::inwork 5885,19920 5804,20047
 #: next_check ^^^
 #: check_frequency ^^^
@@ -4595,7 +4596,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 # REMOVED (URL wurde ersetzt) --- #: by: https://www.luisenstadt-mitte.de/projekte/ohmstr.html (Baubeginn voraussichtlich 2023)
 #: by: https://www.luisenstadt-mitte.de/projekte/ohmstrasse-0 (Baubeginn 2023, verkehrsberuhigte Mischverkehrsfläche)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-der-ohmstrasse-876903.php (Neugestaltung bis 2023)
-#: last_checked: 2024-08-09 (mapillary)
+#: last_checked: 2024-08-27
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 360d
 # REMOVED --- #: next_check: 2023-01-01
@@ -5374,7 +5375,7 @@ Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2024-08-20
+#: last_checked: 2024-08-27
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
@@ -6734,7 +6735,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5357,7391 5364,7330 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2024-08-19
+#: last_checked: 2024-08-27
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -7716,7 +7717,7 @@ Wendenschloßstr./Dregerhoffstr.: Fußgängerampel geplant	?::projected 22870,2695 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2024-08-20
+#: last_checked: 2024-08-27
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradastraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8217,7 +8218,7 @@ Olbersstr.: Radspuren geplant	?::projected 3038,13612 3211,13631 3280,13625 3365
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,791686#msg-791686 (Radspuren sollen die Busspuren ersetzen)
 #: source_id: viz2021:13.42056,52.525969,19.03.2024,07:00 (bis 24.04.2024) (inaktiv)
 #: source_id: viz2021:13.420638,52.525829,22.07.2024,07:00 (Leitungsbau, bis 30.09.2024)
-#: last_checked: 2024-08-13
+#: last_checked: 2024-08-27
 #: next_check: 2024-12-31
 Otto-Braun-Str.: Radspuren statt der Busspuren	?::inwork 11451,13301 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
@@ -8331,7 +8332,7 @@ Königsberger Str.: Verbreiterung und Erneuerung der Radwege	? 5256,2379 5229,239
 Radickestr.: Planung einer Fahrradstraße	? 20499,3572 20592,3633 20683,3693 20776,3753 20862,3824
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6897
-#: last_checked: 2024-07-03 (BVV)
+#: last_checked: 2024-08-24 (mapillary)
 #: check_frequency: 120d
 Mittelstr. (Rosenthal): Umbenennungsabsicht, neuer Name Maud-von-Ossietzky-Straße	? 9911,20664 10114,20732
 # 
@@ -8367,6 +8368,38 @@ Hauptstr. (Rosenthal): Modalsperre entsteht	? 8389,21468 8419,21446
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf
 #: last_checked: 2024-08-20
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
+# 
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2022/pressemitteilung.1275314.php (Baudurchführung soll bis Ende 2027)
+#: by: https://berliner-abendblatt.de/2022/12/15/neuer-jahnsportpark-architekturwettbewerb-entschieden/
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2023/pressemitteilung.1290773.php
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2023/pressemitteilung.1296977.php
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/stadionneubau-ab-2025-geplant_a376340 (Vorarbeiten im II. Quartal 2023, eigentlicher Beginn der Bauarbeiten ab 2025)
+#: by: https://www.tagesspiegel.de/berlin/berliner-senat-macht-tempo-neues-jahn-stadion-in-prenzlauer-berg-soll-schon-2027-stehen-11073484.html
+#: by[nocache]: https://archive.is/T1S4Q (Abbruch des alten Stadions voraussichtlich ab II. Quartal 2024)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6782 (Erwähnung)
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2024/pressemitteilung.1428988.php (Rückbau des Stadions ab III. Quartal 2024)
+#: by: https://www.deutsches-architekturforum.de/thread/15071-umbau-sanierung-jahnsportpark-und-neubau-jahnstadion/?postID=760969#post760969 (Abriss des Stadions ab Frühsommer 2024)
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1447849.php (Rückbau des Stadions ab III. Quartal 2024)
+#: by: https://jahnsportpark-fuer-alle.berlin.de/
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/altes-stadion-weicht-einem-neubau_a418179
+#: by: https://berliner-abendblatt.de/berlin-news/gruene-stellen-abriss-des-jahnstadions-infrage-id259565
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_36_2611_2710_online.pdf (Bebauungsplanentwurf)
+#: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1478229.php
+#: by: https://www.berlin.de/sen/stadtentwicklung/_assets/planung/bebauungsplanverfahren/bebauungsplanverfahren-der-senatsverwaltung-fuer-stadtentwicklung-bauen-und-wohnen/3-87/planzeichnung_b-plan_3-87_blatt1.pdf (bleibt die Anbindung Cantianstr. bestehen?)
+#: by: https://www.berlin.de/sen/stadtentwicklung/_assets/planung/bebauungsplanverfahren/bebauungsplanverfahren-der-senatsverwaltung-fuer-stadtentwicklung-bauen-und-wohnen/3-87/planzeichnung_b-plan_3-87_blatt2.pdf
+#: alias: Friedrich-Ludwig-Jahn-Sportpark
+#: note: Bebauungsplan 3-87
+#: XXX Wann starten die Bauarbeiten? vvv
+#: last_checked: 2024-08-13 vvv
+# REMOVED --- #: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
+# REMOVED --- #: next_check: 2024-10-01 vvv
+Jahnsportpark: wird es während der Bauarbeiten Einschränkungen geben? Werden sich die Wegbeziehungen ändern?	? 10598,15150 10583,15208 10562,15236 10520,15353 10512,15406 10456,15561
+Jahnsportpark: wird es während der Bauarbeiten Einschränkungen geben? Werden sich die Wegbeziehungen ändern?	? 10520,15353 10781,15438 10804,15447
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 # 
 #: section ^^^
 #: ignore ^^^
@@ -9983,7 +10016,7 @@ S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzb
 #: by: http://www.baustellen-doku.info/berlin_kremmener_bahn/zweiter_zugang_alt-reinickendorf/20230831/ (Herbst 2024)
 #: XXX Bauende laut Baustellenschild: 15.06.2023, mittlerweile Herbst 2024
 #: XXX exits-orig nach den Bauarbeiten anpassen
-#: last_checked: 2024-07-13
+#: last_checked: 2024-08-24 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2024-11-01
 S-Bhf. Alt-Reinickendorf: zweiter Zugang zum Bahnhof in Bau	?::inwork 6564,19064 6566,19107
@@ -10259,7 +10292,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 2
-#: last_checked: 2024-07-03 (mapillary)
+#: last_checked: 2024-08-27
 #: check_frequency: 120d
 # REMOVED (hier realisiert, ohne Anbindung an Paula-Thiede-Ufer oder Michaelkirchstr.) --- Uferweg geplant (erst einmal als Provisorium)	?::projected 11957,11603 11821,11733
 Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
@@ -12565,6 +12598,7 @@ Am Rathaus (Hohen Neuendorf): Qualität?	? 1717,29541 1730,29579 1733,29664
 # 
 #: XXX Zumindest die Ausschilderung für den Mauerweg wurde schon vorbereitet; bei osm wurde die Radroutenführung bereits angepasst, für RBL möglicherweise premature
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/mauerweg-vorzeitig-geoeffnet_a421699
+#: by: https://www.youtube.com/watch?v=OJ8OaQ3iwHg (hier ist zumindest ein angepasstes Schild auf Ostseite zu sehen)
 #: last_checked: 2024-07-27 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-07-25

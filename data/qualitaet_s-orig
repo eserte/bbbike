@@ -1728,7 +1728,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/anwohner-gegen-durchgangsverkehr_a409202
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblöcken, u.a. Bötzow-Kiez)
 #: osm_watch: way id="4615063" version="36"
-#: last_checked: 2024-08-03
+#: last_checked: 2024-08-27
 #: check_frequency: 180d
 #: next_check: 2027-09-30
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -9372,17 +9372,17 @@ Ferdinand-Buisson-Str.: Asphalt	Q0 12332,20962 12458,21013 12562,21055 12619,210
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-2.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-3.pdf
 #: osm_watch: way id="23121641" version="15"
-#: last_checked: 2024-06-01 (mapillary)
+#: last_checked: 2024-08-24 (mapillary)
 #: check_frequency: 270d
-Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229
+Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229 12885,21282
 # 
-Ferdinand-Buisson-Str.: unbefestigte Straße	Q2 12837,21229 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
+Ferdinand-Buisson-Str.: unbefestigte Straße	Q2 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
 (Ferdinand-Buisson-Str. - Ludwig-Quidde-Str.): asphaltiert	Q0- 12619,21079 12611,21138
 Bananenapfelweg: unbefestigte Straße	Q2 12994,21719 13008,21783 13050,21994
 # 
 #: XXX wird hier die Fahrbahnoberfläche verbessert werden?
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036258275901/258275901/00180981/81-Anlagen/01/PraesentationEinwohnerversammlung07_01_2019.pdf
-#: last_checked: 2024-06-01 (mapillary)
+#: last_checked: 2024-08-24 (mapillary)
 #: check_frequency: 720d
 Straße 55: schlechtes Kopfsteinpflaster	Q3 12837,21229 12696,21342
 # 
@@ -18712,7 +18712,9 @@ Buriger Weg: Beton	Q0- 30132,4281 30192,4487 30254,4692
 (Spreeuferweg): Parkweg	Q2 4478,12537 4441,12559 4321,12566
 # 
 #: by: Ulrich Scheel: vvv
-Uhlandstr. (Rosenthal, Wilhelmsruh): extrem schlechtes Kopfsteinpflaster	Q3 7468,20009 7506,20170 7533,20275 7577,20450
+Uhlandstr. (Rosenthal, Wilhelmsruh): extrem schlechtes Kopfsteinpflaster	Q3 7468,20009 7506,20170 7533,20275
+#: corrected_by: mapillary (extrem schlechtes Kopfsteinpflaster, Q3 -> ..., August 2024 neu gemacht)
+Uhlandstr. (Rosenthal, Wilhelmsruh): Asphalt	Q0 7533,20275 7577,20450
 #: confirmed_by: srt
 Schillerstr. (Wilhelmsruh, Rosenthal): extrem schlechtes Kopfsteinpflaster	Q3 7137,20270 7231,20266 7533,20275 7640,20304 7735,20262 7832,20219
 #: by: ^^^
@@ -33293,5 +33295,6 @@ Einmündungsbereich asphaltiert	Q0 8944,6293
 Einmündungsbereich mit Kopfsteinpflaster	Q2 3539,11784
 Einmündungsbereich mit Kopfsteinpflaster	Q2 8735,15295
 Platzbereich asphaltiert	Q0 10046,15844
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 7533,20275
 #: ignore ^^^
 #: section ^^^

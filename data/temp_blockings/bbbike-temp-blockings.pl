@@ -28671,7 +28671,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-08-02
+#: last_checked: 2024-08-27
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -41962,7 +41962,7 @@ EOF
        text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 27.08.2024, evtl. noch länger',
        type  => 'gesperrt', # handicap
        data  => <<EOF,
-#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024) (bis 27.08.2024)
+#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024) (bis 27.08.2024) (inaktiv)
 #: note: bei rbb nur bis 30.04.2024, mittlerweile auch bis 21.05.2024
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
 Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
@@ -43014,15 +43014,24 @@ EOF
 	q4::inwork 14641,10552 14608,10409
 EOF
      },
-     { from  => 1713696856, # 2024-04-21 12:54
-       until => 1718037862, # undef, # 1717192800, # 2024-06-01 00:00
-       text  => 'Krautstr.: Bauarbeiten, Fahrbahn zwischen Lange Str. und Holzmarktstr. gesperrt, voraussichtlich bis Ende Mai 2024, evtl. noch länger',
+     { from  => 1724777253, # 1713696856, # 2024-04-21 12:54
+       until => $isodate2epoch->("2026-03-31 18:00:00"), # 1718037862, # undef, # 1717192800, # 2024-06-01 00:00
+#       text  => 'Krautstr.: Bauarbeiten, Fahrbahn zwischen Lange Str. und Holzmarktstr. gesperrt, voraussichtlich bis Ende Mai 2024, evtl. noch länger',
+       text  => 'Krautstr.: Hochbauarbeiten, Fahrbahn zwischen Lange Str. und Holzmarktstr. gesperrt, mindestens bis Ende August 2024, evtl. noch länger', # voraussichtlich bis Frühjahr 2026
        type  => 'handicap',
        data  => <<EOF,
-#: note: Außerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
-#: by: https://www.deutsches-architekturforum.de/thread/14527-holzmarktstra%C3%9Fe-51-krautstra%C3%9Fe-30-friedrichshain-in-bau/?postID=759966#post759966
-# REMOVED --- #: last_checked: 2024-05-31 --- #: check_frequency: 7d
-# REMOVED --- #: next_check: 2024-05-31
+# REMOVED --- #: note: Außerhalb der Arbeitszeiten kann die Fahrbahn offen sein, gesehen am 2024-04-21 (So) mittags
+#: by: https://www.deutsches-architekturforum.de/thread/14527-holzmarktstra%C3%9Fe-51-krautstra%C3%9Fe-30-friedrichshain-in-bau/?postID=759966#post759966 (ehemaliger Hochbau)
+#: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=753016#post753016 (LXK Campus)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-6#post-23532
+#: by: https://www.lxk-berlin.de/ (2026 bezugsfertig)
+#: source_id: viz2021:13.42701,52.51181,27.08.2024,06:00 (bis 31.08.2024)
+#: note: Halteverbotsschilder bis 31.03.2026
+#: also_indoor: traffic (G,B,T)
+#: last_checked: 2024-08-27
+#: check_frequency: 30d
+#: next_check: 2024-08-31
+# REMOVED --- #: next_check: 2026-03-31
 	q4::inwork 11966,11832 11993,11978
 EOF
      },
@@ -43465,15 +43474,13 @@ EOF
 EOF
      },
      { from  => 1719871200, # 2024-07-02 00:00
-       until => 1725141599, # 2024-08-31 23:59
+       until => 1724777733, # (keine Sperrung gesehen) --- 1725141599, # 2024-08-31 23:59
        text  => 'Uferpromenade zwischen Weidendammer Brücke und Ebertsbrücke: Bauarbeiten, Sperrung, voraussichtlich vom 3. Juli 2024 bis Ende August 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1452894.php
 #: by: https://www.berliner-woche.de/mitte/c-bauen/uferpromenade-gesperrt_a417283
-#: XXX Wirken sich die Bauarbeiten auf die Wegbeschaffenheit aus? Stimmt q2 eigentlich noch?
-#: last_checked: 2024-08-13
-#: next_check: 2024-08-31
+# REMOVED --- #: XXX Wirken sich die Bauarbeiten auf die Wegbeschaffenheit aus? Stimmt q2 eigentlich noch? --- #: last_checked: 2024-08-13 --- #: next_check: 2024-08-31
 	2::inwork 9538,12993 9508,12991 9279,12953
 EOF
      },
@@ -43703,7 +43710,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-08-20 vvv
+#: last_checked: 2024-08-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44349,11 +44356,12 @@ EOF
 EOF
      },
      { from  => 1724302800, # 2024-08-22 07:00
-       until => 1726498800, # 2024-09-16 17:00
+       until => 1724782229, # (keine Sperrung gesehen) --- 1726498800, # 2024-09-16 17:00
        text  => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.08.2024 07:00 bis 16.09.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024)
+#: also_indoor: traffic (G,W)
 	q4::inwork 13530,13014 13470,12990
 EOF
      },
@@ -44391,6 +44399,15 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.45222,52.52515,26.08.2024,07:00 (bis 21.10.2024)
 	q4::inwork 13644,13332 13548,13290
+EOF
+     },
+     { from  => 1724734800, # 2024-08-27 07:00
+       until => 1733500800, # 2024-12-06 17:00
+       text  => 'Georg-Knorr-Str. : Bauarbeiten in Höhe Georg-Knorr-Platz, Sperrung, auch der Radverkehr ist betroffen, vom 28.08.2024 07:00 bis 06.12.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.537527,52.540572,28.08.2024,07:00 (bis 06.12.2024)
+	q4::inwork 19414,15132 19295,15447
 EOF
      },
     );
