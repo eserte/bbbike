@@ -18,6 +18,7 @@
 #: next_check: 2025-09-30
 Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
 # 
+#: osm_watch: note 4340404 1
 #: last_checked: 2024-08-27
 Straﬂenbahnwendeschleife Virchowstr.: Bauarbeiten, Sperrungen mˆglich	q4::inwork 12925,13373 13081,13457 13151,13367
 # 
@@ -78,7 +79,7 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-08-21
+#: last_checked: 2024-08-28
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -382,7 +383,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die H‰lfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-08-21
+#: last_checked: 2024-08-28 (webcam)
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Bˆﬂ-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -590,15 +591,17 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 ### Friedrichsfelde ###
 # 
 #: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel l‰nger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29
-#: last_checked: 2024-08-21 vvv
-#: next_check: 2024-08-29 vvv
+#: last_checked: 2024-08-28 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2024-08-29 vvv
 #: also_indoor: traffic (G,B,T)
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
 #: osm_watch[closed]: note 4145495 1
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9822 17738,9922
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED (laut mapillary weitgehend beendet) --- #: next_check_id: WALLENSTEIN-2020 --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-11-29 --- #: check_frequency: 10d --- # REMOVED --- #: next_check: 2020-11-16 --- # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
@@ -686,7 +689,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verl‰ngert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 9
-#: last_checked: 2024-07-30 (mapillary)
+#: last_checked: 2024-08-28 (webcam)
 #: check_frequency: 60d
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 # 
@@ -815,7 +818,7 @@ B¸rgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
 #: osm_watch: way id="640465875" version="13"
-#: last_checked: 2024-07-24
+#: last_checked: 2024-08-28
 #: check_frequency: 120d
 #: next_check: 2025-04-30
 Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -832,7 +835,7 @@ Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: note: Die Absperrung beginnt 50m vor dem Einm¸ndungsbereich.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-08-17 vvv
+#: last_checked: 2024-08-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
@@ -888,7 +891,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-08-21
+#: last_checked: 2024-08-28
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -932,29 +935,6 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	
 # REMOVED (beendet) --- #: last_checked: 2013-10-29 --- #: next_check: 2013-12-15 (laut Schild bis Dezember 2013) --- #: priority: #A --- Kriemhildstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 17337,12428 17320,12308
 # 
 ### Alt-Hohenschˆnhausen ###
-# 
-#: XXX Bebauungsplan 11-94 VE (Ferdinands Garden)
-#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.743836.php
-#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1194ve.pdf
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8385 (Festsetzung)
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Straﬂenneubau, ohne Termin)
-#: by: http://www.deal-magazin.com/news/3/107874/Lakeward-startet-Neubauprojekt-Ferdinands-Garden-in-Berlin (ist das erw‰hnte Neubaugebiet hier?)
-#: by: https://nitter.cz/VIZ_Berlin/status/1610159019406016513#m (evtl. im Zusammenhang mit den Bauarbeiten?)
-#: by: https://nitter.net/pic/orig/media%2FFldqbjBXgAEBF0s.png
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ferdinands-garden.363/page-2#post-20646
-#: by: https://www.be.de/project/ferdinand-schulze-strasse/
-#: by: https://www.ferdinands-garden.de/
-#: by: https://www.smv.com/de/projekte-berlin/ferdinands-garden
-#: source_id: viz2021:13.511463,52.539021,30.10.2023,09:00 (Straﬂenbauarbeiten bis 27.11.2023) (inaktiv)
-#: source_id: viz2021:13.511442,52.539,30.10.2023,09:00 (Straﬂenbauarbeiten bis 21.12.2023) (inaktiv)
-#: XXX auﬂerdem: bleibt der nach S¸den verlaufende Abzweig der Plauener Str. erhalten?
-# REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
-#: osm_watch: way id="914159830" version="8"
-#: osm_watch: way id="435611568" version="11"
-#: last_checked: 2024-08-21
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2023-12-21
-Plauener Str.: Fahrbahn noch gesperrt, Gehwege frei	q3-::inwork 17531,14923 17610,14935 17638,14945
 # 
 #: note: Halteverbotsschilder gelten bis zum 30.04.2026
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
@@ -1144,6 +1124,7 @@ Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwor
 #: also_indoor: traffic (G,B,W)
 #: note: Endedatum laut Halteverbotsschilder; L‰nge ca. 50-60m
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/hosemannstra%C3%9Fe-ecke-lehderstra%C3%9Fe-neubauten.1441/#post-23500
+#: by: https://www.frankschiffer.com/projekte/tor-zur-lehderstrasse/ (Fertigstellung 2024)
 #: osm_watch: way id="1170355847" version="1"
 #: osm_watch: way id="1170355851" version="1"
 #: last_checked: 2024-07-28 (architektur-urbanistik)
@@ -3521,7 +3502,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2024-07-06 vvv
+#: last_checked: 2024-08-28 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -3882,7 +3863,7 @@ Schnellerstr.: einige Fuﬂg‰nger	q2 17728,5756 17807,5730
 an den Gew‰chsh‰usern: kurvig	q2 17659,12823 17638,12813 17637,12785
 #: note: unklar: am ˆstlichen Ende ein Fuﬂg‰nger-Schild ohne Zusatzzeichen, am westlichen Ende keine Ausschilderung (deshalb: q1 -> q2)
 Hampstedtstr.: einige Fuﬂg‰nger	q2 749,2616 816,2658
-(Oderstr. - Kirchhofweg): einige Fuﬂg‰nger	q1 11565,7402 11602,7375 11656,7375 11677,7351 11687,7284
+(Oderstr. - Kirchhofweg): einige Fuﬂg‰nger	q2 11565,7402 11602,7375 11656,7375 11677,7351 11687,7284
 #: note: gemeinsamer Rad- und Gehweg
 (Greifswalder Str. - Ella-Kay-Str.): einige Fuﬂg‰nger	q1 12371,14615 12224,14707
 #: note: hier etwas enger
@@ -4087,7 +4068,7 @@ Siegfried-Hirschmann-Park: einige Fuﬂg‰nger	q2 14745,11487 14684,11456
 Tuchollaplatz: Bordstein	q3; 15626,10915 15616,10920
 Heilbronner Str.: einige Fuﬂg‰nger	q1- 6140,9338 6144,9295 6132,9246
 # REMOVED (mit der neuen Verkehrsf¸hrung kann man via Fuﬂg‰ngerampel und Anrampung den Bordstein umfahren) --- #: XXX_prog BS, ansonsten entfernen --- Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19200,14963 19244,14980 --- #: XXX_prog BS, ansonsten entfernen --- Frank-Schweitzer-Str. - Landsberger Allee: Bordstein	q4 19244,14980 19205,14980
-(Weg im Anita-Berber-Park): einige Fuﬂg‰nger	q1 11677,7351 11751,7366 12158,7449
+(Weg im Anita-Berber-Park): einige Fuﬂg‰nger	q2 11677,7351 11751,7366 12158,7449
 Henriettenplatz: Fuﬂg‰nger, stellenweise eng	q3 2770,9945 2768,9980 2784,9992 2770,10024
 (Ottomar-Geschke-Str., Gehweg): Fuﬂg‰nger	q3 21073,4165 21148,4220
 (Zinsgutstr. - Ottomar-Geschke-Str.): einige Fuﬂg‰nger, teilweise schmal	q2 20940,3805 20917,3827 20958,3875 21016,3923 21087,3995 21073,4165

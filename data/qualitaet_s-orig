@@ -301,7 +301,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-08-03
+#: last_checked: 2024-08-28
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -498,7 +498,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: last_checked: 2024-08-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
-#: osm_watch: way id="169459736" version="14"
+#: osm_watch: way id="169459736" version="15"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 #: osm_watch: way id="25278674" version="23"
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -3872,6 +3872,7 @@ Grüne Trift (Köpenick) [Wohngebiet]: Beton	Q1 23036,3929 23088,4001 23257,3884 2
 #: next_check_id: GRUENETRIFTAMWALDE-2024
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1417685.php (Baumfällungen bis 29. Februar 2024, später Erneuerung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1453468.php (siehe auch temp blockings)
+#: osm_watch: note 4327758 1
 #: last_checked: 2024-07-10 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-08-03 vvv
@@ -17106,19 +17107,21 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11464 (Anfrage)
 #: by: https://alles-mahlsdorf.de/sanierung-der-lemkestrasse-soll-im-fruehjahr-weitergehen/
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1461970.php (Bauarbeiten ab 15.7.2024 zwischen Lenbachstr. und Hausnr. 44; anscheinend bleibt die halbe Fahrbahn frei; kein Endedatum)
-#: by: https://alles-mahlsdorf.de/lemkestrasse-zweiter-bauabschnitt-beginnt-mitte-juli/
+#: by: https://alles-mahlsdorf.de/lemkestrasse-zweiter-bauabschnitt-beginnt-mitte-juli/ (ab 11.07.2024 für zwei Jahre)
+#: by: https://www.die-hellersdorfer.berlin/2024/07/02/mitte-juli-geht-die-sanierung-der-lemkestra%C3%9Fe-weiter/
 #: source_id: bvg2024:395#HIM_FREETEXT_232017
+#: XXX auf https://www.instagram.com/marzahn_hellersdorf_live/p/C_D3h_Xis-R/?img_index=1 ist ein Zeichen 250 zu sehen, ohne Ausnahmen -> siehe temp blockings-Eintrag
 #: also_indoor: search Lemkestraße vvv
-#: last_checked: 2024-07-02 (Pressemitteilung) vvv
-#: check_frequency: 45d vvv
-# REMOVED --- #: next_check: 2021-07-30
+#: check_frequency: 60d vvv
+#: next_check: 2026-07-30 vvv
 #: osm_watch: way id="593503609" version="9"
+#: last_checked: 2024-08-24 (marzahn_hellersdorf_live @ insta)
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553
 #: osm_watch: way id="24204822" version="29"
 #: last_checked: 2024-08-14
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
+#: next_check ^^^
 #: check_frequency ^^^
-#: last_checked ^^^
 #: also_indoor ^^^
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht)
 Lemkestr.: Asphalt	Q0  25363,12553 25191,12343
