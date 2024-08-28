@@ -14480,7 +14480,7 @@ sub show_info {
 			     )->pack(-fill => "x");
 	    $info_text->tagConfigure(
 		'tag', 
-		-borderwidth => 1,
+		-borderwidth => 0,
 		-relief => 'solid',
 		-font => $font{'small'},
 	    );
@@ -15195,7 +15195,7 @@ sub show_info {
 	}
 
 	{
-	    my @tags_for_list = grep { $seen_tags{$_} } qw(traffic pubtrans bicycle aerial streetview); # further tags would cause line overflow: osmedit
+	    my @tags_for_list = grep { $seen_tags{$_} } qw(traffic pubtrans bicycle aerial streetview osm osmedit construction met); # with tag "osm" the line overflows, however, maybe it's not that ugly
 	    if (@tags_for_list) {
 		$info_text->markSet('insert', 'taglist');
 		my $tagcount = 0;
