@@ -39,7 +39,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # REMOVED (-> permanent) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: last_checked: 2024-07-17 --- #: next_check: 2024-08-17 --- Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17754,5460
 # 
 #: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325
-#: last_checked: 2024-08-14 (mapillary)
+#: last_checked: 2024-08-27
 Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -1298,6 +1298,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F0 5141,11816
 	X 14211,11552
 	X 15863,11992
+#: note: nachts ausgeschaltet, gesehen 2024-08-29 (Mi) 22:54
 	X 12551,8612
 	X 12478,8829
 	X 10377,6417
@@ -1435,7 +1436,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 458,3697
 	X -267,3657
 	X 14988,11130
-#: note: möglicherweise an Nicht-Verkaufstagen ausgeschaltet (gesehen 2021-03-08 (Feiertag), 2021-06-06 (Sonntag))
+#: note: möglicherweise an Nicht-Verkaufstagen ausgeschaltet, gesehen: 2021-03-08 (Feiertag), 2021-06-06 (Sonntag)
+#: note: möglicherweise nachts ausgeschaltet, gesehen: 2024-08-28 (Mittwoch) 22:53
 	X 12349,8464
 	X 17427,10259
 #: note: Kontaktschleifen quer zur Sewanstr.

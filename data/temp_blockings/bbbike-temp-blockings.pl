@@ -40040,14 +40040,19 @@ EOF
 	q4::inwork 3144,11659 3064,11657
 EOF
      },
-     { from  => undef, # 
-       until => 1688759535, # undef, # XXX
-       text  => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum, Ende der Sperrung unbekannt',
+     { from  => $isodate2epoch->("2024-08-29 00:00:00"), # undef, # 
+       until => undef, # 1688759535, # undef, # XXX
+       text  => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 29.8.2024 für voraussichtlich eine Woche',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ROTESRATHAUS-2023
-#: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023)
-# REMOVED --- #: also_indoor: webcam https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg --- #: last_checked: 2023-07-05 (webcam) --- #: check_frequency: 7d --- #: next_check: 2023-07-06
+#: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023) (am 3.9.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1828834678851199380
+#: by: https://pbs.twimg.com/media/GWFGT27XQAAwuc3?format=jpg&name=4096x4096
+#: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
+#: last_checked: 2024-08-29 (webcam)
+#: check_frequency: 2d
+#: next_check: 2024-09-04
 	2::temp 10696,12601 10599,12526
 EOF
      },

@@ -6701,7 +6701,23 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
          'until' => 1735686000
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: ROTESRATHAUS-2023
+#: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023) (am 3.9.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1828834678851199380
+#: by: https://pbs.twimg.com/media/GWFGT27XQAAwuc3?format=jpg&name=4096x4096
+#: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
+#: last_checked: 2024-08-29 (webcam)
+#: check_frequency: 2d
+#: next_check: 2024-09-04
+	2::temp 10696,12601 10599,12526
+',
+         'from' => 1724882400,
+         'id' => 3836,
+         'text' => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 29.8.2024 für voraussichtlich eine Woche',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
