@@ -1864,23 +1864,23 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        {
          'data' => '#: source_id: IM_013591 (inaktiv)
-#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024) (bis 30.08.2024) (bis 14.09.2024)
+#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024) (bis 30.08.2024) (bis 14.09.2024) (bis 02.10.2024)
 #: source_id: viz2021:13.360599,52.446803,11.07.2024,14:26 (Einschränkung in der anderen Richtung, bis 01.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024) (bis 11.07.2024)
 # REMOVED (ist etwas anderes) --- #: source_id: bvg2024:282#HIM_FREETEXT_230965 (bis 31.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1470949.php
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-08-06 (traffic)
+#: last_checked: 2024-08-27 (mapillary)
 #: check_frequency: 30d
-#: next_check: 2024-09-14
+#: next_check: 2024-10-02
 	q4::inwork; 7532,4605 7544,4587 7561,4560 7573,4540 7597,4499
 ',
          'from' => 1720470111,
          'id' => 1748,
-         'text' => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 14.09.2024',
+         'text' => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 02.10.2024',
          'type' => 'handicap',
-         'until' => 1726326000
+         'until' => 1727881200
        },
        undef,
        undef,
@@ -4568,7 +4568,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (re-G,ex-H,B,T,W)
-#: last_checked: 2024-08-12 (traffic)
+#: last_checked: 2024-08-27 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2024-11-30
 # REMOVED --- #: next_check: 2024-01-01
@@ -6707,16 +6707,16 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1828834678851199380
 #: by: https://pbs.twimg.com/media/GWFGT27XQAAwuc3?format=jpg&name=4096x4096
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: last_checked: 2024-08-29 (webcam)
-#: check_frequency: 2d
-#: next_check: 2024-09-04
+#: last_checked: 2024-08-29
+#: check_frequency: 3d
+#: next_check: 2024-09-06
 	2::temp 10696,12601 10599,12526
 ',
          'from' => 1724882400,
          'id' => 3836,
-         'text' => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 29.8.2024 für voraussichtlich eine Woche',
+         'text' => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 29.8.2024 für voraussichtlich 6.9.2024',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1725659999
        },
        undef,
        undef,
@@ -7177,7 +7177,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-08-20 vvv
+#: last_checked: 2024-08-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7301,16 +7301,17 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024)
+         'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024)
+#: source_id: viz2021:13.42956,52.533,29.08.2024,14:51 (bis 02.10.2024)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: also_indoor: traffic (G,B,W)
 	q3::inwork 12228,14083 12077,14186
 ',
          'from' => 1701237600,
          'id' => 3982,
-         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 30.08.2024 17:00',
+         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 02.10.2024 17:00',
          'type' => 'handicap',
-         'until' => 1725030000
+         'until' => 1727881200
        },
        undef,
        undef,
@@ -7827,7 +7828,22 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1726848000
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
+#: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
+#: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
+#: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
+#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
+#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
+	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
+',
+         'from' => 1724882400,
+         'id' => 4074,
+         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 30.08.2024 20:00 bis 01.09.2024 22:00',
+         'type' => 'handicap',
+         'until' => 1725220800
+       },
        undef,
        undef,
        {
@@ -7976,7 +7992,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-08-27 vvv
+#: last_checked: 2024-08-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8008,14 +8024,15 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
        },
        {
          'data' => '#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024) (bis 29.11.2024)
+#: note: auf der BA-Seite wird diese Baumaßnahme nicht verlängert
 	q4::inwork; 2625,2850 2737,2866
 # REMOVED (scheint kürzer zu sein) ---	q4::inwork; 2737,2866 3019,2858
 ',
          'from' => 1719291600,
          'id' => 4098,
-         'text' => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 29.11.2024 17:00',
+         'text' => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
          'type' => 'handicap',
-         'until' => 1732896000
+         'until' => 1725116400
        },
        {
          'data' => '#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024)
@@ -8023,6 +8040,8 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/weitraeumige-umleitungen-notwendig_a419753
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9186 (Anfrage)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480269.php (Verlängerung bis Ende November 2024)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/umleitungsplaene-im-rahmen-der-baumassnahme-finckensteinallee-der-berliner-wasserbetriebe-umleitung-radverkehr_jpg.jpg
 	q4::inwork 2290,2864 2570,2844 2625,2850
 ',
          'from' => 1719291600,
@@ -8228,14 +8247,14 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/221-F/24/148 (bis 06.09.2024)
+         'data' => '#: source_id: LS/221-F/24/148 (bis 06.09.2024) (bis 02.10.2024)
 	2::inwork 25686,17365 25764,17255 25889,17093 25923,17002 25958,16901
 ',
          'from' => 1722146400,
          'id' => 4123,
-         'text' => 'Hönow, Dorfstr.: Bauarbeiten, Fahrbahnerneuerung, evtl sind auch Radfahrer von der Sperrung betroffen, 29.07.2024 08:00 Uhr bis 06.09.2024 16:00 Uhr',
+         'text' => 'Hönow, Dorfstr.: Bauarbeiten, Fahrbahnerneuerung, evtl sind auch Radfahrer von der Sperrung betroffen, 29.07.2024 08:00 Uhr bis 02.10.2024 16:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1725631200
+         'until' => 1727877600
        },
        {
          'data' => '#: source_id: LS/221-E/24/100 (bis 31.08.2024) (inaktiv)
@@ -8408,7 +8427,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 ',
          'from' => 1723932000,
          'id' => 4140,
-         'text' => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Wegs, ab 19.08.2024 bis Ende November 2024',
+         'text' => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Weges, ab 19.08.2024 bis Ende November 2024',
          'type' => 'gesperrt',
          'until' => 1733007599
        },
@@ -8519,20 +8538,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.388702,52.489836,26.08.2024,06:00 (auch Radverkehr, bis 29.08.2024)
-#: source_id: viz2021:13.38727,52.49006,26.08.2024,06:00 (bis 29.08.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1827912099877544007
-#: by: https://pbs.twimg.com/media/GVrGzy4WwAA0TF7?format=jpg&name=large
-#: note: q4+, weil nicht der gesamte Abschnitt betroffen ist (Am Tempelhofer Berg - Zebrastreifen)
-	q4+::inwork 9489,9309 9309,9347
-',
-         'from' => 1724558400,
-         'id' => 4150,
-         'text' => 'Bergmannstr.: zwischen Am Tempelhofer Berg und Nostitzstr. Kranarbeiten, Sperrung der Fahrbahn, vom 26.08.2024 06:00 bis 29.08.2024 12:00',
-         'type' => 'handicap',
-         'until' => 1724925600
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.45222,52.52515,26.08.2024,07:00 (bis 21.10.2024)
 	q4::inwork 13644,13332 13548,13290
@@ -8556,6 +8562,45 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'text' => 'Georg-Knorr-Str. : Bauarbeiten in Höhe Georg-Knorr-Platz, Sperrung der Fahrbahn, auch der Radverkehr ist betroffen, vom 28.08.2024 07:00 bis 06.12.2024 17:00',
          'type' => 'handicap',
          'until' => 1733500800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480271.php
+#: XXX Dabei werden die Flächen für Rad- und Fußverkehr getrennt. Für den Radverkehr entsteht ein 3m breiter Weg (für beide Richtungen).
+#: add_fragezeichen: Ist der Weg noch immer gesperrt?
+#: next_check: 2024-12-01
+	2::inwork 6007,4340 6147,4329 6210,4325
+',
+         'from' => 1725141600,
+         'id' => 4153,
+         'text' => 'Am Eichgarten: Baurbeiten zwischen Stindestr. und Siemensstr., Sperrung des Weges, vom 2.9.2024 bis Anfang Dezember 2024',
+         'type' => 'gesperrt',
+         'until' => 1734303599
+       },
+       {
+         'data' => '#: source_id: 246101061 (bis 11.09.2024)
+	2::inwork 37257,-12796 37241,-12587 37189,-12000
+',
+         'dont_check_date' => 1,
+         'from' => 1725206400,
+         'id' => 4154,
+         'text' => 'Bahnübergang Friedersdorf: Sperrung, vom 02.09.2024 bis 04.09.2024 und vom 09.09.2024 bis 11.09.2024',
+         'type' => 'gesperrt',
+         'until' => 1726084800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.376381,52.443079,01.08.2024,08:00 (hier nur Kfz-Verkehr, bis 01.11.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1818885622083256587
+#: note: bei Mapillary nicht zu erkennen, ob der Gehweg für Radfahrer frei ist
+#: last_checked: 2024-08-27 (mapillary)
+#: check_frequency: 30d
+#: next_check: 2024-11-01
+	q4::inwork; 8780,4054 8615,4151
+',
+         'from' => 1722405600,
+         'id' => 4155,
+         'text' => 'Ringstr.: Bauarbeiten Richtung Nordwesten zwischen Prühßstr. und Gersdorfstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.08.2024 08:00 bis 01.11.2024 17:00',
+         'type' => 'gesperrt',
+         'until' => 1730476800
        }
      
 );

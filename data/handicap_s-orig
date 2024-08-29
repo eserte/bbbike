@@ -320,12 +320,14 @@ Schillingbrücke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,1
 # 
 #: next_check_id: ROTESRATHAUS-2023
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: last_checked: 2024-08-29 (webcam) vvv
-#: check_frequency: 2d vvv
-#: next_check: 2024-09-04 vvv
-(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10695,12616 10696,12601
+#: last_checked: 2024-08-29 vvv
+#: check_frequency: 3d vvv
+#: next_check: 2024-09-06 vvv
+#: valid: -20240906 vvv
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger, Bordstein	q2; 10542,12587 10615,12642 10681,12616 10723,12613
 #: note: eigentlich nur in Richtung W-O befahrbar
-(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10696,12601 10695,12616 10615,12642 10542,12587
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger, Bordstein	q4; 10723,12613 10681,12616 10615,12642 10542,12587
+#: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -365,7 +367,7 @@ Schillingbrücke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,1
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-08-21 vvv
+#: last_checked: 2024-08-29 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -3482,7 +3484,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-08-21
+#: last_checked: 2024-08-29
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4880,7 +4882,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
-#: last_checked: 2024-08-20
+#: last_checked: 2024-08-29
 #: check_frequency: 90d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 

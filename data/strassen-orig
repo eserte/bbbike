@@ -268,7 +268,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: osm_watch: note 4168370 2
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2024-08-05 vvv
+#: last_checked: 2024-08-29 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 #: osm_watch: way id="47755711" version="23"
@@ -1515,7 +1515,7 @@ Grunerstr.	HH 10849,12557 10783,12502
 # REMOVED --- #: last_checked ^^^
 Breite Str. (Mitte)	H 10512,12039 10480,12077 10383,12191 10285,12306
 Rathausstr. (Mitte)	N 10357,12356 10416,12394 10475,12438 10580,12513 10599,12526 10696,12601
-Rathausstr. (Mitte)	NN 10696,12601 10923,12779
+Rathausstr. (Mitte)	NN 10696,12601 10723,12613 10923,12779
 Jüdenstr. (Mitte)	N 10696,12601 10783,12502 10807,12451
 Jüdenstr. (Mitte)	N 10807,12451 10831,12371 10830,12313 10830,12279
 Neue Jüdenstr.	N 10830,12279 10823,12178 10821,12153
@@ -1879,7 +1879,7 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: osm_watch: way id="1010731431" version="8"
 #: osm_watch: way id="642581102" version="10"
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2024-08-10
+#: last_checked: 2024-08-29
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
@@ -1893,7 +1893,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
 #: osm_watch: way id="74868383" version="27"
-#: last_checked: 2024-07-05
+#: last_checked: 2024-08-29
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -1902,7 +1902,7 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7
 #: XXX Bekommt diese Verbindung einen Straßennamen?
 #: osm_watch[closed]: note 3892438 3
 #: osm_watch: way id="1255643497" version="4"
-#: last_checked: 2024-07-05
+#: last_checked: 2024-08-29
 #: check_frequency: 60d
 (Hedwig-Porschütz-Str. - George-Stephenson-Str.)	NN 7697,14187 7614,14136
 #: next_check_id: EUROPACITY-2015
@@ -1910,7 +1910,7 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7
 #: note: ggfs. qualitaet/handicap-Einträge anpassen
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: osm_watch: way id="645343614" version="8"
-#: last_checked: 2024-07-05
+#: last_checked: 2024-08-29
 #: check_frequency: 90d
 (Heidestr./Kieler Brücke - George-Stephenson-Str.)	NN 7612,14325 7529,14274
 Lisa-Fittko-Str.	N 7820,13994 7734,13944
@@ -1919,7 +1919,7 @@ George-Stephenson-Str.	N 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
 #: osm_watch: way id="977556359" version="16"
-#: last_checked: 2024-07-05
+#: last_checked: 2024-08-29
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7739,14119 7679,14030
@@ -20697,10 +20697,11 @@ Paul-und-Paula-Promenade	N 14886,10748 14909,10732 14984,10677
 # 
 #: next_check_id: ROTESRATHAUS-2023
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: last_checked: 2024-08-29 (webcam)
-#: check_frequency: 2d
-#: next_check: 2024-09-04
-(Umleitungsstrecke Rotes Rathaus)	NN 10696,12601 10695,12616 10615,12642 10542,12587
+#: last_checked: 2024-08-29
+#: check_frequency: 3d
+#: next_check: 2024-09-06
+#: valid: -20240906
+(Umleitungsstrecke Rotes Rathaus)	NN 10723,12613 10681,12616 10615,12642 10542,12587
 # 
 (Passage am Tacheles)	NN 9371,13333 9353,13273 9244,13253
 Aaron-Bernstein-Platz	NN 9353,13273 9382,13265 9385,13246 9463,13256 9476,13293
