@@ -294,26 +294,19 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-#: XXX Laut Umleitungsschildern vom 19.7.2024 bis 30.8.2024
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1468227.php (Radverkehr wird ¸ber den Gehweg gef¸hrt)
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/schillingbruecke-voll-gesperrt_a421537
-#: source_id: bvg2024:140#3780ae13-a443-4ae7-ad58-90608cbd5ef1 (2024-07-19 - 2024-08-30, hier: f¸r Fuﬂg‰ngerverkehr frei)
-#: source_id: viz2021:13.429228,52.509161,19.07.2024,07:00 (bis 30.08.2024)
-#: note: laut VIZ-Mail keine Sperrung f¸r den Rad- und Fuﬂverkehr; auﬂerdem wird hier als Beginn der 22.7.2024 (was passender w‰re, da Montag) erw‰hnt
-#: note: -> gemeinsamer Rad- und Gehweg, recht eng; morgens weniger Fuﬂg‰ngerverkehr, dann geht es
-#: last_checked: 2024-08-27
-#: next_check: 2024-08-30
-#: valid: -20240830
-Schillingbr¸cke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,11475
+# REMOVED --- #: XXX Laut Umleitungsschildern vom 19.7.2024 bis 30.8.2024
+# REMOVED --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1468227.php (Radverkehr wird ¸ber den Gehweg gef¸hrt)
+# REMOVED --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/schillingbruecke-voll-gesperrt_a421537
+# REMOVED --- #: source_id: bvg2024:140#3780ae13-a443-4ae7-ad58-90608cbd5ef1 (2024-07-19 - 2024-08-30, hier: f¸r Fuﬂg‰ngerverkehr frei)
+# REMOVED --- #: source_id: viz2021:13.429228,52.509161,19.07.2024,07:00 (bis 30.08.2024) (inaktiv)
+# REMOVED --- #: note: laut VIZ-Mail keine Sperrung f¸r den Rad- und Fuﬂverkehr; auﬂerdem wird hier als Beginn der 22.7.2024 (was passender w‰re, da Montag) erw‰hnt
+# REMOVED --- #: note: -> gemeinsamer Rad- und Gehweg, recht eng; morgens weniger Fuﬂg‰ngerverkehr, dann geht es
+# REMOVED --- #: last_checked: 2024-08-27
+# REMOVED --- #: next_check: 2024-08-30
+# REMOVED --- #: valid: -20240830
+# REMOVED --- Schillingbr¸cke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,11475
 # 
-# REMOVED --- #: XXX Oranienburger Straﬂe (Mitte) Richtung Monbijouplatz zwischen Groﬂe Pr‰sidentenstraﬂe und Groﬂe Hamburger Straﬂe: Gleisarbeiten, Vollsperrung f¸r den Kfz-Verkehr. Die Groﬂe Hamburger Straﬂe ist von der Oranienburger Straﬂe abgeh‰ngt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00
-# REMOVED --- #: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024) (bis 26.04.2024) (bis 24.04.2024) (inaktiv)
-# REMOVED --- #: also_indoor: traffic (H,G,B,W)
-# REMOVED --- #: last_checked: 2024-04-17
-# REMOVED --- #: next_check: 2024-04-24
-# REMOVED --- #: valid: -20240424
-# REMOVED --- Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fuﬂg‰nger auf dem Radweg	q2+::inwork 10219,13102 10074,13103
-# 
+# REMOVED --- #: XXX Oranienburger Straﬂe (Mitte) Richtung Monbijouplatz zwischen Groﬂe Pr‰sidentenstraﬂe und Groﬂe Hamburger Straﬂe: Gleisarbeiten, Vollsperrung f¸r den Kfz-Verkehr. Die Groﬂe Hamburger Straﬂe ist von der Oranienburger Straﬂe abgeh‰ngt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00 --- #: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024) (bis 26.04.2024) (bis 24.04.2024) (inaktiv) --- #: also_indoor: traffic (H,G,B,W) --- #: last_checked: 2024-04-17 --- #: next_check: 2024-04-24 --- #: valid: -20240424 --- Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fuﬂg‰nger auf dem Radweg	q2+::inwork 10219,13102 10074,13103
 # REMOVED --- #: XXX Oranienburger Straﬂe (Mitte) in beiden Richtungen zwischen Tucholskystraﬂe und Krausnickstraﬂe: Gleisarbeiten, Vollsperrung f¸r den Kfz-Verkehr. Umleitungen sind ausgeschildert, vom 01.03.2024 07:00 bis 30.03.2024 17:00 --- #: source_id: viz2021:13.393215,52.524878,01.03.2024,07:00 (bis 30.03.2024) (bis 19.03.2024) (inaktiv) --- #: last_checked: 2024-03-15 (mapillary) --- #: next_check: 2024-03-19 --- #: valid: -20240319 --- Oranienburger Str.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg	q2::inwork; 9611,13245 9771,13182 9786,13178
 # REMOVED --- #: note: keine groﬂe Einschr‰nkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einm¸ndungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11054,11992 11111,12027
 # REMOVED (Sperrung wurde aufgehoben) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-22 --- Krausenstr.: Hochbauarbeiten, Fahrbahn zwischen Friedrichstr. und Mauerstr. gesperrt	q4::inwork 9456,11513 9331,11497
@@ -579,11 +572,13 @@ Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg f¸r Radfahrer frei	q2; 17380,88
 #: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024) (bis 05.04.2024) (bis 30.08.2024) (bis 27.09.2024)
 #: source_id: viz2021:13.52679,52.48659,14.08.2024,14:28 (bis 27.09.2024) (inaktiv)
 #: source_id: bvg2021:396#BVG308894_0
+#: source_id: bvg2024:396#HIM_FREETEXT_222820 (bis 31.10.2024)
 #: osm_watch: way id="30043322" version="31"
 #: last_checked: 2024-08-10 (osm)
 #: check_frequency: 100d
 #: next_check: 2024-09-27
-#: valid: -202409-27
+# REMOVED --- #: valid: -20240927
+#: valid: -20241031
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 # 
 # REMOVED (Bauarbeiten sind beendet) --- #: next_check_id: WANDLITZ-2021 --- #: note: am 2022-04-22 war die Fahrbahn offen, aber mˆglicherweise war das nur "zuf‰llig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauz‰une, die umgeklappt werden kˆnnen --- #: also_indoor: traffic --- #: note: Halteverbotsschilder vor und hinter der Baustelle bis 22.12.2023 --- #: XXX evtl. bessere Qualit‰t nach den Bauarbeiten? --- #: last_checked: 2023-11-26 --- #: check_frequency: 30d --- #: next_check: 2023-12-22 --- #: valid: -20231222 --- Wandlitzstr.: in Hˆhe Lehndorffstr. Bauarbeiten, Sperrung der Fahrbahn	q4::inwork 18401,8636 18448,8602
@@ -636,13 +631,13 @@ Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9
 # 
 ### Kreuzberg ###
 # 
-#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024)
+#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
 #: also_indoor: traffic (G,B,W)
 #: last_checked: 2024-08-05 vvv
-#: next_check: 2024-08-31 vvv
-#: valid: -20240831 vvv
+#: next_check: 2024-09-28 vvv
+#: valid: -20240928 vvv
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294
 Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
 #: valid ^^^
@@ -839,7 +834,7 @@ Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
-#: source_id: bvg2024:m43#HIM_FREETEXT_224595 (30.05.2024 bis 31.08.2024)
+#: source_id: bvg2024:m43#HIM_FREETEXT_224595 (30.05.2024 bis 31.08.2024) (mittlerweile bis 31.10.2024)
 #: by: https://www.kms-sonne.de/baustellennews?date=20240416 (voraussichtlich ab Ende April 2024 bis April 2025) (mittlerweile Beginn auf Ende Mai 2024 verschoben)
 #: by: https://www.kms-sonne.de/assets/2024/04/Baustellenuebersicht-A4-04-2024-v3-Web.pdf
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/vollsperrung-auf-der-erkstrasse_a415525
