@@ -1398,12 +1398,12 @@ Heiligegeistgasse -> Karl-Liebknecht-Str.: unbequemes ‹berqueren	3::igndisp 1035
 Karl-Liebknecht-Str. -> Heiligegeistgasse: unbequemes ‹berqueren	3::igndisp 10300,12587 10359,12634 10351,12646
 Mittelstreifen	3nocross::ignrte 19894,-835 19996,-740 20205,-548
 Sch¸tzenstr. -> Am Seegraben: Mittelstreifen	3::igndisp 19978,-712 19996,-740 20205,-548
-Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2037,11122 2102,11307 2095,11440
+Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2037,11122 2061,11191 2102,11307 2095,11440
 Messedamm -> an der BMW-Niederlassung: Mittelstreifen, Autobahnausfahrt	3::igndisp 2095,11440 2102,11307 2180,11318
-Messedamm -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2037,11122 2102,11307 1975,11291
+Messedamm -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2061,11191 2102,11307 1975,11291
 Bredtschneiderstr. -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndisp 1975,11291 2102,11307 2095,11440
 Bredtschneiderstr. -> an der BMW-Niederlassung: Mittelstreifen, Autobahnausfahrt	3::igndisp 1975,11291 2102,11307 2180,11318
-an der BMW-Niederlassung -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndisp 2180,11318 2102,11307 2037,11122
+an der BMW-Niederlassung -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndisp 2180,11318 2102,11307 2061,11191
 an der BMW-Niederlassung -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2180,11318 2102,11307 1975,11291
 Straﬂenbahnhaltestelle	3nocross::ignrte 10908,17142 10917,17088 10927,17022
 Berliner Str. -> Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]: Straﬂenbahnhaltestelle	3::igndisp 10927,17022 10917,17088 10891,17088
