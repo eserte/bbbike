@@ -539,6 +539,7 @@
 ;;; used. This variable is per default set to nil which means:
 ;;; prefer remote viewing. This variable may be toggled using
 ;;; bbbike-toggle-view-url.
+;;; Remote URLs may be normalized, see bbbike--normalize-url
 (defun bbbike-view-url (url)
   "View the URL under cursor, either the cached version (preferred), or the remote version"
   (interactive)
@@ -550,7 +551,8 @@
 	  (string-match "/___tmp/tmp/" url) ; temporary berlin.de URLs, usually only valid for a few minutes
 	  )
       (bbbike-view-cached-url url)
-    (bbbike-view-remote-url url)))
+    (let ((url (bbbike--normalize-url url)))
+      (bbbike-view-remote-url url))))
 
 (defun bbbike-toggle-view-url ()
   "Toggle between remote and cache URL viewing"
@@ -1037,5 +1039,12 @@
 (defun bbbike--string-trim (str)
   "Remove leading and trailing whitespace from STR."
   (replace-regexp-in-string "\\`[[:space:]\n]*\\|[[:space:]\n]*\\'" "" str))
+
+(defun bbbike--normalize-url (url)
+  (cond
+   ((null url) url)
+   ((string-match "^https://\\(?:nitter\\.net\\|nitter\\.cz\\|nitter\\.it\\|nitter\\.tux\\.pizza\\|nitter\\.perennialte\\.ch\\)\\(/.*/status/.*?\\)\\(?:#.*\\)?$" url) ; nitter -> twitter
+    (concat "https://twitter.com" (match-string 1 url)))
+   (t url)))
 
 (provide 'bbbike-mode)
