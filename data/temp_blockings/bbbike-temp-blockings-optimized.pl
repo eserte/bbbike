@@ -4967,9 +4967,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
+#: osm_watch: note 3914565 9
 #: last_checked: 2024-07-27 (kartaview)
 #: check_frequency: 120d
-#: next_check: 2024-09-01
+#: next_check: 2024-09-22
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 ',
          'from' => undef,
@@ -5033,24 +5034,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
-#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
-#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/neun-spielstrassen-im-sommer_a343397
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10412 (allgemein zu temporären Spiel- und Nachbarschaftsstraßen)
-# REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-24
-	q4::temp::play 14798,12502 15005,12443
-',
-         'from' => 1717106400,
-         'id' => 3367,
-         'recurring' => 1,
-         'text' => 'Bänschstr.: zwischen Voigtstr. und Pettenkoferstr. sonntags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 31.08., außer in den Sommerferien',
-         'type' => 'handicap',
-         'until' => 1725120000
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 # REMOVED --- #: XXX wird diese Spielstraße verstetigt? --- #: last_checked: 2021-05-13 --- #: next_check: 2022-05-17
@@ -6325,7 +6309,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: by: https://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse-1/ (Zeitraum Bau: 1. Quartal 2021 - 2. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (existiert nicht mehr) (wieder da) (2. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2023 - 1. Quartal 2024) (2. Quartal 2023 - 4. Quartal 2024)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
-#: also_indoor: traffic (G,W) vvv
+#: also_indoor: traffic (ex-G,ex-W) vvv
 #: osm_watch: way id="151353924" version="14"
 #: last_checked: 2024-08-18 vvv
 #: check_frequency: 30d vvv
@@ -6445,7 +6429,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-08-26 (traffic)
+#: last_checked: 2024-08-31 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -6706,7 +6690,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1828834678851199380
 #: by: https://pbs.twimg.com/media/GWFGT27XQAAwuc3?format=jpg&name=4096x4096
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: last_checked: 2024-08-29
+#: last_checked: 2024-08-31 (webcam)
 #: check_frequency: 3d
 #: next_check: 2024-09-06
 	2::temp 10696,12601 10599,12526
@@ -7117,6 +7101,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
 #: osm_watch: way id="4543441" version="41"
+#: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: last_checked: 2024-08-10 vvv
 #: check_frequency: 120d vvv
@@ -7716,6 +7701,7 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
        undef,
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/wochenmarkt-vor-der-markthalle-erweiterung-fur-markthalle-neun-in-berlin-kreuzberg-genehmigt-10575601.html (befristet bis 13. September 2024)
+#: by: https://markthalleneun.de/m%C3%A4rkte/
 #: next_check: 2024-09-13
 	q4::temp:clock 12294,10663 12363,10781
 ',
@@ -7825,6 +7811,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 #: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
 #: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024)
+#: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
 #: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
 #: by: https://www.youtube.com/watch?v=YI1O5phpGiE
@@ -7856,12 +7843,12 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        {
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
 #: note: keine Freigabe der Gehwege für Radfahrer
-#: note: Absperrungen können teilweise weggeschoben sein und die Fahrbahn ist nur in der Mitte aufgebuddelt (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024)
+#: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024)
 	q4::inwork 15077,11910 15110,12107
 ',
          'from' => 1717538400,
          'id' => 4079,
-         'text' => 'Jessnerstr.: Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis 31.10.2024 17:00',
+         'text' => 'Jessnerstr.: Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. offiziell gesperrt, meist ist eine Fahrgasse offen, vom 05.06.2024 07:00 bis 31.10.2024 17:00',
          'until' => 1730390400
        },
        {
@@ -8014,18 +8001,7 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'type' => 'handicap',
          'until' => 1725462000
        },
-       {
-         'data' => '#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024) (bis 29.11.2024)
-#: note: auf der BA-Seite wird diese Baumaßnahme nicht verlängert
-	q4::inwork; 2625,2850 2737,2866
-# REMOVED (scheint kürzer zu sein) ---	q4::inwork; 2737,2866 3019,2858
-',
-         'from' => 1719291600,
-         'id' => 4098,
-         'text' => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 31.08.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1725116400
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
@@ -8180,16 +8156,7 @@ zwischen Ottmachauer Steig bis Hirschhorner Weg 19.08.2024 - 18.09.2024	q4::inwo
          'until' => 1727442000
        },
        undef,
-       {
-         'data' => '#: source_id: LS/221-F/24/131 (bis 31.08.2024)
-	2::inwork 41624,36648 39488,37315
-',
-         'from' => 1720936800,
-         'id' => 4114,
-         'text' => 'Heckelberg - Brunow: Bauarbeiten, Sperrung, 15.07.2024 08:00 Uhr bis 31.08.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1725112800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: SCHILDOWER-2024
@@ -8239,17 +8206,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => 1727877600
        },
-       {
-         'data' => '#: source_id: LS/221-E/24/100 (bis 31.08.2024) (inaktiv)
-#: source_id: LS/221-E/24/100.1 (bis 31.08.2024)
-	2::inwork 36914,54197 36647,55090 36576,55996 36535,56402 36621,56807
-',
-         'from' => 1723356000,
-         'id' => 4124,
-         'text' => 'Britz - Golzow: Deckenerneuerung, Sperrung, vom 12.08.2024 08:00 Uhr bis 31.08.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1725112800
-       },
+       undef,
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
@@ -8290,7 +8247,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        },
        undef,
        {
-         'data' => '#: also_indoor: traffic (B,T)
+         'data' => '#: also_indoor: traffic (ex-B,ex-T,H)
 #: add_fragezeichen: Gibt es die Baustelle noch immer?
 #: note: Die Länge der Einengung beträgt etwa 40m, deshalb q3. Durch den Wasserrohrbruch in der Tiergartenstr. erhöhter Kfz-Verkehr in der Gegenrichtung.
 #: last_checked: 2024-08-05
@@ -8377,7 +8334,9 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        },
        {
          'data' => '#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/
-#: last_checked: 2024-08-14
+#: osm_watch: note 4383533 2
+#: osm_watch: way id="37948631" version="9"
+#: last_checked: 2024-08-31 (mapillary)
 #: next_check: 2024-11-30
 	2::inwork 34460,22169 34901,21638 36198,20464
 ',
@@ -8588,7 +8547,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
 #: by: https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
-#: XXX andere Eingänge an der Oderstr. folgende
+#: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen
 #: last_checked: 2024-08-30 (website)
 #: check_frequency: 10d
 	2::inwork 11521,7638 11507,7647
@@ -8623,6 +8582,19 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
          'text' => 'Marburger Str.: Sperrung der Fahrbahn vor der Tauentzienstr., voraussichtlich bis Januar 2025',
          'type' => 'handicap',
          'until' => 1737306000
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (B,T)
+#: last_checked: 2024-08-31
+#: check_frequency: 10d
+	q3::inwork 14949,11474 14849,11539
+',
+         'from' => undef,
+         'id' => 4159,
+         'text' => 'Weserstr.: Abschnitt der Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

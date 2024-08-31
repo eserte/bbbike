@@ -397,7 +397,10 @@ Delmer Steig -> Marienfelder Chaussee: Mittelstreifen, zunächst den linken Gehwe
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 ---- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/strassenbau-am-knotenpunkt-puschkinalleeelsenstrasseam-treptower-park-geht-weiter_a392743 ---- #: source_id: viz2021:13.454254,52.49393,29.07.2021,08:00 (bis Ende 2021, Gesamtbaumaßnahme bis 30.06.2023) (mittlerweile bis 30.06.2022) (inaktiv) ---- #: source_id: viz2021:13.45767,52.49173,29.12.2022,09:41 (bis 31.07.2023) (später am Tag wieder entfernt -> inaktiv) ---- #: source_id: viz2021:13.45767,52.49173,29.07.2021,08:00 (bis 30.06.2023) (inaktiv) (bis 31.07.2023) (inaktiv) ---- #: source_id: viz2021:13.45316,52.49472,29.07.2021,08:00 (bis 30.06.2023) (inaktiv) ---- #: source_id: viz2021:13.45767,52.49173,20.12.2023,14:17 (bis 29.02.2024) (inaktiv) ---- #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 30.06.2022) (inaktiv) (bis 31.12.2022) (bis 31.07.2023) (bis 22.12.2023) (bis 29.02.2024) (inaktiv) (bis 30.04.2024) (inaktiv) (bis 31.12.2024) ---- #: source_id: viz2021:13.457474,52.491787,29.07.2021,07:00 (bis 30.04.2024) (bis 30.12.2024) (bis 31.12.2024) ---- #: osm_watch: way id="1005683568" version="17" ---- #: osm_watch: way id="1022420059" version="17" ---- #: note: mittlerweile (2024-06-18, 2024-07-10) sind die Baustellenabsperrungen weggeschoben, dass man theoretisch direkt überqueren kann ---- #: last_checked: 2024-08-02 (offen!) vvv ---- #: check_frequency: 90d vvv ---- #: next_check: 2024-12-31 vvv ---- #: note: allerdings spart man hier eine Ampel ---- Elsenstr.: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 13973,9465 ---- Elsenstr. -> Am Treptower Park: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 14185,9509 ---- #: next_check ^^^ ---- #: check_frequency ^^^ ---- #: last_checked ^^^
 # 
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
-#: last_checked: 2024-05-06 (mapillary) vvv
+#: osm_watch: way id="4699431" version="45"
+#: osm_watch: way id="865716506" version="20"
+#: osm_watch: way id="865716510" version="19"
+#: last_checked: 2024-08-11 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-11-30 vvv
 Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21166,12023 21152,11945

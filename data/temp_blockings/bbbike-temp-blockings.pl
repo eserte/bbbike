@@ -16664,8 +16664,8 @@ EOF
      { from  => $isodate2epoch->("2022-09-16 11:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 9, start => "2023-10-25T00:00:00"]], # findet 2023 nicht stat
-       recurrence_prewarn_days => 14,
+       recurrences => [['yearly', days => 14, months => 9, start => "2023-10-25T00:00:00"]], # findet 2023 nicht statt
+       recurrence_prewarn_days => 7,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -33246,9 +33246,10 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
+#: osm_watch: note 3914565 9
 #: last_checked: 2024-07-27 (kartaview)
 #: check_frequency: 120d
-#: next_check: 2024-09-01
+#: next_check: 2024-09-22
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 EOF
      },
@@ -38751,7 +38752,7 @@ EOF
 #: by: https://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse-1/ (Zeitraum Bau: 1. Quartal 2021 - 2. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (existiert nicht mehr) (wieder da) (2. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2023 - 1. Quartal 2024) (2. Quartal 2023 - 4. Quartal 2024)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
-#: also_indoor: traffic (G,W) vvv
+#: also_indoor: traffic (ex-G,ex-W) vvv
 #: osm_watch: way id="151353924" version="14"
 #: last_checked: 2024-08-18 vvv
 #: check_frequency: 30d vvv
@@ -39140,7 +39141,7 @@ EOF
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-08-26 (traffic)
+#: last_checked: 2024-08-31 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -40059,7 +40060,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1828834678851199380
 #: by: https://pbs.twimg.com/media/GWFGT27XQAAwuc3?format=jpg&name=4096x4096
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: last_checked: 2024-08-29
+#: last_checked: 2024-08-31 (webcam)
 #: check_frequency: 3d
 #: next_check: 2024-09-06
 	2::temp 10696,12601 10599,12526
@@ -40073,7 +40074,7 @@ EOF
 #: next_check_id: BUERGER-2023
 # REMOVED --- #: also_indoor: traffic (G,B,W)
 #: source_id: viz2021:13.434679,52.461938,14.08.2023,07:00 (bis 31.05.2024) (inaktiv)
-#: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024) (bis 31.05.2024) (keine Erwähnung der Bürgerstr., bis 31.08.2024)
+#: source_id: viz2021:13.434909,52.461299,14.08.2023,07:00 (nur Kfz-Verkehr, Bürgerstr. vom Britzer Damm abgehängt, bis 07.01.2024) (bis 31.05.2024) (keine Erwähnung der Bürgerstr., bis 31.08.2024) (inaktiv)
 #: source_id: bvg2021:m44#BVG326176_0
 #: by: https://nitter.net/VIZ_Berlin/status/1690957168931913729#m
 # REMOVED --- #: add_fragezeichen: Ist die Einbahnstraßenregelung mittlerweile aufgehoben?
@@ -41336,6 +41337,7 @@ EOF
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
 #: osm_watch: way id="4543441" version="41"
+#: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: last_checked: 2024-08-10 vvv
 #: check_frequency: 120d vvv
@@ -43113,6 +43115,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/berlin/bezirke/wochenmarkt-vor-der-markthalle-erweiterung-fur-markthalle-neun-in-berlin-kreuzberg-genehmigt-10575601.html (befristet bis 13. September 2024)
+#: by: https://markthalleneun.de/m%C3%A4rkte/
 #: next_check: 2024-09-13
 	q4::temp:clock 12294,10663 12363,10781
 EOF
@@ -43488,6 +43491,7 @@ EOF
 #: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
 #: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024)
+#: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
 #: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
 #: by: https://www.youtube.com/watch?v=YI1O5phpGiE
@@ -43545,11 +43549,11 @@ EOF
      },
      { from  => $isodate2epoch->("2024-06-05 00:00:00"),
        until => $isodate2epoch->("2024-10-31 17:00:00"),
-       text  => 'Jessnerstr.: Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis 31.10.2024 17:00',
+       text  => 'Jessnerstr.: Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. offiziell gesperrt, meist ist eine Fahrgasse offen, vom 05.06.2024 07:00 bis 31.10.2024 17:00',
        data  => <<EOF,
 #: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
 #: note: keine Freigabe der Gehwege für Radfahrer
-#: note: Absperrungen können teilweise weggeschoben sein und die Fahrbahn ist nur in der Mitte aufgebuddelt (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024)
+#: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024)
 	q4::inwork 15077,11910 15110,12107
 EOF
      },
@@ -44011,7 +44015,7 @@ EOF
        text  => 'Heckelberg - Brunow: Bauarbeiten, Sperrung, 15.07.2024 08:00 Uhr bis 31.08.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/131 (bis 31.08.2024)
+#: source_id: LS/221-F/24/131 (bis 31.08.2024) (inaktiv)
 	2::inwork 41624,36648 39488,37315
 EOF
      },
@@ -44134,7 +44138,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/221-E/24/100 (bis 31.08.2024) (inaktiv)
-#: source_id: LS/221-E/24/100.1 (bis 31.08.2024)
+#: source_id: LS/221-E/24/100.1 (bis 31.08.2024) (inaktiv)
 	2::inwork 36914,54197 36647,55090 36576,55996 36535,56402 36621,56807
 EOF
      },
@@ -44197,7 +44201,7 @@ EOF
        text  => 'Hiroshimastr.: Einbahnstraßenregelung, offen Richtung Süden, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (B,T)
+#: also_indoor: traffic (ex-B,ex-T,H)
 #: add_fragezeichen: Gibt es die Baustelle noch immer?
 #: note: Die Länge der Einengung beträgt etwa 40m, deshalb q3. Durch den Wasserrohrbruch in der Tiergartenstr. erhöhter Kfz-Verkehr in der Gegenrichtung.
 #: last_checked: 2024-08-05
@@ -44285,7 +44289,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/
-#: last_checked: 2024-08-14
+#: osm_watch: note 4383533 2
+#: osm_watch: way id="37948631" version="9"
+#: last_checked: 2024-08-31 (mapillary)
 #: next_check: 2024-11-30
 	2::inwork 34460,22169 34901,21638 36198,20464
 EOF
@@ -44491,7 +44497,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
 #: by: https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
-#: XXX andere Eingänge an der Oderstr. folgende
+#: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen
 #: last_checked: 2024-08-30 (website)
 #: check_frequency: 10d
 	2::inwork 11521,7638 11507,7647
@@ -44518,6 +44524,18 @@ EOF
 #: check_frequency: 90d
 #: next_check: 2025-01-19
 Marburger Str.	q3::inwork 5802,10621 5907,10821
+EOF
+     },
+     { from  => undef, # 
+       until => undef, #
+       text  => 'Weserstr.: Abschnitt der Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (B,T)
+#: last_checked: 2024-08-31
+#: check_frequency: 10d
+	q3::inwork 14949,11474 14849,11539
 EOF
      },
     );

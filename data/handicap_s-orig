@@ -314,7 +314,6 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: ROTESRATHAUS-2023
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
 #: last_checked: 2024-08-29 vvv
-#: check_frequency: 3d vvv
 #: next_check: 2024-09-06 vvv
 #: valid: -20240906 vvv
 (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger, Bordstein	q2; 10542,12587 10615,12642 10681,12616 10723,12613
@@ -322,7 +321,6 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger, Bordstein	q4; 10723,12613 10681,12616 10615,12642 10542,12587
 #: valid ^^^
 #: next_check ^^^
-#: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED (hier keine Bauarbeiten mehr) --- #: next_check_id: PLDVEREINTENNATIONEN-2023 --- #: last_checked: 2023-08-09 --- #: check_frequency: 30d --- #: next_check: 2023-08-11 --- #: valid: -20230811 --- Platz der Vereinten Nationen: Anbindung Mollstr. gesperrt, Bordsteine, Engstellen	q4::inwork 11896,13075 11904,13052
@@ -698,7 +696,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 9
-#: last_checked: 2024-08-28 (webcam)
+#: last_checked: 2024-08-31 (webcam)
 #: check_frequency: 60d
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 # 
@@ -1088,8 +1086,10 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 ### Zehlendorf ###
 # 
 #: next_check_id: KOENIGSWEG-2024
-#: last_checked: 2024-05-05
-#: check_frequency: 120d
+#: also_indoor: traffic (G,B,T,W)
+#: last_checked: 2024-08-31 (traffic)
+#: check_frequency: 30d
+# REMOVED (outdoor) --- #: check_frequency: 120d
 #: next_check: 2024-11-18
 Königsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -197,2634 -155,2658
 # 
