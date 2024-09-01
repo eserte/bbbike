@@ -915,7 +915,7 @@ Hönower Weg: Asphalt	Q0 16900,9861 16925,9852 16984,9857 17383,9719
 Splanemannstr.: Asphalt	Q0 18411,10037 18397,9928 18305,9951
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 21354,9059 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8738 21173,8576 21190,8467 21276,8374 21337,8273 21351,8259 21534,8107 21568,8052 21593,7934 21599,7904
 Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7702 21532,7695
-Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647
+Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0 21629,7921 21616,7863 21565,7748 21596,7707 21620,7647
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q1 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0 21569,7252 21590,7211 21896,6937
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q1 21896,6937 21976,6848 22050,6619
@@ -2860,9 +2860,11 @@ Plehmpfad: Beton	Q0 23384,3563 23564,3283 23630,3180 23741,2979 23777,2887 23799
 Sandschurrepfad: Asphalt	Q0 23680,3371 23758,3275 24032,2964 24074,2904
 Grüne Trift (Köpenick) [Wohngebiet]: Beton	Q1 23036,3929 23088,4001 23257,3884 23237,3845 23316,3778
 (Grüne Trift - Salvador-Allende-Str.): sandig	Q3 23257,3884 23368,3894
-Grüne Trift am Walde: Asphalt mit Wurzelhebungen	Q1 23740,3418 24102,3055 24179,2977
-Grüne Trift am Walde: Asphalt	Q0 23337,3762 23402,3779 23657,3508
+Grüne Trift am Walde: Asphalt	Q0 23337,3762 23402,3779
+Grüne Trift am Walde: Asphalt	Q0 23402,3779 23657,3508
 Grüne Trift am Walde: Asphalt	Q0 23657,3508 23740,3418
+Grüne Trift am Walde: Asphalt	Q0 23740,3418 24102,3055
+Grüne Trift am Walde: Asphalt mit Wurzelhebungen	Q1 24102,3055 24179,2977
 Kienappelweg: Beton	Q0 24102,3055 24101,3447
 (Bukesweg - Grüne Trift am Walde): Schotterstraße	Q2 23668,2792 23799,2823 23845,2846 23943,2853 24010,2865 24074,2904 24179,2977
 (Grüne Trift am Walde - Müggelheimer Damm): Waldweg, uneben	Q2 24179,2977 24206,2986 24236,2981 24369,2973 24513,2878 24640,2860 24917,2929 25008,2889
@@ -4467,7 +4469,7 @@ Geraldstr.: Asphalt, vor und hinter der Alberichstr. Kopfsteinpflaster	Q1 20909,
 Wateweg: Beton	Q0 21122,8370 21121,8424
 Wateweg: Feinschotter	Q1 21121,8424 21127,8532
 Wateweg: unbefestigte Straße	Q2 21127,8532 21115,8618 21123,8678 21131,8739
-Wateweg: Gras	Q3 21131,8739 21124,8792
+Wateweg: unbefestigte Straße, sandig	Q3 21131,8739 21124,8792
 Erwinstr.: Beton	Q0 21047,8120 21169,8112
 Anselmstr.: Asphalt	Q0 21044,7996 21142,7995 21233,8022
 Breitenfelder Str.: Asphalt	Q0 21243,8010 21310,8075
@@ -4857,7 +4859,7 @@ Alberichstr.: Asphalt mit Schäden	Q1 20967,8716 21010,8379
 Straße 19 (Kaulsdorf): Asphalt	Q0 21444,8412 21419,8367 21396,8326 21371,8289
 Damerauer Allee: Asphalt	Q0 21663,8246 21444,8412 21415,8435 21316,8487
 Bischofstaler Str.: Asphalt	Q0 21468,7727 21542,7752
-Bischofstaler Str.: Beton	Q0 21759,7856 21614,7773 21570,7751
+Bischofstaler Str.: Beton	Q0 21759,7856 21614,7773 21565,7748
 Egersfelder Allee: Beton	Q0 21741,7450 21765,7462 21862,7529
 Hohenkircher Allee: Beton	Q0 21736,7489 21741,7450 21751,7400 21785,7284
 Klingenburger Str.: Beton	Q0 21671,7375 21751,7400
@@ -10200,7 +10202,7 @@ Sternbergpromenade: Asphalt	Q0 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -
 (Am Kiesteich - Spektewiesen): Asphalt	Q0 -6256,15169 -6264,15181 -6252,15228
 Am Bullengraben: sehr guter Asphalt	Q0 -6272,13472 -6265,13475 -6209,13499 -6076,13583 -6020,13598 -5963,13593
 Kerrweg: unbefestigte Straße	Q2 -6269,13464 -6189,13497 -6125,13540 -6010,13586 -5962,13584 -5917,13582
-Straße zum Müggelturm: Asphalt/Beton	Q0 25008,2889 25010,2794 24978,2634 24981,2565 24982,2519 24963,2495 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24883,1740 24973,1690 25269,1598 25438,1638 25573,1609 25701,1587 25725,1561 25711,1481
+Straße zum Müggelturm: Asphalt/Beton	Q0 25008,2889 25010,2794 24978,2634 24981,2565 24982,2519 24963,2495 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24883,1740 24973,1690 25269,1598 25399,1629 25438,1638 25573,1609 25701,1587 25725,1561 25711,1481
 Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3416,12473
 Jutta-Langenau-Str.: Verbundsteinpflaster	Q1 17610,16307 17643,16322 17821,16395 17863,16416 17877,16423
 Harry-Glaß-Str.: Verbundsteinpflaster	Q1 17610,16400 17643,16322
@@ -11205,8 +11207,8 @@ Messelstr.: Asphalt	Q0 2397,6960 2304,7059 2139,7239 2017,7412 1956,7453
 Müggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
 (Barnimstr. - Mollstr.): Beton	Q0 11785,13241 11762,13207
 Heidenfeldstr. [Stichstraße]: Beton	Q1 13445,13376 13419,13435
-Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1 17633,9898 17633,9793 17587,9655
-Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1 17738,9922 17738,9822 17777,9649
+Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1 17633,9898 17628,9757 17587,9655
+Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1 17738,9922 17749,9811 17777,9649
 Mellenseestr. [Wohngebiet]: Beton	Q0 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1 19133,9087 19083,9062
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0 10123,9233 10250,9233
@@ -11232,18 +11234,18 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0 17523,9882 17412,9911
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0 10547,15586 10542,15609
 Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17659,8698
 Georg-Klingenberg-Str.: Asphalt	Q0 17659,8698 17668,8696 17792,8660 17846,8644
-Adolf-Wermuth-Allee: Asphalt	Q0 17659,8698 17640,8627
-Adolf-Wermuth-Allee: Asphalt	Q0 17640,8627 17619,8558 17599,8485 17581,8422
-Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17627,8556 17608,8483 17588,8413
+Adolf-Wermuth-Allee: Asphalt	Q0 17659,8698 17639,8627
+Adolf-Wermuth-Allee: Asphalt	Q0 17639,8627 17619,8558 17599,8485 17581,8422
+Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 17588,8413
 An der Waldsiedlung: Baustraße	Q2 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0 17701,8851 17699,8843 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0 17674,8738 17668,8696
-Irmtraud-Morgner-Str.: Asphalt	Q0 17521,8549 17619,8558 17627,8556
-Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
+Irmtraud-Morgner-Str.: Asphalt	Q0 17521,8549 17619,8558 17628,8556
+Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17639,8627
 Heiner-Müller-Str.: Asphalt	Q0 17648,8626 17773,8588
 Ruth-Baumgarte-Str.: Asphalt	Q0 17794,8429 17738,8450 17682,8464 17608,8483
 Samuel-Lewin-Str.: Asphalt	Q0 17738,8450 17755,8519 17773,8588 17792,8660
-Irmtraud-Morgner-Str.: Asphalt	Q0 17627,8556 17755,8519
+Irmtraud-Morgner-Str.: Asphalt	Q0 17628,8556 17755,8519
 Schönegarten: Betonpflaster	Q0 7416,10492 7432,10546 7337,10587 7330,10590
 (Kurfüstenstr. - Pohlstr.): Verbundsteinpflaster	Q1 7432,10546 7450,10625
 Wichmannstr.: Kleinsteinpflaster	Q1 6447,11144 6452,11118

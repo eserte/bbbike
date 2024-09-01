@@ -901,8 +901,8 @@ Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Mittelstreifen, Bordsteine	3nocross::ignrte 12930,10621 12899,10595 12731,10547
 Skalitzer Str. -> Skalitzer Str.: Mittelstreifen, Bordsteine	3::igndisp 12930,10621 12899,10595 12978,10581
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
-Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
-Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
+Mellenseestr. [Wohngebiet]	1 17587,9655 17628,9757 17633,9898
+Mellenseestr. [Wohngebiet]	1 17777,9649 17749,9811 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
 Mühsamstr.	1 13818,12897 13830,12907
 Lilli-Henoch-Str.	1s 12357,15020 12388,14926
@@ -991,8 +991,8 @@ Weidenkätzchenweg	1s 21435,99 21421,158
 (Seydlitzstr. - Lehrter Str.)	1 7651,13447 7613,13517
 Mittelstreifen	3nocross::ignrte 14853,7451 14775,7385 14758,7373
 Straße 3	1s 18816,19648 18730,19672 18644,19695 18544,19722
-Adolf-Wermuth-Allee	1 17668,8696 17648,8626 17627,8556 17608,8483
-Adolf-Wermuth-Allee	1 17581,8422 17599,8485 17619,8558 17640,8627 17659,8698
+Adolf-Wermuth-Allee	1 17668,8696 17648,8626 17628,8556 17608,8483
+Adolf-Wermuth-Allee	1 17581,8422 17599,8485 17619,8558 17639,8627 17659,8698
 Ottomar-Geschke-Str. [Radweg]	1::igndisp 21279,4567 21332,4655
 entlang des Rewe-Supermarkts	1 21163,15289 21263,15291 21350,15292 21361,15270
 entlang des Rewe-Supermarkts	1 21361,15270 21262,15271 21195,15271 21163,15289
@@ -3512,7 +3512,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7418,12601 7377,12729
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
-Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22057,5305 22095,5344
+Am Generalshof: Hochbauarbeiten, Fahrbahn offiziell noch gesperrt	2::inwork 22057,5305 22095,5344
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14258,8520
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
@@ -3529,9 +3529,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s 26300,-11727 26301,-11824 26300,-11864
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
-Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
-Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
 Georg-Klingenberg-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17792,8660 17846,8644

@@ -18714,7 +18714,7 @@ EOF
        data  => <<EOF,
 #: note: allerdings keine Hinweise auf eine verbotene Durchfahrt gesehen
 #: note: nördliches Tor verschlossen, gesehen am 2019-09-07 (Sa)
-#: note: südliches Tor verschlossen, gesehen am 2020-10-24 (Sa)
+#: note: südliches Tor verschlossen, gesehen am 2020-10-24 (Sa), 2024-09-01 (So)
 #: tempex: volatile vvv
 (Gewerbegebiet)	2 21617,3287 21826,3129 21865,3095
 (Gewerbegebiet)	2 21826,3129 21770,2936
@@ -35087,10 +35087,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.306069,52.502061,01.01.2022,06:00 (mittlerweile inaktiv) (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024)
+#: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
 #: note: vermutlich nur im Bereich Sybelstr. 14
-#: also_indoor: traffic (H,G,B,T,W)
+#: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: last_checked: 2024-08-30
 	2::inwork 3726,10757 3731,10640 3764,10580
@@ -35922,10 +35922,10 @@ EOF
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOxmWwAAhC4Z.png (Umleitung für Radfahrer)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1479228.php (nächste Sperrung der Hämmerlingstr.: 23.9.2024-2.10.2024)
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025)
-#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar)
+#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2024-07-10 vvv
+#: last_checked: 2024-09-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-09-21 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -39828,7 +39828,7 @@ EOF
        #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, außerdem Kreuzungsbereich Gleiwitzer Str./Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
        #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
        #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn vor der Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
-       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, voraussichtlich bis Ende September 2024, vielleich wird wieder verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
@@ -39840,14 +39840,14 @@ EOF
 #: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert)
 #: also_indoor: traffic (ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten in der Gleiwitzer Str. beendet?
-#: last_checked: 2024-07-20 vvv
+#: last_checked: 2024-09-01 vvv
 # REMOVED --- #: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2024-05-10 vvv
+#: next_check: 2024-09-30 vvv
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
 Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,9999 21146,9988
 # REMOVED (nicht mehr gesperrt) --- #: XXX_prog eigentlich q3+ --- Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -42848,7 +42848,7 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-08-18 (osm) vvv
+#: last_checked: 2024-08-31 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -43056,9 +43056,9 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=753016#post753016 (LXK Campus)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-6#post-23532
 #: by: https://www.lxk-berlin.de/ (2026 bezugsfertig)
-#: source_id: viz2021:13.42701,52.51181,27.08.2024,06:00 (bis 31.08.2024)
+#: source_id: viz2021:13.42701,52.51181,27.08.2024,06:00 (bis 31.08.2024) (inaktiv)
 #: note: Halteverbotsschilder bis 31.03.2026
-#: also_indoor: traffic (G,B,T)
+#: also_indoor: traffic (ex-G,ex-B,ex-T)
 #: last_checked: 2024-08-27
 #: check_frequency: 30d
 #: next_check: 2024-08-31
@@ -44536,6 +44536,17 @@ EOF
 #: last_checked: 2024-08-31
 #: check_frequency: 10d
 	q3::inwork 14949,11474 14849,11539
+EOF
+     },
+     { from  => 1725141600, # 2024-09-01 00:00
+       until => 1726092000, # 2024-09-12 00:00
+       text  => 'Regierungsviertel: Vorbereitungen für das Bürgerfest zum 75-jährigen Bestehen des Deutschen Bundestages, Straßensperrungen, evtl. sind auch Radfahrer betroffen, vom 2.9.2024 bis 11.9.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240901 ("schrittweise", Bürgerfest findet am 06.+07.09.2024 statt)
+	2::inwork 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8540,12420
+	2::inwork 8415,12749 8309,12758 8306,12609 8207,12606
+	2::inwork 8766,12541 8667,12555 8596,12576
 EOF
      },
     );

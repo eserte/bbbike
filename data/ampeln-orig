@@ -7,7 +7,7 @@
 #: temporary vvv
 # 
 #: next_check_id: OSTEND-2024
-#: last_checked: 2024-08-28 vvv
+#: last_checked: 2024-09-01 vvv
 #: next_check: 2024-10-24 vvv
 #: valid: -20241024 vvv
 An der Wuhlheide/Rathenaustr.: Baustellenampel	X::inwork 19245,6379
@@ -259,7 +259,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2024-07-10 vvv
+#: last_checked: 2024-09-01 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-09-27 vvv
 #: valid: -20240927 vvv
@@ -290,7 +290,7 @@ Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 #: check_frequency: 120d
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2024-07-06
+#: last_checked: 2024-09-01
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
@@ -3349,7 +3349,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 17763,5104
 	F 718,2735
 	F 13999,2727
-	B0 17953,15221
+# REMOVED (Bahnstrecke nicht mehr in Betrieb) ---	B0 17953,15221
 # REMOVED (Ampel bleibt permanent) --- #: next_check_id: VOSSSTR-2014 --- #: note: provisorische Ampel --- #: XXX Siehe auch Baustelle in der Voßstr. --- #: last_checked: 2014-04-17 --- #: next_check: 2014-05-31
 	X 9000,11727
 	X 25451,14018
@@ -3700,7 +3700,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 17211,7280
 #: note: gilt nicht auf dem Radweg in Fahrtrichtung NW->SO
 	X 16747,6813
-	B0 17424,15400
+# REMOVED (Bahnstrecke nicht mehr in Betrieb) ---	B0 17424,15400
 #: note: Anforderungsampel quer zur Heidestr.
 	X 7820,13994
 #: note: Anforderungsampel

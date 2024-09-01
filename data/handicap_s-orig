@@ -79,7 +79,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-01
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -560,7 +560,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00
 #: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024)
 #: source_id: bvg2024:n40#HIM_FREETEXT_232184
-#: last_checked: 2024-08-03
+#: last_checked: 2024-09-01
 #: next_check: 2024-10-20
 #: valid: -20241020
 Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17701,8851 17729,8850
@@ -584,7 +584,7 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # REMOVED (wohl nicht mehr) --- #: next_check_id: WANDLITZ-2021 --- #: last_checked: 2022-10-16 vvv --- Wandlitzstr.: Sperrung der Fahrbahn zwischen Heiligenberger Str. und Stühlinger Str.	q2::inwork 18627,8475 18557,8525 --- Wandlitzstr.: Sperrung der Fahrbahn zwischen Heiligenberger Str. und Stühlinger Str.	q3::inwork 18557,8525 18494,8569 --- #: last_checked ^^^
 # REMOVED (fertig) --- #: next_check_id: ZWIESELER-2022 --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Richard-Kolkwitz-Weg: Engstelle wegen Bauarbeiten	q2::inwork 19711,10426 19813,10468
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2022-09-18 vvv
-# REMOVED --- Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17468,8692 17656,8700 17640,8627 17497,8623
+# REMOVED --- Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17468,8692 17656,8700 17639,8627 17497,8623
 # REMOVED --- Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17468,8692
 # REMOVED --- Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17468,8692 17497,8623
 # REMOVED --- #: last_checked ^^^
@@ -597,17 +597,17 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 # 
 ### Friedrichsfelde ###
 # 
-#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29
-#: last_checked: 2024-08-28 vvv
+#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?)
+#: last_checked: 2024-09-01 vvv
 #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2024-08-29 vvv
+#: next_check: 2024-09-06 vvv
 #: also_indoor: traffic (G,B,T)
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
 #: osm_watch[closed]: note 4145495 1
-Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17738,9822 17738,9922
-# REMOVED --- #: next_check ^^^
+Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17749,9811 17738,9922
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -892,13 +892,13 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="38"
 #: osm_watch: way id="1193560283" version="7"
-#: last_checked: 2024-08-14
+#: last_checked: 2024-09-01
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-01
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -2073,7 +2073,7 @@ Wuhlewanderweg: Fußgänger	q1 22242,11269 22244,11311 22073,11581 22009,11636 218
 Wuhlewanderweg: Fußgänger	q1 22244,11311 22268,11285
 Wuhlewanderweg: enge Unterführung	q3 22268,11285 22279,11272 22270,11210
 Wuhlewanderweg: Fußgänger	q1 22270,11210 22234,11198
-Wuhlewanderweg: Fußgänger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22027,6608 22050,6619 21976,6848 21896,6937 21590,7211 21569,7252 21567,7284 21611,7548 21609,7579 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921
+Wuhlewanderweg: Fußgänger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22027,6608 22050,6619 21976,6848 21896,6937 21590,7211 21569,7252 21567,7284 21611,7548 21609,7579 21620,7647 21596,7707 21565,7748 21616,7863 21629,7921
 Bismarcksfelder Str.: enge Brücke	q2 21629,7921 21599,7904
 Wuhlewanderweg: Fußgänger	q1 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21190,8467 21173,8576 21183,8738 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21354,9059
 Wuhlewanderweg: Fußgänger	q1 21383,9045 21467,9236 21517,9489 21587,9609 21633,9731 21675,9798 21691,9874
@@ -4966,7 +4966,7 @@ Lugierring: einige Fußgänger	q2 20116,836 20142,824
 (Ziekowstr. - Wilhelm-Blume-Allee): schmaler Weg, mäßiger Fußgängerverkehr	q1 2570,20837 2469,20812
 # 
 Ruth-Baumgarte-Str. (Mittelstreifen): einige Fußgänger	q2 17608,8483 17599,8485
-Heiner-Müller-Str. (Mittelstreifen): einige Fußgänger	q2 17640,8627 17648,8626
+Heiner-Müller-Str. (Mittelstreifen): einige Fußgänger	q2 17639,8627 17648,8626
 # 
 #: note: die Gegenrichtung wird in gesperrt-orig behandelt
 Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
@@ -5007,6 +5007,10 @@ Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,1
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17668,8696
 # 
 (Uferweg): einige Fußgänger	q2 11821,11733 11957,11603
+# 
+#: note: zwei Bodenschwellen oben, weitere zwei Bodenschwellen vor der Parkplatzausfahrt; außerdem Tempo 10
+#: note: Bodenschwellen gehen über die gesamte Fahrbahnbreite, aber beim Hochfahren stören sie kaum
+Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 25573,1609 25438,1638 25399,1629
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

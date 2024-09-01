@@ -285,7 +285,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder
-#: last_checked: 2024-08-14
+#: last_checked: 2024-09-01
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -1286,7 +1286,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="14"
-#: last_checked: 2024-05-15
+#: last_checked: 2024-09-01
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1456,8 +1456,8 @@ Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 12731,10547
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
-Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
-Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
+Mellenseestr. [Wohngebiet]	1 17587,9655 17628,9757 17633,9898
+Mellenseestr. [Wohngebiet]	1 17777,9649 17749,9811 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
 # REMOVED (eigentlich weitgehend beendet) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2022-05-06 --- #: check_frequency: 14d --- #: valid: 20220510-
 Mühsamstr.	1 13818,12897 13830,12907
@@ -1619,8 +1619,8 @@ Dammweg: Mittelstreifen	3nocross 14853,7451 14775,7385 14758,7373
 #: note: Einbahnstraßenregelung vermutlich wegen der Bushaltestelle
 Straße 3	1s:q4 18816,19648 18730,19672 18644,19695 18544,19722
 # 
-Adolf-Wermuth-Allee	1 17668,8696 17648,8626 17627,8556 17608,8483
-Adolf-Wermuth-Allee	1 17581,8422 17599,8485 17619,8558 17640,8627 17659,8698
+Adolf-Wermuth-Allee	1 17668,8696 17648,8626 17628,8556 17608,8483
+Adolf-Wermuth-Allee	1 17581,8422 17599,8485 17619,8558 17639,8627 17659,8698
 # 
 Ottomar-Geschke-Str. [Radweg]	1::igndisp 21279,4567 21332,4655
 # 
@@ -4076,7 +4076,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="27"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-08-14
+#: last_checked: 2024-09-01
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4098,7 +4098,7 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 # 
 #: next_check_id: MARIENUFER-2023
 #: osm_watch: way id="1272560911" version="2"
-#: last_checked: 2024-07-20
+#: last_checked: 2024-09-01
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
@@ -4210,11 +4210,11 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: note: nördlicher Abschnitt soll eingezogen werden
 #: XXX angrenzend Hochbauarbeiten für "Kleinstwohnanlage für das betreute Einzelwohnen für psychisch kranke Erwachsene, Wateweg 36/38"
 #: XXX wird dieser Abschnitt in Zukunft befahrbar bleiben?
-#: XXX kann auch offen sein, evtl. nur während Arbeitszeiten gesperrt?
+#: XXX kann auch offen sein (gesehen z.B. am 2024-09-01 (Sun)), evtl. nur während Arbeitszeiten gesperrt?
 #: osm_watch: way id="26190195" version="19"
 #: osm_watch: way id="1157662852" version="2"
 #: priority: #C
-#: last_checked: 2024-02-10
+#: last_checked: 2024-09-01
 #: check_frequency: 180d
 Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 # 
@@ -4237,10 +4237,10 @@ Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-generalshof-1-k%C3%B6penick.874/#post-22500
 # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="770592585" version="5"
-#: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straße und der neuen Anbindung was gemacht
-#: last_checked: 2024-07-30 (mapillary)
+#: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straße und der neuen Anbindung was gemacht; mittlerweile kann man (manchmal?) gut passieren (gesehen 2024-09-01 (Sun) mittags)
+#: last_checked: 2024-09-01
 #: check_frequency: 21d
-Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22057,5305 22095,5344
+Am Generalshof: Hochbauarbeiten, Fahrbahn offiziell noch gesperrt	2::inwork 22057,5305 22095,5344
 # REMOVED (hier schon passierbar --- Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22095,5344 22140,5392
 # 
 #: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
@@ -4498,29 +4498,29 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-neubau-mehrfamilienhaus-wohnanlage-parkstadt-karlshorst-berlin-deutschland-637598.html
-#: last_checked: 2024-08-03 vvv
+#: last_checked: 2024-09-01 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
-Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
-# REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
+# REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
+# REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="15"
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
-Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
-# REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17640,8627 17648,8626
+# REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
+# REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="10"
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
-# REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17640,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
-# REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17668,8696 17648,8626 17627,8556
+# REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17639,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
+# REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17668,8696 17648,8626 17628,8556
 # REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
 # REMOVED (hier sind zumindest die Gehwege passierbar, Fahrbahn noch provisorisch) --- #: osm_watch: way id="1084269869" version="14" --- Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17521,8549 17619,8558
-# REMOVED (verbunden) --- Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17619,8558 17627,8556
+# REMOVED (verbunden) --- Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17619,8558 17628,8556
 # REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
 # REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
 # REMOVED --- #: next_check ^^^
 # REMOVED (hier nicht mehr) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17659,8698 17468,8692
 # REMOVED (hier nicht (mehr?)) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17738,8450 17755,8519
-# REMOVED (hier nicht mehr) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17755,8519 17627,8556
+# REMOVED (hier nicht mehr) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17755,8519 17628,8556
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="1061057021" version="10" --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17773,8588 17648,8626
 # REMOVED (vermutlich nicht mehr) --- #: osm_watch: way id="1061057024" version="10" --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17608,8483 17682,8464 17738,8450
 #: last_checked ^^^
@@ -4530,7 +4530,7 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: note: Halteverbotsschilder bis 31.12.2024
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
-#: last_checked: 2024-08-03
+#: last_checked: 2024-09-01
 #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
 #: last_checked: 2024-07-20
@@ -4902,7 +4902,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # REMOVED --- #: osm_watch: way id="719023970" version="16"
 #: osm_watch: node id="11956061128" version="1"
 #: osm_watch: node id="9814568851" version="1"
-#: last_checked: 2024-07-20 vvv
+#: last_checked: 2024-09-01 vvv
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251
 #: note: Bauzäune können weggeschoben sein (gesehen 2024-06-09, 2024-07-20), aber das sieht sehr nach Hochbaustelle aus
 #: osm_watch: way id="719023970" version="16"
@@ -4912,7 +4912,7 @@ Am Kutscherhaus: Hochbaustelle	2::inwork 21386,5251 21514,5310
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 #: osm_watch: way id="719023969" version="14"
-#: last_checked: 2024-06-09
+#: last_checked: 2024-09-01
 #: check_frequency: 90d
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (mittlerweile ständig offen?) --- #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So), vermutlich auch am 2023-03-17 (Fr) --- #: osm_watch: way id="944115137" version="10" --- #: last_checked: 2023-03-17 --- Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
