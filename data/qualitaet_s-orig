@@ -99,7 +99,8 @@ Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193
 Weserstr.: Asphalt	Q0 12328,9117 12406,9076 12480,9037 12524,9012 12590,8977
 # REMOVED --- #: next_check_id: WESER-2021 --- #: last_checked: 2022-09-15 --- #: check_frequency: 14d --- #: next_check: 2022-09-15
 Weserstr.: Asphalt	Q0 12590,8977 12740,8862
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+ 12740,8862 12881,8750
+#: historical_note: bis Sommer 2024: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität, Q2+
+Weserstr.: Asphalt	Q0 12740,8862 12881,8750
 #: historical_note: bis Frühjahr 2024: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität, Q2+
 Weserstr.: Asphalt	Q0 12881,8750 13033,8628
 Weserstr.: Asphalt	Q0 13033,8628 13124,8562 13217,8493
@@ -137,7 +138,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2024-08-17
+#: last_checked: 2024-09-02
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -178,7 +179,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by[removed]: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023) (umbenannt)
 #: by: https://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung) (3. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2025 - 3. Quartal 2025)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
-#: osm_watch: way id="102486250" version="23"
+#: osm_watch: way id="102486250" version="25"
 #: last_checked: 2024-06-22
 #: check_frequency: 120d
 #: next_check: 2025-09-30
@@ -379,7 +380,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2024-08-17
+#: last_checked: 2024-09-02
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -922,7 +923,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2024-07-23 (mapillary)
+#: last_checked: 2024-09-02
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -32446,7 +32447,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 12682,9089
 Kreuzungsbereich asphaltiert	Q0 12590,8977
 #: historical_note: früher: Kreuzungsbereich mit Kopfsteinpflaster, Q2
 Kreuzungsbereich asphaltiert	Q0 12740,8862
-Kreuzungsbereich mit Kopfsteinpflaster	Q2- 12881,8750
+#: historical_note: früher (bis Sommer 2024): Kreuzungsbereich mit Kopfsteinpflaster, Q2- 
+Kreuzungsbereich asphaltiert	Q0 12881,8750
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12836,8980
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 11769,8515
 Kreuzungsbereich asphaltiert	Q0 10103,10989

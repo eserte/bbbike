@@ -3359,18 +3359,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: außerhalb der Bühnenprogrammzeiten keine Behinderungen
-#: by: https://www.berlin.de/events/5983059-2229501-radioeins-parkfest.html
-#: by: https://www.radioeins.de/themen/_/parkfest/
-	q3::temp 8652,9870 8571,9896
-',
-         'from' => 1724364000,
-         'id' => 2473,
-         'text' => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, vom 24. August 2024 bis 1. September 2024',
-         'type' => 'handicap',
-         'until' => 1725213600
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
@@ -5480,7 +5469,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-08-17
+#: last_checked: 2024-09-02
 #: check_frequency: 30d
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5496,13 +5485,13 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="2"
-#: last_checked: 2024-08-17 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2024-09-02 vvv
+#: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
 # REMOVED --- zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
 #: osm_watch: way id="36738527" version="45"
 zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
-Elbestr./Weserstr.: Umwege	q3::inwork 12822,8675 12881,8750 12954,8840
+# REMOVED (weitgehend wieder frei) --- Elbestr./Weserstr.: Umwege	q3::inwork 12822,8675 12881,8750 12954,8840
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED --- #: next_check: 2023-07-31
@@ -5510,7 +5499,7 @@ Elbestr./Weserstr.: Umwege	q3::inwork 12822,8675 12881,8750 12954,8840
 ',
          'from' => 1690668000,
          'id' => 3538,
-         'text' => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, Umwege im Kreuzungsbereich Elbestr. (Stand Mitte August 2024)',
+         'text' => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn noch nicht offiziell eröffnet, enger gemeinsamer Rad- und Gehweg auf dem Hochbord (Stand Anfang September 2024)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6690,7 +6679,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1828834678851199380
 #: by: https://pbs.twimg.com/media/GWFGT27XQAAwuc3?format=jpg&name=4096x4096
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: last_checked: 2024-08-31 (webcam)
+#: last_checked: 2024-09-02
 #: check_frequency: 3d
 #: next_check: 2024-09-06
 	2::temp 10696,12601 10599,12526
@@ -6978,7 +6967,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2024-08-28 (osm)
+#: last_checked: 2024-09-02
 #: check_frequency: 120d
 #: next_check: 2024-12-29
 	q4::inwork 12407,8177 12545,8209
@@ -7143,7 +7132,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-08-31 vvv
+#: last_checked: 2024-09-02 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -7206,31 +7195,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.452251,52.492574,13.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.45427,52.4939,14.11.2023,13:59 (hier nur Kfz-Verkehr, bis 30.01.2024) (inaktiv)
-#: source_id: viz2021:13.45427,52.4939,20.11.2023,06:00 (bis 31.01.2024) (inaktiv)
-#: source_id: viz2021:13.452251,52.492574,20.11.2023,06:00 (hier nur Kfz-Verkehr, bis 31.01.2024) (bis 08.03.2024) (vorfristig inaktiv)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1724382200475353132#m (Verschiebung des Baustarts auf den 20.11.2023)
-# REMOVED --- #: note: abgesperrter Bereich ist etwa 40-50m lang, allerdings kann es zusätzliche Behinderungen wegen wendender Autofahrer geben --- #: XXX Das Ende der Bauarbeiten zum 31.1.2024 ist unwahrscheinlich (noch tiefe Gruben + Winterwetter). --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-16 --- #: check_frequency: 30d --- #: next_check: 2024-03-08
-# REMOVED (beendet) ---	q2::inwork 13860,9861 13704,9691
-# REMOVED (hier nicht) ---	q2::inwork 13704,9691 13642,9624
-# REMOVED --- #: note Baustellenschild der Wasserbetriebe: bis Mai 2024; Halteverbotsschilder bis 26.04.2024 (mittlerweile abgelaufen und nicht erneuert)
-#: also_indoor: traffic (B,T,G)
-#: add_fragezeichen: Ist die Bouchéstr. weiterhin wegen Bauarbeiten gesperrt?
-# REMOVED --- #: note Halteverbotsschilder bis 08.07.2024 (scheint aber nicht schaffbar zu sein)
-#: note: neues Baustellenschild der Wasserbetriebe: bis November 2024
-#: last_checked: 2024-08-17
-#: check_frequency: 30d
-#: next_check: 2024-11-30
-	q2::inwork 13489,9456 13357,9313
-',
-         'from' => undef,
-         'id' => 3968,
-         'text' => 'Bouchéstr.: Bauarbeiten, kurze Sperrung der Fahrbahn südwestlich der Karl-Kunger-Str., möglicherweise bis November 2024',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/uferweg-leipziger-strasse-eroffnung-am-30-november-10793791.html (Erwähnung der Sperrung bis Mitte Oktober 2024)
 # REMOVED (hier nicht) ---	2::inwork -11486,-1008 -11454,-1036
@@ -7633,15 +7598,15 @@ Gierkezeile, südlicher Abschnitt	q4::inwork 3507,12076 3514,11988 3528,11852
 #: source_id: viz2021:13.42701,52.51181,27.08.2024,06:00 (bis 31.08.2024) (inaktiv)
 #: note: Halteverbotsschilder bis 31.03.2026
 #: also_indoor: traffic (ex-G,ex-B,ex-T)
-#: last_checked: 2024-08-27
-#: check_frequency: 30d
-#: next_check: 2024-08-31
+#: last_checked: 2024-09-02
+#: check_frequency: 3d
+# REMOVED --- #: next_check: 2024-08-31
 # REMOVED --- #: next_check: 2026-03-31
 	q4::inwork 11966,11832 11993,11978
 ',
          'from' => 1724777253,
          'id' => 4047,
-         'text' => 'Krautstr.: Hochbauarbeiten, Fahrbahn zwischen Lange Str. und Holzmarktstr. gesperrt, mindestens bis Ende August 2024, evtl. noch länger',
+         'text' => 'Krautstr.: Hochbauarbeiten, Fahrbahn zwischen Lange Str. und Holzmarktstr. gesperrt, mindestens bis Anfang September 2024, evtl. noch länger',
          'type' => 'handicap',
          'until' => 1774972800
        },
@@ -7649,7 +7614,7 @@ Gierkezeile, südlicher Abschnitt	q4::inwork 3507,12076 3514,11988 3528,11852
          'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
-#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024)
+#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 	q4::inwork; 25050,13539 25163,13494
@@ -7722,7 +7687,7 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt\'s eine offizielle Wegführung für Radfahrer über den Hochbord.
 #: also_indoor: traffic (ex-H[falsch],re-G,W[ungenau],T[ungenau])
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße und Kiefholzstraße beendet?
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-02
 #: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 ',
@@ -7758,7 +7723,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: also_indoor: traffic (ex-H,re-G,re-B,re-W,T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-08-28 vvv
+#: last_checked: 2024-08-30 (mapillary) vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-10-18 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -7786,23 +7751,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1726848000
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
-#: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024)
-#: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
-#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
-#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
-	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
-',
-         'from' => 1724882400,
-         'id' => 4074,
-         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 30.08.2024 20:00 bis 01.09.2024 22:00',
-         'type' => 'handicap',
-         'until' => 1725220800
-       },
+       undef,
        undef,
        undef,
        {
@@ -7909,7 +7858,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        },
        {
          'data' => '#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
-#: last_checked: 2024-08-18 vvv
+#: last_checked: 2024-08-30 (mapillary) vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
 Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
@@ -7951,7 +7900,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-08-31 vvv
+#: last_checked: 2024-09-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8002,6 +7951,9 @@ Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
+#: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.
+#: last_checked: 2024-09-02
+#: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 ',
          'from' => 1719382667,
@@ -8200,9 +8152,9 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => undef
        },
        {
-         'data' => '#: also_indoor: traffic (H,B,T)
+         'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-02
 #: check_frequency: 30d
 #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -8282,15 +8234,17 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        },
        {
          'data' => '#: next_check_id: SIEGFRIED-2024
-#: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024) (bis 02.09.2024)
+#: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024) (bis 02.09.2024) (inaktiv)
 #: note: (noch) keine Einschränkung in der Rüdigerstr.
-	q2; 16820,12339 16831,12419 16857,12600 16859,12613 16860,12861
+#: source_id: viz2021:13.499269,52.518592,02.09.2024,07:00 (bis 13.09.2024)
+#: XXX Annahme einer gemeinsamen Rad/Gehwegführung
+	q2; 16860,12861 16859,12613 16857,12600 16831,12419 16820,12339
 ',
          'from' => 1723413600,
          'id' => 4135,
-         'text' => 'Siegfriedstr.: Bauarbeiten zwischen Rüdigerstr. und Bornitzstr., Richtung Norden gemeinsamer Geh- und Radweg, mögliche Engstellen, voraussichtlich bis 02.09.2024 17:00 Uhr',
+         'text' => 'Siegfriedstr.: Bauarbeiten zwischen Bornitzstr. und Rüdigerstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis 13.09.2024 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1725289200
+         'until' => 1726239600
        },
        {
          'data' => '#: source_id: LS/221-E/24/116 (bis 31.10.2024)
