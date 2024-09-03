@@ -213,7 +213,7 @@ Ernst-Thälmann-Park	F:P 12244,15190 12139,15242 12074,15161 11856,15299 11897,1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6908 (Vorlage zur Kenntnisnahme: Benennungsabsicht)
 #: last_checked: 2024-07-03 (BVV, vertagt)
 #: check_frequency: 120d
-	F:P 12025,14775 11896,14840 11864,14781 11998,14709
+	F:P 12025,14775 11896,14840 11864,14781 11998,14709 12025,14775
 Mauerpark	F:P 9935,15620 10075,15637 9997,15884 9996,15901 10064,15920 10081,15853 10105,15752 10123,15681 10130,15653 10186,15481 10188,15474 10228,15488 10234,15490 10403,15007 10271,14950
 #: note: ehem. Güterbhf. Eberswalder Str.
 Mauerpark	F:P 10208,14922 10271,14950 9935,15620 9976,15546 10031,15395 10053,15214
@@ -763,7 +763,7 @@ Gipsdreieck	F:P 10134,13474 10135,13506 10159,13523 10142,13556 10049,13528 1002
 #: osm_watch: way id="380356153" version="12"
 #: XXX neuer Name: Susanne-und-Kurt-Crohn-Platz
 #: add_fragezeichen: Hängen bereits Schilder für den Susanne-und-Kurt-Crohn-Platz?
-#: last_checked: 2024-06-20
+#: last_checked: 2024-09-03
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-11-23
@@ -1493,7 +1493,7 @@ Friedhof Wartenberg	F:Cemetery 18073,18918 18061,18922 18042,18851 18081,18836 1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_44_4149_4196_online.pdf (Benennung)
 #: osm_watch: way id="51691170" version="10"
 #: XXX "Platz an den Drei Grazien": Werden hier entsprechende Straßenschilder aufgehängt? (bei osm wurde schon der neue Name eingetragen)
-#: last_checked: 2024-07-16
+#: last_checked: 2024-09-03
 Generationenpark	F:P 13434,15045 13516,14997 13548,14980 13556,14993 13524,15009 13536,15033 13455,15078 13434,15045
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1330765.php
 Sportplatz am Bildungscampus Schöneberger Linse	F:Sport 7255,8148 7362,8137 7356,8068 7250,8079 7255,8148
@@ -1571,6 +1571,8 @@ Friedhof Hohenschönhausen	F:Cemetery 17370,15670 17405,15677 17437,15617 17493,
 #: XXX neuer Name: Konrad-Birkholz-Platz
 #: next_check: 2025-03-17
 	F:P -7160,5090 -7173,5035 -7134,5020 -7120,5076 -7160,5090
+# 
+Borsigplatz	F:P -957,23810 -967,23798 -1007,23835 -983,23859 -943,23824 -957,23810
 # 
 #############################################################################
 # Plätze (experimentell)

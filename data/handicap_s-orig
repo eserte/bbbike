@@ -22,13 +22,6 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 #: last_checked: 2024-08-27
 Straßenbahnwendeschleife Virchowstr.: Bauarbeiten, Sperrungen möglich	q4::inwork 12925,13373 13081,13457 13151,13367
 # 
-# 
-#: osm_watch: way id="482690912" version="6"
-#: add_fragezeichen: Gibt es die Engstellen weiterhin?
-#: last_checked: 2024-07-31
-#: check_frequency: 90d
-(entlang des Stadtbahnviadukts): Engstellen wegen Hochbauarbeiten	q3::inwork 12132,11788 12207,11763
-# 
 # REMOVED --- #: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024) (inaktiv) --- #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-04 (mapillary) vvv --- #: next_check: 2024-02-09 vvv --- #: valid: -20240209 vvv --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860 --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX Sieht nach Leitungsarbeiten aus. --- #: add_fragezeichen: Besteht die Sperrung noch immer? --- #: also_indoor: traffic (B) --- #: last_checked: 2024-04-23 --- #: check_frequency: 14d --- Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -46,7 +39,7 @@ Straßenbahnwendeschleife Virchowstr.: Bauarbeiten, Sperrungen möglich	q4::inwork
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2024-09-02
+#: last_checked: 2024-09-03
 #: check_frequency: 90d
 #: next_check: 2026-08-22
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -102,7 +95,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2024-06-10 vvv
+#: last_checked: 2024-09-03 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -314,7 +307,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: ROTESRATHAUS-2023
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
 #: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon
-#: last_checked: 2024-09-02 vvv
+#: last_checked: 2024-09-03 (webcam) vvv
 #: next_check: 2024-09-06 vvv
 #: valid: -20240906 vvv
 (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
@@ -389,7 +382,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-09-02
+#: last_checked: 2024-09-03
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -402,7 +395,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2024-08-13
+#: last_checked: 2024-09-03
 #: check_frequency: 90d
 #: next_check: 2028-03-31
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -884,7 +877,7 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 ### Lichtenberg ###
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2024-08-01
+#: last_checked: 2024-09-03
 #: check_frequency: 45d
 #: next_check: 2025-05-31
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
@@ -1107,20 +1100,14 @@ Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 10
 # 
 ### Prenzlauer Berg ###
 # 
-#: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
-#: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
-#: osm_watch: way id="156800019" version="6"
-#: last_checked: 2024-08-21
-#: check_frequency: 60d
-Diesterwegstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q3::inwork 12060,15141 11995,15012
+# REMOVED (Hochbauarbeiten dauern noch an, aber die Sperrung wurde aufgehoben) --- #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
+# REMOVED --- #: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
+# REMOVED --- #: osm_watch: way id="156800019" version="6"
+# REMOVED --- #: last_checked: 2024-08-21
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- Diesterwegstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q3::inwork 12060,15141 11995,15012
 # 
-#: osm_watch: way id="1047231711" version="3"
-#: note: Halteverbotsschilder bis Juli 2024
-#: last_checked: 2024-07-09
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2024-07-01
-Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
-# 
+# REMOVED (Fahrbahn wieder frei) --- #: osm_watch: way id="1047231711" version="3" --- #: note: Halteverbotsschilder bis Juli 2024, mittlerweile bis in den Herbst 2024 verlängert, aber nicht mehr für mich relevant --- #: last_checked: 2024-09-03 --- #: check_frequency: 60d --- #: next_check: 2024-07-01 --- Jablonskistr.: Baustelle an der Kreuzung Winsstr., nur Gehweg ist frei	q3::inwork 11949,14557 12228,14404
 # REMOVED (mittlerweile wurde die Sperrung entfernt und die provisorische Asphaltdecke zur Hälfte zurückgebaut) --- #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220 --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1119011.php (Erwähnung) --- #: by: https://dstrctberlin.com/de/2021/10/18/auf-gute-nachbarschaft/ --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dstrctberlin-ist-bald-bezugsfertig_a338513 --- #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4 --- # REMOVED (keine construction mehr) --- #: osm_watch: way id="164816805" version="12" --- #: osm_watch: node id="1425174760" version="5" --- #: priority: #C --- #: last_checked: 2023-10-16 --- #: check_frequency: 30d --- Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # REMOVED (Bauarbeiten laut osm beendet) --- #: next_check_id: HOSEMANN-2019 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021) --- #: by: https://mein.berlin.de/vorhaben/2023-00780/ (Abschluss der Bauarbeiten voraussichtlich noch 2023) --- #: XXX laut Schild der Wasserbetriebe bis Dezember 2022 (kann vermutlich nicht gehalten werden) --- #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv) --- #: osm_watch: way id="885619857" version="21" --- #: osm_watch: way id="885619858" version="16" --- # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020 --- #: also_indoor: traffic (G,B,W) --- #: priority: #B --- #: last_checked: 2023-11-07 (osm) vvv --- #: check_frequency: 30d vvv --- #: next_check: 2023-12-31 vvv --- # REMOVED --- #: valid: -20200731 vvv --- Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518 --- Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork 12556,15518 12605,15491 12621,15482 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (beendet?) --- #: XXX laut fritz nur Richtung Prenzlauer Allee (ist aber falsch!), Bauarbeiten bis 31.12.2019 --- #: source_id: LMS-BR_r_LMS-BR_188811_LMS-BR_72 --- #: last_checked: 2019-12-11 --- #: next_check: 2019-12-31 --- #: valid: -20191231 --- Erich-Weinert-Str.: Bauarbeiten an der Dunckerstr., einige Meter der Fahrbahn sind gesperrt	q4::inwork 11833,15912 11905,15878
@@ -3516,7 +3503,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2024-08-28 vvv
+#: last_checked: 2024-09-03 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467

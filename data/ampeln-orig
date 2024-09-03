@@ -117,7 +117,7 @@ Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	
 #: by: https://www.luise-nord.de/bauprojekte-mediaspree-mit-bauruinen-elements-steht-auf-der-kippe-postfuhramt-verzoegert-sich/
 #: XXX eigentlich zwei Ampeln; außerdem wird der Radverkehr Richtung Süden einige Meter via Hochbord geführt
 #: osm_watch: way id="124182482" version="9"
-#: last_checked: 2024-08-27
+#: last_checked: 2024-09-03
 Michaelbrücke	F::inwork 11676,11839
 # 
 # REMOVED (ausgechaltet) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: next_check_id: STERNDAMM-2023 --- #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024) --- #: source_id: viz2021:13.509893,52.456325,14.06.2024,14:49 (bis 15.08.2024) (inaktiv) --- #: source_id: viz2021:13.509919,52.456406,16.08.2024,07:00 (bis 16.08.2024) (inaktiv) --- #: source_id: viz2021:13.509919,52.456406,16.08.2024,18:00 (bis 06.09.2024) --- #: note: etwa 20m südöstlich --- #: last_checked: 2024-08-17 --- #: check_frequency: 90d --- #: next_check: 2024-08-16 --- #: valid: -20240906 --- Michael-Brückner-Str.	F::inwork 17808,5669
@@ -322,12 +322,14 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8311,19458
 # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8268,19558
 #: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024) (bis 24.05.2024) (inaktiv)
-#: source_id: viz2021:13.374486,52.583736,27.02.2024,07:00 (bis 07.10.2024)
+#: source_id: viz2021:13.374486,52.583736,27.02.2024,07:00 (bis 07.10.2024) (bis 11.09.2024)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/ende-der-baustelle-endlich-in-sicht_a412148 (Bauarbeiten bis Juni/Juli 2024)
 #: last_checked: 2024-07-13 vvv
-#: next_check: 2024-10-07 vvv
+#: next_check: 2024-09-11 vvv
+#: valid: -20240911 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 # REMOVED (diese Ampel ist nicht mehr gelistet) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
+#: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
