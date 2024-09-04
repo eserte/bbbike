@@ -91,6 +91,7 @@ Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 
 Antonienstr.	1 3930,17923 3946,18003 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	1s 4228,19024 4223,18982
 Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
+Spreestr.	1 17900,6072 17939,5968 17935,5961 17877,5860
 Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s 15674,10851 15777,10897 15820,10916 15870,10938
@@ -2986,7 +2987,7 @@ Drängelgitter	BNP:3:48:trailer=10 18707,3074
 Drängelgitter	BNP:3:45:trailer=10 18724,3091
 Drängelgitter	BNP:3:36:trailer=10 18822,3188
 Drängelgitter	BNP:3:-232:trailer=10 19725,-51
-Drängelgitter	BNP:3:-198:trailer=10 19774,-187
+Drängelgitter	BNP:3:-228:trailer=10 19769,-189
 Drängelgitter	BNP:3:-194:trailer=10 19734,-45
 Schranke	BNP:3:-202:trailer=10 22041,-313
 Schranke (Umfahrung auf dem Gehweg)	BNP:5:-11:trailer=15 -12413,-789
@@ -3468,6 +3469,7 @@ Drängelgitter	BNP:3:-161:trailer=10 25515,54428
 Drängelgitter	BNP:3:58:trailer=10 26718,56454
 Drängelgitter	BNP:3:-12:trailer=10 26803,56547
 Tor	BNP:10:-140 33926,63348
+Tor	BNP:20:-74 20127,1538
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 Zum Feldrain (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130

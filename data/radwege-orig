@@ -1313,7 +1313,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-09-02 vvv
+#: last_checked: 2024-09-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1714,7 +1714,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2024-06-19 vvv
+#: last_checked: 2024-09-04 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
@@ -2117,13 +2117,13 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.berliner-woche.de/mitte/c-bauen/grossbauprojekt-muehlendammbruecke-geht-im-dezember-los_a420736
 #: by: https://www.deutsches-architekturforum.de/thread/14486-neubau-m%C3%BChlendammbr%C3%BCcke-in-bau/?postID=764077#post764077
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-m%C3%BChlendammbr%C3%BCcke.1088/#post-23477
-#: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029)
+#: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024)
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
 #: last_checked: 2024-09-03 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-09-30 vvv
+#: next_check: 2024-12-31 vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
 provisorische Radspur, mit Barriere	RW4; 10512,12039 10550,12096 10574,12131 10625,12206 10646,12234
 provisorische Radspur	RW4; 10646,12234 10625,12206 10574,12131
@@ -3023,7 +3023,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-09-02
+#: last_checked: 2024-09-04
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4355,7 +4355,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2024-09-01 vvv
+#: last_checked: 2024-09-04 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -6326,7 +6326,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7609 (Antrag)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (bis Mitte Oktober für Kfz-Verkehr gesperrt)
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-04
 #: check_frequency: 90d
 #: next_check: 2024-10-11
 provisorische Radspur	RW4; 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
@@ -7016,7 +7016,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2024-07-10
+#: last_checked: 2024-09-04
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
@@ -7688,7 +7688,7 @@ asphaltiertes Straßenbahnkap	RW1;RW1 9289,19947 9312,19887
 	RW2; 14271,9712 14250,9756
 	RW4; 14250,9756 14244,9812
 asphaltiert	RW1;RW1 18930,3703 19162,3935
-	RW6;RW6 18828,3196 18836,3203 18892,3256 18953,3318
+	RW6;RW6 18828,3196 18892,3256 18953,3318
 	RW6;RW6 17247,19212 17247,19229 17251,19264 17403,19313 17405,19252
 	RW6;RW6 17448,19243 17405,19252 17339,19231 17247,19229
 # REMOVED (existiert nicht mehr) --- Verbundsteinpflasterradweg	RW1; 5368,13406 5384,13555 --- Verbundsteinpflasterradweg	RW1; 5390,13616 5384,13555 5368,13406

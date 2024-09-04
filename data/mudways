@@ -124,6 +124,7 @@ Rüdersdorfer Str.: zwar neuer Asphalt, aber mit gelegentlichen Entwässerungsprob
 #: mud: 2022-11-27: weitgehend trocken, im Bereich der Baustelle etwas nass-sandig	h=q1
 #: mud: 2023-10-30: Wasser in Kuhlen, aber problemlos umfahrbar	h=q0-
 #: mud: 2024-04-07: keine Beeinträchtigungen	h=q0
+#: mud: 2024-09-04: keine Beeinträchtigungen	h=q0
 Am Betriebsbahnhof Schöneweide: unbefestigt, mit vielen kleinen Kuhlen	X 18160,4940 18107,5011 17822,5409
 # 
 #: mud: 2020-03-14: keine Beeinträchtigungen	h=q0
@@ -224,8 +225,8 @@ Verbindungsweg Carlsgarten - Wuhlheide: Schotterweg	X 19340,7400 19321,7360 1925
 Wasserwerk Wuhlheide - S-Bhf. Wuhlheide: Waldweg	X 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
 # 
 #: mud: 2020-03-28: trocken, es existieren einige sandige Stellen, die aber mit dem Normalrad noch unproblematisch sind
-#: mud: 2020-06-01: mehrere sandige Stellen, auch mit einem Normalrad nur 14km/h
-#: mud: 2020-10-24: keine sandigen Stellen, etwas feuchterer Boden, aber ohne weitere Beeinträchtigungen
+#: mud: 2020-06-01: mehrere sandige Stellen, auch mit einem Normalrad nur 14km/h	h=q3+,dry
+#: mud: 2020-10-24: keine sandigen Stellen, etwas feuchterer Boden, aber ohne weitere Beeinträchtigungen	h=q0-,wet
 #: mud: 2020-12-20: keine Beeinträchtigungen	h=q0
 #: mud: 2022-04-24: einige leicht sandige Stellen, aber keine größeren Beeinträchtigungen	h=q1-,dry
 #: mud: 2022-08-07: mehrere sandige Stellen	h=q2,dry
@@ -237,6 +238,7 @@ Wasserwerk Wuhlheide - S-Bhf. Wuhlheide: Waldweg	X 19463,7117 19599,7075 19721,7
 #: mud: 2023-07-09: mehrere sandige Stellen	h=q2,dry
 #: mud: 2023-08-19: einige leicht sandige Stellen, aber keine größeren Beeinträchtigungen	h=q1-,dry
 #: mud: 2023-10-28: einige Pfützen und matschige Stellen	h=q2-,wet
+#: mud: 2024-09-04: mehrere sandige Stellen	h=q2-,dry
 Waldweg an der S-Bahn: Waldweg, mögliche sandige Stellen	X 20870,7122 21194,6891 21412,6735
 # 
 #: mud: 2020-10-24: einige leicht matschige Stellen
@@ -247,6 +249,7 @@ Waldweg an der S-Bahn: Waldweg, mögliche sandige Stellen	X 20870,7122 21194,6891
 #: mud: 2023-07-09: keine Beeinträchtigungen	h=q0
 #: mud: 2023-08-19: keine Beeinträchtigungen	h=q0
 #: mud: 2023-10-28: einige leicht matschige Stellen	h=q1-,wet
+#: mud: 2024-09-04: keine Beeinträchtigungen	h=q0
 Waldweg an der S-Bahn - Köpenicker Str.: Waldweg	X 20870,7122 20867,7165 20892,7236 20872,7268
 # 
 #: mud: 2020-03-28: keine Beeinträchtigungen	h=q0

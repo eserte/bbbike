@@ -3393,7 +3393,24 @@ Kleistpark	2::night 7310,9622 7307,9528
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: IM_020213 (alt, von 2013) (inaktiv)
+#	q2::temp 9108,11961 9138,11872
+#	3::temp 9195,11972 9108,11961 9076,12054
+#	3::temp 9076,12054 9108,11961 9195,11972
+#	3::temp 9195,11972 9108,11961 9138,11872
+#	3::temp 9138,11872 9108,11961 9195,11972
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240904 (jährliches Fest der Landesvertretung Hamburg)
+Mauerstr.	2::temp 9076,12054 9108,11961 9138,11872
+Jägerstr.	2::temp 9108,11961 9195,11972
+Taubenstr.	2::temp 9138,11872 9207,11880
+',
+         'from' => 1725400800,
+         'id' => 2481,
+         'text' => 'Mauerstr./Jägerstr./Taubenstr.: Veranstaltung, Straßen gesperrt, vom 05.09.2024 06:00 Uhr bis 13.09.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1726236000
+       },
        undef,
        undef,
        undef,
@@ -4141,7 +4158,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-08-21
+#: last_checked: 2024-09-04 (daf)
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -4277,7 +4294,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: last_checked: 2024-08-03
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-04
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5540,10 +5557,10 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOxmWwAAhC4Z.png (Umleitung für Radfahrer)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1479228.php (nächste Sperrung der Hämmerlingstr.: 23.9.2024-2.10.2024)
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025)
-#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar)
+#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2024-09-01 vvv
+#: last_checked: 2024-09-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-09-21 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -5877,7 +5894,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-04
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6283,7 +6300,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="26"
-#: last_checked: 2024-06-19
+#: last_checked: 2024-09-04
 #: check_frequency: 120d
 #: next_check: 2024-10-25
 	q4::inwork; 22431,6068 22467,6135
@@ -6679,7 +6696,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
 #: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023) (am 3.9.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1828834678851199380
 #: by: https://pbs.twimg.com/media/GWFGT27XQAAwuc3?format=jpg&name=4096x4096
-#: source_id: viz2021:13.40718,52.51839,03.09.2024,18:00 (bis 04.09.2024)
+#: source_id: viz2021:13.40718,52.51839,03.09.2024,18:00 (bis 04.09.2024) (inaktiv)
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
 #: last_checked: 2024-09-03 (webcam)
 #: check_frequency: 3d
@@ -7420,7 +7437,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2024-08-21 vvv
+#: last_checked: 2024-09-04 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-05-31 vvv
 	2::inwork 3867,12616 3888,12618 4131,12641
@@ -7814,16 +7831,16 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        },
        {
          'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
-#: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024)
+#: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
 #: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
 	q3::inwork; 5476,20372 5801,20339
 ',
          'from' => 1718254800,
          'id' => 4088,
-         'text' => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, vom 14.06.2024 07:00 bis 30.09.2024 17:00',
+         'text' => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, voraussichtlich bis Ende 2025',
          'type' => 'handicap',
-         'until' => 1727708400
+         'until' => 1767196800
        },
        undef,
        {
@@ -7901,17 +7918,7 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.301956,52.432374,26.06.2024,07:00 (hier auch Radverkehr, bis 30.08.2024) (bis 04.09.2024)
-Finckensteinallee (trotz Radweg?)	q4::inwork; 3456,2835 3641,2827 3738,2821
-Potsdamer Str. (Sackgasse)	q4::inwork 3644,2937 3641,2827
-',
-         'from' => 1719291600,
-         'id' => 4097,
-         'text' => 'Finckensteinallee: Leitungsarbeiten in Höhe Potsdamer Str., Richtung Osten gesperrt, auch sind Radfahrer betroffen, vom 26.06.2024 07:00 bis 04.09.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1725462000
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024)
@@ -8136,7 +8143,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-02
+#: last_checked: 2024-09-04
 #: check_frequency: 30d
 #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -8360,17 +8367,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => 1729864800
        },
-       {
-         'data' => '#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/erneuerung-fuek-weichenerneuerung-in-friedrichstrasse-brueckenarbeiten-alt-moabit/#con-29937 (SEV)
-#: note: wegen SEV-Haltestelle
-	q4::temp; 9121,12514 9108,12635 9098,12687
-',
-         'from' => 1724241259,
-         'id' => 4147,
-         'text' => 'Neustädtische Kirchstr.: Einbahnstraßenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung Süden, voraussichtlich bis 04.09.2024',
-         'type' => 'handicap',
-         'until' => 1725406200
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024)
 #: note: Start der Sperrung hat sich verzögert

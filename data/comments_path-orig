@@ -299,7 +299,7 @@ Brunnenstr. - Humboldthain: unbequem passierbarer Mittelstreifen, ggfs. schon an
 Humboldthain - Brunnenstr.: unbequem passierbarer Mittelstreifen, ggfs. erst an der Böttgerstr. die Straßenseite wechseln	CP; 9092,15789 9255,15816 9242,15843
 Anzengruberstr. - Sonnenallee/Finowstr.: Sonnenallee links an der Finowstr. überqueren	CP; 12856,8344 13038,8394 13011,8416
 Sonnenallee - Anzengruberstr.: Sonnenallee erst an der Finowstr. überqueren	CP; 13102,8343 13038,8394 12856,8344
-Rudower Chaussee - Max-Born-Str.: Rudower Chaussee kann über Fußgängerfurt gequert werden	CP; 19071,2746 19111,2777 19064,2867
+Rudower Chaussee - Max-Born-Str.: Rudower Chaussee kann über Fußgängerfurt vor der Einmündung gequert werden	CP; 19071,2746 19111,2777 19064,2867
 Max-Born-Str. - Rudower Chaussee: Rudower Chaussee kann über Fußgängerfurt gequert werden	CP; 19064,2867 19111,2777 19206,2848
 Kulmer Str./Goebenstr.: Fußgängerampel an der linken Seite zum Überqueren der Goebenstr. benutzen	CP; 7771,9479 7829,9723 7848,9814
 # REMOVED (nicht notwendig) --- zur Kietzer Str.: in die Grünanlage einfahren	CP2; 15353,11902 15307,11876
@@ -525,7 +525,7 @@ Abzweig - Salvador-Allende-Str.: auf den linken Gehweg bis zur Ampel Friedrichsh
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5826 (Verkehrsführung verbessern) (wurde allerdings abgelehnt; die allgemeine Verbesserung der Situation wird aber irgendwann passieren ("Umgestaltung des Bahnhofsvorplatzes")
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/3A22FF18-9B17-4F51-B470-2F50F0C68929/U13-2_Entwurf%20Sterndamm%20und%20Bahnhofsvorplatz_LP-Blatt02.pdf (Linksabbiegemöglichkeit für Radfahrer im Zuge der Umgestaltung am S-Bhf. Schöneweide)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/michael-br%C3%BCckner-str-7-schnellerstr-27.1383/#post-22477
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-04
 #: check_frequency: 180d
 Michael-Brückner-Str. - Sterndamm: an der Ampel Sterndamm besteht vom Radweg aus keine Möglichkeit zum Linksabbiegen, deshalb bereits an der Ampel Hasselwerderstr. auf den linken Gehweg wechseln	PI; 17960,5511 17886,5587 17822,5524 17765,5469 17754,5460
 Rixdorfer Str. - KGA An der Südostallee: wegen einer Leitplanke zwischen Radweg und Fahrbahn bereits 40 Meter vorher auf die Fahrbahn wechseln	CP; 17160,6239 17056,6133 17070,6115
@@ -623,7 +623,7 @@ Rathausstr. - Frankfurter Allee: Fußgängerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ändert sich die Ausschilderung? vvv
-#: last_checked: 2024-09-01 vvv
+#: last_checked: 2024-09-04 vvv
 #: note: früher: ausgeschildert "zur Salzmannstraße Huronseestraße"
 nicht ausgeschildert, Richtung Salzmannstr./Huronseestr.	CP2; 16900,9861 16895,9922
 #: note: früher: ausgeschildert "zur Sewanstraße"

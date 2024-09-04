@@ -67,7 +67,8 @@ Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
 # 
 #: source_id: viz2021:13.593606,52.444772,15.04.2024,10:00 (bis 17.06.2024) (bis 02.08.2024) (bis 09.08.2024) (bis 12.08.2024) (bis 18.10.2024)
-#: last_checked: 2024-05-15
+#: note: gilt wohl nicht auf dem radwegartigen Weg Richtung Süden
+#: last_checked: 2024-09-04
 #: next_check: 2024-10-18
 #: valid: -20241018
 Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
@@ -154,7 +155,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # REMOVED --- Gegenverkehrsregelung	X::inwork::alternating 20302,1613
 # 
 # REMOVED --- #: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv) --- #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv) --- #: source_id: viz2021:13.56243,52.41416,15.01.2024,09:14 (bis 09.02.2024) (inaktiv) --- #: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv) (bis 12.12.2023) (bis 15.01.2024) (bis 09.02.2024) (inaktiv) --- #: next_check: 2024-02-09 --- #: valid: -20240209 --- Am Falkenberg	X::inwork 21497,1042
-# REMOVED (Ampel steht noch, ist aber (meistens?) inaktiv) --- #: next_check_id: SGEHRENSEE-2023 --- #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023) (bis 24.09.2024) (bis 06.09.2024) --- #: note: die dazugehörige S-Bahn-Meldung ist kürzer --- #: last_checked: 2024-05-23 (mapillary) --- # REMOVED --- #: next_check: 2024-09-24 --- #: next_check: 2024-06-12 --- #: valid: -20240906 --- Gegenverkehrsregelung	X::inwork::alternating 18527,16789
+# REMOVED (Ampel steht noch, ist aber (meistens?) inaktiv) --- #: next_check_id: SGEHRENSEE-2023 --- #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023) (bis 24.09.2024) (bis 06.09.2024) (bis 31.10.2024) --- #: note: die dazugehörige S-Bahn-Meldung ist kürzer --- #: last_checked: 2024-05-23 (mapillary) --- # REMOVED --- #: next_check: 2024-09-24 --- #: next_check: 2024-06-12 --- #: valid: -20240906 --- Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 # 
 #: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
@@ -188,14 +189,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2024-08-31
+#: last_checked: 2024-09-04
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-08-23
+#: last_checked: 2024-09-04
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Gürtelstr.	F::inwork 15153,11691
@@ -259,7 +260,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2024-09-01 vvv
+#: last_checked: 2024-09-04 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-09-27 vvv
 #: valid: -20240927 vvv

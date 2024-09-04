@@ -302,7 +302,7 @@ Wallensteinstr.: Fahrbahn m‰ﬂiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-09-01
+#: last_checked: 2024-09-04
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Sch‰den	Q1 18037,9195 18092,9141 18134,9080
@@ -3940,9 +3940,11 @@ Mˆnchstr.: kleinteiliges Kopfsteinpflaster	Q1 -3110,14408 -3174,14438 -3228,1446
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1374532.php (Umbau ab 2025)
 #: by: https://www.deutsches-architekturforum.de/thread/11058-spandau-kleinere-projekte/?postID=749278#post749278
 #: by: https://www.berliner-woche.de/spandau/c-bauen/der-marktplatz-in-der-altstadt-soll-ab-2025-umgebaut-werden_a396205
+#: by: https://www.berliner-woche.de/spandau/c-bauen/fernwaerme-ausbau-und-feinabstimmung-der-planung-verhindern-baustart-anfang-2025_a424164 (noch kein neuer Zeitplan)
 #: last_checked: 2023-08-20
 # REMOVED --- #: check_frequency: 240d
-#: next_check: 2025-03-01
+# REMOVED --- #: next_check: 2025-03-01
+#: next_check: 2025-12-31
 Markt: kleinteiliges Kopfsteinpflaster	Q1 -3155,14340 -3204,14368 -3231,14383 -3275,14407
 #: by: mapillary
 Moritzstr.: kleinteiliges Kopfsteinpflaster	Q1 -3350,14446 -3275,14407
@@ -4117,7 +4119,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="22"
 #: osm_watch: way id="1090076934" version="5"
 #: osm_watch: way id="1090076933" version="5"
-#: last_checked: 2024-05-15
+#: last_checked: 2024-09-04
 #: check_frequency: 180d
 #: note: fr¸her: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraﬂe, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -5821,7 +5823,7 @@ Salierstr.: Beton	Q0 20226,1416 20256,1504
 Wegedornstr.: Asphalt	Q0 19930,815 20171,698 20337,616 20385,593
 Wegedornstr.: Kopfsteinpflaster	Q2 19651,956 19930,815
 Wegedornstr.: Asphalt	Q0 19651,956 19497,1035 19396,1100 19333,1154 19307,1182 19251,1240
-Usedomstr.: Asphalt	Q0 19497,1035 19575,1239 19610,1349
+Usedomstr.: Asphalt	Q0 19497,1035 19541,1134 19575,1239 19610,1349
 Usedomstr.: schlechtes Kopfsteinpflaster	Q3+ 19610,1349 19638,1436
 Warnowstr.: Asphalt	Q0 19780,1311 19610,1349 19412,1387
 Lianenweg: Asphalt	Q0 19703,1566 19927,1501 19955,1502
@@ -7561,7 +7563,7 @@ Dahlienstr.: durch Wurzeln welliger Asphalt	Q1 24098,4310 24118,4404 24166,4568
 Kleingartenstr.: Asphalt	Q0- 24118,4404 24072,4423 24022,4442 23978,4484
 Am Spielplatz: Asphalt, teilweise wellig	Q1- 23868,4411 23811,4400 23724,4388 23712,4367 23653,4363
 Am Spielplatz: Asphalt, teilweise wellig	Q1- 23712,4367 23787,4370 23811,4400
-Gladiolenstr.: Asphalt	Q1 23536,4543 23541,4439 23537,4238
+Gladiolenstr.: Asphalt mit Wurzelhebungen	Q1 23536,4543 23541,4439 23537,4238
 Gastrower Weg: Asphalt	Q0 23657,5467 23696,5529 23845,5558
 Gr¸nflieﬂer Gang: Kleinsteinpflaster	Q1- 23696,5529 23681,5579
 Gr¸nflieﬂer Gang: Asphalt	Q0 23681,5579 23675,5706
@@ -11320,7 +11322,7 @@ Invalidenstr.: Asphalt	Q0 8935,13844 9085,13919 9148,13944
 Firlstr.: Asphalt	Q0 18624,6520 18640,6542 18674,6589 18700,6604 18771,6699
 Igo-Etrich-Str.: Asphalt	Q0 18930,3703 19162,3935
 Konrad-Zuse-Str.: Asphalt	Q0 19029,3595 18943,3508 18857,3418
-Wilhelm-Hoff-Str.: Verbundsteinpflaster	Q1+ 18828,3196 18836,3203 18892,3256 18953,3318 19033,3397
+Wilhelm-Hoff-Str.: Verbundsteinpflaster	Q1+ 18828,3196 18892,3256 18953,3318 19033,3397
 Wilhelm-Hoff-Str.: Verbundsteinpflaster	Q1+ 19057,3422 19061,3426 19107,3472 19125,3491
 ‹ckeritzer Ring: Verbundsteinpflaster	Q1 17247,19212 17247,19229 17251,19264 17403,19313 17405,19252
 ‹ckeritzer Ring: Verbundsteinpflaster	Q1 17448,19243 17405,19252 17339,19231 17247,19229
@@ -12182,7 +12184,8 @@ Zur L¸barser Bahn: schlechtes Kopfsteinpflaster	Q3+ 6406,22550 6569,22345
 (Berliner Forst Tegel - Mauerweg): Waldweg, sandige Stellen	Q2 644,24394 618,24445 609,24536 575,24601
 Oskar Helene Park: Asphalt	Q0 1370,4547 1313,4566 1287,4577 1223,4635 1166,4566 1269,4444 1313,4566
 Mathilde-Vaerting-Weg: Betonpflaster	Q0- 17611,-330 17647,-386 17654,-397
-#: note: die letzten Meter sind unbefestigt
+Teutonenstr. (Altglienicke): Betonpflaster	Q0- 19929,1593 20127,1538
+Teutonenstr. (Altglienicke): unbefestigte Straﬂe	Q2 20127,1538 20186,1522
 Teutonenstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20186,1522 20256,1504
 (Am Krusenick - An der Filmfabrik): wassergebundene Decke	Q1 22751,4970 22817,4971
 (Beruner Str. - Am Biesdorfer Baggersee): Kleinsteinpflaster	Q1- 20113,10795 20126,10802
@@ -12701,7 +12704,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
 #: osm_watch: way id="1061650562" version="1"
-#: last_checked: 2024-08-03
+#: last_checked: 2024-09-04
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Pl‰nterwald - Spreepark): unebener Asphalt	Q1 16084,8833 16086,8860
@@ -13410,7 +13413,8 @@ Leinestr. [Stichstraﬂe]: Beton	Q1+ 11878,7501 11888,7455
 Leinestr. [Stichstraﬂe]: Betonsteinpflaster	Q0- 11731,7473 11738,7431
 (Leinestr. - Anita-Berber-Park): Gitter	Q1- 11738,7431 11727,7423 11740,7423
 (Leinestr. - Anita-Berber-Park): wassergebundene Decke	Q1 11740,7423 11751,7366
-(Weg entlang der Straﬂenbahnstrecke): Asphalt	Q0 18836,3203 18834,3315 18833,3388 18835,3562
+(Weg entlang der Straﬂenbahnstrecke): Gehwegplatten/Kleinsteinpflaster	Q1 18828,3196 18836,3221
+(Weg entlang der Straﬂenbahnstrecke): Asphalt	Q0 18836,3221 18834,3315 18833,3388 18835,3562
 (Weg entlang der Straﬂenbahnstrecke): glattes Kleinsteinpflaster	Q1- 18835,3562 18851,3598
 (Straﬂenbahnstrecke - Konrad-Zuse-Str.): glattes Kleinsteinpflaster	Q1- 18833,3388 18857,3418
 (am ehemaligen Bahnbetriebswerk Schˆneweide): unbefestigter Weg	Q2 18601,4732 18487,4638
@@ -13514,7 +13518,7 @@ Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 # 
 An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125
 #: next_check_id: MARIENUFER-2023
-#: last_checked: 2024-09-01
+#: last_checked: 2024-09-04
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 An der Villa Bolle: Baustraﬂe	Q2 22668,3125 22477,3109
