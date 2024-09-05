@@ -155,7 +155,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # REMOVED --- Gegenverkehrsregelung	X::inwork::alternating 20302,1613
 # 
 # REMOVED --- #: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv) --- #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv) --- #: source_id: viz2021:13.56243,52.41416,15.01.2024,09:14 (bis 09.02.2024) (inaktiv) --- #: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv) (bis 12.12.2023) (bis 15.01.2024) (bis 09.02.2024) (inaktiv) --- #: next_check: 2024-02-09 --- #: valid: -20240209 --- Am Falkenberg	X::inwork 21497,1042
-# REMOVED (Ampel steht noch, ist aber (meistens?) inaktiv) --- #: next_check_id: SGEHRENSEE-2023 --- #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023) (bis 24.09.2024) (bis 06.09.2024) (bis 31.10.2024) --- #: note: die dazugehörige S-Bahn-Meldung ist kürzer --- #: last_checked: 2024-05-23 (mapillary) --- # REMOVED --- #: next_check: 2024-09-24 --- #: next_check: 2024-06-12 --- #: valid: -20240906 --- Gegenverkehrsregelung	X::inwork::alternating 18527,16789
+# REMOVED (Ampel steht noch, ist aber (meistens?) inaktiv) --- #: next_check_id: SGEHRENSEE-2023 --- #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023) (bis 24.09.2024) (bis 06.09.2024) (bis 31.10.2024) (bis 01.11.2024) --- #: note: die dazugehörige S-Bahn-Meldung ist kürzer --- #: last_checked: 2024-05-23 (mapillary) --- # REMOVED --- #: next_check: 2024-09-24 --- #: next_check: 2024-06-12 --- #: valid: -20240906 --- Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 # 
 #: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
@@ -406,7 +406,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2024-08-28 (mapillary)
+#: last_checked: 2024-09-05
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521

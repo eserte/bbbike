@@ -1142,19 +1142,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: IM_005812 (alte Meldung von 2007) (inaktiv)
-#: source_id: viz2021:13.398749,52.532591,04.09.2024,07:00 (hier nur Kfz-Verkehr, bis 04.10.2024)
-#: last_checked: 2024-08-30
-#: next_check: 2024-09-04
-	q4::inwork; 9804,14071 9821,14073 9936,14085 10002,14092
-',
-         'from' => 1725314400,
-         'id' => 1038,
-         'text' => 'Invalidenstr. in Richtung Brunnenstr., zwischen Ackerstr und Brunnenstr. Baustelle, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.09.2024 bis 04.10.2024',
-         'type' => 'gesperrt',
-         'until' => 1728054000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3401,6 +3389,8 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	3::temp 9195,11972 9108,11961 9138,11872
 #	3::temp 9138,11872 9108,11961 9195,11972
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240904 (jährliches Fest der Landesvertretung Hamburg)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1831534468970246416
+#: source_id: viz2021:13.38476,52.51445,05.09.2024,06:00 (bis 13.09.2024)
 Mauerstr.	2::temp 9076,12054 9108,11961 9138,11872
 Jägerstr.	2::temp 9108,11961 9195,11972
 Taubenstr.	2::temp 9138,11872 9207,11880
@@ -5166,7 +5156,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'id' => 3421,
          'recurring' => 1,
          'source_id' => 'https://www.berlin.de/special/shopping/flohmaerkte/2222392-1724959-flohmarkt-am-marheinekeplatz-in-der-berg.html',
-         'text' => 'Marheinekeplatz (Richtung Mittenwalder Str.): Trödelmarkt samstags 10 bis 16 Uhr, sonntag 11 bis 17 Uhr (Sommerhalbjahr) bzw. 16 Uhr (Winterhalbjahr)',
+         'text' => 'Marheinekeplatz (Richtung Mittenwalder Str.): Trödelmarkt samstags 10 bis 16 Uhr, sonntags 11 bis 17 Uhr (Sommerhalbjahr) bzw. 16 Uhr (Winterhalbjahr)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5540,6 +5530,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 #: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023) (falsch, bis 05.09.2023) (bis 14.09.2023) (inaktiv)
 #: source_id: viz2021:13.57292,52.460387,14.11.2023,09:00 (Kraneinsatz in der Hämmerlingstr., Sperrung nur für Kfz-Verkehr, bis 14.11.2023) (inaktiv)
 #: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
+#: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -6691,24 +6682,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
          'until' => 1735686000
        },
        undef,
-       {
-         'data' => '#: next_check_id: ROTESRATHAUS-2023
-#: by: https://www.berlin-partner.de/netzwerk/berliner-hoffest (am 4.7.2023) (am 3.9.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1828834678851199380
-#: by: https://pbs.twimg.com/media/GWFGT27XQAAwuc3?format=jpg&name=4096x4096
-#: source_id: viz2021:13.40718,52.51839,03.09.2024,18:00 (bis 04.09.2024) (inaktiv)
-#: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: last_checked: 2024-09-03 (webcam)
-#: check_frequency: 3d
-#: next_check: 2024-09-06
-	2::temp 10696,12601 10599,12526
-',
-         'from' => 1724882400,
-         'id' => 3836,
-         'text' => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 29.8.2024 für voraussichtlich 6.9.2024',
-         'type' => 'gesperrt',
-         'until' => 1725659999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7750,7 +7724,24 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1726848000
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
+#: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
+#: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
+#: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
+#: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
+#: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
+#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
+#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
+	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
+',
+         'from' => 1725487200,
+         'id' => 4074,
+         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 06.09.2024 20:00 bis 08.09.2024 22:00',
+         'type' => 'handicap',
+         'until' => 1725825600
+       },
        undef,
        undef,
        {
@@ -7834,6 +7825,8 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 #: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
 #: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
+#: by: https://www.deutsches-architekturforum.de/thread/14764-reinickendorf-kleinere-projekte/?postID=766343#post766343 (Quartier Alt-Wittenau)
+#: by: https://www.gesobau.de/wohnungsbau/quartier-alt-wittenau/ (Bauphase bis Sommer 2026)
 	q3::inwork; 5476,20372 5801,20339
 ',
          'from' => 1718254800,
@@ -7899,7 +7892,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-09-03 vvv
+#: last_checked: 2024-09-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8131,12 +8124,12 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-05
 	2::inwork 11275,8387 11282,8428 11279,8489 11259,8591
 ',
          'from' => undef,
          'id' => 4126,
-         'text' => 'Hasenheide: ein Abschnitt des Hauptwegs kann wegen Bauarbeiten gesperrt sein (Stand Ende August 2024: Durchfahrt zeitweise möglich)',
+         'text' => 'Hasenheide: ein Abschnitt des Hauptwegs kann wegen Bauarbeiten gesperrt sein (Stand Anfang September 2024: Durchfahrt zeitweise möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8349,6 +8342,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477879.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/24-105_vfp_240710.jpg (Umleitungsstrecke)
+#: by: https://www.berliner-woche.de/wannsee/c-bauen/instandsetzung-der-fahrbahn_a423552
 	2::inwork -6442,1150 -6492,1204 -6577,1395 -6648,1613 -6784,1815 -6903,1906 -6999,1933 -7165,1978 -7304,1970 -7443,1915 -7640,1837 -7866,1862 -8106,2034 -8284,2156 -8422,2155
 ',
          'from' => 1725746400,
@@ -8367,7 +8361,18 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => 1729864800
        },
-       undef,
+       {
+         'data' => '#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/erneuerung-fuek-weichenerneuerung-in-friedrichstrasse-brueckenarbeiten-alt-moabit/#con-29937 (SEV)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1831601103974060505 (Verlängerung)
+#: note: wegen SEV-Haltestelle
+	q4::temp; 9121,12514 9108,12635 9098,12687
+',
+         'from' => 1724241259,
+         'id' => 4147,
+         'text' => 'Neustädtische Kirchstr.: Einbahnstraßenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung Süden, voraussichtlich bis 09.09.2024',
+         'type' => 'handicap',
+         'until' => 1725838200
+       },
        {
          'data' => '#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024)
 #: note: Start der Sperrung hat sich verzögert
@@ -8463,13 +8468,16 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
 #: by: https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen
-#: last_checked: 2024-08-30 (website)
-#: check_frequency: 10d
-	2::inwork 11521,7638 11507,7647
+#: last_checked: 2024-09-04 (website) vvv
+#: check_frequency: 10d vvv
+Allerstr.	2::inwork 11521,7638 11507,7647
+Okerstr.	2::inwork 11528,7528 11540,7534
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 4156,
-         'text' => 'Eingang Allerstr.: wegen Bauarbeiten gesperrt',
+         'text' => 'Eingänge Allerstr. und Okerstr.: wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
