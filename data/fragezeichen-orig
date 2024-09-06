@@ -2728,6 +2728,7 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualitä
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubauprojekt-anne-frank-stra%C3%9Fe-6-10.1408/#post-22810
 #: by: https://www.howoge.de/immobiliensuche/neubauprojekte/anne-frank-strasse.html (Fertigstellung September 2026, 1. Bauabschnitt Juli 2025)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-wohngebiet-mehrfamilienhaussiedlung-hassoweg-nelkenweg-anne-frank-strasse-berlin-deutschland-637960.html
+#: by: https://entwicklungsstadt.de/altglienicke-richtfest-fuer-583-neue-howoge-mietwohnungen/
 #: osm_watch: way id="439663104" version="12"
 #: XXX möglicherweise entsteht hier ein Geh/Radweg in N-S-Richtung
 #: last_checked: 2024-09-04
@@ -5233,7 +5234,7 @@ Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str. geplant	? 1062
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349062.php (Entsiegelungsmaßnahme ab 24.07.2023)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-in-fussgaengerzone_a388510
 #: osm_watch: way id="4685729" version="23"
-#: last_checked: 2024-08-30
+#: last_checked: 2024-09-06
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-07-24
 Waldeyerstr.: wird es hier zu weiteren Einschränkungen für den Radverkehr kommen?	? 15058,12329 15003,12241
@@ -8101,7 +8102,7 @@ Falkentaler Steig: entsteht hier ein Zebrastreifen?	? 2842,24293 2903,24264 2971
 # REMOVED --- #: note: Halteverbotsschilder bis 20.11.2023; auf der nördlichen Seite ab Jessnerstr. markiert, noch ohne Radwegschilder; es wurden nur kleine Stellen saniert (bereits eingetragen, inkl. neuen qualitaet_s-Eintrag) --- #: note: Richtung Osten: zwischen Weichselstr. und Müggelstr. bereits markiert und ausgeschildert, trotzdem parken hier noch Autos; am 2024-02-13 zum ersten Mal frei gesehen; mittlerweile dauerhaft frei und eingetragen
 #: note: Richtung Osten: ab Müggelstr. teilweise noch unsaniert (Kopfsteinpflaster) und eine Hochbaustelle; Halteverbotsschilder bis 30.06.2024; mittlerweile wurde das Gerüst abgebaut, das Haus ist noch immer eine Baustelle, auf dem zukünftigen Radstreifen steht ein Container --- nichts passiert hier!
 #: XXX An die comments_tram-Einträge denken!
-#: last_checked: 2024-09-03 vvv
+#: last_checked: 2024-09-06 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2024-09-30 vvv
@@ -8121,14 +8122,15 @@ Scharnweberstr.: Radspuren werden noch komplettiert	?::projected; 14965,11924 15
 # REMOVED (eingetragen) --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1697168032076828703#m (Spatenstich am 1.9.2023) --- #: source_id: LS/221-E/23/132 (bis 22.12.2023) (inaktiv) --- #: XXX bereits fertiggestellte Abschnitte fehlen bei BBBike --- #: osm_watch: way id="10796766" version="15" --- #: osm_watch: way id="933944421" version="3" --- #: last_checked: 2023-09-01 (indoor) --- #: check_frequency: 180d --- #: next_check: 2023-12-22 --- L20 bei Pinnow: Komplettierung des Radwegs	?::projected -2540,32571 -1899,32712 -1132,32883
 # 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8817 (Antrag)
-#: by: https://www.infravelo.de/projekte/radverkehrswege/projekteinheit-radwege/?date=20240107 (Erwähnung)
+#: by: https://www.infravelo.de/projekte/radverkehrswege/projekteinheit-radwege/?date=20240107 (Erwähnung) (nicht mehr, Stand September 2024)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/kein-radweg-zur-freien-universitat-berlin-die-thielallee-konnte-auf-der-strecke-bleiben-10049692.html
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9028 (Antrag)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9084 (Anfrage)
 #: by: https://www.stadtrand-nachrichten.de/thielallee-hickhack-um-einen-radweg/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1482915.php (Radweg entsteht, keine Termine genannt)
 #: last_checked: 2024-08-09 (mapillary)
 #: check_frequency: 180d
-Thielallee: wird hier ein Radfahrstreifen erstellt?	?::projected 2596,4907 2573,4889 2531,4733 2461,4556 2445,4471 2429,4385 2417,4327 2407,4280 2372,4127 2348,4026 2308,3862
+Thielallee: Radfahrstreifen soll erstellt werden	?::projected 2596,4907 2573,4889 2531,4733 2461,4556 2445,4471 2429,4385 2417,4327 2407,4280 2372,4127 2348,4026 2308,3862
 # 
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/zebrastreifen-fuer-die-heesestrasse_a394664 ("zeitnahe" Umsetzung)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/neue-zebrastreifen-in-marzahn-hellersdorf-in-planung_a390227
@@ -8329,6 +8331,7 @@ Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?	? 7537,78
 # REMOVED (ja) --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1439633.php (Sanierung von Wegen) --- #: by: https://www.berliner-woche.de/reinickendorf/c-umwelt/bezirksamt-saniert-wege-im-klemkepark_a413720 --- #: osm_watch: way id="42989097" version="11" --- #: osm_watch: way id="845934550" version="4" --- #: next_check: 2024-04-30 --- Klemkepark: wird bei der Sanierung dieser Weg (oder andere) eine besser Qualität bekommen?	? 7576,18837 7480,18828 7332,18818
 # REMOVED --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1446235.php --- #: by: https://www.schillerpromenade.berlin/projekte/anbindung-anita-berber-park/ --- Leinestr. [Stichstraße]: ist es beim Kopfsteinpflaster geblieben?	? 11731,7473 11738,7431
 # 
+#: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7752
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article242353232/Droht-Berlins-Suedosten-ab-Herbst-zwei-Jahre-Verkehrschaos.html
 #: by[nocache]: https://archive.is/HoAVa
@@ -8336,7 +8339,7 @@ Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?	? 7537,78
 #: by: https://www.bahninfo-forum.de/read.php?9,800515,801795#msg-801795
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-19154.pdf (Bauarbeiten ab März 2025, Lage unklar)
 #: last_checked: 2024-09-04
-#: next_check: 2024-10-15
+#: next_check: 2024-10-18
 Altstadt Köpenick: Bauarbeiten an Straßenbahngleisen und Wasserleitungen geplant, wird es zu Einschränkungen für Radfahrer kommen?	?::projected 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
 # 
 #: by: https://www.infravelo.de/projekt/koenigsberger-strasse/ (3. Quartal 2024 - 4. Quartal 2027) (1. Quartal 2025 - 4. Quartal 2027)
@@ -8388,7 +8391,7 @@ Hauptstr. (Rosenthal): Modalsperre entsteht	? 8389,21468 8419,21446
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf
 #: osm_watch: way id="1051634661" version="11"
 #: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024
-#: last_checked: 2024-09-03
+#: last_checked: 2024-09-06
 #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
 # 
@@ -11213,7 +11216,7 @@ Hansastr.: neue KGA entsteht	? 15561,16648 15455,16627 15473,16519 15571,16585 1
 # REMOVED (realisiert) --- #: osm_watch: way id="1136034160" version="1" --- #: last_checked: 2023-12-20 --- #: check_frequency: 14d --- Weserstraße: zwischen Pannierstraße und Reuterstraße wird die Einbahnstraßenregelung für Kfz umgekehrt	? 12148,9209 12180,9193 12328,9117
 #: osm_watch: way id="16114536" version="19"
 #: source_id: viz2021:13.428457,52.493713,05.09.2024,07:00 (bis 06.12.2024)
-#: source_id: viz2021:13.42867,52.49391,05.09.2024,19:00 (bis 06.12.2024)
+#: source_id: viz2021:13.42867,52.49391,05.09.2024,19:00 (bis 06.12.2024) (inaktiv)
 #: last_checked: 2024-09-05
 #: check_frequency: 30d
 #: next_check: 2024-12-06

@@ -111,6 +111,7 @@ push @temp_blocking,
        {
          'data' => '#: by: http://www.hier-in-rudow.de/meilenfeste.html
 #: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
+#: source_id: viz2021:13.49573,52.4177,06.09.2024,19:00 (bis 08.09.2024)
 Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 Krokusstr.	2::temp 16610,1715 16767,1831
 ',
@@ -1099,7 +1100,16 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 246700600 (bis 09.09.2024)
+	2::inwork 44229,-14131 43456,-14384 42430,-14398
+',
+         'from' => 1725552000,
+         'id' => 995,
+         'text' => 'Storkow-Friedersdorf: Bahnübergang bei Kummersdorf wegen Gleisbauarbeiten gesperrt, 06.09.2024 18:00 Uhr bis 09.09.2024 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1725897600
+       },
        undef,
        undef,
        undef,
@@ -1870,6 +1880,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
 # REMOVED (ist etwas anderes) --- #: source_id: bvg2024:282#HIM_FREETEXT_230965 (bis 31.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1470949.php
+#: by: https://pbs.twimg.com/media/GWyr1-TXYAAdRMr?format=jpg&name=medium
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2024-08-27 (mapillary)
 #: check_frequency: 30d
@@ -1878,7 +1889,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
 ',
          'from' => 1720470111,
          'id' => 1748,
-         'text' => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 02.10.2024',
+         'text' => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Abschnitt der Fahrbahn gesperrt, voraussichtlich bis 02.10.2024',
          'type' => 'handicap',
          'until' => 1727881200
        },
@@ -4389,7 +4400,18 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (in osm aufgehoben) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php --- #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/ --- #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369 --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben? --- #: source_id: 2147344699 --- #: osm_watch: way id="25274116" version="20" --- #: osm_watch: way id="671101960" version="4" --- #: also_indoor: traffic (G,H) --- #: last_checked: 2019-11-23 --- #: check_frequency: 7d
+#: next_check_id: ALTSTADTKOEPENICK-2024
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
+#: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
+	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
+',
+         'from' => 1726956000,
+         'id' => 3070,
+         'text' => 'Freiheit/Lüdersstr./Alter Markt: Bauarbeiten, Fahrbahn gesperrt, vom 23.09.2024 bis voraussichtlich 18.10.2024',
+         'until' => 1729267200
+       },
        undef,
        undef,
        undef,
@@ -5530,7 +5552,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 #: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023) (falsch, bis 05.09.2023) (bis 14.09.2023) (inaktiv)
 #: source_id: viz2021:13.57292,52.460387,14.11.2023,09:00 (Kraneinsatz in der Hämmerlingstr., Sperrung nur für Kfz-Verkehr, bis 14.11.2023) (inaktiv)
 #: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
-#: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024)
+#: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024) (inaktiv)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -6227,6 +6249,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/lichterfelde-uferweg-am-teltowkanal-gesperrt-id207815
 #: by: https://wärme.vattenfall.de/energie-news/netzverstaerkung-hindenburgdamm/
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480288.php (zurzeit offen, neue Sperrung 2025 bis zum Spätsommer 2025)
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/spielplatz-ist-wieder-offen_a424125
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch[closed]: note 3631207 6
@@ -6427,7 +6450,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-08-31 (traffic)
+#: last_checked: 2024-09-06 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -7312,7 +7335,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-08-09 (mapillary)
+#: last_checked: 2024-09-04 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -7636,6 +7659,7 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
        undef,
        {
          'data' => '#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.50255,52.50891,07.05.2024,00:00 (bis 20.12.2024)
 	q4::inwork; 17096,11585 16915,11634
 ',
          'from' => 1713416400,
@@ -7731,9 +7755,12 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 #: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
 #: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
 #: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024)
+#: source_id: viz2021:13.36063,52.44674,06.09.2024,20:00 (bis 08.09.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
 #: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
 #: by: https://www.youtube.com/watch?v=YI1O5phpGiE
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1832086361215578310
+#: by: https://pbs.twimg.com/media/GWyr1-TXYAAdRMr?format=jpg&name=medium
 	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
 ',
          'from' => 1725487200,
@@ -7836,18 +7863,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1767196800
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.507816,52.637174,17.06.2024,08:00 (bis 06.09.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1802568101801717762
-#: by: https://pbs.twimg.com/media/GQCRGJeXwAAhEes?format=jpg&name=large (Einbahnstraßenbereich etwa 100m)
-	q3::inwork; 17446,25914 17011,25830
-',
-         'from' => 1718517600,
-         'id' => 4090,
-         'text' => 'Am Stener Berg: Bauarbeiten, Richtung Osten gesperrt,, vom 17.06.2024 08:00 bis 06.09.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1725634800
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
 #: last_checked: 2024-08-30 (mapillary) vvv
@@ -8031,18 +8047,18 @@ zwischen Ottmachauer Steig bis Hirschhorner Weg 19.08.2024 - 18.09.2024	q4::inwo
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baekebruecke-wird-erneuert_a421024
 #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
-#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv)
+#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024)
 #: also_indoor: search Bäkebrücke
 #: also_indoor: traffic (G,B,T,W)
 # REMOVED --- #: add_fragezeichen: Sind auch Radfahrer und Fußgänger von der Sperrung betroffen? --- #: last_checked: 2024-05-29 --- #: check_frequency: 90d --- 
-#: last_checked: 2024-08-30 (traffic)
-#: check_frequency: 10d
-# REMOVED --- #: next_check: 2024-08-30
+#: last_checked: 2024-09-06 (VIZ)
+# REMOVED --- #: check_frequency: 10d
+#: next_check: 2024-10-31
 	q4::inwork 4587,3097 4659,3065
 ',
          'from' => 1718628480,
          'id' => 4109,
-         'text' => 'Bäkebrücke: Sperrung, nur für Fußgänger offen, ggfs. schieben, bis 30.08.2024, evtl. wird verlängert',
+         'text' => 'Bäkebrücke: Sperrung, nur für Fußgänger offen, ggfs. schieben, bis 31.10.2024, evtl. wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8200,20 +8216,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'handicap',
          'until' => 1727708400
        },
-       {
-         'data' => '#: source_id: viz2021:13.545904,52.542197,12.08.2024,07:00 (bis 06.09.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1822847981323981227
-#: by: https://pbs.twimg.com/media/GUh9Zq3XwAALRml?format=jpg&name=medium (laut Verkehrszeichenplan keine Ausnahme für Radfahrer, kleinerer Bereich)
-# REMOVED (hier nicht) ---	q4::inwork 20226,15512 19960,15337
-	q4::inwork 19960,15337 19875,15324 19768,15361
-# REMOVED (hier nicht) ---	q4::inwork 19768,15361 19681,15405
-',
-         'from' => 1723352400,
-         'id' => 4134,
-         'text' => 'Marzahner Promenade: Bauarbeiten zwischen Landsberger Allee und Märkische Allee, evtl. sind auch Radfahrer betroffen, vom 12.08.2024 07:00 bis 06.09.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1725634800
-       },
+       undef,
        {
          'data' => '#: next_check_id: SIEGFRIED-2024
 #: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024) (bis 02.09.2024) (inaktiv)
@@ -8509,7 +8512,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-08-31
+#: last_checked: 2024-09-06
 #: check_frequency: 10d
 	q3::inwork 14949,11474 14849,11539
 ',
@@ -8521,6 +8524,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        },
        {
          'data' => '#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240901 ("schrittweise", Bürgerfest findet am 06.+07.09.2024 statt)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1831929069308670071
 	2::inwork 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8540,12420
 	2::inwork 8415,12749 8309,12758 8306,12609 8207,12606
 	2::inwork 8766,12541 8667,12555 8596,12576
