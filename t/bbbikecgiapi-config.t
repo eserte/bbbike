@@ -32,6 +32,8 @@ plan 'no_plan';
 my $cgiurl = "$cgidir/bbbike.cgi";
 my $cgitesturl = "$cgidir/bbbike-test.cgi";
 
+my $version_rx = qr{^v?\d+\.};
+
 {
     my $data = do_config_api_call($cgiurl);
     is $data->{city}, 'Berlin_DE';
@@ -73,7 +75,7 @@ my $cgitesturl = "$cgidir/bbbike-test.cgi";
 	} elsif ($module_info->{installed} eq JSON::XS::false) {
 	    push @diag, "NOTE: Module '$mod' not installed";
 	} else {
-	    like $module_info->{version} , qr{^\d+\.}, "Version for '$mod' looks like a version";
+	    like $module_info->{version} , $version_rx, "Version for '$mod' looks like a version";
 	}
     }
     diag $_ for @diag;
@@ -136,7 +138,7 @@ my $cgitesturl = "$cgidir/bbbike-test.cgi";
     is_deeply $res_eumm, $res_factory, 'same result for _module_info and direct EUMM call';
     ok $res_factory->{installed};
     is $res_factory->{installed}, JSON::XS::true;
-    like $res_factory->{version}, qr{^\d+\.\d+$}, 'looks like a version';
+    like $res_factory->{version}, $version_rx, 'looks like a version';
 }
 
 sub do_config_api_call {
@@ -149,6 +151,5 @@ sub do_config_api_call {
     }
     $data;
 }
-
 
 __END__
