@@ -1359,6 +1359,7 @@ Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
 Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
+Dolgenseestr.	1s 17774,9934 17761,9971 17559,10024
 Mittelstreifen mit parkenden Autos	3nocross::ignrte 4507,11936 4596,11912 4653,11896
 Otto-Suhr-Allee -> Abbestr.: Mittelstreifen mit parkenden Autos	3::igndisp 4507,11936 4596,11912 4608,11935
 Abbestr. -> Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3::igndisp 4608,11935 4596,11912 4653,11896
@@ -3470,6 +3471,7 @@ Drängelgitter	BNP:3:58:trailer=10 26718,56454
 Drängelgitter	BNP:3:-12:trailer=10 26803,56547
 Tor	BNP:10:-140 33926,63348
 Tor	BNP:20:-74 20127,1538
+Barriere	BNP:3:-85:trailer=10 10628,16644
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 Zum Feldrain (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130

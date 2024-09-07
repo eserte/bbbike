@@ -596,15 +596,13 @@ Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9
 ### Friedrichsfelde ###
 # 
 #: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?)
-#: last_checked: 2024-09-01 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2024-09-06 vvv
-#: also_indoor: traffic (G,B,T)
-Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
+#: next_check: 2024-10-11 vvv
+# REMOVED --- #: also_indoor: traffic (G,B,T) --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
-#: osm_watch[closed]: note 4145495 1
-Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17749,9811 17738,9922
+# REMOVED --- #: osm_watch[closed]: note 4145495 1 --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17749,9811 17738,9922
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -631,7 +629,7 @@ Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17749,9
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
 #: also_indoor: traffic (G,B,W)
-#: last_checked: 2024-09-05 vvv
+#: last_checked: 2024-09-07 vvv
 #: next_check: 2024-09-28 vvv
 #: valid: -20240928 vvv
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294
@@ -877,7 +875,7 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 ### Lichtenberg ###
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2024-09-03
+#: last_checked: 2024-09-07
 #: check_frequency: 45d
 #: next_check: 2025-05-31
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
@@ -896,7 +894,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-09-04
+#: last_checked: 2024-09-07
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1716,7 +1714,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch: note 4103526 1
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2024-09-05
+#: last_checked: 2024-09-07
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -1984,16 +1982,9 @@ Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
 (Weichselstr. - Sasarsteig): Fußgänger	q3 12274,8607 12276,8590 12165,8566
 #: note ^^^
 # 
-#: next_check_id: HAUPT-2024
-#: note: mittlerweile werden Radfahrer offiziell über den Platz geführt
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8901 (Antrag - Antwort: Neubewertung nach Bau der RVA in der Hauptstraße)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9170 (Antrag: Radverkehrsführung abordnen) (durch Verwaltungshandeln erledigt)
-#: XXX falls die Abordnung durchgeführt wird -> auf q4 degradieren; vielleicht passiert das im Zuge der neuen Radspuren in der Hauptstraße?
-#: osm_watch: way id="268579841" version="14"
-#: last_checked: 2024-07-14
-#: check_frequency: 120d
-#: next_check: 2024-09-01
-Richard-von-Weizsäcker-Platz: einige Fußgänger	q2 7239,8907 7307,8945
+# REMOVED --- #: next_check_id: HAUPT-2024 --- #: note: mittlerweile werden Radfahrer offiziell über den Platz geführt --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8901 (Antrag - Antwort: Neubewertung nach Bau der RVA in der Hauptstraße) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9170 (Antrag: Radverkehrsführung abordnen) (durch Verwaltungshandeln erledigt) --- #: XXX falls die Abordnung durchgeführt wird -> auf q4 degradieren; vielleicht passiert das im Zuge der neuen Radspuren in der Hauptstraße? --- #: osm_watch: way id="268579841" version="14" --- #: last_checked: 2024-07-14 --- #: check_frequency: 120d --- #: next_check: 2024-09-01
+#: historical_note: früher (bis Sommer 2024) q2, die "Radfahrer frei"-Schilder wurden mittlerweile entfernt, auch die Radspurführung zum Platz
+Richard-von-Weizsäcker-Platz: Fußgängerbereich	q4 7239,8907 7307,8945
 # 
 Kernhofer Str.: Fußgänger, Supermarkt	q2 15380,10946 15355,10875
 Ceciliengärten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
@@ -2021,15 +2012,23 @@ Teltowkanalpromenade: schmale und kurvige Unterführung	q2 4778,3352 4815,3382 48
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
 #: note: Luftbild
 (Unterführung): Rampen	q2 -8334,14461 -8251,14440 -8256,14418 -8227,14408 -8287,14411
-#: XXX_prog eigentlich nach comments_mount:
-Viktoriapark: starke Steigung, Fußgänger	q4; 8598,9074 8695,9079 8827,9086 8883,9089
-Viktoriapark: starkes Gefälle, Fußgänger	q2; 8883,9089 8827,9086 8695,9079 8598,9074
-Viktoriapark: Steigung, Fußgänger	q3; 9115,9046 9091,9054 9079,9058 9026,9042 8962,9048
-Viktoriapark: Gefälle, Fußgänger	q1; 8962,9048 9026,9042 9079,9058 9091,9054 9115,9046
-Viktoriapark: Fußgänger	q2 8883,9089 8901,9104 8943,9098 8962,9048
-Viktoriapark: starke Steigung, Fußgänger	q4; 8970,9323 9007,9264
-Viktoriapark: starkes Gefälle, Fußgänger	q3; 9007,9264 8970,9323
-Viktoriapark: Fußgänger	q1+ 9007,9264 8982,9198 8990,9166 9020,9150 9080,9163 9150,9152
+# 
+#: XXX_prog eigentlich müssen einige von den Steigung/Gefälle-Einträgen nach comments_mount bewegt werden (wenn das Routing das berücksichtigen würde)
+#: note: neue FH-KB-Grünanlagenschilder mit durchgestrichenen Radfahrer vvv
+Viktoriapark: starke Steigung, Fußgänger, Grünanlage	q4; 8598,9074 8695,9079 8827,9086 8883,9089
+#: historical_note: früher q2;
+Viktoriapark: starkes Gefälle, Fußgänger, Grünanlage	q3; 8883,9089 8827,9086 8695,9079 8598,9074
+Viktoriapark: Steigung, Fußgänger, Grünanlage	q3; 9115,9046 9091,9054 9079,9058 9026,9042 8962,9048
+#: historical_note: früher q1;
+Viktoriapark: Gefälle, Fußgänger, Grünanlage	q3; 8962,9048 9026,9042 9079,9058 9091,9054 9115,9046
+#: historical_note: früher q2
+Viktoriapark: Fußgänger, Grünanlage	q3 8883,9089 8901,9104 8943,9098 8962,9048
+Viktoriapark: starke Steigung, Fußgänger, Grünanlage	q4; 8970,9323 9007,9264
+Viktoriapark: starkes Gefälle, Fußgänger, Grünanlage	q3; 9007,9264 8970,9323
+#: historical_note: früher q1+
+Viktoriapark: Fußgänger, Grünanlage	q3 9007,9264 8982,9198 8990,9166 9020,9150 9080,9163 9150,9152
+#: note ^^^
+# 
 (Alt-Biesdorf - Schloss Biesdorf): Steigung, Fußgänger	q3; 20764,11675 20825,11732
 (Schloss Biesdorf - Alt-Biesdorf): Fußgänger	q2; 20825,11732 20764,11675
 # 

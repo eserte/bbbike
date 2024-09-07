@@ -338,7 +338,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-09-02 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1337,7 +1337,7 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17
 Fahrradschleuse	RW3; 7612,14325 7566,14404
 	RW3; 7566,14404 7612,14325 7652,14257 7697,14187 7732,14131 7739,14119 7778,14059 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
 	RW3;RW3 7733,14570 7711,14548 7609,14447 7566,14404
-	RW1; 8057,14876 7960,14794 7733,14570
+Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7733,14570
 Gehweg für Radfahrer frei	RW1; 7733,14570 7960,14794
 	RW1; 7960,14794 8057,14876
 	RW3; 7368,14573 7401,14526 7487,14472 7532,14446 7566,14404
@@ -1622,7 +1622,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1432299752406888449 (Grundsanierung ab 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11059 (Anfrage)
-#: by: https://www.infravelo.de/projekt/petersburger-strasse-1/ (2. Quartal 2024 - 1. Quartal 2027)
+#: by: https://www.infravelo.de/projekt/petersburger-strasse-1/ (2. Quartal 2024 - 1. Quartal 2027) (3. Quartal 2024 - 1. Quartal 2027)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1482741.php (grundhafte Erneuerung: 2,50 m breite Radwege; neue Ampel am Bersarinplatz; Abschluss im III. Quartal 2027)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (neue Verkehrsführung ab 16.9.2024)
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/petersburger-strasse/lageplan_blatt1.pdf
@@ -1957,7 +1957,8 @@ Busspur ist immer gültig	RW5; 7563,8871 7548,8879 7497,8916 7360,8918
 geschützter Radstreifen, mit "Leitboys"	RW4; 7360,8918 7315,8941 7307,8945 7268,8960
 # 
 #: note: Kolonnenstr. Richtung Osten
-	RW3; 7268,8960 7307,8945
+#: historical_note: früher (bis etwa Sommer 2024) RW3, ohne Leitboys
+geschützter Radstreifen, mit "Leitboys"	RW4; 7268,8960 7307,8945
 # REMOVED (hier keine Busspur --- wegen Bauarbeiten?) --- Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7307,8945 7315,8941 7360,8918
 # REMOVED (ja, früher: gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr) --- #: XXX hat sich die Gültigkeitsdauer geändert?
 Busspur ist immer gültig	RW5; 7360,8918 7497,8916 7548,8879 7563,8871
@@ -2407,7 +2408,7 @@ provisorische Radspuren	RW3;RW3 5866,10492 6025,10746
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024)
 #: also_indoor: traffic (ex-B[minor])
-#: last_checked: 2024-06-16
+#: last_checked: 2024-09-07
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 #	RW3; 5764,10322 5808,10396
@@ -3327,7 +3328,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="15"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2024-09-03 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -7489,9 +7490,9 @@ asphaltiertes Straßenbahnkap	RW1; 14661,12798 14731,12809
 	RW3; 14731,12809 14836,12826 14906,12837
 	RW4; 14906,12837 14940,12843 15010,12855
 	RW3; 15010,12855 15098,12849
-asphaltiertes Straßenbahnkap	RW2; 15098,12849 15117,12846 15169,12839
-	RW4; 15169,12839 15233,12829
-	RW3; 15233,12829 15357,12813
+asphaltiertes Straßenbahnkap	RW1; 15098,12849 15117,12846 15169,12839
+Grünbeschichtung	RW3; 15169,12839 15233,12829
+temporäre Führung auf dem Hochbord, getrennter Rad- und Gehweg	RW2; 15233,12829 15357,12813
 	RW4; 15357,12813 15367,12815
 	RW4; 15367,12815 15417,12823
 asphaltiertes Straßenbahnkap	RW2; 15417,12823 15469,12831
@@ -7575,7 +7576,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-09-03 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -7970,7 +7971,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-08-19
+#: last_checked: 2024-09-07
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2024-09-30
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -7979,7 +7980,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
-#: last_checked: 2024-08-19 vvv
+#: last_checked: 2024-09-07 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2024-09-30 vvv
 #XXX	RW4; 10975,10334 10871,10322
@@ -8375,7 +8376,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-09-05 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-06-30 vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv)

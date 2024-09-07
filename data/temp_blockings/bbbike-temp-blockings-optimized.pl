@@ -4910,7 +4910,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="362719487" version="11"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2024-08-30
+#: last_checked: 2024-09-07
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 6021,10405 6116,10688
@@ -5823,13 +5823,16 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2023/pressemitteilung.1321885.php (Richtfest)
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neubau-bekam-jetzt-die-richtkrone-aufgesetzt_a380467
 #: by: https://www.deutsches-architekturforum.de/thread/4756-erweiterung-bauhaus-archiv/?postID=742251#post742251
+#: by: https://www.bauhaus.de/de/bauhaus-archiv/7994_the_bauhaus_view/ (Eröffnung voraussichtlich 2025)
+#: by: https://stories.bauhaus.de/neubau/ (Wiedereröffnung 2025)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2024-06-16
+#: last_checked: 2024-09-07
 #: check_frequency: 120d
+#: next_check: 2025-03-15
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
          'from' => undef,
@@ -5907,7 +5910,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-09-04
+#: last_checked: 2024-09-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6083,7 +6086,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-07-13 (daf)
+#: last_checked: 2024-09-07
 #: check_frequency: 150d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -6450,7 +6453,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (ex-H,re-G,B,re-W,T)
-#: last_checked: 2024-09-06 (traffic)
+#: last_checked: 2024-09-07 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -6568,7 +6571,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-08-14
+#: last_checked: 2024-09-07
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 #: osm_watch: way id="58182828" version="27"
@@ -6757,7 +6760,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
        {
          'data' => '#: also_indoor: traffic (B,ex-G[unvollständig],ex-W[unvollständig],T)
 #: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2024; nun bis 30.08.2024; mittlerweile gemischte Halteverbote bis 30.08.2024 (schon vorbei) und Ende des Jahres
-#: last_checked: 2024-09-03 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
@@ -6998,15 +7001,17 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
        {
          'data' => '#: next_check_id: ZOSSENB246-2023
 #: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024)
+#: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/sperrung-des-bahnuebergangs-b246-stubenrauchstrasse-verlaengert/ (bis 14.10.2024, Umleitung über "An den Wulzen")
 #: also_indoor: traffic (G,ex-W,T)
 #: last_checked: 2024-08-30 (traffic)
-#: check_frequency: 10d
+# REMOVED --- #: check_frequency: 10d
+#: next_check: 2024-10-14
 # REMOVED --- #: next_check: 2024-08-30
 	2::inwork 13526,-20548 13412,-20513 13271,-20531
 ',
          'from' => 1716674400,
          'id' => 3913,
-         'text' => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. dauerhaft',
+         'text' => 'B246, Zossen: Sperrung des Bahnübergangs, voraussichtlich bis 14.10.2024',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7508,15 +7513,15 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-08-31 (mapillary) vvv
+#: last_checked: 2024-09-07 (osm) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="22"
+#: osm_watch: way id="120633718" version="23"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
-#: osm_watch: note 3393893 4
+#: osm_watch: note 3393893 7
 Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7837,16 +7842,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Halteverbotsschilder bis 06.09.2024
-	q4::inwork 14330,15978 14411,16008 14484,16035
-',
-         'from' => 1718298660,
-         'id' => 4087,
-         'text' => 'Meyerbeerstr.: Bauarbeiten zwischen Lindenallee und Benfelder Str., Fahrbahn gesperrt, voraussichtlich bis 06.09.2024',
-         'type' => 'handicap',
-         'until' => 1725660000
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
 #: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025)
@@ -8152,16 +8148,16 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-04
+#: last_checked: 2024-09-07
 #: check_frequency: 30d
 #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
 ',
          'from' => 1722618239,
          'id' => 4127,
-         'text' => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, voraussichtlich bis 14.9.2024',
+         'text' => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, voraussichtlich bis 14.9.2024, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1726351200
+         'until' => undef
        },
        {
          'data' => '#: osm_watch: way id="27457006" version="15"
@@ -8179,8 +8175,8 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: also_indoor: traffic (ex-B,ex-T,H)
 #: add_fragezeichen: Gibt es die Baustelle noch immer?
-#: note: Die Länge der Einengung beträgt etwa 40m, deshalb q3. Durch den Wasserrohrbruch in der Tiergartenstr. erhöhter Kfz-Verkehr in der Gegenrichtung.
-#: last_checked: 2024-08-05
+#: note: Die Länge der Einengung beträgt etwa 40m, deshalb q3. Durch den Wasserrohrbruch in der Tiergartenstr. erhöhter Kfz-Verkehr in der Gegenrichtung (wobei, mittlerweile gibt es wohl ausreichende Absperrungen in der Tiergartenstr.)
+#: last_checked: 2024-09-07
 	q3::inwork; 7253,11208 7356,11517
 ',
          'from' => undef,
@@ -8346,11 +8342,12 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477879.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/24-105_vfp_240710.jpg (Umleitungsstrecke)
 #: by: https://www.berliner-woche.de/wannsee/c-bauen/instandsetzung-der-fahrbahn_a423552
+#: source_id: bvg2024:218#HIM_FREETEXT_237776
 	2::inwork -6442,1150 -6492,1204 -6577,1395 -6648,1613 -6784,1815 -6903,1906 -6999,1933 -7165,1978 -7304,1970 -7443,1915 -7640,1837 -7866,1862 -8106,2034 -8284,2156 -8422,2155
 ',
          'from' => 1725746400,
          'id' => 4145,
-         'text' => 'Pfaueninselchaussee: Sanierung der Fahrbahn, Sperrung, vom 09.09.2024 bis 29.09.2024 ',
+         'text' => 'Pfaueninselchaussee: Sanierung der Fahrbahn, Sperrung, vom 09.09.2024 bis 29.09.2024',
          'type' => 'gesperrt',
          'until' => 1727647200
        },
@@ -8471,7 +8468,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
 #: by: https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen
-#: last_checked: 2024-09-04 (website) vvv
+#: last_checked: 2024-09-07 (website) vvv
 #: check_frequency: 10d vvv
 Allerstr.	2::inwork 11521,7638 11507,7647
 Okerstr.	2::inwork 11528,7528 11540,7534
@@ -8525,13 +8522,14 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        {
          'data' => '#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240901 ("schrittweise", Bürgerfest findet am 06.+07.09.2024 statt)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831929069308670071
-	2::inwork 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8540,12420
-	2::inwork 8415,12749 8309,12758 8306,12609 8207,12606
-	2::inwork 8766,12541 8667,12555 8596,12576
+	2::temp 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8540,12420
+	2::temp 8415,12749 8309,12758 8306,12609 8207,12606
+	2::temp 8766,12541 8667,12555 8596,12576
+Uferweg am Paul-Löbe-Haus	2::temp 8473,12753 8495,12651 8596,12576
 ',
          'from' => 1725141600,
          'id' => 4160,
-         'text' => 'Regierungsviertel: Vorbereitungen für das Bürgerfest zum 75-jährigen Bestehen des Deutschen Bundestages, Straßensperrungen, evtl. sind auch Radfahrer betroffen, vom 2.9.2024 bis 11.9.2024',
+         'text' => 'Regierungsviertel: Vorbereitungen für das Bürgerfest zum 75-jährigen Bestehen des Deutschen Bundestages, Straßensperrungen, Radfahrer sind auch betroffen, vom 2.9.2024 bis 11.9.2024',
          'type' => 'gesperrt',
          'until' => 1726092000
        },

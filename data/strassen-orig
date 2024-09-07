@@ -1893,7 +1893,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
 #: osm_watch: way id="74868383" version="27"
-#: last_checked: 2024-08-29
+#: last_checked: 2024-09-07
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -1901,8 +1901,8 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7
 #: next_check_id: EUROPACITY-2015
 #: XXX Bekommt diese Verbindung einen Straßennamen?
 #: osm_watch[closed]: note 3892438 3
-#: osm_watch: way id="1255643497" version="4"
-#: last_checked: 2024-08-29
+#: osm_watch: way id="1255643497" version="8"
+#: last_checked: 2024-09-07
 #: check_frequency: 60d
 (Hedwig-Porschütz-Str. - George-Stephenson-Str.)	NN 7697,14187 7614,14136
 #: next_check_id: EUROPACITY-2015
@@ -1910,19 +1910,16 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7
 #: note: ggfs. qualitaet/handicap-Einträge anpassen
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: osm_watch: way id="645343614" version="8"
-#: last_checked: 2024-08-29
+#: last_checked: 2024-09-07
 #: check_frequency: 90d
 (Heidestr./Kieler Brücke - George-Stephenson-Str.)	NN 7612,14325 7529,14274
 Lisa-Fittko-Str.	N 7820,13994 7734,13944
 Lisa-Fittko-Str.	NN 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 George-Stephenson-Str.	N 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
-#: next_check_id: HANSPETERSPLATZ-2022
-#: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: osm_watch: way id="977556359" version="16"
-#: last_checked: 2024-08-29
-#: check_frequency: 90d
-#: osm.highway: service
-Hans-Peters-Platz	N 7739,14119 7679,14030
+# REMOVED --- #: next_check_id: HANSPETERSPLATZ-2022 --- #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug... laut osm mittlerweile nur highway=footway --- #: osm_watch: way id="977556359" version="17" --- #: last_checked: 2024-08-29 --- #: check_frequency: 90d --- #: next_check: 2024-09-06 --- #: osm.highway: service
+#: note: an der Heidestraße Poller sowie ein Einfahrt-verboten- + Privatgrundstück-Schild
+#: historical_note: früher N (osm.highway: service)
+Hans-Peters-Platz	NN 7739,14119 7679,14030
 #: note: Privatstraße
 Jean-Monnet-Str.	N 7995,13537 8048,13578
 (Jean-Monnet-Str. - Europaplatz Nord)	NN 7995,13537 7963,13489
@@ -6482,10 +6479,11 @@ Alfred-Kowalke-Str. [Mittelstreifen]	NN 18200,11269 18202,11253
 Charlottenstr. (Friedrichsfelde)	N 18477,11388 18462,11602 18520,11631 18520,11662 18520,11685 18520,11707
 Neuer Feldweg	N 17360,9629 17365,9654 17383,9719
 Dolgenseestr.	N 17383,9719 17391,9746 17404,9794
-Dolgenseestr.	N 17471,9688 17494,9769 17523,9882 17527,9899 17567,10055 17605,10199
+Dolgenseestr.	N 17471,9688 17494,9769 17523,9882 17527,9899 17559,10024 17567,10055 17605,10199
 Dolgenseestr.	N 17527,9760 17494,9769 17404,9794 17384,9807 17273,9880 17275,9892 17288,9952 17330,10117
 Dolgenseestr.	N 17567,10055 17457,10083 17330,10117 17156,10164 17026,10199
 Dolgenseestr.	N 17026,10199 17018,10122 17035,10079 17078,10038 17288,9952
+Dolgenseestr. [Wohngebiet]	N 17559,10024 17761,9971 17774,9934
 #: osm.highway: service
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]	N 17523,9882 17412,9911
 (Dolgenseestr., Fußgängerzone)	NN 17457,10083 17412,9911 17384,9807
@@ -15692,7 +15690,7 @@ Greifenberger Str.	N 17490,89 17287,401 17134,644
 (Wilhelm-Dähne-Siedlung)	N 17228,361 17427,46
 Schleffiner Str.	N 17168,654 17159,703 17106,783 17035,775
 Exiner Str.	N 17412,491 17274,705 17134,908
-Mellenseestr.	N 17527,9899 17633,9898 17738,9922 17838,9956 17958,10012
+Mellenseestr.	N 17527,9899 17633,9898 17738,9922 17774,9934 17838,9956 17958,10012
 Mellenseestr. [Wohngebiet]	N 17633,9898 17628,9757 17587,9655
 Mellenseestr. [Wohngebiet]	N 17738,9922 17749,9811 17777,9649
 Mellenseestr. [Wohngebiet]	N 17838,9956 17868,9823 17920,9698
@@ -15709,7 +15707,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2024-09-04
+#: last_checked: 2024-09-07
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16099,7 +16097,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2024-09-04
+#: last_checked: 2024-09-07
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens
@@ -20461,7 +20459,7 @@ Löwenbrucher Weg	N 10475,-2944 10392,-2980 10272,-3027 10107,-3063 9924,-3068 98
 (Löwenbrucher Weg - Lortzingplatz)	NN 10107,-3063 10067,-2952 10058,-2924 10085,-2810
 (Blohmstr. - Diedersdorfer Weg)	NN 9093,-1670 8972,-1581 8845,-1521 8776,-1487 8492,-1376 8061,-1117
 (Dinnendahlstr. - Schichauweg)	NN 9139,-1350 8953,-1184 8882,-1142 8873,-1118
-Ibsenstr.	N 10209,16674 10295,16667 10382,16661 10465,16656 10549,16650 10632,16644 10793,16636
+Ibsenstr.	N 10209,16674 10295,16667 10382,16661 10465,16656 10549,16650 10628,16644 10632,16644 10793,16636
 Nordkapstr.	N 10458,16509 10465,16656
 Schützenstr. (Mariendorf)	N 8581,4342 8569,4459 8561,4535 8546,4629
 Im Dohl	N -9063,5946 -8903,5930

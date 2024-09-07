@@ -475,7 +475,7 @@ Bus 166, ...	busroute_N 15303,8343 15242,8263 15256,8247 15284,8214 15357,8286
 Bus 171	busroute_N 13863,8597 13687,8734 13510,8872 13333,9017 13264,9073 13188,9134 13098,9205 13044,9248 12977,9301 12913,9353 12897,9365
 Bus 194	busroute_N 13614,9333 13489,9456 13345,9596 13190,9750 13156,9702 13127,9661 13058,9572 12987,9481 12897,9365
 Bus 171, Bus 194	busroute_N 12897,9365 12868,9359 12837,9353 12764,9433 12563,9536
-Bus 396	busroute_N 17605,10199 17567,10055 17527,9899 17471,9688 17383,9719 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195 18092,9141 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
+Bus 396	busroute_N 17605,10199 17567,10055 17559,10024 17527,9899 17471,9688 17383,9719 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195 18092,9141 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
 Bus 396	busroute_N 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218 18172,9250 18070,9292 18022,9324 18006,9335 17720,9533 17549,9529
 Bus 396	busroute_N 16049,10844 15903,10906 15870,10938 15820,10916 15777,10897 15674,10851 15681,10801
 Bus 296	busroute_N 18737,8686 18865,8740 18899,8754 18988,8792 19073,8828 19116,8845 19164,8863 19299,8946 19500,9043 19621,9097 19626,9171 19628,9194 19634,9292 19641,9411 19646,9490 19657,9666 19663,9757 19669,9876
@@ -890,7 +890,7 @@ Bordsteine beim Überqueren der Wuhletalstr.	CS 20801,17821 20728,17670 20657,17
 #: XXX Realisierung einer Querung geplant
 #: note: Der osm_watch-Way enthält zurzeit wheelchair=limited
 #: osm_watch: way id="523802314" version="4"
-#: last_checked: 2024-05-28
+#: last_checked: 2024-09-07
 #: check_frequency: 120d
 Bordsteine beim Überqueren der Grunewaldstr.	CP; 6851,9365 6921,9275 6994,9288
 Quastenhornweg: Privatstraße	CS -7595,4374 -7557,4340 -7473,4306 -7413,4304
@@ -1649,7 +1649,7 @@ beide Geh/Radwege hinter der Einmündung Neukirchstr. können Richtung Am Feucht
 #: next_check_id: HANSPETERSPLATZ-2022
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1128830.php (Benennung eines Platzes nach Hans Peters)
 #: XXX wann wird der Platz ausgeschildert?
-#: last_checked: 2024-08-29
+#: last_checked: 2024-09-07
 #: check_frequency: 45d
 Hans-Peters-Platz: nicht ausgeschildert	CS 7739,14119 7679,14030
 # 
@@ -1861,7 +1861,7 @@ Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wann sind die Straßen ausgeschildert? vvv
-#: last_checked: 2024-09-04 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED (ausgeschildert) --- #: note: nur ein kleines provisorisches Papierschild an der Kreuzung Ulrich-Plenzdorf-Str. hängt an der Hauswand --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15163,10758 15151,10699
 # REMOVED (ausgeschildert) --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15151,10699 15140,10647 15138,10638

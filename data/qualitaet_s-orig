@@ -198,7 +198,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2024-08-05
+#: last_checked: 2024-09-07
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -210,7 +210,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2024-08-05 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -496,7 +496,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 3 (Fahrradstraße?)
-#: last_checked: 2024-08-21 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: osm_watch: way id="169459736" version="15"
@@ -6417,6 +6417,7 @@ Michiganseestr.: Beton	Q0- 17042,10269 17026,10199
 Dolomitenstr.: Beton	Q0- 17026,10199 17156,10164 17330,10117 17457,10083 17567,10055
 Dolgenseestr.: Beton	Q0- 17026,10199 17018,10122 17035,10079 17078,10038 17288,9952
 Dolgenseestr.: Beton	Q0- 17273,9880 17275,9892 17288,9952
+Dolgenseestr. [Wohngebiet]: Beton	Q1+ 17559,10024 17761,9971 17774,9934
 Dolgenseestr.: Asphalt und Beton mit einigen Hebungen	Q1 17288,9952 17330,10117
 Upsalaer Str.: Kopfsteinpflaster	Q2 11369,16744 11364,16887
 Obernburger Weg: Kopfsteinpflaster	Q2 11686,17710 11700,17629
@@ -11348,7 +11349,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2024-08-12 vvv
+#: last_checked: 2024-09-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -15291,7 +15292,7 @@ Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17429,-453
 # 
 #: by: Torre:
 #: corrected_by: srt (Beton, Q0 -> )
-Mellenseestr.: Asphalt	Q0- 17527,9899 17633,9898 17738,9922 17838,9956 17958,10012
+Mellenseestr.: Asphalt	Q0- 17527,9899 17633,9898 17738,9922 17774,9934 17838,9956 17958,10012
 # 
 #: by: Benjamin Pauli:
 #: confirmed_by: srt
@@ -31824,7 +31825,7 @@ Am Tegeler Hafen: Asphalt	Q0 1955,20435 1871,20399 1788,20364 1686,20320 1445,20
 #: corrected_by: srt (Q1 -> Q2+)
 Ibsenstr.: Kopfsteinpflaster	Q2+ 10209,16674 10295,16667 10382,16661 10465,16656
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
-Ibsenstr.: Asphalt	Q0 10465,16656 10549,16650 10632,16644 10793,16636
+Ibsenstr.: Asphalt	Q0 10465,16656 10549,16650 10628,16644 10632,16644 10793,16636
 #: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
 Schützenstr. (Mariendorf): Kopfsteinpflaster	Q2- 8581,4342 8569,4459 8561,4535 8546,4629
 #: corrected_by: srt (Q1 -> Q0-)

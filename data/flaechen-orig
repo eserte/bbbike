@@ -187,7 +187,7 @@ Spreewaldplatz	F:P 12292,10374 12243,10274 12341,10218 12292,10374
 #: XXX Werden die Wege nachts (genaue Schließzeiten?) abgeschlossen sein? Oder wird das nur situationsbedingt (wann?) passieren?
 #: XXX Neue Lampen werden geplant -> nolighting-Einträge ggfs. prüfen.
 #: priority: #A
-#: last_checked: 2024-09-05
+#: last_checked: 2024-09-07
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Görlitzer Park	F:P 13220,9980 13162,9904 13139,9880 13086,9825 12932,9900 12983,10000 12881,10056 12829,9957 12814,9966 12341,10218 12397,10335 12317,10382 12309,10427 12348,10432 13220,9980
@@ -764,7 +764,7 @@ Gipsdreieck	F:P 10134,13474 10135,13506 10159,13523 10142,13556 10049,13528 1002
 #: osm_watch: way id="380356153" version="12"
 #: XXX neuer Name: Susanne-und-Kurt-Crohn-Platz
 #: add_fragezeichen: Hängen bereits Schilder für den Susanne-und-Kurt-Crohn-Platz?
-#: last_checked: 2024-09-03
+#: last_checked: 2024-09-07
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-11-23
@@ -1383,7 +1383,7 @@ Jacob-Teitel-Park	F:P 10318,13528 10324,13459 10341,13376 10358,13381 10390,1349
 #: XXX Werden hier Schilder aufgestellt?
 #: osm_watch: way id="28251523" version="14"
 #: priority: #C
-#: last_checked: 2024-07-29 (mapillary)
+#: last_checked: 2024-09-07
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-06-04
 Agnes-Sorma-Park	F:P 8858,13104 8886,13006 8985,13034 8997,13037 8981,13075 8922,13060 8899,13117 8858,13104
@@ -1494,7 +1494,7 @@ Friedhof Wartenberg	F:Cemetery 18073,18918 18061,18922 18042,18851 18081,18836 1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_44_4149_4196_online.pdf (Benennung)
 #: osm_watch: way id="51691170" version="10"
 #: XXX "Platz an den Drei Grazien": Werden hier entsprechende Straßenschilder aufgehängt? (bei osm wurde schon der neue Name eingetragen)
-#: last_checked: 2024-09-03
+#: last_checked: 2024-09-07
 Generationenpark	F:P 13434,15045 13516,14997 13548,14980 13556,14993 13524,15009 13536,15033 13455,15078 13434,15045
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1330765.php
 Sportplatz am Bildungscampus Schöneberger Linse	F:Sport 7255,8148 7362,8137 7356,8068 7250,8079 7255,8148
@@ -1508,7 +1508,7 @@ Franz-Mehring-Platz	F:P 12822,12067 12758,11915 12788,11898 12891,12008 12822,12
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_52_4789_4920_online.pdf (Benennung einer öffentlichen Grünanlage, tatsächlich ohne Bindestrich?)
 #: osm_watch: way id="759545001" version="4"
 #: XXX neuer Name: "Riwne Platz" (tatsächlich ohne Bindestrich?); bei osm schon eingetragen mit start_date:name=2023-11-24, hier mit Bindestrich
-#: last_checked: 2024-07-16
+#: last_checked: 2024-09-07
 #: check_frequency: 60d
 	F:P 13546,15464 13604,15430 13540,15329 13479,15361 13546,15464
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_30_3225_3284_online.pdf (Widmung als Grünanlage)
@@ -2085,9 +2085,9 @@ KGA Bornholm I	F:Orchard 10197,16528 10209,16674 10200,16850 9945,16865 9921,167
 #: XXX Teile der KGA sollen bebaut werden
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-umwelt/pankower-bezirksverordnete-geben-pruefauftrag-fuer-idee-der-kleingaertner_a262150
 #: osm_watch: way id="25841750" version="11"
-#: last_checked: 2024-03-17 (mapillary)
+#: last_checked: 2024-09-07
 #: check_frequency: 180d
-KGA Bornholm II	F:Orchard 10209,16674 10474,16655 10490,16914 10229,16927 10190,16930 10209,16674
+KGA Bornholm II	F:Orchard 10209,16674 10197,16528 10282,16522 10295,16667 10474,16655 10490,16914 10229,16927 10190,16930 10209,16674
 KGA Sandwüste	F:Orchard 10200,16850 10190,16930 10013,16972 9970,16970 9945,16865 10200,16850
 #: by: https://www.berliner-woche.de/pankow/c-bauen/entwidmung-des-friedhofs-pankow-ii-erst-in-zehn-jahren_a412139 (Entwidmung 2034)
 Friedhof Pankow II	F:Cemetery 9871,17596 9781,17531 9856,17429 9943,17493 9871,17596

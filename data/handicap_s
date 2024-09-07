@@ -26,9 +26,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 Charlottenstr.: Fahrbahn an der Dorotheenstr. einige Meter gesperrt	q3::inwork; 9454,12558 9462,12481
 Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17701,8851 17729,8850
 Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
-Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17738,9922 17633,9898
 Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17868,9823 17838,9956
-Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17749,9811 17738,9922
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2::inwork; 10178,10411 10122,10294
 Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -541,7 +539,7 @@ Heinitzweg: Fußgänger	q2 10325,1083 10379,1097
 Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
 (Weichselstr. - Sasarsteig): enger Durchgang	q4 12330,8636 12300,8613 12274,8607
 (Weichselstr. - Sasarsteig): Fußgänger	q3 12274,8607 12276,8590 12165,8566
-Richard-von-Weizsäcker-Platz: einige Fußgänger	q2 7239,8907 7307,8945
+Richard-von-Weizsäcker-Platz: Fußgängerbereich	q4 7239,8907 7307,8945
 Kernhofer Str.: Fußgänger, Supermarkt	q2 15380,10946 15355,10875
 Ceciliengärten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
 Ceciliengärten [zur Sponholzstr.]: einige Fußgänger, schmale Rampe, Bodstein	q3 6239,7600 6166,7599
@@ -555,14 +553,14 @@ Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2
 Teltowkanalpromenade: schmale und kurvige Unterführung	q2 4778,3352 4815,3382 4822,3431
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
 (Unterführung): Rampen	q2 -8334,14461 -8251,14440 -8256,14418 -8227,14408 -8287,14411
-Viktoriapark: starke Steigung, Fußgänger	q4; 8598,9074 8695,9079 8827,9086 8883,9089
-Viktoriapark: starkes Gefälle, Fußgänger	q2; 8883,9089 8827,9086 8695,9079 8598,9074
-Viktoriapark: Steigung, Fußgänger	q3; 9115,9046 9091,9054 9079,9058 9026,9042 8962,9048
-Viktoriapark: Gefälle, Fußgänger	q1; 8962,9048 9026,9042 9079,9058 9091,9054 9115,9046
-Viktoriapark: Fußgänger	q2 8883,9089 8901,9104 8943,9098 8962,9048
-Viktoriapark: starke Steigung, Fußgänger	q4; 8970,9323 9007,9264
-Viktoriapark: starkes Gefälle, Fußgänger	q3; 9007,9264 8970,9323
-Viktoriapark: Fußgänger	q1 9007,9264 8982,9198 8990,9166 9020,9150 9080,9163 9150,9152
+Viktoriapark: starke Steigung, Fußgänger, Grünanlage	q4; 8598,9074 8695,9079 8827,9086 8883,9089
+Viktoriapark: starkes Gefälle, Fußgänger, Grünanlage	q3; 8883,9089 8827,9086 8695,9079 8598,9074
+Viktoriapark: Steigung, Fußgänger, Grünanlage	q3; 9115,9046 9091,9054 9079,9058 9026,9042 8962,9048
+Viktoriapark: Gefälle, Fußgänger, Grünanlage	q3; 8962,9048 9026,9042 9079,9058 9091,9054 9115,9046
+Viktoriapark: Fußgänger, Grünanlage	q3 8883,9089 8901,9104 8943,9098 8962,9048
+Viktoriapark: starke Steigung, Fußgänger, Grünanlage	q4; 8970,9323 9007,9264
+Viktoriapark: starkes Gefälle, Fußgänger, Grünanlage	q3; 9007,9264 8970,9323
+Viktoriapark: Fußgänger, Grünanlage	q3 9007,9264 8982,9198 8990,9166 9020,9150 9080,9163 9150,9152
 (Alt-Biesdorf - Schloss Biesdorf): Steigung, Fußgänger	q3; 20764,11675 20825,11732
 (Schloss Biesdorf - Alt-Biesdorf): Fußgänger	q2; 20825,11732 20764,11675
 (Parkweg Möllendorffstr. - Rathausstr.): Fußgänger	q2 15420,12178 15520,12160 15628,12246
@@ -3501,8 +3499,8 @@ Paul-Lincke-Ufer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 
 Jahnstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 11500,9116 11509,9392
 Neue Schönhauser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10527,13257 10423,13215 10313,13227
 Kirchhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13179,7613 13173,7567 13117,7471 13029,7353
-Björnsonstr: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10209,16674 10197,16528
-Ibsenstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10295,16667 10209,16674
+Björnsonstr: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10209,16674 10197,16528
+Ibsenstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10295,16667 10209,16674
 Eichhornstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8232,11414 8253,11306 8280,11296
 Lindenallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1429,11528 1403,11428
 Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1753,20191 1907,20265
@@ -3517,6 +3515,7 @@ Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17729,10331 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
+Dolgenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17774,9934 17761,9971 17559,10024
 Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 7998,15068 8015,15047 8037,14958 8091,14895
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631

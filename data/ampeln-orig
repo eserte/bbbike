@@ -189,14 +189,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2024-09-06
+#: last_checked: 2024-09-07
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-09-04
+#: last_checked: 2024-09-07
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Gürtelstr.	F::inwork 15153,11691
@@ -4236,7 +4236,7 @@ Umgehung mit Treppen existiert	Zbr 47077,-15816
 #: XXX_prog für Radfahrer nur von Osten kommend relevant
 	X -3876,29096
 Umgehung mit Treppen existiert	Zbr 4611,63946
-	B 23314,-48026
+# REMOVED (zurückgebaut) ---	B 23314,-48026
 	B 13053,-99051
 	X 65632,76166
 	X 65813,76001
@@ -4553,8 +4553,7 @@ unbeschrankter Bahnübergang	B0 -4990,55852
 #: note: Luftbild
 	B -13357,37176
 # REMOVED (Bahnübergang wird zzt. rückgebaut) --- B 18101,-35914
-#: note: Luftbild
-	B 22928,-46895
+# REMOVED (Bahnübergang wurde ersetzt) --- #: note: Luftbild ---	B 22928,-46895
 #: note: Luftbild
 	B -19043,-11944
 	B -19156,8684
