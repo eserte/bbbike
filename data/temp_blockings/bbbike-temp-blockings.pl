@@ -967,7 +967,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.hier-in-rudow.de/meilenfeste.html
 #: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
-#: source_id: viz2021:13.49573,52.4177,06.09.2024,19:00 (bis 08.09.2024)
+#: source_id: viz2021:13.49573,52.4177,06.09.2024,19:00 (bis 08.09.2024) (inaktiv)
 Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 Krokusstr.	2::temp 16610,1715 16767,1831
 EOF
@@ -44576,6 +44576,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
+#: osm_watch: note 4425350 1
 #: last_checked: 2024-09-06
 #: check_frequency: 10d
 	q3::inwork 14949,11474 14849,11539
@@ -44605,6 +44606,33 @@ EOF
 	3 12207,11763 12132,11788 11966,11832
 	3 11966,11832 12132,11788 12207,11763
 #: last_checked ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2024-09-30 00:00:00"),
+       text  => 'Württembergische Str.: Markt, Straße vermutlich gesperrt, jeden Samstag und Sonntag von 11:00 bis 21:00',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: note: Thaipark Markt
+#: by: https://thaipark.de/blog/thaipark-neuigkeiten
+#: by: https://www.berlin.de/tourismus/insidertipps/7766805-2339440-thaiwiese-im-preussenpark.html
+#: tempex: sa,su T11-T21
+	2::temp 4374,9409 4381,9620
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicheweise mit Bauzäunen gesperrt werden (Stand Anfang September 2024: Verbindung war passierbar)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10033 (Bebauungsplanverfahren XXI-40a)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
+#: note: man kann hier schon entlangfahren, über Betriebsgeländestraßen unterschiedlicher Qualität; am südlichen Ende ist ein Tor, welches am 2023-01-21 geöffnet werden konnte; mittlerweile existiert kein Tor mehr (2024-09-08)
+#: osm_watch: way id="946443907" version="3"
+#: last_checked: 2024-09-08
+#: check_frequency: 120d
+Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 EOF
      },
     );

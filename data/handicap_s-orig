@@ -894,7 +894,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-08
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1014,7 +1014,7 @@ Gothaer Str.: Fahrbahn gesperrt, mögliche Umwege	q2::inwork 22899,15073 22905,14
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/richtfeste-fuer-290-wohnungen_a417760
 #: also_indoor: traffic (G,H,B)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2024-07-30 (mapillary) vvv
+#: last_checked: 2024-09-08 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv
 #: valid: -20241231 vvv
@@ -5002,6 +5002,10 @@ Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,1
 #: note: zwei Bodenschwellen oben, weitere zwei Bodenschwellen vor der Parkplatzausfahrt; außerdem Tempo 10
 #: note: Bodenschwellen gehen über die gesamte Fahrbahnbreite, aber beim Hochfahren stören sie kaum
 Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 25573,1609 25438,1638 25399,1629
+# 
+(Lea-Grundig-Str./Jan-Petersen-Str. - Radweg an der Straßenbahn): einige Fußgänger	q1 21031,16217 21000,16238
+# 
+(Zur Alten Börse - Merler Weg): Betriebsgeländestraßen	q1- 18749,13158 18766,13257
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
