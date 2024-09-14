@@ -1,753 +1,6 @@
-$#temp_blocking = 30;
+$#temp_blocking = 727;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
-#: by: https://www.family-and-friends-ev.de/?date=20210418 (10.-12. September 2021)
-#: by: https://www.vinoflix.com/blog/wein-und-winzerfest-lichtenrade
-#: by: https://www.visitberlin.de/en/event/wine-festival-lichtenrade
-#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/35-wein-und-winzerfest-29d68374-a7db-402e-9595-697a7fb58cc1/
-#: by: https://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-lichtenrade.html
-	2::temp 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1725487200,
-         'id' => 31,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 06.09.2024 14:00 Uhr bis 08.09.2024 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1725822000
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       {
-         'data' => '#: by: http://www.hier-in-rudow.de/meilenfeste.html
-#: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
-#: source_id: viz2021:13.49573,52.4177,06.09.2024,19:00 (bis 08.09.2024) (inaktiv)
-Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
-Krokusstr.	2::temp 16610,1715 16767,1831
-',
-         'from' => 1725616800,
-         'id' => 112,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              8,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2024 bis 08.09.2024)',
-         'type' => 'gesperrt',
-         'until' => 1725832799
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html
 #: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
@@ -1100,16 +353,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 246700600 (bis 09.09.2024)
-	2::inwork 44229,-14131 43456,-14384 42430,-14398
-',
-         'from' => 1725552000,
-         'id' => 995,
-         'text' => 'Storkow-Friedersdorf: Bahnübergang bei Kummersdorf wegen Gleisbauarbeiten gesperrt, 06.09.2024 18:00 Uhr bis 09.09.2024 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1725897600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3392,26 +2636,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: IM_020213 (alt, von 2013) (inaktiv)
-#	q2::temp 9108,11961 9138,11872
-#	3::temp 9195,11972 9108,11961 9076,12054
-#	3::temp 9076,12054 9108,11961 9195,11972
-#	3::temp 9195,11972 9108,11961 9138,11872
-#	3::temp 9138,11872 9108,11961 9195,11972
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240904 (jährliches Fest der Landesvertretung Hamburg)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1831534468970246416
-#: source_id: viz2021:13.38476,52.51445,05.09.2024,06:00 (bis 13.09.2024)
-Mauerstr.	2::temp 9076,12054 9108,11961 9138,11872
-Jägerstr.	2::temp 9108,11961 9195,11972
-Taubenstr.	2::temp 9138,11872 9207,11880
-',
-         'from' => 1725400800,
-         'id' => 2481,
-         'text' => 'Mauerstr./Jägerstr./Taubenstr.: Veranstaltung, Straßen gesperrt, vom 05.09.2024 06:00 Uhr bis 13.09.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1726236000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3601,35 +2826,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.turmstrasse.de/aktuelles
-#: by: https://www.gratis-in-berlin.de/festivals/item/2056177-moabiter-kiezfest-2022
-#: by: https://www.gratis-in-berlin.de/images/stories/tipps/l_plakat_kiezfest_2022_dina4_2.jpg
-#: by: https://www.turmstrasse.de/mitgestalten/kiezfest
-# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
-# REMOVED --- : tempex YYYY09 & sa3 & T14-T18
-# REMOVED --- : tempex YYYY09 & sa1 & T12-T21
-# REMOVED ---	2::temp 5857,13342 5868,13441 5882,13548
-	2::temp 5857,13342 5868,13441 5956,13433 5956,13338
-',
-         'from' => 1726178400,
-         'id' => 2625,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              8,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2029, voraussichtlich 12 bis 21 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1726340400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5438,9 +4635,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
+#: XXX Komment Fußgänger mittlerweile unter die Bahnbrücke?
 #: last_checked: 2024-08-07 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-12-11 vvv
+#: next_check: 2024-09-09 vvv
+# REMOVED --- #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
 Niemetzstr.	2::inwork 13797,7267 13762,7321
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
@@ -5671,19 +4870,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        undef,
        undef,
        undef,
-       {
-         'data' => '#: url: https://www.wuhlheide.de/programm
-#: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03, 2024-06-09
-#: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023; Nachtrag: am 17. September 2023 gab es wohl auch eins
-#: note: 2024 gibt es Konzerttermine zwischen dem 22. Juni 2024 und 14. September 2024
-	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
-',
-         'from' => 1718920800,
-         'id' => 3569,
-         'text' => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni bis Mitte September',
-         'type' => 'gesperrt',
-         'until' => 1726329600
-       },
+       undef,
        {
          'data' => '#: by: Gonsolo & osm
 	2::temp -8489,-2220 -8574,-2204 -8653,-2195
@@ -5771,7 +4958,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/721-F/22/001 (bis 14.09.2024) (vorfristig inaktiv) (bis 14.09.2024)
+         'data' => '#: source_id: LS/721-F/22/001 (bis 14.09.2024) (vorfristig inaktiv) (bis 14.09.2024) (inaktiv)
 #: next_check_id: BADFREIENWALDE-2022
 	2::inwork 52984,42973 53249,43276
 ',
@@ -6104,11 +5291,13 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
 #: last_checked: 2024-08-28 vvv
 #: check_frequency: 60d vvv
+#: next_check_id: 2024-12-31 vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 14242,9448 14316,9542
+#: next_check_id ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -6872,7 +6061,28 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
+#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
+#: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
+#: source_id: bvg2021:240#BVG326189_0
+#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
+#: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024)
+#: by[nocache]: https://berlin.social//113128287756327462
+#: osm_watch: way id="198589911" version="20"
+# REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
+# REMOVED --- #: last_checked: 2023-11-19
+# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
+#: priority: #B
+#: next_check: 2024-09-13
+	q4::inwork 15856,10821 15793,10814
+',
+         'from' => 1726178400,
+         'id' => 3885,
+         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 20.09.2024 20:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1726855200
+       },
        undef,
        undef,
        {
@@ -6943,18 +6153,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
          'type' => 'handicap',
          'until' => 1734019200
        },
-       {
-         'data' => '#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024)
-	q4::inwork 22917,30635 22770,30813
-# REMOVED (hier nicht) ---	q4::inwork 22770,30813 22690,30909
-	q4::inwork; 22850,30562 22917,30635
-',
-         'from' => 1689487200,
-         'id' => 3902,
-         'text' => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, außerdem Einbahnstraßenregelung in der Hussitenstr., 17.07.2023 08:00 Uhr bis 13.09.2024 16:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1726236000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7324,7 +6523,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-06-24 (okas)
+#: last_checked: 2024-09-12 (bahninfo-forum)
 #: check_frequency: 45d
 	2::inwork 9586,17665 9396,17863
 # REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
@@ -7371,7 +6570,18 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'type' => 'handicap',
          'until' => 1735664400
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.305156,52.496443,12.02.2024,07:00 (bis 15.03.2024) (inaktiv)
+#: source_id: viz2021:13.305156,52.496443,13.03.2024,20:58 (bis 28.03.2024)
+#: source_id: viz2021:13.30519,52.49671,09.09.2024,07:00 (bis 20.09.2024)
+	q4::inwork 3711,9855 3719,10004
+',
+         'from' => 1725771600,
+         'id' => 4006,
+         'text' => 'Eisenzahnstr.: Bauarbeiten in Höhe Paderborner Str., evtl. sind auch Radfahrer betroffen, vom 09.09.2024 07:00 bis 20.09.2024 18:00',
+         'type' => 'handicap',
+         'until' => 1726848000
+       },
        undef,
        {
          'data' => '#: source_id: viz2021:13.350567,52.532479,14.02.2024,07:00 (bis 23.09.2025)
@@ -7753,27 +6963,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'until' => 1726848000
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
-#: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024)
-#: source_id: viz2021:13.36063,52.44674,06.09.2024,20:00 (bis 08.09.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
-#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
-#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1832086361215578310
-#: by: https://pbs.twimg.com/media/GWyr1-TXYAAdRMr?format=jpg&name=medium
-	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
-',
-         'from' => 1725487200,
-         'id' => 4074,
-         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 06.09.2024 20:00 bis 08.09.2024 22:00',
-         'type' => 'handicap',
-         'until' => 1725825600
-       },
+       undef,
        undef,
        undef,
        {
@@ -8213,20 +7403,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => 1727708400
        },
        undef,
-       {
-         'data' => '#: next_check_id: SIEGFRIED-2024
-#: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024) (bis 02.09.2024) (inaktiv)
-#: note: (noch) keine Einschränkung in der Rüdigerstr.
-#: source_id: viz2021:13.499269,52.518592,02.09.2024,07:00 (bis 13.09.2024)
-# REMOVED (bestätigt) --- #: XXX Annahme einer gemeinsamen Rad/Gehwegführung
-	q2; 16860,12861 16859,12613 16857,12600 16831,12419 16820,12339
-',
-         'from' => 1723413600,
-         'id' => 4135,
-         'text' => 'Siegfriedstr.: Bauarbeiten zwischen Bornitzstr. und Rüdigerstr., Richtung Süden gemeinsamer Geh- und Radweg, mögliche Engstellen und Bordsteine, voraussichtlich bis 13.09.2024 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1726239600
-       },
+       undef,
        {
          'data' => '#: source_id: LS/221-E/24/116 (bis 31.10.2024)
 	2::inwork 76863,101305 76791,101034 76787,98891 76787,98838
@@ -8342,7 +7519,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477879.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/24-105_vfp_240710.jpg (Umleitungsstrecke)
 #: by: https://www.berliner-woche.de/wannsee/c-bauen/instandsetzung-der-fahrbahn_a423552
-#: source_id: bvg2024:218#HIM_FREETEXT_237776
+#: source_id[inactive]: bvg2024:218#HIM_FREETEXT_237776
 	2::inwork -6442,1150 -6492,1204 -6577,1395 -6648,1613 -6784,1815 -6903,1906 -6999,1933 -7165,1978 -7304,1970 -7443,1915 -7640,1837 -7866,1862 -8106,2034 -8284,2156 -8422,2155
 ',
          'from' => 1725746400,
@@ -8361,18 +7538,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => 1729864800
        },
-       {
-         'data' => '#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/erneuerung-fuek-weichenerneuerung-in-friedrichstrasse-brueckenarbeiten-alt-moabit/#con-29937 (SEV)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1831601103974060505 (Verlängerung)
-#: note: wegen SEV-Haltestelle
-	q4::temp; 9121,12514 9108,12635 9098,12687
-',
-         'from' => 1724241259,
-         'id' => 4147,
-         'text' => 'Neustädtische Kirchstr.: Einbahnstraßenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung Süden, voraussichtlich bis 09.09.2024',
-         'type' => 'handicap',
-         'until' => 1725838200
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024)
 #: note: Start der Sperrung hat sich verzögert
@@ -8438,17 +7604,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => 1734303599
        },
-       {
-         'data' => '#: source_id: 246101061 (bis 11.09.2024)
-	2::inwork 37257,-12796 37241,-12587 37189,-12000
-',
-         'dont_check_date' => 1,
-         'from' => 1725206400,
-         'id' => 4154,
-         'text' => 'Bahnübergang Friedersdorf: Sperrung, vom 02.09.2024 bis 04.09.2024 und vom 09.09.2024 bis 11.09.2024',
-         'type' => 'gesperrt',
-         'until' => 1726084800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.376381,52.443079,01.08.2024,08:00 (hier nur Kfz-Verkehr, bis 01.11.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1818885622083256587
@@ -8482,14 +7638,14 @@ Okerstr.	2::inwork 11528,7528 11540,7534
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.330617,52.505406,23.08.2024,14:35 (bis 27.09.2024)
+         'data' => '#: source_id: viz2021:13.330617,52.505406,23.08.2024,14:35 (bis 27.09.2024) (bis 18.10.2024)
 	q4::inwork; 5488,10978 5373,10981 5236,10994
 ',
          'from' => 1724330100,
          'id' => 4157,
-         'text' => 'Kantstr.: zwischen Joachimsthaler Str. und Fasanenstr. Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.08.2024 14:35 bis 27.09.2024 17:00',
+         'text' => 'Kantstr.: zwischen Joachimsthaler Str. und Fasanenstr. Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.08.2024 14:35 bis 18.10.2024 17:00',
          'type' => 'handicap',
-         'until' => 1727449200
+         'until' => 1729263600
        },
        {
          'data' => '#: note: laut rbb bis 19.01.2025
@@ -8520,20 +7676,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240901 ("schrittweise", Bürgerfest findet am 06.+07.09.2024 statt)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1831929069308670071
-	2::temp 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8540,12420
-	2::temp 8415,12749 8309,12758 8306,12609 8207,12606
-	2::temp 8766,12541 8667,12555 8596,12576
-Uferweg am Paul-Löbe-Haus	2::temp 8473,12753 8495,12651 8596,12576
-',
-         'from' => 1725141600,
-         'id' => 4160,
-         'text' => 'Regierungsviertel: Vorbereitungen für das Bürgerfest zum 75-jährigen Bestehen des Deutschen Bundestages, Straßensperrungen, Radfahrer sind auch betroffen, vom 2.9.2024 bis 11.9.2024',
-         'type' => 'gesperrt',
-         'until' => 1726092000
-       },
+       undef,
        {
          'data' => '#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr.
 #: osm_watch: way id="482690912" version="6"

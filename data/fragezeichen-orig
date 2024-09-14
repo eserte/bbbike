@@ -1713,9 +1713,9 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_234329 (ab 2024-08-12, ohne Enddatum)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_234330 (ab 2024-08-12, ohne Enddatum)
 #: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 23.08.2024) (bis 02.09.2024) (inaktiv)
-#: source_id: viz2021:13.499269,52.518592,02.09.2024,07:00 (bis 13.09.2024)
-#: source_id: bvg2024:240#HIM_FREETEXT_237174
-#: source_id: bvg2024:240#HIM_FREETEXT_237189
+#: source_id: viz2021:13.499269,52.518592,02.09.2024,07:00 (bis 13.09.2024) (inaktiv)
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_237174
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_237189
 #: XXX Während der Bauarbeiten geplant: Einbahnstraßenregelung (nur für Kfz?), außerdem Einbahnstraßenregelung in der Rüdigerstr. bis zur Dietlindestr., Radverkehrsführung via Hochbord)
 #: osm_watch: way id="93221335" version="27"
 #: osm_watch: note 4347252 4
@@ -2183,7 +2183,7 @@ Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projec
 #: by: https://www.berliner-woche.de/moabit/c-bauen/beusselstrasse-bald-mit-radweg_a395923
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12119 (Anfrage)
 #: by: https://www.infravelo.de/projekt/beusselstrasse/ (2. Quartal 2024 - 3. Quartal 2024) (3. Quartal 2024 - 4. Quartal 2024)
-#: source_id: viz2021:13.328613,52.53126,26.08.2024,07:00 (bis 13.09.2024)
+#: source_id: viz2021:13.328613,52.53126,26.08.2024,07:00 (bis 13.09.2024) (bis 30.09.2024)
 #: XXX die Busspur bleibt ab Wiclefstr. erhalten; 2,25m breit
 #: XXX Baustart verzögert sich auf unbestimmte Zeit (siehe osm-Notiz); mittlerweile möglicher Baubeginn: 2024-07-27
 #: source_id: viz2021:13.328464,52.530987,14.05.2024,08:00 (Gehwegarbeiten bis 31.05.2024) (bis 07.06.2024) (inaktiv)
@@ -4102,8 +4102,9 @@ Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,
 #: osm_watch: way id="4410427" version="40"
 #: osm_watch: way id="1052921140" version="7"
 #: osm_watch: way id="31621016" version="34"
+#: XXX Markierungsarbeiten in der Wintersteinstraße bis Mitte Oktober 2024
 #: last_checked: 2024-08-30
-#: check_frequency: 90d
+#: check_frequency: 45d
 #: next_check: 2024-12-31
 "Opernroute": Grünbeschichtung geplant, außerdem Umwandlung von Schutzstreifen in Radfahrstreifen sowie abschnittsweise Protektion	?::projected 3843,11659 3837,11760 3801,11858 3786,12014 3778,12104 3767,12217 3761,12298 3757,12372 3747,12495 3741,12607 3738,12639 3734,12715 3716,12925 3714,12949 3711,13098 3711,13210 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
 # 
@@ -6870,7 +6871,7 @@ Landesstraße 30 (Woltersdorf und Rüdersdorf): Bau eines gemeinsamen Geh- und Rad
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=50166
 #: by: https://www.o-sp.de/download/lbvbrandenburg/254573
 #: by: https://www.o-sp.de/download/lbvbrandenburg/254578
-#: source_id: LS/721-F/22/001 (bis 14.9.2024) (inaktiv) (bis 14.9.2024)
+#: source_id: LS/721-F/22/001 (bis 14.9.2024) (inaktiv) (bis 14.9.2024) (inaktiv)
 #: osm_watch: way id="4698246" version="7" brb
 #: next_check: 2024-09-14
 B158 Bad Freienwalde: bei der Instandsetzung werden vermutlich Radspuren entstehen (oder existieren diese bereits?)	?::inwork 52984,42973 53249,43276 53317,43391
@@ -7472,10 +7473,11 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16093,-613 16173
 #: by: https://www.tagesspiegel.de/berlin/bessere-anbindung-von-karlshorst-berliner-tram-linie-22-wird-dieses-jahr-nicht-fertig-11304169.html (Bauzeit halbes Jahr nach Erteilen der Baugenehmigung)
 #: by: https://www.bahninfo-forum.de/read.php?9,767323,801038#msg-801038 (Erwähnung der Ampel Ehrlichstr./Blockdammweg zum Schuljahr 2024/2025)
 #: by: https://www.nd-aktuell.de/artikel/1173566.strassenbahn-kein-ende-beim-tram-ausbau-der-bvg-zum-berliner-ostkreuz.html
-#: XXX mittlerweile wegen Hochbauarbeiten nebenan ein paar Meter gemeinsamer Geh- und Radweg am Ende der Ehrlichstr.
+#: by: https://www.nd-aktuell.de/artikel/1185212.oeffentlicher-nahverkehr-oepnv-in-berlin-baurecht-fuer-neue-tramlinie-ist-da.html (Inbetriebnahme Mitte 2026?)
+#: XXX mittlerweile wegen Hochbauarbeiten nebenan ein paar Meter gemeinsamer Geh- und Radweg am Ende der Ehrlichstr. (ist mittlerweile vorbei; war aber vermutlich nur für den Hochbau nebenan)
 #: last_checked: 2024-09-01
 #: check_frequency: 180d
-# REMOVED --- #: next_check: 2024-09-02
+#: next_check: 2026-06-30
 Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird enger, neue Ampel am Kreuzungspunkt Ehrlichstr.	?::projected 17729,8850 17760,8853 17904,8924
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
@@ -7868,7 +7870,7 @@ Friedland (B168): geplanter Radweg	?::projected 69850,-32667 69418,-33865 69506,
 #: by: https://www.o-sp.de/download/lbvbrandenburg/324115
 #: by: https://www.o-sp.de/download/lbvbrandenburg/324121
 #: by: https://www.o-sp.de/download/lbvbrandenburg/324116
-#: source_id: 246001458 (bis 13.09.2024)
+#: source_id: 246001458 (bis 13.09.2024) (inaktiv)
 #: last_checked: 2024-06-13 (mapillary)
 #: check_frequency: 270d
 Blumberg (B158): Verlegung der Elisenauer Str., Kreisverkehr mit Zebrastreifen, Neuordnung der Rad/Gehwege	?::projected 24738,22566 24754,22552 24709,22522 24540,22469
@@ -9225,6 +9227,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_39_3803_3908_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.deutsches-architekturforum.de/thread/13529-waterkant-berlin-%C3%B6stliche-wasserstadt-spandau/?postID=750938#post750938
 #: by: https://www.berliner-woche.de/haselhorst/c-bauen/an-der-waterkant-wurde-der-grundstein-fuer-den-letzten-bauabschnitt-gelegt_a398419 (bis Ende 2026)
+#: source_id: viz2021:13.225604,52.552163,01.08.2024,08:00 (Leitungsbau, bis 18.10.2024)
 #: osm_watch: way id="830632211" version="5"
 #: last_checked: 2024-07-16 (daf)
 #: check_frequency: 360d
@@ -10020,6 +10023,7 @@ TVO: vorgeschlagene Streckenführung	?::projected 21002,5755 20931,5969 20754,627
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/eisenhutweg-adlershof.1012/#post-23644
 #: source_id: viz2021:13.508467,52.430571,19.07.2022,13:00 (Leitungsarbeiten bis 2.10.2022, Gegenverkehrsregelung) (bis 4.11.2022) (inaktiv)
 #: source_id: viz2021:13.50906,52.430203,22.11.2023,05:00 (Kranabbau bis 23.11.2023) (inaktiv)
+#: source_id: viz2021:13.509368,52.430018,11.09.2024,10:00 (bis 04.10.2024)
 # REMOVED (nein) --- #: XXX betreffen die Leitungsarbeiten auch den Radverkehr (z.B. durch die Einrichtung eines Zweirichtungsradwegs?)
 #: osm_watch: way id="1154764619" version="2"
 #: last_checked: 2024-08-23 (architektur-urbanistik)

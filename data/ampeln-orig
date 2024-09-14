@@ -57,14 +57,14 @@ Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 # 
 # REMOVED (reguläre Ampel existiert bereits, Doppelung nicht möglich) --- #: source_id: viz2021:13.343826,52.613505,05.08.2024,09:00 (bis 02.09.2024) --- #: next_check: 2024-09-02 --- #: valid: -20240902 --- Zabel-Krüger-Damm/Am Vierrutenberg: Gegenverkehrsregelung	X::inwork::alternating 6075,23022
 # 
-#: source_id: viz2021:13.52539,52.51456,27.05.2024,13:00 (bis 21.06.2024) (inaktiv)
-#: source_id: viz2021:13.524783,52.514028,27.05.2024,13:00 (bis 21.06.2024) (bis 22.07.2024) (bis 19.08.2024) (bis 09.09.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1795047296100647162
-#: by: https://pbs.twimg.com/media/GOW6QvLXUAY5vpt?format=jpg&name=large (direkte Zufahrt zur südlichen Marzahner Chaussee nicht möglich)
-#: last_checked: 2024-09-08
-#: next_check: 2024-09-09
-#: valid: -20240909
-Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
+# REMOVED --- #: source_id: viz2021:13.52539,52.51456,27.05.2024,13:00 (bis 21.06.2024) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.524783,52.514028,27.05.2024,13:00 (bis 21.06.2024) (bis 22.07.2024) (bis 19.08.2024) (bis 09.09.2024) (inaktiv)
+# REMOVED --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1795047296100647162
+# REMOVED --- #: by: https://pbs.twimg.com/media/GOW6QvLXUAY5vpt?format=jpg&name=large (direkte Zufahrt zur südlichen Marzahner Chaussee nicht möglich)
+# REMOVED --- #: last_checked: 2024-09-08
+# REMOVED --- #: next_check: 2024-09-09
+# REMOVED --- #: valid: -20240909
+# REMOVED --- Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
 # 
 #: source_id: viz2021:13.593606,52.444772,15.04.2024,10:00 (bis 17.06.2024) (bis 02.08.2024) (bis 09.08.2024) (bis 12.08.2024) (bis 18.10.2024)
 #: note: gilt wohl nicht auf dem radwegartigen Weg Richtung Süden
@@ -315,27 +315,27 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 # REMOVED --- #: next_check_id: LUECK-2021 --- #: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00 (bis 10.12.2021) --- #: by: https://www.bahninfo-forum.de/read.php?9,716845,718464#msg-718464 --- #: note: Gegenverkehrsregelung beginnt östlich der Einmündung Wönnichstr. und endet östlich der Kreuzung Rummelsburger Str. --- #: last_checked: 2021-11-21 --- #: next_check: 2021-12-10 --- #: valid: -20211210 --- Lückstr.: Gegenverkehrsregelung	X::inwork::alternating 16601,10650
 # REMOVED --- #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022) (mittlerweile bis 31.7.2022) (bis 1.8.2022) (inaktiv) --- #: source_id: viz2021:13.3751,52.58195,02.08.2022,11:32 (bis 3.8.2022) --- #: note laut rbb bis 9.2.2022 --- #: last_checked: 2022-03-19 (mapillary) vvv --- #: next_check: 2022-08-03 vvv --- #: valid: -20220803 vvv --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725 --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8268,19558 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
-#: next_check_id: SCHOENHOLZER-2022
-#: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
-#: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023) (inaktiv) vvv
-#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024) (inaktiv) vvv
-# REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8234,19936
-# REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8311,19458
-# REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8268,19558
-#: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024) (bis 24.05.2024) (inaktiv)
-#: source_id: viz2021:13.374486,52.583736,27.02.2024,07:00 (bis 07.10.2024) (bis 11.09.2024)
-#: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/ende-der-baustelle-endlich-in-sicht_a412148 (Bauarbeiten bis Juni/Juli 2024)
-#: last_checked: 2024-07-13 vvv
-#: next_check: 2024-09-11 vvv
-#: valid: -20240911 vvv
-Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
-# REMOVED (diese Ampel ist nicht mehr gelistet) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: source_id ^^^
-#: source_id ^^^
+# REMOVED --- #: next_check_id: SCHOENHOLZER-2022
+# REMOVED --- #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (bis 31.03.2023) (inaktiv) vvv
+# REMOVED --- #: source_id: viz2021:13.37403,52.58708,03.08.2022,12:00 (zusätzlicher Eintrag, bis 31.05.2023) (inaktiv) vvv
+# REMOVED --- #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024) (inaktiv) vvv
+# REMOVED --- # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8234,19936
+# REMOVED --- # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8311,19458
+# REMOVED --- # REMOVED (nicht mehr) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8268,19558
+# REMOVED --- #: source_id: viz2021:13.375938,52.57953,27.02.2024,07:00 (bis 28.03.2024) (bis 24.05.2024) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.374486,52.583736,27.02.2024,07:00 (bis 07.10.2024) (bis 11.09.2024) (inaktiv
+# REMOVED --- #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/ende-der-baustelle-endlich-in-sicht_a412148 (Bauarbeiten bis Juni/Juli 2024)
+# REMOVED --- #: last_checked: 2024-07-13 vvv
+# REMOVED --- #: next_check: 2024-09-11 vvv
+# REMOVED --- #: valid: -20240911 vvv
+# REMOVED --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725
+# REMOVED --- # REMOVED (diese Ampel ist nicht mehr gelistet) --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8333,19305
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
+# REMOVED --- #: source_id ^^^
+# REMOVED --- #: source_id ^^^
+# REMOVED --- #: source_id ^^^
 # 
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2023-01-05 --- #: next_check: 2024-06-01 --- Grunerstr./Jüdenstr.	X::inwork 10807,12451
 # REMOVED --- #: next_check_id: BERLINERALLEE-2021 --- #: next_check_id: BERLINERALLEE-2022 --- #: XXX evtl. bis zum Ende der jetzigen Bauphase, oder bis zum Ende der Gesamtbaumaßname? --- #: last_checked: 2022-06-10 --- #: next_check: 2022-07-25 --- #: valid: -20220725 --- Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
@@ -3589,7 +3589,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2024-08-28
+#: last_checked: 2024-09-14
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 

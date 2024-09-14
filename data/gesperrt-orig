@@ -3974,7 +3974,7 @@ Berolinastr. in Höhe Spielplatz	2::inwork 11862,13027 11857,13014 11825,13029 11
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt)
-#: last_checked: 2024-08-28 vvv
+#: last_checked: 2024-09-09 vvv
 #: osm_watch: way id="1199463691" version="3"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050
@@ -5070,6 +5070,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,726545#msg-726545
 #: by: https://viz.berlin.de/2023/09/bhf-schoeneweide/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1477330.php
+#: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2024-09-12-verkehrsloesung-schoeneweide/1-2024-09-12-01.html
 #: source_id: viz2021:13.50984,52.45636,05.08.2022,11:36 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 5.8.2022) (bis 31.3.2023) (bis 01.09.2023) (bis 02.02.2024) (seit November 2023 inaktiv)
 #: note: auch als "Verlängerte Brückenstraße" bezeichnet
@@ -5077,8 +5078,8 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="23"
-#: last_checked: 2024-09-04
-#: check_frequency: 60d
+#: last_checked: 2024-09-12 (krickstadt)
+#: check_frequency: 21d
 # REMOVED --- #: next_check: 2024-08-17
 # REMOVED --- #: next_check: 2024-02-02
 # REMOVED --- #: valid: -20230901
@@ -5529,6 +5530,11 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: last_checked: 2023-05-01 (osm)
 #: next_check: 2024-12-31
 Liepe - Bralitz: Brücke wurde abgerissen und wird neu gebaut	2::inwork 48210,51009 48230,50933
+# 
+#: osm_watch: way id="4214231" version="39"
+#: osm_watch: way id="10368500" version="43"
+#: last_checked: 2024-09-14
+Carolabrücke (Dresden): Brücke teilweise eingestürzt, der Rest ist gesperrt	2::inwork 36969,-149635 37090,-149991
 # 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

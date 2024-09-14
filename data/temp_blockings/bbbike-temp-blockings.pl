@@ -8637,7 +8637,7 @@ EOF
        text  => 'Storkow-Friedersdorf: Bahnübergang bei Kummersdorf wegen Gleisbauarbeiten gesperrt, 06.09.2024 18:00 Uhr bis 09.09.2024 18:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 246700600 (bis 09.09.2024)
+#: source_id: 246700600 (bis 09.09.2024) (inaktiv)
 	2::inwork 44229,-14131 43456,-14384 42430,-14398
 EOF
      },
@@ -9018,7 +9018,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: IM_005812 (alte Meldung von 2007) (inaktiv)
-#: source_id: viz2021:13.398749,52.532591,04.09.2024,07:00 (hier nur Kfz-Verkehr, bis 04.10.2024)
+#: source_id: viz2021:13.398749,52.532591,04.09.2024,07:00 (hier nur Kfz-Verkehr, bis 04.10.2024) (bis 18.10.2024)
 #: note: Radverkehr ist bei den Bauarbeiten im September 2024 nicht betroffen (oder nur kaum, leichte Verschwenkungen im Kreuzungsbereich Brunnenstr.)
 # REMOVED --- #: last_checked: 2024-09-04 (mapillary) --- #: next_check: 2024-09-04
 	q4::inwork; 9804,14071 9821,14073 9936,14085 10002,14092
@@ -22787,7 +22787,7 @@ EOF
 #	3::temp 9138,11872 9108,11961 9195,11972
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240904 (jährliches Fest der Landesvertretung Hamburg)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831534468970246416
-#: source_id: viz2021:13.38476,52.51445,05.09.2024,06:00 (bis 13.09.2024)
+#: source_id: viz2021:13.38476,52.51445,05.09.2024,06:00 (bis 13.09.2024) (inaktiv)
 Mauerstr.	2::temp 9076,12054 9108,11961 9138,11872
 Jägerstr.	2::temp 9108,11961 9195,11972
 Taubenstr.	2::temp 9138,11872 9207,11880
@@ -35463,9 +35463,11 @@ EOF
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
+#: XXX Komment Fußgänger mittlerweile unter die Bahnbrücke?
 #: last_checked: 2024-08-07 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-12-11 vvv
+#: next_check: 2024-09-09 vvv
+# REMOVED --- #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
 Niemetzstr.	2::inwork 13797,7267 13762,7321
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
@@ -36632,7 +36634,7 @@ EOF
        text  => 'Bad Freienwalde, Schiffmühler Str.: Sperrung, evtl. sind auch Radfahrer betroffen, 14.02.2022 bis 14.09.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/721-F/22/001 (bis 14.09.2024) (vorfristig inaktiv) (bis 14.09.2024)
+#: source_id: LS/721-F/22/001 (bis 14.09.2024) (vorfristig inaktiv) (bis 14.09.2024) (inaktiv)
 #: next_check_id: BADFREIENWALDE-2022
 	2::inwork 52984,42973 53249,43276
 EOF
@@ -37939,11 +37941,13 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
 #: last_checked: 2024-08-28 vvv
 #: check_frequency: 60d vvv
+#: next_check_id: 2024-12-31 vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 14242,9448 14316,9542
+#: next_check_id ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -40736,10 +40740,11 @@ EOF
 	2::inwork -19289,63424 -19675,64106
 EOF
      },
-     { from  => 1691906400, # 2023-08-13 08:00
-       until => $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
-       text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
-       #text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 22.06.2024 17:00', # -> handicap_s-orig
+     { from  => $isodate2epoch->("2024-09-13 00:00:00"), # 1691906400, # 2023-08-13 08:00
+       until => $isodate2epoch->("2024-09-20 20:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
+#      text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
+#      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 22.06.2024 17:00', # -> handicap_s-orig
+       text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 20.09.2024 20:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -40747,10 +40752,14 @@ EOF
 #: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
 #: source_id: bvg2021:240#BVG326189_0
 #: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
+#: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024)
+#: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: osm_watch: way id="198589911" version="20"
 # REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
 # REMOVED --- #: last_checked: 2023-11-19
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
+#: priority: #B
+#: next_check: 2024-09-13
 	q4::inwork 15856,10821 15793,10814
 EOF
      },
@@ -40975,7 +40984,7 @@ EOF
        text  => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, außerdem Einbahnstraßenregelung in der Hussitenstr., 17.07.2023 08:00 Uhr bis 13.09.2024 16:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024)
+#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv)
 	q4::inwork 22917,30635 22770,30813
 # REMOVED (hier nicht) ---	q4::inwork 22770,30813 22690,30909
 	q4::inwork; 22850,30562 22917,30635
@@ -42340,7 +42349,7 @@ EOF
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-06-24 (okas)
+#: last_checked: 2024-09-12 (bahninfo-forum)
 #: check_frequency: 45d
 	2::inwork 9586,17665 9396,17863
 # REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
@@ -42437,13 +42446,15 @@ EOF
 	q4::inwork 3450,12722 3370,12725 3291,12721
 EOF
      },
-     { from  => 1707631200, # 2024-02-11 07:00
-       until => 1711651393, # $isodate2epoch->("2024-03-28 23:59:59"), # 1710522000, # 2024-03-15 18:00
-       text  => 'Eisenzahnstr.: Bauarbeiten zwischen Ravensberger Str. und Paderborner Str., evtl. sind auch Radfahrer betroffen, vom 12.02.2024 07:00 bis 28.03.2024',
+     { from  => 1725771600, # 2024-09-08 07:00, # 1707631200, # 2024-02-11 07:00
+       until => 1726848000, # 2024-09-20 18:00, # 1711651393, # $isodate2epoch->("2024-03-28 23:59:59"), # 1710522000, # 2024-03-15 18:00
+#       text  => 'Eisenzahnstr.: Bauarbeiten zwischen Ravensberger Str. und Paderborner Str., evtl. sind auch Radfahrer betroffen, vom 12.02.2024 07:00 bis 28.03.2024',
+       text  => 'Eisenzahnstr.: Bauarbeiten in Höhe Paderborner Str., evtl. sind auch Radfahrer betroffen, vom 09.09.2024 07:00 bis 20.09.2024 18:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.305156,52.496443,12.02.2024,07:00 (bis 15.03.2024) (inaktiv)
 #: source_id: viz2021:13.305156,52.496443,13.03.2024,20:58 (bis 28.03.2024)
+#: source_id: viz2021:13.30519,52.49671,09.09.2024,07:00 (bis 20.09.2024)
 	q4::inwork 3711,9855 3719,10004
 EOF
      },
@@ -43515,8 +43526,8 @@ EOF
 #: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
 #: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
 #: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024)
-#: source_id: viz2021:13.36063,52.44674,06.09.2024,20:00 (bis 08.09.2024)
+#: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
+#: source_id: viz2021:13.36063,52.44674,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
 #: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
 #: by: https://www.youtube.com/watch?v=YI1O5phpGiE
@@ -44295,7 +44306,7 @@ EOF
 #: next_check_id: SIEGFRIED-2024
 #: source_id: viz2021:13.499212,52.517894,12.08.2024,07:00 (bis 24.08.2024) (bis 02.09.2024) (inaktiv)
 #: note: (noch) keine Einschränkung in der Rüdigerstr.
-#: source_id: viz2021:13.499269,52.518592,02.09.2024,07:00 (bis 13.09.2024)
+#: source_id: viz2021:13.499269,52.518592,02.09.2024,07:00 (bis 13.09.2024) (inaktiv)
 # REMOVED (bestätigt) --- #: XXX Annahme einer gemeinsamen Rad/Gehwegführung
 	q2; 16860,12861 16859,12613 16857,12600 16831,12419 16820,12339
 EOF
@@ -44410,7 +44421,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477879.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/24-105_vfp_240710.jpg (Umleitungsstrecke)
 #: by: https://www.berliner-woche.de/wannsee/c-bauen/instandsetzung-der-fahrbahn_a423552
-#: source_id: bvg2024:218#HIM_FREETEXT_237776
+#: source_id[inactive]: bvg2024:218#HIM_FREETEXT_237776
 	2::inwork -6442,1150 -6492,1204 -6577,1395 -6648,1613 -6784,1815 -6903,1906 -6999,1933 -7165,1978 -7304,1970 -7443,1915 -7640,1837 -7866,1862 -8106,2034 -8284,2156 -8422,2155
 EOF
      },
@@ -44512,7 +44523,7 @@ EOF
        text  => 'Bahnübergang Friedersdorf: Sperrung, vom 02.09.2024 bis 04.09.2024 und vom 09.09.2024 bis 11.09.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 246101061 (bis 11.09.2024)
+#: source_id: 246101061 (bis 11.09.2024) (inaktiv)
 	2::inwork 37257,-12796 37241,-12587 37189,-12000
 EOF
      },
@@ -44547,11 +44558,11 @@ Okerstr.	2::inwork 11528,7528 11540,7534
 EOF
      },
      { from  => 1724330100, # 2024-08-22 14:35
-       until => 1727449200, # 2024-09-27 17:00
-       text  => 'Kantstr.: zwischen Joachimsthaler Str. und Fasanenstr. Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.08.2024 14:35 bis 27.09.2024 17:00',
+       until => $isodate2epoch->("2024-10-18 17:00:00"), # 1727449200, # 2024-09-27 17:00
+       text  => 'Kantstr.: zwischen Joachimsthaler Str. und Fasanenstr. Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.08.2024 14:35 bis 18.10.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.330617,52.505406,23.08.2024,14:35 (bis 27.09.2024)
+#: source_id: viz2021:13.330617,52.505406,23.08.2024,14:35 (bis 27.09.2024) (bis 18.10.2024)
 	q4::inwork; 5488,10978 5373,10981 5236,10994
 EOF
      },
