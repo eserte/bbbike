@@ -2036,7 +2036,7 @@ Fenchelweg: Beton	Q0 15872,3888 15860,3838 15838,3754 15791,3686 15737,3609 1567
 (Weg an der Teltowkanalautobahn): Asphalt	Q0 16797,3321 17524,2765 17773,2621 18034,2526
 (Weg an der Teltowkanalautobahn - Stubenrauchstr., Rampe): Verbundsteinpflaster	Q0 16797,3321 16964,3210
 (Autobahnzubringer): sehr guter Asphalt	Q0 18034,2526 18247,2490 18484,2471
-Neltestr.: schlechtes Kopfsteinpflaster	Q3 19472,3922 19596,4035 19723,4175
+Neltestr.: schlechtes Kopfsteinpflaster	Q3 19472,3922 19482,3931 19596,4035 19723,4175
 Neltestr.: Beton	Q1 19723,4175 19756,4245
 Ostritzer Str.: Asphalt	Q0 20774,5131 20689,4862
 Ostritzer Str.: Beton	Q0 20774,5131 20782,5206 20793,5256
@@ -3907,7 +3907,8 @@ Werner-Voß-Damm: Asphalt	Q0 8263,7611 8378,7623 8465,7699 8512,7757 8553,7795 86
 (Am Heidekampgraben - Heidekampweg): alter Beton	Q1 15587,6497 15696,6507
 (Britzer Park - Buckower Damm/Gutschmidtstr.): Verbundsteinpflaster	Q0 12959,4195 12932,4175 12873,4123 12796,4002 12726,3870
 (Britzer Park - Buckower Damm): Verbundsteinpflaster	Q0 12796,4002 12734,4021 12637,4014
-Britzer Park: Asphalt	Q0 13098,4452 12972,4384 12959,4195
+Britzer Park: Verbundsteinpflaster	Q1 13098,4452 12996,4404
+Britzer Park: Asphalt	Q0 12996,4404 12972,4384 12959,4195
 Britzer Park: Verbundsteinpflaster	Q1 12959,4195 13128,4008 13258,3912 13302,3837 13336,3628
 Britzer Park: Verbundsteinpflaster	Q1 13336,3628 13379,3587 13387,3513
 (Britzer Park - Jugendzentrum): Asphalt	Q0 13387,3513 13393,3459 13384,3426
@@ -7814,7 +7815,7 @@ Straße 101 (Karow): Asphalt	Q0 13610,22949 13726,22860
 Straße 100: Asphalt mit einigen Schäden	Q1 13690,23083 13656,23036 13610,22949
 Krontaler Str.: Asphalt	Q0 13498,22636 13365,22743 13425,22932 13521,23057 13551,23072 13656,23036 13805,22935 13884,22879
 Straße 87 (Blankenburg): Asphalt	Q0 13441,22298 13476,22345
-(Fußgängerbrücke): Asphalt/Beton	Q0 13193,21700 13168,21706 13046,21734 13008,21783
+(Fußgängerbrücke): Asphalt/Beton	Q0 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13008,21783
 Herwigstr.: Asphalt	Q0 12993,21112 13165,21144
 Waldammerweg: unbefestigter Weg	Q2 12901,20546 13095,20584 13276,20619 13409,20645
 Waldammerweg: Kopfsteinpflaster	Q2 13089,20626 13095,20584 13110,20514
@@ -11592,6 +11593,9 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 (Hellersdorfer Str. - Ernst-Bloch-Str.): neu asphaltierter Radweg	Q0 22933,12837 22954,12843 22991,12844
 (Uferweg - Siemenssteg/Am Spreebord): Kleinsteinpflaster	Q2 4038,12693 4039,12706 4124,12713
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
+(zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018
+Hilde-Archenhold-Brücke: Asphalt	Q0 19300,4018 19358,4077
+(zur Hilde-Archenhold-Brücke): Asphalt	Q0 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19363,4057 19353,4047
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

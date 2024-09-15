@@ -79,6 +79,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9281 (Anfrage)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9359
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/f1xVVWdH7BUSbxjFsOp6AEXWZMJyBuoG9emzGe5M/oJAIYPaA/64-Anlagen/20/attach_42C.pdf (keine Aussage zum Realisierungszeitraum)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_39_2835_2938_online.pdf (Reduktion der Bebauungspläne XI-231abc und XI-231aa sowie Aufstellung von 7-107)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="22"
 #: last_checked: 2024-07-14
@@ -209,7 +210,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="21"
-#: last_checked: 2024-08-30
+#: last_checked: 2024-09-11 (mapillary)
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -375,7 +376,7 @@ Große Präsidentenstr.	1 10105,13004 10219,13102
 #: by: https://pbs.twimg.com/media/GTqgmAvWEAMTCD_?format=jpg&name=medium
 #: source_id: viz2021:13.312025,52.498061,30.07.2024,07:00 (Sackgasse, bis 28.02.2025)
 #: osm_watch: way id="4437134" version="17"
-#: last_checked: 2024-06-12
+#: last_checked: 2024-09-11 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2025-02-28
 Duisburger Str.	1 4183,10144 3880,10154
@@ -1223,6 +1224,7 @@ Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6335,10589
 Wittenbergplatz	1 6335,10589 6268,10588 6216,10614 6171,10657
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/amalienstrasse-einbahnstrasse-in-beide-richtungen-befahrbar_a369287 (BVV-Beschluss)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6273 (Zwischenbericht)
+#: osm_watch: way id="23008657" version="18"
 #: XXX Wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: last_checked: 2024-06-13
 #: check_frequency: 90d
@@ -1535,7 +1537,7 @@ Südring, Virchow-Klinikum	1 6158,14851 6078,14864 6073,14892
 Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: next_check_id: VIRCHOW-2023
 # REMOVED (gelöscht) --- #: osm_watch: way id="224136692" version="6"
-#: osm_watch: way id="1168244288" version="2"
+#: osm_watch: way id="1168244288" version="3"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_14_0803_0878_online.pdf (Bebauungsplan 1-113VE)
 #: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1432964.php
 #: by: https://www.stadtentwicklung.berlin.de/download/1-113ve/01_Planzeichnung/240327_1-113VE_B-Plan_Pz_%c3%96ff.pdf (der Südring wird wohl teilweise verschwinden)
@@ -2477,7 +2479,7 @@ Ostseestr.: Mittelstreifen	3nocross 12216,16120 12254,16097 12347,16039
 # REMOVED (Fahrbahnen getrennt) --- Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4338,6528 4423,6477
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19806,3567 19857,3514 19904,3464
 Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
-Adlergestell: Mittelstreifen	3nocross 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000
+Adlergestell: Mittelstreifen	3nocross 19472,3922 19353,4047 19335,4067 19226,4183 18725,4715 18457,5000
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19806,3567
 Michael-Brückner-Str.: Mittelstreifen	3nocross 18457,5000 18425,5032 18080,5376
 Michael-Brückner-Str.: Mittelstreifen	3nocross 17728,5756 17782,5698 17808,5669
@@ -2968,20 +2970,7 @@ tragen (Treppe, 11+10+4 Stufen)	0:30 19160,14935
 tragen (Treppe)	0:30 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 # 
-#: next_check_id: HEBAMMENSTEIGBRUECKE-2021
-#: XXX wird die Treppe der Hebammensteigbrücke mit dem Ersatzneubau entfallen?
-#: note: bei den Ertüchtigungsmaßnahmen wurde eine Seite der Kinderwagenrampe etwas verbreitert
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml ("bauliche Anpassungen")
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve_hebammensteigbruecke.shtml (Ertüchtigungsmaßnahmen)
-#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/richtung-blankenburg-das-fahrrad-schieben_a255205
-#: by: https://teamdochnoch.de/2024/03/04/dauerbaustelle-hebammensteigbruecke/
-#: osm_watch: way id="43205335" version="3"
-# REMOVED --- #: last_checked: 2019-10-26 (wosch) (keine Anzeichen für Bauarbeiten) --- #: check_frequency: 14d
-# REMOVED --- #: next_check: 2021-01-01
-#: last_checked: 2024-09-02 (mapillary)
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2023-06-30
-tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
+# REMOVED (mittlerweile existiert eine Rampe) --- #: next_check_id: HEBAMMENSTEIGBRUECKE-2021 --- #: XXX wird die Treppe der Hebammensteigbrücke mit dem Ersatzneubau entfallen? --- #: note: bei den Ertüchtigungsmaßnahmen wurde eine Seite der Kinderwagenrampe etwas verbreitert --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml ("bauliche Anpassungen") --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve_hebammensteigbruecke.shtml (Ertüchtigungsmaßnahmen) --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/richtung-blankenburg-das-fahrrad-schieben_a255205 --- #: by: https://teamdochnoch.de/2024/03/04/dauerbaustelle-hebammensteigbruecke/ --- #: osm_watch: way id="43205335" version="3" --- # REMOVED --- #: last_checked: 2019-10-26 (wosch) (keine Anzeichen für Bauarbeiten) --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2021-01-01 --- #: last_checked: 2024-09-02 (mapillary) --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2023-06-30 --- tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 # 
 #: note: Blechrampe existiert
 tragen (6 Stufen)	0:15 4608,63927
@@ -3825,6 +3814,52 @@ Barriere	BNP:3::trailer=10 10628,16644
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: HILDEARCHENHOLDBR-2024
+#: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2016/pressemitteilung.445338.php
+#: XXX Gleislinse in Adlershof: Bebauungsplan 9-60
+#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/index.shtml
+#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/download/Bebauungsplan_9-60_oeA.pdf
+#: XXX auch Maßnahme Jt.7
+# REMOVED (-> strassen-orig) --- #: last_checked: 2020-04-13 --- #: check_frequency: 90d --- Gustav-Hertz-Platz: geplant, verkehrsberuhigt	?::inwork 18596,4517 18674,4585 18685,4595 18722,4628
+# REMOVED (-> strassen-orig) --- #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6269 (Benennung: ...-Allee, nicht ...-Str.) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Benennung: ...-Allee, nicht ...-Str.) --- #: note: Privatstraße --- #: osm_watch: way id="206889085" version="9" --- Wagner-Régeny-Allee: Verlängerung in Bau, vermutlich asphaltiert	?::inwork 19162,3935 19130,3969 18596,4517 18487,4638 18296,4850
+# REMOVED (-> strassen-orig) --- #: last_checked: 2020-03-07 --- #: check_frequency: 60d --- Fuß- und Radweg: geplant	?::projected 18296,4850 18254,4817
+#: by: http://www.adlershof-johannisthal.de/#sec9 ("2019-2021") (mittlerweile: "2021-2023") (mittlerweile: "2023-2025")
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Ah.6)
+#: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (2023?)
+#: by: https://www.bahninfo-forum.de/embed_images/4a3/087/a0b/7fd/842/19c/940/b69/090/1b8/40_1200x920.jpg
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/bruecke-ueber-das-adlergestell/ (Bauzeit Frühjahr 2022 - 2023, außerdem Ertüchtigung der Sonnenallee sowie Anbindung an die Neltestr.)
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecke-ueber-das-adlergestell/maxsize_3c8171100b38c2379aee26e9ea6e5d40_kreuzungsbauwerk-mit-rampen-bild_igs.png
+#: by: https://www.aktives-adlershof.de/fileadmin/Bilder_Redakteure/2021_NEWSletter/2021-01_Newsletter_digital.pdf?fbclid=IwAR06vnMT56ZWNbaBwuChQZNaNj3Mlxr4rvI6I7X9olxdM97_a_Dc-PfEwAA
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/2022-beginnen-die-bauarbeiten-fuer-eine-neue-bruecke-uebers-adlergestell_a307746 (Frühjahr 2022 - Ende 2023)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27038.pdf (Bauzeit zwei Jahre)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-13539.pdf (Inbetriebnahme für Mitte 2024 vorgesehen)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/erste-massnahmen-fuer-den-bau-einer-neuen-bruecke-ueber-das-adlergestell_a363026 (Inbetriebnahme Mitte 2024)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1271772.php (bis Sommer 2024)
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2022/pressemitteilung.1271762.php
+#: by: https://berliner-abendblatt.de/2022/12/05/baubeginn-fuer-neue-bruecke-ueber-das-adlergestell/
+#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/estw-s9-sued-bauvorhaben-tramtunnel-in-schoeneweide-neubau-fussgaengerbruecke-ueber-das-adlergestell/
+#: by: http://thomas.krickstadt.de/s-bahn/2023-10-03-johannisthal/index.html
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-17430.pdf (Aufbau Fuß- und Radwegbrücke am 27./28.1.2024)
+#: by: https://www.wista-plan.de/projekte/adlershof/fuss-und-radwegbruecke
+#: by: https://www.adlershof.de/news/74-m-lange-aluminiumbruecke-ueber-dem-adlergestell-erfolgreich-eingehoben (Verkehrsfreigabe: 3. Quartal 2024)
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2024/pressemitteilung.1412094.php
+#: by: https://www.berliner-woche.de/treptow-koepenick/c-bauen/neuer-fuss-und-radweg-verbindet-ab-herbst-zwei-ortsteile_a406560
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_12_0655_0742_online.pdf (Benennung einer Geh- und Radwegbrücke)
+#: by: https://www.adlershof.de/news/brueckenschlag
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/hilde-archenhold-br%C3%BCcke-fu%C3%9F-und-radwegbr%C3%BCcke-%C3%BCber-adlergestell.1449/#post-23709
+#: by: https://emag.berliner-woche.de/titles/berlinerwochenblatt/14489/publications/855/pages/1 (Eröffnung Anfang November 2024)
+#: source_id: viz2021:13.532612,52.441405,15.06.2023,07:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 28.06.2023) (bis 30.09.2023) (inaktiv)
+#: source_id: viz2021:13.532262,52.441543,26.10.2023,09:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 26.10.2023) (inaktiv)
+#: osm_watch: way id="1243659419" version="4"
+#: osm_watch: way id="333621366" version="7"
+#: osm_watch: way id="206889088" version="10"
+#: XXX außerdem entsteht eine Radwegverbindung auf der östlichen Seite zur Neltestr. (ggfs. "Stützpunkt" im 3nocross-Bereich des Adlergestells notwendig)
+#: XXX Name: Hilde-Archenhold-Brücke
+#: last_checked: 2024-09-15
+#: check_frequency: 60d
+#: next_check: 2024-11-01
+Fuß- und Radwegbrücke: noch nicht offiziell freigegeben	2::inwork 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19363,4057 19353,4047
+# 
 #: by: mapillary
 #: add_fragezeichen: Ist die Straße noch wegen Bauarbeiten gesperrt?
 #: last_checked: 2024-08-10
@@ -4178,7 +4213,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024)
 #: priority: #C
-#: last_checked: 2024-09-08
+#: last_checked: 2024-09-15
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4608,10 +4643,10 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv)
 #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv)
 #: XXX Rampen auf Westseite mit Verbundsteinpflaster, auf Ostseite mit welligen Asphalt, parallel zur Autobahn
-#: last_checked: 2024-09-02 (mapillary)
+#: last_checked: 2024-09-08 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-06-30
-Hebammensteigbrücke	2::inwork 13168,21706 13046,21734 13008,21783
+Hebammensteigbrücke	2::inwork 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13008,21783
 # REMOVED (wieder offen) --- Radweg an der Panke	2::inwork 13031,21538 13078,21754
 # 
 # REMOVED (keine Einbahnstraße mehr) --- #: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung. --- #: osm_watch: way id="4045220" version="49" --- #: osm_watch: way id="938037386" version="3" --- #: osm_watch: way id="868103791" version="3" --- #: last_checked: 2023-03-24 --- #: check_frequency: 60d --- Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
@@ -4651,7 +4686,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="1171090939" version="4"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-15
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
@@ -4771,6 +4806,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: wosch
 #: by: https://www.agromex.de/projekte/the-molecules-berlin/ (Fertigstellung: IV. Quartal 2027)
 #: by: https://www.deutsches-architekturforum.de/thread/11157-agromex-projekt-fanny-zobel-stra%C3%9Fe-treptow-in-bau/?postID=748725#post748725
+#: by: https://dielinke.berlin/start/det/nachfrage-zur-beantwortung-der-schriftlichen-anfrage-scha-ix-0495-bauprojekt-fanny-zobel-strasse/ (weiterhin: Gesamtmaßnahme bis 2027)
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
 #: last_checked: 2024-08-04 vvv
@@ -4879,7 +4915,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="35"
 #: osm_watch: way id="289966097" version="24"
 #: priority: #A
-#: last_checked: 2024-08-21
+#: last_checked: 2024-09-15 (webcam)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 # REMOVED (existiert nicht mehr) --- Grunerstr.: Straßenzug wird entfernt	2::inwork 10697,12303 10746,12364
@@ -4949,20 +4985,20 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2024-09-03
+#: last_checked: 2024-09-15 (webcam)
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-09-02
+#: last_checked: 2024-09-15 (webcam)
 #: check_frequency: 30d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen, die Masten stehen schon.
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-09-03
+#: last_checked: 2024-09-15 (webcam)
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -5003,7 +5039,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 #: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023) (bis 04.09.2023) (bis 18.09.2023) (bis 31.10.2023) (bis 27.11.2023) (bis 05.08.2024) (bis 31.12.2024) (bis 30.04.2025)
 #: source_id: viz2021:13.361226,52.446957,15.12.2023,20:00 (angrenzende Attilastr., bis 17.12.2023) (inaktiv)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
-#: last_checked: 2024-08-27 (mapillary)
+#: last_checked: 2024-09-14 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-08-05
 #: next_check: 2025-12-31
@@ -5309,14 +5345,14 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/upside-berlin-max-und-moritz.182/
 #: by: https://www.deutsches-architekturforum.de/thread/11490-hochh%C3%A4user-max-und-moritz-upside-berlin-95-86m-in-bau/?postID=747798#post747798 (Insolvenz)
 #: by: https://www.thomas-daily.de/td-morning-news/1558743-berlin-mikare-gibt-wohnturm-projekt-max-auf/
+#: by: https://www.konii.de/news/immobilienprojekt-upside-berlin-wird-weitergebaut/ (Fertigstellung stufenweise bis 2027)
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
-#: XXX laut daf-Post könnten die Wohngebäude im Sommer 2025 fertig werden
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="5"
 #: osm_watch: note 3748854 1
 #: last_checked: 2024-09-05
 #: check_frequency: 180d
-#: next_check: 2025-09-20
+#: next_check: 2027-12-31
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16 --- #: osm_watch: way id="276821479" version="5" --- #: XXX möglicherweise mittlerweile offen --- #: last_checked: 2023-01-11 --- #: check_frequency: 90d --- #: next_check: 2023-01-22 --- Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310

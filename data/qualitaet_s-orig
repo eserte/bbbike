@@ -302,7 +302,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-09-04
+#: last_checked: 2024-09-15
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -923,7 +923,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2024-09-02
+#: last_checked: 2024-09-13 (mapillary)
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -2814,7 +2814,7 @@ Fenchelweg: Beton	Q0- 15872,3888 15860,3838 15838,3754 15791,3686 15737,3609 156
 (Autobahnzubringer): sehr guter Asphalt	Q0 18034,2526 18247,2490 18484,2471
 #: by: Erik Thon
 #: corrected_by: srt
-Neltestr.: schlechtes Kopfsteinpflaster	Q3 19472,3922 19596,4035 19723,4175
+Neltestr.: schlechtes Kopfsteinpflaster	Q3 19472,3922 19482,3931 19596,4035 19723,4175
 Neltestr.: Beton	Q1 19723,4175 19756,4245
 #: note: Schilder "Achtung, Straßenschäden" existieren, aber die Schäden sind nur punktuell
 Ostritzer Str.: Asphalt	Q0 20774,5131 20689,4862
@@ -3347,9 +3347,10 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: next_check_id: DRESDNERBAHN-2021
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
+#: XXX zurzeit (2024-09) außerdem Bauarbeiten an der Ringstr., Bauzufahrt ist nun um einige Meter nach Norden verschwenkt
 #: osm_watch: way id="30893534" version="25"
 #: osm_watch: way id="1155399359" version="2"
-#: last_checked: 2024-07-03
+#: last_checked: 2024-09-14 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
@@ -5093,7 +5094,8 @@ Werner-Voß-Damm: Asphalt	Q0 8263,7611 8378,7623 8465,7699 8512,7757 8553,7795 86
 (Am Heidekampgraben - Heidekampweg): alter Beton	Q1 15587,6497 15696,6507
 (Britzer Park - Buckower Damm/Gutschmidtstr.): Verbundsteinpflaster	Q0- 12959,4195 12932,4175 12873,4123 12796,4002 12726,3870
 (Britzer Park - Buckower Damm): Verbundsteinpflaster	Q0- 12796,4002 12734,4021 12637,4014
-Britzer Park: Asphalt	Q0 13098,4452 12972,4384 12959,4195
+Britzer Park: Verbundsteinpflaster	Q1+ 13098,4452 12996,4404
+Britzer Park: Asphalt	Q0 12996,4404 12972,4384 12959,4195
 Britzer Park: Verbundsteinpflaster	Q1+ 12959,4195 13128,4008 13258,3912 13302,3837 13336,3628
 Britzer Park: Verbundsteinpflaster	Q1 13336,3628 13379,3587 13387,3513
 (Britzer Park - Jugendzentrum): Asphalt	Q0 13387,3513 13393,3459 13384,3426
@@ -7259,7 +7261,7 @@ Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 1945
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19590,7770 19537,7693
 #: osm_watch: way id="156650954" version="17"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2024-03-20
+#: last_checked: 2024-09-15
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19605,7746 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -9412,7 +9414,7 @@ Straße 101 (Karow): Asphalt	Q0 13610,22949 13726,22860
 Straße 100: Asphalt mit einigen Schäden	Q1+ 13690,23083 13656,23036 13610,22949
 Krontaler Str.: Asphalt	Q0 13498,22636 13365,22743 13425,22932 13521,23057 13551,23072 13656,23036 13805,22935 13884,22879
 Straße 87 (Blankenburg): Asphalt	Q0 13441,22298 13476,22345
-(Fußgängerbrücke): Asphalt/Beton	Q0 13193,21700 13168,21706 13046,21734 13008,21783
+(Fußgängerbrücke): Asphalt/Beton	Q0 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13008,21783
 # REMOVED (ja) --- #: XXX früher: "teilweise Asphalt, teilweise unbefestigt", heute vermutlich komplett asphaltiert, nochmal genauer prüfen
 Herwigstr.: Asphalt	Q0 12993,21112 13165,21144
 Waldammerweg: unbefestigter Weg	Q2 12901,20546 13095,20584 13276,20619 13409,20645
@@ -13696,6 +13698,10 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 # 
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
+# 
+(zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018
+Hilde-Archenhold-Brücke: Asphalt	Q0 19300,4018 19358,4077
+(zur Hilde-Archenhold-Brücke): Asphalt	Q0 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19363,4057 19353,4047
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 

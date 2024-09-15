@@ -892,9 +892,10 @@ Groß-Köris - Motzen: Verbundsteinpflaster	Q1 23775,-22788 23482,-22742
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1471867.php (Bauarbeiten voraussichtlich ab Mitte September 2024)
 #: by: https://www.berliner-woche.de/schmoeckwitz/c-verkehr/ortsdurchfahrt-wird-saniert_a422431 (Bauarbeiten voraussichtlich bis Anfang September 2025)
 #: source_id: LS/222-W/24/007 (Baufeldfreimachung, bis 23.02.2024) (bis 29.02.2024) (inaktiv)
-#: last_checked: 2024-07-11 (mapillary)
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2024-09-15
+#: also_indoor: traffic (none)
+#: last_checked: 2024-09-15 (traffic)
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2024-09-15
 Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26787,-3194 26748,-3285 26651,-3554 26636,-3596 26562,-3781 26554,-3814 26482,-4108 26447,-4251 26319,-4776 26228,-5150 26259,-5681 26085,-5839 25996,-5921
 Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26376,-6676 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26782,-8032 26749,-8481 26727,-8668 26702,-8750 26679,-8825 26589,-9108 26429,-9618 26381,-9753 26365,-9875 26376,-9924 26386,-9964 26420,-10035 26434,-10054
 #: by: ^^^
@@ -7021,6 +7022,7 @@ Altkünkendorf: schlechtes Kopfsteinpflaster	Q3 41287,67548 41190,67577
 Luisenhof: schlechtes Kopfsteinpflaster	Q3 42021,67414 42384,67180 43213,66757
 Altkünkendorf - Zuchenberg: Asphalt	Q0 45221,67532 45147,67327 45258,66931 45404,66638 45564,66546 45593,66529 45698,66496
 zum Strandbad Wolletzsee: Asphalt	Q0+ 46934,67928 46921,68106 46907,68292 46777,68397 46531,68674 46310,69090 46273,69208
+Oertelufer (Zossen): Asphalt	Q0 13730,-21079 13506,-21265 13467,-21298 13430,-21328
 ######################### User Contributions #################################
 #: by: osm vvv
 Wilhelmstr. (Dallgow-Döberitz): Asphalt	Q0 -13426,14823 -13375,13886
@@ -9312,6 +9314,10 @@ Marwitzer Str.: Asphalt	Q2+ -10417,17770 -10344,17792 -10239,17791 -10114,17740
 #: by ^^^
 # 
 #: by: mapillary vvv
+An den Wulzen (Zossen): Asphalt	Q0 13390,-20515 13388,-20646 13396,-20806 13353,-20896 13381,-21089 13418,-21125
+An den Wulzen (Zossen): Kopfsteinpflaster	Q2- 13418,-21125 13430,-21328 13408,-21348
+An den Wulzen (Zossen): unbefestigt	Q2 13408,-21348 13345,-21404
+(Unterführung am Nottekanal): unbefestigt	Q2 13408,-21348 13475,-21309 13506,-21265
 Passow - Schönermark: unbefestigter Weg, sandig	Q3 57083,81988 57004,81692 56922,81487 56641,81143 56572,81006
 Eduard-von-Winterstein-Str. (Potsdam): Beton	Q0- -7531,-4446 -7408,-4562
 Oskar-Meßter-Str. (Potsdam): Verbundsteinpflaster/Beton	Q1+ -7702,-4629 -7582,-4742

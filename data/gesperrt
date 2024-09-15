@@ -2360,9 +2360,9 @@ Seidenbaustr. -> Adlergestell: Mittelstreifen	3::igndisp 19966,3596 19857,3514 1
 Mittelstreifen	3nocross::ignrte 19676,3705 19633,3751 19587,3801
 Adlergestell -> Husstr.: Mittelstreifen	3::igndisp 19587,3801 19633,3751 19736,3858
 Husstr. -> Adlergestell: Mittelstreifen	3::igndisp 19736,3858 19633,3751 19676,3705
-Mittelstreifen	3nocross::ignrte 19472,3922 19335,4067 19226,4183 18725,4715 18457,5000
+Mittelstreifen	3nocross::ignrte 19472,3922 19353,4047 19335,4067 19226,4183 18725,4715 18457,5000
 Adlergestell -> Sonnenallee: Mittelstreifen	3::igndisp 19226,4183 19335,4067 19345,4077
-Sonnenallee -> Adlergestell: Mittelstreifen	3::igndisp 19345,4077 19335,4067 19472,3922
+Sonnenallee -> Adlergestell: Mittelstreifen	3::igndisp 19345,4077 19335,4067 19353,4047
 Fußgängerbrücke Bhf. Johannisthal -> Adlergestell: Mittelstreifen	3::igndisp 18739,4728 18725,4715 19226,4183
 Adlergestell -> Fußgängerbrücke Bhf. Johannisthal: Mittelstreifen	3::igndisp 18457,5000 18725,4715 18739,4728
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19806,3567
@@ -2879,7 +2879,6 @@ tragen (Treppe, 11+13 Stufen)	0:30:-108 19163,14981
 tragen (Treppe, 11+10+4 Stufen)	0:30:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
-tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90:-44 3514,24652
@@ -3472,6 +3471,7 @@ Drängelgitter	BNP:3:-12:trailer=10 26803,56547
 Tor	BNP:10:-140 33926,63348
 Tor	BNP:20:-74 20127,1538
 Barriere	BNP:3:-85:trailer=10 10628,16644
+Fuß- und Radwegbrücke: noch nicht offiziell freigegeben	2::inwork 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19363,4057 19353,4047
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 Zum Feldrain (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130
@@ -3541,7 +3541,7 @@ Ruth-Baumgarte-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17738,
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:inwork 8266,14346 8442,14456
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
-Hebammensteigbrücke	2::inwork 13168,21706 13046,21734 13008,21783
+Hebammensteigbrücke	2::inwork 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13008,21783
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
