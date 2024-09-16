@@ -2117,35 +2117,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
-#: by: https://www.wollenschlaeger-berlin.de/51-fest-an-der-panke/
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1226411.php (evtl. nur auf der Nordseite?)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1345861.php (findet 2023 nicht statt)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6806 (Anfrage)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/hinweise/artikel.1226093.php
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1484601.php
-	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
-	2::temp 10602,18382 10562,18506 10532,18601
-',
-         'from' => 1726178400,
-         'id' => 2281,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              9,
-                              'start',
-                              '2023-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (14.09.2024-15.09.2024)',
-         'type' => 'gesperrt',
-         'until' => 1726437599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2649,11 +2621,11 @@ Kleistpark	2::night 7310,9622 7307,9528
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1809452214483652953
 #: by: https://pbs.twimg.com/media/GRuNzPkXgAANqwk?format=jpg&name=large
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240709 (erste Bauphase bis 24.08.2024, Gesamtbaumaßnahme bis voraussichtlich 27.10.2024)
-#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024) (bis 28.10.2024)
+#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024) (bis 28.10.2024) (bis 03.11.2024)
 #: XXX Änderung der Bauphase: Bauarbeiten dann zwischen Waldowstr. und Ostendstr. 20
 #: note: die Rathenaustraße wird als Umleitungsstrecke benutzt und ist eigentlich zu eng, ein comments_trafficjam-Eintrag würde sich anbieten
 #: last_checked: 2024-08-28 vvv
-#: next_check: 2024-10-28 vvv
+#: next_check: 2024-11-03 vvv
 	q2::inwork; 19681,5924 19650,5920 19403,5885
 hier einige Bordsteine ohne Anrampung	q3::inwork; 19403,5885 19388,5883 19273,5866 19010,5833
 vermutlich weniger Fußgängerverkehr	q2::inwork; 19010,5833 19273,5866 19388,5883 19403,5885
@@ -2665,9 +2637,9 @@ Slabystr.: einige Meter der Fahrbahn vor der Ostendstr. gesperrt	q3::inwork 1918
 ',
          'from' => 1720130400,
          'id' => 2486,
-         'text' => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Parkstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, bis 28.10.2024',
+         'text' => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Parkstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, bis 03.11.2024',
          'type' => 'handicap',
-         'until' => 1730134800
+         'until' => 1730653200
        },
        undef,
        undef,
@@ -3602,6 +3574,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'data' => '# REMOVED (in osm aufgehoben) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php --- #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/ --- #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369 --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben? --- #: source_id: 2147344699 --- #: osm_watch: way id="25274116" version="20" --- #: osm_watch: way id="671101960" version="4" --- #: also_indoor: traffic (G,H) --- #: last_checked: 2019-11-23 --- #: check_frequency: 7d
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
 	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
 ',
@@ -4929,7 +4902,17 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LS/721-F/22/001 (bis 14.09.2024) (vorfristig inaktiv) (bis 14.09.2024) (inaktiv) (bis 31.01.2025)
+#: next_check_id: BADFREIENWALDE-2022
+	2::inwork 52984,42973 53249,43276
+',
+         'from' => 1644793200,
+         'id' => 3591,
+         'text' => 'Bad Freienwalde, Schiffmühler Str.: Sperrung, evtl. sind auch Radfahrer betroffen, 14.02.2022 bis 31.01.2025',
+         'type' => 'gesperrt',
+         'until' => 1738335600
+       },
        undef,
        undef,
        undef,
@@ -5539,6 +5522,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
        },
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-und-westend-kleinere-projekte/?postID=739232#post739232
+#: source_id: viz2021:13.31151,52.51786,16.09.2024,06:00 (kurzfristige Komplettsperrung, bis 18.09.2024)
 #: osm_watch: way id="1191704604" version="1"
 #: note: Endedatum anhand Halteverbotsschilder
 #: add_fragezeichen: Gibt es in der Warburgzeile weiterhin eine Einbahnstraßenregelung?
@@ -6235,7 +6219,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
 # REMOVED (alte Notizen) --- #: note: bei VIZ inaktiv, tatsächlich noch aktiv --- #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
 # REMOVED (bei mapillary nicht mehr gesehen) --- #: last_checked: 2023-11-07 --- #: check_frequency: 14d
-#: note: relativ kurzer Abschnitt (~50-80m) ist betroffen, deshalb q4 -> q3
+#: note: relativ kurzer Abschnitt (~75m) ist betroffen, deshalb q4 -> q3
 	q3::inwork; 10815,11662 10722,11816
 ',
          'dont_check_date' => 1,
@@ -6376,11 +6360,11 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1726178400,
+         'from' => 1727820000,
          'id' => 3955,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 14.9.2024 bis 15.9.2024',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 3.10.2024 bis 6.10.2024',
          'type' => 'handicap',
-         'until' => 1726437599
+         'until' => 1728251999
        },
        undef,
        undef,
@@ -6963,12 +6947,12 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        {
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
 #: note: keine Freigabe der Gehwege für Radfahrer
-#: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024)
+#: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024)
 	q4::inwork 15077,11910 15110,12107
 ',
          'from' => 1717538400,
          'id' => 4079,
-         'text' => 'Jessnerstr.: Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. offiziell gesperrt, meist ist eine Fahrgasse offen, vom 05.06.2024 07:00 bis 31.10.2024 17:00',
+         'text' => 'Jessnerstr.: Abschnitt der Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis 31.10.2024 17:00',
          'until' => 1730390400
        },
        {
@@ -7305,12 +7289,12 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-05
+#: last_checked: 2024-09-15 (mapillary)
 	2::inwork 11275,8387 11282,8428 11279,8489 11259,8591
 ',
          'from' => undef,
          'id' => 4126,
-         'text' => 'Hasenheide: ein Abschnitt des Hauptwegs kann wegen Bauarbeiten gesperrt sein (Stand Anfang September 2024: Durchfahrt zeitweise möglich)',
+         'text' => 'Hasenheide: ein Abschnitt des Hauptwegs kann wegen Bauarbeiten gesperrt sein (Stand Mitte September 2024: Durchfahrt zeitweise möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7355,14 +7339,14 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => undef
        },
        {
-         'data' => '#: source_id: LS/221-F/24/152 (bis 16.09.2024)
+         'data' => '#: source_id: LS/221-F/24/152 (bis 16.09.2024) (bis 18.09.2024)
 	2::inwork 49801,26449 49808,26346 49255,26084 48885,25629 48104,24510 47857,24214 47671,23769 47695,23516 47541,23208 47180,22939 46782,22769 46072,21966 45602,21749
 ',
          'from' => 1723356000,
          'id' => 4131,
-         'text' => 'Prötzel - Strausberg: Bauarbeiten, Sperrung, vom 12.08.2024 08:00 Uhr bis 16.09.2024 16:00 Uhr',
+         'text' => 'Prötzel - Strausberg: Bauarbeiten, Sperrung, vom 12.08.2024 08:00 Uhr bis 18.09.2024 16:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1726495200
+         'until' => 1726668000
        },
        undef,
        {
@@ -7520,16 +7504,19 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024)
+         'data' => '#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
+#: last_checked: 2024-09-16
+#: check_frequency: 14d
 	q4::inwork 13530,13014 13470,12990
 ',
+         'dont_check_date' => 1,
          'from' => 1724796000,
          'id' => 4148,
-         'text' => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 29.08.2024 09:00 bis 16.09.2024 17:00',
+         'text' => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 29.08.2024 09:00 bis 16.09.2024 17:00, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1726498800
+         'until' => undef
        },
        {
          'data' => '#: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (kein Endedatum)
@@ -7553,7 +7540,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 ',
          'from' => 1724562000,
          'id' => 4151,
-         'text' => 'Kochhannstr.: Bauarbeiten zwischen Ebertystr. und Weisbachstr., evtl. sind auch Radfahrer betroffen, vom 26.08.2024 07:00 bis 21.10.2024 18:00',
+         'text' => 'Kochhannstr.: Bauarbeiten zwischen Ebertystr. und Weisbachstr., vom 26.08.2024 07:00 bis 21.10.2024 18:00',
          'type' => 'handicap',
          'until' => 1729526400
        },
@@ -7686,6 +7673,42 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
          'text' => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicheweise mit Bauzäunen gesperrt werden (Stand Anfang September 2024: Verbindung war passierbar)',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024)
+#: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
+Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
+',
+         'from' => 1725548760,
+         'id' => 4164,
+         'text' => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 10.10.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1728572400
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1485709.php
+#: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/landsberger-strasse-gesperrt_a425442
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1835665267411554359 (auch Radfahrer)
+#: by: https://pbs.twimg.com/media/GXmXyIyXsAA0usE?format=jpg&name=medium
+#: source_id: viz2021:13.62177,52.507345,16.09.2024,07:00 (bis 27.09.2024)
+#: source_id: viz2021:13.62064,52.50432,16.09.2024,15:50 (bis 27.09.2024)
+	q4::inwork 25239,11657 25199,11531
+',
+         'from' => 1726351200,
+         'id' => 4165,
+         'text' => 'Landsberger Str.: Fahrbahnsanierung, Sperrung, vom 16. September 2024 bis 27. September 2024',
+         'type' => 'handicap',
+         'until' => 1727474399
+       },
+       {
+         'data' => '#: source_id: 246101091 (bis 03.11.2024)
+	2::inwork 13513,-4708 13677,-4801 13821,-4837
+',
+         'from' => 1729234800,
+         'id' => 4166,
+         'text' => 'B96a: Sperrung der Bahnbrücke, vom 19.10.2024 bis 03.11.2024',
+         'type' => 'gesperrt',
+         'until' => 1730649600
        }
      
 );
