@@ -19,7 +19,6 @@ use XML::LibXML;
 
 return 1 if caller;
 
-my $rss_feed = 'https://daten.berlin.de/taxonomy/term/477/all/feed';
 my $min_stops_size = 5_000_000;
 my $max_stops_size = 8_000_000; 
 
@@ -52,18 +51,21 @@ if ($persistent_tmp) {
 } else {
     $tempdir = tempdir("update-openvbb-data-XXXXXXXX", TMPDIR => 1, CLEAN => 1);
 }
-$doit->lwp_mirror($rss_feed, "$tempdir/verkehr.rss");
 
-my $rss_doc = XML::LibXML->load_xml(location => "$tempdir/verkehr.rss");
-my $items = $rss_doc->find('/rss/channel/item[./title/.="VBB-Fahrplandaten via GTFS"]');
-my $intermediate_link = $items->[0]->findvalue('./link');
-if (!$intermediate_link) {
-    error "No suitable link found in $rss_feed";
-}
+## XXX Since Summer 2024 there's no RSS feed anymore.
+#my $rss_feed = 'https://daten.berlin.de/taxonomy/term/477/all/feed';
+#$doit->lwp_mirror($rss_feed, "$tempdir/verkehr.rss");
+#my $rss_doc = XML::LibXML->load_xml(location => "$tempdir/verkehr.rss");
+#my $items = $rss_doc->find('/rss/channel/item[./title/.="VBB-Fahrplandaten via GTFS"]');
+#my $intermediate_link = $items->[0]->findvalue('./link');
+#if (!$intermediate_link) {
+#    error "No suitable link found in $rss_feed";
+#}
+#$doit->lwp_mirror($intermediate_link, "$tempdir/vbb-fahrplandaten-gtfs");
+#my $intermediate_doc = XML::LibXML->load_html(location => "$tempdir/vbb-fahrplandaten-gtfs", recover => 2);
+#my $openvbb_data_url = $intermediate_doc->findvalue('//div[@class="download-btn"]/a/@href');
 
-$doit->lwp_mirror($intermediate_link, "$tempdir/vbb-fahrplandaten-gtfs");
-my $intermediate_doc = XML::LibXML->load_html(location => "$tempdir/vbb-fahrplandaten-gtfs", recover => 2);
-my $openvbb_data_url = $intermediate_doc->findvalue('//div[@class="download-btn"]/a/@href');
+my $openvbb_data_url = 'https://www.vbb.de/vbbgtfs';
 
 ## XXX not needed: resolve the redirect location
 #my $ua = LWP::UserAgent->new;
