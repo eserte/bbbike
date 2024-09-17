@@ -602,7 +602,6 @@ Niederfelde: ist die gesamte Straße gepflastert?	? 66126,84243 66092,84252 66062
 Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73160 68591,73201 68777,73351
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9847,6891
 Ahlimbsmühle - Templin: Qualität (Asphalt oder etwas anderes)? Ist die gesamte Straße eine Fahrradstraße?	? 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
-Am Fährgut: neue Privatstraße, schon fertiggestellt, Qualität?	? -13672,3295 -13535,3330 -13567,3403
 Carl-Dähne-Str.: Planstraße A, schon fertiggestellt, Qualität?	? -16317,-541 -16309,-435 -16168,-312
 Zum Düsteren Teich: Planstraße B, schon fertiggestellt, Qualität?	? -16108,-415 -16168,-312 -16268,-218
 Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualität?	? -15825,-166 -16108,-415 -16224,-528
@@ -806,7 +805,6 @@ Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder 
 Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder mittlerweile asphaltiert?)	? 37760,104661 37559,103631 37410,103257
 Am Havelblick (Potsdam): Kopfsteinpflaster (ist das Kopfsteinpflaster mäßig oder eher schlecht?)	? -12492,-2555 -12442,-2389 -12623,-2367
 Hammer: teilweise schlechtes Kopfsteinpflaster, Sandbanketten (ist hier mittlerweile asphaltiert?)	? 12243,52862 12212,52762 11994,52768 11747,52381
-Trebbin: Kopfsteinpflaster, OK (Hier sind Bauarbeiten in Gange, danach kein Kopfsteinpflaster mehr?)	? -1614,-21103 -1902,-21499 -1969,-21492
 Langenberg - Bansin: Asphalt (tatsächlich Asphalt oder nur ein Waldweg?)	? 55234,177013 55335,176921 55531,176625 55452,176481 55620,176402 55724,176149 55759,176100
 Kachlin - Dargen: guter Asphalt mit einigen schadhaften Stellen (nur gesehen, nicht befahren)	? 52553,166779 52425,166396
 Heideweg (Hennigsdorf): Asphalt (ist hier tatsächlich auch asphaltiert?)	? -3738,26172 -4121,26209
@@ -831,7 +829,6 @@ Havelstr.: Kopfsteinpflaster (Liegt hier Kopfsteinpflaster oder Asphalt?)	? 375,
 Rosa-Luxemburg-Str. (Potsdam): Asphalt (Wie ist die Qualität des Asphalts in der Rosa-Luxemburg-Straße?)	? -9176,-1188 -9207,-1144 -9306,-1000 -9410,-815
 Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58390,23910 58422,23806 58340,23653
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47138,116390 47087,115725
-Dahme: gutes Kopfsteinpflaster (Wird die Qualität hier nach den Bauarbeiten besser werden? Wird es Radwege geben?)	? 13308,-59619 13503,-59620 13692,-59667 13859,-59831 13957,-59911
 Schäferweg (Ueckermünde): Asphalt (tatsächlich asphaltiert?)	? 54024,148834 53734,149122
 Blankensee - Pampow: etwas welliger Asphalt (Stimmt die Qualität?)	? 69490,124121 69405,124160 69366,124195 69226,124503 68986,125150 68570,125720 68471,125796 68345,125883 68232,126057 68200,126265
 Schmalkaldener Str.: Sandweg (zumindest ein Teil ist asphaltiert!)	? -1773,36707 -1782,36753 -1786,36771 -1821,36902 -1825,36914 -1873,37093
@@ -876,4 +873,7 @@ F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 Kurpromenade: wird die Fahrbahn hier erneuert? (Wurde die Fahrbahn in der Kurpromenade erneuert?)	? -8917,5986 -8871,6289 -8862,6375 -8860,6439 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
 # added from bbbike-temp-blockings-optimized
 Tauroggener Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, Ende der Bauarbeiten unbekannt (Besteht die Einbahnstraßenregelung noch immer?)	? 3429,13227 3400,13107
+Parkstr.: Bauarbeiten, Fahrbahn offiziell noch gesperrt (Stand Mitte August 2024), Umwege an der Dorfkirche [Parkstr.: gesperrt, Umwege] (Bis wann gehen die Bauarbeiten?)	? 9078,6360 9031,6355
+Parkstr.: Bauarbeiten, Fahrbahn offiziell noch gesperrt (Stand Mitte August 2024), Umwege an der Dorfkirche [Parkstr.] (Bis wann gehen die Bauarbeiten?)	? 9031,6355 8992,6312 8944,6293 8930,6295
 Alt-Hellersdorf - Cottbusser Str.: Weg ist noch offiziell gesperrt (Stand Mitte August 2024), Durchfahrt ist nach Ende der Asphaltierung unter Umständen bereits möglich (Ist der Weg nun offiziell geöffnet?)	? 23305,14914 23318,14847 23297,14772
+Wulfila-Ufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt (Bestehen die Bauarbeiten weiterhin? Ist die Qualität der Fahrbahn besser geworden?)	? 8750,5173 8623,5104

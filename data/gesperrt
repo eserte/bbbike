@@ -1125,6 +1125,7 @@ Georg-Hermann-Allee -> Hans-Paasche-Str.: Straßenbahntrasse	3::igndisp -13420,14
 Hans-Paasche-Str. -> Georg-Hermann-Allee: Straßenbahntrasse	3::igndisp -13263,1394 -13422,1383 -13424,1290
 Georg-Hermann-Allee -> Peter-Huchel-Str.: Straßenbahntrasse	3::igndisp -13422,1383 -13424,1290 -13253,1310
 Peter-Huchel-Str. -> Georg-Hermann-Allee: Straßenbahntrasse	3::igndisp -13253,1310 -13424,1290 -13429,1069
+Am Fährgut	1 -13585,3401 -13620,3388 -13635,3434 -13602,3448 -13585,3401
 Marienwerder, Kirche	1 22907,48770 22935,48771 22944,48746 22933,48718 22903,48724 22894,48744 22907,48770
 Heinrich-Dorrenbach-Str.	1s 39533,14774 39578,14967
 Mahlsdorfer Str. [zur Böhlener Str.]	1 26014,15039 26093,15098
@@ -3471,6 +3472,7 @@ Drängelgitter	BNP:3:-12:trailer=10 26803,56547
 Tor	BNP:10:-140 33926,63348
 Tor	BNP:20:-74 20127,1538
 Barriere	BNP:3:-85:trailer=10 10628,16644
+Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::inwork 7912,14160 7875,14204
 Fuß- und Radwegbrücke: noch nicht offiziell freigegeben	2::inwork 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19363,4057 19353,4047
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
@@ -3482,7 +3484,6 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
-Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	1s:inwork 7998,15068 8015,15047 8037,14958 8091,14895
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:inwork 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 Wriezener Karree: Einbahnstraßenregelung	1s:inwork 12959,11631 12728,11850

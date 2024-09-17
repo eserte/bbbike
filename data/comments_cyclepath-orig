@@ -89,8 +89,8 @@ teilweise asphaltiert, teilweise Verbundsteinpflaster	RW1;RW1 -10973,-1764 -1092
 asphaltiert	RW8;RW2 -10090,6868 -10206,6756 -10494,6586 -10927,6333 -12179,5629 -12645,5573 -12718,5571
 asphaltiert	RW8;RW2 -13096,5584 -13143,5587 -13265,5564 -13578,5396 -13690,5212 -13736,4956 -13775,4515
 	RW4;RW4 -13775,4515 -13778,4260 -13779,4233 -13781,4027 -13783,3919 -13784,3900 -13703,3717
-Gehweg für Radfahrer frei	RW1; -13703,3717 -13567,3403 -13703,3717
-Gehweg für Radfahrer frei	RW1;RW1 -13567,3403 -13387,2987 -13384,2979 -13370,2939
+Gehweg für Radfahrer frei	RW1;RW1 -13703,3717 -13568,3406
+Gehweg für Radfahrer frei	RW1;RW1 -13568,3406 -13387,2987 -13384,2979 -13370,2939
 Gehweg für Radfahrer frei, asphaltiert	RW1; -13141,1933 -13142,1989
 #: note: Zweirichtungsradweg, aber Richtung Süden existiert auch ein Suggestivstreifen
 asphaltiert	RW2; -13142,1989 -13152,2169 -13181,2285 -13266,2571 -13330,2796 -13370,2939
@@ -2161,15 +2161,11 @@ asphaltiert	RW9?;RW -55010,4757 -54721,5177 -54708,5380 -54480,5735 -54282,6044
 	RW6;RW6 10994,-4472 10998,-4391 10963,-4389 10956,-4470
 	RW6;RW6 10898,-4383 10963,-4389 10967,-4309
 asphaltiert	RW2;RW8 16953,35907 16653,35993 16424,36152 16174,36457 15491,37176 15387,37252 15201,37349 14948,37315 14703,37197 14470,37191 13546,37474
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 11192,38568 10878,38650 10471,38685 10407,38693
-#: note: Ausschilderung fehlt noch teilweise
-Gehweg für Radfahrer frei, asphaltiert	RW1; 10407,38693 10356,38700 10251,38712 10181,38717 10139,38721 9981,38735
-#: note: Ausschilderung fehlt vermutlich noch
-asphaltiert	RW1;RW9 9981,38735 9893,38742 9343,38794 9329,38795
-#: note: Ausschilderung fehlt vermutlich noch
-Gehweg ist noch nicht für Radfahrer freigegeben, asphaltiert	RW1; 9329,38795 9056,38825 8954,38837 8873,38845
-#: note: Ausschilderung fehlt vermutlich noch
-Gehweg ist noch nicht für Radfahrer freigegeben, asphaltiert	RW1;RW1 8873,38845 8740,38857
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 11192,38568 10878,38650 10471,38685
+Gehweg für Radfahrer frei, asphaltiert	RW1;RW9 10471,38685 10407,38693 10356,38700 10251,38712 10181,38717 10139,38721 9981,38735
+asphaltiert	RW2;RW8 9981,38735 9866,38743 9343,38794 9329,38795
+Gehweg für Radfahrer frei, asphaltiert	RW1;RW9 9329,38795 9056,38825 8954,38837 8873,38845
+Gehweg für Radfahrer frei, asphaltiert	RW1;RW1 8873,38845 8740,38857
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31763 vvv
 #: confirmed_by: mapillary vvv
 asphaltiert	RW2;RW8 13237,37524 12812,37567 11818,37915 11621,38036 11437,38505 11269,38548

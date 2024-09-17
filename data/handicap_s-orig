@@ -69,7 +69,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-09-15
+#: last_checked: 2024-09-17
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -249,6 +249,20 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
 # 
 ### Wedding/Gesundbrunnen ###
+# 
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1306507.php (Bauarbeiten: 29. März 2023 - voraussichtlich Ende September 2024)
+#: by: https://www.berliner-woche.de/wedding/c-bauen/schoenheitskur-fuer-weddingplatz_a375989
+#: by: https://www.berliner-woche.de/wedding/c-bauen/auf-dem-weddingplatz-laeuft-die-erste-bauphase-noch-bis-jahresende_a384210
+#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=756286#post756286
+#: XXX Weddingplatz: Umgestaltung
+#: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
+#: historical_note: am Anfang Einbahnstraße, offen Richtung Norden (1s:q3:inwork), später komplett zu (q4::inwork in handicap_s-orig), dann wieder (laut osm) Einbahnstraße (1s:q3:inwork), seit September 2024 teilweise zu (südlicher Abschnitt)
+#: osm_watch: way id="4596985" version="31"
+#: osm_watch: way id="1161733739" version="15"
+#: last_checked: 2024-09-07
+#: check_frequency: 90d
+#: next_check: 2024-09-30
+Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	q4::inwork 7998,15068 8015,15047 8037,14958 8091,14895
 # 
 # REMOVED (minimale Einschränkungen, lohnt keinen Eintrag) --- #: source_id: viz2021:13.348181,52.548416,19.03.2024,07:00 (bis 14.06.2024) --- #: source_id[inactive]: bvg2021:106#BVG344476_0 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1769960995177238968 --- #: by: https://pbs.twimg.com/media/GJAoTXpXgAAvNk_?format=jpg&name=large (nur Einschränkungen an der südlichen Fahrbahn) --- #: last_checked: 2024-06-05 --- #: next_check: 2024-06-14 --- #: valid: -20240614 --- Antwerpener Str.: Baustelle vor der Seestr., einige Meter muss geschoben werden	q2::inwork 6555,15827 6690,15671
 # REMOVED (nicht mehr) --- #: next_check_id: SWINEMUENDER-2023 --- #: add_fragezeichen: Gibt es Ramlerstr./Swinemünder Str. weiterhin Bauarbeiten? --- #: also_indoor: traffic (G[zu viel]) --- #: last_checked: 2024-02-13 --- Ramlerstr.: Fahrbahn an der Swinemünder Str. wegen Bauarbeiten gesperrt	q2::inwork 9646,15737 9666,15739 9844,15755
@@ -471,7 +485,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-09-02 vvv
+#: last_checked: 2024-09-17 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -483,8 +497,9 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: next_check_id ^^^
 #: priority ^^^
 # 
-#: last_checked: 2024-09-02
-#: check_frequency: 14d
+#: add_fragezeichen: Ist die Charlottenstr. ab Dorotheenstr. noch immer gesperrt?
+#: last_checked: 2024-09-17
+#: check_frequency: 21d
 Charlottenstr.: Fahrbahn an der Dorotheenstr. einige Meter gesperrt	q3::inwork; 9454,12558 9462,12481
 # 
 # REMOVED (scheint fertig zu sein (daf)) --- #: next_check_id: MUSEUMSINSEL-2020 --- #: next_check_id: ZEUGHAUS-2014 --- #: priority: #A --- #: last_checked: 2021-06-23 (daf) --- #: check_frequency: 14d --- Schinkelplatz: Fahrbahn wird neu gemacht	q4::inwork 9984,12426 9990,12404 9996,12372
@@ -776,6 +791,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831720307221995941
 #: by: https://pbs.twimg.com/media/GWuT4EbW0AAv2gO?format=jpg&name=large
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/hobrechtbruecke-gesperrt_a424851
+#: by: https://www.berliner-woche.de/neukoelln/c-bauen/hobrechtbruecke-wird-saniert_a425304
 #: note: bereits realisierte und eingetragene Maßnahmen
 #: note: - Maybachufer: Quersperre zwischen Bürknerstraße und Friedelstraße
 #: note: - Sanderstraße: Einbahnstraße für Kfz
@@ -3498,7 +3514,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-09-02
+#: last_checked: 2024-09-17
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4896,8 +4912,9 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12221 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
-#: last_checked: 2024-09-02
-#: check_frequency: 90d
+#: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn
+#: last_checked: 2024-09-17
+#: check_frequency: 30d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 
 #: note: Grünanlagenschild ohne Zusatzschilder
