@@ -2054,7 +2054,8 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Teltowkanalpromenade: schmale und kurvige Unterführung	q2 4778,3352 4815,3382 4822,3431
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
-#: note: Luftbild
+# 
+#: note: auf der nördlichen Seite steht ein Gehwegschild ohne Radfahrerfreigabe, auf der südlichen Seite steht gar kein Schild
 (Unterführung): Rampen	q2 -8334,14461 -8251,14440 -8256,14418 -8227,14408 -8287,14411
 # 
 #: XXX_prog eigentlich müssen einige von den Steigung/Gefälle-Einträgen nach comments_mount bewegt werden (wenn das Routing das berücksichtigen würde)
@@ -4036,7 +4037,7 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://www.berliner-woche.de/spandau/c-bauen/bvg-will-bis-ende-oktober-arbeiten-am-u-bahnhof-rathaus-spandau-abschliessen_a325550
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/die-bvg-benoetigt-fast-zwei-jahre-fuer-den-einbau-des-neuen-aufzugs-am-u-bahnhof-altstadt-spandau_a375155 (vielleicht hängt es von den Aufzugarbeiten ab? Arbeiten bis Ende 2024)
 #: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
-#: last_checked: 2024-08-20 (mapillary) vvv
+#: last_checked: 2024-09-18 vvv
 #: check_frequency: 150d vvv
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3511,14260 -3517,14218 -3552,14082
@@ -4236,20 +4237,14 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Weststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 5944,15172 5998,15112 6007,15053 6012,15024 6030,14924
 (Ost-West-Str., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 5998,15112 6056,15162 6170,15263 6265,15349 6331,15408 6348,15423
 (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6414,14981 6305,14964
-#: next_check_id: VIRCHOW-2023
-#: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+
-#: XXX hat möglicherweise was mit den Leitungsarbeiten am Nordufer zu tun
-#: osm_watch: way id="1168244288" version="3"
-#: osm_watch: way id="1239079511" version="1"
-#: last_checked: 2024-03-18
-#: check_frequency: 90d
-Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,14964 6231,14952
+# REMOVED (nicht mehr) --- #: next_check_id: VIRCHOW-2023 --- #: XXX später wiederherstellen: --- #: XXX hat möglicherweise was mit den Leitungsarbeiten am Nordufer zu tun --- #: osm_watch: way id="1168244288" version="3" --- #: osm_watch: way id="1239079511" version="1" --- #: last_checked: 2024-03-18 --- #: check_frequency: 90d --- Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,14964 6231,14952
+(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+ 6305,14964 6231,14952
 #: next_check_id: VIRCHOW-2023
 #: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+
 #: XXX laut osm Sperrung bis 2028
 #: osm_watch: way id="1238623806" version="1"
 #: osm_watch: way id="1168244288" version="3"
-#: last_checked: 2024-03-18
+#: last_checked: 2024-09-18
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 (Südstr., Virchow-Klinikum): Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6231,14952 6209,14948 6160,14927 6104,14937
@@ -5051,6 +5046,11 @@ Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 
 (Lea-Grundig-Str./Jan-Petersen-Str. - Radweg an der Straßenbahn): einige Fußgänger	q1 21031,16217 21000,16238
 # 
 (Zur Alten Börse - Merler Weg): Betriebsgeländestraßen	q1- 18749,13158 18766,13257
+# 
+(Am Bahndamm - Elsa-Neumann-Str.): Bordsteine	q3 168,15220 149,15237
+# 
+#: note: eine Reihe von Zaunpfosten steht auf dem alten Weg und lässt nur Platz für einen sehr engen Pfad
+(Hahnebergweg - Am Fort): teilweise sehr eng	q3 -7810,12418 -7959,12439
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
@@ -6612,7 +6612,7 @@ Albrechtshofer Weg: enge Straße	q0- -7517,15858 -7642,15840 -7751,15847 -7865,15
 # 
 #: by: Andy (compstars):
 #: by: Tatjana Brühl: enge Straße, q0
-Faucherweg: enge Straße	q1 -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,14888
+Faucherweg: enge Straße	q1 -1299,14797 -1282,14789 -1251,14772 -1207,14781 -1145,14819 -898,14894
 # 
 #: by: Ralf Wilcke:
 #: note: "fahrbahnbreite für 2 autos wenn keines parkt, was aber oft der fall ist."

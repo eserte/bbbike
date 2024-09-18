@@ -1123,7 +1123,7 @@ EOF
      { from  => $isodate2epoch->("2019-09-30 00:00:00"),
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 29, months => 9, start => "2023-10-25T00:00:00"]],
+       recurrences => [['yearly', days => 29, months => 9, start => "2024-10-25T00:00:00"]],
        recurrence_prewarn_days => 7,
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
@@ -1131,6 +1131,7 @@ EOF
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20211001 (findet 2021 anscheinend nicht statt)
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20220922 (findet 2022 nicht statt) (2023 auch nicht)
+#: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20240918 (findet 2024 voraussichtlich nicht statt)
 #: source_id: LMS-BR_r_LMS-BR_147349_LMS-BR_72 (inaktiv)
 	2 8055,12186 8089,12190 8214,12205
 	2 8214,12205 8303,12216 8344,12221 8538,12245
@@ -16695,7 +16696,7 @@ EOF
        until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9, start => "2023-10-25T00:00:00"]], # findet 2023 nicht statt
-       recurrence_prewarn_days => -7,
+       recurrence_prewarn_days => -14,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -30355,7 +30356,7 @@ EOF
 #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-08-21
+#: last_checked: 2024-09-18
 #: check_frequency: 60d
 #: next_check: 2024-12-31
 	2::inwork 3231,12749 3332,12742
@@ -32640,6 +32641,7 @@ EOF
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022) (möglicherweise inaktiv)
 #: source_id: viz2021:13.42885,52.47792,01.04.2021,10:17 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
 #: last_checked: 2024-07-24 (mapillary)
@@ -34701,15 +34703,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Zeestower Weg - Finkenkruger Weg: ein Abschnitt laut Schild für Unbefugte verboten',
+#       text  => 'Zeestower Weg - Finkenkruger Weg: ein Abschnitt laut Schild für Unbefugte verboten',
+       text  => 'Zeestower Weg - Finkenkruger Weg: Privatweg, Betreten auf eigene Gefahr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bleibt das dauerhaft so?
-#: note: mittlerweile (Ende April 2022) ist eins der Schilder entfernt worden, aber an der östlichen Seite scheint das Verbotsschild noch da zu sein (leider sind die Mapillary-Aufnahmen nicht scharf genug)
+#: note: mittlerweile (Ende April 2022) ist eins der Schilder entfernt worden, aber an der östlichen Seite scheint das Verbotsschild noch da zu sein (leider sind die Mapillary-Aufnahmen nicht scharf genug); September 2024: auf beiden Seiten existieren Schilder: Privatweg, Durchfahrt verboten, Betreten und Befahren auf eigene Gefahr
 #: osm_watch: way id="57401221" version="8"
-#: last_checked: 2023-04-21
+#: last_checked: 2024-09-18
 #: check_frequency: 360d
-	2 -7663,15304 -7747,15315
+# REMOVED (hier nicht mehr?)	2 -7663,15304 -7747,15315
+	2 -7663,15304 -7636,15309 -7408,15219
 EOF
      },
      { from  => undef, # 
@@ -35938,7 +35942,7 @@ EOF
        until => $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
 #      dont_check_date => 1,
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, voraussichtlich bis 28.08.2023, eventuell etwas länger bis zum 30.08.2023',
-       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 18.09.2024 07:00 Uhr bis 04.10.2024 17:00 Uhr',
+       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 18.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
 #      text  => 'Schubertstr.: etwa 80m der Straße westlich der Hämmerlingstr. gesperrt, u.U. außerhalb der Arbeitszeiten passierbar, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -35970,6 +35974,7 @@ EOF
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOxmWwAAhC4Z.png (Umleitung für Radfahrer)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1479228.php (nächste Sperrung der Hämmerlingstr.: 23.9.2024-2.10.2024)
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1836261367248228357
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
@@ -37256,9 +37261,10 @@ EOF
 #: note: bei rbb mittlerweile entfernt
 #: osm_watch: way id="1094113747" version="2"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-07-05
-#: check_frequency: 90d
-#: next_check: 2024-09-15
+#: last_checked: 2024-09-18
+#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2024-09-15
 	q4::inwork; 3429,13227 3400,13107
 EOF
      },
@@ -37417,7 +37423,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2023/01/11/senat-plant-auszug-der-fluechtlinge-aus-terminals-in-tegel/ (bis Mitte März 2023; allerdings bleibt Terminal C möglicherweise weiterhin als Unterkunft erhalten)
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
-#: last_checked: 2024-03-08 (Luftbilder) vvv
+#: last_checked: 2024-09-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="272993611" version="7"
@@ -38932,7 +38938,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-und-westend-kleinere-projekte/?postID=739232#post739232
-#: source_id: viz2021:13.31151,52.51786,16.09.2024,06:00 (kurzfristige Komplettsperrung, bis 18.09.2024)
+#: source_id: viz2021:13.31151,52.51786,16.09.2024,06:00 (kurzfristige Komplettsperrung, bis 18.09.2024) (inaktiv)
 #: osm_watch: way id="1191704604" version="1"
 #: note: Endedatum anhand Halteverbotsschilder
 #: add_fragezeichen: Gibt es in der Warburgzeile weiterhin eine Einbahnstraßenregelung?
@@ -39259,17 +39265,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1726671716, # undef, # XXX
        text  => 'Götelstr.: Bauarbeiten, Fahrbahn zwischen Betckestr. und Weverstr. gesperrt (Stand März 2024), Bauarbeiten möglicherweise bis Oktober 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GOETEL-2023
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder in der Umgebung bis 04.10.2024
-#: also_indoor: traffic (re-G)
-#: last_checked: 2024-07-13 (mapillary)
-#: check_frequency: 120d
-#: next_check: 2024-10-04
+# REMOVED (noch nicht ganz, aber man kann durchfahren) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (re-G) --- #: last_checked: 2024-07-13 (mapillary) --- #: check_frequency: 120d --- #: next_check: 2024-10-04
 	q4::inwork -3269,12406 -3260,12540
 EOF
      },
@@ -39639,7 +39641,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023) ist das Schild weg
-#: last_checked: 2024-05-27
+#: last_checked: 2024-09-18
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -41228,11 +41230,11 @@ EOF
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
-#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-07-24 (mapillary) vvv
+#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18). Radfahrer benutzen hier die Fahrbahn.
+#: last_checked: 2024-09-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
-# REMOVED (s.o.) ---	q4::inwork; 10908,13978 10933,14122
+	q4::inwork; 10908,13978 10933,14122
 #: note: früher wurde man zur nördlichen Fußgängerampel geführt, aber mittlerweile ist hier auch gesperrt, Umweg zur nächsten Überquerungsmöglichkeit mindestens 2x 135m; besser den linken Gehweg benutzen
 Metzer Str.: Fahrbahn gesperrt	q4::inwork; 11006,14087 10933,14122
 Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
@@ -41394,22 +41396,24 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-09-24 07:00:00"),
-       until => $isodate2epoch->("2024-09-18 17:00:00"),
-       text  => 'Nordufer: zwischen Fehmarner Str. und Föhrer Str. Bauarbeiten, Sperrung der Fahrbahn, vom 25.09.2023 07:00 bis 18.09.2024 17:00',
+       until => $isodate2epoch->("2024-10-07 17:00:00"),
+       text  => 'Nordufer: zwischen Fehmarner Str. und Föhrer Str. Bauarbeiten, Sperrung der Fahrbahn, vom 25.09.2023 07:00 bis 07.10.2024 17:00, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.
-#: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024)
+#: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024) (bis 07.10.2024)
+#: source_id: viz2021:13.35076,52.53934,18.09.2024,12:14 (bis 07.10.2024)
 #: osm_watch: way id="4543441" version="41"
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
-#: last_checked: 2024-08-10 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2024-09-18 vvv
-	q2::inwork; 6334,14756 6513,14725 6596,14740
+#: last_checked: 2024-09-18 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2024-10-07 vvv
+	q2::inwork; 6334,14756 6513,14725
+# REMOVED (hier nicht mehr) ---		q2::inwork; 6513,14725 6596,14740
 # REMOVED (hier nicht mehr) ---	q2::inwork; 6596,14740 6709,14782
 # REMOVED (nicht mehr) --- #: note: Richtung Westen mit ~100m Umweg an der Buchstr., hier nur Gehweg ---	q3::inwork; 6709,14782 6596,14740
-	q3::inwork; 6596,14740 6513,14725
+# REMOVED (hier nicht mehr) ---	q3::inwork; 6596,14740 6513,14725
 	q3::inwork; 6513,14725 6334,14756
 #: next_check ^^^
 #: check_frequency ^^^
@@ -42405,7 +42409,7 @@ EOF
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-09-04 (mapillary)
+#: last_checked: 2024-09-18
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -43971,6 +43975,8 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462140.php
 #: by: https://mierendorffinsel.org/projekte/aktuelle-projekte/insel-rundweg/
+#: note: 2024-09-18: Bauzäune sind weggeschoben
+#: osm_watch: way id="746470210" version="3"
 	2::inwork 4151,13961 4156,13914 4186,13710
 EOF
      },
@@ -44300,7 +44306,7 @@ EOF
        text  => 'Prötzel - Strausberg: Bauarbeiten, Sperrung, vom 12.08.2024 08:00 Uhr bis 18.09.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/152 (bis 16.09.2024) (bis 18.09.2024)
+#: source_id: LS/221-F/24/152 (bis 16.09.2024) (bis 18.09.2024) (inaktiv)
 	2::inwork 49801,26449 49808,26346 49255,26084 48885,25629 48104,24510 47857,24214 47671,23769 47695,23516 47541,23208 47180,22939 46782,22769 46072,21966 45602,21749
 EOF
      },

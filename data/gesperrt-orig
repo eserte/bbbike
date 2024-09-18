@@ -827,8 +827,8 @@ Blaurackenweg	1 17532,8125 17647,8071 17613,7989
 #: by: ewa_maria:
 Harzburger Str. (Pankow), Klaustaler Str...	1s:q4 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 #: by: Andy (compstars)
-# REMOVED (hier nicht) --- Faucherweg	1 -1299,14797 -1251,14772 -1207,14781
-Faucherweg	1 -1207,14781 -1141,14814 -896,14888
+# REMOVED (hier nicht) --- Faucherweg	1 -1299,14797 -1282,14789 -1251,14772 -1207,14781
+Faucherweg	1 -1207,14781 -1145,14819 -898,14894
 Römerweg	1s:q2 19236,9710 19450,9728 19459,9842
 Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
 #: by: Ulrike Orlowski vvv
@@ -1547,14 +1547,18 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/herzzentrum-wedding.533/#post-23580
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2024-08-10
-#: check_frequency: 180d
-#: next_check: 2028-12-31
+#: last_checked: 2024-09-18 vvv
+#: check_frequency: 360d vvv
+#: next_check: 2028-12-31 vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
+Virchow-Klinikum	2::inwork 6106,14890 6104,14937
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: XXX nach den Bauarbeiten die alte Einbahnstraßenregelung eintragen
 #: note: es gibt eine provisorische Verbindung zur Weststr. (nicht bei bbbike eingezeichnet)
-#: last_checked: 2024-07-05 vvv
+#: last_checked: 2024-09-18 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="273858820" version="10"
 #: osm_watch: way id="1239079510" version="1"
@@ -1659,6 +1663,10 @@ Eilenburger Str.	1s:q2 25743,15118 25752,15219 25578,15238
 # 
 Poggendorffweg	1 17202,8391 17143,8422
 Poggendorffweg	1 17143,8422 17188,8431
+# 
+Gartenfelder Str.: durchgezogene Linie	3nocross -1336,14786 -1299,14797 -1258,14846
+# 
+Berthold-Schwarz-Str.	1s:q4 -784,14940 -834,15053
 # 
 #: section ^^^
 ######################################################################
@@ -3264,6 +3272,7 @@ Drängelgitter	BNP:2::trailer=8 7928,10094
 enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20::trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5::trailer=no 10781,15438
 #: by: Stefan Klinkusch: vvv
+#: note: Schranke kann offen sein, gesehen 2024-09-18
 Metallstange	BNP:3::trailer=10 -5070,11199
 Metallstange	BNP:3::trailer=10 -5082,11155
 #: confirmed_by: srt
@@ -3970,7 +3979,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch: note 4126450 4
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2024-09-06 (osm)
+#: last_checked: 2024-09-18
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -3989,12 +3998,12 @@ Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::i
 #: valid: -20250124
 Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581
 # 
-#: osm_watch: note 4248173 3
+#: osm_watch: note 4248173 5
 #: note: laut Baustellenschild bis Mai 2024
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1485473.php (Eröffnung am 20. September 2024 ab 14 Uhr)
 # REMOVED (ja, gibt es weiterhin) --- #: XXX außerdem prüfen, ob die ehemaligen Schwingtore wieder angebracht werden --- Schwingtor an der westlichen Seite existiert noch immer (2024-05-07)
 #: priority: #C
-#: last_checked: 2024-08-10
+#: last_checked: 2024-09-17 (mapillary)
 #: next_check: 2024-10-20
 # REMOVED (hier nicht mehr) --- (Berolinastr. - Mollstr.): wegen Bauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
 Berolinastr. in Höhe Spielplatz	2::inwork 11862,13027 11857,13014 11825,13029 11829,13039 11815,13045
@@ -4116,20 +4125,21 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
-# REMOVED --- #: next_check_id: SAATWINKLER-2023
-# REMOVED --- #: XXX Laut osm zumindest teilweise offen
-# REMOVED --- #: last_checked: 2024-05-29 (osm) vvv
-# REMOVED --- #: check_frequency: 90d vvv
-# REMOVED --- # REMOVED --- #: next_check: 2023-11-11 vvv
-# REMOVED --- # REMOVED (laut osm hier offen) --- #: osm_watch: way id="1198442169" version="10" --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518 149,15237
-# REMOVED --- #: osm_watch: way id="1152661787" version="28"
-# REMOVED --- # REMOVED (hier offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503
-# REMOVED --- # REMOVED (laut osm offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -45,15503 59,15518
-# REMOVED --- # REMOVED (hier fast bis zum Ende offen) --- #: osm_watch: way id="1198395777" version="13" --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
-# REMOVED --- # REMOVED (hier nicht mehr) --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -213,15529 -218,15558
-# REMOVED --- # REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-# REMOVED --- #: last_checked ^^^
+#: next_check_id: SAATWINKLER-2023
+#: last_checked: 2024-09-18 vvv
+#: check_frequency: 60d vvv
+# REMOVED --- #: next_check: 2023-11-11 vvv
+# REMOVED (laut osm hier offen) --- #: osm_watch: way id="1198442169" version="10" --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518
+#: osm_watch: way id="1304784164" version="2"
+#: osm_watch: way id="1304784162" version="3"
+Heinrich-Hertz-Str.: Hochbauarbeiten, Abschnitt der Straße mit Bauzäunen abgesperrt	2::inwork 59,15518 149,15237
+# REMOVED (offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503
+# REMOVED (laut osm offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -45,15503 59,15518
+# REMOVED (hier fast bis zum Ende offen) --- #: osm_watch: way id="1198395777" version="13" --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
+# REMOVED (hier nicht mehr) --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -213,15529 -218,15558
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: MARIENUFER-2023
 #: osm_watch: way id="1272560911" version="2"
@@ -4183,7 +4193,7 @@ Potsdamer Platz - Bellevuestr.: wegen Bauarbeiten am ehemaligen Sony-Center gesp
 #: next_check_id: GOETEL-2023
 #: XXX Bleibt die Einbahnstraßenregelung permanent?
 #: osm_watch: way id="1193389996" version="1"
-#: last_checked: 2024-07-13 (mapillary)
+#: last_checked: 2024-09-18
 #: check_frequency: 120d
 #: next_check: 2024-10-04
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
@@ -4319,7 +4329,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2024-05-27 (Baustraße existiert noch)
+#: last_checked: 2024-09-18 (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -4584,7 +4594,7 @@ Ruth-Baumgarte-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17738,
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2024-08-29
+#: last_checked: 2024-09-18
 #: check_frequency: 120d
 #: next_check: 2026-09-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -5010,7 +5020,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-08-29
+#: last_checked: 2024-09-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -5262,7 +5272,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2024-09-07 vvv
+#: last_checked: 2024-09-18 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"

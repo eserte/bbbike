@@ -2114,7 +2114,7 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Weststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 5944,15172 5998,15112 6007,15053 6012,15024 6030,14924
 (Ost-West-Str., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 5998,15112 6056,15162 6170,15263 6265,15349 6331,15408 6348,15423
 (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6414,14981 6305,14964
-Virchow-Klinikum, Südstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6305,14964 6231,14952
+(Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6305,14964 6231,14952
 (Südstr., Virchow-Klinikum): Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6231,14952 6209,14948 6160,14927 6104,14937
 (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6104,14937 6030,14924
 (Oststr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6414,14981 6400,15080 6395,15109 6380,15210
@@ -2578,6 +2578,8 @@ Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,1
 Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 25573,1609 25438,1638 25399,1629
 (Lea-Grundig-Str./Jan-Petersen-Str. - Radweg an der Straßenbahn): einige Fußgänger	q1 21031,16217 21000,16238
 (Zur Alten Börse - Merler Weg): Betriebsgeländestraßen	q1 18749,13158 18766,13257
+(Am Bahndamm - Elsa-Neumann-Str.): Bordsteine	q3 168,15220 149,15237
+(Hahnebergweg - Am Fort): teilweise sehr eng	q3 -7810,12418 -7959,12439
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3238,7 +3240,7 @@ Elstergasse: enge Straße, rechts und links versetzt parkende Autos	q1 -1596,2018
 Wesenberger Ring: enge Straße	q1 13163,3582 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 Schmale Gasse: enge Straße	q1 23881,4335 24053,4357 24072,4423
 Albrechtshofer Weg: enge Straße	q0 -7517,15858 -7642,15840 -7751,15847 -7865,15867 -7975,15904 -8039,15930
-Faucherweg: enge Straße	q1 -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,14888
+Faucherweg: enge Straße	q1 -1299,14797 -1282,14789 -1251,14772 -1207,14781 -1145,14819 -898,14894
 Dualastr.: enge Straße	q1 6019,15841 5848,15685
 (Horterweg - Römerweg): einige Fußgänger	q1 19005,9816 19003,9800 18994,9707
 Kissingenplatz: Bordsteine	q4 11405,17985 11390,17962
@@ -3488,6 +3490,7 @@ Weidenkätzchenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp;
 Straße 3: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 18816,19648 18730,19672 18644,19695 18544,19722
 Hausvaterweg [Wohngebiet]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 19789,18423 19704,18459
 Eilenburger Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 25743,15118 25752,15219 25578,15238
+Berthold-Schwarz-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -784,14940 -834,15053
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
@@ -3614,3 +3617,4 @@ Blockdammweg: linker Gehweg bis zum Fußgängerbereich in der Parkstadt Karlshorst
 Orankeweg -> Hansastr./Orankeweg: linker Gehweg bis zur Überquerungsmöglichkeit, Bordstein	q3::igndisp; 14906,15859 14967,15885
 Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg bis zur Ampel "Am Feldberg"	q3::igndisp; 22994,11251 22937,11265
 Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg ab Ampel Myslowitzer Str.	q3::igndisp; 23113,11262 22994,11251
+Gartenfelder Str.: linker Gehweg bis Ampel	q3::igndisp; -1282,14789 -1336,14786
