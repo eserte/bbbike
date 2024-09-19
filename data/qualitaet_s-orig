@@ -6745,7 +6745,7 @@ Scharfe Lanke: Asphalt	Q0 -4255,11600 -4246,11438 -4245,11400
 #: source_id: viz2021:13.17159,52.51104,15.01.2024,09:13 (bis 29.02.2024) (inaktiv)
 #: source_id: viz2021:13.172174,52.511623,16.08.2023,13:00 (Erdgasleitungssanierung, bis 29.02.2024) (bis 29.03.2024) (inaktiv)
 #: XXX geplanter Straßenausbau; evtl. wird dabei die Asphaltierung verbessert
-#: osm_watch: note 3653798 1
+#: osm_watch: note 3653798 2
 #: last_checked: 2024-09-18
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-12-31
@@ -13015,6 +13015,7 @@ Zietenstr. (Lankwitz) [Stichstraße]: schlechtes Kopfsteinpflaster	Q3 6158,2256 6
 Schloßplatz: Kleinpflastersteine	Q1- 10174,12284 10102,12384
 Schloßplatz: Kleinpflastersteine	Q1- 10102,12384 10175,12435
 Schloßplatz: Kleinpflastersteine	Q1- 10102,12384 10063,12438
+(zum Stellahof): Kleinpflastersteine	Q1- 10285,12306 10255,12341
 (Uferweg am Humboldtforum): Kleinpflastersteine	Q1- 10357,12356 10336,12404 10271,12503 10243,12546
 Schloßplatz: Kleinpflastersteine	Q1- 10175,12435 10271,12503
 (Lustgarten - Schloss): Kleinpflastersteine	Q1- 10152,12491 10175,12435
@@ -30709,11 +30710,13 @@ Wilhelmstr. [Parallelstraße] (Wilhelmstadt): Kopfsteinpflaster	Q2 -3976,12860 -3
 Götelstr.: Kopfsteinpflaster	Q2- -3301,12864 -3275,12769 -3259,12580
 #: confirmed_by: srt vvv
 #: next_check_id: GOETEL-2023
-#: last_checked: 2024-09-18
-#: check_frequency: 30d
+#: last_checked: 2024-09-18 vvv
+#: check_frequency: 30d vvv
 #: historical_note: früher Richtung Norden Kopfsteinpflaster/Asphalt, Richtung Süden Asphalt
 Götelstr.: Asphalt, letzte Deckschicht fehlt	Q1 -3259,12580 -3260,12557 -3260,12540
 Götelstr.: Asphalt, letzte Deckschicht fehlt	Q1 -3260,12540 -3269,12406 -3284,12332 -3293,12304
+#: check_frequency ^^^
+#: last_checked ^^^
 Götelstr.: Asphalt	Q0 -3293,12304 -3349,12232 -3416,12165
 #: confirmed_by ^^^
 #: confirmed_by: srt

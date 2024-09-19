@@ -506,15 +506,29 @@ Hauptstr. -> Rubensstr.: Umweg über Baustellenampel	DH:len=80 6333,7927 6293,787
 #: by: https://www.berliner-woche.de/wedding/c-bauen/sanierung-der-seestrassenbruecke-fort_a365234 (bauzeitliche Verlegung des Radverkehrs auf den Mittelstreifen + Ampel)
 #: by: https://nitter.cz/VIZ_Berlin/status/1623187366683762689#m
 #: by: https://nitter.it/pic/orig/media%2FFoXZ_fbWIAA0OWk.jpg
-#: source_id: viz2021:13.335505,52.541771,08.02.2023,07:00 (Brückenarbeiten bis 20.2.2023) (bis 11.04.2024) (inaktiv)
+#: source_id: viz2021:13.335505,52.541771,08.02.2023,07:00 (Brückenarbeiten bis 20.2.2023) (bis 11.04.2024) (inaktiv) (bis 15.11.2024)
+#: osm_watch: note 4404889 2
 #: last_checked: 2024-09-18 vvv
 #: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2024-04-11 vvv
-#: note: Grün kam relativ schnell (2024-09-18), ist das immer so?
+#: next_check: 2024-11-15 vvv
+#: note: Grün kam relativ schnell nach der Anforderung (2024-09-18), ist das immer so?
 Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen umgeleitet, Baustellenampel mit Anforderung	DH:tl 5437,14844 5512,14907 5584,14969
 Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen umgeleitet	DH:tl 5584,14969 5605,14988 5687,15057
 Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen umgeleitet	DH:tl 5584,14969 5605,14988 5627,14963
+#: next_check ^^^
 #: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: next_check_id: PETERSBURGER-2024
+#: last_checked: 2024-09-19 vvv
+#: next_check: 2027-09-30 vvv
+Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
+Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13481,13128 13434,13234 13383,13349
+Petersburger Str. - Matternstr.: Matternstr. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,107 13622,12806 13579,12904 13788,13002
+Matternstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,120 13788,13002 13579,12904 13530,13014
+Petersburger Str. - Ebelingstr.: Ebelingstr. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,124 13530,13014 13481,13128 13598,13180
+Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,115 13598,13180 13481,13128 13434,13234
+#: next_check ^^^
 #: last_checked ^^^
 # 
 #: temporary ^^^

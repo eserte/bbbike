@@ -10,6 +10,15 @@
 # 
 ### Friedrichshain ###
 # 
+#: next_check_id: PETERSBURGER-2024
+#: last_checked: 2024-09-19 vvv
+#: next_check: 2027-09-30 vvv
+Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
+Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
+Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: KNIPRODE-2024
 #: add_fragezeichen: Sind hier noch immer Bauarbeiten?
 #: also_indoor: traffic (B,T)
@@ -393,7 +402,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-09-15 (webcam)
+#: last_checked: 2024-09-19
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -406,7 +415,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2024-09-03
+#: last_checked: 2024-09-19
 #: check_frequency: 90d
 #: next_check: 2028-03-31
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -3515,7 +3524,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-09-17
+#: last_checked: 2024-09-19
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4392,6 +4401,8 @@ Schloßplatz: einige Fußgänger	q2 10174,12284 10102,12384
 Schloßplatz: einige Fußgänger	q2 10102,12384 10063,12438
 #: note: Fußgängerzone, das Zusatzschild bittet zum Absteigen, allerdings sind die Wege hier weitläufig und die Fußgängerfrequenz nicht sehr hoch vvv
 (Lustgarten - Schloss): Fußgängerzone	q4+ 10152,12491 10175,12435
+#: note: an beiden Eingängen zum Stellahof wird explizit um ein Absteigen gebeten
+(Schloss, durch den Stellahof): Fußgängerzone, absteigen	q4 10285,12306 10255,12341 10175,12435
 (Uferweg am Humboldtforum): Fußgängerzone	q4+ 10357,12356 10336,12404 10271,12503 10243,12546
 Schloßplatz: Fußgängerzone	q4+ 10271,12503 10175,12435 10102,12384
 #: note ^^^
@@ -4908,7 +4919,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
 #: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn
-#: last_checked: 2024-09-17
+#: last_checked: 2024-09-19
 #: check_frequency: 30d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
 # 

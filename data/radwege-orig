@@ -532,7 +532,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2024-09-05 vvv
+#: last_checked: 2024-09-19 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1623,6 +1623,7 @@ Asphalt mit einigen Unebenheiten	RW2; 5437,14844 5311,14786 5255,14757
 Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 	RW2; 5051,14606 5264,14671 5293,14699 5331,14735 5437,14844
 #: next_check_id: POPUPRADWEGE-2020
+#: next_check_id: PETERSBURGER-2024
 #: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Süden)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
@@ -1643,30 +1644,37 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://viz.berlin.de/aktuelle-meldungen/grundhafte-erneuerung-der-petersburger-strasse/
 #: source_id: viz2021:13.450139,52.522818,16.09.2024,08:00 (bis 30.09.2027)
 #: source_id: viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
-#: note: abschnittsweise mit Baken abgesichert
+#: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="26"
-#: last_checked: 2024-09-16
-#: check_frequency: 7d
+#: last_checked: 2024-09-16 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2027-09-30
-provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
-	RW1; 13676,12683 13695,12643
-	RW1; 13695,12643 13676,12683
+#: next_check: 2027-09-30 vvv
+provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234
+alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13685,12664 13695,12643
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: POPUPRADWEGE-2020
+#: next_check_id: PETERSBURGER-2024
 #: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Norden)
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
-#: note: abschnittsweise mit Baken abgesichert
+#: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="43"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2024-09-16
-#: check_frequency: 7d
+#: last_checked: 2024-09-16 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2027-03-31
-provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
-	RW1; 13383,13349 13375,13367 13330,13468
-unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9111,10090 8790,10157
+#: next_check: 2027-03-31 vvv
+provisorische Radspur	RW3; 13695,12643 13685,12664
+provisorische Radspur	RW4; 13685,12664 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
+provisorische Radspur	RW4; 13383,13349 13375,13367 13330,13468
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: note: Hermannstr. Richtung Süden
 Verbundsteinpflaster	RW1; 11831,8989 11830,8917 11845,8824 11879,8672
@@ -1674,6 +1682,8 @@ Radweg nur aufgemalt, mäßige Gehwegplatten	RW1; 11879,8672 11882,8527
 Verbundsteinpflaster	RW1; 11882,8527 11882,8519 11884,8492 11898,8362
 #: note: Hermannstr. Richtung Norden
 Verbundsteinpflaster	RW1; 11898,8362 11884,8492 11882,8519 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989
+# 
+unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9111,10090 8790,10157
 # 
 	RW1;RW1 11456,6103 11590,6026
 	RW3;RW3 11590,6026 11943,5825 12017,5747 12052,5710
@@ -2144,7 +2154,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2024-09-03 vvv
+#: last_checked: 2024-09-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -3125,7 +3135,13 @@ abschnittsweise neu asphaltiert, Rest Verbundsteinpflaster mit teilweise erhebli
 Verbundsteinpflaster	RW1;RW1 13895,13017 13926,13090 13943,13129 13998,13272 14052,13389 14109,13449
 Gehwegplatten, teilweise schadhaft	RW1; 13730,12535 13732,12526 13785,12292
 neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
-	RW1; 13675,12581 13698,12544 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642 13695,12643 13681,12624 13675,12581
+# 
+#: note: Bersarinplatz
+	RW1; 13675,12581 13698,12544 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642
+#: next_check_id: PETERSBURGER-2024
+provisorische Radspur	RW3; 13747,12642 13695,12643
+	RW1; 13695,12643 13681,12624 13675,12581
+# 
 	RW6;RW6 13548,12535 13552,12435
 	RW6;RW6 15355,11513 15377,11555 15393,11590
 #: by: Cord Unruh
@@ -3305,7 +3321,7 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="318031558" version="14"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Werden die Busspuren zu Radspuren umgewandelt? Oder entsteht hier ein neuer Hochbordradweg? Vermutlich Letzteres. Hier sind gerade Bauarbeiten vvv
-#: last_checked: 2024-08-27 vvv
+#: last_checked: 2024-09-19 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
@@ -8091,7 +8107,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2024-08-14 (mapillary)
+#: last_checked: 2024-09-19
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
