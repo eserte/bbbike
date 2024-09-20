@@ -372,7 +372,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-08-29 vvv
+#: last_checked: 2024-09-20 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -711,11 +711,13 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
 #: by: https://www.berliner-woche.de/moabit/c-bauen/plaene-fuer-europaplatz-nord_a415834
 #: by: https://mein.berlin.de/projekte/neugestaltung-europaplatz-nord/
+#: by: https://www.caimmo.com/de/presse/news/artikel/ca-immo-startet-bau-des-anna-lindh-haus-am-berliner-hauptbahnhof/ (Fertigstellung Ende 2026)
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 9
 #: last_checked: 2024-08-31 (webcam)
 #: check_frequency: 60d
+#: next_check: 2026-12-31
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 # 
 # REMOVED --- #: next_check_id: TRAMTURM-2021 --- #: source_id[inactive]: bvg2021:m27#BVG305466_0 --- #: next_check: 2023-09-06 vvv --- #: check_frequency: 90d vvv --- #: last_checked: 2023-05-14 (osm) vvv
@@ -1263,8 +1265,9 @@ Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5
 # 
 ### Wilhelmsruh ###
 # 
-#: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt)
-#: also_indoor: traffic (G,H,B,T,W) [alle falsch]
+#: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt) (inaktiv)
+#: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W) [alle falsch]
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2024-08-24 (mapillary)
 #: next_check: 2024-09-20
 Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450
@@ -3524,7 +3527,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-09-19
+#: last_checked: 2024-09-20
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4919,9 +4922,9 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
 #: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn
-#: last_checked: 2024-09-19
+#: last_checked: 2024-09-20
 #: check_frequency: 30d
-Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q0- 11635,12398 11845,12292
+Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1+ 11635,12398 11845,12292
 # 
 #: note: Grünanlagenschild ohne Zusatzschilder
 Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031

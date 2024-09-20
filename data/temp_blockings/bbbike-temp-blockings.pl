@@ -21593,6 +21593,7 @@ EOF
 #: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.369855,52.515768,18.09.2023,06:00 (bis 26.09.2023) (inaktiv)
 #: source_id: viz2021:13.360266,52.515154,24.09.2023,22:00 (bis 06.10.2023) (inaktiv)
+#: source_id: viz2021:13.36968,52.51571,20.09.2024,16:58 (bis 02.10.2024)
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -33296,7 +33297,7 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: osm_watch: note 3914565 9
+#: osm_watch: note 3914565 14
 #: last_checked: 2024-09-15 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-09-22
@@ -40666,7 +40667,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.33522,52.4859,07.08.2023,07:00 (inaktiv)
 #: source_id: viz2021:13.335186,52.487058,10.10.2023,07:00 (bis 16.10.2023) (inaktiv)
-#: source_id: viz2021:13.33522,52.4859,26.08.2024,07:00 (bis 20.09.2024)
+#: source_id: viz2021:13.33522,52.4859,26.08.2024,07:00 (bis 20.09.2024) (inaktiv)
 	q4::inwork 5782,8828 5783,9060
 EOF
      },
@@ -42502,7 +42503,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.305156,52.496443,12.02.2024,07:00 (bis 15.03.2024) (inaktiv)
 #: source_id: viz2021:13.305156,52.496443,13.03.2024,20:58 (bis 28.03.2024)
-#: source_id: viz2021:13.30519,52.49671,09.09.2024,07:00 (bis 20.09.2024)
+#: source_id: viz2021:13.30519,52.49671,09.09.2024,07:00 (bis 20.09.2024) (inaktiv)
 	q4::inwork 3711,9855 3719,10004
 EOF
      },
@@ -42531,7 +42532,7 @@ EOF
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
 #: priority: #B vvv
-#: last_checked: 2024-06-14 (osm) vvv
+#: last_checked: 2024-09-11 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-09-23 vvv
 #: osm_watch: way id="375991056" version="17"
@@ -42541,7 +42542,8 @@ EOF
 Wilsnacker Str.: Anbindung gesperrt	q4::inwork 6646,13951 6746,13826
 #: note: Ampel ist zumindest Richtung Nordosten ausgeschaltet, allerdings gibt's dafür eine Fußgängerampel etwa 50m weiter nordöstlich
 #: note: mittlerweile Änderung laut VMZ, evtl. nur noch eine Fahrtrichtung betroffen
-#: osm_watch: way id="417687029" version="15"
+#: osm_watch: way id="417687029" version="16"
+#: osm_watch: way id="1143843161" version="5"
 Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
 #: next_check ^^^
 #: check_frequency ^^^
@@ -43834,7 +43836,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-09-19 vvv
+#: last_checked: 2024-09-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44498,17 +44500,18 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-08-28 00:00:00"), # 1724302800, # 2024-08-22 07:00
-       until => undef, # 1726498800, # 2024-09-16 17:00
+       until => $isodate2epoch->("2027-09-30 17:00:00"), # undef, # 1726498800, # 2024-09-16 17:00
        dont_check_date => 1,
 #       text  => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 29.08.2024 09:00 bis 16.09.2024 17:00, evtl. wird verlängert',
-       text  => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+       text  => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung der Fahrbahn, bis Ende September 2027',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv)
+#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
 #: last_checked: 2024-09-19
 # REMOVED --- #: check_frequency: 14d
+#: next_check: 2027-09-30
 	q4::inwork 13530,13014 13470,12990
 EOF
      },
