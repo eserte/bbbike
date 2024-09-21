@@ -4497,8 +4497,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: vermutlich nur im Bereich Sybelstr. 14
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-30
-	2::inwork 3726,10757 3731,10640 3764,10580
+#: last_checked: 2024-09-21
+# REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
+	2::inwork 3731,10640 3764,10580
 # REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
 ',
          'from' => 1640905200,
@@ -5227,7 +5228,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-21
 #: check_frequency: 150d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -5471,33 +5472,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: SCHOENBURG-2023
-#: by: https://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse-1/ (Zeitraum Bau: 1. Quartal 2021 - 2. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (existiert nicht mehr) (wieder da) (2. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2023 - 1. Quartal 2024) (2. Quartal 2023 - 4. Quartal 2024)
-#: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
-# REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
-#: also_indoor: traffic (ex-G,ex-W) vvv
-#: osm_watch: way id="151353924" version="14"
-#: last_checked: 2024-08-18 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2023-06-11 vvv
-# REMOVED (hier nicht mehr, ohne dass sich was geändert hat)	q4::inwork 9031,6355 8995,6473 8961,6490
-# REMOVED (hier nicht mehr) ---	q2::inwork 8961,6490 8949,6644
-# REMOVED (hier nicht mehr) --- Blumenthalstr.	q4::inwork 8944,6293 8971,6154
-Parkstr.: gesperrt, Umwege	q4::inwork 9078,6360 9031,6355
-Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3735,
-         'text' => 'Parkstr.: Bauarbeiten, Fahrbahn offiziell noch gesperrt (Stand Mitte August 2024), Umwege an der Dorfkirche',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5534,8 +5509,9 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: source_id: viz2021:13.31151,52.51786,16.09.2024,06:00 (kurzfristige Komplettsperrung, bis 18.09.2024) (inaktiv)
 #: osm_watch: way id="1191704604" version="1"
 #: note: Endedatum anhand Halteverbotsschilder
+#: also_indoor: traffic (none)
 #: add_fragezeichen: Gibt es in der Warburgzeile weiterhin eine Einbahnstraßenregelung?
-#: last_checked: 2024-07-05
+#: last_checked: 2024-09-21
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 	q4::inwork; 4032,12167 4101,12356
@@ -5680,7 +5656,7 @@ Parkstr.	q4::inwork 9031,6355 8992,6312 8944,6293 8930,6295
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023) ist das Schild weg
-#: last_checked: 2024-09-18
+#: last_checked: 2024-09-21
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -5990,30 +5966,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
-#: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
-#: source_id[inactive]: bvg2021:240#BVG326189_0
-#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
-#: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024)
-#: source_id: bvg2024:240#HIM_FREETEXT_238442
-#: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
-#: osm_watch: way id="198589911" version="23"
-# REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
-# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
-#: note: es existieren zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
-#: priority: #B
-#: last_checked: 2024-09-15
-#: next_check: 2024-09-20
-	q3::inwork 15856,10821 15793,10814
-',
-         'from' => 1726178400,
-         'id' => 3885,
-         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmale Schutztunnel existieren, bis 20.09.2024 20:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1726855200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6273,7 +6226,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-09-19 vvv
+#: last_checked: 2024-09-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-11-01 vvv
 #: next_check: 2024-09-30 vvv
@@ -6459,7 +6412,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-09-12 (bahninfo-forum)
+#: last_checked: 2024-09-19 (mapillary)
 #: check_frequency: 45d
 	2::inwork 9586,17665 9396,17863
 # REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
@@ -6785,7 +6738,9 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/wochenmarkt-vor-der-markthalle-erweiterung-fur-markthalle-neun-in-berlin-kreuzberg-genehmigt-10575601.html (befristet bis 13. September 2024)
 #: by: https://markthalleneun.de/m%C3%A4rkte/
-#: next_check: 2024-09-13
+#: last_checked: 2024-09-21
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2024-09-13
 	q4::temp:clock 12294,10663 12363,10781
 ',
          'from' => undef,
@@ -6826,7 +6781,7 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt\'s eine offizielle Wegführung für Radfahrer über den Hochbord.
 #: also_indoor: traffic (ex-H[falsch],re-G,W[ungenau],T[ungenau])
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße und Kiefholzstraße beendet?
-#: last_checked: 2024-09-15
+#: last_checked: 2024-09-21
 #: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 ',
@@ -7256,7 +7211,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-17
+#: last_checked: 2024-09-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -7374,18 +7329,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => 1733007599
        },
-       {
-         'data' => '#: also_indoor: traffic (none)
-#: add_fragezeichen: Bestehen die Bauarbeiten weiterhin? Ist die Qualität der Fahrbahn besser geworden?
-#: last_checked: 2024-08-18
-	q4::inwork 8750,5173 8623,5104
-',
-         'from' => undef,
-         'id' => 4141,
-         'text' => 'Wulfila-Ufer: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: LS/221-E/24/094 (bis 30.08.2024) (bis 30.09.2024)
 	2::inwork 37481,69171 37365,69000
@@ -7659,6 +7603,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        },
        {
          'data' => '#: next_check_id: KARLMARXPLATZ-2024
+#: last_checked: 2024-09-21
 #: next_check: 2024-09-23
 	q4::inwork 12972,7602 13100,7626
 ',
@@ -7667,6 +7612,21 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'text' => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich ab 23.09.2024 bis zum Frühjahr 2025',
          'type' => 'handicap',
          'until' => 1742749200
+       },
+       undef,
+       {
+         'data' => '#: source_id: viz2021:13.346105,52.497104,23.08.2024,09:00 (hier ist die Motzstr. nicht erwähnt; bis 17.12.2024)
+#: also_indoor: traffic (B,T)
+#: last_checked: 2024-09-21
+#: check_frequency: 45d
+#: next_check: 2024-12-17
+	q4::inwork; 6499,10086 6427,10044
+',
+         'from' => 1726933883,
+         'id' => 4169,
+         'text' => 'Motzstr.: Bauarbeiten, Fahrbahn Richtung Viktoria-Luise-Platz gesperrt, voraussichtlich bis Mitte Dezember 2024',
+         'type' => 'handicap',
+         'until' => 1734476399
        }
      
 );

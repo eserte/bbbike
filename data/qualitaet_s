@@ -79,7 +79,7 @@ Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7227,6080 7227,6058 722
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0 7370,6451 7222,6458
 Hans-Baluschek-Park: Beton	Q0 7252,6080 7278,6101 7305,6183
-Hans-Baluschek-Park: Asphalt	Q0 7305,6183 7393,6452 7605,7109 7707,7415 7733,7483 7747,7521 7757,7563
+Hans-Baluschek-Park: Asphalt	Q0 7305,6183 7393,6452 7605,7109 7664,7283 7707,7383 7741,7479 7747,7521 7757,7563
 Hans-Baluschek-Park - Südkreuz: Betonpflaster	Q0 7757,7563 7777,7644 7789,7692 7792,7704 7789,7718 7774,7724
 (Lotte-Laserstein-Str. - Hans-Baluschek-Park): Betonpflaster	Q0 7750,7658 7777,7644
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8041,9434 7960,9466
@@ -438,7 +438,7 @@ Richardplatz: Kopfsteinpflaster	Q2 13392,7648 13417,7654 13424,7680 13416,7712 1
 Schudomastr.: Kopfsteinpflaster	Q2 13424,7680 13455,7673
 Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168
 Richardstr.: Asphalt	Q0 12797,8168 12870,8087 13045,7938
-Richardstr.: Kopfsteinpflaster	Q2 13045,7938 13085,7904 13103,7889 13156,7839 13226,7775 13245,7742
+Richardstr.: Kopfsteinpflaster	Q2 13045,7938 13081,7907 13103,7889 13156,7839 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
 Richardstr.: Kopfsteinpflaster	Q2 13278,7673 13288,7653
 Richardstr.: Kopfsteinpflaster	Q2 13288,7653 13295,7627
@@ -1756,15 +1756,15 @@ Bornsdorfer Str.: mäßiges Kopfsteinpflaster	Q2 12692,7996 12671,8077
 Saltykowstr.: unebenes Kleinsteinpflaster	Q2 12726,7887 12865,7923
 Uthmannstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 12916,7775 13156,7839
 Herrnhuter Weg: Kopfsteinpflaster	Q2 12898,7832 13103,7889
-Jan-Hus-Weg: Gehwegplatten	Q0 13085,7904 13117,7939
+Jan-Hus-Weg: Gehwegplatten	Q0 13081,7907 13121,7945
 Kirchgasse (Neukölln): gutes Kopfsteinpflaster	Q1 12992,8125 13046,8048
-Kirchgasse (Neukölln): Gehwegplatten	Q0 13117,7939 13151,7914
-Kirchgasse (Neukölln): schlechtes Kopfsteinpflaster	Q3 13151,7914 13268,7801 13292,7779 13306,7765
+Kirchgasse (Neukölln): Gehwegplatten	Q0 13121,7945 13150,7924
+Kirchgasse (Neukölln): schlechtes Kopfsteinpflaster	Q3 13150,7924 13269,7806 13292,7779 13306,7765
 Kirchgasse (Neukölln): Kopfsteinpflaster	Q2 13292,7779 13245,7742
-Gerlachsheimer Weg: Gehwegplatten	Q0 13151,7914 13240,7966
-Wanzlikpfad: asphaltiert	Q1 13268,7801 13309,7911
+Gerlachsheimer Weg: Gehwegplatten	Q0 13150,7924 13187,7927 13236,7970
+Wanzlikpfad: asphaltiert	Q1 13269,7806 13309,7911
 Wilhelm-Busch-Str.: asphaltiert	Q0 13376,7970 13312,8026 13205,8126
-Wörnitzweg: asphaltiert	Q0 13240,7966 13312,8026
+Wörnitzweg: asphaltiert	Q0 13246,7961 13312,8026
 Neue Weberstr: gepflastert, wellig	Q2 12359,12592 12329,12594 12317,12584 12242,12594 12148,12609 12146,12628 12064,12673
 Fürstenwalder Str.: Kopfsteinpflaster, OK	Q1 12242,12594 12243,12604
 Löwestr.: mäßiges Kopfsteinpflaster	Q2 13202,12790 13273,12649
@@ -9570,7 +9570,7 @@ Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780 19500,7719
 Rudolf-Seiffert-Str.: Asphalt mit einigen Rissen und Schäden	Q1 14790,13639 14769,13569 14731,13576 14658,13283 14644,13223
 Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7606,5939
 Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7615,5938
-(Alboinstr. - Paul-Schmidt-Str.): Gehwegplatten	Q0 8200,5510 8242,5427
+(Alboinstr. - Paul-Schmidt-Str.): Gehwegplatten	Q0 8200,5510 8224,5492 8227,5453 8242,5427
 Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 (Borussenstr. - Kronprinzessinnenweg): Verbundsteinpflaster	Q1 -4134,1984 -4139,1976 -4166,1941 -4180,1941
 (Rasthof Dreilinden): Asphalt	Q0 -4003,1234 -3994,1170 -3642,1199 -3577,1148
@@ -12172,7 +12172,8 @@ Ingwäonenweg: Asphalt	Q0 16442,22505 16499,22789 16517,22868 16543,22942 16566,2
 Ingwäonenweg: Verbundsteinpflaster	Q0 16627,23187 16683,23354
 Ingwäonenweg: Asphalt	Q0 16683,23354 16699,23402 16730,23492 16745,23548 16770,23593 16783,23615
 Wulfila-Ufer: Asphalt	Q0 8255,4791 8499,5016
-Wulfila-Ufer: Asphalt, einige Wurzelhebungen	Q1 8499,5016 8623,5104 8750,5173
+Wulfila-Ufer: Asphalt, einige Wurzelhebungen	Q1 8499,5016 8623,5104
+Wulfila-Ufer: Asphalt	Q0 8623,5104 8750,5173
 Schluchseestr.: Asphalt	Q0 5006,22507 5056,22389 5098,22326 5209,22229 5335,22196 5443,22210 5515,22250 5748,22578 5791,22615
 Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5881,7314
 Königswinterstr.: Asphalt	Q0 19148,8406 19131,8448 19075,8590 18988,8792 18959,8870

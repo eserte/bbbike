@@ -36,6 +36,8 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
+Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q4::inwork 13236,7970 13246,7961
+Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q3::inwork 13246,7961 13309,7911
 Hobrechtbr¸cke: getrennter Geh- und Radweg w‰hrend der Bauarbeiten	q3::inwork 12085,9778 12116,9825
 B¸rgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -483,9 +485,9 @@ Heinrich-Lassen-Park: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q3 6664,8787 
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
 An der Malche: teilweise eng und kurvig	q2 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6377,17854 6375,17755 6370,17696 6347,17381
-Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13240,7966
-Jan-Hus-Weg/Kirchgasse: Fuﬂg‰nger	q2 13085,7904 13117,7939 13151,7914
-Wanzlikpfad: eng und kurvig, Fuﬂg‰nger	q3 13268,7801 13309,7911
+Gerlachsheimer Weg: Fuﬂg‰nger	q2 13150,7924 13187,7927 13236,7970
+Jan-Hus-Weg/Kirchgasse: Fuﬂg‰nger	q2 13081,7907 13121,7945 13150,7924
+Wanzlikpfad: eng und kurvig, Fuﬂg‰nger	q3 13269,7806 13309,7911
 (Tunnelstr. - Uferweg): Fuﬂg‰nger, Gr¸nanlage	q3 15662,9501 15749,9558
 (Spreeufer): Fuﬂg‰nger, Gr¸nanlage	q3 14569,10055 14599,10039 14690,9993 14776,9949 15000,9820
 Caroline-T¸bbecke-Ufer: Fuﬂg‰nger, Gr¸nanlage	q3 15000,9820 15043,9790 15367,9691
@@ -1806,7 +1808,7 @@ Maienwerderweg: einige Fuﬂg‰nger, Hunde	q1 2731,18729 2723,18675 2622,18546 2440
 (s¸dliches Spreeufer): einige Fuﬂg‰nger	q1 5235,12461 5287,12465 5299,12420 5360,12331 5411,12290
 Dammbr¸cke: einige Fuﬂg‰nger, Bordstein	q3 -3066,14718 -3042,14682
 Pulverm¸hlenweg: Bordstein	q2 -1848,15535 -1794,15517
-Alboinstr. - Paul-Schmidt-Str.: Fuﬂg‰nger, Bordstein	q3 8242,5427 8200,5510
+Alboinstr. - Paul-Schmidt-Str.: Fuﬂg‰nger, Bordstein	q3 8242,5427 8227,5453 8224,5492 8200,5510
 (an der alten Bolle-Meierei): Bodenschwelle	q1 6443,12952 6500,13164
 (Fuﬂweg zur Gehrenseestr.): einige Fuﬂg‰nger	q1 17610,16307 17640,16259
 (Wartenberger Str. - Harry-Glaﬂ-Str.): einige Fuﬂg‰nger, Bordstein an der Wartenberger Str.	q2 17504,16489 17544,16463
@@ -2024,7 +2026,7 @@ Henriettenplatz: Fuﬂg‰nger, stellenweise eng	q3 2770,9945 2768,9980 2784,9992 27
 (Zinsgutstr. - Ottomar-Geschke-Str.): einige Fuﬂg‰nger, teilweise schmal	q2 20940,3805 20917,3827 20958,3875 21016,3923 21087,3995 21073,4165
 (Zinsgutstr. - Ottomar-Geschke-Str.): einige Fuﬂg‰nger, Kurven	q3 21012,3887 21026,3903 21016,3923
 (S-Bhf. Adlershof, Ernst-Augustin-Str. - Adlergestell): Fuﬂg‰nger	q3 19949,3249 19938,3294 20002,3349
-Hildegard-Knef-Platz: Busverkehr	q1 7774,7724 7759,7812 7718,7838
+Hildegard-Knef-Platz: Busverkehr	q1 7774,7724 7776,7780 7753,7827 7718,7838
 Alice-Salomon-Platz: Fuﬂg‰nger, Lieferverkehr	q1 23993,14797 24061,14801
 (KGA Erpetal - S-Bhf. Hirschgarten): Bordstein	q3 24329,6089 24297,6086
 (Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): einige Fuﬂg‰nger	q2 3218,8233 3218,8223 3212,8107 3206,7988 3198,7787 3183,7563
