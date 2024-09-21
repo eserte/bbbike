@@ -258,6 +258,9 @@ sub parse_street_type_nr {
 	} elsif ($strname =~ m{Tegeler See Radroute}i) {
 	    $type = 'TSR';
 	    $image = 'TSR.png';
+	} elsif ($strname =~ m{Radweg Deutsche Einheit}) {
+	    $type = 'RDE';
+	    $image = 'RDE.png';
 	}
 	if (defined $type) {
 	    $do_round = 1;
