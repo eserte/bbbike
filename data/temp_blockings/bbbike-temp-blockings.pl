@@ -29648,6 +29648,7 @@ EOF
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
+#: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
 	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
 EOF
@@ -37307,7 +37308,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-09-15
+#: last_checked: 2024-09-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -39717,7 +39718,7 @@ EOF
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-09-15
+#: last_checked: 2024-09-22
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -44262,7 +44263,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-21
+#: last_checked: 2024-09-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -44503,10 +44504,11 @@ EOF
        text  => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung der Fahrbahn, bis Ende September 2027',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-09-19
+#: last_checked: 2024-09-22
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30
 	q4::inwork 13530,13014 13470,12990
@@ -44771,6 +44773,16 @@ EOF
 #: check_frequency: 45d
 #: next_check: 2024-12-17
 	q4::inwork; 6499,10086 6427,10044
+EOF
+     },
+     { from  => 1726783200, # 2024-09-20 00:00
+       until => 1727042400, # 2024-09-23 00:00
+       text  => 'Kaskelstr.: Sperrung unter Bahnbrücke, auch Fußgänger können nicht passieren, 21.09.2024 bis 22.09.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20240922 (hier nur am 21.09.2024 bis 19 Uhr, aber es war auch am darauffolgenden Sonntag gesperrt)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/GR_berlin-lichtenberg_eue_umleitung_202409ne.pdf
+	2::inwork 15763,10963 15805,10949
 EOF
      },
     );
