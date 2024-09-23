@@ -24,7 +24,7 @@ An der Wuhlheide/Steffelbauerstr.: Baustellenampel östlich der Einmündung	F::inw
 Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
 # 
 #: next_check_id: KOENIGSPLATZ-2024
-#: last_checked: 2024-07-10
+#: last_checked: 2024-09-22 (krickstadt)
 #: next_check: 2024-10-17
 #: valid: -20241212
 Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
@@ -105,8 +105,8 @@ Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
 #: note: zum Carl-Weder-Park kommt man mit einem kleinen Umweg via westlicher Ampel
 #: also_indoor: traffic (ex-H,G,T,B,W)
 #: last_checked: 2024-08-31 (traffic)
-# REMOVED --- #: check_frequency: 60d
-#: check_frequency: 30d
+#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2024-10-16
 #: valid: -20241016
 Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	X::inwork::alternating 11740,6338

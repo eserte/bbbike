@@ -261,7 +261,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: by: https://berliner-abendblatt.de/berlin-news/grundstein-fuer-museum-berlin-modern-im-februar-id239006
 #: by: https://berliner-abendblatt.de/berlin-news/grundsteinlegung-fuer-museum-berlin-modern-wird-gelegt-id244318
 #: by: https://www.preussischer-kulturbesitz.de/standorte/bauvorhaben/nationalgalerie-am-kulturforum/museum-des-20-jahrhunderts.html
-#: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html
+#: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
 #: by: srt
 #: XXX: temporäre Radspur
 #: osm_watch: way id="305483806" version="11"
@@ -972,7 +972,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-09-16
+#: last_checked: 2024-09-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1129,18 +1129,6 @@ asphaltiert mit einigen Unebenheiten	RW1; 1479,4853 1330,4867 922,4910 844,4916 
 	RW2; 922,4910 1330,4867 1479,4853
 	RW3;RW3 2027,4792 1884,4811 1747,4829 1479,4853
 	RW3; 2027,4792 2079,4769
-#: note: Mariendorfer Damm Richtung Süden
-#XXX zurzeit kein Radweg	RW;RW 9426,3797 9438,3745 9455,3671
-	RW3; 9455,3671 9462,3642
-Verbundsteinpflaster mit Unebenheiten	RW1; 9462,3642 9489,3525 9510,3446
-Verbundsteinpflaster mit Unebenheiten, für Radfahrer freigegebene Busspur gilt Mo-Fr 13-20 Uhr	RW1; 9510,3446 9621,3155 9720,2887 9801,2663 9934,2307 9954,2252 10024,2059 10067,1939 10127,1778 10172,1657 10226,1515 10239,1481 10276,1383 10329,1231
-# 
-Verbundsteinpflaster mit Unebenheiten und zahlreichen Wurzelhebungen, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr	RW1; 10427,968 10379,1097 10329,1231 10276,1383 10239,1481 10226,1515 10172,1657 10127,1778 10067,1939 10024,2059 9954,2252 9934,2307 9801,2663 9720,2887
-# REMOVED (Busspur-Gültigkeitsdauer wurde nicht geändert, dafür gibt's zusätzliche zeitlich befristete Parkverbote) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7168 (Ausweitung der Gültigkeit: Montag bis Freitag von 6-18 Uhr und Sonnabend von 9-16 Uhr) --- #: XXX ab wo wurde die Gültigkeit der Busspuren geändert? --- #: priority: #C
-Verbundsteinpflaster mit Unebenheiten und zahlreichen Wurzelhebungen, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr und 15-18 Uhr	RW1; 9720,2887 9621,3155
-Verbundsteinpflaster mit Unebenheiten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW1; 9621,3155 9510,3446 9489,3525 9462,3642
-Verbundsteinpflaster mit Unebenheiten	RW1; 9462,3642 9455,3671
-	RW2; 10329,1231 10379,1097 10427,968
 holpriges Verbundsteinpflaster	RW1; 10427,968 10485,807 10522,708 10534,674 10590,525 10617,452 10620,445 10638,403 10676,299 10713,197 10735,137 10753,83 10782,-24 10793,-161
 	RW1; 10620,445 10617,452 10590,525 10534,674 10522,708
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 10522,708 10485,807 10427,968
@@ -2180,7 +2168,7 @@ provisorische Busspur	RW5; 10550,12096 10512,12039
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 #: osm_watch: way id="81112790" version="25"
-#: last_checked: 2024-08-06
+#: last_checked: 2024-09-22 (webcam)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-08-30
 provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
@@ -3169,7 +3157,7 @@ Busspur ist immer gültig	RW5; 16248,12177 16223,11999
 	RW4; 16866,13532 16865,13423 16863,13138
 	RW4; 16863,13138 16865,13423
 	RW3;RW4 16863,13138 16865,13000 16860,12861
-	RW4?; 16831,12419 16820,12339
+	RW3; 16831,12419 16820,12339
 	RW6;RW6 12671,8077 12446,8032
 # REMOVED (nur das Stück bergauf) --- #: XXX Radspur wird grün markiert (evtl. auch das Teilstück bergauf) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php --- #: next_check: 2018-10-17
 # REMOVED --- #: XXX wird hier auch die Radspur grün markiert? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://twitter.com/ADFC_Berlin/status/1065526520599511045 --- #: priority: #D --- #: next_check: 2018-11-22
@@ -5641,7 +5629,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
 #: osm_watch: way id="176753739" version="23"
-#: last_checked: 2024-07-07 (mapillary)
+#: last_checked: 2024-08-04 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -7700,8 +7688,6 @@ Gehweg für Radfahrer frei	RW1; 21309,18626 21251,18508
 # REMOVED --- #: XXX wird dieser Abschnitt benutzungspflichtig werden? --- #: last_checked: 2016-07-24
 asphaltiert	RW1; 15541,16479 15437,16491
 	RW1; 16880,16064 16961,16042
-Busspur ist immer gültig	RW5; 9455,3671 9438,3745
-	RW4; 9438,3745 9426,3797
 # 
 # REMOVED --- #: XXX Grünbeschichtung in der Joachim-Friedrich-Str. in Ausführung --- zurzeit ist ein Teilstück zwischen Ku'damm und Damaschkestr. Richtung Norden markiert vvv --- #: by: https://www.infravelo.de/projekt/joachim-friedrich-strasse/ --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.850400.php (bis Ende Oktober 2019) --- #: by: https://api.fixmyberlin.de/api/projects/405 (noch "execution") --- #: by: https://twitter.com/GBinfraVelo/status/1271063151140880385 (leider unklar, ob der Kracauerplatz auch dazugehört) --- #: source_id: 2147345150 (bis 25. November 2019) --- #: priority: #D vvv --- #: last_checked: 2020-04-25 vvv
 Grünbeschichtung	RW3;RW4 3123,10504 3108,10548 3093,10594
@@ -8141,7 +8127,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2024-08-30 vvv
+#: last_checked: 2024-09-18 (Mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-09-30 vvv
@@ -8665,6 +8651,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1802569108237484269
 #: by: https://pbs.twimg.com/media/GQC9UyuXAAAccq5?format=jpg&name=large (Bauarbeiten im Bereich der Kreuzung Eisenacher Str./Kurfürstenstr., Radfahrer werden über den Gehweg geleitet, Richtung Norden über eine längere Strecke (Ende unbekannt), Überqueren der Kreuzung in O-W-Relation nur an der nördlichen Fußgängerampel möglich)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1484908.php (Anradeln Mariendorfer Damm)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1487446.php (keine Erwähnung des fehlenden Abschnitts)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
 #: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022) (inaktiv)
@@ -8683,16 +8670,17 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023) (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,31.08.2023,10:00 (bis 22.09.2023) (bis 18.09.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023) (inaktiv)
-#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024) (bis 09.09.2024) (inaktiv)
+#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024) (bis 09.09.2024) (inaktiv) (bis 01.11.2024, weitere Arbeiten im Anschluss)
 #: source_id: viz2021:13.384655,52.451843,04.03.2024,07:00 (bis 17.05.2024) (bis 07.06.2024) (bis 17.06.2024) (inaktiv)
 #: source_id: viz2021:13.385286,52.448073,17.06.2024,07:00 (bis 27.06.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: viz2021:13.385297,52.44832,17.06.2024,07:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: viz2021:13.385351,52.448083,27.06.2024,10:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
+#: source_id: viz2021:13.38458,52.45267,23.09.2024,17:00 (bis 01.11.2024)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2024-09-14 (mapillary) vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-12-31 vvv
+#: next_check: 2024-11-01 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 # REMOVED --- #: osm_watch: way id="111048866" version="19" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
@@ -8724,7 +8712,19 @@ Leitboys	RW4; 9310,4407 9333,4229 9346,4144 9375,4022
 #: note: Leitboys hören etwa 80m vor der Kreuzung auf (Bushaltestelle)
 Leitboys	RW4; 9375,4022 9426,3797
 	RW3; 9426,3797 9438,3745 9455,3671
+	RW3; 9455,3671 9462,3642
+Verbundsteinpflaster mit Unebenheiten	RW1; 9462,3642 9489,3525 9510,3446
+Verbundsteinpflaster mit Unebenheiten, für Radfahrer freigegebene Busspur gilt Mo-Fr 13-20 Uhr	RW1; 9510,3446 9621,3155 9720,2887 9801,2663 9934,2307 9954,2252 10024,2059 10067,1939 10127,1778 10172,1657 10226,1515 10239,1481 10276,1383 10329,1231
+	RW2; 10329,1231 10379,1097 10427,968
+# 
 #: note: Mariendorfer Damm Richtung Norden
+Verbundsteinpflaster mit Unebenheiten und zahlreichen Wurzelhebungen, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr	RW1; 10427,968 10379,1097 10329,1231 10276,1383 10239,1481 10226,1515 10172,1657 10127,1778 10067,1939 10024,2059 9954,2252 9934,2307 9801,2663 9720,2887
+# REMOVED (Busspur-Gültigkeitsdauer wurde nicht geändert, dafür gibt's zusätzliche zeitlich befristete Parkverbote) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7168 (Ausweitung der Gültigkeit: Montag bis Freitag von 6-18 Uhr und Sonnabend von 9-16 Uhr) --- #: XXX ab wo wurde die Gültigkeit der Busspuren geändert? --- #: priority: #C
+Verbundsteinpflaster mit Unebenheiten und zahlreichen Wurzelhebungen, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr und 15-18 Uhr	RW1; 9720,2887 9621,3155
+Verbundsteinpflaster mit Unebenheiten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW1; 9621,3155 9510,3446 9489,3525 9462,3642
+Verbundsteinpflaster mit Unebenheiten	RW1; 9462,3642 9455,3671
+Busspur ist immer gültig	RW5; 9455,3671 9438,3745
+	RW4; 9438,3745 9426,3797
 Leitboys	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407
 #: note: Leitboys fangen etwa 50m nach der Kreuzung an (Bushaltestelle)
 Leitboys	RW4; 9310,4407 9294,4536

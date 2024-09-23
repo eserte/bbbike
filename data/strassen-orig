@@ -1614,12 +1614,6 @@ Fischerinsel [Wohngebiet]	N 10578,11969 10657,12026 10683,11995 10713,12014
 (Fischerinsel - Grünstraßenbrücke)	NN 10474,11843 10515,11785
 Neue Roßstr.	NH 10672,11870 10687,11853 10722,11816 10815,11662
 Annenstr. (Mitte)	NH 10815,11662 10892,11555 11039,11425 11052,11414 11094,11377 11158,11324 11217,11288 11249,11268
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/schmidtstrasse_lageplan.pdf
-#: XXX Hier soll es eine Einbahnstraßenregelung Radfahrer frei geben; evtl. wird auch die Qualtität besser werden
-#: last_checked: 2024-04-12
-#: check_frequency: 180d
-#: next_check: 2024-12-31
 Annenstr. (Mitte) [Wohngebiet]	N 11192,11429 11259,11391 11217,11288
 #: note: keine Straßenschilder, Postadressen möglicherweise Heinrich-Heine-Str.
 (Wohngebiet)	N 11052,11414 11131,11579 11166,11664
@@ -19533,12 +19527,14 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3Ip0mPrtHdHfEEJK92UAk9fSljJVnFBwbl4AUfvB/KGefaPE/54-Anlagen/01/DS0765_VzK_IngeMeysel.pdf
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
-#: XXX Benennung nach Inge Meysel; ist diese Straße gemeint?
-#: XXX Laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243
-#: last_checked: 2024-09-03
-#: check_frequency: 90d
+#: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
+#: last_checked: 2024-09-03 vvv
+#: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 (nördliches Spreeufer)	NN 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer)	NN 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469 5356,12494 5372,12538
 (nördliches Spreeufer)	NN 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
