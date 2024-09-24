@@ -11155,7 +11155,8 @@ Goltzstr. (Lichtenrade)	N 10983,-2116 10763,-2276 10642,-2371 10563,-2432 10454,
 Rehagener Str.	N 10657,-2639 10648,-2547 10638,-2452 10642,-2371 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10765,-1860
 Klausdorfer Weg	N 10505,-2552 10648,-2547 10833,-2544 10989,-2543
 Rohrbachstr.	N 9658,-2640 9658,-2419 9650,-2135
-Wolziger Zeile	N 10382,-2598 10365,-2603 10307,-2633 10287,-2644
+# REMOVED (früher bis 1.7.2024 Bahnübergang) --- Wolziger Zeile	N 10382,-2598 10365,-2603 10307,-2633
+Wolziger Zeile	N 10307,-2633 10287,-2644
 Wolziger Zeile	N 10259,-2660 10287,-2644 10253,-2643 10085,-2643 9969,-2643 9872,-2642 9762,-2642 9658,-2640 9608,-2642
 Hohenzollernstr. (Lichtenrade)	N 9559,-2417 9658,-2419 9756,-2415 9864,-2411 9967,-2408 10069,-2405 10173,-2402
 Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2128 10465,-2129 10310,-2136 10300,-2135 10258,-2135 10228,-2136 10191,-2135
@@ -13782,7 +13783,7 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: XXX Gehweg wird vermutlich verlegt
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
 #: historical_note: früher als "(Eisnerstr. - S-Bhf Buckower Chaussee)" bezeichnet
-#: last_checked: 2024-07-03
+#: last_checked: 2024-09-21 (youtube)
 #: check_frequency: 180d
 (ehemaliger Weg zum S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9271,323
 # 
@@ -18694,7 +18695,7 @@ Joseph-von-Eichendorff-Gasse	N 8449,11277 8404,11290
 Rudolf-von-Gneist-Gasse	N 8278,11257 8354,11230
 Rudolf-von-Gneist-Gasse	N 8430,11211 8382,11224
 #: osm.highway: service
-(Eichhornstr. - Reichpietschufer)	N 8232,11414 8205,11401 8199,11152
+(Eichhornstr. - Reichpietschufer)	N 8232,11414 8205,11401 8215,11274 8199,11152
 #: osm.highway: service
 (Eichhornstr. - Reichpietschufer)	N 8199,11152 8102,11099
 (Eichhornstr. - Reichpietschufer)	NN 8289,11205 8234,11173 8199,11152
@@ -19528,7 +19529,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2024-09-03 vvv
+#: last_checked: 2024-09-24 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

@@ -723,8 +723,10 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 3761,12298 3612,12377 3
 Bushaltestelle	RW5; 3279,12533 3212,12526
 	RW1; 3212,12526 3177,12522 3033,12509 2795,12480 2744,12474 2715,12470
 enger Radweg, schmaler Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1; 2715,12470 2641,12458 2411,12428 2279,12412
-enger Radweg, kein Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1; 2279,12412 2411,12428
-enger Radweg, kein Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1; 2411,12428 2641,12458
+schmaler Radweg, Gehwegplatten	RW1; 2279,12412 2411,12428
+#: historical_note: früher (bis September 2024): enger Radweg, kein Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1;
+#: note: fängt nach der Bushaltestelle an
+provisorische Radspur mit Baken gesichert	RW3; 2411,12428 2641,12458
 enger Radweg, schmaler Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1; 2641,12458 2715,12470 2744,12474 2795,12480 3033,12509 3177,12522
 Verbundsteinpflaster	RW2; 3177,12522 3212,12526 3279,12533
 #: note: teils Busspur, teils Radspur
@@ -2144,7 +2146,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2024-09-19 vvv
+#: last_checked: 2024-09-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -7837,7 +7839,12 @@ asphaltiert	RW1;RW9 18738,16957 19108,17347 19183,17444 19197,17464 19529,17902 
 	RW6;RW6 11086,15772 11123,15851 11150,15908
 	RW6;RW6 11123,15851 11191,15810 11158,15739
 wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
-asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
+#: next_check_id: REVALER-2024
+#: by: https://hamburgteam.de/presse/baustart-hainwerk/ (Fertigstellung 2026)
+#: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer
+#: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
+#: last_checked: 2024-09-22
+asphaltierter Radweg ist größtenteils nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
 	RW3;RW3 11555,20051 11628,20092 11690,20127 11799,20224 11959,20365 12008,20368
 	RW6;RW6 7930,23227 8032,23000 8118,22809 8130,22772
@@ -8652,6 +8659,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by: https://pbs.twimg.com/media/GQC9UyuXAAAccq5?format=jpg&name=large (Bauarbeiten im Bereich der Kreuzung Eisenacher Str./Kurfürstenstr., Radfahrer werden über den Gehweg geleitet, Richtung Norden über eine längere Strecke (Ende unbekannt), Überqueren der Kreuzung in O-W-Relation nur an der nördlichen Fußgängerampel möglich)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1484908.php (Anradeln Mariendorfer Damm)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1487446.php (keine Erwähnung des fehlenden Abschnitts)
+#: by: https://www.berliner-woche.de/mariendorf/c-verkehr/radweg-jetzt-sicherer_a425316
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
 #: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022) (inaktiv)

@@ -28,7 +28,7 @@
 # REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13700,10676 13779,10642 13850,10612 13865,10606 13919,10583
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: last_checked: 2024-03-26 vvv
+#: last_checked: 2024-09-21 (youtube) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-12-31 vvv
 (Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9200,562
@@ -471,8 +471,11 @@ Kietzer Weg: schlechtes Kopfsteinpflaster	Q3+ 15277,11684 15162,11458
 Revaler Str.: Asphalt	Q0 14442,11101 14513,11075
 # REMOVED (nicht mehr unterscheidbar) --- Revaler Str.: Kopfsteinpflaster, einzelne Stellen mit unebenen Asphalt	Q2; 14286,11186 14357,11148 14442,11101
 Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,11229 14134,11272
+#: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
-Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
+# XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
+#: last_checked: 2024-09-24
+Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
 Revaler Str.: Asphalt/Kopfsteinpflaster oder Verbundsteinpflaster	Q1; 13473,11456 13565,11492 13588,11490
 Prenzlauer Berg: Asphalt	Q0 11706,13635 11545,13690 11282,13661 11251,13667
@@ -2425,6 +2428,7 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 #: by: https://mein.berlin.de/projekte/elbestrasse/
 #: by: https://www.kms-sonne.de/projekte/elbestrasse/ (Baubeginn voraussichtlich 2025/2026)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/online-beteiligung-zur-elbestrasse-laeuft-bis-zum-27-november_a399343
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/elbestrasse/
 #: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
 #: last_checked: 2024-08-17
 #: check_frequency: 270d
@@ -13569,6 +13573,8 @@ Alte Potsdamer Str.: Betonpflaster	Q0- 8280,11296 8318,11324 8375,11368 8389,113
 # 
 #: by: https://www.infravelo.de/projekt/ollenhauerstrasse/ (1. Quartal 2025 - 4. Quartal 2028)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12437
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1487931.php (Informationsveranstaltung "Neubau Ollenhauerstraße")
+#: by: https://mein.berlin.de/vorhaben/2023-00712/ (Neugestaltung zwischen Großkopfstraße und Reinickes Hof geplant, bauliche Umsetzung: 2027-2032)
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: next_check: 2028-12-31 vvv
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5243,18162 5301,18447 5324,18560 5345,18675
@@ -29612,7 +29618,7 @@ Am Festungsgraben: Kopfsteinpflaster	Q2 9846,12516 9761,12509
 #: corrected_by: srt (Kopfsteinpflaster -> wassergebundene Decke)
 (Dorotheenstr. - Unter den Linden): wassergebundene Decke	Q1 9747,12584 9761,12509
 (Dorotheenstr. - Unter den Linden): Mosaikpflaster	Q1 9761,12509 9771,12400
-(Eichhornstr. - Reichpietschufer): Kopfsteinpflaster, Gehweg OK	Q2 8232,11414 8205,11401 8199,11152
+(Eichhornstr. - Reichpietschufer): Kopfsteinpflaster, Gehweg OK	Q2 8232,11414 8205,11401 8215,11274 8199,11152
 #: corrected_by: srt (Schotterweg -> ...)
 Kuppenheimerstr.: wassergebundene Decke	Q1 5808,8124 5801,8031
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7135,11171 7115,11220

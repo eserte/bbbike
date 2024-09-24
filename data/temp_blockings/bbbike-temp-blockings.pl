@@ -21618,6 +21618,7 @@ EOF
 #: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023) (inaktiv)
 #: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023) (inaktiv)
 #: source_id: viz2021:13.375855,52.516152,23.09.2024,06:00 (bis 25.09.2024)
+#: source_id: viz2021:13.371607,52.515899,25.09.2024,06:00 (bis 01.10.2024)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -30850,7 +30851,7 @@ EOF
        data  => <<EOF,
 #: by: Tsp 2019-09-10
 #: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/1562-schienenersatzverkehr-auch-mit-schnellbussen (nicht für Fahrräder)
-	2::inwork 10259,-2660 10287,-2644 10307,-2633 10365,-2603 10382,-2598
+# REMOVED (Teilstück existiert nicht mehr) ---	2::inwork 10259,-2660 10287,-2644 10307,-2633 10365,-2603 10382,-2598
 EOF
      },
      { from  => $isodate2epoch->("2019-09-23 12:00:00"), # 1568498400, # 2019-09-15 00:00
@@ -31534,9 +31535,9 @@ EOF
        until => $isodate2epoch->("2020-05-07 17:00:00"), # 1588258800, # 2020-04-30 17:00
        text  => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 07.05.2020',
        type  => 'handicap',
-       source_id => '2147345675',
        data  => <<EOF,
-	q3::inwork 10365,-2603 10307,-2633 10287,-2644 10259,-2660
+#: source_id: 2147345675 (inaktiv)
+# REMOVED (Teilstück existiert nicht mehr) ---	q3::inwork 10365,-2603 10307,-2633 10287,-2644 10259,-2660
 EOF
      },
      { from  => undef, # 
@@ -34945,7 +34946,7 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="20"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-07-03
+#: last_checked: 2024-09-21 (youtube)
 #: check_frequency: 120d
 	2::inwork 9699,-600 9562,-619
 EOF
@@ -41571,7 +41572,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-09-21 vvv
+#: last_checked: 2024-09-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -43840,7 +43841,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-09-20 vvv
+#: last_checked: 2024-09-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -43924,22 +43925,22 @@ EOF
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde)
-#: last_checked: 2024-09-19
+#: last_checked: 2024-09-24
 #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 EOF
      },
      { from  => 1719698400, # 2024-06-30 00:00
-       until => undef, # XXX
+       until => 1727117268, # -> dauerhaft entfernt # undef, # XXX
        text  => 'Wolziger Zeile: Sperrung des Bahnübergangs ab 1.7.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLZIGERZEILE-2024
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/unterfuehrung-am-s-bahnhof-lichtenrade-ist-fertig_a419600
-#: osm_watch: note 4283578 4
-#: note: Schranke existiert noch, man kann als Radfahrer/Fußgänger noch halb-legal durch (Stand 2024-07-03)
-#: last_checked: 2024-07-03
-	2::inwork 10382,-2598 10365,-2603 10307,-2633
+#: osm_watch[closed]: note 4283578 4
+#: note: Schranke existiert noch, man kann als Radfahrer/Fußgänger noch halb-legal durch (Stand 2024-07-03) (mittlerweile komplett zu)
+# REMOVED --- #: last_checked: 2024-09-21 (youtube)
+#	2::inwork 10382,-2598 10365,-2603 10307,-2633
 EOF
      },
      { from  => 1719859975, # 2024-07-01 20:52

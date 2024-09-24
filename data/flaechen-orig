@@ -1684,6 +1684,14 @@ Hausvogteiplatz	F:Square 9863,11938 9878,11857 9925,11947 9863,11938
 Leopoldplatz	F:Square 7251,15710 7198,15656 7277,15586 7329,15638 7251,15710
 #: note: überwiegend frei befahrbar, gleiche Pflasterung wie die angrenzende Straße
 Stadtplatz Gut Hellersdorf	F:Square 23362,15021 23314,15008 23305,15054 23350,15071 23362,15021
+#: note: Zugang nur über Treppen
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_35_2547_2610_online.pdf (wirksam am 1. Oktober 2024)
+#: by: https://www.morgenpost.de/bezirke/mitte/article232563779/Ein-Platz-in-Gedenken-an-das-Ehepaar-Arnhold.html (vermutlich die "Piazetta")
+#: by: https://www.tagesspiegel.de/kultur/erinnerung-ans-verlorene-tiergartenviertel-4258168.html
+#: osm_watch: note 4449548 1
+#: XXX neuer Name: Johanna-und-Eduard-Arnhold-Platz (auch in plaetze-orig eintragen; fehlt in Berlin.coords.data)
+#: next_check: 2024-10-01
+(Piazetta)	F:Square 7842,11414 7900,11395 7921,11369 7933,11407 7952,11458 7927,11467 7925,11460 7912,11418 7892,11426 7907,11466 7925,11460 7927,11467 7863,11484 7861,11479 7842,11414
 #: ignore ^^^
 #############################################################################
 # in Potsdam
