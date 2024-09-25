@@ -333,7 +333,7 @@ EOF
 }
 
 sub teaser_maintenance {
-    my $maintenance_end = 1622530800; # 2021-06-01 09:00:00
+    my $maintenance_end = 1727935200; # 2024-10-03 08:00:00
     if (time < $maintenance_end
 	&& time > $maintenance_end-10*86400 # 10 Tage vorher
 	&& $ENV{SERVER_NAME} =~ m{(bbbike\.de|bbbike\.hosteurope)$}
@@ -341,8 +341,8 @@ sub teaser_maintenance {
 	<<EOF;
 <div class="teaser">
 <b>Wartungsarbeiten</b><br>
-Von 31.05.2021 22:00 Uhr bis 01.06.2021 09:00 Uhr wird $ENV{SERVER_NAME}
-wegen Wartungsarbeiten kurzzeitig nicht verfügbar sein.
+Von 02. Oktober 2024 08:00 Uhr bis 03. Oktober 2024 08:00 Uhr wird $ENV{SERVER_NAME}
+wegen Wartungsarbeiten für einige Stunden nicht verfügbar sein.
 </div>
 EOF
     } else {
