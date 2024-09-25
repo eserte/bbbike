@@ -5088,10 +5088,24 @@ EOF
 	}
 
 	my($bbbikeleaflet_url, $bbbikeleaflet_loc_url);
-	if (!$printmode && $sess && $apache_session_module eq 'Apache::Session::Counted') {
+	if (!$printmode) {
 	    my $href = _bbbikeleaflet_url();
-	    $bbbikeleaflet_url     = $href . '?' . CGI->new({coordssession => $sess->{_session_id}})->query_string;
-	    $bbbikeleaflet_loc_url = $href . '?' . CGI->new({coordssession => $sess->{_session_id}, loc => 1})->query_string;
+	    if ($sess && $apache_session_module eq 'Apache::Session::Counted') {
+		$bbbikeleaflet_url     = $href . '?' . CGI->new({coordssession => $sess->{_session_id}})->query_string;
+		$bbbikeleaflet_loc_url = $href . '?' . CGI->new({coordssession => $sess->{_session_id}, loc => 1})->query_string;
+	    } else {
+		eval {
+		    require Route::GPLE;
+		    require Route::GPLEU;
+		    my $gpleu = Route::GPLEU::gple_to_gpleu(Route::GPLE::as_gple($r));
+		    $bbbikeleaflet_url     = $href . '?' . CGI->new({gpleu => $gpleu})->query_string;
+		    $bbbikeleaflet_loc_url = $href . '?' . CGI->new({gpleu => $gpleu, loc => 1})->query_string;
+		    for ($bbbikeleaflet_url, $bbbikeleaflet_loc_url) {
+			undef $_ if length($_) > 7500; # possible browser/server URL limits
+		    }
+		};
+		warn $@ if $@;
+	    }
 	}
 	my $maybe_use_coordssession_query = sub {
 	    my($q) = @_;
