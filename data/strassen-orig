@@ -234,8 +234,8 @@ Reichstagufer	NN 8766,12541 8667,12555 8596,12576 8554,12593
 (Washingtonplatz - Elisabeth-Abegg-Str.)	NN 7926,12865 7907,12817
 (nördliches Spreeufer - Elisabeth-Abegg-Str.)	NN 7945,12878 7907,12817 7867,12765 7819,12729
 Magnus-Hirschfeld-Ufer	NN 7945,12878 7908,12804 7856,12746 7772,12694 7521,12581 7447,12520 7314,12419 7217,12383 7183,12372 7122,12384 7051,12426
-(Spreeufer - Otto-von-Bismarck-Allee)	NN 8473,12753 8445,12755 8415,12749
-Marie-Elisabeth-Lüders-Steg	NN 8415,12749 8593,12742 8589,12772
+(Spreeufer - Otto-von-Bismarck-Allee)	NN 8473,12753 8445,12755 8433,12753
+Marie-Elisabeth-Lüders-Steg	NN 8433,12753 8442,12741 8593,12742 8589,12772
 Schiffbauerdamm	N 9279,12953 9239,12923 9193,12875 9102,12790 9056,12743 9025,12727 8870,12647 8752,12647
 Schiffbauerdamm	N 8544,12772 8514,12877 8503,12895
 Adele-Schreiber-Krieger-Str.	N 8735,12780 8589,12772 8544,12772
@@ -4800,11 +4800,13 @@ Neue Schönholzer Str.	N 10179,17772 10141,18030 10089,18180
 Schützenstr. (Niederschönhausen, Reinickendorf)	N 8891,18545 8839,18504 8789,18476
 Am Bürgerpark	N 8839,18504 9229,18178 9310,18108 9343,18080 9365,18062 9410,18021
 (Am Bürgerpark - Wilhelm-Kuhr-Str.)	N 9365,18062 9366,17997
-Schulzestr.	N 9618,17693 9343,17985
+Schulzestr.	N 9618,17693 9494,17824 9343,17985
+(Schulzestr. - S-Bhf. Wollankstr.)	NN 9494,17824 9461,17795
+(Personnentunnel S-Bhf. Wollankstr.)	NN 9434,17823 9383,17757
 Wilhelm-Kuhr-Str.	N 9160,17656 9193,17763 9236,17907
 Wilhelm-Kuhr-Str.	NN 9236,17907 9303,17965 9343,17985
 Wilhelm-Kuhr-Str.	N 9343,17985 9366,17997 9410,18021 9460,18053 9590,18082 9803,18131 9831,18181 9893,18179 10027,18165
-(Wilhelm-Kuhr-Str. - Wollankstr.)	NN 9303,17965 9314,17943 9341,17917 9348,17885 9363,17868 9396,17863 9586,17665
+(Wilhelm-Kuhr-Str. - Wollankstr.)	NN 9303,17965 9314,17943 9341,17917 9348,17885 9363,17868 9396,17863 9434,17823 9461,17795 9586,17665
 Killisch-von-Horn-Weg	N 9590,18082 9694,17960 9695,17945 9719,17926
 Pichelswerderstr. (Pankow)	N 9787,17880 9719,17926
 Hermann-Hesse-Str.	H 8891,18545 9214,18666 9279,18724 9458,18859 9487,18887 9681,19179 9811,19302 9859,19283
@@ -14362,7 +14364,7 @@ Leykestr.	N 12335,7770 12075,7696
 Kronprinzenbrücke	NH 8503,12895 8424,12853
 Konrad-Adenauer-Str.	NH 8424,12853 8309,12758
 Konrad-Adenauer-Str.	N 8309,12758 8306,12609
-Otto-von-Bismarck-Allee	N 8415,12749 8309,12758
+Otto-von-Bismarck-Allee	N 8433,12753 8309,12758
 Otto-von-Bismarck-Allee	NH 8309,12758 8252,12757 8206,12757
 Otto-von-Bismarck-Allee	N 8206,12757 8120,12756
 # REMOVED --- #: note: laut osm "Willy-Brandt-Str." --- aber vor Ort existieren keine Straßenschilder? vvv --- #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/ii-200ib/index.shtml (dieser Abschnitt der Straße bleibt erhalten) --- #: note: "Umfahrung Kanzleramt"
@@ -17699,7 +17701,8 @@ Am Klarpfuhl	N 18085,137 18249,-114 18232,-228 18195,-277 18205,-297
 (Am Klarpfuhl - Mauerweg)	NN 18205,-297 18218,-325
 Schrimmer Weg	N 17949,180 17879,127
 Schrimmer Weg	NN 17879,127 17818,93
-Cotheniusstr.	N 13228,13615 13430,13733 13519,13785
+Cotheniusstr.	N 13228,13615 13430,13733
+Cotheniusstr.	NN 13430,13733 13519,13785
 Boothstr.	N 4967,3231 5116,3146 5253,3066 5493,2931
 #: XXX_osm bei osm falsch geschrieben (str statt weg)
 Hochbergweg	N 4902,2058 4839,2195 4813,2256
@@ -19074,7 +19077,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9153,12928
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
 #: osm_watch: way id="327518240" version="10"
-#: last_checked: 2024-08-13
+#: last_checked: 2024-09-25
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9153,12928
 Karlplatz	N 8711,12986 8676,12976

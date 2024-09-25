@@ -12377,7 +12377,7 @@ Platz des 18. März	2::temp 8538,12245 8592,12252
 	2::temp 8344,12221 8391,12389 8400,12417
 	2::temp 8546,12279 8391,12389 8354,12416
 	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
-	2::temp 8309,12758 8415,12749 8593,12742
+	2::temp 8309,12758 8433,12753 8442,12741 8593,12742
 # REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8735,12780 8589,12772 8544,12772
 # REMOVED (westl. John-Foster-Dulles-Allee) ---	2::temp 7514,12387 7627,12380 7821,12367 7875,12363
 # REMOVED (Schiffbauerdamm) ---	2::temp 8514,12877 8544,12772
@@ -21617,8 +21617,9 @@ EOF
 #: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023) (inaktiv)
 #: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023) (inaktiv)
-#: source_id: viz2021:13.375855,52.516152,23.09.2024,06:00 (bis 25.09.2024)
+#: source_id: viz2021:13.375855,52.516152,23.09.2024,06:00 (bis 25.09.2024) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,25.09.2024,06:00 (bis 01.10.2024)
+#: source_id: viz2021:13.36973,52.517661,26.09.2024,18:00 (bis 30.09.2024)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -22177,16 +22178,19 @@ EOF
      { from  => 1719810000, # 2024-07-01 07:00, # undef, # 
        until => 1730822400, # 2024-11-05 17:00, # 1371066874, # undef, # XXX
 #       text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
-       text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Triftstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis 05.11.2024 17:00',
+       text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis 05.11.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
 # REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
-#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, bis 05.11.2024)
+#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024)
 #: source_id: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024)
 #: source_id: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024)
 # REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
-	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109 7085,15226
+	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
+# REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
+Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
+Kiautschoustr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 7007,14911 7182,14986
 EOF
      },
      { from  => $isodate2epoch->("2024-05-02 00:00:00"), # 1 Tag Vorlauf
@@ -22454,7 +22458,7 @@ EOF
 	2::temp 7745,12603 7776,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
 	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
 	2::temp 8304,12938 8309,12758 8306,12609
-	2::temp 8309,12758 8415,12749 8593,12742 8589,12772
+	2::temp 8309,12758 8433,12753 8442,12741 8593,12742 8589,12772
 	2::temp 8424,12853 8370,12902 8304,12938 8235,12945 8168,12945 8116,12938 8050,12893 8030,12857 8021,12832
 	2::temp 7946,12932 7930,12912 7924,12872 7926,12865 7931,12869 7945,12878
 	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
@@ -26846,7 +26850,7 @@ EOF
 	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279
 	2::temp 8306,12609 8309,12758
-	2::temp 8415,12749 8309,12758 8252,12757 8206,12757
+	2::temp 8433,12753 8309,12758 8252,12757 8206,12757
 EOF
      },
      { from  => 1488649671, # 2017-03-04 18:47
@@ -27112,7 +27116,7 @@ EOF
 	2::temp 8030,12857 8021,12832 7930,12912
 	2::temp 8207,12606 8122,12603 7945,12592 7875,12363
 	2::temp 8369,12609 8373,12416
-	2::temp 7945,12592 7851,12590 7776,12586 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8445,12755 8415,12749 8309,12758 8304,12938
+	2::temp 7945,12592 7851,12590 7776,12586 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8445,12755 8433,12753 8309,12758 8304,12938
 EOF
      },
      { from  => $isodate2epoch->("2024-06-10 00:00:00"), # 1700163475, # $isodate2epoch->("2023-03-15 10:00:00"), # 1499148000, # 2017-07-04 08:00
@@ -28664,6 +28668,7 @@ EOF
 #: by: https://www.rbb24.de/studiofrankfurt/beitraege/2023/06/zeuthen-baustelle-fussgaenger-tunnel-bahn.html (Eröffnung November 2023?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-fussgaengertunnel-oeffnet-im-zweiten-quartal-2024-FRMUQYTD6VF6RCLYMMHJQTQAYA.html (II. Quartal 2024?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Fertigstellung der Fußgängerunterführung: November 2024)
+#: by: https://bauprojekte.deutschebahn.com/p/eichwalde-zeuthen-bf?date=20240925 ("Die Eröffnung der PU ist für November 2024 vorgesehen.")
 #: osm_watch: way id="36936021" version="10" brb
 #: also_indoor: search Bahnhof Zeuthen
 #: last_checked: 2024-07-17
@@ -29012,7 +29017,7 @@ Reichstagufer	2::temp 8667,12555 8596,12576 8554,12593
 (Panoramaweg Spreebogenpark)	2::temp 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Moltkebrücke - südliches Spreeufer)	2::temp 8030,12857 8025,12859 8006,12853
 (Kronprinzenbrücke - südliches Spreeufer)	2::temp 8427,12871 8428,12859 8424,12853
-(Spreeufer - Otto-von-Bismarck-Allee)	2::temp 8473,12753 8445,12755 8415,12749
+(Spreeufer - Otto-von-Bismarck-Allee)	2::temp 8473,12753 8445,12755 8433,12753
 Schiffbauerdamm	2::temp 8514,12877 8503,12895
 Unterbaumstr.	2::temp 8488,12920 8502,12935
 Wilhelmstr. (Mitte, Kreuzberg)	2::temp 8861,12125 8804,12280
@@ -29046,7 +29051,7 @@ Paul-Löbe-Allee	2::temp 8122,12603 7945,12592 7851,12590
 (Paul-Löbe-Allee - südliches Spreeufer)	2::temp 7851,12590 7776,12586 7745,12603
 Kronprinzenbrücke	2::temp 8503,12895 8424,12853
 Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758 8306,12609
-Otto-von-Bismarck-Allee	2::temp 8415,12749 8309,12758 8252,12757 8206,12757 8120,12756
+Otto-von-Bismarck-Allee	2::temp 8433,12753 8309,12758 8252,12757 8206,12757 8120,12756
 (Umfahrung Kanzleramt)	2::temp 8207,12606 8206,12734 8206,12757
 # REMOVED --- (Umfahrung an der Schweizer Botschaft)	2::temp 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 Rahel-Hirsch-Str.	2::temp 7930,12912 7946,12932
@@ -36392,16 +36397,20 @@ Eintrachtstr.	q4::inwork; 10710,18393 10650,18544
 EOF
      },
      { from  => 1656194400, # 2022-06-26 00:00
-       until => $isodate2epoch->("2025-06-01 18:00:00"), # 1735599599, # 2024-12-30 23:59
-       text  => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich 2025, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str.',
+       until => $isodate2epoch->("2025-10-01 18:00:00"), # 1735599599, # 2024-12-30 23:59
+       text  => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich Herbst 2025, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str.',
        type  => 'gesperrt',
        source_id => 'https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf',
        data  => <<EOF,
 #: next_check_id: KWEISENBAHNBRUECKE-2022
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
+#: by[nocache]: https://archive.is/nyxPx
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
+#: next_check: 2024-12-31
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
-Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
+#: note: eigentlich 1s:q3
+Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
 EOF
      },
      { from  => 1656194400, # 2022-06-26 00:00
@@ -36515,7 +36524,7 @@ EOF
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2024-06-13 vvv
+#: last_checked: 2024-09-25 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-08-16 vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
@@ -37036,11 +37045,12 @@ EOF
 EOF
      },
      { from  => 1659852000, # 2022-08-07 08:00
-       until => 1732719600, # 2024-11-27 16:00
-       text  => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung vom 08.08.2022 - 27.11.2024',
+       until => $isodate2epoch->("2024-12-20 18:00:00"), # 1732719600, # 2024-11-27 16:00
+       text  => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung bis 20.12.2024',
        type  => 'gesperrt',
-       source_id => '226502047',
        data  => <<EOF,
+#: source_id: 226502047 (bis 27.11.2024)
+#: by: https://bauprojekte.deutschebahn.com/p/hennigsdorf-marwitzer-strasse-eue?date=20240925 (Sperrung auch für Fußgänger + Radverkehr bis 20.12.2024, weitere Sperrung 2025)
 #: note: auch für Fußgänger gesperrt
 	2::inwork -3475,26523 -3556,26560
 EOF
@@ -37570,10 +37580,10 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 EOF
      },
      { from  => $isodate2epoch->("2024-06-17 00:00:00"), # 1665385200, # 2022-10-10 09:00
-       until => $isodate2epoch->("2024-09-30 17:00:00"), # $isodate2epoch->("2023-08-10 17:00:00"), # 1667664000, # 2022-11-05 17:00
+       until => $isodate2epoch->("2024-10-11 17:00:00"), # $isodate2epoch->("2023-08-10 17:00:00"), # 1667664000, # 2022-11-05 17:00
 #      text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 10.08.2023 17:00',
 #       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 30.09.2024',
-       text  => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 30.09.2024',
+       text  => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 11.10.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
@@ -37584,7 +37594,7 @@ EOF
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024) (bis 02.10.2024) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
-#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024)
+#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024) (bis 11.10.2024)
 # REMOVED ---#: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 # REMOVED ---	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
@@ -38304,9 +38314,10 @@ EOF
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: Halteverbotsschilder bis Ende September 2024
-#: last_checked: 2024-08-30
-#: check_frequency: 90d
-#: next_check: 2024-09-30
+#: last_checked: 2024-09-25
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
 EOF
      },
@@ -38322,9 +38333,9 @@ EOF
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-08-21
+#: last_checked: 2024-09-25
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2024-09-30
+# REMOVED --- #: next_check: 2024-09-30
 	q3::inwork 13263,15930 13140,16000
 EOF
      },
@@ -39646,8 +39657,8 @@ EOF
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
-#: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023) ist das Schild weg
-#: last_checked: 2024-09-21
+#: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
+#: last_checked: 2024-09-25
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -40413,7 +40424,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (B,ex-G[unvollständig],ex-W[unvollständig],T)
 #: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2024; nun bis 30.08.2024; mittlerweile gemischte Halteverbote bis 30.08.2024 (schon vorbei) und Ende des Jahres
-#: last_checked: 2024-09-07 vvv
+#: last_checked: 2024-09-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
@@ -41081,8 +41092,8 @@ EOF
      },
      { from  => 1669791600, # 2022-11-30 08:00
        until => $isodate2epoch->("2024-11-01 18:00:00"), # 1711897200, # 2024-03-31 17:00
-       #text  => 'Koloniestr.: Bauarbeiten an der Osloer Str., etwa 70m der Fahrbahn sind gesperrt, vom 01.12.2022 08:00 bis 31.03.2024 17:00',
-       #text  => 'Koloniestr.: Bauarbeiten an der Osloer Str., Radwegführung auf dem Gehweg, voraussichtlich bis Ende November 2024',
+#      text  => 'Koloniestr.: Bauarbeiten an der Osloer Str., etwa 70m der Fahrbahn sind gesperrt, vom 01.12.2022 08:00 bis 31.03.2024 17:00',
+#      text  => 'Koloniestr.: Bauarbeiten an der Osloer Str., Radwegführung auf dem Gehweg, voraussichtlich bis Ende November 2024',
        text  => 'Koloniestr.: Bauarbeiten an der Schwedenstr., Abschnitt der Fahrbahn ist gesperrt, Radwegführung auf dem Gehweg, voraussichtlich bis Anfang November 2024',
        type  => 'handicap',
        data  => <<EOF,
@@ -41091,7 +41102,7 @@ EOF
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m; mittlerweile (Juni 2024) ist der gesamte Abschnitt betroffen; mittlerweile (2024-06) ist die Baustelle nach Süden gewandert und nicht sehr lang (q3 -> q2); mittlerweile: Richtung Norden wird man für ca. 180m auf dem Hochbord geführt
 #: note: bei rbb bis 30.11.2024; bei Bing bis 8.4.2024, mittlerweile auch bis November 2024
 #: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
-#: last_checked: 2024-07-19 (mapillary)
+#: last_checked: 2024-09-25
 #: next_check: 2024-11-01
 	q2::inwork 8486,16425 8467,16718
 EOF
@@ -41922,7 +41933,7 @@ EOF
 (Panoramaweg Spreebogenpark)	2::temp 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 (Moltkebrücke - südliches Spreeufer)	2::temp 8030,12857 8025,12859 8006,12853
 (Kronprinzenbrücke - südliches Spreeufer)	2::temp 8427,12871 8428,12859 8424,12853
-(Spreeufer - Otto-von-Bismarck-Allee)	2::temp 8473,12753 8445,12755 8415,12749
+(Spreeufer - Otto-von-Bismarck-Allee)	2::temp 8473,12753 8445,12755 8433,12753
 Große Querallee	2::temp 7945,12592 7875,12363
 Zeltenplatz	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
 Simsonweg	2::temp 8354,12416 8391,12389
@@ -41942,7 +41953,7 @@ Paul-Löbe-Allee	2::temp 8122,12603 7945,12592 7851,12590
 (Paul-Löbe-Allee - südliches Spreeufer)	2::temp 7851,12590 7776,12586 7745,12603
 Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758
 Konrad-Adenauer-Str.	2::temp 8309,12758 8306,12609
-Otto-von-Bismarck-Allee	2::temp 8415,12749 8309,12758
+Otto-von-Bismarck-Allee	2::temp 8433,12753 8309,12758
 Otto-von-Bismarck-Allee	2::temp 8309,12758 8252,12757 8206,12757
 Otto-von-Bismarck-Allee	2::temp 8206,12757 8120,12756
 Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
@@ -42397,14 +42408,15 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_kremmener_bahn/Ersatzneubau_EUe_Wollankstrasse/20240119/
 #: by: https://www.bahninfo-forum.de/read.php?9,681075,792061#msg-792061
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_10_0549_0586_online.pdf (Planfeststellungsbeschluss zur Abstellanlage Schönholz)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: last_checked: 2024-09-19 (mapillary)
-#: check_frequency: 45d
-	2::inwork 9586,17665 9396,17863
-# REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
+#: check_frequency: 60d
+	2::inwork 9586,17665 9461,17795
+# REMOVED (nur der südliche Abschnitt ist laut osm+mapillary gesperrt) ---	2::inwork 9461,17795 9434,17823 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 EOF
      },
      { from  => undef, # 
@@ -42751,7 +42763,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 247200038 (bis 05.04.2024) (inaktiv)
-	2::inwork 13095,-20435 12154,-20220
+	2::inwork 13095,-20435 12779,-20361 12779,-20362 12154,-20220
 EOF
      },
      { from  => 1711234800, # 2024-03-24 00:00
@@ -42934,11 +42946,11 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-09-21 (mapillary) vvv
+#: last_checked: 2024-09-25 (osm) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="23"
+#: osm_watch: way id="120633718" version="24"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -44280,8 +44292,8 @@ EOF
        text  => 'Heubuder Brücke: wegen Bauschäden gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="27457006" version="16"
-#: last_checked: 2024-09-09 (osm)
+#: osm_watch: way id="27457006" version="17"
+#: last_checked: 2024-09-25 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 EOF
@@ -44436,11 +44448,11 @@ EOF
 EOF
      },
      { from  => 1722751200, # 2024-08-04 08:00
-       until => $isodate2epoch->("2024-09-30 16:00:00"), # 1725026400, # 2024-08-30 16:00
+       until => 1727298172, # $isodate2epoch->("2024-09-30 16:00:00"), # 1725026400, # 2024-08-30 16:00
        text  => 'Glambeck: Sperrung einer Brücke im Zuge der L239, vom 05.08.2024 08:00 Uhr bis 30.09.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/24/094 (bis 30.08.2024) (bis 30.09.2024)
+#: source_id: LS/221-E/24/094 (bis 30.08.2024) (bis 30.09.2024) (inaktiv)
 	2::inwork 37481,69171 37365,69000
 EOF
      },
@@ -44661,7 +44673,7 @@ EOF
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240901 ("schrittweise", Bürgerfest findet am 06.+07.09.2024 statt)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831929069308670071
 	2::temp 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8540,12420
-	2::temp 8415,12749 8309,12758 8306,12609 8207,12606
+	2::temp 8433,12753 8309,12758 8306,12609 8207,12606
 	2::temp 8766,12541 8667,12555 8596,12576
 Uferweg am Paul-Löbe-Haus	2::temp 8473,12753 8495,12651 8596,12576
 EOF
@@ -44717,7 +44729,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 EOF
      },
      { from  => 1726351200, # 2024-09-15 00:00
-       until => 1727474399, # 2024-09-27 23:59
+       until => 1727298209, # 1727474399, # 2024-09-27 23:59
        text  => 'Landsberger Str.: Fahrbahnsanierung, Sperrung, vom 16. September 2024 bis 27. September 2024',
        type  => 'handicap',
        data  => <<EOF,
@@ -44725,7 +44737,7 @@ EOF
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/landsberger-strasse-gesperrt_a425442
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1835665267411554359 (auch Radfahrer)
 #: by: https://pbs.twimg.com/media/GXmXyIyXsAA0usE?format=jpg&name=medium
-#: source_id: viz2021:13.62177,52.507345,16.09.2024,07:00 (bis 27.09.2024)
+#: source_id: viz2021:13.62177,52.507345,16.09.2024,07:00 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.62064,52.50432,16.09.2024,15:50 (bis 27.09.2024) (inaktiv)
 	q4::inwork 25239,11657 25199,11531
 EOF
@@ -44790,6 +44802,42 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20240922 (hier nur am 21.09.2024 bis 19 Uhr, aber es war auch am darauffolgenden Sonntag gesperrt)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/GR_berlin-lichtenberg_eue_umleitung_202409ne.pdf
 	2::inwork 15763,10963 15805,10949
+EOF
+     },
+     { from  => 1732489200, # 2024-11-25 00:00
+       until => 1735232400, # 2024-12-26 18:00
+       text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung voraussichtlich vom 26.11.2024 bis 26.12.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
+#: by[nocache]: https://archive.is/pZmLF
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20240925 (26.11.2024 - 26.12.2024, weitere Vollsperrungen z.B. im März 2025)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_einschraenkungen_strassenverkehr_20240924ne.pdf
+#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024)
+#: osm_watch: way id="23984383" version="30"
+#: next_check: 2024-11-25
+	2::inwork 9544,17629 9586,17665
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schwedter Steg - Bärbel-Bohley-Ring: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: XXX Wie ist die Qualität nach den Bauarbeiten? Kann der mudways-Eintrag entfernt werden?
+#: last_checked: 2024-09-25
+	2::inwork 10064,15920 9996,15901
+EOF
+     },
+     { from  => 1727560800, # 2024-09-29 00:00
+       until => 1733007600, # 2024-12-01 00:00
+       text  => 'Goerdelerdamm: Sanierung zwischen Reichweindamm und Goerderlersteg, vom 30.09.2024 bis voraussichtlich 30.11.2024',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1488459.php
+	2::inwork 3229,14224 3184,14265
+	2::inwork 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
 EOF
      },
     );

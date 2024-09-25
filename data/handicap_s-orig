@@ -34,6 +34,14 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 # REMOVED --- #: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024) (inaktiv) --- #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-04 (mapillary) vvv --- #: next_check: 2024-02-09 vvv --- #: valid: -20240209 vvv --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860 --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX Sieht nach Leitungsarbeiten aus. --- #: add_fragezeichen: Besteht die Sperrung noch immer? --- #: also_indoor: traffic (B) --- #: last_checked: 2024-04-23 --- #: check_frequency: 14d --- Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
+#: osm_watch: note 4452740 1
+#: last_checked: 2024-09-25 vvv
+#: check_frequency: 14d vvv
+Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
+Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11088 (zum Neubau des Heinrich-Hertz-Gymnasiums)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_46_4257_4312_online.pdf (Einziehung)
@@ -269,7 +277,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: historical_note: am Anfang Einbahnstraße, offen Richtung Norden (1s:q3:inwork), später komplett zu (q4::inwork in handicap_s-orig), dann wieder (laut osm) Einbahnstraße (1s:q3:inwork), seit September 2024 teilweise zu (südlicher Abschnitt)
-#: osm_watch: way id="4596985" version="31"
+#: osm_watch: way id="4596985" version="32"
 #: osm_watch: way id="1161733739" version="15"
 #: last_checked: 2024-09-07
 #: check_frequency: 90d
@@ -281,16 +289,16 @@ Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	q4::inwork 7998,
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="1"
-#: last_checked: 2024-08-10
+#: last_checked: 2024-09-25
 #: check_frequency: 150d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2024-06-16
+#: last_checked: 2024-09-25
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2024-10-01
+# REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 # 
 # REMOVED (bestätigt) --- #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/ --- #: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html --- #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72 --- #: source_id: 2147342637 --- #: also_indoor: traffic (G) --- #: last_checked: 2018-12-28 --- #: next_check: 2019-02-28 --- #: valid: -20190228 --- Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Februar 2019	q2::inwork 7368,14573 7314,14599 7167,14666
@@ -651,13 +659,13 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 # 
 ### Kreuzberg ###
 # 
-#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024)
+#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
 #: also_indoor: traffic (G,B,W)
 #: last_checked: 2024-09-07 vvv
-#: next_check: 2024-09-28 vvv
-#: valid: -20240928 vvv
+#: next_check: 2024-10-07 vvv
+#: valid: -20241007 vvv
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294
 Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
 #: valid ^^^
@@ -1871,7 +1879,7 @@ Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
 (An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordstein	q3 7312,10505 7315,10537
 #: note: eigentlich ausgeschildert als "getrennter ...", aber eine bauliche oder gezeichnete Trennung ist nicht zu erkennen
 Else-Lasker-Schüler-Str.: gemeinsamer Rad- und Gehweg	q1 7281,10510 7315,10537
-Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8593,12742 8589,12772
+Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8433,12753 8442,12741 8593,12742 8589,12772
 # REMOVED --- #: XXX_prog BS Bordstein höchstens auf der Westseite, auf der Ostseite abgesenkt, aber Gehweg ist ziemlich kurvig
 #: note: theoretisch q3 möglich
 Kleine Andreasstr.: Gehweg	q4+ 12211,12128 12279,12113
@@ -5084,6 +5092,9 @@ Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 
 # 
 #: note: eine Reihe von Zaunpfosten steht auf dem alten Weg und lässt nur Platz für einen sehr engen Pfad
 (Hahnebergweg - Am Fort): teilweise sehr eng	q3 -7810,12418 -7959,12439
+# 
+(Schulzestr. - S-Bhf. Wollankstr.): einige Fußgänger	q1 9494,17824 9461,17795
+(Personnentunnel S-Bhf. Wollankstr.): Fußgänger, Rampen	q4+ 9434,17823 9383,17757
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

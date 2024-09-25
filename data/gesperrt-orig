@@ -1222,13 +1222,6 @@ Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18200,11269 18229,1125
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6335,10589
 Wittenbergplatz	1 6335,10589 6268,10588 6216,10614 6171,10657
-#: by: https://www.berliner-woche.de/weissensee/c-verkehr/amalienstrasse-einbahnstrasse-in-beide-richtungen-befahrbar_a369287 (BVV-Beschluss)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6273 (Zwischenbericht)
-#: osm_watch: way id="23008657" version="18"
-#: XXX Wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
-#: last_checked: 2024-06-13
-#: check_frequency: 90d
-Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14127,17237 14151,17234 14167,17215
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
 Aristotelessteig	1s:q3 18435,9639 18496,9628 18527,9623 18660,9599
@@ -4192,7 +4185,7 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
 #: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
 #: priority: #C
-#: last_checked: 2024-09-19 (mapillary)
+#: last_checked: 2024-09-25
 # REMOVED --- #: next_check: 2024-08-07
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
@@ -4315,7 +4308,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2024-09-23 (daf) (Baustraße existiert noch)
+#: last_checked: 2024-09-25 (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -4475,7 +4468,9 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://www.vbb.de/presse/deutsche-bahn-erneuert-bruecke-ueber-storkower-strasse-in-koenigs-wusterhausen/ (SEV bis 26.8.2022, danach gibt's Hilfsbrücken für die Bahn)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (Brückenbauarbeiten)
 #: by[nocache]: https://archive.ph/ZHatW (MAZ)
-#: note: siehe auch temp-blockings-Eintrag (mit Endedatum Ende 2024); hier etwa alle drei Monate prüfen (und next_check+valid manuell setzen)
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
+#: by[nocache]: https://archive.is/nyxPx
+#: note: siehe auch temp-blockings-Eintrag (mit Endedatum Ende 2024 bzw. Herbst 2025); hier etwa alle drei Monate prüfen (und next_check+valid manuell setzen)
 #: last_checked: 2024-07-17 vvv
 #: next_check: 2024-12-31 vvv
 #: valid: -20241231 vvv
@@ -4850,7 +4845,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX evtl. wird die Qualität nach den Bauarbeiten besser sein (vielleicht keine Straßenbahnschienen mehr, neuer Asphalt?)
 #: osm_watch: note 3954448 4
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2024-09-02
+#: last_checked: 2024-09-25
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2024-12-31
@@ -5006,7 +5001,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-09-21
+#: last_checked: 2024-09-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171

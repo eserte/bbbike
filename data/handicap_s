@@ -7,6 +7,8 @@ Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfu
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
 Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
+Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
+Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4::inwork 12558,11920 12617,11888
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -427,7 +429,7 @@ Erich-Steinfurth-Str.: Fußgänger	q3 12645,11673 12608,11692
 Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
 (An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordstein	q3 7312,10505 7315,10537
 Else-Lasker-Schüler-Str.: gemeinsamer Rad- und Gehweg	q1 7281,10510 7315,10537
-Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8593,12742 8589,12772
+Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8433,12753 8442,12741 8593,12742 8589,12772
 Kleine Andreasstr.: Gehweg	q4 12211,12128 12279,12113
 Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Molkenmarkt - Parochialstr.): Bordstein	q2 10746,12364 10831,12371
@@ -2586,6 +2588,8 @@ Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 
 (Zur Alten Börse - Merler Weg): Betriebsgeländestraßen	q1 18749,13158 18766,13257
 (Am Bahndamm - Elsa-Neumann-Str.): Bordsteine	q3 168,15220 149,15237
 (Hahnebergweg - Am Fort): teilweise sehr eng	q3 -7810,12418 -7959,12439
+(Schulzestr. - S-Bhf. Wollankstr.): einige Fußgänger	q1 9494,17824 9461,17795
+(Personnentunnel S-Bhf. Wollankstr.): Fußgänger, Rampen	q4 9434,17823 9383,17757
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3454,7 +3458,6 @@ Akazienweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -3112,
 Buchenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -2968,18038 -3028,18027 -3083,18010
 Eschenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -3306,17989 -3285,17968 -3224,17943
 Lindenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -3111,18105 -3076,18053 -3038,18063
-Amalienstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13794,16773 13722,16843 13653,16907 13581,16968
 Aristotelessteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 18435,9639 18496,9628 18527,9623 18660,9599
 Ella-Trebe-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 7938,13302 7938,13150
 Rosenfelder Ring: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 18140,11932 18139,11833

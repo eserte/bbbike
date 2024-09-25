@@ -2252,8 +2252,9 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023) (inaktiv)
 #: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023) (inaktiv)
-#: source_id: viz2021:13.375855,52.516152,23.09.2024,06:00 (bis 25.09.2024)
+#: source_id: viz2021:13.375855,52.516152,23.09.2024,06:00 (bis 25.09.2024) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,25.09.2024,06:00 (bis 01.10.2024)
+#: source_id: viz2021:13.36973,52.517661,26.09.2024,18:00 (bis 30.09.2024)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -2414,15 +2415,18 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
        {
          'data' => '# REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
 # REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
-#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, bis 05.11.2024)
+#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024)
 #: source_id: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024)
 #: source_id: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024)
 # REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
-	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109 7085,15226
+	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
+# REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
+Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
+Kiautschoustr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 7007,14911 7182,14986
 ',
          'from' => 1719810000,
          'id' => 2430,
-         'text' => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Triftstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis 05.11.2024 17:00',
+         'text' => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis 05.11.2024 17:00',
          'type' => 'handicap',
          'until' => 1730822400
        },
@@ -3337,6 +3341,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: by: https://www.rbb24.de/studiofrankfurt/beitraege/2023/06/zeuthen-baustelle-fussgaenger-tunnel-bahn.html (Eröffnung November 2023?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-fussgaengertunnel-oeffnet-im-zweiten-quartal-2024-FRMUQYTD6VF6RCLYMMHJQTQAYA.html (II. Quartal 2024?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Fertigstellung der Fußgängerunterführung: November 2024)
+#: by: https://bauprojekte.deutschebahn.com/p/eichwalde-zeuthen-bf?date=20240925 ("Die Eröffnung der PU ist für November 2024 vorgesehen.")
 #: osm_watch: way id="36936021" version="10" brb
 #: also_indoor: search Bahnhof Zeuthen
 #: last_checked: 2024-07-17
@@ -4790,16 +4795,20 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        {
          'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
+#: by[nocache]: https://archive.is/nyxPx
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
+#: next_check: 2024-12-31
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
-Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
+#: note: eigentlich 1s:q3
+Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
 ',
          'from' => 1656194400,
          'id' => 3574,
          'source_id' => 'https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf',
-         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich 2025, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str.',
+         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich Herbst 2025, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str.',
          'type' => 'gesperrt',
-         'until' => 1748793600
+         'until' => 1759334400
        },
        undef,
        undef,
@@ -4822,7 +4831,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2024-06-13 vvv
+#: last_checked: 2024-09-25 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-08-16 vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
@@ -4892,15 +4901,16 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        {
-         'data' => '#: note: auch für Fußgänger gesperrt
+         'data' => '#: source_id: 226502047 (bis 27.11.2024)
+#: by: https://bauprojekte.deutschebahn.com/p/hennigsdorf-marwitzer-strasse-eue?date=20240925 (Sperrung auch für Fußgänger + Radverkehr bis 20.12.2024, weitere Sperrung 2025)
+#: note: auch für Fußgänger gesperrt
 	2::inwork -3475,26523 -3556,26560
 ',
          'from' => 1659852000,
          'id' => 3613,
-         'source_id' => '226502047',
-         'text' => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung vom 08.08.2022 - 27.11.2024',
+         'text' => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung bis 20.12.2024',
          'type' => 'gesperrt',
-         'until' => 1732719600
+         'until' => 1734714000
        },
        undef,
        undef,
@@ -5114,7 +5124,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024) (bis 02.10.2024) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
-#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024)
+#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024) (bis 11.10.2024)
 # REMOVED ---#: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 # REMOVED ---	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
@@ -5123,9 +5133,9 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 ',
          'from' => 1718575200,
          'id' => 3648,
-         'text' => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 30.09.2024',
+         'text' => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 11.10.2024',
          'type' => 'handicap',
-         'until' => 1727708400
+         'until' => 1728658800
        },
        undef,
        undef,
@@ -5263,9 +5273,10 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: Halteverbotsschilder bis Ende September 2024
-#: last_checked: 2024-08-30
-#: check_frequency: 90d
-#: next_check: 2024-09-30
+#: last_checked: 2024-09-25
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
 ',
          'from' => undef,
@@ -5282,9 +5293,9 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-08-21
+#: last_checked: 2024-09-25
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2024-09-30
+# REMOVED --- #: next_check: 2024-09-30
 	q3::inwork 13263,15930 13140,16000
 ',
          'from' => undef,
@@ -5603,8 +5614,8 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
-#: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023) ist das Schild weg
-#: last_checked: 2024-09-21
+#: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
+#: last_checked: 2024-09-25
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -5813,7 +5824,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
        {
          'data' => '#: also_indoor: traffic (B,ex-G[unvollständig],ex-W[unvollständig],T)
 #: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2024; nun bis 30.08.2024; mittlerweile gemischte Halteverbote bis 30.08.2024 (schon vorbei) und Ende des Jahres
-#: last_checked: 2024-09-07 vvv
+#: last_checked: 2024-09-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-31 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
@@ -5987,7 +5998,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m; mittlerweile (Juni 2024) ist der gesamte Abschnitt betroffen; mittlerweile (2024-06) ist die Baustelle nach Süden gewandert und nicht sehr lang (q3 -> q2); mittlerweile: Richtung Norden wird man für ca. 180m auf dem Hochbord geführt
 #: note: bei rbb bis 30.11.2024; bei Bing bis 8.4.2024, mittlerweile auch bis November 2024
 #: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
-#: last_checked: 2024-07-19 (mapillary)
+#: last_checked: 2024-09-25
 #: next_check: 2024-11-01
 	q2::inwork 8486,16425 8467,16718
 ',
@@ -6357,14 +6368,15 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: by: https://www.baustellen-doku.info/berlin_kremmener_bahn/Ersatzneubau_EUe_Wollankstrasse/20240119/
 #: by: https://www.bahninfo-forum.de/read.php?9,681075,792061#msg-792061
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_10_0549_0586_online.pdf (Planfeststellungsbeschluss zur Abstellanlage Schönholz)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: last_checked: 2024-09-19 (mapillary)
-#: check_frequency: 45d
-	2::inwork 9586,17665 9396,17863
-# REMOVED (nur der südliche Abschnitt ist laut osm gesperrt) ---	2::inwork 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
+#: check_frequency: 60d
+	2::inwork 9586,17665 9461,17795
+# REMOVED (nur der südliche Abschnitt ist laut osm+mapillary gesperrt) ---	2::inwork 9461,17795 9434,17823 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 ',
          'from' => undef,
          'id' => 3998,
@@ -6551,11 +6563,11 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-09-21 (mapillary) vvv
+#: last_checked: 2024-09-25 (osm) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="23"
+#: osm_watch: way id="120633718" version="24"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -7159,8 +7171,8 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => undef
        },
        {
-         'data' => '#: osm_watch: way id="27457006" version="16"
-#: last_checked: 2024-09-09 (osm)
+         'data' => '#: osm_watch: way id="27457006" version="17"
+#: last_checked: 2024-09-25 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -7266,16 +7278,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => 1733007599
        },
        undef,
-       {
-         'data' => '#: source_id: LS/221-E/24/094 (bis 30.08.2024) (bis 30.09.2024)
-	2::inwork 37481,69171 37365,69000
-',
-         'from' => 1722751200,
-         'id' => 4142,
-         'text' => 'Glambeck: Sperrung einer Brücke im Zuge der L239, vom 05.08.2024 08:00 Uhr bis 30.09.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1727704800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
@@ -7491,21 +7494,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'handicap',
          'until' => 1728572400
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1485709.php
-#: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/landsberger-strasse-gesperrt_a425442
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1835665267411554359 (auch Radfahrer)
-#: by: https://pbs.twimg.com/media/GXmXyIyXsAA0usE?format=jpg&name=medium
-#: source_id: viz2021:13.62177,52.507345,16.09.2024,07:00 (bis 27.09.2024)
-#: source_id: viz2021:13.62064,52.50432,16.09.2024,15:50 (bis 27.09.2024) (inaktiv)
-	q4::inwork 25239,11657 25199,11531
-',
-         'from' => 1726351200,
-         'id' => 4165,
-         'text' => 'Landsberger Str.: Fahrbahnsanierung, Sperrung, vom 16. September 2024 bis 27. September 2024',
-         'type' => 'handicap',
-         'until' => 1727474399
-       },
+       undef,
        {
          'data' => '#: source_id: 246101091 (bis 03.11.2024)
 	2::inwork 13513,-4708 13677,-4801 13821,-4837
@@ -7543,6 +7532,46 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'text' => 'Motzstr.: Bauarbeiten, Fahrbahn Richtung Viktoria-Luise-Platz gesperrt, voraussichtlich bis Mitte Dezember 2024',
          'type' => 'handicap',
          'until' => 1734476399
+       },
+       undef,
+       {
+         'data' => '#: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
+#: by[nocache]: https://archive.is/pZmLF
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20240925 (26.11.2024 - 26.12.2024, weitere Vollsperrungen z.B. im März 2025)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_einschraenkungen_strassenverkehr_20240924ne.pdf
+#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024)
+#: osm_watch: way id="23984383" version="30"
+#: next_check: 2024-11-25
+	2::inwork 9544,17629 9586,17665
+',
+         'from' => 1732489200,
+         'id' => 4171,
+         'text' => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung voraussichtlich vom 26.11.2024 bis 26.12.2024',
+         'type' => 'gesperrt',
+         'until' => 1735232400
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: XXX Wie ist die Qualität nach den Bauarbeiten? Kann der mudways-Eintrag entfernt werden?
+#: last_checked: 2024-09-25
+	2::inwork 10064,15920 9996,15901
+',
+         'from' => undef,
+         'id' => 4172,
+         'text' => 'Schwedter Steg - Bärbel-Bohley-Ring: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1488459.php
+	2::inwork 3229,14224 3184,14265
+	2::inwork 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
+',
+         'from' => 1727560800,
+         'id' => 4173,
+         'text' => 'Goerdelerdamm: Sanierung zwischen Reichweindamm und Goerderlersteg, vom 30.09.2024 bis voraussichtlich 30.11.2024',
+         'type' => 'gesperrt',
+         'until' => 1733007600
        }
      
 );

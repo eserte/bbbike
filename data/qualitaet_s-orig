@@ -1110,7 +1110,7 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
 #: osm_watch: way id="717490209" version="23"
-#: last_checked: 2024-08-21
+#: last_checked: 2024-09-25
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2024-12-31
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
@@ -12886,6 +12886,8 @@ Ruppiner Chaussee: Asphalt, einige Schäden	Q1+;Q0- 488,22275 455,22285 355,22344
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XVI-81 --- #: osm_watch: way id="567597386" version="8" --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1217133.php (Bauarbeiten im Einmündungsbereich Fürstenwalder Allee/Mausohrweg bis zum 18. August 2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_22_2249_2332_online.pdf (Straßenlandwidmung) --- #: osm_watch: way id="567597383" version="14" --- #: add_fragezeichen: wann wird die Fahrbahndecke endgültig hergestellt? vvv --- #: last_checked: 2022-05-11 vvv --- #: check_frequency: 120d vvv --- #: next_check: 2022-08-18 vvv
 #: historical_note: früher: Asphalt, letzte Deckschicht fehlt, Q1+ vvv
 #: by: mapillary vvv
+(Schulzestr. - S-Bhf. Wollankstr.): Verbundsteinpflaster	Q1 9494,17824 9461,17795
+(Personnentunnel S-Bhf. Wollankstr.): Gehwegplatten/Verbundsteinpflaster	Q1 9434,17823 9383,17757
 An der Streuobstwiese: Betonsteinpflaster	Q0- 12657,22751 12616,22697 12628,22604
 An der Streuobstwiese: Baustraße, noch unbefestigt	Q2 12628,22604 12668,22537
 (Otto-Suhr-Allee - Eosanderstr.): Asphalt	Q0 3328,12512 3357,12562 3357,12615
@@ -13716,6 +13718,7 @@ Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 Hilde-Archenhold-Brücke: Asphalt	Q0 19300,4018 19358,4077
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19363,4057 19353,4047
 # 
+Ungarnstr.: Fahrbahn betoniert und Radweg mit Verbundsteinpflaster, beide mit Schäden und Unebenheiten	Q1 7666,16879 7583,16872 7394,16836 7267,16784 7177,16715 7106,16646 7056,16587
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -22497,7 +22500,7 @@ Attilagarten: Kopfsteinpflaster	Q2 8491,5150 8435,5239
 #: by: Wolfhard Schleese: vvv
 (Wilhelm-Kuhr-Str. - Wollankstr.): Asphalt	Q1 9303,17965 9314,17943 9341,17917
 (Wilhelm-Kuhr-Str. - Wollankstr.): fester Sandweg	Q1 9341,17917 9348,17885 9363,17868 9396,17863
-(Wilhelm-Kuhr-Str. - Wollankstr.): Asphalt	Q1 9396,17863 9586,17665
+(Wilhelm-Kuhr-Str. - Wollankstr.): Asphalt	Q1 9396,17863 9434,17823 9461,17795 9586,17665
 #: confirmed_by: srt
 (Cottastr. - Bürgerpark): Asphalt	Q0- 9419,18330 9424,18276 9467,18226
 #: confirmed_by: srt
