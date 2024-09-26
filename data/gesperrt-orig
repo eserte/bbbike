@@ -398,7 +398,10 @@ Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 Niederlagstr.	1s:q4 9943,12364 9934,12420
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
-Karl-Marx-Platz	1 13100,7626 12987,7560
+#: next_check_id: KARLMARXPLATZ-2024
+#: XXX während der Bauarbeiten ist die Einbahnstraße aufgehoben
+#: next_check: 2025-01-05
+Karl-Marx-Platz	1no 13100,7626 12987,7560
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 #: by: Lea:
@@ -3819,7 +3822,9 @@ Barriere	BNP:3::trailer=10 10628,16644
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898
+#: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant)
 #: last_checked: 2024-09-17 (daf)
+#: next_check: 2024-10-31
 Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::inwork 7912,14160 7875,14204
 # 
 #: next_check_id: HILDEARCHENHOLDBR-2024
@@ -4109,21 +4114,22 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
-#: next_check_id: SAATWINKLER-2023
-#: last_checked: 2024-09-18 vvv
-#: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2023-11-11 vvv
-# REMOVED (laut osm hier offen) --- #: osm_watch: way id="1198442169" version="10" --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518
-#: osm_watch: way id="1304784164" version="2"
-#: osm_watch: way id="1304784162" version="3"
-Heinrich-Hertz-Str.: Hochbauarbeiten, Abschnitt der Straße mit Bauzäunen abgesperrt	2::inwork 59,15518 149,15237
-# REMOVED (offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503
-# REMOVED (laut osm offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -45,15503 59,15518
-# REMOVED (hier fast bis zum Ende offen) --- #: osm_watch: way id="1198395777" version="13" --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
-# REMOVED (hier nicht mehr) --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -213,15529 -218,15558
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (laut osm komplett offen)
+# REMOVED --- #: next_check_id: SAATWINKLER-2023
+# REMOVED --- #: last_checked: 2024-09-18 vvv
+# REMOVED --- #: check_frequency: 60d vvv
+# REMOVED --- # REMOVED --- #: next_check: 2023-11-11 vvv
+# REMOVED --- # REMOVED (laut osm hier offen) --- #: osm_watch: way id="1198442169" version="10" --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork 37,15597 59,15518
+# REMOVED --- #: osm_watch: way id="1304784164" version="5"
+# REMOVED --- #: osm_watch: way id="1304784162" version="6"
+# REMOVED --- Heinrich-Hertz-Str.: Hochbauarbeiten, Abschnitt der Straße mit Bauzäunen abgesperrt	2::inwork 59,15518 149,15237
+# REMOVED --- # REMOVED (offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -45,15503
+# REMOVED --- # REMOVED (laut osm offen) --- Heinrich-Hertz-Str.: Hochbauarbeiten, gesperrt	2::inwork -45,15503 59,15518
+# REMOVED --- # REMOVED (hier fast bis zum Ende offen) --- #: osm_watch: way id="1198395777" version="13" --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork 149,15237 -159,15486
+# REMOVED --- # REMOVED (hier nicht mehr) --- Elsa-Neumann-Str.: Hochbauarbeiten, gesperrt	2::inwork -159,15486 -213,15529 -218,15558
+# REMOVED --- # REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: MARIENUFER-2023
 #: osm_watch: way id="1272560911" version="2"
@@ -4143,7 +4149,7 @@ An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 #: by: https://entwicklungsstadt.de/neues-besucherzentrum-am-reichstag-baustart-erfolgt-2025/ (Fertigstellung des Besucherzentrums nicht vor 2029)
 #: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Geländer
 #: XXX mittlerweile ist auch die südliche Fahrbahn der Paul-Löbe-Allee gesperrt
-#: osm_watch: note 3977175 9
+#: osm_watch: note 3977175 11
 #: osm_watch: way id="212107363" version="6"
 #: osm_watch: way id="212107362" version="6"
 #: last_checked: 2024-07-24
@@ -4783,7 +4789,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-09-22
+#: last_checked: 2024-09-26
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4794,7 +4800,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://dielinke.berlin/start/det/nachfrage-zur-beantwortung-der-schriftlichen-anfrage-scha-ix-0495-bauprojekt-fanny-zobel-strasse/ (weiterhin: Gesamtmaßnahme bis 2027)
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2024-09-17 vvv
+#: last_checked: 2024-09-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5099,8 +5105,8 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="23"
-#: last_checked: 2024-09-12 (krickstadt)
-#: check_frequency: 21d
+#: last_checked: 2024-09-22 (krickstadt)
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-08-17
 # REMOVED --- #: next_check: 2024-02-02
 # REMOVED --- #: valid: -20230901
@@ -5333,9 +5339,9 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.konii.de/news/immobilienprojekt-upside-berlin-wird-weitergebaut/ (Fertigstellung stufenweise bis 2027)
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
 #: osm_watch: node id="10239151904" version="1"
-#: osm_watch: way id="276821479" version="5"
+#: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2024-09-20
+#: last_checked: 2024-09-25 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-12-31
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372

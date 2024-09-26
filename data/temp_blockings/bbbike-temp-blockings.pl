@@ -21620,6 +21620,7 @@ EOF
 #: source_id: viz2021:13.375855,52.516152,23.09.2024,06:00 (bis 25.09.2024) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,25.09.2024,06:00 (bis 01.10.2024)
 #: source_id: viz2021:13.36973,52.517661,26.09.2024,18:00 (bis 30.09.2024)
+#: source_id: viz2021:13.354724,52.517098,26.09.2024,18:00 (bis 30.09.2024)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -35802,14 +35803,14 @@ EOF
        until => undef, # 1654702215, # undef, # XXX
 #      text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Anfang August 2024)',
 #       text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, Umwege im Kreuzungsbereich Elbestr. (Stand Mitte August 2024)',
-       text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn noch nicht offiziell eröffnet, enger gemeinsamer Rad- und Gehweg auf dem Hochbord (Stand Anfang September 2024)',
+       text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn noch nicht offiziell eröffnet, enger gemeinsamer Rad- und Gehweg auf dem Hochbord (Stand Ende September 2024)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WESER-2021
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="2"
-#: last_checked: 2024-09-15 vvv
+#: last_checked: 2024-09-26 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
 # REMOVED --- zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
@@ -37996,7 +37997,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
-#: last_checked: 2024-09-15 vvv
+#: last_checked: 2024-09-26 vvv
 #: check_frequency: 60d vvv
 #: next_check_id: 2024-12-31 vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
@@ -43373,7 +43374,7 @@ EOF
 #: by: https://wilhelmstadt-bewegt.de/ba3-weissenburger-adamstrasse/?proj=Umbau%20der%20Pichelsdorfer%20Stra%C3%9Fe&singlec=baustellen-ticker-pichelsdorfer-strasse (März bis Herbst 2024)
 #: by: https://wilhelmstadt-bewegt.de/wp-content/uploads/2024/02/230720_BA3_Infoflyer-Ausschnitt-1024x269.jpg (hier allerdings keine Sackgasse zu sehen)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1428086.php (18.03.2024 bis Herbst 2024)
-#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024) (bis 21.06.2024, weitere Bauabschnitte folgen) (ohne Verlängerung inaktiv) (bis 27.09.2024)
+#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024) (bis 21.06.2024, weitere Bauabschnitte folgen) (ohne Verlängerung inaktiv) (bis 27.09.2024) (bis 31.12.2024)
 Franzstr.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3637,12668 -3446,12728
 Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12762 -3739,12756
 EOF
@@ -43803,7 +43804,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
-#: last_checked: 2024-09-15 vvv
+#: last_checked: 2024-09-26 vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
 Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
@@ -44281,7 +44282,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-22
+#: last_checked: 2024-09-26
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -44752,14 +44753,16 @@ EOF
 EOF
      },
      { from  => 1726956000, # 2024-09-22 00:00
-       until => 1742749200, # 2025-03-23 18:00
-       text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich ab 23.09.2024 bis zum Frühjahr 2025',
+       until => $isodate2epoch->("2025-01-05 18:00:00"), # 1742749200, # 2025-03-23 18:00
+#       text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich ab 23.09.2024 bis zum Frühjahr 2025',
+       text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der nördlichen Fahrbahn, voraussichtlich bis 05.01.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KARLMARXPLATZ-2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-21
-#: next_check: 2024-09-23
+#: last_checked: 2024-09-26
+#: check_frequency: 60d
+#: next_check: 2025-01-05
 	q4::inwork 12972,7602 13100,7626
 EOF
      },
@@ -44838,6 +44841,26 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1488459.php
 	2::inwork 3229,14224 3184,14265
 	2::inwork 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
+EOF
+     },
+     { from  => 1727367350, # 2024-09-26 18:15
+       until => 1732921200, # 2024-11-30 00:00
+       text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, voraussichtlich bis 29.11.2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2024-09-26
+#: check_frequency: 21d
+#: next_check: 2024-11-29
+	q4::inwork 13136,10535 13178,10623
+EOF
+     },
+     { from  => 1725775200, # 2024-09-08 08:00
+       until => 1730386800, # 2024-10-31 16:00
+       text  => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, 09.09.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-E/24/128 (bis 31.10.2024)
+	2::inwork 31738,27620 31684,27738 30387,28332 29363,29024
 EOF
      },
     );
