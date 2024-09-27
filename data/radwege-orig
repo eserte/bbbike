@@ -1588,7 +1588,8 @@ alter Asphalt	RW1; 6127,15688 6121,15697 6071,15768 6019,15841 5968,15914 5907,1
 Gehwegplatten/Verbundsteinpflaster	RW1; 6127,15688 6239,15553
 Radweg nur aufgemalt	RW2; 6562,15177 6626,15104
 	RW4; 6626,15104 6562,15177 6474,15278 6375,15391 6348,15423 6239,15553
-Radspur hinter parkenden Autos	RW4; 6348,15423 6375,15391 6474,15278 6562,15177
+#: note: keine Radwegschilder, deshalb RW3
+Radspur hinter parkenden Autos	RW3; 6348,15423 6375,15391 6474,15278 6562,15177
 Poller	RW4?; 6652,15073 6626,15104
 alter Asphalt mit Unebenheiten, relativ eng, kein Unterstreifen gegen parkende Autos	RW1; 5907,16000 5827,16118 5748,16235
 alter Asphalt mit Unebenheiten	RW1; 5748,16235 5651,16507 5596,16662

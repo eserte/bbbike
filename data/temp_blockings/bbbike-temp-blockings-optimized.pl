@@ -3395,10 +3395,10 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18372.pdf (Abschluss im Juli 2024? im Anschluss Sanierung der östlichen Fahrbahnseite, bis Herbst 2025)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1435818.php (Abschluss in der zweiten Augusthälfte 2024)
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/treskowallee-bekommt-neuen-asphalt_a414176
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1486870.php (bis Mitte/Ende Oktober 2024; im Anschluss wird die Fahrtrichtung Nord bis Ende 2024 saniert)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1486870.php (bis Mitte/Ende Oktober 2024; im Anschluss wird die Fahrtrichtung Nord bis Ende 2025 saniert)
 #: source_id: 2147342174 (inaktiv)
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
-#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024) (bis 27.09.2024)
+#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024) (bis 27.09.2024) (bis 16.10.2024)
 #: source_id: viz2021:13.52779,52.49067,14.08.2024,14:30 (bis 27.09.2024) (inaktiv)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
@@ -4659,6 +4659,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 #: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
 #: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024)
+#: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -4736,19 +4737,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'type' => 'gesperrt',
          'until' => 1730304000
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-#: by: http://spielstraßen.de/uebersicht.php#kreu
-# REMOVED --- #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05. --- #: last_checked: 2024-03-17 --- #: next_check: 2024-05-01
-	q4::temp::play 12822,10487 12897,10439
-',
-         'from' => 1716415200,
-         'id' => 3551,
-         'recurring' => 1,
-         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
-         'type' => 'handicap',
-         'until' => 1727454600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6424,7 +6413,8 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.350567,52.532479,14.02.2024,07:00 (bis 23.09.2025)
+         'data' => '#: next_check: PERLEBERGER-2024
+#: source_id: viz2021:13.350567,52.532479,14.02.2024,07:00 (bis 23.09.2025)
 #: source_id: bvg2021:m27#BVG342288_0
 #: source_id: bvg2021:123#BVG342289_0
 #: source_id[inactive]: bvg2024:123#HIM_FREETEXT_222657
@@ -6507,19 +6497,7 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
          'type' => 'gesperrt',
          'until' => 1748728800
        },
-       {
-         'data' => '#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024) (bis 21.06.2024) (bis 26.07.2024) (bis 27.09.2024)
-#: note: außerdem Gegenverkehrsregelung, dafür fällt die Fußgängerampel weg
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764546320277086229
-#: by: https://pbs.twimg.com/media/GHmM9cLWgAI8oMM?format=jpg&name=large
-	q4::inwork -6955,742 -6909,661
-',
-         'from' => 1709449200,
-         'id' => 4017,
-         'text' => 'Charlottenstr.: Anbindung Chausseestr. gesperrt, vom 04.03.2024 08:00 bis 27.09.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1727449200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6534,24 +6512,7 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
          'type' => 'gesperrt',
          'until' => 1730300400
        },
-       {
-         'data' => '#: source_id: viz2021:13.33304,52.4907,12.03.2024,16:19 (bis 29.03.2024) (inaktiv)
-#: source_id: viz2021:13.332033,52.490847,12.03.2024,13:00 (bis 10.05.2024) (bis 30.06.2024) (bis 31.07.2024) (bis 19.08.2024) (bis 06.09.2024) (bis 27.09.2024)
-#: source_id: viz2021:13.33304,52.4907,27.06.2024,17:18 (bis 31.07.2024) (vorzeitig inaktiv)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767537882204434779 (hier nur Kfz-Verkehr)
-#: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/wasserrohrbruch-fuehrt-zu-sperrung_a411536
-#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/sperrung-wegen-bauarbeiten_a412256
-#: also_indoor: traffic (H,G,B,T)
-#: note: beim rbb wird nur der Kfz-Verkehr erwähnt, Dauer "mehrere Wochen", mittlerweile auch bis 31.07.2024
-#: note: mittlerweile wird bei viz explizit "absteigen & schieben" gesagt
-	q4::inwork 5627,9362 5479,9367
-',
-         'from' => 1710170340,
-         'id' => 4023,
-         'text' => 'Güntzelstr.: Sperrung zwischen Prinzregentenstr. und Bundesallee (geplatzte Wasserleitung), vermutlich sind auch Radfahrer betroffen (absteigen und schieben), vom 12.03.2024 16:19 bis 27.09.2024',
-         'type' => 'handicap',
-         'until' => 1727449200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6852,18 +6813,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'type' => 'handicap',
          'until' => 1730476800
        },
-       {
-         'data' => '#: source_id: viz2021:13.299377,52.44785,10.06.2024,07:00 (bis 09.08.2024) (bis 27.09.2024)
-#: also_indoor: traffic (W)
-#: note: 210m des Abschnitts ist betroffen, deshalb q1 (eher q1-), ansonsten q2
-	q1::inwork 3185,4894 3425,4541
-',
-         'from' => 1717909200,
-         'id' => 4083,
-         'text' => 'Fabeckstr.: Anbindung Unter den Eichen gesperrt, Gehweg für Radfahrer frei, vom 10.06.2024 07:00 bis 27.09.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1727449200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7081,18 +7031,7 @@ zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwor
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: also_indoor: traffic (B,T,W)
-#: note: bei rbb
-#: note: nur ein Teilstück, deshalb q3 statt q4
-	q3::inwork 5463,9961 5246,10168
-',
-         'from' => 1720414800,
-         'id' => 4112,
-         'text' => 'Meierottostr.: Bauarbeiten in Höhe Bundesallee, evtl. sind auch Radfahrer betroffen, von 09.07.2024 07:00 bis 27.09.2024 15:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1727442000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7279,7 +7218,16 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => 1733007599
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LS/221-E/24/094 (bis 30.08.2024) (bis 30.09.2024) (inaktiv) (bis 30.09.2024)
+	2::inwork 37481,69171 37365,69000
+',
+         'from' => 1722751200,
+         'id' => 4142,
+         'text' => 'Glambeck: Sperrung einer Brücke im Zuge der L239, vom 05.08.2024 08:00 Uhr bis 30.09.2024 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1727704800
+       },
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
@@ -7485,15 +7433,15 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024)
+         'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
          'from' => 1725548760,
          'id' => 4164,
-         'text' => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 10.10.2024 17:00',
+         'text' => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 30.10.2024 17:00',
          'type' => 'handicap',
-         'until' => 1728572400
+         'until' => 1730304000
        },
        undef,
        {
@@ -7596,6 +7544,16 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'text' => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, 09.09.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1730386800
+       },
+       {
+         'data' => '#: source_id: LS/223-K/24/141 (bis 08.11.2024)
+	2::inwork -4055,54553 -3747,54549 -3492,54548 -3137,54571 -2710,54626 -2084,54707 -1848,54667 -1488,54421 -1453,54400 -684,54082
+',
+         'from' => 1727589600,
+         'id' => 4176,
+         'text' => 'B167, Neulöwenberg - Liebenberg: Bauarbeiten, Sperrung, 30.09.2024 bis 08.11.2024',
+         'type' => 'gesperrt',
+         'until' => 1731081600
        }
      
 );
