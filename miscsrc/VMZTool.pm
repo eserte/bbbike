@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1040,23 +1040,23 @@ VMZTool - parse road work information for Berlin and Brandenburg
 Conversion between old vmz file into new format for "removed"
 detection:
 
-    perl -MYAML::XS=LoadFile,Dump -e '$d = LoadFile(shift); for (@$d) { $seen{$_->{id}} = $_ } print Dump { id2rec => \%seen }' ~/cache/misc/vmz.yaml > /tmp/oldvmz.yaml
+    perl -MYAML::XS=LoadFile,Dump -e '$d = LoadFile(shift); for (@$d) { $seen{$_->{id}} = $_ } print Dump { id2rec => \%seen }' ~/src/bbbike-viz/vmz.yaml > /tmp/oldvmz.yaml
 
 First-time usage:
 
-    perl miscsrc/VMZTool.pm -oldstore /tmp/oldvmz.yaml -newstore ~/cache/misc/newvmz.yaml -outbbd ~/cache/misc/diffnewvmz.bbd
+    perl miscsrc/VMZTool.pm -oldstore /tmp/oldvmz.yaml -newstore ~/src/bbbike-viz/newvmz.yaml -outbbd ~/src/bbbike-viz/diffnewvmz.bbd
 
 Regular usage (make sure that the both existsid files are up-to-date,
 see the appropriate targets in data/Makefile):
 
-    perl miscsrc/VMZTool.pm -existsid-current tmp/sourceid-current.yml -existsid-all tmp/sourceid-all.yml -oldstore ~/cache/misc/newvmz.yaml -newstore ~/cache/misc/newvmz.yaml.new -outbbd ~/cache/misc/diffnewvmz.bbd
-    mv ~/cache/misc/newvmz.yaml ~/cache/misc/newvmz.yaml.old
-    mv ~/cache/misc/newvmz.yaml.new ~/cache/misc/newvmz.yaml
+    perl miscsrc/VMZTool.pm -existsid-current tmp/sourceid-current.yml -existsid-all tmp/sourceid-all.yml -oldstore ~/src/bbbike-viz/newvmz.yaml -newstore ~/src/bbbike-viz/newvmz.yaml.new -outbbd ~/src/bbbike-viz/diffnewvmz.bbd
+    mv ~/src/bbbike-viz/newvmz.yaml ~/src/bbbike-viz/newvmz.yaml.old
+    mv ~/src/bbbike-viz/newvmz.yaml.new ~/src/bbbike-viz/newvmz.yaml
 
 Revert (if current download is broken and may be fixed later;
 minimizes diffs):
 
-    cd ~/cache/misc
+    cd ~/src/bbbike-viz
     mv diffnewvmz.bbd newvmz.new.yaml ~/trash
     mv newvmz.yaml newvmz.new.yaml
     mv diffnewvmz.old.bbd diffnewvmz.bbd
@@ -1065,7 +1065,7 @@ minimizes diffs):
 Use old files as in regular, but save new files into temporary
 locations (useful for testing).
 
-    perl miscsrc/VMZTool.pm -existsid-current tmp/sourceid-current.yml -existsid-all tmp/sourceid-all.yml -oldstore ~/cache/misc/newvmz.yaml -newstore /tmp/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
+    perl miscsrc/VMZTool.pm -existsid-current tmp/sourceid-current.yml -existsid-all tmp/sourceid-all.yml -oldstore ~/src/bbbike-viz/newvmz.yaml -newstore /tmp/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
 
 =head1 DESCRIPTION
 
@@ -1093,6 +1093,6 @@ To just re-use the previously fetched data (which should be available
 as C<-oldstore>), e.g. to test a newer version of the C<as_bbd>
 function, use:
 
-    perl miscsrc/VMZTool.pm -no-fetch -oldstore ~/cache/misc/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
+    perl miscsrc/VMZTool.pm -no-fetch -oldstore ~/src/bbbike-viz/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
 
 =cut

@@ -1428,7 +1428,7 @@ sub enable_all_layers_for_editing {
 
 # The "done" file which remembers what is already done.
 use vars qw($vmz_lbvs_directory $vmz_lbvs_done_file);
-$vmz_lbvs_directory = "$ENV{HOME}/cache/misc";
+$vmz_lbvs_directory = "$ENV{HOME}/src/bbbike-viz";
 $vmz_lbvs_done_file = "$vmz_lbvs_directory/vmz_lbvs_done";
 
 sub md5_file {
