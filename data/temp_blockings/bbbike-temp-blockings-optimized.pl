@@ -3403,7 +3403,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
-#: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht
+#: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht; mittlerweile (2024-09-28) vermutlich komplett mit Deckschicht asphaltiert
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: check_frequency: 60d vvv
@@ -3419,7 +3419,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="27"
 #: priority: #B
-#: last_checked: 2024-08-03
+#: last_checked: 2024-09-28
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
 #: last_checked: 2024-09-04
@@ -3429,7 +3429,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 ',
          'from' => undef,
          'id' => 3007,
-         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis Oktober 2024; außerdem Einbahnstraßenregelung in der Andernacher Str.',
+         'text' => 'Treskowallee: Fahrbahn Richtung Süden ab Hönower Str. neu asphaltiert, aber u.U. noch nicht offiziell freigegeben; außerdem Einbahnstraßenregelung in der Andernacher Str.',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4036,14 +4036,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/f1xVVWdH7BUSbxjFsOp6AEXWZMJyBuoG9emzGe5M/oJAIYPaA/64-Anlagen/09/attach_F1D1.pdf (Baustelleneinrichtung bis 31.03.2025 genehmigt)
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/verkauf-fur-1111-millionen-euro-geplant-zwei-weitere-signa-projekte-in-berlin-sind-insolvent-12120476.html
 #: by[nocache]: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/verkauf-fur-1111-millionen-euro-geplant-zwei-weitere-signa-projekte-in-berlin-sind-insolvent-12120476.html
+#: by: https://www.presseportal.de/pm/163061/5863501 (Projekt P1; Fertigstellung bis Anfang 2027)
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="12"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2024-09-15 (osm)
-#: check_frequency: 120d
-#: next_check: 2025-03-31
+#: check_frequency: 180d
+#: next_check: 2027-01-01
 	q4::inwork 6021,10405 6116,10688
 ',
          'from' => undef,
@@ -4604,8 +4605,9 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-13 (mapillary)
+#: last_checked: 2024-09-27
 #: check_frequency: 30d
+#: next_check: 2024-12-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 ',
@@ -4659,7 +4661,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 #: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
 #: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024)
-#: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024)
+#: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -4919,7 +4921,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-27
 #: check_frequency: 120d
 #: next_check: 2025-03-15
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -5000,7 +5002,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-09-22
+#: last_checked: 2024-09-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5626,7 +5628,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-09-22
+#: last_checked: 2024-09-28
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6008,7 +6010,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2024-09-13 (mapillary)
+#: last_checked: 2024-09-27
 #: check_frequency: 120d
 #: next_check: 2024-12-29
 	q4::inwork 12407,8177 12545,8209
@@ -6272,19 +6274,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024) (bis 27.08.2024) (inaktiv) (bis 28.09.2024)
-#: source_id: viz2021:13.55914,52.53285,28.08.2024,17:04 (bis 28.09.2024) (inaktiv)
-#: note: bei rbb nur bis 30.04.2024, mittlerweile auch bis 21.05.2024
-Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
-Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
-',
-         'from' => 1694494800,
-         'id' => 3976,
-         'text' => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 28.09.2024, evtl. noch länger',
-         'type' => 'gesperrt',
-         'until' => 1727535600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6413,7 +6403,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        undef,
        undef,
        {
-         'data' => '#: next_check: PERLEBERGER-2024
+         'data' => '#: next_check_id: PERLEBERGER-2024
 #: source_id: viz2021:13.350567,52.532479,14.02.2024,07:00 (bis 23.09.2025)
 #: source_id: bvg2021:m27#BVG342288_0
 #: source_id: bvg2021:123#BVG342289_0
@@ -6740,7 +6730,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-09-15 vvv
+#: last_checked: 2024-09-27 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-10-18 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -6837,7 +6827,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        undef,
        {
          'data' => '#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
-#: last_checked: 2024-09-26 vvv
+#: last_checked: 2024-09-27 vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
 Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
@@ -7127,7 +7117,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (ex-B,ex-T,H)
 #: add_fragezeichen: Gibt es die Baustelle noch immer?
 #: note: Die Länge der Einengung beträgt etwa 40m, deshalb q3. Durch den Wasserrohrbruch in der Tiergartenstr. erhöhter Kfz-Verkehr in der Gegenrichtung (wobei, mittlerweile gibt es wohl ausreichende Absperrungen in der Tiergartenstr.)
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-27
 	q3::inwork; 7253,11208 7356,11517
 ',
          'from' => undef,
@@ -7456,8 +7446,9 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        },
        {
          'data' => '#: next_check_id: KARLMARXPLATZ-2024
+#: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-26
+#: last_checked: 2024-09-27
 #: check_frequency: 60d
 #: next_check: 2025-01-05
 	q4::inwork 12972,7602 13100,7626
@@ -7513,7 +7504,9 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'until' => undef
        },
        {
-         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1488459.php
+         'data' => '#: next_check_id: GOERDELERDAMM-2024
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1488459.php
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/rad-und-gehweg-wird-saniert_a425963
 	2::inwork 3229,14224 3184,14265
 	2::inwork 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
 ',
@@ -7524,7 +7517,8 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'until' => 1733007600
        },
        {
-         'data' => '#: last_checked: 2024-09-26
+         'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends
+#: last_checked: 2024-09-27
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623

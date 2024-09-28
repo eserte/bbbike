@@ -16697,7 +16697,7 @@ EOF
        until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9, start => "2023-10-25T00:00:00"]], # findet 2023 nicht statt
-       recurrence_prewarn_days => -14,
+       recurrence_prewarn_days => -21,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -28803,7 +28803,8 @@ EOF
      },
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2024-09-27 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis Oktober 2024; außerdem Einbahnstraßenregelung in der Andernacher Str.',
+#       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten (außer Anlieger), bis Oktober 2024; außerdem Einbahnstraßenregelung in der Andernacher Str.',
+       text  => 'Treskowallee: Fahrbahn Richtung Süden ab Hönower Str. neu asphaltiert, aber u.U. noch nicht offiziell freigegeben; außerdem Einbahnstraßenregelung in der Andernacher Str.',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2023
@@ -28826,7 +28827,7 @@ EOF
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
-#: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht
+#: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht; mittlerweile (2024-09-28) vermutlich komplett mit Deckschicht asphaltiert
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: check_frequency: 60d vvv
@@ -28842,7 +28843,7 @@ EOF
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="27"
 #: priority: #B
-#: last_checked: 2024-08-03
+#: last_checked: 2024-09-28
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
 #: last_checked: 2024-09-04
@@ -32971,14 +32972,15 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/f1xVVWdH7BUSbxjFsOp6AEXWZMJyBuoG9emzGe5M/oJAIYPaA/64-Anlagen/09/attach_F1D1.pdf (Baustelleneinrichtung bis 31.03.2025 genehmigt)
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/verkauf-fur-1111-millionen-euro-geplant-zwei-weitere-signa-projekte-in-berlin-sind-insolvent-12120476.html
 #: by[nocache]: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/verkauf-fur-1111-millionen-euro-geplant-zwei-weitere-signa-projekte-in-berlin-sind-insolvent-12120476.html
+#: by: https://www.presseportal.de/pm/163061/5863501 (Projekt P1; Fertigstellung bis Anfang 2027)
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="12"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2024-09-15 (osm)
-#: check_frequency: 120d
-#: next_check: 2025-03-31
+#: check_frequency: 180d
+#: next_check: 2027-01-01
 	q4::inwork 6021,10405 6116,10688
 EOF
      },
@@ -35793,8 +35795,9 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-13 (mapillary)
+#: last_checked: 2024-09-27
 #: check_frequency: 30d
+#: next_check: 2024-12-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 EOF
@@ -35974,7 +35977,7 @@ EOF
 #: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
 #: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024)
-#: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024)
+#: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -37099,7 +37102,7 @@ EOF
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-27
 #: check_frequency: 120d
 #: next_check: 2025-03-15
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -37325,7 +37328,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-09-22
+#: last_checked: 2024-09-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -39736,7 +39739,7 @@ EOF
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-09-22
+#: last_checked: 2024-09-28
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -41149,7 +41152,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2024-09-13 (mapillary)
+#: last_checked: 2024-09-27
 #: check_frequency: 120d
 #: next_check: 2024-12-29
 	q4::inwork 12407,8177 12545,8209
@@ -42087,7 +42090,7 @@ EOF
        text  => 'Oberfeldstr.: Leitungsarbeiten, Einbahnstraße ab Charlottenstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Charlottenstr., vom 13.09.2023 07:00 bis 28.09.2024, evtl. noch länger',
        type  => 'gesperrt', # handicap
        data  => <<EOF,
-#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024) (bis 27.08.2024) (inaktiv) (bis 28.09.2024)
+#: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024) (bis 27.08.2024) (inaktiv) (bis 28.09.2024) (inaktiv)
 #: source_id: viz2021:13.55914,52.53285,28.08.2024,17:04 (bis 28.09.2024) (inaktiv)
 #: note: bei rbb nur bis 30.04.2024, mittlerweile auch bis 21.05.2024
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
@@ -42539,7 +42542,7 @@ EOF
        text  => 'Wilsnacker Str. und Rathenower Str.: Anbindung zur Perleberger Str. wegen Bauarbeiten gesperrt, vom 14.02.2024 07:00 bis 23.09.2025 17:00',
        type  => 'handicap',
        data => <<EOF,
-#: next_check: PERLEBERGER-2024
+#: next_check_id: PERLEBERGER-2024
 #: source_id: viz2021:13.350567,52.532479,14.02.2024,07:00 (bis 23.09.2025)
 #: source_id: bvg2021:m27#BVG342288_0
 #: source_id: bvg2021:123#BVG342289_0
@@ -43524,7 +43527,7 @@ EOF
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-09-15 vvv
+#: last_checked: 2024-09-27 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-10-18 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -43806,7 +43809,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
-#: last_checked: 2024-09-26 vvv
+#: last_checked: 2024-09-27 vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
 Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
@@ -44320,7 +44323,7 @@ EOF
 #: also_indoor: traffic (ex-B,ex-T,H)
 #: add_fragezeichen: Gibt es die Baustelle noch immer?
 #: note: Die Länge der Einengung beträgt etwa 40m, deshalb q3. Durch den Wasserrohrbruch in der Tiergartenstr. erhöhter Kfz-Verkehr in der Gegenrichtung (wobei, mittlerweile gibt es wohl ausreichende Absperrungen in der Tiergartenstr.)
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-27
 	q3::inwork; 7253,11208 7356,11517
 EOF
      },
@@ -44761,8 +44764,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KARLMARXPLATZ-2024
+#: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-26
+#: last_checked: 2024-09-27
 #: check_frequency: 60d
 #: next_check: 2025-01-05
 	q4::inwork 12972,7602 13100,7626
@@ -44840,7 +44844,9 @@ EOF
        text  => 'Goerdelerdamm: Sanierung zwischen Reichweindamm und Goerderlersteg, vom 30.09.2024 bis voraussichtlich 30.11.2024',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: GOERDELERDAMM-2024
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1488459.php
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/rad-und-gehweg-wird-saniert_a425963
 	2::inwork 3229,14224 3184,14265
 	2::inwork 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
 EOF
@@ -44850,7 +44856,8 @@ EOF
        text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, voraussichtlich bis 29.11.2024',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2024-09-26
+#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends
+#: last_checked: 2024-09-27
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623

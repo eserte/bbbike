@@ -193,8 +193,9 @@ Blücherplatz	NN 9599,10175 9631,10142
 (Blücherplatz - Zossener Str.)	NN 9702,10129 9827,10051
 (Blücherplatz - Waterloo-Ufer)	NN 9631,10142 9687,10180
 (Blücherplatz - Johanniterstr.)	NN 9702,10129 9816,10119 9837,10117
-Baerwaldstr.	N 10123,9233 10198,9405 10306,9640 10361,9755 10357,9807
-Baerwaldstr.	N 10361,9755 10405,9795
+Baerwaldstr.	N 10123,9233 10198,9405
+Baerwaldstr.	NH 10198,9405 10306,9640 10361,9755 10357,9807
+Baerwaldstr.	NH 10361,9755 10405,9795
 Baerwaldstr.	H 10357,9807 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	H 10405,9795 10480,9949 10513,10038 10500,10081
 Geibelstr. (Kreuzberg)	N 10564,9755 10627,9912
@@ -12637,7 +12638,7 @@ Eisensteiner Str.	N 19727,9672 19722,9483
 #: XXX wird hier noch ein verkehrsberuhigter Bereich ausgewiesen?
 #: osm_watch: way id="338124008" version="15"
 #: priority: #C
-#: last_checked: 2024-03-29 (mapillary)
+#: last_checked: 2024-09-28
 #: check_frequency: 180d
 Zachenberger Str.	N 19889,9400 19824,9405 19780,9409
 Teisnacher Str.	N 19871,9680 19859,9473
@@ -15712,7 +15713,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-28
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16102,7 +16103,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-28
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens

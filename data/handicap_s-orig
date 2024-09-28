@@ -89,7 +89,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-09-22
+#: last_checked: 2024-09-28
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -590,25 +590,26 @@ Charlottenstr.: Fahrbahn an der Dorotheenstr. einige Meter gesperrt	q3::inwork; 
 # 
 #: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00
 #: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024)
-#: source_id: bvg2024:n40#HIM_FREETEXT_232184
-#: last_checked: 2024-09-01
+#: source_id: bvg2024:n40#HIM_FREETEXT_232184 (bis auf weiteres)
+#: last_checked: 2024-09-28
 #: next_check: 2024-10-20
 #: valid: -20241020
 Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17701,8851 17729,8850
 # 
-#: next_check_id: TRESKOWALLEE-2023
-#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023) (bis 30.11.2023) (bis 25.11.2023) (inaktiv)
-#: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024) (bis 05.04.2024) (bis 30.08.2024) (bis 27.09.2024) (bis 16.10.2024)
-#: source_id: viz2021:13.52679,52.48659,14.08.2024,14:28 (bis 27.09.2024) (inaktiv)
-#: source_id: bvg2021:396#BVG308894_0
-#: source_id: bvg2024:396#HIM_FREETEXT_222820 (bis 31.10.2024)
-#: osm_watch: way id="30043322" version="31"
-#: last_checked: 2024-08-10 (osm)
-#: check_frequency: 100d
-#: next_check: 2024-10-16
-# REMOVED --- #: valid: -20240927
-#: valid: -20241031
-Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
+# REMOVED (weitgehend freigegeben; Überquerung der Treskowallee über Fußgängerfurt)
+# REMOVED --- #: next_check_id: TRESKOWALLEE-2023
+# REMOVED --- #: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022) (bis 31.12.2022) (bis 31.1.2023) (bis 31.7.2023) (bis 31.10.2023) (bis 30.11.2023) (bis 25.11.2023) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.525961,52.486697,14.11.2022,07:00 (bis 29.02.2024) (bis 05.04.2024) (bis 30.08.2024) (bis 27.09.2024) (bis 16.10.2024)
+# REMOVED --- #: source_id: viz2021:13.52679,52.48659,14.08.2024,14:28 (bis 27.09.2024) (inaktiv)
+# REMOVED --- #: source_id: bvg2021:396#BVG308894_0
+# REMOVED --- #: source_id: bvg2024:396#HIM_FREETEXT_222820 (bis 31.10.2024)
+# REMOVED --- #: osm_watch: way id="30043322" version="31"
+# REMOVED --- #: last_checked: 2024-09-28
+# REMOVED --- #: check_frequency: 100d
+# REMOVED --- #: next_check: 2024-10-16
+# REMOVED --- # REMOVED --- #: valid: -20240927
+# REMOVED --- #: valid: -20241031
+# REMOVED --- Marksburgstr.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 18697,9153 18809,9133
 # 
 # REMOVED (Bauarbeiten sind beendet) --- #: next_check_id: WANDLITZ-2021 --- #: note: am 2022-04-22 war die Fahrbahn offen, aber möglicherweise war das nur "zufällig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauzäune, die umgeklappt werden können --- #: also_indoor: traffic --- #: note: Halteverbotsschilder vor und hinter der Baustelle bis 22.12.2023 --- #: XXX evtl. bessere Qualität nach den Bauarbeiten? --- #: last_checked: 2023-11-26 --- #: check_frequency: 30d --- #: next_check: 2023-12-22 --- #: valid: -20231222 --- Wandlitzstr.: in Höhe Lehndorffstr. Bauarbeiten, Sperrung der Fahrbahn	q4::inwork 18401,8636 18448,8602
 # REMOVED --- #: source_id: viz2021:13.52358,52.480928,28.11.2022,06:30 (bis 09.12.2022, hier nur Kfz-Verkehr) (bis 12.12.2022) --- #: last_checked: 2022-12-05 --- #: next_check: 2022-12-12 --- #: valid: -20221212 --- Wandlitzstr.: Fahrbahn zwischen Wildensteiner Str. und Heiligenberger Str. gesperrt	q4::inwork 18627,8475 18557,8525
@@ -757,7 +758,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="16096289" version="32"
 #: osm_watch: way id="707100249" version="21"
-#: last_checked: 2024-09-21
+#: last_checked: 2024-09-27
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -903,7 +904,7 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
 #: osm_watch: way id="640465875" version="13"
-#: last_checked: 2024-09-13 (mapillary)
+#: last_checked: 2024-09-27
 #: check_frequency: 120d
 #: next_check: 2025-04-30
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -920,7 +921,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: note: Die Absperrung beginnt 50m vor dem Einmündungsbereich.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-13 (mapillary) vvv
+#: last_checked: 2024-09-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
@@ -976,7 +977,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-09-08
+#: last_checked: 2024-09-28
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1798,7 +1799,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch: note 4103526 1
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2024-09-07
+#: last_checked: 2024-09-27
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
