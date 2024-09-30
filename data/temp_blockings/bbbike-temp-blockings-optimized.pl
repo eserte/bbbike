@@ -1088,14 +1088,14 @@ push @temp_blocking,
        undef,
        {
          'data' => '#: source_id: IM_013591 (inaktiv)
-#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024) (bis 30.08.2024) (bis 14.09.2024) (bis 02.10.2024)
+#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024) (bis 30.08.2024) (bis 14.09.2024) (bis 02.10.2024) (inaktiv)
 #: source_id: viz2021:13.360599,52.446803,11.07.2024,14:26 (Einschränkung in der anderen Richtung, bis 01.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024) (bis 11.07.2024)
 # REMOVED (ist etwas anderes) --- #: source_id: bvg2024:282#HIM_FREETEXT_230965 (bis 31.08.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1470949.php
 #: by: https://pbs.twimg.com/media/GWyr1-TXYAAdRMr?format=jpg&name=medium
-#: also_indoor: traffic (H,G,B,T,W)
+#: also_indoor: traffic (ex-H,G,ex-B,ex-T,W)
 #: last_checked: 2024-09-14 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-10-02
@@ -1484,7 +1484,16 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 246401377 (bis 08.10.2024)
+	2::inwork 30910,13101 30815,13170 30795,13191
+',
+         'from' => 1728097200,
+         'id' => 1875,
+         'text' => 'Neuenhagen: Sperrung des Bahnübergangs vom 06.10.2024 05:00 Uhr bis 08.10.2024 07:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1728363600
+       },
        undef,
        undef,
        undef,
@@ -2218,6 +2227,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: source_id: viz2021:13.369855,52.515768,18.09.2023,06:00 (bis 26.09.2023) (inaktiv)
 #: source_id: viz2021:13.360266,52.515154,24.09.2023,22:00 (bis 06.10.2023) (inaktiv)
 #: source_id: viz2021:13.36968,52.51571,20.09.2024,16:58 (bis 02.10.2024) (inaktiv)
+#: source_id: viz2021:13.375084,52.516116,01.10.2024,18:00 (bis 02.10.2024)
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -2243,66 +2253,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'type' => 'gesperrt',
          'until' => 1727904600
        },
-       {
-         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
-#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00 (inaktiv)
-#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30 (inaktiv)
-#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00 (inaktiv)
-#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023) (inaktiv)
-#: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023) (inaktiv)
-#: source_id: viz2021:13.375855,52.516152,23.09.2024,06:00 (bis 25.09.2024) (inaktiv)
-#: source_id: viz2021:13.371607,52.515899,25.09.2024,06:00 (bis 01.10.2024)
-#: source_id: viz2021:13.36973,52.517661,26.09.2024,18:00 (bis 30.09.2024)
-#: source_id: viz2021:13.354724,52.517098,26.09.2024,18:00 (bis 30.09.2024)
-# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
-	2::temp 8573,12325 8540,12420
-	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8119,12414 8055,12186
-	2::temp 8538,12245 8522,12239 8466,12197 8327,12174 8215,12156 8122,12147 8049,12140 8018,12135 7823,12120 7775,12114 7429,12070
-	2::temp 8538,12245 8522,12187 8453,12099 8262,11883 8244,11878 8221,11876 8167,11865 8140,11850 8026,11764
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
-	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 7875,12363 7822,12201 7816,12150 7823,12120
-	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
-	2::temp 8207,12606 8206,12734 8206,12757
-	3 7945,12592 8122,12603 8120,12756
-	3 8120,12756 8122,12603 7945,12592
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
-	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8221,11690
-	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
-	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
-	2::temp 7823,12120 7832,12036 7822,11952 7793,11878
-	2::temp 7775,12114 7772,12040 7717,11918
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1727064000,
-         'id' => 2388,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              12,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 23.09.2024 bis 30.09.2024',
-         'type' => 'gesperrt',
-         'until' => 1727668800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3366,7 +3317,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-08-27
+#: last_checked: 2024-09-26 (mapillary)
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3533,7 +3484,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
 #: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024)
-#: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024)
+#: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
 	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
 ',
@@ -3683,21 +3634,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1430940.php (Saisonstart am 3. April 2024)
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-umwelt/saison-beginnt-in-boeckhstrasse_a411440
-	q4::temp::play 11175,9882 11197,9894 11411,9810
-',
-         'from' => 1711839600,
-         'id' => 3145,
-         'recurring' => 1,
-         'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
-         'type' => 'handicap',
-         'until' => 1727712000
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
@@ -3871,21 +3808,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
-#: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020, Hausnummern 15 bis 19)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-ist-temporaere-spielstrasse_a392084 (mittlerweile von Mai bis September)
-	q4::temp::play 10670,14116 10716,14195 10739,14228
-',
-         'from' => 1714514400,
-         'id' => 3253,
-         'recurring' => 1,
-         'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.5. bis 30.9. (außer Schulferien)',
-         'type' => 'handicap',
-         'until' => 1727712000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4186,46 +4109,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-# REMOVED --- #: XXX wird diese Spielstraße verstetigt? --- #: last_checked: 2021-05-13 --- #: next_check: 2022-05-17
-	q4::temp::play 13273,12902 13371,12694
-',
-         'from' => 1714428000,
-         'id' => 3368,
-         'recurring' => 1,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
-         'text' => 'Richard-Sorge-Str.: zwischen Mühsamstr. und Straßmannstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
-         'type' => 'handicap',
-         'until' => 1727712000
-       },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-# REMOVED --- #: XXX Spielstraße wurde möglicherweise verstetigt; genaue Geltungszeiten? --- #: last_checked: 2021-05-12 --- #: next_check: 2022-05-12
-	q4::temp::play 14468,11203 14531,11142
-',
-         'from' => 1714428000,
-         'id' => 3369,
-         'recurring' => 1,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
-         'text' => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. mittwochs zwischen 15.30 und 18.30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
-         'type' => 'handicap',
-         'until' => 1727713800
-       },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-# REMOVED (ja, Schilder hängen) --- #: XXX wird diese Spielstraße verstetigt? --- #: next_check: 2022-05-31
-	q4::temp::play 12286,9739 12398,9938
-',
-         'from' => 1717106400,
-         'id' => 3371,
-         'recurring' => 1,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
-         'text' => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
-         'type' => 'handicap',
-         'until' => 1727712000
-       },
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -5456,27 +5343,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-und-westend-kleinere-projekte/?postID=739232#post739232
-#: source_id: viz2021:13.31151,52.51786,16.09.2024,06:00 (kurzfristige Komplettsperrung, bis 18.09.2024) (inaktiv)
-#: source_id: viz2021:13.310518,52.51611,30.09.2024,07:00 (Anbindung Warburgzeile gesperrt, bis 25.03.2025)
-#: osm_watch: way id="1191704604" version="1"
-#: note: Endedatum anhand Halteverbotsschilder
-#: also_indoor: traffic (none)
-# REMOVED --- #: add_fragezeichen: Gibt es in der Warburgzeile weiterhin eine Einbahnstraßenregelung?
-#: last_checked: 2024-09-21
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2024-12-31
-#: next_check: 2025-03-25
-#	q4::inwork; 4032,12167 4101,12356
-	q3::inwork 4032,12167 4101,12356
-',
-         'from' => 1678738906,
-         'id' => 3745,
-         'text' => 'Warburgzeile: Bauarbeiten, Anbindung an Otto-Suhr-Allee gesperrt, voraussichtlich bis Ende März 2025',
-         'type' => 'handicap',
-         'until' => 1742918400
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: HEBAMMENSTEIGBRUECKE-2021
@@ -5645,21 +5512,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: note: Einbahnstraßenbereich ist 50m lang
-#: also_indoor: traffic (none)
-#: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-09-23
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-09-30
-	q3::inwork; 15648,12687 15643,12875
-',
-         'from' => 1685641032,
-         'id' => 3805,
-         'text' => 'Heringer Str.: Einbahnstraßenregelung wegen Hochbauarbeiten, offen Richtung Süden, voraussichtlich bis Herbst 2024',
-         'type' => 'handicap',
-         'until' => 1727712000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5982,7 +5835,19 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
          'type' => 'handicap',
          'until' => 1734019200
        },
-       undef,
+       {
+         'data' => '#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv)
+# REMOVED (hier nicht mehr) ---	q4::inwork 22917,30635 22770,30813
+# REMOVED (hier nicht) ---	q4::inwork 22770,30813 22690,30909
+# REMOVED (hier nicht mehr) ---	q4::inwork; 22850,30562 22917,30635
+	q4::inwork 22770,30813 22690,30909
+',
+         'from' => 1689487200,
+         'id' => 3902,
+         'text' => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, bis 30.04.2025 16:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1746021600
+       },
        undef,
        undef,
        undef,
@@ -6118,7 +5983,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024) (bis 07.10.2024)
-#: source_id: viz2021:13.35076,52.53934,18.09.2024,12:14 (bis 07.10.2024)
+#: source_id: viz2021:13.35076,52.53934,18.09.2024,12:14 (bis 07.10.2024) (inaktiv)
 #: osm_watch: way id="4543441" version="41"
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
@@ -6183,7 +6048,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-09-24 vvv
+#: last_checked: 2024-09-26 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6491,7 +6356,19 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
          'type' => 'gesperrt',
          'until' => 1748728800
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024) (bis 21.06.2024) (bis 26.07.2024) (bis 27.09.2024) (inaktiv) (bis 16.10.2024)
+#: note: außerdem Gegenverkehrsregelung, dafür fällt die Fußgängerampel weg
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764546320277086229
+#: by: https://pbs.twimg.com/media/GHmM9cLWgAI8oMM?format=jpg&name=large
+	q4::inwork -6955,742 -6909,661
+',
+         'from' => 1709449200,
+         'id' => 4017,
+         'text' => 'Charlottenstr.: Anbindung Chausseestr. gesperrt, vom 04.03.2024 08:00 bis 16.10.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1729090800
+       },
        undef,
        undef,
        undef,
@@ -6571,25 +6448,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024) (am nächsten Tag schon inaktiv)
-#: source_id: viz2021:13.30305,52.51725,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024) (inaktiv)
-#: source_id: viz2021:13.30263,52.5165,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024) (inaktiv)
-#: source_id: viz2021:13.30279,52.51551,01.08.2024,07:00 (bis 30.09.2024)
-# REMOVED --- #: also_indoor: traffic (H,G,B,W)
-#: also_indoor: traffic (H,G,B[teilweise],T[teilweise])
-# REMOVED (hier nicht mehr) --- #: note: bei rbb wieder aktiv
-# REMOVED Gierkezeile, nördlicher Abschnitt	q4::inwork 3493,12228 3495,12185 3507,12076
-Gierkezeile, südlicher Abschnitt	q4::inwork 3507,12076 3514,11988 3528,11852
-# REMOVED (hier nicht mehr) --- Behaimstr.	q4::inwork 3495,12185 3630,12201
-# REMOVED (hier nicht mehr) --- Schustehrusstr.	q4::inwork 3528,12276 3623,12284
-',
-         'from' => 1722463200,
-         'id' => 4037,
-         'text' => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Zillestr., Sperrung, vermutlich sind auch Radfahrer betroffen, bis 30.09.2024 16:00',
-         'type' => 'handicap',
-         'until' => 1727704800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6694,12 +6553,13 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
        undef,
        {
          'data' => '#: source_id: viz2021:13.451021,52.489535,27.05.2024,07:00 (bis 05.07.2024) (inaktiv)
-#: XXX Sieht nicht nach einem baldigen Ende der Bauarbeiten aus.
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt\'s eine offizielle Wegführung für Radfahrer über den Hochbord.
+#: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt.
 #: also_indoor: traffic (ex-H[falsch],re-G,W[ungenau],T[ungenau])
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße und Kiefholzstraße beendet?
-#: last_checked: 2024-09-21
-#: check_frequency: 14d
+#: last_checked: 2024-09-30
+# REMOVED --- #: check_frequency: 14d
+#: check_frequency: 7d
 	q4::inwork 13715,9455 13614,9333
 ',
          'dont_check_date' => 1,
@@ -6756,20 +6616,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.55316,52.43396,04.06.2024,14:11 (bis 18.06.2024) (bis 18.07.2024) (inaktiv)
-#: source_id: viz2021:13.553865,52.434226,04.06.2024,14:11 (bis 18.07.2024) (inaktiv)
-#: source_id: viz2021:13.553861,52.434215,18.07.2024,10:00 (bis 30.08.2024) (bis 30.09.2024)
-#: note: bei rbb "bis auf weiteres", mittlerweile auch bis 18.6.2024, mittlerweile bis 30.09.2024
-# REMOVED (hier nicht mehr) ---	q4::inwork 20717,3310 20478,3156
-	q4::inwork 20717,3310 20808,3374
-',
-         'from' => 1717416660,
-         'id' => 4077,
-         'text' => 'Otto-Franke-Str.: Bauarbeiten zwischen Nipkowstr. und Arndtstr., Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende September 2024',
-         'type' => 'handicap',
-         'until' => 1727712000
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
@@ -7035,6 +6882,7 @@ zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwor
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1815251677278060801
 #: by: https://pbs.twimg.com/media/GS3L_VJWQAAhbAU?format=jpg&name=medium
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/arbeiten-an-der-schildower-strasse-dauern-18-monate_a421648
+#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/durchgangsverkehr-weicht-in-nebenstrassen-im-waldseeviertel-aus_a425864
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
 #: next_check: 2025-04-30 vvv
 Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233
@@ -7093,7 +6941,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-26
+#: last_checked: 2024-09-30
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -7132,22 +6980,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.382396,52.530372,09.08.2024,16:02 (nur der Radverkehr wird umgeleitet! bis 30.09.2024)
-#: source_id: viz2021:13.3794,52.52949,09.08.2024,17:31 (bis 30.09.2024) (inaktiv)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1821911366766084588
-#: by: https://pbs.twimg.com/media/GUi6qtgW4AAgG3O?format=jpg&name=large
-#: note: kein Verbot für Radfahrer, Gehweg für Radfahrer frei, also ist die Fahrbahn erlaubt, Umleitung über Hessische Str. und Chausseestr. ausgeschildert
-#: note: in diesem Abschnitt etwa 40m betroffen, hier noch nicht ganz so eng, davor verlegte Straßenbahnhaltestelle
-	q2::inwork; 8685,13728 8841,13800
-	q4+::inwork; 8841,13800 8935,13844
-',
-         'from' => 1723125720,
-         'id' => 4133,
-         'text' => 'Invalidenstr.: Engstelle zwischen Hessische Str. und Chausseestr., vom 09.08.2024 16:02 bis 30.09.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1727708400
-       },
+       undef,
        undef,
        undef,
        {
@@ -7212,16 +7045,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => 1733007599
        },
        undef,
-       {
-         'data' => '#: source_id: LS/221-E/24/094 (bis 30.08.2024) (bis 30.09.2024) (inaktiv) (bis 30.09.2024)
-	2::inwork 37481,69171 37365,69000
-',
-         'from' => 1722751200,
-         'id' => 4142,
-         'text' => 'Glambeck: Sperrung einer Brücke im Zuge der L239, vom 05.08.2024 08:00 Uhr bis 30.09.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1727704800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
@@ -7251,20 +7075,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477879.php
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/24-105_vfp_240710.jpg (Umleitungsstrecke)
-#: by: https://www.berliner-woche.de/wannsee/c-bauen/instandsetzung-der-fahrbahn_a423552
-#: source_id[inactive]: bvg2024:218#HIM_FREETEXT_237776
-#: source_id: bvg2024:218#HIM_FREETEXT_238312
-	2::inwork -6442,1150 -6492,1204 -6577,1395 -6648,1613 -6784,1815 -6903,1906 -6999,1933 -7165,1978 -7304,1970 -7443,1915 -7640,1837 -7866,1862 -8106,2034 -8284,2156 -8422,2155
-',
-         'from' => 1725746400,
-         'id' => 4145,
-         'text' => 'Pfaueninselchaussee: Sanierung der Fahrbahn, Sperrung, vom 09.09.2024 bis 29.09.2024',
-         'type' => 'gesperrt',
-         'until' => 1727647200
-       },
+       undef,
        {
          'data' => '#: source_id: 246001451 (bis 25.10.2024)
 	2::inwork 12056,34918 12025,35002 11964,35230
@@ -7398,20 +7209,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: note: Thaipark Markt
-#: by: https://thaipark.de/blog/thaipark-neuigkeiten
-#: by: https://www.berlin.de/tourismus/insidertipps/7766805-2339440-thaiwiese-im-preussenpark.html
-#: tempex: sa,su T11-T21
-	2::temp 4374,9409 4381,9620
-',
-         'from' => undef,
-         'id' => 4162,
-         'recurring' => 1,
-         'text' => 'Württembergische Str.: Markt, Straße vermutlich gesperrt, jeden Samstag und Sonntag von 11:00 bis 21:00',
-         'type' => 'gesperrt',
-         'until' => 1727647200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10033 (Bebauungsplanverfahren XXI-40a)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
@@ -7512,12 +7310,14 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'data' => '#: next_check_id: GOERDELERDAMM-2024
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1488459.php
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/rad-und-gehweg-wird-saniert_a425963
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1840774534120571390
+#: by: https://pbs.twimg.com/media/GYu-Qz5W0AAYkqy?format=jpg&name=large
 	2::inwork 3229,14224 3184,14265
 	2::inwork 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
 ',
          'from' => 1727560800,
          'id' => 4173,
-         'text' => 'Goerdelerdamm: Sanierung zwischen Reichweindamm und Goerderlersteg, vom 30.09.2024 bis voraussichtlich 30.11.2024',
+         'text' => 'Goerdelerdamm: Sanierung zwischen Reichweindamm und Goerdelersteg, vom 30.09.2024 bis voraussichtlich 30.11.2024',
          'type' => 'gesperrt',
          'until' => 1733007600
        },
@@ -7553,6 +7353,48 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'text' => 'B167, Neulöwenberg - Liebenberg: Bauarbeiten, Sperrung, 30.09.2024 bis 08.11.2024',
          'type' => 'gesperrt',
          'until' => 1731081600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1489715.php
+	2::inwork 24229,10843 24113,10462 24265,10421
+',
+         'from' => 1727474400,
+         'id' => 4177,
+         'text' => 'Am Barnim und Großmannstr.: Bauarbeiten, abschnittsweise gesperrt, vom 29. September 2024 bis zum 31. Juli 2025',
+         'type' => 'gesperrt',
+         'until' => 1753999199
+       },
+       {
+         'data' => '#: source_id: viz2021:13.285727,52.482902,30.09.2024,07:00 (bis 25.10.2024)
+	q4::inwork 2423,8427 2541,8425
+',
+         'from' => 1727586000,
+         'id' => 4178,
+         'text' => 'Elgersburger Str.: Bauarbeiten zwischen Franzensbader Str. und Ilmenauer Str., evtl. sind auch Radfahrer betroffen, Bauarbeiten, vom 30.09.2024 07:00 bis 25.10.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1729868400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024)
+	q4::inwork 10197,16528 10209,16674
+',
+         'from' => 1727586000,
+         'id' => 4179,
+         'text' => 'Björnsonstr.: Gleisbauarbeiten, Sperrung der Fahrbahn, vom 30.09.2024 07:00 bis 22.11.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1732291200
+       },
+       {
+         'data' => '#: source_id: viz2021:13.31115,52.491561,30.09.2024,07:00 (bis 06.11.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1840620338042085619
+#: by: https://pbs.twimg.com/media/GYfo8hGWQAATDdF?format=jpg&name=large
+	q4::inwork; 4193,9404 4011,9474
+',
+         'from' => 1727586000,
+         'id' => 4180,
+         'text' => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, vom 30.09.2024 07:00 bis 06.11.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1730908800
        }
      
 );
