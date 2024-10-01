@@ -1838,7 +1838,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2332,7 +2332,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: September 8.00 - 19.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Oktober 8.00 - 18.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -3483,6 +3483,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
+#: by: https://www.bahninfo-forum.de/read.php?9,800515,811033#msg-811033
+#: by: https://nachgefragt.bvg.de/altstadt-koepenick/
 #: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024)
 #: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
@@ -5960,7 +5962,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024) (bis 01.09.2024) (inaktiv)
 #: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024)
 #: source_id: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
-#: source_id: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
+#: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
 #: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
 # REMOVED (alte Notizen) --- #: note: bei VIZ inaktiv, tatsächlich noch aktiv --- #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
@@ -6150,17 +6152,18 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024)
+         'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024) (im Anschluss weitere Arbeiten)
 #: source_id: viz2021:13.42956,52.533,29.08.2024,14:51 (bis 02.10.2024) (inaktiv)
+#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: also_indoor: traffic (G,B,W)
 	q3::inwork 12228,14083 12077,14186
 ',
          'from' => 1701237600,
          'id' => 3982,
-         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 02.10.2024 17:00',
+         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 29.11.2024 17:00',
          'type' => 'handicap',
-         'until' => 1727881200
+         'until' => 1732896000
        },
        undef,
        undef,
@@ -6278,7 +6281,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: bvg2021:123#BVG342289_0
 #: source_id[inactive]: bvg2024:123#HIM_FREETEXT_222657
 #: source_id: viz2021:13.34718,52.53079,14.02.2024,07:00 (bis 29.09.2025) (inaktiv)
-#: source_id: viz2021:13.35116,52.531839,07.08.2024,07:00 (bis 30.08.2024) (bis 17.09.2024) (inaktiv) (bis 04.10.2024)
+#: source_id: viz2021:13.35116,52.531839,07.08.2024,07:00 (bis 30.08.2024) (bis 17.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/erneuerung-abwasserdruckleitung-unter-der-perleberger-strasse/
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
@@ -7164,16 +7167,17 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
 #: by: https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen
-#: last_checked: 2024-09-22 (website) vvv
+#: last_checked: 2024-10-01 (website) vvv
 #: check_frequency: 10d vvv
-Allerstr.	2::inwork 11521,7638 11507,7647
-Okerstr.	2::inwork 11528,7528 11540,7534
+# REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
+# REMOVED --- Okerstr.	2::inwork 11528,7528 11540,7534
+Kienizer Str.	2::inwork 11472,7732 11482,7735 11490,7737 11504,7738
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 4156,
-         'text' => 'Eingänge Allerstr. und Okerstr.: wegen Bauarbeiten gesperrt',
+         'text' => 'Eingang Kienitzer Str.: wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
