@@ -42,7 +42,7 @@
 # REMOVED (nicht mehr ausgeschildert) --- #: next_check_id: FAHLENBERGBRUECKE-2022 --- #: note: Umfahrung Fahlenbergbrücke --- #: note: laut mapillary Benutzungspflicht (bzw. Verbot für Radfahrer auf der Fahrbahn) --- #: last_checked: 2024-07-14 (mapillary) --- #: next_check: 2024-07-31 --- provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: last_checked: 2024-09-14 (mapillary)
+#: last_checked: 2024-09-30 (okas)
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -1028,7 +1028,7 @@ Bushaltestelle	RW5; 10917,15525 10925,15581
 Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
-#: last_checked: 2024-09-25
+#: last_checked: 2024-10-05 (mapillary)
 #: historical_note: früher: Gehwegplatten	RW2;
 #Radspur, niedrige Protektion	RW4;
 	RW2; 10941,15697 10953,15787
@@ -5854,8 +5854,8 @@ asphaltiert	RW1; 17169,11677 17020,11748
 	RW6;RW6 7441,15909 7279,16057 7158,16167 7051,16264
 	RW6;RW6 7279,16057 7294,16068 7474,16086
 #: note: Richard-Wagner-Str. Richtung Süden
-Grünbeschichtung, relativ breit	RW3; 3761,12298 3767,12217 3778,12104
-Grünbeschichtung, relativ breit	RW4; 3778,12104 3786,12014 3801,11858 3837,11760 3843,11659
+Grünbeschichtung, relativ breit	RW3; 3761,12298 3767,12217
+Grünbeschichtung, relativ breit	RW4; 3767,12217 3778,12104 3786,12014 3801,11858 3837,11760 3843,11659
 #: note: Richard-Wagner-Str. Richtung Norden
 Grünbeschichtung, relativ breit	RW4; 3843,11659 3837,11760 3801,11858 3786,12014
 Grünbeschichtung, relativ breit	RW3; 3786,12014 3778,12104 3767,12217 3761,12298
@@ -8495,7 +8495,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,771277#msg-771277
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8781 (Antrag)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8615 (Antrag - Antwort)
-#: last_checked: 2024-09-21 vvv
+#: last_checked: 2024-09-28 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten

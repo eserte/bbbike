@@ -385,7 +385,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-09-20 vvv
+#: last_checked: 2024-10-03 (architektur-urbanistik) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -508,7 +508,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-09-21 vvv
+#: last_checked: 2024-10-05 (mapillary) vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -521,7 +521,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: priority ^^^
 # 
 #: add_fragezeichen: Ist die Charlottenstr. ab Dorotheenstr. noch immer gesperrt?
-#: last_checked: 2024-09-21
+#: last_checked: 2024-10-05 (mapillary)
 #: check_frequency: 21d
 Charlottenstr.: Fahrbahn an der Dorotheenstr. einige Meter gesperrt	q3::inwork; 9454,12558 9462,12481
 # 
@@ -1299,9 +1299,10 @@ Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5
 #: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt) (inaktiv)
 #: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W) [alle falsch]
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-24 (mapillary)
-#: next_check: 2024-09-20
-Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450
+#: last_checked: 2024-10-02 (mapillary)
+# REMOVED --- #: next_check: 2024-09-20
+# REMOVED (hier fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450
+Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7506,20170 7533,20275
 # 
 #: temporary ^^^
 #: section ^^^

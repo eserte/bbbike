@@ -1086,27 +1086,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: IM_013591 (inaktiv)
-#: source_id: viz2021:13.359683,52.447679,07.07.2024,12:30 (kein Endedatum) (bis 1.10.2024) (bis 30.08.2024) (bis 14.09.2024) (bis 02.10.2024) (inaktiv)
-#: source_id: viz2021:13.360599,52.446803,11.07.2024,14:26 (Einschränkung in der anderen Richtung, bis 01.10.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:282#HIM_FREETEXT_230698 (bis 31.08.2024) (bis 11.07.2024)
-# REMOVED (ist etwas anderes) --- #: source_id: bvg2024:282#HIM_FREETEXT_230965 (bis 31.08.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1810569256909607224 (voraussichtlich zwei Monate)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1470949.php
-#: by: https://pbs.twimg.com/media/GWyr1-TXYAAdRMr?format=jpg&name=medium
-#: also_indoor: traffic (ex-H,G,ex-B,ex-T,W)
-#: last_checked: 2024-09-14 (mapillary)
-#: check_frequency: 30d
-#: next_check: 2024-10-02
-	q4::inwork; 7532,4605 7544,4587 7561,4560 7573,4540 7597,4499
-',
-         'from' => 1720470111,
-         'id' => 1748,
-         'text' => 'Steglitzer Damm: Richtung Alt-Mariendorf zwischen Biberacher Weg und Attilastr. geplatzte Wasserleitung, Abschnitt der Fahrbahn gesperrt, voraussichtlich bis 02.10.2024',
-         'type' => 'handicap',
-         'until' => 1727881200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2170,89 +2150,61 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
-         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
-#: by: https://www.bmw-berlin-marathon.com/
-#: by: https://viz.berlin.de/2021/09/berlin-marathon/
-#: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
-#: by: https://viz.berlin.de/2022/09/marathon/
-#: by: https://viz.berlin.de/2023/09/marathon/
-#: by: http://viz.berlin.de/aktuelle-meldungen/verkehr-zum-berlin-marathon-am-wochenende-28-29.09.2024/
-#: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.369855,52.515768,18.09.2023,06:00 (bis 26.09.2023) (inaktiv)
-#: source_id: viz2021:13.360266,52.515154,24.09.2023,22:00 (bis 06.10.2023) (inaktiv)
-#: source_id: viz2021:13.36968,52.51571,20.09.2024,16:58 (bis 02.10.2024) (inaktiv)
-#: source_id: viz2021:13.375084,52.516116,01.10.2024,18:00 (bis 02.10.2024)
-# REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
-	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-# REMOVED --- #: tempex ^^^
+         'data' => '# REMOVED (alte Meldung) ---	q3::inwork; 10418,15704 10426,15705 10554,15725 10701,15750 10953,15787
+	q4::inwork; 10953,15787 10701,15750
 ',
-         'dont_check_date' => 1,
-         'from' => 1727668800,
-         'id' => 2387,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 19.10.2024 bis 03.10.2024',
-         'type' => 'gesperrt',
-         'until' => 1727904600
+         'from' => 1728165600,
+         'id' => 2342,
+         'text' => 'Gleimstr.: Bauarbeiten an der Schönhauser Allee, Einbahnstraße Richtung Osten, evtl. sind auch Radfahrer betroffen, vom 7.10.2024 bis Ende Januar 2025',
+         'type' => 'handicap',
+         'until' => 1738342800
        },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3125,7 +3077,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: note: fritz meint 18.12.2017 (frühere Meldung von 2017)
+#: source_id: LMS-BR_r_LMS-BR_112957_LMS-BR_72 (inaktiv)
+#: source_id: 2147341767 (inaktiv)
+#: source_id: viz2021:13.404559,52.590527,07.10.2024,07:00 (bis 06.10.2024)
+	q4::inwork 10178,20525 10226,20539 10309,20562 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
+',
+         'from' => 1728165600,
+         'id' => 2916,
+         'text' => 'Schillerstr.: zwischen Heinrich-Böll-Str. und Straße 18 abschnittsweise Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen vom 07.10.2024 07:00 bis 22.11.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1732291200
+       },
        undef,
        undef,
        undef,
@@ -3967,7 +3931,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="362719487" version="12"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2024-09-15 (osm)
+#: last_checked: 2024-10-01 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	q4::inwork 6021,10405 6116,10688
@@ -4295,7 +4259,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
-#: osm_watch: way id="114381366" version="20"
+#: osm_watch: way id="114381366" version="21"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2024-09-21 (youtube)
 #: check_frequency: 120d
@@ -4549,7 +4513,7 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 #: source_id: viz2021:13.57292,52.460387,14.11.2023,09:00 (Kraneinsatz in der Hämmerlingstr., Sperrung nur für Kfz-Verkehr, bis 14.11.2023) (inaktiv)
 #: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
 #: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024) (inaktiv)
-#: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024)
+#: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
@@ -4574,22 +4538,22 @@ zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
 #: priority: #A
 #: last_checked: 2024-09-04 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-10-04 vvv
+# REMOVED --- #: next_check: 2024-10-04 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 # REMOVED --- #: osm_watch: way id="794278028" version="10"
 # REMOVED --- #: osm_watch: way id="1181902719" version="1"
-Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
+# REMOVED --- Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
 #: osm_watch: way id="1163982841" version="3"
 Schubertstr.	2::inwork 21984,6317 21856,6390
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1726524000,
          'id' => 3548,
-         'text' => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 18.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
+         'text' => 'Schubertstr.: etwa 80m der Straße westlich der Hämmerlingstr. gesperrt, u.U. außerhalb der Arbeitszeiten passierbar, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
-         'until' => 1728054000
+         'until' => undef
        },
        undef,
        {
@@ -5397,7 +5361,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,ex-G,ex-W)
-#: last_checked: 2024-09-29 (traffic)
+#: last_checked: 2024-10-06 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -5813,7 +5777,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-09-22 (krickstadt) vvv
+#: last_checked: 2024-10-05 (krickstadt) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-10-17 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -5861,7 +5825,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m; mittlerweile (Juni 2024) ist der gesamte Abschnitt betroffen; mittlerweile (2024-06) ist die Baustelle nach Süden gewandert und nicht sehr lang (q3 -> q2); mittlerweile: Richtung Norden wird man für ca. 180m auf dem Hochbord geführt
 #: note: bei rbb bis 30.11.2024; bei Bing bis 8.4.2024, mittlerweile auch bis November 2024
 #: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
-#: last_checked: 2024-09-25
+#: last_checked: 2024-10-02 (mapillary)
 #: next_check: 2024-11-01
 	q2::inwork 8486,16425 8467,16718
 ',
@@ -5935,7 +5899,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-09-29 vvv
+#: last_checked: 2024-10-05 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -6082,15 +6046,15 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        {
-         'data' => '#: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024) (inaktiv)
-#: source_id: 246001315 (bis 08.11.2024)
+         'data' => '#: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024) (inaktiv) (bis 31.12.2024)
+#: source_id: 246001315 (bis 08.11.2024) (bis 31.12.2024)
 	2::inwork 23015,30519 23113,30450
 ',
          'from' => 1705186800,
          'id' => 3947,
-         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung bis 08.11.2024',
+         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung voraussichtlich bis Ende 2024',
          'type' => 'gesperrt',
-         'until' => 1731078000
+         'until' => 1735657200
        },
        undef,
        undef,
@@ -6152,10 +6116,12 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024) (im Anschluss weitere Arbeiten)
+         'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024) (im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.42956,52.533,29.08.2024,14:51 (bis 02.10.2024) (inaktiv)
 #: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1841356186756817316
+#: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
 #: also_indoor: traffic (G,B,W)
 	q3::inwork 12228,14083 12077,14186
 ',
@@ -6286,7 +6252,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
 #: priority: #B vvv
-#: last_checked: 2024-09-11 (osm) vvv
+#: last_checked: 2024-09-29 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-09-23 vvv
 #: osm_watch: way id="375991056" version="17"
@@ -6295,10 +6261,10 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1250738798" version="3"
 Wilsnacker Str.: Anbindung gesperrt	q4::inwork 6646,13951 6746,13826
 #: note: Ampel ist zumindest Richtung Nordosten ausgeschaltet, allerdings gibt\'s dafür eine Fußgängerampel etwa 50m weiter nordöstlich
-#: note: mittlerweile Änderung laut VMZ, evtl. nur noch eine Fahrtrichtung betroffen
+#: note: mittlerweile Änderung laut VMZ, evtl. nur noch eine Fahrtrichtung betroffen (stimmt aber nicht)
 #: osm_watch: way id="417687029" version="16"
 #: osm_watch: way id="1143843161" version="5"
-Rathenower Str.: Anbindung gesperrt	q4::inwork; 6730,14021 6817,13862
+Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6918,16 +6884,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: LS/221-F/24/148 (bis 06.09.2024) (bis 02.10.2024)
-	2::inwork 25686,17365 25764,17255 25889,17093 25923,17002 25958,16901
-',
-         'from' => 1722146400,
-         'id' => 4123,
-         'text' => 'Hönow, Dorfstr.: Bauarbeiten, Fahrbahnerneuerung, evtl sind auch Radfahrer von der Sperrung betroffen, 29.07.2024 08:00 Uhr bis 02.10.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1727877600
-       },
+       undef,
        undef,
        undef,
        {
@@ -7078,7 +7035,21 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477879.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/24-105_vfp_240710.jpg (Umleitungsstrecke)
+#: by: https://www.berliner-woche.de/wannsee/c-bauen/instandsetzung-der-fahrbahn_a423552
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1490538.php (Verzögerung)
+#: source_id[inactive]: bvg2024:218#HIM_FREETEXT_237776
+#: source_id[inactive]: bvg2024:218#HIM_FREETEXT_238312
+	2::inwork -6442,1150 -6492,1204 -6577,1395 -6648,1613 -6784,1815 -6903,1906 -6999,1933 -7165,1978 -7304,1970 -7443,1915 -7640,1837 -7866,1862 -8106,2034 -8284,2156 -8422,2155
+',
+         'from' => 1725746400,
+         'id' => 4145,
+         'text' => 'Pfaueninselchaussee: Sanierung der Fahrbahn, Sperrung, vom 09.09.2024 bis 08.10.2024',
+         'type' => 'gesperrt',
+         'until' => 1728403200
+       },
        {
          'data' => '#: source_id: 246001451 (bis 25.10.2024)
 	2::inwork 12056,34918 12025,35002 11964,35230
@@ -7392,6 +7363,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'data' => '#: source_id: viz2021:13.31115,52.491561,30.09.2024,07:00 (bis 06.11.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1840620338042085619
 #: by: https://pbs.twimg.com/media/GYfo8hGWQAATDdF?format=jpg&name=large
+#: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/gesperrt-wegen-bauarbeiten_a426523
 	q4::inwork; 4193,9404 4011,9474
 ',
          'from' => 1727586000,
@@ -7399,6 +7371,45 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'text' => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, vom 30.09.2024 07:00 bis 06.11.2024 17:00',
          'type' => 'handicap',
          'until' => 1730908800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1490230.php
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-wuhletalstrasse/
+#: by: https://viz.berlin.de/site/assets/files/1680/wuhletalstrasse.png
+#: source_id: viz2021:13.569037,52.560857,07.10.2024,07:00 (bis 12.10.2024)
+	q3::inwork 21913,17376 21797,17418 21719,17427 21539,17442 21284,17454 21066,17503
+',
+         'from' => 1728165600,
+         'id' => 4181,
+         'text' => 'Wuhletalstr.: Bauarbeiten, Umfahrungsstrecke existiert, vom 7.10.2024 bis 12.10.2024',
+         'type' => 'handicap',
+         'until' => 1728770400
+       },
+       {
+         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-4#post-23882
+#: osm_watch: way id="22792467" version="9"
+#: add_fragezeichen: Ist die Brücke weiterhin gesperrt?
+#: last_checked: 2024-09-27 (architektur-urbanistik)
+	2::inwork 5790,11643 5802,11677
+',
+         'from' => undef,
+         'id' => 4182,
+         'text' => 'Untere Freiarchenbrücke (am Schleusenkrug): wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.373896,52.597683,05.10.2024,07:00 (bis 15.11.2024)
+#: source_id: viz2021:13.371871,52.599415,05.10.2024,07:00 (bis 15.11.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1842430012634415528
+#: by: https://pbs.twimg.com/media/GZCpzOgWsAAxSzf?format=jpg&name=medium
+Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21499
+',
+         'from' => 1728018000,
+         'id' => 4183,
+         'text' => 'Quickborner Str.: zwischen Wilhelmsruher Damm und Uhlandstr. Bauarbeiten, Fahrbahn im Bereich der Gleisschleife gesperrt, vom 05.10.2024 07:00 bis 15.11.2024 23:59',
+         'type' => 'handicap',
+         'until' => 1731711540
        }
      
 );
