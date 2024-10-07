@@ -34,8 +34,15 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 # REMOVED --- #: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024) (inaktiv) --- #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-04 (mapillary) vvv --- #: next_check: 2024-02-09 vvv --- #: valid: -20240209 vvv --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860 --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX Sieht nach Leitungsarbeiten aus. --- #: add_fragezeichen: Besteht die Sperrung noch immer? --- #: also_indoor: traffic (B) --- #: last_checked: 2024-04-23 --- #: check_frequency: 14d --- Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
+#: next_check_id: REVALER-2024
+#: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
+#: last_checked: 2024-10-07
+#: check_frequency: 90d
+#: next_check: 2026-12-31
+Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
+# 
 #: osm_watch: note 4452740 1
-#: last_checked: 2024-09-29 vvv
+#: last_checked: 2024-10-07 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -662,10 +669,10 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 # 
 ### Kreuzberg ###
 # 
-#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024)
+#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
-#: also_indoor: traffic (G,B,W)
+#: also_indoor: traffic (G,B,ex-W)
 #: last_checked: 2024-09-07 vvv
 #: next_check: 2024-10-07 vvv
 #: valid: -20241007 vvv
@@ -810,11 +817,11 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kiezblock-im-richardkiez-nimmt-formen-an_a421342 ("demnächst")
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenunterhaltung-und-verkehrssicherheit/kiezblock-rixdorf-1288290.php
 #: osm_watch[closed]: note 4446116 1
-#: osm_watch: way id="1009116415" version="6"
-#: osm_watch: way id="1317391078" version="1"
+#: osm_watch: way id="1009116415" version="8"
+#: osm_watch: way id="1317391078" version="2"
 #: XXX comments_kfzverkehr-Einträge danach anpassen
 #: XXX evtl. gibt es vorher Arbeiten am Stromnetz siehe auch Fragezeichen zu "Umspannwerk Richardstraße"
-#: last_checked: 2024-09-26 vvv
+#: last_checked: 2024-10-07 (osm) vvv
 #: check_frequency: 14d vvv
 Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q4+::inwork 13236,7970 13246,7961
 Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q3::inwork 13246,7961 13309,7911
@@ -5100,7 +5107,7 @@ Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 
 (Hahnebergweg - Am Fort): teilweise sehr eng	q3 -7810,12418 -7959,12439
 # 
 (Schulzestr. - S-Bhf. Wollankstr.): einige Fußgänger	q1 9494,17824 9461,17795
-(Personnentunnel S-Bhf. Wollankstr.): Fußgänger, Rampen	q4+ 9434,17823 9383,17757
+(Personentunnel S-Bhf. Wollankstr.): Fußgänger, Rampen	q4+ 9434,17823 9383,17757
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2024-09-27
+#: last_checked: 2024-10-07
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -7243,14 +7243,14 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2024-09-29
+#: last_checked: 2024-10-07
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2024-09-29
+#: last_checked: 2024-10-07
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -8019,18 +8019,19 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: by: https://viz.berlin.de/aktuelle-meldungen/markierungsarbeiten-an-der-hauptstrasse-in-schoneberg/
 #: by: https://www.rad-ts.de/verkehrszeichenplaene-hauptstrasse-geaendert-sicherheitsrisiken-fuer-radfahrende-steigen/
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/magistrale-wird-neu-aufgeteilt_a412850
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1491356.php (Anradeln am 15.10.2024)
 #: source_id: viz2021:13.3526,52.484353,05.03.2024,07:00 (zwischen Akazienstr. und Dominicusstr. Richtung Südwesten, bis 04.04.2024) (bis 05.04.2024) (bis 08.04.2024) (bis 11.04.2024) (inaktiv)
 #: source_id: viz2021:13.35309,52.484712,25.03.2024,07:00 (bis 08.04.2024) (inaktiv)
 #: XXX laut Verkehrszeichenplan überwiegend Aufteilung MIV-Fahrspur - Busspur - Radspur; teilweise sind Bus- und Radspur zusammengelegt (Haltestellen, vor einigen Kreuzungen)
 #: note: Richtung Südwesten bis Kolonnenstr. bis auf die Ausschilderung weitgehend fertig, Radspur hinter parkenden Autos, teilweise Leitboys; mittlerweile (2024-09-07) fehlen nur wenige Schilder
 #: last_checked: 2024-09-07 vvv
-#: check_frequency: 21d vvv
-# REMOVED --- #: next_check: 2024-09-01 vvv
+# REMOVED --- #: check_frequency: 21d vvv
+#: next_check: 2024-10-15 vvv
 # REMOVED (hier komplett ausgeschildert) --- Hauptstr.: Radfahrstreifen zwischen Kleistpark und Dominicusstr. wurden markiert, einige Schilder fehlen noch	?::inwork; 7471,9360 7430,9281 7388,9199 7382,9187
 Hauptstr.: Radfahrstreifen zwischen Kleistpark und Dominicusstr. wurden markiert, einige Schilder fehlen noch	?::inwork; 7382,9187 7363,9152 7354,9135 7326,9078 7308,9041 7299,9022 7268,8960 7239,8907 7201,8870 7105,8788 7051,8741 7005,8701 6986,8683 6912,8617 6765,8480 6733,8441 6687,8385
 # REMOVED (realisiert) --- Hauptstr.: ein paar Meter Radspur entstehen noch vor der Ampel	?::inwork; 7201,8870 7239,8907 7268,8960
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: ZOSSENB246-2023
@@ -8042,6 +8043,7 @@ Hauptstr.: Radfahrstreifen zwischen Kleistpark und Dominicusstr. wurden markiert
 # REMOVED (wurde mit https://www.openstreetmap.org/changeset/155521904 entfernt) --- #: osm_watch: way id="1205904882" version="4"
 #: osm_watch: way id="538382840" version="9" brb
 #: osm_watch: way id="1309121732" version="2" brb
+#: source_id: 247200149 (bis 11.11.2024)
 #: XXX Eröffnung am 11.11.2024 + neuer Kreisverkehr (fehlt noch in comments_misc). Alte Führung der B246 degradieren bzw. entfernen (inkl. Bahnübergang).
 #: last_checked: 2024-09-14
 # REMOVED --- #: check_frequency: 60d
@@ -8478,9 +8480,9 @@ Hauptstr. (Rosenthal): Modalsperre entsteht	? 8389,21468 8419,21446
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf
 #: osm_watch: way id="1051634661" version="11"
-#: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024
-#: last_checked: 2024-09-28
-#: check_frequency: 14d
+#: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
+#: last_checked: 2024-10-07
+# REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
 # 
@@ -8544,6 +8546,11 @@ Annenstr. [Wohngebiet]: Einbahnstraße für Kfz geplant	?::projected 11259,11391 1
 #: XXX haben die derzeitigen Bauarbeiten in der Donaustraße etwas mit dieser Maßnahme oder mit dem modalen Filter zu tun?
 #: last_checked: 2024-09-26
 Umspannwerk Richardstraße: Straßensperrungen geplant	?::projected 13081,7907 13121,7945 13150,7924 13187,7927 13236,7970 13246,7961 13312,8026 13205,8126 13147,8056 13236,7970
+# 
+#: source_id: LS/223-P/24/050 (bis 20.10.2024)
+#: osm_watch: way id="1288454421" version="1"
+#: next_check: 2024-10-20
+Busendorf - Klaistow: Bau eines Radwegs	?::inwork -28052,-13899 -27924,-13942 -27861,-13960 -27693,-13976
 # 
 #: section ^^^
 #: ignore ^^^
@@ -9168,6 +9175,7 @@ Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-19888.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_39_2835_2938_online.pdf (zum Bebauungsplan)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1484018.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1490757.php
 # REMOVED --- #: osm_watch: way id="318397770" version="2"
 # REMOVED --- #: osm_watch: way id="318395919" version="6"
 #: osm_watch: way id="49998472" version="9"

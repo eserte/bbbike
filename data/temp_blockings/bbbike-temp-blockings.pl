@@ -41437,12 +41437,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-09-24 07:00:00"),
-       until => undef, dont_check_date => 1, # $isodate2epoch->("2024-10-07 17:00:00"),
-       text  => 'Nordufer: zwischen Fehmarner Str. und Föhrer Str. Bauarbeiten, Sperrung der Fahrbahn, vom 25.09.2023 07:00 bis 07.10.2024 17:00, evtl. wird verlängert',
+       until => $isodate2epoch->("2024-11-30 17:00:00"),
+       text  => 'Nordufer: zwischen Fehmarner Str. und Föhrer Str. Bauarbeiten, Sperrung der Fahrbahn, vom 25.09.2023 07:00 bis 30.11.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.
-#: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024) (bis 07.10.2024)
+#: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024) (bis 07.10.2024) (bis 30.11.2024)
 #: source_id: viz2021:13.35076,52.53934,18.09.2024,12:14 (bis 07.10.2024) (inaktiv)
 #: osm_watch: way id="4543441" version="41"
 #: also_indoor: traffic (H,G,B,T,W)
@@ -41450,7 +41450,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2024-09-18 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-10-07 vvv
+#: next_check: 2024-11-30 vvv
 	q2::inwork; 6334,14756 6513,14725
 # REMOVED (hier nicht mehr) ---		q2::inwork; 6513,14725 6596,14740
 # REMOVED (hier nicht mehr) ---	q2::inwork; 6596,14740 6709,14782
@@ -44716,9 +44716,9 @@ EOF
        text  => 'entlang des Stadtbahnviadukts: kann wegen Hochbauarbeiten gesperrt sein, auch für Fußgänger',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr.
+#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere.
 #: osm_watch: way id="482690912" version="6"
-#: last_checked: 2024-09-03 vvv
+#: last_checked: 2024-10-07 vvv
 	3 12207,11763 12132,11788 11966,11832
 	3 11966,11832 12132,11788 12207,11763
 #: last_checked ^^^
@@ -44885,8 +44885,8 @@ EOF
        text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, voraussichtlich bis 29.11.2024',
        type  => 'handicap',
        data  => <<EOF,
-#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends
-#: last_checked: 2024-09-27
+#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends; am 2024-10-07 (Mo) mittags sah es hier nach Bauarbeiten aus
+#: last_checked: 2024-10-07
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
@@ -44979,7 +44979,7 @@ EOF
        text  => 'Quickborner Str.: zwischen Wilhelmsruher Damm und Uhlandstr. Bauarbeiten, Fahrbahn im Bereich der Gleisschleife gesperrt, vom 05.10.2024 07:00 bis 15.11.2024 23:59',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.373896,52.597683,05.10.2024,07:00 (bis 15.11.2024)
+#: source_id: viz2021:13.373896,52.597683,05.10.2024,07:00 (bis 15.11.2024) (inaktiv)
 #: source_id: viz2021:13.371871,52.599415,05.10.2024,07:00 (bis 15.11.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1842430012634415528
 #: by: https://pbs.twimg.com/media/GZCpzOgWsAAxSzf?format=jpg&name=medium
