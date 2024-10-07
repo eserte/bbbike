@@ -33,33 +33,7 @@ push @temp_blocking,
        },
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
-#: by: https://twitter.com/VIZ_Berlin/status/1312229648558850048
-#: by: https://pbs.twimg.com/media/EjX56WOWoAIPRUg?format=png&name=900x900
-#: by: https://www.berlin.de/events/4531106-2229501-schoeneberger-kuerbisfest.html (geplant für 2.+3.10.2021)
-#: by: https://www.eventbrite.com/e/22-schoneberger-kurbisfest-tickets-165249199805
-	2::temp 6994,9288 7007,9220 7029,9156 7101,9027 7201,8870
-	2::temp 6936,9138 7029,9156
-	2::temp 6958,8941 7101,9027 7308,9163
-	2::temp 7007,9220 7124,9226
-',
-         'from' => 1728032400,
-         'id' => 731,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Schöneberger Kürbisfest, Akazien- und Belziger Str. gesperrt, 05.10.2024 bis 06.10.2024',
-         'type' => 'gesperrt',
-         'until' => 1728251999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2150,16 +2124,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (alte Meldung) ---	q3::inwork; 10418,15704 10426,15705 10554,15725 10701,15750 10953,15787
-	q4::inwork; 10953,15787 10701,15750
-',
-         'from' => 1728165600,
-         'id' => 2342,
-         'text' => 'Gleimstr.: Bauarbeiten an der Schönhauser Allee, Einbahnstraße Richtung Osten, evtl. sind auch Radfahrer betroffen, vom 7.10.2024 bis Ende Januar 2025',
-         'type' => 'handicap',
-         'until' => 1738342800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5953,6 +5918,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: osm_watch: way id="4543441" version="41"
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2024-09-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-10-07 vvv
@@ -5967,11 +5933,12 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: last_checked ^^^
 #: priority ^^^
 ',
+         'dont_check_date' => 1,
          'from' => 1695531600,
          'id' => 3931,
          'text' => 'Nordufer: zwischen Fehmarner Str. und Föhrer Str. Bauarbeiten, Sperrung der Fahrbahn, vom 25.09.2023 07:00 bis 07.10.2024 17:00, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1728313200
+         'until' => undef
        },
        undef,
        undef,
@@ -6073,11 +6040,11 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1727820000,
+         'from' => 1730415600,
          'id' => 3955,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 3.10.2024 bis 6.10.2024',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 2.11.2024 bis 3.11.2024',
          'type' => 'handicap',
-         'until' => 1728251999
+         'until' => 1730674799
        },
        undef,
        undef,
@@ -6526,7 +6493,7 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 #: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt.
 #: also_indoor: traffic (ex-H[falsch],re-G,W[ungenau],T[ungenau])
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße und Kiefholzstraße beendet?
-#: last_checked: 2024-09-30
+#: last_checked: 2024-10-07 (traffic)
 # REMOVED --- #: check_frequency: 14d
 #: check_frequency: 7d
 	q4::inwork 13715,9455 13614,9333
@@ -7376,6 +7343,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1490230.php
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-wuhletalstrasse/
 #: by: https://viz.berlin.de/site/assets/files/1680/wuhletalstrasse.png
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1843151768089166207
 #: source_id: viz2021:13.569037,52.560857,07.10.2024,07:00 (bis 12.10.2024)
 	q3::inwork 21913,17376 21797,17418 21719,17427 21539,17442 21284,17454 21066,17503
 ',

@@ -16645,7 +16645,7 @@ EOF
        text  => 'L 026 Brüssow - Prenzlau zw. Baumgarten und Prenzlau Grundhafter Straßenbau Vollsperrung 21.09.2009-30.12.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 45414,105210 45099,104840 44963,104618 44698,104375 44487,104325 42804,104235 42306,103942 41979,103529 41955,103509 41700,103365
+	2::inwork 45414,105210 45099,104840 44963,104618 44698,104375 44487,104325 43722,104284 42804,104235 42306,103942 41979,103529 41955,103509 41700,103365
 EOF
      },
      { from  => $isodate2epoch->("2021-04-07 08:00:00"), # 1253397600, # 2009-09-20 00:00
@@ -17790,7 +17790,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/09/214',
        data  => <<EOF,
-	2::inwork 42804,104235 44487,104325
+	2::inwork 42804,104235 43722,104284 44487,104325
 EOF
      },
      { from  => 1267945200, # 2010-03-07 08:00
@@ -19041,7 +19041,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/09/214-7',
        data  => <<EOF,
-	2::inwork 46615,105925 47587,106693
+	2::inwork 46615,105925 46888,106140 47587,106693
 EOF
      },
      { from  => 1284745737, # 2010-09-17 19:48
@@ -19648,7 +19648,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/10/214-10',
        data  => <<EOF,
-	2::inwork 45414,105210 45550,105305 45766,105353 45906,105450 45985,105518 46064,105570 46615,105925 47587,106693
+	2::inwork 45414,105210 45550,105305 45766,105353 45906,105450 45985,105518 46064,105570 46615,105925 46888,106140 47587,106693
 EOF
      },
      { from  => 1302991200, # 2011-04-17 00:00
@@ -21119,12 +21119,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-10-06 00:00:00"), # 1348929655, # undef, # 
-       until => $isodate2epoch->("2025-01-31 18:00:00"), # 1348929658, # undef, # XXX
+       until => 1728280447, # $isodate2epoch->("2025-01-31 18:00:00"), # 1348929658, # undef, # XXX
 #       text  => 'Gleimstr.: Bauarbeiten zwischen Ystadter Str. und Schönhauser Allee, Einbahnstraße Richtung Westen',
        text  => 'Gleimstr.: Bauarbeiten an der Schönhauser Allee, Einbahnstraße Richtung Osten, evtl. sind auch Radfahrer betroffen, vom 7.10.2024 bis Ende Januar 2025',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (alte Meldung) ---	q3::inwork; 10418,15704 10426,15705 10554,15725 10701,15750 10953,15787
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1843142960277557379
+#: by: https://pbs.twimg.com/media/GZDVWScXkAAxIrK?format=jpg&name=medium (explizit Radfahrer frei)
 	q4::inwork; 10953,15787 10701,15750
 EOF
      },
@@ -34152,7 +34154,7 @@ EOF
        type  => 'handicap',
        source_id => '217300297',
        data  => <<EOF,
-	q4::inwork 60206,86603 59776,86911 59791,87005 59779,87064 59776,87207 59766,87273
+	q4::inwork 60206,86603 59886,86855 59776,86911 59791,87005 59779,87064 59776,87207 59766,87273
 EOF
      },
      { from  => 1626559200, # 2021-07-18 00:00
@@ -41435,7 +41437,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2023-09-24 07:00:00"),
-       until => $isodate2epoch->("2024-10-07 17:00:00"),
+       until => undef, dont_check_date => 1, # $isodate2epoch->("2024-10-07 17:00:00"),
        text  => 'Nordufer: zwischen Fehmarner Str. und Föhrer Str. Bauarbeiten, Sperrung der Fahrbahn, vom 25.09.2023 07:00 bis 07.10.2024 17:00, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
@@ -41445,6 +41447,7 @@ EOF
 #: osm_watch: way id="4543441" version="41"
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2024-09-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-10-07 vvv
@@ -43511,7 +43514,7 @@ EOF
 #: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt.
 #: also_indoor: traffic (ex-H[falsch],re-G,W[ungenau],T[ungenau])
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße und Kiefholzstraße beendet?
-#: last_checked: 2024-09-30
+#: last_checked: 2024-10-07 (traffic)
 # REMOVED --- #: check_frequency: 14d
 #: check_frequency: 7d
 	q4::inwork 13715,9455 13614,9333
@@ -44954,6 +44957,7 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1490230.php
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-wuhletalstrasse/
 #: by: https://viz.berlin.de/site/assets/files/1680/wuhletalstrasse.png
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1843151768089166207
 #: source_id: viz2021:13.569037,52.560857,07.10.2024,07:00 (bis 12.10.2024)
 	q3::inwork 21913,17376 21797,17418 21719,17427 21539,17442 21284,17454 21066,17503
 EOF
