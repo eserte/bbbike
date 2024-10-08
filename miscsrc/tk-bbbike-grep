@@ -162,7 +162,8 @@ sub run_grep {
 		@tag = 'activeItem';
 	    }
 
-            $rotext->insert('end', "$filename\t$matching_text\n", @tag);
+	    (my $displayed_filename = $filename) =~ s/-orig//;
+            $rotext->insert('end', "$displayed_filename\t$matching_text\n", @tag);
 	    $result_lines++;
         }
     }
