@@ -91,8 +91,9 @@ Tk::grid(
     ($rotext = $mw->Scrolled('ROText', -height => 10, -wrap => 'none', -scrollbars => 'soe')),
     -sticky => 'nsew',
 );
-#$rotext->tagConfigure('clickable', -foreground => 'blue', -underline => 1);
-#$rotext->tagBind('clickable', '<Button-1>', sub { display_file($rotext->index('current')); });
+# Note: please adapt also flash_rotext if changing or adding here new coloring tags
+$rotext->tagConfigure('removedItem', -background => '#ffcccc', -foreground => 'black');
+$rotext->tagConfigure('activeItem',  -background => '#ccffcc', -foreground => 'black');
 
 # make sure everything is horizontally expanded (only one column)
 $mw->gridColumnconfigure($_, -weight => 1) for (0);
@@ -154,7 +155,14 @@ sub run_grep {
 	    $rotext->windowCreate('end', -window => $bbbike_button);
 	    $rotext->insert('end', ' ') unless $bbbike_p;
 
-            $rotext->insert('end', "$filename\t$matching_text\n");
+	    my @tag;
+	    if ($matching_text =~ /^#\s*REMOVED/) {
+		@tag = 'removedItem';
+	    } else {
+		@tag = 'activeItem';
+	    }
+
+            $rotext->insert('end', "$filename\t$matching_text\n", @tag);
 	    $result_lines++;
         }
     }
@@ -166,10 +174,14 @@ sub run_grep {
     sub flash_rotext {
 	my($color) = @_;
 	return if $timer_id && $rotext->afterInfo($timer_id);
-	my $original_color = $rotext->cget('-background');
-	$rotext->configure(-background => $color);
+	my @original_colors = ($rotext->cget('-background'), $rotext->tagCget('removedItem', '-background'), $rotext->tagCget('activeItem', '-background'));
+	$rotext->configure(-background                   => $color);
+	$rotext->tagConfigure('removedItem', -background => $color);
+	$rotext->tagConfigure('activeItem',  -background => $color);
 	$timer_id = $rotext->after(500, sub {
-				   $rotext->configure(-background => $original_color);
+				   $rotext->configure(-background                   => shift @original_colors);
+				   $rotext->tagConfigure('removedItem', -background => shift @original_colors);
+				   $rotext->tagConfigure('activeItem',  -background => shift @original_colors);
 				   undef $timer_id;
 			       });
     }
