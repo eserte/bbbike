@@ -52,6 +52,7 @@ $top_frame->Label(-text => "Grep BBBike data:")->pack(-side => 'left');
 my $grep_entry = $top_frame->Entry->pack(-side => 'left', -fill => 'x', -expand => 1);
 $grep_entry->insert("end", "Brandenburger Tor");
 my $grep_button = $top_frame->Button(-text => "Grep", -command => \&run_grep)->pack(-side => 'left');
+$grep_entry->bind('<Return>' => sub { $grep_button->invoke });
 
 my $emacs_p = do {
     my $emacs_icon_file = get_emacs_icon();
