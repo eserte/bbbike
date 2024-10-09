@@ -1532,7 +1532,7 @@ check-disabled:
 
 .for i in u s
 .check_$(i)bahnhof2:	$(i)bahnhof Berlin.coords.data
-	${NO_LOCALE} grep -i '	$(i)[AB] ' $(i)bahnhof |\
+	${NO_LOCALE} grep -P -i '	$(i)(A|B|Bau) ' $(i)bahnhof |\
 	    $(SED) -e 's/ *(.*)//' -e 's/	.*//' -e 's/bhf\./bahnhof/' -e 's/Bhf\./Bahnhof/' |\
 	    $(SORT_GERMAN_LOCALE) -u > /tmp/$(i)bahnhof1
 	${NO_LOCALE} grep -i '^$(i)-Bhf' Berlin.coords.data |\
