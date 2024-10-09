@@ -96,7 +96,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-09-28
+#: last_checked: 2024-10-09
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -392,7 +392,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-10-03 (architektur-urbanistik) vvv
+#: last_checked: 2024-10-09 (daf) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -515,7 +515,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-10-05 (mapillary) vvv
+#: last_checked: 2024-10-07 (mapillary) vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -673,7 +673,7 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300
 #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan)
 #: also_indoor: traffic (G,B,ex-W)
-#: last_checked: 2024-09-07 vvv
+#: last_checked: 2024-10-09 vvv
 #: next_check: 2024-11-01 vvv
 #: valid: -20241101 vvv
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294
@@ -912,8 +912,8 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
-#: osm_watch: way id="640465875" version="13"
-#: last_checked: 2024-09-27
+#: osm_watch: way id="640465875" version="14"
+#: last_checked: 2024-10-08 (osm)
 #: check_frequency: 120d
 #: next_check: 2025-04-30
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -930,7 +930,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: note: Die Absperrung beginnt 50m vor dem Einmündungsbereich.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-27 vvv
+#: last_checked: 2024-10-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
@@ -1279,7 +1279,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # 
 #: also_indoor: traffic (B,G,H)
 #: note: Halteverbotsschilder bis 23.10.2024
-#: last_checked: 2024-06-22 vvv
+#: last_checked: 2024-10-09 vvv
 #: next_check: 2024-10-23 vvv
 #: valid: -20241023 vvv
 Mozartstr./Calandrellistr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege	q2::inwork 5619,3958 5710,3751 5791,3563
@@ -1809,7 +1809,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch: note 4103526 1
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2024-09-27
+#: last_checked: 2024-10-09
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -2099,7 +2099,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/ (1. Quartal 2026: Einreichung der Planfeststellungsunterlagen) (2. Quartal 2029 - 3. Quartal 2031) (3. Quartal 2030 - 4. Quartal 2032)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
 #: osm_watch: way id="77098244" version="19"
-#: last_checked: 2023-11-04
+#: last_checked: 2024-10-09
 #: check_frequency: 360d
 #: next_check: 2026-03-31
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
@@ -2746,14 +2746,19 @@ Tullaweg - An der Heilandsweide: Fußgänger	q1 8464,990 8492,1050
 (KGA Birkholz): einige Fußgänger	q1 7766,-920 8059,-1077
 Schäßburger Weg: enge Straße	q1+ 6963,-82 6983,-123 7040,-188 7090,-225 7127,-248
 (Lichterfelder Ring - Mauerweg): teilweise enger Weg	q2+ 6582,600 6598,536 6600,150
-(Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren nicht erlaubt	q3 7437,1859 7592,1892 7612,1918 7646,2019 7645,2110
-#: note: explizit erlaubt nördl. Wedellstr.-Keffenbrinkweg
-(Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren (teilweise) erlaubt	q1- 7645,2110 7636,2161 7634,2267 7665,2357 7704,2482 7779,2722 7783,2730 7798,2765 7807,2961 7837,2957
+#: note: Grünanlage, meist mit expliziten Radfahren-verboten-Zusatzschildern vvvv
+(Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren nicht erlaubt	q3 7438,1855 7592,1892 7619,1939 7628,1975 7648,2005 7649,2052 7659,2073 7650,2112
+(Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren nicht erlaubt	q3 7650,2112 7628,2185 7644,2234 7649,2296 7658,2326 7671,2355 7704,2420
+(Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren nicht erlaubt	q3 7645,2352 7651,2364 7704,2482 7760,2651 7767,2713 7779,2722 7783,2730 7798,2765 7807,2961 7837,2957
 (Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren nicht erlaubt	q3 7837,2957 7852,3183
+(Malteserstr. - Kamenzer Damm): Fußgänger, Radfahren nicht erlaubt	q3 7619,1939 7653,1952 7680,1977 7687,2018 7678,2044 7659,2073
+(Malteserstr. - Kamenzer Damm, Querweg): Fußgänger, Radfahren nicht erlaubt	q3 7671,2355 7651,2364
+#: note ^^^
+(Emmichstr. - Parkweg): Fußgänger, Radfahren nicht erlaubt	q3 7645,2352 7641,2343 7646,2332 7658,2326
 (Halbauer Weg - Parkweg): Fußgänger, Radfahren erlaubt	q1- 7758,2973 7795,2963 7807,2961
-(Hanielweg - Parkweg): Spielplatz, Fußgänger, teilweise eng	q3 7562,1796 7565,1806 7592,1892
-#: note: kein explizites Radfahrverbot
-(Kamenzer Damm - Wunsiedeler Weg): Fußgänger	q1 7776,3163 7769,3264 7784,3369 7800,3435 7788,3551 7737,3598 7694,3623 7555,3632
+(Hanielweg - Parkweg): Spielplatz, Fußgänger, teilweise eng	q3 7562,1796 7561,1804 7581,1828 7571,1832 7595,1877 7592,1892
+#: note: Grünanlagenschilder, kein explizites Radfahrverbot
+(Kamenzer Damm - Wunsiedeler Weg): Fußgänger, Grünanlage	q3 7776,3163 7769,3264 7784,3369 7794,3434 7788,3551 7737,3598 7694,3623 7555,3632
 Rehauer Pfad: enge Straße	q1 7587,3411 7626,3554
 # REMOVED (Wege anders eingezeichnet) --- (zum Hafen Wannsee): Fußgänger	q2 -4827,1433 -4791,1561 -4870,1464 -4905,1514
 Appelbacher Weg: Rampe	q2 27780,893 27804,878
@@ -5773,7 +5778,8 @@ Seefelder Str. (Fußweg): Fußgänger, Bordstein	q3 17362,16189 17383,16197
 #: corrected_by ^^^
 #: by: ^^^
 #: by: Daniel Weber [AM] vvv
-(Malteserstr. - Hanielweg): Fußgänger	q1 7451,1818 7534,1818 7562,1796
+#: corrected_by: srt (Fußgänger, q1 -> ..., neu gemachter Geh- und Radweg?)
+(Malteserstr. - Hanielweg): gemeinsamer Rad- und Gehweg, breit	q0- 7438,1855 7527,1823 7562,1796
 (An der Kol. Königsgraben, nördl. Parkweg): Fußgänger	q1 7189,1942 7390,2021
 #: corrected_by: srt (Fußgänger, q1 -> ...)
 #: note: Grünanlagenschild mit "Radfahren verboten"-Zusatzschild

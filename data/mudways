@@ -135,11 +135,12 @@ Am Betriebsbahnhof Schöneweide: unbefestigt, mit vielen kleinen Kuhlen	X 18160,4
 #: mud: 2024-06-22: einige Pfützen	h=q2+
 Stadtpark Steglitz: etwas älterer Parkweg	X 5890,4674 5841,4557 5836,4469 5787,4400
 # 
-#: mud: 2024-02-07: einige große Pfützen, matschige Stellen	h=q3
-#: mud: 2024-05-29: einige große Pfützen	h=q2
-#: mud: 2024-06-22: einige große Pfützen	h=q2
-#: note: mittlerweile hat sich eine etwas breitere Spur neben dem eigentlichen Weg gebildet, die sowohl von Fußgängern als auch Radfahrern genutzt wird, sofern der Platz da ist
-Weverpromenade: wassergebundene Decke	X 5787,4400 5738,4361 5541,4305
+# REMOVED (seit der Sanierung vermutlich nicht mehr problematisch)
+# REMOVED --- #: mud: 2024-02-07: einige große Pfützen, matschige Stellen	h=q3
+# REMOVED --- #: mud: 2024-05-29: einige große Pfützen	h=q2
+# REMOVED --- #: mud: 2024-06-22: einige große Pfützen	h=q2
+# REMOVED --- #: note: mittlerweile hat sich eine etwas breitere Spur neben dem eigentlichen Weg gebildet, die sowohl von Fußgängern als auch Radfahrern genutzt wird, sofern der Platz da ist
+# REMOVED --- Weverpromenade: wassergebundene Decke	X 5787,4400 5738,4361 5721,4356 5541,4305
 # 
 #: mud: 2020-03-14: keine Beeinträchtigungen	h=q0
 #: mud: 2023-12-26: einige feuchtere Stellen	h=q1-
@@ -608,6 +609,7 @@ Teltowkanal: Parkweg, OK	X 4209,2641 4064,2293 3980,2102 3821,1725
 # 
 #: mud: 2022-02-05: mäßig matschig	h=q2-,wet
 #: mud: 2024-05-29: einige matschige Stellen unter der Brücke	h=q2,wet
+#: mud: 2024-10-09: einige matschige Stellen unter der Brücke	h=q2,wet
 Unterführung Emil-Schulz-Brücke: unbefestigt, Schotter	X 4274,2717 4272,2704 4247,2652 4209,2641
 # 
 #: mud: 2022-04-24: leicht bis mäßig sandig, die meisten Stellen umfahrbar	h=q2-,dry
@@ -747,5 +749,11 @@ Weg an der Havel: wassergebundene Decke	X -3529,13452 -3546,13503
 (südliches Spreeufer): unbefestigter Weg	X 5643,12253 5714,12290 5770,12346
 # 
 #: mud: 2024-07-13: einige Pfützen und matschige Stellen	h=q2,wet
-Pankeweg, Bürgerpark: Parkweg, OK	Q1 9882,18318 9855,18322 9716,18290
+Pankeweg, Bürgerpark: Parkweg, OK	X 9882,18318 9855,18322 9716,18290
+# 
+#: mud: 2024-10-09: wenige Pfützen und matschige Stellen	h=q1+,wet
+(Malteserstr. - Kamenzer Damm): Parkweg, etwas holprig	X 7837,2957 7852,3183
+# 
+#: mud: 2024-10-09: zahlreiche Pfützen über die gesamte Wegbreite	h=q3-,wet
+(Malteserstr. - Kamenzer Damm): Parkweg	X 7783,2730 7798,2765 7807,2961
 # 

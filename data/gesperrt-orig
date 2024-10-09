@@ -193,7 +193,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2024-09-30
+#: last_checked: 2024-10-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -429,7 +429,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
 #: osm_watch: way id="27491366" version="17"
-#: last_checked: 2024-06-22
+#: last_checked: 2024-10-09
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
@@ -2156,7 +2156,7 @@ Alt-Biesdorf: Mittelstreifen	3nocross 21108,11628 21251,11560 21275,11547 21311,
 Kurt-Schumacher-Damm: Mittelstreifen	3nocross 4704,17101 4931,17174 4997,17241
 Rudower Str.: Mittelstreifen	3nocross 14788,3441 14822,3409 14994,3245
 Tempelhofer Damm: Mittelstreifen	3nocross 9248,4904 9239,4980 9206,5193
-Malteserstr.: Mittelstreifen	3nocross 7437,1859 7423,1905 7409,1953
+Malteserstr.: Mittelstreifen	3nocross 7438,1855 7423,1905 7409,1953
 Marienfelder/Daimler: Abbiegen nicht erlaubt	3 8602,2377 8579,2265 8639,2212
 Munsterdamm: Mittelstreifen	3nocross 6767,5274 6767,5233 6747,5010
 Puschkinallee: Hecken	3nocross 13782,9954 13711,10022 13579,10146
@@ -3350,7 +3350,7 @@ Drängelgitter am Restaurant Igel	BNP:3 -1659,18104
 Drängelgitter am Restaurant Igel	BNP:3 -1659,18076
 #: note ^^^
 Drängelgitter (lichte Breite ca. 110cm)	BNP:3::trailer=10 26116,12292
-Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 7565,1806
+Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 7561,1804
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 7783,2730
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 7837,2957
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 7795,2963
@@ -4795,7 +4795,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-09-30
+#: last_checked: 2024-10-09
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4806,7 +4806,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://dielinke.berlin/start/det/nachfrage-zur-beantwortung-der-schriftlichen-anfrage-scha-ix-0495-bauprojekt-fanny-zobel-strasse/ (weiterhin: Gesamtmaßnahme bis 2027)
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2024-09-30 vvv
+#: last_checked: 2024-10-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -4942,12 +4942,12 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: check_frequency: 90d vvv
 # REMOVED (laut osm offen) --- #: osm_watch: way id="719023971" version="15" --- #: last_checked: 2024-03-04 (daf) --- Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 # REMOVED --- #: osm_watch: way id="719023970" version="16"
-#: osm_watch: node id="11956061128" version="1"
+# REMOVED --- #: osm_watch: node id="11956061128" version="1"
 #: osm_watch: node id="9814568851" version="1"
 #: last_checked: 2024-09-01 vvv
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251
 #: note: Bauzäune können weggeschoben sein (gesehen 2024-06-09, 2024-07-20), aber das sieht sehr nach Hochbaustelle aus
-#: osm_watch: way id="719023970" version="16"
+#: osm_watch: way id="719023970" version="17"
 Am Kutscherhaus: Hochbaustelle	2::inwork 21386,5251 21514,5310
 #: last_checked ^^^
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
@@ -5014,7 +5014,7 @@ Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-10-05 (mapillary)
+#: last_checked: 2024-10-07 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -5349,7 +5349,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2024-09-25 (osm)
+#: last_checked: 2024-10-09 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-12-31
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372

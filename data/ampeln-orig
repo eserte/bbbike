@@ -49,7 +49,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # REMOVED --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2024-09-15 (mapillary)
+#: last_checked: 2024-10-09
 #: check_frequency: 30d
 #: next_check: 2025-04-30
 #: valid: -20250430
@@ -422,6 +422,8 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 # 
 ################################################################################
 #: section: Ampeln und Bahnübergänge in Berlin vvv
+#: note: Anforderung
+	F 6776,5553
 #: note: Anforderungsampel
 	F 10679,17441
 #: note: Herbst 2023: noch eine provisorische Ampel, aber die richtigen Masten stehen bereits
@@ -1805,7 +1807,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 6844,1813
 	X 6937,671
-	X 7318,759
+	X 7316,773
 	X 8683,6326
 	X 11308,-2535
 	F 10617,452
@@ -2037,6 +2039,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8615,4151
 #: note: Anforderungsampel
 	F 6102,4726
+#: note: Anforderung für Radfahrer aus der Stindestr. (beide Richtungen)
 	X 6212,4622
 #: note: Anforderung für linksabbiegende Radfahrer aus dem Prellerweg in die Sembritzkistr.
 	X 7236,5685
@@ -2698,7 +2701,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-09-30
+#: last_checked: 2024-10-09
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -2919,6 +2922,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 21337,13470
 	X 23021,13982
 	X 5476,19450
+#: XXX_prog: Ampel gilt nicht auf dem Radweg
 #: note: Anforderungsampel
 	F 6749,940
 nur Museumsbetrieb der Heidekrautbahn	B0 7768,21253
@@ -3398,7 +3402,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-10-05 (mapillary) vvv
+#: last_checked: 2024-10-07 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

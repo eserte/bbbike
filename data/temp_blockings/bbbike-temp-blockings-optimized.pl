@@ -2781,7 +2781,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 2722,
          'recurring' => 1,
-         'text' => 'enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist, Anhänger können gar nicht passieren',
+         'text' => 'enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls das Tor gesperrt ist, Anhänger können gar nicht passieren',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4414,7 +4414,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-27
+#: last_checked: 2024-10-09
 #: check_frequency: 30d
 #: next_check: 2024-12-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -4431,7 +4431,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
 #: osm_watch: way id="1246171055" version="2"
-#: last_checked: 2024-09-26 vvv
+#: last_checked: 2024-10-09 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: note 4090527 5
 # REMOVED --- zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
@@ -5090,7 +5090,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=719774#post719774 (Geplanter Projektabschluss: 2023-12-31)
 #: by: https://lp.bestplace-immobilien.de/streustrasse/
 #: osm_watch: way id="1170463985" version="4"
-#: osm_watch: way id="1170463986" version="2"
+#: osm_watch: way id="1170463986" version="3"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024
 #: also_indoor: traffic (G,W)
@@ -5163,7 +5163,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: osm_watch[closed]: note 3631209 6
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: priority: #A
-#: last_checked: 2024-06-22 vvv
+#: last_checked: 2024-10-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-09-30 vvv
 #: osm_watch: way id="46907541" version="16"
@@ -5177,7 +5177,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 ',
          'from' => 1697320800,
          'id' => 3727,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann bis Spätsommer 2025 gesperrt sein (Stand Sommer 2024: Weg ist voraussichtlich bis Ende 2024 offen)',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann bis Spätsommer 2025 gesperrt sein (Stand Anfang Oktober 2024: Weg ist noch offen)',
          'type' => 'gesperrt',
          'until' => 1759248000
        },
@@ -6178,7 +6178,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-09-18
+#: last_checked: 2024-10-07 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -6513,16 +6513,14 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
        undef,
        {
          'data' => '#: source_id: viz2021:13.451021,52.489535,27.05.2024,07:00 (bis 05.07.2024) (inaktiv)
-#: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt\'s eine offizielle Wegführung für Radfahrer über den Hochbord.
-#: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt.
-#: also_indoor: traffic (ex-H[falsch],re-G,W[ungenau],T[ungenau])
-#: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße und Kiefholzstraße beendet?
-#: last_checked: 2024-10-07 (traffic)
-# REMOVED --- #: check_frequency: 14d
-#: check_frequency: 7d
+#: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt\'s eine offizielle Wegführung für Radfahrer über den Hochbord. Mittlerweile (2024-10-09) ist die Kiefholzstraße offen.
+#: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt. 2024-10-09: es sieht so aus, als ob die Arbeiten nach Süden gewandert sind.
+#: also_indoor: traffic (ex-H[falsch],re-G[zuviel],W[zuviel],T,B)
+#: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße beendet?
+#: last_checked: 2024-10-09
+#: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 ',
-         'dont_check_date' => 1,
          'from' => 1716699600,
          'id' => 4067,
          'text' => 'Wildenbruchstr.: Bauarbeiten zwischen Karl-Kunger-Str. und Kiefholzstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
@@ -6763,16 +6761,23 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462538.php (Widerspruch: "nie vollständig gesperrt" & "temporäre Umleitung", Dauer 3 Monate)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/weverpromenade-wird-erneuert_a420569
-#: XXX Nach den Bauarbeiten bessere Qualität & der mudways-Eintrag kann wohl erstmal entfernt werden.
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden?
+#: XXX Nach den Bauarbeiten vielleicht bessere Qualität
+#: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen.
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden? vvv
+#: last_checked: 2024-10-09 vvv
+#: check_frequency: 14d vvv
 #: osm_watch: way id="26158804" version="25"
-#: next_check: 2024-10-08
-	2::inwork 5787,4400 5738,4361 5541,4305
+Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
+# REMOVED (hier mittlerweile offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5721,4356 5541,4305
+Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
+#: last_checked ^^^
+#: check_frequency ^^^
+#: add_fragezeichen ^^^
 ',
          'dont_check_date' => 1,
          'from' => 1720303200,
          'id' => 4107,
-         'text' => 'Weverpromenade: Bauarbeiten, mögliche Sperrungen, vom 08.07.2024 bis voraussichtlich Mitte Oktober 2024',
+         'text' => 'Weverpromenade/Stadtpark Steglitz: Bauarbeiten, mögliche Sperrungen, vom 08.07.2024 bis voraussichtlich Mitte Oktober 2024, evtl. wird verlängert',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6810,15 +6815,20 @@ zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwor
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024)
 #: also_indoor: search Bäkebrücke
 #: also_indoor: traffic (G,B,T,W)
-# REMOVED --- #: add_fragezeichen: Sind auch Radfahrer und Fußgänger von der Sperrung betroffen? --- #: last_checked: 2024-05-29 --- #: check_frequency: 90d --- 
-#: last_checked: 2024-09-06 (VIZ)
-# REMOVED --- #: check_frequency: 10d
-#: next_check: 2024-10-31
-	q4::inwork 4587,3097 4659,3065
+#: add_fragezeichen: Ist der Teltowkanaluferweg weiterhin komplett gesperrt? vvv
+#: last_checked: 2024-10-09 vvv
+#: check_frequency: 10d vvv
+#: next_check: 2024-10-31 vvv
+Teltowkanaluferweg	2::inwork 4587,3097 4692,3225
+Bäkebrücke	q3::inwork 4587,3097 4659,3065
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => 1718628480,
          'id' => 4109,
-         'text' => 'Bäkebrücke: Sperrung, nur für Fußgänger offen, ggfs. schieben, bis 31.10.2024, evtl. wird verlängert',
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges, außerdem Sperrung der Fahrbahn der Bäkebrücke, bis 31.10.2024, evtl. wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6893,7 +6903,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-30
+#: last_checked: 2024-10-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-14
 	q4::inwork; 14103,10489 14170,10675
@@ -7029,7 +7039,8 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        },
        undef,
        {
-         'data' => '#: source_id: 246001451 (bis 25.10.2024)
+         'data' => '#: source_id: 246001451 (bis 25.10.2024) (inaktiv)
+#: by: https://www.neb.de/fahrplanaenderungen/fahrgastinfo/karow-schoenerlinde-5/ (18.10.2024 21:45 bis 20.10.2024)
 	2::inwork 12056,34918 12025,35002 11964,35230
 ',
          'from' => 1729182600,
@@ -7087,28 +7098,30 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480271.php
 #: XXX Dabei werden die Flächen für Rad- und Fußverkehr getrennt. Für den Radverkehr entsteht ein 3m breiter Weg (für beide Richtungen).
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
+#: last_checked: 2024-10-09
 #: next_check: 2024-12-01
 	2::inwork 6007,4340 6147,4329 6210,4325
 ',
+         'dont_check_date' => 1,
          'from' => 1725141600,
          'id' => 4153,
          'text' => 'Am Eichgarten: Baurbeiten zwischen Stindestr. und Siemensstr., Sperrung des Weges, vom 2.9.2024 bis Anfang Dezember 2024',
          'type' => 'gesperrt',
-         'until' => 1734303599
+         'until' => undef
        },
        undef,
        {
          'data' => '#: source_id: viz2021:13.376381,52.443079,01.08.2024,08:00 (hier nur Kfz-Verkehr, bis 01.11.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1818885622083256587
-#: note: bei Mapillary nicht zu erkennen, ob der Gehweg für Radfahrer frei ist
-#: last_checked: 2024-08-27 (mapillary)
+# REMOVED (ja, sind auch betroffen) --- #: note: bei Mapillary nicht zu erkennen, ob der Gehweg für Radfahrer frei ist
+#: last_checked: 2024-10-09
 #: check_frequency: 30d
 #: next_check: 2024-11-01
 	q4::inwork; 8780,4054 8615,4151
 ',
          'from' => 1722405600,
          'id' => 4155,
-         'text' => 'Ringstr.: Bauarbeiten Richtung Nordwesten zwischen Prühßstr. und Gersdorfstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.08.2024 08:00 bis 01.11.2024 17:00',
+         'text' => 'Ringstr.: Bauarbeiten Richtung Nordwesten zwischen Prühßstr. und Gersdorfstr., Fahrbahn gesperrt, vom 01.08.2024 08:00 bis 01.11.2024 17:00',
          'type' => 'gesperrt',
          'until' => 1730476800
        },
@@ -7179,15 +7192,15 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024)
+         'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
          'from' => 1725548760,
          'id' => 4164,
-         'text' => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 30.10.2024 17:00',
+         'text' => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 29.11.2024 17:00',
          'type' => 'handicap',
-         'until' => 1730304000
+         'until' => 1732896000
        },
        undef,
        {
@@ -7204,7 +7217,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'data' => '#: next_check_id: KARLMARXPLATZ-2024
 #: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-27
+#: last_checked: 2024-10-09
 #: check_frequency: 60d
 #: next_check: 2025-01-05
 	q4::inwork 12972,7602 13100,7626
@@ -7276,7 +7289,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        },
        {
          'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends; am 2024-10-07 (Mo) mittags sah es hier nach Bauarbeiten aus
-#: last_checked: 2024-10-07
+#: last_checked: 2024-10-09
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
@@ -7389,6 +7402,19 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
          'text' => 'Quickborner Str.: zwischen Wilhelmsruher Damm und Uhlandstr. Bauarbeiten, Fahrbahn im Bereich der Gleisschleife gesperrt, vom 05.10.2024 07:00 bis 15.11.2024 23:59',
          'type' => 'handicap',
          'until' => 1731711540
+       },
+       {
+         'data' => '#: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
+#: source_id: bvg2024:140#HIM_FREETEXT_241551
+#: also_indoor: traffic (H,G,B,T,ex-W)
+#: last_checked: 2024-10-09
+	q3::inwork 10944,10606 11100,10530
+',
+         'from' => undef,
+         'id' => 4184,
+         'text' => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

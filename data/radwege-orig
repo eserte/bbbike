@@ -265,7 +265,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: by: srt
 #: XXX: temporäre Radspur
 #: osm_watch: way id="305483806" version="11"
-#: osm_watch: way id="25042039" version="37"
+#: osm_watch: way id="25042039" version="38"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
 #: last_checked: 2024-09-27
 #: check_frequency: 180d
@@ -340,7 +340,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-09-30 vvv
+#: last_checked: 2024-10-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -414,17 +414,17 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 #: next_check_id: WESER-2021
 #: historical_note: früher (bis 2024) RW1;RW1
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert
-#: last_checked: 2024-09-26
+#: last_checked: 2024-10-09
 	RW0;RW0 12740,8862 12881,8750
 #: next_check_id: WESER-2021
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtregelung noch prüfen; es wird eine Einbahnstraßenregelung für Kfz geben, offen Richtung Südosten
-#: last_checked: 2024-09-26
+#: last_checked: 2024-10-09
 	RW0;RW0 12881,8750 13033,8628
 #: next_check_id: WESER-2021
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße Richtung Osten noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!)
 #: osm_watch: way id="940399849" version="11"
 #: osm_watch: way id="1203072585" version="3"
-#: last_checked: 2024-09-15
+#: last_checked: 2024-10-09
 	RW0;RW7 13033,8628 13124,8562
 	RW7;RW7 13124,8562 13217,8493
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
@@ -1047,9 +1047,10 @@ neu asphaltiert	RW2; 10997,16280 10989,16197 10982,16121
 #: note: an Kreuzungen grün-rot-grün beschichtet
 Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,15525
 #: next_check_id: SCHOENHAUSERALLEE-2024
-#: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
-#: last_checked: 2024-09-25
-neu asphaltiert	RW1; 10917,15525 10902,15422
+# REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
+#: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
+#: last_checked: 2024-10-09 (mapillary)
+noch nicht komplett markiert	RW3; 10917,15525 10902,15422
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
 neu asphaltiert	RW1; 10883,15251 10883,15129
@@ -1310,7 +1311,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-09-30 vvv
+#: last_checked: 2024-10-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1459,9 +1460,9 @@ enger Radweg, kein Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1;
 enger Radweg, kein Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1; 6767,5274 6767,5233 6747,5010 6746,4999 6744,4983
 enger Radweg, kein Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW2; 6744,4983 6651,4843
 #: note: Radweg ist extra beleuchtet
-	RW1; 6767,5274 6777,5621 6771,5684 6757,5858
+viele Wurzelhebungen	RW1; 6767,5274 6776,5553 6771,5684 6757,5858
 #: note: Radweg ist extra beleuchtet
-einige Wurzelhebungen	RW1; 6757,5858 6771,5684 6777,5621 6767,5274
+einige Wurzelhebungen	RW1; 6757,5858 6771,5684 6776,5553 6767,5274
 	RW1;RW1 6757,5858 6736,6071 6714,6293 6710,6342 6694,6512 6675,6740 6668,6810 6650,7017 6640,7138
 Gehwegplatten	RW1; 6757,5858 6696,5854
 	RW4; 6696,5854 6757,5858
@@ -1887,7 +1888,7 @@ Verbundsteinpflaster	RW1; 6494,10440 6403,10424 6276,10401 6147,10383 6029,10356
 #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (Fahrbahnsanierung bis 30.11.2023) (bis 01.12.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="26"
 #: osm_watch: way id="458915639" version="7"
-#: last_checked: 2024-06-22 vvv
+#: last_checked: 2024-10-09 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070
@@ -3051,7 +3052,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-09-26
+#: last_checked: 2024-10-09
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3078,7 +3079,7 @@ Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei; die letzten 20 Meter 
 #: note ^^^
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX früherer Eintrag, wird vielleicht wieder hergestellt: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0;
-#: last_checked: 2024-09-30
+#: last_checked: 2024-10-09
 #: check_frequency: 60d
 #: next_check: 2024-12-31
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 13973,9465
@@ -3392,7 +3393,9 @@ Verbundsteinpflasterradweg	RW1;RW1 12010,16774 12017,16734 12045,16574 12051,165
 #: by srt
 Verbundsteinpflasterradweg	RW2;RW1 12087,16322 12097,16263 12090,16199
 	RW1;RW1 4485,10307 4360,10320 4239,10358
-	RW1;RW1 7318,759 7058,844 6966,880 6812,925 6749,940 6631,968
+	RW1;RW1 7316,773 7058,844 6966,880 6812,925
+Radweg nur aufgemalt	RW1; 6812,925 6749,940 6631,968
+	RW1; 6631,968 6749,940 6812,925
 Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1; 6631,968 6515,1010 6446,1033 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5733,1240 5585,1275
 Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1; 5585,1275 5733,1240
 #: note: "Radfahrer frei" durchgekreuzt (zuletzt gesehen: 2021-09-12)
@@ -3402,7 +3405,10 @@ Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1; 5909,1187 6010,1157 6106
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustopp-auf-der-hildburghauser-bezirk-trennt-sich-von-baufirma_a205954#gallery=default&pid=249223 (Freigabe des Radwegs, zumindest Richtung Westen)
 Gehweg für Radfahrer frei	RW1;RW1 5585,1275 5414,1304 5223,1318
 Gehweg für Radfahrer frei, recht eng	RW1;RW1 5223,1318 5059,1337 4897,1352 4795,1362
-	RW2;RW1 7790,672 7729,691 7599,725 7318,759
+	RW2; 7790,672 7729,691 7632,726 7603,733 7383,765 7316,773
+	RW1; 7316,773 7383,765
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20, Sa+So 9-20 Uhr	RW1; 7383,765 7603,733 7632,726
+	RW1; 7632,726 7729,691 7790,672
 #: XXX_osm meint cycleway=track
 	RW0;RW1 10793,-161 10822,-806
 	RW1;RW1 10822,-806 10849,-1332 10853,-1475 10870,-1645 10903,-1768 10909,-1790 10980,-1919 11073,-2037
@@ -5804,7 +5810,7 @@ Verbundsteinpflaster	RW1;RW1 17832,3740 17585,3745
 #: note: zumindest nördl. der Preysingstr. relativ schlechte Qualität, holprig vvv
 	RW2;RW2 7757,834 7759,906
 	RW2;RW1 7759,906 7753,994
-holpriges Verbundsteinpflaster	RW1;RW1 7753,994 7740,1041 7630,1297 7539,1529 7451,1818 7437,1859 7423,1905 7409,1953 7390,2021 7285,2377 7235,2542 7115,3003
+holpriges Verbundsteinpflaster	RW1;RW1 7753,994 7740,1041 7630,1297 7539,1529 7438,1855 7423,1905 7409,1953 7390,2021 7285,2377 7235,2542 7115,3003
 #: note ^^^
 #: note ^^^
 #: by: Kasi:
@@ -7425,7 +7431,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2024-09-27 vvv
+#: last_checked: 2024-10-09 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7465,7 +7471,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2024-09-27
+#: last_checked: 2024-10-09
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
@@ -8009,21 +8015,21 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-09-07
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2024-09-26
+#: last_checked: 2024-10-09
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4; 11117,10326 10975,10334
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
-#: last_checked: 2024-09-07 vvv
+#: last_checked: 2024-10-09 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2024-12-20 vvv
 #XXX	RW4; 10975,10334 10871,10322
 #XXX	RW4; 10871,10322 10975,10334 11117,10326
-	RW0; 10975,10334 10871,10322
+	RW2; 10975,10334 10871,10322
 	RW0; 10871,10322 10975,10334 11117,10326
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -8409,24 +8415,25 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.401157,52.498364,06.10.2021,08:00 (bis 29.03.2024) (bis 15.04.2024) (bis 28.02.2024) (inaktiv)
 #: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024) (bis 31.12.2024)
 #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (Gitschiner/Alexandrinenstr., bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv) (bis 01.11.2024)
-#: source_id: viz2021:13.399611,52.49841,08.10.2024,15:06 (bis 01.11.2024)
+#: source_id: viz2021:13.399611,52.49841,08.10.2024,15:06 (bis 01.11.2024) (inaktiv)
 #: source_id: viz2021:13.40304,52.49845,31.07.2024,14:54 (bis 31.08.2024) (inaktiv)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="33"
 #: osm_watch: way id="335487059" version="28"
-#: last_checked: 2024-09-07 vvv
+#: last_checked: 2024-10-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-06-30 vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024)
 # REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle
-provisorischer Radstreifen	RW4; 10871,10322 10708,10312
+#: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;
+	RW2; 10871,10322 10708,10312
 #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle, Radfahrer überholen verboten
 #provisorischer Radstreifen	RW4; 10708,10312 10605,10312
 	RW0; 10708,10312 10605,10312
 provisorischer Radstreifen	RW4; 10605,10312 10708,10312 10871,10322
-#: historical_note: früher provisorisch geschützter Radstreifen, mittlerweile Engstelle (etwa 120m), Radfahrer überholen verboten
-	RW0; 10363,10303 10122,10294
+#: historical_note: früher provisorisch geschützter Radstreifen, mittlerweile Engstelle (etwa 120m), Radfahrer überholen verboten, nun wieder teilweise provisorisch, teilweise schon mit Weißstrich markiert
+provisorisch geschützter Radstreifen	RW4; 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 10363,10303 10605,10312
 provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
 #: next_check ^^^
