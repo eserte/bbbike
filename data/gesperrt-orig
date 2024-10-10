@@ -4525,7 +4525,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.berliner-woche.de/mitte/c-bauen/katholisches-forum-am-bebelplatz-wird-komplettiert_a385644 (Umbauarbeiten: Kathedrale bis Ende 2024, Bernhard-Lichtenberg-Haus bis Mitte 2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2024/03/sankt-hedwigs-kathedrale-sanierung-wiedereroeffnung-umbau-24-november-berlin-mitte.html (Eröffnung der Kathedrale am 24.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-oeffnet-nach-langer-sanierung-id248135
-#: last_checked: 2024-09-19
+#: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2024-11-24
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -4913,7 +4913,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: osm_watch: way id="60333311" version="35"
 #: osm_watch: way id="289966097" version="24"
 #: priority: #A
-#: last_checked: 2024-10-06 (webcam)
+#: last_checked: 2024-10-10
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 # REMOVED (existiert nicht mehr) --- Grunerstr.: Straßenzug wird entfernt	2::inwork 10697,12303 10746,12364
@@ -4983,20 +4983,20 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2024-10-06 (webcam)
+#: last_checked: 2024-10-10
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-10-06 (webcam)
+#: last_checked: 2024-10-10
 #: check_frequency: 30d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen, die Masten stehen schon.
+#: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen, die Masten und Signalgeber stehen schon.
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-10-06 (webcam)
+#: last_checked: 2024-10-10
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
@@ -5063,7 +5063,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
 #: source_id: viz2021:13.55807,52.56199,27.06.2024,15:13 (bis 31.03.2025) (inaktiv)
 #: XXX Wann wird die Brücke wieder eröffnet?
-#: last_checked: 2024-06-29 (mapillary)
+#: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2025-06-30
 #: valid: 20190603-20250630
@@ -5113,7 +5113,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: also_indoor: traffic (G)
 #: osm_watch: way id="40451054" version="23"
-#: last_checked: 2024-09-22 (krickstadt)
+#: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-08-17
 # REMOVED --- #: next_check: 2024-02-02
@@ -5420,7 +5420,7 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 # 
 #: next_check_id: BER-20XX
 #: XXX möglicherweise bleibt das noch erhalten, solange es Terminal 5 gibt? Es gibt aber Kartenwerke (Pharus, Falk), bei denen die Jürgen-Schumann-Allee durchgängig ist
-#: last_checked: 2024-09-15 (osm)
+#: last_checked: 2024-10-08 (mapillary)
 # REMOVED --- #: next_check: 2020-10-31
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 210d

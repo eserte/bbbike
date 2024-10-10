@@ -2203,10 +2203,10 @@ unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10512,12039 10550,1209
 Mühlendamm -> Fischerinsel, Spreeufer: unbequemes Passieren des Mittelstreifens	3::igndisp 10574,12131 10550,12096 10562,12087
 Fischerinsel, Spreeufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10562,12087 10550,12096 10512,12039
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10697,12303 10703,12313 10722,12349 10716,12382
-Spandauer Str. -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10697,12303 10703,12313 10671,12356
-Eiergasse -> Spandauer Str.: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10703,12313 10722,12349
-Spandauer Str. -> Spandauer Str. (Mitte) [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10703,12313 10722,12349 10665,12413
-Spandauer Str. (Mitte) [Gehweg] -> Spandauer Str.: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10722,12349 10716,12382
+Mühlendamm -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10697,12303 10703,12313 10671,12356
+Eiergasse -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10703,12313 10722,12349
+Mühlendamm -> Spandauer Str. (Mitte) [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10703,12313 10722,12349 10665,12413
+Spandauer Str. (Mitte) [Gehweg] -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10722,12349 10716,12382
 unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,10711 5341,10756 5475,10808
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5341,10756 5313,10420
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5313,10420 5341,10756 5215,10711

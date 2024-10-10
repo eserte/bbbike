@@ -1443,6 +1443,7 @@ Uber-Platz	NN 12990,11006 13067,11145
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136/3Ip0mPrtHdHfEEJK92UAk9fSljJVnFBwbl4AUfvB/NdmfaPE/57-Anlagen/01/DS0766_Vzk_FreiaEisner.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_31_2123_2242_online.pdf (Benennung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1490813.php (Einweihung am 18.10.2024)
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/neuer-strassenname_a426565
 #: XXX Vorschlag: Freia-Eisner-Straße; mittlerweile tatsächlich als "Planstraße C" offiziell ausgeschildert
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="17"
@@ -1483,7 +1484,7 @@ Beuthstr. (Mitte)	N 10318,11434 10226,11617 10201,11631
 Spittelmarkt	HH 10240,11740 10299,11786 10314,11804
 Spittelmarkt	HH 10299,11786 10238,11741
 Gertraudenstr.	HH 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999 10512,12039
-Mühlendamm	HH 10512,12039 10550,12096 10574,12131 10625,12206 10646,12234 10662,12255 10697,12303
+Mühlendamm	HH 10512,12039 10550,12096 10574,12131 10625,12206 10646,12234 10662,12255 10697,12303 10703,12313 10722,12349 10716,12382
 # REMOVED --- #: note: früher Hauptverkehrsstraße, jetzt nur noch als Gehweg übrig, wird beim Umbau des Molkenmarkts um/zurückgebaut --- (Molkenmarkt - zur Stralauer Str.)	NN 10736,12285 10772,12288
 Littenstr.	N 11155,12184 11139,12243 11088,12382 11084,12395 11065,12452 10973,12611 10951,12637
 Magazinstr. (Mitte)	N 11562,12597 11329,12497
@@ -1560,7 +1561,7 @@ Sperlingsgasse	N 10289,12106 10207,12055
 Petriplatz	N 10460,11979 10418,12016
 Brüderstr. (Mitte)	N 10392,11991 10289,12106
 Scharrenstr.	N 10301,11899 10332,11929 10392,11991 10418,12016 10480,12077
-Spandauer Str. (Mitte)	HH 10697,12303 10703,12313 10722,12349 10716,12382 10687,12421
+Spandauer Str. (Mitte)	HH 10716,12382 10687,12421
 Spandauer Str. (Mitte)	H 10687,12421 10646,12470 10599,12526 10542,12587 10431,12709 10373,12776 10360,12793 10308,12859
 Spandauer Str. (Mitte) [Gehweg]	NN 10580,12513 10626,12455 10665,12413 10722,12349
 Leipziger Str.	HH 10213,11728 10240,11740
@@ -10412,7 +10413,7 @@ Märkische Allee - Wuhletalstr.	H 20717,17516 20853,17528 20891,17572
 #: next_check_id: WUHLETALBRUECKE-2019
 #: XXX Wann wird die provisorische Überfahrt wieder entfernt?
 #: osm_watch: way id="706450234" version="9"
-#: last_checked: 2024-05-06 (mapillary)
+#: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 720d
 #: next_check: 2025-06-30
 #: valid: 20190603-20250630

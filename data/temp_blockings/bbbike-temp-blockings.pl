@@ -29685,7 +29685,6 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
 #: by: https://www.bahninfo-forum.de/read.php?9,800515,811033#msg-811033
-#: by: https://nachgefragt.bvg.de/altstadt-koepenick/
 #: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024)
 #: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
@@ -34981,8 +34980,8 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="21"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-09-21 (youtube)
-#: check_frequency: 120d
+#: last_checked: 2024-09-27 (youtube)
+#: check_frequency: 60d
 	2::inwork 9699,-600 9562,-619
 EOF
      },
@@ -41047,7 +41046,7 @@ EOF
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-10-05 (krickstadt) vvv
+#: last_checked: 2024-10-08 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-10-17 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -41464,7 +41463,7 @@ EOF
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-18 vvv
+#: last_checked: 2024-10-08 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-11-30 vvv
 	q2::inwork; 6334,14756 6513,14725
@@ -42768,11 +42767,11 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
 EOF
      },
      { from  => 1709449200, # 2024-03-03 08:00
-       until => $isodate2epoch->("2024-10-16 17:00:00"), # 1717167600, # 2024-05-31 17:00
+       until => 1728582826, # $isodate2epoch->("2024-10-16 17:00:00"), # 1717167600, # 2024-05-31 17:00
        text  => 'Charlottenstr.: Anbindung Chausseestr. gesperrt, vom 04.03.2024 08:00 bis 16.10.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024) (bis 21.06.2024) (bis 26.07.2024) (bis 27.09.2024) (inaktiv) (bis 16.10.2024)
+#: source_id: viz2021:13.145434,52.415303,04.03.2024,08:00 (bis 31.05.2024) (bis 21.06.2024) (bis 26.07.2024) (bis 27.09.2024) (inaktiv) (bis 16.10.2024) (inaktiv)
 #: note: außerdem Gegenverkehrsregelung, dafür fällt die Fußgängerampel weg
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1764546320277086229
 #: by: https://pbs.twimg.com/media/GHmM9cLWgAI8oMM?format=jpg&name=large
@@ -43378,7 +43377,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024) (bis 20.12.2024)
-#: source_id: viz2021:13.50255,52.50891,07.05.2024,00:00 (bis 20.12.2024)
+#: source_id: viz2021:13.50255,52.50891,07.05.2024,00:00 (bis 20.12.2024) (inaktiv)
 	q4::inwork; 17096,11585 16915,11634
 EOF
      },
@@ -43984,8 +43983,8 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
-#: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde)
-#: last_checked: 2024-09-24
+#: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr
+#: last_checked: 2024-10-10
 #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 EOF
@@ -44110,7 +44109,7 @@ EOF
      },
      { from  => 1718628480, # 2024-06-17 14:48
        until => undef, # $isodate2epoch->("2024-08-30 17:00:00"), # undef, # XXX
-       text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges, außerdem Sperrung der Fahrbahn der Bäkebrücke, bis 31.10.2024, evtl. wird verlängert',
+       text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges, außerdem Sperrung der Fahrbahn im Bereich der Bäkebrücke, bis 31.10.2024, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BAEKEBRUECKE-2022
@@ -44134,8 +44133,11 @@ EOF
 #: last_checked: 2024-10-09 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2024-10-31 vvv
-Teltowkanaluferweg	2::inwork 4587,3097 4692,3225
-Bäkebrücke	q3::inwork 4587,3097 4659,3065
+Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
+Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
+#: note: eigentlich q3-::inwork
+Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
+Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -45004,9 +45006,11 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-4#post-23882
+#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/SharedDocs/Pressemitteilungen/sperrung_fussgaengerbruecke_lwk.pdf?__blob=publicationFile&v=1 (Sperrung ab 5.8.2024 für fünf Wochen)
 #: osm_watch: way id="22792467" version="9"
 #: add_fragezeichen: Ist die Brücke weiterhin gesperrt?
 #: last_checked: 2024-09-27 (architektur-urbanistik)
+#: check_frequency: 14d
 	2::inwork 5790,11643 5802,11677
 EOF
      },

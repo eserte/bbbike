@@ -2885,7 +2885,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-10-07 vvv
+#: last_checked: 2024-10-10 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr. Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -6373,7 +6373,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7609 (Antrag)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (bis Mitte Oktober für Kfz-Verkehr gesperrt)
-#: last_checked: 2024-09-04
+#: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2024-10-11
 provisorische Radspur	RW4; 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
@@ -7852,7 +7852,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="8"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2024-10-07
+#: last_checked: 2024-10-10
 asphaltierter Radweg ist größtenteils nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
 	RW3;RW3 11555,20051 11628,20092 11690,20127 11799,20224 11959,20365 12008,20368
@@ -7931,6 +7931,8 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 	RW6;RW6 6363,4047 6428,4076 6493,4105 6517,4051 6452,4024 6428,4076
 10km/h	RW6;RW6 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277 17422,17288
 Busspur gilt Mo-Sa 7-20 Uhr	RW5; 5238,13714 5231,13843 5220,14043
+teilweise mit Pollern	RW3; 5220,14043 5231,13843
+	RW3; 5231,13843 5238,13714
 	RW4; 7714,13223 7759,13246
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18718,8583 18704,8427 ---	RW0; 18718,8583 18704,8427
 neu asphaltiert	RW2; 18737,8686 18727,8634 18718,8583 18704,8427 18718,8583

@@ -36,13 +36,13 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: last_checked: 2024-10-07
+#: last_checked: 2024-10-10
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 #: osm_watch: note 4452740 1
-#: last_checked: 2024-10-07 vvv
+#: last_checked: 2024-10-10 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -63,7 +63,7 @@ Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,1
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2024-09-03
+#: last_checked: 2024-10-10 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-08-22
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -1106,7 +1106,7 @@ Gothaer Str.: Fahrbahn gesperrt, mögliche Umwege	q2::inwork 22899,15073 22905,14
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/richtfeste-fuer-290-wohnungen_a417760
 #: also_indoor: traffic (G,H,B)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2024-09-08 vvv
+#: last_checked: 2024-10-08 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv
 #: valid: -20241231 vvv
@@ -3571,7 +3571,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-09-24
+#: last_checked: 2024-10-10
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4967,7 +4967,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
 #: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn
 #: XXX Bauarbeiten an den Fahrbahnrändern; Absperrungen können früh zum Schulbeginn an beiden Enden der Fußgängerzone aufgestellt sein (einmalig am 2024-09-24 oder regelmäßig?)
-#: last_checked: 2024-09-24
+#: last_checked: 2024-10-10
 #: check_frequency: 30d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1+ 11635,12398 11845,12292
 # 
