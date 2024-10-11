@@ -29914,7 +29914,7 @@ EOF
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2024-08-14
+#: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -41191,7 +41191,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-05-26 00:00:00"), # 1693720800, # 2023-09-03 08:00
-       until => undef, # $isodate2epoch->("2024-08-09 16:00:00"), # 1699286400, # 2023-11-06 17:00
+       until => $isodate2epoch->("2024-10-14 16:00:00"), # 1699286400, # 2023-11-06 17:00
 #      text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 04.09.2023 08:00 Uhr bis 06.11.2023 17:00 Uhr',
 #      text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 27.05.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
        text  => 'B246, Zossen: Sperrung des Bahnübergangs, voraussichtlich bis 14.10.2024',
@@ -41200,6 +41200,7 @@ EOF
 #: next_check_id: ZOSSENB246-2023
 #: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024)
 #: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/sperrung-des-bahnuebergangs-b246-stubenrauchstrasse-verlaengert/ (bis 14.10.2024, Umleitung über "An den Wulzen")
+#: note: laut osm "Straße wird letztmalig vom 14.10. bis 11.11.2024 geöffnet, danach final gesperrt"
 #: also_indoor: traffic (G,ex-W,T,H)
 #: last_checked: 2024-09-14
 # REMOVED --- #: check_frequency: 10d
@@ -43218,7 +43219,7 @@ EOF
 #: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
-#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024)
+#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 	q4::inwork; 25050,13539 25163,13494
@@ -44988,7 +44989,7 @@ EOF
 EOF
      },
      { from  => 1728165600, # 2024-10-06 00:00
-       until => 1728770400, # 2024-10-13 00:00
+       until => 1728674820, # 1728770400, # 2024-10-13 00:00
        text  => 'Wuhletalstr.: Bauarbeiten, Umfahrungsstrecke existiert, vom 7.10.2024 bis 12.10.2024',
        type  => 'handicap',
        data  => <<EOF,
@@ -44996,7 +44997,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-wuhletalstrasse/
 #: by: https://viz.berlin.de/site/assets/files/1680/wuhletalstrasse.png
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1843151768089166207
-#: source_id: viz2021:13.569037,52.560857,07.10.2024,07:00 (bis 12.10.2024)
+#: source_id: viz2021:13.569037,52.560857,07.10.2024,07:00 (bis 12.10.2024) (inaktiv)
 	q3::inwork 21913,17376 21797,17418 21719,17427 21539,17442 21284,17454 21066,17503
 EOF
      },

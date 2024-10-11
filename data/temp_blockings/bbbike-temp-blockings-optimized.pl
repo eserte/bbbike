@@ -3440,7 +3440,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2024-08-14
+#: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -5830,6 +5830,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
          'data' => '#: next_check_id: ZOSSENB246-2023
 #: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024)
 #: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/sperrung-des-bahnuebergangs-b246-stubenrauchstrasse-verlaengert/ (bis 14.10.2024, Umleitung über "An den Wulzen")
+#: note: laut osm "Straße wird letztmalig vom 14.10. bis 11.11.2024 geöffnet, danach final gesperrt"
 #: also_indoor: traffic (G,ex-W,T,H)
 #: last_checked: 2024-09-14
 # REMOVED --- #: check_frequency: 10d
@@ -5841,7 +5842,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
          'id' => 3913,
          'text' => 'B246, Zossen: Sperrung des Bahnübergangs, voraussichtlich bis 14.10.2024',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1728914400
        },
        undef,
        undef,
@@ -6428,7 +6429,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
-#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024)
+#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 	q4::inwork; 25050,13539 25163,13494
@@ -7353,20 +7354,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'handicap',
          'until' => 1730908800
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1490230.php
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-wuhletalstrasse/
-#: by: https://viz.berlin.de/site/assets/files/1680/wuhletalstrasse.png
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1843151768089166207
-#: source_id: viz2021:13.569037,52.560857,07.10.2024,07:00 (bis 12.10.2024)
-	q3::inwork 21913,17376 21797,17418 21719,17427 21539,17442 21284,17454 21066,17503
-',
-         'from' => 1728165600,
-         'id' => 4181,
-         'text' => 'Wuhletalstr.: Bauarbeiten, Umfahrungsstrecke existiert, vom 7.10.2024 bis 12.10.2024',
-         'type' => 'handicap',
-         'until' => 1728770400
-       },
+       undef,
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-4#post-23882
 #: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/SharedDocs/Pressemitteilungen/sperrung_fussgaengerbruecke_lwk.pdf?__blob=publicationFile&v=1 (Sperrung ab 5.8.2024 für fünf Wochen)

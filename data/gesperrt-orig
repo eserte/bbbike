@@ -3826,6 +3826,11 @@ Barriere	BNP:3::trailer=10 10628,16644
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2024-10-11
+#: check_frequency: 21d
+Weg im Gr¸nzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
+# 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898
 #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant)
 #: last_checked: 2024-09-17 (daf)
@@ -4169,7 +4174,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon H‰user mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straﬂen offen? vvv
-#: last_checked: 2024-09-30 vvv
+#: last_checked: 2024-10-11 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -4462,7 +4467,7 @@ Marktplatz Adlershof: mˆglicherweise wird die nˆrdliche Fahrbahn dauerhaft einge
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10452 (Vorlage zur Beschlussfassung)
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2024-09-28
+#: last_checked: 2024-10-11
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, mˆglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -4568,12 +4573,12 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: note: Halteverbotsschilder bis 31.12.2024
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
-#: last_checked: 2024-09-28
+#: last_checked: 2024-10-11
 #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
-#: last_checked: 2024-07-20
+#: last_checked: 2024-10-11
 Georg-Klingenberg-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17792,8660 17846,8644
-#: last_checked: 2024-07-20
+#: last_checked: 2024-10-11
 Ruth-Baumgarte-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17738,8450 17794,8429
 #: next_check ^^^
 #: check_frequency ^^^
@@ -4596,7 +4601,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂ
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2024-09-28
+#: last_checked: 2024-10-11
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
