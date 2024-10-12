@@ -3526,7 +3526,7 @@ Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,1271
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/sicherer-zur-neuen-schuldrehscheibe-kommen_a409193 (vielleicht sogar eine Fußgängerampel?)
 #: source_id: viz2021:13.439487,52.530759,03.07.2023,10:00 (bis 21.07.2023) (inaktiv)
 #: priority: #D
-#: last_checked: 2024-09-25
+#: last_checked: 2024-10-12
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-07-21
 Kniprodestr./Pasteurstr.: wird hier ein Zebrastreifen gebaut?	?::projected 12723,13934 12766,13942 12758,13896
@@ -4083,11 +4083,11 @@ Benekendorffstr.: wird hier eine Fahrradstraße ausgewiesen?	? 4616,22478 4716,22
 #: priority: #D vvv
 # REMOVED (keine baldige Realisierung zu erwarten) --- #: next_check: 2024-09-30 vvv
 #: XXX hier schon Richtung Osten realisiert
-#: last_checked: 2024-09-25
+#: last_checked: 2024-10-12
 #: check_frequency: 120d
 Grellstr.: Radspur wird mit Grünbeschichtung ausgeführt	?; 12704,15105 12417,15272 12325,15328 12245,15380 11941,15586
 #: XXX hier noch keine Bauarbeiten zu sehen
-#: last_checked: 2024-09-25
+#: last_checked: 2024-10-12
 #: check_frequency: 120d
 Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673
 # REMOVED --- #: next_check ^^^
@@ -4691,10 +4691,12 @@ Karl-Marx-Platz: Umgestaltung, glatteres Pflaster, "sichere Führung" für den Rad
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/planungen-fuer-die-neugestaltung-der-strassenbahnhaltestelle-s-greifswalder-strasse-sind-schon-sehr-konkret_a253105 (Baubeginn Ende 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/umbau-an-der-greifswalder-strasse-verzoegert-sich-weiter_a285928 (Fertigstellung 2024)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/kritik-an-plaenen-fuer-neue-tramhaltestelle-am-s-bahnhof-greifswalder-strasse_a325154 (Baustart frühestens 2023, Bauzeit 18 Monate)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/senat-nennt-termin-fur-baustart-umstrittener-tunnel-am-s-bahnhof-greifswalder-strasse-bleibt-doch-9929375.html (Baubeginn 2025)
+#: by[nocache]: https://archive.is/ly85E
 #: by: https://www.bahninfo-forum.de/read.php?9,741529,741529#msg-741529 (bleibt der Fußgängertunnel? dann wohl keine Ampel)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6296 (Antrag)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/tramhaltestelle-wird-umgebaut_a385488 (Unterführung bleibt? Umbau ab 2025)
-#: last_checked: 2024-09-25
+#: last_checked: 2024-10-12
 #: next_check: 2025-03-01
 S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12704,15105 12681,15028
 # 
@@ -5160,7 +5162,8 @@ Stromstr.: Radverkehrsmaßnahme (Sanierung oder Radstreifen?)	?; 6164,12980 6183,
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erneuerung-sickingenstrasse-neues-ufer-1085906.php (bis 2024)
 # REMOVED (realisiert) --- #: last_checked: 2019-07-13 (mapillary) (hier scheint es im Westabschnitt was zu geben) --- #: next_check: 2019-07-13 --- Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	? 4187,13704 4271,13735 4421,13793 4583,13845
-#: osm_watch: way id="203912354" version="19"
+#: osm_watch: way id="203912354" version="22"
+#: osm_watch: way id="1323283749" version="1"
 #: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
@@ -6726,9 +6729,11 @@ Bahnhof Köpenick: neuer Ostzugang	?::inwork 22700,6138 22700,6045 22624,6044
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze?date=20240724
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,809524#msg-809524
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,809845#msg-809845 (mittlerweile nur noch für Radfahrer befahrbar)
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,811931#msg-811931
 #: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
 #: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information
 #: also_indoor: traffic (none)
+#: last_checked: 2024-10-05 (bahninfo-forum)
 # REMOVED --- #: next_check: 2024-08-05
 #: next_check: 2024-10-18
 Am Wiesenrain: Einschränkungen wegen Bauarbeiten am S-Bhf. Hirschgarten	? 23931,5992 24122,6007
@@ -7264,7 +7269,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2024-10-07
+#: last_checked: 2024-10-12
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
@@ -7755,7 +7760,7 @@ Gehrenseebrücke: Neubau vorgesehen, dann vermutlich mit Radwegen	? 18316,16636 1
 #: source_id: LS/221-F/24/173 (Vorbereitungsarbeiten, bis 31.12.2024)
 #: XXX die Landesstraße wird senkrecht auf die Bundesstraße stoßen, Zweirichtungsradweg auf der östlichen Seite
 #: osm_watch: way id="346561721" version="7"
-#: last_checked: 2024-06-14 (indoor)
+#: last_checked: 2024-10-12 (indoor)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-15
 Rüdersdorf - B1: Verlegung der Landesstraße, Radweg	?::projected 37644,9869 37621,9843
@@ -8543,7 +8548,7 @@ Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: XXX Wann starten die Bauarbeiten? vvv
-#: last_checked: 2024-10-09 (mapillary) vvv
+#: last_checked: 2024-10-12 (daf) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-07 vvv
@@ -9603,10 +9608,12 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: by: https://berliner-abendblatt.de/kiez-news/steglitz-zehlendorf/neuer-campus-in-dahlem-diese-strasse-sucht-einen-namen-id204498
 #: by: https://suedwest.wista.de/fileadmin/user_upload/downloads/potenzial/Potenzial_FUBIC_2023-5.pdf (Eröffnung Ende 2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1452222.php (Richtfest FUHUB (Teil des Fubic))
+#: by: https://www.berliner-woche.de/dahlem/c-bauen/fuhub-soll-bis-ende-dieses-jahres-fertig-werden_a426427 (bis Ende November 2024)
 #: osm_watch: way id="87526277" version="7"
 #: last_checked: 2024-06-22
 #: check_frequency: 360d
-#: next_check: 2025-12-31
+# REMOVED --- #: next_check: 2025-12-31
+#: next_check: 2024-11-30
 Bebauungsplan 6-33 (Fubic): hier entstehen Straßen und Wege	?::projected 3357,4749 3357,4699 3484,4696 3478,4867 3356,4870 3357,4749 3295,4747
 # 
 # REMOVED (-> strassen-orig) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7190 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036898088455/898088455/00091575/75-Anlagen/02/vzb0115_V_Benenng_Privatstr_Charl_v_Mahlsd_Rin.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_56_6505_6588_online.pdf --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="220943758" version="2" --- #: XXX fehlt in Berlin.coords.data --- #: last_checked: 2017-07-01 --- #: check_frequency: 180d --- Charlotte-von-Mahlsdorf-Ring: geplante Straße	?::projected 24649,10710 24728,10722 24719,10647 24739,10645

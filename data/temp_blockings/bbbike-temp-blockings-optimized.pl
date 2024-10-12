@@ -4282,7 +4282,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2024-09-17 (daf)
+#: last_checked: 2024-10-06 (architektur-urbanistik)
 #: check_frequency: 45d
 #: next_check: 2024-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -5316,7 +5316,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,ex-G,ex-W)
-#: last_checked: 2024-10-06 (traffic)
+#: last_checked: 2024-10-12 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -6906,8 +6906,8 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => undef
        },
        {
-         'data' => '#: osm_watch: way id="27457006" version="17"
-#: last_checked: 2024-09-25 (osm)
+         'data' => '#: osm_watch: way id="27457006" version="18"
+#: last_checked: 2024-10-12 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -6985,7 +6985,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
 #: XXX Werden noch weitere Wege gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
-#: last_checked: 2024-09-03
+#: last_checked: 2024-10-12
 #: check_frequency: 45d
 #: next_check: 2024-11-30
 	2::inwork 12056,15159 12082,15206 12103,15218
@@ -7046,7 +7046,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-09-22
+#: last_checked: 2024-10-12
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30
 	q4::inwork 13530,13014 13470,12990
@@ -7355,21 +7355,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'until' => 1730908800
        },
        undef,
-       {
-         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-4#post-23882
-#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/SharedDocs/Pressemitteilungen/sperrung_fussgaengerbruecke_lwk.pdf?__blob=publicationFile&v=1 (Sperrung ab 5.8.2024 für fünf Wochen)
-#: osm_watch: way id="22792467" version="9"
-#: add_fragezeichen: Ist die Brücke weiterhin gesperrt?
-#: last_checked: 2024-09-27 (architektur-urbanistik)
-#: check_frequency: 14d
-	2::inwork 5790,11643 5802,11677
-',
-         'from' => undef,
-         'id' => 4182,
-         'text' => 'Untere Freiarchenbrücke (am Schleusenkrug): wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.373896,52.597683,05.10.2024,07:00 (bis 15.11.2024) (inaktiv)
 #: source_id: viz2021:13.371871,52.599415,05.10.2024,07:00 (bis 15.11.2024)
@@ -7388,6 +7374,7 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
 #: source_id: bvg2024:140#HIM_FREETEXT_241551
 #: also_indoor: traffic (H,G,B,T,ex-W)
 #: last_checked: 2024-10-09
+#: next_check: 2024-10-31
 	q3::inwork 10944,10606 11100,10530
 ',
          'from' => undef,
