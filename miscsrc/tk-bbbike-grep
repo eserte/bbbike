@@ -228,76 +228,81 @@ sub toggle_update_from_file {
     }
 }
 
-# Function to update selection content
-sub update_selection_content {
-    my $selection_content;
-    eval {
-	$selection_content = $mw->SelectionGet(-selection => 'PRIMARY');
-    };
-    if ($@) {
-	$selection_content = "";
-	return;
-    }
-    if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED)\t.*\t([^\t]+)\t/) {
-	$selection_content = $1; # VIZ source_id
-    } else {
-	$selection_content =~ s/^\s+//; $selection_content =~ s/\s+$//; $selection_content =~ s/\s\s+/ /g; # trim
-	$selection_content =~ s/\n.*$//;  # Crop after the first line
-    }
-    return if $selection_content eq '';
-    $selection_content = url_normalizations($selection_content);
-    my $old_content = $grep_entry->get();
-    if ($old_content ne $selection_content) {
-	$last_update_change = time;
-	$grep_entry->configure(-text => $selection_content);
-	run_grep();
-    } else {
-	if ($auto_update_from_selection) {
-	    if ($last_update_change + $auto_update_off_seconds < time) {
-		warn "INFO: inactive user, disable Auto Update from Selection.\n";
-		$auto_update_from_selection = 0; toggle_update();
+{
+    my $old_selection_content = '';
+    sub update_selection_content {
+	my $selection_content;
+	eval {
+	    $selection_content = $mw->SelectionGet(-selection => 'PRIMARY');
+	};
+	if ($@) {
+	    $selection_content = "";
+	    return;
+	}
+	if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED)\t.*\t([^\t]+)\t/) {
+	    $selection_content = $1; # VIZ source_id
+	} else {
+	    $selection_content =~ s/^\s+//; $selection_content =~ s/\s+$//; $selection_content =~ s/\s\s+/ /g; # trim
+	    $selection_content =~ s/\n.*$//;  # Crop after the first line
+	}
+	return if $selection_content eq '';
+	$selection_content = url_normalizations($selection_content);
+	if ($old_selection_content ne $selection_content) {
+	    $last_update_change = time;
+	    $old_selection_content = $selection_content;
+	    $grep_entry->configure(-text => $selection_content);
+	    run_grep();
+	} else {
+	    if ($auto_update_from_selection) {
+		if ($last_update_change + $auto_update_off_seconds < time) {
+		    warn "INFO: inactive user, disable Auto Update from Selection.\n";
+		    $old_selection_content = ''; $auto_update_from_selection = 0; toggle_update();
+		}
 	    }
 	}
     }
 }
 
-sub update_file_content {
-    my $mtime = (stat($current_url_filename))[9];
-    if (!defined $mtime) {
-	warn "$current_url_filename has no mtime (probably non-existing?)\n" if $debug;
-	return;
-    }
-    if ($mtime <= $last_update_from_file_change) {
-	# too noisy: warn "$current_url_filename did not change ($mtime <= $last_update_from_file_change)\n" if $debug;
-	return;
-    }
+{
+    my $old_file_content = '';
+    sub update_file_content {
+	my $mtime = (stat($current_url_filename))[9];
+	if (!defined $mtime) {
+	    warn "$current_url_filename has no mtime (probably non-existing?)\n" if $debug;
+	    return;
+	}
+	if ($mtime <= $last_update_from_file_change) {
+	    # too noisy: warn "$current_url_filename did not change ($mtime <= $last_update_from_file_change)\n" if $debug;
+	    return;
+	}
 
-    my $fh;
-    unless (open $fh, $current_url_filename) {
-	warn "ERROR: $current_url_filename is not readable, or maybe vanished in between (error: $!)\n";
-	return;
-    }
-    chomp(my $url = <$fh>);
-    if ($url eq '') {
-	warn "No URL found in $current_url_filename\n" if $debug;
-	return;
-    }
-    if ($url eq 'about:blank') {
-	# ignore: this is shortly visible when creating a new tab
-	return;
-    }
-    $url = url_normalizations($url);
+	my $fh;
+	unless (open $fh, $current_url_filename) {
+	    warn "ERROR: $current_url_filename is not readable, or maybe vanished in between (error: $!)\n";
+	    return;
+	}
+	chomp(my $url = <$fh>);
+	if ($url eq '') {
+	    warn "No URL found in $current_url_filename\n" if $debug;
+	    return;
+	}
+	if ($url eq 'about:blank') {
+	    # ignore: this is shortly visible when creating a new tab
+	    return;
+	}
+	$url = url_normalizations($url);
 
-    my $old_content = $grep_entry->get();
-    if ($old_content ne $url) {
-	$last_update_from_file_change = $mtime;
-	$grep_entry->configure(-text => $url);
-	run_grep();
-    } else {
-	if ($auto_update_from_selection) {
-	    if ($last_update_from_file_change + $auto_update_off_seconds < time) {
-		warn "INFO: inactive user, disable Auto Update from special file.\n";
-		$auto_update_from_file = 0; toggle_update_from_file();
+	if ($old_file_content ne $url) {
+	    $last_update_from_file_change = $mtime;
+	    $old_file_content = $url;
+	    $grep_entry->configure(-text => $url);
+	    run_grep();
+	} else {
+	    if ($auto_update_from_selection) {
+		if ($last_update_from_file_change + $auto_update_off_seconds < time) {
+		    warn "INFO: inactive user, disable Auto Update from special file.\n";
+		    $old_file_content = ''; $auto_update_from_file = 0; toggle_update_from_file();
+		}
 	    }
 	}
     }
