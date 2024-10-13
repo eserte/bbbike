@@ -1678,6 +1678,8 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.830806.php
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12632
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12653
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 ',
@@ -2720,17 +2722,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 157300093 (alter Eintrag von 2015, inaktiv)
-#: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin (neue Sperrung 2024)
-	2::inwork 51806,78469 51798,78477 51668,78605
-',
-         'from' => 1719784800,
-         'id' => 2701,
-         'text' => 'Schönermark - Biesenbrow: Bahnübergang gesperrt, 01.07.2024 bis 13.10.2024',
-         'type' => 'gesperrt',
-         'until' => 1728835200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-f-24-geht-erst-spaeter-in-betrieb_a261679
@@ -5434,12 +5426,12 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'until' => undef
        },
        {
-         'data' => '#: note: Einbahnstraßenbereich ist 50m lang
+         'data' => '#: note: Einbahnstraßenbereich ist 50m lang; Halteverbotsschilder bis 2024-11-30
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-09-23
+#: last_checked: 2024-10-13
 #: check_frequency: 21d
-#: next_check: 2024-12-01
+#: next_check: 2024-11-30
 	q3::inwork; 15648,12687 15643,12875
 ',
          'from' => 1685641032,

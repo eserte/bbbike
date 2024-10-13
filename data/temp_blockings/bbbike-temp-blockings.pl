@@ -17752,6 +17752,8 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.830806.php
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12632
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12653
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 EOF
@@ -39782,12 +39784,12 @@ EOF
        text  => 'Heringer Str.: Einbahnstraßenregelung wegen Hochbauarbeiten, offen Richtung Süden, voraussichtlich bis Herbst 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: note: Einbahnstraßenbereich ist 50m lang
+#: note: Einbahnstraßenbereich ist 50m lang; Halteverbotsschilder bis 2024-11-30
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-09-23
+#: last_checked: 2024-10-13
 #: check_frequency: 21d
-#: next_check: 2024-12-01
+#: next_check: 2024-11-30
 	q3::inwork; 15648,12687 15643,12875
 EOF
      },
@@ -42126,6 +42128,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.559445,52.533827,13.09.2023,07:00 (hier: nur Kfz-Verkehr; bis 26.10.2023; im Anschluss weitere Arbeiten) (bis 05.12.2023) (bis 10.01.2024) (bis 01.03.2024) (bis 21.05.2024) (bis 12.07.2024) (bis 29.08.2024) (bis 27.08.2024) (inaktiv) (bis 28.09.2024) (inaktiv)
 #: source_id: viz2021:13.55914,52.53285,28.08.2024,17:04 (bis 28.09.2024) (inaktiv)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11811
 #: note: bei rbb nur bis 30.04.2024, mittlerweile auch bis 21.05.2024
 Oberfeldstr.	q3::inwork; 20895,14319 20921,14461
 Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,14319
