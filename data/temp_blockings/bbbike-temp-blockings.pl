@@ -16699,7 +16699,7 @@ EOF
        until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9, start => "2023-10-25T00:00:00"]], # findet 2023 nicht statt
-       recurrence_prewarn_days => -30,
+       recurrence_prewarn_days => -37,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -34484,7 +34484,7 @@ EOF
 #: by: https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2024-09-14 (mapillary)
+#: last_checked: 2024-10-12 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 	2::inwork 7673,4223 7769,4315
@@ -35187,7 +35187,7 @@ EOF
 #: note: vermutlich nur im Bereich Sybelstr. 14
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-21
+#: last_checked: 2024-10-11 (mapillary)
 # REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
 	2::inwork 3731,10640 3764,10580
 # REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
@@ -37356,7 +37356,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-09-28
+#: last_checked: 2024-10-14 (daf)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -38029,7 +38029,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
-#: last_checked: 2024-09-26 vvv
+#: last_checked: 2024-10-12 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check_id: 2024-12-31 vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
@@ -39256,7 +39256,7 @@ EOF
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,ex-G,ex-W)
-#: last_checked: 2024-10-12 (traffic)
+#: last_checked: 2024-10-12 (mapillary)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -41200,7 +41200,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZOSSENB246-2023
-#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024)
+#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024) (inaktiv)
 #: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/sperrung-des-bahnuebergangs-b246-stubenrauchstrasse-verlaengert/ (bis 14.10.2024, Umleitung über "An den Wulzen")
 #: note: laut osm "Straße wird letztmalig vom 14.10. bis 11.11.2024 geöffnet, danach final gesperrt"
 #: also_indoor: traffic (G,ex-W,T,H)
@@ -43149,6 +43149,7 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php (bis 30.04.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782276897810076078
 #: by: https://pbs.twimg.com/media/GLiNYstXkAAufMY?format=jpg
+#: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/bauarbeiten-auf-der-heerstrasse_a427027
 #: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024) (inaktiv)
 #: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024) (inaktiv)
 #: source_id: viz2021:13.57589,52.49118,22.04.2024,07:00 (bis 26.04.2024) (inaktiv)
@@ -43572,7 +43573,7 @@ EOF
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-09-27 vvv
+#: last_checked: 2024-10-12 (mapillary) vvv
 #: check_frequency: 21d vvv
 #: next_check: 2024-10-18 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -44135,7 +44136,7 @@ EOF
 #: also_indoor: traffic (G,B,T,W)
 #: add_fragezeichen: Ist der Teltowkanaluferweg weiterhin komplett gesperrt? vvv
 #: last_checked: 2024-10-09 vvv
-#: check_frequency: 10d vvv
+#: check_frequency: 14d vvv
 #: next_check: 2024-10-31 vvv
 Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
 Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
@@ -44349,9 +44350,10 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
 #: last_checked: 2024-10-09
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-09-14
+#: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
 EOF
      },
@@ -44893,6 +44895,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_einschraenkungen_strassenverkehr_20240924ne.pdf
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024)
 #: osm_watch: way id="23984383" version="30"
+#: last_checked: 2024-10-12 (mapillary)
 #: next_check: 2024-11-25
 	2::inwork 9544,17629 9586,17665
 EOF
@@ -45032,16 +45035,35 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, Ende der Bauarbeiten unbekannt',
+       until => $isodate2epoch->("2024-11-11 17:00:00"), # undef, # XXX
+       text  => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, voraussichtlich bis 11.11.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
 #: source_id: bvg2024:140#HIM_FREETEXT_241551
+#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024)
 #: also_indoor: traffic (H,G,B,T,ex-W)
 #: last_checked: 2024-10-09
-#: next_check: 2024-10-31
+#: next_check: 2024-11-11
 	q3::inwork 10944,10606 11100,10530
+EOF
+     },
+     { from  => 1728799200, # 2024-10-13 08:00
+       until => 1738944000, # 2025-02-07 17:00
+       text  => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 14.10.2024 08:00 Uhr bis 07.02.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-F/24/200 (bis 07.02.2025)
+	2::inwork 36087,16319 36539,16154 38171,15125
+EOF
+     },
+     { from  => 1729404000, # 2024-10-20 08:00
+       until => 1751292000, # 2025-06-30 16:00
+       text  => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 30.06.2025 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/223-P/24/161 (bis 30.06.2025)
+	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
 EOF
      },
     );
