@@ -2326,7 +2326,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -3259,10 +3259,12 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1435818.php (Abschluss in der zweiten Augusthälfte 2024)
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/treskowallee-bekommt-neuen-asphalt_a414176
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1486870.php (bis Mitte/Ende Oktober 2024; im Anschluss wird die Fahrtrichtung Nord bis Ende 2025 saniert)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1494211.php (Sperrung der östlichen Fahrbahn vom 16.10.2024 bis Ende 2025)
 #: source_id: 2147342174 (inaktiv)
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024) (bis 27.09.2024) (bis 16.10.2024)
 #: source_id: viz2021:13.52779,52.49067,14.08.2024,14:30 (bis 27.09.2024) (inaktiv)
+#: source_id: viz2021:13.52703,52.486973,16.10.2024,08:00 (östliche Fahrbahn, bis 31.10.2025)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -3270,7 +3272,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: check_frequency: 60d vvv
-#: next_check: 2024-10-15 vvv
+#: next_check: 2024-10-16 vvv
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -5681,6 +5683,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
+#: source_id: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -5960,7 +5963,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-09-26 (mapillary) vvv
+#: last_checked: 2024-10-15 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6277,14 +6280,14 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
        undef,
        undef,
        {
-         'data' => '#: source_id: 236700856 (bis 30.10.2024)
+         'data' => '#: source_id: 236700856 (bis 30.10.2024) (bis 29.11.2024)
 	2::inwork 90239,-16522 90350,-16513 90592,-16499
 ',
          'from' => 1696744800,
          'id' => 4022,
-         'text' => 'L373: Sperrung Bahnüberführung, evtl. sind auch Radfahrer betroffen, 09.10.2023 08:00 Uhr bis 30.10.2024 16:00 Uhr',
+         'text' => 'L373: Sperrung Bahnüberführung, evtl. sind auch Radfahrer betroffen, 09.10.2023 08:00 Uhr bis 29.11.2024 17:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1730300400
+         'until' => 1732896000
        },
        undef,
        undef,
@@ -6389,16 +6392,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'until' => 1730501999
        },
        undef,
-       {
-         'data' => '	q4::temp::play 9570,10566 9556,10666
-',
-         'from' => 1713132000,
-         'id' => 4045,
-         'recurring' => 1,
-         'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 16. April bis zum 15. Oktober (außer Sommerferien) ',
-         'type' => 'gesperrt',
-         'until' => 1729009800
-       },
+       undef,
        undef,
        undef,
        {
@@ -6512,13 +6506,13 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024)
+#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024)
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
 #: last_checked: 2024-10-12 (mapillary) vvv
 #: check_frequency: 21d vvv
-#: next_check: 2024-10-18 vvv
+#: next_check: 2024-11-29 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
 #: next_check ^^
@@ -6642,7 +6636,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-09-24 vvv
+#: last_checked: 2024-10-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6913,16 +6907,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LS/221-E/24/116 (bis 31.10.2024)
-	2::inwork 76863,101305 76791,101034 76787,98891 76787,98838
-',
-         'from' => 1723960800,
-         'id' => 4136,
-         'text' => 'B2 bei Mescherin: Deckenerneuerung, Sperrung, evtl. sind auch Radfahrer betroffen, 19.08.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1730386800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.24754,52.50541,12.08.2024,06:00 (bis 31.01.2025)
 	q4::inwork -45,10912 -220,10893 -466,10860
@@ -7097,7 +7082,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
 #: by: https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen
-#: last_checked: 2024-10-06 (mapillary) vvv
+#: last_checked: 2024-10-15 (website) vvv
 #: check_frequency: 10d vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
 # REMOVED --- Okerstr.	2::inwork 11528,7528 11540,7534
@@ -7132,7 +7117,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        {
          'data' => '#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere.
 #: osm_watch: way id="482690912" version="6"
-#: last_checked: 2024-10-07 vvv
+#: last_checked: 2024-10-15 vvv
 	3 12207,11763 12132,11788 11966,11832
 	3 11966,11832 12132,11788 12207,11763
 #: last_checked ^^^
@@ -7381,6 +7366,34 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
          'text' => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 30.06.2025 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1751292000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
+#: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024)
+#: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
+#: source_id: bvg2024:147#HIM_FREETEXT_242095
+#: also_indoor: traffic (ex-B,ex-T,G)
+#: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
+#: last_checked: 2024-10-15
+Fischerinsel	q4::inwork; 10578,11969 10512,12039
+',
+         'from' => 1727643600,
+         'id' => 4187,
+         'text' => 'Fischerinsel: Richtung Breite Str. vor Mühlendamm: Wasserrohrbruch, Fahrtrichtung gesperrt, vom 30.09.2024 23:00 bis 26.11.2024 17:00',
+         'type' => 'gesperrt',
+         'until' => 1732636800
+       },
+       {
+         'data' => '#: source_id: 246700596 (bis 14.03.2025)
+#: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
+#: XXX laut VIZ-Verkehrsmeldung "Brücke über die Löcknitz", aber das ist doch der Flakenfließ? Oder ist die L38 gemeint?
+	2::inwork 34152,2749 34175,2637 34250,2546
+',
+         'from' => 1728882000,
+         'id' => 4188,
+         'text' => 'Erkner: L30, Bauarbeiten, möglicherweise ist die Brücke für Fußgänger und Radfahrer gesperrt, vom 15.10.2024 07:00 Uhr bis 14.03.2025 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1741964400
        }
      
 );

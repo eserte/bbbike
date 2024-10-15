@@ -72,12 +72,12 @@ Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 # REMOVED --- #: valid: -20240909
 # REMOVED --- Marzahner Chaussee: Gegenverkehrsregelung	X::inwork::alternating 18555,12101
 # 
-#: source_id: viz2021:13.593606,52.444772,15.04.2024,10:00 (bis 17.06.2024) (bis 02.08.2024) (bis 09.08.2024) (bis 12.08.2024) (bis 18.10.2024)
-#: note: gilt wohl nicht auf dem radwegartigen Weg Richtung Süden
-#: last_checked: 2024-09-04
-#: next_check: 2024-10-18
-#: valid: -20241018
-Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
+# REMOVED --- #: source_id: viz2021:13.593606,52.444772,15.04.2024,10:00 (bis 17.06.2024) (bis 02.08.2024) (bis 09.08.2024) (bis 12.08.2024) (bis 18.10.2024) (inaktiv)
+# REMOVED --- #: note: gilt wohl nicht auf dem radwegartigen Weg Richtung Süden
+# REMOVED --- #: last_checked: 2024-09-04
+# REMOVED --- #: next_check: 2024-10-18
+# REMOVED --- #: valid: -20241018
+# REMOVED --- Salvador-Allende-Str.: Gegenverkehrsregelung	X::inwork::alternating 23445,4596
 # 
 # REMOVED --- #: source_id: viz2021:13.533233,52.421662,28.02.2024,12:14 (bis 31.05.2024) (inaktiv)
 # REMOVED --- #: source_id: viz2021:13.53226,52.421897,17.06.2024,10:00 (bis 15.07.2024) (bis 16.07.2024) (inaktiv)
@@ -401,7 +401,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2024-10-07
+#: last_checked: 2024-10-15
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -3404,7 +3404,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-10-07 (mapillary) vvv
+#: last_checked: 2024-10-15 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

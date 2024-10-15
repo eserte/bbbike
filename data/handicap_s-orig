@@ -36,13 +36,13 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: last_checked: 2024-10-10
+#: last_checked: 2024-10-15
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 #: osm_watch: note 4452740 1
-#: last_checked: 2024-10-10 vvv
+#: last_checked: 2024-10-15 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -423,7 +423,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-10-06 (webcam)
+#: last_checked: 2024-10-15
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -436,7 +436,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2024-09-24
+#: last_checked: 2024-10-15
 #: check_frequency: 90d
 #: next_check: 2028-03-31
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -515,7 +515,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-10-07 (mapillary) vvv
+#: last_checked: 2024-10-15 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1908,8 +1908,9 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10680,11875 10776,11942
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10776,11942 10824,11992
 #: note: Grünanlage, Radfahren erlaubt, Fußgänger haben Vorrang vvv
-(Fischerinsel, Spreeufer): Fußgänger	q2 10824,11992 10827,12044 10748,12061 10699,12089 10600,12102 10578,12083
+(Fischerinsel, Spreeufer): Fußgänger	q2 10824,11992 10827,12044 10734,12064 10699,12089 10600,12102 10578,12083
 (Fischerinsel, Spreeufer): Rampe, Bordstein	q3 10578,12083 10585,12106 10562,12087 10550,12096
+(Fischerinsel [Wohngebiet] - Inselbrücke): Fußgänger	q2 10734,12064 10746,12036
 #: note ^^^
 #: XXX_prog BS (Bordstein am Wendehammer, ansonsten q1)
 (Baikalstr. - Rummelsburger Str.): Fußgänger, Bordstein	q3 17276,10617 17277,10633
@@ -4422,8 +4423,8 @@ Vorfahrt Urban-Krankenhaus: Krankenhausgelände	q3 10627,9912 10695,9922 10783,98
 Helene-Jung-Platz: einige Fußgänger	q1 17750,152 17734,83
 Benedicta-Teresia-Weg: einige Fußgänger	q1 17734,83 17730,73
 Fischerinsel: Wohngebietsparkplatz, kurvig	q2 10657,12026 10683,11995 10713,12014
-#: note: früher "q2", "geschützte Grünanlage" ohne weitere Zusatzschilder
-Fischerinsel: Fußgänger	q3 10713,12014 10742,12033 10824,11992
+#: note: früher "q2", "geschützte Grünanlage" ohne weitere Zusatzschilder, mittlerweile wohl Radfahren erlaubt
+Fischerinsel: Fußgänger	q2 10713,12014 10746,12036 10824,11992
 #: note: Gehweg für Radfahrer frei
 Rosenfelder Ring [Fußweg]: einige Fußgänger, abgeflachte Bordsteine	q2+ 18006,11968 17923,11974 17779,11960 17598,11915 17547,11919 17540,11878
 #: XXX_prog BS an der Oderstr., ansonsten entfernen
@@ -4968,7 +4969,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12615 (Anfrage)
 #: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn
 #: XXX Bauarbeiten an den Fahrbahnrändern; Absperrungen können früh zum Schulbeginn an beiden Enden der Fußgängerzone aufgestellt sein (einmalig am 2024-09-24 oder regelmäßig?)
-#: last_checked: 2024-10-10
+#: last_checked: 2024-10-15
 #: check_frequency: 30d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1+ 11635,12398 11845,12292
 # 

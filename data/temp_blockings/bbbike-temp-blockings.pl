@@ -28847,10 +28847,12 @@ EOF
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1435818.php (Abschluss in der zweiten Augusthälfte 2024)
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/treskowallee-bekommt-neuen-asphalt_a414176
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1486870.php (bis Mitte/Ende Oktober 2024; im Anschluss wird die Fahrtrichtung Nord bis Ende 2025 saniert)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1494211.php (Sperrung der östlichen Fahrbahn vom 16.10.2024 bis Ende 2025)
 #: source_id: 2147342174 (inaktiv)
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024) (bis 27.09.2024) (bis 16.10.2024)
 #: source_id: viz2021:13.52779,52.49067,14.08.2024,14:30 (bis 27.09.2024) (inaktiv)
+#: source_id: viz2021:13.52703,52.486973,16.10.2024,08:00 (östliche Fahrbahn, bis 31.10.2025)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -28858,7 +28860,7 @@ EOF
 #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
 #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 #: check_frequency: 60d vvv
-#: next_check: 2024-10-15 vvv
+#: next_check: 2024-10-16 vvv
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -36361,7 +36363,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/inselbruecke-gesperrt_a373424 (entgegen des Artikels sind Inselbrücke+Uferweg nicht gesperrt)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/fischerinsel-neuer-park-fertig_a392542
 # REMOVED --- #: XXX vielleicht auch interessant: neuer Zugang zur Mühlendammbrücke inkl. Rampe --- #: last_checked: 2023-09-05 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2023-12-31
-	2::inwork 10824,11992 10742,12033 10713,12014
+	2::inwork 10824,11992 10746,12036 10713,12014
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-21 00:00:00") }, # 1 Tag Vorlauf
@@ -40771,6 +40773,7 @@ EOF
 #: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
+#: source_id: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -41624,7 +41627,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-09-26 (mapillary) vvv
+#: last_checked: 2024-10-15 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -42846,11 +42849,11 @@ Königsheideweg: Bauarbeiten an der Fahrbahn, Gehweg offiziell für Radfahrer frei
 EOF
      },
      { from  => 1696744800, # 2023-10-08 08:00
-       until => 1730300400, # 2024-10-30 16:00
-       text  => 'L373: Sperrung Bahnüberführung, evtl. sind auch Radfahrer betroffen, 09.10.2023 08:00 Uhr bis 30.10.2024 16:00 Uhr',
+       until => $isodate2epoch->("2024-11-29 17:00:00"), # 1730300400, # 2024-10-30 16:00
+       text  => 'L373: Sperrung Bahnüberführung, evtl. sind auch Radfahrer betroffen, 09.10.2023 08:00 Uhr bis 29.11.2024 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 236700856 (bis 30.10.2024)
+#: source_id: 236700856 (bis 30.10.2024) (bis 29.11.2024)
 	2::inwork 90239,-16522 90350,-16513 90592,-16499
 EOF
      },
@@ -43569,13 +43572,13 @@ EOF
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024)
+#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024)
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
 #: last_checked: 2024-10-12 (mapillary) vvv
 #: check_frequency: 21d vvv
-#: next_check: 2024-10-18 vvv
+#: next_check: 2024-11-29 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
 #: next_check ^^
@@ -43905,7 +43908,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-09-24 vvv
+#: last_checked: 2024-10-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44452,11 +44455,11 @@ EOF
 EOF
      },
      { from  => 1723960800, # 2024-08-18 08:00
-       until => 1730386800, # 2024-10-31 16:00
+       until => 1729018611, # 1730386800, # 2024-10-31 16:00
        text  => 'B2 bei Mescherin: Deckenerneuerung, Sperrung, evtl. sind auch Radfahrer betroffen, 19.08.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/24/116 (bis 31.10.2024)
+#: source_id: LS/221-E/24/116 (bis 31.10.2024) (inaktiv)
 	2::inwork 76863,101305 76791,101034 76787,98891 76787,98838
 EOF
      },
@@ -44701,7 +44704,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
 #: by: https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen
-#: last_checked: 2024-10-06 (mapillary) vvv
+#: last_checked: 2024-10-15 (website) vvv
 #: check_frequency: 10d vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
 # REMOVED --- Okerstr.	2::inwork 11528,7528 11540,7534
@@ -44762,7 +44765,7 @@ EOF
        data  => <<EOF,
 #: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere.
 #: osm_watch: way id="482690912" version="6"
-#: last_checked: 2024-10-07 vvv
+#: last_checked: 2024-10-15 vvv
 	3 12207,11763 12132,11788 11966,11832
 	3 11966,11832 12132,11788 12207,11763
 #: last_checked ^^^
@@ -45064,6 +45067,32 @@ EOF
        data  => <<EOF,
 #: source_id: LS/223-P/24/161 (bis 30.06.2025)
 	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
+EOF
+     },
+     { from  => 1727643600, # 2024-09-29 23:00
+       until => 1732636800, # 2024-11-26 17:00
+       text  => 'Fischerinsel: Richtung Breite Str. vor Mühlendamm: Wasserrohrbruch, Fahrtrichtung gesperrt, vom 30.09.2024 23:00 bis 26.11.2024 17:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
+#: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024)
+#: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
+#: source_id: bvg2024:147#HIM_FREETEXT_242095
+#: also_indoor: traffic (ex-B,ex-T,G)
+#: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
+#: last_checked: 2024-10-15
+Fischerinsel	q4::inwork; 10578,11969 10512,12039
+EOF
+     },
+     { from  => 1728882000, # 2024-10-14 07:00
+       until => 1741964400, # 2025-03-14 16:00
+       text  => 'Erkner: L30, Bauarbeiten, möglicherweise ist die Brücke für Fußgänger und Radfahrer gesperrt, vom 15.10.2024 07:00 Uhr bis 14.03.2025 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 246700596 (bis 14.03.2025)
+#: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
+#: XXX laut VIZ-Verkehrsmeldung "Brücke über die Löcknitz", aber das ist doch der Flakenfließ? Oder ist die L38 gemeint?
+	2::inwork 34152,2749 34175,2637 34250,2546
 EOF
      },
     );

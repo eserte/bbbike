@@ -216,8 +216,8 @@ Schumannstr.	1 8701,13058 8957,13134
 Albrechtstr. (Mitte)	1 8957,13134 8997,13037 9042,12931 9102,12790
 Charitéstr.	1 8693,12951 8676,12976 8632,13037
 Spandauer Str. (Mitte)	3nocross::ignrte 10716,12382 10687,12421 10646,12470 10599,12526
-Spandauer Str. -> Gustav-Böß-Str.: Spandauer Str. (Mitte)	3::igndisp 10646,12470 10687,12421 10783,12502
-Gustav-Böß-Str. -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10783,12502 10687,12421 10716,12382
+Grunerstr. -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10783,12502 10687,12421 10716,12382
+Spandauer Str. -> Grunerstr.: Spandauer Str. (Mitte)	3::igndisp 10646,12470 10687,12421 10783,12502
 Spandauer Str. -> Am Nußbaum: Spandauer Str. (Mitte)	3::igndisp 10687,12421 10646,12470 10626,12455
 Am Nußbaum -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10626,12455 10646,12470 10599,12526
 Siegfriedstr.	1 12342,6936 12479,6969 12664,7013 12810,7047
@@ -2391,11 +2391,11 @@ Kaulsdorfer Str. - Mahlsdorfer Str. (BVG frei)	3 22325,6385 22534,6249 22645,643
 Stralauer Str.: Einbahnstraße wegen Bauarbeiten	1::inwork 10830,12279 10772,12288 10697,12303
 Gustav-Böß-Str./Grunerstr./Jüdenstr.	3nocross::ignrte 10687,12421 10783,12502 10849,12557
 Grunerstr. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10849,12557 10783,12502 10807,12451
+Grunerstr. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10687,12421 10783,12502 10696,12601
 Jüdenstr. -> Grunerstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10696,12601 10783,12502 10849,12557
 Jüdenstr. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10696,12601 10783,12502 10807,12451
+Jüdenstr. -> Grunerstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10807,12451 10783,12502 10687,12421
 Jüdenstr. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10807,12451 10783,12502 10696,12601
-Jüdenstr. -> Gustav-Böß-Str.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10807,12451 10783,12502 10687,12421
-Gustav-Böß-Str. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10687,12421 10783,12502 10696,12601
 Grunerstr./Klosterstr.	3nocross::ignrte 10849,12557 10873,12577 10950,12640
 Grunerstr. -> Grunerstr.: Grunerstr./Klosterstr.	3::igndisp 10951,12637 10873,12577 10849,12557
 Grunerstr. -> Klosterstr.: Grunerstr./Klosterstr.	3::igndisp 10951,12637 10873,12577 10900,12546
