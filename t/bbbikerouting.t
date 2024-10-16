@@ -310,8 +310,8 @@ sub do_tests {
 	$routing2->Goal->Street("Hauptstr/Wexstr");
 	$routing2->search;
 	ok(scalar @{ $routing2->RouteInfo } > 1, "Non-empty route info");
-	ok((grep { $_->{Street} =~ /erfurter/i } @{$routing2->RouteInfo}),
-	   "Obeying completely blocked streets"); # Umweg über Durlacher Str. - Erfurter Str. - Wexstr.
+	ok((grep { $_->{Street} =~ /(erfurter|lauterplatz)/i } @{$routing2->RouteInfo}),
+	   "Obeying completely blocked streets"); # Umweg über Durlacher Str. - Erfurter Str. - Wexstr. bzw. (neu) Handjerystr. - Lauterplatz - Friedenauer Höhe
 
 	# Wegfuehrung
 	$routing2->Start->reset;
