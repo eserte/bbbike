@@ -267,7 +267,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="11"
 #: osm_watch: way id="25042039" version="38"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2024-09-27
+#: last_checked: 2024-10-16
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -340,7 +340,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-10-12 (mapillary) vvv
+#: last_checked: 2024-10-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -578,8 +578,9 @@ teilweise Radweg auf der Fahrbahn hinter den parkenden Autos, Asphalt mit einige
 Verbundsteinpflaster	RW1; 4517,9401 4507,9395 4415,9343 4342,9301 4224,9241 4096,9175 3981,9117 3919,9085
 	RW1; 3919,9085 3981,9117 4096,9175 4224,9241 4342,9301 4415,9343 4507,9395 4517,9401
 #: note: Straßenbäume sind Platanen
-Verbundsteinpflaster, Wurzelhebungen	RW1; 3919,9085 3831,9052 3816,9052 3760,9052 3688,9051 3521,9059
-Verbundsteinpflaster	RW1; 3521,9059 3688,9051 3760,9052 3816,9052 3831,9052 3919,9085
+Verbundsteinpflaster, Wurzelhebungen	RW1; 3919,9085 3831,9052 3816,9052 3760,9052 3688,9051 3565,9057
+Poller	RW3; 3565,9057 3521,9059
+Verbundsteinpflaster	RW1; 3521,9059 3565,9057 3688,9051 3760,9052 3816,9052 3831,9052 3919,9085
 	RW1;RW1 3521,9059 3467,9045
 	RW1;RW2 3467,9045 3427,9010 3379,8969
 	RW1; 3379,8969 3158,8763 2966,8586 2915,8540 2885,8513 2857,8487 2713,8357 2661,8307 2539,8196 2397,8064 2335,7994 2277,7932 2207,7850 2112,7754
@@ -1289,6 +1290,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://berliner-abendblatt.de/2022/10/26/elsenbruecke-vollsperrung-am-wochenende/ (Radverkehr nicht betroffen)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1259163.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/elsenbruecke-gesperrt_a380368 (nur Autoverkehr)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1494831.php (nur Autoverkehr)
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
@@ -2016,15 +2018,16 @@ geschützter Radstreifen	RW4; 5363,8024 5472,8024 5522,8024 5570,8024
 #: note: Hauptstr. Richtung Steglitz
 #: historical_note: früher (bis 2024) Busspur gilt Mo-Fr 7-18 Uhr, stellenweise auch: Busspur ist immer gültig, RW5 vvv
 Leitboys	RW4; 7471,9360 7430,9281 7388,9199 7382,9187
-Leitboys	RW3; 7382,9187 7363,9152 7354,9135 7326,9078
+Leitboys	RW4; 7382,9187 7363,9152 7354,9135 7326,9078
 Bushaltestelle	RW5; 7326,9078 7308,9041 7299,9022
 Leitboys	RW4; 7299,9022 7268,8960
 #: note: am Anfang noch ein paar Leitboys
 Bushaltestelle	RW5; 7268,8960 7239,8907 7201,8870
-Leitboys	RW3; 7201,8870 7105,8788 7051,8741
+#: note: an der Akazienstr. fehlt das Schild für die Verkehrsraumaufteilung
+Leitboys	RW4; 7201,8870 7105,8788 7051,8741
 Bushaltestelle	RW5; 7051,8741 7005,8701
 	RW3; 7005,8701 6986,8683
-Leitboys	RW3; 6986,8683 6912,8617 6765,8480
+Leitboys	RW4; 6986,8683 6912,8617 6765,8480
 Bushaltestelle	RW5; 6765,8480 6733,8441 6687,8385
 #: historical_note ^^^
 #: note: Hauptstr. Richtung Mitte
@@ -2266,7 +2269,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2024-09-28 vvv
+#: last_checked: 2024-10-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -8178,6 +8181,8 @@ Grünbeschichtung	RW4; 17807,5730 17810,5736 17877,5860 17935,5961 17939,5968 179
 # REMOVED (ja) --- #: XXX wird es hier auch eine Grünbeschichtung geben? --- #: last_checked: 2020-05-09 vvv --- #: next_check: 2020-05-12 vvv
 Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 # 
+	RW4; 17934,7029 17919,6978 17919,6968
+# 
 #: next_check_id: EDISON-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
@@ -8192,10 +8197,10 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="35"
-#: last_checked: 2024-08-17 vvv
+#: last_checked: 2024-10-16 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
-provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968 17945,6788
+provisorische Radspur	RW4; 17919,6968 17945,6788
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17945,6788 17962,6674
 # REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
 # REMOVED --- provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17991,6431
@@ -9115,3 +9120,8 @@ Tempo 10	RW6;RW6 -7628,15071 -7613,15192
 Tempo 10	RW6;RW6 -7523,14969 -7517,15052 -7511,15160
 Tempo 10	RW6;RW6 -7523,14969 -7387,14951
 #
+#: note: als Fahrrad*zone* ausgeschildert
+	RW7;RW7 6293,7875 6263,7894 6178,7899
+# 
+	RW6;RW6 5799,7880 5800,7826
+# 

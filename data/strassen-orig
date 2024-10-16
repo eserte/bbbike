@@ -1029,7 +1029,7 @@ Uhlandstr. (Charlottenburg, Wilmersdorf)	H 5090,11007 5084,10890 5072,10701 5069
 Wilhelmsaue	N 4456,8716 4777,8742 4918,8740 5164,8740 5206,8731 5228,8729 5347,8732 5498,8726
 Wilhelmsaue	N 5164,8771 4917,8772 4778,8769
 Mehlitzstr.	N 5164,8740 5164,8771 5172,8880
-Hohenzollerndamm	HH 5467,9866 5435,9859 5219,9808 5139,9777 5052,9723 4976,9670 4858,9594 4699,9505 4657,9481 4601,9449 4517,9401 4507,9395 4415,9343 4342,9301 4224,9241 4096,9175 3981,9117 3919,9085 3831,9052 3816,9052 3760,9052 3688,9051 3521,9059 3467,9045 3427,9010 3379,8969 3158,8763 2966,8586 2915,8540 2885,8513 2857,8487 2713,8357 2661,8307 2539,8196 2397,8064 2335,7994 2277,7932 2207,7850 2112,7754 2088,7723 2034,7654 1987,7593 1967,7561
+Hohenzollerndamm	HH 5467,9866 5435,9859 5219,9808 5139,9777 5052,9723 4976,9670 4858,9594 4699,9505 4657,9481 4601,9449 4517,9401 4507,9395 4415,9343 4342,9301 4224,9241 4096,9175 3981,9117 3919,9085 3831,9052 3816,9052 3760,9052 3688,9051 3565,9057 3521,9059 3467,9045 3427,9010 3379,8969 3158,8763 2966,8586 2915,8540 2885,8513 2857,8487 2713,8357 2661,8307 2539,8196 2397,8064 2335,7994 2277,7932 2207,7850 2112,7754 2088,7723 2034,7654 1987,7593 1967,7561
 Württembergische Str.	N 4415,9343 4374,9409 4381,9620 4398,9723 4422,9869 4439,9983 4456,10092 4478,10218
 Olivaer Platz [Verl. Konstanzer Str.]	H 4245,10435 4239,10358 4219,10279
 Olivaer Platz [Verl. Lietzenburger Str.]	HH 4485,10307 4360,10320 4239,10358 4172,10406 4157,10418
@@ -1715,7 +1715,7 @@ Ahornsteig	NN 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 
 Lichtensteinallee	NN 6200,11417 6247,11390 6289,11440 6337,11501 6378,11553
 Lichtensteinallee	N 6378,11553 6428,11610
 (Lichtensteinallee - Tiergartenufer)	NN 6289,11440 6186,11466
-Fasanerieallee	NN 6428,11610 6450,11641 6540,11754 6685,11954
+Fasanerieallee	NN 6428,11610 6450,11641 6540,11754 6633,11882 6685,11954
 Große Sternallee	NN 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
 (Hiroshimastr. - Große Sternallee)	NN 7356,11517 7359,11538 7362,11561 7373,11594
 Spreeweg	H 6787,12099 6831,12150 7001,12274 7031,12320
@@ -11424,13 +11424,64 @@ Schmargendorfer Str.	N 5614,7223 5429,7220
 Schmargendorfer Str.	NN 5429,7220 5397,7205
 Handjerystr. (Friedenau)	N 5357,6932 5384,6933 5478,6959 5565,7024 5624,7113 5641,7189
 Handjerystr. (Friedenau)	N 5642,7255 5641,7332 5640,7435 5636,7540 5635,7660 5636,7685 5635,7718 5636,7734 5632,7821 5630,7875
-Lauterplatz	NN 5799,7880 5707,7878
 #: osm.highway: service vvv
-#: note: bei osm und fis-broker "Hannah-Höch-Weg", in der Realität nicht ausgeschildert
-(Zufahrt zum Lauterplatz)	N 5632,7821 5800,7826
-#: note: bei osm und fis-broker "Lauterplatz", in der Realität nicht ausgeschildert
-(Zufahrt zum Lauterplatz)	N 5800,7826 5799,7880
+#: historical_note: früher bei BBBike als "(Zufahrt zum Lauterplatz)" bezeichnet
+Hannah-Höch-Weg	N 5632,7821 5800,7826
+#: historical_note: früher bei BBBike als "(Zufahrt zum Lauterplatz)" bezeichnet
+Lauterplatz	N 5800,7826 5799,7880
 #: osm.highway ^^^
+Lauterplatz	NN 5799,7880 5707,7878
+# 
+#: next_check_id: FRIEDENAUERHOEHE-2024
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplan-7-68-457761.php (Güterbahnhof Wilmersdorf, Bebauungsplan 7-68)
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-68/b-plan7-68_karte.pdf
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6085
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.606656.php ("Friedenauer Höhe")
+#: by: http://www.berliner-woche.de/schoeneberg/bauen/infos-zur-friedenauer-hoehe-von-stadtrat-und-investoren-d145161.html (bis Herbst oder Winter 2022)
+#: by: https://www.berliner-woche.de/friedenau/c-bauen/friedenauer-hoehe-waechst_a173693
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6655 ("Fertigstellung der Straßen ... für 2020 geplant")
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036560902937/560902937/00312041/41-Anlagen/02/0807_20Anlage1.pdf (Karte)
+#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=627180&postcount=17 (geplante Gesamtfertigstellung: bis Ende 2023)
+#: by: https://www.tagesspiegel.de/berlin/wohnungsbau-in-berlin-auf-der-friedenauer-hoehe-entstehen-1500-wohnungen/24146434.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_13_1661_1888_online.pdf (Straßenbenennungen, mit Karte)
+# REMOVED (zeigt nun eine andere Baustelle) --- #: by: https://baucam159.it-wms.com/ (Webcam)
+#: by: https://www.berliner-woche.de/friedenau/c-bauen/kiezmarkt-wegen-bauarbeiten-zu_a267655
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berliner-woche.de/friedenau/c-verkehr/strassennamen-fuer-das-neue-wohnquartier-friedenauer-hoehe_a277207 (Straßennamen)
+#: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2020/06/16/127456/bezirk-wird-riesige-laermschutzwand-nicht-genehmigen/ (geplanter Abschluss 2023 ist wohl nicht zu halten)
+#: by: https://www.bz-berlin.de/berlin/charlottenburg-wilmersdorf/friedenauer-hoehe-investor-fehlt-1000-berliner-wohnungen-in-der-warteschleife
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7993 (Frage)
+#: by: https://www.berliner-woche.de/friedenau/c-bauen/grundsteinlegung-fuer-537-mietwohnungen_a321434
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8225 (Vorschläge für Straßennamen: June-und-Helmut-Newton-Platz)
+#: by: http://www.deal-magazin.com/news/3/113681/Start-fuer-Marlene-und-Dietrich-mit-131-Wohnungen-in-Berlin
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundstücksnummerierung (Friedenauer Höhe))
+#: by: https://berliner-abendblatt.de/2022/05/16/1-000-neue-wohnungen-fuer-friedenau/
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedenauer-h%C3%B6he-g%C3%BCterbahnhof-wilmersdorf.198/page-5#post-20161
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_09_0853_0928_online.pdf (Grünanlage am Lauterplatz, aber zu klein zum Eintragen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Straßenlandwidmung)
+#: by: https://www.berliner-woche.de/friedenau/c-bauen/richtfest-auf-der-friedenauer-hoehe_a375824
+#: by: https://berliner-abendblatt.de/kiez-news/tempelhof-schoeneberg/friedenau-hier-entstehen-537-wohnungen-id215111
+#: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=757821#post757821
+#: by: https://ofb.de/neues#news (The Friedenauer, Bauzeit I. Quartal 2025 - Mitte 2027)
+#: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024) (bis 28.06.2024) (bis 23.04.2024, im Anschluss weitere Arbeiten) (inaktiv)
+# REMOVED (eingetragen) --- #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
+# REMOVED (eingetragen) --- #: XXX Friedenauer Höhe (Privatstraße) -> im Amtsblatt, PLZ=12159, laut LOR PLZ=10827+12159
+# REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
+# REMOVED (eingetragen) --- #: XXX Hannah-Höch-Weg (evtl. ohne "h") -> laut Amtsblatt mit "h", bei DPAG ebenso, PLZ=12159
+#: last_checked: 2024-10-16 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2027-06-30 vvv
+#: osm_watch: way id="1254710366" version="6"
+#: note: Privatstraße vvv
+#: XXX bleibt es bei der "Fahrradzone" hier?
+Friedenauer Höhe	N 6293,7875 6263,7894 6178,7899
+#: XXX Wird hier noch parallel zum Fußweg eine Fahrbahn gebaut? Zurzeit gibt es eine Baustraße.
+Friedenauer Höhe	NN 6178,7899 6126,7917 6011,7911 5799,7880
+#: note ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 Renée-Sintenis-Platz	N 5642,7255 5624,7244 5614,7223 5621,7204 5641,7189 5661,7202 5675,7224 5664,7244 5642,7255
 Kreuznacher Str.	N 4141,6688 4174,6711 4224,6718 4293,6719 4372,6718 4528,6715 4634,6715 4734,6716 4767,6717
 Kreuznacher Str.	NN 4767,6717 4786,6717
@@ -14839,7 +14890,7 @@ Garnisonkirchplatz	NN 10308,12859 10255,12959
 Salzburger Str.	N 6367,8804 6292,8899 6281,8914 6214,9003 6145,9105
 Meraner Str.	N 6066,9094 6033,8919 6024,8868 6012,8809 6007,8734 6004,8679 6001,8624 5995,8477
 Freiherr-vom-Stein-Str. (Schöneberg)	NN 6477,8654 6454,8653
-Freiherr-vom-Stein-Str. (Schöneberg)	N 6454,8653 6313,8638 6230,8602 6123,8546 5995,8477 5913,8415
+Freiherr-vom-Stein-Str. (Schöneberg)	N 6454,8653 6313,8638 6230,8602 6129,8558 5995,8477 5913,8415
 Holteistr.	NH 14710,11626 14676,11572 14639,11512 14575,11407
 Holteistr.	N 14575,11407 14535,11327 14506,11275 14468,11203
 Weichselstr. (Friedrichshain)	NH 14710,11626 14798,11777 14802,11784 14836,11842 14888,11934
@@ -18577,7 +18628,7 @@ Mörchinger Str.	N 2091,3597 2287,3702 2475,3808
 (Parkweg - Dreipfuhl)	NN 1698,4653 1689,4630 1682,4607
 Ehrwalder Str.	N 5905,8681 6004,8679
 Steinacher Str.	N 6206,8700 6100,8681
-Sterzinger Str.	N 6123,8546 6094,8618
+Sterzinger Str.	N 6129,8558 6094,8618
 Am Mühlenberg	N 6001,8624 6094,8618
 Am Mühlenberg	NN 6094,8618 6100,8681 6101,8732
 Am Mühlenberg	N 6101,8732 6007,8734
@@ -19350,7 +19401,7 @@ Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036923752617/923752617/00406668/68-Anlagen/02/MA_1265_V.pdf
 #: osm_watch: way id="26590565" version="22"
-#: last_checked: 2024-08-21
+#: last_checked: 2024-10-16
 #: check_frequency: 120d
 (Zufahrt Parkplätze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
 (Cuxhavener Str. - Altonaer Str.)	NN 5982,12291 6030,12363 6067,12381 6098,12446
@@ -20689,7 +20740,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025)
-#: last_checked: 2024-09-21
+#: last_checked: 2024-10-16
 #: check_frequency: 180d
 #: next_check: 2025-01-10
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

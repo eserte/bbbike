@@ -754,7 +754,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="27"
-#: last_checked: 2024-08-30
+#: last_checked: 2024-10-16
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-31
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
@@ -771,7 +771,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 # REMOVED (bereits asphaltierter Kreuzungsbereich) --- #: osm_watch: way id="4436949" version="20"
 #: osm_watch: way id="1101189359" version="6"
 #: osm_watch: way id="1101189360" version="5"
-#: last_checked: 2024-10-11 (mapillary)
+#: last_checked: 2024-10-16
 #: check_frequency: 270d
 #: next_check: 2025-12-31
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
@@ -1043,7 +1043,7 @@ Tiergartenufer: Parkweg	Q1 6186,11466 6079,11524 5919,11633 5895,11692 5835,1176
 Rosa-Luxemburg-Steg: Holzbohlen	Q1- 6289,11440 6247,11390
 Rosa-Luxemburg-Steg - Gartenufer: Verbundsteinpflaster	Q1 6247,11390 6200,11417
 Fasanerieallee: Kleinsteinpflaster	Q1 6428,11610 6450,11641
-Fasanerieallee: Parkweg	Q1 6450,11641 6540,11754 6685,11954
+Fasanerieallee: Parkweg	Q1 6450,11641 6540,11754 6633,11882 6685,11954
 Großer Weg: Parkweg	Q1 5900,11913 5907,11874 5933,11775 6022,11757 6154,11798 6296,11756 6353,11730 6411,11678 6450,11641 6512,11608 6679,11602 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629
 (Großer Weg - Klingelhöferstr./Tiergartenstr.): Parkweg	Q1 6679,11602 6750,11550 6826,11479
 Großer Weg: asphaltiert	Q0 7606,11629 7623,11624 7664,11597 7711,11558 7713,11553 7717,11540
@@ -13176,8 +13176,8 @@ Dernburgstr.: Verbundsteinpflaster	Q1+ 2673,10670 2596,10663
 Cecilienstr.: Asphalt, einige Schäden	Q0- 20281,14012 20348,14005 20447,13995 20567,13983 20690,13972 20830,13960
 Johanneskirchplatz: gepflastert	Q2 3030,3276 3056,3290 3067,3319 3059,3339
 Lauterplatz: Verbundsteinpflaster	Q1+ 5799,7880 5707,7878
-(Zufahrt zum Lauterplatz): Asphalt	Q0 5632,7821 5800,7826
-(Zufahrt zum Lauterplatz): Verbundsteinpflaster	Q1+ 5800,7826 5799,7880
+Hannah-Höch-Weg: Asphalt	Q0 5632,7821 5800,7826
+Lauterplatz: Betonsteinpflaster	Q0- 5800,7826 5799,7880
 Chaukenstr. [21-37]: Verbundsteinpflaster	Q1+ 20207,789 20270,760
 Chaukenstr. [21-37]: Verbundsteinpflaster	Q1+ 20255,722 20270,760 20278,780
 Altglienicker Grund [Wohngebiet]: Beton	Q0- 19243,450 19225,384 19202,306
@@ -13735,6 +13735,10 @@ Hilde-Archenhold-Brücke: Asphalt	Q0 19300,4018 19358,4077
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19363,4057 19353,4047
 # 
 Ungarnstr.: Fahrbahn betoniert und Radweg mit Verbundsteinpflaster, beide mit Schäden und Unebenheiten	Q1 7666,16879 7583,16872 7394,16836 7267,16784 7177,16715 7106,16646 7056,16587
+# 
+Friedenauer Höhe: Asphalt	Q0 6293,7875 6263,7894 6178,7899
+Friedenauer Höhe: Betonsteinpflaster	Q0- 6178,7899 6126,7917 6011,7911 5799,7880
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -29552,7 +29556,7 @@ Hüninger Str.: Kopfsteinpflaster	Q2 2019,4027 2039,4128 2047,4162 2054,4190 2096
 Mörchinger Str.: Kopfsteinpflaster	Q1- 1453,3085 1393,3183 1499,3251
 #: note: hier teilweise auch verkehrsberuhigter Bereich
 Mörchinger Str.: Verbundsteine	Q0- 1918,3511 2091,3597
-Am Mühlenberg: Gehwegplatten	Q0 6094,8618 6100,8681 6101,8732
+Am Mühlenberg: Gehwegplatten	Q0- 6094,8618 6100,8681 6101,8732
 #: confirmed_by: srt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1094397.php (Sanierung KW 24-26/2001)
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/kalckreuthstrasse-voll-gesperrt_a313914

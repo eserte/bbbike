@@ -37,6 +37,7 @@ Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2::inwork; 1
 Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
+Matth‰ikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7933,11407 7970,11396 7934,11275
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q4::inwork 13236,7970 13246,7961
 Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q3::inwork 13246,7961 13309,7911
@@ -55,6 +56,8 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 Merler Weg: tempor‰re Einbahnstraﬂenregelung	q3::inwork; 19180,13219 18852,13269
 Elﬂholzstr.: Hochbauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen B¸rgersteig	q2::inwork; 7122,9517 7126,9825
+Friedenauer Hˆhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
+Friedenauer Hˆhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
 Kˆnigsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -197,2634 -155,2658
 Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 1077,3753 1422,3637 1485,3630
 Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
@@ -145,7 +148,7 @@ Gartenufer: einige Fuﬂg‰nger	q1 5790,11643 5845,11615 6067,11479 6200,11417 6277
 Tiergartenufer: Fuﬂg‰nger	q1 6186,11466 6079,11524 5919,11633 5895,11692 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg, Fuﬂg‰nger	q1 6289,11440 6186,11466
 Tiergarten: Parkweg, Fuﬂg‰nger	q2 5666,11362 5720,11573 5756,11618 5790,11643 5802,11677 5826,11682 5831,11697 5818,11722 5835,11768 5858,11863 5900,11913
-Fasanerieallee: Parkweg	q1 6428,11610 6450,11641 6540,11754 6685,11954
+Fasanerieallee: Parkweg	q1 6428,11610 6450,11641 6540,11754 6633,11882 6685,11954
 Groﬂe Sternallee: Parkweg	q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
 (Hiroshimastr. - Groﬂe Sternallee): Parkweg	q1 7356,11517 7359,11538 7362,11561 7373,11594
 Am S-Bhf. Bellevue: einige Fuﬂg‰nger	q1 6689,12632 6516,12650
@@ -2596,6 +2599,8 @@ Straﬂe zum M¸ggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 
 (Hahnebergweg - Am Fort): teilweise sehr eng	q3 -7810,12418 -7959,12439
 (Schulzestr. - S-Bhf. Wollankstr.): einige Fuﬂg‰nger	q1 9494,17824 9461,17795
 (Personentunnel S-Bhf. Wollankstr.): Fuﬂg‰nger, Rampen	q4 9434,17823 9383,17757
+Am M¸hlenberg: niedriger Bordstein, einige Fuﬂg‰nger	q2 6094,8618 6100,8681
+Am M¸hlenberg: einige Fuﬂg‰nger	q1 6100,8681 6101,8732
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

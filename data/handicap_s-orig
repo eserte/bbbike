@@ -287,8 +287,8 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
 #: historical_note: am Anfang Einbahnstraße, offen Richtung Norden (1s:q3:inwork), später komplett zu (q4::inwork in handicap_s-orig), dann wieder (laut osm) Einbahnstraße (1s:q3:inwork), seit September 2024 teilweise zu (südlicher Abschnitt)
 #: osm_watch: way id="4596985" version="32"
-#: osm_watch: way id="1161733739" version="16"
-#: last_checked: 2024-09-30 (osm)
+#: osm_watch: way id="1161733739" version="17"
+#: last_checked: 2024-10-15 (osm)
 #: check_frequency: 45d
 #: next_check: 2024-12-31
 Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	q4::inwork 7998,15068 8015,15047 8037,14958 8091,14895
@@ -772,6 +772,13 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
+#: next_check_id: MUSEUMDERMODERNE-2021
+#: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=759366#post759366
+#: last_checked: 2024-10-16
+#: check_frequency: 180d
+#: next_check: 2027-01-01
+Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7933,11407 7970,11396 7934,11275
+# 
 # REMOVED (offen) --- #: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedereröffnung für 2020 geplant) --- #: by: https://www.tagesspiegel.de/berlin/spaeter-als-geplant-neue-nationalgalerie-in-berlin-wird-erst-mitte-august-2021-eroeffnet/26645770.html (Eröffnung Mitte August 2021) --- # REMOVED --- #: XXX laut Plakatwerbung wird am 22.8.2021 eröffnet --- #: XXX Straße fertig asphaltiert, aber noch durch Bauzäune abgesperrt --- #: last_checked: 2022-03-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2021-08-22 --- Neue Nationalgalerie: Bauzäune, Umfahren über Gehweg (Bordstein) möglich	q3::inwork 7874,11293 7828,11133
 # REMOVED (eigentlich keine Behinderungen durch die Bauarbeiten) --- #: next_check_id: MUSEUMDERMODERNE-2021 --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam) --- #: last_checked: 2021-12-29 --- #: check_frequency: 90d --- Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderungen	q3::inwork 7934,11275 7965,11380
 # REMOVED --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629697&postcount=1218 --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Verschwinden die Radspuren nach den Bauarbeiten? --- #: last_checked: 2019-08-04
@@ -855,7 +862,7 @@ Wörnitzweg: Bauarbeiten, Fahrbahn ist gesperrt	q4+::inwork 13246,7961 13312,8026
 #: source_id: viz2021:13.428457,52.493713,05.09.2024,07:00 (bis 06.12.2024)
 #: source_id: viz2021:13.42867,52.49391,05.09.2024,19:00 (bis 06.12.2024) (inaktiv)
 #: XXX geschützte Fahrradspuren werden realisiert
-#: last_checked: 2024-10-06 (mapillary)
+#: last_checked: 2024-10-16
 #: check_frequency: 30d
 #: next_check: 2024-12-06
 Hobrechtbrücke: getrennter Geh- und Radweg während der Bauarbeiten	q3::inwork 12085,9778 12116,9825
@@ -986,7 +993,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-10-11
+#: last_checked: 2024-10-16
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1164,6 +1171,16 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 # REMOVED (kaum noch Beeinträchtigungen) --- #: XXX laut http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf gehen die Bauarbeiten bis 2014-10-20 --- #: last_checked: 2014-09-13 --- #: check_frequency: 21d --- Dennewitzstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 7906,10098 7947,10155
 # 
 ### Friedenau ###
+# 
+#: next_check_id: FRIEDENAUERHOEHE-2024
+#: last_checked: 2024-10-16 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2027-06-30 vvv
+Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
+Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: PERELSPLATZ-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? --- #: last_checked: 2019-12-22 --- #: next_check: 2020-01-31 --- Lauterstr.: Fahrbahn am Perelsplatz gesperrt	q4::inwork 5810,7662 5810,7684 5812,7721
 # 
@@ -1437,7 +1454,7 @@ Gartenufer: einige Fußgänger	q1 5790,11643 5845,11615 6067,11479 6200,11417 6277
 Tiergartenufer: Fußgänger	q1 6186,11466 6079,11524 5919,11633 5895,11692 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg, Fußgänger	q1 6289,11440 6186,11466
 Tiergarten: Parkweg, Fußgänger	q2 5666,11362 5720,11573 5756,11618 5790,11643 5802,11677 5826,11682 5831,11697 5818,11722 5835,11768 5858,11863 5900,11913
-Fasanerieallee: Parkweg	q1 6428,11610 6450,11641 6540,11754 6685,11954
+Fasanerieallee: Parkweg	q1 6428,11610 6450,11641 6540,11754 6633,11882 6685,11954
 Große Sternallee: Parkweg	q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	q1 7356,11517 7359,11538 7362,11561 7373,11594
 Am S-Bhf. Bellevue: einige Fußgänger	q1 6689,12632 6516,12650
@@ -1809,7 +1826,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch: note 4103526 1
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-16
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -5119,6 +5136,9 @@ Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 
 # 
 (Schulzestr. - S-Bhf. Wollankstr.): einige Fußgänger	q1 9494,17824 9461,17795
 (Personentunnel S-Bhf. Wollankstr.): Fußgänger, Rampen	q4+ 9434,17823 9383,17757
+# 
+Am Mühlenberg: niedriger Bordstein, einige Fußgänger	q2 6094,8618 6100,8681
+Am Mühlenberg: einige Fußgänger	q1 6100,8681 6101,8732
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
