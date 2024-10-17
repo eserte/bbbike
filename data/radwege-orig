@@ -975,7 +975,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-10-13
+#: last_checked: 2024-10-17
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3168,10 +3168,6 @@ provisorische Radspur	RW3; 13747,12642 13695,12643
 #: by: ^^^
 Busspur ist immer gültig	RW5; 16248,12177 16223,11999
 	RW1;RW1 16860,12861 16484,12871 16439,12872 16384,12874 16376,12874 16312,12876 16242,12878 16197,12880 16146,12881 16073,12883 15950,12886
-	RW4; 16866,13532 16865,13423 16863,13138
-	RW4; 16863,13138 16865,13423
-	RW3;RW4 16863,13138 16865,13000 16860,12861
-	RW3;RW3 16860,12861 16859,12613 16857,12600 16831,12419 16820,12339
 	RW6;RW6 12671,8077 12446,8032
 # REMOVED (nur das Stück bergauf) --- #: XXX Radspur wird grün markiert (evtl. auch das Teilstück bergauf) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php --- #: next_check: 2018-10-17
 # REMOVED --- #: XXX wird hier auch die Radspur grün markiert? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://twitter.com/ADFC_Berlin/status/1065526520599511045 --- #: priority: #D --- #: next_check: 2018-11-22
@@ -4217,9 +4213,6 @@ Verbundsteinpflaster	RW1; 20604,354 20470,319 20351,287 20274,253 20164,152 1998
 	RW6;RW6 -3173,14216 -3092,14331 -3060,14380
 # REMOVED (stimmt nicht, nur 30er-Zone) --- #: XXX Eintrag war nicht eindeutig: Spielstraße und gleichzeitig 30er-Zone: ---	RW6;RW6 -5115,15348 -5226,15367
 Verbundsteinpflaster	RW1;RW1 16629,13532 16692,13939 16681,14044 16659,14192
-Verbundsteinpflaster	RW1; 16875,13834 16868,13611
-Verbundsteinpflaster	RW2; 16868,13611 16866,13532
-Verbundsteinpflaster	RW1; 16866,13532 16868,13611 16875,13834
 Verbundsteinpflaster	RW2; 18149,13505 18226,13506 18291,13500 18382,13492
 # REMOVED (sieht mittlerweile fertig aus) --- #: XXX Grünbeschichtung entsteht --- #: by: https://api.fixmyberlin.de/api/plannings/120 --- #: by: https://twitter.com/GBinfraVelo/status/1326165780937977856 (erste Markierung) --- #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahrrat-marzahn-hellersdorf-fordert-kreuzungsumbau-mehr-abstellanlagen-und-eine-fahrradstrasse_a292385 (Erwähnung der Grünbeschichtung) --- #: by: http://www.infravelo.de/projekt/allee-der-kosmonauten/ (bis 1. Quartal 2021) (Arbeiten pausieren bis zum Frühjahr 2021) (mittlerweile: bis 2. Quartal 2021) (mittlerweile status "Abgeschlossen") --- #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.11.2020; mittlerweile inaktiv) --- #: last_checked: 2021-05-20 (mapillary) (nur vereinzelt Grünbeschichtung in beide Richtungen) vvv --- #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2021-03-31
@@ -5224,8 +5217,23 @@ Gehweg für Radfahrer frei	RW1; 18106,19353 18143,19384 18544,19722
 gemeinsamer Geh- und Radweg, Betonplatten	RW2; 17418,16014 17419,16080 17425,16165
 	RW2; 17425,16165 17419,16080 17418,16014
 	RW2;RW1 17425,16165 17516,16208
-Verbundsteinpflaster	RW1;RW2 16852,14412 16873,14236
-Verbundsteinpflaster	RW1;RW1 16873,14236 16881,14063 16875,13834
+# 
+#: note: Siegfriedstr. Richtung Süden
+Verbundsteinpflaster	RW1; 16852,14412 16873,14236 16881,14063 16875,13834 16868,13611
+Verbundsteinpflaster	RW2; 16868,13611 16866,13532
+	RW4; 16866,13532 16865,13423 16863,13138
+	RW3; 16863,13138 16865,13000 16860,12861
+	RW3; 16860,12861 16859,12613
+Grünbeschichtung	RW3; 16859,12613 16857,12600 16831,12419
+	RW3; 16831,12419 16820,12339
+#: note: Siegfriedstr. Richtung Norden
+Grünbeschichtung	RW3; 16820,12339 16831,12419 16857,12600 16859,12613
+#: note: Markierungslücke in Höhe des Straßenbahnbetriebshofs
+	RW3; 16859,12613 16860,12861
+	RW4; 16860,12861 16865,13000 16863,13138 16865,13423
+Verbundsteinpflaster	RW1; 16866,13532 16868,13611 16875,13834 16881,14063 16873,14236
+Verbundsteinpflaster	RW2; 16873,14236 16852,14412
+# 
 	RW2;RW1 9883,16557 9816,16565
 	RW2;RW4 9816,16565 9781,16569
 	RW4;RW4 9781,16569 9617,16590
@@ -7861,7 +7869,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="8"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2024-10-15
+#: last_checked: 2024-10-17
 asphaltierter Radweg ist größtenteils nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
 	RW3;RW3 11555,20051 11628,20092 11690,20127 11799,20224 11959,20365 12008,20368
@@ -8711,9 +8719,9 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.38458,52.45267,23.09.2024,17:00 (bis 01.11.2024) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
-#: last_checked: 2024-09-14 (mapillary) vvv
+#: last_checked: 2024-10-12 (okas) vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-11-01 vvv
+# REMOVED --- #: next_check: 2024-11-01 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 # REMOVED --- #: osm_watch: way id="111048866" version="19" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
@@ -8727,7 +8735,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 # REMOVED --- #: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^

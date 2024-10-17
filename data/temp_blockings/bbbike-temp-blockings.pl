@@ -9044,7 +9044,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: IM_005812 (alte Meldung von 2007) (inaktiv)
-#: source_id: viz2021:13.398749,52.532591,04.09.2024,07:00 (hier nur Kfz-Verkehr, bis 04.10.2024) (bis 18.10.2024)
+#: source_id: viz2021:13.398749,52.532591,04.09.2024,07:00 (hier nur Kfz-Verkehr, bis 04.10.2024) (bis 18.10.2024) (bis 23.10.2024)
 #: note: Radverkehr ist bei den Bauarbeiten im September 2024 nicht betroffen (oder nur kaum, leichte Verschwenkungen im Kreuzungsbereich Brunnenstr.)
 # REMOVED --- #: last_checked: 2024-09-04 (mapillary) --- #: next_check: 2024-09-04
 	q4::inwork; 9804,14071 9821,14073 9936,14085 10002,14092
@@ -29114,12 +29114,15 @@ Promenade Schiffbauerdamm	2::temp 8498,12870 8529,12757
 (Spreeuferweg)	2::temp 7945,12878 7966,12913 8044,12989 8137,13024 8159,13032
 EOF
      },
-     { from  => 1538024400, # 2018-09-27 07:00
-       until => 1538171999, # 2018-09-28 23:59
-       text  => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 28. September 2018 von 7.00 Uhr bis 24.00 Uhr',
+     { from  => $isodate2epoch->("2024-10-17 00:00:00"), # 1538024400, # 2018-09-27 07:00
+       until => $isodate2epoch->("2024-10-18 14:00:00"), # 1538171999, # 2018-09-28 23:59
+#       text  => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 28. September 2018 von 7.00 Uhr bis 24.00 Uhr',
+       text  => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 18. Oktober 2024 von 5.30 Uhr bis 14.00 Uhr',
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf',
        data  => <<EOF,
+#: next_check_id: STAATSBESUCH-BELLEVUE
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
 	2::temp 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320 6689,12632
 	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
 	3 5900,11913 6164,11947 6642,12010 6550,11954
@@ -29128,6 +29131,8 @@ EOF
 	3 6859,12567 7051,12426 7122,12384
 	3 7026,12054 6828,12031 6884,12006
 	3 6550,11954 6642,12010 6164,11947 5900,11913
+#: note: hier lagen Mitte Oktober 2024 Absperrgitter, evtl. in Vorbereitung auf den Staatsbesuch?
+	2::temp 6813,12617 6808,12604 6859,12567 7051,12426
 EOF
      },
      { from  => 1537999200, # 2018-09-27 00:00
@@ -29704,6 +29709,7 @@ EOF
 #: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024)
 #: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
+#: also_indoor: traffic (T,G,H,W)
 	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
 EOF
      },
@@ -37515,15 +37521,21 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 EOF
      },
      { from  => undef, # 
-       until => 1671646224, # undef, # XXX
-       text  => 'Gotlindestr.: Wasserrohrbruch, Fahrbahn abschnittsweise zwischen Siegfriedstr. und Atzpodienstr. gesperrt, Ende der Sperrung unbekannt',
+       until => undef, # 1671646224, # undef, # XXX
+#       text  => 'Gotlindestr.: Wasserrohrbruch, Fahrbahn abschnittsweise zwischen Siegfriedstr. und Atzpodienstr. gesperrt, Ende der Sperrung unbekannt',
+       text  => 'Gotlindestr.: Fahrbahn zwischen Siegfriedstr. und Wotanstr. gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: also_indoor: traffic (H,B,G) vvv --- #: XXX Ende der Sperrung? Halteverbote bis zum 6.12.2022, mittlerweile bis 31.12.2022 vvv --- #: last_checked: 2022-12-07 vvv --- #: check_frequency: 10d vvv --- #: next_check: 2022-12-31 vvv
 # REMOVED (hier mittlerweile wieder offen) --- einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
-etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
+# REMOVED --- etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: also_indoor ^^^
+#: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
+#: also_indoor: traffic (T,B)
+#: last_checked: 2024-10-17
+#: check_frequency: 14d
+	q4::inwork 16720,12614 16859,12613
 EOF
      },
      { from  => 1667499233, # 1665077956, # 2022-10-06 19:39
@@ -39539,11 +39551,13 @@ EOF
 	2::inwork 22280,6128 22296,6170
 EOF
      },
-     { from  => 1700163475, # 1684003905, # 2023-05-13 20:51
-       until => $isodate2epoch->("2023-11-18 00:00:00"), # 1684090606, # 1684101599, # 2023-05-14 23:59
-       text  => 'Lennéstr., Ebertstr., Bellevuestr.: wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
+     { from  => $isodate2epoch->("2024-10-17 00:00:00"), # 1700163475, # 1684003905, # 2023-05-13 20:51
+       until => $isodate2epoch->("2024-10-18 23:59:59"), # $isodate2epoch->("2023-11-18 00:00:00"), # 1684090606, # 1684101599, # 2023-05-14 23:59
+#       text  => 'Lennéstr., Ebertstr., Bellevuestr.: wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
+       text  => 'Lennéstr., Ebertstr., Bellevuestr.: wegen eines Staatsbesuchs Sperrungen möglich, 17. und 18. Oktober 2024',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: STAATSBESUCH-POTSDAMERPLATZ
 #: by: https://nitter.cz/VIZ_Berlin/status/1657358780785479681#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnY3LW9VMld3QU1waW1jLmpwZw==
 #: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1323864.php
@@ -39551,9 +39565,14 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/sicherheitsvorkehrungen-nach-selenskyj-besuch-aufgehoben-id221352
 #: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
 #: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
+#: by: https://viz.berlin.de/aktuelle-meldungen/staatsbesuch-von-us-prasident-joe-biden-in-berlin/ (Biden-Besuch Oktober 2024)
+#: by[nocache]: https://x.com/polizeiberlin/status/1846553969557950834
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
+#: source_id: viz2021:13.375849,52.51018,17.10.2024,08:54
 	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
 	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
 	2::temp 8548,11571 8553,11630
+	2::temp 8442,11555 8542,11502
 EOF
      },
      { from  => 1684101600, # 2023-05-15 00:00
@@ -39802,7 +39821,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang; Halteverbotsschilder bis 2024-11-30
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-10-13
+#: last_checked: 2024-10-17
 #: check_frequency: 21d
 #: next_check: 2024-11-30
 	q3::inwork; 15648,12687 15643,12875
@@ -41975,16 +41994,19 @@ EOF
 	q4::inwork 13452,2548 13420,2509
 EOF
      },
-     { from  => 1700163840,
-       until => $isodate2epoch->("2023-11-18 00:00:00"),
-       text  => 'Regierungsviertel: wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
+     { from  => $isodate2epoch->("2024-10-17 00:00:00"), # 1700163840,
+       until => $isodate2epoch->("2024-10-18 18:00:00"), # $isodate2epoch->("2023-11-18 00:00:00"),
+#       text  => 'Regierungsviertel: wegen eines Staatsbesuchs Sperrungen möglich, 17. November 2023 von 06:00 bis 23:59 Uhr',
+       text  => 'Regierungsviertel: wegen eines Staatsbesuchs Sperrungen möglich, 18. Oktober 2024 von 05:00 bis 18:00 Uhr',
        type  => 'gesperrt',
 # data erstellt mit dem folgenden Kommando:
 #     ./miscsrc/grepstrassen -ignoreglobaldirectives -inner =(printf "\tX 8225,13010 8058,12959 7959,12844 7886,12737 7510,12536 7363,12403 7366,12272 8024,12292 8423,12396 8432,12637 8427,12722 8510,12717 8482,12846 8390,12936 8258,13003\n") -onlyenclosed data/strassen | perl -pe 's/\t\S+/\t2::temp/' >| /tmp/regierungsviertel.bbd
        data  => <<EOF,
+#: next_check_id: STAATSBESUCH-REGIERUNGSVIERTEL
 #: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
 #: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
 #: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_49_4437_4640_online.pdf (Amtsblatt ist am gleichen Tag wie die Allgemeinverfügung erschienen (!))
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
 (Ludwig-Erhard-Ufer)	2::temp 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
 (südliches Spreeufer)	2::temp 8427,12871 8462,12824 8473,12753
 (Panoramaweg Spreebogenpark)	2::temp 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
@@ -42474,7 +42496,7 @@ EOF
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-09-19 (mapillary)
+#: last_checked: 2024-10-12 (okas)
 #: check_frequency: 60d
 	2::inwork 9586,17665 9461,17795
 # REMOVED (nur der südliche Abschnitt ist laut osm+mapillary gesperrt) ---	2::inwork 9461,17795 9434,17823 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
@@ -43239,13 +43261,15 @@ EOF
 #: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
-#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025)
-#: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024)
+#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
+#: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
+#: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
 	q4::inwork; 25050,13539 25163,13494
 	q3::inwork 25163,13494 25287,13464
 Uslarer Str.	q3::inwork; 24967,13438 25094,13362
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1714280400, # 2024-04-28 07:00

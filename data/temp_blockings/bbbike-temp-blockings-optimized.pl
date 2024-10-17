@@ -3332,7 +3332,27 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: STAATSBESUCH-BELLEVUE
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
+	2::temp 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320 6689,12632
+	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
+	3 5900,11913 6164,11947 6642,12010 6550,11954
+	3 7122,12384 7051,12426 6859,12567
+	3 6884,12006 6828,12031 7026,12054
+	3 6859,12567 7051,12426 7122,12384
+	3 7026,12054 6828,12031 6884,12006
+	3 6550,11954 6642,12010 6164,11947 5900,11913
+#: note: hier lagen Mitte Oktober 2024 Absperrgitter, evtl. in Vorbereitung auf den Staatsbesuch?
+	2::temp 6813,12617 6808,12604 6859,12567 7051,12426
+',
+         'from' => 1729116000,
+         'id' => 3023,
+         'text' => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 18. Oktober 2024 von 5.30 Uhr bis 14.00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1729252800
+       },
        undef,
        undef,
        undef,
@@ -3420,6 +3440,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024)
 #: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
+#: also_indoor: traffic (T,G,H,W)
 	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
 ',
          'from' => 1726956000,
@@ -4911,7 +4932,24 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# REMOVED --- #: also_indoor: traffic (H,B,G) vvv --- #: XXX Ende der Sperrung? Halteverbote bis zum 6.12.2022, mittlerweile bis 31.12.2022 vvv --- #: last_checked: 2022-12-07 vvv --- #: check_frequency: 10d vvv --- #: next_check: 2022-12-31 vvv
+# REMOVED (hier mittlerweile wieder offen) --- einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
+# REMOVED --- etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
+# REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: also_indoor ^^^
+#: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
+#: also_indoor: traffic (T,B)
+#: last_checked: 2024-10-17
+#: check_frequency: 14d
+	q4::inwork 16720,12614 16859,12613
+',
+         'from' => undef,
+         'id' => 3642,
+         'text' => 'Gotlindestr.: Fahrbahn zwischen Siegfriedstr. und Wotanstr. gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
@@ -5394,7 +5432,30 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: STAATSBESUCH-POTSDAMERPLATZ
+#: by: https://nitter.cz/VIZ_Berlin/status/1657358780785479681#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnY3LW9VMld3QU1waW1jLmpwZw==
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1323864.php
+#: by: https://www.berlin.de/polizei/polizeimeldungen/allgemeinverfuegung.pdf?ts=1683902505
+#: by: https://berliner-abendblatt.de/berlin-news/sicherheitsvorkehrungen-nach-selenskyj-besuch-aufgehoben-id221352
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
+#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
+#: by: https://viz.berlin.de/aktuelle-meldungen/staatsbesuch-von-us-prasident-joe-biden-in-berlin/ (Biden-Besuch Oktober 2024)
+#: by[nocache]: https://x.com/polizeiberlin/status/1846553969557950834
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
+#: source_id: viz2021:13.375849,52.51018,17.10.2024,08:54
+	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
+	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
+	2::temp 8548,11571 8553,11630
+	2::temp 8442,11555 8542,11502
+',
+         'from' => 1729116000,
+         'id' => 3786,
+         'text' => 'Lennéstr., Ebertstr., Bellevuestr.: wegen eines Staatsbesuchs Sperrungen möglich, 17. und 18. Oktober 2024',
+         'type' => 'gesperrt',
+         'until' => 1729288799
+       },
        undef,
        undef,
        undef,
@@ -5451,7 +5512,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang; Halteverbotsschilder bis 2024-11-30
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-10-13
+#: last_checked: 2024-10-17
 #: check_frequency: 21d
 #: next_check: 2024-11-30
 	q3::inwork; 15648,12687 15643,12875
@@ -6059,7 +6120,54 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: STAATSBESUCH-REGIERUNGSVIERTEL
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
+#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
+#: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_49_4437_4640_online.pdf (Amtsblatt ist am gleichen Tag wie die Allgemeinverfügung erschienen (!))
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
+(Ludwig-Erhard-Ufer)	2::temp 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
+(südliches Spreeufer)	2::temp 8427,12871 8462,12824 8473,12753
+(Panoramaweg Spreebogenpark)	2::temp 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
+(Moltkebrücke - südliches Spreeufer)	2::temp 8030,12857 8025,12859 8006,12853
+(Kronprinzenbrücke - südliches Spreeufer)	2::temp 8427,12871 8428,12859 8424,12853
+(Spreeufer - Otto-von-Bismarck-Allee)	2::temp 8473,12753 8445,12755 8433,12753
+Große Querallee	2::temp 7945,12592 7875,12363
+Zeltenplatz	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
+Simsonweg	2::temp 8354,12416 8391,12389
+Kleine Querallee	2::temp 8391,12389 8400,12417
+John-Foster-Dulles-Allee	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+(Vorfahrt HdKdW)	2::temp 7821,12367 7813,12427 7778,12470 7687,12477 7654,12464 7627,12380
+Scheidemannstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417
+(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8399,12610
+(Wiese vor dem Reichstag)	2::temp 8373,12416 8369,12609
+Willy-Brandt-Str.	2::temp 8021,12832 8030,12824
+Willy-Brandt-Str.	2::temp 8030,12824 8120,12756
+(am Bundeskanzleramt)	2::temp 8120,12756 8122,12603
+Heinrich-von-Gagern-Str.	2::temp 8122,12603 8119,12414
+Paul-Löbe-Allee	2::temp 8399,12610 8369,12609 8306,12609 8207,12606
+Paul-Löbe-Allee	2::temp 8207,12606 8122,12603
+Paul-Löbe-Allee	2::temp 8122,12603 7945,12592 7851,12590
+(Paul-Löbe-Allee - südliches Spreeufer)	2::temp 7851,12590 7776,12586 7745,12603
+Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758
+Konrad-Adenauer-Str.	2::temp 8309,12758 8306,12609
+Otto-von-Bismarck-Allee	2::temp 8433,12753 8309,12758
+Otto-von-Bismarck-Allee	2::temp 8309,12758 8252,12757 8206,12757
+Otto-von-Bismarck-Allee	2::temp 8206,12757 8120,12756
+Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
+Bettina-von-Arnim-Ufer	2::temp 7437,12368 7561,12527 7670,12576
+(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	2::temp 8120,12756 8114,12839 8115,12912 8116,12938
+(Parkweg Spreebogenpark)	2::temp 8309,12758 8304,12938
+(Gustav-Heinemann-Brücke - Paul-Löbe-Haus)	2::temp 8115,12912 8252,12757
+(südliches Spreeufer - Gustav-Heinemann-Brücke)	2::temp 8025,12879 8041,12866 8116,12938
+(südliches Spreeufer - Panoramaweg)	2::temp 8427,12871 8385,12881 8304,12938
+',
+         'from' => 1729116000,
+         'id' => 3967,
+         'text' => 'Regierungsviertel: wegen eines Staatsbesuchs Sperrungen möglich, 18. Oktober 2024 von 05:00 bis 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1729267200
+       },
        undef,
        undef,
        undef,
@@ -6150,7 +6258,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-09-19 (mapillary)
+#: last_checked: 2024-10-12 (okas)
 #: check_frequency: 60d
 	2::inwork 9586,17665 9461,17795
 # REMOVED (nur der südliche Abschnitt ist laut osm+mapillary gesperrt) ---	2::inwork 9461,17795 9434,17823 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
@@ -6409,13 +6517,15 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
-#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025)
-#: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024)
+#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
+#: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
+#: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
 	q4::inwork; 25050,13539 25163,13494
 	q3::inwork 25163,13494 25287,13464
 Uslarer Str.	q3::inwork; 24967,13438 25094,13362
+#: add_fragezeichen ^^^
 ',
          'from' => 1713942000,
          'id' => 4048,
