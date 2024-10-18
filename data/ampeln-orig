@@ -31,7 +31,7 @@ Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
 #: next_check_id: KOENIGSPLATZ-2024
 #: last_checked: 2024-10-16
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-10-17
+#: next_check: 2024-11-25
 #: valid: -20241212
 Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
 # 
@@ -131,7 +131,7 @@ Möckernstr./nördlich. Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternati
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2024-10-05 (mapillary)
+#: last_checked: 2024-10-17 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-01-02
 #: valid: -20250102
@@ -402,7 +402,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2024-10-15
+#: last_checked: 2024-10-18
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -2704,7 +2704,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2024-10-18
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020

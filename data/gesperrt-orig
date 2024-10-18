@@ -83,6 +83,8 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9409 (Mitteilung zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9410 (Mitteilung zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9455 (Bebauungsplan 7-100 VE)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1495468.php
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/zukunft-planen/stadtumbau-west/artikel.359321.php
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="22"
 #: last_checked: 2024-07-14
@@ -196,7 +198,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2024-10-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -3965,7 +3967,7 @@ Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2024-09-24 vvv
+#: last_checked: 2024-10-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-01 vvv
 #: osm_watch: way id="1054783030" version="3"
@@ -4797,7 +4799,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2024-10-18
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4808,7 +4810,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://dielinke.berlin/start/det/nachfrage-zur-beantwortung-der-schriftlichen-anfrage-scha-ix-0495-bauprojekt-fanny-zobel-strasse/ (weiterhin: Gesamtmaßnahme bis 2027)
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2024-10-12 (mapillary) vvv
+#: last_checked: 2024-10-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5351,7 +5353,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2024-10-15
+#: last_checked: 2024-10-18
 #: check_frequency: 180d
 #: next_check: 2027-12-31
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
@@ -5550,12 +5552,12 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-14
 Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2024-08-01 (webcam)
+#: last_checked: 2024-10-18 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2024-08-01 (webcam)
+#: last_checked: 2024-10-18 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 

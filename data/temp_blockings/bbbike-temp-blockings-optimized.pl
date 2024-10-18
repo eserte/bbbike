@@ -3275,6 +3275,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1846411748867211318
 #: by: https://pbs.twimg.com/media/GZ_I_ijWUAEAnhh?format=png&name=900x900 (Richtung Norden ab Godesberger Str.: Gehweg Radfahrer frei)
 #: by: https://pbs.twimg.com/media/GZ_JN2BW0AAbVhy?format=jpg&name=large (Richtung Süden Umleitungsempfehlung für den Radverkehr)
+#: by: https://www.berliner-woche.de/karlshorst/c-bauen/abschnitt-der-treskowallee-gesperrt_a427651
 #: source_id: 2147342174 (inaktiv)
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024) (bis 27.09.2024) (bis 16.10.2024) (inaktiv)
@@ -3298,7 +3299,8 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch[closed]: note 3658253 6
-#: osm_watch: way id="192487145" version="27"
+#: osm_watch: way id="192487145" version="31"
+#: osm_watch: note 4481312 5
 #: priority: #B
 #: last_checked: 2024-10-16 (neue Verkehrsführung war noch nicht final)
 Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
@@ -3332,27 +3334,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: STAATSBESUCH-BELLEVUE
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
-	2::temp 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320 6689,12632
-	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
-	3 5900,11913 6164,11947 6642,12010 6550,11954
-	3 7122,12384 7051,12426 6859,12567
-	3 6884,12006 6828,12031 7026,12054
-	3 6859,12567 7051,12426 7122,12384
-	3 7026,12054 6828,12031 6884,12006
-	3 6550,11954 6642,12010 6164,11947 5900,11913
-#: note: hier lagen Mitte Oktober 2024 Absperrgitter, evtl. in Vorbereitung auf den Staatsbesuch?
-	2::temp 6813,12617 6808,12604 6859,12567 7051,12426
-',
-         'from' => 1729116000,
-         'id' => 3023,
-         'text' => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 18. Oktober 2024 von 5.30 Uhr bis 14.00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1729252800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3437,7 +3419,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
 #: by: https://www.bahninfo-forum.de/read.php?9,800515,811033#msg-811033
-#: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024)
+#: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024) (bis 21.10.2024)
 #: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
 #: also_indoor: traffic (T,G,H,W)
@@ -3445,8 +3427,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 ',
          'from' => 1726956000,
          'id' => 3070,
-         'text' => 'Freiheit/Lüdersstr./Alter Markt: Bauarbeiten, Fahrbahn gesperrt, vom 23.09.2024 bis voraussichtlich 18.10.2024',
-         'until' => 1729267200
+         'text' => 'Freiheit/Lüdersstr./Alter Markt: Bauarbeiten, Fahrbahn gesperrt, vom 23.09.2024 bis voraussichtlich 21.10.2024',
+         'until' => 1729526400
        },
        undef,
        undef,
@@ -4439,7 +4421,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/markthalle-101-ehemalige-quellekaufhaus.587/#post-17884
-#: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/
+#: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/ (mittlerweile: Eröffnung März 2025)
 #: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/kalle-neukoelln-wird-nach-und-nach-bezogen_a413054
 #: osm_watch: way id="734271970" version="7"
@@ -4449,7 +4431,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: also_indoor: traffic (none)
 #: last_checked: 2024-10-09
 #: check_frequency: 30d
-#: next_check: 2024-12-31
+#: next_check: 2025-03-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 ',
@@ -5367,7 +5349,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,ex-G,ex-W)
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2024-10-18 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -5444,7 +5426,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: by: https://viz.berlin.de/aktuelle-meldungen/staatsbesuch-von-us-prasident-joe-biden-in-berlin/ (Biden-Besuch Oktober 2024)
 #: by[nocache]: https://x.com/polizeiberlin/status/1846553969557950834
 #: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
-#: source_id: viz2021:13.375849,52.51018,17.10.2024,08:54
+#: source_id: viz2021:13.375849,52.51018,17.10.2024,08:54 (inaktiv)
 	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
 	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
 	2::temp 8548,11571 8553,11630
@@ -5765,6 +5747,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
 #: source_id: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
+#: source_id: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -5813,6 +5796,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,797608#msg-797608 (Ende der Bauarbeiten am 20.10.2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
+#: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
@@ -5824,7 +5808,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 #: priority: #A vvv
 #: last_checked: 2024-10-16 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-10-31 vvv
+#: next_check: 2024-11-25 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -5928,7 +5912,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-10-05 (mapillary) vvv
+#: last_checked: 2024-10-17 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -6120,54 +6104,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: STAATSBESUCH-REGIERUNGSVIERTEL
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
-#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
-#: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_49_4437_4640_online.pdf (Amtsblatt ist am gleichen Tag wie die Allgemeinverfügung erschienen (!))
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
-(Ludwig-Erhard-Ufer)	2::temp 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
-(südliches Spreeufer)	2::temp 8427,12871 8462,12824 8473,12753
-(Panoramaweg Spreebogenpark)	2::temp 8021,12832 8030,12857 8050,12893 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
-(Moltkebrücke - südliches Spreeufer)	2::temp 8030,12857 8025,12859 8006,12853
-(Kronprinzenbrücke - südliches Spreeufer)	2::temp 8427,12871 8428,12859 8424,12853
-(Spreeufer - Otto-von-Bismarck-Allee)	2::temp 8473,12753 8445,12755 8433,12753
-Große Querallee	2::temp 7945,12592 7875,12363
-Zeltenplatz	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
-Simsonweg	2::temp 8354,12416 8391,12389
-Kleine Querallee	2::temp 8391,12389 8400,12417
-John-Foster-Dulles-Allee	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-(Vorfahrt HdKdW)	2::temp 7821,12367 7813,12427 7778,12470 7687,12477 7654,12464 7627,12380
-Scheidemannstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417
-(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8399,12610
-(Wiese vor dem Reichstag)	2::temp 8373,12416 8369,12609
-Willy-Brandt-Str.	2::temp 8021,12832 8030,12824
-Willy-Brandt-Str.	2::temp 8030,12824 8120,12756
-(am Bundeskanzleramt)	2::temp 8120,12756 8122,12603
-Heinrich-von-Gagern-Str.	2::temp 8122,12603 8119,12414
-Paul-Löbe-Allee	2::temp 8399,12610 8369,12609 8306,12609 8207,12606
-Paul-Löbe-Allee	2::temp 8207,12606 8122,12603
-Paul-Löbe-Allee	2::temp 8122,12603 7945,12592 7851,12590
-(Paul-Löbe-Allee - südliches Spreeufer)	2::temp 7851,12590 7776,12586 7745,12603
-Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758
-Konrad-Adenauer-Str.	2::temp 8309,12758 8306,12609
-Otto-von-Bismarck-Allee	2::temp 8433,12753 8309,12758
-Otto-von-Bismarck-Allee	2::temp 8309,12758 8252,12757 8206,12757
-Otto-von-Bismarck-Allee	2::temp 8206,12757 8120,12756
-Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
-Bettina-von-Arnim-Ufer	2::temp 7437,12368 7561,12527 7670,12576
-(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	2::temp 8120,12756 8114,12839 8115,12912 8116,12938
-(Parkweg Spreebogenpark)	2::temp 8309,12758 8304,12938
-(Gustav-Heinemann-Brücke - Paul-Löbe-Haus)	2::temp 8115,12912 8252,12757
-(südliches Spreeufer - Gustav-Heinemann-Brücke)	2::temp 8025,12879 8041,12866 8116,12938
-(südliches Spreeufer - Panoramaweg)	2::temp 8427,12871 8385,12881 8304,12938
-',
-         'from' => 1729116000,
-         'id' => 3967,
-         'text' => 'Regierungsviertel: wegen eines Staatsbesuchs Sperrungen möglich, 18. Oktober 2024 von 05:00 bis 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1729267200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6593,10 +6530,10 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
        {
          'data' => '#: source_id: viz2021:13.451021,52.489535,27.05.2024,07:00 (bis 05.07.2024) (inaktiv)
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt\'s eine offizielle Wegführung für Radfahrer über den Hochbord. Mittlerweile (2024-10-09) ist die Kiefholzstraße offen.
-#: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt. 2024-10-09: es sieht so aus, als ob die Arbeiten nach Süden gewandert sind.
+#: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt. 2024-10-09, 2024-10-18: die Arbeiten sind nach Süden gewandert
 #: also_indoor: traffic (ex-H[falsch],re-G[zuviel],W[zuviel],T,B)
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße beendet?
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-18
 #: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 ',
@@ -6628,6 +6565,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024)
+#: source_id: viz2021:13.4546,52.47445,18.10.2024,13:33 (Braunschweiger Str. nicht erwähnt, bis 29.11.2024)
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
@@ -6987,7 +6925,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-18
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -7365,7 +7303,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        },
        {
          'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends; am 2024-10-07 (Mo) mittags sah es hier nach Bauarbeiten aus, 2024-10-16 (Mi) mittags ebenso
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-18
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
@@ -7526,6 +7464,29 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'id' => 4189,
          'text' => 'Fasanerieallee: Bauarbeiten, Zugang am Großen Stern gesperrt, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1495464.php (Bauzeit voraussichtlich zwei Wochen; vielleicht weitere Einschränkungen im Kreuzungsbereich)
+	q4::inwork 14440,15682 14653,15738
+',
+         'from' => 1729375200,
+         'id' => 4190,
+         'text' => 'Chopinstr./Indira-Gandhi-Str.: Bauarbeiten, mögliche Einschränkungen, vom 21.10.2024 bis voraussichtlich 1.11.2024',
+         'type' => 'handicap',
+         'until' => 1730502000
+       },
+       {
+         'data' => '#: next_check_id: SCHWEDTER-2024
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2024-10-16 (mapillary)
+#: check_frequency: 14d
+	q4::inwork 10530,14452 10567,14337 10629,14299
+',
+         'from' => undef,
+         'id' => 4191,
+         'text' => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
          'until' => undef
        }
      

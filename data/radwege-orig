@@ -1029,7 +1029,7 @@ Bushaltestelle	RW5; 10917,15525 10925,15581
 Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
-#: last_checked: 2024-10-05 (mapillary)
+#: last_checked: 2024-10-17 (mapillary)
 #: historical_note: früher: Gehwegplatten	RW2;
 #Radspur, niedrige Protektion	RW4;
 	RW2; 10941,15697 10953,15787
@@ -1309,11 +1309,12 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.462964,52.495756,09.02.2024,06:00 (Wochenendsperrung für Kfz-Verkehr, bis 11.02.2024) (inaktiv)
 #: source_id: viz2021:13.46341,52.496172,09.02.2024,06:00 (Wochenendsperrung für Kfz-Verkehr, bis 11.02.2024) (bis 14.02.2024) (inaktiv)
 #: source_id: viz2021:13.46469,52.49743,09.02.2024,06:00 (bis 11.02.2024) (inaktiv)
+#: source_id: viz2021:13.462768,52.495411,19.10.2024,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 20.10.2024)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-10-12 (mapillary) vvv
+#: last_checked: 2024-10-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1739,7 +1740,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 	RW2;RW2 22358,5918 22431,6068
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
-#: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss)
+#: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
 #: last_checked: 2024-09-18 (okas) vvv
 #: check_frequency: 120d vvv
@@ -2950,7 +2951,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1
-#: last_checked: 2024-10-15
+#: last_checked: 2024-10-18
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 	RW1; 12543,11521 12645,11673
@@ -3061,7 +3062,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2024-10-18
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3088,7 +3089,7 @@ Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei; die letzten 20 Meter 
 #: note ^^^
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX früherer Eintrag, wird vielleicht wieder hergestellt: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0;
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2024-10-18
 #: check_frequency: 60d
 #: next_check: 2024-12-31
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 13973,9465
@@ -5249,6 +5250,11 @@ asphaltiert	RW1; -233,15997 -224,16041 -215,16088
 alte Gehwegplatten, schmal, Bord gegen Gehweg	RW1; -252,15903 -261,15858 -292,15715 -302,15602 -302,15546 -286,15354 -344,15200
 	RW3; -252,15903 -233,15997
 Gehweg für Radfahrer frei	RW1; -1095,15621 -1115,15717 -1095,15865 -1409,16106 -1628,16225
+#: source_id: viz2021:13.237158,52.546478,18.10.2024,06:00 (bis 21.10.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1847119160847069577
+#: by: https://pbs.twimg.com/media/GaGk1ZdWIAAqASH?format=jpg&name=large
+#: XXX werden die Radwege Richtung Süden während der Bauarbeiten zwischen Lünette und Burscheider Weg ausgebessert?
+#: next_check: 2024-10-21
 schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
 	RW1;RW1 -1013,15433 -934,15254 -834,15053
 	RW1; -1258,14846 -1099,14925 -945,14999 -834,15053
@@ -7633,7 +7639,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-09-25 vvv
+#: last_checked: 2024-10-16 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
