@@ -1046,7 +1046,7 @@ Königsheide: Verbesserung der Befahrbarkeit geplant	?::projected 16868,5938 1684
 # 
 #: XXX Kö.1
 #: osm_watch: way id="54722077" version="22"
-#: last_checked: 2024-07-10
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected  21020,7433 21024,7484 21029,7591 21037,7751
 # Kö.2 (Rudolf-Rühl-Allee) wird ggfs. durch die Realsierung der TVO obsolet
@@ -1175,7 +1175,7 @@ Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projec
 # 
 #: XXX Osw.13
 #: osm_watch: way id="22749854" version="51"
-#: last_checked: 2024-09-04
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
 # 
@@ -1732,11 +1732,11 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: osm_watch: way id="93221335" version="27"
 #: osm_watch: note 4347252 7
 # REMOVED --- #: also_indoor: traffic (G,B,T,W) [alle ungenau/falsch]
-#: last_checked: 2024-10-17
+#: last_checked: 2024-10-19
 #: check_frequency: 7d
 #: next_check: 2024-12-31
 # REMOVED --- #: next_check: 2024-09-13
-Siegfriedstr.: Radstreifen mit Protektionselementen entsteht	?::inwork 16860,12861 16859,12613 16857,12600 16831,12419 16820,12339
+Siegfriedstr.: Radstreifen mit Protektionselementen entsteht	?::inwork 16860,12861 16859,12752 16859,12683 16859,12613 16857,12600 16831,12419 16820,12339
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/radweg-an-der-marzahner-chaussee-erst-nach-brueckenbau_a227482 (nach Fertigstellung der Rhinstraßenbrücke, mit der Planung wird 2020 begonnen)
@@ -2426,12 +2426,12 @@ Kulturforum (Matthäikirchplatz): Umwandlung in verkehrsberuhigte bzw. Fußgängerb
 #: XXX bei osm ist ein Weg eingetragen, bei mapillary sieht man am südlichen Ende ein Zusatzschild "Radfahrer (als Symbol) beide Richtungen (als Pfeile), Vorrang für Fußgänger"
 #: XXX der Weg ist befahrbar, allerdings stellenweise sehr eng und bewachsen --- eine Aufnahme in strassen-orig lohnt in diesem Zustand noch nicht
 #: osm_watch: way id="282742769" version="8"
-#: last_checked: 2024-08-14
+#: last_checked: 2024-10-19
 #: check_frequency: 180d
 Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::projected 21654,10390 21691,10485 21810,10595 21912,10717 22154,10769 22245,10863 22240,10980
 # 
 #: by: https://api.fixmyberlin.de/api/projects/269
-#: last_checked: 2024-07-06
+#: last_checked: 2024-10-19
 #: check_frequency: 120d
 Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projected 22196,12961 22211,13040 22187,13304 22191,13414 22259,13508
 # 
@@ -3700,7 +3700,7 @@ Heiligental: Neubau, danach vermutlich bessere Qualität, evtl. auch verkehrsberu
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2016/ba_vorlage_0011_v_auswertung_beteilig_b_plan_xxi_41b.pdf
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20220418 (Bauarbeiten der Wasserbetriebe in der Siedlung Biesenhorst, bis 2024)
-#: last_checked: 2024-06-19
+#: last_checked: 2024-10-19
 #: check_frequency: 360d
 Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projected 20598,9298 20868,9294 20938,9293 20932,8956 20594,8966 20598,9298
 # 
@@ -3859,7 +3859,7 @@ Bebauungsplan 3-69: ehem. Industriebahntrasse wird zum Rad/Gehweg	?::projected 1
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/stadtplanung/bebauungsplaene/b-plan-xxi-23_blatt-1_barrierefrei.pdf (eher nicht: "... sind mit einem 5 m breiten Fahrrecht zugunsten der Wasser- und Umweltbehörden zu belasten.")
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/stadtplanung/bebauungsplaene/b-plan-xxi-23_blatt-2_barrierefrei.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_48_4373_4436_online.pdf (Wiederholung der Veröffentlichung)
-#: last_checked: 2024-06-19
+#: last_checked: 2024-10-19
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-04-01
 Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens gebaut?	? 18397,14190 18421,14240 18388,14533 18415,14598
@@ -4310,7 +4310,7 @@ Ludwigsluster Str.: Radweg wird neu gemacht (?)	? 22896,12827 22906,12766 22906,
 # REMOVED --- #: next_check: 2023-12-31
 Gülzower Str.: Radweg wird neu gemacht	?; 22304,12157 22388,12190 22603,12359 22817,12525 22967,12647
 #: XXX aber nicht 2021
-#: last_checked: 2024-08-14
+#: last_checked: 2024-10-19
 #: check_frequency: 270d
 Cottbusser Str.: Fahrradstraße geplant	?::projected 23104,14827 23175,14823 23222,14809 23297,14772 23369,14756 23405,14758 23531,14781 23735,14814 23798,14826
 #: by: ^^^
@@ -4990,7 +4990,7 @@ Allee der Kosmonauten: Radwege geplant	?::projected 20150,13562 20193,13621 2020
 #: osm_watch: way id="27944033" version="34"
 #: osm_watch: way id="1101186135" version="5"
 #: osm_watch: way id="432205749" version="14"
-#: last_checked: 2024-06-02
+#: last_checked: 2024-10-19
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-06-30
 Allee der Kosmonauten: Radwege zwischen Elisabethstr. und Landsberger Allee geplant	?::projected 20755,14479 20822,14594 20868,14698 20944,14840 20980,14914 21018,14991 21025,15005 21099,15158 21163,15289 21187,15350 21228,15449 21242,15529 21241,15573
@@ -5052,7 +5052,7 @@ Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	? 24895,13039 2489
 #: osm_watch: node id="10750878558" version="3"
 #: priority: #D
 #: XXX zurzeit steht nur ein weggedrehter Mast ohne Schild
-#: last_checked: 2024-10-03 (osm note)
+#: last_checked: 2024-10-19
 # REMOVED --- #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-05-01
 Marzahner Promenade: Zebrastreifen entsteht	?::inwork  20150,15492 20226,15512 20170,15456
@@ -5902,7 +5902,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-19
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
@@ -5926,7 +5926,7 @@ Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,885
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18076,10324 18085,10244 18114,10215
 # 
 # REMOVED (hier liegt bereits Verbundsteinpflaster --- keine Änderung?) --- Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18114,10215 18130,10201 18132,10183
-#: last_checked: 2024-10-17
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16439,12872 16484,12871 16860,12861
 # 
@@ -5970,8 +5970,8 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 #: XXX Mischung aus Gehwegradweg (Rüdigerstr., Schottstr.), Radspur (Alfredstr.) und für Radfahrer freigegebene Busspur (Alfredstr., teilweise schon existierend)
 #: source_id: viz2021:13.493057,52.516212,14.10.2021,07:00 (Fahrbahnsanierungsarbeiten, bis 20.11.2021) (inaktiv)
 #: source_id: viz2021:13.490291,52.514628,15.08.2022,07:00 (Kanalarbeiten, bis 18.9.2022) (inaktiv)
-#: source_id: viz2021:13.489686,52.512256,03.09.2024,07:00 (Leitungsarbeiten, bis 18.10.2024)
-#: last_checked: 2024-10-08
+#: source_id: viz2021:13.489686,52.512256,03.09.2024,07:00 (Leitungsarbeiten, bis 18.10.2024) (inaktiv)
+#: last_checked: 2024-10-19
 #: check_frequency: 360d
 #: next_check: 2026-09-30
 Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected 16485,12384 16397,12397 16276,12273 16255,12224 16248,12177 16223,11999 16214,11935
@@ -5993,7 +5993,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2024-10-13
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -6131,7 +6131,7 @@ Hirschberger Str.: Planung einer Einbahnstraße	? 14988,11130 15021,11152 15056,1
 #: osm_watch: way id="1286852473" version="6"
 #: XXX Sieht weitgehend fertig aus --- wann erfolgt die Freigabe?
 #: note: mittlerweile sind die Barrieren halb wegschoben, aber wegen der Bauzäune an der Einmündung Karlshorster Str./Hauptstr. müsste man trotzdem Umwege fahren
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-19
 #: check_frequency: 14d
 #: next_check: 2024-12-31
 (Hauptstr./Rummelsburger Ufer - Gustav-Tempel-Str.): ein asphaltierter Zweirichtungsradweg entsteht	?::inwork 15298,10682 15245,10719
@@ -7284,7 +7284,7 @@ Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7477,17
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1205539.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/10210029_blatt1_2022_30062022_barrierefrei.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/10210029_blatt2_2022_30062022_barrierefrei.pdf (Blatt 2: hier ist der geplante verkehrsberuhigte Bereich)
-#: last_checked: 2024-09-01
+#: last_checked: 2024-10-19
 #: check_frequency: 360d
 Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 21089,9223
 # 
@@ -7371,7 +7371,7 @@ Revaler Str.: östlicher Abschnitt wird zur Fahrradstraße und soll asphaltiert we
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_29_1999_2054_online.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/4013-spreestadt-kpm-quartier-charlottenburg/?postID=766604#post766604
 #: osm_watch: way id="496771672" version="8"
-#: last_checked: 2024-09-11 (daf)
+#: last_checked: 2024-10-13 (architektur-urbanistik)
 #: check_frequency: 360d
 Uferweg an der Spree: soll hier entstehen	?::projected 5523,12231 5411,12290
 # 
@@ -8226,7 +8226,7 @@ Falkentaler Steig: entsteht hier ein Zebrastreifen?	? 2842,24293 2903,24264 2971
 # REMOVED --- #: note: Halteverbotsschilder bis 20.11.2023; auf der nördlichen Seite ab Jessnerstr. markiert, noch ohne Radwegschilder; es wurden nur kleine Stellen saniert (bereits eingetragen, inkl. neuen qualitaet_s-Eintrag) --- #: note: Richtung Osten: zwischen Weichselstr. und Müggelstr. bereits markiert und ausgeschildert, trotzdem parken hier noch Autos; am 2024-02-13 zum ersten Mal frei gesehen; mittlerweile dauerhaft frei und eingetragen
 #: note: Richtung Osten: ab Müggelstr. teilweise noch unsaniert (Kopfsteinpflaster) und eine Hochbaustelle; Halteverbotsschilder bis 30.06.2024; mittlerweile wurde das Gerüst abgebaut, das Haus ist noch immer eine Baustelle, auf dem zukünftigen Radstreifen steht ein Container --- nichts passiert hier! Mittlerweile sind hier Bauarbeiten.
 #: XXX An die comments_tram-Einträge denken!
-#: last_checked: 2024-10-17 vvv
+#: last_checked: 2024-10-19 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2024-12-31 vvv
@@ -8260,7 +8260,7 @@ Thielallee: Radfahrstreifen soll erstellt werden	?::projected 2596,4907 2573,488
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/zebrastreifen-fuer-die-heesestrasse_a394664 ("zeitnahe" Umsetzung)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/neue-zebrastreifen-in-marzahn-hellersdorf-in-planung_a390227
 #: priority: #D
-#: last_checked: 2024-07-06
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 Heesestr./Schwabenallee: Zebrastreifen soll errichtet werden	?::projected 21359,9941 21371,9923 21383,9901
 # 
@@ -8521,7 +8521,7 @@ Hauptstr. (Rosenthal): Modalsperre entsteht	? 8389,21468 8419,21446
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11603
 #: osm_watch: way id="1051634661" version="11"
 #: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
-#: last_checked: 2024-10-17
+#: last_checked: 2024-10-19
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
@@ -9684,12 +9684,11 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 # REMOVED (-> strassen-orig) --- An den Eiswerken	? 15004,10791 14994,10732 14984,10677
 # REMOVED (-> strassen-orig) --- Paul-und-Paula-Promenade	? 14886,10748 14909,10732 14984,10677
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
-#: last_checked: 2024-10-16 vvv
+#: last_checked: 2024-10-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-31 vvv
 #: XXX beim DPAG-Mitteilungsblatt 6/2023 als "Paul-und Paula-Promenade" bezeichnet (ein Bindestrich weniger); PLZ=10317
 Paul-und-Paula-Promenade: existiert noch nicht	?::projected 14984,10677 15056,10625
-Rummelsburger Seeblick: existiert noch nicht	?::projected 14927,10807 14909,10732
 Heiner-Carow-Str.: existiert noch nicht	?::projected 15081,10775 15071,10716 15056,10625
 #: next_check ^^^
 #: check_frequency ^^^
@@ -10249,7 +10248,7 @@ Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -31
 # REMOVED (freigegeben) --- #: XXX asphaltiert, noch nicht freigegeben --- #: osm_watch: way id="1121018163" version="5" --- #: last_checked: 2023-06-22 (mapillary) --- #: check_frequency: 30d --- Bebauungsplan 10-45: Rad/Gehweg in Bau (hier vielleicht auch Eva-Strittmatter-Str.?)	?::inwork 23536,15252 23550,15261 23661,15282
 # REMOVED (realisiert) --- #: osm_watch: way id="1121018164" version="3" --- Bebauungsplan 10-45: Privatstraße geplant (geplanter Straßenname Ingeborg-Feustel-Str.)	?::projected 23536,15252 23537,15247 23569,15062
 #: note: zurzeit ist hier ein befahrbarer Weg durch eine KGA, unbefestigt, holprig, etwas Gras, schmal, unbeleuchtet
-#: last_checked: 2024-08-14
+#: last_checked: 2024-10-19
 #: check_frequency: 180d
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23300,14933 23277,14927 23111,14956
 # REMOVED --- #: next_check ^^^
@@ -10275,7 +10274,7 @@ Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23300,14933 23277,14927 231
 # REMOVED (nicht mehr relevant) --- #: osm_watch: way id="562158989" version="14"
 # REMOVED (nicht mehr relevant) --- #: osm_watch: way id="690314012" version="7"
 #: osm_watch: way id="279797470" version="9"
-#: last_checked: 2024-06-02 vvv
+#: last_checked: 2024-10-19 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 # REMOVED --- (Neuruppiner Str. - Havelländer Ring)	?::projected 23265,15351 23381,15361
@@ -10549,10 +10548,11 @@ Beate-Hahn-Str.: zurzeit Baustraße, wie wird die Qualität nach der Fertigstellun
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1017102.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/2-b-plan_9-53_lageplan_1zu500.pdf
 #: by: https://mein.berlin.de/vorhaben/2021-00212/
+#: by: https://www.buwog.de/presse/kabelwerk-koepenick-bodensanierung-beginnt (Beräumung, ab Oktober 2024 für 15 Monate)
 #: osm_watch: way id="37588146" version="16"
 #: XXX auch interessant: möglicher Uferweg unter der Salvador-Allende-Brücke bis zum Katzengrabensteg
-#: last_checked: 2024-09-04
-#: check_frequency: 720d
+#: last_checked: 2024-10-17 (architektur-urbanistik)
+#: check_frequency: 1000d
 Bebauungsplan 9-53 (Friedrichshagener Str. (Köpenick)): vermutlich entstehen hier neue Straßen	?::projected 22913,5273 22928,5071 23073,5176 23396,5176 23381,5291 23294,5270 22913,5273
 # 
 #: XXX culdesac-Eintrag nach Eröffnung entfernen!
@@ -10797,7 +10797,7 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: XXX ampelgesicherte Kreuzungen werden entstehen, direkt am Knoten sowie bei der Zufahrt Frank-Schweitzer-Str.
 #: alias: Marzahner Knoten
 #: alias: Großbaustelle Marzahner Brücken
-#: last_checked: 2024-08-08 (mapillary)
+#: last_checked: 2024-10-19
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 Knoten Marzahn: Neubau geplant	?::projected 19467,15045 19633,15098

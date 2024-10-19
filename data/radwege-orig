@@ -1773,8 +1773,9 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 	RW2; 14530,7301 14430,7348 14379,7372 14369,7376 14334,7395 14174,7505
 #: XXX wegen eines Fußgängerschutztunnels unter dem Estrel-Tower ist der vorhandene Radweg abgesperrt
 #: XXX später wieder herstellen: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14334,7395
-#: last_checked: 2024-10-14
-#: check_frequency: 60d
+#: also_indoor: webcam https://portal1828.webcam-profi.de/ 
+#: last_checked: 2024-10-19 (webcam)
+#: check_frequency: 30d
 Busspur ist immer gültig	RW5; 14174,7505 14334,7395
 überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14334,7395 14369,7376
 	RW1; 14369,7376 14379,7372 14430,7348 14530,7301
@@ -4241,13 +4242,17 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX Radwege werden neu gemacht vvv
-#: last_checked: 2024-08-14 vvv
+#: last_checked: 2024-10-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-07-31 vvv
-Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082 22899,15073
+Gehweg für Radfahrer frei, Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082
+#: note: allerdings gibt es kein explizites Radfahrverbot auf der Fahrbahn
+Umleitung für Radfahrer über Nebenfahrbahn	RW10; 22726,15082 22899,15073
 	RW1; 22899,15073 22726,15082 22599,15105
 neu asphaltiert, relativ breit	RW8;RW2 22577,15109 22441,15118
-neu asphaltiert, relativ breit	RW2;RW8 22441,15118 22323,15119 22059,15153 21903,15174
+neu asphaltiert, relativ breit	RW2; 22441,15118 22323,15119
+Gehweg für Radfahrer frei	RW1; 22323,15119 22441,15118
+neu asphaltiert, relativ breit	RW2;RW8 22323,15119 22059,15153 21903,15174
 letzte Deckschicht fehlt, relativ breit	RW2;RW8 21903,15174 21809,15186 21718,15198 21599,15213
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5224,13 +5229,14 @@ Verbundsteinpflaster	RW1; 16852,14412 16873,14236 16881,14063 16875,13834 16868,
 Verbundsteinpflaster	RW2; 16868,13611 16866,13532
 	RW4; 16866,13532 16865,13423 16863,13138
 	RW3; 16863,13138 16865,13000 16860,12861
-	RW3; 16860,12861 16859,12613
+	RW3; 16860,12861 16859,12752 16859,12683 16859,12613
 Grünbeschichtung	RW3; 16859,12613 16857,12600 16831,12419
 	RW3; 16831,12419 16820,12339
 #: note: Siegfriedstr. Richtung Norden
 Grünbeschichtung	RW3; 16820,12339 16831,12419 16857,12600 16859,12613
-#: note: Markierungslücke in Höhe des Straßenbahnbetriebshofs
-	RW3; 16859,12613 16860,12861
+	RW3; 16859,12613 16859,12683
+	RW0; 16859,12683 16859,12752
+	RW3; 16859,12752 16860,12861
 	RW4; 16860,12861 16865,13000 16863,13138 16865,13423
 Verbundsteinpflaster	RW1; 16866,13532 16868,13611 16875,13834 16881,14063 16873,14236
 Verbundsteinpflaster	RW2; 16873,14236 16852,14412
@@ -5576,7 +5582,7 @@ neues Verbundsteinpflaster	RW2; 22739,16203 22696,16208 22631,16215 22495,16165 
 Gehweg für Radfahrer frei, eng	RW1; 19502,15089 19364,15045 19205,14980 19196,14976 19175,14968
 # REMOVED (temporär nicht verfügbar?) --- Gehweg für Radfahrer frei, eng	RW1; 19175,14968 19013,14905
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-06-19
+#: last_checked: 2024-10-19
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 Gehweg für Radfahrer frei	RW9; 19200,14963 19156,14953 19013,14905 18831,14823

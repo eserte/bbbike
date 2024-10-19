@@ -48,7 +48,8 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3::inwork 15937,15134 16075,15069
-Eisenacher Str.: Radfahrer teilen sich mit Fuﬂg‰ngern den B¸rgersteig, Umwege	q2::inwork 22577,15109 22599,15105 22726,15082 22899,15073
+Eisenacher Str.: Radfahrer teilen sich mit Fuﬂg‰ngern den B¸rgersteig, Umwege	q2::inwork; 22899,15073 22726,15082 22599,15105 22577,15109
+Eisenacher Str.: Umweg ¸ber Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 Gothaer Str.: Fahrbahn gesperrt, mˆgliche Umwege	q2::inwork 22899,15073 22905,14925
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung S¸den	q3::inwork; 19181,13485 19198,13272 19180,13219
 Merler Weg: tempor‰re Einbahnstraﬂenregelung	q3::inwork; 19180,13219 18852,13269
@@ -1101,7 +1102,7 @@ Zum Seeblick: einige Stufen	q3 27161,-2474 27191,-2432
 Fritz-Lang-Str.: Fuﬂg‰ngerzone	q2 23856,14868 23878,14748
 Kurt-Weill-Gasse: Fuﬂg‰nger	q1 23846,14931 23778,14995
 Kurt-Weill-Gasse: Fuﬂg‰ngerzone	q4 23993,14797 23961,14841 23918,14876 23882,14904
-(Alt-Hellersdorf - Cottbusser Str.): getrennter Rad/Gehweg	q1 23305,14914 23318,14847 23297,14772
+(Alt-Hellersdorf - Cottbusser Str.): einige Fuﬂg‰nger	q1 23305,14914 23318,14847 23297,14772
 Clara-Zetkin-Weg: Fuﬂg‰nger	q1 22572,13025 22591,12959 22612,12966 22687,12986 22690,12979 22768,13004
 (Clara-Zetkin-Platz - Bansiner Str.): Fuﬂg‰nger	q1 22612,12966 22623,12944
 Lion-Feuchtwanger-Str.: Fuﬂg‰nger, Rampe	q2 22538,12955 22562,12944 22591,12959
@@ -1858,7 +1859,7 @@ Dalandweg: schmale und kurvenreiche Straﬂe	q1 5120,4318 5226,4259 5250,4298 5311
 (Zufahrt zum Gewerbegebiet): Parkplatzverkehr	q1 25312,11186 25298,11118 25298,10966 25297,10892
 (Pilgramer Str. - Gewerbegebiet): Parkplatzverkehr	q1 25168,10963 25298,10966 25337,10967
 (Alte Hellersdorfer Str. - Hellersdorfer Str.): Fuﬂg‰nger	q1 23084,14472 23081,14418 23072,14353 23021,13982
-(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Fuﬂg‰nger	q1 23072,14353 23018,14251 22967,14129 22903,14063 22854,14018
+(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Fuﬂg‰nger	q1 23072,14353 23057,14324 23024,14264 23018,14227 22967,14129 22903,14063 22854,14018
 (unterer Wuhlewanderweg - oberer Wuhlewanderweg): Fuﬂg‰nger	q1 22505,15075 22539,15074 22588,15056
 (oberer Wuhlewanderweg - Gottfried-Funeck-Weg): Fuﬂg‰nger	q1 22872,14175 22903,14063
 Wundtstr.: Bolzpl‰tze	q1 2623,11385 2764,11500
@@ -2599,6 +2600,7 @@ Straﬂe zum M¸ggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 
 (Personentunnel S-Bhf. Wollankstr.): Fuﬂg‰nger, Rampen	q4 9434,17823 9383,17757
 Am M¸hlenberg: niedriger Bordstein, einige Fuﬂg‰nger	q2 6094,8618 6100,8681
 Am M¸hlenberg: einige Fuﬂg‰nger	q1 6100,8681 6101,8732
+Rummelsburger Seeblick: Fuﬂg‰nger	q3 14927,10807 14918,10769 14909,10732
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

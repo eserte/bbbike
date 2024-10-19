@@ -108,7 +108,7 @@ Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2024-06-19 vvv
+#: last_checked: 2024-10-19 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19013,14905 19175,14968
@@ -244,7 +244,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="4"
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-19
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -295,7 +295,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder
-#: last_checked: 2024-09-01
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -3015,6 +3015,7 @@ tragen (8 weite Stufen)	0:30 18121,10314
 tragen (insgesamt 61 Stufen)	0:60 -3126,1798
 tragen (Treppe, 33 Stufen)	0:35 10110,15678
 tragen (Treppe) oder Aufzug benutzen	0:30 39964,102370
+tragen (Treppe)	0:20 14918,10769
 #
 #: section ^^^
 ###################################################################
@@ -3923,7 +3924,9 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX an dieser Stelle wird es alternativ eine Rampe geben
-#: last_checked: 2024-06-19
+#: osm_watch: note 4298701 1
+#: osm_watch: way id="1297589176" version="1"
+#: last_checked: 2024-10-19
 #: next_check: 2026-12-31
 (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19156,14953 19160,14935 19171,14938
 # 
@@ -4118,7 +4121,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="27"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4172,7 +4175,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-10-16 vvv
+#: last_checked: 2024-10-19 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -4374,7 +4377,7 @@ Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="19"
-#: last_checked: 2024-07-06
+#: last_checked: 2024-10-19
 #: check_frequency: 360d
 #: next_check: 2025-12-31
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961

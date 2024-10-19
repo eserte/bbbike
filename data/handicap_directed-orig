@@ -413,9 +413,10 @@ Südliche Blumberger-Damm-Brücke: Radfahrer müssen den gegenüberliegenden Radweg 
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: note: Mindestwartezeit an den Ampeln etwa eine Minute
-#: XXX zurzeit sind die Ampeln wegen Sperrung für den Kfz-Verkehr abgeschaltet, siehe valid-Direktive
-#: XXX vermutlich ab Mitte Juni 2024 für die andere Richtung gültig, falls man nicht den Bürgersteig nutzt
-#: last_checked: 2024-06-19 vvv
+# REMOVED --- #: XXX zurzeit sind die Ampeln wegen Sperrung für den Kfz-Verkehr abgeschaltet, siehe valid-Direktive
+# REMOVED --- #: XXX vermutlich ab Mitte Juni 2024 für die andere Richtung gültig, falls man nicht den Bürgersteig nutzt
+#: note: mittlerweile (Herbst 2024) wird beim Fahren Richtung Osten auf ein Radweg-Ende hingewiesen und eine mögliche Umleitung über Marzahner Promenade
+#: last_checked: 2024-10-19 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv

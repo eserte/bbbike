@@ -2281,7 +2281,7 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (inaktiv) (Radwegarbeiten)
 #: check_frequency: 120d vvv
-#: last_checked: 2024-09-08 vvv
+#: last_checked: 2024-10-19 vvv
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
@@ -4132,7 +4132,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="22"
 #: osm_watch: way id="1090076934" version="5"
 #: osm_watch: way id="1090076933" version="5"
-#: last_checked: 2024-09-04
+#: last_checked: 2024-10-19
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -8063,7 +8063,7 @@ Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1+ 23580,14970 23543,14966
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Kleinsteinpflaster	Q1- 23521,14973 23529,14973 23543,14966
 Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23300,14933 23305,14914
 #: historical_note: früher (bis 2024): Betonplatten, Q1
-(Alt-Hellersdorf - Cottbusser Str.): Asphalt	Q1 23305,14914 23318,14847 23297,14772
+(Alt-Hellersdorf - Cottbusser Str.): Asphalt	Q0 23305,14914 23318,14847 23297,14772
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23304,14473 23290,14493
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23211,14451 23290,14493 23366,14537
 Cottbusser Platz: Asphalt	Q0 23297,14772 23288,14719 23298,14685 23366,14537
@@ -12242,9 +12242,10 @@ Marienlust: Waldweg	Q1- 25548,941 25543,879
 Feldberger Ring: Verbundsteinpflaster	Q1 23021,13982 22987,13989
 Hellersdorfer Str.: Verbundsteinpflaster	Q1 22981,13966 22987,13989
 (Alte Hellersdorfer Str. - Hellersdorfer Str.): Asphalt	Q0 23084,14472 23081,14418 23072,14353 23021,13982
-#: note: ein paar Meter Asphalt vor dem Ende am Parkplatz
-(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Betonpflaster/Asphalt	Q0- 23072,14353 23018,14251
-(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Asphalt	Q0 23018,14251 22967,14129 22903,14063 22854,14018
+(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Asphalt	Q0 23072,14353 23057,14324
+(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Betonpflaster	Q1+ 23057,14324 23024,14264
+(Jelena-Santic-Park): Betonpflaster	Q1+ 23024,14264 22997,14213 22951,14157
+(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Asphalt	Q0 23024,14264 23018,14227 22967,14129 22903,14063 22854,14018
 (Hellersdorfer Str. - Wuhlewanderweg): Asphalt	Q0 23081,14418 23030,14424 23001,14445 22938,14465 22868,14477
 Melanchthonstr.: Beton/Verbundsteinpflaster	Q1 25287,13464 25325,13543
 (Fehrbelliner Platz): welliges Verbundsteinpflaster	Q1- 4415,9343 4427,9305 4428,9283 4414,9255 4396,9237
@@ -31577,7 +31578,7 @@ Johannes-Zoschke-Str.: mäßiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/ausbau-der-rheinpfalzallee-auf-der-kippe_a387334 (Baubeginn 2025?)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/ausbau-der-rheinpfalzallee-sollte-laut-spd-dringend-in-die-investitionsplanung_a391367
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
-#: last_checked: 2024-08-03 vvv
+#: last_checked: 2024-10-19 vvv
 #: next_check: 2025-03-01 vvv
 #: confirmed_by: srt
 Rheinpfalzallee: Sandweg	Q2+ 18865,9608 18931,9629

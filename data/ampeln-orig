@@ -198,12 +198,12 @@ Gürtelstr.	F::inwork 15153,11691
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 # REMOVED (ja) --- #: XXX gibt es die Ampeln wieder?
-#: last_checked: 2024-06-19 vvv
+#: last_checked: 2024-10-19 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv
 #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
-#: note: kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30)
+#: note: manchmal kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30)
 #: note: Anforderungsampel
 	F::inwork 18831,14823
 #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
@@ -3600,7 +3600,6 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: BAB100-2022
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="6"
-#: also_indoor: webcam https://portal1828.webcam-profi.de/ 
 #: last_checked: 2024-10-12 (mapillary)
 #: check_frequency: 90d
 	X::inwork 14334,7395

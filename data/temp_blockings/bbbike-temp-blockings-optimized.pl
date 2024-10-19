@@ -1,6 +1,375 @@
-$#temp_blocking = 727;
+$#temp_blocking = 393;
 push @temp_blocking,
 (
+       {
+         'data' => '#: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
+# REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
+# sowieso schon mit q4 markiert, deshalb -> 2
+	2::xmas 5829,10964 5782,10884
+	2::xmas 5656,10876 5652,11004
+#: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
+#: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
+#: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
+#: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
+# REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
+#: source_id: 2147345089 (inaktiv)
+#: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
+#: note: 2022+2023 ist die Farbahn auch gesperrt
+Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
+',
+         'from' => 1732489200,
+         'id' => 394,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              11,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 25. November 2024 bis 05. Januar 2025',
+         'type' => 'gesperrt',
+         'until' => 1736204399
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'data' => '#: by: http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html
 #: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
@@ -3282,14 +3651,11 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: source_id: viz2021:13.52779,52.49067,14.08.2024,14:30 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.52703,52.486973,16.10.2024,08:00 (östliche Fahrbahn, bis 31.10.2025)
 #: source_id: bvg2024:396#HIM_FREETEXT_242591
-#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
-#: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
-#: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
-#: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht; mittlerweile (2024-09-28) vermutlich komplett mit Deckschicht asphaltiert
-#: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
-#: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
-#: check_frequency: 3d vvv
-#: next_check: 2025-12-31 vvv
+# REMOVED --- #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
+# REMOVED --- #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
+# REMOVED --- #: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht; mittlerweile (2024-09-28) vermutlich komplett mit Deckschicht asphaltiert
+# REMOVED --- #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
+# REMOVED --- #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -3301,21 +3667,27 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="31"
 #: osm_watch: note 4481312 5
+#: check_frequency: 7d vvv
+#: next_check: 2025-12-31 vvv
 #: priority: #B
-#: last_checked: 2024-10-16 (neue Verkehrsführung war noch nicht final)
-Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
+#: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
+#: last_checked: 2024-10-19
+Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
+#: priority: #B
+#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird nicht mehr wiederholt
+#: last_checked: 2024-10-19
+Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
-#: last_checked: 2024-09-04
-#: check_frequency: 60d
-#: next_check: 2024-10-19
+#: last_checked: 2024-10-19
+#: check_frequency: 14d
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
 ',
          'from' => undef,
          'id' => 3007,
-         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer möglicherweise verboten (außer Anlieger); außerdem Einbahnstraßenregelung in der Andernacher Str.; Bauarbeiten bis Ende 2025',
+         'text' => 'Treskowallee: Richtung Süden für Radfahrer verboten (Anlieger frei); Richtung Norden Gehweg mit Verschwenkungen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; außerdem Einbahnstraßenregelung in der Andernacher Str.; Bauarbeiten bis Ende 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4922,7 +5294,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: also_indoor ^^^
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
-#: last_checked: 2024-10-17
+#: last_checked: 2024-10-19
 #: check_frequency: 14d
 	q4::inwork 16720,12614 16859,12613
 ',
@@ -5414,30 +5786,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: STAATSBESUCH-POTSDAMERPLATZ
-#: by: https://nitter.cz/VIZ_Berlin/status/1657358780785479681#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnY3LW9VMld3QU1waW1jLmpwZw==
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1323864.php
-#: by: https://www.berlin.de/polizei/polizeimeldungen/allgemeinverfuegung.pdf?ts=1683902505
-#: by: https://berliner-abendblatt.de/berlin-news/sicherheitsvorkehrungen-nach-selenskyj-besuch-aufgehoben-id221352
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2023/pressemitteilung.1386051.php (Erdogan-Besuch November 2023)
-#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/231117-allgemeinverfuegung.pdf?ts=1700138774
-#: by: https://viz.berlin.de/aktuelle-meldungen/staatsbesuch-von-us-prasident-joe-biden-in-berlin/ (Biden-Besuch Oktober 2024)
-#: by[nocache]: https://x.com/polizeiberlin/status/1846553969557950834
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
-#: source_id: viz2021:13.375849,52.51018,17.10.2024,08:54 (inaktiv)
-	2::temp 8442,11555 8328,11617 8226,11672 8221,11690 8322,11715 8387,11637 8442,11555 8490,11562 8548,11571 8542,11502
-	2::temp 8490,11562 8481,11638 8456,11763 8489,11782 8571,11846 8567,11799 8562,11744 8553,11638 8481,11638 8387,11637
-	2::temp 8548,11571 8553,11630
-	2::temp 8442,11555 8542,11502
-',
-         'from' => 1729116000,
-         'id' => 3786,
-         'text' => 'Lennéstr., Ebertstr., Bellevuestr.: wegen eines Staatsbesuchs Sperrungen möglich, 17. und 18. Oktober 2024',
-         'type' => 'gesperrt',
-         'until' => 1729288799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5533,13 +5882,12 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10936 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
 #: source_id[inactive]: bvg2021:190#BVG320324_0
-# REMOVED --- #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023
-#: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert)
+#: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert); Halteverbotsschilder bis 15.11.2024
 #: also_indoor: traffic (ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten in der Gleiwitzer Str. beendet?
-#: last_checked: 2024-09-01 vvv
+#: last_checked: 2024-10-19 vvv
 # REMOVED --- #: check_frequency: 120d vvv
-#: next_check: 2024-09-30 vvv
+#: next_check: 2024-11-15 vvv
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
 Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,9999 21146,9988
@@ -5550,7 +5898,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
 ',
          'from' => 1686407303,
          'id' => 3817,
-         'text' => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, voraussichtlich bis Ende September 2024, vielleich wird wieder verlängert',
+         'text' => 'Gleiwitzer Str.: Bauarbeiten, Abschnitt der Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, voraussichtlich bis Mitte November 2024, vielleich wird wieder verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5891,22 +6239,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2024-08-14 vvv
-#: check_frequency: 14d vvv
-#: add_fragezeichen: Ist der Weg nun offiziell geöffnet?
-#: osm_watch: way id="381691526" version="11"
-	2::inwork 23305,14914 23318,14847 23297,14772
-# REMOVED (offen) --- #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv --- #: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv --- #: also_indoor: traffic (ex-B,G) ---	q3::inwork 23222,14809 23297,14772 23369,14756 ---	q3::inwork 23288,14719 23297,14772 --- #: note ^^^ --- #: add_fragezeichen ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3918,
-         'text' => 'Alt-Hellersdorf - Cottbusser Str.: Weg ist noch offiziell gesperrt (Stand Mitte August 2024), Durchfahrt ist nach Ende der Asphaltierung unter Umständen bereits möglich',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
@@ -6152,7 +6485,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-09-29 (daf)
+#: last_checked: 2024-10-13 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801

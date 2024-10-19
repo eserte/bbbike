@@ -2406,7 +2406,7 @@ Landsberger Allee [Nebenfahrbahn]	N 16669,14438 16845,14461
 (Georg-Knorr-Str. - Landsberger Allee)	NN 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979 19163,14981 19171,14984 19175,14968
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.)	NN 19157,14979 19171,14938 19173,14931 19175,14926 19180,14915 19255,14911
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-06-19
+#: last_checked: 2024-10-19
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 (Knoten Marzahn, Fußgängerüberweg)	NN 19196,14976 19200,14963
@@ -9257,7 +9257,7 @@ Neuruppiner Str. (Hellersdorf)	N 23082,15329 23265,15351 23280,15244
 Alte Hellersdorfer Str.	H 23181,14371 23084,14472 23088,14579 23104,14827
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX nach den Bauarbeiten wieder zu "N" machen
-#: last_checked: 2024-08-14
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 #: next_check: 2025-03-31
 Alte Hellersdorfer Str.	H 23104,14827 23111,14956 23117,15081 23113,15110 23109,15140 23101,15198 23082,15329
@@ -9266,7 +9266,8 @@ Alte Hellersdorfer Str.	H 23082,15329 23067,15429 23060,15588 23080,15700 23137,
 Alte Hellersdorfer Str. [Wohngebietsstraße]	N 23101,15198 23222,15219 23221,15226 23213,15297
 (Alte Hellersdorfer Str. - Neuruppiner Str.)	NN 23222,15219 23257,15223 23282,15228 23280,15244
 (Alte Hellersdorfer Str. - Hellersdorfer Str.)	NN 23084,14472 23081,14418 23072,14353 23021,13982
-(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg)	NN 23072,14353 23018,14251 22967,14129 22903,14063 22854,14018
+(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg)	NN 23072,14353 23057,14324 23024,14264 23018,14227 22967,14129 22903,14063 22854,14018
+(Jelena-Santic-Park)	NN 23024,14264 22997,14213 22951,14157
 (Hellersdorfer Str. - Wuhlewanderweg)	NN 23081,14418 23030,14424 23001,14445 22938,14465 22868,14477
 Stendaler Str. (Hellersdorf)	H 23993,14797 23960,15021 23952,15086 23933,15209 23913,15333 23895,15450 23868,15633 23859,15763 23895,15904
 Stendaler Str. (Hellersdorf) [Nebenfahrbahn]	N 23941,15458 23960,15340 23978,15215 23993,15111
@@ -11570,7 +11571,7 @@ Franz-Klühs-Str.	N 9770,10590 9570,10566 9384,10536
 Friedrich-Stampfer-Str.	N 9388,10393 9527,10389
 Brandesstr.	N 9858,10350 9698,10348 9675,10351
 Siegfriedstr. (Lichtenberg)	NH 16852,14412 16873,14236 16881,14063 16875,13834 16868,13611 16866,13532
-Siegfriedstr. (Lichtenberg)	H 16866,13532 16865,13423 16863,13138 16865,13000 16860,12861 16859,12613 16857,12600 16831,12419 16820,12339
+Siegfriedstr. (Lichtenberg)	H 16866,13532 16865,13423 16863,13138 16865,13000 16860,12861 16859,12752 16859,12683 16859,12613 16857,12600 16831,12419 16820,12339
 Siegfriedstr. (Lichtenberg)	N 16820,12339 16794,12144 16764,11919
 Bornitzstr.	N 16860,12861 16484,12871 16439,12872 16384,12874 16376,12874 16312,12876 16242,12878 16197,12880 16146,12881 16073,12883 15950,12886 15747,12880 15643,12875 15563,12870
 Bornitzstr. [76 A-D und 78 A-D]	N 16312,12876 16313,12762
@@ -11645,10 +11646,8 @@ Lissabonallee [Parkplatzzufahrt]	N -1537,2152 -1612,2123
 Lissabonallee [Stichstraße JAZ]	N -1596,2307 -1631,2260 -1824,2175
 Edwin-C.-Diltz-Str.	N -1377,2077 -1371,2268 -1401,2391
 Charles-H.-King-Str.	N -1248,2451 -1401,2391 -1604,2324
-#: next_check_id: EISENACHERGOTHAER-2023
-#: XXX nach den Bauarbeiten wieder zu "N" machen
-#: next_check: 2025-03-31
-Eisenacher Str. (Marzahn, Hellersdorf)	H 23113,15110 22899,15073
+# REMOVED --- #: next_check_id: EISENACHERGOTHAER-2023 --- #: XXX nach den Bauarbeiten wieder zu "N" machen --- #: next_check: 2025-03-31
+Eisenacher Str. (Marzahn, Hellersdorf)	N 23113,15110 22899,15073
 Eisenacher Str. (Marzahn, Hellersdorf)	NH 22899,15073 22726,15082 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 Hasenholzer Allee	N 21903,15174 21927,15303 21942,15388 21951,15442 21961,15496 21976,15578
 Krummenseer Str.	N 21623,15357 21657,15352 21743,15336 21834,15319 21927,15303 22043,15282
@@ -14698,13 +14697,12 @@ Fercher Str. (Hellersdorf)	N 22748,15329 22743,15414
 Kyritzer Str.	N 22599,15105 22603,15188 22570,15233 22571,15397 22579,15407 22743,15414 23067,15429
 Kyritzer Str.	NN 23067,15429 23245,15442 23270,15423
 Kyritzer Str.	NN 22573,15552 22579,15416 22579,15407
-Gothaer Str. (Hellersdorf)	H 23082,15329 22968,15315 22897,15287 22899,15073
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX nach den Bauarbeiten wieder zu "H" machen
-#: last_checked: 2024-08-14
+#: last_checked: 2024-10-19
 #: check_frequency: 120d
 #: next_check: 2025-03-31
-Gothaer Str. (Hellersdorf)	N 22899,15073 22905,14925 22925,14865 22969,14840 23104,14827
+Gothaer Str. (Hellersdorf)	N 23082,15329 22968,15315 22897,15287 22899,15073 22905,14925 22925,14865 22969,14840 23104,14827
 Glauchauer Str.	N 24041,13795 24050,13855 24031,13903 24041,13979 24055,13984 24187,14052
 Klingenthaler Str.	N 24041,13979 23887,14028 23802,14060 23773,14109 23713,14247
 Kastanienallee (Hellersdorf)	N 23617,15594 23629,15498 23633,15464 23643,15392 23661,15282 23686,15128 23693,15080 23698,15049 23708,14989 23735,14814 23756,14696
@@ -15752,7 +15750,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2024-10-11
+#: last_checked: 2024-10-19
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16142,7 +16140,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2024-10-11
+#: last_checked: 2024-10-19
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens
@@ -20750,6 +20748,7 @@ Gustav-Tempel-Str.	N 15245,10719 15236,10684 15220,10682 15205,10616
 Gustav-Tempel-Str.	NN 15205,10616 15200,10600
 An den Eiswerken	N 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	N 14886,10748 14909,10732 14984,10677
+Rummelsburger Seeblick	NN 14927,10807 14918,10769 14909,10732
 # 
 # REMOVED --- #: next_check_id: ROTESRATHAUS-2023
 # REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/

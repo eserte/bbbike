@@ -3451,14 +3451,14 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1921,-1931 -2023,-2143
 EOF
      },
-     { from  => $isodate2epoch->("2023-11-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-01-07 23:59:59"), # 1357513199, # 2013-0
+     { from  => $isodate2epoch->("2024-11-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-01-06 23:59:59"), # 1357513199, # 2013-0
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 27. November 2023 bis 07. Januar 2024',
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 25. November 2024 bis 05. Januar 2025',
        type  => 'gesperrt',
-       source_id => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
        data  => <<EOF,
+#: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
 # REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
 # sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
@@ -6910,12 +6910,13 @@ EOF
      { from  => $isodate2epoch->("2017-11-28 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
        until => $isodate2epoch->("2017-12-30 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 11, start => "2024-01-01T00:00:00"]],
+       recurrences => [['yearly', days => 18, months => 11, start => "2025-01-01T00:00:00"]],
        text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
        data  => <<EOF,
+#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html
 #: by: https://www.visitberlin.de/de/nostalgischer-weihnachtsmarkt-opernpalais-berlin (findet 2020 nicht statt)
+#: by: https://www.deutsche-weihnachtsmaerkte.de/weihnachtsmarkt/in/berlin/nostalgischer-weihnachtsmarkt-opernpalais-1474.html ("findet nicht (mehr) statt")
 # REMOVED	2::xmas 9737,12238 9798,12267
 	2::xmas 9737,12238 9747,12205 9771,12190 9775,12178 9808,12182
 EOF
@@ -28838,8 +28839,9 @@ EOF
      },
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2024-09-27 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer möglicherweise verboten (außer Anlieger); außerdem Einbahnstraßenregelung in der Andernacher Str.; Bauarbeiten bis Ende 2025',
+#       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer möglicherweise verboten (außer Anlieger); außerdem Einbahnstraßenregelung in der Andernacher Str.; Bauarbeiten bis Ende 2025',
 #       text  => 'Treskowallee: Fahrbahn Richtung Süden ab Hönower Str. neu asphaltiert, aber u.U. noch nicht offiziell freigegeben; außerdem Einbahnstraßenregelung in der Andernacher Str.',
+       text  => 'Treskowallee: Richtung Süden für Radfahrer verboten (Anlieger frei); Richtung Norden Gehweg mit Verschwenkungen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; außerdem Einbahnstraßenregelung in der Andernacher Str.; Bauarbeiten bis Ende 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2023
@@ -28866,14 +28868,11 @@ EOF
 #: source_id: viz2021:13.52779,52.49067,14.08.2024,14:30 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.52703,52.486973,16.10.2024,08:00 (östliche Fahrbahn, bis 31.10.2025)
 #: source_id: bvg2024:396#HIM_FREETEXT_242591
-#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
-#: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
-#: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
-#: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht; mittlerweile (2024-09-28) vermutlich komplett mit Deckschicht asphaltiert
-#: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
-#: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
-#: check_frequency: 3d vvv
-#: next_check: 2025-12-31 vvv
+# REMOVED --- #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
+# REMOVED --- #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
+# REMOVED --- #: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht; mittlerweile (2024-09-28) vermutlich komplett mit Deckschicht asphaltiert
+# REMOVED --- #: note: mittlerweile ist die Ausschilderung: Radfahrer verboten, Anlieger frei; ist damit die westliche oder östliche Fahrbahn gemeint?
+# REMOVED --- #: note: laut Schild der Wasserbetriebe gehen die Bauarbeiten bis November 2023
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -28885,14 +28884,20 @@ EOF
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="31"
 #: osm_watch: note 4481312 5
+#: check_frequency: 7d vvv
+#: next_check: 2025-12-31 vvv
 #: priority: #B
-#: last_checked: 2024-10-16 (neue Verkehrsführung war noch nicht final)
-Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
+#: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
+#: last_checked: 2024-10-19
+Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
+#: priority: #B
+#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird nicht mehr wiederholt
+#: last_checked: 2024-10-19
+Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
-#: last_checked: 2024-09-04
-#: check_frequency: 60d
-#: next_check: 2024-10-19
+#: last_checked: 2024-10-19
+#: check_frequency: 14d
 Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
@@ -37539,7 +37544,7 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: also_indoor ^^^
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
-#: last_checked: 2024-10-17
+#: last_checked: 2024-10-19
 #: check_frequency: 14d
 	q4::inwork 16720,12614 16859,12613
 EOF
@@ -39976,10 +39981,10 @@ EOF
      },
      { from  => 1686407303, # 2023-06-10 16:28
        until => undef, # 1715378400, # 2024-05-11 00:00
-       #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, außerdem Kreuzungsbereich Gleiwitzer Str./Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
-       #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
-       #text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn vor der Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
-       text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, voraussichtlich bis Ende September 2024, vielleich wird wieder verlängert',
+#      text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, außerdem Kreuzungsbereich Gleiwitzer Str./Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+#      text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn zwischen Grabensprung und Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+#      text  => 'Gleiwitzer Str.: Bauarbeiten, Fahrbahn vor der Dornacher Str. gesperrt, voraussichtlich bis 10.05.2024',
+       text  => 'Gleiwitzer Str.: Bauarbeiten, Abschnitt der Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, voraussichtlich bis Mitte November 2024, vielleich wird wieder verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
@@ -39987,13 +39992,12 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10936 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
 #: source_id[inactive]: bvg2021:190#BVG320324_0
-# REMOVED --- #: note: Baustellebereich etwa 130m, Halteverbotsschilder bis 29.03.2023
-#: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert)
+#: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert); Halteverbotsschilder bis 15.11.2024
 #: also_indoor: traffic (ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten in der Gleiwitzer Str. beendet?
-#: last_checked: 2024-09-01 vvv
+#: last_checked: 2024-10-19 vvv
 # REMOVED --- #: check_frequency: 120d vvv
-#: next_check: 2024-09-30 vvv
+#: next_check: 2024-11-15 vvv
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
 Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,9999 21146,9988
@@ -41308,19 +41312,16 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       #text  => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt; außerdem Sperrung der Kreuzung Cottbusser Str./Cottbusser Platz',
+       until => 1729342351, # undef, # XXX
+#      text  => 'Alt-Hellersdorf - Cottbusser Str.: Bauarbeiten, Weg ist gesperrt, Ende der Bauarbeiten unbekannt; außerdem Sperrung der Kreuzung Cottbusser Str./Cottbusser Platz',
        text  => 'Alt-Hellersdorf - Cottbusser Str.: Weg ist noch offiziell gesperrt (Stand Mitte August 2024), Durchfahrt ist nach Ende der Asphaltierung unter Umständen bereits möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2024-08-14 vvv
-#: check_frequency: 14d vvv
-#: add_fragezeichen: Ist der Weg nun offiziell geöffnet?
+# REMOVED --- #: last_checked: 2024-08-14 vvv --- #: check_frequency: 14d vvv --- #: add_fragezeichen: Ist der Weg nun offiziell geöffnet?
 #: osm_watch: way id="381691526" version="11"
 	2::inwork 23305,14914 23318,14847 23297,14772
 # REMOVED (offen) --- #: add_fragezeichen: Ist die Kreuzung weiterhin gesperrt? vvv --- #: note: Halteverbotsschilder bis 2.2.2024, mittlerweile Halteverbotsschilder bis 26.4.2024 vvv --- #: also_indoor: traffic (ex-B,G) ---	q3::inwork 23222,14809 23297,14772 23369,14756 ---	q3::inwork 23288,14719 23297,14772 --- #: note ^^^ --- #: add_fragezeichen ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -42408,7 +42409,7 @@ EOF
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-09-29 (daf)
+#: last_checked: 2024-10-13 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801
@@ -44499,7 +44500,7 @@ EOF
 #: note: (noch) keine Einschränkung in der Rüdigerstr.
 #: source_id: viz2021:13.499269,52.518592,02.09.2024,07:00 (bis 13.09.2024) (inaktiv)
 # REMOVED (bestätigt) --- #: XXX Annahme einer gemeinsamen Rad/Gehwegführung
-	q2; 16860,12861 16859,12613 16857,12600 16831,12419 16820,12339
+	q2; 16860,12861 16859,12752 16859,12683 16859,12613 16857,12600 16831,12419 16820,12339
 EOF
      },
      { from  => 1723960800, # 2024-08-18 08:00

@@ -989,13 +989,13 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="38"
 #: osm_watch: way id="1193560283" version="7"
-#: last_checked: 2024-09-01
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-19
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1091,14 +1091,15 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: source_id: viz2021:13.588897,52.538931,25.07.2024,10:00 (Gothaer, bis 31.07.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 6
-#: last_checked: 2024-08-14 vvv
+#: last_checked: 2024-10-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-31 vvv
 # REMOVED --- #: next_check: 2025-07-31 vvv
 # REMOVED --- #: osm_watch: way id="175916583" version="11" --- Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 # REMOVED --- #: osm_watch: way id="26692569" version="17" --- Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2+::inwork; 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 #: osm_watch: way id="1278425789" version="4"
-Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork 22577,15109 22599,15105 22726,15082 22899,15073
+Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22899,15073 22726,15082 22599,15105 22577,15109
+Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 # REMOVED --- Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
 # REMOVED (für Radfahrer frei) --- #: osm_watch: way id="26505949" version="26" --- Eisenacher Str.: Einbahnstraßenregelung, evtl. auch für Radfahrer gültig	q3::inwork; 23113,15110 22899,15073
 # REMOVED --- Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
@@ -2864,7 +2865,8 @@ Fritz-Lang-Str.: Fußgängerzone	q2- 23856,14868 23878,14748
 Kurt-Weill-Gasse: Fußgänger	q1 23846,14931 23778,14995
 #: note: keine Freigabe für Radfahrer
 Kurt-Weill-Gasse: Fußgängerzone	q4 23993,14797 23961,14841 23918,14876 23882,14904
-(Alt-Hellersdorf - Cottbusser Str.): getrennter Rad/Gehweg	q1 23305,14914 23318,14847 23297,14772
+#: historical_note: früher (vor 2023/2024): getrennter Rad/Gehweg, q1
+(Alt-Hellersdorf - Cottbusser Str.): einige Fußgänger	q1 23305,14914 23318,14847 23297,14772
 Clara-Zetkin-Weg: Fußgänger	q1 22572,13025 22591,12959 22612,12966 22687,12986 22690,12979 22768,13004
 (Clara-Zetkin-Platz - Bansiner Str.): Fußgänger	q1 22612,12966 22623,12944
 Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
@@ -2877,7 +2879,7 @@ Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
 #: XXX_prog BS am nördlichen Ende (ansonsten q1)
 #: XXX bleibt es beim Bordstein? Möglicherweise nur wegen der benachbarten Hochbauarbeiten?
 # REMOVED (ist jetzt was anderes) --- #: osm_watch: way id="733001657" version="5"
-#: last_checked: 2024-07-06
+#: last_checked: 2024-10-19
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-06-30
 Lion-Feuchtwanger-Weg: Fußgänger, Bordstein	q3 22516,12946 22493,12999
@@ -3941,7 +3943,7 @@ Dalandweg: schmale und kurvenreiche Straße	q1 5120,4318 5226,4259 5250,4298 5311
 (Zufahrt zum Gewerbegebiet): Parkplatzverkehr	q1 25312,11186 25298,11118 25298,10966 25297,10892
 (Pilgramer Str. - Gewerbegebiet): Parkplatzverkehr	q1 25168,10963 25298,10966 25337,10967
 (Alte Hellersdorfer Str. - Hellersdorfer Str.): Fußgänger	q1 23084,14472 23081,14418 23072,14353 23021,13982
-(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Fußgänger	q1 23072,14353 23018,14251 22967,14129 22903,14063 22854,14018
+(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Fußgänger	q1 23072,14353 23057,14324 23024,14264 23018,14227 22967,14129 22903,14063 22854,14018
 (unterer Wuhlewanderweg - oberer Wuhlewanderweg): Fußgänger	q1 22505,15075 22539,15074 22588,15056
 (oberer Wuhlewanderweg - Gottfried-Funeck-Weg): Fußgänger	q1 22872,14175 22903,14063
 Wundtstr.: Bolzplätze	q1 2623,11385 2764,11500
@@ -5148,6 +5150,8 @@ Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 
 # 
 Am Mühlenberg: niedriger Bordstein, einige Fußgänger	q2 6094,8618 6100,8681
 Am Mühlenberg: einige Fußgänger	q1 6100,8681 6101,8732
+# 
+Rummelsburger Seeblick: Fußgänger	q3 14927,10807 14918,10769 14909,10732
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
