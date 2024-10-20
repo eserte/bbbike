@@ -41613,13 +41613,13 @@ EOF
 	q4::inwork 21944,16805 21889,16817
 EOF
      },
-     { from  => $isodate2epoch->("2023-11-14 00:00:00"), # mehrere Tage für den Aufbau (2023 bereits am 15.11.2023 voll aufgebaut)
-       until => $isodate2epoch->("2024-01-07 23:59:59"), # mehrere Tage für den Abbau
+     { from  => $isodate2epoch->("2024-11-16 00:00:00"), # $isodate2epoch->("2023-11-14 00:00:00"), # mehrere Tage für den Aufbau (2023 bereits am 15.11.2023 voll aufgebaut, Start war 23.11.2023)
+       until => $isodate2epoch->("2025-01-07 23:59:59"), # $isodate2epoch->("2024-01-07 23:59:59"), # mehrere Tage für den Abbau
        periodic => 1,
-       prewarn_days => 13,
+       prewarn_days => 9,
        postwarn_days => 7,
        recurrences => [['yearly', days => 19, months => 11]],
-       text  => 'Bebelplatz: Weihnachtsmarkt vom 27.11.2023 bis 31.12.2023, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen engen Weg am Rand möglich',
+       text  => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen engen Weg am Rand möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BEBELPLATZXMAS-2022
@@ -41668,7 +41668,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-10-16 vvv
+#: last_checked: 2024-10-19 (osm) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -41676,7 +41676,7 @@ EOF
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031 9645,12133
-#: osm_watch: way id="389101374" version="20"
+#: osm_watch: way id="389101374" version="21"
 # REMOVED (hier ist die Einbahnstraße mittlerweile für Radfahrer offen) --- Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
 #: osm_watch: way id="1149365724" version="8"
@@ -43200,6 +43200,7 @@ EOF
 #: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024) (inaktiv)
 #: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024) (inaktiv)
 #: source_id: viz2021:13.57589,52.49118,22.04.2024,07:00 (bis 26.04.2024) (inaktiv)
+#: source_id: viz2021:13.57143,52.492403,21.10.2024,07:00 (hier nur Kfz-Verkehr, bis 01.11.2024)
 # REMOVED ---	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
 # REMOVED --- Bergedorfer Str./An der Wuhle: Einbahnstraße	q4::inwork; 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592 21692,9727 21749,9856
 # REMOVED --- Tieflanfstr./Eschelberger Weg: Einbahnstraße	q4::inwork; 21842,9829 21822,9681 21954,9640 22116,9585
@@ -44040,7 +44041,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr
-#: last_checked: 2024-10-10
+#: last_checked: 2024-10-18 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 EOF
@@ -45160,6 +45161,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1495464.php (Bauzeit voraussichtlich zwei Wochen; vielleicht weitere Einschränkungen im Kreuzungsbereich)
+#: source_id: viz2021:13.467763,52.546553,21.10.2024,07:00 (bis 01.11.2024)
 	q4::inwork 14440,15682 14653,15738
 EOF
      },
