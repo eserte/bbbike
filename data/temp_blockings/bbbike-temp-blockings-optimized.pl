@@ -4235,23 +4235,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (in osm aufgehoben) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php --- #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/ --- #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369 --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben? --- #: source_id: 2147344699 --- #: osm_watch: way id="25274116" version="20" --- #: osm_watch: way id="671101960" version="4" --- #: also_indoor: traffic (G,H) --- #: last_checked: 2019-11-23 --- #: check_frequency: 7d
-#: next_check_id: ALTSTADTKOEPENICK-2024
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
-#: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
-#: by: https://www.bahninfo-forum.de/read.php?9,800515,811033#msg-811033
-#: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024) (bis 21.10.2024)
-#: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
-#: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
-#: also_indoor: traffic (T,G,H,W)
-	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-',
-         'from' => 1726956000,
-         'id' => 3070,
-         'text' => 'Freiheit/Lüdersstr./Alter Markt: Bauarbeiten, Fahrbahn gesperrt, vom 23.09.2024 bis voraussichtlich 21.10.2024',
-         'until' => 1729526400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5251,7 +5235,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-19 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-03-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5394,7 +5378,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr) (bis 31.07.2024) (bis 31.08.2024) (bis 31.10.2024)
+         'data' => '#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr) (bis 31.07.2024) (bis 31.08.2024) (bis 31.10.2024) (bis 31.12.2024)
 #: osm_watch: way id="364468604" version="14"
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 	q4::inwork; 9011,14019 8870,13926
@@ -5402,9 +5386,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'from' => 1656651600,
          'id' => 3559,
          'source_id' => 'viz2021:13.38248,52.53138,13.06.2022,07:00',
-         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, bis 31.10.2024 17:00',
+         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, bis 31.12.2024 17:00',
          'type' => 'handicap',
-         'until' => 1730390400
+         'until' => 1735660800
        },
        undef,
        undef,
@@ -6562,6 +6546,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: by: https://www.youtube.com/watch?v=Y73X25IYfTM
 #: by: https://viz.berlin.de/2023/10/verkehrsvorschau-091023/ ("wird am Abend aufgehoben")
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (nächste Sperrungen: 23.10.2024-04.11.2024 + 18.6.2025-7.7.2025)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1495775.php
 # REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id[inactive]: bvg2021:269#BVG326513_0
 #: source_id[inactive]: bvg2021:63#BVG326792_0
@@ -7047,7 +7032,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-10-07 (mapillary)
+#: last_checked: 2024-10-20 (daf)
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -7364,7 +7349,16 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 236320002 (bis 30.06.2024) (bis 02.08.2024) (bis 30.08.2024) (inaktiv) (bis 20.12.2024)
+	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
+',
+         'from' => 1730156400,
+         'id' => 4064,
+         'text' => 'Kuhdammweg - Am Umspannwerk: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 30.10.2024 08:00 Uhr bis 20.12.2024 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1734710400
+       },
        undef,
        undef,
        {
@@ -7405,7 +7399,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
 #: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024)
-#: source_id: viz2021:13.4546,52.47445,18.10.2024,13:33 (Braunschweiger Str. nicht erwähnt, bis 29.11.2024)
+#: source_id: viz2021:13.4546,52.47445,18.10.2024,13:33 (Braunschweiger Str. nicht erwähnt, bis 29.11.2024) (inaktiv)
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
@@ -7670,13 +7664,13 @@ zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwor
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baekebruecke-wird-erneuert_a421024
 #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
-#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024)
+#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024)
 #: also_indoor: search Bäkebrücke
 #: also_indoor: traffic (G,B,T,W)
 #: add_fragezeichen: Ist der Teltowkanaluferweg weiterhin komplett gesperrt? vvv
 #: last_checked: 2024-10-09 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2024-10-31 vvv
+#: next_check: 2024-12-16 vvv
 Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
 Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
 #: note: eigentlich q3-::inwork
@@ -7689,7 +7683,7 @@ Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
 ',
          'from' => 1718628480,
          'id' => 4109,
-         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges, außerdem Sperrung der Fahrbahn im Bereich der Bäkebrücke, bis 31.10.2024, evtl. wird verlängert',
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges, außerdem Sperrung der Fahrbahn im Bereich der Bäkebrücke, bis 16.12.2024, evtl. wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7936,16 +7930,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.45222,52.52515,26.08.2024,07:00 (bis 21.10.2024)
-	q4::inwork 13644,13332 13548,13290
-',
-         'from' => 1724562000,
-         'id' => 4151,
-         'text' => 'Kochhannstr.: Bauarbeiten zwischen Ebertystr. und Weisbachstr., vom 26.08.2024 07:00 bis 21.10.2024 18:00',
-         'type' => 'handicap',
-         'until' => 1729526400
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480271.php
@@ -8310,6 +8295,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'data' => '#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1495464.php (Bauzeit voraussichtlich zwei Wochen; vielleicht weitere Einschränkungen im Kreuzungsbereich)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848227966859522226
 #: by: https://pbs.twimg.com/media/GaLsVFqXMAAUvry?format=jpg&name=4096x4096 (Rad- und Gehwege sind frei)
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/baustellen-auf-zwei-strassen_a427750
 #: source_id: viz2021:13.467763,52.546553,21.10.2024,07:00 (bis 01.11.2024)
 	q4::inwork 14440,15682 14653,15738
 ',
@@ -8355,6 +8341,86 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'text' => 'Klärwerkstr. : Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, vom 21.10.2024 08:00 bis 25.10.2024 17:00',
          'type' => 'handicap',
          'until' => 1729868400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.531353,52.39783,19.10.2024,07:00 (bis 03.11.2024)
+	2::inwork 19248,-771 19302,-734 19333,-714
+',
+         'from' => 1729227600,
+         'id' => 4194,
+         'text' => 'Bohnsdorfer Chaussee: Gleisbauarbeiten, Bahnübergang gesperrt, evtl. sind auch Fußgänger und Radfahrer betroffen, vom 19.10.2024 07:00 bis 03.11.2024 17:00',
+         'type' => 'gesperrt',
+         'until' => 1730649600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024)
+	q4::inwork; 17139,12100 17091,12105 16993,12118
+',
+         'from' => 1729486800,
+         'id' => 4195,
+         'text' => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., evtl. sind auch Radfahrer betroffen, vom 22.10.2024 07:00 bis 18.11.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1731945600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024)
+	q4::inwork; 17139,12100 17088,12069 16975,12000 16865,11931
+',
+         'from' => 1729486800,
+         'id' => 4196,
+         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., evtl. sind auch Radfahrer betroffen, vom 22.10.2024 07:00 bis 18.11.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1731945600
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zum-start-der-herbstferien/ (Siegfriedstr., hier nur 23.10.-08.11.2024)
+#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024)
+#: source_id: bvg2024:256#HIM_FREETEXT_242768
+#: source_id: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
+#: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
+#: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
+#: last_checked: 2024-10-19
+#: next_check: 2024-10-22
+	q4::inwork; 16764,11919 16794,12144
+',
+         'from' => 1729486800,
+         'id' => 4197,
+         'text' => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 22.10.2024 07:00 bis 18.11.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1731945600
+       },
+       {
+         'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026)
+	2::inwork -34435,12201 -34027,12437 -33697,13146
+',
+         'from' => 1730012400,
+         'id' => 4198,
+         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.10.2024 08:00 Uhr bis 31.05.2026 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1780236000
+       },
+       {
+         'data' => '#: by: rbb
+#: also_indoor: traffic (G,W)
+	q4::inwork 4690,11369 4775,11203
+',
+         'from' => 1729461600,
+         'id' => 4199,
+         'text' => 'Grolmanstr.: Sperrung zwischen Goethestr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 27.12.2024',
+         'type' => 'handicap',
+         'until' => 1735340400
+       },
+       {
+         'data' => '#: by: rbb
+#: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
+#: also_indoor: traffic (G,H,B,T,W)
+	q4::inwork 2453,9156 2576,9132
+',
+         'from' => 1729533901,
+         'id' => 4200,
+         'text' => 'Lynarstr.: Sperrung zwischen Humboldtstr. und Wangenheimstr., evtl. sind auch Radfahrer betroffen, bis 17.01.2025',
+         'type' => 'handicap',
+         'until' => 1737154800
        }
      
 );

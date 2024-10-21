@@ -6,6 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: note: außerdem laut VIZ: Michaelkirchplatz/Heinrich-Heine-Platz (Mitte) Kreuzung Legiendamm: Kanalbauarbeiten, Gegenverkehrsreglung mit Baustellenampel, Anbindungen Legiendamm und nördlicher Michaelkirchpatz gesperrt, vom 15.10.2024 11:11 bis 28.10.2024 17:00 (aber als Radfahrer kann man die Ampel zum Überqueren nutzen)
+#: source_id: viz2021:13.41782,52.506594,15.10.2024,11:11 (bis 28.10.2024)
+#: last_checked: 2024-10-15 (mapillary)
+#: next_check: 2024-10-28
+#: valid: -20241028
+Michaelkirchplatz: Gegenverkehrsreglung	X::inwork::alternating 11349,11227
+# 
 #: next_check_id: PERLEBERGER-2024
 #: last_checked: 2024-09-25
 #: next_check: 2025-09-23
@@ -50,7 +57,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # REMOVED --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-19 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-04-30
 #: valid: -20250430
@@ -184,14 +191,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2024-10-17
+#: last_checked: 2024-10-21
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-10-17
+#: last_checked: 2024-10-21
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Gürtelstr.	F::inwork 15153,11691

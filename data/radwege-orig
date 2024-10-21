@@ -42,7 +42,7 @@
 # REMOVED (nicht mehr ausgeschildert) --- #: next_check_id: FAHLENBERGBRUECKE-2022 --- #: note: Umfahrung Fahlenbergbrücke --- #: note: laut mapillary Benutzungspflicht (bzw. Verbot für Radfahrer auf der Fahrbahn) --- #: last_checked: 2024-07-14 (mapillary) --- #: next_check: 2024-07-31 --- provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2024-10-19 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -418,13 +418,13 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 	RW0;RW0 12740,8862 12881,8750
 #: next_check_id: WESER-2021
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtregelung noch prüfen; es wird eine Einbahnstraßenregelung für Kfz geben, offen Richtung Südosten
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-19 (mapillary)
 	RW0;RW0 12881,8750 13033,8628
 #: next_check_id: WESER-2021
 #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße Richtung Osten noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!)
 #: osm_watch: way id="940399849" version="11"
 #: osm_watch: way id="1203072585" version="3"
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-19 (mapillary)
 	RW0;RW7 13033,8628 13124,8562
 	RW7;RW7 13124,8562 13217,8493
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
@@ -1291,6 +1291,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1259163.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/elsenbruecke-gesperrt_a380368 (nur Autoverkehr)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1494831.php (nur Autoverkehr)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1848419541438894570 (Wochenendsperrung war wohl nur am Sa bis zum Nachmittag gewesen)
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
@@ -5256,7 +5257,7 @@ asphaltiert	RW1; -233,15997 -224,16041 -215,16088
 alte Gehwegplatten, schmal, Bord gegen Gehweg	RW1; -252,15903 -261,15858 -292,15715 -302,15602 -302,15546 -286,15354 -344,15200
 	RW3; -252,15903 -233,15997
 Gehweg für Radfahrer frei	RW1; -1095,15621 -1115,15717 -1095,15865 -1409,16106 -1628,16225
-#: source_id: viz2021:13.237158,52.546478,18.10.2024,06:00 (bis 21.10.2024)
+#: source_id: viz2021:13.237158,52.546478,18.10.2024,06:00 (bis 21.10.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1847119160847069577
 #: by: https://pbs.twimg.com/media/GaGk1ZdWIAAqASH?format=jpg&name=large
 #: XXX werden die Radwege Richtung Süden während der Bauarbeiten zwischen Lünette und Burscheider Weg ausgebessert?
@@ -7468,7 +7469,7 @@ Fahrradschleuse	RW3; 12714,8249 12753,8187
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
-Grünbeschichtung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
+Grünbeschichtung	RW4; 12823,8028 12834,8005 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
 Grünbeschichtung	RW3; 12916,7775 12972,7602 12987,7560 13015,7471 13018,7441 13029,7353
 Grünbeschichtung	RW4; 13029,7353 13030,7346 13034,7319 13043,7234 13051,7157
 Grünbeschichtung	RW3; 13051,7157 13058,7112 13068,7043
@@ -7489,7 +7490,7 @@ Grünbeschichtung	RW4; 13051,7157 13043,7234
 Grünbeschichtung	RW3; 13043,7234 13034,7319
 Grünbeschichtung	RW4; 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471
 Grünbeschichtung	RW3; 13015,7471 12987,7560 12972,7602 12916,7775
-Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 12823,8028
+Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 12834,8005 12823,8028
 # REMOVED --- #: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück; laut infravelo 2000m --- vielleicht Lahnstr. bis Briesestr.?) vvv
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (für 2018/2019 vorgesehen)

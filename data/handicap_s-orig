@@ -828,7 +828,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # REMOVED --- #: osm_watch: way id="1317391078" version="2"
 #: XXX comments_kfzverkehr-Eintr‰ge danach anpassen
 #: XXX evtl. gibt es vorher Arbeiten am Stromnetz siehe auch Fragezeichen zu "Umspannwerk Richardstraﬂe"
-#: last_checked: 2024-10-17 (osm) vvv
+#: last_checked: 2024-10-19 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q4+::inwork 13236,7970 13246,7961
 # REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q3::inwork 13246,7961 13309,7911
@@ -1899,7 +1899,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # 
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-18
+#: last_checked: 2024-10-19 (mapillary)
 #: check_frequency: 14d
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 
@@ -5152,6 +5152,8 @@ Am M¸hlenberg: niedriger Bordstein, einige Fuﬂg‰nger	q2 6094,8618 6100,8681
 Am M¸hlenberg: einige Fuﬂg‰nger	q1 6100,8681 6101,8732
 # 
 Rummelsburger Seeblick: Fuﬂg‰nger	q3 14927,10807 14918,10769 14909,10732
+# 
+(Karl-Marx-Str. - Richardstr.): Fuﬂg‰nger	q4 12834,8005 12926,8039
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
