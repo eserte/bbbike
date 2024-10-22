@@ -11374,7 +11374,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2024-10-11 vvv
+#: last_checked: 2024-10-22 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -13497,6 +13497,8 @@ Bahamasbogen: Verbundsteinpflaster	Q1+ -2759,18843 -2621,18840 -2482,18836 -2485
 Topsstr.: Kleinsteinpflaster	Q1 10883,15251 10865,15244
 Topsstr.: Asphalt mit einigen Rissen	Q0- 10865,15244 10598,15150
 Am Falkplatz: Asphalt	Q0 10456,15561 10418,15704
+#: add_fragezeichen: Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden?
+#: next_check: 2024-10-25
 Maximiliankorso: etwas brüchiger Asphalt	Q0-; 1738,25243 1857,25238 1960,25229 2083,25221 2164,25190 2216,25117
 Burgfrauenstr.: neuer Asphalt	Q0+ 3022,24393 3225,24431 3425,24469
 # 
@@ -13594,6 +13596,7 @@ Alte Potsdamer Str.: Betonpflaster	Q0- 8280,11296 8318,11324 8375,11368 8389,113
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1487931.php (Informationsveranstaltung "Neubau Ollenhauerstraße")
 #: by: https://mein.berlin.de/vorhaben/2023-00712/ (Neugestaltung zwischen Großkopfstraße und Reinickes Hof geplant, bauliche Umsetzung: 2027-2032)
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/informationsveranstaltung-zum-neubau-der-ollenhauerstrasse_a425762
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/bezirksamt-reinickendorf-stellt-plaene-auf-buergerversammlung-vor_a427756 (Planung: Großkopfstraße - Reinickes Hof; Baubeginn 2027?)
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: next_check: 2028-12-31 vvv
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5243,18162 5301,18447 5324,18560 5345,18675
@@ -17175,16 +17178,17 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1461970.php (Bauarbeiten ab 15.7.2024 zwischen Lenbachstr. und Hausnr. 44; anscheinend bleibt die halbe Fahrbahn frei; kein Endedatum)
 #: by: https://alles-mahlsdorf.de/lemkestrasse-zweiter-bauabschnitt-beginnt-mitte-juli/ (ab 11.07.2024 für zwei Jahre)
 #: by: https://www.die-hellersdorfer.berlin/2024/07/02/mitte-juli-geht-die-sanierung-der-lemkestra%C3%9Fe-weiter/
+#: by: https://stefan-ziller.eu/2024/sanierung-der-lemkestrasse-weitere-bauabschnitte/ (vom 3. September 2024)
 #: source_id: bvg2024:395#HIM_FREETEXT_232017
 #: XXX auf https://www.instagram.com/marzahn_hellersdorf_live/p/C_D3h_Xis-R/?img_index=1 ist ein Zeichen 250 zu sehen, ohne Ausnahmen -> siehe temp blockings-Eintrag
 #: also_indoor: search Lemkestraße vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-07-30 vvv
 #: osm_watch: way id="593503609" version="9"
-#: last_checked: 2024-08-24 (marzahn_hellersdorf_live @ insta)
+#: last_checked: 2024-09-03 (indoor research)
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553
 #: osm_watch: way id="24204822" version="29"
-#: last_checked: 2024-08-14
+#: last_checked: 2024-09-03 (indoor research)
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
 #: next_check ^^^
 #: check_frequency ^^^
@@ -28670,9 +28674,10 @@ Birkenstr. (Köpenick): Kopfsteinpflaster	Q2 23947,4673 23869,4733
 #: note: "kurvenreich", q0 ignoriert
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> Kleinsteinpflaster)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1492778.php (Sanierung bis 24.01.2025)
+#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/wegen-sanierung-gesperrt_a427384
 #: note: zu wenig BBBike-Traffic für einen temp-blockings-Eintrag (<1/Monat)
 #: XXX Bleibt es nach der Sanierung beim Kleinsteinpflaster?
-#: next_check: 2025-01-2024
+#: next_check: 2025-01-24
 Dallwitzstr.: Kleinsteinpflaster	Q1- 96,2225 163,2091 146,2073 93,2014 80,1998 18,1928
 #
 #: by: oliver (icebear...)

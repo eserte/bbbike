@@ -423,7 +423,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-10-15
+#: last_checked: 2024-10-22 (webcam)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -1039,6 +1039,29 @@ Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	
 # REMOVED (beendet) --- #: last_checked: 2013-10-29 --- #: next_check: 2013-12-15 (laut Schild bis Dezember 2013) --- #: priority: #A --- Kriemhildstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 17337,12428 17320,12308
 # 
 ### Alt-Hohenschönhausen ###
+# 
+#: XXX Bebauungsplan 11-94 VE (Ferdinands Garden)
+#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.743836.php
+#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1194ve.pdf
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8385 (Festsetzung)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Straßenneubau, ohne Termin)
+#: by: http://www.deal-magazin.com/news/3/107874/Lakeward-startet-Neubauprojekt-Ferdinands-Garden-in-Berlin (ist das erwähnte Neubaugebiet hier?)
+#: by: https://nitter.cz/VIZ_Berlin/status/1610159019406016513#m (evtl. im Zusammenhang mit den Bauarbeiten?)
+#: by: https://nitter.net/pic/orig/media%2FFldqbjBXgAEBF0s.png
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ferdinands-garden.363/page-2#post-20646
+#: by: https://www.be.de/project/ferdinand-schulze-strasse/
+#: by: https://www.ferdinands-garden.de/
+#: by: https://www.smv.com/de/projekte-berlin/ferdinands-garden
+#: source_id: viz2021:13.511463,52.539021,30.10.2023,09:00 (Straßenbauarbeiten bis 27.11.2023) (inaktiv)
+#: source_id: viz2021:13.511442,52.539,30.10.2023,09:00 (Straßenbauarbeiten bis 21.12.2023) (inaktiv)
+#: note: laut osm eröffnet -> wurde wieder rückgängig gemacht
+# REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
+#: osm_watch: way id="914159830" version="8"
+#: osm_watch: way id="435611568" version="13"
+#: last_checked: 2024-10-22 (osm)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2023-12-21
+Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,14935 17638,14945
 # 
 #: note: Halteverbotsschilder gelten bis zum 30.04.2026
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
@@ -2042,7 +2065,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: osm_watch: way id="223184082" version="8"
-#: last_checked: 2024-10-17
+#: last_checked: 2024-10-22
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31

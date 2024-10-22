@@ -28556,13 +28556,15 @@ EOF
 	2::inwork 21889,16817 21869,16719 21824,16506 21785,16273 21782,16253
 EOF
      },
-     { from  => 1531605600, # 2018-07-15 00:00
-       until => 1533317444, # $isodate2epoch->("2018-08-04 18:00:00"), # 1533160799, # 2018-08-01 23:59
-       text  => 'Ehrlichstr.: zwischen Blockdammweg und Wildensteiner Str. Gleisbauarbeiten, Richtung Treskowallee gesperrt, bis Anfang August 2018 ',
+     { from  => $isodate2epoch->("2024-10-22 00:00:00"), # 1531605600, # 2018-07-15 00:00
+       until => $isodate2epoch->("2024-12-13 17:00:00"), # 1533317444, # $isodate2epoch->("2018-08-04 18:00:00"), # 1533160799, # 2018-08-01 23:59
+#       text  => 'Ehrlichstr.: zwischen Blockdammweg und Wildensteiner Str. Gleisbauarbeiten, Richtung Treskowallee gesperrt, bis Anfang August 2018 ',
+       text  => 'Ehrlichstr.: zwischen Blockdammweg und Grimnitzstr. Gleisbauarbeiten, Richtung Treskowallee gesperrt, evtl. sich auch Radfahrer betroffen, vom 23.10.2024 07:00 bis 13.12.2024 17:00',
        type  => 'handicap',
-       source_id => '2147342893',
        data  => <<EOF,
-#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bvg-erneuert-tramgleise_a172247
+#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bvg-erneuert-tramgleise_a172247 (alte Sperrung von 2018)
+#: source_id: 2147342893 (inaktiv)
+#: source_id: viz2021:13.512587,52.483664,23.10.2024,07:00 (bis 13.12.2024)
 	q4::inwork; 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
 EOF
      },
@@ -28886,7 +28888,7 @@ EOF
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="31"
-#: osm_watch: note 4481312 5
+#: osm_watch: note 4481312 6
 #: check_frequency: 7d vvv
 #: next_check: 2025-12-31 vvv
 #: priority: #B
@@ -35854,6 +35856,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/ (mittlerweile: Eröffnung März 2025)
 #: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/kalle-neukoelln-wird-nach-und-nach-bezogen_a413054
+#: by: https://www.berliner-woche.de/neukoelln/c-bauen/etliche-bueros-im-kalle-sind-bezogen-im-rest-des-komplexes-laufen-noch-die-bauarbeiten_a427858
 #: osm_watch: way id="734271970" version="7"
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="7"
@@ -37351,7 +37354,7 @@ EOF
 #: note: bei rbb mittlerweile entfernt
 #: osm_watch: way id="1094113747" version="2"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-09-18
+#: last_checked: 2024-10-22 (daf)
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-09-15
@@ -38856,12 +38859,13 @@ EOF
 	2::inwork 3570,17938 3628,17935 3706,17931 3833,17929
 EOF
      },
-     { from  => $isodate2epoch->("2023-10-08 18:00:00"), # 1679292000, # 2023-03-20 07:00
+     { from  => $isodate2epoch->("2024-11-04 00:00:00"), # $isodate2epoch->("2023-10-08 18:00:00"), # 1679292000, # 2023-03-20 07:00
        until => undef, # $isodate2epoch->("2023-08-28 18:00:00"), # 1679715000, # 2023-03-25 04:30
        text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Radfahrer Richtung Norden sollen durch den Bahnhof Köpenick schieben',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
+#: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG-NAVI-03-23-barrierefrei.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1301619.php
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze
@@ -38897,7 +38901,7 @@ EOF
 #: osm_watch: way id="37861386" version="26"
 #: last_checked: 2024-09-04
 #: check_frequency: 120d
-#: next_check: 2024-10-25
+#: next_check: 2024-11-04
 	q4::inwork; 22431,6068 22467,6135
 EOF
      },
@@ -39821,7 +39825,7 @@ EOF
 #: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-09-28
+#: last_checked: 2024-10-22
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -39837,7 +39841,7 @@ EOF
 #: note: Einbahnstraßenbereich ist 50m lang; Halteverbotsschilder bis 2024-11-30
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-10-17
+#: last_checked: 2024-10-22
 #: check_frequency: 21d
 #: next_check: 2024-11-30
 	q3::inwork; 15648,12687 15643,12875
@@ -40804,10 +40808,11 @@ EOF
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick, Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
-      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, evtl. ist der Durchgang durch den Bahnhof Köpenick möglich, vom 23.10.2024 bis voraussichtlich 04.11.2024',
+      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 23.10.2024 bis voraussichtlich 04.11.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
+#: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
@@ -40823,6 +40828,7 @@ EOF
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
 #: source_id: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
 #: source_id: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
+#: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024)
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -45239,19 +45245,24 @@ EOF
 	q4::inwork; 17139,12100 17088,12069 16975,12000 16865,11931
 EOF
      },
-     { from  => 1729486800, # 2024-10-21 07:00
+     { from  => $isodate2epoch->("2024-10-22 00:00:00"), # 1729486800, # 2024-10-21 07:00
        until => 1731945600, # 2024-11-18 17:00
-       text  => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 22.10.2024 07:00 bis 18.11.2024 17:00',
+       text  => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 18.11.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zum-start-der-herbstferien/ (Siegfriedstr., hier nur 23.10.-08.11.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1848592619309306058 (bis Ende November 2024)
+#: by: https://pbs.twimg.com/media/GabKRSNWsAAUzjA?format=jpg&name=large
 #: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024)
 #: source_id: bvg2024:256#HIM_FREETEXT_242768
 #: source_id: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
+#: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024)
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
-#: last_checked: 2024-10-19
-#: next_check: 2024-10-22
+#: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen
+#: last_checked: 2024-10-22
+#: check_frequency: 7d
+#: next_check: 2024-11-11
 	q4::inwork; 16764,11919 16794,12144
 EOF
      },
@@ -45283,6 +45294,15 @@ EOF
 #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
 #: also_indoor: traffic (G,H,B,T,W)
 	q4::inwork 2453,9156 2576,9132
+EOF
+     },
+     { from  => 1729404120, # 2024-10-20 08:02
+       until => 1729868400, # 2024-10-25 17:00
+       text  => 'Maximiliankorso: Bauarbeiten zwischen Alemannenstr. und Ludolfingerplatz, Sperrung der Fahrbahn, vom 21.10.2024 08:02 bis 25.10.2024 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.283668,52.634015,21.10.2024,08:02 (auch Radverkehr ist betroffen, bis 25.10.2024)
+	q4::inwork 2216,25117 2164,25190 2083,25221 1960,25229 1857,25238 1738,25243
 EOF
      },
     );

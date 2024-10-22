@@ -4303,6 +4303,8 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: by: https://viz.berlin.de/2022/02/blumberger-damm-bruecke/ (2-tägige Sperrung nur für Kfz)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/halbzeit-beim-neubau-der-suedlichen-blumberger-damm-bruecke_a380524 (östliche Brückenhälfte fertig)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11107 (Anfrage)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1848567453804286081
+#: by: https://pbs.twimg.com/media/GabEfkLWYAE1i5n?format=jpg&name=large
 #: source_id: viz2021:13.562831,52.51426,02.08.2021,12:02 (bis 01.06.2025) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025) (bis 30.11.2025) (bis 15.06.2023) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025) (bis 30.11.2024, Gesamtbaumaßnahme bis 2025)
@@ -4961,7 +4963,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 # 
 #: next_check_id: KONRADSHOEHER-2023
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8344 (Umsetzung bis 2021 bzw. 2023, "Grundlagenermittlung für Radverkehrsanlagen")
-#: by: https://www.infravelo.de/projekt/konradshoeher-strasse/ (2. Quartal 2023 - 4. Quartal 2023) (mittlerweile Baustart 3. Quartal 2023) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) (in der API gelöscht, im Web weiterhin verfügbar) (wieder da) (3. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2024)
+#: by: https://www.infravelo.de/projekt/konradshoeher-strasse/ (2. Quartal 2023 - 4. Quartal 2023) (mittlerweile Baustart 3. Quartal 2023) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) (in der API gelöscht, im Web weiterhin verfügbar) (wieder da) (3. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2024) (abgeschlossen)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10451 (Radspuren)
 #: by: https://berliner-abendblatt.de/2022/04/21/qm-lichtenrade/ (Radspuren in der Heiligenseestraße, Konradshöher Straße sowie der Ollenhauerstraße; Realisierung bis Ende 2023)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10708 (Erwähnung)
@@ -7562,7 +7564,7 @@ asphaltiertes Straßenbahnkap	RW1; 14661,12798 14731,12809
 	RW3; 15010,12855 15098,12849
 asphaltiertes Straßenbahnkap	RW1; 15098,12849 15117,12846 15169,12839
 Grünbeschichtung	RW3; 15169,12839 15233,12829
-temporäre Führung auf dem Hochbord, getrennter Rad- und Gehweg	RW2; 15233,12829 15357,12813
+provisorischer getrennter Rad- und Gehweg auf der Fahrbahn	RW4; 15233,12829 15357,12813
 	RW4; 15357,12813 15367,12815
 	RW4; 15367,12815 15417,12823
 asphaltiertes Straßenbahnkap	RW2; 15417,12823 15469,12831
@@ -8538,6 +8540,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,771277#msg-771277
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8781 (Antrag)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8615 (Antrag - Antwort)
+#: by: https://berliner-abendblatt.de/berlin-news/diskussion-um-radweg-in-der-kantstrasse-id267484
 #: last_checked: 2024-10-12 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
