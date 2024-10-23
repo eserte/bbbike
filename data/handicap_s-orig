@@ -36,13 +36,13 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: last_checked: 2024-10-18
+#: last_checked: 2024-10-23
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 #: osm_watch: note 4452740 1
-#: last_checked: 2024-10-20 vvv
+#: last_checked: 2024-10-23 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -96,7 +96,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-10-18
+#: last_checked: 2024-10-23
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -737,7 +737,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 9
-#: last_checked: 2024-08-31 (webcam)
+#: last_checked: 2024-10-23 (daf)
 #: check_frequency: 60d
 #: next_check: 2026-12-31
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -922,7 +922,7 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
 #: osm_watch: way id="640465875" version="14"
-#: last_checked: 2024-10-08 (osm)
+#: last_checked: 2024-10-23
 #: check_frequency: 120d
 #: next_check: 2025-04-30
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -939,7 +939,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: note: Die Absperrung beginnt 50m vor dem Einmündungsbereich.
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-09 vvv
+#: last_checked: 2024-10-23 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
@@ -1322,14 +1322,16 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # 
 #: also_indoor: traffic (B,G,H)
 #: note: Halteverbotsschilder bis 23.10.2024
-#: last_checked: 2024-10-09 vvv
-#: next_check: 2024-10-23 vvv
-#: valid: -20241023 vvv
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2024-10-23 (traffic) vvv
+# REMOVED --- #: next_check: 2024-10-23 vvv
+# REMOVED --- #: valid: -20241023 vvv
 Mozartstr./Calandrellistr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege	q2::inwork 5619,3958 5710,3751 5791,3563
 Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5549,3679 5710,3751 5954,3861
-#: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 # 
 ### Lichterfelde ###
 # 
@@ -2217,6 +2219,8 @@ Wuhlewanderweg: Fußgänger	q1 21383,9045 21467,9236 21517,9489 21587,9609 21633,9
 Wuhlewanderweg: Fußgänger	q1 21611,9893 21620,9979 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21727,10582 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fußgänger	q1 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22215,11137
 Wuhlewanderweg: Fußgänger	q1 22059,10782 22103,10814 22166,10839
+Wuhlewanderweg: Fußgänger	q1 21605,5687 21618,5699 21651,5730 21744,5804 21862,5857 21938,5866 22070,5876 22084,5877 22097,5879 22122,5884 22162,5919 22204,6016 22246,6133
+Wuhlewanderweg: Fußgänger	q1 21507,5620 21581,5670 21600,5683
 Klompenweg - Mosbacher Str.: Fußgänger	q1 22172,10996 22195,10993
 Birnbaumer Str.: Fußgänger	q1 22050,6619 22093,6630
 Heinrich-Dathe-Platz: Fußgänger	q2 18512,10337 18478,10406 18456,10454 18442,10471
@@ -3622,7 +3626,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-10-10
+#: last_checked: 2024-10-23
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -5019,7 +5023,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12615 (Anfrage)
 #: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn
 #: XXX Bauarbeiten an den Fahrbahnrändern; Absperrungen können früh zum Schulbeginn an beiden Enden der Fußgängerzone aufgestellt sein (einmalig am 2024-09-24 oder regelmäßig?)
-#: last_checked: 2024-10-15
+#: last_checked: 2024-10-23
 #: check_frequency: 30d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1+ 11635,12398 11845,12292
 # 

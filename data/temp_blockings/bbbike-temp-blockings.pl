@@ -9046,7 +9046,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: IM_005812 (alte Meldung von 2007) (inaktiv)
-#: source_id: viz2021:13.398749,52.532591,04.09.2024,07:00 (hier nur Kfz-Verkehr, bis 04.10.2024) (bis 18.10.2024) (bis 23.10.2024)
+#: source_id: viz2021:13.398749,52.532591,04.09.2024,07:00 (hier nur Kfz-Verkehr, bis 04.10.2024) (bis 18.10.2024) (bis 23.10.2024) (inaktiv)
 #: note: Radverkehr ist bei den Bauarbeiten im September 2024 nicht betroffen (oder nur kaum, leichte Verschwenkungen im Kreuzungsbereich Brunnenstr.)
 # REMOVED --- #: last_checked: 2024-09-04 (mapillary) --- #: next_check: 2024-09-04
 	q4::inwork; 9804,14071 9821,14073 9936,14085 10002,14092
@@ -35862,7 +35862,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-19 (mapillary)
+#: last_checked: 2024-10-23
 #: check_frequency: 30d
 #: next_check: 2025-03-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -37552,7 +37552,8 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: also_indoor ^^^
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
-#: last_checked: 2024-10-19
+#: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
+#: last_checked: 2024-10-22
 #: check_frequency: 14d
 	q4::inwork 16720,12614 16859,12613
 EOF
@@ -38074,7 +38075,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
-#: last_checked: 2024-10-12 (mapillary) vvv
+#: last_checked: 2024-10-23 vvv
 #: check_frequency: 60d vvv
 #: next_check_id: 2024-12-31 vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
@@ -41245,7 +41246,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2024-09-27
+#: last_checked: 2024-10-23
 #: check_frequency: 120d
 #: next_check: 2024-12-29
 	q4::inwork 12407,8177 12545,8209
@@ -43973,7 +43974,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-10-15 vvv
+#: last_checked: 2024-10-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44141,7 +44142,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2024-09-15
+#: last_checked: 2024-10-23
 	q4::inwork; 12997,6290 13239,6344 13283,6354
 EOF
      },
@@ -44202,16 +44203,17 @@ EOF
 #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024)
 #: also_indoor: search Bäkebrücke
+#: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (G,B,T,W)
 #: add_fragezeichen: Ist der Teltowkanaluferweg weiterhin komplett gesperrt? vvv
 #: last_checked: 2024-10-09 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-12-16 vvv
-Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
 Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
 #: note: eigentlich q3-::inwork
 Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
 Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
+Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -44420,7 +44422,7 @@ EOF
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-10-18
+#: last_checked: 2024-10-23
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -44904,9 +44906,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KARLMARXPLATZ-2024
-#: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.
+#: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23) ist die Fahrbahn aufgerissen
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-23
 #: check_frequency: 60d
 #: next_check: 2025-01-05
 	q4::inwork 12972,7602 13100,7626
@@ -45112,7 +45114,7 @@ EOF
 #: source_id: bvg2024:140#HIM_FREETEXT_241551
 #: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024)
 #: also_indoor: traffic (H,G,B,T,ex-W)
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-23
 #: next_check: 2024-11-11
 	q3::inwork 10944,10606 11100,10530
 EOF
@@ -45146,7 +45148,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_242095
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-23
 Fischerinsel	q4::inwork; 10578,11969 10512,12039
 EOF
      },
@@ -45266,12 +45268,12 @@ EOF
 	q4::inwork; 16764,11919 16794,12144
 EOF
      },
-     { from  => 1730012400, # 2024-10-27 08:00
-       until => 1780236000, # 2026-05-31 16:00
-       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.10.2024 08:00 Uhr bis 31.05.2026 16:00 Uhr',
+     { from  => 1729705680, # 1730012400, # 2024-10-27 08:00
+       until => 1729705680, # 1780236000, # 2026-05-31 16:00
+       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.10.2024 08:00 Uhr bis 31.05.2026 16:00 Uhr', # findet nicht statt?
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/159 (bis 31.05.2026)
+#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 EOF
      },
