@@ -520,6 +520,10 @@ Examples:
 Ignore this oldname entry when generating the F<oldnames> data file.
 This is useful if for example only a part of the street was renamed.
 
+=item C<ignore_check_net: yes>
+
+Ignore this entry for "within network" checks.
+
 =item C<section: I<section name>>
 
 The next block is part of a named section. Sections may be nested.
