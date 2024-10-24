@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2004,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2004,2014,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -104,7 +104,7 @@ EOF
 	if ($usememcache && $str_obj{$file}) {
 	    $s1 = $str_obj{$file};
 	} else {
-	    $s1 = new Strassen $file;
+	    $s1 = Strassen->new($file, UseLocalDirectives => 1);
 	}
 	if ($usememcache && !$str_obj{$file}) {
 	    $str_obj{$file} = $s1;
@@ -150,17 +150,20 @@ EOF
 	last if !@{$ret->[Strassen::COORDS()]};
 	my $name = $ret->[Strassen::NAME()];
 	my $cat = $ret->[Strassen::CAT()];
+	my $dir = $s1->get_directives;
 
-	my @this_error_points;
-	foreach (@{$ret->[Strassen::COORDS()]}) {
-	    if (!exists $s2->{$_} && $_ ne '*') {
-		push(@this_error_points, $_);
+	if (($dir->{ignore_check_net}[0] || '') ne 'yes') {
+	    my @this_error_points;
+	    foreach (@{$ret->[Strassen::COORDS()]}) {
+		if (!exists $s2->{$_} && $_ ne '*') {
+		    push(@this_error_points, $_);
+		}
 	    }
-	}
-	if (@this_error_points) {
-	    print STDERR "Error in $name: coordinate(s) " . join(" ", @this_error_points) . " are not in net\n" unless $q;
-	    $fail++ unless $warn;
-	    push @error_points, @this_error_points if $do_report;
+	    if (@this_error_points) {
+		print STDERR "Error in $name: coordinate(s) " . join(" ", @this_error_points) . " are not in net\n" unless $q;
+		$fail++ unless $warn;
+		push @error_points, @this_error_points if $do_report;
+	    }
 	}
 
 	if ($assert_single_coordinate) {
