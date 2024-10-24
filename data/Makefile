@@ -729,7 +729,7 @@ vorfahrt:	vorfahrt-orig .check_daily
 # able to do some things yet necessary here, for example automatic
 # Gefaelle generation in comments_mount or not combining X;X
 # categories into X
-.for f in ${COMMENTS_PARTIAL:Ncomments_route:Ncomments_ferry:Ncomments_misc:Ncomments_cyclepath}
+.for f in ${COMMENTS_PARTIAL:Ncomments_route:Ncomments_ferry:Ncomments_misc:Ncomments_cyclepath:Ncomments_scenic}
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross .check_daily
 	-@$(WRITEABLE) $@
 	${GREPSTRASSEN_VALID} ${f}-orig | \
@@ -757,13 +757,13 @@ comments_cyclepath: comments_cyclepath-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/g
 # New style using convert_orig_to_bbd. comments_route here,
 # because of the need for alias and url directives. comments_ferry
 # needs special as_of handler. comments_misc, because of a bug
-# in convert2hafas
-.for f in comments_route comments_ferry comments_misc
+# in convert2hafas. comments_scenic because of ignore_check_net directive
+.for f in comments_route comments_ferry comments_misc comments_scenic
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross .check_daily
 	-@$(WRITEABLE) $@
 	${GREPSTRASSEN_VALID} ${f}-orig | \
-	    ${GREPSTRASSEN} -v -directive 'ignore=' | \
-	    $(CONVERT_ORIG) -unutf8ify -keep-directive url -keep-directive alias -special as_of - | \
+	    ${GREPSTRASSEN} -v -directive 'ignore=' -preserveglobaldirectives | \
+	    $(CONVERT_ORIG) -unutf8ify -keep-directive url -keep-directive alias -keep-directive ignore_check_net -special as_of - | \
 	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 	        ${ALL_STREETS} - > $@~
 	mv $@~ $@
