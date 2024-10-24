@@ -3028,6 +3028,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 # REMOVED (hier nicht) ---	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544
 Fürstenwalder Damm, linker Gehweg existiert	q4::inwork; 24471,5544 24700,5633
 Jastrower Weg: Einbahnstraße	q4::inwork; 23877,5503 23866,5515 23863,5549 23845,5558 23696,5529 23657,5467
+Jastrower Weg: Einbahnstraße	q4::inwork; 23849,5380 23877,5503
 Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5831 24506,5780 24429,5749 24387,5672 24362,5635 24320,5621 24236,5594 24125,5547 24126,5521
 ',
          'from' => 1719205200,
@@ -3051,7 +3052,7 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
        {
          'data' => '# REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
 # REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
-#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024)
+#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024)
 #: source_id: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024)
 #: source_id: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024)
 # REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
@@ -3062,9 +3063,9 @@ Kiautschoustr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 7007,149
 ',
          'from' => 1719810000,
          'id' => 2430,
-         'text' => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis 05.11.2024 17:00',
+         'text' => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis 14.11.2024 17:00',
          'type' => 'handicap',
-         'until' => 1730822400
+         'until' => 1731600000
        },
        undef,
        undef,
@@ -3212,14 +3213,16 @@ Kleistpark	2::night 7310,9622 7307,9528
 #: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024) (bis 28.10.2024) (bis 03.11.2024)
 #: XXX Änderung der Bauphase: Bauarbeiten dann zwischen Waldowstr. und Ostendstr. 20
 #: note: die Rathenaustraße wird als Umleitungsstrecke benutzt und ist eigentlich zu eng, ein comments_trafficjam-Eintrag würde sich anbieten
-#: last_checked: 2024-09-22 (krickstadt) vvv
+#: last_checked: 2024-10-24 vvv
 #: next_check: 2024-11-03 vvv
 	q3::inwork; 19681,5924 19650,5920 19403,5885
-hier einige Bordsteine ohne Anrampung	q3::inwork; 19403,5885 19388,5883 19273,5866
+# REMOVED (hier weitgehend fertig) --- hier einige Bordsteine ohne Anrampung	q3::inwork; 19403,5885 19388,5883 19273,5866
 # REMOVED (hier fertig) --- hier einige Bordsteine ohne Anrampung	q3::inwork; 19273,5866 19010,5833
 # REMOVED (hier fertig) --- vermutlich weniger Fußgängerverkehr	q2::inwork; 19010,5833 19273,5866
-vermutlich weniger Fußgängerverkehr	q2::inwork; 19273,5866 19388,5883 19403,5885 19650,5920 19681,5924
+# REMOVED (hier weitgehend fertig) --- vermutlich weniger Fußgängerverkehr	q2::inwork; 19273,5866 19388,5883 19403,5885
+vermutlich weniger Fußgängerverkehr	q2::inwork; 19403,5885 19650,5920 19681,5924
 # REMOVED --- #: note: am anderen Ende (Steffelbauerstr.) gibt\'s kein Einbahnstraßenschild --- Scharnweberstr.: Einfahrt verboten	q4::inwork; 19650,5920 19495,6029
+#: note: unklar, könnten vielleicht auch anderweitige Hochbauarbeiten sein?
 Slabystr.: einige Meter der Fahrbahn vor der Ostendstr. gesperrt (Baucontainer)	q3::inwork 19180,6020 19273,5866
 #	q4::inwork; 19957,5941 19795,5935 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19010,5833 18928,5920
 #: next_check ^^^
@@ -4014,7 +4017,8 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bvg-erneuert-tramgleise_a172247 (alte Sperrung von 2018)
 #: source_id: 2147342893 (inaktiv)
 #: source_id: viz2021:13.512587,52.483664,23.10.2024,07:00 (bis 13.12.2024)
-	q4::inwork; 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
+	q4::inwork; 17729,8850 17879,8773 17929,8742
+# REMOVED: ab Grimnitzstr.: hier nicht ---	q4::inwork; 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
 ',
          'from' => 1729548000,
          'id' => 2983,
@@ -4130,7 +4134,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
-#: last_checked: 2024-10-19
+#: last_checked: 2024-10-24
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="35"
 #: osm_watch: way id="580507889" version="30"
@@ -4246,7 +4250,27 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (in osm aufgehoben) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php --- #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/ --- #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369 --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben? --- #: source_id: 2147344699 --- #: osm_watch: way id="25274116" version="20" --- #: osm_watch: way id="671101960" version="4" --- #: also_indoor: traffic (G,H) --- #: last_checked: 2019-11-23 --- #: check_frequency: 7d
+#: next_check_id: ALTSTADTKOEPENICK-2024
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
+#: by: https://www.bahninfo-forum.de/read.php?9,800515,811033#msg-811033
+#: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024) (bis 21.10.2024) (inaktiv)
+#: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
+#: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
+#: also_indoor: traffic (T,G,H,W)
+# REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
+#: last_checked: 2024-10-24
+#: check_frequency: 60d
+#: next_check: 2027-03-31
+Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
+',
+         'from' => 1729526400,
+         'id' => 3070,
+         'text' => 'Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
+         'until' => 1806508800
+       },
        undef,
        undef,
        undef,
@@ -5944,7 +5968,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (W)
+         'data' => '#: also_indoor: traffic (ex-W)
 #: osm_watch: way id="1137576466" version="1"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: Halteverbotsschilder bis Ende September 2024
@@ -5967,7 +5991,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: osm_watch: way id="1170463986" version="3"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024
-#: also_indoor: traffic (G,W)
+#: also_indoor: traffic (ex-G,ex-W)
 #: last_checked: 2024-09-25
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-09-30
@@ -6191,8 +6215,8 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
-#: also_indoor: traffic (B,T,ex-H,ex-G,ex-W)
-#: last_checked: 2024-10-18 (traffic)
+#: also_indoor: traffic (B,T,ex-H,ex-G,re-W)
+#: last_checked: 2024-10-24 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -6301,7 +6325,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: check_frequency: 30d
 #: next_check: 2024-10-31
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="11"
+#: osm_watch: way id="1025826786" version="12"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 ',
          'from' => undef,
@@ -6628,7 +6652,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-10-16 vvv
+#: last_checked: 2024-10-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-11-25 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -7194,11 +7218,11 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-09-27 (mapillary) vvv
+#: last_checked: 2024-10-24 (osm) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="24"
+#: osm_watch: way id="120633718" version="25"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -8072,6 +8096,8 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'data' => '#: next_check_id: KARLMARXPLATZ-2024
 #: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23) ist die Fahrbahn aufgerissen
 #: also_indoor: traffic (none)
+#: osm_watch: way id="36983903" version="33"
+#: osm_watch: way id="1002238498" version="9"
 #: last_checked: 2024-10-23
 #: check_frequency: 60d
 #: next_check: 2025-01-05
@@ -8396,6 +8422,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
 #: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024)
 #: source_id: bvg2024:256#HIM_FREETEXT_242768
 #: source_id: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
+#: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - ?)
 #: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024)
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
@@ -8444,6 +8471,18 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'text' => 'Maximiliankorso: Bauarbeiten zwischen Alemannenstr. und Ludolfingerplatz, Sperrung der Fahrbahn, vom 21.10.2024 08:02 bis 25.10.2024 17:00',
          'type' => 'handicap',
          'until' => 1729868400
+       },
+       {
+         'data' => '#: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
+#: also_indoor: traffic (H,G,B,T,W)
+#: last_checked: 2024-10-24
+	q4::inwork; 18240,6845 18225,7004
+',
+         'from' => undef,
+         'id' => 4202,
+         'text' => 'Fontanestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

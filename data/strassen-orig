@@ -15751,7 +15751,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2024-10-19
+#: last_checked: 2024-10-24
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16141,7 +16141,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2024-10-19
+#: last_checked: 2024-10-24
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens
@@ -18919,7 +18919,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7343 (Antrag) (abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5TQj0X86Z3AV6QO6ibyHnoLSeLd4YmEqqKXJTU7c/vMYbgDSP/73-Anlagen/06/B1481SB.pdf (Schlussbericht)
-#: last_checked: 2024-09-18 (okas)
+#: last_checked: 2024-10-24
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
 Parrisiusstr.	N 22358,5918 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835
@@ -20258,6 +20258,9 @@ Rettigweg	N 9831,17652 9760,17612 9706,17570
 Pradelstr.	N 9760,17612 9660,17736
 Friedrich-List-Ufer	N 8110,13042 8106,13130 8102,13304 8099,13391 8098,13419
 Reinbeckstr.	N 18341,6313 18310,6223
+#: osm.highway: service
+(Reinbeckstr. - Spreeufer)	N 18310,6223 18298,6199 18282,6184 18259,6110
+(Reinbeckstr. - Spreeufer)	NN 18259,6110 18242,6067
 Marchandstr.	N 7438,1855 7415,1846 7332,1718 7193,1492
 Tambacher Str.	N 7035,1814 7134,1612 7144,1591 7193,1492 7226,1428 7264,1350
 Blankenhainer Str.	N 7035,1814 6881,1743 6716,1667 6572,1601
@@ -20733,11 +20736,11 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
 #: osm_watch: way id="1156287321" version="2"
-#: last_checked: 2024-07-30 (mapillary)
+#: last_checked: 2024-10-24
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
 #: osm_watch: way id="1138047106" version="4"
-#: last_checked: 2024-07-30 (mapillary)
+#: last_checked: 2024-10-24
 #: check_frequency: 90d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21669,5700 21623,5661
 # 

@@ -100,7 +100,6 @@ Knoten M‰rkische Allee	1 20114,11719 20064,11687 20026,11663
 Knoten M‰rkische Allee	1 20026,11663 20018,11698 19985,11727
 Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 18934,11796 19138,11815 19389,11761
 Altstadt Kˆpenick	1 22451,4749 22439,4838
-Landj‰gerstr.	1 22740,4415 22542,4485 22495,4523
 Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 Alt-Kˆpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
@@ -993,7 +992,7 @@ Lindenstr. (Straﬂenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Br¸ckenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2024-07-30 (mapillary) vvv
+#: last_checked: 2024-10-24 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 vvv
 Lindenstr./Pyramidenbr¸cke: ‹bergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -3832,8 +3831,32 @@ Barriere	BNP:3::trailer=10 10628,16644
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: HIRSCHGARTEN-2024
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze?date=20240724
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,809524#msg-809524
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,809845#msg-809845 (mittlerweile nur noch f¸r Radfahrer befahrbar)
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,811931#msg-811931
+#: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 f¸r Kfz, Radfahrer kˆnnen wohl ¸ber der Randbereich ausweichen (evtl. mit q3-Einschr‰nkung?)
+#: XXX 2024-10-18 - 2026-10-29: Einbahnstraﬂenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information
+#: also_indoor: traffic (G)
+#: last_checked: 2024-10-24
+#: check_frequency: 180d
+#: next_check: 2026-10-29
+Am Wiesenrain: Einbahnstraﬂenregelung	1s:q3:inwork 23931,5992 24122,6007
+#: last_checked: 2024-10-24 vvv
+#: check_frequency: 180d vvv
+#: next_check: 2026-12-31 vvv
+#: osm_watch: way id="37452317" version="6"
+#: osm_watch: way id="1326231386" version="1"
+Mittelheide - S-Bhf. Hirschgarten: Baustraﬂe, gesperrt f¸r ˆffentlichen Verkehr	2::inwork 24089,6144 24060,6059 23951,6063
+#: osm_watch: way id="835496730" version="6"
+Erpetal - S-Bhf. Hirschgarten: Baustraﬂe, gesperrt f¸r ˆffentlichen Verkehr	2::inwork 24120,6090 24060,6059
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-11
+#: last_checked: 2024-10-24
 #: check_frequency: 21d
 Weg im Gr¸nzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
 # 
@@ -3936,7 +3959,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Nebau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date 2026-08-24 (ohne Quelle)
-#: last_checked: 2024-07-22 (osm)
+#: last_checked: 2024-10-24
 #: check_frequency: 180d
 #: next_check: 2026-06-30
 (Rˆmerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -4122,7 +4145,7 @@ Straﬂe 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="27"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-10-19
+#: last_checked: 2024-10-24
 #: check_frequency: 90d
 #: next_check: 2024-10-31
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4176,7 +4199,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon H‰user mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straﬂen offen? vvv
-#: last_checked: 2024-10-19 vvv
+#: last_checked: 2024-10-24 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -4281,7 +4304,7 @@ Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-generalshof-1-k%C3%B6penick.874/#post-22500
 # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="770592585" version="5"
 #: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straﬂe und der neuen Anbindung was gemacht; mittlerweile kann man (manchmal?) gut passieren (gesehen 2024-09-01 (Sun) mittags)
-#: last_checked: 2024-09-01
+#: last_checked: 2024-10-24
 #: check_frequency: 21d
 Am Generalshof: Hochbauarbeiten, Fahrbahn offiziell noch gesperrt	2::inwork 22057,5305 22095,5344
 # REMOVED (hier schon passierbar --- Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22095,5344 22140,5392
@@ -4470,7 +4493,7 @@ Marktplatz Adlershof: mˆglicherweise wird die nˆrdliche Fahrbahn dauerhaft einge
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10456 (Vorlage zur Kenntnisnahme)
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-24
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, mˆglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -4544,7 +4567,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-neubau-mehrfamilienhaus-wohnanlage-parkstadt-karlshorst-berlin-deutschland-637598.html
-#: last_checked: 2024-09-28 vvv
+#: last_checked: 2024-10-24 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
@@ -4576,7 +4599,7 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: note: Halteverbotsschilder bis 31.12.2024
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
-#: last_checked: 2024-10-11
+#: last_checked: 2024-10-24
 #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
 #: last_checked: 2024-10-11
@@ -4604,7 +4627,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂ
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2024-10-11
+#: last_checked: 2024-10-24
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 

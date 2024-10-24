@@ -1174,12 +1174,14 @@ Görlitzer Str.: Kopfsteinpflaster	Q2; 12328,10442 12608,10294 12682,10258 12767,
 Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12905,10143 13035,10076 13220,9980
 Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 #: next_check_id: ALTSTADTKOEPENICK-2024
-#: XXX provisorische Asphaltierung geplant vvv
-#: next_check: 2024-10-21 vvv
-Alter Markt: Kopfsteinpflaster	Q2 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
-Lüdersstr.: Kopfsteinpflaster	Q2 22390,4702 22388,4737 22377,4836
-Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
+#: XXX nach den Bauarbeiten wird vermutlich der provisorische Asphalt entfernt; dann wieder "Kopfsteinpflaster, Q2" vvv
+#: last_checked: 2024-10-24 vvv
+#: next_check: 2027-03-31 vvv
+Alter Markt: Asphalt	Q0 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
+Lüdersstr.: Asphalt	Q0 22390,4702 22388,4737 22377,4836
+Freiheit: Asphalt	Q0 22377,4836 22196,4847
 #: next_check ^^^
+#: last_checked ^^^
 #: XXX ^^^
 Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 Norwegerstr.: mäßiger Asphalt	Q1- 9959,16510 9975,16425
@@ -5512,7 +5514,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2024-09-01
+#: last_checked: 2024-10-24
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
@@ -8329,7 +8331,7 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX wird hier asphaltiert werden? vvv
 #: XXX Baumaßnahme 9.13 (Realisierung nach 2011) vvv
 # REMOVED (closed) --- #: osm_watch: note 1535852 4
-#: last_checked: 2024-03-20 vvv
+#: last_checked: 2024-10-24 vvv
 #: check_frequency: 180d vvv
 #: osm_watch: way id="852155554" version="11"
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
@@ -10768,7 +10770,7 @@ Werlseestr. - Am Goldmannpark: Beton	Q0 26199,5643 26239,5659
 #: osm_watch: way id="1085678795" version="4"
 #: osm_watch: way id="384630167" version="6"
 #: XXX wird die Straße hier verbessert (asphaltiert)?
-#: last_checked: 2024-03-20
+#: last_checked: 2024-10-24
 #: check_frequency: 180d
 Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26239,5659 26274,5694 26282,5830
 (Am Goldmannpark - Fürstenwalder Damm): Asphalt	Q0 26282,5830 26294,5923 26424,5924
@@ -13748,6 +13750,10 @@ Ungarnstr.: Fahrbahn betoniert und Radweg mit Verbundsteinpflaster, beide mit Sc
 # 
 Friedenauer Höhe: Asphalt	Q0 6293,7875 6263,7894 6178,7899
 Friedenauer Höhe: Betonsteinpflaster	Q0- 6178,7899 6126,7917 6011,7911 5799,7880
+# 
+(Reinbeckstr. - Spreeufer): Kopfsteinpflaster	Q2 18310,6223 18298,6199
+(Reinbeckstr. - Spreeufer): Beton	Q1- 18298,6199 18282,6184 18259,6110
+(Reinbeckstr. - Spreeufer): Gehwegplatten	Q0- 18259,6110 18242,6067
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
