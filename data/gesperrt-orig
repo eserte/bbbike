@@ -3843,6 +3843,7 @@ Barriere	BNP:3::trailer=10 10628,16644
 #: check_frequency: 180d
 #: next_check: 2026-10-29
 Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
+#: XXX evtl. muss mudways hier nach den Bauarbeiten neu evaluiert werden?
 #: last_checked: 2024-10-24 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
@@ -3989,11 +3990,12 @@ Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
 #: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
 #: by: https://www.deutsches-architekturforum.de/thread/3986-bauprojekte-am-wriezener-bahnhof-friedrichshain/?postID=767122#post767122
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
 #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2024-10-18 vvv
+#: last_checked: 2024-10-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-01 vvv
 #: osm_watch: way id="1054783030" version="3"

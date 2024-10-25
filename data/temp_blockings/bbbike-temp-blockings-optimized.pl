@@ -5496,8 +5496,10 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 # REMOVED (offen) --- #: XXX teilweise Freigabe am 3.6.2024 (voraussichtlich!) --- #: next_check: 2024-06-03 ---	q4::inwork 13996,16959 13974,16924 13870,16837
+#: osm_watch: way id="1316908799" version="1"
 	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
+#: osm_watch: way id="42990078" version="29"
 Schönstr. vor Kreuzungsbereich Amalienstr.	q4::inwork 13794,16773 13630,16629
 #: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
 Amalienstr.	q4::inwork 13722,16843 13794,16773 13848,16721
@@ -7926,17 +7928,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: 246001451 (bis 25.10.2024) (inaktiv)
-#: by: https://www.neb.de/fahrplanaenderungen/fahrgastinfo/karow-schoenerlinde-5/ (18.10.2024 21:45 bis 20.10.2024)
-	2::inwork 12056,34918 12025,35002 11964,35230
-',
-         'from' => 1729182600,
-         'id' => 4146,
-         'text' => 'Wandlitz: Sanierung des Bahnübergangs, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.10.2024 18:30 Uhr bis 25.10.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1729864800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: PETERSBURGER-2024
@@ -7975,6 +7967,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480271.php
+#: by: https://www.infravelo.de/projekt/am-eichgarten/ (3. Quartal 2024 - 4. Quartal 2024)
 #: XXX Dabei werden die Flächen für Rad- und Fußverkehr getrennt. Für den Radverkehr entsteht ein 3m breiter Weg (für beide Richtungen).
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: last_checked: 2024-10-09
@@ -8212,16 +8205,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'gesperrt',
          'until' => 1753999199
        },
-       {
-         'data' => '#: source_id: viz2021:13.285727,52.482902,30.09.2024,07:00 (bis 25.10.2024)
-	q4::inwork 2423,8427 2541,8425
-',
-         'from' => 1727586000,
-         'id' => 4178,
-         'text' => 'Elgersburger Str.: Bauarbeiten zwischen Franzensbader Str. und Ilmenauer Str., evtl. sind auch Radfahrer betroffen, Bauarbeiten, vom 30.09.2024 07:00 bis 25.10.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1729868400
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024)
 	q4::inwork 10197,16528 10209,16674
@@ -8351,7 +8335,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
        {
          'data' => '#: next_check_id: SCHWEDTER-2024
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-16 (mapillary)
+#: last_checked: 2024-10-23 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 10530,14452 10567,14337 10629,14299
 ',
@@ -8373,18 +8357,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'type' => 'handicap',
          'until' => 1730131200
        },
-       {
-         'data' => '#: source_id: viz2021:13.232905,52.528887,21.10.2024,08:00 (hier nur Kfz-Verkehr, bis 25.10.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1848235265548054835
-#: by: https://pbs.twimg.com/media/GaL4zj2W0BITM9h?format=jpg&name=900x900 (keine Ausnahme für den Radverkehr)
-	q4::inwork; -1258,13552 -1284,13340
-',
-         'from' => 1729404000,
-         'id' => 4193,
-         'text' => 'Klärwerkstr. : Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, vom 21.10.2024 08:00 bis 25.10.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1729868400
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.531353,52.39783,19.10.2024,07:00 (bis 03.11.2024)
 	2::inwork 19248,-771 19302,-734 19333,-714
@@ -8462,27 +8435,20 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'type' => 'handicap',
          'until' => 1737154800
        },
+       undef,
        {
-         'data' => '#: source_id: viz2021:13.283668,52.634015,21.10.2024,08:02 (auch Radverkehr ist betroffen, bis 25.10.2024)
-	q4::inwork 2216,25117 2164,25190 2083,25221 1960,25229 1857,25238 1738,25243
-',
-         'from' => 1729404120,
-         'id' => 4201,
-         'text' => 'Maximiliankorso: Bauarbeiten zwischen Alemannenstr. und Ludolfingerplatz, Sperrung der Fahrbahn, vom 21.10.2024 08:02 bis 25.10.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1729868400
-       },
-       {
-         'data' => '#: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
+         'data' => '#: source_id: viz2021:13.517775,52.467433,09.07.2024,08:00 (bis 13.11.2024)
+#: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2024-10-24
+#: next_check: 2024-11-13
 	q4::inwork; 18240,6845 18225,7004
 ',
          'from' => undef,
          'id' => 4202,
-         'text' => 'Fontanestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, Ende der Bauarbeiten unbekannt',
+         'text' => 'Fontanestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis 13.11.2024',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1731513600
        }
      
 );

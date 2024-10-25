@@ -247,7 +247,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?
 #: XXX wenn hier, dann vielleicht auch in der Kongostraße?
 #: XXX laut osm mittlerweile asphaltiert
 #: osm_watch: way id="1204844078" version="7"
-#: last_checked: 2024-08-24 (mapillary)
+#: last_checked: 2024-10-22 (mapillary)
 #: check_frequency: 90d
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
@@ -430,7 +430,7 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-verkehr/entlang-der-hauptstrasse-in-wilhelmsruh-muessen-noch-grundstuecke-erworben-werden_a333710 (nicht vor 2025)
 #: XXX mittelfristig Realisierung von Radstreifen
 #: osm_watch: way id="340337649" version="13"
-#: last_checked: 2024-10-02 (mapillary)
+#: last_checked: 2024-10-22 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2025-03-01
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
@@ -1395,7 +1395,7 @@ Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielle
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php ("Überarbeitung" notwendig)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1348146.php (weiterhin nicht freigegeben)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/gruenes-licht-fuer-zwei-radprojekte_a387901 (neue Planung gefordert)
-#: last_checked: 2024-04-30 (mapillary)
+#: last_checked: 2024-10-22 (mapillary)
 #: check_frequency: 180d
 Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?	?::projected 10060,21916 9973,22133 9747,22694
 # 
@@ -1463,7 +1463,7 @@ Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Sü
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1073173.php (Vollsperrungen werden verschoben, die zweite bis 26.4.2021)
 #: by: https://www.berliner-woche.de/haselhorst/c-verkehr/friedensburg-platz-voll-gesperrt_a306162
 #: source_id: 2147346226 (Bauarbeiten am Ferdinand-Friedensburg-Platz) (möglicherweise inaktiv)
-#: last_checked: 2024-09-18
+#: last_checked: 2024-10-24 (mapillary)
 #: check_frequency: 120d
 Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected -1484,14513 -1564,14489 -1947,14394 -2074,14366 -2233,14384 -2343,14446 -2460,14493 -2597,14532 -2647,14532 -2794,14511 -2831,14512 -2946,14533 -3014,14559 -3150,14631 -3209,14662 -3255,14685
 # 
@@ -3195,14 +3195,14 @@ Oderstr.: Planung einer Fahrradstraße (nördlicher Abschnitt)	?::projected 11472,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1472806.php (Arbeiten ab Mitte August 2024; Fertigstellung im September 2024; "Flexpoller", Leitboys, Schwellen)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/im-september-soll-neuer-radstreifen-fertig-sein_a422155
 #: source_id: viz2021:13.47618,52.462748,22.05.2024,07:00 (haben die Bauarbeiten etwas mit dem Radweg zu tun? bis 21.06.2024) (inaktiv)
-#: source_id: viz2021:13.47026,52.466556,23.09.2024,12:00 (zwischen Krebsgang und Fritzi-Massary-Straße Bau von Radfahrstreifen, bis 14.10.2024) (bis 21.10.2024 + weitere Bauabschnitte) (bis 25.10.2024 + ...) (bis 15.11.2024 + ...)
+#: source_id: viz2021:13.47026,52.466556,23.09.2024,12:00 (zwischen Krebsgang und Fritzi-Massary-Straße Bau von Radfahrstreifen, bis 14.10.2024) (bis 21.10.2024 + weitere Bauabschnitte) (bis 25.10.2024 + ...) (bis 15.11.2024 + ...) (bis 30.11.2024 + ...)
 #: source_id: viz2021:13.46478,52.47026,23.09.2024,12:00 (bis 14.10.2024) (inaktiv)
-#: osm_watch: note 4389164 1
+#: osm_watch: note 4389164 2
 #: XXX der aufgemalte Radweg Richtung SO wird zugunsten einer Radspur aufgegeben
 #: last_checked: 2024-10-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
-#: next_check: 2024-11-15
+#: next_check: 2024-11-30
 Sonnenallee: geschützer Radfahrstreifen im Neuköllner Abschnitt wird erstellt	?::inwork 15505,6342 15452,6384 15429,6403 15334,6492 15275,6554 15229,6602 15146,6690 15058,6784 14803,7056 14752,7108 14693,7168
 # 
 #: by: https://api.fixmyberlin.de/api/projects/302
@@ -5265,7 +5265,7 @@ Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907
 #: osm_watch: note 3954748 3
 #: osm_watch: note 4127416 1
 #: XXX Vorfahrtsregelung wird auch geändert, Einbahnstraßenregelungen für Kfz (Höhe Fürstenberger Str. nur Richtung N/S bis Griebenower)
-#: last_checked: 2024-10-16 (mapillary)
+#: last_checked: 2024-10-23 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 # REMOVED (hier noch) nicht) --- Schwedter Str.: Fahrradstraße geplant, wo genau?	? 10933,14122 10822,14179 10739,14228 10629,14299
@@ -7353,6 +7353,7 @@ Revaler Str.: östlicher Abschnitt wird zur Fahrradstraße und soll asphaltiert we
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklung/stadtplanung/bebauungsplanverfahren/beteiligung/4-60_planzeichnung_240430.pdf (öffentliche Parkanlage, kein expliziter Weg eingezeichnet)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_29_1999_2054_online.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/4013-spreestadt-kpm-quartier-charlottenburg/?postID=766604#post766604
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Widmung einer öffentlichen Grün- und Erholungsanlage für den schon bestehenden östlich angrenzenden Uferweg)
 #: osm_watch: way id="496771672" version="8"
 #: last_checked: 2024-10-13 (architektur-urbanistik)
 #: check_frequency: 360d
@@ -8494,13 +8495,7 @@ Carossastr.: mögliche Umbenennung in Elisa-Gérard-Straße	? -2602,16809 -2946,168
 #: check_frequency: 120d
 Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?	? 7010,8189 7001,8161 6995,8140
 # 
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1474634.php
-#: by: https://www.berliner-woche.de/rosenthal/c-bauen/modalsperre-soll-unfallgefahr-laerm-und-abgase-mindern_a422760
-#: by: https://media04.berliner-woche.de/article/2024/08/14/3/480213_XXL.jpg
-#: osm_watch: way id="25939420" version="16"
-#: priority: #D
-#: next_check: 2024-08-12
-Hauptstr. (Rosenthal): Modalsperre entsteht	? 8389,21468 8419,21446
+# REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1474634.php --- #: by: https://www.berliner-woche.de/rosenthal/c-bauen/modalsperre-soll-unfallgefahr-laerm-und-abgase-mindern_a422760 --- #: by: https://media04.berliner-woche.de/article/2024/08/14/3/480213_XXL.jpg --- #: osm_watch: way id="25939420" version="16" --- #: priority: #D --- #: next_check: 2024-08-12 --- Hauptstr. (Rosenthal): Modalsperre entsteht	? 8389,21468 8419,21446
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11603
@@ -9225,10 +9220,10 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-lichtenberg-in-bau/?postID=763705#post763705 (Fußgängerbereich bereits fertig? Benennung des Vorplatzes nach Malala Yousafzai)
 #: XXX alle hier aufgeführten Straßen fehlen noch bei Berlin.coords.data
 #: XXX Samuel-Lewin-Str. laut DPAG-Mitteilungsblatt und LOR PLZ=10318
-#: also_indoor: webcam https://portal1961.webcam-profi.de/
+# REMOVED (404) --- #: also_indoor: webcam https://portal1961.webcam-profi.de/
 #: osm_watch: way id="428279379" version="18" vvv
 #: last_checked: 2024-10-24 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-03-01 vvv
 #: XXX hier wird es einen asphaltierten West-Ost-Weg geben, evtl. mit Anschluss an den Traberweg?
 Parkanlage: genaue Lage? Wo werden die Wege sein?	?::inwork 17454,8747 17468,8722 17644,8719 17800,8689 17779,8603 17798,8598 17779,8509 17804,8503 17853,8731 17643,8769 17483,8768 17454,8747
@@ -10513,6 +10508,7 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_52_4789_4920_online.pdf (Benennung, Beate-Hahn-Straße)
 #: by: https://www.deutsches-architekturforum.de/thread/13357-ortsteile-im-pankower-norden-kleinere-projekte/?postID=753534#post753534
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/neue-namen-fuer-zwoelf-pankower-strassen_a408065 (Erwähnung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Widmung von öffentlichem Straßenland)
 #: XXX Bebauungsplan 3-41
 #: XXX beide Straßen noch nicht in Berlin.coords.data (PLZ laut LOR 13089)
 #: XXX Benennung: Beate-Hahn-Str. (öffentliche Straße, westlicher Strang) (früherer Vorschlag: Herta-Hammerbacher-Str.) (laut DPAG-Mitteilungsblatt PLZ=13089)
@@ -10657,6 +10653,7 @@ S-Bhf. Zehlendorf: neuer Zugang am Postplatz geplant	?::projected 644,2622 660,2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_16_1221_1304_online.pdf (Benennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_37_2409_2520_online.pdf (Einziehung von Straßenland)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_05_0453_0508_online.pdf (teileingezogen von Straßenland)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
 #: XXX fehlt bei Berlin.coords.data (laut LOR PLZ=13059)
 #: XXX geplante neue Privatstraße
 #: osm_watch: way id="1041951087" version="3"

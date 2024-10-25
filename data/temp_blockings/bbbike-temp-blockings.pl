@@ -36612,8 +36612,10 @@ EOF
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 # REMOVED (offen) --- #: XXX teilweise Freigabe am 3.6.2024 (voraussichtlich!) --- #: next_check: 2024-06-03 ---	q4::inwork 13996,16959 13974,16924 13870,16837
+#: osm_watch: way id="1316908799" version="1"
 	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
+#: osm_watch: way id="42990078" version="29"
 Schönstr. vor Kreuzungsbereich Amalienstr.	q4::inwork 13794,16773 13630,16629
 #: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
 Amalienstr.	q4::inwork 13722,16843 13794,16773 13848,16721
@@ -44453,7 +44455,7 @@ EOF
        text  => 'Prinzregentenstr.: Brückenarbeiten zwischen Handjerystr. und Wexstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 05.08.2024 07:00 bis 25.10.2024 18:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.33276,52.47726,05.08.2024,07:00 (bis 25.10.2024)
+#: source_id: viz2021:13.33276,52.47726,05.08.2024,07:00 (bis 25.10.2024) (inaktiv)
 #: also_indoor: traffic (H,G,B,T,W)
 # REMOVED (nein, nur der MIV) --- #: add_fragezeichen: Sind Radfahrer und Fußgänger von der Sperrung betroffen?
 	2::inwork 5630,7875 5632,8024
@@ -44741,6 +44743,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480271.php
+#: by: https://www.infravelo.de/projekt/am-eichgarten/ (3. Quartal 2024 - 4. Quartal 2024)
 #: XXX Dabei werden die Flächen für Rad- und Fußverkehr getrennt. Für den Radverkehr entsteht ein 3m breiter Weg (für beide Richtungen).
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: last_checked: 2024-10-09
@@ -45051,7 +45054,7 @@ EOF
        text  => 'Elgersburger Str.: Bauarbeiten zwischen Franzensbader Str. und Ilmenauer Str., evtl. sind auch Radfahrer betroffen, Bauarbeiten, vom 30.09.2024 07:00 bis 25.10.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.285727,52.482902,30.09.2024,07:00 (bis 25.10.2024)
+#: source_id: viz2021:13.285727,52.482902,30.09.2024,07:00 (bis 25.10.2024) (inaktiv)
 	q4::inwork 2423,8427 2541,8425
 EOF
      },
@@ -45204,7 +45207,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SCHWEDTER-2024
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-16 (mapillary)
+#: last_checked: 2024-10-23 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 10530,14452 10567,14337 10629,14299
 EOF
@@ -45225,7 +45228,7 @@ EOF
        text  => 'Klärwerkstr. : Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, vom 21.10.2024 08:00 bis 25.10.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.232905,52.528887,21.10.2024,08:00 (hier nur Kfz-Verkehr, bis 25.10.2024)
+#: source_id: viz2021:13.232905,52.528887,21.10.2024,08:00 (hier nur Kfz-Verkehr, bis 25.10.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848235265548054835
 #: by: https://pbs.twimg.com/media/GaL4zj2W0BITM9h?format=jpg&name=900x900 (keine Ausnahme für den Radverkehr)
 	q4::inwork; -1258,13552 -1284,13340
@@ -45315,18 +45318,20 @@ EOF
        text  => 'Maximiliankorso: Bauarbeiten zwischen Alemannenstr. und Ludolfingerplatz, Sperrung der Fahrbahn, vom 21.10.2024 08:02 bis 25.10.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.283668,52.634015,21.10.2024,08:02 (auch Radverkehr ist betroffen, bis 25.10.2024)
+#: source_id: viz2021:13.283668,52.634015,21.10.2024,08:02 (auch Radverkehr ist betroffen, bis 25.10.2024) (inaktiv)
 	q4::inwork 2216,25117 2164,25190 2083,25221 1960,25229 1857,25238 1738,25243
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Fontanestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, Ende der Bauarbeiten unbekannt',
+       until => $isodate2epoch->("2024-11-13 17:00:00"), # undef, # XXX
+       text  => 'Fontanestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis 13.11.2024',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: viz2021:13.517775,52.467433,09.07.2024,08:00 (bis 13.11.2024)
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2024-10-24
+#: next_check: 2024-11-13
 	q4::inwork; 18240,6845 18225,7004
 EOF
      },

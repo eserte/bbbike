@@ -1050,7 +1050,7 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,1552
 #: next_check_id: SCHOENHAUSERALLEE-2024
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2024-10-09 (mapillary)
+#: last_checked: 2024-10-23 (mapillary)
 noch nicht komplett markiert	RW3; 10917,15525 10902,15422
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
@@ -3058,6 +3058,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
 #: by: https://www.nd-aktuell.de/artikel/1173685.stadtentwicklung-the-fizz-in-berlin-zerstoert-ein-luxus-neubau-die-nachbarhaeuser.html (Baustopp)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id[inactive]: bvg2021:m43#BVG315176_0
@@ -4985,6 +4986,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 #: source_id: viz2021:13.244365,52.590839,06.11.2023,09:30 (bis 30.11.2023) (inaktiv)
 #: note: Asphalt sah älter aus
 #: note: stellenweise (etwa 100m) sollen Radfahrer absteigen
+#: XXX laut infravelo ist ein Radfahrstreifen sowie ein gemeinsamer Geh- und Radweg entstanden (wobei die Geografie nicht stimmt: nördliche/südliche Seite?)
 # REMOVED (früher) --- Gehweg für Radfahrer frei, asphaltiert, schmal	RW9;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
 #: osm_watch: way id="24403109" version="43"
 #: last_checked: 2023-03-08 (mapillary)
@@ -5264,6 +5266,7 @@ Gehweg für Radfahrer frei	RW1; -1095,15621 -1115,15717 -1095,15865 -1409,16106 -
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1847119160847069577
 #: by: https://pbs.twimg.com/media/GaGk1ZdWIAAqASH?format=jpg&name=large
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1497313.php
+#: by: https://www.berliner-woche.de/haselhorst/c-verkehr/arbeiten-wurden-puenktlich-beendet_a428191
 #: XXX werden die Radwege Richtung Süden während der Bauarbeiten zwischen Lünette und Burscheider Weg ausgebessert?
 #: next_check: 2024-10-21
 schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
@@ -8543,9 +8546,12 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8781 (Antrag)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8615 (Antrag - Antwort)
 #: by: https://berliner-abendblatt.de/berlin-news/diskussion-um-radweg-in-der-kantstrasse-id267484
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1497614.php (Radweg und Parkstreifen werden getauscht)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1497569.php
+#: by: https://berliner-abendblatt.de/berlin-news/loesung-im-streit-um-radweg-in-der-kantstrasse-id267845 (Umsetzung 2024 geplant)
 #: last_checked: 2024-10-12 (mapillary) vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2020-12-31 vvv
+#: next_check: 2024-12-31 vvv
 #: note: Kantstr. Richtung Osten
 # REMOVED (nicht mehr) --- #: note: abschnittsweise mit Baken abgesichert
 #: historical_note: früher war der westliche Abschnitt für Linienverkehr frei
@@ -8560,7 +8566,7 @@ provisorischer Radstreifen hinter den parkenden Autos	RW4; 5236,10994 5090,11007
 provisorischer Radstreifen	RW4; 4911,11018 4821,11026
 provisorischer Radstreifen hinter den parkenden Autos	RW4; 4821,11026 4709,11036 4532,11046 4415,11053 4289,11060 4100,11078 3975,11087
 provisorischer Radstreifen	RW4; 3975,11087 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093 2865,11086 2854,11085 2740,11076 2621,11065 2491,11061 2340,11056 2233,11049
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
