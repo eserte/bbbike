@@ -145,11 +145,13 @@ Stadtpark Steglitz: etwas älterer Parkweg	X 5890,4674 5841,4557 5836,4469 5787,4
 #: mud: 2020-03-14: keine Beeinträchtigungen	h=q0
 #: mud: 2023-12-26: einige feuchtere Stellen	h=q1-
 #: mud: 2024-05-29: einige größere Pfützen	h=q2
+#: mud: 2024-10-26: keine Beeinträchtigungen	h=q0
 Paul-Schwarz-Promenade: Parkweg	X 5018,3810 4947,3672 4910,3599 4822,3431
 # 
 #: mud: 2020-03-14: etwas feuchtere Oberfläche, aber keine Beeinträchtigungen	h=q0-,wet
 #: mud: 2023-12-26: etwas feuchtere Oberfläche, aber keine Beeinträchtigungen	h=q0-,wet
 #: mud: 2024-05-29: keine Beeinträchtigungen	h=q0
+#: mud: 2024-10-26: keine Beeinträchtigungen	h=q0
 Parkweg Schloßpark Lichterfelde: Parkweg	X 4910,3599 4858,3613 4815,3615 4754,3651 4723,3681 4694,3702 4657,3711 4617,3706 4611,3705 4603,3704
 # 
 #: mud: 2020-03-15: keine Beeinträchtigungen	h=q0
@@ -173,10 +175,7 @@ Hauffallee - Blankenburger Pflasterweg: fester Sandweg	X 14284,19451 14328,19527
 # REMOVED (neues Pflaster) --- #: mud: 2020-03-15: viele Pfützen --- #: mud: 2023-04-12: viele Pfützen	h=q3,wet	by=mapillary --- Mauerpark, über den Gleimtunnel: Sandweg mit Kuhlen	X 10050,15824 10061,15775 10045,15754 10071,15684
 # REMOVED (hier nicht mehr, neues Pflaster) --- Mauerpark, über den Gleimtunnel: Sandweg mit Kuhlen	X 10071,15684 10079,15661
 # REMOVED (neu gemachte wassergebundene Decke, mittlerweile problemlos) --- #: by: mapillary (2023-04-12) --- #: mud: 2023-04-12: viele Pfützen	h=q3,wet --- Mauerpark, über den Gleimtunnel: Sandweg mit Kuhlen	X 10091,15630 10155,15473
-# 
-#: mud: 2023-04-01: viele große Pfützen, matschig	h=q3-,wet
-#: mud: 2024-02-13: einige Pfützen	h=q3+,wet
-(Schwedter Steg - Bärbel-Bohley-Ring/Lichtburgring): wassergebundene Decke, bei Regen große Pfützen	X 10064,15920 9996,15901 9997,15884
+# REMOVED (neues Pflaster) --- #: mud: 2023-04-01: viele große Pfützen, matschig	h=q3-,wet --- #: mud: 2024-02-13: einige Pfützen	h=q3+,wet --- (Schwedter Steg - Bärbel-Bohley-Ring/Lichtburgring): wassergebundene Decke, bei Regen große Pfützen	X 10064,15920 10051,15916 9996,15901 9997,15884
 # 
 #: note: auf der westlichen Wegseite (Richtung Süden) üblicherweise etwas trockener
 #: mud: 2020-03-17: keine Beeinträchtigungen	h=q0

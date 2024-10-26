@@ -36,13 +36,13 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: last_checked: 2024-10-23
+#: last_checked: 2024-10-26
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 #: osm_watch: note 4452740 1
-#: last_checked: 2024-10-23 vvv
+#: last_checked: 2024-10-25 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -392,7 +392,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-10-20 vvv
+#: last_checked: 2024-10-25 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -515,7 +515,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-10-18 (mapillary) vvv
+#: last_checked: 2024-10-25 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -527,10 +527,10 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: next_check_id ^^^
 #: priority ^^^
 # 
-#: add_fragezeichen: Ist die Charlottenstr. ab Dorotheenstr. noch immer gesperrt?
-#: last_checked: 2024-10-05 (mapillary)
-#: check_frequency: 21d
-Charlottenstr.: Fahrbahn an der Dorotheenstr. einige Meter gesperrt	q3::inwork; 9454,12558 9462,12481
+# REMOVED --- #: add_fragezeichen: Ist die Charlottenstr. ab Dorotheenstr. noch immer gesperrt?
+# REMOVED --- #: last_checked: 2024-10-25
+# REMOVED --- #: check_frequency: 21d
+# REMOVED --- Charlottenstr.: Fahrbahn an der Dorotheenstr. einige Meter gesperrt	q3::inwork; 9454,12558 9462,12481
 # 
 # REMOVED (scheint fertig zu sein (daf)) --- #: next_check_id: MUSEUMSINSEL-2020 --- #: next_check_id: ZEUGHAUS-2014 --- #: priority: #A --- #: last_checked: 2021-06-23 (daf) --- #: check_frequency: 14d --- Schinkelplatz: Fahrbahn wird neu gemacht	q4::inwork 9984,12426 9990,12404 9996,12372
 # REMOVED (so gut wie fertig; Radfahrer können recht gut passieren) --- #: source_id: INKO_093369 --- #: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3 --- # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben? --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html --- #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7 --- #: last_checked: 2015-07-20 --- #: check_frequency: 60d --- Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
@@ -864,10 +864,11 @@ Wilhelm-Busch-Str.: Bauarbeiten, Fahrbahn ist gesperrt	q4::inwork 13205,8126 133
 #: source_id: viz2021:13.428457,52.493713,05.09.2024,07:00 (bis 06.12.2024)
 #: source_id: viz2021:13.42867,52.49391,05.09.2024,19:00 (bis 06.12.2024) (inaktiv)
 #: XXX geschützte Fahrradspuren werden realisiert
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-26
 #: check_frequency: 30d
 #: next_check: 2024-12-06
-Hobrechtbrücke: getrennter Geh- und Radweg während der Bauarbeiten	q3::inwork 12085,9778 12116,9825
+#Hobrechtbrücke: getrennter Geh- und Radweg während der Bauarbeiten	q3::inwork 12085,9778 12116,9825
+Hobrechtbrücke: gemeinsamer Geh- und Radweg in der Fahbahnmitte während der Bauarbeiten	q3::inwork 12085,9778 12116,9825
 # 
 # REMOVED (beendet) --- #: XXX Wildenbruchstraße (Neukölln) in beiden Richtungen zwischen Harzer Straße und Karl-Kunger-Straße: geplatzte Wasserleitung, Straße gesperrt, vom 11.03.2024 10:11 --- #: source_id: viz2021:13.44635,52.48639,11.03.2024,10:11 (inaktiv) --- #: source_id: bvg2021:m43#BVG344367_0 --- #: source_id[inactive]: bvg2021:m43#BVG344369_0 --- #: source_id: viz2021:13.44635,52.48639,18.03.2024,07:28 (bis 28.03.2024) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767117988371513569 --- #: last_checked: 2024-03-24 --- #: check_frequency: 14d --- #: next_check: 2024-03-28 --- Wildenbruchstr.: Wasserrohrbruch, kurzer Abschnitt (30-40m) der Fahrbahn gesperrt, Bordsteine	q2::inwork 13333,9017 13491,9201
 # REMOVED (vermutlich frei befahrbar) --- #: next_check_id: WESER-2021 --- #: osm_watch: way id="1050315263" version="5" --- #: osm_watch: way id="996616281" version="10" --- #: osm_watch: way id="996616282" version="9" --- #: osm_watch: way id="1100696455" version="1" --- #: also_indoor: traffic (B) vvv --- #: last_checked: 2022-12-04 vvv --- #: check_frequency: 7d vvv
@@ -1199,7 +1200,7 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2024-10-16 vvv
+#: last_checked: 2024-10-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1852,9 +1853,9 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/wellenbad-am-spreewaldplatz-schliesst-ende-juni_a374657 (bis Januar 2027)
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
-#: osm_watch: note 4103526 1
+#: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-26
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -1924,7 +1925,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # 
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-19 (mapillary)
+#: last_checked: 2024-10-26
 #: check_frequency: 14d
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 
@@ -3626,7 +3627,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-10-23
+#: last_checked: 2024-10-25
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4904,6 +4905,7 @@ Kurfürstenstr. - Pohlstr.: einige Fußgänger	q1 7432,10546 7450,10625
 #: XXX_prog BS an der Schwarzmeerstr. (ansonsten q1)
 (Kolonie Märkische Aue - Schwarzmeerstr./Am Lindenplatz): einige Fußgänger, Bordstein	q2 17915,10866 17856,10879
 # 
+#: note: Nur die Radwegführung zwischen Manteuffelstr. und Stolbergstr. ist explizit erlaubt, andere Wege im Bosepark dürfen nicht befahren werden.
 Bosepark: gemeinsamer Geh- und Radweg	q1 8862,6467 8823,6458
 # 
 (Weg entlang der Straßenbahnstrecke): Grünanlage, einige Fußgänger	q1 18828,3196 18836,3221 18834,3315 18833,3388 18835,3562 18851,3598
@@ -4916,7 +4918,8 @@ Waiblinger Weg: Gehweg, Bordstein	q3- 17743,5260 17771,5278
 #: XXX_prog BS (ansonsten entfernen)
 (Dahlienstr. - Müggelschlößchenweg): Bordstein (Bushaltestelle) oder Umweg	q3 24098,4310 24103,4260
 # 
-(Schwedter Steg - Bärbel-Bohley-Ring/Lichtburgring): einige Fußgänger	q2 10064,15920 9996,15901 9997,15884
+#: note: ausgeschildert: Fußgänger, Radfahrer frei, Schritttempo
+(Schwedter Steg - Bärbel-Bohley-Ring/Lichtburgring): einige Fußgänger	q2 10064,15920 10051,15916 9996,15901 9997,15884
 # 
 #: XXX_prog BS (vermutlich an beiden Seiten, ansonsten q3)
 Hubertusallee: Fußgänger, Bordsteine	q4 2107,8407 2126,8426
@@ -5181,6 +5184,14 @@ Am Mühlenberg: einige Fußgänger	q1 6100,8681 6101,8732
 Rummelsburger Seeblick: Fußgänger	q3 14927,10807 14918,10769 14909,10732
 # 
 (Karl-Marx-Str. - Richardstr.): Fußgänger	q4 12834,8005 12926,8039
+# 
+Suttnerstr.: einige Fußgänger	q2+ 7728,5866 7733,5893 7735,5960
+# 
+#: next_check_id: HINDENBURGDAMM-2022
+#: XXX nach den Bauarbeiten prüfen und vielleicht wiederherstellen: Gehweg, einige Fußgänger, q2 
+#: last_checked: 2024-10-26
+#: next_check: 2025-11-30
+(Wolfensteindamm - Händelplatz): Baustelleneinrichtung, Ausweichen auf Gehweg	q3 4543,4820 4517,4853
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
@@ -5943,7 +5954,8 @@ Seeweg (Weißensee): Fußgänger	q2 14610,16522 14581,16529 14510,16549
 Kühleweinstr.: Schule	q1 8014,17468 7998,17564
 # 
 #: by: Achim Stenzel:
-(Weg an der Markuskirche): viele Fußgänger, Bordsteinkanten	q3 6342,4783 6288,4704
+#: confirmed_by: srt
+(Weg an der Markuskirche): Grünanlage, viele Fußgänger, Bordsteinkanten	q3 6342,4783 6280,4709
 # 
 #: by: Torsten Franik:
 # REMOVED (Radfahrer und Fußgänger sind in der Unterführung getrennt) --- Allee der Kosmonauten - Biesdorfer Promenade: Fußgänger	q1 19819,13606 19826,13444
@@ -7022,8 +7034,10 @@ Frommpromenade: enge Straße	q0- 5463,20461 5350,20495 5257,20551
 #: corrected_by: srt/policy (q2 -> q0-)
 Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 # 
+#: note: Wobei: bei der Sperrung des Teltowkanaluferwegs war hier die offizielle Umleitung für Fußgänger und Radfahrer
 #: by: Kay Leonhardt:
-Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4317,2638 4659,3065 4866,3371
+#: confirmed_by: srt
+Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4659,3065 4866,3371
 # 
 #: by: Karsten Denkler vvv
 #: corrected_by: srt (q1 -> q0-)

@@ -166,7 +166,32 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3659027-3496862-umwelt-und-weihnachtsmarkt-in-der-sophie.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001302-955635-weihnachts-und-umweltmarkt-in-der-sophie.html
+#: by: https://www.weihnachtsmarkt-sophienstrasse.de/ (Absage 2021)
+#: tempex: before(1st_advent,1d) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1732834800,
+         'id' => 166,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2024 - 01.12.2024)',
+         'type' => 'gesperrt',
+         'until' => 1733093999
+       },
        undef,
        undef,
        undef,
@@ -452,7 +477,32 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1145105.php (Absage 2021)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1245294.php
+	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1732921200,
+         'id' => 417,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 01. Dezember 2024 von 13 bis 19 Uhr)',
+         'type' => 'gesperrt',
+         'until' => 1733079600
+       },
        undef,
        undef,
        undef,
@@ -2410,13 +2460,17 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        {
          'data' => '#: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-16
-#: check_frequency: 14d
-	q3::inwork 7101,9027 7308,9163
+#: note: Baustellenbereich etwa 80m in der Belziger Str. und 60m in der Vorbergstr.
+#: note: Halteverbotsschilder bis 2024-11-30
+#: XXX Auf der Südseite der Vorbergstr. entsteht ein Zweirichtungsradweg.
+#: last_checked: 2024-10-26
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2024-11-30
+	q3::inwork 7101,9027 7308,9163 7363,9152
 ',
          'from' => undef,
          'id' => 1990,
-         'text' => 'Belziger Str.: Umbauarbeiten an der Einmündung Vorbergstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Belziger Str./Vorbergstr.: Umbauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -2427,7 +2481,47 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html
+#: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.1016256.php (finder 2020 nicht statt)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1147421.php (2021 abgesagt)
+#: by: https://berliner-abendblatt.de/2021/11/17/berliner-weihnachtsmaerkte-werden-abgesagt/
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
+#: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1383211.php
+# REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
+#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
+	2::xmas 13416,7712 13424,7680
+	2::xmas 13416,7712 13378,7695 13288,7653
+	2::xmas 13424,7680 13417,7654 13392,7648 13295,7627
+	2::xmas 12972,7602 13100,7626 13130,7633 13174,7644
+	2::xmas 13179,7613 13174,7644
+	2::xmas 13179,7613 13295,7627
+	2::xmas 13288,7653 13295,7627
+	2::xmas 13288,7653 13174,7644
+	2::xmas 13288,7653 13278,7673 13245,7742
+#: tempex ^^^
+',
+         'from' => 1733353200,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (06.12.2024 - 08.12.2024)',
+         'type' => 'gesperrt',
+         'until' => 1733698799
+       },
        undef,
        undef,
        undef,
@@ -3262,13 +3356,174 @@ Slabystr.: einige Meter der Fahrbahn vor der Ostendstr. gesperrt (Baucontainer)	
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: tempex: before(2nd_advent,sa) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1733439600,
+         'id' => 2515,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (07.12.2024 - 08.12.2024)',
+         'type' => 'gesperrt',
+         'until' => 1733698799
+       },
+       {
+         'data' => '#: tempex: before(3rd_advent,sa) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1734044400,
+         'id' => 2516,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (14.12.2024 - 15.12.2024)',
+         'type' => 'gesperrt',
+         'until' => 1734303599
+       },
+       {
+         'data' => '#: tempex: before(4th_advent,sa) - +1d
+#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1734649200,
+         'id' => 2517,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              16,
+                              'months',
+                              12,
+                              'start',
+                              '2024-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.2024 - 22.12.2024)',
+         'type' => 'gesperrt',
+         'until' => 1734908399
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/ (2021 abgesagt)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html (Termin 2022 nicht bekannt)
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/?date=20221103
+#: tempex: 1st_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1732964400,
+         'id' => 2518,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 14,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 01. Dezember 2024, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1733076000
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: tempex: 2nd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1733569200,
+         'id' => 2519,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 8. Dezember 2024, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1733680800
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: tempex: 3rd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1734174000,
+         'id' => 2520,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 15. Dezember 2024, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1734285600
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: tempex: 4th_advent & T12-T19
+#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1734771600,
+         'id' => 2521,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              12,
+                              'start',
+                              '2024-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2024, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1734883200
+       },
        undef,
        undef,
        undef,
@@ -3313,7 +3568,32 @@ Slabystr.: einige Meter der Fahrbahn vor der Ostendstr. gesperrt (Baucontainer)	
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
+#: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
+#: source_id: IM_020883 (inaktiv)
+#: source_id: 2147345257 (inaktiv)
+# note: früher Alt-Rudow zwischen Köpenicker Str. und Krokusstr.:	2::xmas 16849,1437 16805,1488 16610,1715
+	2::xmas 16610,1715 16767,1831
+',
+         'from' => 1734087600,
+         'id' => 2529,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 14.12.2024 und 15.12.2024',
+         'type' => 'gesperrt',
+         'until' => 1734292800
+       },
        undef,
        undef,
        undef,
@@ -4675,7 +4955,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-07-24 (mapillary)
+#: last_checked: 2024-10-26
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -4743,7 +5023,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="362719487" version="12"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2024-10-01 (daf)
+#: last_checked: 2024-10-25
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	q4::inwork 6021,10405 6116,10688
@@ -5283,29 +5563,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: WESER-2021
-# REMOVED (hier nicht mehr) --- #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022) --- #: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv --- #: osm_watch: way id="799282063" version="8" --- #: osm_watch: way id="36738531" version="34" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 30d vvv ---	q4::inwork; 13217,8493 13384,8354 --- #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen --- q2::inwork; 13384,8354 13217,8493 --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1349592.php (ab Winter 2023 auch Bauarbeiten im Abschnitt zwischen Fulda- und Wildenbruchstraße)
-#: osm_watch: way id="1246171055" version="2"
-#: last_checked: 2024-10-09 vvv
-#: check_frequency: 14d vvv
-#: osm_watch: note 4090527 5
-# REMOVED --- zwischen Wildenbruchstr. und Elbestr.	q2::inwork 13033,8628 12881,8750
-#: osm_watch: way id="36738527" version="45"
-zwischen Elbestr. und Fuldastr.	q3::inwork 12881,8750 12740,8862
-# REMOVED (weitgehend wieder frei) --- Elbestr./Weserstr.: Umwege	q3::inwork 12822,8675 12881,8750 12954,8840
-#: check_frequency ^^^
-#: last_checked ^^^
-# REMOVED --- #: next_check: 2023-07-31
-# REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
-',
-         'from' => 1690668000,
-         'id' => 3538,
-         'text' => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn noch nicht offiziell eröffnet, enger gemeinsamer Rad- und Gehweg auf dem Hochbord (Stand Ende September 2024)',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5589,7 +5847,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2024-09-27
+#: last_checked: 2024-10-25
 #: check_frequency: 120d
 #: next_check: 2025-03-15
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -5714,8 +5972,9 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
          'data' => '#: url: https://nowkoelln.de/#wann
 #: note: Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
 #: note: Die Flohmarktsaison 2024 startet am 24. März 2024 (Anmeldung ab 12.03.2024)
+#: note: "Unsere Winterpause 2024 beginnt nach dem letzten Termin am 01. Dezember 2024. Danach sind wir wieder ab März 2025 am Start."
 #: XXX Wann ist Saisonende?
-#: next_check: 2024-11-01
+#: next_check: 2024-12-02
 	q4::temp:clock 12412,9610 12250,9691
 ',
          'from' => 1711062000,
@@ -7015,7 +7274,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="1"
-#: last_checked: 2024-10-13 (architektur-urbanistik)
+#: last_checked: 2024-10-25
 #: check_frequency: 90d
 #: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801
@@ -7409,7 +7668,7 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 #: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt. 2024-10-09, 2024-10-18: die Arbeiten sind nach Süden gewandert
 #: also_indoor: traffic (ex-H[falsch],re-G[zuviel],W[zuviel],T,B)
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße beendet?
-#: last_checked: 2024-10-18
+#: last_checked: 2024-10-26
 #: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 ',
@@ -7613,7 +7872,7 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr
-#: last_checked: 2024-10-18 (mapillary)
+#: last_checked: 2024-10-25
 #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 ',
@@ -7658,7 +7917,7 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: XXX Nach den Bauarbeiten vielleicht bessere Qualität
 #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen.
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden? vvv
-#: last_checked: 2024-10-09 vvv
+#: last_checked: 2024-10-26 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="26158804" version="25"
 Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -7711,10 +7970,12 @@ zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwor
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (G,B,T,W)
 #: add_fragezeichen: Ist der Teltowkanaluferweg weiterhin komplett gesperrt? vvv
-#: last_checked: 2024-10-09 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2024-10-26 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2024-12-16 vvv
 Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
+#: osm_watch: way id="5363434" version="26"
+#: osm_watch: note 4442541 2
 #: note: eigentlich q3-::inwork
 Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
 Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
@@ -7789,12 +8050,12 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-06 (mapillary)
+#: last_checked: 2024-10-26
 	2::inwork 11275,8387 11282,8428 11279,8489 11259,8591
 ',
          'from' => undef,
          'id' => 4126,
-         'text' => 'Hasenheide: ein Abschnitt des Hauptwegs kann wegen Bauarbeiten gesperrt sein (Stand Anfang Oktober 2024: Durchfahrt zeitweise möglich)',
+         'text' => 'Hasenheide: ein Abschnitt des Hauptwegs kann wegen Bauarbeiten gesperrt sein (Stand Ende Oktober 2024: Durchfahrt zeitweise möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7802,9 +8063,9 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-10-23
-#: check_frequency: 30d
-#: next_check: 2024-10-31
+#: last_checked: 2024-10-26
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
 ',
          'from' => 1722618239,
@@ -7970,7 +8231,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: by: https://www.infravelo.de/projekt/am-eichgarten/ (3. Quartal 2024 - 4. Quartal 2024)
 #: XXX Dabei werden die Flächen für Rad- und Fußverkehr getrennt. Für den Radverkehr entsteht ein 3m breiter Weg (für beide Richtungen).
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-26
 #: next_check: 2024-12-01
 	2::inwork 6007,4340 6147,4329 6210,4325
 ',
@@ -8020,7 +8281,7 @@ Kienitzer Str.	2::inwork 11490,7737 11504,7738
          'data' => '#: note: laut rbb bis 19.01.2025
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (W,G,B,T,W)
-#: last_checked: 2024-08-30
+#: last_checked: 2024-10-25
 #: check_frequency: 90d
 #: next_check: 2025-01-19
 Marburger Str.	q3::inwork 5802,10621 5907,10821
@@ -8137,9 +8398,11 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: XXX Wie ist die Qualität nach den Bauarbeiten? Kann der mudways-Eintrag entfernt werden?
-#: last_checked: 2024-09-25
-	2::inwork 10064,15920 9996,15901
+# REMOVED (eingetragen) --- #: XXX Wie ist die Qualität nach den Bauarbeiten? Kann der mudways-Eintrag entfernt werden?
+#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=768832#post768832
+#: last_checked: 2024-10-26 (daf)
+#: check_frequency: 7d
+	2::inwork 10064,15920 10051,15916 9996,15901
 ',
          'from' => undef,
          'id' => 4172,
@@ -8163,8 +8426,9 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'until' => 1733007600
        },
        {
-         'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends; am 2024-10-07 (Mo) mittags sah es hier nach Bauarbeiten aus, 2024-10-16 (Mi) mittags ebenso
-#: last_checked: 2024-10-18
+         'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
+#: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
+#: last_checked: 2024-10-26
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
@@ -8309,7 +8573,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-25
 	2::inwork 6633,11882 6685,11954
 ',
          'from' => undef,
@@ -8449,6 +8713,26 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'text' => 'Fontanestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis 13.11.2024',
          'type' => 'handicap',
          'until' => 1731513600
+       },
+       {
+         'data' => '#: by: https://www.tagesspiegel.de/berlin/nach-wasserrohrbruch-in-berlin-grunewaldstrasse-bleibt-tagelang-gesperrt--65-wohnungen-ohne-wasser-12349757.html
+#: by: https://www.rbb24.de/panorama/beitrag/2024/09/wasserrohrbruch-steglitz-berlin-sperrungen-reparatur.html
+#: by[nocache]: https://www.bz-berlin.de/berlin/steglitz-zehlendorf/wasserrohrbruch-steglitz
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1833484561985990812
+#: by[nocache]: https://x.com/Aintschie/status/1833937985588650466 (etwa 100m betroffen?)
+#: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
+#: source_id: bvg2024:x83#HIM_FREETEXT_238226
+#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025)
+#: osm_watch: note 4441243 3
+#: osm_watch: note 4441280 1
+#: note: etwa 80m der Fahrbahn sind gesperrt, nur der nordöstliche Bürgersteig ist offen
+	q4::inwork 4671,5697 4520,5793
+',
+         'from' => 1726092000,
+         'id' => 4203,
+         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, vom 12.09.2024 bis 31.01.2025',
+         'type' => 'handicap',
+         'until' => 1738364340
        }
      
 );
