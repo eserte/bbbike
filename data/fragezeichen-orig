@@ -3148,12 +3148,13 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/bauarbeiten-auf-der-weserstrasse_a401051 (zwischen Innstr. und Wildenbruchstr. Restarbeiten bis Ende 2023, Markierungsarbeiten im Frühjahr 2024)
 #: by: https://www.berliner-woche.de/bezirk-neukoelln/c-verkehr/was-in-diesem-jahr-geplant-ist_a414779 (Fertigstellung zwischen Fuldastr. und Innstr. bis November 2023)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/im-september-soll-neuer-radstreifen-fertig-sein_a422155 (Erwähnung, "in rund drei Jahren" (ab Sommer 2024))
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/umbau-der-weserstrasse-bis-zur-innstrasse-abgeschlossen_a428161 (letzte Etappe 2027)
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
 #: osm_watch: way id="36738527" version="45"
 #: last_checked: 2024-10-19 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2024-12-31
+#: next_check: 2027-12-31
 # REMOVED (hier in Realisierung, andere fragezeichen-Einträge existieren) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (3. Bauabschnitt (Innstr. - Ederstr.): bis Ende 2025)
@@ -5796,7 +5797,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="21"
-#: last_checked: 2024-09-16
+#: last_checked: 2024-10-27
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -7100,7 +7101,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: way id="1273991435" version="3"
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht
-#: last_checked: 2024-10-23
+#: last_checked: 2024-10-27
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-11-30
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7295,7 +7296,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2024-10-25
+#: last_checked: 2024-10-27
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -8460,6 +8461,7 @@ Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?	? 7537,78
 #: by: https://nachgefragt.bvg.de/altstadt-koepenick/
 #: by: https://nachgefragt.bvg.de/wp-content/uploads/Alt-Koepenick-Praes.-Final-komprimiert.pdf (detaillierte Bauabschnitte (Zeit, Ort); für Radfahrer vermutlich relevant: Alt-Köpenick, Start im Feb 2025)
 #: source_id: bvg2024:165#HIM_FREETEXT_244204 (ab 2024-10-28, für vorbereitende Arbeiten?)
+#: source_id: viz2021:13.575981,52.444348,28.10.2024,07:00 (vermutlich vorbereitende Gleisbauarbeiten in der Müggelheimer Str., bis 24.11.2024)
 #: last_checked: 2024-10-24
 #: next_check: 2025-02-01
 Altstadt Köpenick: Bauarbeiten an Straßenbahngleisen und Wasserleitungen geplant, wird es zu Einschränkungen für Radfahrer kommen?	?::projected 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
@@ -10939,7 +10941,7 @@ Bebauungsplan 8-102 ("Ehemaliger NME-Bahnhof Rudow"): wird es hier eine Wegverbi
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/neue-namen-fuer-zwoelf-pankower-strassen_a408065 (Erwähnung)
 #: XXX wird die KGA an dieser Stelle aufgegeben?
 #: XXX Privatstraße soll "Süßdoldenweg" heißen
-#: osm_watch: way id="293943813" version="4"
+#: osm_watch: way id="293943813" version="6"
 #: last_checked: 2024-03-25 (mapillary)
 #: check_frequency: 180d
 Süßdoldenweg: früher Planstraße H, vermutlich entsteht hier die neue Straße, genaue Lage, Qualität?	? 9278,21239 9277,21194 9249,21138

@@ -28783,7 +28783,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-10-16
+#: last_checked: 2024-10-25 (mapillary)
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -44700,8 +44700,10 @@ EOF
        data  => <<EOF,
 #: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (kein Endedatum)
 #: by: https://www.berlin-usedom-radweginfo.de/ (bis Ende 2024)
-#: osm_watch: way id="105827200" version="11"
-#: osm_watch: note 4244536 2
+#: osm_watch: way id="105827200" version="12"
+#: osm_watch: way id="105827213" version="11"
+#: osm_watch: way id="1328520022" version="1"
+#: osm_watch: note 4244536 3
 #: last_checked: 2024-08-23
 #: next_check: 2024-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -45171,7 +45173,9 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_242095
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-10-23
+#: last_checked: 2024-10-25 (mapillary)
+#: check_frequency: 14d
+#: next_check: 2024-11-26
 Fischerinsel	q4::inwork; 10578,11969 10512,12039
 EOF
      },
@@ -45227,6 +45231,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.45732,52.433835,21.10.2024,07:00 (bis 28.10.2024)
+#: source_id: viz2021:13.457922,52.433673,28.10.2024,09:00 (andere Fahrtrichtung; bis 01.11.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848227718867112023
 #: by: https://pbs.twimg.com/media/GaLvGf4WEAA0_9g?format=jpg&name=medium (bei den eigentlichen Bauarbeiten in der Fritz-Erler-Allee ist der Gehweg für Radfahrer frei)
 	q4::inwork; 14274,3129 14215,3031 14072,3108 14126,3225
@@ -45357,10 +45362,20 @@ EOF
 #: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
 #: source_id: bvg2024:x83#HIM_FREETEXT_238226
 #: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025)
-#: osm_watch: note 4441243 3
+#: osm_watch: note 4441243 4
 #: osm_watch: note 4441280 1
 #: note: etwa 80m der Fahrbahn sind gesperrt, nur der nordöstliche Bürgersteig ist offen
 	q4::inwork 4671,5697 4520,5793
+EOF
+     },
+     { from  => 1730012400, # 2024-10-27 08:00
+       until => 1730988000, # 2024-11-07 15:00
+       text  => 'Machnower Str.: Brückenarbeiten, Sperrung montags bis donnerstags 08:00-15:00 Uhr, vom 28.10.2024 08:00 bis 07.11.2024 15:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.144073,52.397109,28.10.2024,08:00 (bis 07.11.2024)
+#: note: nur Kfz- und Radverkehr sind in der VIZ-Meldung erwähnt, unklar, ob Fußgänger hier trotzdem durch können
+	2::inwork -6998,-1320 -7020,-1275
 EOF
      },
     );
