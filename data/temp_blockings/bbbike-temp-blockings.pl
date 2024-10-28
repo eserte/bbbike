@@ -45375,7 +45375,20 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.144073,52.397109,28.10.2024,08:00 (bis 07.11.2024)
 #: note: nur Kfz- und Radverkehr sind in der VIZ-Meldung erwähnt, unklar, ob Fußgänger hier trotzdem durch können
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1850774496149475425
+#: by: https://pbs.twimg.com/media/Gav4fQdXYAE2q0T?format=jpg&name=medium (Sicherungsposten lassen wohl Fußgänger bei Bedarf durch)
 	2::inwork -6998,-1320 -7020,-1275
+EOF
+     },
+     { from  => 1730097723, # 2024-10-28 07:42
+       until => $isodate2epoch->("2024-11-29 17:00:00"),
+       text  => 'Dorotheenstr.: Sperrung der Fahrbahn zwischen Universitätsstr. und Hegelplatz, voraussichtlich bis Ende November 2024',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1850788234743165358
+#: by: https://pbs.twimg.com/media/Ga9SEpkXgAAGJFy?format=jpg&name=large
+#: source_id: viz2021:13.392876,52.519175,28.10.2024,07:29 (bis 29.11.2024)
+	q4::inwork 9581,12588 9681,12601
 EOF
      },
     );

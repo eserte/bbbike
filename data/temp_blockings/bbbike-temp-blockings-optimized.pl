@@ -8030,19 +8030,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/8521846-2229501-koepenicker-herbstspektakel.html
-	2::temp 22071,4501 22057,4531
-	2::temp 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
-	2::temp 22074,4664 22138,4642
-	2::temp 22153,4840 22153,4861
-',
-         'from' => 1729720800,
-         'id' => 4120,
-         'text' => 'Köpenicker Herbstspektakel: Luisenhain kann vom 25. Oktober 2024 bis 27. Oktober 2024 gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => 1730069999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8742,6 +8730,8 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
        {
          'data' => '#: source_id: viz2021:13.144073,52.397109,28.10.2024,08:00 (bis 07.11.2024)
 #: note: nur Kfz- und Radverkehr sind in der VIZ-Meldung erwähnt, unklar, ob Fußgänger hier trotzdem durch können
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1850774496149475425
+#: by: https://pbs.twimg.com/media/Gav4fQdXYAE2q0T?format=jpg&name=medium (Sicherungsposten lassen wohl Fußgänger bei Bedarf durch)
 	2::inwork -6998,-1320 -7020,-1275
 ',
          'from' => 1730012400,
@@ -8749,6 +8739,18 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'text' => 'Machnower Str.: Brückenarbeiten, Sperrung montags bis donnerstags 08:00-15:00 Uhr, vom 28.10.2024 08:00 bis 07.11.2024 15:00',
          'type' => 'gesperrt',
          'until' => 1730988000
+       },
+       {
+         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1850788234743165358
+#: by: https://pbs.twimg.com/media/Ga9SEpkXgAAGJFy?format=jpg&name=large
+#: source_id: viz2021:13.392876,52.519175,28.10.2024,07:29 (bis 29.11.2024)
+	q4::inwork 9581,12588 9681,12601
+',
+         'from' => 1730097723,
+         'id' => 4205,
+         'text' => 'Dorotheenstr.: Sperrung der Fahrbahn zwischen Universitätsstr. und Hegelplatz, voraussichtlich bis Ende November 2024',
+         'type' => 'handicap',
+         'until' => 1732896000
        }
      
 );
