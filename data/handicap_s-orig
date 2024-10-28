@@ -101,7 +101,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-10-24
+#: last_checked: 2024-10-28
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -833,13 +833,13 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # REMOVED --- #: osm_watch: way id="1317391078" version="2"
 #: XXX comments_kfzverkehr-Einträge danach anpassen
 #: XXX evtl. gibt es vorher Arbeiten am Stromnetz siehe auch Fragezeichen zu "Umspannwerk Richardstraße"
-#: last_checked: 2024-10-19 (mapillary) vvv
+#: last_checked: 2024-10-28 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q4+::inwork 13236,7970 13246,7961
 # REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q3::inwork 13246,7961 13309,7911
 # REMOVED (hier nicht mehr) --- Wörnitzweg: Bauarbeiten, Fahrbahn ist gesperrt	q4+::inwork 13246,7961 13312,8026
 #: osm_watch: way id="155605363" version="21"
-Wilhelm-Busch-Str.: Bauarbeiten, Fahrbahn ist gesperrt	q4::inwork 13205,8126 13312,8026 13376,7970
+Wilhelm-Busch-Str.: Bauarbeiten, Fahrbahn ist gesperrt	q3::inwork 13205,8126 13312,8026 13376,7970
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1930,7 +1930,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # 
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-26
+#: last_checked: 2024-10-28
 #: check_frequency: 14d
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 

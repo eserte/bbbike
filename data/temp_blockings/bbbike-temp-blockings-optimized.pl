@@ -7704,12 +7704,12 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-10-12 (mapillary) vvv
+#: last_checked: 2024-10-28 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2024-11-29 vvv
+# REMOVED --- #: next_check: 2024-11-29 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
-#: next_check ^^
+# REMOVED --- #: next_check ^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -7788,7 +7788,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        undef,
        {
          'data' => '#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
-#: last_checked: 2024-09-27 vvv
+#: last_checked: 2024-10-28 vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
 Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
@@ -8051,7 +8051,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-10-26
+#: last_checked: 2024-10-28
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8602,17 +8602,19 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.45732,52.433835,21.10.2024,07:00 (bis 28.10.2024)
+         'data' => '#: source_id: viz2021:13.45732,52.433835,21.10.2024,07:00 (bis 28.10.2024) (inaktiv)
 #: source_id: viz2021:13.457922,52.433673,28.10.2024,09:00 (andere Fahrtrichtung; bis 01.11.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848227718867112023
 #: by: https://pbs.twimg.com/media/GaLvGf4WEAA0_9g?format=jpg&name=medium (bei den eigentlichen Bauarbeiten in der Fritz-Erler-Allee ist der Gehweg für Radfahrer frei)
-	q4::inwork; 14274,3129 14215,3031 14072,3108 14126,3225
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1850824827978084537
+#: by: https://pbs.twimg.com/media/Gaul6hXXYAEdOX8?format=jpg&name=large (kurzer Abschnitt Gehweg für Radfahrer frei)
+	q4::inwork; 14126,3225 14072,3108 14215,3031 14274,3129
 ',
          'from' => 1729400400,
          'id' => 4192,
-         'text' => 'Zadekstr., Uhuweg, Otto-Wels-Ring: Einbahnstraßenregelung, vom 21.10.2024 07:00 bis 28.10.2024 17:00',
+         'text' => 'Otto-Wels-Ring, Uhuweg, Zadekstr.: Einbahnstraßenregelung, bis 01.11.2024',
          'type' => 'handicap',
-         'until' => 1730131200
+         'until' => 1730476800
        },
        undef,
        {
@@ -8751,6 +8753,18 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'text' => 'Dorotheenstr.: Sperrung der Fahrbahn zwischen Universitätsstr. und Hegelplatz, voraussichtlich bis Ende November 2024',
          'type' => 'handicap',
          'until' => 1732896000
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1497857.php
+Teutonenstr.	q4::inwork -3519,2180 -3610,2237 -3740,2295
+#: note: vermutete Einbahnstraßenrichtung
+Cimbernstr.: Einbahnstraße	q4::inwork; -3503,1988 -3544,2003 -3643,2061 -3703,2137 -3753,2241
+',
+         'from' => 1730588400,
+         'id' => 4206,
+         'text' => 'Teutonenstr.: Bauarbeiten, Sperrung der Fahrbahn, außerdem Einbahnstraßenregelung in der Cimbernstr., vom 04.11.2024 bis 22.11.2024',
+         'type' => 'handicap',
+         'until' => 1732316400
        }
      
 );

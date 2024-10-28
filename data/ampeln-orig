@@ -6,12 +6,12 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
-#: note: außerdem laut VIZ: Michaelkirchplatz/Heinrich-Heine-Platz (Mitte) Kreuzung Legiendamm: Kanalbauarbeiten, Gegenverkehrsreglung mit Baustellenampel, Anbindungen Legiendamm und nördlicher Michaelkirchpatz gesperrt, vom 15.10.2024 11:11 bis 28.10.2024 17:00 (aber als Radfahrer kann man die Ampel zum Überqueren nutzen)
-#: source_id: viz2021:13.41782,52.506594,15.10.2024,11:11 (bis 28.10.2024)
-#: last_checked: 2024-10-15 (mapillary)
-#: next_check: 2024-10-28
-#: valid: -20241028
-Michaelkirchplatz: Gegenverkehrsreglung	X::inwork::alternating 11349,11227
+# REMOVED --- #: note: außerdem laut VIZ: Michaelkirchplatz/Heinrich-Heine-Platz (Mitte) Kreuzung Legiendamm: Kanalbauarbeiten, Gegenverkehrsreglung mit Baustellenampel, Anbindungen Legiendamm und nördlicher Michaelkirchpatz gesperrt, vom 15.10.2024 11:11 bis 28.10.2024 17:00 (aber als Radfahrer kann man die Ampel zum Überqueren nutzen)
+# REMOVED --- #: source_id: viz2021:13.41782,52.506594,15.10.2024,11:11 (bis 28.10.2024) (inaktiv)
+# REMOVED --- #: last_checked: 2024-10-15 (mapillary)
+# REMOVED --- #: next_check: 2024-10-28
+# REMOVED --- #: valid: -20241028
+# REMOVED --- Michaelkirchplatz: Gegenverkehrsreglung	X::inwork::alternating 11349,11227
 # 
 #: next_check_id: PERLEBERGER-2024
 #: last_checked: 2024-09-25
@@ -3600,7 +3600,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2024-10-28
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
