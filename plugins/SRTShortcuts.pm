@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.16;
+$VERSION = 2.17;
 
 use File::Glob qw(bsd_glob);
 
@@ -3971,17 +3971,19 @@ sub _generate_date_range_regex {
 
 ######################################################################
 
-sub fetch_fis_broker_wms_map {
+sub fetch_fis_broker_wms_map { # currently using gdi.berlin.de
     my($px0,$py0,$px1,$py1) = main::get_current_bbox_as_wgs84();
     ($py0,$py1)=($py1,$py0) if $py0 > $py1;
     my($w,$h) = ($main::c->width, $main::c->height);
     require LWP::UserAgent;
     #require MIME::Base64;
     require File::Temp;
-    my $origfile = File::Temp->new(SUFFIX => '.png', TMPDIR => 1);
+    my $origfile = File::Temp->new(SUFFIX => '.png', TMPDIR => 1, UNLINK => 1);
     my $ua = LWP::UserAgent->new;
-    my $layer = 'k_radverkehrsnetz';
-    my $url = 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_radverkehrsnetz?service=WMS&request=GetMap&version=1.3.0&bbox='.$py0.','.$px0.','.$py1.','.$px1.'&width='.$w.'&height='.$h.'&format=image/png&layers='.$layer.'&styles=gdi_default&crs=EPSG:4326&transparent=true';
+    #my $layer = 'k_radverkehrsnetz';
+    #my $url = 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_radverkehrsnetz?service=WMS&request=GetMap&version=1.3.0&bbox='.$py0.','.$px0.','.$py1.','.$px1.'&width='.$w.'&height='.$h.'&format=image/png&layers='.$layer.'&styles=gdi_default&crs=EPSG:4326&transparent=true';
+    my $layer = 'radverkehrsnetz';
+    my $url = 'https://gdi.berlin.de/services/wms/radverkehrsnetz?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS='.$layer.'&SINGLETILE=true&CRS=EPSG%3A4326&STYLES=&WIDTH='.$w.'&HEIGHT='.$h.'&BBOX='.$py0.'%2C'.$px0.'%2C'.$py1.'%2C'.$px1;
     warn "Fetch $url...\n";
     # XXX For some reason fetching does not work with LWP. Use Net::Curl instead.
     my $resp = _lwp_get_with_curl($ua, $url);
@@ -3995,11 +3997,13 @@ sub fetch_fis_broker_wms_map {
     print $ofh $resp->content;
     $ofh->close or die $!;
 
-    # XXX somehow coordinates to not fit, try to rotate a little bit
-    my $rotfile = File::Temp->new(SUFFIX => '.png', TMPDIR => 1);
-    my @cmd = ('convert', $origfile, '-distort', 'SRT', '-2.3', $rotfile);
-    system @cmd;
-    if ($? != 0) { die "Command @cmd failed" }
+#    # XXX somehow coordinates to not fit, try to rotate a little bit
+#    my $rotfile = File::Temp->new(SUFFIX => '.png', TMPDIR => 1);
+#    my @cmd = ('convert', $origfile, '-distort', 'SRT', '-2.3', $rotfile);
+#    warn "Run @cmd...\n";
+#    system @cmd;
+#    if ($? != 0) { die "Command @cmd failed" }
+    my $rotfile = $origfile;
 
     my $img = $main::c->Photo(-file => "$rotfile", -format => 'png');
     my($x0,$y0) = $main::c->get_corners;
