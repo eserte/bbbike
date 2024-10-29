@@ -3118,7 +3118,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        {
          'data' => '#: source_id: IM_019584 (alter Eintrag von 2013, inaktiv)
-#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen) (bis 28.10.2024) (bis 31.10.2024)
+#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen) (bis 28.10.2024) (bis 31.10.2024) (bis 20.12.2024)
 # REMOVED (hier nicht) ---	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544
 Fürstenwalder Damm, linker Gehweg existiert	q4::inwork; 24471,5544 24700,5633
 Jastrower Weg: Einbahnstraße	q4::inwork; 23877,5503 23866,5515 23863,5549 23845,5558 23696,5529 23657,5467
@@ -3127,9 +3127,9 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
 ',
          'from' => 1719205200,
          'id' => 2417,
-         'text' => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Liebstadter Gang und Mühlweg, Richtung Bölschestr. gesperrt, außerdem Einbahnstraßenregelung im Straßenzug Jastrower Weg - Stillerzeile, vom 25.06.2024 07:00 bis 31.10.2024 17:00',
+         'text' => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Liebstadter Gang und Mühlweg, Richtung Bölschestr. gesperrt, außerdem Einbahnstraßenregelung im Straßenzug Jastrower Weg - Stillerzeile, vom 25.06.2024 07:00 bis 20.12.2024 17:00',
          'type' => 'handicap',
-         'until' => 1730390400
+         'until' => 1734710400
        },
        undef,
        undef,
@@ -4579,6 +4579,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
 #: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 60d
+#: next_check: 2025-09-30
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
 ',
@@ -5650,7 +5651,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
-#: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024)
+#: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -5659,9 +5660,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 ',
          'from' => 1713897172,
          'id' => 3550,
-         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 30.10.2024',
+         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 06.12.2024',
          'type' => 'gesperrt',
-         'until' => 1730304000
+         'until' => 1733500800
        },
        undef,
        undef,
@@ -6026,7 +6027,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
 #: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
-#: last_checked: 2024-10-22
+#: last_checked: 2024-10-29
 #: check_frequency: 14d
 	q4::inwork 16720,12614 16859,12613
 ',
@@ -6061,7 +6062,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024) (bis 02.10.2024) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
-#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024) (bis 11.10.2024) (bis 31.10.2024)
+#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024) (bis 11.10.2024) (bis 31.10.2024) (bis 15.11.2024)
 # REMOVED ---#: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 # REMOVED ---	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
@@ -6070,9 +6071,9 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 ',
          'from' => 1718575200,
          'id' => 3648,
-         'text' => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 31.10.2024',
+         'text' => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, geplant bis 15.11.2024',
          'type' => 'handicap',
-         'until' => 1730390400
+         'until' => 1731686400
        },
        undef,
        undef,
@@ -6599,7 +6600,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang; Halteverbotsschilder bis 2024-11-30
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-10-22
+#: last_checked: 2024-10-29
 #: check_frequency: 21d
 #: next_check: 2024-11-30
 	q3::inwork; 15648,12687 15643,12875
@@ -6907,7 +6908,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
-#: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
+#: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
 #: XXX zukünftige Einschränkungen (mittlerweile: der Bauzustand wird vermutlich erst am 17.07.2024 gewechselt):
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
@@ -6956,20 +6957,20 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024) (inaktiv) (bis 30.11.2024) (bis 01.11.2024)
+         'data' => '#: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024) (inaktiv) (bis 30.11.2024) (bis 01.11.2024) (bis 03.01.2025)
 #: also_indoor: traffic (B)
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m; mittlerweile (Juni 2024) ist der gesamte Abschnitt betroffen; mittlerweile (2024-06) ist die Baustelle nach Süden gewandert und nicht sehr lang (q3 -> q2); mittlerweile: Richtung Norden wird man für ca. 180m auf dem Hochbord geführt
 #: note: bei rbb bis 30.11.2024; bei Bing bis 8.4.2024, mittlerweile auch bis November 2024
 #: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
 #: last_checked: 2024-10-02 (mapillary)
-#: next_check: 2024-11-01
+#: next_check: 2025-01-03
 	q2::inwork 8486,16425 8467,16718
 ',
          'from' => 1669791600,
          'id' => 3908,
-         'text' => 'Koloniestr.: Bauarbeiten an der Schwedenstr., Abschnitt der Fahrbahn ist gesperrt, Radwegführung auf dem Gehweg, voraussichtlich bis Anfang November 2024',
+         'text' => 'Koloniestr.: Bauarbeiten an der Schwedenstr., Abschnitt der Fahrbahn ist gesperrt, Radwegführung auf dem Gehweg, voraussichtlich bis Anfang Januar 2025',
          'type' => 'handicap',
-         'until' => 1730480400
+         'until' => 1735923600
        },
        undef,
        undef,
@@ -7517,7 +7518,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'until' => 1740585600
        },
        {
-         'data' => '#: source_id: viz2021:13.463362,52.432923,02.04.2024,07:00 (bis 01.11.2024)
+         'data' => '#: source_id: viz2021:13.463362,52.432923,02.04.2024,07:00 (bis 01.11.2024) (bis 20.12.2024)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775015299345232197
 #: by: https://pbs.twimg.com/media/GJxJdVZXgAAnXQw?format=jpg&name=large
 #: note: außerdem muss man den Fußgängerüberweg beim Überqueren der Johannisthaler Chaussee an den Kreuzungen Stieglitzweg und Buchfinkweg benutzen
@@ -7525,9 +7526,9 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 ',
          'from' => 1711947600,
          'id' => 4034,
-         'text' => 'Stieglitzweg: Anbindung Johannisthaler Chaussee gesperrt, vom 02.04.2024 07:00 bis 01.11.2024 17:00',
+         'text' => 'Stieglitzweg: Anbindung Johannisthaler Chaussee gesperrt, vom 02.04.2024 07:00 bis 20.12.2024 17:00',
          'type' => 'handicap',
-         'until' => 1730476800
+         'until' => 1734710400
        },
        undef,
        undef,
@@ -7732,12 +7733,15 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024)
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
+#: last_checked: 2024-10-29
+#: next_check: 2024-10-31
 	q4::inwork 15077,11910 15110,12107
 ',
+         'dont_check_date' => 1,
          'from' => 1717538400,
          'id' => 4079,
-         'text' => 'Jessnerstr.: Abschnitt der Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis 31.10.2024 17:00',
-         'until' => 1730390400
+         'text' => 'Jessnerstr.: Abschnitt der Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis 31.10.2024 17:00, evtl. wird verlängert',
+         'until' => undef
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2023
@@ -8063,8 +8067,8 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => undef
        },
        {
-         'data' => '#: osm_watch: way id="27457006" version="18"
-#: last_checked: 2024-10-12 (osm)
+         'data' => '#: osm_watch: way id="27457006" version="19"
+#: last_checked: 2024-10-18 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -8184,7 +8188,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-10-12
+#: last_checked: 2024-10-29
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30
 	q4::inwork 13530,13014 13470,12990
@@ -8248,24 +8252,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'gesperrt',
          'until' => 1730476800
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
-#: by: https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
-#: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen
-#: last_checked: 2024-10-20 (website) vvv
-#: check_frequency: 10d vvv
-# REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
-# REMOVED --- Okerstr.	2::inwork 11528,7528 11540,7534
-Kienitzer Str.	2::inwork 11490,7737 11504,7738
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4156,
-         'text' => 'Eingang Kienitzer Str.: wegen Bauarbeiten gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: note: laut rbb bis 19.01.2025
@@ -8315,8 +8302,11 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024)
+         'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
+#: also_indoor: traffic (H,G,B,T,W)
+#: last_checked: 2024-10-29
+#: check_frequency: 7d
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
          'from' => 1725548760,
@@ -8500,7 +8490,7 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
        },
        {
          'data' => '#: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
-#: source_id: bvg2024:140#HIM_FREETEXT_241551
+#: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
 #: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024)
 #: also_indoor: traffic (H,G,B,T,ex-W)
 #: last_checked: 2024-10-23
@@ -8603,7 +8593,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
        },
        {
          'data' => '#: source_id: viz2021:13.45732,52.433835,21.10.2024,07:00 (bis 28.10.2024) (inaktiv)
-#: source_id: viz2021:13.457922,52.433673,28.10.2024,09:00 (andere Fahrtrichtung; bis 01.11.2024)
+#: source_id: viz2021:13.457922,52.433673,28.10.2024,09:00 (andere Fahrtrichtung; bis 01.11.2024) (bis 15.11.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848227718867112023
 #: by: https://pbs.twimg.com/media/GaLvGf4WEAA0_9g?format=jpg&name=medium (bei den eigentlichen Bauarbeiten in der Fritz-Erler-Allee ist der Gehweg für Radfahrer frei)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1850824827978084537
@@ -8612,9 +8602,9 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
 ',
          'from' => 1729400400,
          'id' => 4192,
-         'text' => 'Otto-Wels-Ring, Uhuweg, Zadekstr.: Einbahnstraßenregelung, bis 01.11.2024',
+         'text' => 'Otto-Wels-Ring, Uhuweg, Zadekstr.: Einbahnstraßenregelung, geplant bis 15.11.2024',
          'type' => 'handicap',
-         'until' => 1730476800
+         'until' => 1731686400
        },
        undef,
        {
@@ -8658,9 +8648,9 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
 #: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024)
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
-#: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen
-#: last_checked: 2024-10-22
-#: check_frequency: 7d
+#: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
+#: last_checked: 2024-10-29
+# REMOVED --- #: check_frequency: 7d
 #: next_check: 2024-11-11
 	q4::inwork; 16764,11919 16794,12144
 ',
@@ -8765,6 +8755,17 @@ Cimbernstr.: Einbahnstraße	q4::inwork; -3503,1988 -3544,2003 -3643,2061 -3703,21
          'text' => 'Teutonenstr.: Bauarbeiten, Sperrung der Fahrbahn, außerdem Einbahnstraßenregelung in der Cimbernstr., vom 04.11.2024 bis 22.11.2024',
          'type' => 'handicap',
          'until' => 1732316400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024)
+	q3::inwork 9602,13081 9559,13087
+	q4::inwork; 9559,13087 9401,13072
+',
+         'from' => 1730098800,
+         'id' => 4207,
+         'text' => 'Ziegelstr.: Leitungsarbeiten, Sperrung bzw. Einbahnstraßenregelung, vom 29.10.2024 08:00 bis 20.12.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1734710400
        }
      
 );
