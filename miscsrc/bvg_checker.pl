@@ -28,7 +28,7 @@ use POSIX qw(strftime);
 
 use Strassen::Core;
 
-use constant BVG_SITE_IS_BROKEN => strftime("%Y-%m-%d", localtime) le "2024-12-01";
+use constant BVG_SITE_IS_BROKEN => 0; # strftime("%Y-%m-%d", localtime) le "2024-12-01";
 
 return 1 if caller;
 
