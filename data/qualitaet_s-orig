@@ -138,7 +138,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2024-10-19 (mapillary)
+#: last_checked: 2024-10-30
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -474,7 +474,8 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2024-10-07
+#: last_checked: 2024-10-30
+#: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
 Revaler Str.: Asphalt/Kopfsteinpflaster oder Verbundsteinpflaster	Q1; 13473,11456 13565,11492 13588,11490
@@ -3017,6 +3018,9 @@ Elvirasteig: Asphalt	Q0 -1536,3314 -1501,3448 -1487,3505 -1475,3552 -1470,3566 -
 #: by: MichaelM
 #: corrected_by: srt (Asphalt -> Asphalt und Beton, siehe http://farm5.static.flickr.com/4144/5190716473_c6a9f95017.jpg)
 #: XXX Ist die Fahrbahn nun komplett asphaltiert, ohne Beton?
+#: osm_watch: way id="145662431" version="18"
+#: osm_watch: way id="1158237207" version="5"
+#: osm_watch: way id="758601427" version="5"
 #: next_check: 2024-10-31
 Quermatenweg: Asphalt und Beton	Q0 -1096,4267 -1025,4422 -927,4638 -857,4725 -820,4772 -670,4903 -473,5002 -326,5042 -255,5059 -191,5075 -117,5092 -22,5115 88,5136
 # REMOVED (ja) --- #: XXX nach den Bauarbeiten bessere Qualität? --- #: next_check: 2020-11-18
@@ -4189,6 +4193,7 @@ Feuchtwangerweg: Kleinpflaster	Q1 15835,1747 15788,1747
 Försterweg: Asphalt	Q0 13462,2186 13485,2007
 Wildmeisterdamm: Verbundsteinpflaster	Q1 13640,2229 13568,2208 13559,2205 13552,2204 13534,2204
 Wildmeisterdamm: Asphalt	Q0- 13534,2204 13462,2186 13336,2151 13176,2106 13157,2116 13104,2143
+(Wildmeisterdamm - Walter-May-Weg): Gehwegplatten	Q1+ 14628,2304 14686,2366 14676,2375
 Steinträgerweg: Beton	Q0- 13023,2093 12987,2220
 Steinträgerweg: Beton	Q0 12987,2220 12963,2365
 Rohrlegerweg: Beton	Q0 12738,2162 12864,2191 12987,2220 13103,2271 13309,2410
@@ -7918,7 +7923,7 @@ Turfweg: unbefestigte Straße	Q2 13336,2151 13357,2031
 #: note: sowie daneben Gehwegplatten vvv
 Wildmeisterdamm: Verbundsteinpflaster	Q1- 13640,2229 13827,2280
 Wildmeisterdamm: Verbundsteinpflaster	Q1+ 13827,2280 13943,2284 14082,2289 14237,2292 14276,2293 14362,2294
-Wildmeisterdamm: Verbundsteinpflaster	Q1 14362,2294 14744,2308 15143,2315 15159,2334
+Wildmeisterdamm: Verbundsteinpflaster	Q1 14362,2294 14628,2304 14744,2308 15143,2315 15159,2334
 #: note ^^^
 Wildmeisterdamm: Verbundsteinpflaster	Q1 15143,2315 15207,2313
 (U Johannisthaler Chaussee - U Lipschitzallee): Verbundsteinpflaster	Q1+ 14362,2294 14515,2212
@@ -26914,7 +26919,7 @@ Straße 49 (Heinersdorf): guter Asphalt	Q0 12780,17318 12609,17405 12500,17460 12
 # 
 #: by: Roland Mohrbacher vvv
 #: corrected_by: srt (Beton -> ...)
-Steinträgerweg: Asphalt	Q0 12963,2365 12948,2484 12937,2575 12924,2617 12907,2660 12849,2751 12810,2751 12693,2746
+Steinträgerweg: Asphalt	Q0 12963,2365 12948,2484 12937,2575 12924,2617 12907,2660 12849,2751 12810,2751 12694,2758
 #: confirmed_by: srt
 Steinmetzstr. (Lichtenrade): schlechte Fahrbahnqualität (Feldstein-Belag)	Q3 10573,-2891 10679,-2842 10770,-2796 10828,-2774 10884,-2795
 #: confirmed_by: rainer anders, srt

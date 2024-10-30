@@ -177,7 +177,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2024-09-27
+#: last_checked: 2024-10-30
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -395,7 +395,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 #: XXX Ampel wird vermutlich permanent gemacht
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (wird vermutlich permanent gemacht)
 #: osm_watch: node id="7978101859" version="1"
-#: last_checked: 2024-07-03
+#: last_checked: 2024-08-27 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-28
 	X::inwork 10096,-2137
@@ -2632,6 +2632,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: by: ^^^
 #: by: davidbest:
 #: XXX_prog keine Haltelinie für Radfahrer in Richtung Südosten
+#: note: Anforderungsampel (2x, keine Anforderung an der Straßenbahntrasse)
 	F 13225,13620
 	X 8503,12895
 #: note: Anforderungsampel (getrennte Anforderungen für jede Fahrbahn sowie die Straßenbahntrasse)
@@ -2711,13 +2712,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-10-26
+#: last_checked: 2024-10-30
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50)
-#: last_checked: 2024-10-23
+#: last_checked: 2024-10-30
 #: check_frequency: 120d
 	X::inwork 14382,9299
 # 
@@ -3412,7 +3413,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-10-25 vvv
+#: last_checked: 2024-10-30 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

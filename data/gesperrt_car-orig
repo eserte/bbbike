@@ -636,6 +636,7 @@ Kaiserdamm: Mittelstreifen	3nocross 1960,11426 1821,11408 1625,11380
 Paplitzer Str.	1 11027,-2448 11073,-2037
 Steinträgerweg: Poller	3 * 12963,2365 *
 #: by: ^^^
+Maurerweg: Sackgasse für Kfz, Poller	3 * 12844,2382 *
 #: by: Christian Riemer:
 Im Rosengrund: Anliegerstraße	2:Anlieger 11576,4339 11601,4242 11619,4146 11633,4117 11684,3919
 Haselsteig: Anliegerstraße, nördliche Einfahrt per Schranke gesperrt	2:Anlieger 11484,4336 11486,4321 11500,4218 11547,4127 11563,4099 11567,4085 11610,3891
@@ -1757,31 +1758,7 @@ Kaulsdorfer Str.	1 22534,6249 22325,6385
 # 
 Kaulsdorfer Str. - Mahlsdorfer Str. (BVG frei)	3 22325,6385 22534,6249 22645,6431
 # 
-#: next_check_id: MOLKENMARKT-2021
-#: next_check_id: STRALAUER-2023
-#: by: https://viz.berlin.de/2021/08/umbau-molkenmarkt/ (Umstellung ab 1.9.2021)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1120689.php (Fertigstellung: Mitte 2024)
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/ein-jahr-lang-bauarbeiten_a320747
-#: by: https://abendblatt-berlin.de/2021/08/31/berlin-mitte-an-der-stralauer-strasse-droht-dauerstau/
-#: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00 (bis Ende 2022, Gesamtbaumaßnahme bis 2023) (bis 30.6.2023) (bis 15.1.2023) (inaktiv)
-#: source_id: viz2021:13.409109,52.516928,14.01.2023,06:00 (bis 15.01.2023) (inaktiv)
-#: source_id: viz2021:13.4084,52.51607,28.06.2023,13:00 (bis 07.07.2023) (inaktiv)
-#: source_id: viz2021:13.41059,52.5161,28.06.2023,12:57 (bis 07.07.2023) (inaktiv)
-#: source_id: viz2021:13.409118,52.51693,15.01.2023,18:00 (bis 30.06.2023) (bis 07.07.2023) (bis 17.07.2023) (bis 31.12.2023) (bis 30.08.2024) (inaktiv)
-#: source_id: viz2021:13.409315,52.517356,20.02.2020,08:00 (bis 31.12.2022) (bis 30.06.2023) (bis 07.07.2023) (bis 17.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 25.09.2024) (bis 15.07.2024) (inaktiv)
-#: source_id: viz2021:13.410565,52.516096,15.01.2023,18:00 (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
-#: source_id: viz2021:13.409654,52.516544,15.07.2024,08:00 (bis 30.09.2024) (bis 31.12.2024)
-# REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
-#: note: mittlerweile ist die Fahrbahn und die Markierungen eigentlich schon fertig
-#: last_checked: 2024-10-22 (webcam) vvv
-#: check_frequency: 14d vvv
-#: next_check: 2024-12-31 vvv
-Stralauer Str.: Einbahnstraße wegen Bauarbeiten	1::inwork 10830,12279 10772,12288 10697,12303
-# REMOVED --- (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: next_check_id: STRALAUER-2023--- #: by: https://viz.berlin.de/2021/08/umbau-molkenmarkt/ (Umstellung ab 1.9.2021) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1120689.php (Fertigstellung: Mitte 2024) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/ein-jahr-lang-bauarbeiten_a320747 --- #: by: https://abendblatt-berlin.de/2021/08/31/berlin-mitte-an-der-stralauer-strasse-droht-dauerstau/ --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/ --- #: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00 (bis Ende 2022, Gesamtbaumaßnahme bis 2023) (bis 30.6.2023) (bis 15.1.2023) (inaktiv) --- #: source_id: viz2021:13.409109,52.516928,14.01.2023,06:00 (bis 15.01.2023) (inaktiv) --- #: source_id: viz2021:13.4084,52.51607,28.06.2023,13:00 (bis 07.07.2023) (inaktiv) --- #: source_id: viz2021:13.41059,52.5161,28.06.2023,12:57 (bis 07.07.2023) (inaktiv) --- #: source_id: viz2021:13.409118,52.51693,15.01.2023,18:00 (bis 30.06.2023) (bis 07.07.2023) (bis 17.07.2023) (bis 31.12.2023) (bis 30.08.2024) (inaktiv) --- #: source_id: viz2021:13.409315,52.517356,20.02.2020,08:00 (bis 31.12.2022) (bis 30.06.2023) (bis 07.07.2023) (bis 17.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 25.09.2024) (bis 15.07.2024) (inaktiv) --- #: source_id: viz2021:13.410565,52.516096,15.01.2023,18:00 (bis 30.08.2024) (bis 15.07.2024) (inaktiv) --- #: source_id: viz2021:13.409654,52.516544,15.07.2024,08:00 (bis 30.09.2024) (bis 31.12.2024) --- # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben --- #: note: mittlerweile ist die Fahrbahn und die Markierungen eigentlich schon fertig --- #: last_checked: 2024-10-22 (webcam) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-12-31 vvv --- Stralauer Str.: Einbahnstraße wegen Bauarbeiten	1::inwork 10830,12279 10772,12288 10697,12303 --- # REMOVED --- (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 Gustav-Böß-Str./Grunerstr./Jüdenstr.	3nocross 10687,12421 10783,12502 10849,12557
 Grunerstr./Klosterstr.	3nocross 10849,12557 10873,12577 10950,12640
@@ -2125,4 +2102,13 @@ Landjägerstr.	1 22740,4415 22542,4485 22495,4523
 #: by: mapillary
 #: historical_note: etwa 2024 entstanden
 Hauptstr. (Rosenthal): Poller	3 8419,21446 8389,21468 *
+# 
+#: note: hier ist nur das Linksabbiegen aus der Johannisthaler Chaussee Richtung Südwesten erlaubt
+Imbuschweg: nur Rechtsabbiegen erlaubt	3 14154,2923 14212,2865 14234,2829
+Imbuschweg: nur Rechtsabbiegen erlaubt	3 14154,2923 14212,2865 14392,2979
+Johannisthaler Chaussee - Imbuschweg: Linksabbiegen verboten	3 14203,2859 14212,2865 14154,2923
+Imbuschweg: nur Rechtsabbiegen erlaubt	3 14234,2829 14212,2865 14154,2923
+Imbuschweg: nur Rechtsabbiegen erlaubt	3 14234,2829 14212,2865 14203,2859
+# 
+Ilsestr.	1 12585,7357 12564,7467
 # 

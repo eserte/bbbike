@@ -197,7 +197,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2024-10-28
+#: last_checked: 2024-10-30
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -4460,12 +4460,14 @@ Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 #: by: https://www.aktives-adlershof.de/das-aktive-zentrum/projekte/historischer-marktplatz
 #: by: https://www.wista.de/aktuelles/news/marktplatz-doerpfeldstrasse-wird-zur-gruenen-mitte-von-adlershof (mit Karte)
 #: by: https://www.wista.de/fileadmin/_processed_/8/c/csm_marktplatz_Adlershof_f75006337a.webp
+#: by: https://www.tagesspiegel.de/berlin/bezirke/eroffnung-mit-burgerfest-geplant-endspurt-fur-den-neuen-marktplatz-in-adlershof-12604670.html (Eröffnung Mai 2025)
+#: by[nocache]: https://archive.is/tLaeV
 #: XXX laut osm Baustelle
 #: osm_watch: way id="20554168" version="25"
 #: osm_watch: way id="1155308749" version="1"
 #: last_checked: 2024-09-06 (osm)
 #: check_frequency: 90d
-#: next_check: 2025-07-01
+#: next_check: 2025-05-10
 Marktplatz Adlershof: möglicherweise wird die nördliche Fahrbahn dauerhaft eingezogen	2::inwork 20336,3783 20290,3756
 # 
 # REMOVED --- #: next_check_id: SCHLESISCHERBUSCH-2023 --- #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/begonnene-bauarbeiten-enden-im-sommer-2023-im-schlesischen-busch_a357557 (bis Sommer 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1570686227954954240#m --- #: by: https://nitter.cz/pic/orig/media%2FFcwyqHOXgAAeape.jpg --- #: by: https://www.facebook.com/vizberlin/posts/pfbid06LxJBbLf7E1BWSREAZxyQLbEtMmoQWyekoQVyZwYzUNCuLidZWQjvAgVxps92bz4l --- #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-aufwertung-des-historischen-rundwegs --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf --- #: XXX Qualität nach den Bauarbeiten? vvv --- #: last_checked: 2023-07-09 vvv -- #: check_frequency: 30d vvv --- #: next_check: 2023-09-15 vvv
@@ -4690,7 +4692,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13135,21715 13121,21678 13124,21718 13
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2024-10-16 vvv
+#: last_checked: 2024-10-30 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-10 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -4820,7 +4822,7 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2024-10-28 vvv
+#: last_checked: 2024-10-30 vvv
 #: next_check: 2028-01-01 vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -4832,7 +4834,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-10-28
+#: last_checked: 2024-10-30
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4843,7 +4845,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://dielinke.berlin/start/det/nachfrage-zur-beantwortung-der-schriftlichen-anfrage-scha-ix-0495-bauprojekt-fanny-zobel-strasse/ (weiterhin: Gesamtmaßnahme bis 2027)
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2024-10-26 vvv
+#: last_checked: 2024-10-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5026,7 +5028,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-10-22 (webcam)
+#: last_checked: 2024-10-30
 #: check_frequency: 30d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 

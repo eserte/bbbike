@@ -10,6 +10,9 @@
 # 
 ### Friedrichshain ###
 # 
+#: last_checked: 2024-10-30
+Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
+# 
 #: next_check_id: PETERSBURGER-2024
 #: last_checked: 2024-10-29 vvv
 #: next_check: 2027-09-30 vvv
@@ -38,7 +41,7 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="8"
 #: osm_watch: way id="1072662717" version="10"
-#: last_checked: 2024-10-26
+#: last_checked: 2024-10-30
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -47,7 +50,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="1"
 #: osm_watch: way id="1146013233" version="4"
 #: osm_watch: way id="1134071039" version="6"
-#: last_checked: 2024-10-27 vvv
+#: last_checked: 2024-10-30 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -106,7 +109,7 @@ Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-10-28
+#: last_checked: 2024-10-30
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -402,7 +405,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-10-25 vvv
+#: last_checked: 2024-10-30 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -525,7 +528,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-10-25 vvv
+#: last_checked: 2024-10-30 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -811,7 +814,7 @@ Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7933,11407 79
 #: osm_watch: way id="152832871" version="23"
 #: osm_watch: way id="1132383957" version="1"
 #: note: mittlerweile eine Art "Drängelgitter" aus dem Bauzaun gemacht
-#: last_checked: 2024-07-05
+#: last_checked: 2024-10-30
 #: check_frequency: 120d
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
@@ -838,7 +841,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # REMOVED --- #: osm_watch: way id="1317391078" version="2"
 #: XXX comments_kfzverkehr-Einträge danach anpassen
 #: XXX evtl. gibt es vorher Arbeiten am Stromnetz siehe auch Fragezeichen zu "Umspannwerk Richardstraße"
-#: last_checked: 2024-10-28 vvv
+#: last_checked: 2024-10-30 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q4+::inwork 13236,7970 13246,7961
 # REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q3::inwork 13246,7961 13309,7911
@@ -1120,9 +1123,11 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: source_id: viz2021:13.590289,52.539403,04.07.2023,06:00 (östlicher Abschnitt der Eisenacher; bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (bis 25.07.2024) (inaktiv)
 #: source_id: viz2021:13.588897,52.538931,04.07.2023,07:00 (nur Kfz-Verkehr, bis 31.07.2025) (bis 24.07.2024) (inaktiv)
 #: source_id: viz2021:13.584338,52.539646,25.07.2024,10:00 (Eisenacher, bis 31.07.2025)
-#: source_id: viz2021:13.588822,52.539542,25.07.2024,10:00 (Gothaer, bis 31.07.2025)
+#: source_id: viz2021:13.588822,52.539542,25.07.2024,10:00 (Gothaer, bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.588853,52.539896,04.07.2023,06:00 (Gothaer, bis 25.07.2024) (inaktiv)
-#: source_id: viz2021:13.588897,52.538931,25.07.2024,10:00 (Gothaer, bis 31.07.2025)
+#: source_id: viz2021:13.588897,52.538931,25.07.2024,10:00 (Gothaer, bis 31.07.2025) (inaktiv)
+#: source_id: viz2021:13.588878,52.541211,25.07.2024,10:00 (Gothaer, nördlicher Abschnitt, bis 01.11.2024)
+#: source_id: viz2021:13.588839,52.538041,25.07.2024,10:00 (Gothaer, südlicher Abschnitt, bis 01.11.2024)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 6
 #: last_checked: 2024-10-20 (osm) vvv
@@ -1935,7 +1940,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # 
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-28
+#: last_checked: 2024-10-30
 #: check_frequency: 14d
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 
@@ -2982,6 +2987,7 @@ Hörsingsteig: Fußgänger	q1 14369,2016 14444,2090 14515,2212
 (Matthäusweg - Friedrich-Kayßler-Weg): Fußgänger, Bordstein	q2 14993,2029 14994,2069
 #: XXX_prog BS an beiden Enden (ansonstent -> q1)
 Gansbergsteig: Fußgänger, Bordsteine	q2 14676,2375 14776,2474 14703,2553
+(Wildmeisterdamm - Walter-May-Weg): Fußgänger	q2 14628,2304 14686,2366 14676,2375
 (U Johannisthaler Chaussee - U Lipschitzallee): Fußgänger, eng	q2 14079,2504 14224,2368 14259,2317 14276,2293
 # REMOVED (nicht mehr) --- #: XXX_prog BS am Löwensteinring (ansonsten -> q1-)
 (Löwensteinring - Wildmeisterdamm): Fußgänger	q1- 14471,2509 14423,2463
@@ -3637,7 +3643,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-10-25
+#: last_checked: 2024-10-30
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -5036,7 +5042,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12615 (Anfrage)
 #: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn
 #: XXX Bauarbeiten an den Fahrbahnrändern; Absperrungen können früh zum Schulbeginn an beiden Enden der Fußgängerzone aufgestellt sein (einmalig am 2024-09-24 oder regelmäßig?)
-#: last_checked: 2024-10-23
+#: last_checked: 2024-10-30
 #: check_frequency: 30d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1+ 11635,12398 11845,12292
 # 
