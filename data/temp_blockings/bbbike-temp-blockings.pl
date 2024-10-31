@@ -30664,13 +30664,15 @@ EOF
 	q4::inwork 18368,22018 18349,22132 18350,22225
 EOF
      },
-     { from  => 1564524000, # 2019-07-31 00:00
-       until => $isodate2epoch->("2019-08-15 16:00:00"), # 1565704800, # 2019-08-13 16:00
-       text  => 'Lynarstr.: Richtung Koenigsallee zwischen Bismarckallee und Koenigsallee Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, ab 01.08.2019 06:00 bis 15.08.2019 ca. 16:00 Uhr',
+     { from  => 1730268000, # 2024-10-30 07:00, 1564524000, # 2019-07-31 00:00
+       until => 1737140400, # 2025-01-17 20:00, $isodate2epoch->("2019-08-15 16:00:00"), # 1565704800, # 2019-08-13 16:00
+#       text  => 'Lynarstr.: Richtung Koenigsallee zwischen Bismarckallee und Koenigsallee Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, ab 01.08.2019 06:00 bis 15.08.2019 ca. 16:00 Uhr',
+       text  => 'Lynarstr.: zwischen Herthastr. und Johannaplatz Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 31.10.2024 07:00 bis 17.01.2025 20:00',
        type  => 'handicap',
-       source_id => 'LMS-BR_r_LMS-BR_177510_LMS-BR_72',
        data  => <<EOF,
-	q4::inwork; 2074,9225 1937,9253
+#: source_id: LMS-BR_r_LMS-BR_177510_LMS-BR_72 (Eintrag von 2019, inaktiv)
+#: source_id: viz2021:13.27866,52.49035,31.10.2024,07:00 (bis 17.01.2025)
+	q4::inwork 2074,9225 1937,9253
 EOF
      },
      { from  => 1564869600, # 2019-08-04 00:00
@@ -41118,7 +41120,7 @@ EOF
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
-#: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
+#: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
 #: XXX zukünftige Einschränkungen (mittlerweile: der Bauzustand wird vermutlich erst am 17.07.2024 gewechselt):
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
@@ -43796,7 +43798,7 @@ EOF
        text  => 'Jessnerstr.: Abschnitt der Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis 31.12.2024 17:00, evtl. wird verlängert',
        data  => <<EOF,
 #: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024) (bis 31.12.2024)
-#: osm_watch: note 4452464 1
+#: osm_watch: note 4452464 2
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
 #: last_checked: 2024-10-29
@@ -43943,6 +43945,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
+#: source_id: bvg2024:171#HIM_FREETEXT_227772 (ohne Endedatum)
 #: last_checked: 2024-10-30 vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
@@ -44887,15 +44890,17 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 EOF
      },
      { from  => 1725548760, # 2024-09-05 17:06
-       until => $isodate2epoch->("2024-11-29 17:00:00"), # 1728572400, # 2024-10-10 17:00
-       text  => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 29.11.2024 17:00',
+       until => $isodate2epoch->("2024-12-20 17:00:00"), # 1728572400, # 2024-10-10 17:00
+       text  => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 20.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv)
+#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (bis 20.12.2024)
+#: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-10-29
-#: check_frequency: 7d
+#: last_checked: 2024-10-31
+#: next_check: 2024-12-20
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 EOF
      },
@@ -45041,7 +45046,7 @@ EOF
        text  => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, 09.09.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/24/128 (bis 31.10.2024)
+#: source_id: LS/221-E/24/128 (bis 31.10.2024) (inaktiv)
 	2::inwork 31738,27620 31684,27738 30387,28332 29363,29024
 EOF
      },
@@ -45176,7 +45181,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_242095
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-10-25 (mapillary)
+#: last_checked: 2024-10-28 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2024-11-26
 Fischerinsel	q4::inwork; 10578,11969 10512,12039
@@ -45384,6 +45389,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.144073,52.397109,28.10.2024,08:00 (bis 07.11.2024)
+#: source_id: viz2021:13.14439,52.3967,28.10.2024,00:00 (Kremnitzufer, bis 31.10.2024)
 #: note: nur Kfz- und Radverkehr sind in der VIZ-Meldung erwähnt, unklar, ob Fußgänger hier trotzdem durch können
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1850774496149475425
 #: by: https://pbs.twimg.com/media/Gav4fQdXYAE2q0T?format=jpg&name=medium (Sicherungsposten lassen wohl Fußgänger bei Bedarf durch)
@@ -45424,11 +45430,13 @@ EOF
      },
      { from  => 1723957200, # 2024-08-18 07:00
        until => 1739894400, # 2025-02-18 17:00
-       text  => 'Cornelius-Fredericks-Str.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 19.08.2024 07:00 bis 18.02.2025 17:00',
+       text  => 'Cornelius-Fredericks-Str. und Kameruner Str.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 19.08.2024 07:00 bis 18.02.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.349148,52.550327,19.08.2024,07:00 (bis 18.02.2025)
-	q4::inwork 6661,15921 6484,16085
+#: source_id: viz2021:13.347134,52.550698,31.10.2024,08:37 (auch die Kameruner Str., bis 18.01.2025)
+Cornelius-Fredericks-Str.	q4::inwork 6661,15921 6484,16085
+Kameruner Str.	q4::inwork 6383,15972 6484,16085
 EOF
      },
     );

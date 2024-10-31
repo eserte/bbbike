@@ -4689,7 +4689,17 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_177510_LMS-BR_72 (Eintrag von 2019, inaktiv)
+#: source_id: viz2021:13.27866,52.49035,31.10.2024,07:00 (bis 17.01.2025)
+	q4::inwork 2074,9225 1937,9253
+',
+         'from' => 1730268000,
+         'id' => 3141,
+         'text' => 'Lynarstr.: zwischen Herthastr. und Johannaplatz Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 31.10.2024 07:00 bis 17.01.2025 20:00',
+         'type' => 'handicap',
+         'until' => 1737140400
+       },
        undef,
        undef,
        undef,
@@ -6908,7 +6918,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
-#: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
+#: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
 #: XXX zukünftige Einschränkungen (mittlerweile: der Bauzustand wird vermutlich erst am 17.07.2024 gewechselt):
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
@@ -7706,7 +7716,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        undef,
        {
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024) (bis 31.12.2024)
-#: osm_watch: note 4452464 1
+#: osm_watch: note 4452464 2
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
 #: last_checked: 2024-10-29
@@ -7768,6 +7778,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        undef,
        {
          'data' => '#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
+#: source_id: bvg2024:171#HIM_FREETEXT_227772 (ohne Endedatum)
 #: last_checked: 2024-10-30 vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
@@ -7914,22 +7925,7 @@ Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1463120.php
-#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/quermatenweg-wird-saniert_a420563
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1476212.php
-#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/bauarbeiten-schneller-fertig_a423159
-# REMOVED --- #: next_check: 2024-08-18 --- #: historical_note: ursprünglich bis zum 02.09.2024 --- zwischen Ithweg und und Ottmachauer Steig 15.07.2024 - 18.08.2024	q4::inwork -326,5042 -473,5002 -670,4903
-# REMOVED --- #: historical_note: ursprünglich bis zum 17.10.2024 --- #: next_check: 2024-09-18 --- zwischen Ottmachauer Steig bis Hirschhorner Weg 19.08.2024 - 18.09.2024	q4::inwork -670,4903 -820,4772
-#: historical_note: ursprünglich bis zum 29.11.2024
-zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwork -820,4772 -857,4725 -927,4638
-',
-         'from' => 1720908000,
-         'id' => 4108,
-         'text' => 'Quermatenweg: Sanierung zwischen Ithweg und Wasserkäfersteig, abschnittsweise Sperrung der Fahrbahn, vom 15.07.2024 bis 31.10.2024',
-         'type' => 'handicap',
-         'until' => 1730394000
-       },
+       undef,
        {
          'data' => '#: next_check_id: BAEKEBRUECKE-2022
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/wasserstrassen-neubauamt-will-baekebruecke-2022-neu-errichten_a284203
@@ -8267,17 +8263,19 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
        },
        {
          'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv)
+#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (bis 20.12.2024)
+#: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-10-29
-#: check_frequency: 7d
+#: last_checked: 2024-10-31
+#: next_check: 2024-12-20
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
          'from' => 1725548760,
          'id' => 4164,
-         'text' => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 29.11.2024 17:00',
+         'text' => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 20.12.2024 17:00',
          'type' => 'handicap',
-         'until' => 1732896000
+         'until' => 1734710400
        },
        undef,
        {
@@ -8383,16 +8381,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'handicap',
          'until' => 1732921200
        },
-       {
-         'data' => '#: source_id: LS/221-E/24/128 (bis 31.10.2024)
-	2::inwork 31738,27620 31684,27738 30387,28332 29363,29024
-',
-         'from' => 1725775200,
-         'id' => 4175,
-         'text' => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, 09.09.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1730386800
-       },
+       undef,
        {
          'data' => '#: source_id: LS/223-K/24/141 (bis 08.11.2024)
 	2::inwork -4055,54553 -3747,54549 -3492,54548 -3137,54571 -2710,54626 -2084,54707 -1848,54667 -1488,54421 -1453,54400 -684,54082
@@ -8494,7 +8483,7 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
 #: source_id: bvg2024:147#HIM_FREETEXT_242095
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-10-25 (mapillary)
+#: last_checked: 2024-10-28 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2024-11-26
 Fischerinsel	q4::inwork; 10578,11969 10512,12039
@@ -8689,6 +8678,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
        },
        {
          'data' => '#: source_id: viz2021:13.144073,52.397109,28.10.2024,08:00 (bis 07.11.2024)
+#: source_id: viz2021:13.14439,52.3967,28.10.2024,00:00 (Kremnitzufer, bis 31.10.2024)
 #: note: nur Kfz- und Radverkehr sind in der VIZ-Meldung erwähnt, unklar, ob Fußgänger hier trotzdem durch können
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1850774496149475425
 #: by: https://pbs.twimg.com/media/Gav4fQdXYAE2q0T?format=jpg&name=medium (Sicherungsposten lassen wohl Fußgänger bei Bedarf durch)
@@ -8737,11 +8727,13 @@ Cimbernstr.: Einbahnstraße	q4::inwork; -3503,1988 -3544,2003 -3643,2061 -3703,21
        },
        {
          'data' => '#: source_id: viz2021:13.349148,52.550327,19.08.2024,07:00 (bis 18.02.2025)
-	q4::inwork 6661,15921 6484,16085
+#: source_id: viz2021:13.347134,52.550698,31.10.2024,08:37 (auch die Kameruner Str., bis 18.01.2025)
+Cornelius-Fredericks-Str.	q4::inwork 6661,15921 6484,16085
+Kameruner Str.	q4::inwork 6383,15972 6484,16085
 ',
          'from' => 1723957200,
          'id' => 4208,
-         'text' => 'Cornelius-Fredericks-Str.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 19.08.2024 07:00 bis 18.02.2025 17:00',
+         'text' => 'Cornelius-Fredericks-Str. und Kameruner Str.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 19.08.2024 07:00 bis 18.02.2025 17:00',
          'type' => 'handicap',
          'until' => 1739894400
        }

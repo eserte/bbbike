@@ -1019,7 +1019,7 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 1
 # 
 #: XXX Jt.3
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2023/pressemitteilung.1383068.php (Straßenbahnverlängerung bis 2029; was bedeutet das für die RVA-Planungen?)
-#: osm_watch: way id="132688411" version="17"
+#: osm_watch: way id="132688411" version="22"
 #: last_checked: 2024-08-17
 #: check_frequency: 90d
 #: next_check: 2029-12-31
@@ -1154,7 +1154,7 @@ Kurpark: Verbesserung der Befahrbarkeit geplant	?::projected 24964,6046 25183,60
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,803137#msg-803137 (Gleiserneuerung 6.7.2024 - 20.10.2024 --- wird es zu Sperrungen kommen? gibt es danach Radverkehrsanlagen?)
 #: source_id: 2147343845 (Gesamtmaßnahme bis Mitte April 2019) (inaktiv)
 #: source_id: 2147343951 (bis Mitte April 2019) (inaktiv)
-#: source_id[inactive]: bvg2024:n65#HIM_FREETEXT_230516 (bis 31.08.2024) (bis 31.10.2024)
+#: source_id: bvg2024:n65#HIM_FREETEXT_230516 (bis 31.08.2024) (bis 31.10.2024)
 #: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (Gleisbauarbeiten zwischen Wilhelminenhofstraße und Steffelbauerstraße, nur Kfz-Verkehr, bis 26.08.2024) (bis 28.10.2024) (bis 03.11.2024)
 #: osm_watch: way id="93704161" version="26"
 #: last_checked: 2024-10-24 vvv
@@ -7316,6 +7316,9 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_41_3059_3162_online.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11680
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5LHkBJnFr2hXGIl7OQ0mVzkJoi1WQV2Uax7B6xg3/PENOsxg/37-Anlagen/01/DS1329_VzK_ErgebnisberichtVerkehrsberuhigungim.pdf
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1498745.php (Baubeginn ab November 2024, zunächst zwischen Revaler Straße und Simplonstraße)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/artikel.1496371.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/24-10-22-fahrradstr-modersohnstrasse-vzp.pdf?ts=1729601391 (Vorfahrt gewähren in der Simplonstr.; gegenläufige Einbahnstraßen für Kfz)
 #: last_checked: 2024-09-08 vvv
 #: next_check: 2027-09-30 vvv
 Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011,10812
@@ -8226,7 +8229,7 @@ Falkentaler Steig: entsteht hier ein Zebrastreifen?	? 2842,24293 2903,24264 2971
 # REMOVED --- #: note: Halteverbotsschilder bis 20.11.2023; auf der nördlichen Seite ab Jessnerstr. markiert, noch ohne Radwegschilder; es wurden nur kleine Stellen saniert (bereits eingetragen, inkl. neuen qualitaet_s-Eintrag) --- #: note: Richtung Osten: zwischen Weichselstr. und Müggelstr. bereits markiert und ausgeschildert, trotzdem parken hier noch Autos; am 2024-02-13 zum ersten Mal frei gesehen; mittlerweile dauerhaft frei und eingetragen
 #: note: Richtung Osten: ab Müggelstr. teilweise noch unsaniert (Kopfsteinpflaster) und eine Hochbaustelle; Halteverbotsschilder bis 30.06.2024; mittlerweile wurde das Gerüst abgebaut, das Haus ist noch immer eine Baustelle, auf dem zukünftigen Radstreifen steht ein Container --- nichts passiert hier! Mittlerweile sind hier Bauarbeiten.
 #: XXX An die comments_tram-Einträge denken!
-#: last_checked: 2024-10-29 vvv
+#: last_checked: 2024-10-31 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2024-12-31 vvv
@@ -8527,7 +8530,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11603
 #: osm_watch: way id="1051634661" version="11"
 #: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
-#: last_checked: 2024-10-29
+#: last_checked: 2024-10-31
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
