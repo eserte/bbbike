@@ -2202,8 +2202,8 @@ unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10512,12039 10550,1209
 Mühlendamm -> Fischerinsel, Spreeufer: unbequemes Passieren des Mittelstreifens	3::igndisp 10574,12131 10550,12096 10562,12087
 Fischerinsel, Spreeufer -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10562,12087 10550,12096 10512,12039
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10697,12303 10703,12313 10722,12349 10716,12382
-Mühlendamm -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10697,12303 10703,12313 10671,12356
-Eiergasse -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10703,12313 10722,12349
+Mühlendamm -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 10697,12303 10703,12313 10700,12316
+Eiergasse -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10700,12316 10703,12313 10722,12349
 Mühlendamm -> Spandauer Str. (Mitte) [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10703,12313 10722,12349 10665,12413
 Spandauer Str. (Mitte) [Gehweg] -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10722,12349 10716,12382
 unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,10711 5341,10756 5475,10808
@@ -3570,6 +3570,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
+Dircksenstr.: Einbahnstraßenregelung	1s:inwork 11138,12604 11202,12426
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174 9254,13171
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
@@ -4185,3 +4186,4 @@ Orankeweg -> Hansastr./Orankeweg: linker Gehweg bis zur Überquerungsmöglichkeit,
 Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg bis zur Ampel "Am Feldberg"	1::igndisp 22937,11265 22994,11251
 Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg ab Ampel Myslowitzer Str.	1::igndisp 22994,11251 23113,11262
 Gartenfelder Str.: linker Gehweg bis Ampel	1::igndisp -1336,14786 -1282,14789
+Molkenmarkt - Eiergasse: linker Gehweg	1::igndisp 10700,12316 10697,12303

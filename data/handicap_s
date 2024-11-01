@@ -2610,6 +2610,9 @@ Rummelsburger Seeblick: Fußgänger	q3 14927,10807 14918,10769 14909,10732
 (Karl-Marx-Str. - Richardstr.): Fußgänger	q4 12834,8005 12926,8039
 Suttnerstr.: einige Fußgänger	q2 7728,5866 7733,5893 7735,5960
 (Wolfensteindamm - Händelplatz): Baustelleneinrichtung, Ausweichen auf Gehweg	q3 4543,4820 4517,4853
+Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
+(Reinhardtstr. - Am Zirkus): schmal, einige Fußgänger	q4 9058,13054 9090,13009
+(Am Zirkus - Bertolt-Brecht-Platz): einige Fußgänger	q3 9090,13009 9153,12928
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2913,7 +2916,7 @@ Spandauer Str. [Gehweg]: Touristen	q4 10580,12513 10626,12455 10665,12413 10722,
 Poststr.: Touristen	q3 10475,12438 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10662,12255
 Nikolaikirchplatz: Touristen	q3 10639,12394 10671,12356 10625,12315 10595,12328 10569,12311
 Propststr.: Touristen	q3 10492,12289 10553,12333 10611,12378 10639,12394 10665,12413
-Eiergasse: Touristen	q3 10671,12356 10703,12313
+Eiergasse: Touristen	q3 10671,12356 10700,12316 10703,12313
 Am Nußbaum: Touristen	q3 10646,12470 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nußbaum): Touristen	q3 10597,12405 10536,12355
 (Scottweg - Tharauer Allee): Fußgänger, Bordstein	q1 -1403,11279 -1505,11307
@@ -3558,6 +3561,7 @@ Wriezener Karree: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 5522,8024 5521,8087
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9441,12670 9429,12728 9402,12792 9386,12833 9375,12911
+Dircksenstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 11138,12604 11202,12426
 Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174 9254,13171
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5802,10621
 Weinmeisterhornweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -4798,11231 -4579,11174
@@ -3647,3 +3651,4 @@ Orankeweg -> Hansastr./Orankeweg: linker Gehweg bis zur Überquerungsmöglichkeit,
 Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg bis zur Ampel "Am Feldberg"	q3::igndisp; 22994,11251 22937,11265
 Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg ab Ampel Myslowitzer Str.	q3::igndisp; 23113,11262 22994,11251
 Gartenfelder Str.: linker Gehweg bis Ampel	q3::igndisp; -1282,14789 -1336,14786
+Molkenmarkt - Eiergasse: linker Gehweg	q4::igndisp; 10697,12303 10700,12316

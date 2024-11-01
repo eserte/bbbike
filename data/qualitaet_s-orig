@@ -11697,6 +11697,8 @@ Alexanderplatz: Pflasterung mit Schäden	Q1- 11030,12741 11087,12780
 # REMOVED (existiert nicht mehr?) --- (Debis-Parkhaus - Gleisdreieckpark): Kleinsteinpflaster	Q1 8348,10636 8332,10637
 (Am Zirkus - Bertolt-Brecht-Platz): Betonpflaster	Q0- 9212,12969 9153,12928
 # REMOVED --- #: note: genau genommen ist das Kopfsteinpflaster nur im Wendehammer, kurz vor diesen Abschnitt --- Sülzhayner Str.: Kopfsteinpflaster, Verbundsteinpflaster	Q2+ 13403,9236 13420,9259
+(Reinhardtstr. - Am Zirkus): Gehwegplatten	Q0- 9058,13054 9090,13009
+(Am Zirkus - Bertolt-Brecht-Platz): Gehwegpflasterung	Q0- 9090,13009 9153,12928
 Südpark: wassergebundene Decke	Q1 -3989,12223 -3993,12166 -4012,12111
 Südpark: wassergebundene Decke	Q1 -3993,12166 -3931,12056 -3786,11913
 Südpark: wassergebundene Decke	Q1 -4095,12006 -4021,11924 -3890,11775
@@ -13120,6 +13122,11 @@ Otto-Weidt-Platz: Asphalt	Q0 7778,14059 7850,14100
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7850,14100 7923,14142
 Am Bahnhof Wuhlheide: Betonpflaster	Q0- 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1499398.php (Sanierungsmaßnahmen vom 4.11.2024 bis 15.11.2024 zwischen Wodanstr. und Treskowstr.)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1852369528518275445
+#: by: https://pbs.twimg.com/media/GbTwGDrW0AExWdH?format=png&name=900x900 (keine Information zur Verkehrsführung des Radverkehrs)
+#: add_fragezeichen Ist die Qualität zwischen Wodanstr. und Treskowstr. nach den Bauarbeiten besser geworden?
+#: next_check 2024-11-15
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24530,12296 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1+; 9093,8665 9158,8706 9229,8718
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9229,8718 9158,8706 9093,8665
@@ -28239,7 +28246,8 @@ Ruthstr.: mäßiger Asphalt	Q1 6372,2959 6332,3007
 (Attilastr. - Marienhöher Weg): Kleinsteinpflaster	Q1 8014,4832 8002,4903 7986,4984
 #: note: Der Weg ist prinzipiell befahrbar, beleuchtet und von sehr guter Qualität. Auf beiden Einfahrten stehen aber Schilder, dass Radfahren verboten ist. Auf der Seite der Charlottenstraße ist ein Tor, wo aber kein Schloss drin ist, also immer offen.
 Reginenweg: Asphalt	Q0 6484,3292 6482,3327 6431,3417 6426,3425
-Annastr.: schlechtes Kopfsteinpflaster	Q3 5863,2825 5930,2671
+Annastr.: schlechtes Kopfsteinpflaster	Q3 5863,2825 5920,2693
+Annastr.: Mosaikpflaster	Q1 5920,2693 5930,2671
 Ruthstr.: mäßiges Kopfsteinpflaster	Q2 6129,3203 6224,3112
 Saarburger Str.: guter Beton	Q0 6529,3480 6647,3523
 #: note: "beleuchtet", "Pfosten"
@@ -30704,7 +30712,7 @@ Panoramastr.: Asphalt	Q0 10801,12901 10739,12844
 Spandauer Str. [Gehweg]: Gehwegplatten	Q0 10580,12513 10626,12455 10665,12413 10722,12349
 Poststr.: Kopfsteinpflaster	Q2 10475,12438 10536,12355 10553,12333 10569,12311 10607,12268 10629,12293 10662,12255
 Nikolaikirchplatz: Kopfsteinpflaster	Q2 10639,12394 10671,12356 10625,12315 10595,12328 10569,12311
-Eiergasse: Gehwegplatten	Q0 10671,12356 10703,12313
+Eiergasse: Gehwegplatten	Q0 10671,12356 10700,12316 10703,12313
 Am Nußbaum: Verbundsteine	Q1 10646,12470 10626,12455 10611,12444 10597,12405 10611,12378
 (Am Nußbaum): Verbundsteine	Q1 10597,12405 10536,12355
 Jägerstr. (Mitte): Asphalt	Q0 9656,12031 9913,12068 9961,12094 10003,12113
@@ -33443,5 +33451,6 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 5434,2122
 Kreuzungsbereich asphaltiert	Q0 5936,2977
 Kreuzungsbereich asphaltiert	Q0 13217,11936
 Einmündungsbereich mit Kopfsteinpflaster	Q2 6464,4779
+Wendehammerbereich asphaltiert	Q0 5920,2693
 #: ignore ^^^
 #: section ^^^

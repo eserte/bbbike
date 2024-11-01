@@ -2396,13 +2396,6 @@ Krumme Str.: Poller	3 3981,11232 3983,11289 3986,11347
 Krumme Str.: Poller	3 3986,11347 3983,11289 3981,11232
 Kaulsdorfer Str.	1 22534,6249 22325,6385
 Kaulsdorfer Str. - Mahlsdorfer Str. (BVG frei)	3 22325,6385 22534,6249 22645,6431
-Gustav-Böß-Str./Grunerstr./Jüdenstr.	3nocross::ignrte 10687,12421 10783,12502 10849,12557
-Grunerstr. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10849,12557 10783,12502 10807,12451
-Grunerstr. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10687,12421 10783,12502 10696,12601
-Jüdenstr. -> Grunerstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10696,12601 10783,12502 10849,12557
-Jüdenstr. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10696,12601 10783,12502 10807,12451
-Jüdenstr. -> Grunerstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10807,12451 10783,12502 10687,12421
-Jüdenstr. -> Jüdenstr.: Gustav-Böß-Str./Grunerstr./Jüdenstr.	3::igndisp 10807,12451 10783,12502 10696,12601
 Grunerstr./Klosterstr.	3nocross::ignrte 10849,12557 10873,12577 10950,12640
 Grunerstr. -> Grunerstr.: Grunerstr./Klosterstr.	3::igndisp 10951,12637 10873,12577 10849,12557
 Grunerstr. -> Klosterstr.: Grunerstr./Klosterstr.	3::igndisp 10951,12637 10873,12577 10900,12546

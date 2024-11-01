@@ -221,7 +221,13 @@ Gürtelstr.	F::inwork 15153,11691
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-# REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- #: last_checked: 2023-08-09 --- #: check_frequency: 30d --- #: next_check: 2023-08-09 --- #: valid: -20230809 --- Tucholskystr./Ziegelstr.	X::inwork 9559,13087
+# REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- 
+#: last_checked: 2024-11-01
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2024-12-20
+#: valid: -20241220
+Tucholskystr./Ziegelstr.: Gegenverkehrsregelung	X::inwork::alternating 9559,13087
+# 
 # REMOVED (entfernt) --- #: XXX schon seit mehreren Tagen ausgeschaltet --- #: last_checked: 2023-05-05 --- #: check_frequency: 30d --- Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
 # REMOVED (existiert nicht mehr) --- #: next_check_id: WILHELMAMPEL-2022 --- #: source_id: viz2021:13.184034,52.519038,11.10.2022,07:00 (Sperrung der Wilhelmstr. Richtung Nordosten bis 28.10.2022) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.183049,52.518565,02.11.2022,08:00 (bis 30.11.2022) (bis 9.12.2022) (inaktiv) --- #: by: https://nitter.cz/VIZ_Berlin/status/1579825402096521218#m (bis auf Weiteres gibt es keine Sperrung) --- #: note: am 2022-09-22 war hier eine temporäre Ampelanlage für die gesamte Einmündung mit vollständiger Gelbmarkierung, aber noch nicht eingeschaltet --- #: note: gilt nicht für Radfahrer Richtung Süden (Heerstr.) --- #: add_fragezeichen: Existiert die provisorische Ampel noch immer? --- #: last_checked: 2022-10-08 --- #: check_frequency: 120d --- #: next_check: 2022-12-09 --- Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 # REMOVED (abgebaut) --- #: next_check_id: HAENSEL-2022 --- #: last_checked: 2022-10-24 --- #: XXX Ampel befindet sich südöstlich der Einmündung --- Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
@@ -790,6 +796,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10213,11728
 	X 10512,12039
 	X 10687,12421
+#: note: Anforderung für aus dem Mühlendamm in die Stralauer Str. linksabbiegende Radfahrer
 	X 10697,12303
 	X 11347,12223
 #: note: eventuell im gleichen Zyklus wie die benachbarte Ampel?
@@ -3413,7 +3420,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-10-30 vvv
+#: last_checked: 2024-11-01 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3890,6 +3897,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (nun nur noch Fußgängerampel) --- #: next_check_id: MOLKENMARKT-2021 --- #: XXX zurzeit erstreckt sich die Ampelanlage bis zur Einmündung der alten Grunerstr.; nach den Bauarbeiten bleibt vermutlich nur eine Fußgängerampel --- #: last_checked: 2024-02-13 (mapillary) --- #: check_frequency: 90d
 #: note: gilt nicht für Radfahrer Richtung Südwesten
 	F 10873,12577
+	X 10783,12502
 #: by: osm, mapillary
 #: note: Anforderungsampel
 	F 9704,19428
