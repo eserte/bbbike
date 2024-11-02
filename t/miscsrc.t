@@ -129,6 +129,10 @@ for my $f (@files) {
 	    if $f =~ m{/( vbb-stops-to-bbd.pl
                        |  mudways-enrich.pl
 		       )$}x && !eval { require Text::CSV_XS; 1 };
+	myskip "$f works only with installed Time::Moment", 1
+	    if $f =~ m{/( bvg_disruptions_format.pl
+		       |  mapillary-v4-fetch                  
+		       )$}x && !eval { require Time::Moment; 1 };
 
 	my @add_opts;
 	if ($f =~ m{\.pm$}) {
