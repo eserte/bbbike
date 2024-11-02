@@ -55,7 +55,9 @@ my @check_points       = ($perl, "$miscsrcdir/check_points");
 my @orig_files = bsd_glob("*-orig");
 my @fragezeichen_lowprio_bbd = defined $bbbikeauxdir ? "$bbbikeauxdir/bbd/fragezeichen_lowprio.bbd" : ();
 
-my @ADDITIONAL_SOURCEID_FILES	= ('routing_helper-orig', @fragezeichen_lowprio_bbd);
+my @ADDITIONAL_SOURCEID_FILES_MANDATORY	= ('routing_helper-orig');
+my @ADDITIONAL_SOURCEID_FILES_OPTIONAL  = (@fragezeichen_lowprio_bbd);
+my @ADDITIONAL_SOURCEID_FILES           = (@ADDITIONAL_SOURCEID_FILES_MANDATORY, @ADDITIONAL_SOURCEID_FILES_OPTIONAL);
 my @COMMENTS_PARTIAL	= qw(comments_cyclepath comments_danger comments_ferry comments_misc
 			     comments_mount comments_path comments_route
 			     comments_trafficjam comments_tram comments_kfzverkehr comments_scenic);
@@ -572,7 +574,19 @@ sub action_makefile_vars {
 # DO NOT EDIT, CHANGE THE VARIABLES in doit.pl and re-run doit.pl!
 
 EOF
-	for my $var (qw(ADDITIONAL_SOURCEID_FILES SOURCE_TARGETS_SOURCES COMMENTS_PARTIAL SOURCE_TARGETS)) {
+	# special handling for variable with optional files
+	{
+	    local $" = " ";
+	    $out .= <<"EOF";
+ADDITIONAL_SOURCEID_FILES=	@ADDITIONAL_SOURCEID_FILES_MANDATORY
+.if exists(\$(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd)
+ADDITIONAL_SOURCEID_FILES+=	\$(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd
+.endif
+
+EOF
+	}
+
+	for my $var (qw(SOURCE_TARGETS_SOURCES COMMENTS_PARTIAL SOURCE_TARGETS)) {
 	    my @vals = eval '@'.$var; die "Can't evaluate \@$var: $@" if $@;
 	    $out .= "$var=\t" . join(" ", @vals) . "\n\n";
 	}
