@@ -57,7 +57,7 @@ check:	.check_ampelschaltung2 .check_ampelschaltung_rules
 validate:	${BBBIKETMPDIR}/.validate_garmin_devcap
 
 ${BBBIKETMPDIR}/.validate_garmin_devcap: garmin_devcap.kwalify garmin_devcap.yaml
-	pkwalify -f garmin_devcap.kwalify garmin_devcap.yaml
+	${PERL} -S pkwalify -f garmin_devcap.kwalify garmin_devcap.yaml
 	touch ${BBBIKETMPDIR}/.validate_garmin_devcap
 
 .check_ampelschaltung2:	ampelschaltung-orig.txt ${DATADIR}/ampeln-orig
