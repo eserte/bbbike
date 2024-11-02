@@ -414,17 +414,18 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 # REMOVED --- #: next_check_id: WESER-2021 --- #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert --- #: last_checked: 2024-10-09
 #: historical_note: früher (bis 2024) RW1;RW1
 	RW7;RW7 12740,8862 12881,8750
-#: next_check_id: WESER-2021
-#: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtregelung noch prüfen; es wird eine Einbahnstraßenregelung für Kfz geben, offen Richtung Südosten
-#: last_checked: 2024-10-26
-	RW0;RW0 12881,8750 13033,8628
-#: next_check_id: WESER-2021
-#: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße Richtung Osten noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!)
-#: osm_watch: way id="940399849" version="11"
-#: osm_watch: way id="1203072585" version="3"
-#: last_checked: 2024-10-26
-	RW0;RW7 13033,8628 13124,8562
-	RW7;RW7 13124,8562 13217,8493
+# REMOVED --- #: next_check_id: WESER-2021 --- #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!), Vorfahrtregelung noch prüfen; es wird eine Einbahnstraßenregelung für Kfz geben, offen Richtung Südosten --- #: last_checked: 2024-10-26
+#: historical_note: früher (bis 2024) RW1;RW1 vvv
+#: note: vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg
+	RW7; 12881,8750 13033,8628
+	RW7; 13033,8628 12881,8750
+#: historical_note ^^^
+# REMOVED --- #: next_check_id: WESER-2021 --- #: XXX ehemalige Radwege nicht mehr nutzbar, Fahrradstraße Richtung Osten noch nicht ausgeschildert, vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg (!) --- #: osm_watch: way id="940399849" version="11" --- #: osm_watch: way id="1203072585" version="3" --- #: last_checked: 2024-10-26
+#: historical_note: früher (bis 2024) RW1;RW1 vvv
+	RW7; 13033,8628 13124,8562 13217,8493
+#: note: vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg
+	RW7; 13217,8493 13124,8562 13033,8628
+#: historical_note ^^^
 	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
 Radweg nur aufgemalt, schadhafter Gehweg	RW1; 13891,7961 13724,8090

@@ -3152,7 +3152,7 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
 #: osm_watch: way id="36738527" version="46"
-#: last_checked: 2024-10-30
+#: last_checked: 2024-11-01 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-12-31
 # REMOVED (hier in Realisierung, andere fragezeichen-Einträge existieren) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493
@@ -10166,11 +10166,12 @@ Brauhausberg - Potsdam Hauptbahnhof: existiert hier ein Weg für Radfahrer? Quali
 #: by: https://www.berliner-zeitung.de/mensch-metropole/senat-legt-liste-vor-diese-s-bahnhoefe-in-berlin-werden-modernisiert-li.203197 (bis 2028)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10603 (Erwähnung, i2030-Vorhaben)
 #: by: https://afry.com/de-de/projekt/neubau-eines-zweiten-zugangs-zum-s-bahnhof-eichborndamm-in-berlin
+#: by: https://www.eba.bund.de/SharedDocs/Anhoerungsverfahren/DE/Berlin/2024/2031_Anhoerung_S-Bahnhof_Eichborndamm_Neubau_2_Zugang.html (Rampe an der Südseite)
 #: XXX exits-orig nach der Realisierung anpassen
-#: last_checked: 2023-08-26 (indoor)
+#: last_checked: 2024-11-01 (indoor, Planfeststellungsverfahren)
 # REMOVED --- #: check_frequency: 1080d
 #: next_check: 2028-12-31
-S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzbar sein?	?::projected 4475,18998 4459,18999 4460,19033 4519,19040
+S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzbar sein?	?::projected 4475,18998 4498,19006 4475,19008 4479,19045 4512,19051
 # 
 #: by: https://www.baustellen-doku.info/berlin_kremmener_bahn/zweiter_zugang_alt-reinickendorf/20221004/
 #: by: https://www.bahninfo-forum.de/read.php?9,660977,745909#msg-745909

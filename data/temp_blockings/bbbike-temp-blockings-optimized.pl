@@ -6717,19 +6717,7 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
-#: by: http://spielstraßen.de/uebersicht.php?date=20230620
-#: by: http://spielstraßen.de/uebersicht.php?date=20240401
-	q4::temp::play 5956,7686 5812,7685
-',
-         'from' => 1712181600,
-         'id' => 3830,
-         'recurring' => 1,
-         'text' => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2024 bis November 2024',
-         'type' => 'handicap',
-         'until' => 1730502000
-       },
+       undef,
        undef,
        undef,
        {
