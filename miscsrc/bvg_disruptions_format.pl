@@ -8,8 +8,7 @@
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -22,12 +21,12 @@ use Getopt::Long;
 use HTML::FormatText;
 use JSON::XS qw(decode_json);
 use List::Util qw(any first uniqstr);
-use YAML::XS qw(LoadFile);
 use Term::ANSIColor qw(colored);
 use Text::Wrap qw(wrap);
 use Tie::IxHash;
 
 use BBBikeUtil qw(bbbike_root is_in_path);
+use BBBikeYAML qw(LoadFile);
 
 my $variant = 'bvg2024';
 
