@@ -31259,10 +31259,15 @@ EOF
 #: next_check: 2024-11-03
 # REMOVED --- #: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
+#: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
 Alexanderufer	2::temp 8315,13181 8315,13042
+#: source_id: viz2021:13.37679,52.5163,02.11.2024,06:00 (bis 13.11.2024)
 Straße des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095
+#: source_id: viz2021:13.37688,52.51775,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
+#: source_id: viz2021:13.37737,52.51457,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
+#: source_id: viz2021:13.36975,52.51584,02.11.2024,06:00 (bis 13.11.2024)
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 # (4.11.2024 - 13.11.2024 22:00) --- Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
 # (5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00) --- Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
@@ -38032,8 +38037,8 @@ EOF
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-09-21
-#: check_frequency: 150d
+#: last_checked: 2024-11-02 (daf)
+#: check_frequency: 120d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
 EOF
@@ -44467,7 +44472,7 @@ EOF
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-10-30
+#: last_checked: 2024-11-02
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -45057,7 +45062,7 @@ EOF
        data  => <<EOF,
 #: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: last_checked: 2024-10-30
+#: last_checked: 2024-11-02
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
