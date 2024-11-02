@@ -368,6 +368,9 @@ $VERSION = $BBBike::VERSION;
 $progname = basename($0);
 use Sys::Hostname qw(hostname);
 $devel_host = (eval { hostname } =~ /^(biokovo|biokovo-amd64|mosor|vran|cabulja|cvrsnica|spiff|mom|devpc01|devpc01-debian)(\.|$)/i);
+if (defined $ENV{BBBIKE_DEVEL}) {
+    $devel_host = $ENV{BBBIKE_DEVEL};
+}
 $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : 						   'unix';
 $os_bsd = $^O =~ /bsd/i;
