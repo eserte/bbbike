@@ -1,4 +1,4 @@
-#!/usr/bin/env pistachio-perl
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
@@ -8,13 +8,13 @@
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
 use warnings;
-use lib "$ENV{HOME}/src/bbbike";
+use FindBin;
+use lib "$FindBin::RealBin/..";
 
 use File::Basename qw(dirname);
 use File::Path qw(make_path);
@@ -24,7 +24,8 @@ use LWP::UserAgent;
 use POSIX qw(floor strftime);
 use Time::Moment;
 use Time::Local;
-use YAML::XS qw(LoadFile);
+
+use BBBikeYAML qw(LoadFile);
 
 my $debug = 1;
 my $statistics = 0;
