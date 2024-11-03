@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015,2016,2017,2018,2020,2021,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2016,2017,2018,2020,2021,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,13 +18,14 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.25';
+    $VERSION = '0.26';
 
     sub has_gps_settings { 1 }
 
     sub transfer_to_file { 0 }
 
     sub ok_label { "Kopieren auf das Gerät" } # M/Mfmt XXX
+    sub ok_test_label { "Simulation" } # M/Mfmt XXX
 
     sub tk_interface {
 	my($self, %args) = @_;
@@ -54,6 +55,37 @@
 			      );
 	close $ofh;
 
+	return {
+	    fh => $ofh,
+	    file => $ofile,
+	    route => $simplified_route,
+	};
+    }
+
+    sub transfer {
+	my($self, %args) = @_;
+
+	my $res = $args{-res};
+	my $ofile = $res->{file} || _status_message("FATAL ERROR: -res.file is missing", "die");
+	my $route = $res->{route};
+
+	local $ENV{BBBIKE_DEBUG_BBBIKEGPS_MOUNTEDDEVICE} = $ENV{BBBIKE_DEBUG_BBBIKEGPS_MOUNTEDDEVICE};
+	if ($args{-test}) {
+	    if (!$ENV{BBBIKE_DEBUG_BBBIKEGPS_MOUNTEDDEVICE}) {
+		my $user_run_dir = "/run/user/$>"; # probably works only on contemporary Linux systems where this is a separate tmpfs mount
+		if (!-d $user_run_dir) {
+		    _status_message("Cannot simulate upload: no directory $user_run_dir available", "die");
+		}
+		my $gpx_dir = "$user_run_dir/Garmin/GPX";
+		require File::Path;
+		File::Path::make_path($gpx_dir);
+		$ENV{BBBIKE_DEBUG_BBBIKEGPS_MOUNTEDDEVICE} = $user_run_dir;
+		_status_message("Note: simulated GPX file will occur in $gpx_dir", 'infodlg');
+	    } else {
+		_status_message("Note: simulated GPX file will occur in $ENV{BBBIKE_DEBUG_BBBIKEGPS_MOUNTEDDEVICE}; maybe you have make sure that Garmin/GPX or a similar subdirectory exists.", 'infodlg');
+	    }
+	}
+
 	$self->maybe_mount
 	    (sub {
 		 my($mount_point) = @_;
@@ -75,7 +107,7 @@
 		     die "Cannot find a suitable directory in $mount_point, tried: @try_subdirs";
 		 }
 
-		 (my $safe_routename = $simplified_route->{routename}) =~ s{[^A-Za-z0-9_-]}{_}g;
+		 (my $safe_routename = $route->{routename}) =~ s{[^A-Za-z0-9_-]}{_}g;
 		 require POSIX;
 		 $safe_routename = POSIX::strftime("%Y%m%d_%H%M%S", localtime) . '_' . $safe_routename . '.gpx';
 
@@ -93,8 +125,6 @@
 
     }
 
-    sub transfer { } # NOP
-
     sub maybe_mount {
 	my(undef, $cb, %opts) = @_;
 	my $prefer_device = delete $opts{prefer_device};
@@ -108,7 +138,9 @@
 	my($mount_point, $mount_device, @mount_opts);
 	my @mount_point_candidates;
 	my $udisksctl; # will be set if Linux' DeviceKit is available
-	if ($^O eq 'freebsd') { ##############################################
+	if ($ENV{BBBIKE_DEBUG_BBBIKEGPS_MOUNTEDDEVICE}) { # set this to something like /run/user/$uid
+	    $mount_point = $ENV{BBBIKE_DEBUG_BBBIKEGPS_MOUNTEDDEVICE};
+	} elsif ($^O eq 'freebsd') { ##############################################
 	    if ($garmin_disk_type ne 'flash') {
 		die "NYI: only support for garmin_disk_type => flash available";
 		# XXX actual problem is just the hardcoded $mount_point
