@@ -17,7 +17,7 @@ use Time::HiRes qw(time);
 use Test::More 'no_plan';
 
 use Strassen::Core;
-use VectorUtil qw(get_polygon_center bbox_of_polygon);
+use VectorUtil qw(get_polygon_center_best bbox_of_polygon);
 
 my @test_files = qw(flaechen wasserstrassen wasserumland wasserumland2 sehenswuerdigkeit); # files which usually have F:... records
 
@@ -32,7 +32,7 @@ for my $test_file (@test_files) {
 	     if ($r->[Strassen::CAT] =~ m{^F:}) {
 		 my @coords = map { split /,/, $_ } @{ $r->[Strassen::COORDS] };
 		 my $t0 = time;
-		 my($cx,$cy) = get_polygon_center(@coords);
+		 my($cx,$cy) = get_polygon_center_best(@coords);
 		 $sumtime += (time - $t0); $count++;
 		 my $common_testname = "for $test_file, $r->[Strassen::NAME]";
 		 ok $cx, "x center $common_testname ok";
@@ -43,7 +43,7 @@ for my $test_file (@test_files) {
 	 });
 }
 
-diag sprintf "Average speed of get_polygon_center() call: %.2fms", 1000*($sumtime/$count);
+diag sprintf "Average speed of get_polygon_center_best() call: %.2fms", 1000*($sumtime/$count);
 
 sub get_bbox {
     my($coords_ref) = @_;

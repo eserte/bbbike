@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2004,2008,2010,2011,2014,2016,2017,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2004,2008,2010,2011,2014,2016,2017,2019,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,17 +15,19 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = 1.27;
+$VERSION = 1.28;
 
 require Exporter;
 @ISA = 'Exporter';
 
 @EXPORT_OK = qw(vector_in_grid project_point_on_line distance_point_line
-		distance_point_rectangle get_polygon_center
+		distance_point_rectangle
+		get_polygon_center get_polygon_center_best
 		point_in_grid point_in_polygon move_point_orthogonal
 		intersect_rectangles enclosed_rectangle normalize_rectangle
 		azimuth offset_line bbox_of_polygon combine_bboxes
 		triangle_area triangle_area_by_lengths
+		flatten_polygon xy_polygon
 	       );
 
 sub pi () { 4 * atan2(1, 1) } # 3.141592653
@@ -240,7 +242,12 @@ sub distance_point_rectangle {
     $dist;
 }
 
+######################################################################
+
 # See https://de.wikipedia.org/wiki/Geometrischer_Schwerpunkt#Polygon
+# Calculates the centroid of the given polygon (flat coordinates)
+# However, the result may be *outside* of the polygon. See
+# get_polygon_center_forceinside and get_polygon_center_medialaxis for alternatives.
 sub get_polygon_center {
     my(@coords) = @_;
 
@@ -268,6 +275,91 @@ sub get_polygon_center {
 	undef;
     }
 }
+
+# Get the centroid of the given polygon (flat coordinates).
+# If the centroid is outside of the polygon then fallback
+# to returning the middle point of the polygon outline.
+# See get_polygon_center_medialaxis for a better alternative.
+sub get_polygon_center_forceinside {
+    my(@coords) = @_;
+
+    my($xs,$ys) = get_polygon_center(@coords);
+    my @xy_polygon = xy_polygon(@coords);
+    return ($xs,$ys) if point_in_polygon([$xs,$ys], \@xy_polygon);
+
+    my $middle = int $#xy_polygon/2;
+    return ($xy_polygon[$middle][0],$xy_polygon[$middle][1]);
+}
+
+# Calculate a polygon center by using a medial axis.
+# Needs the non-standard perl module Math::Geometry::Voronoi.
+sub get_polygon_center_medialaxis {
+    my(@coords) = @_;
+
+    require Math::Geometry::Voronoi;
+
+    # make closed polygon:
+    if ($coords[0] != $coords[-2] || $coords[1] != $coords[-1]) {
+	push @coords, @coords[0,1];
+    }
+
+    my @polygon = xy_polygon(@coords);
+    
+    my $voronoi = Math::Geometry::Voronoi->new(points=>\@polygon);
+    $voronoi->compute;
+
+    my $midpoint = sub {
+	my ($point1, $point2) = @_;
+	return [(($point1->[0] + $point2->[0]) / 2), (($point1->[1] + $point2->[1]) / 2)];
+    };
+
+    my @medial_axis;
+    # Extract Voronoi edges within the polygon and construct the medial axis.
+    foreach my $edge (@{$voronoi->edges}) {
+	my $index1 = $edge->[1];
+	my $index2 = $edge->[2];
+
+	my $start = ($index1 != -1) ? $voronoi->vertices->[$index1] : undef;
+	my $end = ($index2 != -1) ? $voronoi->vertices->[$index2] : undef;
+
+	if ($start && $end) {
+	    # Check if both endpoints are within the polygon.
+	    if (
+		point_in_polygon($start, \@polygon) &&
+		point_in_polygon($end, \@polygon)
+	    ) {
+		my $midpoint = $midpoint->($start, $end);
+		push @medial_axis, $midpoint;
+	    }
+	}
+    }
+
+    my $middle = $medial_axis[$#medial_axis/2];
+    if (!$middle) {
+	warn "WARNING: cannot find medial axis, fallback to $coords[0],$coords[1]...\n";
+	@coords[0,1];
+    } else {
+	@$middle;
+    }
+}
+
+# Use the best available implementation for calculating the
+# polygon center.
+{
+    my $IMPLEMENTATION;
+    sub get_polygon_center_best {
+	if (!defined $IMPLEMENTATION) {
+	    if (0 && eval { require Math::Geometry::Voronoi; 1 }) { # XXX not activated yet!
+		$IMPLEMENTATION = \&get_polygon_center_medialaxis;
+	    } else {
+		$IMPLEMENTATION = \&get_polygon_center_forceinside;
+	    }
+	}
+	goto $IMPLEMENTATION;
+    }
+}
+
+######################################################################
 
 # only for parallel rectangles, does not check for enclosed rectangles
 sub intersect_rectangles {
@@ -584,6 +676,22 @@ sub triangle_area_by_lengths {
     my($a, $b, $c) = @_;
     my $s = ($a + $b + $c) / 2;
     sqrt($s * ($s-$a) * ($s-$b) * ($s-$c));
+}
+
+# flatten a polygon consisting of ([$x0,$y0],...) into ($x0,$y0,....)
+sub flatten_polygon {
+    my(@xy) = @_;
+    map { @$_ } @xy;
+}
+
+# make a flat polygon consisting of ($x0,$y0,...) into ([$x0,$y0],...)
+sub xy_polygon {
+    my(@coords) = @_;
+    my @xy;
+    for(my $i=0; $i<$#coords; $i+=2) {
+	push @xy, [$coords[$i], $coords[$i+1]];
+    }
+    @xy;
 }
 
 # Protect from floating point inaccuracies

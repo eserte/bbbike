@@ -24,7 +24,7 @@ use Getopt::Long;
 use BBBikeTest qw(is_float);
 use Strassen::Util qw();
 
-plan tests => 32;
+plan tests => 35;
 
 my $do_bench;
 my $do_xxx;
@@ -38,7 +38,9 @@ GetOptions(
 use VectorUtil qw(intersect_rectangles normalize_rectangle
 		  enclosed_rectangle bbox_of_polygon combine_bboxes
 		  distance_point_line distance_point_rectangle project_point_on_line
-		  offset_line triangle_area triangle_area_by_lengths);
+		  offset_line triangle_area triangle_area_by_lengths
+		  flatten_polygon xy_polygon
+	       );
 
 goto XXX if $do_xxx;
 
@@ -232,6 +234,16 @@ sub test_offset_line {
     } else {
 	is "@got_hin", "@expected_hin", $testname;
     }
+}
+
+{
+    my @coords = (1,2, 3,4);
+    my @xy = xy_polygon(@coords);
+    is_deeply \@xy, [[1,2],[3,4]], 'result of xy_polygon';
+    my @coords2 = flatten_polygon(@xy);
+    is_deeply \@coords2, \@coords, 'result of flatten_polygon';
+
+    is_deeply [xy_polygon()], [], 'xy_polygon on empty list';
 }
 
 __END__
