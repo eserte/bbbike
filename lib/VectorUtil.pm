@@ -280,7 +280,7 @@ sub get_polygon_center {
 # If the centroid is outside of the polygon then fallback
 # to returning the middle point of the polygon outline.
 # See get_polygon_center_medialaxis for a better alternative.
-sub get_polygon_center_forceinside {
+sub get_polygon_center_fallbackoutline {
     my(@coords) = @_;
 
     my($xs,$ys) = get_polygon_center(@coords);
@@ -291,55 +291,66 @@ sub get_polygon_center_forceinside {
     return ($xy_polygon[$middle][0],$xy_polygon[$middle][1]);
 }
 
-# Calculate a polygon center by using a medial axis.
-# Needs the non-standard perl module Math::Geometry::Voronoi.
-sub get_polygon_center_medialaxis {
+# Get the centroid of the given polygon (flat coordinates).
+# If the centroid is outside of the polygon then project
+# this point in the direction of the nearest polygon corner point
+# into the middle of this polygon span.
+sub get_polygon_center_projectcentroidinside {
     my(@coords) = @_;
 
-    require Math::Geometry::Voronoi;
+    my($xs,$ys) = get_polygon_center(@coords);
+    my @xy_polygon = xy_polygon(@coords);
+    return ($xs,$ys) if point_in_polygon([$xs,$ys], \@xy_polygon);
+    _project_point_inside_polygon([$xs,$ys], \@xy_polygon);
+}
 
-    # make closed polygon:
-    if ($coords[0] != $coords[-2] || $coords[1] != $coords[-1]) {
-	push @coords, @coords[0,1];
-    }
+sub _project_point_inside_polygon {
+    my($point, $polygon) = @_;
+    my($x, $y) = @$point;
 
-    my @polygon = xy_polygon(@coords);
-    
-    my $voronoi = Math::Geometry::Voronoi->new(points=>\@polygon);
-    $voronoi->compute;
-
-    my $midpoint = sub {
-	my ($point1, $point2) = @_;
-	return [(($point1->[0] + $point2->[0]) / 2), (($point1->[1] + $point2->[1]) / 2)];
+    my $distance = sub {
+	my ($x1, $y1, $x2, $y2) = @_;
+	return sqrt(($x2 - $x1)**2 + ($y2 - $y1)**2);
     };
 
-    my @medial_axis;
-    # Extract Voronoi edges within the polygon and construct the medial axis.
-    foreach my $edge (@{$voronoi->edges}) {
-	my $index1 = $edge->[1];
-	my $index2 = $edge->[2];
+    my $line_intersection = sub {
+	my ($x1, $y1, $x2, $y2, $x3, $y3, $x4, $y4) = @_;
+	my $denom = ($y4 - $y3) * ($x2 - $x1) - ($x4 - $x3) * ($y2 - $y1);
+	return undef if $denom == 0;  # Lines are parallel
 
-	my $start = ($index1 != -1) ? $voronoi->vertices->[$index1] : undef;
-	my $end = ($index2 != -1) ? $voronoi->vertices->[$index2] : undef;
+	my $ua = (($x4 - $x3) * ($y1 - $y3) - ($y4 - $y3) * ($x1 - $x3)) / $denom;
+	my $ub = (($x2 - $x1) * ($y1 - $y3) - ($y2 - $y1) * ($x1 - $x3)) / $denom;
 
-	if ($start && $end) {
-	    # Check if both endpoints are within the polygon.
-	    if (
-		point_in_polygon($start, \@polygon) &&
-		point_in_polygon($end, \@polygon)
-	    ) {
-		my $midpoint = $midpoint->($start, $end);
-		push @medial_axis, $midpoint;
-	    }
-	}
+	return [$x1 + $ua * ($x2 - $x1), $y1 + $ua * ($y2 - $y1)] if $ua >= 0 && $ua <= 1 && $ub >= 0 && $ub <= 1;
+	return undef;
+    };
+
+    # Find the nearest corner point
+    my $nearest_corner = (sort { $distance->($x, $y, @$a) <=> $distance->($x, $y, @$b) } @$polygon)[0];
+
+    # Project the line to the other side of the polygon
+    my ($cx, $cy) = @$nearest_corner;
+    my $dx = $x - $cx;
+    my $dy = $y - $cy;
+    my $far_point = [$cx - $dx * 1000, $cy - $dy * 1000];  # Extend line far beyond polygon
+
+    # Find intersection with polygon edges
+    my $intersection;
+    for my $i (0 .. $#$polygon) {
+        my $j = ($i + 1) % @$polygon;
+        my $int = $line_intersection->($cx, $cy, $far_point->[0], $far_point->[1],
+				       $polygon->[$i][0], $polygon->[$i][1],
+				       $polygon->[$j][0], $polygon->[$j][1]);
+        if ($int) {
+            $intersection = $int;
+            last;
+        }
     }
 
-    my $middle = $medial_axis[$#medial_axis/2];
-    if (!$middle) {
-	warn "WARNING: cannot find medial axis, fallback to $coords[0],$coords[1]...\n";
-	@coords[0,1];
+    if ($intersection) {
+	return (($cx + $intersection->[0]) / 2, ($cy + $intersection->[1]) / 2);
     } else {
-	@$middle;
+	return ($cx, $cy);
     }
 }
 
@@ -349,10 +360,10 @@ sub get_polygon_center_medialaxis {
     my $IMPLEMENTATION;
     sub get_polygon_center_best {
 	if (!defined $IMPLEMENTATION) {
-	    if (0 && eval { require Math::Geometry::Voronoi; 1 }) { # XXX not activated yet!
-		$IMPLEMENTATION = \&get_polygon_center_medialaxis;
+	    if (1) {
+		$IMPLEMENTATION = \&get_polygon_center_projectcentroidinside;
 	    } else {
-		$IMPLEMENTATION = \&get_polygon_center_forceinside;
+		$IMPLEMENTATION = \&get_polygon_center_fallbackoutline;
 	    }
 	}
 	goto $IMPLEMENTATION;
