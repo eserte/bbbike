@@ -8335,20 +8335,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'until' => 1736096400
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.346105,52.497104,23.08.2024,09:00 (hier ist die Motzstr. nicht erwähnt; bis 17.12.2024)
-#: also_indoor: traffic (B,T)
-#: last_checked: 2024-09-21
-#: check_frequency: 45d
-#: next_check: 2024-12-17
-	q4::inwork; 6499,10086 6427,10044
-',
-         'from' => 1726933883,
-         'id' => 4169,
-         'text' => 'Motzstr.: Bauarbeiten, Fahrbahn Richtung Viktoria-Luise-Platz gesperrt, voraussichtlich bis Mitte Dezember 2024',
-         'type' => 'handicap',
-         'until' => 1734476399
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
@@ -8400,7 +8387,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: last_checked: 2024-11-02
+#: last_checked: 2024-11-03
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623

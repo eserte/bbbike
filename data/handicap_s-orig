@@ -1194,7 +1194,7 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdlich-der-hohenstaufen-pallas-und-goebenstra%C3%9Fe-kleinere-p/?postID=757023#post757023
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
 #: by: https://www.deutsches-architekturforum.de/thread/15362-bv-am-winterfeldt-sch%C3%B6neberg/?postID=760855#post760855
-#: last_checked: 2024-09-21 vvv
+#: last_checked: 2024-11-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-05 vvv
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
@@ -2315,7 +2315,14 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 (Hornbach-Parkplatz): Parkplatzverkehr	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 (Lidl-Parkplatz): Parkplatzverkehr	q1 11962,15681 12058,15621
 # REMOVED -> Parkplatz eingetragen --- Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
-Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
+# 
+#: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt
+#: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
+#: last_checked: 2024-11-03
+#: check_frequency: 120d
+#: next_check: 2025-04-15
+Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
+# 
 #: XXX_prog BS: Bordstein am Blücherplatz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle
 #: note: früher "q2"
 (Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q4+ 9631,10142 9687,10180
