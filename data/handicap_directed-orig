@@ -348,6 +348,11 @@ Otto-Schmirgal-Str. -> Am Tierpark: Z-Übergang	DH:h=q4,25 18512,10337 18554,1035
 Marienfelder Chaussee -> Delmer Steig: Umweg wegen Mittelstreifen	DH:len=50 12207,1704 11865,1564 11895,1489
 Delmer Steig -> Marienfelder Chaussee: Mittelstreifen, zunächst den linken Gehweg benutzen	DH:h=q3,25 11895,1489 11865,1564 11765,1522
 # 
+Lynarstr./Müllerstr.: Umweg über Fußgängerampel auf der linken Seite, Fußgänger	DH:len=30:h=q4,60 7694,15125 7745,15160 7929,15355
+Lynarstr./Müllerstr.: Umweg über Fußgängerampel auf der rechten Seite, Fußgänger	DH:len=30:h=q4,60 7929,15355 7745,15160 7694,15125
+Müllerstr. -> Lynarstr.: Umweg über Fußgängerampel, Fußgänger	DH:len=15:h=q4,30 7845,15066 7745,15160 7694,15125
+Müllerstr. -> Lynarstr.: Fußgänger an der Fußgängerampel	DH:h=q4,30 7669,15227 7745,15160 7929,15355
+# 
 ######################################################################
 # Vorübergehende Einschränkungen
 #
@@ -550,6 +555,8 @@ Björnsonstr. - Bornholmer Str.: zunächst linken Gehweg nehmen	DH:h=q4,125 10209,
 #: next_check ^^^
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1497001.php
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bis-zum-6-dezember-soll-die-fahrbahn-instand-gesetzt-werden_a428605
+#: source_id: viz2021:13.560481,52.446398,04.11.2024,09:00 (bis 06.12.2024)
 #: next_check: 2024-11-04 vvv
 #: valid: 20241104-20241120 vvv
 Oberspreestr.: Radfahrer müssen vermutlich den südlichen Bürgersteig nutzen	DH:t=30:len=25 21390,4637 21332,4655 21170,4706

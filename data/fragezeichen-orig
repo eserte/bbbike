@@ -1155,7 +1155,7 @@ Kurpark: Verbesserung der Befahrbarkeit geplant	?::projected 24964,6046 25183,60
 #: source_id: 2147343845 (Gesamtmaßnahme bis Mitte April 2019) (inaktiv)
 #: source_id: 2147343951 (bis Mitte April 2019) (inaktiv)
 #: source_id: bvg2024:n65#HIM_FREETEXT_230516 (bis 31.08.2024) (bis 31.10.2024)
-#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (Gleisbauarbeiten zwischen Wilhelminenhofstraße und Steffelbauerstraße, nur Kfz-Verkehr, bis 26.08.2024) (bis 28.10.2024) (bis 03.11.2024)
+#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (Gleisbauarbeiten zwischen Wilhelminenhofstraße und Steffelbauerstraße, nur Kfz-Verkehr, bis 26.08.2024) (bis 28.10.2024) (bis 03.11.2024) (inaktiv)
 #: osm_watch: way id="93704161" version="26"
 #: last_checked: 2024-10-24 vvv
 #: check_frequency: 90d vvv
@@ -1327,7 +1327,7 @@ Grünauer Weg: Verbesserung der Befahrbarkeit	?::projected 25182,-2915 25174,-290
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
-#: last_checked: 2024-10-08 (mapillary)
+#: last_checked: 2024-11-03
 #: check_frequency: 180d
 Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
 # 
@@ -2084,7 +2084,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10727 (kein konkreter Zeitraum)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1348463.php (Erwähnung)
 #: note: der erste infravelo-Eintrag bezieht sich anscheinend auf die gesamte Friedenstraße
-#: last_checked: 2024-09-29
+#: last_checked: 2024-11-03
 #: next_check: 2025-12-31
 Friedenstr.: was wird hier genau gemacht?	?::projected 12325,13148 12382,13097 12416,13045
 # 
@@ -3151,13 +3151,17 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/umbau-der-weserstrasse-bis-zur-innstrasse-abgeschlossen_a428161 (letzte Etappe 2027)
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
-#: osm_watch: way id="36738527" version="46"
+# REMOVED (hier fertig) --- #: osm_watch: way id="36738527" version="47"
+#: osm_watch: way id="36738531" version="36"
+#: osm_watch: way id="881155244" version="15"
 #: last_checked: 2024-11-02
 #: check_frequency: 120d
 #: next_check: 2027-12-31
 # REMOVED (hier in Realisierung, andere fragezeichen-Einträge existieren) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (3. Bauabschnitt (Innstr. - Ederstr.): bis Ende 2025)
+#: osm_watch: way id="839040274" version="8"
+#: osm_watch: way id="1136034132" version="5"
 #: last_checked: 2024-10-12 (mapillary)
 #: next_check: 2027-12-31
 Ederstr.: Planung einer Fahrradstraße	?::projected 13946,7918 13919,7707
@@ -5272,10 +5276,10 @@ Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/schwedter-strasse-ist-fahrradstrasse_a423705
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12603 (Einwohneranfrage)
 #: by: https://www.infravelo.de/projekt/schwedter-strasse/ (4. Quartal 2024 - 2. Quartal 2025)
-#: osm_watch: note 3954748 3
+#: osm_watch: note 3954748 4
 #: osm_watch: note 4127416 1
 #: XXX Vorfahrtsregelung wird auch geändert, Einbahnstraßenregelungen für Kfz (Höhe Fürstenberger Str. nur Richtung N/S bis Griebenower)
-#: last_checked: 2024-10-23 (mapillary)
+#: last_checked: 2024-11-03
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 # REMOVED (hier noch) nicht) --- Schwedter Str.: Fahrradstraße geplant, wo genau?	? 10933,14122 10822,14179 10739,14228 10629,14299
@@ -5700,7 +5704,7 @@ Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595
 Gleimstr.: entsteht hier eine Fahrradstraße?	? 10953,15787 10701,15750 10554,15725 10426,15705 10418,15704 10170,15659 10130,15653
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021/2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Umsetzung 2022/2023)
-#: last_checked: 2024-10-11 (mapillary)
+#: last_checked: 2024-11-03
 #: check_frequency: 360d
 Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,14235 11229,14422 11285,14515 11317,14564 11436,14741 11535,14900
 # REMOVED --- #: next_check ^^^
@@ -7296,14 +7300,14 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2024-10-25
+#: last_checked: 2024-11-03
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2024-11-01
+#: last_checked: 2024-11-03
 #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
 # 
@@ -7320,8 +7324,10 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1498745.php (Baubeginn ab November 2024, zunächst zwischen Revaler Straße und Simplonstraße)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/artikel.1496371.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/24-10-22-fahrradstr-modersohnstrasse-vzp.pdf?ts=1729601391 (Vorfahrt gewähren in der Simplonstr.; gegenläufige Einbahnstraßen für Kfz)
+#: by: https://viz.berlin.de/aktuelle-meldungen/baubeginn-fur-die-fahrradstrasse-in-der-modersohnstrasse/
+#: note: laut rbb beginnen die Bauarbeiten am 4.11.2024, bis 8.11.2024 für Kfz gesperrt
 #: last_checked: 2024-11-03
-#: next_check: 2024-11-08
+#: next_check: 2024-11-04
 Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::projected 14134,11272 14181,11434 14211,11552
 # 
 #: by: https://www.infravelo.de/projekt/modersohnstrasse/ (2.-3. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027)
@@ -7853,9 +7859,9 @@ Treuenbrietzen: L85 soll rechtwinklig auf die B102 stoßen	?::projected -25677,-3
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/neue-fahrradstrasse_a426799
 #: osm_watch: way id="220647519" version="24"
 #: osm_watch: note 3448188 13
-#: last_checked: 2024-09-25
-#: check_frequency: 90d
-#: next_check: 2024-11-10
+#: last_checked: 2024-11-03
+#: check_frequency: 45d
+#: next_check: 2024-12-31
 # REMOVED --- #: next_check: 2024-12-31
 Lynarstr.: Fahrradstraße entsteht, Poller in Höhe Sparrplatz	? 7259,14870 7409,14954 7461,14986 7624,15083 7694,15125 7745,15160
 # 
@@ -8081,7 +8087,7 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: osm_watch: way id="186897941" version="11"
 # REMOVED (wurde mit https://www.openstreetmap.org/changeset/155521904 entfernt) --- #: osm_watch: way id="1205904882" version="4"
 #: osm_watch: way id="538382840" version="11" brb
-#: osm_watch: way id="1309121732" version="3" brb
+#: osm_watch: way id="1309121732" version="4" brb
 #: source_id: 247200149 (bis 11.11.2024)
 #: XXX Eröffnung am 11.11.2024 + neuer Kreisverkehr (fehlt noch in comments_misc). Alte Führung der B246 degradieren bzw. entfernen (inkl. Bahnübergang).
 #: last_checked: 2024-09-14
@@ -8374,7 +8380,7 @@ Olbersstr.: Radspuren geplant	?::projected 3038,13612 3211,13631 3280,13625 3365
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,791686#msg-791686 (Radspuren sollen die Busspuren ersetzen)
 #: source_id: viz2021:13.42056,52.525969,19.03.2024,07:00 (bis 24.04.2024) (inaktiv)
 #: source_id: viz2021:13.420638,52.525829,22.07.2024,07:00 (Leitungsbau, bis 30.09.2024) (inaktiv)
-#: last_checked: 2024-10-25
+#: last_checked: 2024-11-03
 #: next_check: 2024-12-31
 Otto-Braun-Str.: Radspuren statt der Busspuren	?::inwork 11451,13301 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
 # 
@@ -8618,6 +8624,9 @@ Guntherstr.: Verlängerung, Qualtität? Existiert eine Verbindung zum parallel ver
 #: last_checked: 2024-09-18 (BVV)
 #: check_frequency: 90d
 Marion-Seelig-Platz: Benennungsabsicht	? 12161,13711 12189,13750 12204,13719 12161,13711
+# 
+#: by[nocache]: https://www.bz-berlin.de/berlin/lichtenberg/rummelsburger-bucht-radweg
+zum Bolleufer: hier gibt's wohl ein neues Drängelgitter	? 16268,9670 16182,9591
 # 
 #: section ^^^
 #: ignore ^^^

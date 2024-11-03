@@ -1865,9 +1865,9 @@ Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: osm_watch: way id="1010731431" version="8"
 #: osm_watch: way id="642581102" version="10"
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2024-09-17 (daf)
+#: last_checked: 2024-11-03
 #: check_frequency: 45d
-#: next_check: 2024-10-31
+# REMOVED --- #: next_check: 2024-10-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
 (Golda-Meir-Steg - südliches Otto-Weidt-Platz)	NN 7861,14133 7850,14100
 Golda-Meir-Steg	NN 7861,14133 7899,14157 7962,14198 7973,14195
@@ -1879,7 +1879,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
 #: osm_watch: way id="74868383" version="27"
-#: last_checked: 2024-09-07
+#: last_checked: 2024-11-03
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -1888,7 +1888,7 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7
 #: XXX Bekommt diese Verbindung einen Straßennamen?
 #: osm_watch[closed]: note 3892438 3
 #: osm_watch: way id="1255643497" version="8"
-#: last_checked: 2024-09-07
+#: last_checked: 2024-11-03
 #: check_frequency: 60d
 (Hedwig-Porschütz-Str. - George-Stephenson-Str.)	NN 7697,14187 7614,14136
 #: next_check_id: EUROPACITY-2015
@@ -1896,7 +1896,7 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7
 #: note: ggfs. qualitaet/handicap-Einträge anpassen
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: osm_watch: way id="645343614" version="8"
-#: last_checked: 2024-09-07
+#: last_checked: 2024-11-03
 #: check_frequency: 90d
 (Heidestr./Kieler Brücke - George-Stephenson-Str.)	NN 7612,14325 7529,14274
 Lisa-Fittko-Str.	N 7820,13994 7734,13944
@@ -11461,7 +11461,7 @@ Lauterplatz	NN 5799,7880 5707,7878
 #: last_checked: 2024-10-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
-#: osm_watch: way id="1254710366" version="6"
+#: osm_watch: way id="1254710366" version="7"
 #: note: Privatstraße vvv
 #: XXX bleibt es bei der "Fahrradzone" hier?
 Friedenauer Höhe	N 6293,7875 6263,7894 6178,7899

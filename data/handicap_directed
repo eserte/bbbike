@@ -194,6 +194,10 @@ Am Tierpark -> Otto-Schmirgal-Str.: Z-Übergang	DH:h=q4,25 18585,10278 18554,1035
 Otto-Schmirgal-Str. -> Am Tierpark: Z-Übergang	DH:h=q4,25 18512,10337 18554,10354 18446,10620
 Marienfelder Chaussee -> Delmer Steig: Umweg wegen Mittelstreifen	DH:len=50 12207,1704 11865,1564 11895,1489
 Delmer Steig -> Marienfelder Chaussee: Mittelstreifen, zunächst den linken Gehweg benutzen	DH:h=q3,25 11895,1489 11865,1564 11765,1522
+Lynarstr./Müllerstr.: Umweg über Fußgängerampel auf der linken Seite, Fußgänger	DH:len=30:h=q4,60 7694,15125 7745,15160 7929,15355
+Lynarstr./Müllerstr.: Umweg über Fußgängerampel auf der rechten Seite, Fußgänger	DH:len=30:h=q4,60 7929,15355 7745,15160 7694,15125
+Müllerstr. -> Lynarstr.: Umweg über Fußgängerampel, Fußgänger	DH:len=15:h=q4,30 7845,15066 7745,15160 7694,15125
+Müllerstr. -> Lynarstr.: Fußgänger an der Fußgängerampel	DH:h=q4,30 7669,15227 7745,15160 7929,15355
 Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21166,12023 21152,11945
 Südliche Blumberger-Damm-Brücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 21199,12258 21190,12193
 Landsberger Allee	DH:t=50 19205,14980 19196,14976 19200,14963

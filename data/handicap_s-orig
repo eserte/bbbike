@@ -50,7 +50,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="1"
 #: osm_watch: way id="1146013233" version="4"
 #: osm_watch: way id="1134071039" version="6"
-#: last_checked: 2024-11-01 vvv
+#: last_checked: 2024-11-03 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -323,7 +323,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2024-09-25
+#: last_checked: 2024-11-03
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -756,7 +756,7 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 9
-#: last_checked: 2024-10-23 (daf)
+#: last_checked: 2024-11-03
 #: check_frequency: 60d
 #: next_check: 2026-12-31
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -1248,11 +1248,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: next_check: 2024-11-18
 Königsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -197,2634 -155,2658
 # 
-#: next_check_id: SCHLETTSTADTER-2024
-#: last_checked: 2024-08-09
-#: check_frequency: 90d
-Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 1077,3753 1422,3637 1485,3630
-# 
+# REMOVED (laut osm note abgeschlossen) --- #: next_check_id: SCHLETTSTADTER-2024 --- #: last_checked: 2024-08-09 --- #: check_frequency: 90d --- Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 1077,3753 1422,3637 1485,3630
 # REMOVED (hier nicht mehr bzw. integriert in die Moltkestraßenbrückensperrung) --- #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-01-20 (osm) --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
 ### Prenzlauer Berg ###

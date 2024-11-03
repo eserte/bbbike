@@ -500,7 +500,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 3 (Fahrradstraße?)
-#: last_checked: 2024-09-07 vvv
+#: last_checked: 2024-11-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: osm_watch: way id="169459736" version="15"
@@ -632,7 +632,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="19"
 #: osm_watch: way id="49180827" version="24"
-#: last_checked: 2024-09-29
+#: last_checked: 2024-11-03
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1111,8 +1111,8 @@ Lynarstr.: Asphalt	Q0; 7259,14870 7409,14954
 # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet?
 #: osm_watch: way id="717490209" version="23"
-#: last_checked: 2024-09-25
-# REMOVED --- #: check_frequency: 90d
+#: last_checked: 2024-11-03
+#: check_frequency: 45d
 #: next_check: 2024-12-31
 Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
 Lynarstr.: Kopfsteinpflaster	Q2 7409,14954 7461,14986
@@ -13125,6 +13125,7 @@ An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1499398.php (Sanierungsmaßnahmen vom 4.11.2024 bis 15.11.2024 zwischen Wodanstr. und Treskowstr.)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1852369528518275445
 #: by: https://pbs.twimg.com/media/GbTwGDrW0AExWdH?format=png&name=900x900 (keine Information zur Verkehrsführung des Radverkehrs)
+#: source_id: viz2021:13.612206,52.512192,04.11.2024,07:00 (nur Kfz-Verkehr, bis 15.11.2024)
 #: add_fragezeichen Ist die Qualität zwischen Wodanstr. und Treskowstr. nach den Bauarbeiten besser geworden?
 #: next_check 2024-11-15
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24530,12296 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932
@@ -17215,7 +17216,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: also_indoor: search Lemkestraße vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-07-30 vvv
-#: osm_watch: way id="593503609" version="9"
+#: osm_watch: way id="593503609" version="10"
 #: last_checked: 2024-09-03 (indoor research)
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553
 #: osm_watch: way id="24204822" version="29"
@@ -29576,15 +29577,9 @@ Zaberner Str.: Beton	Q0 1276,3892 1252,3821
 Isenheimer Weg: Beton	Q0 1389,3900 1387,3821
 Forbacher Str.: Beton	Q1 1474,3688 1607,3708 1604,3770 1603,3909
 Ersteiner Str.: Beton	Q1 1604,3770 1781,3807 1935,3827
-#: next_check_id: SCHLETTSTADTER-2024
-#: by: https://berliner-abendblatt.de/2022/07/18/huckelpiste-schlettstadter-strasse-wird-saniert/
-#: osm_watch: note 4231879 2
-#: XXX Sanierung ab 2024
-#: note: Laut Baustellenschild der Wasserbetriebe bis Mai 2024; mittlerweile bis August 2024
-#: add_fragezeichen: Sind die Bauarbeiten abgeschlossen?
-#: last_checked: 2024-08-09
-#: check_frequency: 90d
-Schlettstadter Str.: Asphalt	Q1 1077,3753 1422,3637 1485,3630
+# REMOVED (laut osm note abgeschlossen) --- #: next_check_id: SCHLETTSTADTER-2024 --- #: by: https://berliner-abendblatt.de/2022/07/18/huckelpiste-schlettstadter-strasse-wird-saniert/ --- #: osm_watch: note 4231879 3 --- #: XXX Sanierung ab 2024 --- #: note: Laut Baustellenschild der Wasserbetriebe bis Mai 2024; mittlerweile bis August 2024 --- #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? --- #: last_checked: 2024-08-09 --- #: check_frequency: 90d
+#: historical_note: früher (bis 2024) Asphalt, Q1
+Schlettstadter Str.: Asphalt	Q0 1077,3753 1422,3637 1485,3630
 Schlettstadter Str.: Beton	Q0 1485,3630 1817,3732 1926,3758 1935,3827 1939,3893
 Buchsweilerstr.: Kopfsteinpflaster	Q2 2160,3854 2191,3992 2203,4045 2212,4089 2233,4156
 Markircher Weg: Kopfsteinpflaster	Q2 2154,4103 2212,4089

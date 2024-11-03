@@ -7,7 +7,7 @@ push @temp_blocking,
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20211026
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20221108
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1483109.php
-#: osm_watch: node id="9278469937" version="4"
+#: osm_watch: node id="9278469937" version="5"
 	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
 	2::xmas -3275,14407 -3338,14333
 	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
@@ -3147,8 +3147,8 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
          'data' => '# REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
 # REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
 #: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024)
-#: source_id: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024)
-#: source_id: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024)
+#: source_id: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024) (bis auf weiteres)
+#: source_id: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024) (bis auf weiteres)
 # REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
 	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
@@ -3297,37 +3297,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: OSTEND-2024
-# REMOVED (alte Notiz) --- #: note: der zweite Bauabschnitt dürfte für Radfahrer nicht relevant sein, siehe
-#: by: http://www.htw-berlin.de/uploads/media/Bauabschnitt-2-Umleitung-Wilhelminenhof.pdf
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1809452214483652953
-#: by: https://pbs.twimg.com/media/GRuNzPkXgAANqwk?format=jpg&name=large
-#: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240709 (erste Bauphase bis 24.08.2024, Gesamtbaumaßnahme bis voraussichtlich 27.10.2024)
-#: source_id: viz2021:13.532292,52.457104,06.07.2024,07:00 (bis 26.08.2024) (bis 28.10.2024) (bis 03.11.2024)
-#: XXX Änderung der Bauphase: Bauarbeiten dann zwischen Waldowstr. und Ostendstr. 20
-#: note: die Rathenaustraße wird als Umleitungsstrecke benutzt und ist eigentlich zu eng, ein comments_trafficjam-Eintrag würde sich anbieten
-#: last_checked: 2024-10-24 vvv
-#: next_check: 2024-11-03 vvv
-	q3::inwork; 19681,5924 19650,5920 19403,5885
-# REMOVED (hier weitgehend fertig) --- hier einige Bordsteine ohne Anrampung	q3::inwork; 19403,5885 19388,5883 19273,5866
-# REMOVED (hier fertig) --- hier einige Bordsteine ohne Anrampung	q3::inwork; 19273,5866 19010,5833
-# REMOVED (hier fertig) --- vermutlich weniger Fußgängerverkehr	q2::inwork; 19010,5833 19273,5866
-# REMOVED (hier weitgehend fertig) --- vermutlich weniger Fußgängerverkehr	q2::inwork; 19273,5866 19388,5883 19403,5885
-vermutlich weniger Fußgängerverkehr	q2::inwork; 19403,5885 19650,5920 19681,5924
-# REMOVED --- #: note: am anderen Ende (Steffelbauerstr.) gibt\'s kein Einbahnstraßenschild --- Scharnweberstr.: Einfahrt verboten	q4::inwork; 19650,5920 19495,6029
-#: note: unklar, könnten vielleicht auch anderweitige Hochbauarbeiten sein?
-Slabystr.: einige Meter der Fahrbahn vor der Ostendstr. gesperrt (Baucontainer)	q3::inwork 19180,6020 19273,5866
-#	q4::inwork; 19957,5941 19795,5935 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19010,5833 18928,5920
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1720130400,
-         'id' => 2486,
-         'text' => 'Ostendstr.: Gleisbauarbeiten, Fahrbahn zwischen Parkstr. und Wilhelminenhofstr. gesperrt, schmaler Gehweg für Radfahrer frei, bis 03.11.2024',
-         'type' => 'handicap',
-         'until' => 1730653200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4520,7 +4490,24 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'until' => 1735664400
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: LYNAR-2022
+#: source_id: 2147343528 (bis Mitte September 2019) (inaktiv)
+# REMOVED --- #: note: bei fritz in beiden Richtungen gesperrt?
+# REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7259,14870 7308,14814 7353,14767 7429,14667 7458,14643
+#: note: abgesperrter Bereich etwa 40m, zeitweise könnte die Absperrung schon ab Sparrstr. gelten
+#: add_fragezeichen: Ist der Straßenabschnitt zwischen Tegeler Str. und Sparrstr. weiterhin gesperrt?
+#: last_checked: 2024-11-03
+#: check_frequency: 45d
+#: next_check: 2024-12-31
+	q3::inwork 7259,14870 7409,14954
+',
+         'from' => 1730659036,
+         'id' => 3060,
+         'text' => 'Lynarstr.: Fahrbahn an der Tegeler Str. gesperrt, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -4797,20 +4784,23 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 # REMOVED ---	3 7603,12353 7627,12380 7654,12464
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (nächste Phase ab 4.11.2024)
-#: next_check: 2024-11-03
+#: next_check: 2024-11-04
 # REMOVED --- #: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
 Alexanderufer	2::temp 8315,13181 8315,13042
 #: source_id: viz2021:13.37679,52.5163,02.11.2024,06:00 (bis 13.11.2024)
+#: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt, vermutlich auch nur im östlichen Abschnitt
 Straße des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095
 #: source_id: viz2021:13.37688,52.51775,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
 #: source_id: viz2021:13.37737,52.51457,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
 #: source_id: viz2021:13.36975,52.51584,02.11.2024,06:00 (bis 13.11.2024)
+#: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
-# (4.11.2024 - 13.11.2024 22:00) --- Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
+#: note: 4.11.2024 - 13.11.2024 22:00
+Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
 # (5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00) --- Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
 # (6.11.2024 - 10.11.2024 18:00) --- Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
 # (7.11.2024 - 11.11.2024 06:00) --- Straße des 17. Juni	1::temp 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
@@ -4820,7 +4810,7 @@ Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 ',
          'from' => 1730489136,
          'id' => 3185,
-         'text' => 'Alexanderufer, Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str.: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
+         'text' => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
          'type' => 'gesperrt',
          'until' => 1731474000
        },
@@ -5564,7 +5554,22 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181336.php (2022er-Eintrag)
+#: source_id: viz2021:13.55864,52.562688,03.03.2022,14:00 (inaktiv)
+#: by: https://twitter.com/VIZ_Berlin/status/1498672727842082819 (2022er-Eintrag)
+#: source_id: viz2021:13.559233,52.562465,04.11.2024,00:01 (bis 07.11.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1853120454648607073
+#: by: https://pbs.twimg.com/media/GbUIAkBW8AA3AGf?format=jpg&name=medium
+	2::inwork 20895,17594 20769,17650
+	2::inwork 20769,17650 20891,17572
+',
+         'from' => 1730588460,
+         'id' => 3522,
+         'text' => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, auch Radfahrer und Fußgänger sind betroffen, vom 04.11.2024 bis 07.11.2024 05:00',
+         'type' => 'gesperrt',
+         'until' => 1730952000
+       },
        undef,
        undef,
        undef,
@@ -6174,7 +6179,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-11-02 (daf)
+#: last_checked: 2024-11-03
 #: check_frequency: 120d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -6892,7 +6897,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: source_id[inactive]: bvg2021:63#BVG326792_0
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
-#: source_id: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
+#: source_id[inactive]: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
 #: source_id: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
 #: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024)
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv
@@ -7043,8 +7048,8 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
-#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-10-17 (mapillary) vvv
+#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03). Radfahrer benutzen hier die Fahrbahn.
+#: last_checked: 2024-11-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -7092,15 +7097,15 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        {
-         'data' => '#: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.
+         'data' => '#: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.; 2024-11-03: keine Baugruben mehr, Fahrbahn ist wieder asphaltiert -> baldige Freigabe absehbar
 #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024) (bis 07.10.2024) (bis 30.11.2024)
 #: source_id: viz2021:13.35076,52.53934,18.09.2024,12:14 (bis 07.10.2024) (inaktiv)
 #: osm_watch: way id="4543441" version="41"
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-08 (mapillary) vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2024-11-03 vvv
+#: check_frequency: 10d vvv
 #: next_check: 2024-11-30 vvv
 	q2::inwork; 6334,14756 6513,14725
 # REMOVED (hier nicht mehr) ---		q2::inwork; 6513,14725 6596,14740
@@ -7241,19 +7246,19 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        {
          'data' => '#: by: https://oldthing.de/riesenflohmarkt
-#: XXX Termine 2025 eintragen
-#: next_check: 2024-11-03 vvv
+#: XXX Termine 2026 eintragen
+#: next_check: 2025-11-02 vvv
 	q4::temp:clock 18741,8125 18676,8096 18702,8160
 	q4::temp:clock 18676,8096 18650,8111 18626,8114
 	q4::temp:clock 18702,8160 18741,8220 18751,8291 18746,8357 18728,8371
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1730415600,
+         'from' => 1743717600,
          'id' => 3955,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 2.11.2024 bis 3.11.2024',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 5.4.2025 bis 6.4.2025',
          'type' => 'handicap',
-         'until' => 1730674799
+         'until' => 1743976799
        },
        undef,
        undef,
@@ -8307,16 +8312,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'until' => 1734710400
        },
        undef,
-       {
-         'data' => '#: source_id: 246101091 (bis 03.11.2024)
-	2::inwork 13513,-4708 13677,-4801 13821,-4837
-',
-         'from' => 1729234800,
-         'id' => 4166,
-         'text' => 'B96a: Sperrung der Bahnbrücke, vom 19.10.2024 bis 03.11.2024',
-         'type' => 'gesperrt',
-         'until' => 1730649600
-       },
+       undef,
        {
          'data' => '#: next_check_id: KARLMARXPLATZ-2024
 #: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23, 2024-10-30) ist die Fahrbahn aufgerissen
@@ -8554,13 +8550,14 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
        {
          'data' => '#: next_check_id: SCHWEDTER-2024
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-23 (mapillary)
+#: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig
+#: last_checked: 2024-11-03
 #: check_frequency: 14d
 	q4::inwork 10530,14452 10567,14337 10629,14299
 ',
          'from' => undef,
          'id' => 4191,
-         'text' => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8580,16 +8577,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'until' => 1731686400
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.531353,52.39783,19.10.2024,07:00 (bis 03.11.2024)
-	2::inwork 19248,-771 19302,-734 19333,-714
-',
-         'from' => 1729227600,
-         'id' => 4194,
-         'text' => 'Bohnsdorfer Chaussee: Gleisbauarbeiten, Bahnübergang gesperrt, evtl. sind auch Fußgänger und Radfahrer betroffen, vom 19.10.2024 07:00 bis 03.11.2024 17:00',
-         'type' => 'gesperrt',
-         'until' => 1730649600
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024)
 	q4::inwork; 17139,12100 17091,12105 16993,12118
