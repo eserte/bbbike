@@ -3149,6 +3149,7 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
 #: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024)
 #: source_id: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024) (bis auf weiteres)
 #: source_id: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024) (bis auf weiteres)
+#: source_id: viz2021:13.35879,52.53996,02.07.2024,07:00 (bis 14.11.2024)
 # REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
 	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
@@ -3306,7 +3307,21 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147342105 (inaktiv)
+#	q3::inwork; 14181,11434 14211,11552
+#: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024)
+#: next_check_id: MODERSOHN-2024
+#: last_checked: 2024-11-04
+#: next_check: 2024-11-08
+	q3::inwork 14181,11434 14134,11272
+',
+         'from' => 1730674800,
+         'id' => 2495,
+         'text' => 'Modersohnstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Revaler Str. gesperrt, voraussichtlich bis 08.11.2024',
+         'type' => 'handicap',
+         'until' => 1731085200
+       },
        undef,
        undef,
        undef,
@@ -4440,7 +4455,20 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1499735.php (ab 4.11.2024 für ca. 2 Monate, Fertigstellung noch 2024)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/umleitung-des-rad-und-fussverkehrs-am-paul-schwarz-promenade.png (auch der Bäkepark ist betroffen)
+	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095 5282,4145 5337,4192
+	2::inwork 4947,3672 4910,3599 4822,3431 4815,3382 4778,3352
+Bäkepark	2::inwork 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
+Bäkepark	2::inwork 5131,4207 5161,4206 5239,4175 5282,4145
+',
+         'from' => 1730674800,
+         'id' => 3032,
+         'text' => 'Paul-Schwarz-Promenade: Bauarbeiten, Sperrung zwischen Bäkepark und Krahmerstr., voraussichtlich bis Ende 2024',
+         'type' => 'gesperrt',
+         'until' => 1735664400
+       },
        undef,
        undef,
        undef,
@@ -4497,14 +4525,20 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7259,14870 7308,14814 7353,14767 7429,14667 7458,14643
 #: note: abgesperrter Bereich etwa 40m, zeitweise könnte die Absperrung schon ab Sparrstr. gelten
 #: add_fragezeichen: Ist der Straßenabschnitt zwischen Tegeler Str. und Sparrstr. weiterhin gesperrt?
-#: last_checked: 2024-11-03
-#: check_frequency: 45d
-#: next_check: 2024-12-31
+#: last_checked: 2024-11-03 vvv
+#: check_frequency: 45d vvv
+# REMOVED --- #: next_check: 2024-12-31 vvv
+#: next_check: 2024-11-15 vvv
 	q3::inwork 7259,14870 7409,14954
+#: source_id: viz2021:13.36175,52.541,04.11.2024,07:00 (bis 15.11.2024)
+Lynarstr. zwischen Sparrplatz und Müllerstr.	q3::inwork 7409,14954 7461,14986 7624,15083 7694,15125 7745,15160
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1730659036,
          'id' => 3060,
-         'text' => 'Lynarstr.: Fahrbahn an der Tegeler Str. gesperrt, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
+         'text' => 'Lynarstr.: wegen Bauarbeiten gesperrt, mindestens bis Mitte November 2024',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4784,7 +4818,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 # REMOVED ---	3 7603,12353 7627,12380 7654,12464
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (nächste Phase ab 4.11.2024)
-#: next_check: 2024-11-04
+#: next_check: 2024-11-05
 # REMOVED --- #: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
@@ -4801,7 +4835,8 @@ Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 #: note: 4.11.2024 - 13.11.2024 22:00
 Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
-# (5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00) --- Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
+#: note: 5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00
+Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
 # (6.11.2024 - 10.11.2024 18:00) --- Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
 # (7.11.2024 - 11.11.2024 06:00) --- Straße des 17. Juni	1::temp 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 # (7.11.2024 - 11.11.2024 06:00) --- Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
@@ -4810,7 +4845,7 @@ Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
 ',
          'from' => 1730489136,
          'id' => 3185,
-         'text' => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
+         'text' => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer, Zimmerstr.: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
          'type' => 'gesperrt',
          'until' => 1731474000
        },
@@ -6898,8 +6933,8 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
 #: source_id[inactive]: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
-#: source_id: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
-#: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024)
+#: source_id[inactive]: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
+#: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -8394,7 +8429,16 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'handicap',
          'until' => 1732921200
        },
-       undef,
+       {
+         'data' => '#: source_id: LS/221-E/24/128 (bis 31.10.2024) (inaktiv) (bis 15.11.2024)
+	2::inwork 31738,27620 31684,27738 30387,28332 29363,29024
+',
+         'from' => 1725775200,
+         'id' => 4175,
+         'text' => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, voraussichtlich bis Mitte November 2024',
+         'type' => 'gesperrt',
+         'until' => 1731686400
+       },
        {
          'data' => '#: source_id: LS/223-K/24/141 (bis 08.11.2024)
 	2::inwork -4055,54553 -3747,54549 -3492,54548 -3137,54571 -2710,54626 -2084,54707 -1848,54667 -1488,54421 -1453,54400 -684,54082
@@ -8744,6 +8788,17 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'text' => 'Cornelius-Fredericks-Str. und Kameruner Str.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 19.08.2024 07:00 bis 18.02.2025 17:00',
          'type' => 'handicap',
          'until' => 1739894400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.253751,52.519495,04.11.2024,06:00 (bis 18.11.2024)
+	q4::inwork 208,12305 179,12434 151,12541 130,12624 131,12672
+	q4::inwork 461,11455 541,11464
+',
+         'from' => 1730610000,
+         'id' => 4209,
+         'text' => 'Westendallee: Bauarbeiten zwischen Brixplatz und Reichsstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 04.11.2024 06:00 bis 18.11.2024 05:00',
+         'type' => 'handicap',
+         'until' => 1731902400
        }
      
 );

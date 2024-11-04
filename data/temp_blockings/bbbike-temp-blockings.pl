@@ -22228,6 +22228,7 @@ EOF
 #: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024)
 #: source_id: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024) (bis auf weiteres)
 #: source_id: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024) (bis auf weiteres)
+#: source_id: viz2021:13.35879,52.53996,02.07.2024,07:00 (bis 14.11.2024)
 # REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
 	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
@@ -23019,22 +23020,28 @@ EOF
 	q4::inwork 9075,11756 9000,11727
 EOF
      },
-     { from  => 1511898358,
-       until => 1513622255, # $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
-       text  => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
+     { from  => $isodate2epoch->("2024-11-04 00:00:00"), # 1511898358,
+       until => $isodate2epoch->("2024-11-08 18:00:00"), # 1513622255, # $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
+#       text  => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
+       text  => 'Modersohnstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Revaler Str. gesperrt, voraussichtlich bis 08.11.2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 2147342105
-	q3::inwork; 14181,11434 14211,11552
+#: source_id: 2147342105 (inaktiv)
+#	q3::inwork; 14181,11434 14211,11552
+#: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024)
+#: next_check_id: MODERSOHN-2024
+#: last_checked: 2024-11-04
+#: next_check: 2024-11-08
+	q3::inwork 14181,11434 14134,11272
 EOF
      },
      { from  => 1382220000, # 2013-10-20 00:00
        until => 1382718376, # 1382824800, # 2013-10-27 00:00
        text  => 'Grünbergallee: zwischen Hufenweg und B 96 A wird die Fahrbahn in Stand gesetzt, Vollsperrung vom 21.10.2013 bis zum 26.10.2013 ',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131007.1105.390062.html',
        data  => <<EOF,
-#: source_id: IM_020526
+#: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131007.1105.390062.html
+#: source_id: IM_020526 (inaktiv)
 	q4::inwork 20783,-528 20675,-526 20362,-511 20354,-569 20252,-571 20205,-548
 EOF
      },
@@ -29309,12 +29316,18 @@ EOF
 	2::night 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 EOF
      },
-     { from  => undef,
-       until => 1539631700, # -> gesperrt-orig --- $isodate2epoch->("2019-09-01 18:00:00"),
-       text  => 'Paul-Schwarz-Promenade: bevorstehende Sperrung in Höhe Benjamin Franklin',
+     { from  => $isodate2epoch->("2024-11-04 00:00:00"), # undef,
+       until => $isodate2epoch->("2024-12-31 18:00:00"), # 1539631700, # -> gesperrt-orig --- $isodate2epoch->("2019-09-01 18:00:00"),
+#       text  => 'Paul-Schwarz-Promenade: bevorstehende Sperrung in Höhe Benjamin Franklin',
+       text  => 'Paul-Schwarz-Promenade: Bauarbeiten, Sperrung zwischen Bäkepark und Krahmerstr., voraussichtlich bis Ende 2024',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1499735.php (ab 4.11.2024 für ca. 2 Monate, Fertigstellung noch 2024)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/umleitung-des-rad-und-fussverkehrs-am-paul-schwarz-promenade.png (auch der Bäkepark ist betroffen)
+	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095 5282,4145 5337,4192
+	2::inwork 4947,3672 4910,3599 4822,3431 4815,3382 4778,3352
+Bäkepark	2::inwork 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
+Bäkepark	2::inwork 5131,4207 5161,4206 5239,4175 5282,4145
 EOF
      },
      { from  => 1539122400, # 2018-10-10 00:00
@@ -29632,7 +29645,8 @@ EOF
        until => undef, # $isodate2epoch->("2019-09-07 18:00:00"), # 1561996800, # 2019-07-01 18:00
 #      text  => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, Radfahrer dürfen den Gehweg benutzen, voraussichtlich bis Mitte September 2019',
 #      text  => 'Lynarstr.: Fahrbahn an der Tegeler Str. gesperrt, auf Gehweg ausweichen, voraussichtlich bis Mitte September 2019',
-       text  => 'Lynarstr.: Fahrbahn an der Tegeler Str. gesperrt, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
+#       text  => 'Lynarstr.: Fahrbahn an der Tegeler Str. gesperrt, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
+       text  => 'Lynarstr.: wegen Bauarbeiten gesperrt, mindestens bis Mitte November 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LYNAR-2022
@@ -29641,10 +29655,16 @@ EOF
 # REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7259,14870 7308,14814 7353,14767 7429,14667 7458,14643
 #: note: abgesperrter Bereich etwa 40m, zeitweise könnte die Absperrung schon ab Sparrstr. gelten
 #: add_fragezeichen: Ist der Straßenabschnitt zwischen Tegeler Str. und Sparrstr. weiterhin gesperrt?
-#: last_checked: 2024-11-03
-#: check_frequency: 45d
-#: next_check: 2024-12-31
+#: last_checked: 2024-11-03 vvv
+#: check_frequency: 45d vvv
+# REMOVED --- #: next_check: 2024-12-31 vvv
+#: next_check: 2024-11-15 vvv
 	q3::inwork 7259,14870 7409,14954
+#: source_id: viz2021:13.36175,52.541,04.11.2024,07:00 (bis 15.11.2024)
+Lynarstr. zwischen Sparrplatz und Müllerstr.	q3::inwork 7409,14954 7461,14986 7624,15083 7694,15125 7745,15160
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1544425200, # 2018-12-10 08:00
@@ -31251,7 +31271,7 @@ EOF
      { from  => 1730489136, # 1573153200, # 2019-11-07 20:00
        until => $isodate2epoch->("2024-11-13 06:00:00"), # 1573354800, # 2019-11-10 04:00
 #       text  => 'John-Foster-Dulles-Allee, Scheidemannstr., Heinrich-von-Gagern-Str.: gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 08.11.2019, 20:00 Uhr bis 10.11.2019, 04:00 Uhr',
-       text  => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
+       text  => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer, Zimmerstr.: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (2019):
@@ -31267,7 +31287,7 @@ EOF
 # REMOVED ---	3 7603,12353 7627,12380 7654,12464
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (nächste Phase ab 4.11.2024)
-#: next_check: 2024-11-04
+#: next_check: 2024-11-05
 # REMOVED --- #: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
@@ -31284,7 +31304,8 @@ Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 #: note: 4.11.2024 - 13.11.2024 22:00
 Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
-# (5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00) --- Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
+#: note: 5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00
+Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
 # (6.11.2024 - 10.11.2024 18:00) --- Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
 # (7.11.2024 - 11.11.2024 06:00) --- Straße des 17. Juni	1::temp 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 # (7.11.2024 - 11.11.2024 06:00) --- Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
@@ -40890,8 +40911,8 @@ EOF
 #: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
 #: source_id[inactive]: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
-#: source_id: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
-#: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024)
+#: source_id[inactive]: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
+#: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-10-11 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
@@ -45095,11 +45116,12 @@ EOF
 EOF
      },
      { from  => 1725775200, # 2024-09-08 08:00
-       until => 1730386800, # 2024-10-31 16:00
-       text  => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, 09.09.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
+       until => $isodate2epoch->("2024-11-15 17:00:00"), # 1730386800, # 2024-10-31 16:00
+#       text  => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, 09.09.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
+       text  => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, voraussichtlich bis Mitte November 2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/24/128 (bis 31.10.2024) (inaktiv)
+#: source_id: LS/221-E/24/128 (bis 31.10.2024) (inaktiv) (bis 15.11.2024)
 	2::inwork 31738,27620 31684,27738 30387,28332 29363,29024
 EOF
      },
@@ -45494,6 +45516,16 @@ EOF
 #: source_id: viz2021:13.347134,52.550698,31.10.2024,08:37 (auch die Kameruner Str., bis 18.01.2025) (inaktiv)
 Cornelius-Fredericks-Str.	q4::inwork 6661,15921 6484,16085
 Kameruner Str.	q4::inwork 6383,15972 6484,16085
+EOF
+     },
+     { from  => 1730610000, # 2024-11-03 06:00
+       until => 1731902400, # 2024-11-18 05:00
+       text  => 'Westendallee: Bauarbeiten zwischen Brixplatz und Reichsstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 04.11.2024 06:00 bis 18.11.2024 05:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.253751,52.519495,04.11.2024,06:00 (bis 18.11.2024)
+	q4::inwork 208,12305 179,12434 151,12541 130,12624 131,12672
+	q4::inwork 461,11455 541,11464
 EOF
      },
     );
