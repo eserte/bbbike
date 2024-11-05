@@ -2550,10 +2550,10 @@ Klosterstr.: Mittelstreifen	3nocross -3625,13889 -3678,13801 -3693,13769 -3716,1
 Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4119,12763 -4063,12842
 Wilhelmstr.: Mittelstreifen	3nocross -4008,12916 -3967,12976 -3923,13060
 Invalidenstr.: Straßenbahntrasse	3nocross 9148,13944 9189,13953 9274,13963
-Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
+Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7901,13324
 #: XXX_prog hack für das bekannte 3nocross-Problem
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
-Invalidenstr.: Straßenbahntrasse und -haltestelle	3nocross 7880,13315 8003,13374 8057,13400 8098,13419
+Invalidenstr.: Straßenbahntrasse und -haltestelle	3nocross 7901,13324 8003,13374 8057,13400 8098,13419
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7822,12937 7776,12945 7595,12980
 Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21133,11348 21130,11384 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
@@ -3825,6 +3825,7 @@ Tor	BNP:10 33926,63348
 Tor	BNP:20 20127,1538
 #: note: unnötigerweise auch für Radfahrer eng gehalten
 Barriere	BNP:3::trailer=10 10628,16644
+#: note: kann komplett offen sein, gesehen am 2024-11-05 (evtl. wegen noch laufender Bauarbeiten?)
 Schwingtor	BNP:5::trailer=10 10051,15916
 #
 #: section ^^^
@@ -3973,7 +3974,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-11-01
+#: last_checked: 2024-11-05
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4231,7 +4232,7 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
 #: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
 #: priority: #C
-#: last_checked: 2024-10-11 (mapillary)
+#: last_checked: 2024-11-05
 # REMOVED --- #: next_check: 2024-08-07
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
@@ -4338,7 +4339,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
 #: by: https://entwicklungsstadt.de/berlin-mitte-sichtbarer-fortschritt-beim-umbau-des-gendarmenmarktes/
-#: last_checked: 2024-10-15 vvv
+#: last_checked: 2024-11-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -5057,7 +5058,7 @@ Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11138,12604 11202,12426
 # REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2024-11-01
+#: last_checked: 2024-11-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -5142,27 +5143,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 # REMOVED (wurde in strassen-orig entfernt) --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17634,5607 17675,5521
 # REMOVED --- Sterndamm: keine Überquerungsmöglichkeit	3nocross::inwork 17695,5394 17736,5441 17754,5460
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: SCHOENEWEIDE-2018
-#: by: https://www.bahninfo-forum.de/read.php?9,726524,726545#msg-726545
-#: by: https://viz.berlin.de/2023/09/bhf-schoeneweide/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1477330.php
-#: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2024-09-12-verkehrsloesung-schoeneweide/1-2024-09-12-01.html
-#: source_id: viz2021:13.50984,52.45636,05.08.2022,11:36 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 5.8.2022) (bis 31.3.2023) (bis 01.09.2023) (bis 02.02.2024) (seit November 2023 inaktiv)
-#: note: auch als "Verlängerte Brückenstraße" bezeichnet
-# REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
-#: XXX Bis wann gehen die Bauarbeiten?
-#: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
-#: also_indoor: traffic (G)
-#: osm_watch: way id="40451054" version="23"
-#: last_checked: 2024-10-08 (mapillary)
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2024-08-17
-# REMOVED --- #: next_check: 2024-02-02
-# REMOVED --- #: valid: -20230901
-Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
-# 
+# REMOVED --- #: next_check_id: SCHOENEWEIDE-2018 --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,726545#msg-726545 --- #: by: https://viz.berlin.de/2023/09/bhf-schoeneweide/ --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1477330.php --- #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2024-09-12-verkehrsloesung-schoeneweide/1-2024-09-12-01.html --- #: source_id: viz2021:13.50984,52.45636,05.08.2022,11:36 (bis 31.03.2023) (inaktiv) --- #: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 5.8.2022) (bis 31.3.2023) (bis 01.09.2023) (bis 02.02.2024) (seit November 2023 inaktiv) --- #: note: auch als "Verlängerte Brückenstraße" bezeichnet --- # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist --- #: XXX Bis wann gehen die Bauarbeiten? --- #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine --- #: also_indoor: traffic (G) --- #: osm_watch: way id="40451054" version="23" --- #: last_checked: 2024-11-03 (krickstadt) (offen) --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2024-08-17 --- # REMOVED --- #: next_check: 2024-02-02 --- # REMOVED --- #: valid: -20230901 --- Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
 # REMOVED (laut osm komplett abgetragen) --- #: next_check_id: SPREEBOGENPARK-2018 --- #: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html --- #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2018/pressemitteilung.705903.php --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_25_3283_3434_online.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_33_4519_4646_online.pdf --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.760640.php --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/o-v-bismarck-allee-w-brandt-str-alt-moabit-tiergarten-dauerhaft-gesperrt --- #: XXX ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt noch passierbar? --- #: XXX nach dem Rückbau Straße vollständig entfernen; laut fritz ist die Fertigstellung des Spreebogenparks für Sommer 2019 geplant, im Sommer 2020 sollen alle Baumaßnahmen abgeschlossen sein --- #: note: Bebauungsplan II - 200ib --- #: source_id: 2147343514 --- #: osm_watch: way id="537967314" version="6" --- #: last_checked: 2018-11-27 --- #: check_frequency: 60d --- #: priority: #B --- Schweizer Botschaft: Rückbau der Straße	2:inwork 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 # REMOVED (dauerhaft entfernt) --- #: last_checked: 2018-11-27 --- Schreibenfeder-Passage: wegen Bauarbeiten gesperrt, ggfs. dauerhaft	2:inwork 14838,11410 14949,11474
 # REMOVED (fertig) --- #: next_check_id: MOEWENWEG-2017 --- #: last_checked: 2019-07-21 vvv --- #: check_frequency: 60d vvv --- An den Grachten: Bauarbeiten, noch nicht geöffnet	2:inwork 22169,10969 22172,10996
@@ -5605,10 +5586,12 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 # REMOVED --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
 # 
 #: by: https://www.welt.de/vermischtes/article253583690/Carolabruecke-Dresdner-Baubuergermeister-angezeigt-Loeste-Temperatursturz-den-Einsturz-aus.html ("Mit einer Wiedereröffnung der übrigen Brückenzüge sei vorerst nicht zu rechnen.")
+#: by: https://www.dresden.de/de/stadtraum/zentrale-projekte/carolabruecke.php (Abrißarbeiten bis voraussichtlich Ende 2024)
 #: osm_watch: way id="4214231" version="39"
 #: osm_watch: way id="10368500" version="44"
 #: also_indoor: search Carolabrücke
 #: last_checked: 2024-10-07 (okas)
+#: next_check: 2024-12-31
 Carolabrücke (Dresden): Brücke teilweise eingestürzt, der Rest ist gesperrt	2::inwork 36969,-149635 37090,-149991
 # 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

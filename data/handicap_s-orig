@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2024-11-04
+#: last_checked: 2024-11-05
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
@@ -28,7 +28,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: next_check_id: KNIPRODE-2024
 #: add_fragezeichen: Sind hier noch immer Bauarbeiten?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-10-11 (mapillary)
+#: last_checked: 2024-11-05
 #: check_frequency: 30d
 #: next_check: 2025-09-30
 Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
@@ -41,7 +41,7 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="9"
 #: osm_watch: way id="1072662717" version="11"
-#: last_checked: 2024-11-02
+#: last_checked: 2024-11-05
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -93,7 +93,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
 # 
 #: also_indoor: traffic (ex-G,ex-W,B,T)
-#: osm_watch: note 3677862 4
+#: osm_watch: note 3677862 5
 #: note: Möglicherweise Arbeiten an der neuen Gehwegvorstreckung
 #: last_checked: 2024-11-04
 Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 14651,11666
@@ -534,7 +534,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-11-01 vvv
+#: last_checked: 2024-11-05 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -3377,15 +3377,18 @@ Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 Gleisdreieckpark: flache Bordsteine, Spielplatz	q3 8296,10438 8237,10418
 #: XXX_prog BS zu beiden Seiten (aber flach!) (ansonsten entfernen)
 Gleisdreieckpark: flache Bordsteine	q1 8145,10090 8211,10083
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0- 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0- 8358,10782 8350,10774 8341,10721 8328,10585 8296,10438 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8211,10083
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0- 8350,10774 8338,10765 8318,10738
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0- 8328,10831 8338,10765 8341,10721
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0- 8199,10634 8236,10623 8270,10613 8328,10585
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0- 8384,10507 8377,10502 8361,10491 8328,10485 8322,10451 8296,10438
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0- 8159,10430 8199,10424 8237,10418 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0- 8058,10306 8180,10282 8256,10264
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0- 8042,10084 8145,10090
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8211,10083 8276,10079
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8315,10347 8265,10348
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8358,10782 8350,10774 8341,10721 8328,10585 8296,10438 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8276,10079
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8264,10192 8211,10083
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8350,10774 8338,10765 8318,10738
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8328,10831 8338,10765 8341,10721
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8199,10634 8236,10623 8270,10613 8328,10585
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8384,10507 8377,10502 8361,10491 8328,10485 8322,10451 8296,10438
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8159,10430 8199,10424 8237,10418 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8058,10306 8180,10282 8256,10264
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8042,10084 8145,10090
 (Hansastr. - Gartenstr.): Fußgänger, Radfahren nicht erlaubt	q3 15194,16186 15143,16210 15104,16218 14806,16279 14665,16294
 (Hansastr. - Gartenstr.): Fußgänger, Radfahren nicht erlaubt	q3 14806,16279 14717,16355
 (Dohnagestell - Tangastr.): Fußgänger	q2 5802,15399 5889,15457 5961,15562
@@ -3521,7 +3524,7 @@ Cajamarcaplatz: viele Fußgänger	q4 17698,5727 17766,5659
 # REMOVED (wurde in strassen-orig entfernt) --- #: XXX_prog BS an der Tram-Haltestelle, ansonsten trotzdem q3 --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Fußgänger, Bordstein	q3 17634,5607 17675,5521
 # REMOVED (Bordstein wurde abgesenkt) --- #: XXX_prog BS, sonst entfernen --- Wasserweg: Bordstein	q2 15678,8911 15698,8903 15873,8884
 (Ella-Trebe-Str. - Invalidenstr.): einige Fußgänger	q1 7938,13302 7968,13335 8003,13374
-Europaplatz: einige Fußgänger	q1 7880,13315 7938,13302
+Europaplatz: einige Fußgänger	q1 7901,13324 7938,13302
 Wuhlestr. [Wohngebiet]: Fußgänger	q1 21580,13583 21430,13602
 (oberer Wuhlewanderweg): einige Fußgänger	q1+ 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902 22783,14034 22855,14114 22872,14175 22872,14224 22860,14440 22868,14477 22873,14498 22864,14556
 (oberer Wuhlewanderweg): Fußgänger, Kinderspielplätze	q1- 22864,14556 22851,14603 22756,14787 22702,14880 22690,14915 22643,14977 22599,15030 22588,15056 22577,15109
@@ -3655,7 +3658,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-11-01
+#: last_checked: 2024-11-05
 #: check_frequency: 180d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -3905,7 +3908,7 @@ Földerichplatz: Fußgängerzone	q3 -3942,12559 -3940,12377
 #: XXX_prog BS, ansonsten q2
 (Wasserweg - Treptower Park): einige Fußgänger, Bordstein, Zugang kann zugeparkt sein	q3 15678,8911 15617,8924
 Monumentenplatz: einige Fußgänger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
-(Minna-Cauer-Str. - Lehrter Str.): Fußgänger, Radfahren offiziell verboten	q4 7879,13438 7837,13499 7775,13540
+(Minna-Cauer-Str. - Lehrter Str.): Fußgänger, Radfahren offiziell verboten	q4 7895,13415 7837,13499 7775,13540
 (Minna-Cauer-Str. - Lehrter Str.): einige Fußgänger, schmale Straße	q1 7775,13540 7666,13479 7653,13480
 #: XXX_prog BS an beiden Seiten, ansonsten q1
 Andreas-Hofer-Platz: einige Fußgänger, Bordsteine	q3 10490,16914 10493,16960
@@ -4438,7 +4441,7 @@ Einstein-Park: einige Fußgänger	q2+ 13163,14924 13207,14998 13204,15062
 (Hoppendorfer Str. - Wuhlewanderweg): einige Fußgänger, niedriger Bordstein	q3 21592,7640 21609,7579
 (Innovationspark Wuhlheide - Wuhlewanderweg): einige Fußgänger	q1 21491,7182 21547,7208
 (Innovationspark Wuhlheide - Wuhlewanderweg): einige Fußgänger, eng	q2 21547,7208 21542,7246 21569,7252
-(Weg im erweiterten Mauerpark): Fußgänger	q2 10235,14934 10215,14977 10192,14967
+(Weg im erweiterten Mauerpark): Fußgänger	q2 10235,14934 10208,14922 10192,14967
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10274,15024 10297,14961
 (Weg im erweiterten Mauerpark): Fußgänger	q1 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10233,15147 10274,15024
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10274,15024 10209,14996 10215,14977
@@ -5054,7 +5057,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12615 (Anfrage)
 #: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn
 #: XXX Bauarbeiten an den Fahrbahnrändern; Absperrungen können früh zum Schulbeginn an beiden Enden der Fußgängerzone aufgestellt sein (einmalig am 2024-09-24 oder regelmäßig?)
-#: last_checked: 2024-11-01
+#: last_checked: 2024-11-05
 #: check_frequency: 30d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1+ 11635,12398 11845,12292
 # 

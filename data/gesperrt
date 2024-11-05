@@ -2522,13 +2522,13 @@ Zimmerstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -3942,12957 -3967,12976 -40
 Straßenbahntrasse	3nocross::ignrte 9148,13944 9189,13953 9274,13963
 Invalidenstr. -> Eichendorffstr.: Straßenbahntrasse	3::igndisp 9274,13963 9189,13953 9193,13942
 Eichendorffstr. -> Invalidenstr.: Straßenbahntrasse	3::igndisp 9193,13942 9189,13953 9148,13944
-Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7880,13315
+Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7901,13324
 Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13276 7842,13292 7822,13323
-Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292 7880,13315
+Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292 7901,13324
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
-Straßenbahntrasse und -haltestelle	3nocross::ignrte 7880,13315 8003,13374 8057,13400 8098,13419
+Straßenbahntrasse und -haltestelle	3nocross::ignrte 7901,13324 8003,13374 8057,13400 8098,13419
 Invalidenstr. -> Ella-Trebe-Str.: Straßenbahntrasse und -haltestelle	3::igndisp 8057,13400 8003,13374 7968,13335
-Ella-Trebe-Str. -> Invalidenstr.: Straßenbahntrasse und -haltestelle	3::igndisp 7968,13335 8003,13374 7880,13315
+Ella-Trebe-Str. -> Invalidenstr.: Straßenbahntrasse und -haltestelle	3::igndisp 7968,13335 8003,13374 7901,13324
 Invalidenstr. -> Europapl. [Nord]: Straßenbahntrasse und -haltestelle	3::igndisp 8003,13374 8057,13400 8010,13450
 Europapl. [Nord] -> Invalidenstr.: Straßenbahntrasse und -haltestelle	3::igndisp 8010,13450 8057,13400 8098,13419
 Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross::ignrte 7822,12937 7776,12945 7595,12980
@@ -3574,7 +3574,6 @@ Dircksenstr.: Einbahnstraßenregelung	1s:inwork 11138,12604 11202,12426
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174 9254,13171
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
-Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372

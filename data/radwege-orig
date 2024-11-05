@@ -1570,7 +1570,7 @@ Gehweg für Radfahrer frei	RW1; 20150,13562 20073,13535 19899,13534
 	RW1;RW1 10002,14092 9938,14356 9864,14578 9855,14598 9832,14651 9800,14722
 Radweg stellenweise noch sichtbar, aber durch Baumscheiben unterbrochen	RW0; 11136,9183 11208,9345
 	RW1; 11208,9345 11274,9492
-	RW2; 8098,13419 8057,13400 8003,13374 7880,13315 7842,13292 7816,13276 7759,13246
+	RW2; 8098,13419 8057,13400 8003,13374 7901,13324 7842,13292 7816,13276 7759,13246
 # 
 #: note: laut rbb ab 2022-05-19 09:00, bis Anfang 2025
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
@@ -1578,10 +1578,10 @@ Radweg stellenweise noch sichtbar, aber durch Baumscheiben unterbrochen	RW0; 111
 #: last_checked: 2024-11-03
 #: check_frequency: 180d
 #: next_check: 2025-01-31
-# Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7880,13315
-provisorische Radspur	RW4; 7759,13246 7816,13276 7842,13292 7880,13315
+# Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
+provisorische Radspur	RW4; 7759,13246 7816,13276 7842,13292 7901,13324
 # 
-	RW2; 7880,13315 8003,13374 8057,13400 8098,13419
+	RW2; 7901,13324 8003,13374 8057,13400 8098,13419
 # REMOVED (hier nicht mehr) ---	RW4;RW4 7930,12912 8021,12832 8030,12824
 der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW4;RW4 8122,12603 8119,12414
 der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW0;RW0 8119,12414 8055,12186
@@ -2161,13 +2161,13 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.nd-aktuell.de/artikel/1185411.infrastruktur-muehlendammbruecke-in-berlin-komplettsperrung-nicht-ausgeschlossen.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1498209.php
 #: by: https://www.berliner-woche.de/mitte/c-bauen/muehlendammbruecke-gesperrt-fuer-fussgaenger_a428707
-#: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024)
+#: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029)
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
 #: last_checked: 2024-10-15 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2024-12-31 vvv
+#: next_check: 2029-12-31 vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
 provisorische Radspur, mit Barriere	RW4; 10512,12039 10550,12096 10574,12131 10625,12206 10646,12234
 provisorische Radspur	RW4; 10646,12234 10625,12206 10574,12131
@@ -3261,7 +3261,7 @@ mit grüner Leitlinie	RW7;RW7 10777,13614 10872,13570 11059,13480 11104,13456
 	RW2;RW2 9224,14169 9272,14208
 #: by: mrt:
 #: confirmed_by: srt
-Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410 9472,14478 9621,14624 9800,14722 9870,14759 9924,14785 10003,14823 10085,14863 10170,14905 10235,14934 10297,14961 10354,14987
+Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410 9472,14478 9621,14624 9800,14722 9870,14759 9924,14785 10003,14823 10085,14863 10170,14905 10208,14922 10235,14934 10297,14961 10354,14987
 	RW1;RW1 10431,12709 10373,12776 10360,12793 10308,12859
 	RW3; 10923,13156 11033,13086 11139,13008
 #: note: die letzten Meter vor der Ampel mit Radwegschild
@@ -3336,7 +3336,7 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="318031558" version="14"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Werden die Busspuren zu Radspuren umgewandelt? Oder entsteht hier ein neuer Hochbordradweg? Vermutlich Letzteres. Hier sind gerade Bauarbeiten vvv
-#: last_checked: 2024-10-12 vvv
+#: last_checked: 2024-11-05 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
@@ -4386,7 +4386,7 @@ die letzten Meter mit benutzungspflichtiger Radspur	RW0; 9383,13986 9224,14169
 	RW3;RW4 8953,14528 8870,14637
 die letzten Meter mit benutzungspflichtiger Radspur	RW3; 8870,14637 8692,14923
 	RW3; 8692,14923 8870,14637
-	RW1;RW2 8019,13650 7930,13578 7890,13515 7879,13438 7880,13315
+	RW1;RW2 8019,13650 7930,13578 7907,13532 7895,13415 7901,13324
 	RW6;RW6 12059,12172 11958,12195 11937,12127
 	RW6;RW6 12002,12008 11961,12025 11956,12071 11932,12111 11937,12127 11958,12112 12021,12066
 	RW6;RW6 -2647,14532 -2652,14559 -2656,14582 -2668,14635 -2682,14681 -2688,14703 -2704,14748 -2735,14848 -2622,14876 -2591,14783 -2704,14748
@@ -4688,9 +4688,8 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,26.10.2022,07:00 (zusätzlicher Eintrag, bis 28.05.2023) (inaktiv)
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
-#: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2024-10-12 vvv
+#: last_checked: 2024-11-05 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -6420,7 +6419,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7609 (Antrag)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (bis Mitte Oktober für Kfz-Verkehr gesperrt)
-#: last_checked: 2024-10-16 (mapillary)
+#: last_checked: 2024-11-03 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 provisorische Radspur	RW4; 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
@@ -7663,7 +7662,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-10-16 (mapillary) vvv
+#: last_checked: 2024-11-05 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -8167,7 +8166,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2024-10-12
+#: last_checked: 2024-11-05
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8193,7 +8192,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2024-10-12 vvv
+#: last_checked: 2024-11-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-09-30 vvv

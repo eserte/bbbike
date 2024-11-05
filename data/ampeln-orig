@@ -222,7 +222,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: last_checked ^^^
 # 
 # REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- 
-#: last_checked: 2024-11-01
+#: last_checked: 2024-11-05
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2024-12-20
 #: valid: -20241220
@@ -2743,7 +2743,7 @@ Industriebahn	B0 -2410,13746
 # REMOVED (Baustellenampel, existiert nicht mehr, 2009-07) ---	X 10635,13207
 #: XXX_prog Gilt nicht für Radfahrer auf dem Radweg Richtung Süden
 	F 11909,15477
-	X 7880,13315
+	X 7901,13324
 # REMOVED (zurzeit ausgeschaltet) ---	X 8019,13650
 	X 7696,7771
 # REMOVED --- #: XXX später wahrscheinlich X --- #: next_check: 2016-12-31 ---	F 7865,13924
@@ -3422,7 +3422,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2024-11-01 vvv
+#: last_checked: 2024-11-05 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3820,7 +3820,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2024-10-06 (mapillary)
+#: last_checked: 2024-11-02 (mapillary)
 #: check_frequency: 120d
 	X::inwork 12185,7381
 # 

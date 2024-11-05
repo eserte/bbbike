@@ -23030,7 +23030,7 @@ EOF
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-04
+#: last_checked: 2024-11-05
 #: next_check: 2024-11-08
 	q3::inwork 14181,11434 14134,11272
 EOF
@@ -25822,7 +25822,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
 #: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
-#: osm_watch: node id="3204993764" version="6"
+#: osm_watch: node id="3204993764" version="7"
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
 #: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
 	q4::xmas 11139,13008 11064,12910 11005,12855 10970,12822
@@ -31271,7 +31271,7 @@ EOF
      { from  => 1730489136, # 1573153200, # 2019-11-07 20:00
        until => $isodate2epoch->("2024-11-13 06:00:00"), # 1573354800, # 2019-11-10 04:00
 #       text  => 'John-Foster-Dulles-Allee, Scheidemannstr., Heinrich-von-Gagern-Str.: gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 08.11.2019, 20:00 Uhr bis 10.11.2019, 04:00 Uhr',
-       text  => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer, Zimmerstr.: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
+       text  => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer, Checkpoint Charlie, Niederkirchnerstr., Zimmerstr., Jerusalemer Str.: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (2019):
@@ -31287,14 +31287,15 @@ EOF
 # REMOVED ---	3 7603,12353 7627,12380 7654,12464
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (nächste Phase ab 4.11.2024)
-#: next_check: 2024-11-05
+#: next_check: 2024-11-06
 # REMOVED --- #: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
 Alexanderufer	2::temp 8315,13181 8315,13042
 #: source_id: viz2021:13.37679,52.5163,02.11.2024,06:00 (bis 13.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt, vermutlich auch nur im östlichen Abschnitt
-Straße des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095
+Straße des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+# REMOVED (auf der Webcam hier keine Sperrung zu sehen) --- Straße des 17. Juni	1::temp 8055,12186 7816,12150 7383,12095
 #: source_id: viz2021:13.37688,52.51775,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
 #: source_id: viz2021:13.37737,52.51457,02.11.2024,06:00 (bis 13.11.2024)
@@ -31302,11 +31303,19 @@ Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
 #: source_id: viz2021:13.36975,52.51584,02.11.2024,06:00 (bis 13.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
-#: note: 4.11.2024 - 13.11.2024 22:00
+#: note: 4.11.2024 - 13.11.2024 22:00 (allerdings waren am Abend des 4.11.2024 und Morgen+Abend des 5.11.2024 laut Webcam nur die zentrale Durchfahrten des Tors gesperrt)
 Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
+#: source_id: viz2021:13.3991,52.50819,05.11.2024,06:00 (bis 09.11.2024)
 #: note: 5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00
 Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
-# (6.11.2024 - 10.11.2024 18:00) --- Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
+#: source_id: viz2021:13.39707,52.509,05.11.2024,06:00 (bis 09.11.2024)
+#: note: zunächst nicht erwähnt, vermutlich zusammen mit der Zimmerstr. gesperrt
+Jerusalemer Str.	q3::temp 9936,11469 9945,11371
+#: source_id: viz2021:13.390364,52.50766,05.11.2024,06:00 (bis 09.11.2024)
+#: note: zunächst nicht erwähnt, vermutlich zusammen mit der Zimmerstr. gesperrt
+Checkpoint Charlie	q4::temp 9468,11412 9474,11360 9478,11317 9492,11209
+#: note: 6.11.2024 - 10.11.2024 18:00
+Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
 # (7.11.2024 - 11.11.2024 06:00) --- Straße des 17. Juni	1::temp 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 # (7.11.2024 - 11.11.2024 06:00) --- Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
 # weitere Sperrungen am 09.11.2024
@@ -39385,7 +39394,7 @@ EOF
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
-#: last_checked: 2024-10-30 (traffic)
+#: last_checked: 2024-11-05 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -41721,7 +41730,7 @@ EOF
 #: next_check_id: BEBELPLATZXMAS-2022
 #: by: https://www.weihnachtsmarkt-berlin.de/
 #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html?date=20231021
-#: osm_watch: node id="3874526513" version="8"
+#: osm_watch: node id="3874526513" version="9"
 # REMOVED --- #: XXX Wie lange dauern die Abbauarbeiten? -> am 2023-01-05 war der Platz noch gesperrt, am 2023-01-07 war von der Webcam auf dem Roten Rathaus zumindest am nördlichen Ende nichts mehr zu sehen --- #: last_checked: 2023-01-05 vvv --- #: check_frequency: 2d vvv --- # REMOVED --- #: next_check: 2023-01-02 vvv --- # REMOVED --- #: valid: 20221111-20230102 vvv --- #: valid: 20221111-20230108 vvv ---
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
@@ -41764,14 +41773,15 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-10-19 (osm) vvv
+#: last_checked: 2024-11-05 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
 #: osm_watch: note 4045330 6
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
-Markgrafenstr.	q4::inwork 9666,11935 9656,12031 9645,12133
+Markgrafenstr.	q4::inwork 9666,11935 9656,12031
+# REMOVED (hier eigentlich mittlerweile immer offen) --- Markgrafenstr.	q4::inwork 9656,12031 9645,12133
 #: osm_watch: way id="389101374" version="21"
 # REMOVED (hier ist die Einbahnstraße mittlerweile für Radfahrer offen) --- Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: osm_watch[closed]: note 4053376 3
@@ -42632,14 +42642,16 @@ EOF
 	q4::inwork 10385,13348 10341,13376
 EOF
      },
-     { from  => 1705899600, # 2024-01-22 06:00
-       until => 1706115600, # 2024-01-24 18:00
-       text  => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
+     { from  => 1730782800, # 2024-11-05 06:00, # 1705899600, # 2024-01-22 06:00
+       until => 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
+#       text  => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
+       text  => 'Gürtelstr.: Kranabbau zwischen Weserstr. und Wiesenweg, Sperrung der Fahrbahn, vom 06.11.2024 06:00 bis 07.11.2024 18:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
+#: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024)
 	q4::inwork 15055,11505 15016,11431
 # REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
 EOF
@@ -44071,7 +44083,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-11-01 vvv
+#: last_checked: 2024-11-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44155,7 +44167,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr
-#: last_checked: 2024-11-01
+#: last_checked: 2024-11-05
 #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 EOF
@@ -44669,7 +44681,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
 #: XXX Werden noch weitere Wege gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
-#: last_checked: 2024-10-12
+#: last_checked: 2024-11-05
 #: check_frequency: 45d
 #: next_check: 2024-11-30
 	2::inwork 12056,15159 12082,15206 12103,15218
@@ -45076,15 +45088,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1730831945, # undef, # XXX
        text  => 'Schwedter Steg - Bärbel-Bohley-Ring: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
+# REMOVED (weitgehend) --- #: add_fragezeichen: Sind die Bauarbeiten beendet?
 # REMOVED (eingetragen) --- #: XXX Wie ist die Qualität nach den Bauarbeiten? Kann der mudways-Eintrag entfernt werden?
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=768832#post768832
-#: last_checked: 2024-10-26 (daf)
-#: check_frequency: 7d
+# REMOVED --- #: last_checked: 2024-10-26 (daf) --- #: check_frequency: 7d
 	2::inwork 10064,15920 10051,15916 9996,15901
 EOF
      },
@@ -45287,7 +45298,7 @@ EOF
 EOF
      },
      { from  => 1729375200, # 2024-10-20 00:00
-       until => $isodate2epoch->("2024-11-08 17:00:00"), # 1730502000, # 2024-11-02 00:00
+       until => 1730834846, # $isodate2epoch->("2024-11-08 17:00:00"), # 1730502000, # 2024-11-02 00:00
        text  => 'Chopinstr./Indira-Gandhi-Str.: Bauarbeiten, mögliche Einschränkungen, vom 21.10.2024 bis voraussichtlich 8.11.2024',
        type  => 'handicap',
        data  => <<EOF,
@@ -45295,7 +45306,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848227966859522226
 #: by: https://pbs.twimg.com/media/GaLsVFqXMAAUvry?format=jpg&name=4096x4096 (Rad- und Gehwege sind frei)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/baustellen-auf-zwei-strassen_a427750
-#: source_id: viz2021:13.467763,52.546553,21.10.2024,07:00 (bis 01.11.2024) (bis 08.11.2024)
+#: source_id: viz2021:13.467763,52.546553,21.10.2024,07:00 (bis 01.11.2024) (bis 08.11.2024) (vorfristig inaktiv)
 	q4::inwork 14440,15682 14653,15738
 EOF
      },
