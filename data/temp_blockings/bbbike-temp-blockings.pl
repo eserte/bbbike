@@ -40197,13 +40197,18 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1691089485, # undef, # XXX
-       text  => 'Bhf. Wilhemsruh - Hertzstr.: Weg kann wegen Bauarbeiten gesperrt sein (Stand Mitte Juni 2023: Absperrung mit Bauzäunen)',
+       until => undef, # 1691089485, # undef, # XXX
+#       text  => 'Bhf. Wilhelmsruh - Hertzstr.: Weg kann wegen Bauarbeiten gesperrt sein (Stand Mitte Juni 2023: Absperrung mit Bauzäunen)',
+       text  => 'Bhf. Wilhelmsruh - Hertzstr.: möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HEIDEKRAUTBAHN-2021
 # REMOVED --- #: add_fragezeichen: Ist der Weg noch immer gesperrt? --- #: XXX Es scheinen Fassadenarbeiten stattzufinden; noch hat es anscheinend nichts mit der Heidekrautbahn zu tun --- #: last_checked: 2023-06-24
-	2::inwork 7090,19943 7123,19855 7138,19839
+# REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
+#: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
+#: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
+#: last_checked: 2024-11-06 (rbb)
+	2::inwork 7090,19943 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
 EOF
      },
      { from  => 1687060800, # 2023-06-18 06:00
@@ -41208,7 +41213,7 @@ EOF
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-10-24 vvv
+#: last_checked: 2024-11-03 (krickstadt) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-11-22 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)

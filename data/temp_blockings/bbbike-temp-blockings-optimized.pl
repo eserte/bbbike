@@ -6755,7 +6755,21 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: HEIDEKRAUTBAHN-2021
+# REMOVED --- #: add_fragezeichen: Ist der Weg noch immer gesperrt? --- #: XXX Es scheinen Fassadenarbeiten stattzufinden; noch hat es anscheinend nichts mit der Heidekrautbahn zu tun --- #: last_checked: 2023-06-24
+# REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
+#: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
+#: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
+#: last_checked: 2024-11-06 (rbb)
+	2::inwork 7090,19943 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
+',
+         'from' => undef,
+         'id' => 3826,
+         'text' => 'Bhf. Wilhelmsruh - Hertzstr.: möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -6955,7 +6969,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-10-24 vvv
+#: last_checked: 2024-11-03 (krickstadt) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-11-22 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
