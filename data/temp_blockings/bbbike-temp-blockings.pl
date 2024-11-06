@@ -3474,6 +3474,8 @@ EOF
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
 #: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
 #: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576
+#: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089 (inaktiv)
 #: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
@@ -23030,7 +23032,7 @@ EOF
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-05
+#: last_checked: 2024-11-06
 #: next_check: 2024-11-08
 	q3::inwork 14181,11434 14134,11272
 EOF
@@ -27619,7 +27621,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: last_checked: 2017-09-23
-	2::inwork 16268,9670 16182,9591
+	2::inwork 16268,9670 16261,9663 16182,9591
 EOF
      },
      { from  => 1506548546, # 2017-09-27 23:42
@@ -28918,7 +28920,7 @@ Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr ver
 #: osm_watch: way id="580507889" version="30"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird nicht mehr wiederholt
-#: last_checked: 2024-10-19
+#: last_checked: 2024-11-04 (mapillary)
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
@@ -29769,7 +29771,7 @@ EOF
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
 #: also_indoor: traffic (T,G,H,W)
 # REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-06
 #: check_frequency: 60d
 #: next_check: 2027-03-31
 Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
@@ -31287,7 +31289,8 @@ EOF
 # REMOVED ---	3 7603,12353 7627,12380 7654,12464
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (nächste Phase ab 4.11.2024)
-#: next_check: 2024-11-06
+#: by: https://berliner-abendblatt.de/berlin-news/wie-berlin-den-35-jahrestag-des-mauerfalls-feiert-id268851
+#: next_check: 2024-11-07
 # REMOVED --- #: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
@@ -31296,11 +31299,13 @@ Alexanderufer	2::temp 8315,13181 8315,13042
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt, vermutlich auch nur im östlichen Abschnitt
 Straße des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 # REMOVED (auf der Webcam hier keine Sperrung zu sehen) --- Straße des 17. Juni	1::temp 8055,12186 7816,12150 7383,12095
-#: source_id: viz2021:13.37688,52.51775,02.11.2024,06:00 (bis 13.11.2024)
+#: source_id: viz2021:13.37688,52.51775,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
+#: source_id: viz2021:13.377217,52.517071,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
 #: source_id: viz2021:13.37737,52.51457,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
-#: source_id: viz2021:13.36975,52.51584,02.11.2024,06:00 (bis 13.11.2024)
+#: source_id: viz2021:13.36975,52.51584,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
+#: source_id: viz2021:13.370774,52.517771,02.11.2024,06:00 (bis 13.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 #: note: 4.11.2024 - 13.11.2024 22:00 (allerdings waren am Abend des 4.11.2024 und Morgen+Abend des 5.11.2024 laut Webcam nur die zentrale Durchfahrten des Tors gesperrt)
@@ -31314,10 +31319,14 @@ Jerusalemer Str.	q3::temp 9936,11469 9945,11371
 #: source_id: viz2021:13.390364,52.50766,05.11.2024,06:00 (bis 09.11.2024)
 #: note: zunächst nicht erwähnt, vermutlich zusammen mit der Zimmerstr. gesperrt
 Checkpoint Charlie	q4::temp 9468,11412 9474,11360 9478,11317 9492,11209
+#: source_id: viz2021:13.37905,52.507,06.11.2024,18:00 (bis 11.11.2024)
 #: note: 6.11.2024 - 10.11.2024 18:00
 Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
-# (7.11.2024 - 11.11.2024 06:00) --- Straße des 17. Juni	1::temp 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-# (7.11.2024 - 11.11.2024 06:00) --- Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
+#: note: 7.11.2024 - 11.11.2024 06:00
+# REMOVED (hier vermutlich nicht) --- Straße des 17. Juni	1::temp 7383,12095 7816,12150 8055,12186
+Straße des 17. Juni	1::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+#: note: 7.11.2024 - 11.11.2024 06:00
+Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
 # weitere Sperrungen am 09.11.2024
 # (10.11.2024 - 11.11.2024 22:00) --- Friedrichstr.	q4::temp 9492,11209 9478,11317 9474,11360 9468,11412
 EOF
@@ -35204,14 +35213,14 @@ EOF
        permanent => 1,
        type  => 'handicap',
        data  => <<EOF,
-	q4 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
+	q4 15453,10419 15448,10397 15457,10342 15496,10277 15518,10234 15599,10206 15606,10179 15645,10147 15713,10035 15786,9957 15781,9933 15828,9875 15910,9860 15931,9846
 	q4 15931,9846 16002,9787 16049,9749
 	q4 16119,9689 16125,9678 16120,9653
-	q4 16120,9653 16182,9591 16268,9670
+	q4 16120,9653 16182,9591 16261,9663 16268,9670
 	q4 15513,10298 15496,10277
-	q4 15621,10214 15604,10204
-	q4 15840,9980 15811,9957 15786,9957
-	q4 16038,9837 16002,9787
+	q4 15621,10217 15610,10212 15599,10206
+	q4 15840,9980 15813,9961 15786,9957
+	q4 16038,9837 16026,9821 16002,9787
 EOF
      },
      { from  => $isodate2epoch->("2023-12-15 05:00:00"),
@@ -35665,7 +35674,7 @@ EOF
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2024-09-15 vvv
+#: last_checked: 2024-11-04 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -36154,7 +36163,7 @@ EOF
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2024-09-04 vvv
+#: last_checked: 2024-11-06 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-10-04 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -38166,7 +38175,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
-#: last_checked: 2024-10-30 vvv
+#: last_checked: 2024-11-04 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check_id: 2024-12-31 vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
@@ -38991,9 +39000,9 @@ EOF
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="26"
-#: last_checked: 2024-09-04
+#: last_checked: 2024-11-06
 #: check_frequency: 120d
-#: next_check: 2024-11-04
+# REMOVED --- #: next_check: 2024-11-04
 	q4::inwork; 22431,6068 22467,6135
 EOF
      },
@@ -39509,7 +39518,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-06-16 00:00:00"), # 1682892000, # 2023-05-01 00:00
-       until => undef, # $isodate2epoch->("2024-09-16 18:00:00"), # $isodate2epoch->("2023-12-31 23:59:59"), # undef, # $isodate2epoch->("2023-07-08 18:00:00"), # 1688162399, # 2023-06-30 23:59
+       until => 1730902617, # undef, # $isodate2epoch->("2024-09-16 18:00:00"), # $isodate2epoch->("2023-12-31 23:59:59"), # undef, # $isodate2epoch->("2023-07-08 18:00:00"), # 1688162399, # 2023-06-30 23:59
 #      text  => 'Florian-Geyer-Str.: Leitungsarbeiten, Sperrung der Fahrbahn zwischen Dörpfeldstr. bis Altheider Str., voraussichtlich bis Ende 2023', # was: Ende der Bauarbeiten unbekannt', # was: "voraussichtlich bis 08.07.2023"
        text  => 'Florian-Geyer-Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Altheider Str. und Silberberger Str., Ende der Bauarbeiten unbekannt', # was: voraussichtlich bis Mitte September 2024
        type  => 'handicap',
@@ -39524,10 +39533,9 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1453440.php (ab 17. Juni 2024 für 3 Monate)
 #: source_id: viz2021:13.54378,52.43796,20.11.2023,06:00 (hier zwischen Altheider Str. und Silberberger Str.; bis 31.12.2023) (inaktiv)
 # REMOVED --- #: osm_watch: way id="1172668082" version="12" --- #: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm --- #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht? --- #: last_checked: 2023-11-24 (osm) --- #: check_frequency: 90d --- #: next_check: 2023-12-31 ---	q4::inwork 20159,3623 20066,3746
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-15
+# REMOVD (ja) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-09-15
 # REMOVED --- #: next_check: 2024-09-16
-	q4::inwork 20066,3746 19992,3839
+	q4::inwork 20066,3746 19996,3841
 EOF
      },
      { from  => 1682571600, # 2023-04-27 07:00
@@ -41191,7 +41199,7 @@ EOF
 #: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
 #: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
@@ -41202,7 +41210,7 @@ EOF
 #: priority: #A vvv
 #: last_checked: 2024-10-24 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-11-25 vvv
+#: next_check: 2024-11-22 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -43712,7 +43720,7 @@ EOF
 #: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt. 2024-10-09, 2024-10-18: die Arbeiten sind nach Süden gewandert
 #: also_indoor: traffic (ex-H[falsch],re-G[zuviel],W[zuviel],T,B)
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße beendet?
-#: last_checked: 2024-10-26
+#: last_checked: 2024-11-04 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 EOF
@@ -43747,7 +43755,7 @@ EOF
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-10-28 vvv
+#: last_checked: 2024-11-04 (mapillary) vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2024-11-29 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -44033,7 +44041,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
 #: source_id: bvg2024:171#HIM_FREETEXT_227772 (ohne Endedatum)
-#: last_checked: 2024-10-30 vvv
+#: last_checked: 2024-11-04 (mapillary) vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
 Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
@@ -44533,7 +44541,7 @@ EOF
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-02
+#: last_checked: 2024-11-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -45010,7 +45018,7 @@ EOF
        text  => 'B96a: Sperrung der Bahnbrücke, vom 19.10.2024 bis 03.11.2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 246101091 (bis 03.11.2024)
+#: source_id: 246101091 (bis 03.11.2024) (inaktiv)
 	2::inwork 13513,-4708 13677,-4801 13821,-4837
 EOF
      },
@@ -45177,7 +45185,7 @@ EOF
        text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, vom 30.09.2024 07:00 bis 06.11.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.31115,52.491561,30.09.2024,07:00 (bis 06.11.2024)
+#: source_id: viz2021:13.31115,52.491561,30.09.2024,07:00 (bis 06.11.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1840620338042085619
 #: by: https://pbs.twimg.com/media/GYfo8hGWQAATDdF?format=jpg&name=large
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/gesperrt-wegen-bauarbeiten_a426523
@@ -45388,13 +45396,13 @@ EOF
 #: source_id: bvg2024:256#HIM_FREETEXT_242768
 #: source_id: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - ?)
-#: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024)
+#: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024) (bis 15.11.2024)
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
 #: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
 #: last_checked: 2024-10-29
 # REMOVED --- #: check_frequency: 7d
-#: next_check: 2024-11-11
+#: next_check: 2024-11-15
 	q4::inwork; 16764,11919 16794,12144
 EOF
      },
@@ -45446,7 +45454,7 @@ EOF
 #: source_id: viz2021:13.517775,52.467433,09.07.2024,08:00 (bis 13.11.2024)
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung mittlerweile aufgehoben?
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-04 (mapillary)
 #: next_check: 2024-11-13
 	q4::inwork; 18240,6845 18225,7004
 EOF

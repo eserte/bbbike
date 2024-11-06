@@ -246,7 +246,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2024-09-04 vvv
+#: last_checked: 2024-11-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -286,6 +286,31 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # REMOVED (Bauarbeiten beendet) --- #: XXX laut Schild gehen die Bauarbeiten bis 10.2017 --- #: XXX nach Beendigung der Bauarbeiten wieder den alten handicap-Eintrag ("Bodenschwellen") aktivieren --- #: last_checked: 2017-11-30 --- #: check_frequency: 14d --- Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork; 13489,9456 13357,9313
 # 
 ### Adlershof ###
+# 
+# 
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023)
+#: by: https://berliner-abendblatt.de/2022/08/04/marktplatz-adlershof-baumassnahmen-haben-begonnen/
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/umbau-des-marktplatzes-adlershof-hat-anfang-august-begonnen_a353228
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237306.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1391572.php (zweiter Bauabschnitt ab 4. Dezember 2023, Abschluss Mitte 2025)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/neue-bauarbeiten-am-marktplatz-adlershof_a401378
+#: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=763887#post763887 (bis Mitte 2025)
+#: by: https://www.aktives-adlershof.de/das-aktive-zentrum/projekte/historischer-marktplatz
+#: by: https://www.wista.de/aktuelles/news/marktplatz-doerpfeldstrasse-wird-zur-gruenen-mitte-von-adlershof (mit Karte)
+#: by: https://www.wista.de/fileadmin/_processed_/8/c/csm_marktplatz_Adlershof_f75006337a.webp
+#: by: https://www.tagesspiegel.de/berlin/bezirke/eroffnung-mit-burgerfest-geplant-endspurt-fur-den-neuen-marktplatz-in-adlershof-12604670.html (Eröffnung Mai 2025)
+#: by[nocache]: https://archive.is/tLaeV
+#: XXX möglicherweise wird die nördliche Fahrbahn dauerhaft eingezogen
+#: osm_watch: way id="20554168" version="26"
+#: osm_watch: way id="1155308749" version="1"
+#: last_checked: 2024-11-06 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2025-05-10 vvv
+Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
+Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (keine großen Einschränkungen mehr) --- #: XXX_prog: BS --- #: last_checked: 2018-08-11 vvv --- Wagner-Régeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703 --- Igo-Etrich-Str. - Wagner-Régeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730 --- #: last_checked ^^^
 # 
@@ -1011,12 +1036,13 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: osm_watch: way id="42701160" version="38"
 #: osm_watch: way id="1193560283" version="7"
 #: last_checked: 2024-10-19
-#: check_frequency: 90d
-#: next_check: 2024-10-31
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2024-10-31
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-06
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1195,7 +1221,7 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdlich-der-hohenstaufen-pallas-und-goebenstra%C3%9Fe-kleinere-p/?postID=757023#post757023
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
 #: by: https://www.deutsches-architekturforum.de/thread/15362-bv-am-winterfeldt-sch%C3%B6neberg/?postID=760855#post760855
-#: last_checked: 2024-11-03 vvv
+#: last_checked: 2024-11-04 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-05 vvv
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
@@ -1895,10 +1921,10 @@ Am Rummelsburger See: Fußgänger, Grünanlage	q3 15253,10171 15199,10211 15134,102
 #: note: Fußweg für Radfahrer frei
 Am Rummelsburger See: Fußgänger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15138,10638 15200,10600 15249,10564
 #: note: siehe auch permanenten temp-blockings-Eintrag (Radfahren verboten)
-Am Rummelsburger See: teilweise enge Kurven, Fußgänger an schönen Tagen	q2 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
+Am Rummelsburger See: teilweise enge Kurven, Fußgänger an schönen Tagen	q2 15453,10419 15448,10397 15457,10342 15496,10277 15518,10234 15599,10206 15606,10179 15645,10147 15713,10035 15786,9957 15781,9933 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Fußgänger an schönen Tagen	q1 15931,9846 16002,9787 16049,9749 16119,9689 16125,9678 16120,9653
 #: note: hier unübersichtlich und relativ eng, besonders vor der Kletterhalle
-Am Rummelsburger See: Fußgänger an schönen Tagen	q2+ 16120,9653 16182,9591 16268,9670
+Am Rummelsburger See: Fußgänger an schönen Tagen	q2+ 16120,9653 16182,9591 16261,9663 16268,9670
 # REMOVED (hier eigentlich Service-Straße) --- Am Rummelsburger See: Fußgänger an schönen Tagen	q1 16268,9670 16347,9594
 # REMOVED (ist jetzt breiter) --- Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20939,2413 20904,2426 20810,2398
 # REMOVED (nun komplett gesperrt) --- Vorfahrt Reichstagsgebäude: Fußgänger	q4 8400,12417 8399,12616
@@ -1944,7 +1970,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # 
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-30
+#: last_checked: 2024-11-06
 #: check_frequency: 14d
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 

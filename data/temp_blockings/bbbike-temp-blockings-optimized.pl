@@ -431,6 +431,8 @@ push @temp_blocking,
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
 #: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
 #: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576
+#: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
 # REMOVED --- #: XXX beginnen die Sperrungen schon fr¸her? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man kˆnnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089 (inaktiv)
 #: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur f¸r Kfz-Verkehr, bis 15.01.2024) (inaktiv)
@@ -3312,7 +3314,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-05
+#: last_checked: 2024-11-06
 #: next_check: 2024-11-08
 	q3::inwork 14181,11434 14134,11272
 ',
@@ -4405,7 +4407,7 @@ Treskowallee Richtung S¸den: Gehweg nicht f¸r Radfahrer frei, f¸r Radverkehr ver
 #: osm_watch: way id="580507889" version="30"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird nicht mehr wiederholt
-#: last_checked: 2024-10-19
+#: last_checked: 2024-11-04 (mapillary)
 Treskowallee Richtung Norden: Gehweg f¸r Radfahrer frei, Verschenkungen an den Einm¸ndungen, oder staugef‰hrdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
@@ -4562,7 +4564,7 @@ Lynarstr. zwischen Sparrplatz und M¸llerstr.	q3::inwork 7409,14954 7461,14986 76
 #: note: nach den Bauarbeiten wird der Straﬂenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
 #: also_indoor: traffic (T,G,H,W)
 # REMOVED (w‰hrend der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-06
 #: check_frequency: 60d
 #: next_check: 2027-03-31
 Alter Markt, L¸dersstr.: Einbahnstraﬂenregelung	q3::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
@@ -4818,7 +4820,8 @@ Alter Markt, L¸dersstr.: Einbahnstraﬂenregelung	q3::inwork; 22495,4523 22458,456
 # REMOVED ---	3 7603,12353 7627,12380 7654,12464
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (n‰chste Phase ab 4.11.2024)
-#: next_check: 2024-11-06
+#: by: https://berliner-abendblatt.de/berlin-news/wie-berlin-den-35-jahrestag-des-mauerfalls-feiert-id268851
+#: next_check: 2024-11-07
 # REMOVED --- #: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
@@ -4827,11 +4830,13 @@ Alexanderufer	2::temp 8315,13181 8315,13042
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt, vermutlich auch nur im ˆstlichen Abschnitt
 Straﬂe des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 # REMOVED (auf der Webcam hier keine Sperrung zu sehen) --- Straﬂe des 17. Juni	1::temp 8055,12186 7816,12150 7383,12095
-#: source_id: viz2021:13.37688,52.51775,02.11.2024,06:00 (bis 13.11.2024)
+#: source_id: viz2021:13.37688,52.51775,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
+#: source_id: viz2021:13.377217,52.517071,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
 #: source_id: viz2021:13.37737,52.51457,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
-#: source_id: viz2021:13.36975,52.51584,02.11.2024,06:00 (bis 13.11.2024)
+#: source_id: viz2021:13.36975,52.51584,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
+#: source_id: viz2021:13.370774,52.517771,02.11.2024,06:00 (bis 13.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 #: note: 4.11.2024 - 13.11.2024 22:00 (allerdings waren am Abend des 4.11.2024 und Morgen+Abend des 5.11.2024 laut Webcam nur die zentrale Durchfahrten des Tors gesperrt)
@@ -4845,10 +4850,14 @@ Jerusalemer Str.	q3::temp 9936,11469 9945,11371
 #: source_id: viz2021:13.390364,52.50766,05.11.2024,06:00 (bis 09.11.2024)
 #: note: zun‰chst nicht erw‰hnt, vermutlich zusammen mit der Zimmerstr. gesperrt
 Checkpoint Charlie	q4::temp 9468,11412 9474,11360 9478,11317 9492,11209
+#: source_id: viz2021:13.37905,52.507,06.11.2024,18:00 (bis 11.11.2024)
 #: note: 6.11.2024 - 10.11.2024 18:00
 Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
-# (7.11.2024 - 11.11.2024 06:00) --- Straﬂe des 17. Juni	1::temp 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-# (7.11.2024 - 11.11.2024 06:00) --- Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
+#: note: 7.11.2024 - 11.11.2024 06:00
+# REMOVED (hier vermutlich nicht) --- Straﬂe des 17. Juni	1::temp 7383,12095 7816,12150 8055,12186
+Straﬂe des 17. Juni	1::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+#: note: 7.11.2024 - 11.11.2024 06:00
+Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
 # weitere Sperrungen am 09.11.2024
 # (10.11.2024 - 11.11.2024 22:00) --- Friedrichstr.	q4::temp 9492,11209 9478,11317 9474,11360 9468,11412
 ',
@@ -5453,14 +5462,14 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '	q4 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
+         'data' => '	q4 15453,10419 15448,10397 15457,10342 15496,10277 15518,10234 15599,10206 15606,10179 15645,10147 15713,10035 15786,9957 15781,9933 15828,9875 15910,9860 15931,9846
 	q4 15931,9846 16002,9787 16049,9749
 	q4 16119,9689 16125,9678 16120,9653
-	q4 16120,9653 16182,9591 16268,9670
+	q4 16120,9653 16182,9591 16261,9663 16268,9670
 	q4 15513,10298 15496,10277
-	q4 15621,10214 15604,10204
-	q4 15840,9980 15811,9957 15786,9957
-	q4 16038,9837 16002,9787
+	q4 15621,10217 15610,10212 15599,10206
+	q4 15840,9980 15813,9961 15786,9957
+	q4 16038,9837 16026,9821 16002,9787
 ',
          'from' => undef,
          'id' => 3488,
@@ -5574,7 +5583,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2024-09-15 vvv
+#: last_checked: 2024-11-04 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5707,7 +5716,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: note: anscheinend Schubertstr. auch f¸r Fuﬂg‰nger gesperrt, hier gibt es keinen Gehweg (noch immer?); auﬂerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das ˆstliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, mˆglicherweise passierbar, So 2024-09-01 mittags mˆglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2024-09-04 vvv
+#: last_checked: 2024-11-06 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-10-04 vvv
 # REMOVED --- #: note: Unterf¸hrung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -6242,7 +6251,7 @@ Br¸ckenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
-#: last_checked: 2024-10-30 vvv
+#: last_checked: 2024-11-04 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check_id: 2024-12-31 vvv
 nˆrdlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn tempor‰r aufgegeben, Wechseln auf die andere Straﬂenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
@@ -6482,9 +6491,9 @@ Trampelpfad vom Treptower Park: keine gute ‹berquerungsmˆglichkeit	2::inwork 142
 #: note: eigentlich q4-, wegen des zus‰tzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="26"
-#: last_checked: 2024-09-04
+#: last_checked: 2024-11-06
 #: check_frequency: 120d
-#: next_check: 2024-11-04
+# REMOVED --- #: next_check: 2024-11-04
 	q4::inwork; 22431,6068 22467,6135
 ',
          'from' => 1730674800,
@@ -6610,28 +6619,7 @@ Trampelpfad vom Treptower Park: keine gute ‹berquerungsmˆglichkeit	2::inwork 142
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: FLORIANGEYER-2023
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1316715.php
-#: by: https://www.berliner-woche.de/adlershof/c-verkehr/fahrbahn-wird-neu-gemacht_a379258
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1342267.php (ein Endtermin kann nicht benannt werden)
-#: by: https://www.berliner-woche.de/adlershof/c-bauen/strassenarbeiten-verzoegern-sich_a386561
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1363126.php (bis Jahresende 2023)
-#: by: https://www.berliner-woche.de/adlershof/c-bauen/umfangreiche-leitungsarbeiten_a393884
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1453440.php (ab 17. Juni 2024 f¸r 3 Monate)
-#: source_id: viz2021:13.54378,52.43796,20.11.2023,06:00 (hier zwischen Altheider Str. und Silberberger Str.; bis 31.12.2023) (inaktiv)
-# REMOVED --- #: osm_watch: way id="1172668082" version="12" --- #: note: auch laut rbbtext ist der Abschnitt zwischen Altheider Str. und Silberberger Str. betroffen, go with osm --- #: XXX wird bei der Fahrbahnerneuerung das Pflaster ersetzt/neu gemacht? --- #: last_checked: 2023-11-24 (osm) --- #: check_frequency: 90d --- #: next_check: 2023-12-31 ---	q4::inwork 20159,3623 20066,3746
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-09-15
-# REMOVED --- #: next_check: 2024-09-16
-	q4::inwork 20066,3746 19992,3839
-',
-         'from' => 1718488800,
-         'id' => 3775,
-         'text' => 'Florian-Geyer-Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Altheider Str. und Silberberger Str., Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6958,7 +6946,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: by: https://nachgefragt.bvg.de/schoeneweide/ (Verl‰ngerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (f¸r den MIV bis zum 25.11.2024 gesperrt)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
 #: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
@@ -6969,7 +6957,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: priority: #A vvv
 #: last_checked: 2024-10-24 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-11-25 vvv
+#: next_check: 2024-11-22 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung S¸den ¸berqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -7711,7 +7699,7 @@ Uslarer Str.	q3::inwork; 24967,13438 25094,13362
 #: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt. 2024-10-09, 2024-10-18: die Arbeiten sind nach S¸den gewandert
 #: also_indoor: traffic (ex-H[falsch],re-G[zuviel],W[zuviel],T,B)
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraﬂe beendet?
-#: last_checked: 2024-10-26
+#: last_checked: 2024-11-04 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 13715,9455 13614,9333
 ',
@@ -7747,7 +7735,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung S¸dosten wieder eingeschr‰nkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realit‰t die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-10-28 vvv
+#: last_checked: 2024-11-04 (mapillary) vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2024-11-29 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
@@ -7836,7 +7824,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        {
          'data' => '#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
 #: source_id: bvg2024:171#HIM_FREETEXT_227772 (ohne Endedatum)
-#: last_checked: 2024-10-30 vvv
+#: last_checked: 2024-11-04 (mapillary) vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
 Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
@@ -8084,7 +8072,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-02
+#: last_checked: 2024-11-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8445,19 +8433,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'handicap',
          'until' => 1732291200
        },
-       {
-         'data' => '#: source_id: viz2021:13.31115,52.491561,30.09.2024,07:00 (bis 06.11.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1840620338042085619
-#: by: https://pbs.twimg.com/media/GYfo8hGWQAATDdF?format=jpg&name=large
-#: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/gesperrt-wegen-bauarbeiten_a426523
-	q4::inwork; 4193,9404 4011,9474
-',
-         'from' => 1727586000,
-         'id' => 4180,
-         'text' => 'Westf‰lische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, vom 30.09.2024 07:00 bis 06.11.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1730908800
-       },
+       undef,
        undef,
        undef,
        {
@@ -8612,13 +8588,13 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
 #: source_id: bvg2024:256#HIM_FREETEXT_242768
 #: source_id: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - ?)
-#: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024)
+#: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024) (bis 15.11.2024)
 #: note: In der Siegfriedstr. h‰ngen schon Umleitungsschilder f¸r Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
 #: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
 #: last_checked: 2024-10-29
 # REMOVED --- #: check_frequency: 7d
-#: next_check: 2024-11-11
+#: next_check: 2024-11-15
 	q4::inwork; 16764,11919 16794,12144
 ',
          'from' => 1729548000,
@@ -8657,7 +8633,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'data' => '#: source_id: viz2021:13.517775,52.467433,09.07.2024,08:00 (bis 13.11.2024)
 #: add_fragezeichen: Wurde die Einbahnstraﬂenregelung mittlerweile aufgehoben?
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-04 (mapillary)
 #: next_check: 2024-11-13
 	q4::inwork; 18240,6845 18225,7004
 ',
