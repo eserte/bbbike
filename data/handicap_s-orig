@@ -1969,9 +1969,12 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 # 
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
+#: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024)
 #: also_indoor: traffic (none)
 #: last_checked: 2024-11-06
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: check_frequency: 30d
+#: next_check_id: 2024-12-15
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 
 Lausitzer Platz: Fußgängerzone, einige Bodenschwellen	q2 12197,10494 12172,10585

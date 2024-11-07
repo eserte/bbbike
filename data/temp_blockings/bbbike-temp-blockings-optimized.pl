@@ -421,6 +421,7 @@ push @temp_blocking,
        undef,
        {
          'data' => '#: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
+#: source_id: viz2021:13.33407,52.5054,07.11.2024,07:00 (Verengung Breitscheidplatz, bis 12.01.2025)
 # REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
 # sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
@@ -431,11 +432,14 @@ push @temp_blocking,
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
 #: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
 #: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576 (Weihnachten 2024)
 #: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089 (inaktiv)
 #: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
+#: source_id: viz2021:13.331602,52.505283,07.11.2024,07:00 (bis 12.01.2025)
+#: source_id: viz2021:13.33567,52.50437,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Rankestr., bis 12.01.2025)
+#: source_id: viz2021:13.33931,52.50323,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Tauentzienstr., bis 12.01.2025)
 #: note: 2022+2023 ist die Farbahn auch gesperrt
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 ',
@@ -3314,7 +3318,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-07
 #: next_check: 2024-11-08
 	q3::inwork 14181,11434 14134,11272
 ',
@@ -4821,25 +4825,28 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (nächste Phase ab 4.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/wie-berlin-den-35-jahrestag-des-mauerfalls-feiert-id268851
-#: next_check: 2024-11-07
+#: next_check: 2024-11-08
 # REMOVED --- #: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
 Alexanderufer	2::temp 8315,13181 8315,13042
-#: source_id: viz2021:13.37679,52.5163,02.11.2024,06:00 (bis 13.11.2024)
+#: source_id: viz2021:13.37679,52.5163,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
+#: source_id: viz2021:13.351095,52.514567,07.11.2024,18:00 (bis 11.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt, vermutlich auch nur im östlichen Abschnitt
 Straße des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 # REMOVED (auf der Webcam hier keine Sperrung zu sehen) --- Straße des 17. Juni	1::temp 8055,12186 7816,12150 7383,12095
 #: source_id: viz2021:13.37688,52.51775,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
-#: source_id: viz2021:13.377217,52.517071,02.11.2024,06:00 (bis 13.11.2024)
+#: source_id: viz2021:13.377217,52.517071,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
+#: source_id: viz2021:13.376902,52.517751,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
-#: source_id: viz2021:13.37737,52.51457,02.11.2024,06:00 (bis 13.11.2024)
+#: source_id: viz2021:13.37737,52.51457,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
+#: source_id: viz2021:13.377392,52.514609,07.11.2024,18:00 (bis 11.11.2024)
 Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
 #: source_id: viz2021:13.36975,52.51584,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
 #: source_id: viz2021:13.370774,52.517771,02.11.2024,06:00 (bis 13.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
-#: note: 4.11.2024 - 13.11.2024 22:00 (allerdings waren am Abend des 4.11.2024 und Morgen+Abend des 5.11.2024 laut Webcam nur die zentrale Durchfahrten des Tors gesperrt)
+#: note: 4.11.2024 - 13.11.2024 22:00 (allerdings war bis mindestens 7.11.2024 abends laut Webcam nur die zentrale Durchfahrt des Tors gesperrt)
 Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
 #: source_id: viz2021:13.3991,52.50819,05.11.2024,06:00 (bis 09.11.2024)
 #: note: 5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00
@@ -4859,6 +4866,17 @@ Straße des 17. Juni	1::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,122
 #: note: 7.11.2024 - 11.11.2024 06:00
 Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
 # weitere Sperrungen am 09.11.2024
+# Zimmerstraße auf der gesamten Länge
+# Markgrafenstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
+# Charlottenstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
+# Friedrichstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
+# Ebertstraße zwischen Scheidemannstraße und Potsdamer Platz
+# John-Foster-Dulles-Allee und Scheidemannstraße auf der gesamten Länge
+# Heinrich-von-Hagern-Straße auf der gesamten Länge
+# Dorotheenstraße zwischen Ebertstraße und Wilhelmstraße
+# Behrenstraße zwischen Wilhelmstraße und Ebertstraße
+# Hannah-Arendt-Straße zwischen Cora-Berliner Straße und Ebertstraße
+# Lennéstraße zwischen Auguste-Hauschner-Straße und Ebertstraße
 # (10.11.2024 - 11.11.2024 22:00) --- Friedrichstr.	q4::temp 9492,11209 9478,11317 9474,11360 9468,11412
 ',
          'from' => 1730489136,
@@ -5607,22 +5625,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181336.php (2022er-Eintrag)
-#: source_id: viz2021:13.55864,52.562688,03.03.2022,14:00 (inaktiv)
-#: by: https://twitter.com/VIZ_Berlin/status/1498672727842082819 (2022er-Eintrag)
-#: source_id: viz2021:13.559233,52.562465,04.11.2024,00:01 (bis 07.11.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1853120454648607073
-#: by: https://pbs.twimg.com/media/GbUIAkBW8AA3AGf?format=jpg&name=medium
-	2::inwork 20895,17594 20769,17650
-	2::inwork 20769,17650 20891,17572
-',
-         'from' => 1730588460,
-         'id' => 3522,
-         'text' => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, auch Radfahrer und Fußgänger sind betroffen, vom 04.11.2024 bis 07.11.2024 05:00',
-         'type' => 'gesperrt',
-         'until' => 1730952000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6037,7 +6040,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-10-14 (daf)
+#: last_checked: 2024-11-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6135,7 +6138,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
 #: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
-#: last_checked: 2024-10-29
+#: last_checked: 2024-11-07
 #: check_frequency: 14d
 	q4::inwork 16720,12614 16859,12613
 ',
@@ -6671,7 +6674,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-10-22
+#: last_checked: 2024-11-07
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6688,7 +6691,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: note: Einbahnstraßenbereich ist 50m lang; Halteverbotsschilder bis 2024-11-30
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-10-29
+#: last_checked: 2024-11-07
 #: check_frequency: 21d
 #: next_check: 2024-11-30
 	q3::inwork; 15648,12687 15643,12875
@@ -7293,7 +7296,29 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
+#: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
+#: also_indoor: traffic (G[zu kurz],B,T) vvv
+#: last_checked: 2024-11-07 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2025-01-31 vvv
+# REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
+Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056,12304
+# REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
+# REMOVED (alter Eintrag) --- Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3977,
+         'text' => 'Rüdigerstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende Januar 2025',
+         'type' => 'handicap',
+         'until' => 1738342800
+       },
        undef,
        undef,
        undef,
@@ -7401,20 +7426,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'type' => 'handicap',
          'until' => 1743436800
        },
-       {
-         'data' => '#: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
-#: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
-#: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024)
-	q4::inwork 15055,11505 15016,11431
-# REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
-',
-         'from' => 1730782800,
-         'id' => 4000,
-         'text' => 'Gürtelstr.: Kranabbau zwischen Weserstr. und Wiesenweg, Sperrung der Fahrbahn, vom 06.11.2024 06:00 bis 07.11.2024 18:00',
-         'type' => 'handicap',
-         'until' => 1730998800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8677,20 +8689,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'type' => 'handicap',
          'until' => 1738364340
        },
-       {
-         'data' => '#: source_id: viz2021:13.144073,52.397109,28.10.2024,08:00 (bis 07.11.2024)
-#: source_id: viz2021:13.14439,52.3967,28.10.2024,00:00 (Kremnitzufer, bis 31.10.2024) (inaktiv)
-#: note: nur Kfz- und Radverkehr sind in der VIZ-Meldung erwähnt, unklar, ob Fußgänger hier trotzdem durch können
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1850774496149475425
-#: by: https://pbs.twimg.com/media/Gav4fQdXYAE2q0T?format=jpg&name=medium (Sicherungsposten lassen wohl Fußgänger bei Bedarf durch)
-	2::inwork -6998,-1320 -7020,-1275
-',
-         'from' => 1730012400,
-         'id' => 4204,
-         'text' => 'Machnower Str.: Brückenarbeiten, Sperrung montags bis donnerstags 08:00-15:00 Uhr, vom 28.10.2024 08:00 bis 07.11.2024 15:00',
-         'type' => 'gesperrt',
-         'until' => 1730988000
-       },
+       undef,
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1850788234743165358
 #: by: https://pbs.twimg.com/media/Ga9SEpkXgAAGJFy?format=jpg&name=large
@@ -8751,6 +8750,29 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'text' => 'Westendallee: Bauarbeiten zwischen Brixplatz und Reichsstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 04.11.2024 06:00 bis 18.11.2024 05:00',
          'type' => 'handicap',
          'until' => 1731902400
+       },
+       {
+         'data' => '#: source_id: 246430009 (bis 15.04.2025)
+	2::inwork 52061,34502 52842,34058
+',
+         'from' => 1730012400,
+         'id' => 4210,
+         'text' => 'Haselberg: Bauarbeiten, Sperrung, vom 28.10.2024 08:00 Uhr bis 15.04.2025 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1744725600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.470429,52.539862,08.11.2024,07:00 (bis 22.11.2024)
+	3::inwork 14828,15050 14843,15007 14922,15082
+	3::inwork 14922,15082 14843,15007 14959,14752
+	3::inwork 14666,14845 14828,15050 14686,15608
+	3::inwork 14843,15007 14828,15050 14666,14845
+',
+         'from' => 1730959200,
+         'id' => 4211,
+         'text' => 'Weißenseer Weg: gesperrte Mittelstreifenüberfahrt von/zur Fritz-Lesch-Str., evtl. auch für Fußgänger und Radfahrer, vom 08.11.2024 07:00 bis 22.11.2024 17:00',
+         'type' => 'gesperrt',
+         'until' => 1732291200
        }
      
 );

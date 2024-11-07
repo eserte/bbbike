@@ -1472,7 +1472,7 @@ Köpenicker Allee: Asphalt	Q0-; 19206,9243 19267,9201 19392,9116 19500,9043
 #: by: Roy Fischer [AM]
 #: confirmed_by: srt
 Vulkanstr.: Asphalt	Q0 15912,13153 15912,13301 15896,13387 15896,13512 15896,13547 15896,13594 15896,13760 15897,13942 15871,14106 15860,14208 15850,14308
-Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
+Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15951,12832 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
 Sandinostr.: unebenes Kleinsteinpflaster	Q2 15899,14598 15841,14641 15799,14674
 Sandinostr.: Asphalt	Q0 15799,14674 15706,14752
 #: corrected_by: Ralf Bressel (früher holpriger Feldweg -> mittlerweile asphaltiert, seit ca. 2007)
@@ -9051,7 +9051,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="13"
-#: last_checked: 2024-09-08
+#: last_checked: 2024-11-07
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -12007,6 +12007,9 @@ Im Marienpark: Asphalt	Q0 8167,3641 8163,3660 8173,3672 8327,3706 8346,3633
 (Dieselstr. - Kiefholzstr.): Asphalt	Q0 14642,8022 14771,8142 14832,8199
 (Unterführung Seehofstr.): Verbundsteinpflaster	Q1 1145,2898 1126,2879 1093,2866
 Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
+#: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1500791.php
+#: XXX Umgestaltung (und Entsiegelung) bis April 2025 --- ändert sich etwas an den Wegen?
+#: next_check: 2025-04-30
 (Alexandrinenstr. - Wassertorstr.): Asphalt mit einigen Schäden	Q1 10293,10645 10401,10601 10431,10606 10492,10582
 (Ossastr. - Rütlistr.): Asphalt	Q0 12623,9134 12554,9178
 (Bautzener Str. - Kolonnenstr.): Asphalt	Q0 8180,9099 8185,9083 8184,8902 8145,8773
@@ -13128,7 +13131,7 @@ An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1852369528518275445
 #: by: https://pbs.twimg.com/media/GbTwGDrW0AExWdH?format=png&name=900x900 (keine Information zur Verkehrsführung des Radverkehrs)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1854160975756148844 (Bauarbeiten werden vorfristig am 07.11.2024 beendet)
-#: source_id: viz2021:13.612206,52.512192,04.11.2024,07:00 (nur Kfz-Verkehr, bis 15.11.2024) (bis 07.11.2024)
+#: source_id: viz2021:13.612206,52.512192,04.11.2024,07:00 (nur Kfz-Verkehr, bis 15.11.2024) (bis 07.11.2024) (inaktiv)
 #: add_fragezeichen Ist die Qualität zwischen Wodanstr. und Treskowstr. nach den Bauarbeiten besser geworden?
 #: next_check 2024-11-07
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24530,12296 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932
@@ -15242,10 +15245,10 @@ Wilhelmshavener Str.: Kopfsteinpflaster	Q2 6089,14197 6093,13990 6095,13724 6104
 Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8761 (Antrag zur "Fahrradlenkung" auf dem Hauptweg)
-#: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
+#: XXX Wird dieser Abschnitt vielleicht auch asphaltiert? Oder nur saniert, aber dann müsste man den mudways-Eintrag prüfen.
 #: osm_watch: way id="115724952" version="13"
 #: osm_watch: way id="1159154133" version="2"
-#: last_checked: 2024-10-09
+#: last_checked: 2024-10-26
 #: check_frequency: 30d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)

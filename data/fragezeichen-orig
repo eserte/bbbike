@@ -309,9 +309,9 @@ Oderbruchstr./Hohenschönhauser Str.: werden hier Radspuren markiert?	?::projecte
 #: source_id: 2147342170 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72 (möglicherweise inaktiv)
 #: osm_watch: way id="336565341" version="20"
-#: last_checked: 2024-10-29
+#: last_checked: 2024-11-07
 #: check_frequency: 120d
-Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
+Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15951,12832 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.6 und Bsw.7) vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5154 vvv
@@ -1732,7 +1732,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: osm_watch: way id="93221335" version="27"
 #: osm_watch: note 4347252 7
 # REMOVED --- #: also_indoor: traffic (G,B,T,W) [alle ungenau/falsch]
-#: last_checked: 2024-10-29
+#: last_checked: 2024-11-07
 #: check_frequency: 7d
 #: next_check: 2024-12-31
 # REMOVED --- #: next_check: 2024-09-13
@@ -4007,12 +4007,13 @@ Ringslebenstr. (von Heideläuferweg bis Buckower Damm): Busspur geplant, evtl. nu
 #: source_id: viz2021:13.313262,52.435444,24.08.2023,08:00 (bis 30.11.2023) (bis 31.01.2024) (bis 05.04.2024) (bis 30.06.2024) (bis 08.07.2024) (bis 10.07.2024) (inaktiv)
 #: source_id: viz2021:13.309699,52.431276,25.01.2024,07:00 (bis 08.02.2024) (bis 02.05.2024) (bis 08.05.2024) (inaktiv)
 #: source_id: viz2021:13.310181,52.431948,02.09.2024,07:00 (bis 20.09.2024) (inaktiv)
-#: source_id: viz2021:13.310467,52.432207,20.09.2024,07:00 (bis 10.10.2024, im Anschluss weitere Arbeiten) (bis 11.11.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.310467,52.432207,20.09.2024,07:00 (bis 10.10.2024, im Anschluss weitere Arbeiten) (bis 11.11.2024 + weitere Arbeiten) (bis 11.11.2025 + ...)
+#: source_id: viz2021:13.310222,52.431819,10.10.2024,11:00 (Richtung Norden für Kfz gesperrt, bis 11.11.2025 + ...)
 #: osm_watch: way id="30956352" version="37"
 #: note: laut rbb werden die Leitungsarbeiten insgesamt bis Ende 2025 andauern
 #: last_checked: 2024-10-26
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2024-11-11
+#: next_check: 2025-11-11
 Hindenburgdamm: Busspur geplant, evtl. auch für Radfahrer frei	?; 4411,3180 4170,2727
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf (laut Liste nur 100m, aber die Gesamtlänge ist über 250m)
@@ -5943,7 +5944,7 @@ Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,885
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18076,10324 18085,10244 18114,10215
 # 
 # REMOVED (hier liegt bereits Verbundsteinpflaster --- keine Änderung?) --- Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18114,10215 18130,10201 18132,10183
-#: last_checked: 2024-10-29
+#: last_checked: 2024-11-07
 #: check_frequency: 90d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16439,12872 16484,12871 16860,12861
 # 
@@ -6010,7 +6011,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2024-10-19
+#: last_checked: 2024-11-07
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -6130,13 +6131,13 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf (temporär für 3 Monate)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-07
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/an-der-landsberger-allee-kracht-es-im-bezirk-am-haeufigsten_a377796
 #: XXX In welcher Richtung (vermutlich Richtung Westen offen)? Wird die Einbahnstraße auch für Radfahrer gelten?
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-07
 #: check_frequency: 90d
 Hirschberger Str.: Planung einer Einbahnstraße	? 14988,11130 15021,11152 15056,11138 15102,11120
 # 
@@ -7241,7 +7242,7 @@ Spandauer Damm: hier ist eine Radspur geplant	?::projected; 2411,12428 2641,1245
 #: XXX während der Bauzeit (Bauvorbereitungen ab 01/2023, Bauzeit 06/2023-12/2024, Restleistungen bis 06/2025) werden abwechselnd Hauffstr. und Am Alten Lokschuppen gesperrt vvv
 #: XXX außerdem sind kurzzeitige Sperrungen an den Brücken geplant: Kaskelstr., Archibaldweg, Nöldnerstr.
 #: note: laut https://strecken-info-beta.de/ Totalsperrung der Bahnstrecke im Zeitraum 10.12.2023 00:00 - 14.12.2024 23:59
-#: last_checked: 2024-10-22 vvv
+#: last_checked: 2024-11-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-30 vvv
 Hauffstr.: bauzeitliche Sperrung	? 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
@@ -7336,7 +7337,7 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/24-10-22-fahrradstr-modersohnstrasse-vzp.pdf?ts=1729601391 (Vorfahrt gewähren in der Simplonstr.; gegenläufige Einbahnstraßen für Kfz)
 #: by: https://viz.berlin.de/aktuelle-meldungen/baubeginn-fur-die-fahrradstrasse-in-der-modersohnstrasse/
 #: note: laut rbb beginnen die Bauarbeiten am 4.11.2024, bis 8.11.2024 für Kfz gesperrt
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-07
 #: next_check: 2024-11-08
 Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::inwork 14134,11272 14181,11434 14211,11552
 # 
@@ -7695,18 +7696,7 @@ Almazeile: Einziehung von Straßenland geplant	? -1616,18112 -1660,18114
 #: next_check: 2028-12-31
 Thorwaldsenstr.: Sanierung und Verbreiterung der Radwege zwischen Canovastr. und Bergstr. beide Seiten	?::projected 6343,6297 6494,6128 6629,5946 6696,5854
 # 
-#: next_check_id: RUSCHEAMPEL-2024
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9084
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240124 (Ampel wird installiert)
-#: by: https://nitter.tux.pizza/VIZ_Berlin/status/1750396831916515432#m
-#: by: https://nitter.tux.pizza/pic/orig/media%2FGEnMGeQWkAA1VSz.jpg
-#: source_id: viz2021:13.485931,52.520804,25.01.2024,07:00 (Sperrung nur für Kfz-Verkehr, bis 02.05.2024) (nun auch Radverkehr, bis 24.05.2024, stimmt aber nicht) (bis 14.06.2024) (bus 21.06.2024) (bis 27.06.2024) (inaktiv)
-#: osm_watch: note 4243680 6
-#: XXX Ampelanlage + Markierungen weitgehend fertig, noch nicht eingeschaltet
-#: last_checked: 2024-10-29
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2024-06-27
-Bornitzstr./Ruschestr.: Ampel (anstelle des Zebrastreifens) in Bau	?::inwork 15923,12853 15950,12886 15985,12920
+# REMOVED --- #: next_check_id: RUSCHEAMPEL-2024 --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9084 --- #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240124 (Ampel wird installiert) --- #: by: https://nitter.tux.pizza/VIZ_Berlin/status/1750396831916515432#m --- #: by: https://nitter.tux.pizza/pic/orig/media%2FGEnMGeQWkAA1VSz.jpg --- #: source_id: viz2021:13.485931,52.520804,25.01.2024,07:00 (Sperrung nur für Kfz-Verkehr, bis 02.05.2024) (nun auch Radverkehr, bis 24.05.2024, stimmt aber nicht) (bis 14.06.2024) (bus 21.06.2024) (bis 27.06.2024) (inaktiv) --- #: osm_watch: note 4243680 6 --- #: XXX Ampelanlage + Markierungen weitgehend fertig, noch nicht eingeschaltet --- #: last_checked: 2024-10-29 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2024-06-27 --- Bornitzstr./Ruschestr.: Ampel (anstelle des Zebrastreifens) in Bau	?::inwork 15923,12853 15950,12886 15985,12920
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10198
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/AzdpStqlMQmP90NwybjkBOKD7iJp160HGor7mJQU/yPnnLsJc/37-Anlagen/02/vzb0106_VI-B-Plan_10-56-1_Aufstellung.pdf
@@ -8148,7 +8138,7 @@ Prenzlauer Promenade: Sanierung geplant, Richtung Norden wird es dann eine Radve
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_29_3085_3224_online.pdf (Benennung)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9830 (Antrag (allgemein zum Bahnhofsvorplatz))
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9999 (Anfrage (allgemein zum Bahnhofsvorplatz))
-#: last_checked: 2024-09-08 (keine Schilder)
+#: last_checked: 2024-11-07
 #: check_frequency: 60d
 Eugeniu-Botnari-Platz: Benennung eines Platzes; wird es Straßenschilder geben?	? 16823,11767 16815,11729 16779,11729
 # 
