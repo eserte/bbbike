@@ -3316,17 +3316,21 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: source_id: 2147342105 (inaktiv)
 #	q3::inwork; 14181,11434 14211,11552
-#: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024)
+#: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-07
-#: next_check: 2024-11-08
-	q3::inwork 14181,11434 14134,11272
+#: last_checked: 2024-11-08 vvv
+#: check_frequency: 7d vvv
+# REMOVED #: next_check: 2024-11-08
+Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
+Wühlischstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,11552
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1730674800,
          'id' => 2495,
-         'text' => 'Modersohnstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Revaler Str. gesperrt, voraussichtlich bis 08.11.2024',
+         'text' => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt',
          'type' => 'handicap',
-         'until' => 1731085200
+         'until' => undef
        },
        undef,
        undef,
@@ -4825,7 +4829,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (nächste Phase ab 4.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/wie-berlin-den-35-jahrestag-des-mauerfalls-feiert-id268851
-#: next_check: 2024-11-08
+#: next_check: 2024-11-10
 # REMOVED --- #: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
@@ -4846,7 +4850,7 @@ Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
 #: source_id: viz2021:13.370774,52.517771,02.11.2024,06:00 (bis 13.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
-#: note: 4.11.2024 - 13.11.2024 22:00 (allerdings war bis mindestens 7.11.2024 abends laut Webcam nur die zentrale Durchfahrt des Tors gesperrt)
+#: note: 4.11.2024 - 13.11.2024 22:00 (allerdings war bis mindestens 8.11.2024 abends laut Webcam nur die zentrale Durchfahrt des Tors sowie der nördliche Strang des Platzes gesperrt)
 Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
 #: source_id: viz2021:13.3991,52.50819,05.11.2024,06:00 (bis 09.11.2024)
 #: note: 5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00
@@ -4855,7 +4859,7 @@ Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155
 #: note: zunächst nicht erwähnt, vermutlich zusammen mit der Zimmerstr. gesperrt
 Jerusalemer Str.	q3::temp 9936,11469 9945,11371
 #: source_id: viz2021:13.390364,52.50766,05.11.2024,06:00 (bis 09.11.2024)
-#: note: zunächst nicht erwähnt, vermutlich zusammen mit der Zimmerstr. gesperrt
+#: note: eigentlich für 10.11.2024 - 11.11.2024 22:00 vorgesehen, wurde aber schon früher gesperrt, vermutlich zeitgleich mit der Zimmerstr.
 Checkpoint Charlie	q4::temp 9468,11412 9474,11360 9478,11317 9492,11209
 #: source_id: viz2021:13.37905,52.507,06.11.2024,18:00 (bis 11.11.2024)
 #: note: 6.11.2024 - 10.11.2024 18:00
@@ -4871,17 +4875,22 @@ Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
 # Charlottenstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
 # Friedrichstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
 # Ebertstraße zwischen Scheidemannstraße und Potsdamer Platz
+Ebertstr.	2::temp 8595,12066 8577,11896 8571,11846 8567,11799 8562,11744 8553,11638 8553,11630 8548,11571 8542,11502
 # John-Foster-Dulles-Allee und Scheidemannstraße auf der gesamten Länge
-# Heinrich-von-Hagern-Straße auf der gesamten Länge
 # Dorotheenstraße zwischen Ebertstraße und Wilhelmstraße
+John-Foster-Dulles-Allee, Scheidemannstr., Dorotheenstr.	2::temp 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+# Heinrich-von-Hagern-Straße auf der gesamten Länge
+Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
 # Behrenstraße zwischen Wilhelmstraße und Ebertstraße
+Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
 # Hannah-Arendt-Straße zwischen Cora-Berliner Straße und Ebertstraße
+Hannah-Arendt-Str.	2::temp 8901,12008 8844,11984 8783,11959 8577,11896
 # Lennéstraße zwischen Auguste-Hauschner-Straße und Ebertstraße
-# (10.11.2024 - 11.11.2024 22:00) --- Friedrichstr.	q4::temp 9492,11209 9478,11317 9474,11360 9468,11412
+Lennéstr.	2::temp 8456,11763 8489,11782 8571,11846
 ',
          'from' => 1730489136,
          'id' => 3185,
-         'text' => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer, Checkpoint Charlie, Niederkirchnerstr., Zimmerstr., Jerusalemer Str.: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
+         'text' => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer, Checkpoint Charlie, Niederkirchnerstr., Zimmerstr., Jerusalemer Str. und weitere Straßen: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
          'type' => 'gesperrt',
          'until' => 1731474000
        },
@@ -5496,7 +5505,28 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
+#: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
+#: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
+	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+',
+         'from' => 1734667200,
+         'id' => 3489,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Preußenallee: voraussichtlich Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 21.12.2024 05:00 bis 22.12.2024 23:00 ',
+         'type' => 'gesperrt',
+         'until' => 1734904800
+       },
        undef,
        undef,
        undef,
@@ -6316,7 +6346,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
          'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen
 #: note: 2023 waren Bauzäune noch am 2024-01-05 (!) da
 #: by: https://www.weihnachten-an-der-spree.de/
-#: osm_watch: node id="11346915244" version="1"
+#: osm_watch: node id="11346915244" version="2"
 	2::xmas 13558,10704 13531,10673 13326,10765
 	2::xmas 13527,10660 13531,10673
 ',
@@ -7979,6 +8009,7 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: XXX Nach den Bauarbeiten vielleicht bessere Qualität
 #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen.
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden? vvv
+#: priority: #A vvv
 #: last_checked: 2024-10-26 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="26158804" version="25"
@@ -7987,6 +8018,7 @@ Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
 Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
 #: last_checked ^^^
 #: check_frequency ^^^
+#: priority ^^^
 #: add_fragezeichen ^^^
 ',
          'dont_check_date' => 1,
@@ -8269,19 +8301,19 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.376381,52.443079,01.08.2024,08:00 (hier nur Kfz-Verkehr, bis 01.11.2024) (bis 30.11.2024)
+         'data' => '#: source_id: viz2021:13.376381,52.443079,01.08.2024,08:00 (hier nur Kfz-Verkehr, bis 01.11.2024) (bis 30.11.2024) (bis 13.12.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1818885622083256587
 # REMOVED (ja, sind auch betroffen) --- #: note: bei Mapillary nicht zu erkennen, ob der Gehweg für Radfahrer frei ist
 #: last_checked: 2024-10-09
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2024-11-30
+#: next_check: 2024-12-13
 	q4::inwork; 8780,4054 8615,4151
 ',
          'from' => 1722405600,
          'id' => 4155,
-         'text' => 'Ringstr.: Bauarbeiten Richtung Nordwesten zwischen Prühßstr. und Gersdorfstr., Fahrbahn gesperrt, vom 01.08.2024 08:00 bis 30.11.2024 17:00',
+         'text' => 'Ringstr.: Bauarbeiten Richtung Nordwesten zwischen Prühßstr. und Gersdorfstr., Fahrbahn gesperrt, vom 01.08.2024 08:00 bis 13.12.2024 17:00',
          'type' => 'gesperrt',
-         'until' => 1732982400
+         'until' => 1734105600
        },
        undef,
        undef,
@@ -8428,16 +8460,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'gesperrt',
          'until' => 1731686400
        },
-       {
-         'data' => '#: source_id: LS/223-K/24/141 (bis 08.11.2024)
-	2::inwork -4055,54553 -3747,54549 -3492,54548 -3137,54571 -2710,54626 -2084,54707 -1848,54667 -1488,54421 -1453,54400 -684,54082
-',
-         'from' => 1727589600,
-         'id' => 4176,
-         'text' => 'B167, Neulöwenberg - Liebenberg: Bauarbeiten, Sperrung, 30.09.2024 bis 08.11.2024',
-         'type' => 'gesperrt',
-         'until' => 1731081600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1489715.php
 	2::inwork 24229,10843 24113,10462 24265,10421
@@ -8478,17 +8501,17 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
        {
          'data' => '#: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
-#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024)
+#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024)
 #: also_indoor: traffic (H,G,B,T,ex-W)
 #: last_checked: 2024-10-23
-#: next_check: 2024-11-11
+#: next_check: 2024-12-11
 	q3::inwork 10944,10606 11100,10530
 ',
          'from' => undef,
          'id' => 4184,
-         'text' => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, voraussichtlich bis 11.11.2024',
+         'text' => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, voraussichtlich bis 11.12.2024',
          'type' => 'handicap',
-         'until' => 1731340800
+         'until' => 1733932800
        },
        {
          'data' => '#: source_id: LS/221-F/24/200 (bis 07.02.2025)
@@ -8587,47 +8610,47 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024)
+         'data' => '#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024)
 	q4::inwork; 17139,12100 17091,12105 16993,12118
 ',
          'from' => 1729486800,
          'id' => 4195,
-         'text' => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., evtl. sind auch Radfahrer betroffen, vom 22.10.2024 07:00 bis 18.11.2024 17:00',
+         'text' => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 26.11.2024 17:00',
          'type' => 'handicap',
-         'until' => 1731945600
+         'until' => 1732636800
        },
        {
-         'data' => '#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024)
+         'data' => '#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024)
 	q4::inwork; 17139,12100 17088,12069 16975,12000 16865,11931
 ',
          'from' => 1729486800,
          'id' => 4196,
-         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., evtl. sind auch Radfahrer betroffen, vom 22.10.2024 07:00 bis 18.11.2024 17:00',
+         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 26.11.2024 17:00',
          'type' => 'handicap',
-         'until' => 1731945600
+         'until' => 1732636800
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zum-start-der-herbstferien/ (Siegfriedstr., hier nur 23.10.-08.11.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848592619309306058 (bis Ende November 2024)
 #: by: https://pbs.twimg.com/media/GabKRSNWsAAUzjA?format=jpg&name=large
-#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024)
+#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024)
 #: source_id: bvg2024:256#HIM_FREETEXT_242768
 #: source_id: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - ?)
-#: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024) (bis 15.11.2024)
+#: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024) (bis 15.11.2024) (bis 19.11.2024)
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
 #: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
 #: last_checked: 2024-10-29
 # REMOVED --- #: check_frequency: 7d
-#: next_check: 2024-11-15
+#: next_check: 2024-11-26
 	q4::inwork; 16764,11919 16794,12144
 ',
          'from' => 1729548000,
          'id' => 4197,
-         'text' => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 18.11.2024 17:00',
+         'text' => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 26.11.2024 17:00',
          'type' => 'handicap',
-         'until' => 1731945600
+         'until' => 1732636800
        },
        undef,
        {
@@ -8763,6 +8786,8 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
        },
        {
          'data' => '#: source_id: viz2021:13.470429,52.539862,08.11.2024,07:00 (bis 22.11.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1854765798377582881
+#: by: https://pbs.twimg.com/media/Gby-veKW8AoM44w?format=jpg&name=medium
 	3::inwork 14828,15050 14843,15007 14922,15082
 	3::inwork 14922,15082 14843,15007 14959,14752
 	3::inwork 14666,14845 14828,15050 14686,15608
