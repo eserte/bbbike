@@ -160,7 +160,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2024-11-07 vvv
+#: last_checked: 2024-11-09 vvv
 #: next_check: 2026-12-31 vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -293,11 +293,10 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 # REMOVED (hier keine Einbahnstraße, nur eine Sackgasse) --- Ontarioseestr.	1 18552,10135 18585,10024
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
-#: note: Ende laut Halteverbotsschilder
-#: last_checked: 2024-10-19
-#: check_frequency: 30d
-# REMOVED --- #: check_frequency: 90d
-# REMOVED --- #: next_check: 2024-10-31
+#: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
+#: last_checked: 2024-11-09
+#: check_frequency: 90d
+#: next_check: 2025-06-06
 Ontarioseestr.	1no 18585,10024 18411,10037
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18411,10037 18339,10048
 # 
@@ -3843,6 +3842,11 @@ weites Drängelgitter	BNP:2::trailer=7 16261,9663
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: osm_watch: note 4165928 1
+#: last_checked: 2024-11-09
+#: check_frequency: 60d
+Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
+# 
 #: next_check_id: HIRSCHGARTEN-2024
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze?date=20240724
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,809524#msg-809524
@@ -3918,10 +3922,12 @@ Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::
 #: osm_watch: way id="1243659419" version="4"
 #: osm_watch: way id="333621366" version="7"
 #: osm_watch: way id="206889088" version="10"
+#: osm_watch: note 3601643 7
 #: XXX Kann manchmal offen sein, zuletzt gesehen 2024-11-06: Bauzäune versperren den Zugang am Adlergestell
+#: XXX Eröffnung am 18.11.2024 um 10 Uhr
 #: last_checked: 2024-11-06
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2024-11-01
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2024-11-18
 Fuß- und Radwegbrücke: noch nicht freigegeben	2::inwork 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19367,4061 19353,4047
 # 
 #: by: mapillary
@@ -3932,7 +3938,7 @@ Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-marzahn-hellersdorf.42/page-7#post-23307
 #: osm_watch: way id="1306238147" version="1"
 #: osm_watch: way id="25795669" version="13"
-#: last_checked: 2024-08-14
+#: last_checked: 2024-11-09
 #: check_frequency: 120d
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 # 
@@ -4126,7 +4132,7 @@ Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,90
 #: XXX nördlicher Abschnitt vermutlich schon fertig (siehe Luftbild 2024)
 #: osm_watch: way id="1119861689" version="11"
 #: osm_watch: way id="1311919738" version="1"
-#: last_checked: 2024-08-12 (mapillary)
+#: last_checked: 2024-08-26 (mapillary)
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 90d
 An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,22604 12668,22537
@@ -4145,9 +4151,9 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 #: by: https://www.dafmap.de/d/berlin.html?id=7898&mt=4&zoom=17
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/haeuser-fuer-kokoni-one-entstehen-in-holztafelbauweise_a358049
 #: XXX Wird die Straße komplett aufgegeben?
-#: last_checked: 2024-03-08 (Luftbilder)
+#: last_checked: 2024-08-26 (mapillary)
 #: check_frequency: 180d
-#: next_check: 2024-10-01
+# REMOVED --- #: next_check: 2024-10-01
 Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 # REMOVED --- Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12657,22596 12628,22604
 # 
@@ -4158,9 +4164,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="27"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-11-04 (mapillary)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-10-31
+#: last_checked: 2024-11-09
+#: check_frequency: 90d
+#: next_check: 2025-06-06
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
 # REMOVED (laut osm komplett offen)
@@ -4251,7 +4257,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024)
 #: priority: #C
-#: last_checked: 2024-11-07
+#: last_checked: 2024-11-09
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4711,7 +4717,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="1171090939" version="4"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
-#: last_checked: 2024-10-16
+#: last_checked: 2024-11-09
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613

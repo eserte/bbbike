@@ -3318,19 +3318,20 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-08 vvv
+#: last_checked: 2024-11-09 vvv
 #: check_frequency: 7d vvv
-# REMOVED #: next_check: 2024-11-08
+#: next_check: 2024-11-18 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
 Wühlischstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,11552
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1730674800,
          'id' => 2495,
-         'text' => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt',
+         'text' => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, voraussichtlich bis 18.11.2024',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1731949200
        },
        undef,
        undef,
@@ -4468,6 +4469,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1499735.php (ab 4.11.2024 für ca. 2 Monate, Fertigstellung noch 2024)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/umleitung-des-rad-und-fussverkehrs-am-paul-schwarz-promenade.png (auch der Bäkepark ist betroffen)
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/kein-durchkommen_a428980
 	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095 5282,4145 5337,4192
 	2::inwork 4947,3672 4910,3599 4822,3431 4815,3382 4778,3352
 Bäkepark	2::inwork 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
@@ -4604,11 +4606,11 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
-#: osm_watch: way id="8655276" version="52"
+#: osm_watch: way id="8655276" version="53"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2024-10-08 (mapillary)
+#: last_checked: 2024-11-09
 #: check_frequency: 60d
 #: next_check: 2025-09-30
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
@@ -4616,7 +4618,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 ',
          'from' => 1630670400,
          'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand Mitte August 2024: Durchfahrt ist gesperrt)',
+         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand November 2024: Durchfahrt ist gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4852,13 +4854,14 @@ Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 #: note: 4.11.2024 - 13.11.2024 22:00 (allerdings war bis mindestens 8.11.2024 abends laut Webcam nur die zentrale Durchfahrt des Tors sowie der nördliche Strang des Platzes gesperrt)
 Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
-#: source_id: viz2021:13.3991,52.50819,05.11.2024,06:00 (bis 09.11.2024)
+#: source_id: viz2021:13.3991,52.50819,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
 #: note: 5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00
 Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
-#: source_id: viz2021:13.39707,52.509,05.11.2024,06:00 (bis 09.11.2024)
+#: source_id: viz2021:13.39707,52.509,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
 #: note: zunächst nicht erwähnt, vermutlich zusammen mit der Zimmerstr. gesperrt
 Jerusalemer Str.	q3::temp 9936,11469 9945,11371
-#: source_id: viz2021:13.390364,52.50766,05.11.2024,06:00 (bis 09.11.2024)
+#: source_id: viz2021:13.390364,52.50766,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+#: source_id: viz2021:13.39019,52.5086,09.11.2024,06:00 (bis 09.11.2024)
 #: note: eigentlich für 10.11.2024 - 11.11.2024 22:00 vorgesehen, wurde aber schon früher gesperrt, vermutlich zeitgleich mit der Zimmerstr.
 Checkpoint Charlie	q4::temp 9468,11412 9474,11360 9478,11317 9492,11209
 #: source_id: viz2021:13.37905,52.507,06.11.2024,18:00 (bis 11.11.2024)
@@ -4869,23 +4872,29 @@ Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
 Straße des 17. Juni	1::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 #: note: 7.11.2024 - 11.11.2024 06:00
 Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
-# weitere Sperrungen am 09.11.2024
-# Zimmerstraße auf der gesamten Länge
-# Markgrafenstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
-# Charlottenstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
-# Friedrichstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
-# Ebertstraße zwischen Scheidemannstraße und Potsdamer Platz
+#: note: weitere Sperrungen am 09.11.2024
+#: note: Zimmerstraße auf der gesamten Länge
+#: note: Markgrafenstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
+#: note: Charlottenstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
+#: note: Friedrichstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
+#: note: Dorotheenstraße zwischen Ebertstraße und Wilhelmstraße
+#: note: Ebertstraße zwischen Scheidemannstraße und Potsdamer Platz
+#: source_id: viz2021:13.37737,52.51457,09.11.2024,06:00 (bis 09.11.2024)
 Ebertstr.	2::temp 8595,12066 8577,11896 8571,11846 8567,11799 8562,11744 8553,11638 8553,11630 8548,11571 8542,11502
-# John-Foster-Dulles-Allee und Scheidemannstraße auf der gesamten Länge
-# Dorotheenstraße zwischen Ebertstraße und Wilhelmstraße
+#: note: John-Foster-Dulles-Allee und Scheidemannstraße auf der gesamten Länge
+#: source_id: viz2021:13.3546,52.51713,09.11.2024,06:00 (bis 09.11.2024)
 John-Foster-Dulles-Allee, Scheidemannstr., Dorotheenstr.	2::temp 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
-# Heinrich-von-Hagern-Straße auf der gesamten Länge
+#: note: Heinrich-von-Hagern-Straße auf der gesamten Länge
+#: source_id: viz2021:13.37086,52.51957,09.11.2024,06:00 (bis 09.11.2024)
 Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
-# Behrenstraße zwischen Wilhelmstraße und Ebertstraße
+#: note: Behrenstraße zwischen Wilhelmstraße und Ebertstraße
+#: source_id: viz2021:13.38149,52.51514,09.11.2024,06:00 (bis 09.11.2024)
 Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
-# Hannah-Arendt-Straße zwischen Cora-Berliner Straße und Ebertstraße
+#: note: Hannah-Arendt-Straße zwischen Cora-Berliner Straße und Ebertstraße
+#: source_id: viz2021:13.37721,52.51308,09.11.2024,06:00 (bis 09.11.2024)
 Hannah-Arendt-Str.	2::temp 8901,12008 8844,11984 8783,11959 8577,11896
-# Lennéstraße zwischen Auguste-Hauschner-Straße und Ebertstraße
+#: note: Lennéstraße zwischen Auguste-Hauschner-Straße und Ebertstraße
+#: source_id: viz2021:13.37535,52.51186,09.11.2024,06:00 (bis 09.11.2024)
 Lennéstr.	2::temp 8456,11763 8489,11782 8571,11846
 ',
          'from' => 1730489136,
@@ -4896,7 +4905,24 @@ Lennéstr.	2::temp 8456,11763 8489,11782 8571,11846
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: next_check_id: MUENSTERBERGERWEG-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert? --- #: last_checked: 2020-10-31 --- #: check_frequency: 120d --- #: next_check: 2021-12-31
+#: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
+#: also_indoor: traffic (B,T)
+#: last_checked: 2024-11-09 vvv
+#: next_check: 2024-12-15 vvv
+Münsterberger Weg	2::inwork 24029,11363 24172,11320
+Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
+Münsterberger Weg	q4::inwork 24029,11363 23883,11416
+#: next_check ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3188,
+         'text' => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., voraussichtlich bis Mitte Dezember 2024',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -5105,10 +5131,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: LEMKE-2020
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php (alte Sperrung von 2020)
 # REMOVED (alter Abschnit) ---	q4::inwork 25191,12343 25363,12553
-#: last_checked: 2024-08-24 (marzahn_hellersdorf_live @ insta)
-#: check_frequency: 60d
+#: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
+#: last_checked: 2024-11-09
+#: check_frequency: 90d
 #: next_check: 2026-07-30
-	q4::inwork 25363,12553 25534,12763
+# REMOVED (hier war noch nichts) ---	q4::inwork 25363,12553 25534,12763
+	q4::inwork 25534,12763 25663,12927
 ',
          'from' => 1720994400,
          'id' => 3312,
@@ -5250,6 +5278,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: note: keine genauen Zeiten verfügbar
+#: note: am 2024-11-09 (Sa) gegen 10:50 war das westliche Tor halb offen, das östliche Tor geschlossen
 #: by: https://abendblatt-berlin.de/2021/04/03/neue-feuerwehrwache-und-verwaltungsbueros-fuer-friedrichsfelde/
 #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/senat-lobt-demnaechst-einen-realisierungswettbewerb-aus_a306651
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
@@ -5536,10 +5565,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: source_id: viz2021:13.306069,52.502061,01.01.2022,06:00 (mittlerweile inaktiv) (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084
 #: note: vermutlich nur im Bereich Sybelstr. 14
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-11 (mapillary)
+#: last_checked: 2024-11-04 (architektur-urbanistik)
 # REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
 	2::inwork 3731,10640 3764,10580
 # REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
@@ -6763,7 +6793,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert); Halteverbotsschilder bis 15.11.2024
 #: also_indoor: traffic (ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten in der Gleiwitzer Str. beendet?
-#: last_checked: 2024-10-19 vvv
+#: last_checked: 2024-11-09 vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: next_check: 2024-11-15 vvv
 # REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
@@ -7668,18 +7698,23 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024)
+#: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
-#: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-	q4::inwork; 25050,13539 25163,13494
-	q3::inwork 25163,13494 25287,13464
-Uslarer Str.	q3::inwork; 24967,13438 25094,13362
-#: add_fragezeichen ^^^
+# REMOVED --- #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
+# REMOVED ---	q4::inwork; 25050,13539 25163,13494
+# REMOVED ---	q3::inwork 25163,13494 25287,13464
+# REMOVED --- Uslarer Str.	q3::inwork; 24967,13438 25094,13362
+Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
+Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
+#: XXX hier Halteverbotsschilder nur bis 20.12.2024
+#: next_check: 2024-12-20
+Karlshafener Str.	q4::inwork 24899,13007 25054,12926
+# REMOVED --- #: add_fragezeichen ^^^
 ',
          'from' => 1713942000,
          'id' => 4048,
-         'text' => 'Am Rosenhag und Uslarer Str.: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
+         'text' => 'Am Lupinenfeld und Karlshafener Str.: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
          'type' => 'handicap',
          'until' => 1747839600
        },
@@ -8052,11 +8087,13 @@ Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
 #: last_checked: 2024-10-26 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-16 vvv
+#: osm_watch: way id="1328520572" version="1"
 Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
-#: osm_watch: way id="5363434" version="26"
-#: osm_watch: note 4442541 2
+#: osm_watch: way id="5363433" version="25"
+#: osm_watch: note 4442541 3
 #: note: eigentlich q3-::inwork
 Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
+#: osm_watch: way id="1332159946" version="1"
 Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
 Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
 #: next_check ^^^
@@ -8130,7 +8167,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-09
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8798,6 +8835,20 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'text' => 'Weißenseer Weg: gesperrte Mittelstreifenüberfahrt von/zur Fritz-Lesch-Str., evtl. auch für Fußgänger und Radfahrer, vom 08.11.2024 07:00 bis 22.11.2024 17:00',
          'type' => 'gesperrt',
          'until' => 1732291200
+       },
+       {
+         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/breite-stra%C3%9Fe-scharrenstra%C3%9Fe-fischerinsel-petriplatz-neubauten.1078/#post-24088
+#: also_indoor: traffic (H,G,B,T)
+#: add_fragezeichen: Ist die Straße noch immer gesperrt?
+#: last_checked: 2024-11-03 (mapillary)
+#: check_frequency: 21d
+	2::inwork 10383,12191 10289,12106
+',
+         'from' => undef,
+         'id' => 4212,
+         'text' => 'Neumannsgasse: Hochbauarbeiten, Sperrung, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

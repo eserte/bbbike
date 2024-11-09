@@ -781,7 +781,8 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verl‰ngert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 9
-#: osm_watch: note 4157644 3
+#: osm_watch[closed]: note 4157644 3
+#: osm_watch: way id="1283287449" version="3"
 #: last_checked: 2024-11-03
 #: check_frequency: 60d
 #: next_check: 2026-12-31
@@ -1035,14 +1036,13 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="38"
 #: osm_watch: way id="1193560283" version="7"
-#: last_checked: 2024-10-19
-#: check_frequency: 30d
-# REMOVED --- #: check_frequency: 90d
-# REMOVED --- #: next_check: 2024-10-31
+#: last_checked: 2024-11-09
+#: check_frequency: 90d
+#: next_check: 2025-06-06
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-09
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1333,6 +1333,10 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # REMOVED (vermutlich wieder offen, weil die s¸dliche Fahrbahn schon fertig ist) --- Hans-J¸rgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 # 
 ### Biesdorf ###
+# 
+#: also_indoor: traffic (T,G,B)
+#: last_checked: 2024-11-09
+Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv
 # REMOVED (hier wohl nicht mehr) --- Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umst‰ndliche Umwege, Bordsteine	q3::inwork 20725,10594 20716,10434 20713,10293
@@ -1912,6 +1916,7 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8
 (Fritz-Br‰uning-Promenade): Bordstein, Fuﬂg‰nger	q3 8731,8020 8623,8018
 (Teltowkanal, Nordufer): Fuﬂg‰nger (eigentlich f¸r Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9188,5333
 # REMOVED --- #: XXX_prog BS an der Kynaststr., ansonsten q1 --- (Kynaststr. - Uferwanderweg): Fuﬂg‰nger, Bordstein	q2 14843,10621 14911,10587
+#: note: mittlerweile (seit 2024?) am westlichen Ende ein neues FH-KB-Gr¸nanlagenschild mit einem durchgestrichenen Radfahrer, keine Schilder am ˆstlichen Ende
 (Kynaststr. - Paul-und-Paula-Ufer): Fuﬂg‰nger	q1 14797,10476 14820,10473 14861,10467
 #: note: fr¸her vermutlich f¸r Radfahrer frei, jetzt nicht mehr
 Am Rummelsburger See: Fuﬂg‰nger, kurvenreich, Gr¸nanlage	q3 15793,9334 15813,9378 15819,9430 15749,9558 15739,9583 15708,9607 15659,9647 15621,9704 15626,9710 15561,9809 15465,9860 15347,9922 15296,10000 15295,10022 15260,10048 15283,10087 15289,10092 15289,10097 15311,10127 15306,10142 15253,10171
@@ -6695,7 +6700,8 @@ Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 58,2710 39,2669
 Rosa-Reinglass-Steig	q1 -2878,15304 -2856,15383
 #: by: Michael Korb:
 #: corrected_by: srt/policy (q1 -> q0-)
-Am Lupinenfeld: enge Straﬂe	q0- 24159,13507 24347,13465 24539,13427 24752,13390 24802,13381 24879,13338 25031,13242 25138,13183 25181,13157
+Am Lupinenfeld: enge Straﬂe	q0- 24159,13507 24347,13465 24539,13427 24752,13390 24802,13381 24879,13338 25031,13242 25138,13183
+# REMOVED (hier nicht, keine oder selten parkenden Autos) --- Am Lupinenfeld: enge Straﬂe	q0- 25138,13183 25181,13157
 #: by: Malte Wollitz vvv
 #: corrected_by: srt/policy (q1 -> q0-)
 Franzstr. (Lankwitz): enge Straﬂe	q0- 5559,3058 5776,3195

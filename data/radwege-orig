@@ -342,7 +342,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-11-06 vvv
+#: last_checked: 2024-11-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1316,7 +1316,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-11-06 vvv
+#: last_checked: 2024-11-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3070,7 +3070,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-09
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3919,10 +3919,11 @@ neu asphaltiert	RW2; 22483,11261 22326,11266 22242,11269
 # REMOVED --- #: next_check_id: PILGRAMER-2019 --- #: XXX provisorische Wegführung während der Bauarbeiten vvv --- #: next_check: 2021-01-05 vvv --- #: valid: -20210105 vvv --- gemeinsamer Geh- und Radweg	RW2; 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 --- gemeinsamer Geh- und Radweg	RW2;RW8 25143,10961 25143,11108 25142,11142 25138,11215 --- #: valid ^^^ --- #: XXX wobei es nach den Arbeiten möglicherweise ganz anders aussehen wird --- #: last_checked: 2021-04-17 --- #: next_check: 2021-05-28
 # REMOVED --- #: valid: 20210105-
 neu asphaltiert	RW1; 25142,11142 25138,11215
-neu asphaltiert	RW1; 25138,11215 25142,11142 25143,11108
+neu asphaltiert	RW2; 25138,11215 25142,11142 25143,11108
 # REMOVED --- #: next_check ^^^ --- #: XXX ^^^
 # 
-	RW3; 25143,11108 25145,10961 25146,10904 25147,10841 25148,10769
+	RW4; 25143,11108 25145,10961
+	RW3; 25145,10961 25146,10904 25147,10841 25148,10769
 	RW3; 25149,10744 25148,10769
 	RW4; 25148,10769 25147,10841 25146,10904 25145,10961
 	RW3; 25145,10961 25143,11108 25142,11142
@@ -4323,17 +4324,16 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: note: früher Richtung Norden benutzungspflichtiger Hochbord, mittlerweile Gehweg für Radfahrer frei
 #: osm_watch: way id="865716506" version="20"
-#: last_checked: 2024-10-08 (mapillary) vvv
+#: last_checked: 2024-11-09 vvv
 #: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2025-09-30 vvv
-#: next_check: 2024-10-30 vvv
+#: next_check: 2025-09-30 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
 # REMOVED (während der Bauarbeiten) --- Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193
 # REMOVED (während der Bauarbeiten) --- alter Beton	RW1; 21190,12193 21199,12258
-gemeinsamer Geh- und Radweg, Verbundsteinpflaster, alter Beton	RW1;RW8 21152,11945 21166,12023
-gemeinsamer Geh- und Radweg, Asphalt, Gehwegplatten	RW1;RW8 21166,12023 21190,12193
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster, alter Beton	RW2;RW8 21152,11945 21166,12023
+gemeinsamer Geh- und Radweg, Asphalt, Gehwegplatten	RW2;RW8 21166,12023 21190,12193
 #: note: Richtung Süden ein explizites Radfahren-verboten-Schild
-gemeinsamer Geh- und Radweg, Verbundsteinpflaster, alter Beton	RW1;RW8 21190,12193 21199,12258
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster, alter Beton	RW2;RW8 21190,12193 21199,12258
 # REMOVED --- #: last_checked: 2019-08-03 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2019-09-30 ---	RW2;RW8 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258
 #: next_check ^^^
 #: check_frequency ^^^
@@ -4917,8 +4917,10 @@ neu asphaltiert, relativ breit	RW1; 25031,15027 25045,14946
 neu asphaltiert, relativ breit	RW1; 25045,14946 25031,15027
 	RW1;RW1 25045,14946 25057,14896 25073,14860 25103,14838 25161,14809 25190,14771 25206,14728 25237,14627 25254,14564 25234,14501 25172,14384 25142,14300 25095,14171
 Verbundsteinpflaster	RW1;RW1 26049,15024 26014,15039 25743,15118 25638,15135 25569,15140 25475,15146 25348,15152 25219,15161 25131,15156 25006,15132
-	RW1; 24541,12344 24651,12560 24706,12658 24768,12769 24826,12878 24899,13007 24964,13123 25031,13242 25094,13362 25163,13494 25289,13705 25365,13845 25397,13909 25451,14018 25503,14085
-Verbundsteinpflaster mit einigen Unebenheiten	RW1; 25397,13909 25365,13845 25289,13705 25163,13494 25094,13362 25031,13242 24964,13123 24899,13007 24826,12878 24768,12769 24706,12658 24651,12560 24541,12344
+Verbundsteinpflaster	RW1; 24541,12344 24651,12560 24706,12658
+Verbundsteinpflaster, etwa 50m Engstelle mit Gehweg für Radfahrer frei	RW1; 24706,12658 24768,12769
+Verbundsteinpflaster	RW1; 24768,12769 24826,12878 24899,13007 24969,13129 25031,13242 25094,13362 25163,13494 25289,13705 25365,13845 25397,13909 25451,14018 25503,14085
+Verbundsteinpflaster mit einigen Unebenheiten	RW1; 25397,13909 25365,13845 25289,13705 25163,13494 25094,13362 25031,13242 24969,13129 24899,13007 24826,12878 24768,12769 24706,12658 24651,12560 24541,12344
 	RW2; 24654,11265 24624,11374
 	RW3; 24624,11374 24654,11265
 Gehweg für Radfahrer frei	RW1;RW1 24624,11374 24583,11537 24591,11587 24614,11657 24623,11684 24657,11762 24648,11802 24575,11932 24563,11980

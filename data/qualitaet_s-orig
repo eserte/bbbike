@@ -7755,7 +7755,10 @@ Florastr.: Asphalt	Q0 25571,13752 25489,13497 25487,13444
 Florastr.: Asphalt mit Schäden	Q1+ 25487,13444 25491,13259 25471,13148 25408,13023 25376,12981
 Florastr.: schlechtes Kopfsteinpflaster	Q3 25376,12981 25332,12922 25233,12828 25126,12710 25055,12609 24975,12518 24907,12425 24878,12385
 Florastr.: Beton	Q0 24878,12385 24862,12362 24847,12306 24861,12226 24851,12204
-Lübzer Str.: schlechtes Kopfsteinpflaster	Q3 24775,13218 24964,13123 25118,13041 25332,12922
+Lübzer Str.: schlechtes Kopfsteinpflaster	Q3 24775,13218 24969,13129
+#: historical_note: früher: schlechtes Kopfsteinpflaster, Q3
+Lübzer Str.: Asphaltstreifen in der Mitte	Q0 24969,13129 25118,13041
+Lübzer Str.: schlechtes Kopfsteinpflaster	Q3 25118,13041 25332,12922
 Lenbachstr.: schlechtes Kopfsteinpflaster	Q3 25332,12922 25373,12891
 Lenbachstr.: Asphalt	Q0 25373,12891 25441,12838 25476,12810
 Lenbachstr.: schlechtes Kopfsteinpflaster	Q3 25476,12810 25534,12763
@@ -13127,14 +13130,15 @@ Otto-Weidt-Platz: Asphalt	Q0 7778,14059 7850,14100
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7850,14100 7923,14142
 Am Bahnhof Wuhlheide: Betonpflaster	Q0- 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
+Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24530,12296 24556,12181 24554,12100
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1499398.php (Sanierungsmaßnahmen vom 4.11.2024 bis 15.11.2024 zwischen Wodanstr. und Treskowstr.)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1852369528518275445
 #: by: https://pbs.twimg.com/media/GbTwGDrW0AExWdH?format=png&name=900x900 (keine Information zur Verkehrsführung des Radverkehrs)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1854160975756148844 (Bauarbeiten werden vorfristig am 07.11.2024 beendet)
-#: source_id: viz2021:13.612206,52.512192,04.11.2024,07:00 (nur Kfz-Verkehr, bis 15.11.2024) (bis 07.11.2024) (inaktiv)
-#: add_fragezeichen Ist die Qualität zwischen Wodanstr. und Treskowstr. nach den Bauarbeiten besser geworden?
-#: next_check 2024-11-07
-Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24530,12296 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932
+# REMOVED --- #: source_id: viz2021:13.612206,52.512192,04.11.2024,07:00 (nur Kfz-Verkehr, bis 15.11.2024) (bis 07.11.2024) (inaktiv) --- #: add_fragezeichen Ist die Qualität zwischen Wodanstr. und Treskowstr. nach den Bauarbeiten besser geworden? --- #: next_check 2024-11-07
+#: historical_note: früher (bis November 2024): Asphalt, einige Schäden und Unebenheiten, Q1+
+Hönower Str.: Asphalt	Q0 24554,12100 24556,12056 24563,11980
+Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24563,11980 24575,11932
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1+; 9093,8665 9158,8706 9229,8718
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9229,8718 9158,8706 9093,8665
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q0-; 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676
@@ -14569,10 +14573,10 @@ Eschenstr.: sehr guter Asphalt	Q0+ 23031,9209 23018,9226 22947,9277 22830,9361 2
 Heerstr.: Beton mit Schäden/Asphalt	Q0- 22366,9571 22274,9622 22129,9702
 #: historical_note: früher (bis 2024) Beton, Q0-
 Heerstr.: Asphalt	Q0 22129,9702 21988,9766
-#: XXX nach den Bauarbeiten asphaltiert?
-#: osm_watch: way id="42814694" version="20"
-#: next_check: 2024-11-01
-Heerstr.: Beton	Q0- 21988,9766 21859,9822 21842,9829 21749,9856 21691,9874 21650,9884 21611,9893
+# REMOVED --- #: XXX nach den Bauarbeiten asphaltiert? --- #: osm_watch: way id="42814694" version="20" --- #: next_check: 2024-11-01
+#: historical_note: früher (bis November 2024) Beton, Q0-
+Heerstr.: Asphalt	Q0 21988,9766 21859,9822 21842,9829 21749,9856
+Heerstr.: Beton	Q0- 21749,9856 21691,9874 21650,9884 21611,9893
 Heesestr.: sehr guter Asphalt	Q0+ 21611,9893 21594,9895 21534,9901 21371,9923 21163,9956
 #: confirmed_by ^^^
 #: confirmed_by: srt
@@ -17225,13 +17229,13 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: source_id: bvg2024:395#HIM_FREETEXT_232017
 #: XXX auf https://www.instagram.com/marzahn_hellersdorf_live/p/C_D3h_Xis-R/?img_index=1 ist ein Zeichen 250 zu sehen, ohne Ausnahmen -> siehe temp blockings-Eintrag
 #: also_indoor: search Lemkestraße vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 180d vvv
 #: next_check: 2026-07-30 vvv
 #: osm_watch: way id="593503609" version="10"
-#: last_checked: 2024-09-03 (indoor research)
+#: last_checked: 2024-11-09
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553
 #: osm_watch: way id="24204822" version="29"
-#: last_checked: 2024-09-03 (indoor research)
+#: last_checked: 2024-11-09
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
 #: next_check ^^^
 #: check_frequency ^^^
@@ -32465,6 +32469,8 @@ Kreuzungsbereich asphaltiert	Q0 14535,11327
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 16890,12135
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 20173,11971
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25363,12553
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25534,12763
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25663,12927
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25126,12710
 Kreuzungsbereich asphaltiert	Q0 24908,11785
 Kreuzungsbereich asphaltiert	Q0 24999,11766
@@ -33463,5 +33469,6 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 6464,4779
 Wendehammerbereich asphaltiert	Q0 5920,2693
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 19790,3893
 Einmündungsbereich asphaltiert	Q1 19736,3858
+Kreuzungsbereich asphaltiert	Q0 25118,13041
 #: ignore ^^^
 #: section ^^^
