@@ -34,7 +34,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17701,8851 17729,8850
+Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17702,8855 17720,8854 17736,8850
 Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956
 Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,9934 17838,9956 17958,10012
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2::inwork; 10178,10411 10122,10294
@@ -2598,7 +2598,7 @@ Köllnische Heide: schmaler Weg, kurvig	q3 20511,4781 20589,4795 20651,4854 20689
 (Neucölln Carree, Parkplatzzufahrt): Parkplatzverkehr	q2 14430,7348 14423,7333 14378,7236 14507,7146
 (Uferweg - Vor den Toren): enger Weg	q3 2649,15783 2648,15827
 Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,13634 3053,13646 3054,13638
-(Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger	q1 17701,8851 17699,8843 17674,8738
+(Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger	q1 17702,8855 17699,8843 17674,8738
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17668,8696
 (Uferweg): einige Fußgänger	q2 11821,11733 11957,11603
@@ -3651,7 +3651,7 @@ Ferdinand-Schultze-Str. -> Rhinstr./Marzahner Str.: linker Gehweg bis zur Ampel	
 Potsdamer Chaussee: linker Gehweg bis zur Ampel	q3::igndisp; -3040,1763 -3019,1774 -3011,1761
 Richard-von-Weizsäcker-Platz: Gehweg bis Akazienstr.	q3::igndisp; 7307,8945 7242,8902 7201,8870
 Sonnenallee: linker Gehweg bis zur Ampel	q4::igndisp; 14423,7333 14334,7395
-Blockdammweg: linker Gehweg bis zum Fußgängerbereich in der Parkstadt Karlshorst	q4::igndisp; 17729,8850 17699,8843
+Blockdammweg: linker Gehweg bis zum Fußgängerbereich in der Parkstadt Karlshorst	q4::igndisp; 17736,8850 17699,8843
 Orankeweg -> Hansastr./Orankeweg: linker Gehweg bis zur Überquerungsmöglichkeit, Bordstein	q3::igndisp; 14906,15859 14967,15885
 Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg bis zur Ampel "Am Feldberg"	q3::igndisp; 22994,11251 22937,11265
 Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg ab Ampel Myslowitzer Str.	q3::igndisp; 23113,11262 22994,11251

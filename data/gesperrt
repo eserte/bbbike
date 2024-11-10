@@ -2603,9 +2603,9 @@ Berliner Str. -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9490,23531 95
 Mittelstreifen	3nocross::ignrte 9528,23240 9747,22694 9973,22133
 Blankenfelder Chaussee -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9469,22606 9747,22694 9528,23240
 Blankenfelder Chaussee -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9973,22133 9747,22694 9469,22606
-Straßenbahnhaltestelle	3nocross::ignrte 17729,8850 17701,8851 17380,8858
-Blockdammweg -> Adolf-Wermuth-Allee: Straßenbahnhaltestelle	3::igndisp 17729,8850 17701,8851 17699,8843
-Adolf-Wermuth-Allee -> Blockdammweg: Straßenbahnhaltestelle	3::igndisp 17699,8843 17701,8851 17380,8858
+Straßenbahnhaltestelle	3nocross::ignrte 17736,8850 17720,8854 17702,8855 17380,8858
+Blockdammweg -> Adolf-Wermuth-Allee: Straßenbahnhaltestelle	3::igndisp 17720,8854 17702,8855 17699,8843
+Adolf-Wermuth-Allee -> Blockdammweg: Straßenbahnhaltestelle	3::igndisp 17699,8843 17702,8855 17380,8858
 Geländer am Gehweg	3nocross::ignrte 7628,4521 7667,4549 7690,4563
 unbequemes Überqueren	3nocross::ignrte 6613,3320 6647,3292 6712,3237
 Paul-Schneider-Str. -> Schulstr.: unbequemes Überqueren	3::igndisp 6613,3320 6647,3292 6653,3297
@@ -3590,7 +3590,7 @@ Wikingerufer: neuer Uferweg ist noch nicht freigegeben	2:inwork 5354,12552 5366,
 Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
-Bhf. Blankenfelde: Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11667,-7536 11601,-7560 11551,-7599
+Bhf. Blankenfelde: Bahnübergang existiert nicht mehr, neue Unterführung wird gebaut	2::inwork 11667,-7536 11601,-7560 11551,-7599
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
 Pariser Platz: Sperrung vor der französischen Botschaft	2 8717,12302 8714,12319 8673,12315
@@ -4186,7 +4186,7 @@ Ferdinand-Schultze-Str. -> Rhinstr./Marzahner Str.: linker Gehweg bis zur Ampel	
 Potsdamer Chaussee: linker Gehweg bis zur Ampel	1::igndisp -3011,1761 -3019,1774 -3040,1763
 Richard-von-Weizsäcker-Platz: Gehweg bis Akazienstr.	1::igndisp 7201,8870 7242,8902 7307,8945
 Sonnenallee: linker Gehweg bis zur Ampel	1::igndisp 14334,7395 14423,7333
-Blockdammweg: linker Gehweg bis zum Fußgängerbereich in der Parkstadt Karlshorst	1::igndisp 17699,8843 17729,8850
+Blockdammweg: linker Gehweg bis zum Fußgängerbereich in der Parkstadt Karlshorst	1::igndisp 17699,8843 17736,8850
 Orankeweg -> Hansastr./Orankeweg: linker Gehweg bis zur Überquerungsmöglichkeit, Bordstein	1::igndisp 14967,15885 14906,15859
 Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg bis zur Ampel "Am Feldberg"	1::igndisp 22937,11265 22994,11251
 Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg ab Ampel Myslowitzer Str.	1::igndisp 22994,11251 23113,11262

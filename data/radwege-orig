@@ -976,7 +976,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-11-07
+#: last_checked: 2024-11-10
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1664,7 +1664,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="43"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2024-10-29 vvv
+#: last_checked: 2024-11-10 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-03-31 vvv
@@ -3377,7 +3377,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="15"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2024-10-12 vvv
+#: last_checked: 2024-11-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4077,8 +4077,8 @@ Busspur ist immer gültig	RW5; 3710,13290 3711,13210
 	RW6;RW6 6201,2125 6159,2176
 	RW1; 17067,8725 17126,8750
 	RW3; 17126,8750 17380,8858
-die letzten Meter sind benutzungspflichtig	RW3; 17380,8858 17701,8851 17729,8850
-die ersten 80 Meter sind nicht benutzungspflichtig	RW4; 17729,8850 17701,8851 17380,8858
+die letzten Meter sind benutzungspflichtig	RW3; 17380,8858 17702,8855 17720,8854 17736,8850
+die ersten 80 Meter sind nicht benutzungspflichtig	RW4; 17736,8850 17720,8854 17702,8855 17380,8858
 	RW4; 17380,8858 17126,8750
 	RW1; 17126,8750 17067,8725
 	RW2; 18615,8269 18672,8238
@@ -7271,6 +7271,7 @@ mit Leitboys	RW4; 8715,7384 8716,7323
 zusammen mit Bushaltestelle	RW3; 8715,7384 8713,7423
 Radspur hinter den parkenden Autos	RW4; 8713,7423 8706,7585 8704,7603 8690,7704
 #: next_check_id: BOELCKE-2023
+#: osm_watch: way id="1144979955" version="6"
 #: XXX ist das nur provisorisch?
 #: last_checked: 2024-07-14
 #: check_frequency: 120d
@@ -7667,7 +7668,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-11-05 vvv
+#: last_checked: 2024-11-10 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015

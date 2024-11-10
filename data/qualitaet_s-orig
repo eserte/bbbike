@@ -4275,7 +4275,7 @@ Lisztstr. (Karlshorst): Asphalt	Q0 18332,9356 18377,9366
 Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3+ 18490,9387 18377,9366
 #: historical_note: früher: Asphalt mit einigen schadhaften Stellen, Q1-
 (Wandlitzstr. - Blockdammweg): Asphalt	Q0 18021,8976 17981,9000 17950,8974
-(Wandlitzstr. - Blockdammweg): Asphalt	Q0 17950,8974 17915,8945 17754,8863 17729,8850
+(Wandlitzstr. - Blockdammweg): Asphalt	Q0 17950,8974 17915,8945 17754,8863 17736,8850
 #: historical_note: früher: Betonplattenstraße, Q2
 (Fortsetzung Wandlitzstr.): Asphalt	Q0 17981,9000 17837,9086 17743,9116 17570,9103
 Schmiedeberger Weg: Verbundsteinpflaster	Q0- 18021,8976 17987,8954 17956,8935
@@ -10743,7 +10743,7 @@ In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9995,17642
 (Neustrelitzer Str. - Werneuchener Str.): Beton	Q1 16541,14928 16610,15000
 (Landsberger Allee - Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16590,14386 16544,14593
 Blockdammweg: Asphalt	Q0 17904,8924 17972,8968
-Blockdammweg: Asphalt mit Rissen	Q1+ 17904,8924 17760,8853 17754,8863
+Blockdammweg: Asphalt mit Rissen	Q1+ 17904,8924 17762,8855 17754,8863
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15023,13800 15010,13807
 # 
 # REMOVED --- #: next_check_id: HANSAGARTEN-2019 --- #: XXX nach den Bauarbeiten zumindest teilweise asphaltiert vvv --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php --- #: last_checked: 2020-04-23 vvv # REMOVED --- #: next_check: 2020-02-01 vvv
@@ -11349,9 +11349,10 @@ Ritterlandweg [Wohngebiet]: schlechtes Kopfsteinpflaster	Q3 8315,17079 8346,1714
 Ritterlandweg [Wohngebiet]: Verbundsteinpflaster	Q1 8346,17148 8363,17192
 Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780 19500,7719
 #: by: https://www.berliner-woche.de/fennpfuhl/c-umwelt/gruenzug-wird-umgestaltet_a413057
-#: vy; https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10502 (Antrag)
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10502 (Antrag)
+#: osm_watch: note 4405725 4
 #: XXX wie sieht die Wegoberfläche nach den Sanierungsarbeiten aus?
-#: last_checked: 2024-10-13
+#: last_checked: 2024-11-10
 #: check_frequency: 60d
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1- 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 Rudolf-Seiffert-Str.: Asphalt mit einigen Rissen und Schäden	Q1 14790,13639 14769,13569 14731,13576 14658,13283 14644,13223
@@ -12010,7 +12011,8 @@ Im Marienpark: Asphalt	Q0 8167,3641 8163,3660 8173,3672 8327,3706 8346,3633
 (Dieselstr. - Kiefholzstr.): Asphalt	Q0 14642,8022 14771,8142 14832,8199
 (Unterführung Seehofstr.): Verbundsteinpflaster	Q1 1145,2898 1126,2879 1093,2866
 Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
-#: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1500791.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1500791.php
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-pepp-fuer-gruenanlage_a429121
 #: XXX Umgestaltung (und Entsiegelung) bis April 2025 --- ändert sich etwas an den Wegen?
 #: next_check: 2025-04-30
 (Alexandrinenstr. - Wassertorstr.): Asphalt mit einigen Schäden	Q1 10293,10645 10401,10601 10431,10606 10492,10582
@@ -13285,7 +13287,7 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 1758
 #: last_checked: 2024-09-28
 #: check_frequency: 90d
 An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
-(Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17701,8851 17699,8843 17674,8738 17659,8698
+(Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17674,8738 17668,8696
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2024-03-09 (architektur-urbanistik) --- #: check_frequency: 30d
 Irmtraud-Morgner-Str.: Asphalt	Q0 17521,8549 17619,8558 17628,8556
@@ -16822,7 +16824,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
 #: osm_watch: way id="1033468087" version="2"
-#: last_checked: 2024-08-30
+#: last_checked: 2024-11-10
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14906,15859 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -25726,7 +25728,9 @@ Turmfalkenstr.: Verbundsteinpflaster	Q1 -1764,19343 -1681,19593 -1663,19632 -161
 # 
 #: by: Viola Belgert:
 #: note: "enge Straße", aber explizit ohne Geschwindigkeitseinschränkung
-Zinsweilerweg: Asphalt	Q0 -303,4086 -121,3859
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9287
+#: corrected_by: BVV, public imagery: (Asphalt, Q0 -> ...)
+Zinsweilerweg: Beton	Q1 -303,4086 -121,3859
 # 
 #: by: Ronny Bienst: vvv
 #: confirmed_by: Cindy Sweikowski & srt:

@@ -6419,7 +6419,7 @@ EOF
        text  => 'Ehrlichstraße zwischen Trautenauerstraße und Blockdammweg gesperrt. Dauer 07.10.2006 06:00 Uhr bis 20.10.2006 18:00 Uhr. ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
+	2::inwork 17736,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
      { from  => $isodate2epoch->("2024-10-04 11:00:00"), # 1 Tag Vorlauf
@@ -14562,7 +14562,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012809',
        data  => <<EOF,
-	q4::inwork; 17380,8858 17701,8851 17729,8850
+	q4::inwork; 17380,8858 17702,8855 17720,8854 17736,8850
 EOF
      },
      { from  => 1251530088, # 2009-08-29 09:14
@@ -23038,7 +23038,7 @@ EOF
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-09 vvv
+#: last_checked: 2024-11-10 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-18 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
@@ -28596,7 +28596,7 @@ EOF
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bvg-erneuert-tramgleise_a172247 (alte Sperrung von 2018)
 #: source_id: 2147342893 (inaktiv)
 #: source_id: viz2021:13.512587,52.483664,23.10.2024,07:00 (bis 13.12.2024)
-	q4::inwork; 17729,8850 17879,8773 17929,8742
+	q4::inwork; 17736,8850 17879,8773 17929,8742
 # REMOVED: ab Grimnitzstr.: hier nicht ---	q4::inwork; 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
 EOF
      },
@@ -31285,7 +31285,8 @@ EOF
      { from  => 1730489136, # 1573153200, # 2019-11-07 20:00
        until => $isodate2epoch->("2024-11-13 06:00:00"), # 1573354800, # 2019-11-10 04:00
 #       text  => 'John-Foster-Dulles-Allee, Scheidemannstr., Heinrich-von-Gagern-Str.: gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 08.11.2019, 20:00 Uhr bis 10.11.2019, 04:00 Uhr',
-       text  => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer, Checkpoint Charlie, Niederkirchnerstr., Zimmerstr., Jerusalemer Str. und weitere Straßen: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
+#       text  => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer, Checkpoint Charlie, Niederkirchnerstr., Zimmerstr., Jerusalemer Str. und weitere Straßen: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
+       text  => 'Straße des 17. Juni, Ebertstr., Yitzhak-Rabin-Str., Pariser Platz, Alexanderufer, Checkpoint Charlie, Niederkirchnerstr., Zimmerstr., Jerusalemer Str.: Sperrungen wegen der Veranstaltung "35 Jahre Mauerfall", evtl. sind auch Radfahrer betroffen, vom 02.11.2024 bis 13.11.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (2019):
@@ -31302,13 +31303,13 @@ EOF
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (nächste Phase ab 4.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/wie-berlin-den-35-jahrestag-des-mauerfalls-feiert-id268851
-#: next_check: 2024-11-10
-# REMOVED --- #: next_check: 2024-11-11
+#: next_check: 2024-11-11
 #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
 Alexanderufer	2::temp 8315,13181 8315,13042
 #: source_id: viz2021:13.37679,52.5163,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
 #: source_id: viz2021:13.351095,52.514567,07.11.2024,18:00 (bis 11.11.2024)
+#: source_id: viz2021:13.37679,52.5163,11.11.2024,06:00 (bis 13.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt, vermutlich auch nur im östlichen Abschnitt
 Straße des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 # REMOVED (auf der Webcam hier keine Sperrung zu sehen) --- Straße des 17. Juni	1::temp 8055,12186 7816,12150 7383,12095
@@ -31326,13 +31327,16 @@ Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 #: note: 4.11.2024 - 13.11.2024 22:00 (allerdings war bis mindestens 8.11.2024 abends laut Webcam nur die zentrale Durchfahrt des Tors sowie der nördliche Strang des Platzes gesperrt)
 Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
 #: source_id: viz2021:13.3991,52.50819,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+#: source_id: viz2021:13.3991,52.50819,10.11.2024,00:00 (bis 11.11.2024)
 #: note: 5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00
 Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
 #: source_id: viz2021:13.39707,52.509,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+#: source_id: viz2021:13.39707,52.509,10.11.2024,00:00 (bis 11.11.2024)
 #: note: zunächst nicht erwähnt, vermutlich zusammen mit der Zimmerstr. gesperrt
 Jerusalemer Str.	q3::temp 9936,11469 9945,11371
 #: source_id: viz2021:13.390364,52.50766,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
-#: source_id: viz2021:13.39019,52.5086,09.11.2024,06:00 (bis 09.11.2024)
+#: source_id: viz2021:13.39019,52.5086,09.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+#: source_id: viz2021:13.39019,52.5086,10.11.2024,00:00 (bis 11.11.2024)
 #: note: eigentlich für 10.11.2024 - 11.11.2024 22:00 vorgesehen, wurde aber schon früher gesperrt, vermutlich zeitgleich mit der Zimmerstr.
 Checkpoint Charlie	q4::temp 9468,11412 9474,11360 9478,11317 9492,11209
 #: source_id: viz2021:13.37905,52.507,06.11.2024,18:00 (bis 11.11.2024)
@@ -31350,23 +31354,23 @@ Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
 #: note: Friedrichstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
 #: note: Dorotheenstraße zwischen Ebertstraße und Wilhelmstraße
 #: note: Ebertstraße zwischen Scheidemannstraße und Potsdamer Platz
-#: source_id: viz2021:13.37737,52.51457,09.11.2024,06:00 (bis 09.11.2024)
-Ebertstr.	2::temp 8595,12066 8577,11896 8571,11846 8567,11799 8562,11744 8553,11638 8553,11630 8548,11571 8542,11502
+#: source_id: viz2021:13.37737,52.51457,09.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+# REMOVED --- Ebertstr.	2::temp 8595,12066 8577,11896 8571,11846 8567,11799 8562,11744 8553,11638 8553,11630 8548,11571 8542,11502
 #: note: John-Foster-Dulles-Allee und Scheidemannstraße auf der gesamten Länge
-#: source_id: viz2021:13.3546,52.51713,09.11.2024,06:00 (bis 09.11.2024)
-John-Foster-Dulles-Allee, Scheidemannstr., Dorotheenstr.	2::temp 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+#: source_id: viz2021:13.3546,52.51713,09.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+# REMOVED --- John-Foster-Dulles-Allee, Scheidemannstr., Dorotheenstr.	2::temp 7875,12363 8017,12359 8070,12409 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
 #: note: Heinrich-von-Hagern-Straße auf der gesamten Länge
-#: source_id: viz2021:13.37086,52.51957,09.11.2024,06:00 (bis 09.11.2024)
-Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
+#: source_id: viz2021:13.37086,52.51957,09.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+# REMOVED --- Heinrich-von-Gagern-Str.	2::temp 8119,12414 8122,12603
 #: note: Behrenstraße zwischen Wilhelmstraße und Ebertstraße
-#: source_id: viz2021:13.38149,52.51514,09.11.2024,06:00 (bis 09.11.2024)
-Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+#: source_id: viz2021:13.38149,52.51514,09.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+# REMOVED --- Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
 #: note: Hannah-Arendt-Straße zwischen Cora-Berliner Straße und Ebertstraße
-#: source_id: viz2021:13.37721,52.51308,09.11.2024,06:00 (bis 09.11.2024)
-Hannah-Arendt-Str.	2::temp 8901,12008 8844,11984 8783,11959 8577,11896
+#: source_id: viz2021:13.37721,52.51308,09.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+# REMOVED --- Hannah-Arendt-Str.	2::temp 8901,12008 8844,11984 8783,11959 8577,11896
 #: note: Lennéstraße zwischen Auguste-Hauschner-Straße und Ebertstraße
-#: source_id: viz2021:13.37535,52.51186,09.11.2024,06:00 (bis 09.11.2024)
-Lennéstr.	2::temp 8456,11763 8489,11782 8571,11846
+#: source_id: viz2021:13.37535,52.51186,09.11.2024,06:00 (bis 09.11.2024) (inaktiv)
+# REMOVED --- Lennéstr.	2::temp 8456,11763 8489,11782 8571,11846
 EOF
      },
      { from  => 1573340400, # 2019-11-10 00:00
@@ -38536,18 +38540,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1731245057, # undef, # XXX
        text  => 'Lehderstr.: Einbahnstraßenregelung zwischen Börnestr. und Behaimstr., offen Richtung Westen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-W)
 #: osm_watch: way id="1137576466" version="1"
-#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: note: Halteverbotsschilder bis Ende September 2024
-#: last_checked: 2024-09-25
-# REMOVED --- #: check_frequency: 90d
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-09-30
+#: note: Halteverbotsschilder bis Ende September 2024; mittlerweile bis 15.12.2024, aber die Einbahnstraßenschilder gibt's nicht mehr
+# REMOVED --- #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer? --- # REMOVED --- #: last_checked: 2024-09-25 --- # REMOVED --- #: check_frequency: 90d --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2024-09-30
 	q4::inwork; 13086,15907 13214,15830
 EOF
      },
@@ -38561,11 +38561,11 @@ EOF
 #: osm_watch: way id="1170463985" version="4"
 #: osm_watch: way id="1170463986" version="3"
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
-#: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024
+#: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024; mittlerweile bis 30.11.2024
 #: also_indoor: traffic (ex-G,ex-W)
-#: last_checked: 2024-09-25
-# REMOVED --- #: check_frequency: 90d
-# REMOVED --- #: next_check: 2024-09-30
+#: last_checked: 2024-11-10
+#: check_frequency: 30d
+#: next_check: 2024-11-30
 	q3::inwork 13263,15930 13140,16000
 EOF
      },
@@ -40670,9 +40670,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,ex-G[unvollständig],ex-W[unvollständig],T)
-#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2024; nun bis 30.08.2024; mittlerweile gemischte Halteverbote bis 30.08.2024 (schon vorbei) und Ende des Jahres
-#: last_checked: 2024-09-25 vvv
-#: check_frequency: 60d vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2024; nun bis 30.08.2024; mittlerweile gemischte Halteverbote bis 30.08.2024 (schon vorbei) und Ende des Jahres; mittlerweile auch Halteverbote bis 22.11.2024 gesehen
+#: last_checked: 2024-11-10 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2024-12-31 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
@@ -44063,13 +44063,20 @@ EOF
 	q3::inwork 20302,1613 20366,1479
 EOF
      },
-     { from  => 1718298660, # 2024-06-13 19:11
-       until => 1725660000, # 2024-09-07 00:00
-       text  => 'Meyerbeerstr.: Bauarbeiten zwischen Lindenallee und Benfelder Str., Fahrbahn gesperrt, voraussichtlich bis 06.09.2024',
+     { from  => 1731244646, # 1718298660, # 2024-06-13 19:11
+       until => $isodate2epoch->("2024-12-31 18:00:00"), # 1725660000, # 2024-09-07 00:00
+#       text  => 'Meyerbeerstr.: Bauarbeiten zwischen Lindenallee und Benfelder Str., Fahrbahn gesperrt, voraussichtlich bis 06.09.2024',
+       text  => 'Meyerbeerstr.: Bauarbeiten im Bereich Solonplatz, Fahrbahn gesperrt, voraussichtlich bis Ende 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: note: Halteverbotsschilder bis 06.09.2024
-	q4::inwork 14330,15978 14411,16008 14484,16035
+# REMOVED --- #: note: Halteverbotsschilder bis 06.09.2024
+# REMOVED ---	q4::inwork 14330,15978 14411,16008 14484,16035
+#: note: Halteverbotsschilder bis 31.12.2024 und 15.12.2024; Baustellenbereich etwa 120m
+#: also_indoor: traffic (G) vvv
+	q3::inwork 14086,15892 14286,15962
+	q4::inwork 14286,15962 14330,15978
+	q3::inwork 14330,15978 14411,16008
+#: also_indoor ^^^
 EOF
      },
      { from  => 1718254800, # 2024-06-13 07:00

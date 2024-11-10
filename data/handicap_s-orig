@@ -41,7 +41,7 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="9"
 #: osm_watch: way id="1072662717" version="11"
-#: last_checked: 2024-11-05
+#: last_checked: 2024-11-10
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -50,7 +50,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="1"
 #: osm_watch: way id="1146013233" version="4"
 #: osm_watch: way id="1134071039" version="6"
-#: last_checked: 2024-11-03 vvv
+#: last_checked: 2024-11-10 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -116,7 +116,7 @@ Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (none)
-#: last_checked: 2024-11-08
+#: last_checked: 2024-11-10
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -647,7 +647,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: last_checked: 2024-10-24
 #: next_check: 2024-11-22
 #: valid: -20241122
-Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17701,8851 17729,8850
+Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17702,8855 17720,8854 17736,8850
 # 
 # REMOVED (weitgehend freigegeben; Überquerung der Treskowallee über Fußgängerfurt)
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2023
@@ -811,9 +811,9 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: osm_watch: way id="16096289" version="32"
-#: osm_watch: way id="707100249" version="21"
-#: last_checked: 2024-09-27
+#: osm_watch: way id="16096289" version="33"
+#: osm_watch: way id="707100249" version="22"
+#: last_checked: 2024-11-10 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1308,7 +1308,7 @@ Königsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -19
 #: by: https://www.frankschiffer.com/projekte/tor-zur-lehderstrasse/ (Fertigstellung 2024)
 #: osm_watch: way id="1170355847" version="1"
 #: osm_watch: way id="1170355851" version="1"
-#: last_checked: 2024-07-28 (architektur-urbanistik)
+#: last_checked: 2024-11-10
 #: check_frequency: 120d
 #: next_check: 2024-12-20
 #: valid: -20241220
@@ -5221,7 +5221,7 @@ Köllnische Heide: schmaler Weg, kurvig	q3+ 20511,4781 20589,4795 20651,4854 2068
 # 
 Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,13634 3053,13646 3054,13638
 # 
-(Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger	q1 17701,8851 17699,8843 17674,8738
+(Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger	q1 17702,8855 17699,8843 17674,8738
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17668,8696
 # 
