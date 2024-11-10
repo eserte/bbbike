@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.28;
+$VERSION = 2.29;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -234,6 +234,8 @@ sub register {
 		  my $current_tag_filter = $args{current_tag_filter}||'';
 		  if ($current_tag_filter eq 'bicycle') {
 		      'Geoportal Berlin (Radverkehrsanlagen)';
+		  } elsif ($current_tag_filter eq 'pubtrans') {
+		      'Geoportal Berlin (Bus und Tram)';
 		  } else {
 		      'Geoportal Berlin (1:5000)';
 		  }
@@ -243,13 +245,15 @@ sub register {
 		  my $current_tag_filter = $args{current_tag_filter}||'';
 		  if ($current_tag_filter eq 'bicycle') {
 		      showmap_gdi_berlin(layers => 'radverkehrsanlagen', @_);
+		  } elsif ($current_tag_filter eq 'pubtrans') {
+		      showmap_gdi_berlin(layers => 'oepnv', @_);
 		  } else {
 		      showmap_gdi_berlin(layers => 'k5_farbe', @_);
 		  }
 	      },
 	      callback_3 => sub { show_gdi_berlin_menu(@_) },
 	      ($images{Berlin} ? (icon => $images{Berlin}) : ()),
-	      tags => [qw(bicycle)],
+	      tags => [qw(bicycle pubtrans)],
 	    };
 	$main::info_plugins{__PACKAGE__ . '_VIZ'} =
 	    { name => 'VIZ Berlin',
@@ -1821,6 +1825,8 @@ sub showmap_url_gdi_berlin {
 	#strbefahrung2014   => 'hintergrund_k5_grau,strassenbefahrung:cm_fahrbahn,strassenbefahrung:cl_gehweg,strassenbefahrung:ck_parkflaeche,strassenbefahrung:cj_fussgaengerzone,strassenbefahrung:ci_oeffentlicher_platz,strassenbefahrung:ch_radweg,strassenbefahrung:cg_baustelle,strassenbefahrung:cf_trennstreifen,strassenbefahrung:ce_gruenflaeche,strassenbefahrung:cd_rampe,strassenbefahrung:cc_treppe,strassenbefahrung:cb_haltestellenwartebereich,strassenbefahrung:ca_haltebereich_bus,strassenbefahrung:bz_gleiskoerper_strab,strassenbefahrung:by_gehwegueberfahrt,strassenbefahrung:bx_fahrbahnschwelle,strassenbefahrung:bw_aufmerksamkeitsfeld,strassenbefahrung:bv_springbrunnen_zierbrunnen,strassenbefahrung:bu_recycling_container,strassenbefahrung:bu1_kleinbauten_sondernutzung,strassenbefahrung:bt_kabelschacht,strassenbefahrung:bs_induktionsschleife,strassenbefahrung:br_fahrgastunterstand,strassenbefahrung:bq_fahrradstaender,strassenbefahrung:bp_fahrbahnmarkierung_flaeche,strassenbefahrung:bo_denkmal,strassenbefahrung:bn_baumscheibe,strassenbefahrung:bm_zugangsbauwerk,strassenbefahrung:bl_strassenentwaesserungsrinne,strassenbefahrung:bk_strassenbegrenzung,strassenbefahrung:bj_sitzbank,strassenbefahrung:bi_schranke,strassenbefahrung:bh_mauer,strassenbefahrung:bg_leitplanke,strassenbefahrung:bf_gelaender,strassenbefahrung:be_fahrbahnmarkierunglinie,strassenbefahrung:bd_bordstein,strassenbefahrung:bc_aufmerksamkeitsstreifen,strassenbefahrung:bb_verkehrsschutzgitter,strassenbefahrung:ba_telefonzelle_telefonstele,strassenbefahrung:az_taxirufsaeule,strassenbefahrung:ay_streugutbehaelter,strassenbefahrung:ax_strassensinkkasten,strassenbefahrung:aw_spielgeraet,strassenbefahrung:av_poller,strassenbefahrung:au_parkscheinautomat,strassenbefahrung:at_mast_lsa,strassenbefahrung:as_mast,strassenbefahrung:ar_kanaldeckel,strassenbefahrung:ar1_kabelkasten,strassenbefahrung:aq_hydrant,strassenbefahrung:ap_handsteuergeraet_lsa,strassenbefahrung:ao_gebaeudeeingang,strassenbefahrung:an_fahrbahnmarkierung_piktogramm,strassenbefahrung:am_fahnenmast,strassenbefahrung:al_durchfahrtshoehe,strassenbefahrung:ak_briefkasten,strassenbefahrung:aj_anlegestelle,strassenbefahrung:ai_anforderungstaster_radverkehr,strassenbefahrung:ah_abfallbehaelter_muellbox,strassenbefahrung:ag_werbesaeule,strassenbefahrung:af_wasserpumpen_brunnen,strassenbefahrung:ae_viz_infotafel,strassenbefahrung:ad_uhr,strassenbefahrung:ac_trinkwasserbrunnen_wasserspender,strassenbefahrung:ab_touchpoint,strassenbefahrung:aa_verkehrszeichen',
 	## auf straßenrelevante Dinge reduziert:
 	strbefahrung2014   => 'hintergrund_k5_grau,strassenbefahrung:cm_fahrbahn,strassenbefahrung:cl_gehweg,strassenbefahrung:ck_parkflaeche,strassenbefahrung:cj_fussgaengerzone,strassenbefahrung:ci_oeffentlicher_platz,strassenbefahrung:ch_radweg,strassenbefahrung:cg_baustelle,strassenbefahrung:cf_trennstreifen,strassenbefahrung:ce_gruenflaeche,strassenbefahrung:cd_rampe,strassenbefahrung:cc_treppe,strassenbefahrung:ca_haltebereich_bus,strassenbefahrung:bz_gleiskoerper_strab,strassenbefahrung:bx_fahrbahnschwelle,strassenbefahrung:bw_aufmerksamkeitsfeld,strassenbefahrung:bs_induktionsschleife,strassenbefahrung:bq_fahrradstaender,strassenbefahrung:bp_fahrbahnmarkierung_flaeche,strassenbefahrung:bm_zugangsbauwerk,strassenbefahrung:bk_strassenbegrenzung,strassenbefahrung:bi_schranke,strassenbefahrung:be_fahrbahnmarkierunglinie,strassenbefahrung:bd_bordstein,strassenbefahrung:bc_aufmerksamkeitsstreifen,strassenbefahrung:bb_verkehrsschutzgitter,strassenbefahrung:at_mast_lsa,strassenbefahrung:ap_handsteuergeraet_lsa,strassenbefahrung:ai_anforderungstaster_radverkehr',
+	## es existieren mehrere Layer: "gestoert" und "ungestoert", aber oberflächlich gesehen sehen sie gleich aus
+	oepnv              => 'hintergrund_k5_grau,oepnv_ungestoert:d_tramlinien,oepnv_ungestoert:c_buslinien,oepnv_ungestoert:b_tramstopp,oepnv_ungestoert:a_busstopp',
 	fnp2015            => 'hintergrund_k5_grau,fnp_2015:0,fnp_2015:1',
 	fnpaktuell         => 'hintergrund_k5_grau,fnp_ak:0',
 	bplaene            => 'hintergrund_k5_grau,bplan:2,bplan:3,bplan:6,bplan:7',
@@ -1903,6 +1909,10 @@ sub show_gdi_berlin_menu {
     $link_menu->command
 	(-label => 'Straßenbefahrung 2014',
 	 -command => sub { showmap_gdi_berlin(layers => 'strbefahrung2014', %args) },
+	);
+    $link_menu->command
+	(-label => 'ÖPNV-Netz (Bus und Tram)',
+	 -command => sub { showmap_gdi_berlin(layers => 'oepnv', %args) },
 	);
     $link_menu->separator;
     $link_menu->command
