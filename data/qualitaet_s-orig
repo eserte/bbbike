@@ -764,6 +764,7 @@ Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2845,10840 2921,10928 2987,11055
 Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 # 
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
+#: XXX vielleicht während der Bauarbeiten Nov-Dec 2024?
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
@@ -774,7 +775,8 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: osm_watch: way id="1101189360" version="5"
 #: last_checked: 2024-10-16
 #: check_frequency: 270d
-#: next_check: 2025-12-31
+# REMOVED --- #: next_check: 2025-12-31
+#: next_check: 2024-12-30
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
 (Stuttgarter Platz/zur Leonhardtstr.): Kopfsteinpflaster	Q2 3291,10853 3340,10888
@@ -23349,7 +23351,9 @@ Sandhofweg: gutes Verbundsteinpflaster	Q1 5848,272 5795,371 5757,434 5688,402 56
 #: note "Durchfahrt nicht zu empfehlen"
 #: corrected_by: srt (Asphalt/Kopfsteinpflaster, Q2- -> ...)
 Hielscherstr.: Asphalt/Beton	Q0 7522,19804 7556,19882
+#: XXX Bauarbeiten im November 2024, vielleicht danach bessere Qualität?
 #: confirmed_by: mapillary
+#: next_check: 2024-11-22
 Hielscherstr.: teilweise mit Asphalt überdecktes großsteiniges Kopfsteinpflaster	Q2- 7556,19882 7604,19988 7695,20175
 #: corrected_by: mapillary
 Hielscherstr.: Asphalt	Q0 7695,20175 7735,20262

@@ -1011,7 +1011,18 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: IM_005020 (inaktiv)
+# REMOVED ---	2::temp 8861,12125 8743,12099 8737,12098 8595,12066
+#: source_id: viz2021:13.38149,52.51514,11.11.2024,00:00 (bis 13.11.2024)
+	q4::temp; 8861,12125 8743,12099 8737,12098 8595,12066
+',
+         'from' => 1731193200,
+         'id' => 891,
+         'text' => 'Behrenstr.: Veranstaltung, zwischen Wilhelmstr. und Ebertstr. in Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, vom 11.11.2024 00:00 bis 13.11.2024 06:00',
+         'type' => 'gesperrt',
+         'until' => 1731474000
+       },
        undef,
        undef,
        undef,
@@ -2292,7 +2303,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2024-09-03
+#: last_checked: 2024-11-11
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-01-01
 	q4::temp:clock 12378,11806 12413,11901
@@ -3318,7 +3329,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-10 vvv
+#: last_checked: 2024-11-11 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-18 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
@@ -4831,12 +4842,12 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/35-jahre-mauerfall-am-09.11.2024-grosses-fest-in-der-innenstadt/ (nächste Phase ab 4.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/wie-berlin-den-35-jahrestag-des-mauerfalls-feiert-id268851
-#: next_check: 2024-11-11
-#: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
+# REMOVED --- #: next_check: 2024-11-11
+# REMOVED --- #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
 #: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
-Alexanderufer	2::temp 8315,13181 8315,13042
+# REMOVED --- Alexanderufer	2::temp 8315,13181 8315,13042
 #: source_id: viz2021:13.37679,52.5163,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
-#: source_id: viz2021:13.351095,52.514567,07.11.2024,18:00 (bis 11.11.2024)
+#: source_id: viz2021:13.351095,52.514567,07.11.2024,18:00 (bis 11.11.2024) (inaktiv)
 #: source_id: viz2021:13.37679,52.5163,11.11.2024,06:00 (bis 13.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt, vermutlich auch nur im östlichen Abschnitt
 Straße des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
@@ -4846,35 +4857,37 @@ Straße des 17. Juni	1::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,121
 #: source_id: viz2021:13.376902,52.517751,02.11.2024,06:00 (bis 13.11.2024)
 Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
 #: source_id: viz2021:13.37737,52.51457,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
-#: source_id: viz2021:13.377392,52.514609,07.11.2024,18:00 (bis 11.11.2024)
+#: source_id: viz2021:13.377392,52.514609,07.11.2024,18:00 (bis 11.11.2024) (inaktiv)
 Ebertstr.	1::temp 8595,12066 8600,12165 8538,12245
 #: source_id: viz2021:13.36975,52.51584,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
 #: source_id: viz2021:13.370774,52.517771,02.11.2024,06:00 (bis 13.11.2024)
 #: note: am 2024-11-03 (Sun) abends war nur die Fahrbahn gesperrt
 Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
 #: note: 4.11.2024 - 13.11.2024 22:00 (allerdings war bis mindestens 8.11.2024 abends laut Webcam nur die zentrale Durchfahrt des Tors sowie der nördliche Strang des Platzes gesperrt)
-Pariser Platz	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
+Pariser Platz/Platz des 18. März: vermutete Umwege	q4::temp 8538,12245 8592,12252
+Pariser Platz: eingeschränkte Durchfahrt	q3::temp 8592,12252 8637,12258
+# REMOVED --- Pariser Platz	2::temp 8637,12258 8722,12268 8804,12280
 #: source_id: viz2021:13.3991,52.50819,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
 #: source_id: viz2021:13.3991,52.50819,10.11.2024,00:00 (bis 11.11.2024)
 #: note: 5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00
-Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
+# REMOVED --- Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
 #: source_id: viz2021:13.39707,52.509,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
 #: source_id: viz2021:13.39707,52.509,10.11.2024,00:00 (bis 11.11.2024)
 #: note: zunächst nicht erwähnt, vermutlich zusammen mit der Zimmerstr. gesperrt
-Jerusalemer Str.	q3::temp 9936,11469 9945,11371
+# REMOVED --- Jerusalemer Str.	q3::temp 9936,11469 9945,11371
 #: source_id: viz2021:13.390364,52.50766,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
 #: source_id: viz2021:13.39019,52.5086,09.11.2024,06:00 (bis 09.11.2024) (inaktiv)
 #: source_id: viz2021:13.39019,52.5086,10.11.2024,00:00 (bis 11.11.2024)
 #: note: eigentlich für 10.11.2024 - 11.11.2024 22:00 vorgesehen, wurde aber schon früher gesperrt, vermutlich zeitgleich mit der Zimmerstr.
-Checkpoint Charlie	q4::temp 9468,11412 9474,11360 9478,11317 9492,11209
-#: source_id: viz2021:13.37905,52.507,06.11.2024,18:00 (bis 11.11.2024)
+# REMOVED --- Checkpoint Charlie	q4::temp 9468,11412 9474,11360 9478,11317 9492,11209
+#: source_id: viz2021:13.37905,52.507,06.11.2024,18:00 (bis 11.11.2024) (inaktiv)
 #: note: 6.11.2024 - 10.11.2024 18:00
-Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
+# REMOVED --- Niederkirchnerstr.	q4::temp 9155,11283 8720,11226
 #: note: 7.11.2024 - 11.11.2024 06:00
 # REMOVED (hier vermutlich nicht) --- Straße des 17. Juni	1::temp 7383,12095 7816,12150 8055,12186
-Straße des 17. Juni	1::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+# REMOVED --- Straße des 17. Juni	1::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 #: note: 7.11.2024 - 11.11.2024 06:00
-Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
+# REMOVED --- Ebertstr.	1::temp 8538,12245 8600,12165 8595,12066
 #: note: weitere Sperrungen am 09.11.2024
 #: note: Zimmerstraße auf der gesamten Länge
 #: note: Markgrafenstraße zwischen Schützenstraße und Rudi-Dutschke-Straße
@@ -6236,7 +6249,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024) (bis 02.10.2024) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
-#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024) (bis 11.10.2024) (bis 31.10.2024) (bis 15.11.2024)
+#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024) (bis 11.10.2024) (bis 31.10.2024) (bis 15.11.2024) (bis 20.12.2024)
 # REMOVED ---#: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 # REMOVED ---	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
@@ -6245,9 +6258,9 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 ',
          'from' => 1718575200,
          'id' => 3648,
-         'text' => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, geplant bis 15.11.2024',
+         'text' => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, geplant bis 20.12.2024',
          'type' => 'handicap',
-         'until' => 1731686400
+         'until' => 1734710400
        },
        undef,
        undef,
@@ -6636,7 +6649,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: osm_watch: note 3834145 4
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
-#: last_checked: 2024-11-05 (traffic)
+#: last_checked: 2024-11-11 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -7256,7 +7269,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-11-05 vvv
+#: last_checked: 2024-11-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -7634,16 +7647,18 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
+#: osm_watch: note 4185183 4
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
+#: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note)
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 ',
          'from' => 1711947600,
          'id' => 4033,
-         'text' => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, vom 02.04.2024 07:00 bis 26.02.2025 17:00',
+         'text' => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
          'type' => 'gesperrt',
-         'until' => 1740585600
+         'until' => 1793466000
        },
        {
          'data' => '#: source_id: viz2021:13.463362,52.432923,02.04.2024,07:00 (bis 01.11.2024) (bis 20.12.2024)
@@ -7959,7 +7974,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-11-05 vvv
+#: last_checked: 2024-11-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8001,7 +8016,7 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr
-#: last_checked: 2024-11-05
+#: last_checked: 2024-11-11
 #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 ',
@@ -8376,7 +8391,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        {
          'data' => '#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere.
 #: osm_watch: way id="482690912" version="6"
-#: last_checked: 2024-10-15 vvv
+#: last_checked: 2024-11-11 vvv
 	3 12207,11763 12132,11788 11966,11832
 	3 11966,11832 12132,11788 12207,11763
 #: last_checked ^^^
@@ -8579,7 +8594,7 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
 #: source_id: bvg2024:147#HIM_FREETEXT_242095
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-11-01
+#: last_checked: 2024-11-11
 #: check_frequency: 14d
 #: next_check: 2024-11-26
 Fischerinsel	q4::inwork; 10578,11969 10512,12039
@@ -8674,8 +8689,8 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
 #: by: https://pbs.twimg.com/media/GabKRSNWsAAUzjA?format=jpg&name=large
 #: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024)
 #: source_id: bvg2024:256#HIM_FREETEXT_242768
-#: source_id: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
-#: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - ?)
+#: source_id[closed]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
+#: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - 2024-12-12)
 #: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024) (bis 15.11.2024) (bis 19.11.2024)
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
@@ -8842,7 +8857,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/breite-stra%C3%9Fe-scharrenstra%C3%9Fe-fischerinsel-petriplatz-neubauten.1078/#post-24088
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2024-11-03 (mapillary)
+#: last_checked: 2024-11-11
 #: check_frequency: 21d
 	2::inwork 10383,12191 10289,12106
 ',
@@ -8851,6 +8866,26 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'text' => 'Neumannsgasse: Hochbauarbeiten, Sperrung, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.364741,52.585104,11.11.2024,07:00 (bis 22.11.2024)
+	q4::inwork 7556,19882 7604,19988
+',
+         'from' => 1731218400,
+         'id' => 4213,
+         'text' => 'Hielscherstr.: Bauarbeiten zwischen Hertzstr. und Garibaldistr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.11.2024 07:00 bis 22.11.2024 18:00',
+         'type' => 'handicap',
+         'until' => 1732294800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.298976,52.504217,11.11.2024,07:00 (bis 30.12.2024)
+	q4::inwork 3041,10732 3295,10831 3291,10853
+',
+         'from' => 1731218400,
+         'id' => 4214,
+         'text' => 'Rönnestr.: Bauarbeiten zwischen Leonhardtstr. und Holtzendorffstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.11.2024 07:00 bis 30.12.2024 18:00',
+         'type' => 'handicap',
+         'until' => 1735578000
        }
      
 );
