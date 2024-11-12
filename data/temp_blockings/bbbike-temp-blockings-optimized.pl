@@ -3329,7 +3329,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-11 vvv
+#: last_checked: 2024-11-12 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-18 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
@@ -4266,7 +4266,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-09-04 (daf)
+#: last_checked: 2024-11-11 (daf)
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -4844,7 +4844,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: by: https://berliner-abendblatt.de/berlin-news/wie-berlin-den-35-jahrestag-des-mauerfalls-feiert-id268851
 # REMOVED --- #: next_check: 2024-11-11
 # REMOVED --- #: XXX: Alexanderufer nur bis 11.11.2024 22:00 Uhr gesperrt
-#: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024)
+#: source_id: viz2021:13.37377,52.52462,02.11.2024,06:00 (bis 11.11.2024) (inaktiv)
 # REMOVED --- Alexanderufer	2::temp 8315,13181 8315,13042
 #: source_id: viz2021:13.37679,52.5163,02.11.2024,06:00 (bis 13.11.2024) (inaktiv)
 #: source_id: viz2021:13.351095,52.514567,07.11.2024,18:00 (bis 11.11.2024) (inaktiv)
@@ -4868,16 +4868,16 @@ Pariser Platz/Platz des 18. März: vermutete Umwege	q4::temp 8538,12245 8592,1225
 Pariser Platz: eingeschränkte Durchfahrt	q3::temp 8592,12252 8637,12258
 # REMOVED --- Pariser Platz	2::temp 8637,12258 8722,12268 8804,12280
 #: source_id: viz2021:13.3991,52.50819,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
-#: source_id: viz2021:13.3991,52.50819,10.11.2024,00:00 (bis 11.11.2024)
+#: source_id: viz2021:13.3991,52.50819,10.11.2024,00:00 (bis 11.11.2024) (inaktiv)
 #: note: 5.11.2024 - 09.11.2024 06:00, Verlängerung bis 11.11.2024 22:00
 # REMOVED --- Zimmerstr.	q4::temp 10072,11384 9945,11371 9737,11349 9603,11328 9478,11317 9155,11283
 #: source_id: viz2021:13.39707,52.509,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
-#: source_id: viz2021:13.39707,52.509,10.11.2024,00:00 (bis 11.11.2024)
+#: source_id: viz2021:13.39707,52.509,10.11.2024,00:00 (bis 11.11.2024) (inaktiv)
 #: note: zunächst nicht erwähnt, vermutlich zusammen mit der Zimmerstr. gesperrt
 # REMOVED --- Jerusalemer Str.	q3::temp 9936,11469 9945,11371
 #: source_id: viz2021:13.390364,52.50766,05.11.2024,06:00 (bis 09.11.2024) (inaktiv)
 #: source_id: viz2021:13.39019,52.5086,09.11.2024,06:00 (bis 09.11.2024) (inaktiv)
-#: source_id: viz2021:13.39019,52.5086,10.11.2024,00:00 (bis 11.11.2024)
+#: source_id: viz2021:13.39019,52.5086,10.11.2024,00:00 (bis 11.11.2024) (inaktiv)
 #: note: eigentlich für 10.11.2024 - 11.11.2024 22:00 vorgesehen, wurde aber schon früher gesperrt, vermutlich zeitgleich mit der Zimmerstr.
 # REMOVED --- Checkpoint Charlie	q4::temp 9468,11412 9474,11360 9478,11317 9492,11209
 #: source_id: viz2021:13.37905,52.507,06.11.2024,18:00 (bis 11.11.2024) (inaktiv)
@@ -7178,8 +7178,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-11-03 vvv
-#: check_frequency: 10d vvv
+#: last_checked: 2024-11-12 (traffic) vvv
+#: check_frequency: 7d vvv
 #: next_check: 2024-11-30 vvv
 	q2::inwork; 6334,14756 6513,14725
 # REMOVED (hier nicht mehr) ---		q2::inwork; 6513,14725 6596,14740
@@ -7576,7 +7576,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2024-09-04 (daf) vvv
+#: last_checked: 2024-11-11 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-05-31 vvv
 	2::inwork 3867,12616 3888,12618 4131,12641
@@ -7647,7 +7647,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 4
+#: osm_watch: note 4185183 5
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note)
@@ -7974,7 +7974,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-11-11 vvv
+#: last_checked: 2024-11-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8493,7 +8493,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: last_checked: 2024-11-03
+#: last_checked: 2024-11-12
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
@@ -8620,7 +8620,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder am Großen Stern gelten bis zum 31.12.2024
-#: last_checked: 2024-10-30
+#: last_checked: 2024-11-10 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-12-31
 	2::inwork 6633,11882 6685,11954
@@ -8886,6 +8886,16 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'text' => 'Rönnestr.: Bauarbeiten zwischen Leonhardtstr. und Holtzendorffstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.11.2024 07:00 bis 30.12.2024 18:00',
          'type' => 'handicap',
          'until' => 1735578000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024)
+	q4::inwork 13205,8126 13277,8211 13331,8283
+',
+         'from' => 1731304800,
+         'id' => 4215,
+         'text' => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12.11.2024 07:00 bis 23.12.2024 23:59',
+         'type' => 'handicap',
+         'until' => 1734994740
        }
      
 );
