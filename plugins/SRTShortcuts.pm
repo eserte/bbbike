@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.18;
+$VERSION = 2.19;
 
 use File::Glob qw(bsd_glob);
 
@@ -67,6 +67,8 @@ use vars qw($show_situation_at_point_for_route);
 use vars qw(%want_plot_type_file %layer_for_type_file);
 use vars qw($want_winter_optimization);
 $want_winter_optimization = '' if !defined $want_winter_optimization;
+use vars qw($penalty_unique_matches);
+$penalty_unique_matches = '' if !defined $penalty_unique_matches;
 
 use vars qw(%images);
 
@@ -309,19 +311,25 @@ EOF
 	     [
 	      [Cascade => $do_compound->("Set penalty: unique matches..."), -menuitems =>
 	       [
-		[Button => $do_compound->("alltime"),
+		[Radiobutton => $do_compound->("alltime"),
 		 -command => sub { set_penalty('tmp/unique-matches.bbd') },
+		 -variable => \$penalty_unique_matches,
+		 -value => 'alltime',
 		],
 		(map {
 		    my $year = $_;
-		    [Button => $do_compound->("since $year"),
+		    [Radiobutton => $do_compound->("since $year"),
 		     -command => sub { set_penalty("tmp/unique-matches-since$year.bbd") },
+		     -variable => \$penalty_unique_matches,
+		     -value => "since $year",
 		    ];
 		} @acc_cat_split_streets_years
 		),
 		'-',
-		[Button => $do_compound->('unset'),
+		[Radiobutton => $do_compound->('unset'),
 		 -command => sub { unset_penalty() },
+		 -variable => \$penalty_unique_matches,
+		 -value => '',
 		],
 	       ]
 	      ],
