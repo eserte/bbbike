@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.29;
+$VERSION = 2.30;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -371,6 +371,12 @@ sub register {
 	  ($images{Windy} ? (icon => $images{Windy}) : ()),
 	  tags => [qw(met)],
 	};
+    $main::info_plugins{__PACKAGE__ . '_OvertureMaps'} =
+	{ name => 'Overture Maps',
+	  callback => sub { showmap_overture_maps(@_) },
+	  callback_3_std => sub { showmap_url_overture_maps(@_) },
+	  ($images{OvertureMaps} ? (icon => $images{OvertureMaps}) : ()),
+        };
     if ($is_berlin && $main::devel_host) {
 	$main::info_plugins{__PACKAGE__ . "_AllTrafficMaps"} =
 	    { name => "All Traffic Maps",
@@ -1041,6 +1047,38 @@ GBlFwU8KAXEYx+H3M15FxorNlD8rV7DhIk7hBhxB2bqGC7iFhVlgoSykNGRM89Uk/Z4HM+pUSkkf
 GRFNSMCki/QS3oKEnyNFRhd6VN6y/EZBwoBgX3qtExOMDk4eE7RTx9oEO9wsJjBzKSaQXDOC7WxD
 Ek3H/G2uJd0WjTk/67uyWl4WWTrxyuqUPx9EDMAXwPIivYRZfciZvp0lfWRfheZAKhmSgB8AAAAA
 SUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{OvertureMaps}) {
+	# Created with:
+	#   wget https://explore.overturemaps.org/aria/c118a0c-20.x-dist/favicon.png
+	#   convert -resize 16x16 favicon.png favicon2.png 
+	#   pngcrush -brute -reduce -rem allb -m 0 favicon2.png favicon3.png
+	#   base64 favicon3.png
+	$images{OvertureMaps} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAqZQTFRF
+AAAAQFDLQFHMQFHMP1DLP1DLP1DMP1DLP1DNP1HMP1DMP1DMQFHMP0/IQVLMP1DLQFTMQEjNQE/L
+PFjLFbLDO2zLOHHKD7y/MnvJE7XDKY7HGajFQk7JP1HLQFHLQFHMQFHMP1DMP1HMQFLMQFHMQFHM
+QFHMQFHMQFHMQFHMP1DMP1DKP1DMQFHMQFHMQFDLQFHMQFHMP1DLP1DLP1DLP1HMP1DMP1HMQFHM
+QFHMP1HMP1HLP1DMP1DMP1DMP1HMP1DLP1HMQFHMQFHMQFHMP1DMQFHMQFHLP1DLQFHMQFHMQFHM
+QFHMQFHMQFHMP1HMP1HLQFHLQFDLQE/LPmLMQWLMQGPMQFrLQFHMQFHMP1HLP1DLQFHMQFHMP1LL
+NmfKG6TEQGLMQWLMQWLMQF3LQFHMQFHMQFHLQFHMQFHMQFHMP1LLJJDHFLPDEbjBD72+QGLMQWLM
+QGLMP2fLP1HMQFDLQFDMQFHMQFHMQFHMQU3MFbLEErXCEbnAD72+QGLMQGLMQGPLPWnLOHHKOGvK
+QFHMQFDLQFDLQVDLM27JGKvEFbDEErbCELu/DsC9QGLMQGLMP2TLPGvLN3PKMnvJLoTIKovII5fG
+H5/GHKTFGarFFLLDEbjBD72+DcG8QWPMQGPMPmbLOm7KNXbKMX7JLYbIKY7HJJbGIJ3GG6XFFq3E
+FLTDELrADsC9DMS6QWPMQGPMPWnLOHHKNHnJMIHIK4jIJ5DHIpnGHqDFGqfFFq/EErfBD7y+DsG8
+DMW6Om3LN3TKM3vJLoPIKovIJZPHIZrGHaLFGKvEFLLDErfBELy/DsC9+AD1MX/JLYbIKI7HJJXH
+H5/FG6XFF6vEFLHEErbCMn/IJ5HHI5jGH57GHKTFGKrEQFHMQFHMQFHMQFHMQFHMQFHMrnEVlgAA
+ANx0Uk5TAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAea7K7gC4DLGZ58tN6QAIWZjKH9rlc
+hyxBWn/1+4ovVFsDZ5u/5PvxSBBhDHj4kzKN6Lp8Kl8LARVKkfSzEBCt6nBwD1mZZi+j6jtN5PSY
+b3RBEEqZbyQmlnrJ9746DmCsV2KkiohhL0h8glssQXaOlT81jJ2Ng4dYGRhMfYJ8lKhTYq1xdpyL
+hYaFgH2PkXWYSwo7fX1pfpqKgZeJaWeHi0EMRYZ7ZoZ/YmiLcjYJABFPh3dthWYqBgAaYWYlAzMo
+dlwAAACRSURBVBjTY2RgYGCUZoSA+/+AHAYGZkYFIGerD5C49RskwKYGkl0bAiQuM/5gZOBk1AYy
+l0WDNZ39ysjAw2gEMeGkBSPj8Y+MDAKMFoxwsP8dYwiM3VwHJDYzMibCBMq7IHQBlJ81HcqoZ0QD
+/egC89EF1qMLiDKuROb6AP0isQXOdXkO8hwDg9QeMNfhKZANAMoQHMFDMdtyAAAAAElFTkSuQmCC
 EOF
     }
 }
@@ -2317,6 +2355,23 @@ sub showmap_url_windy {
 sub showmap_windy {
     my(%args) = @_;
     my $url = showmap_url_windy(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Overture Maps
+
+sub showmap_url_overture_maps {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 16 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://explore.overturemaps.org/#%.2f/%.5f/%.5f", $scale, $py, $px;
+}
+
+sub showmap_overture_maps {
+    my(%args) = @_;
+    my $url = showmap_url_overture_maps(%args);
     start_browser($url);
 }
 
