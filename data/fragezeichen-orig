@@ -508,7 +508,7 @@ Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823
 #: by[nocache]: https://archive.is/P1Lj9
 #: osm_watch: node id="29420748" version="7"
 #: source_id: 2147342788 (inaktiv)
-#: last_checked: 2024-08-30
+#: last_checked: 2024-11-13
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623,15954 13653,15938
@@ -1603,7 +1603,7 @@ Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::pro
 #: source_id: viz2021:13.515237,52.567077,08.09.2023,07:00 (Leitungsarbeiten bis 22.12.2023) (inaktiv)
 #: source_id: viz2021:13.514671,52.566742,08.09.2023,07:00 (bis 23.02.2024) (inaktiv)
 #: source_id: viz2021:13.515237,52.567077,06.10.2023,10:00 (Leitungsarbeiten bis 17.11.2023) (bis 22.12.2023) (bis 23.02.2024) (bis 07.03.2024) (inaktiv)
-#: last_checked: 2024-08-23
+#: last_checked: 2024-11-13
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-03-07
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs stadtauswärts?	?::projected; 17744,18016 17843,18078
@@ -2456,12 +2456,17 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6935 (Vorlage zur Kenntnisnahme: Mehrkosten)
 #: XXX qualitaet: -> Q0 vermutlich
 # REMOVED (-> temp blockings) --- #: last_checked: 2018-06-19 (noch keine Sperrung) --- #: check_frequency: 2d --- Schönstr.: Neubau geplant, Vollsperrung während der Bauarbeiten	?::projected 13391,16436 13630,16629
-#: last_checked: 2024-06-13
+#: last_checked: 2024-11-13
 #: check_frequency: 240d
 #: next_check: 2025-06-30
-Schönstr.: Neubau geplant	?::projected 13630,16629 13794,16773 13870,16837
+Schönstr.: Neubau	?::inwork 13630,16629 13794,16773
+# REMOVED (hier fertig) --- Schönstr.: Neubau geplant	?::inwork 13794,16773 13870,16837
 # REMOVED (hier fertig) --- Schönstr.: Neubau geplant	?::projected 13870,16837 13974,16924 13996,16959
 # REMOVED (-> temp blockings) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020) --- #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101 --- #: last_checked: 2020-04-15 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2020-02-01 --- Schönstr.: Neubau geplant	?::projected 13996,16959 14136,17170
+# 
+#: last_checked: 2024-11-13
+#: check_frequency: 90d
+Schönstr.: Zebrastreifen in Bau	?::inwork 13815,16773 13794,16773 13798,16794
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_konigsweg.pdf
 #: XXX wird auch der Parallelweg zur Wohngebietsstraße ausgebaut?
@@ -3532,10 +3537,10 @@ Am Falkenberg/Gartenstadtweg: Zebrastreifen geplant	?::projected 21680,948 21685
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Umsetzung 2022 unwahrscheinlich)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1497915.php (Umsetzung bis 18. November 2024)
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/ein-neuer-ueberweg_a428581
-#: source_id: viz2021:13.179075,52.516631,28.10.2024,09:00 (Gehwegsanierung, bis 13.11.2024)
+#: source_id: viz2021:13.179075,52.516631,28.10.2024,09:00 (Gehwegsanierung, bis 13.11.2024) (bis 6.12.2024)
 #: last_checked: 2024-09-18
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2024-11-18
+#: next_check: 2024-12-06
 Wilhelmstr. 28 (Spandau): Zebrastreifen entsteht	?::inwork -4652,12247 -4647,12269 -4672,12273
 #: priority ^^^
 #: by ^^^
@@ -3564,22 +3569,6 @@ Kniprodestr./Pasteurstr.: wird hier ein Zebrastreifen gebaut?	?::projected 12723
 #: last_checked: 2024-10-30
 #: check_frequency: 90d
 Emser Str./Ilsestr.: wird hier ein Zebrastreifen gebaut?	? 12610,7104 12648,7080 12681,7068
-# 
-#: by: https://www.berliner-woche.de/bezirk-neukoelln/c-verkehr/was-in-diesem-jahr-geplant-ist_a414779 (etwa bis Oktober 2024)
-#: by: https://www.infravelo.de/projekt/ilsestrasse/ (3. Quartal 2024 - 4. Quartal 2024)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1470361.php (ab August 2024)
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/artikel.756779.php#headline_1_29 (ab 1.8.2024)
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/entwurfsplanung-ilsestrasse-zur-fahrradstrasse.pdf?ts=1721739835
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ilsestrasse-wird-fahrrad-und-fussgaengerfreundlich-umgestaltet_a421612
-#: XXX gegenläufige Einbahnstraßen für Kfz-Verkehr an der Schierker Str.; neue Vorfahrtsregelung
-#: XXX zurzeit (2024-10-30) stehen Fahrradstraßenschilder nur an der Einfahrt Thomasstr.
-#: osm_watch: note 4269753 4
-#: osm_watch: way id="18908134" version="31"
-#: last_checked: 2024-11-02 (mapillary)
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2024-10-31
-Ilsestr. (Neukölln): Umbau zur Fahrradstraße	?::inwork 12564,7467 12585,7357 12601,7284 12613,7236 12634,7151 12648,7080
-# REMOVED (hier nicht) --- Ilsestr. (Neukölln): wird hier eine Fahrradstraße entstehen?	? 12648,7080 12664,7013
 # 
 # REMOVED (umgesetzt) --- #: last_checked: 2019-07-15 (mapillary) --- #: next_check: 2019-11-01 --- #: priority: #D --- Auguste-Viktoria-Allee/General-Barby-Str.: wird hier ein Zebrastreifen gebaut?	?::projected 4403,18278 4421,18243 4440,18209
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.104719.php --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/fussgaengerueberweg-bismarckstrasse.pdf --- #: source_id: 2147344043 (Bauarbeiten bis Ende Mai 2019, vielleicht haben sie was mit dem Zebrastreifen zu tun?) --- #: priority: #D --- #: last_checked: 2018-08-15 --- #: next_check: 2019-05-31 --- Bismarckstr./Kniephofstr.: Zebrastreifen in Planung	?::projected 6108,5968 6124,5983 6147,5971
@@ -3910,7 +3899,7 @@ Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahre
 #: by: https://www.morgenpost.de/bezirke/pankow/article407082498/berlin-verschiebt-gefuerchtete-bruecken-baustelle-in-prenzlauer-berg.html (voraussichtlich ab Ende März oder im April 2025)
 #: by[nocache]: https://archive.is/zYelP
 #: osm_watch: note 4317053 3
-#: last_checked: 2024-11-05
+#: last_checked: 2024-11-11 (mapillary)
 #: next_check: 2025-03-31
 Schwedter Steg: wird wegen Bauarbeiten gesperrt	? 10005,16150 10062,15927
 # 
@@ -4154,6 +4143,7 @@ Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1846073520448553182
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1500091.php
 #: by: https://www.berlin.de/imgscaler/qEwkW76nu-A0rLDOmk2HIdBJQYvEBVLrB5TzpLz4pPc/rbig2zu1/L3N5czExLXByb2QvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI0L3dpbnRlcnN0ZWluc3Ryc3BlcnJ1bmcuanBn.jpg
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/strassensperre-wegen-radweg_a429301
 #: source_id: viz2021:13.306024,52.524038,03.07.2024,07:00 (bis 08.07.2024) (inaktiv)
 #: source_id: viz2021:13.306097,52.525724,18.06.2024,07:00 (bis 30.09.2024) (bis 04.10.2024) (bis 10.10.2024) (bis 22.11.2024)
 #: source_id: viz2021:13.30664,52.51752,16.09.2024,06:00 (bis 14.10.2024) (inaktiv)
@@ -4162,7 +4152,7 @@ Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,
 #: source_id: viz2021:13.306077,52.523947,15.10.2024,09:00 (bis 22.10.2024) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.30625,52.52024,23.10.2024,07:00 (Markierungsarbeiten bis 04.11.2024) (inaktiv)
 #: source_id: viz2021:13.306536,52.518008,23.10.2024,07:00 (Markierungsarbeiten bis 04.11.2024) (inaktiv)
-#: source_id: viz2021:13.30649,52.518359,05.11.2024,07:00 (Markierungsarbeiten bis 15.11.2024)
+#: source_id: viz2021:13.30649,52.518359,05.11.2024,07:00 (Markierungsarbeiten bis 15.11.2024) (bis 22.11.2024)
 #: source_id: viz2021:13.306321,52.519591,23.10.2024,07:00 (Markierungsarbeiten bis 05.11.2024) (inaktiv)
 #: osm_watch: way id="4410427" version="40"
 #: osm_watch: way id="1052921140" version="7"
@@ -5064,6 +5054,7 @@ Allee der Kosmonauten: Radwege zwischen Elisabethstr. und Landsberger Allee gepl
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11455 (Antrag zum Straßenbahnausbau)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-17910.pdf (Inbetriebnahme 2028 angestrebt)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/streit-um-tram-planung-der-bvg-kommt-es-in-berlin-mahlsdorf-jetzt-zum-showdown-li.2270980
+#: by: https://www.nd-aktuell.de/artikel/1186728.tram-ausbau-in-berlin-trotz-cdu-widerstand-in-mahlsdorf-strassenbahn-kommt-wie-geplant.html
 #: last_checked: 2024-11-09
 #: check_frequency: 720d
 #: next_check: 2028-06-01
@@ -5472,15 +5463,19 @@ Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der sch
 # 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/an-vielen-strassen-sollen-fussgaenger-sicherer-ueber-die-fahrbahn-kommen_a411164 (vorgesehen, kein Termin genannt)
 #: XXX weitere Planungen: Schottstraße/Fanninger Straße, Robert-Sievert-Straße/Römerweg, Normannenstraße/Rudolf-Reusch-Straße, Malchower Weg/Königswalder Straße, Lindenberger Straße/Dorfstraße, Vincent-van-Gogh-Straße/Welsestraße
-#: next_check: 2024-12-31 vvv
-#: last_checked: 2024-10-13
+#: priority: #D vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: next_check: 2024-12-31 vvv
+#: last_checked: 2024-11-13
 Simon-Bolivar-Str./Goeckestr.: entsteht hier ein neuer Zebrastreifen?	? 16104,14678 16128,14685 16152,14691
-#: last_checked: 2024-10-13
+#: last_checked: 2024-11-13
 Werneuchener Str./Küstriner Str.: entsteht hier ein neuer Zebrastreifen?	? 16301,15247 16314,15223 16327,15193
+#: next_check: 2024-12-31
 Franz-Jacob-Str./Max-Brunnow-Str.: entsteht hier ein neuer Zebrastreifen?	? 14519,13404 14529,13384 14545,13363
 #: last_checked: 2024-10-17
 Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15487,11398 15497,11381 15507,11357
-#: next_check ^^^
+#: check_frequency ^^^
+#: priority ^^^
 # 
 # REMOVED (realisiert) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen) --- #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (angeblich 2021 umgesetzt) --- #: priority: #D --- #: last_checked: 2021-10-31 --- #: check_frequency: 90d --- Wittenauer Str. zwischen Michelbacher Zeile und Lißberger Zeile: Zebrastreifen in Bau	?::inwork 5818,22257 5800,22204 5853,22226
 # REMOVED (realisiert) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Finanzierung 2020) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt) --- #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (2022) --- #: priority: #D --- #: XXX Masten stehen bereits, Markierung fehlt --- #: last_checked: 2023-10-13 --- #: check_frequency: 14d --- Michaelkirchplatz/Legiendamm: Zebrastreifen in Bau	?::inwork 11361,11222
@@ -5725,7 +5720,7 @@ Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6155 (Einwohnerantrag)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6323 (Antrag) (in der BVV beschlossen)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6323&date=20230702 (Vorlage zur Kenntnisnahme)
-#: last_checked: 2024-11-05
+#: last_checked: 2024-11-11 (mapillary)
 #: check_frequency: 120d
 Gleimstr.: entsteht hier eine Fahrradstraße?	? 10953,15787 10701,15750 10554,15725 10426,15705 10418,15704 10170,15659 10130,15653
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021/2022)
@@ -5788,6 +5783,7 @@ Schönhauser-Allee-Brücke: Neubau	?::projected 10969,15944 10975,16010
 #: by: https://www.tagesspiegel.de/berlin/bezirke/jahrelange-verzogerungen-in-berlin-senat-verschiebt-weitere-bruckenbauten-uber-den-s-bahn-ring-12504611.html (Bauausführung nun für 2027/2028 geplant, Bauzeit 15 Monate)
 #: by[nocache]: https://archive.is/Onetg
 # REMOVED --- #: next_check: 2024-12-31
+#: last_checked: 2024-11-11 (mapillary)
 #: next_check: 2027-01-01
 Schönfließer Brücke: Ersatzneubau geplant	?::projected 10592,15968 10593,16037
 # 
@@ -5832,7 +5828,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="21"
-#: last_checked: 2024-10-27
+#: last_checked: 2024-11-13
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -6031,7 +6027,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2024-11-07
+#: last_checked: 2024-11-13
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -6055,7 +6051,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/infos-zum-radweg-scheffelstrasse_a426227
 #: source_id: viz2021:13.476508,52.520281,04.09.2024,07:00 (Sperrung für Kfz, bis 30.11.2024)
 #: XXX Außerdem: Grünbeschichtung
-#: last_checked: 2024-11-10
+#: last_checked: 2024-11-13
 #: check_frequency: 30d
 #: next_check: 2025-05-31
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::inwork 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
@@ -6066,7 +6062,7 @@ Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Fertigstellung 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.bahninfo-forum.de/read.php?9,769715,786561#msg-786561 (Vorplanung)
-#: last_checked: 2024-10-13
+#: last_checked: 2024-11-13
 #: check_frequency: 180d
 #: next_check: 2027-12-31
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
@@ -6075,7 +6071,7 @@ Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: check_frequency: 120d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18846,9532 18765,9426 18735,9421
 #: osm_watch: way id="261883742" version="13"
-#: last_checked: 2024-08-23
+#: last_checked: 2024-11-13
 #: check_frequency: 120d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18118,19394 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="18"
@@ -6151,13 +6147,13 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf (temporär für 3 Monate)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-13
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/an-der-landsberger-allee-kracht-es-im-bezirk-am-haeufigsten_a377796
 #: XXX In welcher Richtung (vermutlich Richtung Westen offen)? Wird die Einbahnstraße auch für Radfahrer gelten?
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-13
 #: check_frequency: 90d
 Hirschberger Str.: Planung einer Einbahnstraße	? 14988,11130 15021,11152 15056,11138 15102,11120
 # 
@@ -8116,8 +8112,11 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: last_checked: 2024-11-11 (osm)
 ehemalige B246 (Zossen): wird der Bahnübergang aufgegeben?	? 13390,-20515 13412,-20513 13526,-20548
 # 
+#: next_check_id: ZOSSENB246-2023
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20241113 (bis Ende November 2024)
 #: osm_watch: way id="1331116060" version="5" brb
 #: last_checked: 2024-11-11 (osm)
+#: next_check: 2024-11-30
 B246: Radweg mit Rampe in Bau	?::inwork 13322,-20017 13432,-20019 13392,-20024 13489,-20052 13500,-20066
 # 
 #: by: https://www.maz-online.de/lokales/teltow-flaeming/zossen/bauarbeiten-bahnhof-zossen-teil-fuer-tunnel-fehlt-3-millionen-euro-mehrkosten-66TWUKVA4BA4PL6MZ7SRFIOU2M.html
@@ -8406,6 +8405,7 @@ Olbersstr.: Radspuren geplant	?::projected 3038,13612 3211,13631 3280,13625 3365
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,791686#msg-791686 (Radspuren sollen die Busspuren ersetzen)
 #: source_id: viz2021:13.42056,52.525969,19.03.2024,07:00 (bis 24.04.2024) (inaktiv)
 #: source_id: viz2021:13.420638,52.525829,22.07.2024,07:00 (Leitungsbau, bis 30.09.2024) (inaktiv)
+#: source_id: viz2021:13.421748,52.526637,06.11.2024,07:00 (Radwegerneuerung (?), bis 16.12.2024)
 #: last_checked: 2024-11-03
 #: next_check: 2024-12-31
 Otto-Braun-Str.: Radspuren statt der Busspuren	?::inwork 11451,13301 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
@@ -8560,7 +8560,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_46_3407_3446_online.pdf (Teileinziehung von Straßenland)
 #: osm_watch: way id="1051634661" version="11"
 #: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
-#: last_checked: 2024-11-10
+#: last_checked: 2024-11-13
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
@@ -8593,7 +8593,7 @@ Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: XXX Wann starten die Bauarbeiten? vvv
-#: last_checked: 2024-11-04 (Berliner Zeitung) vvv
+#: last_checked: 2024-11-11 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: next_check: 2025-02-28 vvv
@@ -9364,7 +9364,7 @@ Friedhof Georgen-Parochial III: Wohngebiet entsteht, evtl. mit einem Weg zwische
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/stephanus-stiftung-und-stadtentwickler-planen-wohnungen-schule-kita-und-pflegeeinrichtungen_a195730
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bezirk-beantragt-beim-senat-aenderung-des-flaechennutzungsplans_a209641
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bezirksamt-beantragt-aenderung-des-flaechennutzungsplans_a228187
-#: last_checked: 2024-06-07 (mapillary)
+#: last_checked: 2024-11-13
 #: check_frequency: 360d
 Friedhof Segen: Wohngebiet entsteht	?::projected 13581,16968 13522,17021 13687,17181 13754,17133 13581,16968
 # 
@@ -10681,10 +10681,22 @@ Bebauungsplan 11-188 VE: ein Quartiersplatz soll entstehen, ggfs. mit Durchfahrt
 #: osm_watch: way id="185633562" version="15"
 #: osm_watch: way id="185632419" version="8"
 #: osm_watch: way id="53178115" version="6"
-#: last_checked: 2024-11-11 (daf)
-#: check_frequency: 30d
-#: next_check: 2024-12-31
-Döberitzer Grünzug: hier entsteht ein Park mit Wegen	?::inwork 7895,13415 7845,13509 7760,13633 7564,13961 7400,14207 7303,14185
+#: last_checked: 2024-11-13 (mapillary) vvv
+#: check_frequency: 30d vvv
+#: next_check: 2024-12-31 vvv
+Döberitzer Grünzug: hier entsteht ein Park mit Wegen (hier: Beton)	?::inwork 7837,13499 7812,13549
+Döberitzer Grünzug: hier entsteht ein Park mit Wegen (hier: Asphalt)	?::inwork 7812,13549 7821,13559 7811,13590 7785,13595
+Döberitzer Grünzug: hier entsteht ein Park mit Wegen (hier: Beton)	?::inwork 7785,13595 7748,13628
+Döberitzer Grünzug: hier entsteht ein Park mit Wegen (hier: Asphalt)	?::inwork 7748,13628 7717,13684 7729,13697
+Döberitzer Grünzug: hier entsteht ein Park mit Wegen (hier: Beton)	?::inwork 7729,13697 7652,13820 7564,13961 7460,14117 7400,14207
+Döberitzer Grünzug: hier entsteht ein Park mit Wegen (hier: Asphalt)	?::inwork 7400,14207 7303,14185
+Döberitzer Grünzug - Klara-Franke-Str.: hier entsteht ein Park mit Wegen (hier: Beton)	?::inwork 7460,14117 7443,14107
+Döberitzer Grünzug - Klara-Franke-Str.: hier entsteht ein Park mit Wegen (hier: Beton)	?::inwork 7652,13820 7630,13810
+Döberitzer Grünzug - KGA Lehrter Str.: hier entsteht ein Park mit Wegen (hier: Asphalt)	?::inwork 7812,13549 7795,13528
+Döberitzer Grünzug - Lehrter Str.: hier entsteht ein Park mit Wegen (hier: Asphalt)	?::inwork 7748,13628 7733,13622
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (realisiert) --- #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=761498#post761498 --- #: by: https://gruen-berlin.de/projekte/urbane-freiraeume/gruenzug-an-der-suedpanke/planung-entwicklung --- #: osm_watch: way id="1283494931" version="3" --- #: osm_watch: way id="1296244125" version="2" --- #: last_checked: 2024-09-21 --- #: check_frequency: 60d --- Reinhardtstr. - Am Zirkus: hier entsteht eine sehr schmale Wegverbindung	?::inwork 9058,13054 9090,13009
 # 
@@ -10713,21 +10725,9 @@ S-Bhf. Zehlendorf: neuer Zugang am Postplatz geplant	?::projected 644,2622 660,2
 #: XXX fehlt bei Berlin.coords.data (laut LOR PLZ=13059)
 #: XXX geplante neue Privatstraße
 #: osm_watch: way id="1041951087" version="3"
-#: last_checked: 2024-07-30 (mapillary)
+#: last_checked: 2024-11-13
 #: check_frequency: 180d
 Zum Wartenberger Anger: genaue Lage, Qualität?	?::inwork 17713,18971 17687,18846 17753,18835 17813,18933
-# 
-#: next_check_id: NEBENDEMDORFTEICH-2024
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_31_2589_2676_online.pdf (Benennung)
-#: by: https://www.berliner-woche.de/wartenberg/c-verkehr/strassenteil-wird-umbenannt_a318539
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8988
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/F79WiFP2abgRrV4KLrsX5olu6b3JLkHvrN4jHx9G/WMnlwMsx/03-Anlagen/02/LageplanASKultur.pdf (Lageplan)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_13_0789_0852_online.pdf (Erwähnung)
-#: XXX fehlt bei Berlin.coords.data (PLZ=13059 laut LOR und DPAG 12/2023)
-#: XXX geplante neue Privatstraße
-#: last_checked: 2024-07-30 (mapillary)
-#: check_frequency: 180d
-Neben dem Dorfteich: genaue Lage, Qualität?	?::inwork 17750,18984 17744,18953 17762,18948 17753,18919
 # 
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1070410.php
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/b_plan11_169.pdf

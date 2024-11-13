@@ -8420,7 +8420,7 @@ Matenzeile: Beton	Q0 17365,17632 17474,17478 17582,17335 17714,17285
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Verbundsteinpflaster	Q1 15094,13750 15060,13735 15035,13701
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Betonplatten	Q0 15035,13701 14995,13645
 (Voigtstr. - Pettenkoferstr.): Kopfsteinpflaster	Q2 14832,12755 14858,12765
-Lehrter Str. [6-8]: Kopfsteinpflaster	Q2 7630,13584 7735,13626
+Lehrter Str. [6-8]: Kopfsteinpflaster	Q2 7630,13584 7733,13622
 (Seydlitzstr. - Lehrter Str.): Kopfsteinpflaster	Q2 7613,13517 7651,13447
 (Lehrter Str. - Fritz-Schloß-Park): Asphalt	Q0 7630,13584 7451,13504
 (Lehrter Str. - Fritz-Schloß-Park): asphaltähnlicher Belag	Q0 7451,13504 7422,13487 7402,13475
@@ -9552,7 +9552,7 @@ An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1 8704,21858 8725,21910 8
 An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1 8725,21910 8615,21955 8590,21894 8597,21879
 (Brockenweg - Blankenburger Pflasterweg): unbefestigter Weg	Q2 15102,20723 15119,20655 15226,20587
 (Brockenweg - Blankenburger Pflasterweg): wassergebundene Decke	Q1 15226,20587 15269,20508 15276,20231 15310,20176 15354,19879
-Große-Leege-Str.: Beton mit einigen Hebungen	Q0; 16033,14756 15968,14684 15899,14598
+Große-Leege-Str.: Beton mit einigen Hebungen	Q1; 16033,14756 15968,14684 15899,14598
 Große-Leege-Str.: Asphalt	Q0; 15899,14598 15968,14684 16033,14756
 (Rüdigerstr. - Nibelungenring): Verbundsteinpflaster	Q1 17441,12247 17444,12286 17442,12292
 Nibelungenring: Verbundsteinpflaster	Q1 17320,12308 17359,12302 17442,12292 17454,12348
@@ -10255,7 +10255,7 @@ Traudelstr.: Verbundsteinpflaster	Q1 19027,1427 19073,1369 19169,1249 19160,1215
 Rainweg [Stichstraße]: Verbundsteinpflaster	Q1 25028,-2846 24977,-2753
 Rainweg: Verbundsteinpflaster	Q1 25006,-3014 25000,-3001 24970,-2945 25012,-2857 25028,-2846
 Rainweg: Verbundsteinpflaster	Q1 25028,-2846 25113,-2797
-(Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0 7895,13415 7837,13499 7775,13540
+(Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0 7895,13415 7837,13499 7795,13528 7775,13540
 (Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0 7775,13540 7666,13479 7653,13480
 Finckensteinallee: glatte Pflasterung	Q1 4115,2726 4104,2749 4071,2763
 Brixener Str.: Asphalt	Q0 10493,16960 10495,17022 10497,17095
@@ -11632,6 +11632,10 @@ Friedenauer Höhe: Betonsteinpflaster	Q0 6178,7899 6126,7917 6011,7911 5799,7880
 (Suttnerstr. - Eythstr.): Asphalt	Q0 7733,5893 7735,5960
 Kiefholzstr. [Wohngebiet]: Kleinsteinpflaster	Q2 16398,6475 16448,6498
 Kiefholzstr. [Wohngebiet]: Verbundsteinpflaster	Q1 16448,6498 16495,6565
+(Zingster Str. - Am Berl): Beton	Q1 16371,18669 16401,18692 16445,18705 16504,18692
+(Zingster Str. - Am Berl): Betonpflaster	Q0 16504,18692 16534,18689
+(Zingster Str. - Am Berl): Beton	Q1 16534,18689 16607,18709 16656,18742
+Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949 17759,18916
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -14308,7 +14312,7 @@ Engelmannweg: gut befahrbares Kopfsteinpflaster	Q1 4531,18217 4492,18013 4462,17
 Ahornallee (Friedrichshagen): Asphalt	Q0 25121,5795 25123,5767
 Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25123,5767 25111,5464 25121,5286
 Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17797,18675
-Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17728,18985 17793,18999 17887,18975 17900,18972 17980,18947 18007,18938
+Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17728,18985 17757,18991 17793,18999 17887,18975 17900,18972 17980,18947 18007,18938
 Am Gutshof: Verbundsteinpflaster	Q0 17730,18747 17813,18726 17817,18738 17824,18774 17837,18784 17854,18777
 Am Gutshof: Kopfsteinpflaster	Q2 17854,18777 17907,18759
 Am Gutshof: Verbundsteinpflaster	Q0 17907,18759 17938,18749 17929,18709 17900,18717

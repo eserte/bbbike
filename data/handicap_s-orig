@@ -330,7 +330,7 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraﬂe sein
 #: historical_note: am Anfang Einbahnstraﬂe, offen Richtung Norden (1s:q3:inwork), sp‰ter komplett zu (q4::inwork in handicap_s-orig), dann wieder (laut osm) Einbahnstraﬂe (1s:q3:inwork), seit September 2024 teilweise zu (s¸dlicher Abschnitt)
 #: osm_watch: way id="4596985" version="32"
-#: osm_watch: way id="1161733739" version="18"
+#: osm_watch: way id="1161733739" version="19"
 #: last_checked: 2024-10-31 (osm)
 #: check_frequency: 45d
 #: next_check: 2024-12-31
@@ -1023,7 +1023,7 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 ### Lichtenberg ###
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2024-10-29
+#: last_checked: 2024-11-13
 #: check_frequency: 45d
 #: next_check: 2025-05-31
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
@@ -3942,7 +3942,7 @@ Fˆlderichplatz: Fuﬂg‰ngerzone	q3 -3942,12559 -3940,12377
 #: XXX_prog BS, ansonsten q2
 (Wasserweg - Treptower Park): einige Fuﬂg‰nger, Bordstein, Zugang kann zugeparkt sein	q3 15678,8911 15617,8924
 Monumentenplatz: einige Fuﬂg‰nger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
-(Minna-Cauer-Str. - Lehrter Str.): Fuﬂg‰nger, Radfahren offiziell verboten	q4 7895,13415 7837,13499 7775,13540
+(Minna-Cauer-Str. - Lehrter Str.): Fuﬂg‰nger, Radfahren offiziell verboten	q4 7895,13415 7837,13499 7795,13528 7775,13540
 (Minna-Cauer-Str. - Lehrter Str.): einige Fuﬂg‰nger, schmale Straﬂe	q1 7775,13540 7666,13479 7653,13480
 #: XXX_prog BS an beiden Seiten, ansonsten q1
 Andreas-Hofer-Platz: einige Fuﬂg‰nger, Bordsteine	q3 10490,16914 10493,16960
@@ -5262,6 +5262,11 @@ Annastr.: einige Fuﬂg‰nger	q3 5920,2693 5930,2671
 # 
 (Reinhardtstr. - Am Zirkus): schmal, einige Fuﬂg‰nger	q4+ 9058,13054 9090,13009
 (Am Zirkus - Bertolt-Brecht-Platz): einige Fuﬂg‰nger	q3- 9090,13009 9153,12928
+# 
+(Zingster Str. - Am Berl): Straﬂenbahnwendeschleife, kreuzende Wohngebietsstraﬂen, einige Fuﬂg‰nger	q2 16371,18669 16401,18692 16445,18705 16504,18692
+(Zingster Str. - Am Berl): einige Fuﬂg‰nger	q2 16504,18692 16534,18689
+#: note: Gr¸nanlagenschild ohne Freigabe f¸r Radfahrer
+(Zingster Str. - Am Berl): Gr¸nanlage, einige Fuﬂg‰nger	q3 16534,18689 16607,18709 16656,18742
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

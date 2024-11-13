@@ -3836,6 +3836,7 @@ weites Drängelgitter	BNP:2::trailer=7 15610,10212
 weites Drängelgitter	BNP:2::trailer=7 15813,9961
 weites Drängelgitter	BNP:2::trailer=7 16026,9821
 weites Drängelgitter	BNP:2::trailer=7 16261,9663
+Drängelgitter/Barriere	BNP:3::trailer=10 17130,18771
 #
 #: section ^^^
 ############################################################################
@@ -3927,6 +3928,7 @@ Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::
 #: by: https://emag.berliner-woche.de/titles/berlinerwochenblatt/14489/publications/855/pages/1 (Eröffnung Anfang November 2024)
 #: by: https://www.berliner-zeitung.de/news/johannisthal-berlins-erste-aluminiumbruecke-fuer-fussgaenger-und-radfahrer-oeffnet-bald-li.2271078
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=769591#post769591 (Eröffnung am 18.11.2024)
+#: by: https://entwicklungsstadt.de/innovativinnovativ-nachhaltig-berlins-erste-aluminiumbruecke-in-adlershof/
 #: source_id: viz2021:13.532612,52.441405,15.06.2023,07:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 28.06.2023) (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.532262,52.441543,26.10.2023,09:00 (Einschränkungen auf dem Adlergestell im Zuge des Brückenbaus, bis 26.10.2023) (inaktiv)
 #: osm_watch: way id="1243659419" version="4"
@@ -4215,11 +4217,12 @@ An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 #: by: https://entwicklungsstadt.de/neues-besucherzentrum-am-reichstag-baustart-erfolgt-2025/ (Fertigstellung des Besucherzentrums nicht vor 2029)
 #: XXX weiter westlich gibt es zwar weitere Querwege, aber hier sind an den Enden niedrige Geländer
 #: XXX mittlerweile ist auch die südliche Fahrbahn der Paul-Löbe-Allee gesperrt
-#: osm_watch: note 3977175 11
+#: osm_watch: note 3977175 12
 #: osm_watch: way id="212107363" version="6"
 #: osm_watch: way id="212107362" version="6"
-#: last_checked: 2024-10-25
-#: check_frequency: 120d
+#: last_checked: 2024-11-13 (osm note)
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 60d
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 # 
 # REMOVED (laut osm wieder offen) --- #: by: l.epp --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11479 (Instandsetzung frühestens 2025) --- #: confirmed_by: osm, srt --- #: osm_watch: note 3359195 7 --- #: osm_watch: way id="311338440" version="4" --- #: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt? --- #: last_checked: 2023-06-24 --- #: check_frequency: 360d --- #: next_check: 2025-09-01 --- Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
@@ -4678,7 +4681,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1825419928171675942 (Einschränkung auf der A114 diese Woche)
 # REMOVED (im del-Changeset kommentiert) --- #: osm_watch: way id="298416172" version="9"
 # REMOVED --- #: osm_watch: way id="43205335" version="3"
-#: osm_watch: way id="298416172" version="14"
+#: osm_watch: way id="298416172" version="15"
 #: osm_watch[closed]: note 4100166 2
 #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv)
 #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv)
