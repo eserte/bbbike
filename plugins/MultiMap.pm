@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.30;
+$VERSION = 2.31;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -36,7 +36,8 @@ sub register {
     my $lang = $Msg::lang || 'de';
     my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
     # this order will be reflected in show_info
-    if ($is_berlin) {
+    if (0 && $is_berlin) {
+	# XXX It seems that pharus abandoned all digital maps
 	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Web"} =
 	    { name => "Pharus (dein-plan, Web)",
 	      callback => sub { showmap_deinplan_web(@_) },
@@ -1343,7 +1344,7 @@ sub showmap_url_mapcompare {
     }
     my $common_qs;
     if ($profile && $profile eq '__distinct_map_data') {
-	my @maps = (qw(bvg-stadtplan bbbike-bbbike mapnik esri), $newest_berlin_aerial, qw(google-map nokia-map lgb-webatlas pharus waze-world));
+	my @maps = (qw(bvg-stadtplan bbbike-bbbike mapnik esri), $newest_berlin_aerial, qw(google-map nokia-map lgb-webatlas waze-world));
 	my $maps_qs = do { my $i = 0; join('&', map { "mt".($i++)."=".$_ } @maps) };
 	$common_qs = 'num=10&' . $maps_qs;
     } elsif ($maps) {
