@@ -22230,15 +22230,15 @@ EOF
      { from  => 1719810000, # 2024-07-01 07:00, # undef, # 
        until => $isodate2epoch->("2024-11-15 17:00:00"), # 1730822400, # 2024-11-05 17:00, # 1371066874, # undef, # XXX
 #       text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
-       text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis 15.11.2024 17:00',
+       text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis voraussichtlich 15.11.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
 # REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
-#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024)
+#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
 #: source_id: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
-#: source_id: viz2021:13.35879,52.53996,02.07.2024,07:00 (bis 14.11.2024)
+#: source_id: viz2021:13.35879,52.53996,02.07.2024,07:00 (bis 14.11.2024) (inaktiv)
 # REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
 	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
@@ -23041,7 +23041,7 @@ EOF
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-12 vvv
+#: last_checked: 2024-11-14 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-18 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
@@ -29672,6 +29672,7 @@ EOF
 # REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7259,14870 7308,14814 7353,14767 7429,14667 7458,14643
 #: note: abgesperrter Bereich etwa 40m, zeitweise könnte die Absperrung schon ab Sparrstr. gelten
 #: add_fragezeichen: Ist der Straßenabschnitt zwischen Tegeler Str. und Sparrstr. weiterhin gesperrt?
+#: also_indoor: traffic (G,W)
 #: last_checked: 2024-11-03 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
@@ -33529,7 +33530,7 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
 #: osm_watch: note 3914565 14
-#: last_checked: 2024-10-16 (indoor research)
+#: last_checked: 2024-11-14 (indoor research)
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-09-22
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
@@ -38680,7 +38681,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1683714580856311808#m
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,776539#msg-776539
 #: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (beide Richtungen, bis 28.08.2023) (inaktiv)
-#: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 01.09.2023, weitere Arbeiten im Anschluss) (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024)
+#: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 01.09.2023, weitere Arbeiten im Anschluss) (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (H,G,W) --- #: priority: #B --- #: last_checked: 2023-08-28
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2023-08-28
 	q4::inwork 17962,6674 17991,6431
@@ -41269,12 +41270,13 @@ EOF
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024)
-#: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024)
+#: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
 #: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
 #: XXX zukünftige Einschränkungen (mittlerweile: der Bauzustand wird vermutlich erst am 17.07.2024 gewechselt):
 #: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
 #: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
+#: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
 #: last_checked: 2024-11-03 (krickstadt) vvv
@@ -44978,7 +44980,7 @@ EOF
        text  => 'Ringstr.: Bauarbeiten Richtung Nordwesten zwischen Prühßstr. und Gersdorfstr., Fahrbahn gesperrt, vom 01.08.2024 08:00 bis 14.11.2024 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.376381,52.443079,01.08.2024,08:00 (hier nur Kfz-Verkehr, bis 01.11.2024) (bis 30.11.2024) (bis 13.12.2024) (bis 14.11.2024)
+#: source_id: viz2021:13.376381,52.443079,01.08.2024,08:00 (hier nur Kfz-Verkehr, bis 01.11.2024) (bis 30.11.2024) (bis 13.12.2024) (bis 14.11.2024) (inaktiv)
 #: source_id: viz2021:13.37562,52.443395,14.11.2024,12:00 (Folgearbeiten (?), nur noch Gegenverkehrsregelung, bis 13.12.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1818885622083256587
 # REMOVED (ja, sind auch betroffen) --- #: note: bei Mapillary nicht zu erkennen, ob der Gehweg für Radfahrer frei ist
@@ -45240,12 +45242,12 @@ EOF
 EOF
      },
      { from  => 1725775200, # 2024-09-08 08:00
-       until => $isodate2epoch->("2024-11-15 17:00:00"), # 1730386800, # 2024-10-31 16:00
+       until => $isodate2epoch->("2024-11-24 17:00:00"), # 1730386800, # 2024-10-31 16:00
 #       text  => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, 09.09.2024 08:00 Uhr bis 31.10.2024 16:00 Uhr',
-       text  => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, voraussichtlich bis Mitte November 2024',
+       text  => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, voraussichtlich bis 24. November 2024',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/24/128 (bis 31.10.2024) (inaktiv) (bis 15.11.2024)
+#: source_id: LS/221-E/24/128 (bis 31.10.2024) (inaktiv) (bis 15.11.2024) (bis 24.11.2024)
 	2::inwork 31738,27620 31684,27738 30387,28332 29363,29024
 EOF
      },
@@ -45437,13 +45439,13 @@ EOF
 EOF
      },
      { from  => 1729400400, # 2024-10-20 07:00
-       until => $isodate2epoch->("2024-11-15 17:00:00"), # 1730131200, # 2024-10-28 17:00
+       until => 1731610905, # $isodate2epoch->("2024-11-15 17:00:00"), # 1730131200, # 2024-10-28 17:00
 #       text  => 'Zadekstr., Uhuweg, Otto-Wels-Ring: Einbahnstraßenregelung, vom 21.10.2024 07:00 bis 28.10.2024 17:00',
        text  => 'Otto-Wels-Ring, Uhuweg, Zadekstr.: Einbahnstraßenregelung, geplant bis 15.11.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.45732,52.433835,21.10.2024,07:00 (bis 28.10.2024) (inaktiv)
-#: source_id: viz2021:13.457922,52.433673,28.10.2024,09:00 (andere Fahrtrichtung; bis 01.11.2024) (bis 15.11.2024)
+#: source_id: viz2021:13.457922,52.433673,28.10.2024,09:00 (andere Fahrtrichtung; bis 01.11.2024) (bis 15.11.2024) (vorfristig inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848227718867112023
 #: by: https://pbs.twimg.com/media/GaLvGf4WEAA0_9g?format=jpg&name=medium (bei den eigentlichen Bauarbeiten in der Fritz-Erler-Allee ist der Gehweg für Radfahrer frei)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1850824827978084537
@@ -45724,6 +45726,21 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.31163,52.463224,13.11.2024,13:20 (hier nur Kfz-Verkehr, bis 15.04.2025)
 	q4::inwork 4298,6239 4221,6283 4173,6284
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.luftbildsuche.de/info/luftbilder/neubau-wohn-geschftshauses-berlin-deutschland-652549.html
+#: note: Länge der Engstelle etwa 70m
+#: note: außerdem ist der Radweg auf der Heinrich-Grüber-Str. wahrscheinlich gesperrt
+#: osm_watch: way id="1309204624" version="1"
+#: also_indoor: traffic (T,G,W)
+#: last_checked: 2024-11-13 (traffic)
+#: check_frequency: 90d
+	q3::inwork; 23251,12146 23017,12177
 EOF
      },
     );

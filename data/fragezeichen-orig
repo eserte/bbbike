@@ -7357,7 +7357,7 @@ Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11708 (Antrag zur Verkehrsberuhigung)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/modersohnstrasse-bald-radstrasse_a428881
 #: note: laut rbb beginnen die Bauarbeiten am 4.11.2024, bis 8.11.2024 für Kfz gesperrt
-#: last_checked: 2024-11-12
+#: last_checked: 2024-11-14
 #: check_frequency: 7d
 #: next_check: 2024-11-18
 Modersohnstr./Gärtnerstr.: Fahrradstraße geplant	?::inwork 14134,11272 14181,11434 14211,11552
@@ -7424,7 +7424,7 @@ geplante Verlängerung des Uferwegs an der Spree	?::inwork 5287,12465 5282,12538 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5905
 #: by: https://www.berliner-woche.de/pankow/c-bauen/neue-strasse-ist-eine-reminiszenz-an-die-rockband-pankow_a323804
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (Straßenbenennung, mit Lageplan)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_52_4785_4880_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_52_4785_4880_online.pdf (Straßenbenennung, Ergänzung)
 #: by: https://www.berliner-woche.de/pankow/c-bauen/baugenehmigung-fuer-forum-pankow-vor-einem-jahr-erteilt_a362768
 #: by: https://www.thomas-daily.de/td-morning-news/1537930-adler-weitet-verlust-aus-holsten-quartier-auf-verkaufsliste/
 #: by: https://www.kondorwessels.com/projekte/staytion/ (Bauzeit: 2024 bis 2030)
@@ -8107,8 +8107,8 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20240925 (Eröffnung, davor Sperrung der B96 für den Straßenverkehr)
 #: XXX Wenn der Bahnübergang aufgegeben wird, dann müsste man den Rest auf N degradieren
-#: osm_watch: way id="1322461292" version="7" brb
-#: osm_watch: way id="538382840" version="14" brb
+#: osm_watch: way id="1322461292" version="9" brb
+#: osm_watch: way id="538382840" version="16" brb
 #: last_checked: 2024-11-11 (osm)
 ehemalige B246 (Zossen): wird der Bahnübergang aufgegeben?	? 13390,-20515 13412,-20513 13526,-20548
 # 
@@ -11293,12 +11293,13 @@ Bebauungsplan 9-68 VE: Straßen geplant	? 20560,518 20722,562 20796,520 20841,354
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/buwog-m%C3%BCnsterberger-weg-91-95.1302/#post-22803
 #: by: https://www.buwog.de/wohnbauprojekte/berlin-buwog-hygge-hoefe (Fertigstellung voraussichtlich 2025)
 #: by: https://www.luftbildsuche.de/info/luftbilder/neubau-holzbauprojekt-mehrfamilienhaus-wohnanlage-ortsteil-kaulsdorf-berlin-deutschland-637816.html
+#: by: https://www.luftbildsuche.de/info/luftbilder/neubau-holzbauprojekt-mehrfamilienhaus-wohnanlage-ortsteil-kaulsdorf-berlin-deutschland-652585.html
 #: XXX Berlin.coords.data-Eintrag fehlt (PLZ=12621 laut DPAG-Mitteilungsblatt 6/2023)
 #: XXX es wird wohl eine Anbindung zur Franzburger Str. entstehen
 #: osm_watch: way id="1246660907" version="4"
 #: osm_watch: way id="676848100" version="7"
 #: note: Privatstraße
-#: last_checked: 2024-08-14
+#: last_checked: 2024-10-26 (luftbildsuche)
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Blumeneschenweg: neue Straße entsteht	? 23363,11600 23403,11721 23375,11731 23382,11760
