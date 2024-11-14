@@ -1396,7 +1396,9 @@ check-disabled:
 	@touch $@
 
 .check_strassen_consecutive: strassen
+# note: the NN::igndisp hack is to ignore routing_helper-orig entries
 	@${PERL} -nle '\
+	    next if /\tNN::igndisp /; \
 	    next if /^(#|\()/; m{([^\t]+)} and do {\
 		if ($$1 ne $$last && $$seen{$$1}) {\
 		    if (!$$error_header_printed) {\
