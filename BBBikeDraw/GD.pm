@@ -39,7 +39,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = '1.69';
+$VERSION = '1.70';
 
 my $use_truecolor = 0; # XXX with 1 segfaults (still with 2.0.33, seen on amd64-freebsd).
 
@@ -338,6 +338,7 @@ sub draw_map {
 	    my $s = $strecke->next;
 	    last if !@{$s->[1]};
 	    my($cat, $cat_attribs) = $s->[2] =~ m{^([^:]+)(?:::(.*))?};
+	    next if $cat_attribs && $cat_attribs =~ /\bigndisp\b/;
 # XXX what about outlined areas?
 #  	    if ($cat =~ /^F:(.*)/) {
 #  		if ($1 eq 'I') {
@@ -410,6 +411,7 @@ sub draw_map {
 	    } elsif ($cat !~ $BBBikeDraw::bahn_bau_rx) { # Ausnahmen: in Bau, stillgelegt, Güterstrecken ...
 		my $cat_attribs;
 		if (($cat, $cat_attribs) = $cat =~ m{^([^:]+)(?:::(.*))?}) {
+		    next if $cat_attribs && $cat_attribs =~ /\bigndisp\b/;
 		    next if $restrict && !exists $restrict->{$cat};
 
 		    if ($cat_attribs && $cat_attribs =~ $BBBikeDraw::tunnel_qr && $cat =~ m{^W}) {
