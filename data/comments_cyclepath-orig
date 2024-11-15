@@ -1683,7 +1683,8 @@ asphaltierter Gehweg, nicht für Radfahrer freigegeben	RW0; 11338,-3945 11646,-34
 #: corrected_by: mapillary (Benutzungspflicht)
 	RW1;RW -3475,26523 -3556,26560
 #: corrected_by: mapillary (neue Radspur?)
-	RW3;RW4? -3556,26560 -3700,26625 -4048,26914
+#: note: zusätzliche sind die Gehwege für Radfahrer freigegeben
+	RW3;RW3 -3556,26560 -3700,26625 -4048,26914
 #: confirmed_by: mapillary
 gemeinsamer Geh- und Radweg	RW2;RW2 -4048,26914 -4293,27146
 #: by: mapillary
@@ -2225,6 +2226,7 @@ asphaltiert	RW8;RW2 66140,22621 65524,23028
 # 
 ######################################################################
 #: by: mapillary vvv
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 -3300,26624 -3313,26931 -3347,27389 -3484,27387
 asphaltiert	RW8;RW2 -26240,-20161 -25565,-22832
 asphaltiert	RW8;RW2 -21758,-21173 -21820,-21235 -22785,-21663 -23214,-21769 -23546,-21847 -24388,-22391 -24566,-22433 -25176,-22765 -25565,-22832 -26251,-22937 -26552,-23106 -27748,-23447 -28170,-23493
 älterer Betonradweg	RW2;RW8 39243,2759 39534,3037 39645,3307 39729,3433

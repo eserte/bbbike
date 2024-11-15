@@ -2038,7 +2038,7 @@ Heideweg (Hennigsdorf): Asphalt	Q0 -4121,26209 -4359,26315 -4600,26443
 Waidmannsweg (Hennigsdorf): Asphalt	Q0 -4293,27146 -4600,26443
 #: by: mapillary
 Waidmannsweg (Hennigsdorf): unbefestigte Straße	Q2+ -4600,26443 -4929,25719
-#: add_fragezeichen: ist hier tatsächlich auch asphaltiert?
+# REMOVED (durch mapillary bestätigt) --- #: add_fragezeichen: ist hier tatsächlich auch asphaltiert?
 Heideweg (Hennigsdorf): Asphalt	Q0 -3738,26172 -4121,26209
 Hafenstr. (Hennigsdorf): Asphalt	Q0 -2808,25489 -2825,25293 -2869,25239 -2933,25212 -3203,25328
 #Bahnstr. (Hohen Neuendorf): schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 2071,29185 2059,28767
@@ -9347,6 +9347,7 @@ Marwitzer Str.: Asphalt	Q2+ -10417,17770 -10344,17792 -10239,17791 -10114,17740
 #: by ^^^
 # 
 #: by: mapillary vvv
+Eduard-Maurer-Str.: Fahrbahn asphaltiert, für Radfahrer freigegebene Gehwege mit Verbundsteinpflaster	Q0 -3300,26624 -3313,26931 -3347,27389 -3484,27387
 Oder-Neiße-Radweg - Stützkow: Verbundsteinpflaster	Q1 61783,66148 61780,66154
 Oder-Neiße-Radweg - Stützkow: Holzbohlen	Q1 61780,66154 61759,66194
 Oder-Neiße-Radweg - Stützkow: Verbundsteinpflaster	Q1 61759,66194 61727,66255

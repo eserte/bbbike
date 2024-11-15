@@ -128,8 +128,7 @@ Köthener See: Qualität?	? 40118,-36709 40012,-36612 39500,-36487 39312,-36212 38
 Groß Wasserburg - Krausnick [Hofjagdradweg]: Qualität?	? 41687,-38100 41462,-38325 41475,-38750 41700,-39425 41012,-40575 41000,-40763
 Köthen - Krausnick [Gurkenradweg]: Qualität?	? 39087,-36914 38750,-37212 38087,-37775 37875,-38037 39187,-38325 39625,-38175 40125,-38275 40337,-38625 40150,-39037 40500,-40325 40677,-40682 40813,-40775 40863,-40904
 Schulstr. (Hennigsdorf): Qualität? Hauptstraße oder Nebenstraße?	? -3049,25593 -3042,25667 -3094,25719
-Fabrikstr. (Hennigsdorf): Qualität? Hauptstraße oder Nebenstraße?	? -3094,25719 -3119,25786 -3063,26112 -3218,26335
-Maurerstr. (Hennigsdorf): Qualität? Hauptstraße oder Nebenstraße?	? -3218,26335 -3254,26516 -3300,26587 -3313,26931 -3347,27389 -3484,27387
+Fabrikstr. (Hennigsdorf): Qualität? Hauptstraße oder Nebenstraße?	? -3094,25719 -3119,25786 -3063,26112 -3218,26335 -3254,26516 -3300,26587 -3300,26624
 Bei Liebenwalde an der Havel: Qualität?	? 7037,51950 7107,52868 7817,53807 7920,54101
 Görke - Bossin: Qualität (am nördlichen Ende ein Plattenweg)?	? 54219,165539 54418,164734 54493,164609
 Stolpe - Bundesstraße: Qualität? Im Süden Fortsetzung des sandigen Feldweges	? 46756,164815 46788,165436 46975,165777 47246,166482 47304,167106
@@ -809,7 +808,6 @@ Am Havelblick (Potsdam): Kopfsteinpflaster (ist das Kopfsteinpflaster mäßig oder
 Hammer: teilweise schlechtes Kopfsteinpflaster, Sandbanketten (ist hier mittlerweile asphaltiert?)	? 12243,52862 12212,52762 11994,52768 11747,52381
 Langenberg - Bansin: Asphalt (tatsächlich Asphalt oder nur ein Waldweg?)	? 55234,177013 55335,176921 55531,176625 55452,176481 55620,176402 55724,176149 55759,176100
 Kachlin - Dargen: guter Asphalt mit einigen schadhaften Stellen (nur gesehen, nicht befahren)	? 52553,166779 52425,166396
-Heideweg (Hennigsdorf): Asphalt (ist hier tatsächlich auch asphaltiert?)	? -3738,26172 -4121,26209
 Groß-Dölln - Joachimsthal: wahrscheinlich Waldweg, bei Joachimsthal Kopfsteinpflaster (nur der westliche Anfang ist bekannt)	? 22068,65681 22262,65687 22687,66025 23087,66087 23962,66462 24450,66575 24550,66987 24825,67112 25250,67187 25275,67412 26100,67825 26200,67787 26362,67300 26350,66737 26400,66325 26487,66100 27037,65962 27412,65812 28525,65800 30625,65012 31437,64500 32137,64362 32406,64340
 Gellmersdorf - Stolpe: unpassierbar (Wie ist die Fahrbahnbeschaffenheit hier (asphaltiert, betoniert, gepflastert?)?)	? 54723,63351 54792,63449 55206,63724 56207,64191 56486,64276 56714,64513 57072,64731 57459,64495 57546,64540
 Trebenow - Bandelow: überwiegend Asphalt, einige Betonabschnitte (Ist die Straße nach den Bauarbeiten vollständig asphaltiert?)	? 38662,115923 38720,115773 39259,115457 39384,115027 39168,114713 38881,113150 38762,112839
@@ -853,6 +851,7 @@ Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt (Sind die Bauarbeiten
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
 Lindenallee (Ist die Einbahnstraße mittlerweile für Radfahrer offen?)	? 1429,11528 1403,11428
+Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten (Sind die Bauarbeiten beendet?)	? 17161,9921 17257,9869
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten (Ist die Straße noch wegen Bauarbeiten gesperrt?)	? -7476,-4673 -7353,-4785
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
@@ -876,6 +875,8 @@ F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 Marianne-Foerster-Str.: zurzeit Baustraße, wie wird die Qualität nach der Fertigstellung sein? (Sind die Straßen fertiggestellt?)	? 12257,18649 12381,18897
 Beate-Hahn-Str.: zurzeit Baustraße, wie wird die Qualität nach der Fertigstellung sein? (Sind die Straßen fertiggestellt?)	? 12363,18596 12481,18838
 # added from bbbike-temp-blockings-optimized
+Lynarstr.: wegen Bauarbeiten gesperrt, mindestens bis Mitte November 2024 (Ist der Straßenabschnitt zwischen Tegeler Str. und Sparrstr. weiterhin gesperrt?)	? 7259,14870 7409,14954
+Gleiwitzer Str.: Bauarbeiten, Abschnitt der Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, voraussichtlich bis Mitte November 2024, vielleich wird wieder verlängert [Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.] (Sind die Bauarbeiten in der Gleiwitzer Str. beendet?)	? 20947,9999 21146,9988
 Weverpromenade/Stadtpark Steglitz: Bauarbeiten, mögliche Sperrungen, vom 08.07.2024 bis voraussichtlich Mitte Oktober 2024, evtl. wird verlängert [Weverpromenade] (Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden?)	? 5787,4400 5738,4361 5721,4356
 Weverpromenade/Stadtpark Steglitz: Bauarbeiten, mögliche Sperrungen, vom 08.07.2024 bis voraussichtlich Mitte Oktober 2024, evtl. wird verlängert [Stadtpark Steglitz] (Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden?)	? 5836,4469 5787,4400
 Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem IV. Quartal 2024 (Haben die Bauarbeiten bereits begonnen?)	? 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534

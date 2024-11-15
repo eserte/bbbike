@@ -3149,25 +3149,7 @@ Stillerzeile: Einbahnstraße	q4::inwork; 25015,5751 24977,5880 24798,5891 24629,5
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
-# REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
-#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024) (inaktiv)
-#: source_id: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
-#: source_id: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
-#: source_id: viz2021:13.35879,52.53996,02.07.2024,07:00 (bis 14.11.2024) (inaktiv)
-# REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
-	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
-# REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
-Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
-Kiautschoustr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 7007,14911 7182,14986
-',
-         'from' => 1719810000,
-         'id' => 2430,
-         'text' => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis voraussichtlich 15.11.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1731686400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3318,7 +3300,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-14 vvv
+#: last_checked: 2024-11-15 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-18 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
@@ -4412,11 +4394,11 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
 #: last_checked: 2024-10-24
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="35"
-#: osm_watch: way id="580507889" version="30"
+#: osm_watch: way id="31525573" version="37"
+#: osm_watch: way id="580507889" version="31"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird nicht mehr wiederholt
-#: last_checked: 2024-11-04 (mapillary)
+#: last_checked: 2024-11-14 (osm)
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 #: osm_watch: way id="4549817" version="29"
@@ -4543,7 +4525,7 @@ Bäkepark	2::inwork 5131,4207 5161,4206 5239,4175 5282,4145
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: next_check: 2024-11-15 vvv
 	q3::inwork 7259,14870 7409,14954
-#: source_id: viz2021:13.36175,52.541,04.11.2024,07:00 (bis 15.11.2024)
+#: source_id: viz2021:13.36175,52.541,04.11.2024,07:00 (bis 15.11.2024) (inaktiv)
 Lynarstr. zwischen Sparrplatz und Müllerstr.	q3::inwork 7409,14954 7461,14986 7624,15083 7694,15125 7745,15160
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5841,7 +5823,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 # REMOVED (offen) --- #: XXX teilweise Freigabe am 3.6.2024 (voraussichtlich!) --- #: next_check: 2024-06-03 ---	q4::inwork 13996,16959 13974,16924 13870,16837
-#: osm_watch: way id="1316908799" version="1"
+#: osm_watch: way id="1316908799" version="2"
 # REMOVED (hier nicht mehr) ---	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
 #: osm_watch: way id="42990078" version="29"
@@ -6289,14 +6271,14 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
        undef,
        undef,
        {
-         'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen
-#: note: 2023 waren Bauzäune noch am 2024-01-05 (!) da
+         'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen, und die Bauzäune waren noch am 2024-01-05 (!) da
+#: note: 2024 hat die Sperrung vor dem 2023-11-15 angefangen ...
 #: by: https://www.weihnachten-an-der-spree.de/
 #: osm_watch: node id="11346915244" version="2"
-	2::xmas 13558,10704 13531,10673 13326,10765
-	2::xmas 13527,10660 13531,10673
+# REMOVED (2024 hier nicht gesperrt) ---	2::xmas 13558,10704 13531,10673 13527,10660
+	2::xmas 13531,10673 13326,10765
 ',
-         'from' => 1731798000,
+         'from' => 1731538800,
          'id' => 3695,
          'periodic' => 1,
          'recurrences' => [
@@ -6902,11 +6884,13 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
 #: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_238442
-#: source_id: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum)
-#: source_id: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum)
-#: source_id: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum)
+#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt)
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt)
+#: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt)
+#: source_id: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
 #: osm_watch: way id="198589911" version="23"
 # REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
@@ -7198,7 +7182,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-11-11 vvv
+#: last_checked: 2024-11-15 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -7623,18 +7607,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.465597,52.498805,23.04.2024,05:00 (nur Kfz-Verkehr, bis 25.04.2024) (inaktiv)
-# REMOVED (alter Eintrag) --- #: note: Umleitungsstrecke für Radfahrer via Corinthstr., Bödikerstr., Persiusstr. existiert
-#: source_id: viz2021:13.464968,52.497948,14.11.2024,06:00 (bis 15.11.2024)
-	q4::inwork 14641,10552 14608,10409
-',
-         'from' => 1731474000,
-         'id' => 4046,
-         'text' => 'Markgrafendamm: Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 14.11.2024 06:00 bis 15.11.2024 18:00',
-         'type' => 'gesperrt',
-         'until' => 1731690000
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
@@ -7916,7 +7889,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-11-12 vvv
+#: last_checked: 2024-11-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8138,8 +8111,8 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => undef
        },
        {
-         'data' => '#: osm_watch: way id="27457006" version="19"
-#: last_checked: 2024-10-18 (osm)
+         'data' => '#: osm_watch: way id="27457006" version="20"
+#: last_checked: 2024-11-14 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -8422,7 +8395,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: last_checked: 2024-11-12
+#: last_checked: 2024-11-15
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
@@ -8468,19 +8441,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.373896,52.597683,05.10.2024,07:00 (bis 15.11.2024) (inaktiv)
-#: source_id: viz2021:13.371871,52.599415,05.10.2024,07:00 (bis 15.11.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1842430012634415528
-#: by: https://pbs.twimg.com/media/GZCpzOgWsAAxSzf?format=jpg&name=medium
-Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21499
-',
-         'from' => 1728018000,
-         'id' => 4183,
-         'text' => 'Quickborner Str.: zwischen Wilhelmsruher Damm und Uhlandstr. Bauarbeiten, Fahrbahn im Bereich der Gleisschleife gesperrt, vom 05.10.2024 07:00 bis 15.11.2024 23:59',
-         'type' => 'handicap',
-         'until' => 1731711540
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
@@ -8523,7 +8484,7 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
 #: source_id: bvg2024:147#HIM_FREETEXT_242095
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-11-11
+#: last_checked: 2024-11-15
 #: check_frequency: 14d
 #: next_check: 2024-11-26
 Fischerinsel	q4::inwork; 10578,11969 10512,12039
@@ -8772,8 +8733,8 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/breite-stra%C3%9Fe-scharrenstra%C3%9Fe-fischerinsel-petriplatz-neubauten.1078/#post-24088
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2024-11-11
-#: check_frequency: 21d
+#: last_checked: 2024-11-15
+#: check_frequency: 30d
 	2::inwork 10383,12191 10289,12106
 ',
          'from' => undef,
@@ -8793,7 +8754,8 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'until' => 1732294800
        },
        {
-         'data' => '#: source_id: viz2021:13.298976,52.504217,11.11.2024,07:00 (bis 30.12.2024)
+         'data' => '#: next_check_id: ROENNE-2024
+#: source_id: viz2021:13.298976,52.504217,11.11.2024,07:00 (bis 30.12.2024)
 	q4::inwork 3041,10732 3295,10831 3291,10853
 ',
          'from' => 1731218400,
