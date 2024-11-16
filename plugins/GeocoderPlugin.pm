@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.14;
+$VERSION = 3.15;
 
 BEGIN {
     if (!eval '
@@ -44,7 +44,10 @@ if (0) {
     $main::devel_host = $main::devel_host;
     $main::advanced = $main::advanced;
     $main::use_obsolete = $main::use_obsolete;
+    $Tk::platform = $Tk::platform;
 }
+
+my $can_choicescmd;
 
 # None of the available Google geocoders are usable without an API
 # key, and only Geo::Coder::Google is at all available to
@@ -92,8 +95,6 @@ sub destroy_geocoder_dialog {
 
 
 sub geocoder_dialog {
-    require Tk::PathEntry;
-
     destroy_geocoder_dialog();
     $geocoder_toplevel = $main::top->Toplevel(-title => "Geocode");
     $geocoder_toplevel->transient($main::top) if $main::transient;
@@ -104,9 +105,19 @@ sub geocoder_dialog {
     {
 	my $f = $geocoder_toplevel->Frame->pack(-anchor => 'w');
 
+	if ($Tk::platform eq 'MSWin32') {
+	    # the Tk::PathEntry hack cannot be used on Windows
+	    $e = $f->Entry(-textvariable => \$street);
+	    $can_choicescmd = 0;
+	} else {
+	    require Tk::PathEntry;
+	    $e = $f->PathEntry(-textvariable => \$street, -choicescmd => sub {}, -pathcompl => '<Control-Shift-Tab>');
+	    $can_choicescmd = 1;
+	}
+
 	Tk::grid(
 		 $f->Label(-text => 'Street:'),
-		 ($e = $f->PathEntry(-textvariable => \$street, -choicescmd => sub {}, -pathcompl => '<Control-Shift-Tab>')),
+		 $e,
 		 -sticky => 'w',
 		);
 	$e->focus;
@@ -357,12 +368,16 @@ sub geocoder_dialog {
 	my $gc = $apis{$geocoder_api};
 	if ($gc->{suggest}) {
 	    $do_geocoder_init->($gc);
-	    $e->configure(-choicescmd => sub {
-			      my(undef, $text) = @_;
-			      [ $do_suggest->($gc, $text) ];
-			  });
+	    if ($can_choicescmd) {
+		$e->configure(-choicescmd => sub {
+				  my(undef, $text) = @_;
+				  [ $do_suggest->($gc, $text) ];
+			      });
+	    }
 	} else {
-	    $e->configure(-choicescmd => sub {});
+	    if ($can_choicescmd) {
+		$e->configure(-choicescmd => sub {});
+	    }
 	}
     };
 
