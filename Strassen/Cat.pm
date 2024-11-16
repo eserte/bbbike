@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2013,2014,2016,2017,2020,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013,2014,2016,2017,2020,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '2.06';
+$VERSION = '2.07';
 
 use File::Basename qw(basename);
 
@@ -46,11 +46,11 @@ my %versioned_file_to_cat;
 			    );
 
     my @gesperrt_3_16 = (
-			 sub { /^(1|2)(?:::?(?:inwork|temp|igndisp|ignrte))?$/ }, # XXX both ":" and "::" needs to be allowed here :-(
+			 sub { /^(1|2)(?:::?(?:inwork|temp|igndisp|ignrte))?$/ }, # XXX both ":" and "::" needs to be allowed here :-( # XXX it seems that igndisp and possibly ignrte only supported in 3.17 and later (also the other ones below)
 			 sub { /^(3|3nocross)(?:::?(?:inwork|temp|igndisp|ignrte))*$/ }, # XXX both ":" and "::" needs to be allowed here :-(
 			 sub { /^0:\d+(:-?\d+)?$/ },
 			 sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },
-			 sub { /^1s(:q\d)?(:(?:inwork|temp))?$/ },
+			 sub { /^1s(:q\d)?(?:::?(?:inwork|temp|igndisp|ignrte))?$/ }, # XXX both ":" and "::" needs to be allowed here :-(
 			);
     my @gesperrt_3_19_add = (
 			     sub { /^2s(:q\d)?(:(?:inwork|temp))?$/ },
