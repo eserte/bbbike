@@ -2239,12 +2239,10 @@ asphaltierter Radweg	RW1; 11226,12945 11141,12806
 #: note: kein Radweg, allerdings kann man die parallel führende Parkplatzstraße benutzen
 	RW0; 9268,11590 9058,11564
 Verbundsteinpflaster	RW1;RW1 9935,11067 10103,10989
-Gehweg für Radfahrer frei	RW1; 15261,10738 15307,10701
-#: note: außerdem existiert hier eine asphaltierte Nebenfahrbahn
-Gehweg für Radfahrer frei	RW1; 15307,10701 15372,10655 15404,10633 15639,10469
-Gehweg für Radfahrer frei	RW1; 15639,10469 15404,10633 15372,10655 15307,10701
+Gehweg für Radfahrer frei	RW1; 15261,10738 15307,10701 15372,10655 15404,10633 15639,10469
+Gehweg für Radfahrer frei	RW1; 15639,10469 15404,10633 15372,10655 15308,10704
 #: note: frühere Benutzungspflicht wurde aufgehoben, aber eine Radfahrampel existiert noch immer
-Gehweg für Radfahrer frei	RW1; 15307,10701 15261,10738
+Gehweg für Radfahrer frei	RW1; 15308,10704 15261,10738
 Gehweg für Radfahrer frei	RW1; 15639,10469 15831,10329
 gemeinsamer Rad- und Gehweg	RW2; 16004,10204 15831,10329 15639,10469
 Gehweg für Radfahrer frei	RW1; 15831,10329 16004,10204
@@ -2277,7 +2275,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2024-11-06 vvv
+#: last_checked: 2024-11-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565

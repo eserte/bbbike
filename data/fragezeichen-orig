@@ -1892,6 +1892,8 @@ Seegefelder Str.: aus dem Radweg werden Radstreifen	?::projected -3842,14171 -36
 #: by: http://www.abendblatt-berlin.de/2019/03/23/spandau-heerstrasse-erhaelt-neuen-radweg/ (2020, Südseite)
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/stop-and-go-auf-der-heerstrasse_a207868 (2020, Südseite)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/endversion-protokoll-18-06-20.pdf
+#: osm_watch: way id="914162671" version="7"
+#: osm_watch: way id="914162675" version="12"
 #: last_checked: 2024-07-13 (mapillary)
 #: check_frequency: 120d
 Heerstr.: Verbesserung des Radwegs geplant? ("neuer breiterer Gehweg")	?::projected -3692,11681 -3404,11589
@@ -3484,6 +3486,7 @@ Poelchaustr./Langhoffstr.: Zebrastreifen geplant	?::projected 19807,14492 19817,
 #: last_checked: 2024-09-08
 #: check_frequency: 120d
 Havemannstr./Flämingstr.: Zebrastreifen geplant (entsteht hier noch ein weiterer auf der Havemannstr., oder einer auf der Flämingstr.?)	?::projected 21427,18452 21446,18405 21399,18406
+#: osm_watch: node id="8337378494" version="6"
 #: last_checked: 2024-07-13
 #: check_frequency: 120d
 Burgfrauenstr./Fischgrundbrücke: Zebrastreifen geplant (entsteht hier noch ein weiterer auf der anderen Seite?)	?::projected 2645,24776 2690,24751 2684,24799
@@ -3697,6 +3700,8 @@ Chemnitzer Str.: Verlegung der Straße, Radwege	?::projected  22436,11054 22483,1
 # REMOVED (hier Gehwegbereich, wohl keine Bauarbeiten) --- Schmitzweg: Neubau, danach bessere Qualität?	?::projected 5983,19974 5885,19920
 # REMOVED (fertig) --- Schmitzweg: Neubau, danach bessere Qualität?	?::inwork 5885,19920 5803,19874 5742,19840
 # REMOVED (hier fertig) --- Schmitzweg: Neubau, danach bessere Qualität?	?::projected 5742,19840 5731,19824 5823,19544
+#: osm_watch: note 4203058 2
+#: osm_watch: way id="4675279" version="14"
 Heiligental: Neubau, danach vermutlich bessere Qualität, evtl. auch verkehrsberuhigt	?::inwork 5929,19574 5897,19668 5858,19761 5803,19874
 # REMOVED (fertig laut Pressemeldung) --- Brodersenstr.: Neubau, danach vermutlich durchgängig Verbundsteinpflaster	?::inwork 6033,19611 5885,19920
 # REMOVED (hier außerhalb des Baubereichs) --- Brodersenstr.: Neubau, danach vermutlich durchgängig Verbundsteinpflaster	?::inwork 5885,19920 5804,20047
@@ -5921,26 +5926,6 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 # 
 # REMOVED (weitgehend fertiggestellt, aber noch nicht freigegeben) --- #: next_check_id: KARLSHORSTER-2021 --- #: by: http://www.infravelo.de/projekt/karlshorster-strasse/ (baulich getrennte Radwege, 2. Quartal 2021 - 3. Quartal 2021) (alter Eintrag) (mittlerweile wieder aktiv, bis 2. Quartal 2022) --- #: by: http://www.infravelo.de/projekt/karlshorster-strasse-2/ (bis 3. Quartal 2021) (mittlerweile inaktiv) --- #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/radweg-auf-der-marktstrasse-noetig_a297893 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1056475.php (Bauarbeiten 2. März 2021 (westliche Seite) -  Juni 2021 (östliche Seite) - Ende September 2021) --- #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/gehweg-und-radweg-im-bau_a302442 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erwähnung, bis 3. Quartal 2021) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8708 --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8708&date=20220115 (Radfahrstreifen bis zur Kynaststr.?) --- #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/arbeiten-an-der-karlshorster-strasse-dauern-bis-juni_a341192 (bis 20.6.2022) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung) --- #: XXX während der Bauarbeiten Einbahnstraßenregelung --- was wird das für den Radverkehr bedeuten? -> siehe temp blockings --- #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv) --- #: last_checked: 2022-05-07 --- #: check_frequency: 21d --- #: next_check: 2022-06-20 --- Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
 # 
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8958 (Antrag auf Tempo 30)
-#: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/tempo-30-auf-der-hauptstrasse_a322367
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10156 (Antrag für RVA)
-#: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (inaktiv)
-#: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (inaktiv)
-#: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (inaktiv)
-#: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen für Bauarbeiten) (inaktiv)
-#: source_id: viz2021:13.475605,52.501281,10.11.2021,13:00 (Leitungsarbeiten bis 17.12.2021) (inaktiv)
-#: source_id: viz2021:13.486546,52.496468,15.11.2021,07:00 (Leitungsarbeiten bis 19.11.2021) (inaktiv)
-#: source_id: viz2021:13.475017,52.501547,29.04.2021,08:00 (Bauarbeiten bis 29.04.2022) (inaktiv)
-#: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022) (inaktiv)
-#: source_id: viz2021:13.475846,52.501257,25.04.2023,13:00 (Bauarbeiten bis 31.05.2023) (inaktiv)
-#: source_id: viz2021:13.48067,52.49917,20.10.2023,09:55 (Bauarbeiten bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
-#: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
-#: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
-#: last_checked: 2024-11-09
-#: check_frequency: 60d
-Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
-# 
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.buergerhaushalt-lichtenberg.de/vorschlag/ausbau-fahrradwege-fahrradstrassen-karlshorst (Stand Juni 2022: Fertigstellung voraussichtlich 2024/2025)
@@ -5950,7 +5935,7 @@ Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 1
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zum-start-der-herbstferien/ (Ehrlichstr., 23.10.-13.12.2024)
 #: source_id[closed]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id: bvg2024:21#HIM_FREETEXT_243332 (2024-11-11 - 2024-12-12)
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-16
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-10-23
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17736,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
@@ -6138,7 +6123,7 @@ Charlottenburger Chaussee: wird es hier auch eine Radwegsanierung geben?	? -772,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9776 (Beschlussempfehlung)
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/tempo-30-auf-der-lueckstrasse_a375677
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-16
 #: check_frequency: 180d
 Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
 # 
@@ -6148,13 +6133,13 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf (temporär für 3 Monate)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2024-11-13
+#: last_checked: 2024-11-16
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/an-der-landsberger-allee-kracht-es-im-bezirk-am-haeufigsten_a377796
 #: XXX In welcher Richtung (vermutlich Richtung Westen offen)? Wird die Einbahnstraße auch für Radfahrer gelten?
-#: last_checked: 2024-11-13
+#: last_checked: 2024-11-16
 #: check_frequency: 90d
 Hirschberger Str.: Planung einer Einbahnstraße	? 14988,11130 15021,11152 15056,11138 15102,11120
 # 
@@ -6162,14 +6147,45 @@ Hirschberger Str.: Planung einer Einbahnstraße	? 14988,11130 15021,11152 15056,1
 #: by: https://www.infravelo.de/projekt/hauptstrasse-ostkreuz/ (4. Quartal 2023 - 2. Quartal 2024) (4. Quartal 2023 - 4. Quartal 2024)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9548 (Erwähnung einer Fahrradstraße in der Nebenstraße der Hauptstr. (Umsetzung 2025), ggfs. später noch erweitert über An der Bucht bis zur Georg-Löwenstein-Str.)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8952
+# REMOVED --- #: XXX Sieht weitgehend fertig aus --- wann erfolgt die Freigabe? --- #: note: mittlerweile sind die Barrieren halb wegschoben, aber wegen der Bauzäune an der Einmündung Karlshorster Str./Hauptstr. müsste man trotzdem Umwege fahren
+#: last_checked: 2024-11-16
+# REMOVED --- #: check_frequency: 14d
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2024-12-31
 #: osm_watch: note 4247704 7
 #: osm_watch: way id="1286852473" version="7"
-#: XXX Sieht weitgehend fertig aus --- wann erfolgt die Freigabe?
-#: note: mittlerweile sind die Barrieren halb wegschoben, aber wegen der Bauzäune an der Einmündung Karlshorster Str./Hauptstr. müsste man trotzdem Umwege fahren
-#: last_checked: 2024-11-09
-#: check_frequency: 14d
-#: next_check: 2024-12-31
-(Hauptstr./Rummelsburger Ufer - Gustav-Tempel-Str.): ein asphaltierter Zweirichtungsradweg entsteht	?::inwork 15298,10682 15245,10719
+# REMOVED --- (Hauptstr./Rummelsburger Ufer - Gustav-Tempel-Str.): ein asphaltierter Zweirichtungsradweg entsteht	?::inwork 15298,10682 15245,10719
+#: osm_watch: way id="176050265" version="12"
+#: osm_watch: way id="1099807542" version="7"
+Hauptstr. [Nebenfahrbahn]: wird hier eine Fahrradstraße eingerichtet (wo genau?)? was passiert mit der Einbahnstraßenregelung?	? 15298,10682 15332,10657 15392,10615
+# 
+#: next_check_id: RUMMELSBURGERBUCHT-2021
+#: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/geschaeftsleute-beruecksichtigen_a428689
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10342 (Antrag)
+#: XXX Evtl. mit Anschluss an den vorbereiteten Radweg an der Gustav-Tempel-Str.
+#: last_checked: 2024-11-16
+#: check_frequency: 90d
+An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Bucht	? 15358,10562 15430,10508 15493,10460 15566,10411 15583,10399 15652,10348 15716,10303 15788,10252 15858,10202 15952,10134 16041,10072 16068,10051 16155,9992
+# 
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8958 (Antrag auf Tempo 30)
+#: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/tempo-30-auf-der-hauptstrasse_a322367
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10156 (Antrag für RVA)
+#: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (inaktiv)
+#: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (inaktiv)
+#: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (inaktiv)
+#: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen für Bauarbeiten) (inaktiv)
+#: source_id: viz2021:13.475605,52.501281,10.11.2021,13:00 (Leitungsarbeiten bis 17.12.2021) (inaktiv)
+#: source_id: viz2021:13.486546,52.496468,15.11.2021,07:00 (Leitungsarbeiten bis 19.11.2021) (inaktiv)
+#: source_id: viz2021:13.475017,52.501547,29.04.2021,08:00 (Bauarbeiten bis 29.04.2022) (inaktiv)
+#: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022) (inaktiv)
+#: source_id: viz2021:13.475846,52.501257,25.04.2023,13:00 (Bauarbeiten bis 31.05.2023) (inaktiv)
+#: source_id: viz2021:13.48067,52.49917,20.10.2023,09:55 (Bauarbeiten bis 31.12.2023) (inaktiv)
+#: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
+#: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
+#: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
+#: last_checked: 2024-11-16
+#: check_frequency: 60d
+Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
 # REMOVED (war schon eingetragen) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019) --- Falkenseer Chaussee: Radwegsanierung in Planung	?::projected; -4591,15496 -4710,15530
 # 
@@ -7629,7 +7645,7 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16093,-613 16173
 #: by: https://www.nd-aktuell.de/artikel/1173566.strassenbahn-kein-ende-beim-tram-ausbau-der-bvg-zum-berliner-ostkreuz.html
 #: by: https://www.nd-aktuell.de/artikel/1185212.oeffentlicher-nahverkehr-oepnv-in-berlin-baurecht-fuer-neue-tramlinie-ist-da.html (Inbetriebnahme Mitte 2026?)
 #: XXX mittlerweile wegen Hochbauarbeiten nebenan ein paar Meter gemeinsamer Geh- und Radweg am Ende der Ehrlichstr. (ist mittlerweile vorbei; war aber vermutlich nur für den Hochbau nebenan)
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-16
 #: check_frequency: 180d
 #: next_check: 2026-06-30
 Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird enger, neue Ampel am Kreuzungspunkt Ehrlichstr.	?::projected 17736,8850 17762,8855 17904,8924
@@ -8344,15 +8360,17 @@ Brodauer Str./ Adolfstr.: hier soll ein Zebrastreifen entstehen	? 22633,11787 22
 #: source_id: viz2021:13.30344,52.50987,22.04.2024,19:12 (Bauarbeiten in der Rückertstr., evtl. im Zusammenhang mit dem verkehrsberuhigten Bereich, bis 17.05.2024) (inaktiv)
 #: source_id: viz2021:13.30344,52.50987,17.05.2024,13:16 (Bauarbeiten in der Rückertstr., evtl. im Zusammenhang mit dem verkehrsberuhigten Bereich, bis 31.05.2024) (inaktiv)
 #: source_id: viz2021:13.30344,52.50987,27.05.2024,17:26 (Bauarbeiten in der Rückertstr., evtl. im Zusammenhang mit dem verkehrsberuhigten Bereich, bis 31.07.2024) (inaktiv)
-#: osm_watch: way id="1102937734" version="8"
-#: osm_watch: way id="821100848" version="12"
-#: osm_watch: way id="4475785" version="29"
 #: osm_watch: note 4087656 5
 #: last_checked: 2024-10-16 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-07-31 vvv
+#: osm_watch: way id="1102937734" version="8"
+#: osm_watch: way id="821100848" version="12"
+#: osm_watch: way id="4475785" version="29"
 Schillerstr.: verkehrsberuhigter Bereich wird erweitert	?::inwork 3988,11502 3864,11484 3717,11462 3571,11451 3522,11447
+#: osm_watch: way id="98996700" version="14"
 Sesenheimer Str.: verkehrsberuhigter Bereich ragt hier noch rein	?::inwork 3864,11484 3861,11508
+#: osm_watch: way id="24320477" version="17"
 Rückertstr.: verkehrsberuhigter Bereich ragt hier noch rein	?::inwork 3571,11451 3569,11473
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -8737,7 +8755,7 @@ Aalsteig (Potsdam-Grube): Qualität?	? -19509,4469 -19489,4471 -19449,4477
 #: osm_watch: way id="226916964" version="12" brb
 Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12988,-1265 -13078,-1250 -13089,-1313
 # 
-#: XXX_osm: fehlt bei osm
+#: XXX: laut osm asphaltiert & Spielstraße
 #: last_checked: 2013-05-10 (keine Anzeichen für Bautätigkeiten zu sehen)
 #: next_check: 2013-10-10
 Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -16046,1172 -16045,1316 -15924,1409
@@ -9275,16 +9293,17 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10006 (namensloser Platz soll den Namen "Malala-Yousafzai-Platz" erhalten -> negativ beschieden)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/parkstadt-karlshorst.257/page-2#post-22530
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-lichtenberg-in-bau/?postID=763705#post763705 (Fußgängerbereich bereits fertig? Benennung des Vorplatzes nach Malala Yousafzai)
-#: XXX alle hier aufgeführten Straßen fehlen noch bei Berlin.coords.data
-#: XXX Samuel-Lewin-Str. laut DPAG-Mitteilungsblatt und LOR PLZ=10318
-# REMOVED (404) --- #: also_indoor: webcam https://portal1961.webcam-profi.de/
-# REMOVED #: osm_watch: way id="428279379" version="18"
-#: last_checked: 2024-10-24 vvv
+#: last_checked: 2024-11-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-03-01 vvv
-#: XXX hier wird es einen asphaltierten West-Ost-Weg geben, evtl. mit Anschluss an den Traberweg?
-Parkanlage: genaue Lage? Wo werden die Wege sein?	?::inwork 17454,8747 17468,8722 17644,8719 17800,8689 17779,8603 17798,8598 17779,8509 17804,8503 17853,8731 17643,8769 17483,8768 17454,8747
+#: osm_watch: way id="1328997654" version="1"
+Parkanlage: genaue Lage? Name?	?::inwork 17454,8747 17468,8722 17644,8719 17800,8689 17779,8603 17798,8598 17779,8509 17804,8503 17853,8731 17643,8769 17483,8768 17454,8747
+#: XXX hier entsteht ein asphaltierter West-Ost-Weg, evtl. mit Anschluss an den Traberweg?
+Weg in der Parkstadt Karlshorst: östliche und westliche Anbindung? bleibt der Weg unbeleuchtet?	?::inwork 17474,8738 17674,8738 17810,8700
+# REMOVED (404) --- #: also_indoor: webcam https://portal1961.webcam-profi.de/
+# REMOVED --- #: osm_watch: way id="428279379" version="18"
 # REMOVED --- Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
+# REMOVED --- #: XXX alle hier aufgeführten Straßen fehlen noch bei Berlin.coords.data --- #: XXX Samuel-Lewin-Str. laut DPAG-Mitteilungsblatt und LOR PLZ=10318
 # REMOVED (aufgenommen) --- #: XXX dieser Abschnitt fehlt im Amtsblatt 52/2020 --- #: XXX laut LOR hat die Irmtraud-Morgner-Straße die PLZ=10318, bestätigt in DPAG-Mitteilungsblatt 03/2022 --- Planstraße C: genaue Lage, Qualität? geplanter Name: Irmtraud-Morgner-Str.	?::projected 17521,8549 17619,8558 17627,8556 --- Planstraße D: genaue Lage, Qualität? geplanter Name: Irmtraud-Morgner-Str.	?::projected 17755,8519 17627,8556
 # REMOVED (aufgenommen) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8882 (Benennung der Samuel-Lewin-Str.) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_24_2053_2104_online.pdf (Straßenbenennung: Samuel-Lewin-Str.) --- Planstraße D1: genaue Lage, Qualität? geplanter Name: Samuel-Lewin-Str.	?::projected 17792,8660 17773,8588 17755,8519 17738,8450
 # REMOVED --- #: XXX laut LOR und DPAG-Mitteilungsblatt PLZ=10318 --- Planstraße E: genaue Lage, Qualität? geplanter Name: Ruth-Baumgarte-Str.	?::projected 17794,8429 17738,8450 17682,8464 17608,8483
@@ -10207,6 +10226,7 @@ S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzb
 #: by: http://www.baustellen-doku.info/berlin_kremmener_bahn/zweiter_zugang_alt-reinickendorf/20230831/ (Herbst 2024)
 #: XXX Bauende laut Baustellenschild: 15.06.2023, mittlerweile Herbst 2024
 #: XXX exits-orig nach den Bauarbeiten anpassen
+#: osm_watch: note 4522038 1
 #: last_checked: 2024-08-24 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2024-11-01
@@ -11949,9 +11969,7 @@ Werbelow - Brietzig: Qualität? existiert eine Ausschilderung für die Berlin-Used
 Brietzig - Wilsikow: Qualität?	? 41855,119411 40856,120094 40697,120118 40015,120435 39844,120447 39686,120350
 Demnitz - Altwigshagen: Qualität?	? 35047,144242 35170,144280 35505,144226 35871,144207 35920,144152 36828,144640 36901,144823 37114,144939
 Barkhausenstr.: Qualität?	? -11630,16445 -11783,16506
-#: source_id: 246301471 (Deckenerneuerung bis 30.10.2024) (inaktiv)
-#: next_check: 2024-10-30
-K 6315 (B188-Nennhausen) zw. Nennhausen u. Kotzen: Qualität? (bis Ende 2005 bei der LBVS als "schlechte Straße" gekennzeichnet; evtl. ab Juni 2009 gut befahrbar)	? -50149,24689 -50048,24475 -49945,24243 -50123,23630 -50271,23531 -50389,22734 -51061,21342
+# REMOVED (sieht alles danach aus, dass hier asphaltiert ist) --- #: source_id: 246301471 (Deckenerneuerung bis 30.10.2024) (inaktiv) --- #: XXX laut osm asphaltiert und smoothness=excellent --- #: next_check: 2024-10-30 --- K 6315 (B188-Nennhausen) zw. Nennhausen u. Kotzen: Qualität? (bis Ende 2005 bei der LBVS als "schlechte Straße" gekennzeichnet; evtl. ab Juni 2009 gut befahrbar)	? -50149,24689 -50048,24475 -49945,24243 -50123,23630 -50271,23531 -50389,22734 -51061,21342
 Radweg Lychen - Himmelpfort: Qualität (Am Anfang bei Lychen noch asphaltiert)?	? 234,89271 213,89085 188,88982 80,88883 -15,88653 -133,88520 -334,88568 -902,88315 -1764,87733 -2399,87248 -2422,86944 -2709,86901 -3001,86675 -3291,86302
 L15 - Neuthymen: Qualität (zumindest am südlichen Ende asphaltiert)?	? -4847,88034 -5332,88826 -5429,89137 -5457,89570 -5493,89713
 Gartenstr. (Elstal): Qualität?	? -18164,14194 -18107,14301 -18017,14480 -17979,14574 -17937,14727 -17871,14855 -17821,14925 -17763,15004
@@ -12266,7 +12284,7 @@ Kirschallee - Rückertstr.: Qualität der Wege? Unbeleuchtet?	? -13944,1764 -14171
 Grenzallee - Birnenweg: Qualität des Wegs? Unbeleuchtet?	? -14100,2144 -14205,1864 -14288,1707 -14379,1551 -14349,1505
 Fritz-Encke-Str., Verlängerung: Qualität des Wegs? Unbeleuchtet?	? -14016,1563 -14288,1707
 # 
-#: XXX_osm: fehlt bei osm
+#: XXX: laut osm Verbundsteinpflaster und Spielstraße
 #: last_checked: 2013-05-10 (mögliche Straßenführung ab WPT, aber keine Bautätigkeit zu sehen)
 #: next_check: 2013-10-10
 Zum Weizenring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -16534,1625 -16545,1556 -16498,1444

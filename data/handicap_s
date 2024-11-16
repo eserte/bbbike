@@ -37,6 +37,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 
 Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg f¸r Radfahrer frei	q2; 17380,8858 17702,8855 17720,8854 17736,8850
 Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956
 Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,9934 17838,9956 17958,10012
+Sangeallee: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Engstelle	q3::inwork 18134,9080 18247,9158
 Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2::inwork; 10178,10411 10122,10294
 Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -2621,6 +2622,7 @@ Annastr.: einige Fuﬂg‰nger	q3 5920,2693 5930,2671
 (Zingster Str. - Am Berl): Straﬂenbahnwendeschleife, kreuzende Wohngebietsstraﬂen, einige Fuﬂg‰nger	q2 16371,18669 16401,18692 16445,18705 16504,18692
 (Zingster Str. - Am Berl): einige Fuﬂg‰nger	q2 16504,18692 16534,18689
 (Zingster Str. - Am Berl): Gr¸nanlage, einige Fuﬂg‰nger	q3 16534,18689 16607,18709 16656,18742
+(Hauptstr. [Nebenfahrbahn] - Vicki-Baum-Str.): Fuﬂg‰nger, niedrige Bordsteine	q2 15600,10465 15623,10449
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3452,6 +3454,7 @@ Virchowweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8595,1
 Steintr‰gerweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 12987,2220 13023,2093
 Harzburger Str. (Pankow), Klaustaler Str...: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 Rˆmerweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 19236,9710 19450,9728 19459,9842
+Hauptstr. (Richtungsfahrbahn): linker B¸rgersteig: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp::igndisp; 15307,10701 15261,10738
 Lˆtschbergstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 20161,11715 20150,11512
 Brodenbacher Weg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 15178,17134 14897,17093
 Hartmannsweilerweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 16,3744 41,3510 17,3471
@@ -3530,6 +3533,7 @@ Straﬂe 3: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 18816,19
 Hausvaterweg [Wohngebiet]: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 19789,18423 19704,18459
 Eilenburger Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 25743,15118 25752,15219 25578,15238
 Berthold-Schwarz-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -784,14940 -834,15053
+Hauptstr. (Rummelsburg) [Nebenfahrbahn]: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15332,10657 15298,10682
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829

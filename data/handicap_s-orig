@@ -644,9 +644,9 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00
 #: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024) (bis 22.11.2024)
 #: source_id: bvg2024:n40#HIM_FREETEXT_232184 (bis auf weiteres) (inaktiv, aber Sperrung dürfte weiterhin bestehen) (wieder aktiv)
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-16
 #: next_check: 2024-11-22
-#: valid: -20241122
+# REMOVED --- #: valid: -20241122
 Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17702,8855 17720,8854 17736,8850
 # 
 # REMOVED (weitgehend freigegeben; Überquerung der Treskowallee über Fußgängerfurt)
@@ -694,6 +694,12 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: note: Halteverbotsschilder bis 23.12.2024
+#: last_checked: 2024-11-16
+#: next_check: 2024-12-23
+#: valid: -20241223
+Sangeallee: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Engstelle	q3::inwork 18134,9080 18247,9158
 # 
 # REMOVED (laut mapillary weitgehend beendet) --- #: next_check_id: WALLENSTEIN-2020 --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-11-29 --- #: check_frequency: 10d --- # REMOVED --- #: next_check: 2020-11-16 --- # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
 # REMOVED (beendet, keine Besserung der Qualität) --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: XXX wird sich die Qualität des Asphalts nach den Bauarbeiten verbessern, zumindest in Richtung Nordwesten? --- #: last_checked: 2021-02-18 --- Wallensteinstr.: Bauarbeiten zwischen Sangeallee und Ilsestr., Einbahnstraßenregelung, Ausweichen auf engen Gehweg	q3::inwork; 18134,9080 18092,9141 18037,9195
@@ -1037,13 +1043,13 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="38"
 #: osm_watch: way id="1193560283" version="7"
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-16
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-16
 Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1402,6 +1408,8 @@ Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5
 #: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt) (inaktiv)
 #: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W) [alle falsch]
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: osm_watch: way id="4765039" version="25"
+#: osm_watch: note 4522036 1
 #: last_checked: 2024-10-02 (mapillary)
 # REMOVED --- #: next_check: 2024-09-20
 # REMOVED (hier fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450
@@ -5268,6 +5276,8 @@ Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
 (Zingster Str. - Am Berl): einige Fußgänger	q2 16504,18692 16534,18689
 #: note: Grünanlagenschild ohne Freigabe für Radfahrer
 (Zingster Str. - Am Berl): Grünanlage, einige Fußgänger	q3 16534,18689 16607,18709 16656,18742
+# 
+(Hauptstr. [Nebenfahrbahn] - Vicki-Baum-Str.): Fußgänger, niedrige Bordsteine	q2 15600,10465 15623,10449
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

@@ -155,6 +155,7 @@ Baerwaldstr.	1 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
 Baerwaldstr.	1 10480,9949 10405,9795 10361,9755
 Dittersbacher Weg	1 7855,3355 7852,3183
+Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
 Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 Kietzer Str.	1s 22372,4496 22383,4470
@@ -513,6 +514,10 @@ Karl-Liebknecht-Str. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11131,1345
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11841,13087 11913,13077 11958,13079 11984,13081
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 Mollstr. (Straßenbahntrasse)	3nocross::ignrte 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
+Hauptstr. (Richtungsfahrbahn)	1::igndisp 15372,10655 15307,10701
+Hauptstr. (Richtungsfahrbahn): linker Bürgersteig	1s::igndisp 15307,10701 15261,10738
+Hauptstr. (Richtungsfahrbahn)	1::igndisp 15261,10738 15308,10704 15372,10655
+Hauptstr. (Straßenbahntrasse)	3nocross::ignrte 15261,10738 15308,10704 15372,10655
 Yorckstr.	1::igndisp 8192,9619 8358,9568 8595,9495
 Yorckstr.	1::igndisp 8595,9495 8358,9567 8192,9619
 Yorckstr. (Geländer)	3nocross::ignrte 8595,9495 8358,9568 8192,9619
@@ -1023,6 +1028,7 @@ Gartenfelder Str. -> Faucherweg: durchgezogene Linie	3::igndisp -1258,14846 -129
 Faucherweg -> Gartenfelder Str.: durchgezogene Linie	3::igndisp -1282,14789 -1299,14797 -1336,14786
 Berthold-Schwarz-Str.	1s -784,14940 -834,15053
 Adlergestell [Sonnenallee - Neltestraße]	1:igndisp 19486,3934 19367,4061 19348,4080
+Hauptstr. (Rummelsburg) [Nebenfahrbahn]	1s 15332,10657 15298,10682
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172

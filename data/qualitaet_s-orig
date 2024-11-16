@@ -58,6 +58,9 @@ Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14671
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14680,10837 14717,10855 14810,10832 14904,10812
 # REMOVED --- #: next_check_id: HAUPTSTR-2015 vvv --- #: XXX nach den Bauarbeiten vermutlich asphaltiert mit Radwegen oder -spuren vvv --- #: source_id: 2147339565 vvv --- #: last_checked: 2016-08-25 vvv --- #: next_check: 2016-08-29 vvv
 Hauptstr.: Asphalt	Q0 14904,10812 14927,10807 15004,10791 15081,10775 15163,10758 15261,10738
+Hauptstr. (Rummelsburg) [parallel zur Emma-Ihrer-Str.]: Asphalt	Q0 15538,10368 15566,10411 15600,10465
+Hauptstr. (Rummelsburg) [Nebenfahrbahn]: Asphalt	Q0 15298,10682 15332,10657 15392,10615 15600,10465
+(Hauptstr. - Gustav-Tempel-Str.): Asphalt	Q0 15298,10682 15245,10719
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
@@ -302,7 +305,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-10-11
+#: last_checked: 2024-11-16
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -2337,7 +2340,7 @@ Caroline-Tübbecke-Ufer: Parkweg	Q1 15000,9820 15043,9790 15367,9691
 (Alt-Stralau - Spreeufer): Parkweg	Q1 15031,9876 15000,9820
 # REMOVED --- Tunnelstr. - Bartholomäusufer: Parkweg	Q1 15502,9693
 Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 15453,10419
-(Rummelsburger Ufer - Emma-Ihrer-Str.): glatt gepflastert	Q0 15453,10419 15550,10361
+(Rummelsburger Ufer - Emma-Ihrer-Str.): glatt gepflastert	Q0 15453,10419 15538,10368 15556,10357
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8907 (wird neu gepflastert, weiterhin kein Radweg; Entwurfsplanung ist abgeschlossen (Januar 2022))
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/wegesanierung-angeschoben_a330248
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9520 (Anfrage)
@@ -3281,7 +3284,7 @@ Hahnebergweg: Schotter	Q2 -7294,12560 -7375,12577 -7606,12624
 #: confirmed_by: srt
 Kurze Str.: asphaltiert	Q0 11534,16622 11535,16498
 Kurze Str.: Kopfsteinpflaster	Q2- 11535,16498 11542,16384
-An der Bucht: Asphalt	Q0 15358,10562 15430,10508 15493,10460 15583,10399 15652,10348 15716,10303 15788,10252 15858,10202 15952,10134
+An der Bucht: Asphalt	Q0 15358,10562 15430,10508 15493,10460 15566,10411 15583,10399 15652,10348 15716,10303 15788,10252 15858,10202 15952,10134
 An den Knabenhäusern: Verbundsteinpflaster	Q1+ 15513,10298 15578,10250 15621,10217 15643,10201 15711,10149
 Lina-Morgenstern-Str.: Asphalt	Q0 15643,10201 15716,10303 15753,10353
 Vicki-Baum-Str.: Asphalt	Q0 15990,10185 15894,10251 15823,10300 15753,10353 15688,10400 15633,10442
@@ -9234,6 +9237,7 @@ Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6453 (Empfehlung zu Verbesserungen in der BVV 2020-06-18 beschlossen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7213 (Antrag: Asphaltierung des westlich weiterführenden Weges)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7231 (Antrag für die Unterquerung, Juni 2022 gestellt)
+#: osm_watch: way id="127080608" version="7"
 #: XXX siehe auch Maßnahme Gr.9; außerdem soll die Straße "Am Kanal" asphaltiert werden -> letzteres ist realisiert
 #: note: jemand hat hier Teppiche ausgelegt, um die Lage etwas zu lindern (gesehen: 2018-05-06, 2019-01-02, 2019-10-19, 2020-11-28, 2021-04-24, 2022-06-06, 2022-10-05)
 #: last_checked: 2024-05-15
@@ -12673,6 +12677,7 @@ Sacrower Landstr.: Asphalt	Q0 -8825,3783 -8781,3779 -8684,3752
 # 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477879.php
 #: XXX Ist nach den Bauarbeiten die gesamte Fahrbahn asphaltiert?
+#: osm_watch: way id="48230551" version="15"
 #: next_check: 2024-09-29
 Pfaueninselchaussee: Beton	Q0 -8468,2152 -8422,2155 -8284,2156 -8106,2034 -7866,1862 -7640,1837 -7443,1915 -7304,1970 -7165,1978 -6999,1933
 Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -6577,1395 -6492,1204 -6442,1150
@@ -19794,7 +19799,7 @@ Dammsmühler Str.: asphaltiert	Q0 10140,21107 9897,21035 9620,20952
 # 
 #: by: Mike Förster:
 #: confirmed_by: srt
-Emma-Ihrer-Str.: asphaltiert	Q0 15496,10277 15513,10298 15550,10361 15583,10399 15623,10449 15639,10469
+Emma-Ihrer-Str.: asphaltiert	Q0 15496,10277 15513,10298 15556,10357 15583,10399 15623,10449 15639,10469
 # 
 #: by: jörg (schalkau):
 Schalkauer Str.: guter Asphalt	Q0 17475,14912 17507,14693 17517,14606 17526,14531 17533,14484
@@ -30827,6 +30832,7 @@ Wilhelmstr. [Parallelstraße] (Wilhelmstadt): Kopfsteinpflaster	Q2 -3976,12860 -3
 Götelstr.: Kopfsteinpflaster	Q2- -3301,12864 -3275,12769 -3259,12580
 #: confirmed_by: srt vvv
 #: next_check_id: GOETEL-2023
+#: osm_watch: note 4441807 1
 #: last_checked: 2024-09-18 vvv
 #: check_frequency: 30d vvv
 #: historical_note: früher Richtung Norden Kopfsteinpflaster/Asphalt, Richtung Süden Asphalt
@@ -31644,7 +31650,7 @@ Johannes-Zoschke-Str.: mäßiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/ausbau-der-rheinpfalzallee-auf-der-kippe_a387334 (Baubeginn 2025?)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/ausbau-der-rheinpfalzallee-sollte-laut-spd-dringend-in-die-investitionsplanung_a391367
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
-#: last_checked: 2024-11-04 (mapillary) vvv
+#: last_checked: 2024-11-16 vvv
 #: next_check: 2025-03-01 vvv
 #: confirmed_by: srt
 Rheinpfalzallee: Sandweg	Q2+ 18865,9608 18931,9629

@@ -162,7 +162,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2024-11-09 vvv
+#: last_checked: 2024-11-16 vvv
 #: next_check: 2026-12-31 vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -280,14 +280,18 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: by: https://www.nalepaland.de/
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
-#: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17), aber das südliche Tor ist immer zu -> mittlerweile ist nur das südliche Tor als gesperrt markiert
+#: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17), aber nicht immer (gesehen 2024-11-16 Sat); das südliche Tor ist immer zu
 #: osm_watch: way id="207757723" version="6"
 #: osm_watch: way id="275795707" version="3"
 #: osm_watch: node id="2804650438" version="3"
-#: last_checked: 2024-08-17
-#: check_frequency: 90d
-# REMOVED --- Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159
+#: last_checked: 2024-11-16 vvv
+#: check_frequency: 90d vvv
+#: note: kann offen sein, aber nicht immer
+Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
+#: note: dauerhaft gesperrt
 Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 Kietzer Str.	1s:q3 22372,4496 22383,4470
@@ -296,7 +300,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-16
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -872,6 +876,13 @@ Karl-Liebknecht-Str. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11131,1345
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11841,13087 11913,13077 11958,13079 11984,13081
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 Mollstr. (Straßenbahntrasse)	3nocross::ignrte 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
+#: note ^^^
+# 
+#: note: Straßenbahntrasse vvv
+Hauptstr. (Richtungsfahrbahn)	1::igndisp 15372,10655 15307,10701
+Hauptstr. (Richtungsfahrbahn): linker Bürgersteig	1s:q4::igndisp 15307,10701 15261,10738
+Hauptstr. (Richtungsfahrbahn)	1::igndisp 15261,10738 15308,10704 15372,10655
+Hauptstr. (Straßenbahntrasse)	3nocross::ignrte 15261,10738 15308,10704 15372,10655
 #: note ^^^
 # 
 #: note: Absperrgitter vvv
@@ -1676,6 +1687,8 @@ Berthold-Schwarz-Str.	1s:q4 -784,14940 -834,15053
 # 
 #: note: (noch?) nicht explizit als Einbahnstraße gekennzeichnet, ist aber vermutlich nur für Radfahrer aus der Sonnenallee oder zur Neltestraße gedacht
 Adlergestell [Sonnenallee - Neltestraße]	1:igndisp 19486,3934 19367,4061 19348,4080
+# 
+Hauptstr. (Rummelsburg) [Nebenfahrbahn]	1s:q4 15332,10657 15298,10682
 # 
 #: section ^^^
 ######################################################################
@@ -3883,8 +3896,8 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: last_checked ^^^
 # 
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-24
-#: check_frequency: 21d
+#: last_checked: 2024-11-16
+#: check_frequency: 30d
 Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898
@@ -3950,7 +3963,7 @@ Fuß- und Radwegbrücke: noch nicht freigegeben	2::inwork 19162,3935 19268,4037 19
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-marzahn-hellersdorf.42/page-7#post-23307
-#: osm_watch: way id="1306238147" version="1"
+#: osm_watch: way id="1306238147" version="2"
 #: osm_watch: way id="25795669" version="13"
 #: last_checked: 2024-11-09
 #: check_frequency: 120d
@@ -4179,7 +4192,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="27"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-16
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4273,7 +4286,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024)
 #: priority: #C
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-16
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4510,7 +4523,7 @@ Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10456 (Vorlage zur Kenntnisnahme)
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-16
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -4619,7 +4632,7 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: last_checked: 2024-10-24
 #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
-#: last_checked: 2024-10-11
+#: last_checked: 2024-11-16
 Georg-Klingenberg-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17792,8660 17846,8644
 #: last_checked: 2024-10-11
 Ruth-Baumgarte-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17738,8450 17794,8429
@@ -4644,7 +4657,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-16
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -4733,7 +4746,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="1171090939" version="4"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-16
 #: check_frequency: 180d
 #: next_check: 2025-12-31
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613

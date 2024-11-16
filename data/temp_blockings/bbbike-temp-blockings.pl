@@ -28881,7 +28881,8 @@ EOF
        until => undef, # $isodate2epoch->("2024-09-27 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
 #       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer möglicherweise verboten (außer Anlieger); außerdem Einbahnstraßenregelung in der Andernacher Str.; Bauarbeiten bis Ende 2025',
 #       text  => 'Treskowallee: Fahrbahn Richtung Süden ab Hönower Str. neu asphaltiert, aber u.U. noch nicht offiziell freigegeben; außerdem Einbahnstraßenregelung in der Andernacher Str.',
-       text  => 'Treskowallee: Richtung Süden für Radfahrer verboten (Anlieger frei); Richtung Norden Gehweg mit Verschwenkungen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; außerdem Einbahnstraßenregelung in der Andernacher Str.; Bauarbeiten bis Ende 2025',
+#       text  => 'Treskowallee: Richtung Süden für Radfahrer verboten (Anlieger frei); Richtung Norden Gehweg mit Verschwenkungen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; außerdem Einbahnstraßenregelung in der Andernacher Str.; Bauarbeiten bis Ende 2025',
+       text  => 'Treskowallee: Richtung Süden für Radfahrer verboten (Anlieger frei); Richtung Norden Gehweg mit Verschwenkungen und Bordsteinen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; Bauarbeiten bis Ende 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2023
@@ -28922,25 +28923,22 @@ EOF
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
 #: osm_watch[closed]: note 3658253 6
-#: osm_watch: way id="192487145" version="31"
+#: osm_watch: way id="192487145" version="32"
 #: osm_watch: note 4481312 6
-#: check_frequency: 7d vvv
+#: check_frequency: 30d vvv
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-16
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="37"
 #: osm_watch: way id="580507889" version="31"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird nicht mehr wiederholt
-#: last_checked: 2024-11-14 (osm)
+#: last_checked: 2024-11-16
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
-#: osm_watch: way id="4549817" version="29"
-#: last_checked: 2024-10-19
-#: check_frequency: 14d
-Andernacher Str.	q3::inwork; 19000,8509 18949,8437
+# REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check ^^^
 #: check_frequency ^^^
 EOF
@@ -41074,7 +41072,7 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
 # REMOVED --- #: note: es existieren zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
 #: priority: #B
-# REMOVED --- #: last_checked: 2024-09-15
+#: last_checked: 2024-11-16
 #: next_check: 2024-11-18
 #	q3::inwork 15856,10821 15793,10814
 	2::inwork 15856,10821 15793,10814
@@ -41865,6 +41863,7 @@ Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 # REMOVED (hier eigentlich mittlerweile immer offen) --- Markgrafenstr.	q4::inwork 9656,12031 9645,12133
 #: osm_watch: way id="389101374" version="21"
 # REMOVED (hier ist die Einbahnstraße mittlerweile für Radfahrer offen) --- Mohrenstr.	q3::inwork; 9679,11834 9547,11819
+#: note: Halteverbotsschilder bis 30.06.2025
 #: osm_watch[closed]: note 4053376 3
 #: osm_watch: way id="1149365724" version="8"
 #: osm_watch: way id="1149365723" version="7"
@@ -43814,7 +43813,7 @@ EOF
 #: source_id: viz2021:13.451021,52.489535,27.05.2024,07:00 (bis 05.07.2024) (inaktiv)
 #: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt's eine offizielle Wegführung für Radfahrer über den Hochbord. Mittlerweile (2024-10-09) ist die Kiefholzstraße offen.
 #: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt. 2024-10-09, 2024-10-18: die Arbeiten sind nach Süden gewandert
-#: also_indoor: traffic (ex-H[falsch],re-G[zuviel],W[zuviel],T,B)
+#: also_indoor: traffic (ex-H[falsch],re-G,W[zuviel],ex-T,ex-B)
 #: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße beendet?
 #: last_checked: 2024-11-04 (mapillary)
 #: check_frequency: 14d
@@ -44649,7 +44648,7 @@ EOF
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-09
+#: last_checked: 2024-11-15
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -44845,6 +44844,9 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
+#: osm_watch: way id="27260309" version="18"
+#: osm_watch: way id="372791173" version="8"
+#: osm_watch: way id="27260312" version="23"
 #: add_fragezeichen: Haben die Bauarbeiten bereits begonnen?
 #: next_check: 2024-10-01
 	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
