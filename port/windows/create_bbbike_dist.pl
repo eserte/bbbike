@@ -147,13 +147,21 @@ exec_cmd("cd $bbbike_dos_path\\port\\windows && gmake $bbbike_strawberry_dist_ta
     # Run ISS to create the installer:
     my $iss_file = $do_snapshot ? "bbbike-snapshot-" . strftime("%Y%m%d", localtime) . ".iss" : "bbbike.iss";
     my $cmd;
-    my $iscc = 'C:\Program Files\Inno Setup 5\ISCC.exe';
-    if (-x $iscc) {
-	$cmd = qq{cd $bbbike_dos_path\\port\\windows && "$iscc" $iss_file};
-	print STDERR "Run command: $cmd...\n";
-    } else {
+ CHECK_INNO: {
+	for my $dir (
+	    'C:\Program Files (x86)\Inno Setup 6',
+	    'C:\Program Files\Inno Setup 5',
+	) {
+	    my $iscc = $dir . '\ISCC.exe';
+	    if (-x $iscc) {
+		$cmd = qq{cd $bbbike_dos_path\\port\\windows && "$iscc" $iss_file};
+		print STDERR "Run command: $cmd...\n";
+		last CHECK_INNO;
+	    }
+	}
+	# fallback, assume that the file suffix is enough to start ISS
 	$cmd = "cd $bbbike_dos_path\\port\\windows && $iss_file";
-	print STDERR "Start ISS ($cmd)... please press the green 'play' button!\n";
+	print STDERR "Start Inno Setup ($cmd)... please press the 'play' button manually!\n";
     }
     system $cmd;
     $? == 0 or die "Previous command failed";
