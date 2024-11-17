@@ -273,6 +273,15 @@ sub action_add_bbbike_bundle {
 		if ($try_ppm) {
 		    system($perl_exe, "$portwindir/preinstall_with_ppm.pl", "-v");
 		}
+		my $task_dest = "$strawberry_dir/perl/site/lib/Task/BBBike/windist.pm";
+		if (!-e $task_dest) {
+		    print STDERR "$task_dest does not exist yet.\n";
+		} elsif (-M $task_dest > -M "windist.pm") {
+		    print STDERR "Installed $task_dest is older than windist.pm, removing...\n";
+		    unlink $task_dest;
+		} else {
+		    print STDERR "$task_dest exists, but is newer than windist.pm, keeping...\n";
+		}
 		system(@cpan_cmd, '.');
 		$assert_module_installed->('Task::BBBike::windist');
 	    }
