@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2012,2013,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2012,2013,2016,2018,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,7 +22,7 @@ use File::Copy qw(cp);
 use File::Path qw(mkpath);
 use Getopt::Long;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 my($src,$dest);
 my $doit;
@@ -75,17 +75,19 @@ my %exclude;
 my $ie = Algorithm::IncludeExclude->new;
 $ie->include;
 $ie->exclude('c');
+$ie->include(qw(c bin libcrypto-1_1_.dll)); # needed by Net::SSLeay, version in 5.26.x and 5.32.x
 $ie->include(qw(c bin libdb-6.2_.dll));   # needed by DB_File
 $ie->include(qw(c bin libexpat-1_.dll));
-$ie->include(qw(c bin libiconv-2_.dll));  # needed by XML::LibXML, version in 5.26.x
+$ie->include(qw(c bin libiconv-2_.dll));  # needed by XML::LibXML, version in 5.26.x and 5.32.x
 $ie->include(qw(c bin libjpeg-8_.dll));   # probably needed by Tk, version in 5.14.x
-$ie->include(qw(c bin libjpeg-9_.dll));   #                        version in 5.24.x
-$ie->include(qw(c bin liblzma-5_.dll));   # needed by XML::LibXML, version in 5.26.x
+$ie->include(qw(c bin libjpeg-9_.dll));   #                        version in 5.26.x and 5.32.x
+$ie->include(qw(c bin liblzma-5_.dll));   # needed by XML::LibXML, version in 5.26.x and 5.32.x
 $ie->include(qw(c bin libpng15-15_.dll)); # probably needed by Tk, version in 5.14.x
-$ie->include(qw(c bin libpng16-16_.dll)); #                        version in 5.24.x
-$ie->include(qw(c bin libxml2-2_.dll));   # needed by XML::LibXML, version in 5.26.x
+$ie->include(qw(c bin libpng16-16_.dll)); #                        version in 5.26.x and 5.32.x
+$ie->include(qw(c bin libssl-1_1_.dll));  # needed by Net::SSLeay, version in 5.26.x and 5.32.x
+$ie->include(qw(c bin libxml2-2_.dll));   # needed by XML::LibXML, version in 5.26.x and 5.32.x
 $ie->include(qw(c bin libz_.dll));        #                        version in 5.14.x
-$ie->include(qw(c bin zlib1_.dll));       #                        version in 5.24.x
+$ie->include(qw(c bin zlib1_.dll));       #                        version in 5.26.x and 5.32.x
 $ie->exclude('cpan');
 $ie->exclude('cpanplus');
 $ie->exclude('data');
