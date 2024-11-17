@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016,2018,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,7 +26,7 @@ my $username = $ENV{USERNAME};
 my $do_snapshot;
 my $do_continue;
 my $do_bbbike_update = 1;
-my $strawberry_ver = '5.26.1.1';
+my $strawberry_ver = '5.32.1.1';
 my $strawberry_opts;
 my $bbbike_git_remote = 'origin';
 my $bbbike_git_branch = 'master';
