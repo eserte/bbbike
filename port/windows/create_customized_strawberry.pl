@@ -198,6 +198,8 @@ sub action_add_bbbike_bundle {
 			    "$strawberry_dir\\c\\bin",
 			    "$ENV{PATH}"
 			   );
+    # may be used to activate distroprefs files
+    local $ENV{BBBIKE_DIST_BUILD} = 1;
     save_pwd {
 	# For some reason CPAN.pm may not create the
 	# build directory itself (if used like below?)
