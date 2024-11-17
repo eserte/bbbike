@@ -91,6 +91,8 @@ my @req_table =
 
   [qw/LWP::UserAgent	0	all	2|4	www,gui/,
    'für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)'],
+  [qw/LWP::Protocol::https	0	all	2|4	www,gui/,
+   'Für https-URLs (z.B. Download- oder Geocoder-URLs)'],
   [qw/Image::Magick	0	all	0	www/,
    'für Bildmanipulationen beim Radar-Bild der FU'],
 
@@ -265,8 +267,6 @@ my @req_table =
    'Für Testen des CGI-Interfaces'],
   [qw/WWW::Mechanize::FormFiller	0	all	2	test/,
    'Für Testen des CGI-Interfaces'],
-  [qw/LWP::Protocol::https	0	all	0	test/,
-   'Zum Testen von https-URLs (z.B. Download-URLs)'],
   [qw/Devel::Leak	0	all	0	test/,
    'Für Memory-Leak-Tests'],
   [qw/Devel::Hide	0	all	0	test/,

@@ -47,6 +47,8 @@ X11::Protocol	- Rotated text support
 
 LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)
 
+LWP::Protocol::https	- Für https-URLs (z.B. Download- oder Geocoder-URLs)
+
 Image::Magick	- für Bildmanipulationen beim Radar-Bild der FU
 
 Apache::Session::Counted	- optionale aber sehr zu empfehlende Session-Verwaltung für das CGI-Programm
@@ -202,8 +204,6 @@ Test::Differences
 WWW::Mechanize	- Für Testen des CGI-Interfaces
 
 WWW::Mechanize::FormFiller	- Für Testen des CGI-Interfaces
-
-LWP::Protocol::https	- Zum Testen von https-URLs (z.B. Download-URLs)
 
 Devel::Leak	- Für Memory-Leak-Tests
 
