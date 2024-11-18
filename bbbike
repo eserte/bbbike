@@ -15995,9 +15995,6 @@ sub set_corresponding_power {
 	$bp_speed->calc;
 	push @power, int($bp_speed->power);
     }
-    if (!@power) {
-	@power = (50, 100);
-    }
 }
 
 ### AutoLoad Sub
