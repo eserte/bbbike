@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2024-11-15
+#: last_checked: 2024-11-17
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
@@ -41,7 +41,7 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="9"
 #: osm_watch: way id="1072662717" version="11"
-#: last_checked: 2024-11-14
+#: last_checked: 2024-11-18
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -95,7 +95,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: also_indoor: traffic (ex-G,ex-W,B,T)
 #: osm_watch: note 3677862 5
 #: note: Möglicherweise Arbeiten an der neuen Gehwegvorstreckung
-#: last_checked: 2024-11-08
+#: last_checked: 2024-11-18
 Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 14651,11666
 # 
 #: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?)) (wurde mittlerweile umbenannt)
@@ -116,7 +116,7 @@ Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (none)
-#: last_checked: 2024-11-10
+#: last_checked: 2024-11-17
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -874,22 +874,17 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 ### Neukölln ###
 # 
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kiezblock-im-richardkiez-nimmt-formen-an_a421342 ("demnächst")
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenunterhaltung-und-verkehrssicherheit/kiezblock-rixdorf-1288290.php
-#: osm_watch[closed]: note 4446116 1
-#: osm_watch: way id="1009116415" version="9"
-# REMOVED --- #: osm_watch: way id="1317391078" version="2"
-#: XXX comments_kfzverkehr-Einträge danach anpassen
-#: XXX evtl. gibt es vorher Arbeiten am Stromnetz siehe auch Fragezeichen zu "Umspannwerk Richardstraße"
-#: last_checked: 2024-10-30 vvv
-#: check_frequency: 14d vvv
-# REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q4+::inwork 13236,7970 13246,7961
-# REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q3::inwork 13246,7961 13309,7911
-# REMOVED (hier nicht mehr) --- Wörnitzweg: Bauarbeiten, Fahrbahn ist gesperrt	q4+::inwork 13246,7961 13312,8026
-#: osm_watch: way id="155605363" version="21"
-Wilhelm-Busch-Str.: Bauarbeiten, Fahrbahn ist gesperrt	q3::inwork 13205,8126 13312,8026 13376,7970
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: osm_watch: way id="1009116415" version="9"
+# REMOVED --- # REMOVED --- #: osm_watch: way id="1317391078" version="2"
+# REMOVED --- #: XXX evtl. gibt es vorher Arbeiten am Stromnetz siehe auch Fragezeichen zu "Umspannwerk Richardstraße"
+# REMOVED --- #: last_checked: 2024-11-18 vvv
+# REMOVED --- #: check_frequency: 14d vvv
+# REMOVED --- # REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q4+::inwork 13236,7970 13246,7961
+# REMOVED --- # REMOVED (hier nicht mehr) --- Donaustr.: Bauarbeiten, vermutlich entsteht hier ein modaler Filter, Fahrbahn ist gesperrt	q3::inwork 13246,7961 13309,7911
+# REMOVED --- # REMOVED (hier nicht mehr) --- Wörnitzweg: Bauarbeiten, Fahrbahn ist gesperrt	q4+::inwork 13246,7961 13312,8026
+# REMOVED --- # REMOVED (hier nur noch eine Engstelle) --- #: osm_watch: way id="155605363" version="21" --- Wilhelm-Busch-Str.: Bauarbeiten, Fahrbahn ist gesperrt	q3::inwork 13205,8126 13312,8026 13376,7970
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 #: by: https://berliner-abendblatt.de/2022/06/01/verkehr-im-reuterkiez-bezirk-stellt-ueberarbeitetes-konzept-vor/
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/bezirksamt-laedt-am-6-september-zum-informationsabend-im-reuterkiez-ein_a390713
@@ -1408,8 +1403,8 @@ Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5
 #: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt) (inaktiv)
 #: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W) [alle falsch]
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: way id="4765039" version="25"
-#: osm_watch: note 4522036 1
+#: osm_watch: way id="4765039" version="26"
+#: osm_watch[closed]: note 4522036 1
 #: last_checked: 2024-10-02 (mapillary)
 # REMOVED --- #: next_check: 2024-09-20
 # REMOVED (hier fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450
@@ -1985,7 +1980,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-18
 # REMOVED --- #: check_frequency: 14d
 #: check_frequency: 30d
 #: next_check_id: 2024-12-15
@@ -2130,7 +2125,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: osm_watch: way id="223184082" version="8"
-#: last_checked: 2024-10-22
+#: last_checked: 2024-11-18
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31

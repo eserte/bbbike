@@ -3300,9 +3300,9 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-15 vvv
+#: last_checked: 2024-11-18 vvv
 #: check_frequency: 7d vvv
-#: next_check: 2024-11-18 vvv
+#: next_check: 2024-11-22 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
 Wühlischstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,11552
 #: next_check ^^^
@@ -3311,9 +3311,9 @@ Wühlischstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,115
 ',
          'from' => 1730674800,
          'id' => 2495,
-         'text' => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, voraussichtlich bis 18.11.2024',
+         'text' => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, voraussichtlich bis 22.11.2024',
          'type' => 'handicap',
-         'until' => 1731949200
+         'until' => 1732294800
        },
        undef,
        undef,
@@ -4554,7 +4554,7 @@ Lynarstr. zwischen Sparrplatz und Müllerstr.	q3::inwork 7409,14954 7461,14986 76
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
 #: also_indoor: traffic (T,G,H,W)
 # REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-16 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2027-03-31
 Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
@@ -5555,7 +5555,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2024-11-04 (mapillary) vvv
+#: last_checked: 2024-11-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5587,6 +5587,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1853120454648607073
 #: by: https://pbs.twimg.com/media/GbUIAkBW8AA3AGf?format=jpg&name=medium
 #: source_id: viz2021:13.559233,52.562465,18.11.2024,08:00 (keine Einschränkung auf Verkehrsarten erwähnt, bis 20.11.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1858396972723425477 (nur Kfz-Verkehr)
 	2::inwork 20895,17594 20769,17650
 	2::inwork 20769,17650 20891,17572
 ',
@@ -5733,6 +5734,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024)
+#: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -6011,7 +6013,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-11-07
+#: last_checked: 2024-11-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6109,7 +6111,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
 #: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
-#: last_checked: 2024-11-07
+#: last_checked: 2024-11-18
 #: check_frequency: 14d
 	q4::inwork 16720,12614 16859,12613
 ',
@@ -6206,7 +6208,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-11-03
+#: last_checked: 2024-11-18 (daf)
 #: check_frequency: 120d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -6629,7 +6631,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-11-07
+#: last_checked: 2024-11-18
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6905,20 +6907,21 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1858351927509365099 (nur Kfz-Verkehr)
 #: osm_watch: way id="198589911" version="23"
 # REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
 # REMOVED --- #: note: es existieren zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
 #: priority: #B
-#: last_checked: 2024-11-16
-#: next_check: 2024-11-18
-#	q3::inwork 15856,10821 15793,10814
-	2::inwork 15856,10821 15793,10814
+#: last_checked: 2024-11-18
+#: next_check: 2024-11-29
+	q4::inwork 15856,10821 15793,10814
+#	2::inwork 15856,10821 15793,10814
 ',
          'from' => 1731798000,
          'id' => 3885,
-         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Straße, evtl. sind auch Fußgänger und Radfahrer betroffen, 18.11.2024 bis 29.11.2024',
-         'type' => 'gesperrt',
+         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmaler Fußgängerschutztunnel existiert, 18.11.2024 bis 29.11.2024',
+         'type' => 'handicap',
          'until' => 1732921199
        },
        undef,
@@ -7075,7 +7078,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024) (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024)
+#: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024) (bis 20.12.2024)
 #: source_id: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
@@ -7088,9 +7091,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'dont_check_date' => 1,
          'from' => 1722204000,
          'id' => 3925,
-         'text' => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Fischerinsel zwischen Alte/Neue Jakobstr. und Wallstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 18.11.2024',
+         'text' => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Fischerinsel zwischen Alte/Neue Jakobstr. und Wallstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 20.12.2024',
          'type' => 'handicap',
-         'until' => 1731945600
+         'until' => 1734710400
        },
        undef,
        undef,
@@ -7105,7 +7108,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-11-12 (traffic) vvv
+#: last_checked: 2024-11-18 (traffic) vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-30 vvv
 	q2::inwork; 6334,14756 6513,14725
@@ -7288,7 +7291,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (G[zu kurz],B,T) vvv
-#: last_checked: 2024-11-07 vvv
+#: last_checked: 2024-11-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-01-31 vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
@@ -7715,22 +7718,7 @@ Karlshafener Str.	q4::inwork 24899,13007 25054,12926
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.451021,52.489535,27.05.2024,07:00 (bis 05.07.2024) (inaktiv)
-#: note: Außerdem ist der Einmündungsbereich Kiefholzstr./Wildenbruchstr. gesperrt, aber hier gibt\'s eine offizielle Wegführung für Radfahrer über den Hochbord. Mittlerweile (2024-10-09) ist die Kiefholzstraße offen.
-#: XXX Mittlerweile (2024-09-30) wird die Fahrbahndecke wieder hergestellt. 2024-10-09, 2024-10-18: die Arbeiten sind nach Süden gewandert
-#: also_indoor: traffic (ex-H[falsch],re-G,W[zuviel],ex-T,ex-B)
-#: add_fragezeichen: Sind die Bauarbeiten in der Wildenbruchstraße beendet?
-#: last_checked: 2024-11-04 (mapillary)
-#: check_frequency: 14d
-	q4::inwork 13715,9455 13614,9333
-',
-         'from' => 1716699600,
-         'id' => 4067,
-         'text' => 'Wildenbruchstr.: Bauarbeiten zwischen Karl-Kunger-Str. und Kiefholzstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: A117-2024
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
@@ -7757,19 +7745,20 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-11-04 (mapillary) vvv
-#: check_frequency: 21d vvv
-# REMOVED --- #: next_check: 2024-11-29 vvv
-Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
+#: last_checked: 2024-11-18 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2024-11-29 vvv
+#Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
+Braunschweiger Str.: Fahrbahn bis kurz vor der Sonnenallee passierbar, allerdings noch einige unasphaltierte Stellen, Umwege an der Kreuzung	q3::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
-# REMOVED --- #: next_check ^^
+#: next_check ^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 4069,
-         'text' => 'Braunschweiger Str.: Wasserrohrbruch, nur ein enger Gehweg offen',
-         'type' => 'gesperrt',
+         'text' => 'Braunschweiger Str.: Wasserrohrbruch, einige Einschränkungen',
+         'type' => 'handicap',
          'until' => undef
        },
        undef,
@@ -7786,7 +7775,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 #: osm_watch: note 4452464 2
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2024-10-29
+#: last_checked: 2024-11-18
 #: next_check: 2024-12-31
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -7861,7 +7850,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
        {
          'data' => '#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
 #: source_id: bvg2024:171#HIM_FREETEXT_227772 (ohne Endedatum)
-#: last_checked: 2024-11-04 (mapillary) vvv
+#: last_checked: 2024-11-18 vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
 Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
@@ -8114,7 +8103,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-15
+#: last_checked: 2024-11-18
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8413,7 +8402,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: last_checked: 2024-11-15
+#: last_checked: 2024-11-18
 #: check_frequency: 21d
 #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
@@ -8593,7 +8582,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
 #: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
-#: last_checked: 2024-11-06 (bahninfo-forum)
+#: last_checked: 2024-11-18
 # REMOVED --- #: check_frequency: 7d
 #: next_check: 2024-11-26
 	q4::inwork; 16764,11919 16794,12144
@@ -8711,17 +8700,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'type' => 'handicap',
          'until' => 1739894400
        },
-       {
-         'data' => '#: source_id: viz2021:13.253751,52.519495,04.11.2024,06:00 (bis 18.11.2024)
-	q4::inwork 208,12305 179,12434 151,12541 130,12624 131,12672
-	q4::inwork 461,11455 541,11464
-',
-         'from' => 1730610000,
-         'id' => 4209,
-         'text' => 'Westendallee: Bauarbeiten zwischen Brixplatz und Reichsstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 04.11.2024 06:00 bis 18.11.2024 05:00',
-         'type' => 'handicap',
-         'until' => 1731902400
-       },
+       undef,
        {
          'data' => '#: source_id: 246430009 (bis 15.04.2025)
 	2::inwork 52061,34502 52842,34058
@@ -8815,6 +8794,18 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'from' => undef,
          'id' => 4217,
          'text' => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1503828.php (zunächst bis Ende Mai 2025)
+#: next_check: 2025-05-31
+	q4::temp 10032,9456 10004,9268
+',
+         'from' => undef,
+         'id' => 4218,
+         'recurring' => 1,
+         'text' => 'Schleiermacherstr.: temporäre Schulstraße an Schultagen zwischen 9:30 und 15:30 Uhr',
          'type' => 'handicap',
          'until' => undef
        }
