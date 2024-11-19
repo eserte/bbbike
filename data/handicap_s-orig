@@ -109,7 +109,7 @@ Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-10-30
+#: last_checked: 2024-11-19
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -1251,7 +1251,7 @@ Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgerste
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2024-10-26 vvv
+#: last_checked: 2024-11-18 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1400,15 +1400,10 @@ Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5
 # 
 ### Wilhelmsruh ###
 # 
-#: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt) (inaktiv)
-#: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W) [alle falsch]
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: way id="4765039" version="26"
-#: osm_watch[closed]: note 4522036 1
-#: last_checked: 2024-10-02 (mapillary)
-# REMOVED --- #: next_check: 2024-09-20
-# REMOVED (hier fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450
-Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7506,20170 7533,20275
+# REMOVED --- #: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt) (inaktiv) --- #: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W) [alle falsch] --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: osm_watch: way id="4765039" version="26" --- #: osm_watch[closed]: note 4522036 1 --- #: last_checked: 2024-11-18 (mapillary) --- #: next_check: 2024-09-20 --- (hier fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450 ---  (hier auch fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7506,20170 7533,20275
+# 
+#: last_checked: 2024-11-18 (mapillary)
+Hielscherstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7556,19882 7604,19988
 # 
 #: temporary ^^^
 #: section ^^^
@@ -1980,7 +1975,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-11-18
+#: last_checked: 2024-11-19
 # REMOVED --- #: check_frequency: 14d
 #: check_frequency: 30d
 #: next_check_id: 2024-12-15
@@ -5273,6 +5268,9 @@ Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
 (Zingster Str. - Am Berl): Grünanlage, einige Fußgänger	q3 16534,18689 16607,18709 16656,18742
 # 
 (Hauptstr. [Nebenfahrbahn] - Vicki-Baum-Str.): Fußgänger, niedrige Bordsteine	q2 15600,10465 15623,10449
+# 
+#: note: Gehweg, keine Freigabe für Radfahrer
+Hebammensteigbrücke: Fußgänger	q3 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

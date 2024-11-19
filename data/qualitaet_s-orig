@@ -375,7 +375,7 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
-#: last_checked: 2024-10-16 (mapillary)
+#: last_checked: 2024-11-19
 #: check_frequency: 180d
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
@@ -385,7 +385,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2024-10-18
+#: last_checked: 2024-11-19
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -1500,11 +1500,12 @@ Genslerstr.: Kopfsteinpflaster	Q2 16849,15263 16835,15188
 Genslerstr.: Asphalt	Q0 16835,15188 16816,15092 16802,15007 16784,14922 16768,14849
 #: corrected_by: srt
 Bahnhofstr.: Kopfsteinpflaster	Q2 16633,15753 16675,15688 16694,15658 16767,15549 16819,15495 16898,15453 16962,15440
+(Hebammensteigbrücke - Pankeweg): wassergebundene Decke	Q1 13008,21783 13049,21743 13075,21740
 Pankeweg: feiner Schotter	Q1 14869,24387 14625,24215 14356,23862 14265,23759 13963,23505 13953,23497
 Pankeweg: feiner Schotter	Q1 13953,23497 13940,23486 13833,23400 13559,23116
 Pankeweg: Asphalt mit einigen Unebenheiten	Q1+ 13206,22290 13141,22018
 Pankeweg: mäßiger Asphalt, Wurzelschäden	Q1- 13141,22018 13078,21754
-Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12980,21411 12914,21229 12844,21143 12847,21116 12867,21098 12807,20944 12753,20884 12553,20757
+Pankeweg: wassergebundene Decke	Q1- 13078,21754 13075,21740 13031,21538 12980,21411 12914,21229 12844,21143 12847,21116 12867,21098 12807,20944 12753,20884 12553,20757
 Pankeweg: unbefestigter Weg	Q2+ 13365,22743 13321,22586 13295,22545 13291,22422
 Pankeweg: Feinschotter	Q1 13291,22422 13290,22399 13388,22386 13404,22384
 Weinapfelweg: unbefestigte Straße, relativ gut befahrbar	Q2+ 13136,22397 13117,22337 13110,22313
@@ -9457,7 +9458,7 @@ Straße 101 (Karow): Asphalt	Q0 13610,22949 13726,22860
 Straße 100: Asphalt mit einigen Schäden	Q1+ 13690,23083 13656,23036 13610,22949
 Krontaler Str.: Asphalt	Q0 13498,22636 13365,22743 13425,22932 13521,23057 13551,23072 13656,23036 13805,22935 13884,22879
 Straße 87 (Blankenburg): Asphalt	Q0 13441,22298 13476,22345
-(Fußgängerbrücke): Asphalt/Beton	Q0 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13008,21783
+(Fußgängerbrücke): Asphalt/Beton	Q0 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
 # REMOVED (ja) --- #: XXX früher: "teilweise Asphalt, teilweise unbefestigt", heute vermutlich komplett asphaltiert, nochmal genauer prüfen
 Herwigstr.: Asphalt	Q0 12993,21112 13165,21144
 Waldammerweg: unbefestigter Weg	Q2 12901,20546 13095,20584 13276,20619 13409,20645
@@ -18862,7 +18863,9 @@ Buriger Weg: Beton	Q0- 30132,4281 30192,4487 30254,4692
 (Spreeuferweg): Parkweg	Q2 4478,12537 4441,12559 4321,12566
 # 
 #: by: Ulrich Scheel: vvv
-Uhlandstr. (Rosenthal, Wilhelmsruh): extrem schlechtes Kopfsteinpflaster	Q3 7468,20009 7506,20170 7533,20275
+Uhlandstr. (Rosenthal, Wilhelmsruh): extrem schlechtes Kopfsteinpflaster	Q3 7468,20009 7506,20170
+#: corrected_by: mapillary (extrem schlechtes Kopfsteinpflaster, Q3 -> ..., Oktober/November 2024 neu gemacht)
+Uhlandstr. (Rosenthal, Wilhelmsruh): Asphalt	Q0 7506,20170 7533,20275
 #: corrected_by: mapillary (extrem schlechtes Kopfsteinpflaster, Q3 -> ..., August 2024 neu gemacht)
 Uhlandstr. (Rosenthal, Wilhelmsruh): Asphalt	Q0 7533,20275 7577,20450
 #: confirmed_by: srt
@@ -33493,5 +33496,6 @@ Wendehammerbereich asphaltiert	Q0 5920,2693
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 19790,3893
 Einmündungsbereich asphaltiert	Q1 19736,3858
 Kreuzungsbereich asphaltiert	Q0 25118,13041
+Kreuzungsbereich asphaltiert	Q0 7506,20170
 #: ignore ^^^
 #: section ^^^
