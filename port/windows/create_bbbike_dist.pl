@@ -130,10 +130,6 @@ if ($do_bbbike_update) {
     $? == 0 or die "Previous command failed";
 }
 
-## - copy stripped down gpsbabel distro into \cygwin\home\eserte\bbbikewindist\gpsbabel
-##     cd ~/work/bbbike/port/windows && make make-gpsbabel-dist
-#exec_cygwin_cmd('cd ' . $bbbike_cygwin_path . '/port/windows && make make-gpsbabel-dist');
-
 # - run dist-making rules
 #     cd ~/work/bbbike && perl Makefile.PL
 #    cd port/windows && make bbbike-strawberry-dist make-bbbike-dist

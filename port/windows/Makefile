@@ -41,17 +41,3 @@ bbbike-strawberry-snapshot-dist: make-BBBikeVar.tpl
 # - data/.modified is missing, but may be created using miscsrc/create_modified.pl
 make-bbbike-dist:
 	perl Makefile_PL make-bbbike-dist
-
-#GPSBABEL_SRC=$(shell cygpath "$$PROGRAMFILES")/GPSBabel
-#GPSBABEL_DEST=../../../../bbbikewindist/gpsbabel
-#
-## Assumes that gpsbabel (e.g. 1.4.2) is normally installed
-## Does not work for later gpsbabel versions,
-## as libexpat.dll is gone and other .dlls are used instead.
-#make-gpsbabel-dist:
-#	[ -d ../../../../bbbikewindist ]
-#	[ -d "${GPSBABEL_SRC}" ]
-#	mkdir -p ${GPSBABEL_DEST}
-#	cp --preserve=mode,timestamps -n "${GPSBABEL_SRC}/gpsbabel.exe" ${GPSBABEL_DEST}
-#	cp --preserve=mode,timestamps -n "${GPSBABEL_SRC}/libexpat.dll" ${GPSBABEL_DEST}
-#	cp --preserve=mode,timestamps -n "${GPSBABEL_SRC}/COPYING" ${GPSBABEL_DEST}
