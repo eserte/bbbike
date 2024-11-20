@@ -775,6 +775,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
 #: by: https://www.infravelo.de/projekt/roennestrasse/ (1. Quartal 2022 - 1. Quartal 2024) (mittlerweile 1. Quartal 2023 - 1. Quartal 2024) (3. Quartal 2023 - 4. Quartal 2024) (1. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2025)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1503408.php (Asphaltierung im östlichen Abschnitt, Dauer der Bauarbeiten: 8 Wochen + unbekannt)
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/roennestrasse-dicht-fuer-autos_a429951
 # REMOVED (bereits asphaltierter Kreuzungsbereich) --- #: osm_watch: way id="4480580" version="21"
 # REMOVED (bereits asphaltierter Kreuzungsbereich) --- #: osm_watch: way id="4436949" version="20"
 #: osm_watch: way id="1101189359" version="6"
@@ -2598,7 +2599,8 @@ Böttcherstr.: Kopfsteinpflaster	Q2 22214,4548 22212,4655
 Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Groß-Berliner Damm - Landschaftspark Johannisthal): Gehwegplatten	Q0- 18884,3752 18592,3743
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0- 18592,3743 18434,3738 18293,3890 18122,4074
-(Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0- 18347,3947 18293,3890 18031,3737 17976,3735
+#: note: im Mittelteil gibt es hier einen erhöhten Holzbohlenweg, ähnliche Qualitätskategorie
+(Weg im Landschaftspark Johannisthal): Gehwegplatten, einige Hebungen und fehlende Stellen	Q1- 18347,3947 18293,3890 18031,3737 17976,3735
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0- 18592,3743 18633,3530
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0- 18930,3703 18803,3694 18633,3530 18562,3461 18451,3352 18337,3238 18304,3208 18080,3268 18031,3737 18006,3992
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0- 18304,3208 18326,3141 18347,3129
@@ -4626,12 +4628,13 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1+ 12911,15865 12871,15882
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1 12871,15882 12783,15921
 (Eichbuschallee - Plänterwald): Waldweg/Schotter	Q2+ 16144,7882 16534,8182
+#: next_check_id: LAKEGRUND-2024
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1496551.php (Bauarbeiten ab 28.10.2024, Gesamtbaumaßnahme bis Ende 2026)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
 #: by: https://www.berliner-woche.de/baumschulenweg/c-umwelt/arbeiten-zur-aufwertung-der-gruenanlage-lakegrund-sind-gestartet_a428593
 #: XXX "Teilentsiegelung" geplant
-#: last_checked: 2024-10-23 (Pressemitteilung)
-#: check_frequency: 30d
+#: last_checked: 2024-11-20
+#: check_frequency: 90d
 #: next_check: 2026-12-31
 Lakegrund: Beton	Q0- 16406,7430 16368,7425 16195,7398
 Eschenbachstr.: Kopfsteinpflaster	Q2 16290,7160 16375,7070
@@ -4698,6 +4701,7 @@ Johannes-Sasse-Ring: Asphalt	Q0 17146,3125 17199,3082
 Johannes-Sasse-Ring: Beton	Q0 17199,3082 17412,2908 17465,2964 17525,3029
 Johannes-Sasse-Ring: Beton	Q0 17206,3189 17465,2964
 Alter Segelfliegerdamm: Asphalt	Q0 17585,3745 17471,3735
+Winckelmannstr.: Asphalt, Aufpflasterungen in den Einmündungsbereichen	Q1+ 17471,3735 17490,3630
 Köpenicker Str. (Johannisthal): Asphalt	Q0 17507,4216 17638,4224 17659,4205
 Vereinsstr.: unebenes Kleinkopfsteinpflaster	Q2 17180,3997 17244,4084 17297,4159 17405,4151 17503,4148
 Heinrich-Mirbach-Str.: Kleinkopfsteinpflaster	Q1 17288,4026 17244,4084
@@ -5929,7 +5933,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1266800.php
 #: XXX bleibt es hier beim Asphalt?
 #: priority: #C
-#: last_checked: 2024-08-17
+#: last_checked: 2024-11-20
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
@@ -8027,7 +8031,7 @@ am Oder-Spree-Kanal: Waldweg, einige Wurzeln	Q2 29559,-2866 30531,-3115
 (Uferweg an der HTW): Asphalt, einige Wurzelhebungen	Q1+ 19184,5554 19134,5544 18978,5522 18860,5534 18776,5575 18744,5612 18650,5707
 (Uferweg - Ernst-Ziesel-Str.): Verbundsteinpflaster	Q1+ 18744,5612 18787,5676
 Plönzeile: Asphalt	Q0 18574,6401 18676,6333 18767,6268 18859,6198 18970,6110
-(Zufahrt Zentrum Schöneweide): Asphalt, in der Lieferzone Beton	Q0 17728,5756 17656,5701 17412,5951 17483,6024
+(Zufahrt Zentrum Schöneweide): Asphalt, in der Lieferzone Beton	Q0 17728,5756 17656,5701 17612,5746 17412,5951 17483,6024
 (Gotlindestr. - Herzbergstr.): Asphalt	Q0 17301,12585 17313,12609 17299,12851 17289,12964 17267,13067 17257,13117
 Rudolf-Filter-Weg: Kleinsteinpflaster	Q1- 20988,15505 21009,15539
 Rudolf-Filter-Weg: Beton	Q0- 21009,15539 21040,15589
@@ -13262,9 +13266,14 @@ Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1+ 17738,9922 17749,9811 1777
 Mellenseestr. [Wohngebiet]: Beton	Q0- 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 # REMOVED (im westlichen Abschnitt passiert nichts) --- #: XXX Bauarbeiten, im östlichen Abschnitt wurde neu asphaltiert, evtl. wird auch im restlichen Abschnitt noch gearbeitet --- #: source_id: viz2021:13.403481,52.488825,10.11.2023,10:00 (bis 01.12.2023) (inaktiv) --- #: last_checked: 2023-11-21 --- #: next_check: 2023-12-01
+#: source_id: viz2021:13.400913,52.488861,20.11.2024,10:12 (Fahrbahnsanierung, bis 04.12.2024)
+#: XXX wird bei der Fahrbahnsanierung dieser Abschnitt neu gemacht? vvv
+#: next_check: 2024-12-04 vvv
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10250,9233
 # REMOVED --- #: next_check_id: BERGMANN-2023 --- #: XXX Schäden vor allem am Fahrbahnrand, wo man nun fahren muss, in der Fahrbahnmitte wäre es Q0- --- #: last_checked: 2024-01-28 --- #: check_frequency: 120d --- Bergmannstr.: Asphalt mit Schäden	Q1+ 10250,9233 10366,9233
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10250,9233 10366,9233
+#: next_check ^^^
+#: XXX ^^^
 #: historical_note: bis Herbst 2023: Asphalt, einige leichte Schäden, Q0-
 Bergmannstr.: Asphalt	Q0 10366,9233 10547,9233
 #: historical_note: bis Herbst 2023: Asphalt, einige Querrillen, Q0-
@@ -13555,7 +13564,7 @@ Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 1
 Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2024-09-30 vvv
+#: last_checked: 2024-11-20 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken: provisorisch asphaltiert	Q1 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
@@ -13805,6 +13814,8 @@ Kiefholzstr. [Wohngebiet]: Verbundsteinpflaster	Q1 16448,6498 16495,6565
 (Zingster Str. - Am Berl): Beton	Q1+ 16534,18689 16607,18709 16656,18742
 # 
 Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949 17759,18916
+# 
+(Sonnenallee - Neltestr.): Waldweg, einige Wurzeln	Q2- 19610,4394 19750,4260
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -16081,9 +16092,10 @@ Vogelbeerstr.: schlechtes Kopfsteinpflaster	Q3+ 19723,4175 19759,4160 19815,4148
 #: corrected_by: srt (mäßiger Asphalt -> ...)
 Florian-Geyer-Str.: Asphalt	Q0 19869,4151 19884,4018 19888,3990 19924,3939
 #: corrected_by: Hartmut Schröder (mäßiges Q2 -> schlechtes Q3+)
-#: corrected_by: srt (Q3+ -> Q3)
 # REMOVED --- #: next_check_id: FLORIANGEYER-2023 --- #: XXX Bleibt das Kopfsteinpflaster im südlichen Bereich? --- #: last_checked: 2023-08-19 --- #: check_frequency: 90d --- #: next_check: 2023-12-21
-Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3 19924,3939 19959,3891 19996,3841
+Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3 19924,3939 19959,3891
+#: corrected_by: srt (Q3+ -> Q3-)
+Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3- 19959,3891 19996,3841
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ..., im Herbst 2024 neu gemacht)
 Florian-Geyer-Str.: Betonsteinpflaster, etwas wellig	Q1+ 19996,3841 20066,3746
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ..., 2023 neu gemacht)
@@ -19032,7 +19044,7 @@ Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
 #: note: laut ADFC-Karte ebenfalls schlecht geeignet
 #: corrected_by: srt (Q3 -> Q2+) vvv
 Kattunsteig: Waldweg	Q2+ 19765,4876 19710,4760 19710,4682 19715,4479 19717,4404 19723,4348 19766,4288 19807,4248
-Kattunsteig: Waldweg	Q2+ 19766,4288 19754,4266 19760,4256 19756,4245
+Kattunsteig: Waldweg	Q2+ 19766,4288 19750,4260 19759,4251 19756,4245
 #: corrected_by ^^^
 #: note: "Note 3":
 #: note: laut ADFC-Karte gut geeignet
@@ -23364,12 +23376,14 @@ Jenny-Lind-Str.: mäßiger Asphalt	Q1 11522,17248 11645,17271 11768,17296
 #: confirmed_by: srt
 Sandhofweg: gutes Verbundsteinpflaster	Q1 5848,272 5795,371 5757,434 5688,402 5644,381
 # 
+#: next_check_id: HIELSCHER-2024
 #: by: Alexander Nieruch: vvv
 #: note "Durchfahrt nicht zu empfehlen"
 #: corrected_by: srt (Asphalt/Kopfsteinpflaster, Q2- -> ...)
 Hielscherstr.: Asphalt/Beton	Q0 7522,19804 7556,19882
 #: XXX Bauarbeiten im November 2024, vielleicht danach bessere Qualität?
 #: confirmed_by: mapillary
+#: last_checked: 2024-11-18 (mapillary)
 #: next_check: 2024-11-22
 Hielscherstr.: teilweise mit Asphalt überdecktes großsteiniges Kopfsteinpflaster	Q2- 7556,19882 7604,19988 7695,20175
 #: corrected_by: mapillary

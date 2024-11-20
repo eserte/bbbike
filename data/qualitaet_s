@@ -1855,7 +1855,7 @@ Böttcherstr.: Kopfsteinpflaster	Q2 22214,4548 22212,4655
 Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Groß-Berliner Damm - Landschaftspark Johannisthal): Gehwegplatten	Q0 18884,3752 18592,3743
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0 18592,3743 18434,3738 18293,3890 18122,4074
-(Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0 18347,3947 18293,3890 18031,3737 17976,3735
+(Weg im Landschaftspark Johannisthal): Gehwegplatten, einige Hebungen und fehlende Stellen	Q1 18347,3947 18293,3890 18031,3737 17976,3735
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0 18592,3743 18633,3530
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0 18930,3703 18803,3694 18633,3530 18562,3461 18451,3352 18337,3238 18304,3208 18080,3268 18031,3737 18006,3992
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0 18304,3208 18326,3141 18347,3129
@@ -3530,6 +3530,7 @@ Johannes-Sasse-Ring: Asphalt	Q0 17146,3125 17199,3082
 Johannes-Sasse-Ring: Beton	Q0 17199,3082 17412,2908 17465,2964 17525,3029
 Johannes-Sasse-Ring: Beton	Q0 17206,3189 17465,2964
 Alter Segelfliegerdamm: Asphalt	Q0 17585,3745 17471,3735
+Winckelmannstr.: Asphalt, Aufpflasterungen in den Einmündungsbereichen	Q1 17471,3735 17490,3630
 Köpenicker Str. (Johannisthal): Asphalt	Q0 17507,4216 17638,4224 17659,4205
 Vereinsstr.: unebenes Kleinkopfsteinpflaster	Q2 17180,3997 17244,4084 17297,4159 17405,4151 17503,4148
 Heinrich-Mirbach-Str.: Kleinkopfsteinpflaster	Q1 17288,4026 17244,4084
@@ -6534,7 +6535,7 @@ am Oder-Spree-Kanal: Waldweg, einige Wurzeln	Q2 29559,-2866 30531,-3115
 (Uferweg an der HTW): Asphalt, einige Wurzelhebungen	Q1 19184,5554 19134,5544 18978,5522 18860,5534 18776,5575 18744,5612 18650,5707
 (Uferweg - Ernst-Ziesel-Str.): Verbundsteinpflaster	Q1 18744,5612 18787,5676
 Plönzeile: Asphalt	Q0 18574,6401 18676,6333 18767,6268 18859,6198 18970,6110
-(Zufahrt Zentrum Schöneweide): Asphalt, in der Lieferzone Beton	Q0 17728,5756 17656,5701 17412,5951 17483,6024
+(Zufahrt Zentrum Schöneweide): Asphalt, in der Lieferzone Beton	Q0 17728,5756 17656,5701 17612,5746 17412,5951 17483,6024
 (Gotlindestr. - Herzbergstr.): Asphalt	Q0 17301,12585 17313,12609 17299,12851 17289,12964 17267,13067 17257,13117
 Rudolf-Filter-Weg: Kleinsteinpflaster	Q1 20988,15505 21009,15539
 Rudolf-Filter-Weg: Beton	Q0 21009,15539 21040,15589
@@ -11641,6 +11642,7 @@ Kiefholzstr. [Wohngebiet]: Verbundsteinpflaster	Q1 16448,6498 16495,6565
 (Zingster Str. - Am Berl): Betonpflaster	Q0 16504,18692 16534,18689
 (Zingster Str. - Am Berl): Beton	Q1 16534,18689 16607,18709 16656,18742
 Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949 17759,18916
+(Sonnenallee - Neltestr.): Waldweg, einige Wurzeln	Q2 19610,4394 19750,4260
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12632,7 +12634,8 @@ Koblenzer Str.: Kopfsteinpflaster	Q2 4874,8354 4874,8140 4873,8007 4873,7967
 Undinestr.: Kopfsteinpflaster	Q2 4787,4133 4681,4537 4651,4638 4568,4789
 Vogelbeerstr.: schlechtes Kopfsteinpflaster	Q3 19723,4175 19759,4160 19815,4148 19869,4151 19917,4168 19963,4198
 Florian-Geyer-Str.: Asphalt	Q0 19869,4151 19884,4018 19888,3990 19924,3939
-Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3 19924,3939 19959,3891 19996,3841
+Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3 19924,3939 19959,3891
+Florian-Geyer-Str.: schlechtes Kopfsteinpflaster	Q3 19959,3891 19996,3841
 Florian-Geyer-Str.: Betonsteinpflaster, etwas wellig	Q1 19996,3841 20066,3746
 Florian-Geyer-Str.: Betonsteinpflaster	Q0 20066,3746 20159,3623
 Borkumstr.: Asphalt	Q0 11412,17823 11335,17807 11296,17799
@@ -13708,7 +13711,7 @@ Hartriegelstr.: Kopfsteinpflaster	Q2 18695,5076 18713,5042 18724,5022
 Hartriegelstr.: Beton, einige leichte Hebungen	Q0 18724,5022 18918,4971 19184,4888 19251,4879 19402,4900 19500,4919 19579,4931 19755,4962
 Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
 Kattunsteig: Waldweg	Q2 19765,4876 19710,4760 19710,4682 19715,4479 19717,4404 19723,4348 19766,4288 19807,4248
-Kattunsteig: Waldweg	Q2 19766,4288 19754,4266 19760,4256 19756,4245
+Kattunsteig: Waldweg	Q2 19766,4288 19750,4260 19759,4251 19756,4245
 Bärenlauchstr.: Beton	Q0 19733,5177 19735,5158
 Bärenlauchstr.: Asphalt	Q0 19735,5158 19737,5134
 Bärenlauchstr.: Asphalt	Q0 19737,5134 19744,5063 19755,4962 19761,4907 19765,4876

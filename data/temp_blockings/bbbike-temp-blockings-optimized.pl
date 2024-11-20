@@ -3300,7 +3300,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-19 vvv
+#: last_checked: 2024-11-20 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-22 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
@@ -4308,6 +4308,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-fussgaengertunnel-oeffnet-im-zweiten-quartal-2024-FRMUQYTD6VF6RCLYMMHJQTQAYA.html (II. Quartal 2024?)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Fertigstellung der Fußgängerunterführung: November 2024)
 #: by: https://bauprojekte.deutschebahn.com/p/eichwalde-zeuthen-bf?date=20240925 ("Die Eröffnung der PU ist für November 2024 vorgesehen.")
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13154/docs/HZ_eichwalde_zeuthen_bf_bauablauf_zeuthen_20240724.pdf
 #: osm_watch: way id="36936021" version="10" brb
 #: also_indoor: search Bahnhof Zeuthen
 #: last_checked: 2024-07-17
@@ -4517,6 +4518,7 @@ Bäkepark	2::inwork 5131,4207 5161,4206 5239,4175 5282,4145
 #: note: abgesperrter Bereich etwa 40m, zeitweise könnte die Absperrung schon ab Sparrstr. gelten
 #: add_fragezeichen: Ist der Straßenabschnitt zwischen Tegeler Str. und Sparrstr. weiterhin gesperrt?
 #: also_indoor: traffic (G,W)
+#: priority: #B vvv
 #: last_checked: 2024-11-03 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
@@ -4527,6 +4529,7 @@ Lynarstr. zwischen Sparrplatz und Müllerstr.	q3::inwork 7409,14954 7461,14986 76
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
 ',
          'from' => 1730659036,
          'id' => 3060,
@@ -5579,24 +5582,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181336.php (2022er-Eintrag)
-#: source_id: viz2021:13.55864,52.562688,03.03.2022,14:00 (inaktiv)
-#: by: https://twitter.com/VIZ_Berlin/status/1498672727842082819 (2022er-Eintrag)
-#: source_id: viz2021:13.559233,52.562465,04.11.2024,00:01 (bis 07.11.2024) (inaktiv)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1853120454648607073
-#: by: https://pbs.twimg.com/media/GbUIAkBW8AA3AGf?format=jpg&name=medium
-#: source_id: viz2021:13.559233,52.562465,18.11.2024,08:00 (keine Einschränkung auf Verkehrsarten erwähnt, bis 20.11.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1858396972723425477 (nur Kfz-Verkehr)
-	2::inwork 20895,17594 20769,17650
-	2::inwork 20769,17650 20891,17572
-',
-         'from' => 1731879774,
-         'id' => 3522,
-         'text' => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger, vom 18.11.2024 bis 20.11.2024 18:00',
-         'type' => 'gesperrt',
-         'until' => 1732122000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5831,7 +5817,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2024-11-13 vvv
+#: last_checked: 2024-11-20 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-08-16 vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
@@ -5841,7 +5827,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3
 #: osm_watch: way id="1316908799" version="2"
 # REMOVED (hier nicht mehr) ---	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
-#: osm_watch: way id="42990078" version="29"
+#: osm_watch: way id="42990078" version="30"
 Schönstr. vor Kreuzungsbereich Amalienstr.	q4::inwork 13794,16773 13630,16629
 #: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
 # REMOVED (hier nicht mehr) --- Amalienstr.	q4::inwork 13722,16843 13794,16773
@@ -6944,13 +6930,11 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
 #: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
-#: XXX zukünftige Einschränkungen (mittlerweile: der Bauzustand wird vermutlich erst am 17.07.2024 gewechselt):
-#: XXX * 29. Juni 2024 - 09. August 2024: Sperrung von Edisonstr. und östlicher Wilhelminenhofstr. (dafür vielleicht die beiden anderen Stränge wieder frei?)
-#: XXX * 10. August 2024 - 20. Oktober 2024: Sperrung der östlichen Wilhelminenhofstr. (nur die Fahrbahn oder auch der Radweg? und dafür alles andere wieder frei?)
+#: XXX mittlerweile (2024-11-20) laufen die letzten Asphaltierungsarbeiten, aber es ist nicht wahrscheinlich, dass übermorgen die Freigabe erfolgt (z.B. fehlen Markierungen)
 #: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-11-03 (krickstadt) vvv
+#: last_checked: 2024-11-20 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-11-22 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -7066,20 +7050,20 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024) (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024) (bis 20.12.2024) (inaktiv)
 #: source_id: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
+#: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
 #: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
 # REMOVED (alte Notizen) --- #: note: bei VIZ inaktiv, tatsächlich noch aktiv --- #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
 # REMOVED (bei mapillary nicht mehr gesehen) --- #: last_checked: 2023-11-07 --- #: check_frequency: 14d
-#: note: relativ kurzer Abschnitt (~75m) ist betroffen, deshalb q4 -> q3
-	q3::inwork; 10815,11662 10722,11816
+# REMOVED (wurde umgedreht) --- #: note: relativ kurzer Abschnitt (~75m) ist betroffen, deshalb q4 -> q3 ---	q3::inwork; 10815,11662 10722,11816
+	q3::inwork; 10722,11816 10815,11662
 ',
-         'dont_check_date' => 1,
          'from' => 1722204000,
          'id' => 3925,
-         'text' => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Fischerinsel zwischen Alte/Neue Jakobstr. und Wallstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 20.12.2024',
+         'text' => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 20.12.2024 17:00',
          'type' => 'handicap',
          'until' => 1734710400
        },
@@ -8091,7 +8075,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-19
+#: last_checked: 2024-11-20
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8730,12 +8714,13 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.364741,52.585104,11.11.2024,07:00 (bis 22.11.2024)
+         'data' => '#: next_check_id: HIELSCHER-2024
+#: source_id: viz2021:13.364741,52.585104,11.11.2024,07:00 (bis 22.11.2024)
 	q4::inwork 7556,19882 7604,19988
 ',
          'from' => 1731218400,
          'id' => 4213,
-         'text' => 'Hielscherstr.: Bauarbeiten zwischen Hertzstr. und Garibaldistr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.11.2024 07:00 bis 22.11.2024 18:00',
+         'text' => 'Hielscherstr.: Bauarbeiten zwischen Hertzstr. und Garibaldistr., Bauarbeiten, Sperrung der Fahrbahn, vom 11.11.2024 07:00 bis 22.11.2024 18:00',
          'type' => 'handicap',
          'until' => 1732294800
        },
@@ -8797,6 +8782,21 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'text' => 'Schleiermacherstr.: temporäre Schulstraße an Schultagen zwischen 9:30 und 15:30 Uhr',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: ELLABAROWSKY-2024
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php
+#: also_indoor: traffic (B,T)
+#: last_checked: 2024-11-20 (Pressemitteilung)
+#: check_frequency: 90d
+#: next_check: 2026-11-30
+	q4::inwork; 7696,7771 7632,7807 7621,7813 7537,7859 7499,7880
+',
+         'from' => 1731970800,
+         'id' => 4219,
+         'text' => 'Ella-Barowsky-Str.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis November 2026',
+         'type' => 'handicap',
+         'until' => 1796079600
        }
      
 );

@@ -2353,8 +2353,6 @@ Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross::ignrte 15899,14598 
 Große-Leege-Str. -> Verdener Gasse: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15899,14598 15968,14684 15946,14702
 Verdener Gasse -> Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15946,14702 15968,14684 16033,14756
 Mittelstreifen mit Bordsteienen	3nocross::ignrte 16259,7328 16195,7398 15920,7697
-Köpenicker Landstr. -> Lakegrund: Mittelstreifen mit Bordsteienen	3::igndisp 15920,7697 16195,7398 16368,7425
-Lakegrund -> Köpenicker Landstr.: Mittelstreifen mit Bordsteienen	3::igndisp 16368,7425 16195,7398 16259,7328
 Straßenbahntrasse	3nocross::ignrte 19053,2890 19021,2946 18946,3077
 Zum Trudelturm -> Max-Born-Str.: Straßenbahntrasse	3::igndisp 19101,3028 19021,2946 19053,2890
 Max-Born-Str. -> Zum Trudelturm: Straßenbahntrasse	3::igndisp 18946,3077 19021,2946 19101,3028
@@ -2915,6 +2913,7 @@ tragen (Treppe, 33 Stufen)	0:35:-81 10110,15678
 tragen (Treppe) oder Aufzug benutzen	0:30:-253 39964,102370
 tragen (Treppe, 6 Stufen)	0:15:13 14918,10769
 tragen (Treppe, 4 Stufen)	0:10:-169 7733,5893
+tragen (3 weite Stufen) oder wilde Rampe benutzen	0:15:-154 19756,4245
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382
@@ -3493,6 +3492,7 @@ weites Drängelgitter	BNP:2:-144:trailer=7 16026,9821
 weites Drängelgitter	BNP:2:45:trailer=7 16261,9663
 Drängelgitter/Barriere	BNP:3:51:trailer=10 17130,18771
 Drängelgitter	BNP:3:-217:trailer=10 13014,21775
+Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 Am Wiesenrain: Einbahnstraßenregelung	1s:inwork 23931,5992 24122,6007
@@ -3529,6 +3529,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
+Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769 14909,10732
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
 Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
@@ -3576,6 +3577,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
+Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9441,12670 9429,12728 9402,12792 9386,12833 9375,12911
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384

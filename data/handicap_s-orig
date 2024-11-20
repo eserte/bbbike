@@ -246,7 +246,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2024-11-06 vvv
+#: last_checked: 2024-11-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 vvv
 Marggraffbr¸cke: Behelfsbr¸cke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -287,7 +287,6 @@ G¸ldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 ### Adlershof ###
 # 
-# 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2022/08/04/marktplatz-adlershof-baumassnahmen-haben-begonnen/
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/umbau-des-marktplatzes-adlershof-hat-anfang-august-begonnen_a353228
@@ -303,7 +302,7 @@ G¸ldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX mˆglicherweise wird die nˆrdliche Fahrbahn dauerhaft eingezogen
 #: osm_watch: way id="20554168" version="26"
 #: osm_watch: way id="1155308749" version="1"
-#: last_checked: 2024-11-06 vvv
+#: last_checked: 2024-11-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-05-10 vvv
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
@@ -1402,9 +1401,6 @@ Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5
 # 
 # REMOVED --- #: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt) (inaktiv) --- #: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W) [alle falsch] --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: osm_watch: way id="4765039" version="26" --- #: osm_watch[closed]: note 4522036 1 --- #: last_checked: 2024-11-18 (mapillary) --- #: next_check: 2024-09-20 --- (hier fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450 ---  (hier auch fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7506,20170 7533,20275
 # 
-#: last_checked: 2024-11-18 (mapillary)
-Hielscherstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7556,19882 7604,19988
-# 
 #: temporary ^^^
 #: section ^^^
 ######################################################################
@@ -1975,7 +1971,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-11-19
+#: last_checked: 2024-11-20
 # REMOVED --- #: check_frequency: 14d
 #: check_frequency: 30d
 #: next_check_id: 2024-12-15
@@ -3723,7 +3719,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2024-09-03 vvv
+#: last_checked: 2024-11-20 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -4375,10 +4371,10 @@ Frieda-Arnheim-Promenade: einige Fuﬂg‰nger	q1 -2707,15456 -2699,15478 -2722,1548
 (Frieda-Arnheim-Promenade - Eiswerderstr.): einige Fuﬂg‰nger	q1 -2722,15486 -2712,15520
 #: XXX_prog BS (in beide Richtungen), ansonsten entfernen
 Waldweg - Kˆpenicker Str.: Bordstein	q2 20872,7268 20892,7236
-#: XXX_prog BS (am Wendehammer), ansonsten entfernen
-(Kattunsteig - Neltestr.): Bordstein	q2 19760,4256 19756,4245
+# REMOVED (-> gesperrt-orig-Eintrag existiert) --- #: XXX_prog BS (am Wendehammer), ansonsten entfernen --- (Kattunsteig - Neltestr.): Bordstein	q2 19759,4251 19756,4245
 (Lohmeyerstr. - Uferweg): Fuﬂg‰nger	q2 3450,12722 3445,12733
 (Kattunsteig - Hartriegelstr.): Spielplatz, Radfahren verboten	q4 19301,4814 19250,4830 19251,4879
+(Sonnenallee - Neltestr.): schmaler Pfad	q3 19610,4394 19750,4260
 (Hartriegelstr. - Michael-Br¸ckner-Str.): einige Fuﬂg‰nger	q1 18695,5076 18622,5049 18514,5028 18425,5032
 (Schlosspark - Mollwitzstr.): schmal	q3 2688,12701 2663,12699
 Binger Str.: einige Fuﬂg‰nger	q2 4067,6809 4061,6753

@@ -199,7 +199,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2024-11-18
+#: last_checked: 2024-11-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -3034,6 +3034,8 @@ tragen (Treppe, 33 Stufen)	0:35 10110,15678
 tragen (Treppe) oder Aufzug benutzen	0:30 39964,102370
 tragen (Treppe, 6 Stufen)	0:15 14918,10769
 tragen (Treppe, 4 Stufen)	0:10 7733,5893
+#: note: außerdem noch ein Bordstein am Wendehammer
+tragen (3 weite Stufen) oder wilde Rampe benutzen	0:15 19756,4245
 #
 #: section ^^^
 ###################################################################
@@ -3860,6 +3862,11 @@ Drängelgitter	BNP:3::trailer=10 13014,21775
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: HEIDEKRAUTBAHN-2021
+#: last_checked: 2024-11-18 (mapillary)
+#: check_frequency: 90d
+Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
+# 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="1"
 #: last_checked: 2024-11-15
@@ -4042,7 +4049,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.)
-#: last_checked: 2024-11-19 vvv
+#: last_checked: 2024-11-20 vvv
 #: osm_watch: way id="1199463691" version="3"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050
@@ -4196,9 +4203,16 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 # REMOVED --- #: osm_watch: way id="1195364871" version="3" --- #: note: am 2023-04-25 gab es einen recht schmalen Durchgang, mit einem Fahrrad ist man noch gerade so durchgekommen; am 2023-05-04 auch der gleiche schmale Durchgang, aber ein davor geparktes Auto hätte vielleicht einiges an Rangierarbeit verursacht; am 2023-05-16 existiert wieder ein schmaler Durchgang -> von gesperrt nach handicap_s verschoben, am 2023-06-15 kein Kran mehr, aber nun wieder komplett gesperrt --- #: last_checked: 2023-09-21 --- Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,12094 10050,11942
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
+#: note: Danach mit Mapillary abfahren!
+#: priority: #C
+#: last_checked: 2024-11-20
+#: check_frequency: 14d
+Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769 14909,10732
+# 
+#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-10-24 vvv
+#: last_checked: 2024-11-20 vvv
 #: check_frequency: 60d vvv
 An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
@@ -4537,9 +4551,10 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.berliner-woche.de/mitte/c-bauen/katholisches-forum-am-bebelplatz-wird-komplettiert_a385644 (Umbauarbeiten: Kathedrale bis Ende 2024, Bernhard-Lichtenberg-Haus bis Mitte 2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2024/03/sankt-hedwigs-kathedrale-sanierung-wiedereroeffnung-umbau-24-november-berlin-mitte.html (Eröffnung der Kathedrale am 24.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-oeffnet-nach-langer-sanierung-id248135
+#: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-wird-nach-sanierung-wieder-eroeffnet-id270349 (Bernhard-Lichtenberg-Haus frühestens Ende 2025 fertig)
 #: last_checked: 2024-11-15
 #: check_frequency: 90d
-#: next_check: 2025-06-30
+#: next_check: 2025-12-31
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 # 
 # REMOVED --- #: by: mapillary --- #: last_checked: 2022-02-05 (mapillary) --- #: check_frequency: 90d --- Ackerstr. (Schulzendorf): Hochbauarbeiten, Straße gesperrt	2::inwork 22996,-4983 22962,-5193
@@ -4798,7 +4813,7 @@ Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2024-11-06 vvv
+#: last_checked: 2024-11-20 vvv
 #: next_check: 2028-01-01 vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -4810,7 +4825,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-11-19
+#: last_checked: 2024-11-20
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4821,7 +4836,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://dielinke.berlin/start/det/nachfrage-zur-beantwortung-der-schriftlichen-anfrage-scha-ix-0495-bauprojekt-fanny-zobel-strasse/ (weiterhin: Gesamtmaßnahme bis 2027)
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2024-10-30 vvv
+#: last_checked: 2024-11-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -4830,6 +4845,13 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
+# 
+#: next_check_id: LAKEGRUND-2024
+#: XXX beide Wege gesperrt, nördlicher komplett und südlicher teilweise
+#: last_checked: 2024-11-20
+#: check_frequency: 90d
+#: next_check: 2026-12-31
+Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 # 
 # REMOVED (offener Bauzaun heute, nur noch wenige Bauarbeiten) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-04-19 --- #: check_frequency: 30d --- Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892 8025,13835
 # REMOVED (Schranke wird nicht genutzt?) --- #: next_check_id: EUROPACITY-2015 --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-02-14 --- Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7734,13944 7820,13994
