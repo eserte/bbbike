@@ -23,7 +23,8 @@ https://quartier-heidestrasse.contempo-webcam.de/	WCbroken 7799,13944 7751,14023
 #: note: letztes Bild am 2024-03-14
 https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php	WCbroken 7641,14286 7642,14177
 #: historical_note: früher 7712,14009 7621,14076; dann 7691,14248 7661,14200
-https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php	WC 7658,14304 7617,14281
+#: note: letztes Bild am 2024-03-13
+https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php	WCbroken 7658,14304 7617,14281
 #: historical_note: früher 7582,14169 7540,14240
 https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php	WC 7642,14326 7567,14373
 #: historical_note: früher 7760,13961 7833,13913
@@ -41,7 +42,7 @@ https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 
 https://www.berlin.de/webcams/4350926-4350835-rbb-fernsehzentrum.html	WC 1674,11250 1712,11133
 # 
 #: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80
-#: note: Seite existiert noch, aber keine Webcam-Bilder (Stand 19.2.2022 + 17.11.2023)
+#: note: Seite existiert noch, aber keine Webcam-Bilder (Stand 19.2.2022 + 17.11.2023 + 19.11.2024)
 # früher: http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907
 # früher: http://www.olympiastadion-berlin.de/webcam3.php	WC -517,11940 -627,11928
 # früher: http://www.olympiastadion-berlin.de/webcam5.php	WC -1262,11788 -1185,11806
@@ -74,10 +75,10 @@ https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html	WC 8746,12225
 #: section ^^^
 # 
 #: section Steglitz vvv
-#: note: ebenso als Loop: http://www.met.fu-berlin.de/cgi-bin/webcam/Cam00_loop
-#: note: auch verlinkt von: http://wind.met.fu-berlin.de/wind_work/main.php?lId=500# , hier gibt es noch zwei weitere Webcams von der Stell
-# früher: http://www.met.fu-berlin.de/de/wetter/webcam/
-https://wind.met.fu-berlin.de/loops/webcam/picam2_prod.jpg	WC 4149,5755 4140,5796
+#: historical_note: früher: http://www.met.fu-berlin.de/de/wetter/webcam/
+#: historical_note: früher (bis 2024?): https://wind.met.fu-berlin.de/loops/webcam/picam2_prod.jpg
+#: note: hier gibt es insgesamt fünf Kameras
+https://wind.met.fu-berlin.de/webcams/2	WC 4149,5755 4140,5796
 #: section ^^^
 # 
 #: section Reinickendorf vvv
@@ -94,25 +95,26 @@ https://cam.spacesquad.de/images/live.jpg	WC 9504,6954 9550,7039
 #: section ^^^
 # 
 #: section Friedrichshain vvv
-#: note: 404 (2023-09-15)
+#: note: 404 (2023-09-15, 2024-11-19)
 https://trockland.webcam-profi.de/berlin/pier6163/image.jpg	WCbroken 12770,10969 12775,11090
 #: note: existiert nicht mehr (2024-01-15)
+#: note: mittlerweile (2024-11-19) gibt es ein Foto aus dem Sommer (2024?)
 #: osm_watch: node id="9190626241" version="4"
 https://www.finanzen.de/webcam	WCbroken 13440,10498 13368,10637
 #: section ^^^
 # 
 #: section ^^^
 # 
-#: section Potsdam vvv
-#: note: vom Hotel Mercure Richtung Garnisonkirche
-https://garnisonkirche-potsdam.de/baufortschritt/webcam/	WC -12720,-1747 -12791,-1707
-#: section ^^^
+# REMOVED --- #: section Potsdam vvv
+# REMOVED (existiert nicht mehr) --- #: note: vom Hotel Mercure Richtung Garnisonkirche --- https://garnisonkirche-potsdam.de/baufortschritt/webcam/	WC -12720,-1747 -12791,-1707
+# REMOVED --- #: section ^^^
 # 
 #: section Lübbenau vvv
 #: historical_note: früher: http://www.grosser-spreewaldhafen.de/livecam.html
 #: historical_note: früher: http://www.grosser-kahnhafen.de/index.php?option=com_content&view=article&id=63:webcam-am-grossen-spreewaldhafen&catid=39&Itemid=94
 #: historical_note: früher: https://www.grosser-kahnhafen.de/service/webcam-wetter
-http://www.spreewaldwetter.de/webcams/#webcam-spreewaldhafen	WC 50962,-59025
+#: historical_note: früher: http://www.spreewaldwetter.de/webcams/#webcam-spreewaldhafen	WC 50962,-59025
+https://www.spreewaelder-lichtnacht.de/spreewaldwetter/	WC 50962,-59025
 #: section ^^^
 #
 # IGNORIERT:
