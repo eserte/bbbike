@@ -14,6 +14,11 @@ BBBikeGit - return patchnum
   require BBBikeGit;
   %git_info = BBBikeGit::git_info();
 
+Or from cmdline:
+
+  perl -I. miscsrc/BBBikeGit.pm
+  perl -I. miscsrc/BBBikeGit.pm --yaml
+
 =head1 DESCRIPTION
 
 This module returns information about the current git version and
@@ -134,12 +139,21 @@ sub git_info {
 
 return 1 if caller;
 
-require Data::Dumper;
 require Getopt::Long;
 
-Getopt::Long::GetOptions("v" => \$VERBOSE)
+my $as = 'dd';
+Getopt::Long::GetOptions(
+    "v" => \$VERBOSE,
+    "yaml" => sub { $as = 'yaml' },
+)
     or die "usage: $0 [-v]";
 
 my %git_info = git_info();
-print Data::Dumper::Dumper(\%git_info);
+if ($as eq 'yaml') {
+    require BBBikeYAML;
+    print BBBikeYAML::Dump(\%git_info);
+} else {
+    require Data::Dumper;
+    print Data::Dumper::Dumper(\%git_info);
+}
 
