@@ -194,7 +194,7 @@ sub find_active_sourceids_bvg2024 {
 	my $resp = $ua->get($disruptions_query_url);
 	die "Request to $disruptions_query_url failed:\n" . $resp->dump
 	    if !$resp->is_success;
-	my $json = $resp->decoded_content;
+	my $json = $resp->decoded_content(charset => 'none');
 	my $data = JSON::XS::decode_json($json);
 	push @disruptions, @{ $data->{elements} };
 	$max_pages = $data->{numPages};
@@ -205,7 +205,7 @@ sub find_active_sourceids_bvg2024 {
 	my $ofile = '/tmp/bvg_checker_disruptions_2024.json';
 	warn "INFO: write JSON to $ofile...\n";
 	open my $ofh, '>', $ofile or die $!;
-	print $ofh JSON::XS::encode_json(\@disruptions);
+	print $ofh JSON::XS->new->pretty->canonical->utf8->encode(\@disruptions);
 	close $ofh or die $!;
     }
     my %links;
