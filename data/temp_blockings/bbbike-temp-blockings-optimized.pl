@@ -3300,7 +3300,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-20 vvv
+#: last_checked: 2024-11-21 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-22 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
@@ -4332,7 +4332,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-10-25 (mapillary)
+#: last_checked: 2024-11-21
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4510,33 +4510,7 @@ Bäkepark	2::inwork 5131,4207 5161,4206 5239,4175 5282,4145
          'until' => 1735664400
        },
        undef,
-       {
-         'data' => '#: next_check_id: LYNAR-2022
-#: source_id: 2147343528 (bis Mitte September 2019) (inaktiv)
-# REMOVED --- #: note: bei fritz in beiden Richtungen gesperrt?
-# REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7259,14870 7308,14814 7353,14767 7429,14667 7458,14643
-#: note: abgesperrter Bereich etwa 40m, zeitweise könnte die Absperrung schon ab Sparrstr. gelten
-#: add_fragezeichen: Ist der Straßenabschnitt zwischen Tegeler Str. und Sparrstr. weiterhin gesperrt?
-#: also_indoor: traffic (G,W)
-#: priority: #B vvv
-#: last_checked: 2024-11-03 vvv
-#: check_frequency: 45d vvv
-# REMOVED --- #: next_check: 2024-12-31 vvv
-#: next_check: 2024-11-15 vvv
-	q3::inwork 7259,14870 7409,14954
-#: source_id: viz2021:13.36175,52.541,04.11.2024,07:00 (bis 15.11.2024) (inaktiv)
-Lynarstr. zwischen Sparrplatz und Müllerstr.	q3::inwork 7409,14954 7461,14986 7624,15083 7694,15125 7745,15160
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-',
-         'from' => 1730659036,
-         'id' => 3060,
-         'text' => 'Lynarstr.: wegen Bauarbeiten gesperrt, mindestens bis Mitte November 2024',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7025,7 +6999,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-11-03 vvv
+#: last_checked: 2024-11-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -7149,7 +7123,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
                               11
                             ]
                           ],
-         'text' => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen engen Weg am Rand möglich',
+         'text' => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen Weg am Rand möglich',
          'type' => 'gesperrt',
          'until' => 1736290799
        },
@@ -7171,7 +7145,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-11-15 vvv
+#: last_checked: 2024-11-21 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -7865,7 +7839,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-11-15 vvv
+#: last_checked: 2024-11-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8409,14 +8383,14 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024)
+         'data' => '#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024) (bis 09.12.2024)
 	q4::inwork 10197,16528 10209,16674
 ',
          'from' => 1727586000,
          'id' => 4179,
-         'text' => 'Björnsonstr.: Gleisbauarbeiten, Sperrung der Fahrbahn, vom 30.09.2024 07:00 bis 22.11.2024 17:00',
+         'text' => 'Björnsonstr.: Gleisbauarbeiten, Sperrung der Fahrbahn, vom 30.09.2024 07:00 bis 09.12.2024 17:00',
          'type' => 'handicap',
-         'until' => 1732291200
+         'until' => 1733760000
        },
        undef,
        undef,
@@ -8459,19 +8433,21 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        },
        {
          'data' => '#: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
-#: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024) (bis 17.01.2025)
+#: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024) (bis 17.01.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
 #: source_id: bvg2024:147#HIM_FREETEXT_242095
+#: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025)
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
 #: last_checked: 2024-11-15
 #: check_frequency: 14d
 #: next_check: 2025-01-17
-Fischerinsel	q4::inwork; 10578,11969 10512,12039
+#Fischerinsel	q4::inwork; 10578,11969 10512,12039
+Fischerinsel	q4::inwork 10578,11969 10512,12039
 ',
          'from' => 1727643600,
          'id' => 4187,
-         'text' => 'Fischerinsel: Richtung Breite Str. vor Mühlendamm: Wasserrohrbruch, Fahrtrichtung gesperrt, vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
+         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn gesperrt, vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
          'type' => 'gesperrt',
          'until' => 1737129600
        },
@@ -8502,20 +8478,7 @@ Fischerinsel	q4::inwork; 10578,11969 10512,12039
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: SCHWEDTER-2024
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig
-#: last_checked: 2024-11-03
-#: check_frequency: 14d
-	q4::inwork 10530,14452 10567,14337 10629,14299
-',
-         'from' => undef,
-         'id' => 4191,
-         'text' => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,

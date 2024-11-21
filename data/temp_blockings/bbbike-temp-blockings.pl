@@ -21560,7 +21560,7 @@ EOF
        until => 1379268000, # 2013-09-15 20:00
        text  => 'Bergstr.: Veranstaltung (Bergstraßenfest), Straße zwischen Körnerstr. und Heesestr. gesperrt, bis 15.09.2013 20:00 Uhr ',
        periodic => 1,
-       recurring => [['yearly', days => 15, months => 9]],
+       # gibt es vermutlich nicht mehr --- recurrences => [['yearly', days => 15, months => 9]],
        type  => 'handicap',
        source_id => 'IM_020306',
        data  => <<EOF,
@@ -23041,7 +23041,7 @@ EOF
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-20 vvv
+#: last_checked: 2024-11-21 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-22 vvv
 Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
@@ -28811,7 +28811,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-10-25 (mapillary)
+#: last_checked: 2024-11-21
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29658,7 +29658,7 @@ EOF
 EOF
      },
      { from  => 1730659036, # 1544338800, # 2018-12-09 08:00
-       until => undef, # $isodate2epoch->("2019-09-07 18:00:00"), # 1561996800, # 2019-07-01 18:00
+       until => 1732213393, # undef, # $isodate2epoch->("2019-09-07 18:00:00"), # 1561996800, # 2019-07-01 18:00
 #      text  => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, Radfahrer dürfen den Gehweg benutzen, voraussichtlich bis Mitte September 2019',
 #      text  => 'Lynarstr.: Fahrbahn an der Tegeler Str. gesperrt, auf Gehweg ausweichen, voraussichtlich bis Mitte September 2019',
 #       text  => 'Lynarstr.: Fahrbahn an der Tegeler Str. gesperrt, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
@@ -29670,20 +29670,12 @@ EOF
 # REMOVED --- #: note: bei fritz in beiden Richtungen gesperrt?
 # REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7259,14870 7308,14814 7353,14767 7429,14667 7458,14643
 #: note: abgesperrter Bereich etwa 40m, zeitweise könnte die Absperrung schon ab Sparrstr. gelten
-#: add_fragezeichen: Ist der Straßenabschnitt zwischen Tegeler Str. und Sparrstr. weiterhin gesperrt?
 #: also_indoor: traffic (G,W)
-#: priority: #B vvv
-#: last_checked: 2024-11-03 vvv
-#: check_frequency: 45d vvv
-# REMOVED --- #: next_check: 2024-12-31 vvv
-#: next_check: 2024-11-15 vvv
+# REMOVED --- #: add_fragezeichen: Ist der Straßenabschnitt zwischen Tegeler Str. und Sparrstr. weiterhin gesperrt? --- #: priority: #B vvv --- #: last_checked: 2024-11-03 vvv --- #: check_frequency: 45d vvv --- # REMOVED --- #: next_check: 2024-12-31 vvv --- #: next_check: 2024-11-15 vvv
 	q3::inwork 7259,14870 7409,14954
 #: source_id: viz2021:13.36175,52.541,04.11.2024,07:00 (bis 15.11.2024) (inaktiv)
 Lynarstr. zwischen Sparrplatz und Müllerstr.	q3::inwork 7409,14954 7461,14986 7624,15083 7694,15125 7745,15160
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
 EOF
      },
      { from  => 1544425200, # 2018-12-10 08:00
@@ -41525,7 +41517,7 @@ EOF
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
 #: osm_watch: way id="23121446" version="32"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-11-03 vvv
+#: last_checked: 2024-11-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -41811,7 +41803,7 @@ EOF
        prewarn_days => 9,
        postwarn_days => 7,
        recurrences => [['yearly', days => 19, months => 11]],
-       text  => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen engen Weg am Rand möglich',
+      text  => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen Weg am Rand möglich', # note: früher (2023) "eng"
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BEBELPLATZXMAS-2022
@@ -41860,7 +41852,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-11-15 vvv
+#: last_checked: 2024-11-21 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -44200,7 +44192,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-11-15 vvv
+#: last_checked: 2024-11-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45291,11 +45283,11 @@ EOF
 EOF
      },
      { from  => 1727586000, # 2024-09-29 07:00
-       until => 1732291200, # 2024-11-22 17:00
-       text  => 'Björnsonstr.: Gleisbauarbeiten, Sperrung der Fahrbahn, vom 30.09.2024 07:00 bis 22.11.2024 17:00',
+       until => $isodate2epoch->("2024-12-09 17:00:00"), # 1732291200, # 2024-11-22 17:00
+       text  => 'Björnsonstr.: Gleisbauarbeiten, Sperrung der Fahrbahn, vom 30.09.2024 07:00 bis 09.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024)
+#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024) (bis 09.12.2024)
 	q4::inwork 10197,16528 10209,16674
 EOF
      },
@@ -45385,19 +45377,22 @@ EOF
      },
      { from  => 1727643600, # 2024-09-29 23:00
        until => $isodate2epoch->("2025-01-17 17:00:00"), # 1732636800, # 2024-11-26 17:00
-       text  => 'Fischerinsel: Richtung Breite Str. vor Mühlendamm: Wasserrohrbruch, Fahrtrichtung gesperrt, vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
+#       text  => 'Fischerinsel: Richtung Breite Str. vor Mühlendamm: Wasserrohrbruch, Fahrtrichtung gesperrt, vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
+       text  => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn gesperrt, vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
-#: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024) (bis 17.01.2025)
+#: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024) (bis 17.01.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
 #: source_id: bvg2024:147#HIM_FREETEXT_242095
+#: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025)
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
 #: last_checked: 2024-11-15
 #: check_frequency: 14d
 #: next_check: 2025-01-17
-Fischerinsel	q4::inwork; 10578,11969 10512,12039
+#Fischerinsel	q4::inwork; 10578,11969 10512,12039
+Fischerinsel	q4::inwork 10578,11969 10512,12039
 EOF
      },
      { from  => 1728882000, # 2024-10-14 07:00
@@ -45438,15 +45433,13 @@ EOF
 EOF
      },
      { from  => undef, #
-       until => undef, #
+       until => 1732213854, # undef, #
        text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHWEDTER-2024
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig
-#: last_checked: 2024-11-03
-#: check_frequency: 14d
+# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d
 	q4::inwork 10530,14452 10567,14337 10629,14299
 EOF
      },
