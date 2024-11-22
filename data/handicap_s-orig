@@ -109,7 +109,7 @@ Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-11-19
+#: last_checked: 2024-11-22
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -641,10 +641,10 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Karlshorst ###
 # 
 #: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00
-#: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024) (bis 22.11.2024)
+#: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024) (bis 22.11.2024) (bis 30.11.2024)
 #: source_id: bvg2024:n40#HIM_FREETEXT_232184 (bis auf weiteres) (inaktiv, aber Sperrung dürfte weiterhin bestehen) (wieder aktiv)
 #: last_checked: 2024-11-16
-#: next_check: 2024-11-22
+#: next_check: 2024-11-30
 # REMOVED --- #: valid: -20241122
 Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17702,8855 17720,8854 17736,8850
 # 
@@ -1043,8 +1043,9 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: last_checked: 2024-11-16
-Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15261,10738 15245,10719
+#: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
+#: last_checked: 2024-11-22
+Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
 # REMOVED (zwar steht hier noch ein Einfahrt-verboten-Schild, aber es gibt keine Verengung der Fahrbahn mehr) --- #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-260623/ (bis 03.07.2023, weitere Bauabschnitte bis Mitte Juli 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1673195634050859008#m --- #: source_id: viz2021:13.507611,52.474933,26.06.2023,06:00 (bis 3.7.2023) (bis 10.7.2023) (inaktiv) --- #: note: Halteverbote bis 2023-07-14 --- #: last_checked: 2023-07-11 --- #: next_check: 2023-07-14 --- #: valid: -20230714 --- Am Walde: kurze Einbahnstraßenregelung an der Rummelsburger Landstraße, Bürgersteig existiert	q3::inwork; 17527,7812 17590,7828
@@ -1914,7 +1915,9 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8
 #: note: mittlerweile (seit 2024?) am westlichen Ende ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer, keine Schilder am östlichen Ende
 (Kynaststr. - Paul-und-Paula-Ufer): Fußgänger	q1 14797,10476 14820,10473 14861,10467
 #: note: früher vermutlich für Radfahrer frei, jetzt nicht mehr
-Am Rummelsburger See: Fußgänger, kurvenreich, Grünanlage	q3 15793,9334 15813,9378 15819,9430 15749,9558 15739,9583 15708,9607 15659,9647 15621,9704 15626,9710 15561,9809 15465,9860 15347,9922 15296,10000 15295,10022 15260,10048 15283,10087 15289,10092 15289,10097 15311,10127 15306,10142 15253,10171
+Am Rummelsburger See: Fußgänger, kurvenreich, Grünanlage	q3 15793,9334 15813,9378 15819,9430 15749,9558 15739,9583 15708,9607 15659,9647 15621,9704 15626,9710 15561,9809 15465,9860 15347,9922 15296,10000 15295,10022 15260,10048 15283,10087 15289,10092 15289,10097 15311,10127 15306,10142
+#: note: hier keine Grünanlage
+Am Rummelsburger See: einige Fußgänger	q2 15306,10142 15253,10171
 #: note: früher vermutlich für Radfahrer frei, jetzt gibt es hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
 Am Rummelsburger See: Fußgänger, Grünanlage	q3 15253,10171 15199,10211 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411
 # REMOVED --- #: next_check_id: RUMMELSBURGERBUCHT-2021 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung einer Verbreiterung, wo genau?) --- #: XXX nach den Bauarbeiten am "My Bay Way" wird der zweite Strang wohl wieder offen sein, dann wieder mit dem vorherigen Eintrag zusammenfügen --- #: last_checked: 2022-05-07 --- #: check_frequency: 90d

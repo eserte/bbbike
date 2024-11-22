@@ -17583,7 +17583,7 @@ EOF
        until => $isodate2epoch->("2023-12-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 vermutlich nicht statt
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        text  => 'Alt-Köpenicker Weihnachtsmarkt vom 15.12.2023 bis zum 17.12.2023',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -17644,11 +17644,11 @@ EOF
 	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2023-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
-       until => $isodate2epoch->("2024-01-02 23:59:59"),
+     { from  => $isodate2epoch->("2024-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
+       until => $isodate2epoch->("2025-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 12, start => "2023-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten, 2022/2023 ebenso
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2023 bis 02.01.2024',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2024 bis 02.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SILVESTER-YYYY
@@ -23034,19 +23034,21 @@ EOF
        until => $isodate2epoch->("2024-11-22 18:00:00"), # $isodate2epoch->("2024-11-08 18:00:00"), # 1513622255, # $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
 #       text  => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
 #       text  => 'Modersohnstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Revaler Str. gesperrt, voraussichtlich bis 08.11.2024',
-       text  => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, voraussichtlich bis 22.11.2024',
+#       text  => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, voraussichtlich bis 22.11.2024',
+       text  => 'Gärtnerstr./Modersohnstr.: Einbahnstraße noch ohne "Radfahrer frei"-Beschilderung',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342105 (inaktiv)
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-21 vvv
+#: last_checked: 2024-11-22 vvv
 #: check_frequency: 7d vvv
-#: next_check: 2024-11-22 vvv
-Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
-Wühlischstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,11552
-#: next_check ^^^
+# REMOVED --- #: next_check: 2024-11-22 vvv
+Modersohnstr.: Markierungsarbeiten fertig, , Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14134,11272 14181,11434
+Gärnerstr.: Markierungsarbeiten fertig, Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14211,11552 14181,11434
+# REMOVED --- Gärnerstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,11552
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -25879,11 +25881,11 @@ EOF
 	2::inwork 20640,7122 20722,6971
 EOF
      },
-     { from  => $isodate2epoch->("2023-12-28 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
-       until => $isodate2epoch->("2024-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
+     { from  => $isodate2epoch->("2024-12-28 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
+       until => $isodate2epoch->("2025-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 12, start => "2023-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty; 2021/2022 ebenso, nur eine kleine, 2022/2023 ebenso
-       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2023 bis 02.01.2024',
+       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2024 bis 02.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SILVESTER-YYYY
@@ -27726,7 +27728,7 @@ EOF
 #: note: fritz meint 18.12.2017 (frühere Meldung von 2017)
 #: source_id: LMS-BR_r_LMS-BR_112957_LMS-BR_72 (inaktiv)
 #: source_id: 2147341767 (inaktiv)
-#: source_id: viz2021:13.404559,52.590527,07.10.2024,07:00 (bis 06.10.2024)
+#: source_id: viz2021:13.404559,52.590527,07.10.2024,07:00 (bis 06.10.2024) (inaktiv)
 	q4::inwork 10178,20525 10226,20539 10309,20562 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
 EOF
      },
@@ -36274,7 +36276,7 @@ EOF
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024)
-#: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024)
+#: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -41270,7 +41272,7 @@ EOF
 #: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
 #: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
@@ -41278,7 +41280,8 @@ EOF
 #: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-11-20 vvv
+#: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
+#: last_checked: 2024-11-21 (krickstadt) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-11-22 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -41294,6 +41297,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 #: priority ^^^
 EOF
      },
@@ -41602,7 +41606,7 @@ EOF
 #: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024) (bis 01.09.2024) (inaktiv)
 #: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024) (bis 20.12.2024) (inaktiv)
-#: source_id: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
+#: source_id[inactive]: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
 #: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
@@ -42725,7 +42729,7 @@ EOF
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-10-20 (daf)
+#: last_checked: 2024-11-20 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -44646,7 +44650,7 @@ EOF
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-20
+#: last_checked: 2024-11-22
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -45384,8 +45388,9 @@ EOF
 #: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
 #: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024) (bis 17.01.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
-#: source_id: bvg2024:147#HIM_FREETEXT_242095
+#: source_id[inactive]: bvg2024:147#HIM_FREETEXT_242095
 #: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025)
+#: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
 #: last_checked: 2024-11-15
@@ -45675,7 +45680,7 @@ EOF
        text  => 'Weißenseer Weg: gesperrte Mittelstreifenüberfahrt von/zur Fritz-Lesch-Str., evtl. auch für Fußgänger und Radfahrer, vom 08.11.2024 07:00 bis 22.11.2024 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.470429,52.539862,08.11.2024,07:00 (bis 22.11.2024)
+#: source_id: viz2021:13.470429,52.539862,08.11.2024,07:00 (bis 22.11.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1854765798377582881
 #: by: https://pbs.twimg.com/media/Gby-veKW8AoM44w?format=jpg&name=medium
 	3::inwork 14828,15050 14843,15007 14922,15082
@@ -45703,7 +45708,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: HIELSCHER-2024
-#: source_id: viz2021:13.364741,52.585104,11.11.2024,07:00 (bis 22.11.2024)
+#: source_id: viz2021:13.364741,52.585104,11.11.2024,07:00 (bis 22.11.2024) (inaktiv)
 	q4::inwork 7556,19882 7604,19988
 EOF
      },
@@ -45773,6 +45778,19 @@ EOF
 #: check_frequency: 90d
 #: next_check: 2026-11-30
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7537,7859 7499,7880
+EOF
+     },
+     { from  => 1732172400, # 2024-11-21 08:00
+       until => 1741622400, # 2025-03-10 17:00
+       text  => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, mögliche Einschränkungen (Umleitung?) für den Radverkehr, vom 22.11.2024 08:00 bis 10.03.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025)
+#: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025)
+#: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr?
+#: priority: #A
+#: next_check: 2024-11-22
+	q4::inwork; 8453,13611 8572,13671
 EOF
      },
     );

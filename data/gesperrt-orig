@@ -87,6 +87,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1495468.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/zukunft-planen/stadtumbau-west/artikel.359321.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_48_3491_3534_online.pdf (minimale Erweiterung des B-Plans)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_49_3535_3590_online.pdf (Bebauungsplan 7-100 VE)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="22"
 #: last_checked: 2024-11-04 (mapillary)
@@ -1002,12 +1003,12 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.567832,52.454403,23.01.2023,08:00 (bis 30.1.2023) (inaktiv)
 #: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt -> inaktiv) (wieder aktiv, bis 15.7.2023) (inaktiv)
 #: source_id: viz2021:13.56657,52.45535,13.07.2023,17:06 (bis 15.07.2023) (inaktiv)
-#: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027)
+#: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027) (bis 30.06.2027)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: osm_watch: way id="428260957" version="8"
 #: last_checked: 2024-11-04 (mapillary) vvv
 #: check_frequency: 180d vvv
-#: next_check: 2027-12-31 vvv
+#: next_check: 2027-06-30 vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21623,5661 21605,5687 21600,5694
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
@@ -4205,18 +4206,19 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2024-11-20
+#: last_checked: 2024-11-22
 #: check_frequency: 14d
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769 14909,10732
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-11-20 vvv
-#: check_frequency: 60d vvv
-An den Eiswerken	2::inwork 15004,10791 14994,10732 14984,10677
+#: last_checked: 2024-11-22 vvv
+#: check_frequency: 30d vvv
+# REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
+An den Eiswerken: mit Bauzaun abgesperrt	2::inwork 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
-Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
+# REMOVED (offen) --- Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^

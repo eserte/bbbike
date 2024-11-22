@@ -2539,7 +2539,51 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SILVESTER-YYYY
+#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
+#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
+#: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72 (inaktiv)
+#: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72 (inaktiv)
+#: source_id: viz2021:13.369347,52.515752,26.12.2023,06:00 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.37737,52.51457,26.12.2023,19:35 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.37679,52.5163,26.12.2023,19:34 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024) (inaktiv)
+#: by: https://viz.berlin.de/2020/12/welcome21/
+#: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
+#: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
+#: by: https://viz.berlin.de/aktuelle-meldungen/silvesterfeier-sperrungen/ (außerdem noch weitergehende Sperrungen: alle Straßen rund um den Großen Stern)
+Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
+Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
+Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+Str. des 17 Juni/Kleine Querallee	3::temp 8391,12389 8344,12221 8327,12174
+Str. des 17 Juni/Kleine Querallee	3::temp 8327,12174 8344,12221 8391,12389
+Simsonweg	2::temp 8546,12279 8391,12389 8354,12416
+Kleine Querallee	2::temp 8400,12417 8391,12389 8344,12221
+# 2020 hier nicht --- Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+# 2020 hier nicht --- Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
+# 2020 hier nicht --- Str. des 17 Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+',
+         'from' => 1735102800,
+         'id' => 2010,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              12,
+                              'start',
+                              '2023-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2024 bis 02.01.2025',
+         'type' => 'gesperrt',
+         'until' => 1735858799
+       },
        undef,
        undef,
        undef,
@@ -3295,26 +3339,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147342105 (inaktiv)
-#	q3::inwork; 14181,11434 14211,11552
-#: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
-#: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-21 vvv
-#: check_frequency: 7d vvv
-#: next_check: 2024-11-22 vvv
-Modersohnstr.: Markierungsarbeiten weitgehend fertig, trotzdem temporäre Einbahnstraße für alle	q2::inwork; 14134,11272 14181,11434
-Wühlischstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,11552
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1730674800,
-         'id' => 2495,
-         'text' => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, voraussichtlich bis 22.11.2024',
-         'type' => 'handicap',
-         'until' => 1732294800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3911,7 +3936,61 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SILVESTER-YYYY
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
+#: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
+#: by: https://www.tagesspiegel.de/berlin/fernsehshow-statt-partymeile-silvesterfeier-am-brandenburger-tor-findet-ohne-publikum-statt/26649428.html (vermutlich wird weniger & kürzer gesperrt werden)
+#: note: am 2023-12-29 mittags war der östliche Tiergarten komplett umzäunt, aber die Wege waren noch offen
+Pariser Platz	2::temp 8722,12268 8637,12258
+Straße des 17. Jui	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 7031,12320 7383,12095
+	2::temp 7875,12363 7822,12201 7816,12150
+	2::temp 8400,12417 8391,12389 8344,12221
+	2::temp 8354,12416 8391,12389 8546,12279
+	2::temp 8775,12457 8804,12280 8722,12268
+# umschließende Fläche: 6892,12023 6844,11993 6815,11952 7436,11532 7576,11534 7682,11549 7851,11602 8112,11685 8224,11710 8476,11797 8544,11861 8571,12154 8498,12198 8470,12216 8018,12162 7780,12127 7283,12068
+	2::temp 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
+	2::temp 7823,12120 7832,12036 7822,11952 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7813,11589 7816,11571
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7664,11597 7711,11558 7713,11553 7717,11540
+	2::temp 8210,11775 8221,11876 8221,11885 8215,12156
+	2::temp 8210,11775 8244,11878 8327,12174
+	2::temp 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742
+	2::temp 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
+	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566
+	2::temp 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
+	2::temp 7600,11513 7621,11541 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099
+	2::temp 8005,11627 8006,11648 8014,11753 8016,11770 8020,11937 8022,12016
+	2::temp 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
+	2::temp 8034,12093 8049,12140
+	2::temp 8167,11865 8132,11910
+	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
+	2::temp 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197
+	2::temp 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
+	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
+	2::temp 7373,11594 7362,11561 7359,11538 7356,11517
+	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
+',
+         'from' => 1735394400,
+         'id' => 2767,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              28,
+                              'months',
+                              12,
+                              'start',
+                              '2023-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2024 bis 02.01.2025',
+         'type' => 'gesperrt',
+         'until' => 1735858799
+       },
        undef,
        undef,
        undef,
@@ -4115,19 +4194,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: note: fritz meint 18.12.2017 (frühere Meldung von 2017)
-#: source_id: LMS-BR_r_LMS-BR_112957_LMS-BR_72 (inaktiv)
-#: source_id: 2147341767 (inaktiv)
-#: source_id: viz2021:13.404559,52.590527,07.10.2024,07:00 (bis 06.10.2024)
-	q4::inwork 10178,20525 10226,20539 10309,20562 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
-',
-         'from' => 1728165600,
-         'id' => 2916,
-         'text' => 'Schillerstr.: zwischen Heinrich-Böll-Str. und Straße 18 abschnittsweise Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen vom 07.10.2024 07:00 bis 22.11.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1732291200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5694,7 +5761,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024)
-#: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024)
+#: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -6900,7 +6967,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
 #: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
@@ -6908,7 +6975,8 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
-#: last_checked: 2024-11-20 vvv
+#: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
+#: last_checked: 2024-11-21 (krickstadt) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-11-22 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -6924,6 +6992,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 #: priority ^^^
 ',
          'from' => undef,
@@ -7025,7 +7094,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024) (bis 01.09.2024) (inaktiv)
 #: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024) (bis 20.12.2024) (inaktiv)
-#: source_id: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
+#: source_id[inactive]: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
 #: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
@@ -7352,7 +7421,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-10-20 (daf)
+#: last_checked: 2024-11-20 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -8049,7 +8118,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-20
+#: last_checked: 2024-11-22
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8435,8 +8504,9 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'data' => '#: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
 #: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024) (bis 17.01.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
-#: source_id: bvg2024:147#HIM_FREETEXT_242095
+#: source_id[inactive]: bvg2024:147#HIM_FREETEXT_242095
 #: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025)
+#: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
 #: last_checked: 2024-11-15
@@ -8647,21 +8717,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'type' => 'gesperrt',
          'until' => 1744725600
        },
-       {
-         'data' => '#: source_id: viz2021:13.470429,52.539862,08.11.2024,07:00 (bis 22.11.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1854765798377582881
-#: by: https://pbs.twimg.com/media/Gby-veKW8AoM44w?format=jpg&name=medium
-	3::inwork 14828,15050 14843,15007 14922,15082
-	3::inwork 14922,15082 14843,15007 14959,14752
-	3::inwork 14666,14845 14828,15050 14686,15608
-	3::inwork 14843,15007 14828,15050 14666,14845
-',
-         'from' => 1730959200,
-         'id' => 4211,
-         'text' => 'Weißenseer Weg: gesperrte Mittelstreifenüberfahrt von/zur Fritz-Lesch-Str., evtl. auch für Fußgänger und Radfahrer, vom 08.11.2024 07:00 bis 22.11.2024 17:00',
-         'type' => 'gesperrt',
-         'until' => 1732291200
-       },
+       undef,
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/breite-stra%C3%9Fe-scharrenstra%C3%9Fe-fischerinsel-petriplatz-neubauten.1078/#post-24088
 #: also_indoor: traffic (H,G,B,T)
@@ -8676,17 +8732,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: HIELSCHER-2024
-#: source_id: viz2021:13.364741,52.585104,11.11.2024,07:00 (bis 22.11.2024)
-	q4::inwork 7556,19882 7604,19988
-',
-         'from' => 1731218400,
-         'id' => 4213,
-         'text' => 'Hielscherstr.: Bauarbeiten zwischen Hertzstr. und Garibaldistr., Bauarbeiten, Sperrung der Fahrbahn, vom 11.11.2024 07:00 bis 22.11.2024 18:00',
-         'type' => 'handicap',
-         'until' => 1732294800
-       },
+       undef,
        {
          'data' => '#: next_check_id: ROENNE-2024
 #: source_id: viz2021:13.298976,52.504217,11.11.2024,07:00 (bis 30.12.2024)
@@ -8760,6 +8806,20 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'text' => 'Ella-Barowsky-Str.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis November 2026',
          'type' => 'handicap',
          'until' => 1796079600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025)
+#: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025)
+#: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr?
+#: priority: #A
+#: next_check: 2024-11-22
+	q4::inwork; 8453,13611 8572,13671
+',
+         'from' => 1732172400,
+         'id' => 4220,
+         'text' => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, mögliche Einschränkungen (Umleitung?) für den Radverkehr, vom 22.11.2024 08:00 bis 10.03.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1741622400
        }
      
 );
