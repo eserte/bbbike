@@ -20938,6 +20938,13 @@ sub show_logo { # und About
 	require "$FindBin::RealBin/miscsrc/BBBikeGit.pm";
 	%git_info = BBBikeGit::git_info();
     }
+    if (!%git_info && -r "$FindBin::RealBin/.gitinfo") {
+	eval {
+	    require BBBikeYAML;
+	    %git_info = %{ BBBikeYAML::LoadFile("$FindBin::RealBin/.gitinfo") };
+	};
+	warn "Cannot load .gitinfo: $@" if $@;
+    }
 
     $logotop->optionAdd("*" . substr($logotop->PathName, 1)
 			. "*background" => 'white', 'startupFile');

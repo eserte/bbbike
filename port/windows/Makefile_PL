@@ -7,6 +7,7 @@ my $bbbikesrc_dir; BEGIN { $bbbikesrc_dir = "$FindBin::RealBin/../.." }
 use lib (
 	 $bbbikesrc_dir,
 	 "$bbbikesrc_dir/lib",
+	 "$bbbikesrc_dir/miscsrc",
 	);
 
 use Cwd 'realpath';
@@ -54,6 +55,12 @@ if (!$action) {
     chdir '../..'
 	or die "Cannot chdir two dirs up: $!";
     ExtUtils::Manifest::manicopy(ExtUtils::Manifest::maniread(q{MANIFEST}),q{../bbbikewindist/bbbike}, 'cp');
+} elsif ($action eq 'make-gitinfo') {
+    require BBBikeGit;
+    require BBBikeYAML;
+    BBBikeYAML::DumpFile("$bbbikewindist/bbbike/.gitinfo~", { BBBikeGit::git_info() });
+    rename "$bbbikewindist/bbbike/.gitinfo~", "$bbbikewindist/bbbike/.gitinfo"
+	or die "Cannot rename $bbbikewindist/bbbike/.gitinfo~: $!";
 } else {
     die "Unsupported action '$action'";
 }

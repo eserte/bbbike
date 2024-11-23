@@ -41,3 +41,6 @@ bbbike-strawberry-snapshot-dist: make-BBBikeVar.tpl
 # - data/.modified is missing, but may be created using miscsrc/create_modified.pl
 make-bbbike-dist:
 	perl Makefile_PL make-bbbike-dist
+
+make-gitinfo:
+	perl Makefile_PL make-gitinfo

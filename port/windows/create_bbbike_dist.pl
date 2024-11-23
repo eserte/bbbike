@@ -137,7 +137,7 @@ if ($do_bbbike_update) {
 #    cd port/windows && make bbbike-strawberry-snapshot-dist make-bbbike-dist
 exec_cmd("cd $bbbike_dos_path && $strawberry_perl Makefile.PL");
 my $bbbike_strawberry_dist_target = $do_snapshot ? 'bbbike-strawberry-snapshot-dist' : 'bbbike-strawberry-dist';
-exec_cmd("cd $bbbike_dos_path\\port\\windows && gmake $bbbike_strawberry_dist_target make-bbbike-dist");
+exec_cmd("cd $bbbike_dos_path\\port\\windows && gmake $bbbike_strawberry_dist_target make-bbbike-dist make-gitinfo");
 
 {
     # Run ISS to create the installer:
