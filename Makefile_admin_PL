@@ -587,7 +587,7 @@ bundles:
 	    $(FULLPERL) Makefile.PL -action make_windist_bundle
 
 tasks:	bundles
-	$(FULLPERL) miscsrc/make_task.pl -o Task/BBBike/windist -name Task::BBBike::windist -bundle Bundle/BBBike_windist.pm
+	$(FULLPERL) miscsrc/make_task.pl -o Task/BBBike/windist -name Task::BBBike::windist -bundle Bundle/BBBike_windist.pm -with-tests use_ok
 
 Strassen/Generated.pm: Strassen/Generated_src.pm Strassen.pm
 	chmod u+w Strassen/Generated.pm
