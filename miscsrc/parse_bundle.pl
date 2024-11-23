@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2017,2018,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2017,2018,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,7 @@ use List::Util qw(max);
     package Bundle2Task;
     use base 'Pod::Simple';
     use strict;
-    our $VERSION = '1.02';
+    our $VERSION = '2.00';
 
     sub new {
 	my($class, @opts) = @_;
@@ -171,7 +171,8 @@ if ($sorted) {
 
 if ($action eq 'list') {
     for (@contents) {
-	print $_->[0], "\n";
+	my($mod, $ver) = @$_;
+	print $mod, (!$version_less && (defined $ver && $ver ne 'undef') ? " $ver" : '') . "\n";
     }
 } elsif ($action eq 'prereq_pm') {
     if ($encoding) {
@@ -206,7 +207,7 @@ parse_bundle.pl - parse a CPAN Bundle file and output contained modules
 
 =head1 SYNOPSIS
 
-    parse_bundle.pl [--encoding ...] [--minimize] [--sorted] [--ignore ...] [--ignore-module-rx ...] [--action list|prereq_pm|dump] /path/to/Bundle.pm
+    parse_bundle.pl [--encoding ...] [--minimize] [--version-less] [--sorted] [--ignore ...] [--ignore-module-rx ...] [--action list|prereq_pm|dump] /path/to/Bundle.pm
 
 =head1 DESCRIPTION
 
@@ -226,7 +227,8 @@ actions are known:
 
 =item C<list>
 
-Just list the modules.
+Just list the modules. If C<--version-less> isn't specified, then also
+a minimum module version (if specified and defined) is printed.
 
 =item C<prereq_pm>
 
