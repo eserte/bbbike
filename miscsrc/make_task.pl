@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2017,2018,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +19,7 @@ use File::Path qw(mkpath);
 use Getopt::Long;
 use POSIX qw(strftime);
 
-our $VERSION = '1.01';
+our $VERSION = '2.00';
 
 my $o;
 my $bundle;
@@ -29,6 +29,7 @@ my $sorted;
 my $version_less;
 my $debug;
 my @ignore_modules;
+my $with_tests;
 GetOptions(
 	   "o=s"      => \$o,
 	   "bundle=s" => \$bundle,
@@ -37,6 +38,7 @@ GetOptions(
 	   "sorted"   => \$sorted,
 	   "version-less" => \$version_less,
 	   'ignore|ignore-module=s@' => \@ignore_modules,
+	   'with-tests=s' => \$with_tests,
 	   "debug!"   => \$debug,
 	   "v|version" => sub {
 	       require File::Basename;
@@ -57,15 +59,23 @@ $o      or die "Please specify output directory (-o option)";
 $bundle or die "Please specify bundle file (-bundle option)";
 $name   or die "Please specify task name (-name option)";
 
+if ($with_tests && $with_tests !~ /^(use_ok|module_exists)$/) {
+    die "Valid -with-tests values are: use_ok or module_exists\n";
+}
+
+my @parse_bundle_opts = (
+    ('-minimize')     x!! $minimize,
+    ('-sorted')       x!! $sorted,
+    ('-version-less') x!! $version_less,
+    (map { ('-ignore', $_) } @ignore_modules),
+    -encoding => 'utf-8',
+);
+
 my $prereq_pm;
 {
     my @cmd = (
 	$^X, "$FindBin::RealBin/parse_bundle.pl",
-	('-minimize')     x!! $minimize,
-	('-sorted')       x!! $sorted,
-	('-version-less') x!! $version_less,
-	(map { ('-ignore', $_) } @ignore_modules),
-	-encoding => 'utf-8', -action => 'prereq_pm', $bundle,
+	@parse_bundle_opts, -action => 'prereq_pm', $bundle,
     );
     open my $fh, "-|", @cmd
 	or die "Error starting to run '@cmd': $!";
@@ -120,6 +130,33 @@ if (open my $fh, "$o/Makefile.PL") {
     }
 }
 
+my $test_path = "$o/t/prereqs.t";
+
+if ($with_tests) {
+    if (!-e $test_path) {
+	$need_update = 1;
+    } else {
+	if (open my $fh, $test_path) {
+	    my $got_test_type = '';
+	    while(<$fh>) {
+		if (/^# test type: (.*)/) {
+		    $got_test_type = $1;
+		    last;
+		}
+	    }
+	    if ($got_test_type ne $with_tests) {
+		$need_update = 1;
+	    }
+	} else {
+	    $need_update = 1;
+	}
+    }
+} else {
+    if (-e $test_path) {
+	$need_update = 1; # test script will be deleted
+    }
+}
+
 my $old_version;
 if (-r "$o/$pm_base") {
     $old_version = MM->parse_version("$o/$pm_base");
@@ -170,6 +207,15 @@ EOF
     close $ofh2
 	or die "Error writing to $pm_base~: $!";
 
+    if ($with_tests) {
+	mkdir "$o/t" if !-d "$o/t";
+	open my $t_ofh,">", "$test_path~"
+	    or die "Can't write to $test_path~: $!";
+	print $t_ofh generate_tests($with_tests);
+	close $t_ofh
+	    or die "Error writing to $test_path~: $!";
+    }
+
     rename "$o/Makefile.PL~", "$o/Makefile.PL"
 	or die "Error renaming to Makefile.PL: $!";
     print STDERR "Generated $o/Makefile.PL\n";
@@ -177,8 +223,75 @@ EOF
     rename "$o/$pm_base~", "$o/$pm_base"
 	or die "Error renaming to $pm_base: $!";
     print STDERR "Generated $o/$pm_base\n";
+
+    if ($with_tests) {
+	rename "$test_path~", $test_path
+	    or die "Error renaming to $test_path: $!";
+	print STDERR "Generated $test_path\n";
+    } else {
+	if (-e $test_path) {
+	    unlink $test_path;
+	    rmdir "$o/t";
+	    print STDERR "Removed $test_path (--with-tests not specified)\n";
+	}
+    }
 } else {
     print STDERR "No changes.\n";
+}
+
+sub generate_tests {
+    my($test_type) = @_;
+
+    my %unusable = map{($_,1)} qw(Object::Realize::Later Inline::C);
+
+    require IPC::Run;
+    IPC::Run::run([$^X, "$FindBin::RealBin/parse_bundle.pl",
+		   @parse_bundle_opts, -action => 'list', $bundle], '>', \my $list)
+	    or die "parse_bundle call failed";
+    my @modules;
+    for my $line (split /\r?\n/, $list) {
+	push @modules, [split /\s+/, $line];
+    }
+
+    my $contents = <<"EOF";
+# Generated automatically by make_task.pl
+# test type: $test_type
+use strict;
+use warnings;
+use Test::More 'no_plan';
+EOF
+
+    # module_exists is used also with $test_type="use_ok" as a fallback
+    $contents .= <<'EOF';
+
+sub module_exists ($) {
+    my($filename) = @_;
+    $filename =~ s{::}{/}g;
+    $filename .= ".pm";
+    return 1 if $INC{$filename};
+    foreach my $prefix (@INC) {
+	my $realfilename = "$prefix/$filename";
+	if (-r $realfilename) {
+	    return 1;
+	}
+    }
+    return 0;
+}
+
+EOF
+
+    for my $module_def (@modules) {
+	my($module, $version) = @$module_def;
+	if ($unusable{$module} || $test_type eq 'module_exists') {
+	    $contents .= qq{ok module_exists('$module'), "$module exists";\n};
+	} elsif ($test_type eq 'use_ok') {
+	    $contents .= qq{use_ok '$module'} . ($version ? ", $version" : "") . ";\n";
+	} else {
+	    die;
+	}
+    }
+
+    $contents;
 }
 
 __END__
@@ -190,6 +303,7 @@ make_task.pl - create a Task distribution from a Bundle file
 =head1 SYNOPSIS
 
     make_task.pl [--minimize] [--sorted] [--debug] [--ignore-module Mod [--ignore-module ...]]
+                 [--with-tests use_ok|module_exists]
                  -o /path/to/Task_directory --bundle /path/to/Bundle.pm --name Task_name
 
 =head1 DESCRIPTION
@@ -246,6 +360,22 @@ C<Makefile.PL>, if they are any.
 
 Ignore the listed module in the output. This option may be given
 multiple times.
+
+=item C<--with-tests I<testtype>>
+
+Generate a test script C<t/prereqs.t>. The following I<testtype>
+values may be used:
+
+=over
+
+=item C<module_exists>: just check that the module exists in @INC, but do not
+try to load the module.
+
+=item C<use_ok>: do a load check using L<Test::More/use_ok>. This script has
+a hardcoded list of known modules where loading without additional parameters
+do not work; for these C<module_exists> is used as a fallback.
+
+=back
 
 =item C<--version>
 
