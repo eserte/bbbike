@@ -1778,7 +1778,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX wegen eines Fußgängerschutztunnels unter dem Estrel-Tower ist der vorhandene Radweg abgesperrt
 #: XXX später wieder herstellen: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14334,7395
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2024-10-28
+#: last_checked: 2024-11-22 (webcam)
 #: check_frequency: 30d
 Busspur ist immer gültig	RW5; 14174,7505 14334,7395
 überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14334,7395 14369,7376
@@ -1945,12 +1945,16 @@ neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtb
 	RW3; 13651,11731 13696,11920 13745,12118
 Fahrradschleuse	RW3; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
-	RW1; 17427,10259 17605,10199 17882,10128 17905,10122 17938,10054 17958,10012
+	RW1; 17427,10259 17605,10199 17801,10149
+	RW3; 17801,10149 17863,10133
+	RW1; 17863,10133 17882,10128 17905,10122 17938,10054 17958,10012
 	RW3; 17958,10012 17997,9929
 Asphalt mit Schäden	RW1; 17997,9929 17958,10012
 #: note: hier ist auch eine Bushaltestelle
 	RW3; 17958,10012 17938,10054
-Asphalt mit Schäden	RW1; 17938,10054 17905,10122 17882,10128 17605,10199 17427,10259
+Asphalt mit Schäden	RW1; 17938,10054 17905,10122 17882,10128 17863,10133
+	RW3; 17863,10133 17801,10149
+Asphalt mit Schäden	RW1; 17801,10149 17605,10199 17427,10259
 brüchiger Asphalt auf Fahrbahn	RW3; 17997,9929 18045,9917
 	RW1; 18045,9917 17997,9929
 	RW1; 18045,9917 18210,9989 18296,10027 18339,10048 18387,10070
@@ -2275,7 +2279,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2024-11-16 vvv
+#: last_checked: 2024-11-23 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -4995,15 +4999,14 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 #: source_id: viz2021:13.235806,52.586491,21.08.2023,07:00 (Sperrung des Radwegs, bis 23.09.2023) (inaktiv)
 #: source_id: viz2021:13.235806,52.586491,14.08.2023,07:00 (bis 10.10.2023) (inaktiv)
 #: source_id: viz2021:13.244365,52.590839,06.11.2023,09:30 (bis 30.11.2023) (inaktiv)
-#: note: Asphalt sah älter aus
-#: note: stellenweise (etwa 100m) sollen Radfahrer absteigen
-#: XXX laut infravelo ist ein Radfahrstreifen sowie ein gemeinsamer Geh- und Radweg entstanden (wobei die Geografie nicht stimmt: nördliche/südliche Seite?)
-# REMOVED (früher) --- Gehweg für Radfahrer frei, asphaltiert, schmal	RW9;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
+#: historical_note: früher: Gehweg für Radfahrer frei, älterer Asphalt, schmal
+#: historical_note: früher: stellenweise (etwa 100m) sollen Radfahrer absteigen
+#: XXX laut infravelo-Foto ist ein Radfahrstreifen auf der westlichen sowie ein asphaltierter Gehweg (Radfahrer frei in beiden Richtungen) auf der östlichen Seite entstanden
 #: osm_watch: way id="24403109" version="43"
 #: last_checked: 2023-03-08 (mapillary)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2024-09-30
-	RW4?;RW0 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
+	RW4?;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
 # 
 # REMOVED ---	RW2;RW2 -1788,19663 -1726,19725 -1619,19754 -1419,19815 -1240,19869 -1202,19877
 	RW4; -1787,19341 -1774,19299 -1689,19056 -1661,18749
@@ -5091,9 +5094,10 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
-#: XXX Sanierung des Radwegs? vvv
-#: last_checked: 2024-03-28 (mapillary) vvv
-#: check_frequency: 270d vvv
+#: XXX Sanierung des Radwegs? -> mittlerweile wurden einige Abschnitte neu asphaltiert, evtl. folgt der Rest noch vvv
+#: last_checked: 2024-11-23 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: check_frequency: 270d vvv
 Radweg antik und unbenutzbar	RW1;RW1 18843,9952 18881,9865
 Verbundsteinpflasterradweg	RW1; 18881,9865 18934,9826 19005,9816
 Radweg antik und unbenutzbar	RW1; 19005,9816 18934,9826 18881,9865
@@ -8240,7 +8244,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="35"
-#: last_checked: 2024-10-16 vvv
+#: last_checked: 2024-11-23 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
 provisorische Radspur	RW4; 17919,6968 17945,6788
@@ -8713,7 +8717,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/info-abend-zur-radverkehrsanlage_a339422
 #: by: https://berliner-abendblatt.de/2022/03/16/radweg-tempelhofer-damm/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198245.php (bis August 2022 Weiterführung bis Alt-Mariendorf)
-#: by: https://www.infravelo.de/projekt/mariendorfer-damm/ (4. Quartal 2021 - 4. Quartal 2022) (mittlerweile bis 2. Quartal 2023) (1. Quartal 2023 - 3. Quartal 2023) (1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2023 - 2. Quartal 2024) (1. Quartal 2023 - 3. Quartal 2024) (1. Quartal 2023 - 4. Quartal 2024)
+#: by: https://www.infravelo.de/projekt/mariendorfer-damm/ (4. Quartal 2021 - 4. Quartal 2022) (mittlerweile bis 2. Quartal 2023) (1. Quartal 2023 - 3. Quartal 2023) (1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2023 - 2. Quartal 2024) (1. Quartal 2023 - 3. Quartal 2024) (1. Quartal 2023 - 4. Quartal 2024) ("abgeschlossen")
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1255443.php (Erwähnung)
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/arbeiten-fuer-radweg-beginnen_a369521 (bis III. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2023/01/17/mariendorf-baustart-fuer-radfahrstreifen/

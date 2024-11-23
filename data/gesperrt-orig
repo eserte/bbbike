@@ -163,7 +163,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraﬂenregelung f¸r Radfahrer vvv
-#: last_checked: 2024-11-16 vvv
+#: last_checked: 2024-11-23 vvv
 #: next_check: 2026-12-31 vvv
 Nˆldnerplatz	1s:q4 15870,10938 15903,10906
 Nˆldnerplatz	1 15903,10906 16049,10844
@@ -301,7 +301,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraﬂenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (fr¸her Oktober 2024, nun Juni 2025)
-#: last_checked: 2024-11-16
+#: last_checked: 2024-11-23
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -4097,7 +4097,7 @@ Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im s¸dlichen Abschnitt noch nic
 # 
 #: next_check_id: PLANSTRASSE9-2023
 #: osm_watch: way id="20420585" version="36"
-#: last_checked: 2024-09-28
+#: last_checked: 2024-11-23
 #: check_frequency: 60d
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
@@ -4151,7 +4151,7 @@ Straﬂe 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="27"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-11-16
+#: last_checked: 2024-11-23
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4213,7 +4213,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon H‰user mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straﬂen offen? vvv
-#: last_checked: 2024-11-22 vvv
+#: last_checked: 2024-11-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt	2::inwork 14994,10732 14984,10677
@@ -4253,7 +4253,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfl‰che f¸r die Arbeiten an den Bahnbr¸cken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nˆldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024)
 #: priority: #C
-#: last_checked: 2024-11-18
+#: last_checked: 2024-11-23
 #: check_frequency: 60d
 Nˆldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4565,7 +4565,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-neubau-mehrfamilienhaus-wohnanlage-parkstadt-karlshorst-berlin-deutschland-637598.html
-#: last_checked: 2024-10-29 (osm) vvv
+#: last_checked: 2024-11-23 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
@@ -4597,9 +4597,13 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: note: Halteverbotsschilder bis 31.12.2024
 #: check_frequency: 90d vvv
 #: next_check: 2024-12-31 vvv
-#: last_checked: 2024-10-24
+#: last_checked: 2024-11-23
 #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
-Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
+#: note: Durchfahrt offiziell noch nicht erlaubt, aber hier parken schon Autos in der Parktaschen: q4 -> q3
+Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q3:inwork 17753,8290 17771,8349 17794,8429
+#: last_checked: 2024-11-23
+#: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
+Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
 #: last_checked: 2024-11-16
 Georg-Klingenberg-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17792,8660 17846,8644
 #: last_checked: 2024-10-11
@@ -4625,7 +4629,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂ
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2024-11-16
+#: last_checked: 2024-11-23
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 

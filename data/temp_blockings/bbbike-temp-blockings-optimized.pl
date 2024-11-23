@@ -6926,16 +6926,16 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: osm_watch: way id="198589911" version="23"
 # REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
-# REMOVED --- #: note: es existieren zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
+#: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
 #: priority: #B
 #: last_checked: 2024-11-18
 #: next_check: 2024-11-29
-	q4::inwork 15856,10821 15793,10814
+	q3::inwork 15856,10821 15793,10814
 #	2::inwork 15856,10821 15793,10814
 ',
          'from' => 1731798000,
          'id' => 3885,
-         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmaler Fußgängerschutztunnel existiert, 18.11.2024 bis 29.11.2024',
+         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmale Schutztunnel existieren, vom 18.11.2024 bis 29.11.2024',
          'type' => 'handicap',
          'until' => 1732921199
        },
@@ -6976,9 +6976,9 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: also_indoor: traffic (H,G,B,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2024-11-21 (krickstadt) vvv
-#: check_frequency: 30d vvv
-#: next_check: 2024-11-22 vvv
+#: last_checked: 2024-11-23 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2024-11-22 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -6989,7 +6989,7 @@ Edisonstr. (Süd)	q4::inwork; 17948,6248 17991,6431
 #: note: der westliche Gehweg ist im südlichen Abschnitt weitgehend frei, deshalb q4+ statt q4 (Stand September 2024)
 Edisonstr. (Süd)	q4+::inwork; 17991,6431 17948,6248
 Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,6431 17962,6674
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -6999,7 +6999,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
          'id' => 3901,
          'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, alle Zufahrten zur Kreuzung sind gesperrt, Umwege, voraussichtlich bis Dezember 2024',
          'type' => 'handicap',
-         'until' => 1734019200
+         'until' => undef
        },
        {
          'data' => '#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv)
@@ -7361,7 +7361,7 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
 #: by: https://equalizer.berlin/
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
-#: osm_watch: way id="1232322874" version="1"
+#: osm_watch: way id="1232322874" version="2"
 #: last_checked: 2024-10-25
 #: check_frequency: 90d
 #: next_check: 2026-03-31
@@ -7567,11 +7567,11 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-10-24 (osm) vvv
+#: last_checked: 2024-11-22 (osm) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="25"
+#: osm_watch: way id="120633718" version="26"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -8668,19 +8668,7 @@ Fischerinsel	q4::inwork 10578,11969 10512,12039
          'type' => 'handicap',
          'until' => 1732896000
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1497857.php
-#: by: https://www.berliner-woche.de/nikolassee/c-bauen/strassenabschnitt-voll-gesperrt_a428365
-Teutonenstr.	q4::inwork -3519,2180 -3610,2237 -3740,2295
-#: note: vermutete Einbahnstraßenrichtung
-Cimbernstr.: Einbahnstraße	q4::inwork; -3503,1988 -3544,2003 -3643,2061 -3703,2137 -3753,2241
-',
-         'from' => 1730588400,
-         'id' => 4206,
-         'text' => 'Teutonenstr.: Bauarbeiten, Sperrung der Fahrbahn, außerdem Einbahnstraßenregelung in der Cimbernstr., vom 04.11.2024 bis 22.11.2024',
-         'type' => 'handicap',
-         'until' => 1732316400
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024)
 #: note: etwa 40m

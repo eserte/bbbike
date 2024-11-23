@@ -2345,7 +2345,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: XXX möglicherweise Änderung des Wegbelags
 #: osm_watch: way id="176112031" version="17"
 #: osm_watch: way id="640883366" version="6"
-#: last_checked: 2024-11-06
+#: last_checked: 2024-11-23
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15448,10397 15457,10342 15496,10277 15518,10234 15599,10206 15606,10179 15645,10147 15713,10035 15786,9957 15781,9933 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -3835,7 +3835,8 @@ Achenbachpromenade: wassergebundene Decke und Verbundsteinpflaster	Q1 8763,8780 
 (Am Kraatzgraben): wassergebundene Decke	Q1- 16544,10337 16488,10381
 (Kolonie Sanssouci): wassergebundene Decke, Feinschotter	Q1- 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
 (Kolonie Sanssouci): wassergebundene Decke, Feinschotter	Q1- 16288,10637 16265,10681
-(Blockpark): Asphalt	Q0 16300,10753 16265,10681 16246,10641 16193,10593
+(Blockpark): Asphalt, einige Wurzelhebungen	Q1+ 16300,10753 16265,10681
+(Blockpark): Asphalt	Q0 16265,10681 16246,10641 16193,10593
 Theatergasse: Asphalt	Q0 18787,8540 18846,8616
 Wildensteiner Str.: guter Asphalt	Q0 18627,8475 18528,8331
 Wildensteiner Str.: schlechtes Kopfsteinpflaster	Q3 18528,8331 18416,8163
@@ -13297,7 +13298,7 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17639,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 17588,8413
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2024-09-28
+#: last_checked: 2024-11-23
 #: check_frequency: 90d
 An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
