@@ -1742,10 +1742,12 @@ sub tk_interface {
 
     sub convert_from_route {
 	my($self, $route, %args) = @_;
-	require GPS::DirectGarmin;
 	require GPS::GpsmanData;
-	my $dg = GPS::DirectGarmin->new; # only for simplify_route
-	my $simplified_route = $dg->simplify_route($route, %args);
+	require Route::Simplify;
+	my $simplified_route = $route->simplify_for_gps(
+	    -uniquewpts => 1, # gpsman wants non-empty and unique waypoint names
+	    %args
+	);
 	my $gd = GPS::GpsmanData->new;
 	$gd->change_position_format("DDD");
 	$gd->Type(GPS::GpsmanData::TYPE_ROUTE());
