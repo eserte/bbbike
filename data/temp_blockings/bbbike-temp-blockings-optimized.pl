@@ -7123,7 +7123,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-11-18 (traffic) vvv
+#: last_checked: 2024-11-24 (traffic) vvv
 #: check_frequency: 7d vvv
 #: next_check: 2024-11-30 vvv
 	q2::inwork; 6334,14756 6513,14725
@@ -7950,7 +7950,7 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr
-#: last_checked: 2024-11-11
+#: last_checked: 2024-11-12 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 ',
@@ -8429,16 +8429,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'handicap',
          'until' => 1732921200
        },
-       {
-         'data' => '#: source_id: LS/221-E/24/128 (bis 31.10.2024) (inaktiv) (bis 15.11.2024) (bis 24.11.2024)
-	2::inwork 31738,27620 31684,27738 30387,28332 29363,29024
-',
-         'from' => 1725775200,
-         'id' => 4175,
-         'text' => 'Weesow - Willmersdorf: Fahrbahnsanierung, Sperrung, voraussichtlich bis 24. November 2024',
-         'type' => 'gesperrt',
-         'until' => 1732464000
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1489715.php
@@ -8799,14 +8790,16 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
        {
          'data' => '#: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025)
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025)
-#: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr?
-#: priority: #A
-#: next_check: 2024-11-22
-	q4::inwork; 8453,13611 8572,13671
+# REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
+#: last_checked: 2024-11-23 (mapillary)
+#: check_frequency: 90d
+#: next_check: 2025-03-10
+#	q4::inwork; 8453,13611 8572,13671
+	3::inwork 8358,13562 8453,13611 8408,13684
 ',
          'from' => 1732172400,
          'id' => 4220,
-         'text' => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, mögliche Einschränkungen (Umleitung?) für den Radverkehr, vom 22.11.2024 08:00 bis 10.03.2025 17:00',
+         'text' => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, Linksabbiegen vom Radweg in die Scharnhorststr. möglicherweise nicht möglich, , vom 22.11.2024 08:00 bis 10.03.2025 17:00',
          'type' => 'handicap',
          'until' => 1741622400
        }

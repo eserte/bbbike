@@ -1316,7 +1316,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-11-22 vvv
+#: last_checked: 2024-11-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -5094,6 +5094,12 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
+#: osm_watch: note 4530704 1
+#: osm_watch: way id="631069428" version="10"
+#: osm_watch: way id="151370228" version="16"
+#: osm_watch: way id="631069429" version="9"
+#: osm_watch: way id="631069427" version="10"
+#: osm_watch: way id="631069430" version="12"
 #: XXX Sanierung des Radwegs? -> mittlerweile wurden einige Abschnitte neu asphaltiert, evtl. folgt der Rest noch vvv
 #: last_checked: 2024-11-23 vvv
 #: check_frequency: 30d vvv
