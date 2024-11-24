@@ -44998,18 +44998,29 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1730224713, # undef, # XXX
-#       text  => 'Eingänge Allerstr. und Okerstr.: wegen Bauarbeiten gesperrt',
-       text  => 'Eingang Kienitzer Str.: wegen Bauarbeiten gesperrt',
+       until => undef, # 1730224713, # undef, # XXX
+#      text  => 'Eingänge Allerstr. und Okerstr.: wegen Bauarbeiten gesperrt',
+#      text  => 'Eingang Kienitzer Str.: wegen Bauarbeiten gesperrt',
+       text  => 'Tempelhofer Feld, Eingänge Herrfurthstr. und Leinestr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
 #: by: https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
-# REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- #: last_checked: 2024-10-29 (website) vvv --- #: check_frequency: 10d vvv
+#: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breitere-eingaenge-und-bessere-ausstattung-im-eingangsbereich-herrfurthstrasse-starten/ (bis Frühjahr 2025)
+#: by: https://www.berliner-zeitung.de/news/bauarbeiten-am-tempelhofer-feld-diese-eingangsbereiche-werden-erneuert-li.2274683
+# REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
+#: last_checked: 2024-11-24 (Pressemitteilung) vvv
+#: check_frequency: 14d vvv
+#: next_check: 2025-05-01 vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
 # REMOVED --- Okerstr.	2::inwork 11528,7528 11540,7534
-Kienitzer Str.	2::inwork 11490,7737 11504,7738
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED --- Kienitzer Str.	2::inwork 11490,7737 11504,7738
+Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
+Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
+Leinestr.	2::inwork 11558,7438 11547,7432
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1724330100, # 2024-08-22 14:35
