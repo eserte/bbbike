@@ -174,8 +174,17 @@ sub filter_and_split_json {
     my %records;
     for my $element (@$data) {
 	next if ($element->{"messageType"}||'') eq "ELEVATOR";
+
 	inject_title($element);
 	inject_date($element);
+
+	delete $element->{$_} for qw(directionOne firstLineLineType hideTime messageCategory scheduled showOnStartpage);
+
+	for my $content (@{ $element->{content} }) {
+	    $content->{content} =~ s{<p>}{}g;
+	    $content->{content} =~ s{</p>}{\n}g;
+	}
+
 	$records{$element->{id}} = $element;
     }
     \%records;
