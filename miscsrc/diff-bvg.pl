@@ -163,32 +163,15 @@ sub print_basic_info {
 
     my $record = decode_json($json); 
 
-    binmode STDOUT, ':utf8';
+    inject_title($record);
+    inject_date($record);
 
-    my $title = '';
-    my %linetype_to_lines;
-    for my $lines_element (@{$record->{lines}}) {
-	while(my($linetype, $lines) = each %$lines_element) {
-	    for my $line (@$lines) {
-		push @{ $linetype_to_lines{$linetype} }, $line->{name};
-	    }
-	}
+    binmode STDOUT, ':utf8';
+    if ($record->{_title}) {
+	print $record->{_title}, "\n";
     }
-    my $need_sep;
-    for my $linetype (sort keys %linetype_to_lines) {
-	if ($need_sep) {
-	    $title .= ', ';
-	}
-	$title .= ucfirst($linetype) . ' ';
-	$title .= join(',', @{ $linetype_to_lines{$linetype} });
-	$need_sep = 1;
-    }
-    $title .= ' ' if $title;
-    $title .= $record->{stationOne}{displayName} if $record->{stationOne};
-    $title .= ' ' if $title;
-    $title .= $record->{stationTwo}{displayName} if $record->{stationTwo};
-    if ($title) {
-	print $title, "\n";
+    if ($record->{_date}) {
+	print $record->{_date}, "\n";
     }
 
     my($id) = $record->{id};
@@ -243,6 +226,58 @@ sub filter_and_split_json {
 	$records{$element->{id}} = JSON::XS->new->pretty->canonical->utf8->encode($element);
     }
     \%records;
+}
+
+sub inject_title {
+    my $record = shift;
+
+    my $title = '';
+    my %linetype_to_lines;
+    for my $lines_element (@{$record->{lines}}) {
+	while(my($linetype, $lines) = each %$lines_element) {
+	    for my $line (@$lines) {
+		push @{ $linetype_to_lines{$linetype} }, $line->{name};
+	    }
+	}
+    }
+    my $need_sep;
+    for my $linetype (sort keys %linetype_to_lines) {
+	if ($need_sep) {
+	    $title .= ', ';
+	}
+	$title .= ucfirst($linetype) . ' ';
+	$title .= join(',', @{ $linetype_to_lines{$linetype} });
+	$need_sep = 1;
+    }
+    $title .= ' ' if $title;
+    $title .= $record->{stationOne}{displayName} if $record->{stationOne};
+    $title .= ' ' if $title;
+    $title .= $record->{stationTwo}{displayName} if $record->{stationTwo};
+
+    $record->{_title} = $title;
+}
+
+sub inject_date {
+    my $record = shift;
+
+    my $date = '';
+    if ($record->{startDate}) {
+	(my $startDate = $record->{startDate}) =~ s{\+\d+:\d+$}{};
+	$startDate =~ s{T}{ };
+	$date .= $startDate;
+    } else {
+	$date .= '...';
+    }
+    $date .= ' - ';
+    if ($record->{endDate}) {
+	(my $endDate = $record->{endDate}) =~ s{\+\d+:\d+$}{};
+	$endDate =~ s{T}{ };
+	$date .= $endDate;
+    } else {
+	$date .= '...';
+    }
+
+    $record->{_date} = $date;
 }
 
 sub load_sourceids {
