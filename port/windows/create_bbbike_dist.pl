@@ -26,6 +26,7 @@ my $username = $ENV{USERNAME};
 my $do_snapshot;
 my $do_continue;
 my $do_bbbike_update = 1;
+my $do_tests = 1;
 my $strawberry_ver = '5.32.1.1';
 my $strawberry_opts;
 my $bbbike_git_remote = 'origin';
@@ -34,12 +35,13 @@ GetOptions(
 	   "snapshot" => \$do_snapshot,
 	   "c|cont|continue" => \$do_continue,
 	   "bbbike-update!" => \$do_bbbike_update,
+	   'tests!' => \$do_tests,
 	   'strawberry-version|strawberry-ver=s' => \$strawberry_ver,
 	   'strawberry-opts=s' => \$strawberry_opts,
 	   'git-remote=s' => \$bbbike_git_remote,
 	   'git-branch=s' => \$bbbike_git_branch,
 	  )
-    or die "usage: $0 [-snapshot] [-c|-continue] [-no-bbbike-update] [-strawberry-version X.Y.Z.A]";
+    or die "usage: $0 [-snapshot] [-c|-continue] [-no-bbbike-update] [-no-tests] [-strawberry-version X.Y.Z.A]";
 
 my $strawberry_base = 'strawberry-perl-' . $strawberry_ver;
 my $strawberry_zip_file = $strawberry_base . '-32bit-portable.zip';
@@ -138,6 +140,11 @@ if ($do_bbbike_update) {
 exec_cmd("cd $bbbike_dos_path && $strawberry_perl Makefile.PL");
 my $bbbike_strawberry_dist_target = $do_snapshot ? 'bbbike-strawberry-snapshot-dist' : 'bbbike-strawberry-dist';
 exec_cmd("cd $bbbike_dos_path\\port\\windows && gmake $bbbike_strawberry_dist_target make-bbbike-dist make-gitinfo");
+
+if ($do_tests) {
+    local $ENV{BBBIKE_TEST_GUI} = 1;
+    exec_cmd(qq{cd $bbbike_dos_path && $bbbikewindist_dir\\perl\\bin\\perl.exe $bbbikewindist_dir\\perl\\bin\\prove.bat .\\t\\bbbikeguitest-de.t .\\t\\bbbikeguitest-en.t});
+}
 
 {
     # Run ISS to create the installer:
