@@ -86,9 +86,12 @@ for my $def (
     }	
     run @cmd, '>', \my $json
 	or die "Failed to run '@cat_projects_cmd' and process with jq";
-    #$json = decode('UTF-8', $json);
-    #XXX $json =~ s/\x{00AD}//g; # sanitize
-    my $res = split_json($json);
+
+    $json = decode('UTF-8', $json);
+    $json =~ s/[\x{2060}\x{200B}]//g; # sanitize
+    $json = encode('UTF-8', $json);
+
+    my $res = filter_and_split_json($json);
     %$ref = %$res;
 }
 
@@ -159,13 +162,38 @@ sub print_basic_info {
     die "Unhandled arguments: " . join(" ", %opts) if %opts;
 
     my $record = decode_json($json); 
+
+    binmode STDOUT, ':utf8';
+
+    my $title = '';
+    my %linetype_to_lines;
+    for my $lines_element (@{$record->{lines}}) {
+	while(my($linetype, $lines) = each %$lines_element) {
+	    for my $line (@$lines) {
+		push @{ $linetype_to_lines{$linetype} }, $line->{name};
+	    }
+	}
+    }
+    my $need_sep;
+    for my $linetype (sort keys %linetype_to_lines) {
+	if ($need_sep) {
+	    $title .= ', ';
+	}
+	$title .= ucfirst($linetype) . ' ';
+	$title .= join(',', @{ $linetype_to_lines{$linetype} });
+	$need_sep = 1;
+    }
+    $title .= ' ' if $title;
+    $title .= $record->{stationOne}{displayName} if $record->{stationOne};
+    $title .= ' ' if $title;
+    $title .= $record->{stationTwo}{displayName} if $record->{stationTwo};
+    if ($title) {
+	print $title, "\n";
+    }
+
     my($id) = $record->{id};
     print "id: " . $id . ($sourceids->{$id} ? " (INUSE)" : "") . "\n";
 
-#    my($title) = $record =~ m{"title":\s*"(.*)"};
-#    if ($title) {
-#	print $title, "\n";
-#    }
 #    my $bbbike_data;
 #    my($link) = $record =~ m{"link":\s*"(.*)"};
 #    if ($link) {
@@ -202,13 +230,16 @@ sub print_basic_info {
 #    }
 #    (my $link_rx = $link) =~ s{https?:}{https?:};
 #    print qq{(bbbike-grep-with-args "by" "$link_rx")\n};
+
+    binmode STDOUT, ':raw';
 }
 
-sub split_json {
+sub filter_and_split_json {
     my $json = shift;
     my $data = decode_json($json);
     my %records;
     for my $element (@$data) {
+	next if ($element->{"messageType"}||'') eq "ELEVATOR";
 	$records{$element->{id}} = JSON::XS->new->pretty->canonical->utf8->encode($element);
     }
     \%records;
