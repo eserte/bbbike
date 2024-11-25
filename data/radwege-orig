@@ -342,7 +342,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-11-22 vvv
+#: last_checked: 2024-11-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -761,8 +761,10 @@ neu asphaltiert	RW1; -2088,13413 -2047,13434
 Verbundsteinpflaster mit Unebenheiten	RW1; -2047,13434 -1972,13455 -1780,13468 -1560,13418
 alte Gehwegplatten, Bord gegen Gehweg	RW1; -1560,13418 -1411,13375
 Verbundsteinpflaster mit Unebenheiten	RW1; -1411,13375 -1337,13354 -1284,13340
-alte Gehwegplatten, Bord gegen Gehweg	RW1; -1284,13340 -1151,13304
-vorhandener Radweg ist abgesperrt, Gehweg für Radfahrer frei	RW1; -1151,13304 -772,13199
+#: historical_note: früher (bis Nov 2024): alte Gehwegplatten, Bord gegen Gehweg
+neu asphaltiert	RW1; -1284,13340 -1151,13304
+#: historical_note: früher (bis Nov 2024): vorhandener Radweg ist abgesperrt, Gehweg für Radfahrer frei
+neu asphaltiert	RW1; -1151,13304 -772,13199
 Verbundsteinpflaster und Gehwegplatten, teilweise mit Bord gegen Gehweg	RW1; -772,13199 -442,13058
 alte Gehwegplatten, Bord gegen Gehweg	RW1; -442,13058 -264,13009 -227,12994 -205,12985
 alte Gehwegplatten, Bord gegen Gehweg	RW2; -205,12985 -129,12947
@@ -2166,7 +2168,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1498209.php
 #: by: https://www.berliner-woche.de/mitte/c-bauen/muehlendammbruecke-gesperrt-fuer-fussgaenger_a428707
 #: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029)
-#: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024)
+#: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
 #: last_checked: 2024-11-11 vvv
@@ -2435,7 +2437,7 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
 #: by: https://www.deutsches-architekturforum.de/thread/14542-gesch%C3%A4fts-b%C3%BCrokomplex-p1-am-kadewe-sch%C3%B6neberg-in-bau/?postID=749610#post749610 (provisorische Radspur zu sehen)
 #: XXX Nürnberger Str.: mittlerweile gibt es wegen einer Hochbaustelle provisorische Radspuren, aber vermutlich nicht über die gesamte Länge
-#: osm_watch: way id="4491980" version="27"
+#: osm_watch: way id="4491980" version="28"
 #: priority: #B
 #: last_checked: 2024-08-30
 #: check_frequency: 120d
@@ -6753,7 +6755,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://www.bz-berlin.de/berlin/mitte/berlins-laengstes-halteverbot (bis 2027)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
-#: last_checked: 2024-10-30 vvv
+#: last_checked: 2024-11-23 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -8575,6 +8577,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://berliner-abendblatt.de/berlin-news/loesung-im-streit-um-radweg-in-der-kantstrasse-id267845 (Umsetzung 2024 geplant)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1497760.php
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/kantstrasse-wird-neu-geordnet_a428335
+#: by: https://www.tagesspiegel.de/berlin/club-fordert-aufhebung-von-parkplatzen-adfc-demonstriert-gegen-radstreifen-tausch-auf-der-berliner-kantstrasse-12700409.html
 #: last_checked: 2024-10-25 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2024-12-31 vvv

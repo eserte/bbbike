@@ -39,8 +39,8 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="9"
-#: osm_watch: way id="1072662717" version="11"
+#: osm_watch: way id="1072662716" version="10"
+#: osm_watch: way id="1072662717" version="12"
 #: last_checked: 2024-11-24
 #: check_frequency: 90d
 #: next_check: 2026-12-31
@@ -105,6 +105,7 @@ Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=760470#post760470
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11534 (Einwohneranfrage)
 #: by: https://officehome.de/news/officehome-ostkreuz-campus-feiert-hoffest
+#: by: https://entwicklungsstadt.de/friedrichshain-energie-unternehmen-enpal-bezieht-erstes-gebaeude-im-ostkreuz-campus/
 #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
@@ -434,7 +435,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-11-21 vvv
+#: last_checked: 2024-11-23 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -465,7 +466,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-11-01
+#: last_checked: 2024-11-24 (webcam)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -556,15 +557,16 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
+#: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn für die Straßensanierung 2026 (!))
 #: also_indoor: traffic
 #: priority: #B vvv
 #: last_checked: 2024-11-05 vvv
-#: check_frequency: 21d vvv
-# REMOVED --- #: next_check: 2021-04-01 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # REMOVED (offen) --- #: also_indoor: traffic (ex-H,ex-G) --- #: osm_watch: way id="114667396" version="13" --- Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -1178,8 +1180,7 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 # REMOVED --- Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
 # REMOVED (für Radfahrer frei) --- #: osm_watch: way id="26505949" version="26" --- Eisenacher Str.: Einbahnstraßenregelung, evtl. auch für Radfahrer gültig	q3::inwork; 23113,15110 22899,15073
 # REMOVED --- Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
-#: osm_watch: way id="997498311" version="5"
-Gothaer Str.: Fahrbahn gesperrt, mögliche Umwege	q2::inwork 22899,15073 22905,14925
+# REMOVED (laut osm hier nicht mehr) --- #: osm_watch: way id="997498311" version="7" --- #: also_indoor: traffic (G,W) --- Gothaer Str.: Fahrbahn gesperrt, mögliche Umwege	q2::inwork 22899,15073 22905,14925
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5271,6 +5272,8 @@ Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
 #: note: Gehweg, keine Freigabe für Radfahrer
 Hebammensteigbrücke: Fußgänger	q3 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
 # 
+(Weg am Jacob-und-Wilhelm-Grimm-Zentrum): Fußgänger, Radfahrer absteigen	q4 9435,12698 9561,12723
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -5581,7 +5584,7 @@ Lefèvrestr.: enge Straße	q1+ 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5
 #: corrected_by ^^^
 #: by: ^^^
 # 
-# REMOVED --- #: next_check_id: ROBERTVONOSTERTAG-2104 --- #: by: Michael Heckner: --- #: XXX Reitweg wird separiert --- #: next_check: 2015-09-01 --- Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
+# REMOVED --- #: next_check_id: ROBERTVONOSTERTAG-2014 --- #: by: Michael Heckner: --- #: XXX Reitweg wird separiert --- #: next_check: 2015-09-01 --- Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
 # 
 #: by: Jens Wesendrup:
 #: corrected_by: srt (q1 -> q0-)

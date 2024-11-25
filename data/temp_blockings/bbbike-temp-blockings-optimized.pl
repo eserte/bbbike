@@ -6967,7 +6967,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
 #: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
@@ -6978,7 +6978,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
 #: last_checked: 2024-11-23 vvv
 #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2024-11-22 vvv
+#: next_check: 2024-12-12 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -6989,7 +6989,7 @@ Edisonstr. (Süd)	q4::inwork; 17948,6248 17991,6431
 #: note: der westliche Gehweg ist im südlichen Abschnitt weitgehend frei, deshalb q4+ statt q4 (Stand September 2024)
 Edisonstr. (Süd)	q4+::inwork; 17991,6431 17948,6248
 Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,6431 17962,6674
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -6997,7 +6997,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 ',
          'from' => undef,
          'id' => 3901,
-         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, alle Zufahrten zur Kreuzung sind gesperrt, Umwege, voraussichtlich bis Dezember 2024',
+         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, alle Zufahrten zur Kreuzung sind gesperrt, Umwege, voraussichtlich bis Mitte Dezember 2024',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7066,9 +7066,9 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
        {
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
-#: osm_watch: way id="23121446" version="32"
+#: osm_watch: way id="23121446" version="33"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-11-21 vvv
+#: last_checked: 2024-11-23 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-01-02 vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -7721,16 +7721,7 @@ Karlshafener Str.	q4::inwork 24899,13007 25054,12926
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 236320002 (bis 30.06.2024) (bis 02.08.2024) (bis 30.08.2024) (inaktiv) (bis 20.12.2024)
-	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
-',
-         'from' => 1730156400,
-         'id' => 4064,
-         'text' => 'Kuhdammweg - Am Umspannwerk: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 30.10.2024 08:00 Uhr bis 20.12.2024 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1734710400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8118,7 +8109,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-22
+#: last_checked: 2024-11-25
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8410,18 +8401,21 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20240925 (26.11.2024 - 26.12.2024, weitere Vollsperrungen z.B. im März 2025)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_einschraenkungen_strassenverkehr_20240924ne.pdf
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wollankstrasse_informationsveranstaltung_20241126.pdf
-#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1861029520645538026 (bis 20.12.2024)
+#: by: https://pbs.twimg.com/media/GdOzzK9XEAAuZLU?format=jpg&name=medium (Umleitungsstrecken für Rad- und Fußverkehr)
+#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
+#: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024)
 #: osm_watch: way id="23984383" version="30"
 #: last_checked: 2024-10-12 (mapillary)
-#: next_check: 2024-11-25
+#: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665
 ',
          'from' => 1732489200,
          'id' => 4171,
-         'text' => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung voraussichtlich vom 26.11.2024 bis 26.12.2024',
+         'text' => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 26.11.2024 bis 20.12.2024',
          'type' => 'gesperrt',
-         'until' => 1735232400
+         'until' => 1734710400
        },
        undef,
        {
@@ -8467,14 +8461,14 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024) (bis 09.12.2024)
+         'data' => '#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024) (bis 09.12.2024) (bis 18.12.2024)
 	q4::inwork 10197,16528 10209,16674
 ',
          'from' => 1727586000,
          'id' => 4179,
-         'text' => 'Björnsonstr.: Gleisbauarbeiten, Sperrung der Fahrbahn, vom 30.09.2024 07:00 bis 09.12.2024 17:00',
+         'text' => 'Björnsonstr.: Gleisbauarbeiten, Sperrung der Fahrbahn, vom 30.09.2024 07:00 bis 18.12.2024 17:00',
          'type' => 'handicap',
-         'until' => 1733760000
+         'until' => 1734537600
        },
        undef,
        undef,
@@ -8524,15 +8518,19 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-11-15
-#: check_frequency: 14d
-#: next_check: 2025-01-17
-#Fischerinsel	q4::inwork; 10578,11969 10512,12039
-Fischerinsel	q4::inwork 10578,11969 10512,12039
+#: last_checked: 2024-11-22 (mapillary) vvv
+#: check_frequency: 14d vvv
+#: next_check: 2025-01-17 vvv
+Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
+Fischerinsel: Engstelle am Mühlendamm	q2::inwork; 10512,12039 10578,11969
+#Fischerinsel	q4::inwork 10578,11969 10512,12039
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1727643600,
          'id' => 4187,
-         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn gesperrt, vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
+         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
          'type' => 'gesperrt',
          'until' => 1737129600
        },
@@ -8569,25 +8567,25 @@ Fischerinsel	q4::inwork 10578,11969 10512,12039
        undef,
        {
          'data' => '#: next_check_id: GUDRUN-2024
-#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024)
+#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
 	q4::inwork; 17139,12100 17091,12105 16993,12118
 ',
          'from' => 1729486800,
          'id' => 4195,
-         'text' => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 26.11.2024 17:00',
+         'text' => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 07.01.2025 17:00',
          'type' => 'handicap',
-         'until' => 1732636800
+         'until' => 1736265600
        },
        {
          'data' => '#: next_check_id: GUDRUN-2024
-#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024)
+#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
 	q4::inwork; 17139,12100 17088,12069 16975,12000 16865,11931
 ',
          'from' => 1729486800,
          'id' => 4196,
-         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 26.11.2024 17:00',
+         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 07.01.2025 17:00',
          'type' => 'handicap',
-         'until' => 1732636800
+         'until' => 1736265600
        },
        {
          'data' => '#: next_check_id: GUDRUN-2024
@@ -8595,9 +8593,10 @@ Fischerinsel	q4::inwork 10578,11969 10512,12039
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848592619309306058 (bis Ende November 2024)
 #: by: https://pbs.twimg.com/media/GabKRSNWsAAUzjA?format=jpg&name=large
 #: by: https://www.bahninfo-forum.de/read.php?9,731381,814767#msg-814767
-#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024)
+#: by: https://www.berliner-woche.de/lichtenberg/c-bauen/anwohner-genervt-durch-bvg-baustelle-im-nibelungenkiez_a430442
+#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
 #: source_id: bvg2024:256#HIM_FREETEXT_242768
-#: source_id[closed]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
+#: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - 2024-12-12)
 #: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024) (bis 15.11.2024) (bis 19.11.2024) (inaktiv)
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
@@ -8610,9 +8609,9 @@ Fischerinsel	q4::inwork 10578,11969 10512,12039
 ',
          'from' => 1729548000,
          'id' => 4197,
-         'text' => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 26.11.2024 17:00',
+         'text' => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 07.01.2025 17:00',
          'type' => 'handicap',
-         'until' => 1732636800
+         'until' => 1736265600
        },
        {
          'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025)
@@ -8685,7 +8684,8 @@ Fischerinsel	q4::inwork 10578,11969 10512,12039
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024)
+         'data' => '#: next_check_id: ZIEGEL-2024
+#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024)
 #: note: etwa 40m
 	q3::inwork; 9559,13087 9401,13072
 #: note: gesperrt wegen der Gegenverkehrsampel
@@ -8786,8 +8786,9 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1503828.php (zunächst bis Ende Mai 2025)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
+#: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
 #: next_check: 2025-05-31
-	q4::temp 10032,9456 10004,9268
+	q3::temp 10032,9456 10004,9268
 ',
          'from' => undef,
          'id' => 4218,
@@ -8813,7 +8814,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
        },
        {
          'data' => '#: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025)
-#: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025)
+#: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
 #: last_checked: 2024-11-23 (mapillary)
 #: check_frequency: 90d
@@ -8826,6 +8827,43 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'text' => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, Linksabbiegen vom Radweg in die Scharnhorststr. möglicherweise nicht möglich, , vom 22.11.2024 08:00 bis 10.03.2025 17:00',
          'type' => 'handicap',
          'until' => 1741622400
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1506360.php
+#: note: rund um das Hotel Courtyard by Marriott Berlin-Mitte
+	2::temp 10072,11384 10116,11485 10136,11529 10176,11593 10201,11631
+	2::temp 10116,11485 9936,11469
+	2::temp 10176,11593 10001,11577
+',
+         'from' => 1732575600,
+         'id' => 4221,
+         'text' => 'Axel-Springer-Str./Krausenstr./Schützenstr.: mögliche Sperrungen vom 27. November 2024, 16 Uhr, bis 29. November 2024, 11 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1732874400
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1506360.php
+#: by: https://www.tagesspiegel.de/berlin/gebiet-weitraumig-gesperrt-sicherheitsvorkehrungen-fur-basketballspiel-zwischen-maccabi-tel-aviv-und-alba-berlin-12766163.html
+#: note: Sicherheitsvorkehrungen für Basketballspiel in der Uber-Arena
+	2::temp 13067,11145 13150,11101 13240,11279
+	2::temp 13150,11101 13080,10956 12990,11006 13067,11145 12984,11194 13056,11329
+	2::temp 12984,11194 12908,11058 12990,11006
+',
+         'from' => 1732575600,
+         'id' => 4222,
+         'text' => 'Uber-Platz/Stralauer Allee: mögliche Sperrungen vom 27. November 2024, 16 Uhr, bis 29. November 2024, 11 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1732874400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.230712,52.513672,25.11.2024,07:00 (bis 17.01.2025)
+	q4::inwork; -1398,11803 -1382,11736 -1375,11555 -1368,11525
+',
+         'from' => 1732428000,
+         'id' => 4223,
+         'text' => 'Am Glockenturm: Bauarbeiten zwischen Glockenturmstr. und Schirwindter Allee, evtl. sind auch Radfahrer betroffen, vom 25.11.2024 07:00 bis 17.01.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1737129600
        }
      
 );

@@ -505,7 +505,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 3 (Fahrradstraße?)
-#: last_checked: 2024-11-03 vvv
+#: last_checked: 2024-11-23 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: osm_watch: way id="169459736" version="15"
@@ -13811,6 +13811,8 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 # 
 (Sonnenallee - Neltestr.): Waldweg, einige Wurzeln	Q2- 19610,4394 19750,4260
 # 
+(Weg am Jacob-und-Wilhelm-Grimm-Zentrum): Gehwegplatten	Q0- 9435,12698 9561,12723
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -17170,7 +17172,7 @@ Jägerstr.: schlechtes Kopfsteinpflaster	Q3 5660,2219 5761,2262 5788,2274 5836,22
 Parforceheide: Asphalt	Q0 -1737,1904 -1796,2054 -1717,2084 -1654,1954
 # 
 #: by: Michael Heckner: vvv
-# REMOVED (realisiert) --- #: next_check_id: ROBERTVONOSTERTAG-2104 --- #: XXX Straße wird befestigt (Verbundsteinpflaster?) und Ausweisung als verkehrsberuhigten Bereich; siehe auch Eintrag in handicap_s-orig --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95215.php --- #: next_check: 2015-09-01
+# REMOVED (realisiert) --- #: next_check_id: ROBERTVONOSTERTAG-2014 --- #: XXX Straße wird befestigt (Verbundsteinpflaster?) und Ausweisung als verkehrsberuhigten Bereich; siehe auch Eintrag in handicap_s-orig --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95215.php --- #: next_check: 2015-09-01
 #: corrected_by: srt (neu gemacht, früher unbefestigt)
 Robert-von-Ostertag-Str.: Verbundsteinpflaster	Q1+ -613,1949 -745,2320
 #: confirmed_by: srt
@@ -18408,11 +18410,13 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1121547.php (Asphaltierung geplant)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1253548.php (fertig, Art der Wegbeschaffenheit unbekannt)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1410581.php (Arbeiten ab 2024)
+#: by: https://www.tagesspiegel.de/berlin/berliner-ausflugsparadies-an-havel-und-wannsee-so-wird-der-gutspark-neu-kladow-20242025-umgebaut-11351305.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/baustelle-im-berliner-paradies-wie-stehts-um-den-havelradweg-im-gutspark-neukladow-12499511.html (Asphaltierung 2025)
 #: XXX wird hier asphaltiert?
 #: osm_watch: way id="205746338" version="9"
 #: last_checked: 2024-09-18
 #: check_frequency: 180d
-# REMOVED --- #: next_check: 2022-10-11
+#: next_check: 2025-10-01
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1- -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: confirmed_by: srt
 Ernst-Liesegang-Ufer: wassergebundene Decke	Q1 -5924,5602 -5911,5619 -5853,5674
@@ -22687,6 +22691,9 @@ Utestr.: schlechtes Kopfsteinpflaster	Q3+ 2178,28067 2340,28043 2381,28057 2411,
 #: confirmed_by: srt
 Utestr.: Asphalt	Q0 2411,28050 2576,28008
 #: confirmed_by: srt
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1506462.php (Fahrbahninstandsetzungsarbeiten)
+#: XXX nach den Fahrbahninstandsetzungsarbeiten vielleicht besserer Asphalt?
+#: next_check: 2024-12-06
 Staehleweg: Asphalt	Q0- 2345,27670 2061,27612 1965,27594 1921,27572 1858,27576
 #: corrected_by: srt (unbefestigt -> ..., neu gemacht)
 Staehleweg - Mauerweg: Asphalt	Q0 1858,27576 1784,27560
@@ -23738,6 +23745,9 @@ Dihlmannstr.: Kleinsteinpflaster	Q1-; 1065,15229 976,15195 971,15193 851,15155 7
 #: corrected_by: srt (Radweg ist Verbundsteinpflaster; mittlerweile asphaltiert)
 Dihlmannstr.: neu asphaltierter Radweg	Q0; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,15229
 #: corrected_by: srt (glatt gepflasterter Weg -> ...)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/baume-oder-radweg-beides-hilft-diese-idee-aus-niedersachsen-der-berliner-problembaustelle-12542495.html (Sommer 2025)
+#: XXX möglicherweise Sanierung (Asphaltierung?)
+#: next_check: 2025-09-01
 (Dihlmannstr. - Jungfernheideweg): wassergebundene Decke, Rillen	Q1- 1065,15229 1192,15257
 #: corrected_by: mapillary (neu gemacht), srt
 (Dihlmannstr. - Jungfernheideweg): Asphalt	Q0 1192,15257 1374,15314
