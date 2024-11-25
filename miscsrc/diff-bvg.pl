@@ -67,25 +67,12 @@ for my $def (
 	@cat_projects_cmd = (qw(git show), $version.':'.$json_file);
     }
     my @cmd = (\@cat_projects_cmd);
-#	       '|', [qw(jq .[])],
-#	       ($ignore_boring ? (
-#				  '|', ['jq', 'del(.[].additionalHtmlContent)'],
-#				  '|', ['jq', 'del(.[].coordinator)'],
-#				  '|', ['jq', 'del(.[].holder)'],
-#				  '|', ['jq', 'del(.[].imagesBefore)'],
-#				  '|', ['jq', 'del(.[].imagesCurrent)'],
-#				  '|', ['jq', 'del(.[].image)'],
-#				  '|', ['jq', 'del(.[].kml)'],
-#				 ) : ()),
-#	       (map { ('|', ['jq', 'del(.[].'.$_.')']) } @ignore), # XXX only simple keys (e.g. "types") work here, but something like "types.metrics" does not
-#	       '|', [qw(jq sort_by(.[].id))]
-#	      );
     if ($debug) {
 	my $debug_cmd = join(" ", map { ref $_ eq 'ARRAY' ? join(' ', @$_) : $_ } @cmd);
 	warn "RUN: $debug_cmd...\n";
     }	
     run @cmd, '>', \my $json
-	or die "Failed to run '@cat_projects_cmd' and process with jq";
+	or die "Failed to run '@cat_projects_cmd'";
 
     $json = decode('UTF-8', $json);
     $json =~ s/[\x{2060}\x{200B}]//g; # sanitize
@@ -95,43 +82,46 @@ for my $def (
     %$ref = %$res;
 }
 
-#binmode STDOUT, ':utf8';
-binmode STDOUT, ':raw';
+binmode STDOUT, ':utf8';
 
-my @all_ids = sort { $a cmp $b } uniq(keys(%old_records), keys(%new_records));
+my @all_ids;
+{
+    my %all_records = (%old_records, %new_records);
+    @all_ids = sort {
+	$all_records{$a}->{_date} cmp $all_records{$b}->{_date} ||
+	$all_records{$a}->{_title} cmp $all_records{$b}->{_title} ||
+	$a cmp $b
+    } keys %all_records;
+}
 $| = 1;
 my($stats_new, $stats_deleted, $stats_changed, $stats_changes_before_normalization) = (0, 0, 0, 0);
 for my $id (@all_ids) {
     if (!$old_records{$id}) {
 	print "="x70, "\n", "NEW RECORD $id\n";
 	print_basic_info($new_records{$id}, mode => 'new');
-	print "$new_records{$id}\n";
+	print_raw_json($new_records{$id});
 	$stats_new++;
     } elsif (!$new_records{$id}) {
 	print "="x70, "\n", "DELETED RECORD $id\n";
 	print_basic_info($old_records{$id}, mode => 'deleted');
-	print "$old_records{$id}\n";
+	print_raw_json($old_records{$id});
 	$stats_deleted++;
     } elsif ($old_records{$id} ne $new_records{$id}) {
-	# normalize first
-	(my $old_record = $old_records{$id}) =~ s{https://}{http://}g;
-	(my $new_record = $new_records{$id}) =~ s{https://}{http://}g;
-	s{\\r}{}g for ($old_record, $new_record); # some "kml" record contain DOS newlines
-	if ($old_record ne $new_record) {
+	my $old_json = JSON::XS->new->pretty->canonical->utf8->encode($old_records{$id});
+	my $new_json = JSON::XS->new->pretty->canonical->utf8->encode($new_records{$id});
+	if ($old_json ne $new_json) {
 	    print "="x70, "\n", "CHANGED RECORD $id\n";
 	    $stats_changed++;
 
 	    my $old = File::Temp->new(TMPDIR => 1, TEMPLATE => "bvg-old-XXXXXXXX");
-	    binmode $old, ':utf8';
-	    $old->print($old_record);
+	    $old->print($old_json);
 	    $old->flush;
 
 	    my $new = File::Temp->new(TMPDIR => 1, TEMPLATE => "bvg-new-XXXXXXXX");
-	    binmode $new, ':utf8';
-	    $new->print($new_record);
+	    $new->print($new_json);
 	    $new->flush;
 
-	    print_basic_info($new_record, mode => 'changed');
+	    print_basic_info($new_records{$id}, mode => 'changed');
 	    my @cmd;
 	    if ($use_wdiff) {
 		@cmd = ('wdiff',
@@ -141,8 +131,9 @@ for my $id (@all_ids) {
 		@cmd = ("diff", "-u", "$old", "$new");
 	    }
 	    run [@cmd], ">", \my $diff;
-	    $diff = decode('UTF-8', $diff);
+	    binmode STDOUT, ':raw';
 	    print $diff;
+	    binmode STDOUT, ':utf8';
 	} else {
 	    $stats_changes_before_normalization++;
 	}
@@ -157,16 +148,10 @@ print "Deleted records: $stats_deleted\n";
 print "Changed records: $stats_changed\n";
 
 sub print_basic_info {
-    my($json, %opts) = @_;
+    my($record, %opts) = @_;
     my $mode = delete $opts{mode};
     die "Unhandled arguments: " . join(" ", %opts) if %opts;
 
-    my $record = decode_json($json); 
-
-    inject_title($record);
-    inject_date($record);
-
-    binmode STDOUT, ':utf8';
     if ($record->{_title}) {
 	print $record->{_title}, "\n";
     }
@@ -175,46 +160,12 @@ sub print_basic_info {
     }
 
     my($id) = $record->{id};
-    print "id: " . $id . ($sourceids->{$id} ? " (INUSE)" : "") . "\n";
+    my $enddate;
+    if ($record->{_date} =~ m{ - (\d{4}-\d{2}-\d{2})}) {
+	$enddate = $1;
+    }
+    print "#: source_id: bvg2024:$id" . ($enddate ? " (bis $enddate)" : "") . ($sourceids->{$id} ? " (INUSE)" : "") . "\n";
 
-#    my $bbbike_data;
-#    my($link) = $record =~ m{"link":\s*"(.*)"};
-#    if ($link) {
-#	print $link;
-#	(my $link_without_scheme = $link) =~ s{^https?:}{};
-#	$bbbike_data = $infravelo_urls->{$link_without_scheme};
-#	if ($bbbike_data) {
-#	    print " (INUSE)";
-#	}
-#	if ($bbbike_data && $check_deleted_if_in_use && $mode eq 'deleted') {
-#	    my $resp = $ua->head($link);
-#	    if ($resp->is_success) {
-#		print " (WEBSITE_OK)";
-#	    } else {
-#		print " (WEBSITE_MISSING)";
-#	    }
-#	}
-#	print "\n";
-#    }
-#    my($dateStart) = $record =~ m{"dateStart": "(.*)"};
-#    my($dateEnd) = $record =~ m{"dateEnd": "(.*)"};
-#    if ($dateStart || $dateEnd) {
-#	my $period = ($dateStart//"...") . " - " . ($dateEnd//"...");
-#	my $period_check = '';
-#	if ($mode eq 'deleted') {
-#	    $period_check = ' [?]'; # we have no fresh data
-#	} else {
-#	    my $bbbike_period = $bbbike_data->{period};
-#	    if ($bbbike_period) {
-#		$period_check = $period eq $bbbike_period ? ' [OK]' : ' [DIFF]';
-#	    }
-#	}
-#	print $period . $period_check . "\n";
-#    }
-#    (my $link_rx = $link) =~ s{https?:}{https?:};
-#    print qq{(bbbike-grep-with-args "by" "$link_rx")\n};
-
-    binmode STDOUT, ':raw';
 }
 
 sub filter_and_split_json {
@@ -223,7 +174,9 @@ sub filter_and_split_json {
     my %records;
     for my $element (@$data) {
 	next if ($element->{"messageType"}||'') eq "ELEVATOR";
-	$records{$element->{id}} = JSON::XS->new->pretty->canonical->utf8->encode($element);
+	inject_title($element);
+	inject_date($element);
+	$records{$element->{id}} = $element;
     }
     \%records;
 }
@@ -231,29 +184,34 @@ sub filter_and_split_json {
 sub inject_title {
     my $record = shift;
 
-    my $title = '';
-    my %linetype_to_lines;
-    for my $lines_element (@{$record->{lines}}) {
-	while(my($linetype, $lines) = each %$lines_element) {
-	    for my $line (@$lines) {
-		push @{ $linetype_to_lines{$linetype} }, $line->{name};
+    my($lines, $from, $to);
+
+    {
+	$lines = '';
+
+	my %linetype_to_lines;
+	for my $lines_element (@{$record->{lines}}) {
+	    while(my($linetype, $_lines) = each %$lines_element) {
+		for my $line (@$_lines) {
+		    push @{ $linetype_to_lines{$linetype} }, $line->{name};
+		}
 	    }
 	}
-    }
-    my $need_sep;
-    for my $linetype (sort keys %linetype_to_lines) {
-	if ($need_sep) {
-	    $title .= ', ';
+	my $need_sep;
+	for my $linetype (sort keys %linetype_to_lines) {
+	    if ($need_sep) {
+		$lines .= ', ';
+	    }
+	    $lines .= ucfirst($linetype) . ' ';
+	    $lines .= join(',', @{ $linetype_to_lines{$linetype} });
+	    $need_sep = 1;
 	}
-	$title .= ucfirst($linetype) . ' ';
-	$title .= join(',', @{ $linetype_to_lines{$linetype} });
-	$need_sep = 1;
     }
-    $title .= ' ' if $title;
-    $title .= $record->{stationOne}{displayName} if $record->{stationOne};
-    $title .= ' ' if $title;
-    $title .= $record->{stationTwo}{displayName} if $record->{stationTwo};
 
+    $from = $record->{stationOne}{displayName} if $record->{stationOne};
+    $to   = $record->{stationTwo}{displayName} if $record->{stationTwo};
+
+    my $title = $lines . ($from || $to ? " " . join(" - ", ($from||()), ($to||())) : "");
     $record->{_title} = $title;
 }
 
@@ -278,6 +236,13 @@ sub inject_date {
     }
 
     $record->{_date} = $date;
+}
+
+sub print_raw_json {
+    my $record = shift;
+    binmode STDOUT, ':raw';
+    print JSON::XS->new->pretty->canonical->utf8->encode($record);
+    binmode STDOUT, ':utf8';
 }
 
 sub load_sourceids {
