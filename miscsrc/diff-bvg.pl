@@ -22,7 +22,7 @@ use Getopt::Long;
 use JSON::XS qw(decode_json);
 use IPC::Run qw(run);
 use List::MoreUtils qw(uniq);
-use YAML::XS qw(LoadFile);
+use YAML::XS qw(LoadFile Dump);
 
 my $json_file = "bvg_checker_disruptions_2024.json";
 
@@ -39,6 +39,7 @@ GetOptions(
 	   #"ignore-boring" => \$ignore_boring,
 	   'ignore=s@'     => \@ignore,
 	   'wdiff' => \$use_wdiff,
+	   'as-yaml' => \my $as_yaml,
 	   "debug" => \$debug,
 	  )
     or die "usage: $0 [--debug] [--ignore key ...] [--old-version delta] [--new-version delta] [--wdiff]\n";
@@ -99,26 +100,26 @@ for my $id (@all_ids) {
     if (!$old_records{$id}) {
 	print "="x70, "\n", "NEW RECORD $id\n";
 	print_basic_info($new_records{$id}, mode => 'new');
-	print_raw_json($new_records{$id});
+	print_raw_serialized($new_records{$id});
 	$stats_new++;
     } elsif (!$new_records{$id}) {
 	print "="x70, "\n", "DELETED RECORD $id\n";
 	print_basic_info($old_records{$id}, mode => 'deleted');
-	print_raw_json($old_records{$id});
+	print_raw_serialized($old_records{$id});
 	$stats_deleted++;
     } elsif ($old_records{$id} ne $new_records{$id}) {
-	my $old_json = JSON::XS->new->pretty->canonical->utf8->encode($old_records{$id});
-	my $new_json = JSON::XS->new->pretty->canonical->utf8->encode($new_records{$id});
-	if ($old_json ne $new_json) {
+	my $old_serialized = $as_yaml ? Dump($old_records{$id}) : JSON::XS->new->pretty->canonical->utf8->encode($old_records{$id});
+	my $new_serialized = $as_yaml ? Dump($new_records{$id}) : JSON::XS->new->pretty->canonical->utf8->encode($new_records{$id});
+	if ($old_serialized ne $new_serialized) {
 	    print "="x70, "\n", "CHANGED RECORD $id\n";
 	    $stats_changed++;
 
 	    my $old = File::Temp->new(TMPDIR => 1, TEMPLATE => "bvg-old-XXXXXXXX");
-	    $old->print($old_json);
+	    $old->print($old_serialized);
 	    $old->flush;
 
 	    my $new = File::Temp->new(TMPDIR => 1, TEMPLATE => "bvg-new-XXXXXXXX");
-	    $new->print($new_json);
+	    $new->print($new_serialized);
 	    $new->flush;
 
 	    print_basic_info($new_records{$id}, mode => 'changed');
@@ -247,10 +248,14 @@ sub inject_date {
     $record->{_date} = $date;
 }
 
-sub print_raw_json {
+sub print_raw_serialized {
     my $record = shift;
     binmode STDOUT, ':raw';
-    print JSON::XS->new->pretty->canonical->utf8->encode($record);
+    if ($as_yaml) {
+	print Dump($record);
+    } else {
+	print JSON::XS->new->pretty->canonical->utf8->encode($record);
+    }
     binmode STDOUT, ':utf8';
 }
 
