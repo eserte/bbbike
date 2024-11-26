@@ -3339,7 +3339,27 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147342105 (inaktiv)
+#	q3::inwork; 14181,11434 14211,11552
+#: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
+#: next_check_id: MODERSOHN-2024
+#: last_checked: 2024-11-26 vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: next_check: 2024-11-22 vvv
+Modersohnstr.: Markierungsarbeiten fertig, , Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14134,11272 14181,11434
+Gärnerstr.: Markierungsarbeiten fertig, Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14211,11552 14181,11434
+# REMOVED --- Gärnerstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,11552
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1730674800,
+         'id' => 2495,
+         'text' => 'Gärtnerstr./Modersohnstr.: Einbahnstraße noch ohne "Radfahrer frei"-Beschilderung',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -5040,7 +5060,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-10-26
+#: last_checked: 2024-11-26
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -5661,7 +5681,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-30
+#: last_checked: 2024-11-26
 #: check_frequency: 30d
 #: next_check: 2025-03-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6914,10 +6934,10 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
 #: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_238442
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt)
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt)
-#: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt)
-#: source_id: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
+#: source_id: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
 #: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
@@ -7871,16 +7891,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: LS/221-F/24/125 (bis 30.11.2024)
-	2::inwork 54410,20569 54169,20358 53940,20148
-',
-         'from' => 1719122400,
-         'id' => 4093,
-         'text' => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 30.11.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1732978800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022) (mittlerweile: Baubeginn Juni 2024) (mittlerweile: "Voraussichtliche Bauzeit: Juni 2024 - Juni 2027")
@@ -8094,22 +8105,12 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        undef,
        undef,
-       {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-26
-	2::inwork 11275,8387 11282,8428 11279,8489 11259,8591
-',
-         'from' => undef,
-         'id' => 4126,
-         'text' => 'Hasenheide: ein Abschnitt des Hauptwegs kann wegen Bauarbeiten gesperrt sein (Stand Ende Oktober 2024: Durchfahrt zeitweise möglich)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-25
+#: last_checked: 2024-11-26
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8289,7 +8290,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breitere-eingaenge-und-bessere-ausstattung-im-eingangsbereich-herrfurthstrasse-starten/ (bis Frühjahr 2025)
 #: by: https://www.berliner-zeitung.de/news/bauarbeiten-am-tempelhofer-feld-diese-eingangsbereiche-werden-erneuert-li.2274683
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2024-11-24 (Pressemitteilung) vvv
+#: last_checked: 2024-11-26 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
@@ -8403,7 +8404,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wollankstrasse_informationsveranstaltung_20241126.pdf
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1861029520645538026 (bis 20.12.2024)
 #: by: https://pbs.twimg.com/media/GdOzzK9XEAAuZLU?format=jpg&name=medium (Umleitungsstrecken für Rad- und Fußverkehr)
-#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024)
 #: osm_watch: way id="23984383" version="30"
@@ -8436,14 +8437,14 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: last_checked: 2024-11-19
-#: check_frequency: 21d
-#: next_check: 2024-11-29
+#: last_checked: 2024-11-26
+#: check_frequency: 10d
+# REMOVED --- #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
 ',
          'from' => 1727367350,
          'id' => 4174,
-         'text' => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, voraussichtlich bis 29.11.2024',
+         'text' => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => 1732921200
        },
@@ -8477,17 +8478,17 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
-#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024)
-#: also_indoor: traffic (H,G,B,T,ex-W)
+#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024)
+#: also_indoor: traffic (H,G,B,T,re-W)
 #: last_checked: 2024-10-23
-#: next_check: 2024-12-11
+#: next_check: 2024-12-20
 	q3::inwork 10944,10606 11100,10530
 ',
          'from' => undef,
          'id' => 4184,
-         'text' => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, voraussichtlich bis 11.12.2024',
+         'text' => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, voraussichtlich bis 20.12.2024',
          'type' => 'handicap',
-         'until' => 1733932800
+         'until' => 1734710400
        },
        {
          'data' => '#: source_id: LS/221-F/24/200 (bis 07.02.2025)
@@ -8864,6 +8865,35 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'text' => 'Am Glockenturm: Bauarbeiten zwischen Glockenturmstr. und Schirwindter Allee, evtl. sind auch Radfahrer betroffen, vom 25.11.2024 07:00 bis 17.01.2025 17:00',
          'type' => 'handicap',
          'until' => 1737129600
+       },
+       {
+         'data' => '#: note: früher vermutlich für Radfahrer frei, jetzt gibt es hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
+Am Rummelsburger See: Fußgänger, Grünanlage	q4 15253,10171 15199,10211 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411
+#: note: früher vermutlich für Radfahrer frei, jetzt nicht mehr
+Am Rummelsburger See: Fußgänger, kurvenreich, Grünanlage	q4 15793,9334 15813,9378 15819,9430 15749,9558 15739,9583 15708,9607 15659,9647 15621,9704 15626,9710 15561,9809 15465,9860 15347,9922 15296,10000 15295,10022 15260,10048 15283,10087 15289,10092 15289,10097 15311,10127 15306,10142
+Regatta-Ufer: Fußgänger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
+#: note: 2010 war das Radfahren noch explizit erlaubt, heute ist hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer vvv
+(Wendenwiese): Fußgänger, Grünanlage	q4 15367,9691 15405,9675 15466,9633 15497,9644 15498,9681 15505,9688
+(Wendenwiese): Fußgänger, Grünanlage	q4 15436,9731 15405,9675
+#: note ^^^
+#: note: 2010 war das Radfahren noch explizit erlaubt, heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder
+(Spreeufer): Fußgänger, Grünanlage	q4 14569,10055 14599,10039 14690,9993 14776,9949 15000,9820
+#: note: 2010 war das Radfahren noch explizit erlaubt (Bild existiert), heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder
+Caroline-Tübbecke-Ufer: Fußgänger, Grünanlage	q4 15000,9820 15043,9790 15367,9691
+#: note: Grünanlagenschild ohne weitere Zusatzschilder bzgl. Radfahren
+(Tunnelstr. - Uferweg): Fußgänger, Grünanlage	q4 15662,9501 15749,9558
+#: note: 2010 war das Radfahren noch explizit erlaubt (Bild existiert), heute ist hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
+(Strela-Platz): Fußgänger, Grünanlage	q4 15400,9742 15465,9860
+#: note: 2010 war das Radfahren noch explizit erlaubt (dennoch q2), heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder
+(Alt-Stralau - Spreeufer): Fußgänger, Grünanlage, kurze Rampe	q4 15031,9876 15000,9820
+Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
+',
+         'from' => undef,
+         'id' => 4224,
+         'permanent' => 1,
+         'text' => 'Uferwege auf Stralau: Grünanlage, Radfahren nicht erlaubt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

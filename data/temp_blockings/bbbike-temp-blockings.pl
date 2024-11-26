@@ -14791,7 +14791,7 @@ EOF
 # REMOVED (Laurenzstr., 2022 nichts gesehen) ---	2::temp 22175,4730 22246,4711
 # REMOVED (Rosenstr., 2022 nichts gesehen) ---	2::temp 22144,4660 22212,4655 22284,4653
 # REMOVED (Böttcherstr., 2022 nichts gesehen) ---	2::temp 22212,4655 22214,4548
-	2::temp 22093,4499 22076,4422
+	2::temp 22093,4499 22087,4470 22084,4455 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
 	2::temp 22138,4642 22074,4664
 	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
@@ -23031,7 +23031,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-11-04 00:00:00"), # 1511898358,
-       until => $isodate2epoch->("2024-11-22 18:00:00"), # $isodate2epoch->("2024-11-08 18:00:00"), # 1513622255, # $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
+       until => undef, # $isodate2epoch->("2024-11-22 18:00:00"), # $isodate2epoch->("2024-11-08 18:00:00"), # 1513622255, # $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
 #       text  => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
 #       text  => 'Modersohnstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Revaler Str. gesperrt, voraussichtlich bis 08.11.2024',
 #       text  => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, voraussichtlich bis 22.11.2024',
@@ -23042,7 +23042,7 @@ EOF
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-25 vvv
+#: last_checked: 2024-11-26 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-11-22 vvv
 Modersohnstr.: Markierungsarbeiten fertig, , Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14134,11272 14181,11434
@@ -24270,7 +24270,7 @@ EOF
 # REMOVED (hier wohl nicht) ---	2::temp 22074,4664 22138,4642
 # REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
 Luisenhain	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
-Schlossinsel	2::temp 22093,4499 22076,4422
+Schlossinsel	2::temp 22093,4499 22087,4470 22084,4455 22076,4422
 # REMOVED --- #: tempex ^^^
 EOF
      },
@@ -32873,7 +32873,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-10-26
+#: last_checked: 2024-11-26
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -36019,7 +36019,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-30
+#: last_checked: 2024-11-26
 #: check_frequency: 30d
 #: next_check: 2025-03-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -41061,10 +41061,10 @@ EOF
 #: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
 #: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_238442
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt)
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt)
-#: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt)
-#: source_id: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
+#: source_id: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
 #: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
@@ -44166,11 +44166,11 @@ EOF
 EOF
      },
      { from  => 1719122400, # 2024-06-23 08:00
-       until => 1732978800, # 2024-11-30 16:00
+       until => 1732647718, # 1732978800, # 2024-11-30 16:00
        text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 30.11.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/125 (bis 30.11.2024)
+#: source_id: LS/221-F/24/125 (bis 30.11.2024) (inaktiv)
 	2::inwork 54410,20569 54169,20358 53940,20148
 EOF
      },
@@ -44632,12 +44632,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1732642764, # undef, # XXX
        text  => 'Hasenheide: ein Abschnitt des Hauptwegs kann wegen Bauarbeiten gesperrt sein (Stand Ende Oktober 2024: Durchfahrt zeitweise möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-10-26
+# REMOVED (am südlichen Ende keine weggeschobenen Barrieren mehr gesehen) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-10-26
 	2::inwork 11275,8387 11282,8428 11279,8489 11259,8591
 EOF
      },
@@ -44650,7 +44649,7 @@ EOF
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-25
+#: last_checked: 2024-11-26
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -45009,7 +45008,7 @@ EOF
 #: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breitere-eingaenge-und-bessere-ausstattung-im-eingangsbereich-herrfurthstrasse-starten/ (bis Frühjahr 2025)
 #: by: https://www.berliner-zeitung.de/news/bauarbeiten-am-tempelhofer-feld-diese-eingangsbereiche-werden-erneuert-li.2274683
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2024-11-24 (Pressemitteilung) vvv
+#: last_checked: 2024-11-26 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
@@ -45215,7 +45214,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wollankstrasse_informationsveranstaltung_20241126.pdf
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1861029520645538026 (bis 20.12.2024)
 #: by: https://pbs.twimg.com/media/GdOzzK9XEAAuZLU?format=jpg&name=medium (Umleitungsstrecken für Rad- und Fußverkehr)
-#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024)
 #: osm_watch: way id="23984383" version="30"
@@ -45252,14 +45251,15 @@ EOF
      },
      { from  => 1727367350, # 2024-09-26 18:15
        until => 1732921200, # 2024-11-30 00:00
-       text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, voraussichtlich bis 29.11.2024',
+#      text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, voraussichtlich bis 29.11.2024',
+       text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: last_checked: 2024-11-19
-#: check_frequency: 21d
-#: next_check: 2024-11-29
+#: last_checked: 2024-11-26
+#: check_frequency: 10d
+# REMOVED --- #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
 EOF
      },
@@ -45362,16 +45362,16 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-12-11 17:00:00"), # undef, # XXX
-       text  => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, voraussichtlich bis 11.12.2024',
+       until => $isodate2epoch->("2024-12-20 17:00:00"), # undef, # XXX
+       text  => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, voraussichtlich bis 20.12.2024',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
-#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024)
-#: also_indoor: traffic (H,G,B,T,ex-W)
+#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024)
+#: also_indoor: traffic (H,G,B,T,re-W)
 #: last_checked: 2024-10-23
-#: next_check: 2024-12-11
+#: next_check: 2024-12-20
 	q3::inwork 10944,10606 11100,10530
 EOF
      },
@@ -45849,6 +45849,34 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.230712,52.513672,25.11.2024,07:00 (bis 17.01.2025)
 	q4::inwork; -1398,11803 -1382,11736 -1375,11555 -1368,11525
+EOF
+     },
+     { from  => undef, # 
+       until => undef, #
+       text  => 'Uferwege auf Stralau: Grünanlage, Radfahren nicht erlaubt',
+       permanent => 1,
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: früher vermutlich für Radfahrer frei, jetzt gibt es hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
+Am Rummelsburger See: Fußgänger, Grünanlage	q4 15253,10171 15199,10211 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411
+#: note: früher vermutlich für Radfahrer frei, jetzt nicht mehr
+Am Rummelsburger See: Fußgänger, kurvenreich, Grünanlage	q4 15793,9334 15813,9378 15819,9430 15749,9558 15739,9583 15708,9607 15659,9647 15621,9704 15626,9710 15561,9809 15465,9860 15347,9922 15296,10000 15295,10022 15260,10048 15283,10087 15289,10092 15289,10097 15311,10127 15306,10142
+Regatta-Ufer: Fußgänger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
+#: note: 2010 war das Radfahren noch explizit erlaubt, heute ist hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer vvv
+(Wendenwiese): Fußgänger, Grünanlage	q4 15367,9691 15405,9675 15466,9633 15497,9644 15498,9681 15505,9688
+(Wendenwiese): Fußgänger, Grünanlage	q4 15436,9731 15405,9675
+#: note ^^^
+#: note: 2010 war das Radfahren noch explizit erlaubt, heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder
+(Spreeufer): Fußgänger, Grünanlage	q4 14569,10055 14599,10039 14690,9993 14776,9949 15000,9820
+#: note: 2010 war das Radfahren noch explizit erlaubt (Bild existiert), heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder
+Caroline-Tübbecke-Ufer: Fußgänger, Grünanlage	q4 15000,9820 15043,9790 15367,9691
+#: note: Grünanlagenschild ohne weitere Zusatzschilder bzgl. Radfahren
+(Tunnelstr. - Uferweg): Fußgänger, Grünanlage	q4 15662,9501 15749,9558
+#: note: 2010 war das Radfahren noch explizit erlaubt (Bild existiert), heute ist hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
+(Strela-Platz): Fußgänger, Grünanlage	q4 15400,9742 15465,9860
+#: note: 2010 war das Radfahren noch explizit erlaubt (dennoch q2), heute steht nur das Grünanlagen-Schild ohne weitere Zusatzschilder
+(Alt-Stralau - Spreeufer): Fußgänger, Grünanlage, kurze Rampe	q4 15031,9876 15000,9820
+Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 EOF
      },
     );
