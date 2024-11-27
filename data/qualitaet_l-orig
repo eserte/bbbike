@@ -893,12 +893,14 @@ Groß-Köris - Motzen: Verbundsteinpflaster	Q1 23775,-22788 23482,-22742
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1471867.php (Bauarbeiten voraussichtlich ab Mitte September 2024)
 #: by: https://www.berliner-woche.de/schmoeckwitz/c-verkehr/ortsdurchfahrt-wird-saniert_a422431 (Bauarbeiten voraussichtlich bis Anfang September 2025)
 #: by: https://www.zeuthen.de/Ankuendigung-Vollsperrung-der-L401-Zeuthener-Strasse-in-Eichwalde-ab-dem-7-Oktober-695377.html (1. Bauabschnitt zwischen Friedenstraße und Schmöckwitzer Str. bis Juli 2025, hier sind bislang die Gehwege für Radfahrer frei)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1507405.php (bis September 2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~27-11-2024-l-401-eichwalde-fahrbahnarbeiten-werden-fortgesetzt#
 #: source_id: LS/222-W/24/007 (Baufeldfreimachung, bis 23.02.2024) (bis 29.02.2024) (inaktiv)
 #: source_id: LS/222-W/24/100 (07.10.2024 bis 30.04.2025)
 #: also_indoor: traffic (none)
 #: last_checked: 2024-09-28 (traffic)
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-07-31
+#: next_check: 2025-09-15
 Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26787,-3194 26748,-3285 26651,-3554 26636,-3596 26562,-3781 26554,-3814 26482,-4108 26447,-4251 26319,-4776 26228,-5150 26259,-5681 26085,-5839 25996,-5921
 Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26376,-6676 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26782,-8032 26749,-8481 26727,-8668 26702,-8750 26679,-8825 26589,-9108 26429,-9618 26381,-9753 26365,-9875 26376,-9924 26386,-9964 26420,-10035 26434,-10054
 #: by: ^^^
@@ -2523,7 +2525,9 @@ Nechlin - Nieden: Asphalt	Q0 42457,115900 42844,115851 43069,115789 43214,115717
 Nechlin - Werbelow: Asphalt	Q0 41224,116194 41121,116358 41017,116397 40941,116425 40697,116422 40447,116651 40045,116809
 Werbelow - Trebenow: überwiegend Asphalt, einige Betonabschnitte	Q0 40045,116809 40009,116727 39165,116170 38662,115923
 #: source_id: LS/221-E/22/140 (inaktiv)
-#: osm_watch: note 4388362 1
+#: osm_watch[closed]: note 4388362 1
+#: osm_watch: note 4534113 1
+#: osm_watch: way id="432265426" version="6"
 #: add_fragezeichen: Ist die Straße nach den Bauarbeiten vollständig asphaltiert?
 #: next_check: 2023-07-31
 Trebenow - Bandelow: überwiegend Asphalt, einige Betonabschnitte	Q0 38662,115923 38720,115773 39259,115457 39384,115027 39168,114713 38881,113150 38762,112839
@@ -3556,7 +3560,10 @@ Asphalt	Q0 -84237,-48234 -84110,-48294 -83887,-48317 -82956,-49248 -82684,-49649
 Kopfsteinpflaster	Q2 59474,34284 59482,34218
 Asphalt	Q0 26070,-23160 25954,-22818
 #: by: https://www.meetingpoint-dahme-spreewald.de/neuigkeiten/artikel/166381-wildau-vollsperrung-des-westkorsos-ab-dem-1-juli-2024
-#: XXX Bauarbeiten, bleibt es beim Kleinkopfsteinpflaster?
+#: osm_watch: way id="1323098948" version="1"
+#: osm_watch: way id="7365259" version="17"
+#: osm_watch: way id="255274251" version="9"
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Besteht die Fahrbahn weiterhin aus Kleinkopfsteinpflaster?
 #: last_checked: 2024-07-17
 #: next_check: 2024-11-28
 Westkorso, Zeuthen: Kleinkopfsteinpflaster	Q1- 26033,-7207 26328,-7191 26430,-7173 26609,-7136

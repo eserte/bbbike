@@ -41,16 +41,16 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 #: note: f¸r Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="10"
 #: osm_watch: way id="1072662717" version="12"
-#: last_checked: 2024-11-24
+#: last_checked: 2024-11-27
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 #: osm_watch: note 4452740 1
-#: osm_watch: way id="1327235572" version="1"
-#: osm_watch: way id="1146013233" version="4"
-#: osm_watch: way id="1134071039" version="6"
-#: last_checked: 2024-11-24 vvv
+#: osm_watch: way id="1327235572" version="2"
+#: osm_watch: way id="1146013233" version="5"
+#: osm_watch: way id="1134071039" version="7"
+#: last_checked: 2024-11-26 (osm) vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einm¸ndungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einm¸ndungsbereich	q3::inwork 13275,11830 13406,11896
@@ -95,7 +95,7 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+::inwork 12558,11920
 #: also_indoor: traffic (ex-G,ex-W,B,T)
 #: osm_watch: note 3677862 5
 #: note: Mˆglicherweise Arbeiten an der neuen Gehwegvorstreckung
-#: last_checked: 2024-11-18
+#: last_checked: 2024-11-27
 Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 14651,11666
 # 
 #: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr sp‰ter?)) (wurde mittlerweile umbenannt)
@@ -331,8 +331,8 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285
 #: historical_note: am Anfang Einbahnstraﬂe, offen Richtung Norden (1s:q3:inwork), sp‰ter komplett zu (q4::inwork in handicap_s-orig), dann wieder (laut osm) Einbahnstraﬂe (1s:q3:inwork), seit September 2024 teilweise zu (s¸dlicher Abschnitt)
 #: osm_watch: way id="4596985" version="32"
 #: osm_watch: way id="1161733739" version="20"
-#: last_checked: 2024-11-21
-#: check_frequency: 45d
+#: last_checked: 2024-11-27 (daf)
+#: check_frequency: 30d
 #: next_check: 2024-12-31
 Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	q4::inwork 7998,15068 8015,15047 8037,14958 8091,14895
 # 
@@ -913,7 +913,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: source_id: viz2021:13.428457,52.493713,05.09.2024,07:00 (bis 06.12.2024)
 #: source_id: viz2021:13.42867,52.49391,05.09.2024,19:00 (bis 06.12.2024) (inaktiv)
 #: XXX gesch¸tzte Fahrradspuren werden realisiert
-#: last_checked: 2024-10-26
+#: last_checked: 2024-11-27
 #: check_frequency: 30d
 #: next_check: 2024-12-06
 #Hobrechtbr¸cke: getrennter Geh- und Radweg w‰hrend der Bauarbeiten	q3::inwork 12085,9778 12116,9825
@@ -1376,7 +1376,7 @@ Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11
 #: also_indoor: traffic (B,G,H)
 #: note: Halteverbotsschilder bis 23.10.2024
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2024-11-09 (mapillary) vvv
+#: last_checked: 2024-11-27 vvv
 # REMOVED --- #: next_check: 2024-10-23 vvv
 # REMOVED --- #: valid: -20241023 vvv
 Mozartstr./Calandrellistr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege	q2::inwork 5619,3958 5710,3751 5791,3563
@@ -1776,7 +1776,7 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q3 7531,8848 7563,8871
 Nettelbeckplatz: Fuﬂg‰nger	q2 8024,15401 7974,15418 7891,15417
 Nettelbeckplatz: Fuﬂg‰nger	q2 7929,15355 7974,15418
 # REMOVED (hier Radweg) --- Nettelbeckplatz: Fuﬂg‰nger	q2 7975,15500 7975,15484 7974,15418
-Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5913,8415 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
+Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5913,8415 5831,8358 5818,8354 5782,8344 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: einige Fuﬂg‰nger	q1- 5917,8351 5831,8358
 Volkspark Wilmersdorf: einige Fuﬂg‰nger	q1- 5680,8355 5699,8308
 zum Volksparksteg: kombinierter Rad- und Fuﬂweg, enge Kurven	q3 5533,8478 5531,8458
@@ -1901,7 +1901,7 @@ Hebbelstr.: Fuﬂg‰nger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fuﬂg‰nger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2024-11-15
+#: last_checked: 2024-11-27
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fuﬂg‰nger, Engstellen	q2 12341,10218 12292,10374
@@ -5268,6 +5268,11 @@ Annastr.: einige Fuﬂg‰nger	q3 5920,2693 5930,2671
 Hebammensteigbr¸cke: Fuﬂg‰nger	q3 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
 # 
 (Weg am Jacob-und-Wilhelm-Grimm-Zentrum): Fuﬂg‰nger, Radfahrer absteigen	q4 9435,12698 9561,12723
+# 
+#: XXX_prog BS: Bordstein am Wendehammer, ansonsten q2 vvv
+(Babelsberger Str. - Volkspark Wilmersdorf): Bordstein, einige Fuﬂg‰nger	q3 5799,8356 5782,8344
+(Babelsberger Str. - Volkspark Wilmersdorf): Bordstein, einige Fuﬂg‰nger	q3 5799,8356 5818,8354
+#: XXX_prog ^^^
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

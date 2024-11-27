@@ -479,7 +479,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2024-11-18
+#: last_checked: 2024-11-27
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -1014,7 +1014,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="26"
-#: last_checked: 2024-10-16 (mapillary)
+#: last_checked: 2024-11-25 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1945,7 +1945,7 @@ Travestr.: Kopfsteinpflaster	Q2 14986,11760 14901,11808
 Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0- 14901,11808 14836,11842
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1- 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1- 5913,8415 5831,8358
-Volkspark Wilmersdorf: Parkweg	Q1- 5917,8351 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
+Volkspark Wilmersdorf: Parkweg	Q1- 5917,8351 5831,8358 5818,8354 5782,8344 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: Mosaikpflaster mit Parkweg-Streifen	Q1- 5469,8524 5405,8549 5331,8581
 Volkspark Wilmersdorf: Parkweg	Q1- 5761,8339 5699,8308
 # REMOVED --- #: next_check_id: VOLKSPARKWILMERSDORF-2023 --- #: XXX wird die Qualität nach den Bauarbeiten besser sein? vvv --- #: last_checked: 2023-05-25 vvv --- #: next_check: 2023-07-19 vvv --- # REMOVED --- #: next_check: 2023-04-15 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
@@ -7874,7 +7874,10 @@ Prausestr.: schlechtes Kopfsteinpflaster	Q3 3467,4247 3575,4306
 Ringstr.: Kopfsteinpflaster	Q2 3558,3688 3612,3702 3691,3692 3809,3589 3959,3444 4048,3355 4102,3301 4154,3249 4276,3202
 Ringstr.: Asphalt	Q0 4276,3202 4330,3190 4350,3161
 (Ringstr. - Augustastr.): Kopfsteinpflaster	Q2 3612,3702 3600,3720
-Wüllenweberweg: schlechtes Kopfsteinpflaster, teilweise zugeparkte enge Asphaltstreifen	Q3 4276,3202 4303,3260 4342,3366
+#: note: hier parken die Autos auf dem Hochbord, so dass der Streifen befahrbar ist
+Wüllenweberweg: schlechtes Kopfsteinpflaster, glatterer Kopfsteinpflasterstreifen am Rand	Q3+; 4276,3202 4303,3260 4342,3366
+#: note: hier wäre theoretisch auch ein Streifen am Rand, aber Autos parken hier
+Wüllenweberweg: schlechtes Kopfsteinpflaster	Q3; 4342,3366 4303,3260 4276,3202
 Murtener Str.: glatt gepflastert	Q1- 2740,2588 2809,2615 2959,2608 3015,2606
 Murtener Str.: Asphalt	Q0 3015,2606 3163,2598
 Hochbaumstr.: Asphalt	Q0- 2056,2535 2212,2493 2248,2486 2398,2491 2588,2494 2781,2493
@@ -11218,6 +11221,7 @@ Wolframstr.: einige schadhafte Stellen im Asphalt	Q0- 8288,4955 8198,4861
 (Brentanostr. - Breitenbachplatz): Gehwegplatten	Q0- 4058,6602 4034,6642
 Mainzer Str.: Kopfsteinpflaster	Q2 4874,8140 5050,8140 5177,8139 5304,8144
 Tübinger Str.: Kopfsteinpflaster	Q2 5501,8253 5454,8198 5363,8170
+#: note: 2024 neu gemacht, aber es ist etwas wellig geworden
 Weverpromenade: wassergebundene Decke	Q1 5787,4400 5738,4361 5721,4356 5541,4305
 (Weverpromenade - Brückenstr./Johanna-Stegen-Str.): wassergebundene Decke	Q1 5721,4356 5720,4366 5728,4371
 (Paul-Schwarz-Promenade - Dalandweg): Asphalt	Q0 5387,4214 5385,4236
@@ -13813,6 +13817,9 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 # 
 (Weg am Jacob-und-Wilhelm-Grimm-Zentrum): Gehwegplatten	Q0- 9435,12698 9561,12723
 # 
+(Babelsberger Str. - Volkspark Wilmersdorf): Kopfsteinpflaster	Q2 5799,8356 5782,8344
+(Babelsberger Str. - Volkspark Wilmersdorf): Kopfsteinpflaster	Q2 5799,8356 5818,8354
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -15278,7 +15285,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: XXX Wird dieser Abschnitt vielleicht auch asphaltiert? Oder nur saniert, aber dann müsste man den mudways-Eintrag prüfen.
 #: osm_watch: way id="115724952" version="13"
 #: osm_watch: way id="1159154133" version="2"
-#: last_checked: 2024-10-26
+#: last_checked: 2024-11-27
 #: check_frequency: 30d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -15306,7 +15313,8 @@ Stadtpark Steglitz: alter Asphalt	Q1 6026,4744 6030,4743 6092,4717 6107,4718
 Geitnerweg: Beton	Q0 5097,988 5242,776 5420,511
 # 
 #: by: Hans Vegt:
-Babelsberger Str.: Asphalt	Q0 5806,8350 5786,8609 5782,8828 5783,9060
+#: confirmed_by: srt
+Babelsberger Str.: Asphalt	Q0 5799,8356 5786,8609 5782,8828 5770,9055
 # 
 #: by: Michael Kuhlmann: vvv
 #: confirmed_by: srt
@@ -15503,7 +15511,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
 #: osm_watch: way id="13863115" version="22"
-#: last_checked: 2024-05-28
+#: last_checked: 2024-11-27
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^
@@ -16212,6 +16220,8 @@ Claszeile: Kopfsteinpflaster	Q2 786,979 718,1264 644,1539 630,1590 603,1590 530,
 #: by: Benjamin Hersch: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt):
 Borstellstr.: Asphalt	Q0 6219,4336 6309,4328 6368,4324 6391,4328 6491,4391 6532,4422 6523,4491
+#: confirmed_by: srt
+#: note: recht glattes Kopfsteinpflaster, aber doch einige Unebenheiten, deshalb kein Q2+
 Borstellstr.: mäßiges Kopfsteinpflaster	Q2 6523,4491 6635,4639 6756,4769 6845,4761
 #: corrected_by: srt (gut befahrbar -> ...)
 Promenade am Teltowkanal: Asphalt mit einigen Wurzelschäden	Q1 6633,4272 6392,4312 6210,4325
@@ -20698,6 +20708,7 @@ Anna-Seghers-Str.: mäßiges Kopfsteinpflaster	Q2 19927,3649 19966,3596 20012,3532
 #: by: ^^^
 # 
 #: by: Jana (stastny):
+#: confirmed_by: srt
 Söhtstr.: mäßiges Kopfsteinpflaster	Q2 4303,3260 4127,3430 4048,3355
 # 
 #: by: frau heilmann:
@@ -31169,7 +31180,7 @@ Buttenstedtweg: Kopfsteinpflaster	Q2 25171,4757 25164,4706
 # 
 #: by: Wilhelm Walz [AM]
 #: confirmed_by: srt 
-Dürerstr.: guter Asphalt	Q0 4573,3862 4476,3820 4303,3686 4265,3661 4135,3564 3959,3444 3753,3305
+Dürerstr.: guter Asphalt	Q0 4570,3884 4476,3820 4303,3686 4265,3661 4135,3564 3959,3444 3753,3305
 # 
 #: by: Benno Koch [AM] vvv
 #: corrected_by: srt (Gehwegplatten -> Verbundsteinpflaster)
@@ -33515,5 +33526,15 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 19790,3893
 Einmündungsbereich asphaltiert	Q1 19736,3858
 Kreuzungsbereich asphaltiert	Q0 25118,13041
 Kreuzungsbereich asphaltiert	Q0 7506,20170
+Einmündungsbereich mit Kopfsteinpflaster	Q2 6416,4452
+Einmündungsbereich mit mäßigem Kopfsteinpflaster	Q2 4342,3366
+Kreuzungsbereich asphaltiert	Q0 4135,3564
+Einmündungsbereich asphaltiert	Q0 4265,3661
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 6523,4491
+Kreuzungsbereich asphaltiert	Q0 6491,4391
+Einmündungsbereich asphaltiert	Q0 4276,3202
+Einmündungsbereich mit Kopfsteinpflaster	Q2 4303,3260 4303,3260
+Einmündungsbereich mit Kopfsteinpflaster	Q2 4275,3428 4275,3428
+Wendehammerbereich mit Kopfsteinpflaster	Q2 5799,8356
 #: ignore ^^^
 #: section ^^^

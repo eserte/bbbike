@@ -2463,23 +2463,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (B,T)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: Baustellenbereich etwa 80m in der Belziger Str. und 60m in der Vorbergstr.
-#: note: Halteverbotsschilder bis 2024-11-30
-#: XXX Auf der Südseite der Vorbergstr. entsteht ein Zweirichtungsradweg.
-#: last_checked: 2024-10-26
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2024-11-30
-	q3::inwork 7101,9027 7308,9163 7363,9152
-',
-         'from' => undef,
-         'id' => 1990,
-         'text' => 'Belziger Str./Vorbergstr.: Umbauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3344,7 +3328,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-26 vvv
+#: last_checked: 2024-11-27 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-11-22 vvv
 Modersohnstr.: Markierungsarbeiten fertig, , Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14134,11272 14181,11434
@@ -4539,8 +4523,9 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/kein-durchkommen_a428980
 	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095 5282,4145 5337,4192
 	2::inwork 4947,3672 4910,3599 4822,3431 4815,3382 4778,3352
-Bäkepark	2::inwork 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
-Bäkepark	2::inwork 5131,4207 5161,4206 5239,4175 5282,4145
+Bäkepark	2::inwork 5225,4095 5184,4161 5131,4207
+# REMOVED (hier offen) --- Bäkepark	2::inwork 5131,4207 5097,4221 5063,4266
+# REMOVED (hier offen) --- Bäkepark	2::inwork 5131,4207 5161,4206 5239,4175 5282,4145
 ',
          'from' => 1730674800,
          'id' => 3032,
@@ -6274,7 +6259,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
-#: last_checked: 2024-11-19 vvv
+#: last_checked: 2024-11-27 vvv
 #: check_frequency: 60d vvv
 #: next_check_id: 2024-12-31 vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
@@ -6319,7 +6304,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: also_indoor: traffic (ex-W,ex-G)
+#: also_indoor: traffic (re-W,re-G)
 #: last_checked: 2024-08-30
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
@@ -7587,7 +7572,7 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-11-22 (osm) vvv
+#: last_checked: 2024-11-25 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -7719,7 +7704,22 @@ Karlshafener Str.	q4::inwork 24899,13007 25054,12926
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: also_indoor: traffic (H,B[falsche Position?],T[falsche Position?])
+#: osm_watch: note 4465412 2
+#: note: es existiert eine Umleitungsstrecke für Radfahrer
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2024-11-27
+#: check_frequency: 14d
+# REMOVED (hier wohl nicht mehr) ---	q4::inwork 5466,5523 5555,5508
+	q4::inwork 5555,5508 5676,5488
+',
+         'from' => undef,
+         'id' => 4052,
+         'text' => 'Südendstr.: Bauarbeiten zwischen Plantagenstr. und Filandastr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -7771,11 +7771,11 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
-#: last_checked: 2024-11-18 vvv
+#: last_checked: 2024-11-27 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2024-11-29 vvv
-#Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
-Braunschweiger Str.: Fahrbahn bis kurz vor der Sonnenallee passierbar, allerdings noch einige unasphaltierte Stellen, Umwege an der Kreuzung	q3::inwork 13858,7617 13919,7707
+Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
+#Braunschweiger Str.: Fahrbahn bis kurz vor der Sonnenallee passierbar, allerdings noch einige unasphaltierte Stellen, Umwege an der Kreuzung	q3::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
 #: next_check ^^
 #: check_frequency ^^^
@@ -7783,7 +7783,7 @@ Braunschweiger Str.: Fahrbahn bis kurz vor der Sonnenallee passierbar, allerding
 ',
          'from' => undef,
          'id' => 4069,
-         'text' => 'Braunschweiger Str.: Wasserrohrbruch, einige Einschränkungen',
+         'text' => 'Braunschweiger Str.: Wasserrohrbruch, nur ein enger Gehweg offen',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7998,10 +7998,10 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen.
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden? vvv
 #: priority: #A vvv
-#: last_checked: 2024-10-26 vvv
+#: last_checked: 2024-11-27 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="26158804" version="25"
-Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
+# REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
 # REMOVED (hier mittlerweile offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5721,4356 5541,4305
 Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
 #: last_checked ^^^
@@ -8012,7 +8012,7 @@ Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
          'dont_check_date' => 1,
          'from' => 1720303200,
          'id' => 4107,
-         'text' => 'Weverpromenade/Stadtpark Steglitz: Bauarbeiten, mögliche Sperrungen, vom 08.07.2024 bis voraussichtlich Mitte Oktober 2024, evtl. wird verlängert',
+         'text' => 'Stadtpark Steglitz: Bauarbeiten, mögliche Sperrung, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8037,13 +8037,13 @@ Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (G,B,T,W)
 #: add_fragezeichen: Ist der Teltowkanaluferweg weiterhin komplett gesperrt? vvv
-#: last_checked: 2024-10-26 vvv
+#: last_checked: 2024-11-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2024-12-16 vvv
 #: osm_watch: way id="1328520572" version="1"
 Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
 #: osm_watch: way id="5363433" version="25"
-#: osm_watch: note 4442541 3
+#: osm_watch: note 4442541 4
 #: note: eigentlich q3-::inwork
 Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
 #: osm_watch: way id="1332159946" version="1"
@@ -8271,14 +8271,15 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: by: https://www.infravelo.de/projekt/am-eichgarten/ (3. Quartal 2024 - 4. Quartal 2024)
 #: XXX Dabei werden die Flächen für Rad- und Fußverkehr getrennt. Für den Radverkehr entsteht ein 3m breiter Weg (für beide Richtungen).
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-10-26
-#: next_check: 2024-12-01
+#: last_checked: 2024-11-27
+#: check_frequency: 30d
+#: next_check: 2024-12-31
 	2::inwork 6007,4340 6147,4329 6210,4325
 ',
          'dont_check_date' => 1,
          'from' => 1725141600,
          'id' => 4153,
-         'text' => 'Am Eichgarten: Baurbeiten zwischen Stindestr. und Siemensstr., Sperrung des Weges, vom 2.9.2024 bis Anfang Dezember 2024',
+         'text' => 'Am Eichgarten: Baurbeiten zwischen Stindestr. und Siemensstr., Sperrung des Weges, geplant bis Anfang Dezember 2024',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8377,11 +8378,11 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        undef,
        {
          'data' => '#: next_check_id: KARLMARXPLATZ-2024
-#: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23, 2024-10-30) ist die Fahrbahn aufgerissen
+#: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23, 2024-10-30, 2024-11-27) ist die Fahrbahn aufgerissen
 #: also_indoor: traffic (none)
 #: osm_watch: way id="36983903" version="33"
 #: osm_watch: way id="1002238498" version="9"
-#: last_checked: 2024-10-30
+#: last_checked: 2024-11-27
 #: check_frequency: 60d
 #: next_check: 2025-01-05
 	q4::inwork 12972,7602 13100,7626
@@ -8437,7 +8438,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: last_checked: 2024-11-26
+#: last_checked: 2024-11-27
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2024-11-29
 	q4::inwork 13136,10535 13178,10623
@@ -8446,7 +8447,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'id' => 4174,
          'text' => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
-         'until' => 1732921200
+         'until' => undef
        },
        undef,
        undef,
@@ -8788,6 +8789,8 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1503828.php (zunächst bis Ende Mai 2025)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
 #: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
+#: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
+#: last_checked: 2024-11-27
 #: next_check: 2025-05-31
 	q3::temp 10032,9456 10004,9268
 ',

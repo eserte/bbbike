@@ -183,14 +183,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2024-11-23
+#: last_checked: 2024-11-27
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-11-23
+#: last_checked: 2024-11-27
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Gürtelstr.	F::inwork 15153,11691
@@ -2041,6 +2041,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 5689,5109
 	X 5583,5179
+#: note: Anforderungsampel
+	F 5616,5182
+#: note: Anforderungsampel
 	F 5675,5470
 #: note: Anforderungsampel
 	F 5482,4965
@@ -2455,7 +2458,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog gilt nicht in Fahrtrichtung Nordwest
 	X 14614,9052
 	X 5350,7554
-	X 5783,9060
+	X 5770,9055
 	X 5176,9398
 	X 4957,9437
 	F 5799,6841
@@ -2715,7 +2718,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2024-11-26
+#: last_checked: 2024-11-27
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020

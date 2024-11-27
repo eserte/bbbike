@@ -910,7 +910,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt? laut osm mittweile ja (aber eine Anfrage läuft noch)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="23"
-#: last_checked: 2024-10-16
+#: last_checked: 2024-11-27
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-04-24
 #: priority: #D
@@ -1027,7 +1027,7 @@ Blissestr.: Mittelstreifen	3nocross 4769,8563 4768,8608 4777,8742
 #: note: Radfahrer können den Gehweg durch die Grünfläche nutzen
 Landhausstr.	1 5343,8858 5341,8931
 #: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer ca. 20 Meter westlich der Kreuzung
-Berliner Str.: Mittelstreifen	3nocross 5635,9018 5725,9041 5783,9060
+Berliner Str.: Mittelstreifen	3nocross 5635,9018 5725,9041 5770,9055
 #: note: Überquerungsmöglichkeit für Fußgänger, allerdings keine abgesenkten Bordsteine
 Grunewaldstr.: Mittelstreifen	3nocross 6847,9261 6921,9275 6994,9288
 Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
@@ -1129,6 +1129,9 @@ Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 #: corrected_by: srt (der Sackgassenabschnitt ist natürlich keine Einbahnstraße)
 #: corrected_by: srt (mittlerweile für Radfahrer offen)
 # REMOVED --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4183&options=4 --- #: XXX: Wird die Einbahnstraßenregelung in der Hans-Sachs-Str. für Radfahrer aufgehoben? --- #: last_checked: 2012-09-05 (by Kay Leonhardt) --- #: next_check: 2012-12-15
+#: by: https://www.tagesspiegel.de/berlin/bezirke/einbahnstrasse-wird-umgedreht-kein-durchgangsverkehr-mehr-am-berliner-bahnhof-lichterfelde-west-12765722.html (Umsetzung in der ersten Jahreshälfte 2025)
+#: XXX wird die Einbahnstraßenregelung umgedreht?
+#: next_check: 2025-06-30
 Hans-Sachs-Str.	1 3141,4023 3214,4066
 Anhaltinerstr.	1 682,2660 720,2718
 Askanischer Platz -> Stresemannstr.	3 8865,10974 8901,11011 8747,11194

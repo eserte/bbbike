@@ -44,7 +44,7 @@
 # REMOVED (nicht mehr ausgeschildert) --- #: next_check_id: FAHLENBERGBRUECKE-2022 --- #: note: Umfahrung Fahlenbergbrücke --- #: note: laut mapillary Benutzungspflicht (bzw. Verbot für Radfahrer auf der Fahrbahn) --- #: last_checked: 2024-07-14 (mapillary) --- #: next_check: 2024-07-31 --- provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: last_checked: 2024-10-26 (mapillary)
+#: last_checked: 2024-11-27
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -3102,7 +3102,7 @@ Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei; die letzten 20 Meter 
 #: note ^^^
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX früherer Eintrag, wird vielleicht wieder hergestellt: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0;
-#: last_checked: 2024-11-26
+#: last_checked: 2024-11-27
 #: check_frequency: 60d
 #: next_check: 2024-12-31
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 13973,9465
@@ -3782,9 +3782,9 @@ alte Gehwegplatten, halbhoher Bord gegen Gehweg, etwas breiter	RW1; 4392,2628 43
 alte Gehwegplatten, im Bereich der Brücke asphaltiert, halbhoher Bord gegen Gehweg, etwas breiter	RW1; 4348,2627 4317,2638 4233,2675 4170,2727
 # 
 Gehweg für Radfahrer frei	RW1; 5191,2350 5212,2360 5256,2379
-Gehwegplatten/Verbundsteinpflaster, ca. 60cm breit	RW1; 4517,4853 4515,4760 4515,4581 4516,4483 4517,4473 4551,4042 4573,3862 4592,3762 4596,3738
+Gehwegplatten/Verbundsteinpflaster, ca. 60cm breit	RW1; 4517,4853 4515,4760 4515,4581 4516,4483 4517,4473 4551,4042 4570,3884 4592,3762 4596,3738
 	RW3; 4515,4760 4517,4853
-Gehwegplatten, ca. 60cm breit	RW1; 4596,3738 4592,3762 4573,3862 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
+Gehwegplatten, ca. 60cm breit	RW1; 4596,3738 4592,3762 4570,3884 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
 Gehweg für Radfahrer frei	RW1; 4596,3738 4603,3704 4603,3658 4585,3575
 	RW1; 4585,3575 4603,3658 4603,3704 4596,3738
 Gehweg für Radfahrer frei	RW1; 4585,3575 4546,3527 4523,3482 4497,3412
@@ -6890,11 +6890,13 @@ Radspur hört einige Meter vor der Brücke auf	RW3; 8105,4384 7994,4430
 Gehweg für Radfahrer frei	RW1; 8394,4261 8615,4151
 # REMOVED (gibt's nicht mehr) --- Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW5; 7366,4345 7410,4373 7450,4397 7482,4416
 Busspur ist immer gültig	RW5; 7482,4416 7597,4499
-	RW4; 5716,5090 5689,5109 5635,5145 5583,5179
+	RW4; 5716,5090 5689,5109
+vereinzelte Baken	RW4; 5689,5109 5635,5145
+	RW4; 5635,5145 5583,5179
 	RW4; 5635,5145 5616,5182 5610,5227
 	RW3; 5583,5179 5610,5227
 	RW3; 5535,5068 5583,5179
-	RW3?; 5610,5227 5583,5179
+	RW3; 5610,5227 5583,5179
 	RW4; 5583,5179 5527,5217
 	RW4; 5527,5217 5583,5179
 #: by: https://nitter.cz/SenUMVKBerlin/status/1643146642860699649#m vvv
@@ -7915,7 +7917,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="8"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2024-11-18
+#: last_checked: 2024-11-27
 #: check_frequency: 90d
 asphaltierter Radweg ist größtenteils nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -8772,7 +8774,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.38458,52.45267,23.09.2024,17:00 (bis 01.11.2024) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
-#: last_checked: 2024-10-12 (okas) vvv
+#: last_checked: 2024-11-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-03-01 vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -9191,4 +9193,11 @@ Tempo 10	RW6;RW6 -7523,14969 -7387,14951
 	RW7;RW7 7259,14870 7409,14954 7461,14986 7624,15083 7694,15125 7745,15160
 # 
 	RW7;RW7 10530,14452 10567,14337 10629,14299
+# 
+#: note: Grunewaldstr., Richtung Osten
+Radspur hinter parkenden Autos	RW3; 5895,9083 5974,9100
+Radspur hinter parkenden Autos	RW4; 5974,9100 6059,9118
+	RW4; 6059,9118 6142,9134
+# 
+asphaltiert	RW1;RW9 7308,9163 7363,9152
 # 

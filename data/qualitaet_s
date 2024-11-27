@@ -1319,7 +1319,7 @@ Travestr.: Kopfsteinpflaster	Q2 14986,11760 14901,11808
 Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0 14901,11808 14836,11842
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1 5913,8415 5831,8358
-Volkspark Wilmersdorf: Parkweg	Q1 5917,8351 5831,8358 5806,8350 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
+Volkspark Wilmersdorf: Parkweg	Q1 5917,8351 5831,8358 5818,8354 5782,8344 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: Mosaikpflaster mit Parkweg-Streifen	Q1 5469,8524 5405,8549 5331,8581
 Volkspark Wilmersdorf: Parkweg	Q1 5761,8339 5699,8308
 Volkspark Wilmersdorf: neu gemachter Parkweg	Q1 5700,8241 5730,8207
@@ -6392,7 +6392,8 @@ Prausestr.: schlechtes Kopfsteinpflaster	Q3 3467,4247 3575,4306
 Ringstr.: Kopfsteinpflaster	Q2 3558,3688 3612,3702 3691,3692 3809,3589 3959,3444 4048,3355 4102,3301 4154,3249 4276,3202
 Ringstr.: Asphalt	Q0 4276,3202 4330,3190 4350,3161
 (Ringstr. - Augustastr.): Kopfsteinpflaster	Q2 3612,3702 3600,3720
-Wüllenweberweg: schlechtes Kopfsteinpflaster, teilweise zugeparkte enge Asphaltstreifen	Q3 4276,3202 4303,3260 4342,3366
+Wüllenweberweg: schlechtes Kopfsteinpflaster, glatterer Kopfsteinpflasterstreifen am Rand	Q3; 4276,3202 4303,3260 4342,3366
+Wüllenweberweg: schlechtes Kopfsteinpflaster	Q3; 4342,3366 4303,3260 4276,3202
 Murtener Str.: glatt gepflastert	Q1 2740,2588 2809,2615 2959,2608 3015,2606
 Murtener Str.: Asphalt	Q0 3015,2606 3163,2598
 Hochbaumstr.: Asphalt	Q0 2056,2535 2212,2493 2248,2486 2398,2491 2588,2494 2781,2493
@@ -11644,6 +11645,8 @@ Kiefholzstr. [Wohngebiet]: Verbundsteinpflaster	Q1 16448,6498 16495,6565
 Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949 17759,18916
 (Sonnenallee - Neltestr.): Waldweg, einige Wurzeln	Q2 19610,4394 19750,4260
 (Weg am Jacob-und-Wilhelm-Grimm-Zentrum): Gehwegplatten	Q0 9435,12698 9561,12723
+(Babelsberger Str. - Volkspark Wilmersdorf): Kopfsteinpflaster	Q2 5799,8356 5782,8344
+(Babelsberger Str. - Volkspark Wilmersdorf): Kopfsteinpflaster	Q2 5799,8356 5818,8354
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12376,7 +12379,7 @@ Stadtpark Steglitz: Parkweg	Q1 5890,4674 6012,4662
 Stadtpark Steglitz: Kleinsteinpflaster	Q1 6012,4662 6026,4744 6028,4765 6048,4797
 Stadtpark Steglitz: alter Asphalt	Q1 6026,4744 6030,4743 6092,4717 6107,4718
 Geitnerweg: Beton	Q0 5097,988 5242,776 5420,511
-Babelsberger Str.: Asphalt	Q0 5806,8350 5786,8609 5782,8828 5783,9060
+Babelsberger Str.: Asphalt	Q0 5799,8356 5786,8609 5782,8828 5770,9055
 Hansastr. (Gesundbrunnen): Kopfsteinpflaster	Q2 8079,16953 7884,16940 7841,16966
 Hattinger Weg: guter Beton	Q0 1510,18429 1540,18543 1568,18539 1597,18532 1603,18418
 Canovastr.: Asphalt	Q0 6343,6297 6477,6311
@@ -18215,7 +18218,7 @@ An den Haselbüschen: Verbundsteinpflaster	Q1 -1273,15539 -1291,15580 -1402,15592
 Raduhner Str.: Asphalt	Q0 17559,134 17351,451
 Raduhner Str.: Asphalt	Q0 17351,451 17215,667
 Buttenstedtweg: Kopfsteinpflaster	Q2 25171,4757 25164,4706
-Dürerstr.: guter Asphalt	Q0 4573,3862 4476,3820 4303,3686 4265,3661 4135,3564 3959,3444 3753,3305
+Dürerstr.: guter Asphalt	Q0 4570,3884 4476,3820 4303,3686 4265,3661 4135,3564 3959,3444 3753,3305
 Nelly-Sachs-Str.: Verbundsteinpflaster	Q0 24061,14801 24115,14828 24191,14866
 Nelly-Sachs-Str.: Asphalt	Q0 24191,14866 24253,14888 24349,14922
 Am Waldidyll: Beton mit einigen Schäden	Q1 2390,22581 2384,22689 2418,22878
