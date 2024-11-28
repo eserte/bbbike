@@ -233,7 +233,7 @@ sub cmdline_call {
 	      CKSUMTEST: {
 		    eval 'require "open2.pl"';
 		    last CKSUMTEST if $@;
-		    local($child) = &main'open2(RDR, WTR, 'cksum'); #'
+		    local($child) = main::open2(RDR, WTR, 'cksum'); #'
 		    last CKSUMTEST if !$child;
 		    print WTR @in_file;
 		    close WTR;
@@ -1014,10 +1014,10 @@ sub is_in_path {
 }
 package main;
 
-unless ($wettermeldung2'module) {
+unless ($wettermeldung2::module) {
 
     $ENV{PATH} = "/usr/bin:/bin:/usr/ucb:/usr/local/bin:/sbin:/usr/sbin:/usr/etc:/usr/local/etc:/usr/gnu/bin:/home/e/eserte/bin/sh:$ENV{HOME}/bin:$ENV{HOME}/bin/sh:$ENV{PATH}:/home/pub/bin";
-    &wettermeldung2'cmdline_call;
+    wettermeldung2::cmdline_call();
 }
 
 1;
