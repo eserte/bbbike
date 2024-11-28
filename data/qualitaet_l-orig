@@ -9317,11 +9317,13 @@ Heidestr. (Schönow): Asphalt	Q0 19032,30053 18941,30212 18773,30398 18635,30610 
 Friedrich-Engels-Str. (Hohen Neuendorf): Asphalt	Q0 950,29767 707,29911 590,29922 320,29941 171,29953 0,30042
 Jägerstr. (Hohen Neuendorf): Asphalt	Q0 667,29004 719,29085 934,29434
 Karl-Marx-Str. (Hohen Neuendorf): Asphalt	Q0 950,29767 1078,29668 1141,29607
+#: next_check_id: KARLMARXHOHENNEUENDORF-2024
 #: XXX später möglicherweise auch komplett asphaltiert?
 #: by: https://bauprojekte.deutschebahn.com/p/hohen-neuendorf-karl-marx-strasse-eue?date=20240925 (bauzeitliche Sperrung für den MIV)
 #: osm_watch: way id="8069474" version="17"
 #: osm_watch: way id="831213734" version="8"
-#: last_checked: 2023-11-06 (mapillary)
+#: last_checked: 2024-11-26 (mapillary)
+#: check_frequency: 90d
 Karl-Marx-Str. (Hohen Neuendorf): Bauarbeiten, teilweise Asphalt, teilweise andere Beläge	Q1 1141,29607 1272,29447
 Karl-Marx-Str. (Hohen Neuendorf): Asphalt	Q0 1272,29447 1366,29416
 Emile-Zola-Str. (Hohen Neuendorf): Asphalt	Q0 1481,29365 1447,29301 1395,29203 1325,29072 1221,28876 1150,28743 1103,28654 1110,28515 1208,28460
@@ -9355,6 +9357,8 @@ Marwitzer Str.: Asphalt	Q2+ -10417,17770 -10344,17792 -10239,17791 -10114,17740
 #: by ^^^
 # 
 #: by: mapillary vvv
+Am Rathaus (Hohen Neuendorf): Asphalt	Q0 1717,29541 1730,29579 1733,29664
+Triftstr. (Hohen Neuendorf): Asphalt	Q0 1470,29391 1483,29433 1604,29508 1646,29550 1687,29557 1717,29541
 Eduard-Maurer-Str.: Fahrbahn asphaltiert, für Radfahrer freigegebene Gehwege mit Verbundsteinpflaster	Q0 -3300,26624 -3313,26931 -3347,27389 -3484,27387
 Oder-Neiße-Radweg - Stützkow: Verbundsteinpflaster	Q1 61783,66148 61780,66154
 Oder-Neiße-Radweg - Stützkow: Holzbohlen	Q1 61780,66154 61759,66194
