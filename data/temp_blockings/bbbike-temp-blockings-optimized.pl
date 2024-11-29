@@ -3328,8 +3328,8 @@ Kleistpark	2::night 7310,9622 7307,9528
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-28 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2024-11-29 vvv
+#: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2024-11-22 vvv
 Modersohnstr.: Markierungsarbeiten fertig, , Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14134,11272 14181,11434
 Gärnerstr.: Markierungsarbeiten fertig, Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14211,11552 14181,11434
@@ -4791,7 +4791,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: source_id: 2147344558 (bis 10.09.2020) (inaktiv)
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -4800,8 +4800,8 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (re-G,ex-H,B,T,W)
 #: last_checked: 2024-08-27 (mapillary)
-#: check_frequency: 120d
-#: next_check: 2024-11-30
+#: check_frequency: 150d
+#: next_check: 2025-01-31
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -4809,9 +4809,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 ',
          'from' => undef,
          'id' => 3151,
-         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende 2024',
+         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Ende Januar 2025',
          'type' => 'gesperrt',
-         'until' => 1735660800
+         'until' => 1738339200
        },
        undef,
        undef,
@@ -6913,39 +6913,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
-#: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
-#: source_id[inactive]: bvg2021:240#BVG326189_0
-#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
-#: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_238442
-#: source_id: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
-#: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024)
-#: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1858351927509365099 (nur Kfz-Verkehr)
-#: osm_watch: way id="198589911" version="23"
-# REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
-# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
-#: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
-#: priority: #B
-#: last_checked: 2024-11-18
-#: next_check: 2024-11-29
-	q3::inwork 15856,10821 15793,10814
-#	2::inwork 15856,10821 15793,10814
-',
-         'from' => 1731798000,
-         'id' => 3885,
-         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmale Schutztunnel existieren, vom 18.11.2024 bis 29.11.2024',
-         'type' => 'handicap',
-         'until' => 1732921199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7312,18 +7280,19 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
        {
          'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024) (im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.42956,52.533,29.08.2024,14:51 (bis 02.10.2024) (inaktiv)
-#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024)
+#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024) (bis 02.12.2024 + weitere Arbeiten)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1841356186756817316
 #: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
 #: also_indoor: traffic (G,B,W)
+#: next_check: 2024-12-02
 	q3::inwork 12228,14083 12077,14186
 ',
          'from' => 1701237600,
          'id' => 3982,
-         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 29.11.2024 17:00',
+         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
-         'until' => 1732896000
+         'until' => undef
        },
        undef,
        undef,
@@ -7524,16 +7493,7 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 236700856 (bis 30.10.2024) (bis 29.11.2024)
-	2::inwork 90239,-16522 90350,-16513 90592,-16499
-',
-         'from' => 1696744800,
-         'id' => 4022,
-         'text' => 'L373: Sperrung Bahnüberführung, evtl. sind auch Radfahrer betroffen, 09.10.2023 08:00 Uhr bis 29.11.2024 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1732896000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7716,7 +7676,16 @@ Karlshafener Str.	q4::inwork 24899,13007 25054,12926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 236320002 (bis 30.06.2024) (bis 02.08.2024) (bis 30.08.2024) (inaktiv) (bis 20.12.2024) (inaktiv) (bis 17.04.2025)
+	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
+',
+         'from' => 1730156400,
+         'id' => 4064,
+         'text' => 'Kuhdammweg - Am Umspannwerk: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 30.10.2024 08:00 Uhr bis 17.04.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1744902000
+       },
        undef,
        undef,
        undef,
@@ -7741,14 +7710,14 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024)
+#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024) (bis 16.12.2024)
 #: source_id: viz2021:13.4546,52.47445,18.10.2024,13:33 (Braunschweiger Str. nicht erwähnt, bis 29.11.2024) (inaktiv)
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
 #: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
 #: last_checked: 2024-11-27 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2024-11-29 vvv
+#: next_check: 2024-12-16 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 #Braunschweiger Str.: Fahrbahn bis kurz vor der Sonnenallee passierbar, allerdings noch einige unasphaltierte Stellen, Umwege an der Kreuzung	q3::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
@@ -7914,9 +7883,22 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
        undef,
        undef,
        undef,
-       undef,
        {
-         'data' => '#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024)
+         'data' => '#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024) (bis 29.11.2024) (bis 02.12.2024)
+#: source_id: viz2021:13.28708,52.43274,26.06.2024,07:00 (bis 02.12.2024)
+#: note: auf der BA-Seite wird diese Baumaßnahme nicht verlängert
+	q4::inwork; 2625,2850 2737,2866
+# REMOVED (scheint kürzer zu sein) ---	q4::inwork; 2737,2866 3019,2858
+',
+         'from' => 1719291600,
+         'id' => 4098,
+         'text' => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, vielleicht sind auch Radfahrer betroffen, bis 02.12.2024 17:00',
+         'type' => 'handicap',
+         'until' => 1733155200
+       },
+       {
+         'data' => '#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024) (bis 02.12.2024)
+#: source_id: viz2021:13.28708,52.43274,26.06.2024,07:00 (bis 02.12.2024)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/weitraeumige-umleitungen-notwendig_a419753
@@ -7927,9 +7909,9 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 ',
          'from' => 1719291600,
          'id' => 4099,
-         'text' => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 29.11.2024 17:00',
+         'text' => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 02.12.2024 17:00',
          'type' => 'handicap',
-         'until' => 1732896000
+         'until' => 1733155200
        },
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
@@ -8349,7 +8331,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-11-13
+#: last_checked: 2024-11-29
 #: next_check: 2024-12-20
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
@@ -8537,7 +8519,7 @@ Fischerinsel: Engstelle am Mühlendamm	q2::inwork; 10512,12039 10578,11969
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder am Großen Stern gelten bis zum 31.12.2024
-#: last_checked: 2024-11-10 (mapillary)
+#: last_checked: 2024-11-27 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2024-12-31
 	2::inwork 6633,11882 6685,11954
@@ -8658,18 +8640,7 @@ Fischerinsel: Engstelle am Mühlendamm	q2::inwork; 10512,12039 10578,11969
          'until' => 1738364340
        },
        undef,
-       {
-         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1850788234743165358
-#: by: https://pbs.twimg.com/media/Ga9SEpkXgAAGJFy?format=jpg&name=large
-#: source_id: viz2021:13.392876,52.519175,28.10.2024,07:29 (bis 29.11.2024)
-	q4::inwork 9581,12588 9681,12601
-',
-         'from' => 1730097723,
-         'id' => 4205,
-         'text' => 'Dorotheenstr.: Sperrung der Fahrbahn zwischen Universitätsstr. und Hegelplatz, voraussichtlich bis Ende November 2024',
-         'type' => 'handicap',
-         'until' => 1732896000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: ZIEGEL-2024
@@ -8818,34 +8789,8 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'type' => 'handicap',
          'until' => 1741622400
        },
-       {
-         'data' => '#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1506360.php
-#: note: rund um das Hotel Courtyard by Marriott Berlin-Mitte
-	2::temp 10072,11384 10116,11485 10136,11529 10176,11593 10201,11631
-	2::temp 10116,11485 9936,11469
-	2::temp 10176,11593 10001,11577
-',
-         'from' => 1732575600,
-         'id' => 4221,
-         'text' => 'Axel-Springer-Str./Krausenstr./Schützenstr.: mögliche Sperrungen vom 27. November 2024, 16 Uhr, bis 29. November 2024, 11 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1732874400
-       },
-       {
-         'data' => '#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1506360.php
-#: by: https://www.tagesspiegel.de/berlin/gebiet-weitraumig-gesperrt-sicherheitsvorkehrungen-fur-basketballspiel-zwischen-maccabi-tel-aviv-und-alba-berlin-12766163.html
-#: note: Sicherheitsvorkehrungen für Basketballspiel in der Uber-Arena
-#: source_id: viz2021:13.4005,52.51,28.11.2024,10:00 (bis 28.11.2024)
-	2::temp 13067,11145 13150,11101 13240,11279
-	2::temp 13150,11101 13080,10956 12990,11006 13067,11145 12984,11194 13056,11329
-	2::temp 12984,11194 12908,11058 12990,11006
-',
-         'from' => 1732575600,
-         'id' => 4222,
-         'text' => 'Uber-Platz/Stralauer Allee: mögliche Sperrungen vom 27. November 2024, 16 Uhr, bis 29. November 2024, 11 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1732874400
-       },
+       undef,
+       undef,
        {
          'data' => '#: source_id: viz2021:13.230712,52.513672,25.11.2024,07:00 (bis 17.01.2025)
 	q4::inwork; -1398,11803 -1382,11736 -1375,11555 -1368,11525
@@ -8883,6 +8828,21 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'permanent' => 1,
          'text' => 'Uferwege auf Stralau: Grünanlage, Radfahren nicht erlaubt',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1508313.php
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (voraussichtliche Bauzeit: 2024 bis 2025 für diese und weitere Brücken: Spektegrabensteg und Südparkbrücke)
+#: osm_watch: note 4537179 1
+#: osm_watch: way id="14438318" version="7"
+#: last_checked: 2024-11-29 (Pressemitteilung)
+#: check_frequency: 180d
+	2::inwork -7182,15524 -7228,15504
+',
+         'from' => 1733007600,
+         'id' => 4225,
+         'text' => 'Steg über die Spektelake: wegen Brückenschäden Sperrung ab 2.12.2024',
+         'type' => 'gesperrt',
          'until' => undef
        }
      
