@@ -22,6 +22,7 @@ use Getopt::Long;
 use JSON::XS qw(decode_json);
 use IPC::Run qw(run);
 use List::MoreUtils qw(uniq);
+use Storable qw(dclone);
 use YAML::XS qw(LoadFile Dump);
 
 my $json_file = "bvg_checker_disruptions_2024.json";
@@ -107,36 +108,49 @@ for my $id (@all_ids) {
 	print_basic_info($old_records{$id}, mode => 'deleted');
 	print_raw_serialized($old_records{$id});
 	$stats_deleted++;
-    } elsif ($old_records{$id} ne $new_records{$id}) {
+    } else {
 	my $old_serialized = $as_yaml ? Dump($old_records{$id}) : JSON::XS->new->pretty->canonical->utf8->encode($old_records{$id});
 	my $new_serialized = $as_yaml ? Dump($new_records{$id}) : JSON::XS->new->pretty->canonical->utf8->encode($new_records{$id});
 	if ($old_serialized ne $new_serialized) {
-	    print "="x70, "\n", "CHANGED RECORD $id\n";
-	    $stats_changed++;
-
-	    my $old = File::Temp->new(TMPDIR => 1, TEMPLATE => "bvg-old-XXXXXXXX");
-	    $old->print($old_serialized);
-	    $old->flush;
-
-	    my $new = File::Temp->new(TMPDIR => 1, TEMPLATE => "bvg-new-XXXXXXXX");
-	    $new->print($new_serialized);
-	    $new->flush;
-
-	    print_basic_info($new_records{$id}, mode => 'changed');
-	    my @cmd;
-	    if ($use_wdiff) {
-		@cmd = ('wdiff',
-			"--less-mode",
-			"$old", "$new");
-	    } else {
-		@cmd = ("diff", "-u", "$old", "$new");
+	    my($old_record_normalized, $new_record_normalized);
+	    for my $def (
+		[$old_records{$id}, \$old_record_normalized],
+		[$new_records{$id}, \$new_record_normalized],
+	    ) {
+		my($from, $toref) = @$def;
+		$$toref = dclone $from;
+		for my $remove_field (qw(modDate)) {
+		    delete $$toref->{$remove_field};
+		}
 	    }
-	    run [@cmd], ">", \my $diff;
-	    binmode STDOUT, ':raw';
-	    print $diff;
-	    binmode STDOUT, ':utf8';
-	} else {
-	    $stats_changes_before_normalization++;
+	    if (JSON::XS->new->canonical->encode($old_record_normalized) ne JSON::XS->new->canonical->encode($new_record_normalized)) {
+		print "="x70, "\n", "CHANGED RECORD $id\n";
+		$stats_changed++;
+
+		my $old = File::Temp->new(TMPDIR => 1, TEMPLATE => "bvg-old-XXXXXXXX");
+		$old->print($old_serialized);
+		$old->flush;
+
+		my $new = File::Temp->new(TMPDIR => 1, TEMPLATE => "bvg-new-XXXXXXXX");
+		$new->print($new_serialized);
+		$new->flush;
+
+		print_basic_info($new_records{$id}, mode => 'changed');
+		my @cmd;
+		if ($use_wdiff) {
+		    @cmd = ('wdiff',
+			    "--less-mode",
+			    "$old", "$new");
+		} else {
+		    @cmd = ("diff", "-u", "$old", "$new");
+		}
+		run [@cmd], ">", \my $diff;
+		binmode STDOUT, ':raw';
+		print $diff;
+		binmode STDOUT, ':utf8';
+	    } else {
+		$stats_changes_before_normalization++;
+	    }
 	}
     }
 }
@@ -144,9 +158,10 @@ for my $id (@all_ids) {
 print "="x70, "\n", "STATISTICS\n";
 print "Records in last version: " . scalar(keys %old_records) . "\n";
 print "Records in curr version: " . scalar(keys %new_records) . "\n";
-print "New records    : $stats_new\n";
-print "Deleted records: $stats_deleted\n";
-print "Changed records: $stats_changed\n";
+print "New records:                   $stats_new\n";
+print "Deleted records:               $stats_deleted\n";
+print "Changed records:               $stats_changed\n";
+print "Uninteresting changed records: $stats_changes_before_normalization\n";
 
 sub print_basic_info {
     my($record, %opts) = @_;
