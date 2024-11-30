@@ -34,6 +34,7 @@ my $debug;
 #my $ignore_boring;
 my @ignore;
 my $use_wdiff;
+my $sort_by = 'date';
 GetOptions(
 	   "old-version=i" => \$old_version,
 	   "new-version=i" => \$new_version,
@@ -42,8 +43,13 @@ GetOptions(
 	   'wdiff' => \$use_wdiff,
 	   'as-yaml' => \my $as_yaml,
 	   "debug" => \$debug,
+	   "sort-by=s" => \$sort_by,
 	  )
-    or die "usage: $0 [--debug] [--ignore key ...] [--old-version delta] [--new-version delta] [--wdiff]\n";
+    or die "usage: $0 [--debug] [--ignore key ...] [--old-version delta] [--new-version delta] [--wdiff] [--sort-by date|title]\n";
+
+$sort_by =~ m{^(date|title)$}
+    or die "usage: allowed --sort-by are 'date' (default) and 'title'\n";
+my($sort_by_key1, $sort_by_key2) = ($sort_by eq 'title' ? qw(_title _date) : qw(_date _title));
 
 my $sourceids = load_sourceids();
 
@@ -90,8 +96,8 @@ my @all_ids;
 {
     my %all_records = (%old_records, %new_records);
     @all_ids = sort {
-	$all_records{$a}->{_date} cmp $all_records{$b}->{_date} ||
-	$all_records{$a}->{_title} cmp $all_records{$b}->{_title} ||
+	$all_records{$a}->{$sort_by_key1} cmp $all_records{$b}->{$sort_by_key1} ||
+	$all_records{$a}->{$sort_by_key2} cmp $all_records{$b}->{$sort_by_key2} ||
 	$a cmp $b
     } keys %all_records;
 }
