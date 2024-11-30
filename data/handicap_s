@@ -44,7 +44,6 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 7952,11336 7934,11275
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
-Hobrechtbrücke: gemeinsamer Geh- und Radweg in der Fahbahnmitte während der Bauarbeiten	q3::inwork 12085,9778 12116,9825
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwork 12765,8435 12598,8390
@@ -454,7 +453,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Fußgänger	q1 17261,10827 17226,10865
 Verl. Pücklerstr.: Fußgänger, Hundeauslaufgebiet	q1 1553,6741 1338,6708 1154,6672 956,6631 902,6642 878,6651 818,6616 775,6615 698,6592 663,6575 546,6583 369,6594 340,6598 218,6571
 Weimarer Str.: Fußgänger	q1 4101,11347 4101,11233
-Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
+Norwegerstr. - Behmstr.: Rampe	q2 10024,16236 10030,16213 10024,16198 10028,16163 10055,16104 10065,16110 10045,16157
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger	q1 20226,15512 20202,15587 20202,15630 20181,15658
 Marzahner Promenade - Mühlenbecker Weg: enge Straße, parkende Autos	q1 20181,15658 20150,15678
 (Franz-Stenzer-Str. - Mühlenbecker Weg): enge Straße, parkende Autos	q1 20135,15626 20137,15654 20150,15678
@@ -3575,7 +3574,7 @@ Wriezener Karree: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 5521,8087 5522,8024
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9441,12670 9435,12698 9429,12728 9402,12792 9386,12833 9375,12911
-Dircksenstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 11138,12604 11202,12426
+Dircksenstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 11057,12715 11138,12604 11202,12426
 Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174 9254,13171
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5802,10621
 Weinmeisterhornweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -4798,11231 -4579,11174

@@ -2891,8 +2891,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90:-44 3514,24652
-tragen (Treppe, 18 Stufen)	0:25:-66 25902,-6006
-tragen (Treppe, 19 Stufen)	0:25:-194 25928,-5990
+tragen (Treppe, 18 Stufen, Kinderwagenrampe)	0:25:-66 25902,-6006
 tragen (Treppe)	0:120:-184 -14199,-707
 tragen (Treppe, 22 Stufen)	0:30:87 26337,-11817
 tragen (Treppe, 47 Stufen, mit Schieberinne für Fahrräder)	0:60:8 8376,8813
@@ -3492,6 +3491,7 @@ weites Drängelgitter	BNP:2:-144:trailer=7 16026,9821
 weites Drängelgitter	BNP:2:45:trailer=7 16261,9663
 Drängelgitter/Barriere	BNP:3:51:trailer=10 17130,18771
 Drängelgitter	BNP:3:-217:trailer=10 13014,21775
+Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
@@ -3571,7 +3571,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323
-Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
+Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -3588,7 +3588,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
-Dircksenstr.: Einbahnstraßenregelung	1s:inwork 11138,12604 11202,12426
+Dircksenstr.: Einbahnstraßenregelung	1s:inwork 11057,12715 11138,12604 11202,12426
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174 9254,13171
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516

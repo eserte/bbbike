@@ -25342,7 +25342,7 @@ EOF
 #: source_id: IM_025877	vvv
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.619785.php (Ende der Bauarbeiten)
 	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9484,16395 9490,16455 9493,16481 9514,16603
-	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+	q4::inwork; 10197,16528 10225,16436 10245,16367 10266,16282 10291,16193
 #: source_id ^^^
 EOF
      },
@@ -28727,12 +28727,12 @@ EOF
 EOF
      },
      { from  => 1533756141, # 2018-08-08 21:22
-       until => undef, # 1572562800, # 2019-11-01 00:00
+       until => 1732916931, # undef, # 1572562800, # 2019-11-01 00:00
        text  => 'Unterführung Bahnhof Zeuthen: wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
-       source_id => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
        data  => <<EOF,
 #: next_check_id: BHFZEUTHEN-2018
+#: by: https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
 #: by: https://www.eichwalde.de/wp-content/uploads/2022/05/Boten_02_2022.pdf (bis Ende 2022 oder 2023)
@@ -28746,11 +28746,10 @@ EOF
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Fertigstellung der Fußgängerunterführung: November 2024)
 #: by: https://bauprojekte.deutschebahn.com/p/eichwalde-zeuthen-bf?date=20240925 ("Die Eröffnung der PU ist für November 2024 vorgesehen.")
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13154/docs/HZ_eichwalde_zeuthen_bf_bauablauf_zeuthen_20240724.pdf
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-personentunnel-am-s-bahnhof-zeuthen-als-ortsverbindung-eroeffnet-OQF75UW7ONC67ATAO5UUYIICYA.html
 #: osm_watch: way id="36936021" version="10" brb
 #: also_indoor: search Bahnhof Zeuthen
-#: last_checked: 2024-07-17
-#: check_frequency: 360d
-#: next_check: 2024-11-30
+# REMOVED --- #: last_checked: 2024-07-17 --- #: check_frequency: 360d --- #: next_check: 2024-11-30
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
 EOF
      },
@@ -39455,7 +39454,7 @@ EOF
 #: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024) (inaktiv)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
-#: osm_watch: note 3834145 4
+#: osm_watch: note 3834145 5
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
 #: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
@@ -41689,7 +41688,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.; 2024-11-03: keine Baugruben mehr, Fahrbahn ist wieder asphaltiert -> baldige Freigabe absehbar
-#: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024) (bis 07.10.2024) (bis 30.11.2024)
+#: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024) (bis 07.10.2024) (bis 30.11.2024) (inaktiv)
 #: source_id: viz2021:13.35076,52.53934,18.09.2024,12:14 (bis 07.10.2024) (inaktiv)
 #: osm_watch: way id="4543441" version="41"
 #: also_indoor: traffic (H,G,B,T,W)
@@ -44766,15 +44765,16 @@ EOF
 EOF
      },
      { from  => 1715637600, # 2024-05-14 00:00
-       until => 1733007599, # 2024-11-30 23:59
-       text  => 'Buchholz - Wegendorf: Bauarbeiten, Sperrung, voraussichtlich bis Ende November 2024',
+       until => $isodate2epoch->("2025-05-15 18:00:00"), # 1733007599, # 2024-11-30 23:59
+#      text  => 'Buchholz - Wegendorf: Bauarbeiten, Sperrung, voraussichtlich bis Ende November 2024',
+       text  => 'Buchholz - Wegendorf: Bauarbeiten, Sperrung, voraussichtlich bis zum Frühjahr 2025',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/
-#: osm_watch: note 4383533 2
+#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
+#: osm_watch: note 4383533 3
 #: osm_watch: way id="37948631" version="9"
 #: last_checked: 2024-08-31 (mapillary)
-#: next_check: 2024-11-30
+#: next_check: 2025-04-15
 	2::inwork 34460,22169 34901,21638 36198,20464
 EOF
      },
@@ -44790,15 +44790,17 @@ EOF
 EOF
      },
      { from  => 1723932000, # 2024-08-18 00:00
-       until => 1733007599, # 2024-11-30 23:59
-       text  => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Weges, ab 19.08.2024 bis Ende November 2024',
+       until => undef, # 1733007599, # 2024-11-30 23:59
+#      text  => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Weges, ab 19.08.2024 bis Ende November 2024',
+       text  => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Weges, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
 #: XXX Werden noch weitere Wege gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
-#: last_checked: 2024-11-05
-#: check_frequency: 45d
-#: next_check: 2024-11-30
+#: add_fragezeichen: Sind die Bauarbeiten hier beendet?
+#: last_checked: 2024-11-30
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-11-30
 	2::inwork 12056,15159 12082,15206 12103,15218
 # REMOVED (hier (noch) nicht gesperrt	2::inwork 12103,15218 12003,15311 11937,15349 11877,15366
 EOF
@@ -44898,7 +44900,7 @@ EOF
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-10-29
+#: last_checked: 2024-11-30
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30
 	q4::inwork 13530,13014 13470,12990
@@ -45219,7 +45221,7 @@ EOF
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024)
-#: osm_watch: way id="23984383" version="30"
+#: osm_watch: way id="23984383" version="31"
 #: last_checked: 2024-10-12 (mapillary)
 #: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665
@@ -45638,7 +45640,7 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1850788234743165358
 #: by: https://pbs.twimg.com/media/Ga9SEpkXgAAGJFy?format=jpg&name=large
-#: source_id: viz2021:13.392876,52.519175,28.10.2024,07:29 (bis 29.11.2024) (nur noch Fahrbahnverengung, bis 30.11.2024)
+#: source_id: viz2021:13.392876,52.519175,28.10.2024,07:29 (bis 29.11.2024) (nur noch Fahrbahnverengung, bis 30.11.2024) (inaktiv)
 	q4::inwork 9581,12588 9681,12601
 EOF
      },
@@ -45896,6 +45898,19 @@ EOF
 #: last_checked: 2024-11-29 (Pressemitteilung)
 #: check_frequency: 180d
 	2::inwork -7182,15524 -7228,15504
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hegemeisterbrücke: Neubau geplant, während der Bauzeit Sperrung der Brücke',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hegemeisterbruecke/ (voraussichtliche Bauzeit: IV. Quartal 2024 bis III. Quartal 2025 (Stand Juni 2024))
+#: osm_watch: way id="41523366" version="10"
+#: osm_watch: way id="636625917" version="3"
+#: add_fragezeichen: Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?
+#: last_checked: 2024-06-12 (webpage moddate)
+	2::inwork 30081,5231 30081,5220
 EOF
      },
     );

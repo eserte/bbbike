@@ -14,7 +14,7 @@
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2024-10-29 vvv
+#: last_checked: 2024-11-30 vvv
 #: next_check: 2027-09-30 vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
@@ -28,7 +28,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: next_check_id: KNIPRODE-2024
 #: add_fragezeichen: Sind hier noch immer Bauarbeiten?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-11-05
+#: last_checked: 2024-11-30
 #: check_frequency: 30d
 #: next_check: 2025-09-30
 Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
@@ -684,10 +684,11 @@ Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,88
 ### Friedrichsfelde ###
 # 
 #: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30
+#: also_indoor: traffic (G,B,T)
 #: last_checked: 2024-11-23 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2024-11-30 vvv
-# REMOVED --- #: also_indoor: traffic (G,B,T) --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
+# REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956
 # REMOVED --- #: osm_watch[closed]: note 4145495 1 --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17749,9811 17738,9922
@@ -785,12 +786,13 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: by: https://www.berliner-woche.de/moabit/c-bauen/plaene-fuer-europaplatz-nord_a415834
 #: by: https://mein.berlin.de/projekte/neugestaltung-europaplatz-nord/
 #: by: https://www.caimmo.com/de/presse/news/artikel/ca-immo-startet-bau-des-anna-lindh-haus-am-berliner-hauptbahnhof/ (Fertigstellung Ende 2026)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/vorplatz-am-hbf-europacity-bebauungsplan-ii-201c.155/page-5#post-24166
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 9
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
-#: last_checked: 2024-11-28 (daf)
+#: last_checked: 2024-11-29 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2026-12-31
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -819,9 +821,9 @@ Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Nor
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="16096289" version="33"
-#: osm_watch: way id="707100249" version="22"
+#: osm_watch: way id="707100249" version="23"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
-#: last_checked: 2024-11-15
+#: last_checked: 2024-11-29 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -886,39 +888,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # REMOVED --- # REMOVED (hier nur noch eine Engstelle) --- #: osm_watch: way id="155605363" version="21" --- Wilhelm-Busch-Str.: Bauarbeiten, Fahrbahn ist gesperrt	q3::inwork 13205,8126 13312,8026 13376,7970
 # REMOVED --- #: check_frequency ^^^
 # REMOVED --- #: last_checked ^^^
-# 
-#: by: https://berliner-abendblatt.de/2022/06/01/verkehr-im-reuterkiez-bezirk-stellt-ueberarbeitetes-konzept-vor/
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/bezirksamt-laedt-am-6-september-zum-informationsabend-im-reuterkiez-ein_a390713
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1385436.php
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/verkehrskonzept-reuterkiez-1375129.php ("in den nächsten Wochen") (mit Maßnahmenkarte)
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-zur-verkehrsberuhigung-im-reuterkiez-beginnen-in-diesen-wochen_a399933
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1482819.php (Hobrechtbrücke wird instandgesetzt, Instandsetzungsdauer: ab 05.09.2024 bis voraussichtlich 06.12.2024)
-#: by: https://www.berlin.de/sen/uvk/_assets/presse/verkehr/20240905_vrao_vz-plan_hobrechtbruecke.pdf
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1831720307221995941
-#: by: https://pbs.twimg.com/media/GWuT4EbW0AAv2gO?format=jpg&name=large
-#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/hobrechtbruecke-gesperrt_a424851
-#: by: https://www.berliner-woche.de/neukoelln/c-bauen/hobrechtbruecke-wird-saniert_a425304
-#: note: bereits realisierte und eingetragene Maßnahmen
-#: note: - Maybachufer: Quersperre zwischen Bürknerstraße und Friedelstraße
-#: note: - Sanderstraße: Einbahnstraße für Kfz
-#: note: - Pflügerstraße/Friedelstraße: Diagonalsperre
-#: note: - Weserstraße: zwischen Friedelstraße und Hobrechtstraße wird die Einbahnstraßenregelung für Kfz umgekehrt
-#: note: - Reuterstraße: Einbahnstraße für Kfz (zwischen Lenaustraße und Pflügerstraße)
-#: note: - Hobrechtstraße: Quersperre (zwischen Sanderstraße und Pflügerstraße)
-#: note: - Nansenstraße: Quersperre (zwischen Reuterplatz und Framstraße) (vermutlich schon realisiert, siehe note)
-#: note: - Hobrechtbrücke: Einbahnstraßenregelung für Kfz
-# REMOVED --- Reuterkiez: Kiezblock	?::projected 11635,10023 11938,9168 12194,9057 12508,9585 11635,10023
-# REMOVED (realisiert) --- #: osm_watch: way id="1136034160" version="1" --- #: last_checked: 2023-12-20 --- #: check_frequency: 14d --- Weserstraße: zwischen Pannierstraße und Reuterstraße wird die Einbahnstraßenregelung für Kfz umgekehrt	? 12148,9209 12180,9193 12328,9117
-#: osm_watch: way id="16114536" version="19"
-#: source_id: viz2021:13.428457,52.493713,05.09.2024,07:00 (bis 06.12.2024)
-#: source_id: viz2021:13.42867,52.49391,05.09.2024,19:00 (bis 06.12.2024) (inaktiv)
-#: XXX geschützte Fahrradspuren werden realisiert
-#: last_checked: 2024-11-27
-#: check_frequency: 30d
-#: next_check: 2024-12-06
-#Hobrechtbrücke: getrennter Geh- und Radweg während der Bauarbeiten	q3::inwork 12085,9778 12116,9825
-Hobrechtbrücke: gemeinsamer Geh- und Radweg in der Fahbahnmitte während der Bauarbeiten	q3::inwork 12085,9778 12116,9825
-# 
+# REMOVED --- #: by: https://berliner-abendblatt.de/2022/06/01/verkehr-im-reuterkiez-bezirk-stellt-ueberarbeitetes-konzept-vor/ --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/bezirksamt-laedt-am-6-september-zum-informationsabend-im-reuterkiez-ein_a390713 --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1385436.php --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/verkehrskonzept-reuterkiez-1375129.php ("in den nächsten Wochen") (mit Maßnahmenkarte) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-zur-verkehrsberuhigung-im-reuterkiez-beginnen-in-diesen-wochen_a399933 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1482819.php (Hobrechtbrücke wird instandgesetzt, Instandsetzungsdauer: ab 05.09.2024 bis voraussichtlich 06.12.2024) --- #: by: https://www.berlin.de/sen/uvk/_assets/presse/verkehr/20240905_vrao_vz-plan_hobrechtbruecke.pdf --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1831720307221995941 --- #: by: https://pbs.twimg.com/media/GWuT4EbW0AAv2gO?format=jpg&name=large --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/hobrechtbruecke-gesperrt_a424851 --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/hobrechtbruecke-wird-saniert_a425304 --- #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hobrechtbruecke/ (Verkehrsfreigabe ist Ende Nov 2024 erfolgt) --- #: note: bereits realisierte und eingetragene Maßnahmen --- #: note: - Maybachufer: Quersperre zwischen Bürknerstraße und Friedelstraße --- #: note: - Sanderstraße: Einbahnstraße für Kfz --- #: note: - Pflügerstraße/Friedelstraße: Diagonalsperre --- #: note: - Weserstraße: zwischen Friedelstraße und Hobrechtstraße wird die Einbahnstraßenregelung für Kfz umgekehrt --- #: note: - Reuterstraße: Einbahnstraße für Kfz (zwischen Lenaustraße und Pflügerstraße) --- #: note: - Hobrechtstraße: Quersperre (zwischen Sanderstraße und Pflügerstraße) --- #: note: - Nansenstraße: Quersperre (zwischen Reuterplatz und Framstraße) (vermutlich schon realisiert, siehe note) --- #: note: - Hobrechtbrücke: Einbahnstraßenregelung für Kfz --- # REMOVED --- Reuterkiez: Kiezblock	?::projected 11635,10023 11938,9168 12194,9057 12508,9585 11635,10023 --- # REMOVED (realisiert) --- #: osm_watch: way id="1136034160" version="1" --- #: last_checked: 2023-12-20 --- #: check_frequency: 14d --- Weserstraße: zwischen Pannierstraße und Reuterstraße wird die Einbahnstraßenregelung für Kfz umgekehrt	? 12148,9209 12180,9193 12328,9117 --- #: osm_watch: way id="16114536" version="19" --- #: source_id: viz2021:13.428457,52.493713,05.09.2024,07:00 (bis 06.12.2024) --- #: source_id: viz2021:13.42867,52.49391,05.09.2024,19:00 (bis 06.12.2024) (inaktiv) --- #: XXX geschützte Fahrradspuren werden realisiert --- #: last_checked: 2024-11-27 --- #: check_frequency: 30d --- #: next_check: 2024-12-06 --- #Hobrechtbrücke: getrennter Geh- und Radweg während der Bauarbeiten	q3::inwork 12085,9778 12116,9825 --- Hobrechtbrücke: gemeinsamer Geh- und Radweg in der Fahbahnmitte während der Bauarbeiten	q3::inwork 12085,9778 12116,9825
 # REMOVED (beendet) --- #: XXX Wildenbruchstraße (Neukölln) in beiden Richtungen zwischen Harzer Straße und Karl-Kunger-Straße: geplatzte Wasserleitung, Straße gesperrt, vom 11.03.2024 10:11 --- #: source_id: viz2021:13.44635,52.48639,11.03.2024,10:11 (inaktiv) --- #: source_id: bvg2021:m43#BVG344367_0 --- #: source_id[inactive]: bvg2021:m43#BVG344369_0 --- #: source_id: viz2021:13.44635,52.48639,18.03.2024,07:28 (bis 28.03.2024) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1767117988371513569 --- #: last_checked: 2024-03-24 --- #: check_frequency: 14d --- #: next_check: 2024-03-28 --- Wildenbruchstr.: Wasserrohrbruch, kurzer Abschnitt (30-40m) der Fahrbahn gesperrt, Bordsteine	q2::inwork 13333,9017 13491,9201
 # REMOVED (vermutlich frei befahrbar) --- #: next_check_id: WESER-2021 --- #: osm_watch: way id="1050315263" version="5" --- #: osm_watch: way id="996616281" version="10" --- #: osm_watch: way id="996616282" version="9" --- #: osm_watch: way id="1100696455" version="1" --- #: also_indoor: traffic (B) vvv --- #: last_checked: 2022-12-04 vvv --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2022-09-15 vvv
@@ -1298,7 +1268,7 @@ Königsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -19
 # REMOVED (fertig) --- #: source_id: 2147345824 (bis 10.7.2020, Kreuzungsumbau) vvv --- Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11467,16238 11404,16140 11358,16067 --- Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11295,16199 11404,16140 11542,16070 --- #: source_id ^^^
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: ERICHWEINERT-2018 --- #: osm_watch: way id="145122219" version="8" --- #: source_id: 2147344488 --- #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019 --- #: last_checked: 2019-08-16 vvv --- #: next_check: 2019-09-06 vvv --- #: valid: -20190906 vvv --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11404,16140 11295,16199 --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11337,16291 11295,16199 11253,16118 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (fertig) --- #: next_check_id: LICHTBURGRING-2017 --- #: osm_watch: way id="645183212" version="1" --- #: last_checked: 2018-12-28 --- Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
-# REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+# REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10291,16193
 # REMOVED (nun offen, aber Bauarbeiten an der Kreuzung -> temp blockings) --- #: XXX mittlerweile bis zur Hälfte offen --- #: last_checked: 2017-12-26 --- #: check_frequency: 14d --- Fürstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 10320,14608 10472,14632
 # 
 ### Weißensee ###
@@ -2022,7 +1992,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Fußgänger	q1 17261,10827 17226,10865
 Verl. Pücklerstr.: Fußgänger, Hundeauslaufgebiet	q1 1553,6741 1338,6708 1154,6672 956,6631 902,6642 878,6651 818,6616 775,6615 698,6592 663,6575 546,6583 369,6594 340,6598 218,6571
 Weimarer Str.: Fußgänger	q1 4101,11347 4101,11233
-Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
+Norwegerstr. - Behmstr.: Rampe	q2 10024,16236 10030,16213 10024,16198 10028,16163 10055,16104 10065,16110 10045,16157
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger	q1 20226,15512 20202,15587 20202,15630 20181,15658
 Marzahner Promenade - Mühlenbecker Weg: enge Straße, parkende Autos	q1 20181,15658 20150,15678
 (Franz-Stenzer-Str. - Mühlenbecker Weg): enge Straße, parkende Autos	q1 20135,15626 20137,15654 20150,15678

@@ -4366,35 +4366,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BHFZEUTHEN-2018
-#: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
-#: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
-#: by: https://www.eichwalde.de/wp-content/uploads/2022/05/Boten_02_2022.pdf (bis Ende 2022 oder 2023)
-#: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/deutsche-bahn-legt-zeitplan-fuer-baustelle-am-bahnhof-zeuthen-vor-PLTNQXWDNV37DD7HLPDMVTFL6I.html (bis Mai 2023)
-#: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-fussgaengertunnel-am-bahnhof-im-rohbau-fertig-freigabe-mai-2023-geplant-ITXXXXQB35TUQUAUQ5F7PVVHKE.html
-#: by: https://www.bahninfo-forum.de/read.php?9,672773,765387#msg-765387 (bis Juli 2023)
-#: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-verschiebt-eroeffnung-des-fussgaengertunnels-auf-oktober-2023-BJPDHYCZBJCIFPASHOF4QWWE6I.html
-#: by[nocache]: https://archive.ph/2023.06.22-094813/https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-verschiebt-eroeffnung-des-fussgaengertunnels-auf-oktober-2023-BJPDHYCZBJCIFPASHOF4QWWE6I.html
-#: by: https://www.rbb24.de/studiofrankfurt/beitraege/2023/06/zeuthen-baustelle-fussgaenger-tunnel-bahn.html (Eröffnung November 2023?)
-#: by: https://www.maz-online.de/lokales/dahme-spreewald/zeuthen/zeuthen-deutsche-bahn-fussgaengertunnel-oeffnet-im-zweiten-quartal-2024-FRMUQYTD6VF6RCLYMMHJQTQAYA.html (II. Quartal 2024?)
-#: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Fertigstellung der Fußgängerunterführung: November 2024)
-#: by: https://bauprojekte.deutschebahn.com/p/eichwalde-zeuthen-bf?date=20240925 ("Die Eröffnung der PU ist für November 2024 vorgesehen.")
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13154/docs/HZ_eichwalde_zeuthen_bf_bauablauf_zeuthen_20240724.pdf
-#: osm_watch: way id="36936021" version="10" brb
-#: also_indoor: search Bahnhof Zeuthen
-#: last_checked: 2024-07-17
-#: check_frequency: 360d
-#: next_check: 2024-11-30
-	2::inwork 25929,-5994 25902,-6006 25893,-6002
-',
-         'from' => 1533756141,
-         'id' => 2994,
-         'source_id' => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
-         'text' => 'Unterführung Bahnhof Zeuthen: wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6564,7 +6536,7 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024) (inaktiv)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
-#: osm_watch: note 3834145 4
+#: osm_watch: note 3834145 5
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
 #: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
@@ -8118,18 +8090,18 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => 1738342800
        },
        {
-         'data' => '#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/
-#: osm_watch: note 4383533 2
+         'data' => '#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
+#: osm_watch: note 4383533 3
 #: osm_watch: way id="37948631" version="9"
 #: last_checked: 2024-08-31 (mapillary)
-#: next_check: 2024-11-30
+#: next_check: 2025-04-15
 	2::inwork 34460,22169 34901,21638 36198,20464
 ',
          'from' => 1715637600,
          'id' => 4138,
-         'text' => 'Buchholz - Wegendorf: Bauarbeiten, Sperrung, voraussichtlich bis Ende November 2024',
+         'text' => 'Buchholz - Wegendorf: Bauarbeiten, Sperrung, voraussichtlich bis zum Frühjahr 2025',
          'type' => 'gesperrt',
-         'until' => 1733007599
+         'until' => 1747324800
        },
        {
          'data' => '#: by: https://www.mercalisto.com/de/markt/78/wochenmarkt-cecilienplatz-ernst-bloch-strasse
@@ -8146,17 +8118,18 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
 #: XXX Werden noch weitere Wege gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
-#: last_checked: 2024-11-05
-#: check_frequency: 45d
-#: next_check: 2024-11-30
+#: add_fragezeichen: Sind die Bauarbeiten hier beendet?
+#: last_checked: 2024-11-30
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-11-30
 	2::inwork 12056,15159 12082,15206 12103,15218
 # REMOVED (hier (noch) nicht gesperrt	2::inwork 12103,15218 12003,15311 11937,15349 11877,15366
 ',
          'from' => 1723932000,
          'id' => 4140,
-         'text' => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Weges, ab 19.08.2024 bis Ende November 2024',
+         'text' => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Weges, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
-         'until' => 1733007599
+         'until' => undef
        },
        undef,
        undef,
@@ -8200,7 +8173,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-10-29
+#: last_checked: 2024-11-30
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30
 	q4::inwork 13530,13014 13470,12990
@@ -8376,7 +8349,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024)
-#: osm_watch: way id="23984383" version="30"
+#: osm_watch: way id="23984383" version="31"
 #: last_checked: 2024-10-12 (mapillary)
 #: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665
@@ -8842,6 +8815,20 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'from' => 1733007600,
          'id' => 4225,
          'text' => 'Steg über die Spektelake: wegen Brückenschäden Sperrung ab 2.12.2024',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hegemeisterbruecke/ (voraussichtliche Bauzeit: IV. Quartal 2024 bis III. Quartal 2025 (Stand Juni 2024))
+#: osm_watch: way id="41523366" version="10"
+#: osm_watch: way id="636625917" version="3"
+#: add_fragezeichen: Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?
+#: last_checked: 2024-06-12 (webpage moddate)
+	2::inwork 30081,5231 30081,5220
+',
+         'from' => undef,
+         'id' => 4226,
+         'text' => 'Hegemeisterbrücke: Neubau geplant, während der Bauzeit Sperrung der Brücke',
          'type' => 'gesperrt',
          'until' => undef
        }

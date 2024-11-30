@@ -1032,7 +1032,7 @@ Bushaltestelle	RW5; 10917,15525 10925,15581
 Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
-#: last_checked: 2024-10-23 (mapillary)
+#: last_checked: 2024-11-30
 #: historical_note: früher: Gehwegplatten	RW2;
 #Radspur, niedrige Protektion	RW4;
 	RW2; 10941,15697 10953,15787
@@ -1053,7 +1053,7 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,1552
 #: next_check_id: SCHOENHAUSERALLEE-2024
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2024-10-23 (mapillary)
+#: last_checked: 2024-11-30
 noch nicht komplett markiert	RW3; 10917,15525 10902,15422
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
@@ -1647,7 +1647,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: source_id: viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="26"
-#: last_checked: 2024-10-29 vvv
+#: last_checked: 2024-11-30 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 vvv
@@ -1666,7 +1666,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="43"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2024-11-10 vvv
+#: last_checked: 2024-11-30 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-03-31 vvv
@@ -2602,9 +2602,9 @@ neu asphaltiert, 2m breit	RW1; 1960,6986 1959,7107
 Gehwegplatten	RW1; 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561
 # 
 	RW4;RW3 9811,16112 10005,16150 10045,16157
-auf der Radspur stehen regelmäßig wartende Autos vor dem BSR-Recyclinghof	RW4; 10045,16157 10301,16186
-	RW3; 10301,16186 10045,16157
-	RW3;RW3 10301,16186 10421,16175 10591,16159 10739,16146
+auf der Radspur stehen regelmäßig wartende Autos vor dem BSR-Recyclinghof	RW4; 10045,16157 10291,16193
+	RW3; 10291,16193 10045,16157
+	RW3;RW3 10291,16193 10421,16175 10591,16159 10739,16146
 die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 	RW3; 10982,16121 10739,16146
 # REMOVED (realisiert) --- #: by: https://www.infravelo.de/projekt/wichertstrasse/ (1. Halbjahr 2019) --- #: XXX Grünbeschichtung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv --- #: XXX Grünbeschichtung schon teilweise erfolgt, zumindest Richtung Westen zwischen Prenzlauer Allee und Stahlheimer Str. --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582 --- #: source_id: 2147344440 (bis Anfang August 2019) --- #: priority: #D vvv --- #: last_checked: 2019-07-23 (Markierungsarbeiten an der Schönhauser Allee) vvv --- #: next_check: 2019-08-01 vvv
@@ -2995,6 +2995,7 @@ niedrige Protektion	RW4; 13449,10262 13487,10227
 #: note: in der Praxis wird der Radweg als Zweirichtungsradweg benutzt
 	RW0;RW1 12328,10442 12608,10294 12682,10258 12767,10216 12905,10143 13035,10076 13220,9980
 	RW3;RW3 12229,10014 12116,9825
+niedrige Protektion	RW3;RW3 12116,9825 12085,9778
 	RW6;RW6 12286,9739 12398,9938
 	RW1;RW1 12714,9792 12834,9738
 	RW6;RW6 10908,11908 10869,11949
@@ -3342,7 +3343,7 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="318031558" version="14"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Werden die Busspuren zu Radspuren umgewandelt? Oder entsteht hier ein neuer Hochbordradweg? Vermutlich Letzteres. Hier sind gerade Bauarbeiten vvv
-#: last_checked: 2024-11-05 vvv
+#: last_checked: 2024-11-30 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
@@ -3373,7 +3374,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20201122 (geschützt oder ungeschützt?)
-#: by: https://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2025) (4. Quartal 2025 - 4. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2025) (4. Quartal 2025 - 4. Quartal 2026) (4. Quartal 2026 - 4. Quartal 2027)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20210720 (Baubeginn Ende 2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6412 (Antrag)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
@@ -3385,7 +3386,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
 #: osm_watch: way id="966685279" version="7"
 #: last_checked: 2024-11-13 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2026-12-31 vvv
+#: next_check: 2027-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
@@ -4696,7 +4697,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2024-11-05 vvv
+#: last_checked: 2024-11-30 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -5817,7 +5818,7 @@ Verbundsteinpflaster	RW1; -2124,1780 -2146,1849 -2174,1933
 	RW2;RW2 16891,3129 16929,3172 16952,3197 16964,3210 16991,3241 17142,3393
 	RW1;RW1 17142,3393 17253,3496 17364,3565 17377,3571
 kurzes Stück Radweg zur Kreuzung Stubenrauchstr. hin	RW0;RW0 17364,3565 17219,3795 17053,3971
-	RW7;RW7 10022,16237 9996,16328 9975,16425 9959,16510
+	RW7;RW7 10024,16236 9996,16328 9975,16425 9959,16510
 	RW1;RW1 -2245,3378 -2167,3161 -2094,2941 -2026,2742
 	RW6;RW6 4601,9449 4619,9200 4609,9027
 	RW3; 2280,4941 2212,4891 2166,4858 2095,4805 2027,4792
@@ -6436,6 +6437,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7609 (Antrag)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (bis Mitte Oktober für Kfz-Verkehr gesperrt)
+#: by[nocache]: https://www.facebook.com/larsduesterhoeft1981/posts/pfbid0jyCzp1ULBQ8ZkAaVbTgcaNAcQpqMpfY61ePJ3Bzuyvt3Dg3ctbA8Rjej8xo7C7p9l (Freigabe für Kfz-Verkehr bis Ende 2024?)
 #: last_checked: 2024-11-20
 #: check_frequency: 90d
 #: next_check: 2024-12-31
@@ -7682,7 +7684,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-11-10 vvv
+#: last_checked: 2024-11-30 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -8186,7 +8188,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2024-11-05
+#: last_checked: 2024-11-30
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8212,7 +8214,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2024-11-05 vvv
+#: last_checked: 2024-11-30 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-09-30 vvv

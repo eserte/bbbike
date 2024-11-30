@@ -1002,6 +1002,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: by: https://berliner-abendblatt.de/2022/03/25/138713/
 #: by: https://unternehmen.bvg.de/pressemitteilung/gleise-glaetten/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211600.php
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/pyramidenbruecke/ (voraussichtliche Bauzeit: 2022 bis 2027)
 #: source_id: viz2021:13.56849,52.45383,20.12.2022,15:27 (bis 15.7.2023) (am nächsten Tag wieder entfernt -> inaktiv) (bis 15.07.2023) (inaktiv)
 #: source_id: viz2021:13.567832,52.454403,23.01.2023,08:00 (bis 30.1.2023) (inaktiv)
 #: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt -> inaktiv) (wieder aktiv, bis 15.7.2023) (inaktiv)
@@ -3012,8 +3013,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 tragen (6 Stufen)	0:15 4608,63927
 Treppe	0:40 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90 3514,24652
-tragen (Treppe, 18 Stufen)	0:25 25902,-6006
-tragen (Treppe, 19 Stufen)	0:25 25928,-5990
+tragen (Treppe, 18 Stufen, Kinderwagenrampe)	0:25 25902,-6006
+# REMOVED --- (seit Nov 2024 Rampe) --- tragen (Treppe, 19 Stufen)	0:25 25928,-5990
 tragen (Treppe)	0:120 -14199,-707
 #: note: zum RE-Bahnsteig sind es noch fünf zusätzliche Stufen, Aufzüge existieren
 tragen (Treppe, 22 Stufen)	0:30 26337,-11817
@@ -3866,6 +3867,12 @@ Drängelgitter	BNP:3::trailer=10 13014,21775
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-den-koenigsgraben/ (laut Bild schon abgebrochen; voraussichtliche Bauzeit: noch in Planung)
+#: XXX_osm: bei osm bereits komplett entfernt
+#: last_checked: 2024-11-30 (indoor)
+#: check_frequency: 180d
+Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
+# 
 #: next_check_id: HEIDEKRAUTBAHN-2021
 #: last_checked: 2024-11-18 (mapillary)
 #: check_frequency: 90d
@@ -4245,7 +4252,7 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
 #: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
 #: priority: #C
-#: last_checked: 2024-11-05
+#: last_checked: 2024-11-30
 # REMOVED --- #: next_check: 2024-08-07
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
@@ -4792,6 +4799,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
 #: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/buckower-chaussee-bruecke/ (voraussichtliche Bauzeit: 2022 bis 2025)
 #: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 04.01.2025) (inaktiv)
 #: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023) (bis 28.04.2023) (bis 31.05.2023) (bis 31.12.2025)
 #: source_id: bvg2021:x11#BVG312077_0
@@ -4805,7 +4813,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: last_checked: 2024-09-21 (youtube)
 #: check_frequency: 360d
 #: next_check: 2025-12-31
-Buckower Chaussee: Bahnübergang gesperrt	2::inwork 9123,533 9178,556 9200,562
+Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
 # 
 # REMOVED (-> temp blockings) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: next_check: 2021-03-15 --- Katharina-Boll-Dornberger-Str.: Durchgang gesperrt	2::inwork 18836,3611 18943,3508
 # REMOVED (-> permanenter Eintrag) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Parkplatzfläche wird eingezogen) --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.713561.php --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/noch-im-fruehjahr-beginnen-bauarbeiten-fuer-neue-grundschule-an-der-conrad-blenkle-strasse_a256156 (Bauarbeiten fangen im Frühjahr 2020 an) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schulweg-zur-grundschule-im-blumenviertel-soll-sicherer-werden_a265732 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.952347.php (Baustart am 29. Juni 2020, Bauzeit zwei Jahre) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/neue-grundschule-entsteht_a279808 --- #: by: https://www.deutsches-architekturforum.de/thread/14507-bauprojekte-am-velodrom-prenzlauer-berg/?postID=677089#post677089 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (Einziehung einer Grünanlage, Einziehung von Straßenland) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/spatenstich-fuer-schule_a323396 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1194420.php (Wiedereröffnung eines Spielplatzes) --- #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2206/nachricht7294.html (Richtfest) --- #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben --- #: XXX laut osm ist die Schule 2023-02 fertig --- # REMOVED (es gibt nun einen besseren Watch) --- #: osm_watch: way id="860287005" version="6" --- # REMOVED (wurde für etwas anderes wiederverwendet) --- #: osm_watch: way id="1095306828" version="7" --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-25 --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2023-02-28 --- Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -5046,9 +5054,9 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
-#: osm_watch: note 4480556 2
-#: last_checked: 2024-11-01
-Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11138,12604 11202,12426
+#: osm_watch: note 4480556 3
+#: last_checked: 2024-11-11 (mapillary)
+Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021
 # REMOVED --- #: last_checked: 2024-02-24
@@ -5107,6 +5115,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1181845.php
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/der-abriss-der-wuhletalbruecke-hat-begonnen_a338111
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11321 (Antrag)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (voraussichtliche Bauzeit: 2022 bis 2025)
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025)
@@ -5476,10 +5485,10 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: XXX Anschluss an der Gotzkowskybrücke ist noch nicht fertig
 #: osm_watch: way id="501191631" version="7"
 #: osm_watch: way id="1085168609" version="2"
-#: osm_watch: way id="1297686366" version="4"
+#: osm_watch: way id="1297686366" version="5"
 #: osm_watch: note 4173331 7
 #: priority: #C
-#: last_checked: 2024-11-28
+#: last_checked: 2024-11-29 (osm)
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-09-01
@@ -5527,7 +5536,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2024-10-12 vvv
+#: last_checked: 2024-11-30 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006

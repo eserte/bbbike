@@ -235,10 +235,12 @@
 	X 3490,23472 3538,23505 3606,23410
 	X 3590,23541 3538,23505 3606,23410
 #: note ^^^
-#: note: Treppen vvv
-	X 25929,-5994 25920,-5997 25956,-6072
-	X 25902,-6006 25920,-5997 25956,-6072
-#: note ^^^
+#: next_check_id: BHFZEUTHEN-2018
+# REMOVED (bis Mitte 2025 in Bau) --- #: note: Treppen vvv
+# REMOVED ---	X 25929,-5994 25920,-5997 25956,-6072
+# REMOVED ---	X 25902,-6006 25920,-5997 25956,-6072
+# REMOVED --- #: note ^^^
+	X 26040,-6233 25956,-6072
 #: note: Aufzug existiert (2x) zum S-Bahnsteig
 	X 26382,-11815 26362,-11814 26365,-11882 26348,-11883
 #: note: zum RE-Bahnsteig ebenerdig
