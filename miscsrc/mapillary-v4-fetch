@@ -48,6 +48,12 @@ my $bbox;
 my $do_cache;
 my $cache_time = 8 * 3600; # seconds
 
+# Since this date coordinates in mapillary downloads were not stable
+# anymore, but could differ slightly (floating point inaccuracies?).
+# Anyway, 12 or 13 decimal places are not really necessary, 7 (~0.1m
+# accuracy) are completely sufficient.
+my $trim_accuracy_start_date = "2024-11-21";
+
 GetOptions(
 	   "to-file" => \my $to_file,
 	   "region=s" => \my $region,
@@ -227,6 +233,14 @@ for my $sequence (@sequences) {
 	"sequence=$sequence->[0]->{sequence}",
 	;
     my @coords = map { join(",", @{ $_->{$geometry_field}->{coordinates} || [] }) } @$sequence;
+    if ($start_date ge $trim_accuracy_start_date) {
+	warn "INFO: trimming accuracy ($start_date >= $trim_accuracy_start_date)...\n" if $debug;
+	@coords = map {
+	    my($x,$y) = split /,/, $_;
+	    ($x, $y) = (0+sprintf("%.7f", $x), 0+sprintf("%.7f", $y));
+	    join(",", $x, $y);
+	} @coords;
+    }
     my($lng0,$lat0) = split /,/, $coords[0];
     print $ofh "#: url: https://www.mapillary.com/app/user/$creator?pKey=$id&focus=photo&dateFrom=$start_date&dateTo=$end_date&z=15&lat=$lat0&lng=$lng0\n";
     print $ofh "$name\tX @coords\n";
