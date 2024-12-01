@@ -258,7 +258,7 @@ Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11
 Leipziger Platz	1 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
 Crusemarkstr.	1 10825,18634 10715,18965
 Kavalierstr.	1 10621,18837 10721,18575
-Kattegatstr.	1 9323,17667 9469,17560
+Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
 Amalienpark	1 10934,18500 10860,18650
@@ -2627,6 +2627,9 @@ Staakener Feldstr. -> Brunsbütteler Damm: Mittelstreifen, östlicher Gehweg mit G
 unbequemes Überqueren des Mittelstreifens	3nocross::ignrte 3005,13728 2984,13789 2935,13927 2881,14061
 Weg am Westhafenkanal -> Tegeler Weg: unbequemes Überqueren des Mittelstreifens	3::igndisp 2957,13796 2984,13789 2935,13927
 Weg am Westhafenkanal -> Tegeler Weg: unbequemes Überqueren des Mittelstreifens	3::igndisp 2913,13919 2935,13927 2881,14061
+Mittelstreifen	3nocross::ignrte 8470,329 8584,320 8736,337
+Nahmitzer Damm -> Parkweg im Fresepark: Mittelstreifen	3::igndisp 8736,337 8584,320 8583,310
+Parkweg im Fresepark -> Nahmitzer Damm: Mittelstreifen	3::igndisp 8583,310 8584,320 8470,329
 Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,4093
 Michelangelostr.: links abbiegen nicht möglich	3 13854,15129 13816,15137 13823,15111
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2326,25625 -2130,26026 -2146,26048
@@ -3491,6 +3494,8 @@ weites Drängelgitter	BNP:2:-144:trailer=7 16026,9821
 weites Drängelgitter	BNP:2:45:trailer=7 16261,9663
 Drängelgitter/Barriere	BNP:3:51:trailer=10 17130,18771
 Drängelgitter	BNP:3:-217:trailer=10 13014,21775
+Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
+Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
@@ -3529,7 +3534,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
-Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769 14909,10732
+Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 An den Eiswerken: mit Bauzaun abgesperrt	2::inwork 14994,10732 14984,10677
 Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
 Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
@@ -4204,3 +4209,5 @@ Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg bis zur Ampel "Am Feldberg"	1::ign
 Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg ab Ampel Myslowitzer Str.	1::igndisp 22994,11251 23113,11262
 Gartenfelder Str.: linker Gehweg bis Ampel	1::igndisp -1336,14786 -1282,14789
 Molkenmarkt - Eiergasse: linker Gehweg	1::igndisp 10700,12316 10697,12303
+Nahmitzer Damm: linker Gehweg bis Parkweg im Fresepark	1::igndisp 8583,301 8736,337
+Nahmitzer Damm: linker Gehweg bis Ampel	1::igndisp 8382,347 8470,310 8583,301

@@ -4876,12 +4876,9 @@ Friesenstr. (Niederschönhausen)	NN 8765,19288 8834,19253 9052,19144 9142,19064 9
 (Schönholzer Heide, Germanenstr. - Friesenstr.)	NN 8348,19304 8405,19336 8484,19401
 (Pankeweg)	NN 11907,19749 11995,19759 12154,20325 12216,20344 12235,20380 12266,20467 12310,20523 12363,20582 12386,20636 12505,20702 12578,20749
 (Pankeweg)	NN 12553,20757 12753,20884 12807,20944 12867,21098
-#: XXX Wird der Pankeweg nach den Bauarbeiten hier wieder begradigt?
-#: osm_watch: way id="1046951300" version="2"
-#: osm_watch: way id="1046951302" version="1"
-#: last_checked: 2024-06-23 (mapillary)
-#: check_frequency: 120d
-(Pankeweg)	NN 12867,21098 12847,21116 12844,21143 12914,21229
+# REMOVED (ja) --- #: XXX Wird der Pankeweg nach den Bauarbeiten hier wieder begradigt? --- #: osm_watch: way id="1046951300" version="2" --- #: osm_watch: way id="1046951302" version="1" --- #: last_checked: 2024-11-30 (mapillary) --- #: check_frequency: 120d
+#: historical_note: während der Bauarbeiten an der Hebammensteigbrücke gab's eine Verschwenkung mit den zusätzlichen Punkten: 12847,21116 12844,21143
+(Pankeweg)	NN 12867,21098 12914,21229
 (Pankeweg)	NN 12914,21229 12980,21411 13031,21538 13075,21740 13078,21754 13141,22018 13206,22290 13110,22313
 (Hebammensteigbrücke - Pankeweg)	NN 13008,21783 13049,21743 13075,21740
 #: oldname: -2014: Am Graben (KGA Gravenstein)
@@ -15782,7 +15779,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2024-11-23
+#: last_checked: 2024-12-01
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16172,7 +16169,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2024-11-23
+#: last_checked: 2024-12-01
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens
@@ -20528,7 +20525,8 @@ Straße 478	N 8054,-198 7781,-182
 (Parkweg am Königsgraben)	NN 8873,-1118 8869,-1090 8737,-1115 8679,-848 8680,-831 8690,-805 8692,-777 8687,-766 8659,-712 8645,-683 8630,-679 8592,-709 8574,-698 8585,-231 8574,-207 8561,-180 8579,153
 (Parkweg am Königsgraben)	NN 8626,107 8631,31 8618,-45 8612,-162 8574,-207
 #: XXX_prog BS zur Motzener Str. (falls man nicht vom/zum Radweg will)
-(Parkweg im Fresepark)	NN 8769,266 8695,188 8671,118 8626,107 8579,153 8584,320
+#: note: 8583,310 ist nur ein "Stützpunkt"
+(Parkweg im Fresepark)	NN 8769,266 8695,188 8671,118 8626,107 8579,153 8583,301 8583,310 8584,320
 Elisabethstr. (Lichtenrade)	N 9970,-1787 9854,-1790 9746,-1792 9612,-1796 9431,-1800
 #: carriageway_width: 10m
 Franziusweg	N 9498,-890 9523,-984 9605,-1296 9597,-1505 9602,-1625 9609,-1709 9612,-1796

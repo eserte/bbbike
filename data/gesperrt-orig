@@ -451,7 +451,11 @@ Leipziger Platz	1 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11
 Crusemarkstr.	1 10825,18634 10715,18965
 Kavalierstr.	1 10621,18837 10721,18575
 # REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
-Kattegatstr.	1 9323,17667 9469,17560
+#: next_check_id: WOLLANK-2024
+#: XXX Einbahnstraßenregelung umgedreht
+#: osm_watch: way id="4637773" version="25"
+#: next_check: 2025-06-15
+Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
 Amalienpark	1 10934,18500 10860,18650
@@ -2606,6 +2610,8 @@ Puschkinallee: unbequemes Passieren (starker Verkehr, kaum Lücken)	3nocross 1449
 Fennstr.: Mittelstreifen mit Geländer	3nocross 8007,15087 7998,15068 7911,15008
 Brunsbütteler Damm: Mittelstreifen, östlicher Gehweg mit Geländer	3nocross -7762,14067 -7716,14031 -7725,13858
 Tegeler Weg: unbequemes Überqueren des Mittelstreifens	3nocross  3005,13728 2984,13789 2935,13927 2881,14061
+#: note: Grünstreifen, keine offizielle Überquerungsmöglichkeit
+Nahmitzer Damm: Mittelstreifen	3nocross 8470,329 8584,320 8736,337
 #: note: besser über Müggelschlößchenweg auf die Nebenstraße fahren
 Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,4093
 # REMOVED (leicht überquerbar) --- #: XXX Mittelstreifen vielleicht leicht überquerbar, prüfen! --- Straße des 17. Juni: Mittelstreifen	3nocross 8303,12216 8344,12221 8538,12245
@@ -3867,6 +3873,19 @@ Drängelgitter	BNP:3::trailer=10 13014,21775
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: WOLLANK-2024
+#: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
+#: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
+#: last_checked: 2024-11-30 (mapillary) vvv
+#: next_check: 2025-06-15 vvv
+#: osm_watch: way id="1199394070" version="3"
+Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
+#: osm_watch: way id="174271093" version="23"
+Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-den-koenigsgraben/ (laut Bild schon abgebrochen; voraussichtliche Bauzeit: noch in Planung)
 #: XXX_osm: bei osm bereits komplett entfernt
 #: last_checked: 2024-11-30 (indoor)
@@ -4216,14 +4235,15 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2024-11-22
+#: last_checked: 2024-12-01
 #: check_frequency: 14d
-Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769 14909,10732
+# REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
+Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-11-23 vvv
+#: last_checked: 2024-12-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt	2::inwork 14994,10732 14984,10677
@@ -4684,7 +4704,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv)
 #: XXX Rampen auf Westseite mit Verbundsteinpflaster, auf Ostseite mit welligen Asphalt, parallel zur Autobahn
 #: XXX mittlerweile (Nov 2024) noch nicht offiziell freigegeben, aber u.U. befahrbar
-#: last_checked: 2024-11-18 (mapillary)
+#: last_checked: 2024-11-30 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 Hebammensteigbrücke	2::inwork 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783

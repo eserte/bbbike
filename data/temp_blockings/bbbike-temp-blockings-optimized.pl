@@ -2516,7 +2516,31 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html
+#: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
+#: by: https://berliner-abendblatt.de/2021/12/10/dieses-wochenende-weihnachtsmarkt-in-der-altstadt/
+	2::xmas 22111,4562 22162,4546 22214,4548
+',
+         'from' => 1734008400,
+         'id' => 2003,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 7,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              12,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2024 bis zum 15.12.2024',
+         'type' => 'gesperrt',
+         'until' => 1734303599
+       },
        undef,
        undef,
        undef,
@@ -2687,7 +2711,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3144,7 +3168,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: November 8.00 - 17.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Dezember 8.00 - 16.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -5411,24 +5435,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: S-SCHICHAUWEG-2021
-#: next_check_id: DRESDNERBAHN-2021
-#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
-#: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
-#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
-#: osm_watch: way id="114381366" version="21"
-#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-09-27 (youtube)
-#: check_frequency: 60d
-	2::inwork 9699,-600 9562,-619
-',
-         'from' => undef,
-         'id' => 3483,
-         'text' => 'S-Bhf. Schichauweg: Unterführung an der Nordseite wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6063,14 +6070,15 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: note: Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
 #: note: Die Flohmarktsaison 2024 startet am 24. März 2024 (Anmeldung ab 12.03.2024)
 #: note: "Unsere Winterpause 2024 beginnt nach dem letzten Termin am 01. Dezember 2024. Danach sind wir wieder ab März 2025 am Start."
-#: XXX Wann ist Saisonende?
-#: next_check: 2024-12-02
+#: note: "... ersten Flowmarkt am 23. März 2025 ..."
+#: XXX Wann ist Saisonbeginn und -ende?
+#: next_check: 2025-03-23
 	q4::temp:clock 12412,9610 12250,9691
 ',
-         'from' => 1711062000,
+         'from' => 1742598000,
          'id' => 3640,
          'recurring' => 1,
-         'text' => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
+         'text' => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/; ',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6116,8 +6124,8 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
 #: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
-#: last_checked: 2024-11-18
-#: check_frequency: 14d
+#: last_checked: 2024-12-01
+#: check_frequency: 30d
 	q4::inwork 16720,12614 16859,12613
 ',
          'from' => undef,
@@ -6638,21 +6646,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: note: Einbahnstraßenbereich ist 50m lang; Halteverbotsschilder bis 2024-11-30
-#: also_indoor: traffic (none)
-#: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-11-13
-#: check_frequency: 21d
-#: next_check: 2024-11-30
-	q3::inwork; 15648,12687 15643,12875
-',
-         'from' => 1685641032,
-         'id' => 3805,
-         'text' => 'Heringer Str.: Einbahnstraßenregelung wegen Hochbauarbeiten, offen Richtung Süden, voraussichtlich bis Herbst 2024',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7226,7 +7220,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (G[zu kurz],B,T) vvv
-#: last_checked: 2024-11-18 vvv
+#: last_checked: 2024-12-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-01-31 vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
@@ -7256,6 +7250,7 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1841356186756817316
 #: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
 #: also_indoor: traffic (G,B,W)
 #: next_check: 2024-12-02
 	q3::inwork 12228,14083 12077,14186
@@ -7317,7 +7312,8 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'until' => undef
        },
        {
-         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=754273#post754273
+         'data' => '#: next_check_id: WOLLANK-2024
+#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=754273#post754273
 #: by: https://www.baustellen-doku.info/berlin_kremmener_bahn/Ersatzneubau_EUe_Wollankstrasse/20240119/
 #: by: https://www.bahninfo-forum.de/read.php?9,681075,792061#msg-792061
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_10_0549_0586_online.pdf (Planfeststellungsbeschluss zur Abstellanlage Schönholz)
@@ -7326,8 +7322,9 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-10-12 (okas)
-#: check_frequency: 60d
+#: last_checked: 2024-11-30 (mapillary)
+#: check_frequency: 90d
+#: next_check: 2025-06-15
 	2::inwork 9586,17665 9461,17795
 # REMOVED (nur der südliche Abschnitt ist laut osm+mapillary gesperrt) ---	2::inwork 9461,17795 9434,17823 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 ',
@@ -7479,7 +7476,7 @@ Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-11-25 (mapillary) vvv
+#: last_checked: 2024-11-30 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -7717,7 +7714,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 #: osm_watch: note 4452464 2
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2024-11-18
+#: last_checked: 2024-12-01
 #: next_check: 2024-12-31
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -8048,7 +8045,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-26
+#: last_checked: 2024-12-01
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8337,7 +8334,8 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        undef,
        undef,
        {
-         'data' => '#: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
+         'data' => '#: next_check_id: WOLLANK-2024
+#: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
 #: by[nocache]: https://archive.is/pZmLF
 #: by: https://www.rbb24.de/panorama/beitrag/2024/07/baustellen-bahn-berlin-pankow-sperrungen.html
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20240925 (26.11.2024 - 26.12.2024, weitere Vollsperrungen z.B. im März 2025)
@@ -8361,21 +8359,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'until' => 1734710400
        },
        undef,
-       {
-         'data' => '#: next_check_id: GOERDELERDAMM-2024
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1488459.php
-#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/rad-und-gehweg-wird-saniert_a425963
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1840774534120571390
-#: by: https://pbs.twimg.com/media/GYu-Qz5W0AAYkqy?format=jpg&name=large
-	2::inwork 3229,14224 3184,14265
-	2::inwork 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
-',
-         'from' => 1727560800,
-         'id' => 4173,
-         'text' => 'Goerdelerdamm: Sanierung zwischen Reichweindamm und Goerdelersteg, vom 30.09.2024 bis voraussichtlich 30.11.2024',
-         'type' => 'gesperrt',
-         'until' => 1733007600
-       },
+       undef,
        {
          'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
@@ -8545,9 +8529,9 @@ Fischerinsel: Engstelle am Mühlendamm	q2::inwork; 10512,12039 10578,11969
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
 #: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
-#: last_checked: 2024-11-20 (bahninfo-forum)
+#: last_checked: 2024-12-01
 # REMOVED --- #: check_frequency: 7d
-#: next_check: 2024-11-26
+#: next_check: 2025-01-07
 	q4::inwork; 16764,11919 16794,12144
 ',
          'from' => 1729548000,
@@ -8831,6 +8815,27 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Hegemeisterbrücke: Neubau geplant, während der Bauzeit Sperrung der Brücke',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5692582-3496862-lichtermarkt-am-rathaus-lichtenberg.html
+#: tempex: first_advent & T13:00-18:00
+	q4::xmas 15710,12365 15537,12367 15508,12367
+',
+         'from' => 1732921200,
+         'id' => 4227,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              27,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Normannenstr.: Lichtermarkt am Rathaus Lichtenberg, 1.12.2024 von 13 bis 18 Uhr',
+         'type' => 'handicap',
+         'until' => 1733079600
        }
      
 );

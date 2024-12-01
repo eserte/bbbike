@@ -17575,12 +17575,12 @@ EOF
 	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2023-12-14 14:00:00"),
-       until => $isodate2epoch->("2023-12-17 23:59:59"),
+     { from  => $isodate2epoch->("2024-12-12 14:00:00"),
+       until => $isodate2epoch->("2024-12-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 vermutlich nicht statt
        recurrence_prewarn_days => 7,
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 15.12.2023 bis zum 17.12.2023',
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2024 bis zum 15.12.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html
@@ -35154,7 +35154,7 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1733072613, # undef,
        text  => 'S-Bhf. Schichauweg: Unterführung an der Nordseite wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -35163,10 +35163,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
-#: osm_watch: way id="114381366" version="21"
-#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-09-27 (youtube)
-#: check_frequency: 60d
+# REMOVED (laut osm offen) --- #: add_fragezeichen: Ist die Unterführung noch immer gesperrt? --- #: last_checked: 2024-09-27 (youtube) --- #: check_frequency: 60d
 	2::inwork 9699,-600 9562,-619
 EOF
      },
@@ -37650,9 +37647,9 @@ EOF
 	q4; 9021,3878 9073,3892 9117,3898
 EOF
      },
-     { from  => $isodate2epoch->("2024-03-22 00:00:00"),
+     { from  => $isodate2epoch->("2025-03-22 00:00:00"),
        until => undef, #
-       text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
+       text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/; ',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -37660,8 +37657,9 @@ EOF
 #: note: Die Flohmarktsaison 2023 startet am 03. April 2023 --- war dann aber schon am 26. März 2023. Ende der Saison möglicherweise nach der Adventszeit.
 #: note: Die Flohmarktsaison 2024 startet am 24. März 2024 (Anmeldung ab 12.03.2024)
 #: note: "Unsere Winterpause 2024 beginnt nach dem letzten Termin am 01. Dezember 2024. Danach sind wir wieder ab März 2025 am Start."
-#: XXX Wann ist Saisonende?
-#: next_check: 2024-12-02
+#: note: "... ersten Flowmarkt am 23. März 2025 ..."
+#: XXX Wann ist Saisonbeginn und -ende?
+#: next_check: 2025-03-23
 	q4::temp:clock 12412,9610 12250,9691
 EOF
      },
@@ -37711,8 +37709,8 @@ EOF
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
 #: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
-#: last_checked: 2024-11-18
-#: check_frequency: 14d
+#: last_checked: 2024-12-01
+#: check_frequency: 30d
 	q4::inwork 16720,12614 16859,12613
 EOF
      },
@@ -39990,16 +39988,14 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 EOF
      },
      { from  => 1685641032, # 2023-06-01 19:37
-       until => undef, # $isodate2epoch->("2024-09-30 18:00:00"),
+       until => 1733056704, # undef, # $isodate2epoch->("2024-09-30 18:00:00"),
        text  => 'Heringer Str.: Einbahnstraßenregelung wegen Hochbauarbeiten, offen Richtung Süden, voraussichtlich bis Herbst 2024',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Einbahnstraßenbereich ist 50m lang; Halteverbotsschilder bis 2024-11-30
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1177919961" version="1"
-#: last_checked: 2024-11-13
-#: check_frequency: 21d
-#: next_check: 2024-11-30
+# REMOVED (Bauarbeiten beendet) --- #: last_checked: 2024-12-01 --- #: check_frequency: 21d --- #: next_check: 2024-11-30
 	q3::inwork; 15648,12687 15643,12875
 EOF
      },
@@ -41796,7 +41792,7 @@ EOF
        prewarn_days => 9,
        postwarn_days => 7,
        recurrences => [['yearly', days => 19, months => 11]],
-      text  => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen Weg am Rand möglich', # note: früher (2023) "eng"
+       text  => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen Weg am Rand möglich', # note: früher (2023) "eng"
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BEBELPLATZXMAS-2022
@@ -42380,7 +42376,7 @@ EOF
 # REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (G[zu kurz],B,T) vvv
-#: last_checked: 2024-11-18 vvv
+#: last_checked: 2024-12-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-01-31 vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
@@ -42444,6 +42440,7 @@ EOF
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1841356186756817316
 #: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
 #: also_indoor: traffic (G,B,W)
 #: next_check: 2024-12-02
 	q3::inwork 12228,14083 12077,14186
@@ -42696,6 +42693,7 @@ EOF
        text  => 'Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: WOLLANK-2024
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=754273#post754273
 #: by: https://www.baustellen-doku.info/berlin_kremmener_bahn/Ersatzneubau_EUe_Wollankstrasse/20240119/
 #: by: https://www.bahninfo-forum.de/read.php?9,681075,792061#msg-792061
@@ -42705,8 +42703,9 @@ EOF
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="3"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
-#: last_checked: 2024-10-12 (okas)
-#: check_frequency: 60d
+#: last_checked: 2024-11-30 (mapillary)
+#: check_frequency: 90d
+#: next_check: 2025-06-15
 	2::inwork 9586,17665 9461,17795
 # REMOVED (nur der südliche Abschnitt ist laut osm+mapillary gesperrt) ---	2::inwork 9461,17795 9434,17823 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 EOF
@@ -43242,7 +43241,7 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2024-11-25 (mapillary) vvv
+#: last_checked: 2024-11-30 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -43987,7 +43986,7 @@ EOF
 #: osm_watch: note 4452464 2
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2024-11-18
+#: last_checked: 2024-12-01
 #: next_check: 2024-12-31
 	q4::inwork 15077,11910 15110,12107
 EOF
@@ -44647,7 +44646,7 @@ EOF
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-11-26
+#: last_checked: 2024-12-01
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -45209,6 +45208,7 @@ EOF
        text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 26.11.2024 bis 20.12.2024',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: WOLLANK-2024
 #: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
 #: by[nocache]: https://archive.is/pZmLF
 #: by: https://www.rbb24.de/panorama/beitrag/2024/07/baustellen-bahn-berlin-pankow-sperrungen.html
@@ -45544,9 +45544,9 @@ EOF
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
 #: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
-#: last_checked: 2024-11-20 (bahninfo-forum)
+#: last_checked: 2024-12-01
 # REMOVED --- #: check_frequency: 7d
-#: next_check: 2024-11-26
+#: next_check: 2025-01-07
 	q4::inwork; 16764,11919 16794,12144
 EOF
      },
@@ -45911,6 +45911,18 @@ EOF
 #: add_fragezeichen: Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?
 #: last_checked: 2024-06-12 (webpage moddate)
 	2::inwork 30081,5231 30081,5220
+EOF
+     },
+     { from  => 1732921200, # 2024-11-30 00:00
+       until => 1733079600, # 2024-12-01 20:00
+       periodic => 1,
+       recurrences => [['yearly', days => 27, months => 11]],
+       text  => 'Normannenstr.: Lichtermarkt am Rathaus Lichtenberg, 1.12.2024 von 13 bis 18 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/weihnachtsmarkt/5692582-3496862-lichtermarkt-am-rathaus-lichtenberg.html
+#: tempex: first_advent & T13:00-18:00
+	q4::xmas 15710,12365 15537,12367 15508,12367
 EOF
      },
     );
