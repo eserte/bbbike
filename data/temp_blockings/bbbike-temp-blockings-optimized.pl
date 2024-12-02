@@ -166,32 +166,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3659027-3496862-umwelt-und-weihnachtsmarkt-in-der-sophie.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001302-955635-weihnachts-und-umweltmarkt-in-der-sophie.html
-#: by: https://www.weihnachtsmarkt-sophienstrasse.de/ (Absage 2021)
-#: tempex: before(1st_advent,1d) - +1d
-	2::xmas 9986,13412 10321,13259
-',
-         'from' => 1732834800,
-         'id' => 166,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              11,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2024 - 01.12.2024)',
-         'type' => 'gesperrt',
-         'until' => 1733093999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -483,32 +458,7 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1145105.php (Absage 2021)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1245294.php
-	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1732921200,
-         'id' => 417,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 01. Dezember 2024 von 13 bis 19 Uhr)',
-         'type' => 'gesperrt',
-         'until' => 1733079600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3457,34 +3407,7 @@ Gärnerstr.: Markierungsarbeiten fertig, Einbahnstraße ohne "Radfahrer frei"-Besc
          'type' => 'gesperrt',
          'until' => 1734908399
        },
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
-#: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
-#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/ (2021 abgesagt)
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html (Termin 2022 nicht bekannt)
-#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/?date=20221103
-#: tempex: 1st_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1732964400,
-         'id' => 2518,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 14,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 01. Dezember 2024, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1733076000
-       },
+       undef,
        {
          'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
 #: tempex: 2nd_advent & T12-T19
@@ -6335,9 +6258,10 @@ Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 142
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024; mittlerweile bis 30.11.2024
 #: also_indoor: traffic (ex-G,ex-W)
-#: last_checked: 2024-11-10
-#: check_frequency: 30d
-#: next_check: 2024-11-30
+#: last_checked: 2024-12-02
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-11-30
 	q3::inwork 13263,15930 13140,16000
 ',
          'from' => undef,
@@ -7246,18 +7170,19 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
        {
          'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024) (im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.42956,52.533,29.08.2024,14:51 (bis 02.10.2024) (inaktiv)
-#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024) (bis 02.12.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024) (bis 02.12.2024 + weitere Arbeiten) (bis 20.12.2024)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1841356186756817316
 #: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
 #: also_indoor: traffic (G,B,W)
-#: next_check: 2024-12-02
+#: next_check: 2024-12-20
 	q3::inwork 12228,14083 12077,14186
 ',
+         'dont_check_date' => 1,
          'from' => 1701237600,
          'id' => 3982,
-         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, Ende der Bauarbeiten unbekannt',
+         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis voraussichtlich 20.12.2024 17:00',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7576,22 +7501,7 @@ Karlshafener Str.	q4::inwork 24899,13007 25054,12926
          'type' => 'handicap',
          'until' => 1747839600
        },
-       {
-         'data' => '#: source_id: viz2021:13.242728,52.52799,29.04.2024,07:00 (bis 31.07.2025)
-# REMOVED (keine Ausnahmeregelung für Radfahrer) --- #: add_fragezeichen: Sind Radfahrer tatsächlich von der Einbahnstraßenregelung betroffen?
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784808579930718521
-#: by: https://pbs.twimg.com/media/GMG9wCGWEAA53aH?format=jpg
-#: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-wiesendamm-in-spandau/
-#: by: https://berliner-abendblatt.de/berlin-news/strassensperrung-auf-wiesendamm-in-berlin-spandau-id250968
-	q4::inwork; -795,13437 -729,13415 -346,13349 -309,13268
-# REMOVED (hier nicht, siehe mapillary)	q4::inwork; -309,13268 -278,13094 -264,13009
-',
-         'from' => 1714280400,
-         'id' => 4049,
-         'text' => 'Wiesendamm: zwischen Spandauer Damm und Sophienwerderweg Bauarbeiten, Einbahnstraßenregelung, offen Richtung Spandauer Damm, vom 29.04.2024 07:00 bis 31.07.2025 17:00',
-         'type' => 'gesperrt',
-         'until' => 1753974000
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/wochenmarkt-vor-der-markthalle-erweiterung-fur-markthalle-neun-in-berlin-kreuzberg-genehmigt-10575601.html (befristet bis 13. September 2024)
@@ -7714,7 +7624,7 @@ Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 1
 #: osm_watch: note 4452464 2
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-02
 #: next_check: 2024-12-31
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -7852,36 +7762,8 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024) (bis 29.11.2024) (bis 02.12.2024)
-#: source_id: viz2021:13.28708,52.43274,26.06.2024,07:00 (bis 02.12.2024)
-#: note: auf der BA-Seite wird diese Baumaßnahme nicht verlängert
-	q4::inwork; 2625,2850 2737,2866
-# REMOVED (scheint kürzer zu sein) ---	q4::inwork; 2737,2866 3019,2858
-',
-         'from' => 1719291600,
-         'id' => 4098,
-         'text' => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, vielleicht sind auch Radfahrer betroffen, bis 02.12.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1733155200
-       },
-       {
-         'data' => '#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024) (bis 02.12.2024)
-#: source_id: viz2021:13.28708,52.43274,26.06.2024,07:00 (bis 02.12.2024)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/weitraeumige-umleitungen-notwendig_a419753
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9186 (Anfrage)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480269.php (Verlängerung bis Ende November 2024)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/umleitungsplaene-im-rahmen-der-baumassnahme-finckensteinallee-der-berliner-wasserbetriebe-umleitung-radverkehr_jpg.jpg
-	q4::inwork 2290,2864 2570,2844 2625,2850
-',
-         'from' => 1719291600,
-         'id' => 4099,
-         'text' => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 02.12.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1733155200
-       },
+       undef,
+       undef,
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
@@ -8301,7 +8183,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-11-29
+#: last_checked: 2024-12-02
 #: next_check: 2024-12-20
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
@@ -8815,27 +8697,6 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Hegemeisterbrücke: Neubau geplant, während der Bauzeit Sperrung der Brücke',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5692582-3496862-lichtermarkt-am-rathaus-lichtenberg.html
-#: tempex: first_advent & T13:00-18:00
-	q4::xmas 15710,12365 15537,12367 15508,12367
-',
-         'from' => 1732921200,
-         'id' => 4227,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              27,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Normannenstr.: Lichtermarkt am Rathaus Lichtenberg, 1.12.2024 von 13 bis 18 Uhr',
-         'type' => 'handicap',
-         'until' => 1733079600
        }
      
 );

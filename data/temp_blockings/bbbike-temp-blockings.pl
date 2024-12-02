@@ -38564,9 +38564,10 @@ EOF
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024; mittlerweile bis 30.11.2024
 #: also_indoor: traffic (ex-G,ex-W)
-#: last_checked: 2024-11-10
-#: check_frequency: 30d
-#: next_check: 2024-11-30
+#: last_checked: 2024-12-02
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2024-11-30
 	q3::inwork 13263,15930 13140,16000
 EOF
      },
@@ -42430,19 +42431,20 @@ EOF
      },
      { from  => 1701237600, # 2023-11-29 07:00
        until => undef, # $isodate2epoch->("2024-11-29 17:00:00"), # 1722438000, # 2024-07-31 17:00
-#      text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis 29.11.2024 17:00',
-       text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, Ende der Bauarbeiten unbekannt',
+       dont_check_date => 1,
+#      text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, Ende der Bauarbeiten unbekannt',
+       text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis voraussichtlich 20.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024) (im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.42956,52.533,29.08.2024,14:51 (bis 02.10.2024) (inaktiv)
-#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024) (bis 02.12.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024) (bis 02.12.2024 + weitere Arbeiten) (bis 20.12.2024)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1841356186756817316
 #: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
 #: also_indoor: traffic (G,B,W)
-#: next_check: 2024-12-02
+#: next_check: 2024-12-20
 	q3::inwork 12228,14083 12077,14186
 EOF
      },
@@ -43501,12 +43503,14 @@ Karlshafener Str.	q4::inwork 24899,13007 25054,12926
 EOF
      },
      { from  => 1714280400, # 2024-04-28 07:00
-       until => 1753974000, # 2025-07-31 17:00
+       until => 1733165068, # 1753974000, # 2025-07-31 17:00
        text  => 'Wiesendamm: zwischen Spandauer Damm und Sophienwerderweg Bauarbeiten, Einbahnstraßenregelung, offen Richtung Spandauer Damm, vom 29.04.2024 07:00 bis 31.07.2025 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.242728,52.52799,29.04.2024,07:00 (bis 31.07.2025)
+#: source_id: viz2021:13.242728,52.52799,29.04.2024,07:00 (bis 31.07.2025) (inaktiv)
+#: source_id: viz2021:13.247467,52.524469,29.04.2024,07:00 (andere Richtung, nur Kfz-Verkehr, bis 31.07.2025)
 # REMOVED (keine Ausnahmeregelung für Radfahrer) --- #: add_fragezeichen: Sind Radfahrer tatsächlich von der Einbahnstraßenregelung betroffen?
+#: note: mittlerweile Bauarbeiten in der Gegenrichtung, aber zumindest gibt's wenigstens ein Stück freigegebenen Gehweg
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784808579930718521
 #: by: https://pbs.twimg.com/media/GMG9wCGWEAA53aH?format=jpg
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-wiesendamm-in-spandau/
@@ -43986,7 +43990,7 @@ EOF
 #: osm_watch: note 4452464 2
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-02
 #: next_check: 2024-12-31
 	q4::inwork 15077,11910 15110,12107
 EOF
@@ -44244,8 +44248,8 @@ EOF
        text  => 'Finckensteinallee: Bauarbeiten zwischen Carstennstr. und Berner Str., Richtung Osten gesperrt, vielleicht sind auch Radfahrer betroffen, bis 02.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024) (bis 29.11.2024) (bis 02.12.2024)
-#: source_id: viz2021:13.28708,52.43274,26.06.2024,07:00 (bis 02.12.2024)
+#: source_id: viz2021:13.287936,52.432816,26.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.08.2024) (bis 29.11.2024) (bis 02.12.2024) (inaktiv)
+#: source_id: viz2021:13.28708,52.43274,26.06.2024,07:00 (bis 02.12.2024) (inaktiv)
 #: note: auf der BA-Seite wird diese Baumaßnahme nicht verlängert
 	q4::inwork; 2625,2850 2737,2866
 # REMOVED (scheint kürzer zu sein) ---	q4::inwork; 2737,2866 3019,2858
@@ -44256,8 +44260,8 @@ EOF
        text  => 'Finckensteinallee: Bauarbeiten zwischen Schottmüllerstr. und Ringstr./Carstennstr., Sperrung, auch Radfahrer sind betroffen, vom 26.06.2024 07:00 bis 02.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024) (bis 02.12.2024)
-#: source_id: viz2021:13.28708,52.43274,26.06.2024,07:00 (bis 02.12.2024)
+#: source_id: viz2021:13.284226,52.432806,26.06.2024,07:00 (bis 31.08.2024) (bis 29.11.2024) (bis 02.12.2024) (inaktiv)
+#: source_id: viz2021:13.28708,52.43274,26.06.2024,07:00 (bis 02.12.2024) (inaktiv)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1460924.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/finckensteinallee-12205-berlin-umleitung-radfahrer_stand-160524.pdf
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/weitraeumige-umleitungen-notwendig_a419753
@@ -45119,7 +45123,7 @@ EOF
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-11-29
+#: last_checked: 2024-12-02
 #: next_check: 2024-12-20
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 EOF

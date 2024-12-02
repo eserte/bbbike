@@ -153,6 +153,8 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12162 (Antrag zur Schulenburgbrücke)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/sieben-spandauer-baustellen-was-bauen-die-da-eigentlich-bei-ikea-12700316.html (Herbst 2026: Abriss und Neubau der Brücke, bis 2030)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/moin-sudhafen-moin-abrissbagger-so-wird-berlins-industriehafen-umgebaut-und-modernisiert-10507732.html (Erwähnung eines "Radwegs")
+#: by: https://www.berlin.de/suedhafen-spandau/
+#: by: https://www.berlin.de/suedhafen-spandau/schulenburgbruecke/
 #: osm_watch: way id="4609212"  version="16"
 #: osm_watch: way id="25113713" version="21"
 #: osm_watch: way id="4752742"  version="15"
@@ -302,7 +304,7 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2871,11423 -2
 #: osm_watch: way id="182782708" version="14"
 #: osm_watch: way id="168307255" version="13"
 #: osm_watch: way id="4687243" version="31"
-#: last_checked: 2024-11-10
+#: last_checked: 2024-12-02
 #: check_frequency: 360d
 #: next_check: 2026-03-15
 Oderbruchstr./Hohenschönhauser Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14243,13890 14218,13834
@@ -867,11 +869,12 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: source_id: 2147346753 (bis 15.1.2021, Leitungsbau) (inaktiv)
 #: source_id: 2147347251 (bis 20.6.2021, Leitungsarbeiten) (inaktiv)
 #: source_id: viz2021:13.541546,52.419441,13.03.2023,09:00 (Tiefbauarbeiten, Gegenverkehrsregelung, bis 11.04.2023) (bis 24.04.2023) (bis 05.05.2023) (inaktiv)
-#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (Leitungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 18.02.2025)
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (Leitungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 18.02.2025) (bis 18.02.2025 + weitere Arbeiten)
 #: osm_watch: way id="152466386" version="20"
 #: osm_watch: way id="493763039" version="12"
 #: last_checked: 2024-09-04
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2025-02-18
 Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 # 
 # REMOVED (realisiert) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX AT.1 --- #: last_checked: 2021-07-21 (osm) --- #: check_frequency: 30d --- Am Treptower Park: Einrichtung einer Radverkehrsanlage geplant	?::projected; 14185,9509 14089,9610
@@ -5872,7 +5875,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="21"
-#: last_checked: 2024-11-13
+#: last_checked: 2024-12-02
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -6005,7 +6008,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: source_id: viz2021:13.470029,52.540596,16.11.2022,09:00 (bis 14.12.2022) (inaktiv)
 #: source_id: viz2021:13.4663,52.5505,25.11.2022,09:27 (bis 28.03.2023) (inaktiv)
 #: source_id: viz2021:13.466459,52.550159,25.11.2022,09:00 (bis 28.03.2023, Arbeiten an Wasserleitungen zwischen Bizetstr. und Meyerbeerstr.) (bis 5.4.2023) (bis 11.4.2023) (bis 28.4.2023) (bis 21.4.2023) (inaktiv)
-#: last_checked: 2024-11-10
+#: last_checked: 2024-12-02
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-03-28
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
@@ -6051,7 +6054,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-02
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -6075,7 +6078,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/infos-zum-radweg-scheffelstrasse_a426227
 #: source_id: viz2021:13.476508,52.520281,04.09.2024,07:00 (Sperrung für Kfz, bis 30.11.2024) (bis 20.12.2024)
 #: XXX Außerdem: Grünbeschichtung
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-02
 #: check_frequency: 30d
 #: next_check: 2025-05-31
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::inwork 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
@@ -7445,9 +7448,9 @@ Niemannstr.: Teileinziehung geplant	? 14211,11229 14254,11377
 Revaler Str.: östlicher Abschnitt wird zur Fahrradstraße und soll asphaltiert werden	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
 # 
 #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29
-#: XXX zu früh bei der VIZ gemeldet?
+#: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht)
 #: priority: #D
-#: last_checked: 2024-11-30
+#: last_checked: 2024-12-02
 #: check_frequency: 14d
 Niederbarnimstr.: Durchfahrtsverbot für Kfz	? 14055,11964 14208,12235
 # 
@@ -8313,7 +8316,7 @@ Falkentaler Steig: entsteht hier ein Zebrastreifen?	? 2842,24293 2903,24264 2971
 # REMOVED --- #: note: Halteverbotsschilder bis 20.11.2023; auf der nördlichen Seite ab Jessnerstr. markiert, noch ohne Radwegschilder; es wurden nur kleine Stellen saniert (bereits eingetragen, inkl. neuen qualitaet_s-Eintrag) --- #: note: Richtung Osten: zwischen Weichselstr. und Müggelstr. bereits markiert und ausgeschildert, trotzdem parken hier noch Autos; am 2024-02-13 zum ersten Mal frei gesehen; mittlerweile dauerhaft frei und eingetragen
 #: note: Richtung Osten: ab Müggelstr. teilweise noch unsaniert (Kopfsteinpflaster) und eine Hochbaustelle; Halteverbotsschilder bis 30.06.2024; mittlerweile wurde das Gerüst abgebaut, das Haus ist noch immer eine Baustelle, auf dem zukünftigen Radstreifen steht ein Container --- nichts passiert hier! Mittlerweile sind hier Bauarbeiten. 2024-12-01: fertig ausgeschildert und markiert, aber die Radspur ist noch immer zugeparkt und der Container steht hier immer noch.
 #: XXX An die comments_tram-Einträge denken!
-#: last_checked: 2024-12-01 vvv
+#: last_checked: 2024-12-02 vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2024-12-31 vvv
@@ -8625,7 +8628,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1505682.php (Maßnahmenstart im nördlichen Bereich im November 2024 --- Niederbarnimstraße, Einbahnstraßenregelungen (vielleicht die Colberstr.?) und dieser Abschnitt)
 #: osm_watch: way id="1051634661" version="11"
 #: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
-#: last_checked: 2024-11-29
+#: last_checked: 2024-12-02
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
