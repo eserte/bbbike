@@ -28,6 +28,7 @@ use YAML::XS qw(LoadFile Dump);
 my $json_file = "bvg_checker_disruptions_2024.json";
 
 # note: use pseudo version delta -1 for uncommitted version
+# note: use pseudo version delta "empty" for an empty file, only for --old-version, effectively showing all data
 my $old_version = 1;
 my $new_version;
 my $debug;
@@ -36,7 +37,7 @@ my @ignore;
 my $use_wdiff;
 my $sort_by = 'date';
 GetOptions(
-	   "old-version=i" => \$old_version,
+	   "old-version=s" => \$old_version,
 	   "new-version=i" => \$new_version,
 	   #"ignore-boring" => \$ignore_boring,
 	   'ignore=s@'     => \@ignore,
@@ -54,7 +55,11 @@ my($sort_by_key1, $sort_by_key2) = ($sort_by eq 'title' ? qw(_title _date) : qw(
 my $sourceids = load_sourceids();
 
 if (!defined $new_version) {
-    $new_version = $old_version - 1;
+    if ($old_version eq 'empty') {
+	$new_version = 0;
+    } else {
+	$new_version = $old_version - 1;
+    }
 }
 
 my @versions = split /\n/, qx(git log --pretty=%H -- $json_file);
@@ -66,7 +71,9 @@ for my $def (
 	    ) {
     my($delta_version, $ref) = @$def;
     my @cat_projects_cmd;
-    if ($delta_version == -1) {
+    if ($delta_version eq 'empty') {
+	@cat_projects_cmd = ('echo', '[]');
+    } elsif ($delta_version == -1) {
 	@cat_projects_cmd = ('cat', $json_file);
     } elsif ($delta_version < -1) {
 	die "version delta can only be -1, 0 or positive";
