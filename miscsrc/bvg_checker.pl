@@ -28,7 +28,7 @@ use POSIX qw(strftime);
 
 use Strassen::Core;
 
-use constant BVG_SITE_IS_BROKEN => 0; # strftime("%Y-%m-%d", localtime) le "2024-11-08";
+use constant BVG_SITE_IS_BROKEN => 0; # strftime("%Y-%m-%d", localtime) le "2024-12-04";
 
 return 1 if caller;
 
@@ -45,6 +45,7 @@ GetOptions(
 		   die "Invalid variant '$_[1]', currently only bvg2021 and bvg2024 valid.\n";
 	       }
 	   },
+	   "ignore-broken-marker" => \my $ignore_broken_marker,
 	  )
     or die "usage: $0 [--list-only] [--log logfile] [--debug]\n";
 
@@ -129,13 +130,17 @@ if (%check_sourceids || %check_inactive_sourceids) {
 }
 
 if ($errors) {
-    if (BVG_SITE_IS_BROKEN) {
+    if (BVG_SITE_IS_BROKEN && !$ignore_broken_marker) {
 	printerr "BVG site is currently likely to be broken, so don't fail the script run.", "yellow on_black";
 	printerr "\n";
 	exit 0;
     } else {
 	if ($errors > 5) { # arbitrary number, or maybe work with percentages?
-	    printerr "Check if the BVG site is broken, and if so, define the BVG_SITE_IS_BROKEN constant in this script.", "red on_black";
+	    if ($ignore_broken_marker) {
+		printerr "BVG site is known to be broken (BVG_SITE_IS_BROKEN is defined)", "red on_black";
+	    } else {
+		printerr "Check if the BVG site is broken, and if so, define the BVG_SITE_IS_BROKEN constant in this script.", "red on_black";
+	    }
 	}
 	exit 1;
     }
