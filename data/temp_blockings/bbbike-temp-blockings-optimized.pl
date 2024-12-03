@@ -3297,27 +3297,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147342105 (inaktiv)
-#	q3::inwork; 14181,11434 14211,11552
-#: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
-#: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-29 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2024-11-22 vvv
-Modersohnstr.: Markierungsarbeiten fertig, , Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14134,11272 14181,11434
-Gärnerstr.: Markierungsarbeiten fertig, Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14211,11552 14181,11434
-# REMOVED --- Gärnerstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,11552
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1730674800,
-         'id' => 2495,
-         'text' => 'Gärtnerstr./Modersohnstr.: Einbahnstraße noch ohne "Radfahrer frei"-Beschilderung',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6162,13 +6142,15 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024)
+#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024)
+#: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024)
 #: last_checked: 2024-11-27 vvv
 #: check_frequency: 60d vvv
-#: next_check_id: 2024-12-31 vvv
+#: next_check: 2024-12-16 vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 14242,9448 14316,9542
-#: next_check_id ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -6650,34 +6632,36 @@ Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,999
        undef,
        {
          'data' => '#: next_check_id: U6-2022
-#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024)
+#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
+#: osm_watch: note 4444225 1
 #: also_indoor: traffic (H,G,W)
 #: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
-#: next_check: 2024-12-31
+#: next_check: 2025-12-31
 	q2::inwork 3213,18115 3420,18470
 ',
          'from' => 1687609413,
          'id' => 3833,
-         'text' => 'Otisstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, Bordstein, voraussichtlich bis 31.12.2024 17:00',
+         'text' => 'Otisstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, Bordstein, voraussichtlich bis 31.12.2025',
          'type' => 'handicap',
-         'until' => 1735686000
+         'until' => 1767196800
        },
        {
          'data' => '#: next_check_id: U6-2022
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
-#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024)
+#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
+#: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
 #: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
-#: next_check: 2024-12-31
+#: next_check: 2025-12-31
 	q2::inwork 3267,18767 3008,18464
 ',
          'from' => 1687609413,
          'id' => 3834,
-         'text' => 'Flohrstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, voraussichtlich bis 31.12.2024 17:00',
+         'text' => 'Flohrstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, voraussichtlich bis 31.12.2025',
          'type' => 'handicap',
-         'until' => 1735686000
+         'until' => 1767196800
        },
        undef,
        undef,
@@ -7742,7 +7726,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-11-21 vvv
+#: last_checked: 2024-12-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7768,8 +7752,8 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
-#: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr
-#: last_checked: 2024-11-12 (mapillary)
+#: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr; mittlerweile (2024-12-03) ist die Radspur wieder nutzbar
+#: last_checked: 2024-12-03
 #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 ',
@@ -7927,7 +7911,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'data' => '#: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-03
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -8327,11 +8311,11 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-11-22 (mapillary) vvv
+#: last_checked: 2024-12-03 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-01-17 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
-Fischerinsel: Engstelle am Mühlendamm	q2::inwork; 10512,12039 10578,11969
+Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #Fischerinsel	q4::inwork 10578,11969 10512,12039
 #: next_check ^^^
 #: check_frequency ^^^
@@ -8546,14 +8530,15 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'until' => 1735578000
        },
        {
-         'data' => '#: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024)
+         'data' => '#: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
+#: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025)
 	q4::inwork 13205,8126 13277,8211 13331,8283
 ',
          'from' => 1731304800,
          'id' => 4215,
-         'text' => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12.11.2024 07:00 bis 23.12.2024 23:59',
+         'text' => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12.11.2024 07:00 bis 29.04.2025 23:59',
          'type' => 'handicap',
-         'until' => 1734994740
+         'until' => 1745963999
        },
        {
          'data' => '#: source_id: viz2021:13.31163,52.463224,13.11.2024,13:20 (hier nur Kfz-Verkehr, bis 15.04.2025)

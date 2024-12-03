@@ -23027,7 +23027,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-11-04 00:00:00"), # 1511898358,
-       until => undef, # $isodate2epoch->("2024-11-22 18:00:00"), # $isodate2epoch->("2024-11-08 18:00:00"), # 1513622255, # $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
+       until => 1733243487, # undef, # $isodate2epoch->("2024-11-22 18:00:00"), # $isodate2epoch->("2024-11-08 18:00:00"), # 1513622255, # $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
 #       text  => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
 #       text  => 'Modersohnstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Revaler Str. gesperrt, voraussichtlich bis 08.11.2024',
 #       text  => 'Gärtnerstr.: Bau- und Markierungsarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, voraussichtlich bis 22.11.2024',
@@ -23038,15 +23038,13 @@ EOF
 #	q3::inwork; 14181,11434 14211,11552
 #: source_id: viz2021:13.45881,52.50658,04.11.2024,07:00 (bis 08.11.2024) (inaktiv)
 #: next_check_id: MODERSOHN-2024
-#: last_checked: 2024-11-29 vvv
-#: check_frequency: 14d vvv
+# REMOVED --- #: last_checked: 2024-11-29 vvv --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2024-11-22 vvv
 Modersohnstr.: Markierungsarbeiten fertig, , Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14134,11272 14181,11434
 Gärnerstr.: Markierungsarbeiten fertig, Einbahnstraße ohne "Radfahrer frei"-Beschilderung	q2::inwork; 14211,11552 14181,11434
 # REMOVED --- Gärnerstr.: Fahrbahn ist offiziell abgesperrt	q4::inwork 14181,11434 14211,11552
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1382220000, # 2013-10-20 00:00
@@ -38230,13 +38228,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024)
+#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024)
+#: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024)
 #: last_checked: 2024-11-27 vvv
 #: check_frequency: 60d vvv
-#: next_check_id: 2024-12-31 vvv
+#: next_check: 2024-12-16 vvv
 nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 Trampelpfad vom Treptower Park: keine gute Überquerungsmöglichkeit	2::inwork 14242,9448 14316,9542
-#: next_check_id ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -40333,31 +40333,33 @@ EOF
 EOF
      },
      { from  => 1687609413, # 2023-06-24 14:23
-       until => 1735686000, # 2025-01-01 00:00
-       text  => 'Otisstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, Bordstein, voraussichtlich bis 31.12.2024 17:00',
+       until => $isodate2epoch->("2025-12-31 17:00:00"), # 1735686000, # 2025-01-01 00:00
+       text  => 'Otisstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, Bordstein, voraussichtlich bis 31.12.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: U6-2022
-#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024)
+#: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
+#: osm_watch: note 4444225 1
 #: also_indoor: traffic (H,G,W)
 #: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
-#: next_check: 2024-12-31
+#: next_check: 2025-12-31
 	q2::inwork 3213,18115 3420,18470
 EOF
      },
      { from  => 1687609413, # 2023-06-24 14:23
-       until => 1735686000, # 2025-01-01 00:00
-       text  => 'Flohrstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, voraussichtlich bis 31.12.2024 17:00',
+       until => $isodate2epoch->("2025-12-31 17:00:00"), # 1735686000, # 2025-01-01 00:00
+       text  => 'Flohrstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, voraussichtlich bis 31.12.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: U6-2022
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
-#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024)
+#: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
+#: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
 #: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
-#: next_check: 2024-12-31
+#: next_check: 2025-12-31
 	q2::inwork 3267,18767 3008,18464
 EOF
      },
@@ -44193,7 +44195,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-11-21 vvv
+#: last_checked: 2024-12-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44279,8 +44281,8 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
-#: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr
-#: last_checked: 2024-11-12 (mapillary)
+#: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr; mittlerweile (2024-12-03) ist die Radspur wieder nutzbar
+#: last_checked: 2024-12-03
 #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 EOF
@@ -44650,7 +44652,7 @@ EOF
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-03
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -45415,11 +45417,11 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-11-22 (mapillary) vvv
+#: last_checked: 2024-12-03 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-01-17 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
-Fischerinsel: Engstelle am Mühlendamm	q2::inwork; 10512,12039 10578,11969
+Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #Fischerinsel	q4::inwork 10578,11969 10512,12039
 #: next_check ^^^
 #: check_frequency ^^^
@@ -45751,11 +45753,12 @@ EOF
 EOF
      },
      { from  => 1731304800, # 2024-11-11 07:00
-       until => 1734994740, # 2024-12-23 23:59
-       text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12.11.2024 07:00 bis 23.12.2024 23:59',
+       until => $isodate2epoch->("2025-04-29 23:59:59"), # 1734994740, # 2024-12-23 23:59
+       text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12.11.2024 07:00 bis 29.04.2025 23:59',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024)
+#: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
+#: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025)
 	q4::inwork 13205,8126 13277,8211 13331,8283
 EOF
      },
