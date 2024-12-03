@@ -32,21 +32,19 @@ my $json_file = "bvg_checker_disruptions_2024.json";
 my $old_version = 1;
 my $new_version;
 my $debug;
-#my $ignore_boring;
-my @ignore;
+my $ignore_boring = 1;
 my $use_wdiff;
 my $sort_by = 'date';
 GetOptions(
 	   "old-version=s" => \$old_version,
 	   "new-version=i" => \$new_version,
-	   #"ignore-boring" => \$ignore_boring,
-	   'ignore=s@'     => \@ignore,
+	   "ignore-boring!" => \$ignore_boring,
 	   'wdiff' => \$use_wdiff,
 	   'as-yaml' => \my $as_yaml,
 	   "debug" => \$debug,
 	   "sort-by=s" => \$sort_by,
 	  )
-    or die "usage: $0 [--debug] [--ignore key ...] [--old-version delta] [--new-version delta] [--wdiff] [--sort-by date|title]\n";
+    or die "usage: $0 [--debug] [--ignore-boring] [--old-version delta] [--new-version delta] [--wdiff] [--sort-by date|title]\n";
 
 $sort_by =~ m{^(date|title)$}
     or die "usage: allowed --sort-by are 'date' (default) and 'title'\n";
@@ -207,11 +205,30 @@ sub filter_and_split_json {
 	inject_title($element);
 	inject_date($element);
 
-	delete $element->{$_} for qw(directionOne firstLineLineType hideTime messageCategory scheduled showOnStartpage);
-
-	for my $content (@{ $element->{content} }) {
-	    $content->{content} =~ s{<p>}{}g;
-	    $content->{content} =~ s{</p>}{\n}g;
+	if ($ignore_boring) {
+	    delete $element->{$_} for qw(directionOne firstLineLineType hideTime messageCategory scheduled showOnStartpage);
+	    delete $element->{messageType} if ($element->{messageType}||'') eq 'TRAFFIC';
+	    for my $content (@{ $element->{content} }) {
+		$content->{content} =~ s{<p>}{}g;
+		$content->{content} =~ s{</p>}{\n}g;
+		delete $content->{icon};
+	    }
+	    if ($element->{lines}) {
+		my @new_lines;
+		for my $linetype_def (@{ $element->{lines} }) {
+		    my $linetype = (keys %$linetype_def)[0];
+		    for my $line_def (@{ $linetype_def->{$linetype} }) {
+			my $display_line = ($linetype !~ /^(subway|ferry)$/ ? ucfirst($linetype) . ' ' : '') . $line_def->{name};
+			push @new_lines, $display_line;
+		    }
+		}
+		$element->{lines} = \@new_lines;
+	    }
+	    for my $key (qw(stationOne stationTwo stationThree)) {
+		if ($element->{$key} && keys %{ $element->{$key} } == 1 && exists $element->{$key}->{displayName}) {
+		    $element->{$key} = $element->{$key}->{displayName};
+		}
+	    }
 	}
 
 	$records{$element->{id}} = $element;
