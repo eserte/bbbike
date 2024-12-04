@@ -712,16 +712,33 @@ print "fragezeichen/nextcheck\t\t\t-*- mode:org; coding:utf-8 -*-\n\n";
     }
 }
 
-print "* future\n";
-print_org_visibility('children');
-my $today_printed = 0;
-for my $record (@all_records_by_date) {
-    if (!$today_printed && $record->{date} le $today) {
-	print "* until today\n";
-	print_org_visibility('children');
-	$today_printed = 1;
+{
+    my @future_records;
+    my $in_future = 1;
+    for my $record (@all_records_by_date) {
+	if ($in_future) {
+	    if ($record->{date} le $today) {
+		$in_future = 0;
+		print "* until today\n";
+		print_org_visibility('children');
+	    } else {
+		push @future_records, $record;
+		next;
+	    }
+	}
+	# today and past records:
+	print $record->{body};
     }
-    print $record->{body};
+
+    print "* future (ascending)\n";
+    if (@future_records) {
+	print_org_visibility('children');
+	for my $record (reverse @future_records) {
+	    print $record->{body};
+	}
+    } else {
+	print "  <empty>\n";
+    }
 }
 
 if (@expired_searches_weight_records) {
@@ -1056,12 +1073,13 @@ B<fragezeichen2org.pl> creates an emacs org-mode compatible file from
 all "fragezeichen" entries with an last_checked/next_check date found
 in the given bbbike data files.
 
-The records are sorted by date. Records from the same date are
-additionally sorted by distance (if the C<--centerc> option is given).
-A special marker C<<--- TODAY --->> is created between past and future
-entries.
+The records are sorted by date: expired records are sorted descending
+and put into an org-mode section "until today". Records which will
+expire in future are sorted ascending and put into an org-mode section
+"future (ascending)". Records from the same date are additionally
+sorted by distance (if the C<--centerc> option is given).
 
-Expired entries are additionally listed the following two sections:
+Expired entries are additionally listed in the following two sections:
 
 =over
 
