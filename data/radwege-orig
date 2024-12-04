@@ -2150,6 +2150,7 @@ Busspur ist immer gültig	RW5; 10240,11740 10299,11786
 #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr
 Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999
 # 
+#: next_check_id: MUEHLENDAMMBRUECKE-2024
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/35-strassenbruecken-muessen-dringend-saniert-werden-doch-es-fehlt-an-fachkraeften_a331286 (kein Termin)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1219198.php (Baubeginn 2024, Fertigstellung 2028)
 #: by: https://berliner-abendblatt.de/2022/06/22/muehlendammbruecke-konzept-wurde-ueberarbeitet/
@@ -2169,6 +2170,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.berliner-woche.de/mitte/c-bauen/muehlendammbruecke-gesperrt-fuer-fussgaenger_a428707
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1507911.php
 #: by: https://www.berliner-zeitung.de/mensch-metropole/jetzt-gehts-los-warum-der-senat-in-mitte-eine-wichtige-bruecke-abreisst-li.2277858
+#: by: https://www.tagesspiegel.de/berlin/berliner-ost-west-achse-jetzt-wird-die-muhlendammbrucke-neu-gebaut-12817439.html
 #: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029)
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
@@ -2284,7 +2286,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2024-11-23 vvv
+#: last_checked: 2024-12-04 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -9210,4 +9212,6 @@ Radspur hinter parkenden Autos	RW4; 5974,9100 6059,9118
 	RW4; 6059,9118 6142,9134
 # 
 asphaltiert	RW1;RW9 7308,9163 7363,9152
+# 
+	RW3; 15021,11152 14988,11130
 # 

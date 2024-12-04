@@ -95,7 +95,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: also_indoor: traffic (ex-G,ex-W,B,T)
 #: osm_watch: note 3677862 5
 #: note: Möglicherweise Arbeiten an der neuen Gehwegvorstreckung
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-04
 Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 14651,11666
 # 
 #: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?)) (wurde mittlerweile umbenannt)
@@ -110,7 +110,7 @@ Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-04
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -698,9 +698,10 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: last_checked ^^^
 # 
 #: note: Halteverbotsschilder bis 23.12.2024
-#: last_checked: 2024-11-16
+#: also_indoor: traffic (H,B,T)
+#: last_checked: 2024-12-04
 #: next_check: 2024-12-23
-#: valid: -20241223
+# REMOVED --- #: valid: -20241223
 Sangeallee: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Engstelle	q3::inwork 18134,9080 18247,9158
 # 
 # REMOVED (laut mapillary weitgehend beendet) --- #: next_check_id: WALLENSTEIN-2020 --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-11-29 --- #: check_frequency: 10d --- # REMOVED --- #: next_check: 2020-11-16 --- # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
@@ -1016,8 +1017,8 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
-#: XXX mittlerweile gibt es auch eine unbefestigte Verbindung
-#: last_checked: 2024-12-01
+#: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
+#: last_checked: 2024-12-04
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 

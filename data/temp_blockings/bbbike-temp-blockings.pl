@@ -36214,7 +36214,7 @@ EOF
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2024-11-06 vvv
+#: last_checked: 2024-12-04 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-10-04 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -38230,7 +38230,7 @@ EOF
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024)
-#: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024)
+#: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: last_checked: 2024-11-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-12-16 vvv
@@ -39457,7 +39457,7 @@ EOF
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
 #: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
-#: last_checked: 2024-11-28
+#: last_checked: 2024-12-04 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -40339,7 +40339,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
-#: osm_watch: note 4444225 1
+#: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
 #: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
@@ -42694,7 +42694,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten, Ende der Sperrung unbekannt',
+       text  => 'Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten, voraussichtlich bis 2028',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLLANK-2024
@@ -42705,10 +42705,12 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
-#: osm_watch: way id="1244101968" version="3"
+#: osm_watch: way id="1244101968" version="4"
+#: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
+#: XXX laut osm opening_date=2028
 #: last_checked: 2024-11-30 (mapillary)
-#: check_frequency: 90d
+#: check_frequency: 120d
 #: next_check: 2025-06-15
 	2::inwork 9586,17665 9461,17795
 # REMOVED (nur der südliche Abschnitt ist laut osm+mapillary gesperrt) ---	2::inwork 9461,17795 9434,17823 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
@@ -45221,13 +45223,16 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20240925 (26.11.2024 - 26.12.2024, weitere Vollsperrungen z.B. im März 2025)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_einschraenkungen_strassenverkehr_20240924ne.pdf
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wollankstrasse_informationsveranstaltung_20241126.pdf
+#: by: https://weddingweiser.de/wollankstrasse-naechste-bauphase/
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1861029520645538026 (bis 20.12.2024)
 #: by: https://pbs.twimg.com/media/GdOzzK9XEAAuZLU?format=jpg&name=medium (Umleitungsstrecken für Rad- und Fußverkehr)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/PR_berlin_nord_komplexe_arbeiten_informationsveranstaltung_20241127n.pdf (nächste Totalsperrung geplant: 03.03. bis 21.03.2025)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin-nord-komplexe-arbeiten_wollankstrasse_20241128.pdf
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024)
 #: osm_watch: way id="23984383" version="31"
+#: osm_watch: note 4536637 3
 #: last_checked: 2024-10-12 (mapillary)
 #: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665

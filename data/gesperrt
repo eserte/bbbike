@@ -56,7 +56,6 @@ Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 18934,11796 19138,11815 19389,1
 Altstadt Köpenick	1 22451,4749 22439,4838
 Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
-Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 Knoten Märkische/Landsberger Allee	2::inwork 19013,14905 19175,14968
@@ -2416,6 +2415,8 @@ Potsdamer Chaussee -> Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee)
 Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee) [Nebenstr.] -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -3040,1763 -3031,1747 -3011,1761
 Straßenbahntrasse	3nocross::ignrte 22116,5442 22090,5402 22065,5364 22056,5350 21979,5251 21961,5228
 Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22006,5460 22090,5402 22116,5442
+Am Generalshof -> Bhf.str.: Straßenbahntrasse	3::igndisp 22095,5344 22065,5364 22056,5350
+Bhf.str. -> Am Generalshof: Straßenbahntrasse	3::igndisp 22090,5402 22065,5364 22095,5344
 Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22057,5305 22056,5350 21979,5251
 Bhf.str. -> Lindenstr.: Straßenbahntrasse	3::igndisp 22065,5364 22056,5350 22057,5305
 Uferweg -> Bhf.str.: Straßenbahntrasse	3::igndisp 22035,5217 21979,5251 21961,5228
@@ -3545,7 +3546,6 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7418,12601 7377,12729
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
-Am Generalshof: Hochbauarbeiten, Fahrbahn offiziell noch gesperrt	2::inwork 22057,5305 22095,5344
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14258,8520
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
@@ -3587,8 +3587,6 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9441,12670 9435,12698 9429,12728 9402,12792 9386,12833 9375,12911
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,12496 10849,12557
-Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251
-Am Kutscherhaus: Hochbaustelle	2::inwork 21386,5251 21514,5310
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279

@@ -262,14 +262,14 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2024-11-06 vvv
+#: last_checked: 2024-12-04 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-20 vvv
-#: valid: -20241220 vvv
+# REMOVED --- #: valid: -20241220 vvv
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork::alternating 21984,6317
 Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating  22000,6245
 # REMOVED (wurde wieder entfernt) --- #: note: Fußgängerampel befindet sich etwas westlich der Einmündung --- #: last_checked: 2023-03-26 --- #: check_frequency: 120d --- Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
-#: valid ^^^
+# REMOVED --- #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -277,19 +277,19 @@ Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating 
 # 
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7596 (Antrag auf Verstetigung)
-#: last_checked: 2024-10-24
+#: last_checked: 2024-12-04
 #: check_frequency: 120d
 Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2024-10-24
+#: last_checked: 2024-12-04
 #: check_frequency: 120d
 Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2024-07-20
+#: last_checked: 2024-12-04
 #: check_frequency: 120d
 Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2024-07-20
+#: last_checked: 2024-12-04 (assumed)
 #: check_frequency: 120d
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
@@ -310,7 +310,8 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2024-11-23
+#: note: am 2024-12-04 ausgeschaltet oder kaputt gewesen
+#: last_checked: 2024-12-04
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9622
 # 
@@ -3137,6 +3138,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog: auch relevant für Radfahrer auf der Straße Alt-Friedrichsfelde Richtung Westen
 	F 19785,11760
 	X 21324,3691
+#: XXX_prog: nur relevant für Radfahrer Richtung Norden
+	X 21308,3644
 	X -7484,13770
 #: off: Sunday (seen 2015-04-26 12:00)
 	F 17997,8695

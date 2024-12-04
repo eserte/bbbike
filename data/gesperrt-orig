@@ -108,7 +108,13 @@ Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 18934,11796 19138,11815 19389,1
 Altstadt Köpenick	1 22451,4749 22439,4838
 Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
-Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
+#: next_check_id: ALTSTADTKOEPENICK-2024
+#: XXX Einbahnstraßenregelung temporär aufgehoben
+#: last_checked: 2024-12-04
+#: check_frequency: 90d
+#: next_check: 2025-02-01
+# REMOVED --- #: next_check: 2027-03-31
+Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
@@ -1314,7 +1320,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="14"
-#: last_checked: 2024-09-01
+#: last_checked: 2024-12-04
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -4120,7 +4126,7 @@ An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 1092
 #: XXX laut Amtsblatt Verlängerung der Lisa-Fittko-Straße, wird das auch auf der anderen Seite so ausgeschildert?
 #: XXX culdesac-Eintrag an der Döberitzer Str. muss vermutlich geändert werden
 #: osm_watch: way id="237704728" version="4"
-#: last_checked: 2024-08-31 (webcam)
+#: last_checked: 2024-12-04 (webcam)
 #: check_frequency: 120d
 Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nicht	2::inwork 7787,13838 7872,13685
 # 
@@ -4235,7 +4241,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-04
 #: check_frequency: 14d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4243,7 +4249,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-12-01 vvv
+#: last_checked: 2024-12-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt	2::inwork 14994,10732 14984,10677
@@ -4346,12 +4352,7 @@ Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 # REMOVED --- #: check_frequency ^^^
 # REMOVED --- #: last_checked ^^^
 # 
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-generalshof-1-k%C3%B6penick.874/#post-22500
-# REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="770592585" version="5"
-#: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straße und der neuen Anbindung was gemacht; mittlerweile kann man (manchmal?) gut passieren (gesehen 2024-09-01 (Sun) mittags)
-#: last_checked: 2024-11-06
-#: check_frequency: 21d
-Am Generalshof: Hochbauarbeiten, Fahrbahn offiziell noch gesperrt	2::inwork 22057,5305 22095,5344
+# REMOVED (offiziell nun offen) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-generalshof-1-k%C3%B6penick.874/#post-22500 --- # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="770592585" version="5" --- #: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straße und der neuen Anbindung was gemacht; mittlerweile kann man (manchmal?) gut passieren (gesehen 2024-09-01 (Sun) mittags) --- #: last_checked: 2024-12-04 --- #: check_frequency: 21d --- Am Generalshof: Hochbauarbeiten, Fahrbahn offiziell noch gesperrt	2::inwork 22057,5305 22095,5344
 # REMOVED (hier schon passierbar --- Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22095,5344 22140,5392
 # 
 #: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
@@ -4659,7 +4660,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2024-11-23
+#: last_checked: 2024-12-04
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -5013,22 +5014,16 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: check_frequency: 90d vvv
+# REMOVED --- #: check_frequency: 90d vvv
 # REMOVED (laut osm offen) --- #: osm_watch: way id="719023971" version="15" --- #: last_checked: 2024-03-04 (daf) --- Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 # REMOVED --- #: osm_watch: way id="719023970" version="16"
 # REMOVED --- #: osm_watch: node id="11956061128" version="1"
-#: osm_watch: node id="9814568851" version="1"
-#: last_checked: 2024-09-01 vvv
-Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251
-#: note: Bauzäune können weggeschoben sein (gesehen 2024-06-09, 2024-07-20), aber das sieht sehr nach Hochbaustelle aus
-#: osm_watch: way id="719023970" version="17"
-Am Kutscherhaus: Hochbaustelle	2::inwork 21386,5251 21514,5310
-#: last_checked ^^^
+# REMOVED (offen) --- #: osm_watch: node id="9814568851" version="1" --- #: last_checked: 2024-12-04 vvv --- Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251 --- #: note: Bauzäune können weggeschoben sein (gesehen 2024-06-09, 2024-07-20), aber das sieht sehr nach Hochbaustelle aus --- #: osm_watch: way id="719023970" version="17" --- Am Kutscherhaus: Hochbaustelle	2::inwork 21386,5251 21514,5310 --- #: last_checked ^^^
 # REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 #: osm_watch: way id="719023969" version="14"
-#: last_checked: 2024-09-01
+#: last_checked: 2024-12-04
 #: check_frequency: 90d
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (mittlerweile ständig offen?) --- #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So), vermutlich auch am 2023-03-17 (Fr) --- #: osm_watch: way id="944115137" version="10" --- #: last_checked: 2023-03-17 --- Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
@@ -5036,7 +5031,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
 # REMOVED --- #: osm_watch: way id="1126013605" version="5"
 # REMOVED --- #: last_checked: 2023-07-09 --- Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245 21580,5259
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: XXX ^^^
 # REMOVED --- #: XXX Wird der Weg noch hergerichtet oder endgültig zurückgebaut? Laut osm existiert hier ein Rettungsweg, Rasengittersteine --- #: osm_watch: way id="152046369" version="15" --- #: priority: #C --- #: last_checked: 2023-04-16 (daf) --- #: check_frequency: 60d --- (Eiselenweg - Uferweg): gesperrt	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
 # REMOVED (hier mittlerweile offen, siehe mapillary) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21413,5180 21345,5157
