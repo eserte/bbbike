@@ -216,10 +216,12 @@ sub filter_and_split_json {
 	    if ($element->{lines}) {
 		my @new_lines;
 		for my $linetype_def (@{ $element->{lines} }) {
-		    my $linetype = (keys %$linetype_def)[0];
-		    for my $line_def (@{ $linetype_def->{$linetype} }) {
-			my $display_line = ($linetype !~ /^(subway|ferry)$/ ? ucfirst($linetype) . ' ' : '') . $line_def->{name};
-			push @new_lines, $display_line;
+		    for my $linetype (sort keys %$linetype_def) {
+			my $line_defs = $linetype_def->{$linetype};
+			for my $line_def (@$line_defs) {
+			    my $display_line = ($linetype !~ /^(subway|ferry)$/ ? ucfirst($linetype) . ' ' : '') . $line_def->{name};
+			    push @new_lines, $display_line;
+			}
 		    }
 		}
 		$element->{lines} = \@new_lines;
