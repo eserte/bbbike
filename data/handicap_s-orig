@@ -41,7 +41,7 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="10"
 #: osm_watch: way id="1072662717" version="12"
-#: last_checked: 2024-11-28
+#: last_checked: 2024-12-05
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -272,7 +272,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2024-12-05
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -327,10 +327,10 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-weddingplatz-939027.php
 #: by: https://www.muellerstrasse-aktiv.de/projekte/weddingplatz/
 #: XXX Weddingplatz: Umgestaltung
-#: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein
+#: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein -> der nördliche Bereich ist es laut osm bereits -> komplett eingetragen
 #: historical_note: am Anfang Einbahnstraße, offen Richtung Norden (1s:q3:inwork), später komplett zu (q4::inwork in handicap_s-orig), dann wieder (laut osm) Einbahnstraße (1s:q3:inwork), seit September 2024 teilweise zu (südlicher Abschnitt)
-#: osm_watch: way id="4596985" version="32"
-#: osm_watch: way id="1161733739" version="20"
+#: osm_watch: way id="4596985" version="33"
+#: osm_watch: way id="1161733739" version="21"
 #: last_checked: 2024-11-27 (daf)
 #: check_frequency: 30d
 #: next_check: 2024-12-31
@@ -1945,7 +1945,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-12-03
+#: last_checked: 2024-12-05
 # REMOVED --- #: check_frequency: 14d
 #: check_frequency: 30d
 #: next_check_id: 2024-12-15

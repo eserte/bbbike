@@ -33301,14 +33301,14 @@ EOF
 EOF
      },
      { from  => 1613862000, # 2021-02-21 00:00
-       until => $isodate2epoch->("2024-12-31 17:00:00"), # 1614034800, # 2021-02-23 00:00
-       #text  => 'Woltersdorf, Brücke über den Stolpkanal: Sperrung am 22.02.2021, evtl. sind auch Radfahrer und Fußgänger betroffen ',
+       until => 1733423695, # $isodate2epoch->("2024-12-31 17:00:00"), # 1614034800, # 2021-02-23 00:00
+#      text  => 'Woltersdorf, Brücke über den Stolpkanal: Sperrung am 22.02.2021, evtl. sind auch Radfahrer und Fußgänger betroffen ',
        text  => 'Woltersdorf, Brücke über den Stolpkanal: Sperrung bis Ende 2024, evtl. sind auch Radfahrer und Fußgänger betroffen ',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLTERSDORFSTOLPKANAL-2022
 #: source_id: LS/721-F/21/021 (inaktiv)
-#: source_id: LS/721-F/21/220 (bis 31.12.2024)
+#: source_id: LS/721-F/21/220 (bis 31.12.2024) (vorfristig inaktiv)
 	2::inwork 35479,7051 35482,7099
 EOF
      },
@@ -33519,7 +33519,7 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: osm_watch: note 3914565 14
+#: osm_watch: note 3914565 15
 #: last_checked: 2024-11-14 (indoor research)
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-09-22
@@ -36240,9 +36240,9 @@ EOF
 EOF
      },
      { from  => 1713897172, # 1652122429, # 2022-05-09 20:53
-       until => $isodate2epoch->("2024-12-06 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
+       until => $isodate2epoch->("2024-12-31 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023',
-       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 06.12.2024',
+       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 31.12.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -36267,7 +36267,7 @@ EOF
 #: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
-#: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024)
+#: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024) (bis 31.12.2024)
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
@@ -44654,7 +44654,7 @@ EOF
 #: also_indoor: traffic (H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-#: last_checked: 2024-12-03
+#: last_checked: 2024-12-05
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-31
 	q4::inwork; 14103,10489 14170,10675
@@ -45266,15 +45266,16 @@ EOF
      },
      { from  => 1727367350, # 2024-09-26 18:15
        until => undef, # 1732921200, # 2024-11-30 00:00
-#      text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, voraussichtlich bis 29.11.2024',
-       text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, voraussichtlich bis Ende Januar 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: last_checked: 2024-11-28
-#: check_frequency: 10d
-# REMOVED --- #: next_check: 2024-11-29
+#: note: Halteverbotsschilder mittlerweile bis zum 31.01.2025
+#: last_checked: 2024-12-05
+#: check_frequency: 30d
+#: next_check: 2025-01-31
 	q4::inwork 13136,10535 13178,10623
 EOF
      },
@@ -45905,6 +45906,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1508313.php
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (voraussichtliche Bauzeit: 2024 bis 2025 für diese und weitere Brücken: Spektegrabensteg und Südparkbrücke)
+#: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/spektebruecke-gesperrt_a431036
 #: osm_watch: note 4537179 1
 #: osm_watch: way id="14438318" version="7"
 #: last_checked: 2024-11-29 (Pressemitteilung)

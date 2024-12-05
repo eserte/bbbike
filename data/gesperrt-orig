@@ -209,7 +209,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2024-12-03
+#: last_checked: 2024-12-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -4085,7 +4085,8 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.)
-#: last_checked: 2024-11-20 vvv
+#: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags
+#: last_checked: 2024-12-05 vvv
 #: osm_watch: way id="1199463691" version="3"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050
@@ -4358,8 +4359,8 @@ Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
 #: XXX früher gab es einen temp_blockings-Eintrag; evtl. wird es hier in Zukunft eine Durchfahrtmöglichkeit geben
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen
-#: last_checked: 2024-10-12 (mapillary)
+#: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten
+#: last_checked: 2024-12-05
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 60d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14258,8520
@@ -4404,6 +4405,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wexstra%C3%9Fe-27-bruchsaler-stra%C3%9Fe.1254/#post-19647
 #: by: https://www.deutsches-architekturforum.de/thread/14770-wilmersdorf-halensee-grunewald-schmargendorf-kleinere-projekte/?postID=757826#post757826
 #: source_id: viz2021:13.33184,52.48035,31.07.2023,06:00 (Komplettsperrung bis 04.08.2023) (inaktiv)
+#: source_id: viz2021:13.331534,52.478683,06.11.2024,07:00 (Bruchsaler Str. ist seit Dez 2024 Sackgasse, auch für Radfahrer? bis 31.12.2025)
 #: note: nur kurzer Einbahnstraßenabschnitt, etwa 20-30m; mittlerweile (Nov 2024) ist die Einbahnstraßenrichtung anders herum, evtl. wegen der Bauarbeiten in der Wexstr.?
 #: last_checked: 2024-11-27
 #: check_frequency: 120d
@@ -4863,7 +4865,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-12-03
+#: last_checked: 2024-12-05
 #: check_frequency: 90d
 #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4874,7 +4876,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://dielinke.berlin/start/det/nachfrage-zur-beantwortung-der-schriftlichen-anfrage-scha-ix-0495-bauprojekt-fanny-zobel-strasse/ (weiterhin: Gesamtmaßnahme bis 2027)
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2024-11-20 vvv
+#: last_checked: 2024-12-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5484,31 +5486,6 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: osm_watch: way id="1202953901" version="2" brb
 #: osm_watch: way id="1202953902" version="2" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
-# 
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html
-#: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5878
-#: XXX Sanierung bis Ende 2020
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/artikel.563115.php
-#: by: http://www.berliner-woche.de/moabit/bauen/neue-uferwand-am-wikingerufer-baustelle-wird-gesichert-d133203.html
-#: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: III/2018 bis I/2021)
-#: by: http://www.berliner-woche.de/moabit/bauen/mit-schwerem-geraet-d149617.html
-#: by: https://www.berliner-woche.de/moabit/c-bauen/neue-uferwand-fuer-das-wikingerufer_a218326 (Ende 2021 Eröffnung der Uferpromenade)
-#: by: https://www.deutsches-architekturforum.de/thread/11563-kleinere-projekte-moabit/?postID=642359#post642359
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
-#: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
-#: XXX Anschluss an der Gotzkowskybrücke ist noch nicht fertig
-#: osm_watch: way id="501191631" version="7"
-#: osm_watch: way id="1085168609" version="2"
-#: osm_watch: way id="1297686366" version="5"
-#: osm_watch: note 4173331 7
-#: priority: #C
-#: last_checked: 2024-11-29 (osm)
-# REMOVED --- #: check_frequency: 90d
-# REMOVED --- #: check_frequency: 45d
-# REMOVED --- #: next_check: 2021-09-01
-# REMOVED (vorher): wegen Beschädigungen an der Ufermauer gesperrt
-Wikingerufer: neuer Uferweg ist noch nicht freigegeben	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
 # REMOVED (offen) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5909 ("noch über das Jahr 2018 hinziehen werden") --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/muehlenbruecke-im-sommer-wieder-nutzbar_a197932 (im Sommer 2019 wieder offen) --- #: by: http://www.abendblatt-berlin.de/2019/01/25/bruecke-an-tegeler-muehle-bald-wieder-offen/ --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/humboldtbruecke-wird-saniert_a216268 (bis zum Sommer (2019) wieder passierbar) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-weiter-gesperrt_a219670 (Verzögerungen; Öffnung erst 2020?) --- #: by: https://www.morgenpost.de/bezirke/reinickendorf/article226296951/Bruecke-an-der-Muehle-in-Tegel-bleibt-gesperrt.html (Öffnung Frühjahr 2020?) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7692 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7684 --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-bleibt-weiter-gesperrt_a251584 (Sperrung mindestens bis Sommer 2020) --- #: by: https://leute.tagesspiegel.de/reinickendorf/macher/2020/07/15/131974/die-gesperrte-bruecke-zur-humboldt-insel/ (Neubau bis Dezember 2020) --- #: by: https://abendblatt-berlin.de/2020/12/08/berlin-tegel-baustart-fuer-fussgaengerbruecke-an-der-muehle/ (Baubeginn Ende November 2020, Fertigstellung "hoffentlich" im Frühjahr 2021) --- #: by: https://www.berliner-woche.de/tegel/c-bauen/endlich-bauarbeiten_a295949 (voraussichtlich bis Frühjahr 2021) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaenger-koennen-die-muehlenbruecke-wieder-passieren_a332261 --- # REMOVED (Alexandersteg, nicht gesperrt) --- #: osm_watch: way id="27178371" version="11" --- #: osm_watch: way id="23099023" version="13" --- #: osm_watch: way id="23099024" version="8" --- #: osm_watch: way id="103531998" version="9" --- #: last_checked: 2021-11-13 (osm) --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2021-03-15 --- # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 --- Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 # REMOVED --- #: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel? --- die Helga-Hahnemann-Str. wird es in Zukunft wohl nicht mehr geben --- #: historical_note: alter Berlin.coords.data-Eintrag: Helga-Hahnemann-Str.|Mitte|10117|9415,13315 --- # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7" --- #: osm_watch: way id="940764584" version="4" --- Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
