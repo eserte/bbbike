@@ -1776,7 +1776,7 @@ sub add_done_file {
     require Data::Dumper;
     open my $ofh, ">", "$digest_file~"
 	or die "Can't write to $digest_file~: $!";
-    print $ofh Data::Dumper->new([$digest_done],[qw(digest_done)])->Indent(1)->Useqq(1)->Dump;
+    print $ofh Data::Dumper->new([$digest_done],[qw(digest_done)])->Sortkeys(1)->Indent(1)->Useqq(1)->Dump;
     close $ofh
 	or die $!;
     rename "$digest_file~", $digest_file
