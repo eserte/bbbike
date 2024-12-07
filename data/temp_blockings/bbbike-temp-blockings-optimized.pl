@@ -8647,10 +8647,12 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1508313.php
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (voraussichtliche Bauzeit: 2024 bis 2025 für diese und weitere Brücken: Spektegrabensteg und Südparkbrücke)
 #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/spektebruecke-gesperrt_a431036
+#: by: https://www.tagesspiegel.de/berlin/verkehrsbaustellen-in-spandau-von-morschen-holzbrucken-und-wilden-u-bahntraumen-12824615.html (neun Monate Bauzeit, voraussichtlich bis Ende 2025)
 #: osm_watch: note 4537179 1
 #: osm_watch: way id="14438318" version="7"
 #: last_checked: 2024-11-29 (Pressemitteilung)
 #: check_frequency: 180d
+#: next_check: 2025-12-31
 	2::inwork -7182,15524 -7228,15504
 ',
          'from' => 1733007600,

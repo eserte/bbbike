@@ -2560,12 +2560,14 @@ Klockow - Kleptow: überwiegend gute Schotterstraße	Q1- 49487,110056 49545,109679
 Klockow - Kleptow: Asphalt/Verbundsteinpflaster	Q0- 49363,108104 49375,107992
 Alte Potsdamer Landstr.: Feldweg	Q2 -3288,-1669 -3411,-1712 -3684,-1820 -3846,-1821 -3968,-1823
 Alte Potsdamer Landstr.: Asphalt	Q0 -3968,-1823 -4075,-1837
-Alte Potsdamer Landstr.: teilweise grobes Kopfsteinpflaster, teilweise Sandweg	Q2 -4075,-1837 -5556,-1909 -5984,-2062
+Alte Potsdamer Landstr.: teilweise grobes Kopfsteinpflaster, teilweise Sandweg	Q2 -4075,-1837 -5556,-1909 -5987,-2065
 Bahnhofstr.: Asphalt	Q0 -4075,-1837 -4032,-1937
 Bahnhofstr.: Kopfsteinpflaster	Q2 -4032,-1937 -3917,-2146 -3895,-2189 -3650,-2609
 An der Parforceheide: gutes Verbundsteinpflaster	Q0 -7426,-2478 -7423,-2446 -7516,-2279 -7615,-2246 -7651,-2262 -7697,-2430
 Postenweg Parforceheide: Asphalt mit groben Fugen	Q1 -7615,-2246 -7798,-1990 -7800,-1956
 Postenweg Parforceheide: feiner Schotter	Q2 -7800,-1956 -7821,-1890
+(Kienwerder/Güterfelde - Parforceheide): Waldweg, mögliche matschige oder sandige Stellen	Q2 -4963,-3121 -5114,-3039 -5462,-2762 -5470,-2650 -5506,-2614 -5787,-2514
+(Kienwerder/Güterfelde - Parforceheide): schlechtes Kopfsteinpflaster	Q3+ -5787,-2514 -5799,-2337 -5987,-2065
 #: by: Christoph Kasprowiak: vvv
 #: corrected_by: srt (Q0 -> Q0-)
 Mauerweg: Asphalt	Q0- 3232,803 3045,707
@@ -7439,9 +7441,16 @@ Wildenbruch - Langerwisch: Kopfsteinpflaster	Q2 -12373,-12221 -12373,-12118 -123
 Wildenbruch - Langerwisch: Asphalt mit Löchern	Q0 -12369,-11903 -12305,-10732
 Bad Wilsnack: asphaltiert (vom Zug aus gesehen)	Q0 -89525,59573 -89148,60129
 # 
+(Kohlhasenbrücker Str.): Waldweg	Q2+ -6879,-1504 -6860,-1951 -6827,-2791
+# 
 #: by: Corinna Meyer:
-#: note: laut "mobil-potsdam.de" Waldweg:
-Buga-Weg durch die Parforceheide: teils sehr sandig, aber inzwischen gut befahrbar	Q2 -7821,-1890 -6861,-1956 -6153,-1903 -5984,-2062
+#: note: laut "mobil-potsdam.de" Waldweg
+#: corrected_by: srt (teils sehr sandig, aber inzwischen gut befahrbar, Q2 -> ...) vvv
+Buga-Weg durch die Parforceheide: Waldweg, einige Wurzeln und auf kurzen Abschnitten etwas sandig	Q2 -7821,-1890 -7689,-1889 -7497,-1868 -7057,-1946 -6860,-1951 -6190,-1920
+Buga-Weg durch die Parforceheide: schlechtes Kopfsteinpflaster	Q3+ -6190,-1920 -6092,-1928 -6027,-2010
+Buga-Weg durch die Parforceheide: Asphalt	Q1+ -6027,-2010 -5995,-2054
+Buga-Weg durch die Parforceheide: schlechtes Kopfsteinpflaster	Q3+ -5995,-2054 -5987,-2065
+#: corrected_by ^^^
 # 
 #: by: rennradgruppe vvv
 Gabow - Neuranft: Asphalt	Q0 55324,46596 55756,46298 57210,45669 57800,45549 58714,45072 59375,45180
