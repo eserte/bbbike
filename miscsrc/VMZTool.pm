@@ -15,7 +15,7 @@ package VMZTool;
 
 use v5.10.0; # named captures, defined-or
 use strict;
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -691,6 +691,7 @@ sub parse_vmz_2021 {
 	my $out_record =
 	    { place    => $place,
 	      id       => $id,
+	      (defined $properties->{id} ? (orig_id => $properties->{id}) : ()),
 	      points   => [ {lon => $lon, lat => $lat} ],
 	      type     => $type,
 	      text     => $text,
