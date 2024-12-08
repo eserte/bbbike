@@ -17,7 +17,7 @@
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2024-11-30 vvv
+#: last_checked: 2024-12-08 vvv
 #: next_check: 2027-09-30 vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
@@ -94,12 +94,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 # REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 # REMOVED (fertig) --- #: next_check_id: NIEMANN-2023 --- #: by: https://nitter.cz/VIZ_Berlin/status/1673932919125995523#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnpzQkhnQVhzQUFlekE3LmpwZw== --- #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder) --- #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen --- #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023) --- #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv --- #: last_checked: 2023-11-24 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-12-29 vvv --- #: valid: -20231229 vvv --- Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377 --- Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229 --- Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14286,11186 14328,11320 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
-# 
-#: also_indoor: traffic (ex-G,ex-W,B,T)
-#: osm_watch: note 3677862 5
-#: note: Möglicherweise Arbeiten an der neuen Gehwegvorstreckung
-#: last_checked: 2024-12-04
-Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 14651,11666
+# REMOVED --- #: also_indoor: traffic (ex-G,ex-W,B,T) --- #: osm_watch: note 3677862 5 --- #: note: Möglicherweise Arbeiten an der neuen Gehwegvorstreckung --- #: last_checked: 2024-12-08 --- Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 14651,11666
 # 
 #: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?)) (wurde mittlerweile umbenannt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11263 (Antrag: nach Ende des Bauvorhabens zu einem Rad/Fußweg umbauen)
@@ -1084,7 +1079,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3::inwork 15261,10738 15245,10719
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="13"
-#: last_checked: 2024-10-22 (osm)
+#: last_checked: 2024-12-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-12-21
 Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,14935 17638,14945
@@ -1167,7 +1162,7 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/richtfeste-fuer-290-wohnungen_a417760
 #: also_indoor: traffic (G,H,B)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2024-11-30 (bahninfo-forum) vvv
+#: last_checked: 2024-12-08 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-12-31 vvv
 #: valid: -20241231 vvv
@@ -2574,7 +2569,7 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): eng und kurvig	q3 17319,14159 17230,14206
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
 (Georg-Knorr-Str. - Landsberger Allee): Rampe	q3 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979
-(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19157,14979 19171,14938 19173,14931 19175,14926
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19157,14979 19171,14938 19173,14931 19176,14921
 # REMOVED --- (Rudolfplatz, Park): Fußgänger, Bordsteine, Radfahren verboten, ggfs. schieben	q3 14026,10869 13896,10851
 (Hoeppnerstr. - Hessenring): eng, Fußgänger	q3 8376,7440 8446,7524 8549,7622
 (Kolonie Zähringer Korso): eng	q3 8553,7795 8554,7746 8573,7710 8549,7622
@@ -5061,6 +5056,7 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12224 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12363 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12615 (Anfrage)
+#: by: https://www.berliner-woche.de/mitte/c-umwelt/erste-gruene-gullys-in-der-singerstrasse-angelegt-50-weitere-sollen-folgen_a431305
 # REMOVED (Bauarbeiten beendet) --- #: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn --- #: XXX Bauarbeiten an den Fahrbahnrändern; Absperrungen können früh zum Schulbeginn an beiden Enden der Fußgängerzone aufgestellt sein (einmalig am 2024-09-24 oder regelmäßig?) --- #: last_checked: 2024-11-28 --- #: check_frequency: 30d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1+ 11635,12398 11845,12292
 # 

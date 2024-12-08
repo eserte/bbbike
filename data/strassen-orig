@@ -2406,7 +2406,8 @@ Münsterlandstr.	N 16160,11154 16273,11113 16381,11080 16492,11042 16575,11013 16
 Münsterlandplatz	N 16719,11021 16590,11059
 Wönnichstr.	N 16597,10651 16702,10972 16719,11021 16785,11212 16856,11438 16887,11545 16915,11634 16977,11769
 Landsberger Allee	HH 12382,13097 12585,13118 12711,13150 12786,13185 12878,13229 12979,13280 13073,13329 13151,13367 13241,13415 13330,13468 13543,13568 13635,13605 13702,13634 13854,13701 13906,13722 14006,13761 14218,13834 14291,13862 14343,13882 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15588,14279 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823 19013,14905 19156,14953 19200,14963 19214,14966 19350,14997 19408,15007 19614,15061 19744,15128 19852,15201 19987,15280 20135,15364 20260,15434 20532,15564 20580,15586 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808 21951,15918 22109,15990 22131,16000 22495,16165 22631,16215 22696,16208 22739,16203 22760,16197 22771,16194
-Landsberger Allee	HH 19852,15201 19694,15141 19565,15106 19502,15089 19364,15045 19205,14980 19196,14976 19175,14968 19013,14905
+Landsberger Allee	HH 19852,15201 19694,15141 19565,15106 19512,15092 19364,15045 19309,15023 19254,15000 19205,14980 19196,14976 19175,14968 19013,14905
+Landsberger Allee	HH 19200,14963 19254,15000
 Landsberger Allee [Wohngebiet]	N 20776,15851 20770,15832 20803,15812 20789,15736
 Landsberger Allee [Wohngebiet]	N 22092,16029 22112,16137
 Landsberger Allee [zur Nebenfahrbahn]	N 22109,15990 22092,16029
@@ -2416,13 +2417,14 @@ Landsberger Allee [Nebenfahrbahn]	N 16669,14438 16845,14461
 (Marzahner Promenade - Landsberger Allee [Wohngebiet])	NN 20731,15742 20759,15740 20789,15736
 (Georg-Knorr-Str. - Landsberger Allee)	N 19169,15015 19150,15009 19133,15004
 (Georg-Knorr-Str. - Landsberger Allee)	NN 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979 19163,14981 19171,14984 19175,14968
-(Georg-Knorr-Str. - Frank-Schweitzer-Str.)	NN 19157,14979 19171,14938 19173,14931 19175,14926 19180,14915 19255,14911
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.)	NN 19157,14979 19171,14938 19173,14931 19176,14921 19180,14915 19211,14914 19207,14895
 #: next_check_id: KNOTENMARZAHN-2022
 #: last_checked: 2024-10-19
 #: check_frequency: 120d
 #: next_check: 2026-12-31
 (Knoten Marzahn, Fußgängerüberweg)	NN 19196,14976 19200,14963
 (Landsberger Allee - Frank-Schweitzer-Str.)	NN 19156,14953 19160,14935 19171,14938
+(Frank-Schweitzer-Str. - Landsberger Allee)	N 19256,14906 19254,14925 19319,14970 19318,14984 19309,15023
 Kniprodestr.	H 12640,13814 12701,13873 12766,13942 12856,14042 12901,14093 12972,14173 12992,14196 13026,14234 13057,14267 13107,14318 13183,14400 13240,14460 13294,14515 13364,14591 13398,14628 13439,14673 13636,14900 13647,14912 13744,15018 13823,15111
 Anton-Saefkow-Str.	N 12528,14845 12575,14812 12700,14726 12780,14675 12862,14618 12901,14594 13013,14523 13088,14469 13183,14400
 Pappelallee (Prenzlauer Berg)	NH 10881,15047 10900,15075 10916,15098 10930,15119 10941,15135 11065,15318 11090,15355 11112,15387 11131,15417 11156,15457 11176,15489 11290,15669 11316,15711 11328,15730 11344,15755 11353,15770 11367,15793 11387,15827
@@ -6697,10 +6699,10 @@ Georg-Knorr-Str.	N 19414,15132 19191,15043 19169,15015
 # REMOVED --- #: by: https://www.berliner-woche.de/marzahn/c-bauen/zeitplan-fuer-geplanten-ersatzneubau-am-s-bahnhof-marzahn-unklar_a333896 (im Dez 2021 abgerissen) --- (Fußgängerbrücke am S-Bhf. Marzahn)	NN 19573,15401 19567,15406 19574,15423 19612,15403 19626,15396 19636,15417 19681,15405
 (Fußgängerbrücke S-Bhf. Marzahn - Eastgate)	NN 19653,15544 19671,15561 19657,15527 19672,15519 19687,15513 19767,15473
 (Fußgängerbrücke - Märkische Allee)	NN 19687,15513 19694,15529 19733,15511
-Frank-Schweitzer-Str.	N 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911 19347,14936 19400,15027 19424,15068 19414,15132
-(Landsberger Allee - Frank-Schweitzer-Str.)	N 19200,14963 19244,14980 19400,15027
+Frank-Schweitzer-Str.	N 19318,14984 19176,14921 19111,14894 19117,14875 19207,14895 19256,14906 19339,14930 19400,15027 19424,15068 19414,15132
+(Landsberger Allee - Frank-Schweitzer-Str.)	N 19330,15006 19400,15027
 # REMOVED (zurzeit geht die Verkehrsführung via südliche Fahrbahn) --- (Frank-Schweitzer-Str. - Landsberger Allee)	N 19244,14980 19205,14980
-Dahmeweg	N 19347,14936 19241,14561
+Dahmeweg	N 19339,14930 19304,14820 19241,14561
 Dahmeweg	NN 19241,14561 19235,14511
 Dahmeweg	NN 19235,14511 19290,14503 19395,14477
 Elisabethstr. (Biesdorf, Marzahn)	H 20755,14479 20790,14451 20921,14461 21046,14469 21118,14477 21329,14488 21378,14490
@@ -10407,7 +10409,7 @@ Märkische Spitze	N 19994,12484 19907,12501 19917,12602 19894,12695 19849,12778 1
 Märkische Allee - Alt-Friedrichsfelde	HH 19924,11890 19890,11830 19849,11779 19785,11760 19726,11743
 Alt-Friedrichsfelde - Märkische Allee	HH 19985,11727 20018,11698 20026,11663
 Alt-Biesdorf - Märkische Allee	HH 20114,11719 20025,11747 19979,11774 19924,11890
-Märkische Allee - Landsberger Allee	HH 19604,15227 19502,15089
+Märkische Allee - Landsberger Allee	HH 19644,15320 19512,15092
 Landsberger Allee - Märkische Allee	HH 19408,15007 19464,14971 19452,14807
 Landsberger Allee - Märkische Allee	HH 19614,15061 19643,15025 19615,14960 19551,14961 19516,14993
 Landsberger Allee - Märkische Allee	HH 19694,15141 19707,15206 19654,15219 19577,15166
@@ -10415,7 +10417,7 @@ Märkische Allee - Wuhletalstr.	H 20717,17516 20853,17528 20891,17572
 #: next_check_id: WUHLETALBRUECKE-2019
 #: XXX Wann wird die provisorische Überfahrt wieder entfernt?
 #: osm_watch: way id="706450234" version="9"
-#: last_checked: 2024-10-08 (mapillary)
+#: last_checked: 2024-11-30 (luftbildsuche)
 #: check_frequency: 720d
 #: next_check: 2025-06-30
 #: valid: 20190603-20250630
@@ -12654,7 +12656,8 @@ Seefelder Str.	N 17183,16181 17184,16149
 (Seefelder Str., Fußweg)	NN 17325,16189 17362,16189 17383,16197
 Altenhofer Str.	N 15272,14691 15331,14606 15390,14572 15539,14493 15706,14410
 Altenhofer Str.	N 15698,14386 15706,14410 15812,14527 15809,14596 15841,14641
-Altenhofer Str.	N 15698,14386 15528,14470 15378,14546 15390,14572
+#: osm.highway: service
+Altenhofer Str. [Parkplatz]	N 15698,14386 15528,14470 15378,14546 15390,14572
 Mittelstr. (Alt-Hohenschönhausen)	N 15539,14493 15647,14693 15706,14752 15856,14915
 Berkenbrücker Steig	N 15647,14693 15544,14714 15383,14759
 Sandinostr.	N 15580,14880 15706,14752 15799,14674 15841,14641 15899,14598
@@ -13853,7 +13856,8 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: XXX Gehweg wird vermutlich verlegt
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9438 (Antrag)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9438 (Antrag, wurde zurückgezogen, siehe nächster Antrag)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9546 (Antrag)
 #: historical_note: früher als "(Eisnerstr. - S-Bhf Buckower Chaussee)" bezeichnet
 #: last_checked: 2024-09-21 (youtube)
 #: check_frequency: 180d
@@ -15229,6 +15233,7 @@ Bennigsenstr.	N 5813,7774 5957,7773 6195,7775 6209,7765
 Traegerstr.	N 6209,7765 6271,7733 6332,7721 6410,7722 6471,7742
 Lauterstr.	N 5817,7223 5810,7337 5811,7433 5812,7536 5812,7662 5812,7685 5812,7721 5813,7774 5813,7807
 (Vulkanstr./Landsberger Allee - Altenhofer Str.)	NN 15850,14308 15796,14310 15791,14320 15699,14350 15675,14360
+#: osm.highway: service
 (Parkplatz an der Altenhofer Str.)	N 15675,14360 15516,14445 15367,14519 15324,14540
 (Mittelstr./Altenhofer Str. - Landsberger Allee)	N 15539,14493 15528,14470 15516,14445 15500,14416 15468,14430 15425,14360 15430,14272 15430,14262
 (Altenhofer Str. - Landsberger Allee)	N 15698,14386 15769,14355 15841,14351 15920,14357
@@ -18043,6 +18048,7 @@ Rhönstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan/vorhabenbezogener-bebauungsplan.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6841 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6844 (Vorlage zur Kenntnisnahme)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7007 (Vorlage zur Kenntnisnahme)
 #: osm_watch: way id="59573616" version="4"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraße entstehen (vermutlich müssen alle abhängigen Einträge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
 #: last_checked: 2024-11-18 (mapillary)
@@ -18562,6 +18568,7 @@ Herrfurthstr. (Steglitz)	N 4558,5863 4724,5782
 #: by: https://www.tagesspiegel.de/berlin/bezirke/entscheidung-im-berliner-sudwesten-die-steglitzer-treitschkestrasse-wird-in-betty-katz-strasse-umbenannt-12783278.html
 #: by: https://www.berliner-zeitung.de/news/steglitz-zehlendorf-treitschkestrasse-koenne-zu-betty-katz-strasse-umbenannt-werden-li.2276548
 #: by: https://gruene-suedwest.de/2024/11/28/die-treitschkestrasse-verdient-einen-anderen-namen/
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9316 (Antrag)
 #: XXX Umbenennung in Betty-Katz-Straße im Ausschuss beschlossen vvv
 #: last_checked: 2024-11-28 (tsp) vvv
 #: check_frequency 120d vvv

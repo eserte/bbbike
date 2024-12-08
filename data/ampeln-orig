@@ -183,31 +183,34 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2024-12-02
+#: last_checked: 2024-12-08
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-12-02
+#: last_checked: 2024-12-08
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Gürtelstr.	F::inwork 15153,11691
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 # REMOVED (ja) --- #: XXX gibt es die Ampeln wieder?
-#: last_checked: 2024-10-19 vvv
+#: last_checked: 2024-12-08 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv
 #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
-#: note: manchmal kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30)
+#: note: manchmal kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30, 2024-12-08 So gegen 14:15)
 #: note: Anforderungsampel
 	F::inwork 18831,14823
 #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
 #: note: Anforderungsampel
 	F::inwork 19196,14976
+#: osm_watch: node id="12382185864" version="2"
+#: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
+	X::inwork 19309,15023
 # REMOVED --- #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -370,7 +373,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2024-10-08 (mapillary) vvv
+#: last_checked: 2024-11-30 (luftbildsuche) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-06-30 vvv
 #: valid: 20190603-20250630 vvv

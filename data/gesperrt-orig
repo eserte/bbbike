@@ -119,22 +119,33 @@ Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2024-10-19 vvv
+#: last_checked: 2024-12-08 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19013,14905 19175,14968
 Knoten Märkische/Landsberger Allee	1no 19175,14968 19196,14976
 Knoten Märkische/Landsberger Allee	1no 19200,14963 19156,14953 19013,14905
+#: osm_watch: way id="4696052" version="29"
+Knoten Märkische/Landsberger Allee	1no 19254,15000 19309,15023 19364,15045 19512,15092 19565,15106 19694,15141 19852,15201
+Knoten Märkische/Landsberger Allee	1 19254,15000 19200,14963
+Knoten Märkische/Landsberger Allee	2::inwork 19408,15007 19350,14997 19214,14966 19200,14963
+#: osm_watch: way id="30884033" version="22"
+Knoten Märkische/Landsberger Allee	2::inwork 19452,14807 19464,14971 19408,15007
+#: osm_watch: way id="4696050" version="22"
+Knoten Märkische/Landsberger Allee	2::inwork 19852,15201 19744,15128 19614,15061 19408,15007
+#: osm_watch: way id="30884034" version="23"
+Knoten Märkische/Landsberger Allee	2::inwork 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
+Knoten Märkische/Landsberger Allee: nur Rechtsabbiegen erlaubt	3 19644,15320 19512,15092 19565,15106
+#: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
+Knoten Märkische/Landsberger Allee	1no 19512,15092 19644,15320
+#: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
+Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
+Frank-Schweitzer-Str.	1no 19318,14984 19176,14921 19111,14894 19117,14875 19207,14895 19256,14906
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-Knoten Märkische/Landsberger Allee	1 19196,14976 19205,14980 19364,15045 19502,15089 19565,15106 19694,15141 19852,15201
-Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19214,14966 19200,14963
-Knoten Märkische/Landsberger Allee	1 19452,14807 19464,14971 19408,15007
-Knoten Märkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
-Knoten Märkische/Landsberger Allee	1 19502,15089 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13712,20919 13909,20928
 Alt-Blankenburg	1 13909,20928 13677,20873 13576,20849
 Seestr.	1 5043,14671 5255,14757 5311,14786 5437,14844
@@ -816,7 +827,6 @@ Blumenstr.	1 12125,12490 12306,12459 12305,12440
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
 #: by: anonymous and public imagery
 Westhafenstr.: Tor kann geschlossen sein; Unbefugten ist das Betreten nicht gestattet	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
-Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.)	1 15413,11690 15489,11735 15639,11653
 # REMOVED (zurzeit keine Einbahnstraße) --- #: XXX laut osm ist hier keine Einbahnstraße --- Hufelandweg	1s:q3 8632,13155 8618,13306 8582,13355
 Sauerbruchweg	1s:q3 8490,13354 8632,13155
@@ -2361,7 +2371,8 @@ Bundesallee	3nocross::ignrte 5463,9961 5461,9923 5467,9866
 Bundesallee	1::igndisp 5467,9866 5461,9923 5463,9961
 Bundesallee	1::igndisp 5463,9961 5464,9934 5467,9866
 #: note ^^^
-Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19644,15320 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
+# REMOVED (aus technischen Gründen entfernt) --- Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19644,15320
+Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19644,15320 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 #: note: Tunnel, nicht überquerbar (am Rudeloffweg theoretisch über Mittelstreifen passierbar, aber die Tunnelrampe ist hier noch nah) vvv
 Unter den Eichen: Straßentunnelrampe	3nocross 2723,4093 2815,4162 2941,4245 3048,4305
@@ -3998,9 +4009,31 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: XXX an dieser Stelle wird es alternativ eine Rampe geben
 #: osm_watch: note 4298701 1
 #: osm_watch: way id="1297589176" version="1"
-#: last_checked: 2024-10-19
+#: last_checked: 2024-12-08
+#: check_frequency: 180d
 #: next_check: 2026-12-31
 (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19156,14953 19160,14935 19171,14938
+# 
+#: next_check_id: KNOTENMARZAHN-2022
+#: osm_watch: way id="4696062" version="28"
+#: last_checked: 2024-12-08
+#: check_frequency: 180d
+#: next_check: 2026-12-31
+(Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
+# 
+#: next_check_id: KNOTENMARZAHN-2022
+#: osm_watch: way id="26244466" version="24"
+#: last_checked: 2024-12-08
+#: check_frequency: 180d
+#: next_check: 2026-12-31
+Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
+# 
+#: next_check_id: KNOTENMARZAHN-2022
+#: osm_watch: note 4547152 1
+#: last_checked: 2024-12-08
+#: check_frequency: 180d
+#: next_check: 2026-12-31
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung gesperrt	2::inwork 19157,14979 19171,14938 19173,14931 19176,14921
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1415395.php (Bauarbeiten voraussichtlich bis zum zweiten Quartal 2026)
 #: by: https://www.berliner-woche.de/karlshorst/c-bildung/start-fuer-den-bau-einer-integrierten-sekundarschule_a411179
@@ -5142,13 +5175,14 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/der-abriss-der-wuhletalbruecke-hat-begonnen_a338111
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11321 (Antrag)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (voraussichtliche Bauzeit: 2022 bis 2025)
+#: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-sanierung-instandsetzung-autobahn-brckenbauwerk-wuhletalbrcke-ortsteil-marzahn-berlin-deutschland-656406.html
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
 #: source_id: viz2021:13.55807,52.56199,27.06.2024,15:13 (bis 31.03.2025) (inaktiv)
 #: XXX Wann wird die Brücke wieder eröffnet?
-#: last_checked: 2024-10-08 (mapillary)
+#: last_checked: 2024-11-30 (luftbildsuche)
 #: check_frequency: 360d
 #: next_check: 2025-06-30
 #: valid: 20190603-20250630

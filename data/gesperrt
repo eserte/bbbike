@@ -59,12 +59,13 @@ Futranplatz	1 22388,4737 22451,4749
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 Knoten Märkische/Landsberger Allee	2::inwork 19013,14905 19175,14968
-Knoten Märkische/Landsberger Allee	1 19196,14976 19205,14980 19364,15045 19502,15089 19565,15106 19694,15141 19852,15201
-Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19214,14966 19200,14963
-Knoten Märkische/Landsberger Allee	1 19452,14807 19464,14971 19408,15007
-Knoten Märkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
+Knoten Märkische/Landsberger Allee	1 19254,15000 19200,14963
+Knoten Märkische/Landsberger Allee	2::inwork 19408,15007 19350,14997 19214,14966 19200,14963
+Knoten Märkische/Landsberger Allee	2::inwork 19452,14807 19464,14971 19408,15007
+Knoten Märkische/Landsberger Allee	2::inwork 19852,15201 19744,15128 19614,15061 19408,15007
+Knoten Märkische/Landsberger Allee	2::inwork 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
+Knoten Märkische/Landsberger Allee: nur Rechtsabbiegen erlaubt	3 19644,15320 19512,15092 19565,15106
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
-Knoten Märkische/Landsberger Allee	1 19502,15089 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13712,20919 13909,20928
 Alt-Blankenburg	1 13909,20928 13677,20873 13576,20849
 Seestr.	1 5043,14671 5255,14757 5311,14786 5437,14844
@@ -472,7 +473,6 @@ Prenzlauer Allee [Wohngebiet]	1 12154,15902 12030,15968
 Blumenstr.	1 12125,12490 12306,12459 12305,12440
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
 Westhafenstr.: Tor kann geschlossen sein; Unbefugten ist das Betreten nicht gestattet	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
-Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.)	1 15413,11690 15489,11735 15639,11653
 Sauerbruchweg	1s 8490,13354 8632,13155
 Virchowweg	1s 8595,13085 8550,13150
@@ -1906,13 +1906,10 @@ Traberweg -> Treskowallee: Straßenbahntrasse	3::igndisp 18442,7882 18471,7862 18
 Bundesallee	3nocross::ignrte 5463,9961 5461,9923 5467,9866
 Bundesallee	1::igndisp 5467,9866 5461,9923 5463,9961
 Bundesallee	1::igndisp 5463,9961 5464,9934 5467,9866
-Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19664,15366 19644,15320 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
+Linksabbiegen nicht möglich	3nocross::ignrte 19644,15320 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Märkische Allee -> Parkpl. Le Prom: Linksabbiegen nicht möglich	3::igndisp 19644,15320 19619,15262 19784,15191
 Parkpl. Le Prom -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19784,15191 19619,15262 19604,15227
-Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19577,15166 19604,15227 19502,15089
 Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19604,15227 19577,15166 19654,15219
-Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19551,14961 19516,14993 19452,14807
-Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19464,14971 19452,14807 19516,14993
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9865,10227 9858,10199 9837,10117
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9884,10192 9858,10199 9837,10117
 Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
@@ -3514,6 +3511,9 @@ Milanstr. (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22854,-5002 2
 Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119 22860,-5130 22848,-5176
 Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
 (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19156,14953 19160,14935 19171,14938
+(Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
+Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung gesperrt	2::inwork 19157,14979 19171,14938 19173,14931 19176,14921
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935

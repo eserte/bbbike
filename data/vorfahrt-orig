@@ -871,7 +871,9 @@ X	Kz 2370,8109
 X	Vf::Tram 14218,13834 14425,13780 14635,13725
 X	Vf::Tram 14425,13780 14635,13725 14751,13693
 X	Vf::Tram 15331,14606 15272,14691 15174,14638
-X	Vf 19400,15027 19347,14936 19255,14911
+# REMOVED (keine Vorfahrtsregelung mehr wegen Arbeiten am Marzahner Knoten, unklar, wie es zukünftig aussehen wird) --- X	Vf 19400,15027 19339,14930 19256,14906
+# REMOVED (Rampe wird zurückgebaut, hier wird es wohl keine Vorfahrtsregelung mehr geben) --- X	Vf 19339,14930 19400,15027 19424,15068
+X	Vf 19339,14930 19256,14906 19207,14895
 X	Vf 19428,16692 19394,16386 19381,16267
 X	Vf 19394,16386 19381,16267 19366,16174
 X	Vf 19361,16145 19349,15984 19352,15639
@@ -1731,7 +1733,6 @@ X	Vf 13539,8552 13641,8470 13718,8408
 #: note: implizit, Bordsteinkante
 X	Vf 12556,15518 12605,15491 12621,15482
 X	Vf 13168,13125 13121,13225 13073,13329
-X	Vf 19347,14936 19400,15027 19424,15068
 #: note: implizit, Bordsteinkante
 X	Vf 7874,11293 7894,11288 7934,11275
 X	Vf 3546,10962 3820,10987 3942,11010
@@ -2196,3 +2197,11 @@ X	Vf 7914,3351 8009,3375 7951,3542
 X	Vf 5583,5179 5610,5227 5659,5313
 #: note: implizit, Bordsteinkante
 X	Vf 21346,5165 21355,5254 21357,5278
+#: note: implizit (Parkplatz) sowie durch Fahrbahnmarkierung angedeutet
+X	Vf 15769,14355 15698,14386 15706,14410
+#: note: implizit (Parkplatz) sowie durch Fahrbahnmarkierung angedeutet
+X	Vf 15539,14493 15528,14470 15516,14445
+#: note: implizit (Parkplatz) sowie durch Fahrbahnmarkierung angedeutet
+X	Vf 15528,14470 15516,14445 15500,14416
+#: note: implizit (Parkplatz) sowie durch Fahrbahnmarkierung angedeutet
+X	Vf 15331,14606 15390,14572 15539,14493

@@ -978,7 +978,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-12-02
+#: last_checked: 2024-12-08
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1648,7 +1648,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: source_id: viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="26"
-#: last_checked: 2024-12-06 vvv
+#: last_checked: 2024-12-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 vvv
@@ -1667,7 +1667,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="43"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2024-12-06 vvv
+#: last_checked: 2024-12-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-03-31 vvv
@@ -2055,6 +2055,7 @@ Bushaltestelle	RW5; 7201,8870 7239,8907
 #: historical_note: früher: Busspur ist immer gültig, RW5;
 Poller	RW4; 7239,8907 7268,8960
 #: historical_note: früher (bis Frühjahr 2024): Busspur gilt Mo-Fr 7-18 Uhr vvv
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9509 (Antrag zur Kaphaltestelle)
 provisorische asphaltierte Kaphaltestelle	RW1; 7268,8960 7299,9022
 Leitboys	RW3; 7299,9022 7308,9041 7326,9078 7354,9135 7363,9152 7382,9187 7388,9199 7430,9281
 Busspur ist immer gültig	RW5; 7430,9281 7471,9360
@@ -5617,13 +5618,19 @@ Betonplatten	RW2; 22631,16215 22696,16208 22739,16203 22760,16197 22771,16194
 neues Verbundsteinpflaster	RW2; 22739,16203 22696,16208 22631,16215 22495,16165 22131,16000 22109,15990 21951,15918 21709,15808
 	RW2; 21709,15808 21584,15753 21475,15705 21398,15671 21239,15633
 	RW3; 21239,15633 21119,15635 21068,15646 21009,15658 20866,15673 20733,15657 20580,15586 20532,15564 20260,15434 20135,15364 19987,15280 19852,15201
-Gehweg für Radfahrer frei, eng	RW1; 19502,15089 19364,15045 19205,14980 19196,14976 19175,14968
+Gehweg für Radfahrer frei, eng	RW1; 19512,15092 19364,15045 19309,15023 19254,15000 19205,14980 19196,14976 19175,14968
 # REMOVED (temporär nicht verfügbar?) --- Gehweg für Radfahrer frei, eng	RW1; 19175,14968 19013,14905
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-10-19
-#: check_frequency: 120d
-#: next_check: 2026-12-31
+#: last_checked: 2024-12-08 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-12-31 vvv
 Gehweg für Radfahrer frei	RW9; 19200,14963 19156,14953 19013,14905 18831,14823
+Gehweg für Radfahrer frei, eng	RW9; 19175,14968 19196,14976 19205,14980 19254,15000 19309,15023 19364,15045 19512,15092
+#: note: zwar nicht explizit als benutzungspflichtig ausgeschildert, aber die danebenliegende Fahrbahn ist eine Einbahnstraße
+Radfahrer müssen Gehweg benutzen, eng	RW8; 19512,15092 19644,15320
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 Gehweg für Radfahrer frei	RW1; 18831,14823 18553,14678 18410,14614 18365,14607 18183,14573
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 18183,14573 18057,14549
 neu asphaltiert, mit einigen Verbundsteinpflaster-/Gehwegplattenabschnitten	RW2; 18057,14549 17848,14523 17533,14484 17254,14451
@@ -5968,9 +5975,9 @@ Verbundsteinpflaster	RW1;RW1 20488,17793 20443,17698 20344,17493 20228,17266 201
 gemeinsamer Geh- und Radweg	RW2; 19733,15511 19681,15405
 	RW2; 19681,15405 19664,15366
 #: confirmed_by: srt (added "Gehweg für Radfahrer frei")
-Gehweg für Radfahrer frei	RW1; 19664,15366 19644,15320 19619,15262 19604,15227
+Gehweg für Radfahrer frei	RW1; 19664,15366 19644,15320
 #: confirmed_by: srt
-Gehweg für Radfahrer frei, eng	RW1; 19604,15227 19502,15089
+Gehweg für Radfahrer frei, eng	RW1; 19644,15320 19512,15092
 #: by: ^^^
 #: by: Detlef Hüttemann
 	RW6;RW6 -6659,14142 -6765,14120 -6915,14090
@@ -8590,6 +8597,10 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/kantstrasse-wird-neu-geordnet_a428335
 #: by: https://www.tagesspiegel.de/berlin/club-fordert-aufhebung-von-parkplatzen-adfc-demonstriert-gegen-radstreifen-tausch-auf-der-berliner-kantstrasse-12700409.html
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/dauerstreit-um-radweg-auf-der-kantstrasse-geht-weiter_a430583
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9061 (Antrag)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9064 (Antrag)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9067 (Antrag)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9078 (Antrag)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: last_checked: 2024-11-28 vvv
 #: check_frequency: 45d vvv

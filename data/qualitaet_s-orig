@@ -2469,7 +2469,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021)
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2024-10-25
+#: last_checked: 2024-12-04 (mapillary)
 #: check_frequency: 90d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -2634,6 +2634,7 @@ Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6277,11397 6337,11365 6346,11326
 (südliches Spreeufer): wassergebundene Decke	Q1+ 5550,12238 5573,12242
 (südliches Spreeufer): asphaltähnlicher Belag	Q0 5573,12242 5604,12244 5643,12253
 #: next_check_id: SPREEUFER-2022
+#: osm_watch: way id="1187825948" version="4"
 #: XXX evtl. wird der Weg nach der Sanierung der Uferwand auch neu gemacht
 #: last_checked: 2024-06-12
 #: check_frequency: 180d
@@ -2786,7 +2787,7 @@ Schwarzwurzelstr.: Betonstraße	Q1 21009,18503 20927,18480 20814,18419 20759,1839
 Köthener Str. (Marzahn): Asphalt	Q0 20488,17793 20542,17911 20576,17994 20591,18037
 Köthener Str. (Marzahn): Betonstraße	Q1+ 20591,18037 20616,18126 20538,18275
 Wolfener Str.: Asphalt	Q0 20488,17793 20443,17698 20344,17493 20228,17266 20193,17196 20137,17087 20047,16910 19896,16611
-Dahmeweg: Betonstraße	Q1 19347,14936 19241,14561 19235,14511
+Dahmeweg: Betonstraße	Q1 19339,14930 19304,14820 19241,14561 19235,14511
 Unterführung S-Bahnhof Poelchaustr.: asphaltiert	Q0 19235,14511 19290,14503 19395,14477
 (Allee der Kosmonauten - Langhoffstr.): betonierte Platten	Q1 19807,13529 19809,13605 19819,13606
 (Allee der Kosmonauten - Langhoffstr.): neues Verbundsteinpflaster	Q0- 19856,13794 19847,14019 19843,14064
@@ -3422,6 +3423,10 @@ Alfred-Döblin-Str.: Beton	Q0 20487,16392 20286,16494 20232,16522
 Wuhlewanderweg: Kleinpflastersteine	Q1- 22771,16194 22717,16142
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
 #: historical_note: früher Q1+, mittlerweile hat die Qualität nachgelassen
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11953 (Anfrage zur Sanierung: Mittel im Zeitraum 2025-2028 sind berücksichtigt)
+#: XXX wird die Qualität hier verbessert (siehe auch mudways)?
+#: last_checked: 2024-10-19
+#: check_frequency: 360d
 Wuhlewanderweg: guter Parkweg	Q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
 Wuhlewanderweg: Kleinsteinpflaster	Q1- 22244,11311 22268,11285
 Wuhlewanderweg: Beton/Verbundsteinpflaster	Q1 22268,11285 22279,11272 22270,11210 22234,11198
@@ -10589,7 +10594,7 @@ Peter-Strasser-Weg: Asphalt mit einigen Schäden	Q1+ 9240,7811 9130,7810
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
 (Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17485,13316 17488,13257 17491,13190 17490,13133 17491,13125
-(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, zahlreiche Wurzelhebungen	Q1 17698,13124 17739,13146 17871,13145 17906,13141
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, zahlreiche Wurzelhebungen	Q2+ 17698,13124 17739,13146 17871,13145 17906,13141
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, vereinzelt leichte Wurzelhebungen	Q0- 17906,13141 17978,13328 18054,13477 18104,13510
 Allee der Kosmonauten: Beton mit einigen Hebungen und Asphaltflicken	Q1+ 17698,13134 17690,13365 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
@@ -11363,6 +11368,7 @@ Ritterlandweg [Wohngebiet]: Verbundsteinpflaster	Q1 8346,17148 8363,17192
 Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780 19500,7719
 #: by: https://www.berliner-woche.de/fennpfuhl/c-umwelt/gruenzug-wird-umgestaltet_a413057
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10502 (Antrag)
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10613 (Antrag (zur Beleuchtung))
 #: osm_watch: note 4405725 4
 #: XXX wie sieht die Wegoberfläche nach den Sanierungsarbeiten aus?
 #: last_checked: 2024-11-10
@@ -13652,6 +13658,7 @@ Alte Potsdamer Str.: Betonpflaster	Q0- 8280,11296 8318,11324 8375,11368 8389,113
 #: by: https://mein.berlin.de/vorhaben/2023-00712/ (Neugestaltung zwischen Großkopfstraße und Reinickes Hof geplant, bauliche Umsetzung: 2027-2032)
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/informationsveranstaltung-zum-neubau-der-ollenhauerstrasse_a425762
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/bezirksamt-reinickendorf-stellt-plaene-auf-buergerversammlung-vor_a427756 (Planung: Großkopfstraße - Reinickes Hof; Baubeginn 2027?)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12864 (Einwohneranfrage)
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: next_check: 2031-12-31 vvv
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5243,18162 5301,18447 5324,18560 5345,18675
@@ -13822,6 +13829,8 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 (Babelsberger Str. - Volkspark Wilmersdorf): Kopfsteinpflaster	Q2 5799,8356 5818,8354
 # 
 (zur Kohlhasenbrücker Str.): Waldweg	Q2 -6998,-1320 -6946,-1418 -6879,-1504
+# 
+(Frank-Schweitzer-Str. - Landsberger Allee): Asphalt	Q0 19256,14906 19254,14925 19319,14970 19318,14984 19309,15023
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
