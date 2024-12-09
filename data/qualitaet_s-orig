@@ -479,7 +479,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2024-12-05
+#: last_checked: 2024-12-09
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -13271,14 +13271,13 @@ Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1+ 17738,9922 17749,9811 1777
 Mellenseestr. [Wohngebiet]: Beton	Q0- 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 # REMOVED (im westlichen Abschnitt passiert nichts) --- #: XXX Bauarbeiten, im östlichen Abschnitt wurde neu asphaltiert, evtl. wird auch im restlichen Abschnitt noch gearbeitet --- #: source_id: viz2021:13.403481,52.488825,10.11.2023,10:00 (bis 01.12.2023) (inaktiv) --- #: last_checked: 2023-11-21 --- #: next_check: 2023-12-01
-#: source_id: viz2021:13.400913,52.488861,20.11.2024,10:12 (Fahrbahnsanierung, bis 04.12.2024) (inaktiv)
-#: XXX wird bei der Fahrbahnsanierung dieser Abschnitt neu gemacht? vvv
-#: next_check: 2024-12-04 vvv
-Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10250,9233
+# REMOVED --- #: source_id: viz2021:13.400913,52.488861,20.11.2024,10:12 (Fahrbahnsanierung, bis 04.12.2024) (inaktiv) --- #: XXX wird bei der Fahrbahnsanierung dieser Abschnitt neu gemacht? vvv --- #: next_check: 2024-12-04 vvv
+#: historical_note: früher (bis Dez 2024): Asphalt, einige leichte Schäden, Q0- vvv
+Bergmannstr.: Asphalt	Q0 10123,9233 10250,9233
 # REMOVED --- #: next_check_id: BERGMANN-2023 --- #: XXX Schäden vor allem am Fahrbahnrand, wo man nun fahren muss, in der Fahrbahnmitte wäre es Q0- --- #: last_checked: 2024-01-28 --- #: check_frequency: 120d --- Bergmannstr.: Asphalt mit Schäden	Q1+ 10250,9233 10366,9233
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10250,9233 10366,9233
-#: next_check ^^^
-#: XXX ^^^
+# REMOVED --- #: next_check ^^^ --- #: XXX ^^^
+#: historical_note ^^^
 #: historical_note: bis Herbst 2023: Asphalt, einige leichte Schäden, Q0-
 Bergmannstr.: Asphalt	Q0 10366,9233 10547,9233
 #: historical_note: bis Herbst 2023: Asphalt, einige Querrillen, Q0-

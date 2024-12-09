@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2024-12-06
+#: last_checked: 2024-12-09
 #: check_frequency: 60d
 #: next_check_id: 2025-06-30
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -53,7 +53,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="2"
 #: osm_watch: way id="1146013233" version="5"
 #: osm_watch: way id="1134071039" version="7"
-#: last_checked: 2024-12-06 vvv
+#: last_checked: 2024-12-09 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -324,6 +324,7 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=756286#post756286
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-weddingplatz-939027.php
 #: by: https://www.muellerstrasse-aktiv.de/projekte/weddingplatz/
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1511069.php (Eröffnung am 12.12.2024)
 #: XXX Weddingplatz: Umgestaltung
 #: XXX Nach den Bauarbeiten wird hier eine Spielstraße sein -> der nördliche Bereich ist es laut osm bereits -> komplett eingetragen
 #: historical_note: am Anfang Einbahnstraße, offen Richtung Norden (1s:q3:inwork), später komplett zu (q4::inwork in handicap_s-orig), dann wieder (laut osm) Einbahnstraße (1s:q3:inwork), seit September 2024 teilweise zu (südlicher Abschnitt)
@@ -331,7 +332,7 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285
 #: osm_watch: way id="1161733739" version="21"
 #: last_checked: 2024-11-27 (daf)
 #: check_frequency: 30d
-#: next_check: 2024-12-31
+#: next_check: 2024-12-12
 Reinickendorfer Str.: Bauarbeiten im Bereich des Weddingplatzes	q4::inwork 7998,15068 8015,15047 8037,14958 8091,14895
 # 
 # REMOVED (minimale Einschränkungen, lohnt keinen Eintrag) --- #: source_id: viz2021:13.348181,52.548416,19.03.2024,07:00 (bis 14.06.2024) --- #: source_id[inactive]: bvg2021:106#BVG344476_0 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1769960995177238968 --- #: by: https://pbs.twimg.com/media/GJAoTXpXgAAvNk_?format=jpg&name=large (nur Einschränkungen an der südlichen Fahrbahn) --- #: last_checked: 2024-06-05 --- #: next_check: 2024-06-14 --- #: valid: -20240614 --- Antwerpener Str.: Baustelle vor der Seestr., einige Meter muss geschoben werden	q2::inwork 6555,15827 6690,15671
@@ -1866,13 +1867,14 @@ Zauritzweg: Fußgänger	q1 4182,11831 4194,11703
 (Blücherplatz - Zossener Str.): Fußgänger, Grünanlage	q4+ 9702,10129 9827,10051
 Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 # 
+#: next_check_id: SPREEWALDBAD-2024
 #: by: https://www.berlinerbaeder.de/baeder/detail/wellenbad-am-spreewaldplatz/ (Bauarbeiten ab Ende Juni 2023 für 3½ Jahre)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/wellenbad-am-spreewaldplatz-schliesst-ende-juni_a374657 (bis Januar 2027)
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2024-11-28
+#: last_checked: 2024-12-09
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -3657,8 +3659,8 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2024-12-06
-#: check_frequency: 180d
+#: last_checked: 2024-12-09
+#: check_frequency: 120d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
 Schillingstr.: breiter Geh- und Radweg	q0- 11417,12243 11388,12202

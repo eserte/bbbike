@@ -27232,6 +27232,7 @@ EOF
 #: source_id: 2147341611 (inaktiv)
 #: source_id: viz2021:13.36257,52.50591,11.04.2024,14:00 (bis 11.04.2024, zu spät gesehen) (inaktiv)
 #: source_id: viz2021:13.368526,52.506291,09.12.2024,16:30 (bis 09.12.2024)
+#: source_id: viz2021:13.362422,52.505914,09.12.2024,16:30 (bis 09.12.2024)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
@@ -44201,7 +44202,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-12-03 vvv
+#: last_checked: 2024-12-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45279,7 +45280,7 @@ EOF
 #: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
 #: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
 #: note: Halteverbotsschilder mittlerweile bis zum 31.01.2025
-#: last_checked: 2024-12-05
+#: last_checked: 2024-12-09
 #: check_frequency: 30d
 #: next_check: 2025-01-31
 	q4::inwork 13136,10535 13178,10623
@@ -45429,7 +45430,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-12-03 vvv
+#: last_checked: 2024-12-09 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-01-17 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -45588,15 +45589,19 @@ EOF
 EOF
      },
      { from  => 1729533901, # 2024-10-21 20:05
-       until => 1737154800, # 2025-01-18 00:00
-       text  => 'Lynarstr.: Sperrung zwischen Humboldtstr. und Wangenheimstr., evtl. sind auch Radfahrer betroffen, bis 17.01.2025',
+       until => $isodate2epoch->("2025-01-31 17:00:00"), # 1737154800, # 2025-01-18 00:00
+#      text  => 'Lynarstr.: Sperrung zwischen Humboldtstr. und Wangenheimstr., evtl. sind auch Radfahrer betroffen, bis 17.01.2025',
+       text  => 'Lynarstr.: Sperrung zwischen Hubertusallee und Humboldtstr., evtl. sind auch Radfahrer betroffen, bis 31.01.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: rbb
-#: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025)
+#: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
+#: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025)
+#: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025)
 #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
 #: also_indoor: traffic (G,H,B,T,W)
-	q4::inwork 2453,9156 2576,9132
+# REMOVED ---	q4::inwork 2453,9156 2576,9132
+	q4::inwork 2453,9156 2337,9178
 EOF
      },
      { from  => 1729404120, # 2024-10-20 08:02
@@ -45811,7 +45816,7 @@ EOF
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
 #: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
-#: last_checked: 2024-11-27
+#: last_checked: 2024-12-09
 #: next_check: 2025-05-31
 	q3::temp 10032,9456 10004,9268
 EOF
