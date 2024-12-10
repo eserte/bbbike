@@ -871,7 +871,8 @@ X	Kz 2370,8109
 X	Vf::Tram 14218,13834 14425,13780 14635,13725
 X	Vf::Tram 14425,13780 14635,13725 14751,13693
 X	Vf::Tram 15331,14606 15272,14691 15174,14638
-# REMOVED (keine Vorfahrtsregelung mehr wegen Arbeiten am Marzahner Knoten, unklar, wie es zukünftig aussehen wird) --- X	Vf 19400,15027 19339,14930 19256,14906
+#: note: ein Vorfahrt-gewähren-Schild hängt noch, ist aber wegen der Verkehrsführung während der Bauarbeiten weitgehend sinnlos geworden
+X	Vf 19400,15027 19339,14930 19256,14906
 # REMOVED (Rampe wird zurückgebaut, hier wird es wohl keine Vorfahrtsregelung mehr geben) --- X	Vf 19339,14930 19400,15027 19424,15068
 X	Vf 19339,14930 19256,14906 19207,14895
 X	Vf 19428,16692 19394,16386 19381,16267

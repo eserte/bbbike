@@ -209,7 +209,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: note: Anforderungsampel
 	F::inwork 19196,14976
 #: osm_watch: node id="12382185864" version="2"
-#: XXX_prog gilt nicht für stadteinwärts fahrende Radfahrer auf dem Bürgersteig
+#: XXX_prog gilt nicht für auf dem Bürgersteig fahrende Radfahrer
 	X::inwork 19309,15023
 # REMOVED --- #: valid ^^^
 #: next_check ^^^
@@ -220,8 +220,8 @@ Gürtelstr.	F::inwork 15153,11691
 # REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- 
 #: last_checked: 2024-11-23 (mapillary)
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2024-12-20
-#: valid: -20241220
+#: next_check: 2025-01-31
+#: valid: -20250131
 Tucholskystr./Ziegelstr.: Gegenverkehrsregelung	X::inwork::alternating 9559,13087
 # 
 # REMOVED (entfernt) --- #: XXX schon seit mehreren Tagen ausgeschaltet --- #: last_checked: 2023-05-05 --- #: check_frequency: 30d --- Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
