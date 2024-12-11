@@ -1016,7 +1016,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2024-11-03
+#: last_checked: 2024-12-11
 #: check_frequency: 90d
 #: next_check: 2025-01-02
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -3330,6 +3330,7 @@ asphaltiertes Straßenbahnkap	RW1; 7512,13115 7563,13143 7573,13149
 	RW2; 8841,13800 8935,13844
 # REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: XXX kommen hier noch Radwegschilder hin? vvv --- #: last_checked: 2015-09-12 vvv
 	RW3; 8831,13973 8870,13926 8935,13844
+relativ breite Radspur	RW3; 8935,13844 8870,13926
 	RW3; 8870,13926 8831,13973
 	RW4;RW4 8935,13844 9085,13919
 	RW3;RW3 9085,13919 9148,13944 9189,13953 9274,13963
@@ -6656,7 +6657,12 @@ asphaltiert	RW2; 24049,5380 23942,5338
 	RW4; 23942,5338 24049,5380
 #: by: rj
 	RW1;RW1 5426,16539 5533,16662
-	RW1;RW1 5581,16708 5639,16768 5684,16815 5772,16919
+Asphalt	RW1; 5581,16708 5639,16768
+alter Asphalt mit Unebenheiten	RW1; 5639,16768 5684,16815
+alte Gehwegplatten mit Unebenheiten und Schäden	RW1; 5684,16815 5772,16919
+alte Gehwegplatten und Verbundsteinpflaster	RW1; 5772,16919 5684,16815
+Verbundsteinpflaster	RW1; 5684,16815 5639,16768
+Asphalt	RW1; 5639,16768 5581,16708
 #: by: J. Bluhm:
 #: note: aber nicht von Klaus Didrich bestätigt
 #: corrected_by: mapillary (nur eine Seite)
@@ -7155,8 +7161,8 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14888.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
-#: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024) gibt es eine temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2024-11-30 (mapillary) vvv
+#: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
+#: last_checked: 2024-12-11 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -8601,10 +8607,11 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9064 (Antrag)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9067 (Antrag)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9078 (Antrag)
+#: by: https://www.tagesspiegel.de/berlin/nach-androhung-von-zwangsauszug-losung-fur-radweg-auf-der-berliner-kantstrasse-verzogert-sich-12847046.html (Verstetigung westlich der Wilmersdorfer Str., weiter keine Lösung im östlichen Abschnitt)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: last_checked: 2024-11-28 vvv
 #: check_frequency: 45d vvv
-#: next_check: 2024-12-31 vvv
+# REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
 # REMOVED (nicht mehr) --- #: note: abschnittsweise mit Baken abgesichert
 #: historical_note: früher war der westliche Abschnitt für Linienverkehr frei
@@ -8619,7 +8626,7 @@ provisorischer Radstreifen hinter den parkenden Autos	RW4; 5236,10994 5090,11007
 provisorischer Radstreifen	RW4; 4911,11018 4821,11026
 provisorischer Radstreifen hinter den parkenden Autos	RW4; 4821,11026 4709,11036 4532,11046 4415,11053 4289,11060 4100,11078 3975,11087
 provisorischer Radstreifen	RW4; 3975,11087 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093 2865,11086 2854,11085 2740,11076 2621,11065 2491,11061 2340,11056 2233,11049
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 

@@ -22224,9 +22224,10 @@ EOF
 EOF
      },
      { from  => 1719810000, # 2024-07-01 07:00, # undef, # 
-       until => 1731652771, # $isodate2epoch->("2024-11-15 17:00:00"), # 1730822400, # 2024-11-05 17:00, # 1371066874, # undef, # XXX
+       until => undef, # 1731652771, # $isodate2epoch->("2024-11-15 17:00:00"), # 1730822400, # 2024-11-05 17:00, # 1371066874, # undef, # XXX
 #       text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
-       text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis voraussichtlich 15.11.2024 17:00',
+#       text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis voraussichtlich 15.11.2024 17:00',
+       text  => 'Kiautschoustr.: Bauarbeiten an der Tegeler Str., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
@@ -22236,10 +22237,13 @@ EOF
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
 #: source_id: viz2021:13.35879,52.53996,02.07.2024,07:00 (bis 14.11.2024) (inaktiv)
 # REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
-	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
+# REMOVED --- Tegeler Str.	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
-Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
-Kiautschoustr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 7007,14911 7182,14986
+# REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (B,T)
+#: last_checked: 2024-12-11
+Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
      },
      { from  => $isodate2epoch->("2024-05-02 00:00:00"), # 1 Tag Vorlauf
@@ -39069,7 +39073,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHOENBURG-2023
-#: by: https://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse-1/ (Zeitraum Bau: 1. Quartal 2021 - 2. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (existiert nicht mehr) (wieder da) (2. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2023 - 1. Quartal 2024) (2. Quartal 2023 - 4. Quartal 2024)
+#: by: https://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse-1/ (Zeitraum Bau: 1. Quartal 2021 - 2. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (existiert nicht mehr) (wieder da) (2. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2023 - 1. Quartal 2024) (2. Quartal 2023 - 4. Quartal 2024) (abgeschlossen)
 # REMOVED --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 # REMOVED --- #: also_indoor: traffic (ex-G,ex-W) vvv --- #: osm_watch: way id="151353924" version="14" --- #: last_checked: 2024-08-18 vvv --- #: check_frequency: 30d vvv
@@ -41282,7 +41286,7 @@ EOF
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2024-11-23 vvv
+#: last_checked: 2024-12-11 (bahninfo-forum) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-02-28 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -41365,7 +41369,7 @@ EOF
 EOF
      },
      { from  => 1669791600, # 2022-11-30 08:00
-       until => $isodate2epoch->("2025-01-03 18:00:00"), # 1711897200, # 2024-03-31 17:00
+       until => 1733919539, # $isodate2epoch->("2025-01-03 18:00:00"), # 1711897200, # 2024-03-31 17:00
 #      text  => 'Koloniestr.: Bauarbeiten an der Osloer Str., etwa 70m der Fahrbahn sind gesperrt, vom 01.12.2022 08:00 bis 31.03.2024 17:00',
 #      text  => 'Koloniestr.: Bauarbeiten an der Osloer Str., Radwegführung auf dem Gehweg, voraussichtlich bis Ende November 2024',
        text  => 'Koloniestr.: Bauarbeiten an der Schwedenstr., Abschnitt der Fahrbahn ist gesperrt, Radwegführung auf dem Gehweg, voraussichtlich bis Anfang Januar 2025',
@@ -41375,9 +41379,7 @@ EOF
 #: also_indoor: traffic (B)
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m; mittlerweile (Juni 2024) ist der gesamte Abschnitt betroffen; mittlerweile (2024-06) ist die Baustelle nach Süden gewandert und nicht sehr lang (q3 -> q2); mittlerweile: Richtung Norden wird man für ca. 180m auf dem Hochbord geführt
 #: note: bei rbb bis 30.11.2024; bei Bing bis 8.4.2024, mittlerweile auch bis November 2024
-#: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet?
-#: last_checked: 2024-10-02 (mapillary)
-#: next_check: 2025-01-03
+# REMOVED (mittlerweile ist die Fahrbahn offen) --- #: add_fragezeichen: Sind die Bauarbeiten in der Koloniestr. beendet? --- #: last_checked: 2024-10-02 (mapillary) --- #: next_check: 2025-01-03
 	q2::inwork 8486,16425 8467,16718
 EOF
      },
@@ -41513,18 +41515,20 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1735833600, # 2025-01-02 17:00
-       text  => 'Metzer Str.: Bauarbeiten, Fahrbahn zwischen Schönhauser Allee und Kollwitzstr. gesperrt, Umwege, vermutlich bis Anfang 2025',
-       # früherer Text: 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025'
+       until => $isodate2epoch->("2025-12-19 17:00:00"), # 1735833600, # 2025-01-02 17:00
+#      text  => 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025',
+#      text  => 'Metzer Str.: Bauarbeiten, Fahrbahn zwischen Schönhauser Allee und Kollwitzstr. gesperrt, Umwege, vermutlich bis Anfang 2025',
+       text  => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis Ende 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: METZER-2023
-#: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025)
+#: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025) (bis 19.12.2025)
+#: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025)
 #: osm_watch: way id="23121446" version="33"
-#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-11-23 (osm) vvv
+#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11). Radfahrer benutzen hier die Fahrbahn.
+#: last_checked: 2024-12-11 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-01-02 vvv
+#: next_check: 2025-12-19 vvv
 	q4::inwork; 10908,13978 10933,14122
 #: note: früher wurde man zur nördlichen Fußgängerampel geführt, aber mittlerweile ist hier auch gesperrt, Umweg zur nächsten Überquerungsmöglichkeit mindestens 2x 135m; besser den linken Gehweg benutzen
 Metzer Str.: Fahrbahn gesperrt	q4::inwork; 11006,14087 10933,14122
@@ -44310,13 +44314,16 @@ EOF
 #	2::inwork 10382,-2598 10365,-2603 10307,-2633
 EOF
      },
-     { from  => 1719859975, # 2024-07-01 20:52
-       until => 1722031200, # 2024-07-27 00:00
-       text  => 'Wielandstr.: zwischen Niebuhrstr. und Kantstr. Sperrung wegen Arbeiten an einer Brücke, evtl. sind auch Radfahrer betroffen, bis 26.07.2024 17:00 Uhr',
+     { from  => 1733835600, # 2024-12-10 14:00, # 1719859975, # 2024-07-01 20:52
+       until => 1743202740, # 2025-03-28 23:59, # 1722031200, # 2024-07-27 00:00
+#      text  => 'Wielandstr.: zwischen Niebuhrstr. und Kantstr. Sperrung wegen Arbeiten an einer Brücke, evtl. sind auch Radfahrer betroffen, bis 26.07.2024 17:00 Uhr',
+       text  => 'Wielandstr.: Bauarbeiten an der Kantstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.12.2024 14:00 bis 28.03.2025 23:59',
        type  => 'handicap',
        data  => <<EOF,
-#: note: by rbb
+#: note: by rbb (alter Eintrag vom Juli 2024)
+#: note: bei rbb nur Richtung Süden
 #: also_indoor: traffic (H,G,B,T,W)
+#: source_id: viz2021:13.315793,52.506037,11.12.2024,14:00 (bis 28.03.2025)
 	q4::inwork 4415,11053 4399,10854
 EOF
      },
@@ -45127,16 +45134,16 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 EOF
      },
      { from  => 1725548760, # 2024-09-05 17:06
-       until => $isodate2epoch->("2024-12-20 17:00:00"), # 1728572400, # 2024-10-10 17:00
-       text  => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 20.12.2024 17:00',
+       dont_check_date => 1, until => undef, # $isodate2epoch->("2024-12-20 17:00:00"), # 1728572400, # 2024-10-10 17:00
+       text  => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis 20.12.2024 17:00, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv)
-#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (bis 20.12.2024)
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
+#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (bis 20.12.2024)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-12-06
+#: last_checked: 2024-12-11
 #: next_check: 2024-12-20
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 EOF

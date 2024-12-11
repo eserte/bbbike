@@ -130,7 +130,7 @@ Möckernstr./nördlich Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternatin
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2024-11-03
+#: last_checked: 2024-12-11
 #: check_frequency: 90d
 #: next_check: 2025-01-02
 #: valid: -20250102
@@ -218,7 +218,7 @@ Gürtelstr.	F::inwork 15153,11691
 # 
 #: next_check_id: ZIEGEL-2024
 # REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- 
-#: last_checked: 2024-11-23 (mapillary)
+#: last_checked: 2024-12-11
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-01-31
 #: valid: -20250131
@@ -1556,7 +1556,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6659,16133
 	X 6098,16630
 	X 5772,16919
+#: note: Kapweg -> Scharnweberstr.: keine gesonderte Signalisierung für rechtsabbiegende Radfahrer (im Gegensatz zum Kfz-Verkehr)
 	X 5295,17344
+#: note: kurze Grünphase für Radfahrer Richtung Norden (Rotphase ~65s, Grünphase ~5s), keine gesonderte Signalisierung für rechtsabbiegende Radfahrer (im Gegensatz zum Kfz-Verkehr)
 	X 5034,17322
 	X 4683,17669
 	X 4320,17805
@@ -3092,7 +3094,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 6489,3578
 #: note: Anforderungsampel
-#: XXX_prog: beide Ampeln sind getrennt geschaltet, man muss auf dem Mittelstreifen neu anfordern
+#: XXX_prog: beide Ampeln sind getrennt geschaltet, man muss auf dem Mittelstreifen neu anfordern; 2024-12-11: stimmt das noch? heute war das nicht der Fall (W->O)
 	F 7713,16557
 	X 5000,12781
 	F 5754,13170
@@ -3785,7 +3787,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2024-11-21
+#: last_checked: 2024-12-11
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-15
 	X::inwork 8250,14672

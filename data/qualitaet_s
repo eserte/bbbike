@@ -559,7 +559,7 @@ Verbindungschaussee: Waldweg, OK, 22 km/h möglich	Q1 -426,9473 -360,9193 -310,89
 Verbindungschaussee: asphaltiert	Q0 -426,9473 -471,9647
 Lenbachstr.: Kopfsteinpflaster	Q2 14799,11330 14669,11157 14605,11078
 Garnisonkirchplatz: Kopfsteinpflaster, OK	Q1 10308,12859 10255,12959
-Am Schwarzen Graben: Querrillen, Parkweg, teilweise Schotter	Q1 4849,15875 4833,15916 5005,16824 5007,16861 4996,16990 4994,17023 4973,17042
+Am Schwarzen Graben: Querrillen, Parkweg, teilweise Schotter	Q1 4841,15889 4833,15916 5005,16824 5007,16861 4996,16990 4994,17023 4973,17042
 Holteistr.: Asphalt	Q0 14535,11327 14506,11275 14468,11203
 Holteistr.: Asphalt	Q0 14575,11407 14535,11327
 Brehmestr.: Kopfsteinpflaster	Q2 9904,17347 9975,17359 10085,17379 10214,17401
@@ -2346,7 +2346,7 @@ Krumme Gärten: Asphalt	Q0 -4011,13407 -3994,13301 -4017,13167
 (Spektewiesen): Asphalt	Q0 -5695,15104 -5784,15015 -5907,15033 -6004,15063 -6099,15125 -6184,15162 -6197,15188 -6252,15228 -6498,15301 -6584,15311 -6704,15293 -6824,15292
 (Spektewiesen): Asphalt	Q0 -6824,15292 -6802,15376
 Spekteweg: Asphalt	Q0 -4053,15167 -4277,14981 -4303,14960 -4466,14817 -4671,14818 -4737,14862 -4932,14964 -4963,14979 -4989,14994 -5083,15044 -5151,15059 -5374,15082 -5608,15105 -5641,15109 -5681,15113 -5686,15113 -5689,15114 -5694,15115
-Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4076,16017 4089,15978 4084,15859
+Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4054,16035 4076,16017 4089,15978 4084,15859
 (Am Hohenzollernkanal): Asphalt, einige teils größere Wurzelschäden	Q1 3775,15768 3371,15777
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
@@ -3745,7 +3745,7 @@ KGA Plötzensee: Verbundsteinpflaster, teilweise etwas uneben, zweispurig	Q1 4963
 (KGA Plötzensee, Hauptweg): Verbundsteinpflaster, zweispurig	Q1 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
 (Am Hohenzollernkanal): Asphalt, teilweise erhebliche Wurzelschäden	Q1 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
-(Am Hohenzollernkanal): Asphalt	Q0 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
+(Am Hohenzollernkanal): Asphalt	Q0 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4111,15999 4089,15978
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768
 (Am Hohenzollernkanal): Asphalt	Q0 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 Juliushof: Asphalt	Q0 13129,6535 13143,6499 13142,6453
@@ -8458,8 +8458,8 @@ Fritz-Schloß-Park: wassergebundene Decke	Q1 7263,13331 7241,13361
 Feldzeugmeisterstr.: Asphalt	Q0 6917,13917 6818,14102
 Deportationsweg: Kopfsteinpflaster	Q2 6920,14365 6857,14488
 (an der Panke): Asphalt	Q0 7872,14510 7787,14473
-Dohnagestell Verlängerung: Parkweg	Q1 5130,15692 4849,15875 4799,15891 4723,15907 4620,15919
-Am Hohenzollernkanal: Verbundsteinpflaster	Q1 4620,15919 4369,15950
+Dohnagestell Verlängerung: Parkweg	Q1 5130,15692 4841,15889 4799,15891 4723,15907 4627,15918
+Am Hohenzollernkanal: Verbundsteinpflaster	Q1 4627,15918 4369,15950
 Rue Charles Calmette: Beton	Q1 3753,16638 3738,16648 3711,16670 3681,16778
 Rue René Laennec: Beton	Q0 3681,16778 3609,16759
 Rue du Dr Roux: Asphalt	Q0 3606,16453 3612,16526 3624,16564 3615,16633 3636,16663 3711,16670
@@ -9052,10 +9052,11 @@ Prenzlauer Promenade: Beton	Q0 11979,19403 11990,19325
 (Dohnagestell - Tangastr.): Fahrbahn Kopfsteinpflaster, breiter Nebenstreifen als Parkweg	Q1 5553,15271 5722,15332
 (Dohnagestell - Tangastr.): schlechtes Kopfsteinpflaster	Q3 5722,15332 5802,15399
 (Dohnagestell - Tangastr.): Parkweg, Schotter, Regenrinnen	Q2 5802,15399 5889,15457 5961,15562
-(Dohnagestell - Rehberge): unbefestigter Parkweg	Q2 4849,15875 4880,15910 4879,15964
-(Dohnagestell - Rehberge): Parkweg	Q1 4879,15964 5022,15987 5066,15991
+(Dohnagestell - Rehberge): unbefestigter Parkweg	Q2 4841,15889 4873,15926 4870,15960
+(Dohnagestell - Rehberge): Parkweg	Q1 4870,15960 5022,15987 5066,15991
 (Rehberge - Petersallee): Parkweg	Q1 5022,15987 5057,16116 5122,16215
-(Rehberge - Petersallee): Kopfsteinpflaster, teilweise mit Banketten	Q2 5122,16215 5426,16539
+(Rehberge - Petersallee): Kopfsteinpflaster, teilweise mit gut befahrbaren Banketten	Q2 5122,16215 5426,16539
+(Rehberge, entlang des Wildschweingeheges): Parkweg	Q1 4870,15960 4890,15932 4895,15888 5162,15717
 An der Filmfabrik: Verbundsteinpflaster	Q1 22872,5018 22863,5150 22856,5245 22851,5327
 Am Werksgarten: Kopfsteinpflaster	Q2 22856,5245 22803,5241
 Am Werksgarten: Kopfsteinpflaster	Q2 22803,5278 22737,5278
@@ -11650,6 +11651,7 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 (Babelsberger Str. - Volkspark Wilmersdorf): Kopfsteinpflaster	Q2 5799,8356 5818,8354
 (zur Kohlhasenbrücker Str.): Waldweg	Q2 -6998,-1320 -6946,-1418 -6879,-1504
 (Frank-Schweitzer-Str. - Landsberger Allee): Asphalt	Q0 19256,14906 19254,14925 19319,14970 19318,14984 19309,15023
+(Parkplatz vor dem Stade Napoleon): Verbundsteinpflaster	Q1 4111,15999 4075,16030 4054,16035
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
