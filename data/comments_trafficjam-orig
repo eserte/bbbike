@@ -17,6 +17,7 @@
 #: temporary vvv
 # 
 #: next_check_id: WOLLANK-2024
+#: last_checked: 2024-12-09 (mapillary) vvv
 #: next_check: 2024-12-20 vvv
 #: valid: 20241126-20241220 vvv
 Provinzstr.	Jam; 8514,17634 8536,17786 8555,17928 8571,18037 8580,18106 8583,18127 8597,18214 8610,18309 8622,18402 8628,18441 8647,18567 8648,18585 8660,18679 8668,18744
@@ -24,6 +25,7 @@ Straße vor Schönholz	Jam; 8791,18605 8668,18744
 Straße vor Schönholz	Jam; 8412,19074 8482,18986 8634,18787
 #: valid ^^^
 #: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: SCHARNWEBERTRAM-2022 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1261737.php (Baumaßnahmen Gürtelstraße 7.11.2022-22.12.2022, keine Einschränkung des Radverkehrs) --- #: by: https://berliner-abendblatt.de/2022/11/04/strassensperrung-bis-dezember-baumassnahmen-der-bvg-auf-der-guertelstrasse/ --- #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-guertelstrasse-ist-gesperrt_a363620 --- #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/12/BVG_PLUSNAVI_1222_barrierefrei.pdf (Straßenbahn fährt bis 11.12.2022 nicht) --- #: source_id: viz2021:13.476298,52.512793,08.11.2022,08:00 (Gürtelstr., hier nur bis 2.12.2022) (bis 9.12.2022) (inaktiv) --- #: note: laut rbb ist die Gürtelstr. ab 9.12.2022 mittags wieder offen; trotz schrittweiser Öffnung noch immer Staus in der Jessnerstr. (laut trafficmaps) --- #: also_indoor: traffic vvv --- #: last_checked: 2022-12-07 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-12-10 vvv --- #: valid: -20221222 vvv --- #: note: Stau gesehen: 2022-11-08 (Di) gegen 14:25, 2022-12-01 (Do) gegen 14:00 (im Bereich Traveplatz wegen parkenden Lieferautos, auch Richtung Süden) --- #: note: keinen Stau gesehen: 2022-11-11 (Fr) gegen 13:00, 2022-11-14 (Mo) gegen 12:30, 2022-11-22 (Di) gegen 13:00, 2022-12-03 (Sa) gegen 14:00, 2022-12-07 (Mi) gegen 12:30 --- Jessnerstr.	Jam; 14849,11539 14946,11697 14986,11760 15077,11910 --- #: note: Stau gesehen: 2022-11-08 (Di) gegen 14:25, 2022-11-11 (Fr) gegen 13:00, 2022-12-03 (Sa) gegen 14:00 --- #: note: kaum Stau gesehen: 2022-11-14 (Mo) gegen 12:30 --- #: note: keinen Stau gesehen: 2022-12-01 (Do) gegen 14:00, 2022-12-07 (Mi) gegen 12:30 --- #: note: Richtung Norden Halteverbot, somit könnte Platz zum Überholen sein --- Jessnerstr.	Jam; 15077,11910 15117,12106 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED (vermutlich nicht mehr, da die Chauuseestr. nun offen ist) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: Stau gesehen: 2022-11-08 (Di) gegen 09:30 vvv --- #: last_checked: 2022-12-17 vvv --- # REMOVED --- #: check_frequency: 30d vvv --- #: next_check: 2023-03-02 vvv --- #: valid: -20230302 vvv --- Gartenstr.	Jam; 9670,13637 9535,13801 9514,13826 9383,13986 --- Gartenstr.	Jam; 9383,13986 9514,13826 9535,13801 9670,13637 --- #: valid ^^^ --- #: next_check ^^^ --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: note ^^^
@@ -66,7 +68,7 @@ Straße vor Schönholz	Jam; 8412,19074 8482,18986 8634,18787
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2024-10-26 vvv
+#: last_checked: 2024-12-12 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2022-09-01 vvv
 # REMOVED (hier nicht mehr, Radspur) --- Karl-Marx-Str.	Jam; 12330,8636 12494,8501
