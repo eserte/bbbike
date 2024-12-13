@@ -1904,19 +1904,14 @@ Büxensteinallee: diagonal über die Straßenbahngleise, erst dahinter ist ausge
 # 
 Upstallweg: nicht ausgeschildert	CP2; 17915,10350 17960,10378
 # 
-#: next_check_id: PARKSTADTKARLSHORST-2021
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9724 (Anfrage)
-#: last_checked: 2024-10-11 vvv
-#: check_frequency: 60d vvv
-#: historical_note: bis Januar/Februar 2024: "stattdessen Wegweiser zu fünf Straßen im Wohngebiet"
-Ruth-Baumgarte-Str.: nicht ausgeschildert	CS; 17794,8429 17738,8450
-Georg-Klingenberg-Str.: nicht ausgeschildert	CS; 17846,8644 17792,8660
+# REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9724 (Anfrage) --- #: last_checked: 2024-12-13 vvv --- #: check_frequency: 60d vvv
+# REMOVED --- #: historical_note: bis Januar/Februar 2024: "stattdessen Wegweiser zu fünf Straßen im Wohngebiet" --- Ruth-Baumgarte-Str.: nicht ausgeschildert	CS; 17794,8429 17738,8450
+# REMOVED --- Georg-Klingenberg-Str.: nicht ausgeschildert	CS; 17846,8644 17792,8660
 # REMOVED --- Ruth-Baumgarte-Str.: noch nicht ausgeschildert	CS 17738,8450 17682,8464 17608,8483
 # REMOVED --- Irmtraud-Morgner-Str.: noch nicht ausgeschildert	CS 17524,8536 17627,8556 17755,8519
 # REMOVED --- Adolf-Wermuth-Allee: noch nicht ausgeschildert	CS 17597,8434 17608,8483 17627,8556
 # REMOVED --- Samuel-Lewin-Str.: noch nicht ausgeschildert	CS 17783,8663 17773,8588 17755,8519 17738,8450
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 ausgeschildert als "Dora-Duncker-Park"	CP2; 8358,9567 8359,9537
 # 
@@ -2016,7 +2011,7 @@ Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wann sind die Straßen ausgeschildert? vvv
-#: last_checked: 2024-12-04 vvv
+#: last_checked: 2024-12-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED (ausgeschildert) --- #: note: nur ein kleines provisorisches Papierschild an der Kreuzung Ulrich-Plenzdorf-Str. hängt an der Hauswand --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15163,10758 15151,10699
 # REMOVED (ausgeschildert) --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15151,10699 15140,10647 15138,10638

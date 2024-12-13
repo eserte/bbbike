@@ -540,26 +540,26 @@ Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: source_id: viz2021:13.402548,52.55449,30.09.2024,07:00 (bis 22.11.2024) (inaktiv)
-#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024) (bis 09.12.2024) (bis 18.12.2024) (bis 13.12.2024)
-#: source_id: viz2021:13.402699,52.554447,30.09.2024,07:00 (bis 18.12.2024) (bis 13.12.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1840621344523800852
-#: by: https://pbs.twimg.com/media/GYfp__7XEAAMfTv?format=jpg&name=large
-#: last_checked: 2024-11-30 vvv
-#: next_check: 2024-12-13 vvv
-#: valid: -20241213 vvv
-Bornholmer Str. Richtung Westen: Umwege notwendig, Engstellen	DH:len=40:h=q4,60 10282,16522 10197,16528 10134,16534
+# REMOVED --- #: source_id: viz2021:13.402548,52.55449,30.09.2024,07:00 (bis 22.11.2024) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024) (bis 09.12.2024) (bis 18.12.2024) (bis 13.12.2024) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.402699,52.554447,30.09.2024,07:00 (bis 18.12.2024) (bis 13.12.2024) (inaktiv)
+# REMOVED --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1840621344523800852
+# REMOVED --- #: by: https://pbs.twimg.com/media/GYfp__7XEAAMfTv?format=jpg&name=large
+# REMOVED --- #: last_checked: 2024-11-30 vvv
+# REMOVED --- #: next_check: 2024-12-13 vvv
+# REMOVED --- #: valid: -20241213 vvv
+# REMOVED --- Bornholmer Str. Richtung Westen: Umwege notwendig, Engstellen	DH:len=40:h=q4,60 10282,16522 10197,16528 10134,16534
+# REMOVED --- Bornholmer Str. - Malmöer Str.: zusätzliche Ampel	DH:tl 10282,16522 10197,16528 10225,16436
+# REMOVED --- Björnsonstr. - Malmöer Str.: linke Ampel benutzen	DH:len=70 10209,16674 10197,16528 10225,16436
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
 # REMOVED (nicht mehr, allerdings muss man wohl einen Abschnitt auf der Fahrbahn der Bornholmer fahren) --- Malmöer Str. - Bornholmer Str.: weiter Umweg notwendig	DH:len=250 10225,16436 10197,16528 10134,16534
 # REMOVED (nicht mehr, aktuelle Situation ist durch q4 in der Björnsonstr. abgedeckt) --- Malmöer Str. - Björnsonstr.: weiter Umweg notwendig	DH:len=250 10225,16436 10197,16528 10209,16674
 # REMOVED (kein zusätzlicher Umweg mehr) --- Bornholmer Str. - Björnsonstr.: weiter Umweg notwendig	DH:len=250 10134,16534 10197,16528 10209,16674
 # REMOVED (s.u.) --- Bornholmer Str. - Malmöer Str.: auf linken Gehweg wechseln	DH:h=q4,125 10282,16522 10197,16528 10225,16436
-Bornholmer Str. - Malmöer Str.: zusätzliche Ampel	DH:tl 10282,16522 10197,16528 10225,16436
 # REMOVED (s.u.) --- Björnsonstr. - Malmöer Str.: weiter Umweg notwendig	DH:len=250:h=q4,250 10209,16674 10197,16528 10225,16436
-Björnsonstr. - Malmöer Str.: linke Ampel benutzen	DH:len=70 10209,16674 10197,16528 10225,16436
 # REMOVED (nicht mehr, aktuelle Situation ist durch q4 in der Björnsonstr. abgedeckt) --- Björnsonstr. - Bornholmer Str.: zunächst linken Gehweg nehmen	DH:h=q4,125 10209,16674 10197,16528 10282,16522
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1497001.php --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bis-zum-6-dezember-soll-die-fahrbahn-instand-gesetzt-werden_a428605 --- #: source_id: viz2021:13.560481,52.446398,04.11.2024,09:00 (bis 06.12.2024) (inaktiv) --- #: note: gesehen am 2024-11-06: der nördliche Bürgersteig ist noch passierbar, teilweise sind sogar die Radwege frei; allerdings stand auf dem südlichen Bürgersteig bereits ein Schild "gemeinsamer Geh- und Radweg" --- #: note: gesehen am 2024-11-20: der südliche Bürgersteig ist noch passierbar, teilweise sind sogar die Radwege frei, ansonsten Engstellen; 2024-12-04 vermutlich die selbe Situation --- #: last_checked: 2024-12-04 vvv --- #: next_check: 2024-12-06 vvv --- #: valid: 20241104-20241120 vvv --- Oberspreestr.: Radfahrer müssen vermutlich den südlichen Bürgersteig nutzen	DH:t=30:len=25 21390,4637 21332,4655 21170,4706 --- Oberspreestr.: Radfahrer müssen vermutlich den südlichen Bürgersteig nutzen	DH:t=30:len=25 21108,4725 20994,4761 20949,4775 --- #: valid ^^^ --- #: valid: 20241120-20241206 vvv --- Oberspreestr.: Radfahrer müssen vermutlich den nördlichen Bürgersteig nutzen	DH:t=30:len=25 20949,4775 20994,4761 21108,4725 --- Oberspreestr.: Radfahrer müssen vermutlich den nördlichen Bürgersteig nutzen	DH:t=30:len=25 21170,4706 21332,4655 21390,4637 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 

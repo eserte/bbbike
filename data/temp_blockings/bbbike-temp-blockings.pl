@@ -28602,7 +28602,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bvg-erneuert-tramgleise_a172247 (alte Sperrung von 2018)
 #: source_id: 2147342893 (inaktiv)
-#: source_id: viz2021:13.512587,52.483664,23.10.2024,07:00 (bis 13.12.2024)
+#: source_id: viz2021:13.512587,52.483664,23.10.2024,07:00 (bis 13.12.2024) (inaktiv)
 	q4::inwork; 17736,8850 17879,8773 17929,8742
 # REMOVED: ab Grimnitzstr.: hier nicht ---	q4::inwork; 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
 EOF
@@ -28933,7 +28933,7 @@ EOF
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
-#: last_checked: 2024-11-16
+#: last_checked: 2024-12-13
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="37"
 #: osm_watch: way id="580507889" version="31"
@@ -40569,7 +40569,8 @@ EOF
 #: by: https://www.stadtrand-nachrichten.de/kronprinzessinnenweg-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kronprinzessinnenweg-voll-gesperrt_a394925
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/bauarbeiten-am-kronprinzessinnenweg-haben-begonnen_a398941
-#: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025)
+#: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025) (inaktiv)
+#: source_id: viz2021:13.228732,52.464169,05.10.2023,07:00 (bis 31.08.2025)
 #: osm_watch: way id="50830991" version="26"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
@@ -43267,7 +43268,7 @@ EOF
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
 #: osm_watch: way id="120633718" version="26"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
-#: osm_watch: note 3816582 3
+#: osm_watch[closed]: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
 #: osm_watch: note 3393893 7
 Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
@@ -43720,7 +43721,7 @@ EOF
 #: by: https://wilhelmstadt-bewegt.de/ba3-weissenburger-adamstrasse/?proj=Umbau%20der%20Pichelsdorfer%20Stra%C3%9Fe&singlec=baustellen-ticker-pichelsdorfer-strasse (März bis Herbst 2024)
 #: by: https://wilhelmstadt-bewegt.de/wp-content/uploads/2024/02/230720_BA3_Infoflyer-Ausschnitt-1024x269.jpg (hier allerdings keine Sackgasse zu sehen)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1428086.php (18.03.2024 bis Herbst 2024)
-#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024) (bis 21.06.2024, weitere Bauabschnitte folgen) (ohne Verlängerung inaktiv) (bis 27.09.2024) (bis 31.12.2024)
+#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024) (bis 21.06.2024, weitere Bauabschnitte folgen) (ohne Verlängerung inaktiv) (bis 27.09.2024) (bis 31.12.2024) (bis 31.03.2025)
 Franzstr.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3637,12668 -3446,12728
 Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12762 -3739,12756
 EOF
@@ -45251,7 +45252,7 @@ EOF
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024)
 #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="31"
-#: osm_watch: note 4536637 3
+#: osm_watch: note 4536637 7
 #: last_checked: 2024-10-12 (mapillary)
 #: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665
@@ -45340,7 +45341,7 @@ EOF
        text  => 'Björnsonstr.: Gleisbauarbeiten, Sperrung der Fahrbahn, vom 30.09.2024 07:00 bis 13.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024) (bis 09.12.2024) (bis 18.12.2024) (bis 13.12.2024)
+#: source_id: viz2021:13.402674,52.555145,30.09.2024,07:00 (bis 22.11.2024) (bis 09.12.2024) (bis 18.12.2024) (bis 13.12.2024) (inaktiv)
 	q4::inwork 10197,16528 10209,16674
 EOF
      },
@@ -45991,6 +45992,14 @@ EOF
 #: last_checked: 2024-12-08
 #: check_frequency: 14d
 	q4::inwork 16668,14765 16750,14747
+EOF
+     },
+     { from  => 1734122459, # 2024-12-13 21:40
+       until => 1734217199, # 2024-12-14 23:59
+       text  => 'Neue Bahnhofstr., Gürtelstr.: mögliche Sperrung wegen einer Demonstration, am 14.12.2024 von 9:00 Uhr bis 19:30 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::temp 14760,11044 14798,11058 14817,11068 14879,11182 14908,11231 14918,11249 14945,11300 15016,11431 15055,11505 15106,11598 15153,11691 15202,11789 15256,11884 15300,11965 15361,12071
 EOF
      },
     );

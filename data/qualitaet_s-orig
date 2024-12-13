@@ -13309,7 +13309,7 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17639,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 17588,8413
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2024-11-23
+#: last_checked: 2024-12-13
 #: check_frequency: 90d
 An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
@@ -14829,7 +14829,7 @@ Egestorffstr.: Asphalt	Q0 9155,-1017 9139,-1350 9093,-1670
 #: confirmed_by: srt
 Dorotheenstr.: Asphalt	Q0 22643,4058 22831,4070 22926,4123
 #: corrected_by: srt (Asphalt, Q0 -> ...)
-Loreleystr.: Asphalt mit Unebenheiten	Q1 19171,8280 19228,8350 19275,8419 19321,8486
+Loreleystr.: Asphalt mit Unebenheiten	Q1- 19171,8280 19228,8350 19275,8419 19321,8486
 Görresstr.: Asphalt	Q0 5318,7424 5273,7460 5194,7540 5073,7660
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
 Presselstr.: mäßiges Kopfsteinpflaster	Q2+ 6107,4718 6186,4783
@@ -16787,7 +16787,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: osm_watch: way id="1009279082" version="5"
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2024-10-11
+#: last_checked: 2024-12-13
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
@@ -23603,13 +23603,15 @@ Schlehdornsteig: Wechsel zwischen Kopfsteinpflaster und Verbundsteinpflaster	Q1-
 Mittelstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 104,2802 50,3031
 # 
 #: by: Fabian Jakob: vvv
-#: corrected_by: srt (schlechtes Kopfsteinpflaster -> Kopfsteinpflaster	Q2-; bzw. unbefestigte Straße	Q2;)
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> Kopfsteinpflaster	Q2-; bzw. unbefestigte Straße, Q2;)
 #: corrected_by: srt (neu gemacht)
-Trautenauer Str.: Asphalt, letzte Deckschicht fehlt	Q1 17753,8290 17771,8349 17794,8429
-#: confirmed_by: srt (schlechtes Kopfsteinpflaster -> ...)
-Trautenauer Str.: Kopfsteinpflaster	Q2- 17794,8429 17813,8508
-#: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
-Trautenauer Str.: Kopfsteinpflaster, mäßiger Asphaltstreifen in der Mitte	Q2 17813,8508 17830,8578
+Trautenauer Str.: Asphalt	Q0 17753,8290 17771,8349 17794,8429
+#: confirmed_by: srt (schlechtes Kopfsteinpflaster -> Kopfsteinpflaster, Q2-)
+#: corrected_by: srt (neu gemacht)
+Trautenauer Str.: Asphalt	Q0 17794,8429 17813,8508
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> Kopfsteinpflaster, mäßiger Asphaltstreifen in der Mitte, Q2)
+#: corrected_by: srt (neu gemacht)
+Trautenauer Str.: Asphalt	Q0 17813,8508 17830,8578
 #: corrected_by: srt (neuer Asphalt seit Juni 2013)
 Trautenauer Str.: Asphalt	Q0 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773 17910,8881 17915,8900
 #: by: ^^^
