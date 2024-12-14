@@ -2004,22 +2004,6 @@ Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur i
 Brauerstr.: evtl. wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben	? 5317,2345 5159,2176
 # REMOVED (done) --- Brauerstr.: Asphaltierung	? 5159,2176 4979,1964
 # 
-#: next_check_id: KOENIGSWEG-2024
-#: by: https://api.fixmyberlin.de/api/plannings/214 (Erneuerung des Fahrbahnbelags)
-#: by: https://www.infravelo.de/projekt/koenigsweg/ (Asphaltierung, in Planung, 3. Quartal 2021 - 3. Quartal 2022) (mittlerweile gelöscht) (wieder da: 1. Quartal 2023 - 3. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2024) (1. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2024 - 2. Quartal 2025) (1. Quartal 2024 - 2. Quartal 2025) (1. Quartal 2024 - 4. Quartal 2024)
-#: by: https://www.stadtrand-nachrichten.de/radwegeausbau-steglitz-zehlendorf-berlin/ (Erwähnung)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1424558.php (Bauarbeiten beginnen am 18.3.2024, Dauer 8 Monate)
-#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/vollsperrung-im-koenigsweg_a410074
-#: osm_watch: way id="47574921" version="17"
-#: osm_watch: way id="119024153" version="12"
-#: XXX laut osm bis auf ein kleines Stück an der Anhaltinerstr. bereits asphaltiert
-#: XXX entsteht hier auch eine Fahrradstraße (siehe infravelo)?
-#: last_checked: 2024-05-05
-# REMOVED (siehe handicap_s-orig) --- #: check_frequency: 120d
-#: next_check: 2024-11-18
-# REMOVED --- #: next_check: 2025-06-30
-Königsweg: Asphaltierung in Arbeit	?::inwork -298,2577 -197,2634 -155,2658
-# 
 #: by: http://www.berliner-woche.de/mariendorf/bauen/es-stockt-beim-ausbau-des-mariendorfer-hafen-wegs-d134880.html
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf (Machbarkeitsstudie)
 #: by: https://www.berliner-woche.de/mariendorf/c-bauen/ausbau-des-hafen-wegs-wird-geplant_a202288
@@ -3000,7 +2984,7 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 # REMOVED --- #: XXX während der Bauarbeiten gemeinsamer Rad- und Gehweg auf der westlichen Fahrbahnseite, nicht besonders breit, war an einem Wintersonntag aber auch nicht besonders frequentiert
 #: XXX zweiter Bauabschnitt (bis 16.07.2024): Bau einer Ampel am südlichen Ende
 #: add_fragezeichen: Sind die August-Froehlich-Straße und der neue Radweg freigegeben?
-#: also_indoor: traffic (re-G,B,re-W,T)
+#: also_indoor: traffic (re-G,B,re-W,T,H)
 #: last_checked: 2024-12-02 (bahninfo-forum)
 #: next_check: 2024-12-15
 August-Froehlich-Str.: sehr breiter asphaltierter Zweirichtungsradweg wird gebaut	?::inwork 18111,2135 18199,1811

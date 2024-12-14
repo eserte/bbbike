@@ -31414,13 +31414,17 @@ EOF
 # REMOVED --- #: next_check_id: MUENSTERBERGERWEG-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert? --- #: last_checked: 2020-10-31 --- #: check_frequency: 120d --- #: next_check: 2021-12-31
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-11-09 vvv
-#: next_check: 2024-12-15 vvv
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2024-12-14 (traffic) vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: next_check: 2024-12-15 vvv
 M¸nsterberger Weg	2::inwork 24029,11363 24172,11320
 Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
 M¸nsterberger Weg	q4::inwork 24029,11363 23883,11416
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -43775,10 +43779,11 @@ EOF
 	q4::inwork; 11239,18832 11001,18528
 EOF
      },
-     { from  => 1716181200, # 2024-05-20 07:00
-       until => $isodate2epoch->("2024-07-02 10:00:00"), # 1717426800, # 2024-06-03 17:00
-       #text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und W¸hlischstr. sowie zwischen Boxhagener Str. und Siegfried-Hirschmann-Park, Fahrtrichtung jeweils gesperrt, vom 21.05.2024 07:00 bis 03.06.2024 17:00',
-       text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und W¸hlischstr., Fahrtrichtung gesperrt, bis 02.07.2024 10:00',
+     { from  => undef, # 1716181200, # 2024-05-20 07:00
+       until => undef, # $isodate2epoch->("2024-07-02 10:00:00"), # 1717426800, # 2024-06-03 17:00
+#      text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und W¸hlischstr. sowie zwischen Boxhagener Str. und Siegfried-Hirschmann-Park, Fahrtrichtung jeweils gesperrt, vom 21.05.2024 07:00 bis 03.06.2024 17:00',
+#      text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und W¸hlischstr., Fahrtrichtung gesperrt, bis 02.07.2024 10:00',
+       text  => 'Holteistr.: Bauarbeiten zwischen W¸hlischstr. und Boxhagener Str., Fahrtrichtung gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
@@ -43787,9 +43792,11 @@ EOF
 # REMOVED --- #: note: L‰nge des gesperrten Abschnitts etwa 35m ---	q3::inwork; 14639,11512 14676,11572
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
-#: also_indoor: traffic (B)
-#: note: bei rbb in beiden Richtungen gesperrt (stimmt aber nicht)
-	q4::inwork; 14639,11512 14575,11407
+#: also_indoor: traffic (G,W)
+# REMOVED --- #: note: bei rbb in beiden Richtungen gesperrt (stimmt aber nicht)
+#: last_checked: 2024-12-13
+#: check_frequency: 7d
+	q4::inwork; 14575,11407 14639,11512
 EOF
      },
      { from  => $isodate2epoch->("2024-10-29 00:00:00"), # 1680415200, # 2023-04-02 08:00
@@ -45759,8 +45766,9 @@ EOF
 #: by: https://entwicklungsstadt.de/bauprojekt-breite-strasse-in-berlin-mitte-kritik-an-der-architektur/
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straﬂe noch immer gesperrt?
-#: last_checked: 2024-11-15
-#: check_frequency: 30d
+#: last_checked: 2024-12-14 (traffic)
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 30d
 	2::inwork 10383,12191 10289,12106
 EOF
      },

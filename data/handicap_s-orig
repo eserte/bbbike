@@ -1225,14 +1225,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 ### Zehlendorf ###
 # 
-#: next_check_id: KOENIGSWEG-2024
-#: also_indoor: traffic (G,ex-B,ex-T,W)
-#: last_checked: 2024-11-17 (traffic)
-#: check_frequency: 30d
-# REMOVED (outdoor) --- #: check_frequency: 120d
-#: next_check: 2024-11-18
-Königsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -197,2634 -155,2658
-# 
+# REMOVED (laut osm beendet) --- #: next_check_id: KOENIGSWEG-2024 --- #: also_indoor: traffic (G,ex-B,ex-T,W) --- #: last_checked: 2024-11-17 (traffic) --- #: check_frequency: 30d --- # REMOVED (outdoor) --- #: check_frequency: 120d --- #: next_check: 2024-11-18 --- Königsweg: Bauarbeiten, nur enger Gehweg ist passierbar	q3::inwork -298,2577 -197,2634 -155,2658
 # REMOVED (laut osm note abgeschlossen) --- #: next_check_id: SCHLETTSTADTER-2024 --- #: last_checked: 2024-08-09 --- #: check_frequency: 90d --- Schlettstadter Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 1077,3753 1422,3637 1485,3630
 # REMOVED (hier nicht mehr bzw. integriert in die Moltkestraßenbrückensperrung) --- #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-01-20 (osm) --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
@@ -1293,7 +1286,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 ### Biesdorf ###
 # 
 #: also_indoor: traffic (T,G,B)
-#: last_checked: 2024-12-05 (traffic)
+#: last_checked: 2024-12-14 (traffic)
 #: check_frequency: 10d
 Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
 # 

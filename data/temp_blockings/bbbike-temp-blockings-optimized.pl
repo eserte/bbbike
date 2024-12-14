@@ -4677,13 +4677,17 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
          'data' => '# REMOVED --- #: next_check_id: MUENSTERBERGERWEG-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert? --- #: last_checked: 2020-10-31 --- #: check_frequency: 120d --- #: next_check: 2021-12-31
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-11-09 vvv
-#: next_check: 2024-12-15 vvv
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2024-12-14 (traffic) vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
 Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
 Münsterberger Weg	q4::inwork 24029,11363 23883,11416
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 3188,
@@ -7447,7 +7451,25 @@ Karlshafener Str.	q4::inwork 24899,13007 25054,12926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
+#: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
+#: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024) (inaktiv)
+# REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 35m ---	q3::inwork; 14639,11512 14676,11572
+#: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
+#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
+#: also_indoor: traffic (G,W)
+# REMOVED --- #: note: bei rbb in beiden Richtungen gesperrt (stimmt aber nicht)
+#: last_checked: 2024-12-13
+#: check_frequency: 7d
+	q4::inwork; 14575,11407 14639,11512
+',
+         'from' => undef,
+         'id' => 4063,
+         'text' => 'Holteistr.: Bauarbeiten zwischen Wühlischstr. und Boxhagener Str., Fahrtrichtung gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: source_id: 236320002 (bis 30.06.2024) (bis 02.08.2024) (bis 30.08.2024) (inaktiv) (bis 20.12.2024) (inaktiv) (bis 17.04.2025)
 	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
@@ -8422,8 +8444,9 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
 #: by: https://entwicklungsstadt.de/bauprojekt-breite-strasse-in-berlin-mitte-kritik-an-der-architektur/
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2024-11-15
-#: check_frequency: 30d
+#: last_checked: 2024-12-14 (traffic)
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 30d
 	2::inwork 10383,12191 10289,12106
 ',
          'from' => undef,
