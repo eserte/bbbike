@@ -115,17 +115,19 @@ Griebnitzsee	SC -8107,-1587
 #: attrs bg
 Grunewald	SB 789,9046
 #: attrs bg
+#: oldname: -2002: Eichkamp
 Messe Süd (Eichkamp)	SB 1321,10175
 #: attrs bg
 Heerstr.	SB 523,11223
 #: attrs bg
 Westkreuz	SA 2268,10413
 #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20240610
-#: XXX Umbenennung zu Messe Nord/ZOB (die map_tube_other_link-Gegenstelle nicht vergessen!)
-#: next_check: 2024-12-15
+# REMOVED --- #: XXX Umbenennung zu Messe Nord/ZOB (die map_tube_other_link-Gegenstelle nicht vergessen!) --- #: next_check: 2024-12-15
 #: attrs bg
 #: map_tube_other_link: Street:Kaiserdamm
-Messe Nord/ICC (Witzleben)	SA 2189,11092
+#: oldname: -2002: Witzleben
+#: oldname: -20241214: Messe Nord/ICC (Witzleben)
+Messe Nord/ZOB (Witzleben)	SA 2189,11092
 #: attrs bg
 Halensee	SA 2706,9927
 #: attrs bg
