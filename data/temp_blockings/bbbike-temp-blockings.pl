@@ -33197,7 +33197,7 @@ EOF
 #: osm_watch: way id="362719487" version="12"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2024-10-25
+#: last_checked: 2024-12-08 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	q4::inwork 6021,10405 6116,10688
@@ -41863,9 +41863,9 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-11-21 vvv
+#: last_checked: 2024-12-10 (mapillary) vvv
 #: check_frequency: 30d vvv
-#: next_check: 2024-12-20 vvv
+# REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
 #: osm_watch: note 4045330 7
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
@@ -41880,7 +41880,7 @@ Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 #: osm_watch: way id="1149365723" version="7"
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -43780,7 +43780,7 @@ EOF
 EOF
      },
      { from  => undef, # 1716181200, # 2024-05-20 07:00
-       until => undef, # $isodate2epoch->("2024-07-02 10:00:00"), # 1717426800, # 2024-06-03 17:00
+       until => 1734187231, # undef, # $isodate2epoch->("2024-07-02 10:00:00"), # 1717426800, # 2024-06-03 17:00
 #      text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr. sowie zwischen Boxhagener Str. und Siegfried-Hirschmann-Park, Fahrtrichtung jeweils gesperrt, vom 21.05.2024 07:00 bis 03.06.2024 17:00',
 #      text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr., Fahrtrichtung gesperrt, bis 02.07.2024 10:00',
        text  => 'Holteistr.: Bauarbeiten zwischen Wühlischstr. und Boxhagener Str., Fahrtrichtung gesperrt, Ende der Bauarbeiten unbekannt',
@@ -43794,8 +43794,7 @@ EOF
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: also_indoor: traffic (G,W)
 # REMOVED --- #: note: bei rbb in beiden Richtungen gesperrt (stimmt aber nicht)
-#: last_checked: 2024-12-13
-#: check_frequency: 7d
+# REMOVED --- #: last_checked: 2024-12-13 --- #: check_frequency: 7d
 	q4::inwork; 14575,11407 14639,11512
 EOF
      },
@@ -44017,7 +44016,7 @@ EOF
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2024-12-10
+#: last_checked: 2024-12-14
 #: next_check: 2024-12-31
 	q4::inwork 15077,11910 15110,12107
 EOF
@@ -44220,7 +44219,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-12-09 vvv
+#: last_checked: 2024-12-10 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45259,7 +45258,7 @@ EOF
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024)
 #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="31"
-#: osm_watch: note 4536637 7
+#: osm_watch: note 4536637 9
 #: last_checked: 2024-10-12 (mapillary)
 #: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665
@@ -45849,8 +45848,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: ELLABAROWSKY-2024
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-11-20 (Pressemitteilung)
+#: last_checked: 2024-12-12 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-11-30
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7537,7859 7499,7880
@@ -45957,8 +45957,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hegemeisterbruecke/ (voraussichtliche Bauzeit: IV. Quartal 2024 bis III. Quartal 2025 (Stand Juni 2024))
-#: osm_watch: way id="41523366" version="10"
-#: osm_watch: way id="636625917" version="3"
+#: osm_watch: way id="41523366" version="11"
+#: osm_watch: way id="636625917" version="5"
 #: add_fragezeichen: Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?
 #: last_checked: 2024-06-12 (webpage moddate)
 	2::inwork 30081,5231 30081,5220
