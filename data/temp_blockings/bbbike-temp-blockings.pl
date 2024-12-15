@@ -46010,4 +46010,13 @@ EOF
 	2::temp 14760,11044 14798,11058 14817,11068 14879,11182 14908,11231 14918,11249 14945,11300 15016,11431 15055,11505 15106,11598 15153,11691 15202,11789 15256,11884 15300,11965 15361,12071
 EOF
      },
+     { from  => 1734242400, # 2024-12-15 07:00
+       until => 1741968000, # 2025-03-14 17:00
+       text  => 'Laubacher Str.: Bauarbeiten zwischen Wiesbadener Str. und Bergheimer Platz, Sperrung Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 16.12.2024 07:00 bis 14.03.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.319959,52.470975,16.12.2024,07:00 (hier nur Kfz, bis 14.03.2025)
+	q4::inwork; 4787,7213 4791,7090
+EOF
+     },
     );

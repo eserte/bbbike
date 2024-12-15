@@ -3348,29 +3348,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
-#: tempex: 3rd_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1734174000,
-         'id' => 2520,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 15. Dezember 2024, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1734285600
-       },
+       undef,
        {
          'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
 #: tempex: 4th_advent & T12-T19
@@ -8644,6 +8622,17 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Neustrelitzer Str.: Bauarbeiten, Fahrbahn gesperrt, Engstelle auf dem Bürgersteig, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => '#: source_id: viz2021:13.319959,52.470975,16.12.2024,07:00 (hier nur Kfz, bis 14.03.2025)
+	q4::inwork; 4787,7213 4791,7090
+',
+         'from' => 1734242400,
+         'id' => 4231,
+         'text' => 'Laubacher Str.: Bauarbeiten zwischen Wiesbadener Str. und Bergheimer Platz, Sperrung Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 16.12.2024 07:00 bis 14.03.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1741968000
        }
      
 );

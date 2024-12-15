@@ -2975,7 +2975,7 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20240929 (mittlerweile "Winter 2024")
 #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20241211 (nun am 21.12.2024)
 #: source_id: viz2021:13.5145,52.42382,21.08.2023,07:00 (bis 04.02.2024) (vorfristig inaktiv)
-#: source_id: viz2021:13.515018,52.42234,21.08.2023,13:35 (bis 28.04.2024) (inaktiv) (bis 01.09.2024) (inaktiv) (bis 15.12.2024)
+#: source_id: viz2021:13.515018,52.42234,21.08.2023,13:35 (bis 28.04.2024) (inaktiv) (bis 01.09.2024) (inaktiv) (bis 15.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_222280 (bis auf Weiteres) (entfernt, ohne dass sich der Sachverhalt geändert hat)
 #: osm_watch: note 3852666 9
 #: osm_watch: way id="151742405" version="9"
@@ -5931,7 +5931,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="18"
 #: also_indoor: traffic
-#: last_checked: 2024-11-21
+#: last_checked: 2024-12-15 (traffic)
 #: check_frequency: 30d
 # REMOVED (this was for outdoor checks) --- #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -7619,12 +7619,12 @@ Blücherstr., Blücherplatz: Umgestaltung	?::projected 9448,10014 9521,10010 9722,
 #: source_id: viz2021:13.129186,52.527231,21.09.2023,09:00 (bis 27.10.2023) (inaktiv)
 #: source_id: viz2021:13.12808,52.527468,20.10.2023,16:00 (bis 22.10.2023) (inaktiv)
 #: source_id: viz2021:13.123925,52.52891,31.05.2024,09:00 (bis 01.07.2024) (bis 16.08.2024) (bis 23.08.2024) (bis 15.10.2024) (bis 13.12.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:m32#HIM_FREETEXT_224777
+#: source_id: bvg2024:m32#HIM_FREETEXT_224777 (bis 16.12.2024)
 #: source_id: viz2021:13.128638,52.52876,31.05.2024,09:00 (bis 16.12.2024)
 #: last_checked: 2024-09-18
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2024-12-13
+#: next_check: 2024-12-16
 Am Zeppelinpark: wird bis zur Heerstr. verlängert	?::inwork -8358,13340 -8371,13186
 # 
 # REMOVED (laut osm fertig) --- #: source_id: LS/722-W/21/096 (inaktiv) (wieder aktiv, bis 2.9.2022) (inaktiv) --- #: osm_watch: way id="29055564" version="14" --- #: next_check: 2022-09-02 --- Neuhof - Wünsdorf: Radwegbau	?::inwork 16477,-29734 16427,-29645 16412,-29541 16430,-29439 16441,-29333 16451,-29194 16376,-29007 16390,-28810 16412,-28496 16164,-27623 15962,-26911
@@ -8006,7 +8006,7 @@ Meta-London-Str.: genaue Lage? Qualität?	? -2939,16495 -2904,16703
 #: by: https://viz.berlin.de/2023/02/radfahrstreifen-zossener-str/
 #: source_id: viz2021:13.39518,52.49613,27.02.2023,07:00 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.39505,52.493771,27.02.2023,07:00 (bis 07.04.2023) (bis 21.04.2023) (bis 12.5.2023) (bis 26.05.2023) (inaktiv)
-#: last_checked: 2024-12-09
+#: last_checked: 2024-12-15
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2023-05-26
 # REMOVED (fertig) --- Zossener Str./Brücke: Radfahrstreifen bekommen Protektionselemente (niedrige Protektion)	? 9827,10051 9837,10117
