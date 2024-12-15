@@ -8644,15 +8644,6 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Neustrelitzer Str.: Bauarbeiten, Fahrbahn gesperrt, Engstelle auf dem Bürgersteig, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
-       },
-       {
-         'data' => '	2::temp 14760,11044 14798,11058 14817,11068 14879,11182 14908,11231 14918,11249 14945,11300 15016,11431 15055,11505 15106,11598 15153,11691 15202,11789 15256,11884 15300,11965 15361,12071
-',
-         'from' => 1734122459,
-         'id' => 4230,
-         'text' => 'Neue Bahnhofstr., Gürtelstr.: mögliche Sperrung wegen einer Demonstration, am 14.12.2024 von 9:00 Uhr bis 19:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1734217199
        }
      
 );
