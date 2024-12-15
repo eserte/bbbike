@@ -371,7 +371,7 @@ Die VBB-Haltestellendaten werden vom
 VBB Verkehrsverbund Berlin-Brandenburg GmbH
 bereitgestellt und werden von www.vbb.de heruntergeladen.
 
-Siehe auch: http://daten.berlin.de/kategorie/verkehr
+Siehe auch: https://daten.berlin.de/datensaetze/vbb-fahrplandaten-via-gtfs
 EOF
 }
 
