@@ -12,13 +12,13 @@
 # 
 #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv)
 #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller
-#: last_checked: 2024-12-15
+#: last_checked: 2024-12-16
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-12-13
 Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2024-12-15
+#: last_checked: 2024-12-16
 #: check_frequency: 60d
 #: next_check_id: 2025-06-30
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -60,7 +60,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="2"
 #: osm_watch: way id="1146013233" version="5"
 #: osm_watch: way id="1134071039" version="7"
-#: last_checked: 2024-12-15 vvv
+#: last_checked: 2024-12-16 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -1140,7 +1140,7 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024) (bis 05.02.2025)
+#: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024) (bis 05.02.2025) (bis 06.02.2025)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
@@ -1149,8 +1149,8 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
 #: last_checked: 2024-12-08 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-02-05 vvv
-#: valid: -2025-02-05 vvv
+#: next_check: 2025-02-06 vvv
+#: valid: -2025-02-06 vvv
 #: osm_watch: way id="1089784266" version="4"
 #: osm_watch: way id="1231226671" version="1"
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
@@ -1259,10 +1259,10 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: by: https://www.frankschiffer.com/projekte/tor-zur-lehderstrasse/ (Fertigstellung 2024)
 #: osm_watch: way id="1170355847" version="1"
 #: osm_watch: way id="1170355851" version="1"
-#: last_checked: 2024-11-10
-#: check_frequency: 120d
-#: next_check: 2024-12-20
-#: valid: -20241220
+#: last_checked: 2024-12-16
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2024-12-20
+# REMOVED --- #: valid: -20241220
 Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
 # 
 # REMOVED (Schranken eingetragen, mittlerweile keine Verbotsschilder mehr) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_31_3285_3340_online.pdf (Einziehung von öffentlichen Straßenland) --- #: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=752922#post752922 (angrenzendes Bauvorhaben) --- #: by: https://www.falkenberger134.de/ --- #: XXX Bleibt es bei der ausschließlichen Busfreigabe? Hier gibt es Schranken, sind diese manchmal geschlossen? --- # REMOVED --- #: osm_watch: way id="519370786" version="5" --- #: osm_watch: way id="1169861688" version="6" --- #: osm_watch: note 3678184 5 --- #: osm_watch: way id="1219613564" version="4" --- #: last_checked: 2024-02-02 --- #: check_frequency: 30d --- Falkenberger Str. - Hansastr: Fahrbahn nur für Linienverkehr frei	q4 15832,16846 15866,16823 15875,16816
@@ -4405,7 +4405,7 @@ Friedrich-Meinecke-Weg: Fußgänger, Bordsteine	q3 1803,5397 1873,5385 1946,5385 2
 nördliche Wuhlheide: schmaler Weg	q3 20728,7363 20815,7313 20841,7271
 nördliche Wuhlheide: einige schmale Stellen	q2 20879,8173 20895,8079 20854,7982 20763,7868
 nördliche Wuhlheide: einige schmale Stellen	q2 20719,8139 20679,8362
-#: note: früher: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Storkower Platz
+#: historical_note: früher: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Storkower Platz
 #: note: zumindest am nördlichen Ende als gemeinsamer Geh- und Radweg ausgeschildert
 Einstein-Park: einige Fußgänger	q2+ 13163,14924 13207,14998 13204,15062
 #: note: abgesenkte Bordsteine

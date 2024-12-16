@@ -35376,6 +35376,8 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084
 #: note: vermutlich nur im Bereich Sybelstr. 14
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
+#: osm_watch: way id="1300235970" version="2"
+#: osm_watch: way id="1039329567" version="6"
 #: XXX Wann sind die Bauarbeiten beendet?
 #: last_checked: 2024-11-04 (architektur-urbanistik)
 # REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
@@ -37825,7 +37827,7 @@ nur Gehweg frei	q4::inwork 7641,20745 7630,20698
 EOF
      },
      { from  => $isodate2epoch->("2024-06-17 00:00:00"), # 1665385200, # 2022-10-10 09:00
-       until => $isodate2epoch->("2024-12-20 17:00:00"), # $isodate2epoch->("2023-08-10 17:00:00"), # 1667664000, # 2022-11-05 17:00
+       until => 1734376884, # $isodate2epoch->("2024-12-20 17:00:00"), # $isodate2epoch->("2023-08-10 17:00:00"), # 1667664000, # 2022-11-05 17:00
 #      text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, Gehweg für Radfahrer frei, Einbahnstraßenregelung in der Heinersdorfer Str., vom 11.10.2022 09:00 bis 10.08.2023 17:00',
 #       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrbahn Richtung Nordosten gesperrt, voraussichtlich bis 30.09.2024',
        text  => 'Am Steinberg: Bauarbeiten ab Pistoriusstr., Fahrbahn Richtung Nordosten gesperrt, geplant bis 20.12.2024',
@@ -37839,7 +37841,7 @@ EOF
 #: source_id: viz2021:13.429184,52.556411,11.10.2022,09:00 (bis 2.6.2023) (bis 14.7.2023) (bis 21.7.2023) (bis 25.8.2023) (bis 10.8.2023) (inaktiv)
 #: source_id: viz2021:13.429109,52.55666,17.06.2024,07:00 (bis 01.08.2024) (bis 02.09.2024) (bis 02.10.2024) (inaktiv)
 #: source_id: viz2021:13.43258,52.55758,04.07.2024,10:00 (bis 16.08.2024) (inaktiv)
-#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024) (bis 11.10.2024) (bis 31.10.2024) (bis 15.11.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.432539,52.557626,05.07.2024,12:00 (bis 23.08.2024) (bis 30.09.2024) (bis 11.10.2024) (bis 31.10.2024) (bis 15.11.2024) (bis 20.12.2024) (vorfristig inaktiv)
 # REMOVED ---#: note: außerdem unklare Regelung für Radfahrer auf der Prenzlauer Promenade Richtung Norden
 # REMOVED ---	q3::inwork; 12010,16774 12230,16915
 # REMOVED --- #: note: hier u.U. Umwege erforderlich
@@ -38565,7 +38567,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1734370629, # undef, # XXX
        text  => 'Streustr.: Abschnitt der Fahrbahn zwischen Börnestr. und Behaimstr. wegen Hochbauarbeiten gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -38576,8 +38578,7 @@ EOF
 #: note: kann manchmal (Wochenende, außerhalb der Arbeitszeiten) offen sein
 #: note: Halteverbote bis Ende Juni 2024; wurden nicht verlängert; mittlerweile bis 30.09.2024; mittlerweile bis 30.11.2024
 #: also_indoor: traffic (ex-G,ex-W)
-#: last_checked: 2024-12-02
-#: check_frequency: 14d
+# REMOVED --- #: last_checked: 2024-12-02 --- #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-11-30
 	q3::inwork 13263,15930 13140,16000
@@ -39470,7 +39471,7 @@ EOF
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
 #: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
-#: last_checked: 2024-12-10 (traffic)
+#: last_checked: 2024-12-16 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -40688,11 +40689,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B,ex-G,ex-W,T)
-#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2024; nun bis 30.08.2024; mittlerweile gemischte Halteverbote bis 30.08.2024 (schon vorbei) und Ende des Jahres; mittlerweile auch Halteverbote bis 22.11.2024 gesehen
-#: last_checked: 2024-12-09 (traffic) vvv
-#: check_frequency: 7d vvv
-# REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2024-12-31 vvv
+#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2024; nun bis 30.08.2024; mittlerweile gemischte Halteverbote bis 30.08.2024 (schon vorbei) und Ende des Jahres; mittlerweile auch Halteverbote bis 22.11.2024 gesehen; mittlerweile Halteverbote bis 31.01.2025, sah aber bis auf einige fehlende Asphaltierungsarbeiten recht fertig aus
+#: last_checked: 2024-12-16 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2025-01-31 vvv
 Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
 	q4::inwork 11680,16151 11750,16116
 Varnhagenstr.: Kreuzungsbereich gesperrt	q3::inwork 11614,16034 11680,16151
@@ -41530,9 +41530,9 @@ EOF
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025) (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
-#: osm_watch: way id="23121446" version="33"
+#: osm_watch: way id="23121446" version="34"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-12-11 vvv
+#: last_checked: 2024-12-14 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -42454,7 +42454,7 @@ EOF
        until => undef, # $isodate2epoch->("2024-11-29 17:00:00"), # 1722438000, # 2024-07-31 17:00
        dont_check_date => 1,
 #      text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, Ende der Bauarbeiten unbekannt',
-       text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis voraussichtlich 20.12.2024 17:00',
+       text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis voraussichtlich 20.12.2024 17:00, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024) (im Anschluss weitere Arbeiten) (inaktiv)
@@ -42465,7 +42465,8 @@ EOF
 #: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
 #: also_indoor: traffic (G,B,W)
-#: next_check: 2024-12-20
+#: last_checked: 2024-12-16
+# REMOVED --- #: next_check: 2024-12-20
 	q3::inwork 12228,14083 12077,14186
 EOF
      },
@@ -43868,14 +43869,14 @@ EOF
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024) (bis 16.12.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024) (bis 16.12.2024) (bis 20.12.2024) (bis 19.12.2024)
 #: source_id: viz2021:13.4546,52.47445,18.10.2024,13:33 (Braunschweiger Str. nicht erwähnt, bis 29.11.2024) (inaktiv)
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
 #: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
-#: note: laut rbb mittlerweile Richtung Südosten wieder eingeschränkt offen (stimmt aber nicht) (wurde mittlerweile wieder korrigiert) (mittlerweile ist in der Realität die Sonnenallee offen, aber bei rbb noch immer als gesperrt markiert)
+#: note: laut rbb wurde die Meldung in der Sonnenalle mittlerweile entfernt
 #: last_checked: 2024-12-12 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2024-12-20 vvv
+#: next_check: 2024-12-19 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 #Braunschweiger Str.: Fahrbahn bis kurz vor der Sonnenallee passierbar, allerdings noch einige unasphaltierte Stellen, Umwege an der Kreuzung	q3::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
@@ -44453,7 +44454,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baekebruecke-wird-erneuert_a421024
 #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
-#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024)
+#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (G,B,T,W)
@@ -44829,7 +44830,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
 #: XXX Werden noch weitere Wege gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
-#: last_checked: 2024-11-30
+#: last_checked: 2024-12-16
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-11-30
 	2::inwork 12056,15159 12082,15206 12103,15218
@@ -45575,10 +45576,12 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,731381,814767#msg-814767
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/anwohner-genervt-durch-bvg-baustelle-im-nibelungenkiez_a430442
 #: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
-#: source_id: bvg2024:256#HIM_FREETEXT_242768
+#: source_id[inactive]: bvg2024:256#HIM_FREETEXT_242768
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - 2024-12-12)
 #: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024) (bis 15.11.2024) (bis 19.11.2024) (inaktiv)
+#: source_id[inactive]: bvg2024:HIM_FREETEXT_254440 (bis 2025-01-27)
+#: source_id[inactive]: bvg2024:HIM_FREETEXT_254481
 #: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
 #: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
 #: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
@@ -46016,6 +46019,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.319959,52.470975,16.12.2024,07:00 (hier nur Kfz, bis 14.03.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1868530243469811893
+#: by: https://pbs.twimg.com/media/GercPIvWwAAA2u8?format=png&name=900x900
 	q4::inwork; 4787,7213 4791,7090
 EOF
      },

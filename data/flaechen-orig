@@ -220,7 +220,7 @@ Ernst-Thälmann-Park	F:P 12244,15190 12139,15242 12074,15161 11856,15299 11897,1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6970 (Vorlage zur Kenntnisnahme, hier mit Bindestrich: Ashkelon-Platz)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_50_3591_3794_online.pdf (Benennung einer öffentlichen Grün- und Erholungsanlage)
 #: XXX wird zu Ashkelon-Platz benannt --- wird es hier Schilder geben?
-#: last_checked: 2024-11-30
+#: last_checked: 2024-12-16
 #: check_frequency: 30d
 Park an der Diesterwegstraße	F:P 12025,14775 11896,14840 11864,14781 11998,14709 12025,14775
 Mauerpark	F:P 9935,15620 10075,15637 9997,15884 9996,15901 10051,15916 10064,15920 10081,15853 10105,15752 10123,15681 10130,15653 10186,15481 10188,15474 10228,15488 10234,15490 10403,15007 10271,14950
@@ -606,7 +606,7 @@ Einstein-Park	F:P 13163,14924 13233,15043 13192,15069 13171,15032 13128,15063 13
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.881393.php (Name wird erwähnt)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6937 (Vorlage zur Kenntnisnahme: Umbenennung in "Emmi-und Wilhelm-Blank-Platz")
 #: XXX Wann wird die Umbenennung passieren? Wird es Straßenschilder geben? Korrekte Schreibweise? Emmi-und Wilhelm-Blank-Platz oder Emmi-und-Wilhelm-Blank-Platz?
-#: last_checked: 2024-12-10 (mapillary)
+#: last_checked: 2024-12-16
 #: check_frequency: 90d
 Storkower Platz	F:P 13143,14935 13107,14873 13148,14850 13185,14912 13163,14924 13143,14935
 Jochen-Klepper-Park	F:P 6933,5098 6962,5140 6924,5175 6840,5223 6818,5212 6857,5181
@@ -1592,8 +1592,10 @@ Borsigplatz	F:P -957,23810 -967,23798 -1007,23835 -983,23859 -943,23824 -957,238
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6940 (Vorlage zur Kenntnisnahme: Benennungsabsicht)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/RwVzirf1IMlETphjLEaxIntIfnlBhqYMk7gNl8iL/NQdabeQs/67-Dateien/image004.png
 #: XXX vorgeschlagener Name: Rapoport Park (ohne Bindestrich?)
-#: last_checked: 2024-09-18 (BVV)
-#: check_frequency: 90d
+#: also_indoor: search Rapoport_Park
+#: last_checked: 2024-12-16 (research)
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 30d
 	F:P 9785,19807 9864,19793 9878,19741 9813,19721 9785,19807
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_50_3591_3794_online.pdf
@@ -1909,7 +1911,7 @@ Beamtenfriedhof	F:Cemetery 7711,13577 7743,13593 7759,13560 7727,13545 7711,1357
 #: by: https://berliner-abendblatt.de/2023/01/26/kleingartenanlage-wird-erweitert/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12033 (Erwähnung von "von Abrissarbeiten an den Kleingärten" --- hier?)
 #: XXX KGA soll teilweise aufgegeben werden
-#: osm_watch: relation id="2177476" version="3"
+#: osm_watch: relation id="2177476" version="4"
 #: last_checked: 2024-11-13 (mapillary)
 #: check_frequency: 180d
 KGA Lehrter Str.	F:Orchard 7651,13447 7696,13470 7780,13513 7812,13557 7759,13560 7727,13545 7711,13577 7743,13593 7759,13560 7812,13557 7755,13620 7733,13622 7630,13584 7655,13539 7660,13506 7653,13480 7647,13461
