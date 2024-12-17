@@ -18,7 +18,7 @@
 Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2024-12-16
+#: last_checked: 2024-12-17
 #: check_frequency: 60d
 #: next_check_id: 2025-06-30
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -57,10 +57,10 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 #: osm_watch: note 4452740 1
-#: osm_watch: way id="1327235572" version="2"
-#: osm_watch: way id="1146013233" version="5"
-#: osm_watch: way id="1134071039" version="7"
-#: last_checked: 2024-12-16 vvv
+#: osm_watch: way id="1327235572" version="3"
+#: osm_watch: way id="1146013233" version="6"
+#: osm_watch: way id="1134071039" version="8"
+#: last_checked: 2024-12-17 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -424,7 +424,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-12-15 (daf) vvv
+#: last_checked: 2024-12-17 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -455,7 +455,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: also_indoor: traffic (H,B)
 #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
-#: last_checked: 2024-12-06
+#: last_checked: 2024-12-17
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 # REMOVED --- #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large --- #: last_checked: 2022-12-27 --- #: check_frequency: 60d --- (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
@@ -469,7 +469,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2024-12-03
+#: last_checked: 2024-12-17
 #: check_frequency: 90d
 #: next_check: 2028-03-31
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -549,7 +549,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn für die Straßensanierung 2026 (!))
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-12-10 (mapillary) vvv
+#: last_checked: 2024-12-17 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1494,7 +1494,8 @@ Tiergarten: Rampe, eng	q3 8091,12011 8091,12023 8099,12022
 Tiergarten: Parkweg	q1 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
 Tiergarten: Parkweg	q1 8016,11770 8020,11937 8022,12016
 Tiergarten: Parkweg	q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8049,12140 8055,12186
-Tiergarten: Parkweg	q1 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8221,11690
+Tiergarten: Parkweg	q1 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775
+Tiergarten: Parkweg	q1 8189,11722 8221,11690
 Tiergarten: Parkweg	q1 8005,11627 8006,11648 8014,11753 8016,11770
 Tiergarten: Parkweg	q1 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742 6540,11754
 #: XXX_prog: niedriger BS am Südende (nicht aufgeführt in q1)
@@ -1506,7 +1507,7 @@ Tiergarten: Parkweg	q1 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353
 #: XXX_prog BS zur Allee
 Tiergarten: Parkweg, Bordstein	q3 7603,12353 7627,12380
 Tiergarten: einige Fußgänger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-Tiergarten: einige Fußgänger	q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
+Tiergarten: einige Fußgänger	q1 8172,11679 8189,11722 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
 (Parkweg entlang der Tiergartenstr.): einige Fußgänger, einige Bäume auf dem Weg	q1- 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553 7621,11541 7463,11538 7359,11538 7220,11542 7111,11524 7080,11508 6966,11490 6844,11496 6826,11479
 (Bremer Weg - Fasanerieallee): einige Fußgänger	q1 6337,11887 6379,11843 6395,11806 6417,11796 6438,11784 6540,11754
@@ -1768,6 +1769,8 @@ Lehniner Platz/Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307
 Brücke Schönfließer Str.: Fußgänger	q3 10593,16037 10592,15968 10575,15968
 #: corrected_by: Sven Reimann ("Radfahren nicht erlaubt")
 (Kolonie Bornholm 1 und 2): Fußgänger, enger Weg, Radfahren nicht erlaubt, ggfs. schieben	q3+ 10209,16674 10190,16930
+#: XXX_prog: BS (Bordstein zum Mühlendamm, ansonsten q4+ oder q3-)
+(Mühlendamm - Rolandufer): Gehweg, Bordstein	q4 10625,12206 10583,12206
 #: XXX_prog: BS (Bordstein zum Rolandufer, ansonsten q2)
 (zum Rolandufer): Gehweg, niedriger Bordstein	q3 11347,12223 11278,12185
 Rolandufer: Gehweg, viele Fußgänger	q3 10821,12153 10660,12176 10591,12203 10583,12206

@@ -4949,7 +4949,8 @@ EOF
 	2::temp 8354,12416 8391,12389 8546,12279
 	2::temp 7373,11594 7362,11561 7359,11538 7356,11517
 	2::temp 6809,11979 6984,11859 7058,11809
-	2::temp 8221,11690 8210,11775 8221,11876 8221,11885 8215,12156 8214,12205
+	2::temp 8221,11690 8189,11722
+	2::temp 8210,11775 8221,11876 8221,11885 8215,12156 8214,12205
 	2::temp 8119,12414 8055,12186
 	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8052,12033 8057,12065 8034,12093
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
@@ -21688,8 +21689,9 @@ EOF
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 #: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
-	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8221,11690
-	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
+	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775
+	2::temp 8189,11722 8221,11690
+	2::temp 8327,12174 8244,11878 8210,11775 8189,11722 8172,11679
 	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
 	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
 	2::temp 7823,12120 7832,12036 7822,11952 7793,11878
@@ -26620,8 +26622,9 @@ EOF
 	2::temp 8600,12165 8538,12245 8592,12252
 	2::temp 8119,12414 8055,12186
 	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 8226,11672 8221,11690 8210,11775
-	3 8210,11775 8221,11690 8226,11672
+	3 8226,11672 8221,11690
+	3 8221,11690 8189,11722
+	3 8189,11722 8221,11690 8226,11672
 	3 8217,11455 8172,11679 8026,11764
 	3 8026,11764 8172,11679 8217,11455
 	3 7429,12070 7383,12095 7031,12320
@@ -28814,7 +28817,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-11-21
+#: last_checked: 2024-12-17
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -41607,7 +41610,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-07-29 00:00:00"), # 1695531600, # 2023-09-24 07:00
-       until => $isodate2epoch->("2024-12-20 17:00:00"), # 1699476063, # undef, # 1698681600, # 2023-10-30 17:00
+       until => 1734466847, # $isodate2epoch->("2024-12-20 17:00:00"), # 1699476063, # undef, # 1698681600, # 2023-10-30 17:00
 #      text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00, evtl. wird verlängert',
 #      text  => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, bis 01.09.2024',
 #      text  => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Fischerinsel zwischen Alte/Neue Jakobstr. und Wallstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 20.12.2024',
@@ -41619,7 +41622,7 @@ EOF
 #: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024) (bis 20.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
-#: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024)
+#: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024) (vorfristig inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
 #: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
 # REMOVED (alte Notizen) --- #: note: bei VIZ inaktiv, tatsächlich noch aktiv --- #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
@@ -42729,7 +42732,7 @@ EOF
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
-#: last_checked: 2024-12-09 (mapillary)
+#: last_checked: 2024-12-15 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-06-15
 	2::inwork 9586,17665 9461,17795
@@ -43303,11 +43306,11 @@ EOF
 EOF
      },
      { from  => 1711947600, # 2024-04-01 07:00
-       until => $isodate2epoch->("2024-12-20 17:00:00"), # 1730476800, # 2024-11-01 17:00
+       until => 1734466772, # $isodate2epoch->("2024-12-20 17:00:00"), # 1730476800, # 2024-11-01 17:00
        text  => 'Stieglitzweg: Anbindung Johannisthaler Chaussee gesperrt, vom 02.04.2024 07:00 bis 20.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.463362,52.432923,02.04.2024,07:00 (bis 01.11.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.463362,52.432923,02.04.2024,07:00 (bis 01.11.2024) (bis 20.12.2024) (vorfristig inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775015299345232197
 #: by: https://pbs.twimg.com/media/GJxJdVZXgAAnXQw?format=jpg&name=large
 #: note: außerdem muss man den Fußgängerüberweg beim Überqueren der Johannisthaler Chaussee an den Kreuzungen Stieglitzweg und Buchfinkweg benutzen
@@ -43579,7 +43582,7 @@ EOF
 #: osm_watch: note 4465412 3
 #: note: es existiert eine Umleitungsstrecke für Radfahrer
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-12-10 (indoor)
+#: last_checked: 2024-12-17 (traffic)
 #: check_frequency: 7d
 # REMOVED (hier wohl nicht mehr) ---	q4::inwork 5466,5523 5555,5508
 	q4::inwork 5555,5508 5676,5488
@@ -43634,11 +43637,12 @@ Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
 #	2::temp 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
 #	2::temp 7429,12070 7775,12114 7772,12040 7717,11918
 #	2::temp 8522,12187 8453,12099 8262,11883
-#	2::temp 8221,11690 8210,11775 8221,11876 8167,11865 8132,11910 8221,11885 8215,12156
+#	2::temp 8221,11690 8189,11722
+#	2::temp 8210,11775 8221,11876 8167,11865 8132,11910 8221,11885 8215,12156
 #	2::temp 8026,11764 8140,11850
 #	2::temp 8327,12174 8344,12221
 #	2::temp 7816,12150 7823,12120 7832,12036 7822,11952 7793,11878
-#	2::temp 8210,11775 8172,11679
+#	2::temp 8210,11775 8189,11722 8172,11679
 #	2::temp 8020,11937 8016,11770
 EOF
      },
@@ -43678,11 +43682,11 @@ EOF
 EOF
      },
      { from  => 1713416400, # 2024-04-18 07:00
-       until => $isodate2epoch->("2024-12-20 17:00:00"), # 1725634800, # 2024-09-06 17:00
-       text  => 'Irenenstr.: Richtung Weitlingstr. zwischen Metastr. und Wönnichstr. Bauarbeiten, Sperrung, auch Radfahrer sind betroffen, vom 19.04.2024 07:00 bis 20.12.2024 17:00',
+       until => $isodate2epoch->("2025-02-28 17:00:00"), # 1725634800, # 2024-09-06 17:00
+       text  => 'Irenenstr.: Richtung Weitlingstr. zwischen Metastr. und Wönnichstr. Bauarbeiten, Sperrung, auch Radfahrer sind betroffen, vom 19.04.2024 07:00 bis 28.02.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024) (bis 20.12.2024) (bis 28.02.2025)
 #: source_id: viz2021:13.50255,52.50891,07.05.2024,00:00 (bis 20.12.2024) (inaktiv)
 	q4::inwork; 17096,11585 16915,11634
 EOF
@@ -44220,7 +44224,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-12-10 (mapillary) vvv
+#: last_checked: 2024-12-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44299,7 +44303,7 @@ EOF
 EOF
      },
      { from  => 1719382667, # 2024-06-26 08:17
-       until => 1740783599, # 2025-02-28 23:59
+       until => 1734457213, # 1740783599, # 2025-02-28 23:59
        text  => 'Dircksenstr.: Anbindung Stralauer Str. wegen Bauarbeiten gesperrt, voraussichtlich bis Ende Februar 2025',
        type  => 'handicap',
        data  => <<EOF,
@@ -44307,8 +44311,8 @@ EOF
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
 #: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr; mittlerweile (2024-12-03) ist die Radspur wieder nutzbar
-#: last_checked: 2024-12-12
-#: check_frequency: 14d
+#: note: mittlerweile sind die Barrieren so weggeschoben, dass es keine Beeinträchtigungen mehr gibt
+# REMOVED --- #: last_checked: 2024-12-17 --- #: check_frequency: 14d
 	q4::inwork 11273,12301 11300,12241
 EOF
      },
@@ -45022,7 +45026,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.376381,52.443079,01.08.2024,08:00 (hier nur Kfz-Verkehr, bis 01.11.2024) (bis 30.11.2024) (bis 13.12.2024) (bis 14.11.2024) (inaktiv)
-#: source_id: viz2021:13.37562,52.443395,14.11.2024,12:00 (Folgearbeiten (?), nur noch Gegenverkehrsregelung, bis 13.12.2024) (bis 17.12.2024)
+#: source_id: viz2021:13.37562,52.443395,14.11.2024,12:00 (Folgearbeiten (?), nur noch Gegenverkehrsregelung, bis 13.12.2024) (bis 17.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1818885622083256587
 # REMOVED (ja, sind auch betroffen) --- #: note: bei Mapillary nicht zu erkennen, ob der Gehweg für Radfahrer frei ist
 #: last_checked: 2024-10-09
@@ -45221,7 +45225,7 @@ EOF
        text  => 'Motzstr.: Bauarbeiten, Fahrbahn Richtung Viktoria-Luise-Platz gesperrt, voraussichtlich bis Mitte Dezember 2024',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.346105,52.497104,23.08.2024,09:00 (hier ist die Motzstr. nicht erwähnt; bis 17.12.2024)
+#: source_id: viz2021:13.346105,52.497104,23.08.2024,09:00 (hier ist die Motzstr. nicht erwähnt; bis 17.12.2024) (inaktiv)
 #: also_indoor: traffic (B,T)
 # REMOVED (keine Einschränkungen in der Motzstr. mehr) --- #: last_checked: 2024-11-03 --- #: check_frequency: 45d --- #: next_check: 2024-12-17
 	q4::inwork; 6499,10086 6427,10044
@@ -45405,16 +45409,16 @@ Sperrung der Fahrbahn im Bereich der Gleisschleife	q4::inwork 8078,21415 8016,21
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2024-12-20 17:00:00"), # undef, # XXX
-       text  => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, voraussichtlich bis 20.12.2024',
+       until => $isodate2epoch->("2025-03-14 17:00:00"), # undef, # XXX
+       text  => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, geplant bis 14.03.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
-#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024) (bis 14.03.2025)
 #: also_indoor: traffic (H,G,B,T,re-W)
 #: last_checked: 2024-10-23
-#: next_check: 2024-12-20
+#: next_check: 2025-03-14
 	q3::inwork 10944,10606 11100,10530
 EOF
      },
@@ -45450,7 +45454,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-12-09 vvv
+#: last_checked: 2024-12-17 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-01-17 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039

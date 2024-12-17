@@ -4135,7 +4135,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-11-21
+#: last_checked: 2024-12-17
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -6706,26 +6706,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
-#: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024) (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024) (bis 20.12.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
-#: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
-#: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
-#: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
-# REMOVED (alte Notizen) --- #: note: bei VIZ inaktiv, tatsächlich noch aktiv --- #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
-# REMOVED (bei mapillary nicht mehr gesehen) --- #: last_checked: 2023-11-07 --- #: check_frequency: 14d
-# REMOVED (wurde umgedreht) --- #: note: relativ kurzer Abschnitt (~75m) ist betroffen, deshalb q4 -> q3 ---	q3::inwork; 10815,11662 10722,11816
-	q3::inwork; 10722,11816 10815,11662
-',
-         'from' => 1722204000,
-         'id' => 3925,
-         'text' => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 20.12.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1734710400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7013,7 +6994,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
-#: last_checked: 2024-12-09 (mapillary)
+#: last_checked: 2024-12-15 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-06-15
 	2::inwork 9586,17665 9461,17795
@@ -7207,19 +7188,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'type' => 'gesperrt',
          'until' => 1793466000
        },
-       {
-         'data' => '#: source_id: viz2021:13.463362,52.432923,02.04.2024,07:00 (bis 01.11.2024) (bis 20.12.2024)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775015299345232197
-#: by: https://pbs.twimg.com/media/GJxJdVZXgAAnXQw?format=jpg&name=large
-#: note: außerdem muss man den Fußgängerüberweg beim Überqueren der Johannisthaler Chaussee an den Kreuzungen Stieglitzweg und Buchfinkweg benutzen
-	q3::inwork 14541,3060 14493,3143
-',
-         'from' => 1711947600,
-         'id' => 4034,
-         'text' => 'Stieglitzweg: Anbindung Johannisthaler Chaussee gesperrt, vom 02.04.2024 07:00 bis 20.12.2024 17:00',
-         'type' => 'handicap',
-         'until' => 1734710400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7289,7 +7258,7 @@ Karlshafener Str.	q4::inwork 24899,13007 25054,12926
 #: osm_watch: note 4465412 3
 #: note: es existiert eine Umleitungsstrecke für Radfahrer
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-12-10 (indoor)
+#: last_checked: 2024-12-17 (traffic)
 #: check_frequency: 7d
 # REMOVED (hier wohl nicht mehr) ---	q4::inwork 5466,5523 5555,5508
 	q4::inwork 5555,5508 5676,5488
@@ -7304,15 +7273,15 @@ Karlshafener Str.	q4::inwork 24899,13007 25054,12926
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024) (bis 20.12.2024)
+         'data' => '#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024) (bis 20.12.2024) (bis 28.02.2025)
 #: source_id: viz2021:13.50255,52.50891,07.05.2024,00:00 (bis 20.12.2024) (inaktiv)
 	q4::inwork; 17096,11585 16915,11634
 ',
          'from' => 1713416400,
          'id' => 4056,
-         'text' => 'Irenenstr.: Richtung Weitlingstr. zwischen Metastr. und Wönnichstr. Bauarbeiten, Sperrung, auch Radfahrer sind betroffen, vom 19.04.2024 07:00 bis 20.12.2024 17:00',
+         'text' => 'Irenenstr.: Richtung Weitlingstr. zwischen Metastr. und Wönnichstr. Bauarbeiten, Sperrung, auch Radfahrer sind betroffen, vom 19.04.2024 07:00 bis 28.02.2025 17:00',
          'type' => 'handicap',
-         'until' => 1734710400
+         'until' => 1740758400
        },
        undef,
        undef,
@@ -7509,7 +7478,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-12-10 (mapillary) vvv
+#: last_checked: 2024-12-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7531,21 +7500,7 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
-#: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
-#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
-#: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr; mittlerweile (2024-12-03) ist die Radspur wieder nutzbar
-#: last_checked: 2024-12-12
-#: check_frequency: 14d
-	q4::inwork 11273,12301 11300,12241
-',
-         'from' => 1719382667,
-         'id' => 4100,
-         'text' => 'Dircksenstr.: Anbindung Stralauer Str. wegen Bauarbeiten gesperrt, voraussichtlich bis Ende Februar 2025',
-         'type' => 'handicap',
-         'until' => 1740783599
-       },
+       undef,
        undef,
        {
          'data' => '#: note: by rbb (alter Eintrag vom Juli 2024)
@@ -8053,17 +8008,17 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
-#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024) (bis 14.03.2025)
 #: also_indoor: traffic (H,G,B,T,re-W)
 #: last_checked: 2024-10-23
-#: next_check: 2024-12-20
+#: next_check: 2025-03-14
 	q3::inwork 10944,10606 11100,10530
 ',
          'from' => undef,
          'id' => 4184,
-         'text' => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, voraussichtlich bis 20.12.2024',
+         'text' => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, geplant bis 14.03.2025',
          'type' => 'handicap',
-         'until' => 1734710400
+         'until' => 1741968000
        },
        {
          'data' => '#: source_id: LS/221-F/24/200 (bis 07.02.2025)
@@ -8094,7 +8049,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-12-09 vvv
+#: last_checked: 2024-12-17 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-01-17 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
