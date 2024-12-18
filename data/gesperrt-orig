@@ -220,7 +220,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2024-12-12
+#: last_checked: 2024-12-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -486,7 +486,7 @@ Dorotheenstr.	1 18653,8922 18770,8898
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ergebnisbericht-zur-radschnellverbindung-zwischen-kreuzberg-neukoelln-und-adlershof-liegt-vor_a288769 (nur allgemein zur Y-Trasse)
 #: by: https://www.berliner-woche.de/rudow/c-verkehr/neukoellner-verordnete-fordern-vorfahrt-fuer-radler-auf-der-krokusstrasse-und-linksabbiegespur-auf-der-massantebruecke_a300891
 #: XXX könnte im Zuge der Realisierung "Y-Trasse" wieder in Betrieb genommen werden (Bauphase für den Radschnellweg: mindestens 18 Monate)
-#: last_checked: 2024-03-03
+#: last_checked: 2024-12-18
 #: next_check: 2032-06-30
 Alte Späthbrücke	2 14466,5087 14544,5123
 # 
@@ -1715,6 +1715,9 @@ Adlergestell [Sonnenallee - Neltestraße]	1:igndisp 19486,3934 19367,4061 19348,4
 # 
 Hauptstr. (Rummelsburg) [Nebenfahrbahn]	1s:q4 15332,10657 15298,10682
 # 
+#: note: Einfahrt für Linienverkehr von Westen erlaubt (Einbahnstraße)
+Buswendestelle Gensweg	2s:q4 12673,1140 12609,1088 12588,1103
+# 
 #: section ^^^
 ######################################################################
 #: section: empfohlene und unechte Sperrungen vvvvvvvvvvvvvvvvvvvvvvvv
@@ -2892,7 +2895,7 @@ tragen (ca. 35 Stufen)	0:30 7621,7105
 #: note: Luftbild (Stufenanzahl)
 tragen (ca. 35 Stufen)	0:30 7655,7096
 #: note: eine inoffizielle Umfahrung unter der Brücke existiert, ist aber teilweise nur ein enger, steiler Trampelpfad
-tragen (30 Stufen mit Kinderwagenrampe)	0:30 15571,4168
+tragen (30 Stufen mit Kinderwagenrampe)	0:30 15576,4173
 tragen (26 Stufen, steile Treppe)	0:30 15156,6034
 tragen (Treppe)	0:30 4808,3406
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8823,16877
@@ -3890,8 +3893,27 @@ Drängelgitter	BNP:3::trailer=10 13014,21775
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: BUCKOWERFELDER-2024
+#: last_checked: 2024-12-18 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-03-31 vvv
+#: osm_watch: way id="946008571" version="7"
+An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
+#: XXX außerdem Anbindung zum Mauerweg geplant
+#: osm_watch: way id="946008578" version="5"
+Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12704,1102 12716,1088 12727,1074 12772,1019 12809,969
+#: XXX außerdem Anbindung zum Mauerweg geplant
+#: osm_watch: way id="946008579" version="6"
+Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12854,1121 12860,1082 12879,1000
+#: XXX außerdem Anbindung zum Mauerweg geplant
+#: osm_watch: way id="946008577" version="6"
+Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1027
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: MUEHLENDAMMBRUECKE-2024
-#: osm_watch: note 4545425 1
+#: osm_watch: note 4545425 2
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: last_checked: 2024-12-06
@@ -4023,6 +4045,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: osm_watch: way id="26244466" version="24"
+#: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026)
 #: last_checked: 2024-12-08
 #: check_frequency: 180d
 #: next_check: 2026-12-31
@@ -4124,11 +4147,11 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
-#: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite)
+#: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags
-#: last_checked: 2024-12-05 vvv
+#: last_checked: 2024-12-18 vvv
 #: osm_watch: way id="1199463691" version="3"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050
@@ -4160,7 +4183,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 # REMOVED --- #: osm_watch: way id="271172796" version="6"
 # REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
 #: XXX Bebauungsplan 7-77VE: ggfs. gibt es hier noch weitere Straßen/Wegverbindungen (z.B. sieht man bei osm einen vollständigen Kreis)
-#: last_checked: 2024-08-18
+#: last_checked: 2024-12-18
 #: check_frequency: 120d
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
 # 
@@ -4907,10 +4930,11 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
+#: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2024-12-05
-#: check_frequency: 90d
-#: next_check: 2024-12-31
+#: last_checked: 2024-12-18
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 # 
 #: by: wosch
@@ -4919,7 +4943,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://dielinke.berlin/start/det/nachfrage-zur-beantwortung-der-schriftlichen-anfrage-scha-ix-0495-bauprojekt-fanny-zobel-strasse/ (weiterhin: Gesamtmaßnahme bis 2027)
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2024-12-05 vvv
+#: last_checked: 2024-12-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5887,8 +5911,6 @@ Walter-Friedrich-Str.	1 16428,25107 16333,25147 16292,25164 16261,25178 16172,25
 Walter-Friedrich-Str.	1s:q4 16172,25217 16171,25254
 Walter-Friedrich-Str.	1 16171,25254 16264,25418
 Groscurthstr.	1 16369,25230 16458,25193 16428,25107
-#: by: Martha Wimmer [AM]
-Sonnenallee	3nocross 14617,7243 14693,7168 14752,7108 14803,7056
 Treskowallee: Straßenbahntrasse	3nocross 18631,10167 18694,10018 18703,9997 18740,9907
 # REMOVED --- Treskowallee: Straßenbahntrasse	3nocross 18807,9746 18763,9837 18740,9907
 #: by: Christian Schweda [AM]

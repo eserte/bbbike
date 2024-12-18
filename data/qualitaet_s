@@ -2030,8 +2030,8 @@ Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q0 13532
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14323,5455 14236,5393
 (Späthstr. - Weg an der Teltowkanalautobahn, Rampe): gutes Verbundsteinpflaster	Q0 14392,5453 14331,5613 14308,5627
 (Am Teltowkanal): guter Verbundsteinpflaster	Q0 14466,5087 14562,4985 14713,4834 14796,4770 14967,4641
-(Am Teltowkanal): Asphalt	Q0 14967,4641 15338,4341
-(Am Teltowkanal): fester Sandweg	Q1 15338,4341 15571,4168 15594,4152 15678,4083 15861,3942 15878,3936
+(Am Teltowkanal): Asphalt	Q0 14967,4641 15331,4371 15338,4341
+(Am Teltowkanal): fester Sandweg	Q1 15338,4341 15576,4173 15594,4152 15678,4083 15861,3942 15878,3936
 (Am Teltowkanal): Asphalt	Q0 15878,3936 16066,3799 16175,3715 16233,3671 16292,3626 16344,3586 16503,3464 16674,3331 16670,3325 16641,3285 16550,3155
 Fenchelweg: glattes Kopfsteinpflaster	Q1 15585,4139 15695,4051 15859,3924 15872,3888
 Fenchelweg: Beton	Q0 15872,3888 15860,3838 15838,3754 15791,3686 15737,3609 15674,3528 15611,3448 15500,3299 15410,3179
@@ -7119,7 +7119,7 @@ Seidenhuhnweg: gepflastert	Q2 16008,446 16074,389
 Lakenfelderweg: Asphalt mit Schäden	Q1 15944,368 16008,446 16068,525 16085,547
 Lakenfelderweg: Kopfsteinpflaster	Q2 16085,547 16116,581
 Perlhuhnweg: Asphalt mit Schäden	Q1 15952,719 16008,628 16085,547
-Eilenburger Weg: Kopfsteinpflaster	Q2 16142,1141 16126,1112 16221,872
+Eilenburger Weg: Kopfsteinpflaster	Q2 16142,1141 16130,1118 16221,872
 Igelkolbensteig: Pfad	Q2 15949,3575 16003,3652
 Melissenweg: Verbundsteinpflaster	Q1 16003,3652 16041,3718
 Klausenpaß: Beton	Q0 10271,2603 10369,2582 10392,2577 10507,2548 10693,2513
@@ -7222,7 +7222,7 @@ An den Achterhöfen: Asphalt	Q0 12260,1597 12295,1560 12512,1650 12643,1706 12911
 Landschöppenpfad: Gehwegplatten	Q0 12609,1780 12574,1866
 Fläzsteinpfad: Verbundsteinpflaster/Gehwegpflasterung	Q1 12489,2105 12498,2025 12561,1931
 Reinowzeile: Asphalt	Q0 13450,1222 13417,1333 13413,1363
-Großcreutzweg: Asphalt	Q0 13514,1823 13502,1797 13507,1659
+Großcreutzweg: Asphalt	Q0 13514,1823 13502,1797 13506,1662
 Auf der Planweide: Verbundsteinpflaster	Q1 13871,1473 13794,1799
 Zum Biesenwerder: Kopfsteinpflaster	Q2 14064,1590 14008,1835
 Am Buschfeld: schlechtes Kopfsteinpflaster	Q3 14171,1634 14124,1857
@@ -7560,7 +7560,8 @@ Erlenbruchring: Kopfsteinpflaster, kurzer Verbundsteinpflasterabschnitt	Q2 16320
 Erlenbruchring: Kopfsteinpflaster	Q2 16297,592 16409,774
 Brücke über den Rudower Fließ: Holzbohlen	Q1 16339,830 16333,833
 Am Rudower Fließ: wassergebundene Decke	Q1 16333,833 16327,834
-(Rudower Fließ - Groß-Ziethener Chaussee): wassergebundene Decke	Q1 16327,834 16316,841 16287,908
+(Rudower Fließ - Groß-Ziethener Chaussee): wassergebundene Decke	Q1 16327,834 16318,837 16287,908
+(Rudower Fließ - Groß-Ziethener Chaussee/Eilenburger Weg): wassergebundene Decke	Q1 16318,837 16294,827 16249,837 16221,872
 Am Rudower Fließ: wassergebundene Decke	Q1 16169,458 16200,464 16271,609
 Am Rudower Fließ: wassergebundene Decke	Q1 16230,655 16269,732 16327,834 16360,900 16365,935
 (Groß-Ziethener Chaussee - Am Rudower Fließ): Verbundsteinpflaster	Q1 16490,955 16464,1014
@@ -11653,6 +11654,17 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 (zur Kohlhasenbrücker Str.): Waldweg	Q2 -6998,-1320 -6946,-1418 -6879,-1504
 (Frank-Schweitzer-Str. - Landsberger Allee): Asphalt	Q0 19256,14906 19254,14925 19319,14970 19318,14984 19309,15023
 (Parkplatz vor dem Stade Napoleon): Verbundsteinpflaster	Q1 4111,15999 4075,16030 4054,16035
+Am Mühlanger: provisorisch asphaltiert	Q1 12738,1213 12802,1285
+(Buswendestelle Gensweg): Beton	Q0 12588,1103 12609,1088 12673,1140
+Gensweg: Beton	Q0 12657,1154 12673,1140
+Gensweg: Asphalt	Q0 12673,1140 12704,1102
+Am Mühlanger: Betonpflaster	Q0 12673,1140 12738,1213
+Am Mühlanger: Betonpflaster	Q0 12802,1285 12868,1315 12902,1321
+Dyrekeweg: Betonpflaster	Q0 12790,1302 12802,1285 12832,1192 12854,1121
+An den Buckower Feldern: Betonpflaster	Q0 12914,1215 12860,1200
+An den Buckower Feldern: Kleinsteinpflaster	Q1 12860,1200 12832,1192
+An den Buckower Feldern: Betonpflaster	Q0 12832,1192 12745,1116
+Knyphausenweg: Betonpflaster	Q0 12902,1321 12904,1299 12914,1215 12928,1126
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11974,7 +11986,7 @@ Zerpenschleuser Ring: Beton	Q0 7781,21812 7911,21908 7957,22007 7925,22113 7821,
 Chamissostr. (Französisch Buchholz): schlechtes Kopfsteinpflaster	Q3 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
 Suderoder Str. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13929,20745 14304,20682 14499,20649 14727,20610 14893,20583
 Waldesruher Str. (Waldesruh): Sandweg, teilweise recht holprig	Q2 24910,7896 24842,7811 24800,7746 24718,7633 24648,7542 24593,7455
-Hogenestweg: Asphalt	Q0 13288,1647 13275,1908 13286,1942
+Hogenestweg: Asphalt	Q0 13288,1652 13275,1908 13286,1942
 Tewsstr.: schlechtes Kopfsteinpflaster	Q3 -2391,2624 -2274,2656 -2160,2685 -2046,2717
 Tewsstr.: Asphalt	Q0 -2046,2717 -2026,2742
 Klandorfer Str.: guter Asphalt	Q0 21335,18679 21377,18663 21387,18674 21438,18648 21545,18595
@@ -18723,7 +18735,7 @@ Rotenfelser Weg: Asphalt	Q0 6917,4070 6904,4018 6996,3945
 Fuchsienweg: Beton	Q1 16096,3075 16376,2862 16573,2715
 Heideläuferweg: Asphalt	Q0 13010,2085 13043,1984 13070,1642 13075,1559 13089,1351
 Heideläuferweg: Verbundsteinpflaster	Q1 13089,1351 13092,1265 13093,1171 13109,1071
-Dröpkeweg: Asphalt	Q0 13070,1642 13181,1645 13288,1647 13397,1657 13507,1659 13531,1588 13657,1587
+Dröpkeweg: Asphalt	Q0 13070,1642 13181,1645 13288,1652 13397,1657 13506,1662 13531,1588 13657,1587
 Siegfriedstr. (Niederschönhausen): Asphalt	Q0 10624,19912 10742,19632
 Siegfriedstr. (Niederschönhausen): Asphalt, Schlaglöcher	Q2 10742,19632 10806,19490 10857,19379
 Lipaer Str.: mäßiges Kopfsteinpflaster	Q2 4179,4662 4214,4595 4265,4484

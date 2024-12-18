@@ -44,7 +44,7 @@
 # REMOVED (nicht mehr ausgeschildert) --- #: next_check_id: FAHLENBERGBRUECKE-2022 --- #: note: Umfahrung Fahlenbergbrücke --- #: note: laut mapillary Benutzungspflicht (bzw. Verbot für Radfahrer auf der Fahrbahn) --- #: last_checked: 2024-07-14 (mapillary) --- #: next_check: 2024-07-31 --- provisorischer Geh- und Radweg, überwiegend nicht befestigt	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025)
+#: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
 #: last_checked: 2024-11-27
 #: check_frequency: 120d
 #: next_check: 2025-04-30
@@ -343,7 +343,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2024-12-12 vvv
+#: last_checked: 2024-12-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1211,7 +1211,7 @@ Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 1
 #: note: Waltersdorfer Chaussee/Neuköllner Str., Richtung Norden
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
 #: XXX Inkonsistenz: Busspur ist für Radfahrer freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
-#: last_checked: 2024-07-10
+#: last_checked: 2024-12-18
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
@@ -1320,7 +1320,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2024-12-05 vvv
+#: last_checked: 2024-12-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3084,7 +3084,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2024-12-03
+#: last_checked: 2024-12-18
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3110,9 +3110,9 @@ Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei	RW5; 13892,9365 13923,
 Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei; die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW5; 13973,9465 14089,9610
 #: note ^^^
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025)
+#: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv)
 #: XXX früherer Eintrag, wird vielleicht wieder hergestellt: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0;
-#: last_checked: 2024-12-05
+#: last_checked: 2024-12-18
 #: check_frequency: 60d
 #: next_check: 2024-12-31
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 13973,9465
@@ -4062,7 +4062,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2337,9178 2348,9388 
 #: note: nur an der Stubenrauchstr. ein paar Meter neues Verbundsteinpflaster
 meist altes Verbundsteinpflaster	RW1;RW9 16786,2989 17284,2636 17531,2460
 altes Verbundsteinpflaster	RW1;RW0 17531,2460 17772,2331 17928,2248 18101,2164 18111,2135
-neu asphaltiert, sehr breit	RW8;RW2 18111,2135 18199,1811
+neu asphaltiert, sehr breit	RW9;RW2 18111,2135 18199,1811
 Verbundsteinpflaster	RW2;RW2 15585,4139 15594,4152
 Asphalt	RW2;RW2 15594,4152 15618,4189 15640,4222
 Verbundsteinpflaster	RW2;RW2 15640,4222 15669,4266 15720,4341
@@ -4543,9 +4543,14 @@ Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
 	RW1; 18881,2062 18922,2238
 	RW1;RW1 18881,2062 18863,1950 18804,1791 18807,1758 18839,1715 18888,1658 18916,1626 18974,1559 19061,1457 19107,1403 19251,1240 19307,1182
 	RW1; 19333,1154 19307,1182
-Verbundsteinpflaster, Hebungen und Schäden	RW1; 18491,2128 18396,1990 18361,1926 18199,1811 18047,1710 17855,1629
+Verbundsteinpflaster, Hebungen und Schäden	RW1; 18491,2128 18396,1990 18361,1926 18199,1811
+#: historical_note: vor Herbst/Winter 2024 nicht benutzungspflichtig gewesen
+Verbundsteinpflaster, Hebungen und Schäden	RW2; 18199,1811 18047,1710 17855,1629
 alte Gehwegplatten, Hebungen und Schäden	RW1; 17526,1540 17855,1629 17526,1540
-Verbundsteinpflaster	RW1; 17855,1629 18047,1710 18199,1811 18361,1926 18396,1990 18491,2128
+Verbundsteinpflaster	RW1; 17855,1629 18047,1710 18199,1811
+#: historical_note: vor Herbst/Winter 2024 nicht benutzungspflichtig gewesen
+Verbundsteinpflaster	RW2; 18199,1811 18361,1926
+Verbundsteinpflaster	RW1; 18361,1926 18396,1990 18491,2128
 neues Verbundsteinpflaster	RW1; 17526,1540 17323,1494 17211,1469
 neues Verbundsteinpflaster	RW1; 17211,1469 17120,1394 16975,1262
 neues Verbundsteinpflaster, trotzdem mit Wurzelschäden	RW1; 16975,1262 17120,1394
@@ -4908,7 +4913,10 @@ Verbundsteinpflaster	RW1; 11483,1401 11436,1513 11407,1592 11374,1689 11367,1710
 schmal, teilweise mit Bord, parkende Autos ragen in den Radweg hinein	RW1; 11355,1801 11343,1937 11323,1986 11288,2049 11212,2120 11072,2214 10938,2296 10817,2370 10748,2412
 	RW1; 10748,2412 10688,2448 10673,2457 10661,2464
 #: note: Quarzweg, Richtung Süden
-	RW1; 10661,2464 10673,2457 10688,2448 10748,2412 10817,2370 10938,2296 11072,2214 11212,2120 11288,2049 11323,1986 11343,1937 11355,1801 11362,1723 11367,1710 11374,1689 11407,1592 11436,1513 11483,1401
+Verbundsteinpflaster, schmal	RW1; 10661,2464 10673,2457 10688,2448 10748,2412
+ältere Betonplatten, einige Hebungen, schmal	RW1; 10748,2412 10817,2370 10938,2296 11072,2214 11212,2120
+Verbundsteinpflaster	RW1; 11212,2120 11288,2049 11323,1986 11343,1937 11355,1801 11362,1723 11367,1710
+Wechsel zwischen Verbundsteinpflaster und älteren Gehwegplatten	RW1; 11367,1710 11374,1689 11407,1592 11436,1513 11483,1401
 # 
 	RW1;RW9 10748,2412 10933,2606 10939,2642 10958,2666
 # REMOVED (nicht (mehr?) als Radweg erkennbar) ---	RW1;RW9 10958,2666 11005,2726 11199,2932
@@ -5867,7 +5875,9 @@ Bushaltestelle	RW5; 5463,9961 5460,10055
 	RW6;RW6 -1737,1904 -1796,2054 -1717,2084 -1654,1954
 # REMOVED (stimmt nicht?) --- #: by: Thorsten Schulz: ---	RW6;RW6 943,11302 1070,11226 1184,11143
 	RW2; 14693,7168 14617,7243
-am Anfang Verbundsteinpflaster, dann nur noch aufgemalt	RW1; 14617,7243 14693,7168 14752,7108 14803,7056
+Verbundsteinpflaster	RW1; 14617,7243 14693,7168
+#: historical_note: früher (bis Herbst/Winter 2024): nur noch aufgemalt	RW1; 14693,7168 14752,7108 14803,7056
+teilweise mit Pollern geschützt, teilweise mit Grünbeschichtung, einige Bushaltestellen	RW4;RW4 15505,6342 15452,6384 15429,6403 15334,6492 15275,6554 15229,6602 15146,6690 15058,6784 14803,7056 14752,7108 14693,7168
 # REMOVED (mittlerweile 20er-Zone) --- 10er-Zone	RW6;RW6 13416,7712 13423,7757 13441,7874
 # REMOVED (mittlerweile 20er-Zone) --- 10er-Zone	RW6;RW6 13416,7712 13378,7695 13288,7653 13177,7644 13188,7590 13295,7627 13392,7648 13417,7654 13424,7680 13416,7712
 # REMOVED (mittlerweile 20er-Zone) --- 10er-Zone	RW6;RW6 13045,7938 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742 13278,7673 13288,7653 13295,7627 13335,7450
@@ -7522,7 +7532,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2024-12-12 vvv
+#: last_checked: 2024-12-18 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7562,7 +7572,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2024-12-12
+#: last_checked: 2024-12-18
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
@@ -9241,4 +9251,10 @@ asphaltiert	RW1;RW9 7308,9163 7363,9152
 	RW3; 15021,11152 14988,11130
 # 
 	RW6;RW6 7998,15068 8015,15047 8037,14958 8091,14895
+# 
+	RW6;RW6 12673,1140 12704,1102
+	RW6;RW6 12673,1140 12738,1213 12802,1285 12868,1315
+	RW6;RW6 12802,1285 12832,1192 12854,1121
+	RW6;RW6 12745,1116 12832,1192 12860,1200 12914,1215
+	RW6;RW6 12904,1299 12914,1215 12928,1126
 # 

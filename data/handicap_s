@@ -922,7 +922,6 @@ Filehner Str.: zwei Bodenschwellen	q0 22395,6821 22428,6874 22448,6957 22474,706
 Wongrowitzer Steig: Bodenschwelle	q0 22474,7065 22358,7093
 Wirsitzer Weg: Bodenschwelle	q0 22448,6957 22641,6918
 (Valeska-Gert-Str. - Am Postbahnhof): Fuﬂg‰nger	q1 12807,11287 12713,11372
-Fritzi-Massary-Str: Bordsteine	q3 15428,6355 15452,6384
 (Rotkehlchenweg - Kormoranweg): eng, einige Fuﬂg‰nger, Bordsteine	q3 14099,3772 14189,3732
 D¸rtenstr.: Fuﬂg‰nger	q2 13785,4839 13825,4850 13874,4867 13914,4877
 Angelikaweg: Fuﬂg‰nger	q2 15459,2921 15537,3026
@@ -2624,6 +2623,8 @@ Hebammensteigbr¸cke: Fuﬂg‰nger	q3 13193,21700 13168,21706 13135,21715 13121,2167
 (Babelsberger Str. - Volkspark Wilmersdorf): Bordstein, einige Fuﬂg‰nger	q3 5799,8356 5782,8344
 (Babelsberger Str. - Volkspark Wilmersdorf): Bordstein, einige Fuﬂg‰nger	q3 5799,8356 5818,8354
 Tourcoingstr.: Baumst‰mme als Barrieren	q4 3796,16202 3781,16175
+Am M¸hlanger/Knyphausenweg: Stadtplatz, einige Fuﬂg‰nger	q1 12868,1315 12902,1321 12904,1299
+Am Teltowkanal: zahlreiche Temposchwellen, abwechselnd rechts und links umfahrbar	q0 15338,4341 15331,4371 14967,4641
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3582,6 +3583,7 @@ Walter-Friedrich-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::ignd
 Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 24362,11954 24317,11754
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
+Buswendestelle Gensweg: gesperrt, ggfs. schieben	q4::igndisp 12673,1140 12609,1088 12588,1103
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine: gesperrt, ggfs. schieben	q3:inwork::igndisp 17753,8290 17771,8349 17794,8429
 Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine: gesperrt, ggfs. schieben	q4:inwork::igndisp 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172

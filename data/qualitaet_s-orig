@@ -141,7 +141,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2024-11-26
+#: last_checked: 2024-12-18
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -2816,8 +2816,8 @@ Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q0- 1353
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14323,5455 14236,5393
 (Späthstr. - Weg an der Teltowkanalautobahn, Rampe): gutes Verbundsteinpflaster	Q0 14392,5453 14331,5613 14308,5627
 (Am Teltowkanal): guter Verbundsteinpflaster	Q0- 14466,5087 14562,4985 14713,4834 14796,4770 14967,4641
-(Am Teltowkanal): Asphalt	Q0 14967,4641 15338,4341
-(Am Teltowkanal): fester Sandweg	Q1- 15338,4341 15571,4168 15594,4152 15678,4083 15861,3942 15878,3936
+(Am Teltowkanal): Asphalt	Q0 14967,4641 15331,4371 15338,4341
+(Am Teltowkanal): fester Sandweg	Q1- 15338,4341 15576,4173 15594,4152 15678,4083 15861,3942 15878,3936
 (Am Teltowkanal): Asphalt	Q0- 15878,3936 16066,3799 16175,3715 16233,3671 16292,3626 16344,3586 16503,3464 16674,3331 16670,3325 16641,3285 16550,3155
 Fenchelweg: glattes Kopfsteinpflaster	Q1 15585,4139 15695,4051 15859,3924 15872,3888
 Fenchelweg: Beton	Q0- 15872,3888 15860,3838 15838,3754 15791,3686 15737,3609 15674,3528 15611,3448 15500,3299 15410,3179
@@ -8680,7 +8680,7 @@ Seidenhuhnweg: gepflastert	Q2 16008,446 16074,389
 Lakenfelderweg: Asphalt mit Schäden	Q1+ 15944,368 16008,446 16068,525 16085,547
 Lakenfelderweg: Kopfsteinpflaster	Q2 16085,547 16116,581
 Perlhuhnweg: Asphalt mit Schäden	Q1 15952,719 16008,628 16085,547
-Eilenburger Weg: Kopfsteinpflaster	Q2 16142,1141 16126,1112 16221,872
+Eilenburger Weg: Kopfsteinpflaster	Q2- 16142,1141 16130,1118 16221,872
 Igelkolbensteig: Pfad	Q2 15949,3575 16003,3652
 Melissenweg: Verbundsteinpflaster	Q1 16003,3652 16041,3718
 Klausenpaß: Beton	Q0 10271,2603 10369,2582 10392,2577 10507,2548 10693,2513
@@ -8784,7 +8784,7 @@ Landschöppenpfad: Gehwegplatten	Q0- 12609,1780 12574,1866
 #: note: vom Rufacher Weg geht auch eine Parkplatzeinfahrt ab, diese hat aber wurzelgeschädigten Asphalt
 Fläzsteinpfad: Verbundsteinpflaster/Gehwegpflasterung	Q1 12489,2105 12498,2025 12561,1931
 Reinowzeile: Asphalt	Q0 13450,1222 13417,1333 13413,1363
-Großcreutzweg: Asphalt	Q0 13514,1823 13502,1797 13507,1659
+Großcreutzweg: Asphalt	Q0 13514,1823 13502,1797 13506,1662
 Auf der Planweide: Verbundsteinpflaster	Q1 13871,1473 13794,1799
 Zum Biesenwerder: Kopfsteinpflaster	Q2- 14064,1590 14008,1835
 Am Buschfeld: schlechtes Kopfsteinpflaster	Q3+ 14171,1634 14124,1857
@@ -9142,7 +9142,8 @@ Erlenbruchring: Kopfsteinpflaster, kurzer Verbundsteinpflasterabschnitt	Q2 16320
 Erlenbruchring: Kopfsteinpflaster	Q2 16297,592 16409,774
 Brücke über den Rudower Fließ: Holzbohlen	Q1 16339,830 16333,833
 Am Rudower Fließ: wassergebundene Decke	Q1 16333,833 16327,834
-(Rudower Fließ - Groß-Ziethener Chaussee): wassergebundene Decke	Q1 16327,834 16316,841 16287,908
+(Rudower Fließ - Groß-Ziethener Chaussee): wassergebundene Decke	Q1 16327,834 16318,837 16287,908
+(Rudower Fließ - Groß-Ziethener Chaussee/Eilenburger Weg): wassergebundene Decke	Q1 16318,837 16294,827 16249,837 16221,872
 Am Rudower Fließ: wassergebundene Decke	Q1 16169,458 16200,464 16271,609
 Am Rudower Fließ: wassergebundene Decke	Q1 16230,655 16269,732 16327,834 16360,900 16365,935
 (Groß-Ziethener Chaussee - Am Rudower Fließ): Verbundsteinpflaster	Q1 16490,955 16464,1014
@@ -13837,6 +13838,27 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 # 
 (Parkplatz vor dem Stade Napoleon): Verbundsteinpflaster	Q1 4111,15999 4075,16030 4054,16035
 # 
+#: next_check_id: BUCKOWERFELDER-2024
+#: last_checked: 2024-12-18 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-03-31 vvv
+#: osm_watch: way id="946008570" version="4"
+#: XXX hier kommt vermutlich auch noch das Betonpflaster hin
+Am Mühlanger: provisorisch asphaltiert	Q1- 12738,1213 12802,1285
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+(Buswendestelle Gensweg): Beton	Q0 12588,1103 12609,1088 12673,1140
+Gensweg: Beton	Q0 12657,1154 12673,1140
+Gensweg: Asphalt	Q0 12673,1140 12704,1102
+Am Mühlanger: Betonpflaster	Q0- 12673,1140 12738,1213
+Am Mühlanger: Betonpflaster	Q0- 12802,1285 12868,1315 12902,1321
+Dyrekeweg: Betonpflaster	Q0- 12790,1302 12802,1285 12832,1192 12854,1121
+An den Buckower Feldern: Betonpflaster	Q0- 12914,1215 12860,1200
+An den Buckower Feldern: Kleinsteinpflaster	Q1 12860,1200 12832,1192
+An den Buckower Feldern: Betonpflaster	Q0- 12832,1192 12745,1116
+Knyphausenweg: Betonpflaster	Q0- 12902,1321 12904,1299 12914,1215 12928,1126
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -14440,7 +14462,7 @@ Chamissostr. (Französisch Buchholz): schlechtes Kopfsteinpflaster	Q3 12513,21857
 Suderoder Str. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13929,20745 14304,20682 14499,20649 14727,20610 14893,20583
 #: corrected_by: srt (Q3 -> Q2)
 Waldesruher Str. (Waldesruh): Sandweg, teilweise recht holprig	Q2 24910,7896 24842,7811 24800,7746 24718,7633 24648,7542 24593,7455
-Hogenestweg: Asphalt	Q0 13288,1647 13275,1908 13286,1942
+Hogenestweg: Asphalt	Q0 13288,1652 13275,1908 13286,1942
 #: corrected_by: srt (Q2 -> Q3)
 Tewsstr.: schlechtes Kopfsteinpflaster	Q3 -2391,2624 -2274,2656 -2160,2685 -2046,2717
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
@@ -15973,7 +15995,7 @@ Dielingsgrund: gutes Verbundsteinpflaster	Q1 10590,525 10783,587
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/grundeigentuemer-kritisieren-die-bvv_a234142 (auch erwähnt hier: Schwedter Str.)
 #: XXX siehe auch Finanzplan Berlin 2019-2023, S. 232 im pdf)
 #: osm_watch: way id="156350665" version="12"
-#: last_checked: 2024-03-26
+#: last_checked: 2024-12-18
 #: check_frequency: 180d
 Dielingsgrund: glattes Kopfsteinpflaster, etwas wellig	Q2+ 10777,605 10880,633 11083,639
 #: by: ^^^
@@ -20819,6 +20841,7 @@ Lukas-Cranach-Str.: schlechtes Kopfsteinpflaster	Q3 4337,3486 4366,3513 4387,353
 # 
 #: by: Niels Weber: vvv
 Angermünder Str. (Lichtenrade): schlechter Zustand der Fahrbahn	Q2+ 11081,-365 11145,-358 11179,-240 11192,-41
+#: confirmed_by: srt (nördlicher Abschnitt)
 Angermünder Str. (Lichtenrade): guter Asphalt	Q0 11192,-41 11198,110 11215,313 11222,483 11228,599 11229,634 11237,773
 Schwedter Str.: Asphalt	Q0 10913,96 10974,-83
 # REMOVED (nein) --- #: XXX gibt es hier Änderungen bei der Fahrbahnqualität? --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.519985.php --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.522382.php --- #: last_checked: 2017-08-10 --- #: check_frequency: 120d
@@ -24010,6 +24033,7 @@ Passower Str.: Beton	Q0- 18967,18015 19079,17999 19071,17874 18974,17796 18965,1
 Schirmvogelweg: Asphalt	Q0 14854,3587 14859,3602 14957,3696 15055,3787 15103,3835
 # 
 #: by: Marion (1268):
+#: confirmed_by: srt
 Rademeierweg: guter Asphalt	Q0 11372,706 11237,773 11078,844
 # 
 #: by: Jörg Henke vvv
@@ -32285,8 +32309,8 @@ Fuchsienweg: Beton	Q1 16096,3075 16376,2862 16573,2715
 Heideläuferweg: Asphalt	Q0 13010,2085 13043,1984 13070,1642 13075,1559 13089,1351
 #: corrected_by: srt
 Heideläuferweg: Verbundsteinpflaster	Q1+ 13089,1351 13092,1265 13093,1171 13109,1071
-#: confirmed_by: srt (zumindest das westliche und östliche Ende)
-Dröpkeweg: Asphalt	Q0 13070,1642 13181,1645 13288,1647 13397,1657 13507,1659 13531,1588 13657,1587
+#: confirmed_by: srt
+Dröpkeweg: Asphalt	Q0 13070,1642 13181,1645 13288,1652 13397,1657 13506,1662 13531,1588 13657,1587
 #: by: ^^^
 # 
 #: by: Stephan Lohse [AM] vvv
@@ -33560,5 +33584,6 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 4303,3260 4303,3260
 Einmündungsbereich mit Kopfsteinpflaster	Q2 4275,3428 4275,3428
 Wendehammerbereich mit Kopfsteinpflaster	Q2 5799,8356
 Einmündungsbereich mit Kopfsteinpflaster	Q2 22095,5344
+Kreuzungsbereich mit Kleinsteinpflaster	Q1 12832,1192
 #: ignore ^^^
 #: section ^^^

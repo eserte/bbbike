@@ -1028,6 +1028,7 @@ Faucherweg -> Gartenfelder Str.: durchgezogene Linie	3::igndisp -1282,14789 -129
 Berthold-Schwarz-Str.	1s -784,14940 -834,15053
 Adlergestell [Sonnenallee - Neltestraße]	1:igndisp 19486,3934 19367,4061 19348,4080
 Hauptstr. (Rummelsburg) [Nebenfahrbahn]	1s 15332,10657 15298,10682
+Buswendestelle Gensweg	2s 12673,1140 12609,1088 12588,1103
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2806,7 +2807,7 @@ tragen (7 Stufen)	0:20:-7 9762,16119
 tragen (3+20 Stufen)	0:40:-263 -6458,14292
 tragen (ca. 35 Stufen)	0:30:-75 7621,7105
 tragen (ca. 35 Stufen)	0:30:-75 7655,7096
-tragen (30 Stufen mit Kinderwagenrampe)	0:30:-53 15571,4168
+tragen (30 Stufen mit Kinderwagenrampe)	0:30:-54 15576,4173
 tragen (26 Stufen, steile Treppe)	0:30:-213 15156,6034
 tragen (Treppe)	0:30:-151 4808,3406
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30:-255 8823,16877
@@ -3492,6 +3493,10 @@ weites Drängelgitter	BNP:2:-144:trailer=7 16026,9821
 weites Drängelgitter	BNP:2:45:trailer=7 16261,9663
 Drängelgitter/Barriere	BNP:3:51:trailer=10 17130,18771
 Drängelgitter	BNP:3:-217:trailer=10 13014,21775
+An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
+Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12704,1102 12716,1088 12727,1074 12772,1019 12809,969
+Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12854,1121 12860,1082 12879,1000
+Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1027
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
 Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
@@ -3905,9 +3910,6 @@ Walter-Friedrich-Str.	1 16428,25107 16333,25147 16292,25164 16261,25178 16172,25
 Walter-Friedrich-Str.	1s 16172,25217 16171,25254
 Walter-Friedrich-Str.	1 16171,25254 16264,25418
 Groscurthstr.	1 16369,25230 16458,25193 16428,25107
-Sonnenallee	3nocross::ignrte 14617,7243 14693,7168 14752,7108 14803,7056
-Sonnenallee -> Krebsgang: Sonnenallee	3::igndisp 14617,7243 14693,7168 14792,7192
-Krebsgang -> Sonnenallee: Sonnenallee	3::igndisp 14792,7192 14693,7168 14752,7108
 Straßenbahntrasse	3nocross::ignrte 18631,10167 18694,10018 18703,9997 18740,9907
 Treskowallee -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18740,9907 18703,9997 18445,9887
 Treskowallee -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18694,10018 18703,9997 18708,10000
