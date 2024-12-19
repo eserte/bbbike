@@ -10113,6 +10113,8 @@ Matenzeile: Beton	Q0- 17365,17632 17474,17478 17582,17335 17714,17285
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Verbundsteinpflaster	Q1 15094,13750 15060,13735 15035,13701
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Betonplatten	Q0- 15035,13701 14995,13645
 (Voigtstr. - Pettenkoferstr.): Kopfsteinpflaster	Q2 14832,12755 14858,12765
+#: next_check_id: DOEBERITZERGRUENZUG-2024
+#: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
 Lehrter Str. [6-8]: Kopfsteinpflaster	Q2- 7630,13584 7733,13622
 (Seydlitzstr. - Lehrter Str.): Kopfsteinpflaster	Q2 7613,13517 7651,13447
 (Lehrter Str. - Fritz-Schloß-Park): Asphalt	Q0 7630,13584 7451,13504
@@ -12138,7 +12140,7 @@ Rainweg [Stichstraße]: Verbundsteinpflaster	Q1 25028,-2846 24977,-2753
 #: confirmed_by: srt
 Rainweg: Verbundsteinpflaster	Q1 25006,-3014 25000,-3001 24970,-2945 25012,-2857 25028,-2846
 Rainweg: Verbundsteinpflaster	Q1 25028,-2846 25113,-2797
-(Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0- 7895,13415 7837,13499 7795,13528 7775,13540
+(Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0- 7895,13415 7873,13448 7837,13499 7795,13528 7775,13540
 (Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0- 7775,13540 7666,13479 7653,13480
 Finckensteinallee: glatte Pflasterung	Q1- 4115,2726 4104,2749 4071,2763
 #: historical_note: früher: Asphalt mit einigen Schäden, Q1
@@ -13858,6 +13860,17 @@ An den Buckower Feldern: Betonpflaster	Q0- 12914,1215 12860,1200
 An den Buckower Feldern: Kleinsteinpflaster	Q1 12860,1200 12832,1192
 An den Buckower Feldern: Betonpflaster	Q0- 12832,1192 12745,1116
 Knyphausenweg: Betonpflaster	Q0- 12902,1321 12904,1299 12914,1215 12928,1126
+# 
+Döberitzer Grünzug: Beton	Q0 7837,13499 7812,13549
+Döberitzer Grünzug: Asphalt	Q0 7812,13549 7821,13559 7811,13590 7785,13595
+Döberitzer Grünzug: Beton	Q0 7785,13595 7748,13628
+Döberitzer Grünzug: Asphalt	Q0 7748,13628 7733,13622
+Döberitzer Grünzug: Asphalt	Q0 7733,13622 7716,13676 7731,13691
+Döberitzer Grünzug: Beton	Q0 7731,13691 7642,13815 7599,13891 7554,13949 7517,14019 7451,14111 7432,14157 7400,14207
+Quartiersplatz Schleicherareal: Beton	Q0 7400,14207 7303,14185
+Döberitzer Grünzug - Klara-Franke-Str.: Beton	Q0 7451,14111 7443,14107
+Döberitzer Grünzug - Klara-Franke-Str.: Beton	Q0 7642,13815 7630,13810
+Döberitzer Grünzug - KGA Lehrter Str.: Asphalt	Q0 7812,13549 7795,13528
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 

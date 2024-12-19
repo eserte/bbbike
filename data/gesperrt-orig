@@ -1718,6 +1718,8 @@ Hauptstr. (Rummelsburg) [Nebenfahrbahn]	1s:q4 15332,10657 15298,10682
 #: note: Einfahrt für Linienverkehr von Westen erlaubt (Einbahnstraße)
 Buswendestelle Gensweg	2s:q4 12673,1140 12609,1088 12588,1103
 # 
+Minna-Cauer-Str.: Straßentunnel	3nocross 7901,13324 7895,13415 7907,13532
+# 
 #: section ^^^
 ######################################################################
 #: section: empfohlene und unechte Sperrungen vvvvvvvvvvvvvvvvvvvvvvvv
@@ -2492,7 +2494,7 @@ Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11526,13252 11560,13232 11681,1
 Heerstr.: schlecht passierbar	3nocross -4078,11800 -4033,11786 -3820,11721 -3708,11686
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2523,5114 2560,5044 2577,4959 2596,4907
 Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11399,13333 11308,13389 11276,13408
-Otto-Braun-Str.: Straßenbahntrasse	3nocross 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11451,13301
+Otto-Braun-Str.: Straßenbahntrasse	3nocross 11706,13635 11652,13564 11561,13451 11539,13425 11525,13406 11486,13350 11451,13301
 Otto-Braun-Str.: Straßenbahntrasse	3nocross 11451,13301 11369,13174 11320,13095
 Otto-Braun-Str.: Mittelstreifen	3nocross 11369,13174 11320,13095 11267,13012 11226,12945
 #: by: ^^^
@@ -3989,6 +3991,7 @@ Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 172
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898
 #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant)
+#: osm_watch: note 4551219 1
 #: last_checked: 2024-11-28
 # REMOVED --- #: next_check: 2024-10-31
 Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::inwork 7912,14160 7875,14204
@@ -4075,7 +4078,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-12-09
+#: last_checked: 2024-12-19
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4177,7 +4180,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=736121#post736121
 #: by: https://www.deutsches-architekturforum.de/thread/15360-quartier-hugos-mariendorf/?postID=731063#post731063 ("Quartier Hugos")
 #: osm_watch: way id="287142081" version="14"
-#: osm_watch: way id="255588538" version="13"
+#: osm_watch: way id="255588538" version="14"
 #: osm_watch: way id="1022315542" version="10"
 #: osm_watch: way id="1202387366" version="3"
 # REMOVED --- #: osm_watch: way id="271172796" version="6"
@@ -4665,7 +4668,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-neubau-mehrfamilienhaus-wohnanlage-parkstadt-karlshorst-berlin-deutschland-637598.html
-#: last_checked: 2024-11-23 vvv
+#: last_checked: 2024-12-13 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
@@ -4894,6 +4897,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: source_id: bvg2021:x11#BVG312077_0
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: note: Eintrag existiert auch in temp blockings
+#: XXX: Freigabe der neuen Überführung soll im Herbst 2025 passieren
 #: also_indoor: traffic (G,B(nur eine Richtung))
 #: also_indoor: search Buckower_Chaussee
 # REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
@@ -4901,7 +4905,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: priority: #A
 #: last_checked: 2024-09-21 (youtube)
 #: check_frequency: 360d
-#: next_check: 2025-12-31
+#: next_check: 2025-10-31
 Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
 # 
 # REMOVED (-> temp blockings) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: next_check: 2021-03-15 --- Katharina-Boll-Dornberger-Str.: Durchgang gesperrt	2::inwork 18836,3611 18943,3508
@@ -5127,7 +5131,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-12-17
+#: last_checked: 2024-12-19
 #: check_frequency: 30d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
@@ -5139,7 +5143,7 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
 # 
 #: osm_watch: note 4480556 3
-#: last_checked: 2024-12-17
+#: last_checked: 2024-12-19
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021
@@ -5613,8 +5617,10 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: also_indoor: traffic (G,B,W)
 #: osm_watch: way id="1223345278" version="5"
 #: XXX Außerdem: der S-Bahnhof wird zukünftig wohl südlich des Bahnunterführung sein
+#: XXX Unterführung wird voraussichtlich im Sommer 2025 fertig sein
 #: last_checked: 2024-11-10 (bahninfo-forum)
 #: check_frequency: 180d
+#: next_check: 2025-08-15
 Bhf. Blankenfelde: Bahnübergang existiert nicht mehr, neue Unterführung wird gebaut	2::inwork 11667,-7536 11601,-7560 11551,-7599
 # 
 # REMOVED (aus landstrassen-orig entfernt) --- #: next_check_id: MAHLOWUNTERFUEHRUNG-2023 --- #: next_check: 2023-12-31 --- Trebbiner Straße (Mahlow): Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11065,-5338 11077,-5335 11119,-5326

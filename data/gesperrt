@@ -1029,6 +1029,9 @@ Berthold-Schwarz-Str.	1s -784,14940 -834,15053
 Adlergestell [Sonnenallee - Neltestraße]	1:igndisp 19486,3934 19367,4061 19348,4080
 Hauptstr. (Rummelsburg) [Nebenfahrbahn]	1s 15332,10657 15298,10682
 Buswendestelle Gensweg	2s 12673,1140 12609,1088 12588,1103
+Straßentunnel	3nocross::ignrte 7901,13324 7895,13415 7907,13532
+Minna-Cauer-Str. -> Lehrter Str.: Straßentunnel	3::igndisp 7901,13324 7895,13415 7873,13448
+Lehrter Str. -> Minna-Cauer-Str.: Straßentunnel	3::igndisp 7873,13448 7895,13415 7907,13532
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2252,15 +2255,15 @@ Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11315,13210 11399,13333 11
 Mollstr. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11451,13301 11399,13333 11315,13210
 Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11276,13408 11308,13389 11346,13441
 Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11346,13441 11308,13389 11399,13333
-Straßenbahntrasse	3nocross::ignrte 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11451,13301
+Straßenbahntrasse	3nocross::ignrte 11706,13635 11652,13564 11561,13451 11539,13425 11525,13406 11486,13350 11451,13301
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11561,13451 11652,13564 11598,13598
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11598,13598 11652,13564 11706,13635
 Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3::igndisp 11652,13564 11561,13451 11608,13417
 Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11608,13417 11561,13451 11539,13425
-Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11486,13350 11539,13425 11490,13463
+Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11525,13406 11539,13425 11490,13463
 Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11490,13463 11539,13425 11561,13451
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11451,13301 11486,13350 11433,13389
-Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11433,13389 11486,13350 11539,13425
+Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11433,13389 11486,13350 11525,13406
 Straßenbahntrasse	3nocross::ignrte 11451,13301 11369,13174 11320,13095
 Wadzeckstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11354,13184 11369,13174 11451,13301
 Otto-Braun-Str. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11320,13095 11369,13174 11354,13184
@@ -4209,3 +4212,4 @@ Gartenfelder Str.: linker Gehweg bis Ampel	1::igndisp -1336,14786 -1282,14789
 Molkenmarkt - Eiergasse: linker Gehweg	1::igndisp 10700,12316 10697,12303
 Nahmitzer Damm: linker Gehweg bis Parkweg im Fresepark	1::igndisp 8583,301 8736,337
 Nahmitzer Damm: linker Gehweg bis Ampel	1::igndisp 8382,347 8470,310 8583,301
+Minna-Cauer-Str.: linker Gehweg	1::igndisp 7873,13448 7901,13324

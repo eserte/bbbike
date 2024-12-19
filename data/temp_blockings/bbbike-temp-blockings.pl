@@ -17645,12 +17645,10 @@ EOF
        until => $isodate2epoch->("2025-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 12, start => "2023-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten, 2022/2023 ebenso
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2024 bis 02.01.2025',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor: Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr. sowie einige Wege im östlichen Tiergarten, ab 26.12.2024 bis 02.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SILVESTER-YYYY
-#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
-#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
 #: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72 (inaktiv)
 #: source_id: viz2021:13.369347,52.515752,26.12.2023,06:00 (bis 02.01.2024) (inaktiv)
@@ -17658,10 +17656,13 @@ EOF
 #: source_id: viz2021:13.37679,52.5163,26.12.2023,19:34 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024) (inaktiv)
+#: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
+#: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
 #: by: https://viz.berlin.de/2020/12/welcome21/
 #: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
 #: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
 #: by: https://viz.berlin.de/aktuelle-meldungen/silvesterfeier-sperrungen/ (außerdem noch weitergehende Sperrungen: alle Straßen rund um den Großen Stern)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel-2024-25/ (ab 26.12.2024)
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
@@ -22023,13 +22024,13 @@ EOF
 EOF
      },
      { from  => 1719205200, # 1361168940, # 2013-02-18 07:29
-       until => $isodate2epoch->("2024-12-20 17:00:00"), # 1724684400, # 1364227200, # 2013-03-25 17:00
+       until => 1734636642, # $isodate2epoch->("2024-12-20 17:00:00"), # 1724684400, # 1364227200, # 2013-03-25 17:00
 #      text  => 'Fürstenwalder Damm (Köpenick) Richtung Bölschestr. zwischen Müggelseedamm und Mühlweg Baustelle, Fahrtrichtung gesperrt (bis Ende 03/13)',
        text  => 'Fürstenwalder Damm: Leitungsarbeiten zwischen Liebstadter Gang und Mühlweg, Richtung Bölschestr. gesperrt, außerdem Einbahnstraßenregelung im Straßenzug Jastrower Weg - Stillerzeile, vom 25.06.2024 07:00 bis 20.12.2024 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: IM_019584 (alter Eintrag von 2013, inaktiv)
-#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen) (bis 28.10.2024) (bis 31.10.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.601091,52.451791,25.06.2024,07:00 (bis 26.08.2024, auch Radverkehr betroffen) (bis 28.10.2024) (bis 31.10.2024) (bis 20.12.2024) (inaktiv)
 # REMOVED (hier nicht) ---	q4::inwork; 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544
 Fürstenwalder Damm, linker Gehweg existiert	q4::inwork; 24471,5544 24700,5633
 Jastrower Weg: Einbahnstraße	q4::inwork; 23877,5503 23866,5515 23863,5549 23845,5558 23696,5529 23657,5467
@@ -23397,20 +23398,21 @@ EOF
 	2::inwork 20653,7289 20603,7189 20640,7122 20722,6971 21239,6063 21243,6046 21303,5826
 EOF
      },
-     { from  => $isodate2epoch->("2024-12-13 12:00:00"), # 1 Tag Vorlauf # 1386198000, # 2013-12-05 00:00
-       until => $isodate2epoch->("2024-12-15 21:00:00"), # 1386525600, # 2013-12-08 19:00
+     { from  => $isodate2epoch->("2024-12-20 12:00:00"), # 1 Tag Vorlauf # 1386198000, # 2013-12-05 00:00
+       until => $isodate2epoch->("2024-12-22 21:00:00"), # 1386525600, # 2013-12-08 19:00
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12, start => "2022-01-01T00:00:00"]],
        #recurrence_prewarn_days => -19,
-       text  => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 14.12.2024 und 15.12.2024', # note: früher "Rudower Adventsmeile"
+       text  => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 21.12.2024 und 22.12.2024', # note: früher "Rudower Adventsmeile"
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
 #: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241219
 #: source_id: IM_020883 (inaktiv)
 #: source_id: 2147345257 (inaktiv)
-# note: früher Alt-Rudow zwischen Köpenicker Str. und Krokusstr.:	2::xmas 16849,1437 16805,1488 16610,1715
-	2::xmas 16610,1715 16767,1831
+Alt-Rudow zwischen Köpenicker Str. und Krokusstr.	2::xmas 16849,1437 16805,1488 16610,1715
+Krokusstr.	2::xmas 16610,1715 16767,1831
 EOF
      },
      { from  => 1386482400, # 2013-12-08 07:00
@@ -33845,7 +33847,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782975251074502750
 #: by: https://pbs.twimg.com/media/GL2ysSnWoAE1G5t?format=jpg&name=medium (Einbahnstraßenregelung in der Parkstr.)
 #: source_id: viz2021:13.467591,52.555287,24.04.2024,08:00 (bis 26.01.2025) (inaktiv)
-#: source_id: viz2021:13.467591,52.555287,25.04.2024,03:00 (bis 29.11.2024) (bis 20.12.2024)
+#: source_id: viz2021:13.467591,52.555287,25.04.2024,03:00 (bis 29.11.2024) (bis 20.12.2024) (inaktiv)
 #: also_indoor: traffic
 # REMOVED (nein) --- #: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? --- #: next_check: 2024-04-24
 #: note: Radspur existiert
@@ -41293,10 +41295,11 @@ EOF
 #: by: https://nachgefragt.bvg.de/schoeneweide/ (Verlängerung der aktuellen Bauphase: bis 05.07.2024) (aktuelle Bauphase bis voraussichtlich 17.08.2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
-#: source_id: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
+#: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
 #: XXX mittlerweile (2024-11-20) laufen die letzten Asphaltierungsarbeiten, aber es ist nicht wahrscheinlich, dass übermorgen die Freigabe erfolgt (z.B. fehlen Markierungen)
 #: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
 #: also_indoor: traffic (H,G,B,T,W)
@@ -43514,8 +43517,9 @@ EOF
      },
      { from  => 1713942000, # 2024-04-24 09:00
        until => 1747839600, # 2025-05-21 17:00
-#       text  => 'Am Rosenhag und Uslarer Str.: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
-       text  => 'Am Lupinenfeld und Karlshafener Str.: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
+#      text  => 'Am Rosenhag und Uslarer Str.: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
+#      text  => 'Am Lupinenfeld und Karlshafener Str.: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
+       text  => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
@@ -43525,16 +43529,20 @@ EOF
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
-# REMOVED --- #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
+#: also_indoor: traffic (B,T)
+#: note: bei Bing & TomTom nur die östliche Anbindung als gesperrt markiert
+#: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
+#: last_checked: 2024-12-19 (traffic) vvv
+#: check_frequency: 30d vvv
+Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
+Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 # REMOVED ---	q4::inwork; 25050,13539 25163,13494
 # REMOVED ---	q3::inwork 25163,13494 25287,13464
 # REMOVED --- Uslarer Str.	q3::inwork; 24967,13438 25094,13362
-Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
-Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
-#: XXX hier Halteverbotsschilder nur bis 20.12.2024
-#: next_check: 2024-12-20
-Karlshafener Str.	q4::inwork 24899,13007 25054,12926
-# REMOVED --- #: add_fragezeichen ^^^
+# REMOVED (möglicherweise entfernt, siehe traffic) --- #: XXX hier Halteverbotsschilder nur bis 20.12.2024 --- #: next_check: 2024-12-20 --- Karlshafener Str.	q4::inwork 24899,13007 25054,12926
 EOF
      },
      { from  => 1714280400, # 2024-04-28 07:00
@@ -43881,10 +43889,10 @@ EOF
 #: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
 #: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
 #: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024) (bis 16.12.2024) (bis 20.12.2024) (bis 19.12.2024)
+#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024) (bis 16.12.2024) (bis 20.12.2024) (bis 19.12.2024) (inaktiv)
 #: source_id: viz2021:13.4546,52.47445,18.10.2024,13:33 (Braunschweiger Str. nicht erwähnt, bis 29.11.2024) (inaktiv)
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
-#: add_fragezeichen: Bestehen die Sperrungen in Sonnenallee und Braunschweiger Str. noch immer?
+#: add_fragezeichen: Besteht die Sperrung in der Braunschweiger Str. noch immer?
 #: note: laut rbb wurde die Meldung in der Sonnenalle mittlerweile entfernt
 #: last_checked: 2024-12-12 vvv
 #: check_frequency: 14d vvv
@@ -44232,7 +44240,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-12-17 vvv
+#: last_checked: 2024-12-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44469,7 +44477,7 @@ EOF
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
-#: also_indoor: traffic (G,B,T,W)
+#: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
 #: add_fragezeichen: Ist der Teltowkanaluferweg weiterhin komplett gesperrt? vvv
 #: last_checked: 2024-11-27 vvv
 #: check_frequency: 30d vvv
@@ -45154,15 +45162,15 @@ EOF
      },
      { from  => 1725548760, # 2024-09-05 17:06
        dont_check_date => 1, until => undef, # $isodate2epoch->("2024-12-20 17:00:00"), # 1728572400, # 2024-10-10 17:00
-       text  => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis voraussichtlich 24.01.2025 17:00',
+       text  => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis voraussichtlich 24.02.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 24.01.2025)
+#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 24.01.2025) (bis 24.02.2025)
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2024-12-11
-#: next_check: 2025-01-24
+#: next_check: 2025-02-24
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 EOF
      },
@@ -45246,7 +45254,7 @@ EOF
 EOF
      },
      { from  => 1732489200, # 2024-11-25 00:00
-       until => $isodate2epoch->("2024-12-20 17:00:00"), # 1735232400, # 2024-12-26 18:00
+       until => $isodate2epoch->("2024-12-20 11:00:00"), # 1735232400, # 2024-12-26 18:00
        text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 26.11.2024 bis 20.12.2024',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -45265,11 +45273,11 @@ EOF
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
 #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="31"
 #: osm_watch: note 4536637 9
-#: last_checked: 2024-10-12 (mapillary)
-#: next_check: 2024-12-20
+# REMOVED --- #: last_checked: 2024-10-12 (mapillary) --- #: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665
 EOF
      },
@@ -45458,7 +45466,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-12-17 vvv
+#: last_checked: 2024-12-19 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-01-17 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -46031,6 +46039,16 @@ EOF
 #: by: https://pbs.twimg.com/media/GercPIvWwAAA2u8?format=png&name=900x900
 #: note: laut VIZ-Korrespondenz gibt es eine gesonderte Umleitungsstrecke für den Radverkehr
 	q4::inwork; 4787,7213 4791,7090
+EOF
+     },
+     { from  => 1734584400, # 2024-12-19 06:00
+       until => 1734908340, # 2024-12-22 23:59
+       text  => 'Bölschestr.: Weihnachtsmarkt, zwischen Aßmannstr. und Fürstenwalder Damm gesperrt, vom 20.12.2024 6:00 Uhr bis 22.12.2024 23:59 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1869796587712467317
+#: by: https://pbs.twimg.com/media/GfKxCRhXEAA0vc3?format=png&name=900x900
+	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
      },
     );

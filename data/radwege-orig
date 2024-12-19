@@ -534,7 +534,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2024-12-03 vvv
+#: last_checked: 2024-12-19 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -2178,7 +2178,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2024-12-17 vvv
+#: last_checked: 2024-12-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2455,11 +2455,11 @@ provisorische Radspuren	RW3;RW3 5866,10492 6025,10746
 #: by: https://www.bahninfo-forum.de/read.php?9,428761,753041#msg-753041 (erster von zwei Aufzügen in Betrieb genommen)
 #: source_id: 2147345461 (bis 30.09.2021) (inaktiv)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
-#: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024)
+#: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025)
 #: also_indoor: traffic (ex-B[minor])
 #: last_checked: 2024-09-07
 #: check_frequency: 90d
-#: next_check: 2024-12-31
+#: next_check: 2025-12-31
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492
@@ -3287,14 +3287,13 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 	RW4; 11369,13174 11451,13301
 # REMOVED (bleibt dabei, kein Platz mehr für eine Busspur) --- #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5; --- #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01) --- #: osm_watch: way id="187103792" version="10" --- #: source_id: 2147343199 --- #: last_checked: 2018-10-13 --- # REMOVED --- #: check_frequency: 14d --- #: next_check: 2018-10-18
 	RW4; 11451,13301 11369,13174
-#: historical_note: früher (bis Mitte Dezember 2024): Busspur gilt Mo-Fr 6-20 Uhr, RW5;
-	RW4?; 11451,13301 11486,13350
-#: historical_note: früher (bis Mitte Dezember 2024): Busspur ist immer gültig, RW5;
-	RW4?; 11486,13350 11539,13425 11561,13451 11652,13564
+#: historical_note: früher (bis Mitte Dezember 2024): Busspur gilt Mo-Fr 6-20 Uhr, im weiteren Verlauf immer gültig, RW5;
+Bushaltestelle	RW5; 11451,13301 11486,13350 11525,13406
+	RW4; 11525,13406 11539,13425 11561,13451 11652,13564
 	RW1; 11486,13350 11451,13301
-	RW3; 11652,13564 11706,13635
+Fahrradschleuse	RW3; 11652,13564 11706,13635
 #: historical_note: früher (bis Mitte Dezember 2024): Busspur gilt 6-24 Uhr, RW5;
-	RW4?; 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350
+	RW4?; 11706,13635 11652,13564 11561,13451 11539,13425 11525,13406 11486,13350
 #: by: Christian Bewernitz
 #: confirmed_by: srt
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12161,13711 12038,13685 11907,13655 11868,13646 11823,13635 11785,13625
@@ -6462,13 +6461,14 @@ asphaltiert	RW1; 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
 asphaltiert	RW1; 18042,4667 17951,4785 17879,4910 17775,5083
 asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,5338
 #: next_check_id: STERNDAMM-2023
-#: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024)
+#: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024) (bis 31.03.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7609 (Antrag)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (bis Mitte Oktober für Kfz-Verkehr gesperrt)
 #: by[nocache]: https://www.facebook.com/larsduesterhoeft1981/posts/pfbid0jyCzp1ULBQ8ZkAaVbTgcaNAcQpqMpfY61ePJ3Bzuyvt3Dg3ctbA8Rjej8xo7C7p9l (Freigabe für Kfz-Verkehr bis Ende 2024?)
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (Einbahnstraße für MIV bis voraussichtlich März 2025)
 #: last_checked: 2024-11-20
 #: check_frequency: 90d
-#: next_check: 2024-12-31
+#: next_check: 2025-03-31
 provisorische Radspur	RW4; 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
 #: by: bahninfo-forum
 #: confirmed_by: srt
@@ -8519,7 +8519,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.39961,52.49841,24.10.2023,18:10 (bis 29.12.2023) (am Folgetag inaktiv)
 #: source_id: viz2021:13.40304,52.49845,28.02.2024,07:00 (bis 15.04.2024) (inaktiv)
 #: source_id: viz2021:13.401157,52.498364,06.10.2021,08:00 (bis 29.03.2024) (bis 15.04.2024) (bis 28.02.2024) (inaktiv)
-#: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024) (bis 31.12.2024)
+#: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024) (bis 31.12.2024) (bis 24.04.2025)
 #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (Gitschiner/Alexandrinenstr., bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv) (bis 01.11.2024) (bis 29.11.2024) (bis 31.01.2025)
 #: source_id: viz2021:13.399611,52.49841,08.10.2024,15:06 (bis 01.11.2024) (inaktiv)
 #: source_id: viz2021:13.40304,52.49845,31.07.2024,14:54 (bis 31.08.2024) (inaktiv)

@@ -1795,7 +1795,7 @@ Földerichplatz: Fußgängerzone	q3 -3942,12559 -3940,12377
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Fußgänger	q1 20759,15740 20789,15736
 (Wasserweg - Treptower Park): einige Fußgänger, Bordstein, Zugang kann zugeparkt sein	q3 15678,8911 15617,8924
 Monumentenplatz: einige Fußgänger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
-(Minna-Cauer-Str. - Lehrter Str.): Fußgänger, Radfahren offiziell verboten	q4 7895,13415 7837,13499 7795,13528 7775,13540
+(Minna-Cauer-Str. - Lehrter Str.): Fußgänger, Radfahren offiziell verboten	q4 7895,13415 7873,13448 7837,13499 7795,13528 7775,13540
 (Minna-Cauer-Str. - Lehrter Str.): einige Fußgänger, schmale Straße	q1 7775,13540 7666,13479 7653,13480
 Andreas-Hofer-Platz: einige Fußgänger, Bordsteine	q3 10490,16914 10493,16960
 Schlosspark Schönhausen: einige Fußgänger, Pflasterreihen	q1 10496,18704 10518,18750 10513,18854 10497,18883 10507,18959 10529,19055 10584,19132 10600,19225
@@ -2625,6 +2625,17 @@ Hebammensteigbrücke: Fußgänger	q3 13193,21700 13168,21706 13135,21715 13121,2167
 Tourcoingstr.: Baumstämme als Barrieren	q4 3796,16202 3781,16175
 Am Mühlanger/Knyphausenweg: Stadtplatz, einige Fußgänger	q1 12868,1315 12902,1321 12904,1299
 Am Teltowkanal: zahlreiche Temposchwellen, abwechselnd rechts und links umfahrbar	q0 15338,4341 15331,4371 14967,4641
+(Döberitzer Grünzug): einige Fußgänger	q1 7837,13499 7812,13549
+(Döberitzer Grünzug): einige Fußgänger	q1 7812,13549 7821,13559 7811,13590 7785,13595
+(Döberitzer Grünzug): einige Fußgänger	q1 7785,13595 7748,13628
+(Döberitzer Grünzug): einige Fußgänger	q1 7748,13628 7733,13622
+(Döberitzer Grünzug): einige Fußgänger	q1 7733,13622 7716,13676 7731,13691
+(Döberitzer Grünzug): einige Fußgänger	q1 7731,13691 7642,13815 7599,13891 7554,13949 7517,14019 7451,14111 7432,14157 7400,14207
+(Quartiersplatz Schleicherareal): einige Fußgänger, Spielplätze	q2 7400,14207 7303,14185
+(Döberitzer Grünzug - Klara-Franke-Str.): einige Fußgänger	q1 7451,14111 7443,14107
+(Döberitzer Grünzug - Klara-Franke-Str.): einige Fußgänger	q1 7554,13949 7547,13946
+(Döberitzer Grünzug - Klara-Franke-Str.): einige Fußgänger	q1 7642,13815 7630,13810
+(Döberitzer Grünzug - KGA Lehrter Str.): einige Fußgänger	q1 7812,13549 7795,13528
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3670,3 +3681,4 @@ Gartenfelder Str.: linker Gehweg bis Ampel	q3::igndisp; -1282,14789 -1336,14786
 Molkenmarkt - Eiergasse: linker Gehweg	q4::igndisp; 10697,12303 10700,12316
 Nahmitzer Damm: linker Gehweg bis Parkweg im Fresepark	q4::igndisp; 8736,337 8583,301
 Nahmitzer Damm: linker Gehweg bis Ampel	q4::igndisp; 8583,301 8470,310 8382,347
+Minna-Cauer-Str.: linker Gehweg	q4::igndisp; 7901,13324 7873,13448
