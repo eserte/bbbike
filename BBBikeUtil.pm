@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.42;
+$VERSION = 1.43;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -336,6 +336,7 @@ BEGIN {
     %uml = ('ä' => 'ae', 'ö' => 'oe', 'ü' => 'ue', 'ß' => 'ss',
 	    'Ä' => 'Ae', 'Ö' => 'Oe', 'Ü' => 'Ue',
 	    'é' => 'e', 'è' => 'e', 'ë' => 'e', 'á' => 'a',
+	    'É' => 'E',
 	   );
     $uml_keys = join("",keys %uml);
     $uml_keys_rx = qr{[$uml_keys]};
@@ -343,6 +344,7 @@ BEGIN {
     %uml_german_locale = ('ä' => 'a', 'ö' => 'o', 'ü' => 'u', 'ß' => 'ss',
 			  'Ä' => 'A', 'Ö' => 'O', 'Ü' => 'U',
 			  'é' => 'e', 'è' => 'e', 'ë' => 'e', 'á' => 'a',
+			  'É' => 'E',
 			  # some Polish and Czech characters appearing in the bbbike data set
 			  # XXX better to use Text::Unidecode maybe?
 			  "\x{00DA}" => 'U', "\x{0141}" => 'L', "\x{015A}" => 'S',
