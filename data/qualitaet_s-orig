@@ -545,6 +545,8 @@ Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10511,10800 10397,10852 10103,10989
 Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11808,11482
 #: note: alter brüchiger Asphaltstreifen existiert auch hier, aber wegen diagonal parkender Autos nicht benutzbar
 Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1515855.php (Fahrbahnsanierung)
+#: XXX Ist der Asphalt hier besser geworden?
 Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: next_check_id: ODER-2022
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn 
@@ -12583,6 +12585,8 @@ Färberstr. [Wohngebiet]: Beton/Asphalt	Q0 21622,4884 21591,4902 21631,4991 21643
 Albert-Einstein-Str.: Asphalt	Q0 19091,2443 19094,2495 19204,2603 19329,2715 19396,2777 19440,2817 19534,2905 19592,2965 19695,3072
 Siegfried-Hirschmann-Park: Betonpflaster	Q1+ 14676,11572 14714,11549 14723,11532 14745,11487
 Siegfried-Hirschmann-Park: Betonpflaster	Q1+ 14830,11551 14808,11520 14779,11505 14745,11487 14684,11456
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1515855.php (Sanierung 2024)
+#: XXX Ist der Asphalt nach den Sanierungsarbeiten besser geworden?
 Lobeckstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0- 10585,10766 10492,10582 10484,10567 10433,10456 10363,10303
 (Wohngebietsstraße): Betonsteinpflaster	Q0- 21596,132 21589,131 21503,114 21435,99 21367,84
 Weidenkätzchenweg: Betonsteinpflaster	Q0- 21465,-15 21450,38 21435,99 21421,158
@@ -28836,9 +28840,10 @@ Birkenstr. (Köpenick): Kopfsteinpflaster	Q2 23947,4673 23869,4733
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> Kleinsteinpflaster)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1492778.php (Sanierung bis 24.01.2025)
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/wegen-sanierung-gesperrt_a427384
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1516193.php (Verlängerung bis 30.04.2025)
 #: note: zu wenig BBBike-Traffic für einen temp-blockings-Eintrag (<1/Monat)
 #: XXX Bleibt es nach der Sanierung beim Kleinsteinpflaster?
-#: next_check: 2025-01-24
+#: next_check: 2025-04-30
 Dallwitzstr.: Kleinsteinpflaster	Q1- 96,2225 163,2091 146,2073 93,2014 80,1998 18,1928
 #
 #: by: oliver (icebear...)

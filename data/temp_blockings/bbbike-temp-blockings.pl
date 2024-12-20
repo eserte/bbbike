@@ -29341,9 +29341,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-11-04 00:00:00"), # undef,
-       until => $isodate2epoch->("2024-12-31 18:00:00"), # 1539631700, # -> gesperrt-orig --- $isodate2epoch->("2019-09-01 18:00:00"),
+       until => $isodate2epoch->("2025-01-07 08:00:00"), # $isodate2epoch->("2024-12-31 18:00:00"), # 1539631700, # -> gesperrt-orig --- $isodate2epoch->("2019-09-01 18:00:00"),
 #       text  => 'Paul-Schwarz-Promenade: bevorstehende Sperrung in Höhe Benjamin Franklin',
-       text  => 'Paul-Schwarz-Promenade: Bauarbeiten, Sperrung zwischen Bäkepark und Krahmerstr., voraussichtlich bis Ende 2024',
+       text  => 'Paul-Schwarz-Promenade: Bauarbeiten, Sperrung zwischen Bäkepark und Krahmerstr., voraussichtlich bis zum 07.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1499735.php (ab 4.11.2024 für ca. 2 Monate, Fertigstellung noch 2024)
@@ -31423,7 +31423,7 @@ EOF
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2024-12-14 (traffic) vvv
+#: last_checked: 2024-12-20 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -35298,6 +35298,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
 #: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
 #: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
@@ -37291,12 +37292,13 @@ EOF
 	2::inwork 10405,12462 10363,12535 10300,12587
 EOF
      },
-     { from  => 1659852000, # 2022-08-07 08:00
-       until => $isodate2epoch->("2024-12-20 18:00:00"), # 1732719600, # 2024-11-27 16:00
-       text  => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung bis 20.12.2024',
+     { from  => $isodate2epoch->("2025-01-20 00:00:00"), # 1659852000, # 2022-08-07 08:00
+       until => $isodate2epoch->("2025-03-31 18:00:00"), # $isodate2epoch->("2024-12-20 18:00:00"), # 1732719600, # 2024-11-27 16:00
+#      text  => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung bis 20.12.2024',
+       text  => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung (auch für Fußgänger und Radfahrer), voraussichtlich von Ende Januar 2025 bis Ende März 2025',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 226502047 (bis 27.11.2024)
+#: source_id: 226502047 (bis 27.11.2024) (inaktiv)
 #: by: https://bauprojekte.deutschebahn.com/p/hennigsdorf-marwitzer-strasse-eue?date=20240925 (Sperrung auch für Fußgänger + Radverkehr bis 20.12.2024, weitere Sperrung 2025)
 #: note: auch für Fußgänger gesperrt
 	2::inwork -3475,26523 -3556,26560
@@ -41431,12 +41433,13 @@ EOF
 EOF
      },
      { from  => 1693458000, # 2023-08-31 07:00
-       until => $isodate2epoch->("2026-03-31 18:00:00"), # 1734649140, # 2024-12-19 23:59
+       until => $isodate2epoch->("2026-03-30 18:00:00"), # 1734649140, # 2024-12-19 23:59
        dont_check_date => 1,
-       text  => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis 19.12.2024 23:59, vielleicht sogar bis Ende März 2026',
+       text  => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis voraussichtlich Ende März 2026',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
+#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024) (inaktiv)
+#: source_id: viz2021:13.432599,52.479016,01.09.2023,07:00 (bis 30.03.2026)
 #: osm_watch: way id="1207706195" version="3"
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
@@ -41444,7 +41447,7 @@ EOF
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
 #: last_checked: 2024-10-23
 #: check_frequency: 120d
-#: next_check: 2024-12-29
+#: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
 EOF
      },
@@ -43877,7 +43880,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1734714919, # undef, # XXX
 #      text  => 'Sonnenallee/Braunschweiger Str.: mögliche Einschränkungen wegen eines Wasserrohrbruchs',
        text  => 'Braunschweiger Str.: Wasserrohrbruch, nur ein enger Gehweg offen',
        type  => 'handicap',
@@ -43892,17 +43895,12 @@ EOF
 #: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024) (bis 16.12.2024) (bis 20.12.2024) (bis 19.12.2024) (inaktiv)
 #: source_id: viz2021:13.4546,52.47445,18.10.2024,13:33 (Braunschweiger Str. nicht erwähnt, bis 29.11.2024) (inaktiv)
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
-#: add_fragezeichen: Besteht die Sperrung in der Braunschweiger Str. noch immer?
 #: note: laut rbb wurde die Meldung in der Sonnenalle mittlerweile entfernt
-#: last_checked: 2024-12-12 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2024-12-19 vvv
+# REMOVED --- #: add_fragezeichen: Besteht die Sperrung in der Braunschweiger Str. noch immer? --- #: last_checked: 2024-12-20 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-12-19 vvv
 Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
 #Braunschweiger Str.: Fahrbahn bis kurz vor der Sonnenallee passierbar, allerdings noch einige unasphaltierte Stellen, Umwege an der Kreuzung	q3::inwork 13858,7617 13919,7707
 # REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
-#: next_check ^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1717884000, # 2024-06-09 00:00
@@ -44210,11 +44208,11 @@ EOF
 EOF
      },
      { from  => 1719122400, # 2024-06-23 08:00
-       until => $isodate2epoch->("2024-12-20 16:00:00"), # 1732647718, # 1732978800, # 2024-11-30 16:00
-       text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 20.12.2024 16:00 Uhr',
+       until => $isodate2epoch->("2024-12-20 08:00:00"), # 1732647718, # 1732978800, # 2024-11-30 16:00
+       text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 20.12.2024 08:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/125 (bis 30.11.2024) (inaktiv) (bis 20.12.2024)
+#: source_id: LS/221-F/24/125 (bis 30.11.2024) (inaktiv) (bis 20.12.2024) (Wintersicherung, bis 14.04.2025)
 	2::inwork 54410,20569 54169,20358 53940,20148
 EOF
      },
@@ -45272,7 +45270,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin-nord-komplexe-arbeiten_wollankstrasse_20241128.pdf
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
-#: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten)
+#: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
 #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="31"
@@ -45435,11 +45433,11 @@ EOF
 EOF
      },
      { from  => 1728799200, # 2024-10-13 08:00
-       until => 1738944000, # 2025-02-07 17:00
+       until => 1734727692, # 1738944000, # 2025-02-07 17:00
        text  => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 14.10.2024 08:00 Uhr bis 07.02.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/200 (bis 07.02.2025)
+#: source_id: LS/221-F/24/200 (bis 07.02.2025) (mittlerweile nur noch Wintersicherung mit einigen Einschränkungen, bis 30.04.2025)
 	2::inwork 36087,16319 36539,16154 38171,15125
 EOF
      },
@@ -45561,28 +45559,28 @@ EOF
 EOF
      },
      { from  => 1729486800, # 2024-10-21 07:00
-       until => $isodate2epoch->("2025-01-07 17:00:00"), # 1731945600, # 2024-11-18 17:00
-       text  => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 07.01.2025 17:00',
+       until => $isodate2epoch->("2024-12-22 11:00:00"), # $isodate2epoch->("2025-01-07 17:00:00"), # 1731945600, # 2024-11-18 17:00
+       text  => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 22.12.2024 11:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GUDRUN-2024
-#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
+#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024)
 	q4::inwork; 17139,12100 17091,12105 16993,12118
 EOF
      },
      { from  => 1729486800, # 2024-10-21 07:00
-       until => $isodate2epoch->("2025-01-07 17:00:00"), # 1731945600, # 2024-11-18 17:00
-       text  => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 07.01.2025 17:00',
+       until => $isodate2epoch->("2025-01-10 17:00:00"), # $isodate2epoch->("2025-01-07 17:00:00"), # 1731945600, # 2024-11-18 17:00
+       text  => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 10.01.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GUDRUN-2024
-#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
+#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 10.01.2025)
 	q4::inwork; 17139,12100 17088,12069 16975,12000 16865,11931
 EOF
      },
      { from  => $isodate2epoch->("2024-10-22 00:00:00"), # 1729486800, # 2024-10-21 07:00
-       until => $isodate2epoch->("2025-01-07 17:00:00"), # 1731945600, # 2024-11-18 17:00
-       text  => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 07.01.2025 17:00',
+       until => $isodate2epoch->("2024-12-22 11:00:00"), # $isodate2epoch->("2025-01-07 17:00:00"), # 1731945600, # 2024-11-18 17:00
+       text  => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 22.12.2024 11:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GUDRUN-2024
@@ -45591,7 +45589,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GabKRSNWsAAUzjA?format=jpg&name=large
 #: by: https://www.bahninfo-forum.de/read.php?9,731381,814767#msg-814767
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/anwohner-genervt-durch-bvg-baustelle-im-nibelungenkiez_a430442
-#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
+#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024)
 #: source_id[inactive]: bvg2024:256#HIM_FREETEXT_242768
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - 2024-12-12)
@@ -45603,7 +45601,7 @@ EOF
 #: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
 #: last_checked: 2024-12-08
 # REMOVED --- #: check_frequency: 7d
-#: next_check: 2025-01-07
+#: next_check: 2024-12-22
 	q4::inwork; 16764,11919 16794,12144
 EOF
      },
@@ -45815,6 +45813,7 @@ EOF
        text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12.11.2024 07:00 bis 29.04.2025 23:59',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: ROSEGGER-2024
 #: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
 #: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025)
 	q4::inwork 13205,8126 13277,8211 13331,8283
@@ -46048,6 +46047,8 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1869796587712467317
 #: by: https://pbs.twimg.com/media/GfKxCRhXEAA0vc3?format=png&name=900x900
+#: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024)
+#: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024)
 	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
      },

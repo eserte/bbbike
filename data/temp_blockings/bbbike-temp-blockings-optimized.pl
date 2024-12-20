@@ -4275,9 +4275,9 @@ Bäkepark	2::inwork 5225,4095 5184,4161 5131,4207
 ',
          'from' => 1730674800,
          'id' => 3032,
-         'text' => 'Paul-Schwarz-Promenade: Bauarbeiten, Sperrung zwischen Bäkepark und Krahmerstr., voraussichtlich bis Ende 2024',
+         'text' => 'Paul-Schwarz-Promenade: Bauarbeiten, Sperrung zwischen Bäkepark und Krahmerstr., voraussichtlich bis zum 07.01.2025',
          'type' => 'gesperrt',
-         'until' => 1735664400
+         'until' => 1736233200
        },
        undef,
        undef,
@@ -4601,7 +4601,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2024-12-14 (traffic) vvv
+#: last_checked: 2024-12-20 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -5204,6 +5204,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
 #: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
 #: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 ',
@@ -5654,16 +5655,16 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        {
-         'data' => '#: source_id: 226502047 (bis 27.11.2024)
+         'data' => '#: source_id: 226502047 (bis 27.11.2024) (inaktiv)
 #: by: https://bauprojekte.deutschebahn.com/p/hennigsdorf-marwitzer-strasse-eue?date=20240925 (Sperrung auch für Fußgänger + Radverkehr bis 20.12.2024, weitere Sperrung 2025)
 #: note: auch für Fußgänger gesperrt
 	2::inwork -3475,26523 -3556,26560
 ',
-         'from' => 1659852000,
+         'from' => 1737327600,
          'id' => 3613,
-         'text' => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung bis 20.12.2024',
+         'text' => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung (auch für Fußgänger und Radfahrer), voraussichtlich von Ende Januar 2025 bis Ende März 2025',
          'type' => 'gesperrt',
-         'until' => 1734714000
+         'until' => 1743436800
        },
        undef,
        undef,
@@ -6675,7 +6676,8 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024)
+         'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024) (inaktiv)
+#: source_id: viz2021:13.432599,52.479016,01.09.2023,07:00 (bis 30.03.2026)
 #: osm_watch: way id="1207706195" version="3"
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
@@ -6683,15 +6685,15 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
 #: last_checked: 2024-10-23
 #: check_frequency: 120d
-#: next_check: 2024-12-29
+#: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
 ',
          'dont_check_date' => 1,
          'from' => 1693458000,
          'id' => 3912,
-         'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis 19.12.2024 23:59, vielleicht sogar bis Ende März 2026',
+         'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis voraussichtlich Ende März 2026',
          'type' => 'handicap',
-         'until' => 1774972800
+         'until' => 1774886400
        },
        undef,
        undef,
@@ -7342,35 +7344,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-auf-der-sonnenallee-strassensperrung-id253457
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1795325596953624776
-#: by[nocache]: https://x.com/BerlinNkl/status/1795429185839940060
-#: by: https://berliner-abendblatt.de/berlin-news/verkehrseinschraenkungen-in-neukoelln-id253562
-#: source_id: viz2021:13.453052,52.47529,28.05.2024,06:25 (kein Endedatum) (mittlerweile Linienverkehr frei) (inaktiv)
-#: source_id[inactive]: bvg2024:m41#39e57683-42fd-46a2-8af0-35d2a4cc3609
-#: source_id[inactive]: bvg2024:m41#c9a06eb3-b906-473f-a7f7-43ec4931555d
-#: source_id: viz2021:13.454632,52.474502,28.05.2024,06:25 (Fahrbahneinengung in der Sonnenallee) (bis 31.08.2024, Braunschweiger Str. nicht erwähnt) (bis 18.10.2024) (bis 29.11.2024) (bis 16.12.2024) (bis 20.12.2024) (bis 19.12.2024) (inaktiv)
-#: source_id: viz2021:13.4546,52.47445,18.10.2024,13:33 (Braunschweiger Str. nicht erwähnt, bis 29.11.2024) (inaktiv)
-#: also_indoor: traffic (ex-H,ex-G,ex-B,ex-W,ex-T)
-#: add_fragezeichen: Besteht die Sperrung in der Braunschweiger Str. noch immer?
-#: note: laut rbb wurde die Meldung in der Sonnenalle mittlerweile entfernt
-#: last_checked: 2024-12-12 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2024-12-19 vvv
-Braunschweiger Str.: nordwestlicher Gehweg ist frei, eng	q4::inwork 13858,7617 13919,7707
-#Braunschweiger Str.: Fahrbahn bis kurz vor der Sonnenallee passierbar, allerdings noch einige unasphaltierte Stellen, Umwege an der Kreuzung	q3::inwork 13858,7617 13919,7707
-# REMOVED (eine Spur mittlerweile frei, Radfahrüberholverbot) --- Sonnenallee: für Fußgänger existiert ein Durchgang auf der südwestlichen Fahrbahn, nicht offiziell für Radfahrer freigegeben	q4::inwork; 13919,7707 14015,7631
-#: next_check ^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4069,
-         'text' => 'Braunschweiger Str.: Wasserrohrbruch, nur ein enger Gehweg offen',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7476,16 +7450,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: LS/221-F/24/125 (bis 30.11.2024) (inaktiv) (bis 20.12.2024)
-	2::inwork 54410,20569 54169,20358 53940,20148
-',
-         'from' => 1719122400,
-         'id' => 4093,
-         'text' => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 20.12.2024 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1734706800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022) (mittlerweile: Baubeginn Juni 2024) (mittlerweile: "Voraussichtliche Bauzeit: Juni 2024 - Juni 2027")
@@ -7952,35 +7917,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WOLLANK-2024
-#: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
-#: by[nocache]: https://archive.is/pZmLF
-#: by: https://www.rbb24.de/panorama/beitrag/2024/07/baustellen-bahn-berlin-pankow-sperrungen.html
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20240925 (26.11.2024 - 26.12.2024, weitere Vollsperrungen z.B. im März 2025)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_einschraenkungen_strassenverkehr_20240924ne.pdf
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wollankstrasse_informationsveranstaltung_20241126.pdf
-#: by: https://weddingweiser.de/wollankstrasse-naechste-bauphase/
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1861029520645538026 (bis 20.12.2024)
-#: by: https://pbs.twimg.com/media/GdOzzK9XEAAuZLU?format=jpg&name=medium (Umleitungsstrecken für Rad- und Fußverkehr)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/PR_berlin_nord_komplexe_arbeiten_informationsveranstaltung_20241127n.pdf (nächste Totalsperrung geplant: 03.03. bis 21.03.2025)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin-nord-komplexe-arbeiten_wollankstrasse_20241128.pdf
-#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
-#: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
-#: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten)
-#: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
-#: note: siehe auch temporären Eintrag in comments_trafficjam
-#: osm_watch: way id="23984383" version="31"
-#: osm_watch: note 4536637 9
-# REMOVED --- #: last_checked: 2024-10-12 (mapillary) --- #: next_check: 2024-12-20
-	2::inwork 9544,17629 9586,17665
-',
-         'from' => 1732489200,
-         'id' => 4171,
-         'text' => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 26.11.2024 bis 20.12.2024',
-         'type' => 'gesperrt',
-         'until' => 1734688800
-       },
+       undef,
        undef,
        undef,
        {
@@ -8031,16 +7968,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'handicap',
          'until' => 1741968000
        },
-       {
-         'data' => '#: source_id: LS/221-F/24/200 (bis 07.02.2025)
-	2::inwork 36087,16319 36539,16154 38171,15125
-',
-         'from' => 1728799200,
-         'id' => 4185,
-         'text' => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 14.10.2024 08:00 Uhr bis 07.02.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1738944000
-       },
+       undef,
        {
          'data' => '#: source_id: LS/223-P/24/161 (bis 30.06.2025)
 	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
@@ -8109,25 +8037,25 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
        undef,
        {
          'data' => '#: next_check_id: GUDRUN-2024
-#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
+#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024)
 	q4::inwork; 17139,12100 17091,12105 16993,12118
 ',
          'from' => 1729486800,
          'id' => 4195,
-         'text' => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 07.01.2025 17:00',
+         'text' => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 22.12.2024 11:00',
          'type' => 'handicap',
-         'until' => 1736265600
+         'until' => 1734861600
        },
        {
          'data' => '#: next_check_id: GUDRUN-2024
-#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
+#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 10.01.2025)
 	q4::inwork; 17139,12100 17088,12069 16975,12000 16865,11931
 ',
          'from' => 1729486800,
          'id' => 4196,
-         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 07.01.2025 17:00',
+         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 10.01.2025 17:00',
          'type' => 'handicap',
-         'until' => 1736265600
+         'until' => 1736524800
        },
        {
          'data' => '#: next_check_id: GUDRUN-2024
@@ -8136,7 +8064,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #: by: https://pbs.twimg.com/media/GabKRSNWsAAUzjA?format=jpg&name=large
 #: by: https://www.bahninfo-forum.de/read.php?9,731381,814767#msg-814767
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/anwohner-genervt-durch-bvg-baustelle-im-nibelungenkiez_a430442
-#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025)
+#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024)
 #: source_id[inactive]: bvg2024:256#HIM_FREETEXT_242768
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - 2024-12-12)
@@ -8148,14 +8076,14 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
 #: last_checked: 2024-12-08
 # REMOVED --- #: check_frequency: 7d
-#: next_check: 2025-01-07
+#: next_check: 2024-12-22
 	q4::inwork; 16764,11919 16794,12144
 ',
          'from' => 1729548000,
          'id' => 4197,
-         'text' => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 07.01.2025 17:00',
+         'text' => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 22.12.2024 11:00',
          'type' => 'handicap',
-         'until' => 1736265600
+         'until' => 1734861600
        },
        {
          'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025)
@@ -8287,7 +8215,8 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'until' => 1735578000
        },
        {
-         'data' => '#: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
+         'data' => '#: next_check_id: ROSEGGER-2024
+#: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
 #: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025)
 	q4::inwork 13205,8126 13277,8211 13331,8283
 ',
@@ -8499,6 +8428,8 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1869796587712467317
 #: by: https://pbs.twimg.com/media/GfKxCRhXEAA0vc3?format=png&name=900x900
+#: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024)
+#: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024)
 	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 ',
          'from' => 1734584400,
