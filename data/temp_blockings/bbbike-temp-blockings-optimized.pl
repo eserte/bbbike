@@ -5206,6 +5206,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
 #: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
+#: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024)
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 ',
          'from' => 1734667200,
@@ -5939,7 +5940,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-11-18 (daf)
+#: last_checked: 2024-12-17 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -7266,21 +7267,7 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/wochenmarkt-vor-der-markthalle-erweiterung-fur-markthalle-neun-in-berlin-kreuzberg-genehmigt-10575601.html (befristet bis 13. September 2024)
-#: by: https://markthalleneun.de/m%C3%A4rkte/
-#: last_checked: 2024-09-21
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2024-09-13
-	q4::temp:clock 12294,10663 12363,10781
-',
-         'from' => undef,
-         'id' => 4051,
-         'recurring' => 1,
-         'text' => 'Eisenbahnstr.: Wochenmarkt vor der Markthalle 9, samstags 10 bis 18 Uhr',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (H,ex-B[falsche Position?],ex-T[falsche Position?])
 #: osm_watch: note 4465412 3
@@ -7920,21 +7907,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Absperrungen können weggeschoben sein, gesehen: 2024-09-27 (Fr) abends, 2024-10-26 (Sa) mittags
-#: note: aber es gibt auch Bauarbeiten, gesehen: 2024-10-07 (Mo) mittags, 2024-10-16 (Mi) mittags
-#: note: Halteverbotsschilder mittlerweile bis zum 31.01.2025
-#: last_checked: 2024-12-12
-#: check_frequency: 30d
-#: next_check: 2025-01-31
-	q4::inwork 13136,10535 13178,10623
-',
-         'from' => 1727367350,
-         'id' => 4174,
-         'text' => 'Falckensteinstr.: Fahrbahn zwischen Schlesische Str. und Oberbaumbrücke gesperrt, voraussichtlich bis Ende Januar 2025',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -8399,9 +8372,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1735772399
        },
        {
-         'data' => '#: also_indoor: traffic (T,B)
+         'data' => '#: also_indoor: traffic (T,B,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-12-08
+#: last_checked: 2024-12-21 (traffic)
 #: check_frequency: 14d
 	q4::inwork 16668,14765 16750,14747
 ',

@@ -201,7 +201,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2024-12-12
+#: last_checked: 2024-12-21
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -479,7 +479,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2024-12-15
+#: last_checked: 2024-12-21
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -546,7 +546,7 @@ Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 1
 #: note: alter brüchiger Asphaltstreifen existiert auch hier, aber wegen diagonal parkender Autos nicht benutzbar
 Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1515855.php (Fahrbahnsanierung)
-#: XXX Ist der Asphalt hier besser geworden?
+# REMOVED (nein, keine Verbesserung) --- #: XXX Ist der Asphalt hier besser geworden?
 Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: next_check_id: ODER-2022
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn 
@@ -12042,6 +12042,7 @@ Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1500791.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-pepp-fuer-gruenanlage_a429121
 #: XXX Umgestaltung (und Entsiegelung) bis April 2025 --- ändert sich etwas an den Wegen?
+#: last_checked: 2024-12-21
 #: next_check: 2025-04-30
 (Alexandrinenstr. - Wassertorstr.): Asphalt mit einigen Schäden	Q1 10293,10645 10401,10601 10431,10606 10492,10582
 (Ossastr. - Rütlistr.): Asphalt	Q0 12623,9134 12554,9178
@@ -12586,8 +12587,8 @@ Albert-Einstein-Str.: Asphalt	Q0 19091,2443 19094,2495 19204,2603 19329,2715 193
 Siegfried-Hirschmann-Park: Betonpflaster	Q1+ 14676,11572 14714,11549 14723,11532 14745,11487
 Siegfried-Hirschmann-Park: Betonpflaster	Q1+ 14830,11551 14808,11520 14779,11505 14745,11487 14684,11456
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1515855.php (Sanierung 2024)
-#: XXX Ist der Asphalt nach den Sanierungsarbeiten besser geworden?
-Lobeckstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0- 10585,10766 10492,10582 10484,10567 10433,10456 10363,10303
+#: historical_note: früher (bis 2024): Asphalt mit einigen Schäden und Schlaglöchern, Q0-
+Lobeckstr.: Asphalt	Q0 10585,10766 10492,10582 10484,10567 10433,10456 10363,10303
 (Wohngebietsstraße): Betonsteinpflaster	Q0- 21596,132 21589,131 21503,114 21435,99 21367,84
 Weidenkätzchenweg: Betonsteinpflaster	Q0- 21465,-15 21450,38 21435,99 21421,158
 # REMOVED (fertiggestellt) --- #: next_check_id: BUSCHWINDROESCHENWEG-2019 --- #: by: mapillary --- #: XXX wie wird die Qualität nach der Fertigstellung sein? --- #: last_checked: 2019-02-10 (mapillary) --- #: check_frequency: 90d
@@ -13848,7 +13849,7 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 #: last_checked: 2024-12-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 vvv
-#: osm_watch: way id="946008570" version="4"
+#: osm_watch: way id="1344518199" version="1"
 #: XXX hier kommt vermutlich auch noch das Betonpflaster hin
 Am Mühlanger: provisorisch asphaltiert	Q1- 12738,1213 12802,1285
 #: next_check ^^^
@@ -32913,7 +32914,8 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 7998,23252
 Einmündungsbereich mit Kopfsteinpflaster	Q2 11946,9913
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 12048,10097
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 12229,10014
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 12398,9938
+#: historical_note: bis 2024: Kreuzungsbereich mit Kopfsteinpflaster, Q2
+Kreuzungsbereich asphaltiert	Q0 12398,9938
 #: historical_note: bis April 2024: Kreuzungsbereich mit Kopfsteinpflaster, Q2
 Kreuzungsbereich asphaltiert	Q0 12556,9862
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12834,9738
