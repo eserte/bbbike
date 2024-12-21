@@ -471,15 +471,16 @@ sub action_sourceid {
     my $d = shift;
 
     for my $variant_def (
-        ["sourceid-all.yml",     "bbbike-temp-blockings.bbd"],
-        ["sourceid-current.yml", "bbbike-temp-blockings-optimized.bbd"],
+        ["sourceid-all.yml",      "bbbike-temp-blockings.bbd",           []],
+        ["sourceid-current.yml",  "bbbike-temp-blockings-optimized.bbd", []],
+        ["sourceid-inactive.yml", "bbbike-temp-blockings-optimized.bbd", ["--inactive"]],
     ) {
-	my($dest_base, $temp_blockings_base) = @$variant_def;
+	my($dest_base, $temp_blockings_base, $extra_opts) = @$variant_def;
 	my $dest = "$persistenttmpdir/$dest_base";
 	my @srcs = ("$persistenttmpdir/$temp_blockings_base", @SOURCE_TARGETS_SOURCES, @ADDITIONAL_SOURCEID_FILES);
 	if (_need_rebuild $dest, @srcs) {
 	    _repeat_on_changing_sources(sub {
-	        $d->run([$perl, "$miscsrcdir/bbd_to_sourceid_exists", @srcs], '>', "$dest~");
+	        $d->run([$perl, "$miscsrcdir/bbd_to_sourceid_exists", @$extra_opts, @srcs], '>', "$dest~");
 		_empty_file_error "$dest~";
 		_commit_dest $d, $dest;
 	    }, \@srcs);

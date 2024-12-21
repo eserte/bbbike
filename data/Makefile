@@ -2010,6 +2010,9 @@ $(PERSISTENTTMPDIR)/sourceid-all.yml:		$(PERSISTENTTMPDIR)/bbbike-temp-blockings
 $(PERSISTENTTMPDIR)/sourceid-current.yml:	$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd ${SOURCE_TARGETS_SOURCES} ${ADDITIONAL_SOURCEID_FILES}
 	${PERL} doit.pl sourceid
 
+$(PERSISTENTTMPDIR)/sourceid-inactive.yml:	$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd ${SOURCE_TARGETS_SOURCES} ${ADDITIONAL_SOURCEID_FILES}
+	${PERL} doit.pl sourceid
+
 ######################################################################
 # This will be removed someday if convert_orig_to_bbd is good enough
 
