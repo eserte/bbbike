@@ -14,21 +14,28 @@
 
 use strict;
 use warnings;
+use Getopt::Long;
 
 sub usage (;$) {
     my $msg = shift;
     warn $msg, "\n" if $msg;
     die <<EOF;
-usage: $0 files
+usage: $0 [--inactive] files
 EOF
 }
 
+GetOptions("inactive" => \my $inactive)
+    or usage;
+
 my @infiles = @ARGV
     or usage "bbd file is missing (one or more)";
-bbd_to_sourceid_exists(@infiles);
+bbd_to_sourceid_exists({inactive => $inactive}, @infiles);
 
 sub bbd_to_sourceid_exists {
-    my(@infiles) = @_;
+    my($opts, @infiles) = @_;
+
+    my $inactive = delete $opts->{inactive};
+    usage "Unhandled options: " . join(" ", %$opts) if %$opts;
 
     _add_bbbike_inc();
     require Strassen::Core;
@@ -40,6 +47,10 @@ sub bbd_to_sourceid_exists {
 	    (sub {
 		 my(undef, $dir) = @_;
 		 for my $source_id (@{ $dir->{source_id} || [] }) {
+		     my $is_inactive;
+		     if ($inactive) {
+			 next if $source_id !~ m{\binaktiv\)\s*$};
+		     }
 		     # Use only first token from source id
 		     $source_id =~ s{^(\S+).*}{$1};
 		     $existsid{$source_id} = 1;
