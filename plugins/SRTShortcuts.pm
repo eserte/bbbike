@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.19;
+$VERSION = 2.20;
 
 use File::Glob qw(bsd_glob);
 
@@ -812,6 +812,9 @@ EOF
 		'-',
 		[Button => $do_compound->("BBBike.org (Berlin)"),
 		 -command => sub { current_search_in_bbbike_org_cgi() },
+		],
+		[Button => $do_compound->("brouter"),
+		 -command => sub { current_search_in_brouter() },
 		],
 		[Button => $do_compound->("openrouteservice"),
 		 -command => sub { current_search_in_openrouteservice_org() },
@@ -2029,6 +2032,36 @@ sub current_search_in_openrouteservice_org {
 	   k1 => 'en-US',
 	   k2 => 'km',
 	 ]);
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+sub current_search_in_brouter {
+    if (@main::search_route_points < 2) {
+	main::status_message("Not enough points", "die");
+    }
+
+    my @coords;
+    my $map_pos;
+    {
+	require Karte::Polar;
+	my $o = $Karte::Polar::obj;
+	for my $c (@main::search_route_points) {
+	    my($lon,$lat) = $o->trim_accuracy($o->standard2map(split /,/, $c->[0]));
+	    push @coords, "$lon,$lat";
+	    if (!$map_pos) {
+		$map_pos = sprintf "%d/%f/%f", 16, $lat, $lon; # XXX zoom hardcoded for now
+	    }
+	}
+    }
+
+    # Sample URL
+    # https://brouter.de/brouter-web/#map=14/52.5092/13.4022/osm-mapnik-german_style,terrarium-hillshading,Waymarked_Trails-Cycling,route-quality&lonlats=13.350277,52.514341;13.377314,52.51643;13.414135,52.521805&profile=hiking-mountain
+
+    my $map_style = 'osm-mapnik-german_style,terrarium-hillshading';
+    my $url = sprintf "https://brouter.de/brouter-web/#map=%s/%s&lonlats=%s", $map_pos, $map_style, join(';', @coords);
+
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
