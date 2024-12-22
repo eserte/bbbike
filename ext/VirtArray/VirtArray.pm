@@ -77,7 +77,7 @@ sub retrieve {
 
 sub store {
     my($array_ref, $file) = @_;
-    croak "Not an array reference" if (!ref $array_ref eq 'ARRAY');
+    croak "Not an array reference" if (ref $array_ref ne 'ARRAY');
     croak "Empty array" if (@$array_ref == 0);
     $file = "-" if !defined $file;
 
