@@ -4456,7 +4456,7 @@ Charles-Corcelle-Ring	? 3676,16497 3711,16481 3895,16381 4263,16166 4724,15925 4
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_03_0117_0164_online.pdf (Teileinziehung)
-#: last_checked: 2024-11-29 (mapillary) vvv
+#: last_checked: 2024-12-17 (mapillary) vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 #: osm_watch: way id="202156991" version="19"
 #: osm_watch: way id="339201177" version="18"
@@ -7652,12 +7652,13 @@ Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 110
 #: by: https://abendblatt-berlin.de/2020/05/05/temporaere-radwege-eine-revolution-auf-den-strassen/
 #: by: https://berliner-abendblatt.de/service/temporaere-radwege-eine-revolution-auf-den-strassen-id94101
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1513532.php (Fahrradstraße zwischen Blücherstr. und Oranienstr., Realisierung 2025)
-# REMOVED (war nur temporär) --- #: XXX mittlerweile im nördlichen Teil der Mittenwalder Str. eine temporäre Einbahnstraßenregelung nur für den motorisierten Verkehr (offen Richtung Norden) --- ist das ein Vorbote der Fahrradstraße?
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/naechste-fahrradstrasse_a432324
 #: osm_watch: note 4559018 1
 #: last_checked: 2024-12-21
 #: check_frequency: 90d
 #: next_check: 2025-12-31
 Brachvogelstr., Alexandrinenstr.: Fahrradstraße geplant	?::projected 10006,9942 10029,9989 10066,10071 10069,10151 10083,10192 10122,10294 10178,10411 10293,10645 10329,10723 10397,10852 10501,11056 10593,11120 10674,11170 10683,11175 10690,11180 10736,11212 10818,11269
+# REMOVED (war nur temporär) --- #: XXX mittlerweile im nördlichen Teil der Mittenwalder Str. eine temporäre Einbahnstraßenregelung nur für den motorisierten Verkehr (offen Richtung Norden) --- ist das ein Vorbote der Fahrradstraße?
 # REMOVED (keine Erwähnung mehr der Mittenwalder Str.) --- Mittenwalder Str.: Fahrradstraße geplant	?::projected 9892,9286 9927,9487 9957,9692 9982,9847 10006,9942
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_06_0305_0372_online.pdf
@@ -8464,6 +8465,7 @@ Olbersstr.: Radspuren geplant	?::projected 3038,13612 3211,13631 3280,13625 3365
 #: source_id: viz2021:13.42056,52.525969,19.03.2024,07:00 (bis 24.04.2024) (inaktiv)
 #: source_id: viz2021:13.420638,52.525829,22.07.2024,07:00 (Leitungsbau, bis 30.09.2024) (inaktiv)
 #: source_id: viz2021:13.421748,52.526637,06.11.2024,07:00 (Radwegerneuerung (?), bis 16.12.2024) (inaktiv)
+#: osm_watch: note 4554971 2
 #: last_checked: 2024-12-19 (mapillary)
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-03-15
@@ -8569,7 +8571,7 @@ Ella-Barowsky-Str.: Umbauarbeiten, dabei entsteht ein Radweg	?::inwork 7499,7880
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1850782045917610091 (Müggelheimer Str.)
 #: by: https://pbs.twimg.com/media/GaumdZ7WQAAh5VH?format=jpg&name=4096x4096
 #: source_id: bvg2024:165#HIM_FREETEXT_244204 (ab 2024-10-28, für vorbereitende Arbeiten?)
-#: source_id: viz2021:13.575981,52.444348,28.10.2024,07:00 (vermutlich vorbereitende Gleisbauarbeiten in der Müggelheimer Str., bis 24.11.2024) (bis 08.12.2024) (bis 22.12.2024)
+#: source_id: viz2021:13.575981,52.444348,28.10.2024,07:00 (vermutlich vorbereitende Gleisbauarbeiten in der Müggelheimer Str., bis 24.11.2024) (bis 08.12.2024) (bis 22.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:162#fe73d49a-2471-4d3b-a756-05ec6943ea49 (2024-11-25 - 2024-12-08)
 #: source_id: bvg2024:162#dc4f3cec-5359-4dd3-937e-28db262a7b3f (bis 2025-01-13)
 #: XXX Bauphasen laut Bauzeitenplan aus den Ausschreibungsunterlagen: Alt-Köpenick 17.02.2025 - 30.11.2025; Kirchstr. 01.12.2025 - 09.05.2027
@@ -9439,6 +9441,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 
 #: by: https://www.deutsches-architekturforum.de/thread/13529-waterkant-berlin-%C3%B6stliche-wasserstadt-spandau/?postID=750938#post750938
 #: by: https://www.berliner-woche.de/haselhorst/c-bauen/an-der-waterkant-wurde-der-grundstein-fuer-den-letzten-bauabschnitt-gelegt_a398419 (bis Ende 2026)
 #: source_id: viz2021:13.225604,52.552163,01.08.2024,08:00 (Leitungsbau, bis 18.10.2024) (bis 25.10.2024) (bis 13.12.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 10.01.2025)
+#: source_id: viz2021:13.225913,52.551143,16.09.2024,09:00 (Leitungsbau, bis 28.02.2025)
 #: source_id: viz2021:13.225913,52.551143,24.09.2024,09:00 (Fernwärmeleitungsbau, bis 18.11.2024) (bis 31.12.2024) (vorfristig inaktiv)
 #: source_id: viz2021:13.22743,52.54953,24.09.2024,09:00 (bis 18.11.2024) (inaktiv)
 #: osm_watch: way id="830632211" version="5"

@@ -35464,11 +35464,11 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 #: by: https://www.deutsches-architekturforum.de/thread/14423-neubau-firmenzentrale-der-berlin-hyp-mitte-in-bau/?postID=749004#post749004
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024)
+#: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2024-11-28
-#: check_frequency: 45d
-#: next_check: 2024-12-31
+#: last_checked: 2024-12-21 (daf)
+#: check_frequency: 60d
+#: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
 EOF
      },
@@ -38174,7 +38174,7 @@ EOF
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-12-17 (architektur-urbanistik)
+#: last_checked: 2024-12-21 (daf)
 #: check_frequency: 120d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -39485,12 +39485,11 @@ EOF
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
 #: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
-#: last_checked: 2024-12-16 (traffic)
+#: last_checked: 2024-12-22 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
-# REMOVED (hier möglicherweise nicht mehr) ---	q3::inwork 3869,10760 4267,10724
-	q3::inwork 4267,10724 4393,10712
+	q3::inwork 3869,10760 4267,10724 4393,10712
 EOF
      },
      { from  => 1680415200, # 2023-04-02 08:00
@@ -45563,7 +45562,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GUDRUN-2024
-#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024)
+#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024) (inaktiv)
 	q4::inwork; 17139,12100 17091,12105 16993,12118
 EOF
      },
@@ -45588,7 +45587,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GabKRSNWsAAUzjA?format=jpg&name=large
 #: by: https://www.bahninfo-forum.de/read.php?9,731381,814767#msg-814767
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/anwohner-genervt-durch-bvg-baustelle-im-nibelungenkiez_a430442
-#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024)
+#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:256#HIM_FREETEXT_242768
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - 2024-12-12)

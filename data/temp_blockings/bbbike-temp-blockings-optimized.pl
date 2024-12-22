@@ -3290,30 +3290,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
-#: tempex: 4th_advent & T12-T19
-#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1734771600,
-         'id' => 2521,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              12,
-                              'start',
-                              '2024-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2024, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1734883200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5260,11 +5237,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 #: by: https://www.deutsches-architekturforum.de/thread/14423-neubau-firmenzentrale-der-berlin-hyp-mitte-in-bau/?postID=749004#post749004
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024)
+#: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2024-11-28
-#: check_frequency: 45d
-#: next_check: 2024-12-31
+#: last_checked: 2024-12-21 (daf)
+#: check_frequency: 60d
+#: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
 ',
          'from' => undef,
@@ -5940,7 +5917,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-12-17 (architektur-urbanistik)
+#: last_checked: 2024-12-21 (daf)
 #: check_frequency: 120d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -6254,12 +6231,11 @@ Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
 #: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
-#: last_checked: 2024-12-16 (traffic)
+#: last_checked: 2024-12-22 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
-# REMOVED (hier möglicherweise nicht mehr) ---	q3::inwork 3869,10760 4267,10724
-	q3::inwork 4267,10724 4393,10712
+	q3::inwork 3869,10760 4267,10724 4393,10712
 ',
          'from' => 1681189200,
          'id' => 3763,
@@ -8008,17 +7984,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: GUDRUN-2024
-#: source_id: viz2021:13.502614,52.51356,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024)
-	q4::inwork; 17139,12100 17091,12105 16993,12118
-',
-         'from' => 1729486800,
-         'id' => 4195,
-         'text' => 'Fanningerstr.: Bauarbeiten Richtung Rodeliusplatz zwischen Gudrunstr. und Guntherstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 22.12.2024 11:00',
-         'type' => 'handicap',
-         'until' => 1734861600
-       },
+       undef,
        {
          'data' => '#: next_check_id: GUDRUN-2024
 #: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 10.01.2025)
@@ -8030,34 +7996,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
          'type' => 'handicap',
          'until' => 1736524800
        },
-       {
-         'data' => '#: next_check_id: GUDRUN-2024
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zum-start-der-herbstferien/ (Siegfriedstr., hier nur 23.10.-08.11.2024)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1848592619309306058 (bis Ende November 2024)
-#: by: https://pbs.twimg.com/media/GabKRSNWsAAUzjA?format=jpg&name=large
-#: by: https://www.bahninfo-forum.de/read.php?9,731381,814767#msg-814767
-#: by: https://www.berliner-woche.de/lichtenberg/c-bauen/anwohner-genervt-durch-bvg-baustelle-im-nibelungenkiez_a430442
-#: source_id: viz2021:13.497956,52.513286,22.10.2024,07:00 (Umleitung für Radverkehr, bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 22.12.2024)
-#: source_id[inactive]: bvg2024:256#HIM_FREETEXT_242768
-#: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
-#: source_id: bvg2024:21#HIM_FREETEXT_244281 (2024-11-11 - 2024-12-12)
-#: source_id: viz2021:13.499345,52.519317,23.10.2024,07:00 (hier zwischen Gotlindestr. und Bornitzstr. und nur Kfz-Verkehr, bis 08.11.2024) (bis 15.11.2024) (bis 19.11.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:HIM_FREETEXT_254440 (bis 2025-01-27)
-#: source_id[inactive]: bvg2024:HIM_FREETEXT_254481
-#: note: In der Siegfriedstr. hängen schon Umleitungsschilder für Radfahrer.
-#: note: bei rbb sogar "bis Ende November" (2024) (alle drei Abschnitte)
-#: note: am 22.10.2024 waren noch keine Bauarbeiten und keine Absperrungen; am 29.10.2024 waren Arbeiten in der Siegfriedstr. zu sehen und auch die Gudrunstr. war abgesperrt
-#: last_checked: 2024-12-08
-# REMOVED --- #: check_frequency: 7d
-#: next_check: 2024-12-22
-	q4::inwork; 16764,11919 16794,12144
-',
-         'from' => 1729548000,
-         'id' => 4197,
-         'text' => 'Siegfriedstr.: Gleisbauarbeiten Richtung Norden zwischen Frankfurter Allee und Fanninger Str., vom 23.10.2024 bis 22.12.2024 11:00',
-         'type' => 'handicap',
-         'until' => 1734861600
-       },
+       undef,
        {
          'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
