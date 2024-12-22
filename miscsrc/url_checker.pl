@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2014,2016,2018,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2014,2016,2018,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,19 +24,21 @@ use LWP::UserAgent;
 use Strassen::Core;
 
 sub usage () {
-    die "usage: $0 [-frequency days] [-n] [-v] -log file bbdfile ...";
+    die "usage: $0 [-frequency days] [-n] [-v] [-debug] -log file bbdfile ...";
 }
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 my $check_frequency = 30; # days
 my $log_file;
 my $dry_run;
 my $v;
+my $debug;
 GetOptions("frequency=i" => \$check_frequency,
 	   "log=s"       => \$log_file,
 	   "n|dry-run"   => \$dry_run,
 	   "v"           => \$v,
+	   "debug"       => \$debug,
 	  )
     or usage;
 defined $log_file or usage;
@@ -98,6 +100,9 @@ for my $file (@files) {
 			 if (!$resp->is_success) {
 			     push @errors, [$url, $status];
 			     v_print " ERROR!";
+			     if ($debug) {
+				 print STDERR $resp->dump;
+			     }
 			 }
 		     }
 		 } else {
