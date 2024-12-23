@@ -3918,7 +3918,7 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1
 #: osm_watch: note 4545425 2
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
-#: last_checked: 2024-12-06
+#: last_checked: 2024-12-23
 #: check_frequency: 120d
 #: next_check: 2029-12-31
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
@@ -4078,7 +4078,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-12-19
+#: last_checked: 2024-12-23
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4253,9 +4253,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: ONTARIOSEE-2023
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ontarioseestra%C3%9Fe-22.1332/#post-22779
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
-#: osm_watch: way id="25796640" version="27"
+#: osm_watch: way id="25796640" version="28"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-11-23
+#: last_checked: 2024-12-22 (osm)
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4386,7 +4386,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2024-12-17
+#: last_checked: 2024-12-23
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4450,8 +4450,8 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
 #: by: https://entwicklungsstadt.de/berlin-mitte-sichtbarer-fortschritt-beim-umbau-des-gendarmenmarktes/
 #: by: https://www.tagesspiegel.de/kultur/classic-open-air-auf-dem-gendarmenmarkt-neustart-mit-anna-netrebko-12869530.html (Wiedereröffnung am 17. Juli 2025)
-#: last_checked: 2024-12-10 (mapillary) vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2024-12-23 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2025-07-17 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
 #: osm_watch: way id="766868087" version="14"
@@ -4657,7 +4657,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.rbb24.de/panorama/beitrag/2024/03/sankt-hedwigs-kathedrale-sanierung-wiedereroeffnung-umbau-24-november-berlin-mitte.html (Eröffnung der Kathedrale am 24.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-oeffnet-nach-langer-sanierung-id248135
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-wird-nach-sanierung-wieder-eroeffnet-id270349 (Bernhard-Lichtenberg-Haus frühestens Ende 2025 fertig)
-#: last_checked: 2024-12-10 (mapillary)
+#: last_checked: 2024-12-23
 #: check_frequency: 90d
 #: next_check: 2025-12-31
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -5006,10 +5006,10 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX evtl. wird die Qualität nach den Bauarbeiten besser sein (vielleicht keine Straßenbahnschienen mehr, neuer Asphalt?)
 #: osm_watch: note 3954448 4
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2024-12-07
+#: last_checked: 2024-12-23
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
-#: next_check: 2024-12-31
+# REMOVED --- #: next_check: 2024-12-31
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670 9435,12698 9429,12728 9402,12792 9386,12833 9375,12911
 # REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
 # 
@@ -5138,9 +5138,20 @@ Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen, die Masten und Signalgeber stehen schon.
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-12-17
+#: last_checked: 2024-12-23
 #: check_frequency: 60d
 Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
+# 
+#: next_check_id: MOLKENMARKT-2021
+#: osm_watch: way id="751595931" version="5"
+#: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
+#: also_indoor: traffic (H,B)
+#: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt.
+#: XXX Container sind abgebaut: wie sieht die Situation in der Straße nun aus?
+#: last_checked: 2024-12-23
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2024-12-19
+Parochialstr.: 60m der Straße (Fahrbahn + Bürgersteige) zwischen Jüdenstr. und Klosterstr. gesperrt	2::inwork 10831,12371 10957,12401
 # 
 #: osm_watch: note 4480556 3
 #: last_checked: 2024-12-19

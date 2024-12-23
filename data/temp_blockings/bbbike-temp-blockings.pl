@@ -28941,8 +28941,8 @@ EOF
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
 #: last_checked: 2024-12-13
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="37"
-#: osm_watch: way id="580507889" version="31"
+#: osm_watch: way id="31525573" version="38"
+#: osm_watch: way id="580507889" version="32"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird nicht mehr wiederholt
 #: last_checked: 2024-11-16
@@ -29634,7 +29634,7 @@ EOF
 EOF
      },
      { from  => 1543258848, # 2018-11-26 20:00
-       until => $isodate2epoch->("2024-12-31 18:00:00"), # 1551394799, # 2019-02-28 23:59
+       until => 1734982568, # $isodate2epoch->("2024-12-31 18:00:00"), # 1551394799, # 2019-02-28 23:59
        text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, voraussichtlich bis Ende 2024',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -29650,10 +29650,8 @@ EOF
 #: by: https://www.berliner-woche.de/karow/c-verkehr/wasserbetriebe-bauen-am-bahnhof-karow_a359438 (Eröffnung 2023)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15236.pdf (Freigabe im 3. Quartal 2024)
 #: by: https://www.berliner-woche.de/karow/c-bauen/strasse-am-bahnhof-karow-wird-tiefer-gelegt_a382636 (voraussichtliche Freigabe im Herbst 2024)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-21 (mapillary)
-#: next_check: 2024-12-18
-# REMOVED --- #: next_check: 2024-12-31
+#: by: https://www.bahninfo-forum.de/read.php?9,816440,818074#msg-818074 (offen?)
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-08-21 (mapillary) --- #: next_check: 2024-12-18
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
      },
@@ -35300,7 +35298,7 @@ EOF
 #: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
 #: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
-#: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024)
+#: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024) (inaktiv)
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -41879,7 +41877,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-12-10 (mapillary) vvv
+#: last_checked: 2024-12-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -43601,7 +43599,7 @@ EOF
 #: osm_watch: note 4465412 3
 #: note: es existiert eine Umleitungsstrecke für Radfahrer
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-12-17 (traffic)
+#: last_checked: 2024-12-23 (traffic)
 #: check_frequency: 7d
 # REMOVED (hier wohl nicht mehr) ---	q4::inwork 5466,5523 5555,5508
 	q4::inwork 5555,5508 5676,5488
@@ -44181,12 +44179,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1734935416, # undef, # XXX
        text  => 'Treptower Str.: zwischen Sonnenallee und Stuttgarter Str. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Sperrung der Anbindung Stuttgarter Str. (beide Seiten), Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
-#: source_id: bvg2024:171#HIM_FREETEXT_227772 (ohne Endedatum)
+#: also_indoor: traffic (ex-B[falsch],ex-T[falsch],ex-G[falsch],ex-W[falsch])
+#: source_id[inactive]: bvg2024:171#HIM_FREETEXT_227772 (ohne Endedatum)
 #: last_checked: 2024-12-12 vvv
 	q4::inwork; 13474,8060 13478,8095 13510,8138
 Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
@@ -44238,7 +44236,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-12-19 vvv
+#: last_checked: 2024-12-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45462,7 +45460,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-12-19 vvv
+#: last_checked: 2024-12-23 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-01-17 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -46045,8 +46043,8 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1869796587712467317
 #: by: https://pbs.twimg.com/media/GfKxCRhXEAA0vc3?format=png&name=900x900
-#: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024)
-#: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024)
+#: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024) (inaktiv)
+#: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024) (inaktiv)
 	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
      },

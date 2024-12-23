@@ -1,399 +1,6 @@
-$#temp_blocking = 35;
+$#temp_blocking = 393;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html
-#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html (2020)
-#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20211026
-#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20221108
-#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1483109.php
-#: osm_watch: node id="9278469937" version="5"
-	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
-	2::xmas -3275,14407 -3338,14333
-	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
-	2::xmas -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
-	2::xmas -3227,14260 -3155,14340
-	2::xmas -3227,14260 -3293,14304 -3338,14333
-	2::xmas -3552,14082 -3457,14189 -3409,14241 -3338,14333
-	2::xmas -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
-	2::xmas -3110,14408 -3174,14438 -3228,14468
-	2::xmas -3231,14383 -3293,14304
-',
-         'from' => 1732402800,
-         'id' => 36,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Spandauer Weihnachtsmarkt, vom 25.11.2024 bis 22.12.2024',
-         'type' => 'gesperrt',
-         'until' => 1734908399
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
 #: source_id: viz2021:13.33407,52.5054,07.11.2024,07:00 (Verengung Breitscheidplatz, bis 12.01.2025)
@@ -3263,30 +2870,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(4th_advent,sa) - +1d
-#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
-	2::xmas 9986,13412 10321,13259
-',
-         'from' => 1734649200,
-         'id' => 2517,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              16,
-                              'months',
-                              12,
-                              'start',
-                              '2024-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.2024 - 22.12.2024)',
-         'type' => 'gesperrt',
-         'until' => 1734908399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3336,33 +2920,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        },
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
-#: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241219
-#: source_id: IM_020883 (inaktiv)
-#: source_id: 2147345257 (inaktiv)
-Alt-Rudow zwischen Köpenicker Str. und Krokusstr.	2::xmas 16849,1437 16805,1488 16610,1715
-Krokusstr.	2::xmas 16610,1715 16767,1831
-',
-         'from' => 1734692400,
-         'id' => 2529,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 21.12.2024 und 22.12.2024',
-         'type' => 'gesperrt',
-         'until' => 1734897600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4189,8 +3747,8 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
 #: last_checked: 2024-12-13
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="37"
-#: osm_watch: way id="580507889" version="31"
+#: osm_watch: way id="31525573" version="38"
+#: osm_watch: way id="580507889" version="32"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird nicht mehr wiederholt
 #: last_checked: 2024-11-16
@@ -4281,31 +3839,7 @@ Bäkepark	2::inwork 5225,4095 5184,4161 5131,4207
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147343519 (bis 31.12.2021) (möglicherweise inaktiv)
-#: source_id: viz2021:13.46842,52.61467,29.08.2022,13:10 (bis 31.08.2023) (inaktiv)
-#: source_id: viz2021:13.46842,52.61467,20.06.2023,16:33 (bis 08.07.2024) (inaktiv)
-#: source_id: viz2021:13.468875,52.614511,27.11.2018,09:00 (bis 31.08.2023) (bis 08.07.2024) (bis 31.12.2024) (inaktiv)
-#: also_indoor: traffic (G,H,B)
-#: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5772 (bis Ende August 2023?)
-#: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/bezirksverordnete-befuerchten-noch-groesseres-verkehrschaos_a303387
-#: by: https://www.berliner-woche.de/karow/c-verkehr/wasserbetriebe-bauen-am-bahnhof-karow_a359438 (Eröffnung 2023)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15236.pdf (Freigabe im 3. Quartal 2024)
-#: by: https://www.berliner-woche.de/karow/c-bauen/strasse-am-bahnhof-karow-wird-tiefer-gelegt_a382636 (voraussichtliche Freigabe im Herbst 2024)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-08-21 (mapillary)
-#: next_check: 2024-12-18
-# REMOVED --- #: next_check: 2024-12-31
-	2::inwork 14539,23306 14573,23295 14597,23280
-',
-         'from' => 1543258848,
-         'id' => 3058,
-         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, voraussichtlich bis Ende 2024',
-         'type' => 'gesperrt',
-         'until' => 1735664400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5178,30 +4712,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
-#: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
-#: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
-#: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024)
-	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'from' => 1734667200,
-         'id' => 3489,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Preußenallee: voraussichtlich Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 21.12.2024 05:00 bis 22.12.2024 23:00 ',
-         'type' => 'gesperrt',
-         'until' => 1734904800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6796,7 +6307,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-12-10 (mapillary) vvv
+#: last_checked: 2024-12-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -7249,7 +6760,7 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
 #: osm_watch: note 4465412 3
 #: note: es existiert eine Umleitungsstrecke für Radfahrer
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-12-17 (traffic)
+#: last_checked: 2024-12-23 (traffic)
 #: check_frequency: 7d
 # REMOVED (hier wohl nicht mehr) ---	q4::inwork 5466,5523 5555,5508
 	q4::inwork 5555,5508 5676,5488
@@ -7395,23 +6906,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        },
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (B[falsch],T[falsch],G[falsch],W[falsch])
-#: source_id: bvg2024:171#HIM_FREETEXT_227772 (ohne Endedatum)
-#: last_checked: 2024-12-12 vvv
-	q4::inwork; 13474,8060 13478,8095 13510,8138
-Treptower Str., Rechtsabbieger zur Sonnenallee	q4::inwork 13478,8095 13459,8072
-Stuttgarter Str. Ost	q4::inwork 13554,8101 13510,8138
-#: note: relativ zum Straßenabschnitt kurzer Abschnitt, deshalb q3 statt q4
-Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4091,
-         'text' => 'Treptower Str.: zwischen Sonnenallee und Stuttgarter Str. Bauarbeiten, Fahrtrichtung gesperrt, außerdem Sperrung der Anbindung Stuttgarter Str. (beide Seiten), Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -7432,7 +6927,7 @@ Stuttgarter Str. West	q3::inwork 13510,8138 13331,8283
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-12-19 vvv
+#: last_checked: 2024-12-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7937,7 +7432,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (ex-B,ex-T,G)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-12-19 vvv
+#: last_checked: 2024-12-23 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-01-17 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -8336,19 +7831,6 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Laubacher Str.: Bauarbeiten zwischen Wiesbadener Str. und Bergheimer Platz, Sperrung Richtung Süden, vermutlich sind auch Radfahrer betroffen, vom 16.12.2024 07:00 bis 14.03.2025 17:00',
          'type' => 'handicap',
          'until' => 1741968000
-       },
-       {
-         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1869796587712467317
-#: by: https://pbs.twimg.com/media/GfKxCRhXEAA0vc3?format=png&name=900x900
-#: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024)
-#: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024)
-	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
-',
-         'from' => 1734584400,
-         'id' => 4232,
-         'text' => 'Bölschestr.: Weihnachtsmarkt, zwischen Aßmannstr. und Fürstenwalder Damm gesperrt, vom 20.12.2024 6:00 Uhr bis 22.12.2024 23:59 Uhr',
-         'type' => 'handicap',
-         'until' => 1734908340
        }
      
 );
