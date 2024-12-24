@@ -2030,10 +2030,11 @@ sub showmap_url_rapid {
     }
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
     sprintf('https://rapideditor.org/edit#map=%.2f/%s/%s', $scale, $py, $px)
-	. "&background=Berlin-$newest_berlin_aerial_year"
 	. '&datasets=fbRoads,msBuildings&disable_features=boundaries'
 	. "&photo_dates=${dateFrom}_"
-	. '&photo_overlay=mapillary';
+	. '&photo_overlay=mapillary'
+	# don't specify background; Rapid chooses the newest/best aerial # . "&background=Berlin-$newest_berlin_aerial_year"
+	;
 }
 
 sub showmap_rapid {
