@@ -20,14 +20,15 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.31;
+$VERSION = 2.32;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
 use vars qw(%images);
 
 my $map_compare_use_bbbike_org = 1;
-my $newest_berlin_aerial = 'berlin-historical-2024';
+my $newest_berlin_aerial_year = '2024'; # used in MapCompare and Rapid
+my $newest_berlin_aerial = 'berlin-historical-'.$newest_berlin_aerial_year;
 
 $main::devel_host = $main::devel_host if 0; # cease -w
 
@@ -2018,6 +2019,30 @@ sub showmap_strassenraumkarte {
 }
 
 ######################################################################
+# Rapid Editor
+sub showmap_url_rapid {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $dateFrom = $args{dateFrom};
+    if ($dateFrom) {
+	$dateFrom = _rel_to_abs_date($dateFrom);
+    }
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf('https://rapideditor.org/edit#map=%.2f/%s/%s', $scale, $py, $px)
+	. "&background=Berlin-$newest_berlin_aerial_year"
+	. '&datasets=fbRoads,msBuildings&disable_features=boundaries'
+	. "&photo_dates=${dateFrom}_"
+	. '&photo_overlay=mapillary';
+}
+
+sub showmap_rapid {
+    my(%args) = @_;
+    my $url = showmap_url_rapid(%args);
+    start_browser($url);
+}
+
+######################################################################
 # Mapillary
 
 sub showmap_url_mapillary {
@@ -2025,22 +2050,10 @@ sub showmap_url_mapillary {
     my $px = $args{px};
     my $py = $args{py};
     my $dateFrom = $args{dateFrom};
-    my $panos = $args{panos};
     if ($dateFrom) {
-	if ($dateFrom =~ m{^-(\d+)year$}) {
-	    require POSIX;
-	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*365*$1));
-	} elsif ($dateFrom =~ m{^-(\d+)month$}) {
-	    require POSIX;
-	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*30*$1));
-	} elsif ($dateFrom =~ m{^-(\d+)week$}) {
-	    require POSIX;
-	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*7*$1));
-	}
-	if ($dateFrom !~ m{^\d{4}-\d{2}-\d{2}$}) {
-	    die "dateFrom parameter must be an ISO 8601 day, not '$dateFrom'";
-	}
+	$dateFrom = _rel_to_abs_date($dateFrom);
     }
+    my $panos = $args{panos};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
     sprintf("https://www.mapillary.com/app/?lat=%s&lng=%s&z=%d", $py, $px, $scale)
 	. ($dateFrom ? "&dateFrom=$dateFrom" : "")
@@ -2094,6 +2107,15 @@ sub show_mapillary_menu {
     $link_menu->command
 	(-label => '360° imagery only',
 	 -command => sub { showmap_mapillary(panos => 1, %args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
+	(-label => 'Mapillary on Rapid (all)',
+	 -command => sub { showmap_rapid(%args) },
+	);
+    $link_menu->command
+	(-label => 'Mapillary on Rapid (< 1 month)',
+	 -command => sub { showmap_rapid(dateFrom => '-1month', %args) },
 	);
     $link_menu->separator;
     $link_menu->command
@@ -2476,6 +2498,24 @@ sub _wgs84_to_pseudo_mercator {
     my $y = $R * log(Math::Trig::tan(Math::Trig::pi() / 4.0 + $phi_rad / 2.0));
 
     ($x, $y);
+}
+
+sub _rel_to_abs_date {
+    my $date = shift;
+    if ($date =~ m{^-(\d+)year$}) {
+	require POSIX;
+	$date = POSIX::strftime("%F", localtime(time - 86400*365*$1));
+    } elsif ($date =~ m{^-(\d+)month$}) {
+	require POSIX;
+	$date = POSIX::strftime("%F", localtime(time - 86400*30*$1));
+    } elsif ($date =~ m{^-(\d+)week$}) {
+	require POSIX;
+	$date = POSIX::strftime("%F", localtime(time - 86400*7*$1));
+    }
+    if ($date !~ m{^\d{4}-\d{2}-\d{2}$}) {
+	die "dateFrom parameter must be an ISO 8601 day, not '$date'";
+    }
+    $date;
 }
 
 ######################################################################
