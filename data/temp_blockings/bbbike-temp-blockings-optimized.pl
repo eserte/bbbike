@@ -2056,6 +2056,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
 #: by: https://viz.berlin.de/aktuelle-meldungen/silvesterfeier-sperrungen/ (außerdem noch weitergehende Sperrungen: alle Straßen rund um den Großen Stern)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel-2024-25/ (ab 26.12.2024)
+#: by: https://viz.berlin.de/aktuelle-meldungen/sperrungen-zur-silvesterfeier-am-brandenburger-tor/
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
@@ -3741,7 +3742,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="32"
 #: osm_watch: note 4481312 6
-#: check_frequency: 30d vvv
+#: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
@@ -3750,8 +3751,8 @@ Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr ver
 #: osm_watch: way id="31525573" version="38"
 #: osm_watch: way id="580507889" version="32"
 #: priority: #B
-#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird nicht mehr wiederholt
-#: last_checked: 2024-11-16
+#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
+#: last_checked: 2024-12-24
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -5044,18 +5045,21 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        undef,
        {
          'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
+#: by: https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
 #: by[nocache]: https://archive.is/nyxPx
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
-#: next_check: 2024-12-31
+#: last_checked: 2024-10-17 (mapillary)
+#: next_check: 2025-10-01
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
+#: last_checked: 2024-10-17 (mapillary)
+#: next_check: 2024-12-31
 #: note: eigentlich 1s:q3
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
 ',
          'from' => 1656194400,
          'id' => 3574,
-         'source_id' => 'https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf',
          'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich Herbst 2025, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str.',
          'type' => 'gesperrt',
          'until' => 1759334400
@@ -5863,32 +5867,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0523_Doppelseiten_web.pdf (15.5.2023 für ein Jahr)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10935 (Antrag)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10936 (Anfrage)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
-#: source_id[inactive]: bvg2021:190#BVG320324_0 (mittlerweile ist die offizielle Wegführung laut BVG-Karte via Alfelder Str., hier ohne Haltestellennamen (oder ist es trotzdem die Gleiwitzer Str.?))
-#: note: Baustellenschild der Wasserbetriebe bis 10.05.2024 (wurde nicht aktualisiert); Halteverbotsschilder bis 15.11.2024
-#: also_indoor: traffic (ex-G)
-#: add_fragezeichen: Sind die Bauarbeiten in der Gleiwitzer Str. beendet?
-#: last_checked: 2024-11-09 vvv
-# REMOVED --- #: check_frequency: 120d vvv
-#: next_check: 2024-11-15 vvv
-# REMOVED (hier nicht mehr) --- Gleiwitzer Str.	q4::inwork 20947,9999 20703,10004
-# REMOVED (hier nicht mehr) --- Gleiwitzer Str., Anbindung Dornacher Str.	q2::inwork 20947,9999 21146,9988
-Gleiwitzer Str. zwischen Dornacher Str. und Köpenicker Str.	q4::inwork 20947,9999 21146,9988
-# REMOVED (nicht mehr gesperrt) --- #: XXX_prog eigentlich q3+ --- Dornacher Str. (Kreuzungsbereiche)	q3::inwork 20948,9847 20947,9999 20947,10137
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1686407303,
-         'id' => 3817,
-         'text' => 'Gleiwitzer Str.: Bauarbeiten, Abschnitt der Fahrbahn zwischen Dornacher Str. und Köpenicker Str. gesperrt, voraussichtlich bis Mitte November 2024, vielleich wird wieder verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7225,19 +7204,21 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => 1822316400
        },
        {
-         'data' => '#: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (kein Endedatum)
-#: by: https://www.berlin-usedom-radweginfo.de/ (bis Ende 2024)
+         'data' => '#: also_indoor: url https://www.berlin-usedom-radweginfo.de/
+#: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
+#: note: laut berlin-usedom-radweginfo bis Ende 2024, auf finowkanal.info kein Endedatum
 #: osm_watch: way id="105827200" version="12"
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 3
-#: last_checked: 2024-08-23
-#: next_check: 2024-12-31
+#: last_checked: 2024-12-24 (indoor)
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2024-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
 ',
          'from' => 1724611975,
          'id' => 4149,
-         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2024',
+         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2024, evtl. wird verlängert',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7270,7 +7251,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2024-12-18 (website) vvv
+#: last_checked: 2024-12-24 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647

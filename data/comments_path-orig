@@ -310,7 +310,7 @@ Attilastr. - Ellwanger Str.: bereits an der Rottweiler Str. die Straßenseite wec
 # REMOVED (-> routing_helper) --- Sewanstr. - Bahndamm: An der Kreuzung Am Tierpark/Sewanstr. auf die "Tierpark"-Straßenseite wechseln	PI; 18631,10167 18690,10016 18703,9997 18708,10000 18715,10003 18773,10028
 # REMOVED (-> routing_helper) --- Bahndamm - Am Tierpark: auf dem linken Radweg bis zur Ampel Gregoroviusweg fahren	CP; 18773,10028 18715,10003 18708,10000 18703,9997 18740,9907
 # REMOVED (lohnt sich nicht; erheblicher Umweg, und wird leider nicht im Routing gut reflektiert) --- nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren und dort die Straße überqueren	PI; 18577,10023 18690,10016 18703,9997 18708,10000 18715,10003 18773,10028
-Treskowallee - Römerweg: bereits an der Ampel Römerweg die Straßenseite wechseln	PI; 18807,9746 18823,9708 18994,9707
+Treskowallee - Römerweg: bereits an der Ampel Römerweg die Straßenseite wechseln	PI; 18807,9746 18823,9708 18999,9701
 #: by: Thiemo Guenther:
 Cyclopstr. - Blomberger Weg: Einfahrt zum Parkplatz OSZ Enährungs-, Hauswirtschaft u. Drucktechnik nehmen	CP2; 5099,21410 5041,21343
 # REMOVED (stimmt nicht (mehr?)) --- Gürtelstr. - Lehderstr.: Fußgängerampel zum Überqueren der Berliner Allee/Greifswalder Str. benutzen	CP; 13409,15687 13316,15758 13214,15830
@@ -623,7 +623,7 @@ Rathausstr. - Frankfurter Allee: Fußgängerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ändert sich die Ausschilderung? vvv
-#: last_checked: 2024-12-13 vvv
+#: last_checked: 2024-12-24 vvv
 #: note: früher: ausgeschildert "zur Salzmannstraße Huronseestraße"
 nicht ausgeschildert, Richtung Salzmannstr./Huronseestr.	CP2; 16900,9861 16895,9922
 #: note: früher: ausgeschildert "zur Sewanstraße"

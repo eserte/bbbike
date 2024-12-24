@@ -10,15 +10,10 @@
 # 
 ### Friedrichshain ###
 # 
-#: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv)
-#: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller
-#: last_checked: 2024-12-19
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2024-12-13
-Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
+# REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2024-12-23
+#: last_checked: 2024-12-24
 #: check_frequency: 60d
 #: next_check_id: 2025-06-30
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -51,7 +46,7 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="11"
 #: osm_watch: way id="1072662717" version="13"
-#: last_checked: 2024-12-23
+#: last_checked: 2024-12-24
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -60,7 +55,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="3"
 #: osm_watch: way id="1146013233" version="6"
 #: osm_watch: way id="1134071039" version="8"
-#: last_checked: 2024-12-23 vvv
+#: last_checked: 2024-12-24 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -115,7 +110,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2024-12-13
+#: last_checked: 2024-12-24
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -673,8 +668,10 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 # 
 #: note: Halteverbotsschilder bis 23.12.2024
 #: also_indoor: traffic (H,B,T)
-#: last_checked: 2024-12-04
-#: next_check: 2024-12-23
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2024-12-24
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2024-12-23
 # REMOVED --- #: valid: -20241223
 Sangeallee: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Engstelle	q3::inwork 18134,9080 18247,9158
 # 
@@ -972,7 +969,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="39"
 #: osm_watch: way id="1193560283" version="8"
-#: last_checked: 2024-12-22 (osm)
+#: last_checked: 2024-12-24
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -980,7 +977,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2024-12-13
+#: last_checked: 2024-12-24
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3::inwork 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -2572,7 +2569,7 @@ Kaunstr.: Fußgänger	q1 -999,2726 -984,2692
 Brascheweg: enge Straße	q1 18881,9865 18810,9850
 #: XXX_prog BS an der östlichen Seite, sonst wäre es q2
 Brascheweg: Fußgänger, Bordstein	q3 18810,9850 18769,9839
-Rudolf-Grosse-Str.: Fußgänger	q1 19141,9709 19142,9755
+Rudolf-Grosse-Str.: Fußgänger	q1 19137,9706 19142,9755
 Nebelsteig: enge Straße	q1+ 23561,10572 23534,10446
 Heuetsteig: enge Straße	q1+ 23561,10572 23681,10552
 Hornungweg: enge Straße	q1+ 23792,10926 23750,10797 23715,10665 23681,10552 23638,10408
@@ -4691,7 +4688,7 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 #: XXX_prog: BS an beiden Enden, ansonsten trotzdem q3
 (Holzmarktstr. - Ifflandstr.): Fußgänger, Bordsteine	q3 11515,12293 11584,12258 11589,12296
 #: note: Gehweg, Radfahrer frei
-Johannes-Zoschke-Str.: einige Fußgänger	q1 19037,9636 19042,9708
+Johannes-Zoschke-Str.: einige Fußgänger	q1 19037,9636 19042,9702
 #: note: Gehweg, nicht freigegeben, aber eher geringe Fußgängerfrequenz
 Brodenbacher Weg: einige Fußgänger	q2 15278,17152 15308,17166
 #: note: Grünanlage, Zusatzschild existiert, aber nicht erkennbar vvv
@@ -6794,7 +6791,7 @@ Dualastr.: enge Straße	q1 6019,15841 5848,15685
 # 
 #: by: hannes Peters:
 #: corrected_by: srt/policy (q3 -> q1)
-(Horterweg - Römerweg): einige Fußgänger	q1 19005,9816 19003,9800 18994,9707
+(Horterweg - Römerweg): einige Fußgänger	q1 19005,9816 19003,9800 18999,9701
 # 
 #: by: Markus Brandt:
 Kissingenplatz: Bordsteine	q4 11405,17985 11390,17962

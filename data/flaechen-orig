@@ -1604,6 +1604,7 @@ Grünanlage Treue-Herzen-Pfuhl	F:P 17608,19054 17654,19052 17659,19175 17547,191
 Weddingplatz	F:P 8037,14958 8005,14924 8057,14876 8091,14895 8037,14958
 #: note: eröffnet im Dezember 2024
 Döberitzer Grünzug	F:P 7443,14107 7406,14181 7424,14191 7504,14070 7618,13902 7718,13756 7777,13669 7831,13564 7812,13557 7755,13620 7733,13622 7705,13686 7713,13708 7630,13810 7547,13946 7443,14107
+Walslebener Platz	F:P 20272,10448 20262,10317 20261,10307 20352,10304 20357,10445 20272,10448
 #############################################################################
 # Plätze (experimentell)
 # XXX_prog: es sollte unterschieden werden zwischen Flächen, die einfach
@@ -1793,8 +1794,7 @@ Ruth-Andreas-Friedrich-Park	F:P 4096,5335 4143,5367 4170,5330 4185,5349 4222,536
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.999626.php (KGA bleibt)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8425
 #: by: https://www.berliner-woche.de/wilmersdorf/c-umwelt/nachbarschaftsgarten-zur-zwischennutzung-freigegeben_a415921 (Zwischennutzung bis Ende 2024)
-#: XXX wird (oder wurde) dieser Teil der KGA aufgegeben?
-#: next_check: 2024-12-31
+# REMOVED (Block I bis III bleiben erstmal (bis 2030), Block IV (nicht bei BBBike eingezeichnet) wird aufgegeben) --- #: XXX wird (oder wurde) dieser Teil der KGA aufgegeben? --- #: osm_watch: way id="42508439" version="11" --- #: next_check: 2024-12-31
 KGA Am Stadtpark	F:Orchard 5903,8739 5855,8741 5858,8609 5907,8610
 KGA Am Stadtpark	F:Orchard 5818,8354 5831,8358 5913,8415 5909,8509 5786,8609 5790,8523 5720,8520 5724,8461 5793,8464 5799,8356 5818,8354
 #: alias ^^^

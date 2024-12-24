@@ -1595,7 +1595,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9371&date=20221227 (Zwischenbericht)
 #: osm_watch: way id="51872061" version="46"
 #: osm_watch: way id="31525575" version="32"
-#: last_checked: 2024-12-13
+#: last_checked: 2024-12-24
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 # REMOVED (zusammengelegt) --- #: next_check_id: WALLENSTEIN-2020 --- #: osm_watch: way id="31525575" version="20" --- #: XXX zurzeit laufen Bauarbeiten; Parkverbot bis 31.10.2020 --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/unterfuehrung-voll-gesperrt_a285283 (bis 16.11.2020; nur Arbeiten an der Gasleitung?) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8603 (Frage) --- #: last_checked: 2020-11-28 --- #: check_frequency: 120d --- #: next_check: 2020-11-16 --- Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
@@ -1785,10 +1785,11 @@ Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 186
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/umbau-der-residenzstrasse-beginnt-frueher_a402447 (Bauarbeiten beginnen Ende 2024, Fertigstellung des 1. Bauabschnitts 2026)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12205 (Radspuren zwischen Holländerstr. und Pankower Allee 2024)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12773 (Anfrage - Antwort)
-#: last_checked: 2024-10-02 (mapillary)
-#: check_frequency: 360d
+#: last_checked: 2024-11-18 (mapillary)
+# REMOVED --- #: check_frequency: 360d
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-06-30
-#: next_check: 2024-12-31
+# REMOVED --- #: next_check: 2024-12-31
 Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::projected 7602,17399 7579,17532 7572,17558 7533,17673 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257 7291,18392 7269,18460 7233,18562 7198,18575
 # 
 #: XXX vielleicht auch ein größerer Abschnitt
@@ -2171,14 +2172,16 @@ Oraniendamm/Oranieburger Str.: "Grundlagenermittlung für Radverkehrsanlagen"	?::
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12205 (Radverkehrsmaßnahmen 2024)
-#: next_check: 2024-12-31 vvv
+#: check_frequency: 360d vvv
+# REMOVED --- #: next_check: 2024-12-31 vvv
 #: last_checked: 2024-04-17
 Gorkistr.: nicht näher bezeichnete Radverkehrsmaßnahmen	? 3216,20531 3323,20547 3563,20589 3604,20603 3915,20711 4047,20748 4126,20771 4203,20792 4261,20808 4423,20848
-#: last_checked: 2024-04-17
+#: last_checked: 2024-04-25 (mapillary)
 Holzhauser Str.: nicht näher bezeichnete Radverkehrsmaßnahmen	? 3165,19136 3324,19277 3377,19325 3452,19392 3546,19477 3621,19539 3695,19595 3820,19688 4262,20025
 #: last_checked: 2024-08-21 (mapillary)
 Waldseeweg: nicht näher bezeichnete Radverkehrsmaßnahmen	? 4260,23986 4256,23985 4237,23964 4128,23880 3985,23814 3860,23767 3791,23730 3698,23657 3663,23608 3636,23561 3624,23540 3622,23538
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 # 
 #: by: https://www.infravelo.de/projekt/buckower-damm-1/ (1. Quartal 2025 - 2. Quartal 2025) (Maßnahme wird überprüft) (1. Quartal 2026 - 2. Quartal 2026)
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/VZPL_Buckower_Damm_01.pdf
@@ -3795,7 +3798,7 @@ L33: Neubau geplant	?::projected 23895,15904 23965,15894 23992,15894 24071,15875
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209212628/209212628/00100789/89-Anlagen/02/vzb0397_V_B_Plan_XXI_32d_1_Festsetzung_nach_Re.pdf
 #: XXX Bebauungsplan XXI-32d-1 in Marzahn-Hellersdorf
 #: note: mittlerweile steht hier ein Schild "Privat"
-#: osm_watch: way id="24216753" version="21"
+#: osm_watch: way id="24216753" version="22"
 #: priority: #C
 #: last_checked: 2024-07-06
 #: check_frequency: 180d
@@ -3834,17 +3837,19 @@ Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,1133
 #: by: https://zwieseler-hof.de/ (Fertigstellung: 4. Quartal 2026)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_51_3795_3842_online.pdf (Benennung privater Verkehrsanlagen, mit Lageplan)
 #: osm_watch: way id="1022558675" version="6"
+#: osm_watch: way id="1340601972" version="1"
 #: XXX Hier sind mittlerweile Bauarbeiten; offiziell "Verbot für Fahrzeuge aller Art, bis auf Anlieger", als Radfahrer kommt man eigentlich noch problemlos vorbei; außerdem nun "Gehweg, Radfahrer frei" im Bereich der Baustelle am Richard-Kolkwitz-Weg; mittlerweile wurde die zwischenzeitliche Sperrung wieder aufgehoben, aber evtl. kommt es in Zukunft wieder zu Sperrungen, deshalb Halbierung der check_frequency
 #: note: dieser Abschnitt wird auch "Beerfelder Str." heißen, siehe Amtsblatt 51/2024
-#: last_checked: 2024-11-09
+#: last_checked: 2024-12-24
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler Str. und Verkehrsberuhigung der nördlichen Zwieseler Str. geplant	?::inwork 19810,10155 19790,10298 19704,10301 19711,10426
 # 
 #: next_check_id: ZWIESELER-2022
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_51_3795_3842_online.pdf (Benennung privater Verkehrsanlagen, mit Lageplan)
+#: osm_watch: way id="1340601973" version="1"
 #: XXX fehlt bei Berlin.coords.data
-#: last_checked: 2024-11-09
+#: last_checked: 2024-12-24
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Zwieseler Hof: neue Straße geplant	?::inwork 19790,10298 19789,10403
@@ -4277,7 +4282,7 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege oder nur eine Fahrr
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5828
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5582 (Zwischenbericht) (Vorlage zur Kenntnisnahme: Einbahnstraßensystem geplant)
 #: XXX BA folgt der BVV bei der Sperrung des westlichen Endes des Waldstegs nicht. Aber vielleicht wird es ein Einbahnstraßensystem in der Siedlung geben.
-#: last_checked: 2024-01-07 (mapillary)
+#: last_checked: 2024-12-09 (mapillary)
 #: check_frequency: 360d
 Waldsteg: Abschnitt soll für den MIV gesperrt werden	?::projected 7940,19521 7849,19614 7851,19631 7857,19693
 # 
@@ -5488,10 +5493,8 @@ Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßn
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/an-vielen-strassen-sollen-fussgaenger-sicherer-ueber-die-fahrbahn-kommen_a411164
 #: source_id[inactive]: bvg2021:296#BVG323100_0 (Haltestellenverlegung, solange die Bauarbeiten in der Sewanstr. sind, wird wohl kein Zebrastreifen realisiert)
 #: osm_watch: note 4419911 3
-#: note: der bereits realisierte Zebrastreifen hat eine andere Standortbezeichnung: "Sewanstraße/Mellenseestraße"
-#: note: ein provisorischer Zebrastreifen existiert bereits von der Schule, aber vielleicht nur wegen der Bauarbeiten in der Sewanstr.? --- mittlerweile wurde das Provisorium entfernt
 #: priority: #D
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-24
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen in Bau	?::inwork 17826,10118 17801,10149 17833,10159
@@ -5696,7 +5699,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: source_id: viz2021:13.397721,52.495244,24.01.2022,06:00 (Kabelarbeiten bis 11.2.2022, haben diese etwas mit dem Radweg zu tun?) (inaktiv)
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
-#: osm_watch: way id="496239503" version="22"
+#: osm_watch: way id="496239503" version="23"
 #: last_checked: 2024-11-26 (nur ein provisorisch asphaltierter Radweg)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-02-11
@@ -5974,7 +5977,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17736,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 # 
 #: osm_watch: way id="621721786" version="3"
-#: last_checked: 2024-08-21
+#: last_checked: 2024-12-24
 #: check_frequency: 120d
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18076,10324 18085,10244 18114,10215
 # 
@@ -6074,7 +6077,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/infos-zum-radweg-scheffelstrasse_a426227
 #: source_id: viz2021:13.476508,52.520281,04.09.2024,07:00 (Sperrung für Kfz, bis 30.11.2024) (bis 20.12.2024) (bis 31.01.2025)
 #: XXX Außerdem: Grünbeschichtung
-#: last_checked: 2024-12-02
+#: last_checked: 2024-12-10 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-05-31
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::inwork 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
@@ -6169,7 +6172,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf (temporär für 3 Monate)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2024-12-13
+#: last_checked: 2024-12-24
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6178,7 +6181,7 @@ Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,1091
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9548 (Erwähnung einer Fahrradstraße in der Nebenstraße der Hauptstr. (Umsetzung 2025), ggfs. später noch erweitert über An der Bucht bis zur Georg-Löwenstein-Str.)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8952
 # REMOVED --- #: XXX Sieht weitgehend fertig aus --- wann erfolgt die Freigabe? --- #: note: mittlerweile sind die Barrieren halb wegschoben, aber wegen der Bauzäune an der Einmündung Karlshorster Str./Hauptstr. müsste man trotzdem Umwege fahren
-#: last_checked: 2024-12-13
+#: last_checked: 2024-12-24
 # REMOVED --- #: check_frequency: 14d
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-12-31
@@ -6213,7 +6216,7 @@ An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Buch
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
-#: last_checked: 2024-12-13
+#: last_checked: 2024-12-24
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
@@ -7199,7 +7202,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: way id="1273991435" version="3"
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht
-#: last_checked: 2024-12-19
+#: last_checked: 2024-12-24
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-11-30
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7401,7 +7404,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2024-12-23
+#: last_checked: 2024-12-24
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -7416,7 +7419,7 @@ Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_41_3059_3162_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11608
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11736 (Einwohneranfrage: Umsetzung der Fußgängerzone Anfang 2025?)
-#: last_checked: 2024-12-01
+#: last_checked: 2024-12-24
 #: check_frequency: 30d
 #: next_check: 2025-03-15
 Niemannstr.: Teileinziehung geplant	? 14211,11229 14254,11377
@@ -7493,7 +7496,7 @@ geplante Verlängerung des Uferwegs an der Spree	?::inwork 5287,12465 5282,12538 
 Paule-Panke-Str.: geplante Privatstraße	?::projected 11168,18542 11214,18388 11123,18343
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8592
-#: last_checked: 2024-07-05 (mapillary)
+#: last_checked: 2024-10-24 (mapillary)
 #: check_frequency: 180d
 Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::projected 16931,17024 16950,17061 16974,17087
 # 
@@ -7752,7 +7755,7 @@ Petersdorf: gemeinsamer Rad -und Gehweg geplant (Westseite)	?::projected 56609,-
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/die-bahnbaustellen-in-lds-so-geht-es-2024-in-eichwalde-zeuthen-und-kw-weiter-Y63OX2XJIJHG7O4Q24ZFQJX73Y.html (Ende des Straßenbaus wohl Ende 2025)
 #: last_checked: 2024-07-17
 # REMOVED --- #: next_check: 2024-12-30
-#: next_check: 2025-12-31
+#: next_check: 2025-10-01
 KW: Neubau der Eisenbahnunterführung, Anlage von Radspuren, außerdem neuer Kreisverkehr auf der Ostseite	?::projected 26300,-11727 26327,-11708 26395,-11699
 # 
 #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/feuerwache-und-verwaltungsgebaeude-entstehen_a339905 (Fertigstellung 2026)
@@ -8695,7 +8698,7 @@ Stargarder Str.: Modalfilter geplant	?::projected 11202,15748 11158,15739 11187,
 #: priority: #C
 #: last_checked: 2024-11-12
 #: check_frequency: 180d
-#: next_check: 2024-12-31
+# REMOVED --- #: next_check: 2024-12-31
 Annenstr. [Wohngebiet]: Einbahnstraße für Kfz geplant	?::projected 11259,11391 11192,11429 11233,11510
 # 
 #: next_check_id: ROSEGGER-2024
@@ -9828,7 +9831,7 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 # REMOVED (-> strassen-orig) --- An den Eiswerken	? 15004,10791 14994,10732 14984,10677
 # REMOVED (-> strassen-orig) --- Paul-und-Paula-Promenade	? 14886,10748 14909,10732 14984,10677
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
-#: last_checked: 2024-12-13 vvv
+#: last_checked: 2024-12-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-31 vvv
 #: XXX beim DPAG-Mitteilungsblatt 6/2023 als "Paul-und Paula-Promenade" bezeichnet (ein Bindestrich weniger); PLZ=10317

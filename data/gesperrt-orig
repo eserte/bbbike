@@ -266,7 +266,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="4"
-#: last_checked: 2024-11-04 (mapillary)
+#: last_checked: 2024-12-24
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -321,7 +321,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2024-11-23
+#: last_checked: 2024-12-24
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -3985,8 +3985,8 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: last_checked ^^^
 # 
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-12-13
-#: check_frequency: 30d
+#: last_checked: 2024-12-24
+#: check_frequency: 45d
 Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898
@@ -4255,7 +4255,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="28"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-12-22 (osm)
+#: last_checked: 2024-12-24
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4310,19 +4310,19 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2024-12-13
+#: last_checked: 2024-12-24
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
+# REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2024-12-13 vvv
+#: last_checked: 2024-12-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
-An den Eiswerken: mit Bauzaun abgesperrt	2::inwork 14994,10732 14984,10677
-Paul-und-Paula-Promenade	2::inwork 14886,10748 14909,10732 14984,10677
+An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
+Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,10677
 # REMOVED (offen) --- Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4532,7 +4532,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/neue-fahlenbergbruecke-wird-jetzt-fruehestens-im-sommer-2023-fertig_a336881 (unklarer Artikel; Fertigstellung Ende 2. Quartal 2023)
 #: by: https://leute.tagesspiegel.de/treptow-koepenick/macher/2022/08/08/233796/auch-der-naechste-brueckenbau-stagniert/ (Lieferung der Behelfsbrücke im Oktober 2022; Fertigstellung der neuen Brücke im 4. Quartal 2023)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-12659.pdf (Behelfsbrücke im 4. Quartal 2022 fertig)
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/ (Behelfsumfahrung für das IV. Quartal 2022 geplant)
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/ (Behelfsumfahrung für das IV. Quartal 2022 geplant) (Ende der Abbrucharbeiten der alten Brücke: I. Quartal 2025)
 #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/wieder-verzoegerung-bei-der-neuen-fahlenbergbruecke_a354938 (Fertigstellung Ende 2023)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/?date=20221019
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/verkehrsfuehrung_bauphase_2_phase_3.pdf (Geh/Radweg auf der südlichen Seite, Gegenverkehrsregelung vermutlich nur für Kfz-Verkehr)
@@ -4560,8 +4560,8 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-10-28
 # REMOVED --- #: next_check: 2024-07-03 --- Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
-#: XXX Wird bis Ende 2024 zurückgebaut
-#: next_check: 2024-12-31
+#: XXX Wird bis Ende 2024 zurückgebaut --- mittlerweile laut MVKU-Seite bis I. Quartal 2025
+#: next_check: 2025-03-31
 Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 # 
 # REMOVED --- #: next_check_id: SCHLESISCHERBUSCH-2023 --- #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/begonnene-bauarbeiten-enden-im-sommer-2023-im-schlesischen-busch_a357557 (bis Sommer 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1570686227954954240#m --- #: by: https://nitter.cz/pic/orig/media%2FFcwyqHOXgAAeape.jpg --- #: by: https://www.facebook.com/vizberlin/posts/pfbid06LxJBbLf7E1BWSREAZxyQLbEtMmoQWyekoQVyZwYzUNCuLidZWQjvAgVxps92bz4l --- #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-aufwertung-des-historischen-rundwegs --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf --- #: XXX Qualität nach den Bauarbeiten? vvv --- #: last_checked: 2023-07-09 vvv -- #: check_frequency: 30d vvv --- #: next_check: 2023-09-15 vvv
@@ -4614,21 +4614,21 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
 #: by[nocache]: https://archive.is/nyxPx
 #: note: siehe auch temp-blockings-Eintrag (mit Endedatum Ende 2024 bzw. Herbst 2025); hier etwa alle drei Monate prüfen (und next_check+valid manuell setzen)
-#: last_checked: 2024-07-17 vvv
-#: next_check: 2024-12-31 vvv
-#: valid: -20241231 vvv
 # REMOVED --- #: next_check: 2023-06-27 vvv
 # REMOVED --- #: valid: -20230627 vvv
 #: osm_watch: way id="8042966" version="26"
 #: osm_watch: way id="8042965" version="24"
 #: osm_watch: way id="8043414" version="40"
+#: last_checked: 2024-10-17 (mapillary)
+#: next_check: 2025-10-01
+#: valid: -20251001
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699
 #: osm_watch: way id="787699937" version="8"
 #: osm_watch: way id="280217696" version="10"
+#: last_checked: 2024-10-17 (mapillary)
+#: next_check: 2024-12-31
+#: valid: -20241231
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
 # 
 # REMOVED (scheint offen zu sein) --- #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173 --- #: XXX culdesac-Eintrag für die Spreestr. anpassen! --- #: last_checked: 2022-10-05 --- #: check_frequency: 45d --- (Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
 # REMOVED --- #: next_check_id: TRAMTURM-2021 --- #: XXX alten Eintrag hier wiederherstellen! --- #: last_checked: 2023-02-19 (bahninfo-forum) --- #: check_frequency: 90d --- #: next_check: 2023-07-07 ---  Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2::inwork 7422,13012 7415,13060

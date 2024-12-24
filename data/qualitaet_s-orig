@@ -305,11 +305,12 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-12-04
+#: last_checked: 2024-12-24
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
+Dönhoffstr.: Kopfsteinpflaster	Q2 18161,9029 18123,9055
 #: confirmed_by: Sabine Plagens & srt vvv
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9950,577 10078,255 10169,20 10228,-137 10282,-280
 Halker Zeile: Asphalt	Q0 10282,-280 10379,-551 10473,-799
@@ -1629,6 +1630,9 @@ Parchwitzer Str.: Beton	Q0 23022,-1047 23378,-903 23499,-856
 Wulkower Str.: Asphalt	Q0 21009,10135 21009,10285
 Wulkower Str.: Asphalt	Q0 21009,10285 21009,10425 21015,10586 21025,10815 21032,11033
 Dornacher Str.: Asphalt	Q0 20947,10137 20947,9999 20948,9847
+Gleiwitzer Str.: neuer Asphalt	Q0 21146,9988 20947,9999
+#: note: nach den Bauarbeiten 2023/2024 wurde die Fahrbahnfläche nicht großflächig asphaltiert
+Gleiwitzer Str.: Asphalt mit unebenen Stellen	Q1+ 20947,9999 20703,10004
 Buchenhainer Str.: Asphalt	Q0 21164,8243 21325,8217
 Nitzwalder Str.: Asphalt	Q0 21325,8217 21461,8094 21535,8026
 Nitzwalder Str.: Asphalt	Q0 21519,8006 21578,7947
@@ -2438,13 +2442,13 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-zum-umbau-der-elbestrasse_a397300 (Machbarkeitsstudie)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1380880.php
 #: by: https://mein.berlin.de/projekte/elbestrasse/
-#: by: https://www.kms-sonne.de/projekte/elbestrasse/ (Baubeginn voraussichtlich 2025/2026)
+#: by: https://www.kms-sonne.de/projekte/elbestrasse/ (Baubeginn voraussichtlich 2025/2026) (mittlerweile: Baubeginn ist voraussichtlich 2026)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/online-beteiligung-zur-elbestrasse-laeuft-bis-zum-27-november_a399343
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/elbestrasse/
 #: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
 #: last_checked: 2024-11-02
-#: check_frequency: 270d
-#: next_check: 2025-01-01
+#: check_frequency: 360d
+#: next_check: 2026-01-01
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
 Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13105,8720 12954,8840
 Laubestr.: Kopfsteinpflaster	Q2 12982,8564 12822,8675
@@ -5194,9 +5198,9 @@ Horterweg: Beton	Q0- 19018,10022 19023,10088
 Gregoroviusweg: Asphalt	Q0 18740,9907 18843,9952
 Gregoroviusweg: Beton	Q0 18843,9952 18869,9962 18951,9995 19018,10022
 Rudolf-Grosse-Str.: Asphalt	Q0 19109,9306 19128,9523
-Rudolf-Grosse-Str.: Kopfsteinpflaster	Q2- 19128,9523 19137,9649
-Rudolf-Grosse-Str.: Asphalt	Q0 19137,9649 19141,9709
-Rudolf-Grosse-Str.: Verbundsteinpflaster	Q1 19141,9709 19142,9755
+Rudolf-Grosse-Str.: Kopfsteinpflaster	Q2- 19128,9523 19133,9649
+Rudolf-Grosse-Str.: Asphalt	Q0 19133,9649 19137,9706
+Rudolf-Grosse-Str.: Verbundsteinpflaster	Q1 19137,9706 19142,9755
 Rudolf-Grosse-Str.: Beton	Q0 19142,9755 19144,9810
 Römerweg: Beton	Q0 19236,9710 19450,9728 19459,9842
 Römerweg: Asphalt	Q1 19599,9747 19663,9757
@@ -5311,7 +5315,8 @@ Daheimstr.: Asphalt	Q0 21324,4986 21268,4992 21271,5065
 (Ernst-Grube-Park): Parkweg	Q1 21345,5157 21329,5192 21208,5291
 Mollergasse: Kleinsteinpflaster	Q1 9892,12596 9894,12564
 (Weg entlang der Bahnstrecke): unbefestigter Pfad	Q2 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
-Johannes-Zoschke-Str.: mäßiger Asphalt	Q2 19037,9636 19042,9708
+#: historical_note: früher (bis 2023?) mäßiger Asphalt, Q2
+Johannes-Zoschke-Str.: Betonpflastersteine	Q0- 19037,9636 19042,9702
 Roßmäßlerstr.: Beton	Q0- 19479,10053 19487,10205
 Grafenauer Weg: Kleinsteinpflaster	Q1 19488,9223 19510,9497
 Grafenauer Weg: Plattenweg	Q2 19510,9497 19523,9648 19437,9653
@@ -6562,7 +6567,7 @@ Vereinssteg: Asphalt	Q0 8340,18984 8320,18955
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg_lageplan_2021-11-25.pdf
 #: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
 #: osm_watch: way id="173567970" version="9"
-#: last_checked: 2024-10-02 (mapillary)
+#: last_checked: 2024-11-30 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8644,19079
@@ -27667,7 +27672,7 @@ Dualastr.: Beton mit einigen Schäden	Q0- 6019,15841 5848,15685
 #: by: hannes Peters:
 #: note: "mäßig gepflasterter Anliegerweg"
 #: confirmed_by: srt
-(Horterweg - Römerweg): mäßiger Asphalt	Q1- 19005,9816 19003,9800 18994,9707
+(Horterweg - Römerweg): mäßiger Asphalt	Q1- 19005,9816 19003,9800 18999,9701
 # 
 #: by: Thomas Pörs: vvv
 Straße 156: Beton	Q0 17624,15767 17608,15676
@@ -33605,5 +33610,11 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 4275,3428 4275,3428
 Wendehammerbereich mit Kopfsteinpflaster	Q2 5799,8356
 Einmündungsbereich mit Kopfsteinpflaster	Q2 22095,5344
 Kreuzungsbereich mit Kleinsteinpflaster	Q1 12832,1192
+Einmündungsbereich asphaltiert	Q0 18161,9029
+Einmündungsbereich asphaltiert	Q0 18221,8978
+Einmündungsbereich asphaltiert	Q0 18299,8925
+Einmündungsbereich asphaltiert	Q0 18375,8874
+Einmündungsbereich asphaltiert	Q0 18451,8823
+Einmündungsbereich asphaltiert	Q0 18609,8717
 #: ignore ^^^
 #: section ^^^
