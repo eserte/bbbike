@@ -17656,6 +17656,7 @@ EOF
 #: source_id: viz2021:13.37679,52.5163,26.12.2023,19:34 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.371607,52.515899,26.12.2024,06:00 (bis 02.01.2025)
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
 #: by: https://viz.berlin.de/2020/12/welcome21/
@@ -31422,7 +31423,7 @@ EOF
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2024-12-20 (traffic) vvv
+#: last_checked: 2024-12-25 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -35681,7 +35682,7 @@ EOF
        data  => <<EOF,
 #: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt), 2023-12-26 (Mo, Weihnachten) 12:13 (100cm breiter Spalt, Torflügel ist fest verankert), 2024-04-23 (Di) 17:35 (Spalt, Mofa passt durch), 2024-08-18 (So) 13:20 (weiterhin 100cm breiter Spalt)
 #: osm_watch: node id="575826622" version="4" vvv
-#: last_checked: 2024-08-18 vvv
+#: last_checked: 2024-12-25 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -35744,7 +35745,7 @@ EOF
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2024-12-12 vvv
+#: last_checked: 2024-12-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -45007,7 +45008,7 @@ EOF
      { from  => 1725141600, # 2024-09-01 00:00
        dont_check_date => 1,
        until => undef, # 1734303599, # 2024-12-15 23:59
-       text  => 'Am Eichgarten: Baurbeiten zwischen Stindestr. und Siemensstr., Sperrung des Weges, geplant bis Anfang Dezember 2024',
+       text  => 'Am Eichgarten: Bauarbeiten zwischen Stindestr. und Siemensstr., Sperrung des Weges, geplant bis Anfang Dezember 2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480271.php
@@ -46047,6 +46048,22 @@ EOF
 #: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024) (inaktiv)
 #: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024) (inaktiv)
 	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Wintgensstr.: Fahrbahn zwischen Gontermannstr. und Hessenring gesperrt, Ende der Sperrung unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
+#: note: Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
+#: also_indoor: traffic (B,T)
+#: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
+#: osm_watch: way id="89413122" version="9"
+#: last_checked: 2024-12-25
+#: check_frequency: 30d
+#: next_check: 2028-12-31
+	q4::inwork 8384,7915 8260,7911
 EOF
      },
     );

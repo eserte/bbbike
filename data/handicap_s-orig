@@ -134,12 +134,13 @@ Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/friedrichshain-ploetzlich-wurde-es-hell-was-passiert-eigentlich-im-berliner-ostbahnhof-li.418658 (bis 2026)
+#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bahn-beendet-dachsanierung-am-ostbahnhof_a432168
 #: XXX Wann sind die Bauarbeiten beendet?
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
 #: last_checked: 2024-12-06 vvv
-#: check_frequency: 120d vvv
+#: check_frequency: 90d vvv
 #: next_check: 2026-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
@@ -950,7 +951,7 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 # REMOVED (kein Hindernis mehr) --- #: next_check_id: RICHARDSTR-2014 vvv --- #: XXX bis wann ist die Baustelle fertig? vvv --- #: last_checked: 2014-10-31 vvv --- #: check_frequency: 14d vvv --- Richardstr.: Bauarbeiten, schmale Gasse für Fußgänger	q4::inwork 13081,7907 13045,7938
 # REMOVED --- #: note: nur teilweise --- Richardstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 13150,7845 13103,7889
 # REMOVED (mittlerweile existiert eine Fahrgasse) --- #: last_checked: 2014-09-26 --- #: check_frequency: 30d --- Maybachufer: Bauarbeiten an der Kreuzung Friedelstr., Ausweichen über Gehweg	q3::inwork 12088,9775 12250,9691
-# REMOVED --- #: next_check_id: PLATZHOF-2014 --- #: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof --- #: by: http://www.aktion-kms.de/files/p23.v_l01_120809.pdf --- #: by: http://www.aktion-kms.de/files/pl_d_std_hof_flyer_5.pdf --- #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden --- #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf --- #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/ --- #: last_checked: 2014-04-11 vvv --- #: check_frequency: 15d vvv --- Richardstr.: Baurbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12797,8168 12779,8188 --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED --- #: next_check_id: PLATZHOF-2014 --- #: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof --- #: by: http://www.aktion-kms.de/files/p23.v_l01_120809.pdf --- #: by: http://www.aktion-kms.de/files/pl_d_std_hof_flyer_5.pdf --- #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden --- #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf --- #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/ --- #: last_checked: 2014-04-11 vvv --- #: check_frequency: 15d vvv --- Richardstr.: Bauarbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12797,8168 12779,8188 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (fertig, noch immer KS) --- #: next_check_id: FRIEDEL-2014 --- #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht? --- #: last_checked: 2014-12-12 --- #: check_frequency: 60d --- Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
@@ -1902,7 +1903,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2024-12-20
+#: last_checked: 2024-12-25
 # REMOVED --- #: check_frequency: 14d
 #: check_frequency: 30d
 #: next_check: 2025-03-15
