@@ -352,7 +352,7 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): einige Fußgänger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
 Spreeufer: Fußgänger, besonders an schönen Tagen	q3 10166,12777 10105,12855 9955,12915 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
-Spreeufer: Fußgänger	q2 9707,12974 9557,12992 9538,12993 9508,12991 9279,12953
+Spreeufer: Fußgänger, Bordstein	q3 9707,12974 9557,12992 9538,12993 9508,12991 9279,12953
 Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10312,12982 10371,13006
 Monbijoupark - Henriette-Herz-Platz: Fußgänger	q2 9955,12915 10084,12921 10132,12941
 (Monbijoupark, östlicher Weg): einige Fußgänger	q1 10016,13067 9975,12959
@@ -1791,7 +1791,7 @@ Földerichplatz: Fußgängerzone	q3 -3942,12559 -3940,12377
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Fußgänger	q1 20759,15740 20789,15736
 (Wasserweg - Treptower Park): einige Fußgänger, Bordstein, Zugang kann zugeparkt sein	q3 15678,8911 15617,8924
 Monumentenplatz: einige Fußgänger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
-(Minna-Cauer-Str. - Lehrter Str.): Fußgänger, Radfahren offiziell verboten	q4 7895,13415 7873,13448 7837,13499 7795,13528 7775,13540
+(Minna-Cauer-Str. - Lehrter Str.): Fußgänger, Radfahren offiziell verboten	q4 7895,13415 7873,13448 7861,13465 7795,13528 7775,13540
 (Minna-Cauer-Str. - Lehrter Str.): einige Fußgänger, schmale Straße	q1 7775,13540 7666,13479 7653,13480
 Andreas-Hofer-Platz: einige Fußgänger, Bordsteine	q3 10490,16914 10493,16960
 Schlosspark Schönhausen: einige Fußgänger, Pflasterreihen	q1 10496,18704 10518,18750 10513,18854 10497,18883 10507,18959 10529,19055 10584,19132 10600,19225
@@ -2267,7 +2267,7 @@ Am Berlin Museum: einige Katzenkopfreihen	q2 10032,10752 9829,10830
 Traberweg: einige Fußgänger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18116,8424 18072,8470 18005,8517 17930,8567 17851,8662
 (Trautenauer Str. - Liepnitzstr.): einige Fußgänger	q1 17838,8611 17873,8578 17912,8515 18037,8420
 Campus AF 60: Schranke kann auf Gehweg umfahren werden	q2 18964,11719 18919,11720
-Otto-Weidt-Platz: einige Fußgänger	q1 7739,14119 7825,14173 7875,14204
+Otto-Weidt-Platz: einige Fußgänger	q1 7739,14119 7784,14147 7875,14204
 Otto-Weidt-Platz: einige Fußgänger	q1 7923,14142 7850,14100 7778,14059
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fußgänger	q1 7923,14142 7912,14160 7875,14204
 Teltowkanaluferweg: gemeinsamer Geh- und Radweg	q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095 8881,5143 9080,5225 9171,5263 9196,5272
@@ -2340,9 +2340,9 @@ Diestelmeyerstr.: einige Fußgänger	q3 12833,12920 12690,12769
 (Sebastianstr./Alexandrinenstr. - Dresdener Str.): einige Fußgänger	q1 10826,11251 10907,11290 10957,11294 11000,11327
 Sokratesweg: einige Fußgänger	q2 18514,9552 18604,9535
 Hans-Baluschek-Park: enge Rampe, Fußgänger	q2 7252,6080 7278,6101
-(provisorischer Weg zum Golda-Meir-Steg): Fußgänger	q3 7825,14173 7861,14133
+(nördlicher Otto-Weidt-Platz - Golda-Meir-Steg): Fußgänger	q2 7784,14147 7827,14152 7861,14133
 Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
-(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Fußgänger	q2 7861,14133 7850,14100
+(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Fußgänger	q2 7861,14133 7818,14117 7778,14059
 (Heidestr./Kieler Brücke - George-Stephenson-Str.): Fußgänger	q2 7612,14325 7529,14274
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): schmal, einige Fußgänger	q2 21440,300 21435,323
 (Dolgenseestr., Fußgängerzone): Fußgänger	q3 17457,10083 17412,9911 17384,9807
@@ -2621,17 +2621,17 @@ Hebammensteigbrücke: Fußgänger	q3 13193,21700 13168,21706 13135,21715 13121,2167
 Tourcoingstr.: Baumstämme als Barrieren	q4 3796,16202 3781,16175
 Am Mühlanger/Knyphausenweg: Stadtplatz, einige Fußgänger	q1 12868,1315 12902,1321 12904,1299
 Am Teltowkanal: zahlreiche Temposchwellen, abwechselnd rechts und links umfahrbar	q0 15338,4341 15331,4371 14967,4641
-(Döberitzer Grünzug): einige Fußgänger	q1 7837,13499 7812,13549
-(Döberitzer Grünzug): einige Fußgänger	q1 7812,13549 7821,13559 7811,13590 7785,13595
-(Döberitzer Grünzug): einige Fußgänger	q1 7785,13595 7748,13628
-(Döberitzer Grünzug): einige Fußgänger	q1 7748,13628 7733,13622
-(Döberitzer Grünzug): einige Fußgänger	q1 7733,13622 7716,13676 7731,13691
-(Döberitzer Grünzug): einige Fußgänger	q1 7731,13691 7642,13815 7599,13891 7554,13949 7517,14019 7451,14111 7432,14157 7400,14207
-(Quartiersplatz Schleicherareal): einige Fußgänger, Spielplätze	q2 7400,14207 7303,14185
-(Döberitzer Grünzug - Klara-Franke-Str.): einige Fußgänger	q1 7451,14111 7443,14107
-(Döberitzer Grünzug - Klara-Franke-Str.): einige Fußgänger	q1 7554,13949 7547,13946
-(Döberitzer Grünzug - Klara-Franke-Str.): einige Fußgänger	q1 7642,13815 7630,13810
-(Döberitzer Grünzug - KGA Lehrter Str.): einige Fußgänger	q1 7812,13549 7795,13528
+(Döberitzer Grünzug): einige Fußgänger	q1 7861,13465 7819,13559
+(Döberitzer Grünzug): einige Fußgänger	q1 7819,13559 7825,13569 7805,13594 7782,13600
+(Döberitzer Grünzug): einige Fußgänger	q1 7782,13600 7756,13634
+(Döberitzer Grünzug): einige Fußgänger	q1 7756,13634 7739,13627
+(Döberitzer Grünzug): einige Fußgänger	q1 7739,13627 7712,13682 7724,13703
+(Döberitzer Grünzug): einige Fußgänger	q1 7724,13703 7642,13815 7599,13891 7554,13949 7517,14019 7451,14111 7432,14157 7400,14207
+(Quartiersplatz Schleicherareal): einige Fußgänger, Spielplätze	q2 7400,14207 7342,14206 7303,14185
+(Döberitzer Grünzug - Klara-Franke-Str.): einige Fußgänger, flache Bordsteinkante	q3 7451,14111 7443,14107
+(Döberitzer Grünzug - Klara-Franke-Str.): einige Fußgänger, flache Bordsteinkante	q3 7554,13949 7547,13946
+(Döberitzer Grünzug - Klara-Franke-Str.): einige Fußgänger, flache Bordsteinkante	q3 7642,13815 7630,13810
+(Döberitzer Grünzug - KGA Lehrter Str.): einige Fußgänger	q1 7819,13559 7795,13528
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2921,7 +2921,7 @@ Willenberger Pfad: Fußgänger, schmal	q2 569,10738 673,10727
 (Zum Hubertussee): Fußgänger, schmal	q3 1807,8893 1809,8916
 (Parkweg Reichsstr.): Fußgänger	q2 -264,13009 -208,12938 -103,12841 -45,12778 23,12739
 (Machandelweg - Reichsstr.): Fußgänger, eng, Bordsteine	q4 -190,12825 -166,12849 -103,12841 -85,12852
-(zur Karl-Marx-Allee): Bordsteine, Fußgänger	q3 11367,12940 11289,12908
+(zur Karl-Marx-Allee): Fußgänger	q3 11367,12940 11357,12915 11226,12945
 (Börnicker Str. - Südpark): Fußgänger	q2 -4117,11997 -4095,12006
 (Graetschelsteig - Südpark): Fußgänger	q2 -4195,12139 -4144,12187
 Südpark): Fußgänger	q2 -4027,11818 -3890,11775 -3712,11714

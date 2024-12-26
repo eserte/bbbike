@@ -2271,7 +2271,6 @@ Mittelstreifen	3nocross::ignrte 11369,13174 11320,13095 11267,13012 11226,12945
 Theanolte-Bähnisch-Str. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11235,13143 11320,13095 11369,13174
 Otto-Braun-Str. -> Theanolte-Bähnisch-Str.: Mittelstreifen	3::igndisp 11267,13012 11320,13095 11235,13143
 Mittelstreifen	3nocross::ignrte 11226,12945 11289,12908 11589,12768 11635,12745
-Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11367,12940 11289,12908 11589,12768
 unbequem zu überqueren (Bordsteine)	3nocross::ignrte 10796,8498 10911,8457 11225,8350 11266,8336
 Columbiadamm -> Hasenheide, am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3::igndisp 10796,8498 10911,8457 10913,8463
 Hasenheide, am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 10913,8463 10911,8457 11225,8350
@@ -2851,7 +2850,7 @@ tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60:89 -19150,7320
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60:57 -19183,7299
 tragen (14 Stufen)	0:25:-269 3619,9331
 tragen (21 Stufen)	0:30:-263 9557,12992
-tragen (Treppe)	0:30:86 9508,12991
+tragen (9 + 8 Stufen)	0:30:86 9508,12991
 tragen (41 Stufen)	0:45:-226 9983,16561
 tragen (Treppe)	0:45:38 9982,16527
 tragen (Treppe, 7+10 Stufen)	0:30:-66 3766,12596
@@ -3598,7 +3597,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
-Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
+Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 Parochialstr.: 60m der Straße (Fahrbahn + Bürgersteige) zwischen Jüdenstr. und Klosterstr. gesperrt	2::inwork 10831,12371 10957,12401
 Dircksenstr.: Einbahnstraßenregelung	1s:inwork 11057,12715 11138,12604 11202,12426
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174 9254,13171

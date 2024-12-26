@@ -1868,21 +1868,9 @@ Otto-Weidt-Platz	NN 7923,14142 7850,14100
 #: note: Einfahrt verboten, Anlieger frei
 Otto-Weidt-Platz	N 7850,14100 7778,14059
 # REMOVED (nicht mehr) --- #: note ^^^
-Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
-#: next_check_id: EUROPACITY-2015
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
-#: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
-#: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=750664#post750664
-#: by: https://www.nachhaltige-erneuerung.berlin/tiergarten-nordring-heidestrasse/otto-weidt-platz
-#: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant)
-#: osm_watch: way id="1010731431" version="8"
-#: osm_watch: way id="642581102" version="10"
-#: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2024-11-28
-#: check_frequency: 45d
-# REMOVED --- #: next_check: 2024-10-31
-(provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
-(Golda-Meir-Steg - südliches Otto-Weidt-Platz)	NN 7861,14133 7850,14100
+Otto-Weidt-Platz	NN 7739,14119 7784,14147 7875,14204
+(nördlicher Otto-Weidt-Platz - Golda-Meir-Steg)	NN 7784,14147 7827,14152 7861,14133
+(Golda-Meir-Steg - südlicher Otto-Weidt-Platz)	NN 7861,14133 7818,14117 7778,14059
 Golda-Meir-Steg	NN 7861,14133 7899,14157 7962,14198 7973,14195
 Golda-Meir-Steg	NN 7962,14198 7968,14202
 Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
@@ -1897,19 +1885,14 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
 (Hedwig-Porschütz-Str. - Uferweg)	NN 7802,14250 7830,14268
-#: next_check_id: EUROPACITY-2015
-#: XXX Bekommt diese Verbindung einen Straßennamen?
-#: osm_watch[closed]: note 3892438 3
-#: osm_watch: way id="1255643497" version="8"
-#: last_checked: 2024-11-03
-#: check_frequency: 60d
+# REMOVED (unwahrscheinlich) --- #: next_check_id: EUROPACITY-2015 --- #: XXX Bekommt diese Verbindung einen Straßennamen? --- #: osm_watch[closed]: note 3892438 3 --- #: osm_watch: way id="1255643497" version="8" --- #: last_checked: 2024-11-03 --- #: check_frequency: 60d
 (Hedwig-Porschütz-Str. - George-Stephenson-Str.)	NN 7697,14187 7614,14136
 #: next_check_id: EUROPACITY-2015
 #: XXX Bekommt diese Verbindung einen Straßennamen? Wird nach Ende der Bauarbeiten Autoverkehr möglich sein, oder der Weg zu einem Platz aufgeweitet?
 #: note: ggfs. qualitaet/handicap-Einträge anpassen
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: osm_watch: way id="645343614" version="8"
-#: last_checked: 2024-11-03
+#: last_checked: 2024-12-26
 #: check_frequency: 90d
 (Heidestr./Kieler Brücke - George-Stephenson-Str.)	NN 7612,14325 7529,14274
 Lisa-Fittko-Str.	N 7820,13994 7734,13944
@@ -2376,7 +2359,9 @@ Knorrpromenade	N 14369,11489 14424,11639
 Gabriel-Max-Str.	N 14049,11553 14065,11605 14102,11715 14127,11811 14161,11930
 Kreutzigerstr.	N 14161,11930 14274,12190
 (Kreutzigerstr. - Frankfurter Allee)	NN 14274,12190 14280,12223
-Niederbarnimstr.	N 14055,11964 14073,11995 14208,12235
+#: note: zwei Pollerreihen
+Niederbarnimstr.	NN 14055,11964 14073,11995
+Niederbarnimstr.	N 14073,11995 14208,12235
 Bänschstr.	N 14058,12709 14188,12664 14319,12629 14591,12555
 Bänschstr.	N 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
 Bänschstr.	N 14996,12462 14801,12517 14686,12549 14672,12565 14599,12584
@@ -5085,23 +5070,23 @@ Klara-Franke-Str.	N 7366,14067 7443,14107 7547,13946 7630,13810 7535,13754
 (Lehrter Str. - Klara-Franke-Str.)	NN 7468,13876 7493,13918 7547,13946
 (Lehrter Str. - Klara-Franke-Str.)	NN 7438,13930 7493,13918
 Lehrter Str.	N 7759,13246 7651,13447 7647,13461 7653,13480 7660,13506 7655,13539 7630,13584 7535,13754 7468,13876 7452,13904 7438,13930 7366,14067 7331,14132 7303,14185 7180,14419
-Lehrter Str. [6-8]	N 7630,13584 7733,13622
+Lehrter Str. [6-8]	N 7630,13584 7739,13627
 #: osm:highway: service
 (Seydlitzstr. - Lehrter Str.)	N 7613,13517 7651,13447
 (Weg durch den Geschichtspark)	NN 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470 7651,13447
-(Minna-Cauer-Str. - Lehrter Str.)	NN 7895,13415 7873,13448 7837,13499 7795,13528 7775,13540
+(Minna-Cauer-Str. - Lehrter Str.)	NN 7895,13415 7873,13448 7861,13465 7795,13528 7775,13540
 # 
-(Döberitzer Grünzug)	NN 7837,13499 7812,13549
-(Döberitzer Grünzug)	NN 7812,13549 7821,13559 7811,13590 7785,13595
-(Döberitzer Grünzug)	NN 7785,13595 7748,13628
-(Döberitzer Grünzug)	NN 7748,13628 7733,13622
-(Döberitzer Grünzug)	NN 7733,13622 7716,13676 7731,13691
-(Döberitzer Grünzug)	NN 7731,13691 7642,13815 7599,13891 7554,13949 7517,14019 7451,14111 7432,14157 7400,14207
-(Quartiersplatz Schleicherareal)	NN 7400,14207 7303,14185
+(Döberitzer Grünzug)	NN 7861,13465 7819,13559
+(Döberitzer Grünzug)	NN 7819,13559 7825,13569 7805,13594 7782,13600
+(Döberitzer Grünzug)	NN 7782,13600 7756,13634
+(Döberitzer Grünzug)	NN 7756,13634 7739,13627
+(Döberitzer Grünzug)	NN 7739,13627 7712,13682 7724,13703
+(Döberitzer Grünzug)	NN 7724,13703 7642,13815 7599,13891 7554,13949 7517,14019 7451,14111 7432,14157 7400,14207
+(Quartiersplatz Schleicherareal)	NN 7400,14207 7342,14206 7303,14185
 (Döberitzer Grünzug - Klara-Franke-Str.)	NN 7451,14111 7443,14107
 (Döberitzer Grünzug - Klara-Franke-Str.)	NN 7554,13949 7547,13946
 (Döberitzer Grünzug - Klara-Franke-Str.)	NN 7642,13815 7630,13810
-(Döberitzer Grünzug - KGA Lehrter Str.)	NN 7812,13549 7795,13528
+(Döberitzer Grünzug - KGA Lehrter Str.)	NN 7819,13559 7795,13528
 # 
 #: osm.highway: service
 (Minna-Cauer-Str. - Lehrter Str.)	N 7775,13540 7666,13479 7653,13480
@@ -18786,7 +18771,7 @@ Berolinastr.	N 11541,12886 11590,12995
 (Mollstr.)	NN 11630,12867 11622,12850
 (Karl-Marx-Allee)	NN 11601,12858 11622,12850 11716,12803
 (Karl-Marx-Allee - Berolinastr.)	NN 11635,12745 11645,12774 11622,12850
-(Karl-Marx-Allee - Berolinastr.)	NN 11289,12908 11367,12940
+(Karl-Marx-Allee - Berolinastr.)	NN 11226,12945 11357,12915 11367,12940
 (Karl-Marx-Allee - Berolinastr.)	N 11367,12940 11419,12944
 Am Festungsgraben	N 9742,12609 9747,12584
 Am Festungsgraben	NN 9747,12584 9761,12509 9771,12400
@@ -19204,7 +19189,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9153,12928
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
 #: osm_watch: way id="327518240" version="10"
-#: last_checked: 2024-11-01
+#: last_checked: 2024-12-26
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9153,12928
 (Reinhardtstr. - Am Zirkus)	NN 9058,13054 9090,13009

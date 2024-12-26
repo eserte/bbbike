@@ -1600,9 +1600,9 @@ Virchow-Klinikum	2::inwork 6106,14890 6104,14937
 # 
 #: XXX nach den Bauarbeiten die alte Einbahnstraßenregelung eintragen
 #: note: es gibt eine provisorische Verbindung zur Weststr. (nicht bei bbbike eingezeichnet)
-#: last_checked: 2024-09-18 vvv
+#: last_checked: 2024-11-18 (osm) vvv
 #: check_frequency: 120d vvv
-#: osm_watch: way id="273858820" version="10"
+#: osm_watch: way id="273858820" version="11"
 #: osm_watch: way id="1239079510" version="1"
 (Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5926,14997 5935,14948 5940,14911 6030,14924
 #: osm_watch: way id="273858819" version="11"
@@ -2951,7 +2951,7 @@ tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60 -19183,7299
 #: corrected_by: srt (12 -> 14)
 tragen (14 Stufen)	0:25 3619,9331
 tragen (21 Stufen)	0:30 9557,12992
-tragen (Treppe)	0:30 9508,12991
+tragen (9 + 8 Stufen)	0:30 9508,12991
 #: by: rjoop
 #: confirmed_by: srt
 #: note: 10+10+11+10 Stufen
@@ -3918,7 +3918,7 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1
 #: osm_watch: note 4545425 2
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
-#: last_checked: 2024-12-23
+#: last_checked: 2024-12-26
 #: check_frequency: 120d
 #: next_check: 2029-12-31
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
@@ -3991,8 +3991,9 @@ Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 172
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898
 #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant)
-#: osm_watch: note 4551219 1
-#: last_checked: 2024-11-28
+#: osm_watch[closed]: note 4551219 3
+#: osm_watch: way id="1009956629" version="11"
+#: last_checked: 2024-12-26
 # REMOVED --- #: next_check: 2024-10-31
 Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::inwork 7912,14160 7875,14204
 # 
@@ -4102,7 +4103,7 @@ Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2024-12-17 vvv
+#: last_checked: 2024-12-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-01 vvv
 #: osm_watch: way id="1054783030" version="3"
@@ -4124,7 +4125,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
 #: osm_watch: way id="1106303945" version="8"
-#: osm_watch: way id="4543436" version="37"
+#: osm_watch: way id="4543436" version="38"
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch: note 4126450 4
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
@@ -4348,7 +4349,8 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
 #: priority: #C
 #: last_checked: 2024-11-30
-# REMOVED --- #: next_check: 2024-08-07
+#: check_frequency: 90d
+#: next_check: 2026-04-01
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -4982,7 +4984,7 @@ Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2024-11-03
+#: last_checked: 2024-12-26
 #: check_frequency: 90d
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
 # REMOVED (offen) --- #: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken --- #: last_checked: 2024-06-30 (daf) vvv --- #: check_frequency: 45d vvv --- George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136 --- (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -5007,7 +5009,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX evtl. wird die Qualität nach den Bauarbeiten besser sein (vielleicht keine Straßenbahnschienen mehr, neuer Asphalt?)
 #: osm_watch: note 3954448 4
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2024-12-23
+#: last_checked: 2024-12-26
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-12-31
@@ -5132,16 +5134,16 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-12-19
+#: last_checked: 2024-12-26
 #: check_frequency: 30d
 Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen, die Masten und Signalgeber stehen schon.
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2024-12-23
+#: last_checked: 2024-12-26
 #: check_frequency: 60d
-Jüdenstr.: Mittelteil komplett gesperrt	2::inwork 10783,12502 10807,12451
+Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: osm_watch: way id="751595931" version="5"
@@ -5407,7 +5409,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2024-11-28 vvv
+#: last_checked: 2024-12-26 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -5544,7 +5546,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="41"
 #: also_indoor: traffic
-#: last_checked: 2024-12-07 vvv
+#: last_checked: 2024-12-26 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
@@ -5658,8 +5660,8 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-14
 #: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz
 #: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf
-#: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."
-#: osm_watch: way id="760022943" version="14" brb
+#: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."; bei osm mittlerweile offen
+#: osm_watch: way id="760022943" version="15" brb
 #: last_checked: 2024-07-24 (osm)
 #: check_frequency: 60d
 Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
