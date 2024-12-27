@@ -1073,7 +1073,7 @@ südliches Sackgassenende	culdesac_pseudo 4916,17201
 	culdesac_pseudo 7212,17756
 	culdesac 13738,2911
 	culdesac 18714,403
-	culdesac 18850,550
+	culdesac 18762,578
 	culdesac 11768,6159
 #: note: "pseudo", weil es im Gewerbepark weitere Straßenverbindungen gibt
 MEON-Gewerbepark	culdesac_pseudo 21443,13125
@@ -1172,7 +1172,7 @@ südliches Sackgassenende	culdesac 24186,10035
 	culdesac 23382,11760
 	culdesac 25664,11460
 	culdesac 25678,9821
-	culdesac 21135,-274
+# REMOVED ---	culdesac 21045,-330
 	culdesac 24977,-2753
 	culdesac 24705,-3053
 	culdesac 24598,-3108
@@ -1555,6 +1555,7 @@ südwestliches Sackgassenende	culdesac_pseudo 16282,14640
 	culdesac 12607,16068
 	culdesac 19672,-228
 	culdesac 19574,-306
+#: note: im Anschluss existiert ein Pfad Richtung Quittenweg
 	culdesac_pseudo 19356,-253
 	culdesac_pseudo 19895,-300
 	culdesac_pseudo 21253,-1493

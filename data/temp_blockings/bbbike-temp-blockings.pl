@@ -15570,7 +15570,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013726', # auch: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/
        data  => <<EOF,
-	q4::inwork; 21355,-309 21235,-354 21157,-413 21120,-444
+	q4::inwork; 21355,-309 21235,-354 21157,-413 21138,-428 21120,-444
 EOF
      },
      { from  => 1249154403, # 2009-08-01 21:20
@@ -17630,7 +17630,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014849',
        data  => <<EOF,
-	q4::inwork; 17142,3393 17194,3343 17274,3267 17454,3096 17525,3029 17741,2824 17850,2795 17894,2783
+	q4::inwork; 17142,3393 17194,3343 17274,3267 17454,3096 17525,3029 17569,2987 17741,2824 17850,2795 17894,2783
 EOF
      },
      { from  => 1260745200, # 2009-12-14 00:00
@@ -17657,9 +17657,9 @@ EOF
 #: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,26.12.2024,06:00 (bis 02.01.2025)
-#: source_id: viz2021:13.37688,52.51775,26.12.2024,06:00 (bis 02.01.2025)
-#: source_id: viz2021:13.379494,52.516456,26.12.2024,06:00 (bis 02.01.2025)
-#: source_id: viz2021:13.37679,52.5163,26.12.2024,06:00 (bis 02.01.2025)
+#: source_id: viz2021:13.37688,52.51775,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: source_id: viz2021:13.379494,52.516456,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: source_id: viz2021:13.37679,52.5163,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,26.12.2024,06:00 (bis 02.01.2025)
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
@@ -21021,19 +21021,25 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-04 00:00:00"), # 1336255200, # 2012-05-06 00:00
-       until => $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
+       until => $isodate2epoch->("2025-02-18 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #       text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
-       text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
+#       text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
+       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich vom bis 18.02.2025',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/der_verkehr_berlin_in_winterferien/?date=20240201
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-grunauer-strasse-ab-montag-05-februar-2024/ (Köpenicker Str. bis Grünauer Str. 70)
 #: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
-#: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4
-	q3::inwork 19766,1796 19898,1704
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten)
+#: osm_watch: way id="152466403" version="21"
+#: osm_watch: note 4444162 2
+# REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
+#: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str. und Lianenweg, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle
+	q4::inwork; 20302,1613 20028,1673 19898,1704 19766,1796
+Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 EOF
      },
      { from  => 1336764755, # 2012-05-11 21:32
@@ -38119,8 +38125,8 @@ EOF
 #: source_id: viz2021:13.515661,52.469682,06.03.2023,07:00 (zusätzlicher Eintrag, bis 30.04.2023) (bis 17.05.2023) (inaktiv)
 # REMOVED --- #: XXX außerdem: hier wird eine neue Ampel gebaut --- #: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee gesperrt? vvv --- #: priority: #A vvv --- #: last_checked: 2023-06-03 (mapillary, keine Bautätigkeiten mehr zu sehen) vvv --- #: check_frequency: 21d vvv --- #: next_check: 2023-09-03 vvv
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
-#	3nocross::ignrte 18256,7520 18382,7724 18406,7760 18471,7862
-Treskowallee -> Hegemeisterweg	3::inwork 18256,7520 18382,7724 18325,7778
+#	3nocross::ignrte 18256,7520 18267,7537 18382,7724 18406,7760 18471,7862
+Treskowallee -> Hegemeisterweg	3::inwork 18256,7520 18267,7537 18382,7724 18325,7778
 Hegemeisterweg -> Treskowallee	3::inwork 18325,7778 18382,7724 18406,7760
 Treskowallee -> Hegemeisterweg	3::inwork 18382,7724 18406,7760 18325,7778
 Treskowallee -> Modellpark Wuhlheide	3::inwork 18471,7862 18406,7760 18437,7752
@@ -38264,7 +38270,7 @@ EOF
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2024-12-18 vvv
+#: last_checked: 2024-12-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-01-27 vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -41309,7 +41315,7 @@ EOF
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2024-12-11 (bahninfo-forum) vvv
+#: last_checked: 2024-12-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-02-28 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -45617,8 +45623,8 @@ EOF
 EOF
      },
      { from  => 1729461600, # 2024-10-21 00:00
-       until => 1735340400, # 2024-12-28 00:00
-       text  => 'Grolmanstr.: Sperrung zwischen Goethestr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 27.12.2024',
+       until => $isodate2epoch->("2025-01-06 23:59:59"), # 1735340400, # 2024-12-28 00:00
+       text  => 'Grolmanstr.: Sperrung zwischen Goethestr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 06.01.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: rbb

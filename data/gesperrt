@@ -98,7 +98,7 @@ Nˆldnerplatz	1s 15870,10938 15903,10906
 Nˆldnerplatz	1 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 22096,1136 21837,1340 21812,1366 21506,1768 21388,1895
 Adlergestell (extra Radweg)	2 21998,1239 21937,1343 21878,1500 21862,1532
-Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
+Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20956,-491 21074,-475
 B96a (Kfz-Straﬂe)	2 21829,1351 21862,1532
 B96a (Kfz-Straﬂe)	2 21862,1532 21819,1595 21506,1768
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
@@ -1907,6 +1907,9 @@ Rolandseck -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18903,9244 18834,9256 1
 Straﬂenbahntrasse	3nocross::ignrte 18577,8033 18471,7862 18406,7760
 Treskowallee -> Traberweg: Straﬂenbahntrasse	3::igndisp 18406,7760 18471,7862 18442,7882
 Traberweg -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18442,7882 18471,7862 18577,8033
+Straﬂenbahntrasse	3nocross::ignrte 18198,7425 18256,7520 18267,7537 18382,7724
+Treskowallee -> Am Walde/Oskarstr.: Straﬂenbahntrasse	3::igndisp 18256,7520 18267,7537 18056,7664
+Am Walde/Oskarstr. -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18056,7664 18267,7537 18382,7724
 Bundesallee	3nocross::ignrte 5463,9961 5461,9923 5467,9866
 Bundesallee	1::igndisp 5467,9866 5461,9923 5463,9961
 Bundesallee	1::igndisp 5463,9961 5464,9934 5467,9866
@@ -2917,6 +2920,7 @@ tragen (Treppe) oder Aufzug benutzen	0:30:-253 39964,102370
 tragen (Treppe, 6 Stufen)	0:15:13 14918,10769
 tragen (Treppe, 4 Stufen)	0:10:-169 7733,5893
 tragen (3 weite Stufen) oder wilde Rampe benutzen	0:15:-154 19756,4245
+Tragen (Treppe, 14 Stufen)	0:25:-170 18774,581
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382
@@ -3495,6 +3499,7 @@ weites Dr‰ngelgitter	BNP:2:-144:trailer=7 16026,9821
 weites Dr‰ngelgitter	BNP:2:45:trailer=7 16261,9663
 Dr‰ngelgitter/Barriere	BNP:3:51:trailer=10 17130,18771
 Dr‰ngelgitter	BNP:3:-217:trailer=10 13014,21775
+Eisenhutweg [Wohngebiet]: wegen Hochbauarbeiten noch gesperrt	2::inwork 17741,2824 17688,2744 17471,2872 17569,2987
 An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
 Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12704,1102 12716,1088 12727,1074 12772,1019 12809,969
 Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12854,1121 12860,1082 12879,1000
@@ -3571,9 +3576,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
-Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:inwork 17753,8290 17771,8349 17794,8429
-Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:inwork 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
-Georg-Klingenberg-Str.: Bauarbeiten, Fahrbahn und Gehwege offiziell gesperrt	2::inwork 17792,8660 17846,8644
+Trautenauer Str.: Bauarbeiten, Fahrbahn offiziell noch gesperrt	2s:inwork 17794,8429 17813,8508
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂe, offen Richtung Westen	1s:inwork 8266,14346 8442,14456
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673

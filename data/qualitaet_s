@@ -1167,6 +1167,7 @@ Hegemeisterweg: Asphalt, einige Wurzelschäden	Q0 17987,7973 18287,7815
 Hegemeisterweg: Asphalt	Q0 18287,7815 18325,7778 18382,7724
 Hegemeisterweg: Asphalt	Q0 18325,7778 18406,7760
 (Am Walde - Hegemeisterweg): gute wassergebundene Decke	Q1 17771,7880 17987,7973
+(Am Walde/Oskarstr. - Treskowallee): Waldweg	Q2 17771,7880 18038,7650 18056,7664 18267,7537
 (Hegemeisterweg - Hoher Wallgraben/KGA Stallwiese): Waldweg	Q2 17987,7973 18025,7986 18101,8044
 Am Fichtenberg: Kopfsteinpflaster, OK	Q1 4347,5103 4285,5180 4217,5217 4134,5284
 Tietzenweg: mäßiges Kopfsteinpflaster	Q2 3643,4232 3766,4058 3777,4042 3870,3914 4004,3729 4135,3564 4275,3428 4342,3366 4467,3332
@@ -4506,7 +4507,7 @@ Am Kiesberg: Beton	Q1 18919,1888 18839,1715 18750,1522
 (Künnekeweg - Dankmarsteig): Asphalt	Q0 18688,1260 18628,1078 18727,1040 18737,1033
 (Schönbergweg - Dankmarsteig): wassergebundene Decke	Q1 18566,866 18557,891 18574,954 18592,1018 18628,1078
 (Künnekeweg - Mauerweg): Kleinsteinpflaster	Q1 18688,1260 18720,1247
-(Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1 18978,552 18750,592
+(Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1 18978,552 18862,572 18775,588 18750,592
 (Schönefelder Chaussee - Mauerweg): Asphalt	Q0 18750,592 18708,600
 (Kasperstr. - Mauerweg): Feinschotter	Q1 18796,1227 18770,1236 18720,1247
 (Rudower Höhe - Hornkleepfad): Feinschotter	Q1 18720,1247 18739,1329 18786,1510
@@ -4543,7 +4544,9 @@ Gustelstr.: Asphalt	Q0 18973,941 19053,1159
 Alfonsstr.: Asphalt	Q0 19053,1159 19081,1236 19083,1243
 Lieselstr.: Asphalt	Q0 18857,988 18931,1192
 Nibelungenweg: Beton	Q0 18892,330 18785,374 18714,403
-Guntherstr. (Altglienicke): Asphalt	Q0 18694,136 18785,374 18850,550
+Guntherstr. (Altglienicke): Asphalt	Q0 18694,136 18785,374 18853,553
+Guntherstr. (Altglienicke): Beton	Q0 18853,553 18773,575 18762,578
+(Guntherstr. - Weg in der Grünanlage): Mosaikpflaster	Q1 18853,553 18862,572
 Lutz-Schmidt-Str.: Beton	Q1 18799,91 18694,136 18644,157
 Uranusstr.: Asphalt	Q0 18952,-603 18904,-573 18827,-537 18721,-493 18639,-461 18595,-440
 Otterstr.: Beton	Q0 19105,-376 19072,-474 19028,-548
@@ -11679,6 +11682,8 @@ Döberitzer Grünzug - Klara-Franke-Str.: Beton	Q0 7451,14111 7443,14107
 Döberitzer Grünzug - Klara-Franke-Str.: Beton	Q0 7554,13949 7547,13946
 Döberitzer Grünzug - Klara-Franke-Str.: Beton	Q0 7642,13815 7630,13810
 Döberitzer Grünzug - KGA Lehrter Str.: Asphalt	Q0 7819,13559 7795,13528
+(Buntzelstr. - Bohnsdorfer Kirchsteig): Asphalt	Q0 21138,-428 21089,-378 21045,-330
+Eisenhutweg [Wohngebiet]: Asphalt	Q0 17741,2824 17688,2744 17471,2872 17569,2987
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -18303,7 +18308,9 @@ Goerdelersteg: Beton	Q0 3656,14150 3634,14187 3625,14230 3601,14284 3595,14267
 Grottewitzstr.: Asphalt	Q0 21515,67 21608,85 21669,99 21742,115
 Grottewitzstr.: schlechtes Kopfsteinpflaster	Q3 21742,115 21868,139
 Grottewitzstr.: Asphalt	Q0 21868,139 21933,152 22145,208
-Kirchsteig (Bohnsdorf): rauer Asphalt	Q0 21135,-274 21323,-178 21360,-167 21402,-116 21465,-15 21515,67
+Kirchsteig (Bohnsdorf): sehr guter Asphalt	Q0 21045,-330 21126,-273
+Kirchsteig (Bohnsdorf): rauer Asphalt, einige Schäden	Q1 21126,-273 21211,-219 21323,-178
+Kirchsteig (Bohnsdorf): rauer Asphalt	Q0 21323,-178 21360,-167 21402,-116 21465,-15 21515,67
 Rosenrotweg: Betonsteinpflaster	Q0 21515,67 21503,114 21487,173
 Johannes-Tobei-Str.: sehr guter Asphalt	Q0 21250,118 21354,142 21382,149 21421,158 21487,173 21520,170 21582,185 21618,193 21645,200 21712,215
 Graacher Str.: Asphalt	Q1 6931,3870 6996,3945 7053,4012

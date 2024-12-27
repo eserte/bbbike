@@ -305,7 +305,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2024-12-24
+#: last_checked: 2024-12-27
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1699,6 +1699,7 @@ Hegemeisterweg: Asphalt, einige Wurzelschäden	Q0- 17987,7973 18287,7815
 Hegemeisterweg: Asphalt	Q0 18287,7815 18325,7778 18382,7724
 Hegemeisterweg: Asphalt	Q0 18325,7778 18406,7760
 (Am Walde - Hegemeisterweg): gute wassergebundene Decke	Q1 17771,7880 17987,7973
+(Am Walde/Oskarstr. - Treskowallee): Waldweg	Q2 17771,7880 18038,7650 18056,7664 18267,7537
 (Hegemeisterweg - Hoher Wallgraben/KGA Stallwiese): Waldweg	Q2 17987,7973 18025,7986 18101,8044
 Am Fichtenberg: Kopfsteinpflaster, OK	Q1 4347,5103 4285,5180 4217,5217 4134,5284
 Tietzenweg: mäßiges Kopfsteinpflaster	Q2 3643,4232 3766,4058 3777,4042 3870,3914 4004,3729 4135,3564 4275,3428 4342,3366 4467,3332
@@ -5787,7 +5788,7 @@ Am Kiesberg: Beton	Q1 18919,1888 18839,1715 18750,1522
 (Künnekeweg - Dankmarsteig): Asphalt	Q0 18688,1260 18628,1078 18727,1040 18737,1033
 (Schönbergweg - Dankmarsteig): wassergebundene Decke	Q1 18566,866 18557,891 18574,954 18592,1018 18628,1078
 (Künnekeweg - Mauerweg): Kleinsteinpflaster	Q1- 18688,1260 18720,1247
-(Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1+ 18978,552 18750,592
+(Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1+ 18978,552 18862,572 18775,588 18750,592
 (Schönefelder Chaussee - Mauerweg): Asphalt	Q0 18750,592 18708,600
 (Kasperstr. - Mauerweg): Feinschotter	Q1 18796,1227 18770,1236 18720,1247
 (Rudower Höhe - Hornkleepfad): Feinschotter	Q1- 18720,1247 18739,1329 18786,1510
@@ -5827,7 +5828,9 @@ Gustelstr.: Asphalt	Q0 18973,941 19053,1159
 Alfonsstr.: Asphalt	Q0 19053,1159 19081,1236 19083,1243
 Lieselstr.: Asphalt	Q0 18857,988 18931,1192
 Nibelungenweg: Beton	Q0- 18892,330 18785,374 18714,403
-Guntherstr. (Altglienicke): Asphalt	Q0 18694,136 18785,374 18850,550
+Guntherstr. (Altglienicke): Asphalt	Q0 18694,136 18785,374 18853,553
+Guntherstr. (Altglienicke): Beton	Q0- 18853,553 18773,575 18762,578
+(Guntherstr. - Weg in der Grünanlage): Mosaikpflaster	Q1- 18853,553 18862,572
 Lutz-Schmidt-Str.: Beton	Q1 18799,91 18694,136 18644,157
 Uranusstr.: Asphalt	Q0 18952,-603 18904,-573 18827,-537 18721,-493 18639,-461 18595,-440
 Otterstr.: Beton	Q0 19105,-376 19072,-474 19028,-548
@@ -5943,7 +5946,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1266800.php
 #: XXX bleibt es hier beim Asphalt?
 #: priority: #C
-#: last_checked: 2024-11-20
+#: last_checked: 2024-12-27
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
@@ -6051,7 +6054,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 (Grünzug am Falkenberg): Beton	Q0- 21876,554 21801,608
 #: XXX eventuell nur während der Bauarbeiten eine Schotterstraße, wie sieht es danach aus? (mittlerweile gibt es aber keine Bauarbeiten mehr)
 #: osm_watch: way id="226981984" version="3"
-#: last_checked: 2023-09-24
+#: last_checked: 2024-12-27
 #: check_frequency: 360d
 (Kirchsteig - Grünzug am Falkenberg): Schotter	Q2+ 21860,462 21774,412
 (Lindenblütenstr. - Mohnblütenweg): wassergebundene Decke	Q1 21681,326 21688,312
@@ -6062,7 +6065,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 #: XXX heißt dieser Abschnitt auch "Höhensteig"?
 # REMOVED (dieser Stummel ist bereits asphaltiert) --- #: osm_watch: way id="226981995" version="4"
 #: osm_watch: way id="226982293" version="4"
-#: last_checked: 2024-06-26
+#: last_checked: 2024-12-27
 #: check_frequency: 360d
 Mohnblütenweg: unbefestigte Straße	Q2 21712,215 21688,312
 Zur Gartenstadt: Asphalt	Q0 21712,215 21742,115 21769,-30 21800,-109
@@ -13897,6 +13900,10 @@ Döberitzer Grünzug - Klara-Franke-Str.: Beton	Q0 7451,14111 7443,14107
 Döberitzer Grünzug - Klara-Franke-Str.: Beton	Q0 7554,13949 7547,13946
 Döberitzer Grünzug - Klara-Franke-Str.: Beton	Q0 7642,13815 7630,13810
 Döberitzer Grünzug - KGA Lehrter Str.: Asphalt	Q0 7819,13559 7795,13528
+# 
+(Buntzelstr. - Bohnsdorfer Kirchsteig): Asphalt	Q0 21138,-428 21089,-378 21045,-330
+# 
+Eisenhutweg [Wohngebiet]: Asphalt	Q0 17741,2824 17688,2744 17471,2872 17569,2987
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -31399,8 +31406,12 @@ Grottewitzstr.: Asphalt	Q0 21515,67 21608,85 21669,99 21742,115
 Grottewitzstr.: schlechtes Kopfsteinpflaster	Q3 21742,115 21868,139
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ..., neu gemacht)
 Grottewitzstr.: Asphalt	Q0 21868,139 21933,152 22145,208
+#: confirmed_by: srt
+Kirchsteig (Bohnsdorf): sehr guter Asphalt	Q0 21045,-330 21126,-273
+#: corrected_by: srt (sehr guter -> ...)
+Kirchsteig (Bohnsdorf): rauer Asphalt, einige Schäden	Q1 21126,-273 21211,-219 21323,-178
 #: corrected_by: srt (sehr guter -> rauer)
-Kirchsteig (Bohnsdorf): rauer Asphalt	Q0- 21135,-274 21323,-178 21360,-167 21402,-116 21465,-15 21515,67
+Kirchsteig (Bohnsdorf): rauer Asphalt	Q0- 21323,-178 21360,-167 21402,-116 21465,-15 21515,67
 #: corrected_by: srt (sehr guter Asphalt -> ... (neu gemacht?))
 Rosenrotweg: Betonsteinpflaster	Q0- 21515,67 21503,114 21487,173
 #: confirmed_by: srt
@@ -33632,5 +33643,8 @@ Einmündungsbereich asphaltiert	Q0 18299,8925
 Einmündungsbereich asphaltiert	Q0 18375,8874
 Einmündungsbereich asphaltiert	Q0 18451,8823
 Einmündungsbereich asphaltiert	Q0 18609,8717
+Einmündungsbereich asphaltiert	Q0 17771,8349
+Kreuzungsbereich asphaltiert	Q0 17794,8429
+Einmündungsbereich asphaltiert	Q0 17813,8508
 #: ignore ^^^
 #: section ^^^

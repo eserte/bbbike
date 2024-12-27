@@ -2050,9 +2050,9 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,26.12.2024,06:00 (bis 02.01.2025)
-#: source_id: viz2021:13.37688,52.51775,26.12.2024,06:00 (bis 02.01.2025)
-#: source_id: viz2021:13.379494,52.516456,26.12.2024,06:00 (bis 02.01.2025)
-#: source_id: viz2021:13.37679,52.5163,26.12.2024,06:00 (bis 02.01.2025)
+#: source_id: viz2021:13.37688,52.51775,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: source_id: viz2021:13.379494,52.516456,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: source_id: viz2021:13.37679,52.5163,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,26.12.2024,06:00 (bis 02.01.2025)
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
@@ -2529,7 +2529,27 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/der_verkehr_berlin_in_winterferien/?date=20240201
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-grunauer-strasse-ab-montag-05-februar-2024/ (Köpenicker Str. bis Grünauer Str. 70)
+#: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
+#: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten)
+#: osm_watch: way id="152466403" version="21"
+#: osm_watch: note 4444162 2
+# REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
+#: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str. und Lianenweg, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle
+	q4::inwork; 20302,1613 20028,1673 19898,1704 19766,1796
+Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
+',
+         'from' => 1707001200,
+         'id' => 2328,
+         'text' => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich vom bis 18.02.2025',
+         'type' => 'handicap',
+         'until' => 1739894400
+       },
        undef,
        undef,
        undef,
@@ -3234,35 +3254,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
-#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
-#: osm_watch: node id="3204993764" version="7"
-#: tempex: before(first_advent, monday)-YYYY1226 vvv
-#: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
-	q4::xmas 11139,13008 11064,12910 11005,12855 10970,12822
-	q4::xmas 11064,12910 11141,12806
-#: tempex ^^^
-',
-         'from' => 1732402800,
-         'id' => 2763,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
-         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 25. November 2024 bis 26. Dezember 2024',
-         'type' => 'handicap',
-         'until' => 1735253999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5458,7 +5450,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2024-12-18 vvv
+#: last_checked: 2024-12-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-01-27 vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -6100,7 +6092,7 @@ Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2024-12-11 (bahninfo-forum) vvv
+#: last_checked: 2024-12-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-02-28 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -7495,9 +7487,9 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 ',
          'from' => 1729461600,
          'id' => 4199,
-         'text' => 'Grolmanstr.: Sperrung zwischen Goethestr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 27.12.2024',
+         'text' => 'Grolmanstr.: Sperrung zwischen Goethestr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 06.01.2025',
          'type' => 'handicap',
-         'until' => 1735340400
+         'until' => 1736204399
        },
        {
          'data' => '#: by: rbb

@@ -27,12 +27,7 @@ Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 #: valid: -20250331
 Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
 # 
-#: next_check_id: KOENIGSPLATZ-2024
-#: last_checked: 2024-11-03 (krickstadt)
-#: check_frequency: 30d
-#: next_check: 2024-12-12
-#: valid: -20241212
-Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
+# REMOVED (Ampelanlage steht noch, ist aber (dauerhaft?) ausgeschaltet) --- #: next_check_id: KOENIGSPLATZ-2024 --- #: last_checked: 2024-12-27 --- #: check_frequency: 30d --- #: next_check: 2024-12-12 --- #: valid: -20241212 --- Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
 # 
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: osm_watch: note 4289251 1
@@ -183,14 +178,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2024-12-24
+#: last_checked: 2024-12-27
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2024-12-24
+#: last_checked: 2024-12-27
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Gürtelstr.	F::inwork 15153,11691
@@ -232,7 +227,7 @@ Tucholskystr./Ziegelstr.: Gegenverkehrsregelung	X::inwork::alternating 9559,1308
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2024-11-20
+#: last_checked: 2024-12-27
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 #: note: Anforderungsampel
@@ -240,7 +235,7 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2024-11-20
+#: last_checked: 2024-12-27
 #: next_check: 2025-03-31
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
@@ -3915,7 +3910,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
-#: last_checked: 2024-12-13
+#: last_checked: 2024-12-27
 provisorische Fußgängerampel	F 17720,8854
 # 
 #: note: Anforderungsampel im Zuge der August-Froehlich-Str. und An der Werderlake
