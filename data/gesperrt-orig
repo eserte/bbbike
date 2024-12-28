@@ -196,7 +196,8 @@ Adlergestell (extra Radweg)	2 21998,1239 21937,1343 21878,1500 21862,1532
 # REMOVED (aufgehoben) Richterstr.	1s:q3 22062,773 22007,711
 # REMOVED (aufgehoben) Grünau/B179	1 22007,711 21862,807
 # REMOVED (aufgehoben) Grünau/B179	1 21862,807 21902,877 21977,988 22044,1018 22092,999
-Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20956,-491 21074,-475
+Dorfplatz	1 21074,-475 20986,-529 20920,-556 20783,-528
+Dorfplatz	1 20783,-528 20866,-520 20956,-491 21074,-475
 # 
 # REMOVED (mittlerweile mit Radweg) --- B96a (Kfz-Straße)	2 20272,-501 20585,-272 20671,-205 20777,-88 20895,39 21025,176 21115,271
 # REMOVED (mittlerweile mit Radweg) --- B96a (Kfz-Straße)	2 21115,271 21286,449 21613,923 21656,989 21829,1351
@@ -3911,7 +3912,7 @@ Drängelgitter	BNP:3::trailer=10 13014,21775
 #: by: https://www.berliner-woche.de/johannisthal/c-bauen/grundsteinlegung-fuer-knapp-600-wohnungen-und-eine-kita-im-eisenhutweg_a348008
 #: by: https://www.deutsches-architekturforum.de/thread/14936-wohnquartier-am-eisenhutweg-degewo-johannisthal-treptow-k%C3%B6penick/?postID=720354#post720354
 #: by: https://abload.de/img/eisenhut_lageplan_skaaqkk9.jpg
-#: XXX für den westlichen Teil (bis zum "Knick" des Eisenhutwegs) wird ein Bebauungsplan 9-17VE aufgestellt; für den östlichen Teil bis Höhe Straße am Flugplatz gibt es noch keine Planungen, also wurde dieser erst einmal rausgenommen
+#: note: für den westlichen Teil (bis zum "Knick" des Eisenhutwegs) wird ein Bebauungsplan 9-17VE aufgestellt; für den östlichen Teil bis Höhe Straße am Flugplatz gibt es noch keine Planungen, also wurde dieser erst einmal rausgenommen
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/index.shtml (östlicher Teil, Bebauungsplan XV-58bb-1)
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/download/XV-58bb-1_Bebauungsplanentwurf.pdf (hier: keine Wege/Straßen)
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlg4S2Y4NVh3QUE3OXdVLmpwZw==
@@ -4518,8 +4519,8 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: source_id: viz2021:13.33184,52.48035,31.07.2023,06:00 (Komplettsperrung bis 04.08.2023) (inaktiv)
 #: source_id: viz2021:13.331534,52.478683,06.11.2024,07:00 (Bruchsaler Str. ist seit Dez 2024 Sackgasse, auch für Radfahrer? bis 31.12.2025)
 #: note: nur kurzer Einbahnstraßenabschnitt, etwa 20-30m; mittlerweile (Nov 2024) ist die Einbahnstraßenrichtung anders herum, evtl. wegen der Bauarbeiten in der Wexstr.?
-#: last_checked: 2024-11-27
-#: check_frequency: 120d
+#: last_checked: 2024-12-26 (architektur-urbanistik)
+#: check_frequency: 90d
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 5521,8087 5522,8024
 # REMOVED (hier nicht) --- Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5521,8087 5519,8159 5560,8204
 # 

@@ -19061,7 +19061,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016334',
        data  => <<EOF,
-	q4::inwork; 20827,-537 20920,-556 20986,-529 21074,-475
+	q4::inwork; 20783,-528 20920,-556 20986,-529 21074,-475
 EOF
      },
      { from  => 1284274800, # 2010-09-12 09:00
@@ -37746,7 +37746,7 @@ EOF
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
 #: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
-#: last_checked: 2024-12-08
+#: last_checked: 2024-12-28
 #: check_frequency: 30d
 	q4::inwork 16720,12614 16859,12613
 EOF
@@ -39498,11 +39498,12 @@ EOF
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
 #: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
-#: last_checked: 2024-12-22 (traffic)
+#: last_checked: 2024-12-28 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
-	q3::inwork 3869,10760 4267,10724 4393,10712
+# Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
+Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 EOF
      },
      { from  => 1680415200, # 2023-04-02 08:00
@@ -42422,7 +42423,7 @@ EOF
 # REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (G[zu kurz],B,T) vvv
-#: last_checked: 2024-12-08 vvv
+#: last_checked: 2024-12-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-01-31 vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
@@ -44043,7 +44044,7 @@ EOF
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2024-12-14
+#: last_checked: 2024-12-28
 #: next_check: 2025-03-28
 	q4::inwork 15077,11910 15110,12107
 EOF
@@ -46023,7 +46024,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (T,B,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-12-21 (traffic)
+#: last_checked: 2024-12-28 (traffic)
 #: check_frequency: 14d
 	q4::inwork 16668,14765 16750,14747
 EOF

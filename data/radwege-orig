@@ -979,7 +979,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2024-12-14
+#: last_checked: 2024-12-28
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -5292,6 +5292,7 @@ Gehweg für Radfahrer frei	RW1; 18106,19353 18143,19384 18544,19722
 gemeinsamer Geh- und Radweg, Betonplatten	RW2; 17418,16014 17419,16080 17425,16165
 	RW2; 17425,16165 17419,16080 17418,16014
 	RW2;RW1 17425,16165 17516,16208
+	RW1; 16845,14461 16852,14412
 # 
 #: note: Siegfriedstr., Richtung Süden
 Verbundsteinpflaster	RW1; 16852,14412 16873,14236 16881,14063 16875,13834 16868,13611
@@ -6044,10 +6045,10 @@ gemeinsamer Geh- und Radweg parallel zur Straße, asphaltiert	RW8;RW2 30390,-3443
 #: by: ^^^
 	RW3;RW3 2998,20487 2974,20483 2810,20455 2613,20416
 Verbundsteinpflaster	RW1; 19590,1554 19579,1543 19498,1465 19460,1430 19412,1387
-	RW1; 19412,1387 19379,1357 19251,1240 19221,1198 19198,1122 19143,979 19107,885 18992,589 18978,552 18941,452 18892,330 18860,248 18799,91 18760,-8 18675,-231 18595,-440
+	RW1; 19412,1387 19379,1357 19251,1240 19221,1198 19198,1122 19143,979 19107,885 18992,589 18976,546 18941,452 18892,330 18860,248 18799,91 18760,-8 18675,-231 18595,-440
 Gehwegplatten, etwas uneben	RW1; 18595,-440 18675,-231 18760,-8 18799,91 18860,248 18892,330
 Gehwegplatten, etwas uneben, ein paar Meter Engstelle ohne Radweg	RW1; 18892,330 18941,452
-Gehwegplatten, etwas uneben, Grundstückeinfahrten mit Kleinsteinpflaster	RW1; 18941,452 18978,552 18992,589 19107,885 19143,979 19198,1122 19221,1198 19251,1240
+Gehwegplatten, etwas uneben, Grundstückeinfahrten mit Kleinsteinpflaster	RW1; 18941,452 18976,546 18992,589 19107,885 19143,979 19198,1122 19221,1198 19251,1240
 Gehwegplatten, etwas uneben	RW1; 19251,1240 19379,1357 19412,1387
 	RW1;RW1 18675,-231 18906,-316
 # REMOVED --- #: XXX ... und es sieht so aus, als ob zukünftig kein Platz für einen Radweg sein wird. Wie wird es nach den Bauarbeiten aussehen? --- #: last_checked: 2018-08-22 --- #: check_frequency: 270d --- Bauarbeiten, Radweg aufgehoben	RW0; 18906,-316 18675,-231
@@ -8451,9 +8452,8 @@ asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
 #: note: im Anschluss Richtung Scharnweberstr. noch ein paar Meter Radweg
 asphaltiertes Straßenbahnkap	RW1; 14836,11842 14888,11934
 asphaltiertes Straßenbahnkap	RW1; 14888,11934 14836,11842
-	RW4; 15077,11910 15133,11902
 	RW4; 15077,11910 14965,11924 14888,11934
-	RW4; 14888,11934 14965,11924
+	RW4; 14888,11934 14965,11924 15077,11910 15133,11902
 asphaltiertes Straßenbahnkap	RW1; 15133,11902 15174,11896 15217,11890
 	RW3; 15217,11890 15256,11884
 	RW4; 15256,11884 15217,11890 15174,11896
