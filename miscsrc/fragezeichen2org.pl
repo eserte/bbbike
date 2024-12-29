@@ -478,6 +478,8 @@ for my $file (@files) {
 	     # BBBike Leaflet URL
 	     push @extra_url_defs, ['BBBike-Leaflet', 'http://www.bbbike.de/cgi-bin/bbbikeleaflet.cgi?zoom=16&coords=' . join('!', @{ $r->[Strassen::COORDS] })];
 
+	     # Apple Maps URL
+	     push @extra_url_defs, ['Apple', sprintf('https://maps.apple.com/?ll=%s,%s&z=20&t=m',$py,$px)]; # interesting details like cycle lanes visible from zoom level 20 (assumed), however Apple Maps on iOS does not zoom that far initially
 
 	     # Getting priority
 	     my $prio;
