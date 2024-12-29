@@ -2915,35 +2915,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
-#: by: https://www.rbb24.de/panorama/beitrag/2020/10/potsdam-weihnachtsmarkt-brandenburger-strasse-abgesagt-corona.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/brandenburg/3404397-1329503-der-traditionelle-potsdamer-weihnachtsma.html
-#: by: https://www.berlin.de/tourismus/brandenburg/veranstaltungen/7769364-3479097-weihanchtsmarkt-blauer-lichterglanz.html
-#: by: https://berliner-abendblatt.de/berlin-news/umfrage-zu-potsdamer-weihnachtsmarkt-debatte-ueber-standort-id263078
-#: by: https://www.potsdam.de/de/veranstaltung/blauer-lichterglanz-3
-#: osm_watch: node id="4474692205" version="5"
-#: tempex: before(first_advent,mo) - YYYY1230
-	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
-',
-         'from' => 1732402800,
-         'id' => 2526,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 25.11.2024 - 29.12.2024',
-         'type' => 'gesperrt',
-         'until' => 1735426800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4441,7 +4413,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: osm_watch: note 3914565 16
+#: osm_watch: note 3914565 17
 #: last_checked: 2024-11-14 (indoor research)
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-09-22
@@ -6733,7 +6705,7 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (H,ex-B[falsche Position?],ex-T[falsche Position?])
+         'data' => '#: also_indoor: traffic (ex-H,ex-B[falsche Position?],ex-T[falsche Position?])
 #: osm_watch: note 4465412 3
 #: note: es existiert eine Umleitungsstrecke für Radfahrer
 #: add_fragezeichen: Sind die Bauarbeiten beendet?

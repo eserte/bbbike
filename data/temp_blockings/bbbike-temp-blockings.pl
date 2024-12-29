@@ -33548,7 +33548,7 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: osm_watch: note 3914565 16
+#: osm_watch: note 3914565 17
 #: last_checked: 2024-11-14 (indoor research)
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-09-22
@@ -43606,7 +43606,7 @@ EOF
        text  => 'Südendstr.: Bauarbeiten zwischen Plantagenstr. und Filandastr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (H,ex-B[falsche Position?],ex-T[falsche Position?])
+#: also_indoor: traffic (ex-H,ex-B[falsche Position?],ex-T[falsche Position?])
 #: osm_watch: note 4465412 3
 #: note: es existiert eine Umleitungsstrecke für Radfahrer
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
