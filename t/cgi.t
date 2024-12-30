@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012,2013,2017,2018,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012,2013,2017,2018,2022,2023,2024 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -46,6 +46,7 @@ sub std_get ($;@);
 sub std_get_route ($;@);
 sub like_html ($$$);
 sub unlike_html ($$$);
+sub expected_tag ($$);
 
 check_cgi_testing;
 
@@ -156,7 +157,7 @@ my @imagetype_defs =
 my $file_cache_tests_per_format = 4;
 my $file_cache_tests_formats = scalar grep { $_->{can_file_cache} } (@output_as_defs, @imagetype_defs);
 
-plan tests => (271 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
+plan tests => (280 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -587,7 +588,7 @@ for my $cgiurl (@urls) {
 	my $this_file_cache_tests = $this_test_file_cache ? $file_cache_tests_per_format : 0;
 
     SKIP: {
-	    skip "No mapserver tests", 3 + $this_file_cache_tests
+	    skip "No mapserver tests", 4 + $this_file_cache_tests
 		if $imagetype eq 'mapserver' && $skip{mapserver};
 
 	    my $imagetype_param = ($imagetype ne "" ? "imagetype=$imagetype&" : "");
@@ -597,24 +598,30 @@ for my $cgiurl (@urls) {
 	    my $url = "$action?${imagetype_param}coords=9222%2C8787%219227%2C8890%219796%2C8905%219799%2C8962%219958%2C8966%219962%2C9237%219987%2C9238%2110109%2C9240%2110189%2C9403%2110298%2C9649%2110345%2C9764%2110408%2C9800%2110480%2C9949%2110503%2C10046%2110490%2C10080%2110511%2C10128%2110605%2C10312%2110859%2C10333%2110962%2C10340%2111114%2C10338%2111336%2C10390%2111370%2C10398%2111454%2C10400%2111660%2C10402%2111949%2C10414%2112230%2C10437%2112274%2C10436%2112328%2C10442%2112755%2C10552%2112899%2C10595%2112980%2C10575%2113035%2C10635%2113082%2C10634%2113178%2C10623%2113216%2C10664%2113297%2C10781%2113332%2C10832%2113409%2C11004%2113546%2C11352%2113594%2C11489%2113720%2C11459%2113890%2C11411%2114139%2C11269%2114211%2C11229%2114286%2C11186%2114442%2C11101%2114509%2C11060%2114677%2C11027%2114752%2C11041%2114798%2C10985&startname=Dudenstr.&zielname=Sonntagstr.&windrichtung=E&windstaerke=2&geometry=400x300&draw=str&draw=wasser&draw=flaechen&draw=ampel&draw=strname&draw=title&draw=all";
 	    my($content, $resp) = std_get $url, testname => "imagetype=$imagetype";
 	    if ($imagetype eq 'gif') {
+		expected_tag $resp, 'rm.drawroute.gif';
 		is $resp->header("content-type"), 'image/gif', "It's a GIF image";
 		BBBikeTest::like_long_data($content, qr/^GIF8/, "Really a GIF image")
 			or diag "Not a gif: $url";
 		display($resp);
 	    } elsif ($imagetype =~ /(png|jpeg)/) {
+		my $short_image_type = $imagetype =~ /jpeg/ ? 'jpg' : $imagetype;
 		is $resp->header("content-type"), 'image/' . $imagetype, "It's a $imagetype image";
+		expected_tag $resp, "rm.drawroute.$short_image_type";
 		ok length $content, "The image is non-empty";
 		display($resp);
 	    } elsif ($imagetype =~ /pdf/) {
 		is $resp->header("content-type"), 'application/pdf', "It's a PDF";
+		expected_tag $resp, qr{^(rm\.drawroute\.pdf|fc\.hit)$};
 		ok length $content, "The PDF is non-empty";
 		display($resp);
 		like $resp->header('Content-Disposition'), qr{inline; filename=.*\.pdf$}, 'PDF filename'; # unfortunately in this case (missing session?) there's no nice filename from route start/endpoint
 	    } elsif ($imagetype =~ /svg/) {
+		expected_tag $resp, 'rm.drawroute.svg';
 		is $resp->header("content-type"), "image/svg+xml", "It's a SVG image";
 		ok length $content, "The SVG is non-empty";
 		display($resp);
 	    } else {
+		expected_tag $resp, undef;
 		like $resp->content_type, qr{^text/html}, "It's a $imagetype";
 		ok length $content, "The $imagetype is non-empty";
 	    }
@@ -994,4 +1001,14 @@ sub unlike_html ($$$) {
     my($content, $rx, $testname) = @_;
     local $Test::Builder::Level = $Test::Builder::Level+1;
     BBBikeTest::unlike_long_data($content, $rx, $testname, '.html');
+}
+
+sub expected_tag ($$) {
+    my($resp, $expected_tag) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
+    if (ref $expected_tag eq 'Regexp') {
+	like $resp->header('X-Tag'), $expected_tag;
+    } else {
+	is $resp->header('X-Tag'), $expected_tag;
+    }
 }
