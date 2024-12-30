@@ -1633,6 +1633,8 @@ Wulkower Str.: Asphalt	Q0 21009,10285 21009,10425 21015,10586 21025,10815 21032,
 Dornacher Str.: Asphalt	Q0 20947,10137 20947,9999 20948,9847
 Gleiwitzer Str.: neuer Asphalt	Q0 21146,9988 20947,9999
 #: note: nach den Bauarbeiten 2023/2024 wurde die Fahrbahnfläche nicht großflächig asphaltiert
+#: by: https://pascalgrothe.de/gleiwitzer-strasse-zweiter-bauabschnitt-fuer-sanierung-startet-2025/ (Erneuerung im Frühjahr 2025, dann vermutlich wieder besserer Asphalt)
+#: next_check: 2025-05-01
 Gleiwitzer Str.: Asphalt mit unebenen Stellen	Q1+ 20947,9999 20703,10004
 Buchenhainer Str.: Asphalt	Q0 21164,8243 21325,8217
 Nitzwalder Str.: Asphalt	Q0 21325,8217 21461,8094 21535,8026
@@ -6771,6 +6773,8 @@ Annenstr. (Biesdorf): Asphalt	Q0 20371,14204 20467,14196
 Eugen-Roth-Weg: Asphalt	Q0 20072,13070 20068,13036 20048,12830
 Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berliner-woche.de/friedrichsfelde/c-verkehr/strassenbelag-in-ordnung-bringen_a407286
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php
+#: XXX Wurde hier die Fahrbahn saniert?
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
 Jaczostr.: Beton	Q0 -4078,11800 -4101,11708
@@ -10048,7 +10052,8 @@ Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
 #: note: Qualität hat sich verschlechtert (2018-07), früher feiner Schotter
 (Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2- 27202,173 27161,156 26666,-54
 (Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2- 26666,-54 26488,-131
-Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11750,16116 11680,16151
+#: historical_note: bis Dezember 2024: Asphalt mit leichten Schäden, Q1+
+Kuglerstr.: Asphalt mit leichten Schäden	Q0- 11750,16116 11680,16151
 #: historical_note: bis Herbst 2023: Asphalt mit leichten Schäden, Q1+
 Kuglerstr.: Asphalt	Q0 11680,16151 11618,16183
 Kuglerstr.: Asphalt	Q0 12030,15968 11961,16002 11899,16037 11852,16061
@@ -11044,6 +11049,7 @@ Helene-Weigel-Platz: Beton	Q0 19463,13636 19482,13572 19602,13575 19625,13576 19
 Helene-Weigel-Platz: Asphalt	Q0 19439,13633 19463,13636
 Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19593,13702 19573,13742 19570,13833
 #: note: möglicherweise unangenehm für schmale Reifen
+#: by: https://pascalgrothe.de/holzbruecke-im-springpfuhl-park-ist-wieder-offen/
 (Springpfuhlpark): Holzbohlen	Q2+ 19567,13858 19565,13893
 (Springpfuhlpark): Asphalt	Q0 19565,13893 19547,14042 19544,14234
 (Springpfuhlpark): Gehwegplatten	Q0 19544,14234 19545,14290
@@ -30141,13 +30147,13 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12393,15030 12357,15020 1231
 #: corrected_by: srt (Q0- -> Q1)
 (Danziger Str. - Lilli-Henoch-Str.): Verbundsteine	Q1 12123,14643 12174,14739 12183,14757 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
 #: confirmed_by: srt
-(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 11877,15366 11937,15349 12003,15311 12103,15218
-# REMOVED --- (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 12103,15218 12208,15108
+(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 11877,15366 11937,15349 12003,15311 12097,15223 12124,15197
+# REMOVED --- (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 12124,15197 12208,15108
 #: confirmed_by: srt
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 12208,15108 12284,15068 12314,15008
 #: confirmed_by: srt
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 11860,15309 11919,15314 11937,15349
-(Verlängerte Diesterwegstr.): Verbundsteine	Q0- 12056,15159 12082,15206 12103,15218
+(Verlängerte Diesterwegstr.): Verbundsteine	Q0- 12056,15159 12075,15191 12097,15223
 #: corrected_by: srt (Asphalt -> ...)
 Olga-Benario-Prestes-Str.: Asphalt und einige Kopfsteinpflasterabschnitte	Q1- 12628,14650 12473,14763
 #: corrected_by: srt (Asphalt -> Asphalt mit Schäden)
@@ -32204,6 +32210,10 @@ Forststr. (Hermsdorf): Beton	Q0 3051,22856 3140,23008 3157,23042
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Schramberger Str.: Beton	Q0 3157,23042 3217,23125
 #: confirmed_by: srt (nördlicher Abschnitt)
+#: by: https://www.berliner-woche.de/bezirk-reinickendorf/c-verkehr/ausbauplaene-von-einsparungen-betroffen_a432780 (Erwähnung einer Sanierung ohne Zeitplan)
+#: XXX Wird die Schramberger Str. eine bessere Fahrbahnoberfläche (Asphalt?) bekommen?
+#: last_checked: 2024-12-30 (Pressemeldung)
+#: check_frequency: 720d
 Schramberger Str.: schlechtes Kopfsteinpflaster	Q3 3217,23125 3283,23217 3317,23354 3343,23470 3421,23614
 #: confirmed_by: srt (östlicher Abschnitt)
 (Weg am Tegeler Fließ): wassergebundene Decke	Q1 3772,22482 3831,22479 3879,22574

@@ -19,7 +19,7 @@
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2024-12-08 vvv
+#: last_checked: 2024-12-30 vvv
 #: next_check: 2027-09-30 vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
@@ -33,7 +33,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: next_check_id: KNIPRODE-2024
 #: add_fragezeichen: Sind hier noch immer Bauarbeiten?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-11-30
+#: last_checked: 2024-12-30
 #: check_frequency: 30d
 #: next_check: 2025-09-30
 Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
@@ -1269,9 +1269,10 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # 
 ### Biesdorf ###
 # 
-#: also_indoor: traffic (T,G,B)
-#: last_checked: 2024-12-23 (traffic)
-#: check_frequency: 10d
+#: by: https://pascalgrothe.de/grabensprung-wiedereroeffnung-steht-bevor/ (veröffentlicht am 28.12.2024, Freigabe "in Kürze")
+#: also_indoor: traffic (T,ex-G,B)
+#: last_checked: 2024-12-30 (traffic)
+#: check_frequency: 7d
 Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv
@@ -5652,11 +5653,11 @@ Bautzener Platz: Fufgänger, Bordsteine	q3 8102,9262 8183,9260
 #: XXX_prog ^^^
 (Danziger Str. - Lilli-Henoch-Str.): Fußgänger	q2 12123,14643 12174,14739 12183,14757 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
 #: note: gemeinsamer Rad- und Gehweg (am westlichen Ende fehlt das Schild, ansonsten ausgeschildert)
-(Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 11877,15366 11937,15349 12003,15311 12103,15218
-# REMOVED --- (Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 12103,15218 12208,15108
+(Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 11877,15366 11937,15349 12003,15311 12097,15223 12124,15197
+# REMOVED --- (Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 12124,15197 12208,15108
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fußgänger	q2 11860,15309 11919,15314 11937,15349
-(Verlängerte Diesterwegstr.): Fußgänger	q2 12056,15159 12082,15206 12103,15218
+(Verlängerte Diesterwegstr.): Fußgänger	q2 12056,15159 12075,15191 12097,15223
 (Anton-Saefkow-Str. - John-Schehr-Str.): einige Fußgänger, Parkplatz	q1 13088,14469 13031,14390
 #: XXX_prog: BS
 #: note: beim Überqueren des Mittelstreifens müssen insgesamt vier Bordsteine überquert werden

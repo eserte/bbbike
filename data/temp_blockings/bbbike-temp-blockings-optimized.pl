@@ -2193,6 +2193,7 @@ Ein/Ausgang Oderstraße/Herrfurthstraße mit Drehtor	1::night 11472,7899 11458,789
 (Strecke an der nordöstlichen Begrenzung)	2::night 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363 10360,8521
 (Weg parallel zur Oderstr.)	2::night 11458,7897 11490,7737 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438 (vermutlich hier soll ein Drehkreuz entstehen (Artikel ist nicht eindeutig), bis Ende 2024)
+#: XXX Ist hier ein Drehkreuz als nächtlicher Ausgang entstanden?
 #: next_check: 2024-12-31
 (Eingang Kienitzer Str.)	2::night 11504,7738 11490,7737 11482,7735 11472,7732
 (Flughafen Tempelhof - Eingang Allerstr.)	2::night 11507,7647 11521,7638
@@ -3236,9 +3237,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
 #: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
 #: by: https://www.tagesspiegel.de/berlin/fernsehshow-statt-partymeile-silvesterfeier-am-brandenburger-tor-findet-ohne-publikum-statt/26649428.html (vermutlich wird weniger & kürzer gesperrt werden)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1873699127751737404
+#: by: https://pbs.twimg.com/media/GgC3OOnXEAE6uNt?format=jpg&name=large (Sperrung sogar ab Bachstr./Tiergartenstr./Lutherbrücke, auch für den Radverkehr? was ist mit dem westlichen Tiergarten?)
+#: source_id: viz2021:13.349991,52.514511,31.12.2024,06:00 (bis 01.01.2025)
 #: note: am 2023-12-29 mittags war der östliche Tiergarten komplett umzäunt, aber die Wege waren noch offen
 Pariser Platz	2::temp 8722,12268 8637,12258
-Straße des 17. Jui	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+Straße des 17. Juni	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 7031,12320 7383,12095
 	2::temp 7875,12363 7822,12201 7816,12150
 	2::temp 8400,12417 8391,12389 8344,12221
@@ -5952,26 +5956,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (B,ex-G,ex-W,T)
-#: note: Halteverbote bis 17. November 2023; mittlerweile bis zum 29.02.2024; mittlerweile bis zum 15.06.2024; im westlichen Abschnitt weitgehend fertig (neu asphaltiert), im östlichen Abschnitt noch aufgebuddelt; mittlerweile Halteverbote bis 05.07.2024; nun bis 30.08.2024; mittlerweile gemischte Halteverbote bis 30.08.2024 (schon vorbei) und Ende des Jahres; mittlerweile auch Halteverbote bis 22.11.2024 gesehen; mittlerweile Halteverbote bis 31.01.2025, sah aber bis auf einige fehlende Asphaltierungsarbeiten recht fertig aus
-#: last_checked: 2024-12-16 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2025-01-31 vvv
-Einfahrt von der Stahlheimer Str. möglich, Sackgasse	q3::inwork 11618,16183 11680,16151
-	q4::inwork 11680,16151 11750,16116
-Varnhagenstr.: Kreuzungsbereich gesperrt	q3::inwork 11614,16034 11680,16151
-Varnhagenstr.: Kreuzungsbereich gesperrt	q2::inwork 11808,16343 11680,16151
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1689356385,
-         'id' => 3855,
-         'text' => 'Kuglerstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6291,14 +6276,14 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
        undef,
        {
          'data' => '#: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024) (inaktiv) (bis 31.12.2024)
-#: source_id: 246001315 (bis 08.11.2024) (bis 31.12.2024)
+#: source_id: 246001315 (bis 08.11.2024) (bis 31.12.2024) (bis 30.04.2025)
 	2::inwork 23015,30519 23113,30450
 ',
          'from' => 1705186800,
          'id' => 3947,
-         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung voraussichtlich bis Ende 2024',
+         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung voraussichtlich bis Ende April 2025',
          'type' => 'gesperrt',
-         'until' => 1735657200
+         'until' => 1746025200
        },
        undef,
        undef,
@@ -7102,22 +7087,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1476713.php
-#: XXX Werden noch weitere Wege gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung?
-#: add_fragezeichen: Sind die Bauarbeiten hier beendet?
-#: last_checked: 2024-12-16
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-11-30
-	2::inwork 12056,15159 12082,15206 12103,15218
-# REMOVED (hier (noch) nicht gesperrt	2::inwork 12103,15218 12003,15311 11937,15349 11877,15366
-',
-         'from' => 1723932000,
-         'id' => 4140,
-         'text' => 'Zeiss-Großplanetarium - Diesterwegstr.: Bauarbeiten, Sperrung des Weges, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -7161,7 +7131,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-11-30
+#: last_checked: 2024-12-30
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30
 	q4::inwork 13530,13014 13470,12990
@@ -7227,6 +7197,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
 # REMOVED --- Okerstr.	2::inwork 11528,7528 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7737 11504,7738
+#: osm_watch: note 4425036 1
 Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
 Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
 Leinestr.	2::inwork 11558,7438 11547,7432
@@ -7293,7 +7264,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-12-11
+#: last_checked: 2024-12-30
 #: next_check: 2025-02-24
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
@@ -7561,17 +7532,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: ROENNE-2024
-#: source_id: viz2021:13.298976,52.504217,11.11.2024,07:00 (bis 30.12.2024)
-	q4::inwork 3041,10732 3295,10831 3291,10853
-',
-         'from' => 1731218400,
-         'id' => 4214,
-         'text' => 'Rönnestr.: Bauarbeiten zwischen Leonhardtstr. und Holtzendorffstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.11.2024 07:00 bis 30.12.2024 18:00',
-         'type' => 'handicap',
-         'until' => 1735578000
-       },
+       undef,
        {
          'data' => '#: next_check_id: ROSEGGER-2024
 #: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
