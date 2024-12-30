@@ -47,16 +47,18 @@ sub bbbike_en_cgi_search ($$;$);
 sub bbbike_cgi_geocode ($$);
 sub bbbike_en_cgi_geocode ($$);
 sub _bbbike_lang_cgi ($);
+sub expected_tag ($$);
 
 check_cgi_testing;
 
 my $ipc_run_tests = 3;
-my $json_xs_0_tests = 2;
-my $json_xs_tests = 4;
-my $json_xs_2_tests = 5;
-my $yaml_tests = 6;
+my $json_xs_0_tests = 3;
+my $json_xs_tests = 5;
+my $json_xs_2_tests = 6;
+my $yaml_tests = 7;
+my $xml_libxml_tests = 30;
 #plan 'no_plan';
-plan tests => 213 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_tests;
+plan tests => 245 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_tests + $xml_libxml_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips", "debug"),
 	       )) {
@@ -78,6 +80,7 @@ $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 				    zielc  => '18287,7815', # Hegemeisterweg (north)
 				  }, 'route with affecting temp blocking';
     my $content = $resp->decoded_content;
+    expected_tag $resp, 'rm.route.html';
     like_html $content, qr{Ereignisse, die die Route betreffen k.*nnen}, 'found temp blocking';
     like_html $content, qr{Hegemeisterweg/Treskowallee}, 'correct temp blocking found';
 }
@@ -89,6 +92,7 @@ $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 				    zielc  => '18165,7371', # Treskowallee (south)
 				  }, 'route without affecting temp blocking';
     my $content = $resp->decoded_content;
+    expected_tag $resp, 'rm.route.html';
     unlike_html $content, qr{Ereignisse, die die Route betreffen k.*nnen}, 'temp blocking not found';
     unlike_html $content, qr{Hegemeisterweg/Treskowallee}, 'temp blocking not found';
 }
@@ -118,6 +122,7 @@ SKIP: {
 				    pref_ferry => 'use',
 				  }, 'mixed N/H, ferry, beta bbbike.cgi';
     my $content = $resp->decoded_content;
+    expected_tag $resp, 'rm.route.html';
     like_html $content, qr{Wassersportallee.*title=.Hauptstra.*e, Radweg.*class=.catH catcellRW}, 'found cat_display with H and RW';
     like_html $content, qr{F12 \(Dahme\).*title=.F.*hre.*class=.catQ.catcell['"].*Mo-Fr von ca. 6 bis 21 Uhr.*BVG-Kurzstreckentarif}, 'found cat_display with ferry, ferry information';
     like_html $content, qr{angekommen.*M.*ggelbergallee/F12 \(Dahme\)}, 'angekommen';
@@ -133,6 +138,7 @@ SKIP: {
 				    output_as => 'perldump',
 				  }, 'tricky search with fragezeichen in region scope';
     is $resp->header('content-disposition'), 'attachment; filename=route_landstrasse1fragezeichen1_landstrasse1fragezeichen2.txt';
+    expected_tag $resp, 'rm.route.perldump';
     my $res = $safe->reval($resp->decoded_content);
     cmp_ok $res->{Len}, ">", 1300, 'expected length';
     is $res->{Route}->[0]->{Strname}, 'Fragezeichen1', 'expected route, 1st hop';
@@ -147,6 +153,7 @@ SKIP: {
     my $resp = bbbike_cgi_search +{ startc_wgs84 => '13.410891,52.544453', zielc_wgs84 => '0.000000,0.000000',
 				    output_as => 'json',
 				  }, 'json output';
+    expected_tag $resp, 'error.wrongcoord';
     my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
     like $data->{error}, qr{highly probably wrong coordinate}i, 'detected wrong coordinate';
 }
@@ -154,22 +161,26 @@ SKIP: {
 {
     my $resp = bbbike_cgi_search +{ startc_wgs84 => '13.410891,52.544453', zielc_wgs84 => '0.000000,0.000000',
 				  }, 'non-json output', { status => 400 };
+    expected_tag $resp, 'error.wrongcoord';
     like $resp->decoded_content, qr{highly probably wrong coordinate}i, 'detected wrong coordinate in text/plain';
 }
 
 {
     my $resp = bbbike_cgi_geocode +{start => 'Total unbekannter Weg'}, 'Completely unknown street';
+    expected_tag $resp, 'rm.chooseform';
     like_html($resp->decoded_content, qr{Total unbekannter Weg.*?ist nicht bekannt.*?Checkliste}s);
 }
 
 {
     my $resp = bbbike_en_cgi_geocode +{start => 'Total unbekannter Weg'}, 'Completely unknown street';
+    expected_tag $resp, 'rm.chooseform';
     like_html($resp->decoded_content, qr{Total unbekannter Weg.*?is unknown.*?Checklist}s);
 }
 
 {
     my $resp = bbbike_cgi_geocode +{start => 'Unbekannter Weg'}, 'Unknown street';
     my $content = $resp->decoded_content;
+    expected_tag $resp, 'rm.chooseform';
     like_html($content, qr{Unbekannter Weg.*?ist nicht bekannt.*?Stra.*?eintragen}s);
     like_html($content, qr{Die n.*?chste bekannte Kreuzung ist:.*?Dudenstr./Mehringdamm.*?und wird f.*?r die Suche verwendet}s);
 }
@@ -177,6 +188,7 @@ SKIP: {
 {
     my $resp = bbbike_en_cgi_geocode +{start => 'Unbekannter Weg'}, 'Unknown street';
     my $content = $resp->decoded_content;
+    expected_tag $resp, 'rm.chooseform';
     like_html($content, qr{Unbekannter Weg.*?is unknown.*?register this street}s);
     like_html($content, qr{The next known crossing is:.*?Dudenstr./Mehringdamm.*?and will be used for route search}s);
 }
@@ -185,6 +197,7 @@ SKIP: {
     my $resp = bbbike_cgi_geocode +{start => 'Kottbusser Damm/Maybachufer',
 				    ziel => 'Maybachufer/Schinkestr.',
 				   }, 'Find streets with crossing notation';
+    expected_tag $resp, 'rm.crossing';
     on_pref_page_without_crossing($resp);
 }
 
@@ -192,6 +205,7 @@ SKIP: {
     my $resp = bbbike_cgi_geocode +{start => 'Mehringdamm',
 				    ziel => 'Yorckstr.',
 				   }, 'Find normal street';
+    expected_tag $resp, 'rm.crossing';
     on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
  SKIP: {
@@ -222,6 +236,7 @@ TODO: {
     my $resp2 = bbbike_cgi_geocode +{start => 'Aliaswidestr.',
 				     ziel => 'Aliasstr.',
 				    }, 'Find aliases';
+    expected_tag $resp2, 'rm.crossing';
     on_crossing_pref_page($resp2);
 
     my $resp3 = bbbike_cgi_geocode +{start => 'B96',
@@ -229,6 +244,7 @@ TODO: {
 				    }, 'Find aliases, 2nd check';
     {
 	local $TODO = "Approx is too good here";
+	expected_tag $resp2, 'rm.crossing';
 	on_crossing_pref_page($resp2);
     }
 }
@@ -238,6 +254,7 @@ TODO: {
 				    via => 'Wilhelmshöhe',
 				    ziel => 'Blücherplatz',
 				   }, 'A street with culdesac';
+    expected_tag $resp, 'rm.crossing';
     on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
  SKIP: {
@@ -262,6 +279,7 @@ TODO: {
     my $resp = bbbike_en_cgi_geocode +{start => 'Wilhelmshöhe',
 				       ziel => 'Dudenstr.',
 				      }, 'culdesac (English)';
+    expected_tag $resp, 'rm.crossing';
     on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
  SKIP: {
@@ -277,6 +295,7 @@ TODO: {
     my $resp = bbbike_cgi_geocode +{start => 'Really unknown street (make it long, so approx cannot handle it, too)',
 				    ziel => 'Yorckstr.',
 				   }, 'Find normal street';
+    expected_tag $resp, 'rm.chooseform';
     not_on_crossing_pref_page($resp);
 }
 
@@ -285,6 +304,7 @@ TODO: {
     my $resp = bbbike_cgi_geocode +{start => 'Alt-Treptow',
 				    ziel => 'Rosengarten',
 				   }, 'Inofficial street';
+    expected_tag $resp, 'rm.crossing';
     on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
     like_html $content, qr{\Q(Rosengarten}, 'Found Rosengarten with parenthesis';
@@ -295,6 +315,7 @@ TODO: {
     my $resp = bbbike_cgi_geocode +{start => 'Kochstr.',
 				    ziel => 'Dudenstr.',
 				   }, 'oldname';
+    expected_tag $resp, 'rm.chooseform';
     not_on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
     like_html $content, qr{Rudi-Dutschke-Str.*alter Name.*Kochstr}, 'Found old name note';
@@ -305,6 +326,7 @@ TODO: {
     my $resp = bbbike_en_cgi_geocode +{start => 'Kochstr.',
 				       ziel => 'Dudenstr.',
 				   }, 'oldname (English)';
+    expected_tag $resp, 'rm.chooseform';
     not_on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
     like_html $content, qr{Rudi-Dutschke-Str.*old name.*Kochstr}, 'Found old name note (English)';
@@ -315,6 +337,7 @@ TODO: {
     my $resp = bbbike_cgi_geocode +{start => 'Belle-Alliance-Straße',
 				    ziel => 'Dudenstr.',
 				   }, 'oldname (unique)';
+    expected_tag $resp, 'rm.crossing';
     on_crossing_pref_page($resp);
     my $content = $resp->decoded_content;
     like_html $content, qr{Mehringdamm.*alter Name.*Belle-Alliance-Str.}, 'Found old name note';
@@ -323,6 +346,7 @@ TODO: {
 {
     # multiple cityparts
     my $resp = bbbike_cgi_geocode +{start => 'gürtelstr'}, 'multi cityparts';
+    expected_tag $resp, 'rm.chooseform';
     my $content = $resp->decoded_content;
     like_html $content, qr{value="Gürtelstr.!Friedrichshain, Lichtenberg!}, 'first alternative';
     like_html $content, qr{value="Gürtelstr.!Prenzlauer Berg, Weißensee!}, 'second alternative';
@@ -344,6 +368,7 @@ SKIP: {
 			   zielc  => '9227,8890',
 			  );
     my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'json'}, 'json output';
+    expected_tag $resp, 'rm.route.json';
     my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
     validate_bbbikecgires_data $data, 'Mehringdamm Richtung Norden';
     is $data->{Trafficlights}, 1, 'one traffic light seen';
@@ -358,6 +383,7 @@ SKIP: {
 			   zielc  => '14674,11370', # Wühlischstr.
 			  );
     my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'yaml'}, 'yaml output';
+    expected_tag $resp, 'rm.route.yaml';
     is $resp->header('content-disposition'), 'attachment; filename=route_wuehlischstrgaertnerstrfriedrichshain_ostkreuzumfahrungostkreuz.yml';
     my $data = BBBikeYAML::Load($resp->decoded_content(charset => 'none'));
     validate_bbbikecgires_data $data, 'YAML output';
@@ -372,6 +398,7 @@ SKIP: {
 			  );
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'No special vehicle';
+	expected_tag $resp, 'rm.route.html';
 	my $content = $resp->decoded_content;
 	like_html($content, qr{Fußgängerbrücke}, 'Found Fussgaengerbruecke');
 	like_html($content, qr{30 Sekunden Zeitverlust}, 'Found lost time');
@@ -380,6 +407,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_specialvehicle => 'childseat' }, 'Special "vehicle" childseat';
+	expected_tag $resp, 'rm.route.html';
 	my $content = $resp->decoded_content;
 	like_html($content, qr{Fußgängerbrücke}, 'Still found Fussgaengerbruecke');
 	like_html($content, qr{110 Sekunden Zeitverlust}, 'Found lost time, in seconds');
@@ -388,6 +416,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_specialvehicle => 'trailer' }, 'Special "vehicle" childseat';
+	expected_tag $resp, 'rm.route.html';
 	my $content = $resp->decoded_content;
 	like_html($content, qr{Brücken Rummelsburg}, 'Found Umfahrung');
 	unlike_html($content, qr{Zeitverlust}, 'No lost time here');
@@ -399,6 +428,7 @@ SKIP: {
 				    viac   => '14764,10877',
 				    zielc  => '14787,10972',
 				    pref_specialvehicle => 'childseat' }, 'Special "vehicle" childseat';
+    expected_tag $resp, 'rm.route.html';
     my $content = $resp->decoded_content;
     like_html($content, qr{Fußgängerbrücke}, 'Still found Fussgaengerbruecke');
     like_html($content, qr{\(2x\).*4 Minuten Zeitverlust}, 'Found lost time, in minutes, and "2x"');
@@ -413,6 +443,7 @@ SKIP: {
 		       );
     {
 	my $resp = bbbike_cgi_search +{%route_params}, 'Search route with bbbike coords';
+	expected_tag $resp, 'rm.route.html';
 	my $content = $resp->decoded_content;
 	like_html($content, qr{Route von.*Dudenstr.*Methfesselstr});
 	like_html($content, qr{L.*nge.*0\.25\s+km});
@@ -420,6 +451,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'xml'}, 'XML output';
+	expected_tag $resp, 'rm.route.xml';
 	is $resp->header('content-disposition'), 'attachment; filename=route_dudenstr_methfesselstr.xml';
 	my $content = $resp->decoded_content(charset => "none");
 	xmllint_string($content, 'Well-formedness of XML output');
@@ -428,6 +460,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'gpx-route'}, 'GPX route';
+	expected_tag $resp, 'rm.route.gpxroute';
 	is $resp->header('content-disposition'), 'attachment; filename=route_dudenstr_methfesselstr.gpx';
 	my $content = $resp->decoded_content(charset => "none");
 	xml_eq($content, '<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX ... (XML::LibXML ...) - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><name>Methfesselstr. von Dudenstr.</name><rtept lat="52.484986" lon="13.385901"><name>Dudenstr.</name></rtept><rtept lat="52.484989" lon="13.382267"><name>Methfesselstr.</name></rtept></rte></gpx>',
@@ -439,7 +472,7 @@ SKIP: {
 }
 
 SKIP: {
-    skip "Need XML::LibXML for more XML checks", 6
+    skip "Need XML::LibXML for more XML checks", $xml_libxml_tests
 	if !eval { require XML::LibXML; 1 };
 
     my $p = XML::LibXML->new;
@@ -452,6 +485,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'xml'}, 'XML output';
+	expected_tag $resp, 'rm.route.xml';
 	is $resp->header('content-disposition'), 'attachment; filename=route_wilhelmshoehe_wilhelmshoehe.xml';
 	my $content = $resp->decoded_content(charset => "none");
 	validate_bbbikecgires_xml_string($content, 'Validation of XML output');
@@ -462,6 +496,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'gpx-route'}, 'GPX route';
+	expected_tag $resp, 'rm.route.gpxroute';
 	is $resp->header('content-disposition'), 'attachment; filename=route_wilhelmshoehe_wilhelmshoehe.gpx';
 	my $content = $resp->decoded_content(charset => "none");
 	my $expected = '<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Strassen::GPX 1.27 (XML::LibXML 2.0128) - http://www.bbbike.de" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><rte><name>Wilhelmshöhe von Wilhelmshöhe</name><rtept lat="52.487916" lon="13.38594"><name>Wilhelmshöhe</name></rtept><rtept lat="52.487887" lon="13.385366"><name></name></rtept><rtept lat="52.48658" lon="13.384777"><name></name></rtept></rte></gpx>';
@@ -481,6 +516,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%route_params, output_as => 'kml-track'}, 'KML output';
+	expected_tag $resp, 'rm.route.kmltrack';
 	is $resp->header('content-disposition'), 'attachment; filename=track_wilhelmshoehe_wilhelmshoehe.kml';
 	my $content = $resp->decoded_content(charset => "none");
 	my $doc = $p->parse_string($content);
@@ -499,6 +535,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'xml'}, 'No route, XML output';
+	expected_tag $resp, 'rm.route.xml';
 	my $content = $resp->decoded_content(charset => 'none');
 	validate_bbbikecgires_xml_string($content);
 	my $doc = $p->parse_string($content);
@@ -508,16 +545,19 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'gpx-route'}, 'No route, GPX route output';
+	expected_tag $resp, 'rm.route.gpxroute';
 	gpxlint_string($resp->decoded_content(charset => 'none'));
     }
 
     {
 	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'gpx-track'}, 'No route, GPX track output';
+	expected_tag $resp, 'rm.route.gpxtrack';
 	gpxlint_string($resp->decoded_content(charset => 'none'));
     }
 
     {
 	my $resp = bbbike_cgi_search +{%noroute_params, output_as => 'kml-track'}, 'No route, KML track output';
+	expected_tag $resp, 'rm.route.kmltrack';
 	kmllint_string($resp->decoded_content(charset => 'none'));
     }
 }
@@ -528,6 +568,7 @@ SKIP: {
 				   zielname=>'Methfesselstr.',
 				   zielc_wgs84=>'13.382252,52.484989',
 				  },'Search route with WGS84 coords';
+    expected_tag $resp, 'rm.route.html';
     my $content = $resp->decoded_content;
     like_html($content, qr{Route von.*Dudenstr.*Methfesselstr});
     like_html($content, qr{L.*nge.*0\.25\s+km});
@@ -537,6 +578,7 @@ SKIP: {
     my $resp = bbbike_cgi_search +{startc=>'10094,6428',
 				   zielc=>'10176,6050',
 				  },'BNP (Poller) in midst of route';
+    expected_tag $resp, 'rm.route.html';
     my $content = $resp->decoded_content;
     like_html($content, qr{\(kein Zeitverlust\)});
 }
@@ -546,6 +588,7 @@ SKIP: {
 			   zielc  => '11880,9874',
 			  );
     my $resp = bbbike_cgi_search +{ %route_endpoints }, 'Ausweichroute should follow';
+    expected_tag $resp, 'rm.route.html';
     on_routelist_page($resp);
     my $content = $resp->decoded_content;
     like_html($content, qr{Maybachufer: Di und Fr 11.00-18.30 Wochenmarkt, Behinderungen möglich}, 'Found Ausweichroute reason');
@@ -557,6 +600,7 @@ SKIP: {
 	my $req = $ausweichroute_form->click;
 	my $resp = $ua->request($req);
 	ok($resp->is_success, 'Ausweichroute request was successful');
+	expected_tag $resp, 'rm.route.html';
 	$content = $resp->decoded_content;
 	like_html($content, qr{Mögliche Ausweichroute}, 'Expected Ausweichroute text');
 	like_html($content, qr{links.*in die.*Schinkestr}, 'Expected route');
@@ -567,6 +611,7 @@ SKIP: {
 	my $req = $ausweichroute_form->click;
 	my $resp = $ua->request($req);
 	ok($resp->is_success, 'Ausweichroute request with 5 km/h was successful');
+	expected_tag $resp, 'rm.route.html';
 	$content = $resp->decoded_content;
 	like_html($content, qr{Eine bessere Ausweichroute wurde nicht gefunden}, 'Expected Ausweichroute text (no better route at 5 km/h)')
 	    or do {
@@ -584,6 +629,7 @@ SKIP: {
 	    if !eval { require JSON::XS; 1 };
 
 	my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'json'}, 'json output';
+	expected_tag $resp, 'rm.route.json';
 	my $data = JSON::XS::decode_json($resp->decoded_content);
 	validate_bbbikecgires_data $data, 'JSON data, Maybachufer';
 	my $first_blocking = $data->{AffectingBlockings}->[0];
@@ -598,6 +644,7 @@ SKIP: {
 			   zielc  => '11329,12497',
 			  );
     my $resp = bbbike_cgi_search +{ %route_endpoints }, 'Ausweichroute (Voltairestr., Weihnachtsmarkt) should follow';
+    expected_tag $resp, 'rm.route.html';
     on_routelist_page($resp);
     my $content = $resp->decoded_content;
     like_html($content, qr{Voltairestr.: Weihnachtsmarkt}, 'Found Ausweichroute reason');
@@ -609,6 +656,7 @@ SKIP: {
 	my $req = $ausweichroute_form->click;
 	my $resp = $ua->request($req);
 	ok($resp->is_success, 'Ausweichroute request was successful');
+	expected_tag $resp, 'rm.route.html';
 	$content = $resp->decoded_content;
 	like_html($content, qr{Mögliche Ausweichroute}, 'Expected Ausweichroute text');
 	like_html($content, qr{Stralauer Str.}, 'Expected route');
@@ -621,6 +669,7 @@ SKIP: {
 	my $req = $ausweichroute_form->click;
 	my $resp = $ua->request($req);
 	ok($resp->is_success, 'Ausweichroute request was successful');
+	expected_tag $resp, 'rm.route.html';
 	$content = $resp->decoded_content;
 	like_html($content, qr{Mögliche Ausweichroute}, 'Expected Ausweichroute text');
 	like_html($content, qr{Grunerstr.}, 'Expected route');
@@ -635,6 +684,7 @@ SKIP: {
     my $safe = Safe->new;
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'perldump' }, 'No road prefs';
+	expected_tag $resp, 'rm.route.perldump';
 	is $resp->header('content-disposition'), 'attachment; filename=route_rudidutschkestraxelspringerstr_kochstrkreuzbergwilhelmstrmittekreuzberg.txt';
 	my $res = $safe->reval($resp->decoded_content);
 	ok((grep { $_ eq '9615,11225' } @{$res->{Path}}), 'via Kochstr.')
@@ -643,6 +693,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_cat => 'N_RW', output_as => 'perldump' }, 'N_RW';
+	expected_tag $resp, 'rm.route.perldump';
 	my $res = $safe->reval($resp->decoded_content);
 	ok((grep { $_ eq '9615,11225' } @{$res->{Path}}), 'still via Kochstr. (bus lane)')
 	    or diag_route($res);
@@ -650,6 +701,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_cat => 'N_RW1', output_as => 'perldump' }, 'N_RW1';
+	expected_tag $resp, 'rm.route.perldump';
 	my $res = $safe->reval($resp->decoded_content);
 	ok(!(grep { $_ eq '9615,11225' } @{$res->{Path}}), 'not anymore via Kochstr.')
 	    or diag_route($res);
@@ -657,6 +709,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints, pref_cat => 'N2', output_as => 'perldump' }, 'N';
+	expected_tag $resp, 'rm.route.perldump';
 	my $res = $safe->reval($resp->decoded_content);
 	ok(!(grep { $_ eq '9615,11225' } @{$res->{Path}}), 'also not via Kochstr. (residential only)')
 	    or diag_route($res);
@@ -678,6 +731,7 @@ SKIP: {
 				   zielc_wgs84  => $goal,
 				   output_as    => 'perldump',
 				  },'Search route with multiple via points';
+    expected_tag $resp, 'rm.route.perldump';
     my $res = $safe->reval($resp->decoded_content);
     like join("; ", map { $_->{Strname} } @{ $res->{Route} }), qr{Dudenstr.*Katzbachstr.*Kreuzbergstr.*Mehringdamm.*Dudenstr},
 	'Rund um Kreuzberg'
@@ -690,6 +744,7 @@ SKIP: {
 			  );
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'Hohenstaufenstr., turn around, German';
+	expected_tag $resp, 'rm.route.html';
 	my $content = $resp->decoded_content;
 	like_html($content, qr{nach 0.03 km.*umdrehen.*Hohenstaufenstr..*0.0 km}, 'Found "umdrehen"');
 	unlike_html($content, qr{Hohenstaufenstr.*Ecke.*Hohenstaufenstr.}, 'No "Ecke" with same street');
@@ -697,6 +752,7 @@ SKIP: {
 
     {
 	my $resp = bbbike_en_cgi_search +{ %route_endpoints }, 'Hohenstaufenstr., turn around, English';
+	expected_tag $resp, 'rm.route.html';
 	my $content = $resp->decoded_content;
 	like_html($content, qr{after 0.03 km.*turn around.*Hohenstaufenstr..*0.0 km}, 'Found "turn around" (English)');
 	like_html($content, qr{after 0.03 km.*arrived!.*Hohenstaufenstr.}, 'Found "arrived" (English)');
@@ -709,6 +765,7 @@ SKIP: {
 			  );
     {
 	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'false coordinates', { status => 400 };
+	expected_tag $resp, 'error.wrongfmt';
 	is $resp->code, 400, 'non-OK status code';
 	my $content = $resp->decoded_content;
 	like($content, qr{Error: Invalid coordinate format in}, 'Found expected error');
@@ -744,6 +801,7 @@ SKIP: {
 
 	{
 	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist with text display, param is $coordtype";
+	    expected_tag $resp, 'rm.route.html';
 	    my $content = $resp->decoded_content;
 	    local $TODO;
 	    $TODO = "some streets might be unrecognized due to floating point inaccuracies" if $coordtype =~ /^gple/; # converting from std coords to wgs84 and back
@@ -756,6 +814,7 @@ SKIP: {
 	{
 	    my %params = (%params, output_as => 'gpx-track');
 	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist as gpx-track, param is $coordtype";
+	    expected_tag $resp, 'rm.route.gpxtrack';
 	    is $resp->header('content-disposition'), 'attachment; filename=track.gpx';
 	    gpxlint_string($resp->decoded_content(charset => 'none'));
 	}
@@ -763,6 +822,7 @@ SKIP: {
 	{
 	    my %params = (%params, output_as => 'gpx-track', startname => 'Dudenstr.', zielname => 'Mehringdamm');
 	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist as gpx-track, param is $coordtype";
+	    expected_tag $resp, 'rm.route.gpxtrack';
 	    is $resp->header('content-disposition'), 'attachment; filename=track_dudenstr_mehringdamm.gpx';
 	    gpxlint_string($resp->decoded_content(charset => 'none'));
 	}
@@ -770,6 +830,7 @@ SKIP: {
 	{
 	    my %params = (%params, output_as => 'gpx-track', startname => 'Dudenstr.', vianame => 'Methfesselstr.', zielname => 'Dudenstr.');
 	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist as gpx-track, param is $coordtype";
+	    expected_tag $resp, 'rm.route.gpxtrack';
 	    is $resp->header('content-disposition'), 'attachment; filename=track_methfesselstr_dudenstr.gpx';
 	    gpxlint_string($resp->decoded_content(charset => 'none'));
 	}
@@ -786,6 +847,7 @@ SKIP: {
 		  gple => 'gjn_Im_dqAcGcDgApG|EbBlBqE', # already encoded track
 		 );
     my $resp = bbbike_cgi_search +{ %params }, "another gpx-track";
+    expected_tag $resp, 'rm.route.gpxtrack';
     is $resp->header('content-disposition'), 'attachment; filename=track_wuehlischstr_simplonstr.gpx', 'different start/goal name, but still detected as circular route';
     gpxlint_string($resp->decoded_content(charset => 'none'));
 }
@@ -894,6 +956,12 @@ sub extract_crossings {
 	$text;
     } $doc->findnodes('//select[@name="'.$html_name.'"]/option');
     @crossings;
+}
+
+sub expected_tag ($$) {
+    my($resp, $expected_tag) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
+    is $resp->header('X-Tag'), $expected_tag;
 }
 
 __END__
