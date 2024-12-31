@@ -17,6 +17,7 @@ use warnings;
 use FindBin;
 
 use Encode qw(decode encode);
+use File::Basename qw(basename dirname);
 use File::Temp qw();
 use Getopt::Long;
 use JSON::XS qw(decode_json);
@@ -25,7 +26,7 @@ use List::MoreUtils qw(uniq);
 use Storable qw(dclone);
 use YAML::XS qw(LoadFile Dump);
 
-my $json_file = "bvg_checker_disruptions_2024.json";
+my $json_file = "$ENV{HOME}/src/bbbike-bvg/bvg_checker_disruptions_2024.json";
 
 # note: use pseudo version delta -1 for uncommitted version
 # note: use pseudo version delta "empty" for an empty file, only for --old-version, effectively showing all data
@@ -60,7 +61,14 @@ if (!defined $new_version) {
     }
 }
 
-my @versions = split /\n/, qx(git log --pretty=%H -- $json_file);
+my $json_dirname  = dirname($json_file);
+my $json_basename = basename $json_file;
+
+my @versions = do {
+    my $save_pwd = save_pwd2();
+    chdir $json_dirname;
+    split /\n/, qx(git log --pretty=%H -- $json_basename);
+};
 
 my(%old_records, %new_records);
 for my $def (
@@ -74,10 +82,10 @@ for my $def (
     } elsif ($delta_version == -1) {
 	@cat_projects_cmd = ('cat', $json_file);
     } elsif ($delta_version < -1) {
-	die "version delta can only be -1, 0 or positive";
+	die qq{version delta can only be -1, 0 or positive (supplied "$delta_version")};
     } else {
 	my $version = $versions[$delta_version];
-	@cat_projects_cmd = (qw(git show), $version.':'.$json_file);
+	@cat_projects_cmd = (qw(sh -c), "cd $json_dirname && git show $version:$json_basename");
     }
     my @cmd = (\@cat_projects_cmd);
     if ($debug) {
@@ -316,5 +324,51 @@ sub load_sourceids {
     }
     \%bvg_sourceids;
 }
+
+# REPO BEGIN
+# REPO NAME save_pwd2 /home/e/eserte/src/srezic-repository 
+# REPO MD5 1598132cab3f7a881ede407a2497adc8
+
+=head2 save_pwd2
+
+=for category File
+
+Save the current directory and restore it until the remembered object
+gets out of scope.
+
+=cut
+
+BEGIN {
+    sub save_pwd2 {
+	my $pwd;
+	if (1) { # test and use fchdir()
+	    open $pwd, '.'
+		or undef $pwd;
+	    if (defined $pwd) {
+		eval { chdir $pwd }
+		    or undef $pwd;
+	    }
+	}
+	if (!defined $pwd) {
+	    require Cwd;
+	    $pwd = Cwd::getcwd();
+	    $pwd = undef if defined $pwd && $pwd eq ''; # might be consinstent in older Cwd versions 
+	}
+	if (!defined $pwd) {
+	    warn "No known current working directory";
+	}
+	bless {cwd => $pwd}, __PACKAGE__ . '::SavePwd2';
+    }
+    my $DESTROY = sub {
+	my $self = shift;
+	if (defined $self->{cwd}) {
+	    chdir $self->{cwd}
+	        or die "Can't chdir back to $self->{cwd}: $!";
+	}
+    };
+    no strict 'refs';
+    *{__PACKAGE__.'::SavePwd2::DESTROY'} = $DESTROY;
+}
+# REPO END
 
 __END__
