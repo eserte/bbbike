@@ -38,6 +38,7 @@ GetOptions(
 	   "list-only" => \my $list_only,
 	   "log=s" => \my $log,
 	   "debug!" => \my $debug,
+	   "json-output-file=s" => \my $json_output_file,
 	   "variant=s" => sub {
 	       if ($_[1] =~ m{^bvg(2021|2024)$}) {
 		   $variant = $_[1];
@@ -206,8 +207,8 @@ sub find_active_sourceids_bvg2024 {
 	$page++;
 	last if $page > $max_pages;
     }
-    if ($debug) {
-	my $ofile = '/tmp/bvg_checker_disruptions_2024.json';
+    if ($debug || $json_output_file) {
+	my $ofile = $json_output_file || '/tmp/bvg_checker_disruptions_2024.json';
 	warn "INFO: write JSON to $ofile...\n";
 	open my $ofh, '>', $ofile or die $!;
 	print $ofh JSON::XS->new->pretty->canonical->utf8->encode(\@disruptions);
