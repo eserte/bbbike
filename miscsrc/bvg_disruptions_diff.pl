@@ -15,6 +15,7 @@
 use strict;
 use warnings;
 use FindBin;
+use lib "$FindBin::RealBin/..";
 
 use Encode qw(decode encode);
 use File::Basename qw(basename dirname);
@@ -24,7 +25,9 @@ use JSON::XS qw(decode_json);
 use IPC::Run qw(run);
 use List::MoreUtils qw(uniq);
 use Storable qw(dclone);
-use YAML::XS qw(LoadFile Dump);
+
+use BBBikeUtil qw(bbbike_root save_pwd2);
+use BBBikeYAML qw(LoadFile Dump);
 
 my $json_file = "$ENV{HOME}/src/bbbike-bvg/bvg_checker_disruptions_2024.json";
 
@@ -44,8 +47,13 @@ GetOptions(
 	   'as-yaml' => \my $as_yaml,
 	   "debug" => \$debug,
 	   "sort-by=s" => \$sort_by,
+	   'json-file=s' => \$json_file,
 	  )
-    or die "usage: $0 [--debug] [--ignore-boring] [--old-version delta] [--new-version delta] [--wdiff] [--sort-by date|title]\n";
+    or die <<'EOF';
+usage: $0 [--debug] [--ignore-boring]
+	[--old-version delta] [--new-version delta] [--wdiff] [--sort-by date|title]
+	[--json-file /path/to/gitversioned/bvg_disruptions.json]
+EOF
 
 $sort_by =~ m{^(date|title)$}
     or die "usage: allowed --sort-by are 'date' (default) and 'title'\n";
@@ -65,7 +73,7 @@ my $json_dirname  = dirname($json_file);
 my $json_basename = basename $json_file;
 
 my @versions = do {
-    my $save_pwd = save_pwd2();
+    my $save_pwd = save_pwd2;
     chdir $json_dirname;
     split /\n/, qx(git log --pretty=%H -- $json_basename);
 };
@@ -315,7 +323,7 @@ sub print_raw_serialized {
 }
 
 sub load_sourceids {
-    my $all_sourceids = LoadFile("$ENV{HOME}/src/bbbike/tmp/sourceid-all.yml");
+    my $all_sourceids = LoadFile(bbbike_root . "/tmp/sourceid-all.yml");
     my %bvg_sourceids;
     while(my($id, undef) = each %$all_sourceids) {
 	if ($id =~ m{^bvg2024:.*#(.*)}) {
@@ -324,51 +332,5 @@ sub load_sourceids {
     }
     \%bvg_sourceids;
 }
-
-# REPO BEGIN
-# REPO NAME save_pwd2 /home/e/eserte/src/srezic-repository 
-# REPO MD5 1598132cab3f7a881ede407a2497adc8
-
-=head2 save_pwd2
-
-=for category File
-
-Save the current directory and restore it until the remembered object
-gets out of scope.
-
-=cut
-
-BEGIN {
-    sub save_pwd2 {
-	my $pwd;
-	if (1) { # test and use fchdir()
-	    open $pwd, '.'
-		or undef $pwd;
-	    if (defined $pwd) {
-		eval { chdir $pwd }
-		    or undef $pwd;
-	    }
-	}
-	if (!defined $pwd) {
-	    require Cwd;
-	    $pwd = Cwd::getcwd();
-	    $pwd = undef if defined $pwd && $pwd eq ''; # might be consinstent in older Cwd versions 
-	}
-	if (!defined $pwd) {
-	    warn "No known current working directory";
-	}
-	bless {cwd => $pwd}, __PACKAGE__ . '::SavePwd2';
-    }
-    my $DESTROY = sub {
-	my $self = shift;
-	if (defined $self->{cwd}) {
-	    chdir $self->{cwd}
-	        or die "Can't chdir back to $self->{cwd}: $!";
-	}
-    };
-    no strict 'refs';
-    *{__PACKAGE__.'::SavePwd2::DESTROY'} = $DESTROY;
-}
-# REPO END
 
 __END__
