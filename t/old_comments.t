@@ -97,7 +97,8 @@ EOF
 
 	     # Bergmannstr. (Mehringdamm bis Baerwaldstr.)
 	     ["9248,9350", "10123,9233", <<EOF, "CS (was Route, now no route here)"],
-- Kopfsteinpflaster (Teilstrecke): 1
+- Fahrbahn Kopfsteinpflaster, Radweg mit Verbundsteinpflaster (Teilstrecke): 1
+  Kopfsteinpflaster (Teilstrecke): 1
   TR4: 1
   Tempo 10 (Teilstrecke): 1
 - {}
