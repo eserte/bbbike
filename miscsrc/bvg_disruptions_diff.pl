@@ -203,11 +203,13 @@ sub print_basic_info {
     }
 
     my($id) = $record->{id};
+    (my $short_first_line = $record->{lines}->[0]) =~ s/^\S+\s+//;
+    my $ext_id = 'bvg2024:' . lc($short_first_line).'#'.$id;
     my $enddate;
     if ($record->{_date} =~ m{ - (\d{4}-\d{2}-\d{2})}) {
 	$enddate = $1;
     }
-    print "#: source_id: bvg2024:$id" . ($enddate ? " (bis $enddate)" : "") . ($sourceids->{$id} ? " (INUSE)" : "") . "\n";
+    print "#: source_id: $ext_id" . ($enddate ? " (bis $enddate)" : "") . ($sourceids->{$id} ? " (INUSE)" : "") . "\n";
 
 }
 
