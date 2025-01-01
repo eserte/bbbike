@@ -2652,6 +2652,7 @@ für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
 #: note: Benutzungspflicht unklar. Es existieren widersprüchliche Einbahnstraßenschilder mit und ohne "Radfahrer frei"-Zusatzschildern.
 	RW1; 13086,9825 13139,9880 13162,9904 13220,9980
 	RW2; 9753,9252 9801,9241
+	RW1;RW9 9801,9241 9818,9239 9880,9233 9973,9232
 #
 # REMOVED (weitgehend entfernt) --- #: next_check_id: GOERLITZERUFER-2023 --- #: XXX wie sieht es nach dem Umbau aus? --- #: last_checked: 2024-03-14 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-30 vvv ---	RW1; 13220,9980 13162,9904 --- #: historical_note: früher Radweg auf dem Bürgersteig --- #: historical_note: zwischenzeitlich provisorische geschützte Radspur, RW3; --- #: osm_watch: way id="984857536" version="6" ---	RW1; 13162,9904 13139,9880 13086,9825 13026,9854 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 

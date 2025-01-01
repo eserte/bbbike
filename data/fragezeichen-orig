@@ -7498,11 +7498,12 @@ geplante Verlängerung des Uferwegs an der Spree	?::inwork 5287,12465 5282,12538 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/staytion-pankower-forum.689/page-2#post-22307
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/neue-namen-fuer-zwoelf-pankower-strassen_a408065 (Erwähnung)
 #: by: https://www.berliner-woche.de/pankow/c-umwelt/im-forum-pankow-entstehen-wohnungen_a420592
+#: by: https://www.tagesspiegel.de/berlin/wohnviertel-statt-gewerbegebiet-in-berlin-abriss-gestartet-in-sechs-jahren-sollen-hier-menschen-leben-12241718.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_52_3843_3918_online.pdf (Wirksamkeit der Benennung ab Baubeginn, 10.10.2024)
 #: XXX fehlt bei Berlin.coords.data
 #: osm_watch: way id="1309823274" version="1"
 #: osm_watch: way id="1188663570" version="2"
-#: osm_watch: way id="28363925" version="6"
+# REMOVED --- #: osm_watch: way id="28363925" version="6"
 #: last_checked: 2024-12-25 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2030-01-01
@@ -8459,6 +8460,7 @@ Olbersstr.: Radspuren geplant	?::projected 3038,13612 3211,13631 3280,13625 3365
 #: by: https://www.infravelo.de/projekt/otto-braun-strasse-1/ (Richtung Süden) (2. Quartal 2024) (mittlerweile bis 3. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2024) (abgeschlossen)
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,791686#msg-791686 (Radspuren sollen die Busspuren ersetzen)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1514146.php (Protektion (Klebebordsteine) nach der Winterpause 2024/2025)
+#: by: https://www.berliner-woche.de/mitte/c-bauen/sicherheit-fuer-radler-wurde-auf-der-otto-braun-strasse-erhoeht_a432405
 #: source_id: viz2021:13.42056,52.525969,19.03.2024,07:00 (bis 24.04.2024) (inaktiv)
 #: source_id: viz2021:13.420638,52.525829,22.07.2024,07:00 (Leitungsbau, bis 30.09.2024) (inaktiv)
 #: source_id: viz2021:13.421748,52.526637,06.11.2024,07:00 (Radwegerneuerung (?), bis 16.12.2024) (inaktiv)
@@ -8625,7 +8627,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1505682.php (Maßnahmenstart im nördlichen Bereich im November 2024 --- Niederbarnimstraße, Einbahnstraßenregelungen (vielleicht die Colberstr.?) und dieser Abschnitt)
 #: osm_watch: way id="1051634661" version="11"
 #: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
-#: last_checked: 2024-12-28
+#: last_checked: 2025-01-01
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
@@ -10675,11 +10677,11 @@ Bebauungsplan 9-53 (Friedrichshagener Str. (Köpenick)): vermutlich entstehen hie
 #: XXX culdesac-Eintrag nach Eröffnung entfernen!
 #: XXX neben dem mittlerweile permanenten Zaun oben gibt es auch ein Tor weiter unten
 #: XXX wird der Weg hier erst eröffnet, wenn der Uferweg im Zuge des Bebauungsplans 9-53 realisiert wurde?
-#: osm_watch: way id="236156287" version="3"
+#: osm_watch: way id="236156287" version="4"
 #: osm_watch: way id="1126444944" version="2"
-#: osm_watch: way id="1300678164" version="1"
+#: osm_watch: way id="1300678164" version="2"
 #: osm_watch[closed]: note 3842826 4
-#: last_checked: 2024-10-24
+#: last_checked: 2024-12-31 (osm)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 120d
 unter der Salvador-Allende-Brücke: hier existiert ein asphaltierter und beleuchteter Weg, allerdings noch abgesperrt	?::inwork 23404,5325 23378,5280 23395,5154 23433,5159 23433,5197
