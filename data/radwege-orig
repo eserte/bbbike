@@ -245,7 +245,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2024-11-15 vvv
+#: last_checked: 2025-01-02 vvv
 #: check_frequency: 45d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
@@ -1390,8 +1390,8 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 #: by: https://api.fixmyberlin.de/api/plannings/216
 #: by: https://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026)
 #: osm_watch: way id="963841938" version="6"
-#: last_checked: 2024-06-12
-#: check_frequency: 720d
+#: last_checked: 2025-01-02
+#: check_frequency: 360d
 #: next_check: 2026-12-31
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4786,8007 4711,8013
@@ -1507,7 +1507,7 @@ alte Gehwegplatten	RW1; 4918,8740 4892,8624
 Verbundsteinpflaster und alte Gehwegplatten	RW1; 4892,8624 4769,8563
 Verbundsteinpflaster	RW1; 4769,8563 4629,8461 4521,8379 4473,8351 4423,8315 4344,8246 4280,8188 4229,8142 4180,8098 4106,8031 4061,7992 3968,7906 3839,7787 3631,7598 3619,7587 3596,7566 3538,7515 3468,7455 3389,7383 3346,7369
 	RW1; 3346,7369 3389,7383 3468,7455 3538,7515 3596,7566 3619,7587 3631,7598 3839,7787 3968,7906 4061,7992 4106,8031 4180,8098
-	RW3; 4229,8142 4280,8188
+Fahrradschleuse	RW3; 4229,8142 4280,8188
 	RW1; 4280,8188 4344,8246 4423,8315 4473,8351 4521,8379 4629,8461 4769,8563 4892,8624 4918,8740 4917,8772
 	RW2; 4917,8772 4918,8872
 	RW1;RW1 3346,7369 3279,7386 3228,7401 3042,7465 2757,7604
@@ -2917,7 +2917,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2024-12-23 vvv
+#: last_checked: 2025-01-02 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -2973,7 +2973,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1
-#: last_checked: 2024-12-06
+#: last_checked: 2025-01-02
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 	RW1; 12543,11521 12645,11673
@@ -8136,7 +8136,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2024-12-21
+#: last_checked: 2025-01-02
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -8145,7 +8145,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
-#: last_checked: 2024-12-21 vvv
+#: last_checked: 2025-01-02 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-01-31 vvv
 #XXX	RW4; 10975,10334 10871,10322
@@ -8543,7 +8543,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="34"
 #: osm_watch: way id="335487059" version="29"
-#: last_checked: 2024-12-21 vvv
+#: last_checked: 2025-01-02 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-06-30 vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025)
@@ -9259,9 +9259,12 @@ Tempo 10	RW6;RW6 -7523,14969 -7387,14951
 	RW7;RW7 10530,14452 10567,14337 10629,14299
 # 
 #: note: Grunewaldstr., Richtung Osten
-Radspur hinter parkenden Autos	RW3; 5895,9083 5974,9100
-Radspur hinter parkenden Autos	RW4; 5974,9100 6059,9118
-	RW4; 6059,9118 6142,9134
+Radspur hinter parkenden Autos	RW4; 5895,9083 5974,9100 6059,9118
+Leitboys	RW4; 6059,9118 6142,9134
+#: note: Grunewaldstr., Richtung Westen
+Radspur hinter parkenden Autos, Bushaltestellen	RW4; 6440,9192 6361,9175 6264,9156 6142,9134
+	RW4; 6142,9134 6059,9118
+Radspur hinter parkenden Autos	RW4; 6059,9118 5974,9100 5895,9083
 # 
 asphaltiert	RW1;RW9 7308,9163 7363,9152
 # 

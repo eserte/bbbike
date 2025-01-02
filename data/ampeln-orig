@@ -31,7 +31,7 @@ Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
 # 
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: osm_watch: note 4289251 1
-#: last_checked: 2024-08-09
+#: last_checked: 2025-01-02
 #: check_frequency: 120d
 #: next_check: 2028-01-01
 Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
@@ -115,7 +115,7 @@ Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 #: source_id: viz2021:13.379736,52.496265,03.11.2023,10:00 (bis 23.04.2025)
 #: note: gilt auch für Radfahrer (provisorische Radspur Richtung Norden, auch eine Fahrradampel an der Radspur Richtung Süden)
 #: note: etwa 40m nördlich des Punktes
-#: last_checked: 2024-11-28
+#: last_checked: 2025-01-02
 #: check_frequency: 90d
 #: next_check: 2025-04-23
 #: valid: -20250423
@@ -407,7 +407,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2024-12-06
+#: last_checked: 2025-01-02
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -3756,7 +3756,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 12172,14328
 # 
 	F 3951,9836
-	F 3944,6901
+#: next_check_id: SCHLANGENBADERTUNNEL-2023
+#: XXX Ausgeschaltet, weil die Zufahrt zum Tunnel gesperrt ist.
+#: last_checked: 2025-01-02
+#: check_frequency: 180d
+#: next_check: 2028-01-01
+	F0 3944,6901
 #: by: mapillary
 #: confirmed_by: srt
 #: note: Anforderungsampel

@@ -1849,7 +1849,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2024-11-11
+#: last_checked: 2025-01-02
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-01-01
 	q4::temp:clock 12378,11806 12413,11901
@@ -5079,7 +5079,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'data' => '#: source_id: viz2021:13.38248,52.53138,13.06.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr) (bis 31.07.2024) (bis 31.08.2024) (bis 31.10.2024) (bis 31.12.2024) (inaktiv)
 #: osm_watch: way id="364468604" version="14"
-#: also_indoor: traffic (H,B,T,W)
+#: also_indoor: traffic (ex-H,ex-B,ex-T,ex-W)
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
 #: last_checked: 2024-12-31 (traffic)
@@ -6254,6 +6254,8 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025) (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
+#: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025)
+#: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025)
 #: osm_watch: way id="23121446" version="34"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11). Radfahrer benutzen hier die Fahrbahn.
 #: last_checked: 2024-12-14 (osm) vvv
@@ -7342,7 +7344,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        {
          'data' => '#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen.
 #: osm_watch: way id="482690912" version="6"
-#: last_checked: 2024-12-06 vvv
+#: last_checked: 2025-01-02 vvv
 	3 12207,11763 12132,11788 11966,11832
 	3 11966,11832 12132,11788 12207,11763
 #: last_checked ^^^
@@ -7541,9 +7543,9 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 ',
          'from' => 1729461600,
          'id' => 4199,
-         'text' => 'Grolmanstr.: Sperrung zwischen Goethestr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 06.01.2025',
+         'text' => 'Grolmanstr.: Sperrung zwischen Goethestr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Februar 2028',
          'type' => 'handicap',
-         'until' => 1736204399
+         'until' => 1740783599
        },
        {
          'data' => '#: by: rbb
@@ -7804,29 +7806,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/8360550-3496862-weihnachtsmarkt-am-humboldt-forum.html
-#: by: https://wintermarkt-schlossplatz.de/
-#: note: im Internet teilweise als "Weihnachtsmarkt", teilweise als "Wintermarkt" zu finden, letzteres scheint aber korrekt zu sein
-	2::xmas 10152,12491 10175,12435 10271,12503
-	2::xmas 10175,12435 10102,12384
-',
-         'from' => 1732402800,
-         'id' => 4228,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Wintermarkt am Humboldt-Forum: gesperrt vom 25. November 2024 bis 01. Januar 2025',
-         'type' => 'gesperrt',
-         'until' => 1735772399
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (T,B,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
