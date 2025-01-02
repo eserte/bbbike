@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.32;
+$VERSION = 2.33;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -2029,8 +2029,11 @@ sub showmap_url_rapid {
 	$dateFrom = _rel_to_abs_date($dateFrom);
     }
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    # All features documented in https://github.com/facebook/Rapid/blob/95f7965dc2a346b851280b6e72f11eaf2aadc5db/API.md?plain=1#L24
+    # Actually the intent is to switch off the osm data layer, but there does not seem to exist an option for this.
+    my $disable_features = 'points,traffic_roads,service_roads,paths,buildings,building_parts,indoor,landuse,boundaries,water,rail,pistes,aerialways,power,past_future,others';
     sprintf('https://rapideditor.org/edit#map=%.2f/%s/%s', $scale, $py, $px)
-	. '&datasets=fbRoads,msBuildings&disable_features=boundaries'
+	. '&datasets=fbRoads,msBuildings&disable_features='.$disable_features
 	. "&photo_dates=${dateFrom}_"
 	. '&photo_overlay=mapillary'
 	# don't specify background; Rapid chooses the newest/best aerial # . "&background=Berlin-$newest_berlin_aerial_year"
