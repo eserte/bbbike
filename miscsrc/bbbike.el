@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016-2024 Slaven Rezic
+;; Copyright (C) 1997-2014,2016-2025 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -969,7 +969,7 @@
   ;; recognize "#: osm_watch" directives (just notes)
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*note[ ]+\\([0-9]+\\)" nil t)
+    (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\(?:\\[closed\\]\\)?\\):?[ ]*note[ ]+\\([0-9]+\\)" nil t)
       (make-button (match-beginning 1) (match-end 1)
 		   :type 'bbbike-osm-note-button
 		   :osmnoteid (buffer-substring-no-properties (match-beginning 2) (match-end 2))
