@@ -2395,7 +2395,7 @@ Winckelmannstr.: Kopfsteinpflaster sowie asphaltierter Gleisbereich	Q2+; 17428,4
 Zwiestädter Str.: Asphalt	Q0 13513,7532 13392,7648
 Am Orankesee: Asphalt	Q0- 15856,15924 15815,15939 15758,15932
 Am Orankesee: Parkweg	Q1- 15758,15932 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
-Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8399,12610
+Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8421,12479 8420,12556 8399,12610
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11354,14187 11418,14290
 südliches Spreeufer: kleinteiliges Kopfsteinpflaster	Q1 7670,12576 7710,12585 7745,12603
@@ -6774,9 +6774,12 @@ Schwalbenflug: Asphalt	Q0- 20093,14591 20068,14516 20057,14471 20051,14441
 Annenstr. (Biesdorf): Asphalt	Q0 20371,14204 20467,14196
 Eugen-Roth-Weg: Asphalt	Q0 20072,13070 20068,13036 20048,12830
 Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
-#: by: https://www.berliner-woche.de/friedrichsfelde/c-verkehr/strassenbelag-in-ordnung-bringen_a407286
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php
-#: XXX Wurde hier die Fahrbahn saniert?
+#: by: https://www.berliner-woche.de/friedrichsfelde/c-verkehr/strassenbelag-in-ordnung-bringen_a407286 (Antrag von Februar 2024)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
+#: osm_watch: way id="4689097" version="33"
+#: XXX Wird hier die Fahrbahn saniert?
+#: last_checked: 2025-01-03
+#: check_frequency: 180d
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
 Jaczostr.: Beton	Q0 -4078,11800 -4101,11708
@@ -13881,7 +13884,7 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 #: last_checked: 2024-12-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 vvv
-#: osm_watch: way id="1344518199" version="1"
+#: osm_watch: way id="1344518199" version="2"
 #: XXX hier kommt vermutlich auch noch das Betonpflaster hin
 Am Mühlanger: provisorisch asphaltiert	Q1- 12738,1213 12802,1285
 #: next_check ^^^

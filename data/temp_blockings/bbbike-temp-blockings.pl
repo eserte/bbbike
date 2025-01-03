@@ -17656,11 +17656,11 @@ EOF
 #: source_id: viz2021:13.37679,52.5163,26.12.2023,19:34 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
 #: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024) (inaktiv)
-#: source_id: viz2021:13.371607,52.515899,26.12.2024,06:00 (bis 02.01.2025)
+#: source_id: viz2021:13.371607,52.515899,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
 #: source_id: viz2021:13.37688,52.51775,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
 #: source_id: viz2021:13.379494,52.516456,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
 #: source_id: viz2021:13.37679,52.5163,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
-#: source_id: viz2021:13.37081,52.51779,26.12.2024,06:00 (bis 02.01.2025)
+#: source_id: viz2021:13.37081,52.51779,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
 #: by: https://viz.berlin.de/2020/12/welcome21/
@@ -26935,9 +26935,9 @@ EOF
        data  => <<EOF,
 # REMOVED ---		2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
 # REMOVED ---	3 8369,12609 8373,12416 8391,12389
-# REMOVED ---		3 8391,12389 8400,12417 8399,12610
+# REMOVED ---		3 8391,12389 8400,12417 8421,12479 8420,12556 8399,12610
 # REMOVED ---	3 8391,12389 8373,12416 8369,12609
-# REMOVED ---		3 8399,12610 8400,12417 8391,12389
+# REMOVED ---		3 8399,12610 8420,12556 8421,12479 8400,12417 8391,12389
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau12-13022022/
 	2::temp 8399,12610 8369,12609 8306,12609 8207,12606
 	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
@@ -29156,7 +29156,7 @@ Kleine Querallee	2::temp 8344,12221 8391,12389 8400,12417
 Ahornsteig	2::temp 8522,12187 8538,12245
 (Bremer Weg)	2::temp 8522,12239 8538,12245
 Scheidemannstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
-(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8399,12610
+(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8421,12479 8420,12556 8399,12610
 (Wiese vor dem Reichstag)	2::temp 8373,12416 8369,12609
 Moltkebrücke	2::temp 7930,12912 8021,12832
 Willy-Brandt-Str.	2::temp 8021,12832 8030,12824
@@ -29314,8 +29314,8 @@ EOF
 	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
 	3 8573,12325 8540,12420 8554,12593
 	3 8554,12593 8540,12420 8573,12325
-	3 8391,12389 8400,12417 8399,12610
-	3 8399,12610 8400,12417 8391,12389
+	3 8391,12389 8400,12417 8421,12479 8420,12556 8399,12610
+	3 8399,12610 8420,12556 8421,12479 8400,12417 8391,12389
 	q4::temp 8595,12066 8737,12098
 EOF
      },
@@ -29995,14 +29995,14 @@ EOF
 	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
 	2::temp 8306,12609
 	3 8554,12593 8540,12420 8775,12457
-	3 8399,12610 8400,12417 8391,12389
+	3 8399,12610 8420,12556 8421,12479 8400,12417 8391,12389
 # REMOVED ---	3 8369,12609 8373,12416 8391,12389
 	3 8775,12457 8540,12420 8554,12593
 	3 8327,12174 8344,12221 8391,12389
 	3 7429,12070 7383,12095 7031,12320
 # REMOVED ---	3 8391,12389 8373,12416 8369,12609
 	3 8391,12389 8344,12221 8327,12174
-	3 8391,12389 8400,12417 8399,12610
+	3 8391,12389 8400,12417 8421,12479 8420,12556 8399,12610
 	3 7654,12464 7627,12380 7603,12353
 	3 7603,12353 7627,12380 7654,12464
 	3 8592,12252 8538,12245 8522,12187
@@ -31318,9 +31318,9 @@ EOF
 # REMOVED ---	3 7945,12592 7875,12363 7822,12201
 # REMOVED ---	3 8554,12593 8540,12420 8573,12325
 # REMOVED ---	3 8573,12325 8540,12420 8554,12593
-# REMOVED ---	3 8391,12389 8400,12417 8399,12610
+# REMOVED ---	3 8391,12389 8400,12417 8421,12479 8420,12556 8399,12610
 # REMOVED ---	3 7822,12201 7875,12363 7945,12592
-# REMOVED ---	3 8399,12610 8400,12417 8391,12389
+# REMOVED ---	3 8399,12610 8420,12556 8421,12479 8400,12417 8391,12389
 # REMOVED ---	3 7654,12464 7627,12380 7603,12353
 # REMOVED ---	3 7603,12353 7627,12380 7654,12464
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
@@ -36761,9 +36761,9 @@ EOF
 	3 8522,12239 8538,12245 8344,12221
 	3 7823,12120 7816,12150 7822,12201
 	3 7031,12320 7383,12095 7429,12070
-	3 8391,12389 8400,12417 8399,12610
+	3 8391,12389 8400,12417 8421,12479 8420,12556 8399,12610
 	3 8089,12190 8055,12186 8049,12140
-	3 8399,12610 8400,12417 8391,12389
+	3 8399,12610 8420,12556 8421,12479 8400,12417 8391,12389
 	3 7654,12464 7627,12380 7603,12353
 	3 7429,12070 7383,12095 7031,12320
 	3 8049,12140 8055,12186 8089,12190
@@ -37594,7 +37594,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2024-12-07 (osm)
+#: last_checked: 2025-01-03
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -39506,7 +39506,7 @@ EOF
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
 #: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
-#: last_checked: 2024-12-28 (traffic)
+#: last_checked: 2025-01-03 (traffic)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -40030,7 +40030,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-11-28 (osm)
+#: last_checked: 2025-01-03
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -41409,7 +41409,7 @@ EOF
        text  => 'Koloniestr.: Bauarbeiten an der Schwedenstr., Abschnitt der Fahrbahn ist gesperrt, Radwegführung auf dem Gehweg, voraussichtlich bis Anfang Januar 2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024) (inaktiv) (bis 30.11.2024) (bis 01.11.2024) (bis 03.01.2025)
+#: source_id: viz2021:13.377083,52.55627,01.12.2022,08:00 (bis 31.03.2024) (inaktiv) (bis 30.11.2024) (bis 01.11.2024) (bis 03.01.2025) (bis 28.02.2025)
 #: also_indoor: traffic (B)
 #: note: Baustellenbereich ist etwa 70m lang, Radwegführung auf dem Gehweg fängt bereits früher an, insgesamt ca. 170m; mittlerweile (Juni 2024) ist der gesamte Abschnitt betroffen; mittlerweile (2024-06) ist die Baustelle nach Süden gewandert und nicht sehr lang (q3 -> q2); mittlerweile: Richtung Norden wird man für ca. 180m auf dem Hochbord geführt
 #: note: bei rbb bis 30.11.2024; bei Bing bis 8.4.2024, mittlerweile auch bis November 2024
@@ -42267,7 +42267,7 @@ Kleine Querallee	2::temp 8391,12389 8400,12417
 John-Foster-Dulles-Allee	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
 (Vorfahrt HdKdW)	2::temp 7821,12367 7813,12427 7778,12470 7687,12477 7654,12464 7627,12380
 Scheidemannstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417
-(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8399,12610
+(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8421,12479 8420,12556 8399,12610
 (Wiese vor dem Reichstag)	2::temp 8373,12416 8369,12609
 Willy-Brandt-Str.	2::temp 8021,12832 8030,12824
 Willy-Brandt-Str.	2::temp 8030,12824 8120,12756
@@ -45973,6 +45973,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1508313.php
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (voraussichtliche Bauzeit: 2024 bis 2025 für diese und weitere Brücken: Spektegrabensteg und Südparkbrücke)
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (alternative URL)
 #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/spektebruecke-gesperrt_a431036
 #: by: https://www.tagesspiegel.de/berlin/verkehrsbaustellen-in-spandau-von-morschen-holzbrucken-und-wilden-u-bahntraumen-12824615.html (neun Monate Bauzeit, voraussichtlich bis Ende 2025)
 #: osm_watch: note 4537179 1
