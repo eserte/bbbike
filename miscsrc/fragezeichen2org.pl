@@ -280,6 +280,11 @@ for my $file (@files) {
 		 }
 	     }
 
+	     my $is_researchable_item;
+	     if ($dir->{last_checked} && $dir->{last_checked}[0] =~ /\b(website|research|indoor|traffic)\b/) {
+		 $is_researchable_item = 1;
+	     }
+
 	     # The "subject" of the record, usually the bbd record
 	     # name. For some file types (radwege, ampeln, see above)
 	     # the street or crossing name is prepended.
@@ -559,11 +564,12 @@ for my $file (@files) {
 	     # build first the org-mode headline, and then the
 	     # complete org-mode item ($body)
 	     my $todo_state = @planned_route_files ? 'PLAN' : 'TODO'; # make sure all states have four characters
+	     my $extra_mark = ($expiration_by_nextcheck ? '[!] ' : $is_researchable_item ? '[R] ' : '');
 	     my $headline =
 		 "** $todo_state "
 		 . (defined $nextcheck_date  ? "<$nextcheck_date $nextcheck_wd> " : "                ")
 		 . ($prio                    ? "[$prio] "                         : "") # "     ")
-		 . ($expiration_by_nextcheck ? "[!] "                             : "") # "    ")
+		 . $extra_mark
 		 . $subject
 		 ;
 	     if ($dir->{osm_watch}) {
