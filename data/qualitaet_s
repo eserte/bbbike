@@ -1393,7 +1393,12 @@ Am Berlin Museum: Asphalt	Q0 10032,10752 9829,10830
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671
 (Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster, Regenablaufrinnen	Q2 3643,12671 3748,12627
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3748,12627 3836,12614 3867,12616
-(Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, bei Regen mit Pfützen, teilweise gutes Kopfsteinpflaster	Q1 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
+(Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster	Q1 3867,12616 3888,12618
+(Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3888,12618 4078,12637
+(Rad- und Wanderweg an Spree und Landwehrkanal): Betonpflaster	Q1 4078,12637 4131,12641 4162,12638
+(Rad- und Wanderweg an Spree und Landwehrkanal): Parkweg, bei Regen mit Pfützen	Q1 4162,12638 4299,12590
+(Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542
+(Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster	Q1 4575,12542 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): asphaltähnlicher Belag mit einen gepflasterten Abschnitten	Q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
 (Galvanistr./Iburger Ufer - Uferweg): Parkweg	Q2 4441,12559 4441,12578
 Monbijoupark - Henriette-Herz-Platz: Asphalt	Q0 9955,12915 10084,12921 10132,12941
@@ -1897,7 +1902,7 @@ Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6277,11397 6337,11365 6346,11326
 (südliches Spreeufer): asphaltähnlicher Belag	Q0 5573,12242 5604,12244 5643,12253
 (südliches Spreeufer): unbefestigter Weg	Q2 5643,12253 5714,12290 5770,12346
 (südliches Spreeufer): Kleinsteinpflaster	Q1 5770,12346 5796,12372
-(südliches Spreeufer): Asphalt	Q0 5796,12372 5940,12564
+(südliches Spreeufer): Asphalt	Q0 5796,12372 5927,12546 5940,12564
 (südliches Spreeufer): Kleinsteinpflaster	Q1 5940,12564 5953,12592
 (südliches Spreeufer): Asphalt	Q0 5953,12592 6001,12699 6045,12830 6123,12887
 (südliches Spreeufer): Gehwegplatten	Q1 6123,12887 6182,12900
@@ -9988,7 +9993,8 @@ Halemweg: Asphalt mit einigen Schäden	Q0 2382,14800 2361,14673 2362,14582
 Biedermannweg: Asphalt	Q0 -742,12924 -744,12911 -717,12823 -686,12735
 Brombeerweg: Kleinsteinpflaster	Q1 -629,12862 -612,12809
 Gutsmuthsweg: Asphalt	Q0 -824,12557 -746,12432 -671,12311 -583,12151 -565,12030
-Putlitzstr. (Nebenstraße): Verbundsteinpflaster	Q1 6212,13944 6204,14220
+Putlitzstr. (Nebenstraße): Asphalt	Q0 6212,13944 6210,13998
+Putlitzstr. (Nebenstraße): Verbundsteinpflaster	Q1 6210,13998 6206,14136 6204,14220
 (Sebastianstr./Alexandrinenstr. - Dresdener Str.): Verbundsteinpflaster	Q1 10826,11251 10907,11290 10957,11294 11000,11327
 Olivaer Platz: einige Aufpflasterungen mit Kleinsteinpflaster	Q0 4279,10270 4352,10260 4478,10218
 Nizzastr.: Asphalt	Q0 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12319,21382
@@ -10143,7 +10149,7 @@ Tegeler Insel: Betonplatten	Q0 1611,20405 1616,20432 1725,20464 1733,20470
 Dresdener Str.: Asphalt mit Unebenheiten	Q1 11162,10919 11189,10831
 Gendarmenmarkt: gepflastert	Q1 9523,12019 9656,12031
 Gendarmenmarkt: gepflastert	Q1 9536,11922 9666,11935
-(Cauerstr. - Uferweg): Schotterweg	Q2 4591,12511 4642,12491
+(Cauerstr. - Uferweg): Kleinsteinpflaster	Q1 4591,12511 4642,12491
 Fünf Morgen: Verbundsteinpflaster	Q1 1330,4924 1351,4949 1395,4965 1437,5015 1486,5175
 Cassinohof: Verbundsteinpflaster	Q1 -802,2914 -765,2929 -685,2966
 Cassinohof: Verbundsteinpflaster	Q1 -671,2954 -685,2966 -786,3032 -804,3042
@@ -12423,7 +12429,7 @@ Hattinger Weg: guter Beton	Q0 1510,18429 1540,18543 1568,18539 1597,18532 1603,1
 Canovastr.: Asphalt	Q0 6343,6297 6477,6311
 Wiclefstr.: Kopfsteinpflaster	Q2 5231,13843 5417,13817 5609,13790 5743,13772 5907,13746 6005,13734 6095,13724
 Buchstr.: Asphalt	Q0 6596,14740 6445,14893
-Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
+Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6325,14031 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
 Holsteiner Ufer: Asphalt	Q0 6182,12900 6347,12901 6449,12865 6575,12778
 Holsteiner Ufer: Asphalt	Q0 6575,12778 6639,12701
 Holsteiner Ufer: Asphalt	Q0 6639,12701 6689,12632
@@ -17506,8 +17512,8 @@ Vopeliuspfad: Kopfsteinpflaster	Q2 1345,3023 1228,3210
 (Parkweg Dreipfuhlpark): Parkweg	Q1 1608,4313 1548,4168 1524,4054 1520,4006 1523,3904
 (Parkweg Dreipfuhlpark): Asphalt mit Löchern	Q1 1523,3904 1536,3780
 Westhafenstr.: Kopfsteinpflaster	Q2 6281,14630 6083,14564
-Salzwedeler Str.: Asphalt	Q0 6267,14184 6289,14167
-Salzwedeler Str.: Kopfsteinpflaster	Q2 6289,14167 6394,14085
+Salzwedeler Str.: Asphalt	Q0 6245,14194 6263,14193 6289,14172
+Salzwedeler Str.: Kopfsteinpflaster	Q2 6289,14172 6394,14085
 Havelberger Str.: Kopfsteinpflaster	Q2 6481,14277 6487,14156
 Havelberger Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6487,14156 6489,14071 6494,13861
 Stendaler Str. (Tiergarten): Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6489,14071
@@ -17927,7 +17933,7 @@ Kleine Markusstr.: Beton	Q1 12059,12172 11958,12195 11937,12127
 (nördliches Spreeufer): Parkweg	Q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Parkweg	Q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469
 (nördliches Spreeufer): asphaltiert mit Ablaufrinnen	Q2 5362,12469 5356,12494 5372,12538
-(nördliches Spreeufer): Parkweg	Q1 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
+(nördliches Spreeufer): Parkweg	Q1 5354,12552 5366,12665 5369,12721 5362,12787 5346,12845 5305,12916
 (nördliches Spreeufer): Parkweg mit Kanten	Q2 5657,12339 5607,12307
 Machandelweg: Asphalt	Q0 -446,13035 -363,12997
 Machandelweg: Asphalt, Schäden	Q1; -363,12997 -241,12877

@@ -2670,7 +2670,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-12-11
+#: last_checked: 2025-01-04
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
          'from' => 1719810000,
@@ -3482,7 +3482,32 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://aera.berlin/
+# REMOVED (404) --- #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
+#: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/abriss-hat-begonnen_a388837
+#: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=749078#post749078 (Rückbau der Rauchgasentschwefelungsanlage am Heizkraftwerk Charlottenburg)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/teilabriss-heizkraftwerk-charlottenburg.1423/#post-23000
+#: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
+#: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
+#: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
+#: source_id: viz2021:13.31363,52.52105,26.06.2023,06:00 (bis 30.06.2025)
+#: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024, nun bis 30.06.2025
+#: also_indoor: traffic (H,G,B,W)
+#: last_checked: 2025-01-04
+#: check_frequency: 120d
+#: next_check: 2026-06-30
+# REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
+Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
+# REMOVED (hier nicht) ---	q3::inwork 4071,12720 4124,12721
+',
+         'from' => 1687804758,
+         'id' => 2961,
+         'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Radfahrer sollen absteigen, Bordsteine, voraussichtlich bis Mitte 2026',
+         'type' => 'handicap',
+         'until' => 1782856799
+       },
        undef,
        undef,
        undef,
@@ -3823,9 +3848,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-10-30
+#: last_checked: 2025-01-04
 #: check_frequency: 60d
-#: next_check: 2024-12-31
+#: next_check: 2025-06-30
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => undef,
@@ -4668,27 +4693,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.306069,52.502061,01.01.2022,06:00 (mittlerweile inaktiv) (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
-#: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084
-#: note: vermutlich nur im Bereich Sybelstr. 14
-#: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
-#: osm_watch: way id="1300235970" version="2"
-#: osm_watch: way id="1039329567" version="6"
-#: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-11-04 (architektur-urbanistik)
-# REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
-	2::inwork 3731,10640 3764,10580
-# REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
-',
-         'from' => 1640905200,
-         'id' => 3495,
-         'text' => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4974,13 +4979,13 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: also_indoor: traffic (ex-H,ex-B,ex-T,ex-W)
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2024-12-31 (traffic)
-#: check_frequency: 3d
+#: last_checked: 2025-01-04
+#: check_frequency: 30d
 	q4::inwork; 9011,14019 8870,13926
 ',
          'from' => 1656651600,
          'id' => 3559,
-         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, geplant bis 31.12.2024, evtl. wird verlängert',
+         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5207,7 +5212,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: note: bei rbb mittlerweile entfernt
 #: osm_watch: way id="1094113747" version="2"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-22 (daf)
+#: last_checked: 2025-01-04
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-09-15
@@ -5478,7 +5483,7 @@ Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (re-W,re-G)
-#: last_checked: 2024-11-28
+#: last_checked: 2025-01-04
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -5722,17 +5727,18 @@ Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
 #: osm_watch: note 3834145 5
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
-#: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
-#: last_checked: 2025-01-03 (traffic)
-# REMOVED --- #: check_frequency: 30d
-#: check_frequency: 7d
+#: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
+#: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
+#: last_checked: 2025-01-04
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 ',
          'from' => 1681189200,
          'id' => 3763,
-         'text' => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, Ende der Bauarbeiten unbekannt',
+         'text' => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6262,7 +6268,7 @@ Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-12-23 vvv
+#: last_checked: 2025-01-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6277,8 +6283,11 @@ Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 #: osm_watch[closed]: note 4053376 3
 #: osm_watch: way id="1149365724" version="8"
 #: osm_watch: way id="1149365723" version="7"
+#: XXX Die Charlottenstr. könnte in Kürze freigegeben werden
+#: check_frequency: 14d vvv
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
+#: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6477,7 +6486,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-12-26
+#: last_checked: 2025-01-04
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -6580,13 +6589,15 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2024-11-28 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2025-01-04 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2025-05-31 vvv
-	2::inwork 3867,12616 3888,12618 4131,12641
+	2::inwork 3836,12614 3867,12616 3888,12618 4078,12637 4131,12641
 # REMOVED (hier nicht mehr?)	2::inwork 4340,12578 4441,12578
-	2::inwork 4441,12578 4529,12570 4642,12491
-Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
+hier können Bauzäune den Weg absperren	2::inwork 4299,12590 4340,12578 4441,12578 4529,12570
+	2::inwork 4441,12578 4441,12559
+# REMOVED (offen)	2::inwork 4529,12570 4575,12542 4642,12491
+# REMOVED (offen) --- Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7388,10 +7399,10 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: Halteverbotsschilder am Großen Stern gelten bis zum 31.12.2024
-#: last_checked: 2024-11-27 (mapillary)
+#: note: Halteverbotsschilder am Großen Stern gelten bis zum 31.12.2024; sind mittlerweile abgelaufen, trotz weiterhin aktiver Baustelle
+#: last_checked: 2025-01-04
 #: check_frequency: 30d
-#: next_check: 2024-12-31
+# REMOVED --- #: next_check: 2024-12-31
 	2::inwork 6633,11882 6685,11954
 ',
          'from' => undef,
@@ -7524,7 +7535,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
 #: by: https://entwicklungsstadt.de/bauprojekt-breite-strasse-in-berlin-mitte-kritik-an-der-architektur/
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2024-12-26
+#: last_checked: 2025-01-04
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 	2::inwork 10383,12191 10289,12106
@@ -7536,7 +7547,22 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: ROENNE-2024
+#: source_id: viz2021:13.298976,52.504217,11.11.2024,07:00 (bis 30.12.2024) (inaktiv)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: note: etwa 150m der Fahrbahn sind gesperrt (zurzeit östlicher Abschnitt)
+#: last_checked: 2025-01-04
+#: check_frequency: 60d
+#: next_check: 2025-12-31
+	q3::inwork 3041,10732 3295,10831
+',
+         'from' => 1731218400,
+         'id' => 4214,
+         'text' => 'Rönnestr.: Bauarbeiten zwischen Leonhardtstr. und Holtzendorffstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: next_check_id: ROSEGGER-2024
 #: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
@@ -7686,6 +7712,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hegemeisterbruecke/ (voraussichtliche Bauzeit: IV. Quartal 2024 bis III. Quartal 2025 (Stand Juni 2024))
+#: by: https://www.tagesschau.de/inland/regional/berlin/rbb-verkehrsverwaltung-63-berliner-bruecken-sind-in-schlechtem-zustand-100.html (2026?)
 #: osm_watch: way id="41523366" version="11"
 #: osm_watch: way id="636625917" version="5"
 #: add_fragezeichen: Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?
@@ -7742,6 +7769,21 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'from' => undef,
          'id' => 4233,
          'text' => 'Wintgensstr.: Fahrbahn zwischen Gontermannstr. und Hessenring gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
+#: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum)
+#: also_indoor: traffic (H,G,B,T,W)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2025-01-04
+#: check_frequency: 25d
+	q3::inwork 5069,10662 5047,10381
+',
+         'from' => undef,
+         'id' => 4234,
+         'text' => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
        }

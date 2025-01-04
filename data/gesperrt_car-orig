@@ -307,7 +307,8 @@ Friedrichstr. (Straßenbahn)	3nocross 9262,13111 9269,13060 9279,12953
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross 9225,13389 9293,13366 9371,13333 9415,13315
 Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3nocross 5966,6747 5928,6768 5896,6785 5811,6833
 #: by: rjoop:
-Putlitzstr.	1 6212,13944 6204,14220
+#: confirmed_by: srt
+Putlitzstr.	1 6212,13944 6210,13998 6206,14136 6204,14220
 Bornitzstr.	1 15643,12875 15563,12870
 # REMOVED (dupliziert in gesperrt-orig) --- Treskowallee: Straßenbahntrasse	3nocross 18875,9570 18878,9517 18867,9464 18834,9256 18809,9133
 Washingtonplatz: nur für Taxis	2 8106,13130 8011,13128 7937,13126
@@ -722,7 +723,7 @@ Hundekehlestr.: Mittelstreifen	3nocross 2346,7684 2460,7658 2565,7637
 Lietzenburger Str.	3nocross 5047,10381 5196,10398 5313,10420
 Sybelstr.	1 3981,10590 3883,10585
 Giesebrechtstr.	1 3912,10699 3997,10607
-# REMOVED (im Bereich des Meyerinckplatzes auch für Radfahrer gültig -> gesperrt-orig) --- Giesebrechtstr.	1 3997,10607 4017,10585 4030,10575
+Meyerinckplatz	1 3997,10607 4017,10585 4030,10575
 Giesebrechtstr.	1 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559
 #: note ^^^

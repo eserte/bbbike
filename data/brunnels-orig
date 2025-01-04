@@ -197,7 +197,7 @@ Kaiserin-Augusta-Brücke	Br 4295,13234 4381,13239
 Spandauer-Damm-Brücke	Br 2279,12412 2192,12402 2151,12397
 Knobelsdorffbrücke	Br 2446,11776 2330,11762
 Goerdelersteg	Br 3656,14150 3634,14187 3625,14230 3601,14284 3595,14267
-Gotzkowskybrücke	Br 5244,12864 5287,12900 5298,12910
+Gotzkowskybrücke	Br 5244,12864 5287,12900 5305,12916
 Schloßbrücke	Br 3291,12721 3300,12751 3327,12818
 Weltlingerbrücke	Br 2905,14754 2956,14752
 Mäckeritzbrücke	Br 1232,15804 1232,15717
@@ -367,6 +367,7 @@ Freybrücke	Br -3404,11589 -3381,11583 -3173,11520
 B96a	Br 21656,989 21613,923
 Adlergestell/B96a	Br 21812,1366 21837,1340
 Putlitzbrücke	Br 6226,13951 6228,14077 6230,14184 6230,14212 6230,14246 6231,14308 6281,14630
+Brücke zum Treppenaufgang Putzlitzbrücke	Br 6252,14207 6230,14212
 Föhrer Brücke	Br 6288,14661 6334,14756
 Torfstraßensteg	Br 6824,14821 6847,14735
 # 
@@ -521,7 +522,8 @@ Ringbahnbrücke Oberspree	Br 14443,9988 14546,10124
 Knoten am Flughafen Tegel	Br 2954,16006 2846,15986
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- Fußgängerbrücke Ostkreuz	Br 14787,10972 14764,10877
 Brücke über die Spektelake	Br -7228,15504 -7182,15524
-Brücke über die Wuhle	Br 22171,12965 22196,12961
+#: note: Brücke über die Wuhle
+Fußgängersteg am Stadion Wuhletal	Br 22171,12965 22196,12961
 Brücke über die Wuhle	Br 22263,6185 22238,6195
 Brücke über die Wuhle	Br 22050,6619 22027,6608
 Cecilienbrücke	Br 22295,13530 22246,13551
@@ -567,11 +569,12 @@ Brigittenbrücke	Br 19348,-434 19385,-444
 Parkringbrücke	Br 8670,8370 8666,8305
 Nonnendammbrücke	Br 2149,13775 2176,13703
 #: by: https://www.berliner-woche.de/borsigwalde/c-verkehr/sanierung-der-schneckenbruecke-verzoegert-sich-weiter_a317523 (Sanierung 2022, Dauer vier Monate, evtl. mit Sperrungen "Nutzungseinschränkungen")
-#: XXX laut checkpoint.tagesspiegel Bauarbeiten nicht vor 2023
+#: by: https://www.tagesspiegel.de/berlin/bezirke/schneckentempo-an-der-schneckenbrucke-bei-dieser-sanierung-lasst-sich-der-senat-gaaanz-viel-zeit-8671939.html (Bauarbeiten frühestens 2023)
+#: by: https://www.tagesschau.de/inland/regional/berlin/rbb-verkehrsverwaltung-63-berliner-bruecken-sind-in-schlechtem-zustand-100.html (Erhaltungsmaßnahmen vorgesehen, Zeitraum offen)
 #: XXX Wird es während der Bauarbeiten Sperrungen geben? Wie wird die Situation nach den Bauarbeiten aussehen? (vermutlich unverändert)
 #: also_indoor: search Ernststraßensteg
 #: osm_watch: way id="182526639" version="8"
-#: last_checked: 2024-12-06 (indoor research)
+#: last_checked: 2025-01-04 (indoor research)
 # REMOVED (indoor) --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-12-31

@@ -484,7 +484,7 @@ abschnittsweise mit für Radfahrer freigegebener Busspur, Busspur ist immer gülti
 die letzten 50 Metern sind benutzungspflichtig	RW3; 5081,12458 5016,12332
 	RW3;RW3 5081,12458 5249,12825
 	RW4;RW3 5249,12825 5244,12864
-	RW1;RW2 5244,12864 5287,12900 5298,12910 5316,12928
+	RW1;RW2 5244,12864 5287,12900 5305,12916 5316,12928
 	RW1; 5244,12864 5203,12850
 	RW3; 5203,12850 5244,12864
 	RW2;RW2 5316,12928 5328,13019
@@ -2203,7 +2203,7 @@ provisorische Busspur	RW5; 10550,12096 10512,12039
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
 #: XXX Wie lange bleibt die provisorische Radspur oder Busspur Richtung Spittelmarkt erhalten?
 #: osm_watch: way id="81112790" version="25"
-#: last_checked: 2024-12-23
+#: last_checked: 2025-01-04
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-08-30
 # REMOVED (bis etwa Herbst/Winter 2024) --- provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
@@ -2419,7 +2419,7 @@ neu asphaltiert	RW2; -6492,12574 -6275,12498 -6025,12419 -5518,12259
 #: by: http://farm2.static.flickr.com/1088/815107029_6d7bfb8a42.jpg
 	RW2; -9005,13354 -8892,13351 -8784,13321
 #: by ^^^
-	RW1;RW1 3380,10373 3388,10559 3395,10704
+	RW1;RW1 3380,10373 3389,10567 3395,10704
 # 
 #: note: Radwege/spur am Lützowplatz wegen einer neuen 30er-Zone entfernt
 #: by: https://www.tagesspiegel.de/berlin/bezirke/in-tempo-30-zone-nicht-erlaubt-berliner-bezirksamt-entfernt-radweg-am-lutzwoplatz-10222597.html vvv
@@ -2449,7 +2449,7 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: XXX Nürnberger Str.: mittlerweile gibt es wegen einer Hochbaustelle provisorische Radspuren, aber vermutlich nicht über die gesamte Länge
 #: osm_watch: way id="4491980" version="28"
 #: priority: #B
-#: last_checked: 2024-11-28
+#: last_checked: 2025-01-04
 #: check_frequency: 120d
 provisorische Radspuren	RW3;RW3 5866,10492 6025,10746
 # 
@@ -2459,8 +2459,8 @@ provisorische Radspuren	RW3;RW3 5866,10492 6025,10746
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025)
 #: also_indoor: traffic (ex-B[minor])
-#: last_checked: 2024-09-07
-#: check_frequency: 90d
+#: last_checked: 2025-01-04
+#: check_frequency: 120d
 #: next_check: 2025-12-31
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
@@ -2505,6 +2505,9 @@ teils asphaltiert, teils provisorisch	RW1; 14089,9610 14031,9673
 	RW6;RW6 3117,11852 2953,11830 2728,11805 2547,11788
 	RW6;RW6 4312,11354 4216,11351 4101,11347 3986,11347 3877,11347 3749,11344
 	RW6;RW6 3981,11232 3983,11289 3986,11347 3988,11502
+	RW6;RW6 3988,11502 3864,11484 3717,11462 3571,11451 3522,11447
+	RW6;RW6 3864,11484 3861,11508
+	RW6;RW6 3571,11451 3569,11473
 	RW6;RW6 4331,11554 4155,11527 3988,11502
 	RW6;RW6 4155,11527 4101,11347
 	RW6;RW6 13283,10069 13262,10147 13271,10193 13369,10337
@@ -2697,7 +2700,7 @@ Gehwegplatten/Verbundsteinpflaster, hereinragende parkende Autos	RW1; 5220,14043
 	RW3;RW3 5956,14168 6047,14188
 	RW4;RW3 6047,14188 6074,14194
 #: note: ehemaliger Radweg ist explizit abgesperrt
-	RW3;RW3 6074,14194 6089,14197 6204,14220 6267,14232 6481,14277 6656,14311 6920,14365 7080,14398
+	RW3;RW3 6074,14194 6089,14197 6204,14220 6246,14228 6481,14277 6656,14311 6920,14365 7080,14398
 Radweg nur aufgemalt	RW0; 8197,16809 8127,16894 8079,16953
 vorhandener Radweg ist abgesperrt	RW0; 8079,16953 8127,16894 8197,16809
 	RW1;RW1 8197,16809 8249,16741
@@ -2917,7 +2920,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-01-02 vvv
+#: last_checked: 2025-01-04 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3453,12 +3456,21 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20, Sa+So 9-20 Uhr	RW1; 7383,765
 	RW6;RW6 10453,4518 10558,4394 10550,4320
 	RW6;RW6 11259,4325 11196,4325 11125,4331 11073,4342
 	RW3;RW3 5116,13457 4985,13470 4605,13525 4455,13567 4283,13660
+# 
+#: note: Beusselstr. Richtung Süden
+	RW1; 5043,14671 5051,14606 5086,14504
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19, Sa 8-19 und So 7-15 Uhr	RW1; 5086,14504 5205,14253 5212,14154 5220,14043
+teilweise mit Pollern	RW3; 5220,14043 5225,13958 5231,13843
+	RW3; 5231,13843 5238,13714
+	RW4; 5238,13714 5248,13434 5202,13266 5199,13247 5166,13087
+#: note: Beusselstr. Richtung Norden
+am Anfang ein paar Poller	RW4; 5166,13087 5199,13247
+Busspur gilt Mo-Sa 7-20 Uhr	RW5; 5238,13714 5231,13843 5225,13958
 Gehwegplatten, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5220,14043 5212,14154
 asphaltiert, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5212,14154 5205,14253
 Gehwegplatten, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5205,14253 5086,14504
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19, Sa 8-19 und So 7-15 Uhr	RW1; 5086,14504 5205,14253 5212,14154 5220,14043
 asphaltiert	RW1; 5086,14504 5051,14606 5043,14671
-	RW1; 5043,14671 5051,14606 5086,14504
+# 
 #: by: Wolfhard Schleese (RW1): vvv
 schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos	RW1; 5446,15489 5722,15795
 schmaler Verbundsteinpflasterradweg, kein Unterstreifen gegen parkende Autos	RW1; 5722,15795 5907,16000
@@ -4078,14 +4090,6 @@ Gehwegplatten	RW1; 8595,8827 8594,8777
 Grünbeschichtung	RW3; 8598,9074 8598,9269
 Grünbeschichtung, Fahrradschleuse, asphaltierter Radweg auf dem Hochboard für rechtsabbiegende Radfahrer	RW3; 8598,9269 8595,9495
 Grünbeschichtung	RW3; 8595,9495 8598,9269 8598,9074
-#: by: rjoop
-#: confirmed_by: Daniel Pepper ("seit April 2008") + srt
-Grünbeschichtung	RW3; 3761,12298 3757,12372
-	RW3; 3757,12372 3747,12495 3741,12607 3738,12639 3734,12715
-	RW3; 3734,12715 3738,12639 3741,12607 3747,12495 3757,12372 3761,12298
-	RW3; 3711,13210 3711,13098 3714,12949
-	RW4; 3714,12949 3716,12925 3734,12715
-	RW3; 3734,12715 3716,12925 3714,12949 3711,13098 3711,13210
 	RW3; 3711,13210 3710,13290
 Busspur ist immer gültig	RW5; 3710,13290 3711,13210
 	RW3;RW3 3710,13290 3719,13346
@@ -5945,7 +5949,9 @@ asphaltiert	RW1; 17169,11677 17020,11748
 #: by: Andreas Mühlhausen:
 #: confirmed_by: srt
 	RW6;RW6 1054,3107 1065,3081 1262,2975
-	RW6;RW6 6487,14156 6489,14071 6494,13861
+	RW6;RW6 6481,14277 6487,14156 6489,14071 6494,13861
+	RW6;RW6 6325,14031 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
+	RW6;RW6 6263,14193 6289,14172 6394,14085
 	RW6;RW6 6719,14047 6489,14071
 	RW6;RW6 7187,13126 7356,13213 7500,13283
 	RW6;RW6 7573,13149 7500,13283 7426,13420
@@ -5970,12 +5976,21 @@ asphaltiert	RW1; 17169,11677 17020,11748
 	RW6;RW6 2795,12480 2817,12334 2658,12312
 	RW6;RW6 7441,15909 7279,16057 7158,16167 7051,16264
 	RW6;RW6 7279,16057 7294,16068 7474,16086
-#: note: Richard-Wagner-Str., Richtung Süden
-Grünbeschichtung, relativ breit	RW3; 3761,12298 3767,12217
-Grünbeschichtung, relativ breit	RW4; 3767,12217 3778,12104 3786,12014 3801,11858 3837,11760 3843,11659
-#: note: Richard-Wagner-Str., Richtung Norden
+#: note: Sömmeringstr., Wintersteinstr., Richard-Wagner-Str. Richtung Süden (Opernroute Nord)
+Grün/Rotbeschichtung	RW4; 3711,13210 3711,13098 3714,12949 3716,12925
+Grünbeschichtung, teilweise mit niedrigen Pollern	RW4; 3716,12925 3734,12715
+	RW4; 3734,12715 3738,12639 3741,12607
+Grünbeschichtung, teilweise mit niedrigen Pollern	RW4; 3741,12607 3747,12495
+	RW4; 3747,12495 3757,12372 3761,12298
+Grünbeschichtung, relativ breit	RW4; 3761,12298 3767,12217 3778,12104 3786,12014 3801,11858 3837,11760 3843,11659
+#: note: Richard-Wagner-Str., Wintersteinstr., Sömmeringstr., Richtung Norden
 Grünbeschichtung, relativ breit	RW4; 3843,11659 3837,11760 3801,11858 3786,12014
 Grünbeschichtung, relativ breit	RW3; 3786,12014 3778,12104 3767,12217 3761,12298
+Grünbeschichtung	RW4; 3761,12298 3757,12372 3747,12495
+Grünbeschichtung, teilweise mit niedrigen Pollern	RW4; 3747,12495 3741,12607
+	RW4; 3741,12607 3738,12639 3734,12715
+Grün/Rotbeschichtung	RW4; 3734,12715 3716,12925 3714,12949 3711,13098
+	RW3; 3711,13098 3711,13210
 # 
 	RW7;RW7 3801,11858 3976,11869 3969,11675
 # 
@@ -7818,7 +7833,7 @@ asphaltiert	RW1; 15541,16479 15437,16491
 	RW1; 16880,16064 16961,16042
 # 
 # REMOVED --- #: XXX Grünbeschichtung in der Joachim-Friedrich-Str. in Ausführung --- zurzeit ist ein Teilstück zwischen Ku'damm und Damaschkestr. Richtung Norden markiert vvv --- #: by: https://www.infravelo.de/projekt/joachim-friedrich-strasse/ --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.850400.php (bis Ende Oktober 2019) --- #: by: https://api.fixmyberlin.de/api/projects/405 (noch "execution") --- #: by: https://twitter.com/GBinfraVelo/status/1271063151140880385 (leider unklar, ob der Kracauerplatz auch dazugehört) --- #: source_id: 2147345150 (bis 25. November 2019) --- #: priority: #D vvv --- #: last_checked: 2020-04-25 vvv
-Grünbeschichtung	RW3;RW4 3123,10504 3108,10548 3093,10594
+Grünbeschichtung	RW3;RW4 3123,10504 3106,10554 3093,10594
 Grünbeschichtung	RW3;RW3 3119,10386 3123,10504
 #: note: in Südrichtung hoffnungslos zugeparkt (gesehen: 2013-10-22, 2013-12-21, 2014-05-24, 2019-08-04 (So!))
 #: note: in Nordrichtung ebenso (gesehen: 2014-05-24)
@@ -8049,9 +8064,6 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 	RW1; 3920,1293 3895,1219
 	RW6;RW6 6363,4047 6428,4076 6493,4105 6517,4051 6452,4024 6428,4076
 10km/h	RW6;RW6 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277 17422,17288
-Busspur gilt Mo-Sa 7-20 Uhr	RW5; 5238,13714 5231,13843 5225,13958
-teilweise mit Pollern	RW3; 5220,14043 5225,13958 5231,13843
-	RW3; 5231,13843 5238,13714
 	RW4; 7714,13223 7759,13246
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18718,8583 18704,8427 ---	RW0; 18718,8583 18704,8427
 neu asphaltiert	RW2; 18737,8686 18727,8634 18718,8583 18704,8427 18718,8583
@@ -8641,7 +8653,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/nach-androhung-von-zwangsauszug-losung-fur-radweg-auf-der-berliner-kantstrasse-verzogert-sich-12847046.html (Verstetigung westlich der Wilmersdorfer Str., weiter keine Lösung im östlichen Abschnitt)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/platz-fuer-alle-auf-der-kantstrasse_a432687
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
-#: last_checked: 2024-11-28 vvv
+#: last_checked: 2025-01-04 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
@@ -9288,4 +9300,6 @@ Verbundsteinpflaster	RW2; 21171,222 21115,271
 	RW6;RW6 21126,-273 21045,-330 21089,-378 21138,-428
 # 
 	RW6;RW6 17741,2824 17688,2744 17471,2872 17569,2987
+# 
+	RW6;RW6 6204,14220 6206,14136
 # 

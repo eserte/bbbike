@@ -22258,7 +22258,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-12-11
+#: last_checked: 2025-01-04
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
      },
@@ -28346,7 +28346,7 @@ EOF
 EOF
      },
      { from  => 1687804758, # 1644676199, # 1527186848, # 2018-05-24 20:34
-       until => $isodate2epoch->("2024-12-31 23:59:59"), # $isodate2epoch->("2023-04-14 17:00:00"), # undef, # 1559170418, # undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
+       until => $isodate2epoch->("2026-06-30 23:59:59"), # $isodate2epoch->("2023-04-14 17:00:00"), # undef, # 1559170418, # undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
        text  => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Radfahrer sollen absteigen, Bordsteine, voraussichtlich bis Mitte 2026',
        type  => 'handicap',
        data  => <<EOF,
@@ -28362,7 +28362,7 @@ EOF
 #: source_id: viz2021:13.31363,52.52105,26.06.2023,06:00 (bis 30.06.2025)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024, nun bis 30.06.2025
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2024-11-28
+#: last_checked: 2025-01-04
 #: check_frequency: 120d
 #: next_check: 2026-06-30
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -30522,9 +30522,9 @@ EOF
 #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2024-10-30
+#: last_checked: 2025-01-04
 #: check_frequency: 60d
-#: next_check: 2024-12-31
+#: next_check: 2025-06-30
 	2::inwork 3231,12749 3332,12742
 EOF
      },
@@ -34164,7 +34164,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: rbb
-	q4::inwork 3618,10283 3614,10564
+	q4::inwork 3618,10283 3613,10576
 EOF
      },
      { from  => 1624917600, # 2021-06-29 00:00
@@ -35390,7 +35390,7 @@ EOF
 EOF
      },
      { from  => 1640905200, # 2021-12-31 00:00
-       until => undef, # $isodate2epoch->("2024-08-31 18:00:00"), # 1672527600, # 2023-01-01 00:00
+       until => 1735998265, # undef, # $isodate2epoch->("2024-08-31 18:00:00"), # 1672527600, # 2023-01-01 00:00
        text  => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt', # vom 01.01.2022 bis 31.08.2024',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -35402,8 +35402,7 @@ EOF
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: osm_watch: way id="1300235970" version="2"
 #: osm_watch: way id="1039329567" version="6"
-#: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2024-11-04 (architektur-urbanistik)
+# REMOVED (beendet) --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-04 (architektur-urbanistik)
 # REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
 	2::inwork 3731,10640 3764,10580
 # REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
@@ -35602,7 +35601,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 # REMOVED (keine Sperrungen mehr zu erwarten) --- #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv --- #: XXX laut daf wird südlich Flotowstr. erst weitergemacht, wenn die Uferwand saniert ist --- #: add_fragezeichen: Ist der Uferweg noch immer wegen Bauarbeiten gesperrt? vvv --- #: last_checked: 2023-07-22 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-02-12 vvv --- #: osm_watch: way id="4993234" version="22"
-	2::inwork 5714,12290 5770,12346 5796,12372 5940,12564
+	2::inwork 5714,12290 5770,12346 5796,12372 5927,12546 5940,12564
 # REMOVED --- #: XXX laut osm hier fertiggestellt, aber es sind weiterhin Bauarbeiten und Sperrungen möglich --- #: osm_watch: way id="4410535" version="28"
 	2::inwork 5940,12564 5953,12592 6001,12699 6045,12830 6123,12887 6182,12900
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^ --- #: XXX ^^^
@@ -36370,7 +36369,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (nicht mehr gesehen) --- #: also_indoor: traffic (none) --- #: last_checked: 2022-05-28 (mapillary)
-	q4::inwork; 3603,10765 3614,10564
+	q4::inwork; 3603,10765 3613,10576
 EOF
      },
      { from  => 1654031041, # 2022-05-31 23:04
@@ -36421,7 +36420,8 @@ EOF
      },
      { from  => $isodate2epoch->("2022-07-01 07:00:00"), # 1655010000, # 2022-06-12 07:00
        until => undef, # $isodate2epoch->("2024-12-31 17:00:00"), # 1656514800, # 2022-06-29 17:00
-       text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, geplant bis 31.12.2024, evtl. wird verlängert',
+#      text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, geplant bis 31.12.2024, evtl. wird verlängert',
+       text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.38248,52.53138,13.06.2022,07:00 (inaktiv)
@@ -36430,8 +36430,8 @@ EOF
 #: also_indoor: traffic (ex-H,ex-B,ex-T,ex-W)
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2024-12-31 (traffic)
-#: check_frequency: 3d
+#: last_checked: 2025-01-04
+#: check_frequency: 30d
 	q4::inwork; 9011,14019 8870,13926
 EOF
      },
@@ -37553,7 +37553,7 @@ EOF
 #: note: bei rbb mittlerweile entfernt
 #: osm_watch: way id="1094113747" version="2"
 #: also_indoor: traffic (none)
-#: last_checked: 2024-10-22 (daf)
+#: last_checked: 2025-01-04
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-09-15
@@ -38488,7 +38488,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (re-W,re-G)
-#: last_checked: 2024-11-28
+#: last_checked: 2025-01-04
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -39492,7 +39492,7 @@ EOF
      { from  => 1681189200, # 2023-04-11 07:00
        until => undef, # $isodate2epoch->("2024-05-24 23:59:59"), # 1693447200, # 2023-08-31 04:00
        #dont_check_date => 1,
-       text  => 'Mommsenstr.: Bauarbeiten in Höhe Leibnizstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, Ende der Bauarbeiten unbekannt', # voraussichtlich bis 24.05.2024', # war: ... zwischen Hindemithplatz und Wielandstr. ...
+       text  => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, Ende der Bauarbeiten unbekannt', # voraussichtlich bis 24.05.2024', # war: ... zwischen Hindemithplatz und Wielandstr. ...
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023) (inaktiv)
@@ -39505,10 +39505,11 @@ EOF
 #: osm_watch: note 3834145 5
 #: osm_watch: note 3834144 2
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
-#: note: mittlerweile (2024-11-28) ist noch immer offiziell die Einfahrt zu beiden Seiten verboten, aber es existiert schon eine benutzbare Fahrgasse
-#: last_checked: 2025-01-03 (traffic)
-# REMOVED --- #: check_frequency: 30d
-#: check_frequency: 7d
+#: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
+#: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
+#: last_checked: 2025-01-04
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
@@ -41894,7 +41895,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2024-12-23 vvv
+#: last_checked: 2025-01-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -41909,8 +41910,11 @@ Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 #: osm_watch[closed]: note 4053376 3
 #: osm_watch: way id="1149365724" version="8"
 #: osm_watch: way id="1149365723" version="7"
+#: XXX Die Charlottenstr. könnte in Kürze freigegeben werden
+#: check_frequency: 14d vvv
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
+#: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -42776,7 +42780,7 @@ EOF
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2024-12-26
+#: last_checked: 2025-01-04
 #: check_frequency: 90d
 #: next_check: 2025-03-01
 	q4::inwork 10385,13348 10341,13376
@@ -43066,13 +43070,15 @@ EOF
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2024-11-28 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2025-01-04 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2025-05-31 vvv
-	2::inwork 3867,12616 3888,12618 4131,12641
+	2::inwork 3836,12614 3867,12616 3888,12618 4078,12637 4131,12641
 # REMOVED (hier nicht mehr?)	2::inwork 4340,12578 4441,12578
-	2::inwork 4441,12578 4529,12570 4642,12491
-Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
+hier können Bauzäune den Weg absperren	2::inwork 4299,12590 4340,12578 4441,12578 4529,12570
+	2::inwork 4441,12578 4441,12559
+# REMOVED (offen)	2::inwork 4529,12570 4575,12542 4642,12491
+# REMOVED (offen) --- Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -45506,10 +45512,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: Halteverbotsschilder am Großen Stern gelten bis zum 31.12.2024
-#: last_checked: 2024-11-27 (mapillary)
+#: note: Halteverbotsschilder am Großen Stern gelten bis zum 31.12.2024; sind mittlerweile abgelaufen, trotz weiterhin aktiver Baustelle
+#: last_checked: 2025-01-04
 #: check_frequency: 30d
-#: next_check: 2024-12-31
+# REMOVED --- #: next_check: 2024-12-31
 	2::inwork 6633,11882 6685,11954
 EOF
      },
@@ -45796,7 +45802,7 @@ EOF
 #: by: https://entwicklungsstadt.de/bauprojekt-breite-strasse-in-berlin-mitte-kritik-an-der-architektur/
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2024-12-26
+#: last_checked: 2025-01-04
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 	2::inwork 10383,12191 10289,12106
@@ -45813,13 +45819,19 @@ EOF
 EOF
      },
      { from  => 1731218400, # 2024-11-10 07:00
-       until => 1735578000, # 2024-12-30 18:00
-       text  => 'Rönnestr.: Bauarbeiten zwischen Leonhardtstr. und Holtzendorffstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.11.2024 07:00 bis 30.12.2024 18:00',
+       until => undef, # 1735578000, # 2024-12-30 18:00
+#      text  => 'Rönnestr.: Bauarbeiten zwischen Leonhardtstr. und Holtzendorffstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.11.2024 07:00 bis 30.12.2024 18:00',
+       text  => 'Rönnestr.: Bauarbeiten zwischen Leonhardtstr. und Holtzendorffstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROENNE-2024
 #: source_id: viz2021:13.298976,52.504217,11.11.2024,07:00 (bis 30.12.2024) (inaktiv)
-	q4::inwork 3041,10732 3295,10831 3291,10853
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: note: etwa 150m der Fahrbahn sind gesperrt (zurzeit östlicher Abschnitt)
+#: last_checked: 2025-01-04
+#: check_frequency: 60d
+#: next_check: 2025-12-31
+	q3::inwork 3041,10732 3295,10831
 EOF
      },
      { from  => 1731304800, # 2024-11-11 07:00
@@ -45990,6 +46002,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hegemeisterbruecke/ (voraussichtliche Bauzeit: IV. Quartal 2024 bis III. Quartal 2025 (Stand Juni 2024))
+#: by: https://www.tagesschau.de/inland/regional/berlin/rbb-verkehrsverwaltung-63-berliner-bruecken-sind-in-schlechtem-zustand-100.html (2026?)
 #: osm_watch: way id="41523366" version="11"
 #: osm_watch: way id="636625917" version="5"
 #: add_fragezeichen: Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?
@@ -46081,6 +46094,20 @@ EOF
 #: check_frequency: 30d
 #: next_check: 2028-12-31
 	q4::inwork 8384,7915 8260,7911
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), Ende der Sperrung unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
+#: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum)
+#: also_indoor: traffic (H,G,B,T,W)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2025-01-04
+#: check_frequency: 25d
+	q3::inwork 5069,10662 5047,10381
 EOF
      },
     );
