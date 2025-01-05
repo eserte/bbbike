@@ -3457,10 +3457,10 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-11-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-01-06 23:59:59"), # 1357513199, # 2013-0
+       until => $isodate2epoch->("2025-01-12 22:00:00"), # 1357513199, # 2013-0
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 25. November 2024 bis 05. Januar 2025',
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 25. November 2024 bis voraussichtlich 12. Januar 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
@@ -31437,7 +31437,7 @@ EOF
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2024-12-31 (traffic) vvv
+#: last_checked: 2025-01-05 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -36047,7 +36047,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2024-12-18
+#: last_checked: 2025-01-05
 #: check_frequency: 30d
 #: next_check: 2025-03-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -39502,8 +39502,8 @@ EOF
 #: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024) (inaktiv)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
-#: osm_watch: note 3834145 5
-#: osm_watch: note 3834144 2
+#: osm_watch: note 3834145 6
+#: osm_watch: note 3834144 3
 #: also_indoor: traffic (B,T,ex-H,re-G,re-W)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
@@ -44985,7 +44985,7 @@ EOF
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 3
-#: last_checked: 2024-12-24 (indoor)
+#: last_checked: 2025-01-05 (indoor)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -45071,7 +45071,8 @@ EOF
        until => undef, # 1730224713, # undef, # XXX
 #      text  => 'Eingänge Allerstr. und Okerstr.: wegen Bauarbeiten gesperrt',
 #      text  => 'Eingang Kienitzer Str.: wegen Bauarbeiten gesperrt',
-       text  => 'Tempelhofer Feld, Eingänge Herrfurthstr. und Leinestr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
+#      text  => 'Tempelhofer Feld, Eingänge Herrfurthstr. und Leinestr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
+       text  => 'Tempelhofer Feld, Eingang Herrfurthstr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
@@ -45080,7 +45081,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2024-12-24 (website) vvv
+#: last_checked: 2025-01-05 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
@@ -45089,7 +45090,7 @@ EOF
 #: osm_watch: note 4425036 1
 Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
 Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
-Leinestr.	2::inwork 11558,7438 11547,7432
+# REMOVED (nicht mehr als gesperrt gelistet) --- Leinestr.	2::inwork 11558,7438 11547,7432
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -45218,19 +45219,20 @@ EOF
 EOF
      },
      { from  => 1726956000, # 2024-09-22 00:00
-       until => $isodate2epoch->("2025-01-05 18:00:00"), # 1742749200, # 2025-03-23 18:00
+       until => $isodate2epoch->("2025-02-28 18:00:00"), # 1742749200, # 2025-03-23 18:00
 #       text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich ab 23.09.2024 bis zum Frühjahr 2025',
-       text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der nördlichen Fahrbahn, voraussichtlich bis 05.01.2025',
+       text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der nördlichen Fahrbahn, voraussichtlich bis 28.02.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KARLMARXPLATZ-2024
 #: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23, 2024-10-30, 2024-11-27) ist die Fahrbahn aufgerissen
+#: note: Halteverbotsschilder bis 28.2.2025
 #: also_indoor: traffic (none)
 #: osm_watch: way id="36983903" version="33"
 #: osm_watch: way id="1002238498" version="9"
-#: last_checked: 2024-12-18
-#: check_frequency: 60d
-#: next_check: 2025-01-05
+#: last_checked: 2025-01-05
+#: check_frequency: 30d
+#: next_check: 2025-02-28
 	q4::inwork 12972,7602 13100,7626
 EOF
      },
