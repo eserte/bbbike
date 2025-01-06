@@ -16,18 +16,6 @@
 # 
 #: temporary vvv
 # 
-#: next_check_id: WOLLANK-2024
-#: also_indoor: traffic
-#: last_checked: 2024-12-09 (mapillary) vvv
-#: next_check: 2025-01-06 vvv
-#: valid: 20241126-20241220 vvv
-Provinzstr.	Jam; 8514,17634 8536,17786 8555,17928 8571,18037 8580,18106 8583,18127 8597,18214 8610,18309 8622,18402 8628,18441 8647,18567 8648,18585 8660,18679 8668,18744
-Straße vor Schönholz	Jam; 8791,18605 8668,18744
-Straße vor Schönholz	Jam; 8412,19074 8482,18986 8634,18787
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-# 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1471535.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1473684.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492094.php
@@ -315,6 +303,12 @@ Maybachufer	Jam; 12764,9433 12563,9536
 Rathausstr./Alarichstr.	Jam; 9021,3878 9003,3947 8962,4096 8932,4188 8881,4360 8868,4498 8867,4506 8858,4579 8848,4683 8827,4874 8813,5004 8784,5095 8750,5173 8707,5289 8674,5357 8667,5372 8642,5422
 #: note: Stau Richtung Süden eher nachmittags
 Rathausstr./Alarichstr.	Jam; 8674,5357 8707,5289 8750,5173 8784,5095 8813,5004 8827,4874 8848,4683 8858,4579 8867,4506 8868,4498 8881,4360 8932,4188 8962,4096 9003,3947
+# 
+# REMOVED --- #: next_check_id: WOLLANK-2024 --- #: also_indoor: traffic --- #: last_checked: 2024-12-09 (mapillary) vvv --- #: next_check: 2025-01-06 vvv --- #: valid: 20241126-20241220 vvv
+Provinzstr.	Jam; 8648,18585 8660,18679 8668,18744
+Straße vor Schönholz	Jam; 8791,18605 8668,18744 8634,18787
+Straße vor Schönholz	Jam; 8412,19074 8482,18986 8634,18787 8668,18744
+# REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 ######################################################################
 # Unconfirmed (too few data)

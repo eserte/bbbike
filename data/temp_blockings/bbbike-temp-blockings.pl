@@ -42861,9 +42861,10 @@ EOF
 #: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024) (bis 31.12.2024) (inaktiv)
 #: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024) (inaktiv)
 #: source_id: viz2021:13.302665,52.521272,12.08.2024,07:00 (bis 30.06.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.30625,52.52024,06.01.2025,06:46 (bis 30.06.2025)
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
-#: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt
+#: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
 	q4::inwork 3450,12722 3370,12725 3291,12721
 EOF
      },
@@ -44404,14 +44405,19 @@ EOF
 EOF
      },
      { from  => 1719941867, # 2024-07-02 19:37
-       until => 1735686000, # 2025-01-01 00:00
-       text  => 'Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Sperrung, bis Dezember 2024',
+       until => $isodate2epoch->("2025-10-31 18:00:00"), # 1735686000, # 2025-01-01 00:00
+       text  => 'Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Sperrung, voraussichtlich bis Oktober 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462140.php
 #: by: https://mierendorffinsel.org/projekte/aktuelle-projekte/insel-rundweg/
+#: by: https://mierendorffinsel.org/2024/07/umgestaltung-eines-teilbereiches-der-mierendorff-insel-inselrundweg-teilweise-gesperrt/
+#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=772392#post772392 (bis Oktober 2025)
 #: note: 2024-09-18: Bauzäune sind weggeschoben
 #: osm_watch: way id="746470210" version="3"
+#: last_checked: 2025-01-05 (daf)
+#: check_frequency: 120d
+#: next_check: 2025-10-31
 	2::inwork 4151,13961 4156,13914 4186,13710
 EOF
      },
@@ -44592,6 +44598,7 @@ EOF
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/arbeiten-an-der-schildower-strasse-dauern-18-monate_a421648
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/durchgangsverkehr-weicht-in-nebenstrassen-im-waldseeviertel-aus_a425864
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12916 (Einwohneranfrage)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12985 (Einwohneranfrage)
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
 #: next_check: 2025-04-30 vvv
 Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233

@@ -1649,7 +1649,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: source_id: viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="27"
-#: last_checked: 2024-12-30 vvv
+#: last_checked: 2025-01-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 vvv
@@ -1668,7 +1668,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="45"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2024-12-30 vvv
+#: last_checked: 2025-01-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-03-31 vvv
@@ -6418,6 +6418,7 @@ Gehweg für Radfahrer frei	RW1; 15904,12340 15928,12483 15947,12626
 Gehweg für Radfahrer frei, holpriges Verbundsteinpflaster	RW1; 15947,12626 15952,12679 15953,12753 15951,12832
 #: historical_note: Radspur gibt es seit Herbst 2024, davor war hier der Gehweg für Radfahrer frei
 	RW4?; 15951,12832 15950,12886
+	RW4; 15950,12886 15951,12832
 gemeinsamer Geh- und Radweg, die letzten 50 Meter getrennter Rad- und Gehweg	RW2; 18216,11656 18215,11690 18215,12123
 	RW4; 18215,11690 18216,11656 18263,11393 18280,11266
 asphaltiert	RW1; 18215,12123 18215,11690
@@ -7665,9 +7666,8 @@ asphaltiertes Straßenbahnkap	RW1; 14661,12798 14731,12809
 	RW3; 15010,12855 15098,12849
 asphaltiertes Straßenbahnkap	RW1; 15098,12849 15117,12846 15169,12839
 Grünbeschichtung	RW3; 15169,12839 15233,12829
-provisorischer getrennter Rad- und Gehweg auf der Fahrbahn	RW4; 15233,12829 15357,12813
-	RW4; 15357,12813 15367,12815
-	RW4; 15367,12815 15417,12823
+relativ breit	RW3; 15233,12829 15357,12813
+relativ breit	RW4; 15357,12813 15367,12815 15417,12823
 asphaltiertes Straßenbahnkap	RW2; 15417,12823 15469,12831
 	RW3; 15469,12831 15516,12838
 #: note Scheffelstr./Eldenaer Str., Richtung Westen ##########

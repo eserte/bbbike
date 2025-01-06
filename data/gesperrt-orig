@@ -4725,16 +4725,17 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-neubau-mehrfamilienhaus-wohnanlage-parkstadt-karlshorst-berlin-deutschland-637598.html
-#: last_checked: 2024-12-13 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="16"
+#: last_checked: 2025-01-05 (osm)
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="11"
+#: last_checked: 2024-12-13
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 # REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17639,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
@@ -4750,7 +4751,6 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 # REMOVED (hier nicht mehr) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17755,8519 17628,8556
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="1061057021" version="10" --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17773,8588 17648,8626
 # REMOVED (vermutlich nicht mehr) --- #: osm_watch: way id="1061057024" version="10" --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17608,8483 17682,8464 17738,8450
-#: last_checked ^^^
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/arbeiten-fuer-parkstadt-karlshorst-gehen-voran_a418592 (bis Ende 2024)
