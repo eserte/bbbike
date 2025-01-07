@@ -10,6 +10,14 @@
 # 
 ### Friedrichshain ###
 # 
+#: also_indoor: traffic (B,T)
+#: note: Halteverbotsschilder bis 30.06.2025, vermutlich Hochbauarbeiten
+#: last_checked: 2025-01-07
+#: check_frequency: 60d
+#: next_check: 2025-06-30
+#: valid: -20250630
+Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
+# 
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
@@ -117,7 +125,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-06
+#: last_checked: 2025-01-07
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -760,7 +768,7 @@ Sangeallee: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Engstelle	q3::inwork 1
 #: osm_watch: note 3913793 9
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
-#: last_checked: 2024-11-29 (architektur-urbanistik)
+#: last_checked: 2025-01-02 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2026-12-31
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489

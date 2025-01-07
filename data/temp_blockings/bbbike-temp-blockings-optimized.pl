@@ -3664,22 +3664,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1499735.php (ab 4.11.2024 für ca. 2 Monate, Fertigstellung noch 2024)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/umleitung-des-rad-und-fussverkehrs-am-paul-schwarz-promenade.png (auch der Bäkepark ist betroffen)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/kein-durchkommen_a428980
-	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095 5282,4145 5337,4192
-	2::inwork 4947,3672 4910,3599 4822,3431 4815,3382 4778,3352
-Bäkepark	2::inwork 5225,4095 5184,4161 5131,4207
-# REMOVED (hier offen) --- Bäkepark	2::inwork 5131,4207 5097,4221 5063,4266
-# REMOVED (hier offen) --- Bäkepark	2::inwork 5131,4207 5161,4206 5239,4175 5282,4145
-',
-         'from' => 1730674800,
-         'id' => 3032,
-         'text' => 'Paul-Schwarz-Promenade: Bauarbeiten, Sperrung zwischen Bäkepark und Krahmerstr., voraussichtlich bis zum 07.01.2025',
-         'type' => 'gesperrt',
-         'until' => 1736233200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4937,9 +4922,10 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.493726,52.636024,21.07.2023,14:00 (nur Kfz-Verkehr, bis 31.01.2024) (inaktiv)
 #: source_id: viz2021:13.492699,52.636637,16.06.2023,10:00 (nur Kfz-Verkehr, bis 14.07.2023) (bis 21.07.2023) (bis 25.07.2023) (inaktiv)
 #: source_id: viz2021:13.493726,52.636024,25.07.2023,14:00 (bis 31.01.2024) (bis 06.12.2023) (inaktiv)
-#: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024) (bis 31.12.2024) (bis 08.01.2025) (bis 28.02.2025)
+#: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024) (bis 31.12.2024) (bis 08.01.2025) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
+#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (bis 28.02.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -4978,16 +4964,18 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: osm_watch: way id="364468604" version="14"
 #: also_indoor: traffic (ex-H,ex-B,ex-T,ex-W)
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
+#: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
 #: last_checked: 2025-01-04
 #: check_frequency: 30d
+#: next_check: 2025-01-08
 	q4::inwork; 9011,14019 8870,13926
 ',
          'from' => 1656651600,
          'id' => 3559,
-         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, Ende der Bauarbeiten unbekannt',
+         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, voraussichtlich bis 8.1.2025',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1736355600
        },
        undef,
        undef,
@@ -6130,7 +6118,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025) (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
 #: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025)
-#: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025)
+#: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="34"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11). Radfahrer benutzen hier die Fahrbahn.
 #: last_checked: 2024-12-14 (osm) vvv
@@ -6788,7 +6776,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-01-01
+#: last_checked: 2025-01-07
 #: next_check: 2025-03-28
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -7473,17 +7461,19 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #: by[nocache]: https://x.com/Aintschie/status/1833937985588650466 (etwa 100m betroffen?)
 #: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
 #: source_id: bvg2024:x83#HIM_FREETEXT_238226
-#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025)
+#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten)
 #: osm_watch: note 4441243 4
 #: osm_watch: note 4441280 1
+#: also_indoor: traffic (H,G,B,T,W)
 #: note: etwa 80m der Fahrbahn sind gesperrt, nur der nordöstliche Bürgersteig ist offen
+#: next_check: 2025-01-10
 	q4::inwork 4671,5697 4520,5793
 ',
          'from' => 1726092000,
          'id' => 4203,
-         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, vom 12.09.2024 bis 07.01.2025',
+         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, mindestens bis 10.01.2025, voraussichtlich wird verlängert',
          'type' => 'handicap',
-         'until' => 1736290799
+         'until' => undef
        },
        undef,
        undef,
@@ -7783,6 +7773,17 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: 246002279 (bis 21.02.2025)
+	2::inwork 24749,22618 24719,22727
+	2::inwork 24718,22731 24761,23151
+',
+         'from' => 1739682000,
+         'id' => 4235,
+         'text' => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 17.02.2025 06:00 Uhr bis 21.02.2025 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1740157200
        }
      
 );
