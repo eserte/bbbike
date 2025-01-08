@@ -93,7 +93,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-100ve/7-100-ve_3-2_vorhabenbezogener-bebauungsplan.pdf
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="22"
-#: last_checked: 2024-11-27 (mapillary)
+#: last_checked: 2025-01-08
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -4543,12 +4543,13 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 #: osm_watch: node id="1736425250" version="5"
 #: last_checked: 2024-08-20 (okas)
 # REMOVED --- #: check_frequency: 360d
-#: next_check: 2025-04-15
+#: next_check: 2026-10-01
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #
 #: next_check_id: U6-2022
 #: last_checked: 2024-08-20 (okas)
-#: next_check: 2025-04-15
+#: check_frequency: 120d
+#: next_check: 2026-10-01
 Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
 # 
 # REMOVED (kein Gerüst mehr) --- #: next_check_id: U6-2022 --- #: XXX Wie sieht die Situation nach den Bauarbeiten aus? --- #: last_checked: 2022-09-26 (mapillary) --- #: next_check: 2022-11-30 --- Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,17938 3706,17931 3833,17929
@@ -4700,7 +4701,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: note: Dieser Eintrag existiert auch noch als aktiver bbbike-temp-blockings-Eintrag.
 #: osm_watch: way id="229990468" version="7"
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2025-01-08
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
@@ -5251,7 +5252,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 #: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023) (bis 04.09.2023) (bis 18.09.2023) (bis 31.10.2023) (bis 27.11.2023) (bis 05.08.2024) (bis 31.12.2024) (bis 30.04.2025)
 #: source_id: viz2021:13.361226,52.446957,15.12.2023,20:00 (angrenzende Attilastr., bis 17.12.2023) (inaktiv)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
-#: last_checked: 2024-11-27
+#: last_checked: 2025-01-08
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-08-05
 #: next_check: 2025-12-31
@@ -5743,6 +5744,13 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: check_frequency: 120d
 # REMOVED -- #: next_check: 2024-12-31
 Carolabrücke (Dresden): Brücke teilweise eingestürzt, der Rest ist gesperrt	2::inwork 36969,-149635 37090,-149991
+# 
+#: by: https://www.berliner-zeitung.de/news/sachsen-naechste-bruecke-muss-abgerissen-werden-li.2282916
+#: by: https://www.lasuv.sachsen.de/b-101-grossenhain-8358.html (wird abgerissen)
+#: osm_watch: way id="779202212" version="6"
+#: last_checked: 2024-12-18 (berliner-zeitung)
+#: check_frequency: 180d
+B101 südlich von Großenhain: Brücke gesperrt	2::inwork 21254,-125506 21046,-125633
 # 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

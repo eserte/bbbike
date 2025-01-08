@@ -45,7 +45,7 @@
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
-#: last_checked: 2024-11-27
+#: last_checked: 2025-01-08
 #: check_frequency: 120d
 #: next_check: 2025-04-30
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -138,7 +138,7 @@ sehr schmal, Verbundsteinpflaster	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,735
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2024-10-26 vvv
+#: last_checked: 2025-01-08 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -164,7 +164,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: https://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021) (mittlerweile gelöscht) (wieder da, "abgeschlossen")
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2024-09-21 vvv
+#: last_checked: 2025-01-08 vvv
 #: check_frequency: 90d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -343,7 +343,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-01-05 vvv
+#: last_checked: 2025-01-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -673,7 +673,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6477,8654 6485,8639
 	RW1;RW1 7696,7562 7858,7462 7938,7406
 	RW1; 7938,7406 8069,7288 8150,7200 8224,7148 8319,7084
 	RW1; 8319,7084 8229,7154 8176,7194 8074,7295 7938,7406
-	RW1;RW1 7480,7683 7496,7716 7499,7880 7499,7937 7498,8062 7497,8168
+	RW1;RW1 7480,7683 7496,7716 7497,7761 7499,7880 7499,7937 7498,8062 7497,8168
 #: note: Vorarlberger Damm, Richtung Osten
 Gehwegplatten mit Unebenheiten	RW1; 6389,7196 6500,7172 6640,7138 6762,7109
 #: by: https://twitter.com/VIZ_Berlin/status/1497262265833340928
@@ -840,7 +840,7 @@ Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
 #: last_checked: 2024-08-10 vvv
 #: check_frequency: 360d vvv
-#: next_check: 2025-04-15 vvv
+#: next_check: 2026-10-01 vvv
 	RW8; 3930,17923 3833,17929 3706,17931 3628,17935 3570,17938
 unebenes Verbundsteinpflaster, Bord gegen Gehweg	RW2; 3570,17938 3429,17987 3319,18043
 teilweise unebene Gehwegplatten, überwiegend mit Bord gegen Gehweg	RW2; 3319,18043 3213,18115 3047,18398 3008,18464 2947,18570 2867,18736 2821,18831 2690,19099 2621,19241 2568,19345
@@ -856,7 +856,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben; außerdem Zweirichtungsradweg im Bereich der Seidelstraßenbrücke vvv
 #: last_checked: 2024-08-10 vvv
 #: check_frequency: 360d vvv
-#: next_check: 2025-04-15 vvv
+#: next_check: 2026-10-01 vvv
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2015,20336 2044,20289 2109,20188 2169,20095 2224,20007 2268,19919
 Verbundsteinpflaster	RW2; 2268,19919 2394,19697 2436,19606 2477,19520 2568,19345
 Gehwegplatten, Bord gegen Gehweg	RW2; 2568,19345 2621,19241 2690,19099 2821,18831 2867,18736
@@ -1536,11 +1536,11 @@ Gehwegplatten	RW1; 5896,6785 5811,6833 5799,6841 5644,6936 5565,7024 5559,7031 5
 #: historical_note: früher mit Benutzungspflicht
 Verbundsteinpflaster	RW1; 6071,6559 6042,6686
 	RW1; 6071,6559 6083,6451
-Radweg nur aufgemalt	RW1; 6083,6451 6095,6358 6104,6258 6104,6253 6112,6173 6116,6130 6124,5983 6124,5894 6123,5798
+Radweg nur aufgemalt	RW1; 6083,6451 6095,6358 6103,6262 6104,6253 6112,6173 6116,6130 6124,5983 6124,5894 6123,5798
 Gehwegplatten mit einigen Schäden	RW1; 6123,5798 6104,5302 6103,5285 6100,5254 6087,5171 6083,5147 6066,5045 6048,4952
 Gehwegplatten, teilweise Verbundsteinpflaster	RW1; 6048,4952 6066,5045 6083,5147 6087,5171 6100,5254 6103,5285 6104,5302 6123,5798
 Verbundsteinpflaster	RW1; 6123,5798 6124,5894
-Radweg nur aufgemalt	RW1; 6124,5894 6124,5983 6116,6130 6112,6173 6104,6253 6104,6258 6095,6358 6083,6451
+Radweg nur aufgemalt	RW1; 6124,5894 6124,5983 6116,6130 6112,6173 6104,6253 6103,6262 6095,6358 6083,6451
 Verbundsteinpflaster	RW1; 6083,6451 6071,6559
 hier in beide Richtungen für Radfahrer aus dem Stadtpark befahrbar	RW2; 6048,4952 6029,4902 6003,4857
 asphaltiert	RW1; 6003,4857 6048,4797 6102,4726 6107,4718
@@ -1667,7 +1667,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="4615746" version="45"
+#: osm_watch: way id="4615746" version="46"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
 #: last_checked: 2025-01-06 vvv
 #: check_frequency: 30d vvv
@@ -2492,7 +2492,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="21"
-#: last_checked: 2024-11-27 (mapillary)
+#: last_checked: 2025-01-08
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -6956,7 +6956,7 @@ Verbundsteinpflaster	RW1; 2375,19554 2310,19575 1966,19548 1945,19622 1896,19801
 	RW3; 10800,5203 10868,5187
 Gehweg für Radfahrer frei	RW1; 10868,5187 11302,5098 11376,5102 11473,5131 11676,5185 11799,5191 11871,5195 12060,5204 12336,5219
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 12336,5219 12507,5228
-	RW3;RW3 7690,4563 7911,4465
+	RW3;RW3 7690,4563 7874,4481 7911,4465
 	RW3; 7911,4465 7994,4430
 Gehweg für Radfahrer frei	RW1; 7994,4430 7911,4465
 	RW3; 7994,4430 8105,4384
@@ -7986,7 +7986,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="8"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-01-05
+#: last_checked: 2025-01-08
 #: check_frequency: 90d
 asphaltierter Radweg ist größtenteils nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -8935,7 +8935,7 @@ Poller	RW4; 9248,4904 9239,4980 9206,5193
 #: osm_watch: way id="4357826" version="22"
 #: osm_watch: way id="354645907" version="19"
 #: osm_watch: way id="354645904" version="13"
-#: last_checked: 2024-08-18 vvv
+#: last_checked: 2025-01-08 vvv
 #: check_frequency: 150d vvv
 #: next_check: 2025-12-31 vvv
 	RW3; 8739,6701 8653,6781

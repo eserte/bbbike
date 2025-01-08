@@ -13,6 +13,16 @@
 # REMOVED --- #: valid: -20241028
 # REMOVED --- Michaelkirchplatz: Gegenverkehrsreglung	X::inwork::alternating 11349,11227
 # 
+#: next_check_id: RING-2025
+#: source_id: viz2021:13.36206,52.4473,24.07.2024,10:00 (bis 25.07.2025) (inaktiv)
+#: source_id: viz2021:13.363257,52.446918,24.07.2024,10:00 (bis 25.07.2025)
+#: also_indoor: traffic (T,B)
+#: last_checked: 2025-01-08
+#: check_frequency: 120d
+#: next_check: 2025-07-25
+#: valid: -20250725
+Ringstr.: Gegenverkehrsreglung	X::inwork::alternating 7874,4481
+# 
 #: next_check_id: PERLEBERGER-2024
 #: last_checked: 2024-12-26
 #: next_check: 2025-09-23
@@ -344,12 +354,14 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 # REMOVED --- #: XXX Hauffstraﬂe (Rummelsburg) in beiden Richtungen zwischen Wiesenweg und Schreiberhauer Straﬂe: Arbeiten an Gasleitung, f¸r beide Richtungen nur ein gemeinsamer Fahrstreifen abwechselnd frei, eine Baustellenampel regelt den Verkehr, vom 06.07.2021 08:00 bis 23.07.2021 17:00 --- #: note: Ampeln in der Hauffstr. sowie in der Schulze-Boysen-Str. an der Buchberger Str.; auﬂerdem ist die Anbindung Pfarrstr. offiziell gesperrt --- #: source_id: viz2021:13.478302,52.506695,06.07.2021,08:00 (mittlerweile bis 3.9.2021) vvv --- #: last_checked: 2021-08-09 vvv --- #: valid: -20210903 vvv --- Hauffstr.: Gegenverkehrsregelung	X::inwork::alternating 15461,11313 --- Schulze-Boysen-Str.: Gegenverkehrsregelung	X::inwork::alternating 15477,11338 --- #: valid ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # 
 #: next_check_id: HERMANNHESSESTR-2019
+#: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Erw‰hnung, mˆglicherweise Verstetigung 2025)
 #: XXX wird die tempor‰re Ampel durch eine permanente ersetzt?
 # REMOVED (closed) --- #: osm_watch: note 2356634 3
 #: osm_watch: node id="9569639494" version="1"
 #: osm_watch: node id="9569639496" version="1"
-#: last_checked: 2024-10-23 (mapillary)
+#: last_checked: 2024-12-06 (berliner-zeitung)
 #: check_frequency: 60d
+#: next_check: 2025-12-31
 	X::inwork 9868,19023
 # 
 # REMOVED --- #: note: Baustellenampel in der Neuen Roﬂstr. --- #: source_id: 2147345021 (bis 06.07.2020) --- #: source_id: 2147345825 --- #: XXX ist die Ampel mittlerweile abgebaut (wegen der Einbahnstraﬂenregelung)? --- #: XXX laut fritz Sperrung bis 2020-06-30 --- #: last_checked: 2020-05-12 --- #: next_check: 2020-05-13 --- #: valid: -20200706 ---	X::inwork 10780,11721

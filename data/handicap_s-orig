@@ -52,18 +52,18 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="11"
-#: osm_watch: way id="1072662717" version="13"
-#: last_checked: 2025-01-04
+#: osm_watch: way id="1072662716" version="12"
+#: osm_watch: way id="1072662717" version="14"
+#: last_checked: 2025-01-08
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 #: osm_watch: note 4452740 1
-#: osm_watch: way id="1327235572" version="3"
-#: osm_watch: way id="1146013233" version="6"
-#: osm_watch: way id="1134071039" version="8"
-#: last_checked: 2025-01-05 vvv
+#: osm_watch: way id="1327235572" version="4"
+#: osm_watch: way id="1146013233" version="7"
+#: osm_watch: way id="1134071039" version="9"
+#: last_checked: 2025-01-06 (osm) vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -2153,7 +2153,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/ (1. Quartal 2026: Einreichung der Planfeststellungsunterlagen) (2. Quartal 2029 - 3. Quartal 2031) (3. Quartal 2030 - 4. Quartal 2032)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
 #: osm_watch: way id="77098244" version="19"
-#: last_checked: 2024-10-09
+#: last_checked: 2025-01-08
 #: check_frequency: 360d
 #: next_check: 2026-03-31
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
@@ -5247,6 +5247,8 @@ Am Teltowkanal: zahlreiche Temposchwellen, abwechselnd rechts und links umfahrba
 # 
 Ulsterstr.: enge Straße	q0- 13575,8378 13641,8470
 # 
+(Gotenstr. - Ella-Barowsky-Str.): Fußgänger, Lieferverkehr	q3 7497,7761 7551,7851
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -5323,9 +5325,9 @@ Begasstr.: eng	q1 6276,6995 6408,7008
 #: by: Martina Urban: vvv
 Friedrichsruher Str.: sehr eng	q1 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 #: corrected_by: srt/policy
-Schönhauser Str.: eng	q0- 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
+Schönhauser Str.: eng	q0- 5809,6383 5824,6240 5836,6138 5845,6049 5847,5961 5851,5863 5850,5765
 #: corrected_by: srt/policy
-Jeverstr.: eng	q0- 5682,5798 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
+Jeverstr.: eng	q0- 5682,5798 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5836,6138
 #: by: ^^^
 # 
 #: by: Hanswalter Schramm:

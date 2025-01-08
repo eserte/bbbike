@@ -480,7 +480,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2024-12-26
+#: last_checked: 2025-01-08
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -1019,7 +1019,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="26"
-#: last_checked: 2024-12-15 (mapillary)
+#: last_checked: 2025-01-04 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -2154,10 +2154,14 @@ Unterführung Emil-Schulz-Brücke: unbefestigt, Schotter	Q2 4274,2717 4272,2704 42
 # REMOVED (nicht sehr -> Q1-) --- #: XXX hat sich die Qualität verschlechtert?
 Teltowkanal: Parkweg, OK	Q1- 4209,2641 4064,2293 3980,2102 3821,1725
 Teltowkanal: Asphalt	Q0- 3821,1725 3698,1450
+# 
 #: by: taztaz
 #: note: 2007 Bauarbeiten bis zur Krahmerstr.
 #: confirmed_by: srt
-Paul-Schwarz-Promenade: sehr eben, Rollsplit als Belag	Q0- 4587,3097 4274,2717
+#: corrected_by: srt (sehr eben, Rollsplit als Belag, Q0- -> hat sich mittlerweile verschlechtert)
+Paul-Schwarz-Promenade: wassergebundene Decke	Q1+ 4587,3097 4274,2717
+Paul-Schwarz-Promenade: Asphalt	Q0 4274,2717 4236,2678 4233,2675
+# 
 #: note: nach Regenfällen etwas matschig, einige Pfützen
 (Weg am Friedhof): Parkweg	Q1 11608,7267 11687,7284 12185,7381
 Spreetalallee: uneben, leichter Schotter	Q2 655,12690 729,12972 715,13126
@@ -3390,13 +3394,13 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: next_check_id: DRESDNERBAHN-2021
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
-#: XXX zurzeit (2024-09) außerdem Bauarbeiten an der Ringstr., Bauzufahrt ist nun um einige Meter nach Norden verschwenkt
+#: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
 #: osm_watch: way id="30893534" version="25"
 #: osm_watch: way id="1155399359" version="2"
-#: last_checked: 2024-09-14 (mapillary)
+#: last_checked: 2025-01-08
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
-Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
+Am Teltowkanal: Asphalt	Q0 7874,4481 7866,4419 7769,4315
 # 
 Am Teltowkanal: fester Sandweg	Q1 7769,4315 7673,4223
 Edenkobener Steg: Holzbohlen	Q1 6618,4191 6633,4272
@@ -11272,7 +11276,7 @@ Weverpromenade: wassergebundene Decke	Q1 5787,4400 5738,4361 5721,4356 5541,4305
 (Paul-Schwarz-Promenade - Dalandweg): Asphalt	Q0 5387,4214 5385,4236
 Paul-Schwarz-Promenade: Asphalt	Q0 5541,4305 5520,4286 5387,4214 5337,4192 5282,4145 5225,4095
 Promenade am Teltowkanal: Asphalt, kurz Kopfsteinpflaster	Q1+ 4822,3431 4815,3382 4778,3352
-Promenade am Teltowkanal: Asphalt	Q0- 4778,3352 4692,3225 4587,3097
+Promenade am Teltowkanal: Asphalt mit einigen Schäden	Q1+ 4778,3352 4692,3225 4587,3097
 Ines-Bolla-Pfad: Verbundsteinpflaster	Q1 3730,2368 3767,2367
 Maggy-Breittmayer-Pfad: Betonsteinpflaster	Q1 3731,2411 3814,2408 3902,2405
 Ellen-Widmann-Pfad: Betonsteinpflaster	Q1 3814,2408 3813,2368 3812,2303
@@ -11408,7 +11412,7 @@ Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780 19500,7719
 #: by: https://www.berliner-woche.de/fennpfuhl/c-umwelt/gruenzug-wird-umgestaltet_a413057
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10502 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10613 (Antrag (zur Beleuchtung))
-#: osm_watch: note 4405725 4
+#: osm_watch: note 4405725 5
 #: XXX wie sieht die Wegoberfläche nach den Sanierungsarbeiten aus?
 #: last_checked: 2025-01-06
 #: check_frequency: 60d
@@ -13441,6 +13445,7 @@ Max-und Herta-Naujocks-Weg: wassergebundene Decke	Q1 16036,18604 16077,18674 161
 (Mausohrweg - R1): Asphalt	Q0 33296,2894 33267,2810 33255,2762
 # 
 # REMOVED (nicht mehr) --- Attilastr.: Asphalt mit einigen Schäden	Q0-; 7690,4563 7743,4605 7825,4672 7896,4732 7986,4808 8014,4832
+#: note: in der Mitte der Fahrbahn vorwiegend ohne Schäden
 Geiserichstr.: Asphalt mit einigen Schäden	Q0- 8130,4932 8198,4861 8255,4791
 Distelfinkweg: Beton	Q0- 15672,2864 15537,3026 15460,3118 15410,3179 15367,3215 15273,3269
 Distelfinkweg [Stichstraße]: Beton	Q0- 15460,3118 15512,3157
@@ -13928,6 +13933,8 @@ Döberitzer Grünzug - KGA Lehrter Str.: Asphalt	Q0 7819,13559 7795,13528
 (Buntzelstr. - Bohnsdorfer Kirchsteig): Asphalt	Q0 21138,-428 21089,-378 21045,-330
 # 
 Eisenhutweg [Wohngebiet]: Asphalt	Q0 17741,2824 17688,2744 17471,2872 17569,2987
+# 
+(Gotenstr. - Ella-Barowsky-Str.): Asphalt	Q0 7497,7761 7551,7851
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -15394,7 +15401,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: XXX Wird dieser Abschnitt vielleicht auch asphaltiert? Oder nur saniert, aber dann müsste man den mudways-Eintrag prüfen.
 #: osm_watch: way id="115724952" version="13"
 #: osm_watch: way id="1159154133" version="2"
-#: last_checked: 2024-11-27
+#: last_checked: 2025-01-08
 #: check_frequency: 30d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -15433,7 +15440,8 @@ Hattinger Weg: guter Beton	Q0 1510,18429 1540,18543 1568,18539 1597,18532 1603,1
 #: by: ^^^
 # 
 #: by: Jessica Mai: vvv
-Canovastr.: Asphalt	Q0 6343,6297 6477,6311
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Canovastr.: Kopfsteinpflaster	Q2+ 6343,6297 6477,6311
 #: confirmed_by: srt
 Wiclefstr.: Kopfsteinpflaster	Q2 5231,13843 5417,13817 5609,13790 5743,13772 5907,13746 6005,13734 6095,13724
 #: confirmed_by: srt
@@ -19133,6 +19141,7 @@ Lange Str. (Lichterfelde, Lankwitz): glattes Pflaster	Q1 5781,1936 5865,1975 590
 #: confirmed_by: srt
 Bahnhofstr. (Lichterfelde): Asphalt	Q0 4776,2873 5065,2715 5332,2568
 #: corrected_by: srt (sehr feiner Schnotter, Q0- -> ..., eventuell hat der Weg nachgelassen?)
+#: note: auch nach der Sanierung Dez 2024/Jan 2025 etwas wellig
 Paul-Schwarz-Promenade: wassergebundene Decke	Q1 4822,3431 4910,3599 4947,3672 5018,3810
 #: corrected_by: srt (sehr feiner Schnotter, Q0- -> ..., Hubschrauberlandeplatzbereich)
 Paul-Schwarz-Promenade: Asphalt	Q0 5018,3810 5074,3900
@@ -20293,12 +20302,12 @@ Altmarkstr.: guter Asphalt	Q0 6343,6297 6323,6270 6300,6214 6306,6124 6318,6006 
 #: note: laut ADFC-Karte "gut geeignet"
 #: confirmed_by: srt
 Friedrichsruher Str.: Asphalt	Q0 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
-#: confirmed_by: srt (nördlicher Abschnitt)
-Schönhauser Str.: Asphalt	Q0 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Schönhauser Str.: Asphalt, einige Schäden	Q0- 5809,6383 5824,6240 5836,6138 5845,6049 5847,5961 5851,5863 5850,5765
 #: corrected_by: srt (Asphalt -> ...)
 Jeverstr.: Verbundsteinpflaster	Q1 5672,5751 5682,5798
 #: confirmed_by: srt
-Jeverstr.: Asphalt	Q0 5682,5798 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
+Jeverstr.: Asphalt	Q0 5682,5798 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5836,6138
 #: by: ^^^
 # 
 #: by: Felix Lippert:
@@ -20985,7 +20994,7 @@ Niebergallstr.: mäßiges Kopfsteinpflaster	Q2 23158,1379 23168,1335 23202,1192
 #: by: ^^^
 # 
 #: by: Liesbet (m-...):
-Kissinger Str. (Steglitz): asphaltiert	Q0 6198,6270 6213,6135 6226,5995
+Kissinger Str. (Steglitz): asphaltiert	Q0 6203,6275 6213,6135 6226,5995
 # 
 #: by: Thomas (bergen): vvv
 #: corrected_by: srt (Asphalt -> Beton)
@@ -21832,7 +21841,7 @@ Rue Hyacinthe Vincent: Kleinsteinpflaster	Q1- 3375,16558 3347,16534 3292,16553
 #: by: ^^^
 # 
 #: by: Rainer Prüfert:
-Sachsenwaldstr.: guter Asphalt	Q0 5834,6142 5984,6233 6104,6258 6198,6270 6305,6287 6323,6270
+Sachsenwaldstr.: guter Asphalt	Q0 5836,6138 5904,6160 5984,6233 6018,6250 6103,6262 6203,6275 6305,6287 6323,6270
 # 
 #: by: J.F. (jofmoher):
 #: corrected_by: srt (guter Beton, Q0- -> ...)
@@ -23845,9 +23854,11 @@ Biberacher Weg: schlechtes Kopfsteinpflaster	Q3 7489,4576 7382,4503
 #: by ^^^
 # 
 #: by: Lutz Kortmann: vvv
-#: note: anonymous meinte auch "Kopfsteinpflaster"
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
+Buhrowstr.: Asphalt	Q0 7092,4763 7075,4726
 #: corrected_by: srt (schlechtes -> mäßiges)
-Buhrowstr.: mäßiges Kopfsteinpflaster	Q2 7092,4763 7032,4635
+#: note: ein paar Meter im Norden schlechter, der restliche Abschnitt recht glattes Kopfsteinpflaster
+Buhrowstr.: mäßiges Kopfsteinpflaster	Q2 7075,4726 7032,4635
 #: confirmed_by: srt
 #: note: schmale asphaltierte Banketten existieren teilweise, sind aber größtenteils zugeparkt
 Buhrowstr.: schlechtes Kopfsteinpflaster	Q3 7032,4635 6889,4334
@@ -33674,5 +33685,8 @@ Einmündungsbereich asphaltiert	Q0 18609,8717
 Einmündungsbereich asphaltiert	Q0 17771,8349
 Kreuzungsbereich asphaltiert	Q0 17794,8429
 Einmündungsbereich asphaltiert	Q0 17813,8508
+Einmündungsbereich asphaltiert	Q0 6820,4347
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 3959,3444
+Einmündungsbereich mit Kopfsteinpflaster	Q2+ 7032,4635
 #: ignore ^^^
 #: section ^^^

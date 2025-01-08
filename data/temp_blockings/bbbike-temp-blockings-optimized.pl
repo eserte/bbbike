@@ -4570,7 +4570,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2024-10-12 (mapillary)
+#: last_checked: 2025-01-08
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 	2::inwork 7673,4223 7769,4315
@@ -4912,6 +4912,8 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782997647063699803
 #: by: https://pbs.twimg.com/media/GL21lA-XwAASF5a?format=jpg&name=medium (Umleitungsstrecke für Radfahrer)
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20241218 (Inbetriebnahme 2027)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1876878754120925633
+#: by: https://pbs.twimg.com/media/Ggsmd-aWMAAlsTV?format=jpg&name=medium
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.492858,52.63663,09.05.2022,11:58 (inaktiv)
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
@@ -4966,16 +4968,16 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-01-04
-#: check_frequency: 30d
-#: next_check: 2025-01-08
+#: last_checked: 2025-01-08 (traffic)
+#: check_frequency: 1d
+# REMOVED --- #: next_check: 2025-01-08
 	q4::inwork; 9011,14019 8870,13926
 ',
          'from' => 1656651600,
          'id' => 3559,
-         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, voraussichtlich bis 8.1.2025',
+         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, voraussichtlich bis 8.1.2025, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1736355600
+         'until' => undef
        },
        undef,
        undef,
@@ -5023,8 +5025,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: last_checked: 2024-10-17 (mapillary)
 #: next_check: 2025-10-01
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
+#: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin
 #: last_checked: 2024-10-17 (mapillary)
-#: next_check: 2024-12-31
+#: next_check: 2025-01-31
 #: note: eigentlich 1s:q3
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
 ',
@@ -5548,7 +5551,7 @@ Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
 #: osm_watch[closed]: note 3631209 6
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: priority: #A
-#: last_checked: 2024-10-09 vvv
+#: last_checked: 2025-01-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-09-30 vvv
 #: osm_watch: way id="46907541" version="16"
@@ -5562,7 +5565,7 @@ Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
 ',
          'from' => 1697320800,
          'id' => 3727,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann bis Spätsommer 2025 gesperrt sein (Stand Anfang Oktober 2024: Weg ist noch offen)',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann bis Spätsommer 2025 gesperrt sein (Stand Anfang Januar 2025: Weg ist noch offen)',
          'type' => 'gesperrt',
          'until' => 1759248000
        },
@@ -6174,7 +6177,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: last_checked: 2024-08-10
 #: check_frequency: 120d
-#: next_check: 2024-12-31
+#: next_check: 2026-10-01
 	q3::inwork 4335,17642 4392,17777
 ',
          'from' => undef,
@@ -6184,37 +6187,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: BEBELPLATZXMAS-2022
-#: by: https://www.weihnachtsmarkt-berlin.de/
-#: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html?date=20231021
-#: osm_watch: node id="3874526513" version="9"
-# REMOVED --- #: XXX Wie lange dauern die Abbauarbeiten? -> am 2023-01-05 war der Platz noch gesperrt, am 2023-01-07 war von der Webcam auf dem Roten Rathaus zumindest am nördlichen Ende nichts mehr zu sehen --- #: last_checked: 2023-01-05 vvv --- #: check_frequency: 2d vvv --- # REMOVED --- #: next_check: 2023-01-02 vvv --- # REMOVED --- #: valid: 20221111-20230102 vvv --- #: valid: 20221111-20230108 vvv ---
-Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
-Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
-Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392
-# REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022 --- #: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert --- #: last_checked: 2023-01-05 --- #: check_frequency: 2d --- # REMOVED --- #: next_check: 2023-01-02 --- # REMOVED --- #: valid: 20221111-20230102 --- #: valid: 20221111-20230108 --- 
-Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3::xmas 9664,12387 9680,12232
-',
-         'from' => 1731711600,
-         'id' => 3939,
-         'periodic' => 1,
-         'postwarn_days' => 7,
-         'prewarn_days' => 9,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen Weg am Rand möglich',
-         'type' => 'gesperrt',
-         'until' => 1736290799
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: LS/222-C/23/138
@@ -6499,7 +6472,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
 #: priority: #B vvv
-#: last_checked: 2024-09-29 (mapillary) vvv
+#: last_checked: 2025-01-06 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-09-23 vvv
 #: osm_watch: way id="375991056" version="17"
@@ -6509,8 +6482,8 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 Wilsnacker Str.: Anbindung gesperrt	q4::inwork 6646,13951 6746,13826
 #: note: Ampel ist zumindest Richtung Nordosten ausgeschaltet, allerdings gibt\'s dafür eine Fußgängerampel etwa 50m weiter nordöstlich
 #: note: mittlerweile Änderung laut VMZ, evtl. nur noch eine Fahrtrichtung betroffen (stimmt aber nicht)
-#: osm_watch: way id="417687029" version="16"
-#: osm_watch: way id="1143843161" version="5"
+#: osm_watch: way id="417687029" version="17"
+#: osm_watch: way id="1143843161" version="6"
 Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6697,22 +6670,7 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (ex-H,ex-B[falsche Position?],ex-T[falsche Position?])
-#: osm_watch: note 4465412 3
-#: note: es existiert eine Umleitungsstrecke für Radfahrer
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-12-23 (traffic)
-#: check_frequency: 7d
-# REMOVED (hier wohl nicht mehr) ---	q4::inwork 5466,5523 5555,5508
-	q4::inwork 5555,5508 5676,5488
-',
-         'from' => undef,
-         'id' => 4052,
-         'text' => 'Südendstr.: Bauarbeiten zwischen Plantagenstr. und Filandastr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6916,10 +6874,10 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462538.php (Widerspruch: "nie vollständig gesperrt" & "temporäre Umleitung", Dauer 3 Monate)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/weverpromenade-wird-erneuert_a420569
 #: XXX Nach den Bauarbeiten vielleicht bessere Qualität
-#: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen.
+#: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden? vvv
 #: priority: #A vvv
-#: last_checked: 2024-11-27 vvv
+#: last_checked: 2025-01-08 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="26158804" version="25"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -6938,49 +6896,7 @@ Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: BAEKEBRUECKE-2022
-#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/wasserstrassen-neubauamt-will-baekebruecke-2022-neu-errichten_a284203
-#: by: https://plus.tagesspiegel.de/berlin/neubau-der-bakebrucke-um-ein-jahr-verschoben-was-aus-zwolf-projekten-aus-dem-jahr-2021-wurde-351799.html (Neubau um ein Jahr verschoben)
-#: by: https://www.morgenpost.de/berlin/article234710931/60-Berliner-Bruecken-derzeit-nur-eingeschraenkt-nutzbar.html (hier wird auch die Techowbrücke erwähnt)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/marggraffbruecke-in-berlin-wird-eine-weitere-bruecke-abgerissen-li.207787
-#: by: https://www.berliner-zeitung.de/mensch-metropole/betonkrebs-und-risse-in-berlin-startet-das-naechste-grosse-brueckenbauprojekt-li.315212 (Erwähnung)
-#: by[removed]: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/08_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.html?nn=3289178 (Stand 1.3.2023)
-#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/09_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.html?nn=3289178 (umbenannt, weiterhin Stand 1.3.2023)
-#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/08_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.pdf?__blob=publicationFile&v=2 (Stand 1.3.2023, in Planung: Bäkebrücke, aber auch Knesebeckbrücke und Altglienicker Brücke)
-#: by: https://khp.berlin/referenzen/ingenieurbau/planungen/baekebruecke-in-berlin-lichterfelde/
-#: by: https://www.facebook.com/groups/274489925939434/posts/7611685488886471 (in einem Kommentar steht, dass Fußgänger rüberkommen)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/baekebruecke-wird-erneuert_a421024
-#: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
-#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
-#: also_indoor: search Bäkebrücke
-#: note: traffic natürlich nur die Bäkebrücke betreffend
-#: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
-#: add_fragezeichen: Ist der Teltowkanaluferweg weiterhin komplett gesperrt? vvv
-#: last_checked: 2024-11-27 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2024-12-16 vvv
-#: osm_watch: way id="1328520572" version="1"
-Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
-#: osm_watch: way id="5363433" version="25"
-#: osm_watch: note 4442541 4
-#: note: eigentlich q3-::inwork
-Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
-#: osm_watch: way id="1332159946" version="1"
-Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
-Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => 1718628480,
-         'id' => 4109,
-         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges, außerdem Sperrung der Fahrbahn im Bereich der Bäkebrücke, bis 16.12.2024, evtl. wird verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	2::temp 5848,14977 5867,14993
 ',
@@ -7164,23 +7080,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480271.php
-#: by: https://www.infravelo.de/projekt/am-eichgarten/ (3. Quartal 2024 - 4. Quartal 2024)
-#: XXX Dabei werden die Flächen für Rad- und Fußverkehr getrennt. Für den Radverkehr entsteht ein 3m breiter Weg (für beide Richtungen).
-#: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2024-11-27
-#: check_frequency: 30d
-#: next_check: 2024-12-31
-	2::inwork 6007,4340 6147,4329 6210,4325
-',
-         'dont_check_date' => 1,
-         'from' => 1725141600,
-         'id' => 4153,
-         'text' => 'Am Eichgarten: Bauarbeiten zwischen Stindestr. und Siemensstr., Sperrung des Weges, geplant bis Anfang Dezember 2024',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -7352,9 +7252,9 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_242095
 #: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025)
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
-#: also_indoor: traffic (ex-B,ex-T,G)
+#: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2024-12-26 vvv
+#: last_checked: 2025-01-08 (traffic) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-01-17 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7594,7 +7494,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
 #: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
-#: last_checked: 2024-12-09
+#: last_checked: 2025-01-08
 #: next_check: 2025-05-31
 	q3::temp 10032,9456 10004,9268
 ',
@@ -7610,10 +7510,10 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-12-12 (architektur-urbanistik)
+#: last_checked: 2025-01-08
 #: check_frequency: 90d
 #: next_check: 2026-11-30
-	q4::inwork; 7696,7771 7632,7807 7621,7813 7537,7859 7499,7880
+	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
 ',
          'from' => 1731970800,
          'id' => 4219,
@@ -7784,6 +7684,31 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 17.02.2025 06:00 Uhr bis 21.02.2025 18:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1740157200
+       },
+       {
+         'data' => '#: also_indoor: traffic (G,T,B)
+#: note: Ende der Abschnitts unklar: entweder Bayernring oder General-Pape-Str.
+#: last_checked: 2025-01-08
+#: check_frequency: 120d
+#: next_check: 2025-07-31
+	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
+',
+         'from' => 1736343075,
+         'id' => 4236,
+         'text' => 'Loewenhardtdamm: Bauarbeiten ab Badener Ring, Fahrbahn gesperrt, vermutlich bis 31.07.2025',
+         'type' => 'handicap',
+         'until' => 1753999200
+       },
+       {
+         'data' => '#: also_indoor: traffic (H,T,B)
+#: last_checked: 2025-01-08
+	q4::inwork 8842,8561 8916,8511
+',
+         'from' => undef,
+         'id' => 4237,
+         'text' => 'Bayernring: Bauarbeiten zwischen Manfred-von-Richthofen-Str. und Mussehlstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
