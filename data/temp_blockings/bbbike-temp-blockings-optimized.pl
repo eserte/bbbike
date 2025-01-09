@@ -6730,7 +6730,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        {
          'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024) (bis 31.12.2024) (bis 28.03.2025)
-#: osm_watch: note 4452464 2
+#: osm_watch: note 4452464 3
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
@@ -6947,8 +6947,8 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        undef,
        {
-         'data' => '#: osm_watch: way id="27457006" version="21"
-#: last_checked: 2024-12-07 (osm)
+         'data' => '#: osm_watch: way id="27457006" version="22"
+#: last_checked: 2025-01-08 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -7304,14 +7304,14 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
        undef,
        {
          'data' => '#: next_check_id: GUDRUN-2024
-#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 10.01.2025)
+#: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 10.01.2025) (bis 24.01.2025)
 	q4::inwork; 17139,12100 17088,12069 16975,12000 16865,11931
 ',
          'from' => 1729486800,
          'id' => 4196,
-         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 10.01.2025 17:00',
+         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 24.01.2025 17:00',
          'type' => 'handicap',
-         'until' => 1736524800
+         'until' => 1737734400
        },
        undef,
        {
@@ -7361,17 +7361,17 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #: by[nocache]: https://x.com/Aintschie/status/1833937985588650466 (etwa 100m betroffen?)
 #: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
 #: source_id: bvg2024:x83#HIM_FREETEXT_238226
-#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...)
 #: osm_watch: note 4441243 4
 #: osm_watch: note 4441280 1
 #: also_indoor: traffic (H,G,B,T,W)
 #: note: etwa 80m der Fahrbahn sind gesperrt, nur der nordöstliche Bürgersteig ist offen
-#: next_check: 2025-01-10
+#: next_check: 2025-01-31
 	q4::inwork 4671,5697 4520,5793
 ',
          'from' => 1726092000,
          'id' => 4203,
-         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, mindestens bis 10.01.2025, voraussichtlich wird verlängert',
+         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, mindestens bis 31.01.2025, voraussichtlich wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
