@@ -12,7 +12,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, vermutlich Hochbauarbeiten
-#: last_checked: 2025-01-09
+#: last_checked: 2025-01-10
 #: check_frequency: 60d
 #: next_check: 2025-06-30
 #: valid: -20250630
@@ -310,7 +310,8 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: by: https://www.tagesspiegel.de/berlin/bezirke/eroffnung-mit-burgerfest-geplant-endspurt-fur-den-neuen-marktplatz-in-adlershof-12604670.html (Eröffnung Mai 2025)
 #: by[nocache]: https://archive.is/tLaeV
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_55_4355_4442_online.pdf (Teileinziehung (wo genau?))
-#: XXX möglicherweise wird die nördliche Fahrbahn dauerhaft eingezogen
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_02_0117_0156_online.pdf (Teileinziehung: korrekte Planskizze; es ist der nördliche Strang)
+#: XXX der nördliche Strang soll dauerhaft eingezogen werden
 #: osm_watch: way id="20554168" version="26"
 #: osm_watch: way id="1155308749" version="1"
 #: last_checked: 2024-11-20 vvv
@@ -669,8 +670,8 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Friedrichsfelde ###
 # 
 #: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025
-#: also_indoor: traffic (G,B,T)
-#: last_checked: 2024-12-01 vvv
+#: also_indoor: traffic (ex-G,B,T)
+#: last_checked: 2025-01-10 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-01-10 vvv
 # REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
@@ -683,9 +684,9 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: last_checked ^^^
 # 
 #: note: Halteverbotsschilder bis 23.12.2024
-#: also_indoor: traffic (H,B,T)
+#: also_indoor: traffic (ex-H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2024-12-27
+#: last_checked: 2025-01-10 (traffic)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-12-23
 # REMOVED --- #: valid: -20241223
@@ -1140,7 +1141,7 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/richtfeste-fuer-290-wohnungen_a417760
 #: also_indoor: traffic (G,H,B)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2024-12-16 (mapillary) vvv
+#: last_checked: 2025-01-07 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-02-06 vvv
 #: valid: -2025-02-06 vvv
@@ -1281,7 +1282,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 #: by: https://pascalgrothe.de/grabensprung-wiedereroeffnung-steht-bevor/ (veröffentlicht am 28.12.2024, Freigabe "in Kürze")
 #: also_indoor: traffic (T,ex-G,B)
 #: also_indoor: url https://pascalgrothe.de/kiezblog/
-#: last_checked: 2025-01-05 (traffic)
+#: last_checked: 2025-01-10 (traffic)
 #: check_frequency: 7d
 Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
 # 
