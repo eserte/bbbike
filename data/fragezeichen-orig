@@ -4429,7 +4429,7 @@ Wundtstr./Horstweg: "Qualifizierung" des Stadtplatzes; wird sich etwas für Radfa
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136/eh17PjKBLbokwKTYOVZeDxg4rc6rihHNF1lnXhGs/pdeGjLkp/73-Anlagen/02/MA_1750_VI.pdf (geplant in 2024)
 #: osm_watch: way id="4581779" version="54"
 #: osm_watch: way id="1107419758" version="8"
-#: osm_watch: note 2336666 7
+#: osm_watch: note 2336666 9
 #: also_indoor: traffic (H,G,B,T,W[nebenan?])
 #: XXX bei osm bereits als highway=cycleway eingetragen
 #: last_checked: 2024-12-11 vvv
@@ -4780,8 +4780,9 @@ Karl-Marx-Platz: Umgestaltung, glatteres Pflaster, "sichere Führung" für den Rad
 #: by: https://www.bahninfo-forum.de/read.php?9,741529,741529#msg-741529 (bleibt der Fußgängertunnel? dann wohl keine Ampel)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6296 (Antrag)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/tramhaltestelle-wird-umgebaut_a385488 (Unterführung bleibt? Umbau ab 2025)
-#: last_checked: 2024-11-30
-#: next_check: 2025-03-01
+#: last_checked: 2025-01-11
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-03-01
 S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12704,15105 12681,15028
 # 
 # REMOVED (hier ist was, aber das sind ziemlich privat aus, außerdem gibt es keine Straßenschilder) --- #: XXX laut https://de.wikipedia.org/wiki/Liste_der_Stra%C3%9Fen_in_Berlin-Rahnsdorf und https://fbinter.stadt-berlin.de/fb/index.jsp?loginkey=zoomStart&mapId=k5_farbe@senstadt&bbox=410682,5810458,411382,5810118 gibt es hier noch einen Weg, aber auf den Luftaufnahmen sieht das eher zweifelhaft aus --- Fußweg 552: gibt es hier noch einen Rest des Fußwegs? Existiert eine Verbindung zur Straße 567? Qualität? Ausgeschildert?	? 30219,3512 30120,3486
@@ -8554,6 +8555,7 @@ Ella-Barowsky-Str.: Umbauarbeiten, dabei entsteht ein Radweg	?::inwork 7499,7880
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1850782045917610091 (Müggelheimer Str.)
 #: by: https://pbs.twimg.com/media/GaumdZ7WQAAh5VH?format=jpg&name=4096x4096
 #: by: https://www.nd-aktuell.de/artikel/1187963.bvg-oepnv-in-berlin-tram-in-der-investitionsfalle.html (hier: bis September 2027)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/kopenicker-altstadt-bald-grossbaustelle-ladenbesitzer-konnen-noch-nicht-klagen-12969067.html
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_244204 (ab 2024-10-28, für vorbereitende Arbeiten?)
 #: source_id: viz2021:13.575981,52.444348,28.10.2024,07:00 (vermutlich vorbereitende Gleisbauarbeiten in der Müggelheimer Str., bis 24.11.2024) (bis 08.12.2024) (bis 22.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:162#fe73d49a-2471-4d3b-a756-05ec6943ea49 (2024-11-25 - 2024-12-08)
@@ -9955,7 +9957,7 @@ A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21834,-2143 2152
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-19896.pdf (Bezugsfertigkeit zwischen Ende 2024 und Anfang 2026)
 #: by: https://www.berliner-woche.de/buckow/c-bauen/im-sueden-neukoellns-ist-ein-neues-quartier-entstanden_a432048
 # REMOVED --- #: XXX mögliche Straßennamen (laut bw) (mittlerweile im Amtsblatt bestätigt) (fehlen alle in Berlin.coords.data): --- #: XXX * An den Buckower Feldern (PLZ=12349) --- #: XXX * Gensweg (PLZ=12349) --- #: XXX * An den Weiden (PLZ=12349) --- #: XXX * Dyrekeweg (PLZ=12349) --- #: XXX * In den Bauerngärten (PLZ=12349) --- #: XXX sowie die Privatstraßen: --- #: XXX * Am Mühlanger (PLZ=12349) --- #: XXX * Knyphausenweg (PLZ=12349)
-#: osm_watch: way id="28319563" version="23"
+#: osm_watch: way id="28319563" version="24"
 #: source_id: viz2021:13.436,52.41714,30.05.2024,06:00 (Wanderbaustelle, bis 31.08.2024) (inaktiv)
 #: last_checked: 2024-12-18 vvv
 #: check_frequency: 90d vvv
@@ -10579,6 +10581,7 @@ Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-19887.pdf
 #: by: https://entwicklungsstadt.de/1-700-wohnungen-in-marzahn-kaufvertrag-fuer-projekt-konnekt-berlin-geschlossen/ (B-Plan bis III. Quartal 2025 fertig)
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/baustarts-2025-in-berlin-hier-entstehen-gerade-neue-wohnungen-12968593.html (Erwähnung, "Knorr-Bremse-Areal")
+#: by: https://www.tagesspiegel.de/berlin/bezirke/neues-wohnviertel-in-berlin-marzahn-kaufvertrag-fur-knorr-bremse-areal-unterzeichnet-12974749.html
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2024-05-24 (mapillary)
 #: check_frequency: 720d
@@ -10914,7 +10917,7 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: source_id: viz2021:13.538004,52.539507,18.06.2024,10:00 (bis 21.12.2025)
 #: source_id: viz2021:13.52479,52.5364,04.03.2024,07:00 (bis 19.12.2024) (inaktiv) (bis 21.12.2025) (inaktiv)
 #: source_id: viz2021:13.53633,52.5391,05.09.2024,08:37 (bis 10.10.2024) (inaktiv)
-#: source_id: viz2021:13.538004,52.539507,10.01.2025,18:00 (Sperrung für Kfz-Verkehr, bis 11.01.2025)
+#: source_id: viz2021:13.538004,52.539507,10.01.2025,18:00 (Sperrung für Kfz-Verkehr, bis 11.01.2025) (inaktiv)
 #: XXX Nicht ganz klar, wie die Radverkehrsführung ab dem 25.11.2024 gedacht ist: möglicherweise wird man von Westen her kommend vor dem BK 2 + 3 auf den nördlichen Gehweg geleitet und dann via Rampe auf die Märkische Allee geleitet (wo sie anscheinend vergessen werden); von Osten her kommend sehe ich im Verkehrszeichenplan keine Regelung für den Radverkehr; außerdem gibt es eine neue Rampe zur südlichen Frank-Schweitzer-Str.; außerdem wird die Frank-Schweitzer-Str. unterhalb der Brücke wohl komplett gesperrt.
 #: alias: Marzahner Knoten
 #: alias: Großbaustelle Marzahner Brücken
@@ -11336,6 +11339,7 @@ Tamara-Danz-Str. - Rudolfstr.: wird hier eine Fuß- und Radwegverbindung entstehe
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6904 (Antrag zum Nahverkehrsknoten)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6905 (Antrag zum Schillerweg)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-19898.pdf
+#: by: https://www.tagesspiegel.de/berlin/cdu-abgeordnete-gegen-berliner-senatsplan-maximal-1700-wohnungen-auf-der-elisabeth-aue-12986227.html
 #: last_checked: 2024-01-20 (mapillary)
 #: check_frequency: 1000d
 Elisabeth-Aue: neues Wohnviertel geplant, werden hier auch Straßen entstehen?	? 10228,21970 10784,22166 10714,22390 10835,22436 10802,22624 10388,23093 9825,22859 10228,21970

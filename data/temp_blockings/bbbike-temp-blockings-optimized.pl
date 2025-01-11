@@ -3714,7 +3714,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: also_indoor: traffic (T,G,H,W)
 # REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
 #: last_checked: 2024-11-16 (mapillary)
-#: check_frequency: 60d
+#: check_frequency: 120d
 #: next_check: 2027-03-31
 Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
 ',
@@ -4968,7 +4968,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-01-10 (traffic)
+#: last_checked: 2025-01-11 (traffic)
 #: check_frequency: 1d
 # REMOVED --- #: next_check: 2025-01-08
 	q4::inwork; 9011,14019 8870,13926
@@ -5551,7 +5551,7 @@ Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch[closed]: note 3631207 6
 #: osm_watch[closed]: note 3631209 6
-#: osm_watch: note 4556342 1
+#: osm_watch: note 4556342 3
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: priority: #A
 #: last_checked: 2025-01-08 vvv
@@ -7425,7 +7425,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
 #: by: https://entwicklungsstadt.de/bauprojekt-breite-strasse-in-berlin-mitte-kritik-an-der-architektur/
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2025-01-04
+#: last_checked: 2025-01-11 (daf)
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 	2::inwork 10383,12191 10289,12106
