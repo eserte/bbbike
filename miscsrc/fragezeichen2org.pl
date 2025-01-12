@@ -281,7 +281,9 @@ for my $file (@files) {
 	     }
 
 	     my $is_researchable_item;
-	     if ($dir->{last_checked} && $dir->{last_checked}[0] =~ /\b(website|research|indoor|traffic)\b/) {
+	     if ($dir->{also_indoor}) {
+		 $is_researchable_item = 1;
+	     } elsif ($dir->{last_checked} && $dir->{last_checked}[0] =~ /\b(website|research|indoor|traffic)\b/) {
 		 $is_researchable_item = 1;
 	     }
 
