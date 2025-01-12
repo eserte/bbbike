@@ -36434,7 +36434,7 @@ EOF
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-01-11 (traffic)
+#: last_checked: 2025-01-12 (traffic)
 #: check_frequency: 1d
 # REMOVED --- #: next_check: 2025-01-08
 	q4::inwork; 9011,14019 8870,13926
