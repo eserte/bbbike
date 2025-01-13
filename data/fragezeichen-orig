@@ -4467,8 +4467,8 @@ Charles-Corcelle-Ring	? 3676,16497 3711,16481 3895,16381 4263,16166 4724,15925 4
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_03_0117_0164_online.pdf (Teileinziehung)
 #: last_checked: 2024-12-17 (mapillary) vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
-#: osm_watch: way id="202156991" version="19"
-#: osm_watch: way id="339201177" version="18"
+#: osm_watch: way id="202156991" version="20"
+#: osm_watch: way id="339201177" version="19"
 Bodestr.: in Zukunft nur für Rad- und Fußverkehr offen	? 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
 # REMOVED (wieder entfernt) --- #: XXX mittlerweile zumindest am Schloßplatz provisorisch abgesperrt
 #: also_indoor: traffic (ex-B)
@@ -7987,10 +7987,10 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/GUKkLkr/41-Anlagen/03/B1222SB.pdf (kein Termin)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Erwähnung für 2025)
 #: source_id[inactive]: bvg2024:62#HIM_FREETEXT_237919
-#: source_id: viz2021:13.585068,52.427802,19.11.2024,07:00 (Bau einer LSA, bis 09.12.2024) (bis 21.02.2025)
+#: source_id: viz2021:13.585068,52.427802,19.11.2024,07:00 (Bau einer LSA, bis 09.12.2024) (bis 21.02.2025) (bis 07.03.2025)
 #: last_checked: 2024-09-04
 #: check_frequency: 180d
-#: next_check: 2025-02-21
+#: next_check: 2025-03-07
 Wendenschloßstr./Dregerhoffstr.: Fußgängerampel in Bau	?::inwork 22870,2695 22904,2675 22926,2712
 # 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
@@ -9788,7 +9788,7 @@ Bebauungsplan 6-33 (Fubic): hier entstehen Straßen und Wege	?::projected 3357,47
 #: osm_watch: node id="2429027268" version="2"
 #: osm_watch: node id="2429051385" version="1"
 #: XXX einige Straßen existieren bereits (siehe auch osm), sind aber wohl noch abgesperrt
-#: last_checked: 2024-07-18 (krampnitz.de/360)
+#: last_checked: 2024-10-16 (krampnitz.de/360)
 #: check_frequency: 180d
 Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 # 
@@ -10289,18 +10289,6 @@ Brauhausberg - Potsdam Hauptbahnhof: existiert hier ein Weg für Radfahrer? Quali
 #: next_check: 2028-12-31
 S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzbar sein?	?::projected 4475,18998 4498,19006 4475,19008 4479,19045 4512,19051
 # 
-#: by: https://www.baustellen-doku.info/berlin_kremmener_bahn/zweiter_zugang_alt-reinickendorf/20221004/
-#: by: https://www.bahninfo-forum.de/read.php?9,660977,745909#msg-745909
-#: by: http://www.baustellen-doku.info/berlin_kremmener_bahn/zweiter_zugang_alt-reinickendorf/20230831/ (Herbst 2024)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-20697.pdf (Fertigstellung 2025)
-#: XXX Bauende laut Baustellenschild: 15.06.2023, mittlerweile Herbst 2024
-#: XXX exits-orig nach den Bauarbeiten anpassen
-#: osm_watch: note 4522038 1
-#: last_checked: 2024-08-24 (mapillary)
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2025-01-01
-S-Bhf. Alt-Reinickendorf: zweiter Zugang zum Bahnhof in Bau	?::inwork 6564,19064 6566,19107
-# 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6649
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103661660911/61660911/00298709/09-Anlagen/02/2018-11-13_B-Plan12-68_PlanbildAufstellungsbes.pdf
 #: last_checked: 2024-07-19 (mapillary)
@@ -10692,9 +10680,11 @@ Beate-Hahn-Str.: Qualität? (laut osm Asphalt)	? 12363,18596 12481,18838
 #: by: https://mein.berlin.de/vorhaben/2021-00212/
 #: by: https://www.buwog.de/presse/kabelwerk-koepenick-bodensanierung-beginnt (Beräumung, ab Oktober 2024 für 15 Monate)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-kabelwerk-k%C3%B6penick.439/#post-24013
+#: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=772611#post772611
+#: by: http://www.studio-wessendorf.de/wessendorf/Kabelwerk_Koepenick
 #: osm_watch: way id="37588146" version="16"
 #: XXX auch interessant: möglicher Uferweg unter der Salvador-Allende-Brücke bis zum Katzengrabensteg
-#: last_checked: 2024-12-29 (architektur-urbanistik)
+#: last_checked: 2025-01-12 (daf)
 #: check_frequency: 1000d
 Bebauungsplan 9-53 (Friedrichshagener Str. (Köpenick)): vermutlich entstehen hier neue Straßen	?::projected 22913,5273 22928,5071 23073,5176 23396,5176 23381,5291 23294,5270 22913,5273
 # 
@@ -10705,7 +10695,7 @@ Bebauungsplan 9-53 (Friedrichshagener Str. (Köpenick)): vermutlich entstehen hie
 #: osm_watch: way id="1126444944" version="2"
 #: osm_watch: way id="1300678164" version="2"
 #: osm_watch[closed]: note 3842826 4
-#: last_checked: 2024-12-31 (osm)
+#: last_checked: 2025-01-12 (daf)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 120d
 unter der Salvador-Allende-Brücke: hier existiert ein asphaltierter und beleuchteter Weg, allerdings noch abgesperrt	?::inwork 23404,5325 23378,5280 23395,5154 23433,5159 23433,5197
@@ -10907,6 +10897,8 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: by: https://www.berliner-zeitung.de/news/marzahn-hellersdorf-mehrere-vollsperrungen-der-landsberger-allee-im-fruehjahr-geplant-li.2281921 ("Radfahrer können die Gegend weiterhin im Rahmen der baulichen Möglichkeiten nutzen")
 #: by: https://marzahn-hellersdorf.com/verkehrsknoten-berlin-marzahn-zeitweilige-vollsperrungen-der-landsberger-allee-fuer-kranarbeiten-am-brueckenknoten-1-angekuendigt/
 #: by: https://viz.berlin.de/aktuelle-meldungen/nachtliche-vollsperrung-der-landsberger-allee-in-marzahn/ (Radfahrer nicht betroffen)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1878687170052915607
+#: by: https://pbs.twimg.com/media/Gg8QGHDXcAAJbM0?format=jpg&name=4096x4096 (Märkische Allee)
 #: source_id: viz2021:13.539245,52.540066,05.12.2022,07:00 (Vorbereitungsarbeiten bis 9.12.2022) (inaktiv)
 #: source_id: viz2021:13.539533,52.539819,19.12.2022,07:00 (bis 6.1.2023) (bis 31.12.2026) (bis 6.1.2023) (inaktiv)
 #: source_id: viz2021:13.539363,52.5398,06.01.2023,13:06 (bis 03.03.2023) (inaktiv)
@@ -10919,6 +10911,7 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: source_id: viz2021:13.53633,52.5391,05.09.2024,08:37 (bis 10.10.2024) (inaktiv)
 #: source_id: viz2021:13.538004,52.539507,10.01.2025,18:00 (Sperrung für Kfz-Verkehr, bis 11.01.2025) (inaktiv)
 #: source_id: viz2021:13.53952,52.539829,13.01.2025,07:00 (Märkische Allee, bis 17.01.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.538004,52.539507,14.01.2025,18:00 (Sperrung für Kfz-Verkehr, bis 15.01.2025)
 #: XXX Nicht ganz klar, wie die Radverkehrsführung ab dem 25.11.2024 gedacht ist: möglicherweise wird man von Westen her kommend vor dem BK 2 + 3 auf den nördlichen Gehweg geleitet und dann via Rampe auf die Märkische Allee geleitet (wo sie anscheinend vergessen werden); von Osten her kommend sehe ich im Verkehrszeichenplan keine Regelung für den Radverkehr; außerdem gibt es eine neue Rampe zur südlichen Frank-Schweitzer-Str.; außerdem wird die Frank-Schweitzer-Str. unterhalb der Brücke wohl komplett gesperrt.
 #: alias: Marzahner Knoten
 #: alias: Großbaustelle Marzahner Brücken
@@ -11013,6 +11006,7 @@ Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entst
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_26_1735_1790_online.pdf (Grundstücksnummerierungen, neu: Planstraße K und Planstraße L)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12673 (Empfehlung zur Avenue Charles de Gaulle und Hochjagdstr.)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1516555.php (Informationsveranstaltung am 25.01.2025, Realisierung bis Mitte 2026)
+#: by: https://www.berliner-woche.de/wittenau/c-umwelt/plaene-fuer-fussweg-werden-anwohnern-vorgestellt_a433269
 #: XXX Bebauungsplan XX-277a Cité Foch (Nord)
 #: XXX evtl. wird es weitere Änderungen geben, z.B. Zurückstufung eines Teils der Avenue Charles de Gaulle, Fußwege im Süden könnten anders strukturiert werden
 #: osm_watch: way id="439885059" version="7"

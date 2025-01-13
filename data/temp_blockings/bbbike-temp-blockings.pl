@@ -3464,7 +3464,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
-#: source_id: viz2021:13.33407,52.5054,07.11.2024,07:00 (Verengung Breitscheidplatz, bis 12.01.2025)
+#: source_id: viz2021:13.33407,52.5054,07.11.2024,07:00 (Verengung Breitscheidplatz, bis 12.01.2025) (inaktiv)
 # REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
 # sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
@@ -3480,9 +3480,9 @@ EOF
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089 (inaktiv)
 #: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
-#: source_id: viz2021:13.331602,52.505283,07.11.2024,07:00 (bis 12.01.2025)
-#: source_id: viz2021:13.33567,52.50437,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Rankestr., bis 12.01.2025)
-#: source_id: viz2021:13.33931,52.50323,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Tauentzienstr., bis 12.01.2025)
+#: source_id: viz2021:13.331602,52.505283,07.11.2024,07:00 (bis 12.01.2025) (inaktiv)
+#: source_id: viz2021:13.33567,52.50437,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Rankestr., bis 12.01.2025) (inaktiv)
+#: source_id: viz2021:13.33931,52.50323,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Tauentzienstr., bis 12.01.2025) (inaktiv)
 #: note: 2022+2023 ist die Farbahn auch gesperrt
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 EOF
@@ -36434,7 +36434,7 @@ EOF
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-01-12 (traffic)
+#: last_checked: 2025-01-13 (traffic)
 #: check_frequency: 1d
 # REMOVED --- #: next_check: 2025-01-08
 	q4::inwork; 9011,14019 8870,13926
@@ -44377,13 +44377,16 @@ EOF
      { from  => 1733835600, # 2024-12-10 14:00, # 1719859975, # 2024-07-01 20:52
        until => 1743202740, # 2025-03-28 23:59, # 1722031200, # 2024-07-27 00:00
 #      text  => 'Wielandstr.: zwischen Niebuhrstr. und Kantstr. Sperrung wegen Arbeiten an einer Brücke, evtl. sind auch Radfahrer betroffen, bis 26.07.2024 17:00 Uhr',
-       text  => 'Wielandstr.: Bauarbeiten an der Kantstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.12.2024 14:00 bis 28.03.2025 23:59',
+       text  => 'Wielandstr.: Bauarbeiten an der Kantstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.12.2024 14:00 bis 28.03.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: note: by rbb (alter Eintrag vom Juli 2024)
-#: note: bei rbb nur Richtung Süden
+#: note: bei rbb nur Richtung Süden (vorfristig entfernt, deshalb add_fragezeichen-Eintrag)
 #: also_indoor: traffic (H,G,B,T,W)
+#: note: In den Verkehrsmeldungen nun nur noch bis 17.1.2025
 #: source_id: viz2021:13.315793,52.506037,11.12.2024,14:00 (bis 28.03.2025)
+#: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
+#: next_check: 2025-01-17
 	q4::inwork 4415,11053 4399,10854
 EOF
      },

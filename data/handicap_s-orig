@@ -1247,7 +1247,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 # REMOVED --- #: note: Endedatum laut Halteverbotsschilder --- #: last_checked: 2024-07-16 --- #: next_check: 2024-07-15 --- #: valid: -20240715 --- Börnestr.: Bauarbeiten, einige Meter der Fahrbahn sind gesperrt	q3::inwork 13214,15830 13263,15930
 # 
-#: also_indoor: traffic (G,B,W)
+#: also_indoor: traffic (ex-G,B,ex-W,T)
 #: note: Endedatum laut Halteverbotsschilder; Länge ca. 50-60m
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/hosemannstra%C3%9Fe-ecke-lehderstra%C3%9Fe-neubauten.1441/#post-23500
 #: by: https://www.frankschiffer.com/projekte/tor-zur-lehderstrasse/ (Fertigstellung 2024)
@@ -1321,7 +1321,7 @@ Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11
 #: also_indoor: traffic (B,G,re-H,T)
 #: note: Halteverbotsschilder bis 23.10.2024
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-01-04 (traffic) vvv
+#: last_checked: 2025-01-12 (traffic) vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: next_check: 2024-10-23 vvv
 # REMOVED --- #: valid: -20241023 vvv
@@ -2558,6 +2558,7 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): enge Straße	q1 15639,11653 15489,11735 15413,11690
 (Unterführung S-Bhf. Rummelsburg): Fußgänger	q4 15372,10655 15409,10709 15433,10765
 (Unterführung Bhf. Karlshorst): Fußgänger	q3 18875,8365 18906,8394 18949,8437
+(Unterführung S-Bhf. Alt-Reinickendorf): Fußgänger, schmal	q4+ 6564,19064 6566,19115
 Vereinsweg (Charlottenburg): Radfahren verboten	q4 2828,11731 2855,11752 2907,11755 2934,11747
 Neue Brücke: Fußgänger	q1 -3139,14710 -3143,14676 -3150,14631
 (Stichstr. - Charlottenburger Chaussee): Fußgänger	q1 -2039,13276 -2031,13310 -2047,13434
