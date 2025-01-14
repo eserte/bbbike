@@ -13,6 +13,11 @@
 # REMOVED --- #: valid: -20241028
 # REMOVED --- Michaelkirchplatz: Gegenverkehrsreglung	X::inwork::alternating 11349,11227
 # 
+#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
+#: next_check: 2025-04-23
+#: valid: -20250423
+Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsreglung	X::inwork::alternating 9751,11243
+# 
 #: next_check_id: RING-2025
 #: source_id: viz2021:13.36206,52.4473,24.07.2024,10:00 (bis 25.07.2025) (inaktiv)
 #: source_id: viz2021:13.363257,52.446918,24.07.2024,10:00 (bis 25.07.2025)
@@ -54,7 +59,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # REMOVED --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2025-01-05
+#: last_checked: 2025-01-13
 #: check_frequency: 45d
 #: next_check: 2025-04-30
 #: valid: -20250430
@@ -2731,7 +2736,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-01-05
+#: last_checked: 2025-01-13
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
@@ -3833,7 +3838,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2024-11-18
+#: last_checked: 2025-01-13
 #: check_frequency: 120d
 	X::inwork 12185,7381
 # 

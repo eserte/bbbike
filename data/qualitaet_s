@@ -3964,7 +3964,7 @@ Willstätterstr.: Asphalt	Q0 14187,6555 14306,6651
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 10644,8363 10360,8521
 (Strecke an der nordöstlichen Begrenzung - Rundkurs): Asphalt	Q0 11000,8067 10902,8012
-(Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11490,7737 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
+(Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11490,7735 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Flughafen Tempelhof - Eingang Oderstr.): Asphalt	Q0 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn): Asphalt	Q0 9302,7294 9351,7241 9474,7182
 (Weg parallel zum Tempelhofer Damm): Asphalt	Q0 9300,7312 9281,7651 9281,7795
@@ -12489,7 +12489,9 @@ Cheruskerstr.: Asphalt	Q0; 7412,8273 7412,8351 7410,8593
 Cheruskerstr.: Asphalt	Q0; 7410,8593 7412,8351 7412,8273
 Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
-Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7279,16057 7158,16167 7051,16264
+Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7316,16024
+Malplaquetstr.: Verbundsteinpflaster	Q1 7316,16024 7279,16057
+Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7279,16057 7158,16167 7051,16264
 Stahnsdorfer Damm: asphaltiert	Q0 -4999,1083 -4978,918 -4875,833
 Stahnsdorfer Damm: asphaltiert	Q0 -4875,833 -4256,369
 Stahnsdorfer Damm: asphaltiert	Q0 -4256,369 -4252,365 -3997,169
@@ -13540,7 +13542,9 @@ Weverstr.: Kopfsteinpflaster	Q2 -4169,12371 -4080,12377 -3987,12377
 Weverstr.: Asphalt	Q0 -3987,12377 -3940,12377 -3892,12378 -3777,12384 -3634,12388 -3269,12406
 Buggenhagenstr.: Asphalt mit einigen Schäden	Q1 14425,13780 14371,13619
 Karlstadter Str.: Kopfsteinpflaster	Q2 11492,18347 11579,18184 11602,18133 11655,18018
-Utrechter Str.: Kopfsteinpflaster	Q2 7024,15810 7177,15984 7279,16057 7294,16068 7474,16086
+Utrechter Str.: Kopfsteinpflaster	Q2 7024,15810 7177,15984 7279,16057
+Utrechter Str.: Verbundsteinpflaster	Q1 7279,16057 7294,16068 7333,16072
+Utrechter Str.: Kopfsteinpflaster	Q2 7333,16072 7474,16086
 Odinstr.: Kopfsteinpflaster	Q2 18006,9335 17898,9564 17890,9580
 Odinstr.: Kopfsteinpflaster	Q2 17890,9580 17866,9639
 Wolfsburger Weg: Beton	Q0 10504,4705 10386,4771 10304,4801 10105,4818 10012,4826

@@ -191,7 +191,7 @@ Spreewaldplatz	F:P 12292,10374 12243,10274 12341,10218 12292,10374
 #: XXX Werden die Wege nachts (genaue Schließzeiten?) abgeschlossen sein? Oder wird das nur situationsbedingt (wann?) passieren?
 #: XXX Neue Lampen werden geplant -> nolighting-Einträge ggfs. prüfen.
 #: priority: #A
-#: last_checked: 2025-01-08
+#: last_checked: 2025-01-13
 #: check_frequency: 90d
 #: next_check: 2025-04-01
 Görlitzer Park	F:P 13220,9980 13162,9904 13139,9880 13086,9825 12932,9900 12983,10000 12881,10056 12829,9957 12814,9966 12341,10218 12397,10335 12317,10382 12309,10427 12348,10432 13220,9980
@@ -1723,6 +1723,9 @@ Stadtplatz Gut Hellersdorf	F:Square 23362,15021 23314,15008 23305,15054 23350,15
 Johanna-und-Eduard-Arnhold-Platz	F:Square 7842,11414 7900,11395 7921,11369 7933,11407 7952,11458 7927,11467 7925,11460 7912,11418 7892,11426 7907,11466 7925,11460 7927,11467 7863,11484 7861,11479 7842,11414
 #: note: überwiegend frei befahrbar
 Gertrud-Classen-Platz	F:Square 12583,15566 12556,15518 12605,15491 12583,15566
+#: by: https://www.berliner-zeitung.de/mensch-metropole/platz-im-mitte-soll-nach-stiller-heldin-aus-nazizeit-benannt-werden-li.2288950 (Benennung zu Franziska-Bereit-Platz vorgeschlagen)
+#: note: überwiegend frei befahrbar
+	F:Square 7294,16068 7333,16072 7316,16024 7279,16057 7294,16068
 #: ignore ^^^
 #############################################################################
 # in Potsdam

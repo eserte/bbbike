@@ -141,7 +141,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2024-12-18
+#: last_checked: 2025-01-13
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -480,7 +480,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-01-08
+#: last_checked: 2025-01-14
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -506,7 +506,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 3 (Fahrradstraße?)
-#: last_checked: 2024-11-23 (mapillary) vvv
+#: last_checked: 2025-01-12 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: osm_watch: way id="169459736" version="15"
@@ -562,7 +562,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866 (Antrag zum Radverkehr auf der Oderbrücke)
 #: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023) (inaktiv)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
-#: last_checked: 2024-08-02 (mapillary)
+#: last_checked: 2025-01-13
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
@@ -1250,7 +1250,7 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/zweigleisiger-ausbau-der-m1-ist-von-der-bvg-geplant_a318012 (Straßenbahn ab 2026 zweigleisig)
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/durchgangsverkehr-weicht-auf-anwohnerstrassen-aus_a372317
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
-#: last_checked: 2024-07-13 vvv
+#: last_checked: 2025-01-12 (mapillary) vvv
 #: check_frequency: 540d vvv
 #: next_check: 2026-12-31 vvv
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
@@ -5195,7 +5195,7 @@ Willstätterstr.: Asphalt	Q0 14187,6555 14306,6651
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0- 10644,8363 10360,8521
 (Strecke an der nordöstlichen Begrenzung - Rundkurs): Asphalt	Q0+ 11000,8067 10902,8012
-(Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11490,7737 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
+(Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11490,7735 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Flughafen Tempelhof - Eingang Oderstr.): Asphalt	Q0 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn): Asphalt	Q0 9302,7294 9351,7241 9474,7182
 (Weg parallel zum Tempelhofer Damm): Asphalt	Q0 9300,7312 9281,7651 9281,7795
@@ -13733,6 +13733,7 @@ Marathonallee: Asphalt mit leichten Rissen	Q0- 818,11954 702,11929 589,11953
 Marathonallee: Asphalt mit Schäden	Q1+ 589,11953 439,11968
 Marathonallee: Asphalt	Q0+ 439,11968 291,11941
 # 
+#: by: https://www.tagesspiegel.de/berlin/bezirke/fahrrad-baustellen-in-berlin-spandau-wir-bauen-einen-radweg-aus-cashewkernen-13011658.html
 (Staaken - Falkensee): unbefestigt, teilweise Schotter	Q2 -8079,16164 -8119,16190 -8183,16273 -8295,16360
 # 
 (Glühwürmchenweg - Pionierstr.): Asphalt	Q0 -6048,16292 -5959,16235
@@ -15635,7 +15636,12 @@ Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^
 # 
 #: by: Mara Kuhl: vvv
-Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7279,16057 7158,16167 7051,16264
+#: confirmed_by: mapillary
+Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7316,16024
+#: corrected_by: mapillary (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Malplaquetstr.: Verbundsteinpflaster	Q1 7316,16024 7279,16057
+#: confirmed_by: mapillary
+Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7279,16057 7158,16167 7051,16264
 #: corrected_by: srt (Q2 -> Q0) vvv
 Stahnsdorfer Damm: asphaltiert	Q0 -4999,1083 -4978,918 -4875,833
 Stahnsdorfer Damm: asphaltiert	Q0 -4875,833 -4256,369
@@ -18499,8 +18505,14 @@ Buggenhagenstr.: Asphalt mit einigen Schäden	Q1- 14425,13780 14371,13619
 Karlstadter Str.: Kopfsteinpflaster	Q2 11492,18347 11579,18184 11602,18133 11655,18018
 #: by: ^^^
 # 
-#: by: christoph (stauden):
-Utrechter Str.: Kopfsteinpflaster	Q2 7024,15810 7177,15984 7279,16057 7294,16068 7474,16086
+#: by: christoph (stauden): vvv
+#: confirmed_by: mapillary
+Utrechter Str.: Kopfsteinpflaster	Q2 7024,15810 7177,15984 7279,16057
+#: corrected_by: mapillary (Kopfsteinpflaster, Q2 -> ...)
+Utrechter Str.: Verbundsteinpflaster	Q1 7279,16057 7294,16068 7333,16072
+#: confirmed_by: mapillary
+Utrechter Str.: Kopfsteinpflaster	Q2 7333,16072 7474,16086
+#: by ^^^
 # 
 #: by: Martina Schmitz: vvv
 #: confirmed_by: srt
@@ -18540,6 +18552,7 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1410581.php (Arbeiten ab 2024)
 #: by: https://www.tagesspiegel.de/berlin/berliner-ausflugsparadies-an-havel-und-wannsee-so-wird-der-gutspark-neu-kladow-20242025-umgebaut-11351305.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/baustelle-im-berliner-paradies-wie-stehts-um-den-havelradweg-im-gutspark-neukladow-12499511.html (Asphaltierung 2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/fahrrad-baustellen-in-berlin-spandau-wir-bauen-einen-radweg-aus-cashewkernen-13011658.html (irgendwann 2025, 3,50m breiter Weg, Rampe vom Gutshaus zum Ufer)
 #: XXX wird hier asphaltiert?
 #: osm_watch: way id="205746338" version="9"
 #: last_checked: 2024-09-18
@@ -23882,6 +23895,7 @@ Dihlmannstr.: Kleinsteinpflaster	Q1-; 1065,15229 976,15195 971,15193 851,15155 7
 Dihlmannstr.: neu asphaltierter Radweg	Q0; 651,15091 755,15123 851,15155 971,15193 976,15195 1065,15229
 #: corrected_by: srt (glatt gepflasterter Weg -> ...)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/baume-oder-radweg-beides-hilft-diese-idee-aus-niedersachsen-der-berliner-problembaustelle-12542495.html (Sommer 2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/fahrrad-baustellen-in-berlin-spandau-wir-bauen-einen-radweg-aus-cashewkernen-13011658.html (irgendwann 2025)
 #: XXX möglicherweise Sanierung (Asphaltierung?)
 #: next_check: 2025-09-01
 (Dihlmannstr. - Jungfernheideweg): wassergebundene Decke, Rillen	Q1- 1065,15229 1192,15257
@@ -33689,5 +33703,7 @@ Einmündungsbereich asphaltiert	Q0 17813,8508
 Einmündungsbereich asphaltiert	Q0 6820,4347
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3959,3444
 Einmündungsbereich mit Kopfsteinpflaster	Q2+ 7032,4635
+#: by: mapillary
+Kreuzungsbereich mit Verbundsteinpflaster	Q1 7177,15984
 #: ignore ^^^
 #: section ^^^

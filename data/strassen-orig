@@ -158,8 +158,8 @@ Lilienthalstr.	N 10615,8558 10633,8705 10640,8832 10661,8914 10675,8940 10748,90
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	NN 11472,7899 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung)	NN 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363 10360,8521
 (Strecke an der nordöstlichen Begrenzung - Rundkurs)	NN 11000,8067 10902,8012
-(Weg parallel zur Oderstr.)	NN 11458,7897 11490,7737 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
-(Eingang Kienitzer Str. - Flughafen Tempelhof)	NN 11504,7738 11490,7737 11482,7735 11472,7732
+(Weg parallel zur Oderstr.)	NN 11458,7897 11490,7735 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
+(Eingang Kienitzer Str. - Flughafen Tempelhof)	NN 11504,7738 11490,7735 11482,7734 11472,7732
 (Flughafen Tempelhof - Eingang Allerstr.)	NN 11507,7647 11521,7638
 (Flughafen Tempelhof - Eingang Okerstr.)	NN 11528,7528 11540,7534
 (Flughafen Tempelhof - Eingang Leinestr.)	NN 11547,7432 11558,7438
@@ -4776,8 +4776,8 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: osm_watch: way id="31428032" version="16"
 #: osm_watch: way id="386544517" version="4"
 #: osm_watch: note 2048562 11
-#: last_checked: 2024-11-06 (rbb)
-#: check_frequency: 60d
+#: last_checked: 2025-01-12 (mapillary)
+#: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-05-01
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh)	NN 7090,19943 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
 Hertzstr.	N 7090,19943 7209,19928 7333,19911 7556,19882 7672,19869 7807,19811
@@ -4974,6 +4974,7 @@ Gravensteinstr. [Wohngebiet]	N 12694,22570 12738,22546 12781,22593 12738,22630
 # 
 Straße 171	N 12694,22570 12657,22596
 # REMOVED (zumindest dieses Teilstück existiert nicht mehr) --- Straße 171	N 12657,22596 12628,22604
+#: note: Privatstraße
 An der Streuobstwiese	N 12657,22751 12616,22697 12628,22604 12668,22537
 # 
 Straße 76a	N 12773,22678 12883,22615 12920,22597
@@ -15911,8 +15912,8 @@ Cheruskerstr.	N 7446,8200 7412,8253 7412,8273 7412,8351 7410,8593 7408,8648 7439
 #: osm.highway: service
 #: oldname: -20151010: <namenslos>
 EUREF-Campus	N 7225,8219 7234,8277 7172,8295 7120,8336 7278,8544
-Malplaquetstr.	N 7441,15909 7279,16057 7158,16167 7051,16264
-Utrechter Str.	N 7024,15810 7177,15984 7279,16057 7294,16068 7474,16086
+Malplaquetstr.	N 7441,15909 7316,16024 7279,16057 7158,16167 7051,16264
+Utrechter Str.	N 7024,15810 7177,15984 7279,16057 7294,16068 7333,16072 7474,16086
 Paulsenstr.	N 4172,5918 4238,6080 4268,6154 4298,6239 4339,6315 4379,6390 4407,6445 4423,6477 4500,6612 4528,6700 4528,6715
 Laubenheimer Str.	N 4322,7085 4384,7029 4434,6957 4482,6866 4506,6811 4528,6715
 #: by: Trine (Zugang zum Blumberger Damm vorhanden)
