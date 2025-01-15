@@ -14,6 +14,8 @@ use Tk::ROText;
 
 use BBBikeUtil qw(bbbike_root is_in_path);
 
+use constant MAX_GREP_WORD_LENGTH => 512;
+
 my $bbbike_root = bbbike_root;
 chdir "$bbbike_root/data" or warn "WARN: can't change to bbbike's data directory ($!), continue running nevertheless.\n";
 
@@ -120,6 +122,11 @@ MainLoop;
 # Function to run grep command
 sub run_grep {
     my $grep_word = $grep_entry->get;
+    if (length $grep_word > MAX_GREP_WORD_LENGTH) {
+	warn "WARNING: word to search for is too long (" . length($grep_word) . " characters), snipped to " . MAX_GREP_WORD_LENGTH . "\n";
+	$grep_word = substr($grep_word, 0, MAX_GREP_WORD_LENGTH);
+    }
+	
     # XXX -limit 100 may be too small: /bahnhofstr/ has currently 317 matches
     open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "-n", "--", $grep_word or die $!;
     binmode $fh, ':utf8';
