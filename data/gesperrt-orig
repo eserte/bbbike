@@ -170,7 +170,7 @@ Edelweißstr.	1 8234,19936 7993,19949 7935,19954 7885,19975 7748,20040
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
 Antonienstr.	1 3930,17923 3946,18003 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	1s:q3 4228,19024 4223,18982
-Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
+Eichborndamm	1 4223,18982 4211,18882 4163,18676 4094,18307 4053,18108 4016,17918
 # REMOVED --- #: next_check_id: SCHOENEWEIDE-2018
 # REMOVED --- #: XXX während der Bauarbeiten in der Brückenstraße ist die Einbahnstraßenregelung mindestens bis Fließstr. aufgehoben (aber auch die Radspur)
 # REMOVED --- #: XXX später könnte man den Abschnitt bis Kupferkamp mit 1s:q4 versehen
@@ -374,7 +374,7 @@ Schönblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724
 Knorrpromenade	1 14424,11639 14369,11489
 Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8456,18371 8622,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
-Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18737 7003,18715
+Alt-Reinickendorf	1 7067,18711 7030,18710 6875,18730 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18743 7067,18711
 #: note: außerdem Fußgängerzone
 Breslauer Platz/Lauterstr.	1s:q4 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5314,7217
@@ -4042,7 +4042,7 @@ Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 172
 #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant)
 #: osm_watch[closed]: note 4551219 3
 #: osm_watch: way id="1009956629" version="11"
-#: last_checked: 2025-01-09 (daf)
+#: last_checked: 2025-01-15
 # REMOVED --- #: next_check: 2024-10-31
 Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::inwork 7912,14160 7875,14204
 # 
@@ -4152,7 +4152,7 @@ Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-01-04 vvv
+#: last_checked: 2025-01-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-01 vvv
 #: osm_watch: way id="1054783030" version="3"
@@ -4541,16 +4541,23 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2024-08-20 (okas)
+#: last_checked: 2025-01-15
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2026-10-01
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #
 #: next_check_id: U6-2022
-#: last_checked: 2024-08-20 (okas)
+#: last_checked: 2025-01-15
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
+# 
+#: next_check_id: U6-2022
+#: last_checked: 2025-01-15
+#: check_frequency: 120d
+#: next_check: 2026-10-01
+Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
+# 
 # 
 # REMOVED (kein Gerüst mehr) --- #: next_check_id: U6-2022 --- #: XXX Wie sieht die Situation nach den Bauarbeiten aus? --- #: last_checked: 2022-09-26 (mapillary) --- #: next_check: 2022-11-30 --- Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,17938 3706,17931 3833,17929
 # 
@@ -4913,7 +4920,7 @@ Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,481
 #: osm_watch: way id="24557771" version="10" vvv
 #: XXX bis wann sind die Wege gesperrt? vvv
 #: note: wobei die Absperrungen weggeschoben sein können
-#: last_checked: 2024-07-03 vvv
+#: last_checked: 2025-01-13 (okas) vvv
 #: check_frequency: 180d vvv
 # REMOVED (Sperrung erst weiter hinten) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9473,-92
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323
@@ -4958,7 +4965,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 # REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
 #: osm_watch: way id="4713304" version="49"
 #: priority: #A
-#: last_checked: 2024-09-21 (youtube)
+#: last_checked: 2025-01-13 (okas)
 #: check_frequency: 360d
 #: next_check: 2025-10-31
 Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
@@ -5212,7 +5219,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 Parochialstr.: 60m der Straße (Fahrbahn + Bürgersteige) zwischen Jüdenstr. und Klosterstr. gesperrt	2::inwork 10831,12371 10957,12401
 # 
 #: osm_watch: note 4480556 3
-#: last_checked: 2024-12-19
+#: last_checked: 2025-01-15
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021
@@ -5230,7 +5237,7 @@ Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: note: Bei allen traffic-Diensten ist hier eine *feste* Einbahnstraße eingetragen
 #: also_indoor: traffic
-#: last_checked: 2024-12-11
+#: last_checked: 2025-01-15
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -5466,7 +5473,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2024-12-26 vvv
+#: last_checked: 2025-01-15 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -5689,7 +5696,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: osm_watch: way id="1223345278" version="5"
 #: XXX Außerdem: der S-Bahnhof wird zukünftig wohl südlich des Bahnunterführung sein
 #: XXX Unterführung wird voraussichtlich im Sommer 2025 fertig sein
-#: last_checked: 2024-11-10 (bahninfo-forum)
+#: last_checked: 2025-01-13 (okas)
 #: check_frequency: 180d
 #: next_check: 2025-08-15
 Bhf. Blankenfelde: Bahnübergang existiert nicht mehr, neue Unterführung wird gebaut	2::inwork 11667,-7536 11601,-7560 11551,-7599

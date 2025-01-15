@@ -45,7 +45,7 @@
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
-#: last_checked: 2025-01-08
+#: last_checked: 2025-01-13 (okas)
 #: check_frequency: 120d
 #: next_check: 2025-04-30
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -854,7 +854,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 #: note: Scharnweberstraße/Seidelstr./Berliner Str., Richtung Wedding
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben; außerdem Zweirichtungsradweg im Bereich der Seidelstraßenbrücke vvv
-#: last_checked: 2024-08-10 vvv
+#: last_checked: 2025-01-15 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2026-10-01 vvv
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2015,20336 2044,20289 2109,20188 2169,20095 2224,20007 2268,19919
@@ -1017,7 +1017,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2024-12-11
+#: last_checked: 2025-01-15
 #: check_frequency: 90d
 #: next_check: 2025-12-19
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -1347,7 +1347,7 @@ Fahrradschleuse	RW3; 7612,14325 7566,14404
 	RW3;RW3 7733,14570 7711,14548 7609,14447 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7733,14570
 Gehweg für Radfahrer frei	RW1; 7733,14570 7960,14794
-	RW1; 7960,14794 8057,14876
+Verbundsteinpflaster	RW1; 7960,14794 8057,14876
 	RW3; 7368,14573 7401,14526 7487,14472 7532,14446 7566,14404
 	RW3; 7566,14404 7532,14446 7487,14472 7401,14526
 Fahrradschleuse	RW3; 7401,14526 7368,14573
@@ -2703,7 +2703,7 @@ Gehwegplatten/Verbundsteinpflaster, hereinragende parkende Autos	RW1; 5220,14043
 #: note: ehemaliger Radweg ist explizit abgesperrt
 	RW3;RW3 6074,14194 6089,14197 6204,14220 6246,14228 6481,14277 6656,14311 6920,14365 7080,14398
 Radweg nur aufgemalt	RW0; 8197,16809 8127,16894 8079,16953
-vorhandener Radweg ist abgesperrt	RW0; 8079,16953 8127,16894 8197,16809
+teilweise vorhandener Radweg ist abgesperrt	RW0; 8079,16953 8127,16894 8197,16809
 	RW1;RW1 8197,16809 8249,16741
 	RW1;RW1 8079,16953 7970,17087 7902,17166
 	RW1; 7902,17166 7675,17430
@@ -4640,6 +4640,7 @@ Ersatzbrücke exklusiv für Radfahrer und Fußgänger	RW10; 17528,6502 17492,6462 17
 	RW1; 17528,6502 17614,6571
 	RW4; 17614,6571 17528,6502
 Verbundsteinpflaster	RW2; 17614,6571 17800,6504 17826,6495 17991,6431 18191,6363 18341,6313 18423,6285 18464,6269 18473,6265 18574,6197 18670,6132 18766,6067 18843,6013 18861,6000 18928,5920 19010,5833
+	RW7;RW7 6659,16133 6843,16346
 	RW1; 6843,16346 7056,16587 7106,16646 7177,16715 7267,16784 7394,16836 7583,16872 7666,16879
 asphaltiert, aber mäßige Qualität	RW1; 7666,16879 7583,16872 7394,16836 7267,16784 7177,16715
 Verbundsteinpflaster, mäßige Qualität	RW1; 7177,16715 7106,16646 7056,16587 6843,16346
@@ -5976,7 +5977,7 @@ asphaltiert	RW1; 17169,11677 17020,11748
 	RW6;RW6 2953,11830 2956,11790
 	RW6;RW6 2795,12480 2817,12334 2658,12312
 	RW6;RW6 7441,15909 7316,16024 7279,16057 7158,16167 7051,16264
-	RW6;RW6 7177,15984 7279,16057 7294,16068 7333,16072 7474,16086
+	RW6;RW6 7061,15852 7177,15984 7279,16057 7294,16068 7333,16072 7474,16086
 #: note: Sömmeringstr., Wintersteinstr., Richard-Wagner-Str. Richtung Süden (Opernroute Nord)
 Grün/Rotbeschichtung	RW4; 3711,13210 3711,13098 3714,12949 3716,12925
 Grünbeschichtung, teilweise mit niedrigen Pollern	RW4; 3716,12925 3734,12715
@@ -7093,8 +7094,8 @@ Busspur ist immer gültig	RW5; 13909,20928 13712,20919
 #: confirmed_by ^^^
 #: by: ^^^
 	RW1; 8091,15377 8024,15401
-asphaltiert	RW1; 4609,18199 4531,18217 4414,18243 4291,18264 4181,18284 4102,18298
-Radweg nur aufgemalt, Gehwegplatten	RW1; 4102,18298 4009,18322
+asphaltiert	RW1; 4609,18199 4531,18217 4414,18243 4291,18264 4182,18288 4094,18307
+Radweg nur aufgemalt, Gehwegplatten	RW1; 4094,18307 4009,18322
 	RW6;RW6 -48,22595 -83,22536 -113,22451
 	RW6;RW6 -83,22536 -159,22590 -237,22640
 	RW6;RW6 -130,22647 -159,22590
@@ -7216,7 +7217,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2024-12-11 vvv
+#: last_checked: 2025-01-15 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -8527,6 +8528,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung erst 2023)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/pop-up-radwege-werden-dauerhaft_a332363 (2022 nur teilweise Verstetigung, fertig erst 2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/220824_mobilitaetswenderat_final.pdf (Fertigstellung Mitte 2023)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1521316.php (Abschluss im Frühjahr 2025)
 #: source_id: 2147340884 (inaktiv)
 #: source_id: 2147340970 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_90638 (inaktiv)
@@ -9303,4 +9305,6 @@ Verbundsteinpflaster	RW2; 21171,222 21115,271
 	RW6;RW6 17741,2824 17688,2744 17471,2872 17569,2987
 # 
 	RW6;RW6 6204,14220 6206,14136
+# 
+Verbundsteinpflaster	RW1; 4952,17122 4929,17069 4897,17040
 # 

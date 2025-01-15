@@ -910,7 +910,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: by: http://www.flickr.com/photos/lapidarium42/7708833948/in/pool-gwb
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt? laut osm mittweile ja (aber eine Anfrage läuft noch)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
-#: osm_watch: way id="155071540" version="23"
+#: osm_watch: way id="155071540" version="24"
 #: last_checked: 2024-11-27 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-04-24
@@ -2140,4 +2140,7 @@ Peter-Anders-Str. -> Sonnenallee	3 15356,6532 15334,6492 15429,6403
 Sonnenallee	3nocross 15505,6342 15452,6384 15429,6403
 # 
 (Buntzelstr. - Bohnsdorfer Kirchsteig): Poller	3 * 21089,-378 *
+# 
+Jupiterstr.: Einfahrt nicht möglich, Kette	3 * 4466,17600 4430,17466
+Jupiterstr.: Ausfahrt nicht möglich, Kette	3 4430,17466 4466,17600 *
 # 

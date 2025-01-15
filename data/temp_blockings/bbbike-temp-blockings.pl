@@ -1513,7 +1513,7 @@ EOF
        text  => 'Emmentaler Str. (Reinickendorf) Richtung Westen zwischen Residenzstr. und Gamsbartweg Baustelle, Straße Richtung Westen gesperrt, Einbahnstraßenregelung Richtung Osten (bis 17.12.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-	q4; 7676,18492 7594,18427 7510,18364 7335,18257
+	q4; 7676,18492 7593,18433 7507,18372 7335,18257
 EOF
      },
      { from  => 1101934006, # 2004-12-01 21:46
@@ -36432,7 +36432,7 @@ EOF
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-01-14 (traffic)
+#: last_checked: 2025-01-15 (traffic)
 #: check_frequency: 1d
 # REMOVED --- #: next_check: 2025-01-08
 	q4::inwork; 9011,14019 8870,13926
@@ -41578,8 +41578,8 @@ EOF
 #: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025)
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="34"
-#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2024-12-14 (osm) vvv
+#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
+#: last_checked: 2025-01-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -41828,7 +41828,7 @@ EOF
 #: osm_watch: way id="279580369" version="7"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2024-08-10
+#: last_checked: 2025-01-15
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 	q3::inwork 4335,17642 4392,17777
@@ -41955,7 +41955,7 @@ EOF
 #: next_check_id: STEGEWEG-2023
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12146 (Anfrage)
 # REMOVED (offen) --- #: last_checked: 2024-07-13 --- #: check_frequency: 90d
-	q4::inwork 6869,18721 6879,18737 6910,18861
+	q4::inwork 6875,18730 6879,18743 6910,18861
 # REMOVED (hier fertig) ---	q4::inwork 6910,18861 6960,19047
 EOF
      },
@@ -43568,6 +43568,7 @@ EOF
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T)
@@ -45927,7 +45928,7 @@ EOF
 #: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025)
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
-#: last_checked: 2024-12-26
+#: last_checked: 2025-01-15
 #: check_frequency: 90d
 #: next_check: 2025-03-10
 #	q4::inwork; 8453,13611 8572,13671

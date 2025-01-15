@@ -14,6 +14,7 @@
 # REMOVED --- Michaelkirchplatz: Gegenverkehrsreglung	X::inwork::alternating 11349,11227
 # 
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
+#: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025)
 #: next_check: 2025-04-23
 #: valid: -20250423
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsreglung	X::inwork::alternating 9751,11243
@@ -140,7 +141,7 @@ Möckernstr./nördlich Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternatin
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2024-12-11
+#: last_checked: 2025-01-15
 #: check_frequency: 90d
 #: next_check: 2025-12-19
 #: valid: -20251219
@@ -228,7 +229,7 @@ Gürtelstr.	F::inwork 15153,11691
 # 
 #: next_check_id: ZIEGEL-2024
 # REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- 
-#: last_checked: 2024-12-26
+#: last_checked: 2025-01-15
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-01-31
 #: valid: -20250131
@@ -2165,7 +2166,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 1406,15719
 	X 3028,15696
-	X 4102,18298
+	X 4094,18307
 	X 4009,18322
 #: note: Radfahrer Richtung Südwesten haben zwei Ampeln und müssen bei der zweiten immer warten
 	X 4704,17101
@@ -3799,7 +3800,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2025-01-04
+#: last_checked: 2025-01-15
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-15
 	X::inwork 8250,14672

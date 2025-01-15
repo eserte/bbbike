@@ -89,7 +89,7 @@ Edelweißstr.	1 8234,19936 7993,19949 7935,19954 7885,19975 7748,20040
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
 Antonienstr.	1 3930,17923 3946,18003 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	1s 4228,19024 4223,18982
-Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
+Eichborndamm	1 4223,18982 4211,18882 4163,18676 4094,18307 4053,18108 4016,17918
 Spreestr.	1 17900,6072 17939,5968 17935,5961 17877,5860
 Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
@@ -197,7 +197,7 @@ Schönblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724
 Knorrpromenade	1 14424,11639 14369,11489
 Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8456,18371 8622,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
-Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18737 7003,18715
+Alt-Reinickendorf	1 7067,18711 7030,18710 6875,18730 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18743 7067,18711
 Breslauer Platz/Lauterstr.	1s 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5314,7217
 Stolbergstr.	1 8864,6440 8862,6467 8852,6642
@@ -1452,7 +1452,11 @@ Basdorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 20102,15709 19880,1
 Mittelstreifen	3nocross::ignrte 21108,11628 21251,11560 21275,11547 21311,11528
 Alt-Biesdorf -> Walsheimer Str.: Mittelstreifen	3::igndisp 21108,11628 21251,11560 21352,11701
 Mittelstreifen	3nocross::ignrte 4704,17101 4931,17174 4997,17241
+Charles-Corcelle-Ring -> Kurt-Schumacher-Damm: Mittelstreifen	3::igndisp 4952,17122 4931,17174 4704,17101
+Charles-Corcelle-Ring -> Str. 455: Mittelstreifen	3::igndisp 4952,17122 4931,17174 4916,17201
+Kurt-Schumacher-Damm -> Charles-Corcelle-Ring: Mittelstreifen	3::igndisp 4997,17241 4931,17174 4952,17122
 Kurt-Schumacher-Damm -> Str. 455: Mittelstreifen	3::igndisp 4704,17101 4931,17174 4916,17201
+Str. 455 -> Charles-Corcelle-Ring: Mittelstreifen	3::igndisp 4916,17201 4931,17174 4952,17122
 Str. 455 -> Kurt-Schumacher-Damm: Mittelstreifen	3::igndisp 4916,17201 4931,17174 4997,17241
 Mittelstreifen	3nocross::ignrte 14788,3441 14822,3409 14994,3245
 Rudower Str. -> Grasmückenweg: Mittelstreifen	3::igndisp 14788,3441 14822,3409 14877,3475
@@ -3571,6 +3575,7 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 5521,8087 5522,8024
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
+Klixstr.: Einbahnstraße Richtung Norden	1s:inwork 3871,18144 3833,17929
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861

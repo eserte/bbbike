@@ -402,8 +402,8 @@ Luzerner Str.: verfugtes Kopfsteinpflaster	Q2 3251,1881 3148,1888 3044,1890
 Carstennstr.: verfugtes Kopfsteinpflaster	Q2 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493 2740,2588 2625,2850
 Ringstr.: Kopfsteinpflaster	Q2 2625,2850 2632,2969 2655,3025 2698,3068
 Ringstr.: Asphalt	Q0 3507,3654 3558,3688
-Alt-Reinickendorf: Kopfsteinpflaster	Q2 7209,18682 7003,18715 6879,18737 6793,18763 6716,18788 6572,18793 6528,18808 6435,18839
-Alt-Reinickendorf: Kopfsteinpflaster	Q2 6572,18793 6734,18728 6775,18726 6869,18721 7003,18715
+Alt-Reinickendorf: Kopfsteinpflaster	Q2 7209,18682 7067,18711 6879,18743 6793,18763 6716,18788 6572,18793 6528,18808 6435,18839
+Alt-Reinickendorf: Kopfsteinpflaster	Q2 6572,18793 6734,18728 6775,18726 6875,18730 7030,18710 7067,18711
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 6528,18808 6535,18846 6502,18905
 Edelhofdamm: Asphalt	Q0 3456,25601 3307,25554
 Edelhofdamm: Asphalt	Q0 3307,25554 3166,25496
@@ -6150,6 +6150,7 @@ Straße 455: Beton	Q0 4879,17246 4902,17234 4916,17201 4931,17174
 (Zufahrt zur Julius-Leber-Kaserne): Asphalt	Q0 4952,17122 4929,17069 4897,17040
 Charles-Corcelle-Ring: Beton	Q0 3676,16497 3711,16481 3895,16381 4263,16166
 Charles-Corcelle-Ring: Asphalt	Q0 4263,16166 4724,15925 4775,15929 4804,15966 4973,16847 4982,16984 4973,17042 4952,17122 4988,17172 5014,17212 4997,17241
+(Charles-Corcelle-Ring - Kurt-Schumacher-Damm): Verbundsteinpflaster	Q1 4952,17122 4931,17174
 (Dohnagestell - Plötzensee): Kleinsteinpflaster	Q1 5130,15692 5086,15664
 (Dohnagestell - Plötzensee): unbefestigter Pfad	Q2 5086,15664 5113,15596
 (Dohnagestell - Plötzensee): Verbundsteinpflaster	Q1 5113,15596 5134,15565
@@ -8012,7 +8013,8 @@ Friedrich-Wilhelm-Str. (Reinickendorf): Asphalt	Q0 7615,18204 7405,18047
 Rorschacher Zeile: Beton	Q0 7291,18392 7203,18360 7198,18307
 (Lindauer Allee/Aroser Allee - Alt-Reinickendorf): Asphalt	Q0 6720,18616 6740,18644 6770,18670 6775,18726
 (Lindauer Allee/Aroser Allee - Alt-Reinickendorf): Kleinsteinpflaster	Q1 6775,18726 6778,18747 6793,18763
-Stegeweg (Reinickendorf): Betonsteinpflaster	Q1 6869,18721 6879,18737 6910,18861 6960,19047
+Stegeweg (Reinickendorf): Betonsteinpflaster	Q1 6879,18743 6910,18861 6960,19047
+Stegeweg (Reinickendorf): Kopfsteinpflaster	Q2 6875,18730 6879,18743
 Markscheiderstr.: Asphalt	Q0 6960,19047 7105,19677
 (Markscheiderstr. - An der Nordbahn): Asphalt	Q0 7105,19677 7102,19702 7121,19726
 Unterführung: Asphalt	Q0 6659,20135 6680,20165
@@ -8638,11 +8640,12 @@ Feldspatzwenweg: Verbundsteinpflaster	Q1 7609,23108 7583,23177 7825,23265 7852,2
 (Freizeitpark Lübars, nördlicher Weg): Asphalt	Q0 7841,23122 7812,23079 7780,23050 7771,23020
 (Freizeitpark Lübars, nördlicher Weg): wassergebundene Decke	Q1 7771,23020 7734,22987 7642,22985 7553,22952
 Freizeitpark Lübars: fester Sandweg	Q1 7812,23079 7833,23081 7866,23073
-Amendestr.: Asphalt	Q0 7453,17899 7736,18005 7927,18079 8031,18119 8061,18159
+Amendestr.: Asphalt	Q0 7453,17899 7731,18012 7919,18083 8031,18119 8061,18159
 Ribbeweg: Kleinsteinpflaster	Q1 7882,18209 7913,18156
-(Ribbeweg - Amendestr.): Verbundsteinpflaster	Q1 7913,18156 7927,18079
-Emmentaler Str.: Asphalt	Q0 7335,18257 7510,18364 7594,18427 7676,18492 7753,18542
-Gamsbartweg: Asphalt	Q0 7594,18427 7551,18515
+(Raschdorffstr./Ribbeweg - Amendestr.): Gehwegplatten	Q0 7872,18204 7897,18147
+(Raschdorffstr./Ribbeweg - Amendestr.): Verbundsteinpflaster	Q1 7897,18147 7919,18083
+Emmentaler Str.: Asphalt	Q0 7335,18257 7507,18372 7593,18433 7676,18492 7753,18542
+Gamsbartweg: Asphalt	Q0 7593,18433 7551,18515
 Herbststr.: Beton	Q0 7997,18524 8096,18456
 Nordbahnstr.: Asphalt	Q0 8174,18565 8292,18475
 (Klemkepark - Klemkestr.): wassergebundene Decke, Feinschotter	Q1 7576,18837 7588,18761
@@ -9887,7 +9890,7 @@ Urselweg [Baustraße]: Asphalt	Q0 -888,3096 -804,3042
 Spitzmausweg: Verbundsteinpflaster	Q1 26096,12563 26183,12676 26193,12689
 Waschbärweg: Verbundsteinpflaster	Q1 26160,12538 26246,12648 26250,12656 26300,12715 26386,12651
 (Roedernallee - S-Bhf. Alt-Reinickendorf): schlechtes Kopfsteinpflaster	Q3 6433,19024 6513,19053 6564,19064
-(Freiheitsweg - S-Bhf. Alt-Reinickendorf): Mosaikpflaster	Q1 6558,18947 6564,19064
+(Freiheitsweg - S-Bhf. Alt-Reinickendorf): unebenes Mosaikpflaster	Q2 6545,18951 6564,19064
 (Roedernallee - S-Bhf. Alt-Reinickendorf): Mosaikpflaster/Parkweg	Q1 6415,19083 6513,19053
 (Triftpark): Parkweg, etwas Schotter	Q1 4538,20621 4486,20638 4433,20715 4341,20765 4225,20775 4203,20792
 (Am Grüngürtel - Weg zwischen Triftstr. und Eichborndamm): Parkweg	Q1 4597,20508 4626,20577
@@ -11886,8 +11889,10 @@ Perlpilzstr. [Stichstraße]: guter Beton	Q0 21356,-1245 21318,-1220 21275,-1176
 Egellsstr.: Asphalt	Q0 2568,19345 2294,19328 2160,19320
 Leo-Slezak-Str.: Asphalt	Q0 15054,6526 15153,6526 15158,6313
 Kopernikusstr. (Lichterfelde): Kopfsteinpflaster	Q2 3459,2944 3644,2937
-Windhuker Str.: mäßiges Kopfsteinpflaster	Q2 5426,16539 5359,16607
-Windhuker Str.: guter Asphalt	Q0 5359,16607 5228,16738
+Windhuker Str.: mäßiges Kopfsteinpflaster	Q2; 5426,16539 5359,16607
+Windhuker Str.: schlechtes Kopfsteinpflaster	Q3; 5359,16607 5426,16539
+Windhuker Str.: Asphalt, einige Schäden	Q0; 5359,16607 5228,16738
+Windhuker Str.: Asphalt	Q0; 5228,16738 5359,16607
 Hertastr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 1015,3858 949,4055
 Schwabstedter Weg: gutes Verbundsteinpflaster	Q1 -1786,21928 -2082,21963 -2246,21983
 Wallstr. (Kaulsdorf): guter Asphalt	Q0 22544,12001 22666,11998 22784,11995 22813,11968
@@ -13542,7 +13547,7 @@ Weverstr.: Kopfsteinpflaster	Q2 -4169,12371 -4080,12377 -3987,12377
 Weverstr.: Asphalt	Q0 -3987,12377 -3940,12377 -3892,12378 -3777,12384 -3634,12388 -3269,12406
 Buggenhagenstr.: Asphalt mit einigen Schäden	Q1 14425,13780 14371,13619
 Karlstadter Str.: Kopfsteinpflaster	Q2 11492,18347 11579,18184 11602,18133 11655,18018
-Utrechter Str.: Kopfsteinpflaster	Q2 7024,15810 7177,15984 7279,16057
+Utrechter Str.: Kopfsteinpflaster	Q2 7024,15810 7061,15852 7177,15984 7279,16057
 Utrechter Str.: Verbundsteinpflaster	Q1 7279,16057 7294,16068 7333,16072
 Utrechter Str.: Kopfsteinpflaster	Q2 7333,16072 7474,16086
 Odinstr.: Kopfsteinpflaster	Q2 18006,9335 17898,9564 17890,9580
@@ -14040,7 +14045,7 @@ Orchideenweg: Beton	Q1 15510,3778 15737,3609 16048,3378
 Orchideenweg: Asphalt/Beton	Q0 16048,3378 16221,3248
 Orchideenweg: Beton	Q1 16221,3248 16618,2965 16541,2866
 Brassenpfad: guter Beton	Q0 23641,3342 23452,3613 23337,3762 23316,3778
-Graf-Haeseler-Str.: gutes Kopfsteinpflaster	Q1 4096,17890 4139,18091 4181,18284
+Graf-Haeseler-Str.: gutes Kopfsteinpflaster	Q1 4096,17890 4139,18091 4182,18288
 Driesener Str.: Kopfsteinpflaster	Q2 10458,16509 10449,16415
 Driesener Str.: Kopfsteinpflaster	Q2 10449,16415 10438,16340 10421,16175 10405,16017
 Kleeblattstr.: gute Betonstraße	Q0 20813,536 20866,334 20894,236 20903,210
@@ -14193,8 +14198,8 @@ Scheiblerstr.: asphaltiert	Q0 16494,6948 16630,6800
 Skarbinastr.: guter Asphalt	Q0 12046,-1678 11997,-1407 11948,-1368 11739,-1384
 Freiheitsweg: gutes Verbundsteinpflaster	Q1 6636,18934 6715,18918 6753,18909 6829,18887 6910,18861 7157,18810
 Freiheitsweg: Gehwegplatten	Q0 7157,18810 7248,18793
-(Roedernallee - Freiheitsweg): unbefestigt	Q1 6437,18958 6490,18952 6558,18947
-(Roedernallee - Freiheitsweg): Asphalt	Q0 6558,18947 6636,18934
+(Roedernallee - Freiheitsweg): unbefestigt	Q1 6437,18958 6490,18952 6545,18951
+(Roedernallee - Freiheitsweg): Asphalt	Q0 6545,18951 6636,18934
 Veltener Str.: Kopfsteinpflaster und unbefestigte Fahrbahn	Q2 5391,18932 5842,18941
 (Veltener Str., Kienhorstpark): Asphalt, leicht uneben	Q1 5842,18941 6063,18977 6125,18971
 (Veltener Str., Kienhorstpark): Asphalt mit unbefestigten Abschnitten	Q1 6125,18971 6360,18861
@@ -14349,8 +14354,8 @@ Wolgaster Str.: Asphalt	Q0 9924,14785 9843,14949
 Zobeltitzstr.: Beton	Q0 3733,18376 3674,18372 3663,18187 3799,18159
 Zobeltitzstr.: Asphalt	Q0 3799,18159 3871,18144
 Zobeltitzstr.: Kopfsteinpflaster	Q2 3871,18144 3970,18126
-Zobeltitzstr.: Asphalt	Q0 3970,18126 4059,18107
-Zobeltitzstr.: Kopfsteinpflaster	Q2 4059,18107 4139,18091 4248,18066
+Zobeltitzstr.: Asphalt	Q0 3970,18126 4053,18108
+Zobeltitzstr.: Kopfsteinpflaster	Q2 4053,18108 4139,18091 4248,18066
 Zobeltitzstr.: Asphalt mit einigen leichten Schäden	Q0 4248,18066 4370,18039
 Zobeltitzstr.: unebenes Mosaikpflaster	Q1 4370,18039 4492,18013
 Zobeltitzstr.: Kleinsteinpflaster	Q1 4492,18013 4543,18001
@@ -14504,7 +14509,8 @@ Hüsung: älterer Asphalt mit Querrillen/Aufbrüchen und Ausbesserungen	Q0 13324,47
 Am Poloplatz: unebenes Mosaikpflaster	Q2 2111,26451 2181,26450 2199,26450
 Stanzer Zeile: Asphalt	Q0 6175,372 6130,449 6112,547 6089,643
 Stanzer Zeile: mäßig befahrbare Kleinpflastersteine	Q2 6089,643 6066,821 6067,865 6080,1011 6106,1133
-Saalmannstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 5173,18791 5181,19037
+Saalmannstr.: schlechtes Kopfsteinpflaster	Q3 5173,18791 5180,19004
+Saalmannstr.: mäßiges Kopfsteinpflaster	Q2 5180,19004 5181,19037
 Ifenpfad: guter Asphalt	Q0 10187,1345 10276,1383
 Karl-Egon-Str.: schlechtes Kopfsteinpflaster	Q3 18459,9354 18430,9199 18406,9052 18375,8874
 Humperdinckstr.: mäßiges Kopfsteinpflaster	Q2 5783,3182 5933,3261 5988,3283 6039,3275
@@ -15652,7 +15658,7 @@ Wichurastr.: guter Asphalt	Q0 7960,1977 7864,2018 7812,2033 7767,2077 7741,2096 
 Wichurastr.: Beton	Q0 7777,2447 7801,2527 7811,2573 7806,2624 7824,2654 7888,2644 7919,2656 7923,2688
 Miningstr.: Asphalt	Q0 13503,4846 13466,4889 13432,4900 13455,4995 13444,5097
 Stavenhagener Str.: Asphalt	Q0 13632,5126 13534,5111 13444,5097 13359,5086
-Raschdorffstr.: schlechtes Kopfsteinpflaster	Q3 7426,17981 7680,18106 7882,18209 7954,18251
+Raschdorffstr.: schlechtes Kopfsteinpflaster	Q3 7426,17981 7680,18106 7872,18204 7882,18209 7954,18251
 Raschdorffstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7954,18251 8096,18456 8174,18565 8257,18684
 Saalburgstr.: mäßiges Kopfsteinpflaster	Q2 11128,5782 11392,5505 11596,5450
 Saalburgstr.: Asphalt	Q0 11596,5450 11611,5479
@@ -16064,12 +16070,14 @@ Kurzebracker Weg: Beton	Q0 -1410,23283 -1520,23308 -1619,23336 -1719,23372 -1817
 Falkenhorststr.: schlechtes Kopfsteinpflaster	Q3 -2266,19692 -2187,19684 -2141,19681 -2078,19675 -1788,19663
 Ernst-Reinke-Str.: guter Asphalt	Q0 14324,13632 14302,13545 14227,13567
 Weststr. (Reinickendorf): mäßiges Verbundsteinpflaster	Q2 4359,17485 4396,17622
-Jupiterstr. (Reinickendorf): Sandbelag	Q1 4430,17466 4466,17600
-Marsstr.: Sandbelag	Q2 4538,17573 4506,17446
+Jupiterstr. (Reinickendorf): Sandbelag	Q2 4430,17466 4466,17600
+Marsstr.: Sandbelag und Rasengittersteine	Q2 4538,17573 4506,17446
 Saturnstr.: Beton	Q0 4617,17542 4587,17425
-Venusstr. (Reinickendorf): Sandbelag	Q2 4694,17511 4666,17404
+Venusstr. (Reinickendorf): Sandbelag	Q2 4694,17511 4673,17432
+Venusstr. (Reinickendorf): Asphalt	Q0 4673,17432 4666,17404
 Merkurstr. (Reinickendorf): Sandbelag	Q2 4762,17484 4737,17385
-Oststr. (Reinickendorf): Sandbelag	Q2 4826,17456 4805,17367
+Oststr. (Reinickendorf): Verbundsteinpflaster	Q1 4826,17456 4820,17430
+Oststr. (Reinickendorf): Sandbelag	Q2 4820,17430 4805,17367
 Ettersburger Weg: Beton	Q0 12875,16350 12919,16438
 Goyastr.: Beton	Q0 12859,16255 12900,16341
 Scharnweberstr. (Weißensee): Beton	Q0 12797,16285 12841,16366
@@ -16612,8 +16620,8 @@ Taldorfer Weg: Beton	Q0 5506,20197 5259,20186 5170,20182 5093,20192 4950,20299 4
 Jathoweg: welliger Asphalt	Q1 5305,20431 5266,20299 5259,20186
 Breitkopfstr.: Gehwegplatten	Q1 7820,17549 7809,17708 7789,17853
 Breitkopfstr.: Asphalt	Q0 7789,17853 7772,17915
-Breitkopfstr.: Kleinsteinpflaster	Q1 7772,17915 7736,18005 7680,18106 7615,18204 7510,18364
-Breitkopfstr.: Asphalt	Q0 7510,18364 7460,18465 7420,18455 7391,18472 7377,18498 7375,18539 7399,18569 7445,18581 7434,18695
+Breitkopfstr.: Kleinsteinpflaster	Q1 7772,17915 7731,18012 7680,18106 7615,18204 7507,18372
+Breitkopfstr.: Asphalt	Q0 7507,18372 7460,18465 7419,18459 7391,18472 7377,18498 7372,18540 7399,18571 7445,18589 7434,18695
 Filandastr.: Kopfsteinpflaster	Q2 5671,5389 5637,5401 5527,5217
 Sarntaler Weg: guter Beton	Q0 5836,509 5742,671 5710,726 5781,770 5781,800
 Zerbster Str. (Hellersdorf): guter Beton	Q0 24451,15181 24413,15372 24357,15429 24346,15505 24324,15519 24169,15497
