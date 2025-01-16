@@ -3272,7 +3272,40 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: alte Bauarbeiten von 2018 - 2022
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
+# REMOVED (fertig) --- #: next_check_id: TREPTOWERPARK-2018 --- #: XXX wann sind die Bauarbeiten fertig? --- #: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen --- #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet --- #: osm_watch: way id="26608603" version="9" --- #: last_checked: 2019-11-02 vvv --- #: check_frequency: 7d vvv
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14980,8940
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14918,8813 14883,8823 14852,8799
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14980,8940 15057,8910
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176947.php (kein Datum genannt)
+#: by: https://berliner-abendblatt.de/2022/02/16/treptower-park-rodung-und-neupflanzung/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1181109.php
+#: by: https://www.berlin.de/imgscaler/ZyeZkkdwQemyWEdhwaVn9BCTIwwfgpHdAz40E0MQ50E/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMi8yMi0wMy0wMV9iYXVtYXNzbmFobWVfLV9wbGFuX3RyZXB0b3dlcl9wYXJrLnBuZw.png
+#: by: https://www.berliner-woche.de/alt-treptow/c-bauen/weitere-arbeiten-im-treptower-park_a337841
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1243634.php (fertig)
+# REMOVED ---	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
+#: next_check_id: TREPTOWERPARK-2025
+#: note: neue Bauarbeiten ab 2024/2025
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
+#: last_checked: 2025-01-16 vvv
+#: check_frequency: 60d vvv
+entlang des Sowjetischen Ehrenmals	2::inwork 14955,9294 15025,9171 15154,9106 15190,9027
+Bulgarische Str. - Karpfenteich	2::inwork 15439,8839 15297,8921 15245,8916
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3027,
+         'text' => 'Treptower Park: einige Wege im südöstlichen Teil sind wegen Bauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -3600,7 +3633,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-01-10 (traffic) vvv
+#: last_checked: 2025-01-16 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -4591,7 +4624,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-01-15 (traffic)
+#: last_checked: 2025-01-16 (traffic)
 #: check_frequency: 1d
 # REMOVED --- #: next_check: 2025-01-08
 	q4::inwork; 9011,14019 8870,13926
@@ -4795,7 +4828,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2024-10-25
+#: last_checked: 2025-01-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-03-15
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -5410,14 +5443,14 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2024-09-25
+#: last_checked: 2025-01-13 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
 ',
          'from' => 1683010800,
          'id' => 3799,
-         'text' => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, evtl. dürfen Radfahrer den Gehweg benutzen, vom 03.05.2023 09:00 bis 05.09.2025 17:00',
+         'text' => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, vom 03.05.2023 09:00 bis 05.09.2025 17:00',
          'type' => 'handicap',
          'until' => 1757084400
        },
@@ -6491,7 +6524,7 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
          'data' => '#: note: by rbb (alter Eintrag vom Juli 2024)
 #: note: bei rbb nur Richtung Süden (vorfristig entfernt, deshalb add_fragezeichen-Eintrag)
 #: also_indoor: traffic (H,G,B,T,W)
-#: note: In den Verkehrsmeldungen nun nur noch bis 17.1.2025
+#: note: In den traffic-Quellen nun nur noch bis 17.1.2025
 #: source_id: viz2021:13.315793,52.506037,11.12.2024,14:00 (bis 28.03.2025)
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 #: next_check: 2025-01-17
@@ -6904,13 +6937,13 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024) (bis 17.01.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_242095
-#: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025)
+#: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025) (bis 28.02.2025)
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
 #: last_checked: 2025-01-08 (traffic) vvv
-#: check_frequency: 14d vvv
-#: next_check: 2025-01-17 vvv
+#: check_frequency: 21d vvv
+#: next_check: 2025-02-28 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
 Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #Fischerinsel	q4::inwork 10578,11969 10512,12039
@@ -6920,9 +6953,9 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 ',
          'from' => 1727643600,
          'id' => 4187,
-         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
+         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis voraussichtlich 28.02.2025 17:00',
          'type' => 'gesperrt',
-         'until' => 1737129600
+         'until' => 1740758400
        },
        {
          'data' => '#: source_id: 246700596 (bis 14.03.2025)
@@ -7363,6 +7396,27 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Bayernring: Bauarbeiten zwischen Manfred-von-Richthofen-Str. und Mussehlstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2025-01-14 (mapillary)
+#: next_check: 2025-06-30
+	q4::inwork; 11001,18528 11123,18343
+',
+         'from' => 1737052224,
+         'id' => 4238,
+         'text' => 'Hadlichstr.: Einbahnstraßenregelung, vermutlich bis 30.06.2025',
+         'type' => 'handicap',
+         'until' => 1751320800
+       },
+       {
+         'data' => '#: source_id: 256700007 (bis 23.01.2025)
+	2::inwork 62507,-4444 62486,-4480 62471,-4512
+',
+         'from' => 1737489600,
+         'id' => 4239,
+         'text' => 'Berkenbrück: Bahnübergang gesperrt, evtl. sind auch Radfahrer betroffen, vom 22.01.2025 21:00 Uhr bis 23.01.2025 05:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1737604800
        }
      
 );
