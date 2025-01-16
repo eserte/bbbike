@@ -627,7 +627,14 @@ my @all_records_by_date = sort {
     my $cmp = $b->{date} cmp $a->{date};
     return $cmp if $cmp != 0;
     if (defined $a->{dist} && defined $b->{dist}) {
-	return $b->{dist} <=> $a->{dist};
+	# rationale: same day records should be sorted by distance,
+	# nearest first. However, future entries will be reversed, so
+	# these entries need special handling.
+	if ($a->{date} le $today) {
+	    return $a->{dist} <=> $b->{dist};
+	} else {
+	    return $b->{dist} <=> $a->{dist};
+	}
     } else {
 	0;
     }
