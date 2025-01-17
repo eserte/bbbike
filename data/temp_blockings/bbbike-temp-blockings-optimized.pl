@@ -3394,29 +3394,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Begradigung des Wuhlgartenwegs)
-#: osm_watch: way id="8655276" version="53"
-#: also_indoor: search Blumberger-Damm-Brücke
-#: priority: #A
-#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2024-11-09
-#: check_frequency: 60d
-#: next_check: 2025-09-30
-	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
-# REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
-',
-         'from' => 1630670400,
-         'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand November 2024: Durchfahrt ist gesperrt)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4624,7 +4602,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-01-16 (traffic)
+#: last_checked: 2025-01-17 (traffic)
 #: check_frequency: 1d
 # REMOVED --- #: next_check: 2025-01-08
 	q4::inwork; 9011,14019 8870,13926
@@ -5008,7 +4986,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
 #: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
-#: last_checked: 2024-12-28
+#: last_checked: 2025-01-17
 #: check_frequency: 30d
 	q4::inwork 16720,12614 16859,12613
 ',
@@ -5717,7 +5695,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
 #: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
@@ -5727,8 +5705,8 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
 #: last_checked: 2024-12-27 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2025-02-28 vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: next_check: 2025-01-31 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -5740,7 +5718,7 @@ Edisonstr. (Süd)	q4::inwork; 17948,6248 17991,6431
 Edisonstr. (Süd)	q4+::inwork; 17991,6431 17948,6248
 Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,6431 17962,6674
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 #: priority ^^^
@@ -5855,7 +5833,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: next_check_id: U6-2022
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
-#: osm_watch: way id="279580369" version="7"
+#: osm_watch: way id="279580369" version="8"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: last_checked: 2025-01-15
@@ -5984,7 +5962,7 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (G[zu kurz],B,T) vvv
-#: last_checked: 2024-12-28 vvv
+#: last_checked: 2025-01-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-01-31 vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
@@ -6330,10 +6308,10 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
-#: also_indoor: traffic (B,T)
+#: also_indoor: traffic (B,T,G)
 #: note: bei Bing & TomTom nur die östliche Anbindung als gesperrt markiert
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2024-12-19 (traffic) vvv
+#: last_checked: 2025-01-17 (traffic) vvv
 #: check_frequency: 30d vvv
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
@@ -6418,7 +6396,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-01-10
+#: last_checked: 2025-01-17
 #: next_check: 2025-03-28
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -6523,7 +6501,7 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
        {
          'data' => '#: note: by rbb (alter Eintrag vom Juli 2024)
 #: note: bei rbb nur Richtung Süden (vorfristig entfernt, deshalb add_fragezeichen-Eintrag)
-#: also_indoor: traffic (H,G,B,T,W)
+#: also_indoor: traffic (ex-H,G,ex-B,ex-T,W)
 #: note: In den traffic-Quellen nun nur noch bis 17.1.2025
 #: source_id: viz2021:13.315793,52.506037,11.12.2024,14:00 (bis 28.03.2025)
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
@@ -6992,11 +6970,14 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
        {
          'data' => '#: next_check_id: GUDRUN-2024
 #: source_id: viz2021:13.501934,52.513066,22.10.2024,07:00 (bis 18.11.2024) (bis 26.11.2024) (bis 07.01.2025) (bis 10.01.2025) (bis 24.01.2025)
-	q4::inwork; 17139,12100 17088,12069 16975,12000 16865,11931
+# REMOVED (hier nicht (mehr?))	q4::inwork; 17139,12100 17088,12069
+#: note: Sperrung in diesem Abschnitt ungefähr auf 75m
+	q3::inwork; 17088,12069 16975,12000
+	q4::inwork; 16975,12000 16865,11931
 ',
          'from' => 1729486800,
          'id' => 4196,
-         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Fanningerstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 24.01.2025 17:00',
+         'text' => 'Gudrunstr.: Bauarbeiten Richtung Frankfurter Allee zwischen Gernotstr. und Hagenstr., auch Radfahrer sind betroffen, vom 22.10.2024 07:00 bis 24.01.2025 17:00',
          'type' => 'handicap',
          'until' => 1737734400
        },
@@ -7226,16 +7207,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.230712,52.513672,25.11.2024,07:00 (bis 17.01.2025)
-	q4::inwork; -1398,11803 -1382,11736 -1375,11555 -1368,11525
-',
-         'from' => 1732428000,
-         'id' => 4223,
-         'text' => 'Am Glockenturm: Bauarbeiten zwischen Glockenturmstr. und Schirwindter Allee, evtl. sind auch Radfahrer betroffen, vom 25.11.2024 07:00 bis 17.01.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1737129600
-       },
+       undef,
        {
          'data' => '#: note: früher vermutlich für Radfahrer frei, jetzt gibt es hier ein neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
 Am Rummelsburger See: Fußgänger, Grünanlage	q4 15253,10171 15199,10211 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411
