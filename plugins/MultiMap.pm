@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.33;
+$VERSION = 2.34;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -197,6 +197,13 @@ sub register {
 	  callback => sub { showmap_tomtom(@_) },
 	  callback_3_std => sub { showmap_url_tomtom(@_) },
 	  ($images{TomTom} ? (icon => $images{TomTom}) : ()),
+	  tags => [qw(traffic)],
+	};
+    $main::info_plugins{__PACKAGE__ . "_ADAC"} =
+	{ name => "ADAC",
+	  callback => sub { showmap_adac(@_) },
+	  callback_3_std => sub { showmap_url_adac(@_) },
+	  ($images{ADAC} ? (icon => $images{ADAC}) : ()),
 	  tags => [qw(traffic)],
 	};
     $main::info_plugins{__PACKAGE__ . "_Waze"} =
@@ -1083,6 +1090,28 @@ l0WDNZ39ysjAw2gEMeGkBSPj8Y+MDAKMFoxwsP8dYwiM3VwHJDYzMibCBMq7IHQBlJ81HcqoZ0QD
 /egC89EF1qMLiDKuROb6AP0isQXOdXkO8hwDg9QeMNfhKZANAMoQHMFDMdtyAAAAAElFTkSuQmCC
 EOF
     }
+
+    if (!defined $images{ADAC}) {
+	# Created with:
+	#   wget 'https://maps.adac.de/favicons/favicon.ico?v=1'
+	#   mv favicon.ico\?v=1 favicon.ico
+	#   convert -resize 16x16 favicon.ico favicon.png 
+	#   pngcrush -brute -reduce -rem allb -m 0 favicon-0.png favicon2.png
+	#   base64 favicon2.png
+	$images{ADAC} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAYBQTFRF
+/8wA/80A/88A/80A/80A/84A/88A/84A/8wA/84A/84A/8wA/84A/80A/84A/8wA/84A3LEAim4A
+zqUA3rEAjHAAlXcA16wA9MQAmnsAo4MA98YAuZQAclwAp4UA+McAlXcADAkAd18AtJAAKSAAWUcA
+PjIAso8AIBoAKiIAvpgAMigAbVcASToAyqEA/MoAaFMATT0AUEAAp4UAOzAArIwAHxkAXEoAUEAA
+KCAAeGAAJh4AzqcA4bUA8MAA5rgAPDAAOy8AKyIAjnIAOC0AjXEAHxkANSsAOi8AGRQAU0MAKCAA
+r4wAhWsA0KYAzKMAaVQAvJYAUUEAh2wAPTEASTsAfGMAX0wAs48AeGAAalUAdl8ARzkAZVEA5bgA
+98YA8MAA/cwA7b4A8MAA6LkA67wA+cgA7b4A/MsA9MQA7r8A+McA5bcA9MQA/80A/8wA/80A/8wA
+/80A/80A/80A/80A/8wA/80A/8wA/80A/80A/8wA/80A/80A/8wA/8wAfqJ56AAAACFJREFUGJVj
+YWBEBSwC6ALfpNAENAlqIUeAARWwMAyIAADnWQJRRyIXPQAAAABJRU5ErkJggg==
+EOF
+    }
 }
 
 ######################################################################
@@ -1689,6 +1718,19 @@ sub showmap_url_tomtom {
 sub showmap_tomtom {
     my(%args) = @_;
     my $url = showmap_url_tomtom(%args);
+    start_browser($url);
+}
+
+######################################################################
+# ADAC Maps
+sub showmap_url_adac {
+    my(%args) = @_;
+    sprintf "https://maps.adac.de/?traffic=construction,announcements,flow&bounds=%.5f,%.5f-%.5f,%.5f", $args{py0},$args{px0},$args{py1},$args{px1};
+}
+
+sub showmap_adac {
+    my(%args) = @_;
+    my $url = showmap_url_adac(%args);
     start_browser($url);
 }
 
