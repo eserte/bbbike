@@ -549,6 +549,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1515855.php (Fahrbahnsanierung)
 # REMOVED (nein, keine Verbesserung) --- #: XXX Ist der Asphalt hier besser geworden?
 Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
+Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
 #: next_check_id: ODER-2022
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
@@ -565,7 +566,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: last_checked: 2025-01-13
 #: check_frequency: 180d
 #: next_check: 2026-12-31
-Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
+Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11593,7237 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
 Friedelstr.: Asphalt	Q0 12085,9778 12074,9689 12066,9558 12054,9429 12074,9217
 Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2- 12074,9217 12078,9055
@@ -2664,7 +2665,7 @@ Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6277,11397 6337,11365 6346,11326
 #: next_check_id: SPREEUFER-2022
 #: osm_watch: way id="1187825948" version="4"
 #: XXX evtl. wird der Weg nach der Sanierung der Uferwand auch neu gemacht
-#: last_checked: 2025-01-04
+#: last_checked: 2025-01-15 (mapillary)
 #: check_frequency: 180d
 (südliches Spreeufer): unbefestigter Weg	Q2+ 5643,12253 5714,12290 5770,12346
 (südliches Spreeufer): Kleinsteinpflaster	Q1- 5770,12346 5796,12372
@@ -3175,7 +3176,7 @@ Quellenweg: Asphalt mit Schäden	Q1- 1137,13321 1084,13322 1027,13304
 Quellenweg: Schotterweg	Q2+ 1027,13304 969,13290 919,13281 783,13275 738,13277 730,13286 721,13296
 Werkring: Beton	Q0 -990,13502 -975,13574 -978,13665 -1000,13764 -1084,13933 -1132,13972 -1188,13988
 #: note: auch by anonymous:
-Sophienwerderweg: Asphalt	Q0 -1188,13988 -1575,14098 -2396,14245
+Sophienwerderweg: Asphalt	Q0 -1188,13988 -1592,14102 -2396,14245
 #: corrected_by: mapillary (früher: wassergebundene Decke), srt
 (Uferweg): Asphalt, leicht wellig	Q0- 4242,12684 4206,12691 4147,12699 4038,12693 3938,12687 3862,12675 3819,12676
 (Uferweg): wassergebundene Decke	Q1 3819,12676 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
@@ -3696,7 +3697,6 @@ Carl-Schuhmann-Weg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Erkstr.: Asphalt	Q0 12598,8390 12765,8435 12902,8470 12920,8487
 Donaustr: Beton	Q0- 12643,8533 12765,8435
 Straße 645: Asphalt	Q0 11424,8284 11434,8194 11419,8077 11450,7921 11472,7899
-Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0- 14921,10047 14879,9961
 #: note: Pfützen bei Regen
 Am Jüdischen Museum: wassergebundene Decke	Q1- 9770,10590 9992,10626
@@ -6493,7 +6493,7 @@ Dolgenseestr. [Wohngebiet]: Beton	Q1+ 17559,10024 17761,9971 17774,9934
 Dolgenseestr.: Asphalt und Beton mit einigen Hebungen	Q1 17288,9952 17330,10117
 Upsalaer Str.: Kopfsteinpflaster	Q2 11369,16744 11364,16887
 Obernburger Weg: Kopfsteinpflaster	Q2 11686,17710 11700,17629
-Obernburger Weg: Beton	Q0- 11700,17629 11711,17569
+Obernburger Weg: Beton	Q1+ 11700,17629 11711,17569 11765,17578
 Figarostr.: unbefestigte Straße	Q2 12097,17918 12118,17959
 Figarostr.: schlechtes Kopfsteinpflaster	Q3+ 12118,17959 12136,18039
 Figarostr.: Beton	Q0- 12136,18039 12100,18147 12084,18197 11907,18246
@@ -13944,6 +13944,8 @@ Eisenhutweg [Wohngebiet]: Asphalt	Q0 17741,2824 17688,2744 17471,2872 17569,2987
 # 
 (Gotenstr. - Ella-Barowsky-Str.): Asphalt	Q0 7497,7761 7551,7851
 # 
+Thomas-Mann-Str. [östlicher Strang]: Asphalt	Q0- 13365,15325 13278,15172 13387,15113
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -15289,7 +15291,7 @@ Würmseestr.: guter Asphalt	Q0 22095,1572 22178,1589 22300,1627
 # 
 #: by: steffen (stache-bln): vvv
 #: corrected_by: srt (asphaltiert, Q0 -> ...)
-(Hanns-Eisler-Str. - Thomas-Mann-Str.): Asphalt mit Unebenheiten	Q1 13548,14980 13324,15109 13328,15127 13123,15244
+(Hanns-Eisler-Str. - Thomas-Mann-Str.): Asphalt mit Unebenheiten	Q1 13548,14980 13369,15083 13324,15109 13328,15127 13123,15244
 #: note: wahrscheinlich wie die anderen Straßen im Viertel vvv
 Aurikelweg: Asphalt	Q0 21878,11112 21956,11146
 Alpenveilchenweg: Asphalt	Q0 21953,10936 22035,10971
@@ -19457,8 +19459,12 @@ Joachimstr. (Köpenick): guter Asphalt	Q0 21789,5427 21907,5517 22009,5593
 Buchholzweg: guter Asphalt	Q0 4535,15530 4466,15350 4389,15336
 # 
 #: by: Joern Schulze: vvv
-#: confirmed_by: srt (zumindest im östlichen Abschnitt)
-Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12842,16032 13086,15907 13214,15830 13307,15758
+#: confirmed_by: srt
+Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12842,16032 13086,15907
+#: corrected_by: srt (asphaltiert, Q0 -> ...)
+Lehderstr.: Asphalt mit Schäden	Q1 13086,15907 13214,15830
+#: confirmed_by: srt
+Lehderstr.: asphaltiert	Q0 13214,15830 13307,15758
 #: corrected_by: srt (Q0 -> Q0-)
 Streustr.: asphaltiert	Q0- 12285,16392 12512,16291 12675,16214 12890,16121
 #: confirmed_by: srt
@@ -30206,8 +30212,8 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12393,15030 12357,15020 1231
 #: corrected_by: srt (Q0- -> Q1)
 (Danziger Str. - Lilli-Henoch-Str.): Verbundsteine	Q1 12123,14643 12174,14739 12183,14757 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
 #: confirmed_by: srt
-(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 11877,15366 11937,15349 12003,15311 12097,15223 12124,15197
-# REMOVED --- (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 12124,15197 12208,15108
+(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 11877,15366 11937,15349 12003,15311 12097,15223 12107,15214
+# REMOVED --- (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 12107,15214 12208,15108
 #: confirmed_by: srt
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 12208,15108 12284,15068 12314,15008
 #: confirmed_by: srt
@@ -33726,5 +33732,7 @@ Einmündungsbereich asphaltiert	Q0 6629,16538
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6879,18743
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 7882,18209
 Kreuzungsbereich asphaltiert	Q0 7731,18012
+Rondell mit Kleinsteinpflaster	Q1- 12097,15223
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 11700,17629
 #: ignore ^^^
 #: section ^^^

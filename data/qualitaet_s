@@ -334,7 +334,8 @@ Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10511,10800 10397,10852 10103,10989
 Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11808,11482
 Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 Adalbertstr.: Asphalt, einige Schäden	Q0; 11640,11067 11589,10947 11552,10863
-Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2 11607,7145 11617,7083 11652,6879
+Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
+Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2 11593,7237 11607,7145 11617,7083 11652,6879
 Friedelstr.: Asphalt	Q0 12085,9778 12074,9689 12066,9558 12054,9429 12074,9217
 Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2 12074,9217 12078,9055
 Naglerstr.: Kopfsteinpflaster und zusätzlich Bodenschwellen	Q2 13575,10963 13496,10763
@@ -2270,7 +2271,7 @@ Quellenweg: Schotterweg	Q2 1610,13380 1551,13377 1523,13377 1293,13332 1244,1331
 Quellenweg: Asphalt mit Schäden	Q1 1137,13321 1084,13322 1027,13304
 Quellenweg: Schotterweg	Q2 1027,13304 969,13290 919,13281 783,13275 738,13277 730,13286 721,13296
 Werkring: Beton	Q0 -990,13502 -975,13574 -978,13665 -1000,13764 -1084,13933 -1132,13972 -1188,13988
-Sophienwerderweg: Asphalt	Q0 -1188,13988 -1575,14098 -2396,14245
+Sophienwerderweg: Asphalt	Q0 -1188,13988 -1592,14102 -2396,14245
 (Uferweg): Asphalt, leicht wellig	Q0 4242,12684 4206,12691 4147,12699 4038,12693 3938,12687 3862,12675 3819,12676
 (Uferweg): wassergebundene Decke	Q1 3819,12676 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
 (Schloßpark Charlottenburg, westlicher Weg): wassergebundene Decke	Q1 2906,13610 2876,13594 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
@@ -2669,7 +2670,6 @@ Carl-Schuhmann-Weg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Erkstr.: Asphalt	Q0 12598,8390 12765,8435 12902,8470 12920,8487
 Donaustr: Beton	Q0 12643,8533 12765,8435
 Straße 645: Asphalt	Q0 11424,8284 11434,8194 11419,8077 11450,7921 11472,7899
-Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0 14921,10047 14879,9961
 Am Jüdischen Museum: wassergebundene Decke	Q1 9770,10590 9992,10626
 (Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11148,6381 11162,6379 11200,6372 11205,6358 11240,6350 11266,6347 11278,6359 11339,6351
@@ -5137,7 +5137,7 @@ Dolgenseestr. [Wohngebiet]: Beton	Q1 17559,10024 17761,9971 17774,9934
 Dolgenseestr.: Asphalt und Beton mit einigen Hebungen	Q1 17288,9952 17330,10117
 Upsalaer Str.: Kopfsteinpflaster	Q2 11369,16744 11364,16887
 Obernburger Weg: Kopfsteinpflaster	Q2 11686,17710 11700,17629
-Obernburger Weg: Beton	Q0 11700,17629 11711,17569
+Obernburger Weg: Beton	Q1 11700,17629 11711,17569 11765,17578
 Figarostr.: unbefestigte Straße	Q2 12097,17918 12118,17959
 Figarostr.: schlechtes Kopfsteinpflaster	Q3 12118,17959 12136,18039
 Figarostr.: Beton	Q0 12136,18039 12100,18147 12084,18197 11907,18246
@@ -11696,6 +11696,7 @@ Döberitzer Grünzug - KGA Lehrter Str.: Asphalt	Q0 7819,13559 7795,13528
 (Buntzelstr. - Bohnsdorfer Kirchsteig): Asphalt	Q0 21138,-428 21089,-378 21045,-330
 Eisenhutweg [Wohngebiet]: Asphalt	Q0 17741,2824 17688,2744 17471,2872 17569,2987
 (Gotenstr. - Ella-Barowsky-Str.): Asphalt	Q0 7497,7761 7551,7851
+Thomas-Mann-Str. [östlicher Strang]: Asphalt	Q0 13365,15325 13278,15172 13387,15113
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12375,7 +12376,7 @@ Boizenburger Str.: guter Asphalt	Q0 22319,12795 22319,12663 22319,12637 22323,12
 Grässeweg: guter Beton	Q0 -5510,13326 -5295,13415 -5217,13446
 Polkwitzer Str.: schlechtes Kopfsteinpflaster	Q3 21367,-420 21463,-434 21618,-456
 Würmseestr.: guter Asphalt	Q0 22095,1572 22178,1589 22300,1627
-(Hanns-Eisler-Str. - Thomas-Mann-Str.): Asphalt mit Unebenheiten	Q1 13548,14980 13324,15109 13328,15127 13123,15244
+(Hanns-Eisler-Str. - Thomas-Mann-Str.): Asphalt mit Unebenheiten	Q1 13548,14980 13369,15083 13324,15109 13328,15127 13123,15244
 Aurikelweg: Asphalt	Q0 21878,11112 21956,11146
 Alpenveilchenweg: Asphalt	Q0 21953,10936 22035,10971
 Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
@@ -13852,7 +13853,9 @@ Cardinalstr.: Kopfsteinpflaster	Q2 21706,5541 21828,5623
 Cardinalstr.: schlechtes Kopfsteinpflaster	Q3 21828,5623 21896,5724
 Joachimstr. (Köpenick): guter Asphalt	Q0 21789,5427 21907,5517 22009,5593
 Buchholzweg: guter Asphalt	Q0 4535,15530 4466,15350 4389,15336
-Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12842,16032 13086,15907 13214,15830 13307,15758
+Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12842,16032 13086,15907
+Lehderstr.: Asphalt mit Schäden	Q1 13086,15907 13214,15830
+Lehderstr.: asphaltiert	Q0 13214,15830 13307,15758
 Streustr.: asphaltiert	Q0 12285,16392 12512,16291 12675,16214 12890,16121
 Streustr.: asphaltiert	Q0 12890,16121 13140,16000
 Streustr.: relativ glattes Kopfsteinpflaster	Q1 13140,16000 13263,15930 13425,15846
@@ -17597,7 +17600,7 @@ Bernhard-Wieck-Promenade: wassergebundene Decke	Q1 1381,8023 1366,8032 1348,8010
 Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12393,15030 12357,15020 12314,15008 12317,14967 12347,14931 12359,14904 12388,14926 12357,15020
 (Güterbahnhof Greifswalder Str.): Beton	Q1 12477,14987 12520,15057 12602,15006 12649,14977 12727,14929 12717,14908 12620,14979
 (Danziger Str. - Lilli-Henoch-Str.): Verbundsteine	Q1 12123,14643 12174,14739 12183,14757 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
-(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1 11877,15366 11937,15349 12003,15311 12097,15223 12124,15197
+(Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1 11877,15366 11937,15349 12003,15311 12097,15223 12107,15214
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1 11860,15309 11919,15314 11937,15349
 (Verlängerte Diesterwegstr.): Verbundsteine	Q0 12056,15159 12075,15191 12097,15223

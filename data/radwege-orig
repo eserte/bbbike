@@ -1375,7 +1375,7 @@ Verbundsteinpflaster, kann im Sommer bewachsen sein	RW1; 890,9399 1019,9573 1117
 alte Gehwegplatten, Bord gegen Gehweg	RW2; 6787,12099 6831,12150 7001,12274 7031,12320
 	RW2; 7031,12320 7001,12274 6831,12150 6787,12099
 	RW2; 6873,11011 7002,11034
-	RW1;RW9 11607,7145 11617,7083 11652,6879
+	RW1;RW9 11593,7237 11607,7145 11617,7083 11652,6879
 	RW1; 11689,6634 11672,6737 11664,6796
 	RW1;RW3 -927,6888 -739,6838
 asphaltiert, Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
@@ -1783,7 +1783,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX wegen eines Fußgängerschutztunnels unter dem Estrel-Tower ist der vorhandene Radweg abgesperrt
 #: XXX später wieder herstellen: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14334,7395
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2024-12-20
+#: last_checked: 2025-01-17 (webcam)
 #: check_frequency: 30d
 Busspur ist immer gültig	RW5; 14174,7505 14334,7395
 überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14334,7395 14369,7376
@@ -2178,6 +2178,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/SharedDocs/Pressemitteilungen/pm_12_2024_muehlendamm.html?nn=2883510 (Sperrung für den Schiffsverkehr bis 31.03.2025)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1522023.php
 #: by: https://www.rbb24.de/panorama/beitrag/2025/01/berlin-spree-sperrung-wasserstrasse-muehlendammbruecke.html
+#: by: https://www.tagesspiegel.de/berlin/wegen-bauarbeiten-in-mitte-schifffahrt-unter-muhlendammbrucke-zwei-monate-unterbrochen-13036282.html (Fertigstellung 2028)
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/muehlendammbruecke/
 #: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029)
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025)
@@ -3366,7 +3367,7 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="318031558" version="14"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, etwa bis Höhe Pasteurstr. vvv
-#: last_checked: 2024-12-30 vvv
+#: last_checked: 2025-01-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
@@ -3407,7 +3408,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="15"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2024-12-16 vvv
+#: last_checked: 2025-01-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4735,7 +4736,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2024-12-30 vvv
+#: last_checked: 2025-01-18 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -4907,7 +4908,7 @@ vorhandener Radweg ist abgesperrt, sehr eng	RW0; 13566,5792 13394,5754
 	RW6;RW6 5922,12765 5914,12845
 	RW6;RW6 5914,12845 5938,12848
 # REMOVED (ja) --- #: XXX wie wird die Radwegführung hier sein? Offizieller Zweirichtungsradweg? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02
-# REMOVED (Radspuren existieren nun) --- gemeinsamer Geh- und Radweg	RW2;RW8 14187,6555 14141,6623 --- #: next_check_id: GRENZALLEE-2014 --- #: last_checked: 2023-06-29 --- #: check_frequency: 60d --- # REMOVED --- #: next_check_id: 2023-06-30 --- provisorische Radwegführung auf dem Gehweg, Gehwegplatten	RW2;RW8 14141,6623 14147,6652 14187,6704 14179,6743 14147,6791
+# REMOVED (Radspuren existieren nun) --- gemeinsamer Geh- und Radweg	RW2;RW8 14187,6555 14141,6623 --- #: next_check_id: GRENZALLEE-2014 --- #: last_checked: 2023-06-29 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2023-06-30 --- provisorische Radwegführung auf dem Gehweg, Gehwegplatten	RW2;RW8 14141,6623 14147,6652 14187,6704 14179,6743 14147,6791
 # REMOVED --- gemeinsamer Geh- und Radweg	RW2;RW8 14141,6623 14106,6663 14057,6734
 	RW4;RW4 14187,6555 14141,6623
 	RW4;RW3 14141,6623 14147,6652 14187,6704 14179,6743 14147,6791
@@ -7755,7 +7756,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2024-12-30 vvv
+#: last_checked: 2025-01-18 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -8256,7 +8257,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2024-12-30
+#: last_checked: 2025-01-18
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8282,7 +8283,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2024-12-30 vvv
+#: last_checked: 2025-01-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-09-30 vvv

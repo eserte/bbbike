@@ -30744,7 +30744,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_177510_LMS-BR_72 (Eintrag von 2019, inaktiv)
-#: source_id: viz2021:13.27866,52.49035,31.10.2024,07:00 (bis 17.01.2025)
+#: source_id: viz2021:13.27866,52.49035,31.10.2024,07:00 (bis 17.01.2025) (inaktiv)
 	q4::inwork 2074,9225 1937,9253
 EOF
      },
@@ -35484,7 +35484,7 @@ EOF
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2024-12-21 (daf)
+#: last_checked: 2025-01-05 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
@@ -36427,20 +36427,18 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2022-07-01 07:00:00"), # 1655010000, # 2022-06-12 07:00
-       until => undef, # $isodate2epoch->("2025-01-08 18:00:00"), # undef, # $isodate2epoch->("2024-12-31 17:00:00"), # 1656514800, # 2022-06-29 17:00
+       until => 1737190440, # undef, # $isodate2epoch->("2025-01-08 18:00:00"), # undef, # $isodate2epoch->("2024-12-31 17:00:00"), # 1656514800, # 2022-06-29 17:00
 #      text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, geplant bis 31.12.2024, evtl. wird verlängert',
        text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, voraussichtlich bis 8.1.2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.38248,52.53138,13.06.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr) (bis 31.07.2024) (bis 31.08.2024) (bis 31.10.2024) (bis 31.12.2024) (inaktiv)
-#: osm_watch: way id="364468604" version="14"
+#: osm_watch: way id="364468604" version="17"
 #: also_indoor: traffic (ex-H,ex-B,ex-T,ex-W)
 #: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
 #: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
-#: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-01-17 (traffic)
-#: check_frequency: 1d
+# REMOVED (Einbahnstraße wurde nun auch bei osm entfernt) --- #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2025-01-17 (traffic) --- #: check_frequency: 1d
 # REMOVED --- #: next_check: 2025-01-08
 	q4::inwork; 9011,14019 8870,13926
 EOF
@@ -38802,7 +38800,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: next_check_id: ERNSTTHAELMANNPARK-2022
 # REMOVED --- #: priority: #A --- #: last_checked: 2023-01-20 --- #: next_check: 2023-02-01 --- #: XXX später nach gesperrt-orig überführen bzw. ganz aus strassen-orig entfernen
-# REMOVED ---	2::inwork 12124,15197 12208,15108
+# REMOVED ---	2::inwork 12107,15214 12208,15108
 EOF
      },
      { from  => 1674342000, # 2023-01-22 00:00
@@ -39524,7 +39522,7 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 3
-#: also_indoor: traffic (B,T,ex-H,re-G,re-W)
+#: also_indoor: traffic (B,T,ex-H,re-G,re-W,A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: last_checked: 2025-01-04
@@ -42688,7 +42686,7 @@ EOF
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2024-11-28
+#: last_checked: 2025-01-11 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801
@@ -43012,7 +43010,7 @@ EOF
      },
      { from  => 1708236000, # 2024-02-18 07:00
        until => undef, # 1737734400, # 2025-01-24 17:00
-       #text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, vom 19.02.2024 07:00 bis 24.01.2025 17:00',
+#      text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, vom 19.02.2024 07:00 bis 24.01.2025 17:00',
        text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Januar 2025, vielleicht auch länger',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -43025,8 +43023,10 @@ EOF
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2024-07-30 (mapillary)
+#: last_checked: 2025-01-15 (mapillary)
+#: check_frequency: 90d
 #: next_check: 2025-01-24
+# REMOVED --- #: next_check: 2027-12-31
 	2::inwork 7772,12694 7521,12581
 EOF
      },
@@ -44894,7 +44894,7 @@ EOF
 # REMOVED --- #: XXX Werden noch weitere Wege gesperrt? Evtl. ändert sich die Lage der Wege nach der Umgestaltung? --- #: add_fragezeichen: Sind die Bauarbeiten hier beendet? --- #: last_checked: 2024-12-16 --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-11-30
 	2::inwork 12056,15159 12075,15191 12097,15223
-# REMOVED (hier (noch) nicht gesperrt	2::inwork 12124,15197 12097,15223 12003,15311 11937,15349 11877,15366
+# REMOVED (hier (noch) nicht gesperrt	2::inwork 12107,15214 12097,15223 12003,15311 11937,15349 11877,15366
 EOF
      },
      { from  => undef, # 
@@ -44993,7 +44993,7 @@ EOF
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-12-30
+#: last_checked: 2025-01-18
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30
 	q4::inwork 13530,13014 13470,12990
@@ -45004,6 +45004,7 @@ EOF
        text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2024, evtl. wird verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.finowkanal.info/de/bautagebuch?date=20250117 (Bauarbeiten ... Schleusenpaket 1 ... voraussichtlich bis April 2026)
 #: also_indoor: url https://www.berlin-usedom-radweginfo.de/
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut berlin-usedom-radweginfo bis Ende 2024, auf finowkanal.info kein Endedatum
@@ -45011,7 +45012,7 @@ EOF
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 3
-#: last_checked: 2025-01-05 (indoor)
+#: last_checked: 2025-01-17 (indoor)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -45213,7 +45214,7 @@ EOF
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-12-30
+#: last_checked: 2025-01-18
 #: next_check: 2025-02-24
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 EOF
@@ -46135,7 +46136,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
 #: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum)
-#: also_indoor: traffic (H,G,B,T,W)
+#: also_indoor: traffic (H,G,B,T,W,A)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-01-04
 #: check_frequency: 25d
@@ -46157,7 +46158,7 @@ EOF
        text  => 'Loewenhardtdamm: Bauarbeiten ab Badener Ring, Fahrbahn gesperrt, vermutlich bis 31.07.2025',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,T,B)
+#: also_indoor: traffic (G,T,B,A)
 #: note: Ende der Abschnitts unklar: entweder Bayernring oder General-Pape-Str.
 #: last_checked: 2025-01-08
 #: check_frequency: 120d
@@ -46170,7 +46171,7 @@ EOF
        text  => 'Bayernring: Bauarbeiten zwischen Manfred-von-Richthofen-Str. und Mussehlstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (H,T,B)
+#: also_indoor: traffic (ex-H,T,B)
 #: last_checked: 2025-01-08
 	q4::inwork 8842,8561 8916,8511
 EOF

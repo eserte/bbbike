@@ -21,9 +21,9 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu fr¸h bei der VIZ gemeldet? -> aktuell l‰uft wohl die Umsetzung (auch wenn man vor Ort auﬂer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-01-15
+#: last_checked: 2025-01-18
 #: check_frequency: 60d
-#: next_check_id: 2025-06-30
+#: next_check: 2025-06-30
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
@@ -41,7 +41,7 @@ Kochhannstr.: ‹berquerung der Baustelle Petersburger Str. ¸ber schmale Fuﬂg‰nger
 #: next_check_id: KNIPRODE-2024
 #: add_fragezeichen: Sind hier noch immer Bauarbeiten?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2024-12-30
+#: last_checked: 2025-01-18
 #: check_frequency: 30d
 #: next_check: 2025-09-30
 Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
@@ -1248,14 +1248,14 @@ Friedenauer Hˆhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # REMOVED --- #: note: Endedatum laut Halteverbotsschilder --- #: last_checked: 2024-07-16 --- #: next_check: 2024-07-15 --- #: valid: -20240715 --- Bˆrnestr.: Bauarbeiten, einige Meter der Fahrbahn sind gesperrt	q3::inwork 13214,15830 13263,15930
 # 
 #: also_indoor: traffic (ex-G,B,ex-W,T)
-#: note: Endedatum laut Halteverbotsschilder; L‰nge ca. 50-60m
+#: note: Endedatum laut Halteverbotsschilder; L‰nge ca. 50-60m, mittlerweile Halteverbote bis 29.05.2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/hosemannstra%C3%9Fe-ecke-lehderstra%C3%9Fe-neubauten.1441/#post-23500
 #: by: https://www.frankschiffer.com/projekte/tor-zur-lehderstrasse/ (Fertigstellung 2024)
 #: osm_watch: way id="1170355847" version="1"
 #: osm_watch: way id="1170355851" version="1"
-#: last_checked: 2024-12-16
+#: last_checked: 2025-01-18
 # REMOVED --- #: check_frequency: 120d
-# REMOVED --- #: next_check: 2024-12-20
+#: next_check: 2025-09-25
 # REMOVED --- #: valid: -20241220
 Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
 # 
@@ -5139,11 +5139,12 @@ Degnerstr.: Tramzufahrt, auf B¸rgersteig ausweichen	q3; 16449,15604 16445,15590
 #: by: mapillary
 #: by: https://www.berliner-woche.de/pankow/c-bauen/baumfaellungen-fuer-radstellplaetze_a427150
 #: note: Ausschilderung: Privatgel‰nde... Fahrrad fahren verboten...
-#: XXX zurzeit Umbauarbeiten, Fahrbahn gesperrt
+#: XXX zurzeit Umbauarbeiten, Fahrbahn gesperrt, laut Baustellenschild bis April 2025
 #: osm_watch: way id="542223826" version="15"
 #: historical_note: fr¸her: Borkumstr.: Schulgel‰nde	q2 11335,17807 11412,17823
-#: last_checked: 2024-10-12 (mapillary)
-#: check_frequency: 60d
+#: last_checked: 2025-01-18
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2025-04-30
 Borkumstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11335,17807 11412,17823
 # 
 #: note: explizit f¸r Radfahrer freigegeben ("keine Mofas")
@@ -5677,8 +5678,8 @@ Bautzener Platz: Fufg‰nger, Bordsteine	q3 8102,9262 8183,9260
 #: XXX_prog ^^^
 (Danziger Str. - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12123,14643 12174,14739 12183,14757 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
 #: note: gemeinsamer Rad- und Gehweg (am westlichen Ende fehlt das Schild, ansonsten ausgeschildert)
-(Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11877,15366 11937,15349 12003,15311 12097,15223 12124,15197
-# REMOVED --- (Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12124,15197 12208,15108
+(Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11877,15366 11937,15349 12003,15311 12097,15223 12107,15214
+# REMOVED --- (Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12107,15214 12208,15108
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fuﬂg‰nger	q2 11860,15309 11919,15314 11937,15349
 (Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12056,15159 12075,15191 12097,15223
@@ -6196,7 +6197,7 @@ Wegerichstr.: enge Straﬂe	q1 16678,2330 16666,2437 16663,2450 16538,2543
 # 
 #: by: steffen (stache-bln):
 #: note: Radweg markiert
-(Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fuﬂg‰nger	q0 13548,14980 13324,15109 13328,15127 13123,15244
+(Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fuﬂg‰nger	q0 13548,14980 13369,15083 13324,15109 13328,15127 13123,15244
 # 
 #: by: Beate Voigt:
 Siegfried-Baruch-Weg: einige Fuﬂg‰nger, recht eng	q2 7857,19693 7871,19698 7974,19739 8030,19762

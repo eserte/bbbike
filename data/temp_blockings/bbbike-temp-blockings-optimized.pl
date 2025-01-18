@@ -3495,17 +3495,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_177510_LMS-BR_72 (Eintrag von 2019, inaktiv)
-#: source_id: viz2021:13.27866,52.49035,31.10.2024,07:00 (bis 17.01.2025)
-	q4::inwork 2074,9225 1937,9253
-',
-         'from' => 1730268000,
-         'id' => 3141,
-         'text' => 'Lynarstr.: zwischen Herthastr. und Johannaplatz Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 31.10.2024 07:00 bis 17.01.2025 20:00',
-         'type' => 'handicap',
-         'until' => 1737140400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4324,7 +4314,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2024-12-21 (daf)
+#: last_checked: 2025-01-05 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
@@ -4594,25 +4584,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.38248,52.53138,13.06.2022,07:00 (inaktiv)
-#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr) (bis 31.07.2024) (bis 31.08.2024) (bis 31.10.2024) (bis 31.12.2024) (inaktiv)
-#: osm_watch: way id="364468604" version="14"
-#: also_indoor: traffic (ex-H,ex-B,ex-T,ex-W)
-#: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
-#: note: nach Rücksprache mit der VIZ: Verlängerung bis 8.1.2025
-#: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-01-17 (traffic)
-#: check_frequency: 1d
-# REMOVED --- #: next_check: 2025-01-08
-	q4::inwork; 9011,14019 8870,13926
-',
-         'from' => 1656651600,
-         'id' => 3559,
-         'text' => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, voraussichtlich bis 8.1.2025, evtl. wird verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5354,7 +5326,7 @@ Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 3
-#: also_indoor: traffic (B,T,ex-H,re-G,re-W)
+#: also_indoor: traffic (B,T,ex-H,re-G,re-W,A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: last_checked: 2025-01-04
@@ -6022,7 +5994,7 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
 #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2024-11-28
+#: last_checked: 2025-01-11 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-03-31
 	q4::inwork; 6681,10959 6607,10801
@@ -6169,8 +6141,10 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2024-07-30 (mapillary)
+#: last_checked: 2025-01-15 (mapillary)
+#: check_frequency: 90d
 #: next_check: 2025-01-24
+# REMOVED --- #: next_check: 2027-12-31
 	2::inwork 7772,12694 7521,12581
 ',
          'from' => 1708236000,
@@ -6711,7 +6685,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2024-12-30
+#: last_checked: 2025-01-18
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30
 	q4::inwork 13530,13014 13470,12990
@@ -6724,14 +6698,15 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
          'until' => 1822316400
        },
        {
-         'data' => '#: also_indoor: url https://www.berlin-usedom-radweginfo.de/
+         'data' => '#: by: https://www.finowkanal.info/de/bautagebuch?date=20250117 (Bauarbeiten ... Schleusenpaket 1 ... voraussichtlich bis April 2026)
+#: also_indoor: url https://www.berlin-usedom-radweginfo.de/
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut berlin-usedom-radweginfo bis Ende 2024, auf finowkanal.info kein Endedatum
 #: osm_watch: way id="105827200" version="12"
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 3
-#: last_checked: 2025-01-05 (indoor)
+#: last_checked: 2025-01-17 (indoor)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -6828,7 +6803,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2024-12-30
+#: last_checked: 2025-01-18
 #: next_check: 2025-02-24
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
@@ -7321,7 +7296,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
 #: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum)
-#: also_indoor: traffic (H,G,B,T,W)
+#: also_indoor: traffic (H,G,B,T,W,A)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-01-04
 #: check_frequency: 25d
@@ -7345,7 +7320,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1740157200
        },
        {
-         'data' => '#: also_indoor: traffic (G,T,B)
+         'data' => '#: also_indoor: traffic (G,T,B,A)
 #: note: Ende der Abschnitts unklar: entweder Bayernring oder General-Pape-Str.
 #: last_checked: 2025-01-08
 #: check_frequency: 120d
@@ -7359,7 +7334,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1753999200
        },
        {
-         'data' => '#: also_indoor: traffic (H,T,B)
+         'data' => '#: also_indoor: traffic (ex-H,T,B)
 #: last_checked: 2025-01-08
 	q4::inwork 8842,8561 8916,8511
 ',
