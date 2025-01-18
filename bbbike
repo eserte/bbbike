@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2024 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2025 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -16486,6 +16486,7 @@ sub save_route_to_register {
 
     }
     $r->{Nr} = $nr;
+    $r->{SavedTimestamp} = time;
 
     $save_route{$register} = $r;
 }

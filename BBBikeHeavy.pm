@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2016,2020,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2016,2020,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = '1.44';
+$VERSION = '1.45';
 
 package main;
 use strict;
@@ -1369,6 +1369,8 @@ sub BBBikeHeavy::show_register {
 		 if ($balloon) {
 		     my $text = get_route_description();
 		     if ($text ne '') {
+			 require POSIX;
+			 $text .= "\n" . POSIX::strftime("%F %T", localtime);
 			 foreach ($b, $ret_b[$ii]) {
 			     $balloon->attach($_, -msg => $text);
 			 }
