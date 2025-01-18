@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1396,6 +1396,22 @@ sub _find_coords {
 	    while ($s =~ m{[?&]p=([-+]?[0-9\.]+),([-+]?[0-9\.]+),[0-9\.]+z($|&)}g) {
 		my($y,$x) = ($1,$2);
 		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		push @_coords, [$x,$y];
+	    }
+	    if (@_coords) {
+		push @coords, @_coords;
+		return @coords; # shortcut search, lat,lon order may conflict with further regexps
+	    }
+	}
+
+	# ADAC maps URL, e.g.
+	# https://maps.adac.de/?traffic=construction,announcements,flow&bounds=52.50007,13.31393-52.50497,13.33665
+	{
+	    my @_coords;
+	    while ($s =~ m{[?&]bounds=([-+]?[0-9\.]+),([-+]?[0-9\.]+)-([-+]?[0-9\.]+),([-+]?[0-9\.]+)(?:$|&)}g) {
+		my($py0,$px0,$py1,$px1) = ($1,$2,$3,$4);
+		my($py,$px) = (($py1-$py0)/2+$py0, ($px1-$px0)/2+$px0);
+		my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($px,$py));
 		push @_coords, [$x,$y];
 	    }
 	    if (@_coords) {
