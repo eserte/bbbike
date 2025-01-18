@@ -378,6 +378,11 @@ for my $file (@files) {
 			 if ($extra && $extra =~ /\bT\b/) { # not handled by mc.bbbike.org, so create an extra link
 			     push @extra_url_defs, ['TomTom', sprintf('https://plan.tomtom.com/de/?p=%s,%s,%.2fz', $py, $px, 17)];
 			 }
+			 if ($extra && $extra =~ /\bA\b/) { # not handled by mc.bbbike.org, so create an extra link
+			     my($px0,$px1) = map { $px + $_*0.01136 } (-1, +1);
+			     my($py0,$py1) = map { $py + $_*0.00245 } (-1, +1);
+			     push @extra_url_defs, ['ADAC', sprintf("https://maps.adac.de/?traffic=construction,announcements,flow&bounds=%.5f,%.5f-%.5f,%.5f", $py0,$px0,$py1,$px1)];
+			 }
 			 if ($extra && $extra =~ /\bW\b/) { # construction information not available as tiles and thus handled by mc.bbbike.org, so create an extra link
 			     push @extra_url_defs, ['Waze', sprintf('https://www.waze.com/en/live-map/directions?to=ll.%s%%2C%s', $py, $px)];
 			 }
