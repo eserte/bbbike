@@ -1737,12 +1737,13 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        {
-         'data' => '#: tempex: (YYYY01,YYYY12) T17:00-T07:30, (YYYY02,YYYY11) T18-T07, (YYYY03,YYYY10) T19-T06, (YYYY04,YYYY09) T20:30-T06:00, (YYYY05,YYYY08) T21:30-T06:00, (YYYY06,YYYY07) T22:30-T06:00 vvv
+         'data' => '#: note: Tempelhofer Feld (alias)
+#: tempex: (YYYY01,YYYY12) T17:00-T07:30, (YYYY02,YYYY11) T18-T07, (YYYY03,YYYY10) T19-T06, (YYYY04,YYYY09) T20:30-T06:00, (YYYY05,YYYY08) T21:30-T06:00, (YYYY06,YYYY07) T22:30-T06:00 vvv
 Ein/Ausgang Columbiadamm mit Drehtor	1::night 10691,8532 10644,8363
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10644,8363 10598,8270 10575,8218
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10598,8270 10729,8152
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	2::night 10384,8628 10360,8521 10354,8493 10298,8245
-(Rundkurs auf dem Flughafen Tempelhof)	2::night 11460,7802 11470,7744 11472,7732 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9474,7182 9545,7426 9525,7558
+(Rundkurs auf dem Flughafen Tempelhof)	2::night 11460,7802 11470,7744 11472,7732 11541,7377 11589,7353 11593,7317 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9474,7182 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10575,8218
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10902,8012 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::night 9525,7558 9431,7425 9386,7326 9300,7312 9302,7294
@@ -1756,8 +1757,9 @@ Ein/Ausgang Tempelhofer Damm mit Drehtor	1::night 9242,7286 9302,7294
 (Rundkurs auf dem Flughafen Tempelhof - südliche Landebahn)	2::night 9545,7426 9592,7330 9712,7215
 (Rundkurs auf dem Flughafen Tempelhof, innerer Ring)	2::night 11078,7009 11374,7224 11366,7307 11366,7326 11279,7768 11264,7882
 (innerer Ring - äußerer Ring)	2::night 11374,7224 11407,7198
-(Südliche Landebahn)	2::night 9474,7182 9528,7205 9712,7215 10537,7257 11332,7305 11366,7307 11518,7314 11555,7314 11593,7314
+(Südliche Landebahn)	2::night 9474,7182 9528,7205 9712,7215 10537,7257 11332,7305 11366,7307 11518,7314 11555,7316 11593,7317
 (Südliche Landebahn - Rundkurs)	2::night 11332,7305 11366,7326 11438,7371 11460,7447
+(südliche Landebahn - nördlicher Rundkurs)	2::night 11555,7316 11589,7353
 (Nördliche Landebahn)	2::night 9362,7616 9522,7624 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781 11460,7802
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::night 11460,7802 11439,7894
 (Herrfurthstr. - Rundkurs)	2::night 11439,7894 11355,7871
@@ -1765,17 +1767,17 @@ Ein/Ausgang Oderstraße/Herrfurthstraße mit Drehtor	1::night 11472,7899 11458,789
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	2::night 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung - Rundkurs)	2::night 11000,8067 10902,8012
 (Strecke an der nordöstlichen Begrenzung)	2::night 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363 10360,8521
-(Weg parallel zur Oderstr.)	2::night 11458,7897 11490,7735 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
+(Weg parallel zur Oderstr.)	2::night 11458,7897 11490,7735 11509,7636 11527,7530 11547,7432 11552,7396 11589,7353
 # REMOVED (nein) --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438 (vermutlich hier soll ein Drehkreuz entstehen (Artikel ist nicht eindeutig), bis Ende 2024) --- #: XXX Ist hier ein Drehkreuz als nächtlicher Ausgang entstanden? --- #: next_check: 2024-12-31
 (Eingang Kienitzer Str.)	2::night 11504,7738 11490,7735 11482,7734 11472,7732
-(Flughafen Tempelhof - Eingang Allerstr.)	2::night 11507,7647 11521,7638
-(Flughafen Tempelhof - Eingang Okerstr.)	2::night 11528,7528 11540,7534
-(Flughafen Tempelhof - Eingang Leinestr.)	2::night 11547,7432 11558,7438
+(Flughafen Tempelhof - Eingang Allerstr.)	2::night 11509,7636 11521,7638
+(Flughafen Tempelhof - Eingang Okerstr.)	2::night 11527,7530 11540,7534
+Ein/Ausgang Oderstraße/Leinestraße mit Drehtor	1::night 11558,7438 11547,7432
 (Eingang Tempelhofer Damm - südliche Landebahn)	2::night 9302,7294 9351,7241 9474,7182
 (Alter Hafen)	2::night 10204,7680 10134,7797 10076,8040 10328,8102 10444,8086 10486,7972 10405,7898 10134,7797
 (Alter Hafen)	2::night 10076,8040 10037,8269
 (südliche Landebahn - Alter Hafen)	2::night 10537,7257 10399,7415 10204,7680
-(Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280
+(Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7316 11596,7280
 Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11596,7280
 Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
 (zur nördlichen Landebahn)	2::night 11470,7744 11430,7781
@@ -3811,7 +3813,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2024-11-26
+#: last_checked: 2025-01-19
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -4446,7 +4448,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-13
+#: last_checked: 2025-01-19
 #: check_frequency: 30d
 #: next_check: 2025-03-31
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5731,7 +5733,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-01-13
+#: last_checked: 2025-01-19
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -6730,11 +6732,11 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-01-13 vvv
+#: last_checked: 2025-01-19 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 vvv
-# REMOVED --- Allerstr.	2::inwork 11521,7638 11507,7647
-# REMOVED --- Okerstr.	2::inwork 11528,7528 11540,7534
+# REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
+# REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
 #: osm_watch: note 4425036 1
 Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
@@ -6752,9 +6754,10 @@ Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
        },
        undef,
        {
-         'data' => '#: note: laut rbb bis 19.01.2025
+         'data' => '#: note: laut rbb bis 19.01.2025 (nun inaktiv)
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
-#: also_indoor: traffic (W,G,B,T,W)
+#: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
+#: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
 #: last_checked: 2024-10-25
 #: check_frequency: 90d
 #: next_check: 2025-01-19
@@ -6762,9 +6765,9 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
 ',
          'from' => undef,
          'id' => 4158,
-         'text' => 'Marburger Str.: Sperrung der Fahrbahn vor der Tauentzienstr., voraussichtlich bis Januar 2025',
+         'text' => 'Marburger Str.: Sperrung der Fahrbahn vor der Tauentzienstr., voraussichtlich bis Januar 2025, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1737306000
+         'until' => undef
        },
        undef,
        undef,
@@ -7003,7 +7006,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1833484561985990812
 #: by[nocache]: https://x.com/Aintschie/status/1833937985588650466 (etwa 100m betroffen?)
 #: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
-#: source_id: bvg2024:x83#HIM_FREETEXT_238226
+#: source_id[inactive]: bvg2024:x83#HIM_FREETEXT_238226
 #: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...)
 #: osm_watch: note 4441243 4
 #: osm_watch: note 4441280 1
@@ -7282,8 +7285,8 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="9"
-#: last_checked: 2024-12-25
-#: check_frequency: 30d
+#: last_checked: 2025-01-19
+#: check_frequency: 60d
 #: next_check: 2028-12-31
 	q4::inwork 8384,7915 8260,7911
 ',
@@ -7335,7 +7338,10 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: also_indoor: traffic (ex-H,T,B)
-#: last_checked: 2025-01-08
+#: note: Halteverbotsschilder bis 28.02.2025
+#: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
+#: last_checked: 2025-01-19
+#: next_check: 2025-02-28
 	q4::inwork 8842,8561 8916,8511
 ',
          'from' => undef,

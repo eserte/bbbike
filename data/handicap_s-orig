@@ -21,7 +21,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-01-18
+#: last_checked: 2025-01-19
 #: check_frequency: 60d
 #: next_check: 2025-06-30
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -63,7 +63,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="4"
 #: osm_watch: way id="1146013233" version="7"
 #: osm_watch: way id="1134071039" version="9"
-#: last_checked: 2025-01-15 vvv
+#: last_checked: 2025-01-19 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-01-16
+#: last_checked: 2025-01-19
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -936,7 +936,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: note: Die Absperrung beginnt 50m vor dem Einmündungsbereich.
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-05 vvv
+#: last_checked: 2025-01-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
@@ -1925,7 +1925,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-16
+#: last_checked: 2025-01-19
 #: check_frequency: 30d
 #: next_check: 2025-03-15
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -2797,9 +2797,9 @@ Straße 46 (Heinersdorf): enger Weg	q2 12587,17603 12505,17469 12500,17460
 #: XXX_prog: Bordstein, relativ hoch
 Eingang Leinestr.: Bordstein	q3 11547,7432 11558,7438
 #: XXX_prog: Bordstein, relativ niedrig
-Eingang Okerstr.: Bordstein	q2- 11528,7528 11540,7534
+Eingang Okerstr.: Bordstein	q2- 11527,7530 11540,7534
 #: XXX_prog: Bordstein
-Eingang Allerstr.: Bordstein	q3 11507,7647 11521,7638
+Eingang Allerstr.: Bordstein	q3 11509,7636 11521,7638
 Tullaweg - An der Heilandsweide: Fußgänger	q1 8464,990 8492,1050
 (Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
 #: note: nicht klar, ob das Durchfahren verboten ist, auf der östlichen Seite kein Verbotsschild gesehen
@@ -5141,6 +5141,7 @@ Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 #: note: Ausschilderung: Privatgelände... Fahrrad fahren verboten...
 #: XXX zurzeit Umbauarbeiten, Fahrbahn gesperrt, laut Baustellenschild bis April 2025
 #: osm_watch: way id="542223826" version="15"
+#: osm_watch: way id="1294822443" version="1"
 #: historical_note: früher: Borkumstr.: Schulgelände	q2 11335,17807 11412,17823
 #: last_checked: 2025-01-18
 # REMOVED --- #: check_frequency: 60d
