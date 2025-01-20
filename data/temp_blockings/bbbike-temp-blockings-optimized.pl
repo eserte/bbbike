@@ -98,7 +98,21 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: IM_004587 (von 2007, inaktiv)
+#	q4::inwork; 15361,12071 15300,11965 15256,11884 15202,11789 15153,11691 15106,11598
+#: source_id: viz2021:13.474178,52.510451,21.01.2025,06:00 (laut VIZ nur Kfz-Verkehr, aber vor Ort existiert eine Umleitung für Radfahrer, bis 22.01.2025)
+#: note: bei rbb auch Radverkehr
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1881328760085221600
+#: by: https://pbs.twimg.com/media/GhvShD_XwAAOtVh?format=jpg&name=medium
+	q4::inwork 15202,11789 15153,11691 15106,11598
+',
+         'from' => 1737327600,
+         'id' => 796,
+         'text' => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Kraneinsatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.01.2025 06:00 bis 22.01.2025 19:00',
+         'type' => 'handicap',
+         'until' => 1737568800
+       },
        undef,
        undef,
        undef,
@@ -4861,7 +4875,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-01-03
+#: last_checked: 2025-01-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5178,6 +5192,7 @@ Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/spielplatz-ist-wieder-offen_a424125
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1518885.php (Arbeiten ab 13.01.2025 bis voraussichtlich Ende Oktober 2025)
 #: by: https://www.bew.berlin/aktuelles-und-presse/bauvorhaben-hindenburgdamm/
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/start-fuer-weitere-bauabschnitte-am-hindenburgdamm_a433899
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch[closed]: note 3631207 6
@@ -5417,7 +5432,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-01-03
+#: last_checked: 2025-01-20
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -5483,7 +5498,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-01-12 (mapillary)
+#: last_checked: 2025-01-19 (daf)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
 ',
@@ -7370,6 +7385,16 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Berkenbrück: Bahnübergang gesperrt, evtl. sind auch Radfahrer betroffen, vom 22.01.2025 21:00 Uhr bis 23.01.2025 05:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1737604800
+       },
+       {
+         'data' => '#: source_id: 247302255 (bis 31.08.2025)
+	q4::inwork 59707,90000 59702,89892 59722,89735
+',
+         'from' => 1737270000,
+         'id' => 4240,
+         'text' => 'Blumberg: Bauarbeiten, evtl. sind auch Radfahrer betroffen, 20.01.2025 08:00 Uhr bis 31.08.2025 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1756652400
        }
      
 );
