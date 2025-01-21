@@ -21,7 +21,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu fr¸h bei der VIZ gemeldet? -> aktuell l‰uft wohl die Umsetzung (auch wenn man vor Ort auﬂer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-01-19
+#: last_checked: 2025-01-21
 #: check_frequency: 60d
 #: next_check: 2025-06-30
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
@@ -63,7 +63,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="4"
 #: osm_watch: way id="1146013233" version="7"
 #: osm_watch: way id="1134071039" version="9"
-#: last_checked: 2025-01-19 vvv
+#: last_checked: 2025-01-21 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einm¸ndungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einm¸ndungsbereich	q3::inwork 13275,11830 13406,11896
@@ -426,7 +426,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
-# REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: last_checked: 2022-10-29 --- Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
+# REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: last_checked: 2022-10-29 --- Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q3::inwork 10095,12392 10063,12438
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: last_checked: 2022-10-03 vvv --- #: next_check: 2024-06-01 vvv --- (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10803,12283 10830,12279 --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: also_indoor: traffic --- #: last_checked: 2021-04-13 --- Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
 # REMOVED (hier gibt's nur noch Fuﬂwege) --- #: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022) --- # REMOVED --- #: osm_watch: way id="822127127" version="3" --- #: osm_watch: way id="736448990" version="9" --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-01-01 --- Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
@@ -436,7 +436,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2024-12-17 vvv
+#: last_checked: 2025-01-21 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -472,7 +472,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2024-12-23
+#: last_checked: 2025-01-21
 #: check_frequency: 90d
 #: next_check: 2028-03-31
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -552,7 +552,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn f¸r die Straﬂensanierung 2026 (!))
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2024-12-23 vvv
+#: last_checked: 2025-01-21 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1318,10 +1318,10 @@ Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11
 # 
 ### Lankwitz ###
 # 
-#: also_indoor: traffic (B,G,re-H,T)
+#: also_indoor: traffic (B,G,ex-H,T)
 #: note: Halteverbotsschilder bis 23.10.2024
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-01-12 (traffic) vvv
+#: last_checked: 2025-01-21 (traffic) vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: next_check: 2024-10-23 vvv
 # REMOVED --- #: valid: -20241023 vvv
@@ -3638,7 +3638,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-01-04
+#: last_checked: 2025-01-21
 #: check_frequency: 60d
 #: note: fr¸her: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -4515,15 +4515,15 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Barnimer Dˆrferweg - Gehrensee): einige Fuﬂg‰nger	q1 21035,19005 21040,19007 21015,19070
 #: note: Weg ist etwa 2m breit
 Landschaftspark Johannisthal: einige Fuﬂg‰nger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
-# REMOVED --- #: next_check_id: EINHEITSDENKMAL-2022 --- #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/ --- #: XXX auﬂerdem pr¸fen: Wird diese Verbindung auch zur Fuﬂg‰ngerzone gehˆren? --- #: last_checked: 2023-06-15 --- #: check_frequency: 45d --- #: next_check: 2023-10-01 --- Schloﬂplatz: Fuﬂg‰nger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
-Schloﬂplatz: einige Fuﬂg‰nger	q2 10174,12284 10102,12384
-Schloﬂplatz: einige Fuﬂg‰nger	q2 10102,12384 10063,12438
+# REMOVED --- #: next_check_id: EINHEITSDENKMAL-2022 --- #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/ --- #: XXX auﬂerdem pr¸fen: Wird diese Verbindung auch zur Fuﬂg‰ngerzone gehˆren? --- #: last_checked: 2023-06-15 --- #: check_frequency: 45d --- #: next_check: 2023-10-01 --- Schloﬂplatz: Fuﬂg‰nger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10095,12392
+Schloﬂplatz: einige Fuﬂg‰nger	q2 10174,12284 10095,12392
+Schloﬂplatz: einige Fuﬂg‰nger	q2 10095,12392 10063,12438
 #: note: Fuﬂg‰ngerzone, das Zusatzschild bittet zum Absteigen, allerdings sind die Wege hier weitl‰ufig und die Fuﬂg‰ngerfrequenz nicht sehr hoch vvv
-(Lustgarten - Schloss): Fuﬂg‰ngerzone	q4+ 10152,12491 10175,12435
+(Lustgarten - Schloss): Fuﬂg‰ngerzone	q4+ 10152,12491 10168,12444
 #: note: an beiden Eing‰ngen zum Stellahof wird explizit um ein Absteigen gebeten
-(Schloss, durch den Stellahof): Fuﬂg‰ngerzone, absteigen	q4 10285,12306 10255,12341 10175,12435
-(Uferweg am Humboldtforum): Fuﬂg‰ngerzone	q4+ 10357,12356 10336,12404 10271,12503 10243,12546
-Schloﬂplatz: Fuﬂg‰ngerzone	q4+ 10271,12503 10175,12435 10102,12384
+(Schloss, durch den Stellahof): Fuﬂg‰ngerzone, absteigen	q4 10285,12306 10255,12341 10168,12444
+(Uferweg am Humboldtforum): Fuﬂg‰ngerzone	q4+ 10357,12356 10336,12404 10263,12508 10243,12546
+Schloﬂplatz: Fuﬂg‰ngerzone	q4+ 10263,12508 10168,12444 10095,12392
 #: note ^^^
 (Parkweg - Park Biesdorf): Fuﬂg‰nger	q2 20775,11801 20801,11797 20804,11813 20835,11810
 Am Kraatzgraben: einige Fuﬂg‰nger	q1 16899,10020 16835,10052

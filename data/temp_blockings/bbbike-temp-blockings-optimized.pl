@@ -3189,7 +3189,7 @@ Fuﬂg‰ngerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: fr¸her Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der ˆstlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (fr¸her auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-12-17
+#: last_checked: 2025-01-21
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5856,7 +5856,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: auﬂerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraﬂe wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraﬂenregelungen noch immer? vvv
-#: last_checked: 2025-01-04 vvv
+#: last_checked: 2025-01-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6465,7 +6465,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: f¸r den Kfz-Verkehr Einbahnstraﬂenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen f¸r Radfahrer
-#: last_checked: 2024-12-23 vvv
+#: last_checked: 2025-01-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6696,7 +6696,20 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/erneuerung-fuek-weichenerneuerung-in-friedrichstrasse-brueckenarbeiten-alt-moabit/#con-29937 (SEV)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1831601103974060505 (Verl‰ngerung)
+#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/arbeiten-im-nordsued-s-bahntunnel-1/#con-31168
+#: note: wegen SEV-Haltestelle
+#: note: Sperrung 2025-01: Einbahnstraﬂenschilder wurden bereits am 2025-01-21 aufgestellt, Beginn des SEVs am 2025-01-24 22h
+	q4::temp; 9121,12514 9108,12635 9098,12687
+',
+         'from' => 1737482233,
+         'id' => 4147,
+         'text' => 'Neust‰dtische Kirchstr.: Einbahnstraﬂenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung S¸den, voraussichtlich bis 27.01.2025',
+         'type' => 'handicap',
+         'until' => 1737968400
+       },
        {
          'data' => '#: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
@@ -6912,7 +6925,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahr¸berholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-01-08 (traffic) vvv
+#: last_checked: 2025-01-21 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-02-28 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7023,16 +7036,18 @@ Fischerinsel: Engstelle am M¸hlendamm	q3::inwork; 10512,12039 10578,11969
 #: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:x83#HIM_FREETEXT_238226
 #: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...)
+#: source_id: bvg2024:x83#HIM_FREETEXT_260482 (kein Endedatum)
 #: osm_watch: note 4441243 4
 #: osm_watch: note 4441280 1
-#: also_indoor: traffic (H,G,B,T,W)
+#: also_indoor: traffic (H,ex-G,B,T,W)
 #: note: etwa 80m der Fahrbahn sind gesperrt, nur der nordˆstliche B¸rgersteig ist offen
-#: next_check: 2025-01-31
+#: add_fragezeichen: Ist die Fahrbahn der Grunewaldstraﬂe noch immer gesperrt?
+#: next_check: 2025-01-20
 	q4::inwork 4671,5697 4520,5793
 ',
          'from' => 1726092000,
          'id' => 4203,
-         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m L‰nge gesperrt, mindestens bis 31.01.2025, voraussichtlich wird verl‰ngert',
+         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m L‰nge gesperrt, mindestens bis 31.01.2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7083,8 +7098,8 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
 #: by: https://entwicklungsstadt.de/bauprojekt-breite-strasse-in-berlin-mitte-kritik-an-der-architektur/
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straﬂe noch immer gesperrt?
-#: last_checked: 2025-01-11 (daf)
-#: check_frequency: 14d
+#: last_checked: 2025-01-21
+#: check_frequency: 21d
 # REMOVED --- #: check_frequency: 30d
 	2::inwork 10383,12191 10289,12106
 ',

@@ -1571,7 +1571,7 @@ EOF
        text  => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::xmas 10174,12284 10102,12384 10063,12438
+	2::xmas 10174,12284 10095,12392 10063,12438
 EOF
      },
      { from  => 1136837576, # 2006-01-09 21:12
@@ -10849,7 +10849,7 @@ EOF
        text  => 'Weihnachtsmarkt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::xmas 10174,12284 10102,12384 10063,12438
+	2::xmas 10174,12284 10095,12392 10063,12438
 EOF
      },
      { from  => 1195515915, # 2007-11-20 00:45
@@ -25849,7 +25849,7 @@ EOF
        source_id => 'IM_026700',
        data  => <<EOF,
 #: source_id: 2147339577
-	q3::inwork; 14218,13834 14243,13890 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
+	q3::inwork; 14218,13834 14243,13890 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14919,14503 14989,14539 15066,14579
 EOF
      },
      { from  => $isodate2epoch->("2024-11-24 00:00:00"), # 1 Tag Vorlauf
@@ -28842,7 +28842,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2024-12-17
+#: last_checked: 2025-01-21
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -31173,11 +31173,11 @@ EOF
 	2::temp 9737,12238 9702,12307 9664,12387
 	2::temp 9680,12232 9702,12307 9713,12392
 	3 10291,12600 10300,12587 10363,12535
-	3 10102,12384 10063,12438 9956,12617
+	3 10095,12392 10063,12438 9956,12617
 	3 9873,12315 9858,12410 9846,12516
 	3 9953,12533 9984,12426 9990,12404
 	3 10363,12535 10300,12587 10291,12600
-	3 9956,12617 10063,12438 10102,12384
+	3 9956,12617 10063,12438 10095,12392
 	3 9990,12404 9984,12426 9953,12533
 	3 9846,12516 9858,12410 9873,12315
 #: note: Sperrung des Bebelplatzes
@@ -41925,7 +41925,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-01-04 vvv
+#: last_checked: 2025-01-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -44292,7 +44292,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2024-12-23 vvv
+#: last_checked: 2025-01-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44980,14 +44980,17 @@ EOF
 	2::inwork 12056,34918 12025,35002 11964,35230
 EOF
      },
-     { from  => 1724241259, # 2024-08-21 13:54
-       until => $isodate2epoch->("2024-09-09 01:30:00"), # 1725406200, # 2024-09-04 01:30
-       text  => 'Neustädtische Kirchstr.: Einbahnstraßenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung Süden, voraussichtlich bis 09.09.2024',
+     { from  => 1737482233, # 1724241259, # 2024-08-21 13:54
+       until => $isodate2epoch->("2025-01-27 10:00:00"), # $isodate2epoch->("2024-09-09 01:30:00"), # 1725406200, # 2024-09-04 01:30
+#      text  => 'Neustädtische Kirchstr.: Einbahnstraßenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung Süden, voraussichtlich bis 09.09.2024',
+       text  => 'Neustädtische Kirchstr.: Einbahnstraßenregelung zwischen Reichtstagufer und Dorotheenstr., offen Richtung Süden, voraussichtlich bis 27.01.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/erneuerung-fuek-weichenerneuerung-in-friedrichstrasse-brueckenarbeiten-alt-moabit/#con-29937 (SEV)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831601103974060505 (Verlängerung)
+#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/arbeiten-im-nordsued-s-bahntunnel-1/#con-31168
 #: note: wegen SEV-Haltestelle
+#: note: Sperrung 2025-01: Einbahnstraßenschilder wurden bereits am 2025-01-21 aufgestellt, Beginn des SEVs am 2025-01-24 22h
 	q4::temp; 9121,12514 9108,12635 9098,12687
 EOF
      },
@@ -45520,7 +45523,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-01-08 (traffic) vvv
+#: last_checked: 2025-01-21 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-02-28 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -45723,7 +45726,7 @@ EOF
      { from  => $isodate2epoch->("2024-09-12 00:00:00"),
        until => undef, # $isodate2epoch->("2025-01-07 23:59:59"), # 1738364340, # 2025-01-31 23:59
 #      text  => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, vom 12.09.2024 bis 07.01.2025',
-       text  => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, mindestens bis 31.01.2025, voraussichtlich wird verlängert',
+       text  => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, mindestens bis 31.01.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/berlin/nach-wasserrohrbruch-in-berlin-grunewaldstrasse-bleibt-tagelang-gesperrt--65-wohnungen-ohne-wasser-12349757.html
@@ -45734,11 +45737,13 @@ EOF
 #: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:x83#HIM_FREETEXT_238226
 #: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...)
+#: source_id: bvg2024:x83#HIM_FREETEXT_260482 (kein Endedatum)
 #: osm_watch: note 4441243 4
 #: osm_watch: note 4441280 1
-#: also_indoor: traffic (H,G,B,T,W)
+#: also_indoor: traffic (H,ex-G,B,T,W)
 #: note: etwa 80m der Fahrbahn sind gesperrt, nur der nordöstliche Bürgersteig ist offen
-#: next_check: 2025-01-31
+#: add_fragezeichen: Ist die Fahrbahn der Grunewaldstraße noch immer gesperrt?
+#: next_check: 2025-01-20
 	q4::inwork 4671,5697 4520,5793
 EOF
      },
@@ -45845,8 +45850,8 @@ EOF
 #: by: https://entwicklungsstadt.de/bauprojekt-breite-strasse-in-berlin-mitte-kritik-an-der-architektur/
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2025-01-11 (daf)
-#: check_frequency: 14d
+#: last_checked: 2025-01-21
+#: check_frequency: 21d
 # REMOVED --- #: check_frequency: 30d
 	2::inwork 10383,12191 10289,12106
 EOF
@@ -46075,8 +46080,8 @@ EOF
 #: by: https://www.berlin.de/weihnachtsmarkt/8360550-3496862-weihnachtsmarkt-am-humboldt-forum.html
 #: by: https://wintermarkt-schlossplatz.de/
 #: note: im Internet teilweise als "Weihnachtsmarkt", teilweise als "Wintermarkt" zu finden, letzteres scheint aber korrekt zu sein
-	2::xmas 10152,12491 10175,12435 10271,12503
-	2::xmas 10175,12435 10102,12384
+	2::xmas 10152,12491 10168,12444 10263,12508
+	2::xmas 10168,12444 10095,12392
 EOF
      },
      { from  => undef, # 
