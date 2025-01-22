@@ -361,11 +361,13 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12522 (Anfrage)
+#: by: https://checkpoint.tagesspiegel.de/langmeldung/1dzjkywbb8otc9uvnkoamh (Abriss voraussichtlich in der zweiten Jahreshälfte 2025)
 #: osm_watch: way id="549316654" version="35"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: last_checked: 2025-01-15
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 150d
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -986,7 +988,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="39"
 #: osm_watch: way id="1193560283" version="8"
-#: last_checked: 2024-12-24
+#: last_checked: 2025-01-22
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -994,7 +996,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-01-12
+#: last_checked: 2025-01-22
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1078,6 +1080,12 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 # 
 ### Marzahn ###
 # 
+#: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
+#: also_indoor: traffic (B,T)
+#: last_checked: 2025-01-22
+#: check_frequency: 14d
+Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
+# 
 # REMOVED --- #: next_check_id: KNOTENMARZAHN-2022
 # REMOVED --- #: last_checked: 2024-06-02
 # REMOVED --- #: check_frequency: 60d
@@ -1117,7 +1125,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: source_id: viz2021:13.588878,52.541211,01.11.2024,07:00 (Gothaer, nördlicher Abschnitt, bis 18.11.2024) (inaktiv)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 6
-#: last_checked: 2024-10-20 (osm) vvv
+#: last_checked: 2025-01-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-31 vvv
 # REMOVED --- #: next_check: 2025-07-31 vvv
@@ -1134,17 +1142,18 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024) (bis 05.02.2025) (bis 06.02.2025)
+#: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024) (bis 05.02.2025) (bis 06.02.2025) (bis 14.02.2025)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/richtfeste-fuer-290-wohnungen_a417760
 #: also_indoor: traffic (G,H,B)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: last_checked: 2025-01-07 (mapillary) vvv
+#: note: außerdem Beilsteiner Str. Höhe Merler Weg ist die Durchfahrt Richtung Süden mit Betonbarrieren versperrt, als Radfahrer kann man über den Hochbord vorbeifahren
+#: last_checked: 2025-01-22 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-02-06 vvv
-#: valid: -2025-02-06 vvv
+#: next_check: 2025-02-14 vvv
+#: valid: -2025-02-14 vvv
 #: osm_watch: way id="1089784266" version="4"
 #: osm_watch: way id="1231226671" version="1"
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
@@ -1282,8 +1291,10 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 #: by: https://pascalgrothe.de/grabensprung-wiedereroeffnung-steht-bevor/ (veröffentlicht am 28.12.2024, Freigabe "in Kürze")
 #: also_indoor: traffic (T,ex-G,B)
 #: also_indoor: url https://pascalgrothe.de/kiezblog/
+#: note: Halteverbotsschilder bis 31.01.2025
 #: last_checked: 2025-01-16 (traffic)
 #: check_frequency: 7d
+#: next_check: 2025-01-31
 Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv
@@ -2916,7 +2927,7 @@ Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
 #: XXX_prog BS am nördlichen Ende (ansonsten q1)
 #: XXX bleibt es beim Bordstein? Möglicherweise nur wegen der benachbarten Hochbauarbeiten?
 # REMOVED (ist jetzt was anderes) --- #: osm_watch: way id="733001657" version="5"
-#: last_checked: 2024-10-19
+#: last_checked: 2025-01-22
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-06-30
 Lion-Feuchtwanger-Weg: Fußgänger, Bordstein	q3 22516,12946 22493,12999
@@ -3000,8 +3011,8 @@ Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhl): Fußgänger	q1 15060,13735 15055,13768 15023,13800 15010,13807
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fußgänger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
 (Bernhard-Bästlein-Str. - Park am Fennpfuhl): Fußgänger	q1- 15354,13998 15267,13967 15254,13899
-(Park am Fennpfuhlpark - Anton-Saefkow-Platz): Fußgänger	q1 15179,13872 15062,13827
-Anton-Saefkow-Platz: Fußgängerzone, Radfahrer frei	q2+ 15062,13827 15034,13814 15010,13807 14989,13815 14846,13760 14821,13674
+(Park am Fennpfuhlpark - Anton-Saefkow-Platz): Fußgänger	q1 15179,13872 15095,13839
+Anton-Saefkow-Platz: Fußgängerzone, Radfahrer frei	q2+ 15095,13839 15034,13814 15010,13807 14989,13815 14846,13760 14821,13674
 (Rudolf-Seiffert-Str. - Karl-Lade-Str.): Fußgänger	q4+ 14731,13576 14751,13693
 (Darßer Str. - Malchower See): Fußgänger	q1 15505,17967 15825,18385 15949,18555
 Am Malchower See: Fußgänger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16036,18604 16161,18687
@@ -3508,8 +3519,8 @@ Cajamarcaplatz: viele Fußgänger	q4 17698,5727 17766,5659
 (Ella-Trebe-Str. - Invalidenstr.): einige Fußgänger	q1 7938,13302 7968,13335 8003,13374
 Europaplatz: einige Fußgänger	q1 7901,13324 7938,13302
 Wuhlestr. [Wohngebiet]: Fußgänger	q1 21580,13583 21430,13602
-(oberer Wuhlewanderweg): einige Fußgänger	q1+ 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902 22783,14034 22855,14114 22872,14175 22872,14224 22860,14440 22868,14477 22873,14498 22864,14556
-(oberer Wuhlewanderweg): Fußgänger, Kinderspielplätze	q1- 22864,14556 22851,14603 22756,14787 22702,14880 22690,14915 22643,14977 22599,15030 22588,15056 22577,15109
+(oberer Wuhlewanderweg): einige Fußgänger	q1+ 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902 22757,14010 22788,14032 22820,14063 22855,14114 22872,14175 22872,14224 22860,14440 22868,14477 22873,14498 22861,14573
+(oberer Wuhlewanderweg): Fußgänger, Kinderspielplätze	q1- 22861,14573 22851,14603 22756,14787 22702,14880 22690,14915 22643,14977 22599,15030 22588,15056 22577,15109
 #: XXX_prog BS an beiden Seiten, sonst entfernen
 Unterbaumstr.: Bordsteine	q2 8488,12920 8502,12935
 (Hofackerzeile - Kurt-Schumacher-Damm): einige Fußgänger	q2 2769,14482 2770,14420 2788,14364
@@ -4504,7 +4515,7 @@ Friedrich-Jacobs-Promenade: einige Fußgänger, einige kurvige und schmale Abschni
 Friedrich-Jacobs-Promenade: einige Fußgänger, einige kurvige und schmale Abschnitte	q2+ 16090,10141 16041,10072 15980,9986 15981,9975 15936,9911 15910,9873 15916,9868
 (Verbindungsweg): Fußgänger, schmal	q2 20659,11548 20627,11552 20582,11558
 (Verbindungsweg): Fußgänger, schmal	q2 20726,11539 20823,11527 20866,11521
-(Marchwitzastr. - Allee der Kosmonauten): einige Fußgänger	q2 19934,13318 19835,13317
+(Marchwitzastr. - Allee der Kosmonauten): einige Fußgänger	q2 19933,13328 19834,13326
 (Allee der Kosmonauten [Wohngebiet] - Unterführung): einige Fußgänger, Kurven	q2 19812,13442 19826,13444
 Stolzenhagener Str. [Gehweg]: Fußgänger, Radfahren nicht erlaubt	q3 20321,16043 20358,16121
 Rabensteiner Str. - Havemannstr.: wilde Rampe, ansonsten drei weite Stufen	q4 22058,18066 22065,18087
@@ -6026,7 +6037,7 @@ Kühleweinstr.: Schule	q1 8014,17468 7998,17564
 # 
 #: by: Torsten Franik:
 # REMOVED (Radfahrer und Fußgänger sind in der Unterführung getrennt) --- Allee der Kosmonauten - Biesdorfer Promenade: Fußgänger	q1 19819,13606 19826,13444
-Allee der Kosmonauten - Biesdorfer Promenade: Fußgänger	q1 19826,13444 19835,13317 19846,13209 19870,13183 19873,13129 20068,13036
+Allee der Kosmonauten - Biesdorfer Promenade: Fußgänger	q1 19826,13444 19834,13326 19846,13209 19870,13183 19873,13129 20068,13036
 # 
 #: by: Bob Lüder:
 Rathener Str.: enge Straße	q1 24228,14644 24271,14576 24359,14543
@@ -7200,6 +7211,9 @@ Vulkanstr./Landsberger Allee - Altenhofer Str.: schmal	q2 15796,14310 15791,1432
 (Rosenthaler Weg - Aubertstr.): einige Fußgänger	q1 11747,22496 11278,22848 11220,22886
 (Blankenfelder Str. - Goetheweg): einige Fußgänger	q1 10968,22546 11220,22886 11228,22914 11219,22932 11162,22939
 (KGA Freies Land, G-Weg): gemeinsamer Geh- und Radweg, schmal	q2 12908,17807 12764,17725 12630,17636
+(Pasewalker Str. - Akkordeonweg): schmal	q2 11949,20802 11923,20813
+#: note: am östlichen Ende als gemeinsamer Geh- und Radweg ausgeschildert
+(Pasewalker Str. - Akkordeonweg): schmal	q2 11923,20813 11872,20809
 #: by: ^^^
 #: section ^^^
 #: section ^^^

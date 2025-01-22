@@ -2181,7 +2181,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.tagesspiegel.de/berlin/wegen-bauarbeiten-in-mitte-schifffahrt-unter-muhlendammbrucke-zwei-monate-unterbrochen-13036282.html (Fertigstellung 2028)
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/muehlendammbruecke/
 #: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029)
-#: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025)
+#: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
 #: last_checked: 2025-01-21 vvv
@@ -4290,7 +4290,7 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX Radwege werden neu gemacht vvv
-#: last_checked: 2024-10-19 vvv
+#: last_checked: 2025-01-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-07-31 vvv
 Gehweg für Radfahrer frei, Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082
@@ -5606,12 +5606,12 @@ Radwegauffahrt ist abgesperrt	RW0; 10680,18380 10710,18393
 #: note: ausgeblichenes Schild "gemeinsamer Geh- und Radweg" an der Schönerlinder Str.
 	RW1;RW9 11929,23946 11516,24272 11760,24470 11768,24522 11706,24797 11272,25373
 	RW1;RW9 11248,25403 11077,25604
-Gehweg für Radfahrer frei, Gehwegplatten	RW1; 12121,20969 12095,20832 12076,20731 12039,20538 12038,20530 12008,20368
+Gehweg für Radfahrer frei, Gehwegplatten	RW1; 12121,20969 12095,20832 12078,20739 12076,20731 12039,20538 12038,20530 12008,20368
 #: by: wosch (Nordrichtung) vvv
 #: confirmed_by: srt vvv
 	RW4; 12008,20368 12038,20530
 	RW3; 12038,20530 12039,20538 12076,20731
-	RW4; 12076,20731 12095,20832 12121,20969
+	RW4; 12076,20731 12078,20739 12095,20832 12121,20969
 #: confirmed_by: ^^^
 #: by ^^^
 #: note: hier steht ein Radwegschild, aber die früher wahrscheinlich vorhandene Radspur ist nicht mehr zu erkennen
@@ -7173,6 +7173,7 @@ Radweg endet bereits nach 70 Metern, noch vor der Kreuzung	RW2; 21239,15633 2122
 	RW1; 21951,15918 21980,15857
 	RW6;RW6 24191,14866 24115,14828 24061,14801
 	RW6;RW6 22692,13836 22671,13839 22668,13849 22652,13895 22658,13898 22670,13902
+	RW6;RW6 22615,13734 22678,13756 22685,13738
 	RW6;RW6 22668,13849 22600,13812
 Verbundsteinpflaster	RW1;RW1 20344,17493 19529,17902
 am Anfang 50 Meter Radweg	RW0; 21390,16903 21170,16942

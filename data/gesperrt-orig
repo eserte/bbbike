@@ -183,7 +183,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-01-20 vvv
+#: last_checked: 2025-01-22 vvv
 #: next_check: 2026-12-31 vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -322,7 +322,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2024-12-24
+#: last_checked: 2025-01-22
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -1721,6 +1721,16 @@ Hauptstr. (Rummelsburg) [Nebenfahrbahn]	1s:q4 15332,10657 15298,10682
 Buswendestelle Gensweg	2s:q4 12673,1140 12609,1088 12588,1103
 # 
 Minna-Cauer-Str.: Straßentunnel	3nocross 7901,13324 7895,13415 7907,13532
+# 
+#: next_check_id: ZURALTENBOERSE-2025
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10033 (Bebauungsplanverfahren XXI-40a)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
+#: note: man kann hier schon entlangfahren, über Betriebsgeländestraßen unterschiedlicher Qualität; am südlichen Ende ist ein Tor, welches am 2023-01-21 geöffnet werden konnte; mittlerweile existiert kein Tor mehr (2024-09-08); 2025-01-22: wieder ein verschlossenes Tor; siehe auch gesperrt-orig-Eintrag
+#: osm_watch: way id="946443907" version="3"
+#: note: siehe auch temp_blockings-Eintrag
+#: last_checked: 2025-01-22
+#: check_frequency: 120d
+Zur Alten Börse - Merler Weg: gesperrtes Tor/Bauzaun	2 18736,13080 18749,13158
 # 
 #: section ^^^
 ######################################################################
@@ -3975,7 +3985,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
-#: last_checked: 2025-01-14 (mapillary) vvv
+#: last_checked: 2025-01-20 (mapillary) vvv
 #: next_check: 2025-06-15 vvv
 #: osm_watch: way id="1199394070" version="3"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -4305,7 +4315,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="28"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2024-12-24
+#: last_checked: 2025-01-22
 #: check_frequency: 90d
 #: next_check: 2025-06-06
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4410,7 +4420,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025)
 #: priority: #C
-#: last_checked: 2025-01-20
+#: last_checked: 2025-01-22
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -5516,7 +5526,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 # REMOVED --- : next_check: 2016-11-25 --- IGA 2017-Gelände: Wege gesperrt	2 21408,14591 21450,14576 21822,14480 21925,14500 21948,14501
 # REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 21948,14501 21985,14513
 # REMOVED (möglicherweise offen) --- IGA 2017-Gelände: Wege gesperrt	2 22783,14034 22987,13989
-# REMOVED (wieder offen) --- IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22783,14034 22855,14114 22872,14175 22872,14233 22860,14440
+# REMOVED (wieder offen) --- IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22757,14010 22783,14034 22855,14114 22872,14175 22872,14233 22860,14440
 # REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
 # REMOVED --- #: XXX Rübertragen ist zur Not möglich vvv --- #: by:  --- #: last_checked: 2016-08-20 vvv --- #: check_frequency: 120d vvv --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18899,3248 18892,3256 18834,3315 18818,3332 18689,3465 --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
 # REMOVED (by osm) --- #: osm_watch: way id="257072322" version="8" --- #: osm_watch: way id="412992929" version="3" --- #: last_checked: 2017-05-21 --- #: check_frequency: 120d --- Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318

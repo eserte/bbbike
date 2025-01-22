@@ -6981,7 +6981,7 @@ EOF
        data  => <<EOF,
 #: source_id: IM_004587 (von 2007, inaktiv)
 #	q4::inwork; 15361,12071 15300,11965 15256,11884 15202,11789 15153,11691 15106,11598
-#: source_id: viz2021:13.474178,52.510451,21.01.2025,06:00 (laut VIZ nur Kfz-Verkehr, aber vor Ort existiert eine Umleitung für Radfahrer, bis 22.01.2025)
+#: source_id: viz2021:13.474178,52.510451,21.01.2025,06:00 (laut VIZ nur Kfz-Verkehr, aber vor Ort existiert eine Umleitung für Radfahrer, bis 22.01.2025) (inaktiv)
 #: note: bei rbb auch Radverkehr
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1881328760085221600
 #: by: https://pbs.twimg.com/media/GhvShD_XwAAOtVh?format=jpg&name=medium
@@ -14648,7 +14648,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017116',
        data  => <<EOF,
-	q4::inwork; 12095,20832 12076,20731 12039,20538 12038,20530 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
+	q4::inwork; 12095,20832 12078,20739 12076,20731 12039,20538 12038,20530 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
 	q4::inwork; 11883,19739 11730,19684
 EOF
      },
@@ -31450,7 +31450,7 @@ EOF
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-01-16 (traffic) vvv
+#: last_checked: 2025-01-22 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -32179,7 +32179,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.944146.php',
        data  => <<EOF,
-	2::inwork 22503,14104 22783,14034
+	2::inwork 22503,14104 22788,14032
 EOF
      },
      { from  => 1592690400, # 2020-06-21 00:00
@@ -37616,7 +37616,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-01-20
+#: last_checked: 2025-01-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -38297,12 +38297,12 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: last_checked: 2024-12-27 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-01-27 vvv
+#: next_check: 2025-01-28 vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
 #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18)
@@ -42794,7 +42794,7 @@ EOF
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
-#: last_checked: 2024-12-15 (mapillary)
+#: last_checked: 2025-01-20 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-06-15
 	2::inwork 9586,17665 9461,17795
@@ -44405,11 +44405,11 @@ EOF
        data  => <<EOF,
 #: note: by rbb (alter Eintrag vom Juli 2024)
 #: note: bei rbb nur Richtung Süden (vorfristig entfernt, deshalb add_fragezeichen-Eintrag)
-#: also_indoor: traffic (ex-H,G,ex-B,ex-T,W)
-#: note: In den traffic-Quellen nun nur noch bis 17.1.2025
+#: also_indoor: traffic (ex-H,G,re-B,re-T,W)
+#: note: In den traffic-Quellen nun nur noch bis 17.1.2025; mittlerweile haben einige Quellen den Eintrag wieder aufgenommen
 #: source_id: viz2021:13.315793,52.506037,11.12.2024,14:00 (bis 28.03.2025)
-#: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: next_check: 2025-01-17
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
+# REMOVED --- #: next_check: 2025-01-17
 	q4::inwork 4415,11053 4399,10854
 EOF
      },
@@ -45148,11 +45148,12 @@ EOF
        data  => <<EOF,
 #: note: laut rbb bis 19.01.2025 (nun inaktiv)
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
-#: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
+#: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2024-10-25
-#: check_frequency: 90d
-#: next_check: 2025-01-19
+#: last_checked: 2025-01-22 (traffic)
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2025-01-19
 Marburger Str.	q3::inwork 5802,10621 5907,10821
 EOF
      },
@@ -45206,14 +45207,11 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicheweise mit Bauzäunen gesperrt werden (Stand Anfang September 2024: Verbindung war passierbar)',
+       text  => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicherweise mit Bauzäunen versperrt sein (Stand Januar 2025: nicht passierbar)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10033 (Bebauungsplanverfahren XXI-40a)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
-#: note: man kann hier schon entlangfahren, über Betriebsgeländestraßen unterschiedlicher Qualität; am südlichen Ende ist ein Tor, welches am 2023-01-21 geöffnet werden konnte; mittlerweile existiert kein Tor mehr (2024-09-08)
-#: osm_watch: way id="946443907" version="3"
-#: last_checked: 2024-09-08
+#: next_check_id: ZURALTENBOERSE-2025
+#: last_checked: 2025-01-22
 #: check_frequency: 120d
 Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 EOF
@@ -45688,15 +45686,15 @@ EOF
 EOF
      },
      { from  => 1729533901, # 2024-10-21 20:05
-       until => $isodate2epoch->("2025-01-31 17:00:00"), # 1737154800, # 2025-01-18 00:00
+       until => $isodate2epoch->("2025-01-23 13:00:00"), # 1737154800, # 2025-01-18 00:00
 #      text  => 'Lynarstr.: Sperrung zwischen Humboldtstr. und Wangenheimstr., evtl. sind auch Radfahrer betroffen, bis 17.01.2025',
-       text  => 'Lynarstr.: Sperrung zwischen Hubertusallee und Humboldtstr., evtl. sind auch Radfahrer betroffen, bis 31.01.2025',
+       text  => 'Lynarstr.: Sperrung zwischen Hubertusallee und Humboldtstr., evtl. sind auch Radfahrer betroffen, bis 23.01.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: rbb
 #: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
 #: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
-#: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025)
+#: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025)
 #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
 #: also_indoor: traffic (G,H,B,T,W)
 # REMOVED ---	q4::inwork 2453,9156 2576,9132
@@ -46220,6 +46218,17 @@ EOF
        data  => <<EOF,
 #: source_id: 247302255 (bis 31.08.2025)
 	q4::inwork 59707,90000 59702,89892 59722,89735
+EOF
+     },
+     { from  => 1737500400, # 2025-01-22 00:00
+       until => 1759269600, # 2025-10-01 00:00
+       text  => 'Arnimallee: Fahrbahn an der Königin-Luise-Str. gesperrt, bis voraussichtlich September 2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.298658,52.457781,22.01.2025,07:00 (bis 01.10.2025 + weitere Bauarbeiten bis 09/25)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1881943627896922593
+#: by: https://pbs.twimg.com/media/Ghzqa-yXAAA6Iuk?format=jpg&name=large
+	q4::inwork 3355,5655 3346,5629
 EOF
      },
     );

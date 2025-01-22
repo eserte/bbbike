@@ -199,7 +199,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-01-20
+#: last_checked: 2025-01-22
 #: check_frequency: 120d
 #: next_check: 2025-09-30
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -3877,7 +3877,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 1
-#: last_checked: 2025-01-14 (mapillary) vvv
+#: last_checked: 2025-01-20 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
@@ -4404,11 +4404,11 @@ geschlossen bei Bedarf	Zbr 27649,-11766
 	B 13295,-18620
 	B 13412,-20513
 	B 13467,-21298
-#: by: https://www.eba.bund.de/SharedDocs/Anhoerungsverfahren/DE/Brandenburg/2023/0131_Anhoerung_ABS_Berlin_Dresden_Bahnuebergangsersatzmassnahme_Thomas_Muentzer_Strasse.html
+#: next_check_id: ZOSSENMELLENSEE-2025
 #: XXX Bahnübergang wird durch eine Über/Unterführung ersetzt
 #: osm_watch: node id="31353169" version="10"
 #: osm_watch: node id="385984279" version="10"
-#: next_check: 2025-02-15
+#: next_check: 2027-12-31
 	B 13528,-21855
 # REMOVED (laut osm) ---	B 16379,-29446
 # REMOVED ---	B 16827,-30948
