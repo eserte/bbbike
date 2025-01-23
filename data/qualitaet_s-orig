@@ -786,7 +786,8 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: osm_watch: way id="1101189360" version="5"
 #: osm_watch: note 4529248 2
 #: last_checked: 2025-01-04
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 90d
 #: next_check: 2025-12-31
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
@@ -1155,7 +1156,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/artikel.1496371.php (voraussichtlich ab 2025)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2024-12-11
+#: last_checked: 2025-01-23
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.

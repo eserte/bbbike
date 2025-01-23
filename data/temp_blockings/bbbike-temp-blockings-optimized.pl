@@ -3547,7 +3547,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-300623/ (neue Bauphase)
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
-#: also_indoor: traffic (re-G,ex-H,B,T,W)
+#: also_indoor: traffic (re-G,ex-H,ex-B,ex-T,W)
+#: osm_watch: way id="200775245" version="13"
+#: osm_watch: note 3210197 3
 #: last_checked: 2024-08-27 (mapillary)
 #: check_frequency: 150d
 #: next_check: 2025-01-31
@@ -5855,7 +5857,7 @@ Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 # REMOVED (hier ist die Einbahnstraße mittlerweile für Radfahrer offen) --- Mohrenstr.	q3::inwork; 9679,11834 9547,11819
 #: note: Halteverbotsschilder bis 30.06.2025
 #: osm_watch[closed]: note 4053376 3
-#: osm_watch: way id="1149365724" version="8"
+#: osm_watch: way id="1149365724" version="9"
 #: osm_watch: way id="1149365723" version="7"
 #: XXX Die Charlottenstr. könnte in Kürze freigegeben werden
 #: check_frequency: 14d vvv
@@ -6993,22 +6995,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
          'type' => 'handicap',
          'until' => 1740783599
        },
-       {
-         'data' => '#: by: rbb
-#: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
-#: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
-#: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025)
-#: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
-#: also_indoor: traffic (G,H,B,T,W)
-# REMOVED ---	q4::inwork 2453,9156 2576,9132
-	q4::inwork 2453,9156 2337,9178
-',
-         'from' => 1729533901,
-         'id' => 4200,
-         'text' => 'Lynarstr.: Sperrung zwischen Hubertusallee und Humboldtstr., evtl. sind auch Radfahrer betroffen, bis 23.01.2025',
-         'type' => 'handicap',
-         'until' => 1737633600
-       },
+       undef,
        undef,
        undef,
        {
@@ -7097,11 +7084,13 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
        {
          'data' => '#: next_check_id: ROENNE-2024
 #: source_id: viz2021:13.298976,52.504217,11.11.2024,07:00 (bis 30.12.2024) (inaktiv)
+#: source_id: viz2021:13.299093,52.504261,23.01.2025,13:59 (zweifelhaft: "Brückenarbeiten", aber der Abschnitt stimmt; bis 31.03.2025)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: etwa 150m der Fahrbahn sind gesperrt (zurzeit östlicher Abschnitt)
 #: last_checked: 2025-01-04
-#: check_frequency: 60d
-#: next_check: 2025-12-31
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2025-03-31
+# REMOVED --- #: next_check: 2025-12-31
 	q3::inwork 3041,10732 3295,10831
 ',
          'from' => 1731218400,
@@ -7268,7 +7257,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: also_indoor: traffic (T,B,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-10 (traffic)
+#: last_checked: 2025-01-22 (traffic)
 #: check_frequency: 14d
 	q4::inwork 16668,14765 16750,14747
 ',
@@ -7375,16 +7364,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => 1751320800
        },
-       {
-         'data' => '#: source_id: 256700007 (bis 23.01.2025)
-	2::inwork 62507,-4444 62486,-4480 62471,-4512
-',
-         'from' => 1737489600,
-         'id' => 4239,
-         'text' => 'Berkenbrück: Bahnübergang gesperrt, evtl. sind auch Radfahrer betroffen, vom 22.01.2025 21:00 Uhr bis 23.01.2025 05:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1737604800
-       },
+       undef,
        {
          'data' => '#: source_id: 247302255 (bis 31.08.2025)
 	q4::inwork 59707,90000 59702,89892 59722,89735
@@ -7406,6 +7386,16 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Arnimallee: Fahrbahn an der Königin-Luise-Str. gesperrt, bis voraussichtlich September 2025',
          'type' => 'handicap',
          'until' => 1759269600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025)
+	q4::inwork 2493,10675 2596,10663 2673,10670
+',
+         'from' => 1737525600,
+         'id' => 4242,
+         'text' => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.01.2025 07:00 bis 30.05.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1748617200
        }
      
 );

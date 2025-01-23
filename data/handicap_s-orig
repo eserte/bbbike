@@ -12,7 +12,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, vermutlich Hochbauarbeiten
-#: last_checked: 2025-01-11
+#: last_checked: 2025-01-23
 #: check_frequency: 60d
 #: next_check: 2025-06-30
 #: valid: -20250630
@@ -60,10 +60,10 @@ Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 #: osm_watch: note 4452740 1
-#: osm_watch: way id="1327235572" version="4"
-#: osm_watch: way id="1146013233" version="7"
-#: osm_watch: way id="1134071039" version="9"
-#: last_checked: 2025-01-21 vvv
+#: osm_watch: way id="1327235572" version="5"
+#: osm_watch: way id="1146013233" version="8"
+#: osm_watch: way id="1134071039" version="10"
+#: last_checked: 2025-01-22 (osm) vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -125,7 +125,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-17
+#: last_checked: 2025-01-23
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -1292,7 +1292,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 #: also_indoor: traffic (T,ex-G,B)
 #: also_indoor: url https://pascalgrothe.de/kiezblog/
 #: note: Halteverbotsschilder bis 31.01.2025
-#: last_checked: 2025-01-16 (traffic)
+#: last_checked: 2025-01-22
 #: check_frequency: 7d
 #: next_check: 2025-01-31
 Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275

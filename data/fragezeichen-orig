@@ -1472,7 +1472,7 @@ Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361
 #: by: https://twitter.com/VIZ_Berlin/status/1467735807180091392
 #: source_id: viz2021:13.254609,52.522683,06.12.2021,07:00 (Umbauarbeiten am Radweg, zwischen Meiningenallee und Reichsstr.) (bis 30.4.2022) (bis 13.7.2022) (bis 16.8.2022) (bis 19.8.2022) (inaktiv)
 #: source_id: viz2021:13.247458,52.524598,15.08.2022,07:00 (Kanalarbeiten an der Einmündung Wiesendamm, haben diese was mit dem Radweg zu tun?) (bis 16.9.2022) (inaktiv)
-#: last_checked: 2024-09-18 vvv
+#: last_checked: 2025-01-22 (daf) vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2022-08-19 vvv
 Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordseite?	?::projected 795,12652 655,12690 546,12720 533,12724 425,12755
@@ -1562,7 +1562,7 @@ Alt-Mariendorf: Verbesserung (hmmm, hier ist schon eine Busspur; wird sie zur Ra
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9182 (Antrag: Erwähnung des Abschnitts)
 #: source_id: 2147344406 (bis Mitte Juli 2019) (ohne Auswirkungen <- mittlerweile inaktiv)
 #: source_id: 2147346801 (bis 31.3.2021) (wurde noch nicht entfernt) (inaktiv)
-#: last_checked: 2024-09-29 (mapillary)
+#: last_checked: 2024-10-20 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-03-31
 Reißeckstr./Britzer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 9751,3769 9953,3806 10048,3806
@@ -4482,11 +4482,12 @@ Ungarnstr.: Sperrung eines Teilabschnitts für den allgemeinen Kfz-Verkehr	?::inw
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12743 (Anfrage zur *geplanten* Fahrradstraße)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12758 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12798 (Einwohneranfrage)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/charles-corcelle-ring-kleingaertner-gegen-fahrradstrasse-li.2290518 (Einrichtung im Frühjahr 2025)
 #: XXX wird es hier eine Fahrradstraße sowie eine Einbahnstraßenregelung (für Kfz?) geben?
 #: osm_watch: way id="4674816" version="32"
 #: osm_watch: way id="558869710" version="6"
 #: last_checked: 2025-01-15
-# REMOVED --- #: next_check: 2024-12-31
+#: next_check: 2025-05-01
 Charles-Corcelle-Ring	? 3676,16497 3711,16481 3895,16381 4263,16166 4724,15925 4775,15929 4804,15966 4973,16847 4982,16984 4973,17042 4952,17122
 # 
 # REMOVED (realisiert) --- #: by: https://api.fixmyberlin.de/api/projects/425 (bis 2021-12-31) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210223_sachstandsbericht.pdf (geplante Fertigstellung 2021) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_ppp_8.pdf ("Schilder fehlen noch") --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (November 2021) --- #: osm_watch: way id="15405396" version="28" --- #: osm_watch: way id="195081650" version="12" --- #: last_checked: 2021-11-18 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2021-12-31 --- Alexanderufer: Fahrradstraße soll entstehen	?::projected 8315,13042 8315,13181 8314,13323
@@ -5759,7 +5760,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: source_id: viz2021:13.397721,52.495244,24.01.2022,06:00 (Kabelarbeiten bis 11.2.2022, haben diese etwas mit dem Radweg zu tun?) (inaktiv)
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="23"
-#: last_checked: 2024-11-26 (nur ein provisorisch asphaltierter Radweg)
+#: last_checked: 2024-11-29 (mapillary) (nur ein provisorisch asphaltierter Radweg)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-02-11
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::; 10006,9942 9950,9987
@@ -5959,7 +5960,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="18"
 #: also_indoor: traffic
-#: last_checked: 2024-12-30
+#: last_checked: 2025-01-22
 #: check_frequency: 30d
 # REMOVED (this was for outdoor checks) --- #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -7183,7 +7184,7 @@ Friedrichshaller Str.: wird es hier Verbesserungen für den Radverkehr geben?	? 2
 # 
 #: by[removed]: http://www.infravelo.de/projekt/per-rad-durch-den-boecklerpark/ (bis 2. Quartal 2021) (mittlerweile 3. Quartal 2022 bis 4. Quartal 2022) (mittlerweile gelöscht)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Sanierung des östlichen Teils)
-#: last_checked: 2024-08-02
+#: last_checked: 2024-11-27 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-12-31
 # REMOVED (hier eventuell später?) --- Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10521,10126 10723,10088
@@ -8639,8 +8640,11 @@ Radickestr.: Planung einer Fahrradstraße	? 20499,3572 20592,3633 20683,3693 2077
 Mittelstr. (Rosenthal): Umbenennungsabsicht, neuer Name Maud-von-Ossietzky-Straße	? 9911,20664 10114,20732
 # 
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12270
-#: last_checked: 2024-09-26 (mapillary)
-#: check_frequency: 120d
+#: by: https://www.tagesspiegel.de/berlin/schamt-euch-wird-diese-berliner-strasse-erst-2025-umbenannt-11604191.html
+#: also_indoor: search Elisa-Gérard-Straße
+#: last_checked: 2025-01-22 (research)
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 60d
 Carossastr.: mögliche Umbenennung in Elisa-Gérard-Straße	? -2602,16809 -2946,16869
 # 
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
@@ -8670,7 +8674,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/erste-autofreie-zonen-im-ostkreuz-kiez-umgesetzt_a433236
 #: osm_watch: way id="1051634661" version="11"
 #: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
-#: last_checked: 2025-01-17
+#: last_checked: 2025-01-23
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
@@ -11300,7 +11304,7 @@ An der Kanalbrücke: befindet sich hier die Straße? Qualität?	? -18547,4524 -1847
 #: by: https://stiftung-exilmuseum.berlin/de/der-neubau/der-neubau (Baugenehmigung 2024, Eröffnung 2028) (mittlerweile wird mit der Baugenehmigung 2025 gerechnet)
 #: XXX Bebauungsplan VI-150g-1-1
 #: last_checked: 2024-05-04
-#: check_frequency: 270d
+#: check_frequency: 300d
 #: next_check: 2028-03-15
 Exilmuseum: in Planung, evtl. gibt es Änderungen an den Wegen/Straßen	?::projected 8916,10855 8947,10815 8987,10821
 # 
