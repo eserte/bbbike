@@ -505,7 +505,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf (Teileinziehung)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2023/pressemitteilung.1377872.php (mögliche Fahrradstraße zwischen Grenzstr. und Liesenstr., 2024?)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: osm_watch: note 3954718 3 (Fahrradstraße?)
+#: osm_watch: note 3954718 4 (Fahrradstraße?)
 #: last_checked: 2025-01-12 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
@@ -639,8 +639,8 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
 #: osm_watch: way id="4606258" version="31"
-#: osm_watch: way id="184077626" version="19"
-#: osm_watch: way id="49180827" version="24"
+#: osm_watch: way id="184077626" version="20"
+#: osm_watch: way id="49180827" version="25"
 #: last_checked: 2024-12-11
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
@@ -11469,7 +11469,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2024-12-02 vvv
+#: last_checked: 2025-01-24 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -13962,6 +13962,12 @@ Eisenhutweg [Wohngebiet]: Asphalt	Q0 17741,2824 17688,2744 17471,2872 17569,2987
 (Gotenstr. - Ella-Barowsky-Str.): Asphalt	Q0 7497,7761 7551,7851
 # 
 Thomas-Mann-Str. [östlicher Strang]: Asphalt	Q0- 13365,15325 13278,15172 13387,15113
+# 
+(Stellerweg): fester Sandweg	Q1- 14608,14701 14790,14656
+(Hohenschönhauser Str. - Stellerweg): Beton mit einigen Schäden	Q1 14919,14503 14871,14601 14834,14674 14790,14656
+(Hohenschönhauser Str., Verbindungsweg): Asphalt	Q0 14871,14601 14839,14586
+(Hohenschönhauser Str., Verbindungsweg): Asphalt, einige Unebenheiten	Q1 14839,14586 14715,14547
+(Hohenschönhauser Str., Verbindungsweg): Beton	Q1 14715,14547 14682,14572
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 

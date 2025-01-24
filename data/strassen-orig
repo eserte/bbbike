@@ -3096,8 +3096,27 @@ Solonplatz	N 14286,15962 14248,16058
 Mutziger Str.	N 14411,16008 14448,15914
 Benfelder Str.	N 14484,16035 14516,15943
 Weiﬂenseer Weg	H 14828,15050 14843,15007 14959,14752 15066,14579 15120,14481 15168,14395 15256,14237 15354,13998 15436,13780 15455,13733 15468,13700 15513,13539
+# 
 Hohenschˆnhauser Str. (Fennpfuhl, Prenzlauer Berg)	H 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14919,14503 14989,14539 15066,14579
+#: osm.highway: service
 Hohenschˆnhauser Str. (Fennpfuhl, Prenzlauer Berg) [76-64]	N 14754,14406 14682,14572 14580,14636
+# 
+#: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1520374.php (Bebauungsplan 11-168)
+#: by: https://www.berlin.de/sen/stadtentwicklung/_assets/planung/bebauungsplanverfahren/2024-12-19_b-plan-11-168_planzeichnung1.pdf
+#: XXX Werden die bestehenden Wege/Straﬂe im Zuge der neuen Bebauung ge‰ndert? vvv
+#: last_checked: 2025-01-24 vvv
+#: check_frequency: 360d vvv
+#: osm.highway: service
+(Hohenschˆnhauser Str., Verbindungsweg)	N 14871,14601 14839,14586
+(Hohenschˆnhauser Str., Verbindungsweg)	NN 14839,14586 14715,14547
+#: osm.highway: service
+(Hohenschˆnhauser Str., Verbindungsweg)	N 14715,14547 14682,14572
+#: osm.highway: service
+(Hohenschˆnhauser Str. - Stellerweg)	N 14919,14503 14871,14601 14834,14674 14790,14656
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
 Konrad-Wolf-Str.	H 15066,14579 15174,14638 15272,14691 15345,14736 15383,14759 15461,14807 15502,14832 15562,14869 15580,14880 15697,14948 15774,14992 15798,15013 15848,15056 15867,15073 15937,15134 16028,15218 16071,15257 16119,15302 16160,15337 16218,15386 16263,15427 16331,15486 16356,15508 16386,15536 16412,15559 16445,15590 16497,15636 16615,15737 16633,15753 16666,15781 16692,15803 16724,15830 16741,15845 16819,15912 16842,15932 16941,16021 16961,16042
 Waldowstr. (Alt-Hohenschˆnhausen)	N 16497,15636 16469,15659 16297,15737 16080,15830 15856,15924
 Treskowstr. (Mahlsdorf)	N 24563,11980 24491,11972 24362,11954 24267,11933 24137,11930 23942,11975
@@ -11533,6 +11552,7 @@ Lauterplatz	NN 5799,7880 5707,7878
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (‹bergabe von Straﬂenland: Lauterplatz)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_51_3795_3842_online.pdf (Widmung des Lauterplatzes)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_52_3843_3918_online.pdf (Eingruppierung in Straﬂenreinigungsverzeichnisse)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_04_0245_0352_online.pdf (Widmung als Gr¸n- und Erholungsanlage)
 #: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024) (bis 28.06.2024) (bis 23.04.2024, im Anschluss weitere Arbeiten) (inaktiv)
 # REMOVED (eingetragen) --- #: XXX vorgeschlagene Straﬂennamen (fehlen alle bei Berlin.coords.data):
 # REMOVED (eingetragen) --- #: XXX Friedenauer Hˆhe (Privatstraﬂe) -> im Amtsblatt, PLZ=12159, laut LOR PLZ=10827+12159
@@ -14366,6 +14386,7 @@ Herbert-Tsch‰pe-Str.	N 14510,14104 14465,14210
 #: note: laut Gonsolo heiﬂt die Straﬂe noch immer so (2010-07):
 Straﬂe 106	NN 14580,14636 14599,14679 14608,14701 14666,14845 14828,15050
 (Michelangelostr. - Straﬂe 106, KGA Neues Heim und Grˆnland)	NN 13854,15129 13867,15111 14314,14841 14349,14821 14599,14679
+(Stellerweg)	NN 14608,14701 14790,14656
 (Fuﬂg‰ngerbr¸cke Storkower Str.)	NN 14465,13138 14481,13143 14524,13271 14530,13269 14535,13267 14530,13256
 (Bersarinplatz - Thaerstr.)	NN 13747,12642 13761,12690
 (Thaerstr. - Bersarinplatz)	NN 13761,12690 13695,12643
