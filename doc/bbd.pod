@@ -833,10 +833,13 @@ One way street. The blocking is in the direction of the polyline.
 
 =item * C<1s>:
 
-One way street (read E<quot>one softE<quot>), but not strictly for
-cyclists (means: It is non-legally possible to pass the street in the
-wrong direction. Typically this will cause the routing to add a
-handicap of class C<q4> for the wrong direction.).
+One way street (read E<quot>one softE<quot> or E<quot>one
+sloppyE<quot>), but not strictly for cyclists which means: It is
+non-legally possible to pass the street in the wrong direction. A
+routing handicap may be specified for the "wrong direction" as a
+category attribute (for example C<1s:q4> or C<1s:q3>). If none is
+specified then typically the routing engine will add a default
+handicap of class C<q4>.
 
 =item * C<1h>:
 

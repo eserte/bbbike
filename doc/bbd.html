@@ -815,10 +815,13 @@ One way street. The blocking is in the direction of the polyline.
 </p>
 <li class="POD_ITEM"><a name="1s_"><p><code>1s</code>:</p></a>
 <p class="POD_TEXT">
-One way street (read &quot;one soft&quot;), but not strictly for
-cyclists (means: It is non-legally possible to pass the street in the
-wrong direction. Typically this will cause the routing to add a
-handicap of class <code>q4</code> for the wrong direction.).
+One way street (read &quot;one soft&quot; or &quot;one
+sloppy&quot;), but not strictly for cyclists which means: It is
+non-legally possible to pass the street in the wrong direction. A
+routing handicap may be specified for the &quot;wrong direction&quot; as a
+category attribute (for example <code>1s:q4</code> or <code>1s:q3</code>). If none is
+specified then typically the routing engine will add a default
+handicap of class <code>q4</code>.
 </p>
 <li class="POD_ITEM"><a name="1h_"><p><code>1h</code>:</p></a>
 <p class="POD_TEXT">
