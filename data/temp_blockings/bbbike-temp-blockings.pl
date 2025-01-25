@@ -31452,7 +31452,7 @@ EOF
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-01-22 (traffic) vvv
+#: last_checked: 2025-01-25 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -41346,14 +41346,14 @@ EOF
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
-#: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024)
+#: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
 #: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
 #: XXX mittlerweile (2024-11-20) laufen die letzten Asphaltierungsarbeiten, aber es ist nicht wahrscheinlich, dass übermorgen die Freigabe erfolgt (z.B. fehlen Markierungen)
 #: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2024-12-27 vvv
+#: last_checked: 2025-01-25 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-01-31 vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -42456,7 +42456,7 @@ Charlottenstr. (Einbahnstraßenabschnitt etwa 60m)	q2::inwork; 21099,14300 20895,
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2025-01-31 18:00:00"), # 1714669803, # $isodate2epoch->("2024-09-30 18:00:00"), # undef, # XXX
+       until => undef, # $isodate2epoch->("2025-01-31 18:00:00"), # 1714669803, # $isodate2epoch->("2024-09-30 18:00:00"), # undef, # XXX
 #      text  => 'Rüdigerstr. und Hagenstr.: Leitungsarbeiten, Einbahnstraßenregelung bzw. Sperrung',
 #       text  => 'Dietlindestr.: Sperrung an der Rüdigerstr., möglicherweise bis September 2024',
        text  => 'Rüdigerstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende Januar 2025',
@@ -45021,14 +45021,16 @@ EOF
 #: by: https://www.finowkanal.info/de/bautagebuch?date=20250117 (Bauarbeiten ... Schleusenpaket 1 ... voraussichtlich bis April 2026)
 #: also_indoor: url https://www.berlin-usedom-radweginfo.de/
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
+#: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
 #: note: laut berlin-usedom-radweginfo bis Ende 2024, auf finowkanal.info kein Endedatum
+#: note: laut umap-Karte Eröffnung in Q2/2025
 #: osm_watch: way id="105827200" version="12"
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 3
-#: last_checked: 2025-01-17 (indoor)
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2024-12-31
+#: last_checked: 2025-01-25 (indoor)
+#: check_frequency: 30d
+#: next_check: 2025-04-01
 	2::inwork 24769,48739 24781,48768 24766,48828
 EOF
      },
@@ -45152,7 +45154,7 @@ EOF
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-01-22 (traffic)
+#: last_checked: 2025-01-25 (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -45226,6 +45228,7 @@ EOF
 #: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 24.01.2025) (bis 24.02.2025)
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
+#: osm_watch: note 4594797 1
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2025-01-24
 #: next_check: 2025-02-24
@@ -46153,10 +46156,11 @@ EOF
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
 #: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum)
-#: also_indoor: traffic (H,G,B,T,W,A)
+#: also_indoor: traffic (ex-H,G,B,T,W,A)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-04
-#: check_frequency: 25d
+#: last_checked: 2025-01-25 (traffic)
+#: check_frequency: 7d
+# REMOVED --- #: check_frequency: 25d
 	q3::inwork 5069,10662 5047,10381
 EOF
      },
