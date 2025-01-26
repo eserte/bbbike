@@ -172,6 +172,7 @@ sub custom_draw {
     my $center_beginning = 0;
     my $auto_enlarge_scrollregion = 1;
     my $show_streets_list = 0;
+    my $pp = delete $args{-pp};
 
     $custom_draw_directory = $datadir if !defined $custom_draw_directory;
 
@@ -278,6 +279,11 @@ sub custom_draw {
 	    Tk::grid($f->Label(-text => M"Straßenliste zeigen"),
 		     $f->Checkbutton(-variable => \$show_streets_list),
 		     -sticky => "w");
+	    if ($linetype eq 'str' && $devel_host) {
+		Tk::grid($f->Label(-text => "pp zeichnen (devel)"),
+			 $f->Checkbutton(-variable => \$pp),
+			 -sticky => 'w');
+	    }				   
 
 	    $f = $t->Frame->pack(-fill => "x");
 	    Tk::grid($f->Button(Name => "ok",
@@ -353,6 +359,11 @@ sub custom_draw {
 	delete $p_obj{$abk};
     } else {
 	delete $str_obj{$abk};
+    }
+    if ($pp) {
+	$p_sub_draw{'pp-'.$abk} = 1;
+    } else {
+	delete $p_sub_draw{'pp-'.$abk};
     }
     plot($linetype, $abk, %args);
     # the freshly created object
