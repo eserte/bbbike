@@ -133,7 +133,7 @@ sub process_nextcheck_record {
 sub _get_check_frequency_days {
     my $dir = shift;
     if ($dir && $dir->{check_frequency}) {
-	my($check_frequency_days) = $dir->{check_frequency}[0] =~ m{^(\d+)d$};
+	my($check_frequency_days) = $dir->{check_frequency}[0] =~ m{^(\d+)d(?:\s+\(.*\))?$};
 	if (!$check_frequency_days) {
 	    die "ERROR: Invalid specification for check_frequency: '$dir->{check_frequency}[0]', should be <days>d.\n";
 	}

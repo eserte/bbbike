@@ -402,8 +402,12 @@ EOF
     print $ofh <<'EOF';
 #: 
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
-#: next_check: 2999-04-01
+#: next_check: 2999-04-01 (comment about next check date)
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
+#: add_fragezeichen: A question
+#: last_checked: 2000-01-01 (by someone)
+#: check_frequency: 365000d (check every 1000 years)
+Somestreet	H 1000,2000 3000,4000
 EOF
     close $ofh or die $!;
 
@@ -415,6 +419,7 @@ EOF
 	my $fragezeichen_bbd = join '', IO::File->new($fragezeichen_result_bbd)->getlines;
 	eq_or_diff $fragezeichen_bbd, <<'EOF', '-special fragezeichen result';
 Lüderitzstr. (Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?)	? 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
+Somestreet (A question)	? 1000,2000 3000,4000
 EOF
 	unlink $fragezeichen_result_bbd;
     }
