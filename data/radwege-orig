@@ -979,7 +979,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-01-24
+#: last_checked: 2025-01-26
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3371,7 +3371,7 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, etwa bis Höhe Pasteurstr. vvv
 #: last_checked: 2025-01-18 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2025-09-30 vvv
+#: next_check: 2025-09-30 (BA Pankow) vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
 	RW0; 12640,13814 12701,13873 12766,13942
 #: note: hier existiert noch ein alter enger Radweg, der aber nicht weiter "beworben" wird
@@ -6425,8 +6425,8 @@ asphaltiert	RW1; 20689,4862 20765,4839 20949,4775
 	RW7;RW7 10418,12922 10535,13006 10571,13034 10591,13091 10635,13207 10703,13467 10740,13621
 Gehweg für Radfahrer frei	RW1; 15904,12340 15928,12483 15947,12626
 Gehweg für Radfahrer frei, holpriges Verbundsteinpflaster	RW1; 15947,12626 15952,12679 15953,12753 15951,12832
-#: historical_note: Radspur gibt es seit Herbst 2024, davor war hier der Gehweg für Radfahrer frei
-	RW4?; 15951,12832 15950,12886
+#: historical_note: Radspur gibt es seit Herbst 2024, davor war der Gehweg für Radfahrer frei
+	RW4; 15951,12832 15950,12886
 	RW4; 15950,12886 15951,12832
 gemeinsamer Geh- und Radweg, die letzten 50 Meter getrennter Rad- und Gehweg	RW2; 18216,11656 18215,11690 18215,12123
 	RW4; 18215,11690 18216,11656 18263,11393 18280,11266
@@ -8169,7 +8169,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
 #: last_checked: 2025-01-02 vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2025-01-31 vvv
+#: next_check: 2025-01-31 (VIZ-Verkehrsmeldung) vvv
 #XXX	RW4; 10975,10334 10871,10322
 #XXX	RW4; 10871,10322 10975,10334 11117,10326
 	RW2; 10975,10334 10871,10322
@@ -8568,7 +8568,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: osm_watch: way id="335487059" version="29"
 #: last_checked: 2025-01-02 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-06-30 vvv
+#: next_check: 2025-06-30 (infravelo) vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025)
 # REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle
 #: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;

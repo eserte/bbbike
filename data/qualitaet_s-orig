@@ -4780,7 +4780,8 @@ Plauener Str. [zur Küllstedter Str.]: Asphalt	Q0 17340,14898 17352,14827
 (Ferdinand-Schultze-Str. - Plauener Str. 94-96): Betonsteinpflaster	Q0- 17684,14858 17558,14840
 Ferdinand-Schultze-Str.: Asphalt/Kopfsteinpflaster	Q1 17493,15752 17486,15736 17467,15697
 Ferdinand-Schultze-Str.: Verbundsteinpflaster	Q1 17467,15697 17433,15606 17377,15588
-Küllstedter Str.: Asphalt	Q0 17363,14760 17377,14678 17392,14591 17400,14511
+Küllstedter Str.: Asphalt	Q0 17363,14760 17377,14678 17392,14591
+Küllstedter Str.: Asphalt mit ersten leichten Schäden	Q1+ 17392,14591 17400,14511
 Joachimsthaler Str. (Alt-Hohenschönhausen): Asphalt	Q0 16917,14905 16943,14785 17063,14797
 Joachimsthaler Str. (Alt-Hohenschönhausen): Beton	Q1 17063,14797 17129,14804 17117,14885
 Schleizer Str.: Verbundsteinpflaster	Q1 16802,15007 17231,14979
@@ -9027,11 +9028,14 @@ Putenweg: Verbundsteinpflaster	Q1 16259,-368 16346,-394
 Langschanweg: Verbundsteinpflaster	Q1 16246,91 16292,-30 16246,-64 16194,-226
 Kückenweg: Asphalt	Q1+ 16154,-230 16194,-226 16291,-261
 Kückenweg: Kopfsteinpflaster	Q2 16291,-261 16431,-311
-Schönefelder Str.: Asphalt	Q0 17236,-602 17234,-574 17232,-559 17222,-426 17199,-196 17193,-109 17188,-46 17176,90 17158,182 17129,314 17077,526 17057,635 17035,775 17021,867 16986,1093
+Schönefelder Str.: Asphalt	Q0 17236,-602 17234,-574 17232,-559 17222,-426 17199,-196 17193,-109 17191,-77 17188,-46 17176,90 17158,182 17129,314 17077,526 17057,635 17035,775 17021,867 16986,1093
 Schneehuhnweg: Asphalt	Q0 16536,26 16777,-64
 Schneehuhnweg: Kopfsteinpflaster	Q2 16777,-64 16830,-75 16885,-75
 Schneehuhnweg: Asphalt	Q0 16885,-75 16931,-76 16991,-81
 (Schneehuhnweg - Straße 179): mäßiger Asphalt	Q2 16830,-75 16812,30
+#: by: mapillary
+#: XXX bei osm smoothness=bad, bei mapillary sah das nicht so schlecht aus, selbst überprüfen!
+(Schneehuhnweg - Schönefelder Str.): wassergebundene Decke	Q2+ 16991,-81 16992,-74 17109,-77 17122,-88 17168,-90 17191,-77
 Straße 179 (Rudow): Asphalt	Q0- 16642,393 16705,326 16770,192 16790,150 16812,30
 Straße 181: Asphalt	Q0 16991,-81 16989,-147 17036,-421 17065,-589 17076,-644
 Straße 183: Asphalt	Q0 16989,-147 17089,-141 17193,-109
@@ -10521,6 +10525,7 @@ Schneeammerweg: unbefestigte Straße	Q2 13329,20299 13420,20236
 (Park am Nordbahnhof - Caroline-Michaelis-Str./Mount Mitte): Beton	Q0 9119,14255 9081,14232 8992,14176
 (an der Panke - Mauerweg): Asphalt	Q0 7872,14510 7889,14519 7940,14447
 (an der Panke - Mauerweg): Asphalt	Q0 7927,14438 7940,14447 7996,14487 8050,14556 8097,14573 8234,14686
+(Boyenstr. - Mauerweg): Kleinsteinpflaster	Q1 8005,14476 7996,14487
 Uferweg: Asphalt mit Schäden	Q2+ 7612,14449 7551,14464
 Uferweg: asphaltähnlicher Belag	Q0 7566,14404 7572,14432 7551,14464 7426,14539 7396,14569 7368,14573
 Uferweg: wassergebundene Decke	Q1- 7740,14409 7661,14398 7634,14406 7617,14420 7566,14404
@@ -10759,8 +10764,8 @@ Alt-Lankwitz: Kopfsteinpflaster	Q3 7407,3473 7419,3500
 Alt-Lankwitz: Asphalt	Q0 7419,3500 7236,3605 7012,3743
 (Landschaftspark Herzberge - Arendsweg): Verbundsteinpflaster	Q1+ 17267,14146 17264,14176
 Genslerstr.: Asphalt mit einigen Schäden	Q1+; 16669,14438 16715,14609 16738,14695
-Genslerstr: Beton	Q0 16738,14695 16750,14747 16768,14849
-Genslerstr.: Asphalt	Q0 16544,14593 16715,14609
+Genslerstr.: Beton	Q0 16738,14695 16750,14747 16768,14849
+Genslerstr.: Asphalt	Q0 16537,14641 16544,14593 16715,14609
 Egon-Erwin-Kisch-Str. [Wohngebiet]: Beton	Q0- 17044,18859 17053,18879 17067,19004 17068,19016
 Schweriner Ring [9-19 ungerade]: Beton	Q0- 17444,19115 17259,19121
 (Am Berl - Weg zum Hechtgraben): Beton	Q0- 16793,18809 16743,18892 16757,18910
@@ -10810,7 +10815,7 @@ In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9995,17642
 #: note: und ein paar Meter Verbundsteinpflaster an der Neustrelitzer Str.
 (Neustrelitzer Str. - Werneuchener Str.): welliger Asphalt	Q1 16443,14825 16448,14831 16541,14928
 (Neustrelitzer Str. - Werneuchener Str.): Beton	Q1 16541,14928 16610,15000
-(Landsberger Allee - Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16590,14386 16544,14593
+(Landsberger Allee - Genslerstr./Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16590,14386 16544,14593
 Blockdammweg: Asphalt	Q0 17904,8924 17972,8968
 Blockdammweg: Asphalt mit Rissen	Q1+ 17904,8924 17762,8855 17754,8863
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15023,13800 15010,13807
@@ -13224,8 +13229,9 @@ Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7739,14119 7784,14147 7875,14204
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=750664#post750664
 #: by: https://www.nachhaltige-erneuerung.berlin/tiergarten-nordring-heidestrasse/otto-weidt-platz
 #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant)
-#: osm_watch: way id="1010731431" version="8"
-#: osm_watch: way id="642581102" version="10"
+# REMOVED (deleted) --- #: osm_watch: way id="1010731431" version="8"
+# REMOVED (Fläche verkleinert und nun woanders) --- #: osm_watch: way id="642581102" version="11"
+#: osm_watch: way id="237716413" version="15"
 #: XXX bleibt hier der Asphalt oder kommt hier auch Kleinsteinpflaster hin?
 #: last_checked: 2025-01-15
 #: check_frequency: 60d
@@ -13525,6 +13531,7 @@ Parkstr. (Tempelhof): Kleinsteinpflaster	Q1-  9237,6413 9202,6412 9143,6415
 Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9122,6471 9141,6459
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0- 24981,2565 25116,2529 25496,2429
 (Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
+Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17252,14495 17400,14511
 Klaus-Selmke-Str.: Asphalt	Q0 21130,11384 21275,11547
 Kurfürstendamm: Asphaltschäden	Q0-; 5475,10808 5656,10876
 Bruno-Bauer-Str.: Gehwegplatten	Q0- 12893,6527 12904,6488 12921,6424
@@ -15168,11 +15175,11 @@ Voltastr.: Kopfsteinpflaster	Q2 9034,14910 9182,14987 9355,15078 9566,15188
 # 
 #: by: André Käding vvv
 #: confirmed_by: srt
-Zechliner Str.: Asphalt	Q0 16314,14361 16281,14604
+Zechliner Str.: Asphalt	Q0 16314,14361 16304,14434 16300,14467 16281,14604
 #: confirmed_by: srt (Asphalt, Q0 -> ...)
 Zechliner Str.: Asphalt mit leichten Schäden	Q0- 16281,14604 16537,14641
 #: confirmed_by: srt
-Zechliner Str.: Asphalt	Q0 16544,14593 16537,14641 16524,14749
+Zechliner Str.: Asphalt	Q0 16537,14641 16524,14749
 #: confirmed_by: srt (westlicher Abschnitt)
 Buschiner Str.: Asphalt	Q0 20162,13287 20263,13271 20364,13255 20482,13241 20600,13232 20746,13209
 #: corrected_by: srt (Beton, Q0 -> Beton & Asphalt, Q1+)
@@ -26585,7 +26592,7 @@ Thuner Str.: guter Beton	Q0 3293,2218 3290,2137 3286,2006 3286,1912
 #: by: Olaf (zioerjen)
 #: confirmed_by: srt (zumindest an der Herzbergstr. Beton, eher nur mäßige Qualität)
 #: note: Eintrag von Sybille Koppermann: guter Asphalt, enge Straße q1, Einbahnstraße offen Richtung Vulkanstr.
-Bernhard-Bästlein-Str.: Beton	Q1 15354,13998 15487,14047 15595,14041 15593,13768 15661,13764 15698,13765
+Bernhard-Bästlein-Str.: Beton	Q1 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764 15698,13765
 Bernhard-Bästlein-Str.: mäßiger Beton	Q1- 15661,13764 15653,13542
 # 
 #: by: Daniel Fröhlich: vvv
@@ -33757,5 +33764,7 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 7882,18209
 Kreuzungsbereich asphaltiert	Q0 7731,18012
 Rondell mit Kleinsteinpflaster	Q1- 12097,15223
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11700,17629
+#: by: mapillary
+Einmündungsbereich mit Kleinsteinpflaster	Q1 16007,14367
 #: ignore ^^^
 #: section ^^^

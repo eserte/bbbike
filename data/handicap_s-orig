@@ -12,9 +12,9 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, vermutlich Hochbauarbeiten
-#: last_checked: 2025-01-24
+#: last_checked: 2025-01-26
 #: check_frequency: 60d
-#: next_check: 2025-06-30
+#: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 # 
@@ -23,12 +23,12 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 #: note: Halteverbotsschilder bis 30.06.2025
 #: last_checked: 2025-01-21
 #: check_frequency: 60d
-#: next_check: 2025-06-30
+#: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
 #: last_checked: 2025-01-06 vvv
-#: next_check: 2027-09-30 vvv
+#: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
 M¸hsamstr.: ‹berquerung der Baustelle Petersburger Str. ¸ber schmale Fuﬂg‰ngerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027)
@@ -43,7 +43,7 @@ Kochhannstr.: ‹berquerung der Baustelle Petersburger Str. ¸ber schmale Fuﬂg‰nger
 #: also_indoor: traffic (B,T)
 #: last_checked: 2025-01-18
 #: check_frequency: 30d
-#: next_check: 2025-09-30
+#: next_check: 2025-09-30 (BA Pankow)
 Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
 # 
 # REMOVED --- #: osm_watch: note 4340404 1 --- #: last_checked: 2024-08-27 --- Straﬂenbahnwendeschleife Virchowstr.: Bauarbeiten, Sperrungen mˆglich	q4::inwork 12925,13373 13081,13457 13151,13367
@@ -125,7 +125,7 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+::inwork 12558,11920
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-23
+#: last_checked: 2025-01-26
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einm¸ndung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nˆrdlich und s¸dlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraﬂenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -921,10 +921,10 @@ B¸rgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
-#: osm_watch: way id="640465875" version="14"
-#: last_checked: 2025-01-05
+#: osm_watch: way id="640465875" version="15"
+#: last_checked: 2025-01-26 (osm)
 #: check_frequency: 120d
-#: next_check: 2025-04-30
+#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
 Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -976,9 +976,9 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 ### Lichtenberg ###
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-01-24
+#: last_checked: 2025-01-26
 #: check_frequency: 45d
-#: next_check: 2025-05-31
+#: next_check: 2025-05-31 (BA Lichtenberg)
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
 # 
 # REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022 --- #: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_228154 (bis 31.08.2024) --- #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_228155 (bis 31.08.2024) --- #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (Gegenverkehrsregelung, bis 31.08.2024) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028 --- #: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fuﬂverkehr) --- #: also_indoor: traffic (H,G,W) --- #: priority: #A --- #: last_checked: 2024-06-17 --- #: next_check: 2024-06-22 --- #: valid: -20240622 --- #: valid: -20240831 --- Nˆldnerstr. : Bauarbeiten unter der Bahnbr¸cke zwischen Stadthausstr. und L¸ckstr., Fahrbahn gesperrt, Fuﬂg‰ngertunnel	q3::inwork 15856,10821 15793,10814
@@ -1060,7 +1060,7 @@ Gustav-Tempel-Str.: kurzes St¸ck B¸rgersteig	q3 15261,10738 15245,10719
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="13"
-#: last_checked: 2024-12-08
+#: last_checked: 2025-01-26
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-12-21
 Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,14935 17638,14945
@@ -3285,6 +3285,8 @@ Park am Nordbahnhof: Fuﬂg‰nger	q1 9119,14255 9081,14232 8992,14176
 (an der Panke - Mauerweg): einige Fuﬂg‰nger	q1+ 7927,14438 7940,14447 7996,14487 8050,14556 8097,14573
 #: note: hier Schulbereich
 (an der Panke - Mauerweg): einige Fuﬂg‰nger	q1- 8097,14573 8234,14686
+#: note: zu kurz f¸r hˆhere qX-Werte
+(Boyenstr. - Mauerweg): einige Fuﬂg‰nger	q3 8005,14476 7996,14487
 # REMOVED (existiert nicht mehr) --- #: XXX_prog: BS --- Bordstein	q3 -2452,17408 -2451,17421
 #: note: 6 oder 7 Bodenschwellen liegen hier, fast ¸ber die ganze Fahrbahnbreite
 Neuenahrer Weg: Bodenschwellen, kaum umfahrbar	q2 -2540,18105 -2724,18149
@@ -3361,8 +3363,8 @@ Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 #: XXX_prog BS nur zur Felixstr. hin (ansonsten w‰re es q1)
 Koseler Weg: einige Fuﬂg‰nger, Bordstein	q2 9850,6135 9679,6160
 #: note: einige Einkaufsmˆglichkeiten, relativ viele Fuﬂg‰nger, schnell fahren nicht mˆglich
-#: XXX_prog BS zur Zechliner Str.
-(Landsberger Allee - Zechliner Str.): Fuﬂg‰nger, Bordstein	q2 16590,14386 16544,14593
+#: XXX_prog BS zur Genslerstr.
+(Landsberger Allee - Genslerstr./Zechliner Str.): Fuﬂg‰nger, Bordstein	q2 16590,14386 16544,14593
 #: note: fr¸her stand hier "q2", w‰re das auch tats‰chlich mˆglich gewesen?
 (Krautstr./Blumenstr. - Strausberger Platz): Fuﬂg‰nger, Hausdurchfahrt	q4+ 12125,12490 12134,12540
 # 
@@ -5277,6 +5279,9 @@ Ulsterstr.: enge Straﬂe	q0- 13575,8378 13641,8470
 (Stellerweg): einige Fuﬂg‰nger, Kleingartenanlage	q1 14608,14701 14790,14656
 (Hohenschˆnhauser Str., Verbindungsweg): einige Fuﬂg‰nger, abgeschr‰gte Bordsteine	q2 14839,14586 14715,14547
 # 
+#: note: Gr¸nanlagenschild ohne Zusatzschilder zum Radfahren, allerdings f¸hrt hier die Umleitungsstrecke f¸r den Mauerweg entlang
+(Schneehuhnweg - Schˆnefelder Str.): einige Fuﬂg‰nger, Gr¸nanlage	q2 16991,-81 16992,-74 17109,-77 17122,-88 17168,-90 17191,-77
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -6685,7 +6690,7 @@ Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13758,15009 13744,15018
 #: by: Sybille Koppermann
 #: note: Olaf (zioerjen) meint nur q2, ohne weitere Angaben
 #: corrected_by: srt/policy (q1 -> q0-)
-Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15354,13998 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
+Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
 #: by: anonymous vvv
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311
 Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230

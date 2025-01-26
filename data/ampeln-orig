@@ -199,16 +199,16 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-01-25
+#: last_checked: 2025-01-26
 #: check_frequency: 120d
-#: next_check: 2025-09-30
+#: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-01-24
+#: last_checked: 2025-01-26
 #: check_frequency: 120d
-#: next_check: 2025-12-31
+#: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
 # 
 #: next_check_id: KNOTENMARZAHN-2022
@@ -236,7 +236,7 @@ Gürtelstr.	F::inwork 15153,11691
 # REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- 
 #: last_checked: 2025-01-15
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-01-31
+#: next_check: 2025-01-31 (VIZ-Verkehrsmeldung)
 #: valid: -20250131
 Tucholskystr./Ziegelstr.: Gegenverkehrsregelung	X::inwork::alternating 9559,13087
 # 

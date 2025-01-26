@@ -38304,7 +38304,7 @@ EOF
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: last_checked: 2024-12-27 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-01-28 vvv
+#: next_check: 2025-01-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
 #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18)
@@ -41355,7 +41355,7 @@ EOF
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
 #: last_checked: 2025-01-25 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-01-31 vvv
+#: next_check: 2025-01-31 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -42467,7 +42467,7 @@ EOF
 #: also_indoor: traffic (G[zu kurz],B,T) vvv
 #: last_checked: 2025-01-17 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-01-31 vvv
+#: next_check: 2025-01-31 (Halteverbotsschilder) vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
 Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056,12304
 # REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
@@ -42533,7 +42533,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
 #: also_indoor: traffic (G,B,W)
 #: last_checked: 2024-12-16
-#: next_check: 2025-01-31
+#: next_check: 2025-01-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 12228,14083 12077,14186
 EOF
      },
@@ -42796,7 +42796,7 @@ EOF
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
-#: last_checked: 2025-01-20 (mapillary)
+#: last_checked: 2025-01-26 (bahninfo-forum)
 #: check_frequency: 120d
 #: next_check: 2025-06-15
 	2::inwork 9586,17665 9461,17795
@@ -44091,8 +44091,8 @@ EOF
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-01-24
-#: next_check: 2025-03-28
+#: last_checked: 2025-01-26
+#: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork 15077,11910 15110,12107
 EOF
      },
@@ -45228,7 +45228,7 @@ EOF
 #: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 24.01.2025) (bis 24.02.2025)
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
-#: osm_watch: note 4594797 1
+#: osm_watch: note 4594797 2
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2025-01-24
 #: next_check: 2025-02-24
@@ -46096,8 +46096,8 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (T,B,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-22 (traffic)
-#: check_frequency: 14d
+#: last_checked: 2025-01-26
+#: check_frequency: 14d (traffic checks)
 	q4::inwork 16668,14765 16750,14747
 EOF
      },
@@ -46183,7 +46183,7 @@ EOF
 #: note: Ende der Abschnitts unklar: entweder Bayernring oder General-Pape-Str.
 #: last_checked: 2025-01-08
 #: check_frequency: 120d
-#: next_check: 2025-07-31
+#: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
 EOF
      },
@@ -46246,6 +46246,18 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025)
 	q4::inwork 2493,10675 2596,10663 2673,10670
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Altenhofer Str. - Landsberger Allee [Nebenfahrbahn]: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (G)
+#: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2025-01-26
+	q4::inwork 15769,14355 15841,14351
 EOF
      },
     );
