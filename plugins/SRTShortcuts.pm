@@ -61,6 +61,11 @@ my $acc_cat_split_streets_byyear_track = sub { my $year = shift; "$bbbike_rootdi
 my $other_tracks                     = "$bbbike_rootdir/tmp/other-tracks.bbd";
 my $str_layer_level = 'l';
 
+my $latest_radverkehrsnetz;
+if (defined $bbbike_auxdir) {
+    $latest_radverkehrsnetz = (sort(glob("$bbbike_auxdir/data/gdi.berlin.de/radverkehrsnetz/????-??")))[-1];
+}
+
 use vars qw($hm_layer);
 
 use vars qw($show_situation_at_point_for_route);
@@ -654,6 +659,22 @@ EOF
 		 ]
 		],
 		## edit helpers - 3rd party data
+		(defined $latest_radverkehrsnetz ?
+		 (
+		  [Cascade => $do_compound->('Radverkehrsnetz', $MultiMap::images{Berlin}), -menuitems =>
+		   [
+		    layer_checkbutton('Radverkehrsnetz', 'str',
+				      "$latest_radverkehrsnetz/radverkehrsnetz_wgs84.bbd",
+				      below => $str_layer_level,
+				     ),
+		    layer_checkbutton('Radverkehrsnetz (Grün Berlin)', 'str',
+				      "$latest_radverkehrsnetz/stadtgruen_wgs84.bbd",
+				      below => $str_layer_level,
+				     ),
+		   ],
+		  ],
+		 ) : ()
+		),
 		(defined $bbbike_auxdir ?
 		 (
 		  [Cascade => $do_compound->("VMZ-Detailnetz", $images{VIZ}), -menuitems =>
