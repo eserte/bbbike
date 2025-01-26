@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.20;
+$VERSION = 2.21;
 
 use File::Glob qw(bsd_glob);
 
@@ -927,9 +927,6 @@ EOF
 	      ],
 	      [Cascade => $do_compound->("Various experiments"), -menuitems =>
 	       [
-		[Button => $do_compound->('Fetch WMS map'),
-		 -command => sub { fetch_fis_broker_wms_map() },
-		],
 		[Button => $do_compound->("Street name experiment"),
 		 -command => sub { street_name_experiment() },
 		],
@@ -3804,70 +3801,6 @@ sub _generate_date_range_regex {
 
     my $regexp_pattern = '^' . $ra->re;
     $regexp_pattern;
-}
-
-######################################################################
-
-sub fetch_fis_broker_wms_map { # currently using gdi.berlin.de
-    my($px0,$py0,$px1,$py1) = main::get_current_bbox_as_wgs84();
-    ($py0,$py1)=($py1,$py0) if $py0 > $py1;
-    my($w,$h) = ($main::c->width, $main::c->height);
-    require LWP::UserAgent;
-    #require MIME::Base64;
-    require File::Temp;
-    my $origfile = File::Temp->new(SUFFIX => '.png', TMPDIR => 1, UNLINK => 1);
-    my $ua = LWP::UserAgent->new;
-    #my $layer = 'k_radverkehrsnetz';
-    #my $url = 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_radverkehrsnetz?service=WMS&request=GetMap&version=1.3.0&bbox='.$py0.','.$px0.','.$py1.','.$px1.'&width='.$w.'&height='.$h.'&format=image/png&layers='.$layer.'&styles=gdi_default&crs=EPSG:4326&transparent=true';
-    my $layer = 'radverkehrsnetz';
-    my $url = 'https://gdi.berlin.de/services/wms/radverkehrsnetz?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS='.$layer.'&SINGLETILE=true&CRS=EPSG%3A4326&STYLES=&WIDTH='.$w.'&HEIGHT='.$h.'&BBOX='.$py0.'%2C'.$px0.'%2C'.$py1.'%2C'.$px1;
-    warn "Fetch $url...\n";
-    # XXX For some reason fetching does not work with LWP. Use Net::Curl instead.
-    my $resp = _lwp_get_with_curl($ua, $url);
-    if (!$resp->is_success || $resp->content_type ne 'image/png') {
-	warn "Request:\n" . $resp->request->dump;
-	warn "Response:\n" . $resp->dump;
-	main::status_message('Fetching image from WMS failed, please see STDERR for details', 'die');
-    }
-    open my $ofh, '>', $origfile or die $!;
-    binmode $ofh;
-    print $ofh $resp->content;
-    $ofh->close or die $!;
-
-#    # XXX somehow coordinates to not fit, try to rotate a little bit
-#    my $rotfile = File::Temp->new(SUFFIX => '.png', TMPDIR => 1);
-#    my @cmd = ('convert', $origfile, '-distort', 'SRT', '-2.3', $rotfile);
-#    warn "Run @cmd...\n";
-#    system @cmd;
-#    if ($? != 0) { die "Command @cmd failed" }
-    my $rotfile = $origfile;
-
-    my $img = $main::c->Photo(-file => "$rotfile", -format => 'png');
-    my($x0,$y0) = $main::c->get_corners;
-    $main::c->createImage($x0,$y0,-image=>$img,-anchor=>'nw',-tags=>['map-ovl']);
-    # XXX original map position is low, but in this case it is an overlay, so it should be raised
-    #main::restack_delayed();
-    $main::c->raise('map-ovl');
-}
-
-sub _lwp_get_with_curl {
-    my($ua, $url, @fields) = @_;
-    if (!$INC{'LWP/Protocol/Net/Curl.pm'}) {
-	warn "Need to load LWP::Protocol::Net::Curl...\n";
-	require LWP::Protocol::Net::Curl;
-	LWP::Protocol::Net::Curl->import(takeover => 0);
-    }
-    my @schemes = qw(http https);
-    my %orig_implementor;
-    $orig_implementor{$_} = LWP::Protocol::implementor($_) for @schemes;
-    LWP::Protocol::implementor($_ => 'LWP::Protocol::Net::Curl') for @schemes;
-    my $resp = eval { $ua->get($url, @fields) };
-    my $err = $@;
-    LWP::Protocol::implementor($_ => $orig_implementor{$_}) for @schemes;
-    if ($err) {
-	die $err;
-    }
-    $resp;
 }
 
 ######################################################################
