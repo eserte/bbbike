@@ -1050,4 +1050,40 @@
     (concat "https://twitter.com" (match-string 1 url)))
    (t url)))
 
+;;; make Mapillary URLs smaller
+(defun bbbike-clean-mapillary-url (url)
+  "Strip unnecessary query parameters from a Mapillary URL, keeping only focus, x, y, zoom, and pKey, and reduce float accuracy for x, y, and zoom."
+  (let ((base-url (car (split-string url "\\?"))) ; Extract base URL before the query string
+        (query-params (cdr (split-string url "\\?"))))
+    (if query-params
+        (let* ((params (split-string (car query-params) "&"))
+               (filtered-params (delq nil
+                                      (mapcar
+                                       (lambda (param)
+                                         (when (string-match-p
+                                                (regexp-opt '("focus" "x" "y" "zoom" "pKey"))
+                                                (car (split-string param "=")))
+                                           param))
+                                       params)))
+               (reduced-params (mapcar
+                                (lambda (param)
+                                  (let* ((key-value (split-string param "="))
+                                         (key (car key-value))
+                                         (value (cadr key-value)))
+                                    (if (member key '("x" "y" "zoom"))
+                                        (format "%s=%.4f" key (string-to-number value))
+                                      param)))
+                                filtered-params))
+               (filtered-query (mapconcat #'identity reduced-params "&")))
+          (concat base-url "?" filtered-query))
+      url)))
+
+(defun bbbike-paste-and-clean-mapillary-url ()
+  "Paste the URL from the clipboard, clean it, and insert it into the current buffer."
+  (interactive)
+  (let ((clipboard-url (current-kill 0)))
+    (if (string-match-p "https://www.mapillary.com/app/" clipboard-url)
+        (insert (bbbike-clean-mapillary-url clipboard-url))
+      (message "The clipboard does not contain a valid Mapillary URL."))))
+
 (provide 'bbbike-mode)
