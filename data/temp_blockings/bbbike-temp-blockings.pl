@@ -38299,16 +38299,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten)
-#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025)
+#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2024-12-27 vvv
+#: last_checked: 2025-01-27 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-01-28 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-03-07 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
-#: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18)
-Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
+# REMOVED (mittlerweile ist das Absperrgitter weg) --- #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18) --- Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -46258,6 +46257,24 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-01-26
 	q4::inwork 15769,14355 15841,14351
+EOF
+     },
+     { from  => 1738450800, # 2025-02-02 00:00
+       until => 1764543600, # 2025-12-01 00:00
+       text  => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung, vom 03.02.2025 bis voraussichtlich 30.11.2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
+	q4::inwork 14195,15604 14133,15773
+EOF
+     },
+     { from  => 1737871200, # 2025-01-26 07:00
+       until => 1740153600, # 2025-02-21 17:00
+       text  => 'Pommersche Str.: Baustelle zwischen Württembergische Str. und Bayerische Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.01.2025 07:00 bis 21.02.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.313872,52.493599,27.01.2025,07:00 (bis 21.02.2025)
+	q4::inwork 4381,9620 4351,9633 4224,9690
 EOF
      },
     );
