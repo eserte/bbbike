@@ -4390,7 +4390,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: note 3065138 14
 #: last_checked: 2024-12-25 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-12-11 vvv
+#: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
@@ -6736,9 +6736,9 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-01-19 vvv
+#: last_checked: 2025-01-28 (website) vvv
 #: check_frequency: 14d vvv
-#: next_check: 2025-05-01 vvv
+#: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
 # REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
@@ -6779,7 +6779,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        {
          'data' => '#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen.
 #: osm_watch: way id="482690912" version="6"
-#: last_checked: 2025-01-02 vvv
+#: last_checked: 2025-01-28 vvv
 	3 12207,11763 12132,11788 11966,11832
 	3 11966,11832 12132,11788 12207,11763
 #: last_checked ^^^
@@ -7406,6 +7406,37 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Pommersche Str.: Baustelle zwischen Württembergische Str. und Bayerische Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.01.2025 07:00 bis 21.02.2025 17:00',
          'type' => 'handicap',
          'until' => 1740153600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025)
+	q4::inwork 2396,9427 2467,9425 2592,9419
+',
+         'from' => 1737970440,
+         'id' => 4246,
+         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 10:34 bis 06.05.2025 23:59',
+         'type' => 'handicap',
+         'until' => 1746568740
+       },
+       {
+         'data' => '#: source_id: viz2021:13.31084,52.470147,28.01.2025,07:00 (bis 13.03.2025)
+	q4::inwork 4159,6890 4160,7043 4160,7278
+',
+         'from' => 1737957600,
+         'id' => 4247,
+         'text' => 'Johannisberger Str.: Bauarbeiten zwischen Wiesbadener Str. und Rüdesheimer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 07:00 bis 13.03.2025 18:00',
+         'type' => 'handicap',
+         'until' => 1741885200
+       },
+       {
+         'data' => '#: also_indoor: traffic (G,B,T,A)
+#: note: by rbb
+	q4::inwork 4692,10829 4704,10951 4709,11036
+',
+         'from' => 1738018800,
+         'id' => 4248,
+         'text' => 'Bleibtreustr.: Baustelle zwischen Niebuhrstr. und Kantstr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 25.05.2026',
+         'type' => 'handicap',
+         'until' => 1779746400
        }
      
 );

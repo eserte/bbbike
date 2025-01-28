@@ -21,7 +21,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-01-21
+#: last_checked: 2025-01-28
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -63,7 +63,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="5"
 #: osm_watch: way id="1146013233" version="8"
 #: osm_watch: way id="1134071039" version="10"
-#: last_checked: 2025-01-22 (osm) vvv
+#: last_checked: 2025-01-28 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -147,7 +147,7 @@ Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-01-02 vvv
+#: last_checked: 2025-01-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -692,7 +692,7 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-01-25
 #: check_frequency: 14d
-#: next_check: 2025-01-31
+#: next_check: 2025-01-31 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20241223
 Sangeallee: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Engstelle	q3::inwork 18134,9080 18247,9158
 # 
@@ -1291,12 +1291,12 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 ### Biesdorf ###
 # 
 #: by: https://pascalgrothe.de/grabensprung-wiedereroeffnung-steht-bevor/ (veröffentlicht am 28.12.2024, Freigabe "in Kürze")
-#: also_indoor: traffic (T,ex-G,B)
+#: also_indoor: traffic (T,ex-G,B,H)
 #: also_indoor: url https://pascalgrothe.de/kiezblog/
 #: note: Halteverbotsschilder bis 31.01.2025
-#: last_checked: 2025-01-25 (traffic)
-#: check_frequency: 7d
-#: next_check: 2025-01-31
+#: last_checked: 2025-01-27 (traffic)
+#: check_frequency: 7d (traffic checks)
+#: next_check: 2025-01-31 (Halteverbotsschilder)
 Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv
@@ -1866,7 +1866,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2024-12-09
+#: last_checked: 2025-01-28
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -1940,7 +1940,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: also_indoor: traffic (none)
 #: last_checked: 2025-01-27
 #: check_frequency: 30d
-#: next_check: 2025-03-15
+#: next_check: 2025-03-15 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 
 Lausitzer Platz: Fußgängerzone, einige Bodenschwellen	q2 12197,10494 12172,10585
