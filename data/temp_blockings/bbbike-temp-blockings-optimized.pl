@@ -5059,7 +5059,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-01-27 vvv
+#: last_checked: 2025-01-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-07 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -5671,7 +5671,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025) (bis 21.02.2025)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
 #: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
@@ -5682,7 +5682,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
 #: last_checked: 2025-01-25 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-01-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-02-21 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -6061,9 +6061,9 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2025-01-04
+#: last_checked: 2025-01-29
 #: check_frequency: 90d
-#: next_check: 2025-03-01
+#: next_check: 2025-03-01 (VIZ-Verkehrsmeldung)
 	q4::inwork 10385,13348 10341,13376
 ',
          'from' => undef,
@@ -6254,14 +6254,14 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/221-E/23/175 (bis 10.01.2024)
+         'data' => '#: source_id: LS/221-E/23/175 (bis 10.01.2024) (bis 31.12.2025)
 	2::inwork 11448,28068 12126,27740
 ',
          'from' => undef,
          'id' => 4042,
-         'text' => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betreoffen, bis 31.01.2025 17:00 Uhr',
+         'text' => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betreoffen, bis 31.12.2025',
          'type' => 'gesperrt',
-         'until' => 1738339200
+         'until' => 1767196800
        },
        undef,
        undef,
@@ -6762,7 +6762,7 @@ Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-01-25 (traffic)
+#: last_checked: 2025-01-29 (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -6982,7 +6982,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #: by[nocache]: https://x.com/Aintschie/status/1833937985588650466 (etwa 100m betroffen?)
 #: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:x83#HIM_FREETEXT_238226
-#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...)
+#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...) (bis 28.03.2025 + ...)
 #: source_id: bvg2024:x83#HIM_FREETEXT_260482 (kein Endedatum)
 #: osm_watch: note 4441243 4
 #: osm_watch: note 4441280 1
@@ -6994,7 +6994,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 ',
          'from' => 1726092000,
          'id' => 4203,
-         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, mindestens bis 31.01.2025',
+         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, voraussichtlich mindestens bis Ende März 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7003,7 +7003,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
        undef,
        {
          'data' => '#: next_check_id: ZIEGEL-2024
-#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024) (bis 31.01.2025)
+#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024) (bis 31.01.2025) (bis 04.02.2025)
 #: note: etwa 40m
 	q3::inwork; 9559,13087 9401,13072
 #: note: gesperrt wegen der Gegenverkehrsampel
@@ -7011,9 +7011,9 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 ',
          'from' => 1730098800,
          'id' => 4207,
-         'text' => 'Ziegelstr.: Leitungsarbeiten, Sperrung bzw. Einbahnstraßenregelung, vom 29.10.2024 08:00 bis 31.01.2025 17:00',
+         'text' => 'Ziegelstr.: Leitungsarbeiten, Sperrung bzw. Einbahnstraßenregelung, vom 29.10.2024 08:00 bis 04.02.2025 17:00',
          'type' => 'handicap',
-         'until' => 1738339200
+         'until' => 1738684800
        },
        {
          'data' => '#: source_id: viz2021:13.349148,52.550327,19.08.2024,07:00 (später wurde auch die Kameruner erwähnt, bis 18.02.2025)
@@ -7389,6 +7389,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-in-der-smetanastrasse_a434819
 	q4::inwork 14195,15604 14133,15773
 ',
          'from' => 1738450800,

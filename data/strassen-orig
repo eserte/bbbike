@@ -269,7 +269,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/berlin-news/geplante-umbenennung-der-mohrenstrasse-zieht-sich-weiter-hin-id231791
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fast-vier-jahre-nach-dem-beschluss-umbenennung-der-mohrenstrasse-in-berlin-mitte-verzogert-sich-weiter-11863142.html
 #: by: https://berliner-abendblatt.de/berlin-news/umbenennung-mohrenstrasse-weiter-offen-warten-aufs-gericht-id257025
-#: osm_watch: note 4168370 2
+#: osm_watch[closed]: note 4168370 2
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
 #: last_checked: 2025-01-21 vvv
@@ -6292,7 +6292,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="6"
-#: last_checked: 2024-11-06
+#: last_checked: 2025-01-29
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -11562,7 +11562,7 @@ Lauterplatz	NN 5799,7880 5707,7878
 #: last_checked: 2025-01-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
-#: osm_watch: way id="1254710366" version="8"
+#: osm_watch: way id="1254710366" version="9"
 #: note: Privatstraße vvv
 #: XXX bleibt es bei der "Fahrradzone" hier?
 Friedenauer Höhe	N 6293,7875 6263,7894 6178,7899
@@ -15874,7 +15874,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-01-25
+#: last_checked: 2025-01-29
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16264,7 +16264,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2025-01-25
+#: last_checked: 2025-01-29
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens
@@ -16638,7 +16638,7 @@ Händelplatz	N 4568,4789 4543,4820
 Klingsorplatz	N 4760,4075 4760,4112 4787,4133 4818,4125 4834,4102
 Flotowstr. (Lichterfelde)	N 4515,4581 4651,4638
 Neltestr.	N 19472,3922 19486,3934 19596,4035 19723,4175 19756,4245
-(Kattunsteig)	NN 19765,4876 19710,4760 19710,4682 19715,4479 19717,4404 19723,4348 19766,4288 19807,4248
+(Kattunsteig)	NN 19765,4876 19710,4760 19710,4682 19714,4491 19717,4404 19723,4348 19766,4288 19807,4248
 (Kattunsteig - Neltestr.)	NN 19766,4288 19750,4260
 (Sonnenallee - Neltestr.)	NN 19610,4394 19750,4260
 (Sonnenallee/Kattunsteig - Neltestr.)	NN 19750,4260 19759,4251 19756,4245
@@ -16647,20 +16647,21 @@ Neltestr.	N 19472,3922 19486,3934 19596,4035 19723,4175 19756,4245
 #: note: möglicherweise "Birkenweg", aber vor Ort keine Schilder (früherer Eintrag in Berlin.coords.data: Birkenweg|Adlershof|12439|19864,4607)
 #: note: relativ breit
 (Weg am ehemaligen Stadion)	NN 20087,4389 20074,4397 20017,4441 19864,4607 19759,4711
-(Köllnische Heide - Oberspreestr./Ostritzer Str.)	NN 20087,4389 20251,4534 20329,4585 20488,4754 20511,4781 20589,4795 20651,4854 20689,4862
+(Köllnische Heide - Oberspreestr./Ostritzer Str.)	NN 19921,4256 20087,4389 20199,4481 20251,4534 20329,4585 20488,4754 20511,4781 20589,4795 20651,4854 20689,4862
 # REMOVED (kein Weg mehr erkennbar, jedenfalls von Süden aus) --- (Weg am Stadion)	NN 19759,4711 19710,4760 19642,4838
 (Waldweg)	NN 19765,4876 19774,4810 19759,4711
-(Genossenschaftsstr. - Weg am ehemaligen Stadion)	NN 19924,4252 19901,4334 19894,4395 19890,4505 19864,4607
-(Genossenschaftsstr. - Weg am ehemaligen Stadion)	NN 19924,4252 19876,4304 19901,4334
+(Genossenschaftsstr. - Weg am ehemaligen Stadion)	NN 19921,4256 19901,4334 19894,4395 19890,4505 19864,4607
+(Köllnische Heide, SW-NO-Weg)	NN 19807,4248 19876,4304 19901,4334
+(verlängerte Genossenschaftsstr.)	NN 19921,4256 19876,4304
 (Sonnenallee, KGA Am Adlergestell)	NN 19370,4166 19610,4394
-(Sonnenallee - Köllnische Heide)	NN 19610,4394 19651,4424
+(Sonnenallee - Köllnische Heide)	NN 19610,4394 19651,4424 19714,4491
 (Sonnenallee - Adlergestell)	NN 19370,4166 19399,4133 19369,4099 19348,4080 19335,4067
 Adlergestell [Sonnenallee - Neltestraße]	NN 19348,4080 19367,4061 19486,3934
 Vogelbeerstr.	N 19723,4175 19759,4160 19815,4148 19869,4151 19917,4168 19963,4198
 Steinbachstr.	N 19587,3801 19673,3888 19703,3979 19759,4160
 Husstr.	N 19633,3751 19736,3858 19763,3959 19815,4148
 Hollstr.	N 20035,4099 19974,4050 19947,4087 19917,4168
-Genossenschaftsstr.	N 19924,4252 19963,4198 20035,4099 20067,4054 20145,3954 20290,3756 20285,3739 20304,3714
+Genossenschaftsstr.	N 19921,4256 19963,4198 20035,4099 20067,4054 20145,3954 20290,3756 20285,3739 20304,3714
 Marktplatz Adlershof	N 20290,3756 20336,3783
 Zur Holzoper	N 19963,4198 20005,4235 20020,4218 20094,4271 20050,4320 19980,4269 20005,4235
 Pfingstberggasse	N 19959,3891 20075,3979 20112,3932 20145,3954
@@ -20885,15 +20886,15 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: osm_watch: way id="1277899794" version="1"
-#: last_checked: 2025-01-07 (mapillary)
+#: last_checked: 2025-01-29
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
 #: osm_watch: way id="1156287321" version="2"
-#: last_checked: 2025-01-07 (mapillary)
+#: last_checked: 2025-01-29
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
 #: osm_watch: way id="1138047106" version="4"
-#: last_checked: 2025-01-07 (mapillary)
+#: last_checked: 2025-01-29
 #: check_frequency: 90d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21669,5700 21623,5661
 # 

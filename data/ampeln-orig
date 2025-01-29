@@ -199,14 +199,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-01-26
+#: last_checked: 2025-01-29
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-01-26
+#: last_checked: 2025-01-29
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -236,8 +236,8 @@ Gürtelstr.	F::inwork 15153,11691
 # REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- 
 #: last_checked: 2025-01-15
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-01-31 (VIZ-Verkehrsmeldung)
-#: valid: -20250131
+#: next_check: 2025-02-04 (VIZ-Verkehrsmeldung)
+#: valid: -20250204
 Tucholskystr./Ziegelstr.: Gegenverkehrsregelung	X::inwork::alternating 9559,13087
 # 
 # REMOVED (entfernt) --- #: XXX schon seit mehreren Tagen ausgeschaltet --- #: last_checked: 2023-05-05 --- #: check_frequency: 30d --- Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
@@ -3943,6 +3943,19 @@ provisorische Fußgängerampel	F 17720,8854
 # 
 #: note: Anforderungsampel im Zuge der August-Froehlich-Str. und An der Werderlake
 	X 18199,1811
+# 
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6740
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/GUKkLkr/41-Anlagen/03/B1222SB.pdf (kein Termin)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Erwähnung für 2025)
+#: source_id[inactive]: bvg2024:62#HIM_FREETEXT_237919
+#: source_id: viz2021:13.585068,52.427802,19.11.2024,07:00 (Bau einer LSA, bis 09.12.2024) (bis 21.02.2025) (bis 07.03.2025)
+#: osm_watch: note 4524665 2
+#: XXX Wendenschloßstr./Dregerhoffstr.: Fußgängerampel in Bau, zurzeit eine provisorische Ampel
+#: last_checked: 2025-01-29
+#: check_frequency: 180d
+#: next_check: 2025-03-07 (VIZ-Verkehrsmeldung)
+	X::inwork 22904,2675
+# 
 #: section ^^^
 ################################################################################
 #: section: Potsdam vvv

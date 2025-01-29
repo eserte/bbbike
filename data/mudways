@@ -91,6 +91,7 @@ Uferweg - Kiehnwerderallee: Waldweg	X 16657,8443 16490,8432
 #: mud: 2024-08-03: keine Beeinträchtigungen	h=q0
 #: mud: 2024-11-09: keine Beeinträchtigungen	h=q0
 #: mud: 2025-01-25: einige Pfützen	h=q1,wet
+#: mud: 2025-01-29: einige Pfützen	h=q1,wet
 Hönower Weg: asphaltiert, aber mit einigen Wellen	X 17383,9719 16984,9857 16925,9852 16900,9861
 # 
 # REMOVED (Weg wurde neu gemacht und ist nun asphaltiert) --- #: mud: 2020-03-06: eine "Seenlandschaft" --- Rüdersdorfer Str. - Am Wriezener Bahnhof: unbefestigt, mit vielen großen Kuhlen	X 13173,11788 13089,11708
@@ -639,10 +640,38 @@ Unterführung Emil-Schulz-Brücke: unbefestigt, Schotter	X 4274,2717 4272,2704 424
 #: mud: 2022-11-05: teils etwas feuchtere Oberfläche, teils nass-sandig, die meisten Stellen umfahrbar	h=q2,wet
 Elsengrund: Waldweg, einige sandige Stellen	X 23538,6231 23735,6184 23812,6154 23913,6153 23960,6153
 # 
-#: note: kann nach Regenfällen etwas matschig sein
+#: mud: 2021-10-10: keine Beeinträchtigungen	h=q0
+#: mud: 2025-01-29: matschige Stellen	h=q2-,wet
+Kattunsteig: Waldweg	X 19765,4876 19710,4760 19710,4682 19714,4491 19717,4404 19723,4348
+# 
+#: mud: 2021-10-10: keine Beeinträchtigungen	h=q0
 #: mud: 2022-06-18: keine Beeinträchtigungen	h=q0
 #: mud: 2024-06-09: keine Beeinträchtigungen	h=q0
-(Kattunsteig - Hartriegelstr.): Waldweg	X 19723,4348 19661,4414 19651,4424 19306,4791 19301,4814 19250,4830 19251,4879
+#: mud: 2025-01-29: sehr matschig	h=q3,wet
+(Kattunsteig, Kattunsteig - Hartriegelstr.): Waldweg	X 19807,4248 19766,4288 19723,4348 19661,4414 19651,4424
+# 
+#: mud: 2022-06-18: keine Beeinträchtigungen	h=q0
+#: mud: 2024-06-09: keine Beeinträchtigungen	h=q0
+#: mud: 2025-01-29: stellenweise matschig, ansonsten feuchte Oberfläche	h=q2-,wet
+(Kattunsteig - Hartriegelstr.): Waldweg	X 19651,4424 19306,4791 19301,4814 19250,4830 19251,4879
+# 
+#: mud: 2024-06-09: keine Beeinträchtigungen	h=q0
+#: mud: 2025-01-29: keine Beeinträchtigungen	h=q0
+(Sonnenallee - Köllnische Heide): Waldweg	X 19610,4394 19651,4424
+# 
+#: mud: 2025-01-29: feuchte Oberfläche, leicht matschig	h=q2+,wet
+(Sonnenallee - Köllnische Heide): Waldweg	X 19651,4424 19714,4491
+# 
+#: mud: 2024-06-09: wenige sehr leicht sandige Stellen	h=q0-,dry
+#: mud: 2025-01-29: matschige Stellen und einige wenige Pfützen	h=q2-,wet
+(Köllnische Heide - Oberspreestr./Ostritzer Str.): Waldweg, einige Wurzeln	X 19921,4256 20087,4389 20199,4481 20251,4534 20329,4585 20488,4754 20511,4781 20589,4795 20651,4854 20689,4862
+# 
+#: mud: 2023-05-13: keine Beeinträchtigungen	h=q0	by=mapillary
+#: mud: 2025-01-29: matschige Stellen	h=q2-,wet
+(verlängerte Genossenschaftsstr.): Waldweg	X 19921,4256 19876,4304
+# 
+#: mud: 2025-01-29: matschige Stellen und einige Pfützen	h=q2-,wet
+(Köllnische Heide, SW-NO-Weg): Waldweg	Q2 19807,4248 19876,4304 19901,4334
 # 
 #: mud: 2022-10-02: zahlreiche Pfützen	h=q3,wet
 Am Britzer Garten - Straße 229: wassergebundene Decke	X 11153,4306 11141,4214 11111,4055 11104,3981 11103,3960

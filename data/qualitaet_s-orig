@@ -305,7 +305,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2025-01-12
+#: last_checked: 2025-01-29
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1187,7 +1187,7 @@ Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12905
 Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX nach den Bauarbeiten wird vermutlich der provisorische Asphalt entfernt; dann wieder "Kopfsteinpflaster, Q2" vvv
-#: last_checked: 2024-12-04 vvv
+#: last_checked: 2025-01-29 vvv
 #: next_check: 2027-03-31 vvv
 Alter Markt: Asphalt	Q0 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Asphalt	Q0 22390,4702 22388,4737 22377,4836
@@ -1414,7 +1414,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2024-12-04 vvv
+#: last_checked: 2025-01-29 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="10"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -3836,7 +3836,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="5"
 #: priority: #C
-#: last_checked: 2024-08-17
+#: last_checked: 2025-01-29
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -5568,10 +5568,10 @@ Zur Hirtenwiese: Asphalt mit einigen Unebenheiten	Q1+ 27273,-106 26700,-344
 #: historical_note: früher Kopfsteinpflaster, Q2
 Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 # 
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (Bauarbeiten 2023 und 2024)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (vom 27. Februar 2022: Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2024-12-04
+#: last_checked: 2025-01-29
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
@@ -5590,7 +5590,7 @@ Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19306,4969 19241,4958
 Husstr.: Asphalt mit einigen Schäden	Q1 19633,3751 19736,3858 19763,3959 19815,4148
 #: note: und auch keine Bürgersteige, auf die man ausweichen könnte
 Hollstr.: schlechtes Kopfsteinpflaster	Q3 20035,4099 19974,4050 19947,4087 19917,4168
-Genossenschaftsstr.: Beton	Q0- 19924,4252 19963,4198
+Genossenschaftsstr.: Beton	Q0- 19921,4256 19963,4198
 Genossenschaftsstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 19963,4198 20035,4099 20067,4054
 Genossenschaftsstr.: schlechtes Kopfsteinpflaster	Q3 20067,4054 20145,3954 20290,3756
 Genossenschaftsstr.: Kopfsteinpflaster	Q2 20290,3756 20285,3739 20304,3714
@@ -7495,7 +7495,7 @@ Mattenbuder Pfad: neues Verbundsteinpflaster	Q1+ -1506,22923 -1637,22949 -1755,2
 #: osm_watch: way id="231263429" version="9"
 #: last_checked: 2022-06-12
 # REMOVED --- #: check_frequency: 180d
-#: next_check: 2025-01-31
+#: next_check: 2025-01-31 (Pressemitteilung)
 Mattenbuder Pfad: Beton	Q1- -1980,23033 -2040,23061 -2113,23111 -2249,23230 -2306,23259
 Letzkauer Steig: Verbundsteinpflaster	Q1 -2052,23227 -2208,23296 -2215,23280 -2241,23288
 Borgfelder Steig: Verbundsteinpflaster	Q1 -2348,22704 -2384,22775 -2383,22830
@@ -9601,10 +9601,11 @@ Theanolte-Bähnisch-Str.: Asphalt	Q0 11320,13095 11235,13143
 (Weg am Stadion): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 20087,4389 20074,4397 20017,4441 19864,4607
 (Weg am Stadion): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 19864,4607 19759,4711
 # REMOVED --- (Weg am Stadion): Schotterstraße	Q2+ 19759,4711 19710,4760 19642,4838
-(Köllnische Heide - Oberspreestr./Ostritzer Str.): Waldweg, einige Wurzeln	Q2- 20087,4389 20251,4534 20329,4585 20488,4754 20511,4781 20589,4795 20651,4854 20689,4862
+(Köllnische Heide - Oberspreestr./Ostritzer Str.): Waldweg, einige Wurzeln	Q2- 19921,4256 20087,4389 20199,4481 20251,4534 20329,4585 20488,4754 20511,4781 20589,4795 20651,4854 20689,4862
 (Waldweg): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 19765,4876 19774,4810 19759,4711
-(Genossenschaftsstr. - Weg am Stadion): Waldweg	Q2 19924,4252 19901,4334 19894,4395 19890,4505 19864,4607
-(Genossenschaftsstr. - Weg am Stadion): Waldweg	Q2 19924,4252 19876,4304 19901,4334
+(Genossenschaftsstr. - Weg am Stadion): Waldweg	Q2 19921,4256 19901,4334 19894,4395 19890,4505 19864,4607
+(verlängerte Genossenschaftsstr.): Waldweg	Q2 19921,4256 19876,4304
+(Köllnische Heide, SW-NO-Weg): Waldweg	Q2 19807,4248 19876,4304 19901,4334
 (Braunlager Str. - Tempelhofer Weg): Mosaikpflaster	Q1 12062,5779 12017,5747
 Am Vierling: Kleinsteinpflaster	Q1 -472,4185 -444,4126
 (Salzachstr. - Parkplatz Einkaufszentrum): Verbundsteinpflaster	Q1+ -2103,3536 -2173,3513
@@ -12879,6 +12880,7 @@ Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 #: by: osm
 (Sonnenallee, KGA Am Adlergestell): Asphalt	Q0 19370,4166 19610,4394
 (Sonnenallee - Köllnische Heide): Waldweg	Q2- 19610,4394 19651,4424
+(Sonnenallee - Köllnische Heide): Waldweg	Q2 19651,4424 19714,4491
 #: historical_note: früher (bis etwa 2024): Beton, Q1-
 (Sonnenallee - Adlergestell): Asphalt	Q0 19370,4166 19399,4133 19369,4099
 #: historical_note: früher (bis etwa 2024): Verbundsteinpflaster, Q1-
@@ -13711,12 +13713,7 @@ Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 (Havelländer Ring - Elfriede-Brüning-Str./Eva-Strittmatter-Str.): Asphalt	Q0 23387,15322 23404,15324 23418,15234
 (Eva-Strittmatter-Str. - Kastanienallee): Asphalt	Q0 23536,15252 23550,15261 23661,15282
 # 
-An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125
-#: next_check_id: MARIENUFER-2023
-#: last_checked: 2024-09-04
-#: check_frequency: 120d
-#: next_check: 2025-12-31
-An der Villa Bolle: Baustraße	Q2 22668,3125 22477,3109
+An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125 22477,3109
 An der Villa Bolle: Verbundsteinpflaster	Q1+ 22668,3125 22674,3052
 # 
 Havelwerke: schlechtes Kopfsteinpflaster	Q3 -1945,15018 -1959,14962
@@ -19226,7 +19223,7 @@ Hartriegelstr.: Beton, einige leichte Hebungen	Q0- 18724,5022 18918,4971 19184,4
 Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
 #: note: laut ADFC-Karte ebenfalls schlecht geeignet
 #: corrected_by: srt (Q3 -> Q2+) vvv
-Kattunsteig: Waldweg	Q2+ 19765,4876 19710,4760 19710,4682 19715,4479 19717,4404 19723,4348 19766,4288 19807,4248
+Kattunsteig: Waldweg	Q2+ 19765,4876 19710,4760 19710,4682 19714,4491 19717,4404 19723,4348 19766,4288 19807,4248
 Kattunsteig: Waldweg	Q2+ 19766,4288 19750,4260 19759,4251 19756,4245
 #: corrected_by ^^^
 #: note: "Note 3":

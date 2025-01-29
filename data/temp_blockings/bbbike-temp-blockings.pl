@@ -38302,7 +38302,7 @@ EOF
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-01-27 vvv
+#: last_checked: 2025-01-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-07 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -41343,7 +41343,7 @@ EOF
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025) (bis 21.02.2025)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
 #: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
@@ -41354,7 +41354,7 @@ EOF
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
 #: last_checked: 2025-01-25 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-01-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-02-21 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -42811,9 +42811,9 @@ EOF
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2025-01-04
+#: last_checked: 2025-01-29
 #: check_frequency: 90d
-#: next_check: 2025-03-01
+#: next_check: 2025-03-01 (VIZ-Verkehrsmeldung)
 	q4::inwork 10385,13348 10341,13376
 EOF
      },
@@ -43484,11 +43484,11 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2025-01-31 17:00:00"),
-       text  => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betreoffen, bis 31.01.2025 17:00 Uhr',
+       until => $isodate2epoch->("2025-12-31 17:00:00"),
+       text  => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betreoffen, bis 31.12.2025',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/23/175 (bis 10.01.2024)
+#: source_id: LS/221-E/23/175 (bis 10.01.2024) (bis 31.12.2025)
 	2::inwork 11448,28068 12126,27740
 EOF
      },
@@ -44327,7 +44327,7 @@ EOF
 # REMOVED (Vorsperrung komplett aufgehoben, keine größeren Einschränkungen an der eigentlichen Baustelle (Überholverbot von Fahrrädern)) --- #: last_checked: 2024-06-27 vvv --- #: check_frequency: 7d vvv --- #: next_check: 2024-06-27 vvv
 #: source_id: viz2021:13.417885,52.514531,26.06.2024,08:27 (bis 27.06.2024) (inaktiv)
 	q4::inwork; 11347,12223 11343,12182
-#: source_id: viz2021:13.41771,52.51389,27.06.2024,15:00 (bis 03.07.2024) (inaktiv) (bis 31.07.2024) (inaktiv) (bis 12.11.2024) (inaktiv) (bis 19.12.2024) (bis 31.01.2025)
+#: source_id: viz2021:13.41771,52.51389,27.06.2024,15:00 (bis 03.07.2024) (inaktiv) (bis 31.07.2024) (inaktiv) (bis 12.11.2024) (inaktiv) (bis 19.12.2024) (bis 31.01.2025) (bis 31.12.2025)
 	q3::inwork; 11325,12021 11291,11876
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
@@ -45153,7 +45153,7 @@ EOF
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-01-25 (traffic)
+#: last_checked: 2025-01-29 (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -45728,7 +45728,7 @@ EOF
      { from  => $isodate2epoch->("2024-09-12 00:00:00"),
        until => undef, # $isodate2epoch->("2025-01-07 23:59:59"), # 1738364340, # 2025-01-31 23:59
 #      text  => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, vom 12.09.2024 bis 07.01.2025',
-       text  => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, mindestens bis 31.01.2025',
+       text  => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, voraussichtlich mindestens bis Ende März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/berlin/nach-wasserrohrbruch-in-berlin-grunewaldstrasse-bleibt-tagelang-gesperrt--65-wohnungen-ohne-wasser-12349757.html
@@ -45738,7 +45738,7 @@ EOF
 #: by[nocache]: https://x.com/Aintschie/status/1833937985588650466 (etwa 100m betroffen?)
 #: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:x83#HIM_FREETEXT_238226
-#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...)
+#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...) (bis 28.03.2025 + ...)
 #: source_id: bvg2024:x83#HIM_FREETEXT_260482 (kein Endedatum)
 #: osm_watch: note 4441243 4
 #: osm_watch: note 4441280 1
@@ -45786,12 +45786,12 @@ Cimbernstr.: Einbahnstraße	q4::inwork; -3503,1988 -3544,2003 -3643,2061 -3703,21
 EOF
      },
      { from  => 1730098800, # 2024-10-28 08:00
-       until => $isodate2epoch->("2025-01-31 17:00:00"), # 1734710400, # 2024-12-20 17:00
-       text  => 'Ziegelstr.: Leitungsarbeiten, Sperrung bzw. Einbahnstraßenregelung, vom 29.10.2024 08:00 bis 31.01.2025 17:00',
+       until => $isodate2epoch->("2025-02-04 17:00:00"), # 1734710400, # 2024-12-20 17:00
+       text  => 'Ziegelstr.: Leitungsarbeiten, Sperrung bzw. Einbahnstraßenregelung, vom 29.10.2024 08:00 bis 04.02.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ZIEGEL-2024
-#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024) (bis 31.01.2025)
+#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024) (bis 31.01.2025) (bis 04.02.2025)
 #: note: etwa 40m
 	q3::inwork; 9559,13087 9401,13072
 #: note: gesperrt wegen der Gegenverkehrsampel
@@ -46265,6 +46265,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-in-der-smetanastrasse_a434819
 	q4::inwork 14195,15604 14133,15773
 EOF
      },

@@ -1325,7 +1325,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-01-27 vvv
+#: last_checked: 2025-01-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1586,7 +1586,7 @@ Radweg stellenweise noch sichtbar, aber durch Baumscheiben unterbrochen	RW0; 111
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
 #: last_checked: 2025-01-13 (mapillary)
 #: check_frequency: 180d
-#: next_check: 2025-01-31
+#: next_check: 2025-01-31 (ex-VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
 provisorische Radspur	RW4; 7759,13246 7816,13276 7842,13292 7901,13324
 # 
@@ -2931,7 +2931,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-01-04 vvv
+#: last_checked: 2025-01-29 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3101,7 +3101,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-01-19
+#: last_checked: 2025-01-29
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4468,7 +4468,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2024-09-04 vvv
+#: last_checked: 2025-01-29 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -8541,6 +8541,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/pop-up-radwege-werden-dauerhaft_a332363 (2022 nur teilweise Verstetigung, fertig erst 2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/220824_mobilitaetswenderat_final.pdf (Fertigstellung Mitte 2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1521316.php (Abschluss im Frühjahr 2025)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-teils-verstetigt_a434211
 #: source_id: 2147340884 (inaktiv)
 #: source_id: 2147340970 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_90638 (inaktiv)
@@ -8997,7 +8998,7 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 #: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
 #: last_checked: 2024-08-27 (mapillary) vvv
 # REMOVED -- #: check_frequency: 90d
-#: next_check: 2025-01-31 vvv
+#: next_check: 2025-01-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2024-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 provisorische Radspur	RW4; 8579,2265 8560,2181 8490,2084

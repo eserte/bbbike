@@ -12,7 +12,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, vermutlich Hochbauarbeiten
-#: last_checked: 2025-01-26
+#: last_checked: 2025-01-29
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -21,7 +21,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-01-28
+#: last_checked: 2025-01-29
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -63,7 +63,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="5"
 #: osm_watch: way id="1146013233" version="8"
 #: osm_watch: way id="1134071039" version="10"
-#: last_checked: 2025-01-28 vvv
+#: last_checked: 2025-01-29 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-01-25
+#: last_checked: 2025-01-29
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -690,7 +690,7 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: note: Halteverbotsschilder bis 23.12.2024; mittlerweile bis 31.01.2025
 #: also_indoor: traffic (ex-H,B,T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-25
+#: last_checked: 2025-01-29
 #: check_frequency: 14d
 #: next_check: 2025-01-31 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20241223
@@ -998,7 +998,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-01-25
+#: last_checked: 2025-01-29
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1291,10 +1291,10 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 ### Biesdorf ###
 # 
 #: by: https://pascalgrothe.de/grabensprung-wiedereroeffnung-steht-bevor/ (veröffentlicht am 28.12.2024, Freigabe "in Kürze")
-#: also_indoor: traffic (T,ex-G,B,H)
+#: also_indoor: traffic (T,ex-G,B,ex-H)
 #: also_indoor: url https://pascalgrothe.de/kiezblog/
 #: note: Halteverbotsschilder bis 31.01.2025
-#: last_checked: 2025-01-27 (traffic)
+#: last_checked: 2025-01-29 (traffic)
 #: check_frequency: 7d (traffic checks)
 #: next_check: 2025-01-31 (Halteverbotsschilder)
 Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
@@ -1938,7 +1938,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-27
+#: last_checked: 2025-01-29
 #: check_frequency: 30d
 #: next_check: 2025-03-15 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870

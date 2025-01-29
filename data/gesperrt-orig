@@ -109,13 +109,8 @@ Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 18934,11796 19138,11815 19389,1
 Altstadt Köpenick	1 22451,4749 22439,4838
 Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
-#: next_check_id: ALTSTADTKOEPENICK-2024
-#: XXX Einbahnstraßenregelung temporär aufgehoben
-#: last_checked: 2024-12-04
-#: check_frequency: 90d
-#: next_check: 2025-02-01
-# REMOVED --- #: next_check: 2027-03-31
-Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
+# REMOVED (Einbahnschilder am nördlichen Ende gesehen) --- #: next_check_id: ALTSTADTKOEPENICK-2024 --- #: XXX Einbahnstraßenregelung temporär aufgehoben --- #: last_checked: 2024-12-04 --- #: check_frequency: 90d --- #: next_check: 2025-02-17 ---#: next_check: 2027-03-31
+Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
@@ -1034,9 +1029,9 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027) (bis 30.06.2027)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2025-01-07 (mapillary) vvv
+#: last_checked: 2025-01-29 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2027-06-30 vvv
+#: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21623,5661 21605,5687 21600,5694
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
@@ -2708,8 +2703,8 @@ tragen (3x13 Stufen)	0:45 18739,4728
 # REMOVED (nicht mehr in Benutzung) --- #: note: provisorische Treppe --- tragen (36 Stufen)	0:45 18687,4649
 #: by: https://www.bahninfo-forum.de/read.php?9,677830,795049#msg-795049 (Aufzug wird frühestens Mitte 2025 fertig)
 #: XXX hier wird es in Zukunft einen Aufzug geben
-#: last_checked: 2024-03-17 (krickstadt)
-#: next_check: 2025-07-01
+#: last_checked: 2025-01-29
+#: next_check: 2025-07-01 (bahninfo-forum)
 tragen	0:45 18661,4655
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
@@ -4208,11 +4203,11 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
-#: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO)
+#: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags
-#: last_checked: 2025-01-27 vvv
+#: last_checked: 2025-01-29 vvv
 #: osm_watch: way id="1199463691" version="3"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050
@@ -4337,10 +4332,10 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 # 
 #: next_check_id: MARIENUFER-2023
 #: osm_watch: way id="1272560911" version="2"
-#: last_checked: 2024-09-04
+#: last_checked: 2025-01-29
 #: check_frequency: 120d
-#: next_check: 2026-12-31
-An der Villa Bolle: Bauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
+#: next_check: 2025-12-31 (bw)
+An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 # 
 # REMOVED (mittlerweile wieder offen) --- #: next_check_id: BEHRENSUFER-2023 --- #: osm_watch: way id="41340056" version="26" --- #: last_checked: 2023-08-21 --- #: check_frequency: 240d --- #: next_check: 2028-12-31 --- Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5627 19184,5554
 # REMOVED --- #: next_check_id: YORCKSTRBR5-2023 --- #: last_checked: 2023-09-20 --- #: check_frequency: 90d --- #: next_check: 2023-09-30 --- Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraßenbrücke 5 gesperrt	2::inwork 8242,9699 8243,9766
@@ -4911,7 +4906,8 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
 # REMOVED --- #: next_check_id: BHFJOHANNISTHAL-2022 --- #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021) --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende) --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in Kürze ... saniert") --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf ("Verbesserung ... nach 2024 diskutiert") --- #: by: https://www.facebook.com/larsduesterhoeft1981/posts/2656989284551902 (Bauarbeiten Dezember 2020 bis Ende 2021) --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6697 (Antrag) --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/umbenennung-des-betriebsbahnhofs-schoeneweide-zum-fahrplanwechsel_a286993 --- #: by: https://twitter.com/Technologiepark/status/1337402031569580032 (Sanierung der Brücke bis 10.12.2021) --- #: by: https://www.deutsches-architekturforum.de/thread/14514-square-1-johannisthal/ (Erwähnung) --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/betriebsbahnhof-schoeneweide-ist-geschichte_a296360 (bis Ende 2021) --- #: by: https://www.facebook.com/larsduesterhoeft1981/posts/2986916781559149 (provisorische Treppe wurde geöffnet) --- #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022) --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697 --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14186.pdf (Aufzug im III. Quartal 2024) --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/fahrstuhl-in-johannisthal-erst-ab-2024-nutzbar_a368423 --- #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/fussgaengerbruecke-am-s-bahnhof-johannisthal-soll-im-herbst-fertig-werden-fahrstuhl-erst-2024_a385887 --- #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig --- #: osm_watch: way id="1146034287" version="2" --- #: osm_watch: way id="1012523982" version="8" --- #: last_checked: 2023-09-24 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-09-30 vvv --- Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18653,4663 18664,4673 --- # REMOVED (hier offen, siehe http://thomas.krickstadt.de/s-bahn/2022-08-14-johannisthal/4-2022-08-14-12-xxl.jpg) --- Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687 --- Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18691,4601 18654,4636 18661,4645 18639,4670 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2024-11-06
+#: note: Bauzaun war am 2025-01-29 weggeschoben, vermutlich illegal
+#: last_checked: 2025-01-29
 #: check_frequency: 90d
 Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
 # 
@@ -4992,7 +4988,7 @@ Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-01-16 vvv
+#: last_checked: 2025-01-29 vvv
 #: next_check: 2028-01-01 vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5005,7 +5001,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2025-01-27
+#: last_checked: 2025-01-29
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
