@@ -3633,12 +3633,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
-#: next_check_id: BAB100-2022
-#: osm_watch: node id="9804698456" version="1"
-#: osm_watch: node id="6512193990" version="6"
-#: last_checked: 2024-12-20
-#: check_frequency: 90d
-	X::inwork 14334,7395
+# REMOVED (Baustellenampel existiert nicht mehr, aber eine permanente wird später kommen) --- #: next_check_id: BAB100-2022
+# REMOVED --- #: osm_watch: node id="9804698456" version="1"
+# REMOVED --- #: osm_watch: node id="6512193990" version="6"
+# REMOVED --- #: last_checked: 2025-01-28 (mapillary)
+# REMOVED --- #: check_frequency: 90d
+# REMOVED ---	X::inwork 14334,7395
 # 
 # REMOVED -- #: note: Baustellenstraße kreuzt ---	X::inwork 14369,7376
 # REMOVED --- #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, wahrscheinlich keine Einschränkung für Radfahrer Richtung Nordwesten --- #: note: Anforderungsampel --- F::inwork
