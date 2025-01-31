@@ -21,7 +21,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-01-29
+#: last_checked: 2025-01-31
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -63,7 +63,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="5"
 #: osm_watch: way id="1146013233" version="8"
 #: osm_watch: way id="1134071039" version="10"
-#: last_checked: 2025-01-29 vvv
+#: last_checked: 2025-01-31 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -690,7 +690,7 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: note: Halteverbotsschilder bis 23.12.2024; mittlerweile bis 31.01.2025
 #: also_indoor: traffic (re-H,B,T,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-30 (traffic)
+#: last_checked: 2025-01-31 (traffic)
 #: check_frequency: 14d
 #: next_check: 2025-01-31 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20241223
@@ -1294,7 +1294,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 #: also_indoor: traffic (T,ex-G,B,ex-H)
 #: also_indoor: url https://pascalgrothe.de/kiezblog/
 #: note: Halteverbotsschilder bis 31.01.2025
-#: last_checked: 2025-01-30 (traffic)
+#: last_checked: 2025-01-31 (traffic)
 #: check_frequency: 7d (traffic checks)
 #: next_check: 2025-01-31 (Halteverbotsschilder)
 Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
@@ -1866,7 +1866,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-01-28
+#: last_checked: 2025-01-31
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -3657,8 +3657,8 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-01-21
-#: check_frequency: 60d
+#: last_checked: 2025-01-31
+#: check_frequency: 45d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
 Schillingstr.: breiter Geh- und Radweg	q0- 11417,12243 11388,12202

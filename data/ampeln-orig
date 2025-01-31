@@ -18,10 +18,13 @@ Hoeppnerstr.: Gegenverkehrsreglung	X::inwork::alternating 8302,7508
 # REMOVED --- #: valid: -20241028
 # REMOVED --- Michaelkirchplatz: Gegenverkehrsreglung	X::inwork::alternating 11349,11227
 # 
+#: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv)
-#: next_check: 2025-04-23
-#: valid: -20250423
+#: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
+#: last_checked: 2025-01-31
+#: next_check: 2025-04-23 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250423
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsreglung	X::inwork::alternating 9751,11243
 # 
 #: next_check_id: RING-2025
@@ -263,8 +266,9 @@ Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 #: next_check_id: KWEISENBAHNBRUECKE-2022
 #: osm_watch: node id="9882573114" version="2"
 #: osm_watch: node id="7023223791" version="3"
-#: last_checked: 2023-06-12
-#: next_check: 2023-06-27
+#: last_checked: 2025-01-19 (mapillary)
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2023-06-27
 # REMOVED --- #: valid: -20230627
 B179/Fichtestr.	X::inwork 26138,-12596
 # 
@@ -3838,6 +3842,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://mein.berlin.de/projekte/radinfrastruktur-auf-der-hermannstrasse/ (Ampel wird permanent gemacht; vermutlich auch erst ab 2021)
 #: by[removed]: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-2/ (Erwähnung der Ampel)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1134851.php (temporäre Ampel wird durch eine finale Ampel abgelöst, Ampel am südlichen Ausgang Leinestr. wird dafür abgebaut)
+#: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 neue Ampel -> Verstetigung?)
 #: osm_watch: node id="8656381176" version="5"
 #: osm_watch: node id="8740310061" version="4"
 #: osm_watch: node id="8740310063" version="4"
@@ -3846,6 +3851,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: last_checked: 2025-01-13
 #: check_frequency: 120d
+#: next_check: 2025-12-31 (Tsp)
 	X::inwork 12185,7381
 # 
 #: note: Anforderungsampel für Radfahrer in der Relation Brachvogelstr. - Mittenwalder Str.

@@ -31452,7 +31452,7 @@ EOF
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-01-25 (traffic) vvv
+#: last_checked: 2025-01-31 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -36689,11 +36689,11 @@ EOF
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
 #: by[nocache]: https://archive.is/nyxPx
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
-#: last_checked: 2024-10-17 (mapillary)
+#: last_checked: 2025-01-19 (mapillary)
 #: next_check: 2025-10-01
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
 #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin
-#: last_checked: 2024-10-17 (mapillary)
+#: last_checked: 2025-01-19 (mapillary)
 #: next_check: 2025-01-31
 #: note: eigentlich 1s:q3
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
@@ -41345,7 +41345,7 @@ EOF
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025) (bis 21.02.2025)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
-#: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
+#: source_id[inactive]: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
 #: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
 #: XXX mittlerweile (2024-11-20) laufen die letzten Asphaltierungsarbeiten, aber es ist nicht wahrscheinlich, dass übermorgen die Freigabe erfolgt (z.B. fehlen Markierungen)
 #: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
@@ -42520,17 +42520,17 @@ EOF
        until => undef, # $isodate2epoch->("2024-11-29 17:00:00"), # 1722438000, # 2024-07-31 17:00
        dont_check_date => 1,
 #      text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, Ende der Bauarbeiten unbekannt',
-       text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis voraussichtlich 31.01.2025 17:00',
+       text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis voraussichtlich 31.01.2025 17:00, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024) (im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.42956,52.533,29.08.2024,14:51 (bis 02.10.2024) (inaktiv)
-#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024) (bis 02.12.2024 + weitere Arbeiten) (bis 20.12.2024) (bis 31.01.2025)
+#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024) (bis 02.12.2024 + weitere Arbeiten) (bis 20.12.2024) (bis 31.01.2025) (inaktiv)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1841356186756817316
 #: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
-#: also_indoor: traffic (G,B,W)
+#: also_indoor: traffic (ex-G,B,ex-W,T,A)
 #: last_checked: 2024-12-16
 #: next_check: 2025-01-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 12228,14083 12077,14186
@@ -44293,7 +44293,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-01-21 vvv
+#: last_checked: 2025-01-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44516,10 +44516,10 @@ EOF
 zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwork -820,4772 -857,4725 -927,4638
 EOF
      },
-     { from  => 1718628480, # 2024-06-17 14:48
-       until => 1736339573, # undef, # $isodate2epoch->("2024-08-30 17:00:00"), # undef, # XXX
-       text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges, außerdem Sperrung der Fahrbahn im Bereich der Bäkebrücke, bis 16.12.2024, evtl. wird verlängert',
-       type  => 'handicap',
+     { from  => $isodate2epoch->("2025-02-10 00:00:00"), # 1718628480, # 2024-06-17 14:48
+       until => $isodate2epoch->("2025-08-31 23:59:59"), # 1736339573, # undef, # $isodate2epoch->("2024-08-30 17:00:00"), # undef, # XXX
+       text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025',
+       type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BAEKEBRUECKE-2022
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/wasserstrassen-neubauamt-will-baekebruecke-2022-neu-errichten_a284203
@@ -44534,22 +44534,27 @@ EOF
 #: by: https://www.facebook.com/groups/274489925939434/posts/7611685488886471 (in einem Kommentar steht, dass Fußgänger rüberkommen)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baekebruecke-wird-erneuert_a421024
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1526632.php (neue Sperrung des südlichen Teltowkanaluferwegs und der Bäkebrücke)
+#: by: https://www.berliner-zeitung.de/news/steglitz-zehlendorf-baekestrasse-in-lichterfelde-wegen-neuer-baustelle-bis-august-gesperrt-li.2292684
 # REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
-# REMOVED --- #: add_fragezeichen: Ist der Teltowkanaluferweg weiterhin komplett gesperrt? vvv --- #: last_checked: 2024-11-27 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-12-16 vvv
-#: osm_watch: way id="1328520572" version="1"
-Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
+#: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
+# REMOVED --- #: last_checked: 2024-11-27 vvv --- #: check_frequency: 30d vvv --- 
+#: next_check: 2025-02-10 vvv
+# REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
 #: osm_watch: way id="5363433" version="25"
 #: osm_watch: note 4442541 4
-#: note: eigentlich q3-::inwork
-Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
-#: osm_watch: way id="1332159946" version="1"
-Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
-Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
+# REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
+Bäkebrücke: gesperrt	2::inwork 4587,3097 4659,3065
+# REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
+# REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
+Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4274,2717 4236,2678
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- 
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -44865,7 +44870,7 @@ EOF
        text  => 'Tannenbergallee: Baustelle in Höhe Hohensteinallee, evtl. sind auch Radfahrer von der Sperrung betroffen, vom 12.08.2024 06:00 bis 31.01.2025 18:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.24754,52.50541,12.08.2024,06:00 (bis 31.01.2025)
+#: source_id: viz2021:13.24754,52.50541,12.08.2024,06:00 (bis 31.01.2025) (inaktiv)
 	q4::inwork -45,10912 -220,10893 -466,10860
 EOF
      },
@@ -45314,9 +45319,10 @@ EOF
 	2::inwork 15763,10963 15805,10949
 EOF
      },
-     { from  => 1732489200, # 2024-11-25 00:00
-       until => $isodate2epoch->("2024-12-20 11:00:00"), # 1735232400, # 2024-12-26 18:00
-       text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 26.11.2024 bis 20.12.2024',
+     { from  => $isodate2epoch->("2025-03-02 00:00:00"), # 1732489200, # 2024-11-25 00:00
+       until => $isodate2epoch->("2025-03-28 23:59:59"), # $isodate2epoch->("2024-12-20 11:00:00"), # 1735232400, # 2024-12-26 18:00
+#      text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 26.11.2024 bis 20.12.2024',
+       text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 03.03.2025 bis 28.03.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLLANK-2024
@@ -45331,11 +45337,13 @@ EOF
 #: by: https://pbs.twimg.com/media/GdOzzK9XEAAuZLU?format=jpg&name=medium (Umleitungsstrecken für Rad- und Fußverkehr)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/PR_berlin_nord_komplexe_arbeiten_informationsveranstaltung_20241127n.pdf (nächste Totalsperrung geplant: 03.03. bis 21.03.2025)
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin-nord-komplexe-arbeiten_wollankstrasse_20241128.pdf
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250131
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_wollankstrasse_wegefuehrung_20250131n.pdf
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
-#: note: siehe auch temporären Eintrag in comments_trafficjam
+# REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="31"
 #: osm_watch: note 4536637 9
 # REMOVED --- #: last_checked: 2024-10-12 (mapillary) --- #: next_check: 2024-12-20
@@ -45525,7 +45533,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-01-21 vvv
+#: last_checked: 2025-01-31 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-02-28 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -46149,17 +46157,19 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), Ende der Sperrung unbekannt',
+       until => $isodate2epoch->("2025-02-10 23:59:59"), # undef, # XXX
+       text  => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), voraussichtlich bis 10.02.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
-#: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum)
+#: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum) (inaktiv)
+#: source_id: viz2021:13.32487,52.50002,31.01.2025,11:35 (bis 10.02.2025)
 #: also_indoor: traffic (ex-H,G,B,T,W,A)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-25 (traffic)
-#: check_frequency: 7d
+#: last_checked: 2025-01-31 (traffic)
+# REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 25d
+#: next_check: 2025-02-10
 	q3::inwork 5069,10662 5047,10381
 EOF
      },
@@ -46180,10 +46190,11 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G,T,B,A)
 #: note: Ende der Abschnitts unklar: entweder Bayernring oder General-Pape-Str.
-#: last_checked: 2025-01-08
+#: last_checked: 2025-01-31
 #: check_frequency: 120d
 #: next_check: 2025-07-31 (Halteverbotsschilder)
-	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
+	q4::inwork; 8482,8364 8380,8545
+# REMOVED ---	q4::inwork; 8380,8545 8334,8655 8306,8722
 EOF
      },
      { from  => undef, # 
@@ -46194,7 +46205,7 @@ EOF
 #: also_indoor: traffic (ex-H,T,B)
 #: note: Halteverbotsschilder bis 28.02.2025
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2025-01-19
+#: last_checked: 2025-01-31
 #: next_check: 2025-02-28
 	q4::inwork 8842,8561 8916,8511
 EOF
@@ -46304,6 +46315,16 @@ EOF
 #: also_indoor: traffic (G,B,T,A)
 #: note: by rbb
 	q4::inwork 4692,10829 4704,10951 4709,11036
+EOF
+     },
+     { from  => 1738350510, # 2025-01-31 20:08
+       until => 1745445600, # 2025-04-24 00:00
+       text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Straße, voraussichtlich bis 23.04.2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: MARKGRAFEN-2025
+#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
+	q4::inwork 9751,11243 9763,11148
 EOF
      },
     );

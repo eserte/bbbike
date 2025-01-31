@@ -3605,7 +3605,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-01-25 (traffic) vvv
+#: last_checked: 2025-01-31 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -4632,11 +4632,11 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
 #: by[nocache]: https://archive.is/nyxPx
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
-#: last_checked: 2024-10-17 (mapillary)
+#: last_checked: 2025-01-19 (mapillary)
 #: next_check: 2025-10-01
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
 #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin
-#: last_checked: 2024-10-17 (mapillary)
+#: last_checked: 2025-01-19 (mapillary)
 #: next_check: 2025-01-31
 #: note: eigentlich 1s:q3
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
@@ -5673,7 +5673,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025) (bis 21.02.2025)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
-#: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
+#: source_id[inactive]: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
 #: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
 #: XXX mittlerweile (2024-11-20) laufen die letzten Asphaltierungsarbeiten, aber es ist nicht wahrscheinlich, dass übermorgen die Freigabe erfolgt (z.B. fehlen Markierungen)
 #: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
@@ -5964,12 +5964,12 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
        {
          'data' => '#: source_id: viz2021:13.429643,52.533151,30.11.2023,07:00 (bis 31.07.2024) (bis 30.08.2024) (bis 02.10.2024) (im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.42956,52.533,29.08.2024,14:51 (bis 02.10.2024) (inaktiv)
-#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024) (bis 02.12.2024 + weitere Arbeiten) (bis 20.12.2024) (bis 31.01.2025)
+#: source_id: viz2021:13.429512,52.532982,02.10.2024,09:00 (bis 29.11.2024) (bis 02.12.2024 + weitere Arbeiten) (bis 20.12.2024) (bis 31.01.2025) (inaktiv)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1841356186756817316
 #: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
-#: also_indoor: traffic (G,B,W)
+#: also_indoor: traffic (ex-G,B,ex-W,T,A)
 #: last_checked: 2024-12-16
 #: next_check: 2025-01-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 12228,14083 12077,14186
@@ -5977,7 +5977,7 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
          'dont_check_date' => 1,
          'from' => 1701237600,
          'id' => 3982,
-         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis voraussichtlich 31.01.2025 17:00',
+         'text' => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis voraussichtlich 31.01.2025 17:00, evtl. wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6452,7 +6452,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-01-21 vvv
+#: last_checked: 2025-01-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6539,7 +6539,48 @@ Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: BAEKEBRUECKE-2022
+#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/wasserstrassen-neubauamt-will-baekebruecke-2022-neu-errichten_a284203
+#: by: https://plus.tagesspiegel.de/berlin/neubau-der-bakebrucke-um-ein-jahr-verschoben-was-aus-zwolf-projekten-aus-dem-jahr-2021-wurde-351799.html (Neubau um ein Jahr verschoben)
+#: by: https://www.morgenpost.de/berlin/article234710931/60-Berliner-Bruecken-derzeit-nur-eingeschraenkt-nutzbar.html (hier wird auch die Techowbrücke erwähnt)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/marggraffbruecke-in-berlin-wird-eine-weitere-bruecke-abgerissen-li.207787
+#: by: https://www.berliner-zeitung.de/mensch-metropole/betonkrebs-und-risse-in-berlin-startet-das-naechste-grosse-brueckenbauprojekt-li.315212 (Erwähnung)
+#: by[removed]: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/08_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.html?nn=3289178 (Stand 1.3.2023)
+#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/09_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.html?nn=3289178 (umbenannt, weiterhin Stand 1.3.2023)
+#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/08_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.pdf?__blob=publicationFile&v=2 (Stand 1.3.2023, in Planung: Bäkebrücke, aber auch Knesebeckbrücke und Altglienicker Brücke)
+#: by: https://khp.berlin/referenzen/ingenieurbau/planungen/baekebruecke-in-berlin-lichterfelde/
+#: by: https://www.facebook.com/groups/274489925939434/posts/7611685488886471 (in einem Kommentar steht, dass Fußgänger rüberkommen)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/baekebruecke-wird-erneuert_a421024
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1526632.php (neue Sperrung des südlichen Teltowkanaluferwegs und der Bäkebrücke)
+#: by: https://www.berliner-zeitung.de/news/steglitz-zehlendorf-baekestrasse-in-lichterfelde-wegen-neuer-baustelle-bis-august-gesperrt-li.2292684
+# REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
+#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
+#: also_indoor: search Bäkebrücke
+#: note: traffic natürlich nur die Bäkebrücke betreffend
+#: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
+#: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
+# REMOVED --- #: last_checked: 2024-11-27 vvv --- #: check_frequency: 30d vvv --- 
+#: next_check: 2025-02-10 vvv
+# REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
+#: osm_watch: way id="5363433" version="25"
+#: osm_watch: note 4442541 4
+# REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
+Bäkebrücke: gesperrt	2::inwork 4587,3097 4659,3065
+# REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
+# REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
+Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4274,2717 4236,2678
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- 
+#: add_fragezeichen ^^^
+',
+         'from' => 1739142000,
+         'id' => 4109,
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025',
+         'type' => 'gesperrt',
+         'until' => 1756677599
+       },
        {
          'data' => '	2::temp 5848,14977 5867,14993
 ',
@@ -6609,16 +6650,7 @@ Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.24754,52.50541,12.08.2024,06:00 (bis 31.01.2025)
-	q4::inwork -45,10912 -220,10893 -466,10860
-',
-         'from' => 1723348800,
-         'id' => 4137,
-         'text' => 'Tannenbergallee: Baustelle in Höhe Hohensteinallee, evtl. sind auch Radfahrer von der Sperrung betroffen, vom 12.08.2024 06:00 bis 31.01.2025 18:00',
-         'type' => 'handicap',
-         'until' => 1738342800
-       },
+       undef,
        {
          'data' => '#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
 #: osm_watch: note 4383533 3
@@ -6843,7 +6875,37 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: WOLLANK-2024
+#: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
+#: by[nocache]: https://archive.is/pZmLF
+#: by: https://www.rbb24.de/panorama/beitrag/2024/07/baustellen-bahn-berlin-pankow-sperrungen.html
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20240925 (26.11.2024 - 26.12.2024, weitere Vollsperrungen z.B. im März 2025)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_einschraenkungen_strassenverkehr_20240924ne.pdf
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wollankstrasse_informationsveranstaltung_20241126.pdf
+#: by: https://weddingweiser.de/wollankstrasse-naechste-bauphase/
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1861029520645538026 (bis 20.12.2024)
+#: by: https://pbs.twimg.com/media/GdOzzK9XEAAuZLU?format=jpg&name=medium (Umleitungsstrecken für Rad- und Fußverkehr)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/PR_berlin_nord_komplexe_arbeiten_informationsveranstaltung_20241127n.pdf (nächste Totalsperrung geplant: 03.03. bis 21.03.2025)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin-nord-komplexe-arbeiten_wollankstrasse_20241128.pdf
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250131
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_wollankstrasse_wegefuehrung_20250131n.pdf
+#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
+#: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
+#: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
+#: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
+# REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
+#: osm_watch: way id="23984383" version="31"
+#: osm_watch: note 4536637 9
+# REMOVED --- #: last_checked: 2024-10-12 (mapillary) --- #: next_check: 2024-12-20
+	2::inwork 9544,17629 9586,17665
+',
+         'from' => 1740870000,
+         'id' => 4171,
+         'text' => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 03.03.2025 bis 28.03.2025',
+         'type' => 'gesperrt',
+         'until' => 1743202799
+       },
        undef,
        undef,
        undef,
@@ -6900,7 +6962,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-01-21 vvv
+#: last_checked: 2025-01-31 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-02-28 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7277,19 +7339,21 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
-#: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum)
+#: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum) (inaktiv)
+#: source_id: viz2021:13.32487,52.50002,31.01.2025,11:35 (bis 10.02.2025)
 #: also_indoor: traffic (ex-H,G,B,T,W,A)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-25 (traffic)
-#: check_frequency: 7d
+#: last_checked: 2025-01-31 (traffic)
+# REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 25d
+#: next_check: 2025-02-10
 	q3::inwork 5069,10662 5047,10381
 ',
          'from' => undef,
          'id' => 4234,
-         'text' => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), Ende der Sperrung unbekannt',
+         'text' => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), voraussichtlich bis 10.02.2025',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1739228399
        },
        {
          'data' => '#: source_id: 246002279 (bis 21.02.2025)
@@ -7305,10 +7369,11 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: also_indoor: traffic (G,T,B,A)
 #: note: Ende der Abschnitts unklar: entweder Bayernring oder General-Pape-Str.
-#: last_checked: 2025-01-08
+#: last_checked: 2025-01-31
 #: check_frequency: 120d
 #: next_check: 2025-07-31 (Halteverbotsschilder)
-	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
+	q4::inwork; 8482,8364 8380,8545
+# REMOVED ---	q4::inwork; 8380,8545 8334,8655 8306,8722
 ',
          'from' => 1736343075,
          'id' => 4236,
@@ -7320,7 +7385,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (ex-H,T,B)
 #: note: Halteverbotsschilder bis 28.02.2025
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2025-01-19
+#: last_checked: 2025-01-31
 #: next_check: 2025-02-28
 	q4::inwork 8842,8561 8916,8511
 ',
@@ -7438,6 +7503,17 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Bleibtreustr.: Baustelle zwischen Niebuhrstr. und Kantstr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 25.05.2026',
          'type' => 'handicap',
          'until' => 1779746400
+       },
+       {
+         'data' => '#: next_check_id: MARKGRAFEN-2025
+#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
+	q4::inwork 9751,11243 9763,11148
+',
+         'from' => 1738350510,
+         'id' => 4249,
+         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Straße, voraussichtlich bis 23.04.2025',
+         'type' => 'handicap',
+         'until' => 1745445600
        }
      
 );
