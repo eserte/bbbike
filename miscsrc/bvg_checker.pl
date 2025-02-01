@@ -139,8 +139,10 @@ if ($errors) {
 	if ($errors > 5) { # arbitrary number, or maybe work with percentages?
 	    if ($ignore_broken_marker) {
 		printerr "BVG site is known to be broken (BVG_SITE_IS_BROKEN is defined)", "red on_black";
+		printerr "\n";
 	    } else {
 		printerr "Check if the BVG site is broken, and if so, define the BVG_SITE_IS_BROKEN constant in this script.", "red on_black";
+		printerr "\n";
 	    }
 	}
 	exit 1;
