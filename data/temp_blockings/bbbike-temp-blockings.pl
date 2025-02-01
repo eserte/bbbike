@@ -37778,7 +37778,7 @@ EOF
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
 #: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
-#: last_checked: 2025-01-17
+#: last_checked: 2025-02-01
 #: check_frequency: 30d
 	q4::inwork 16720,12614 16859,12613
 EOF
@@ -38219,7 +38219,7 @@ EOF
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2024-12-21 (daf)
+#: last_checked: 2025-01-26 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2025-07-01
 	q3::inwork 6447,9661 6341,9546
@@ -39532,10 +39532,10 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 3
-#: also_indoor: traffic (B,T,ex-H,re-G,re-W,A)
+#: also_indoor: traffic (B,T,ex-H,ex-G,ex-W,A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
-#: last_checked: 2025-01-04
+#: last_checked: 2025-02-01 (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -42457,21 +42457,22 @@ EOF
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2025-01-31 18:00:00"), # 1714669803, # $isodate2epoch->("2024-09-30 18:00:00"), # undef, # XXX
 #      text  => 'Rüdigerstr. und Hagenstr.: Leitungsarbeiten, Einbahnstraßenregelung bzw. Sperrung',
-#       text  => 'Dietlindestr.: Sperrung an der Rüdigerstr., möglicherweise bis September 2024',
-       text  => 'Rüdigerstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende Januar 2025',
+#      text  => 'Dietlindestr.: Sperrung an der Rüdigerstr., möglicherweise bis September 2024',
+#      text  => 'Rüdigerstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende Januar 2025',
+       text  => 'Rüdigerstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
-#: also_indoor: traffic (G[zu kurz],B,T) vvv
-#: last_checked: 2025-01-17 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2025-01-31 (Halteverbotsschilder) vvv
+#: also_indoor: traffic (G[zu lang],B,T) vvv
+#: last_checked: 2025-02-01 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2025-01-31 (Halteverbotsschilder) vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
 Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056,12304
 # REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
 # REMOVED (alter Eintrag) --- Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -42517,7 +42518,7 @@ EOF
 EOF
      },
      { from  => 1701237600, # 2023-11-29 07:00
-       until => undef, # $isodate2epoch->("2024-11-29 17:00:00"), # 1722438000, # 2024-07-31 17:00
+       until => $isodate2epoch->("2025-01-31 17:00:00"), # undef, # $isodate2epoch->("2024-11-29 17:00:00"), # 1722438000, # 2024-07-31 17:00
        dont_check_date => 1,
 #      text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, Ende der Bauarbeiten unbekannt',
        text  => 'Hufelandstr.: Sperrung der Fahrbahn im Einmündungsbereich Greifswalder Str., gemeinsamer Rad- und Gehweg, vom 30.11.2023 07:00 bis voraussichtlich 31.01.2025 17:00, evtl. wird verlängert',
@@ -42529,10 +42530,8 @@ EOF
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dauerbaustelle-auf-der-greifswalder-strasse-soll-bald-verschwinden_a415043
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1841356186756817316
 #: by: https://pbs.twimg.com/media/GYzvVtxXwAAIJcG?format=jpg&name=medium (Gehweg für Radfahrer frei, aber Verschwenkungen bei einigen Relationen)
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei?
 #: also_indoor: traffic (ex-G,B,ex-W,T,A)
-#: last_checked: 2024-12-16
-#: next_check: 2025-01-31 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Fahrbahn wieder frei? --- #: last_checked: 2025-02-01 --- #: next_check: 2025-01-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 12228,14083 12077,14186
 EOF
      },
@@ -43021,7 +43020,7 @@ EOF
      { from  => 1708236000, # 2024-02-18 07:00
        until => undef, # 1737734400, # 2025-01-24 17:00
 #      text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, vom 19.02.2024 07:00 bis 24.01.2025 17:00',
-       text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Januar 2025, vielleicht auch länger',
+       text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis 2027',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KANZLERPARK-2024
@@ -43033,10 +43032,9 @@ EOF
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-01-15 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2025-01-24
-# REMOVED --- #: next_check: 2027-12-31
+#: last_checked: 2025-01-30 (mapillary)
+#: check_frequency: 120d
+#: next_check: 2027-12-31
 	2::inwork 7772,12694 7521,12581
 EOF
      },
@@ -43358,7 +43356,7 @@ EOF
      },
      { from  => 1711947600, # 2024-04-01 07:00
        until => $isodate2epoch->("2026-10-31 18:00:00"), # 1740585600, # 2025-02-26 17:00
-#       text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, vom 02.04.2024 07:00 bis 26.02.2025 17:00',
+#      text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, vom 02.04.2024 07:00 bis 26.02.2025 17:00',
        text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -43366,7 +43364,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 5
+#: osm_watch: note 4185183 6
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
@@ -44090,7 +44088,7 @@ EOF
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-01-26
+#: last_checked: 2025-02-01
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork 15077,11910 15110,12107
 EOF
@@ -44545,8 +44543,8 @@ EOF
 # REMOVED --- #: last_checked: 2024-11-27 vvv --- #: check_frequency: 30d vvv --- 
 #: next_check: 2025-02-10 vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
-#: osm_watch: way id="5363433" version="25"
-#: osm_watch: note 4442541 4
+#: osm_watch: way id="5363433" version="26"
+#: osm_watch[closed]: note 4442541 4
 # REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
 Bäkebrücke: gesperrt	2::inwork 4587,3097 4659,3065
 # REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
@@ -45011,9 +45009,9 @@ EOF
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-01-18
+#: last_checked: 2025-02-01
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2027-09-30
+#: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
 EOF
      },
@@ -45344,8 +45342,8 @@ EOF
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
-#: osm_watch: way id="23984383" version="31"
-#: osm_watch: note 4536637 9
+#: osm_watch: way id="23984383" version="33"
+#: osm_watch: note 4536637 10
 # REMOVED --- #: last_checked: 2024-10-12 (mapillary) --- #: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665
 EOF
@@ -46185,11 +46183,10 @@ EOF
      },
      { from  => 1736343075, # 2025-01-08 14:31
        until => 1753999200, # 2025-08-01 00:00
-       text  => 'Loewenhardtdamm: Bauarbeiten ab Badener Ring, Fahrbahn gesperrt, vermutlich bis 31.07.2025',
+       text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und Bayernring, Fahrbahn gesperrt, vermutlich bis 31.07.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G,T,B,A)
-#: note: Ende der Abschnitts unklar: entweder Bayernring oder General-Pape-Str.
 #: last_checked: 2025-01-31
 #: check_frequency: 120d
 #: next_check: 2025-07-31 (Halteverbotsschilder)

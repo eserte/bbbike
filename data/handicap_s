@@ -8,7 +8,6 @@ Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
-Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -53,6 +52,7 @@ Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2
 Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
 Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
+Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -787,6 +787,10 @@ Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 1267
 Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12643,7714 12622,7796 12625,7829 12602,7907 12583,7974
 Elli-Voigt-Str.: vier Bodenwellen	q1 15833,13596 15831,13760
 Elli-Voigt-Str.: zwei Bodenwellen	q1 15792,13764 15794,13975
+Landsberger Allee [Wohngebiet]: umfahrbare Bodenschwellen	q0 15711,14079 15701,14148 15666,14212 15596,14247 15357,14213
+Weißenseer Weg [Wohngebiet]: umfahrbare Bodenschwellen	q0 15357,14213 15359,14157 15410,14019
+Weißenseer Weg [Wohngebiet]: Bodenschwellen	q1 15433,13957 15493,13795 15593,13768
+(Weißenseer Weg/Landsberger Allee - Wohngebiet): Fußgänger	q3 15256,14237 15357,14213
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15920,14357 15902,14498
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15902,14498 15896,14548 15899,14598
 Verdener Gasse: enge Straße	q0 15878,14761 15946,14702
@@ -3247,7 +3251,7 @@ Unionstr.: breiter Fußweg, einige Fußgänger, Gitter an der Siemensstr.	q3 5708,1
 Rhenser Weg: Fußweg	q3 19083,9062 19133,9087
 Altenescher Weg: enge Straße	q1 14051,14822 13856,14944 13758,15009 13744,15018
 (Rudower Str. - Girlitzweg): gemeinsamer Fuß- und Radweg, Bordstein	q2 15176,3136 15273,3269
-Bernhard-Bästlein-Str.: enge Straße	q0 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
+Bernhard-Bästlein-Str.: enge Straße	q0 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764
 Kulmseestr.: einige Fußgänger	q1 20001,12368 20062,12353 20156,12311
 Kulmseestr.: einige Fußgänger	q1 20252,12262 20303,12230
 Eisweg: enge Straße	q1 23569,10956 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693

@@ -885,6 +885,9 @@ Grüne Aue	1s 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 (Stolzingstr./Hainbuchenstr. - Maximilianstr.)	1 1339,25251 1338,25262
 (Wochenendsiedlung Kaniswall): abgesperrt	2 32902,196 32918,231 33019,292
 Bernhard-Bästlein-Str. [Wohngebiet]	1 15700,13597 15698,13765
+Weißenseer Weg [Wohngebiet]	1 15593,13768 15493,13795 15433,13957
+Weißenseer Weg [Wohngebiet]	1 15410,14019 15359,14157 15357,14213
+Landsberger Allee [Wohngebiet]	1 15357,14213 15596,14247 15666,14212 15701,14148 15711,14079
 Herzbergstr. [Wohngebiet]	1 15896,13594 15833,13596 15700,13597
 Am Gartenstadtweg	1 21592,547 21613,667
 Bordstein, Grünstreifen	3nocross::ignrte 18374,2971 18347,3129 18395,3176
@@ -3510,6 +3513,8 @@ weites Drängelgitter	BNP:2:-144:trailer=7 16026,9821
 weites Drängelgitter	BNP:2:45:trailer=7 16261,9663
 Drängelgitter/Barriere	BNP:3:51:trailer=10 17130,18771
 Drängelgitter	BNP:3:-217:trailer=10 13014,21775
+Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3:-153:trailer=10 12470,18816
+Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3:-155:trailer=10 12375,18622
 Eisenhutweg [Wohngebiet]: wegen Hochbauarbeiten noch gesperrt	2::inwork 17741,2824 17688,2744 17471,2872 17569,2987
 An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
 Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12704,1102 12716,1088 12727,1074 12772,1019 12809,969
@@ -3582,7 +3587,6 @@ Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699
-Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s 26300,-11727 26301,-11824 26300,-11864
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413

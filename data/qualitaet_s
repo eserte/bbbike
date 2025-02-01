@@ -3427,8 +3427,10 @@ Lessinghöhe: Verbundsteinpflaster	Q1 12625,7829 12602,7907 12583,7974
 Elli-Voigt-Str.: Asphalt	Q0 15896,13760 15831,13760 15792,13764 15698,13765
 Elli-Voigt-Str.: Asphalt	Q0 15833,13596 15831,13760
 Elli-Voigt-Str.: Asphalt	Q0 15792,13764 15794,13975 15760,14036 15758,14088
-Bernhard-Bästlein-Str.: Asphalt	Q0 15595,14041 15600,14077 15704,14077 15758,14088
+Bernhard-Bästlein-Str.: Asphalt	Q0 15595,14041 15600,14077 15711,14079 15758,14088
 Vulkanstr. [Wohngebiet]: Asphalt	Q0 15871,14106 15758,14088
+Weißenseer Weg [Wohngebiet]: Asphalt, einige Schäden	Q1 15357,14213 15359,14157 15410,14019
+Weißenseer Weg [Wohngebiet]: Asphalt	Q0 15410,14019 15433,13957 15493,13795 15593,13768
 Landsberger Allee - Große-Leege-Str.: Verbundsteinpflaster	Q1 15920,14357 15902,14498
 Landsberger Allee - Große-Leege-Str.: Asphalt	Q0 15902,14498 15896,14548 15899,14598
 Verdener Gasse: Asphalt	Q0 15878,14761 15946,14702
@@ -6742,9 +6744,11 @@ Blumberger Damm: Beton	Q0 21908,16634 21885,16494 21862,16381
 Blumberger Damm: Beton mit Schäden	Q1 21862,16381 21842,16242
 Blumberger Damm: Beton mit Schäden	Q1 21842,16242 21835,16210 21812,16189 21788,16002 21816,15954
 Blumberger Damm [Wohngebiet]: Beton	Q0 21824,16506 21574,16547
+Landsberger Allee [Wohngebiet]: Asphalt, einige Schäden	Q1 15711,14079 15701,14148 15666,14212 15596,14247 15357,14213
 Landsberger Allee [Wohngebiet]: Beton mit Schäden	Q1 22092,16029 22112,16137
 Landsberger Allee [Nebenfahrbahn]: Beton mit Schäden	Q1 21816,15954 21891,15938 22092,16029
 Landsberger Allee [zur Nebenfahrbahn]: Asphalt	Q0 22109,15990 22092,16029
+(Weißenseer Weg/Landsberger Allee - Wohngebiet): Verbundsteinpflaster	Q1 15256,14237 15357,14213
 Grohsteig: welliger Asphalt	Q1 21426,15979 21416,16027 21400,16117 21400,16207 21407,16257
 Oppermannstr.: Beton	Q0 21617,16061 21598,16055 21426,15979 21232,15894 21191,15914
 Oppermannstr.: Asphalt	Q0 21191,15914 21108,15955
@@ -7603,7 +7607,8 @@ Riedemannweg: Beton	Q0 4248,15647 4389,15336
 Thaters Privatweg: schlechtes Kopfsteinpflaster	Q3 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
 Goerdelerdamm: Verbundsteinpflaster	Q1 4653,14528 4897,14609 5043,14671
 Goerdelerdamm: Asphalt	Q0 4653,14528 3705,14290 3595,14267
-Goerdelerdamm: Gehwegplatten	Q0 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
+Goerdelerdamm: Asphalt	Q0 3595,14267 3229,14224
+Goerdelerdamm: Gehwegplatten	Q0 3229,14224 3191,14215 3133,14186 3106,14195
 (Bernhard-Lichtenberg-Str. - Goerdelerdamm): Asphalt	Q0 3229,14224 3184,14265
 Reichweindamm: Asphalt über Beton, einige Schäden	Q1 3184,14265 3269,14316 3434,14323 3459,14337 3472,14366 3464,14407 3455,14460 3443,14535 3431,14586 3418,14661 3408,14741
 Heckerdamm: Beton mit einigen leichten Hebungen, einige kurze Asphaltabschnitte	Q0 3408,14741 3765,14746 3956,14750 4046,14754 4148,14791 4291,14947
@@ -10991,6 +10996,8 @@ Ruppiner Chaussee: Asphalt, einige Schäden	Q1;Q0 488,22275 455,22285 355,22344 2
 Mausohrweg: Asphalt	Q0 33327,2979 33296,2894
 Mausohrweg: Asphalt	Q0 33167,2940 33296,2894 33406,2852 33503,2818
 Abendseglersteig: Asphalt	Q0 33406,2852 33383,2792 33267,2810 33139,2835 33167,2940
+Beate-Hahn-Str.: Asphalt	Q0 12257,18649 12381,18897
+Marianne-Foerster-Str.: Verbundsteinpflaster	Q1 12363,18596 12375,18622 12470,18816 12481,18838
 Rubinweg: Betonsteinpflaster	Q0 11495,20364 11543,20272
 Rubinweg: unbefestigt	Q2 11543,20272 11553,20253
 (Schulzestr. - S-Bhf. Wollankstr.): Verbundsteinpflaster	Q1 9494,17824 9461,17795
@@ -11064,7 +11071,8 @@ Planstraße E: Verbundsteinpflaster	Q1 8654,21327 8578,21378
 (Friedensweg): unbefestigter Weg, mit Schotter	Q2 11039,21632 10761,21535
 (Friedensweg): unbefestigter Weg, holprig	Q2 10761,21535 10126,21314
 Bernhard-Bästlein-Str. [Wohngebiet]: Asphalt	Q0 15700,13597 15698,13765
-Herzbergstr. [Wohngebiet]: Asphalt	Q0 15896,13594 15833,13596 15700,13597
+Herzbergstr. [Wohngebiet]: Asphalt	Q0 15896,13594 15833,13596
+Herzbergstr. [Wohngebiet]: Asphalt mit Schäden	Q1 15833,13596 15700,13597
 Herzfelder Steig: Waldweg	Q2 31275,4224 31321,4226 31331,4248 31342,4254
 Eichenallee: Asphalt	Q0 676,12298 991,12214
 Eichenallee: Asphalt mit einigen Schäden	Q1 991,12214 1154,12167 1302,12125
@@ -16220,7 +16228,7 @@ Am Fort: schlechtes Kopfsteinpflaster	Q3 -8056,12916 -7961,12894 -7939,12877
 Am Fort: unbefestigte Straße	Q2 -7939,12877 -7948,12634 -7959,12439 -7967,12333 -7976,12217
 Thuner Str.: guter Beton	Q0 3293,2218 3290,2137 3286,2006 3286,1912
 Bernhard-Bästlein-Str.: Beton	Q1 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764 15698,13765
-Bernhard-Bästlein-Str.: mäßiger Beton	Q1 15661,13764 15653,13542
+Bernhard-Bästlein-Str.: Beton	Q1 15661,13764 15653,13542
 Röbellweg: Asphalt	Q0 16043,25898 16390,26315
 Röbellweg: Mix aus schlechten Kopfsteinpflaster und Asphalt, Radfahrer werden auf dem Gehweg geduldet	Q3 16390,26315 16463,26389 16481,26413 16589,26536
 Röbellweg: schlechtes Kopfsteinpflaster, Radfahrer werden auf dem Gehweg geduldet	Q3 16589,26536 16696,26651 16796,26762 16895,26866 16985,26966 17067,27058 17099,27097

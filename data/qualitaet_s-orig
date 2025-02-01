@@ -621,7 +621,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.berliner-woche.de/mitte/c-bauen/drei-bauvorhaben-beginnen-jetzt_a335114
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/brunnenviertel-ev-will-baumfaellungen-stoppen_a336818
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (bis Oktober 2023)
-#: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2025) (4. Quartal 2023 - 3. Quartal 2025) (4. Quartal 2024 - 3. Quartal 2025) (2. Quartal 2025 - 1. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2025) (4. Quartal 2023 - 3. Quartal 2025) (4. Quartal 2024 - 3. Quartal 2025) (2. Quartal 2025 - 1. Quartal 2026) (3. Quartal 2025 - 1. Quartal 2027)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11695 (Antrag zur Swinemünder Brücke)
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749723#post749723 (Umbau hat begonnen)
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
@@ -629,7 +629,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
 #: last_checked: 2025-01-15
 #: check_frequency: 120d
-#: next_check: 2026-03-31
+#: next_check: 2027-03-31 (infravelo)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
 Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
@@ -1761,9 +1761,9 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblöcken, u.a. Bötzow-Kiez)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/kiezblocks-in-pruefung-winsviertel-boetzowkiez-und-gruene-stadt_a423747
 #: osm_watch: way id="4615063" version="37"
-#: last_checked: 2024-10-11 (mapillary)
+#: last_checked: 2025-02-01
 #: check_frequency: 180d
-#: next_check: 2027-09-30
+#: next_check: 2027-09-30 (infravelo)
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
 Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178
 Limonenstr.: Kleinsteinpflaster	Q1- 3357,5178 3328,5218
@@ -4606,8 +4606,10 @@ Lessinghöhe: Verbundsteinpflaster	Q1- 12625,7829 12602,7907 12583,7974
 Elli-Voigt-Str.: Asphalt	Q0 15896,13760 15831,13760 15792,13764 15698,13765
 Elli-Voigt-Str.: Asphalt	Q0 15833,13596 15831,13760
 Elli-Voigt-Str.: Asphalt	Q0 15792,13764 15794,13975 15760,14036 15758,14088
-Bernhard-Bästlein-Str.: Asphalt	Q0 15595,14041 15600,14077 15704,14077 15758,14088
+Bernhard-Bästlein-Str.: Asphalt	Q0 15595,14041 15600,14077 15711,14079 15758,14088
 Vulkanstr. [Wohngebiet]: Asphalt	Q0 15871,14106 15758,14088
+Weißenseer Weg [Wohngebiet]: Asphalt, einige Schäden	Q1+ 15357,14213 15359,14157 15410,14019
+Weißenseer Weg [Wohngebiet]: Asphalt	Q0- 15410,14019 15433,13957 15493,13795 15593,13768
 Landsberger Allee - Große-Leege-Str.: Verbundsteinpflaster	Q1+ 15920,14357 15902,14498
 Landsberger Allee - Große-Leege-Str.: Asphalt	Q0 15902,14498 15896,14548 15899,14598
 Verdener Gasse: Asphalt	Q0- 15878,14761 15946,14702
@@ -8289,9 +8291,11 @@ Blumberger Damm: Beton	Q0 21908,16634 21885,16494 21862,16381
 Blumberger Damm: Beton mit Schäden	Q1 21862,16381 21842,16242
 Blumberger Damm: Beton mit Schäden	Q1 21842,16242 21835,16210 21812,16189 21788,16002 21816,15954
 Blumberger Damm [Wohngebiet]: Beton	Q0 21824,16506 21574,16547
+Landsberger Allee [Wohngebiet]: Asphalt, einige Schäden	Q1+ 15711,14079 15701,14148 15666,14212 15596,14247 15357,14213
 Landsberger Allee [Wohngebiet]: Beton mit Schäden	Q1 22092,16029 22112,16137
 Landsberger Allee [Nebenfahrbahn]: Beton mit Schäden	Q1 21816,15954 21891,15938 22092,16029
 Landsberger Allee [zur Nebenfahrbahn]: Asphalt	Q0 22109,15990 22092,16029
+(Weißenseer Weg/Landsberger Allee - Wohngebiet): Verbundsteinpflaster	Q1+ 15256,14237 15357,14213
 Grohsteig: welliger Asphalt	Q1+ 21426,15979 21416,16027 21400,16117 21400,16207 21407,16257
 Oppermannstr.: Beton	Q0 21617,16061 21598,16055 21426,15979 21232,15894 21191,15914
 Oppermannstr.: Asphalt	Q0 21191,15914 21108,15955
@@ -9214,7 +9218,9 @@ Riedemannweg: Beton	Q0 4248,15647 4389,15336
 Thaters Privatweg: schlechtes Kopfsteinpflaster	Q3 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
 Goerdelerdamm: Verbundsteinpflaster	Q1 4653,14528 4897,14609 5043,14671
 Goerdelerdamm: Asphalt	Q0 4653,14528 3705,14290 3595,14267
-Goerdelerdamm: Gehwegplatten	Q0- 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
+#: historical_note: früher (bis etwa Ende 2024) Gehwegplatten, Q0-
+Goerdelerdamm: Asphalt	Q0 3595,14267 3229,14224
+Goerdelerdamm: Gehwegplatten	Q0- 3229,14224 3191,14215 3133,14186 3106,14195
 (Bernhard-Lichtenberg-Str. - Goerdelerdamm): Asphalt	Q0 3229,14224 3184,14265
 Reichweindamm: Asphalt über Beton, einige Schäden	Q1+ 3184,14265 3269,14316 3434,14323 3459,14337 3472,14366 3464,14407 3455,14460 3443,14535 3431,14586 3418,14661 3408,14741
 Heckerdamm: Beton mit einigen leichten Hebungen, einige kurze Asphaltabschnitte	Q0- 3408,14741 3765,14746 3956,14750 4046,14754 4148,14791 4291,14947
@@ -13026,6 +13032,8 @@ Abendseglersteig: Asphalt	Q0 33406,2852 33383,2792 33267,2810 33139,2835 33167,2
 #: historical_note ^^^
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: by: mapillary vvv
+Beate-Hahn-Str.: Asphalt	Q0 12257,18649 12381,18897
+Marianne-Foerster-Str.: Verbundsteinpflaster	Q1+ 12363,18596 12375,18622 12470,18816 12481,18838
 Rubinweg: Betonsteinpflaster	Q0- 11495,20364 11543,20272
 Rubinweg: unbefestigt	Q2 11543,20272 11553,20253
 (Schulzestr. - S-Bhf. Wollankstr.): Verbundsteinpflaster	Q1 9494,17824 9461,17795
@@ -13106,7 +13114,8 @@ Planstraße E: Verbundsteinpflaster	Q1+ 8654,21327 8578,21378
 (Friedensweg): unbefestigter Weg, mit Schotter	Q2- 11039,21632 10761,21535
 (Friedensweg): unbefestigter Weg, holprig	Q2- 10761,21535 10126,21314
 Bernhard-Bästlein-Str. [Wohngebiet]: Asphalt	Q0 15700,13597 15698,13765
-Herzbergstr. [Wohngebiet]: Asphalt	Q0 15896,13594 15833,13596 15700,13597
+Herzbergstr. [Wohngebiet]: Asphalt	Q0 15896,13594 15833,13596
+Herzbergstr. [Wohngebiet]: Asphalt mit Schäden	Q1+ 15833,13596 15700,13597
 Herzfelder Steig: Waldweg	Q2 31275,4224 31321,4226 31331,4248 31342,4254
 Eichenallee: Asphalt	Q0 676,12298 991,12214
 Eichenallee: Asphalt mit einigen Schäden	Q1+ 991,12214 1154,12167 1302,12125
@@ -13233,7 +13242,7 @@ Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7739,14119 7784,14147 7875,14204
 #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant)
 # REMOVED (deleted) --- #: osm_watch: way id="1010731431" version="8"
 # REMOVED (Fläche verkleinert und nun woanders) --- #: osm_watch: way id="642581102" version="11"
-#: osm_watch: way id="237716413" version="15"
+#: osm_watch: way id="237716413" version="16"
 #: XXX bleibt hier der Asphalt oder kommt hier auch Kleinsteinpflaster hin?
 #: last_checked: 2025-01-15
 #: check_frequency: 60d
@@ -26590,7 +26599,8 @@ Thuner Str.: guter Beton	Q0 3293,2218 3290,2137 3286,2006 3286,1912
 #: confirmed_by: srt (zumindest an der Herzbergstr. Beton, eher nur mäßige Qualität)
 #: note: Eintrag von Sybille Koppermann: guter Asphalt, enge Straße q1, Einbahnstraße offen Richtung Vulkanstr.
 Bernhard-Bästlein-Str.: Beton	Q1 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764 15698,13765
-Bernhard-Bästlein-Str.: mäßiger Beton	Q1- 15661,13764 15653,13542
+#: corrected_by: srt (mäßiger Beton, Q1- -> ...)
+Bernhard-Bästlein-Str.: Beton	Q1 15661,13764 15653,13542
 # 
 #: by: Daniel Fröhlich: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)

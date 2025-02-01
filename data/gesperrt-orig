@@ -1480,6 +1480,9 @@ Grüne Aue	1s:q3 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 (Stolzingstr./Hainbuchenstr. - Maximilianstr.)	1 1339,25251 1338,25262
 (Wochenendsiedlung Kaniswall): abgesperrt	2 32902,196 32918,231 33019,292
 Bernhard-Bästlein-Str. [Wohngebiet]	1 15700,13597 15698,13765
+Weißenseer Weg [Wohngebiet]	1 15593,13768 15493,13795 15433,13957
+Weißenseer Weg [Wohngebiet]	1 15410,14019 15359,14157 15357,14213
+Landsberger Allee [Wohngebiet]	1 15357,14213 15596,14247 15666,14212 15701,14148 15711,14079
 Herzbergstr. [Wohngebiet]	1 15896,13594 15833,13596 15700,13597
 Am Gartenstadtweg	1 21592,547 21613,667
 Hermann-Dorner-Allee: Bordstein, Grünstreifen	3nocross 18374,2971 18347,3129 18395,3176
@@ -1586,9 +1589,10 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: by: https://www.berliner-woche.de/wedding/c-bauen/bau-des-neuen-herzzentrums-der-charit-hat-begonnen_a414476 (bis 2028)
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2024/pressemitteilung.1473927.php (Bebauungsplan)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/herzzentrum-wedding.533/#post-23580
+#: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2025-01-09 (architektur-urbanistik) vvv
+#: last_checked: 2025-02-01 (webcam) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2028-12-31 vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
@@ -3908,6 +3912,10 @@ weites Drängelgitter	BNP:2::trailer=7 16261,9663
 Drängelgitter/Barriere	BNP:3::trailer=10 17130,18771
 #: by: mapillary
 Drängelgitter	BNP:3::trailer=10 13014,21775
+#: by: mapillary vvv
+Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3::trailer=10 12470,18816
+Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3::trailer=10 12375,18622
+#: by ^^^
 #
 #: section ^^^
 ############################################################################
@@ -5048,7 +5056,7 @@ Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2024-12-26
+#: last_checked: 2025-01-30 (mapillary)
 #: check_frequency: 90d
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
 # REMOVED (offen) --- #: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken --- #: last_checked: 2024-06-30 (daf) vvv --- #: check_frequency: 45d vvv --- George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136 --- (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -5460,7 +5468,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2025-01-15 vvv
+#: last_checked: 2025-01-30 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -5665,7 +5673,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2024-11-30 vvv
+#: last_checked: 2025-02-01 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
@@ -5683,9 +5691,10 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: osm_watch: way id="1223345278" version="5"
 #: XXX Außerdem: der S-Bahnhof wird zukünftig wohl südlich des Bahnunterführung sein
 #: XXX Unterführung wird voraussichtlich im Sommer 2025 fertig sein
-#: last_checked: 2025-01-13 (okas)
+#: XXX Eröffnung des Fußgängertunnels am 4.2.2025
+#: last_checked: 2025-02-01 (bahninfo-forum)
 #: check_frequency: 180d
-#: next_check: 2025-08-15
+#: next_check: 2025-02-04 (bahninfo-forum)
 Bhf. Blankenfelde: Bahnübergang existiert nicht mehr, neue Unterführung wird gebaut	2::inwork 11667,-7536 11601,-7560 11551,-7599
 # 
 # REMOVED (aus landstrassen-orig entfernt) --- #: next_check_id: MAHLOWUNTERFUEHRUNG-2023 --- #: next_check: 2023-12-31 --- Trebbiner Straße (Mahlow): Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11065,-5338 11077,-5335 11119,-5326

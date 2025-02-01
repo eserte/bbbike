@@ -11,8 +11,8 @@
 ### Friedrichshain ###
 # 
 #: also_indoor: traffic (B,T)
-#: note: Halteverbotsschilder bis 30.06.2025, vermutlich Hochbauarbeiten
-#: last_checked: 2025-01-29
+#: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
+#: last_checked: 2025-01-31
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -21,7 +21,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu fr¸h bei der VIZ gemeldet? -> aktuell l‰uft wohl die Umsetzung (auch wenn man vor Ort auﬂer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-01-31
+#: last_checked: 2025-02-01
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
@@ -38,14 +38,7 @@ Kochhannstr.: ‹berquerung der Baustelle Petersburger Str. ¸ber schmale Fuﬂg‰nger
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: KNIPRODE-2024
-#: add_fragezeichen: Sind hier noch immer Bauarbeiten?
-#: also_indoor: traffic (B,T)
-#: last_checked: 2025-01-18
-#: check_frequency: 30d
-#: next_check: 2025-09-30 (BA Pankow)
-Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
-# 
+# REMOVED (offen) --- #: next_check_id: KNIPRODE-2024 --- #: add_fragezeichen: Sind hier noch immer Bauarbeiten? --- #: also_indoor: traffic (B,T) --- #: last_checked: 2025-02-01 --- #: check_frequency: 30d --- #: next_check: 2025-09-30 (BA Pankow) --- Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
 # REMOVED --- #: osm_watch: note 4340404 1 --- #: last_checked: 2024-08-27 --- Straﬂenbahnwendeschleife Virchowstr.: Bauarbeiten, Sperrungen mˆglich	q4::inwork 12925,13373 13081,13457 13151,13367
 # REMOVED --- #: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024) (inaktiv) --- #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-04 (mapillary) vvv --- #: next_check: 2024-02-09 vvv --- #: valid: -20240209 vvv --- Friedenstr.: kurzes St¸ck der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860 --- Friedenstr.: kurzes St¸ck der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX Sieht nach Leitungsarbeiten aus. --- #: add_fragezeichen: Besteht die Sperrung noch immer? --- #: also_indoor: traffic (B) --- #: last_checked: 2024-04-23 --- #: check_frequency: 14d --- Gubener Str.: Sperrung im Kreuzungsbereich Gr¸nberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
@@ -125,7 +118,7 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+::inwork 12558,11920
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-26
+#: last_checked: 2025-02-01
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einm¸ndung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nˆrdlich und s¸dlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraﬂenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -364,6 +357,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12522 (Anfrage)
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/1dzjkywbb8otc9uvnkoamh (Abriss voraussichtlich in der zweiten Jahresh‰lfte 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirk-lasst-verfallenes-haus-abreissen-strasse-in-berlin-wedding-soll-nach-siebenjahriger-sperrung-wieder-offnen-13073440.html (Aufhebung der Straﬂensperrung zum Jahresende (2025))
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/burgsdorfstra%C3%9Fe-1-ruine.390/#post-24473
 #: osm_watch: way id="549316654" version="35"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
@@ -690,7 +684,7 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: note: Halteverbotsschilder bis 23.12.2024; mittlerweile bis 31.01.2025
 #: also_indoor: traffic (re-H,B,T,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-31 (traffic)
+#: last_checked: 2025-02-01 (traffic)
 #: check_frequency: 14d
 #: next_check: 2025-01-31 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20241223
@@ -1084,7 +1078,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-01-22
+#: last_checked: 2025-02-01 (traffic)
 #: check_frequency: 14d
 Krˆver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
@@ -1176,7 +1170,17 @@ Merler Weg: tempor‰re Einbahnstraﬂenregelung	q3::inwork; 19180,13219 18852,13269
 # REMOVED --- # REMOVED --- #: valid: -20240614
 # REMOVED --- Eisenacher Str.: Bauarbeiten Hˆhe Hohenstaufenstr., Engstellen	q2::inwork 6747,9912 6753,9814 6743,9678
 # 
-# REMOVED (laut osm note+osm wurde die Sperrung aufgehoben) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/microappartments-rembrandtstra%C3%9Fe-20%E2%80%9321-neubau-rubensstra%C3%9Fe.1261/#post-19867 --- #: osm_watch: way id="1146544138" version="6" --- #: osm_watch: way id="1145470730" version="4" --- #: note: L‰nge der Engstelle etwa 40m --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-01-13 --- #: check_frequency: 120d --- #: next_check: 2023-12-31 --- Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/microappartments-rembrandtstra%C3%9Fe-20%E2%80%9321-neubau-rubensstra%C3%9Fe.1261/#post-19867
+# REMOVED --- #: osm_watch: way id="1146544138" version="6"
+#: osm_watch: way id="1145470730" version="5"
+#: osm_watch: note 4610083 1
+#: note: L‰nge der Engstelle etwa 40m
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2025-01-26 (architektur-urbanistik)
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2023-12-31
+Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
+# 
 # REMOVED (offen) --- #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/ --- #: XXX laut Schild bis Dezember 2021 (dauer aber l‰nger) --- #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv) --- #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?), inaktiv) --- #: source_id: viz2021:13.35399,52.49475,20.01.2023,12:26 (bis 14.04.2023) (inaktiv) --- #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023) (bis 28.06.2023) (inaktiv) --- #: osm_watch: way id="1096203482" version="8" --- #: also_indoor: traffic (ex-H,B,ex-G,W) --- #: last_checked: 2023-08-05 --- #: check_frequency: 30d --- #: next_check: 2023-06-28 --- Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024) (mittlerweile Herbst 2024) (mittlerweile ‹bergabe Ende 2024/Anfang 2025)
@@ -1294,7 +1298,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 #: also_indoor: traffic (T,ex-G,B,ex-H)
 #: also_indoor: url https://pascalgrothe.de/kiezblog/
 #: note: Halteverbotsschilder bis 31.01.2025
-#: last_checked: 2025-01-31 (traffic)
+#: last_checked: 2025-02-01 (traffic)
 #: check_frequency: 7d (traffic checks)
 #: next_check: 2025-01-31 (Halteverbotsschilder)
 Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
@@ -1331,10 +1335,10 @@ Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11
 # 
 ### Lankwitz ###
 # 
-#: also_indoor: traffic (B,G,ex-H,T)
+#: also_indoor: traffic (B,G,re-H,T)
 #: note: Halteverbotsschilder bis 23.10.2024
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-01-25 (traffic) vvv
+#: last_checked: 2025-02-01 (traffic) vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: next_check: 2024-10-23 vvv
 # REMOVED --- #: valid: -20241023 vvv
@@ -2508,6 +2512,11 @@ Lessinghˆhe: Fuﬂg‰nger, f¸r Radfahrer verboten, ggfs. schieben	q2 12647,7672 126
 #: by ^^^
 Elli-Voigt-Str.: vier Bodenwellen	q1- 15833,13596 15831,13760
 Elli-Voigt-Str.: zwei Bodenwellen	q1- 15792,13764 15794,13975
+Landsberger Allee [Wohngebiet]: umfahrbare Bodenschwellen	q0- 15711,14079 15701,14148 15666,14212 15596,14247 15357,14213
+Weiﬂenseer Weg [Wohngebiet]: umfahrbare Bodenschwellen	q0- 15357,14213 15359,14157 15410,14019
+#: note: fast ¸ber die gesamte Breite der Fahrbahn
+Weiﬂenseer Weg [Wohngebiet]: Bodenschwellen	q1 15433,13957 15493,13795 15593,13768
+(Weiﬂenseer Weg/Landsberger Allee - Wohngebiet): Fuﬂg‰nger	q3 15256,14237 15357,14213
 Landsberger Allee - Groﬂe-Leege-Str.: Gehweg, Radfahrer frei	q1 15920,14357 15902,14498
 Landsberger Allee - Groﬂe-Leege-Str.: Gehweg, Radfahrer frei	q1 15902,14498 15896,14548 15899,14598
 Verdener Gasse: enge Straﬂe	q0- 15878,14761 15946,14702
@@ -6693,7 +6702,8 @@ Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13758,15009 13744,15018
 #: by: Sybille Koppermann
 #: note: Olaf (zioerjen) meint nur q2, ohne weitere Angaben
 #: corrected_by: srt/policy (q1 -> q0-)
-Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
+Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764
+# REMOVED (hier nicht) --- Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15661,13764 15653,13542
 #: by: anonymous vvv
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311
 Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230
