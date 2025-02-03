@@ -218,7 +218,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-01-27
+#: last_checked: 2025-02-03
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-03-07 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -433,7 +433,7 @@ Niederlagstr.	1s:q4 9943,12364 9934,12420
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 #: next_check_id: KARLMARXPLATZ-2024
 #: XXX während der Bauarbeiten ist die Einbahnstraße aufgehoben
-#: next_check: 2025-02-28
+#: next_check: 2025-03-04 (Halteverbotsschilder)
 Karl-Marx-Platz	1no 13100,7626 12987,7560
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
@@ -3980,12 +3980,13 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1
 #: last_checked ^^^
 # 
 #: next_check_id: MUEHLENDAMMBRUECKE-2024
+#: by: https://www.deutsches-architekturforum.de/thread/14486-neubau-m%C3%BChlendammbr%C3%BCcke-in-bau/?postID=773634#post773634
 #: osm_watch: note 4545425 2
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
-#: last_checked: 2025-01-21
+#: last_checked: 2025-02-03 (daf)
 #: check_frequency: 120d
-#: next_check: 2029-12-31
+#: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
 # 
 #: next_check_id: WOLLANK-2024
@@ -4448,7 +4449,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-01-21
+#: last_checked: 2025-02-03 (daf)
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -5009,7 +5010,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2025-02-02
+#: last_checked: 2025-02-03
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -5022,7 +5023,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://entwicklungsstadt.de/bauvorhaben-so-ist-der-stand-bei-berlins-stillstand-projekten/
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2025-01-27 vvv
+#: last_checked: 2025-02-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5710,7 +5711,7 @@ Bhf. Blankenfelde: Bahnübergang existiert nicht mehr, neue Unterführung wird geb
 # REMOVED --- #: osm_watch: way id="765539341" version="17" brb
 #: last_checked: 2025-01-24 (osm)
 #: check_frequency: 120d
-#: osm_watch: way id="1285592463" version="5" brb
+#: osm_watch: way id="1285592463" version="7" brb
 # REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12708,-1445
 #: XXX Evtl. heißt dieser Abschnitt "Alter Markt" (siehe osm)?
 #: osm_watch: way id="90781221" version="16" brb

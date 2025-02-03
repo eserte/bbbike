@@ -4451,9 +4451,9 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-19
+#: last_checked: 2025-02-03
 #: check_frequency: 30d
-#: next_check: 2025-03-31
+#: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 ',
@@ -5060,7 +5060,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-01-29 vvv
+#: last_checked: 2025-02-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-07 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -5681,7 +5681,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2025-01-25 vvv
+#: last_checked: 2025-02-03 (bahninfo-forum) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-02-21 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -5689,8 +5689,8 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
 Wilhelminenhofstr. (Ost)	q4::inwork 18191,6363 17991,6431
 #: osm_watch: way id="176072020" version="42"
-#: note: der östliche Gehweg ist komplett gesperrt, zur Überquerung existiert eine Fußgängerampel (Stand September 2024)
-Edisonstr. (Süd)	q4::inwork; 17948,6248 17991,6431
+#: note: der östliche Gehweg ist komplett gesperrt, zur Überquerung existiert eine Fußgängerampel (Stand September 2024) --- mittlerweile (Februar 2025) wohl nicht mehr gesperrt, aber an der Kreuzung geht es weiterhin nicht weiter: q4 -> q3
+Edisonstr. (Süd)	q3::inwork; 17948,6248 17991,6431
 #: note: der westliche Gehweg ist im südlichen Abschnitt weitgehend frei, deshalb q4+ statt q4 (Stand September 2024)
 Edisonstr. (Süd)	q4+::inwork; 17991,6431 17948,6248
 Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,6431 17962,6674
@@ -5792,12 +5792,12 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        {
          'data' => '#: next_check_id: GEORGWILHELM-2024
 #: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv) (bis 29.01.2024) (bis 13.03.2024) (bis 25.03.2024) (bis 04.05.2024) (inaktiv)
-#: source_id: viz2021:13.290227,52.497049,06.11.2024,10:00 (bis 28.02.2025)
+#: source_id: viz2021:13.290227,52.497049,06.11.2024,10:00 (bis 28.02.2025) (bis 30.04.2025)
 	q4::inwork 2702,10006 2687,10053
 ',
          'from' => 1696309200,
          'id' => 3930,
-         'text' => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, bis 28.02.2025',
+         'text' => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.04.2025',
          'type' => 'handicap',
          'until' => 1740758400
        },
@@ -6794,11 +6794,17 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        undef,
        undef,
        {
-         'data' => '#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen.
+         'data' => '#: by: https://entwicklungsstadt.de/holzmarktstrasse-in-friedrichshain-tankstelle-muss-neubau-weichen/ (Abriss der Tankstelle bis Ende 2025, keine weiteren Termine)
+#: by: https://www.deutsches-architekturforum.de/thread/9728-friedrichshain-west-westl-der-petersburger-und-warschauer-str/?postID=773638#post773638
+#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen.
 #: osm_watch: way id="482690912" version="6"
 #: last_checked: 2025-01-28 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2025-12-31 (entwicklungsstadt: Abriss der ehem. Tankstelle) vvv
 	3 12207,11763 12132,11788 11966,11832
 	3 11966,11832 12132,11788 12207,11763
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -6842,20 +6848,20 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: next_check_id: KARLMARXPLATZ-2024
 #: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23, 2024-10-30, 2024-11-27) ist die Fahrbahn aufgerissen
-#: note: Halteverbotsschilder bis 28.2.2025
+#: note: Halteverbotsschilder bis 28.2.2025, mittlerweile bis 04.03.2025
 #: also_indoor: traffic (none)
 #: osm_watch: way id="36983903" version="33"
 #: osm_watch: way id="1002238498" version="9"
-#: last_checked: 2025-01-05
+#: last_checked: 2025-02-03
 #: check_frequency: 30d
-#: next_check: 2025-02-28 (Halteverbotsschilder)
+#: next_check: 2025-03-04 (Halteverbotsschilder)
 	q4::inwork 12972,7602 13100,7626
 ',
          'from' => 1726956000,
          'id' => 4167,
-         'text' => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der nördlichen Fahrbahn, voraussichtlich bis 28.02.2025',
+         'text' => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der nördlichen Fahrbahn, voraussichtlich bis 04.03.2025',
          'type' => 'handicap',
-         'until' => 1740762000
+         'until' => 1741107600
        },
        undef,
        undef,
@@ -7021,31 +7027,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.tagesspiegel.de/berlin/nach-wasserrohrbruch-in-berlin-grunewaldstrasse-bleibt-tagelang-gesperrt--65-wohnungen-ohne-wasser-12349757.html
-#: by: https://www.rbb24.de/panorama/beitrag/2024/09/wasserrohrbruch-steglitz-berlin-sperrungen-reparatur.html
-#: by[nocache]: https://www.bz-berlin.de/berlin/steglitz-zehlendorf/wasserrohrbruch-steglitz
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1833484561985990812
-#: by[nocache]: https://x.com/Aintschie/status/1833937985588650466 (etwa 100m betroffen?)
-#: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:x83#HIM_FREETEXT_238226
-#: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...) (bis 28.03.2025 + ...) (inaktiv)
-#: source_id: bvg2024:x83#HIM_FREETEXT_260482 (kein Endedatum)
-#: source_id: viz2021:13.3156,52.4588,02.02.2025,18:17 (bis 28.02.2025)
-#: osm_watch: note 4441243 5
-#: osm_watch: note 4441280 1
-#: also_indoor: traffic (H,ex-G,B,T,W)
-#: note: etwa 80m der Fahrbahn sind gesperrt, nur der nordöstliche Bürgersteig ist offen
-#: add_fragezeichen: Ist die Fahrbahn der Grunewaldstraße noch immer gesperrt?
-#: next_check: 2025-01-20
-	q4::inwork 4671,5697 4520,5793
-',
-         'from' => 1726092000,
-         'id' => 4203,
-         'text' => 'Grunewaldstr.: Wasserrohrbruch zwischen Lepsiusstr. und Rothenburgstr., Fahrbahn auf 80m Länge gesperrt, voraussichtlich bis Ende Februar 2025',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7403,7 +7385,8 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1756652400
        },
        {
-         'data' => '#: source_id: viz2021:13.298658,52.457781,22.01.2025,07:00 (bis 01.10.2025 + weitere Bauarbeiten bis 09/25)
+         'data' => '#: source_id: viz2021:13.298658,52.457781,22.01.2025,07:00 (bis 01.10.2025 + weitere Bauarbeiten bis 09/2025) (inaktiv)
+#: source_id: viz2021:13.298658,52.457781,03.02.2025,10:00 (bis 25.04.2025 + weitere Bauarbeiten bis 09/2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1881943627896922593
 #: by: https://pbs.twimg.com/media/Ghzqa-yXAAA6Iuk?format=jpg&name=large
 	q4::inwork 3355,5655 3346,5629
@@ -7499,6 +7482,18 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Straße, voraussichtlich bis 23.04.2025',
          'type' => 'handicap',
          'until' => 1745445600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.31393,52.46718,03.02.2025,07:00 (bis 28.03.2025)
+Bonner Str. (in Höhe Kreuznacher Str.)	q4::inwork 4372,6718 4360,6779
+#: source_id: viz2021:13.315875,52.468006,03.02.2025,07:00 (bis 28.03.2025)
+Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
+',
+         'from' => 1738476000,
+         'id' => 4250,
+         'text' => 'Bonner Str. und Ludwig-Barnay-Platz: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.02.2025 07:00 bis 28.03.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1743177600
        }
      
 );
