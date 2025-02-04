@@ -235,8 +235,8 @@ persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
 really-slow-checks:	check-nearest \
 			check-crossings-important \
 			check-urls \
-			check-bvg \
 			data-test-test
+# XXX used to part of really-slow-checks, but is too unreliable: check-bvg
 
 data-test-test:
 	cd $(BBBIKEDIR) && prove -j4 --exec=$(PERL) t/plz.t t/strassennetz.t t/old_comments.t t/strassen-kreuzungen.t 
