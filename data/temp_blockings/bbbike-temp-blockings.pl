@@ -41346,7 +41346,7 @@ EOF
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt)
 #: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025) (bis 21.02.2025)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
+#: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
 #: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
 #: XXX mittlerweile (2024-11-20) laufen die letzten Asphaltierungsarbeiten, aber es ist nicht wahrscheinlich, dass übermorgen die Freigabe erfolgt (z.B. fehlen Markierungen)
 #: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
@@ -45014,7 +45014,7 @@ EOF
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-02-01
+#: last_checked: 2025-02-04
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -45809,7 +45809,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ZIEGEL-2024
-#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024) (bis 31.01.2025) (bis 04.02.2025)
+#: source_id: viz2021:13.392113,52.523536,29.10.2024,08:00 (bis 20.12.2024) (bis 31.01.2025) (bis 04.02.2025) (inaktiv)
 #: note: etwa 40m
 	q3::inwork; 9559,13087 9401,13072
 #: note: gesperrt wegen der Gegenverkehrsampel
@@ -46167,19 +46167,20 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2025-02-10 23:59:59"), # undef, # XXX
-       text  => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), voraussichtlich bis 10.02.2025',
+       until => $isodate2epoch->("2025-03-31 23:59:59"), # undef, # XXX
+       text  => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
 #: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.32487,52.50002,31.01.2025,11:35 (bis 10.02.2025)
+#: note: laut rbb und traffic sites nun bis 31.03.2025
 #: also_indoor: traffic (ex-H,G,B,T,W,A)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-01-31 (traffic)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 25d
-#: next_check: 2025-02-10
+#: next_check: 2025-02-10 (VIZ-Verkehrsmeldung; andere Quellen mit Verlängerung)
 	q3::inwork 5069,10662 5047,10381
 EOF
      },
@@ -46287,6 +46288,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-in-der-smetanastrasse_a434819
+#: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025)
 	q4::inwork 14195,15604 14133,15773
 EOF
      },
@@ -46346,6 +46348,27 @@ EOF
 Bonner Str. (in Höhe Kreuznacher Str.)	q4::inwork 4372,6718 4360,6779
 #: source_id: viz2021:13.315875,52.468006,03.02.2025,07:00 (bis 28.03.2025)
 Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
+EOF
+     },
+     { from  => 1738562400, # 2025-02-03 07:00
+       until => 1744729200, # 2025-04-15 17:00
+       text  => 'Eweststr.: Einbahnstraßenregelung, vom 04.02.2025 07:00 bis 15.04.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: außerdem noch Sperrung in der Pasewalker Str. Richtung Norden --- sind auch Radfahrer betroffen
+#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474
+#: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
+	q4::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
+EOF
+     },
+     { from  => 1738645200, # 2025-02-04 06:00
+       until => 1743436800, # 2025-03-31 18:00
+       text  => 'Brunnenstr.: Bauarbeiten zwischen Torstr. und Invalidenstr., Sperrung auch für den Radverkehr, vom 05.02.2025 06:00 bis 31.03.2025 18:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.399149,52.532315,05.02.2025,06:00 (bis 31.03.2025)
+	q4::inwork; 10177,13766 10002,14092
 EOF
      },
     );

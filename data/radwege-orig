@@ -1654,10 +1654,10 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: source_id: viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="27"
-#: last_checked: 2025-01-06 vvv
+#: last_checked: 2025-02-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2027-09-30 vvv
+#: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234
 alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13685,12664 13695,12643
 #: next_check ^^^
@@ -1673,10 +1673,10 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="46"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-01-06 vvv
+#: last_checked: 2025-02-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2027-03-31 vvv
+#: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 provisorische Radspur	RW3; 13695,12643 13685,12664
 provisorische Radspur	RW4; 13685,12664 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
 provisorische Radspur	RW4; 13383,13349 13375,13367 13330,13468
@@ -3373,7 +3373,7 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="318031558" version="14"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, etwa bis Höhe Pasteurstr. vvv
-#: last_checked: 2025-02-01 vvv
+#: last_checked: 2025-02-04 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-09-30 (BA Pankow) vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
@@ -8266,7 +8266,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2025-01-18
+#: last_checked: 2025-02-04
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470

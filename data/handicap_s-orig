@@ -21,13 +21,13 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-02-02
+#: last_checked: 2025-02-04
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-01-06 vvv
+#: last_checked: 2025-02-04 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
@@ -56,7 +56,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="6"
 #: osm_watch: way id="1146013233" version="9"
 #: osm_watch: way id="1134071039" version="11"
-#: last_checked: 2025-02-03 (osm) vvv
+#: last_checked: 2025-02-04 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -140,7 +140,7 @@ Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-01-28 vvv
+#: last_checked: 2025-02-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -321,10 +321,10 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285
 # 
 ### Altglienicke ###
 # 
-#: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025)
+#: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025)
 #: last_checked: 2024-12-27
-#: next_check: 2025-02-28
-#: valid: -20250228
+#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
+#: valid: -20250430
 Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18881,2062 18922,2238 18928,2319 18929,2454
 # 
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
