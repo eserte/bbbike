@@ -6400,7 +6400,7 @@ EOF
 #: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00 (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
 #: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
-	2::temp 7201,8870 7101,9027 7029,9156 7007,9220 6994,9288
+	2::temp 7201,8870 7101,9027 7029,9156 7007,9220 7001,9253 6994,9288
 	2::temp 7308,9163 7101,9027 6958,8941
 	2::temp 6936,9138 7029,9156
 	2::temp 7007,9220 7124,9226
@@ -6435,7 +6435,7 @@ EOF
 #: by: https://pbs.twimg.com/media/EjX56WOWoAIPRUg?format=png&name=900x900
 #: by: https://www.berlin.de/events/4531106-2229501-schoeneberger-kuerbisfest.html (geplant für 2.+3.10.2021)
 #: by: https://www.eventbrite.com/e/22-schoneberger-kurbisfest-tickets-165249199805
-	2::temp 6994,9288 7007,9220 7029,9156 7101,9027 7201,8870
+	2::temp 6994,9288 7001,9253 7007,9220 7029,9156 7101,9027 7201,8870
 	2::temp 6936,9138 7029,9156
 	2::temp 6958,8941 7101,9027 7308,9163
 	2::temp 7007,9220 7124,9226
@@ -16975,7 +16975,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014394',
        data  => <<EOF,
-	q4::temp 7201,8870 7101,9027 7029,9156 7007,9220 6994,9288 7118,9315 7202,9329 7299,9346 7418,9366 7471,9360
+	q4::temp 7201,8870 7101,9027 7029,9156 7007,9220 7001,9253 6994,9288 7118,9315 7202,9329 7299,9346 7418,9366 7471,9360
 EOF
      },
      { from  => 1255644000, # 2009-10-16 00:00
@@ -27070,7 +27070,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: osm_watch: way id="548612558" version="1" --- #: last_checked: 2018-04-30 -- #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7101,9027
 # RE;OVED ---	q3::inwork; 7101,9027 7029,9156
-	q4::inwork; 7029,9156 7007,9220 6994,9288
+	q4::inwork; 7029,9156 7007,9220 7001,9253 6994,9288
 EOF
      },
      { from  => 1493652218, # 2017-05-01 17:23
@@ -30531,7 +30531,7 @@ EOF
 # REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
 # REMOVED --- #: osm_watch: way id="72660098" version="8" --- #: XXX laut osm offen
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
-#: osm_watch: note 4210973 6
+#: osm_watch: note 4210973 7
 #: osm_watch: node id="27306736" version="12"
 #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
@@ -38220,9 +38220,9 @@ EOF
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2025-01-26 (architektur-urbanistik)
+#: last_checked: 2025-02-05
 #: check_frequency: 120d
-#: next_check: 2025-07-01
+#: next_check: 2025-07-01 (bw)
 	q3::inwork 6447,9661 6341,9546
 EOF
      },
@@ -38512,7 +38512,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (re-W,re-G)
-#: last_checked: 2025-01-04
+#: last_checked: 2025-02-05
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -41353,14 +41353,14 @@ EOF
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2025-02-03 (bahninfo-forum) vvv
+#: last_checked: 2025-02-04 (osm) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-02-21 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="8"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
 Wilhelminenhofstr. (Ost)	q4::inwork 18191,6363 17991,6431
-#: osm_watch: way id="176072020" version="42"
+#: osm_watch: way id="176072020" version="43"
 #: note: der östliche Gehweg ist komplett gesperrt, zur Überquerung existiert eine Fußgängerampel (Stand September 2024) --- mittlerweile (Februar 2025) wohl nicht mehr gesperrt, aber an der Kreuzung geht es weiterhin nicht weiter: q4 -> q3
 Edisonstr. (Süd)	q3::inwork; 17948,6248 17991,6431
 #: note: der westliche Gehweg ist im südlichen Abschnitt weitgehend frei, deshalb q4+ statt q4 (Stand September 2024)
@@ -41927,7 +41927,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-01-21 vvv
+#: last_checked: 2025-02-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -43026,7 +43026,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KANZLERPARK-2024
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
-#: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025) (inaktiv)
+#: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025) (inaktiv) (bis 30.04.2025)
 #: osm_watch[closed]: note 4125418 5
 #: osm_watch: way id="1258660768" version="2"
 #: osm_watch: way id="1259755317" version="2"
@@ -43035,7 +43035,8 @@ EOF
 #: priority: #A
 #: last_checked: 2025-01-30 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2027-12-31
+#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
 	2::inwork 7772,12694 7521,12581
 EOF
      },
@@ -43096,20 +43097,20 @@ EOF
 # 
      { from  => 1709576392, # 2024-03-04 19:19
        until => 1748728800, # 2025-06-01 00:00
-       text  => 'Spreeradweg: Bauarbeiten, Sperrung im Bereich Iburger Ufer, voraussichtlich bis 31. Mai 2025',
+       text  => 'Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, voraussichtlich bis Ende Mai 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SPREERADWEGIBURGER-2024
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2025-01-04 vvv
+#: last_checked: 2025-02-05 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2025-05-31 vvv
+#: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
 	2::inwork 3836,12614 3867,12616 3888,12618 4078,12637 4131,12641
-# REMOVED (hier nicht mehr?)	2::inwork 4340,12578 4441,12578
-hier können Bauzäune den Weg absperren	2::inwork 4299,12590 4340,12578 4441,12578 4529,12570
+	2::inwork 4131,12641 4162,12638 4299,12590 4340,12578 4441,12578 4529,12570
 	2::inwork 4441,12578 4441,12559
+Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4441,12559 4321,12566
 # REMOVED (offen)	2::inwork 4529,12570 4575,12542 4642,12491
 # REMOVED (offen) --- Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
 #: next_check ^^^
@@ -43448,7 +43449,7 @@ EOF
 #: source_id: bvg2021:n7#BVG346248_0
 #: source_id: bvg2024:n7#HIM_FREETEXT_219517
 # REMOVED --- #: also_indoor: traffic (ex-B,ex-H,G,W) --- #: add_fragezeichen: Wann wird die Sperrung wieder aufgehoben? vvv --- #: note: bei rbb "bis auf weiteres"; mittlerweile bis 31.05.2024 --- #: last_checked: 2024-05-04 vvv --- #: next_check: 2024-05-08 vvv
-	q4::inwork 7007,9220 6994,9288
+	q4::inwork 7007,9220 7001,9253 6994,9288
 	q3::inwork 6994,9288 7118,9315
 	q3::inwork 7002,9526 6994,9288
 # REMOVED (hier nicht)	2::inwork 6994,9288 6921,9275
@@ -44261,12 +44262,13 @@ EOF
 	q4::inwork; 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
 EOF
      },
-     { from  => 1719122400, # 2024-06-23 08:00
-       until => $isodate2epoch->("2024-12-20 08:00:00"), # 1732647718, # 1732978800, # 2024-11-30 16:00
-       text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 20.12.2024 08:00 Uhr',
+     { from  => $isodate2epoch->("2025-02-09 00:00:00"), # 1719122400, # 2024-06-23 08:00
+       until => $isodate2epoch->("2025-04-14 17:00:00"), # $isodate2epoch->("2024-12-20 08:00:00"), # 1732647718, # 1732978800, # 2024-11-30 16:00
+#      text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 20.12.2024 08:00 Uhr',
+       text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 10.02.2025 08:00 Uhr bis 14.04.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/125 (bis 30.11.2024) (inaktiv) (bis 20.12.2024) (Wintersicherung, bis 14.04.2025)
+#: source_id: LS/221-F/24/125 (bis 30.11.2024) (inaktiv) (bis 20.12.2024) (Wintersicherung, bis 14.04.2025) (Wiederaufnahme)
 	2::inwork 54410,20569 54169,20358 53940,20148
 EOF
      },
@@ -44771,8 +44773,8 @@ EOF
        text  => 'Heubuder Brücke: wegen Bauschäden gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="27457006" version="22"
-#: last_checked: 2025-01-08 (osm)
+#: osm_watch: way id="27457006" version="23"
+#: last_checked: 2025-02-05 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 EOF
@@ -45154,16 +45156,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # 1737306000, # 2025-01-19 18:00
-       text  => 'Marburger Str.: Sperrung der Fahrbahn vor der Tauentzienstr., voraussichtlich bis Januar 2025, evtl. wird verlängert',
+#      text  => 'Marburger Str.: Sperrung der Fahrbahn vor der Tauentzienstr., voraussichtlich bis Januar 2025, evtl. wird verlängert',
+       text  => 'Marburger Str.: Sperrung der Fahrbahn vor der Tauentzienstr., Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: note: laut rbb bis 19.01.2025 (nun inaktiv)
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-01-29 (traffic)
-# REMOVED --- #: check_frequency: 90d
-#: check_frequency: 7d
+#: last_checked: 2025-02-05
+#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
 Marburger Str.	q3::inwork 5802,10621 5907,10821
 EOF
@@ -45542,7 +45545,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-01-31 vvv
+#: last_checked: 2025-02-05 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-02-28 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -45565,14 +45568,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1738767918, # undef, # XXX
        text  => 'Fasanerieallee: Bauarbeiten, Zugang am Großen Stern gesperrt, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder am Großen Stern gelten bis zum 31.12.2024; sind mittlerweile abgelaufen, trotz weiterhin aktiver Baustelle
-#: last_checked: 2025-01-04
-#: check_frequency: 30d
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2025-01-04 --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
 	2::inwork 6633,11882 6685,11954
 EOF
@@ -45870,7 +45871,7 @@ EOF
 #: by: https://entwicklungsstadt.de/bauprojekt-breite-strasse-in-berlin-mitte-kritik-an-der-architektur/
 #: also_indoor: traffic (H,G,B,T)
 #: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2025-01-21
+#: last_checked: 2025-02-05
 #: check_frequency: 21d
 # REMOVED --- #: check_frequency: 30d
 	2::inwork 10383,12191 10289,12106
@@ -46283,13 +46284,19 @@ EOF
      },
      { from  => 1738450800, # 2025-02-02 00:00
        until => 1764543600, # 2025-12-01 00:00
-       text  => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung, vom 03.02.2025 bis voraussichtlich 30.11.2025',
+       text  => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung der Fahrbahn, vom 03.02.2025 bis voraussichtlich 30.11.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-in-der-smetanastrasse_a434819
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1887013282894025077
+#: by: https://pbs.twimg.com/media/Gi7-nVQXEAAnVV2?format=jpg&name=large (Richtung Süden Gehweg Radfahrer frei, Richtung Norden nicht)
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-smetanastrasse-in-weissensee/
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025)
-	q4::inwork 14195,15604 14133,15773
+#: XXX Ausschilderung vor Ort prüfen vvv
+	q4::inwork; 14195,15604 14133,15773
+	q3::inwork; 14133,15773 14195,15604
+#: XXX ^^^
 EOF
      },
      { from  => 1737871200, # 2025-01-26 07:00
@@ -46364,11 +46371,20 @@ EOF
      },
      { from  => 1738645200, # 2025-02-04 06:00
        until => 1743436800, # 2025-03-31 18:00
-       text  => 'Brunnenstr.: Bauarbeiten zwischen Torstr. und Invalidenstr., Sperrung auch für den Radverkehr, vom 05.02.2025 06:00 bis 31.03.2025 18:00',
+       text  => 'Brunnenstr.: Bauarbeiten zwischen Torstr. und Invalidenstr., Sperrung Richtung Norden auch für den Radverkehr, vom 05.02.2025 06:00 bis 31.03.2025 18:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.399149,52.532315,05.02.2025,06:00 (bis 31.03.2025)
 	q4::inwork; 10177,13766 10002,14092
+EOF
+     },
+     { from  => 1730613600, # 2024-11-03 07:00
+       until => 1740783540, # 2025-02-28 23:59
+       text  => 'Zillestr.: Einbahnstraßenregelung zwischen Kaiser-Friedrich-Str. und Wilmersdorfer Str., Richtung Westen gesperrt, bis 28.02.2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.30113,52.51347,04.11.2024,07:00 (bis 28.02.2025)
+	q4::inwork; 3666,11855 3528,11852 3406,11849
 EOF
      },
     );

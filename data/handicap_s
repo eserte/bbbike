@@ -1152,7 +1152,7 @@ Werner-Sylten-Weg: Fußgänger	q1 1016,737 1022,738 1129,763 1267,789
 Lorcher Str.: eng, Fußgänger	q2 4273,7002 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Fußgänger	q1 4160,7043 4068,7040
 Crellestr.: Fußgänger, Straßencafés	q2 7484,9066 7524,9093 7570,9124
-(S-Bhf. Südkreuz - IKEA): Fußgänger	q1 7921,7288 7920,7224 7924,7185
+(S-Bhf. Südkreuz - IKEA): Fußgänger	q1 7927,7285 7929,7225 7932,7178
 Königstuhlweg: Gehweg, für Radfahrer nicht freigegeben, Bordsteine	q3 10087,2365 10214,2348 10334,2321
 Hörsingsteig: Fußgänger	q1 14082,2289 14099,2197 14086,2148
 Hörsingsteig: Fußgänger, Bordsteine	q2 14086,2148 14165,2106 14369,2016
@@ -2324,7 +2324,8 @@ Heidelberger Platz [Bürgersteig]: einige Fußgänger	q2 4173,7993 4121,8016
 (Grünbergallee - Coloniaallee): einige Fußgänger	q1 20048,-499 20050,-386 20051,-344
 (IKEA/Bauhaus-Zufahrt): via Gehweg	q2 8211,7034 8210,7024
 (IKEA/Bauhaus-Zufahrt): Parkplatzverkehr	q2 8210,7024 8221,7018 8218,6983 8232,6972
-(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
+(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8063,7040 8055,7057 8057,7080 8084,7099
+(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8223,7088 8095,7089 8084,7099 8057,7163 8020,7185 7932,7178 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8078,7029 8210,7024
 Sterndamm, zur Nebenfahrbahn: Gehweg, Bordstein	q4 17648,5338 17697,5347
 (Eichhornstr. - Reichpietschufer): einige Fußgänger	q2 8289,11205 8234,11173
@@ -2648,6 +2649,9 @@ Ulsterstr.: enge Straße	q0 13575,8378 13641,8470
 (Stellerweg): einige Fußgänger, Kleingartenanlage	q1 14608,14701 14790,14656
 (Hohenschönhauser Str., Verbindungsweg): einige Fußgänger, abgeschrägte Bordsteine	q2 14839,14586 14715,14547
 (Schneehuhnweg - Schönefelder Str.): einige Fußgänger, Grünanlage	q2 16991,-81 16992,-74 17109,-77 17122,-88 17168,-90 17191,-77
+(Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger	q1; 6921,9275 6935,9248 7001,9253
+(Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger	q1; 7001,9253 6935,9248
+(Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger, unbequemes Überqueren der Grunewaldstr.	q4; 6935,9248 6921,9275
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

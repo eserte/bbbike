@@ -21,7 +21,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-02-04
+#: last_checked: 2025-02-05
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -56,7 +56,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="6"
 #: osm_watch: way id="1146013233" version="9"
 #: osm_watch: way id="1134071039" version="11"
-#: last_checked: 2025-02-04 vvv
+#: last_checked: 2025-02-05 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -470,9 +470,9 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-01-21
+#: last_checked: 2025-02-05
 #: check_frequency: 90d
-#: next_check: 2028-03-31
+#: next_check: 2028-03-31 (rbb)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 # 
 # REMOVED --- #: source_id: viz2021:13.404739,52.514839,10.05.2021,06:00 (bis 1.10.2021) (inaktiv) --- #: note: laut rbb bis 1.11.2021 --- #: last_checked: 2021-10-26 (mapillary) --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2021-10-30 --- # REMOVED --- #: valid: -20211030 --- Scharrenstr.: Bauarbeiten an der Breiten Str., einige Meter der Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016
@@ -550,7 +550,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn für die Straßensanierung 2026 (!))
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-01-21 vvv
+#: last_checked: 2025-02-05 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -2994,7 +2994,7 @@ Werner-Sylten-Weg: Fußgänger	q1 1016,737 1022,738 1129,763 1267,789
 Lorcher Str.: eng, Fußgänger	q2 4273,7002 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Fußgänger	q1 4160,7043 4068,7040
 Crellestr.: Fußgänger, Straßencafés	q2 7484,9066 7524,9093 7570,9124
-(S-Bhf. Südkreuz - IKEA): Fußgänger	q1 7921,7288 7920,7224 7924,7185
+(S-Bhf. Südkreuz - IKEA): Fußgänger	q1 7927,7285 7929,7225 7932,7178
 #: XXX_prog BS am Watzmannweg und 2x an der Furkastr., am Glärnischweg nicht geprüft (ansonsten trotzdem q2)
 #: note: früher q2-
 #: note: Gehweg-Schilder
@@ -4679,7 +4679,8 @@ Heidelberger Platz [Bürgersteig]: einige Fußgänger	q2 4173,7993 4121,8016
 (IKEA/Bauhaus-Zufahrt): via Gehweg	q2 8211,7034 8210,7024
 #: note: hier mögliche Stauung vor der Alboinstr.
 (IKEA/Bauhaus-Zufahrt): Parkplatzverkehr	q2 8210,7024 8221,7018 8218,6983 8232,6972
-(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
+(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8063,7040 8055,7057 8057,7080 8084,7099
+(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8223,7088 8095,7089 8084,7099 8057,7163 8020,7185 7932,7178 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8078,7029 8210,7024
 #: XXX_prog BS Bordstein am Wendehammer, ansonsten q3-
 Sterndamm, zur Nebenfahrbahn: Gehweg, Bordstein	q4 17648,5338 17697,5347
@@ -5293,6 +5294,11 @@ Ulsterstr.: enge Straße	q0- 13575,8378 13641,8470
 # 
 #: note: Grünanlagenschild ohne Zusatzschilder zum Radfahren, allerdings führt hier die Umleitungsstrecke für den Mauerweg entlang
 (Schneehuhnweg - Schönefelder Str.): einige Fußgänger, Grünanlage	q2 16991,-81 16992,-74 17109,-77 17122,-88 17168,-90 17191,-77
+# 
+(Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger	q1; 6921,9275 6935,9248 7001,9253
+(Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger	q1; 7001,9253 6935,9248
+#: XXX_prog: sobald handicap_directed überall verfügbar ist, sollte dieser Eintrag teilweise ersetzt werden
+(Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger, unbequemes Überqueren der Grunewaldstr.	q4; 6935,9248 6921,9275
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

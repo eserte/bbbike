@@ -1499,7 +1499,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="22"
-#: last_checked: 2024-10-26
+#: last_checked: 2025-02-05
 #: check_frequency: 120d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -2190,7 +2190,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-02-03 (daf) vvv
+#: last_checked: 2025-02-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2214,7 +2214,7 @@ provisorische Busspur	RW5; 10550,12096 10512,12039
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
 #: XXX Wie lange bleibt die provisorische Radspur oder Busspur Richtung Spittelmarkt erhalten?
 #: osm_watch: way id="81112790" version="25"
-#: last_checked: 2025-01-21
+#: last_checked: 2025-02-05
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-08-30
 # REMOVED (bis etwa Herbst/Winter 2024) --- provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
@@ -2457,11 +2457,12 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
 #: by: https://www.deutsches-architekturforum.de/thread/14542-gesch%C3%A4fts-b%C3%BCrokomplex-p1-am-kadewe-sch%C3%B6neberg-in-bau/?postID=749610#post749610 (provisorische Radspur zu sehen)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/dokumentiert-fragen-und-antworten-zum-dreibezirke-eck-in-berlins-city-west-12808346.html (Planung südlich der Tauenzienstraße "nicht konsensfähig")
-#: XXX Nürnberger Str.: mittlerweile gibt es wegen einer Hochbaustelle provisorische Radspuren, aber vermutlich nicht über die gesamte Länge
+#: XXX Nürnberger Str.: mittlerweile gibt es wegen einer Hochbaustelle provisorische Radspuren; Halteverbotsschilder bis 30.06.2025
 #: osm_watch: way id="4491980" version="28"
 #: priority: #B
-#: last_checked: 2025-01-04
+#: last_checked: 2025-02-05
 #: check_frequency: 120d
+#: next_check: 2025-06-30 (Halteverbotsschilder)
 provisorische Radspuren	RW3;RW3 5866,10492 6025,10746
 # 
 #: XXX Bauarbeiten (Aufzugeinbau am U-Bhf. Augsburger Str.?), Radspur ist aufgehoben
@@ -2470,9 +2471,9 @@ provisorische Radspuren	RW3;RW3 5866,10492 6025,10746
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025)
 #: also_indoor: traffic (ex-B[minor])
-#: last_checked: 2025-01-04
+#: last_checked: 2025-02-05
 #: check_frequency: 120d
-#: next_check: 2025-12-31
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492
@@ -2500,9 +2501,10 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4159
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/bezirksamt/beschluesse/2017/05-09/0363_xix-fahrradfuehrung-naumannstrasse-einrichten.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
+#: XXX Anfang 2025: der benutzungspflichtige Radweg Richtung Süden fängt wegen Hochbauarbeiten etwa 50m später an
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="21"
-#: last_checked: 2025-01-08
+#: last_checked: 2025-02-05
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -2931,7 +2933,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-01-29 vvv
+#: last_checked: 2025-02-05 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3473,9 +3475,12 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20, Sa+So 9-20 Uhr	RW1; 7383,765
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19, Sa 8-19 und So 7-15 Uhr	RW1; 5086,14504 5205,14253 5212,14154 5220,14043
 teilweise mit Pollern	RW3; 5220,14043 5225,13958 5231,13843
 	RW3; 5231,13843 5238,13714
-	RW4; 5238,13714 5248,13434 5202,13266 5199,13247 5166,13087
+	RW4; 5238,13714 5248,13434
+Radspur hinter den parkenden Autos	RW4; 5248,13434 5202,13266
+	RW4; 5202,13266 5199,13247
+Poller	RW4; 5199,13247 5166,13087
 #: note: Beusselstr. Richtung Norden
-am Anfang ein paar Poller	RW4; 5166,13087 5199,13247
+Poller sowie Radspur hinter den parkenden Autos	RW4; 5166,13087 5199,13247
 Busspur gilt Mo-Sa 7-20 Uhr	RW5; 5238,13714 5231,13843 5225,13958
 Gehwegplatten, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5220,14043 5212,14154
 asphaltiert, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5212,14154 5205,14253
@@ -8669,7 +8674,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/nach-androhung-von-zwangsauszug-losung-fur-radweg-auf-der-berliner-kantstrasse-verzogert-sich-12847046.html (Verstetigung westlich der Wilmersdorfer Str., weiter keine Lösung im östlichen Abschnitt)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/platz-fuer-alle-auf-der-kantstrasse_a432687
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
-#: last_checked: 2025-01-04 vvv
+#: last_checked: 2025-02-05 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
@@ -9324,4 +9329,6 @@ Verbundsteinpflaster	RW1; 4952,17122 4929,17069 4897,17040
 	RW6;RW6 16065,12315 16059,12241 16036,12195
 # 
 	RW6;RW6 12363,18596 12375,18622 12470,18816 12481,18838
+# 
+	RW3; 7834,7131 7932,7178
 # 

@@ -3,6 +3,20 @@
 #:
 #: temporary vvv
 # 
+#: next_check_id: BHFBLANKENFELDE-2023
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (Beginn der Bauarbeiten)
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20230703/
+#: also_indoor: traffic (G,B,W)
+#: osm_watch: way id="1223345278" version="5"
+#: osm_watch: way id="1262225305" version="2"
+#: XXX Außerdem: der S-Bahnhof wird zukünftig wohl südlich des Bahnunterführung sein
+#: XXX Unterführung wird voraussichtlich im Sommer 2025 fertig sein
+#: XXX Eröffnung des Fußgängertunnels am 4.2.2025
+#: last_checked: 2025-02-01 (bahninfo-forum)
+#: check_frequency: 120d
+#: next_check: 2025-09-01
+Bhf. Blankenfelde: neue Unterführung ist noch nicht für den Kfz-Verkehr fertig	2::inwork 11667,-7536 11601,-7560 11551,-7599
+# 
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: check_frequency: 180d vvv
 #: next_check: 2028-01-01 vvv
@@ -1123,7 +1137,7 @@ Kyllburger Weg	1 16785,17524 16670,17454 16645,17449
 Gethsemanestr.	1 11086,15772 11123,15851 11191,15810 11158,15739
 Kaiserdamm: Mittelstreifen	3nocross 2609,11503 2764,11519 3069,11551
 Revaler Str.	1 13588,11490 13565,11492 13473,11456
-IKEA-Parkplatz	1 7834,7131 7924,7185 8020,7185
+IKEA-Parkplatz	1 7834,7131 7932,7178 8020,7185
 Königsweg: Poller	3 -878,2265 -844,2268 -790,2300 -745,2320
 Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 #: by: Beate Wolter
@@ -2143,4 +2157,6 @@ Sonnenallee	3nocross 15505,6342 15452,6384 15429,6403
 # 
 Jupiterstr.: Einfahrt nicht möglich, Kette	3 * 4466,17600 4430,17466
 Jupiterstr.: Ausfahrt nicht möglich, Kette	3 4430,17466 4466,17600 *
+# 
+IKEA-Parkplatz	1 7834,7131 7932,7178
 # 

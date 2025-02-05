@@ -7,7 +7,7 @@
 #: temporary vvv
 # 
 #: source_id: bvg2024:184#HIM_FREETEXT_235819 (kein Endedatum)
-#: last_checked: 2025-02-02 vvv
+#: last_checked: 2025-02-05 vvv
 Hoeppnerstr.: Gegenverkehrsreglung	X::inwork::alternating 8386,7430
 Hoeppnerstr.: Gegenverkehrsreglung	X::inwork::alternating 8302,7508
 #: last_checked ^^^
@@ -1837,6 +1837,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7759,13246
 	X 9579,13604
 	X 9268,11590
+#: XXX_prog: gilt nicht in Fahrtrichtung Südwest
 	X 5620,13120
 	X 6661,13130
 	X 12045,16574
@@ -3116,6 +3117,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog: beide Ampeln sind getrennt geschaltet, man muss auf dem Mittelstreifen neu anfordern; 2024-12-11: stimmt das noch? heute war das nicht der Fall (W->O)
 	F 7713,16557
 	X 5000,12781
+#: XXX_prog: gilt nicht in Fahrtrichtung Südwest
 	F 5754,13170
 	X 20150,13562
 #: note: Anforderungsampel
@@ -3447,7 +3449,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-01-21 vvv
+#: last_checked: 2025-02-05 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3494,7 +3496,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 2814,20035
 	F 3216,21431
 	F 9540,15238
-	X 7987,6775
+	X 7993,6774
 	F 7155,21744
 	F 9821,14073
 #: by: wosch

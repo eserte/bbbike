@@ -1438,7 +1438,9 @@ Lise-Meitner-Str.: Beton	Q0 3724,13702 3713,13787 3702,13865 3695,13902 3656,141
 Georg-Wilhelm-Str.: Kopfsteinpflaster, OK	Q1 2702,10006 2687,10053
 Holtzendorffstr.: mäßiges Kopfsteinpflaster	Q2 3049,11015 3082,11090
 Goslarer Ufer: Kopfsteinpflaster	Q2 4421,12727 4372,12946
-Goslarer Ufer: Asphalt	Q0 4372,12946 4331,13103 4295,13234
+Goslarer Ufer: Asphalt	Q0 4372,12946 4331,13103
+Goslarer Ufer: Asphalt	Q0; 4331,13103 4295,13234
+Goslarer Ufer: kaputtgeparkter Asphalt	Q1; 4295,13234 4331,13103
 Goslarer Ufer: Kopfsteinpflaster, kann auf Gehweg umfahren werden	Q2 4295,13234 4186,13710
 Malmöer Str.: Asphalt	Q0 10225,16436 10245,16367 10266,16282 10291,16193
 Malmöer Str.: mäßiges Kopfsteinpflaster	Q2 10291,16193 10343,16015
@@ -2802,7 +2804,7 @@ Sennockstr.: Asphalt	Q0 9048,6877 8975,6875
 Sennockstr.: Kopfsteinpflaster	Q2 8975,6875 8945,6873
 Arenholzsteig: kleinteiliges Pflaster	Q2 8454,6778 8455,6849 8481,6900
 Eresburgstr.: Beton	Q0 8224,6775 8454,6778 8653,6781
-Magirusstr.: Kopfsteinpflaster	Q2 8199,6583 7985,6598
+Magirusstr.: Kopfsteinpflaster	Q2 8199,6583 7990,6598
 Egelingzeile: Asphalt	Q0 8194,6384 7980,6403
 Albrechtstr. - Götzstr.: Verbundsteinpflaster	Q1 9389,6348 9404,6392 9453,6415 9460,6519
 Sachsenhauser Str.: Asphalt	Q0 10454,6281 10404,5969
@@ -7207,8 +7209,8 @@ Lorcher Str.: Asphalt	Q0 4160,7043 4068,7040
 (Leuthener Platz - Wilhelm-Kabus-Str.): Asphalt	Q0 7716,8356 7792,8357 7886,8335 7899,8332
 (Altonaer Str. - Händelallee): Gehwegplatten und wassergebundene Decke	Q1 6354,12278 6280,12222
 Joseph-Haydn-Str.: Kopfsteinpflaster	Q2 5825,12023 5790,12026
-(S-Bhf. Südkreuz - IKEA): Asphalt	Q0 7921,7288 7920,7224
-(S-Bhf. Südkreuz - IKEA): Verbundsteinpflaster	Q0 7920,7224 7924,7185
+(S-Bhf. Südkreuz - IKEA): Asphalt	Q0 7927,7285 7929,7225
+(S-Bhf. Südkreuz - IKEA): Verbundsteinpflaster	Q0 7929,7225 7932,7178
 Schaffhausener Str.: Verbundsteinpflaster	Q0 11456,6103 11429,6122 11404,6141
 (Schaffhausener Str. - Teilestr.): Verbundsteinpflaster	Q1 11429,6122 11395,6096 11280,6096 11244,6080 11221,6031 11164,6007 11077,6028 11068,6006
 Grüntenstr.: Beton	Q0 10048,3806 10051,3744 10193,3570 10336,3545 10432,3528 10540,3513 10592,3506
@@ -10447,6 +10449,7 @@ Melanchthonstr.: Beton/Verbundsteinpflaster	Q1 25287,13464 25325,13543
 (Spreebogen): Verbundsteinpflaster	Q1 6183,13083 6207,13093 6289,13081
 (Spreebogen): Asphalt	Q0 6289,13081 6417,13052
 (Spreeuferweg - Joachim-Karnatz-Allee/Paulstr.): leicht welliger Asphalt	Q0 6859,12567 6988,12559 7064,12560 7077,12575
+(Spreeuferweg): leicht welliger Asphalt	Q0 6859,12567 7051,12426
 Johannes-Guthmann-Weg: Verbundsteinpflaster	Q1 -6462,5733 -6614,5834
 Parkviertelallee: Asphalt	Q0 -6343,5853 -6376,5878 -6521,5982 -6441,6106 -6385,6185 -6251,6370 -6221,6411
 Elsbeerenweg: Asphalt	Q0 -6376,5878 -6192,6063
@@ -11343,7 +11346,7 @@ Frobenstr.: Asphalt mit einigen Rissen	Q0; 7429,10366 7413,10244
 (Retzowstr. - Seydlitzstr.): Betonpflaster	Q0 6391,2200 6511,2284
 An der alten Gärtnerei: Asphalt	Q0 11046,3895 11053,3828 11019,3786 10972,3779 10958,3710
 An der alten Gärtnerei: Asphalt	Q0 10879,3719 10888,3787
-Lübbener Str.: Asphalt, einige Löcher	Q0 12729,10515 12608,10294
+Lübbener Str.: Asphalt, einige Löcher	Q1 12729,10515 12608,10294
 Weichselstr. - Sasarsteig: Verbundsteinpflaster	Q1 12330,8636 12300,8613 12274,8607
 Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
 (Weg am Kienhorstgraben): Asphalt	Q0 3876,18348 3799,18159 3723,17979
@@ -11729,6 +11732,7 @@ Thomas-Mann-Str. [östlicher Strang]: Asphalt	Q0 13365,15325 13278,15172 13387,15
 (Hohenschönhauser Str., Verbindungsweg): Asphalt	Q0 14871,14601 14839,14586
 (Hohenschönhauser Str., Verbindungsweg): Asphalt, einige Unebenheiten	Q1 14839,14586 14715,14547
 (Hohenschönhauser Str., Verbindungsweg): Beton	Q1 14715,14547 14682,14572
+(Vorfahrt Apostel-Paulus-Kirche): Kopfsteinpflaster	Q2 6921,9275 6935,9248 7001,9253
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

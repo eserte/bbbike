@@ -1,6 +1,7 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen (nur für Autofahrer)
 #:
+Bhf. Blankenfelde: neue Unterführung ist noch nicht für den Kfz-Verkehr fertig	2::inwork 11667,-7536 11601,-7560 11551,-7599
 Überfahrt gesperrt, für Radfahrer ist ein bisschen Platz frei gelassen	3nocross::ignrte 3619,7587 3631,7598 3839,7787
 Mecklenburgische Str. -> Rudolf-Mosse-Str.: Überfahrt gesperrt, für Radfahrer ist ein bisschen Platz frei gelassen	3::igndisp 3839,7787 3631,7598 3662,7580
 Rudolf-Mosse-Str. -> Mecklenburgische Str.: Überfahrt gesperrt, für Radfahrer ist ein bisschen Platz frei gelassen	3::igndisp 3662,7580 3631,7598 3619,7587
@@ -1715,7 +1716,11 @@ Mittelstreifen	3nocross::ignrte 5635,9018 5725,9041 5770,9055
 Berliner Str. -> Helmstedter Str.: Mittelstreifen	3::igndisp 5635,9018 5725,9041 5711,9357
 Helmstedter Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5711,9357 5725,9041 5770,9055
 Mittelstreifen	3nocross::ignrte 6847,9261 6921,9275 6994,9288
+Vorfahrt Apostel-Paulus-Kirche -> Grunewaldstr.: Mittelstreifen	3::igndisp 6935,9248 6921,9275 6847,9261
+Vorfahrt Apostel-Paulus-Kirche -> Schwäbische Str.: Mittelstreifen	3::igndisp 6935,9248 6921,9275 6851,9365
+Grunewaldstr. -> Vorfahrt Apostel-Paulus-Kirche: Mittelstreifen	3::igndisp 6994,9288 6921,9275 6935,9248
 Grunewaldstr. -> Schwäbische Str.: Mittelstreifen	3::igndisp 6847,9261 6921,9275 6851,9365
+Schwäbische Str. -> Vorfahrt Apostel-Paulus-Kirche: Mittelstreifen	3::igndisp 6851,9365 6921,9275 6935,9248
 Schwäbische Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6851,9365 6921,9275 6994,9288
 Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
 Sperrfläche, Abbiegen nicht erlaubt	3nocross::ignrte 17492,6462 17528,6502 17614,6571
@@ -1852,7 +1857,7 @@ Witzlebenpl. -> Kaiserdamm: Mittelstreifen	3::igndisp 2764,11500 2764,11519 2609
 Witzlebenpl. -> Wundtstr.: Mittelstreifen	3::igndisp 2764,11500 2764,11519 2793,11547
 Witzlebenpl. -> Danckelmannstr.: Mittelstreifen	3::igndisp 2764,11500 2764,11519 2739,11730
 Revaler Str.	1 13588,11490 13565,11492 13473,11456
-IKEA-Parkplatz	1 7834,7131 7924,7185 8020,7185
+IKEA-Parkplatz	1 7834,7131 7932,7178 8020,7185
 Königsweg: Poller	3 -878,2265 -844,2268 -790,2300 -745,2320
 Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 Hans-Sachs-Str.	1 3141,4023 3214,4066
@@ -2647,3 +2652,4 @@ Jupiterstr.: Einfahrt nicht möglich, Kette	3 4396,17622 4466,17600 4430,17466
 Jupiterstr.: Einfahrt nicht möglich, Kette	3 4538,17573 4466,17600 4430,17466
 Jupiterstr.: Ausfahrt nicht möglich, Kette	3 4430,17466 4466,17600 4396,17622
 Jupiterstr.: Ausfahrt nicht möglich, Kette	3 4430,17466 4466,17600 4538,17573
+IKEA-Parkplatz	1 7834,7131 7932,7178
