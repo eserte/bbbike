@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.34;
+$VERSION = 2.35;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1899,6 +1899,8 @@ sub showmap_url_gdi_berlin {
 	radverkehrsanlagen => 'hintergrund_k5_grau,radverkehrsanlagen:c_bussonderfahrstreifen,radverkehrsanlagen:b_radverkehrsanlagen,radverkehrsanlagen:a_verkehrszeichen',
         radverkehrsnetz    => 'hintergrund_k5_grau,radverkehrsnetz:untersuchungsbereiche,radverkehrsnetz:stadtgruen,radverkehrsnetz:radverkehrsnetz',
 	fahrradstrassen    => 'hintergrund_k5_grau,fahrradstrassen:fahrradstrassen',
+        dtvw2023rad        => 'hintergrund_k5_grau,verkehrsmengen_2023:dtvw2023rad,verkehrsmengen_2023:dtvw2023baustellen',
+	dtvw2023           => 'hintergrund_k5_grau,verkehrsmengen_2023:dtvw2023lkw,verkehrsmengen_2023:dtvw2023kfz',
 	dtvw2019           => 'hintergrund_k5_grau,verkehrsmengen_2019:dtvw2019lkw,verkehrsmengen_2019:dtvw2019kfz',
 	dtv2019            => 'hintergrund_k5_grau,ua_verkehrsmengen_2019:verkehrsmengen_2019',
 	dtv2014            => 'hintergrund_k5_grau,ua_verkehrsmengen_2014:verkehrsmengen_2014',
@@ -1971,7 +1973,15 @@ sub show_gdi_berlin_menu {
 	(-label => 'Fahrradstraßen',
 	 -command => sub { showmap_gdi_berlin(layers => 'fahrradstrassen', %args) },
 	);
+    $link_menu->command
+	(-label => 'Verkehrsmengen Rad 2023',
+	 -command => sub { showmap_gdi_berlin(layers => 'dtvw2023rad', %args) },
+	);
     $link_menu->separator;
+    $link_menu->command
+	(-label => 'Verkehrsmengen 2023 (DTVw)',
+	 -command => sub { showmap_gdi_berlin(layers => 'dtvw2023', %args) },
+	);
     $link_menu->command
 	(-label => 'Verkehrsmengen 2019 (DTVw)',
 	 -command => sub { showmap_gdi_berlin(layers => 'dtvw2019', %args) },
