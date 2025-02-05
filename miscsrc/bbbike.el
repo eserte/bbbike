@@ -1055,6 +1055,7 @@
   "Strip unnecessary query parameters from a Mapillary URL, keeping only focus, x, y, zoom, and pKey, and reduce float accuracy for x, y, and zoom."
   (let ((base-url (car (split-string url "\\?"))) ; Extract base URL before the query string
         (query-params (cdr (split-string url "\\?"))))
+    (setq base-url (replace-regexp-in-string "/app/user/[^/]+$" "/app/" base-url))
     (if query-params
         (let* ((params (split-string (car query-params) "&"))
                (filtered-params (delq nil
