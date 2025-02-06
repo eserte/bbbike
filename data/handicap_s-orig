@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-01
+#: last_checked: 2025-02-06
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -681,15 +681,6 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: note: Halteverbotsschilder bis 23.12.2024; mittlerweile bis 31.01.2025
-#: also_indoor: traffic (re-H,B,T,ex-G)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-02-01 (traffic)
-#: check_frequency: 14d
-#: next_check: 2025-01-31 (Halteverbotsschilder)
-# REMOVED --- #: valid: -20241223
-Sangeallee: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Engstelle	q3::inwork 18134,9080 18247,9158
-# 
 # REMOVED (laut mapillary weitgehend beendet) --- #: next_check_id: WALLENSTEIN-2020 --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-11-29 --- #: check_frequency: 10d --- # REMOVED --- #: next_check: 2020-11-16 --- # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
 # REMOVED (beendet, keine Besserung der Qualität) --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: XXX wird sich die Qualität des Asphalts nach den Bauarbeiten verbessern, zumindest in Richtung Nordwesten? --- #: last_checked: 2021-02-18 --- Wallensteinstr.: Bauarbeiten zwischen Sangeallee und Ilsestr., Einbahnstraßenregelung, Ausweichen auf engen Gehweg	q3::inwork; 18134,9080 18092,9141 18037,9195
 # REMOVED (beendet) --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2021-02-18 --- #: check_frequency: 7d --- Dolgenseestr.: Bauarbeiten nördlich des Hönower Weges, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q3::inwork 17404,9794 17391,9746 17383,9719
@@ -971,7 +962,7 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 ### Lichtenberg ###
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-01-26
+#: last_checked: 2025-02-06
 #: check_frequency: 45d
 #: next_check: 2025-05-31 (BA Lichtenberg)
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
@@ -1293,15 +1284,6 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 # 
 ### Biesdorf ###
-# 
-#: by: https://pascalgrothe.de/grabensprung-wiedereroeffnung-steht-bevor/ (veröffentlicht am 28.12.2024, Freigabe "in Kürze")
-#: also_indoor: traffic (T,ex-G,B,ex-H)
-#: also_indoor: url https://pascalgrothe.de/kiezblog/
-#: note: Halteverbotsschilder bis 31.01.2025
-#: last_checked: 2025-02-01 (traffic)
-#: check_frequency: 7d (traffic checks)
-#: next_check: 2025-01-31 (Halteverbotsschilder)
-Grabensprung: einige Meter der Fahrbahn gesperrt	q3::inwork 20518,11346 20515,11275
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv
 # REMOVED (hier wohl nicht mehr) --- Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20725,10594 20716,10434 20713,10293
@@ -5299,6 +5281,8 @@ Ulsterstr.: enge Straße	q0- 13575,8378 13641,8470
 (Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger	q1; 7001,9253 6935,9248
 #: XXX_prog: sobald handicap_directed überall verfügbar ist, sollte dieser Eintrag teilweise ersetzt werden
 (Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger, unbequemes Überqueren der Grunewaldstr.	q4; 6935,9248 6921,9275
+# 
+(Zufahrt zum Kaufland): Parkplatz- und Lieferverkehr	q2 13727,14207 13757,14224 13846,14286 13873,14304 13913,14237 14007,14285
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
