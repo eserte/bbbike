@@ -29,6 +29,15 @@ Bahnstr.: Bauarbeiten am Bahnhof Zeuthen, Umfahrung auf teilweise engem Gehweg n
 #: check_frequency: 90d
 Karl-Marx-Str. (Hohen Neuendorf): Bauarbeiten, nur ein schmaler Gehweg ist frei	q3::inwork 1141,29607 1272,29447
 # 
+### Blankenfelde ###
+# 
+#: next_check_id: BHFBLANKENFELDE-2023
+#: note: Radfahrer sollen absteigen
+#: last_checked: 2025-02-04 (youtube)
+#: check_frequency: 120d
+#: next_check: 2025-09-01
+Bhf. Blankenfelde: Engstellen	q3::inwork 11667,-7536 11601,-7560 11551,-7599
+# 
 #: temporary ^^^
 ######################################################################
 Brandenburger Str.: Fuﬂg‰ngerzone	q4 -12883,-976 -12999,-1000 -13173,-1039 -13289,-1071 -13410,-1101 -13525,-1131 -13556,-1140

@@ -3771,7 +3771,23 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
+#: source_id: 2147346269 (mittlerweile inaktiv)
+#: source_id: 2147346566 (bis 22.12.2020) (inaktiv)
+#: source_id: 2147346747 (Restarbeiten bis zum 20.1.2021) (inaktiv)
+#: source_id: viz2021:13.361375,52.44703,08.02.2025,00:01 (bis 08.02.2025)
+#: note: bei rbbtext bereits entfernt
+# REMOVED --- #: also_indoor: traffic (G,H) --- #: last_checked: 2020-12-19 --- #: next_check: 2020-12-22 ---	q2::inwork; 7667,4549 7628,4521 7597,4499
+	q4::inwork 7667,4549 7628,4521 7597,4499
+',
+         'from' => 1738882800,
+         'id' => 3270,
+         'text' => 'Attilastr.: Fahrbahn zwischen Ringstr. und Steglitzer Damm gesperrt, am 8.2.2025 von 0 Uhr bis 5 Uhr',
+         'type' => 'handicap',
+         'until' => 1738987200
+       },
        undef,
        undef,
        undef,
@@ -3845,7 +3861,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: LEMKE-2020
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php (alte Sperrung von 2020)
 # REMOVED (alter Abschnit) ---	q4::inwork 25191,12343 25363,12553
-#: osm_watch: note 4513116 1
+#: osm_watch: note 4513116 2
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
 #: last_checked: 2024-11-09
 #: check_frequency: 90d
@@ -4865,7 +4881,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-01-22
+#: last_checked: 2025-02-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5421,7 +5437,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-01-20
+#: last_checked: 2025-02-07
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6600,7 +6616,9 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12985 (Einwohneranfrage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=13055 (Einwohneranfrage zur Einbahnstraßenregelung)
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
-#: next_check: 2025-04-30 vvv
+#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung) vvv
+#: osm_watch: way id="82451158" version="13"
+#: osm_watch: note 4444217 1
 Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233
 Schildower Str.	q4::inwork 4614,24233 4510,24170 4425,24067
 Bertastr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4448,24277 4510,24170 4613,24032
@@ -7525,6 +7543,16 @@ Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
          'text' => 'Zillestr.: Einbahnstraßenregelung zwischen Kaiser-Friedrich-Str. und Wilmersdorfer Str., Richtung Westen gesperrt, bis 28.02.2025',
          'type' => 'handicap',
          'until' => 1740783540
+       },
+       {
+         'data' => '#: source_id: 256501098 (bis 30.08.2025)
+	2::inwork -7632,34421 -8939,34942
+',
+         'from' => 1739088000,
+         'id' => 4254,
+         'text' => 'Bärenklau - Vehlefanz: Bauarbeiten, Sperrung, vom 10.02.2025 09:00 Uhr bis 30.08.2025 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1756562400
        }
      
 );
