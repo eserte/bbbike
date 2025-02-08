@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-02-07
+#: last_checked: 2025-02-08
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -671,7 +671,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: also_indoor: traffic (ex-G,B,T)
 #: last_checked: 2025-01-20 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-02-28 vvv
+#: next_check: 2025-02-28 (Halteverbotsschilder) vvv
 # REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956
@@ -975,9 +975,9 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="39"
 #: osm_watch: way id="1193560283" version="8"
-#: last_checked: 2025-01-22
+#: last_checked: 2025-02-08
 #: check_frequency: 90d
-#: next_check: 2025-06-06
+#: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
@@ -1054,12 +1054,13 @@ Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,1493
 #: note: Halteverbotsschilder gelten bis zum 30.04.2026
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10359 (Antrag)
+#: osm_watch: way id="1262014804" version="1"
 #: osm_watch: note 4126168 2
 #: osm_watch: note 4126169 1
 #: priority: #C
 #: last_checked: 2024-10-13
 #: check_frequency: 120d
-#: next_check: 2026-04-30
+#: next_check: 2026-04-30 (Halteverbotsschilder)
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1053645.php (25. Februar 2021 - 16. April 2021) --- #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/bauarbeiten-kreuzung-gesperrt_a301644 --- #: source_id: 2147346907 (bis 16.4.2021) --- #: last_checked: 2021-03-25 (mapillary) vvv --- #: next_check: 2021-04-16 vvv --- #: valid: -20210416 vvv --- Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15856,14915 15944,14836 16033,14756 --- Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15878,14761 15944,14836 15977,14871 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
@@ -1134,19 +1135,19 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/richtfeste-fuer-290-wohnungen_a417760
-#: also_indoor: traffic (G,H,B)
+#: also_indoor: traffic (G,H,B,T,A)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
 #: note: außerdem Beilsteiner Str. Höhe Merler Weg ist die Durchfahrt Richtung Süden mit Betonbarrieren versperrt, als Radfahrer kann man über den Hochbord vorbeifahren
 #: last_checked: 2025-01-22 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-02-14 vvv
-#: valid: -2025-02-14 vvv
+#: next_check: 2025-02-14 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: valid: -20250214 vvv
 #: osm_watch: way id="1089784266" version="4"
 #: osm_watch: way id="1231226671" version="1"
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
 #: osm_watch: way id="36786796" version="22"
 Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
-#: valid ^^^
+# REMOVED --- #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1284,6 +1285,11 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 # 
 ### Biesdorf ###
+# 
+#: next_check_id: WEISSENHOEHER-2025
+#: last_checked: 2025-02-08
+#: note: Länge des gesperrten Bereichs geschätzt 50m, u.U. Umwege notwendig
+Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv
 # REMOVED (hier wohl nicht mehr) --- Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20725,10594 20716,10434 20713,10293
@@ -4031,7 +4037,7 @@ Johannesstift: Krankenhausgelände, Aufpflasterungen	q1 -3953,17941 -4108,17776 -
 #: note: service-ähnliche Straße
 (Aristotelessteig - Treskowallee): Wohnanlage, Fußgänger	q2 18754,9584 18811,9576 18835,9572
 #: note: service-ähnliche Straße
-(Aristotelessteig - Treskowallee): Wohnanlage, Parkplatz	q2 18835,9572 18865,9608
+(Aristotelessteig - Treskowallee): Wohnanlage, Parkplatz	q2 18835,9572 18860,9605
 #: note: service-ähnliche Straße
 (Aristotelessteig - Hönower Str.): Wohnanlage, Parkplatz	q2 18835,9572 18837,9538 18846,9532
 (Christianstr. - Christophstr.): enger Pfad	q3 17964,16677 17952,16675 17925,16695
@@ -5283,6 +5289,9 @@ Ulsterstr.: enge Straße	q0- 13575,8378 13641,8470
 (Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger, unbequemes Überqueren der Grunewaldstr.	q4; 6935,9248 6921,9275
 # 
 (Zufahrt zum Kaufland): Parkplatz- und Lieferverkehr	q2 13727,14207 13757,14224 13846,14286 13873,14304 13913,14237 14007,14285
+# 
+#: note: Grünanlagenschild ohne weitere Zusatzschilder
+(Minsker Str. - Grabensprung): einige Fußgänger, Grünanlage	q2 20820,11333 20723,11338 20630,11342 20518,11346
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

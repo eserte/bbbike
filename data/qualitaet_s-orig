@@ -642,7 +642,7 @@ F¸rstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="20"
 #: osm_watch: way id="49180827" version="25"
-#: last_checked: 2024-12-11
+#: last_checked: 2024-12-15 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1639,7 +1639,9 @@ Gleiwitzer Str.: neuer Asphalt	Q0 21146,9988 20947,9999
 #: note: nach den Bauarbeiten 2023/2024 wurde die Fahrbahnfl‰che nicht groﬂfl‰chig asphaltiert
 #: by: https://pascalgrothe.de/gleiwitzer-strasse-zweiter-bauabschnitt-fuer-sanierung-startet-2025/ (Erneuerung im Fr¸hjahr 2025, dann vermutlich wieder besserer Asphalt)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12057 (Anfrage)
-#: next_check: 2025-05-01
+#: osm_watch: note 3729559 8
+#: last_checked: 2025-02-08
+#: next_check: 2025-05-01 (pascalgrothe)
 Gleiwitzer Str.: Asphalt mit unebenen Stellen	Q1+ 20947,9999 20703,10004
 Buchenhainer Str.: Asphalt	Q0 21164,8243 21325,8217
 Nitzwalder Str.: Asphalt	Q0 21325,8217 21461,8094 21535,8026
@@ -4431,7 +4433,7 @@ Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
 Upstallweg (Lichtenberg): Beton	Q0 17915,10350 17960,10378 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 # REMOVED (teilweise) --- #: XXX hat sich hier die Qualit‰t durch den Wohnungsneubau verbessert?
 Hˆnower Str.: Asphalt	Q0 18660,9410 18735,9421
-Hˆnower Str.: Kopfsteinpflaster	Q3 18735,9421 18765,9426 18846,9532 18875,9570
+Hˆnower Str.: Kopfsteinpflaster	Q3 18735,9421 18765,9426 18846,9532 18871,9565
 Hˆnower Str.: Asphalt	Q0 18660,9410 18626,9406
 Hˆnower Str.: Asphalt mit einigen Sch‰den	Q1+ 18626,9406 18545,9395 18490,9387
 (Adlergestell - Langer See): Schotterstraﬂe	Q2+ 26698,-2322 26846,-2176 26905,-2116
@@ -6806,7 +6808,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
 #: osm_watch: way id="4689097" version="33"
 #: XXX Wird hier die Fahrbahn saniert?
-#: last_checked: 2025-01-03
+#: last_checked: 2025-02-08
 #: check_frequency: 180d
 Einbecker Str.: lˆchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
@@ -8993,7 +8995,7 @@ Budapester Weg: Asphalt	Q0 20515,11275 20581,11272 20647,11267 20713,11263 20817
 Rauhkopfweg: Verbundsteinpflaster	Q0- 20581,11240 20581,11272
 Stachelbartweg: Verbundsteinpflaster	Q0- 20646,11237 20647,11267
 Wettersternweg: Verbundsteinpflaster	Q0- 20710,11234 20713,11263
-(Minsker Str. - Grabensprung): Asphalt	Q0 20820,11333 20630,11342 20618,11341 20518,11346
+(Minsker Str. - Grabensprung): Asphalt, einige Wurzelhebungen	Q0- 20820,11333 20723,11338 20630,11342 20518,11346
 Nossener Str.: Beton	Q0 24217,14041 24298,14267 24345,14403
 Mark-Twain-Str.: Beton	Q0 24345,14403 24363,14453 24345,14501
 Mark-Twain-Str.: Beton	Q0 24368,14570 24359,14543 24345,14501 24316,14412
@@ -12463,7 +12465,7 @@ Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 # REMOVED (durch die Umlegung der Fahrspur) --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX nach den Bauarbeiten vermutlich bessere Qualit‰t --- #: last_checked: 2019-07-20 --- #: next_check: 2020-05-01 --- Treskowallee: Asphalt mit Sch‰den	Q1+; 18704,8427 18718,8583
 (Gundelfinger Str. - Rˆmerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
 (Gundelfinger Str. - Rˆmerweg): Asphalt	Q0 18772,9694 18781,9744
-(Aristotelessteig - Treskowallee): Verbundsteinpflaster	Q1+ 18715,9589 18754,9584 18811,9576 18835,9572 18865,9608
+(Aristotelessteig - Treskowallee): Verbundsteinpflaster	Q1+ 18715,9589 18754,9584 18811,9576 18835,9572 18860,9605
 (Aristotelessteig - Hˆnower Str.): Verbundsteinpflaster	Q1+ 18835,9572 18837,9538 18846,9532
 Am Herzbergteich: Verbundsteinpflaster	Q1 17945,13493 17941,13564 17877,13562
 Dorfstr. (Wartenberg) [Nebenstraﬂe]: Beton mit kurzem Kopfsteinpflasterabschnitt	Q1- 17793,18999 17824,18963
@@ -12522,7 +12524,7 @@ Wolziger Zeile: Asphalt mit leichten Sch‰den	Q0- 10287,-2644 10253,-2643 10085,-
 (Marseillestr. - Dr.-Markus-Str.): wassergebundene Decke	Q1 12364,21623 12402,21537
 Karlinekenweg: Verbundsteinpflaster	Q1+ 11359,20297 11405,20196 11422,20202 11496,20068
 Karlinekenweg: Verbundsteinpflaster	Q1+ 11476,20058 11496,20068 11537,20087
-Hanoier Str.: Asphalt	Q0 20729,11483 20725,11375
+Hanoier Str.: Asphalt	Q0 20729,11483 20723,11338
 Gutenbergstr.: Asphalt	Q0 22842,12070 22836,12103 22812,12129 22752,12195 22603,12359
 Lubminer Weg: Verbundsteinpflaster	Q1 22319,12663 22391,12677
 Parchimer Str. [Stichstraﬂe]: Beton	Q1 22225,12281 22200,12267 22096,12267 22094,12225 22080,12218
@@ -30618,7 +30620,7 @@ Teufelsseechaussee [Auffahrt zum ehem. Horchposten]: Asphalt	Q1 -817,9533 -883,9
 #: corrected_by: srt (Q1 -> Q2+)
 (Teufelsseechaussee - Maik‰ferpfad): fester Waldweg, abschnittsweise etwas Schotter	Q2+ 335,10284 41,10501
 #: corrected_by: srt (Beton -> ...)
-Angerburger Allee: Asphalt	Q0 -1538,11126 -1608,11133 -1885,11392 -1931,11437 -1994,11496 -2109,11598 -2138,11772
+Angerburger Allee: Asphalt	Q0 -1538,11126 -1612,11158 -1885,11392 -1931,11437 -1994,11496 -2109,11598 -2138,11772
 #: corrected_by: srt (Asphalt Q1 -> Beton Q1+)
 Scottweg: Beton	Q1+ -684,11464 -966,11382
 #: corrected_by: srt (Asphalt Q1 -> Beton Q0-)
@@ -31903,13 +31905,15 @@ Johannes-Zoschke-Str.: m‰ﬂiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/ausbau-der-rheinpfalzallee-auf-der-kippe_a387334 (Baubeginn 2025?)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/ausbau-der-rheinpfalzallee-sollte-laut-spd-dringend-in-die-investitionsplanung_a391367
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
-#: last_checked: 2024-11-16 vvv
-#: next_check: 2025-03-01 vvv
+#: last_checked: 2025-02-08 vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: next_check: 2025-03-01 vvv
 #: confirmed_by: srt
-Rheinpfalzallee: Sandweg	Q2+ 18865,9608 18931,9629
+Rheinpfalzallee: Sandweg	Q2+ 18866,9584 18937,9617
 #: confirmed_by: srt (added holprig)
-Rheinpfalzallee: holpriger Sandweg	Q2 18931,9629 18987,9534 19030,9530
-#: next_check ^^^
+Rheinpfalzallee: holpriger Sandweg	Q2 18937,9617 18987,9534 19030,9530
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: by ^^^

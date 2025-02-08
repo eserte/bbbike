@@ -180,8 +180,8 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-02-07 vvv
-#: next_check: 2026-12-31 vvv
+#: last_checked: 2025-02-08 vvv
+#: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
 #: next_check ^^^
@@ -320,9 +320,9 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2025-01-22
+#: last_checked: 2025-02-08
 #: check_frequency: 90d
-#: next_check: 2025-06-06
+#: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.	1no 18585,10024 18411,10037
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18411,10037 18339,10048
 # 
@@ -1265,7 +1265,7 @@ Lindenweg	1s:q3 -3111,18105 -3076,18053 -3038,18063
 Küsterstr.	1 -622,15502 -593,15300 -569,15167
 Straßburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
-#XXX --- hmmm kann doch keine Einbahnstraßenregelung hier erkennen --- Waldowallee	1 18878,9517 18901,9499 18916,9468
+#XXX --- hmmm kann doch keine Einbahnstraßenregelung hier erkennen --- Waldowallee	1 18876,9512 18901,9499 18916,9468
 Waldowallee	1 18916,9468 18867,9464
 Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18200,11269 18229,11256
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
@@ -1734,6 +1734,8 @@ Minna-Cauer-Str.: Straßentunnel	3nocross 7901,13324 7895,13415 7907,13532
 #: last_checked: 2025-01-22
 #: check_frequency: 120d
 Zur Alten Börse - Merler Weg: gesperrtes Tor/Bauzaun	2 18736,13080 18749,13158
+# 
+Straße am Heizhaus: Betriebsgelände	2 20150,8962 20220,8976
 # 
 #: section ^^^
 ######################################################################
@@ -2389,7 +2391,7 @@ Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	1::igndisp 3852,10236 3880,1
 #: note ^^^
 Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18165,7371
-Treskowallee: Straßenbahntrasse	3nocross 18878,9517 18867,9464 18834,9256 18809,9133
+Treskowallee: Straßenbahntrasse	3nocross 18876,9512 18867,9464 18834,9256 18809,9133
 Treskowallee: Straßenbahntrasse	3nocross 18577,8033 18471,7862 18406,7760
 Treskowallee: Straßenbahntrasse	3nocross 18198,7425 18256,7520 18267,7537 18382,7724
 #: note: Spichernplatz, nicht überquerbar vvv
@@ -4022,7 +4024,7 @@ Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2:
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 # 
 #: osm_watch[closed]: note 4165928 1
-#: last_checked: 2025-01-03
+#: last_checked: 2025-02-08
 #: check_frequency: 60d
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -4151,9 +4153,9 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: also_indoor: traffic (G,ex-H[ungenau])
 #: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg; mittlerweile (2024-12-13) ist die Straße kaum noch erkennbar
 #: priority: #C
-#: last_checked: 2024-12-13
+#: last_checked: 2025-02-08
 #: check_frequency: 180d
-Am alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
+Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 # 
 #: next_check_id: AMWIEZENERBAHNHOF-2024
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
@@ -4265,7 +4267,7 @@ Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nic
 # 
 #: next_check_id: PLANSTRASSE9-2023
 #: osm_watch: way id="20420585" version="36"
-#: last_checked: 2024-12-13
+#: last_checked: 2025-02-08
 #: check_frequency: 60d
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
@@ -4319,9 +4321,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="28"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-01-22
+#: last_checked: 2025-02-08
 #: check_frequency: 90d
-#: next_check: 2025-06-06
+#: next_check: 2025-06-06 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
 # REMOVED (laut osm komplett offen)
@@ -4375,7 +4377,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-01-25
+#: last_checked: 2025-02-08
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4383,7 +4385,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-02-07 vvv
+#: last_checked: 2025-02-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4424,7 +4426,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025)
 #: priority: #C
-#: last_checked: 2025-02-07
+#: last_checked: 2025-02-08
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4697,15 +4699,16 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: osm_watch: way id="8042966" version="26"
 #: osm_watch: way id="8042965" version="24"
 #: osm_watch: way id="8043414" version="40"
-#: last_checked: 2025-01-19 (mapillary)
+#: last_checked: 2025-02-04 (mapillary)
 #: next_check: 2025-10-01
 #: valid: -20251001
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699
 #: osm_watch: way id="787699937" version="8"
 #: osm_watch: way id="280217696" version="10"
-#: last_checked: 2025-01-19 (mapillary)
-#: next_check: 2025-01-31
-#: valid: -20250131
+#: last_checked: 2025-02-04 (mapillary)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-01-31
+# REMOVED --- #: valid: -20250131
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
 # 
 # REMOVED (scheint offen zu sein) --- #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173 --- #: XXX culdesac-Eintrag für die Spreestr. anpassen! --- #: last_checked: 2022-10-05 --- #: check_frequency: 45d --- (Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
@@ -5993,8 +5996,8 @@ Treskowallee: Straßenbahntrasse	3nocross 18631,10167 18694,10018 18703,9997 1874
 # REMOVED --- Treskowallee: Straßenbahntrasse	3nocross 18807,9746 18763,9837 18740,9907
 #: by: Christian Schweda [AM]
 #: confirmed_by: srt
-Treskowallee: Straßenbahn	3nocross 18878,9517 18875,9570 18865,9608 18823,9708
-Treskowallee: Straßenbahn	3nocross 18807,9746 18823,9708 18865,9608
+Treskowallee: Straßenbahn	3nocross 18876,9512 18871,9565 18866,9584 18860,9605 18823,9708
+Treskowallee: Straßenbahn	3nocross 18807,9746 18823,9708 18860,9605
 #: by: Kay-Uwe Ludwig [AM] vvv
 #: confirmed_by: srt
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253

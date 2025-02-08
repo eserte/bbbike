@@ -28954,7 +28954,7 @@ EOF
 # REMOVED (bis Dorotheastr. frei) --- q4::inwork; 18809,9133 18790,9018 18770,8898
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
-# REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
+# REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18871,9565 18876,9512
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="32"
 #: osm_watch: note 4481312 6
@@ -28962,13 +28962,13 @@ EOF
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
-#: last_checked: 2024-12-13
-Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
+#: last_checked: 2025-02-08
+Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="38"
 #: osm_watch: way id="580507889" version="33"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-02-01 (osm)
+#: last_checked: 2025-02-08
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -30890,7 +30890,7 @@ EOF
 #: also_indoor: traffic (re-G,ex-H,ex-B,ex-T,W)
 #: osm_watch: way id="200775245" version="13"
 #: osm_watch: note 3210197 3
-#: last_checked: 2024-08-27 (mapillary)
+#: last_checked: 2025-02-04 (mapillary)
 # REMOVED --- #: check_frequency: 150d
 #: next_check: 2025-03-17 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
@@ -32518,9 +32518,8 @@ EOF
 #: source_id: 2147346269 (mittlerweile inaktiv)
 #: source_id: 2147346566 (bis 22.12.2020) (inaktiv)
 #: source_id: 2147346747 (Restarbeiten bis zum 20.1.2021) (inaktiv)
-#: source_id: viz2021:13.361375,52.44703,08.02.2025,00:01 (bis 08.02.2025)
-#: note: bei rbbtext bereits entfernt
-# REMOVED --- #: also_indoor: traffic (G,H) --- #: last_checked: 2020-12-19 --- #: next_check: 2020-12-22 ---	q2::inwork; 7667,4549 7628,4521 7597,4499
+#: source_id: viz2021:13.361375,52.44703,08.02.2025,00:01 (bis 08.02.2025) (inaktiv)
+# REMOVED --- #: note: bei rbbtext bereits entfernt --- #: also_indoor: traffic (G,H) --- #: last_checked: 2020-12-19 --- #: next_check: 2020-12-22 ---	q2::inwork; 7667,4549 7628,4521 7597,4499
 	q4::inwork 7667,4549 7628,4521 7597,4499
 EOF
      },
@@ -33646,6 +33645,7 @@ EOF
        data  => <<EOF,
 #: note: keine genauen Zeiten verfügbar
 #: note: am 2024-11-09 (Sa) gegen 10:50 war das westliche Tor halb offen, das östliche Tor geschlossen
+#: note: am 2025-02-08 (Sa) gegen 11:40 war das westliche Tor offen, das östliche Tor geschlossen
 #: by: https://abendblatt-berlin.de/2021/04/03/neue-feuerwehrwache-und-verwaltungsbueros-fuer-friedrichsfelde/
 #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/senat-lobt-demnaechst-einen-realisierungswettbewerb-aus_a306651
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
@@ -36691,12 +36691,12 @@ EOF
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
 #: by[nocache]: https://archive.is/nyxPx
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
-#: last_checked: 2025-01-19 (mapillary)
+#: last_checked: 2025-02-04 (mapillary)
 #: next_check: 2025-10-01
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
 #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin
-#: last_checked: 2025-01-19 (mapillary)
-#: next_check: 2025-01-31
+#: last_checked: 2025-02-04 (mapillary)
+# REMOVED --- #: next_check: 2025-01-31
 #: note: eigentlich 1s:q3
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
 EOF
@@ -37496,7 +37496,7 @@ EOF
      },
      { from  => 1663524336,
        until => undef, # XXX Einschränkungen werden länger dauern als bei der VIZ angegeben
-       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung; außerdem sind Löptener Str. und Gerstnerweg Einbahnstraßen; ab 19.9.2022',
+       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung; außerdem sind Löptener Str., Gerstnerweg und südliche Mellener Str. Einbahnstraßen; ab 19.9.2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1242149.php',
        data  => <<EOF,
@@ -37506,10 +37506,11 @@ EOF
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2024-09-15 (mapillary) vvv
+#: last_checked: 2025-02-04 (mapillary) vvv
 #: next_check: 2025-08-29 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
+Mellener Str.	q4::inwork; 10756,-2128 10763,-2276
 Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED (hier nicht mehr) --- Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
 #: next_check ^^^
@@ -37620,7 +37621,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-02-07
+#: last_checked: 2025-02-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40062,7 +40063,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-02-07
+#: last_checked: 2025-02-08
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -45017,6 +45018,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
+#: osm_watch: way id="1083535036" version="6"
+#: osm_watch: way id="1119255054" version="5"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
 #: last_checked: 2025-02-04
@@ -45133,7 +45136,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-01-28 (website) vvv
+#: last_checked: 2025-02-08 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -45203,6 +45206,7 @@ EOF
        data  => <<EOF,
 #: by: https://entwicklungsstadt.de/holzmarktstrasse-in-friedrichshain-tankstelle-muss-neubau-weichen/ (Abriss der Tankstelle bis Ende 2025, keine weiteren Termine)
 #: by: https://www.deutsches-architekturforum.de/thread/9728-friedrichshain-west-westl-der-petersburger-und-warschauer-str/?postID=773638#post773638
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ehemalige-total-energies-tankstelle-ostbahnhof-holzmarktstra%C3%9Fe-36-42.1473/#post-24511
 #: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen.
 #: osm_watch: way id="482690912" version="6"
 #: last_checked: 2025-01-28 vvv
@@ -46117,7 +46121,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (T,B,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-26
+#: last_checked: 2025-02-08 (traffic)
 #: check_frequency: 14d (traffic checks)
 	q4::inwork 16668,14765 16750,14747
 EOF

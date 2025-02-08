@@ -49,8 +49,8 @@
 #: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023) (bis 04.09.2023) (bis 18.09.2023) (bis 31.10.2023) (bis 27.11.2023) (bis 05.08.2024) (bis 31.12.2024) (bis 30.04.2025) (bis 31.08.2025 + weitere Arbeiten)
 #: source_id: viz2021:13.361226,52.446957,15.12.2023,20:00 (angrenzende Attilastr., bis 17.12.2023) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
-#: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025)
-#: last_checked: 2025-01-13 (okas)
+#: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
+#: last_checked: 2025-02-04 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung)
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -3804,8 +3804,8 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 21135,10995 21136,11134 21138,11254 21138,11271
 # REMOVED	RW; 18823,9708 18807,9746 18769,9839 18740,9907
 	RW1;RW1 18740,9907 18769,9839 18807,9746 18823,9708
 #: note: die Ausschilderung ist "Gehweg für Radfahrer frei", aber es existiert ein separater Radweg hier
-	RW1; 18823,9708 18865,9608 18875,9570
-	RW4; 18875,9570 18878,9517
+	RW1; 18823,9708 18860,9605 18866,9584 18871,9565
+	RW4; 18871,9565 18876,9512
 	RW2;RW1 18740,9907 18703,9997 18694,10018 18631,10167
 	RW4;RW4 18417,10738 18446,10620 18554,10354
 Busspur ist immer gültig	RW5; 18554,10354 18585,10278 18609,10220
@@ -5177,7 +5177,7 @@ Verbundsteinpflaster	RW1; 19536,9853 19459,9842 19398,9833 19242,9815
 #: note: Autos parken nur auf einer Seite, zurzeit (Ende 2024) ist es überwiegend die andere Seite
 asphaltiert, Grundstückseinfahrten gepflastert, kein Unterstreifen	RW1; 19242,9815 19144,9810 19100,9811 19005,9816 18934,9826 18881,9865
 #: XXX Radweg wird zurzeit saniert (neue Asphaltierung)
-#: last_checked: 2024-12-24
+#: last_checked: 2025-02-08
 #: check_frequency: 90d
 Radweg antik und unbenutzbar	RW1; 18881,9865 18843,9952
 # 
@@ -5986,7 +5986,7 @@ asphaltiert	RW1; 17169,11677 17020,11748
 	RW6;RW6 7077,12575 7139,12589
 	RW6;RW6 7330,12871 7270,12870
 	RW6;RW6 5858,12425 5800,12361
-	RW1;RW2 -1994,11496 -1931,11437 -1885,11392 -1608,11133 -1538,11126
+	RW1;RW2 -1994,11496 -1931,11437 -1885,11392 -1612,11158 -1538,11126
 	RW6;RW6 2437,12283 2658,12312
 	RW6;RW6 2460,12163 2672,12190 2897,12217
 	RW6;RW6 2899,12200 3072,12222
@@ -7839,7 +7839,7 @@ asphaltiert	RW1;RW1 19363,3730 19125,3491
 	RW3;RW3 4467,9163 4609,9027 4689,8953
 	RW3; 4689,8953 4777,8870
 einige Meter mit Benutzungspflicht	RW3; 4777,8870 4689,8953
-	RW4; 18867,9464 18878,9517 18875,9570 18865,9608 18823,9708
+	RW4; 18867,9464 18876,9512 18871,9565 18866,9584 18860,9605 18823,9708
 	RW6;RW6 -1710,16735 -1857,16766
 	RW6;RW6 -1783,16533 -1897,16562
 	RW6;RW6 -1798,16465 -1902,16493
@@ -8253,8 +8253,8 @@ Tempo 10	RW6;RW6 20348,7634 20459,7445 20501,7472 20540,7532
 # 
 # REMOVED (früher, vor Bau der Unterführung) --- RW3;RW3 10228,-2136 10191,-2135 10163,-2136 10096,-2137
 Bushaltestelle	RW5;RW5 10163,-2136 10191,-2135 10228,-2136
-niedrige Protektionselemente	RW4; 10228,-2136 10258,-2135 10300,-2135
-niedrige Protektionselemente	RW4; 10163,-2136 10096,-2137
+niedrige Protektionselemente und Leitboys	RW4; 10228,-2136 10258,-2135 10300,-2135
+niedrige Protektionselemente und Leitboys	RW4; 10163,-2136 10096,-2137
 # 
 	RW6;RW6 12422,21492 12472,21510
 Grünbeschichtung, Leitboys	RW4; 22092,999 22092,977 22100,941
@@ -8780,7 +8780,7 @@ asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,44
 	RW4; 7098,3067 7105,3040 7115,3003
 #: by: mapillary
 	RW3;RW3 18938,2054 18881,2062
-	RW3; 18878,9517 18901,9499 18916,9468
+	RW3; 18876,9512 18901,9499 18916,9468
 #: by: https://westnordost.de/p/30170.jpg
 	RW6;RW6 8367,10745 8350,10662 8335,10518
 Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
@@ -9003,7 +9003,7 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025) (bis 28.02.2025) (bis 17.03.2025) vvv
 #: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
-#: last_checked: 2024-08-27 (mapillary) vvv
+#: last_checked: 2025-02-04 (mapillary) vvv
 # REMOVED -- #: check_frequency: 90d
 #: next_check: 2025-03-17 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2024-01-01
