@@ -37,7 +37,7 @@ ok $grepstrassen, 'Found grepstrassen';
 ok -f $grepstrassen, 'Really found grepstrassen';
 
 {
-    my $out = run_grepstrassen "", [];
+    my $out = run_grepstrassen \"", [];
     is $out, '', 'empty file';
 }
 
@@ -54,7 +54,7 @@ EOF
 ######################################################################
 # match category
 {
-    my $out = run_grepstrassen $sample_bbd, ["-cat", "X1", "-preserveglobaldirectives"];
+    my $out = run_grepstrassen \$sample_bbd, ["-cat", "X1", "-preserveglobaldirectives"];
     is $out, <<'EOF';
 #: global_directive: 4711
 #:
@@ -64,7 +64,7 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-v", "-cat", "X1"];
+    my $out = run_grepstrassen \$sample_bbd, ["-v", "-cat", "X1"];
     is $out, <<'EOF';
 #:
 #: local_directive: 24
@@ -74,7 +74,7 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-catrx", "^X[12]"];
+    my $out = run_grepstrassen \$sample_bbd, ["-catrx", "^X[12]"];
     is $out, <<'EOF';
 #:
 #: local_directive: 12
@@ -85,14 +85,14 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-v", "-catrx", "^X[12]"];
+    my $out = run_grepstrassen \$sample_bbd, ["-v", "-catrx", "^X[12]"];
     is $out, <<'EOF';
 Primjerulica	X3 300,300 400,400
 EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-i", "-catrx", '^x3$'];
+    my $out = run_grepstrassen \$sample_bbd, ["-i", "-catrx", '^x3$'];
     is $out, <<'EOF';
 Primjerulica	X3 300,300 400,400
 EOF
@@ -101,7 +101,7 @@ EOF
 ######################################################################
 # match name
 {
-    my $out = run_grepstrassen $sample_bbd, ["-name", "Samplestreet"];
+    my $out = run_grepstrassen \$sample_bbd, ["-name", "Samplestreet"];
     is $out, <<'EOF';
 #:
 #: local_directive: 12
@@ -110,7 +110,7 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-v", "-name", "Samplestreet"];
+    my $out = run_grepstrassen \$sample_bbd, ["-v", "-name", "Samplestreet"];
     is $out, <<'EOF';
 #:
 #: local_directive: 24
@@ -120,7 +120,7 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-namerx", "^(Sample|Beispiel)"];
+    my $out = run_grepstrassen \$sample_bbd, ["-namerx", "^(Sample|Beispiel)"];
     is $out, <<'EOF';
 #:
 #: local_directive: 12
@@ -131,14 +131,14 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-v", "-namerx", "^(Sample|Beispiel)"];
+    my $out = run_grepstrassen \$sample_bbd, ["-v", "-namerx", "^(Sample|Beispiel)"];
     is $out, <<'EOF';
 Primjerulica	X3 300,300 400,400
 EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-i", "-namerx", 'primjer'];
+    my $out = run_grepstrassen \$sample_bbd, ["-i", "-namerx", 'primjer'];
     is $out, <<'EOF';
 Primjerulica	X3 300,300 400,400
 EOF
@@ -147,17 +147,17 @@ EOF
 ######################################################################
 # match code
 {
-    my $out = run_grepstrassen $sample_bbd, ["-code", '0'];
+    my $out = run_grepstrassen \$sample_bbd, ["-code", '0'];
     is $out, '';
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-code", '1', '-v'];
+    my $out = run_grepstrassen \$sample_bbd, ["-code", '1', '-v'];
     is $out, '';
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-code", '$r->[0] eq "Samplestreet"'];
+    my $out = run_grepstrassen \$sample_bbd, ["-code", '$r->[0] eq "Samplestreet"'];
     is $out, <<'EOF';
 #:
 #: local_directive: 12
@@ -166,7 +166,7 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-code", '($dir->{local_directive}[0]||"") eq 12'];
+    my $out = run_grepstrassen \$sample_bbd, ["-code", '($dir->{local_directive}[0]||"") eq 12'];
     is $out, <<'EOF';
 #:
 #: local_directive: 12
@@ -177,7 +177,7 @@ EOF
 ######################################################################
 # match directive
 {
-    my $out = run_grepstrassen $sample_bbd, ["-directive", "local_directive=12"];
+    my $out = run_grepstrassen \$sample_bbd, ["-directive", "local_directive=12"];
     is $out, <<'EOF';
 #:
 #: local_directive: 12
@@ -186,7 +186,7 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-v", "-directive", "local_directive=12"];
+    my $out = run_grepstrassen \$sample_bbd, ["-v", "-directive", "local_directive=12"];
     is $out, <<'EOF';
 #:
 #: local_directive: 24
@@ -196,7 +196,7 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-directive", "local_directive~."];
+    my $out = run_grepstrassen \$sample_bbd, ["-directive", "local_directive~."];
     is $out, <<'EOF';
 #:
 #: local_directive: 12
@@ -207,7 +207,7 @@ EOF
 }
 
 {
-    my $out = run_grepstrassen $sample_bbd, ["-v", "-directive", "local_directive~."];
+    my $out = run_grepstrassen \$sample_bbd, ["-v", "-directive", "local_directive~."];
     is $out, <<'EOF';
 Primjerulica	X3 300,300 400,400
 EOF
@@ -228,7 +228,7 @@ Alwaysvalidalley	X4 400,400 500,500
 EOF
 
 {
-    my $out = run_grepstrassen $sample_valid_bbd, [];
+    my $out = run_grepstrassen \$sample_valid_bbd, [];
     is $out, $sample_valid_bbd;
 }
 
@@ -237,15 +237,15 @@ EOF
 Samplestreet	X1 100,100 200,200
 Alwaysvalidalley	X4 400,400 500,500
 EOF
-    is run_grepstrassen($sample_valid_bbd, ["-valid", "20111231"]), $expected;
-    is run_grepstrassen($sample_valid_bbd, ["-valid", "20120101"]), $expected;
+    is run_grepstrassen(\$sample_valid_bbd, ["-valid", "20111231"]), $expected;
+    is run_grepstrassen(\$sample_valid_bbd, ["-valid", "20120101"]), $expected;
 }
 
 {
     my $expected = <<'EOF';
 Alwaysvalidalley	X4 400,400 500,500
 EOF
-    is run_grepstrassen($sample_valid_bbd, ["-valid", "20120102"]), $expected;
+    is run_grepstrassen(\$sample_valid_bbd, ["-valid", "20120102"]), $expected;
 }
 
 {
@@ -253,7 +253,7 @@ EOF
 Primjerulica	X3 300,300 400,400
 Alwaysvalidalley	X4 400,400 500,500
 EOF
-    is run_grepstrassen($sample_valid_bbd, ["-valid", "20120201"]), $expected;
+    is run_grepstrassen(\$sample_valid_bbd, ["-valid", "20120201"]), $expected;
 }
 
 {
@@ -262,8 +262,8 @@ Beispielstrasse	X2 200,200 300,300
 Primjerulica	X3 300,300 400,400
 Alwaysvalidalley	X4 400,400 500,500
 EOF
-    is run_grepstrassen($sample_valid_bbd, ["-valid", "20120301"]), $expected;
-    is run_grepstrassen($sample_valid_bbd, ["-valid", "20120401"]), $expected;
+    is run_grepstrassen(\$sample_valid_bbd, ["-valid", "20120301"]), $expected;
+    is run_grepstrassen(\$sample_valid_bbd, ["-valid", "20120401"]), $expected;
 }
 
 {
@@ -271,7 +271,7 @@ EOF
 Beispielstrasse	X2 200,200 300,300
 Alwaysvalidalley	X4 400,400 500,500
 EOF
-    is run_grepstrassen($sample_valid_bbd, ["-valid", "20120402"]), $expected;
+    is run_grepstrassen(\$sample_valid_bbd, ["-valid", "20120402"]), $expected;
 }
 
 {
@@ -294,8 +294,8 @@ Beispielstrasse	X2 200,200 300,300
 Primjerulica	X3 300,300 400,400
 Alwaysvalidalley	X4 400,400 500,500
 EOF
-    is run_grepstrassen($sample_valid2_bbd, ["-valid", "2012-03-01"]), $expected;
-    is run_grepstrassen($sample_valid2_bbd, ["-valid", "2012-04-01"]), $expected;
+    is run_grepstrassen(\$sample_valid2_bbd, ["-valid", "2012-03-01"]), $expected;
+    is run_grepstrassen(\$sample_valid2_bbd, ["-valid", "2012-04-01"]), $expected;
 }
 
 {
@@ -312,10 +312,10 @@ EOF
     my $expected_within_period = <<'EOF';
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
 EOF
-    is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20140223"]), $expected_without_period;
-    is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20140224"]), $expected_within_period;
-    is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20170601"]), $expected_within_period;
-    is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20170602"]), $expected_without_period;
+    is run_grepstrassen(\$sample_inverted_valid_bbd, ["-valid", "20140223"]), $expected_without_period;
+    is run_grepstrassen(\$sample_inverted_valid_bbd, ["-valid", "20140224"]), $expected_within_period;
+    is run_grepstrassen(\$sample_inverted_valid_bbd, ["-valid", "20170601"]), $expected_within_period;
+    is run_grepstrassen(\$sample_inverted_valid_bbd, ["-valid", "20170602"]), $expected_without_period;
 }
 
 ######################################################################
@@ -329,7 +329,7 @@ EOF
     my $expected_bbd = <<'EOF';
 Foo street (a directive with a tab)	? 1,2 3,4
 EOF
-    run_grepstrassen($directive_bbd, ['-adddirectives', 'XXX']);
+    run_grepstrassen(\$directive_bbd, ['-adddirectives', 'XXX']);
     # side effect (the basename "-" is used because we feed the bbd
     # data through stdin)
     my $generated_file = "/tmp/XXX_-.bbd";
@@ -354,7 +354,7 @@ EOF
 #: local: dir
 Wilhelmstr.	H 8861,12125 8901,12008 8965,11825 8969,11814 9000,11727 9058,11564 9155,11283 9196,11165 9234,11056 9275,10932 9323,10791 9368,10641 9375,10616 9384,10536 9388,10393 9404,10250
 EOF
-    my $segs_bbd = run_grepstrassen($wilhelmstr_bbd, ['-inner', $tmpfile, '-onlyenclosed', '-preserveglobaldirectives']);
+    my $segs_bbd = run_grepstrassen(\$wilhelmstr_bbd, ['-inner', $tmpfile, '-onlyenclosed', '-preserveglobaldirectives']);
     eq_or_diff $segs_bbd, <<'EOF';
 #: global: dir
 #:
@@ -383,7 +383,7 @@ EOF
     ok !run [$^X, $grepstrassen, '-innerbbox', '1,2,3,4,5'], '<', \$in_bbd, '2>', \$err;
     like $err, qr/-innerbox should consist of four comma-separated values, but got more/;
 
-    my $filtered_bbd = run_grepstrassen($in_bbd, ['-innerbbox', '13.0,52.0,14.0,53.0', '-preserveglobaldirectives']);
+    my $filtered_bbd = run_grepstrassen(\$in_bbd, ['-innerbbox', '13.0,52.0,14.0,53.0', '-preserveglobaldirectives']);
     eq_or_diff $filtered_bbd, <<'EOF';
 #: map: polar
 #:
@@ -434,6 +434,44 @@ EOF
 }
 
 ######################################################################
+# -withsourcedirectives
+{
+    my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => '_withsourcedirectives.bbd');
+    print $tmpfh <<'EOF';
+Astreet	H 13.5,52.5
+Bstreet	H 10.5,52.5
+#: test_directive: yes
+Cstreet	N 13.5,50.5
+Dstreet	N 16.5,52.5
+EOF
+    close $tmpfh or die $!;
+
+    {
+	my $filtered_bbd = run_grepstrassen($tmpfile, ['-withsourcedirectives', '-cat', 'H']);
+	eq_or_diff $filtered_bbd, <<"EOF";
+#:
+#: source_file: $tmpfile
+#: source_line: 1
+Astreet	H 13.5,52.5
+#: source_line: 2
+Bstreet	H 10.5,52.5
+EOF
+    }
+    {
+	my $filtered_bbd = run_grepstrassen($tmpfile, ['-withsourcedirectives', '-cat', 'N']);
+	eq_or_diff $filtered_bbd, <<"EOF";
+#:
+#: test_directive: yes
+#: source_file: $tmpfile
+#: source_line: 4
+Cstreet	N 13.5,50.5
+#: source_line: 5
+Dstreet	N 16.5,52.5
+EOF
+    }
+}
+
+######################################################################
 # encoding tests
 {
     my $sample_latin1_bbd = <<'EOF';
@@ -457,12 +495,12 @@ EOF
 	my($bbd, $test_label) = @$def;
 
 	{
-	    my $out = run_grepstrassen $bbd, [];
+	    my $out = run_grepstrassen \$bbd, [];
 	    eq_or_diff $out, $bbd, "bbd file with $test_label - roundtrip with no grepstrassen arguments";
 	}
 
 	{
-	    my $out = run_grepstrassen $bbd, ['-preserveglobaldirectives'];
+	    my $out = run_grepstrassen \$bbd, ['-preserveglobaldirectives'];
 	    eq_or_diff $out, $bbd, "bbd file with $test_label - roundtrip with -preserveglobaldirectives";
 	}
     }
@@ -471,10 +509,13 @@ EOF
 ######################################################################
 
 sub run_grepstrassen ($$) {
-    my($in_data, $args) = @_;
+    my($in_data_or_file, $args) = @_;
     my($out_data, $err);
     # "binary" is for Windows
-    my $res = run [$^X, $grepstrassen, @$args], "<", binary, \$in_data, ">", binary, \$out_data, "2>", \$err;
+    my $res = run [$^X, $grepstrassen, @$args, (!ref $in_data_or_file ? $in_data_or_file : ())],
+	          (ref $in_data_or_file ? ("<", binary, $in_data_or_file) : ()),
+		  ">", binary, \$out_data,
+		  "2>", \$err;
     ok $res, "No error running grepstrassen @$args";
     {
 	local $TODO;

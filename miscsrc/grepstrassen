@@ -32,6 +32,7 @@ my($minarea, $minlength);
 my $preserveglobaldirectives;
 my $ignoreglobaldirectives;
 my $ignorelocaldirectives;
+my $withsourcedirectives;
 my $removenoncoords;
 tie my %special, 'Tie::IxHash';
 tie my %special_init, 'Tie::IxHash';
@@ -71,6 +72,7 @@ GetOptions("v" => \$v,
 	   'outer=s@' => \@outer,
 	   'innerbbox=s' => \$innerbbox,
 	   "onlyenclosed!" => \$onlyenclosed,
+	   'withsourcedirectives' => \$withsourcedirectives,
 	  ) or die <<EOF;
 usage: $0 [-v] [-i] [-cat category | -catrx regexp]
        [-name name | -namerx regexp]
@@ -80,12 +82,17 @@ usage: $0 [-v] [-i] [-cat category | -catrx regexp]
        [-valid today|YYYYMMDD]
        [-special name] [-minarea ...km²] [-minlength ...km]
        [-preserveglobaldirectives] [-ignoreglobaldirectives]
+       [-withsourcedirectives]
        [-ignorelocaldirectives] [-removenoncoords]
        [-inner file [-inner ...] [-innerbbox lon1,lat1,lon2,lat2] [-onlyenclosed]] [-outer file [-outer ...]] bbd ...
 
 section is a region marked with the "section" directive in a bbd file.
 
 EOF
+
+if ($withsourcedirectives && $ignorelocaldirectives) {
+    die "ERROR: using both -withsourcedirectives and -ignorelocaldirectives is not possible.\n";
+}
 
 if ($catrx) {
     $catrx = $i ? qr{$catrx}i : qr{$catrx};
@@ -182,8 +189,14 @@ if (!@datafiles) {
 }
 my $s;
 if (@datafiles == 1) {
+    if ($withsourcedirectives && $datafiles[0] eq '-') {
+	die "ERROR: -withsourcedirectives option does not support reading from stdin.\n";
+    }
     $s = Strassen->new($datafiles[0], UseLocalDirectives => 1, PreserveLineInfo => 1);
 } else {
+    if ($withsourcedirectives) {
+	die "ERROR: -withsourcedirectives option does not support multiple source files yet.\n"; # XXX NYI
+    }
     require Strassen::MultiStrassen;
     $s = MultiStrassen->new(map {
 	my $s = eval {
@@ -235,6 +248,7 @@ for my $type (keys %special_init) {
 
 $s->init;
 my @errors;
+my $source_file_directive_emitted;
 LOOP_STREETS: while(1) {
     my $r = $s->next;
     if (!$r->[1]) {
@@ -253,7 +267,7 @@ LOOP_STREETS: while(1) {
     # Match CATEGORY
     if (defined $cat) { if ($r->[2] eq $cat) { next if $v } else { next unless $v } }
     if (defined $catrx) { if ($r->[2] =~ $catrx) { next if $v } else { next unless $v } }
-    my $dir = $s->get_directive;
+    my $dir = $s->get_writable_directives;
     # Match CODE
     if ($code) { if ($code->($r, $dir)) { next if $v } else { next unless $v } }
     # Match SECTION
@@ -338,6 +352,13 @@ LOOP_STREETS: while(1) {
 	if ($do_copy) {
 	    $r->[Strassen::COORDS] = \@new_c;
 	}
+    }
+    if ($withsourcedirectives) {
+	if (!$source_file_directive_emitted) {
+	    push @{ $dir->{source_file} }, ($s->file)[0];
+	    $source_file_directive_emitted = 1;
+	}
+	push @{ $dir->{source_line} }, $s->line;
     }
     if ($ignorelocaldirectives) {
 	$new_s->push_ext($r);
