@@ -759,6 +759,15 @@ sub get_directives {
     $self->{Directives}[$pos] || {};
 }
 
+sub get_writable_directives {
+    my($self, $pos) = @_;
+    my $res = $self->get_directives($pos);
+    if (_has_tie_ixhash() && !keys %$res && !tied %$res) {
+	tie %$res, 'Tie::IxHash';
+    }
+    $res;
+}
+
 sub set_directives_for_current {
     my($self, $directives) = @_;
     my $pos = $#{ $self->{Data} };

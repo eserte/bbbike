@@ -51,7 +51,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 75;
+my $basic_tests = 82;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -190,17 +190,38 @@ EOF
 #:
 #: local_directive: yes!
 Straße A	? 6353,22515
+Straße B	? 22515,6353
 EOF
     my $s = Strassen->new_from_data_string($data, UseLocalDirectives => 1);
     isa_ok $s, 'Strassen';
     $s->init;
-    my $r = $s->next;
+    my($r, $dir, $writable_dir);
+
+    $r = $s->next;
+    $dir = $s->get_directives;
+    $writable_dir = $s->get_writable_directives;
     is $r->[Strassen::NAME], 'Straße A', 'Got street name';
     is $r->[Strassen::CAT], '?', 'Got category';
     is_deeply $r->[Strassen::COORDS], ['6353,22515'], 'Got coordinates';
-    my $dir = $s->get_directives;
     is_deeply $dir->{local_directive}, ['yes!'], 'Got local directive';
-    is scalar(keys %$dir), 1, 'Only one local directive';
+    is scalar(keys %$dir), 1, 'Only one local directive (returned by get_directives)';
+    is scalar(keys %$writable_dir), 1, 'Only one local directive (returned by get_writable_directives)';
+ SKIP: {
+	skip "Does not work without Tie::IxHash", 2 if tie_ixhash_hidden;
+	is ref(tied(%$dir)), 'Tie::IxHash', 'tied, because non-empty';
+	is ref(tied(%$writable_dir)), 'Tie::IxHash', 'tied, because returned by get_writable_directives';
+    }
+
+    $r = $s->next;
+    $dir = $s->get_directives;
+    $writable_dir = $s->get_writable_directives;
+    is_deeply $dir, {}, 'No local directives in 2nd entry (returned by get_directives)';
+    is_deeply $writable_dir, {}, 'No local directives in 2nd entry (returned by get_writable_directives)';
+    ok !tied(%$dir), 'empty local directives are not tied if returned by get_directives';
+ SKIP: {
+	skip "Does not work without Tie::IxHash", 1 if tie_ixhash_hidden;
+	is ref(tied(%$writable_dir)), 'Tie::IxHash', 'even empty local directives are tied';
+    }
 }
 
 {
