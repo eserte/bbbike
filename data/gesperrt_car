@@ -620,8 +620,8 @@ Saldernstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2400,11597 2371,11475 2391,
 Mittelstreifen	3nocross::ignrte 15850,14308 15925,14316 16010,14326 16314,14361
 Landsberger Allee -> Große-Leege-Str.: Mittelstreifen	3::igndisp 15850,14308 15925,14316 15923,14334
 Große-Leege-Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15923,14334 15925,14316 16010,14326
-Landsberger Allee -> Große-Leege-Str.: Mittelstreifen	3::igndisp 15925,14316 16010,14326 16007,14367
-Große-Leege-Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 16007,14367 16010,14326 16314,14361
+Landsberger Allee -> Landsberger Allee, Zufahrt zur Nebenfahrbahn: Mittelstreifen	3::igndisp 15925,14316 16010,14326 16007,14367
+Landsberger Allee, Zufahrt zur Nebenfahrbahn -> Landsberger Allee: Mittelstreifen	3::igndisp 16007,14367 16010,14326 16314,14361
 Mittelstreifen	3nocross::ignrte -1485,15463 -1389,15285 -1345,15060
 Daumstr. -> Goldbeckweg: Mittelstreifen	3::igndisp -1345,15060 -1389,15285 -1532,15225
 Lüdenscheider Weg -> Daumstr.: Mittelstreifen	3::igndisp -1037,15482 -1389,15285 -1345,15060

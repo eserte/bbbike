@@ -3429,10 +3429,10 @@ Lessinghöhe: Verbundsteinpflaster	Q1 12625,7829 12602,7907 12583,7974
 Elli-Voigt-Str.: Asphalt	Q0 15896,13760 15831,13760 15792,13764 15698,13765
 Elli-Voigt-Str.: Asphalt	Q0 15833,13596 15831,13760
 Elli-Voigt-Str.: Asphalt	Q0 15792,13764 15794,13975 15760,14036 15758,14088
-Bernhard-Bästlein-Str.: Asphalt	Q0 15595,14041 15600,14077 15711,14079 15758,14088
+Bernhard-Bästlein-Str.: Asphalt	Q0 15595,14045 15596,14078 15678,14080 15710,14086 15758,14088
 Vulkanstr. [Wohngebiet]: Asphalt	Q0 15871,14106 15758,14088
-Weißenseer Weg [Wohngebiet]: Asphalt, einige Schäden	Q1 15357,14213 15359,14157 15410,14019
-Weißenseer Weg [Wohngebiet]: Asphalt	Q0 15410,14019 15433,13957 15493,13795 15593,13768
+Weißenseer Weg [Wohngebiet]: Asphalt, einige Schäden	Q1 15357,14213 15359,14157 15412,14014
+Weißenseer Weg [Wohngebiet]: Asphalt	Q0 15412,14014 15433,13957 15493,13795 15593,13768
 Landsberger Allee - Große-Leege-Str.: Verbundsteinpflaster	Q1 15920,14357 15902,14498
 Landsberger Allee - Große-Leege-Str.: Asphalt	Q0 15902,14498 15896,14548 15899,14598
 Verdener Gasse: Asphalt	Q0 15878,14761 15946,14702
@@ -3456,7 +3456,8 @@ Schneeglöckchenstr.: Asphalt mit Schäden	Q1 14122,13947 14137,13987
 Schneeglöckchenstr.: Asphalt	Q0 14137,13987 14166,14069 14217,14206
 Schneeglöckchenstr.: Asphalt mit einigen leichten Schäden	Q0 14217,14206 14284,14469
 Süderbrokweg: Kopfsteinpflaster	Q2 13933,14622 13940,14654
-Süderbrokweg: mäßiger Beton	Q1 13940,14654 13990,14729 14051,14822 14080,14862 14103,14853
+Süderbrokweg: mäßiger Beton	Q1 13940,14654 13990,14729
+Süderbrokweg: mäßiger Beton	Q1 13990,14729 14051,14822 14080,14862 14103,14853
 Steengravenweg: mäßiger Beton und schadhafte Asphaltierungen	Q1 13733,14813 13795,14876
 Steengravenweg: mäßiger Beton	Q1 13795,14876 13856,14944
 (Kniprodestr./Michelangelostr. - Puccinistr.): Beton	Q1 13816,15137 13854,15129 13875,15142 13952,15234
@@ -6746,10 +6747,11 @@ Blumberger Damm: Beton	Q0 21908,16634 21885,16494 21862,16381
 Blumberger Damm: Beton mit Schäden	Q1 21862,16381 21842,16242
 Blumberger Damm: Beton mit Schäden	Q1 21842,16242 21835,16210 21812,16189 21788,16002 21816,15954
 Blumberger Damm [Wohngebiet]: Beton	Q0 21824,16506 21574,16547
-Landsberger Allee [Wohngebiet]: Asphalt, einige Schäden	Q1 15711,14079 15701,14148 15666,14212 15596,14247 15357,14213
+Landsberger Allee [Wohngebiet]: Asphalt, einige Schäden	Q1 15710,14086 15701,14148 15666,14212 15596,14247 15357,14213
 Landsberger Allee [Wohngebiet]: Beton mit Schäden	Q1 22092,16029 22112,16137
 Landsberger Allee [Nebenfahrbahn]: Beton mit Schäden	Q1 21816,15954 21891,15938 22092,16029
 Landsberger Allee [zur Nebenfahrbahn]: Asphalt	Q0 22109,15990 22092,16029
+Landsberger Allee [Nebenfahrbahn]: Asphalt mit einigen leichten Schäden	Q0 16304,14434 16078,14413
 (Weißenseer Weg/Landsberger Allee - Wohngebiet): Verbundsteinpflaster	Q1 15256,14237 15357,14213
 Grohsteig: welliger Asphalt	Q1 21426,15979 21416,16027 21400,16117 21400,16207 21407,16257
 Oppermannstr.: Beton	Q0 21617,16061 21598,16055 21426,15979 21232,15894 21191,15914
@@ -16234,7 +16236,7 @@ Peter-Weiss-Gasse: gutes Verbundsteinpflaster	Q0 24151,14982 24215,15057
 Am Fort: schlechtes Kopfsteinpflaster	Q3 -8056,12916 -7961,12894 -7939,12877
 Am Fort: unbefestigte Straße	Q2 -7939,12877 -7948,12634 -7959,12439 -7967,12333 -7976,12217
 Thuner Str.: guter Beton	Q0 3293,2218 3290,2137 3286,2006 3286,1912
-Bernhard-Bästlein-Str.: Beton	Q1 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764 15698,13765
+Bernhard-Bästlein-Str.: Beton	Q1 15354,13998 15412,14014 15487,14047 15595,14045 15593,13768 15661,13764 15698,13765
 Bernhard-Bästlein-Str.: Beton	Q1 15661,13764 15653,13542
 Röbellweg: Asphalt	Q0 16043,25898 16390,26315
 Röbellweg: Mix aus schlechten Kopfsteinpflaster und Asphalt, Radfahrer werden auf dem Gehweg geduldet	Q3 16390,26315 16463,26389 16481,26413 16589,26536

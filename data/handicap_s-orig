@@ -21,7 +21,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu fr¸h bei der VIZ gemeldet? -> aktuell l‰uft wohl die Umsetzung (auch wenn man vor Ort auﬂer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-02-05
+#: last_checked: 2025-02-09
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
@@ -47,7 +47,7 @@ Kochhannstr.: ‹berquerung der Baustelle Petersburger Str. ¸ber schmale Fuﬂg‰nger
 #: note: f¸r Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="13"
 #: osm_watch: way id="1072662717" version="15"
-#: last_checked: 2025-02-03 (osm)
+#: last_checked: 2025-02-09
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -56,7 +56,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="6"
 #: osm_watch: way id="1146013233" version="9"
 #: osm_watch: way id="1134071039" version="11"
-#: last_checked: 2025-02-05 vvv
+#: last_checked: 2025-02-09 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einm¸ndungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einm¸ndungsbereich	q3::inwork 13275,11830 13406,11896
@@ -118,7 +118,7 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+::inwork 12558,11920
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-06
+#: last_checked: 2025-02-09
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einm¸ndung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nˆrdlich und s¸dlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraﬂenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -1058,7 +1058,7 @@ Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,1493
 #: osm_watch: note 4126168 2
 #: osm_watch: note 4126169 1
 #: priority: #C
-#: last_checked: 2024-10-13
+#: last_checked: 2025-02-09
 #: check_frequency: 120d
 #: next_check: 2026-04-30 (Halteverbotsschilder)
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069
@@ -2500,8 +2500,8 @@ Lessinghˆhe: Fuﬂg‰nger, f¸r Radfahrer verboten, ggfs. schieben	q2 12647,7672 126
 #: by ^^^
 Elli-Voigt-Str.: vier Bodenwellen	q1- 15833,13596 15831,13760
 Elli-Voigt-Str.: zwei Bodenwellen	q1- 15792,13764 15794,13975
-Landsberger Allee [Wohngebiet]: umfahrbare Bodenschwellen	q0- 15711,14079 15701,14148 15666,14212 15596,14247 15357,14213
-Weiﬂenseer Weg [Wohngebiet]: umfahrbare Bodenschwellen	q0- 15357,14213 15359,14157 15410,14019
+Landsberger Allee [Wohngebiet]: umfahrbare Bodenschwellen	q0- 15710,14086 15701,14148 15666,14212 15596,14247 15357,14213
+Weiﬂenseer Weg [Wohngebiet]: umfahrbare Bodenschwellen	q0- 15357,14213 15359,14157 15412,14014
 #: note: fast ¸ber die gesamte Breite der Fahrbahn
 Weiﬂenseer Weg [Wohngebiet]: Bodenschwellen	q1 15433,13957 15493,13795 15593,13768
 (Weiﬂenseer Weg/Landsberger Allee - Wohngebiet): Fuﬂg‰nger	q3 15256,14237 15357,14213
@@ -6035,14 +6035,17 @@ Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5
 (Krahmerstr. - Stockweg): Queren des Hindenburgdamms un¸bersichtlich, starker Autoverkehr	q4 4566,3461 4523,3482
 #: by: ^^^
 # 
+#: note: Park am Weiﬂen See, siehe auch temp_blockings-Eintrag vvv
 (Amalienstr. - Uferweg): Fuﬂg‰nger	q2 14124,16552 14142,16559 14159,16593
 (Blechenstr. - Uferweg): Fuﬂg‰nger	q2 14014,16722 14179,16641
 (Groﬂe Seestr. - Uferweg): Fuﬂg‰nger	q2 14184,16889 14189,16793 14232,16716
 (Berliner Allee - Uferweg): Fuﬂg‰nger	q2 14499,16341 14485,16362 14449,16394
 Uferweg am Weiﬂen See: Fuﬂg‰nger	q2 14521,16599 14521,16655 14482,16726 14423,16749 14299,16740 14232,16716 14179,16641 14159,16593 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
-# REMOVED (gibt es nicht (mehr?)) --- Berliner Allee - Uferweg: enge Rampe oder 6 Stufen	q4+ 14499,16341 14485,16362
 Seeweg (Weiﬂensee): Fuﬂg‰nger	q2 14485,16362 14480,16449
 Seeweg (Weiﬂensee): Fuﬂg‰nger	q2 14610,16522 14581,16529 14510,16549
+# REMOVED (gibt es nicht (mehr?)) --- Berliner Allee - Uferweg: enge Rampe oder 6 Stufen	q4+ 14499,16341 14485,16362
+#: note ^^^
+# 
 (Treppe zur Gehrenseestr.)	q4 18478,16753 18467,16753 18471,16765
 # 
 #: by: Lydia Weitmann [AM] vvv
@@ -6701,7 +6704,7 @@ Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13758,15009 13744,15018
 #: by: Sybille Koppermann
 #: note: Olaf (zioerjen) meint nur q2, ohne weitere Angaben
 #: corrected_by: srt/policy (q1 -> q0-)
-Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15354,13998 15410,14019 15487,14047 15595,14041 15593,13768 15661,13764
+Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15354,13998 15412,14014 15487,14047 15595,14045 15593,13768 15661,13764
 # REMOVED (hier nicht) --- Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15661,13764 15653,13542
 #: by: anonymous vvv
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311

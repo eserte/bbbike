@@ -4671,9 +4671,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2024-11-20 (osm) vvv
+#: last_checked: 2025-02-09 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-08-16 vvv
+#: next_check: 2025-08-16 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -6850,8 +6850,8 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: osm_watch: note 4594797 2
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2025-01-24
-#: next_check: 2025-02-24
+#: last_checked: 2025-02-09
+#: next_check: 2025-02-24 (VIZ-Verkehrsmeldung)
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
          'dont_check_date' => 1,
@@ -7404,7 +7404,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (G)
 #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-26
+#: last_checked: 2025-02-09
 	q4::inwork 15769,14355 15841,14351
 ',
          'from' => undef,
@@ -7542,6 +7542,23 @@ Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
          'text' => 'Bärenklau - Vehlefanz: Bauarbeiten, Sperrung, vom 10.02.2025 09:00 Uhr bis 30.08.2025 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1756562400
+       },
+       {
+         'data' => '#: note: Grünanlagenschilder mit expliziten Radfahrverbot
+(Amalienstr. - Uferweg): Grünanlage	q4 14124,16552 14142,16559 14159,16593
+(Blechenstr. - Uferweg): Grünanlage	q4 14014,16722 14179,16641
+(Große Seestr. - Uferweg): Grünanlage	q4 14184,16889 14189,16793 14232,16716
+(Berliner Allee - Uferweg): Grünanlage	q4 14499,16341 14485,16362 14449,16394
+Uferweg am Weißen See: Grünanlage	q4 14521,16599 14521,16655 14482,16726 14423,16749 14299,16740 14232,16716 14179,16641 14159,16593 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
+Seeweg (Weißensee): Grünanlage	q4 14485,16362 14480,16449
+Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
+',
+         'from' => undef,
+         'id' => 4255,
+         'permanent' => 1,
+         'text' => 'Park am Weißen See: Radfahren im Treptower Park offiziell nicht erlaubt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
