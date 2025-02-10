@@ -1703,9 +1703,12 @@ Quellendorf - Köthen	H -74495,-74935 -74686,-74973 -74937,-74856 -76470,-75302 
 (Quellendorf - ) Reupzig	H -77350,-75375 -77472,-75523 -77711,-75657 -78200,-75741 -78473,-76060 -78953,-76175
 Köthen - Elsdorf	N -84578,-72801 -84636,-72443 -84656,-72200 -84650,-71364 -84651,-71297
 Großpaschleben - Elsdorf	N -87967,-73584 -87862,-73468 -87791,-73428 -87705,-73441 -87463,-73416 -87392,-73431 -87314,-73469 -87034,-73293 -86666,-71934
-Maxdorfer Str. (Elsdorf)	N -86666,-71934 -86619,-71714 -85984,-71735 -85546,-71546 -84912,-71281
+Maxdorfer Str. (Elsdorf)	N -86666,-71934 -86619,-71714
+Maxdorfer Str. (Elsdorf)	NN -86619,-71714 -85984,-71735 -85925,-71711
+Maxdorfer Str. (Elsdorf)	NN -85900,-71699 -85546,-71546 -84912,-71281
 Elsdorf - B187a	N -84651,-71297 -83097,-71226
-#: add_fragezeichen: scheint nur ein Feldweg zu sein:
+#: add_fragezeichen: scheint nur ein Feldweg zu sein
+#: XXX_osm: allerdings bei osm surface=asphalt
 Feldweg bei Elsdorf	NN -85546,-71546 -85443,-71112
 Rudolf-Breitscheid-Str. (Osternienburg)	N -81406,-69725 -81385,-69689 -81350,-69662 -81236,-69635 -81178,-69609
 #: note: Straße geht noch Richtung Süden weiter, Qualität unbekannt

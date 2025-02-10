@@ -35775,7 +35775,7 @@ EOF
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2024-12-25 vvv
+#: last_checked: 2025-02-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -37576,14 +37576,14 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=721317#post721317
 #: by: https://bautagebuch.twentyseven-berlin.de/ (kein Inhalt, nur ein Login)
 #: by: https://fiducia-gruppe.de/investment/ (Fertigstellung: Sommer 2024)
+#: source_id: viz2021:13.30143,52.52479,10.02.2025,07:00 ("geänderte Verkehrsführung", bis 23.02.2025)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: note: bei rbb mittlerweile entfernt
+#: note: bei rbb mittlerweile entfernt; ab 2025-02-10 wieder da ("Einbahnstraßenregelung")
 #: osm_watch: way id="1094113747" version="5"
 #: also_indoor: traffic (none)
 #: last_checked: 2025-01-04
 #: check_frequency: 60d
-# REMOVED --- #: check_frequency: 90d
-# REMOVED --- #: next_check: 2024-09-15
+#: next_check: 2025-02-23 (VIZ-Verkehrsmeldung)
 	q4::inwork; 3429,13227 3400,13107
 EOF
      },
@@ -38302,12 +38302,12 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025)
-#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
+#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: last_checked: 2025-02-03 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-03-07 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
 # REMOVED (mittlerweile ist das Absperrgitter weg) --- #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18) --- Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
@@ -43023,7 +43023,7 @@ EOF
      { from  => 1708236000, # 2024-02-18 07:00
        until => undef, # 1737734400, # 2025-01-24 17:00
 #      text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, vom 19.02.2024 07:00 bis 24.01.2025 17:00',
-       text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis 2027',
+       text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende April 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KANZLERPARK-2024
@@ -43033,6 +43033,7 @@ EOF
 #: osm_watch: way id="1258660768" version="2"
 #: osm_watch: way id="1259755317" version="2"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
+#: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
 #: last_checked: 2025-01-30 (mapillary)
@@ -45293,10 +45294,13 @@ EOF
 #: also_indoor: traffic (none)
 #: osm_watch: way id="36983903" version="33"
 #: osm_watch: way id="1002238498" version="9"
-#: last_checked: 2025-02-03
+#: osm_watch: note 4454125 4
+#: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen
+#: last_checked: 2025-02-10
 #: check_frequency: 30d
 #: next_check: 2025-03-04 (Halteverbotsschilder)
-	q4::inwork 12972,7602 13100,7626
+# REMOVED (hier mittlerweile fertig und offen) ---	q4::inwork 12972,7602 13100,7626
+	q4::inwork 13100,7626 13130,7633
 EOF
      },
      { from  => 1726822800, # 2024-09-20 11:00
@@ -45942,7 +45946,8 @@ EOF
 #: note: Länge der Engstelle etwa 70m
 #: note: außerdem ist der Radweg auf der Heinrich-Grüber-Str. wahrscheinlich gesperrt
 #: osm_watch: way id="1309204624" version="1"
-#: also_indoor: traffic (T,G,W)
+#: also_indoor: traffic (ex-T,G,ex-W)
+#: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
 #: last_checked: 2024-11-13 (traffic)
 #: check_frequency: 90d
 	q3::inwork; 23251,12146 23017,12177
@@ -46183,8 +46188,8 @@ EOF
 #: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.32487,52.50002,31.01.2025,11:35 (bis 10.02.2025)
 #: note: laut rbb und traffic sites nun bis 31.03.2025
-#: also_indoor: traffic (ex-H,G,B,T,W,A)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W,A)
+#: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 #: last_checked: 2025-01-31 (traffic)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 25d
@@ -46422,6 +46427,15 @@ EOF
 Uferweg am Weißen See: Grünanlage	q4 14521,16599 14521,16655 14482,16726 14423,16749 14299,16740 14232,16716 14179,16641 14159,16593 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
 Seeweg (Weißensee): Grünanlage	q4 14485,16362 14480,16449
 Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
+EOF
+     },
+     { from  => 1739080800, # 2025-02-09 07:00
+       until => 1741017600, # 2025-03-03 17:00
+       text  => 'Brienner Str.: Bauarbeiten zwischen Kaubstr. und Berliner Str., evtl. sind auch Radfahrer betroffen, vom 10.02.2025 07:00 bis 03.03.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.312019,52.487816,10.02.2025,07:00 (bis 03.03.2025)
+	q4::inwork 4181,8933 4198,9015
 EOF
      },
     );

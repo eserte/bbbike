@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-02-08
+#: last_checked: 2025-02-10
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -322,8 +322,10 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285
 ### Altglienicke ###
 # 
 #: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nördlich Semmelweisstr. Anfang März 2025 offen, der südliche Abschnitt Ende April 2025)
 #: last_checked: 2024-12-27
-#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-03-01 (BA-Pressemitteilung)
 #: valid: -20250430
 Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18881,2062 18922,2238 18928,2319 18929,2454
 # 
@@ -1326,7 +1328,7 @@ Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11
 #: also_indoor: traffic (B,G,re-H,T)
 #: note: Halteverbotsschilder bis 23.10.2024
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-02-01 (traffic) vvv
+#: last_checked: 2025-02-10 (traffic) vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: next_check: 2024-10-23 vvv
 # REMOVED --- #: valid: -20241023 vvv
@@ -1930,7 +1932,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-03
+#: last_checked: 2025-02-10
 #: check_frequency: 30d
 #: next_check: 2025-03-15 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
