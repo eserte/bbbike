@@ -92,9 +92,8 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1501926.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-100ve/7-100-ve_3-2_vorhabenbezogener-bebauungsplan.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_04_0245_0352_online.pdf (B-Planänderung, der reduzierte Bereich wird zukünftig in 7-105 VE behandelt)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_07_0429_0500_online.pdf (Bebauungsplan XI-231abb)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: osm_watch: way id="152264786" version="22"
+#: osm_watch: way id="152264786" version="23"
 #: last_checked: 2025-01-08
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
@@ -4142,7 +4141,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-01-31
+#: last_checked: 2025-02-11
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4365,7 +4364,7 @@ An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 #: osm_watch: note 3977175 12
 #: osm_watch: way id="212107363" version="6"
 #: osm_watch: way id="212107362" version="6"
-#: last_checked: 2024-11-13 (osm note)
+#: last_checked: 2025-02-11
 #: check_frequency: 120d
 #: next_check: 2029-01-01
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
@@ -4453,7 +4452,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-02-03 (daf)
+#: last_checked: 2025-02-11
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4519,7 +4518,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.tagesspiegel.de/kultur/classic-open-air-auf-dem-gendarmenmarkt-neustart-mit-anna-netrebko-12869530.html (Wiedereröffnung spätestens am 17. Juli 2025)
 #: by: https://gruen-berlin.de/pressemitteilung/gendarmenmarkt-hauptbaumassnahmen-in-rekordtempo-abgeschlossen (Freigabe im Februar 2025)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gendarmenmarkt-hat-seine-schoenheitskur-fast-hinter-sich_a432984
-#: last_checked: 2025-02-05 vvv
+#: last_checked: 2025-02-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2025-02-01 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -4535,9 +4534,9 @@ Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2024-09-25 (Baustraße existiert noch)
+#: last_checked: 2025-02-11 (Baustraße existiert noch)
 #: check_frequency: 180d
-#: next_check: 2028-12-23
+#: next_check: 2028-12-23 (Amtsblatt)
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wexstra%C3%9Fe-27-bruchsaler-stra%C3%9Fe.1254/#post-19647
@@ -4703,13 +4702,7 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: next_check: 2025-10-01
 #: valid: -20251001
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699
-#: osm_watch: way id="787699937" version="8"
-#: osm_watch: way id="280217696" version="10"
-#: last_checked: 2025-02-04 (mapillary)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-01-31
-# REMOVED --- #: valid: -20250131
-Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
+# REMOVED (bei osm entfernt) --- #: osm_watch: way id="787699937" version="9" --- #: osm_watch: way id="280217696" version="11" --- #: last_checked: 2025-02-04 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2025-01-31 --- #: valid: -20250131 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
 # 
 # REMOVED (scheint offen zu sein) --- #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173 --- #: XXX culdesac-Eintrag für die Spreestr. anpassen! --- #: last_checked: 2022-10-05 --- #: check_frequency: 45d --- (Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
 # REMOVED --- #: next_check_id: TRAMTURM-2021 --- #: XXX alten Eintrag hier wiederherstellen! --- #: last_checked: 2023-02-19 (bahninfo-forum) --- #: check_frequency: 90d --- #: next_check: 2023-07-07 ---  Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2::inwork 7422,13012 7415,13060
@@ -5242,7 +5235,7 @@ Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: note: Bei allen traffic-Diensten ist hier eine *feste* Einbahnstraße eingetragen
 #: also_indoor: traffic
-#: last_checked: 2025-01-15
+#: last_checked: 2025-02-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-03-31
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
@@ -5611,7 +5604,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="41"
 #: also_indoor: traffic
-#: last_checked: 2024-12-26 vvv
+#: last_checked: 2025-02-11 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
@@ -5701,12 +5694,12 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 # REMOVED --- #: osm_watch: way id="765539341" version="17" brb
-#: last_checked: 2025-01-24 (osm)
+#: last_checked: 2025-02-10 (osm)
 #: check_frequency: 120d
 #: osm_watch: way id="1285592463" version="7" brb
 # REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12708,-1445
 #: XXX Evtl. heißt dieser Abschnitt "Alter Markt" (siehe osm)?
-#: osm_watch: way id="90781221" version="16" brb
+#: osm_watch: way id="90781221" version="17" brb
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 # 
 #: next_check_id: AMALTENMARKT-2018

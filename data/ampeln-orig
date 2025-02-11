@@ -151,10 +151,10 @@ Möckernstr./nördlich Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternatin
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2025-01-15
+#: last_checked: 2025-02-11
 #: check_frequency: 90d
-#: next_check: 2025-12-19
-#: valid: -20251219
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
+# REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
 Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # 
 # REMOVED --- #: source_id: viz2021:13.54877,52.416283,15.08.2023,09:00 (bis 06.09.2023) (bis 19.09.2023) (inaktiv) --- #: note: zwischen Wendenstr. und Germanenplatz --- #: next_check: 2023-09-19 --- #: valid: -20230919 --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 20381,1390
@@ -177,7 +177,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
-#: last_checked: 2025-01-13 (mapillary)
+#: last_checked: 2025-02-11
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	X::inwork 7873,12927
@@ -3960,12 +3960,12 @@ provisorische Fußgängerampel	F 17720,8854
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/GUKkLkr/41-Anlagen/03/B1222SB.pdf (kein Termin)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Erwähnung für 2025)
 #: source_id[inactive]: bvg2024:62#HIM_FREETEXT_237919
-#: source_id: viz2021:13.585068,52.427802,19.11.2024,07:00 (Bau einer LSA, bis 09.12.2024) (bis 21.02.2025) (bis 07.03.2025)
-#: osm_watch: note 4524665 2
+#: source_id: viz2021:13.585068,52.427802,19.11.2024,07:00 (Bau einer LSA, bis 09.12.2024) (bis 21.02.2025) (bis 07.03.2025) (bis 21.03.2025)
+#: osm_watch: note 4524665 3
 #: XXX Wendenschloßstr./Dregerhoffstr.: Fußgängerampel in Bau, zurzeit eine provisorische Ampel
 #: last_checked: 2025-01-29
 #: check_frequency: 180d
-#: next_check: 2025-03-07 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-03-21 (VIZ-Verkehrsmeldung)
 	X::inwork 22904,2675
 # 
 #: section ^^^

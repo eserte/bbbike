@@ -539,7 +539,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-01-21 vvv
+#: last_checked: 2025-02-11 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1022,9 +1022,9 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2025-01-15
+#: last_checked: 2025-02-11
 #: check_frequency: 90d
-#: next_check: 2025-12-19
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
 teilweise Gehwegplatten, teilweise neu asphaltiert	RW1; 10938,14159 10910,14488
 neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
@@ -1585,9 +1585,9 @@ Radweg stellenweise noch sichtbar, aber durch Baumscheiben unterbrochen	RW0; 111
 #: note: laut rbb ab 2022-05-19 09:00, bis Anfang 2025; mittlerweile bis 31.12.2024
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
-#: last_checked: 2025-01-13 (mapillary)
-#: check_frequency: 180d
-#: next_check: 2025-01-31 (ex-VIZ-Verkehrsmeldung)
+#: last_checked: 2025-02-11
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-01-31 (ex-VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
 provisorische Radspur	RW4; 7759,13246 7816,13276 7842,13292 7901,13324
 # 
@@ -8862,7 +8862,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023) (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,31.08.2023,10:00 (bis 22.09.2023) (bis 18.09.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023) (inaktiv)
-#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024) (bis 09.09.2024) (inaktiv) (bis 01.11.2024, weitere Arbeiten im Anschluss) (bis 01.03.2025 + ...)
+#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024) (bis 09.09.2024) (inaktiv) (bis 01.11.2024, weitere Arbeiten im Anschluss) (bis 01.03.2025 + ...) (bis 31.12.2025 + ...)
 #: source_id: viz2021:13.384655,52.451843,04.03.2024,07:00 (bis 17.05.2024) (bis 07.06.2024) (bis 17.06.2024) (inaktiv)
 #: source_id: viz2021:13.385286,52.448073,17.06.2024,07:00 (bis 27.06.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: viz2021:13.385297,52.44832,17.06.2024,07:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
@@ -8871,8 +8871,8 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
 #: last_checked: 2024-11-27 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2025-03-01 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 # REMOVED --- #: osm_watch: way id="111048866" version="19" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)

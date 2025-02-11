@@ -5401,7 +5401,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-01-13 (mapillary)
+#: last_checked: 2025-02-11
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -5765,9 +5765,9 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="34"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-01-15 vvv
+#: last_checked: 2025-02-11 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-12-19 vvv
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
 #: note: früher wurde man zur nördlichen Fußgängerampel geführt, aber mittlerweile ist hier auch gesperrt, Umweg zur nächsten Überquerungsmöglichkeit mindestens 2x 135m; besser den linken Gehweg benutzen
 Metzer Str.: Fahrbahn gesperrt	q4::inwork; 11006,14087 10933,14122
@@ -5847,7 +5847,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-02-05 vvv
+#: last_checked: 2025-02-11 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6447,7 +6447,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-01-31 vvv
+#: last_checked: 2025-02-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6869,9 +6869,9 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23, 2024-10-30, 2024-11-27) ist die Fahrbahn aufgerissen
 #: note: Halteverbotsschilder bis 28.2.2025, mittlerweile bis 04.03.2025
 #: also_indoor: traffic (none)
-#: osm_watch: way id="36983903" version="33"
-#: osm_watch: way id="1002238498" version="9"
-#: osm_watch: note 4454125 4
+#: osm_watch: way id="36983903" version="34"
+#: osm_watch: way id="1002238498" version="10"
+#: osm_watch: note 4454125 6
 #: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen
 #: last_checked: 2025-02-10
 #: check_frequency: 30d
@@ -6881,7 +6881,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 ',
          'from' => 1726956000,
          'id' => 4167,
-         'text' => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der nördlichen Fahrbahn, voraussichtlich bis 04.03.2025',
+         'text' => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 04.03.2025',
          'type' => 'handicap',
          'until' => 1741107600
        },
@@ -6975,7 +6975,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-02-05 vvv
+#: last_checked: 2025-02-11 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-02-28 vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7105,6 +7105,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'data' => '#: next_check_id: ROSEGGER-2024
 #: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
 #: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025)
+#: osm_watch: note 4524886 1
 	q4::inwork 13205,8126 13277,8211 13331,8283
 ',
          'from' => 1731304800,
@@ -7227,8 +7228,8 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (alternative URL)
 #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/spektebruecke-gesperrt_a431036
 #: by: https://www.tagesspiegel.de/berlin/verkehrsbaustellen-in-spandau-von-morschen-holzbrucken-und-wilden-u-bahntraumen-12824615.html (neun Monate Bauzeit, voraussichtlich bis Ende 2025)
-#: osm_watch: note 4537179 1
-#: osm_watch: way id="14438318" version="7"
+#: osm_watch[closed]: note 4537179 1
+#: osm_watch: way id="14438318" version="8"
 #: last_checked: 2024-11-29 (Pressemitteilung)
 #: check_frequency: 180d
 #: next_check: 2025-12-31
@@ -7302,25 +7303,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
-#: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.32487,52.50002,31.01.2025,11:35 (bis 10.02.2025)
-#: note: laut rbb und traffic sites nun bis 31.03.2025
-#: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W,A)
-#: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: last_checked: 2025-01-31 (traffic)
-# REMOVED --- #: check_frequency: 7d
-# REMOVED --- #: check_frequency: 25d
-#: next_check: 2025-02-10 (VIZ-Verkehrsmeldung; andere Quellen mit Verlängerung)
-	q3::inwork 5069,10662 5047,10381
-',
-         'from' => undef,
-         'id' => 4234,
-         'text' => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende März 2025',
-         'type' => 'handicap',
-         'until' => 1743458399
-       },
+       undef,
        {
          'data' => '#: source_id: 246002279 (bis 21.02.2025)
 	2::inwork 24749,22618 24719,22727
@@ -7520,6 +7503,7 @@ Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
        },
        {
          'data' => '#: source_id: viz2021:13.399149,52.532315,05.02.2025,06:00 (bis 31.03.2025)
+#: note: abgesperrter Bereich ist 180m, also eigentlich q4+
 	q4::inwork; 10177,13766 10002,14092
 ',
          'from' => 1738645200,
