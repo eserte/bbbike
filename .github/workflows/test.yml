@@ -17,19 +17,19 @@ jobs:
      matrix:
 ## XXX windows not yet working, macos not tested --- TODO
        include:
-         - os:                       'ubuntu-20.04'
+         - os:                       'ubuntu-22.04'
            add_name:                 '+ gui tests'
            bbbike_test_gui:          1
            use_modperl:              0
            use_bbbike_ppa:           1
            bbbike_test_skip_modperl: 1
-         - os:                       'ubuntu-20.04'
+         - os:                       'ubuntu-22.04'
            add_name:                 '+ mod_perl'
            bbbike_test_gui:          0
            use_modperl:              1
            use_bbbike_ppa:           1
            bbbike_test_skip_modperl: 0
-         - os:                       'ubuntu-22.04'
+         - os:                       'ubuntu-24.04'
            add_name:                 '+ gui tests'
            bbbike_test_gui:          1
            use_modperl:              0
@@ -135,7 +135,7 @@ jobs:
           #  bbbike_test_skip_mapserver: 1
           #  use_bbbike_ppa:             0
           - dist:                       ubuntu
-            distver:                    noble
+            distver:                    focal
             bbbike_test_skip_mapserver: 0
             use_bbbike_ppa:             1
     env:
