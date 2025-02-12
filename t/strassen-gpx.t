@@ -43,7 +43,7 @@ sub xpath_checks ($$&);
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 176 + $new_strassen_gpx_tests;
+my $tests_per_variant = 182 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -574,6 +574,37 @@ EOF
 		$s->set_global_directive(map => 'polar');
 		$s->gpx2bbd($tmpfile);
 		eq_or_diff $s->as_string, $expected_bbd_string, 'preserve WGS84 coordinates in gpx2bbd';
+	    }
+	}
+
+	{
+	    # -as => "track" and explicit/determined name
+	    my $bbd = <<'EOF';
+#: map: polar
+#:
+TrackName	X 13.4,52.5 13.5,52.6
+EOF
+	    my $s0 = Strassen->new_from_data_string($bbd);
+	    my $s = Strassen::GPX->new($s0);
+	    {
+		my $xml_res = $s->Strassen::GPX::bbd2gpx(-as => 'track');
+		xpath_checks $xml_res, 2,
+		    sub {
+			my $doc = shift;
+			my @trks = $doc->findnodes('//trk');
+			is scalar(@trks), 1, 'created one track';
+			is $trks[0]->findvalue('./name'), 'TrackName', 'track name from bbd file';
+		    };
+	    }
+	    {
+		my $xml_res = $s->Strassen::GPX::bbd2gpx(-as => 'track', -name => 'My Track Name');
+		xpath_checks $xml_res, 2,
+		    sub {
+			my $doc = shift;
+			my @trks = $doc->findnodes('//trk');
+			is scalar(@trks), 1, 'created one track';
+			is $trks[0]->findvalue('./name'), 'My Track Name', 'explicit track name from bbd2gpx call';
+		    };
 	    }
 	}
 

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2014,2015,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2014,2015,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::GPX;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '1.27';
+$VERSION = '1.28';
 
 use Strassen::Core;
 
@@ -410,8 +410,9 @@ sub _bbd2gpx_libxml {
 	my $trkseg_counter = 1;
 	while (@$trksegs) {
 	    my $trkxml = $gpx->addNewChild(undef, "trk");
-	    my $name = _get_name_for_trk($trksegs, $trkseg_counter, $meta, $as);
-	    _add_meta_attrs_libxml($trkxml, {%$meta, name => $name});
+	    _add_meta_attrs_libxml($trkxml, {%$meta,
+					     (!defined $meta->{name} ? (name => _get_name_for_trk($trksegs, $trkseg_counter, $meta, $as)) : ()),
+					    });
 	    while (@$trksegs) {
 		my $trkseg = shift @$trksegs; $trkseg_counter++;
 		my $trksegxml = $trkxml->addNewChild(undef, "trkseg");
@@ -514,8 +515,9 @@ sub _bbd2gpx_twig {
 	my $trkseg_counter = 1;
 	while (@$trksegs) {
 	    my $trkxml = XML::Twig::Elt->new("trk");
-	    my $name = _get_name_for_trk($trksegs, $trkseg_counter, $meta, $as);
-	    _add_meta_attrs_twig($trkxml, {%$meta, name => $name});
+	    _add_meta_attrs_twig($trkxml, {%$meta,
+					   (!defined $meta->{name} ? (name => _get_name_for_trk($trksegs, $trkseg_counter, $meta, $as)) : ()),
+					  });
 	    $trkxml->paste(last_child => $gpx);
 	    while (@$trksegs) {
 		my $trkseg = shift @$trksegs; $trkseg_counter++;
