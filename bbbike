@@ -3790,7 +3790,8 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		  -font => $font{"bold"});
     foreach my $fmt (
 		     # GPS
-		     ['GPX (Track)', 'GPX/track'],
+		     'GPX (Track)',
+		     ($devel_host ? ['GPX (Track, old impl)', 'GPX/track'] : ()),
 		     'GPX (Route)',
 		     ($advanced ? ['KML (GoogleEarth)', 'KML/track'] : ()),
 		     ['GPSMAN (Track)', 'GpsmanData'],
@@ -3870,6 +3871,11 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		(-label => $fmt,
 		 -command => sub { save_route_as_optimized_gpx() },
 		);
+	} elsif ($fmt eq 'GPX (Track)') {
+	    $svm->command
+		(-label => $fmt,
+		 -command => sub { save_route_as_trk_gpx() },
+	        );
 	} elsif ($fmt =~ /^esri/i) {
 	    if (-x "$FindBin::RealBin/miscsrc/bbd2esri" &&
 		-x "$FindBin::RealBin/miscsrc/bbr2bbd"
@@ -10065,6 +10071,11 @@ sub save_route_as_esri {
 ### AutoLoad Sub
 sub save_route_as_optimized_gpx {
     gps_interface('BBBikeGPS::GPXRoute', -noloading => 1);
+}
+
+### AutoLoad Sub
+sub save_route_as_trk_gpx {
+    gps_interface('BBBikeGPS::GPXTrack', -noloading => 1);
 }
 
 ### AutoLoad Sub

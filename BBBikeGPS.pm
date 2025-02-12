@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2008,2013,2014,2015,2016,2017,2021,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2008,2013,2014,2015,2016,2017,2021,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1803,6 +1803,39 @@ sub tk_interface {
 		    -name => $simplified_route->{routename},
 		    -number => $args{-routenumber},
 		   );
+    }
+
+}
+
+{
+    package GPS::BBBikeGPS::GPXTrack;
+    require GPS;
+    push @GPS::BBBikeGPS::GPXTrack::ISA, 'GPS';
+    
+    sub default_extension { ".gpx" }
+
+    sub has_gps_settings { 0 }
+
+    sub ok_label { "Speichern des Tracks" } # XXX M/Mfmt
+
+    sub tk_interface {
+	my($self, %args) = @_;
+	BBBikeGPS::tk_interface($self, %args);
+    }
+
+    sub convert_from_route {
+	my($self, $route, %args) = @_;
+	require Karte::Polar;
+	require Strassen::Core;
+	require Strassen::GPX;
+	my $s = Strassen::GPX->new;
+	$s->set_global_directives({ map => ["polar"] });
+	my @coords;
+	for my $point ($route->path_list) {
+	    push @coords, join(",", $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(@$point)));
+	}
+	$s->push([$args{-routename}, \@coords, 'X']);
+	$s->bbd2gpx(-as => "track");
     }
 
 }
