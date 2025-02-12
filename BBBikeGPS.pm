@@ -1790,9 +1790,15 @@ sub tk_interface {
 
     sub convert_from_route {
 	my($self, $route, %args) = @_;
-	require Route::Simplify;
-	require Strassen::Core;
-	require Strassen::GPX;
+	if (!eval { 
+	    require Route::Simplify;
+	    require Strassen::Core;
+	    require Strassen::GPX;
+	    1;
+	}) {
+	    main::perlmod_install_advice('XML::LibXML', 'XML::Twig');
+	    return;
+	}
 	my $simplified_route = $route->simplify_for_gps(%args);
 	my $s = Strassen::GPX->new;
 	$s->set_global_directives({ map => ["polar"] });
@@ -1825,9 +1831,15 @@ sub tk_interface {
 
     sub convert_from_route {
 	my($self, $route, %args) = @_;
-	require Karte::Polar;
-	require Strassen::Core;
-	require Strassen::GPX;
+	if (!eval {
+	    require Karte::Polar;
+	    require Strassen::Core;
+	    require Strassen::GPX;
+	    1;
+	}) {
+	    main::perlmod_install_advice('XML::LibXML', 'XML::Twig');
+	    return;
+	}
 	my $s = Strassen::GPX->new;
 	$s->set_global_directives({ map => ["polar"] });
 	my @coords;
