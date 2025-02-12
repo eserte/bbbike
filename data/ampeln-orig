@@ -6,6 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: source_id: viz2021:13.486871,52.577222,11.11.2024,07:00 (bis 14.02.2025)
+#: note: Länge der Gegenverkehrsstrecke: 50m
+#: last_checked: 2025-02-12
+#: next_check: 2025-02-14 (VIZ-Verkehrsmeldung)
+#: valid: -20250214
+Wartenberger Weg: Gegenverkehrsreglung	X::inwork::alternating 15882,19165
+# 
 #: source_id: bvg2024:184#HIM_FREETEXT_235819 (kein Endedatum)
 #: last_checked: 2025-02-05 vvv
 Hoeppnerstr.: Gegenverkehrsreglung	X::inwork::alternating 8386,7430
@@ -399,9 +406,9 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2024-11-30 (luftbildsuche) vvv
+#: last_checked: 2025-02-12 vvv
 #: check_frequency: 360d vvv
-#: next_check: 2025-06-30 vvv
+#: next_check: 2025-06-30 (SenMVKU website) vvv
 #: valid: 20190603-20250630 vvv
 #: note: die beiden folgenden Punkte gehören eigentlich zu einer Ampelanlage
 	X::inwork 20891,17572
@@ -1826,6 +1833,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6605
 #: note: neue Betriebszeiten: montags bis sonntags, jeweils von 6:00 bis 22:00 Uhr
 	F 15080,13117
+#: note: Anforderungsampel beim Überqueren der Möllendorffstr.
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
 #: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55; 2015-06-25; 2018-02-01 00:25; 2023-08-26 00:15; 2023-11-30 00:30; 2024-01-06 23:45; 2024-08-09 23:46)

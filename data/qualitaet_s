@@ -6751,7 +6751,7 @@ Landsberger Allee [Wohngebiet]: Asphalt, einige Schäden	Q1 15710,14086 15701,141
 Landsberger Allee [Wohngebiet]: Beton mit Schäden	Q1 22092,16029 22112,16137
 Landsberger Allee [Nebenfahrbahn]: Beton mit Schäden	Q1 21816,15954 21891,15938 22092,16029
 Landsberger Allee [zur Nebenfahrbahn]: Asphalt	Q0 22109,15990 22092,16029
-Landsberger Allee [Nebenfahrbahn]: Asphalt mit einigen leichten Schäden	Q0 16304,14434 16078,14413
+Landsberger Allee [Nebenfahrbahn]: Asphalt mit einigen leichten Schäden	Q0 16304,14434 16075,14412
 (Weißenseer Weg/Landsberger Allee - Wohngebiet): Verbundsteinpflaster	Q1 15256,14237 15357,14213
 Grohsteig: welliger Asphalt	Q1 21426,15979 21416,16027 21400,16117 21400,16207 21407,16257
 Oppermannstr.: Beton	Q0 21617,16061 21598,16055 21426,15979 21232,15894 21191,15914
@@ -7289,7 +7289,7 @@ Zum Orankestrand: Feinschotter	Q1 15435,16063 15479,16060
 Zum Hechtgraben: etwas unebener Asphalt	Q1 16210,18706 16198,18753 16163,18780 16158,19049 16104,19165
 (Darßer Str. - Malchower See): wassergebundene Decke	Q1 15505,17967 15825,18385 15949,18555
 Am Malchower See: grobes Verbundsteinpflaster	Q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16036,18604 16161,18687 16210,18706
-(Wartenberger Str. - Margaretenhöhe): Verbundsteinpflaster	Q1 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542
+(Wartenberger Str. - Margaretenhöhe): Verbundsteinpflaster	Q1 16218,19176 16314,19210 16349,19442 16343,19470 16309,19542
 (Wartenberger Str. - Margaretenhöhe): Holzbohlen	Q1 16309,19542 16359,19590
 (Wartenberger Str. - Margaretenhöhe): Verbundsteinpflaster	Q1 16359,19590 16384,19678
 Astridstr.: Asphalt mit Schäden	Q1 16384,19678 16390,19806
@@ -8707,7 +8707,7 @@ Am Vorwerk: Beton	Q0 12697,25704 12591,25762
 Am Vorwerk: Asphalt	Q0 12591,25762 12488,25757 12118,26153
 (Pankeweg - Wolfgang-Heinz-Str.): Verbundsteinpflaster	Q1 16131,24988 16168,24908
 Mühlenweg (Karow): Verbundsteinpflaster	Q1 15347,22275 15411,22369 15445,22352
-(Hechtgraben - Wartenberger Weg): Asphalt, einige Wurzelschäden	Q0 16325,18796 16216,19183
+(Hechtgraben - Wartenberger Weg): Asphalt, einige Wurzelschäden	Q0 16325,18796 16218,19176
 (entlang des Hechtgrabens): Asphalt	Q0 16163,18780 16325,18796
 Alfred-Jung-Str.: Asphalt	Q0 15224,13269 15347,13268 15479,13273
 (Hafersteig - Wuhlgartenweg): Beton	Q1 20835,12200 20824,12177 20823,12139
@@ -11738,6 +11738,10 @@ Thomas-Mann-Str. [östlicher Strang]: Asphalt	Q0 13365,15325 13278,15172 13387,15
 (Zufahrt zum Kaufland): glattes Pflaster	Q2 13727,14207 13757,14224
 (Zufahrt zum Kaufland): Kopfsteinpflaster	Q2 13757,14224 13846,14286
 (Zufahrt zum Kaufland): Asphalt	Q0 13846,14286 13873,14304 13913,14237 14007,14285
+(Zingster Str. - Barther Str.): Beton	Q0 16861,18009 16808,17970
+(Zingster Str. - Barther Str.): Beton mit Schäden	Q1 16808,17970 16900,17841
+(Landsberger Allee - Große-Leege-Str.): Verbundsteinpflaster/Mosaikpflaster	Q1 15976,14472 15963,14470 15902,14498
+Landsberger Alleee [Wohngebiet/Nebenfahrbahn]: Asphalt	Q0 15976,14472 16059,14481 16075,14412 16084,14377 16007,14367 15920,14357
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -18443,7 +18447,7 @@ Weddigenweg: schlechtes Kopfsteinpflaster	Q3 3462,3042 3646,3034
 Weddigenweg: glattes Kopfsteinpflaster	Q1 3646,3034 3953,3022
 Straße am Wald: Asphalt	Q0 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
 Kalvinistenweg: Asphalt	Q0 11807,22395 11785,22290 11765,22198 11743,22096 11718,21978 11653,21613
-Wittenberger Str.: Beton	Q1 21009,18055 21073,18023 21217,17953 21303,17909 21403,17859 21450,17837 21415,17765 21553,17701 21614,17823 21560,17853 21590,17918 21654,18048 21751,18079 21767,18114 21634,18187
+Wittenberger Str.: Beton	Q1 21011,18061 21078,18032 21220,17958 21305,17913 21404,17861 21450,17837 21415,17765 21553,17701 21614,17823 21560,17853 21590,17918 21654,18048 21751,18079 21767,18114 21634,18187
 Wittenberger Str. (Einkaufzentrum): Beton	Q1 21614,17823 21647,17889 21719,18017 21751,18079
 Wittenberger Str. (Einkaufzentrum): Beton	Q1 21654,18048 21719,18017
 Wittenberger Str. (Einkaufzentrum): Beton	Q1 21590,17918 21647,17889
@@ -18452,15 +18456,18 @@ Wörlitzer Str.: Beton	Q1 21440,18268 21391,18293
 Havemannstr.: Beton	Q1 21662,18252 21644,18274 21507,18343
 Havemannstr.: Beton	Q1 21281,18451 21432,18376
 Havemannstr.: Beton	Q1 21900,18215 21905,18198 22075,18114
-Flämingstr.: Beton	Q1 21446,18405 21432,18376 21391,18293 21365,18250 21292,18109 21250,18020 21217,17953 21175,17867 21146,17867 21114,17809 20996,17865
+Flämingstr.: Beton	Q1 21446,18405 21432,18376 21391,18293 21365,18250
+Flämingstr.: Beton	Q0 21365,18250 21292,18109
+Flämingstr.: Beton	Q1 21292,18109 21250,18020 21220,17958
+Flämingstr.: Beton	Q1 21220,17958 21175,17867 21146,17867 21114,17809 20996,17865
 Flämingstr.: Beton	Q1 21146,17867 21087,17892
 Flämingstr.: Beton	Q1 21175,17867 21400,17756 21415,17765
 Flämingstr.: Beton	Q1 21292,18109 21150,18179
 Flämingstr.: Beton	Q1 21365,18250 21220,18323 21163,18347
 Niemegker Str.: Beton	Q1 21250,18020 21337,17978 21431,17996 21462,17979 21590,17918
-Niemegker Str.: Beton	Q1 21403,17859 21462,17979
-Niemegker Str.: Beton	Q1 21303,17909 21337,17978
-Märkische Allee: Beton	Q1 20996,17865 21073,18023 21150,18179 21220,18323 21281,18451
+Niemegker Str.: Beton	Q1 21404,17861 21462,17979
+Niemegker Str.: Beton	Q1 21305,17913 21337,17978
+Märkische Allee: Beton	Q1 20996,17865 21078,18032 21150,18179 21220,18323 21281,18451
 Schorfheidestr.: Beton	Q1 21854,18192 21869,18227 21871,18244 21938,18370 21946,18415 21933,18521 21875,18700
 Schorfheidestr.: Beton	Q0 21875,18700 21875,18717 21884,18771 21890,18821 21880,18866 21871,18887
 Schorfheidestr. (Marzahn): Beton	Q1 21884,18771 21993,18800

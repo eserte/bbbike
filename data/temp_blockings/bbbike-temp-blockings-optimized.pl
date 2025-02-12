@@ -3606,9 +3606,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-02-06 (traffic) vvv
+#: last_checked: 2025-02-12 (traffic) vvv
 #: check_frequency: 7d vvv
-# REMOVED --- #: next_check: 2024-12-15 vvv
+# REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
 Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
 Münsterberger Weg	q4::inwork 24029,11363 23883,11416
@@ -3619,7 +3619,7 @@ Münsterberger Weg	q4::inwork 24029,11363 23883,11416
 ',
          'from' => undef,
          'id' => 3188,
-         'text' => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., voraussichtlich bis Mitte Dezember 2024',
+         'text' => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., voraussichtlich bis Mitte Dezember 2024, evtl. wurde verlängert',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5684,7 +5684,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2025-02-04 (osm) vvv
+#: last_checked: 2025-02-12 (bahninfo-forum) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-02-21 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -6195,7 +6195,7 @@ Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4441,12559 4321,12566
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="27"
+#: osm_watch: way id="120633718" version="28"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch[closed]: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -6360,7 +6360,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-02-01
+#: last_checked: 2025-02-12
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -6720,11 +6720,11 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        {
          'data' => '#: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
-#: osm_watch: way id="1083535036" version="6"
-#: osm_watch: way id="1119255054" version="5"
+#: osm_watch: way id="1083535036" version="7"
+#: osm_watch: way id="1119255054" version="6"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-02-04
+#: last_checked: 2025-02-11 (osm)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -6908,7 +6908,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
-#: osm_watch: way id="23984383" version="33"
+#: osm_watch: way id="23984383" version="35"
 #: osm_watch: note 4536637 10
 # REMOVED --- #: last_checked: 2024-10-12 (mapillary) --- #: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665
@@ -7392,7 +7392,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (G)
 #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-02-09
+#: last_checked: 2025-02-12
 	q4::inwork 15769,14355 15841,14351
 ',
          'from' => undef,

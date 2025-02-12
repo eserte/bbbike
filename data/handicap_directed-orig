@@ -354,6 +354,13 @@ Lynarstr./Müllerstr.: Umweg über Fußgängerampel auf der rechten Seite, Fußgänger
 Müllerstr. -> Lynarstr.: Umweg über Fußgängerampel, Fußgänger	DH:len=15:h=q4,30 7845,15066 7745,15160 7694,15125
 Müllerstr. -> Lynarstr.: Fußgänger an der Fußgängerampel	DH:h=q4,30 7669,15227 7745,15160 7929,15355
 # 
+An der Kohlbeke - Eichenallee: Bordsteine	DH:kerb_down:kerb_up:kerb_down:kerb_up 20657,17543 20728,17670 20801,17821
+An der Kohlbeke - Wuhletalstr.: Bordsteine	DH:kerb_down:kerb_up:kerb_down 20657,17543 20728,17670 20488,17793
+Eichenallee - An der Kohlbeke: Bordsteine	DH:kerb_down:kerb_up:kerb_down:kerb_up 20801,17821 20728,17670 20657,17543
+Eichenallee - Wuhletalstr.: Bordsteine	DH:kerb_down:kerb_up:kerb_down 20801,17821 20728,17670 20769,17650
+Wuhletalstr. - An der Kohlbeke: Bordsteine	DH:kerb_up:kerb_down:kerb_up 20769,17650 20728,17670 20657,17543
+Wuhletalstr. - Eichenallee: Bordsteine	DH:kerb_up:kerb_down:kerb_up 20488,17793 20728,17670 20801,17821
+# 
 ######################################################################
 # Vorübergehende Einschränkungen
 #

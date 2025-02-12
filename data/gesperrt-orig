@@ -468,7 +468,7 @@ Kavalierstr.	1 10621,18837 10721,18575
 # REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
-#: osm_watch: way id="4637773" version="25"
+#: osm_watch: way id="4637773" version="26"
 #: next_check: 2025-06-15
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
@@ -2223,7 +2223,7 @@ Residenzstr.: Mittelstreifen	3nocross 7579,17532 7572,17558 7533,17673
 Lindauer Allee: Mittelstreifen	3nocross 5550,18775 5635,18776 5713,18777
 Lindauer Allee: Mittelstreifen	3nocross 5713,18777 5791,18778 5869,18779
 Togostr.: Mittelstreifen	3nocross 5906,16403 5700,16584 5596,16662
-Märkische Allee: Mittelstreifen	3nocross 21251,18508 21163,18347 21009,18055
+Märkische Allee: Mittelstreifen	3nocross 21251,18508 21163,18347 21011,18061
 Märkische Allee: Mittelstreifen	3nocross 19809,15676 19880,15818 19988,16039
 Alt-Biesdorf: Mittelstreifen	3nocross 21108,11628 21251,11560 21275,11547 21311,11528
 Kurt-Schumacher-Damm: Mittelstreifen	3nocross 4704,17101 4931,17174 4997,17241
@@ -2486,7 +2486,7 @@ Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12846,7981 
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,12933 6150,12875 6124,12694
 Märkische Allee: Mittelstreifen	3nocross 20120,16297 20232,16522 20242,16543 20323,16706
-Märkische Allee: Linksabbiegen verboten	3nocross 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
+Märkische Allee: Linksabbiegen verboten	3nocross 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21011,18061
 Märkische Allee: Mittelstreifen	3nocross 19900,11697 19924,11890 19934,11977 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405 19994,12484
 # REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17579,17908 17675,17971 17744,18016 17843,18078
 Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
@@ -3996,7 +3996,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
 #: last_checked: 2025-01-20 (mapillary) vvv
 #: next_check: 2025-06-15 vvv
-#: osm_watch: way id="1199394070" version="3"
+#: osm_watch: way id="1199394070" version="4"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
 #: osm_watch: way id="174271093" version="23"
 Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
@@ -4169,10 +4169,10 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: last_checked: 2025-02-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
-#: osm_watch: way id="1054783030" version="3"
+#: osm_watch: way id="1054783030" version="4"
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3:inwork 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q4:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
-#: osm_watch: way id="154381294" version="20"
+#: osm_watch: way id="154381294" version="21"
 Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5274,7 +5274,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1181845.php
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/der-abriss-der-wuhletalbruecke-hat-begonnen_a338111
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11321 (Antrag)
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (voraussichtliche Bauzeit: 2022 bis 2025)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (voraussichtliche Bauzeit: 2022 bis 2025) (bis Ende des II. Quartals 2025)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (alternative URL)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-sanierung-instandsetzung-autobahn-brckenbauwerk-wuhletalbrcke-ortsteil-marzahn-berlin-deutschland-656406.html
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt -> inaktiv)
@@ -5283,9 +5283,9 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
 #: source_id: viz2021:13.55807,52.56199,27.06.2024,15:13 (bis 31.03.2025) (inaktiv)
 #: XXX Wann wird die Brücke wieder eröffnet?
-#: last_checked: 2024-11-30 (luftbildsuche)
+#: last_checked: 2025-02-12
 #: check_frequency: 360d
-#: next_check: 2025-06-30
+#: next_check: 2025-06-30 (SenMVKU website)
 #: valid: 20190603-20250630
 Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 # 

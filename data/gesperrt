@@ -1449,9 +1449,9 @@ Holzweidepfad -> Lindauer Allee: Mittelstreifen	3::igndisp 5792,18727 5791,18778
 Mittelstreifen	3nocross::ignrte 5906,16403 5700,16584 5596,16662
 Togostr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5596,16662 5700,16584 5801,16700
 Querweg durch die Dauerkolonie Togo -> Togostr.: Mittelstreifen	3::igndisp 5801,16700 5700,16584 5906,16403
-Mittelstreifen	3nocross::ignrte 21251,18508 21163,18347 21009,18055
+Mittelstreifen	3nocross::ignrte 21251,18508 21163,18347 21011,18061
 Märkische Allee -> Flämingstr.: Mittelstreifen	3::igndisp 21251,18508 21163,18347 21220,18323
-Flämingstr. -> Märkische Allee: Mittelstreifen	3::igndisp 21220,18323 21163,18347 21009,18055
+Flämingstr. -> Märkische Allee: Mittelstreifen	3::igndisp 21220,18323 21163,18347 21011,18061
 Mittelstreifen	3nocross::ignrte 19809,15676 19880,15818 19988,16039
 Märkische Allee -> Basdorfer Str.: Mittelstreifen	3::igndisp 19988,16039 19880,15818 20102,15709
 Basdorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 20102,15709 19880,15818 19809,15676
@@ -2170,7 +2170,7 @@ Alfred-Döblin-Str. -> Märkische Allee: Mittelstreifen	3::igndisp 20286,16494 202
 Märkische Allee -> Alfred-Döblin-Str.: Mittelstreifen	3::igndisp 20242,16543 20232,16522 20286,16494
 Rampe Bitterfelder Brücke -> Märkische Allee: Mittelstreifen	3::igndisp 20267,16539 20242,16543 20232,16522
 Märkische Allee -> Rampe Bitterfelder Brücke: Mittelstreifen	3::igndisp 20323,16706 20242,16543 20267,16539
-Linksabbiegen verboten	3nocross::ignrte 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
+Linksabbiegen verboten	3nocross::ignrte 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21011,18061
 zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20727,17558 20691,17463 20717,17516
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20853,17528 20717,17516 20691,17463
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20843,17745 20912,17678

@@ -984,7 +984,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-02-06
+#: last_checked: 2025-02-12
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -5024,6 +5024,7 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt
 	RW1; 17482,17844 17579,17908 17675,17971 17721,18001 17744,18016 17843,18078
 	RW2;RW1 17482,17844 17400,17790
 	RW2; 18223,18153 18196,18254
+	RW2; 18624,18259 18601,18342
 wenige Meter Verbundsteinpflaster, dann verliert sich der Radweg	RW1; 18196,18254 18223,18153
 Verbundsteinpflaster, Unebenheiten	RW1; 18196,18254 18179,18358 18187,18439 18197,18557 18185,18641 18172,18705
 	RW1; 18172,18705 18185,18641 18197,18557 18187,18439
@@ -5292,7 +5293,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2024-11-13 vvv
+#: last_checked: 2025-02-12 vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str., Richtung Westen
@@ -5772,7 +5773,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
 #: osm_watch: way id="176753739" version="23"
-#: last_checked: 2024-10-24 (mapillary)
+#: last_checked: 2025-02-12
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -7163,10 +7164,10 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17569,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: source_id: viz2021:13.504732,52.563446,11.07.2023,07:00 (Erneuerung Radweg, bis 12.09.2023) (bis 20.09.2023) (inaktiv)
 #: XXX Asphaltierung des Radwegs --- wird auch dieser Abschnitt asphaltiert? (noch keine Bauarbeiten) vvv
-#: last_checked: 2024-11-13 vvv
+#: last_checked: 2025-02-12 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-31 vvv
-Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16905,17949 16945,17900 16981,17855
+Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16861,18009 16905,17949 16945,17900 16981,17855
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
