@@ -249,9 +249,9 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2024-11-20 vvv
+#: last_checked: 2025-02-11 (mapillary) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-06-18 vvv
+#: next_check: 2025-06-18 (VIZ-Verkehrsmeldung) vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
 #: also_indoor: traffic (B,T)
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
@@ -1071,8 +1071,8 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Marzahn ###
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
-#: also_indoor: traffic (B,T)
-#: last_checked: 2025-02-01 (traffic)
+#: also_indoor: traffic (B,T,H)
+#: last_checked: 2025-02-13 (traffic)
 #: check_frequency: 14d
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
@@ -1132,7 +1132,7 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024) (bis 05.02.2025) (bis 06.02.2025) (bis 14.02.2025)
+#: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024) (bis 05.02.2025) (bis 06.02.2025) (bis 14.02.2025) (bis 28.02.2025)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
@@ -1142,7 +1142,7 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: note: außerdem Beilsteiner Str. Höhe Merler Weg ist die Durchfahrt Richtung Süden mit Betonbarrieren versperrt, als Radfahrer kann man über den Hochbord vorbeifahren
 #: last_checked: 2025-01-22 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-02-14 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20250214 vvv
 #: osm_watch: way id="1089784266" version="4"
 #: osm_watch: way id="1231226671" version="1"

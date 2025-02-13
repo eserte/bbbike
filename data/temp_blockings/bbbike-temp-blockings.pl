@@ -22264,7 +22264,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-02-02 (traffic)
+#: last_checked: 2025-02-13 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -38305,7 +38305,7 @@ EOF
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-02-03 vvv
+#: last_checked: 2025-02-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -39132,10 +39132,10 @@ EOF
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: osm_watch: way id="37861386" version="26"
+#: osm_watch: way id="37861386" version="27"
 #: last_checked: 2024-11-06
 #: check_frequency: 120d
-#: next_check: 2028-02-29
+#: next_check: 2028-02-29 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
 EOF
      },
@@ -42791,6 +42791,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,681075,792061#msg-792061
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_10_0549_0586_online.pdf (Planfeststellungsbeschluss zur Abstellanlage Schönholz)
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord
+#: by: https://www.tagesspiegel.de/berlin/bezirke/neuer-arger-um-bahn-baustelle-in-berlin-anwohner-kritisieren-kahlschlag-auf-raten-im-geschutzten-mauerstreifen-13189999.html
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="4"
@@ -42799,7 +42800,7 @@ EOF
 #: XXX laut osm opening_date=2028
 #: last_checked: 2025-01-26 (bahninfo-forum)
 #: check_frequency: 120d
-#: next_check: 2025-06-15
+#: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
 # REMOVED (nur der südliche Abschnitt ist laut osm+mapillary gesperrt) ---	2::inwork 9461,17795 9434,17823 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 EOF
@@ -45246,16 +45247,16 @@ EOF
      },
      { from  => 1725548760, # 2024-09-05 17:06
        dont_check_date => 1, until => undef, # $isodate2epoch->("2024-12-20 17:00:00"), # 1728572400, # 2024-10-10 17:00
-       text  => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis voraussichtlich 24.02.2025 17:00',
+       text  => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis voraussichtlich 25.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 24.01.2025) (bis 24.02.2025)
+#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 24.01.2025) (bis 24.02.2025) (bis 25.04.2025)
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: osm_watch: note 4594797 2
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2025-02-09
-#: next_check: 2025-02-24 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-04-25 (VIZ-Verkehrsmeldung)
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 EOF
      },
@@ -45569,13 +45570,13 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 EOF
      },
      { from  => 1728882000, # 2024-10-14 07:00
-       until => 1741964400, # 2025-03-14 16:00
+       until => 1739473056, # 1741964400, # 2025-03-14 16:00
        text  => 'Erkner: L30, Bauarbeiten, möglicherweise ist die Brücke für Fußgänger und Radfahrer gesperrt, vom 15.10.2024 07:00 Uhr bis 14.03.2025 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 246700596 (bis 14.03.2025)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
-#: XXX laut VIZ-Verkehrsmeldung "Brücke über die Löcknitz", aber das ist doch der Flakenfließ? Oder ist die L38 gemeint?
+# REMOVED (bei Mapillary ist an dieser Stelle nichts zu sehen) --- #: XXX laut VIZ-Verkehrsmeldung "Brücke über die Löcknitz", aber das ist doch der Flakenfließ? Oder ist die L38 gemeint?
 	2::inwork 34152,2749 34175,2637 34250,2546
 EOF
      },
@@ -46198,12 +46199,12 @@ EOF
 	q3::inwork 5069,10662 5047,10381
 EOF
      },
-     { from  => 1739682000, # 2025-02-16 06:00
-       until => 1740157200, # 2025-02-21 18:00
+     { from  => 1739473908, # 1739682000, # 2025-02-16 06:00
+       until => 1739473908, # 1740157200, # 2025-02-21 18:00
        text  => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 17.02.2025 06:00 Uhr bis 21.02.2025 18:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 246002279 (bis 21.02.2025)
+#: source_id: 246002279 (bis 21.02.2025) (inaktiv)
 	2::inwork 24749,22618 24719,22727
 	2::inwork 24718,22731 24761,23151
 EOF
@@ -46398,11 +46399,12 @@ EOF
 EOF
      },
      { from  => 1730613600, # 2024-11-03 07:00
-       until => 1740783540, # 2025-02-28 23:59
-       text  => 'Zillestr.: Einbahnstraßenregelung zwischen Kaiser-Friedrich-Str. und Wilmersdorfer Str., Richtung Westen gesperrt, bis 28.02.2025',
+       until => $isodate2epoch->("2025-03-28 18:00:00"), # 1740783540, # 2025-02-28 23:59
+       text  => 'Zillestr.: Einbahnstraßenregelung zwischen Kaiser-Friedrich-Str. und Wilmersdorfer Str., Richtung Westen gesperrt, bis 28.03.2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.30113,52.51347,04.11.2024,07:00 (bis 28.02.2025)
+#: source_id: viz2021:13.30113,52.51347,04.11.2024,07:00 (bis 28.02.2025) (inaktiv)
+#: source_id: viz2021:13.30113,52.51347,13.02.2025,11:00 (bis 28.03.2025)
 	q4::inwork; 3666,11855 3528,11852 3406,11849
 EOF
      },
@@ -46438,6 +46440,15 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.312019,52.487816,10.02.2025,07:00 (bis 03.03.2025)
 	q4::inwork 4181,8933 4198,9015
+EOF
+     },
+     { from  => 1742108400, # 2025-03-16 08:00
+       until => 1764345600, # 2025-11-28 17:00
+       text  => 'Strausberg, Garzauer Str., Ersatzneubau der Eisenbahnüberführung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 28.11.2025',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 256401910 (bis 28.11.2025)
+	2::inwork 41356,16225 41672,16084
 EOF
      },
     );
