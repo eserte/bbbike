@@ -121,15 +121,15 @@ Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 Knoten Märkische/Landsberger Allee	2::inwork 19013,14905 19175,14968
 Knoten Märkische/Landsberger Allee	1no 19175,14968 19196,14976
 Knoten Märkische/Landsberger Allee	1no 19200,14963 19156,14953 19013,14905
-#: osm_watch: way id="4696052" version="29"
+#: osm_watch: way id="4696052" version="30"
 Knoten Märkische/Landsberger Allee	1no 19254,15000 19309,15023 19364,15045 19512,15092 19565,15106 19694,15141 19852,15201
 Knoten Märkische/Landsberger Allee	1 19254,15000 19200,14963
 Knoten Märkische/Landsberger Allee	2::inwork 19408,15007 19350,14997 19214,14966 19200,14963
-#: osm_watch: way id="30884033" version="22"
+#: osm_watch: way id="30884033" version="23"
 Knoten Märkische/Landsberger Allee	2::inwork 19452,14807 19464,14971 19408,15007
-#: osm_watch: way id="4696050" version="22"
+#: osm_watch: way id="4696050" version="23"
 Knoten Märkische/Landsberger Allee	2::inwork 19852,15201 19744,15128 19614,15061 19408,15007
-#: osm_watch: way id="30884034" version="23"
+#: osm_watch: way id="30884034" version="24"
 Knoten Märkische/Landsberger Allee	2::inwork 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee: nur Rechtsabbiegen erlaubt	3 19644,15320 19512,15092 19565,15106
 #: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
@@ -4105,18 +4105,18 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19156,14953 19160,14935 19171,14938
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: osm_watch: way id="4696062" version="28"
+#: osm_watch: way id="4696062" version="29"
 #: last_checked: 2024-12-08
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 (Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: osm_watch: way id="26244466" version="24"
+#: osm_watch: way id="26244466" version="25"
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026)
 #: last_checked: 2024-12-08
 #: check_frequency: 180d
-#: next_check: 2026-12-31
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
 # 
 #: next_check_id: KNOTENMARZAHN-2022
@@ -4189,8 +4189,8 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
-#: osm_watch: way id="1106303945" version="8"
-#: osm_watch: way id="4543436" version="39"
+#: osm_watch: way id="1106303945" version="9"
+#: osm_watch: way id="4543436" version="40"
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch: note 4126450 4
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
@@ -4435,7 +4435,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: XXX Bauarbeiten am Kanzlerpark
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
-#: last_checked: 2025-01-15 (mapillary) vvv
+#: last_checked: 2025-02-15 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="256450718" version="7"
@@ -4701,8 +4701,8 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: osm_watch: way id="8042965" version="24"
 #: osm_watch: way id="8043414" version="40"
 #: last_checked: 2025-02-04 (mapillary)
-#: next_check: 2025-10-01
-#: valid: -20251001
+#: next_check: 2025-02-08
+#: valid: -20250208
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699
 # REMOVED (bei osm entfernt) --- #: osm_watch: way id="787699937" version="9" --- #: osm_watch: way id="280217696" version="11" --- #: last_checked: 2025-02-04 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2025-01-31 --- #: valid: -20250131 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
 # 
@@ -4864,9 +4864,9 @@ Hebammensteigbrücke	2::inwork 13193,21700 13168,21706 13135,21715 13121,21678 13
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2024-12-07 vvv
+#: last_checked: 2025-02-15 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2026-08-31 vvv
+#: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947
 #: next_check ^^^
@@ -5081,7 +5081,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX es wird neu asphaltiert, die östliche Straßenseite ist bis auf die letzte Deckschicht schon fertig
 #: osm_watch: note 3954448 4
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2025-01-21
+#: last_checked: 2025-02-15
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-12-31
@@ -5212,14 +5212,14 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen, die Masten und Signalgeber stehen schon.
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-02-05
+#: last_checked: 2025-02-14
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: osm_watch: way id="751595931" version="5" --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/ --- #: also_indoor: traffic (H,B) --- #: note: Die Hälfte der Container ist mittlerweile weg, aber es ist weiterhin die gesamte Breite der Fahrbahn gesperrt. --- #: XXX Container sind abgebaut: wie sieht die Situation in der Straße nun aus? --- #: last_checked: 2025-01-21 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2024-12-19 --- Parochialstr.: 60m der Straße (Fahrbahn + Bürgersteige) zwischen Jüdenstr. und Klosterstr. gesperrt	2::inwork 10831,12371 10957,12401
 # 
 #: osm_watch: note 4480556 3
-#: last_checked: 2025-02-05
+#: last_checked: 2025-02-15
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021
@@ -5551,8 +5551,8 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2024-10-18
-#: check_frequency: 180d
+#: last_checked: 2025-02-15
+#: check_frequency: 120d
 #: next_check: 2027-12-31
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
@@ -5911,7 +5911,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/erweiterungsbau-bundesministerium-des-innern.562/#post-22257
 #: osm_watch: way id="257432926" version="11"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2025-01-15 (mapillary)
+#: last_checked: 2025-02-15
 #: check_frequency: 180d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754 7556,12763
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

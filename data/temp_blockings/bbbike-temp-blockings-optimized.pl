@@ -3231,7 +3231,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18871,9565 18876,9512
 #: osm_watch[closed]: note 3658253 6
-#: osm_watch: way id="192487145" version="32"
+#: osm_watch: way id="192487145" version="33"
 #: osm_watch: note 4481312 6
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
@@ -3239,8 +3239,8 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
 #: last_checked: 2025-02-08
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="38"
-#: osm_watch: way id="580507889" version="33"
+#: osm_watch: way id="31525573" version="39"
+#: osm_watch: way id="580507889" version="34"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
 #: last_checked: 2025-02-08
@@ -4634,9 +4634,11 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
 #: by[nocache]: https://archive.is/nyxPx
+#: osm_watch: note 3248363 6
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
+#: add_fragezeichen: Wurde die Sperrung der Eisenbahnüberführung mittlerweile aufgehoben?
 #: last_checked: 2025-02-04 (mapillary)
-#: next_check: 2025-10-01
+#: next_check: 2025-02-08
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
 #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin
 #: last_checked: 2025-02-04 (mapillary)
@@ -4646,7 +4648,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3
 ',
          'from' => 1656194400,
          'id' => 3574,
-         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich Herbst 2025, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str.',
+         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich Herbst 2025, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str. (aber möglicherweise wurde die Sperrung mittlerweile beendet)',
          'type' => 'gesperrt',
          'until' => 1759334400
        },
@@ -4678,7 +4680,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 # REMOVED (offen) --- #: XXX teilweise Freigabe am 3.6.2024 (voraussichtlich!) --- #: next_check: 2024-06-03 ---	q4::inwork 13996,16959 13974,16924 13870,16837
-#: osm_watch: way id="1316908799" version="2"
+#: osm_watch: way id="1316908799" version="3"
 # REMOVED (hier nicht mehr) ---	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
 #: osm_watch: way id="42990078" version="30"
@@ -5042,7 +5044,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2025-02-05
+#: last_checked: 2025-02-09 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2025-07-01 (bw)
 	q3::inwork 6447,9661 6341,9546
@@ -5688,10 +5690,10 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-02-21 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
-#: osm_watch: way id="1142005449" version="8"
+#: osm_watch: way id="1142005449" version="9"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
 Wilhelminenhofstr. (Ost)	q4::inwork 18191,6363 17991,6431
-#: osm_watch: way id="176072020" version="43"
+#: osm_watch: way id="176072020" version="44"
 #: note: der östliche Gehweg ist komplett gesperrt, zur Überquerung existiert eine Fußgängerampel (Stand September 2024) --- mittlerweile (Februar 2025) wohl nicht mehr gesperrt, aber an der Kreuzung geht es weiterhin nicht weiter: q4 -> q3
 Edisonstr. (Süd)	q3::inwork; 17948,6248 17991,6431
 #: note: der westliche Gehweg ist im südlichen Abschnitt weitgehend frei, deshalb q4+ statt q4 (Stand September 2024)
@@ -6273,10 +6275,10 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
-#: also_indoor: traffic (B,T,G)
+#: also_indoor: traffic (B,T,ex-G)
 #: note: bei Bing & TomTom nur die östliche Anbindung als gesperrt markiert
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-01-17 (traffic) vvv
+#: last_checked: 2025-02-15 (traffic) vvv
 #: check_frequency: 30d vvv
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
@@ -6480,11 +6482,12 @@ Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: source_id: viz2021:13.315793,52.506037,11.12.2024,14:00 (bis 28.03.2025)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 # REMOVED --- #: next_check: 2025-01-17
-	q4::inwork 4415,11053 4399,10854
+#: note: nur wenige Meter sind gesperrt, deshalb q4 -> q3
+	q3::inwork 4415,11053 4399,10854
 ',
          'from' => 1733835600,
          'id' => 4102,
-         'text' => 'Wielandstr.: Bauarbeiten an der Kantstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 11.12.2024 14:00 bis 28.03.2025',
+         'text' => 'Wielandstr.: Bauarbeiten an der Kantstr., Sperrung der Fahrbahn, vom 11.12.2024 14:00 bis 28.03.2025',
          'type' => 'handicap',
          'until' => 1743202740
        },
@@ -6552,6 +6555,7 @@ Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1526632.php (neue Sperrung des südlichen Teltowkanaluferwegs und der Bäkebrücke)
 #: by: https://www.berliner-zeitung.de/news/steglitz-zehlendorf-baekestrasse-in-lichterfelde-wegen-neuer-baustelle-bis-august-gesperrt-li.2292684
 #: by: https://www.tagesspiegel.de/berlin/bezirke/uferweg-am-teltowkanal-ab-mitte-februar-gesperrt-berliner-wasserbetriebe-erneuern-abwasserleitungen-13119478.html
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/promenade-komplett-gesperrt_a435194
 # REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
 #: also_indoor: search Bäkebrücke
@@ -6818,7 +6822,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ehemalige-total-energies-tankstelle-ostbahnhof-holzmarktstra%C3%9Fe-36-42.1473/#post-24511
 #: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen.
 #: osm_watch: way id="482690912" version="6"
-#: last_checked: 2025-01-28 vvv
+#: last_checked: 2025-02-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 (entwicklungsstadt: Abriss der ehem. Tankstelle) vvv
 	3 12207,11763 12132,11788 11966,11832
@@ -6850,7 +6854,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
          'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 24.01.2025) (bis 24.02.2025) (bis 25.04.2025)
 #: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
-#: osm_watch: note 4594797 2
+#: osm_watch: note 4594797 3
 #: also_indoor: traffic (H,G,B,T,W)
 #: last_checked: 2025-02-09
 #: next_check: 2025-04-25 (VIZ-Verkehrsmeldung)
@@ -7549,6 +7553,31 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'text' => 'Strausberg, Garzauer Str., Ersatzneubau der Eisenbahnüberführung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 28.11.2025',
          'type' => 'gesperrt',
          'until' => 1764345600
+       },
+       {
+         'data' => '#: source_id: 5e5fb692-e58e-4ef9-8fa9-ae1d8c41e3bels.brandenburg.de (bis 01.05.2026)
+#: osm_watch: way id="24012076" version="17"
+#: XXX Wird die Qualität der Straße nach den Bauarbeiten besser sein?
+#: next_check: 2026-04-30
+	2::inwork -30699,57370 -30570,57254 -30550,57216
+',
+         'from' => 1740265200,
+         'id' => 4258,
+         'text' => 'Ernst-Toller-Str., Neuruppin: Bauarbeiten, Sperrung (Fahrbahn & Gehweg), vom 24.02.2025 bis 30.04.2026',
+         'type' => 'gesperrt',
+         'until' => 1777586400
+       },
+       {
+         'data' => '#: note: by rbb
+	2::temp 8232,11414 8309,11390 8375,11368 8389,11378 8374,11479
+	2::temp 8217,11455 8232,11414 8253,11306 8280,11296 8318,11324 8375,11368
+	2::temp 8301,11469 8309,11390 8318,11324
+',
+         'from' => 1739641347,
+         'id' => 4259,
+         'text' => 'Eichhornstr., Alte Potsdamer Str., Varian-Fry-Str., Ludwig-Beck-Str.: Straßen können wegen der Berlinale gesperrt sein, evtl. sind auch Radfahrer betroffen, bis 23. Februar 2025',
+         'type' => 'gesperrt',
+         'until' => 1740351599
        }
      
 );

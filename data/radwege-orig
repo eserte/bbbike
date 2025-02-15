@@ -2191,7 +2191,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-02-05 vvv
+#: last_checked: 2025-02-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2215,7 +2215,7 @@ provisorische Busspur	RW5; 10550,12096 10512,12039
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
 #: XXX Wie lange bleibt die provisorische Radspur oder Busspur Richtung Spittelmarkt erhalten?
 #: osm_watch: way id="81112790" version="25"
-#: last_checked: 2025-02-05
+#: last_checked: 2025-02-14
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-08-30
 # REMOVED (bis etwa Herbst/Winter 2024) --- provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
@@ -2934,7 +2934,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-02-05 vvv
+#: last_checked: 2025-02-14 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -4367,6 +4367,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241029 (neue Bauphase ab 30.10.2024)
 #: by: https://pascalgrothe.de/bruecke-ueber-die-s5-am-blumberger-damm-wird-2025-eroeffnet/
 #: by: https://pascalgrothe.de/blumberger-damm-bruecke-das-warten-hat-bald-ein-ende/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/blumberger-damm-in-berlin-biesdorf-ende-der-sperrung-in-sicht-13183375.html
 #: source_id: viz2021:13.562831,52.51426,02.08.2021,12:02 (bis 01.06.2025) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025) (bis 30.11.2025) (bis 15.06.2023) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025) (bis 30.11.2024, Gesamtbaumaßnahme bis 2025) (bis 30.06.2025)
@@ -5155,11 +5156,11 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: osm_watch: note 4530704 3
-#: osm_watch: way id="631069428" version="10"
-#: osm_watch: way id="151370228" version="16"
-#: osm_watch: way id="631069429" version="9"
-#: osm_watch: way id="631069427" version="10"
-#: osm_watch: way id="631069430" version="12"
+#: osm_watch: way id="631069428" version="11"
+#: osm_watch: way id="151370228" version="17"
+#: osm_watch: way id="631069429" version="10"
+#: osm_watch: way id="631069427" version="11"
+#: osm_watch: way id="631069430" version="13"
 #: note: Robert-Siewert-Str., Richtung Osten
 #: XXX Radweg wird vermutlich saniert
 #: last_checked: 2024-12-24
@@ -6851,7 +6852,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://www.bz-berlin.de/berlin/mitte/berlins-laengstes-halteverbot (bis 2027)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
-#: last_checked: 2025-01-21 vvv
+#: last_checked: 2025-02-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -8008,7 +8009,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="8"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-01-30
+#: last_checked: 2025-02-14
 #: check_frequency: 90d
 asphaltierter Radweg ist größtenteils nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -8342,7 +8343,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023) (inaktiv)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
-#: osm_watch: way id="26708088" version="35"
+#: osm_watch: way id="26708088" version="36"
 #: last_checked: 2025-01-25 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
@@ -8351,7 +8352,7 @@ provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 
 # REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
 # REMOVED --- provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17991,6431
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
-#: osm_watch: way id="671329664" version="15"
+#: osm_watch: way id="671329664" version="16"
 # REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17991,6431 17962,6674
 #: note: erste Meter Gehweg für Radfahrer frei, dann Radspur mit Gelbmarkierung, wird aber durchgängig von parkenden Autos ignoriert
 	RW0; 17991,6431 17962,6674
@@ -8677,7 +8678,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/nach-androhung-von-zwangsauszug-losung-fur-radweg-auf-der-berliner-kantstrasse-verzogert-sich-12847046.html (Verstetigung westlich der Wilmersdorfer Str., weiter keine Lösung im östlichen Abschnitt)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/platz-fuer-alle-auf-der-kantstrasse_a432687
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
-#: last_checked: 2025-02-05 vvv
+#: last_checked: 2025-02-15 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
