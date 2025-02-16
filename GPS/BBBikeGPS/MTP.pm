@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2021,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,13 +17,14 @@ push @GPS::BBBikeGPS::MTP::ISA, 'GPS';
 
 use strict;
 use warnings;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub has_gps_settings { 1 }
 
 sub transfer_to_file { 0 }
 
 sub ok_label { "Kopieren auf das Gerät" } # M/Mfmt XXX
+sub ok_test_label { "Simulation" } # M/Mfmt XXX
 
 sub tk_interface {
     my($self, %args) = @_;
@@ -53,24 +54,60 @@ sub convert_from_route {
 			  );
     close $ofh;
 
-    my $newfiles_path = 'GARMIN/NewFiles';
-    my $newfiles_folder_id = eval { _mtp_get_folder_id($newfiles_path) };
-    _status_message("Cannot find folder '$newfiles_path'", "die") if !defined $newfiles_folder_id;
+    return {
+	fh => $ofh,
+	file => $ofile,
+	route => $simplified_route,
+    };
+}
 
-    (my $safe_routename = $simplified_route->{routename}) =~ s{[^A-Za-z0-9_-]}{_}g;
+sub transfer {
+    my($self, %args) = @_;
+
+    my $res = $args{-res};
+    my $ofile = $res->{file} || _status_message("FATAL ERROR: -res.file is missing", "die");
+    my $route = $res->{route};
+
+    my $newfiles_path = 'GARMIN/NewFiles';
+
+    (my $safe_routename = $route->{routename}) =~ s{[^A-Za-z0-9_-]}{_}g;
     require POSIX;
     $safe_routename = POSIX::strftime("%Y%m%d_%H%M%S", localtime) . '_' . $safe_routename . '.gpx';
 
-    {
-	my @cmd = ('mtp-sendfile', $ofile, $newfiles_folder_id);
-	system(@cmd);
-	if ($? != 0) {
-	    _status_message("Running '@cmd' failed", "die");
+    if ($args{-test}) {
+	my $dest_dir;
+	if (!$ENV{BBBIKE_DEBUG_BBBIKEGPS_MTP}) {
+	    my $user_run_dir = "/run/user/$>"; # probably works only on contemporary Linux systems where this is a separate tmpfs mount
+	    if (!-d $user_run_dir) {
+		_status_message("Cannot simulate upload: no directory $user_run_dir available", "die");
+	    }
+	    $dest_dir = "$user_run_dir/$newfiles_path";
+	    require File::Path;
+	    File::Path::make_path($dest_dir);
+	    _status_message("Note: simulated GPX file will occur in $dest_dir", 'infodlg');
+	} else {
+	    $dest_dir = $ENV{BBBIKE_DEBUG_BBBIKEGPS_MTP};
+	    _status_message("Note: simulated GPX file will occur in $dest_dir; maybe you have make sure that $newfiles_path or a similar subdirectory exists.", 'infodlg');
+	}
+
+	require File::Copy;
+	my $dest = "$dest_dir/$safe_routename";
+	File::Copy::cp($ofile, $dest)
+		or die "Failure while copying $ofile to $dest: $!";
+    } else {
+	my $newfiles_folder_id = eval { _mtp_get_folder_id($newfiles_path) };
+	_status_message("Cannot find folder '$newfiles_path'", "die") if !defined $newfiles_folder_id;
+
+	{
+	    my @cmd = ('mtp-sendfile', $ofile, $newfiles_folder_id);
+	    system(@cmd);
+	    if ($? != 0) {
+		_status_message("Running '@cmd' failed", "die");
+	    }
 	}
     }
 }
 
-sub transfer { } # NOP
 
 sub _mtp_get_folder_id {
     my($path) = @_;

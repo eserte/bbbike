@@ -3813,6 +3813,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     [M('Route auf GPS-Gerät kopieren (Massenspeicher)'), 'BBBikeGPS::MountedDevice'],
 		     [M('Route auf GPS-Gerät kopieren (MTP, z.B. Fitnessuhren)'), 'BBBikeGPS::MTP'],
 		     [M("Senden der Route auf ein GPS-Gerät (Massenspeicher) simulieren"), 'BBBikeGPS::MountedDevice_Test'],
+		     [M("Senden der Route auf ein GPS-Gerät (MTP) simulieren"), 'BBBikeGPS::MTP_Test'],
 		     [M('Route zu einem alten Garmin-Gerät senden (seriell/USB)'), 'DirectGarmin'],
 		     [M('Senden der Route zu einem alten Garmin-Gerät simulieren'), 'DirectGarmin_Test'],
 		     ($devel_host ? [M("Route mit gpsbabel senden"), "GpsbabelSend"] : ()),
