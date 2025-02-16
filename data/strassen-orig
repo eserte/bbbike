@@ -8984,7 +8984,9 @@ Otto-von-Wollank-Str.	N -8773,5998 -8790,6103 -8773,6284 -8775,6403 -8776,6425 -
 Elsa-Brändström-Weg	N -8790,6103 -8693,6131 -8637,6190
 Staudenweg (Kladow)	N -8570,6310 -8559,6275
 Krampnitzer Weg	N -9330,5009 -9170,5000 -9015,4978 -8806,4957 -8634,4921 -8450,4919 -8415,4918 -8293,4915 -8098,4899 -7797,4850 -7643,4846 -7582,4850 -7529,4853 -7519,4843
-Wublitzweg	N -9015,4978 -9071,4876 -9118,4812 -9164,4735 -9217,4645 -9271,4549
+Wublitzweg	N -9015,4978 -9071,4876
+#: note: ab Straße 153 Privatstraße
+Wublitzweg	N -9071,4876 -9118,4812 -9164,4735 -9217,4645 -9271,4549
 Straße 153	N -9071,4876 -9059,4862 -8994,4851
 Röttenbacher Weg	N -8987,4645 -9066,4549
 Schauensteiner Weg	N -9294,4689 -9217,4645 -9088,4564 -9066,4549 -9027,4521
@@ -19742,7 +19744,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-02-14 vvv
+#: last_checked: 2025-02-16 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

@@ -513,6 +513,10 @@ Route Potsdam Nordost (blaue Route)	radroute; -13277,1490 -13285,1588 -13294,168
 #: note: Georg-Hermann-Allee -> Viereckremise stimmt (siehe mapillary)
 Route Potsdam Nord (rote Route)	radroute; -13277,1490 -13285,1588 -13294,1681 -13337,1680 -13339,1762 -13347,1928 -13335,1927 -13272,1927 -13228,1927 -13205,1928
 # 
+#: XXX unvollständig; siehe https://www.openstreetmap.org/relation/2882558
+#: note: grünes "Kuchenstück" im Südwesten
+Potsdamer Route "Gartenkulturpfad Naturerlebnisse"	radroute; -16062,-993 -16192,-1007 -16217,-998 -16875,-1050 -17390,-1092 -18115,-1154
+# 
 #: ignore ^^^
 #: section ^^^
 #

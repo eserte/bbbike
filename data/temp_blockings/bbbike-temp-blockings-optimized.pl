@@ -3176,7 +3176,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-01-21
+#: last_checked: 2025-02-16
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4633,22 +4633,17 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
-#: by[nocache]: https://archive.is/nyxPx
-#: osm_watch: note 3248363 6
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/dahme-spreewald-kreisverkehr-storkower-strasse-in-kw-frei-neue-verkehrsfuehrung-GENTZWH5Y5EGBOEL2ARWQLLGOU.html (nur Kreisverkehr ist frei, Unterführung weiterhin erst im Herbst 2025)
+#: osm_watch: note 3248363 7
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
-#: add_fragezeichen: Wurde die Sperrung der Eisenbahnüberführung mittlerweile aufgehoben?
 #: last_checked: 2025-02-04 (mapillary)
-#: next_check: 2025-02-08
+#: next_check: 2025-11-30 (maz)
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
-#: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin
-#: last_checked: 2025-02-04 (mapillary)
-# REMOVED --- #: next_check: 2025-01-31
-#: note: eigentlich 1s:q3
-Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
+# REMOVED --- #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin --- #: last_checked: 2025-02-04 (mapillary) --- #: next_check: 2025-11-30 (maz) --- #: note: eigentlich 1s:q3 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
 ',
          'from' => 1656194400,
          'id' => 3574,
-         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich Herbst 2025, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str. (aber möglicherweise wurde die Sperrung mittlerweile beendet)',
+         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung bis voraussichtlich Herbst 2025',
          'type' => 'gesperrt',
          'until' => 1759334400
        },
@@ -6450,7 +6445,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-02-11 vvv
+#: last_checked: 2025-02-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6856,7 +6851,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: osm_watch: note 4594797 3
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2025-02-09
+#: last_checked: 2025-02-16
 #: next_check: 2025-04-25 (VIZ-Verkehrsmeldung)
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
@@ -6980,9 +6975,9 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-02-11 vvv
+#: last_checked: 2025-02-16 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2025-02-28 vvv
+#: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
 Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #Fischerinsel	q4::inwork 10578,11969 10512,12039
@@ -7059,23 +7054,7 @@ Kameruner Str.	q4::inwork 6383,15972 6484,16085
          'until' => 1744725600
        },
        undef,
-       {
-         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/breite-stra%C3%9Fe-scharrenstra%C3%9Fe-fischerinsel-petriplatz-neubauten.1078/#post-24088
-#: by: https://www.deutsches-architekturforum.de/thread/8570-fischerinsel-petriplatz-breite-stra%C3%9Fe/?postID=771022#post771022
-#: by: https://entwicklungsstadt.de/bauprojekt-breite-strasse-in-berlin-mitte-kritik-an-der-architektur/
-#: also_indoor: traffic (H,G,B,T)
-#: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2025-02-05
-#: check_frequency: 21d
-# REMOVED --- #: check_frequency: 30d
-	2::inwork 10383,12191 10289,12106
-',
-         'from' => undef,
-         'id' => 4212,
-         'text' => 'Neumannsgasse: Hochbauarbeiten, Sperrung, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: ROENNE-2024
@@ -7569,15 +7548,57 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
        },
        {
          'data' => '#: note: by rbb
-	2::temp 8232,11414 8309,11390 8375,11368 8389,11378 8374,11479
-	2::temp 8217,11455 8232,11414 8253,11306 8280,11296 8318,11324 8375,11368
-	2::temp 8301,11469 8309,11390 8318,11324
+#: note: von der Potsdamer Str. aus sind zumindest die Bürgersteige frei, am Marlene-Dietrich-Platz vermutete Vollsperrung
+	q4::temp 8232,11414 8309,11390 8375,11368
+	q4::temp 8217,11455 8232,11414
+	2::temp 8232,11414 8253,11306 8280,11296
+	2::temp 8280,11296 8318,11324 8375,11368
+	q4::temp 8375,11368 8389,11378 8481,11447
+	2::temp 8309,11390 8318,11324
+	q4::temp 8389,11378 8374,11479
 ',
          'from' => 1739641347,
          'id' => 4259,
          'text' => 'Eichhornstr., Alte Potsdamer Str., Varian-Fry-Str., Ludwig-Beck-Str.: Straßen können wegen der Berlinale gesperrt sein, evtl. sind auch Radfahrer betroffen, bis 23. Februar 2025',
          'type' => 'gesperrt',
          'until' => 1740351599
+       },
+       {
+         'data' => '#: next_check_id: ALTSTADTKOEPENICK-2024
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (Gesamtdauer der Arbeiten bis Mitte 2027)
+#: source_id: bvg2024:162#f0f63843-db69-4d37-8f71-963e4e85cebf (kein Endedatum)
+#: source_id: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
+#: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025)
+#: next_check: 2025-06-02 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-11-30 (Ausschreibungsunterlagen)
+	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660
+',
+         'from' => 1739702908,
+         'id' => 4260,
+         'text' => 'Alt-Köpenick: Bauarbeiten, Straße zwischen Freiheit und Rosenstr. gesperrt, 17.02.2025 bis 30.11.2025',
+         'type' => 'handicap',
+         'until' => 1764543600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.42577,52.59492,16.02.2025,16:41 (bis 03.03.2025)
+	q4::inwork 11518,20894 11599,20973 11686,21058 11703,21097
+',
+         'from' => 1739634060,
+         'id' => 4261,
+         'text' => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Pfirsichblütenweg und Zimbelstr., evtl. sind auch Radfahrer betroffen, vom 16.02.2025 16:41 bis 03.03.2025 23:59',
+         'type' => 'handicap',
+         'until' => 1741042740
+       },
+       {
+         'data' => '#: by: rbb
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216
+	q4::inwork 13741,13107 13692,13221 13644,13332
+',
+         'from' => 1739574000,
+         'id' => 4262,
+         'text' => 'Ebertystr.: Sperrung der Fahrbahn Höhe Ebelingstr., auch Radfahrer sind wohl betroffen, vom 16.02.2025 08:00 bis Juni 2025',
+         'type' => 'handicap',
+         'until' => 1751320800
        }
      
 );
