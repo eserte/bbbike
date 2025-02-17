@@ -890,6 +890,7 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (Leitungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 18.02.2025) (bis 18.02.2025 + weitere Arbeiten)
 #: osm_watch: way id="152466386" version="20"
 #: osm_watch: way id="493763039" version="12"
+#: osm_watch: way id="450661507" version="11"
 #: last_checked: 2025-01-07 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2025-02-18
@@ -3226,7 +3227,7 @@ Ederstr.: Planung einer Fahrradstraße	?::projected 13946,7918 13919,7707
 #: by: https://mein.berlin.de/projekte/weichselstrasse/ (Vorstudie)
 #: by: https://www.kms-sonne.de/projekte/weichselstrasse/
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/vorstudie-zum-umbau-der-weichselstrasse-liegt-vor_a400901
-#: last_checked: 2025-01-05
+#: last_checked: 2025-02-15 (mapillary)
 #: check_frequency: 360d
 Weichselstr.: Umbau geplant	?::projected 12330,8636 12392,8724 12434,8776 12478,8829 12590,8977 12682,9089 12755,9188
 # 
@@ -3490,7 +3491,7 @@ Betriebsweg Kiefholzstr. - Görlitzer Bahn/Beermannstr.	?::inwork 14137,8983 1417
 #: check_frequency: 180d
 Wiesbadener Str./Sodener Str.: Zebrastreifen geplant	?::projected 3677,7363 3703,7324 3744,7274
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (erwähnt)
-#: last_checked: 2025-01-28
+#: last_checked: 2025-02-15 (mapillary)
 #: check_frequency: 180d
 Lausitzer/Reichenberger Str.: zwei Zebrastreifen geplant	?::projected 12032,10144 12048,10097 12073,10050
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (noch keine Mittelzusage)
@@ -3725,7 +3726,7 @@ Chemnitzer Str.: Verlegung der Straße, Radwege	?::projected  22436,11054 22483,1
 # REMOVED (fertig) --- Schmitzweg: Neubau, danach bessere Qualität?	?::inwork 5885,19920 5803,19874 5742,19840
 # REMOVED (hier fertig) --- Schmitzweg: Neubau, danach bessere Qualität?	?::projected 5742,19840 5731,19824 5823,19544
 #: osm_watch: note 4203058 3
-#: osm_watch: way id="4675279" version="14"
+#: osm_watch: way id="4675279" version="15"
 Heiligental: Neubau, danach vermutlich bessere Qualität, evtl. auch verkehrsberuhigt	?::inwork 5929,19574 5897,19668 5858,19761 5803,19874
 # REMOVED (fertig laut Pressemeldung) --- Brodersenstr.: Neubau, danach vermutlich durchgängig Verbundsteinpflaster	?::inwork 6033,19611 5885,19920
 # REMOVED (hier außerhalb des Baubereichs) --- Brodersenstr.: Neubau, danach vermutlich durchgängig Verbundsteinpflaster	?::inwork 5885,19920 5804,20047
@@ -4770,7 +4771,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 # REMOVED (URL wurde ersetzt) --- #: by: https://www.luisenstadt-mitte.de/projekte/ohmstr.html (Baubeginn voraussichtlich 2023)
 #: by: https://www.luisenstadt-mitte.de/projekte/ohmstrasse-0 (Baubeginn 2023, verkehrsberuhigte Mischverkehrsfläche)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-der-ohmstrasse-876903.php (Neugestaltung bis 2023)
-#: last_checked: 2024-12-04 (mapillary)
+#: last_checked: 2025-02-15 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 360d
 # REMOVED --- #: next_check: 2023-01-01
@@ -5690,7 +5691,7 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 #: XXX hier waren Asphaltierungsarbeiten, vielleicht im Zusammenhang mit dem Zebrastreifen?
 # REMOVED --- #: note: Halteverbotsschilder bis 5.4.2024
 #: also_indoor: traffic (ex-B)
-#: last_checked: 2025-01-13
+#: last_checked: 2025-02-15 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-04-05
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
@@ -7657,14 +7658,20 @@ Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::project
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/kiezbuendnis-klausenerplatz-sammelt-ueber-1000-einwaende_a414257
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8921 (Antrag zur möglichen Sperrung der Halenseestraße)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-verkehr-bezirkspolitiker-warnen-vor-verkehrschaos-am-autobahndreieck-funkturm-13040641.html
-#: last_checked: 2024-02-24 vvv
-#: check_frequency: 360d vvv
-# REMOVED --- #: next_check: 2024-03-01 vvv
+#: by: https://www.deges.de/projekte/projekt/a-100-a-115-umbau-des-autobahndreiecks-funkturm/ (Baubeginn frühestens 2025)
+#: by: https://messe-berlinprod-media.e-spirit.cloud/e2026709-d681-4621-89e6-fa8d2bfbdbca/globale-medien/globale-pdfs/downloads-deutsch/20240206_infoblatt-umbau-autobahndreieck-funkturm.pdf (ab zweiter Hälfte 2025)
+#: osm_watch: node id="29997721" version="4"
+#: osm_watch: way id="24756980" version="17"
+#: osm_watch: way id="4446451" version="19"
+#: osm_watch: way id="4446451" version="19"
+#: last_checked: 2025-02-17 (research) vvv
+# REMOVED --- #: check_frequency: 360d vvv
+#: next_check: 2025-07-01 (messe infoblatt) vvv
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1557,10306 1471,10368 1517,10424 1580,10429 1692,10348 1723,10289 1725,10242 1742,10220
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1723,10289 1847,10323 1882,10356 1870,10406 1833,10427 1793,10424 1692,10348
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1870,10406 1939,10446
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Umsetzung voraussichtlich 2021)
@@ -8743,6 +8750,8 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berliner-zeitung.de/mensch-metropole/friedrichshain-kreuzberg-mehr-poller-weniger-parkplaetze-so-reagiert-der-bezirk-auf-die-heftige-kritik-li.2291235 (Frühjahr 2025)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1527821.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/informationen-zur-neuen-schulzone_a435248
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1532095.php (Maßnahmen im Ostkreuz-Kiez ab Februar 2025)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: osm_watch: way id="1051634661" version="11"
 #: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
 #: last_checked: 2025-02-12

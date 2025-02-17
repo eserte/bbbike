@@ -10,16 +10,18 @@
 # 
 ### Friedrichshain ###
 # 
-#: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (hier nur Richtung Osten [falsch!], bis 24.02.2025)
+#: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum)
+#: source_id: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
+#: source_id: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum)
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-02-16
-#: next_check: 2025-02-24
-#: valid: -20250224
+#: last_checked: 2025-02-17
+#: next_check: 2025-02-24 (ehemalige VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250224
 Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-02-15
+#: last_checked: 2025-02-17
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -54,7 +56,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="13"
 #: osm_watch: way id="1072662717" version="15"
-#: last_checked: 2025-02-14
+#: last_checked: 2025-02-17
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538

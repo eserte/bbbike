@@ -46181,16 +46181,16 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1739302207, # $isodate2epoch->("2025-03-31 23:59:59"), # undef, # XXX
+       until => $isodate2epoch->("2025-03-31 23:59:59"), # undef, # XXX
        text  => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
 #: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.32487,52.50002,31.01.2025,11:35 (bis 10.02.2025) (inaktiv)
-#: note: laut rbb und traffic sites nun bis 31.03.2025
+#: source_id: viz2021:13.32487,52.50002,31.01.2025,11:35 (bis 10.02.2025) (inaktiv) (bis 31.03.2025)
+#: note: laut rbb und traffic sites nun bis 31.03.2025; mittlerweile bei VIZ reaktiviert, bei den Traffic-Sites bis auf ADAC nicht
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W,A)
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? --- #: last_checked: 2025-01-31 (traffic)
+#: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 25d
 # REMOVED --- #: next_check: 2025-02-10 (VIZ-Verkehrsmeldung; andere Quellen mit Verlängerung)
@@ -46506,9 +46506,41 @@ EOF
        text  => 'Ebertystr.: Sperrung der Fahrbahn Höhe Ebelingstr., auch Radfahrer sind wohl betroffen, vom 16.02.2025 08:00 bis Juni 2025',
        type  => 'handicap',
        data  => <<EOF,
-#: by: rbb
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216
+#: by: rbb (bis 17.03.2025)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
+#: XXX prüfen!
 	q4::inwork 13741,13107 13692,13221 13644,13332
+EOF
+     },
+     { from  => 1739720880, # 2025-02-16 16:48
+       until => 1745690400, # 2025-04-26 20:00
+       text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.02.2025 16:48 bis 26.04.2025 20:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025)
+	q4::inwork -1304,11183 -1062,11214
+EOF
+     },
+     { from  => 1739772000, # 2025-02-17 07:00
+       until => 1751641200, # 2025-07-04 17:00
+       text  => 'Platanenstr.: Bauarbeiten zwischen Waldstr. und Treskowstr., Sperrung, vom 18.02.2025 07:00 bis 04.07.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: PLATANEN-2025
+#: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025)
+	q4::inwork 9824,19910 9498,19817
+EOF
+     },
+     { from  => 1739768400, # 2025-02-17 06:00
+       until => 1739998800, # 2025-02-19 22:00
+       text  => 'Schönhauser Allee: Sperrung zwischen Sredzkistr. und Kastanienallee, vom 18.02.2025 06:00 bis 19.02.2025 22:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.412225,52.53795,18.02.2025,06:00 (auch Radverkehr betroffen (trotz Hochbordradwegs?), bis 19.02.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1891555716395106730
+#: by: https://pbs.twimg.com/media/Gj-odVZXYAAMeck?format=png&name=900x900
+#: by: https://pbs.twimg.com/media/Gj-ojEvXEAAbOwo?format=png&name=900x900 (Umleitungsstrecke für Radfahrer; gesperrter Bereich nur wenige Meter)
+	q4::inwork; 10893,14705 10884,14952
 EOF
      },
     );
