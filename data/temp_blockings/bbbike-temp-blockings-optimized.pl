@@ -2111,7 +2111,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
-#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...)
+#: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025)
 #: osm_watch: way id="152466403" version="21"
 #: osm_watch: note 4444162 2
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
@@ -2121,9 +2122,9 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 ',
          'from' => 1707001200,
          'id' => 2328,
-         'text' => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich vom bis 18.02.2025',
+         'text' => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Ende März 2025',
          'type' => 'handicap',
-         'until' => 1739894400
+         'until' => 1743433200
        },
        undef,
        undef,
@@ -2927,37 +2928,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#	2::temp 9984,12426 9934,12420 9858,12410 9846,12516 9842,12565 9892,12596 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
-#	2::temp 9919,12613 9953,12533 9846,12516
-#	2::temp 9953,12533 9984,12426 10024,12431 10063,12438 9956,12617 9948,12631
-#	2::temp 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587
-#	2::temp 10696,12601 10599,12526 10646,12470 10687,12421 10783,12502 10696,12601
-#	2::temp 10094,12635 10176,12506
-#	3 9877,12293 9873,12315 9858,12410 9780,12401
-#	3 10431,12709 10542,12587 10599,12526 10580,12513
-#	3 9780,12401 9858,12410 9873,12315 9877,12293
-#	3 10580,12513 10599,12526 10542,12587 10431,12709
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1891715311235219781 (bis 14 Uhr)
-#: source_id: bvg2024:100#HIM_FREETEXT_262989 (bis 2025-02-18 14:30 Uhr)
-#: by: https://www.tagesspiegel.de/berlin/staatsakt-fur-horst-kohler-am-dienstag-diese-sperrungen-gelten-rund-um-berliner-dom-und-rotes-rathaus-13220911.html
-#: by[nocache]: https://x.com/polizeiberlin/status/1891493237187068221
-#: by: https://pbs.twimg.com/media/Gj_vEsCWQAAo5rX?format=jpg&name=900x900
-Spandauer Straße	2::temp 10687,12421 10646,12470 10599,12526 10542,12587 10431,12709
-Rathausstraße	2::temp 10696,12601 10599,12526 10580,12513 10475,12438 10416,12394 10357,12356 10285,12306
-Jüdenstr.	2::temp 10696,12601 10783,12502
-Karl-Liebknecht-Str./Unter den Linen	2::temp 10431,12709 10359,12634 10300,12587 10243,12546 10176,12506 10152,12491 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
-Am Zeughaus	2::temp 9984,12426 9953,12533 9919,12613
-Am Lustgarten	2::temp 10176,12506 10094,12635 10054,12699
-Bodestr.	2::temp 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725 10166,12777
-Schloßplatz	2::temp 10063,12438 10095,12392 10168,12444 10263,12508 10243,12546
-',
-         'from' => 1739859686,
-         'id' => 2846,
-         'text' => 'Umfangreiche Sperrungen in Mitte: rund um das Berliner Rathaus und im Bereich des Berliner Doms, evtl. sind auch Radfahrer betroffen, am 18. Februar 2025 bis voraussichtlich 14:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1739885400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4588,7 +4559,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024) (bis 31.12.2024) (bis 08.01.2025) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
-#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (bis 28.02.2025)
+#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (bis 28.02.2025) (bis 04.03.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -4597,9 +4568,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 ',
          'from' => 1713897172,
          'id' => 3550,
-         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 28.02.2025',
+         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 04.03.2025',
          'type' => 'gesperrt',
-         'until' => 1740758400
+         'until' => 1741104000
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -4867,8 +4838,8 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: note: bei rbb mittlerweile entfernt; ab 2025-02-10 wieder da ("Einbahnstraßenregelung")
 #: osm_watch: way id="1094113747" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-04
-#: check_frequency: 60d
+#: last_checked: 2025-02-17 (daf)
+#: check_frequency: 30d
 #: next_check: 2025-02-23 (VIZ-Verkehrsmeldung)
 	q4::inwork; 3429,13227 3400,13107
 ',
@@ -7059,18 +7030,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.349148,52.550327,19.08.2024,07:00 (später wurde auch die Kameruner erwähnt, bis 18.02.2025)
-#: source_id: viz2021:13.347134,52.550698,31.10.2024,08:37 (auch die Kameruner Str., bis 18.01.2025) (inaktiv)
-Cornelius-Fredericks-Str.	q4::inwork 6661,15921 6484,16085
-Kameruner Str.	q4::inwork 6383,15972 6484,16085
-',
-         'from' => 1723957200,
-         'id' => 4208,
-         'text' => 'Cornelius-Fredericks-Str. und Kameruner Str.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 19.08.2024 07:00 bis 18.02.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1739894400
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: 246430009 (bis 15.04.2025)
@@ -7671,7 +7631,8 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'until' => 1751641200
        },
        {
-         'data' => '#: source_id: viz2021:13.412225,52.53795,18.02.2025,06:00 (auch Radverkehr betroffen (trotz Hochbordradwegs?), bis 19.02.2025)
+         'data' => '#: source_id: viz2021:13.412225,52.53795,18.02.2025,06:00 (auch Radverkehr betroffen (trotz Hochbordradwegs), bis 19.02.2025)
+#: source_id: viz2021:13.412225,52.53795,19.02.2025,06:00 (bis 19.02.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1891555716395106730
 #: by: https://pbs.twimg.com/media/Gj-odVZXYAAMeck?format=png&name=900x900
 #: by: https://pbs.twimg.com/media/Gj-ojEvXEAAbOwo?format=png&name=900x900 (Umleitungsstrecke für Radfahrer; gesperrter Bereich nur wenige Meter)

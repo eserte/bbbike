@@ -14,8 +14,9 @@
 #: source_id: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
 #: source_id: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum)
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-02-17
-#: next_check: 2025-02-24 (ehemalige VIZ-Verkehrsmeldung)
+#: last_checked: 2025-02-18
+#: check_frequency: 8d
+# REMOVED --- #: next_check: 2025-02-24 (erste VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250224
 Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
 # 
@@ -30,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-02-16
+#: last_checked: 2025-02-18
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -65,7 +66,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="6"
 #: osm_watch: way id="1146013233" version="9"
 #: osm_watch: way id="1134071039" version="11"
-#: last_checked: 2025-02-16 vvv
+#: last_checked: 2025-02-18 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896

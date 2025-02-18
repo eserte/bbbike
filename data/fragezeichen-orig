@@ -284,6 +284,7 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: by: https://www.tagesspiegel.de/berlin/bezirke/berlins-holpriger-mini-radweg-die-ewige-zumutung-fur-fahrradfahrer-an-der-heerstrasse-12354953.html (Anordnung eines gemeinsamen Geh- und Radwegs, mehr wird erstmal nicht passieren)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fahrrad-baustellen-in-berlin-spandau-wir-bauen-einen-radweg-aus-cashewkernen-13011658.html
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1530267.php (zur Radschnellverbindung RSV 5 "West-Route": Voraussetzung für ein Planfeststellungsverfahren)
+#: by: https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2232.pdf (Grundsätze der Planung zu der Radschnellverbindung West-Route (RSV 5))
 #: source_id: LMS-BR_r_LMS-BR_138344_LMS-BR_72 (vermutlich inaktiv)
 #: source_id: 2147343836 (vermutlich inaktiv)
 #: last_checked: 2024-07-13 (mapillary)
@@ -887,13 +888,13 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: source_id: 2147346753 (bis 15.1.2021, Leitungsbau) (inaktiv)
 #: source_id: 2147347251 (bis 20.6.2021, Leitungsarbeiten) (inaktiv)
 #: source_id: viz2021:13.541546,52.419441,13.03.2023,09:00 (Tiefbauarbeiten, Gegenverkehrsregelung, bis 11.04.2023) (bis 24.04.2023) (bis 05.05.2023) (inaktiv)
-#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (Leitungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 18.02.2025) (bis 18.02.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (Leitungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 18.02.2025) (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...)
 #: osm_watch: way id="152466386" version="20"
 #: osm_watch: way id="493763039" version="12"
 #: osm_watch: way id="450661507" version="11"
 #: last_checked: 2025-01-07 (mapillary)
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2025-02-18
+#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
 Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 # 
 # REMOVED (realisiert) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX AT.1 --- #: last_checked: 2021-07-21 (osm) --- #: check_frequency: 30d --- Am Treptower Park: Einrichtung einer Radverkehrsanlage geplant	?::projected; 14185,9509 14089,9610
@@ -1039,11 +1040,12 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 # REMOVED (404) --- #: by: http://www.johthal.de/instar-video.html (Webcam)
 #: source_id: 2147345841 (bis 30.9.2021) (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_204650_LMS-BR_72 (bis 30.9.2021) (inaktiv)
-#: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024) (bis 31.03.2025) (bis 18.02.2025) (bis 31.03.2025)
+#: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024) (bis 31.03.2025) (bis 18.02.2025) (bis 31.03.2025) (bis 30.05.2025)
 #: source_id: viz2021:13.51205,52.45485,14.06.2024,14:55 (bis 15.08.2024) (inaktiv)
+#: source_id: viz2021:13.51205,52.45485,18.02.2025,14:59 (bis 30.05.2025)
 #: last_checked: 2025-02-11 (mapillary)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-03-31 (bvg.de)
+#: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 # REMOVED (hier realisiert) --- Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17695,5394 17736,5441
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17736,5441 17754,5460 17765,5469 17822,5524 17886,5587
 # 
@@ -2192,6 +2194,7 @@ Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7
 #: by: https://www.berliner-woche.de/bezirk-reinickendorf/c-verkehr/ausbauplaene-von-einsparungen-betroffen_a432780 (Baubeginn I. Quartal 2025, Fertigstellung Ende 2025)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1530207.php (Modernisierung in den Jahren 2025/2026)
 #: by: https://www.berliner-zeitung.de/news/modernisierungen-in-reinickendorf-oranienburger-strasse-bekommt-neue-radwege-li.2294830
+#: by: https://www.berliner-woche.de/waidmannslust/c-verkehr/baeume-fallen-fuer-strassenbau_a435845
 #: osm_watch: way id="36381149" version="31"
 #: osm_watch: way id="45769043" version="20"
 #: osm_watch: way id="36828760" version="36"
@@ -5182,6 +5185,7 @@ Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	? 24895,13039 2489
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Umsetzung 2022 unwahrscheinlich)
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/fussgaengerueberweg-an-marzahner-promenade-verzoegert-sich_a403272 (Frühling 2024)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12085 (Antrag)
+#: by: https://www.berliner-woche.de/marzahn/c-verkehr/fussgaengerueberweg-an-marzahner-promenade-wartet-auf-fertigstellung_a435794
 #: source_id[inactive]: bvg2024:191#HIM_FREETEXT_234444
 #: source_id[inactive]: bvg2024:192#HIM_FREETEXT_234443
 #: source_id[inactive]: bvg2024:191#f1fdb19d-cb51-437b-98fa-0daf0c29fe62
@@ -6086,6 +6090,7 @@ Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17736,885
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18076,10324 18085,10244 18114,10215
 # 
 # REMOVED (hier liegt bereits Verbundsteinpflaster --- keine Änderung?) --- Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18114,10215 18130,10201 18132,10183
+#: by: https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2232.pdf (Grundsätze der Planung zu der Radschnellverbindung Ost-Route (RSV 9) (Bornitzstraße liegt auf der Route))
 #: last_checked: 2025-02-12
 #: check_frequency: 120d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16439,12872 16484,12871 16860,12861

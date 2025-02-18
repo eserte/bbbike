@@ -21028,10 +21028,10 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-04 00:00:00"), # 1336255200, # 2012-05-06 00:00
-       until => $isodate2epoch->("2025-02-18 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
+       until => $isodate2epoch->("2025-03-31 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #       text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
 #       text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
-       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich vom bis 18.02.2025',
+       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Ende März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
@@ -21040,7 +21040,8 @@ EOF
 #: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
-#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...)
+#: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025)
 #: osm_watch: way id="152466403" version="21"
 #: osm_watch: note 4444162 2
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
@@ -36307,9 +36308,9 @@ EOF
 EOF
      },
      { from  => 1713897172, # 1652122429, # 2022-05-09 20:53
-       until => $isodate2epoch->("2025-02-28 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
+       until => $isodate2epoch->("2025-03-04 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023',
-       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 28.02.2025',
+       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 04.03.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -36340,7 +36341,7 @@ EOF
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024) (bis 31.12.2024) (bis 08.01.2025) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
-#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (bis 28.02.2025)
+#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (bis 28.02.2025) (bis 04.03.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -37592,8 +37593,8 @@ EOF
 #: note: bei rbb mittlerweile entfernt; ab 2025-02-10 wieder da ("Einbahnstraßenregelung")
 #: osm_watch: way id="1094113747" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-04
-#: check_frequency: 60d
+#: last_checked: 2025-02-17 (daf)
+#: check_frequency: 30d
 #: next_check: 2025-02-23 (VIZ-Verkehrsmeldung)
 	q4::inwork; 3429,13227 3400,13107
 EOF
@@ -45848,7 +45849,7 @@ EOF
        text  => 'Cornelius-Fredericks-Str. und Kameruner Str.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 19.08.2024 07:00 bis 18.02.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.349148,52.550327,19.08.2024,07:00 (später wurde auch die Kameruner erwähnt, bis 18.02.2025)
+#: source_id: viz2021:13.349148,52.550327,19.08.2024,07:00 (später wurde auch die Kameruner erwähnt, bis 18.02.2025) (inaktiv)
 #: source_id: viz2021:13.347134,52.550698,31.10.2024,08:37 (auch die Kameruner Str., bis 18.01.2025) (inaktiv)
 Cornelius-Fredericks-Str.	q4::inwork 6661,15921 6484,16085
 Kameruner Str.	q4::inwork 6383,15972 6484,16085
@@ -46551,7 +46552,8 @@ EOF
        text  => 'Schönhauser Allee: Sperrung zwischen Sredzkistr. und Kastanienallee, vom 18.02.2025 06:00 bis 19.02.2025 22:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.412225,52.53795,18.02.2025,06:00 (auch Radverkehr betroffen (trotz Hochbordradwegs?), bis 19.02.2025)
+#: source_id: viz2021:13.412225,52.53795,18.02.2025,06:00 (auch Radverkehr betroffen (trotz Hochbordradwegs), bis 19.02.2025)
+#: source_id: viz2021:13.412225,52.53795,19.02.2025,06:00 (bis 19.02.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1891555716395106730
 #: by: https://pbs.twimg.com/media/Gj-odVZXYAAMeck?format=png&name=900x900
 #: by: https://pbs.twimg.com/media/Gj-ojEvXEAAbOwo?format=png&name=900x900 (Umleitungsstrecke für Radfahrer; gesperrter Bereich nur wenige Meter)
