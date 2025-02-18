@@ -2927,7 +2927,29 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#	2::temp 9984,12426 9934,12420 9858,12410 9846,12516 9842,12565 9892,12596 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
+#	2::temp 9919,12613 9953,12533 9846,12516
+#	2::temp 9953,12533 9984,12426 10024,12431 10063,12438 9956,12617 9948,12631
+#	2::temp 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587
+#	2::temp 10696,12601 10599,12526 10646,12470 10687,12421 10783,12502 10696,12601
+#	2::temp 10094,12635 10176,12506
+#	3 9877,12293 9873,12315 9858,12410 9780,12401
+#	3 10431,12709 10542,12587 10599,12526 10580,12513
+#	3 9780,12401 9858,12410 9873,12315 9877,12293
+#	3 10580,12513 10599,12526 10542,12587 10431,12709
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1891715311235219781 (bis 14 Uhr)
+#: source_id: bvg2024:100#HIM_FREETEXT_262989 (bis 2025-02-18 14:30 Uhr)
+Spandauer Straße	2::temp 10687,12421 10646,12470 10599,12526 10542,12587 10431,12709
+Rathausstraße	2::temp 10696,12601 10599,12526 10580,12513 10475,12438 10416,12394 10357,12356 10285,12306
+Karl-Liebknecht-Str./Unter den Linen	2::temp 10431,12709 10359,12634 10300,12587 10243,12546 10176,12506 10152,12491 10063,12438 10024,12431 9984,12426
+',
+         'from' => 1739859686,
+         'id' => 2846,
+         'text' => 'Umfangreiche Sperrungen in Mitte: rund um das Berliner Rathaus und im Bereich des Berliner Doms, evtl. sind auch Radfahrer betroffen, am 18. Februar 2025 bis voraussichtlich 14:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1739885400
+       },
        undef,
        undef,
        undef,
@@ -4634,9 +4656,8 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/dahme-spreewald-kreisverkehr-storkower-strasse-in-kw-frei-neue-verkehrsfuehrung-GENTZWH5Y5EGBOEL2ARWQLLGOU.html (nur Kreisverkehr ist frei, Unterführung weiterhin erst im Herbst 2025)
-#: osm_watch: note 3248363 7
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
-#: last_checked: 2025-02-04 (mapillary)
+#: last_checked: 2025-02-17 (osm note)
 #: next_check: 2025-11-30 (maz)
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
 # REMOVED --- #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin --- #: last_checked: 2025-02-04 (mapillary) --- #: next_check: 2025-11-30 (maz) --- #: note: eigentlich 1s:q3 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
@@ -7631,6 +7652,8 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
        {
          'data' => '#: next_check_id: PLATANEN-2025
 #: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1891725331691864443
+#: by: https://pbs.twimg.com/media/Gj_K-ydXgAAYbfS?format=jpg&name=large (etwa 170m der Fahrbahn und des nördlichen Bürgersteigs ab Waldstr. sind betroffen)
 	q4::inwork 9824,19910 9498,19817
 ',
          'from' => 1739772000,
