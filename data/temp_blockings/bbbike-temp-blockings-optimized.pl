@@ -2940,9 +2940,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #	3 10580,12513 10599,12526 10542,12587 10431,12709
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1891715311235219781 (bis 14 Uhr)
 #: source_id: bvg2024:100#HIM_FREETEXT_262989 (bis 2025-02-18 14:30 Uhr)
+#: by: https://www.tagesspiegel.de/berlin/staatsakt-fur-horst-kohler-am-dienstag-diese-sperrungen-gelten-rund-um-berliner-dom-und-rotes-rathaus-13220911.html
+#: by[nocache]: https://x.com/polizeiberlin/status/1891493237187068221
+#: by: https://pbs.twimg.com/media/Gj_vEsCWQAAo5rX?format=jpg&name=900x900
 Spandauer Straße	2::temp 10687,12421 10646,12470 10599,12526 10542,12587 10431,12709
 Rathausstraße	2::temp 10696,12601 10599,12526 10580,12513 10475,12438 10416,12394 10357,12356 10285,12306
-Karl-Liebknecht-Str./Unter den Linen	2::temp 10431,12709 10359,12634 10300,12587 10243,12546 10176,12506 10152,12491 10063,12438 10024,12431 9984,12426
+Jüdenstr.	2::temp 10696,12601 10783,12502
+Karl-Liebknecht-Str./Unter den Linen	2::temp 10431,12709 10359,12634 10300,12587 10243,12546 10176,12506 10152,12491 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
+Am Zeughaus	2::temp 9984,12426 9953,12533 9919,12613
+Am Lustgarten	2::temp 10176,12506 10094,12635 10054,12699
+Bodestr.	2::temp 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725 10166,12777
+Schloßplatz	2::temp 10063,12438 10095,12392 10168,12444 10263,12508 10243,12546
 ',
          'from' => 1739859686,
          'id' => 2846,
@@ -3628,7 +3636,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-02-12 (traffic) vvv
+#: last_checked: 2025-02-18 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
