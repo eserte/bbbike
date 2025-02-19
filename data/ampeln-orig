@@ -125,6 +125,8 @@ Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 # 
 # REMOVED (andere Stelle, 16425,6445) --- #: source_id: viz2021:13.490616,52.463117,15.04.2024,07:30 (bis 12.07.2024) (bis 24.07.2024) (inaktiv)
 #: source_id: viz2021:13.483741,52.468,19.02.2025,07:00 (bis 30.04.2025)
+#: source_id: viz2021:13.483911,52.467829,19.02.2025,07:00 (bis 30.04.2025)
+#: source_id: bvg2024:166#HIM_FREETEXT_267012 (kein Endedatum)
 #: next_check: 2025-04-30
 #: valid: -20250430
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 15928,6996
@@ -211,14 +213,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-02-08
+#: last_checked: 2025-02-19
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-02-08
+#: last_checked: 2025-02-19
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -3459,7 +3461,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-02-16 vvv
+#: last_checked: 2025-02-19 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3823,7 +3825,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2025-01-15
+#: last_checked: 2025-02-19
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-15
 	X::inwork 8250,14672

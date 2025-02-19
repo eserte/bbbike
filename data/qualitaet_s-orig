@@ -480,7 +480,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-02-17
+#: last_checked: 2025-02-19
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -628,7 +628,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2025-01-15
+#: last_checked: 2025-02-19
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (infravelo)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -1961,7 +1961,11 @@ Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093
 #: last_checked ^^^
 #: XXX ^^^
 #: osm_watch ^^^
-Uferstr.: Kopfsteinpflaster	Q2 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
+# 
+#: historical_note: früher (bis 2022/2023?) Kopfsteinpflaster, Q2
+#: note: einer der beiden Parkstreifen ist noch gepflastert (südlich Schönstedtstr. der westliche, nördlich der östliche)
+Uferstr.: Asphalt	Q0 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
+# 
 Oderstr.: Kopfsteinpflaster	Q2- 15106,11598 15043,11637 14946,11697
 Oderstr.: asphaltiert	Q0 14946,11697 14858,11744 14798,11777
 Oderstr.: Kopfsteinpflaster	Q2 14798,11777 14710,11824 14626,11869
@@ -13687,7 +13691,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2025-01-20 vvv
+#: last_checked: 2025-02-19 vvv
 #: check_frequency: 60d vvv
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^
@@ -15081,6 +15085,7 @@ Grevesmühlener Str.: Beton mit Schäden	Q1 17881,18344 17800,18277
 #: corrected_by: srt (Asphalt -> )
 Grevesmühlener Str.: Beton	Q0- 17800,18277 17709,18201 17702,18168
 Husumer Str.: Asphalt	Q0 20713,10293 20945,10286 21009,10285 21276,10271
+#: confirmed_by: srt
 Gottschedstr.: Kopfsteinpflaster	Q2 7885,16005 8014,16089 8077,16178 8307,16434
 #: confirmed_by: srt
 Maisweg: Asphalt	Q0 20680,12632 20773,12621 20816,12618
@@ -15661,6 +15666,7 @@ Spindelmühler Weg: Kopfsteinpflaster	Q2 2555,3219 2698,3068
 #: by: ^^^
 # 
 #: by: Tabea Pohl:
+#: confirmed_by: srt
 Thurneysserstr.: Kopfsteinpflaster	Q2 8578,16057 8481,16136 8389,16214
 # 
 #: by: Normen: vvv
@@ -16114,7 +16120,8 @@ Marienstr.: Asphalt	Q0 8726,12861 9042,12931
 Nordmannzeile: Beton	Q0 6762,7109 6760,7147 6784,7233 6811,7266
 # 
 #: by: Mark Einig:
-Bornemannstr.: Asphalt	Q0 8187,15965 8014,16089
+#: corrected_by: srt (Asphalt -> ...)
+Bornemannstr.: Kopfsteinpflaster	Q2 8187,15965 8014,16089
 # 
 #: by: Peter Radeck:
 Holsteinische Str.: Asphalt	Q0 5052,9723 5067,9679 5065,9418 5053,8979
@@ -19202,7 +19209,8 @@ Straße 52a: Asphalt, teilweise mäßig und rau, teilweise gut	Q1+ 11222,21133 1011
 Heinrichstr. (Rummelsburg): Kopfsteinpflaster	Q2 16792,10945 16874,11188 16948,11409
 # 
 #: by: Uwe Streiber:
-Buttmannstr.: schlechtes Kopfsteinpflaster	Q3 8481,16136 8659,16327
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Buttmannstr.: Kopfsteinpflaster	Q2 8481,16136 8659,16327
 # 
 #: by: Friedemann:
 #: confirmed_by: srt
@@ -21658,7 +21666,7 @@ Täubchenstr.: Asphalt	Q0 -862,4542 -947,4303
 Masurenstr.: mäßiger Asphalt	Q1+ 10885,17469 10670,17458
 # 
 #: by: Gudrun Feix: vvv
-#: confirmed_by: Stefan Siegel:
+#: confirmed_by: Stefan Siegel, srt:
 Martin-Opitz-Str.: Kopfsteinpflaster	Q2 8236,16071 8077,16178
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Martin-Opitz-Str.: Asphalt	Q0 8077,16178 7987,16332
@@ -33807,5 +33815,10 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 11700,17629
 #: by: mapillary
 Einmündungsbereich mit Kleinsteinpflaster	Q1 16007,14367
 Einmündungsbereich asphaltiert	Q0 4372,12946
+Einmündungsbereich asphaltiert	Q0 8187,15965
+Kreuzungsbereich asphaltiert	Q0 8236,16071
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 8270,16047
+Einmündungsbereich mit Kopfsteinpflaster	Q2 8338,15987
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 8481,16136
 #: ignore ^^^
 #: section ^^^

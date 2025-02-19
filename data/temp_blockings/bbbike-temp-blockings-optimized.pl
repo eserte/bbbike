@@ -5844,7 +5844,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-02-11 vvv
+#: last_checked: 2025-02-19 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6189,7 +6189,7 @@ Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4441,12559 4321,12566
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-02-01 (osm) vvv
+#: last_checked: 2025-02-19 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -6358,7 +6358,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-02-12
+#: last_checked: 2025-02-19
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -6771,7 +6771,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-02-08 (website) vvv
+#: last_checked: 2025-02-19 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -6851,7 +6851,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: osm_watch: note 4594797 3
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2025-02-16
+#: last_checked: 2025-02-19
 #: next_check: 2025-04-25 (VIZ-Verkehrsmeldung)
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
@@ -6909,7 +6909,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="35"
-#: osm_watch: note 4536637 10
+#: osm_watch[closed]: note 4536637 10
 # REMOVED --- #: last_checked: 2024-10-12 (mapillary) --- #: next_check: 2024-12-20
 	2::inwork 9544,17629 9586,17665
 ',
@@ -7598,12 +7598,12 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
        {
          'data' => '#: by: rbb (bis 17.03.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
-#: XXX prüfen!
-	q4::inwork 13741,13107 13692,13221 13644,13332
+#: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich
+	q3::inwork 13741,13107 13692,13221 13644,13332
 ',
          'from' => 1739574000,
          'id' => 4262,
-         'text' => 'Ebertystr.: Sperrung der Fahrbahn Höhe Ebelingstr., auch Radfahrer sind wohl betroffen, vom 16.02.2025 08:00 bis Juni 2025',
+         'text' => 'Ebertystr.: Sperrung der Fahrbahn Höhe Ebelingstr., vom 16.02.2025 08:00 bis Juni 2025',
          'type' => 'handicap',
          'until' => 1751320800
        },
@@ -7631,18 +7631,28 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'until' => 1751641200
        },
        {
-         'data' => '#: source_id: viz2021:13.412225,52.53795,18.02.2025,06:00 (auch Radverkehr betroffen (trotz Hochbordradwegs), bis 19.02.2025)
+         'data' => '#: source_id: viz2021:13.412225,52.53795,18.02.2025,06:00 (auch Radverkehr betroffen (trotz Hochbordradwegs), bis 19.02.2025) (inaktiv)
 #: source_id: viz2021:13.412225,52.53795,19.02.2025,06:00 (bis 19.02.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1891555716395106730
 #: by: https://pbs.twimg.com/media/Gj-odVZXYAAMeck?format=png&name=900x900
-#: by: https://pbs.twimg.com/media/Gj-ojEvXEAAbOwo?format=png&name=900x900 (Umleitungsstrecke für Radfahrer; gesperrter Bereich nur wenige Meter)
-	q4::inwork; 10893,14705 10884,14952
+#: by: https://pbs.twimg.com/media/Gj-ojEvXEAAbOwo?format=png&name=900x900 (Umleitungsstrecke für Radfahrer; gesperrter Bereich nur wenige Meter, deshalb q4 -> q3)
+	q3::inwork; 10893,14705 10884,14952
 ',
          'from' => 1739768400,
          'id' => 4265,
          'text' => 'Schönhauser Allee: Sperrung zwischen Sredzkistr. und Kastanienallee, vom 18.02.2025 06:00 bis 19.02.2025 22:00',
          'type' => 'handicap',
          'until' => 1739998800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.55297,52.439664,20.02.2025,06:00 (auch Radverkehr betroffen, bis 07.03.2025)
+	q4::inwork 20834,4035 20788,4008 20772,3999 20679,3944 20637,3919
+',
+         'from' => 1739941200,
+         'id' => 4266,
+         'text' => 'Dörpfeldstr.: Bauarbeiten zwischen Waldstr. und Wassermannstr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 20.02.2025 06:00 bis 07.03.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1741363200
        }
      
 );
