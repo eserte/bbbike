@@ -127,7 +127,7 @@ BEGIN {
 		show_register save_register_routes load_register_routes
 		show_calories check_available_memory
 		reload_all make_temp make_unique_temp
-		save_route_as_gpx save_route_as_kml
+		save_route_as_kml
 		restart_bbbike_hint
 	      )],
 	 #XXX problems with autouse! -> what problems?
@@ -3791,7 +3791,6 @@ if (!$MM_DRAG_IS_OBSOLETE) {
     foreach my $fmt (
 		     # GPS
 		     'GPX (Track)',
-		     ($devel_host ? ['GPX (Track, old impl)', 'GPX/track'] : ()),
 		     'GPX (Route)',
 		     ($advanced ? ['KML (GoogleEarth)', 'KML/track'] : ()),
 		     ['GPSMAN (Track)', 'GpsmanData'],
@@ -3888,13 +3887,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 	    }
 	} elsif (ref $fmt eq 'ARRAY') {
 	    my($label, $module) = @$fmt;
-	    if ($module =~ m{^GPX/(.*)$}) {
-		my $as = $1;
-		$svm->command
-		    (-label => $label,
-		     -command => sub { save_route_as_gpx(-as => $as) },
-		    );
-	    } elsif ($module =~ m{^KML/(.*)$}) {
+	    if      ($module =~ m{^KML/(.*)$}) {
 		my $as = $1;
 		$svm->command
 		    (-label => $label,

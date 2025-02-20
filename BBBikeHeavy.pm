@@ -13,7 +13,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = '1.45';
+$VERSION = '1.46';
 
 package main;
 use strict;
@@ -1651,37 +1651,6 @@ sub BBBikeHeavy::make_unique_temp {
     unlink $tmpfile;
     $tmpfiles{$tmpfile}++;
     $tmpfile;
-}
-
-sub BBBikeHeavy::save_route_as_gpx {
-    my(%args) = @_;
-    if (!eval { require Strassen::GPX; 1 }) {
-	perlmod_install_advice("XML::LibXML", "XML::Twig");
-    } else {
-	require Route;
-	require Route::Heavy;
-	my $file = $top->getSaveFile(-defaultextension => '.gpx');
-	return unless defined $file;
-	my $tmpfile = "$tmpdir/bbbike-$<-$$.bbr";
-	load_save_route(1, $tmpfile);
-	my $s = Route::as_strassen($tmpfile,
-				   name => "Route",
-				   cat => "X",
-				   fuzzy => 0,
-				  );
-	if (!$s) {
-	    status_message("Fataler Fehler: $tmpfile lässt sich nicht konvertieren", "die");
-	}
-	my $s_gpx = Strassen::GPX->new($s);
-	my $out = $s_gpx->bbd2gpx(%args);
-
-	open(FH, "> $file") or status_message("Can't write to $file: $!", "die");
-	binmode FH;
-	print FH $out;
-	close FH;
-
-	unlink $tmpfile;
-    }
 }
 
 sub BBBikeHeavy::save_route_as_kml {
