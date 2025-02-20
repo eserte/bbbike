@@ -1474,7 +1474,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-01-02
+#: last_checked: 2025-02-20
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-01-01
 	q4::temp:clock 12378,11806 12413,11901
@@ -5672,7 +5672,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025) (bis 21.02.2025)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025) (bis 21.02.2025) (bis 14.03.2025)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
 #: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
 #: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
@@ -5683,7 +5683,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
 #: last_checked: 2025-02-12 (bahninfo-forum) vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-02-21 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="9"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -5702,7 +5702,7 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 ',
          'from' => undef,
          'id' => 3901,
-         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, alle Zufahrten zur Kreuzung sind gesperrt, Umwege, voraussichtlich bis Ende Februar 2025',
+         'text' => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, alle Zufahrten zur Kreuzung sind gesperrt, Umwege, voraussichtlich bis Mitte März 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6445,7 +6445,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-02-16 vvv
+#: last_checked: 2025-02-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6817,7 +6817,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ehemalige-total-energies-tankstelle-ostbahnhof-holzmarktstra%C3%9Fe-36-42.1473/#post-24511
 #: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen.
 #: osm_watch: way id="482690912" version="6"
-#: last_checked: 2025-02-14 vvv
+#: last_checked: 2025-02-20 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 (entwicklungsstadt: Abriss der ehem. Tankstelle) vvv
 	3 12207,11763 12132,11788 11966,11832
@@ -7607,16 +7607,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'type' => 'handicap',
          'until' => 1751320800
        },
-       {
-         'data' => '#: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025)
-	q4::inwork -1304,11183 -1062,11214
-',
-         'from' => 1739720880,
-         'id' => 4263,
-         'text' => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.02.2025 16:48 bis 26.04.2025 20:00',
-         'type' => 'handicap',
-         'until' => 1745690400
-       },
+       undef,
        {
          'data' => '#: next_check_id: PLATANEN-2025
 #: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025)
@@ -7630,29 +7621,32 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'type' => 'handicap',
          'until' => 1751641200
        },
-       {
-         'data' => '#: source_id: viz2021:13.412225,52.53795,18.02.2025,06:00 (auch Radverkehr betroffen (trotz Hochbordradwegs), bis 19.02.2025) (inaktiv)
-#: source_id: viz2021:13.412225,52.53795,19.02.2025,06:00 (bis 19.02.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1891555716395106730
-#: by: https://pbs.twimg.com/media/Gj-odVZXYAAMeck?format=png&name=900x900
-#: by: https://pbs.twimg.com/media/Gj-ojEvXEAAbOwo?format=png&name=900x900 (Umleitungsstrecke für Radfahrer; gesperrter Bereich nur wenige Meter, deshalb q4 -> q3)
-	q3::inwork; 10893,14705 10884,14952
-',
-         'from' => 1739768400,
-         'id' => 4265,
-         'text' => 'Schönhauser Allee: Sperrung zwischen Sredzkistr. und Kastanienallee, vom 18.02.2025 06:00 bis 19.02.2025 22:00',
-         'type' => 'handicap',
-         'until' => 1739998800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.55297,52.439664,20.02.2025,06:00 (auch Radverkehr betroffen, bis 07.03.2025)
-	q4::inwork 20834,4035 20788,4008 20772,3999 20679,3944 20637,3919
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1892439286399791172
+#: by: https://pbs.twimg.com/media/GkKQea0XoAEemcW?format=jpg&name=large (Sperrung der Einmündung in Höhe Zinsgutstr.)
+	q3::inwork 20772,3999 20679,3944
+Vorsperrung ab Wassermannstr.	q4::inwork 20679,3944 20637,3919
+Zinsgutstr.: Sperrung der Einmündung	q3::inwork 20862,3824 20679,3944
 ',
          'from' => 1739941200,
          'id' => 4266,
-         'text' => 'Dörpfeldstr.: Bauarbeiten zwischen Waldstr. und Wassermannstr., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 20.02.2025 06:00 bis 07.03.2025 17:00',
+         'text' => 'Dörpfeldstr.: Bauarbeiten in Höhe Zinsgutstr., Sperrung der Fahrbahn, vom 20.02.2025 06:00 bis 07.03.2025 17:00',
          'type' => 'handicap',
          'until' => 1741363200
+       },
+       {
+         'data' => '#: source_id: viz2021:13.292779,52.432798,20.02.2025,12:15 (bis 18.04.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1892476531823218713
+#: note: q3, weil vermutlich nur der Kreuzungsbereich betroffen ist
+	q3::inwork 3015,2606 3019,2858 3023,2958
+',
+         'from' => 1739963700,
+         'id' => 4267,
+         'text' => 'Kommandantenstr.: Sperrung in Höhe Finckensteinallee, evtl. sind auch Radfahrer betroffen, vom 20.02.2025 12:15 bis 18.04.2025 23:59',
+         'type' => 'handicap',
+         'until' => 1745013540
        }
      
 );
