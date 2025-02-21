@@ -1523,7 +1523,21 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: IM_014250 (bis 28.09.2009) (inaktiv)
+# REMOVED ---	2::temp 9388,10393 9353,10421 9245,10565
+#: source_id: viz2021:13.388363,52.499561,21.02.2025,06:00 (hier nur Kfz-Verkehr, bis 24.02.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1892797647515205714 (hier nur bis So 23.02.2025)
+#: by: https://pbs.twimg.com/media/GkOU1mrWYAA0w0P?format=png&name=900x900 (Komplettsperrung)
+	q4::temp; 9388,10393 9353,10421 9245,10565
+	q4::temp; 9353,10421 9388,10393
+',
+         'from' => 1740129116,
+         'id' => 1911,
+         'text' => 'Stresemannstr.: Sperrung vor der SPD-Parteizentrale, voraussichtlich bis zum 24.02.2025',
+         'type' => 'gesperrt',
+         'until' => 1740437999
+       },
        undef,
        undef,
        undef,
@@ -4218,7 +4232,19 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: hier steht ein großes Zelt der CDU, auch der Gehweg ist nicht passierbar (2021)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1892798905903173957 (2025)
+#: by: https://pbs.twimg.com/media/GkPQDZPXkAEsKiY?format=jpg&name=medium (provisorische Bus+Radspur in der Klingelhöferstr.)
+#: by: https://pbs.twimg.com/media/GkPQDaOX0AAjivV?format=png&name=900x900 (Veranstaltungszelt)
+	2::temp 6880,11110 6841,11114
+',
+         'from' => 1740128931,
+         'id' => 3448,
+         'text' => 'Corneliusstr.: Durchfahrt nicht möglich, voraussichtlich bis zum 27.02.2025',
+         'type' => 'gesperrt',
+         'until' => 1740672000
+       },
        undef,
        undef,
        undef,
@@ -6741,20 +6767,21 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.berlin-usedom-radweginfo.de/
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
-#: note: laut berlin-usedom-radweginfo bis Ende 2024, auf finowkanal.info kein Endedatum
+#: note: laut berlin-usedom-radweginfo bis Ende 2024, mittlerweile bis Mitte 2025
+#: note: auf finowkanal.info kein Endedatum
 #: note: laut umap-Karte Eröffnung in Q2/2025
 #: osm_watch: way id="105827200" version="12"
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 3
-#: last_checked: 2025-01-25 (indoor)
-#: check_frequency: 30d
+#: last_checked: 2025-02-21 (indoor)
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-04-01
 	2::inwork 24769,48739 24781,48768 24766,48828
 ',
          'from' => 1724611975,
          'id' => 4149,
-         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2024, evtl. wird verlängert',
+         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Mitte 2025',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7223,7 +7250,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: also_indoor: traffic (T,B,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-02-08 (traffic)
+#: last_checked: 2025-02-21 (traffic)
 #: check_frequency: 14d (traffic checks)
 	q4::inwork 16668,14765 16750,14747
 ',
