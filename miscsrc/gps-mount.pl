@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2019,2021,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2019,2021,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -275,6 +275,17 @@ example for F<.zshrc>:
     fi
 
 =back
+
+=head1 EXAMPLES
+
+=head2 Download specific files from GPS device to local computer
+
+If you want to sync all C<.gpx> files except ones matching "Wegpunkte"
+or "todo" from a Garmin device to a local computer, then the following
+can be used (requires C<rsync>, minimum version 3.0.0):
+
+    destroot=/path/to/destination
+    ./miscsrc/gps-mount.pl --cd Garmin/GPX --shell 'find . -maxdepth 1 -a -type f -name '\''*.gpx'\'' -a \! -regex ".*\(Wegpunkte\|todo\).*" -a -print0 | rsync -av --files-from=- --from0 . '"$destroot/"
 
 =head1 SEE ALSO
 
