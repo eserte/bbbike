@@ -4237,11 +4237,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892798905903173957 (2025)
 #: by: https://pbs.twimg.com/media/GkPQDZPXkAEsKiY?format=jpg&name=medium (provisorische Bus+Radspur in der Klingelhöferstr.)
 #: by: https://pbs.twimg.com/media/GkPQDaOX0AAjivV?format=png&name=900x900 (Veranstaltungszelt)
+#: source_id: viz2021:13.351351,52.509606,21.02.2025,06:00 (zur Klingelhöferstr., bis 27.02.2025)
 	2::temp 6880,11110 6841,11114
 ',
          'from' => 1740128931,
          'id' => 3448,
-         'text' => 'Corneliusstr.: Durchfahrt nicht möglich, voraussichtlich bis zum 27.02.2025',
+         'text' => 'Corneliusstr.: Durchfahrt vermutlich nicht möglich, voraussichtlich bis zum 27.02.2025',
          'type' => 'gesperrt',
          'until' => 1740672000
        },
@@ -5086,7 +5087,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-02-11 (mapillary) vvv
+#: last_checked: 2025-02-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -6070,7 +6071,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2025-01-29
+#: last_checked: 2025-02-19 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-03-01 (VIZ-Verkehrsmeldung)
 	q4::inwork 10385,13348 10341,13376
@@ -7420,16 +7421,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => 1764543600
        },
-       {
-         'data' => '#: source_id: viz2021:13.313872,52.493599,27.01.2025,07:00 (bis 21.02.2025)
-	q4::inwork 4381,9620 4351,9633 4224,9690
-',
-         'from' => 1737871200,
-         'id' => 4245,
-         'text' => 'Pommersche Str.: Baustelle zwischen Württembergische Str. und Bayerische Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.01.2025 07:00 bis 21.02.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1740153600
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025)
 	q4::inwork 2396,9427 2467,9425 2592,9419
@@ -7674,6 +7666,16 @@ Zinsgutstr.: Sperrung der Einmündung	q3::inwork 20862,3824 20679,3944
          'text' => 'Kommandantenstr.: Sperrung in Höhe Finckensteinallee, evtl. sind auch Radfahrer betroffen, vom 20.02.2025 12:15 bis 18.04.2025 23:59',
          'type' => 'handicap',
          'until' => 1745013540
+       },
+       {
+         'data' => '#: source_id: viz2021:13.34184,52.43229,21.02.2025,09:04 (bis 28.02.2025)
+	q4::inwork 6372,2959 6329,2916 6359,2875
+',
+         'from' => 1740038640,
+         'id' => 4268,
+         'text' => 'Barbarastr.: geplatzte Wasserleitung, zwischen Ingridpfad und Ruthstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.02.2025 09:04 bis 28.02.2025 23:59',
+         'type' => 'handicap',
+         'until' => 1740783540
        }
      
 );

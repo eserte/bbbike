@@ -34798,13 +34798,14 @@ EOF
      },
      { from  => 1740128931, # 1632496956, # 2021-09-24 17:22
        until => $isodate2epoch->("2025-02-27 17:00:00"), # 1632780000, # 2021-09-28 00:00
-       text  => 'Corneliusstr.: Durchfahrt nicht möglich, voraussichtlich bis zum 27.02.2025',
+       text  => 'Corneliusstr.: Durchfahrt vermutlich nicht möglich, voraussichtlich bis zum 27.02.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: hier steht ein großes Zelt der CDU, auch der Gehweg ist nicht passierbar (2021)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892798905903173957 (2025)
 #: by: https://pbs.twimg.com/media/GkPQDZPXkAEsKiY?format=jpg&name=medium (provisorische Bus+Radspur in der Klingelhöferstr.)
 #: by: https://pbs.twimg.com/media/GkPQDaOX0AAjivV?format=png&name=900x900 (Veranstaltungszelt)
+#: source_id: viz2021:13.351351,52.509606,21.02.2025,06:00 (zur Klingelhöferstr., bis 27.02.2025)
 	2::temp 6880,11110 6841,11114
 EOF
      },
@@ -38326,7 +38327,7 @@ EOF
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-02-11 (mapillary) vvv
+#: last_checked: 2025-02-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -42835,7 +42836,7 @@ EOF
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,B)
-#: last_checked: 2025-01-29
+#: last_checked: 2025-02-19 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-03-01 (VIZ-Verkehrsmeldung)
 	q4::inwork 10385,13348 10341,13376
@@ -45117,7 +45118,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480271.php
-#: by: https://www.infravelo.de/projekt/am-eichgarten/ (3. Quartal 2024 - 4. Quartal 2024)
+#: by: https://www.infravelo.de/projekt/am-eichgarten/ (3. Quartal 2024 - 4. Quartal 2024) (abgeschlossen)
 #: osm_watch[closed]: note 4471939 3
 # REMOVED (laut osm fertig) --- #: XXX Dabei werden die Flächen für Rad- und Fußverkehr getrennt. Für den Radverkehr entsteht ein 3m breiter Weg (für beide Richtungen). --- #: add_fragezeichen: Ist der Weg noch immer gesperrt? --- #: last_checked: 2024-11-27 --- #: check_frequency: 30d --- #: next_check: 2024-12-31
 	2::inwork 6007,4340 6147,4329 6210,4325
@@ -46345,7 +46346,7 @@ EOF
        text  => 'Pommersche Str.: Baustelle zwischen Württembergische Str. und Bayerische Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.01.2025 07:00 bis 21.02.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.313872,52.493599,27.01.2025,07:00 (bis 21.02.2025)
+#: source_id: viz2021:13.313872,52.493599,27.01.2025,07:00 (bis 21.02.2025) (inaktiv)
 	q4::inwork 4381,9620 4351,9633 4224,9690
 EOF
      },
@@ -46592,6 +46593,15 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892476531823218713
 #: note: q3, weil vermutlich nur der Kreuzungsbereich betroffen ist
 	q3::inwork 3015,2606 3019,2858 3023,2958
+EOF
+     },
+     { from  => 1740038640, # 2025-02-20 09:04
+       until => 1740783540, # 2025-02-28 23:59
+       text  => 'Barbarastr.: geplatzte Wasserleitung, zwischen Ingridpfad und Ruthstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.02.2025 09:04 bis 28.02.2025 23:59',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.34184,52.43229,21.02.2025,09:04 (bis 28.02.2025)
+	q4::inwork 6372,2959 6329,2916 6359,2875
 EOF
      },
     );
