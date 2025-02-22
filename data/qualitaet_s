@@ -5067,7 +5067,7 @@ Lupinenweg: Beton	Q0 16924,1895 16856,1839
 Lupinenweg: Gehwegplatten	Q1 16856,1839 16801,1791
 (Brücke über den Maselakekanal): asphaltiert	Q0 -2152,17108 -2140,17171 -2165,17176
 Blumenthalstr. (Zehlendorf): Kopfsteinpflaster	Q2 -645,3434 -654,3249
-Markgrafenstr. (Mariendorf): Kopfsteinpflaster, OK	Q1 8827,4874 8929,4882 9020,4890 9248,4904
+Markgrafenstr. (Mariendorf): unebenes Kopfsteinpflaster	Q2 8827,4874 8929,4882 9020,4890 9247,4915
 Küterstr.: Asphalt mit einigen Schäden	Q1 8989,4366 9006,4196
 Freibergstr.: Beton	Q0 9177,3281 9323,3281 9410,3292 9462,3205 9488,3115
 Hirzerweg: Beton	Q0 9539,2105 9585,1899 9630,1636 9618,1608
@@ -11742,6 +11742,8 @@ Thomas-Mann-Str. [östlicher Strang]: Asphalt	Q0 13365,15325 13278,15172 13387,15
 (Zingster Str. - Barther Str.): Beton mit Schäden	Q1 16808,17970 16900,17841
 (Landsberger Allee - Große-Leege-Str.): Verbundsteinpflaster/Mosaikpflaster	Q1 15976,14472 15963,14470 15902,14498
 Landsberger Alleee [Wohngebiet/Nebenfahrbahn]: Asphalt	Q0 15976,14472 16059,14481 16075,14412 16084,14377 16007,14367 15920,14357
+Brückenstr. (Steglitz): Asphalt	Q0 5728,4371 5774,4408 5812,4455
+Brückenstr. (Steglitz): Mosaikpflaster	Q1 5812,4455 5821,4480
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13527,7 +13529,7 @@ Geßlerstr.: Asphalt	Q0 8006,8887 7973,8886 7791,8882
 Brunhildstr.: grobes Kopfsteinpflaster	Q3 7790,8918 7707,8919 7600,8921
 Am Bäkequell: gutes Kopfsteinpflaster	Q1 4593,5235 4656,5101
 Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9148,13944
-Machonstr.: betoniert	Q0 9020,4890 9032,4791
+Machonstr.: Beton, Fugen	Q1 9020,4890 9032,4791
 Machonstr.: asphaltiert	Q0 9032,4791 9047,4686 9070,4512 9087,4378
 Jungfernstieg: Asphalt	Q0 5559,3058 5549,3038 5493,2931
 Jungfernstieg: Asphalt	Q0 5493,2931 5511,2911 5510,2883
@@ -17504,10 +17506,10 @@ Gravelottestr.: Asphalt, Beton	Q0 5329,4485 5397,4611
 (Stadtpark Steglitz): wassergebundene Decke, etwas Schotter	Q1 5797,4846 5806,4840 5852,4814 5885,4813 5947,4791 6022,4746 6026,4744
 (Stadtpark Steglitz): wassergebundene Decke	Q1 5806,4840 5772,4766
 (Stadtpark Steglitz): Asphalt	Q1 5772,4766 5736,4686 5724,4670 5676,4552
-(Stadtpark Steglitz): wassergebundene Decke	Q1 5676,4552 5656,4543
+(Stadtpark Steglitz): wassergebundene Decke	Q1 5676,4552 5658,4548
 Birkbuschgarten: Asphalt	Q0 5416,4411 5469,4543
-Am Stadtpark (Steglitz): Kleinpflaster	Q2 5656,4543 5751,4497 5817,4473
-Orleansstr.: Asphalt	Q1 5692,4432 5751,4497
+Am Stadtpark (Steglitz): Mosaikpflaster	Q1 5658,4548 5746,4514 5821,4480
+Orleansstr.: Asphalt	Q1 5692,4432 5725,4466 5746,4514
 Lutherstr. (Steglitz): Asphalt	Q0 5169,4969 5196,4949
 Lutherstr. (Steglitz): Kopfsteinpflaster	Q2 5196,4949 5283,4884 5334,4857 5407,4815
 Schalloppstr.: Beton	Q0 5190,4755 5283,4884

@@ -30911,7 +30911,7 @@ EOF
 #: also_indoor: traffic (re-G,ex-H,ex-B,ex-T,W)
 #: osm_watch: way id="200775245" version="13"
 #: osm_watch: note 3210197 3
-#: last_checked: 2025-02-04 (mapillary)
+#: last_checked: 2025-02-22
 # REMOVED --- #: check_frequency: 150d
 #: next_check: 2025-03-17 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
@@ -32937,9 +32937,9 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2025-01-19
+#: last_checked: 2025-02-22
 #: check_frequency: 120d
-#: next_check: 2025-03-31
+#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
 EOF
      },
@@ -35200,7 +35200,7 @@ EOF
        data  => <<EOF,
 	q4::inwork 9333,4229 9208,4215
 	q4::inwork 9375,4022 9276,3997
-	q4::inwork 9020,4890 9248,4904
+	q4::inwork 9020,4890 9247,4915
 EOF
      },
      { from  => 1637449200, # 2021-11-21 00:00
@@ -36089,7 +36089,7 @@ EOF
 #: osm_watch: way id="970452276" version="7"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-03
+#: last_checked: 2025-02-22
 #: check_frequency: 30d
 #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -38327,7 +38327,7 @@ EOF
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-02-21 vvv
+#: last_checked: 2025-02-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -42829,7 +42829,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2025-03-31 18:00:00"), # undef, # XXX
-       text  => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis März 2025',
+       text  => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis Ende März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
@@ -42838,7 +42838,7 @@ EOF
 #: also_indoor: traffic (G,B)
 #: last_checked: 2025-02-19 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2025-03-01 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 10385,13348 10341,13376
 EOF
      },
@@ -44515,14 +44515,15 @@ EOF
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/weverpromenade-wird-erneuert_a420569
 #: XXX Nach den Bauarbeiten vielleicht bessere Qualität
 #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt
+#: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden? vvv
 #: priority: #A vvv
-#: last_checked: 2025-01-08 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2025-02-22 vvv
+#: check_frequency: 21d vvv
 #: osm_watch: way id="26158804" version="25"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
 # REMOVED (hier mittlerweile offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5721,4356 5541,4305
-Stadtpark Steglitz	2::inwork 5836,4469 5787,4400
+Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
 #: last_checked ^^^
 #: check_frequency ^^^
 #: priority ^^^
@@ -44544,9 +44545,9 @@ EOF
 zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwork -820,4772 -857,4725 -927,4638
 EOF
      },
-     { from  => $isodate2epoch->("2025-02-10 00:00:00"), # 1718628480, # 2024-06-17 14:48
+     { from  => $isodate2epoch->("2025-02-28 00:00:00"), # 1718628480, # 2024-06-17 14:48
        until => $isodate2epoch->("2025-08-31 23:59:59"), # 1736339573, # undef, # $isodate2epoch->("2024-08-30 17:00:00"), # undef, # XXX
-       text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025',
+       text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025 (Stand 22.02.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BAEKEBRUECKE-2022
@@ -44572,8 +44573,9 @@ EOF
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-# REMOVED --- #: last_checked: 2024-11-27 vvv --- #: check_frequency: 30d vvv --- 
-#: next_check: 2025-02-10 vvv
+#: last_checked: 2025-02-22 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2025-02-10 vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
 #: osm_watch: way id="5363433" version="26"
 #: osm_watch[closed]: note 4442541 4
@@ -44581,9 +44583,11 @@ EOF
 Bäkebrücke: gesperrt	2::inwork 4587,3097 4659,3065
 # REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
 # REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
+#: osm_watch: way id="121176503" version="11"
 Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4274,2717 4236,2678
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- 
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: add_fragezeichen ^^^
 EOF
      },
@@ -45163,7 +45167,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-02-19 (website) vvv
+#: last_checked: 2025-02-22 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -45323,7 +45327,7 @@ EOF
 #: osm_watch: way id="1002238498" version="10"
 #: osm_watch: note 4454125 6
 #: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen
-#: last_checked: 2025-02-10
+#: last_checked: 2025-02-22
 #: check_frequency: 30d
 #: next_check: 2025-03-04 (Halteverbotsschilder)
 # REMOVED (hier mittlerweile fertig und offen) ---	q4::inwork 12972,7602 13100,7626

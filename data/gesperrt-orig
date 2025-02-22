@@ -218,7 +218,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-02-21
+#: last_checked: 2025-02-22
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -483,6 +483,7 @@ Dorotheenstr.	1 18653,8922 18770,8898
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf (Inbetriebnahme möglich?)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ergebnisbericht-zur-radschnellverbindung-zwischen-kreuzberg-neukoelln-und-adlershof-liegt-vor_a288769 (nur allgemein zur Y-Trasse)
 #: by: https://www.berliner-woche.de/rudow/c-verkehr/neukoellner-verordnete-fordern-vorfahrt-fuer-radler-auf-der-krokusstrasse-und-linksabbiegespur-auf-der-massantebruecke_a300891
+#: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/161024_protokoll_mobilitaetsrat_3_pdf.pdf (Erwähnung)
 #: XXX könnte im Zuge der Realisierung "Y-Trasse" wieder in Betrieb genommen werden (Bauphase für den Radschnellweg: mindestens 18 Monate)
 #: last_checked: 2025-02-18 (mapillary)
 #: next_check: 2032-06-30
@@ -1384,7 +1385,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/einbahnstrassenregelung-nicht-fuer-radler_a400589 (siehe Antrag oben)
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="20"
-#: last_checked: 2024-05-18
+#: last_checked: 2025-02-22
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
@@ -2231,7 +2232,7 @@ Märkische Allee: Mittelstreifen	3nocross 19809,15676 19880,15818 19988,16039
 Alt-Biesdorf: Mittelstreifen	3nocross 21108,11628 21251,11560 21275,11547 21311,11528
 Kurt-Schumacher-Damm: Mittelstreifen	3nocross 4704,17101 4931,17174 4997,17241
 Rudower Str.: Mittelstreifen	3nocross 14788,3441 14822,3409 14994,3245
-Tempelhofer Damm: Mittelstreifen	3nocross 9248,4904 9239,4980 9206,5193
+Tempelhofer Damm: Mittelstreifen	3nocross 9247,4915 9239,4980 9206,5193
 Malteserstr.: Mittelstreifen	3nocross 7438,1855 7423,1905 7409,1953
 Marienfelder/Daimler: Abbiegen nicht erlaubt	3 8602,2377 8579,2265 8639,2212
 Munsterdamm: Mittelstreifen	3nocross 6767,5274 6767,5233 6747,5010
@@ -4966,7 +4967,7 @@ Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-02-21 vvv
+#: last_checked: 2025-02-22 vvv
 #: next_check: 2028-01-01 vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -4979,7 +4980,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2025-02-21
+#: last_checked: 2025-02-22
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259

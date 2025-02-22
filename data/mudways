@@ -132,19 +132,21 @@ Rüdersdorfer Str.: zwar neuer Asphalt, aber mit gelegentlichen Entwässerungsprob
 #: mud: 2024-09-04: keine Beeinträchtigungen	h=q0
 Am Betriebsbahnhof Schöneweide: unbefestigt, mit vielen kleinen Kuhlen	X 18160,4940 18107,5011 17822,5409
 # 
-# REMOVED (seit der Sanierung 2024/2025 wohl nicht mehr problematisch)
+# REMOVED (Einträge vor der Sanierung 2024/2025 entfernt)
 # REMOVED --- #: mud: 2020-03-14: keine Beeinträchtigungen	h=q0
 # REMOVED --- #: mud: 2023-12-26: einige Pfützen	h=q2
 # REMOVED --- #: mud: 2024-05-29: einige Pfützen	h=q2+
 # REMOVED --- #: mud: 2024-06-22: einige Pfützen	h=q2+
-# REMOVED --- Stadtpark Steglitz: etwas älterer Parkweg	X 5890,4674 5841,4557 5836,4469 5787,4400
+#: mud: 2025-02-22: etwas matschige Oberfläche	note=Tauwetter, deshalb evtl. nicht mit der Bodenfeuchte zusammenhängend, ansonsten h=q2,wet
+Stadtpark Steglitz: Parkweg	X 5890,4674 5841,4557 5836,4469 5787,4400
 # 
-# REMOVED (seit der Sanierung vermutlich nicht mehr problematisch)
+# REMOVED (Einträge vor der Sanierung 2024 entfernt)
 # REMOVED --- #: mud: 2024-02-07: einige große Pfützen, matschige Stellen	h=q3
 # REMOVED --- #: mud: 2024-05-29: einige große Pfützen	h=q2
 # REMOVED --- #: mud: 2024-06-22: einige große Pfützen	h=q2
 # REMOVED --- #: note: mittlerweile hat sich eine etwas breitere Spur neben dem eigentlichen Weg gebildet, die sowohl von Fußgängern als auch Radfahrern genutzt wird, sofern der Platz da ist
-# REMOVED --- Weverpromenade: wassergebundene Decke	X 5787,4400 5738,4361 5721,4356 5541,4305
+#: mud: 2025-02-22: etwas matschige Oberfläche	note=Tauwetter, deshalb evtl. nicht mit der Bodenfeuchte zusammenhängend, ansonsten h=q2,wet
+Weverpromenade: wassergebundene Decke	X 5787,4400 5738,4361 5721,4356 5541,4305
 # 
 # REMOVED (Sanierung Dez 2024/Jan 2025; ältere Einträge entfernt)
 # REMOVED --- #: mud: 2020-03-14: keine Beeinträchtigungen	h=q0
@@ -152,6 +154,7 @@ Am Betriebsbahnhof Schöneweide: unbefestigt, mit vielen kleinen Kuhlen	X 18160,4
 # REMOVED --- #: mud: 2024-05-29: einige größere Pfützen	h=q2
 # REMOVED --- #: mud: 2024-10-26: keine Beeinträchtigungen	h=q0
 #: mud: 2025-01-08: etwas feuchtere Oberfläche, aber keine Beeinträchtigungen	h=q0-,wet
+#: mud: 2025-02-22: etwas matschige Oberfläche	note=Tauwetter, deshalb evtl. nicht mit der Bodenfeuchte zusammenhängend, ansonsten h=q2,wet
 Paul-Schwarz-Promenade: Parkweg	X 5018,3810 4947,3672 4910,3599 4822,3431
 # 
 #: mud: 2020-03-14: etwas feuchtere Oberfläche, aber keine Beeinträchtigungen	h=q0-,wet
