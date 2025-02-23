@@ -247,6 +247,8 @@ install_perl_testonly_dependencies() {
     fi
 }
 
+# note: "old" is currently a misnomer, as this function may also be used
+# for very new perls (i.e. bleadperl)
 install_old_perl_dependencies() {
     if [ ! "$USE_SYSTEM_PERL" = "1" ]
     then
@@ -296,6 +298,14 @@ install_old_perl_dependencies() {
 		# non-commented modules increased the perl minimum version at some point in time
 		cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" HTML::Tagset~"<3.22"
 		;;
+	esac
+	case "$PERLBREW_PERL" in
+	    5.41)
+		git clone --depth=1 https://github.com/eserte/ci-helper-cpan-pm.git /tmp/ci-helper-cpan-pm
+		/tmp/ci-helper-cpan-pm/ci-helper-cpan-pm --distroprefs=https://github.com/eserte/srezic-cpan-distroprefs --enable-sysdeps --no-sudo
+		# see https://rt.cpan.org/Ticket/Display.html?id=154926
+		cpan common::sense
+	    ;;
 	esac
     fi
 }
