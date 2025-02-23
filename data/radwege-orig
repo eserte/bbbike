@@ -984,7 +984,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-02-12
+#: last_checked: 2025-02-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -4082,7 +4082,7 @@ Verbundsteinpflaster	RW1; 16146,6755 16058,6629 15954,6481 15904,6410 15853,6339
 	RW1; 16428,7144 16507,7254
 # 
 Verbundsteinpflaster	RW1;RW1 15723,6151 15768,6214
-	RW1;RW1 2668,8372 2678,8571 2680,8608 2685,8819 2706,9108 2708,9144 2728,9409 2730,9634
+	RW1;RW1 2660,8392 2664,8458 2670,8563 2672,8611 2682,8821 2706,9108 2708,9144 2728,9409 2730,9634
 	RW1;RW1 2388,8852 2449,8902 2568,9010 2674,9111 2708,9144 2829,9259 2947,9367 2998,9408 3127,9522 3220,9598 3340,9700 3427,9771
 	RW1;RW2 2322,8857 2337,9178
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2337,9178 2348,9388 2361,9664
@@ -5741,7 +5741,7 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 	RW6;RW6 4920,9000 4815,9098 4755,9154
 	RW6;RW6 4657,9481 4685,9418 4699,9202 4700,9179 4713,8997 4689,8953
 	RW6;RW6 4713,8997 4920,9000
-	RW1;RW1 2668,8372 2713,8357
+	RW1;RW1 2660,8392 2713,8357
 	RW1;RW1 2713,8357 2773,8332 2889,8301 3003,8274 3117,8248
 	RW1; 3042,7465 3084,7599 3094,7790 3107,7997 3108,8052 3117,8248 3131,8435 3137,8538 3158,8763
 asphaltiert, leicht uneben, wenig Platz zu parkenden Autos	RW1; 3158,8763 3137,8538 3131,8435 3117,8248
@@ -6609,7 +6609,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2025-01-27 (daf) vvv
+#: last_checked: 2025-02-22 (daf) vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche

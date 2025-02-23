@@ -316,7 +316,7 @@ Oderbruchstr./Hohenschönhauser Str.: werden hier Radspuren markiert?	?::projecte
 #: source_id: 2147342170 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72 (möglicherweise inaktiv)
 #: osm_watch: way id="336565341" version="20"
-#: last_checked: 2025-02-12
+#: last_checked: 2025-02-23
 #: check_frequency: 120d
 # REMOVED (Markierung existiert hier) --- Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15951,12832
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15951,12832 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
@@ -758,13 +758,13 @@ Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6088
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/1FOtM01W8vrWse1IyOvT3bHjfqRjLx2UgNjmsqMy/HmTzjfun/84-Anlagen/04/B0570ZB1.pdf (Zwischenbericht: keine mittelfristige Realisierung => also check_frequency angepasst: 90d -> 180d)
 #: XXX Maßnahme Osw.1 + Osw.12
-#: last_checked: 2025-02-03 (bahninfo-forum)
+#: last_checked: 2025-02-22 (krickstadt)
 #: check_frequency: 180d
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 19010,5833 18928,5920 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431
 #: osm_watch: way id="199768813" version="20"
 #: XXX haben die Bauarbeiten was mit der Maßnahme zu tun? (bis Anfang Mai 2018) (laut Bezirkswebsite Ende der Bauarbeiten bis August 2018)
 #: source_id: 2147342044 (inaktiv)
-#: last_checked: 2025-01-25
+#: last_checked: 2025-02-22 (krickstadt)
 #: check_frequency: 180d
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 17991,6431 17826,6495 17800,6504 17614,6571
 #### END AG Radverkehr Treptow-Köpenick
@@ -1723,7 +1723,7 @@ Ernst-Reuter-Platz: Zweirichtungsradwege geplant	?::projected 4838,11697 4885,11
 #: osm_watch: way id="147557793" version="23"
 #: osm_watch: way id="891225245" version="10"
 #: osm_watch: way id="891225244" version="7"
-#: last_checked: 2025-02-08
+#: last_checked: 2025-02-23
 #: check_frequency: 120d
 Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19021,11675 18999,11705 19000,11719 19005,11767 19004,11780
 # 
@@ -1783,7 +1783,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: osm_watch: way id="93221335" version="27"
 #: osm_watch: note 4347252 7
 # REMOVED --- #: also_indoor: traffic (G,B,T,W) [alle ungenau/falsch]
-#: last_checked: 2025-02-01
+#: last_checked: 2025-02-23
 #: check_frequency: 21d
 #: next_check: 2025-06-30 (infravelo)
 Siegfriedstr.: Radstreifen mit Protektionselementen entsteht	?::inwork 16860,12861 16859,12752 16859,12683 16859,12613 16857,12600 16831,12419 16820,12339
@@ -1796,7 +1796,7 @@ Siegfriedstr.: Radstreifen mit Protektionselementen entsteht	?::inwork 16860,128
 #: osm_watch: way id="878343305" version="14"
 #: osm_watch: note 4041955 5
 #: XXX Ab AdK wird Richtung Süden ein neuer Verbundsteinpflasterradweg (oder teilweise sogar asphaltiert?) gebaut, vermutlich nur bis Merler Weg, vielleicht auch bis Ruwersteig
-#: last_checked: 2025-01-22
+#: last_checked: 2025-02-23
 #: check_frequency: 120d
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
@@ -4398,7 +4398,7 @@ Altentreptower Str.: werden hier Radwege gebaut?	? 21199,12258 21271,12235 21288
 #: by: https://nitter.cz/pic/media%2FFaSlqiuWYAMlvq3.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.534867,52.525542,17.08.2022,07:00 (Kabelbauarbeiten --- haben diese mit dem Radweg zu tun? bis Ende Dezember 2022) (bis 10.1.2023) (bis 28.4.2023) (bis 13.7.2023) (bis 25.08.2023) (inaktiv)
 #: source_id: viz2021:13.535455,52.525565,17.08.2022,07:00 (bis 30.09.2023) (bis 04.10.2023) (inaktiv)
-#: last_checked: 2025-01-22
+#: last_checked: 2025-02-23
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-09-30
 Allee der Kosmonauten: Radweg wird neu gemacht	? 19178,13485 19360,13499 19415,13503 19503,13509 19628,13517
@@ -4803,6 +4803,8 @@ Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,1110
 #: by: https://www.berliner-woche.de/bezirk-neukoelln/c-verkehr/was-in-diesem-jahr-geplant-ist_a414779 (Umgestaltung als Radwegverbindung bis Ende 2024)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1486722.php (ab 23. September 2024 bis Winter 2024/2025)
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/nord-neukoellner-werden-auch-weiterhin-mit-verkehrsbeeintraechtigungen-leben-muessen_a425459
+#: by: https://www.berliner-woche.de/neukoelln/c-bauen/arbeitspause-am-karl-marx-platz_a436025 (Abschluss des ersten Bauabschnitts voraussichtlich im März 2025)
+#: by: https://www.kms-sonne.de/projekte/karl-marx-platz/
 #: source_id: LMS-BR_r_LMS-BR_237903_LMS-BR_72 (inaktiv)
 #: last_checked: 2025-02-22
 # REMOVED --- #: check_frequency: 90d
@@ -5562,7 +5564,7 @@ Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßn
 #: osm_watch: node id="6126292859" version="10"
 #: note: erste durchgestrichene Schilder hängen bereits, noch keine Markierung
 #: priority: #D
-#: last_checked: 2025-01-20
+#: last_checked: 2025-02-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-12-31
 Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen in Bau	?::inwork 17826,10118 17801,10149 17833,10159
@@ -5589,7 +5591,7 @@ Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15
 #: last_checked: 2024-12-30 (Pressemitteilung)
 Robert-Siewert-Str./Römerweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 19431,9872 19459,9842 19485,9812
 #: by: https://www.berliner-zeitung.de/news/fussgaengerueberweg-vor-grundschule-fehlt-cdu-lichtenberg-hakt-beim-senat-nach-li.2300061
-#: last_checked: 2025-01-26
+#: last_checked: 2025-02-23
 Schleizer Str./Arendsweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 17254,14954 17231,14979 17251,15012
 #: last_checked: 2025-02-01
 Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 16239,12245 16255,12224 16278,12193
@@ -6161,7 +6163,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2025-02-01
+#: last_checked: 2025-02-23
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -6271,7 +6273,7 @@ Charlottenburger Chaussee: wird es hier auch eine Radwegsanierung geben?	? -772,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9776 (Beschlussempfehlung)
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/tempo-30-auf-der-lueckstrasse_a375677
-#: last_checked: 2025-01-22
+#: last_checked: 2025-02-23
 #: check_frequency: 180d
 Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
 # 
@@ -6282,7 +6284,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-02-21
+#: last_checked: 2025-02-23
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6755,7 +6757,7 @@ Wanderweg entlang des Grenzstreifens: Qualität?	? 5327,24311 5513,24308 5678,244
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/beteilungsverfahren-zu-den-bebauungsplaenen/12-58_oea_01_2017-08-01_bebauungsplan.pdf
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/bebauungsplaene/12-58-bplan_mit_-db-1.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (FNP-Berichtigung)
-#: osm_watch: way id="691098328" version="10"
+#: osm_watch: way id="691098328" version="11"
 #: last_checked: 2024-04-17
 #: check_frequency: 360d
 Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 2160,19320 2294,19328
@@ -7327,7 +7329,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: way id="1273991435" version="3"
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-02-20
+#: last_checked: 2025-02-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-11-30
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7527,7 +7529,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2025-02-19 (mapillary)
+#: last_checked: 2025-02-23
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7535,7 +7537,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-02-20
+#: last_checked: 2025-02-23
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8762,7 +8764,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: osm_watch: way id="1051634661" version="11"
 #: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
-#: last_checked: 2025-02-19
+#: last_checked: 2025-02-23
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
@@ -10867,7 +10869,7 @@ unter der Salvador-Allende-Brücke: hier existiert ein asphaltierter und beleucht
 #: by: https://www.luftbildsuche.de/info/luftbilder/neubau-mehrfamilienhaus-wohnanlage-weisse-taube-ortsteil-hohenschnhausen-berlin-deutschland-656421.html
 #: XXX vermutlich wird es am westlichen Rand im Zuge der Hofheimer Str. einen Weg geben; unklar, ob es eine Verlängerung der Heldburger Str. geben wird
 #: osm_watch: way id="89803856" version="22"
-#: last_checked: 2025-02-01 (architektur-urbanistik)
+#: last_checked: 2025-02-23
 #: check_frequency: 360d
 #: next_check: 2026-09-30 (Gewobag)
 Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen oder Wege entstehen?	?::inwork 17636,14837 17633,14707 17763,14588
@@ -10882,7 +10884,7 @@ Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen od
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/entwurf-liegt-bis-zum-26-juli-an-drei-orten-aus_a386217
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10553 (Vorlage zur Kenntnisnahme)
 #: XXX evtl. wird es hier eine Hausdurchfahrt geben (während der Bauarbeiten vermutlich gesperrt) sowie der südliche Teil der Treffurter Str. teileingezogen
-#: last_checked: 2024-12-08
+#: last_checked: 2025-02-23
 #: check_frequency: 1000d
 Treffurter Str.: Bebauungsplanverfahren wird gestartet	?::projected 18067,14700 18119,14599
 # 
@@ -10894,7 +10896,7 @@ Treffurter Str.: Bebauungsplanverfahren wird gestartet	?::projected 18067,14700 
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/bebauungsplan-liegt-aus_a389089
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-357-lar-nord.1310/#post-24429
 #: by: https://livos-gruppe.de/projektentwicklung/landsberger-allee-357-lar-nord/
-#: last_checked: 2025-01-26 (architektur-urbanistik)
+#: last_checked: 2025-02-23
 #: check_frequency: 1000d
 Bebauungsplan 11-188 VE: ein Quartiersplatz soll entstehen, ggfs. mit Durchfahrtmöglichkeit zur Landsberger Allee	?::projected 17945,14648 17966,14578
 # 

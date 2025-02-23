@@ -16742,6 +16742,7 @@ EOF
 #: source_id: IM_014250 (bis 28.09.2009) (inaktiv)
 # REMOVED ---	2::temp 9388,10393 9353,10421 9245,10565
 #: source_id: viz2021:13.388363,52.499561,21.02.2025,06:00 (hier nur Kfz-Verkehr, bis 24.02.2025)
+#: source_id: viz2021:13.38871,52.49939,23.02.2025,16:00 (bis 23.02.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892797647515205714 (hier nur bis So 23.02.2025)
 #: by: https://pbs.twimg.com/media/GkOU1mrWYAA0w0P?format=png&name=900x900 (Komplettsperrung)
 	q4::temp; 9388,10393 9353,10421 9245,10565
@@ -22271,7 +22272,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-02-13 (traffic)
+#: last_checked: 2025-02-23 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -30910,7 +30911,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: also_indoor: traffic (re-G,ex-H,ex-B,ex-T,W)
 #: osm_watch: way id="200775245" version="13"
-#: osm_watch: note 3210197 3
+#: osm_watch: note 3210197 4
 #: last_checked: 2025-02-22
 # REMOVED --- #: check_frequency: 150d
 #: next_check: 2025-03-17 (VIZ-Verkehrsmeldung)
@@ -35521,7 +35522,7 @@ EOF
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2025-01-05 (architektur-urbanistik)
+#: last_checked: 2025-02-22 (daf)
 #: check_frequency: 60d
 #: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
@@ -37790,8 +37791,8 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1671646224, # undef, # XXX
-#       text  => 'Gotlindestr.: Wasserrohrbruch, Fahrbahn abschnittsweise zwischen Siegfriedstr. und Atzpodienstr. gesperrt, Ende der Sperrung unbekannt',
+       until => 1740315403, # undef, # 1671646224, # undef, # XXX
+#      text  => 'Gotlindestr.: Wasserrohrbruch, Fahrbahn abschnittsweise zwischen Siegfriedstr. und Atzpodienstr. gesperrt, Ende der Sperrung unbekannt',
        text  => 'Gotlindestr.: Fahrbahn zwischen Siegfriedstr. und Wotanstr. gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -37802,9 +37803,7 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: also_indoor ^^^
 #: note: Außerdem ist der Bürgersteig in der angrenzenden Siegfriedstr. gesperrt (wegen der gleichen Bauarbeiten?), gemeinsame Führung mit dem Radverkehr
 #: also_indoor: traffic (T,B)
-#: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin?
-#: last_checked: 2025-02-01
-#: check_frequency: 30d
+# REMOVED --- #: add_fragezeichen: Besteht die Sperrung der Gotlindestr. weiterhin? --- #: last_checked: 2025-02-23 --- #: check_frequency: 30d
 	q4::inwork 16720,12614 16859,12613
 EOF
      },
@@ -41377,7 +41376,7 @@ EOF
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2025-02-12 (bahninfo-forum) vvv
+#: last_checked: 2025-02-22 (krickstadt) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -44116,7 +44115,7 @@ EOF
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-02-19
+#: last_checked: 2025-02-23
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork 15077,11910 15110,12107
 EOF
@@ -46606,6 +46605,22 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.34184,52.43229,21.02.2025,09:04 (bis 28.02.2025)
 	q4::inwork 6372,2959 6329,2916 6359,2875
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Auguste-Viktoria-Str./Reinerzstr.: Fahrbahn und Radwege vor der israelischen Botschaft gesperrt, Radfahrer sollen absteigen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.tagesspiegel.de/berlin/anschlag-auf-israelische-botschaft-in-berlin-geplant-funf-festnahmen-nach-durchsuchungen-in-potsdam-13249681.html (vom 22.02.2025)
+#: osm_watch: note 4188310 4
+#: also_indoor: traffic (G,B,T,A,W)
+#: last_checked: 2025-02-22 (Tsp) vvv
+#: check_frequency: 120d vvv
+Auguste-Viktoria-Str.	q4::temp 2664,8458 2670,8563
+Reinerzstr.	q4::temp 2670,8563 2566,8578
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
     );

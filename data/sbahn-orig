@@ -291,12 +291,17 @@ S9,S45	SC::Tu 15731,-4812 16358,-4962 16848,-4904 17808,-4496
 #: by: https://www.tagesspiegel.de/berlin/pannenbaustelle-auf-nord-sud-verbindung-eroffnung-der-berliner-s-bahn-linie-s21-verschiebt-sich-erneut-13185256.html
 #: by: https://www.msn.com/de-de/nachrichten/panorama/neue-s-bahn-f%C3%BCr-berlin-er%C3%B6ffnungstermin-von-s21-erneut-gestrichen/ar-AA1yTgOT
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/s-bahnlinie-21.203/page-4#post-24554
+#: by: https://sbahn.berlin/aktuelles/artikel/interimsbahnhof-fuer-s15-wird-fertig-aber-s-bahnen-fahren-erst-2025/ (kein Termin mehr)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/webcam6.jpg (anscheinend seit Juni 2024 keine aktuellen Bilder mehr)
 #: osm_watch: note 4308592 4
 #: XXX ursprünglich geplant als S21, wird aber als Linie S15 eröffnet
 #: XXX 2025 noch kein Linienbetrieb auf dem Abzweig nach Westhafen
-#: next_check: 2025-03-31 vvv
+#: last_checked: 2025-02-18 (sbahn website) vvv
+#: check_frequency: 120d vvv
+# REMOVED --- #: next_check: 2025-03-31 vvv
 S15	SBau::Tu 8061,13303 7810,13720
 S15	SBau 7810,13720 7360,14411 7329,14630 7350,14803 7447,14907
 S15	SBau 7360,14411 7199,14524 7052,14556 6944,14562
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^

@@ -11,10 +11,10 @@
 ### Friedrichshain ###
 # 
 #: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025)
-#: source_id: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
-#: source_id: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum)
+#: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
+#: source_id: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-02-20
+#: last_checked: 2025-02-23
 # REMOVED --- #: check_frequency: 8d
 #: next_check: 2025-03-12 (VIZ-Verkehrsmeldung)
 #: valid: -20250312
@@ -22,7 +22,7 @@ Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-02-17
+#: last_checked: 2025-02-23
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-02-20
+#: last_checked: 2025-02-23
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -66,7 +66,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="7"
 #: osm_watch: way id="1146013233" version="10"
 #: osm_watch: way id="1134071039" version="12"
-#: last_checked: 2025-02-20 vvv
+#: last_checked: 2025-02-23 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -128,7 +128,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-19
+#: last_checked: 2025-02-23
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -370,10 +370,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/1dzjkywbb8otc9uvnkoamh (Abriss voraussichtlich in der zweiten Jahreshälfte 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirk-lasst-verfallenes-haus-abreissen-strasse-in-berlin-wedding-soll-nach-siebenjahriger-sperrung-wieder-offnen-13073440.html (Aufhebung der Straßensperrung zum Jahresende (2025))
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/burgsdorfstra%C3%9Fe-1-ruine.390/#post-24473
-#: osm_watch: way id="549316654" version="36"
+#: osm_watch: way id="549316654" version="37"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-02-19
+#: last_checked: 2025-02-22 (osm)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d
 #: valid: 20171026-
@@ -804,7 +804,7 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: osm_watch: way id="16096289" version="33"
 #: osm_watch: way id="707100249" version="23"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
-#: last_checked: 2025-02-16
+#: last_checked: 2025-02-22 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1062,7 +1062,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="13"
-#: last_checked: 2025-01-26
+#: last_checked: 2025-02-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-12-21
 Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,14935 17638,14945
@@ -1086,7 +1086,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
 #: also_indoor: traffic (B,T,H)
-#: last_checked: 2025-02-13 (traffic)
+#: last_checked: 2025-02-23
 #: check_frequency: 14d
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
@@ -1154,13 +1154,14 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: also_indoor: traffic (G,H,B,T,A)
 #: add_fragezeichen: Bis wann gibt es diese Einschränkung?
 #: note: außerdem Beilsteiner Str. Höhe Merler Weg ist die Durchfahrt Richtung Süden mit Betonbarrieren versperrt, als Radfahrer kann man über den Hochbord vorbeifahren
-#: last_checked: 2025-01-22 vvv
+#: last_checked: 2025-02-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20250214 vvv
 #: osm_watch: way id="1089784266" version="4"
 #: osm_watch: way id="1231226671" version="1"
-Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
+Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272
+# REMOVED (hier nicht) --- Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19198,13272 19180,13219
 #: osm_watch: way id="36786796" version="22"
 Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 # REMOVED --- #: valid ^^^

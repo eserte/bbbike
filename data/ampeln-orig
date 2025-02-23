@@ -213,14 +213,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-02-21
+#: last_checked: 2025-02-23
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-02-21
+#: last_checked: 2025-02-23
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -4472,7 +4472,7 @@ Bahn kommt ca. halbstündlich	B 40222,103642
 #: by: https://berliner-abendblatt.de/berlin-news/grosses-bauvorhaben-in-luebbenau-startet-id227435 (Bahnübergänge werden beseitigt, bis Ende 2027)
 #: by: https://www.rbb24.de/wirtschaft/beitrag/2024/08/brandenburg-luebbenau-bahn-unterwasser-baustelle-unterfuehrung-taucher.html (bis Ende 2026)
 #: osm_watch: node id="440824347" version="10"
-#: osm_watch: way id="1291223017" version="2"
+#: osm_watch: way id="1291223017" version="3"
 #: osm_watch: way id="56672802" version="5"
 #: next_check: 2026-12-31
 	B 49226,-59451
