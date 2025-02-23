@@ -40,9 +40,9 @@ for my $l (@links) {
 		my $deg = qr{[-+\d\.]+};
 		if ($link_s =~ /\?(lat=.*)/) {
 		    my $q = CGI->new($1);
-		    push @geoobjs, { lat => $q->param("lat"),
-				     lon => $q->param("lon"),
-				     p   => $q->param("p"),
+		    push @geoobjs, { lat => scalar $q->param("lat"),
+				     lon => scalar $q->param("lon"),
+				     p   => scalar $q->param("p"),
 				   };
 		}
 	    }
