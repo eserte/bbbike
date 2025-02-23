@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.35;
+$VERSION = 2.36;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -2331,12 +2331,14 @@ sub showmap_url_bbviewer {
     my $layerids = {
 		    'verkehrsstaerke-2015' => '10021,2062,22,10,11,7,8,5,6',
 		    'verkehrsstaerke-2021' => '10021,2062,10,7,5,11,8,6,33',
-		    flurstuecke     => '291-bg,9001,9000,159,149',
+		    flurstuecke            => '291-bg,9001,9000,159,149',
+		    dop20c                 => '3000',
 		   }->{$layers};
     my $baseurl = {
 		   'verkehrsstaerke-2015' => 'https://viewer.brandenburg.de/strassennetz/',
 		   'verkehrsstaerke-2021' => 'https://viewer.brandenburg.de/strassennetz/',
-		   flurstuecke     => 'https://bb-viewer.geobasis-bb.de/',
+		   flurstuecke            => 'https://bb-viewer.geobasis-bb.de/',
+		   dop20c                 => 'https://viewer.brandenburg.de/strassennetz/',
 		  }->{$layers};
     die "Unhandled layers value '$layers'" if !$layerids || !$baseurl;
 
@@ -2373,6 +2375,10 @@ sub show_bbviewer_menu {
     $link_menu->command
 	(-label => 'Flurstücke',
 	 -command => sub { showmap_bbviewer(layers => 'flurstuecke', %args) },
+	);
+    $link_menu->command
+	(-label => 'Luftbilder',
+	 -command => sub { showmap_bbviewer(layers => 'dop20c', %args) },
 	);
     $link_menu->separator;
     $link_menu->command
