@@ -213,6 +213,19 @@ sub shallow_compare {
     return 1;    
 }
 
+sub info {
+    my($self) = @_;
+    my $info = "object: $self\n";
+    $info .= "is_current: " . ($self->is_current ? 'true' : 'false') . "\n";
+    $info .= "members:\n";
+    for my $i (0 .. $#{$self->{SubObj}}) {
+	$info .= "- # $i\n";
+	$info .= "  File: $self->{File}[$i]\n";
+	$info .= "  SubObj: $self->{SubObj}[$i]\n";
+    }
+    $info;
+}
+
 # XXX Hack: autoloader does not work for inherited methods
 for my $method (qw(agrep bbox bboxes pos_from_name choose_street new_with_removed_points sort_records_by_cat make_coord_to_pos grepstreets)) {
     my $code = 'sub ' . $method . ' { shift->Strassen::' . $method . '(@_) }';

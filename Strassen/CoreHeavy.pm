@@ -1140,6 +1140,13 @@ sub multiple_split_line {
     }
 }
 
+sub info {
+    my($self) = @_;
+    my $info = "object: $self\n";
+    $info .= "is_current: " . ($self->is_current ? 'true' : 'false') . "\n";
+    $info .= "File: " . (defined $self->{File} ? $self->{File} : '<undef>') . "\n";
+    $info;
+}
 
 1;
 
