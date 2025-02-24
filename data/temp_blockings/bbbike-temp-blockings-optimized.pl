@@ -1527,7 +1527,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
          'data' => '#: source_id: IM_014250 (bis 28.09.2009) (inaktiv)
 # REMOVED ---	2::temp 9388,10393 9353,10421 9245,10565
 #: source_id: viz2021:13.388363,52.499561,21.02.2025,06:00 (hier nur Kfz-Verkehr, bis 24.02.2025)
-#: source_id: viz2021:13.38871,52.49939,23.02.2025,16:00 (bis 23.02.2025)
+#: source_id: viz2021:13.38871,52.49939,23.02.2025,16:00 (bis 23.02.2025) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892797647515205714 (hier nur bis So 23.02.2025)
 #: by: https://pbs.twimg.com/media/GkOU1mrWYAA0w0P?format=png&name=900x900 (Komplettsperrung)
 	q4::temp; 9388,10393 9353,10421 9245,10565
@@ -3622,7 +3622,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-02-18 (traffic) vvv
+#: last_checked: 2025-02-24 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -4587,7 +4587,8 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024) (bis 31.12.2024) (bis 08.01.2025) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
-#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (bis 28.02.2025) (bis 04.03.2025)
+#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025)
+#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -4861,7 +4862,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=721317#post721317
 #: by: https://bautagebuch.twentyseven-berlin.de/ (kein Inhalt, nur ein Login)
 #: by: https://fiducia-gruppe.de/investment/ (Fertigstellung: Sommer 2024)
-#: source_id: viz2021:13.30143,52.52479,10.02.2025,07:00 ("geänderte Verkehrsführung", bis 23.02.2025)
+#: source_id: viz2021:13.30143,52.52479,10.02.2025,07:00 ("geänderte Verkehrsführung", bis 23.02.2025) (inaktiv)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: note: bei rbb mittlerweile entfernt; ab 2025-02-10 wieder da ("Einbahnstraßenregelung")
 #: osm_watch: way id="1094113747" version="5"
@@ -5854,7 +5855,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-02-19 vvv
+#: last_checked: 2025-02-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6990,7 +6991,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-02-16 vvv
+#: last_checked: 2025-02-21 (mapillary) vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7558,23 +7559,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'type' => 'gesperrt',
          'until' => 1777586400
        },
-       {
-         'data' => '#: note: by rbb
-#: note: von der Potsdamer Str. aus sind zumindest die Bürgersteige frei, am Marlene-Dietrich-Platz vermutete Vollsperrung
-	q4::temp 8232,11414 8309,11390 8375,11368
-	q4::temp 8217,11455 8232,11414
-	2::temp 8232,11414 8253,11306 8280,11296
-	2::temp 8280,11296 8318,11324 8375,11368
-	q4::temp 8375,11368 8389,11378 8481,11447
-	2::temp 8309,11390 8318,11324
-	q4::temp 8389,11378 8374,11479
-',
-         'from' => 1739641347,
-         'id' => 4259,
-         'text' => 'Eichhornstr., Alte Potsdamer Str., Varian-Fry-Str., Ludwig-Beck-Str.: Straßen können wegen der Berlinale gesperrt sein, evtl. sind auch Radfahrer betroffen, bis 23. Februar 2025',
-         'type' => 'gesperrt',
-         'until' => 1740351599
-       },
+       undef,
        {
          'data' => '#: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (Gesamtdauer der Arbeiten bis Mitte 2027)
@@ -7680,6 +7665,19 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
          'text' => 'Auguste-Viktoria-Str./Reinerzstr.: Fahrbahn und Radwege vor der israelischen Botschaft gesperrt, Radfahrer sollen absteigen',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (H,G[falsch],B,T)
+#: last_checked: 2025-02-24
+#: check_frequency: 10d
+#: next_check: 2025-03-28 (Halteverbotsschilder)
+	2::inwork 17587,9655 17668,9632 17777,9649
+',
+         'from' => 1740415750,
+         'id' => 4270,
+         'text' => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis 28.03.2025',
+         'type' => 'gesperrt',
+         'until' => 1743202800
        }
      
 );
