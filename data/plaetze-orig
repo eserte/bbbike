@@ -434,9 +434,10 @@ Schlesisches Tor	Pl 12985,10665
 #: note: ehemaliger Flughafen
 Flughafen Tegel	Pl 2720,16353
 # REMOVED (XXX oldname2plz requires all new names to be in Berlin.coords.data, which is not the case here) --- #: oldname: -20201025: Flughafen Schönefeld
-Flughafen BER - Terminal 5	Pl 18401,-1767
+# REMOVED (bis Ende Februar 2021) --- Flughafen BER - Terminal 5	Pl 18401,-1767
 #: valid: 20201031-
-Flughafen BER - Terminal 1	Pl 17929,-4435
+# REMOVED (bis Ende Februar 2021) hier als "Flughafen BER - Terminal 1", mangels Terminal 5 ist eine genauere Bezeichnung nicht mehr notwendig
+Flughafen BER	Pl 17929,-4435
 Steglitzer Kreisel	Pl 4741,5309
 #: note: einen echten Thielplatz gibt es nicht, nur den U-Bhf.
 Thielplatz	Pl 2302,4914

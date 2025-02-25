@@ -1523,22 +1523,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: IM_014250 (bis 28.09.2009) (inaktiv)
-# REMOVED ---	2::temp 9388,10393 9353,10421 9245,10565
-#: source_id: viz2021:13.388363,52.499561,21.02.2025,06:00 (hier nur Kfz-Verkehr, bis 24.02.2025)
-#: source_id: viz2021:13.38871,52.49939,23.02.2025,16:00 (bis 23.02.2025) (inaktiv)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1892797647515205714 (hier nur bis So 23.02.2025)
-#: by: https://pbs.twimg.com/media/GkOU1mrWYAA0w0P?format=png&name=900x900 (Komplettsperrung)
-	q4::temp; 9388,10393 9353,10421 9245,10565
-	q4::temp; 9353,10421 9388,10393
-',
-         'from' => 1740129116,
-         'id' => 1911,
-         'text' => 'Stresemannstr.: Sperrung vor der SPD-Parteizentrale, voraussichtlich bis zum 24.02.2025',
-         'type' => 'gesperrt',
-         'until' => 1740437999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5696,7 +5681,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
-#: osm_watch: way id="1142005449" version="9"
+#: osm_watch: way id="1142005449" version="10"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
 Wilhelminenhofstr. (Ost)	q4::inwork 18191,6363 17991,6431
 #: osm_watch: way id="176072020" version="44"
@@ -6222,7 +6207,8 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025)
+         'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025)
+#: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
@@ -6456,7 +6442,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-02-20 vvv
+#: last_checked: 2025-02-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6991,7 +6977,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-02-21 (mapillary) vvv
+#: last_checked: 2025-02-25 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7003,7 +6989,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 ',
          'from' => 1727643600,
          'id' => 4187,
-         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis voraussichtlich 28.02.2025 17:00',
+         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis 28.02.2025 17:00, evtl. wird verlängert',
          'type' => 'gesperrt',
          'until' => 1740758400
        },
@@ -7444,11 +7430,14 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
-	q4::inwork 9751,11243 9763,11148
+#: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
+Markgrafendamm südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
+#: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
+Markgrafendamm nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
 ',
          'from' => 1738350510,
          'id' => 4249,
-         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Straße, voraussichtlich bis 23.04.2025',
+         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 23.04.2025',
          'type' => 'handicap',
          'until' => 1745445600
        },
@@ -7465,15 +7454,17 @@ Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
          'until' => 1743177600
        },
        {
-         'data' => '#: note: außerdem noch Sperrung in der Pasewalker Str. Richtung Norden --- sind auch Radfahrer betroffen
+         'data' => '#: note: außerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen?
+#: note: in der Eweststr. ist der Gehweg für Radfahrer frei (siehe Mapillary), deshalb q4 -> q3
 #: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474
 #: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
-	q4::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
+Pasewalker Str.	q3::inwork; 12121,20969 12158,21166
+Eweststr.	q3::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
 ',
          'from' => 1738562400,
          'id' => 4251,
-         'text' => 'Eweststr.: Einbahnstraßenregelung, vom 04.02.2025 07:00 bis 15.04.2025 17:00',
+         'text' => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (hier Gehweg für Radfahrer frei), vom 04.02.2025 07:00 bis 15.04.2025 17:00',
          'type' => 'handicap',
          'until' => 1744729200
        },
@@ -7578,11 +7569,13 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
        },
        {
          'data' => '#: source_id: viz2021:13.42577,52.59492,16.02.2025,16:41 (bis 03.03.2025)
-	q4::inwork 11518,20894 11599,20973 11686,21058 11703,21097
+#: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein, gesehen 2025-02-23 (So)
+	q4::inwork 11518,20894 11599,20973 11686,21058
+# REMOVED (hier nicht) ---	q4::inwork 11686,21058 11703,21097
 ',
          'from' => 1739634060,
          'id' => 4261,
-         'text' => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Pfirsichblütenweg und Zimbelstr., evtl. sind auch Radfahrer betroffen, vom 16.02.2025 16:41 bis 03.03.2025 23:59',
+         'text' => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Marienstr. und Zimbelstr., vom 16.02.2025 16:41 bis 03.03.2025 23:59',
          'type' => 'handicap',
          'until' => 1741042740
        },

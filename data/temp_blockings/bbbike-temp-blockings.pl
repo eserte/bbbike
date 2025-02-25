@@ -16741,7 +16741,7 @@ EOF
        data  => <<EOF,
 #: source_id: IM_014250 (bis 28.09.2009) (inaktiv)
 # REMOVED ---	2::temp 9388,10393 9353,10421 9245,10565
-#: source_id: viz2021:13.388363,52.499561,21.02.2025,06:00 (hier nur Kfz-Verkehr, bis 24.02.2025)
+#: source_id: viz2021:13.388363,52.499561,21.02.2025,06:00 (hier nur Kfz-Verkehr, bis 24.02.2025) (inaktiv)
 #: source_id: viz2021:13.38871,52.49939,23.02.2025,16:00 (bis 23.02.2025) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892797647515205714 (hier nur bis So 23.02.2025)
 #: by: https://pbs.twimg.com/media/GkOU1mrWYAA0w0P?format=png&name=900x900 (Komplettsperrung)
@@ -34897,7 +34897,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-11-22 00:00:00"), # undef, # 
        until => 1638803714, # $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
-       text  => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021', # -> "Radfahrer frei"
+       text  => 'Brachvogelstr./Alexandrinenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021', # -> "Radfahrer frei"
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
@@ -41381,7 +41381,7 @@ EOF
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
-#: osm_watch: way id="1142005449" version="9"
+#: osm_watch: way id="1142005449" version="10"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
 Wilhelminenhofstr. (Ost)	q4::inwork 18191,6363 17991,6431
 #: osm_watch: way id="176072020" version="44"
@@ -42231,7 +42231,7 @@ EOF
      },
      { from  => 1699333200, # 2023-11-07 06:00
        until => $isodate2epoch->("2023-11-29 17:00:00"), # 1700668800, # 2023-11-22 17:00
-       text  => 'Ritterstr.: Baustelle zwischen Alexandrinnenstr. und Alte Jakobstr., Sperrung, Radfahrer sollen auch betroffen sein, vom 08.11.2023 06:00 bis 29.11.2023 17:00',
+       text  => 'Ritterstr.: Baustelle zwischen Alexandrinenstr. und Alte Jakobstr., Sperrung, Radfahrer sollen auch betroffen sein, vom 08.11.2023 06:00 bis 29.11.2023 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.403574,52.503396,08.11.2023,06:00 (bis 22.11.2023) (bis 29.11.2023) (inaktiv)
@@ -43388,7 +43388,8 @@ EOF
        text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025)
+#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025)
+#: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
@@ -44320,7 +44321,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-02-20 vvv
+#: last_checked: 2025-02-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45576,7 +45577,7 @@ EOF
      { from  => 1727643600, # 2024-09-29 23:00
        until => $isodate2epoch->("2025-02-28 17:00:00"), # 1732636800, # 2024-11-26 17:00
 #       text  => 'Fischerinsel: Richtung Breite Str. vor Mühlendamm: Wasserrohrbruch, Fahrtrichtung gesperrt, vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
-       text  => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis voraussichtlich 28.02.2025 17:00',
+       text  => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis 28.02.2025 17:00, evtl. wird verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
@@ -45587,7 +45588,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-02-21 (mapillary) vvv
+#: last_checked: 2025-02-25 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -46384,12 +46385,15 @@ EOF
      },
      { from  => 1738350510, # 2025-01-31 20:08
        until => 1745445600, # 2025-04-24 00:00
-       text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Straße, voraussichtlich bis 23.04.2025',
+       text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 23.04.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
-	q4::inwork 9751,11243 9763,11148
+#: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
+Markgrafendamm südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
+#: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
+Markgrafendamm nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
 EOF
      },
      { from  => 1738476000, # 2025-02-02 07:00
@@ -46405,14 +46409,17 @@ EOF
      },
      { from  => 1738562400, # 2025-02-03 07:00
        until => 1744729200, # 2025-04-15 17:00
-       text  => 'Eweststr.: Einbahnstraßenregelung, vom 04.02.2025 07:00 bis 15.04.2025 17:00',
+#      text  => 'Eweststr.: Einbahnstraßenregelung, vom 04.02.2025 07:00 bis 15.04.2025 17:00',
+       text  => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (hier Gehweg für Radfahrer frei), vom 04.02.2025 07:00 bis 15.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: note: außerdem noch Sperrung in der Pasewalker Str. Richtung Norden --- sind auch Radfahrer betroffen
+#: note: außerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen?
+#: note: in der Eweststr. ist der Gehweg für Radfahrer frei (siehe Mapillary), deshalb q4 -> q3
 #: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474
 #: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
-	q4::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
+Pasewalker Str.	q3::inwork; 12121,20969 12158,21166
+Eweststr.	q3::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
 EOF
      },
      { from  => 1738645200, # 2025-02-04 06:00
@@ -46523,11 +46530,14 @@ EOF
      },
      { from  => 1739634060, # 2025-02-15 16:41
        until => 1741042740, # 2025-03-03 23:59
-       text  => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Pfirsichblütenweg und Zimbelstr., evtl. sind auch Radfahrer betroffen, vom 16.02.2025 16:41 bis 03.03.2025 23:59',
+#      text  => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Pfirsichblütenweg und Zimbelstr., evtl. sind auch Radfahrer betroffen, vom 16.02.2025 16:41 bis 03.03.2025 23:59',
+       text  => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Marienstr. und Zimbelstr., vom 16.02.2025 16:41 bis 03.03.2025 23:59',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.42577,52.59492,16.02.2025,16:41 (bis 03.03.2025)
-	q4::inwork 11518,20894 11599,20973 11686,21058 11703,21097
+#: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein, gesehen 2025-02-23 (So)
+	q4::inwork 11518,20894 11599,20973 11686,21058
+# REMOVED (hier nicht) ---	q4::inwork 11686,21058 11703,21097
 EOF
      },
      { from  => 1739574000, # 2025-02-15 00:00
