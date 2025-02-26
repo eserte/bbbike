@@ -1326,7 +1326,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-02-22 vvv
+#: last_checked: 2025-02-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2302,7 +2302,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-02-24 vvv
+#: last_checked: 2025-02-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -3104,7 +3104,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-02-22
+#: last_checked: 2025-02-26
 #: check_frequency: 90d
 #: next_check: 2026-02-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5590,7 +5590,11 @@ Verbundsteinpflaster	RW9;RW1 -7556,5515 -7389,5294 -7328,5218 -7254,5164 -7184,5
 Verbundsteinpflaster	RW9;RW1 -8777,7386 -8675,7148 -8619,7012 -8606,6978 -8603,6973 -8567,6893 -8471,6679 -8376,6579 -8364,6562 -8272,6450 -8252,6425 -8205,6354 -8157,6259 -8125,6184 -8116,6167
 #: note: Asphaltabschnitt 75m, Zufahrtsstraße zu einigen Häusern
 überwiegend Verbundsteinpflaster, nur ein kurzer Abschnitt asphaltiert	RW1;RW9 -8116,6167 -7985,6017 -7864,5885 -7673,5678 -7556,5515
-gemeinsamer Geh- und Radweg	RW2; 17991,6431 17948,6248 17930,6175 17900,6072
+#: historical_note: früher (bis 2024/2025): gemeinsamer Geh- und Radweg, RW2;
+	RW3; 17991,6431 17978,6375
+#: historical_note: früher (bis 2025/2025): gemeinsamer Geh- und Radweg
+getrennter Geh- und Radweg, Straßenbahnhaltestelle	RW2; 17978,6375 17963,6313
+gemeinsamer Geh- und Radweg	RW2; 17963,6313 17948,6248 17930,6175 17900,6072
 Gehweg für Radfahrer frei	RW1;RW1 27741,1394 27804,1337 27977,1187 28036,1136
 Gehweg für Radfahrer frei	RW1; 28036,1136 28094,1090 28188,962 28317,891 28331,877 28414,811 28512,704 28543,675 28570,649
 asphaltierter Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 28570,649 28617,591 28644,560 28660,542 28677,524 28718,487 28789,468 28809,462 29116,502 29406,540 29562,603 29632,594 30028,417 30551,276 30621,235 30820,117
@@ -6529,7 +6533,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: by[nocache]: https://www.facebook.com/larsduesterhoeft1981/posts/pfbid0jyCzp1ULBQ8ZkAaVbTgcaNAcQpqMpfY61ePJ3Bzuyvt3Dg3ctbA8Rjej8xo7C7p9l (Freigabe für Kfz-Verkehr bis Ende 2024?)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (Einbahnstraße für MIV bis voraussichtlich März 2025)
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-sterndamm-bleibt-auf-unbestimmte-zeit-gesperrt-li.2293446 (könnte bis 2026 dauern)
-#: last_checked: 2025-02-21
+#: last_checked: 2025-02-26
 #: check_frequency: 120d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 provisorische Radspur	RW4; 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
@@ -8333,7 +8337,7 @@ Radspur hinter den parkenden Autos, Grünbeschichtung	RW4; 12317,14535 12123,1464
 Grünbeschichtung, Leitboys	RW4; 17782,5698 17807,5730
 Grünbeschichtung	RW4; 17807,5730 17810,5736 17877,5860 17935,5961 17939,5968 17900,6072
 # REMOVED (ja) --- #: XXX wird es hier auch eine Grünbeschichtung geben? --- #: last_checked: 2020-05-09 vvv --- #: next_check: 2020-05-12 vvv
-Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
+Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17963,6313 17978,6375 17991,6431
 # 
 	RW4; 17934,7029 17919,6978 17919,6968
 # 

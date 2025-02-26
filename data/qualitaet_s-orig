@@ -2602,7 +2602,7 @@ Griebnitzseepromenade: Waldweg	Q1- -7252,-422 -7276,-482 -7337,-515 -7358,-605 -
 (Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1- 16837,11920 16764,11919 16702,11916
 (Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11916 16630,11915 16535,11920
 Nalepastr.: Asphalt mit Schäden	Q1 17079,8456 17069,8411 17065,8396
-Nalepastr.: unbefestigt	Q2 17065,8396 17057,8235
+Nalepastr.: unbefestigt, fester Sand	Q2 17065,8396 17057,8235
 Nalepastr.: Kleinsteinpflaster	Q1- 17057,8235 17056,8159
 Nalepastr.: Beton	Q1+ 17056,8159 17059,8097
 #: note: Sandbanketten, können aber zugeparkt sein
@@ -9627,11 +9627,12 @@ Theanolte-Bähnisch-Str.: Asphalt	Q0 11320,13095 11235,13143
 (Weg am Stadion): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 20087,4389 20074,4397 20017,4441 19864,4607
 (Weg am Stadion): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 19864,4607 19759,4711
 # REMOVED --- (Weg am Stadion): Schotterstraße	Q2+ 19759,4711 19710,4760 19642,4838
-(Köllnische Heide - Oberspreestr./Ostritzer Str.): Waldweg, einige Wurzeln	Q2- 19921,4256 20087,4389 20199,4481 20251,4534 20329,4585 20488,4754 20511,4781 20589,4795 20651,4854 20689,4862
+(Köllnische Heide - Oberspreestr./Ostritzer Str.): Waldweg, einige Wurzeln	Q2- 19921,4256 20087,4389 20215,4495 20251,4534 20329,4585 20488,4754 20511,4781 20589,4795 20651,4854 20689,4862
 (Waldweg): unbefestiger Weg, recht glatt und gut befahrbar	Q2+ 19765,4876 19774,4810 19759,4711
 (Genossenschaftsstr. - Weg am Stadion): Waldweg	Q2 19921,4256 19901,4334 19894,4395 19890,4505 19864,4607
 (verlängerte Genossenschaftsstr.): Waldweg	Q2 19921,4256 19876,4304
-(Köllnische Heide, SW-NO-Weg): Waldweg	Q2 19807,4248 19876,4304 19901,4334
+(Köllnische Heide, SW-NO-Weg): Waldweg	Q2 19807,4248 19876,4304 19901,4334 20017,4441
+(Friedlander Str. - Köllnische Heide): Waldweg	Q2 20574,4317 20520,4356 20499,4405 20215,4495
 (Braunlager Str. - Tempelhofer Weg): Mosaikpflaster	Q1 12062,5779 12017,5747
 Am Vierling: Kleinsteinpflaster	Q1 -472,4185 -444,4126
 (Salzachstr. - Parkplatz Einkaufszentrum): Verbundsteinpflaster	Q1+ -2103,3536 -2173,3513
@@ -12882,7 +12883,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
 #: osm_watch: way id="1061650562" version="1"
-#: last_checked: 2024-11-06
+#: last_checked: 2025-02-26
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): unebener Asphalt	Q1 16084,8833 16086,8860

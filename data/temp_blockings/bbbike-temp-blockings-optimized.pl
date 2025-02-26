@@ -3297,9 +3297,10 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-01-16 vvv
+#: last_checked: 2025-02-26 vvv
 #: check_frequency: 60d vvv
-entlang des Sowjetischen Ehrenmals	2::inwork 14955,9294 15025,9171 15154,9106 15190,9027
+entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171 15154,9106 15190,9027
+Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
 Bulgarische Str. - Karpfenteich	2::inwork 15439,8839 15297,8921 15245,8916
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3473,7 +3474,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2025-01-04
 #: check_frequency: 60d
-#: next_check: 2025-06-30
+#: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => undef,
@@ -4573,7 +4574,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025)
-#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33
+#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -5677,7 +5678,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2025-02-22 (krickstadt) vvv
+#: last_checked: 2025-02-26 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -5686,9 +5687,11 @@ Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
 Wilhelminenhofstr. (Ost)	q4::inwork 18191,6363 17991,6431
 #: osm_watch: way id="176072020" version="44"
 #: note: der östliche Gehweg ist komplett gesperrt, zur Überquerung existiert eine Fußgängerampel (Stand September 2024) --- mittlerweile (Februar 2025) wohl nicht mehr gesperrt, aber an der Kreuzung geht es weiterhin nicht weiter: q4 -> q3
-Edisonstr. (Süd)	q3::inwork; 17948,6248 17991,6431
-#: note: der westliche Gehweg ist im südlichen Abschnitt weitgehend frei, deshalb q4+ statt q4 (Stand September 2024)
-Edisonstr. (Süd)	q4+::inwork; 17991,6431 17948,6248
+# REMOVED (hier keine Bauarbeiten mehr) --- Edisonstr. (Süd)	q3::inwork; 17948,6248 17963,6313 17978,6375
+Edisonstr. (Süd)	q3::inwork; 17978,6375 17991,6431
+#: note: der westliche Gehweg ist im südlichen Abschnitt weitgehend frei, deshalb q4+ statt q4 (Stand September 2024), mittlerweile q3 (Stand Feb 2025)
+Edisonstr. (Süd)	q3::inwork; 17991,6431 17978,6375 17963,6313
+# REMOVED (hier keine Bauarbeiten mehr) --- Edisonstr. (Süd)	q3::inwork; 17963,6313 17948,6248
 Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,6431 17962,6674
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -5935,8 +5938,9 @@ Charlottenstr.	q3::inwork 9523,12019 9509,12117
          'data' => '# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (G[zu lang],B,T) vvv
-#: last_checked: 2025-02-01 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2025-02-25 (traffic) vvv
+# REMOVED --- #: check_frequency: 30d (outdoor) vvv
+#: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-01-31 (Halteverbotsschilder) vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
 Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056,12304
@@ -6208,11 +6212,11 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
        },
        {
          'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025)
-#: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025)
+#: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 6
+#: osm_watch: note 4185183 7
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
@@ -6296,15 +6300,15 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024) (bis 20.12.2024) (bis 28.02.2025)
+         'data' => '#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024) (bis 20.12.2024) (bis 28.02.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.50255,52.50891,07.05.2024,00:00 (bis 20.12.2024) (inaktiv)
 	q4::inwork; 17096,11585 16915,11634
 ',
          'from' => 1713416400,
          'id' => 4056,
-         'text' => 'Irenenstr.: Richtung Weitlingstr. zwischen Metastr. und Wönnichstr. Bauarbeiten, Sperrung, auch Radfahrer sind betroffen, vom 19.04.2024 07:00 bis 28.02.2025 17:00',
+         'text' => 'Irenenstr.: Richtung Weitlingstr. zwischen Metastr. und Wönnichstr. Bauarbeiten, Sperrung, auch Radfahrer sind betroffen, vom 19.04.2024 07:00 bis 28.03.2025 17:00',
          'type' => 'handicap',
-         'until' => 1740758400
+         'until' => 1743177600
        },
        undef,
        undef,
@@ -6773,7 +6777,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-02-22 vvv
+#: last_checked: 2025-02-25 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7285,7 +7289,17 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => 1743458399
        },
-       undef,
+       {
+         'data' => '#: source_id: 246002279 (bis 21.02.2025) (inaktiv)
+#: source_id: 256000273 (bis 04.04.2025)
+	2::inwork 24749,22618 24719,22727 24718,22731 24761,23151
+',
+         'from' => 1743116400,
+         'id' => 4235,
+         'text' => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 29.03.2025 05:00 Uhr bis 04.04.2025 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1743782400
+       },
        {
          'data' => '#: also_indoor: traffic (G,T,B,A)
 #: last_checked: 2025-01-31
@@ -7610,7 +7624,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'data' => '#: source_id: viz2021:13.55297,52.439664,20.02.2025,06:00 (auch Radverkehr betroffen, bis 07.03.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892439286399791172
 #: by: https://pbs.twimg.com/media/GkKQea0XoAEemcW?format=jpg&name=large (Sperrung der Einmündung in Höhe Zinsgutstr.)
-	q3::inwork 20772,3999 20679,3944
+	q2::inwork 20772,3999 20679,3944
 Vorsperrung ab Wassermannstr.	q4::inwork 20679,3944 20637,3919
 Zinsgutstr.: Sperrung der Einmündung	q3::inwork 20862,3824 20679,3944
 ',
@@ -7620,18 +7634,7 @@ Zinsgutstr.: Sperrung der Einmündung	q3::inwork 20862,3824 20679,3944
          'type' => 'handicap',
          'until' => 1741363200
        },
-       {
-         'data' => '#: source_id: viz2021:13.292779,52.432798,20.02.2025,12:15 (bis 18.04.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1892476531823218713
-#: note: q3, weil vermutlich nur der Kreuzungsbereich betroffen ist
-	q3::inwork 3015,2606 3019,2858 3023,2958
-',
-         'from' => 1739963700,
-         'id' => 4267,
-         'text' => 'Kommandantenstr.: Sperrung in Höhe Finckensteinallee, evtl. sind auch Radfahrer betroffen, vom 20.02.2025 12:15 bis 18.04.2025 23:59',
-         'type' => 'handicap',
-         'until' => 1745013540
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.34184,52.43229,21.02.2025,09:04 (bis 28.02.2025)
 	q4::inwork 6372,2959 6329,2916 6359,2875
@@ -7671,6 +7674,36 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
          'text' => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis 28.03.2025',
          'type' => 'gesperrt',
          'until' => 1743202800
+       },
+       {
+         'data' => '#: next_check_id: SPREEKUESTE-2025
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Bauvorhaben "Nalepaland", Grundwasserentnahme beantragt)
+#: by: https://www.nalepaland.de/
+#: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
+#: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
+#: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17), aber nicht immer (gesehen 2024-11-16 Sat); das südliche Tor ist immer zu
+#: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
+#: osm_watch: way id="207757723" version="6"
+#: osm_watch: way id="275795707" version="3"
+#: osm_watch: node id="676243408" version="4"
+#: osm_watch: node id="2804650438" version="4"
+#: last_checked: 2025-02-26 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: check_frequency: 90d vvv
+#: note: kann offen sein, aber nicht immer
+Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
+#: note: dauerhaft gesperrt
+Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 4271,
+         'permanent' => 1,
+         'text' => 'Nalepastr.: Tore am Funkhaus können verschlossen sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

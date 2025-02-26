@@ -14,7 +14,7 @@
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
 #: source_id: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-02-25
+#: last_checked: 2025-02-26
 # REMOVED --- #: check_frequency: 8d
 #: next_check: 2025-03-12 (VIZ-Verkehrsmeldung)
 #: valid: -20250312
@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-02-23
+#: last_checked: 2025-02-26
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -66,7 +66,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="7"
 #: osm_watch: way id="1146013233" version="10"
 #: osm_watch: way id="1134071039" version="12"
-#: last_checked: 2025-02-25 vvv
+#: last_checked: 2025-02-26 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -121,7 +121,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-02-24
+#: last_checked: 2025-02-26
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -259,7 +259,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-02-11 (mapillary) vvv
+#: last_checked: 2025-02-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 (VIZ-Verkehrsmeldung) vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -318,11 +318,12 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der nördliche Strang soll dauerhaft eingezogen werden
 #: osm_watch: way id="20554168" version="26"
 #: osm_watch: way id="1155308749" version="1"
-#: last_checked: 2024-11-20 vvv
+#: last_checked: 2025-02-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-05-10 (Tsp) vvv
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
-Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714
+# REMOVED (hier wieder offen) --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714
+Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -999,7 +1000,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-02-24
+#: last_checked: 2025-02-26
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1343,7 +1344,7 @@ Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11
 #: also_indoor: traffic (B,G,ex-H,T)
 #: note: Halteverbotsschilder bis 23.10.2024
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-02-18 (traffic) vvv
+#: last_checked: 2025-02-25 (traffic) vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: next_check: 2024-10-23 vvv
 # REMOVED --- #: valid: -20241023 vvv
@@ -1947,7 +1948,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-22
+#: last_checked: 2025-02-26
 #: check_frequency: 30d
 #: next_check: 2025-03-15 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -3703,7 +3704,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2024-12-27 vvv
+#: last_checked: 2025-02-26 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -5313,6 +5314,8 @@ Ulsterstr.: enge Straße	q0- 13575,8378 13641,8470
 # 
 #: note: Grünanlagenschild ohne weitere Zusatzschilder
 (Landsberger Allee - Große-Leege-Str.): Fußgänger, Grünanlage	q3 15963,14470 15902,14498
+# 
+Friedlander Str. - Köllnische Heide: schmal, unübersichtlich	q3 20574,4317 20520,4356
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

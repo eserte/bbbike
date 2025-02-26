@@ -13,6 +13,13 @@
 # REMOVED --- #: valid: -20250214
 # REMOVED --- Wartenberger Weg: Gegenverkehrsreglung	X::inwork::alternating 15882,19165
 # 
+#: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1894643566640861298
+#: by: https://pbs.twimg.com/media/GknmW6oW8AADYN1?format=jpg&name=medium
+#: next_check: 2025-04-30
+#: valid: -20250430
+Dorfstr./Hausvaterweg: Gegenverkehrsreglung	X::inwork::alternating 19782,18211
+# 
 #: source_id: bvg2024:184#HIM_FREETEXT_235819 (kein Endedatum)
 #: last_checked: 2025-02-05 vvv
 Hoeppnerstr.: Gegenverkehrsreglung	X::inwork::alternating 8386,7430
@@ -262,7 +269,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2025-02-21
+#: last_checked: 2025-02-26
 #: check_frequency: 120d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 #: note: Anforderungsampel
@@ -270,7 +277,7 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2025-02-21
+#: last_checked: 2025-02-26
 #: check_frequency: 120d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
@@ -347,7 +354,7 @@ Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: note: am 2024-12-04 ausgeschaltet oder kaputt gewesen; am 2024-12-13 hat die LSA wieder funktioniert
-#: last_checked: 2025-02-24
+#: last_checked: 2025-02-26
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9622
 # 
