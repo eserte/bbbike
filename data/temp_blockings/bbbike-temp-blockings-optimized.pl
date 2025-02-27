@@ -4219,20 +4219,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: hier steht ein großes Zelt der CDU, auch der Gehweg ist nicht passierbar (2021)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1892798905903173957 (2025)
-#: by: https://pbs.twimg.com/media/GkPQDZPXkAEsKiY?format=jpg&name=medium (provisorische Bus+Radspur in der Klingelhöferstr.)
-#: by: https://pbs.twimg.com/media/GkPQDaOX0AAjivV?format=png&name=900x900 (Veranstaltungszelt)
-#: source_id: viz2021:13.351351,52.509606,21.02.2025,06:00 (zur Klingelhöferstr., bis 27.02.2025)
-	2::temp 6880,11110 6841,11114
-',
-         'from' => 1740128931,
-         'id' => 3448,
-         'text' => 'Corneliusstr.: Durchfahrt vermutlich nicht möglich, voraussichtlich bis zum 27.02.2025',
-         'type' => 'gesperrt',
-         'until' => 1740672000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4573,7 +4560,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024) (bis 31.12.2024) (bis 08.01.2025) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
-#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025)
+#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
@@ -5240,7 +5227,7 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023) (bis 09.06.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,09.06.2023,10:00 (bis 28.08.2023) (inaktiv)
-#: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028)
+#: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028) (bis 30.06.2028)
 #: REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
@@ -5248,7 +5235,7 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
 #: osm_watch: way id="37861386" version="27"
 #: last_checked: 2024-11-06
 #: check_frequency: 120d
-#: next_check: 2028-02-29 (VIZ-Verkehrsmeldung)
+#: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
 ',
          'from' => 1730674800,
@@ -5798,7 +5785,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'id' => 3930,
          'text' => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.04.2025',
          'type' => 'handicap',
-         'until' => 1740758400
+         'until' => 1746025200
        },
        undef,
        undef,
@@ -5958,7 +5945,19 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024) (inaktiv)
+#: source_id: viz2021:13.32658,52.48653,05.02.2024,07:00 (bis 18.04.2024) (inaktiv)
+#: source_id: viz2021:13.32656,52.48749,27.02.2025,12:14 (neue Sperrung, bis 19.03.2025)
+# REMOVED (alte Sperrung (2023-2024)) --- #: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?) ---	q4::inwork 5176,9398 5189,8983
+	q4::inwork 5189,8983 5195,8880
+',
+         'from' => 1740524400,
+         'id' => 3978,
+         'text' => 'Nassauische Str.: Bauarbeiten zwischen Berliner Str. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.02.2025 bis 19.03.2025',
+         'type' => 'handicap',
+         'until' => 1742425199
+       },
        undef,
        undef,
        undef,
@@ -6359,7 +6358,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-02-23
+#: last_checked: 2025-02-27
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -6857,7 +6856,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: osm_watch: note 4594797 3
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2025-02-19
+#: last_checked: 2025-02-27
 #: next_check: 2025-04-25 (VIZ-Verkehrsmeldung)
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 ',
@@ -6910,7 +6909,8 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250131
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_wollankstrasse_wegefuehrung_20250131n.pdf
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
-#: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
+#: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
+#: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
@@ -7329,8 +7329,10 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2025-01-14 (mapillary)
-#: next_check: 2025-06-30
+         'data' => '#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025)
+#: last_checked: 2025-01-14 (mapillary)
+#: next_check: 2025-04-11 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-06-30
 	q4::inwork; 11001,18528 11123,18343
 ',
          'from' => 1737052224,
@@ -7704,6 +7706,16 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
          'text' => 'Nalepastr.: Tore am Funkhaus können verschlossen sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: LS/221-F/25/032 (bis 30.05.2025)
+	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
+',
+         'from' => 1741503600,
+         'id' => 4272,
+         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 30.05.2025',
+         'type' => 'gesperrt',
+         'until' => 1748617200
        }
      
 );

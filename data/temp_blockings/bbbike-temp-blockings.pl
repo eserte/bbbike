@@ -34807,7 +34807,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892798905903173957 (2025)
 #: by: https://pbs.twimg.com/media/GkPQDZPXkAEsKiY?format=jpg&name=medium (provisorische Bus+Radspur in der Klingelhöferstr.)
 #: by: https://pbs.twimg.com/media/GkPQDaOX0AAjivV?format=png&name=900x900 (Veranstaltungszelt)
-#: source_id: viz2021:13.351351,52.509606,21.02.2025,06:00 (zur Klingelhöferstr., bis 27.02.2025)
+#: source_id: viz2021:13.351351,52.509606,21.02.2025,06:00 (zur Klingelhöferstr., bis 27.02.2025) (inaktiv)
 	2::temp 6880,11110 6841,11114
 EOF
      },
@@ -36353,7 +36353,7 @@ EOF
 #: source_id: viz2021:13.493571,52.636166,24.04.2024,06:00 (bis 29.07.2024) (bis 01.11.2024) (bis 30.10.2024) (bis 06.12.2024) (bis 31.12.2024) (bis 08.01.2025) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
-#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025)
+#: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
@@ -39150,7 +39150,7 @@ EOF
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023) (bis 09.06.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,09.06.2023,10:00 (bis 28.08.2023) (inaktiv)
-#: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028)
+#: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028) (bis 30.06.2028)
 #: REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
@@ -39158,7 +39158,7 @@ EOF
 #: osm_watch: way id="37861386" version="27"
 #: last_checked: 2024-11-06
 #: check_frequency: 120d
-#: next_check: 2028-02-29 (VIZ-Verkehrsmeldung)
+#: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
 EOF
      },
@@ -40068,7 +40068,7 @@ EOF
        text  => 'Littenstr.: Fahrbahn an der Stralauer Str. gesperrt, voraussichtlich bis 30.9.2023',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.414599,52.516503,02.11.2022,08:00 (bis 29.12.2023) (bis 29.03.2024) (bis 30.04.2024) (bis 28.06.2024) (bis 28.02.2025)
+#: source_id: viz2021:13.414599,52.516503,02.11.2022,08:00 (bis 29.12.2023) (bis 29.03.2024) (bis 30.04.2024) (bis 28.06.2024) (bis 28.02.2025) (inaktiv)
 #: note: vorzeitige Aufhebung der Sperrung
 # REMOVED --- #: last_checked: 2023-08-27 --- #: check_frequency: 30d --- #: next_check: 2023-09-30
 	q4::inwork 11139,12243 11155,12184
@@ -41779,7 +41779,7 @@ EOF
 EOF
      },
      { from  => 1696309200, # 2023-10-03 07:00
-       until => $isodate2epoch->("2025-02-28 17:00:00"), # $isodate2epoch->("2024-05-04 17:00:00"), # 1700064000, # 2023-11-15 17:00
+       until => $isodate2epoch->("2025-04-30 17:00:00"), # $isodate2epoch->("2024-05-04 17:00:00"), # 1700064000, # 2023-11-15 17:00
 #      text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 04.05.2024 17:00',
        text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.04.2025',
        type  => 'handicap',
@@ -42508,15 +42508,17 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
 #: add_fragezeichen ^^^
 EOF
      },
-     { from  => 1701064800, # 2023-11-27 07:00
-       until => $isodate2epoch->("2024-04-18 17:00:00"), # 1705075200, # 2024-01-12 17:00
-       text  => 'Nassauische Str.: Bauarbeiten zwischen Güntzelstr. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.11.2023 bis 18.04.2024',
+     { from  => $isodate2epoch->("2025-02-26 00:00:00"), # 1701064800, # 2023-11-27 07:00
+       until => $isodate2epoch->("2025-03-19 23:59:59"), # $isodate2epoch->("2024-04-18 17:00:00"), # 1705075200, # 2024-01-12 17:00
+#      text  => 'Nassauische Str.: Bauarbeiten zwischen Güntzelstr. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.11.2023 bis 18.04.2024',
+       text  => 'Nassauische Str.: Bauarbeiten zwischen Berliner Str. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.02.2025 bis 19.03.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.32658,52.48653,05.02.2024,07:00 (bis 18.04.2024) (inaktiv)
-#: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?)
-	q4::inwork 5176,9398 5189,8983
+#: source_id: viz2021:13.32656,52.48749,27.02.2025,12:14 (neue Sperrung, bis 19.03.2025)
+# REMOVED (alte Sperrung (2023-2024)) --- #: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?) ---	q4::inwork 5176,9398 5189,8983
+	q4::inwork 5189,8983 5195,8880
 EOF
      },
      { from  => 1701151200, # 2023-11-28 07:00
@@ -44121,7 +44123,7 @@ EOF
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-02-23
+#: last_checked: 2025-02-27
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork 15077,11910 15110,12107
 EOF
@@ -44410,7 +44412,7 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
-#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025)
+#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025) (bis 14.03.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr; mittlerweile (2024-12-03) ist die Radspur wieder nutzbar
 #: note: mittlerweile sind die Barrieren so weggeschoben, dass es keine Beeinträchtigungen mehr gibt
 # REMOVED --- #: last_checked: 2024-12-17 --- #: check_frequency: 14d
@@ -45289,7 +45291,7 @@ EOF
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: osm_watch: note 4594797 3
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2025-02-19
+#: last_checked: 2025-02-27
 #: next_check: 2025-04-25 (VIZ-Verkehrsmeldung)
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 EOF
@@ -45399,7 +45401,8 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250131
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_wollankstrasse_wegefuehrung_20250131n.pdf
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
-#: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum)
+#: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
+#: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
@@ -45806,7 +45809,7 @@ EOF
 #: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...) (bis 28.03.2025 + ...) (inaktiv)
 #: source_id: bvg2024:x83#HIM_FREETEXT_260482 (kein Endedatum)
 #: source_id: viz2021:13.3156,52.4588,02.02.2025,18:17 (bis 28.02.2025) (inaktiv)
-#: source_id: viz2021:13.3156,52.4588,18.12.2024,18:17 (nur noch Verengung, bis 28.02.2025)
+#: source_id: viz2021:13.3156,52.4588,18.12.2024,18:17 (nur noch Verengung, bis 28.02.2025) (bis 04.04.2025)
 #: osm_watch: note 4441243 5
 #: osm_watch: note 4441280 1
 #: also_indoor: traffic (H,ex-G,B,T,W)
@@ -46273,8 +46276,10 @@ EOF
        text  => 'Hadlichstr.: Einbahnstraßenregelung, vermutlich bis 30.06.2025',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025)
 #: last_checked: 2025-01-14 (mapillary)
-#: next_check: 2025-06-30
+#: next_check: 2025-04-11 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-06-30
 	q4::inwork; 11001,18528 11123,18343
 EOF
      },
@@ -46678,6 +46683,15 @@ Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
 Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
 #: check_frequency ^^^
 #: last_checked ^^^
+EOF
+     },
+     { from  => 1741503600, # 2025-03-09 08:00
+       until => 1748617200, # 2025-05-30 17:00
+       text  => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 30.05.2025',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-F/25/032 (bis 30.05.2025)
+	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 EOF
      },
     );

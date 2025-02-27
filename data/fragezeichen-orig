@@ -4553,6 +4553,7 @@ Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bekommt-eine-neue-autobahn-und-was-sich-sonst-2025-im-verkehr-aendert-li.2283130 (zur geplanten Umgestaltung)
 #: by: https://www.berliner-zeitung.de/news/protest-in-tempelhof-schoeneberg-fahrraddemonstration-fuer-umbau-der-monumentenstrasse-li.2295202
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-sitzung-vom-28112024.pdf (Erwähnung, Frage der Finanzierung)
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/freude-ueber-neue-radwege-demo-fuer-verbindung-ueber-die-monumentenbruecke_a436292
 #: XXX außerdem: ein gegenläufiger Radweg auf der Südseite der Monumentenbrücke ist geplant
 #: last_checked: 2025-02-05 vvv
 #: check_frequency: 90d vvv
@@ -5429,7 +5430,7 @@ Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str. geplant	?::pro
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349062.php (Entsiegelungsmaßnahme ab 24.07.2023)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-in-fussgaengerzone_a388510
 #: osm_watch: way id="4685729" version="23"
-#: last_checked: 2025-02-06
+#: last_checked: 2025-02-27
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-07-24
 Waldeyerstr.: wird es hier zu weiteren Einschränkungen für den Radverkehr kommen?	? 15058,12329 15003,12241
@@ -5579,7 +5580,7 @@ Simon-Bolivar-Str./Goeckestr.: entsteht hier ein neuer Zebrastreifen?	? 16104,14
 Werneuchener Str./Küstriner Str.: entsteht hier ein neuer Zebrastreifen?	? 16301,15247 16314,15223 16327,15193
 #: last_checked: 2025-01-06
 Franz-Jacob-Str./Max-Brunnow-Str.: entsteht hier ein neuer Zebrastreifen?	? 14519,13404 14529,13384 14545,13363
-#: last_checked: 2025-02-08
+#: last_checked: 2025-02-27
 Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15487,11398 15497,11381 15507,11357
 #: check_frequency ^^^
 #: priority ^^^
@@ -6162,7 +6163,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2025-02-23
+#: last_checked: 2025-02-27
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -6283,7 +6284,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-02-26
+#: last_checked: 2025-02-27
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6854,8 +6855,10 @@ B158, Oderberg, Brücke über die HOW: Radstreifen geplant	?::projected 53201,5167
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42751
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42752
 #: source_id: LS/221-E/22/017 (inaktiv)
+#: source_id: LS/221-E/25/018 (bis 18.07.2025)
 #: last_checked: 2023-04-07
-#: check_frequency: 360d
+# REMOVED --- #: check_frequency: 360d
+#: next_check: 2025-07-18
 B2: straßenbegleitender Radweg geplant	?::projected 49788,67668 49825,67707 49872,67713 49907,67684 49908,67683 50386,68158 50632,68484 50863,68629
 # 
 # REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=33123 --- #: source_id: LS/723-P/20/210--- #: source_id: LS/723-P/21/238 --- #: next_check: 2022-04-30
@@ -7528,7 +7531,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2025-02-26
+#: last_checked: 2025-02-27
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -8606,11 +8609,12 @@ Schichauweg - Freizeitpark Marienfelde: Planung einer Erschließungsstraße (verke
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubauquartier-bruno-taut-stra%C3%9Fe-6.1375/ (Fertigstellung des Neubauquartiers 2026)
 #: by: https://www.degewo.de/wachstum/neubau/treptow-koepenick/bruno-taut-strasse-6
+#: by: https://entwicklungsstadt.de/neues-wohnquartier-in-gruenau-528-wohnungen-ab-2026-bezugsfertig/
 #: osm_watch: way id="27426230" version="13"
 #: osm_watch: way id="1267524641" version="2"
 #: XXX evtl. wird der Anfang von "Am Wiesenweg" in diese Straße integriert?
 #: last_checked: 2024-06-26
-#: next_check: 2026-12-31
+#: next_check: 2026-12-31 (architektur-urbanistik, entwicklungsstadt)
 Bruno-Taut-Straße 6: Erschließungsstraße entsteht	? 21685,916 21745,997 21882,1026
 # 
 # REMOVED (fertig) --- #: next_check_id: FLORIANGEYER-2023 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1417686.php ("Cheops-Pflaster", bis September/Oktober 2024) --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/fahrbahnarbeiten-gehen-weiter_a407945 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1453440.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1473617.php (Bauarbeiten wurden unterbrochen, noch im Zeitplan) --- #: by: https://www.berliner-woche.de/adlershof/c-verkehr/strassenbau-unterbrochen_a422790 --- #: note: Halteverbotsschilder ab April 2024, allerdings ist im Mai 2024 noch immer nichts passiert --- #: osm_watch: note 4481346 1 --- #: last_checked: 2024-09-15 --- # REMOVED --- #: next_check: 2024-09-16 --- Florian-Geyer-Str.: Bauarbeiten, Verbesserung der Qualität	?::inwork 20066,3746 19996,3841
@@ -8929,6 +8933,7 @@ Französische Str./Markgrafenstr.: neue Ampel soll 2025 entstehen	? 9624,12153 96
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529206.php (10. bis 28. Februar 2025)
 #: by: https://www.berliner-zeitung.de/news/bauarbeiten-in-treptow-koepenick-semliner-strasse-bis-ende-februar-gesperrt-li.2293919
+#: osm_watch: way id="1184915885" version="4"
 #: next_check: 2025-02-28 (BA-Pressemitteilung)
 Semliner Str.: ist die Qualität nach den Bauarbeiten besser geworden?	?::projected 22272,7242 22303,7361
 # 
@@ -11492,12 +11497,13 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12607 (Anfrage, u.a. zur Brücke zur Rhenaniastraße)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12629 (Vorlage zur Beschlussfassung)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/unsere-kleine-autobahnbrucke-in-spandau-wie-stehts-um-die-brucken-auf-die-insel-gartenfeld-12974422.html (zur neuen Brücke zur Rhenaniastraße, andere Brücke zum Saatwinkler Damm wurde gestrichen)
+#: by: https://entwicklungsstadt.de/neue-bruecke-fuer-das-neue-gartenfeld-planungen-konkretisiert/ (geplante Fertigstellung der Brücke bis 2027)
 #: osm_watch: relation id="10290512" version="5"
 #: osm_watch: way id="1306187833" version="4"
 #: osm_watch: way id="1306187834" version="5"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
 #: last_checked: 2025-02-25 (daf)
-#: check_frequency: 720d
+#: check_frequency: 360d
 #: next_check: 2028-06-30
 Insel Gartenfeld: Stadtquartier entsteht, einige Planstraßen, Uferpromenade, Ufergrünzug, eine Brücke	?::inwork -871,16391 -995,15643 -358,15621 -301,16026 -871,16391
 # 
