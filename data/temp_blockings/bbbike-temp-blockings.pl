@@ -17796,6 +17796,7 @@ EOF
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.830806.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12632
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12653
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_10_0665_0712_online.pdf (Teileinziehung von öffentlichem Straßenland - in den regulären Sitzungswochen des Deutschen Bundestages)
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 EOF
@@ -36088,10 +36089,10 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/etliche-bueros-im-kalle-sind-bezogen-im-rest-des-komplexes-laufen-noch-die-bauarbeiten_a427858
 #: osm_watch: way id="734271970" version="7"
 #: osm_watch: way id="975241319" version="7"
-#: osm_watch: way id="970452276" version="7"
+#: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-22
+#: last_checked: 2025-02-27 (osm)
 #: check_frequency: 30d
 #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36320,9 +36321,9 @@ EOF
 EOF
      },
      { from  => 1713897172, # 1652122429, # 2022-05-09 20:53
-       until => $isodate2epoch->("2025-03-04 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
+       until => $isodate2epoch->("2025-03-31 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023',
-       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 04.03.2025',
+       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 31.03.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -36354,7 +36355,7 @@ EOF
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025)
-#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025)
+#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -37646,7 +37647,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-02-08
+#: last_checked: 2025-02-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40086,7 +40087,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-02-08
+#: last_checked: 2025-02-28
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -43619,7 +43620,7 @@ EOF
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,ex-G)
@@ -43644,7 +43645,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.242728,52.52799,29.04.2024,07:00 (bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.247467,52.524469,29.04.2024,07:00 (andere Richtung, nur Kfz-Verkehr, bis 31.07.2025)
+#: source_id: viz2021:13.247467,52.524469,29.04.2024,07:00 (andere Richtung, nur Kfz-Verkehr, bis 31.07.2025) (bis 31.03.2025)
 # REMOVED (keine Ausnahmeregelung für Radfahrer) --- #: add_fragezeichen: Sind Radfahrer tatsächlich von der Einbahnstraßenregelung betroffen?
 #: note: mittlerweile Bauarbeiten in der Gegenrichtung, aber zumindest gibt's wenigstens ein Stück freigegebenen Gehweg
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784808579930718521
@@ -45400,6 +45401,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin-nord-komplexe-arbeiten_wollankstrasse_20241128.pdf
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250131
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_wollankstrasse_wegefuehrung_20250131n.pdf
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1895379778414514298
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
 #: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
@@ -45582,9 +45584,10 @@ EOF
 EOF
      },
      { from  => 1727643600, # 2024-09-29 23:00
-       until => $isodate2epoch->("2025-02-28 17:00:00"), # 1732636800, # 2024-11-26 17:00
+       until => undef, # $isodate2epoch->("2025-02-28 17:00:00"), # 1732636800, # 2024-11-26 17:00
+       dont_check_date => 1,
 #       text  => 'Fischerinsel: Richtung Breite Str. vor Mühlendamm: Wasserrohrbruch, Fahrtrichtung gesperrt, vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
-       text  => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis 28.02.2025 17:00, evtl. wird verlängert',
+       text  => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis 14.03.2025 17:00, evtl. wird verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
@@ -45597,7 +45600,7 @@ EOF
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
 #: last_checked: 2025-02-25 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
 Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #Fischerinsel	q4::inwork 10578,11969 10512,12039
@@ -45748,7 +45751,7 @@ EOF
 EOF
      },
      { from  => 1729461600, # 2024-10-21 00:00
-       until => $isodate2epoch->("2025-02-28 23:59:59"), # 1735340400, # 2024-12-28 00:00
+       until => 1740765216, # $isodate2epoch->("2025-02-28 23:59:59"), # 1735340400, # 2024-12-28 00:00
        text  => 'Grolmanstr.: Sperrung zwischen Goethestr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Februar 2028',
        type  => 'handicap',
        data  => <<EOF,
@@ -46022,16 +46025,16 @@ EOF
 EOF
      },
      { from  => 1732172400, # 2024-11-21 08:00
-       until => 1741622400, # 2025-03-10 17:00
-       text  => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, Linksabbiegen vom Radweg in die Scharnhorststr. für Radfahrer verboten, vom 22.11.2024 08:00 bis 10.03.2025 17:00',
+       until => $isodate2epoch->("2025-08-31 17:00:00"), # 1741622400, # 2025-03-10 17:00
+       text  => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, Linksabbiegen vom Radweg in die Scharnhorststr. für Radfahrer verboten, vom 22.11.2024 08:00 bis 31.08.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025)
+#: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025) (bis 31.08.2025)
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
 #: last_checked: 2025-01-15
 #: check_frequency: 90d
-#: next_check: 2025-03-10
+#: next_check: 2025-08-31
 #	q4::inwork; 8453,13611 8572,13671
 	3::inwork 8358,13562 8453,13611 8408,13684
 EOF
@@ -46263,11 +46266,12 @@ EOF
        text  => 'Bayernring: Bauarbeiten zwischen Manfred-von-Richthofen-Str. und Mussehlstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (ex-H,T,B)
+#: also_indoor: traffic (re-H,T,B)
 #: note: Halteverbotsschilder bis 28.02.2025
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2025-01-31
-#: next_check: 2025-02-28
+#: last_checked: 2025-02-28 (traffic)
+#: check_frequency: 10d (traffic)
+# REMOVED --- #: next_check: 2025-02-28 (Halteverbotsschilder)
 	q4::inwork 8842,8561 8916,8511
 EOF
      },
@@ -46620,11 +46624,12 @@ EOF
 EOF
      },
      { from  => 1740038640, # 2025-02-20 09:04
-       until => 1740783540, # 2025-02-28 23:59
-       text  => 'Barbarastr.: geplatzte Wasserleitung, zwischen Ingridpfad und Ruthstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.02.2025 09:04 bis 28.02.2025 23:59',
+       until => $isodate2epoch->("2025-03-21 23:59:59"), # 1740783540, # 2025-02-28 23:59
+       text  => 'Barbarastr.: geplatzte Wasserleitung, zwischen Ingridpfad und Ruthstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.02.2025 09:04 bis 21.03.2025 23:59',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.34184,52.43229,21.02.2025,09:04 (bis 28.02.2025)
+#: source_id: viz2021:13.34184,52.43229,21.02.2025,09:04 (bis 28.02.2025) (inaktiv)
+#: source_id: viz2021:13.34184,52.43229,28.02.2025,10:57 (bis 21.03.2025)
 	q4::inwork 6372,2959 6329,2916 6359,2875
 EOF
      },
@@ -46645,14 +46650,12 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 EOF
      },
      { from  => 1740415750, # 2025-02-24 17:49
-       until => 1743202800, # 2025-03-29 00:00
+       until => 1740761704, # 1743202800, # 2025-03-29 00:00
        text  => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis 28.03.2025',
        type  => 'gesperrt',
        data  => <<EOF,
-#: also_indoor: traffic (H,G[falsch],B,T)
-#: last_checked: 2025-02-24
-#: check_frequency: 10d
-#: next_check: 2025-03-28 (Halteverbotsschilder)
+#: also_indoor: traffic (ex-H,G[falsch],ex-B,ex-T)
+# REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-02-28 --- #: check_frequency: 10d --- #: next_check: 2025-03-28 (Halteverbotsschilder)
 	2::inwork 17587,9655 17668,9632 17777,9649
 EOF
      },
@@ -46692,6 +46695,37 @@ EOF
        data  => <<EOF,
 #: source_id: LS/221-F/25/032 (bis 30.05.2025)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Marzahner Chaussee und Merler Weg: temporäre Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024) (bis 05.02.2025) (bis 06.02.2025) (bis 14.02.2025) (bis 28.02.2025)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
+#: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
+#: by: https://www.berliner-woche.de/marzahn/c-bauen/richtfeste-fuer-290-wohnungen_a417760
+#: also_indoor: traffic (G,ex-H,ex-B,ex-T,A)
+#: note: außerdem Beilsteiner Str. Höhe Merler Weg ist die Durchfahrt Richtung Süden mit Betonbarrieren versperrt, als Radfahrer kann man über den Hochbord vorbeifahren
+#: add_fragezeichen: Wurden die Einbahnstraßenregelungen mittlerweile aufgehoben? vvv
+#: last_checked: 2025-02-23 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: valid: -20250214 vvv
+#: osm_watch: way id="1089784266" version="4"
+#: osm_watch: way id="1231226671" version="1"
+Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272
+# REMOVED (hier nicht) --- Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19198,13272 19180,13219
+#: osm_watch: way id="36786796" version="22"
+Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
+# REMOVED --- #: valid ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+# 
 EOF
      },
     );

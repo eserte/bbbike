@@ -128,7 +128,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-02-26
+#: last_checked: 2025-02-28
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -341,9 +341,10 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 # 
 #: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nördlich Semmelweisstr. Anfang März 2025 offen, der südliche Abschnitt Ende April 2025)
+#: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
 #: last_checked: 2024-12-27
 # REMOVED --- #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
-#: next_check: 2025-03-01 (BA-Pressemitteilung)
+#: next_check: 2025-03-03 (BA-Pressemitteilung)
 #: valid: -20250430
 Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18881,2062 18922,2238 18928,2319 18929,2454
 # 
@@ -690,11 +691,12 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Friedrichsfelde ###
 # 
-#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025
+#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025
 #: also_indoor: traffic (ex-G,B,T)
-#: last_checked: 2025-02-24 vvv
+#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
+#: last_checked: 2025-02-28 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-02-28 (Halteverbotsschilder) vvv
+#: next_check: 2025-03-28 (Halteverbotsschilder) vvv
 # REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956
@@ -703,6 +705,7 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 # 
 # REMOVED (laut mapillary weitgehend beendet) --- #: next_check_id: WALLENSTEIN-2020 --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-11-29 --- #: check_frequency: 10d --- # REMOVED --- #: next_check: 2020-11-16 --- # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
 # REMOVED (beendet, keine Besserung der Qualität) --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: XXX wird sich die Qualität des Asphalts nach den Bauarbeiten verbessern, zumindest in Richtung Nordwesten? --- #: last_checked: 2021-02-18 --- Wallensteinstr.: Bauarbeiten zwischen Sangeallee und Ilsestr., Einbahnstraßenregelung, Ausweichen auf engen Gehweg	q3::inwork; 18134,9080 18092,9141 18037,9195
@@ -1007,7 +1010,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-02-26
+#: last_checked: 2025-02-28
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1150,29 +1153,6 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 # REMOVED (für Radfahrer frei) --- #: osm_watch: way id="26505949" version="26" --- Eisenacher Str.: Einbahnstraßenregelung, evtl. auch für Radfahrer gültig	q3::inwork; 23113,15110 22899,15073
 # REMOVED --- Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
 # REMOVED (laut osm hier nicht mehr) --- #: osm_watch: way id="997498311" version="7" --- #: also_indoor: traffic (G,W) --- Gothaer Str.: Fahrbahn gesperrt, mögliche Umwege	q2::inwork 22899,15073 22905,14925
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
-#: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024) (bis 05.02.2025) (bis 06.02.2025) (bis 14.02.2025) (bis 28.02.2025)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
-#: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
-#: by: https://www.berliner-woche.de/marzahn/c-bauen/richtfeste-fuer-290-wohnungen_a417760
-#: also_indoor: traffic (G,H,B,T,A)
-#: add_fragezeichen: Bis wann gibt es diese Einschränkung?
-#: note: außerdem Beilsteiner Str. Höhe Merler Weg ist die Durchfahrt Richtung Süden mit Betonbarrieren versperrt, als Radfahrer kann man über den Hochbord vorbeifahren
-#: last_checked: 2025-02-23 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
-# REMOVED --- #: valid: -20250214 vvv
-#: osm_watch: way id="1089784266" version="4"
-#: osm_watch: way id="1231226671" version="1"
-Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272
-# REMOVED (hier nicht) --- Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19198,13272 19180,13219
-#: osm_watch: way id="36786796" version="22"
-Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
-# REMOVED --- #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2332,7 +2312,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 #: osm_watch: note 4506575 1
 #: osm_watch: way id="529086013" version="3"
-#: last_checked: 2025-01-28 (daf)
+#: last_checked: 2025-02-27 (daf)
 #: check_frequency: 120d
 #: next_check: 2025-04-15
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329

@@ -3428,7 +3428,7 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neuer-autobahntunnel-fuer-berlin-so-koennte-die-a100-die-spree-unterqueren-li.2278569 (Inbetriebnahme gegen Ende der ersten Jahreshälfte 2025)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1514733.php
 #: by: https://www.autobahn.de/planen-bauen/projekt/a100-verlaengerung-anschlussstelle-neukoelln-bis-am-treptower-park-berlin (Fertigstellungstermin: Mitte 2025)
-#: source_id: viz2021:13.460605,52.471641,09.08.2024,07:00 (Bauarbeiten in der Sonnenallee, bis 27.09.2024) (bis 18.10.2024) (bis 29.11.2024) (bis 20.12.2024) (bis 28.02.2025)
+#: source_id: viz2021:13.460605,52.471641,09.08.2024,07:00 (Bauarbeiten in der Sonnenallee, bis 27.09.2024) (bis 18.10.2024) (bis 29.11.2024) (bis 20.12.2024) (bis 28.02.2025) (inaktiv)
 #: XXX -> strassen_bab-orig, wenn fertig
 #: XXX vermutlich wird es weitere begleitende Wege geben, die hoffentlich für Radfahrer befahrbar sein werden (bis zur Grenzallee? zwischen Kiefholzstr. und Görlitzer Damm auf der westlichen Seite der Autobahn?) (bis Am Treptower Park allerdings nicht, da ist kein Platz mehr übrig)
 #: next_check: 2025-06-30 (autobahn website)
@@ -3786,7 +3786,7 @@ Kurpromenade: Bauarbeiten, vermutlich Erneuerung der Fahrbahn	?::inwork -8917,59
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11326
 #: XXX Bebauungsplan VIII-320
 #: source_id: viz2021:13.132592,52.549293,12.06.2024,10:00 (Leitungsbaustelle, bis 08.07.2024) (inaktiv)
-#: osm_watch: way id="815559895" version="13"
+#: osm_watch: way id="815559895" version="14"
 #: last_checked: 2024-09-18
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-09-01
@@ -3837,6 +3837,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.o-sp.de/download/lbvbrandenburg/64757 (Lageplan 3)
 #: by: https://www.o-sp.de/download/lbvbrandenburg/64759 (Lageplan 5)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/arger-um-strassenausbau-in-honow-vier-fahrspuren-durch-das-landschaftsschutzgebiet-13227187.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_10_0665_0712_online.pdf (Auslegung von Planunterlagen)
 #: XXX danach werden hier Radwege existieren
 #: last_checked: 2024-04-27 (mapillary)
 # REMOVED --- #: next_check: 2023-03-01
@@ -5600,7 +5601,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516792.php (in Umsetzung bzw. kurz davor)
-#: last_checked: 2025-02-24 vvv
+#: last_checked: 2025-02-28 vvv
 #: check_frequency: 90d vvv
 Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 14988,10778 15004,10791 15019,10803
 #: check_frequency ^^^
@@ -6284,7 +6285,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-02-27
+#: last_checked: 2025-02-28
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6298,7 +6299,7 @@ Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,1091
 # REMOVED --- (Hauptstr./Rummelsburger Ufer - Gustav-Tempel-Str.): ein asphaltierter Zweirichtungsradweg entsteht	?::inwork 15298,10682 15245,10719
 #: osm_watch: way id="176050265" version="12"
 #: osm_watch: way id="1099807542" version="7"
-#: last_checked: 2025-02-26
+#: last_checked: 2025-02-28
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (infravelo)
 Hauptstr. [Nebenfahrbahn]: wird hier eine Fahrradstraße eingerichtet (wo genau?)? was passiert mit der Einbahnstraßenregelung?	? 15298,10682 15332,10657 15392,10615
@@ -6327,7 +6328,7 @@ An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Buch
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
-#: last_checked: 2025-02-26
+#: last_checked: 2025-02-28
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
@@ -7176,14 +7177,16 @@ B158 Bad Freienwalde: bei der Instandsetzung sind möglicherweise Radspuren entst
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31873
 #: by: https://www.o-sp.de/download/lbvbrandenburg/296992
 #: by: https://www.o-sp.de/download/lbvbrandenburg/296999
-#: by: https://berliner-abendblatt.de/berlin-news/radnetz-erhalt-von-radwegen-macht-grossteil-der-arbeiten-aus-id255097 ("im kommenden Jahr")
+#: by: https://berliner-abendblatt.de/berlin-news/radnetz-erhalt-von-radwegen-macht-grossteil-der-arbeiten-aus-id255097 ("im kommenden Jahr", also 2025)
 #: source_id: LS/721-F/21/210 (Radwegbau, Vermessungsarbeiten bis 10.12.2021) (inaktiv)
 #: source_id: LS/221-F/23/027 (vorbereitende Arbeiten, bis 06.04.2023) (inaktiv)
 #: source_id: LS/221-F/23/138 (vorbereitende Arbeiten, bis 06.10.2023) (inaktiv)
 #: source_id: LS/221-F/24/025 (Baumfällarbeiten, bis 29.02.2024) (inaktiv)
 #: osm_watch: way id="325491555" version="5"
+#: last_checked: 2025-02-28 (indoor research)
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-02-29
-#: next_check: 2025-03-01
+# REMOVED --- #: next_check: 2025-03-01
 B167 Neuhardenberg - Altfriedland: Radweg geplant	?::projected 65524,23028 65031,23353 64903,23566 64543,24123 64438,24865
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=80146
@@ -7459,7 +7462,7 @@ Spandauer Damm: hier ist eine permanente Radspur geplant	?::projected; 2411,1242
 #: XXX während der Bauzeit (Bauvorbereitungen ab 01/2023, Bauzeit 06/2023-12/2024, Restleistungen bis 06/2025) werden abwechselnd Hauffstr. und Am Alten Lokschuppen gesperrt vvv
 #: XXX außerdem sind kurzzeitige Sperrungen an den Brücken geplant: Kaskelstr., Archibaldweg, Nöldnerstr.
 #: note: laut https://strecken-info-beta.de/ Totalsperrung der Bahnstrecke im Zeitraum 10.12.2023 00:00 - 14.12.2024 23:59
-#: last_checked: 2025-02-07 vvv
+#: last_checked: 2025-02-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-30 vvv
 Hauffstr.: bauzeitliche Sperrung	? 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
@@ -8934,6 +8937,7 @@ Französische Str./Markgrafenstr.: neue Ampel soll 2025 entstehen	? 9624,12153 96
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529206.php (10. bis 28. Februar 2025)
 #: by: https://www.berliner-zeitung.de/news/bauarbeiten-in-treptow-koepenick-semliner-strasse-bis-ende-februar-gesperrt-li.2293919
 #: osm_watch: way id="1184915885" version="4"
+#: osm_watch: note 4645618 1
 #: next_check: 2025-02-28 (BA-Pressemitteilung)
 Semliner Str.: ist die Qualität nach den Bauarbeiten besser geworden?	?::projected 22272,7242 22303,7361
 # 
@@ -10028,7 +10032,7 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 # REMOVED (-> strassen-orig) --- An den Eiswerken	? 15004,10791 14994,10732 14984,10677
 # REMOVED (-> strassen-orig) --- Paul-und-Paula-Promenade	? 14886,10748 14909,10732 14984,10677
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
-#: last_checked: 2025-02-24 vvv
+#: last_checked: 2025-02-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-31 vvv
 #: XXX beim DPAG-Mitteilungsblatt 6/2023 als "Paul-und Paula-Promenade" bezeichnet (ein Bindestrich weniger); PLZ=10317
@@ -10430,7 +10434,7 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/kostenanteil-koennte-um-90-prozent-steigen_a435122
 #: by: https://www.tagesspiegel.de/berlin/der-berliner-osten-wurde-verkehrspolitisch-zuruckgeworfen-drei-spd-kandidaten-fordern-tempo-fur-tvo-schnellstrasse-13178224.html
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/tangentiale-verbindung-ost/
-#: osm_watch: way id="154505652" version="16"
+#: osm_watch: way id="154505652" version="17"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
 #: XXX widersprüchliche Angaben zum Wechsel von Ost- auf Westseite: Höhe Irmastr. (BW) oder Höhe Lauchhammerstr. (SEN)
 #: next_check: 2025-06-01
