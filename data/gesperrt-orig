@@ -3871,7 +3871,7 @@ Drängelgitter	BNP:3::trailer=10 13656,9079
 #: note: kann offen/geschlossen sein
 Schranken	BNP:3::trailer=10 15866,16823
 Drängelgitter	BNP:3::trailer=10 10092,15627
-Betonbarriere	BNP:3::trailer=no 7466,19492
+# REMOVED (existiert nicht mehr) --- Betonbarriere	BNP:3::trailer=no 7466,19492
 Drängelgitter	BNP:3::trailer=10 17457,94793
 Drängelgitter	BNP:3::trailer=10 15646,93690
 Schranke über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5::trailer=15 18471,2166
@@ -3962,9 +3962,13 @@ Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-02-26 (bahninfo-forum)
+#: last_checked: 2025-03-01 (bahninfo-forum)
 #: check_frequency: 90d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
+# 
+#: next_check_id: HEIDEKRAUTBAHN-2021
+#: last_checked: 2025-03-01 (bahninfo-forum)
+Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="1"
@@ -4389,7 +4393,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: XXX Bauarbeiten am Kanzlerpark
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
-#: last_checked: 2025-02-15 vvv
+#: last_checked: 2025-03-01 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="256450718" version="7"
@@ -4767,7 +4771,7 @@ Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 1637
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-02-16
+#: last_checked: 2025-03-01
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4819,7 +4823,7 @@ Hebammensteigbrücke	2::inwork 13193,21700 13168,21706 13135,21715 13121,21678 13
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2025-02-15 vvv
+#: last_checked: 2025-03-01 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5039,7 +5043,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX es wird neu asphaltiert, die östliche Straßenseite ist bis auf die letzte Deckschicht schon fertig
 #: osm_watch: note 3954448 4
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2025-02-22 (mapillary)
+#: last_checked: 2025-03-01
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-12-31
@@ -5178,7 +5182,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # 
 #: osm_watch: note 4480556 3
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-02-15
+#: last_checked: 2025-03-01
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021
@@ -5658,20 +5662,12 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: last_checked: 2025-02-10 (osm)
 #: check_frequency: 120d
 #: osm_watch: way id="1285592463" version="7" brb
-# REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12708,-1445
+# REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12802,-1485 -12708,-1445
 #: XXX Evtl. heißt dieser Abschnitt "Alter Markt" (siehe osm)?
 #: osm_watch: way id="90781221" version="17" brb
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 # 
-#: next_check_id: AMALTENMARKT-2018
-#: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz
-#: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf
-#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf
-#: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."; bei osm mittlerweile offen
-#: osm_watch: way id="760022943" version="19" brb
-#: last_checked: 2024-07-24 (osm)
-#: check_frequency: 60d
-Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
+# REMOVED --- #: next_check_id: AMALTENMARKT-2018 --- #: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz --- #: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf --- #: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."; bei osm mittlerweile offen --- #: osm_watch: way id="760022943" version="19" brb --- #: last_checked: 2024-07-24 (osm) --- #: check_frequency: 60d --- Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12780,-1558 -12719,-1542
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
 #: last_checked: 2025-02-16
@@ -5873,7 +5869,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/erweiterungsbau-bundesministerium-des-innern.562/#post-22257
 #: osm_watch: way id="257432926" version="11"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2025-02-15
+#: last_checked: 2025-03-01
 #: check_frequency: 180d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754 7556,12763
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

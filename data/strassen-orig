@@ -14935,6 +14935,7 @@ Interessentenweg	N 6453,19737 6501,19956 6565,20026 6627,20045 6659,20135
 # REMOVED (zumindest auf der Ostseite wurde das Schild etwas zum neuen Radweg hin gedreht) --- #: next_check_id: NEUERMAUERWEG-2018 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.804281.php (Freigabe) --- #: osm_watch: way id="42031978" version="17" --- #: add_fragezeichen: Führt die offizielle Mauerweg-Beschilderung über den neuen Weg? --- #: last_checked: 2019-07-15 (mapillary) --- #: check_frequency: 60d
 (Neuer Mauerweg)	NN 7512,19480 7572,19490 7679,19421 7704,19366 7763,19318 7824,19269 7873,19261 8016,19143 8176,19034 8311,18941 8347,18916 8476,18773
 (Neuer Mauerweg)	NN 7572,19490 7540,19550
+(provisorische Umleitungsstrecke des Mauerwegs)	NN 7138,19839 7104,19802
 (An der Nordbahn)	NN 7236,19689 7266,19686 7308,19653 7431,19545 7446,19522 7489,19481 7504,19459
 (An der Nordbahn)	NN 7184,19663 7121,19726 6659,20135
 (An der Nordbahn)	N 6659,20135 6639,20153 6572,20165 6499,20221 6447,20305
@@ -14942,7 +14943,7 @@ Interessentenweg	N 6453,19737 6501,19956 6565,20026 6627,20045 6659,20135
 (Provinzstr. - Klemkestr.)	NN 8647,18567 8589,18559 8558,18597 8562,18642 8476,18773
 (ehem. Mauerweg)	NN 8562,18642 8578,18629
 (An der Nordbahn)	NN 8369,18769 8162,18941 7996,19049 7792,19218 7512,19480
-(An der Nordbahn)	NN 7504,19459 7466,19492 7236,19689 6680,20165 6395,20413
+(An der Nordbahn)	NN 7504,19459 7466,19492 7236,19689 7104,19802 6680,20165 6395,20413
 (Markscheiderstr. - An der Nordbahn)	NN 7105,19677 7102,19702 7121,19726
 Buddestr. (Niederschönhausen)	NN 8648,18585 8737,18516
 Buddestr. (Niederschönhausen)	N 8737,18516 8789,18476
@@ -19561,7 +19562,7 @@ Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036923752617/923752617/00406668/68-Anlagen/02/MA_1265_V.pdf
 #: osm_watch: way id="26590565" version="22"
-#: last_checked: 2025-02-15
+#: last_checked: 2025-03-01
 #: check_frequency: 120d
 (Zufahrt Parkplätze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
 (Cuxhavener Str. - Altonaer Str.)	NN 5982,12291 6030,12363 6067,12381 6098,12446
@@ -20906,7 +20907,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025) (bis 31.08.2026)
 #: source_id: viz2021:13.33801,52.51361,09.01.2025,11:20 (bis 31.08.2026) (inaktiv)
-#: last_checked: 2025-02-15
+#: last_checked: 2025-03-01
 #: check_frequency: 180d
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

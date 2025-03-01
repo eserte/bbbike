@@ -157,7 +157,7 @@ Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-02-23 (daf) vvv
+#: last_checked: 2025-03-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -455,7 +455,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2025-02-19 vvv
+#: last_checked: 2025-02-28 (osm) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="40"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -471,7 +471,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,123
 #: osm_watch: note 3469300 7
 #: osm_watch: way id="111833186" version="15"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
-#: osm_watch: way id="153698413" version="16"
+#: osm_watch: way id="153698413" version="17"
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -574,7 +574,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn für die Straßensanierung 2026 (!))
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-02-22 (mapillary) vvv
+#: last_checked: 2025-03-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1188,6 +1188,7 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 #: last_checked: 2025-01-02 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-01-05 vvv
+#: osm_watch: note 3787279 2
 Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
 #: osm_watch: way id="51196438" version="25"
 #: note: der Zweirichtungsradweg-Abschnitt ist etwa 100m lang
@@ -3659,7 +3660,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-02-25
+#: last_checked: 2025-03-01
 #: check_frequency: 45d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243

@@ -1474,7 +1474,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-02-20
+#: last_checked: 2025-03-01
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-01-01
 	q4::temp:clock 12378,11806 12413,11901
@@ -1787,7 +1787,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2265,7 +2265,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Februar 8.00 - 17.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: März 8.00 - 18.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -5383,7 +5383,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-02-11
+#: last_checked: 2025-03-01
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -5473,7 +5473,8 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
 #: last_checked: 2025-01-19 (daf)
 #: check_frequency: 90d
-	2::inwork 7090,19943 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
+	2::inwork 7090,19943 7123,19855
+# REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
 ',
          'from' => undef,
          'id' => 3826,
@@ -5772,7 +5773,29 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# älteres Bauvorhaben (Botschaft von Indonesien)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
+#: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_09_0481_0548_online.pdf (Grundstücksnummerierung)
+# REMOVED --- #: osm_watch: way id="977478749" version="1"
+# aktuelles Bauvorhaben (Botschaft von Bangladesh)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-botschaft-bangladesh-tiergartenstr-neben-canisius-kolleg.1197/#post-24583
+#: osm_watch: way id="46886611" version="11"
+#: also_indoor: traffic (ex-G,ex-W)
+# REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
+#: add_fragezeichen: Existiert die Sperrung noch immer?
+#: last_checked: 2025-02-23 (architektur-urbanistik)
+#: check_frequency: 120d
+	q3::inwork 7103,11247 7171,11510
+',
+         'dont_check_date' => 1,
+         'from' => 1740817421,
+         'id' => 3926,
+         'text' => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -7264,24 +7287,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.tagesspiegel.de/berlin/wegen-dicker-beton-kruste-im-kanal-darunter-uhlandstrasse-zwischen-kudamm-und-lietzenburger-strasse-gesperrt-12886687.html (gesperrter Bereich ist etwa 15m lang, Bauzeit 4-6 Wochen)
-#: source_id: viz2021:13.32487,52.50002,16.12.2024,08:34 (kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.32487,52.50002,31.01.2025,11:35 (bis 10.02.2025) (inaktiv) (bis 31.03.2025)
-#: note: laut rbb und traffic sites nun bis 31.03.2025; mittlerweile bei VIZ reaktiviert, bei den Traffic-Sites bis auf ADAC nicht
-#: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W,A)
-#: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-# REMOVED --- #: check_frequency: 7d
-# REMOVED --- #: check_frequency: 25d
-# REMOVED --- #: next_check: 2025-02-10 (VIZ-Verkehrsmeldung; andere Quellen mit Verlängerung)
-	q3::inwork 5069,10662 5047,10381
-',
-         'from' => undef,
-         'id' => 4234,
-         'text' => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende März 2025',
-         'type' => 'handicap',
-         'until' => 1743458399
-       },
+       undef,
        {
          'data' => '#: source_id: 246002279 (bis 21.02.2025) (inaktiv)
 #: source_id: 256000273 (bis 04.04.2025)
@@ -7433,7 +7439,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 ',
          'from' => 1738018800,
          'id' => 4248,
-         'text' => 'Bleibtreustr.: Baustelle zwischen Niebuhrstr. und Kantstr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 25.05.2026',
+         'text' => 'Bleibtreustr.: Baustelle zwischen Niebuhrstr. und Kantstr., Sperrung der Fahrbahn, bis voraussichtlich 25.05.2026',
          'type' => 'handicap',
          'until' => 1779746400
        },

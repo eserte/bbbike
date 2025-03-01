@@ -1094,11 +1094,11 @@ Lennéstr.	1 -13876,-1263 -14149,-1264
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Straßenbahntrasse	3nocross::ignrte -12790,-1560 -12812,-1490 -12839,-1371
 Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12790,-1560 -12812,-1490 -12870,-1493
-Friedrich-Ebert-Str. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12839,-1371 -12812,-1490 -12708,-1445
-Erika-Wolf-Str. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12708,-1445 -12812,-1490 -12790,-1560
-Erika-Wolf-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12708,-1445 -12812,-1490 -12870,-1493
+Friedrich-Ebert-Str. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12839,-1371 -12812,-1490 -12802,-1485
+Erika-Wolf-Str. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12802,-1485 -12812,-1490 -12790,-1560
+Erika-Wolf-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12802,-1485 -12812,-1490 -12870,-1493
 Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12812,-1490 -12839,-1371
-Schwertfegerstr. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12812,-1490 -12708,-1445
+Schwertfegerstr. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12812,-1490 -12802,-1485
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
@@ -3489,7 +3489,6 @@ Drängelgitter	BNP:3:-108:trailer=10 21494,10816
 Drängelgitter	BNP:3:-233:trailer=10 13656,9079
 Schranken	BNP:3:-55:trailer=10 15866,16823
 Drängelgitter	BNP:3:-18:trailer=10 10092,15627
-Betonbarriere	BNP:3:-229:trailer=no 7466,19492
 Drängelgitter	BNP:3:-115:trailer=10 17457,94793
 Drängelgitter	BNP:3:-171:trailer=10 15646,93690
 Schranke über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5:-207:trailer=15 18471,2166
@@ -3524,6 +3523,7 @@ Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
 Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
+Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 Am Wiesenrain: Einbahnstraßenregelung	1s:inwork 23931,5992 24122,6007
@@ -3628,7 +3628,6 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
-Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12719,-1542
 Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 8630,12310 8673,12315 8714,12319
 Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 8714,12319 8673,12315 8630,12310
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217

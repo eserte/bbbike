@@ -11436,7 +11436,7 @@ EOF
        text  => 'Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Unter Umständen Umfahrung über Alten Markt notwendig. ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -12758,-1654 -12776,-1575 -12790,-1560
+	2::inwork -12758,-1654 -12780,-1558 -12802,-1485 -12839,-1371
 EOF
      },
      { from  => 1211228399, # 2008-05-19 22:19
@@ -16507,7 +16507,7 @@ EOF
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-02-20
+#: last_checked: 2025-03-01
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-01-01
 	q4::temp:clock 12378,11806 12413,11901
@@ -28170,7 +28170,7 @@ EOF
 	2::bomb -12493,-1896 -12567,-1817 -12653,-1723
 	2::bomb -12646,-1702 -12616,-1715 -12544,-1799 -12478,-1879
 	2::bomb -12790,-1560 -12776,-1605 -12794,-1652
-	2::bomb -12758,-1654 -12776,-1575 -12790,-1560
+	2::bomb -12758,-1654 -12780,-1558 -12802,-1485 -12839,-1371
 	2::bomb -12790,-1560 -12812,-1490
 	2::bomb -12431,-2096 -12478,-1879
 	2::bomb -12493,-1896 -12431,-2096
@@ -28197,7 +28197,7 @@ EOF
 	2::bomb -12653,-1723 -12646,-1702 -12643,-1694 -12627,-1618 -12624,-1598
 	2::bomb -12624,-1598 -12583,-1552
 	2::bomb -12624,-1598 -12619,-1549 -12614,-1487
-	2::bomb -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542 -12790,-1560
+	2::bomb -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542 -12780,-1558 -12790,-1560
 	2::bomb -12749,-1668 -12719,-1542
 	2::bomb -12583,-1552 -12540,-1521 -12521,-1502 -12486,-1490
 	2::bomb -12708,-1445 -12677,-1536
@@ -40010,7 +40010,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-02-11
+#: last_checked: 2025-03-01
 #: check_frequency: 180d
 #: next_check: 2025-09-05
 	q3::inwork; 7872,13022 7873,12927
@@ -40364,7 +40364,8 @@ EOF
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
 #: last_checked: 2025-01-19 (daf)
 #: check_frequency: 90d
-	2::inwork 7090,19943 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
+	2::inwork 7090,19943 7123,19855
+# REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
 EOF
      },
      { from  => 1687060800, # 2023-06-18 06:00
@@ -41720,19 +41721,26 @@ EOF
 	q3::inwork; 10722,11816 10815,11662
 EOF
      },
-     { from  => 1695746966, # 2023-09-26 18:49
-       until => 1722877242, # undef, # 1711922399, # 2024-03-31 23:59
+     { from  => 1740817421, # 1695746966, # 2023-09-26 18:49
+       until => undef, # 1722877242, # undef, # 1711922399, # 2024-03-31 23:59
        dont_check_date => 1,
-       text  => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Juli 2024, evtl. länger',
+#      text  => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Juli 2024, evtl. länger',
+       text  => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+# älteres Bauvorhaben (Botschaft von Indonesien)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
 #: by: https://www.deutsches-architekturforum.de/thread/5112-botschaften-und-residenzen-in-berlin/?postID=750450#post750450
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_09_0481_0548_online.pdf (Grundstücksnummerierung)
-#: also_indoor: traffic (re-G,ex-W)
-#: osm_watch: way id="977478749" version="1"
-#: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
-# REMOVED --- #: add_fragezeichen: Existiert die Sperrung noch immer? --- #: last_checked: 2024-07-05 (architektur-urbanistik) --- #: next_check: 2024-07-31
+# REMOVED --- #: osm_watch: way id="977478749" version="1"
+# aktuelles Bauvorhaben (Botschaft von Bangladesh)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-botschaft-bangladesh-tiergartenstr-neben-canisius-kolleg.1197/#post-24583
+#: osm_watch: way id="46886611" version="11"
+#: also_indoor: traffic (ex-G,ex-W)
+# REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
+#: add_fragezeichen: Existiert die Sperrung noch immer?
+#: last_checked: 2025-02-23 (architektur-urbanistik)
+#: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 EOF
      },
@@ -46221,7 +46229,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2025-03-31 23:59:59"), # undef, # XXX
+       until => 1740850557, # $isodate2epoch->("2025-03-31 23:59:59"), # undef, # XXX
        text  => 'Uhlandstraße: Abschnitt der Fahrbahn zwischen Lietzenburger Straße und Kurfürstendamm gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende März 2025',
        type  => 'handicap',
        data  => <<EOF,
@@ -46230,7 +46238,7 @@ EOF
 #: source_id: viz2021:13.32487,52.50002,31.01.2025,11:35 (bis 10.02.2025) (inaktiv) (bis 31.03.2025)
 #: note: laut rbb und traffic sites nun bis 31.03.2025; mittlerweile bei VIZ reaktiviert, bei den Traffic-Sites bis auf ADAC nicht
 #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W,A)
-#: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
+# REMOVED (vermutlich ja) --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 25d
 # REMOVED --- #: next_check: 2025-02-10 (VIZ-Verkehrsmeldung; andere Quellen mit Verlängerung)
@@ -46389,7 +46397,7 @@ EOF
      },
      { from  => 1738018800, # 2025-01-28 00:00
        until => 1779746400, # 2026-05-26 00:00
-       text  => 'Bleibtreustr.: Baustelle zwischen Niebuhrstr. und Kantstr., evtl. sind auch Radfahrer betroffen, bis voraussichtlich 25.05.2026',
+       text  => 'Bleibtreustr.: Baustelle zwischen Niebuhrstr. und Kantstr., Sperrung der Fahrbahn, bis voraussichtlich 25.05.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G,B,T,A)

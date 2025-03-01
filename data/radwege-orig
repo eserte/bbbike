@@ -2990,7 +2990,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1; mittlerweile (Januar 2025) ist es wieder da
-#: last_checked: 2025-02-16
+#: last_checked: 2025-03-01
 #: check_frequency: 90d
 #: next_check: 2026-01-01
 	RW2; 12543,11521 12645,11673
@@ -6613,7 +6613,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2025-02-22 (daf) vvv
+#: last_checked: 2025-02-23 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
@@ -6858,7 +6858,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://www.bz-berlin.de/berlin/mitte/berlins-laengstes-halteverbot (bis 2027)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
-#: last_checked: 2025-02-16 vvv
+#: last_checked: 2025-03-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -7389,8 +7389,9 @@ zusammen mit Bushaltestelle	RW3; 8715,7384 8713,7423
 Radspur hinter den parkenden Autos	RW4; 8713,7423 8706,7585 8704,7603 8690,7704
 #: next_check_id: BOELCKE-2023
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_267419 (kein Endedatum)
+#: source_id: bvg2024:140#HIM_FREETEXT_268851 (kein Endedatum)
 #: osm_watch: way id="1144979955" version="6"
-#: XXX ist das nur provisorisch?
+#: XXX Ist das Haltestellenkap Rumeyplan nur provisorisch ausgeführt?
 #: last_checked: 2025-02-21 (BVG-Störungsmeldung)
 #: check_frequency: 120d
 asphaltierter Haltestellenkap	RW1; 8690,7704 8686,7726
@@ -8689,7 +8690,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/nach-androhung-von-zwangsauszug-losung-fur-radweg-auf-der-berliner-kantstrasse-verzogert-sich-12847046.html (Verstetigung westlich der Wilmersdorfer Str., weiter keine Lösung im östlichen Abschnitt)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/platz-fuer-alle-auf-der-kantstrasse_a432687
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
-#: last_checked: 2025-02-15 vvv
+#: last_checked: 2025-03-01 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
