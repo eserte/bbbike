@@ -497,10 +497,14 @@
     (setq bbbike-addition-for-last-checked (concat " (" (completing-read "Choose last-modified appendix: " completions) ")")))
   (bbbike-set-date-for-last-checked))
 
-(defun bbbike-update-last-checked ()
+(defun bbbike-update-last-checked (&optional last-checked-date last-checked-addition)
   (interactive)
-  (if (not bbbike-date-for-last-checked)
-      (error "Please run bbbike-set-date-for-last-checked first"))
+  (if (null last-checked-date)
+      (if (not bbbike-date-for-last-checked)
+	  (error "Please run bbbike-set-date-for-last-checked first")
+	(setq last-checked-date bbbike-date-for-last-checked)))
+  (if (not (null last-checked-addition))
+      (set last-checked-addition bbbike-addition-for-last-checked))
   (let (begin-line-pos end-line-pos is-block)
     (save-excursion
       (beginning-of-line)
@@ -516,8 +520,18 @@
       )
     (save-excursion
       (delete-region begin-line-pos end-line-pos)
-      (insert (concat "#: last_checked: " bbbike-date-for-last-checked bbbike-addition-for-last-checked (if is-block " vvv")))))
+      (insert (concat "#: last_checked: " last-checked-date last-checked-addition (if is-block " vvv")))))
   )
+
+(defun bbbike-update-last-checked-from-selection ()
+  (interactive)
+  (let ((regex "^\\+ +<tag k=\"check_date\" v=\"\\([0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\}\\)\"/>")
+        (selection (current-kill 0 t))) ;; Use clipboard instead of X11 selection
+    (if (and selection (string-match regex selection))
+        (let ((date (match-string 1 selection)))
+          (bbbike-update-last-checked date " (osm)")
+          (message "Updated last-checked with date: %s" date))
+      (error "No matching check_date tag found in clipboard"))))
 
 (defun bbbike-view-cached-url (&optional url)
   "View the URL under cursor, assuming it's cached in bbbike-aux"
