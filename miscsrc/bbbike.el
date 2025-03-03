@@ -503,8 +503,8 @@
       (if (not bbbike-date-for-last-checked)
 	  (error "Please run bbbike-set-date-for-last-checked first")
 	(setq last-checked-date bbbike-date-for-last-checked)))
-  (if (not (null last-checked-addition))
-      (set last-checked-addition bbbike-addition-for-last-checked))
+  (if (null last-checked-addition)
+      (setq last-checked-addition bbbike-addition-for-last-checked))
   (let (begin-line-pos end-line-pos is-block)
     (save-excursion
       (beginning-of-line)
