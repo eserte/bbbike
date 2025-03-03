@@ -13,6 +13,11 @@
 # REMOVED --- #: valid: -20250214
 # REMOVED --- Wartenberger Weg: Gegenverkehrsreglung	X::inwork::alternating 15882,19165
 # 
+#: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025)
+#: next_check: 2025-07-31
+#: valid: -20250731
+Elsenstr.: Gegenverkehrsreglung	X::inwork::alternating 24203,10848
+# 
 #: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1894643566640861298
 #: by: https://pbs.twimg.com/media/GknmW6oW8AADYN1?format=jpg&name=medium
@@ -220,14 +225,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-02-28
+#: last_checked: 2025-03-03
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-02-24
+#: last_checked: 2025-03-03
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -3474,6 +3479,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
 # REMOVED --- #: osm_watch: node id="1769589042" version="5"
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12922 (Anfrage)
 #: osm_watch: node id="9962315446" version="1"
 #: osm_watch: node id="9962290101" version="3"
 	X::inwork 9286,12886

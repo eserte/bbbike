@@ -53,7 +53,6 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22899,15073 22726,15082 22599,15105 22577,15109
 Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
-Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
 Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
@@ -1976,7 +1975,7 @@ Innsbrucker Platz - Eisackstr.: einige Fußgänger	q2 6388,7999 6418,7958
 Innsbrucker Platz - Eisackstr.: Bordstein, einige Fußgänger	q3 6418,7958 6431,7883
 (Buckower Damm - Neumarkplan): enger Radweg	q2 12673,3619 12624,3659 12603,3712 12578,3728
 (Johannisthaler Chaussee - Wildmeisterdamm): enge Straße	q1 13045,2107 13064,2090 13157,2116
-(Schragenfeldstr. - Allee der Kosmonmauten): Fußgänger	q2 21095,15003 21025,15005
+(Schragenfeldstr. - Allee der Kosmonauten): Fußgänger	q2 21095,15003 21025,15005
 Schragenfeldstr.: Tor, Umweg über Bordstein	q2 21095,15003 21211,15009
 Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047,8439 22974,8491 22856,8577
 (Mechthildstr. - Waldpromenade): enger Pfad	q3 23392,8208 23376,8186
@@ -2604,7 +2603,7 @@ Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,1
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger	q1 17702,8855 17699,8843 17674,8738
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17668,8696
-(Uferweg): einige Fußgänger	q2 11821,11733 11957,11603
+(Uferweg): einige Fußgänger	q2 11821,11733 11863,11670 11962,11596
 Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 25573,1609 25438,1638 25399,1629
 (Lea-Grundig-Str./Jan-Petersen-Str. - Radweg an der Straßenbahn): einige Fußgänger	q1 21031,16217 21000,16238
 (Zur Alten Börse - Merler Weg): Betriebsgeländestraßen	q1 18749,13158 18766,13257
@@ -3569,6 +3568,7 @@ Hausvaterweg [Wohngebiet]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::
 Eilenburger Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 25743,15118 25752,15219 25578,15238
 Berthold-Schwarz-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -784,14940 -834,15053
 Hauptstr. (Rummelsburg) [Nebenfahrbahn]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 15332,10657 15298,10682
+Puschkinstr. [Nebenstraße]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 14152,9746 14092,9773
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829

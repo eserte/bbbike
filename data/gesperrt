@@ -1038,6 +1038,7 @@ Lehrter Str. -> Minna-Cauer-Str.: Straßentunnel	3::igndisp 7873,13448 7895,13415
 Zur Alten Börse - Merler Weg: gesperrtes Tor/Bauzaun	2 18736,13080 18749,13158
 Straße am Heizhaus: Betriebsgelände	2 20150,8962 20220,8976
 Eisenhutweg [Wohngebiet]	1 17569,2987 17471,2872 17688,2744 17741,2824
+Puschkinstr. [Nebenstraße]	1s 14152,9746 14092,9773
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1094,11 +1095,11 @@ Lennéstr.	1 -13876,-1263 -14149,-1264
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Straßenbahntrasse	3nocross::ignrte -12790,-1560 -12812,-1490 -12839,-1371
 Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12790,-1560 -12812,-1490 -12870,-1493
-Friedrich-Ebert-Str. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12839,-1371 -12812,-1490 -12802,-1485
-Erika-Wolf-Str. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12802,-1485 -12812,-1490 -12790,-1560
-Erika-Wolf-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12802,-1485 -12812,-1490 -12870,-1493
+Friedrich-Ebert-Str. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12839,-1371 -12812,-1490 -12801,-1485
+Erika-Wolf-Str. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12801,-1485 -12812,-1490 -12790,-1560
+Erika-Wolf-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12801,-1485 -12812,-1490 -12870,-1493
 Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12812,-1490 -12839,-1371
-Schwertfegerstr. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12812,-1490 -12802,-1485
+Schwertfegerstr. -> Erika-Wolf-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12812,-1490 -12801,-1485
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
 (Kiezstr. - Wall am Kiez)	1 -13397,-1729 -13374,-1709
@@ -3486,7 +3487,6 @@ weites Drängelgitter	BNP:2:-114:trailer=7 -48996,85026
 Drängelgitter	BNP:3:-236:trailer=10 -53609,82816
 Drängelgitter	BNP:3:-15:trailer=10 3789,18863
 Drängelgitter	BNP:3:-108:trailer=10 21494,10816
-Drängelgitter	BNP:3:-233:trailer=10 13656,9079
 Schranken	BNP:3:-55:trailer=10 15866,16823
 Drängelgitter	BNP:3:-18:trailer=10 10092,15627
 Drängelgitter	BNP:3:-115:trailer=10 17457,94793

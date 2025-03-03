@@ -1072,8 +1072,7 @@ Paul-Junius-Str.	1 15096,12974 15090,13116
 # REMOVED (hmmm, ist hier eine Einbahnstraße oder nicht mehr?) --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3729 --- Schulzendorfer Str.	1 -1538,22800 -2024,22899
 Betonblöcke	3 -12870,-1493 -12812,-1490 *
 Betonblöcke	3 * -12812,-1490 -12870,-1493
-Poller	3 -12708,-1445 -12802,-1485 -12812,-1490 *
-Poller	3 * -12812,-1490 -12802,-1485 -12708,-1445
+# REMOVED (Weiterfahrt durch NN unterbunden, nicht mehr notwendig) --- Poller	3 -12708,-1445 -12801,-1485 -12812,-1490 * --- Poller	3 * -12812,-1490 -12801,-1485 -12708,-1445
 #: note: Radfahrer und Fußgänger können etwas versetzt überqueren
 Berliner Str.: Straßenbahnhaltestelle	3nocross -11307,133 -11390,72 -11494,-4
 Hubertusstr. - Frankfurter Allee	3 16541,12071 16512,11894 16737,11866

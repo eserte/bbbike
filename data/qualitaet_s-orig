@@ -202,7 +202,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2025-02-25
+#: last_checked: 2025-03-02
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -387,7 +387,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2025-02-10
+#: last_checked: 2025-03-02
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -481,7 +481,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-02-22
+#: last_checked: 2025-03-02
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -4123,7 +4123,13 @@ Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 233
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_42_6245_6400_online.pdf ("wird zeitnah ein Geh- und Radweg entstehen") --- #: by: https://api.fixmyberlin.de/api/projects/274 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/wasserbetriebe-stoppen-bau-eines-radweges-im-muensterberger-weg_a280501 (Bezirksamt möchte eine Asphaltierung noch 2020) --- #: by: https://adfc-berlin.de/images/STG_Wuhletal/P0820.pdf (Erwähnung (Stand August 2020)) --- #: by: http://www.infravelo.de/projekt/muensterberger-weg/ (4. Quartal 2020 - 2. Quartal 2022) (alter Eintrag) --- #: by: http://www.infravelo.de/projekt/muensterberger-weg-2/ (bis 2. Quartal 2021, Status mittlerweile "Abgeschlossen") --- #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/in-marzahn-hellersdorf-werden-2021-acht-groessere-radwegprojekte-umgesetzt_a297401 (Realisierung 2021) --- #: osm_watch: way id="24205376" version="9"
 Münsterberger Weg: Asphalt	Q0 24172,11320 24029,11363
 Münsterberger Weg: Beton und Asphalt	Q0 23883,11416 24029,11363
-Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776 22701,11843
+Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776
+#: historical_note: früher (bis 2024/2025?) Asphalt, Q0
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12176 (Anfrage)
+#: XXX wird hier wieder der alte Zustand hergestellt?
+#: last_checked: 2025-02-27 (BVV)
+#: check_frequency: 30d (BVV-Drucksachen)
+Münsterberger Weg: unbefestigt	Q2 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940
 Münsterberger Weg: Asphalt	Q0 22408,11940 22266,11995
 Münsterberger Weg: Beton	Q0 22266,11995 22216,12019
@@ -12589,7 +12595,7 @@ Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5370,2542
 Steinmetzstr.: Mosaikpflaster	Q1 7698,10147 7657,9942 7625,9771
 (Johannisthaler Chaussee - Wildmeisterdamm): Asphalt	Q0- 13045,2107 13064,2090 13157,2116
 Am Treptower Park, Nebenstraße: Kleinsteinpflaster	Q2+; 14614,9052 14558,9111
-(Schragenfeldstr. - Allee der Kosmonmauten): Verbundsteinpflaster	Q1+ 21095,15003 21025,15005
+(Schragenfeldstr. - Allee der Kosmonauten): Verbundsteinpflaster	Q1+ 21095,15003 21025,15005
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0- 24649,10710 24702,10710 24731,10710
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0- 24702,10710 24719,10647 24739,10645
 #: note: zusätzlich existiert eine (für Fußgänger gedachte?) Rampe mit neuem Verbundsteinpflaster
@@ -13325,7 +13331,7 @@ Kastanienallee: wassergebundene Decke	Q1- 23817,14461 23877,14315 23897,14274 23
 Kastanienallee: Verbundsteinpflaster	Q1 23962,14140 24055,13984
 Gertrud-Hanna-Promenade: Mosaikpflaster	Q1- 8548,7384 8603,7452
 Falkenberger Chaussee [Wohngebiet]: Beton	Q1+ 17358,17400 17211,17600
-Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 14152,9746
+Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 14092,9773 14152,9746
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
 Chlodwigstr.: Asphalt	Q0 8499,5016 8433,5108 8356,5195
@@ -13906,7 +13912,7 @@ Töpchiner Weg [40-48]: Verbundsteinpflaster	Q1+ 11950,1275 11918,1211
 # 
 (Neucölln Carree, Parkplatzzufahrt): Asphalt	Q0 14430,7348 14423,7333 14378,7236 14507,7146
 # 
-(Uferweg): asphaltähnliche Decke	Q0- 11821,11733 11957,11603
+(Uferweg): asphaltähnliche Decke	Q0- 11821,11733 11863,11670 11962,11596
 # 
 Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4495
 # 

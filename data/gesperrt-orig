@@ -218,7 +218,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-02-22
+#: last_checked: 2025-03-02
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -1721,6 +1721,9 @@ Straße am Heizhaus: Betriebsgelände	2 20150,8962 20220,8976
 # 
 #: note: vermutlich als "unechte Einbahnstraße" gedacht, nur ein Einfahrt-verboten-Schild am nordwestlichen Ende
 Eisenhutweg [Wohngebiet]	1 17569,2987 17471,2872 17688,2744 17741,2824
+# 
+#: note: "Einfahrt verboten" wird nicht mehr wiederholt, unechte Einbahnstraße
+Puschkinstr. [Nebenstraße]	1s:q4 14152,9746 14092,9773
 # 
 #: section ^^^
 ######################################################################
@@ -3867,7 +3870,7 @@ weites Drängelgitter	BNP:2::trailer=7 -48996,85026
 Drängelgitter	BNP:3::trailer=10 -53609,82816
 Drängelgitter	BNP:3::trailer=10 3789,18863
 Drängelgitter	BNP:3::trailer=10 21494,10816
-Drängelgitter	BNP:3::trailer=10 13656,9079
+# REMOVED (halber Flügel fehlt mittlerweile, siehe Mapillary) --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6336 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/fuao82sCPCivizQq7ZZ1wJ4ZPjTclZaZGFHenQXg/ihXMLfrC/65-Anlagen/06/B0818SB.pdf (nur ein Teil der Umlaufsperre ist verblieben) --- Drängelgitter	BNP:3::trailer=10 13656,9079
 #: note: kann offen/geschlossen sein
 Schranken	BNP:3::trailer=10 15866,16823
 Drängelgitter	BNP:3::trailer=10 10092,15627
@@ -4083,13 +4086,13 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1415395.php (Bauarbeiten voraussichtlich bis zum zweiten Quartal 2026)
 #: by: https://www.berliner-woche.de/karlshorst/c-bildung/start-fuer-den-bau-einer-integrierten-sekundarschule_a411179
-#: osm_watch: way id="25796737" version="18"
+#: osm_watch: way id="25796737" version="19"
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Nebau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date 2026-08-24 (ohne Quelle)
-#: last_checked: 2024-12-13
+#: last_checked: 2025-03-02 (osm)
 #: check_frequency: 180d
-#: next_check: 2026-06-30
+#: next_check: 2026-06-30 (BA-Pressemitteilung)
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
@@ -4124,7 +4127,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-02-25 vvv
+#: last_checked: 2025-03-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="4"
@@ -4218,7 +4221,7 @@ An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 1092
 #: XXX laut Amtsblatt Verlängerung der Lisa-Fittko-Straße, wird das auch auf der anderen Seite so ausgeschildert?
 #: XXX culdesac-Eintrag an der Döberitzer Str. muss vermutlich geändert werden
 #: osm_watch: way id="237704728" version="4"
-#: last_checked: 2024-12-04 (webcam)
+#: last_checked: 2025-03-02 (webcam)
 #: check_frequency: 120d
 Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nicht	2::inwork 7787,13838 7872,13685
 # 
@@ -4277,9 +4280,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: ONTARIOSEE-2023
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ontarioseestra%C3%9Fe-22.1332/#post-22779
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
-#: osm_watch: way id="25796640" version="28"
+#: osm_watch: way id="25796640" version="29"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-02-08
+#: last_checked: 2025-03-02 (osm)
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4969,7 +4972,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2025-02-26
+#: last_checked: 2025-03-02
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4982,7 +4985,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://entwicklungsstadt.de/bauvorhaben-so-ist-der-stand-bei-berlins-stillstand-projekten/
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2025-02-03 vvv
+#: last_checked: 2025-03-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5621,7 +5624,6 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/loewenbruecke-wird-bis-ende-2024-wieder-aufgebaut_a394430
 #: by: https://www.deutsches-architekturforum.de/thread/6927-rund-um-die-siegess%C3%A4ule-gro%C3%9Fer-tiergarten/?postID=763239#post763239 (Fertigstellung Q1 2025)
 #: by: https://www.morgenpost.de/bezirke/mitte/article407169185/neubau-der-loewenbruecke-im-tiergarten-endlich-gehtE28098s-voran.html (bis Anfang 2025)
-#: by[nocache]: https://archive.is/qXWGQ
 #: XXX: existiert nicht mehr, die Brücke wird aber wieder aufgebaut; einer der vier Löwen wurde entfernt
 #: also_indoor: search Löwenbrücke Tiergarten
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"

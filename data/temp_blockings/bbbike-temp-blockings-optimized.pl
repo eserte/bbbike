@@ -1474,7 +1474,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-03-01
+#: last_checked: 2025-03-02
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-01-01
 	q4::temp:clock 12378,11806 12413,11901
@@ -3609,7 +3609,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-02-24 (traffic) vvv
+#: last_checked: 2025-03-02 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -4779,7 +4779,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neubau-bekam-jetzt-die-richtkrone-aufgesetzt_a380467
 #: by: https://www.deutsches-architekturforum.de/thread/4756-erweiterung-bauhaus-archiv/?postID=742251#post742251
 #: by: https://www.bauhaus.de/de/bauhaus-archiv/7994_the_bauhaus_view/ (Eröffnung voraussichtlich 2025)
-#: by: https://stories.bauhaus.de/neubau/ (Wiedereröffnung 2025)
+#: by: https://stories.bauhaus.de/neubau/ (Wiedereröffnung 2025) (mittlerweile Wiedereröffnung 2027)
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
@@ -4787,7 +4787,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: osm_watch: way id="481651814" version="6"
 #: last_checked: 2025-01-13 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2025-03-15
+#: next_check: 2027-12-31 (stories.bauhaus.de)
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
          'from' => undef,
@@ -5316,10 +5316,10 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 3
-#: also_indoor: traffic (B,T,ex-H,ex-G,ex-W,A)
+#: also_indoor: traffic (B,T,ex-H,re-G,ex-W,A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
-#: last_checked: 2025-02-01 (traffic)
+#: last_checked: 2025-03-02 (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -6152,7 +6152,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-01-30 (mapillary)
+#: last_checked: 2025-03-03 (daf)
 #: check_frequency: 120d
 #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -6382,7 +6382,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-02-27
+#: last_checked: 2025-03-03
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -6933,11 +6933,13 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250131
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_wollankstrasse_wegefuehrung_20250131n.pdf
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1895379778414514298
+#: by: https://viz.berlin.de/aktuelle-meldungen/neubau-der-bruecke-uber-die-wollankstrasse/ (weitere Vollsperrung von Mitte Juni bis Dezember 2025)
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
-#: source_id: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
+#: source_id[inactive]: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
 #: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
+#: source_id: viz2021:13.39343,52.564563,03.03.2025,06:00 (bis 28.03.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="35"
 #: osm_watch[closed]: note 4536637 10
@@ -6976,7 +6978,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
 #: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024) (bis 14.03.2025)
 #: also_indoor: traffic (H,G,B,T,re-W,A)
-#: last_checked: 2024-10-23
+#: last_checked: 2025-03-02
 #: next_check: 2025-03-14
 	q3::inwork 10944,10606 11100,10530
 ',
@@ -7023,7 +7025,19 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: 246700596 (bis 14.03.2025)
+#: source_id: LS/221-F/25/033 (bis 27.10.2025)
+#: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
+# REMOVED (bei Mapillary ist an dieser Stelle nichts zu sehen) --- #: XXX laut VIZ-Verkehrsmeldung "Brücke über die Löcknitz", aber das ist doch der Flakenfließ? Oder ist die L38 gemeint?
+	2::inwork 34152,2749 34175,2637 34250,2546
+',
+         'from' => 1742079600,
+         'id' => 4188,
+         'text' => 'Erkner, Friedrichstr. und Brücke über das Flakenfließ: Bauarbeiten, mögliche Sperrung, vom 17.03.2025 bis 27.10.2025',
+         'type' => 'gesperrt',
+         'until' => 1761584400
+       },
        undef,
        undef,
        undef,
@@ -7533,16 +7547,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.312019,52.487816,10.02.2025,07:00 (bis 03.03.2025)
-	q4::inwork 4181,8933 4198,9015
-',
-         'from' => 1739080800,
-         'id' => 4256,
-         'text' => 'Brienner Str.: Bauarbeiten zwischen Kaubstr. und Berliner Str., evtl. sind auch Radfahrer betroffen, vom 10.02.2025 07:00 bis 03.03.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1741017600
-       },
+       undef,
        {
          'data' => '#: source_id: 256401910 (bis 28.11.2025)
 	2::inwork 41356,16225 41672,16084
@@ -7584,16 +7589,17 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'until' => 1764543600
        },
        {
-         'data' => '#: source_id: viz2021:13.42577,52.59492,16.02.2025,16:41 (bis 03.03.2025)
+         'data' => '#: source_id: viz2021:13.42577,52.59492,16.02.2025,16:41 (bis 03.03.2025) (inaktiv)
+#: source_id: viz2021:13.42577,52.59492,03.03.2025,10:46 (bis 17.04.2025)
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein, gesehen 2025-02-23 (So)
 	q4::inwork 11518,20894 11599,20973 11686,21058
 # REMOVED (hier nicht) ---	q4::inwork 11686,21058 11703,21097
 ',
          'from' => 1739634060,
          'id' => 4261,
-         'text' => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Marienstr. und Zimbelstr., vom 16.02.2025 16:41 bis 03.03.2025 23:59',
+         'text' => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Marienstr. und Zimbelstr., vom 16.02.2025 bis 17.04.2025',
          'type' => 'handicap',
-         'until' => 1741042740
+         'until' => 1744927199
        },
        {
          'data' => '#: by: rbb (bis 17.03.2025)
@@ -7737,6 +7743,16 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
          'text' => 'Marzahner Chaussee und Merler Weg: temporäre Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.418488,52.553809,03.03.2025,07:00 (hier nur Kfz-Verkehr, bis 02.08.2025)
+	q4::inwork; 11284,16527 11289,16423
+',
+         'from' => 1740895200,
+         'id' => 4274,
+         'text' => 'Trelleborger Str.: zwischen Schonensche Str. und Wisbyer Str. Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 03.03.2025 07:00 bis 02.08.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1754146800
        }
      
 );
