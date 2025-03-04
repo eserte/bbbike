@@ -4456,7 +4456,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-27 (osm)
+#: last_checked: 2025-03-04
 #: check_frequency: 30d
 #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5045,7 +5045,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-02-22 vvv
+#: last_checked: 2025-03-04 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -6339,7 +6339,24 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
+#: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
+#: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024) (inaktiv)
+#: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
+#: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
+#: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
+#: also_indoor: traffic (none)
+#: XXX laut VIZ bis Sonntagstr. gesperrt, prüfen
+#: next_check: 2025-03-05
+	q4::inwork 14575,11407 14639,11512
+',
+         'from' => 1741042800,
+         'id' => 4063,
+         'text' => 'Holteistr.: Gleisbauarbeiten zwischen Wühlischstr. und Boxhagener Str., Fahrbahn gesperrt, bis 27.03.2025',
+         'type' => 'gesperrt',
+         'until' => 1743091200
+       },
        {
          'data' => '#: source_id: 236320002 (bis 30.06.2024) (bis 02.08.2024) (bis 30.08.2024) (inaktiv) (bis 20.12.2024) (inaktiv) (bis 17.04.2025)
 	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
@@ -6469,7 +6486,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-02-25 vvv
+#: last_checked: 2025-03-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6902,17 +6919,17 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: osm_watch: way id="1002238498" version="10"
 #: osm_watch: note 4454125 6
 #: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen
-#: last_checked: 2025-02-22
-#: check_frequency: 30d
-#: next_check: 2025-03-04 (Halteverbotsschilder)
+#: last_checked: 2025-03-04
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-03-04 (Halteverbotsschilder)
 # REMOVED (hier mittlerweile fertig und offen) ---	q4::inwork 12972,7602 13100,7626
 	q4::inwork 13100,7626 13130,7633
 ',
          'from' => 1726956000,
          'id' => 4167,
-         'text' => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 04.03.2025',
+         'text' => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
-         'until' => 1741107600
+         'until' => undef
        },
        undef,
        undef,
@@ -6978,7 +6995,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
 #: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024) (bis 14.03.2025)
 #: also_indoor: traffic (H,G,B,T,re-W,A)
-#: last_checked: 2025-03-02
+#: last_checked: 2025-03-04
 #: next_check: 2025-03-14
 	q3::inwork 10944,10606 11100,10530
 ',
@@ -7008,7 +7025,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-02-25 vvv
+#: last_checked: 2025-03-04 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7628,20 +7645,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'until' => 1751641200
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.55297,52.439664,20.02.2025,06:00 (auch Radverkehr betroffen, bis 07.03.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1892439286399791172
-#: by: https://pbs.twimg.com/media/GkKQea0XoAEemcW?format=jpg&name=large (Sperrung der Einmündung in Höhe Zinsgutstr.)
-	q2::inwork 20772,3999 20679,3944
-Vorsperrung ab Wassermannstr.	q4::inwork 20679,3944 20637,3919
-Zinsgutstr.: Sperrung der Einmündung	q3::inwork 20862,3824 20679,3944
-',
-         'from' => 1739941200,
-         'id' => 4266,
-         'text' => 'Dörpfeldstr.: Bauarbeiten in Höhe Zinsgutstr., Sperrung der Fahrbahn, vom 20.02.2025 06:00 bis 07.03.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1741363200
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.34184,52.43229,21.02.2025,09:04 (bis 28.02.2025) (inaktiv)
@@ -7721,12 +7725,13 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
 #: also_indoor: traffic (G,ex-H,ex-B,ex-T,A)
 #: note: außerdem Beilsteiner Str. Höhe Merler Weg ist die Durchfahrt Richtung Süden mit Betonbarrieren versperrt, als Radfahrer kann man über den Hochbord vorbeifahren
 #: add_fragezeichen: Wurden die Einbahnstraßenregelungen mittlerweile aufgehoben? vvv
+#: note: laut osm zumindest in der Marzahner Chaussee keine Einbahnstraße mehr
 #: last_checked: 2025-02-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20250214 vvv
 #: osm_watch: way id="1089784266" version="4"
-#: osm_watch: way id="1231226671" version="1"
+#: osm_watch: way id="1231226671" version="2"
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272
 # REMOVED (hier nicht) --- Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19198,13272 19180,13219
 #: osm_watch: way id="36786796" version="22"

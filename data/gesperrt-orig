@@ -218,7 +218,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-03-02
+#: last_checked: 2025-03-04
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -415,7 +415,9 @@ Niederlagstr.	1s:q4 9943,12364 9934,12420
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 #: next_check_id: KARLMARXPLATZ-2024
 #: XXX während der Bauarbeiten ist die Einbahnstraße aufgehoben
-#: next_check: 2025-03-04 (Halteverbotsschilder)
+#: last_checked: 2025-03-04
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-03-04 (Halteverbotsschilder)
 Karl-Marx-Platz	1no 13100,7626 12987,7560
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
@@ -4101,7 +4103,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-02-25
+#: last_checked: 2025-03-04
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4851,6 +4853,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-l%C3%BCckstra%C3%9Fe-33-37.1405/#post-22786
 #: by: https://entwicklungsstadt.de/155-wohnungen-howoge-errichtet-nur-strom-quartier-in-lichtenberg/
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/howoge-baut-quartier-mit-gruener-energie_a428074
+#: by: https://entwicklungsstadt.de/friedrichsfelde-hier-entstehen-148-wohnungen-der-howoge/ (Fertigstellung Sommer 2026)
 # REMOVED (deleted) --- #: osm_watch: way id="830757933" version="2"
 # REMOVED (deleted) --- #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="5"
@@ -4858,7 +4861,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
 #: last_checked: 2025-02-23
 #: check_frequency: 180d
-#: next_check: 2025-12-31
+#: next_check: 2025-12-31 (howoge website)
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
 # REMOVED (offen, dafür ist nun temporär die Anbindung an die Zobtener Str. verschwenkt) --- #: last_checked: 2021-05-23 vvv --- #: check_frequency: 14d vvv --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997 --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
@@ -4959,7 +4962,7 @@ Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-02-26 vvv
+#: last_checked: 2025-03-04 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -4972,7 +4975,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2025-03-02
+#: last_checked: 2025-03-04
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259

@@ -36092,7 +36092,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-27 (osm)
+#: last_checked: 2025-03-04
 #: check_frequency: 30d
 #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -38329,7 +38329,7 @@ EOF
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-02-22 vvv
+#: last_checked: 2025-03-04 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -43900,23 +43900,24 @@ EOF
 	q4::inwork; 11239,18832 11001,18528
 EOF
      },
-     { from  => undef, # 1716181200, # 2024-05-20 07:00
-       until => 1734187231, # undef, # $isodate2epoch->("2024-07-02 10:00:00"), # 1717426800, # 2024-06-03 17:00
+     { from  => $isodate2epoch->("2025-03-04 00:00:00"), # undef, # 1716181200, # 2024-05-20 07:00
+       until => $isodate2epoch->("2025-03-27 17:00:00"), # 1734187231, # undef, # $isodate2epoch->("2024-07-02 10:00:00"), # 1717426800, # 2024-06-03 17:00
 #      text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr. sowie zwischen Boxhagener Str. und Siegfried-Hirschmann-Park, Fahrtrichtung jeweils gesperrt, vom 21.05.2024 07:00 bis 03.06.2024 17:00',
 #      text  => 'Holteistr.: Gleisbauarbeiten zwischen Boxhagener Str. und Wühlischstr., Fahrtrichtung gesperrt, bis 02.07.2024 10:00',
-       text  => 'Holteistr.: Bauarbeiten zwischen Wühlischstr. und Boxhagener Str., Fahrtrichtung gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Holteistr.: Bauarbeiten zwischen Wühlischstr. und Boxhagener Str., Fahrtrichtung gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Holteistr.: Gleisbauarbeiten zwischen Wühlischstr. und Boxhagener Str., Fahrbahn gesperrt, bis 27.03.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
 #: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024) (inaktiv)
-# REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 35m ---	q3::inwork; 14639,11512 14676,11572
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
-#: also_indoor: traffic (G,W)
-# REMOVED --- #: note: bei rbb in beiden Richtungen gesperrt (stimmt aber nicht)
-# REMOVED --- #: last_checked: 2024-12-13 --- #: check_frequency: 7d
-	q4::inwork; 14575,11407 14639,11512
+#: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
+#: also_indoor: traffic (none)
+#: XXX laut VIZ bis Sonntagstr. gesperrt, prüfen
+#: next_check: 2025-03-05
+	q4::inwork 14575,11407 14639,11512
 EOF
      },
      { from  => $isodate2epoch->("2024-10-29 00:00:00"), # 1680415200, # 2023-04-02 08:00
@@ -44336,7 +44337,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-02-25 vvv
+#: last_checked: 2025-03-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45329,10 +45330,11 @@ EOF
 EOF
      },
      { from  => 1726956000, # 2024-09-22 00:00
-       until => $isodate2epoch->("2025-03-04 18:00:00"), # 1742749200, # 2025-03-23 18:00
+       until => undef, # $isodate2epoch->("2025-03-04 18:00:00"), # 1742749200, # 2025-03-23 18:00
 #      text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich ab 23.09.2024 bis zum Frühjahr 2025',
 #      text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der nördlichen Fahrbahn, voraussichtlich bis 04.03.2025',
-       text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 04.03.2025',
+#      text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 04.03.2025',
+       text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KARLMARXPLATZ-2024
@@ -45343,9 +45345,9 @@ EOF
 #: osm_watch: way id="1002238498" version="10"
 #: osm_watch: note 4454125 6
 #: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen
-#: last_checked: 2025-02-22
-#: check_frequency: 30d
-#: next_check: 2025-03-04 (Halteverbotsschilder)
+#: last_checked: 2025-03-04
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-03-04 (Halteverbotsschilder)
 # REMOVED (hier mittlerweile fertig und offen) ---	q4::inwork 12972,7602 13100,7626
 	q4::inwork 13100,7626 13130,7633
 EOF
@@ -45570,7 +45572,7 @@ EOF
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
 #: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024) (bis 14.03.2025)
 #: also_indoor: traffic (H,G,B,T,re-W,A)
-#: last_checked: 2025-03-02
+#: last_checked: 2025-03-04
 #: next_check: 2025-03-14
 	q3::inwork 10944,10606 11100,10530
 EOF
@@ -45608,7 +45610,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-02-25 vvv
+#: last_checked: 2025-03-04 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -46613,11 +46615,11 @@ EOF
 EOF
      },
      { from  => 1739941200, # 2025-02-19 06:00
-       until => 1741363200, # 2025-03-07 17:00
+       until => 1741114245, # 1741363200, # 2025-03-07 17:00
        text  => 'Dörpfeldstr.: Bauarbeiten in Höhe Zinsgutstr., Sperrung der Fahrbahn, vom 20.02.2025 06:00 bis 07.03.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.55297,52.439664,20.02.2025,06:00 (auch Radverkehr betroffen, bis 07.03.2025)
+#: source_id: viz2021:13.55297,52.439664,20.02.2025,06:00 (auch Radverkehr betroffen, bis 07.03.2025) (vorfristig inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892439286399791172
 #: by: https://pbs.twimg.com/media/GkKQea0XoAEemcW?format=jpg&name=large (Sperrung der Einmündung in Höhe Zinsgutstr.)
 	q2::inwork 20772,3999 20679,3944
@@ -46723,12 +46725,13 @@ EOF
 #: also_indoor: traffic (G,ex-H,ex-B,ex-T,A)
 #: note: außerdem Beilsteiner Str. Höhe Merler Weg ist die Durchfahrt Richtung Süden mit Betonbarrieren versperrt, als Radfahrer kann man über den Hochbord vorbeifahren
 #: add_fragezeichen: Wurden die Einbahnstraßenregelungen mittlerweile aufgehoben? vvv
+#: note: laut osm zumindest in der Marzahner Chaussee keine Einbahnstraße mehr
 #: last_checked: 2025-02-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-02-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20250214 vvv
 #: osm_watch: way id="1089784266" version="4"
-#: osm_watch: way id="1231226671" version="1"
+#: osm_watch: way id="1231226671" version="2"
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272
 # REMOVED (hier nicht) --- Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19198,13272 19180,13219
 #: osm_watch: way id="36786796" version="22"

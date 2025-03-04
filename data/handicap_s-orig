@@ -14,7 +14,7 @@
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
 #: source_id: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-02-27
+#: last_checked: 2025-03-04
 # REMOVED --- #: check_frequency: 8d
 #: next_check: 2025-03-12 (VIZ-Verkehrsmeldung)
 #: valid: -20250312
@@ -38,7 +38,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-02-27
+#: last_checked: 2025-03-04
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -64,7 +64,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="13"
 #: osm_watch: way id="1072662717" version="15"
-#: last_checked: 2025-02-22
+#: last_checked: 2025-03-04
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -73,7 +73,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="7"
 #: osm_watch: way id="1146013233" version="10"
 #: osm_watch: way id="1134071039" version="12"
-#: last_checked: 2025-02-27 vvv
+#: last_checked: 2025-03-04 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -128,7 +128,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-03-02
+#: last_checked: 2025-03-04
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -459,7 +459,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: also_indoor: traffic (G,W[teilweise]) vvv
 #: last_checked: 2025-02-28 (osm) vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="24242892" version="40"
+#: osm_watch: way id="24242892" version="41"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/schadowstra%C3%9Fe-4-dorotheenstra%C3%9Fe-verwaltungsgeb%C3%A4ude-bundestag.757/page-2#post-23517
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/unter-den-linden-62-68-schadowstra%C3%9Fe.608/page-2#post-23515
@@ -936,7 +936,7 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
 #: osm_watch: way id="640465875" version="15"
-#: last_checked: 2025-01-26 (osm)
+#: last_checked: 2025-03-04
 #: check_frequency: 120d
 #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -954,7 +954,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
 #: note: Die Absperrung beginnt 50m vor dem Einmündungsbereich.
 #: also_indoor: traffic (none)
-#: last_checked: 2025-01-19 vvv
+#: last_checked: 2025-03-04 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
@@ -1937,7 +1937,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-02
+#: last_checked: 2025-03-04
 #: check_frequency: 30d
 #: next_check: 2025-03-15 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -3661,7 +3661,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-03-01
+#: last_checked: 2025-03-04
 #: check_frequency: 45d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243

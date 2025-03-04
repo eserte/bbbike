@@ -89,7 +89,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # REMOVED --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2025-02-22
+#: last_checked: 2025-03-04
 #: check_frequency: 45d
 #: next_check: 2025-04-30
 #: valid: -20250430
@@ -396,12 +396,14 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 #: next_check_id: HERMANNHESSESTR-2019
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Erwähnung, möglicherweise Verstetigung 2025)
 #: XXX wird die temporäre Ampel durch eine permanente ersetzt?
+#: source_id: viz2021:13.398354,52.576848,05.03.2025,07:00 (Ampelneubau, Einschränkungen in der Tschaikowskistr. für Kfz-Verkehr, bis 02.05.2025)
 # REMOVED (closed) --- #: osm_watch: note 2356634 3
 #: osm_watch: node id="9569639494" version="1"
 #: osm_watch: node id="9569639496" version="1"
 #: last_checked: 2024-12-06 (berliner-zeitung)
-#: check_frequency: 60d
-#: next_check: 2025-12-31
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- #: next_check: 2025-12-31
+#: next_check: 2025-05-02 (VIZ-Verkehrsmeldung)
 	X::inwork 9868,19023
 # 
 # REMOVED --- #: note: Baustellenampel in der Neuen Roßstr. --- #: source_id: 2147345021 (bis 06.07.2020) --- #: source_id: 2147345825 --- #: XXX ist die Ampel mittlerweile abgebaut (wegen der Einbahnstraßenregelung)? --- #: XXX laut fritz Sperrung bis 2020-06-30 --- #: last_checked: 2020-05-12 --- #: next_check: 2020-05-13 --- #: valid: -20200706 ---	X::inwork 10780,11721
@@ -2773,7 +2775,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-02-22
+#: last_checked: 2025-03-04
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
