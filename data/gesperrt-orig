@@ -1727,6 +1727,8 @@ Eisenhutweg [Wohngebiet]	1 17569,2987 17471,2872 17688,2744 17741,2824
 #: note: "Einfahrt verboten" wird nicht mehr wiederholt, unechte Einbahnstraße
 Puschkinstr. [Nebenstraße]	1s:q4 14152,9746 14092,9773
 # 
+Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung	1s:q3 2706,9108 2674,9111
+# 
 #: section ^^^
 ######################################################################
 #: section: empfohlene und unechte Sperrungen vvvvvvvvvvvvvvvvvvvvvvvv
@@ -2140,7 +2142,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: https://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="16"
-#: last_checked: 2024-03-25 (mapillary)
+#: last_checked: 2025-03-05
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
@@ -3909,6 +3911,8 @@ Drängelgitter	BNP:3::trailer=10 13014,21775
 Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3::trailer=10 12470,18816
 Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3::trailer=10 12375,18622
 #: by ^^^
+Schranke, kann umfahren werden	BNP:1::trailer=3 2419,13833
+Schranke, kann umfahren werden	BNP:1::trailer=3 2969,14063
 #
 #: section ^^^
 ############################################################################
@@ -3942,7 +3946,7 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1
 #: osm_watch: note 4545425 2
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
-#: last_checked: 2025-02-05
+#: last_checked: 2025-03-05
 #: check_frequency: 120d
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
@@ -3950,7 +3954,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
-#: last_checked: 2025-01-20 (mapillary) vvv
+#: last_checked: 2025-03-03 (mapillary) vvv
 #: next_check: 2025-06-15 vvv
 #: osm_watch: way id="1199394070" version="4"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -4417,7 +4421,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-02-11
+#: last_checked: 2025-03-05
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4483,7 +4487,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.tagesspiegel.de/kultur/classic-open-air-auf-dem-gendarmenmarkt-neustart-mit-anna-netrebko-12869530.html (Wiedereröffnung spätestens am 17. Juli 2025)
 #: by: https://gruen-berlin.de/pressemitteilung/gendarmenmarkt-hauptbaumassnahmen-in-rekordtempo-abgeschlossen (Freigabe im Februar 2025)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gendarmenmarkt-hat-seine-schoenheitskur-fast-hinter-sich_a432984
-#: last_checked: 2025-02-19 vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2025-02-01 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
@@ -4828,7 +4832,7 @@ Hebammensteigbrücke	2::inwork 13193,21700 13168,21706 13135,21715 13121,21678 13
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2025-03-01 vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5180,7 +5184,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen, die Masten und Signalgeber stehen schon.
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-02-20 (webcam)
+#: last_checked: 2025-03-05
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

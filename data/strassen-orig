@@ -272,7 +272,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: osm_watch[closed]: note 4168370 2
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2025-02-11 vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 #: osm_watch: way id="47755711" version="23"
@@ -4457,7 +4457,7 @@ Mierendorffplatz [Brahestr.]	NN 3710,13290 3585,13320
 Mierendorffplatz [Mierendorffstr.]	H 3534,13098 3556,13200
 Mierendorffplatz [Mierendorffstr.]	N 3534,13098 3645,13206
 Lise-Meitner-Str.	H 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
-Lise-Meitner-Str.	NH 3739,13563 3724,13702 3713,13787 3702,13865 3695,13902
+Lise-Meitner-Str.	NH 3739,13563 3713,13787 3702,13865 3695,13902
 Lise-Meitner-Str.	N 3695,13902 3656,14150
 Goerdelersteg	NN 3656,14150 3634,14187 3625,14230 3601,14284 3595,14267
 #: note: auf der Ostseite ist die Einfahrt verboten ("Baustelle"), aber auf der Westseite existieren entsprechende Schilder nicht
@@ -5934,7 +5934,7 @@ Mäckeritzstr.	N 1361,14431 1320,14440 1262,14510 1244,14558 1235,14609
 Hefnersteig	N 1420,14369 1392,14287 1364,14191
 Voltastr. (Siemensstadt)	N 1246,14384 1200,14227
 Bödikersteig	N 1141,14237 1182,14384
-Fürstenbrunner Weg	H 1159,13541 1170,13521 1193,13485 1488,13454 1545,13418 1610,13380 1858,13231 1892,13058 1929,12741 1969,12375
+Fürstenbrunner Weg	H 1159,13541 1170,13521 1193,13485 1488,13454 1545,13418 1610,13380 1858,13231 1892,13058 1929,12741 1941,12627 1969,12375
 Ruhwaldweg	N 1170,13521 1132,13504 1110,13462 1018,13446 914,13391 773,13375 758,13334 721,13296 667,13236 -205,12985
 (Spreeufer)	NN -309,13268 -285,13276 -287,13308 -280,13318 -76,13296 102,13292 512,13335 778,13455 971,13498 1091,13512 1111,13514
 Spreetalallee	N 655,12690 729,12972 715,13126 667,13236
@@ -15221,7 +15221,7 @@ Letterhausweg	N 2087,14078 2111,14235
 Nikolaus-Groß-Weg	N 2087,14078 2038,13870 2025,13815
 Nonnendamm	N 1929,13843 1983,13828 2025,13815 2149,13775 2176,13703 2217,13689 2283,13741 2430,13717 2548,13796
 (Goerdelerdamm - Nonnendamm)	N 3106,14195 3025,14099 3007,14078
-(Goerdelerdamm - Nonnendamm)	NN 3007,14078 2912,14040 2817,14003 2734,13970 2708,13944 2684,13922 2419,13833 2247,13805
+(Goerdelerdamm - Nonnendamm)	NN 3007,14078 2969,14063 2912,14040 2817,14003 2734,13970 2708,13944 2684,13922 2419,13833 2247,13805
 (Goerdelerdamm - Nonnendamm)	N 2247,13805 2149,13775
 (Friedrich-Olbricht-Damm - Goerdelerdamm)	NN 4894,14634 4897,14609
 (Uferweg an der Schleuse - Tegeler Weg)	NN 2817,14003 2881,14061
@@ -19750,7 +19750,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-03-04 vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
@@ -20907,7 +20907,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025) (bis 31.08.2026)
 #: source_id: viz2021:13.33801,52.51361,09.01.2025,11:20 (bis 31.08.2026) (inaktiv)
-#: last_checked: 2025-03-01
+#: last_checked: 2025-03-05
 #: check_frequency: 180d
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

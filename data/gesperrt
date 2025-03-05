@@ -1039,6 +1039,7 @@ Zur Alten Börse - Merler Weg: gesperrtes Tor/Bauzaun	2 18736,13080 18749,13158
 Straße am Heizhaus: Betriebsgelände	2 20150,8962 20220,8976
 Eisenhutweg [Wohngebiet]	1 17569,2987 17471,2872 17688,2744 17741,2824
 Puschkinstr. [Nebenstraße]	1s 14152,9746 14092,9773
+Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung	1s 2706,9108 2674,9111
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3514,6 +3515,8 @@ Drängelgitter/Barriere	BNP:3:51:trailer=10 17130,18771
 Drängelgitter	BNP:3:-217:trailer=10 13014,21775
 Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3:-153:trailer=10 12470,18816
 Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3:-155:trailer=10 12375,18622
+Schranke, kann umfahren werden	BNP:1:71:trailer=3 2419,13833
+Schranke, kann umfahren werden	BNP:1:68:trailer=3 2969,14063
 An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
 Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12704,1102 12716,1088 12727,1074 12772,1019 12809,969
 Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12854,1121 12860,1082 12879,1000

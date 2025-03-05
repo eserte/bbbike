@@ -53,7 +53,6 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22899,15073 22726,15082 22599,15105 22577,15109
 Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
-Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
 Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
@@ -3569,6 +3568,7 @@ Eilenburger Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 
 Berthold-Schwarz-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -784,14940 -834,15053
 Hauptstr. (Rummelsburg) [Nebenfahrbahn]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 15332,10657 15298,10682
 Puschkinstr. [Nebenstraße]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 14152,9746 14092,9773
+Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 2706,9108 2674,9111
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829

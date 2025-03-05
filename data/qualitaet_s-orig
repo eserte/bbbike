@@ -2103,8 +2103,8 @@ Cantianstr.: mäßiges Kopfsteinpflaster	Q2 10887,15287 10855,15283
 Rosenthaler Str.: Asphalt mit leichten Schäden	Q0- 12166,21208 12096,21224 11982,21392 11889,21543 11870,21574
 Lise-Meitner-Str.: Beton	Q0 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
 # REMOVED (von der Bahn aus gesehen) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php --- #: XXX nach den Bauarbeiten asphaltiert ("bituminöser Fahrbahnoberbau") --- prüfen, ob das tatsächlich stimmt --- #: next_check: 2018-07-07
-Lise-Meitner-Str.: Asphalt	Q0 3739,13563 3724,13702
-Lise-Meitner-Str.: Beton	Q0 3724,13702 3713,13787 3702,13865 3695,13902 3656,14150
+Lise-Meitner-Str.: Asphalt	Q0 3739,13563 3713,13787
+Lise-Meitner-Str.: Beton	Q0 3713,13787 3702,13865 3695,13902 3656,14150
 Georg-Wilhelm-Str.: Kopfsteinpflaster, OK	Q1 2702,10006 2687,10053
 Holtzendorffstr.: mäßiges Kopfsteinpflaster	Q2 3049,11015 3082,11090
 Goslarer Ufer: Kopfsteinpflaster	Q2 4421,12727 4372,12946
@@ -9253,7 +9253,7 @@ Heckerdamm: Beton mit einigen leichten Hebungen, einige kurze Asphaltabschnitte	
 Friedrich-Olbricht-Damm: Beton mit einigen Schäden	Q1+ 4291,14947 4551,14800 4867,14636
 Friedrich-Olbricht-Damm: Asphalt	Q0 4867,14636 4894,14634 5048,14710
 (Goerdelerdamm - Nonnendamm): Beton	Q0 3106,14195 3025,14099 3007,14078
-(Goerdelerdamm - Nonnendamm): Verbundsteinpflaster	Q1+ 3007,14078 2912,14040
+(Goerdelerdamm - Nonnendamm): Verbundsteinpflaster	Q1+ 3007,14078 2969,14063 2912,14040
 (Goerdelerdamm - Nonnendamm): Kopfsteinpflaster	Q2 2912,14040 2817,14003 2734,13970
 (Goerdelerdamm - Nonnendamm): wassergebundene Decke	Q1 2734,13970 2708,13944 2684,13922 2419,13833
 (Goerdelerdamm - Nonnendamm): Verbundsteinpflaster	Q1+ 2419,13833 2247,13805 2149,13775
@@ -14025,6 +14025,8 @@ Landsberger Alleee [Wohngebiet/Nebenfahrbahn]: Asphalt	Q0 15976,14472 16059,1448
 # 
 Brückenstr. (Steglitz): Asphalt	Q0 5728,4371 5774,4408 5812,4455
 Brückenstr. (Steglitz): Mosaikpflaster	Q1- 5812,4455 5821,4480
+# 
+Lynarstr. - Charlottenbrunner Str.: Verbundsteinpflaster/Mosaikpflaster	Q1 2674,9111 2706,9108
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -30256,8 +30258,8 @@ Spohrstr.: Kopfsteinpflaster	Q2 1363,7997 1274,7866
 #: corrected_by: srt (Q2 -> Q2+)
 Wildpfad: kleinteiliges, aber unebenes Kopfsteinpflaster	Q2+ 1741,7920 1709,7848 1664,7773 1621,7741 1509,7700 1274,7866
 Königsmarckstr.: Kopfsteinpflaster	Q2 2088,7723 1971,7738 1749,7800
-#: note: slight coords corrections
-Kronberger Str.: Kopfsteinpflaster	Q2 1987,7593 1971,7738 1971,7797
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
+Kronberger Str.: Kleinsteinpflaster	Q2+ 1987,7593 1971,7738 1971,7797
 #: confirmed_by: srt
 Kronberger Str.: Asphalt	Q0 1971,7797 1971,7844 1968,8096 1968,8227
 Waldmeisterstr.: Kopfsteinpflaster	Q2 1621,7741 1735,7581 1736,7557 1880,7558 1930,7594
@@ -30911,7 +30913,9 @@ Egerstr.: Beton	Q0 2112,8088 2216,8079
 Egerstr.: Asphalt	Q0 2216,8079 2308,8071
 #: confirmed_by: srt
 Egerstr.: Kopfsteinpflaster	Q2 2308,8071 2353,8065
+#: confirmed_by: srt
 Karlsbader Str.: Kopfsteinpflaster	Q2 2207,7850 2216,8079
+#: confirmed_by: srt
 Karlsbader Str.: Asphalt	Q0 2216,8079 2219,8263 2223,8500
 Plöner Str.: Asphalt	Q0 2308,8071 2310,8184 2315,8431
 Gneiststr. (Grunewald): Asphalt	Q0 1421,9173 1587,9320
@@ -30933,6 +30937,7 @@ Kudowastr.: Asphalt mit Fugen	Q1 2831,8590 2832,8805 2829,9076 2829,9259
 Reinerzstr.: Kopfsteinpflaster	Q2 2670,8563 2566,8578 2361,8608
 Flinsberger Platz: Kopfsteinpflaster	Q2 2919,8582 2831,8590 2672,8611
 Rintelner Str.: Kopfsteinpflaster	Q2 2977,9220 3087,9219
+#: confirmed_by: srt
 Orber Str.: Kopfsteinpflaster	Q2 3093,9306 3087,9219 3075,9033 3056,8784
 #: confirmed_by: srt
 Kronprinzendamm: Asphalt	Q0 2245,10092 2243,10058 2248,10045 2296,10028 2353,10021 2445,10009 2551,9995
@@ -33832,5 +33837,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 8270,16047
 Einmündungsbereich mit Kopfsteinpflaster	Q2 8338,15987
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 8481,16136
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 9020,4890
+Kreuzungsbereich asphaltiert	Q0 2216,8079
+Kreuzungsbereich asphaltiert	Q0 3180,9015
+Kreuzungsbereich asphaltiert	Q0 3075,9033
 #: ignore ^^^
 #: section ^^^

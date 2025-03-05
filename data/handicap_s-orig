@@ -14,8 +14,8 @@
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
 #: source_id: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-03-04
-# REMOVED --- #: check_frequency: 8d
+#: last_checked: 2025-03-05
+#: check_frequency: 8d
 #: next_check: 2025-03-12 (VIZ-Verkehrsmeldung)
 #: valid: -20250312
 Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
@@ -38,7 +38,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-03-04
+#: last_checked: 2025-03-05
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -64,7 +64,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="13"
 #: osm_watch: way id="1072662717" version="15"
-#: last_checked: 2025-03-04
+#: last_checked: 2025-03-05
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -73,7 +73,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="7"
 #: osm_watch: way id="1146013233" version="10"
 #: osm_watch: way id="1134071039" version="12"
-#: last_checked: 2025-03-04 vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -340,13 +340,13 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 # 
 ### Altglienicke ###
 # 
-#: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025)
+#: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nördlich Semmelweisstr. Anfang März 2025 offen, der südliche Abschnitt Ende April 2025)
 #: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
 #: last_checked: 2024-12-27
-# REMOVED --- #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
-#: next_check: 2025-03-03 (BA-Pressemitteilung)
-#: valid: -20250430
+#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-03-03 (BA-Pressemitteilung)
+#: valid: -20250331
 Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18881,2062 18922,2238 18928,2319 18929,2454
 # 
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
@@ -851,7 +851,7 @@ Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 79
 #: osm_watch: way id="152832871" version="23"
 #: osm_watch: way id="1132383957" version="1"
 #: note: mittlerweile eine Art "Drängelgitter" aus dem Bauzaun gemacht
-#: last_checked: 2024-10-30
+#: last_checked: 2025-03-05
 #: check_frequency: 120d
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
@@ -1181,24 +1181,7 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 # 
 # REMOVED (offen) --- #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/ --- #: XXX laut Schild bis Dezember 2021 (dauer aber länger) --- #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv) --- #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?), inaktiv) --- #: source_id: viz2021:13.35399,52.49475,20.01.2023,12:26 (bis 14.04.2023) (inaktiv) --- #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022) (bis 5.12.2022) (bis 23.1.2023) (bis 14.4.2023) (bis 05.06.2023) (bis 28.06.2023) (inaktiv) --- #: osm_watch: way id="1096203482" version="8" --- #: also_indoor: traffic (ex-H,B,ex-G,W) --- #: last_checked: 2023-08-05 --- #: check_frequency: 30d --- #: next_check: 2023-06-28 --- Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
-# 
-#: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024) (mittlerweile Herbst 2024) (mittlerweile Übergabe Ende 2024/Anfang 2025) (mittlerweile "bezugsfertig")
-#: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933
-#: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdlich-der-hohenstaufen-pallas-und-goebenstra%C3%9Fe-kleinere-p/?postID=757023#post757023
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080
-#: by: https://www.deutsches-architekturforum.de/thread/15362-bv-am-winterfeldt-sch%C3%B6neberg/?postID=760855#post760855
-#: last_checked: 2025-01-02 vvv
-#: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2025-01-05 vvv
-# REMOVED (laut osm frei) --- #: osm_watch: note 3787279 4 --- Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815
-#: osm_watch: way id="51196438" version="25"
-#: note: der Zweirichtungsradweg-Abschnitt ist etwa 100m lang
-#: note: Halteverbot bis Anfang Januar 2025 (5.1.2025?)
-Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: by: https://www.amwinterfeldt.com/#dasprojekt (erwartete Fertigstellung 2024) (mittlerweile Herbst 2024) (mittlerweile Übergabe Ende 2024/Anfang 2025) (mittlerweile "bezugsfertig") --- #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=732933#post732933 --- #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdlich-der-hohenstaufen-pallas-und-goebenstra%C3%9Fe-kleinere-p/?postID=757023#post757023 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-winterfeldt-pallasstra%C3%9Fe-24-26.492/page-2#post-20080 --- #: by: https://www.deutsches-architekturforum.de/thread/15362-bv-am-winterfeldt-sch%C3%B6neberg/?postID=760855#post760855 --- #: last_checked: 2025-01-02 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2025-01-05 vvv --- # REMOVED (laut osm frei) --- #: osm_watch: note 3787279 4 --- Elßholzstr.: Hochbauarbeiten, Einbahnstraßenregelung	q4::inwork; 7202,9329 7209,9507 7216,9657 7223,9815 --- #: osm_watch: way id="51196438" version="25" --- #: note: der Zweirichtungsradweg-Abschnitt ist etwa 100m lang --- #: note: Halteverbot bis Anfang Januar 2025 (5.1.2025?) --- Gleditschstr.: Hochbauarbeiten, Zweirichtungsradweg auf dem westlichen Bürgersteig	q2::inwork; 7122,9517 7126,9825 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (-> temp blockings) --- #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021) --- #: by: https://twitter.com/rbbabendschau/status/1392489796426162177 --- #: source_id: 2147347186 --- #: also_indoor: traffic (G) --- #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres" --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18 --- #: valid: -20210612 --- Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
 # REMOVED --- #: next_check_id: DENNEWITZFLOTTWELL-2019 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wohnpanorama-gleisdreieck.434/ --- #: also_indoor: traffic (G,H) vvv --- #: last_checked: 2021-09-05 vvv --- # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351 --- Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
@@ -2310,6 +2293,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bauwens-nollendorfplatz.868/#post-24376
 #: by: https://www.deutsches-architekturforum.de/thread/15322-sch%C3%B6neberg-nord-n%C3%B6rdlich-der-hohenstaufen-pallas-und-goebenstra%C3%9Fe/?postID=773449#post773449
 #: by: https://www.bauwens.de/projects/nollendorfplatz
+#: by: https://entwicklungsstadt.de/neugestaltung-am-nollendorfplatz-buerogebaeude-entsteht-neben-metropol-theater/ (bis Mitte 2027)
 #: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 #: osm_watch: note 4506575 1
@@ -3661,7 +3645,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-03-04
+#: last_checked: 2025-03-05
 #: check_frequency: 45d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243

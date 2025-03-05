@@ -348,7 +348,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-02-22 vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1059,7 +1059,7 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,1552
 #: next_check_id: SCHOENHAUSERALLEE-2024
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2025-02-19
+#: last_checked: 2025-03-03 (mapillary)
 noch nicht komplett markiert	RW3; 10917,15525 10902,15422
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
@@ -1786,11 +1786,13 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 # REMOVED --- #: next_check_id: SONNENALLEE-2014 --- #: XXX laut fritz & vmz bis Ende Dezember 2017 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111 --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: last_checked: 2018-06-06 --- #: next_check: 2018-08-17 --- #: check_frequency: 30d
 	RW2; 14530,7301 14430,7348 14379,7372 14369,7376 14334,7395 14174,7505
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/estrel-tower-176m.9/page-18#post-24412
+#: by: https://entwicklungsstadt.de/fortschritt-am-estrel-tower-in-neukoelln-richtfest-fuer-berlins-hoechstes-hochhaus/ (Abschluss bis Ende 2025)
 #: XXX wegen eines Fußgängerschutztunnels unter dem Estrel-Tower ist der vorhandene Radweg abgesperrt
 #: XXX später wieder herstellen: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14334,7395
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
 #: last_checked: 2025-02-11 (mapillary)
 #: check_frequency: 30d
+#: next_check: 2025-12-31 (entwicklungsstadt)
 Busspur ist immer gültig	RW5; 14174,7505 14334,7395
 überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14334,7395 14369,7376
 	RW1; 14369,7376 14379,7372 14430,7348 14530,7301
@@ -1885,7 +1887,9 @@ Gehwegplatten	RW1;RW1 2547,11788 2485,12032 2460,12163 2440,12264 2437,12283 241
 	RW1;RW2 889,14392 931,14268
 asphaltiert	RW1;RW1 931,14268 984,14086 1010,13972
 Verbundsteinpflaster	RW1;RW1 1010,13972 1053,13790 1124,13599 1159,13541 1170,13521 1193,13485 1488,13454 1545,13418 1610,13380 1858,13231 1892,13058 1929,12741
-	RW2;RW1 1929,12741 1969,12375
+	RW2; 1929,12741 1941,12627 1969,12375
+alte Gehwegplatten	RW1; 1969,12375 1941,12627
+neu asphaltiert	RW1; 1941,12627 1929,12741
 	RW1; 3711,13210 3967,13218 4100,13224 4214,13230 4237,13231 4295,13234 4381,13239 4527,13244 4542,13244 4617,13243 4751,13245 4926,13207 5166,13087
 Verbundsteinpflaster, erhebliche Schäden durch Wurzelhebungen	RW1; 5166,13087 4926,13207 4751,13245 4617,13243 4542,13244
 Verbundsteinpflaster	RW1; 4542,13244 4527,13244 4381,13239
@@ -2191,7 +2195,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-02-19 vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2934,7 +2938,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-03-02 vvv
+#: last_checked: 2025-03-05 vvv
 #: next_check: 2027-09-30 vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3035,7 +3039,8 @@ Fahrradschleuse	RW4; 11343,12182 11347,12223
 	RW4; 11139,12243 11094,12243 10951,12249 10830,12279
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021 --- #: next_check_id: STRALAUER-2023 --- #: last_checked: 2023-12-12 --- #: check_frequency: 30d --- durch Barriere getrennt
 	RW4; 10830,12279 10772,12288 10697,12303
-	RW4; 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
+Grünbeschichtung	RW4; 10697,12303 10772,12288
+	RW4; 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250
 Fahrradschleuse	RW4; 11221,12250 11300,12241 11347,12223
 # REMOVED ---	RW4; 10736,12285 10772,12288
 	RW3;RW3 12891,12549 12866,12582 12859,12593 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045
@@ -4113,7 +4118,7 @@ Grünbeschichtung	RW3; 8595,9495 8598,9269 8598,9074
 Busspur ist immer gültig	RW5; 3710,13290 3711,13210
 	RW3;RW3 3710,13290 3719,13346
 	RW4;RW3 3719,13346 3737,13429 3741,13495 3739,13563
-	RW4;RW4 3739,13563 3724,13702 3713,13787 3702,13865 3695,13902
+	RW4;RW4 3739,13563 3713,13787 3702,13865 3695,13902
 #: by: anonymous
 	RW6;RW6 -6660,9953 -6603,9918 -6370,9802 -6324,9778
 #: by: René (refan):

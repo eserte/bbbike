@@ -1284,7 +1284,8 @@ Hauptallee	2::night -14389,-859 -14910,-903 -15684,-966
          'until' => undef
        },
        {
-         'data' => '#: tempex: (mo, th) T09-T14
+         'data' => '#: note: Halteverbotsschilder nur Do 7-16h, nichts für Mo (gesehen 2025-03-05)
+#: tempex: (mo, th) T09-T14
 	q4::temp:clock 3075,9033 2968,9050
 ',
          'from' => undef,
@@ -3178,7 +3179,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-02-16
+#: last_checked: 2025-03-05
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3473,7 +3474,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2025-01-04
+#: last_checked: 2025-03-05
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
 	2::inwork 3231,12749 3332,12742
@@ -4841,9 +4842,9 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: note: bei rbb mittlerweile entfernt; ab 2025-02-10 wieder da ("Einbahnstraßenregelung")
 #: osm_watch: way id="1094113747" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2025-02-17 (daf)
+#: last_checked: 2025-03-05
 #: check_frequency: 30d
-#: next_check: 2025-02-23 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-02-23 (VIZ-Verkehrsmeldung)
 	q4::inwork; 3429,13227 3400,13107
 ',
          'from' => undef,
@@ -5024,8 +5025,8 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2025-02-09 (architektur-urbanistik)
-#: check_frequency: 120d
+#: last_checked: 2025-03-05
+#: check_frequency: 90d
 #: next_check: 2025-07-01 (bw)
 	q3::inwork 6447,9661 6341,9546
 ',
@@ -5854,7 +5855,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-02-22 (mapillary) vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6050,7 +6051,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
-#: last_checked: 2025-01-26 (bahninfo-forum)
+#: last_checked: 2025-03-03 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -6174,7 +6175,7 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: last_checked: 2025-02-05 vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
 	2::inwork 3836,12614 3867,12616 3888,12618 4078,12637 4131,12641
@@ -6340,20 +6341,26 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
        undef,
        undef,
        {
-         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439
+         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1792772304721891439 (Sperrung Mai 2024)
 #: by: https://pbs.twimg.com/media/GNyCjmVXgAAPWkU?format=jpg&name=large
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1897153852186747084 (Sperrung März 2025)
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
 #: also_indoor: traffic (none)
-#: XXX laut VIZ bis Sonntagstr. gesperrt, prüfen
-#: next_check: 2025-03-05
-	q4::inwork 14575,11407 14639,11512
+#: last_checked: 2025-03-05 vvv
+#: check_frequency: 10d vvv
+#: next_check: 2025-03-27 vvv
+Holteistr.	q4::inwork 14575,11407 14639,11512
+Wühlischstr.	q4::inwork; 14575,11407 14460,11455
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1741042800,
          'id' => 4063,
-         'text' => 'Holteistr.: Gleisbauarbeiten zwischen Wühlischstr. und Boxhagener Str., Fahrbahn gesperrt, bis 27.03.2025',
+         'text' => 'Holteistr./Wühlischstr.: Gleisbauarbeiten zwischen Wühlischstr. und Boxhagener Str., Fahrbahn gesperrt, außerdem Einbahnstraßenregelung in der Wühlischstr. zwischen Holteistr. und Sonntagstr., bis 27.03.2025',
          'type' => 'gesperrt',
          'until' => 1743091200
        },
@@ -6426,6 +6433,8 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        {
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025)
+#: osm_watch: way id="1303423090" version="2"
+#: note: laut osm opening_date=2025-08-01
 	q3::inwork 10573,17566 10466,17464
 ',
          'from' => 1717909200,
@@ -6951,6 +6960,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_wollankstrasse_wegefuehrung_20250131n.pdf
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1895379778414514298
 #: by: https://viz.berlin.de/aktuelle-meldungen/neubau-der-bruecke-uber-die-wollankstrasse/ (weitere Vollsperrung von Mitte Juni bis Dezember 2025)
+#: by: https://www.tagesspiegel.de/berlin/schon-wieder-einen-monat-vollsperrung-diese-baustelle-im-berliner-norden-verlangt-allen-gute-nerven-ab-13314622.html
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id[inactive]: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
 #: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
@@ -7025,7 +7035,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-03-04 vvv
+#: last_checked: 2025-03-05 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7075,7 +7085,23 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
          'until' => 1778594400
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: rbb
+#: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
+#: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
+#: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025) (inaktiv)
+#: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
+#: also_indoor: traffic (G,H,B,T,ex-W)
+#: last_checked: 2025-03-05
+	q3::inwork 2453,9156 2576,9132
+# REMOVED ---	q4::inwork 2453,9156 2337,9178
+',
+         'from' => 1729533901,
+         'id' => 4200,
+         'text' => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -7162,7 +7188,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
 #: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
-#: last_checked: 2025-01-08
+#: last_checked: 2025-03-05
 #: next_check: 2025-05-31
 	q3::temp 10032,9456 10004,9268
 ',
