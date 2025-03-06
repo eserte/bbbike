@@ -5668,7 +5668,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2025-02-26 vvv
+#: last_checked: 2025-03-05 (krickstadt) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -6047,7 +6047,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neuer-arger-um-bahn-baustelle-in-berlin-anwohner-kritisieren-kahlschlag-auf-raten-im-geschutzten-mauerstreifen-13189999.html
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
-#: osm_watch: way id="1244101968" version="4"
+#: osm_watch: way id="1244101968" version="5"
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
@@ -6774,11 +6774,11 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        {
          'data' => '#: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
-#: osm_watch: way id="1083535036" version="7"
-#: osm_watch: way id="1119255054" version="6"
+#: osm_watch: way id="1083535036" version="8"
+#: osm_watch: way id="1119255054" version="7"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-02-11 (osm)
+#: last_checked: 2025-03-05 (osm)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -7299,19 +7299,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (T,B,ex-G)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-02-21 (traffic)
-#: check_frequency: 14d (traffic checks)
-	q4::inwork 16668,14765 16750,14747
-',
-         'from' => undef,
-         'id' => 4229,
-         'text' => 'Neustrelitzer Str.: Bauarbeiten, Fahrbahn gesperrt, Engstelle auf dem Bürgersteig, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.319959,52.470975,16.12.2024,07:00 (hier nur Kfz, bis 14.03.2025)
@@ -7480,14 +7468,14 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1746568740
        },
        {
-         'data' => '#: source_id: viz2021:13.31084,52.470147,28.01.2025,07:00 (bis 13.03.2025)
+         'data' => '#: source_id: viz2021:13.31084,52.470147,28.01.2025,07:00 (bis 13.03.2025) (bis 25.04.2025)
 	q4::inwork 4159,6890 4160,7043 4160,7278
 ',
          'from' => 1737957600,
          'id' => 4247,
-         'text' => 'Johannisberger Str.: Bauarbeiten zwischen Wiesbadener Str. und Rüdesheimer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 07:00 bis 13.03.2025 18:00',
+         'text' => 'Johannisberger Str.: Bauarbeiten zwischen Wiesbadener Str. und Rüdesheimer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 07:00 bis 25.04.2025',
          'type' => 'handicap',
-         'until' => 1741885200
+         'until' => 1745618399
        },
        {
          'data' => '#: also_indoor: traffic (G,B,T,A)
@@ -7647,7 +7635,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
        {
          'data' => '#: by: rbb (bis 17.03.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
-#: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich
+#: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich; am 2025-03-05 war gesperrt
 	q3::inwork 13741,13107 13692,13221 13644,13332
 ',
          'from' => 1739574000,
@@ -7784,6 +7772,27 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
          'text' => 'Trelleborger Str.: zwischen Schonensche Str. und Wisbyer Str. Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 03.03.2025 07:00 bis 02.08.2025 17:00',
          'type' => 'handicap',
          'until' => 1754146800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1537994.php (zwei Bauabschnitte, allerdings nicht zeitlich genau bestimmt)
+	q4::inwork 22345,-10 22382,-87 22440,-175
+	q4::inwork 22750,-650 22696,-579 22644,-497
+',
+         'from' => 1742079600,
+         'id' => 4275,
+         'text' => 'Schulzendorfer Str.: Sanierung, Sperrung der Fahrbahn (Gartenstr. - Dahmestr. sowie Neptunstr. - Amorstr.), vom 17. März 2025 bis voraussichtlich 28. März 2025',
+         'type' => 'handicap',
+         'until' => 1743202799
+       },
+       {
+         'data' => '#: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025)
+	q4::inwork; 2092,7810 2099,7904 2112,8088 2121,8351
+',
+         'from' => 1741240800,
+         'id' => 4276,
+         'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 08.09.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1757343600
        }
      
 );

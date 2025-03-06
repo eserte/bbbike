@@ -161,9 +161,9 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: osm_watch: way id="4609212"  version="18"
 #: osm_watch: way id="25113713" version="24"
 #: osm_watch: way id="4752742"  version="17"
-#: osm_watch: way id="4752743"  version="20"
-#: osm_watch: way id="8049679"  version="21"
-#: osm_watch: way id="8049678"  version="18"
+#: osm_watch: way id="4752743"  version="21"
+#: osm_watch: way id="8049679"  version="22"
+#: osm_watch: way id="8049678"  version="19"
 #: last_checked: 2024-09-18
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 720d
@@ -691,6 +691,7 @@ Alt-Tempelhof/Schönburgstr.: Überquerungshilfe in Planung	?::projected 8961,6662
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Abwägung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9318 (Antrag)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-sitzung-vom-04072024-.pdf (Erwähnung)
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/buendnis-fordert-radweg-und-organisiert-regelmaessige-demonstrationen_a436799
 #: XXX evtl. gibt's auch nur eine Busspur zwischen Hranitzkystr. und Friedenfelser Str. Richtung Süden, siehe pardok
 #: note: Januar 2025: es gibt eine provisorische Busspur Richtung Süden ab Hanielstr. bis Kurve sowie Richtung Norden ab Emilienstr. bis Bahnstr.
 #: osm_watch: way id="25415937" version="43"
@@ -760,7 +761,7 @@ Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6088
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/1FOtM01W8vrWse1IyOvT3bHjfqRjLx2UgNjmsqMy/HmTzjfun/84-Anlagen/04/B0570ZB1.pdf (Zwischenbericht: keine mittelfristige Realisierung => also check_frequency angepasst: 90d -> 180d)
 #: XXX Maßnahme Osw.1 + Osw.12
-#: last_checked: 2025-02-22 (krickstadt)
+#: last_checked: 2025-03-05 (krickstadt)
 #: check_frequency: 180d
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 19010,5833 18928,5920 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431
 #: osm_watch: way id="199768813" version="21"
@@ -3972,9 +3973,9 @@ Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahre
 #: by[nocache]: https://archive.is/fsnJt
 #: by: https://www.morgenpost.de/bezirke/pankow/article407082498/berlin-verschiebt-gefuerchtete-bruecken-baustelle-in-prenzlauer-berg.html (voraussichtlich ab Ende März oder im April 2025)
 #: by[nocache]: https://archive.is/zYelP
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schwedter-steg/ (voraussichtliche Bauzeit: April 2025 bis Juli 2025)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schwedter-steg/ (voraussichtliche Bauzeit: April 2025 bis Juli 2025) (mittlerweile ab März 2025)
 #: osm_watch: note 4317053 4
-#: last_checked: 2025-01-20 (mapillary)
+#: last_checked: 2025-03-05 (mapillary)
 #: next_check: 2025-04-01 (SenMVKU website)
 Schwedter Steg: wird wegen Bauarbeiten gesperrt	? 10005,16150 10062,15927
 # 
@@ -4203,7 +4204,7 @@ Benekendorffstr.: wird hier eine Fahrradstraße ausgewiesen?	? 4616,22478 4716,22
 #: next_check: 2025-12-31 (berliner-zeitung)
 Grellstr.: Radspur wird mit Grünbeschichtung ausgeführt	?; 12704,15105 12417,15272 12325,15328 12245,15380 11941,15586
 #: XXX hier noch keine Bauarbeiten zu sehen
-#: last_checked: 2025-02-01
+#: last_checked: 2025-03-05 (mapillary)
 #: check_frequency: 120d
 Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673
 # REMOVED --- #: next_check ^^^
@@ -5414,7 +5415,7 @@ Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907
 #: osm_watch: note 3954748 6
 #: osm_watch: note 4127416 1
 #: XXX Vorfahrtsregelung wird auch geändert, Einbahnstraßenregelungen für Kfz (Höhe Fürstenberger Str. nur Richtung N/S bis Griebenower)
-#: last_checked: 2025-02-20 (mapillary)
+#: last_checked: 2025-03-05 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-06-30 (infravelo)
 # REMOVED (hier noch) nicht) --- Schwedter Str.: Fahrradstraße geplant, wo genau?	? 10933,14122 10822,14179 10739,14228 10629,14299
@@ -5717,7 +5718,7 @@ Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,989
 #: last_checked: 2025-01-18
 # REMOVED --- #: next_check: 2024-03-01
 Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
-#: last_checked: 2024-11-30
+#: last_checked: 2025-03-05 (mapillary)
 Schivelbeiner Str./Seelower Str.: Zebrastreifen geplant	?::projected 10767,16174 10739,16146 10708,16118
 #: note: in der Drucksache fälschlicherweise "Chatronstraße" (ohne r) geschrieben
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5734 (Antrag für einen Fußgängerüberweg am benachbarten Kalvinistenweg)
@@ -5889,7 +5890,7 @@ Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6323 (Antrag) (in der BVV beschlossen)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6323&date=20230702 (Vorlage zur Kenntnisnahme)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/unendliche-behordensaga-um-gleimstrasse-warum-eine-berliner-strasse-im-dauerstau-zwischen-fahrrad-und-auto-ideologie-feststeckt-12825074.html
-#: last_checked: 2025-02-19
+#: last_checked: 2025-03-05 (mapillary)
 #: check_frequency: 120d
 Gleimstr.: entsteht hier eine Fahrradstraße?	? 10953,15787 10701,15750 10554,15725 10426,15705 10418,15704 10170,15659 10130,15653
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021/2022)
@@ -8821,10 +8822,11 @@ Colbestr.: Einbahnstraße für Kfz in Vorbereitung	? 14416,11815 14468,11992 14523
 #: by: https://www.tagesspiegel.de/berlin/bezirke/nach-gekipptem-spatzen-urteil-jetzt-verschwindet-die-haupttribune-des-berliner-jahn-stadions-13100047.html
 #: by: https://www.tagesspiegel.de/berlin/spatzen-brut-gewinnt-gegen-senat-gericht-bestatigt-abrisstopp-fur-jahnstadion-westtribune-13208161.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrich-ludwig-jahn-sportpark.734/#post-24561
+#: by: https://entwicklungsstadt.de/artenschutz-ignoriert-kritik-an-baumfaellungen-im-jahnsportpark/
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: XXX Wann starten die Bauarbeiten? vvv
-#: last_checked: 2025-02-16 (architektur-urbanistik) vvv
+#: last_checked: 2025-03-05 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-02-28 vvv
 Jahnsportpark: wird es während der Bauarbeiten Einschränkungen geben? Werden sich die Wegbeziehungen ändern?	? 10598,15150 10583,15208 10562,15236 10520,15353 10512,15406 10456,15561
@@ -10546,7 +10548,7 @@ Bebauungsplan 12-68: wird der bestehende Weg "aufgewertet"; entsteht eine offizi
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spree-ecke-havel-im-berliner-westen-so-soll-die-neue-top-immobilie-an-der-flussmundung-aussehen-10850518.html (Fertigstellung von The Foundry: Ende 2026)
 #: by: https://www.tagesspiegel.de/plus/was-ist-los-an-havel-ecke-spree-baustopp-an-spandaus-bekanntester-ruine-12973783.html (Vorhaben ist erst einmal gestoppt)
 #: osm_watch: way id="24045975" version="13"
-#: osm_watch: way id="385190757" version="6"
+#: osm_watch: way id="385190757" version="7"
 #: last_checked: 2025-01-07 (Tsp)
 #: check_frequency: 720d
 # REMOVED --- #: next_check: 2026-12-31

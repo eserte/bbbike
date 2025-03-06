@@ -35634,8 +35634,8 @@ EOF
        until => 1648764000, # 2022-04-01 00:00
        text  => 'Dreesch - Grünow: Bauarbeiten, Sperrung bis zum 31.03.2022',
        type  => 'gesperrt',
-       source_id => '217300506',
        data  => <<EOF,
+#: source_id: 217300506 (mittlerweile inaktiv)
 	2::inwork 45543,101043 45648,100789 45806,100487 45847,100277 45868,100193
 EOF
      },
@@ -41381,7 +41381,7 @@ EOF
 #: also_indoor: traffic (H,G,B,T,W)
 #: priority: #A vvv
 #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2025-02-26 vvv
+#: last_checked: 2025-03-05 (krickstadt) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
@@ -42231,7 +42231,7 @@ EOF
      },
      { from  => 1699340417, # 2023-11-07 08:00
        until => 1720876631, # undef, # 1704063600, # 2024-01-01 00:00
-       #text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, voraussichtlich bis Dezember 2023, vermutlich noch länger',
+#      text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, voraussichtlich bis Dezember 2023, vermutlich noch länger',
        text  => 'Bürgerpark: Weg von/zur Wilhelm-Kuhr-Str. gesperrt, Ende der Bauarbeiten unbekannt (Stand Anfang Mai 2024: Sperrung besteht weiterhin)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -42832,7 +42832,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neuer-arger-um-bahn-baustelle-in-berlin-anwohner-kritisieren-kahlschlag-auf-raten-im-geschutzten-mauerstreifen-13189999.html
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
-#: osm_watch: way id="1244101968" version="4"
+#: osm_watch: way id="1244101968" version="5"
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
@@ -45074,11 +45074,11 @@ EOF
        data  => <<EOF,
 #: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
-#: osm_watch: way id="1083535036" version="7"
-#: osm_watch: way id="1119255054" version="6"
+#: osm_watch: way id="1083535036" version="8"
+#: osm_watch: way id="1119255054" version="7"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-02-11 (osm)
+#: last_checked: 2025-03-05 (osm)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -46187,14 +46187,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1741201619, # undef, # XXX
        text  => 'Neustrelitzer Str.: Bauarbeiten, Fahrbahn gesperrt, Engstelle auf dem Bürgersteig, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (T,B,ex-G)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-02-21 (traffic)
-#: check_frequency: 14d (traffic checks)
+#: also_indoor: traffic (ex-T,ex-B,ex-G)
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2025-02-21 (traffic) --- #: check_frequency: 14d (traffic checks)
 	q4::inwork 16668,14765 16750,14747
 EOF
      },
@@ -46405,11 +46403,11 @@ EOF
 EOF
      },
      { from  => 1737957600, # 2025-01-27 07:00
-       until => 1741885200, # 2025-03-13 18:00
-       text  => 'Johannisberger Str.: Bauarbeiten zwischen Wiesbadener Str. und Rüdesheimer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 07:00 bis 13.03.2025 18:00',
+       until => $isodate2epoch->("2025-04-25 23:59:59"), # 1741885200, # 2025-03-13 18:00
+       text  => 'Johannisberger Str.: Bauarbeiten zwischen Wiesbadener Str. und Rüdesheimer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 07:00 bis 25.04.2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.31084,52.470147,28.01.2025,07:00 (bis 13.03.2025)
+#: source_id: viz2021:13.31084,52.470147,28.01.2025,07:00 (bis 13.03.2025) (bis 25.04.2025)
 	q4::inwork 4159,6890 4160,7043 4160,7278
 EOF
      },
@@ -46588,7 +46586,7 @@ EOF
        data  => <<EOF,
 #: by: rbb (bis 17.03.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
-#: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich
+#: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich; am 2025-03-05 war gesperrt
 	q3::inwork 13741,13107 13692,13221 13644,13332
 EOF
      },
@@ -46763,6 +46761,25 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.418488,52.553809,03.03.2025,07:00 (hier nur Kfz-Verkehr, bis 02.08.2025)
 	q4::inwork; 11284,16527 11289,16423
+EOF
+     },
+     { from  => 1742079600, # 2025-03-16 00:00
+       until => 1743202799, # 2025-03-28 23:59
+       text  => 'Schulzendorfer Str.: Sanierung, Sperrung der Fahrbahn (Gartenstr. - Dahmestr. sowie Neptunstr. - Amorstr.), vom 17. März 2025 bis voraussichtlich 28. März 2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1537994.php (zwei Bauabschnitte, allerdings nicht zeitlich genau bestimmt)
+	q4::inwork 22345,-10 22382,-87 22440,-175
+	q4::inwork 22750,-650 22696,-579 22644,-497
+EOF
+     },
+     { from  => 1741240800, # 2025-03-06 07:00
+       until => 1757343600, # 2025-09-08 17:00
+       text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 08.09.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025)
+	q4::inwork; 2092,7810 2099,7904 2112,8088 2121,8351
 EOF
      },
     );
