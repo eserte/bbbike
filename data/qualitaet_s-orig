@@ -4547,11 +4547,12 @@ Stendaler Platz: überwiegend Asphalt	Q0 6394,14085 6489,14071
 Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: Gehwegplatten und Verbundsteinpflaster	Q0- 12878,12430 12950,12340 12985,12303
 Hinter dem Zeughaus: kleinteiliges Kopfsteinpflaster	Q1 9846,12516 9953,12533
 (Krankenhaus Herzberge): Asphalt mit Schäden	Q1- 17479,13490 17500,13504 17510,13527 17502,13554 17475,13567
-Beilsteiner Str.: Beton	Q0- 19025,14037 18998,14089 18859,14048 18871,13796 18875,13467
+Beilsteiner Str.: Beton, einige Hebungen und Zwischenräume	Q1+ 19025,14037 18998,14089 18859,14061
+Beilsteiner Str.: Beton	Q0- 18859,14061 18871,13796 18875,13467
 Beilsteiner Str.: Asphalt mit einigen Schäden	Q0- 18875,13467 18852,13269 18832,13099 18800,12838
 Beilsteiner Str.: Beton	Q0- 18800,12838 18748,12399
 Radebeuler Str.: Beton	Q0- 19025,14037 19067,13818
-Marzahner Chaussee: Asphalt	Q0- 19187,13850 19140,14057 19025,14037
+Marzahner Chaussee: Asphalt	Q0- 19195,13850 19140,14057 19025,14037
 Merler Weg: Beton mit Schäden und Hebungen	Q1- 18852,13269 18775,13279 18766,13257
 Ruwersteig: Beton	Q0- 19364,13033 19333,13037 19293,13043
 Ruwersteig: Verbundsteinpflaster und Asphalt	Q0- 19293,13043 19217,13054 19123,13067
@@ -9150,7 +9151,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="13"
-#: last_checked: 2024-12-01
+#: last_checked: 2025-03-07
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -31265,7 +31266,7 @@ Holbeinstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3348,3278 3499,3377 
 # 
 #: by: Michael [AM]
 #: corrected_by: srt (Asphalt -> Beton)
-Coswiger Str.: Beton	Q1 19187,13850 19067,13818 19000,13801 18871,13796
+Coswiger Str.: Beton	Q1 19195,13850 19067,13818 19000,13801 18871,13796
 # 
 #: by: Karin Millonig [AM]
 #: corrected_by: srt ("mäßig" gestrichen, Q2 -> Q0)
