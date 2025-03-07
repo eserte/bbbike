@@ -154,7 +154,7 @@ sub run_grep {
 	        -text => 'B',
 		-pady => 0,
 	    );
-	    my ($coordinate_pairs) = $matching_text =~ /(-?\d+,-?\d+(?:\s+-?\d+,-?\d+)*)/;
+	    my ($coordinate_pairs) = $matching_text =~ /\s(-?\d+,-?\d+(?:\s+-?\d+,-?\d+)*)(?:\s|$)/;
 	    if ($coordinate_pairs) {
 		$bbbike_button->configure(-command => sub { call_bbbikeclient($coordinate_pairs) });
 	    } else {
