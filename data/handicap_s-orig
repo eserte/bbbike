@@ -128,7 +128,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-03-04
+#: last_checked: 2025-03-08
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -342,6 +342,7 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 # 
 #: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nördlich Semmelweisstr. Anfang März 2025 offen, der südliche Abschnitt Ende April 2025)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20250308 (bis Ende April 2025)
 #: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
 #: last_checked: 2024-12-27
 #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
@@ -1004,7 +1005,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="40"
 #: osm_watch: way id="1193560283" version="9"
-#: last_checked: 2025-03-02 (osm)
+#: last_checked: 2025-03-08
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -1012,7 +1013,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-02-28
+#: last_checked: 2025-03-08
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1655,7 +1656,8 @@ Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 128
 Friedrichshaller Str.: einige Fußgänger	q2 2757,7604 2774,7655
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120418.1330.368930.html
 Luisenhain: Radfahren erlaubt, Fußgänger haben Vorrang	q2- 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
-(Rathaus Köpenick - Luisenhain): Fußgänger	q2- 22138,4642 22074,4664
+#: note: hier explizit für Radfahrer verboten
+(Rathaus Köpenick - Luisenhain): Fußgänger	q4 22138,4642 22074,4664
 (Uferweg): Fußgänger, teilweise eng	q2- 22433,4887 22326,4940 22310,4935 22241,4911 22204,4910 22180,4938 22146,4934 22131,4914 22153,4861 22153,4840
 (Freiheit/Lindenstr. - Uferweg): Fußgänger	q2 22196,4847 22204,4910
 (S-Bahnhof - Schlachtensee): Radfahren erlaubt, Fußgänger haben Vorrang	q2 -2365,3582 -2398,3633 -2397,3647 -2396,3666
@@ -3644,6 +3646,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (Verlängerung Hiddenseestr.): Fußgänger	q2 10960,17674 10969,17587
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: osm_watch: way id="1076571010" version="1"
 #: last_checked: 2025-03-05
 #: check_frequency: 45d
@@ -5289,6 +5292,9 @@ Ulsterstr.: enge Straße	q0- 13575,8378 13641,8470
 (Landsberger Allee - Große-Leege-Str.): Fußgänger, Grünanlage	q3 15963,14470 15902,14498
 # 
 Friedlander Str. - Köllnische Heide: schmal, unübersichtlich	q3 20574,4317 20520,4356
+# 
+#: note: keine Schilder
+(Blütenweißweg - Harnischweg): einige Fußgänger möglich	q1 21427,5347 21399,5336 21363,5336
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

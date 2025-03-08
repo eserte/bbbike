@@ -1191,7 +1191,7 @@ Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12905
 Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX nach den Bauarbeiten wird vermutlich der provisorische Asphalt entfernt; dann wieder "Kopfsteinpflaster, Q2" vvv
-#: last_checked: 2025-01-29 vvv
+#: last_checked: 2025-03-08 vvv
 #: next_check: 2027-03-31 vvv
 Alter Markt: Asphalt	Q0 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Asphalt	Q0 22390,4702 22388,4737 22377,4836
@@ -1643,7 +1643,7 @@ Gleiwitzer Str.: neuer Asphalt	Q0 21146,9988 20947,9999
 #: by: https://pascalgrothe.de/gleiwitzer-strasse-zweiter-bauabschnitt-fuer-sanierung-startet-2025/ (Erneuerung im Frühjahr 2025, dann vermutlich wieder besserer Asphalt)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12057 (Anfrage)
 #: osm_watch: note 3729559 8
-#: last_checked: 2025-02-08
+#: last_checked: 2025-03-08
 #: next_check: 2025-05-01 (pascalgrothe)
 Gleiwitzer Str.: Asphalt mit unebenen Stellen	Q1+ 20947,9999 20703,10004
 Buchenhainer Str.: Asphalt	Q0 21164,8243 21325,8217
@@ -3116,12 +3116,13 @@ Langer Weg: unbefestigter Weg, holprig	Q2 20683,9553 20682,9448 20681,9297 20676
 Langer Weg: Asphalt	Q0 20677,8700 20677,8446
 Hadubrandweg: Sandweg	Q2 20588,8447 20677,8446
 Hadubrandweg: Asphalt	Q0 20677,8446 20821,8438 20918,8383
-Hadubrandstr.: Beton, mit einigen Schäden	Q1- 20918,8383 21010,8379 21055,8374 21122,8370 21178,8367 21257,8364 21264,8302 21307,8296 21337,8273
+Hadubrandstr.: Beton, mit einigen Schäden	Q1- 20918,8383 21010,8379 21055,8374 21117,8371 21178,8367 21257,8364 21264,8302 21307,8296 21337,8273
 Biesdorfer Str.: Beton	Q0 21178,8367 21164,8243 21166,8195
 Biesdorfer Str.: Verbundsteinpflaster	Q0- 21166,8195 21169,8112 21233,8022 21243,8010 21312,7943 21324,7931
 Biesdorfer Str.: Beton	Q0 21324,7931 21383,7872 21410,7824
-Biesdorfer Str.: Asphalt	Q0 21410,7824 21419,7806 21468,7727 21532,7695 21541,7674 21540,7630
-Semliner Str.: Waldweg, möglicherweise sandig	Q2 22303,7361 22353,7562
+#: historical_note: ursprünglich Q0, evtl. schlechter geworden oder genauer geprüft?
+Biesdorfer Str.: Asphalt mit Unebenheiten	Q1+ 21410,7824 21419,7806 21468,7727 21532,7695 21541,7674 21540,7630
+Semliner Str.: Waldweg, möglicherweise sandig	Q2 22296,7366 22353,7562
 #: by: Andreas Mühlhausen
 #: corrected_by: srt (Q2 -> Q3)
 Gelnitzstr.: schlechtes Kopfsteinpflaster	Q3 22900,5740 22885,5835
@@ -5599,7 +5600,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (vom 27. Februar 2022: Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2025-01-29
+#: last_checked: 2025-03-08
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
@@ -5766,7 +5767,7 @@ Weitzgründer Str.: Asphalt	Q0 23717,9509 23673,9414
 Weitzgründer Str.: Asphalt	Q0 23643,9330 23596,9220 23541,9091 23469,8929
 Herderstr. (Mahlsdorf): Asphalt	Q0 23633,8872 23569,8775 23482,8636
 Bergedorfer Str.: Asphalt	Q0 23855,8382 23731,8466 23627,8543 23511,8617 23482,8636 23392,8694 23291,8758 23182,8828 23082,8892 22988,8952 22886,9017 22694,9139 22593,9203 22442,9300 22295,9395 22200,9430 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592
-Kleinschewskystr.: Asphalt	Q0 22960,7215 22717,7276 22528,7314 22303,7361 22172,7384 21956,7428
+Kleinschewskystr.: Asphalt	Q0 22960,7215 22717,7276 22528,7314 22296,7366 22172,7392 21956,7428
 Keplerstr. (Oberschöneweide): Asphalt	Q0 19161,6291 19259,6133 19283,6123
 Kottmeierstr.: Asphalt	Q0 18645,6511 18801,6471 19118,6248
 #: by: http://www.flickr.com/photos/aotw/4883886090/sizes/l/in/pool-39413187@N00/
@@ -5814,10 +5815,11 @@ Geraldstr.: Asphalt	Q0 21072,8742 21131,8739
 #: XXX_prog: gibt es eine bessere Lösung dafür? Ein-Punkt-Qx-Eintrag mit Richtung?
 Geraldstr.: Asphalt, vor und hinter der Alberichstr. Kopfsteinpflaster	Q1 20909,8700 20967,8716 21072,8742
 (Geraldstr. - Wuhlewanderweg): unbefestigter Pfad	Q2 21131,8739 21183,8738
-#: note: laut osm track grade3
-Wateweg: Beton	Q0 21122,8370 21121,8424
-Wateweg: Feinschotter	Q1 21121,8424 21127,8532
-Wateweg: unbefestigte Straße	Q2 21127,8532 21115,8618 21123,8678 21131,8739
+#: historical_note: früher Beton
+Wateweg: Asphalt	Q0 21117,8371 21121,8424
+#: historical_note: früher Feinschotter, Q1
+Wateweg: Asphalt	Q0 21121,8424 21125,8548
+Wateweg: unbefestigte Straße	Q2 21125,8548 21115,8618 21123,8678 21131,8739
 #: historical_note: früher (vor den Hochbauarbeiten 2022-2024) Gras, Q3
 Wateweg: unbefestigte Straße, sandig	Q3+ 21131,8739 21124,8792
 Erwinstr.: Beton	Q0 21047,8120 21169,8112
@@ -6242,6 +6244,7 @@ Werner-Loebermann-Weg: Asphalt	Q0 9268,8029 9268,8331 9292,8404
 Alexander-Meißner-Str.: Asphalt	Q0 19894,-835 20078,-1029 20388,-1373 20394,-1397 20416,-1721
 Geraldweg: Asphalt	Q0 20909,8700 20834,8694 20677,8700 20555,8694
 Geraldweg: unbefestigter Weg	Q2+ 20555,8694 20553,8641
+Alberichstr.: Asphalt mit leichten Schäden	Q0- 20937,9229 20936,9156 20932,8956 20967,8716
 # REMOVED (nein, keine Besserung) --- #: XXX wurde hier bei der Fahrbahnqualität nachgebessert? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
 Alberichstr.: Asphalt mit Schäden	Q1+ 20967,8716 21010,8379
 (Hadubrandstr. - Wuhlewanderweg): Kopfsteinpflaster	Q2+ 21257,8364 21276,8374
@@ -12816,7 +12819,8 @@ Adolf-Heyden-Str.: Asphalt	Q0 21413,5180 21444,5112 21476,5048 21494,5011
 Henriette-Lustig-Str.: Asphalt	Q0 21375,4974 21380,5003 21476,5048 21611,5119
 (Henriette-Lustig-Str. - Uferweg): Verbundsteinpflaster	Q1 21611,5119 21645,5135
 Wäscherinnenweg: Verbundsteinpflaster	Q1 21444,5112 21358,5072 21335,5075
-Blütenweißweg: Verbundsteinpflaster	Q1 21483,5374 21427,5347
+Blütenweißweg: Verbundsteinpflaster	Q1+ 21483,5374 21427,5347
+(Blütenweißweg - Harnischweg): wassergebundene Decke	Q1 21427,5347 21399,5336 21363,5336
 Am Kutscherhaus: Verbundsteinpflaster	Q1+ 21514,5310 21386,5251 21355,5254
 (zum Spreeufer): Feinschotter	Q1- 20473,5436 20480,5445 20512,5492 20525,5513
 (am Spreeufer): Waldweg, Wurzeln, einige sandige Stellen	Q3+ 20512,5492 20582,5466 20724,5439 20827,5431
@@ -13788,8 +13792,15 @@ Alte Potsdamer Str.: Betonpflaster	Q0- 8280,11296 8318,11324 8375,11368 8389,113
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/informationsveranstaltung-zum-neubau-der-ollenhauerstrasse_a425762
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/bezirksamt-reinickendorf-stellt-plaene-auf-buergerversammlung-vor_a427756 (Planung: Großkopfstraße - Reinickes Hof; Baubeginn 2027?)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12864 (Einwohneranfrage)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php (Baubeginn: 2027, Bauende: 2031)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.1495312.php
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/strassenbaumassnahmen-im-bezirk-reinickendorf/lp_ollenhauer_lph03_p05-01.pdf
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/strassenbaumassnahmen-im-bezirk-reinickendorf/lp_ollenhauer_lph03_p05-02.pdf
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/strassenbaumassnahmen-im-bezirk-reinickendorf/lp_ollenhauer_lph03_p05-03.pdf
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/strassenbaumassnahmen-im-bezirk-reinickendorf/lp_ollenhauer_lph03_p05-04.pdf
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/strassenbaumassnahmen-im-bezirk-reinickendorf/lp_ollenhauer_lph03_p05-05.pdf
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
-#: next_check: 2031-12-31 vvv
+#: next_check: 2031-12-31 (infravelo, BA-Seite) vvv
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5243,18162 5301,18447 5324,18560 5345,18675
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5324,18560 5301,18447 5243,18162 5225,18070
 #: next_check ^^^
@@ -14211,7 +14222,7 @@ Darser Str.: Asphalt	Q0 2327,1009 2239,1104 2199,1179 2166,1256 2129,1336 2077,1
 Krämerweg: Asphalt	Q0 -5267,16871 -5224,17046 -5178,17258
 #: note: laut ADFC-Karte gut geeignet
 #: confirmed_by: srt
-Wongrowitzer Steig: guter Asphalt	Q0 22797,6978 22663,7014 22474,7065 22358,7093 22240,7122 22132,7148 22035,7146
+Wongrowitzer Steig: guter Asphalt	Q0 22797,6978 22663,7014 22474,7065 22358,7093 22250,7119 22132,7148 22035,7146
 Straße 28 (Blankenburg): fester Sandweg	Q2 15170,21270 15219,21271 15260,21270
 #: corrected_by: srt ("fester Sandweg, schlechte Qualität" -> ...)
 Hans-Schumacher-Str.: unbefestigte Straße, teilweise holprig	Q2 11259,23928 11944,23391 11963,23410 12043,23347
@@ -18754,9 +18765,9 @@ Seelower Str.: Kopfsteinpflaster	Q2 10778,16485 10754,16305 10739,16146 10729,16
 # 
 #: by: Stephan Fleischer: vvv
 #: confirmed_by: mapillary
-Semliner Str.: Beton	Q0 22196,6957 22240,7122
+Semliner Str.: Beton	Q0 22196,6957 22226,7012 22250,7119
 #: corrected_by: srt (Beton, Q0 -> ...)
-Semliner Str.: Asphalt/Beton, Schäden durch Wurzelhebungen	Q1- 22240,7122 22272,7242 22303,7361
+Semliner Str.: Asphalt/Beton, Schäden durch Wurzelhebungen	Q1- 22250,7119 22272,7242 22296,7366
 #: by ^^^
 # 
 #: by: Susanne Zöller: vvv
@@ -19975,7 +19986,7 @@ Minheimer Str.: Kleinpflastersteine	Q2 2116,25614 2047,25811
 # 
 #: by: Peter Koethe:
 #: confirmed_by: srt
-Glasberger Str.: guter Asphalt	Q0 22132,7148 22172,7384 22190,7475 22244,7609 22279,7672
+Glasberger Str.: guter Asphalt	Q0 22132,7148 22172,7392 22192,7481 22244,7609 22279,7672
 # 
 #: by: sven (wesuma):
 Petzower Str.: Asphalt	Q0 -6610,1081 -6581,1066 -6515,1011 -6368,989 -6221,1009 -6188,997 -6170,969
@@ -20872,7 +20883,7 @@ Mühltaler Str.: guter Asphalt	Q0 21759,7985 21914,7862 22070,7726 22244,7609 223
 Egersfelder Allee: guter Beton	Q0 21901,7548 21942,7571 21978,7614 22070,7726 22138,7830
 #: confirmed_by: srt
 Falkstätter Str.: guter Asphalt	Q0 21415,8435 21480,8578 21576,8715 21625,8735 21703,8756 21819,8770 21867,8752
-Hoppendorfer Str.: guter Beton	Q0 21810,7749 21914,7862 21994,7949
+Hoppendorfer Str.: guter Beton	Q0 21810,7749 21816,7754 21914,7862 21994,7949
 #: by: ^^^
 # 
 #: by: Ilona Lange:
@@ -26987,8 +26998,12 @@ Ludwig-Klapp-Str.: mäßiges Verbundsteinpflaster	Q2+ 16115,6995 16162,6951 16220,
 #: by: Dorith Budich:
 (Ötztaler Str. - Brixener Str.): Betonplatten	Q1 10630,17421 10629,17450 10609,17460 10545,17458 10543,17421 10502,17419
 # 
-#: by: Michael Nestler:
-Markstädter Str.: guter Beton	Q0 22190,7475 22118,7507 21978,7614 21810,7749
+#: by: Michael Nestler: vvv
+#: confirmed_by: srt
+Markstädter Str.: guter Beton	Q0- 22192,7481 22110,7514 21978,7614
+#: corrected_by: srt (guter Beton, Q0 -> ...)
+Markstädter Str.: Verbundsteinpflaster	Q1+ 21978,7614 21902,7684 21816,7754
+#: by ^^^
 # 
 #: by: Martin Rehfeld:
 Zwingenberger Weg: guter Beton	Q0 -519,4737 -552,4698 -581,4662

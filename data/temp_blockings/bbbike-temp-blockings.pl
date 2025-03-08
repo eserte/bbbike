@@ -22277,7 +22277,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-02-23 (traffic)
+#: last_checked: 2025-03-08 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -31481,7 +31481,7 @@ EOF
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-03-02 (traffic) vvv
+#: last_checked: 2025-03-08 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -33258,12 +33258,13 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/verkauf-fur-1111-millionen-euro-geplant-zwei-weitere-signa-projekte-in-berlin-sind-insolvent-12120476.html
 #: by[nocache]: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/verkauf-fur-1111-millionen-euro-geplant-zwei-weitere-signa-projekte-in-berlin-sind-insolvent-12120476.html
 #: by: https://www.presseportal.de/pm/163061/5863501 (Projekt P1; Fertigstellung bis Anfang 2027)
+#: by: https://www.quantum.ag/presseartikel/quantum-uebernimmt-berliner-projekt-p1
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="12"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2024-12-08 (architektur-urbanistik)
+#: last_checked: 2025-03-06 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 	q4::inwork 6021,10405 6116,10688
@@ -36263,7 +36264,8 @@ EOF
 #      dont_check_date => 1,
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, voraussichtlich bis 28.08.2023, eventuell etwas länger bis zum 30.08.2023',
 #       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 18.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
-      text  => 'Schubertstr.: etwa 80m der Straße westlich der Hämmerlingstr. gesperrt, u.U. außerhalb der Arbeitszeiten passierbar, Ende der Bauarbeiten unbekannt',
+#      text  => 'Schubertstr.: etwa 80m der Straße westlich der Hämmerlingstr. gesperrt, u.U. außerhalb der Arbeitszeiten passierbar, Ende der Bauarbeiten unbekannt',
+       text  => 'Schubertstr.: Sperrung wegen Baustelle, auch für Fußgänger nicht passierbar, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
@@ -36299,7 +36301,7 @@ EOF
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2024-12-04 vvv
+#: last_checked: 2025-03-08 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-10-04 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -39161,7 +39163,8 @@ EOF
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="27"
-#: last_checked: 2024-11-06
+#: osm_watch: way id="1231148375" version="5"
+#: last_checked: 2025-03-08
 #: check_frequency: 120d
 #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
@@ -43920,7 +43923,7 @@ EOF
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-07 vvv
+#: last_checked: 2025-03-08 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-03-27 vvv
 Holteistr.	q4::inwork 14575,11407 14639,11512
@@ -46556,7 +46559,7 @@ EOF
      },
      { from  => 1739702908, # 2025-02-16 11:48
        until => 1764543600, # 2025-12-01 00:00
-       text  => 'Alt-Köpenick: Bauarbeiten, Straße zwischen Freiheit und Rosenstr. gesperrt, 17.02.2025 bis 30.11.2025',
+       text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Freiheit und Müggelheimer Str. gesperrt, 17.02.2025 bis 30.11.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ALTSTADTKOEPENICK-2024
@@ -46564,9 +46567,13 @@ EOF
 #: source_id: bvg2024:162#f0f63843-db69-4d37-8f71-963e4e85cebf (kein Endedatum)
 #: source_id: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025)
-#: next_check: 2025-06-02 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-03-08 vvv
+#: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-11-30 (Ausschreibungsunterlagen)
-	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660
+	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+Platzfläche	q3::inwork 22111,4562 22093,4499
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1739634060, # 2025-02-15 16:41
@@ -46678,13 +46685,15 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 EOF
      },
      { from  => 1740415750, # 2025-02-24 17:49
-       until => 1740761704, # 1743202800, # 2025-03-29 00:00
-       text  => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis 28.03.2025',
+       until => $isodate2epoch->("2025-03-19 18:00:00"), # 1743202800, # 2025-03-29 00:00
+#      text  => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis 28.03.2025',
+       text  => 'Hönower Weg: Abschnitt der Fahrbahn gesperrt, voraussichtlich bis 19.03.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: also_indoor: traffic (ex-H,G[falsch],ex-B,ex-T)
-# REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-02-28 --- #: check_frequency: 10d --- #: next_check: 2025-03-28 (Halteverbotsschilder)
-	2::inwork 17587,9655 17668,9632 17777,9649
+# REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-02-28 --- #: check_frequency: 10d --- #: next_check: 2025-03-28 (Halteverbotsschilder) ---	2::inwork 17587,9655 17668,9632 17777,9649
+#: note: Länge etwa 150m, Bürgersteig existiert
+	q2::inwork 18266,9853 18066,9770
 EOF
      },
      { from  => undef,
@@ -46701,11 +46710,12 @@ EOF
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17), aber nicht immer (gesehen 2024-11-16 Sat); das südliche Tor ist immer zu
 #: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
+#: note: nördliches Tor geschlossen, südliches Tor nicht geprüft (gesehen 2025-03-08 Sa 11:30)
 #: osm_watch: way id="207757723" version="6"
 #: osm_watch: way id="275795707" version="3"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-02-26 vvv
+#: last_checked: 2025-03-08 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: note: kann offen sein, aber nicht immer

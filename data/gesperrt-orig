@@ -781,7 +781,7 @@ Bernhard-Bästlein-Str.	1 15595,14045 15593,13768
 Washingtonplatz	1s 8106,13130 8011,13128 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
 # REMOVED (während der Bauarbeiten muss man zum Notweg kommen) --- #: by: Bernhard Husch: --- #: note: Einfahrt verboten --- Pfarrer-Lütkehaus-Platz	1 10228,-2136 10273,-2158
-Radebeuler Str.	1 19067,13818 19025,14037
+Radebeuler Str.	1 19025,14037 19067,13818
 Beilsteiner Str.	1 18748,12399 18800,12838 18832,13099 18852,13269
 #: by: osm
 (Breite Str., Verbindung)	1s:q4 10463,18321 10487,18270
@@ -1314,7 +1314,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="14"
-#: last_checked: 2024-12-04
+#: last_checked: 2025-03-08
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -4288,7 +4288,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="29"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-03-02 (osm)
+#: last_checked: 2025-03-08
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4345,7 +4345,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-02-28
+#: last_checked: 2025-03-08
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4353,7 +4353,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-02-28 vvv
+#: last_checked: 2025-03-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4425,20 +4425,6 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_05_0453_0508_online.pdf (Einziehung von Straßenland)
-#: by: https://www.wuhletal.de/wp-content/uploads/2022/04/GS_Taetigkeitsbericht_WTgGmbH_2021_.pdf (Erwähnung der Kleinstwohnanlage)
-#: note: nördlicher Abschnitt soll eingezogen werden
-#: XXX angrenzend Hochbauarbeiten für "Kleinstwohnanlage für das betreute Einzelwohnen für psychisch kranke Erwachsene, Wateweg 36/38"
-#: XXX wird dieser Abschnitt in Zukunft befahrbar bleiben?
-#: XXX kann auch offen sein (gesehen z.B. am 2024-09-01 (Sun)), evtl. nur während Arbeitszeiten gesperrt?
-#: osm_watch: way id="26190195" version="20"
-#: osm_watch: way id="1157662852" version="2"
-#: priority: #C
-#: last_checked: 2024-09-01
-#: check_frequency: 180d
-Wateweg: Bauarbeiten, Weg kann gesperrt sein	2::inwork 21131,8739 21124,8792
-# 
 # REMOVED (offen) --- #: by: https://berliner-abendblatt.de/2023/01/02/adlershof-neues-quartier-fuer-rund-1-000-menschen/ (keine Erwähnung) --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/autofreies-quartier-wohnen-am-campus-nach-drei-jahren-bauzeit-fertiggestellt_a367172 (keine Erwähnung) --- #: XXX Laut Schilder Eröffnung Ende Mai 2023 --- am 04.06.2023 standen aber immer noch Bauzäune --- #: note: laut osm ist der nördliche Abschnitt mittlerweile offen --- #: last_checked: 2023-06-19 vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2023-05-31 vvv --- #: osm_watch: way id="1155774800" version="1" --- Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18836,3203 18834,3315 --- #: osm_watch: way id="1155774804" version="3" --- Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18835,3562 18851,3598 --- #: osm_watch: way id="1155774792" version="2" --- (Straßenbahnstrecke - Konrad-Zuse-Str.): noch nicht fertiggestellt	2::inwork 18833,3388 18857,3418 --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: TELTOWKANALUFERWEG-2023
@@ -4487,16 +4473,17 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.tagesspiegel.de/kultur/classic-open-air-auf-dem-gendarmenmarkt-neustart-mit-anna-netrebko-12869530.html (Wiedereröffnung spätestens am 17. Juli 2025)
 #: by: https://gruen-berlin.de/pressemitteilung/gendarmenmarkt-hauptbaumassnahmen-in-rekordtempo-abgeschlossen (Freigabe im Februar 2025)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gendarmenmarkt-hat-seine-schoenheitskur-fast-hinter-sich_a432984
+#: by: https://www.rbb24.de/panorama/beitrag/2025/03/berlin-gendarmenmarkt-eroeffnung-sanierung.html (Eröffnung am 13. März 2025)
 #: last_checked: 2025-03-05 vvv
 #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2025-02-01 vvv
+#: next_check: 2025-03-13-01 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
 #: osm_watch: way id="766868087" version="14"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
 #: osm_watch: way id="766868090" version="17"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
 #: note ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -4641,7 +4628,8 @@ Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10456 (Vorlage zur Kenntnisnahme)
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
-#: last_checked: 2025-02-26
+#: osm_watch: note 3831047 3
+#: last_checked: 2025-03-08
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -4772,7 +4760,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2025-02-26
+#: last_checked: 2025-03-08
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -4863,8 +4851,8 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="1171090939" version="5"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
-#: last_checked: 2025-02-23
-#: check_frequency: 180d
+#: last_checked: 2025-03-05 (architektur-urbanistik)
+#: check_frequency: 120d
 #: next_check: 2025-12-31 (howoge website)
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -5146,7 +5134,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 #: osm_watch: way id="719023969" version="14"
-#: last_checked: 2024-12-04
+#: last_checked: 2025-03-08
 #: check_frequency: 90d
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (mittlerweile ständig offen?) --- #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So), vermutlich auch am 2023-03-17 (Fr) --- #: osm_watch: way id="944115137" version="10" --- #: last_checked: 2023-03-17 --- Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974

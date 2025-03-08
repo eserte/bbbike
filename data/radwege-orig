@@ -1756,12 +1756,14 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2025-01-11 (okas) vvv
+#: last_checked: 2025-03-08 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
+#: osm_watch: way id="910439501" version="15"
+#: osm_watch: note 3599331 7
 	RW0; 22467,6135 22431,6068
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -2306,7 +2308,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-02-26 vvv
+#: last_checked: 2025-03-08 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -4380,7 +4382,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: note: früher Richtung Norden benutzungspflichtiger Hochbord, mittlerweile Gehweg für Radfahrer frei
 #: osm_watch: way id="865716506" version="20"
-#: last_checked: 2024-11-09 vvv
+#: last_checked: 2025-01-07 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
@@ -7234,7 +7236,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2024-11-06
+#: last_checked: 2025-03-08
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
