@@ -13,11 +13,14 @@
 #: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025)
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
 #: source_id: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
+#: osm_watch: way id="1145213536" version="6"
+#: osm_watch: way id="1363264660" version="2"
+#: note: Halteverbotsschilder bis 18.04.2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-09
 #: check_frequency: 8d
 #: next_check: 2025-03-12 (VIZ-Verkehrsmeldung)
-#: valid: -20250312
+#: valid: -20250418
 Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
 # 
 #: by: https://pandion.de/wohnungsangebote/midtown/ (Fertigstellung ab März 2026)
@@ -38,7 +41,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-09
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -64,7 +67,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="13"
 #: osm_watch: way id="1072662717" version="15"
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-09
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -73,7 +76,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="7"
 #: osm_watch: way id="1146013233" version="10"
 #: osm_watch: way id="1134071039" version="12"
-#: last_checked: 2025-03-05 vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -114,7 +117,6 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 # REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 # REMOVED (fertig) --- #: next_check_id: NIEMANN-2023 --- #: by: https://nitter.cz/VIZ_Berlin/status/1673932919125995523#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnpzQkhnQVhzQUFlekE3LmpwZw== --- #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder) --- #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen --- #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023) --- #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv --- #: last_checked: 2023-11-24 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-12-29 vvv --- #: valid: -20231229 vvv --- Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377 --- Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229 --- Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14286,11186 14328,11320 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
-# REMOVED --- #: also_indoor: traffic (ex-G,ex-W,B,T) --- #: osm_watch: note 3677862 5 --- #: note: Möglicherweise Arbeiten an der neuen Gehwegvorstreckung --- #: last_checked: 2024-12-08 --- Weserstr.: Bauarbeiten, Sackgasse, Bordsteine und Umwege	q4::inwork 14710,11626 14651,11666
 # 
 #: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?)) (wurde mittlerweile umbenannt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11263 (Antrag: nach Ende des Bauvorhabens zu einem Rad/Fußweg umbauen)
@@ -458,7 +460,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2025-02-28 (osm) vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="41"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -577,7 +579,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn für die Straßensanierung 2026 (!))
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-03-01 vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -787,9 +789,9 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 #: osm_watch: note 3913793 9
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
-#: last_checked: 2025-01-02 (mapillary)
-#: check_frequency: 60d
-#: next_check: 2026-12-31
+#: last_checked: 2025-03-09
+#: check_frequency: 90d
+#: next_check: 2026-12-31 (caimmo website)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 # 
 # REMOVED --- #: next_check_id: TRAMTURM-2021 --- #: source_id[inactive]: bvg2021:m27#BVG305466_0 --- #: next_check: 2023-09-06 vvv --- #: check_frequency: 90d vvv --- #: last_checked: 2023-05-14 (osm) vvv
@@ -3648,7 +3650,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-09
 #: check_frequency: 45d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
@@ -5295,6 +5297,8 @@ Friedlander Str. - Köllnische Heide: schmal, unübersichtlich	q3 20574,4317 20520
 # 
 #: note: keine Schilder
 (Blütenweißweg - Harnischweg): einige Fußgänger möglich	q1 21427,5347 21399,5336 21363,5336
+# 
+Simon-Dach-Str.: oft Engstellen durch Lieferverkehr	q2 14006,11843 13981,11746 13954,11647
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

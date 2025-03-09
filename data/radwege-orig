@@ -1792,7 +1792,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX wegen eines Fußgängerschutztunnels unter dem Estrel-Tower ist der vorhandene Radweg abgesperrt
 #: XXX später wieder herstellen: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14334,7395
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2025-02-11 (mapillary)
+#: last_checked: 2025-03-09 (webcam)
 #: check_frequency: 30d
 #: next_check: 2025-12-31 (entwicklungsstadt)
 Busspur ist immer gültig	RW5; 14174,7505 14334,7395
@@ -6863,7 +6863,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://www.bz-berlin.de/berlin/mitte/berlins-laengstes-halteverbot (bis 2027)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
-#: last_checked: 2025-03-01 vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-01-01 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -8026,7 +8026,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="8"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-03-02
+#: last_checked: 2025-03-09
 #: check_frequency: 90d
 asphaltierter Radweg ist größtenteils nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -9354,4 +9354,6 @@ Verbundsteinpflaster	RW1; 4952,17122 4929,17069 4897,17040
 	RW6;RW6 12363,18596 12375,18622 12470,18816 12481,18838
 # 
 	RW3; 7834,7131 7932,7178
+# 
+	RW4?;RW4? -8371,13186 -8358,13340
 # 

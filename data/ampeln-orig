@@ -60,7 +60,7 @@ Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsreglung	X::inwork::alternating 9
 Ringstr.: Gegenverkehrsreglung	X::inwork::alternating 7874,4481
 # 
 #: next_check_id: PERLEBERGER-2024
-#: last_checked: 2024-12-26
+#: last_checked: 2025-03-09
 #: next_check: 2025-09-23
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
@@ -199,9 +199,9 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
-#: last_checked: 2025-03-01
+#: last_checked: 2025-03-09
 #: check_frequency: 180d
-#: next_check: 2025-09-05
+#: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	X::inwork 7873,12927
 # 
 # REMOVED --- #: source_id: viz2021:13.376888,52.517762,25.05.2023,11:19 (bis 30.09.2023) (inaktiv) --- #: last_checked: 2023-06-04 --- #: next_check: 2023-09-30 --- #: valid: -20230930 --- F::inwork 8373,12416
@@ -2281,6 +2281,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 22495,16165
 	X 20832,15981
 	X -8784,13321
+	X -8358,13340
+	X -8371,13186
 #: note: Anforderungsampel
 	F -8050,13080
 	X -6405,14971
@@ -3487,7 +3489,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-03-01 vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

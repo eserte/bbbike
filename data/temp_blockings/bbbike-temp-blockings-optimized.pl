@@ -3221,7 +3221,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-09
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5428,9 +5428,9 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-03-01
+#: last_checked: 2025-03-09
 #: check_frequency: 180d
-#: next_check: 2025-09-05
+#: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
 ',
          'from' => 1683010800,
@@ -5899,7 +5899,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-03-05 vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -6870,7 +6870,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-02-25 (website) vvv
+#: last_checked: 2025-03-09 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -6968,8 +6968,8 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23, 2024-10-30, 2024-11-27) ist die Fahrbahn aufgerissen
 #: note: Halteverbotsschilder bis 28.2.2025, mittlerweile bis 04.03.2025
 #: also_indoor: traffic (none)
-#: osm_watch: way id="36983903" version="34"
-#: osm_watch: way id="1002238498" version="10"
+#: osm_watch: way id="36983903" version="35"
+#: osm_watch: way id="1002238498" version="11"
 #: osm_watch: note 4454125 6
 #: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen
 #: last_checked: 2025-03-04
@@ -7079,7 +7079,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-03-05 vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7403,10 +7403,10 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1753999200
        },
        {
-         'data' => '#: also_indoor: traffic (re-H,T,B)
+         'data' => '#: also_indoor: traffic (ex-H,T,B)
 #: note: Halteverbotsschilder bis 28.02.2025
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2025-02-28 (traffic)
+#: last_checked: 2025-03-09 (traffic)
 #: check_frequency: 10d (traffic)
 # REMOVED --- #: next_check: 2025-02-28 (Halteverbotsschilder)
 	q4::inwork 8842,8561 8916,8511
@@ -7465,10 +7465,11 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1748617200
        },
        {
-         'data' => '#: also_indoor: traffic (G)
+         'data' => '#: also_indoor: traffic (G,W)
 #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-02-12
+#: last_checked: 2025-03-09 (traffic)
+#: check_frequency: 14d (traffic)
 	q4::inwork 15769,14355 15841,14351
 ',
          'from' => undef,
@@ -7825,6 +7826,35 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
          'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 08.09.2025 17:00',
          'type' => 'handicap',
          'until' => 1757343600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025)
+	q4::inwork; 10680,18380 10710,18393 10784,18426 10934,18500 10958,18512 11001,18528
+',
+         'from' => 1741496400,
+         'id' => 4277,
+         'text' => 'Breite Str.: Gleisbauarbeiten zwischen Berliner Str. und Stiftsweg/Hadlichstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 10.03.2025 06:00 bis 11.04.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1744383600
+       },
+       {
+         'data' => '#: by: https://www.berlin-live.de/berlin/verkehr/berlin-schwedter-steg-baustelle-prenzlauer-berg-id222297.html (Bauarbeiten sollen im August 2024 beginnen und 16 Wochen dauern)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/vollsperrung-fur-ein-vierteljahr-senat-verschiebt-wichtige-bruckensanierung-in-prenzlauer-berg-12299603.html (Beginn nun ab "Ende 1. Quartal, Anfang 2. Quartal 2025")
+#: by[nocache]: https://archive.is/fsnJt
+#: by: https://www.morgenpost.de/bezirke/pankow/article407082498/berlin-verschiebt-gefuerchtete-bruecken-baustelle-in-prenzlauer-berg.html (voraussichtlich ab Ende März oder im April 2025)
+#: by[nocache]: https://archive.is/zYelP
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schwedter-steg/ (voraussichtliche Bauzeit: April 2025 bis Juli 2025) (mittlerweile ab März 2025)
+#: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
+#: osm_watch: note 4317053 4
+#: last_checked: 2025-03-04 (mapillary)
+#: next_check: 2025-03-10 (VIZ-Verkehrsmeldung)
+Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
+',
+         'from' => 1741496400,
+         'id' => 4278,
+         'text' => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, vom 10.03.2025 06:00 bis 03.07.2025 17:00',
+         'type' => 'gesperrt',
+         'until' => 1751554800
        }
      
 );

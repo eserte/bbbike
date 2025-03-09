@@ -4023,10 +4023,14 @@ Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 172
 # 
 # REMOVED (laut osm wieder offen) --- #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898 --- #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant) --- #: osm_watch[closed]: note 4551219 3 --- #: osm_watch: way id="1009956629" version="14" --- #: last_checked: 2025-01-15 --- #: next_check: 2024-10-31 --- Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::inwork 7912,14160 7875,14204
 # 
+#: next_check_id: EUROPACITY-2015
+#: last_checked: 2025-03-09
+Otto-Weidt-Platz: Zuwegung zum Golda-Meir-Steg wegen Bauarbeiten gesperrt	2::inwork 7778,14059 7818,14117 7861,14133
+# 
 #: by: mapillary/mapilio
 #: add_fragezeichen: Ist die Straße noch wegen Bauarbeiten gesperrt?
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-02-25 (traffic)
+#: last_checked: 2025-03-09 (traffic)
 #: check_frequency: 14d (traffic checks)
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 # 
@@ -4107,7 +4111,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-03-04
+#: last_checked: 2025-03-09
 #: check_frequency: 30d
 #: next_check: 2025-06-30
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4227,7 +4231,7 @@ An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 1092
 #: XXX laut Amtsblatt Verlängerung der Lisa-Fittko-Straße, wird das auch auf der anderen Seite so ausgeschildert?
 #: XXX culdesac-Eintrag an der Döberitzer Str. muss vermutlich geändert werden
 #: osm_watch: way id="237704728" version="4"
-#: last_checked: 2025-03-02 (webcam)
+#: last_checked: 2025-03-09
 #: check_frequency: 120d
 Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nicht	2::inwork 7787,13838 7872,13685
 # 
@@ -4381,10 +4385,11 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1465666.php (ab Anfang 2024; Abschluss der Bauarbeiten im Frühjahr 2026)
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
 #: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1363169.php (Fertigstellung 1. Halbjahr 2026)
 #: priority: #C
 #: last_checked: 2025-03-04 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2026-04-01
+#: next_check: 2026-05-31 (BA-Seiten)
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -4421,7 +4426,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-09
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4474,9 +4479,9 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://gruen-berlin.de/pressemitteilung/gendarmenmarkt-hauptbaumassnahmen-in-rekordtempo-abgeschlossen (Freigabe im Februar 2025)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gendarmenmarkt-hat-seine-schoenheitskur-fast-hinter-sich_a432984
 #: by: https://www.rbb24.de/panorama/beitrag/2025/03/berlin-gendarmenmarkt-eroeffnung-sanierung.html (Eröffnung am 13. März 2025)
-#: last_checked: 2025-03-05 vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2025-03-13-01 vvv
+#: next_check: 2025-03-13 vvv
 #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
 #: osm_watch: way id="766868087" version="14"
 Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
@@ -4751,7 +4756,7 @@ Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2025-02-19
+#: last_checked: 2025-03-09
 #: check_frequency: 120d
 #: next_check: 2026-09-30 (Baustellenschild)
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -5017,7 +5022,7 @@ Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2025-01-30 (mapillary)
+#: last_checked: 2025-03-09
 #: check_frequency: 90d
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
 # REMOVED (offen) --- #: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken --- #: last_checked: 2024-06-30 (daf) vvv --- #: check_frequency: 45d vvv --- George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136 --- (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -5430,7 +5435,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2025-01-30 (mapillary) vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"

@@ -24595,7 +24595,7 @@ EOF
        source_id => 'IM_023111',
        data  => <<EOF,
 	q2::inwork; 9514,13826 9383,13986
-	q3::inwork; 9514,13826 9376,13765
+	q3::inwork; 9514,13826 9373,13769
 EOF
      },
      { from  => undef, # 
@@ -28870,7 +28870,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-09
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30164,8 +30164,8 @@ EOF
        source_id => '2147344155', # bis Ende Juni 2019
        data  => <<EOF,
 #: note: bei fritz schon entfernt (am 20.06.2019)
-	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707
-# REMOVED (hier nicht) ---	q4::inwork; 9042,13707 8935,13844
+	q4::inwork; 9212,13471 9207,13493 9094,13648 9044,13711
+# REMOVED (hier nicht) ---	q4::inwork; 9044,13711 8935,13844
 EOF
      },
      { from  => 1557007200, # 2019-05-05 00:00
@@ -37858,7 +37858,7 @@ EOF
 Friedrichstr. (Richtung Norden, vor der Oranienburger Str.)	q4::inwork; 9262,13111 9254,13171 9246,13240 9244,13253 9225,13389
 # REMOVED (hier nicht mehr) --- Oranienburger Str.	q4::inwork; 9225,13389 9293,13366
 # REMOVED (hier nicht mehr) --- Chausseestr.	q4::inwork; 9212,13471 9207,13493
-# REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13641
+# REMOVED (hier nicht mehr) --- Chausseestr.	q2::inwork; 9207,13493 9094,13648
 # REMOVED --- #: note: hier nicht gesperrt, aber das Abbiegen nach/von Süden ist nicht direkt möglich --- Linienstr.	q4::inwork 9225,13389 9312,13388
 # ungünstiges Routing ---	3 9246,13240 9244,13253 9225,13389 9312,13388
 # ungünstiges Routing ---	3 9312,13388 9225,13389 9244,13253 9246,13240
@@ -40017,9 +40017,9 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-03-01
+#: last_checked: 2025-03-09
 #: check_frequency: 180d
-#: next_check: 2025-09-05
+#: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
 EOF
      },
@@ -40935,7 +40935,7 @@ EOF
 #: source_id: viz2021:13.384918,52.529076,27.07.2023,08:00 (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1684428403116498947#m
 #: by: https://nitter.net/pic/orig/media%2FF1-X7vXX0AMIH1H.jpg (keine Ausnahme für Radfahrer erkennbar)
-	q4::inwork; 9042,13707 9094,13641
+	q4::inwork; 9044,13711 9094,13648
 EOF
      },
      { from  => 1691272800, # 2023-08-06 00:00
@@ -41970,7 +41970,7 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-03-05 vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
@@ -45199,7 +45199,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-02-25 (website) vvv
+#: last_checked: 2025-03-09 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -45356,8 +45356,8 @@ EOF
 #: note: Absperrungen können weggeschoben sein, gesehen am 2024-09-27 (Fr) abends an der Karl-Marx-Str.; mittlerweile (2024-10-23, 2024-10-30, 2024-11-27) ist die Fahrbahn aufgerissen
 #: note: Halteverbotsschilder bis 28.2.2025, mittlerweile bis 04.03.2025
 #: also_indoor: traffic (none)
-#: osm_watch: way id="36983903" version="34"
-#: osm_watch: way id="1002238498" version="10"
+#: osm_watch: way id="36983903" version="35"
+#: osm_watch: way id="1002238498" version="11"
 #: osm_watch: note 4454125 6
 #: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen
 #: last_checked: 2025-03-04
@@ -45626,7 +45626,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-03-05 vvv
+#: last_checked: 2025-03-09 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -46296,10 +46296,10 @@ EOF
        text  => 'Bayernring: Bauarbeiten zwischen Manfred-von-Richthofen-Str. und Mussehlstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (re-H,T,B)
+#: also_indoor: traffic (ex-H,T,B)
 #: note: Halteverbotsschilder bis 28.02.2025
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2025-02-28 (traffic)
+#: last_checked: 2025-03-09 (traffic)
 #: check_frequency: 10d (traffic)
 # REMOVED --- #: next_check: 2025-02-28 (Halteverbotsschilder)
 	q4::inwork 8842,8561 8916,8511
@@ -46361,10 +46361,11 @@ EOF
        text  => 'Altenhofer Str. - Landsberger Allee [Nebenfahrbahn]: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G,W)
 #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-02-12
+#: last_checked: 2025-03-09 (traffic)
+#: check_frequency: 14d (traffic)
 	q4::inwork 15769,14355 15841,14351
 EOF
      },
@@ -46791,6 +46792,33 @@ EOF
 #: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
 #: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
 	q4::inwork; 2092,7810 2099,7904 2112,8088 2121,8351
+EOF
+     },
+     { from  => 1741496400, # 2025-03-09 06:00
+       until => 1744383600, # 2025-04-11 17:00
+       text  => 'Breite Str.: Gleisbauarbeiten zwischen Berliner Str. und Stiftsweg/Hadlichstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 10.03.2025 06:00 bis 11.04.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025)
+	q4::inwork; 10680,18380 10710,18393 10784,18426 10934,18500 10958,18512 11001,18528
+EOF
+     },
+     { from  => 1741496400, # 2025-03-09 06:00
+       until => 1751554800, # 2025-07-03 17:00
+       text  => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, vom 10.03.2025 06:00 bis 03.07.2025 17:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin-live.de/berlin/verkehr/berlin-schwedter-steg-baustelle-prenzlauer-berg-id222297.html (Bauarbeiten sollen im August 2024 beginnen und 16 Wochen dauern)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/vollsperrung-fur-ein-vierteljahr-senat-verschiebt-wichtige-bruckensanierung-in-prenzlauer-berg-12299603.html (Beginn nun ab "Ende 1. Quartal, Anfang 2. Quartal 2025")
+#: by[nocache]: https://archive.is/fsnJt
+#: by: https://www.morgenpost.de/bezirke/pankow/article407082498/berlin-verschiebt-gefuerchtete-bruecken-baustelle-in-prenzlauer-berg.html (voraussichtlich ab Ende März oder im April 2025)
+#: by[nocache]: https://archive.is/zYelP
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schwedter-steg/ (voraussichtliche Bauzeit: April 2025 bis Juli 2025) (mittlerweile ab März 2025)
+#: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
+#: osm_watch: note 4317053 4
+#: last_checked: 2025-03-04 (mapillary)
+#: next_check: 2025-03-10 (VIZ-Verkehrsmeldung)
+Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 EOF
      },
     );
