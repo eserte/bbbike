@@ -11965,9 +11965,10 @@ EOF
 	2::inwork 59114,34559 58750,34221
 EOF
      },
-     { from  => 1214085600, # 2008-06-22 00:00
-       until => 1215640800, # 2008-07-10 00:00
-       text  => 'L 037 Müllrose - B 5, Petershagen Bahnübergang in der OD Jacobsdorf Gleisbauarbeiten Vollsperrung 23.06.2008-09.07.2008 ',
+     { from  => 1743829200, # 2025-04-05 07:00 # 1214085600, # 2008-06-22 00:00
+       until => 1743962400, # 2025-04-06 20:00 # 1215640800, # 2008-07-10 00:00
+#      text  => 'L 037 Müllrose - B 5, Petershagen Bahnübergang in der OD Jacobsdorf Gleisbauarbeiten Vollsperrung 23.06.2008-09.07.2008 ',
+       text  => 'Bahnübergang Jacobsdorf: Gleisarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 06.04.2025 07:00 Uhr bis 06.04.2025 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 75272,-7514 75394,-6991 75402,-6910
@@ -30543,7 +30544,7 @@ EOF
 EOF
      },
      { from  => undef, # 1561845600, # 2019-06-30 00:00
-       until => undef, # 1591940076, # undef, # 1569945600, # 2019-10-01 18:00
+       until => 1741629790, # undef, # 1591940076, # undef, # 1569945600, # 2019-10-01 18:00
 #      text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, Ende unbekannt',
        text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, Ende unbekannt',
        type  => 'gesperrt',
@@ -30562,11 +30563,7 @@ EOF
 #: osm_watch: note 4210973 7
 #: osm_watch: node id="27306736" version="12"
 #: osm_watch: node id="3005701527" version="3"
-#: priority: #A
-#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2025-03-05
-#: check_frequency: 60d
-#: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
+# REMOVED (laut osm offen) --- #: priority: #A --- #: add_fragezeichen: Ist die Unterführung noch immer gesperrt? --- #: last_checked: 2025-03-05 --- #: check_frequency: 60d --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
 	2::inwork 3231,12749 3332,12742
 EOF
      },
@@ -37653,7 +37650,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-03-07
+#: last_checked: 2025-03-10
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -42939,7 +42936,8 @@ EOF
 #: source_id: viz2021:13.299947,52.521326,06.02.2024,00:00 (bis 02.08.2024) (bis 31.12.2024) (inaktiv)
 #: source_id: viz2021:13.2998,52.52136,18.06.2024,07:00 (bis 09.08.2024) (inaktiv)
 #: source_id: viz2021:13.302665,52.521272,12.08.2024,07:00 (bis 30.06.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.30625,52.52024,06.01.2025,06:46 (bis 30.06.2025)
+#: source_id: viz2021:13.30625,52.52024,06.01.2025,06:46 (bis 30.06.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.30212,52.52129,10.03.2025,09:14 (bis 30.06.2025)
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
@@ -43152,10 +43150,11 @@ EOF
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
+#: osm_watch: note 4210969 5
 #: last_checked: 2025-03-05 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
-	2::inwork 3836,12614 3867,12616 3888,12618 4078,12637 4131,12641
+# REMOVED (laut osm westlich des Siemensstegs offen) ---	2::inwork 3836,12614 3867,12616 3888,12618 4030,12632 4078,12637 4131,12641
 	2::inwork 4131,12641 4162,12638 4299,12590 4340,12578 4441,12578 4529,12570
 	2::inwork 4441,12578 4441,12559
 Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4441,12559 4321,12566
@@ -43388,7 +43387,7 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-02-19 vvv
+#: last_checked: 2025-03-08 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -43923,7 +43922,7 @@ EOF
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-08 vvv
+#: last_checked: 2025-03-10 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-03-27 vvv
 Holteistr.	q4::inwork 14575,11407 14639,11512
@@ -44840,7 +44839,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="27457006" version="23"
-#: last_checked: 2025-02-05 (osm)
+#: last_checked: 2025-03-08 (mapillary)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 EOF
@@ -46478,13 +46477,16 @@ EOF
 EOF
      },
      { from  => 1730613600, # 2024-11-03 07:00
-       until => $isodate2epoch->("2025-03-28 18:00:00"), # 1740783540, # 2025-02-28 23:59
-       text  => 'Zillestr.: Einbahnstraßenregelung zwischen Kaiser-Friedrich-Str. und Wilmersdorfer Str., Richtung Westen gesperrt, bis 28.03.2025',
+       until => $isodate2epoch->("2025-03-31 18:00:00"), # 1740783540, # 2025-02-28 23:59
+#      text  => 'Zillestr.: Einbahnstraßenregelung zwischen Kaiser-Friedrich-Str. und Wilmersdorfer Str., Richtung Westen gesperrt, bis 28.03.2025',
+       text  => 'Zillestr.: Einbahnstraßenregelung zwischen Kaiser-Friedrich-Str. und Gierkezeile, Richtung Westen gesperrt, bis 31.03.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.30113,52.51347,04.11.2024,07:00 (bis 28.02.2025) (inaktiv)
-#: source_id: viz2021:13.30113,52.51347,13.02.2025,11:00 (bis 28.03.2025)
-	q4::inwork; 3666,11855 3528,11852 3406,11849
+#: source_id: viz2021:13.30113,52.51347,13.02.2025,11:00 (bis 28.03.2025) (inaktiv)
+#: source_id: viz2021:13.30307,52.51345,10.03.2025,12:00 (bis 31.03.2025)
+# REMOVED (hier nicht mehr?) ---	q4::inwork; 3666,11855 3528,11852
+	q4::inwork; 3528,11852 3406,11849
 EOF
      },
      { from  => 1739088000, # 2025-02-09 09:00
@@ -46711,12 +46713,13 @@ EOF
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17), aber nicht immer (gesehen 2024-11-16 Sat); das südliche Tor ist immer zu
 #: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
+#: note: nördliches Tor offen, südliches Tor nur geschlossen (aber nicht verschlossen) (gesehen 2025-03-10 Mo 17:25)
 #: note: nördliches Tor geschlossen, südliches Tor nicht geprüft (gesehen 2025-03-08 Sa 11:30)
 #: osm_watch: way id="207757723" version="6"
 #: osm_watch: way id="275795707" version="3"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-03-08 vvv
+#: last_checked: 2025-03-10 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: note: kann offen sein, aber nicht immer
@@ -46787,7 +46790,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025)
-#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025)
+#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
 #: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
 #: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
@@ -46800,24 +46803,31 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1898954467401175437
+#: by: https://pbs.twimg.com/media/Glc6s8uWAAAe6co?format=jpg&name=medium (kürzerer Baustellenbereich, nur bis etwas hinter Kavalierstr.?)
 	q4::inwork; 10680,18380 10710,18393 10784,18426 10934,18500 10958,18512 11001,18528
 EOF
      },
-     { from  => 1741496400, # 2025-03-09 06:00
+     { from  => $isodate2epoch->("2025-03-15 00:00:00"), # 1741496400, # 2025-03-09 06:00
+       prewarn_days => 2,
        until => 1751554800, # 2025-07-03 17:00
-       text  => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, vom 10.03.2025 06:00 bis 03.07.2025 17:00',
+       text  => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, vom 17.03.2025 06:00 bis 03.07.2025 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-schwedter-steg-baustelle-prenzlauer-berg-id222297.html (Bauarbeiten sollen im August 2024 beginnen und 16 Wochen dauern)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/vollsperrung-fur-ein-vierteljahr-senat-verschiebt-wichtige-bruckensanierung-in-prenzlauer-berg-12299603.html (Beginn nun ab "Ende 1. Quartal, Anfang 2. Quartal 2025")
-#: by[nocache]: https://archive.is/fsnJt
 #: by: https://www.morgenpost.de/bezirke/pankow/article407082498/berlin-verschiebt-gefuerchtete-bruecken-baustelle-in-prenzlauer-berg.html (voraussichtlich ab Ende März oder im April 2025)
-#: by[nocache]: https://archive.is/zYelP
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schwedter-steg/ (voraussichtliche Bauzeit: April 2025 bis Juli 2025) (mittlerweile ab März 2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1898977367680553472
+#: by: https://pbs.twimg.com/media/Glc8_8GWEAE-ex7?format=jpg&name=large (Umleitungsstrecken)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1539107.php
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1899074460012941443 (Verschiebung, Beginn 17.03.2025)
+#: by: https://viz.berlin.de/aktuelle-meldungen/fussgangerbrucke-schwedter-steg-wird-fur-sanierung-gesperrt/
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
 #: osm_watch: note 4317053 4
-#: last_checked: 2025-03-04 (mapillary)
-#: next_check: 2025-03-10 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-03-10 (mapillary)
+#: next_check: 2025-03-17 (VIZ-Twitter)
+# REMOVED --- #: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 EOF
      },

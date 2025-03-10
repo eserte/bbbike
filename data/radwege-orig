@@ -251,7 +251,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
 #: last_checked: 2025-02-16 vvv
-#: check_frequency: 45d vvv
+#: check_frequency: 50d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
 #: check_frequency ^^^
@@ -2308,7 +2308,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-03-08 vvv
+#: last_checked: 2025-03-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -8733,8 +8733,8 @@ Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
 # REMOVED (mittlerweile Tempo-20-Zone) (nun 30er-Zone) ---	RW6;RW6 17524,8536 17515,8567 17497,8623 17468,8692
 # REMOVED (mittlerweile Tempo-20-Zone) (nun 30er-Zone) ---	RW6;RW6 17380,8858 17416,8767 17468,8692 17656,8700 17639,8627 17497,8623
 # REMOVED (mittlerweile laut osm Tempo-30-Zone) ---	RW6;RW6 17738,8450 17682,8464 17608,8483 17628,8556 17648,8626 17668,8696
-	RW6;RW6 17648,8626 17773,8588 17755,8519 17738,8450
-	RW6;RW6 17628,8556 17755,8519
+# REMOVED ---	RW6;RW6 17648,8626 17773,8588 17755,8519 17738,8450
+# REMOVED ---	RW6;RW6 17628,8556 17755,8519
 Tempo 10	RW6;RW6 17380,8858 17335,8971 17308,9090 17282,9135
 Tempo 10	RW6;RW6 17308,9090 17300,9135
 # 

@@ -10,9 +10,15 @@
 # 
 ### Friedrichshain ###
 # 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php (Bauende: voraussichtlich Anfang Juni 2025)
+#: also_indoor: traffic (ex-G,ex-W,B,T)
+#: osm_watch[closed]: note 3677862 5
+# REMOVED --- #: next_check: 2025-06-01
+Weserstr.: Bauarbeiten für neue Gehwegvorstreckung	q4::inwork 14651,11666 14710,11626
+# 
 #: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025)
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
-#: source_id: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
+#: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
 #: osm_watch: way id="1145213536" version="6"
 #: osm_watch: way id="1363264660" version="2"
 #: note: Halteverbotsschilder bis 18.04.2025
@@ -130,7 +136,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-10
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -1132,6 +1138,7 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240724 (Umstellung der Verkehrsführung, weiterhin Sperrung bis Mitte 2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1816390896482398274
 #: by: https://pbs.twimg.com/media/GTUdyWiWUAEX0Jl?format=jpg&name=large
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1539302.php (ab 17.3.2025 Erneuerung der Asphaltdecke, teilweise unter Vollsperrung (der Fahrbahn?); ab Dezember 2025 Brückenbauarbeiten)
 #: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022) (bis 16.11.2022) (bis 29.11.2022) (bis 13.11.2023) (bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (bis 25.07.2024) (inaktiv)
 #: source_id: viz2021:13.575415,52.540241,04.07.2023,06:00 (hier nur Kfz-Verkehr, bis 13.11.2023) (bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.590289,52.539403,04.07.2023,06:00 (östlicher Abschnitt der Eisenacher; bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (bis 25.07.2024) (inaktiv)
@@ -1780,8 +1787,9 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger, Radfahren nicht erlaubt	q3 8467,11125 8410,11143
 # REMOVED (noch einige enge Stellen vorhanden) --- #: next_check_id: SPREERADWEGEINSTEINUFER-2014 --- #: XXX Bauarbeiten, wird der Weg später breiter sein? --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr_rat_20_sitzung.pdf (Verbreiterungen) --- #: last_checked: 2017-08-16 --- #: check_frequency: 14d
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3370,12725 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4078,12637 4131,12641 4162,12638 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4030,12632 4078,12637 4131,12641 4162,12638 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): einige Fußgänger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
+(Iburger Ufer - Spreeradweg): Rampe	q2 4085,12614 4084,12620 4032,12614 4030,12632
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
 Spreeufer: Fußgänger, besonders an schönen Tagen	q3 10166,12777 10105,12855 9955,12915 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 #: XXX_prog: BS an der Friedrichstr. (ansonsten trotzdem q3)

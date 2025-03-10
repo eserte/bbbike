@@ -165,7 +165,7 @@ Fischerstr.: Kopfsteinpflaster	Q2 15970,10755 16080,10743
 Neuer Feldweg: Asphalt	Q0 17365,9654 17360,9629
 Wallensteinstr.: Asphaltstreifen	Q0; 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
 Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg Verbundsteinpflaster/Mosaikpflaster	Q2; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
-Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
+Wallensteinstr.: schadhafter Asphalt	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
 Dönhoffstr.: Kopfsteinpflaster	Q2 18161,9029 18123,9055
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9950,577 10078,255 10169,20 10228,-137 10282,-280
@@ -1395,12 +1395,13 @@ Am Berlin Museum: Asphalt	Q0 10032,10752 9829,10830
 (Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster, Regenablaufrinnen	Q2 3643,12671 3748,12627
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3748,12627 3836,12614 3867,12616
 (Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster	Q1 3867,12616 3888,12618
-(Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3888,12618 4078,12637
+(Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3888,12618 4030,12632 4078,12637
 (Rad- und Wanderweg an Spree und Landwehrkanal): Betonpflaster	Q1 4078,12637 4131,12641 4162,12638
 (Rad- und Wanderweg an Spree und Landwehrkanal): Parkweg, bei Regen mit Pfützen	Q1 4162,12638 4299,12590
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542
 (Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster	Q1 4575,12542 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): asphaltähnlicher Belag mit einen gepflasterten Abschnitten	Q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
+(Iburger Ufer - Spreeradweg): Kleinsteinpflaster	Q1 4085,12614 4084,12620 4032,12614 4030,12632
 (Galvanistr./Iburger Ufer - Uferweg): Parkweg	Q2 4441,12559 4441,12578
 Monbijoupark - Henriette-Herz-Platz: Asphalt	Q0 9955,12915 10084,12921 10132,12941
 (Monbijoupark, östlicher Weg): Parkweg	Q1 10016,13067 9975,12959

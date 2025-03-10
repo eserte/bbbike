@@ -306,10 +306,11 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen) (inaktiv)
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
-#: last_checked: 2025-02-24
+#: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
+#: last_checked: 2025-03-10
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
-Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
+Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
 Dönhoffstr.: Kopfsteinpflaster	Q2 18161,9029 18123,9055
 #: confirmed_by: Sabine Plagens & srt vvv
@@ -2056,7 +2057,7 @@ Am Berlin Museum: Asphalt	Q0 10032,10752 9829,10830
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3748,12627 3836,12614 3867,12616
 #: historical_note: früher (bis 2024): teilweise Parkweg, bei Regen mit Pfützen, teilweise gutes Kopfsteinpflaster, Q1- vvv
 (Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster	Q1 3867,12616 3888,12618
-(Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3888,12618 4078,12637
+(Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3888,12618 4030,12632 4078,12637
 #: historical_note ^^^
 #: note: zylinderförmige Steine
 (Rad- und Wanderweg an Spree und Landwehrkanal): Betonpflaster	Q1+ 4078,12637 4131,12641 4162,12638
@@ -2065,6 +2066,7 @@ Am Berlin Museum: Asphalt	Q0 10032,10752 9829,10830
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542
 (Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster	Q1- 4575,12542 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): asphaltähnlicher Belag mit einen gepflasterten Abschnitten	Q1+ 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
+(Iburger Ufer - Spreeradweg): Kleinsteinpflaster	Q1- 4085,12614 4084,12620 4032,12614 4030,12632
 (Galvanistr./Iburger Ufer - Uferweg): Parkweg	Q2 4441,12559 4441,12578
 Monbijoupark - Henriette-Herz-Platz: Asphalt	Q0 9955,12915 10084,12921 10132,12941
 (Monbijoupark, östlicher Weg): Parkweg	Q1- 10016,13067 9975,12959
@@ -17004,7 +17006,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: osm_watch: way id="1009279082" version="6"
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2024-12-13
+#: last_checked: 2025-03-10
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764

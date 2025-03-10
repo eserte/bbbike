@@ -1125,7 +1125,7 @@ Straße des 17. Juni	HH 4905,11785 5141,11816 5381,11847 5478,11860 5565,11871 57
 Straße des 17. Juni	HH 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 Ernst-Reuter-Platz	HH 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 (Charlottenburger Ufer - Uferweg)	NN 3370,12725 3396,12741
-(Rad- und Wanderweg an Spree und Landwehrkanal)	NN 3332,12742 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614 3867,12616 3888,12618 4078,12637 4131,12641 4162,12638 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
+(Rad- und Wanderweg an Spree und Landwehrkanal)	NN 3332,12742 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614 3867,12616 3888,12618 4030,12632 4078,12637 4131,12641 4162,12638 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
 (Uferweg)	NN 4242,12684 4206,12691 4147,12699 4038,12693 3938,12687 3862,12675 3819,12676 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
 (Uferweg - Siemenssteg/Am Spreebord)	NN 4038,12693 4039,12706 4124,12713
 (Uferweg - Sömmeringstr.)	NN 3572,12866 3574,12916 3716,12925
@@ -4411,7 +4411,8 @@ Charlottenburger Ufer	N 3741,12607 3597,12681 3450,12722 3370,12725 3291,12721
 (Galvanistr. - Iburger Ufer)	NN 4478,12537 4441,12559 4321,12566
 (Galvanistr./Iburger Ufer - Uferweg)	NN 4441,12559 4441,12578
 (Spreeuferweg - Wintersteinstr.)	NN 3643,12671 3741,12607
-Iburger Ufer	N 4321,12566 4289,12576 4129,12619 3889,12591
+Iburger Ufer	N 4321,12566 4289,12576 4129,12619 4085,12614 3889,12591
+(Iburger Ufer - Spreeradweg)	NN 4085,12614 4084,12620 4032,12614 4030,12632
 Arcostr.	N 3889,12591 3868,12401
 (Arcostr. - Spreeuferweg)	NN 3889,12591 3888,12618
 Luisenplatz	HH 3279,12533 3271,12609 3269,12648 3291,12721 3300,12751
@@ -5085,7 +5086,7 @@ Rübländerstr.	N 14321,23378 14382,23574
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3988&date=20151213
 #: XXX Planstraße D --- bleibt dieser Weg erhalten?
 #: osm_watch: way id="224122378" version="17"
-#: last_checked: 2024-05-13 (mapillary)
+#: last_checked: 2025-03-09 (mapillary)
 #: check_frequency: 360d
 (S-Bahndamm - Hobrechtsfelder Chaussee)	NN 15469,24813 15339,24861 14434,25388
 (Bucher Teiche - Schönerlinder Chaussee)	NN 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
@@ -15901,7 +15902,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-10
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16291,7 +16292,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-10
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens

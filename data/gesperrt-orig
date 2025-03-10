@@ -179,7 +179,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-03-07 vvv
+#: last_checked: 2025-03-10 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -4349,7 +4349,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-10
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4357,7 +4357,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-03-08 vvv
+#: last_checked: 2025-03-10 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4399,7 +4399,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025)
 #: priority: #C
-#: last_checked: 2025-03-07
+#: last_checked: 2025-03-10
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4710,12 +4710,12 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="16"
-#: last_checked: 2025-02-07
+#: last_checked: 2025-03-10
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="11"
-#: last_checked: 2025-02-07
+#: last_checked: 2025-03-10
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 # REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17639,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
@@ -4738,7 +4738,7 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 # REMOVED --- #: last_checked: 2024-12-27 --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen! --- #: note: Durchfahrt offiziell noch nicht erlaubt, aber hier parken schon Autos in der Parktaschen: q4 -> q3 --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q3:inwork 17753,8290 17771,8349 17794,8429
-#: last_checked: 2025-02-24
+#: last_checked: 2025-03-10
 # REMOVED --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17813,8508
 # REMOVED (weitgehend offen) --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
@@ -4810,7 +4810,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv)
 #: XXX Rampen auf Westseite mit Verbundsteinpflaster, auf Ostseite mit welligen Asphalt, parallel zur Autobahn
 #: XXX mittlerweile (Nov 2024) noch nicht offiziell freigegeben, aber u.U. befahrbar
-#: last_checked: 2025-01-06 (mapillary)
+#: last_checked: 2025-03-09 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 Hebammensteigbrücke	2::inwork 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
