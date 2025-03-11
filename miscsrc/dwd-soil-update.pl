@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -90,7 +90,7 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
 	my $last_historical_line = `gunzip -c $historical_file | tail -1`;
 	my(undef, $historical_date) = split /;/, $last_historical_line;
 	my $historical_year = substr($historical_date, 0, 4);
-	my $recent_file = "$soil_dwd_dir/recent/derived_germany_soil_daily_recent_${station}.txt.gz";
+	my $recent_file = "$soil_dwd_dir/recent/derived_germany_soil_daily_recent_v2_${station}.txt.gz";
 	my $first_recent_line = `gunzip -c $recent_file | head -2 | tail -1`;
 	my(undef, $recent_date) = split /;/, $first_recent_line;
 	my $recent_year = substr($recent_date, 0, 4);
