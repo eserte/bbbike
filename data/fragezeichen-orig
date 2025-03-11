@@ -1046,7 +1046,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 #: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024) (bis 31.03.2025) (bis 18.02.2025) (bis 31.03.2025) (bis 30.05.2025)
 #: source_id: viz2021:13.51205,52.45485,14.06.2024,14:55 (bis 15.08.2024) (inaktiv)
 #: source_id: viz2021:13.51205,52.45485,18.02.2025,14:59 (bis 30.05.2025) (inaktiv)
-#: last_checked: 2025-02-26
+#: last_checked: 2025-03-10 (krickstadt)
 #: check_frequency: 120d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 # REMOVED (hier realisiert) --- Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17695,5394 17736,5441
@@ -1800,7 +1800,7 @@ Siegfriedstr.: Radstreifen mit Protektionselementen entsteht	?::inwork 16860,128
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219
 #: osm_watch: way id="1231226672" version="4"
 #: osm_watch: way id="934649828" version="7"
-#: osm_watch: note 4041955 8
+#: osm_watch[closed]: note 4041955 8
 #: XXX Ab AdK wird Richtung Süden ein neuer Verbundsteinpflasterradweg (oder teilweise sogar asphaltiert?) gebaut, vermutlich nur bis Merler Weg, vielleicht auch bis Ruwersteig
 #: last_checked: 2025-03-07
 #: check_frequency: 60d
@@ -2887,7 +2887,7 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/stadtplanungsausschuss-diskutierte-ueber-machbarkeitsstudie-zur-heinsestrasse_a393507
 #: priority: #D vvv
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765 --- #: last_checked: 2016-10-03 --- #: next_check: 2017-03-24 --- Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5218,20471 5235,20439
-#: osm_watch: way id="665666065" version="15"
+#: osm_watch: way id="665666065" version="16"
 #: last_checked: 2024-07-13
 #: check_frequency: 120d
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3627,23246 3655,23244
@@ -7049,7 +7049,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5357,7391 5364,7330 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2025-03-09
+#: last_checked: 2025-03-10 (daf)
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -7326,9 +7326,9 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: way id="1273991435" version="3"
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-03-09
+#: last_checked: 2025-03-11
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2023-11-30
+#: next_check: 2025-06-30 (Halteverbotsschilder)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
 # 
 # REMOVED (alle eingetragen) --- #: next_check_id: LANGHANS-2021 --- #: by: https://unternehmen.bvg.de/pressemitteilung/das-machen-wir-gleis-richtig/ (Sperrung bis 24. Juni 2021) --- #: last_checked: 2021-02-04 --- #: next_check: 2021-08-13 --- Langhansstr.: Straßenbahnkaps entstehen	?::inwork 13508,15912 13312,16027 13250,16058 13189,16089 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
@@ -7540,7 +7540,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-03-09
+#: last_checked: 2025-03-11
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8081,7 +8081,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2025-03-04
+#: last_checked: 2025-03-11
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradastraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8982,6 +8982,17 @@ Lützowstr.: Fahrradstraße geplant	? 6998,11003 7086,10979 7149,10961 7236,10936 
 #: XXX wird es verkehrsrelevante Änderungen (Spielstraße?) geben?
 #: next_check: 2025-12-31
 Lübecker Str.: Neugestaltung des Straßenraums geplant	? 6365,13879 6366,13716 6377,13321
+# 
+#: by: https://www.tagesspiegel.de/berlin/bezirke/endloses-warten-auf-neuen-zebrastreifen-in-berlin-absurder-fall-von-behorden-pingpong-13343002.html
+#: priority: #D
+#: last_checked: 2025-03-10 (Tsp)
+#: check_frequency: 180d
+Schnellerstr./Britzer Str.: Zebrastreifen geplant	? 18356,5532 18370,5511 18380,5492
+# 
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1539339.php
+#: last_checked: 2025-03-11 (BA-Pressemitteilung)
+#: check_frequency: 180d
+Kiautschoustr. im Bereich des Pekinger Platzes: Sperrung für den Kfz-Verkehr geplant; gibt es Einschränkungen für den Radverkehr?	? 7007,14911 6880,14861
 # 
 #: section ^^^
 #: ignore ^^^
@@ -10374,6 +10385,7 @@ Kaaden-Ring: neue Privatstraße	? 25149,10695 25329,10697 25415,10696 25415,10641
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_04_0245_0352_online.pdf (FNP-Änderung)
 #: by: https://www.tagesspiegel.de/baustart-am-pankower-tor-nicht-vor-2026-kreuzkroten-sollen-doch-von-berlin-nach-brandenburg-umgesiedelt-werden-12279824.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/einigung-nach-16-jahren-streit-grunes-licht-fur-milliardenprojekt-pankower-tor-termin-steht-fest-13226575.html (Baubeginn 2026, Fertigstellung 2038)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/einigung-uber-pankower-tor-nach-16-jahren-burgermeisterin-bestatigt-termin-fur-meilenstein-13345225.html
 #: osm_watch: way id="97369501" version="15"
 # REMOVED (404) --- #: also_indoor: webcam https://portal1761.webcam-profi.de/ (vom Lokschuppen)
 #: last_checked: 2024-08-25
@@ -11522,6 +11534,7 @@ ULAP-Quartier: wird es eine Verbindung unter der Stadtbahn geben?	? 7787,12994 7
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5LHkBJnFr2hXGIl7OQ0mVzkJoi1WQV2Uax7B6xg3/vxCPnxg/94-Anlagen/06/Anlage4-BPlan2-48zurToeB-Blatt1.PDF (Straßen entstehen, ausnahmenslose verkehrsberuhigte Bereich oder nur für Fuß/Rad/Anlieger)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5LHkBJnFr2hXGIl7OQ0mVzkJoi1WQV2Uax7B6xg3/vxCPnxg/94-Anlagen/07/Anlage5-BPlan2-48zurToeB-Blatt2.PDF
 #: by: https://www.wbm.de/neubau-berlin/friedrichshain-kreuzberg/dragonerareal/ (Baubeginn 04/2027, Bauende 10/2030)
+#: by: https://entwicklungsstadt.de/dragonerareal-in-kreuzberg-von-der-kaserne-zum-modernen-stadtquartier/
 #: XXX laut osm Eröffnung des Rathausblocks 2027-04
 #: osm_watch: way id="1147649159" version="3"
 #: last_checked: 2025-01-02
@@ -11551,10 +11564,10 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://www.tagesspiegel.de/berlin/bezirke/unsere-kleine-autobahnbrucke-in-spandau-wie-stehts-um-die-brucken-auf-die-insel-gartenfeld-12974422.html (zur neuen Brücke zur Rhenaniastraße, andere Brücke zum Saatwinkler Damm wurde gestrichen)
 #: by: https://entwicklungsstadt.de/neue-bruecke-fuer-das-neue-gartenfeld-planungen-konkretisiert/ (geplante Fertigstellung der Brücke bis 2027)
 #: osm_watch: relation id="10290512" version="5"
-#: osm_watch: way id="1306187833" version="4"
-#: osm_watch: way id="1306187834" version="5"
+#: osm_watch: way id="1306187833" version="5"
+#: osm_watch: way id="1306187834" version="6"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
-#: last_checked: 2025-02-25 (daf)
+#: last_checked: 2025-03-10 (osm)
 #: check_frequency: 360d
 #: next_check: 2028-06-30
 Insel Gartenfeld: Stadtquartier entsteht, einige Planstraßen, Uferpromenade, Ufergrünzug, eine Brücke	?::inwork -871,16391 -995,15643 -358,15621 -301,16026 -871,16391

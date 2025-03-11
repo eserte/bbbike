@@ -8414,6 +8414,7 @@ EOF
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20220416 (geplant für 7. und 8. Mai 2022)
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20230325 (wegen Bauarbeiten für 2023 abgesagt)
 #: by: https://www.facebook.com/events/1572185126967043/?ref_source=NEWS_FEED&__hwl=1&_rdr (20.9.-22.9.2024)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-traditionsfeste-kein-festumzug-durch-die-kopenicker-altstadt-13344679.html (2025 nur auf dem Marktplatz Friedrichshagen?)
 #: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.624675,52.451034,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
 	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
@@ -30897,15 +30898,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2025-03-17 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Mitte März 2025',
+       until => $isodate2epoch->("2025-03-26 17:00:00"), # 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Ende März 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: 2147344558 (bis 10.09.2020) (inaktiv)
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...) (bis 26.03.2025 + ...)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -30917,7 +30918,7 @@ EOF
 #: osm_watch: note 3210197 4
 #: last_checked: 2025-02-22
 # REMOVED --- #: check_frequency: 150d
-#: next_check: 2025-03-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -41971,7 +41972,7 @@ EOF
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
-#: osm_watch: note 4045330 9
+#: osm_watch: note 4045330 10
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031
@@ -44351,9 +44352,9 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-03-04 vvv
+#: last_checked: 2025-03-11 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2027-07-01 vvv
+#: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 9725,11445 9711,11543
@@ -45625,7 +45626,7 @@ EOF
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-03-09 vvv
+#: last_checked: 2025-03-11 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -46823,12 +46824,26 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1539107.php
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1899074460012941443 (Verschiebung, Beginn 17.03.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fussgangerbrucke-schwedter-steg-wird-fur-sanierung-gesperrt/
+#: by: https://www.tagesspiegel.de/berlin/fussgangerbrucke-in-pankow-wird-saniert-schwedter-steg-ab-17-marz-knappe-vier-monate-gesperrt-13343986.html
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
-#: osm_watch: note 4317053 4
+#: osm_watch: note 4317053 6
 #: last_checked: 2025-03-10 (mapillary)
 #: next_check: 2025-03-17 (VIZ-Twitter)
 # REMOVED --- #: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
+EOF
+     },
+     { from  => 1741586400, # 2025-03-10 07:00
+       until => 1741714945, # doch keine Einschränkungen für Radfahrer? --- 1743778800, # 2025-04-04 17:00
+       text  => 'Sperrungen im Bereich Einbecker Str./Rosenfelder Str., vom 11.03.2025 07:00 bis 04.04.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1899342020227080235 (hier nur Kfz-Verkehr)
+#: by: https://pbs.twimg.com/media/GlsnQ01XwAAbqgj?format=jpg&name=medium (gesperrte Bereiche je 40m lang)
+#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025)
+Einbecker Str.	q3::inwork; 17020,11748 17169,11677
+#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025)
+Rosenfelder Str.	q3::inwork; 17130,11599 17169,11677
 EOF
      },
     );

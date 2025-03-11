@@ -3568,7 +3568,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: source_id: 2147344558 (bis 10.09.2020) (inaktiv)
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...) (bis 26.03.2025 + ...)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -3580,7 +3580,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: note 3210197 4
 #: last_checked: 2025-02-22
 # REMOVED --- #: check_frequency: 150d
-#: next_check: 2025-03-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -3588,9 +3588,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 ',
          'from' => undef,
          'id' => 3151,
-         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Mitte März 2025',
+         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Ende März 2025',
          'type' => 'gesperrt',
-         'until' => 1742227200
+         'until' => 1743004800
        },
        undef,
        undef,
@@ -5884,7 +5884,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
-#: osm_watch: note 4045330 9
+#: osm_watch: note 4045330 10
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
 #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
 Markgrafenstr.	q4::inwork 9666,11935 9656,12031
@@ -6522,9 +6522,9 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-03-04 vvv
+#: last_checked: 2025-03-11 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2027-07-01 vvv
+#: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 9725,11445 9711,11543
@@ -7062,7 +7062,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-03-09 vvv
+#: last_checked: 2025-03-11 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -7835,8 +7835,9 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1539107.php
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1899074460012941443 (Verschiebung, Beginn 17.03.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fussgangerbrucke-schwedter-steg-wird-fur-sanierung-gesperrt/
+#: by: https://www.tagesspiegel.de/berlin/fussgangerbrucke-in-pankow-wird-saniert-schwedter-steg-ab-17-marz-knappe-vier-monate-gesperrt-13343986.html
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
-#: osm_watch: note 4317053 4
+#: osm_watch: note 4317053 6
 #: last_checked: 2025-03-10 (mapillary)
 #: next_check: 2025-03-17 (VIZ-Twitter)
 # REMOVED --- #: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
