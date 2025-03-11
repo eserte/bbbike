@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -52,8 +52,9 @@ my($fix_station, $fix_station_name);
 GetOptions(
     "soil-dwd-dir=s" => \$soil_dwd_dir,
     "fix-station=i" => \$fix_station,
+    "debug!" => \my $debug,
 )
-    or die "$0 --soil-dwd-dir ... [--fix-station nr]\n";
+    or die "$0 --soil-dwd-dir ... [--fix-station nr] [--debug]\n";
 
 $soil_dwd_dir or die "Please specify --soil-dwd-dir option!";
 
@@ -79,12 +80,18 @@ for my $station_nr (@station_nrs) {
 	my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1, sep_char => ';' });
 	my $fh = IO::Uncompress::Gunzip->new($f)
 	    or die "Can't gunzip $f: $!";
+	warn "DEBUG: reading $f for station $station_nr...\n" if $debug;
 	my @cols = @{ $csv->getline($fh) };
 	$csv->column_names(@cols);
 	while(my $row = $csv->getline_hr($fh)) {
 	    my $Datum = $row->{Datum} // die "No Datum?";
 	    my $bf10 = trim($row->{BFGL01_AG} // die "No BFGL01_AG?"); # note: in v1 BF10 was used; keep the variable name $bf10
 	    $station_to_date_to_bf10{$station_nr}{$Datum} = $bf10;
+	}
+	if ($debug) {
+	    require List::Util;
+	    warn "DEBUG:   date range for $station_nr now: " . List::Util::minstr(keys %{$station_to_date_to_bf10{$station_nr}})
+		. " - " . List::Util::maxstr(keys %{$station_to_date_to_bf10{$station_nr}}) . "\n";
 	}
     }
 }
@@ -169,3 +176,14 @@ sub get_best_station_nr {
 }
 
 __END__
+
+=head1 EXAMPLE
+
+Example usage (first download DWD soil data, then enrich the mudways file)
+
+    ./miscsrc/dwd-soil-update.pl -q
+    ./miscsrc/mudways-enrich.pl --soil-dwd-dir ./tmp/soil_dwd
+
+Output file is (currently hardcoded) in F</tmp/mudways_enriched.bbd>.
+
+=cut
