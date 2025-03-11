@@ -28392,6 +28392,7 @@ EOF
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/abriss-hat-begonnen_a388837
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=749078#post749078 (Rückbau der Rauchgasentschwefelungsanlage am Heizkraftwerk Charlottenburg)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/teilabriss-heizkraftwerk-charlottenburg.1423/#post-23000
+#: by: https://entwicklungsstadt.de/was-entsteht-an-der-mierendorffinsel-10-aktuelle-bauprojekte/
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
@@ -44332,7 +44333,8 @@ EOF
      },
      { from  => 1719266400, # 2024-06-25 00:00
        until => $isodate2epoch->("2027-07-01 18:00:00"), # undef, # XXX
-       text  => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Jerusalemer Str. und Markgrafenstr., voraussichtlich bis 2027',
+#      text  => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Jerusalemer Str. und Markgrafenstr., voraussichtlich bis 2027',
+       text  => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Markgrafenstr., voraussichtlich bis 2027',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
@@ -44358,7 +44360,7 @@ EOF
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 9725,11445 9711,11543
-Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
+# REMOVED (mittlerweile geradlinigere Führung, nur etwas enger) --- Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

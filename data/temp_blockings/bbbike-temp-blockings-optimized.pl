@@ -3168,6 +3168,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/abriss-hat-begonnen_a388837
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=749078#post749078 (Rückbau der Rauchgasentschwefelungsanlage am Heizkraftwerk Charlottenburg)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/teilabriss-heizkraftwerk-charlottenburg.1423/#post-23000
+#: by: https://entwicklungsstadt.de/was-entsteht-an-der-mierendorffinsel-10-aktuelle-bauprojekte/
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
@@ -6528,7 +6529,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 9725,11445 9711,11543
-Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
+# REMOVED (mittlerweile geradlinigere Führung, nur etwas enger) --- Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

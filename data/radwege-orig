@@ -2301,7 +2301,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
-#: by: https://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025)
+#: by: https://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 4. Quartal 2026)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
@@ -2310,7 +2310,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
 #: last_checked: 2025-03-10 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-12-31 vvv
+#: next_check: 2026-12-31 (infravelo) vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
 recht welliger Asphalt	RW1; 18010,7133 17847,7356 17769,7465
 #: next_check ^^^
@@ -8305,7 +8305,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
-#: by: https://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (mittlerweile bis 4. Quartal 2023) (bis 4. Quartal 2024) (bis 3. Quartal 2025)
+#: by: https://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (mittlerweile bis 4. Quartal 2023) (bis 4. Quartal 2024) (4. Quartal 2020 - 3. Quartal 2025)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
@@ -8322,12 +8322,12 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: last_checked: 2025-02-19 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2023-09-30 vvv
+#: next_check: 2025-09-30 (infravelo) vvv
 #: osm_watch: way id="335479077" version="24"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
 # REMOVED --- #: osm_watch: way id="4615031" version="39"
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 teilweise Poller, Grünbeschichtung	RW4; 12317,14535 12407,14470
