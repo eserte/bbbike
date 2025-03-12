@@ -30,3 +30,14 @@ build_script:
   - cd t
   - set BBBIKE_TEST_GUI=1
   - gmake test-no-cgi
+
+on_failure:
+  - ps: |
+      $cpanmDir = Join-Path $env:USERPROFILE ".cpanm\work"
+      $latestBuildLog = Get-ChildItem -Path $cpanmDir -Recurse -Filter build.log | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+      if ($latestBuildLog) {
+          Write-Output "Build log found at $($latestBuildLog.FullName)"
+          Get-Content -Path $latestBuildLog.FullName
+      } else {
+          Write-Output "No build log found."
+      }
