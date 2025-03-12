@@ -179,7 +179,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-03-10 vvv
+#: last_checked: 2025-03-12 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -301,7 +301,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2025-02-08
+#: last_checked: 2025-03-12
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -4037,8 +4037,8 @@ Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-marzahn-hellersdorf.42/page-7#post-23307
 #: osm_watch: way id="1306238147" version="2"
 #: osm_watch: way id="25795669" version="13"
-#: last_checked: 2024-11-09
-#: check_frequency: 120d
+#: last_checked: 2025-03-12
+#: check_frequency: 180d
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 # 
 #: last_checked: 2024-07-17 vvv
@@ -4292,7 +4292,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="29"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-12
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4349,7 +4349,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-03-10
+#: last_checked: 2025-03-12
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4357,7 +4357,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-03-10 vvv
+#: last_checked: 2025-03-12 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4407,7 +4407,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: XXX Bauarbeiten am Kanzlerpark
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
-#: last_checked: 2025-03-01 vvv
+#: last_checked: 2025-03-10 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="256450718" version="7"
@@ -4462,7 +4462,15 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 # REMOVED (mittlerweile fest eingezäunt) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: XXX strassen-orig etc.-Einträge können entfernt werden, sobald nichts mehr vom Weg sichtbar ist. --- #: last_checked: 2023-07-03 --- #: check_frequency: 180d --- Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # REMOVED (laut osm offen) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: last_checked: 2023-01-20 --- #: check_frequency: 14d --- #: next_check: 2023-02-01 --- (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
 # REMOVED (-> nur temp blockings ist nun aktiv) --- #: next_check_id: SPREEPARK-2022 --- #: last_checked: 2023-05-03 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: -20230630 vvv --- Wasserweg: Weg wegen Bauarbeiten gesperrt	2::inwork 15678,8911 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821 --- Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8833 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# REMOVED (mittlerweile sind die Einfahrt-verboten-Schilder mit "Radfahrer frei"-Zusatzschildern versehen) --- #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701 --- #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="1063629745" version="1" --- #: last_checked: 2024-06-28 --- #: check_frequency: 30d --- Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
+# 
+#: note: zwischenzeitlich waren die Einfahrt-verboten-Schilder mit "Radfahrer frei"-Zusatzschildern versehen, nun (2025-03) gibt es keine Zusatzschilder mehr
+#: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
+#: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
+#: osm_watch: way id="1063629745" version="1"
+#: last_checked: 2025-03-12
+#: check_frequency: 30d
+Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
 #: next_check_id: GENDARMENMARKT-2023
 #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gerade-unter-denkmalschutz-gestellte-gendarmenmarkt-soll-ab-2022-saniert-werden_a301569 (August 2022 - Ende 2024, keine Veranstaltungen während dieser Zeit)
@@ -4561,49 +4569,7 @@ Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 #: next_check: 2026-01-01
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 # 
-#: next_check_id: FAHLENBERGBRUECKE-2022
-#: by: https://www.berliner-woche.de/mueggelheim/c-bauen/ersatzneubau-der-neuen-fahlenbergbruecke-soll-nun-ende-2022-fertig-sein_a299399 (Ertüchtigung der Umfahrungsstrecke im 2. Quartal 2021; Ende 2022 wird der Neubau fertig)
-#: by: https://ausschreibungen-deutschland.de/798592_Ersatzneubau_der_Neuen_Fahlenbergbruecke_mit_BehelfsbrueckeReferenznummer_der_Bekanntmachung_2021_Berlin (Zuschlag am 2021-06-14)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4373
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/7kYPgKDTg39gIf6aWX7vbEWVjRJ836jvno5mmQnD/PGefGtq/50-Anlagen/05/B0274ZB2.pdf (2. Zwischenbericht) (Fertigstellungstermin: 06.04.2023)
-#: by: https://www.berliner-woche.de/mueggelheim/c-bauen/neue-fahlenbergbruecke-wird-jetzt-fruehestens-im-sommer-2023-fertig_a336881 (unklarer Artikel; Fertigstellung Ende 2. Quartal 2023)
-#: by: https://leute.tagesspiegel.de/treptow-koepenick/macher/2022/08/08/233796/auch-der-naechste-brueckenbau-stagniert/ (Lieferung der Behelfsbrücke im Oktober 2022; Fertigstellung der neuen Brücke im 4. Quartal 2023)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-12659.pdf (Behelfsbrücke im 4. Quartal 2022 fertig)
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/ (Behelfsumfahrung für das IV. Quartal 2022 geplant) (Ende der Abbrucharbeiten der alten Brücke: I. Quartal 2025)
-#: by: https://www.berliner-woche.de/mueggelheim/c-bauen/wieder-verzoegerung-bei-der-neuen-fahlenbergbruecke_a354938 (Fertigstellung Ende 2023)
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/?date=20221019
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/ (alternative URL)
-#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/verkehrsfuehrung_bauphase_2_phase_3.pdf (Geh/Radweg auf der südlichen Seite, Gegenverkehrsregelung vermutlich nur für Kfz-Verkehr)
-#: by: https://berliner-abendblatt.de/2022/10/19/neue-fahlenbergbruecke-wird-gesperrt/
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1393957.php (Inbetriebnahme voraussichtlich im 2. Quartal 2024)
-#: by: https://berliner-abendblatt.de/berlin-news/umfangreiche-baumassnahmen-an-neuer-fahlenbergbruecke-id239562
-#: by: https://www.berliner-woche.de/mueggelheim/c-bauen/grossmontage-der-fahlenbergbruecke_a402202
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1462365.php (Eröffnung)
-#: by: https://www.berliner-woche.de/mueggelheim/c-bauen/brueckenneubau-freigegeben_a420245
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1517523.php (Abriss bis 13.01.2025)
-#: source_id: viz2021:13.703966,52.4026,16.08.2021,09:00 (bis 27.8.2021) (inaktiv)
-#: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022) (inaktiv)
-#: source_id[inactive]: bvg2021:369#BVG310116_0
-#: source_id[inactive]: bvg2021:369#BVG310521_0
-#: source_id: viz2021:13.70381,52.40265,28.10.2022,06:00 (bis 01.03.2024) (inaktiv) (bis 30.06.2024) (inaktiv) (bis 31.07.2024) (inaktiv)
-#: source_id: viz2021:13.704581,52.402425,19.07.2023,17:30 (bis 20.07.2023) (inaktiv)
-#: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023) (bis 01.03.2024) (bis 30.06.2024) (bis 31.07.2024) (bis 03.07.2024) (inaktiv)
-#: note: laut rbb wird morgen die Neue Fahlenbergbrücke eingeweiht
-#: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv
-# REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17"
-# REMOVED (gelöscht) --- #: osm_watch: way id="897616703" version="2"
-#: osm_watch: way id="1110732558" version="15"
-#: osm_watch: way id="325319592" version="15"
-#: osm_watch: note 4574641 4
-#: priority: #A
-#: last_checked: 2024-07-14 (mapillary)
-# REMOVED --- #: check_frequency: 60d
-# REMOVED --- #: next_check: 2022-10-28
-# REMOVED --- #: next_check: 2024-07-03 --- Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
-#: XXX Wird bis Ende 2024 zurückgebaut --- mittlerweile laut MVKU-Seite bis I. Quartal 2025
-#: next_check: 2025-01-13
-Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
-# 
+# REMOVED (laut osm nicht mehr existent) --- #: next_check_id: FAHLENBERGBRUECKE-2022 --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/ersatzneubau-der-neuen-fahlenbergbruecke-soll-nun-ende-2022-fertig-sein_a299399 (Ertüchtigung der Umfahrungsstrecke im 2. Quartal 2021; Ende 2022 wird der Neubau fertig) --- #: by: https://ausschreibungen-deutschland.de/798592_Ersatzneubau_der_Neuen_Fahlenbergbruecke_mit_BehelfsbrueckeReferenznummer_der_Bekanntmachung_2021_Berlin (Zuschlag am 2021-06-14) --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4373 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/7kYPgKDTg39gIf6aWX7vbEWVjRJ836jvno5mmQnD/PGefGtq/50-Anlagen/05/B0274ZB2.pdf (2. Zwischenbericht) (Fertigstellungstermin: 06.04.2023) --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/neue-fahlenbergbruecke-wird-jetzt-fruehestens-im-sommer-2023-fertig_a336881 (unklarer Artikel; Fertigstellung Ende 2. Quartal 2023) --- #: by: https://leute.tagesspiegel.de/treptow-koepenick/macher/2022/08/08/233796/auch-der-naechste-brueckenbau-stagniert/ (Lieferung der Behelfsbrücke im Oktober 2022; Fertigstellung der neuen Brücke im 4. Quartal 2023) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-12659.pdf (Behelfsbrücke im 4. Quartal 2022 fertig) --- #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/ (Behelfsumfahrung für das IV. Quartal 2022 geplant) (Ende der Abbrucharbeiten der alten Brücke: I. Quartal 2025) --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/wieder-verzoegerung-bei-der-neuen-fahlenbergbruecke_a354938 (Fertigstellung Ende 2023) --- #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/?date=20221019 --- #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/ (alternative URL) --- #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/verkehrsfuehrung_bauphase_2_phase_3.pdf (Geh/Radweg auf der südlichen Seite, Gegenverkehrsregelung vermutlich nur für Kfz-Verkehr) --- #: by: https://berliner-abendblatt.de/2022/10/19/neue-fahlenbergbruecke-wird-gesperrt/ --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1393957.php (Inbetriebnahme voraussichtlich im 2. Quartal 2024) --- #: by: https://berliner-abendblatt.de/berlin-news/umfangreiche-baumassnahmen-an-neuer-fahlenbergbruecke-id239562 --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/grossmontage-der-fahlenbergbruecke_a402202 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1462365.php (Eröffnung) --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/brueckenneubau-freigegeben_a420245 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1517523.php (Abriss bis 13.01.2025) --- #: source_id: viz2021:13.703966,52.4026,16.08.2021,09:00 (bis 27.8.2021) (inaktiv) --- #: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022) (inaktiv) --- #: source_id[inactive]: bvg2021:369#BVG310116_0 --- #: source_id[inactive]: bvg2021:369#BVG310521_0 --- #: source_id: viz2021:13.70381,52.40265,28.10.2022,06:00 (bis 01.03.2024) (inaktiv) (bis 30.06.2024) (inaktiv) (bis 31.07.2024) (inaktiv) --- #: source_id: viz2021:13.704581,52.402425,19.07.2023,17:30 (bis 20.07.2023) (inaktiv) --- #: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023) (bis 01.03.2024) (bis 30.06.2024) (bis 31.07.2024) (bis 03.07.2024) (inaktiv) --- #: note: laut rbb wird morgen die Neue Fahlenbergbrücke eingeweiht --- #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv --- # REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17" --- # REMOVED (gelöscht) --- #: osm_watch: way id="897616703" version="2" --- #: osm_watch: way id="1110732558" version="16" --- #: osm_watch: way id="325319592" version="15" --- #: osm_watch: note 4574641 4 --- #: priority: #A --- #: last_checked: 2024-07-14 (mapillary) --- # REMOVED --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2022-10-28 --- # REMOVED --- #: next_check: 2024-07-03 --- Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19 --- #: XXX Wird bis Ende 2024 zurückgebaut --- mittlerweile laut MVKU-Seite bis I. Quartal 2025 --- #: next_check: 2025-01-13 --- Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 # REMOVED --- #: next_check_id: SCHLESISCHERBUSCH-2023 --- #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/begonnene-bauarbeiten-enden-im-sommer-2023-im-schlesischen-busch_a357557 (bis Sommer 2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1570686227954954240#m --- #: by: https://nitter.cz/pic/orig/media%2FFcwyqHOXgAAeape.jpg --- #: by: https://www.facebook.com/vizberlin/posts/pfbid06LxJBbLf7E1BWSREAZxyQLbEtMmoQWyekoQVyZwYzUNCuLidZWQjvAgVxps92bz4l --- #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-aufwertung-des-historischen-rundwegs --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6522 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/kwYUvir/24-Anlagen/04/B1004SB.pdf --- #: XXX Qualität nach den Bauarbeiten? vvv --- #: last_checked: 2023-07-09 vvv -- #: check_frequency: 30d vvv --- #: next_check: 2023-09-15 vvv
 # REMOVED (laut osm hier nicht mehr) --- #: osm_watch: way id="358602468" version="12" --- #: osm_watch: way id="24189226" version="29" --- #: XXX Achtung: alten Eintrag in handicap_s-orig reaktivieren! --- Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert	2s:q3:inwork 13333,9929 13271,9927 13225,9897
 # REMOVED (hier nicht mehr) --- Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt, Umfahrung existiert	2s:q2:inwork 13225,9897 13109,9743 12905,9470
@@ -4638,7 +4604,6 @@ Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
-# 
 # REMOVED (offen) --- #: next_check_id: AUERDREIECK-2022 --- #: last_checked: 2023-10-08 --- #: check_frequency: 7d --- #: next_check: 2023-10-31 --- Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
@@ -5197,17 +5162,6 @@ Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,
 # REMOVED (Wegführung existiert nicht mehr) --- Grunerstr.: Radweg	1::igndisp 10973,12611 10954,12604
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 # REMOVED (Engstelle ist noch da, aber keine Einbahnstraße mehr) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/edge-eastside-tower-140m.18/page-13#post-14549 --- #: source_id: viz2021:13.44912,52.506133,17.07.2021,11:04 (bis 30.06.2023) (inaktiv) --- #: XXX wann sind die Bauarbeiten beendet? --- #: note: laut rbb komplett gesperrt, bis 30.6.2023, mittlerweile bis 30.06.2025, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13) --- #: osm_watch: way id="5096644" version="22" --- #: priority: #C --- #: last_checked: 2024-03-20 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2025-06-30 --- Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
-# 
-#: next_check_id: TACHELES-2020
-# REMOVED --- #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
-#: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
-#: note: Bei allen traffic-Diensten ist hier eine *feste* Einbahnstraße eingetragen
-#: also_indoor: traffic
-#: last_checked: 2025-02-19
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-03-31
-Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
-# 
 # REMOVED --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855679.php (Einhängung bis zum 21.10.2019, aber Freigabe erst im Frühjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.895895.php (Wiederinbetriebnahme am 20.02.2020, zum gleichen Zeitpunkt wird die Yorckstraßenbrücke 17 gesperrt, Wiederfreigabe im Frühling 2020) --- #: osm_watch: way id="36395401" version="24" --- #: priority: #A --- #: last_checked: 2019-10-16 --- #: next_check: 2020-02-20 --- Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
 # REMOVED (offen) --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: priority: #A vvv --- #: last_checked: 2020-06-30 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2020-07-03 vvv --- Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8423,9529 --- An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572 --- An den Yorckstraßenbrücken: vorübergehend gesperrt	2::inwork 8446,9670 8426,9572
 # REMOVED (aufgehoben) --- #: XXX wann wird die Einbahnstraßenregelung aufgehoben? --- #: also_indoor: traffic --- #: last_checked: 2019-11-05 --- #: check_frequency: 7d --- Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120

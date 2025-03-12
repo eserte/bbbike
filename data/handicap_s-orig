@@ -12,11 +12,14 @@
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php (Bauende: voraussichtlich Anfang Juni 2025)
 #: also_indoor: traffic (ex-G,ex-W,B,T)
-#: osm_watch[closed]: note 3677862 5
-# REMOVED --- #: next_check: 2025-06-01
-Weserstr.: Bauarbeiten für neue Gehwegvorstreckung	q4::inwork 14651,11666 14710,11626
+#: osm_watch: note 3677862 11
+#: note: Arbeiten für eine neue Gehwegvorstreckung
+#: last_checked: 2025-03-12
+#: check_frequency: 45d
+#: next_check: 2025-06-01 (BA-Artikel)
+Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgersteige	q4::inwork 14651,11666 14710,11626
 # 
-#: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025)
+#: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025) (bis 18.04.2025)
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
 #: osm_watch: way id="1145213536" version="6"
@@ -24,8 +27,8 @@ Weserstr.: Bauarbeiten für neue Gehwegvorstreckung	q4::inwork 14651,11666 14710,
 #: note: Halteverbotsschilder bis 18.04.2025
 #: also_indoor: traffic (G,T)
 #: last_checked: 2025-03-09
-#: check_frequency: 8d
-#: next_check: 2025-03-12 (VIZ-Verkehrsmeldung)
+#: check_frequency: 10d
+#: next_check: 2025-04-18 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 #: valid: -20250418
 Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
 # 
@@ -38,7 +41,7 @@ Pufendorfstr.: 70m der Fahrbahn gesperrt, Ausweichen auf Bürgersteig	q3::inwork 
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-03-03
+#: last_checked: 2025-03-12
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -136,7 +139,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-03-10
+#: last_checked: 2025-03-12
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -332,11 +335,13 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_55_4355_4442_online.pdf (Teileinziehung (wo genau?))
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_02_0117_0156_online.pdf (Teileinziehung: korrekte Planskizze; es ist der nördliche Strang)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1539372.php (Verschiebung: Fertigstellung im Sommer 2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/marktplatz-in-treptow-kopenick-eroffnung-nach-umbau-verschiebt-sich-13344481.html
+#: by: https://entwicklungsstadt.de/marktplatz-adlershof-fertigstellung-und-einweihung-im-sommer-2025-geplant/
 #: XXX der nördliche Strang soll dauerhaft eingezogen werden
 #: osm_watch: way id="20554168" version="26"
 #: osm_watch: way id="1155308749" version="1"
 #: last_checked: 2025-02-26 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 60d vvv
 #: next_check: 2025-09-01 (BA-Pressemitteilung) vvv
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
 # REMOVED (hier wieder offen) --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714
@@ -401,6 +406,13 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
 ### Mitte ###
+# 
+#: next_check_id: TACHELES-2020
+#: also_indoor: traffic
+#: last_checked: 2025-03-10 (mapillary)
+#: check_frequency: 30d
+Johannisstr.: etwa 20m der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
+# REMOVED --- Johannisstr.: Einbahnstraße	1s:q3:inwork 9385,13174 9254,13171
 # 
 # REMOVED --- #: XXX Laut Umleitungsschildern vom 19.7.2024 bis 30.8.2024
 # REMOVED --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1468227.php (Radverkehr wird über den Gehweg geführt)
@@ -1014,7 +1026,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="40"
 #: osm_watch: way id="1193560283" version="9"
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-12
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -1022,7 +1034,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-12
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1288,7 +1300,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 ### Biesdorf ###
 # 
 #: next_check_id: WEISSENHOEHER-2025
-#: last_checked: 2025-02-08
+#: last_checked: 2025-03-12
 #: note: Länge des gesperrten Bereichs geschätzt 50m, u.U. Umwege notwendig
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
 # 

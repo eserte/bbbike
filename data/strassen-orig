@@ -10392,7 +10392,7 @@ Wiecker Str.	N 16589,18075 16526,18164 16459,18257
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_32_2243_2298_online.pdf (Benennung)
 #: XXX neuer Name: Postplatz vvv
 #: osm_watch: note 4411697 2
-#: last_checked: 2024-11-13 vvv
+#: last_checked: 2025-01-07 (mapillary) vvv
 #: check_frequency: 120d vvv
 (S-Bahnunterführung Wartenberg)	NN 17077,18744 17109,18772
 (S-Bahnunterführung Wartenberg)	NN 17077,18744 17117,18761
@@ -10990,8 +10990,7 @@ Gosener Landstr.	H 28789,468 28809,462 29116,502 29406,540 29562,603 29632,594 3
 #: next_check_id: FAHLENBERGBRUECKE-2022
 # früher: (Gosener Landstr. - Parkplatz)	N
 (Gosener Landstr. - ehemalige Ersatzbrücke)	N 30621,235 30808,52 30817,43 30869,-5 30926,-53
-#: next_check_id: FAHLENBERGBRUECKE-2022
-(Neue Fahlenbergbrücke [ehemalige Ersatzbrücke])	N 30926,-53 31103,-142 31219,-87
+# REMOVED (laut osm nicht mehr existent) --- #: next_check_id: FAHLENBERGBRUECKE-2022 --- (Neue Fahlenbergbrücke [ehemalige Ersatzbrücke])	N 30926,-53 31103,-142 31219,-87
 #: note: in der Literatur teilweise als "Winterweg" bekannt
 (Gosener Damm - Seddinsee)	NN 28809,462 29120,271 29481,44 29979,-120 30233,-293 30421,-424
 #: note: bei osm als "Tabbertweg" bezeichnet
@@ -15902,7 +15901,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-03-10
+#: last_checked: 2025-03-12
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16292,7 +16291,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2025-03-10
+#: last_checked: 2025-03-12
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens
@@ -17998,6 +17997,7 @@ Pilgramer Str. [286-294D]	N 25150,10562 25211,10559 25347,10543 25382,10539
 (Pilgramer Str. - Gewerbegebiet)	NN 25145,10961 25168,10963
 (Pilgramer Str. - Gewerbegebiet)	N 25168,10963 25298,10966 25337,10967
 Straße 48 (Mahlsdorf)	N 25149,10695 25089,10697
+Kaaden-Ring	N 25149,10695 25329,10697 25415,10696 25415,10641 25332,10642 25329,10697
 Heribaldstr.	N 25029,10462 25022,10715
 Heribaldstr.	NN 25022,10715 25018,10747 25017,10767
 Gustavstr. (Mahlsdorf)	N 24928,10737 25022,10715 25082,10714
@@ -18021,7 +18021,7 @@ Ellaweg	N 24949,10956 24952,11046
 #: XXX bekommt diese Straße noch einen Namen? vvv
 #: XXX laut osm hier auch "Laraweg"
 #: osm_watch: way id="377388194" version="11"
-#: last_checked: 2024-11-09 vvv
+#: last_checked: 2025-03-12 vvv
 #: check_frequency: 120d vvv
 (namenslose Straße im Theodorpark)	NN 24899,11044 24904,11044
 (namenslose Straße im Theodorpark)	N 24904,11044 24952,11046
@@ -19099,7 +19099,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7343 (Antrag) (abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5TQj0X86Z3AV6QO6ibyHnoLSeLd4YmEqqKXJTU7c/vMYbgDSP/73-Anlagen/06/B1481SB.pdf (Schlussbericht)
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-10 (okas)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044

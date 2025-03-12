@@ -16,7 +16,7 @@
 #: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025)
 #: next_check: 2025-07-31
 #: valid: -20250731
-Elsenstr.: Gegenverkehrsreglung	X::inwork::alternating 24203,10848
+Elsenstr.: Gegenverkehrsreglung	X::inwork::alternating 23792,10926
 # 
 #: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1894643566640861298
@@ -226,7 +226,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-03-10
+#: last_checked: 2025-03-12
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -310,7 +310,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2025-03-08 vvv
+#: last_checked: 2025-03-10 (okas) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: valid: -20251231 vvv
@@ -687,8 +687,11 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 	X 15639,10469
 	X 16468,10695
 	X 18280,11266
+#: XXX_prog: zusammenhängende Ampelanlage vvv
 #: XXX_prog: in O-W und W-O-Richtung verliert man garantiert 1:30 min, wenn man auf dem Radweg (Benutzungsplicht!) fährt
 	X 18215,11690
+	X 18216,11656
+#: XXX_prog ^^^
 	X 18215,12123
 #: note: Anforderungsampel, kann automatisch aktiviert sein
 	F 18216,12209

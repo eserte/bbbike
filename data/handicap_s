@@ -3,7 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Weserstr.: Bauarbeiten für neue Gehwegvorstreckung	q4::inwork 14651,11666 14710,11626
+Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgersteige	q4::inwork 14651,11666 14710,11626
 Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
 Pufendorfstr.: 70m der Fahrbahn gesperrt, Ausweichen auf Bürgersteig	q3::inwork 12616,12844 12842,13070
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
@@ -29,6 +29,7 @@ Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18881,2062 18922,2238 1
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
+Johannisstr.: etwa 20m der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
@@ -3609,12 +3610,12 @@ Am Wiesenrain: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. s
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 Wriezener Karree: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12959,11631 12728,11850
+Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 14535,11327 14506,11275
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 5521,8087 5522,8024
 Klixstr.: Einbahnstraße Richtung Norden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 3871,18144 3833,17929
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9441,12670 9435,12698 9429,12728 9402,12792 9386,12833 9375,12911
 Dircksenstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 11057,12715 11138,12604 11202,12426
-Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174 9254,13171
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5802,10621
 Weinmeisterhornweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -4798,11231 -4579,11174
 Walter-Friedrich-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16172,25217 16171,25254

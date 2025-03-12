@@ -787,7 +787,8 @@ Nordufer: Asphalt	Q0 5605,14988 5627,14963 5873,14847 5984,14819
 Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7613,13517 7450,13432 7426,13420 7332,13367 7287,13342 7263,13331 7131,13261
 Stolzenfelsstr.: Verbundsteinpflaster	Q0 18718,8583 18787,8540
 Dorfstr.: Beton	Q0 22483,11261 22516,11418 22506,11445
-Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22506,11445 22496,11474 22469,11627 22313,11688
+Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22506,11445 22496,11474 22469,11627
+Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22469,11627 22313,11688
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22260,11742 22313,11688 22496,11474
 Dorfstr.: Kopfsteinpflaster	Q2 22260,11742 22149,11870 22112,11936 22140,11958
 Dorfstr.: rauer Asphalt	Q1 22140,11958 22191,11999 22216,12019
@@ -3002,7 +3003,7 @@ Münsterberger Weg: Kopfsteinpflaster	Q2 23558,11531 23526,11541 23430,11576 2336
 Münsterberger Weg: Asphalt	Q0 24172,11320 24029,11363
 Münsterberger Weg: Beton und Asphalt	Q0 23883,11416 24029,11363
 Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776
-Münsterberger Weg: unbefestigt	Q2 22886,11776 22701,11843
+Münsterberger Weg: wassergebundene Decke	Q1 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940
 Münsterberger Weg: Asphalt	Q0 22408,11940 22266,11995
 Münsterberger Weg: Beton	Q0 22266,11995 22216,12019
@@ -11752,6 +11753,7 @@ Landsberger Alleee [Wohngebiet/Nebenfahrbahn]: Asphalt	Q0 15976,14472 16059,1448
 Brückenstr. (Steglitz): Asphalt	Q0 5728,4371 5774,4408 5812,4455
 Brückenstr. (Steglitz): Mosaikpflaster	Q1 5812,4455 5821,4480
 Lynarstr. - Charlottenbrunner Str.: Verbundsteinpflaster/Mosaikpflaster	Q1 2674,9111 2706,9108
+Kaaden-Ring: unbefestigte Baustraße	Q2 25149,10695 25329,10697 25415,10696 25415,10641 25332,10642 25329,10697
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

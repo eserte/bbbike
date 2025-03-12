@@ -3631,23 +3631,23 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
        undef,
        {
          'data' => '# REMOVED --- #: next_check_id: MUENSTERBERGERWEG-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert? --- #: last_checked: 2020-10-31 --- #: check_frequency: 120d --- #: next_check: 2021-12-31
-#: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024
+#: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-03-08 (traffic) vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2025-03-12 vvv
+# REMOVED --- #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
 Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
-Münsterberger Weg	q4::inwork 24029,11363 23883,11416
+Münsterberger Weg	q3::inwork 24029,11363 23883,11416
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 3188,
-         'text' => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., voraussichtlich bis Mitte Dezember 2024, evtl. wurde verlängert',
+         'text' => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3873,17 +3873,19 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: LEMKE-2020
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php (alte Sperrung von 2020)
 # REMOVED (alter Abschnit) ---	q4::inwork 25191,12343 25363,12553
-#: osm_watch: note 4513116 2
+#: osm_watch: note 4513116 3
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
-#: last_checked: 2024-11-09
-#: check_frequency: 90d
+#: XXX zurzeit (2025-03) Asphaltierungsarbeiten
+#: last_checked: 2025-03-12
+#: check_frequency: 60d
 #: next_check: 2026-07-30
 # REMOVED (hier war noch nichts) ---	q4::inwork 25363,12553 25534,12763
 	q4::inwork 25534,12763 25663,12927
+Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 ',
          'from' => 1720994400,
          'id' => 3312,
-         'text' => 'Lemkestr.: zwischen Lenbachstr. und Frans-Hals-Str. Bauarbeiten, Fahrbahn kann gesperrt sein, voraussichtlich bis Sommer 2026',
+         'text' => 'Lemkestr.: zwischen Lenbachstr. und Frans-Hals-Str. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Lenbachstr., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => 1785513600
        },
@@ -4538,7 +4540,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2025-03-08 vvv
+#: last_checked: 2025-03-10 (okas) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-10-04 vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -4588,18 +4590,19 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025)
-#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025)
+#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
-	q4::inwork; 16166,25767 16121,25818
+Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
+Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
 #	2::inwork 16166,25767 16121,25818
 ',
          'from' => 1713897172,
          'id' => 3550,
-         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 31.03.2025',
+         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, geplant bis 11.04.2025',
          'type' => 'gesperrt',
-         'until' => 1743433200
+         'until' => 1744383600
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -4893,7 +4896,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-03-10
+#: last_checked: 2025-03-12
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5261,7 +5264,7 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="27"
 #: osm_watch: way id="1231148375" version="5"
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-10 (okas)
 #: check_frequency: 120d
 #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
@@ -5432,7 +5435,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-03-07
+#: last_checked: 2025-03-12
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6180,9 +6183,9 @@ Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-03-03 (daf)
+#: last_checked: 2025-03-10 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung, Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
 	2::inwork 7772,12694 7521,12581
 ',
@@ -6377,7 +6380,7 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-10 vvv
+#: last_checked: 2025-03-12 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-03-27 vvv
 Holteistr.	q4::inwork 14575,11407 14639,11512
@@ -6460,16 +6463,16 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025)
+         'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025)
 #: osm_watch: way id="1303423090" version="2"
 #: note: laut osm opening_date=2025-08-01
 	q3::inwork 10573,17566 10466,17464
 ',
          'from' => 1717909200,
          'id' => 4082,
-         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 01.05.2025 17:00',
+         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 28.03.2025 17:00',
          'type' => 'handicap',
-         'until' => 1746111600
+         'until' => 1743177600
        },
        undef,
        undef,
@@ -6536,7 +6539,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 ',
          'from' => 1719266400,
          'id' => 4094,
-         'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Jerusalemer Str. und Markgrafenstr., voraussichtlich bis 2027',
+         'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Markgrafenstr., voraussichtlich bis 2027',
          'type' => 'handicap',
          'until' => 1814457600
        },
@@ -7028,21 +7031,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.41159,52.50104,07.10.2024,19:17 (bis 07.10.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:140#HIM_FREETEXT_241551
-#: source_id: viz2021:13.412345,52.500834,07.10.2024,10:00 (bis 11.11.2024) (bis 11.12.2024) (bis 20.12.2024) (bis 14.03.2025)
-#: also_indoor: traffic (H,G,B,T,re-W,A)
-#: last_checked: 2025-03-04
-#: next_check: 2025-03-14
-	q3::inwork 10944,10606 11100,10530
-',
-         'from' => undef,
-         'id' => 4184,
-         'text' => 'Ritterstr.: zwischen Bergfriedstr. und Segitzdamm Wasserrohrbruch, kurzes Stück der Fahrbahn gesperrt, Bordsteine, geplant bis 14.03.2025',
-         'type' => 'handicap',
-         'until' => 1741968000
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: LS/223-P/24/161 (bis 30.06.2025)
@@ -7059,13 +7048,13 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024) (bis 17.01.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_242095
-#: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025) (bis 28.02.2025)
+#: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025) (bis 28.02.2025) (bis 14.03.2025) (bis 15.03.2025)
 #: source_id: bvg2024:147#HIM_FREETEXT_248518
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
 #: last_checked: 2025-03-11 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-03-15 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
 Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 #Fischerinsel	q4::inwork 10578,11969 10512,12039
@@ -7076,7 +7065,7 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
          'dont_check_date' => 1,
          'from' => 1727643600,
          'id' => 4187,
-         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis 14.03.2025 17:00, evtl. wird verlängert',
+         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis 15.03.2025 12:00, evtl. wird verlängert',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7196,13 +7185,15 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
        {
          'data' => '#: by: https://www.luftbildsuche.de/info/luftbilder/neubau-wohn-geschftshauses-berlin-deutschland-652549.html
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12009 (Anfrage)
-#: note: Länge der Engstelle etwa 70m
+#: note: Länge der Engstelle etwa 80m
 #: note: außerdem ist der Radweg auf der Heinrich-Grüber-Str. wahrscheinlich gesperrt
+#: note: Halteverbotsschilder bis 31.12.2025
 #: osm_watch: way id="1309204624" version="1"
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2024-11-13 (traffic)
-#: check_frequency: 90d
+#: last_checked: 2025-03-12
+#: check_frequency: 90d (traffic check)
+#: next_check: 2025-12-31 (Halteverbotsschilder)
 	q3::inwork; 23251,12146 23017,12177
 ',
          'from' => undef,
@@ -7727,8 +7718,8 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
        {
          'data' => '#: also_indoor: traffic (ex-H,G[falsch],ex-B,ex-T)
 # REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-02-28 --- #: check_frequency: 10d --- #: next_check: 2025-03-28 (Halteverbotsschilder) ---	2::inwork 17587,9655 17668,9632 17777,9649
-#: note: Länge etwa 150m, Bürgersteig existiert
-	q2::inwork 18266,9853 18066,9770
+#: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert
+	q2::inwork 18266,9853 18066,9770 17920,9698
 ',
          'from' => 1740415750,
          'id' => 4270,
@@ -7850,6 +7841,20 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
          'text' => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, vom 17.03.2025 06:00 bis 03.07.2025 17:00',
          'type' => 'gesperrt',
          'until' => 1751554800
+       },
+       {
+         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1899342020227080235 (hier nur Kfz-Verkehr)
+#: by: https://pbs.twimg.com/media/GlsnQ01XwAAbqgj?format=jpg&name=medium (gesperrte Bereiche je 40m lang)
+#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025)
+Einbecker Str.	q3::inwork; 17020,11748 17169,11677
+#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025)
+Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
+',
+         'from' => 1741586400,
+         'id' => 4279,
+         'text' => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., vom 11.03.2025 07:00 bis 04.04.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1743778800
        }
      
 );
