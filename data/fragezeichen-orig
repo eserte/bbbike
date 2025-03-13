@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-13
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -4248,6 +4248,7 @@ Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,
 #: by: https://www.berliner-zeitung.de/mensch-metropole/fahrgaeste-fussgaenger-radfahrer-das-sind-die-verlierer-bei-den-grossen-einsparungen-in-berlin-li.2273557 (Finanzierungskürzung, was bedeutet das?)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12717 (Antrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12768 (Anfrage)
+#: by: https://www.berliner-woche.de/mitte/c-bauen/senat-ueberarbeitet-umbau-der-torstrasse-startschuss-erst-2026_a437044 (zunächst westlich des Rosenthaler Platzes, Baubeginn Mitte 2026, Bauzeit zwei Jahre; Radspur Richtung Westen, Hochbordradweg Richtung Osten)
 #: last_checked: 2025-03-09
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2025-06-30
@@ -4510,7 +4511,7 @@ Charles-Corcelle-Ring	? 3676,16497 3711,16481 3895,16381 4263,16166 4724,15925 4
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_03_0117_0164_online.pdf (Teileinziehung)
-#: last_checked: 2025-03-07 (mapillary) vvv
+#: last_checked: 2025-03-13 vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 #: osm_watch: way id="202156991" version="20"
 #: osm_watch: way id="339201177" version="19"
@@ -4553,6 +4554,7 @@ Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/freude-ueber-neue-radwege-demo-fuer-verbindung-ueber-die-monumentenbruecke_a436292
 #: by: https://www.infravelo.de/projekt/belziger-strasse/ (2. Quartal 2025 - 3. Quartal 2025)
 #: by: https://www.infravelo.de/projekt/monumentenstrasse-langenscheidtstrasse/ (2. Quartal 2025 - 4. Quartal 2025)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1540584.php
 #: XXX außerdem: ein gegenläufiger Radweg auf der Südseite der Monumentenbrücke ist geplant
 #: XXX Langenscheidtbrücke wird für Kfz Einbahnstraße Richtung Osten
 #: last_checked: 2025-02-05 vvv
@@ -4997,7 +4999,7 @@ Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1322,352
 #: osm_watch: way id="1219396158" version="1"
 #: XXX außerdem entsteht eine Rampe zum Iburger Ufer
 #: XXX laut daf wurde zwischen Dovebrücke bis Röntgenbrücke frisch asphaltiert, aber noch nicht komplett fertig; auch ist die Freigabe unklar
-#: last_checked: 2025-03-05 vvv
+#: last_checked: 2025-03-12 (daf) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
 # REMOVED (weitgehend fertig) --- Spreeradweg: Sanierung	?::inwork 3867,12616 3888,12618 4030,12632 4078,12637 4131,12641 4162,12638
@@ -5589,8 +5591,9 @@ Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15
 #: last_checked: 2024-12-30 (Pressemitteilung)
 Robert-Siewert-Str./Römerweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 19431,9872 19459,9842 19485,9812
 #: by: https://www.berliner-zeitung.de/news/fussgaengerueberweg-vor-grundschule-fehlt-cdu-lichtenberg-hakt-beim-senat-nach-li.2300061
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/fussgaengerueberweg-fuer-grundschueler-gefordert_a437446 (hier: Höhe 77C)
 #: last_checked: 2025-02-23
-Schleizer Str./Arendsweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 17254,14954 17231,14979 17251,15012
+Schleizer Str./Arendsweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 17353,15006 17406,14986 17356,14966
 #: last_checked: 2025-03-07
 Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 16239,12245 16255,12224 16278,12193
 #: check_frequency ^^^
@@ -7055,7 +7058,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5357,7391 5364,7330 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2025-03-10 (daf)
+#: last_checked: 2025-03-13
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -7167,9 +7170,9 @@ Landesstraße 30 (Woltersdorf und Rüdersdorf): wurde hier ein gemeinsamer Geh- un
 #: by: https://www.o-sp.de/download/lbvbrandenburg/254573
 #: by: https://www.o-sp.de/download/lbvbrandenburg/254578
 #: source_id: LS/721-F/22/001 (bis 14.9.2024) (inaktiv) (bis 14.09.2024) (inaktiv) (bis 31.01.2025) (inaktiv)
-#: source_id: LS/721-F/22/002 (bis 20.12.2024) (inaktiv) (bis 07.03.2025) (inaktiv)
+#: source_id: LS/721-F/22/002 (bis 20.12.2024) (inaktiv) (bis 07.03.2025) (inaktiv) (bis 31.03.2025)
 #: osm_watch: way id="4698246" version="9" brb
-#: next_check: 2025-03-07 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
 B158 Bad Freienwalde: bei der Instandsetzung sind möglicherweise Radspuren entstanden (oder existierten diese bereits?)	? 52984,42973 53249,43276 53317,43391
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31873
@@ -7546,7 +7549,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-03-11
+#: last_checked: 2025-03-13
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8913,7 +8916,7 @@ Blaschkoallee/Onkel-Bräsig-Str./Riesestr.: vermutlich entsteht hier eine Ampel	?
 Westfälische Str./Bielefelder Str.: vermutlich entsteht hier 2025 eine Ampel	? 3849,9582 3813,9566 3772,9550
 # 
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025)
-#: last_checked: 2025-03-09
+#: last_checked: 2025-03-13
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 Französische Str./Markgrafenstr.: neue Ampel soll 2025 entstehen	? 9624,12153 9645,12133 9671,12109
@@ -11526,6 +11529,7 @@ Tempelhofer Weg/Britzer Damm: Bebauungsplan 8-98, werden hier Wege/Straßen entst
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ulap-quartier-berlin-hbf-invalidenstra%C3%9Fe-clara-jaschke-stra%C3%9Fe-alt-moabit.858/page-2#post-20070
 #: by: https://formfollowsyou.com/ulap/ (3D-Modell)
 #: by: https://www.deutsches-architekturforum.de/thread/14794-ulap-quartier-geplant/?postID=768618#post768618
+#: by: https://entwicklungsstadt.de/hauptbahnhof-landeslabor-wird-fuer-neues-stadtquartier-abgerissen/ (Rückbau bis Ende 2025; Bauzeit des ULAP-Quartiers 10 Jahre)
 #: XXX noch keine Termine
 #: last_checked: 2025-03-01
 #: check_frequency: 720d

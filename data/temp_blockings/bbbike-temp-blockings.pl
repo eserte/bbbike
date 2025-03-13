@@ -10977,11 +10977,13 @@ EOF
 	2::inwork 39917,38037 40666,38512 41864,39489 42062,39651
 EOF
      },
-     { from  => 1197154800, # 2007-12-09 00:00
-       until => 1197759600, # 2007-12-16 00:00
-       text  => 'L 030 Lindenstr. Bahnübergang zur Bahnhof- u. Bruchmühler Str. in Petershagen Gleisbauarbeiten Vollsperrung 10.12.2007-15.12.2007 ',
+     { from  => 1745553600, # 2025-04-25 06:00 # 1197154800, # 2007-12-09 00:00
+       until => 1745769600, # 2025-04-27 18:00 # 1197759600, # 2007-12-16 00:00
+#      text  => 'L 030 Lindenstr. Bahnübergang zur Bahnhof- u. Bruchmühler Str. in Petershagen Gleisbauarbeiten Vollsperrung 10.12.2007-15.12.2007 ',
+       text  => 'Petershagen/Eggersdorf, Bahnübergang: Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, 26.04.2025 06:00 Uhr bis 27.04.2025 18:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 256400293 (bis 27.04.2025)
 	2::inwork 35386,13954 35427,13624
 EOF
      },
@@ -14869,11 +14871,11 @@ EOF
 	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => $isodate2epoch->("2022-07-04 00:00:00"), # mindestens 1 Tag Vorlauf, besser drei
-       until => $isodate2epoch->("2022-07-13 22:00:00"), # mindestens 1 Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
+     { from  => $isodate2epoch->("2025-07-14 00:00:00"), # mindestens 1 Tag Vorlauf, besser drei
+       until => $isodate2epoch->("2025-07-23 22:00:00"), # mindestens 1 Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
        prewarn_days => 3,
        postwarn_days => 2,
-       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (7.7.2022 - 11.7.2022; Sperrungen fangen schon früher an und dauern länger)',
+       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (17.7.2025 - 21.7.2025; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 7, start => "2024-10-25T00:00:00"]], # note: Gendarmenmarkt wird saniert, nächste Veranstaltung 2025
        # zZt status=500: source_id => 'http://www.classicopenair.de/de',
@@ -14881,7 +14883,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (Sanierung des Gendarmenmarkts ab 2022 bis 2024, dann gibt's hier keine Veranstaltungen)
 #: by: https://classicopenair.de/de/component/content/frontpage (2021 verschoben auf 7. bis 12. Juli 2022)
-#: by: https://www.classicopenair.de/
+#: by: https://www.classicopenair.de/ (2025: 17. bis 21. Juli 2025)
 	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
@@ -40374,7 +40376,7 @@ EOF
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-01-19 (daf)
+#: last_checked: 2025-03-11 (okas)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -41966,7 +41968,8 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Gendarmenmarkt: rund um den Gendarmenmarkt Einbahnstraßenregelungen (Mohrenstr.) bzw. Sperrung der Fahrbahn (Charlottenstr., Markgrafenstr.)',
+#      text  => 'Gendarmenmarkt: rund um den Gendarmenmarkt Einbahnstraßenregelungen (Mohrenstr.) bzw. Sperrung der Fahrbahn (Charlottenstr., Markgrafenstr.)',
+       text  => 'Charlottenstr.: Fahrbahn in Höhe Gendarmenmarkt noch gesperrt (Stand: 13.03.2025 abends)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GENDARMENMARKT-2023
@@ -41975,14 +41978,12 @@ EOF
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
 #: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-03-09 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2024-12-20 vvv
+#: last_checked: 2025-03-13 vvv
+# REMOVED --- #: check_frequency: 30d vvv --- # REMOVED --- #: next_check: 2024-12-20 vvv
 #: osm_watch: way id="35557161" version="25"
-#: osm_watch: note 4045330 10
+#: osm_watch[closed]: note 4045330 11
 # REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
-#: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024
-Markgrafenstr.	q4::inwork 9666,11935 9656,12031
+# REMOVED (offen) --- #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024 --- Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 # REMOVED (hier eigentlich mittlerweile immer offen) --- Markgrafenstr.	q4::inwork 9656,12031 9645,12133
 #: osm_watch: way id="389101374" version="21"
 # REMOVED (hier ist die Einbahnstraße mittlerweile für Radfahrer offen) --- Mohrenstr.	q3::inwork; 9679,11834 9547,11819
@@ -41991,11 +41992,10 @@ Markgrafenstr.	q4::inwork 9666,11935 9656,12031
 #: osm_watch: way id="1149365724" version="9"
 #: osm_watch: way id="1149365723" version="7"
 #: XXX Die Charlottenstr. könnte in Kürze freigegeben werden
-#: check_frequency: 14d vvv
+#: check_frequency: 3d vvv
 Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
 Charlottenstr.	q3::inwork 9523,12019 9509,12117
-#: check_frequency ^^^
-# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -43159,7 +43159,7 @@ EOF
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
 #: osm_watch: note 4210969 5
-#: last_checked: 2025-03-05 vvv
+#: last_checked: 2025-03-12 (daf) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
 # REMOVED (laut osm westlich des Siemensstegs offen) ---	2::inwork 3836,12614 3867,12616 3888,12618 4030,12632 4078,12637 4131,12641
@@ -45600,12 +45600,13 @@ EOF
 	q3::inwork 10944,10606 11100,10530
 EOF
      },
-     { from  => 1728799200, # 2024-10-13 08:00
-       until => 1734727692, # 1738944000, # 2025-02-07 17:00
-       text  => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 14.10.2024 08:00 Uhr bis 07.02.2025 17:00 Uhr',
+     { from  => $isodate2epoch->("2025-03-16 00:00:00"), # 1728799200, # 2024-10-13 08:00
+       until => $isodate2epoch->("2025-04-30 18:00:00"), # 1734727692, # 1738944000, # 2025-02-07 17:00
+#      text  => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 14.10.2024 08:00 Uhr bis 07.02.2025 17:00 Uhr',
+       text  => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 30.04.2025',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/200 (bis 07.02.2025) (mittlerweile nur noch Wintersicherung mit einigen Einschränkungen, bis 30.04.2025)
+#: source_id: LS/221-F/24/200 (bis 07.02.2025) (mittlerweile nur noch Wintersicherung mit einigen Einschränkungen, bis 30.04.2025) (Vollsperrung, bis 30.04.2025)
 	2::inwork 36087,16319 36539,16154 38171,15125
 EOF
      },
@@ -45622,7 +45623,7 @@ EOF
        until => undef, # $isodate2epoch->("2025-02-28 17:00:00"), # 1732636800, # 2024-11-26 17:00
        dont_check_date => 1,
 #      text  => 'Fischerinsel: Richtung Breite Str. vor Mühlendamm: Wasserrohrbruch, Fahrtrichtung gesperrt, vom 30.09.2024 23:00 bis voraussichtlich 17.01.2025 17:00',
-       text  => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis 15.03.2025 12:00, evtl. wird verlängert',
+       text  => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis 15.03.2025 12:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
@@ -45630,10 +45631,10 @@ EOF
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_242095
 #: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025) (bis 28.02.2025) (bis 14.03.2025) (bis 15.03.2025)
-#: source_id: bvg2024:147#HIM_FREETEXT_248518
+#: source_id: bvg2024:147#HIM_FREETEXT_248518 (kein Ende-Datum) (bis 2025-03-17)
 #: also_indoor: traffic (re-B,re-T,G,H,W)
 #: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-03-11 vvv
+#: last_checked: 2025-03-13 (weitgehend fertiggestellt) vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-03-15 (VIZ-Verkehrsmeldung) vvv
 Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
@@ -46220,11 +46221,11 @@ EOF
 EOF
      },
      { from  => 1734242400, # 2024-12-15 07:00
-       until => 1741968000, # 2025-03-14 17:00
-       text  => 'Laubacher Str.: Bauarbeiten zwischen Wiesbadener Str. und Bergheimer Platz, Sperrung Richtung Süden, vermutlich sind auch Radfahrer betroffen, vom 16.12.2024 07:00 bis 14.03.2025 17:00',
+       until => $isodate2epoch->("2025-04-30 17:00:00"), # 1741968000, # 2025-03-14 17:00
+       text  => 'Laubacher Str.: Bauarbeiten zwischen Wiesbadener Str. und Bergheimer Platz, Sperrung Richtung Süden, vermutlich sind auch Radfahrer betroffen, vom 16.12.2024 07:00 bis 30.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.319959,52.470975,16.12.2024,07:00 (hier nur Kfz, bis 14.03.2025)
+#: source_id: viz2021:13.319959,52.470975,16.12.2024,07:00 (hier nur Kfz, bis 14.03.2025) (bis 30.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1868530243469811893
 #: by: https://pbs.twimg.com/media/GercPIvWwAAA2u8?format=png&name=900x900
 #: note: laut VIZ-Korrespondenz gibt es eine gesonderte Umleitungsstrecke für den Radverkehr
@@ -46494,7 +46495,9 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.30113,52.51347,04.11.2024,07:00 (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.30113,52.51347,13.02.2025,11:00 (bis 28.03.2025) (inaktiv)
-#: source_id: viz2021:13.30307,52.51345,10.03.2025,12:00 (bis 31.03.2025)
+#: source_id: viz2021:13.30307,52.51345,10.03.2025,12:00 (bis 31.03.2025) (vorfristig inaktiv)
+#: also_indoor: traffic (H,T)
+#: note: bei rbb und einigen Verkehrsdiensten noch aktiv, bei VIZ nicht mehr
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 3666,11855 3528,11852
 	q4::inwork; 3528,11852 3406,11849
 EOF

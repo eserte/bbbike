@@ -26,8 +26,8 @@ Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgerstei
 #: osm_watch: way id="1363264660" version="2"
 #: note: Halteverbotsschilder bis 18.04.2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-03-09
-#: check_frequency: 10d
+#: last_checked: 2025-03-13
+#: check_frequency: 14d
 #: next_check: 2025-04-18 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 #: valid: -20250418
 Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
@@ -85,7 +85,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1327235572" version="8"
 #: osm_watch: way id="1146013233" version="11"
 #: osm_watch: way id="1134071039" version="13"
-#: last_checked: 2025-03-10 (osm) vvv
+#: last_checked: 2025-03-13 vvv
 #: check_frequency: 14d vvv
 Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778
 Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -518,7 +518,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-02-16
+#: last_checked: 2025-03-13
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (rbb)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -1163,6 +1163,7 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 #: source_id: viz2021:13.588878,52.541211,25.07.2024,10:00 (Gothaer, nördlicher Abschnitt, bis 01.11.2024) (inaktiv)
 #: source_id: viz2021:13.588839,52.538041,25.07.2024,10:00 (Gothaer, südlicher Abschnitt, bis 01.11.2024) (bis 15.11.2024) (inaktiv)
 #: source_id: viz2021:13.588878,52.541211,01.11.2024,07:00 (Gothaer, nördlicher Abschnitt, bis 18.11.2024) (inaktiv)
+#: source_id: bvg2024:195#HIM_FREETEXT_271510 (bis 2025-07-31)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 6
 #: last_checked: 2025-01-22 vvv
@@ -3671,7 +3672,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-03-11
+#: last_checked: 2025-03-13
 #: check_frequency: 45d
 #: note: früher: breiter Geh- und Radweg	q0-
 Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243

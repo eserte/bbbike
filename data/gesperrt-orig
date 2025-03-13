@@ -3971,13 +3971,13 @@ Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-03-01 (bahninfo-forum)
+#: last_checked: 2025-03-11 (okas)
 #: check_frequency: 90d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-03-01 (bahninfo-forum)
-Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689
+#: last_checked: 2025-03-11 (okas)
+Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="1"
@@ -4106,14 +4106,16 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
-#: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Sanierung des Marinehauses bis Mitte 2025)
+#: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Stand 2022: Sanierung des Marinehauses bis 2026)
+#: by: https://entwicklungsstadt.de/marinehaus-berlin-mitte-sanierung-hat-begonnen/ (Hauptbaumaßnahmen bis 2027)
+#: by: https://www.stadtmuseum.de/museum/marinehaus
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
 #: last_checked: 2025-03-11
 #: check_frequency: 30d
-#: next_check: 2025-06-30
+#: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 # 
 #: next_check_id: GARTENSTADTKARLSHORST-2025
@@ -4426,7 +4428,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-03-09
+#: last_checked: 2025-03-13
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4472,33 +4474,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
-#: next_check_id: GENDARMENMARKT-2023
-#: by: https://www.berliner-woche.de/mitte/c-bauen/der-gerade-unter-denkmalschutz-gestellte-gendarmenmarkt-soll-ab-2022-saniert-werden_a301569 (August 2022 - Ende 2024, keine Veranstaltungen während dieser Zeit)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10876 (Frage)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10985 (Frage)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1253713.php (Start der bauvorbereitenden Arbeiten: 2022-10-12)
-#: by: https://gruen-berlin.de/projekte/urbane-freiraeume/gendarmenmarkt
-#: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
-#: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590
-#: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024)
-#: by: https://entwicklungsstadt.de/berlin-mitte-sichtbarer-fortschritt-beim-umbau-des-gendarmenmarktes/
-#: by: https://www.tagesspiegel.de/kultur/classic-open-air-auf-dem-gendarmenmarkt-neustart-mit-anna-netrebko-12869530.html (Wiedereröffnung spätestens am 17. Juli 2025)
-#: by: https://gruen-berlin.de/pressemitteilung/gendarmenmarkt-hauptbaumassnahmen-in-rekordtempo-abgeschlossen (Freigabe im Februar 2025)
-#: by: https://www.berliner-woche.de/mitte/c-bauen/der-gendarmenmarkt-hat-seine-schoenheitskur-fast-hinter-sich_a432984
-#: by: https://www.rbb24.de/panorama/beitrag/2025/03/berlin-gendarmenmarkt-eroeffnung-sanierung.html (Eröffnung am 13. März 2025)
-#: last_checked: 2025-03-09 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2025-03-13 vvv
-#: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv
-#: osm_watch: way id="766868087" version="14"
-Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031
-#: osm_watch: way id="766868090" version="17"
-Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935
-#: note ^^^
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (offen) --- #: next_check_id: GENDARMENMARKT-2023 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gerade-unter-denkmalschutz-gestellte-gendarmenmarkt-soll-ab-2022-saniert-werden_a301569 (August 2022 - Ende 2024, keine Veranstaltungen während dieser Zeit) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10876 (Frage) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10985 (Frage) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1253713.php (Start der bauvorbereitenden Arbeiten: 2022-10-12) --- #: by: https://gruen-berlin.de/projekte/urbane-freiraeume/gendarmenmarkt --- #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/ --- #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590 --- #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024) --- #: by: https://entwicklungsstadt.de/berlin-mitte-sichtbarer-fortschritt-beim-umbau-des-gendarmenmarktes/ --- #: by: https://www.tagesspiegel.de/kultur/classic-open-air-auf-dem-gendarmenmarkt-neustart-mit-anna-netrebko-12869530.html (Wiedereröffnung spätestens am 17. Juli 2025) --- #: by: https://gruen-berlin.de/pressemitteilung/gendarmenmarkt-hauptbaumassnahmen-in-rekordtempo-abgeschlossen (Freigabe im Februar 2025) --- #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gendarmenmarkt-hat-seine-schoenheitskur-fast-hinter-sich_a432984 --- #: by: https://www.rbb24.de/panorama/beitrag/2025/03/berlin-gendarmenmarkt-eroeffnung-sanierung.html (Eröffnung am 13. März 2025) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1540307.php (Eröffnung) --- #: last_checked: 2025-03-09 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2025-03-13 vvv --- #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv --- #: osm_watch: way id="766868087" version="14" --- Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031 --- #: osm_watch: way id="766868090" version="17" --- Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935 --- #: note ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
@@ -4659,7 +4635,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.rbb24.de/panorama/beitrag/2024/03/sankt-hedwigs-kathedrale-sanierung-wiedereroeffnung-umbau-24-november-berlin-mitte.html (Eröffnung der Kathedrale am 24.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-oeffnet-nach-langer-sanierung-id248135
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-wird-nach-sanierung-wieder-eroeffnet-id270349 (Bernhard-Lichtenberg-Haus frühestens Ende 2025 fertig)
-#: last_checked: 2025-03-10 (daf)
+#: last_checked: 2025-03-13
 #: check_frequency: 90d
 #: next_check: 2025-12-31
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -5133,7 +5109,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2025-02-20 (webcam)
+#: last_checked: 2025-03-13
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5142,7 +5118,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen, die Masten und Signalgeber stehen schon.
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-13
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5150,7 +5126,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # 
 #: osm_watch: note 4480556 3
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-03-01
+#: last_checked: 2025-03-13
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021
