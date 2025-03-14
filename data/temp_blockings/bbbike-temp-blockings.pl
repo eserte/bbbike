@@ -373,6 +373,7 @@ EOF
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20211026
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20221108
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1483109.php
+#: by: https://www.tagesspiegel.de/berlin/bezirke/berlins-grosste-fussgangerzone-kunftiger-betreiber-fur-den-spandauer-weihnachtsmarkt-gefunden-13354381.html
 #: osm_watch: node id="9278469937" version="5"
 	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
 	2::xmas -3275,14407 -3338,14333
@@ -29857,7 +29858,7 @@ EOF
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
 #: also_indoor: traffic (T,G,H,W)
 # REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2024-11-16 (mapillary)
+#: last_checked: 2025-01-29
 #: check_frequency: 120d
 #: next_check: 2027-03-31
 Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
@@ -33787,9 +33788,9 @@ EOF
        until => 1627768799, # 2021-07-31 23:59
        text  => 'Jacobsensweg: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich vom 31.5.2021 bis Ende Juli 2021',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1083540.php',
        data  => <<EOF,
 #: next_check_id: JACOBSENWEG-2021
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1083540.php
 #: by: https://www.berliner-woche.de/borsigwalde/c-verkehr/neue-fahrbahn-auf-jacobsenweg_a309825
 #: also_indoor: traffic
 	q4::inwork; 2821,19559 2909,19485 2988,19445 3203,19340 3232,19325 3324,19277
@@ -33826,8 +33827,8 @@ EOF
        text  => 'Richard-Sorge-Str.: zwischen Mühsamstr. und Straßmannstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
        type  => 'handicap',
        recurring => 1,
-       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 # REMOVED --- #: XXX wird diese Spielstraße verstetigt? --- #: last_checked: 2021-05-13 --- #: next_check: 2022-05-17
 	q4::temp::play 13273,12902 13371,12694
@@ -33838,8 +33839,8 @@ EOF
        text  => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. mittwochs zwischen 15.30 und 18.30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
        type  => 'handicap',
        recurring => 1,
-       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 # REMOVED --- #: XXX Spielstraße wurde möglicherweise verstetigt; genaue Geltungszeiten? --- #: last_checked: 2021-05-12 --- #: next_check: 2022-05-12
 	q4::temp::play 14468,11203 14531,11142
@@ -33850,8 +33851,8 @@ EOF
        text  => 'Dresdener Str.: zwischen Erkelenzdamm und NKZ freitags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
        type  => 'handicap',
        recurring => 1,
-       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 # REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-14
 	q4::temp::play 11258,10682 11334,10527
@@ -33862,8 +33863,8 @@ EOF
        text  => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
        type  => 'handicap',
        recurring => 1,
-       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 # REMOVED (ja, Schilder hängen) --- #: XXX wird diese Spielstraße verstetigt? --- #: next_check: 2022-05-31
 	q4::temp::play 12286,9739 12398,9938
@@ -33874,8 +33875,8 @@ EOF
        text  => 'Waldemarstr.: zwischen Leuschnerdamm und Adalbertstr. Spielstraße sonntags 15 bis 19 Uhr, 23. Mai 2021 bis 30. September 2021',
        type  => 'handicap',
        recurring => 1,
-       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
 #: XXX wird diese Spielstraße verstetigt?
 #: next_check: 2022-05-16
 	q4::temp::play 11552,10863 11328,10957
@@ -33886,8 +33887,8 @@ EOF
        text  => 'Wrangelstr.: zwischen Falckensteinstr. und Oppelner Str. Spielstraße sonntags, 14.30 bis 19 Uhr, 16. Mai 2021 bis 30. September 2021, außer in den Sommerferien ',
        type  => 'handicap',
        recurring => 1,
-       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
 #: XXX wird diese Spielstraße verstetigt? (hier vermutlich erst nach der Beteiligung für die verkehrliche Umgestaltung)
 #: next_check: 2022-05-09
 	q4::temp::play 13032,10355 12897,10439
@@ -33895,11 +33896,10 @@ EOF
      },
      { from  => 1713896860, # $isodate2epoch->("2021-08-22 17:00:00"), # 1626374087, # 1626386400, # 2021-07-16 00:00
        until => 1714756838, # $isodate2epoch->("2024-11-29 17:00:00"), # $isodate2epoch->("2021-10-25 17:00:00"), # 1626374091, # 1630360799, # 2021-08-30 23:59
-       #text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 25. Oktober 2021',
-       #text  => 'Berliner Allee: Bauarbeiten zwischen Rennbahnstr. und Buschallee, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelung in der südlichen Parkstr., vom 24. April 2024 bis 26. Januar 2025',
+#      text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 25. Oktober 2021',
+#      text  => 'Berliner Allee: Bauarbeiten zwischen Rennbahnstr. und Buschallee, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelung in der südlichen Parkstr., vom 24. April 2024 bis 26. Januar 2025',
        text  => 'Berliner Allee: Bauarbeiten zwischen Rennbahnstr. und Buschallee, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelung in der südlichen Parkstr., bis Ende November 2024',
        type  => 'handicap',
-       source_id => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
        data  => <<EOF,
 # REMOVED #: next_check_id: BERLINERALLEE-2021
 #: source_id: viz2021:13.454427,52.549049,23.08.2021,07:00 (inaktiv)
@@ -33909,6 +33909,7 @@ EOF
 # REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994
 # REMOVED (hier nicht, laut mapillary) ---	q3::inwork; 13737,15994 13826,16026 14015,16103
 # REMOVED (früherer Bereich) ---	q4::inwork; 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782975251074502750
 #: by: https://pbs.twimg.com/media/GL2ysSnWoAE1G5t?format=jpg&name=medium (Einbahnstraßenregelung in der Parkstr.)
 #: source_id: viz2021:13.467591,52.555287,24.04.2024,08:00 (bis 26.01.2025) (inaktiv)
@@ -41368,7 +41369,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2024-12-12 17:00:00"),
+       until => 1741976024, # undef, # $isodate2epoch->("2024-12-12 17:00:00"),
        text  => 'Wilhelminenhofstr./Edisonstr.: Bauarbeiten, alle Zufahrten zur Kreuzung sind gesperrt, Umwege, voraussichtlich bis Mitte März 2025',
        type  => 'handicap',
        data  => <<EOF,
@@ -41385,18 +41386,12 @@ EOF
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (aktuelle Bauphase bis vsl. 17. Oktober 2024)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20241018 (für den MIV bis zum 25.11.2024 gesperrt)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (für den MIV voraussichtlich bis Ende Februar/Anfang März 2025 gesperrt) (mittlerweile bis 15.03.2025)
-#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025) (bis 21.02.2025) (bis 14.03.2025)
+#: source_id: viz2021:13.51409,52.4624,28.08.2023,16:30 (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (bis 22.11.2024) (inaktiv) (bis 12.12.2024) (bis 28.02.2025) (bis 31.01.2025) (bis 21.02.2025) (bis 14.03.2025) (inaktiv)
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 14.11.2024) (inaktiv)
-#: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres)
+#: source_id: bvg2024:365#HIM_FREETEXT_230808 (bis 31.08.2024) (bis 31.10.2024) (bis auf weiteres) (inaktiv)
 #: source_id[inactive]: bvg2024:m17#HIM_FREETEXT_235135 (ab 2024-08-17, ohne Endedatum)
-#: XXX mittlerweile (2024-11-20) laufen die letzten Asphaltierungsarbeiten, aber es ist nicht wahrscheinlich, dass übermorgen die Freigabe erfolgt (z.B. fehlen Markierungen)
 #: note: laut rbb Sperrung der Edisonstr. im nördlichen Bereich bis 19.01.2025 (!) (oder ist eigentlich die Treskowallee gemeint?)
-#: also_indoor: traffic (H,G,B,T,W)
-#: priority: #A vvv
-#: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv
-#: last_checked: 2025-03-05 (krickstadt) vvv
-# REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: XXX mittlerweile (2024-11-20) laufen die letzten Asphaltierungsarbeiten, aber es ist nicht wahrscheinlich, dass übermorgen die Freigabe erfolgt (z.B. fehlen Markierungen) --- #: also_indoor: traffic (H,G,B,T,W) --- #: priority: #A vvv --- #: add_fragezeichen: Sind die Sperrungen aufgehoben? vvv --- #: last_checked: 2025-03-05 (krickstadt) vvv --- #: next_check: 2025-03-14 (VIZ-Verkehrsmeldung) vvv
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="10"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
@@ -41409,11 +41404,7 @@ Edisonstr. (Süd)	q3::inwork; 17978,6375 17991,6431
 Edisonstr. (Süd)	q3::inwork; 17991,6431 17978,6375 17963,6313
 # REMOVED (hier keine Bauarbeiten mehr) --- Edisonstr. (Süd)	q3::inwork; 17963,6313 17948,6248
 Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,6431 17962,6674
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-#: priority ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^ --- #: priority ^^^
 EOF
      },
      { from  => 1689487200, # 2023-07-16 08:00
@@ -41809,7 +41800,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GEORGWILHELM-2024
 #: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv) (bis 29.01.2024) (bis 13.03.2024) (bis 25.03.2024) (bis 04.05.2024) (inaktiv)
-#: source_id: viz2021:13.290227,52.497049,06.11.2024,10:00 (bis 28.02.2025) (bis 30.04.2025)
+#: source_id: viz2021:13.290227,52.497049,06.11.2024,10:00 (bis 28.02.2025) (bis 30.04.2025) (vorfristig inaktiv)
 	q4::inwork 2702,10006 2687,10053
 EOF
      },
@@ -41974,6 +41965,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GENDARMENMARKT-2023
 #: by: https://www.berliner-woche.de/mitte/c-bauen/charlottenstrasse-wird-zur-promenade_a403959 (bis Herbst 2024)
+#: by: https://entwicklungsstadt.de/wiedereroeffnung-so-sieht-der-runderneuerte-gendarmenmarkt-aus/
 #: also_indoor: traffic (G[nur Markgrafen],B,W[nur Markgrafen])
 #: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
 #: priority: #A vvv
@@ -42843,7 +42835,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neuer-arger-um-bahn-baustelle-in-berlin-anwohner-kritisieren-kahlschlag-auf-raten-im-geschutzten-mauerstreifen-13189999.html
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
-#: osm_watch: way id="1244101968" version="5"
+#: osm_watch: way id="1244101968" version="6"
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
@@ -45651,7 +45643,7 @@ EOF
        text  => 'Erkner, Friedrichstr. und Brücke über das Flakenfließ: Bauarbeiten, mögliche Sperrung, vom 17.03.2025 bis 27.10.2025',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 246700596 (bis 14.03.2025)
+#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 # REMOVED (bei Mapillary ist an dieser Stelle nichts zu sehen) --- #: XXX laut VIZ-Verkehrsmeldung "Brücke über die Löcknitz", aber das ist doch der Flakenfließ? Oder ist die L38 gemeint?

@@ -3185,7 +3185,7 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 #: by: https://www.infravelo.de/projekt/weserstrasse-bauabschnitt-1/ (2. Quartal 2021 - 2. Quartal 2022) (mittlerweile 2. Quartal 2021 - 3. Quartal 2022) (2. Quartal 2021 - 4. Quartal 2022) ("abgeschlossen")
 #: by: https://www.infravelo.de/projekt/weserstrasse-bauabschnitt-2/ (zwischen Fulda- und Innstr.) (2. Quartal 2022 - 1. Quartal 2023) (mittlerweile gelöscht) (wieder da, nun bis 2. Quartal 2023) (mittlerweile 3. Quartal 2022 - 2. Quartal 2023) (mittlerweile 1. Quartal 2023 - 2. Quartal 2023) (2. Quartal 2023 - 2. Quartal 2023) (2. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2024) (3. Quartal 2023 - 4. Quartal 2024)
 #: by[removed]: https://www.infravelo.de/projekt/weserstrasse-und-ederstrasse/ (hier wird auch die Ederstr. erwähnt, außerdem: modale Filter, 2. Quartal 2021 - 4. Quartal 2022) (mittlerweile Ende: 1. Quartal 2024) (mittlerweile gelöscht und durch drei Teilprojekte ersetzt, siehe unten) (1. Quartal 2025 - 4. Quartal 2025) (mittlerweile 2. Quartal 2024 - 1. Quartal 2025)
-#: by: https://www.infravelo.de/projekt/weserstrasse-und-ederstrasse-bauabschnitt-3/ (1. Quartal 2027 - 4. Quartal 2027) (mittlerweile "degradiert" von "in Bau" zu "in Planung")
+#: by: https://www.infravelo.de/projekt/weserstrasse-und-ederstrasse-bauabschnitt-3/ (1. Quartal 2027 - 4. Quartal 2027) (mittlerweile "degradiert" von "in Bau" zu "in Planung") (2. Quartal 2026 - 2. Quartal 2027)
 #: by: https://www.kms-sonne.de/assets/2020/06/Karlson_Ausgabe7_2020_web.pdf (Diagonalstr. an Weichsel- und Roseggerstr. geplant)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1100616.php (zwischen Pannierstraße und Fuldastraße bis Ende 2021)
 #: by: https://www.kms-sonne.de/assets/2021/06/Die-Weserstrasse-wird-zur-Fahrradstrasse_210610-web.pdf
@@ -3213,7 +3213,7 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 #: osm_watch: way id="881155244" version="15"
 #: last_checked: 2025-03-04
 #: check_frequency: 120d
-#: next_check: 2027-12-31 (infravelo)
+#: next_check: 2027-06-30 (infravelo)
 # REMOVED (hier in Realisierung, andere fragezeichen-Einträge existieren) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (3. Bauabschnitt (Innstr. - Ederstr.): bis Ende 2025)
@@ -4223,7 +4223,7 @@ Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,
 #: source_id: viz2021:13.306536,52.518008,23.10.2024,07:00 (Markierungsarbeiten bis 04.11.2024) (inaktiv)
 #: source_id: viz2021:13.30649,52.518359,05.11.2024,07:00 (Markierungsarbeiten bis 15.11.2024) (bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.306321,52.519591,23.10.2024,07:00 (Markierungsarbeiten bis 05.11.2024) (inaktiv)
-#: source_id: viz2021:13.306064,52.524542,31.01.2025,07:00 (Sperrung für Kfz-Verkehr, bis 14.03.2025)
+#: source_id: viz2021:13.306064,52.524542,31.01.2025,07:00 (Sperrung für Kfz-Verkehr, bis 14.03.2025) (bis 21.03.2025)
 #: source_id: viz2021:13.306132,52.523359,21.02.2025,11:09 (bis 14.03.2025) (inaktiv)
 #: osm_watch: way id="4410427" version="40"
 #: osm_watch: way id="1052921140" version="7"
@@ -6797,7 +6797,7 @@ Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -1308
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/die-investa-real-estate-investiert-95-millionen-euro-in-gelaende-der-teltow-werft-d146253.html (Baubeginn 2019)
 #: by: https://www.investa.de/de/projekte/berlin-zehlendorf-teltow-werft ("in Entwicklung")
 #: last_checked: 2023-03-26 (mapillary)
-#: check_frequency: 720d
+#: check_frequency: 1000d
 Bebauungsplan 6-21 VE: ensteht hier ein Radweg mit einer Brücke?	? 353,-127 151,-243
 # 
 # REMOVED (realisiert) --- #: next_check_id: WERNSDORFERSTR-2019 --- #: XXX ist tatsächlich dieser Abschnitt gemeint? Vielleicht noch weiter bis zur Brücke, unter Ersetzung der jetzigen Radwege? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (III. Quartal 2018) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.747650.php ("ab Frühjahr 2019", "Bauzeit von vier Monaten", "Einbahnstraßenregelung") --- #: by: https://www.berliner-woche.de/schmoeckwitz/c-verkehr/wernsdorfer-strasse-wieder-neu_a184388 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.787684.php (ab 2019-03-18 für sechs Monate) --- #: by: https://www.berliner-woche.de/schmoeckwitz/c-bauen/strasse-wird-ausgebaut_a203044 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf --- #: XXX Priorität wegen Einbahnstraßenregelung --- #: XXX hat sich an der Baustellensituation am 23. Mai 2019 was geändert? --- #: add_fragezeichen: Sind die Bauarbeiten in der Wernsdorfer Str. bereits beendet? --- #: source_id: 2147344237 (bis 17. Oktober 2019) --- #: note: laut fritz bis 31.10.2019 --- #: priority: #A --- #: last_checked: 2019-06-30 (mapillary) --- #: next_check: 2019-10-17 --- Wernsdorfer Str.: Markierung von Radspuren	? 27351,-3032 27418,-3019 27518,-3054
@@ -7787,8 +7787,9 @@ Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 110
 #: by: https://berliner-abendblatt.de/service/temporaere-radwege-eine-revolution-auf-den-strassen-id94101
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1513532.php (Fahrradstraße zwischen Blücherstr. und Oranienstr., Realisierung 2025)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/naechste-fahrradstrasse_a432324
-#: osm_watch: note 4559018 2
+#: osm_watch: note 4559018 3
 #: XXX erste Markierung an der Einmündung Brachvogelstr./Alexandrinenstr. gesehen
+#: XXX laut BA (siehe osm-note) soll es auch Einbahnstraßenregelungen (wo?) geben
 #: last_checked: 2025-03-04
 #: check_frequency: 45d
 #: next_check: 2025-12-31 (Pressemitteilung)
@@ -8143,33 +8144,38 @@ Zossener Str./Brücke: Radfahrstreifen bekommen Protektionselemente (niedrige Pro
 #: by: https://www.o-sp.de/download/lbvbrandenburg/384036
 #: by: https://www.o-sp.de/download/lbvbrandenburg/384037
 #: last_checked: 2024-08-14 (mapillary)
-#: next_check: 2025-03-15
+#: check_frequency: 270d
 Vogelsdorf - Dahlwitz (B1/B5): Erstellung eines Radwegs auf der Nordseite	?::projected 32867,10950 32680,10954 31871,10926 30678,10923 29749,10911 29194,10899 27817,10875
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=71819
 #: by: https://www.o-sp.de/download/lbvbrandenburg/380487
 #: by: https://www.o-sp.de/download/lbvbrandenburg/380489 (erster Lageplan)
 #: by: https://www.o-sp.de/download/lbvbrandenburg/380500 (letzter Lageplan)
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Pessin - Haage (B5): Erstellung eines Radwegs	?::projected -40033,25453 -40115,25496 -41096,26617 -42151,27132 -42254,27221 -42610,27894 -43595,29936
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=69331
 #: by: https://www.o-sp.de/download/lbvbrandenburg/358846
 #: by: https://www.o-sp.de/download/lbvbrandenburg/358752 (Lageplan 1)
 #: by: https://www.o-sp.de/download/lbvbrandenburg/358756 (Lageplan 5)
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Neuendorf - Duben (B87): Erstellung eines Radwegs	?::projected 42589,-54983 42192,-55088 40170,-55589
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=69219
 #: by: https://www.o-sp.de/download/lbvbrandenburg/355723
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Forst, Cottbusser Str.: Schutzstreifen geplant	?::projected 94780,-71444 95299,-71685 95465,-71725 95667,-71870
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=68144
 #: by: https://www.o-sp.de/download/lbvbrandenburg/348108
 #: by: https://www.o-sp.de/download/lbvbrandenburg/348110
 #: by: https://www.o-sp.de/download/lbvbrandenburg/348116
-#: next_check: 2025-03-15
+#: last_checked: 2024-07-01 (mapillary)
+#: check_frequency: 300d
+# REMOVED --- #: check_frequency: 90d (indoor research)
 Herzberg/Elster - Fermerswalde (B87): Radweg geplant	?::projected -1256,-81290 -2100,-84117 -2267,-84330
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=67155
@@ -8178,7 +8184,8 @@ Herzberg/Elster - Fermerswalde (B87): Radweg geplant	?::projected -1256,-81290 -
 #: by: https://www.o-sp.de/download/lbvbrandenburg/337953
 #: by: https://www.o-sp.de/download/lbvbrandenburg/337957
 #: by: https://www.o-sp.de/download/lbvbrandenburg/337958
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Zehdenick (B109): Planung eines gemeinsamen Geh/Radwegs bzw. Schutzstreifen	?::projected 3945,61940 4010,62510 4255,63169 4314,63381
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=66519
@@ -8188,14 +8195,17 @@ Zehdenick (B109): Planung eines gemeinsamen Geh/Radwegs bzw. Schutzstreifen	?::p
 #: by: https://www.o-sp.de/download/lbvbrandenburg/333233
 #: by: https://www.o-sp.de/download/lbvbrandenburg/333237
 #: XXX gemeinsamer Geh/Radweg, teilweise einseitig, teilweise zweiseitig
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Lübben (B115): Planung von Radwegen	?::projected 44879,-50774 44951,-51018
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=65701
 #: by: https://www.o-sp.de/download/lbvbrandenburg/329209
 #: by: https://www.o-sp.de/download/lbvbrandenburg/329362
 #: by: https://www.o-sp.de/download/lbvbrandenburg/329366
-#: next_check: 2025-03-15
+#: osm_watch: note 4247018 3
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Friedland (B168): geplanter Radweg	?::projected 69850,-32667 69418,-33865 69506,-34418
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=64806 (Planfeststellungsbeschluss im Dez 2024)
@@ -8212,13 +8222,16 @@ Blumberg (B158): Verlegung der Elisenauer Str., Kreisverkehr mit Zebrastreifen, 
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=49893
 #: by: https://www.o-sp.de/download/lbvbrandenburg/253696
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Ortsumgehung Frankfurt (Oder) (B112): wird neu gebaut, vermutlich als Kfz-Straße	?::projected 82404,-2102 82517,-1615 82629,-1322 82614,-981 82550,-827 82104,23 81847,376 81606,941 81590,1098 81648,1391 81796,1569 82137,1762 82224,1904 82297,2290 82291,2544 82249,2761 82345,3712 82460,3920 82795,4421 82895,4663 82901,4947 82870,5140 82789,5237
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=43953
 #: by: https://www.o-sp.de/download/lbvbrandenburg/224376
 #: by: https://www.o-sp.de/download/lbvbrandenburg/224379
-#: next_check: 2025-03-15
+#: last_checked: 2024-09-17 (mapillary)
+#: check_frequency: 270d
+# REMOVED --- #: check_frequency: 90d (indoor research)
 Bahnübergang Wust (B1): Neubau einer Brücke	?::projected -44325,-1177 -43949,-847 -43578,-517
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=43945
@@ -8227,7 +8240,8 @@ Bahnübergang Wust (B1): Neubau einer Brücke	?::projected -44325,-1177 -43949,-84
 #: by: https://www.o-sp.de/download/lbvbrandenburg/226712 (Lageplan 2; Beginn der Kfz-Straße)
 #: by: https://www.o-sp.de/download/lbvbrandenburg/226724 (Lageplan 14; Ende der Kfz-Straße)
 #: XXX: Bis auf einen Abschnitt im Süden als Kfz-Straße
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Ortsumgehung Premnitz (B102): wird neu gebaut; genaue Lage?	?::projected -59074,11572 -59245,11710 -59261,11952 -59482,13025 -61088,19492 -61548,20092
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=42050
@@ -8237,7 +8251,8 @@ Ortsumgehung Premnitz (B102): wird neu gebaut; genaue Lage?	?::projected -59074,
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=73956
 #: by: https://www.o-sp.de/download/lbvbrandenburg/403126 (Übersichts-Lageplan)
 #: XXX Als Kfz-Straße geplant
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Ortsumgehung Finowfurt/Eberswalde (B167): wird neu gebaut; genaue Lage?	?::projected 26244,50372 27170,50453 28510,50857 29078,51171 29712,50875 30322,50857 31523,50682 33183,49915 33998,49891 36208,49897 38503,50622
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=18343
@@ -8247,14 +8262,16 @@ Ortsumgehung Finowfurt/Eberswalde (B167): wird neu gebaut; genaue Lage?	?::proje
 #: XXX Radweg entsteht auf der östlichen Straßenseite
 #: osm_watch: way id="390945222" version="14"
 #: osm_watch: way id="521460739" version="8"
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Lindenhagen - Schmachtenhagen (B109): neuer Radweg	?::projected 32422,94523 33352,96393 33968,96955
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=72375
 #: by: https://www.o-sp.de/download/lbvbrandenburg/388988
 #: by: https://www.o-sp.de/download/lbvbrandenburg/389033
 #: by: https://www.o-sp.de/download/lbvbrandenburg/389036
-#: next_check: 2025-03-15
+#: last_checked: 2025-03-14 (indoor research)
+#: check_frequency: 90d (indoor research)
 Thyrow - Siethen (L795): neuer Radweg auf der Westseite geplant	?::projected -624,-16610 -903,-16246 -1256,-15611 -1618,-15008 -2029,-14437 -2130,-14216 -2185,-14016 -2187,-14004
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=67330
@@ -8271,12 +8288,16 @@ Knotenpunkt L23/L38: Kreisverkehr wird zu einer normalen Ampelkreuzung umgebaut	
 #: osm_watch: way id="15090371" version="24"
 #: osm_watch: way id="680827092" version="5"
 #: osm_watch: way id="35141067" version="15"
-#: next_check: 2025-03-15
+#: last_checked: 2024-10-19 (mapillary)
+#: check_frequency: 210d
+# REMOVED --- #: check_frequency: 90d (indoor research)
 Bindow: Brückenneubau, Radweg	?::projected 33508,-13362 33989,-13281
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=39532
 #: by: https://www.o-sp.de/download/lbvbrandenburg/196344
-#: next_check: 2025-03-15
+#: last_checked: 2024-06-17 (mapillary)
+#: check_frequency: 360d
+# REMOVED --- #: check_frequency: 90d (indoor research)
 Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616,2567
 # 
 # REMOVED (fertig) --- #: by: https://www.berliner-woche.de/adlershof/c-verkehr/neuer-radweg-auf-dem-adlergestell_a374495 (Baubeginn vermutlich noch nicht 2023) --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7496 (Antrag) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1348146.php (Erwähnung von 2,64km, vermutlich hier (passt von der Streckenlänge)) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1372807.php (Bauarbeiten ab 9.10.2023 bis voraussichtlich 24. November 2023) --- #: by: https://www.berliner-woche.de/adlershof/c-verkehr/radweg-wird-auf-dem-adlergestell-markiert_a395959 --- #: by: https://www.infravelo.de/projekt/adlergestell-1/ (4. Quartal 2023 - 3. Quartal 2024) --- #: source_id: viz2021:13.534946,52.439721,09.10.2023,07:00 (bis 22.11.2023) (inaktiv) (bis 15.12.2023) (bis 23.12.2023) (bis 22.12.2023) (inaktiv) --- #: source_id: viz2021:13.518694,52.450631,22.12.2023,15:00 (ab S-Bhf. Johannisthal, bis 02.01.2024) (inaktiv) --- #: source_id: viz2021:13.518694,52.450631,02.01.2024,07:00 (ab S-Bhf. Johannisthal, bis 16.02.2024) (bis 07.03.2024) (bis 19.04.2024) (bis 03.05.2024) (bis 31.05.2024) (inaktiv) --- #: source_id: viz2021:13.5414,52.43546,02.01.2024,16:00 (bis 03.05.2024) (inaktiv) --- #: osm_watch: way id="886496559" version="7" --- #: osm_watch[closed]: note 3998167 2 --- #: osm_watch[closed]: note 3938423 1 --- #: note: laut rbb im südlichen Abschnitt verlängert bis 02.01.2024 --- #: XXX laut osm bereits weitgehend realisiert und eingetragen --- #: last_checked: 2024-06-09 --- #: check_frequency: 21d
@@ -8465,6 +8486,7 @@ Falkentaler Steig: entsteht hier ein Zebrastreifen?	? 2842,24293 2903,24264 2971
 #: by: https://www.tagesspiegel.de/berlin/infravelo-chef-michael-fugel-uber-berlins-radweg-plane-parallel-zur-avus-bauen-wir-die-ravus-13125058.html (für 2025 geplant)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1537546.php (geplant: Baumaßnahme im Frühsommer 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/nach-zwei-jahren-kampf-der-neue-radweg-in-der-thielallee-soll-im-herbst-fertig-sein-13327795.html (bis Ende Herbst 2025)
+#: by: https://entwicklungsstadt.de/mit-verspaetung-neuer-radweg-entsteht-auf-der-thielallee-in-dahlem/
 #: last_checked: 2024-08-09 (mapillary)
 #: check_frequency: 300d
 #: next_check: 2025-12-20 (infravelo)
@@ -8566,8 +8588,9 @@ Westumfahrung Bahnhofstr.	?::projected 21365,5832 21905,6162 21984,6317
 # REMOVED --- #: next_check: 2025-03-31 (infravelo)
 Olbersstr.: Radspuren geplant	?::projected 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
 # 
-#: by: https://www.infravelo.de/projekt/otto-braun-strasse/ (Richtung Norden) (2. Quartal 2024) (mittlerweile bis 3. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2026) (4. Quartal 2024 - 4. Quartal 2024) (abgeschlossen)
-#: by: https://www.infravelo.de/projekt/otto-braun-strasse-1/ (Richtung Süden) (2. Quartal 2024) (mittlerweile bis 3. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2024) (abgeschlossen)
+#: by: https://www.infravelo.de/projekt/otto-braun-strasse/ (Richtung Norden) (2. Quartal 2024) (mittlerweile bis 3. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2026) (4. Quartal 2024 - 4. Quartal 2024) (abgeschlossen) (mittlerweile 404)
+#: by: https://www.infravelo.de/projekt/otto-braun-strasse-1/ (Richtung Süden) (2. Quartal 2024) (mittlerweile bis 3. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2024) (abgeschlossen) (mittlerweile 404)
+#: by: https://www.infravelo.de/projekt/otto-braun-strasse-2/ (4. Quartal 2024 - 4. Quartal 2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,791686#msg-791686 (Radspuren sollen die Busspuren ersetzen)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1514146.php (Protektion (Klebebordsteine) nach der Winterpause 2024/2025)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/sicherheit-fuer-radler-wurde-auf-der-otto-braun-strasse-erhoeht_a432405
@@ -11726,6 +11749,7 @@ Siemenssiedlung: Ausbau der Straßen, ggfs. werden die Sandstraßen durch befestig
 #: by: https://www.sbrs.com/aktuelles/sbrs-gewinnt-ausschreibung-zu-planung-und-bau-eines-elektrobus-betriebshofes-der-bvg-berliner-verkehrsbetriebe/ (Baumaßnahmen 2025-2027)
 #: by: https://www.nd-aktuell.de/artikel/1186228.oepnv-in-berlin-die-bvg-hat-ein-werkstattproblem.html (noch kein Bauantrag)
 #: by: https://www.tagesspiegel.de/berlin/berliner-nahverkehr-in-der-krise-die-bvg-hat-jetzt-einen-sanierungsfahrplan-13024345.html (Erwähnung, keine Termine)
+#: by: https://www.tagesspiegel.de/berlin/die-bvg-investiert-in-berlin-treptow-ein-hof-fur-elektrobusse-kommt--mit-verspatung-13361467.html (Erwähnung, "demnächst")
 #: next_check: 2026-12-31
 BVG-Betriebshof an der Säntisstraße: geplant	?::projected 9105,968 9106,932 9128,885 9274,973 9289,944 9391,1008 9449,923 9541,945 9485,1126 9376,1219 9241,1073 9165,1014 9155,1006 9129,986 9105,968
 # 
