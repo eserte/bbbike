@@ -3933,7 +3933,8 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
        undef,
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
+         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-89ve/7-89-ve-pas_ol_11_mit-deckblatt_internetfassung_gez.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8371 (Bebauungsplan 7-89 VE)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8370
@@ -3954,15 +3955,14 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 #: osm_watch: way id="362719487" version="12"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-03-06 (architektur-urbanistik)
+#: last_checked: 2025-03-14 (daf)
 #: check_frequency: 180d
-#: next_check: 2027-01-01
+#: next_check: 2027-01-01 (presseportal website)
 	q4::inwork 6021,10405 6116,10688
 ',
          'from' => undef,
          'id' => 3320,
-         'source_id' => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
-         'text' => 'Passauer Str.: Fahrbahn gesperrt (Stand Juni 2024), Ende der Bauarbeiten unbekannt',
+         'text' => 'Passauer Str.: Fahrbahn gesperrt (Stand März 2025), Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4520,7 +4520,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-04
+#: last_checked: 2025-03-15
 #: check_frequency: 30d
 #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -4578,14 +4578,14 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: priority: #A
 #: last_checked: 2025-03-10 (okas) vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2024-10-04 vvv
+#: next_check: 2025-07-27 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 # REMOVED --- #: osm_watch: way id="794278028" version="10"
 # REMOVED --- #: osm_watch: way id="1181902719" version="1"
 # REMOVED --- Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
 #: osm_watch: way id="1163982841" version="3"
 Schubertstr.	2::inwork 21984,6317 21856,6390
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -5110,7 +5110,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-03-04 vvv
+#: last_checked: 2025-03-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -5300,9 +5300,11 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="27"
 #: osm_watch: way id="1231148375" version="5"
+#: priority: #B
 #: last_checked: 2025-03-10 (okas)
 #: check_frequency: 120d
-#: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-06-16 (DB website: nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag)
+# REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
 ',
          'from' => 1730674800,
@@ -5864,43 +5866,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'type' => 'gesperrt',
          'until' => 1748617200
        },
-       {
-         'data' => '#: next_check_id: GENDARMENMARKT-2023
-#: by: https://www.berliner-woche.de/mitte/c-bauen/charlottenstrasse-wird-zur-promenade_a403959 (bis Herbst 2024)
-#: by: https://entwicklungsstadt.de/wiedereroeffnung-so-sieht-der-runderneuerte-gendarmenmarkt-aus/
-#: also_indoor: traffic (G[nur Markgrafen],B,W[nur Markgrafen])
-#: note: außerdem mittlerweile unklare Ausschilderung in der Markgrafenstr. mit Gegenverkehr-Vorfahrtsregelungen, als ob vielleicht die Einbahnstraße wieder aufgehoben werden soll? -> mittlerweile auch Sperrung des mittleren Abschnitts
-#: priority: #A vvv
-#: add_fragezeichen: Bestehen die Sperrungen und Einbahnstraßenregelungen noch immer? vvv
-#: last_checked: 2025-03-13 vvv
-# REMOVED --- #: check_frequency: 30d vvv --- # REMOVED --- #: next_check: 2024-12-20 vvv
-#: osm_watch: way id="35557161" version="25"
-#: osm_watch[closed]: note 4045330 11
-# REMOVED --- Markgrafenstr.	q3::inwork; 9656,12031 9666,11935 9679,11834
-# REMOVED (offen) --- #: XXX laut Baustellenschild von Vattenfall Arbeiten an den Fernwärmeleitungen bis September 2024 --- Markgrafenstr.	q4::inwork 9666,11935 9656,12031
-# REMOVED (hier eigentlich mittlerweile immer offen) --- Markgrafenstr.	q4::inwork 9656,12031 9645,12133
-#: osm_watch: way id="389101374" version="21"
-# REMOVED (hier ist die Einbahnstraße mittlerweile für Radfahrer offen) --- Mohrenstr.	q3::inwork; 9679,11834 9547,11819
-#: note: Halteverbotsschilder bis 30.06.2025
-#: osm_watch[closed]: note 4053376 3
-#: osm_watch: way id="1149365724" version="9"
-#: osm_watch: way id="1149365723" version="7"
-#: XXX Die Charlottenstr. könnte in Kürze freigegeben werden
-#: check_frequency: 3d vvv
-Charlottenstr.	q4::inwork 9547,11819 9536,11922 9523,12019
-Charlottenstr.	q3::inwork 9523,12019 9509,12117
-# REMOVED --- #: check_frequency ^^^ --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-#: priority ^^^
-',
-         'from' => undef,
-         'id' => 3942,
-         'text' => 'Charlottenstr.: Fahrbahn in Höhe Gendarmenmarkt noch gesperrt (Stand: 13.03.2025 abends)',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7037,32 +7003,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'type' => 'gesperrt',
          'until' => 1751292000
        },
-       {
-         'data' => '#: source_id: viz2021:13.405821,52.514019,30.09.2024,20:15 (bis 30.09.2024) (inaktiv)
-#: source_id: viz2021:13.406009,52.513881,30.09.2024,23:00 (bis 26.11.2024) (bis 17.01.2025) (inaktiv)
-#: source_id[inactive]: bvg2024:147#HIM_FREETEXT_240648
-#: source_id[inactive]: bvg2024:147#HIM_FREETEXT_242095
-#: source_id: viz2021:13.406257,52.513682,30.09.2024,23:00 (bis 17.01.2025) (bis 28.02.2025) (bis 14.03.2025) (bis 15.03.2025)
-#: source_id: bvg2024:147#HIM_FREETEXT_248518 (kein Ende-Datum) (bis 2025-03-17)
-#: also_indoor: traffic (re-B,re-T,G,H,W)
-#: note: anscheinend ist die Radspur aufgehoben, Tempo 20 + Radfahrüberholverbot ist angeordnet, keine Sperrung; mittlerweile doch gesperrt
-#: last_checked: 2025-03-13 (weitgehend fertiggestellt) vvv
-#: check_frequency: 21d vvv
-#: next_check: 2025-03-15 (VIZ-Verkehrsmeldung) vvv
-Fischerinsel: gesperrt	q4::inwork; 10578,11969 10512,12039
-Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
-#Fischerinsel	q4::inwork 10578,11969 10512,12039
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'dont_check_date' => 1,
-         'from' => 1727643600,
-         'id' => 4187,
-         'text' => 'Fischerinsel: am Mühlendamm: Wasserrohrbruch, Fahrbahn Richtung Norden gesperrt, Richtung Süden mit Engstellen vom 30.09.2024 23:00 bis 15.03.2025 12:00',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025)
@@ -7375,8 +7316,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (ex-H,T,B)
 #: note: Halteverbotsschilder bis 28.02.2025
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2025-03-09 (traffic)
-#: check_frequency: 10d (traffic)
+#: last_checked: 2025-03-15
+# REMOVED --- #: check_frequency: 10d (traffic)
+#: check_frequency: 30d (outdoor checks)
 # REMOVED --- #: next_check: 2025-02-28 (Halteverbotsschilder)
 	q4::inwork 8842,8561 8916,8511
 ',
