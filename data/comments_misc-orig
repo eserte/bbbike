@@ -39,6 +39,7 @@
 # * Wochenmärkte
 # * Ausschilderung
 #   * "ausgeschildert als"
+#   * "nicht ausgeschildert"
 # 
 #: section: Allgemeine Kommentare vvv
 #: by: Dagmar Schilka
@@ -1855,8 +1856,6 @@ Hans-Peters-Platz: nicht ausgeschildert	CS 7739,14119 7679,14030
 # 
 ausgeschildert "Fußweg Grünverbindung Dietzgenstraße 60/Kreuzgraben"	CP2; 10095,20108 10157,20128
 # 
-Kuckuckweg: ausgeschildert, allerdings sieht man das Schild nur von der anderen Seite	CP 20187,8442 20224,8441 20226,8354
-# 
 ausgeschildert "Finkenkruger Weg 69c"	CP2; -7371,15201 -7408,15219
 # 
 ausgeschildert "Joe-May-Platz"	CP2; 14343,17228 14282,17186
@@ -2184,4 +2183,13 @@ nicht ausgeschildert, Privatstraße	CS 21978,7614 21902,7684 21816,7754
 #: note: nördlicher Abschnitt soll eingezogen werden
 # REMOVED --- #: XXX angrenzend Hochbauarbeiten für "Kleinstwohnanlage für das betreute Einzelwohnen für psychisch kranke Erwachsene, Wateweg 36/38" --- #: XXX wird dieser Abschnitt in Zukunft befahrbar bleiben? --- #: XXX kann auch offen sein (gesehen z.B. am 2024-09-01 (Sun)), evtl. nur während Arbeitszeiten gesperrt? --- #: osm_watch: way id="26190195" version="20" --- #: osm_watch: way id="1157662852" version="2" --- #: priority: #C --- #: last_checked: 2025-03-08 --- #: check_frequency: 180d
 Wateweg: nicht ausgeschildert	CS 21131,8739 21124,8792
+# 
+Am Sandberg: Straße nicht ausgeschildert	CP2; 20144,8355 20149,8318
+Agavensteig: nicht ausgeschildert	CP; 19782,8354 19845,8242 19909,8242
+Agavensteig: nicht ausgeschildert	CP; 19782,8354 19845,8242 19794,8240
+Agavensteig: nicht ausgeschildert	CP2; 19909,8242 19845,8242
+#: note: der richtige Straßenname ist unklar
+provisorisch als "Platz An der Eiche" ausgeschildert	CS 19952,8174 19914,8150
+Anemonensteig: nicht ausgeschildert	CP2; 20014,8071 19980,8041
+Kuckuckweg: ausgeschildert, allerdings sieht man das Schild nur von der anderen Seite	CP 20187,8442 20224,8441 20226,8354
 # 

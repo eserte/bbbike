@@ -5870,7 +5870,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003370',
        data  => <<EOF,
-	1::inwork 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431
+	1::inwork 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 18095,6396 17991,6431
 EOF
      },
      { from  => 1160949600, # 2006-10-16 00:00
@@ -9994,7 +9994,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006436',
        data  => <<EOF,
-	q4::inwork; 17900,6072 17930,6175 17948,6248 17963,6313 17978,6375 17991,6431
+	q4::inwork; 17900,6072 17930,6175 17948,6248 17963,6313 17979,6379 17991,6431
 EOF
      },
      { from  => 1188059298, # 2007-08-25 18:28
@@ -12956,7 +12956,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009957',
        data  => <<EOF,
-	1::inwork 17991,6431 17962,6674
+	1::inwork 17991,6431 17985,6480 17962,6674
 EOF
      },
      { from  => 1229375516, # 2008-12-15 22:11
@@ -15895,6 +15895,7 @@ EOF
        type  => 'handicap',
        recurring => 1,
        data  => <<EOF,
+#: by: https://www.berlin.de/special/shopping/biomarkt/6311534-1925662-wochenmarkt-auf-dem-karlaugustplatz.html
 #: tempex: we T08-T13, sa T08-T14 vvv
 #: note: hier Markt auf der Fahrbahnfläche
 Weimarer Str.	q4::temp:clock 4101,11347 4101,11233
@@ -24471,7 +24472,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_022799',
        data  => <<EOF,
-	q4::inwork; 18341,6313 18191,6363 17991,6431
+	q4::inwork; 18341,6313 18191,6363 18095,6396 17991,6431
 EOF
      },
      { from  => 1410559200, # 2014-09-13 00:00
@@ -29001,7 +29002,7 @@ Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr ver
 #: osm_watch: way id="580507889" version="34"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-02-08
+#: last_checked: 2025-03-16
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -29341,7 +29342,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-02-26 vvv
+#: last_checked: 2025-03-16 vvv
 #: check_frequency: 60d vvv
 entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171 15154,9106 15190,9027
 Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
@@ -37621,7 +37622,7 @@ EOF
 #: note: bei rbb mittlerweile entfernt; ab 2025-02-10 wieder da ("Einbahnstraßenregelung")
 #: osm_watch: way id="1094113747" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-16
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-02-23 (VIZ-Verkehrsmeldung)
 	q4::inwork; 3429,13227 3400,13107
@@ -37785,8 +37786,8 @@ EOF
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
 #: last_checked: 2024-09-18 vvv
-#: check_frequency: 180d vvv
-#: next_check: 2026-12-31 vvv
+#: check_frequency: 360d vvv
+# REMOVED --- #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="272993611" version="7"
 	2 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337
 #: osm_watch: way id="139880221" version="9"
@@ -37801,7 +37802,7 @@ EOF
 Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch: way id="100690609" version="4"
 	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -38791,7 +38792,7 @@ EOF
 #: source_id: viz2021:13.513875,52.463639,25.07.2023,12:00 (bis 01.09.2023, weitere Arbeiten im Anschluss) (bis 11.04.2024) (bis 12.12.2024) (bis 14.11.2024) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (H,G,W) --- #: priority: #B --- #: last_checked: 2023-08-28
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2023-08-28
-	q4::inwork 17962,6674 17991,6431
+	q4::inwork 17962,6674 17985,6480 17991,6431
 EOF
      },
      { from  => undef, # 
@@ -41327,11 +41328,12 @@ EOF
 	q4::inwork 4358,12365 4520,12358
 EOF
      },
-     { from  => $isodate2epoch->("2023-11-21 07:00:00"), # 1695667405, # 1692594000, # 2023-08-21 07:00
-       until => $isodate2epoch->("2024-01-09 17:00:00"), # 1697033485, # (keine Einschränkungen mehr gesehen) # $isodate2epoch->("2023-10-16 17:00:00"), # 1694639218, # 1694790000, # 2023-09-15 17:00
-       text  => 'Rosenthaler Str.: Gleisarbeiten zwischen Weinmeisterstr. und Neue Schönhauser Str., keine Freigabe für Radfahrer, außerdem Sperrung des Einmündungsbereichs Gipsstr., vom 22.11.2023 07:00 bis 09.01.2024 17:00',
+     { from  => 1742104800, # 2025-03-16 07:00, # $isodate2epoch->("2023-11-21 07:00:00"), # 1695667405, # 1692594000, # 2023-08-21 07:00
+       until => 1743177600, # 2025-03-28 17:00, # $isodate2epoch->("2024-01-09 17:00:00"), # 1697033485, # (keine Einschränkungen mehr gesehen) # $isodate2epoch->("2023-10-16 17:00:00"), # 1694639218, # 1694790000, # 2023-09-15 17:00
+#      text  => 'Rosenthaler Str.: Gleisarbeiten zwischen Weinmeisterstr. und Neue Schönhauser Str., keine Freigabe für Radfahrer, außerdem Sperrung des Einmündungsbereichs Gipsstr., vom 22.11.2023 07:00 bis 09.01.2024 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten hinter der Einmündungs Neue Schönhauser Str., auch Radfahrer sind betroffen, vom 26.09.2023 06:00 bis 16.10.2023 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
+       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 07:00 bis 28.03.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
@@ -41341,11 +41343,13 @@ EOF
 # REMOVED --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen) --- #: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023) (inaktiv) ---	q4::inwork; 10313,13227 10321,13259
 #: source_id: viz2021:13.40366,52.52607,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
 #: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
-#: source_id: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
-#: osm_watch: way id="36892597" version="39"
-#: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
+#: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
+#: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025)
+# REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
-Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
+# REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
+#: osm_watch: way id="84960597" version="27"
+Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 # REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
@@ -41397,15 +41401,15 @@ EOF
 #: note: Umweg hier (falls man die Wilhelminenhofstr. Richtung Süden überqueren will): 2x60m (Stand Mitte November 2023)
 #: osm_watch: way id="1142005449" version="10"
 Wilhelminenhofstr. (West)	q4::inwork 17826,6495 17991,6431
-Wilhelminenhofstr. (Ost)	q4::inwork 18191,6363 17991,6431
+Wilhelminenhofstr. (Ost)	q4::inwork 18191,6363 18095,6396 17991,6431
 #: osm_watch: way id="176072020" version="44"
 #: note: der östliche Gehweg ist komplett gesperrt, zur Überquerung existiert eine Fußgängerampel (Stand September 2024) --- mittlerweile (Februar 2025) wohl nicht mehr gesperrt, aber an der Kreuzung geht es weiterhin nicht weiter: q4 -> q3
-# REMOVED (hier keine Bauarbeiten mehr) --- Edisonstr. (Süd)	q3::inwork; 17948,6248 17963,6313 17978,6375
-Edisonstr. (Süd)	q3::inwork; 17978,6375 17991,6431
+# REMOVED (hier keine Bauarbeiten mehr) --- Edisonstr. (Süd)	q3::inwork; 17948,6248 17963,6313 17979,6379
+Edisonstr. (Süd)	q3::inwork; 17979,6379 17991,6431
 #: note: der westliche Gehweg ist im südlichen Abschnitt weitgehend frei, deshalb q4+ statt q4 (Stand September 2024), mittlerweile q3 (Stand Feb 2025)
-Edisonstr. (Süd)	q3::inwork; 17991,6431 17978,6375 17963,6313
+Edisonstr. (Süd)	q3::inwork; 17991,6431 17979,6379 17963,6313
 # REMOVED (hier keine Bauarbeiten mehr) --- Edisonstr. (Süd)	q3::inwork; 17963,6313 17948,6248
-Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,6431 17962,6674
+Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,6431 17985,6480 17962,6674
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^ --- #: priority ^^^
 EOF
      },
@@ -43637,7 +43641,7 @@ EOF
 #: also_indoor: traffic (B,T,ex-G)
 #: note: bei Bing & TomTom nur die östliche Anbindung als gesperrt markiert
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-02-15 (traffic) vvv
+#: last_checked: 2025-03-16 (traffic) vvv
 #: check_frequency: 30d vvv
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
@@ -43919,7 +43923,7 @@ EOF
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-12 vvv
+#: last_checked: 2025-03-16 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-03-27 vvv
 Holteistr.	q4::inwork 14575,11407 14639,11512
@@ -45633,14 +45637,18 @@ EOF
      { from  => $isodate2epoch->("2025-03-16 00:00:00"), # 1728882000, # 2024-10-14 07:00
        until => $isodate2epoch->("2025-10-27 18:00:00"), # 1739473056, # 1741964400, # 2025-03-14 16:00
 #      text  => 'Erkner: L30, Bauarbeiten, möglicherweise ist die Brücke für Fußgänger und Radfahrer gesperrt, vom 15.10.2024 07:00 Uhr bis 14.03.2025 16:00 Uhr',
-       text  => 'Erkner, Friedrichstr. und Brücke über das Flakenfließ: Bauarbeiten, mögliche Sperrung, vom 17.03.2025 bis 27.10.2025',
+       text  => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, vom 17.03.2025 bis 27.10.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025)
+#: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
-# REMOVED (bei Mapillary ist an dieser Stelle nichts zu sehen) --- #: XXX laut VIZ-Verkehrsmeldung "Brücke über die Löcknitz", aber das ist doch der Flakenfließ? Oder ist die L38 gemeint?
-	2::inwork 34152,2749 34175,2637 34250,2546
+#: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
+#: osm_watch: way id="336698811" version="7"
+Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
+#: osm_watch: way id="5057517" version="21"
+Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 EOF
      },
      { from  => undef, # 
@@ -46774,12 +46782,14 @@ EOF
 EOF
      },
      { from  => 1742079600, # 2025-03-16 00:00
-       until => 1743202799, # 2025-03-28 23:59
+       until => $isodate2epoch->("2025-03-28 17:00:00"),
        text  => 'Schulzendorfer Str.: Sanierung, Sperrung der Fahrbahn (Gartenstr. - Dahmestr. sowie Neptunstr. - Amorstr.), vom 17. März 2025 bis voraussichtlich 28. März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1537994.php (zwei Bauabschnitte, allerdings nicht zeitlich genau bestimmt)
+#: source_id: viz2021:13.576587,52.403261,17.03.2025,07:00 (bis 28.03.2025)
 	q4::inwork 22345,-10 22382,-87 22440,-175
+#: source_id: viz2021:13.581796,52.398134,17.03.2025,07:00 (bis 28.03.2025)
 	q4::inwork 22750,-650 22696,-579 22644,-497
 EOF
      },
@@ -46842,6 +46852,15 @@ EOF
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
 #: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025)
 Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
+EOF
+     },
+     { from  => 1742101200, # 2025-03-16 06:00
+       until => 1742554800, # 2025-03-21 12:00
+       text  => 'Behrenstr.: Sperrung zwischen Ebertstr. und Wilhelmstr., Kraneinsatz, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 06:00 bis 21.03.2025 12:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.379301,52.514724,17.03.2025,06:00 (bis 21.03.2025)
+	q4::inwork 8595,12066 8737,12098 8743,12099 8861,12125
 EOF
      },
     );

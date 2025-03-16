@@ -7184,7 +7184,7 @@ Eginhardstr.	N 18615,8269 18490,8104 18412,7985
 Lehndorffstr.	N 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
 Lehndorffstr.	N 18407,8592 18322,8470 18221,8328 18215,8316 18266,8160 18276,8136 18333,8059 18412,7985
 #: note: die Kreuzung Edisonstr./Wilhelminenhofstr. (17991,6431) hieﬂ bis 1936 "Kˆnigsplatz" und wird auch heute selten so genannt. Siehe auch https://mein.berlin.de/mapideas/2018-00904/ und https://de.wikipedia.org/wiki/Liste_der_Stra%C3%9Fen_und_Pl%C3%A4tze_in_Berlin-Obersch%C3%B6neweide
-Edisonstr.	H 18010,7133 17934,7029 17919,6978 17919,6968 17945,6788 17962,6674 17991,6431 17978,6375 17963,6313 17948,6248 17930,6175
+Edisonstr.	H 18010,7133 17934,7029 17919,6978 17919,6968 17945,6788 17962,6674 17985,6480 17991,6431 17979,6379 17963,6313 17948,6248 17930,6175
 Obrikatstr.	N 17483,6024 17681,6212 17847,6089
 Obrikatstr.	NN 17847,6089 17900,6072
 (Schnellerstr. - Obrikatstr.)	NN 17628,5865 17678,5916
@@ -7227,7 +7227,7 @@ Eichgestell	NN 20453,6211 20293,6278 20199,6318 20106,6357 20081,6368 19995,6406
 (Weg in der Wuhlheide)	NN 19161,7109 19515,6934 19691,6904 19895,6872 19914,6865 20156,6799 20244,6748 20269,6735
 #: osm.highway: service
 (an den Rathenauhallen)	N 18191,6363 18122,6148
-Wilhelminenhofstr.	H 17614,6571 17800,6504 17826,6495 17991,6431 18191,6363 18341,6313 18423,6285 18464,6269 18473,6265 18574,6197 18670,6132 18766,6067 18843,6013 18861,6000 18928,5920 19010,5833
+Wilhelminenhofstr.	H 17614,6571 17800,6504 17826,6495 17991,6431 18095,6396 18191,6363 18341,6313 18423,6285 18464,6269 18473,6265 18574,6197 18670,6132 18766,6067 18843,6013 18861,6000 18928,5920 19010,5833
 Wilhelminenhofstr.	N 19010,5833 19017,5815 19099,5689 19139,5627 19184,5554
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_52.pdf
 #: note: Straﬂennamen ab 20100104 wirksam vvv
@@ -7309,12 +7309,13 @@ Am Graben (Karlshorst)	N 20429,7977 20339,8102
 #: XXX_osm: hier Wiesenweg
 Wiesenstr. (Karlshorst)	N 20222,8091 20379,7848
 Kurzer Weg (Karlshorst)	N 20334,7753 20451,7744 20503,7848
-(Wiesengrund Straﬂe 2 - Straﬂe 4)	N 19748,8517 19737,8491 19719,8458
+(Wiesengrund Straﬂe 2 - Straﬂe 4)	N 19752,8514 19737,8491 19719,8458
 (Wiesengrund Straﬂe 2 - Straﬂe 4)	NN 19719,8458 19707,8442 19684,8434
 Wiesengrund Straﬂe 2 (Karlshorst)	N 19909,8242 19832,8378 19781,8460 19737,8491
 Wiesengrund Straﬂe 3 (Karlshorst)	N 19845,8242 19782,8354 19719,8458
 Wiesengrund Straﬂe 4 (Karlshorst)	N 19794,8240 19740,8332 19684,8434
 Wiesengrund Straﬂe 5 (Karlshorst)	N 19639,8278 19734,8182
+(Kˆpenicker Allee - Wiesengrund)	NN 19813,8564 19761,8540 19760,8529 19752,8514
 Hochwaldstr. (Karlshorst)	N 19713,8319 19650,8370 19551,8385 19451,8385 19449,8455 19526,8458
 Hochwaldstr. (Karlshorst)	NN 19526,8458 19544,8421 19577,8438
 Hochwaldstr. (Karlshorst)	N 19577,8438 19684,8434
@@ -15902,7 +15903,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-03-12
+#: last_checked: 2025-03-16
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16292,7 +16293,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (auﬂerdem: Umgestaltung der Gr¸nanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2025-03-12
+#: last_checked: 2025-03-16
 (entlang des Tr‰nkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tr‰nkegrabens

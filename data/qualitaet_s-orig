@@ -307,7 +307,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-03-10
+#: last_checked: 2025-03-16
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -4215,12 +4215,13 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="22"
 #: osm_watch: way id="1090076934" version="5"
 #: osm_watch: way id="1090076933" version="5"
-#: last_checked: 2024-12-04
+#: last_checked: 2025-03-16
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
 Wiesengrundstr. (Karlshorst): Asphalt, etwas rau	Q0- 19898,8410 19964,8447 20046,8448
 Wiesengrundstr. (Karlshorst): unbefestigter Weg	Q2 20046,8448 20129,8444 20174,8443 20187,8442 20224,8441 20293,8440
+(Köpenicker Allee - Wiesengrund): unbefestigter Weg	Q2 19813,8564 19761,8540 19760,8529 19752,8514
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19550,8230 19723,8068 19746,8042 19892,7917 20031,7794
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19723,8068 19725,8122 19734,8182 19759,8212
 (Abzweig vom Agavensteig): holpriger unbefestigter Fahrweg	Q2 19961,8249 19943,8279
@@ -5400,7 +5401,7 @@ Feldweg (Karlshorst): unbefestigter Fahrweg	Q2 20096,8077 20206,8090 20222,8091 
 Am Graben (Karlshorst): unbefestigter Fahrweg	Q2 20429,7977 20339,8102
 Wiesenstr. (Karlshorst): unbefestigter Fahrweg	Q2 20222,8091 20379,7848
 Kurzer Weg (Karlshorst): unbefestigter Fahrweg	Q2 20334,7753 20451,7744 20503,7848
-(Wiesengrund Straße 2 - Straße 4): unbefestigter Fahrweg	Q2 19748,8517 19737,8491 19719,8458
+(Wiesengrund Straße 2 - Straße 4): unbefestigter Fahrweg	Q2 19752,8514 19737,8491 19719,8458
 (Wiesengrund Straße 2 - Straße 4): unbefestigter Pfad	Q2 19719,8458 19707,8442 19684,8434
 Wiesengrund Straße 2 (Karlshorst): unbefestigter Fahrweg	Q2 19909,8242 19832,8378 19781,8460 19737,8491
 Wiesengrund Straße 3 (Karlshorst): unbefestigter Fahrweg	Q2 19845,8242 19782,8354 19719,8458
@@ -7387,7 +7388,7 @@ Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 1945
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19590,7770 19537,7693
 #: osm_watch: way id="156650954" version="17"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2024-09-15
+#: last_checked: 2025-03-16
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19605,7746 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -9922,7 +9923,8 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307
 (Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8328,10485 8361,10491 8377,10502 8384,10507
 (Treptower Park): Asphalt	Q0 15190,9027 15181,8967 15159,8934
 (Treptower Park): wassergebundene Decke	Q1- 15190,9027 15154,9106 15025,9171 14955,9294
-(Treptower Park): Asphalt	Q0 14955,9294 14898,9364 14889,9381 14879,9433
+#: historical_note: früher (bis Anfang 2025) Asphalt, Q0
+(Treptower Park): wassergebundene Decke	Q1 14955,9294 14898,9364 14889,9381 14879,9433
 (Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15335,8714 15378,8668
 # REMOVED --- #: next_check_id: TREPTOWERPARK-2018 --- #: last_checked: 2019-10-19 vvv --- früher Asphalt Q0-
 (Treptower Park): wassergebundene Decke	Q1 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
@@ -12901,7 +12903,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
 #: osm_watch: way id="1061650562" version="1"
-#: last_checked: 2025-02-26
+#: last_checked: 2025-03-16
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): unebener Asphalt	Q1 16084,8833 16086,8860

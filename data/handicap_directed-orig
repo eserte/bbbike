@@ -361,6 +361,11 @@ Eichenallee - Wuhletalstr.: Bordsteine	DH:kerb_down:kerb_up:kerb_down 20801,1782
 Wuhletalstr. - An der Kohlbeke: Bordsteine	DH:kerb_up:kerb_down:kerb_up 20769,17650 20728,17670 20657,17543
 Wuhletalstr. - Eichenallee: Bordsteine	DH:kerb_up:kerb_down:kerb_up 20488,17793 20728,17670 20801,17821
 # 
+#: note: Ampel am mittleren Punkt
+Wilhelminenhofstr.: Pförtnerampel	DH:tl 18191,6363 18095,6396 17991,6431
+#: note: Ampel etwas hinter dem ersten Punkt
+Edisonstr.: Pförtnerampel	DH:tl 17963,6313 17979,6379
+# 
 ######################################################################
 # Vorübergehende Einschränkungen
 #
@@ -479,7 +484,7 @@ Seidelstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 362
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-02-26 vvv
+#: last_checked: 2025-03-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 16747,6813 16720,6845

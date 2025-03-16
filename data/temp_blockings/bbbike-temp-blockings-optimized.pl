@@ -1382,7 +1382,8 @@ Hauptallee	2::night -14389,-859 -14910,-903 -15684,-966
          'until' => undef
        },
        {
-         'data' => '#: tempex: we T08-T13, sa T08-T14 vvv
+         'data' => '#: by: https://www.berlin.de/special/shopping/biomarkt/6311534-1925662-wochenmarkt-auf-dem-karlaugustplatz.html
+#: tempex: we T08-T13, sa T08-T14 vvv
 #: note: hier Markt auf der Fahrbahnfläche
 Weimarer Str.	q4::temp:clock 4101,11347 4101,11233
 #: note: östliches Ende "Einfahrt verboten" (Klappschild), westliches Ende "Verbot für Fahrzeuge aller Art" (vermutlich nur zu Marktzeiten)
@@ -2428,7 +2429,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -3333,7 +3334,7 @@ Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr ver
 #: osm_watch: way id="580507889" version="34"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-02-08
+#: last_checked: 2025-03-16
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -3386,7 +3387,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-02-26 vvv
+#: last_checked: 2025-03-16 vvv
 #: check_frequency: 60d vvv
 entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171 15154,9106 15190,9027
 Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
@@ -4906,7 +4907,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: note: bei rbb mittlerweile entfernt; ab 2025-02-10 wieder da ("Einbahnstraßenregelung")
 #: osm_watch: way id="1094113747" version="5"
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-16
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-02-23 (VIZ-Verkehrsmeldung)
 	q4::inwork; 3429,13227 3400,13107
@@ -4995,8 +4996,8 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
 #: last_checked: 2024-09-18 vvv
-#: check_frequency: 180d vvv
-#: next_check: 2026-12-31 vvv
+#: check_frequency: 360d vvv
+# REMOVED --- #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="272993611" version="7"
 	2 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337
 #: osm_watch: way id="139880221" version="9"
@@ -5011,7 +5012,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch: way id="100690609" version="4"
 	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -5709,7 +5710,30 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
+# REMOVED --- #: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
+# REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
+#	q4::inwork 10313,13227 10270,13101
+# REMOVED --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen) --- #: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023) (inaktiv) ---	q4::inwork; 10313,13227 10321,13259
+#: source_id: viz2021:13.40366,52.52607,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
+#: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
+#: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
+#: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025)
+# REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
+# REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
+# REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
+#: osm_watch: way id="84960597" version="27"
+Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
+# REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+',
+         'from' => 1742104800,
+         'id' => 3898,
+         'text' => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 07:00 bis 28.03.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1743177600
+       },
        undef,
        undef,
        undef,
@@ -6280,7 +6304,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: also_indoor: traffic (B,T,ex-G)
 #: note: bei Bing & TomTom nur die östliche Anbindung als gesperrt markiert
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-02-15 (traffic) vvv
+#: last_checked: 2025-03-16 (traffic) vvv
 #: check_frequency: 30d vvv
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
@@ -6331,7 +6355,7 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-12 vvv
+#: last_checked: 2025-03-16 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-03-27 vvv
 Holteistr.	q4::inwork 14575,11407 14639,11512
@@ -7007,13 +7031,17 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        {
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025)
+#: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
-# REMOVED (bei Mapillary ist an dieser Stelle nichts zu sehen) --- #: XXX laut VIZ-Verkehrsmeldung "Brücke über die Löcknitz", aber das ist doch der Flakenfließ? Oder ist die L38 gemeint?
-	2::inwork 34152,2749 34175,2637 34250,2546
+#: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
+#: osm_watch: way id="336698811" version="7"
+Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
+#: osm_watch: way id="5057517" version="21"
+Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 ',
          'from' => 1742079600,
          'id' => 4188,
-         'text' => 'Erkner, Friedrichstr. und Brücke über das Flakenfließ: Bauarbeiten, mögliche Sperrung, vom 17.03.2025 bis 27.10.2025',
+         'text' => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, vom 17.03.2025 bis 27.10.2025',
          'type' => 'gesperrt',
          'until' => 1761584400
        },
@@ -7720,14 +7748,16 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1537994.php (zwei Bauabschnitte, allerdings nicht zeitlich genau bestimmt)
+#: source_id: viz2021:13.576587,52.403261,17.03.2025,07:00 (bis 28.03.2025)
 	q4::inwork 22345,-10 22382,-87 22440,-175
+#: source_id: viz2021:13.581796,52.398134,17.03.2025,07:00 (bis 28.03.2025)
 	q4::inwork 22750,-650 22696,-579 22644,-497
 ',
          'from' => 1742079600,
          'id' => 4275,
          'text' => 'Schulzendorfer Str.: Sanierung, Sperrung der Fahrbahn (Gartenstr. - Dahmestr. sowie Neptunstr. - Amorstr.), vom 17. März 2025 bis voraussichtlich 28. März 2025',
          'type' => 'handicap',
-         'until' => 1743202799
+         'until' => 1743177600
        },
        {
          'data' => '#: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025)
@@ -7793,6 +7823,16 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'text' => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., vom 11.03.2025 07:00 bis 04.04.2025 17:00',
          'type' => 'handicap',
          'until' => 1743778800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.379301,52.514724,17.03.2025,06:00 (bis 21.03.2025)
+	q4::inwork 8595,12066 8737,12098 8743,12099 8861,12125
+',
+         'from' => 1742101200,
+         'id' => 4280,
+         'text' => 'Behrenstr.: Sperrung zwischen Ebertstr. und Wilhelmstr., Kraneinsatz, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 06:00 bis 21.03.2025 12:00',
+         'type' => 'handicap',
+         'until' => 1742554800
        }
      
 );
