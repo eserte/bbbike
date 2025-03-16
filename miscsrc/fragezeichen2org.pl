@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -372,18 +372,18 @@ for my $file (@files) {
 		     if      ($also_indoor_dir =~ m{^traffic\b}) {
 			 my($extra) = $also_indoor_dir =~ m{(\(.*?\))}; # $extra contains map specifiers
 			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=15&profile=traffic", $extra];
-			 if ($extra && $extra =~ /\bB\b/) { # not handled by mc.bbbike.org, so create an extra link
+			 if ($extra && ($extra eq '(none)' || $extra =~ /\bB\b/)) { # not handled by mc.bbbike.org, so create an extra link
 			     push @extra_url_defs, ['Bing', sprintf('http://www.bing.com/maps/?cp=%s~%s&lvl=%s&trfc=1', $py, $px, 17)];
 			 }
-			 if ($extra && $extra =~ /\bT\b/) { # not handled by mc.bbbike.org, so create an extra link
+			 if ($extra && ($extra eq '(none)' || $extra =~ /\bT\b/)) { # not handled by mc.bbbike.org, so create an extra link
 			     push @extra_url_defs, ['TomTom', sprintf('https://plan.tomtom.com/de/?p=%s,%s,%.2fz', $py, $px, 17)];
 			 }
-			 if ($extra && $extra =~ /\bA\b/) { # not handled by mc.bbbike.org, so create an extra link
+			 if ($extra && ($extra eq '(none)' || $extra =~ /\bA\b/)) { # not handled by mc.bbbike.org, so create an extra link
 			     my($px0,$px1) = map { $px + $_*0.01136 } (-1, +1);
 			     my($py0,$py1) = map { $py + $_*0.00245 } (-1, +1);
 			     push @extra_url_defs, ['ADAC', sprintf("https://maps.adac.de/?traffic=construction,announcements,flow&bounds=%.5f,%.5f-%.5f,%.5f", $py0,$px0,$py1,$px1)];
 			 }
-			 if ($extra && $extra =~ /\bW\b/) { # construction information not available as tiles and thus handled by mc.bbbike.org, so create an extra link
+			 if ($extra && ($extra eq '(none)' || $extra =~ /\bW\b/)) { # construction information not available as tiles and thus handled by mc.bbbike.org, so create an extra link
 			     push @extra_url_defs, ['Waze', sprintf('https://www.waze.com/en/live-map/directions?to=ll.%s%%2C%s', $py, $px)];
 			 }
 		     } elsif ($also_indoor_dir =~ m{^search\b}) {
