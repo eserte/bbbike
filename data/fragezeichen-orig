@@ -1867,7 +1867,7 @@ Residenzstr.: Radstreifen geplant	?::projected 8127,16894 8079,16953 7970,17087
 #: osm_watch: way id="423009430" version="24"
 #: note: Asphaltierung ist fertig, Diagonalsperre fehlt noch; evtl. wird es auch nur eine Quersperre werden; mittlerweile gibt es Poller an der Elsterstr.: bleibt es dabei?
 #: priority: #D
-#: last_checked: 2025-02-18 (mapillary)
+#: last_checked: 2025-03-16 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-09-29
 Braunschweiger Str.: Diagonalsperre oder Quersperre geplant	?::projected 13368,7300 13476,7330 13519,7345
@@ -1897,8 +1897,9 @@ Tollerstr.: Asphaltierung geplant	?::projected 7751,19696 7769,19736 7807,19811 
 #: osm_watch: way id="272532028" version="13"
 #: osm_watch: way id="73682384" version="15"
 #: osm_watch: way id="272532027" version="10"
-#: last_checked: 2025-01-20 (mapillary)
-#: check_frequency: 30d
+#: last_checked: 2025-03-15 (mapillary)
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 90d
 Hielscherstr.: Asphaltierung geplant	?::projected 7558,19886 7604,19988 7695,20175 7735,20262 7809,20420 7826,20460
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf ("keine Entscheidung") --- #: XXX vielleicht passiert erst etwas im Zuge des Bebauungsplans 3-72 (Pankow)? --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Aufstellung des Bebauungsplans) --- #: note: laut osm mittlerweile asphaltiert -> geändert, aber eine weitere Bestätigung wäre gut --- #: osm_watch: way id="4684852" version="13" --- #: priority: #B --- #: last_checked: 2023-03-20 (mapillary) --- #: check_frequency: 360d --- #: next_check: 2023-06-28 --- Neukirchstr.: Asphaltierung geplant	?::projected 12751,18401 12885,18329
@@ -2125,7 +2126,7 @@ Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angeleg
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5441
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/mobilitaetsgesetz-soll-bei-sanierung-der-strasse-vor-schoenholz-beruecksichtigt-werden_a275842
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsentwurf_strasse-vor-schoenholz_stand-okt-2019.pdf
-#: last_checked: 2025-01-14 (mapillary) vvv
+#: last_checked: 2025-03-15 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 #: osm_watch: way id="102532387" version="22"
@@ -2805,14 +2806,14 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualitä
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_19_1997_2128_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7529 (Vorlage zur Beschlussfassung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubauprojekt-anne-frank-stra%C3%9Fe-6-10.1408/#post-22810
-#: by: https://www.howoge.de/immobiliensuche/neubauprojekte/anne-frank-strasse.html (Fertigstellung September 2026, 1. Bauabschnitt Juli 2025)
+#: by: https://www.howoge.de/immobiliensuche/neubauprojekte/anne-frank-strasse.html (Fertigstellung September 2026, 1. Bauabschnitt Juli 2025) (keine Termine mehr)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-wohngebiet-mehrfamilienhaussiedlung-hassoweg-nelkenweg-anne-frank-strasse-berlin-deutschland-637960.html
 #: by: https://entwicklungsstadt.de/altglienicke-richtfest-fuer-583-neue-howoge-mietwohnungen/
 #: osm_watch: way id="439663104" version="12"
 #: XXX möglicherweise entsteht hier ein Geh/Radweg in N-S-Richtung
-#: last_checked: 2024-09-04
-#: check_frequency: 360d
-#: next_check: 2025-07-31
+#: last_checked: 2025-03-16 (mapillary)
+#: check_frequency: 150d
+# REMOVED --- #: next_check: 2025-07-31
 Anne-Frank-Str./Nelkenweg/Mohnweg/Ortolfstr.: Bebauungsplan 9-56 VE	? 19525,526 19817,426 19803,374 19501,461 19525,526
 # 
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/B-XIII-102U.jpg
@@ -4002,6 +4003,7 @@ Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahre
 #: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-verkehr-warum-in-schoneberg-ein-neuer-radweg-entsteht--aber-nebenan-in-wilmersdorf-nicht-12976900.html
 #: by: https://www.tagesspiegel.de/berlin/infravelo-chef-michael-fugel-uber-berlins-radweg-plane-parallel-zur-avus-bauen-wir-die-ravus-13125058.html
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-sitzung-vom-28112024.pdf (Winterpause, Bauarbeiten gehen ab März 2025 weiter)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1541798.php (ab 24.03.2025 Bauarbeiten Richtung Westen zwischen Goltzstraße und Martin-Luther-Straße)
 #: source_id: viz2021:13.337943,52.488352,18.03.2024,07:00 (bis 22.03.2024) (bis 25.03.2024) (inaktiv)
 #: source_id: viz2021:13.349338,52.489469,25.06.2024,07:00 (bis 09.07.2024) (inaktiv)
 #: source_id: viz2021:13.338676,52.488385,14.10.2024,07:00 (bis 17.10.2024 + weitere Bauabschnitte) (inaktiv)
@@ -4646,7 +4648,7 @@ Gothaer/Eisenacher Str.: Ampel wird gebaut	?::projected 22883,15091 22899,15073 
 #: note: laut rbbtext bis 31.3.2021
 #: source_id: 2147344451 (bis 28.2.2021) (inaktiv)
 #: osm_watch: way id="373625581" version="18"
-#: last_checked: 2024-12-18
+#: last_checked: 2025-03-16 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-06-30
 Britzer Damm: Busspur geplant	?::projected; 12564,4308 12547,4391 12731,4841
@@ -4658,7 +4660,7 @@ Britzer Damm: Busspur geplant	?::projected; 12564,4308 12547,4391 12731,4841
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/9gePsGoSM172PryleD0XuoBH4T9vqEjh8qteLGeO/RztWbeIU/10-Anlagen/02/810MA_0733_Busspur_Britzer_Damm.pdf
 #: by: https://www.berliner-zeitung.de/mensch-metropole/busspuren-in-gefahr-warum-in-berlin-noch-mehr-bvg-fahrstreifen-verschwinden-koennten-li.2206041 (Erwähnung)
 #: note: während der Sperrung Tempelhofer Weg/Gradestr. war in Richtung Süden ab Wussowstr. eine temporäre Busspur markiert, allerdings ohne Radfreigabe
-#: last_checked: 2024-12-18
+#: last_checked: 2025-03-16 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-06-30
 Britzer Damm (von Fulhamer Allee bis Hermannstraße): Busspur geplant, evtl. in beiden Richtungen	? 12731,4841 12885,5205 12883,5257 12841,5416 12812,5526 12798,5580 12794,5596 12789,5612 12722,5831 12699,5909 12644,6087 12628,6166 12618,6207 12597,6293 12595,6299 12588,6337 12576,6374
@@ -6060,7 +6062,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 # REMOVED (laut osm note freigegeben) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129 --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt) --- #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (2022) --- #: osm_watch: node id="6419849081" version="5" --- #: priority: #D --- #: last_checked: 2023-11-27 (mapillary: Zebrastreifen wurde errichtet, aber noch nicht freigegeben) --- #: check_frequency: 14d --- #: next_check: 2022-12-31 --- Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7763,20124 7790,20132 7802,20110
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-03-01 (bahninfo-forum)
+#: last_checked: 2025-03-15 (mapillary)
 #: check_frequency: 60d
 Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Radrouten) angepasst?	? 7504,19459 7489,19481 7446,19522 7431,19545 7308,19653 7266,19686 7236,19689
 # 
@@ -7005,7 +7007,7 @@ Mühlenstr.: Radstreifen geplant	?::projected 10228,18196 10347,17959 10448,17751
 #: source_id: viz2021:13.373927,52.586809,27.11.2023,09:00 (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024) (inaktiv)
 #: source_id: viz2021:13.374214,52.586802,27.11.2023,09:00 (bis 02.02.2024) (bis 22.12.2023) (bis 05.01.2024) (bis 02.02.204) (inaktiv)
 #: osm_watch: way id="175631760" version="17"
-#: last_checked: 2024-11-30 (mapillary)
+#: last_checked: 2025-03-15 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-28
 Schönholzer Weg: wird hier eine Radverkehrsanlage erstellt?	?::projected; 8196,20096 8224,19977 8234,19936
@@ -9039,6 +9041,12 @@ Kiautschoustr. im Bereich des Pekinger Platzes: Sperrung für den Kfz-Verkehr gep
 #: last_checked: 2025-03-11 (B-Plan-Entwurf)
 #: check_frequency: 720d
 Neues Ufer: verkehrsberuhigter Bereich geplant	? 4283,13660 4363,13336
+# 
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12362 (Benennung zum 17. März 2025)
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1537247.php
+#: next_check: 2025-03-17
+#: XXX oder ist es die Grünfläche nördlich des Ritterfelddamms oder beide Grünflächen?
+Konrad-Birkholz-Platz: hängen hier Straßenschilder?	? -7160,5090 -7173,5035 -7134,5020 -7120,5076 -7160,5090
 # 
 #: section ^^^
 #: ignore ^^^
@@ -11545,10 +11553,11 @@ U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2023/pressemitteilung.1315981.php (Beteiligung zur FNP-Änderung)
 #: by: https://www.stadtentwicklung.berlin.de/planen/fnp/pix/buergerbeteiligung/download/0517/0517.pdf
 #: by: https://entwicklungsfeld-britzer-damm.de/
-#: by: https://entwicklungsfeld-britzer-damm.de/buergerinformation.html (Fertigstellung ab 2025-2028)
+#: by: https://entwicklungsfeld-britzer-damm.de/buergerinformation.html (Fertigstellung ab 2025-2028) (nicht mehr aufgeführt?)
+#: by: https://entwicklungsfeld-britzer-damm.de/faq.html (Planreife Anfang 2026)
 #: osm_watch: note 3245865 1
-#: last_checked: 2024-12-18
-#: next_check: 2025-06-01
+#: last_checked: 2025-03-16 (mapillary)
+#: check_frequency: 360d
 Tempelhofer Weg/Britzer Damm: Bebauungsplan 8-98, werden hier Wege/Straßen entstehen?	? 12660,4924 12707,4829 12630,4678 12349,4669 12352,4924 12660,4924
 # 
 #: by: https://ulap-quartier.berlin.de/

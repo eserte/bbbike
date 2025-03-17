@@ -3954,7 +3954,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
-#: last_checked: 2025-03-03 (mapillary) vvv
+#: last_checked: 2025-03-15 (mapillary) vvv
 #: next_check: 2025-06-15 vvv
 #: osm_watch: way id="1199394070" version="4"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -3976,7 +3976,7 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-03-11 (okas)
+#: last_checked: 2025-03-15 (mapillary)
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
@@ -4213,7 +4213,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-77ve/180909_-2-_b-plan-7-77ve_britzer-strasse-a1_ohne-beschnittzeichen.pdf
 #: by: https://www.berliner-woche.de/mariendorf/c-bauen/areal-der-ehemaligen-gaertnerei-in-der-britzer-strasse-wird-bebaut_a193336 (Fertigstellung ... zweite Quartal 2021 anvisiert)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_42_5125_5208_online.pdf (Benennung einer Privatstraße)
-#: by: https://www.bonava.de/immobilien/berlin/mariendorf/quartier-hugos
+#: by: https://www.bonava.de/immobilien/berlin/mariendorf/quartier-hugos (Bezugsfertig: Juli 2026)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=736121#post736121
 #: by: https://www.deutsches-architekturforum.de/thread/15360-quartier-hugos-mariendorf/?postID=731063#post731063 ("Quartier Hugos")
@@ -4224,8 +4224,9 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 # REMOVED --- #: osm_watch: way id="271172796" version="6"
 # REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
 #: XXX Bebauungsplan 7-77VE: ggfs. gibt es hier noch weitere Straßen/Wegverbindungen (z.B. sieht man bei osm einen vollständigen Kreis)
-#: last_checked: 2024-12-18
+#: last_checked: 2025-03-16 (mapillary)
 #: check_frequency: 120d
+#: next_check: 2026-07-31 (bonovia website)
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_56_5397_5484_online.pdf (Straßenlandwidmung, nur für Fußgänger/Radfahrer)

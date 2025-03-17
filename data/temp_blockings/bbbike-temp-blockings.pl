@@ -18685,14 +18685,14 @@ EOF
 	2::temp 7429,12070 7031,12024 6884,12006
 EOF
      },
-     { from  => $isodate2epoch->("2024-06-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-06-30 23:59:59"),
+     { from  => $isodate2epoch->("2025-06-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-06-29 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6, start => "2021-10-25T00:00:00"]],
-       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28.06.2024 bis 30.06.2024)',
+       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (27.06.2025 bis 29.06.2025)',
        type  => 'gesperrt',
-       source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
        data  => <<EOF,
+#: by: https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest
 #: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
 #: by: https://kreuzberg-festival.de/
 #: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
@@ -36334,10 +36334,10 @@ EOF
 EOF
      },
      { from  => 1713897172, # 1652122429, # 2022-05-09 20:53
-       until => $isodate2epoch->("2025-04-11 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
+       until => $isodate2epoch->("2025-04-08 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023',
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 31.03.2025',
-       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, geplant bis 11.04.2025',
+       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, geplant bis 08.04.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -36369,7 +36369,7 @@ EOF
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025)
-#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025)
+#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
@@ -36400,11 +36400,11 @@ EOF
 	q4::inwork 4516,5194 4477,5250 4430,5324
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-24 00:00:00"), # 1652421600, # 2022-05-13 08:00
-       until => $isodate2epoch->("2024-05-25 20:00:00"), # 1652562000, # 2022-05-14 23:00
+     { from  => $isodate2epoch->("2025-05-16 00:00:00"), # 1652421600, # 2022-05-13 08:00
+       until => $isodate2epoch->("2025-05-17 20:00:00"), # 1652562000, # 2022-05-14 23:00
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 5]],
-       text  => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 25.5.2024 von 13:00 bis 20:00 Uhr',
+       text  => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 17.5.2025 von 13:00 bis 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1525328801823133698#m
@@ -36412,9 +36412,10 @@ EOF
 #: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1444072.php
-	2::temp 17782,5698 17807,5730 17916,5675
-	2::temp 17810,5736 17877,5860
-	2::temp 18013,5627 17916,5675 17931,5695
+Spreestr.	2::temp 17782,5698 17807,5730 17810,5736 17877,5860
+Schnellerstr.	2::temp 18013,5627 17916,5675 17807,5730
+Flutstr.	2::temp 17916,5675 17931,5695
+Michael-Brückner-Platz	2::temp 17728,5756 17807,5730
 EOF
      },
      { from  => undef, # 
@@ -37435,7 +37436,7 @@ EOF
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2025-01-13 (mapillary)
+#: last_checked: 2025-03-16 (daf)
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (stories.bauhaus.de)
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -40380,7 +40381,7 @@ EOF
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-03-11 (okas)
+#: last_checked: 2025-03-15 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -45645,6 +45646,7 @@ EOF
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1901514334443909380
 #: osm_watch: way id="336698811" version="7"
 Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 #: osm_watch: way id="5057517" version="21"
@@ -45798,12 +45800,12 @@ EOF
        text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: by: rbb
 #: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
 #: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025) (inaktiv)
 #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
 #: also_indoor: traffic (G,H,B,T,ex-W)
+#: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
 #: last_checked: 2025-03-05
 	q3::inwork 2453,9156 2576,9132
 # REMOVED ---	q4::inwork 2453,9156 2337,9178
@@ -45982,9 +45984,9 @@ EOF
 #: source_id: viz2021:13.299093,52.504261,23.01.2025,13:59 (zweifelhaft: "Brückenarbeiten", aber der Abschnitt stimmt; bis 31.03.2025)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: etwa 150m der Fahrbahn sind gesperrt (zurzeit östlicher Abschnitt)
-#: last_checked: 2025-01-04
+#: last_checked: 2025-03-16 (osm note)
 # REMOVED --- #: check_frequency: 60d
-#: next_check: 2025-03-31
+#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2025-12-31
 	q3::inwork 3041,10732 3295,10831
 EOF
@@ -46604,7 +46606,7 @@ EOF
        text  => 'Ebertystr.: Sperrung der Fahrbahn Höhe Ebelingstr., vom 16.02.2025 08:00 bis Juni 2025',
        type  => 'handicap',
        data  => <<EOF,
-#: by: rbb (bis 17.03.2025)
+#: by: rbb (bis 17.03.2025) (bis 24.03.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
 #: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich; am 2025-03-05 war gesperrt
 	q3::inwork 13741,13107 13692,13221 13644,13332
@@ -46787,6 +46789,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1537994.php (zwei Bauabschnitte, allerdings nicht zeitlich genau bestimmt)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1901517605527330913
+#: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierung-in-der-schulzendorfer-strasse-in-bohnsdorf/
+#: by: https://viz.berlin.de/site/assets/files/1826/detail_1.png
+#: by: https://viz.berlin.de/site/assets/files/1826/detail_2.png
 #: source_id: viz2021:13.576587,52.403261,17.03.2025,07:00 (bis 28.03.2025)
 	q4::inwork 22345,-10 22382,-87 22440,-175
 #: source_id: viz2021:13.581796,52.398134,17.03.2025,07:00 (bis 28.03.2025)
@@ -46833,6 +46839,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1899074460012941443 (Verschiebung, Beginn 17.03.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fussgangerbrucke-schwedter-steg-wird-fur-sanierung-gesperrt/
 #: by: https://www.tagesspiegel.de/berlin/fussgangerbrucke-in-pankow-wird-saniert-schwedter-steg-ab-17-marz-knappe-vier-monate-gesperrt-13343986.html
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1901517353940390368
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
 #: osm_watch: note 4317053 6
 #: last_checked: 2025-03-10 (mapillary)
