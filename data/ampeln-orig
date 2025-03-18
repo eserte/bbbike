@@ -11,16 +11,20 @@
 #: valid: -20250411
 Weißenburger Str.: Gegenverkehrsregelung	X::inwork::alternating -3301,12864
 # 
+#: next_check_id: LIEBENWALDER-2025
 #: source_id: viz2021:13.499675,52.536712,18.03.2025,07:00 (bis 30.05.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1901876221358625089
+#: by: https://pbs.twimg.com/media/GmQgEbLXAAIO1_l?format=jpg&name=4096x4096 (außerdem Einbahnstraßenregelung in der Heiligenstadter Str.)
 #: next_check: 2025-05-30
 #: valid: -20250530
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
-#: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025)
-#: last_checked: 2025-03-11
-#: next_check: 2025-03-31
-#: valid: -20250331
-Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
+# REMOVED (mittlerweile nach Süden gewandert, aber ausgeschaltet)
+# REMOVED --- #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025)
+# REMOVED --- #: last_checked: 2025-03-11
+# REMOVED --- #: next_check: 2025-03-31
+# REMOVED --- #: valid: -20250331
+# REMOVED --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
 # 
 # REMOVED --- #: source_id: viz2021:13.486871,52.577222,11.11.2024,07:00 (bis 14.02.2025)
 # REMOVED --- #: note: Länge der Gegenverkehrsstrecke: 50m
@@ -41,19 +45,16 @@ Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 #: valid: -20250430
 Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 # 
-#: source_id: bvg2024:184#HIM_FREETEXT_235819 (kein Endedatum)
+#: source_id: bvg2024:184#HIM_FREETEXT_235819 (kein Endedatum) (bis 2025-03-19)
 #: also_indoor: traffic (none)
 #: last_checked: 2025-03-15 vvv
+#: next_check: 2025-03-19 vvv
 Hoeppnerstr.: Gegenverkehrsregelung	X::inwork::alternating 8386,7430
 Hoeppnerstr.: Gegenverkehrsregelung	X::inwork::alternating 8302,7508
+#: next_check ^^^
 #: last_checked ^^^
 # 
-# REMOVED --- #: note: außerdem laut VIZ: Michaelkirchplatz/Heinrich-Heine-Platz (Mitte) Kreuzung Legiendamm: Kanalbauarbeiten, Gegenverkehrsregelung mit Baustellenampel, Anbindungen Legiendamm und nördlicher Michaelkirchpatz gesperrt, vom 15.10.2024 11:11 bis 28.10.2024 17:00 (aber als Radfahrer kann man die Ampel zum Überqueren nutzen)
-# REMOVED --- #: source_id: viz2021:13.41782,52.506594,15.10.2024,11:11 (bis 28.10.2024) (inaktiv)
-# REMOVED --- #: last_checked: 2024-10-15 (mapillary)
-# REMOVED --- #: next_check: 2024-10-28
-# REMOVED --- #: valid: -20241028
-# REMOVED --- Michaelkirchplatz: Gegenverkehrsregelung	X::inwork::alternating 11349,11227
+# REMOVED --- #: note: außerdem laut VIZ: Michaelkirchplatz/Heinrich-Heine-Platz (Mitte) Kreuzung Legiendamm: Kanalbauarbeiten, Gegenverkehrsregelung mit Baustellenampel, Anbindungen Legiendamm und nördlicher Michaelkirchpatz gesperrt, vom 15.10.2024 11:11 bis 28.10.2024 17:00 (aber als Radfahrer kann man die Ampel zum Überqueren nutzen) --- #: source_id: viz2021:13.41782,52.506594,15.10.2024,11:11 (bis 28.10.2024) (inaktiv) --- #: last_checked: 2024-10-15 (mapillary) --- #: next_check: 2024-10-28 --- #: valid: -20241028 --- Michaelkirchplatz: Gegenverkehrsregelung	X::inwork::alternating 11349,11227
 # 
 #: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
@@ -99,11 +100,7 @@ Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
 Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # 
 # REMOVED (-> permanent) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: last_checked: 2024-07-17 --- #: next_check: 2024-08-17 --- Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17754,5460
-# 
-# REMOVED (nun abgebaut)
-# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325
-# REMOVED --- #: last_checked: 2024-08-27
-# REMOVED --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
+# REMOVED (nun abgebaut) --- #: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325 --- #: last_checked: 2024-08-27 --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: last_checked: 2025-03-15
@@ -275,14 +272,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-# REMOVED (VIZ-Verkehrsmeldung inaktiv) --- #: next_check_id: ZIEGEL-2024
-# REMOVED --- # REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) --- 
-# REMOVED --- #: last_checked: 2025-01-15
-# REMOVED --- # REMOVED --- #: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-02-04 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20250204
-# REMOVED --- Tucholskystr./Ziegelstr.: Gegenverkehrsregelung	X::inwork::alternating 9559,13087
-# 
+# REMOVED (VIZ-Verkehrsmeldung inaktiv) --- #: next_check_id: ZIEGEL-2024 --- # REMOVED (entfernt) --- #: next_check_id: ORANIENBURGERTORTRAM-2022 --- #: note: am 19.7.2023 ausgeschaltet (laut mapillary) ---  --- #: last_checked: 2025-01-15 --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2025-02-04 (VIZ-Verkehrsmeldung) --- #: valid: -20250204 --- Tucholskystr./Ziegelstr.: Gegenverkehrsregelung	X::inwork::alternating 9559,13087
 # REMOVED (entfernt) --- #: XXX schon seit mehreren Tagen ausgeschaltet --- #: last_checked: 2023-05-05 --- #: check_frequency: 30d --- Friedrichstr./Ziegelstr.	X0::inwork 9269,13060
 # REMOVED (existiert nicht mehr) --- #: next_check_id: WILHELMAMPEL-2022 --- #: source_id: viz2021:13.184034,52.519038,11.10.2022,07:00 (Sperrung der Wilhelmstr. Richtung Nordosten bis 28.10.2022) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.183049,52.518565,02.11.2022,08:00 (bis 30.11.2022) (bis 9.12.2022) (inaktiv) --- #: by: https://nitter.cz/VIZ_Berlin/status/1579825402096521218#m (bis auf Weiteres gibt es keine Sperrung) --- #: note: am 2022-09-22 war hier eine temporäre Ampelanlage für die gesamte Einmündung mit vollständiger Gelbmarkierung, aber noch nicht eingeschaltet --- #: note: gilt nicht für Radfahrer Richtung Süden (Heerstr.) --- #: add_fragezeichen: Existiert die provisorische Ampel noch immer? --- #: last_checked: 2022-10-08 --- #: check_frequency: 120d --- #: next_check: 2022-12-09 --- Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 # REMOVED (abgebaut) --- #: next_check_id: HAENSEL-2022 --- #: last_checked: 2022-10-24 --- #: XXX Ampel befindet sich südöstlich der Einmündung --- Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
@@ -4018,12 +4008,13 @@ provisorische Fußgängerampel	F 17720,8854
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WVKySlkVmF78sBtLvLmoLknIXWdWp2EXcKYDvhkx/GUKkLkr/41-Anlagen/03/B1222SB.pdf (kein Termin)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Erwähnung für 2025)
 #: source_id[inactive]: bvg2024:62#HIM_FREETEXT_237919
-#: source_id: viz2021:13.585068,52.427802,19.11.2024,07:00 (Bau einer LSA, bis 09.12.2024) (bis 21.02.2025) (bis 07.03.2025) (bis 21.03.2025)
+#: source_id: viz2021:13.585068,52.427802,19.11.2024,07:00 (Bau einer LSA, bis 09.12.2024) (bis 21.02.2025) (bis 07.03.2025) (bis 21.03.2025) (vorfristig inaktiv)
 #: osm_watch: note 4524665 3
 #: XXX Wendenschloßstr./Dregerhoffstr.: Fußgängerampel in Bau, zurzeit eine provisorische Ampel
 #: last_checked: 2025-01-29
 #: check_frequency: 180d
-#: next_check: 2025-03-21 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-03-21 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-03-18 (VIZ-Verkehrsmeldung aufgehoben)
 	X::inwork 22904,2675
 # 
 #: section ^^^

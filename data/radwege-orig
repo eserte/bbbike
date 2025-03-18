@@ -539,7 +539,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-03-04 vvv
+#: last_checked: 2025-03-18 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -984,7 +984,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-03-07
+#: last_checked: 2025-03-18
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3385,8 +3385,8 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/neuer-gehweg-fuer-kniprodestrasse_a419672
 #: osm_watch: way id="318031558" version="14"
 #: osm_watch: way id="154261295" version="16"
-#: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, bis Höhe Pasteurstr. weitgehend fertiggestellt, aber noch nicht freigegeben; weiter nordöstlich wird noch gebaut vvv
-#: last_checked: 2025-02-19 vvv
+#: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, bis Höhe Pasteurstr. bis auf die Deckschicht fertiggestellt; weiter nordöstlich wird noch gebaut vvv
+#: last_checked: 2025-03-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (BA Pankow) vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
@@ -3427,7 +3427,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="15"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2025-02-09 vvv
+#: last_checked: 2025-03-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 	RW1;RW1 13439,14673 13727,14207 13731,14200 13736,14192 13879,13967
@@ -7710,8 +7710,7 @@ asphaltiertes Straßenbahnkap	RW1; 14661,12798 14731,12809
 	RW4; 14906,12837 14940,12843 15010,12855
 	RW3; 15010,12855 15098,12849
 asphaltiertes Straßenbahnkap	RW1; 15098,12849 15117,12846 15169,12839
-Grünbeschichtung	RW3; 15169,12839 15233,12829
-relativ breit	RW3; 15233,12829 15357,12813
+relativ breit, Grünbeschichtung	RW3; 15169,12839 15233,12829 15357,12813
 relativ breit	RW4; 15357,12813 15367,12815 15417,12823
 asphaltiertes Straßenbahnkap	RW2; 15417,12823 15469,12831
 	RW3; 15469,12831 15516,12838

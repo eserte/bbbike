@@ -6561,7 +6561,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-03-11 vvv
+#: last_checked: 2025-03-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7364,8 +7364,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="9"
-#: last_checked: 2025-01-19
-#: check_frequency: 60d
+#: last_checked: 2025-03-18 (traffic)
+#: check_frequency: 30d (traffic)
+# REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
 	q4::inwork 8384,7915 8260,7911
 ',
@@ -7468,8 +7469,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (G,W)
 #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-03-09 (traffic)
-#: check_frequency: 14d (traffic)
+#: last_checked: 2025-03-18
+#: check_frequency: 30d (outdoor checks)
+# REMOVED --- #: check_frequency: 14d (traffic)
 	q4::inwork 15769,14355 15841,14351
 ',
          'from' => undef,
@@ -7486,7 +7488,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-smetanastrasse-in-weissensee/
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025)
 #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-#: last_checked: 2025-02-06 vvv
+#: last_checked: 2025-03-18 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
 	q3::inwork; 14195,15604 14133,15773
@@ -7899,6 +7901,24 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'text' => 'Behrenstr.: Sperrung zwischen Ebertstr. und Wilhelmstr., Kraneinsatz, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 06:00 bis 21.03.2025 12:00',
          'type' => 'handicap',
          'until' => 1742554800
+       },
+       {
+         'data' => '# 
+#: next_check_id: WEISSENHOEHER-2025
+#: by: https://pascalgrothe.de/bahnbruecke-in-der-weissenhoeher-strasse-wird-abgerissen/ (von Februar bis Oktober 2025 zur Einbahnstraße in Richtung Westen, Abriss vom 14. März bis 14. November 2025, Ersatzneubau)
+#: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article408186475/monatelange-baustelle-abriss-der-eisenbahn-bruecke-in-biesdorf.html (Abschluss der Arbeiten Ende März 2026)
+#: by: https://christian-graeff.de/2025/01/21/abriss-der-bruecke-ueber-der-weissenhoeher-strasse/
+#: source_id: viz2021:13.550304,52.507594,19.03.2025,06:00 (bis 02.04.2025)
+#: also_indoor: traffic (none)
+# REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-03-14 (Beginn des Abrisses)
+	2::inwork 20354,11500 20150,11512
+',
+         'from' => 1742274000,
+         'id' => 4281,
+         'text' => 'Weißenhöher Str.: Brückenabriss, Sperrung auch für den Rad- und Fußverkehr, vom 19.03.2025 06:00 bis 02.04.2025 17:00',
+         'type' => 'gesperrt',
+         'until' => 1743606000
        }
      
 );

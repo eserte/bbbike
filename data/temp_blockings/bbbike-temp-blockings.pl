@@ -44354,7 +44354,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-03-11 vvv
+#: last_checked: 2025-03-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44439,7 +44439,7 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
-#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025) (bis 14.03.2025) (bis 18.03.2025)
+#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025) (bis 14.03.2025) (bis 18.03.2025) (bis 21.03.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr; mittlerweile (2024-12-03) ist die Radspur wieder nutzbar
 #: note: mittlerweile sind die Barrieren so weggeschoben, dass es keine Beeinträchtigungen mehr gibt
 # REMOVED --- #: last_checked: 2024-12-17 --- #: check_frequency: 14d
@@ -46249,8 +46249,9 @@ EOF
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="9"
-#: last_checked: 2025-01-19
-#: check_frequency: 60d
+#: last_checked: 2025-03-18 (traffic)
+#: check_frequency: 30d (traffic)
+# REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
 	q4::inwork 8384,7915 8260,7911
 EOF
@@ -46370,8 +46371,9 @@ EOF
 #: also_indoor: traffic (G,W)
 #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-03-09 (traffic)
-#: check_frequency: 14d (traffic)
+#: last_checked: 2025-03-18
+#: check_frequency: 30d (outdoor checks)
+# REMOVED --- #: check_frequency: 14d (traffic)
 	q4::inwork 15769,14355 15841,14351
 EOF
      },
@@ -46387,7 +46389,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-smetanastrasse-in-weissensee/
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025)
 #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-#: last_checked: 2025-02-06 vvv
+#: last_checked: 2025-03-18 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
 	q3::inwork; 14195,15604 14133,15773
@@ -46868,6 +46870,23 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.379301,52.514724,17.03.2025,06:00 (bis 21.03.2025)
 	q4::inwork 8595,12066 8737,12098 8743,12099 8861,12125
+EOF
+     },
+     { from  => 1742274000, # 2025-03-18 06:00
+       until => 1743606000, # 2025-04-02 17:00
+       text  => 'Weißenhöher Str.: Brückenabriss, Sperrung auch für den Rad- und Fußverkehr, vom 19.03.2025 06:00 bis 02.04.2025 17:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+# 
+#: next_check_id: WEISSENHOEHER-2025
+#: by: https://pascalgrothe.de/bahnbruecke-in-der-weissenhoeher-strasse-wird-abgerissen/ (von Februar bis Oktober 2025 zur Einbahnstraße in Richtung Westen, Abriss vom 14. März bis 14. November 2025, Ersatzneubau)
+#: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article408186475/monatelange-baustelle-abriss-der-eisenbahn-bruecke-in-biesdorf.html (Abschluss der Arbeiten Ende März 2026)
+#: by: https://christian-graeff.de/2025/01/21/abriss-der-bruecke-ueber-der-weissenhoeher-strasse/
+#: source_id: viz2021:13.550304,52.507594,19.03.2025,06:00 (bis 02.04.2025)
+#: also_indoor: traffic (none)
+# REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-03-14 (Beginn des Abrisses)
+	2::inwork 20354,11500 20150,11512
 EOF
      },
     );
