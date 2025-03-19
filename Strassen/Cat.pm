@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2013,2014,2016,2017,2020,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013,2014,2016,2017,2020,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '2.07';
+$VERSION = '2.08';
 
 use File::Basename qw(basename);
 
@@ -201,7 +201,7 @@ my %versioned_file_to_cat;
      "sbahnhof"			=> $filetype_to_cat{"sbahn"},
      "sbahnhof_bg"		=> $filetype_to_cat{"*bahnhof_bg"},
      "sehenswuerdigkeit"	=> $filetype_to_cat{"sehenswuerdigkeit"},
-     "strassen_bab"		=> [sub { /^BAB(?:::(?:_?Tu_?|Br))?$/ }],
+     "strassen_bab"		=> [sub { /^BAB(?:::(?:_?Tu_?|Br))?(?:::inwork)?$/ }],
      "ubahn"			=> $filetype_to_cat{"ubahn"},
      "ubahnhof"			=> $filetype_to_cat{"ubahn"},
      "ubahnhof_bg"		=> $filetype_to_cat{"*bahnhof_bg"},
