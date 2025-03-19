@@ -225,24 +225,20 @@ sub filter_and_split_json {
 
 	if ($ignore_boring) {
 	    delete $element->{$_} for qw(directionOne firstLineLineType hideTime messageCategory scheduled showOnStartpage);
+	    for (qw(images)) {
+		if ($element->{$_} && ref $element->{$_} eq 'ARRAY' && !@{ $element->{$_} }) { # remove empty arrays
+		    delete $element->{$_};
+		}
+	    }
 	    delete $element->{messageType} if ($element->{messageType}||'') eq 'TRAFFIC';
 	    for my $content (@{ $element->{content} }) {
 		$content->{content} =~ s{<p>}{}g;
 		$content->{content} =~ s{</p>}{\n}g;
 		delete $content->{icon};
 	    }
-	    if ($element->{lines}) {
-		my @new_lines;
-		for my $linetype_def (@{ $element->{lines} }) {
-		    for my $linetype (sort keys %$linetype_def) {
-			my $line_defs = $linetype_def->{$linetype};
-			for my $line_def (@$line_defs) {
-			    my $display_line = ($linetype !~ /^(subway|ferry)$/ ? ucfirst($linetype) . ' ' : '') . $line_def->{name};
-			    push @new_lines, $display_line;
-			}
-		    }
-		}
-		$element->{lines} = \@new_lines;
+	    simplify_lines(\($element->{lines}));
+	    for my $individualDisruption (@{ $element->{individualDisruptions } || [] }) {
+		simplify_lines(\($individualDisruption->{lines}));
 	    }
 	    for my $key (qw(stationOne stationTwo stationThree)) {
 		if ($element->{$key} && keys %{ $element->{$key} } == 1 && exists $element->{$key}->{displayName}) {
@@ -311,6 +307,25 @@ sub inject_date {
     }
 
     $record->{_date} = $date;
+}
+
+sub simplify_lines {
+    my $ref = shift;
+    if ($$ref) {
+	my @new_lines;
+	for my $linetype_def (@{ $$ref }) {
+	    for my $linetype (sort keys %$linetype_def) {
+		my $line_defs = $linetype_def->{$linetype};
+		for my $line_def (@$line_defs) {
+		    my $display_line = ($linetype !~ /^(subway|ferry)$/ ? ucfirst($linetype) . ' ' : '') . $line_def->{name};
+		    push @new_lines, $display_line;
+		    if (exists $line_def->{isExternal} && !$line_def->{isExternal}) { # remove boolean false
+		    }
+		}
+	    }
+	}
+	$$ref = \@new_lines;
+    }
 }
 
 sub print_raw_serialized {
