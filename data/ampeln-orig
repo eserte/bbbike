@@ -20,7 +20,7 @@ Weißenburger Str.: Gegenverkehrsregelung	X::inwork::alternating -3301,12864
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
 # REMOVED (mittlerweile nach Süden gewandert, aber ausgeschaltet)
-# REMOVED --- #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025)
+# REMOVED --- #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025)
 # REMOVED --- #: last_checked: 2025-03-11
 # REMOVED --- #: next_check: 2025-03-31
 # REMOVED --- #: valid: -20250331
@@ -45,14 +45,14 @@ Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 #: valid: -20250430
 Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 # 
-#: source_id: bvg2024:184#HIM_FREETEXT_235819 (kein Endedatum) (bis 2025-03-19)
-#: also_indoor: traffic (none)
-#: last_checked: 2025-03-15 vvv
-#: next_check: 2025-03-19 vvv
-Hoeppnerstr.: Gegenverkehrsregelung	X::inwork::alternating 8386,7430
-Hoeppnerstr.: Gegenverkehrsregelung	X::inwork::alternating 8302,7508
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: source_id[inactive]: bvg2024:184#HIM_FREETEXT_235819 (kein Endedatum) (bis 2025-03-19)
+# REMOVED --- #: also_indoor: traffic (none)
+# REMOVED --- #: last_checked: 2025-03-15 vvv
+# REMOVED --- #: next_check: 2025-03-19 vvv
+# REMOVED --- Hoeppnerstr.: Gegenverkehrsregelung	X::inwork::alternating 8386,7430
+# REMOVED --- Hoeppnerstr.: Gegenverkehrsregelung	X::inwork::alternating 8302,7508
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED --- #: note: außerdem laut VIZ: Michaelkirchplatz/Heinrich-Heine-Platz (Mitte) Kreuzung Legiendamm: Kanalbauarbeiten, Gegenverkehrsregelung mit Baustellenampel, Anbindungen Legiendamm und nördlicher Michaelkirchpatz gesperrt, vom 15.10.2024 11:11 bis 28.10.2024 17:00 (aber als Radfahrer kann man die Ampel zum Überqueren nutzen) --- #: source_id: viz2021:13.41782,52.506594,15.10.2024,11:11 (bis 28.10.2024) (inaktiv) --- #: last_checked: 2024-10-15 (mapillary) --- #: next_check: 2024-10-28 --- #: valid: -20241028 --- Michaelkirchplatz: Gegenverkehrsregelung	X::inwork::alternating 11349,11227
 # 
@@ -2797,7 +2797,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-03-15
+#: last_checked: 2025-03-19
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
@@ -4009,7 +4009,7 @@ provisorische Fußgängerampel	F 17720,8854
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Erwähnung für 2025)
 #: source_id[inactive]: bvg2024:62#HIM_FREETEXT_237919
 #: source_id: viz2021:13.585068,52.427802,19.11.2024,07:00 (Bau einer LSA, bis 09.12.2024) (bis 21.02.2025) (bis 07.03.2025) (bis 21.03.2025) (vorfristig inaktiv)
-#: osm_watch: note 4524665 3
+#: osm_watch: note 4524665 4
 #: XXX Wendenschloßstr./Dregerhoffstr.: Fußgängerampel in Bau, zurzeit eine provisorische Ampel
 #: last_checked: 2025-01-29
 #: check_frequency: 180d

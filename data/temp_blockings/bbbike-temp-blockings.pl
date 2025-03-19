@@ -21046,10 +21046,10 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-04 00:00:00"), # 1336255200, # 2012-05-06 00:00
-       until => $isodate2epoch->("2025-03-31 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
+       until => $isodate2epoch->("2025-06-11 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #       text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
 #       text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
-       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Ende März 2025',
+       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Mitte Juni 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
@@ -21058,7 +21058,7 @@ EOF
 #: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
-#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...)
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025)
 #: osm_watch: way id="152466403" version="21"
 #: osm_watch: note 4444162 2
@@ -22085,11 +22085,11 @@ EOF
 	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2024-04-18 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-04-21 23:59:59"),
+     { from  => $isodate2epoch->("2025-04-24 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-04-27 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 4]],
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 19.04.2024 bis 21.04.2024',
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 25.04.2025 bis 27.04.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.winzerfest-köpenick.de/ (existiert mittlerweile nicht mehr; siehe unten)
@@ -22097,7 +22097,7 @@ EOF
 #: by: https://www.winzerfest-koepenick.de/?date=20220317 (geplant für 22.04. bis zum 24.04.2022)
 #: by: https://www.winzerfest-koepenick.de/?date=20230322
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311487.php
-#: by: https://www.winzerfest-koepenick.de/ (19.4. bis 21.4.2024)
+#: by: https://www.winzerfest-koepenick.de/ (19.4. bis 21.4.2024) (25.04.2025 - 27.04.2025)
 # REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -22283,7 +22283,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-03-08 (traffic)
+#: last_checked: 2025-03-19 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -36754,11 +36754,11 @@ EOF
 	2::inwork 7189,17666 7173,17591 7222,17471 7253,17467
 EOF
      },
-     { from  => $isodate2epoch->("2024-04-22 06:00:00"), # $isodate2epoch->("2023-05-14 06:00:00"), # 1656302400, # 2022-06-27 06:00 # zwei Tage vor dem Event
-       until => $isodate2epoch->("2024-04-25 08:00:00"), # $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00 # ein Tag nach dem Event
+     { from  => $isodate2epoch->("2025-05-19 06:00:00"), # $isodate2epoch->("2024-04-22 06:00:00"), # $isodate2epoch->("2023-05-14 06:00:00"), # 1656302400, # 2022-06-27 06:00 # zwei Tage vor dem Event
+       until => $isodate2epoch->("2025-05-22 08:00:00"), # $isodate2epoch->("2024-04-25 08:00:00"), # $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00 # ein Tag nach dem Event
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, vom 22.04.2024 bis 25.04.2024 08:00 ',
+       text  => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, voraussichtlich vom 19.05.2025 bis 22.05.2025 08:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
@@ -36769,7 +36769,7 @@ EOF
 #: source_id: viz2021:13.36259,52.505907,24.04.2024,18:00 (bis 24.04.2024) (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
-#: by: https://berliner-firmenlauf.de/
+#: by: https://berliner-firmenlauf.de/ (21. Mai 2025)
 	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 8055,12186 8119,12414
@@ -37763,7 +37763,7 @@ EOF
      },
      { from  => $isodate2epoch->("2025-03-22 00:00:00"),
        until => undef, #
-       text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/; ',
+       text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -37773,7 +37773,7 @@ EOF
 #: note: "Unsere Winterpause 2024 beginnt nach dem letzten Termin am 01. Dezember 2024. Danach sind wir wieder ab März 2025 am Start."
 #: note: "... ersten Flowmarkt am 23. März 2025 ..."
 #: XXX Wann ist Saisonbeginn und -ende?
-#: next_check: 2025-03-23
+#: next_check: 2025-05-04
 	q4::temp:clock 12412,9610 12250,9691
 EOF
      },
@@ -42507,8 +42507,8 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
-#: also_indoor: traffic (G[zu lang],B,T) vvv
-#: last_checked: 2025-03-07 vvv
+#: also_indoor: traffic (ex-G,B,T) vvv
+#: last_checked: 2025-03-19 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d (outdoor) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-01-31 (Halteverbotsschilder) vvv
@@ -43152,7 +43152,7 @@ EOF
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: osm_watch: note 4210969 5
+#: osm_watch: note 4210969 6
 #: last_checked: 2025-03-12 (daf) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
@@ -44439,7 +44439,7 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
-#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025) (bis 14.03.2025) (bis 18.03.2025) (bis 21.03.2025)
+#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025) (bis 14.03.2025) (bis 18.03.2025) (bis 21.03.2025) (bis 15.04.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr; mittlerweile (2024-12-03) ist die Radspur wieder nutzbar
 #: note: mittlerweile sind die Barrieren so weggeschoben, dass es keine Beeinträchtigungen mehr gibt
 # REMOVED --- #: last_checked: 2024-12-17 --- #: check_frequency: 14d
@@ -44704,7 +44704,7 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=13055 (Einwohneranfrage zur Einbahnstraßenregelung)
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
 #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung) vvv
-#: osm_watch: way id="82451158" version="13"
+#: osm_watch: way id="82451158" version="14"
 #: osm_watch: note 4444217 1
 Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233
 Schildower Str.	q4::inwork 4614,24233 4510,24170 4425,24067
@@ -44841,8 +44841,8 @@ EOF
        text  => 'Heubuder Brücke: wegen Bauschäden gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="27457006" version="23"
-#: last_checked: 2025-03-08 (mapillary)
+#: osm_watch: way id="27457006" version="24"
+#: last_checked: 2025-03-18 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 EOF
@@ -45201,7 +45201,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-03-09 (website) vvv
+#: last_checked: 2025-03-19 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -45360,11 +45360,11 @@ EOF
 #: also_indoor: traffic (none)
 #: osm_watch: way id="36983903" version="35"
 #: osm_watch: way id="1002238498" version="11"
-#: osm_watch: note 4454125 6
+#: osm_watch: note 4454125 8
 #: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen
-#: last_checked: 2025-03-04
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-03-04 (Halteverbotsschilder)
+#: last_checked: 2025-03-19
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2025-04-15 (Halteverbotsschilder)
 # REMOVED (hier mittlerweile fertig und offen) ---	q4::inwork 12972,7602 13100,7626
 	q4::inwork 13100,7626 13130,7633
 EOF
@@ -45993,7 +45993,7 @@ EOF
      },
      { from  => 1731304800, # 2024-11-11 07:00
        until => $isodate2epoch->("2025-04-29 23:59:59"), # 1734994740, # 2024-12-23 23:59
-       text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12.11.2024 07:00 bis 29.04.2025 23:59',
+       text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, auch Radfahrer sind betroffen, vom 12.11.2024 bis 29.04.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROSEGGER-2024
@@ -46245,6 +46245,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
+#: by: https://entwicklungsstadt.de/baustart-in-tempelhof-neues-klinikgebaeude-fuer-das-st-joseph-krankenhaus/ (bis Ende 2028, Verzögerungen möglich)
 #: note: Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
@@ -46887,6 +46888,19 @@ EOF
 # REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-03-14 (Beginn des Abrisses)
 	2::inwork 20354,11500 20150,11512
+EOF
+     },
+     { from  => 1742386162, # 2025-03-19 13:09
+       until => 1767221999, # 2025-12-31 23:59
+       text  => 'Riesestr.: Hochbaustelle, Einbahnstraßenregelung, Richtung Süden offen, voraussichtlich bis Ende 2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Länge der Einbahnstraßenregelung ca. 100m, deshalb q4 -> q3
+#: note: Richtung Norden gibt es ab Blaschkoallee einen Hochbordradweg, der sich nach einigen Metern "verliert", evtl. wird toleriert, dass Radfahrer weiter auf dem Hochbord fahren
+#: last_checked: 2025-03-19
+#: check_frequency: 60d
+#: next_check: 2025-12-31 (Halteverbotsschilder)
+	q3::inwork; 13305,5316 13265,5519
 EOF
      },
     );

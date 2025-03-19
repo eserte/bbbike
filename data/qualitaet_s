@@ -2,8 +2,6 @@
 #: title: Qualität der Straßen in Berlin
 #: note: XXX_* categorization done 2008-01-26
 #:
-(Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
-(Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
 (Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9200,562
 (Bahnsteig - Buckower Chaussee): Asphalt	Q0 9200,450 9160,460 9123,533
 Mozartstr.: Kopfsteinpflaster	Q3 10259,-2660 10392,-2980 10462,-3149
@@ -11719,11 +11717,12 @@ Gensweg: Beton	Q0 12657,1154 12673,1140
 Gensweg: Asphalt	Q0 12673,1140 12704,1102
 Am Mühlanger: Betonpflaster	Q0 12673,1140 12738,1213
 Am Mühlanger: Betonpflaster	Q0 12802,1285 12868,1315 12902,1321
-Dyrekeweg: Betonpflaster	Q0 12790,1302 12802,1285 12832,1192 12854,1121
+Dyrekeweg: Betonpflaster	Q0 12790,1302 12802,1285 12832,1192 12838,1174 12854,1121
 An den Buckower Feldern: Betonpflaster	Q0 12914,1215 12860,1200
 An den Buckower Feldern: Kleinsteinpflaster	Q1 12860,1200 12832,1192
 An den Buckower Feldern: Betonpflaster	Q0 12832,1192 12745,1116
-Knyphausenweg: Betonpflaster	Q0 12902,1321 12904,1299 12914,1215 12928,1126
+An den Buckower Feldern: Betonpflaster	Q0 12838,1174 12917,1197
+Knyphausenweg: Betonpflaster	Q0 12902,1321 12904,1299 12914,1215 12917,1197 12928,1126
 Döberitzer Grünzug: Beton	Q0 7861,13465 7819,13559
 Döberitzer Grünzug: Asphalt	Q0 7819,13559 7825,13569 7805,13594 7782,13600
 Döberitzer Grünzug: Beton	Q0 7782,13600 7756,13634
@@ -13327,7 +13326,8 @@ Aristotelessteig: Asphalt, etwas wellig	Q1 18715,9589 18660,9599 18527,9623 1849
 Cäsarstr.: Asphalt	Q0 18685,9719 18660,9599 18626,9406
 (Römerweg - Weg entlang der Bahnstrecke): Betonplatten	Q2 18421,9764 18436,9842
 (Römerweg - Weg entlang der Bahnstrecke): fester Sandweg	Q2 18436,9842 18445,9887
-Griembergweg: Asphalt	Q0 11418,120 11369,117 11198,110 11083,108 10962,103 10913,96 10753,83
+Griembergweg: Verbundsteinpflaster	Q1 11418,120 11369,117 11198,110
+Griembergweg: Asphalt	Q0 11198,110 11083,108 10962,103 10913,96 10753,83
 Strömannstr.: unbefestigte Straße	Q2 15574,22640 15595,22693
 Strömannstr.: Asphalt	Q0 15595,22693 15662,22873
 Strömannstr.: Asphalt	Q0 15662,22873 15691,22949 15709,22999 15776,23185 15799,23248 15826,23323 15853,23397 15899,23508

@@ -12,7 +12,7 @@
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php (Bauende: voraussichtlich Anfang Juni 2025)
 #: also_indoor: traffic (ex-G,ex-W,B,T)
-#: osm_watch: note 3677862 11
+#: osm_watch: note 3677862 12
 #: note: Arbeiten für eine neue Gehwegvorstreckung
 #: last_checked: 2025-03-12
 #: check_frequency: 45d
@@ -22,8 +22,8 @@ Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgerstei
 #: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025) (bis 18.04.2025)
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
-#: osm_watch: way id="1145213536" version="6"
-#: osm_watch: way id="1363264660" version="2"
+#: osm_watch: way id="1145213536" version="7"
+#: osm_watch: way id="1363264660" version="3"
 #: note: Halteverbotsschilder bis 18.04.2025
 #: also_indoor: traffic (G,T)
 #: last_checked: 2025-03-18
@@ -80,8 +80,6 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
-# 
-# REMOVED (offen) --- #: osm_watch: note 4452740 2 --- #: osm_watch: way id="1327235572" version="8" --- #: osm_watch: way id="1146013233" version="11" --- #: osm_watch: way id="1134071039" version="13" --- #: last_checked: 2025-03-16 vvv --- #: check_frequency: 14d vvv --- Gubener Str./Comeniusplatz: Bauarbeiten im Einmündungsbereich	q3::inwork 13352,12003 13406,11896 13467,11778 --- Comeniusplatz/Gubener Str.: Bauarbeiten im Einmündungsbereich	q3::inwork 13275,11830 13406,11896 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11088 (zum Neubau des Heinrich-Hertz-Gymnasiums)
@@ -302,13 +300,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 # REMOVED (passierbar) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023) --- #: osm_watch: way id="44807035" version="12" --- #: osm_watch: way id="26285705" version="8" --- #: osm_watch: way id="69166216" version="10" --- #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023) --- #: last_checked: 2021-08-19 (osm) vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-12-31 vvv --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448 --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (weitgehend offen) --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/in-der-jordanstrasse-fallen-monatelang-parkplaetze-weg_a206134 --- # REMOVED --- #: last_checked: 2019-03-06 (indirekt, Sackgassenschild an der Jordanstr.) --- #: last_checked: 2019-03-20 --- #: check_frequency: 14d --- Lohmühlenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13251,9829 13302,9894 13311,9905
-# 
-#: XXX_prog: BS (ansonsten entfernen)
-#: next_check_id: DIESEL-2019
-#: last_checked: 2025-01-27
-#: check_frequency: 60d
-(Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
-# 
+# REMOVED (existiert nicht mehr) --- #: XXX_prog: BS (ansonsten entfernen) --- #: next_check_id: DIESEL-2019 --- #: last_checked: 2025-01-27 --- #: check_frequency: 60d --- (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # REMOVED (offen) --- #: next_check_id: WASSERSTADTSPINDLERSFELD-2019 --- #: XXX Fahrbahn ist nur im westlichen Abschnitt freigegeben (Stand April 2021) --- #: osm_watch: way id="719023968" version="6" --- #: last_checked: 2021-04-24 --- #: check_frequency: 60d --- Henriette-Lustig-Str.: nur der sehr enge Gehweg sowie 50m der Fahrbahn sind freigegeben	q4::inwork 21476,5048 21611,5119
 # REMOVED (fertig) --- #: osm_watch: way id="466318949" version="8" --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: also_indoor: traffic --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134 --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: osm_watch: way id="4686247" version="9" --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 # REMOVED (keine Einbahnstraße mehr) --- #: osm_watch: way id="641269921" version="1" --- #: last_checked: 2019-05-07 --- #: check_frequency: 14d --- Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13234,9426
@@ -358,6 +350,7 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 #: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nördlich Semmelweisstr. Anfang März 2025 offen, der südliche Abschnitt Ende April 2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20250308 (bis Ende April 2025)
+#: by: https://fahrinfo.vbb.de/him-uploads/1722238382229_wegedornbr_cke.png
 #: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
 #: last_checked: 2024-12-27
 #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
@@ -955,7 +948,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2025-03-16 (mapillary)
+#: last_checked: 2025-03-19
 #: check_frequency: 90d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
@@ -981,6 +974,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: by[nocache]: https://x.com/BerlinNkl/status/1796226274622333004
 #: by: https://pbs.twimg.com/media/GO16Rh0XIAEUtqi?format=jpg&name=large
 #: by: https://www.kms-sonne.de/assets/2024/05/Baustellenuebersicht-05-2024-web.pdf
+#: by: https://fahrinfo.vbb.de/him-uploads/1716887739051_Baukarte_Erkstr.png
 #: note: Die Absperrung beginnt 50m vor dem Einmündungsbereich.
 #: also_indoor: traffic (none)
 #: last_checked: 2025-03-04 vvv
@@ -1130,8 +1124,8 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Marzahn ###
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
-#: also_indoor: traffic (B,T,ex-H)
-#: last_checked: 2025-03-07
+#: also_indoor: traffic (B,T,re-H)
+#: last_checked: 2025-03-19 (traffic)
 #: check_frequency: 14d (traffic)
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
@@ -1968,7 +1962,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-16
+#: last_checked: 2025-03-19
 #: check_frequency: 30d
 #: next_check: 2025-04-26 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -4222,9 +4216,10 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: http://altstadtmanagement-spandau.de/isek-spandau/projekte-und-massnahmen/ (Neugestaltung Rathausvorplatz: Erwähnung der Radwegführung)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/bvg-will-bis-ende-oktober-arbeiten-am-u-bahnhof-rathaus-spandau-abschliessen_a325550
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/die-bvg-benoetigt-fast-zwei-jahre-fuer-den-einbau-des-neuen-aufzugs-am-u-bahnhof-altstadt-spandau_a375155 (vielleicht hängt es von den Aufzugarbeiten ab? Arbeiten bis Ende 2024)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/holle-auf-erden-fur-radfahrer-ist-diese-idee-vor-dem-rathaus-spandau-der-durchbruch-13388299.html (Umbau frühestens 2027?)
 #: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
-#: last_checked: 2024-09-18 vvv
-#: check_frequency: 150d vvv
+#: last_checked: 2025-03-18 (Tsp) vvv
+#: check_frequency: 360d vvv
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3511,14260 -3517,14218 -3552,14082
 #: check_frequency ^^^
@@ -4430,7 +4425,7 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 #: XXX laut osm Sperrung bis 2028
 #: osm_watch: way id="1238623806" version="3"
 #: osm_watch: way id="1168244288" version="3"
-#: last_checked: 2024-11-18 (osm)
+#: last_checked: 2025-03-19 (daf)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 (Südstr., Virchow-Klinikum): Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6231,14952 6209,14948 6160,14927 6104,14937
@@ -6888,7 +6883,8 @@ Kolkrabenweg: enge Straße	q1 14645,3691 14885,3891
 # 
 #: by: ruth mantei: vvv
 Teterower Str.: enge Straße	q1 13824,5204 13717,5175 13626,5153
-Küstriner Str.: enge Straße	q1 11232,309 11343,405 11488,531
+#: corrected_by: srt/policy (q1 -> q0-)
+Küstriner Str.: enge Straße	q0- 11232,309 11343,405 11488,531
 #: by: ^^^
 # 
 #: by: Juliane (alberts...) vvv
