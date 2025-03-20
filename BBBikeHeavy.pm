@@ -1525,16 +1525,23 @@ Achtung:
 ### AutoLoad Sub
 sub BBBikeHeavy::reload_all {
     my(%args) = @_;
+    my $only = delete $args{only};
+    my $force = delete $args{force};
+    die "Unhandled arguments: " . join(" ", %args) if %args;    
+    if ($only && ref $only ne 'HASH') {
+	die "option 'only' has to be an hash reference in the form {\$type => {\$abk => 1, ... }, ...}\n";
+    }
 
     if ($BBBikeLazy::mode) {
 	# XXX files reloaded here are not in @changed_files, so nets cannot be rebuild!
-	bbbikelazy_reload();
+	bbbikelazy_reload(only => $only);
     }
 
     my @changed_files;
 
     my %change;
     foreach my $type (keys %str_obj) {
+	next if $only && !$only->{'str'}->{$type};
 	my $o = $str_obj{$type};
 	next if !$o;
 	if (!$o->is_current) {
@@ -1544,6 +1551,7 @@ sub BBBikeHeavy::reload_all {
 	}
     }
     foreach my $type (keys %p_obj) {
+	next if $only && !$only->{'p'}->{$type};
 	my $o = $p_obj{$type};
 	warn "Should not happen: No object for point type $type", next if !$o;
 	if (!$o->is_current) {
@@ -1588,7 +1596,7 @@ sub BBBikeHeavy::reload_all {
 	}
     }
 
-    if (!$edit_mode_flag || $args{force}) { # be fast in edit mode, do not rebuild nets
+    if (!$edit_mode_flag || $force) { # be fast in edit mode, do not rebuild nets
 
 	my %changed_files = map {($_,1)} @changed_files;
 

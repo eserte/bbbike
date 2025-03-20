@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2003,2014,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2003,2014,2021,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -397,11 +397,19 @@ sub BBBikeLazy::bbbikelazy_clear {
 # Which could be: use a diff (e.g. a modified Strassen::Core::diff_orig).
 # The diff output should be used to add/delete items from the grids.
 sub BBBikeLazy::bbbikelazy_reload {
+    my(%opts) = @_;
+    my $only = delete $opts{only};
+    die "Unhandled options: " . join(" ", keys %opts) if %opts;
+    if ($only && ref $only ne 'HASH') {
+	die "option 'only' has to be an hash reference in the form {\$type => {\$abk => 1, ... }, ...}\n";
+    }
+
     my $redraw_needed = 0;
 
     foreach my $def (@defs_str) {
 	my $abk = $def->[0];
 	next if !$lazy_str{$abk}; # XXX should not happen, but it happens
+	next if $only && !$only->{'str'}->{$abk};
 	if (!$lazy_str{$abk}->is_current) {
 	    warn "Reload str-$abk...\n";
 	    $lazy_str{$abk}->reload;
@@ -413,6 +421,7 @@ sub BBBikeLazy::bbbikelazy_reload {
     foreach my $def (@defs_p) {
 	my $abk = $def->[0];
 	next if !$lazy_p{$abk}; # XXX should not happen, but it happens
+	next if $only && !$only->{'p'}->{$abk};
 	if (!$lazy_p{$abk}->is_current) {
 	    warn "Reload p-$abk...\n";
 	    $lazy_p{$abk}->reload;
