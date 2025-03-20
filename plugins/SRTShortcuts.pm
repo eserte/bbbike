@@ -485,6 +485,17 @@ EOF
 				      prepare_mudways_prognosis();
 				  },
 			          ),
+		[Button => $do_compound->('Refresh current_mudways'),
+		 -command => sub {
+		     prepare_mudways_prognosis();
+		     my $type_file = 'str /tmp/mudways_prognosis.bbd';
+		     my $layer = $layer_for_type_file{$type_file};
+		     if (!$layer) {
+			 main::status_message("Cannot get layer for $type_file, cannot refresh...", 'warn');
+		     } else {
+			 main::reload_all(only => {str => {$layer => 1}});
+		     }
+		 }],
 		layer_checkbutton([$do_compound->('Exits (ÖPNV)', $images{usbahn})],
 				  'str', "$main::datadir/exits",
 				  maybe_orig_file => 1),
