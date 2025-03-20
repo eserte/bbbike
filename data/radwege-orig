@@ -2200,7 +2200,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-03-13 vvv
+#: last_checked: 2025-03-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2686,11 +2686,11 @@ Radspur links von der Fahrspur	RW3; 9801,9241 9753,9252
 #: note: die ersten Meter asphaltierter Bürgersteigradweg
 	RW3; 5975,13256 6214,13225
 	RW1; 6214,13225 5975,13256
-	RW1; 6214,13225 6390,13187 6500,13164 6573,13149 6661,13130
+	RW1; 6214,13225 6390,13187 6438,13177 6500,13164 6573,13149 6661,13130
 Verbundsteinpflaster,	RW1; 6661,13130 6573,13149
 #: by: rjoop
 #: confirmed_by: srt
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 6573,13149 6500,13164 6390,13187 6214,13225
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 6573,13149 6500,13164 6438,13177 6390,13187 6214,13225
 Radweg teilweise nur aufgemalt	RW1;RW1 6935,13645 6810,13694
 	RW0;RW0 6810,13694 6760,13714
 	RW1;RW1 6760,13714 6686,13746 6493,13822
@@ -8031,7 +8031,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-03-11
+#: last_checked: 2025-03-20
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490

@@ -22283,8 +22283,9 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-03-19 (traffic)
-#: check_frequency: 14d (traffic)
+#: last_checked: 2025-03-20
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: check_frequency: 30d (outdoor)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
      },
@@ -27814,7 +27815,7 @@ EOF
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.643712.php
 #: by: http://www.berliner-woche.de/wedding/bauen/doppelter-bruch-am-ploetzensee-uferweg-sackte-ein-d136422.html
 #: last_checked: 2017-12-26
-	q3::inwork 5306,15387 5134,15565
+	q3::inwork 5306,15387 5240,15444 5134,15565
 EOF
      },
      { from  => $isodate2epoch->("2019-07-05 18:00:00"), # 1523311200, # 2018-04-10 00:00
@@ -28877,7 +28878,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-03-09
+#: last_checked: 2025-03-20
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30172,7 +30173,7 @@ EOF
        data  => <<EOF,
 #: note: bei fritz schon entfernt (am 20.06.2019)
 	q4::inwork; 9212,13471 9207,13493 9094,13648 9044,13711
-# REMOVED (hier nicht) ---	q4::inwork; 9044,13711 8935,13844
+# REMOVED (hier nicht) ---	q4::inwork; 9044,13711 8992,13774 8935,13844
 EOF
      },
      { from  => 1557007200, # 2019-05-05 00:00
@@ -42531,7 +42532,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.32658,52.48653,05.02.2024,07:00 (bis 18.04.2024) (inaktiv)
-#: source_id: viz2021:13.32656,52.48749,27.02.2025,12:14 (neue Sperrung, bis 19.03.2025)
+#: source_id: viz2021:13.32656,52.48749,27.02.2025,12:14 (neue Sperrung, bis 19.03.2025) (inaktiv)
 # REMOVED (alte Sperrung (2023-2024)) --- #: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?) ---	q4::inwork 5176,9398 5189,8983
 	q4::inwork 5189,8983 5195,8880
 EOF
@@ -43924,7 +43925,7 @@ EOF
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-16 vvv
+#: last_checked: 2025-03-20 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-03-27 vvv
 Holteistr.	q4::inwork 14575,11407 14639,11512
@@ -44631,7 +44632,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	2::temp 5848,14977 5867,14993
+	2::temp 5857,14985 5867,14993
 EOF
      },
      { from  => 1720469919, # 2024-07-08 22:18
@@ -46846,8 +46847,7 @@ EOF
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
 #: osm_watch: note 4317053 6
 #: last_checked: 2025-03-10 (mapillary)
-#: next_check: 2025-03-17 (VIZ-Twitter)
-# REMOVED --- #: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
+#: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 EOF
      },
@@ -46901,6 +46901,20 @@ EOF
 #: check_frequency: 60d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 	q3::inwork; 13305,5316 13265,5519
+EOF
+     },
+     { from  => undef, # 
+       until => 1751320799, # 2025-06-30 23:59
+       text  => 'Uferweg am Plötzensee: Bauarbeiten, mögliche temporäre Sperrungen im Frühjahr 2025',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.tagesspiegel.de/berlin/bezirke/schutz-fur-den-berliner-plotzensee-hoherer-zaun-soll-wildbaden-verhindern-13321912.html
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1536289.php
+#: note: Allerdings ist eine Umfahrung über den äußeren Uferweg möglich
+#: last_checked: 2025-03-20
+#: check_frequency: 60d
+#: next_check: 2025-06-30
+	2::inwork 5051,15508 5015,15564 5040,15606 5073,15611 5134,15565 5240,15444
 EOF
      },
     );

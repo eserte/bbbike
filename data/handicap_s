@@ -25,6 +25,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783
 Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18881,2062 18922,2238 18928,2319 18929,2454
+Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -407,9 +408,9 @@ Am Rummelsburger See: Fußgänger an schönen Tagen	q2 16120,9653 16182,9591 16261,
 Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3710,1317 3635,1215 3419,1049 3381,1022 3366,1007
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 Weisestr.: Bordsteine	q3 11767,8330 11770,8292
-Helgoländer Ufer - Stromstr.: Fußgänger, Café	q3 6551,12901 6535,12934 6443,12952 6271,12985
+Helgoländer Ufer - Stromstr.: Fußgänger, Café	q3 6551,12901 6535,12934 6443,12952 6399,12958 6271,12985
 Helgoländer Ufer - Stromstr.: einige Fußgänger	q1 6271,12985 6289,13081
-Helgoländer Ufer - Stromstr.: einige Fußgänger	q1 6417,13052 6289,13081 6207,13093 6183,13083
+Helgoländer Ufer - Stromstr.: einige Fußgänger	q1 6417,13057 6392,13062 6289,13081 6207,13093 6183,13083
 Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6122,12971 6118,12980
 Lehmbruckstr.: Bordsteine	q4 13678,10685 13690,10715
 (Stadtpark Steglitz): Fußgänger	q1 5787,4400 5836,4469 5841,4557 5890,4674 5947,4791 5984,4851 6003,4857
@@ -1072,7 +1073,7 @@ Kirchgasse (Tegel): Fußgänger	q1 1630,20097 1669,19982
 Hilchenbacher Weg: Fußgänger, eng	q2 2413,18655 2416,18598
 Hilchenbacher Weg: Fußgänger, eng	q2 2426,18544 2444,18487
 Straße 455: Bordstein	q2 4916,17201 4931,17174
-(Uferweg Plötzensee): Fußgänger	q1 5605,14988 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
+(Uferweg Plötzensee): Fußgänger	q1 5605,14988 5455,15245 5391,15331 5306,15387 5240,15444 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
 (Brücke über den Maselakekanal): Steigung 14%	q2 -2152,17108 -2140,17171 -2165,17176
 Kleingartenstr.: enge Straße	q1 24118,4404 24072,4423 24022,4442 23978,4484
 Gladiolenstr.: enge Straße	q1 23536,4543 23541,4439
@@ -1836,6 +1837,7 @@ Dammbrücke: einige Fußgänger, Bordstein	q3 -3066,14718 -3042,14682
 Pulvermühlenweg: Bordstein	q2 -1848,15535 -1794,15517
 Alboinstr. - Paul-Schmidt-Str.: Fußgänger, Bordstein	q3 8242,5427 8227,5453 8224,5492 8200,5510
 (an der alten Bolle-Meierei): Bodenschwelle	q1 6443,12952 6500,13164
+(an der alten Bolle-Meierei): einige Fußgänger	q2 6399,12958 6417,13057 6438,13177
 (Fußweg zur Gehrenseestr.): einige Fußgänger	q1 17610,16307 17640,16259
 (Wartenberger Str. - Harry-Glaß-Str.): einige Fußgänger, Bordstein an der Wartenberger Str.	q2 17504,16489 17544,16463
 (Gutspark Lichtenberg): einige Fußgänger	q1 15746,12967 15749,12995 15717,13001 15612,13069 15526,13056
@@ -2157,9 +2159,10 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Nordstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6056,15162 6254,15191 6380,15210
 (Nordring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6265,15349 6275,15335 6293,15330
 (Nordring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6275,15335 6262,15323 6272,15249 6249,15237 6254,15191
-(Virchow-Klinikum, Einfahrt Sylter Str.): Krankenhausgelände, 20km/h-Zone	q2 5848,14977 5867,14993 5879,14981
-(Westring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 5879,14981 5893,14945 5935,14948 5926,14997 5889,14991 5879,14981
+(Virchow-Klinikum, Einfahrt Sylter Str.): Krankenhausgelände, 20km/h-Zone	q2 5848,14977 5857,14985 5867,14993 5879,14981
+(Westring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 5879,14981 5893,14945 5935,14948 5924,15005 5889,14991 5879,14981
 (Westring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 5935,14948 5940,14911 6030,14924
+(Mittelallee - Westring, Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2 6012,15024 5924,15005
 Dresdener Str.: Fußgänger	q3 11021,11287 11000,11327
 (Lutterbacher Str. - Dahlemer Weg): einige Fußgänger, Umlaufgitter am Bahnübergang	q3 2151,3126 2166,3138 2193,3142
 Fischer-Dieskau-Weg: einige Fußgänger	q1 -151,2975 -81,2699

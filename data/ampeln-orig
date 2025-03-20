@@ -19,11 +19,11 @@ Weißenburger Str.: Gegenverkehrsregelung	X::inwork::alternating -3301,12864
 #: valid: -20250530
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
-# REMOVED (mittlerweile nach Süden gewandert, aber ausgeschaltet)
+# REMOVED (mittlerweile nach Süden gewandert, aber ausgeschaltet bzw. gelb-blinkend)
 # REMOVED --- #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025)
-# REMOVED --- #: last_checked: 2025-03-11
-# REMOVED --- #: next_check: 2025-03-31
-# REMOVED --- #: valid: -20250331
+# REMOVED --- #: last_checked: 2025-03-20
+# REMOVED --- #: next_check: 2025-04-22
+# REMOVED --- #: valid: -20250422
 # REMOVED --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
 # 
 # REMOVED --- #: source_id: viz2021:13.486871,52.577222,11.11.2024,07:00 (bis 14.02.2025)
@@ -225,7 +225,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-20
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -3999,7 +3999,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
 #: last_checked: 2025-02-24
-provisorische Fußgängerampel	F 17720,8854
+#: check_frequency: 90d
+provisorische Fußgängerampel	F::inwork 17720,8854
 # 
 #: note: Anforderungsampel im Zuge der August-Froehlich-Str. und An der Werderlake
 	X 18199,1811

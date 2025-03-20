@@ -13,12 +13,21 @@ BAB100	BAB; 2225,12227 2372,11762 2338,11515 2170,11101 2021,10599 2009,10517
 #: next_check_id: RINGBAHNBRUECKE-2025
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-ringbahnbrucke-im-autobahndreieck-funkturm-richtung-wedding/ (Vollsperrung ab 19.03.2025)
 #: by: https://www.tagesspiegel.de/berlin/wegen-riss-auf-der-a100-ringbahnbrucke-wird-ab-20-uhr-voll-gesperrt-13398562.html
+#: by: https://www.rbb24.de/panorama/beitrag/2025/03/ringbahnbruecke-berlin-a100-vollsperrung.html ("mindestens zwei Jahre", also bis 2027?)
+#: by: https://www.tagesspiegel.de/berlin/ringbahnbrucke-wegen-riss-komplett-gesperrt-verkehrschaos-auf-der-a100-und-rund-um-den-funkturm-in-berlin-13398562.html
+#: by: https://www.tagesspiegel.de/berlin/a100-gesperrt--jahrelanges-verkehrschaos-das-mussen-berliner-jetzt-wissen-13402675.html
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1542733.php
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1543039.php
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/keine-entwarnung-fuer-autobahnbruecke-bezirk-will-vollsperrung_a437497
+#: osm_watch: way id="227985279" version="10"
 BAB100	BAB::inwork; 2009,10517 2058,10612 2117,10698 2165,10785 2175,10864 2183,10977 2207,11078 2353,11451 2379,11570 2403,11710 2409,11812 2399,11949 2388,11997
 # 
 #: next_check_id: RINGBAHNBRUECKE-2025
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bund-reisst-westendbruecke-auf-a100-in-charlottenburg-ab-li.2221431 (Pläne liegen aus)
 #: by: https://www.berliner-woche.de/westend/c-bauen/einwendungen-moeglich_a418011
 #: XXX Neubau der Westendbrücke (mit Verlagerung)
+#: osm_watch: way id="4495210" version="15"
+#: osm_watch: note 4671906 4
 #: last_checked: 2024-06-05 (Bericht)
 #: check_frequency: 1000d
 BAB100 (Westendbrücke)	BAB::Br::inwork; 2388,11997 2332,12106 2248,12201
@@ -98,6 +107,8 @@ BAB100 (Konstanzer Str. - Schildhornstr.)	BAB 3952,8980 3892,8781 3839,8468 3854
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8887 (Antrag)
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/abriss-und-tunnelsanierung-sollen-2028-abgeschlossen-sein_a432288 (Inbetriebnahme im Frühjahr 2028)
 #: source_id: viz2021:13.306684,52.473773,20.04.2023,09:00 (bis 31.12.2024) (kein Endedatum) (01.01.2028)
+#: osm_watch: way id="22027807" version="38"
+#: osm_watch: way id="138614363" version="30"
 #: alias: Schlangenbader Tunnel
 BAB100 (Tunnel Schlangenbader Str.)	BAB::Tu::inwork 3854,7614 3853,7068
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/verkehrssenatorin-stellt-ergebnis-der-machbarkeitsstudie-zum-breitenbachplatz-vor_a368498 (Abriss könnte 2024 beginnen)
@@ -124,6 +135,8 @@ BAB100 (Tunnel Schlangenbader Str.)	BAB::Tu::inwork 3854,7614 3853,7068
 #: by: https://www.tagesspiegel.de/berlin/bezirke/ende-des-berliner-brucken-irrsinns-auch-die-pfeiler-der-breitenbachplatzbrucke-sollen-verschwinden-12867151.html (Sperrungen in Höhe Kreuznacher und Brentanostraße angekündigt)
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/abriss-und-tunnelsanierung-sollen-2028-abgeschlossen-sein_a432288 (Rückbau Frühjahr 2025 bis Sommer 2026)
 #: by: https://www.tagesspiegel.de/berlin/ruckbau-erst-ab-herbst-2025-bruckenabriss-am-breitenbachplatz-in-berlin-verschiebt-sich-erneut-13310548.html (Beginn des Abrisses ab 3. Quartal 2025)
+#: osm_watch: way id="184791525" version="14"
+#: osm_watch: way id="157574268" version="22"
 #: last_checked: 2025-01-02
 #: next_check: 2025-09-30
 BAB100 (Konstanzer Str. - Schildhornstr.)	BAB::inwork 3853,7068 3948,6842 4097,6689 4291,6571 4423,6477
@@ -142,6 +155,7 @@ Kleeblatt Zehlendorf	BAB;  -3526,1344 -3553,1260 -3602,1224 -3651,1251 -3636,132
 BAB115	BAB 2009,10517 1937,10569 1855,10569 1762,10531 1507,10183 480,8779 -865,6887 -3689,3059 -3786,2861 -3861,2355 -3861,2063 -3806,1934 -3636,1742 -3602,1699 -3571,1606 -3544,1450 -3526,1344 -3480,1049 -3442,806 -3404,501 -3480,273 -4381,-1135 -4712,-1453 -6021,-2039 -6224,-2266 -6502,-2976 -6562,-3181 -6548,-3936 -6538,-4260 -6594,-4456 -6698,-4654 -7019,-5006 -7107,-5182 -7145,-5357 -7141,-5756 -7104,-6868 -7162,-7534 -7314,-7813 -7568,-8042 -9155,-8816 -9345,-8943 -9472,-9172 -10094,-10162 -10285,-10556 -10653,-11444 -10730,-12017
 AD Funkturm	BAB; 1507,10183 1664,10263 1889,10283 2016,10348 2046,10391
 #: next_check_id: RINGBAHNBRUECKE-2025
+#: osm_watch: way id="4446472" version="16"
 AD Funkturm	BAB::inwork; 2046,10391 2040,10526 2058,10612
 #: note: Ausfahrt A115 - Halenseestraße/Messedamm
 #: osm.highway: motorway_link

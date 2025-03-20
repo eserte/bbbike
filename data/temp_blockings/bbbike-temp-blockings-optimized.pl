@@ -2447,8 +2447,9 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-03-19 (traffic)
-#: check_frequency: 14d (traffic)
+#: last_checked: 2025-03-20
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: check_frequency: 30d (outdoor)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
          'from' => 1719810000,
@@ -3329,7 +3330,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-03-09
+#: last_checked: 2025-03-20
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -6101,19 +6102,7 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.326545,52.488564,28.11.2023,07:00 (bis 12.01.2024) (bis 09.02.2024) (inaktiv)
-#: source_id: viz2021:13.32658,52.48653,05.02.2024,07:00 (bis 18.04.2024) (inaktiv)
-#: source_id: viz2021:13.32656,52.48749,27.02.2025,12:14 (neue Sperrung, bis 19.03.2025)
-# REMOVED (alte Sperrung (2023-2024)) --- #: note: laut rbb bis Hausnummer 32 frei (von Süden oder Norden her?) ---	q4::inwork 5176,9398 5189,8983
-	q4::inwork 5189,8983 5195,8880
-',
-         'from' => 1740524400,
-         'id' => 3978,
-         'text' => 'Nassauische Str.: Bauarbeiten zwischen Berliner Str. und Gasteiner Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.02.2025 bis 19.03.2025',
-         'type' => 'handicap',
-         'until' => 1742425199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6482,7 +6471,7 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
 #: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-16 vvv
+#: last_checked: 2025-03-20 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-03-27 vvv
 Holteistr.	q4::inwork 14575,11407 14639,11512
@@ -6765,7 +6754,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
          'until' => 1756677599
        },
        {
-         'data' => '	2::temp 5848,14977 5867,14993
+         'data' => '	2::temp 5857,14985 5867,14993
 ',
          'from' => undef,
          'id' => 4110,
@@ -7924,8 +7913,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
 #: osm_watch: note 4317053 6
 #: last_checked: 2025-03-10 (mapillary)
-#: next_check: 2025-03-17 (VIZ-Twitter)
-# REMOVED --- #: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
+#: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 ',
          'from' => 1741993200,
@@ -7990,6 +7978,21 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'text' => 'Riesestr.: Hochbaustelle, Einbahnstraßenregelung, Richtung Süden offen, voraussichtlich bis Ende 2025',
          'type' => 'handicap',
          'until' => 1767221999
+       },
+       {
+         'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/schutz-fur-den-berliner-plotzensee-hoherer-zaun-soll-wildbaden-verhindern-13321912.html
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1536289.php
+#: note: Allerdings ist eine Umfahrung über den äußeren Uferweg möglich
+#: last_checked: 2025-03-20
+#: check_frequency: 60d
+#: next_check: 2025-06-30
+	2::inwork 5051,15508 5015,15564 5040,15606 5073,15611 5134,15565 5240,15444
+',
+         'from' => undef,
+         'id' => 4283,
+         'text' => 'Uferweg am Plötzensee: Bauarbeiten, mögliche temporäre Sperrungen im Frühjahr 2025',
+         'type' => 'gesperrt',
+         'until' => 1751320799
        }
      
 );

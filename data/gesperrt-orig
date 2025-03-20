@@ -1587,12 +1587,12 @@ Virchow-Klinikum	2::inwork 6106,14890 6104,14937
 #: last_checked ^^^
 # 
 #: XXX nach den Bauarbeiten die alte Einbahnstraßenregelung eintragen
-#: note: es gibt eine provisorische Verbindung zur Weststr. (nicht bei bbbike eingezeichnet)
-#: last_checked: 2024-11-18 (osm) vvv
+#: note: es gibt eine provisorische Verbindung zur Weststr. (mittlerweile bei bbbike eingezeichnet)
+#: last_checked: 2025-03-20 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="273858820" version="11"
 #: osm_watch: way id="1239079510" version="1"
-(Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5926,14997 5935,14948 5940,14911 6030,14924
+(Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5924,15005 5935,14948 5940,14911 6030,14924
 #: osm_watch: way id="273858819" version="11"
 (Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5879,14981 5893,14945 5935,14948
 #: check_frequency ^^^
@@ -3914,6 +3914,8 @@ Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3::trailer=10 
 Schranke, kann umfahren werden	BNP:1::trailer=3 2419,13833
 Schranke, kann umfahren werden	BNP:1::trailer=3 2969,14063
 #
+Tor	BNP:10 5857,14985
+# 
 #: section ^^^
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3951,7 +3953,7 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1
 #: osm_watch: note 4545425 2
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-20
 #: check_frequency: 120d
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
@@ -4435,7 +4437,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-03-13
+#: last_checked: 2025-03-20
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4704,7 +4706,7 @@ Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2025-03-09
+#: last_checked: 2025-03-20
 #: check_frequency: 120d
 #: next_check: 2026-09-30 (Baustellenschild)
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -5117,7 +5119,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2025-03-13
+#: last_checked: 2025-03-20
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5126,7 +5128,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: next_check_id: MOLKENMARKT-2021
 #: XXX Die Kreuzung Gustav-Böß-Str./Jüdenstr. wird eine neue Ampel bekommen, die Masten und Signalgeber stehen schon.
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-03-13
+#: last_checked: 2025-03-20
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
