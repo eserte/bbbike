@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2001,2010,2014 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2001,2010,2014,2025 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -1144,7 +1144,18 @@ sub info {
     my($self) = @_;
     my $info = "object: $self\n";
     $info .= "is_current: " . ($self->is_current ? 'true' : 'false') . "\n";
+    if ($self->{Modtime}) {
+	require POSIX;
+	$info .= "Modtime: " . POSIX::strftime("%FT%T", localtime $self->{Modtime}) . "\n";
+    }
     $info .= "File: " . (defined $self->{File} ? $self->{File} : '<undef>') . "\n";
+    my @dependent_files = $self->dependent_files;
+    if (@dependent_files) {
+	$info .= "dependent_files:\n";
+	for my $dependent_file (@dependent_files) {
+	    $info .= "- $dependent_file\n";
+	}
+    }
     $info;
 }
 
