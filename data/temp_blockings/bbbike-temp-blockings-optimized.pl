@@ -7420,7 +7420,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: note: Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: osm_watch: way id="89413122" version="9"
+#: osm_watch: way id="89413122" version="10"
 #: last_checked: 2025-03-18 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
@@ -7773,17 +7773,7 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.34184,52.43229,21.02.2025,09:04 (bis 28.02.2025) (inaktiv)
-#: source_id: viz2021:13.34184,52.43229,28.02.2025,10:57 (bis 21.03.2025)
-	q4::inwork 6372,2959 6329,2916 6359,2875
-',
-         'from' => 1740038640,
-         'id' => 4268,
-         'text' => 'Barbarastr.: geplatzte Wasserleitung, zwischen Ingridpfad und Ruthstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.02.2025 09:04 bis 21.03.2025 23:59',
-         'type' => 'handicap',
-         'until' => 1742597999
-       },
+       undef,
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/anschlag-auf-israelische-botschaft-in-berlin-geplant-funf-festnahmen-nach-durchsuchungen-in-potsdam-13249681.html (vom 22.02.2025)
 #: osm_watch: note 4188310 4
@@ -7937,16 +7927,7 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'type' => 'handicap',
          'until' => 1743778800
        },
-       {
-         'data' => '#: source_id: viz2021:13.379301,52.514724,17.03.2025,06:00 (bis 21.03.2025)
-	q4::inwork 8595,12066 8737,12098 8743,12099 8861,12125
-',
-         'from' => 1742101200,
-         'id' => 4280,
-         'text' => 'Behrenstr.: Sperrung zwischen Ebertstr. und Wilhelmstr., Kraneinsatz, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 06:00 bis 21.03.2025 12:00',
-         'type' => 'handicap',
-         'until' => 1742554800
-       },
+       undef,
        {
          'data' => '# 
 #: next_check_id: WEISSENHOEHER-2025
@@ -7993,6 +7974,26 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'text' => 'Uferweg am Plötzensee: Bauarbeiten, mögliche temporäre Sperrungen im Frühjahr 2025',
          'type' => 'gesperrt',
          'until' => 1751320799
+       },
+       {
+         'data' => '#: source_id: LS/223-P/25/034 (bis 24.10.2025)
+	2::inwork -34492,-10500 -34429,-10543 -34112,-10516 -34009,-10453 -33993,-10461
+',
+         'from' => 1743314400,
+         'id' => 4284,
+         'text' => 'Lehnin, Bahnhofstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 31.03.2025 08:00 Uhr bis 24.10.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1761318000
+       },
+       {
+         'data' => '#: source_id: 256000419 (bis 15.04.2025)
+	2::inwork 25069,35558 25740,34997 26113,34734
+',
+         'from' => 1744261200,
+         'id' => 4285,
+         'text' => 'Rüdnitz: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 11.04.2025 07:00 Uhr bis 15.04.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1744729200
        }
      
 );

@@ -46250,7 +46250,7 @@ EOF
 #: note: Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: osm_watch: way id="89413122" version="9"
+#: osm_watch: way id="89413122" version="10"
 #: last_checked: 2025-03-18 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
@@ -46680,7 +46680,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.34184,52.43229,21.02.2025,09:04 (bis 28.02.2025) (inaktiv)
-#: source_id: viz2021:13.34184,52.43229,28.02.2025,10:57 (bis 21.03.2025)
+#: source_id: viz2021:13.34184,52.43229,28.02.2025,10:57 (bis 21.03.2025) (inaktiv)
 	q4::inwork 6372,2959 6329,2916 6359,2875
 EOF
      },
@@ -46869,7 +46869,7 @@ EOF
        text  => 'Behrenstr.: Sperrung zwischen Ebertstr. und Wilhelmstr., Kraneinsatz, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 06:00 bis 21.03.2025 12:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.379301,52.514724,17.03.2025,06:00 (bis 21.03.2025)
+#: source_id: viz2021:13.379301,52.514724,17.03.2025,06:00 (bis 21.03.2025) (inaktiv)
 	q4::inwork 8595,12066 8737,12098 8743,12099 8861,12125
 EOF
      },
@@ -46915,6 +46915,24 @@ EOF
 #: check_frequency: 60d
 #: next_check: 2025-06-30
 	2::inwork 5051,15508 5015,15564 5040,15606 5073,15611 5134,15565 5240,15444
+EOF
+     },
+     { from  => 1743314400, # 2025-03-30 08:00
+       until => 1761318000, # 2025-10-24 17:00
+       text  => 'Lehnin, Bahnhofstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 31.03.2025 08:00 Uhr bis 24.10.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/223-P/25/034 (bis 24.10.2025)
+	2::inwork -34492,-10500 -34429,-10543 -34112,-10516 -34009,-10453 -33993,-10461
+EOF
+     },
+     { from  => 1744261200, # 2025-04-10 07:00
+       until => 1744729200, # 2025-04-15 17:00
+       text  => 'Rüdnitz: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 11.04.2025 07:00 Uhr bis 15.04.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 256000419 (bis 15.04.2025)
+	2::inwork 25069,35558 25740,34997 26113,34734
 EOF
      },
     );
