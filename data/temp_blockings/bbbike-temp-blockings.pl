@@ -37257,15 +37257,15 @@ Mauerstr.	2::temp 9171,11777 9138,11872
 EOF
      },
      { from  => 1736839577, # 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2025-04-22 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       until => $isodate2epoch->("2025-05-10 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
 #      text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 08.03.2024',
-       text  => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 22.04.2025',
+       text  => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 10.05.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
 #: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024) (inaktiv)
-#: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025)
+#: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -37664,7 +37664,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-03-12
+#: last_checked: 2025-03-24
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -39168,7 +39168,7 @@ EOF
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023) (bis 09.06.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,09.06.2023,10:00 (bis 28.08.2023) (inaktiv)
-#: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028) (bis 30.06.2028)
+#: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028) (bis 30.06.2028) (bis 28.02.2028)
 #: REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 #: REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
@@ -39316,7 +39316,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1840617570052767861
 #: by: https://pbs.twimg.com/media/GYfk3IQWwAAs0oN?format=jpg&name=4096x4096 (für Radfahrer explizit in beiden Richtungen offen)
 #: source_id: viz2021:13.31151,52.51786,16.09.2024,06:00 (kurzfristige Komplettsperrung, bis 18.09.2024) (inaktiv)
-#: source_id: viz2021:13.310518,52.51611,30.09.2024,07:00 (Anbindung Warburgzeile gesperrt, bis 25.03.2025)
+#: source_id: viz2021:13.310518,52.51611,30.09.2024,07:00 (Anbindung Warburgzeile gesperrt, bis 25.03.2025) (bis 13.06.2025)
 #: osm_watch: way id="1191704604" version="1"
 #: note: Endedatum anhand Halteverbotsschilder
 #: also_indoor: traffic (none)
@@ -40036,15 +40036,22 @@ EOF
 	q3::inwork; 7872,13022 7873,12927
 EOF
      },
-     { from  => 1685381243, # 2023-05-29 19:27
-       until => 1685646667, # 1685743200, # 2023-06-03 00:00
-       text  => 'Röntgentaler Weg: Sperrung in Höhe Pöllnitzweg, 30.5.2023 bis 2.6.2023',
+     { from  => undef, # 1685381243, # 2023-05-29 19:27
+       until => undef, # 1685646667, # 1685743200, # 2023-06-03 00:00
+#      text  => 'Röntgentaler Weg: Sperrung in Höhe Pöllnitzweg, 30.5.2023 bis 2.6.2023',
+       text  => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://viz.berlin.de/2023/05/verkehrsvorschau-300523/
+#: by: https://viz.berlin.de/2023/05/verkehrsvorschau-300523/ (alte Sperrung)
 #: by: https://nitter.cz/VIZ_Berlin/status/1663489643629752320#m
 #: source_id: viz2021:13.498511,52.640138,30.05.2023,11:30 (bis 02.06.2023) (inaktiv)
-	2::inwork 16222,25829 16532,26174 17101,26701
+#	2::inwork 16222,25829 16532,26174 17101,26701
+#: note: evtl. mit der Sperrung in der Wiltbergstr. zusammenhängend
+#: last_checked: 2025-03-23 vvv
+	2::inwork 16532,26174 16222,25829 16166,25767
+#: note: Länge der Einbahnstraßenregelung geschätzte 100-200m
+	q3::inwork; 17101,26701 16532,26174
+#: last_checked ^^^
 EOF
      },
      { from  => 1685242500, # 2023-05-28 04:55
@@ -44148,7 +44155,7 @@ EOF
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-03-07
+#: last_checked: 2025-03-24
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork 15077,11910 15110,12107
 EOF
@@ -45678,15 +45685,16 @@ EOF
 	q4::inwork 14440,15682 14653,15738
 EOF
      },
-     { from  => undef, #
-       until => 1732213854, # undef, #
-       text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
+     { from  => $isodate2epoch->("2025-03-24 00:00:00"), # undef, #
+       until => $isodate2epoch->("2025-05-28 17:00:00"), # 1732213854, # undef, #
+#      text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Fürstenberger Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 24.03.2025 bis 28.05.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHWEDTER-2024
-#: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig
-# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d
-	q4::inwork 10530,14452 10567,14337 10629,14299
+# REMOVED --- #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
+#: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025)
+	q4::inwork 10530,14452 10506,14521 10472,14632
 EOF
      },
      { from  => 1729400400, # 2024-10-20 07:00
@@ -46610,7 +46618,7 @@ EOF
        text  => 'Ebertystr.: Sperrung der Fahrbahn Höhe Ebelingstr., vom 16.02.2025 08:00 bis Juni 2025',
        type  => 'handicap',
        data  => <<EOF,
-#: by: rbb (bis 17.03.2025) (bis 24.03.2025)
+#: by: rbb (bis 17.03.2025) (bis 24.03.2025) (bis 28.04.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
 #: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich; am 2025-03-05 war gesperrt
 	q3::inwork 13741,13107 13692,13221 13644,13332
@@ -46726,19 +46734,19 @@ EOF
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17), aber nicht immer (gesehen 2024-11-16 Sat); das südliche Tor ist immer zu
 #: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
-#: note: nördliches Tor offen, südliches Tor nur geschlossen (aber nicht verschlossen) (gesehen 2025-03-10 Mo 17:25)
+#: note: nördliches Tor offen, südliches Tor nur geschlossen (aber nicht verschlossen) (gesehen 2025-03-10 Mo 17:25, 2025-03-24 17:32)
 #: note: nördliches Tor geschlossen, südliches Tor nicht geprüft (gesehen 2025-03-08 Sa 11:30)
 #: osm_watch: way id="207757723" version="6"
 #: osm_watch: way id="275795707" version="3"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-03-10 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2025-03-24 vvv
+#: check_frequency: 15d vvv
 # REMOVED --- #: check_frequency: 90d vvv
-#: note: kann offen sein, aber nicht immer
+# REMOVED --- #: note: kann offen sein, aber nicht immer
 Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
-#: note: dauerhaft gesperrt
-Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8097
+# REMOVED --- #: note: dauerhaft gesperrt
+Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -46788,8 +46796,8 @@ EOF
 EOF
      },
      { from  => 1742079600, # 2025-03-16 00:00
-       until => $isodate2epoch->("2025-03-28 17:00:00"),
-       text  => 'Schulzendorfer Str.: Sanierung, Sperrung der Fahrbahn (Gartenstr. - Dahmestr. sowie Neptunstr. - Amorstr.), vom 17. März 2025 bis voraussichtlich 28. März 2025',
+       until => $isodate2epoch->("2025-03-27 17:00:00"),
+       text  => 'Schulzendorfer Str.: Sanierung, Sperrung der Fahrbahn (Gartenstr. - Dahmestr. sowie Neptunstr. - Amorstr.), vom 17. März 2025 bis voraussichtlich 27. März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1537994.php (zwei Bauabschnitte, allerdings nicht zeitlich genau bestimmt)
@@ -46797,9 +46805,9 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierung-in-der-schulzendorfer-strasse-in-bohnsdorf/
 #: by: https://viz.berlin.de/site/assets/files/1826/detail_1.png
 #: by: https://viz.berlin.de/site/assets/files/1826/detail_2.png
-#: source_id: viz2021:13.576587,52.403261,17.03.2025,07:00 (bis 28.03.2025)
+#: source_id: viz2021:13.576587,52.403261,17.03.2025,07:00 (bis 28.03.2025) (bis 27.03.2025)
 	q4::inwork 22345,-10 22382,-87 22440,-175
-#: source_id: viz2021:13.581796,52.398134,17.03.2025,07:00 (bis 28.03.2025)
+#: source_id: viz2021:13.581796,52.398134,17.03.2025,07:00 (bis 28.03.2025) (bis 27.03.2025)
 	q4::inwork 22750,-650 22696,-579 22644,-497
 EOF
      },
@@ -46846,7 +46854,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901517353940390368
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
 #: osm_watch: note 4317053 6
-#: last_checked: 2025-03-10 (mapillary)
+#: last_checked: 2025-03-21 (daf)
 #: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 EOF

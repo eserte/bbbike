@@ -41,7 +41,7 @@ Pufendorfstr.: 70m der Fahrbahn gesperrt, Ausweichen auf Bürgersteig	q3::inwork 
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-03-20
+#: last_checked: 2025-03-23
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -136,7 +136,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-18
+#: last_checked: 2025-03-24
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -722,7 +722,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025
 #: also_indoor: traffic (ex-G,B,T)
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
-#: last_checked: 2025-02-28 vvv
+#: last_checked: 2025-03-24 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-03-28 (Halteverbotsschilder) vvv
 # REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
@@ -1034,7 +1034,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="40"
 #: osm_watch: way id="1193560283" version="9"
-#: last_checked: 2025-03-12
+#: last_checked: 2025-03-24
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -1042,7 +1042,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-03-12
+#: last_checked: 2025-03-24
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 

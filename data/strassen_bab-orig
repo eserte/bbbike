@@ -9,7 +9,9 @@ BAB100 (Tunnel Innsbrucker Platz)	BAB::Tu 6494,7943 6393,8011 6242,8039
 BAB100	BAB 6242,8039 6117,8042 5917,8007 5575,7940 5207,7925 4795,7921 4657,7941 4455,8008 4276,8131 4055,8351 3839,8468 3397,9000 2995,9448 2740,9680 2449,9723
 BAB100 (Tunnel Rathenauplatz)	BAB::Tu 2449,9723 2378,9761 2273,9894
 BAB100	BAB 2273,9894 2083,10233 2052,10289 2016,10404 2009,10517
-BAB100	BAB; 2225,12227 2372,11762 2338,11515 2170,11101 2021,10599 2009,10517
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: historical_note: bis 2025-03-24 Einrichtungsverkehr
+BAB100	BAB 2225,12227 2372,11762 2338,11515 2170,11101 2021,10599 2009,10517
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-ringbahnbrucke-im-autobahndreieck-funkturm-richtung-wedding/ (Vollsperrung ab 19.03.2025)
 #: by: https://www.tagesspiegel.de/berlin/wegen-riss-auf-der-a100-ringbahnbrucke-wird-ab-20-uhr-voll-gesperrt-13398562.html
@@ -20,6 +22,8 @@ BAB100	BAB; 2225,12227 2372,11762 2338,11515 2170,11101 2021,10599 2009,10517
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1543039.php
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/keine-entwarnung-fuer-autobahnbruecke-bezirk-will-vollsperrung_a437497
 #: by: https://www.tagesspiegel.de/berlin/a100-sperrung-im-berliner-westen-wie-konnen-autofahrer-den-bereich-am-besten-umfahren-13401913.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/ringbahnbrucke-im-ad-funkturm/
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1904073642733904014
 #: osm_watch: way id="227985279" version="13"
 BAB100	BAB::inwork; 2009,10517 2058,10612 2117,10698 2165,10785 2175,10864 2183,10977 2207,11078 2353,11451 2379,11570 2403,11710 2409,11812 2399,11949 2388,11997
 # 
@@ -28,13 +32,15 @@ BAB100	BAB::inwork; 2009,10517 2058,10612 2117,10698 2165,10785 2175,10864 2183,
 #: by: https://www.berliner-woche.de/westend/c-bauen/einwendungen-moeglich_a418011
 #: XXX Neubau der Westendbrücke (mit Verlagerung)
 #: osm_watch: way id="4495210" version="18"
-#: osm_watch: note 4671906 5
+#: osm_watch: note 4671906 7
 #: last_checked: 2024-06-05 (Bericht)
 #: check_frequency: 1000d
 BAB100 (Westendbrücke)	BAB::Br::inwork; 2388,11997 2332,12106 2248,12201
 # 
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
-BAB100	BAB::inwork; 2248,12201 2225,12227 2177,12376
+BAB100	BAB::inwork; 2248,12201 2225,12227
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+BAB100	BAB; 2225,12227 2177,12376
 # 
 BAB100	BAB; 2177,12376 2225,12227
 BAB100	BAB 2177,12376 2029,12917

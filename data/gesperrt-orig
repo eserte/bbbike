@@ -179,7 +179,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-03-16 vvv
+#: last_checked: 2025-03-24 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -264,7 +264,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="4"
-#: last_checked: 2024-12-24
+#: last_checked: 2025-03-24
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -301,7 +301,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2025-03-12
+#: last_checked: 2025-03-24
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -416,8 +416,8 @@ Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 #: next_check_id: KARLMARXPLATZ-2024
 #: XXX während der Bauarbeiten ist die Einbahnstraße aufgehoben
 #: last_checked: 2025-03-04
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-03-04 (Halteverbotsschilder)
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2025-04-15 (Halteverbotsschilder)
 Karl-Marx-Platz	1no 13100,7626 12987,7560
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
@@ -3916,11 +3916,20 @@ Schranke, kann umfahren werden	BNP:1::trailer=3 2969,14063
 #
 Tor	BNP:10 5857,14985
 # 
+#: note: meistens geschlossen, kann aber auch verschlossen sein (siehe temp_blockings-Eintrag)
+Tor	BNP:10 17059,8102
+# 
 #: section ^^^
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein; dann vermutlich regulär ohne Fußgängerschutztunnel.
+#: last_checked: 2025-03-24
+#: check_frequency: 120d
+#: next_check: 2026-05-01
+(Ostkreuz, Zugang Marktstr.): Fußgängerschutztunnel wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
 # 
 #: priority: #B
 #: last_checked: 2025-03-18
@@ -4074,7 +4083,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: XXX an dieser Stelle wird es alternativ eine Rampe geben
 #: osm_watch: note 4298701 2
 #: osm_watch: way id="1297589176" version="1"
-#: last_checked: 2024-12-08
+#: last_checked: 2025-03-23
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19156,14953 19160,14935 19171,14938
@@ -4303,7 +4312,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="29"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-03-12
+#: last_checked: 2025-03-24
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4360,7 +4369,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-03-12
+#: last_checked: 2025-03-21 (daf)
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4368,7 +4377,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-03-12 vvv
+#: last_checked: 2025-03-21 (daf) vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4397,8 +4406,9 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
 #: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1363169.php (Fertigstellung 1. Halbjahr 2026)
+#: XXX Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster)
 #: priority: #C
-#: last_checked: 2025-03-04 (mapillary)
+#: last_checked: 2025-03-23 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-05-31 (BA-Seiten)
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
@@ -4410,7 +4420,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025)
 #: priority: #C
-#: last_checked: 2025-03-16
+#: last_checked: 2025-03-24
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4479,7 +4489,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2025-03-20
+#: last_checked: 2025-03-24
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4548,7 +4558,7 @@ Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-fehlen-personal-und-finanzmittel-fuer-die-auftragsvergabe_a431449 (Sperrung mindestens bis 2026 (Anfang oder Ende?))
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
-#: osm_watch: way id="27944267" version="20"
+#: osm_watch: way id="27944267" version="21"
 #: last_checked: 2024-10-19
 #: check_frequency: 360d
 #: next_check: 2026-01-01
@@ -4585,7 +4595,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch: note 3831047 3
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-24
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -4688,7 +4698,7 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 # REMOVED --- #: last_checked: 2024-12-27 --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen! --- #: note: Durchfahrt offiziell noch nicht erlaubt, aber hier parken schon Autos in der Parktaschen: q4 -> q3 --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q3:inwork 17753,8290 17771,8349 17794,8429
-#: last_checked: 2025-03-10
+#: last_checked: 2025-03-24
 # REMOVED --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17813,8508
 # REMOVED (weitgehend offen) --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
@@ -4715,7 +4725,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2025-03-08
+#: last_checked: 2025-03-24
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -4807,7 +4817,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="1171090939" version="5"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
-#: last_checked: 2025-03-05 (architektur-urbanistik)
+#: last_checked: 2025-03-24
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (howoge website)
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
