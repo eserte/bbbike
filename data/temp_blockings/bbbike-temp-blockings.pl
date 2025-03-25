@@ -8402,7 +8402,7 @@ EOF
      { from  => $isodate2epoch->("2024-09-19 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2024-09-22 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 7, months => 5, start => "2023-05-13T00:00:00"]], # normalerweise zum Muttertag, kann aber auch im Herbst stattfinden
+       recurrences => [['yearly', days => 7, months => 5, start => "2025-05-13T00:00:00"]], # normalerweise zum Muttertag, kann aber auch im Herbst stattfinden
        recurrence_prewarn_days => 1,
        text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (20. bis 22. September 2024)',
        type  => 'gesperrt',
@@ -8416,6 +8416,7 @@ EOF
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20230325 (wegen Bauarbeiten für 2023 abgesagt)
 #: by: https://www.facebook.com/events/1572185126967043/?ref_source=NEWS_FEED&__hwl=1&_rdr (20.9.-22.9.2024)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-traditionsfeste-kein-festumzug-durch-die-kopenicker-altstadt-13344679.html (2025 nur auf dem Marktplatz Friedrichshagen?)
+#: by: https://www.laubinger.de/event/31-fest-auf-der-boelsche-geplant/ (fällt 2025 aus)
 #: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.624675,52.451034,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
 	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
@@ -30023,14 +30024,17 @@ EOF
 	q4::inwork; 9936,14085 10002,14092
 EOF
      },
-     { from  => $isodate2epoch->("2024-04-04 00:00:00"), # $isodate2epoch->("2023-03-30 06:00:00"), # 1 Tag Vorlauf # 1648843431, # 1554400800, # 2019-04-04 20:00
-       until => $isodate2epoch->("2024-04-08 06:00:00"), # $isodate2epoch->("2023-04-03 06:00:00"),
-       text  => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.04.2024 bis 08.04.2024 6 Uhr',
+     { from  => $isodate2epoch->("2025-04-03 00:00:00"), # $isodate2epoch->("2024-04-04 00:00:00"), # $isodate2epoch->("2023-03-30 06:00:00"), # 1 Tag Vorlauf # 1648843431, # 1554400800, # 2019-04-04 20:00
+       until => $isodate2epoch->("2025-04-07 06:00:00"), # $isodate2epoch->("2024-04-08 06:00:00"), # $isodate2epoch->("2023-04-03 06:00:00"),
+       periodic => 1,
+       recurrences => [['yearly', days => 31, months => 3]],
+       text  => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 04.04.2025 bis 07.04.2025 6 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://viz.berlin.de/2022/04/halbmarathon/
+#: next_check_id: BERLINHALBMARATHON-RECURRING
+#: by: https://viz.berlin.de/2022/04/halbmarathon/ (3.4.2022)
 #: by: https://twitter.com/ellirhc11/status/1509924822444298250
-#: by: https://viz.berlin.de/2023/03/halbmarathon/
+#: by: https://viz.berlin.de/2023/03/halbmarathon/ (2.4.2023)
 #: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
 #: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
@@ -30042,6 +30046,7 @@ EOF
 #: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
+#: source_id: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -35959,12 +35964,15 @@ EOF
 	q4::inwork 8187,15965 8236,16071 8334,16282 8420,16365
 EOF
      },
-     { from  => 1645513200, # 2022-02-22 08:00
-       until => 1648227600, # 2022-03-25 18:00
-       text  => 'Herzsprung: Gleisbauarbeiten am Bahnübergang, Vollsperrung vom 23.02.2022 - 8:00 Uhr bis 25.03.2022 18:00 Uhr ',
+     { from  => $isodate2epoch->("2025-04-06 00:00:00"), # 1645513200, # 2022-02-22 08:00
+       until => $isodate2epoch->("2025-04-12 18:00:00"), # 1648227600, # 2022-03-25 18:00
+       dont_check_date => 1,
+#      text  => 'Herzsprung: Gleisbauarbeiten am Bahnübergang, Vollsperrung vom 23.02.2022 - 8:00 Uhr bis 25.03.2022 18:00 Uhr ',
+       text  => 'Herzsprung: Gleisbauarbeiten am Bahnübergang, Sperrung, evtl. sind auch Radfahrer betroffen, vom 07.04.2025 20:00 Uhr bis 08.04.2025 18:00 Uhr sowie vom 11.04.2025 20:00 Uhr bis 12.04.2025 18:00 Uhr',
        type  => 'gesperrt',
-       source_id => '227300117',
        data  => <<EOF,
+#: source_id: 227300117 (von 2022, inaktiv)
+#: source_id: 257309325 (bis 12.04.2025)
 	2::inwork 49004,64047 48516,64085 48151,64245
 EOF
      },
@@ -43644,7 +43652,7 @@ EOF
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,ex-G)
@@ -44362,7 +44370,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-03-18 vvv
+#: last_checked: 2025-03-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45644,13 +45652,13 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 EOF
      },
      { from  => $isodate2epoch->("2025-03-16 00:00:00"), # 1728882000, # 2024-10-14 07:00
-       until => $isodate2epoch->("2025-10-27 18:00:00"), # 1739473056, # 1741964400, # 2025-03-14 16:00
+       until => $isodate2epoch->("2026-02-28 18:00:00"), # 1739473056, # 1741964400, # 2025-03-14 16:00
 #      text  => 'Erkner: L30, Bauarbeiten, möglicherweise ist die Brücke für Fußgänger und Radfahrer gesperrt, vom 15.10.2024 07:00 Uhr bis 14.03.2025 16:00 Uhr',
-       text  => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, vom 17.03.2025 bis 27.10.2025',
+       text  => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, vom 17.03.2025 bis 28.02.2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 246700596 (bis 14.03.2025) (inaktiv)
-#: source_id: LS/221-F/25/033 (bis 27.10.2025)
+#: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
@@ -46941,6 +46949,15 @@ EOF
        data  => <<EOF,
 #: source_id: 256000419 (bis 15.04.2025)
 	2::inwork 25069,35558 25740,34997 26113,34734
+EOF
+     },
+     { from  => 1745211600, # 2025-04-21 07:00
+       until => 1745431200, # 2025-04-23 20:00
+       text  => 'Angermünde, Bahnübergang Prenzlauer Str.: Gleisbauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 22.04.2025 07:00 Uhr bis 23.04.2025 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 257300425 (bis 23.04.2025)
+	2::inwork 49584,69540 49463,69701 49250,70086
 EOF
      },
     );

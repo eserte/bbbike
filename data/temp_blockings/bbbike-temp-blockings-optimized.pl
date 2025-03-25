@@ -3551,7 +3551,70 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: BERLINHALBMARATHON-RECURRING
+#: by: https://viz.berlin.de/2022/04/halbmarathon/ (3.4.2022)
+#: by: https://twitter.com/ellirhc11/status/1509924822444298250
+#: by: https://viz.berlin.de/2023/03/halbmarathon/ (2.4.2023)
+#: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
+#: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
+#: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
+#: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
+#: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
+#: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
+#: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024) (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
+#: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
+#: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
+#: source_id: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
+	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
+	2::temp 8540,12420 8775,12457
+	2::temp 8309,12758 8306,12609 8207,12606
+	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
+	2::temp 8306,12609
+	3 8554,12593 8540,12420 8775,12457
+	3 8399,12610 8420,12556 8421,12479 8400,12417 8391,12389
+# REMOVED ---	3 8369,12609 8373,12416 8391,12389
+	3 8775,12457 8540,12420 8554,12593
+	3 8327,12174 8344,12221 8391,12389
+	3 7429,12070 7383,12095 7031,12320
+# REMOVED ---	3 8391,12389 8373,12416 8369,12609
+	3 8391,12389 8344,12221 8327,12174
+	3 8391,12389 8400,12417 8421,12479 8420,12556 8399,12610
+	3 7654,12464 7627,12380 7603,12353
+	3 7603,12353 7627,12380 7654,12464
+	3 8592,12252 8538,12245 8522,12187
+	3 8592,12252 8538,12245 8522,12239
+	3 7822,12201 7816,12150 7823,12120
+	3 7822,12201 7875,12363 7945,12592
+	3 8522,12187 8538,12245 8522,12239
+	3 8522,12187 8538,12245 8592,12252
+	3 7945,12592 7875,12363 7822,12201
+	3 7945,12592 8122,12603 8120,12756
+	3 7031,12320 7383,12095 7429,12070
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12239 8538,12245 8592,12252
+	3 8120,12756 8122,12603 7945,12592
+	3 7823,12120 7816,12150 7822,12201
+',
+         'from' => 1743631200,
+         'id' => 3085,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              3
+                            ]
+                          ],
+         'text' => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 04.04.2025 bis 07.04.2025 6 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1743998400
+       },
        undef,
        undef,
        undef,
@@ -4550,7 +4613,18 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 227300117 (von 2022, inaktiv)
+#: source_id: 257309325 (bis 12.04.2025)
+	2::inwork 49004,64047 48516,64085 48151,64245
+',
+         'dont_check_date' => 1,
+         'from' => 1743890400,
+         'id' => 3526,
+         'text' => 'Herzsprung: Gleisbauarbeiten am Bahnübergang, Sperrung, evtl. sind auch Radfahrer betroffen, vom 07.04.2025 20:00 Uhr bis 08.04.2025 18:00 Uhr sowie vom 11.04.2025 20:00 Uhr bis 12.04.2025 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1744473600
+       },
        undef,
        undef,
        {
@@ -6431,7 +6505,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,ex-G)
@@ -6634,7 +6708,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-03-18 vvv
+#: last_checked: 2025-03-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7163,7 +7237,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        undef,
        {
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
-#: source_id: LS/221-F/25/033 (bis 27.10.2025)
+#: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
@@ -7175,9 +7249,9 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 ',
          'from' => 1742079600,
          'id' => 4188,
-         'text' => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, vom 17.03.2025 bis 27.10.2025',
+         'text' => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, vom 17.03.2025 bis 28.02.2026',
          'type' => 'gesperrt',
-         'until' => 1761584400
+         'until' => 1772298000
        },
        undef,
        undef,
@@ -8022,6 +8096,16 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'text' => 'Rüdnitz: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 11.04.2025 07:00 Uhr bis 15.04.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1744729200
+       },
+       {
+         'data' => '#: source_id: 257300425 (bis 23.04.2025)
+	2::inwork 49584,69540 49463,69701 49250,70086
+',
+         'from' => 1745211600,
+         'id' => 4286,
+         'text' => 'Angermünde, Bahnübergang Prenzlauer Str.: Gleisbauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 22.04.2025 07:00 Uhr bis 23.04.2025 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1745431200
        }
      
 );

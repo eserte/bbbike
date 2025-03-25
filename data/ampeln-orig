@@ -19,12 +19,12 @@ Weißenburger Str.: Gegenverkehrsregelung	X::inwork::alternating -3301,12864
 #: valid: -20250530
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
-# REMOVED (mittlerweile nach Süden gewandert, aber ausgeschaltet bzw. gelb-blinkend)
-# REMOVED --- #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025)
-# REMOVED --- #: last_checked: 2025-03-20
-# REMOVED --- #: next_check: 2025-04-22
-# REMOVED --- #: valid: -20250422
-# REMOVED --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
+#: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025)
+#: note: zuerst 10642,11901, mittlerweile nach Süden gewandert
+#: last_checked: 2025-03-25
+#: next_check: 2025-04-22
+#: valid: -20250422
+Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
 # 
 # REMOVED --- #: source_id: viz2021:13.486871,52.577222,11.11.2024,07:00 (bis 14.02.2025)
 # REMOVED --- #: note: Länge der Gegenverkehrsstrecke: 50m

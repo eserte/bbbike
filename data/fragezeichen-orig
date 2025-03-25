@@ -2280,6 +2280,7 @@ Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projec
 #: source_id[inactive]: bvg2024:106#HIM_FREETEXT_235323 (Haltestellenverlegung ab 19.08.2024, evtl. im Zusammenhang mit der RVA?)
 #: source_id: viz2021:13.328651,52.529582,15.10.2024,07:00 (bis 29.10.2024) (bis 05.11.2024) (inaktiv)
 #: source_id: viz2021:13.328102,52.525936,05.11.2024,10:00 (Fahrbahninstandsetzung südl. der Turmstr., bis 13.12.2024) (bis 23.12.2024) (inaktiv)
+#: source_id: viz2021:13.328102,52.525936,28.01.2025,10:00 (Fahrbahninstandsetzung südl. der Turmstr., bis 30.04.2025)
 #: osm_watch: way id="28497108" version="24"
 #: osm_watch: way id="1167737343" version="3"
 #: osm_watch: note 3933817 20
@@ -2287,7 +2288,8 @@ Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projec
 #: note: mittlerweile (2024-11-28) Richtung Süden weitgehend markiert, ist aber insbesondere südlich der Turmstraße zugeparkt
 #: last_checked: 2025-03-20
 #: check_frequency: 45d
-#: next_check: 2025-06-30 (infravelo)
+#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-06-30 (infravelo)
 Beusselstr.: geschützte Radverkehrsanlage entsteht	?::projected 5166,13087 5199,13247 5202,13266 5248,13434 5238,13714 5231,13843 5225,13958 5220,14043
 # 
 #: section ^^^
@@ -4022,6 +4024,7 @@ Grunewaldstr.: geschützter Radfahrstreifen von Kufsteiner Str./Bamberger Str. bi
 #: check_frequency ^^^
 #: next_check ^^^
 #: last_checked ^^^
+#: source_id: viz2021:13.349444,52.48949,24.03.2025,07:00 (bis 24.04.2025 + weitere Arbeiten)
 #: last_checked: 2025-02-05
 #: check_frequency: 150d
 #: next_check: 2025-09-30 (infravelo)
@@ -5620,7 +5623,7 @@ Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 1498
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2025-03-18
+#: last_checked: 2025-03-25
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
@@ -6951,6 +6954,7 @@ Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1542057.php (Planungsgrundsätze für die Ostumfahrung Bahnhofstraße)
 #: by: https://entwicklungsstadt.de/1-800-neue-wohnungen-in-koepenick-rahmenplan-fuer-ehemaligen-gueterbahnhof-beschlossen/
 #: by: https://www.tagesspiegel.de/berlin/ehemaliger-guterbahnhof-kopenick-senat-beschliesst-rahmenplan-fur-klimaneutrales-wohnquartier-in-berlin-13387687.html (Bauarbeiten für das Quartier Herbst 2025 - 2032)
+#: by: https://www.parlament-berlin.de/ados/19/IIIPlen/vorgang/d19-2320.pdf (mit Luftaufnahme und geplanter Trasse)
 #: XXX derzeitige Führung der projektierten Hauptstraße aus dem Karres en Brands-Masterplan entnommen; weitere Quariersstraßen entstehen (autoarm), außerdem ein Weg entlang der Bahnstrecke
 #: last_checked: 2025-03-18 (Pressemitteilung, entwicklungsstadt, Tsp)
 #: check_frequency: 720d
@@ -7299,7 +7303,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2025-03-18
+#: last_checked: 2025-03-25
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7325,19 +7329,19 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1861648648997871936
 #: by: https://pbs.twimg.com/media/GdTPcnFWcAAclkJ?format=jpg&name=large
 #: source_id: viz2021:13.428044,52.51818,14.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis 11/2023) (bis 21.08.2023) (bis 31.08.2023) (bis 25.09.2023) (inaktiv)
-#: source_id: viz2021:13.430192,52.518226,27.11.2024,07:00 (Leitungsarbeiten in der Gegenrichtung, bis 26.03.2025)
+#: source_id: viz2021:13.430192,52.518226,27.11.2024,07:00 (Leitungsarbeiten in der Gegenrichtung, bis 26.03.2025) (bis 25.06.2025)
 #: note: ursprünglich geplant: Verbreiterung der Radwege
 #: XXX laut rbb und viz wird zwischen Koppenstr. und Straße der Pariser Kommune ein Radfahrstreifen eingerichtet (stimmt aber nicht)
 # REMOVED --- #: XXX in der Realität wird zurzeit zwischen Andreasstr. und der Koppenstr.; mittlerweile bis Straße der Pariser Kommune gearbeitet (Fahrspur abgesperrt, alter Radweg wird abgebrochen, provisorischer Radweg auf dem Gehweg)
 #: XXX zwischenzeitlich Bauarbeiten zwischen Strausberger Platz und Andreasstr. (Führung auf der Fahrbahn)
 #: last_checked: 2025-02-19 (mapillary) vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2023-11-30 vvv
+#: next_check: 2025-06-25 vvv
 Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,12540 12352,12509
 # REMOVED (realisiert) --- Karl-Marx-Allee: Radweg zwischen Andreasstr. und Koppenstr. wird auf 3m verbreitert	?::inwork; 12352,12509 12592,12472
 # REMOVED (realisiert) --- #: source_id: viz2021:13.436148,52.517611,18.08.2023,08:00 (bis 01.11.2023) (inaktiv) --- Karl-Marx-Allee: Radweg zwischen Andreasstr. und Koppenstr. wird auf 3m verbreitert	?::inwork; 12592,12472 12603,12470 12816,12439
 # REMOVED (hier bereits realisiert) --- Karl-Marx-Allee: neue Radspur zwischen Koppenstr. und Straße der Pariser Kommune	?::inwork; 12816,12439 12848,12434 12878,12430
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -7348,7 +7352,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: way id="1273991435" version="3"
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-03-20
+#: last_checked: 2025-03-25
 #: check_frequency: 30d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7417,6 +7421,7 @@ Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltier
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240627 (Eröffnung im Frühjahr 2025 vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1460977.php
 #: by: https://www.berlin-dresden.de/bautagebuch.html (Frühjahr 2025)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,824421#msg-824421 (Verschiebung auf Sommer 2025)
 #: source_id: viz2021:13.39948,52.38249,03.02.2025,10:46 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.399297,52.382412,01.07.2024,07:00 (bis 30.06.2025)
 #: XXX laut Schild Fertigstellung 2024
@@ -7563,7 +7568,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-03-20
+#: last_checked: 2025-03-25
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8000,7 +8005,7 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.tagesspiegel.de/berlin/der-waisentunnel-bleibt-verwaist-planung-fur-berliner-problembaustelle-unter-der-spree-stockt-12997495.html (verschiebt sich auf unbestimmte Zeit)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-21170.pdf
 #: by: https://www.nd-aktuell.de/artikel/1189799.sanierung-berliner-u-bahn-geschichtstraechtiger-waisentunnel-vor-neubau.html
-#: last_checked: 2025-03-20 vvv
+#: last_checked: 2025-03-25 vvv
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2024-06-01 vvv
 Neubau Waisentunnel: geplante Einschränkungen (Rolandufer gesperrt, Littenstr. Gehweg frei)	? 11139,12243 11155,12184 11278,12185
@@ -8106,7 +8111,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2025-03-18
+#: last_checked: 2025-03-25
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradastraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -10937,6 +10942,7 @@ Spreebordpark: werden hier Wege entstehen?	? 4172,12933 4275,12930 4286,12717 41
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-19894.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9504 (Antrag)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1536855.php
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1544171.php (Entwurf des B-Plans beschlossen, Umsetzung ab 2026)
 #: XXX im Bebauungsplanentwurf sieht es so aus, als ob die bisherigen Zuwegungen von der Götzstr. und vom Te-Damm überbaut werden. Von Norden könnte es vielleicht eine neue Zuwegung über den Quartiersparkplatz geben (unklar), weiterhin gibt es zwei Zuwegungen, die explizit nur ein "Gehrecht" haben sollen (a, b); der Weg zur Templerzeile (c) könnte bleiben (unklar); im Westen sollen zwei Stadtplätze entstehen, die vielleicht Verbindungen zu der Grünanlage haben werden.
 #: last_checked: 2023-12-30
 #: next_check: 2028-01-01
@@ -11554,6 +11560,7 @@ Exilmuseum: in Planung, evtl. gibt es Änderungen an den Wegen/Straßen	?::project
 #: by: https://www.nd-aktuell.de/artikel/1188178.u-bahn-bau-berliner-u-bahn-fake-spatenstich-fuer-u-schon-ende-april.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/u3-verl%C3%A4ngerung-zum-s-bahnhof-mexikoplatz.1378/#post-24470
 #: by: https://www.berliner-zeitung.de/mensch-metropole/u3-zum-mexikoplatz-die-neue-u-bahn-der-bvg-nach-zehlendorf-wird-deutlich-teurer-li.2293364
+#: by: https://www.tagesspiegel.de/berlin/neues-gutachten-zu-berliner-u-bahn-linie-kosten-gezielt-schongerechnet--steht-die-verlangerung-der-u3-vor-dem-aus-13401736.html
 #: next_check: 2031-12-31
 U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,3442 -1105,3303
 # 
