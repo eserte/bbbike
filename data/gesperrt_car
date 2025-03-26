@@ -146,7 +146,7 @@ Fröbelstr. -> Prenzlauer Allee: Prenzlauer Allee	3::igndisp 11873,15010 11776,15
 Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3::igndisp 11873,15010 11776,15060 11609,15114
 Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12561,35 -12582,127 -12623,308
 Stellmacherweg	1 13129,2999 13457,2929
-Hittorfstr	1 2442,4806 2469,4882 2516,4936 2577,4959
+Hittorfstr	1 2438,4800 2469,4882 2516,4936 2577,4959
 Lefèvrestr.	1 5360,6642 5215,6643
 Kühlebornweg	1 5165,4667 5075,4600 5007,4705
 Gartenstr.	1 22456,3889 22281,4033 22263,4120 22279,4220
@@ -1647,8 +1647,8 @@ Am Tierpark -> Erich-Kurz-Str.: Straßenbahntrasse	3::igndisp 18554,10354 18446,1
 Erich-Kurz-Str. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18397,10608 18446,10620 18417,10738
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18512,10337 18554,10354 18446,10620
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3::igndisp 18585,10278 18554,10354 18512,10337
-Domnauer Str.: Poller	3 7816,5519 7816,5682 7817,5719
-Domnauer Str.: Poller	3 7817,5719 7816,5682 7816,5519
+Domnauer Str.: Poller	3 7816,5637 7816,5682 7817,5719
+Domnauer Str.: Poller	3 7817,5719 7816,5682 7816,5637
 Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
 Paetowstr.: Poller	3 -13055,-3008 -13110,-3015 -13137,-3022
 Paetowstr.: Poller	3 -13137,-3022 -13110,-3015 -13055,-3008
@@ -2435,9 +2435,9 @@ Weißenseer Weg -> Anlieferung Hohenschönhauser Tor: Straßenbahntrasse	3::igndisp
 Anlieferung Hohenschönhauser Tor -> Weißenseer Weg: Straßenbahntrasse	3::igndisp 15225,14545 15120,14481 15168,14395
 Schwedt - Angermünde	1 50831,68659 50958,68666
 Görlsdorf - Peetzig	2:Anlieger 45683,72646 45651,72706 45595,72753 45557,72838 45511,72911 45512,72964 45436,73265 45273,73431 45178,73581 45140,73677 45092,73733 45178,73830 45197,73921 45116,74091 45030,74125 44912,74243 44857,74294 44571,74470 44344,74590 44297,74757 44356,74890 44412,74962 44403,75026
-Mittelstreifen	3nocross::ignrte 2732,4741 2745,4729 2762,4713
-Habelschwerdter Allee -> Schwendenerstr.: Mittelstreifen	3::igndisp 2732,4741 2745,4729 2816,4789
-Schwendenerstr. -> Habelschwerdter Allee: Mittelstreifen	3::igndisp 2816,4789 2745,4729 2762,4713
+Mittelstreifen	3nocross::ignrte 2735,4736 2742,4727 2756,4709
+Habelschwerdter Allee -> Schwendenerstr.: Mittelstreifen	3::igndisp 2735,4736 2742,4727 2816,4789
+Schwendenerstr. -> Habelschwerdter Allee: Mittelstreifen	3::igndisp 2816,4789 2742,4727 2756,4709
 Schwabenallee: Anlieger frei	2:Anlieger 21371,9923 21429,10207
 Dramburger Str.: Anlieger frei	2:Anlieger 21594,9895 21606,10010
 Metropolitan Park	1 -8064,13534 -8088,13594

@@ -3732,7 +3732,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: source_id: 2147344558 (bis 10.09.2020) (inaktiv)
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...) (bis 26.03.2025 + ...)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...) (bis 26.03.2025 + ...) (inaktiv)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -3752,9 +3752,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 ',
          'from' => undef,
          'id' => 3151,
-         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Ende März 2025',
+         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Ende März 2025, evtl. wird verlängert',
          'type' => 'gesperrt',
-         'until' => 1743004800
+         'until' => undef
        },
        undef,
        undef,
@@ -5313,7 +5313,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: last_checked: 2025-03-15 vvv
+#: last_checked: 2025-03-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -6330,7 +6330,9 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: priority: #B vvv
 #: last_checked: 2025-01-06 (osm) vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-09-23 vvv
+#: next_check: 2025-03-26 (osm note) vvv
+# REMOVED --- #: next_check: 2025-09-23 vvv
+#: osm_watch: note 4069677 9
 #: osm_watch: way id="375991056" version="17"
 #: osm_watch: way id="375958863" version="11"
 # REMOVED (hier existiert eine durchgängige Verbindung für Radfahrer, im Baustellenbereich meist als Radspur, kurzer Abschnitt als getrennter Rad/Gehweg) --- Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
@@ -6341,6 +6343,8 @@ Wilsnacker Str.: Anbindung gesperrt	q4::inwork 6646,13951 6746,13826
 #: osm_watch: way id="417687029" version="17"
 #: osm_watch: way id="1143843161" version="6"
 Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
+#: XXX laut osm note ist nun die südliche Fahrbahn offen --- dementsprechend dürfte die nördliche Rathenower Str. abgehängt sein?
+nördliche Rathenower Str.: möglicherweise mittlerweile gesperrt	q4::inwork 6730,14021 6719,14047
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6536,17 +6540,7 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.50175,52.509076,19.04.2024,07:00 (bis 06.09.2024) (bis 20.12.2024) (bis 28.02.2025) (bis 28.03.2025)
-#: source_id: viz2021:13.50255,52.50891,07.05.2024,00:00 (bis 20.12.2024) (inaktiv)
-	q4::inwork; 17096,11585 16915,11634
-',
-         'from' => 1713416400,
-         'id' => 4056,
-         'text' => 'Irenenstr.: Richtung Weitlingstr. zwischen Metastr. und Wönnichstr. Bauarbeiten, Sperrung, auch Radfahrer sind betroffen, vom 19.04.2024 07:00 bis 28.03.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1743177600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6773,26 +6767,26 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462538.php (Widerspruch: "nie vollständig gesperrt" & "temporäre Umleitung", Dauer 3 Monate)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/weverpromenade-wird-erneuert_a420569
-#: XXX Nach den Bauarbeiten vielleicht bessere Qualität
-#: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt
-#: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Qualität der Wegoberfläche besser geworden? vvv
+# REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-02-22 vvv
+#: last_checked: 2025-03-26 vvv
 #: check_frequency: 21d vvv
 #: osm_watch: way id="26158804" version="25"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
 # REMOVED (hier mittlerweile offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5721,4356 5541,4305
-Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
+# REMOVED (hier mittlerweile offen) --- Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
+Weverpromenade: Umwege	q3::inwork 5541,4305 5721,4356
+Weverpromenade: Sperrung	2::inwork 5721,4356 5738,4361 5787,4400
+Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5774,4408 5787,4400 5865,4353
 #: last_checked ^^^
 #: check_frequency ^^^
 #: priority ^^^
 #: add_fragezeichen ^^^
 ',
-         'dont_check_date' => 1,
-         'from' => 1720303200,
+         'from' => undef,
          'id' => 4107,
-         'text' => 'Stadtpark Steglitz: Bauarbeiten, mögliche Sperrung, Ende der Bauarbeiten unbekannt',
+         'text' => 'Weverpromenade/Am Eichgarten: Bauarbeiten, mögliche Umwege, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6821,7 +6815,7 @@ Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-#: last_checked: 2025-02-22 vvv
+#: last_checked: 2025-03-26 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2025-02-10 vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
@@ -6830,7 +6824,7 @@ Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
 # REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
 Bäkebrücke: gesperrt	2::inwork 4587,3097 4659,3065
 # REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
-# REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4692,3225
+# REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4618,3135 4692,3225
 #: osm_watch: way id="121176503" version="11"
 Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4274,2717 4236,2678
 # REMOVED --- #: next_check ^^^
@@ -6840,7 +6834,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 ',
          'from' => 1740697200,
          'id' => 4109,
-         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025 (Stand 22.02.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025 (Stand 26.03.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
          'type' => 'gesperrt',
          'until' => 1756677599
        },
@@ -7389,7 +7383,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
 #: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
-#: last_checked: 2025-03-05
+#: last_checked: 2025-03-26
 #: next_check: 2025-05-31
 	q3::temp 10032,9456 10004,9268
 ',
@@ -7549,7 +7543,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: also_indoor: traffic (G,T,B,A)
-#: last_checked: 2025-01-31
+#: last_checked: 2025-03-26
 #: check_frequency: 120d
 #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545
@@ -7565,7 +7559,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (ex-H,T,B)
 #: note: Halteverbotsschilder bis 28.02.2025
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2025-03-15
+#: last_checked: 2025-03-26
 # REMOVED --- #: check_frequency: 10d (traffic)
 #: check_frequency: 30d (outdoor checks)
 # REMOVED --- #: next_check: 2025-02-28 (Halteverbotsschilder)
@@ -7735,17 +7729,7 @@ Eweststr.	q3::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
          'type' => 'handicap',
          'until' => 1744729200
        },
-       {
-         'data' => '#: source_id: viz2021:13.399149,52.532315,05.02.2025,06:00 (bis 31.03.2025)
-#: note: abgesperrter Bereich ist 180m, also eigentlich q4+
-	q4::inwork; 10177,13766 10002,14092
-',
-         'from' => 1738645200,
-         'id' => 4252,
-         'text' => 'Brunnenstr.: Bauarbeiten zwischen Torstr. und Invalidenstr., Sperrung Richtung Norden auch für den Radverkehr, vom 05.02.2025 06:00 bis 31.03.2025 18:00',
-         'type' => 'handicap',
-         'until' => 1743436800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.30113,52.51347,04.11.2024,07:00 (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.30113,52.51347,13.02.2025,11:00 (bis 28.03.2025) (inaktiv)
@@ -8106,6 +8090,16 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'text' => 'Angermünde, Bahnübergang Prenzlauer Str.: Gleisbauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 22.04.2025 07:00 Uhr bis 23.04.2025 20:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1745431200
+       },
+       {
+         'data' => '#: source_id: LS/221-E/25/030 (bis 10.05.2025)
+	2::inwork 34802,45368 34613,45287 34518,45231 34093,44866 32572,43561 32518,43468 32401,42954 32348,42876 30754,42070
+',
+         'from' => 1743919200,
+         'id' => 4287,
+         'text' => 'Melchow - Spechthausen: Deckenerneuerung, Sperrung, 07.04.2025 08:00 Uhr bis 10.05.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1746889200
        }
      
 );

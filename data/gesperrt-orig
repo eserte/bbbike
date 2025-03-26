@@ -218,7 +218,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-03-15
+#: last_checked: 2025-03-26
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-03-28 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -2590,7 +2590,7 @@ Warschauer Str.: Straßenbahntrasse	3nocross 13391,10963 13409,11004 13454,11119
 Waltersdorfer Chaussee: Mittelstreifen	3nocross 18009,-193 17946,-100 17879,-3
 Neuköllner Str.: Mittelstreifen	3nocross 16698,1392 16643,1460 16459,1680 16450,1691
 Neuköllner Str.: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
-Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3350,6467 3452,6491
+Schorlemerallee: Mittelstreifen	3nocross 3316,6456 3350,6467 3441,6488
 Berliner Str.: Straßenbahntrasse	3nocross 12392,17517 12429,17685 12462,17814
 Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
 Daumstr.: Mittelstreifen	3nocross -1783,16533 -1798,16465 -1810,16391
@@ -4210,7 +4210,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags
 #: last_checked: 2025-03-19 vvv
-#: osm_watch: way id="1199463691" version="3"
+#: osm_watch: way id="1199463691" version="4"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
@@ -4508,7 +4508,7 @@ Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 145
 #: source_id: viz2021:13.33184,52.48035,31.07.2023,06:00 (Komplettsperrung bis 04.08.2023) (inaktiv)
 #: source_id: viz2021:13.331534,52.478683,06.11.2024,07:00 (Bruchsaler Str. ist seit Dez 2024 Sackgasse, auch für Radfahrer? bis 31.12.2025) (bis 30.05.2025)
 #: note: nur kurzer Einbahnstraßenabschnitt, etwa 20-30m; mittlerweile (Nov 2024) ist die Einbahnstraßenrichtung anders herum, evtl. wegen der Bauarbeiten in der Wexstr.?
-#: last_checked: 2024-12-26 (architektur-urbanistik)
+#: last_checked: 2025-03-26
 #: check_frequency: 90d
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 5521,8087 5522,8024
 # REMOVED (hier nicht) --- Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5521,8087 5519,8159 5560,8204
@@ -4933,8 +4933,9 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2025-03-19
-#: check_frequency: 60d
+#: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen
+#: last_checked: 2025-03-26
+# REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 # 

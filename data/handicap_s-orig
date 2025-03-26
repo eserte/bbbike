@@ -128,7 +128,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-03-16
+#: last_checked: 2025-03-26
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
@@ -348,9 +348,11 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 ### Altglienicke ###
 # 
 #: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025)
+#: source_id: bvg2024:160#HIM_FREETEXT_233161 (ohne Endedatum)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nördlich Semmelweisstr. Anfang März 2025 offen, der südliche Abschnitt Ende April 2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20250308 (bis Ende April 2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1722238382229_wegedornbr_cke.png
+#: by: https://fahrinfo.vbb.de/him-uploads/1722238635942_wegedornbr_cke.png
 #: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
 #: last_checked: 2024-12-27
 #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
@@ -969,8 +971,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
-#: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_224595 (30.05.2024 bis 31.08.2024) (mittlerweile bis 31.10.2024) (M43 rausgenommen)
-#: source_id: bvg2024:166#HIM_FREETEXT_224595
+#: source_id: bvg2024:m43#HIM_FREETEXT_224595 (30.05.2024 bis 31.08.2024) (mittlerweile bis 31.10.2024) (M43 rausgenommen) (M32 wieder reingenommen, kein Endedatum)
 #: by: https://www.kms-sonne.de/baustellennews?date=20240416 (voraussichtlich ab Ende April 2024 bis April 2025) (mittlerweile Beginn auf Ende Mai 2024 verschoben)
 #: by: https://www.kms-sonne.de/assets/2024/04/Baustellenuebersicht-A4-04-2024-v3-Web.pdf
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/vollsperrung-auf-der-erkstrasse_a415525
@@ -1966,7 +1967,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-19
+#: last_checked: 2025-03-26
 #: check_frequency: 30d
 #: next_check: 2025-04-26 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -5636,7 +5637,7 @@ Hechtgraben: eng, Fußgänger, Treppen oder Rampen	q3 3105,5594 3173,5493
 Franz-Cornelsen-Weg: Fußgänger, Radfahren offiziell nicht erlaubt, schmaler Fußweg am Spielplatz	q3 3594,7191 3596,7199 3612,7335 3619,7587
 Björnsonstr.: Fußgänger, eng	q3 4290,6445 4335,6523
 (Gustav-Mahler-Platz - Rückertstr.): Fußweg durch Wohngebiet	q3 3878,6110 3943,6107 3976,6094 4027,6088
-Spinozastr.: eng u. unübersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
+Spinozastr.: eng u. unübersichtlich	q2 3910,6404 3917,6464 3974,6511 4050,6506
 (Parkweg): mit Rampe	q3 2214,4992 2280,4941
 Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5070 2075,5075 2174,5081 2211,5120
 (Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fußgänger u. Skater	q1 -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872

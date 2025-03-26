@@ -143,7 +143,7 @@ sehr schmal, Verbundsteinpflaster	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,735
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2025-01-08 vvv
+#: last_checked: 2025-03-26 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -1327,7 +1327,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-03-19 vvv
+#: last_checked: 2025-03-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1414,7 +1414,7 @@ asphaltierter Radweg	RW1; 11393,10390 11389,10463
 	RW4; 11389,10463 11393,10390
 	RW3;RW1 11335,10375 11393,10390
 # REMOVED (realisiert) --- #: XXX Radspur wird grün markiert (Thielallee + Habelschwerdter Allee) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünbeschichtung) --- #: priority: #D --- #: next_check: 2018-10-18
-Grünbeschichtung	RW3;RW3 2997,4378 2852,4584 2762,4713 2745,4729 2732,4741 2596,4907 2577,4959 2560,5044 2523,5114
+Grünbeschichtung	RW3;RW3 2997,4378 2852,4584 2756,4709 2742,4727 2735,4736 2596,4907 2577,4959 2560,5044 2523,5114
 	RW3;RW3 2523,5114 2499,5144 2458,5212 2444,5303 2556,5575 2574,5688 2587,5908 2607,6285 2609,6348 2659,6499
 # old_note: Zusatzkommentar von Andreas M.: sehr schlechter Zustand, nur eine weiße aufgepinselte Linie
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20061113.1305.50310.html (Termin abgelaufen)
@@ -1501,7 +1501,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="22"
-#: last_checked: 2025-02-05
+#: last_checked: 2025-03-26
 #: check_frequency: 120d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -2027,8 +2027,8 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 #: note: Detmolder Str.
 #: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen)
 #: XXX Sanierung der Radwege vvv
-#: last_checked: 2024-08-27 (mapillary) vvv
-#: next_check: 2026-12-31 vvv
+#: last_checked: 2025-03-26 vvv
+#: next_check: 2026-12-31 (infravelo) vvv
 	RW1;RW1 5363,8024 5325,8023 5058,8012 5048,8012
 # REMOVED (hängt nicht mehr) --- #: note: ein vergessenes Radwegschild?
 	RW1;RW1 5048,8012 4873,8007
@@ -3114,7 +3114,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-03-16
+#: last_checked: 2025-03-26
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3143,7 +3143,7 @@ Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei; die letzten 20 Meter 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv)
 #: XXX früherer Eintrag, wird vielleicht wieder hergestellt: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0;
-#: last_checked: 2025-03-19
+#: last_checked: 2025-03-26
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 13973,9465
@@ -3846,7 +3846,7 @@ Gehwegplatten, ca. 60cm breit	RW1; 4596,3738 4592,3762 4570,3884 4551,4042 4517,
 Gehweg für Radfahrer frei	RW1; 4596,3738 4603,3704 4603,3658 4585,3575
 	RW1; 4585,3575 4603,3658 4603,3704 4596,3738
 Gehweg für Radfahrer frei	RW1; 4585,3575 4546,3527 4523,3482 4497,3412
-	RW1; 4497,3412 4467,3332 4454,3260 4411,3180
+Gehwegplatten, ca. 60cm breit	RW1; 4497,3412 4467,3332 4454,3260 4411,3180
 Gehweg für Radfahrer frei	RW1; 4411,3180 4454,3260 4514,3329 4566,3461 4580,3514 4585,3575
 Gehwegplatten, ca. 60cm breit	RW1; 4411,3180 4170,2727
 	RW1; 4170,2727 4411,3180
@@ -4693,7 +4693,8 @@ Gehweg für Radfahrer frei	RW1; -7050,199 -7050,152
 	RW1;RW1 732,3780 891,3828 1015,3858 1139,3876 1276,3892 1389,3900 1462,3906 1523,3904
 	RW1;RW 1523,3904 1603,3909 1664,3907 1741,3907 1787,3905 1800,3903
 	RW1;RW1 1800,3903 1939,3893 1987,3888 2160,3854 2230,3823
-	RW1;RW1 3216,6393 3147,6384 3077,6375
+	RW9;RW1 3196,6415 3147,6384
+	RW1;RW9 3196,6415 3216,6393
 unebener Asphalt, Wurzelhebungen, kein Unterstreifen gegen parkende Autos	RW1;RW1 11689,6634 11713,6380 11740,6338
 Verbundsteinpflaster; sehr schmaler Unterstreifen	RW1;RW1 2997,4378 3037,4500 3095,4680 3125,4780 3132,4803 3185,4894 3265,5030 3357,5178 3426,5292 3580,5552 3707,5758
 	RW1; 11338,5992 11456,6103 11522,6160 11628,6240 11697,6300
@@ -5911,9 +5912,9 @@ kurzes Stück Radweg zur Kreuzung Stubenrauchstr. hin	RW0;RW0 17364,3565 17219,37
 	RW3; 2280,4941 2212,4891 2166,4858 2095,4805 2027,4792
 #: by: Andreas Mühlhausen: vvv
 #: corrected_by: srt (RW4 -> RW3)
-	RW3;RW3 3712,5806 3732,5920 3751,6092 3756,6127 3771,6291 3800,6418
-die letzten 10 Meter werden auf dem Gehweg geführt	RW3; 3800,6418 3836,6550
-	RW3; 3836,6550 3800,6418
+	RW3;RW3 3712,5806 3732,5920 3751,6092 3756,6127 3771,6291 3798,6411
+die letzten 10 Meter werden auf dem Gehweg geführt	RW3; 3798,6411 3836,6550
+	RW3; 3836,6550 3798,6411
 	RW1; 5467,9866 5477,9621 5479,9367 5483,9262 5492,8982 5494,8843
 	RW1; 5494,8843 5498,8726 5493,8599 5469,8524 5427,8412 5399,8344
 	RW1; 5399,8344 5354,8236
@@ -9030,7 +9031,7 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025) (bis 28.02.2025) (bis 17.03.2025) (bis 26.03.2025 + ...) vvv
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025) (bis 28.02.2025) (bis 17.03.2025) (bis 26.03.2025 + ...) (inaktiv) vvv
 #: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
 #: source_id: viz2021:13.37431,52.42642,11.03.2025,14:27 (bis 26.03.2025) (inaktiv)
 #: last_checked: 2025-02-22 vvv
