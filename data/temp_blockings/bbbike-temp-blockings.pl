@@ -28972,6 +28972,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GZ_I_ijWUAEAnhh?format=png&name=900x900 (Richtung Norden ab Godesberger Str.: Gehweg Radfahrer frei)
 #: by: https://pbs.twimg.com/media/GZ_JN2BW0AAbVhy?format=jpg&name=large (Richtung Süden Umleitungsempfehlung für den Radverkehr)
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/abschnitt-der-treskowallee-gesperrt_a427651
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1544949.php (weiterhin bis Ende 2025)
 #: source_id: 2147342174 (inaktiv)
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden) (bis 24.11.2023) (bis 16.03.2024) (bis 30.08.2024) (bis 27.09.2024) (bis 16.10.2024) (inaktiv)
@@ -38351,12 +38352,12 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025)
-#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
+#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: last_checked: 2025-03-26 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-03-28 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-04-10 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
 # REMOVED (mittlerweile ist das Absperrgitter weg) --- #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18) --- Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
@@ -43681,7 +43682,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.242728,52.52799,29.04.2024,07:00 (bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.247467,52.524469,29.04.2024,07:00 (andere Richtung, nur Kfz-Verkehr, bis 31.07.2025) (bis 31.03.2025) (bis 27.03.2025)
+#: source_id: viz2021:13.247467,52.524469,29.04.2024,07:00 (andere Richtung, nur Kfz-Verkehr, bis 31.07.2025) (bis 31.03.2025) (bis 27.03.2025) (inaktiv)
 # REMOVED (keine Ausnahmeregelung für Radfahrer) --- #: add_fragezeichen: Sind Radfahrer tatsächlich von der Einbahnstraßenregelung betroffen?
 #: note: mittlerweile Bauarbeiten in der Gegenrichtung, aber zumindest gibt's wenigstens ein Stück freigegebenen Gehweg
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784808579930718521
@@ -43942,16 +43943,12 @@ EOF
 #: source_id: viz2021:13.466508,52.508736,21.05.2024,07:00 (nur Kfz-Verkehr, bis 03.06.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_223856 (8.6.2024-11.6.2024)
 #: source_id: viz2021:13.465797,52.508211,21.05.2024,07:00 (hier nur Kfz-Verkehr, bis 03.06.2024, im Anschluss weitere Arbeiten) (bis 27.06.2024) (bis 02.07.2024) (inaktiv)
-#: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025)
+#: source_id: viz2021:13.465562,52.507842,05.03.2025,07:00 (bis 27.03.2025) (inaktiv)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-20 vvv
-#: check_frequency: 10d vvv
-#: next_check: 2025-03-27 vvv
+# REMOVED --- #: last_checked: 2025-03-27 vvv --- #: check_frequency: 10d vvv --- #: next_check: 2025-03-27 vvv
 Holteistr.	q4::inwork 14575,11407 14639,11512
 Wühlischstr.	q4::inwork; 14575,11407 14460,11455
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => $isodate2epoch->("2024-10-29 00:00:00"), # 1680415200, # 2023-04-02 08:00
@@ -44374,7 +44371,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-03-25 vvv
+#: last_checked: 2025-03-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44530,9 +44527,10 @@ EOF
 #: by: https://mierendorffinsel.org/projekte/aktuelle-projekte/insel-rundweg/
 #: by: https://mierendorffinsel.org/2024/07/umgestaltung-eines-teilbereiches-der-mierendorff-insel-inselrundweg-teilweise-gesperrt/
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=772392#post772392 (bis Oktober 2025)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1545301.php (Eröffnung des Skate-Parks am 5.4.2025, der Zugang von der Gaußstr. ist aber weiterhin gesperrt)
 #: note: 2024-09-18: Bauzäune sind weggeschoben
 #: osm_watch: way id="746470210" version="3"
-#: last_checked: 2025-01-05 (daf)
+#: last_checked: 2025-03-27 (Pressemitteilung)
 #: check_frequency: 120d
 #: next_check: 2025-10-31
 	2::inwork 4151,13961 4156,13914 4186,13710
@@ -45047,13 +45045,16 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
+#: by: https://www.tagesspiegel.de/berlin/start-der-kirschblutensaison-wo-es-in-berlin-am-schonsten-bluht-13420069.html (Erwähnung der Sperrung der "Kirschblütenallee", bis Ende 2025)
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
 #: osm_watch: way id="27260309" version="18"
 #: osm_watch: way id="372791173" version="8"
 #: osm_watch: way id="27260312" version="23"
 #: add_fragezeichen: Haben die Bauarbeiten bereits begonnen?
-#: next_check: 2024-10-01
+#: last_checked: 2025-03-27 (Tsp)
+#: check_frequency: 90d
+#: next_check: 2025-12-31
 	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 EOF
      },
@@ -46819,9 +46820,9 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierung-in-der-schulzendorfer-strasse-in-bohnsdorf/
 #: by: https://viz.berlin.de/site/assets/files/1826/detail_1.png
 #: by: https://viz.berlin.de/site/assets/files/1826/detail_2.png
-#: source_id: viz2021:13.576587,52.403261,17.03.2025,07:00 (bis 28.03.2025) (bis 27.03.2025)
+#: source_id: viz2021:13.576587,52.403261,17.03.2025,07:00 (bis 28.03.2025) (bis 27.03.2025) (inaktiv)
 	q4::inwork 22345,-10 22382,-87 22440,-175
-#: source_id: viz2021:13.581796,52.398134,17.03.2025,07:00 (bis 28.03.2025) (bis 27.03.2025)
+#: source_id: viz2021:13.581796,52.398134,17.03.2025,07:00 (bis 28.03.2025) (bis 27.03.2025) (inaktiv)
 	q4::inwork 22750,-650 22696,-579 22644,-497
 EOF
      },
