@@ -2345,7 +2345,10 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
        undef,
        {
          'accept_multi_feature_distance' => 5500,
-         'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+         'data' => '# REMOVED (403) --- : by: http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html
+# REMOVED (403) --- : by: http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F23.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1545737.php
+#: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: ((min(good_friday,YYYY04 sa1)-YYYY1030) & (tu-su, holiday)) & T10-T19 vvv
 	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 	2::temp 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29059,3377 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
@@ -2355,8 +2358,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'from' => undef,
          'id' => 2408,
          'recurring' => 1,
-         'source_id' => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html',
-         'text' => 'Fähren F21 und F23: fahren nur ab 1. April bis zum 5. November, fahren nicht am Montag',
+         'text' => 'Fähren F21 und F23: fahren nur ab 5. April bis zum 5. November, fahren nicht am Montag',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2862,29 +2864,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-f-24-geht-erst-spaeter-in-betrieb_a261679
-#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/mit-muskelkraft-ueber-die-mueggelspree_a266224
-#: by: https://unternehmen.bvg.de/pressemitteilung/ahoi-paule-iii/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1198551.php
-#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/hol-ueber-seit-111-jahren_a344228
-#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-der-bvg-ab-sofort-wieder-auf-der-mueggelspree-unterwegs_a343523
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1309467.php
-#: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/ahoi-paule-iii-sticht-wieder-in-see-saisonstart-der-traditionellen-ruderfaehre-id215621
-#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-paule-iii-beginnt-saison_a376859
-#: XXX_prog temporäre Lösung für saisonale Fähren vvv
-#: tempex: (20170430|20230429|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
-	2::temp 29959,3031 29968,2986
-#: XXX_prog ^^^
-',
-         'from' => undef,
-         'id' => 2703,
-         'recurring' => 1,
-         'source_id' => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
-         'text' => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 29. April bis zum 3. Oktober',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4586,7 +4566,7 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2025-02-10 vvv
+#: last_checked: 2025-03-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5054,7 +5034,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2025-03-16 (daf)
+#: last_checked: 2025-03-28
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (stories.bauhaus.de)
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -5314,6 +5294,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
+#: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: last_checked: 2025-03-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-10 (VIZ-Verkehrsmeldung) vvv
@@ -5930,30 +5911,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
-# REMOVED --- #: note: Nur der Linienverkehr ist frei, keine Ausnahmen für Radfahrer, allerdings scheint die Durchfahrt von den Streckenposten geduldet zu werden
-# REMOVED --- #: also_indoor: traffic (G,B,W) --- #: last_checked: 2023-08-27
-#	q4::inwork 10313,13227 10270,13101
-# REMOVED --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1706511412213035418#m (hier: nur Kfz-Verkehr betroffen) --- #: source_id: viz2021:13.403215,52.524732,26.09.2023,06:00 (bis 16.10.2023) (inaktiv) ---	q4::inwork; 10313,13227 10321,13259
-#: source_id: viz2021:13.40366,52.52607,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
-#: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
-#: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
-#: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025)
-# REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
-# REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
-# REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
-#: osm_watch: way id="84960597" version="27"
-Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
-# REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-',
-         'from' => 1742104800,
-         'id' => 3898,
-         'text' => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 07:00 bis 28.03.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1743177600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6586,19 +6544,19 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024) (bis 31.12.2024) (bis 28.03.2025)
+         'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024) (bis 31.12.2024) (bis 28.03.2025) (inaktiv) (bis 30.04.2025)
 #: osm_watch: note 4452464 3
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-03-24
-#: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
+#: last_checked: 2025-03-28
+#: next_check: 2025-04-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork 15077,11910 15110,12107
 ',
          'dont_check_date' => 1,
          'from' => 1717538400,
          'id' => 4079,
-         'text' => 'Jessnerstr.: Abschnitt der Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis voraussichtlich 28.03.2025 17:00',
+         'text' => 'Jessnerstr.: Abschnitt der Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis voraussichtlich 30.04.2025 17:00',
          'until' => undef
        },
        {
@@ -6617,16 +6575,16 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025)
+         'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025)
 #: osm_watch: way id="1303423090" version="2"
 #: note: laut osm opening_date=2025-08-01
 	q3::inwork 10573,17566 10466,17464
 ',
          'from' => 1717909200,
          'id' => 4082,
-         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 28.03.2025 17:00',
+         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 10.04.2025 17:00',
          'type' => 'handicap',
-         'until' => 1743177600
+         'until' => 1744297200
        },
        undef,
        undef,
@@ -6704,23 +6662,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: by rbb (alter Eintrag vom Juli 2024)
-#: note: bei rbb nur Richtung Süden (vorfristig entfernt, deshalb add_fragezeichen-Eintrag)
-#: also_indoor: traffic (ex-H,G,re-B,re-T,W)
-#: note: In den traffic-Quellen nun nur noch bis 17.1.2025; mittlerweile haben einige Quellen den Eintrag wieder aufgenommen
-#: source_id: viz2021:13.315793,52.506037,11.12.2024,14:00 (bis 28.03.2025)
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-# REMOVED --- #: next_check: 2025-01-17
-#: note: nur wenige Meter sind gesperrt, deshalb q4 -> q3
-	q3::inwork 4415,11053 4399,10854
-',
-         'from' => 1733835600,
-         'id' => 4102,
-         'text' => 'Wielandstr.: Bauarbeiten an der Kantstr., Sperrung der Fahrbahn, vom 11.12.2024 14:00 bis 28.03.2025',
-         'type' => 'handicap',
-         'until' => 1743202740
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462140.php
@@ -7132,42 +7074,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WOLLANK-2024
-#: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
-#: by[nocache]: https://archive.is/pZmLF
-#: by: https://www.rbb24.de/panorama/beitrag/2024/07/baustellen-bahn-berlin-pankow-sperrungen.html
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20240925 (26.11.2024 - 26.12.2024, weitere Vollsperrungen z.B. im März 2025)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_einschraenkungen_strassenverkehr_20240924ne.pdf
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wollankstrasse_informationsveranstaltung_20241126.pdf
-#: by: https://weddingweiser.de/wollankstrasse-naechste-bauphase/
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1861029520645538026 (bis 20.12.2024)
-#: by: https://pbs.twimg.com/media/GdOzzK9XEAAuZLU?format=jpg&name=medium (Umleitungsstrecken für Rad- und Fußverkehr)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/PR_berlin_nord_komplexe_arbeiten_informationsveranstaltung_20241127n.pdf (nächste Totalsperrung geplant: 03.03. bis 21.03.2025)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin-nord-komplexe-arbeiten_wollankstrasse_20241128.pdf
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250131
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_wollankstrasse_wegefuehrung_20250131n.pdf
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1895379778414514298
-#: by: https://viz.berlin.de/aktuelle-meldungen/neubau-der-bruecke-uber-die-wollankstrasse/ (weitere Vollsperrung von Mitte Juni bis Dezember 2025)
-#: by: https://www.tagesspiegel.de/berlin/schon-wieder-einen-monat-vollsperrung-diese-baustelle-im-berliner-norden-verlangt-allen-gute-nerven-ab-13314622.html
-#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
-#: source_id[inactive]: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
-#: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
-#: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
-#: source_id: viz2021:13.39343,52.564563,03.03.2025,06:00 (bis 28.03.2025)
-# REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
-#: osm_watch: way id="23984383" version="35"
-#: osm_watch[closed]: note 4536637 10
-# REMOVED --- #: last_checked: 2024-10-12 (mapillary) --- #: next_check: 2024-12-20
-	2::inwork 9544,17629 9586,17665
-',
-         'from' => 1740870000,
-         'id' => 4171,
-         'text' => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 03.03.2025 bis 28.03.2025',
-         'type' => 'gesperrt',
-         'until' => 1743202799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7322,11 +7229,12 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
 #: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025)
 #: osm_watch: note 4524886 1
-	q4::inwork 13205,8126 13277,8211 13331,8283
+# REMOVED (hier mittlerweile keine Bauarbeiten mehr) ---	q4::inwork 13205,8126 13277,8211
+	q4::inwork 13277,8211 13331,8283
 ',
          'from' => 1731304800,
          'id' => 4215,
-         'text' => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, auch Radfahrer sind betroffen, vom 12.11.2024 bis 29.04.2025',
+         'text' => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Sonnenallee, Sperrung, auch Radfahrer sind betroffen, vom 12.11.2024 bis 29.04.2025',
          'type' => 'handicap',
          'until' => 1745963999
        },
@@ -7396,7 +7304,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'data' => '#: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025) (bis 31.08.2025)
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
-#: last_checked: 2025-01-15
+#: last_checked: 2025-03-25 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-08-31
 #	q4::inwork; 8453,13611 8572,13671
@@ -7554,9 +7462,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025)
-#: last_checked: 2025-01-14 (mapillary)
-#: next_check: 2025-04-11 (VIZ-Verkehrsmeldung)
+         'data' => '#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025) (bis 28.04.2025)
+#: last_checked: 2025-03-26 (mapillary)
+#: next_check: 2025-04-28 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2025-06-30
 	q4::inwork; 11001,18528 11123,18343
 ',
@@ -7684,18 +7592,7 @@ Markgrafendamm nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
          'type' => 'handicap',
          'until' => 1745445600
        },
-       {
-         'data' => '#: source_id: viz2021:13.31393,52.46718,03.02.2025,07:00 (bis 28.03.2025)
-Bonner Str. (in Höhe Kreuznacher Str.)	q4::inwork 4372,6718 4360,6779
-#: source_id: viz2021:13.315875,52.468006,03.02.2025,07:00 (bis 28.03.2025)
-Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
-',
-         'from' => 1738476000,
-         'id' => 4250,
-         'text' => 'Bonner Str. und Ludwig-Barnay-Platz: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.02.2025 07:00 bis 28.03.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1743177600
-       },
+       undef,
        {
          'data' => '#: note: außerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen?
 #: note: in der Eweststr. ist der Gehweg für Radfahrer frei (siehe Mapillary), deshalb q4 -> q3
@@ -7929,16 +7826,16 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
          'until' => 1757343600
        },
        {
-         'data' => '#: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025)
+         'data' => '#: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025) (bis 28.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1898954467401175437
 #: by: https://pbs.twimg.com/media/Glc6s8uWAAAe6co?format=jpg&name=medium (kürzerer Baustellenbereich, nur bis etwas hinter Kavalierstr.?)
 	q4::inwork; 10680,18380 10710,18393 10784,18426 10934,18500 10958,18512 11001,18528
 ',
          'from' => 1741496400,
          'id' => 4277,
-         'text' => 'Breite Str.: Gleisbauarbeiten zwischen Berliner Str. und Stiftsweg/Hadlichstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 10.03.2025 06:00 bis 11.04.2025 17:00',
+         'text' => 'Breite Str.: Gleisbauarbeiten zwischen Berliner Str. und Stiftsweg/Hadlichstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 10.03.2025 06:00 bis 28.04.2025 17:00',
          'type' => 'handicap',
-         'until' => 1744383600
+         'until' => 1745852400
        },
        {
          'data' => '#: by: https://www.berlin-live.de/berlin/verkehr/berlin-schwedter-steg-baustelle-prenzlauer-berg-id222297.html (Bauarbeiten sollen im August 2024 beginnen und 16 Wochen dauern)

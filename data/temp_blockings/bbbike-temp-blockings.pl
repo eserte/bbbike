@@ -21936,12 +21936,14 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Fähren F21 und F23: fahren nur ab 1. April bis zum 5. November, fahren nicht am Montag',
+       text  => 'Fähren F21 und F23: fahren nur ab 5. April bis zum 5. November, fahren nicht am Montag',
        recurring => 1,
        accept_multi_feature_distance => 5500,
        type  => 'gesperrt',
-       source_id => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html', # und 23
        data  => <<EOF,
+# REMOVED (403) --- : by: http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html
+# REMOVED (403) --- : by: http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F23.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1545737.php
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: ((min(good_friday,YYYY04 sa1)-YYYY1030) & (tu-su, holiday)) & T10-T19 vvv
 	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
@@ -25234,12 +25236,12 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
-       text  => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 29. April bis zum 3. Oktober',
+       until => 1743183385, # undef,
+       text  => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 1. Mai bis zum 5. Oktober',
        recurring => 1,
        type  => 'gesperrt',
-       source_id => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
        data  => <<EOF,
+# REMOVED --- #: by: http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-f-24-geht-erst-spaeter-in-betrieb_a261679
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/mit-muskelkraft-ueber-die-mueggelspree_a266224
 #: by: https://unternehmen.bvg.de/pressemitteilung/ahoi-paule-iii/
@@ -25249,9 +25251,10 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1309467.php
 #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/ahoi-paule-iii-sticht-wieder-in-see-saisonstart-der-traditionellen-ruderfaehre-id215621
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-paule-iii-beginnt-saison_a376859
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1545737.php (ab 2025 keine Fahrradmitnahme mehr)
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: (20170430|20230429|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
-	2::temp 29959,3031 29968,2986
+#	2::temp 29959,3031 29968,2986
 #: XXX_prog ^^^
 EOF
      },
@@ -35822,7 +35825,7 @@ EOF
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2025-02-10 vvv
+#: last_checked: 2025-03-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -37446,7 +37449,7 @@ EOF
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2025-03-16 (daf)
+#: last_checked: 2025-03-28
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (stories.bauhaus.de)
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -38355,6 +38358,7 @@ EOF
 #: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
+#: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: last_checked: 2025-03-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-04-10 (VIZ-Verkehrsmeldung) vvv
@@ -41362,7 +41366,7 @@ EOF
 #: source_id: viz2021:13.40366,52.52607,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
 #: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
 #: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
-#: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025)
+#: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025) (inaktiv)
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -44157,15 +44161,15 @@ EOF
      { from  => $isodate2epoch->("2024-06-05 00:00:00"),
        dont_check_date => 1, until => undef, # $isodate2epoch->("2024-10-31 17:00:00"),
 #       text  => 'Jessnerstr.: Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. offiziell gesperrt, meist ist eine Fahrgasse offen, vom 05.06.2024 07:00 bis 31.10.2024 17:00',
-       text  => 'Jessnerstr.: Abschnitt der Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis voraussichtlich 28.03.2025 17:00',
+       text  => 'Jessnerstr.: Abschnitt der Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis voraussichtlich 30.04.2025 17:00',
        data  => <<EOF,
-#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024) (bis 31.12.2024) (bis 28.03.2025)
+#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024) (bis 31.12.2024) (bis 28.03.2025) (inaktiv) (bis 30.04.2025)
 #: osm_watch: note 4452464 3
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-03-24
-#: next_check: 2025-03-28 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
+#: last_checked: 2025-03-28
+#: next_check: 2025-04-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork 15077,11910 15110,12107
 EOF
      },
@@ -44200,11 +44204,11 @@ EOF
 EOF
      },
      { from  => 1717909200, # 2024-06-09 07:00
-       until => $isodate2epoch->("2025-03-28 17:00:00"), # 1722265200, # 2024-07-29 17:00
-       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 28.03.2025 17:00',
+       until => $isodate2epoch->("2025-04-10 17:00:00"), # 1722265200, # 2024-07-29 17:00
+       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 10.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025)
+#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025)
 #: osm_watch: way id="1303423090" version="2"
 #: note: laut osm opening_date=2025-08-01
 	q3::inwork 10573,17566 10466,17464
@@ -44486,7 +44490,7 @@ EOF
 #: note: bei rbb nur Richtung Süden (vorfristig entfernt, deshalb add_fragezeichen-Eintrag)
 #: also_indoor: traffic (ex-H,G,re-B,re-T,W)
 #: note: In den traffic-Quellen nun nur noch bis 17.1.2025; mittlerweile haben einige Quellen den Eintrag wieder aufgenommen
-#: source_id: viz2021:13.315793,52.506037,11.12.2024,14:00 (bis 28.03.2025)
+#: source_id: viz2021:13.315793,52.506037,11.12.2024,14:00 (bis 28.03.2025) (inaktiv)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 # REMOVED --- #: next_check: 2025-01-17
 #: note: nur wenige Meter sind gesperrt, deshalb q4 -> q3
@@ -45459,7 +45463,7 @@ EOF
 #: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
 #: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025)
-#: source_id: viz2021:13.39343,52.564563,03.03.2025,06:00 (bis 28.03.2025)
+#: source_id: viz2021:13.39343,52.564563,03.03.2025,06:00 (bis 28.03.2025) (inaktiv)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="35"
 #: osm_watch[closed]: note 4536637 10
@@ -46017,14 +46021,16 @@ EOF
      },
      { from  => 1731304800, # 2024-11-11 07:00
        until => $isodate2epoch->("2025-04-29 23:59:59"), # 1734994740, # 2024-12-23 23:59
-       text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, auch Radfahrer sind betroffen, vom 12.11.2024 bis 29.04.2025',
+#      text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, auch Radfahrer sind betroffen, vom 12.11.2024 bis 29.04.2025',
+       text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Sonnenallee, Sperrung, auch Radfahrer sind betroffen, vom 12.11.2024 bis 29.04.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROSEGGER-2024
 #: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
 #: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025)
 #: osm_watch: note 4524886 1
-	q4::inwork 13205,8126 13277,8211 13331,8283
+# REMOVED (hier mittlerweile keine Bauarbeiten mehr) ---	q4::inwork 13205,8126 13277,8211
+	q4::inwork 13277,8211 13331,8283
 EOF
      },
      { from  => 1731414000, # 2024-11-12 13:20
@@ -46093,7 +46099,7 @@ EOF
 #: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025) (bis 31.08.2025)
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
-#: last_checked: 2025-01-15
+#: last_checked: 2025-03-25 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-08-31
 #	q4::inwork; 8453,13611 8572,13671
@@ -46342,9 +46348,9 @@ EOF
        text  => 'Hadlichstr.: Einbahnstraßenregelung, vermutlich bis 30.06.2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025)
-#: last_checked: 2025-01-14 (mapillary)
-#: next_check: 2025-04-11 (VIZ-Verkehrsmeldung)
+#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025) (bis 28.04.2025)
+#: last_checked: 2025-03-26 (mapillary)
+#: next_check: 2025-04-28 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2025-06-30
 	q4::inwork; 11001,18528 11123,18343
 EOF
@@ -46479,9 +46485,9 @@ EOF
        text  => 'Bonner Str. und Ludwig-Barnay-Platz: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.02.2025 07:00 bis 28.03.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.31393,52.46718,03.02.2025,07:00 (bis 28.03.2025)
+#: source_id: viz2021:13.31393,52.46718,03.02.2025,07:00 (bis 28.03.2025) (inaktiv)
 Bonner Str. (in Höhe Kreuznacher Str.)	q4::inwork 4372,6718 4360,6779
-#: source_id: viz2021:13.315875,52.468006,03.02.2025,07:00 (bis 28.03.2025)
+#: source_id: viz2021:13.315875,52.468006,03.02.2025,07:00 (bis 28.03.2025) (inaktiv)
 Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
 EOF
      },
@@ -46729,7 +46735,7 @@ EOF
        text  => 'Hönower Weg: Abschnitt der Fahrbahn gesperrt, voraussichtlich bis 19.03.2025',
        type  => 'gesperrt',
        data  => <<EOF,
-#: also_indoor: traffic (ex-H,G[falsch],ex-B,ex-T)
+#: also_indoor: traffic (ex-H,G[falsch],re-B,re-T)
 # REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-02-28 --- #: check_frequency: 10d --- #: next_check: 2025-03-28 (Halteverbotsschilder) ---	2::inwork 17587,9655 17668,9632 17777,9649
 #: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert
 	q2::inwork 18266,9853 18066,9770 17920,9698
@@ -46840,11 +46846,11 @@ EOF
 EOF
      },
      { from  => 1741496400, # 2025-03-09 06:00
-       until => 1744383600, # 2025-04-11 17:00
-       text  => 'Breite Str.: Gleisbauarbeiten zwischen Berliner Str. und Stiftsweg/Hadlichstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 10.03.2025 06:00 bis 11.04.2025 17:00',
+       until => $isodate2epoch->("2025-04-28 17:00:00"), # 1744383600, # 2025-04-11 17:00
+       text  => 'Breite Str.: Gleisbauarbeiten zwischen Berliner Str. und Stiftsweg/Hadlichstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 10.03.2025 06:00 bis 28.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025)
+#: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025) (bis 28.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1898954467401175437
 #: by: https://pbs.twimg.com/media/Glc6s8uWAAAe6co?format=jpg&name=medium (kürzerer Baustellenbereich, nur bis etwas hinter Kavalierstr.?)
 	q4::inwork; 10680,18380 10710,18393 10784,18426 10934,18500 10958,18512 11001,18528

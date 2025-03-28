@@ -11,7 +11,7 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9818,9239 9801,9241
 # REMOVED (existiert nicht mehr) --- #: next_check_id: DIESEL-2019 --- #: XXX und außerdem auch schauen, ob es wieder zum Mergenthalerring wieder ein Tor gibt und dieses ein Schloss hat --- # REMOVED --- #: osm_watch: way id="524560334" version="5" --- #: osm_watch: way id="524560332" version="7" --- #: last_checked: 2025-01-27 vvv --- #: check_frequency: 60d vvv --- (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074 --- #: osm_watch: way id="680579631" version="8" --- #: osm_watch: way id="1187544110" version="1" --- (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1- 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998 14287,10892
-# REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14379,7372 14430,7348 14530,7301
+# REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14305,7415 14334,7395 14369,7376 14379,7372 14430,7348 14530,7301
 # REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13700,10676 13779,10642 13850,10612 13865,10606 13919,10583
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
@@ -469,7 +469,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-03-27
+#: last_checked: 2025-03-28
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -618,7 +618,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2025-02-19
+#: last_checked: 2025-03-25 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (infravelo)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -1153,7 +1153,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: osm_watch: way id="22820618" version="24"
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2025-03-27
+#: last_checked: 2025-03-28
 #: check_frequency: 30d
 #: next_check: 2025-05-31 (osm note)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
@@ -2479,7 +2479,7 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/elbestrasse/
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/161024_protokoll_mobilitaetsrat_3_pdf.pdf (Erwähnung einer Brücke zur Bouchéstr.)
 #: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
-#: last_checked: 2025-02-15 (mapillary)
+#: last_checked: 2025-03-28
 #: check_frequency: 360d
 #: next_check: 2026-03-01 (kms website)
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
@@ -13860,7 +13860,7 @@ Wallenbergstr.: Kopfsteinpflaster	Q2- 4453,8490 4457,8383 4473,8351
 (Weg entlang der A100, westliche Seite): Betonpflaster mit Fugen	Q1- 14264,8829 14274,8816 14278,8796 14287,8688
 (Weg entlang der A100, westliche Seite): Asphalt	Q0 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 (Weg entlang der A100, westliche Seite): Betonpflaster mit Fugen	Q1- 14375,8057 14406,8003 14410,7986
-(Weg entlang der A100, westliche Seite): Asphalt	Q0 14410,7986 14430,7891 14434,7707 14388,7549
+(Weg entlang der A100, westliche Seite): Asphalt	Q0 14410,7986 14430,7891 14434,7707 14388,7549 14305,7415
 # 
 (zu den Depotgebäuden): Asphalt	Q0 24700,5633 24716,5613 24734,5592 24733,5553
 (Fürstenwalder Damm - Müggelseedamm): Waldweg, etwas Split	Q1- 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943
