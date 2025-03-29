@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2014,2015,2021,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2014,2015,2021,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,6 +28,7 @@ my $diff_color = '#000080';
 my $preserve_areas; # otherwise areas are at least turned into closed unfilled polygons
 my $with_date;
 my $with_date_time;
+my $with_removed;
 my $title;
 tie my %localized_title, 'Tie::IxHash';
 GetOptions(
@@ -39,6 +40,7 @@ GetOptions(
 	   'preserve-areas' => \$preserve_areas,
 	   'with-date!'    => \$with_date,
 	   'with-date-time!' => \$with_date_time,
+	   'with-removed!' => \$with_removed, # XXX does not work well --- changed names cause two entries (old and new)
 	   'title=s'           => \$title,
 	   'localized-title=s' => \%localized_title,
 	   "help|?" => sub { show_usage() },
@@ -75,54 +77,65 @@ my $bbdrx = qr{^
 	       \t(?<cat>\S+)             # cat
 	       \s(?<coords>[ 0-9,.+-]+)  # coords
 	       $}x;
+my @diffdirs = ('+');
+if ($with_removed) {
+    push @diffdirs, '-';
+}
 
 my %diffdir_records; # +/- -> {name -> [[cat, coords], [cat, coords]]}
 my $flush = sub {
-    for my $name (keys %{ $diffdir_records{'+'} }) {
-	for my $record (@{ $diffdir_records{'+'}->{$name} }) {
-	    my($cat, $coords) = @$record;
+    for my $diffdir (@diffdirs) {
+	for my $name (keys %{ $diffdir_records{$diffdir} }) {
+	    for my $record (@{ $diffdir_records{$diffdir}->{$name} }) {
+		my($cat, $coords) = @$record;
 
-	    # Maybe shorten coordinate list
-	    my @minus_records = @{ $diffdir_records{'-'}->{$name} || [] };
-	    for my $minus_record (@minus_records) {
-		my($minus_cat, $minus_coords) = @$minus_record;
-		if ($cat eq $minus_cat) {
-		    my @plus_coords = split /\s+/, $coords;
-		    my @minus_coords = split /\s+/, $minus_coords;
+		# Maybe shorten coordinate list
+		if ($diffdir eq '+') {
+		    my @minus_records = @{ $diffdir_records{'-'}->{$name} || [] };
+		    for my $minus_record (@minus_records) {
+			my($minus_cat, $minus_coords) = @$minus_record;
+			if ($cat eq $minus_cat) {
+			    my @plus_coords = split /\s+/, $coords;
+			    my @minus_coords = split /\s+/, $minus_coords;
 
-		    my $begin_i;
-		    for($begin_i = 0; $begin_i <= $#plus_coords; $begin_i++) {
-			no warnings 'uninitialized';
-			last if $plus_coords[$begin_i] ne $minus_coords[$begin_i];
+			    my $begin_i;
+			    for($begin_i = 0; $begin_i <= $#plus_coords; $begin_i++) {
+				no warnings 'uninitialized';
+				last if $plus_coords[$begin_i] ne $minus_coords[$begin_i];
+			    }
+			    if ($begin_i > 0) { $begin_i-- }
+
+			    my($end_plus_i, $end_minus_i);
+			    for($end_plus_i = $#plus_coords, $end_minus_i = $#minus_coords;
+				$end_plus_i >= 0 && $end_minus_i >= 0;
+				$end_plus_i--, $end_minus_i--) {
+				no warnings 'uninitialized';
+				last if $plus_coords[$end_plus_i] ne $minus_coords[$end_minus_i];
+			    }
+			    if ($end_plus_i < $#plus_coords) { $end_plus_i++ }
+
+			    $coords = join(' ', @plus_coords[$begin_i..$end_plus_i]);
+			    last;
+			}
 		    }
-		    if ($begin_i > 0) { $begin_i-- }
-
-		    my($end_plus_i, $end_minus_i);
-		    for($end_plus_i = $#plus_coords, $end_minus_i = $#minus_coords;
-			$end_plus_i >= 0 && $end_minus_i >= 0;
-			$end_plus_i--, $end_minus_i--) {
-			no warnings 'uninitialized';
-			last if $plus_coords[$end_plus_i] ne $minus_coords[$end_minus_i];
-		    }
-		    if ($end_plus_i < $#plus_coords) { $end_plus_i++ }
-
-		    $coords = join(' ', @plus_coords[$begin_i..$end_plus_i]);
-		    last;
 		}
-	    }
 
-	    if ($name =~ m{^#}) {
-		print $name, "\n";
-	    } else {
-		if ($coords eq '') {
-		    # may happen if e.g. just a directive changed, but not the line itself
+		if ($name =~ m{^#}) {
+		    print $name, "\n";
 		} else {
-		    if ($add_file_label) {
-			print "$current_base: ";
-		    } elsif ($add_fixed_label) {
-			print $add_fixed_label;
+		    if ($diffdir eq '-') {
+			$name = "REMOVED: $name";
 		    }
-		    print "$name\t$cat $coords\n";
+		    if ($coords eq '') {
+			# may happen if e.g. just a directive changed, but not the line itself
+		    } else {
+			if ($add_file_label) {
+			    print "$current_base: ";
+			} elsif ($add_fixed_label) {
+			    print $add_fixed_label;
+			}
+			print "$name\t$cat $coords\n";
+		    }
 		}
 	    }
 	}
