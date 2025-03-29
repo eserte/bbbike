@@ -19,18 +19,7 @@
 #: next_check: 2025-06-01 (BA-Artikel)
 Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgersteige	q4::inwork 14651,11666 14710,11626
 # 
-#: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025) (bis 18.04.2025)
-#: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum)
-#: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10)
-#: osm_watch: way id="1145213536" version="7"
-#: osm_watch: way id="1363264660" version="3"
-#: note: Halteverbotsschilder bis 18.04.2025
-#: also_indoor: traffic (G,T)
-#: last_checked: 2025-03-28 (fast fertig)
-#: check_frequency: 3d
-#: next_check: 2025-04-18 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
-#: valid: -20250418
-Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
+# REMOVED (vorfristig fertig geworden) --- #: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025) (bis 18.04.2025) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10) --- #: osm_watch: way id="1145213536" version="7" --- #: osm_watch: way id="1363264660" version="3" --- #: note: Halteverbotsschilder bis 18.04.2025 --- #: also_indoor: traffic (G,T) --- #: last_checked: 2025-03-28 (fast fertig) --- #: check_frequency: 3d --- #: next_check: 2025-04-18 (Halteverbotsschilder, VIZ-Verkehrsmeldung) --- #: valid: -20250418 --- Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
 # 
 #: by: https://pandion.de/wohnungsangebote/midtown/ (Fertigstellung ab März 2026)
 #: also_indoor: traffic (T,B,G)
@@ -50,13 +39,13 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-03-28
+#: last_checked: 2025-03-29
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-02-19 vvv
+#: last_checked: 2025-03-29 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
@@ -353,6 +342,7 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20250308 (bis Ende April 2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1722238382229_wegedornbr_cke.png
 #: by: https://fahrinfo.vbb.de/him-uploads/1722238635942_wegedornbr_cke.png
+#: by: https://www.berliner-zeitung.de/news/treptow-koepenick-bauchaos-an-der-wegedornbruecke-fertigstellung-erneut-verschoben-li.2311558
 #: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
 #: last_checked: 2024-12-27
 #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)

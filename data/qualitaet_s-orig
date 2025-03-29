@@ -632,7 +632,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="20"
 #: osm_watch: way id="49180827" version="25"
-#: last_checked: 2025-02-11
+#: last_checked: 2025-03-29
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -14065,6 +14065,8 @@ Lynarstr. - Charlottenbrunner Str.: Verbundsteinpflaster/Mosaikpflaster	Q1 2674,
 #: check_frequency: 30d
 Kaaden-Ring: unbefestigte Baustraße	Q2 25149,10695 25329,10697 25415,10696 25415,10641 25332,10642 25329,10697
 # 
+(Gethsemanestr.): Asphalt	Q0 11191,15810 11210,15798 11225,15828 11204,15838 11191,15810
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -18688,11 +18690,12 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://www.tagesspiegel.de/berlin/berliner-ausflugsparadies-an-havel-und-wannsee-so-wird-der-gutspark-neu-kladow-20242025-umgebaut-11351305.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/baustelle-im-berliner-paradies-wie-stehts-um-den-havelradweg-im-gutspark-neukladow-12499511.html (Asphaltierung 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fahrrad-baustellen-in-berlin-spandau-wir-bauen-einen-radweg-aus-cashewkernen-13011658.html (irgendwann 2025, 3,50m breiter Weg, Rampe vom Gutshaus zum Ufer)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/galerie-gemalde-und-abrissbagger-hier-sind-die-neuen-plane-fur-den-gutspark-neukladow-13440736.html (Bau wird 2025 gestartet)
 #: XXX wird hier asphaltiert?
 #: osm_watch: way id="205746338" version="9"
-#: last_checked: 2024-09-18
-#: check_frequency: 180d
-#: next_check: 2025-10-01
+#: last_checked: 2025-03-27 (Tsp)
+#: check_frequency: 120d
+#: next_check: 2025-12-31 (Tsp)
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1- -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: confirmed_by: srt
 Ernst-Liesegang-Ufer: wassergebundene Decke	Q1 -5924,5602 -5911,5619 -5853,5674

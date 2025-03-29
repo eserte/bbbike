@@ -1040,6 +1040,7 @@ Straße am Heizhaus: Betriebsgelände	2 20150,8962 20220,8976
 Eisenhutweg [Wohngebiet]	1 17569,2987 17471,2872 17688,2744 17741,2824
 Puschkinstr. [Nebenstraße]	1s 14152,9746 14092,9773
 Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung	1s 2706,9108 2674,9111
+(Gethsemanestr.)	1 11191,15810 11204,15838 11225,15828 11210,15798 11191,15810
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3132,7 +3133,6 @@ Schranke, lichte Breite 120cm	BNP:1:-256:trailer=3 -7685,15092
 Poller, lichte Breite 100cm	BNP:1:-255:trailer=5 -7109,15286
 weites Drängelgitter	BNP:1:-237:trailer=5 -3437,14029
 Drängelgitter	BNP:2:-79:trailer=8 7928,10094
-enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20:-36:trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5:-108:trailer=no 10781,15438
 Metallstange	BNP:3:-72:trailer=10 -5070,11199
 Metallstange	BNP:3:-72:trailer=10 -5082,11155

@@ -1729,6 +1729,8 @@ Puschkinstr. [Nebenstraße]	1s:q4 14152,9746 14092,9773
 # 
 Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung	1s:q3 2706,9108 2674,9111
 # 
+(Gethsemanestr.)	1 11191,15810 11204,15838 11225,15828 11210,15798 11191,15810
+# 
 #: section ^^^
 ######################################################################
 #: section: empfohlene und unechte Sperrungen vvvvvvvvvvvvvvvvvvvvvvvv
@@ -3346,9 +3348,7 @@ Poller, lichte Breite 100cm	BNP:1::trailer=5 -7109,15286
 weites Drängelgitter	BNP:1::trailer=5 -3437,14029
 #: note: etwas großzügiger geschnitten
 Drängelgitter	BNP:2::trailer=8 7928,10094
-# XXX_prog kann entfernt werden, sobald temp_blockings mit BNP umgehen kann, siehe Eintrag dort
-#: note: Tor war offen: 2016-02-19, abends gegen 19 Uhr; 2018-12-28, gegen 14 Uhr; 2023-06-03 (Sa) gegen 11:40 Uhr
-enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20::trailer=no 10583,15208
+# REMOVED (der enge Eingang ist nun gar nicht passierbar, vermutlich ist das Tor tagsüber immer offen?) --- # XXX_prog kann entfernt werden, sobald temp_blockings mit BNP umgehen kann, siehe Eintrag dort --- #: note: Tor war offen: 2016-02-19, abends gegen 19 Uhr; 2018-12-28, gegen 14 Uhr; 2023-06-03 (Sa) gegen 11:40 Uhr; 2025-03-29 (Sa) gegen 13:30 Uhr --- enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20::trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5::trailer=no 10781,15438
 #: by: Stefan Klinkusch: vvv
 #: note: Schranke kann offen sein, gesehen 2024-09-18
@@ -4406,9 +4406,9 @@ Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
 #: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1363169.php (Fertigstellung 1. Halbjahr 2026)
-#: XXX Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster)
+#: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
 #: priority: #C
-#: last_checked: 2025-03-23 (daf)
+#: last_checked: 2025-03-29
 #: check_frequency: 90d
 #: next_check: 2026-05-31 (BA-Seiten)
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
@@ -5464,6 +5464,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.deutsches-architekturforum.de/thread/11490-hochh%C3%A4user-max-und-moritz-upside-berlin-95-86m-in-bau/?postID=747798#post747798 (Insolvenz)
 #: by: https://www.thomas-daily.de/td-morning-news/1558743-berlin-mikare-gibt-wohnturm-projekt-max-auf/
 #: by: https://www.konii.de/news/immobilienprojekt-upside-berlin-wird-weitergebaut/ (Fertigstellung stufenweise bis 2027)
+#: by: https://www.konii.de/news/vermarktung-der-beiden-hoechsten-berliner-wohntuerme-startet/ (Vermarktung ab Mai 2025)
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
