@@ -445,7 +445,7 @@ EOF
      { from  => $isodate2epoch->("2019-04-30 12:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 5, start => "2024-05-02T00:00:00"]],
+       recurrences => [['yearly', days => 1, months => 5, start => "2025-05-02T00:00:00"]],
        #recurrence_prewarn_days => 14,
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
@@ -459,6 +459,7 @@ EOF
 #: by: https://www.morgenpost.de/1-mai-berlin/article237792799/1-mai-2024-berlin-kreuzberg-myfest-absage.html
 #: by: https://berliner-abendblatt.de/berlin-news/nahost-konflikt-auch-problem-bei-demonstrationen-am-1-mai-id249800
 #: by: https://berliner-abendblatt.de/berlin-news/spranger-fuer-das-myfest-ist-der-bezirk-zustaendig-id250115
+#: by: https://www.morgenpost.de/bezirke/friedrichshain-kreuzberg/article403927094/myfest-1-mai-2025-berlin-kreuzberg.html (findet 2025 nicht statt)
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
 	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11506,10746 11552,10863 11589,10947 11640,11067
 	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
@@ -22292,9 +22293,9 @@ EOF
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-05-05 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2024 bis 05.05.2024)', # früher: Lichtenrader Maientanz
+     { from  => $isodate2epoch->("2025-04-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-05-04 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2025 bis 04.05.2025)', # früher: Lichtenrader Maientanz
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4, start => "2021-05-06T00:00:00"]],
        type  => 'handicap',
@@ -22306,6 +22307,7 @@ EOF
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-am-idyllischen-dorfteich-lichtenrade
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein (2024: 3. bis 5. Mai)
+#: by: https://www.family-and-friends-ev.de/1-4-mai-2025-kunst-trifft-wein (2025: 1. bis 4. Mai)
 # REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
 	2::temp 11064,-1597 11054,-1659 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
@@ -30922,13 +30924,15 @@ EOF
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...) (bis 26.03.2025 + ...) (inaktiv)
+#: source_id: viz2021:13.37619,52.425695,31.03.2025,09:00 (Baustellenampel in der Daimlerstr., bis 30.04.2025)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-300623/ (neue Bauphase)
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
-#: also_indoor: traffic (re-G,ex-H,ex-B,ex-T,W)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (neue Baustellenampel in der Daimlerstr., bis Ende April 2025)
+#: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 #: osm_watch: way id="200775245" version="13"
 #: osm_watch: note 3210197 4
 #: last_checked: 2025-02-22
@@ -32948,7 +32952,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2025-03-31 17:00:00"), # undef, # XXX
-       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2025',
+       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, geplant bis Ende März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: MAINZER-2021
@@ -32956,8 +32960,8 @@ EOF
 #: source_id: viz2021:13.42885,52.47792,01.04.2021,10:17 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
-#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
-#: also_indoor: traffic (G,H,B)
+#: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
+#: also_indoor: traffic (G,H,B,T,W,A)
 #: last_checked: 2025-02-22
 #: check_frequency: 120d
 #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
@@ -36347,10 +36351,10 @@ EOF
 EOF
      },
      { from  => 1713897172, # 1652122429, # 2022-05-09 20:53
-       until => $isodate2epoch->("2025-04-08 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
+       until => $isodate2epoch->("2025-04-10 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023',
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 31.03.2025',
-       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, geplant bis 08.04.2025',
+       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis 10.04.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -36368,6 +36372,8 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20241218 (Inbetriebnahme 2027)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1876878754120925633
 #: by: https://pbs.twimg.com/media/Ggsmd-aWMAAlsTV?format=jpg&name=medium
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7303/docs/PL_berlin-gesundbrunnen-karow-bernau_wiltbergstrasse_sperrungen_20250326.pdf
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7303/docs/GR_-berlin-gesundbrunnen-karow-bernau_wiltbergstrasse_umleitung_20250327.pdf
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.492858,52.63663,09.05.2022,11:58 (inaktiv)
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
@@ -36384,11 +36390,13 @@ EOF
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
-# REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
+# REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
+#: next_check: 2025-04-09 (Änderung des Bauzustands, siehe auch DB-Seite) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
 Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
 #	2::inwork 16166,25767 16121,25818
+#: next_check ^^^
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-23 00:00:00") }, # 1 Tag Vorlauf
@@ -37396,7 +37404,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-01-20 00:00:00"), # 1659852000, # 2022-08-07 08:00
-       until => $isodate2epoch->("2025-03-31 18:00:00"), # $isodate2epoch->("2024-12-20 18:00:00"), # 1732719600, # 2024-11-27 16:00
+       until => 1743335125, # $isodate2epoch->("2025-03-31 18:00:00"), # $isodate2epoch->("2024-12-20 18:00:00"), # 1732719600, # 2024-11-27 16:00
 #      text  => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung bis 20.12.2024',
        text  => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung (auch für Fußgänger und Radfahrer), voraussichtlich von Ende Januar 2025 bis Ende März 2025',
        type  => 'gesperrt',
@@ -37812,7 +37820,7 @@ EOF
 # REMOVED ---	2 2960,15847 2944,15880 2913,15944
 # REMOVED ---	2 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
 # REMOVED ---	2 2880,15884 2960,15847
-#: osm_watch: way id="8039689" version="17"
+#: osm_watch: way id="8039689" version="18"
 Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch: way id="100690609" version="4"
 	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293
@@ -40052,18 +40060,21 @@ EOF
      { from  => undef, # 1685381243, # 2023-05-29 19:27
        until => undef, # 1685646667, # 1685743200, # 2023-06-03 00:00
 #      text  => 'Röntgentaler Weg: Sperrung in Höhe Pöllnitzweg, 30.5.2023 bis 2.6.2023',
-       text  => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, Ende der Bauarbeiten unbekannt',
+       text  => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, voraussichtlich bis 31.08.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-300523/ (alte Sperrung)
 #: by: https://nitter.cz/VIZ_Berlin/status/1663489643629752320#m
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20250330 (bis 31. August 2025)
 #: source_id: viz2021:13.498511,52.640138,30.05.2023,11:30 (bis 02.06.2023) (inaktiv)
 #	2::inwork 16222,25829 16532,26174 17101,26701
 #: note: evtl. mit der Sperrung in der Wiltbergstr. zusammenhängend
 #: last_checked: 2025-03-23 vvv
+#: next_check: 2025-08-31 vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m
 	q3::inwork; 17101,26701 16532,26174
+#: next_check ^^^
 #: last_checked ^^^
 EOF
      },
@@ -40265,7 +40276,7 @@ EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-27 00:00:00") }, # 1 Tag Vorlauf
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-07-19 18:30:00") },
-       #text  => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 16. Juni 2023 bis 28. Juli 2023',
+#      text  => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 16. Juni 2023 bis 28. Juli 2023',
        text  => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 28. Juni 2024 bis 19. Juli 2024',
        type  => 'handicap',
        recurring => 1,
@@ -40275,7 +40286,7 @@ EOF
 #: XXX außerdem nach den Sommerferien: 1. bis 22. September 2023
 #: note: Länge des Spielstraßenbereichs etwas weniger als 100m; Bordsteine
 # REMOVED --- #: last_checked: 2023-07-02
-#: next_check: 2025-04-01
+#: next_check: 2025-05-01
 	q4::temp::play 14208,12235 14073,11995 14055,11964
 EOF
      },
@@ -42870,14 +42881,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2025-03-31 18:00:00"), # undef, # XXX
-       text  => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis Ende März 2025',
+       until => undef, # $isodate2epoch->("2025-03-31 18:00:00"), # undef, # XXX
+       text  => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis Ende März 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
-#: also_indoor: traffic (G,B)
+#: also_indoor: traffic (G,T,B,H,W,A)
 #: last_checked: 2025-02-19 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
@@ -45109,7 +45120,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
-#: osm_watch: way id="1083535036" version="8"
+#: osm_watch: way id="1083535036" version="9"
 #: osm_watch: way id="1119255054" version="7"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
@@ -45228,7 +45239,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-03-19 (website) vvv
+#: last_checked: 2025-03-30 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -45673,6 +45684,7 @@ EOF
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901514334443909380
 #: osm_watch: way id="336698811" version="7"
 Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
@@ -46982,6 +46994,16 @@ EOF
        data  => <<EOF,
 #: source_id: LS/221-E/25/030 (bis 10.05.2025)
 	2::inwork 34802,45368 34613,45287 34518,45231 34093,44866 32572,43561 32518,43468 32401,42954 32348,42876 30754,42070
+EOF
+     },
+     { from  => $isodate2epoch->("2025-04-03 00:00:00"),
+       until => $isodate2epoch->("2025-04-07 00:00:00"),
+       text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 6.4.2025',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
+	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 EOF
      },
     );

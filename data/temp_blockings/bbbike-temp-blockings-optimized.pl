@@ -2460,7 +2460,36 @@ Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
+#: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
+#: by: https://www.family-and-friends-ev.de/?date=20210418 (4.-6. Juni 2021, dann aber vermutlich kein Maientanz")
+#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-vom-4-6-juni-2021 (2021 verschoben auf 29. April - 1. Mai 2022)
+#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
+#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-am-idyllischen-dorfteich-lichtenrade
+#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein (2024: 3. bis 5. Mai)
+#: by: https://www.family-and-friends-ev.de/1-4-mai-2025-kunst-trifft-wein (2025: 1. bis 4. Mai)
+# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
+	2::temp 11064,-1597 11054,-1659 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
+',
+         'from' => 1745964000,
+         'id' => 2431,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              4,
+                              'start',
+                              '2021-05-06T00:00:00'
+                            ]
+                          ],
+         'text' => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2025 bis 04.05.2025)',
+         'type' => 'handicap',
+         'until' => 1746395999
+       },
        undef,
        undef,
        undef,
@@ -3714,13 +3743,15 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024) (vielleicht inaktiv)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...) (bis 26.03.2025 + ...) (inaktiv)
+#: source_id: viz2021:13.37619,52.425695,31.03.2025,09:00 (Baustellenampel in der Daimlerstr., bis 30.04.2025)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: by: https://viz.berlin.de/2023/06/verkehrsvorschau-300623/ (neue Bauphase)
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
-#: also_indoor: traffic (re-G,ex-H,ex-B,ex-T,W)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (neue Baustellenampel in der Daimlerstr., bis Ende April 2025)
+#: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 #: osm_watch: way id="200775245" version="13"
 #: osm_watch: note 3210197 4
 #: last_checked: 2025-02-22
@@ -3986,8 +4017,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.42885,52.47792,01.04.2021,10:17 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
-#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
-#: also_indoor: traffic (G,H,B)
+#: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
+#: also_indoor: traffic (G,H,B,T,W,A)
 #: last_checked: 2025-02-22
 #: check_frequency: 120d
 #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
@@ -3995,7 +4026,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3297,
-         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2025',
+         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, geplant bis Ende März 2025',
          'type' => 'handicap',
          'until' => 1743433200
        },
@@ -4731,6 +4762,8 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20241218 (Inbetriebnahme 2027)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1876878754120925633
 #: by: https://pbs.twimg.com/media/Ggsmd-aWMAAlsTV?format=jpg&name=medium
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7303/docs/PL_berlin-gesundbrunnen-karow-bernau_wiltbergstrasse_sperrungen_20250326.pdf
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7303/docs/GR_-berlin-gesundbrunnen-karow-bernau_wiltbergstrasse_umleitung_20250327.pdf
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.492858,52.63663,09.05.2022,11:58 (inaktiv)
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
@@ -4747,17 +4780,19 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
-# REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2024-04-23
+# REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
+#: next_check: 2025-04-09 (Änderung des Bauzustands, siehe auch DB-Seite) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
 Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
 #	2::inwork 16166,25767 16121,25818
+#: next_check ^^^
 ',
          'from' => 1713897172,
          'id' => 3550,
-         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, geplant bis 08.04.2025',
+         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis 10.04.2025',
          'type' => 'gesperrt',
-         'until' => 1744124400
+         'until' => 1744297200
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -5005,18 +5040,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 226502047 (bis 27.11.2024) (inaktiv)
-#: by: https://bauprojekte.deutschebahn.com/p/hennigsdorf-marwitzer-strasse-eue?date=20240925 (Sperrung auch für Fußgänger + Radverkehr bis 20.12.2024, weitere Sperrung 2025)
-#: note: auch für Fußgänger gesperrt
-	2::inwork -3475,26523 -3556,26560
-',
-         'from' => 1737327600,
-         'id' => 3613,
-         'text' => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung (auch für Fußgänger und Radfahrer), voraussichtlich von Ende Januar 2025 bis Ende März 2025',
-         'type' => 'gesperrt',
-         'until' => 1743436800
-       },
+       undef,
        undef,
        undef,
        {
@@ -5191,7 +5215,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED ---	2 2960,15847 2944,15880 2913,15944
 # REMOVED ---	2 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
 # REMOVED ---	2 2880,15884 2960,15847
-#: osm_watch: way id="8039689" version="17"
+#: osm_watch: way id="8039689" version="18"
 Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: osm_watch: way id="100690609" version="4"
 	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293
@@ -5650,18 +5674,21 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        {
          'data' => '#: by: https://viz.berlin.de/2023/05/verkehrsvorschau-300523/ (alte Sperrung)
 #: by: https://nitter.cz/VIZ_Berlin/status/1663489643629752320#m
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20250330 (bis 31. August 2025)
 #: source_id: viz2021:13.498511,52.640138,30.05.2023,11:30 (bis 02.06.2023) (inaktiv)
 #	2::inwork 16222,25829 16532,26174 17101,26701
 #: note: evtl. mit der Sperrung in der Wiltbergstr. zusammenhängend
 #: last_checked: 2025-03-23 vvv
+#: next_check: 2025-08-31 vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m
 	q3::inwork; 17101,26701 16532,26174
+#: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3800,
-         'text' => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, Ende der Bauarbeiten unbekannt',
+         'text' => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, voraussichtlich bis 31.08.2025',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5715,7 +5742,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: XXX außerdem nach den Sommerferien: 1. bis 22. September 2023
 #: note: Länge des Spielstraßenbereichs etwas weniger als 100m; Bordsteine
 # REMOVED --- #: last_checked: 2023-07-02
-#: next_check: 2025-04-01
+#: next_check: 2025-05-01
 	q4::temp::play 14208,12235 14073,11995 14055,11964
 ',
          'from' => 1750975200,
@@ -6237,7 +6264,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'data' => '#: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025)
 #: note: eigentlich q4+::inwork;
-#: also_indoor: traffic (G,B)
+#: also_indoor: traffic (G,T,B,H,W,A)
 #: last_checked: 2025-02-19 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
@@ -6245,9 +6272,9 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 ',
          'from' => undef,
          'id' => 3999,
-         'text' => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis Ende März 2025',
+         'text' => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis Ende März 2025, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1743436800
+         'until' => undef
        },
        undef,
        undef,
@@ -6905,7 +6932,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        {
          'data' => '#: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
-#: osm_watch: way id="1083535036" version="8"
+#: osm_watch: way id="1083535036" version="9"
 #: osm_watch: way id="1119255054" version="7"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
@@ -6957,7 +6984,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-03-19 (website) vvv
+#: last_checked: 2025-03-30 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7124,6 +7151,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901514334443909380
 #: osm_watch: way id="336698811" version="7"
 Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
@@ -7965,6 +7993,17 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'text' => 'Melchow - Spechthausen: Deckenerneuerung, Sperrung, 07.04.2025 08:00 Uhr bis 10.05.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1746889200
+       },
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
+	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
+',
+         'from' => 1743631200,
+         'id' => 4288,
+         'text' => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 6.4.2025',
+         'type' => 'gesperrt',
+         'until' => 1743976800
        }
      
 );

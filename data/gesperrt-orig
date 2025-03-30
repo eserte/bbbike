@@ -3987,7 +3987,7 @@ Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-03-11 (okas)
+#: last_checked: 2025-03-29 (bahninfo-forum)
 #: check_frequency: 90d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
@@ -4806,7 +4806,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_08_0417_0480_online.pdf (Bebauungsplan XVII-19b)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10235 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10244 (Antrag - Durchwegung)
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10254 (Antrag - Durchwegung)
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10254 (Antrag - Durchwegung) (von Howoge abgelehnt) 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-l%C3%BCckstra%C3%9Fe-33-37.1405/#post-22786
 #: by: https://entwicklungsstadt.de/155-wohnungen-howoge-errichtet-nur-strom-quartier-in-lichtenberg/
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/howoge-baut-quartier-mit-gruener-energie_a428074
@@ -4820,7 +4820,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: last_checked: 2025-03-24
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (howoge website)
-Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
+Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in Zukunft keinen Durchgang geben	2 16601,10650 16587,10613
 # 
 # REMOVED (offen, dafür ist nun temporär die Anbindung an die Zobtener Str. verschwenkt) --- #: last_checked: 2021-05-23 vvv --- #: check_frequency: 14d vvv --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997 --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
 # REMOVED (hier jetzt offen, aber noch nicht fertig) --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16841,9997 16830,10030 16835,10052
