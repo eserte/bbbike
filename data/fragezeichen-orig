@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2025-03-28
+#: last_checked: 2025-03-31
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -2263,7 +2263,7 @@ Buckower Damm: Radfahrstreifen sollen entstehen	?::projected 12712,2378 12738,21
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_05.pdf
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_06.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1471213.php
-#: last_checked: 2025-03-28
+#: last_checked: 2025-03-31
 #: check_frequency: 180d
 #: next_check: 2025-09-30
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
@@ -4793,6 +4793,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11380,11863 11324,11689
 # 
 #: by: https://www.luisenstadt-mitte.de/projekte/adalbertstrasse-0 (ab 2024) (mittlerweile ab 2025)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1546159.php (Verkehrsberuhigung in der Adalbertstr. sowie Fahrradstraße in der Melchiorstr., Beteiligungsveranstaltung)
 #: XXX verschwindet dabei auch das Kopfsteinpflaster?
 #: last_checked: 2025-02-20
 #: next_check: 2025-06-30 (luisenstadt-mitte website)
@@ -6470,7 +6471,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
 #: XXX mittlerweile Bauarbeiten hinter der Kreuzung Zeughofstr. Richtung NW, unklare Einbahnstraßenregelung; 2024-05-27: alle Einfahrt-verboten-Schilder haben nun Radfahrer-frei-Zusatzschilder, bei den Einbahnstraßenschildern fehlen sie weiterhin; mittlerweile scheint diese Baustelle fertig zu sein
 #: priority: #D
-#: last_checked: 2025-03-28
+#: last_checked: 2025-03-31
 #: check_frequency: 60d
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
 # 
@@ -7086,7 +7087,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5357,7391 5364,7330 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2025-03-13
+#: last_checked: 2025-03-31
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -7170,6 +7171,7 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: source_id[inactive]: bvg2021:u6#BVG311138_0
 #: source_id: bvg2021:u6#BVG346487_0
 #: source_id[inactive]: bvg2024:u6#HIM_FREETEXT_180208
+#: source_id: viz2021:13.30946,52.56808,31.03.2025,17:07 (bis 30.05.2025)
 #: osm_watch[closed]: note 3430631 5
 #: osm_watch: way id="1052320850" version="4"
 #: osm_watch: note 4394105 2
@@ -7198,7 +7200,7 @@ Landesstraße 30 (Woltersdorf und Rüdersdorf): wurde hier ein gemeinsamer Geh- un
 #: by: https://www.o-sp.de/download/lbvbrandenburg/254573
 #: by: https://www.o-sp.de/download/lbvbrandenburg/254578
 #: source_id: LS/721-F/22/001 (bis 14.9.2024) (inaktiv) (bis 14.09.2024) (inaktiv) (bis 31.01.2025) (inaktiv)
-#: source_id: LS/721-F/22/002 (bis 20.12.2024) (inaktiv) (bis 07.03.2025) (inaktiv) (bis 31.03.2025)
+#: source_id: LS/721-F/22/002 (bis 20.12.2024) (inaktiv) (bis 07.03.2025) (inaktiv) (bis 31.03.2025) (inaktiv)
 #: osm_watch: way id="4698246" version="9" brb
 #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
 B158 Bad Freienwalde: bei der Instandsetzung sind möglicherweise Radspuren entstanden (oder existierten diese bereits?)	? 52984,42973 53249,43276 53317,43391
@@ -7316,7 +7318,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2025-03-25
+#: last_checked: 2025-03-31
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7582,7 +7584,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-03-30
+#: last_checked: 2025-03-31
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -7822,7 +7824,7 @@ Paradiesstr.: evtl. werden hier noch Radwege als Zufahrt zur B96a erstellt, viel
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10587 (Anfrage)
-#: last_checked: 2025-03-04
+#: last_checked: 2025-03-31
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -7834,7 +7836,7 @@ Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 110
 #: osm_watch: note 4559018 3
 #: XXX erste Markierung an der Einmündung Brachvogelstr./Alexandrinenstr. gesehen
 #: XXX laut BA (siehe osm-note) soll es auch Einbahnstraßenregelungen (wo?) geben
-#: last_checked: 2025-03-04
+#: last_checked: 2025-03-31
 #: check_frequency: 45d
 #: next_check: 2025-12-31 (Pressemitteilung)
 Brachvogelstr., Alexandrinenstr.: Fahrradstraße geplant	?::projected 10006,9942 10029,9989 10066,10071 10069,10151 10083,10192 10122,10294 10178,10411 10293,10645 10329,10723 10397,10852 10501,11056 10593,11120 10674,11170 10683,11175 10690,11180 10736,11212 10818,11269
@@ -8136,7 +8138,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2025-03-27
+#: last_checked: 2025-03-31
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradastraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8176,7 +8178,7 @@ Meta-London-Str.: genaue Lage? Qualität?	? -2939,16495 -2904,16703
 #: by: https://viz.berlin.de/2023/02/radfahrstreifen-zossener-str/
 #: source_id: viz2021:13.39518,52.49613,27.02.2023,07:00 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.39505,52.493771,27.02.2023,07:00 (bis 07.04.2023) (bis 21.04.2023) (bis 12.5.2023) (bis 26.05.2023) (inaktiv)
-#: last_checked: 2025-02-25
+#: last_checked: 2025-03-31
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-05-26
 # REMOVED (fertig) --- Zossener Str./Brücke: Radfahrstreifen bekommen Protektionselemente (niedrige Protektion)	? 9827,10051 9837,10117
@@ -8980,7 +8982,7 @@ Blaschkoallee/Onkel-Bräsig-Str./Riesestr.: vermutlich entsteht hier eine Ampel	?
 Westfälische Str./Bielefelder Str.: vermutlich entsteht hier 2025 eine Ampel	? 3849,9582 3813,9566 3772,9550
 # 
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025)
-#: last_checked: 2025-03-13
+#: last_checked: 2025-03-31
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 Französische Str./Markgrafenstr.: neue Ampel soll 2025 entstehen	? 9624,12153 9645,12133 9671,12109
@@ -9103,6 +9105,10 @@ Uferstr.: Fahrradstraße geplant	? 8420,16365 8334,16282 8236,16071 8187,15965 81
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~15-01-2025-saarmund-radwegneubau-entlang-der-l-77 (bis Ende August 2025)
 #: next_check: 2025-08-31
 L77 Saarmund: Bau eines Radwegs	?::inwork -8988,-10047 -8759,-9987 -8645,-9915 -8554,-9807 -8514,-9709 -8507,-9605
+# 
+#: by: rbb (bis 07.05.2025) (allerdings zweifelhafte Ortsangabe: zwischen Liepnitzstraße und Rummelsburger Straße (???))
+#: next_check: 2025-05-07
+Hoher Wallgraben: Bauarbeiten, vielleicht ist danach die Straßenqualität besser?	?::inwork 17999,8336 18078,8112
 # 
 #: section ^^^
 #: ignore ^^^
@@ -11452,6 +11458,7 @@ Süßdoldenweg: früher Planstraße H, vermutlich entsteht hier die neue Straße, gen
 #: by: https://www.berliner-woche.de/tegel/c-bauen/weitere-etappe-auf-dem-weg-zum-baustart-geschafft_a435092
 #: by: https://www.tagesspiegel.de/berlin/bezirke/grossprojekt-auf-fruherem-flughafen-tegel-vertrage-furs-autoarme-und-nachhaltige-schumacher-quartier-unterzeichnet-13158643.html
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/schumacher-quartier-in-berlin-tegel-gewobag-zieht-sich-aus-dem-prestigeprojekt-zuruck-13158085.html
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1546700.php (Baustart 2027, erste Wohnungen Mitte 2029 fertig)
 #: osm_watch: way id="1004141226" version="5"
 #: XXX neue Straßen; aus dem Autobahnzubringer wird vermutlich eine Stadtstraße werden
 #: alias: Kurt-Schumacher-Quartier

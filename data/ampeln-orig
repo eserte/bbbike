@@ -61,7 +61,7 @@ Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
-#: last_checked: 2025-01-31
+#: last_checked: 2025-03-31
 #: next_check: 2025-04-23 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250423
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
@@ -83,12 +83,12 @@ Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
 # REMOVED (stehen noch, sind aber ausgeschaltet, wohl dauerhaft) --- #: next_check_id: OSTEND-2024 --- #: last_checked: 2024-11-06 vvv --- #: next_check: 2024-11-03 vvv --- #: valid: -20241103 vvv --- An der Wuhlheide/Rathenaustr.: Baustellenampel	X::inwork 19245,6379 --- An der Wuhlheide/Steffelbauerstr.: Baustellenampel östlich der Einmündung	F::inwork 19594,6155 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
-#: source_id: viz2021:13.58402,52.443878,20.08.2024,09:00 (bis 31.03.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1825789868754219040
-#: by: https://pbs.twimg.com/media/GVVe5-VWoAAAD12?format=jpg&name=medium
-#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
-#: valid: -20250331
-Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
+# REMOVED --- #: source_id: viz2021:13.58402,52.443878,20.08.2024,09:00 (bis 31.03.2025) (inaktiv)
+# REMOVED --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1825789868754219040
+# REMOVED --- #: by: https://pbs.twimg.com/media/GVVe5-VWoAAAD12?format=jpg&name=medium
+# REMOVED --- #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250331
+# REMOVED --- Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
 # 
 # REMOVED (Ampelanlage steht noch, ist aber (dauerhaft?) ausgeschaltet) --- #: next_check_id: KOENIGSPLATZ-2024 --- #: last_checked: 2024-12-27 --- #: check_frequency: 30d --- #: next_check: 2024-12-12 --- #: valid: -20241212 --- Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
 # 
@@ -3498,7 +3498,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-03-28 vvv
+#: last_checked: 2025-03-31 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

@@ -348,7 +348,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-03-19 vvv
+#: last_checked: 2025-03-31 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -539,7 +539,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-03-25 vvv
+#: last_checked: 2025-03-31 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -8197,7 +8197,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2025-03-02
+#: last_checked: 2025-03-31
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -8212,7 +8212,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: next_check: 2025-05-31 (VIZ-Verkehrsmeldung) vvv
 #XXX	RW4; 10975,10334 10871,10322
 #XXX	RW4; 10871,10322 10975,10334 11117,10326
-	RW2; 10975,10334 10871,10322
+Gehweg für Radfahrer frei	RW1; 10975,10334 10871,10322
 	RW0; 10871,10322 10975,10334 11117,10326
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -8610,13 +8610,13 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="34"
 #: osm_watch: way id="335487059" version="29"
-#: last_checked: 2025-02-25 vvv
+#: last_checked: 2025-03-31 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-06-30 (infravelo) vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025)
 # REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle
-#: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;
-	RW2; 10871,10322 10708,10312
+#: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;, danach provisorischer Radweg auf Hochbord
+Gehweg für Radfahrer frei	RW1; 10871,10322 10708,10312
 #: source_id: viz2021:13.408209,52.498506,29.11.2024,17:06 (bis 31.12.2024) (inaktiv)
 provisorischer Radstreifen	RW4; 10708,10312 10605,10312
 provisorischer Radstreifen, kurzes Stück über Hochbord	RW4; 10605,10312 10708,10312 10871,10322
@@ -8894,7 +8894,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023) (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,31.08.2023,10:00 (bis 22.09.2023) (bis 18.09.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023) (inaktiv)
-#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024) (bis 09.09.2024) (inaktiv) (bis 01.11.2024, weitere Arbeiten im Anschluss) (bis 01.03.2025 + ...) (bis 31.12.2025 + ...)
+#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024) (bis 09.09.2024) (inaktiv) (bis 01.11.2024, weitere Arbeiten im Anschluss) (bis 01.03.2025 + ...) (bis 31.12.2025 + ...) (bis 31.10.2025 + ...)
 #: source_id: viz2021:13.384655,52.451843,04.03.2024,07:00 (bis 17.05.2024) (bis 07.06.2024) (bis 17.06.2024) (inaktiv)
 #: source_id: viz2021:13.385286,52.448073,17.06.2024,07:00 (bis 27.06.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: viz2021:13.385297,52.44832,17.06.2024,07:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
@@ -8904,7 +8904,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: priority: #B vvv
 #: last_checked: 2025-02-22 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 # REMOVED --- #: osm_watch: way id="111048866" version="19" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)

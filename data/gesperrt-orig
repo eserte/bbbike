@@ -4155,7 +4155,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-03-27 vvv
+#: last_checked: 2025-03-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="4"
@@ -4418,7 +4418,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
-#: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025)
+#: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025)
 #: priority: #C
 #: last_checked: 2025-03-24
 #: check_frequency: 60d
@@ -4999,16 +4999,16 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 # REMOVED --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: XXX siehe auch strassen-orig-Eintrag --- #: last_checked: 2020-11-07 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2021-03-01 vvv --- #: valid: -20210301 vvv --- Bauarbeiten Golda-Meir-Steg	2::inwork 7965,14207 7973,14195 7972,14185 --- Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX hier ist ein Zirkus (?), bleibt das dauerhaft --- #: last_checked: 2020-02-22 --- Weg an der Trabrennbahn: gesperrt	2 18671,8092 18744,8121
 # 
+#: next_check_id: PLANCK-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: by: https://www.deutsches-architekturforum.de/thread/11167-admiralspalast-umbau-und-erweiterung-in-bau/?postID=744785#post744785 (Neubau der Planckstraße, bis IV. Quartal 2024)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-am-admiralspalast-planckstra%C3%9Fe.866/post-23402
 #: XXX wann sind die Bauarbeiten beendet?
-#: XXX es wird neu asphaltiert, die östliche Straßenseite ist bis auf die letzte Deckschicht schon fertig
 #: osm_watch: note 3954448 4
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2025-03-01
+#: last_checked: 2025-03-31
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-12-31
@@ -5198,7 +5198,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-sanierung-instandsetzung-autobahn-brckenbauwerk-wuhletalbrcke-ortsteil-marzahn-berlin-deutschland-656406.html
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (inaktiv)
-#: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025)
+#: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (bis 31.12.2025)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
 #: source_id: viz2021:13.55807,52.56199,27.06.2024,15:13 (bis 31.03.2025) (inaktiv)
 #: XXX Wann wird die Brücke wieder eröffnet?
