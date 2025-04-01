@@ -21,7 +21,7 @@ Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alterna
 # 
 #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025)
 #: note: zuerst 10642,11901, mittlerweile nach Süden gewandert
-#: last_checked: 2025-03-27
+#: last_checked: 2025-04-01
 #: next_check: 2025-04-22
 #: valid: -20250422
 Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
@@ -61,7 +61,7 @@ Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
-#: last_checked: 2025-03-31
+#: last_checked: 2025-04-01
 #: next_check: 2025-04-23 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250423
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
@@ -225,7 +225,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2025-03-20
+#: last_checked: 2025-04-01
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -1967,6 +1967,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6817,13862
 	X 6935,13645
 	X 7069,13381
+#: note: Anforderungsampel im Zuge der Wilsnacker Str. sowie für linksabbiegende Radfahrer aus der Turmstr.
 	X 6814,13349
 	X 6377,13321
 	X 6124,12694

@@ -1875,7 +1875,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2389,7 +2389,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: März 8.00 - 18.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: April 8.00 - 19.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -4016,19 +4016,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022) (möglicherweise inaktiv)
 #: source_id: viz2021:13.42885,52.47792,01.04.2021,10:17 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025) (inaktiv)
+#: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.12.2025)
+#: source_id: viz2021:13.42885,52.47792,01.04.2025,12:21 (bis 31.12.2025)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
 #: last_checked: 2025-02-22
 #: check_frequency: 120d
-#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
 ',
          'from' => undef,
          'id' => 3297,
-         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, geplant bis Ende März 2025',
+         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, geplant bis Ende Dezember 2025',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1767196800
        },
        undef,
        undef,
@@ -4527,7 +4529,7 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2025-02-22 (daf)
+#: last_checked: 2025-03-31 (daf)
 #: check_frequency: 60d
 #: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
@@ -4797,15 +4799,16 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 #: by: http://spielstraßen.de/uebersicht.php#kreu
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php (2025)
 # REMOVED --- #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05. --- #: last_checked: 2024-03-17 --- #: next_check: 2024-05-01
 	q4::temp::play 12822,10487 12897,10439
 ',
-         'from' => 1747951200,
+         'from' => 1747864800,
          'id' => 3551,
          'recurring' => 1,
          'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
          'type' => 'handicap',
-         'until' => 1758990600
+         'until' => 1758904200
        },
        undef,
        {
@@ -5132,7 +5135,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024)
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="13"
+#: osm_watch: way id="1117348911" version="14"
 #: also_indoor: traffic (G,ex-B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
@@ -5140,7 +5143,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-03-24
+#: last_checked: 2025-03-31 (osm)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5739,18 +5742,19 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/spielstrassen-988767.php (Haus Nr. 18-22)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1445054.php (2024)
-#: XXX außerdem nach den Sommerferien: 1. bis 22. September 2023
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php (2025)
+# REMOVED --- #: note: außerdem nach den Sommerferien: 1. bis 22. September 2023
 #: note: Länge des Spielstraßenbereichs etwas weniger als 100m; Bordsteine
 # REMOVED --- #: last_checked: 2023-07-02
-#: next_check: 2025-05-01
+#: next_check: 2026-05-01
 	q4::temp::play 14208,12235 14073,11995 14055,11964
 ',
-         'from' => 1750975200,
+         'from' => 1750888800,
          'id' => 3815,
          'recurring' => 1,
-         'text' => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 28. Juni 2024 bis 19. Juli 2024',
+         'text' => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 27. Juni 2025 bis 18. Juli 2025',
          'type' => 'handicap',
-         'until' => 1752942600
+         'until' => 1752856200
        },
        undef,
        undef,
@@ -5933,9 +5937,9 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
 #: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_238442
-#: source_id: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
 #: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
 #: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024) (inaktiv)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
@@ -6347,25 +6351,19 @@ Gipsstr., etwa 30m	q2::inwork 10341,13376 10199,13446
 #: source_id: viz2021:13.35116,52.531839,07.08.2024,07:00 (bis 30.08.2024) (bis 17.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/erneuerung-abwasserdruckleitung-unter-der-perleberger-strasse/
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
-#: add_fragezeichen: Sind die Anbindungen Wilsnacker Str. und Rathenower Str. noch immer gesperrt? vvv
+#: add_fragezeichen: Ist die Anbindung Rathenower Str./Stendaler Str. noch immer gesperrt? vvv
 #: priority: #B vvv
-#: last_checked: 2025-01-06 (osm) vvv
-#: check_frequency: 120d vvv
-#: next_check: 2025-03-26 (osm note) vvv
-# REMOVED --- #: next_check: 2025-09-23 vvv
+#: last_checked: 2025-04-01 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2025-09-23 vvv
 #: osm_watch: note 4069677 9
 #: osm_watch: way id="375991056" version="17"
 #: osm_watch: way id="375958863" version="11"
 # REMOVED (hier existiert eine durchgängige Verbindung für Radfahrer, im Baustellenbereich meist als Radspur, kurzer Abschnitt als getrennter Rad/Gehweg) --- Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
-#: osm_watch: way id="1250738798" version="3"
-Wilsnacker Str.: Anbindung gesperrt	q4::inwork 6646,13951 6746,13826
-#: note: Ampel ist zumindest Richtung Nordosten ausgeschaltet, allerdings gibt\'s dafür eine Fußgängerampel etwa 50m weiter nordöstlich
-#: note: mittlerweile Änderung laut VMZ, evtl. nur noch eine Fahrtrichtung betroffen (stimmt aber nicht)
-#: osm_watch: way id="417687029" version="17"
-#: osm_watch: way id="1143843161" version="6"
-Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
-#: XXX laut osm note ist nun die südliche Fahrbahn offen --- dementsprechend dürfte die nördliche Rathenower Str. abgehängt sein?
-nördliche Rathenower Str.: möglicherweise mittlerweile gesperrt	q4::inwork 6730,14021 6719,14047
+# REMOVED (hier nicht mehr) --- #: osm_watch: way id="1250738798" version="3" --- Wilsnacker Str.: Anbindung gesperrt	q4::inwork 6646,13951 6746,13826
+# REMOVED (hier nicht mehr) --- #: note: Ampel ist zumindest Richtung Nordosten ausgeschaltet, allerdings gibt\'s dafür eine Fußgängerampel etwa 50m weiter nordöstlich --- #: note: mittlerweile Änderung laut VMZ, evtl. nur noch eine Fahrtrichtung betroffen (stimmt aber nicht) --- #: osm_watch: way id="417687029" version="17" --- #: osm_watch: way id="1143843161" version="6" --- Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
+#: note: Ampel ist ausgeschaltet, dafür eine provisorische Fußgängerampel südwestlich der Einmündung Wilsnacker Str.
+nördliche Rathenower Str.: Überfahrt gesperrt	2::inwork 6730,14021 6719,14047
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6374,7 +6372,7 @@ nördliche Rathenower Str.: möglicherweise mittlerweile gesperrt	q4::inwork 6730,
 ',
          'from' => 1707890400,
          'id' => 4008,
-         'text' => 'Wilsnacker Str. und Rathenower Str.: Anbindung zur Perleberger Str. wegen Bauarbeiten gesperrt, vom 14.02.2024 07:00 bis 23.09.2025 17:00',
+         'text' => 'Rathenower Str./Stendaler Str.: Anbindung zur Perleberger Str. wegen Bauarbeiten gesperrt, voraussichtlich bis 23.09.2025 17:00',
          'type' => 'handicap',
          'until' => 1758639600
        },
@@ -6513,14 +6511,15 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
        undef,
        undef,
        {
-         'data' => '	q4::temp::play 9570,10566 9556,10666
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php
+	q4::temp::play 9570,10566 9556,10666
 ',
-         'from' => 1744668000,
+         'from' => 1746396000,
          'id' => 4045,
          'recurring' => 1,
-         'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 16. April bis zum 15. Oktober (außer Sommerferien) ',
+         'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 6. Mai bis zum 14. Oktober (außer Sommerferien) ',
          'type' => 'gesperrt',
-         'until' => 1760545800
+         'until' => 1760459400
        },
        undef,
        undef,
@@ -6700,7 +6699,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-03-31 vvv
+#: last_checked: 2025-04-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7184,6 +7183,7 @@ Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf G
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025)
+#: source_id: LS/221-F/25/052 (bis 30.04.2026)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
@@ -7275,6 +7275,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: source_id: viz2021:13.298976,52.504217,11.11.2024,07:00 (bis 30.12.2024) (inaktiv)
 #: source_id: viz2021:13.299093,52.504261,23.01.2025,13:59 (zweifelhaft: "Brückenarbeiten", aber der Abschnitt stimmt; bis 31.03.2025) (inaktiv)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: note: der rbb-Eintrag, der bis zum 30.06.2025, wurde vorfristig am 01.04.2025 entfernt
 #: note: etwa 150m der Fahrbahn sind gesperrt (zurzeit östlicher Abschnitt)
 #: last_checked: 2025-03-16 (osm note)
 # REMOVED --- #: check_frequency: 60d
@@ -7368,15 +7369,19 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'data' => '#: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025) (bis 31.08.2025)
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
-#: last_checked: 2025-03-25 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2025-08-31
+#: last_checked: 2025-04-01 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2025-08-31 vvv
 #	q4::inwork; 8453,13611 8572,13671
 	3::inwork 8358,13562 8453,13611 8408,13684
+	3::inwork 8408,13684 8453,13611 8572,13671
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1732172400,
          'id' => 4220,
-         'text' => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, Linksabbiegen vom Radweg in die Scharnhorststr. für Radfahrer verboten, vom 22.11.2024 08:00 bis 31.08.2025 17:00',
+         'text' => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, Linksabbiegen vom Radweg in die Scharnhorststr. sowie aus der Scharnhorststr. links in die Invalidenstr. für Radfahrer verboten, vom 22.11.2024 08:00 bis 31.08.2025 17:00',
          'type' => 'handicap',
          'until' => 1756652400
        },
@@ -7762,6 +7767,7 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
        {
          'data' => '#: by: rbb (bis 17.03.2025) (bis 24.03.2025) (bis 28.04.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
+#: source_id: viz2021:13.452912,52.524174,17.02.2025,08:00 (bis 28.04.2025 + weitere Arbeiten)
 #: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich; am 2025-03-05 war gesperrt
 	q3::inwork 13741,13107 13692,13221 13644,13332
 ',
@@ -7900,7 +7906,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: by: https://www.tagesspiegel.de/berlin/fussgangerbrucke-in-pankow-wird-saniert-schwedter-steg-ab-17-marz-knappe-vier-monate-gesperrt-13343986.html
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901517353940390368
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
-#: osm_watch: note 4317053 6
+#: osm_watch: note 4317053 7
 #: osm_watch: way id="1149646787" version="5"
 #: last_checked: 2025-03-29
 #: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
@@ -7934,6 +7940,8 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 #: by: https://pascalgrothe.de/bahnbruecke-in-der-weissenhoeher-strasse-wird-abgerissen/ (von Februar bis Oktober 2025 zur Einbahnstraße in Richtung Westen, Abriss vom 14. März bis 14. November 2025, Ersatzneubau)
 #: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article408186475/monatelange-baustelle-abriss-der-eisenbahn-bruecke-in-biesdorf.html (Abschluss der Arbeiten Ende März 2026)
 #: by: https://christian-graeff.de/2025/01/21/abriss-der-bruecke-ueber-der-weissenhoeher-strasse/
+#: by: https://christian-graeff.de/wp-content/uploads/2025/02/Anwohnerinfo_DB_EUEWeissenh_TeilII.pdf
+#: by: https://pascalgrothe.de/neue-bahnbruecke-ueber-die-weissenhoeher-strasse-soll-in-diesem-jahr-befahren-werden/
 #: source_id: viz2021:13.550304,52.507594,19.03.2025,06:00 (bis 02.04.2025)
 #: also_indoor: traffic (none)
 # REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
@@ -7942,9 +7950,9 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 ',
          'from' => 1742274000,
          'id' => 4281,
-         'text' => 'Weißenhöher Str.: Brückenabriss, Sperrung auch für den Rad- und Fußverkehr, vom 19.03.2025 06:00 bis 02.04.2025 17:00',
+         'text' => 'Weißenhöher Str.: Brückenabriss, Sperrung auch für den Rad- und Fußverkehr, vom 19.03.2025 06:00 bis 02.04.2025 18:00',
          'type' => 'gesperrt',
-         'until' => 1743606000
+         'until' => 1743609600
        },
        {
          'data' => '#: note: Länge der Einbahnstraßenregelung ca. 100m, deshalb q4 -> q3
