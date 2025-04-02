@@ -305,7 +305,7 @@ Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18451,8823
 Jugendweg	1 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
-Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
+Kienbergstr.	1 21279,14942 21228,14892 21223,14717 21122,14713
 Engelmannweg	1 4531,18217 4492,18013 4462,17892 4429,17763
 Waldowstr.	1 5536,18234 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5547,18665 5550,18775
 Kienhorststr.	1 5543,18555 5324,18560
@@ -1724,9 +1724,9 @@ Mittelstreifen	3nocross::ignrte 4741,5309 4745,5344 4767,5389 4832,5522 4861,558
 Schloßstr. -> Wrangelstr.: Mittelstreifen	3::igndisp 4741,5309 4745,5344 4640,5411
 Wrangelstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4640,5411 4745,5344 4767,5389
 Kuhligkshofstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4779,5358 4767,5389 4745,5344
-Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21537,14932
+Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21532,14916
 Fridolinweg -> Blumberger Damm: Mittelstreifen	3::igndisp 21450,14576 21408,14591 21378,14490
-Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21537,14932 21408,14591 21450,14576
+Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21532,14916 21408,14591 21450,14576
 Mittelstreifen	3nocross::ignrte 21709,15808 21682,15673 21675,15636 21647,15496
 Blumberger Damm -> Hirschfelder Weg: Mittelstreifen	3::igndisp 21709,15808 21682,15673 21719,15666
 Hirschfelder Weg -> Blumberger Damm: Mittelstreifen	3::igndisp 21719,15666 21682,15673 21675,15636
@@ -3518,7 +3518,8 @@ Schranke über die gesamte Fahrbahnbreite, auf Gehweg umfahren	BNP:3:-155:trailer
 Schranke, kann umfahren werden	BNP:1:71:trailer=3 2419,13833
 Schranke, kann umfahren werden	BNP:1:68:trailer=3 2969,14063
 Tor	BNP:10:-131 5857,14985
-Tor	BNP:10:-180 17059,8102
+Nalepastr.: Tor verschlossen	3 17056,8159 17059,8102 17059,8097
+Nalepastr.: Tor verschlossen	3 17059,8097 17059,8102 17056,8159
 (Ostkreuz, Zugang Marktstr.): Fußgängerschutztunnel wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
 Gounodstr.: Durchfahrt vor der Picasso-Grundschule gesperrt	2::inwork 14251,15828 14366,15877
 An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088

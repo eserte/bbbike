@@ -4914,7 +4914,8 @@ Schönecker Weg: Beton	Q0 22330,6973 22358,7093
 Wolfsgartenstr.: Asphalt	Q0 23011,6181 22994,6296 23002,6428
 Uhlenhorster Str.: Asphalt	Q0 23353,6384 23299,6541
 Uhlenhorster Str.: Betonpflaster	Q0 23299,6541 23283,6601
-Uhlenhorster Str.: Kopfsteinpflaster	Q2 23283,6601 23261,6683 23217,6779
+Uhlenhorster Str.: schlechtes Kopfsteinpflaster	Q3 23283,6601 23261,6683
+Uhlenhorster Str.: Kopfsteinpflaster	Q2 23261,6683 23217,6779
 Frau-Holle-Str.: Kopfsteinpflaster	Q2 23471,6776 23412,6753 23261,6683
 Aschenbrödelstr.: Asphalt	Q0 23082,6925 23052,6957 22985,7007
 Rautendeleinweg: Asphalt	Q0 23164,6753 23112,6867 23082,6925
@@ -9169,6 +9170,7 @@ Karlsruher Str. (Mahlsdorf): Asphalt	Q0 23582,9591 23584,9629 23585,9672 23528,9
 (Mittelheide, Nord-Süd-Weg): Waldweg	Q1 24293,7698 24275,7550 24185,6880
 (Mittelheide, Nord-Süd-Weg): Waldweg, Schotter	Q1 24185,6880 24111,6348
 (Mittelheide, Nord-Süd-Weg): Waldweg	Q1 24111,6348 24089,6144
+(Mittelheide - KGA Erpetal): Waldweg, etwas Schotter	Q1 24111,6348 24219,6206 24240,6162
 (Mirower Str. - Mittelheide): Waldweg	Q1 24387,7708 24356,7644 24275,7550
 (Mittelheide - S-Bhf. Hirschgarten): Waldweg	Q1 24089,6144 24060,6059
 (KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q2 24329,6089 24297,6086 24222,6092 24120,6090 24060,6059
@@ -13659,7 +13661,8 @@ Einbecker Str.: Asphalt (Fahrbahn und Radweg)	Q0 16958,11778 16977,11769 17020,1
 Cyanenstr.: Asphalt	Q0 14159,14495 14124,14227
 Seelower Str.: Kopfsteinpflaster	Q2 10778,16485 10754,16305 10739,16146 10729,16042
 Semliner Str.: Beton	Q0 22196,6957 22226,7012 22250,7119
-Semliner Str.: Asphalt/Beton, Schäden durch Wurzelhebungen	Q1 22250,7119 22272,7242 22296,7366
+Semliner Str.: Asphalt/Beton, Schäden durch Wurzelhebungen	Q1 22250,7119 22272,7242
+Semliner Str.: geflickter Asphalt	Q0 22272,7242 22296,7366
 Gärtnereiring: Asphalt	Q0 -6675,12632 -6692,12669 -6717,12678 -7048,12790 -7141,12821 -7237,12848 -7231,12890 -7219,12993
 Gärtnereiring: Kopfsteinpflaster	Q2 -7219,12993 -7195,13216
 Gärtnereiring: Verbundsteinpflaster	Q1 -7195,13216 -7183,13324

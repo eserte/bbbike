@@ -594,6 +594,8 @@ Vogelsangsruh: ist die gesamte Straße asphaltiert?	? 66431,84540 66638,84513
 Niederfelde: ist die gesamte Straße gepflastert?	? 66126,84243 66092,84252 66062,84129
 Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73160 68591,73201 68777,73351
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9847,6891
+Rita-Maiburg-Str.: Wann wird die Straße fertiggestellt? Qualität? Wo wird sich die Straße befinden (möglichst mit GPS-Track)?	?::projected 20342,-777 20779,-1195 20822,-1242 20833,-1298 20872,-1748
+Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?	?::projected 20274,-845 20342,-777
 Ahlimbsmühle - Templin: Qualität (Asphalt oder etwas anderes)? Ist die gesamte Straße eine Fahrradstraße?	? 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
 Carl-Dähne-Str.: Planstraße A, schon fertiggestellt, Qualität?	? -16317,-541 -16309,-435 -16168,-312
 Zum Düsteren Teich: Planstraße B, schon fertiggestellt, Qualität?	? -16108,-415 -16168,-312 -16268,-218
@@ -866,10 +868,8 @@ F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 # added from fragezeichen
 Kurpromenade: Bauarbeiten, vermutlich Erneuerung der Fahrbahn (Wurde die Fahrbahn in der Kurpromenade erneuert?)	? -8917,5986 -8871,6289 -8863,6402 -8863,6418 -8865,6541 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
-(Unterführung S-Bhf. Hirschgarten): Umbau des Bahnhofs, danach wird es hier Rampen geben (Ist die Unterführung zurzeit gesperrt?)	? 23948,6054 23947,6014 23930,6013 23931,5992
 # added from bbbike-temp-blockings-optimized
 Bahnübergang Ziethener Str. wegen Bauarbeiten gesperrt, voraussichtliche Freigabe 2024 (Wann sind die Bauarbeiten hier beendet?)	? 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 Steg am Krugpfuhl gesperrt, Ende der Sperrung unbekannt (Wann ist der Steg wieder offen?)	? 11162,22939 11150,22898
-Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind auch Radfahrer betroffen vom 31.03.2025 17:10 bis 04.04.2025 23:59 (Sind auch Radfahrer von der Sperrung betroffen?)	? 15856,10821 15793,10814
 Rönnestr.: Bauarbeiten zwischen Leonhardtstr. und Holtzendorffstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten beendet?)	? 3041,10732 3295,10831
 Hegemeisterbrücke: Neubau geplant, während der Bauzeit Sperrung der Brücke (Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?)	? 30081,5231 30081,5220

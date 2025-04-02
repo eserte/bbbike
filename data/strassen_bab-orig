@@ -31,6 +31,9 @@ BAB100	BAB 2225,12227 2372,11762 2338,11515 2170,11101 2021,10599 2009,10517
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1545449.php
 #: by: https://www.nd-aktuell.de/artikel/1190164.a-berliner-autobahnbruecke-eventuell-abriss-ohne-umwege.html
 #: by: https://www.tagesspiegel.de/berlin/a100-brucke-gesperrt-ringbahn-unterbrochen-so-kommen-sie-trotz-des-verkehrschaos-durch-den-berliner-westen-13458313.html
+#: by: https://www.tagesspiegel.de/berlin/verkehrschaos-in-berlin-dauer-der-ringbahn-sperrung-im-westen-weiter-unklar-13460797.html
+#: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-a100-ringbahn-bruecke-abriss-april.html (S-Bahn bis Ende April 2025 unterbrochen)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1547574.php
 #: osm_watch: way id="227985279" version="13"
 BAB100	BAB::inwork; 2009,10517 2058,10612 2117,10698 2165,10785 2175,10864 2183,10977 2207,11078 2353,11451 2379,11570 2403,11710 2409,11812 2399,11949 2388,11997
 # 
@@ -39,7 +42,7 @@ BAB100	BAB::inwork; 2009,10517 2058,10612 2117,10698 2165,10785 2175,10864 2183,
 #: by: https://www.berliner-woche.de/westend/c-bauen/einwendungen-moeglich_a418011
 #: XXX Neubau der Westendbrücke (mit Verlagerung)
 #: osm_watch: way id="4495210" version="18"
-#: osm_watch: note 4671906 7
+#: osm_watch[closed]: note 4671906 7
 #: last_checked: 2024-06-05 (Bericht)
 #: check_frequency: 1000d
 BAB100 (Westendbrücke)	BAB::Br::inwork; 2388,11997 2332,12106 2248,12201

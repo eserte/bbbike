@@ -1682,7 +1682,8 @@ asphaltierter Gehweg, nicht für Radfahrer freigegeben	RW0; 11338,-3945 11646,-34
 #: by: Elisabeth Wegner
 #: confirmed_by: srt
 #: corrected_by: mapillary (Benutzungspflicht)
-	RW1;RW -3475,26523 -3556,26560
+#: corrected_by: https://www.berliner-zeitung.de/news/nach-3-jahren-bauarbeiten-im-norden-berlins-marwitzer-strasse-in-reinickendorf-wieder-frei-li.2312139 (RW1;RW -> nach den Bauarbeiten mit Radspuren)
+	RW3?;RW3? -3475,26523 -3556,26560
 #: corrected_by: mapillary (neue Radspur?)
 #: note: zusätzliche sind die Gehwege für Radfahrer freigegeben
 	RW3;RW3 -3556,26560 -3700,26625 -4048,26914

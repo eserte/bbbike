@@ -179,7 +179,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-03-24 vvv
+#: last_checked: 2025-04-02 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -545,7 +545,7 @@ Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18451,8823
 #: confirmed_by: srt
 Jugendweg	1 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
 Boschpoler Platz	1 20540,13773 20665,13759
-Kienbergstr.	1 21287,14963 21225,14907 21217,14721 21122,14713
+Kienbergstr.	1 21279,14942 21228,14892 21223,14717 21122,14713
 Engelmannweg	1 4531,18217 4492,18013 4462,17892 4429,17763
 #: by: Steffen Berthold
 #: confirmed_by: srt
@@ -1015,7 +1015,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027) (bis 30.06.2027)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2025-01-29 vvv
+#: last_checked: 2025-04-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -2317,7 +2317,7 @@ Bahntrasse	3nocross 15875,1796 15835,1747 15799,1690 15729,1573
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23388,15637 23411,15632 23568,15603 23617,15594
 Schloßstr.: Mittelstreifen	3nocross 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
 #: note: Luftbild
-Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21537,14932
+Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21532,14916
 Blumberger Damm: Mittelstreifen	3nocross 21709,15808 21682,15673 21675,15636 21647,15496
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 21242,15529 21228,15449 21187,15350 21163,15289
 Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9905,18329
@@ -3916,8 +3916,10 @@ Schranke, kann umfahren werden	BNP:1::trailer=3 2969,14063
 #
 Tor	BNP:10 5857,14985
 # 
-#: note: meistens geschlossen, kann aber auch verschlossen sein (siehe temp_blockings-Eintrag)
-Tor	BNP:10 17059,8102
+#: next_check_id: SPREEKUESTE-2025
+#: note: Nalepastr., südliches Tor: meistens geschlossen, kann aber auch verschlossen sein (siehe temp_blockings-Eintrag)
+# REMOVED (s.u.) --- Tor	BNP:10 17059,8102
+Nalepastr.: Tor verschlossen	3 * 17059,8102 *
 # 
 #: section ^^^
 ############################################################################
@@ -3926,7 +3928,7 @@ Tor	BNP:10 17059,8102
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein; dann vermutlich regulär ohne Fußgängerschutztunnel.
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-02
 #: check_frequency: 120d
 #: next_check: 2026-05-01
 (Ostkreuz, Zugang Marktstr.): Fußgängerschutztunnel wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
@@ -3997,7 +3999,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="1"
-#: last_checked: 2024-11-15
+#: last_checked: 2025-04-01 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
@@ -4015,12 +4017,12 @@ Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 #: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
 #: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information
 #: also_indoor: traffic (G)
-#: last_checked: 2024-12-01 (youtube)
-#: check_frequency: 180d
+#: last_checked: 2025-04-02
+#: check_frequency: 120d
 #: next_check: 2026-10-29
 Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
 #: XXX evtl. muss mudways hier nach den Bauarbeiten neu evaluiert werden?
-#: last_checked: 2024-12-01 (youtube) vvv
+#: last_checked: 2025-04-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="37452317" version="6"
@@ -4046,7 +4048,7 @@ Otto-Weidt-Platz: Zuwegung zum Golda-Meir-Steg wegen Bauarbeiten gesperrt	2::inw
 #: by: mapillary/mapilio
 #: add_fragezeichen: Ist die Straße noch wegen Bauarbeiten gesperrt?
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-03-19 (traffic)
+#: last_checked: 2025-04-02 (traffic)
 #: check_frequency: 14d (traffic checks)
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 # 
@@ -4369,7 +4371,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-03-21 (daf)
+#: last_checked: 2025-04-02
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4377,7 +4379,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-03-21 (daf) vvv
+#: last_checked: 2025-04-02 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4420,7 +4422,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025)
 #: priority: #C
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-02
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4489,7 +4491,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2025-03-26
+#: last_checked: 2025-04-02
 #: check_frequency: 30d
 Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
@@ -4595,15 +4597,15 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch: note 3831047 3
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-02
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # REMOVED (offen) --- #: next_check_id: AUERDREIECK-2022 --- #: last_checked: 2023-10-08 --- #: check_frequency: 7d --- #: next_check: 2023-10-31 --- Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
-#: note: "Referenzfläche", Wald wird sich selber überlassen
+#: note: "Referenzfläche", Wald wird sich selbst überlassen
 #: osm_watch: note 3250345 3
-#: last_checked: 2024-06-02
+#: last_checked: 2025-04-02
 #: check_frequency: 180d
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 # 
@@ -4725,7 +4727,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-02
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 

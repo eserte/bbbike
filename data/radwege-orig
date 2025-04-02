@@ -275,7 +275,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="12"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2025-02-16
+#: last_checked: 2025-04-01 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -2311,7 +2311,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-03-24 vvv
+#: last_checked: 2025-04-02 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -4314,7 +4314,7 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX Radwege werden neu gemacht vvv
-#: last_checked: 2025-01-22 vvv
+#: last_checked: 2025-04-02 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-07-31 (BVG-Meldung) vvv
 Gehweg für Radfahrer frei, Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082
@@ -4411,8 +4411,8 @@ Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21150,11925 21139,11830
 unebenes Verbundsteinpflaster	RW1; 20627,12162 20629,12177 20656,12415 20680,12632 20693,12742 20711,12896 20743,13184 20746,13209 20773,13468 20802,13711 20830,13960
 #: note: fühlt sich fast wie ein Plattenweg an
 Verbundsteinpflaster, mit Betonplatten neben Bäumen, Unebenheiten	RW1;RW1 20755,14479 20790,14451 20921,14461 21046,14469 21118,14477 21329,14488 21378,14490
-	RW2;RW2 21358,13909 21342,14096 21378,14490 21408,14591 21537,14932
-	RW1;RW2 21537,14932 21599,15213
+	RW2;RW2 21358,13909 21342,14096 21378,14490 21408,14591 21532,14916
+	RW1;RW2 21532,14916 21599,15213
 	RW2;RW2 21599,15213 21623,15357 21647,15496 21675,15636 21682,15673 21709,15808
 	RW1;RW2 21709,15808 21724,15955
 neu asphaltiert, relativ breit	RW2; 21724,15955 21782,16253
@@ -5343,12 +5343,14 @@ Verbundsteinpflaster	RW1; 16852,14412 16873,14236 16881,14063 16875,13834 16868,
 Verbundsteinpflaster	RW2; 16868,13611 16866,13532
 	RW4; 16866,13532 16865,13423 16863,13138
 	RW3; 16863,13138 16865,13000 16860,12861
-	RW3; 16860,12861 16859,12752 16859,12683 16859,12613
-Grünbeschichtung	RW3; 16859,12613 16857,12600 16831,12419
+	RW3; 16860,12861 16859,12752
+Grünbeschichtung	RW3; 16859,12752 16859,12683
+Grünbeschichtung, Leitboys	RW3; 16859,12683 16859,12613
+Grünbeschichtung, teilweise mit Leitboys	RW3; 16859,12613 16857,12600 16831,12419
 	RW3; 16831,12419 16820,12339
 #: note: Siegfriedstr., Richtung Norden
-Grünbeschichtung	RW3; 16820,12339 16831,12419 16857,12600 16859,12613
-	RW3; 16859,12613 16859,12683
+Grünbeschichtung, teilweise mit Leitboys	RW3; 16820,12339 16831,12419 16857,12600 16859,12613
+Grünbeschichtung	RW3; 16859,12613 16859,12683
 	RW0; 16859,12683 16859,12752
 	RW3; 16859,12752 16860,12861
 	RW4; 16860,12861 16865,13000 16863,13138 16865,13423
@@ -5375,6 +5377,7 @@ Gehweg für Radfahrer frei	RW1; -1095,15621 -1115,15717 -1095,15865 -1409,16106 -
 #: by: https://pbs.twimg.com/media/GaGk1ZdWIAAqASH?format=jpg&name=large
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1497313.php
 #: by: https://www.berliner-woche.de/haselhorst/c-verkehr/arbeiten-wurden-puenktlich-beendet_a428191
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1547562.php (neue Fahrbahnsanierung zwischen Burscheider Weg und Gartenfelder Str., bis Mitte Juni 2025)
 #: XXX werden die Radwege Richtung Süden während der Bauarbeiten zwischen Lünette und Burscheider Weg ausgebessert?
 #: next_check: 2024-10-21
 schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433

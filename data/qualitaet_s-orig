@@ -483,7 +483,7 @@ Ackerstr.: Kopfsteinpflaster	Q2- 9804,14071 9750,14132 9627,14229
 Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13986 9514,13826 9535,13801 9670,13637
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
 #: by[removed]: http://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse-2/ (2. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) (mittlerweile umbenannt)
-#: by: https://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse/ (4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2025) (kein Datum mehr, Planung abgeschlossen)
+#: by: https://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse/ (4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2025) (kein Datum mehr, Planung abgeschlossen) (mittlerweile entfernt, auch von der Website)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/fahrbahn-und-gehwege-in-der-gerichts-und-gartenstrasse-1046099.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210223_sachstandsbericht.pdf (Asphaltierung, geplante Fertigstellung 2022)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (geplante Fertigstellung nun 2023, Stand August 2021)
@@ -1013,7 +1013,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="26"
-#: last_checked: 2025-01-04 (mapillary)
+#: last_checked: 2025-02-20 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -6268,7 +6268,8 @@ Schönecker Weg: Beton	Q0 22330,6973 22358,7093
 Wolfsgartenstr.: Asphalt	Q0 23011,6181 22994,6296 23002,6428
 Uhlenhorster Str.: Asphalt	Q0 23353,6384 23299,6541
 Uhlenhorster Str.: Betonpflaster	Q0- 23299,6541 23283,6601
-Uhlenhorster Str.: Kopfsteinpflaster	Q2- 23283,6601 23261,6683 23217,6779
+Uhlenhorster Str.: schlechtes Kopfsteinpflaster	Q3+ 23283,6601 23261,6683
+Uhlenhorster Str.: Kopfsteinpflaster	Q2- 23261,6683 23217,6779
 Frau-Holle-Str.: Kopfsteinpflaster	Q2 23471,6776 23412,6753 23261,6683
 Aschenbrödelstr.: Asphalt	Q0 23082,6925 23052,6957 22985,7007
 Rautendeleinweg: Asphalt	Q0 23164,6753 23112,6867 23082,6925
@@ -9155,7 +9156,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="13"
-#: last_checked: 2025-03-07
+#: last_checked: 2025-04-02
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -10965,6 +10966,7 @@ Karlsruher Str. (Mahlsdorf): Asphalt	Q0 23582,9591 23584,9629 23585,9672 23528,9
 (Mittelheide, Nord-Süd-Weg): Waldweg	Q1- 24293,7698 24275,7550 24185,6880
 (Mittelheide, Nord-Süd-Weg): Waldweg, Schotter	Q1- 24185,6880 24111,6348
 (Mittelheide, Nord-Süd-Weg): Waldweg	Q1- 24111,6348 24089,6144
+(Mittelheide - KGA Erpetal): Waldweg, etwas Schotter	Q1- 24111,6348 24219,6206 24240,6162
 (Mirower Str. - Mittelheide): Waldweg	Q1- 24387,7708 24356,7644 24275,7550
 (Mittelheide - S-Bhf. Hirschgarten): Waldweg	Q1- 24089,6144 24060,6059
 (KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q2+ 24329,6089 24297,6086 24222,6092 24120,6090 24060,6059
@@ -13723,7 +13725,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2025-02-19 vvv
+#: last_checked: 2025-04-02 vvv
 #: check_frequency: 60d vvv
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^
@@ -18803,7 +18805,9 @@ Seelower Str.: Kopfsteinpflaster	Q2 10778,16485 10754,16305 10739,16146 10729,16
 #: confirmed_by: mapillary
 Semliner Str.: Beton	Q0 22196,6957 22226,7012 22250,7119
 #: corrected_by: srt (Beton, Q0 -> ...)
-Semliner Str.: Asphalt/Beton, Schäden durch Wurzelhebungen	Q1- 22250,7119 22272,7242 22296,7366
+Semliner Str.: Asphalt/Beton, Schäden durch Wurzelhebungen	Q1 22250,7119 22272,7242
+#: corrected_by: srt (Beton, Q0 -> Asphalt/Beton, Schäden durch Wurzelhebungen, Q1- -> ..., neu gemacht)
+Semliner Str.: geflickter Asphalt	Q0- 22272,7242 22296,7366
 #: by ^^^
 # 
 #: by: Susanne Zöller: vvv
@@ -27487,7 +27491,8 @@ Wirsitzer Weg: guter Asphalt	Q0 22641,6918 22448,6957
 # 
 #: by: Anne Kraft:
 #: note: Bordsteinkante, q3, ignoriert
-Aschenbrödelstr.: Kopfsteinpflaster	Q2 22985,7007 22876,7090
+#: corrected_by: srt (Q2 -> Q2-)
+Aschenbrödelstr.: Kopfsteinpflaster	Q2- 22985,7007 22876,7090
 # 
 #: by: anja seyfarth
 #: note: Tempo 30-Zone
@@ -33909,5 +33914,9 @@ Einmündungsbereich asphaltiert	Q0 2191,6217
 Einmündungsbereich asphaltiert	Q0 1946,6042
 Kreuzungsbereich asphaltiert	Q0 1912,6024
 Kreuzungsbereich mit Kopfsteinpflaster	Q1- 4234,4020
+Kreuzungsbereich asphaltiert	Q0 24566,9456
+Einmündungsbereich asphaltiert	Q0 24412,9103
+Kreuzungsbereich asphaltiert	Q0 24437,8148
+Einmündungsbereich asphaltiert	Q0 24417,7984
 #: ignore ^^^
 #: section ^^^

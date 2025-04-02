@@ -254,7 +254,30 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022)
+#: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00
+	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+	2::temp 16610,1715 16767,1831
+',
+         'from' => 1746741600,
+         'id' => 952,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              5,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (10. und 11. Mai 2025)',
+         'type' => 'gesperrt',
+         'until' => 1747000799
+       },
        undef,
        undef,
        undef,
@@ -2433,7 +2456,53 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-frauenlauf.de/der-tag/strecke.html
+#: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
+#: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
+#: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
+#: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023) (inaktiv)
+#: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024) (inaktiv)
+#: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024) (inaktiv)
+# REMOVED --- #: tempex: 20170520 vvv
+	2::temp 8055,12186 8119,12414
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
+	2::temp 6778,11742 6980,11790 7058,11809 7173,11864 7182,11870 7200,11881 7240,11907 7449,11883
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7648,11708 7701,11798 7706,11878 7717,11918 7772,12040 7775,12114
+	2::temp 8026,11764 8016,11770 7793,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
+	2::temp 8522,12239 8466,12197
+	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
+	2::temp 7600,11513 7621,11541 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865
+	2::temp 8221,11885 8215,12156 8214,12205
+	2::temp 8244,11878 8327,12174 8344,12221
+	3 7429,12070 7383,12095 7031,12320
+	3 7875,12363 7822,12201 7816,12150 7823,12120
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201 7875,12363
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1747382400,
+         'id' => 2427,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              5,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 17. Mai 2025',
+         'type' => 'gesperrt',
+         'until' => 1747540800
+       },
        undef,
        undef,
        {
@@ -2497,7 +2566,38 @@ Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.die-classic-days-berlin.de/programm-2/
+#: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
+#: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
+#: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
+#: note: kann auch im Juni oder Juli stattfinden
+#: source_id: IM_025248 (inaktiv)
+#: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00 (inaktiv)
+#: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024) (inaktiv)
+#: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
+# REMOVED --- #: tempex: 20170616T0400-20170619T0400
+	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
+	q4::temp 5072,10701 5069,10662
+',
+         'from' => 1746669600,
+         'id' => 2439,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              5,
+                              'start',
+                              '2021-06-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 09.05.2025 04:00 Uhr bis 12.05.2025 05:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1747018800
+       },
        undef,
        undef,
        undef,
@@ -3569,6 +3669,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
 #: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
+#: by: https://www.tagesspiegel.de/berlin/berliner-halbmarathon-2025-strecke-sperrungen-und-termine-am-wochenende--ein-uberblick-13468081.html
 #: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
 #: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
@@ -4728,7 +4829,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2025-03-10 (okas) vvv
+#: last_checked: 2025-04-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-27 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -5929,38 +6030,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
-#: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
-#: source_id[inactive]: bvg2021:240#BVG326189_0
-#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
-#: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_238442
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
-#: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024) (inaktiv)
-#: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1858351927509365099 (nur Kfz-Verkehr)
-#: osm_watch: way id="198589911" version="23"
-# REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
-# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
-#: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
-#	q3::inwork 15856,10821 15793,10814
-#: add_fragezeichen: Sind auch Radfahrer von der Sperrung betroffen?
-#: priority: #B
-	2::inwork 15856,10821 15793,10814
-',
-         'from' => 1743347400,
-         'id' => 3885,
-         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind auch Radfahrer betroffen vom 31.03.2025 17:10 bis 04.04.2025 23:59',
-         'type' => 'handicap',
-         'until' => 1743803940
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6194,7 +6264,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (ex-G,B,T) vvv
-#: last_checked: 2025-03-19 (traffic) vvv
+#: last_checked: 2025-04-02 vvv
 # REMOVED --- #: check_frequency: 30d (outdoor) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-01-31 (Halteverbotsschilder) vvv
@@ -6356,7 +6426,7 @@ Gipsstr., etwa 30m	q2::inwork 10341,13376 10199,13446
 #: last_checked: 2025-04-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-09-23 vvv
-#: osm_watch: note 4069677 9
+#: osm_watch: note 4069677 10
 #: osm_watch: way id="375991056" version="17"
 #: osm_watch: way id="375958863" version="11"
 # REMOVED (hier existiert eine durchgängige Verbindung für Radfahrer, im Baustellenbereich meist als Radspur, kurzer Abschnitt als getrennter Rad/Gehweg) --- Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
@@ -6471,7 +6541,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025)
+         'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025)
 #: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
@@ -7236,15 +7306,16 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025) (inaktiv)
 #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
-#: also_indoor: traffic (G,H,B,T,ex-W)
+#: also_indoor: traffic (G,H,B,T,W)
 #: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
-#: last_checked: 2025-03-05
+#: last_checked: 2025-04-02 (traffic)
+#: check_frequency: 14d (traffic)
 	q3::inwork 2453,9156 2576,9132
 # REMOVED ---	q4::inwork 2453,9156 2337,9178
 ',
          'from' => 1729533901,
          'id' => 4200,
-         'text' => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., Ende der Bauarbeiten unbekannt',
+         'text' => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., evtl. auch bis Paulsborner Str., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7828,12 +7899,12 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 #: osm_watch: way id="275795707" version="3"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-03-24 vvv
-#: check_frequency: 15d vvv
+#: last_checked: 2025-04-02 vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: note: kann offen sein, aber nicht immer
 Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
-# REMOVED --- #: note: dauerhaft gesperrt
+#: note: wieder dauerhaft (?) gesperrt -> siehe auch neuen gesperrt-orig-Eintrag
 Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7922,38 +7993,21 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1899342020227080235 (hier nur Kfz-Verkehr)
 #: by: https://pbs.twimg.com/media/GlsnQ01XwAAbqgj?format=jpg&name=medium (gesperrte Bereiche je 40m lang)
-#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025)
+#: next_check: 2025-04-23 vvv
+#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
-#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025)
+#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten)
 Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
+#: next_check ^^^
 ',
          'from' => 1741586400,
          'id' => 4279,
-         'text' => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., vom 11.03.2025 07:00 bis 04.04.2025 17:00',
+         'text' => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., mindestens bis zum 23.04.2025',
          'type' => 'handicap',
-         'until' => 1743778800
+         'until' => undef
        },
        undef,
-       {
-         'data' => '# 
-#: next_check_id: WEISSENHOEHER-2025
-#: by: https://pascalgrothe.de/bahnbruecke-in-der-weissenhoeher-strasse-wird-abgerissen/ (von Februar bis Oktober 2025 zur Einbahnstraße in Richtung Westen, Abriss vom 14. März bis 14. November 2025, Ersatzneubau)
-#: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article408186475/monatelange-baustelle-abriss-der-eisenbahn-bruecke-in-biesdorf.html (Abschluss der Arbeiten Ende März 2026)
-#: by: https://christian-graeff.de/2025/01/21/abriss-der-bruecke-ueber-der-weissenhoeher-strasse/
-#: by: https://christian-graeff.de/wp-content/uploads/2025/02/Anwohnerinfo_DB_EUEWeissenh_TeilII.pdf
-#: by: https://pascalgrothe.de/neue-bahnbruecke-ueber-die-weissenhoeher-strasse-soll-in-diesem-jahr-befahren-werden/
-#: source_id: viz2021:13.550304,52.507594,19.03.2025,06:00 (bis 02.04.2025)
-#: also_indoor: traffic (none)
-# REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-03-14 (Beginn des Abrisses)
-	2::inwork 20354,11500 20150,11512
-',
-         'from' => 1742274000,
-         'id' => 4281,
-         'text' => 'Weißenhöher Str.: Brückenabriss, Sperrung auch für den Rad- und Fußverkehr, vom 19.03.2025 06:00 bis 02.04.2025 18:00',
-         'type' => 'gesperrt',
-         'until' => 1743609600
-       },
+       undef,
        {
          'data' => '#: note: Länge der Einbahnstraßenregelung ca. 100m, deshalb q4 -> q3
 #: note: Richtung Norden gibt es ab Blaschkoallee einen Hochbordradweg, der sich nach einigen Metern "verliert", evtl. wird toleriert, dass Radfahrer weiter auf dem Hochbord fahren
@@ -8043,6 +8097,24 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'text' => 'Seelingstr.: an der Schloßstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2025 07:00 bis 06.06.2025 18:00',
          'type' => 'handicap',
          'until' => 1749225600
+       },
+       {
+         'data' => '#: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
+#: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
+#: osm_watch: way id="36786796" version="23"
+#: osm_watch: way id="1089784248" version="2"
+#: osm_watch: way id="916522688" version="2"
+#: osm_watch: note 4693093 1
+#: also_indoor: traffic (H)
+#: last_checked: 2025-04-02
+#: check_frequency: 90d
+Merler Weg	q4::inwork 18852,13269 19180,13219
+',
+         'from' => undef,
+         'id' => 4290,
+         'text' => 'Merler Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt, nur ein sehr enger Bürgersteig vorhanden, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

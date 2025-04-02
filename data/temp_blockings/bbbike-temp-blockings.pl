@@ -8296,12 +8296,11 @@ EOF
 	2::temp 6228,13324 6105,13328 6022,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-03 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2024-05-05 23:59:59"),
+     { from  => $isodate2epoch->("2025-05-09 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2025-05-11 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 5, start => "2021-10-25T00:00:00"]], # note: findet 2021 vermutlich nicht statt
-       source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
-       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (4. und 5. Mai 2024)',
+       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (10. und 11. Mai 2025)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022)
@@ -22210,14 +22209,14 @@ EOF
 	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-03 10:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
-       until => $isodate2epoch->("2024-05-05 06:00:00"), # 1367704799, # 2013-05-04 23:59
+     { from  => $isodate2epoch->("2025-05-16 10:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57 # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-05-18 06:00:00"), # 1367704799, # 2013-05-04 23:59 # am nächsten Tag am Morgen
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5, start => "2021-10-25T00:00:00"]],
-       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 4. Mai 2023',
+       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 17. Mai 2025',
        type  => 'gesperrt',
-       source_id => 'https://www.berliner-frauenlauf.de/der-tag/strecke.html',
        data  => <<EOF,
+#: by: https://www.berliner-frauenlauf.de/der-tag/strecke.html
 #: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
 #: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
 #: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
@@ -22403,11 +22402,11 @@ EOF
 	2::temp 3976,11869 3801,11858
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-02 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2024-05-06 05:00:00"), #
+     { from  => $isodate2epoch->("2025-05-08 04:00:00"), # ein Tag Vorlauf vor der Sperrung, die einen Tag vor der Verantaltung beginnt
+       until => $isodate2epoch->("2025-05-12 05:00:00"), # Sperrung typischerweise bis in den Morgen des nächsten Tages
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 5, start => "2021-06-01T00:00:00"]], # auf 2021 verlegt --- auf 2020 verlegt
-       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 03.05.2024 04:00 Uhr bis 06.05.2024 05:00 Uhr',
+       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 09.05.2025 04:00 Uhr bis 12.05.2025 05:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.die-classic-days-berlin.de/programm-2/
@@ -30044,6 +30043,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
 #: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
+#: by: https://www.tagesspiegel.de/berlin/berliner-halbmarathon-2025-strecke-sperrungen-und-termine-am-wochenende--ein-uberblick-13468081.html
 #: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
 #: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
@@ -36327,7 +36327,7 @@ EOF
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2025-03-10 (okas) vvv
+#: last_checked: 2025-04-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-27 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -37414,6 +37414,7 @@ EOF
        data  => <<EOF,
 #: source_id: 226502047 (bis 27.11.2024) (inaktiv)
 #: by: https://bauprojekte.deutschebahn.com/p/hennigsdorf-marwitzer-strasse-eue?date=20240925 (Sperrung auch für Fußgänger + Radverkehr bis 20.12.2024, weitere Sperrung 2025)
+#: by: https://www.berliner-zeitung.de/news/nach-3-jahren-bauarbeiten-im-norden-berlins-marwitzer-strasse-in-reinickendorf-wieder-frei-li.2312139
 #: note: auch für Fußgänger gesperrt
 	2::inwork -3475,26523 -3556,26560
 EOF
@@ -41202,7 +41203,7 @@ EOF
 EOF
      },
      { from  => 1743347400, # 2025-03-30 17:10, # $isodate2epoch->("2024-11-17 00:00:00"), # $isodate2epoch->("2024-09-13 00:00:00"), # 1691906400, # 2023-08-13 08:00
-       until => 1743803940, # 2025-04-04 23:59, # 1732913137, # $isodate2epoch->("2024-11-29 23:59:59"), # $isodate2epoch->("2024-09-20 20:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
+       until => 1743596434, # 1743803940, # 2025-04-04 23:59, # 1732913137, # $isodate2epoch->("2024-11-29 23:59:59"), # $isodate2epoch->("2024-09-20 20:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
 #      text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 22.06.2024 17:00', # -> handicap_s-orig
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmale Schutztunnel existieren, bis 20.09.2024 20:00 Uhr',
@@ -41223,6 +41224,7 @@ EOF
 #: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
 #: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
 #: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024) (inaktiv)
+#: source_id: bvg2024:194#HIM_FREETEXT_274938 (ab 4.4.2024, kein Endedatum)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
@@ -41232,8 +41234,7 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
 #: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
 #	q3::inwork 15856,10821 15793,10814
-#: add_fragezeichen: Sind auch Radfahrer von der Sperrung betroffen?
-#: priority: #B
+# REMOVED (2025-04-02: keine Sperrung) --- #: add_fragezeichen: Sind auch Radfahrer von der Sperrung betroffen? --- #: priority: #B
 	2::inwork 15856,10821 15793,10814
 EOF
      },
@@ -42547,7 +42548,7 @@ EOF
 # REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (ex-G,B,T) vvv
-#: last_checked: 2025-03-19 (traffic) vvv
+#: last_checked: 2025-04-02 vvv
 # REMOVED --- #: check_frequency: 30d (outdoor) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-01-31 (Halteverbotsschilder) vvv
@@ -43032,7 +43033,7 @@ EOF
 #: last_checked: 2025-04-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-09-23 vvv
-#: osm_watch: note 4069677 9
+#: osm_watch: note 4069677 10
 #: osm_watch: way id="375991056" version="17"
 #: osm_watch: way id="375958863" version="11"
 # REMOVED (hier existiert eine durchgängige Verbindung für Radfahrer, im Baustellenbereich meist als Radspur, kurzer Abschnitt als getrennter Rad/Gehweg) --- Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
@@ -43454,7 +43455,7 @@ EOF
        text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025)
+#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025)
 #: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
@@ -45850,16 +45851,17 @@ EOF
        until => undef, # $isodate2epoch->("2025-01-23 13:00:00"), # 1737154800, # 2025-01-18 00:00
 #      text  => 'Lynarstr.: Sperrung zwischen Humboldtstr. und Wangenheimstr., evtl. sind auch Radfahrer betroffen, bis 17.01.2025',
 #      text  => 'Lynarstr.: Sperrung zwischen Hubertusallee und Humboldtstr., evtl. sind auch Radfahrer betroffen, bis 23.01.2025',
-       text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., Ende der Bauarbeiten unbekannt',
+       text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., evtl. auch bis Paulsborner Str., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
 #: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025) (inaktiv)
 #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
-#: also_indoor: traffic (G,H,B,T,ex-W)
+#: also_indoor: traffic (G,H,B,T,W)
 #: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
-#: last_checked: 2025-03-05
+#: last_checked: 2025-04-02 (traffic)
+#: check_frequency: 14d (traffic)
 	q3::inwork 2453,9156 2576,9132
 # REMOVED ---	q4::inwork 2453,9156 2337,9178
 EOF
@@ -46792,12 +46794,12 @@ EOF
 #: osm_watch: way id="275795707" version="3"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-03-24 vvv
-#: check_frequency: 15d vvv
+#: last_checked: 2025-04-02 vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: note: kann offen sein, aber nicht immer
 Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
-# REMOVED --- #: note: dauerhaft gesperrt
+#: note: wieder dauerhaft (?) gesperrt -> siehe auch neuen gesperrt-orig-Eintrag
 Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -46913,16 +46915,19 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 EOF
      },
      { from  => 1741586400, # 2025-03-10 07:00
-       until => 1743778800, # 2025-04-04 17:00
-       text  => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., vom 11.03.2025 07:00 bis 04.04.2025 17:00',
+       until => undef, # 1743778800, # 2025-04-04 17:00
+#      text  => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., vom 11.03.2025 07:00 bis 04.04.2025 17:00',
+       text  => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., mindestens bis zum 23.04.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1899342020227080235 (hier nur Kfz-Verkehr)
 #: by: https://pbs.twimg.com/media/GlsnQ01XwAAbqgj?format=jpg&name=medium (gesperrte Bereiche je 40m lang)
-#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025)
+#: next_check: 2025-04-23 vvv
+#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
-#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025)
+#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten)
 Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
+#: next_check ^^^
 EOF
      },
      { from  => 1742101200, # 2025-03-16 06:00
@@ -46946,7 +46951,7 @@ EOF
 #: by: https://christian-graeff.de/2025/01/21/abriss-der-bruecke-ueber-der-weissenhoeher-strasse/
 #: by: https://christian-graeff.de/wp-content/uploads/2025/02/Anwohnerinfo_DB_EUEWeissenh_TeilII.pdf
 #: by: https://pascalgrothe.de/neue-bahnbruecke-ueber-die-weissenhoeher-strasse-soll-in-diesem-jahr-befahren-werden/
-#: source_id: viz2021:13.550304,52.507594,19.03.2025,06:00 (bis 02.04.2025)
+#: source_id: viz2021:13.550304,52.507594,19.03.2025,06:00 (bis 02.04.2025) (inaktiv)
 #: also_indoor: traffic (none)
 # REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-03-14 (Beginn des Abrisses)
@@ -47033,6 +47038,23 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025)
 	q4::inwork 3088,12094 2920,12070
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Merler Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt, nur ein sehr enger Bürgersteig vorhanden, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
+#: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
+#: osm_watch: way id="36786796" version="23"
+#: osm_watch: way id="1089784248" version="2"
+#: osm_watch: way id="916522688" version="2"
+#: osm_watch: note 4693093 1
+#: also_indoor: traffic (H)
+#: last_checked: 2025-04-02
+#: check_frequency: 90d
+Merler Weg	q4::inwork 18852,13269 19180,13219
 EOF
      },
     );
