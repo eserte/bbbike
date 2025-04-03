@@ -30053,6 +30053,9 @@ EOF
 #: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
 #: source_id: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
+#: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025)
+#: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025)
+#: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -41202,13 +41205,13 @@ EOF
 	2::inwork -19289,63424 -19675,64106
 EOF
      },
-     { from  => 1743347400, # 2025-03-30 17:10, # $isodate2epoch->("2024-11-17 00:00:00"), # $isodate2epoch->("2024-09-13 00:00:00"), # 1691906400, # 2023-08-13 08:00
-       until => 1743596434, # 1743803940, # 2025-04-04 23:59, # 1732913137, # $isodate2epoch->("2024-11-29 23:59:59"), # $isodate2epoch->("2024-09-20 20:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
+     { from  => $isodate2epoch->("2025-04-03 00:00:00"), # 1743347400, # 2025-03-30 17:10, # $isodate2epoch->("2024-11-17 00:00:00"), # $isodate2epoch->("2024-09-13 00:00:00"), # 1691906400, # 2023-08-13 08:00
+       until => $isodate2epoch->("2025-04-14 17:00:00"), # 1743596434, # 1743803940, # 2025-04-04 23:59, # 1732913137, # $isodate2epoch->("2024-11-29 23:59:59"), # $isodate2epoch->("2024-09-20 20:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
 #      text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 22.06.2024 17:00', # -> handicap_s-orig
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmale Schutztunnel existieren, bis 20.09.2024 20:00 Uhr',
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmale Schutztunnel existieren, vom 18.11.2024 bis 29.11.2024',
-       text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind auch Radfahrer betroffen vom 31.03.2025 17:10 bis 04.04.2025 23:59',
+       text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 04.04.2025 09:00 bis 14.04.2025 17:00',
        type  => 'handicap',
 #      type  => 'gesperrt',
        data  => <<'EOF',
@@ -41225,6 +41228,7 @@ EOF
 #: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
 #: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024) (inaktiv)
 #: source_id: bvg2024:194#HIM_FREETEXT_274938 (ab 4.4.2024, kein Endedatum)
+#: source_id: viz2021:13.483638,52.502149,04.04.2025,09:00 (Sperrung auch für den Radverkehr, aber nicht für den Fußverkehr, bis 14.04.2025)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
@@ -41235,7 +41239,7 @@ EOF
 #: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
 #	q3::inwork 15856,10821 15793,10814
 # REMOVED (2025-04-02: keine Sperrung) --- #: add_fragezeichen: Sind auch Radfahrer von der Sperrung betroffen? --- #: priority: #B
-	2::inwork 15856,10821 15793,10814
+	q4::inwork 15856,10821 15793,10814
 EOF
      },
      { from  => 1691862875, # 2023-08-12 19:54
@@ -44108,11 +44112,12 @@ EOF
 	q4::temp::play 3217,12239 3072,12222
 EOF
      },
-     { from  => $isodate2epoch->("2024-09-05 00:00:00"), # 1717092000, # 2024-05-30 20:00
-       until => $isodate2epoch->("2024-09-08 22:00:00"), # 1717387200, # 2024-06-03 06:00
+     { from  => $isodate2epoch->("2025-04-03 00:00:00"), # $isodate2epoch->("2024-09-05 00:00:00"), # 1717092000, # 2024-05-30 20:00 # ein Tag Vorlauf
+       until => $isodate2epoch->("2025-04-07 04:00:00"), # $isodate2epoch->("2024-09-08 22:00:00"), # 1717387200, # 2024-06-03 06:00
 #      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 31.05.2024 20:00 bis 03.06.2024 06:00',
-#       text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 30.08.2024 20:00 bis 01.09.2024 22:00',
-       text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 06.09.2024 20:00 bis 08.09.2024 22:00',
+#      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 30.08.2024 20:00 bis 01.09.2024 22:00',
+#      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 06.09.2024 20:00 bis 08.09.2024 22:00',
+       text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 04.04.2025 20:00 bis 07.04.2025 04:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
@@ -44122,6 +44127,7 @@ EOF
 #: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
 #: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
+#: source_id: viz2021:13.361338,52.446986,04.04.2025,20:00 (bis 07.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
 #: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
 #: by: https://www.youtube.com/watch?v=YI1O5phpGiE
@@ -44364,12 +44370,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-02-09 00:00:00"), # 1719122400, # 2024-06-23 08:00
-       until => $isodate2epoch->("2025-04-14 17:00:00"), # $isodate2epoch->("2024-12-20 08:00:00"), # 1732647718, # 1732978800, # 2024-11-30 16:00
+       until => $isodate2epoch->("2025-04-04 17:00:00"), # $isodate2epoch->("2024-12-20 08:00:00"), # 1732647718, # 1732978800, # 2024-11-30 16:00
 #      text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 24.06.2024 08:00 Uhr bis 20.12.2024 08:00 Uhr',
-       text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 10.02.2025 08:00 Uhr bis 14.04.2025 17:00 Uhr',
+       text  => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 10.02.2025 08:00 Uhr bis 04.04.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/125 (bis 30.11.2024) (inaktiv) (bis 20.12.2024) (Wintersicherung, bis 14.04.2025) (Wiederaufnahme)
+#: source_id: LS/221-F/24/125 (bis 30.11.2024) (inaktiv) (bis 20.12.2024) (Wintersicherung, bis 14.04.2025) (Wiederaufnahme) (bis 04.04.2025)
 	2::inwork 54410,20569 54169,20358 53940,20148
 EOF
      },
@@ -45065,20 +45071,21 @@ EOF
      },
      { from  => 1727647200, # 2024-09-30 00:00
        until => undef, # XXX
-       text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem IV. Quartal 2024',
+       text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem IV. Quartal 2024 (Stand Ende März 2025: Bauarbeiten haben noch nicht begonnen)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
 #: by: https://www.tagesspiegel.de/berlin/start-der-kirschblutensaison-wo-es-in-berlin-am-schonsten-bluht-13420069.html (Erwähnung der Sperrung der "Kirschblütenallee", bis Ende 2025)
+#: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article408670731/warum-die-kirschbluetenallee-bis-jahresende-gesperrt-bleibt.html (Ende März 2025: noch keine Sperrung)
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
 #: osm_watch: way id="27260309" version="18"
 #: osm_watch: way id="372791173" version="8"
 #: osm_watch: way id="27260312" version="23"
 #: add_fragezeichen: Haben die Bauarbeiten bereits begonnen?
-#: last_checked: 2025-03-27 (Tsp)
-#: check_frequency: 90d
+#: last_checked: 2025-03-30 (MoPo)
+#: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 EOF
@@ -47026,6 +47033,7 @@ EOF
        text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 6.4.2025',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: LS/223-P/25/019 (bis 07.04.2025)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
