@@ -452,7 +452,7 @@ Kavalierstr.	1 10621,18837 10721,18575
 # REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
-#: osm_watch: way id="4637773" version="26"
+#: osm_watch: way id="4637773" version="27"
 #: next_check: 2025-06-15
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
@@ -3974,9 +3974,9 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
 #: last_checked: 2025-03-15 (mapillary) vvv
 #: next_check: 2025-06-15 vvv
-#: osm_watch: way id="1199394070" version="4"
+#: osm_watch: way id="1199394070" version="5"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
-#: osm_watch: way id="174271093" version="23"
+#: osm_watch: way id="174271093" version="24"
 Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 #: next_check ^^^
 #: last_checked ^^^
@@ -4005,7 +4005,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 # 
 #: osm_watch[closed]: note 4165928 1
-#: last_checked: 2025-02-08
+#: last_checked: 2025-04-04
 #: check_frequency: 60d
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -4371,7 +4371,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-04-02
+#: last_checked: 2025-04-04
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4379,7 +4379,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-04-02 vvv
+#: last_checked: 2025-04-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4420,9 +4420,9 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
-#: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025)
+#: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-04-02
+#: last_checked: 2025-04-04
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4486,14 +4486,15 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 # REMOVED (laut osm offen) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: last_checked: 2023-01-20 --- #: check_frequency: 14d --- #: next_check: 2023-02-01 --- (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
 # REMOVED (-> nur temp blockings ist nun aktiv) --- #: next_check_id: SPREEPARK-2022 --- #: last_checked: 2023-05-03 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: -20230630 vvv --- Wasserweg: Weg wegen Bauarbeiten gesperrt	2::inwork 15678,8911 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821 --- Platz vor dem Spreepark: wegen Bauarbeiten gesperrt	2::inwork 16086,8860 16084,8833 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: note: zwischenzeitlich waren die Einfahrt-verboten-Schilder mit "Radfahrer frei"-Zusatzschildern versehen, nun (2025-03) gibt es keine Zusatzschilder mehr
-#: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
-#: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
-#: osm_watch: way id="1063629745" version="1"
-#: last_checked: 2025-04-02
-#: check_frequency: 30d
-Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
+# REMOVED (mittlerweile ist das Zusatzschild wieder da)
+# REMOVED --- #: note: zwischenzeitlich waren die Einfahrt-verboten-Schilder mit "Radfahrer frei"-Zusatzschildern versehen, nun (2025-03) gibt es keine Zusatzschilder mehr
+# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/14882-friedrichshain-so-s%C3%BCdl-der-frankfurter-allee-%C3%B6stl-der-warschauer-str/?postID=738701#post738701
+# REMOVED --- #: by: https://www.buero-sge.de/de/referenzen/12-referenzen/198-simplonstrasse-53-53a-holteistrasse-2
+# REMOVED --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_15_0879_0950_online.pdf (Grundstücksnummerierungen)
+# REMOVED --- #: osm_watch: way id="1063629745" version="1"
+# REMOVED --- #: last_checked: 2025-04-02
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- Holteistr.: Hochbauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 14535,11327 14506,11275
 # 
 # REMOVED (offen) --- #: next_check_id: GENDARMENMARKT-2023 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gerade-unter-denkmalschutz-gestellte-gendarmenmarkt-soll-ab-2022-saniert-werden_a301569 (August 2022 - Ende 2024, keine Veranstaltungen während dieser Zeit) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10876 (Frage) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10985 (Frage) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1253713.php (Start der bauvorbereitenden Arbeiten: 2022-10-12) --- #: by: https://gruen-berlin.de/projekte/urbane-freiraeume/gendarmenmarkt --- #: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/ --- #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-13-jahren-stillstand-beginnen-nun-die-bauarbeiten-zur-neugestaltung-des-gendarmenmarkts_a360590 --- #: by: https://www.deutsches-architekturforum.de/thread/9726-rund-um-den-gendarmenmarkt/?postID=731755#post731755 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1391568.php (Hauptarbeiten bis Ende 2024) --- #: by: https://entwicklungsstadt.de/berlin-mitte-sichtbarer-fortschritt-beim-umbau-des-gendarmenmarktes/ --- #: by: https://www.tagesspiegel.de/kultur/classic-open-air-auf-dem-gendarmenmarkt-neustart-mit-anna-netrebko-12869530.html (Wiedereröffnung spätestens am 17. Juli 2025) --- #: by: https://gruen-berlin.de/pressemitteilung/gendarmenmarkt-hauptbaumassnahmen-in-rekordtempo-abgeschlossen (Freigabe im Februar 2025) --- #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gendarmenmarkt-hat-seine-schoenheitskur-fast-hinter-sich_a432984 --- #: by: https://www.rbb24.de/panorama/beitrag/2025/03/berlin-gendarmenmarkt-eroeffnung-sanierung.html (Eröffnung am 13. März 2025) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1540307.php (Eröffnung) --- #: last_checked: 2025-03-09 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2025-03-13 vvv --- #: note: nur Durchgang zum Konzerthaus von der Charlottenstr. möglich vvv --- #: osm_watch: way id="766868087" version="14" --- Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9523,12019 9656,12031 --- #: osm_watch: way id="766868090" version="17" --- Gendarmenmarkt: Sanierung, Durchgang gesperrt	2::inwork 9536,11922 9666,11935 --- #: note ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
@@ -4604,7 +4605,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED (offen) --- #: next_check_id: AUERDREIECK-2022 --- #: last_checked: 2023-10-08 --- #: check_frequency: 7d --- #: next_check: 2023-10-31 --- Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selbst überlassen
-#: osm_watch: note 3250345 3
+#: osm_watch: note 3250345 4
 #: last_checked: 2025-04-02
 #: check_frequency: 180d
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
@@ -4619,11 +4620,11 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: note: siehe auch temp-blockings-Eintrag (mit Endedatum Ende 2024 bzw. Herbst 2025); hier etwa alle drei Monate prüfen (und next_check+valid manuell setzen)
 # REMOVED --- #: next_check: 2023-06-27 vvv
 # REMOVED --- #: valid: -20230627 vvv
-#: osm_watch: way id="8042966" version="26"
-#: osm_watch: way id="8042965" version="24"
-#: osm_watch: way id="8043414" version="40"
+#: osm_watch: way id="8042966" version="27"
+#: osm_watch: way id="8042965" version="25"
+#: osm_watch: way id="8043414" version="41"
 #: osm_watch: note 3248363 8
-#: last_checked: 2025-02-17 (osm note)
+#: last_checked: 2025-04-03 (osm)
 #: next_check: 2025-11-30 (maz)
 #: valid: -20251130
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699
@@ -4935,8 +4936,8 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen
-#: last_checked: 2025-03-26
+#: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
+#: last_checked: 2025-04-04
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259

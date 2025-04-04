@@ -117,7 +117,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-04-02
+#: last_checked: 2025-04-04
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -714,12 +714,12 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Friedrichsfelde ###
 # 
-#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025
+#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025; nun bis 22.04.2025, allerdings laufen schon Asphaltierungs- und Pflasterarbeiten
 #: also_indoor: traffic (ex-G,B,T)
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
-#: last_checked: 2025-03-24 vvv
+#: last_checked: 2025-04-04 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-03-28 (Halteverbotsschilder) vvv
+#: next_check: 2025-04-22 (Halteverbotsschilder) vvv
 # REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956
@@ -787,7 +787,7 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 # 
 #: next_check_id: WESTUMFAHRUNGBAHNHOF-2023
 #: next_check_id: HAEMMERLING-2022
-#: osm_watch: note 3949358 2
+#: osm_watch: note 3949358 3
 #: osm_watch: way id="24695200" version="19"
 #: last_checked: 2025-04-02
 #: check_frequency: 120d
@@ -1024,7 +1024,16 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 # 
 ### Lichtenberg ###
 # 
-#: last_checked: 2025-04-02
+#: XXX Laut Schild der Wasserbetriebe bis Juni 2025
+#: note: eigentlich gibt es auch Beschränkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt möglich
+#: last_checked: 2025-04-04
+#: check_frequency: 45d
+#: next_check: 2025-06-01
+#: valid: -20250630
+Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 17155,11348
+# 
+#: last_checked: 2025-04-04
+#: check_frequency: 21d
 Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # 
 #: next_check_id: SCHEFFEL-2024
@@ -1187,7 +1196,7 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 #: source_id: bvg2024:195#HIM_FREETEXT_271433 (ohne Endedatum)
 #: source_id: viz2021:13.582334,52.539807,03.04.2025,10:00 (nur Kfz-Verkehr, bis 07.04.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
-#: osm_watch: note 3581028 6
+#: osm_watch: note 3581028 7
 #: last_checked: 2025-04-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-31 (BVG-Meldung) vvv

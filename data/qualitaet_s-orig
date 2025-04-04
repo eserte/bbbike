@@ -496,7 +496,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12855 (Antrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20241203-mobilitaetsrat-mitte-protokoll-barrierefrei-entwurf.pdf (Erwähnung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: osm_watch: note 3954718 4 (Fahrradstraße?)
+#: osm_watch: note 3954718 5 (Fahrradstraße?)
 #: last_checked: 2025-01-12 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-31 (infravelo) vvv
@@ -12629,13 +12629,12 @@ Händelplatz: Beton	Q0- 4568,4789 4543,4820
 (Charité-Campus Benjamin Franklin): Asphalt	Q0 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 # REMOVED --- (provisorische Zufahrt zum Benjamin Franklin): Feinschotter	Q1 4947,3672 4944,3695 4926,3749
 # REMOVED --- (provisorische Zufahrt zum Benjamin Franklin): Feinschotter	Q1 5110,4179 5130,4195 5131,4207
-#: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238
 Klingsorstr.: schadhafter Asphalt	Q1+ 4760,4075 4634,4053 4551,4042
 Klingsorstr.: schadhafter Asphalt	Q1 4834,4102 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
 # REMOVED (confirmed) --- #: next_check_id: KLINGSOR-2023 --- #: add_fragezeichen: Sind die Bauarbeiten in der Klingsorstr. beendet? Wurde die Fahrbahndecke vollständig saniert? --- #: XXX bei osm von intermediate auf good verbessert, trotzdem mal nachschauen! --- #: osm_watch: way id="149994023" version="20" --- #: osm_watch[closed]: note 3989114 2 --- #: last_checked: 2023-09-14 --- #: next_check: 2023-11-15
-#: historical_note: früher: schadhafter Asphalt, Q1+
+#: historical_note: früher (bis Herbst 2023): schadhafter Asphalt, Q1+
 Klingsorstr.: Asphalt	Q0 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
-#: historical_note: früher schadhafter Asphalt, Q1+
+#: historical_note: früher: schadhafter Asphalt, Q1+
 Klingsorstr.: Asphalt	Q0 5535,5068 5583,5179
 (Görlitzer Park, zur Forster Str.): wassergebundene Decke	Q1- 12670,10160 12592,10112 12564,10121
 (Görlitzer Park, zur Forster Str.): gepflastert/Asphalt	Q2 12564,10121 12556,10116 12507,10130
@@ -13725,7 +13724,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2025-04-02 vvv
+#: last_checked: 2025-04-04 vvv
 #: check_frequency: 60d vvv
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^

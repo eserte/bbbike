@@ -3,6 +3,13 @@
 #:
 #: temporary vvv
 # 
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1548659.php (zunächst bis Ende 2025)
+#: source_id: viz2021:13.278443,52.516243,04.04.2025,08:00 (kein Endedatum)
+#: next_check: 2025-12-31
+#: valid: -20251231
+Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
+# 
 #: next_check_id: BHFBLANKENFELDE-2023
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (Beginn der Bauarbeiten)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20230703/
@@ -36,7 +43,7 @@ Schlangenbader Str.: Einbahnstraßenregelung, mit entgegengesetzter provisorische
 # REMOVED (laut osm existiert die Unterführung) --- #: XXX neue Unterführung wird gebaut --- #: last_checked: 2021-08-27 --- #: check_frequency: 360d --- Wünsdorf: Bahnübergang gesperrt	2 15353,-26857 15536,-26728 15580,-26698 15602,-26674
 # 
 #: next_check_id: GUTHELLERSDORF-2024
-#: osm_watch: way id="1310654603" version="4"
+#: osm_watch: way id="1310654603" version="5"
 #: osm_watch: note 4362261 10
 #: last_checked: 2025-04-02
 #: check_frequency: 60d

@@ -3680,7 +3680,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
 #: source_id: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
 #: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025)
-#: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025)
+#: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025) (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
@@ -4121,7 +4121,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.42885,52.47792,01.04.2021,10:17 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.12.2025)
-#: source_id: viz2021:13.42885,52.47792,01.04.2025,12:21 (bis 31.12.2025)
+#: source_id: viz2021:13.42885,52.47792,01.04.2025,12:21 (bis 31.12.2025) (inaktiv)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
@@ -5247,7 +5247,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-03-31 (osm)
+#: last_checked: 2025-04-04
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5809,7 +5809,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-03-12
+#: last_checked: 2025-04-04
 #: check_frequency: 90d
 #: next_check: 2025-06-30
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -6047,7 +6047,8 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
 #: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024) (inaktiv)
 #: source_id: bvg2024:194#HIM_FREETEXT_274938 (ab 4.4.2024, kein Endedatum)
-#: source_id: viz2021:13.483638,52.502149,04.04.2025,09:00 (Sperrung auch für den Radverkehr, aber nicht für den Fußverkehr, bis 14.04.2025)
+#: source_id: viz2021:13.483638,52.502149,04.04.2025,09:00 (Sperrung auch für den Radverkehr, aber nicht für den Fußverkehr, bis 14.04.2025) (inaktiv)
+#: source_id: viz2021:13.483638,52.502149,04.04.2025,07:00 (bis 14.04.2025)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
@@ -6055,10 +6056,8 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: osm_watch: way id="198589911" version="23"
 # REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
-#: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden
-#	q3::inwork 15856,10821 15793,10814
-# REMOVED (2025-04-02: keine Sperrung) --- #: add_fragezeichen: Sind auch Radfahrer von der Sperrung betroffen? --- #: priority: #B
-	q4::inwork 15856,10821 15793,10814
+#: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden; am 2025-04-04 ebenfalls zwei Schutztunnel, deshalb q4 -> q3
+	q3::inwork 15856,10821 15793,10814
 ',
          'from' => 1743631200,
          'id' => 3885,
@@ -6515,7 +6514,7 @@ nördliche Rathenower Str.: Überfahrt gesperrt	2::inwork 6730,14021 6719,14047
 #: note: 2. Bauabschnitt, 1. Teilabschnitt; später wird östlich des Siemensstegs weitergebaut
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
-#: osm_watch: note 4210969 6
+#: osm_watch[closed]: note 4210969 6
 #: last_checked: 2025-03-12 (daf) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
@@ -6797,16 +6796,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LS/221-F/24/125 (bis 30.11.2024) (inaktiv) (bis 20.12.2024) (Wintersicherung, bis 14.04.2025) (Wiederaufnahme) (bis 04.04.2025)
-	2::inwork 54410,20569 54169,20358 53940,20148
-',
-         'from' => 1739055600,
-         'id' => 4093,
-         'text' => 'Ortsdurchfahrt Bollersdorf: Bauarbeiten, Sperrung, 10.02.2025 08:00 Uhr bis 04.04.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1743778800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022) (mittlerweile: Baubeginn Juni 2024) (mittlerweile: "Voraussichtliche Bauzeit: Juni 2024 - Juni 2027")
@@ -7617,17 +7607,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: 246002279 (bis 21.02.2025) (inaktiv)
-#: source_id: 256000273 (bis 04.04.2025)
-	2::inwork 24749,22618 24719,22727 24718,22731 24761,23151
-',
-         'from' => 1743116400,
-         'id' => 4235,
-         'text' => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 29.03.2025 05:00 Uhr bis 04.04.2025 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1743782400
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (G,T,B,A)
 #: last_checked: 2025-03-26
@@ -8159,10 +8139,11 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
        {
          'data' => '#: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
-#: osm_watch: way id="36786796" version="23"
-#: osm_watch: way id="1089784248" version="2"
-#: osm_watch: way id="916522688" version="2"
-#: osm_watch: note 4693093 1
+# REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
+#: osm_watch: way id="1089784248" version="3"
+# REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
+#: osm_watch: way id="1374232475" version="1"
+#: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (H)
 #: last_checked: 2025-04-02
 #: check_frequency: 90d
