@@ -569,6 +569,7 @@
 	  (string-match "//www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/" url) ; also old Amtsblatt URLs, not available anymore online
 	  (string-match "//www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_" url) ; only last five issues are available online
 	  (string-match "//abendblatt-berlin.de/" url) ; domain not available anymore
+	  (string-match "//www.berliner-woche.de/" url) ; domain not available anymore
 	  )
       (bbbike-view-cached-url url)
     (let ((url (bbbike--normalize-url url)))
