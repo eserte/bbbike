@@ -5,6 +5,7 @@
 # 
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1548659.php (zunächst bis Ende 2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/folgen-der-a100-bruckensperrung-einbahnstrasse-soll-den-schleichverkehr-in-berlin-westend-reduzieren-13491112.html
 #: source_id: viz2021:13.278443,52.516243,04.04.2025,08:00 (kein Endedatum)
 #: next_check: 2025-12-31
 #: valid: -20251231
@@ -67,6 +68,10 @@ Warschauer - Kopernikus	3 13603,11538 13651,11731 13467,11778
 Warschauer/Boxhagener	3nocross 13785,12292 13745,12118 13696,11920
 Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
+#: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
+#: priority: #D
+#: last_checked: 2025-04-05
+#: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
 Boxhagener - Neue Bahnhof	3 14799,11330 14918,11249 14945,11300 15016,11431
@@ -1571,6 +1576,8 @@ Rigaer Str.	2:Anlieger 13761,12578 13991,12522 14091,12494 14133,12482 14266,124
 Silvio-Meier-Str.	2:Anlieger 14381,12207 14451,12396
 Waldeyerstr	2:Anlieger 14926,12129 15003,12241
 # 
+#: last_checked: 2025-04-05 (zurzeit noch nicht wiederhergestellt)
+#: priority: #D
 Karl-Marx-Platz: Poller	3 * 13130,7633 *
 # 
 (Wohngebiet an der Kopenhagener Str.): Einbahnstraße außer für Radfahrer	1 7578,19753 7546,19665 7578,19648

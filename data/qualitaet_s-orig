@@ -711,8 +711,10 @@ Karl-Marx-Str.: Asphalt mit einigen Unebenenheiten	Q0- 11831,8989 11880,8955 119
 #: historical_note: früher: Asphalt mit Schäden, Q0-
 Karl-Marx-Str.: Asphalt	Q0 12330,8636 12494,8501
 #: historical_note: früher (bis Feb 2025): Kopfsteinpflaster, Q2-
-Karl-Marx-Platz: etwas glatteres Kopfsteinpflaster	Q2+ 12972,7602 13100,7626
-Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13130,7633 13174,7644
+Karl-Marx-Platz: glatteres Kopfsteinpflaster	Q1- 12972,7602 13100,7626
+#: historical_note: früher (bis Apr 2025): Kopfsteinpflaster, Q2
+Karl-Marx-Platz: glatteres Kopfsteinpflaster	Q1- 13100,7626 13130,7633
+Karl-Marx-Platz: Kopfsteinpflaster	Q2 13130,7633 13174,7644
 Richardplatz: Kopfsteinpflaster	Q2 13174,7644 13288,7653
 Richardplatz: Kopfsteinpflaster, Fugen mit Asphalt vergossen	Q2+ 13288,7653 13378,7695
 Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12987,7560 13100,7626
@@ -2296,7 +2298,8 @@ Schinkelplatz: Asphalt	Q0 9984,12426 9990,12404 9996,12372 10006,12306 10010,122
 Schinkelplatz: mäßiges Kopfsteinpflaster	Q2 10058,12290 10010,12275
 An der Kommandantur: Asphalt	Q0 9996,12372 9943,12364
 Schinkelplatz: mäßiges Kopfsteinpflaster	Q2 9990,12404 10058,12290 10091,12232
-Sorauer Str.: Kopfsteinpflaster, teilweise mäßig, teilweise OK	Q2+ 12822,10487 12682,10258
+#: historical_note: früher: Kopfsteinpflaster, teilweise mäßig, teilweise OK, Q2+; mittlerweile schlechter geworden
+Sorauer Str.: Kopfsteinpflaster	Q2 12822,10487 12682,10258
 am Beisheim-Center: glatt gepflastert	Q0- 8322,11715 8387,11637 8442,11555
 Hans-Bülow-Str.: Asphalt	Q0 8553,11638 8481,11638
 Berliner Freiheit: glatt gepflastert	Q0 8481,11638 8387,11637
@@ -4447,7 +4450,8 @@ Wörther Str.: aufgepflasterte Abschnitte	Q1 11247,14578 11317,14564
 Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
 #: note: neu gemacht (Herbst 2014)
 Singerstr.: Asphalt	Q0 11920,12266 12081,12236
-Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
+Puderstr.: Asphalt, einige Löcher	Q0- 14614,9052 14567,8966 14525,8894
+Puderstr.: Asphalt	Q0 14525,8894 14492,8853 14363,8738
 Upstallweg (Lichtenberg): Beton	Q0 17915,10350 17960,10378 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 # REMOVED (teilweise) --- #: XXX hat sich hier die Qualität durch den Wohnungsneubau verbessert?
 Hönower Str.: Asphalt	Q0 18660,9410 18735,9421
@@ -12184,7 +12188,7 @@ Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q1+ 12242,6234 12
 Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q1+ 12638,6307 12812,6343 12979,6374
 Weg über Autobahntunnel: Gehwegplatten	Q0- 12638,6307 12614,6301 12595,6299
 # REMOVED (existiert nicht mehr) --- Mergenthalerring: schlechtes Kopfsteinpflaster	Q3+ 14121,8147 14210,8227 14229,8278
-Mergenthalerring: Kopfsteinpflaster	Q2 14229,8278 14258,8520 14262,8564
+Mergenthalerring: Kopfsteinpflaster	Q2 14229,8278 14256,8501 14262,8564
 Mergenthalerring: Asphalt	Q0 14262,8564 14276,8729 14252,8829 14261,8851
 # REMOVED --- #: next_check_id: NIZZASTR-2014 --- #: XXX wie wird die Qualität nach der Fertigstellung sein? Beleuchtung? --- #: add_fragezeichen: wurde die Straße mittlerweile befestigt? --- #: osm_watch: way id="344108079" version="6" --- #: last_checked: 2019-06-15 --- #: next_check: 2019-06-24
 (Marseillestr. - Straße 160): Verbundsteinpflaster	Q1 12495,21397 12507,21391 12520,21386
@@ -13460,7 +13464,7 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17639,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 17588,8413
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2025-02-07
+#: last_checked: 2025-04-03 (luftbildsuche)
 #: check_frequency: 90d
 An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
@@ -33917,5 +33921,7 @@ Kreuzungsbereich asphaltiert	Q0 24566,9456
 Einmündungsbereich asphaltiert	Q0 24412,9103
 Kreuzungsbereich asphaltiert	Q0 24437,8148
 Einmündungsbereich asphaltiert	Q0 24417,7984
+Einmündungsbereich asphaltiert	Q0 12822,10487
+Kreuzungsbereich asphaltiert	Q0 12147,8117
 #: ignore ^^^
 #: section ^^^

@@ -32967,8 +32967,8 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-02-22
-#: check_frequency: 120d
+#: last_checked: 2025-04-05
+#: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
 EOF
@@ -36126,9 +36126,9 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-15
+#: last_checked: 2025-04-05
 #: check_frequency: 30d
-#: next_check: 2025-03-31 (daf)
+# REMOVED --- #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 EOF
@@ -40077,7 +40077,7 @@ EOF
 #	2::inwork 16222,25829 16532,26174 17101,26701
 #: note: evtl. mit der Sperrung in der Wiltbergstr. zusammenhängend
 #: last_checked: 2025-03-23 vvv
-#: next_check: 2025-08-31 vvv
+#: next_check: 2025-08-31 (DB website) vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m
 	q3::inwork; 17101,26701 16532,26174
@@ -40506,9 +40506,9 @@ EOF
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
 #: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2024-08-21 (daf)
+#: last_checked: 2025-03-17 (okas)
 #: check_frequency: 360d
-#: next_check: 2025-12-31
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3213,18115 3420,18470
 EOF
      },
@@ -40525,7 +40525,7 @@ EOF
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
 #: last_checked: 2024-08-21 (daf)
 #: check_frequency: 360d
-#: next_check: 2025-12-31
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3267,18767 3008,18464
 EOF
      },
@@ -41575,7 +41575,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-01-19
+#: last_checked: 2025-04-05
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -45372,7 +45372,7 @@ EOF
 #: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
 #: osm_watch: note 4594797 3
 #: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2025-02-27
+#: last_checked: 2025-03-14 (panoramax)
 #: next_check: 2025-04-25 (VIZ-Verkehrsmeldung)
 Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
 EOF
@@ -45401,7 +45401,7 @@ EOF
 EOF
      },
      { from  => 1726956000, # 2024-09-22 00:00
-       until => undef, # $isodate2epoch->("2025-03-04 18:00:00"), # 1742749200, # 2025-03-23 18:00
+       until => 1743837166, # undef, # $isodate2epoch->("2025-03-04 18:00:00"), # 1742749200, # 2025-03-23 18:00
 #      text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich ab 23.09.2024 bis zum Frühjahr 2025',
 #      text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der nördlichen Fahrbahn, voraussichtlich bis 04.03.2025',
 #      text  => 'Karl-Marx-Platz: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 04.03.2025',
@@ -45415,10 +45415,7 @@ EOF
 #: osm_watch: way id="36983903" version="35"
 #: osm_watch: way id="1002238498" version="11"
 #: osm_watch: note 4454125 8
-#: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen
-#: last_checked: 2025-03-19
-# REMOVED --- #: check_frequency: 21d
-#: next_check: 2025-04-15 (Halteverbotsschilder)
+# REMOVED (offen) --- #: XXX mittlerweile ist der Platzbereich befahrbar, dafür Bauarbeiten im Bereich der Schnalle, genauer anschauen --- #: last_checked: 2025-04-03 (mapillary) --- # REMOVED --- #: check_frequency: 21d --- #: next_check: 2025-04-15 (Halteverbotsschilder)
 # REMOVED (hier mittlerweile fertig und offen) ---	q4::inwork 12972,7602 13100,7626
 	q4::inwork 13100,7626 13130,7633
 EOF
@@ -45462,10 +45459,11 @@ EOF
 	2::inwork 15763,10963 15805,10949
 EOF
      },
-     { from  => $isodate2epoch->("2025-03-02 00:00:00"), # 1732489200, # 2024-11-25 00:00
-       until => $isodate2epoch->("2025-03-28 23:59:59"), # $isodate2epoch->("2024-12-20 11:00:00"), # 1735232400, # 2024-12-26 18:00
+     { from  => $isodate2epoch->("2025-06-14 00:00:00"), # $isodate2epoch->("2025-03-02 00:00:00"), # 1732489200, # 2024-11-25 00:00
+       until => $isodate2epoch->("2025-12-01 18:00:00"), # $isodate2epoch->("2025-03-28 23:59:59"), # $isodate2epoch->("2024-12-20 11:00:00"), # 1735232400, # 2024-12-26 18:00
 #      text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 26.11.2024 bis 20.12.2024',
-       text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 03.03.2025 bis 28.03.2025',
+#      text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 03.03.2025 bis 28.03.2025',
+       text  => 'Wollankstr.: Neubau der Bahnbrücke, voraussichtlich Vollsperrung vom 15.06.2025 bis 01.12.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLLANK-2024
@@ -45485,6 +45483,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1895379778414514298
 #: by: https://viz.berlin.de/aktuelle-meldungen/neubau-der-bruecke-uber-die-wollankstrasse/ (weitere Vollsperrung von Mitte Juni bis Dezember 2025)
 #: by: https://www.tagesspiegel.de/berlin/schon-wieder-einen-monat-vollsperrung-diese-baustelle-im-berliner-norden-verlangt-allen-gute-nerven-ab-13314622.html
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250405 (nächste Sperrung Juni - Dez 2025)
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id[inactive]: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
 #: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
@@ -45496,7 +45495,8 @@ EOF
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="35"
 #: osm_watch[closed]: note 4536637 10
-# REMOVED --- #: last_checked: 2024-10-12 (mapillary) --- #: next_check: 2024-12-20
+#: last_checked: 2025-04-02 (mapillary) 
+#: next_check: 2025-06-14
 	2::inwork 9544,17629 9586,17665
 EOF
      },
@@ -47063,6 +47063,19 @@ EOF
 #: last_checked: 2025-04-02
 #: check_frequency: 90d
 Merler Weg	q4::inwork 18852,13269 19180,13219
+EOF
+     },
+     { from  => 1743890400, # 2025-04-06 00:00
+       until => 1750716000, # 2025-06-24 00:00
+       text  => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, vom 07.04.2025 bis 23.06.2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238 (2018)
+#: by: https://www.bahninfo-forum.de/read.php?9,825093,825257#msg-825257 (laut Aushang ab 7.4.2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/klingsorstrasse-in-berlin-steglitz-fur-drei-monate-vollgesperrt-wasserbetriebe-tauschen-regenwasserkanal-aus-13490011.html (zwischen Telramundweg und Amfortasweg, bis 23.06.2025; keine Erwähnung einer Sanierung der Fahrbahn)
+#: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
+Klingsorstr.	q4::inwork 5206,4432 5150,4345
+Dalandweg: Einbahnstraßenregelung, vermutlich nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
 EOF
      },
     );

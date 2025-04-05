@@ -413,12 +413,8 @@ Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 Niederlagstr.	1s:q4 9943,12364 9934,12420
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
-#: next_check_id: KARLMARXPLATZ-2024
-#: XXX während der Bauarbeiten ist die Einbahnstraße aufgehoben
-#: last_checked: 2025-03-04
-# REMOVED --- #: check_frequency: 21d
-#: next_check: 2025-04-15 (Halteverbotsschilder)
-Karl-Marx-Platz	1no 13100,7626 12987,7560
+# REMOVED --- #: next_check_id: KARLMARXPLATZ-2024 --- #: XXX während der Bauarbeiten ist die Einbahnstraße aufgehoben --- #: last_checked: 2025-03-04 --- # REMOVED --- #: check_frequency: 21d --- #: next_check: 2025-04-15 (Halteverbotsschilder)
+Karl-Marx-Platz	1 13100,7626 12987,7560
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 #: by: Lea:
@@ -453,7 +449,7 @@ Kavalierstr.	1 10621,18837 10721,18575
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
 #: osm_watch: way id="4637773" version="27"
-#: next_check: 2025-06-15
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
@@ -3927,11 +3923,12 @@ Nalepastr.: Tor verschlossen	3 * 17059,8102 *
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein; dann vermutlich regulär ohne Fußgängerschutztunnel.
+#: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
+#: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: last_checked: 2025-04-02
 #: check_frequency: 120d
 #: next_check: 2026-05-01
-(Ostkreuz, Zugang Marktstr.): Fußgängerschutztunnel wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
+(Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
 # 
 #: priority: #B
 #: last_checked: 2025-03-18
@@ -3972,8 +3969,8 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
-#: last_checked: 2025-03-15 (mapillary) vvv
-#: next_check: 2025-06-15 vvv
+#: last_checked: 2025-04-02 (mapillary) vvv
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="5"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
 #: osm_watch: way id="174271093" version="24"
@@ -4206,12 +4203,12 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
-#: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO)
+#: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO), 2025-04-05 (Sa) 11:45 (Kiefholzstr.)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags
-#: last_checked: 2025-03-28 vvv
+#: last_checked: 2025-04-05 vvv
 #: osm_watch: way id="1199463691" version="4"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -4371,7 +4368,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-04-04
+#: last_checked: 2025-04-05
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4379,7 +4376,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-04-04 vvv
+#: last_checked: 2025-04-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4477,10 +4474,10 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2025-01-27
+#: last_checked: 2025-04-05
 # REMOVED --- #: check_frequency: 30d
-#: check_frequency: 60d
-Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14258,8520
+#: check_frequency: 90d
+Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
 # 
 # REMOVED (mittlerweile fest eingezäunt) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: XXX strassen-orig etc.-Einträge können entfernt werden, sobald nichts mehr vom Weg sichtbar ist. --- #: last_checked: 2023-07-03 --- #: check_frequency: 180d --- Schule am Planetarium: Weg dauerhaft gesperrt	2::inwork 12103,15218 12208,15108
 # REMOVED (laut osm offen) --- #: next_check_id: ERNSTTHAELMANNPARK-2022 --- #: last_checked: 2023-01-20 --- #: check_frequency: 14d --- #: next_check: 2023-02-01 --- (Diesterwegstr. - Ella-Kay-Str.): noch nicht freigegeben	2::inwork 12056,15159 12195,15083
@@ -4522,7 +4519,7 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2025-01-15
+#: last_checked: 2025-03-17 (okas)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2026-10-01
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
@@ -4673,12 +4670,12 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="16"
-#: last_checked: 2025-03-10
+#: last_checked: 2025-04-03 (luftbildsuche)
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="11"
-#: last_checked: 2025-03-10
+#: last_checked: 2025-04-03 (luftbildsuche)
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 # REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17639,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
@@ -4701,7 +4698,7 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 # REMOVED --- #: last_checked: 2024-12-27 --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen! --- #: note: Durchfahrt offiziell noch nicht erlaubt, aber hier parken schon Autos in der Parktaschen: q4 -> q3 --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q3:inwork 17753,8290 17771,8349 17794,8429
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-03 (luftbildsuche)
 # REMOVED --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17813,8508
 # REMOVED (weitgehend offen) --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
@@ -4858,7 +4855,7 @@ Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,481
 #: osm_watch: way id="24557771" version="10" vvv
 #: XXX bis wann sind die Wege gesperrt? vvv
 #: note: wobei die Absperrungen weggeschoben sein können
-#: last_checked: 2025-01-13 (okas) vvv
+#: last_checked: 2025-04-02 (okas) vvv
 #: check_frequency: 180d vvv
 # REMOVED (Sperrung erst weiter hinten) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9473,-92
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323
@@ -4903,7 +4900,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 # REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
 #: osm_watch: way id="4713304" version="50"
 #: priority: #A
-#: last_checked: 2025-03-16 (osm)
+#: last_checked: 2025-04-02 (okas)
 #: check_frequency: 360d
 #: next_check: 2025-10-31
 Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
@@ -5234,7 +5231,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 # REMOVED (hier fertig) --- Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13294,14515 13266,14541 13231,14583 13119,14622 13049,14623 13036,14596
 # REMOVED (hier fertig) --- Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
 # REMOVED --- #: osm_watch: way id="32591917" version="17" --- #: next_check_id: KYNASTSTRASSE-2018 --- #: last_checked: 2019-07-06 --- #: next_check: 2019-06-15 --- Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,10476 14820,10473
-# REMOVED (offen) --- #: next_check_id: MERGENTHALERRING-2018 --- #: osm_watch: way id="20595738" version="13" --- #: last_checked: 2018-12-10 --- #: check_frequency: 30d --- Mergenthalerring: Bauarbeiten, komplett gesperrt	2:inwork 14258,8520 14262,8564
+# REMOVED (offen) --- #: next_check_id: MERGENTHALERRING-2018 --- #: osm_watch: way id="20595738" version="13" --- #: last_checked: 2018-12-10 --- #: check_frequency: 30d --- Mergenthalerring: Bauarbeiten, komplett gesperrt	2:inwork 14256,8501 14262,8564
 # REMOVED (wieder offen) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: XXX Fußgängertunnel wird abgerissen --- wie sieht es danach aus, wird man hier noch durchgehen können? --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/anfang-dezember-beginnt-der-abriss-der-alten-halle_a188158 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.757485.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bahnhof-bleibt-waehrend-bauarbeiten-barrierefrei_a189259 --- #: by: https://twitter.com/SBahnBerlin/status/1067817140139581440 --- #: by: https://sbahn.berlin/aktuelles/artikel/schoenheitskur-fuer-schoeneweide/ --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.762277.php --- #: by: https://twitter.com/SBahnBerlin/status/1069471682337869825 --- #: by: https://twitter.com/BVG_Tram/status/1069471426967670784 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/baustart-fuer-den-neuen-bahnhof_a192223 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/neue-trasse-fuer-die-strassenbahn_a198208 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/planunterlagen-fuer-strassenbahnbau-liegen-aus_a197470 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-am-bahnhof-schoeneweide-gehen-weiter_a208213 --- #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/25-2019-10-06-180.html (Gesamtfertigstellung: 2022) --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3808 (Antrag) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1302846.php --- #: by: https://berliner-abendblatt.de/kiez-news/treptow-koepenick/bahnhof-schoeneweide-vorplatz-soll-schoener-werden-id211216 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/buerger-koennen-sich-an-gestaltung-des-vorplatzes-beteiligen_a375338 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311989.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/beteiligung-zum-bahnhofsvorplatz_a377763 --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (voraussichtlich ab Frühjahr 2024 offen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1345344.php --- #: by: https://mein.berlin.de/projekte/freiraumkonzept-bahnhof-schoneweide-2/ --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/infoveranstaltung-zur-vorplatzgestaltung-am-bahnhof-schoeneweide_a404271 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_06_0305_0356_online.pdf (Infoveranstaltung) --- #: by: https://bauprojekte.deutschebahn.com/media/projects/7260/docs/GR_berlin_schoeneweide_wegeleitung_20240419.pdf (13.05.2024) --- #: last_checked: 2024-04-28 (krickstadt) --- #: check_frequency: 360d --- #: next_check: 2024-05-13 --- (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17702,5672 17634,5607
 # REMOVED --- #: next_check_id: SCHOENEWEIDE-2018 --- #: XXX wird dieser Zugang bleiben, wenn die Straßenbahn verlegt ist? --- #: XXX weitere Änderungen: durchgängige Radspuren in der Michael-Brückner-Str. stadtauswärts; durchgängige Radspuren im Sterndamm unter der Brücke; Linksabbiegemöglichkeit Michael-Brückner-Str. -> Sterndamm ... --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=8F65755E-26C7-45A4-878D-BE88BA12B4B3&plugid=/ingrid-group:ige-iplug-be&docid=8F65755E-26C7-45A4-878D-BE88BA12B4B3 --- #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/3A22FF18-9B17-4F51-B470-2F50F0C68929/U05-1_Lageplan_29270.pdf --- #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/867CA30D-7AEB-49AD-9196-B5479AA8CB68/U05_1_Lageplan_gesiegelt.pdf --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.832329.php --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-am-bahnhof-schoeneweide-gehen-voran_a225649 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838064.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838345.php (Erst Ende August 2019) --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/aufzuege-bleiben-ausser-betrieb_a228484 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.843618.php (neue Aufzüge werden Mitte September 2019 in Betrieb genommen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.846562.php (Sperrung des Johannisthaler Zugangs --- ist aber vielleicht nicht erfolgt) --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/seit-13-september-ist-der-aufzug-am-bahnhof-schoeneweide-in-betrieb_a232699 --- #: by: https://www.abendblatt-berlin.de/2019/09/25/treptow-schoeneweider-fahrstuehle-endlich-in-betrieb/ --- #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch) --- #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=78 (Präsentation vom 28.2.2022) --- #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15739.pdf (neues Bauende: Frühjahr 2024) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/bvg-baut-bis-herbst-in-berlin-schoeneweide-warum-muss-das-so-lange-dauern-li.2186715 (Verkehrslösung Schöneweide geht voraussichtlich im Sommer 2024 in Betrieb) --- #: by: https://nachgefragt.bvg.de/wp-content/uploads/BVG_Informationsveranstaltung_Baumassnahmen-Schoeneweide-2024.pdf (Inbetriebnahme im Sommer 2024, Verkerswegebau bis 3. Quartal 2024) --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,793943#msg-793943 --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (signalisierter Fußgängerüberweg Höhe Ecksteinweg ab Ende März 2024) --- #: by: https://nachgefragt.bvg.de/faq-schoeneweide/ (zum Zugang Schwarzer Weg --- ungewiss, ob es diesen noch geben wird) --- #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20240809 (Inbetriebnahme am 17.8.2024) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/die-bvg-faehrt-wieder-zum-bahnhof-berlin-schoeneweide-aber-vorher-wird-es-spannend-li.2245055 --- #: by: https://www.nd-aktuell.de/artikel/1184528.oepnv-bvg-etappenziel-nach-jahren.html --- #: last_checked: 2024-07-17 vvv --- #: check_frequency: 120d vvv --- #: next_check: 2024-08-17 vvv --- # REMOVED --- #: osm_watch: way id="1085382250" version="7" --- (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17592,5552 17736,5441 --- 
 # REMOVED --- #: osm_watch: way id="226163591" version="6"
