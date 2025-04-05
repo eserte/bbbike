@@ -1442,8 +1442,9 @@ check-disabled:
 	${MISCSRCDIR}/missing_streets.pl -strassen landstrassen -against Potsdam.coords.data
 	@touch $@
 
-.check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) -assert-single-coordinate -namerx '^\d+(\.\d+)?$$' hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
+# note: use fragezeichen-orig instead of fragezeichen, as non-public points may exist here
+.check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen-orig
+	$(CHECK_POINTS) -assert-single-coordinate -namerx '^\d+(\.\d+)?$$' hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen-orig
 	@touch $@
 
 .check_hoehe2:	hoehe
