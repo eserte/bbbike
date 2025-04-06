@@ -125,7 +125,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-03
+#: last_checked: 2025-04-06
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -1024,6 +1024,12 @@ Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwo
 # 
 ### Lichtenberg ###
 # 
+#: also_indoor: traffic (H,G,T)
+#: last_checked: 2025-04-06
+#: next_check: 2025-04-30 (Halteverbotsschilder)
+#: valid: -20250430
+Rhinstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18024,13843 18050,13835 18134,13811 18198,13816
+# 
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2025
 #: note: eigentlich gibt es auch Beschränkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt möglich
 #: last_checked: 2025-04-04
@@ -1195,6 +1201,7 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 #: source_id: viz2021:13.584338,52.539646,17.03.2025,10:00 (Eisenacher, nur Kfz-Verkehr, bis 16.06.2025 + weitere Arbeiten) (bis 03.04.2025 + ...) (inaktiv)
 #: source_id: bvg2024:195#HIM_FREETEXT_271433 (ohne Endedatum)
 #: source_id: viz2021:13.582334,52.539807,03.04.2025,10:00 (nur Kfz-Verkehr, bis 07.04.2025)
+#: source_id: viz2021:13.584338,52.539646,07.04.2025,10:00 (nur Kfz-Verkehr, bis 16.06.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 7
 #: last_checked: 2025-04-02 vvv
@@ -1386,7 +1393,7 @@ Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11
 #: also_indoor: traffic (B,G,ex-H,T)
 #: note: Halteverbotsschilder bis 23.10.2024
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-04-02 (traffic) vvv
+#: last_checked: 2025-04-06 (traffic) vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: next_check: 2024-10-23 vvv
 # REMOVED --- #: valid: -20241023 vvv

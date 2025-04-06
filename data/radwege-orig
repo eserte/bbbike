@@ -984,7 +984,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-06
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -5706,17 +5706,19 @@ neues Verbundsteinpflaster	RW2; 22739,16203 22696,16208 22631,16215 22495,16165 
 Gehweg für Radfahrer frei, eng	RW1; 19512,15092 19364,15045 19309,15023 19254,15000 19205,14980 19196,14976 19175,14968
 # REMOVED (temporär nicht verfügbar?) --- Gehweg für Radfahrer frei, eng	RW1; 19175,14968 19013,14905
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2024-12-08 vvv
+#: last_checked: 2025-04-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Gehweg für Radfahrer frei	RW9; 19200,14963 19156,14953 19013,14905 18831,14823
+# REMOVED (wegen Bauarbeiten ist der nördliche Hochboard nicht nutzbar) --- Gehweg für Radfahrer frei	RW1; 18831,14823 18553,14678 18410,14614 18365,14607
+Gehweg für Radfahrer frei	RW9; 18831,14823 18553,14678 18410,14614 18365,14607
 Gehweg für Radfahrer frei, eng	RW9; 19175,14968 19196,14976 19205,14980 19254,15000 19309,15023 19364,15045 19512,15092
 #: note: zwar nicht explizit als benutzungspflichtig ausgeschildert, aber die danebenliegende Fahrbahn ist eine Einbahnstraße
 Radfahrer müssen Gehweg benutzen, eng	RW8; 19512,15092 19644,15320
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-Gehweg für Radfahrer frei	RW1; 18831,14823 18553,14678 18410,14614 18365,14607 18183,14573
+Gehweg für Radfahrer frei	RW1; 18365,14607 18183,14573
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 18183,14573 18057,14549
 neu asphaltiert, mit einigen Verbundsteinpflaster-/Gehwegplattenabschnitten	RW2; 18057,14549 17848,14523 17533,14484 17254,14451
 neu asphaltiert, aber etwas wellig	RW2; 17254,14451 17055,14432 16852,14412

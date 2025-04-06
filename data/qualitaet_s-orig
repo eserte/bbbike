@@ -4921,7 +4921,7 @@ Rhinstr. [134-130]: Asphalt	Q0 18477,14042 18181,14039
 Rhinstr. [Wohngebiet]: Beton	Q1+ 18050,13835 18056,13853 18047,13905
 Rhinstr. [Wohngebiet]: Asphalt mit Schäden	Q1 18047,13905 18027,14016 18021,14081
 Rhinstr. [Wohngebiet]: Asphalt	Q1+; 18021,14081 18176,14108
-Rhinstr. [Wohngebiet]: Beton	Q1+; 18176,14108 18021,14081
+Rhinstr. [Wohngebiet]: Asphalt und Beton mit Schäden	Q1; 18176,14108 18021,14081
 Meeraner Str.: Asphalt	Q0 18382,13492 18407,13548 18462,13560 18489,13593 18486,13819 18477,14042
 Meeraner Str.: Asphalt	Q0 18626,13820 18486,13819 18198,13816
 Spinozastr.: Asphalt, einige Schäden	Q0- 3910,6404 3917,6464 3974,6511 4050,6506
@@ -11464,7 +11464,8 @@ Giselhersteig: Verbundsteinpflaster	Q1+ 17355,12460 17386,12456 17438,12448 1749
 Giselhersteig: Verbundsteinpflaster	Q1+ 17438,12448 17433,12414
 (Giselhersteig - Nibelungenring): Verbundsteinpflaster	Q1+ 17386,12456 17382,12421
 (Giselhersteig - Hadburgpfad): Verbundsteinpflaster	Q1+ 17491,12439 17486,12407
-(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt, Wurzelhebungen	Q0- 17110,14187 17224,14151 17236,14140
+#: historical_note: bis Apr 2025 noch mit Q0- getaggt, aber mittlerweile hat es sich verschlechtert
+(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt, Wurzelhebungen	Q1+ 17110,14187 17224,14151 17236,14140
 Treptower Park: wassergebundene Decke	Q1 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
 (Treptower Park, mittlerer Weg): wassergebundene Decke	Q1 15184,9373 15249,9337
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14705,9578 14791,9537
@@ -11480,10 +11481,10 @@ Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780 19500,7719
 #: by: https://www.berliner-woche.de/fennpfuhl/c-umwelt/gruenzug-wird-umgestaltet_a413057
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10502 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10613 (Antrag (zur Beleuchtung))
-#: osm_watch: note 4405725 5
-#: XXX wie sieht die Wegoberfläche nach den Sanierungsarbeiten aus?
-#: last_checked: 2025-02-09
-#: check_frequency: 60d
+#: osm_watch: note 4405725 6
+#: XXX wie sieht die Wegoberfläche nach den Sanierungsarbeiten aus? vermutlich asphaltiert
+#: last_checked: 2025-04-06
+#: check_frequency: 30d
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1- 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 Rudolf-Seiffert-Str.: Asphalt mit einigen Rissen und Schäden	Q1 14790,13639 14769,13569 14731,13576 14658,13283 14644,13223
 Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7606,5939

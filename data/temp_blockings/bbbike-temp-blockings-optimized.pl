@@ -3682,6 +3682,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025)
 #: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025) (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025)
+#: source_id: viz2021:13.373428,52.515998,07.04.2025,12:00 (bis 07.04.2025)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -3913,14 +3914,14 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-03-12 vvv
-# REMOVED --- #: check_frequency: 7d vvv
+#: last_checked: 2025-04-06 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
 Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
 Münsterberger Weg	q3::inwork 24029,11363 23883,11416
 # REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',
@@ -6295,26 +6296,26 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        {
-         'data' => '# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024
+         'data' => '# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024, mittlerweile bis 09.05.2025
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (ex-G,B,T) vvv
-#: last_checked: 2025-04-02 vvv
+#: last_checked: 2025-04-06 vvv
 # REMOVED --- #: check_frequency: 30d (outdoor) vvv
-#: check_frequency: 14d (traffic) vvv
-# REMOVED --- #: next_check: 2025-01-31 (Halteverbotsschilder) vvv
+# REMOVED --- #: check_frequency: 14d (traffic) vvv
+#: next_check: 2025-05-09 (Halteverbotsschilder) vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
 Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056,12304
 # REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
 # REMOVED (alter Eintrag) --- Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 3977,
-         'text' => 'Rüdigerstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+         'text' => 'Rüdigerstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis 09.05.2025, evtl. wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6580,7 +6581,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 7
+#: osm_watch: note 4185183 8
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
@@ -6735,7 +6736,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-03-28
+#: last_checked: 2025-04-06
 #: next_check: 2025-04-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -7135,7 +7136,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-03-30 (website) vvv
+#: last_checked: 2025-04-06 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-05-01 (presse-news) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7209,23 +7210,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.461348,52.517581,06.09.2024,17:06 (hier fälschlicherweise nur Kfz-Verkehr, wurde später korrigiert, bis 10.10.2024) (bis 30.10.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 24.01.2025) (bis 24.02.2025) (bis 25.04.2025)
-#: source_id: viz2021:13.46156,52.51807,31.10.2024,00:00 (bis 20.12.2024) (inaktiv)
-#: by[nocache]: https://x.com/PoliDirk/status/1833119048374100198
-#: osm_watch: note 4594797 3
-#: also_indoor: traffic (H,G,B,T,W)
-#: last_checked: 2025-03-14 (panoramax)
-#: next_check: 2025-04-25 (VIZ-Verkehrsmeldung)
-Proskauer Str.: Wasserrohrbruch, Radfahrer sind auch betroffen, Ausweichen auf Gehweg	q4::inwork 14266,12446 14297,12553
-',
-         'dont_check_date' => 1,
-         'from' => 1725548760,
-         'id' => 4164,
-         'text' => 'Proskauer Str.: Wasserrohrbruch, Fahrbahn gesperrt, vom 06.09.2024 17:06 bis voraussichtlich 25.04.2025 17:00',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7430,7 +7415,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'data' => '#: next_check_id: ROSEGGER-2024
 #: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
 #: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025)
-#: osm_watch: note 4524886 1
+#: osm_watch: note 4524886 2
 # REMOVED (hier mittlerweile keine Bauarbeiten mehr) ---	q4::inwork 13205,8126 13277,8211
 	q4::inwork 13277,8211 13331,8283
 ',
@@ -8174,19 +8159,19 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
          'type' => 'handicap',
          'until' => undef
        },
+       undef,
        {
-         'data' => '#: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238 (2018)
-#: by: https://www.bahninfo-forum.de/read.php?9,825093,825257#msg-825257 (laut Aushang ab 7.4.2025)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/klingsorstrasse-in-berlin-steglitz-fur-drei-monate-vollgesperrt-wasserbetriebe-tauschen-regenwasserkanal-aus-13490011.html (zwischen Telramundweg und Amfortasweg, bis 23.06.2025; keine Erwähnung einer Sanierung der Fahrbahn)
-#: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
-Klingsorstr.	q4::inwork 5206,4432 5150,4345
-Dalandweg: Einbahnstraßenregelung, vermutlich nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
+         'data' => '#: source_id: viz2021:13.463843,52.485135,07.04.2025,07:00 (bis 10.04.2025)
+#: note: Verkehrsmeldung geht bis zum 8.4.2025 + zwei weitere Tage
+Puderstr.	q4::inwork 14492,8853 14525,8894 14567,8966
+#: note: vermutlich ist der gesperrte Abschnitt hier kürzer, deshalb q4 -> q3
+Stuckstr.	q3::inwork 14439,8987 14525,8894 14615,8799
 ',
-         'from' => 1743890400,
-         'id' => 4291,
-         'text' => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, vom 07.04.2025 bis 23.06.2025',
+         'from' => 1743915600,
+         'id' => 4292,
+         'text' => 'Puderstr./Stuckstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, vom 07.04.2025 07:00 bis voraussichtlich 10.04.2025 17:00',
          'type' => 'handicap',
-         'until' => 1750716000
+         'until' => 1744297200
        }
      
 );

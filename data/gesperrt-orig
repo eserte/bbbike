@@ -115,7 +115,7 @@ Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2024-12-08 vvv
+#: last_checked: 2025-04-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19013,14905 19175,14968
@@ -4080,16 +4080,16 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX an dieser Stelle wird es alternativ eine Rampe geben
-#: osm_watch: note 4298701 2
+#: osm_watch: note 4298701 3
 #: osm_watch: way id="1297589176" version="1"
-#: last_checked: 2025-03-23
+#: last_checked: 2025-04-06
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19156,14953 19160,14935 19171,14938
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: osm_watch: way id="4696062" version="29"
-#: last_checked: 2024-12-08
+#: last_checked: 2025-04-06
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 (Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
@@ -4103,8 +4103,8 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: osm_watch: note 4547152 3
-#: last_checked: 2024-12-08
+#: osm_watch: note 4547152 4
+#: last_checked: 2025-04-06
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung gesperrt	2::inwork 19157,14979 19171,14938 19173,14931 19176,14921
@@ -5147,7 +5147,8 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # 
 #: osm_watch: note 4480556 3
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-03-13
+#: last_checked: 2025-04-06 (traffic)
+#: check_frequency: 14d (traffic)
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 
 # REMOVED --- #: next_check_id: MOLKENMARKT-2021
@@ -5642,11 +5643,12 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: by: https://www.dresden.de/de/stadtraum/zentrale-projekte/carolabruecke.php (Abrißarbeiten bis voraussichtlich Ende 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/15410-dresden-carolabr%C3%BCcke-st-petersburger-stra%C3%9Fe-carolaplatz/?postID=771348#post771348
 #: by: https://www.dnn.de/lokales/dresden/carolabruecke-dresden-abriss-oder-erhalt-entscheidung-steht-STJQBOHKEJBS3CV72CDHOFCSCY.html (vermutlich Komplettabriss)
+#: by: https://www.n-tv.de/panorama/Dresdner-Carolabruecke-soll-bis-zum-Sommer-verschwinden-article25605881.html (Neubau ab 2027)
 #: osm_watch: way id="4214231" version="40"
 #: osm_watch: way id="10368500" version="46"
 #: also_indoor: search Carolabrücke
-#: last_checked: 2024-12-10 (Pressebericht)
-#: check_frequency: 120d
+#: last_checked: 2025-04-06 (research)
+#: check_frequency: 180d
 # REMOVED -- #: next_check: 2024-12-31
 Carolabrücke (Dresden): Brücke teilweise eingestürzt, der Rest ist gesperrt	2::inwork 36969,-149635 37090,-149991
 # 

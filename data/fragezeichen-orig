@@ -316,7 +316,7 @@ Oderbruchstr./Hohenschönhauser Str.: werden hier Radspuren markiert?	?::projecte
 #: source_id: 2147342170 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72 (möglicherweise inaktiv)
 #: osm_watch: way id="336565341" version="20"
-#: last_checked: 2025-03-07
+#: last_checked: 2025-04-06
 #: check_frequency: 120d
 # REMOVED (Markierung existiert hier) --- Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15951,12832
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15951,12832 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
@@ -1786,7 +1786,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: osm_watch: way id="93221335" version="27"
 #: osm_watch: note 4347252 8
 # REMOVED --- #: also_indoor: traffic (G,B,T,W) [alle ungenau/falsch]
-#: last_checked: 2025-04-02
+#: last_checked: 2025-04-06
 #: check_frequency: 21d
 #: next_check: 2025-06-30 (infravelo)
 Siegfriedstr.: Radstreifen mit Protektionselementen entsteht	?::inwork 16860,12861 16859,12752 16859,12683 16859,12613 16857,12600 16831,12419 16820,12339
@@ -2336,7 +2336,7 @@ Beusselstr.: geschützte Radverkehrsanlage entsteht	?::projected 5166,13087 5199,
 # 
 #: XXX außerdem: wird der bereits existierende Trampelpfad von der Gotlindestr. befestigt?
 #: osm_watch: way id="718127899" version="11"
-#: last_checked: 2025-01-17
+#: last_checked: 2025-04-06
 #: check_frequency: 150d
 Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein? Wird es eine Verbindung zum Radweg am Zentralfriedhof geben?	? 17461,12521 17550,12481
 # 
@@ -2454,7 +2454,7 @@ Mellowpark: geplanter Uferweg	?::projected 21567,5727 21463,5640 21355,5679 2124
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/uebersichtinternettelefon-2022_04_27.pdf (Stand April 2023: 11-123: Frühzeitige Beteiligung der Öffentlichkeit und der Behörden abgeschlossen; 11-61: Aufstellungsbeschluss)
 #: XXX evtl. im Zusammenhang der Bebauungspläne 11-123 und 11-61, beide noch nicht festgesetzt
 #: osm_watch: way id="25793149" version="27"
-#: last_checked: 2025-01-26
+#: last_checked: 2025-04-06
 #: check_frequency: 360d
 Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::projected 17010,14269 17060,14255 17198,14269
 # 
@@ -3940,7 +3940,7 @@ Bebauungsplan 3-69: ehem. Industriebahntrasse wird zum Rad/Gehweg	?::projected 1
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/stadtplanung/bebauungsplaene/b-plan-xxi-23_blatt-1_barrierefrei.pdf (eher nicht: "... sind mit einem 5 m breiten Fahrrecht zugunsten der Wasser- und Umweltbehörden zu belasten.")
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/stadtplanung/bebauungsplaene/b-plan-xxi-23_blatt-2_barrierefrei.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_48_4373_4436_online.pdf (Wiederholung der Veröffentlichung)
-#: last_checked: 2024-12-08
+#: last_checked: 2025-04-06
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-04-01
 Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens gebaut?	? 18397,14190 18421,14240 18388,14533 18415,14598
@@ -5425,7 +5425,7 @@ Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str. geplant	?::pro
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349062.php (Entsiegelungsmaßnahme ab 24.07.2023)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-in-fussgaengerzone_a388510
 #: osm_watch: way id="4685729" version="23"
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-06
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-07-24
 Waldeyerstr.: wird es hier zu weiteren Einschränkungen für den Radverkehr kommen?	? 15058,12329 15003,12241
@@ -5573,7 +5573,12 @@ Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen in Bau	?::inwork 17826,10
 Simon-Bolivar-Str./Goeckestr.: entsteht hier ein neuer Zebrastreifen?	? 16104,14678 16128,14685 16152,14691
 #: last_checked: 2025-02-12
 Werneuchener Str./Küstriner Str.: entsteht hier ein neuer Zebrastreifen?	? 16301,15247 16314,15223 16327,15193
-#: last_checked: 2025-01-06
+#: XXX Halteverbote bis zum 23.07.2025, evtl. im Zusammenhang mit dem geplanten Zebrastreifen?
+#: also_indoor: traffic (none)
+#: last_checked: 2025-04-06
+#: check_frequency: 3d (traffic)
+#: REMOVED --- #: check_frequency: 45d (outdoor)
+#: next_check: 2025-07-23 (Halteverbotschilder)
 Franz-Jacob-Str./Max-Brunnow-Str.: entsteht hier ein neuer Zebrastreifen?	? 14519,13404 14529,13384 14545,13363
 #: last_checked: 2025-02-27
 Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15487,11398 15497,11381 15507,11357
@@ -5589,7 +5594,7 @@ Robert-Siewert-Str./Römerweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::proje
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/fussgaengerueberweg-fuer-grundschueler-gefordert_a437446 (hier: Höhe 77C)
 #: last_checked: 2025-02-23
 Schleizer Str./Arendsweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 17353,15006 17406,14986 17356,14966
-#: last_checked: 2025-03-07
+#: last_checked: 2025-04-06
 Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 16239,12245 16255,12224 16278,12193
 #: check_frequency ^^^
 #: priority ^^^
@@ -6142,7 +6147,7 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 #: source_id: viz2021:13.493057,52.516212,14.10.2021,07:00 (Fahrbahnsanierungsarbeiten, bis 20.11.2021) (inaktiv)
 #: source_id: viz2021:13.490291,52.514628,15.08.2022,07:00 (Kanalarbeiten, bis 18.9.2022) (inaktiv)
 #: source_id: viz2021:13.489686,52.512256,03.09.2024,07:00 (Leitungsarbeiten, bis 18.10.2024) (inaktiv)
-#: last_checked: 2025-03-07
+#: last_checked: 2025-04-06
 #: check_frequency: 360d
 #: next_check: 2027-09-30 (infravelo)
 Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected 16485,12384 16397,12397 16276,12273 16255,12224 16248,12177 16223,11999 16214,11935
@@ -6164,7 +6169,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-06
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -6200,7 +6205,7 @@ Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Fertigstellung 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.bahninfo-forum.de/read.php?9,769715,786561#msg-786561 (Vorplanung)
-#: last_checked: 2025-02-12
+#: last_checked: 2025-04-06
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (infravelo)
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
@@ -7889,7 +7894,7 @@ Marggraffbrücke: Abriss und Neubau	?::inwork 16677,6892 16720,6845
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=35938
 #: source_id: LS/221-F/24/020 (vorbereitende Arbeiten? bis 22.02.2024) (inaktiv)
-#: osm_watch: way id="480741330" version="4"
+#: osm_watch: way id="480741330" version="5"
 #: last_checked: 2024-06-29 (inddor)
 #: check_frequency: 120d
 Treplin: gemeinsamer Rad- und Gehweg geplant (Südseite)	?::projected 77835,204 78034,231 78222,234 78407,105
@@ -8796,8 +8801,8 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/informationen-zur-neuen-schulzone_a435248
 #: osm_watch: way id="1051634661" version="11"
 #: osm_watch[closed]: note 4668723 1
-#: XXX Bauarbeiten am nördlichen Fahrbahnrand, Halteverbot bis 4.10.2024 --- mittlerweile aufgehoben, nichts passiert
-#: last_checked: 2025-04-03
+#: XXX erste Pfosten stehen bereits
+#: last_checked: 2025-04-06
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
@@ -8806,7 +8811,7 @@ Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: note: erste Pfosten stehen bereits; laut Aushängen im Februar (2025), ist aber anscheinend verzögert
-#: last_checked: 2025-04-03 vvv
+#: last_checked: 2025-04-06 vvv
 #: check_frequency: 10d vvv
 #: osm_watch: way id="1145133960" version="3"
 Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14468,11992 14589,11975
@@ -8885,7 +8890,7 @@ Annenstr. [Wohngebiet]: Einbahnstraße für Kfz geplant	?::projected 11259,11391 1
 #: next_check_id: ROSEGGER-2024
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/
 #: XXX abschnittsweise Straßensperrungen zwischen Frühjahr 2024 und Ende 2025
-#: osm_watch: note 4082669 1
+#: osm_watch: note 4082669 2
 #: last_checked: 2025-03-04
 #: check_frequency: 60d
 #: next_check: 2025-04-29 (VIZ-Verkehrsmeldung zur Roseggerstr.)
@@ -11273,7 +11278,7 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: alias: Marzahner Knoten
 #: alias: Großbaustelle Marzahner Brücken
 #: priority: #A
-#: last_checked: 2024-12-08
+#: last_checked: 2025-04-06
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (Ex-VIZ-Verkehrsmeldung)
 Knoten Marzahn: Neubau	?::inwork 19467,15045 19633,15098
