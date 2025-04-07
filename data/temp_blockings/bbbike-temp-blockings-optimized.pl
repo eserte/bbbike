@@ -716,15 +716,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork 75272,-7514 75394,-6991 75402,-6910
-',
-         'from' => 1743829200,
-         'id' => 1382,
-         'text' => 'Bahnübergang Jacobsdorf: Gleisarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 06.04.2025 07:00 Uhr bis 06.04.2025 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1743962400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3501,7 +3493,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
-#: last_checked: 2025-02-08
+#: last_checked: 2025-04-07
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="39"
 #: osm_watch: way id="580507889" version="34"
@@ -3661,75 +3653,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BERLINHALBMARATHON-RECURRING
-#: by: https://viz.berlin.de/2022/04/halbmarathon/ (3.4.2022)
-#: by: https://twitter.com/ellirhc11/status/1509924822444298250
-#: by: https://viz.berlin.de/2023/03/halbmarathon/ (2.4.2023)
-#: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
-#: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
-#: by: https://www.tagesspiegel.de/berlin/berliner-halbmarathon-2025-strecke-sperrungen-und-termine-am-wochenende--ein-uberblick-13468081.html
-#: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
-#: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
-#: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
-#: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024) (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
-#: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
-#: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
-#: source_id: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
-#: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025)
-#: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025) (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025)
-#: source_id: viz2021:13.373428,52.515998,07.04.2025,12:00 (bis 07.04.2025)
-	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
-	2::temp 8540,12420 8775,12457
-	2::temp 8309,12758 8306,12609 8207,12606
-	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
-	2::temp 8306,12609
-	3 8554,12593 8540,12420 8775,12457
-	3 8399,12610 8420,12556 8421,12479 8400,12417 8391,12389
-# REMOVED ---	3 8369,12609 8373,12416 8391,12389
-	3 8775,12457 8540,12420 8554,12593
-	3 8327,12174 8344,12221 8391,12389
-	3 7429,12070 7383,12095 7031,12320
-# REMOVED ---	3 8391,12389 8373,12416 8369,12609
-	3 8391,12389 8344,12221 8327,12174
-	3 8391,12389 8400,12417 8421,12479 8420,12556 8399,12610
-	3 7654,12464 7627,12380 7603,12353
-	3 7603,12353 7627,12380 7654,12464
-	3 8592,12252 8538,12245 8522,12187
-	3 8592,12252 8538,12245 8522,12239
-	3 7822,12201 7816,12150 7823,12120
-	3 7822,12201 7875,12363 7945,12592
-	3 8522,12187 8538,12245 8522,12239
-	3 8522,12187 8538,12245 8592,12252
-	3 7945,12592 7875,12363 7822,12201
-	3 7945,12592 8122,12603 8120,12756
-	3 7031,12320 7383,12095 7429,12070
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12239 8538,12245 8592,12252
-	3 8120,12756 8122,12603 7945,12592
-	3 7823,12120 7816,12150 7822,12201
-',
-         'from' => 1743631200,
-         'id' => 3085,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              3
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 04.04.2025 bis 07.04.2025 6 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1743998400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5747,7 +5671,29 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (mittlerweile ist nur die Diagonalverbindung Grabertstr. - Sembritzkistr. gesperrt (ohnehin nicht in den BBBike-Daten) --- 
+#: note: Endedatum laut Baustellenschild der Wasserbetriebe
+# REMOVED --- #: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt --- #: osm_watch: way id="1197821336" version="1" --- 
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
+#: also_indoor: traffic (T,H) vvv
+#: last_checked: 2025-04-06 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
+#: next_check: 2025-10-31 vvv
+Grabertstr.	q4::inwork 6923,5057 7030,4937
+#Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3784,
+         'text' => 'Grabertstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
+         'type' => 'handicap',
+         'until' => 1761930000
+       },
        undef,
        undef,
        undef,
@@ -6268,11 +6214,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1743717600,
+         'from' => 1746136800,
          'id' => 3955,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 5.4.2025 bis 6.4.2025',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 3.5.2025 bis 4.5.2025',
          'type' => 'handicap',
-         'until' => 1743976799
+         'until' => 1746395999
        },
        undef,
        undef,
@@ -6388,7 +6334,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
-#: last_checked: 2025-03-03 (mapillary)
+#: last_checked: 2025-04-06 (bahninfo-forum)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -6704,28 +6650,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
-#: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
-#: source_id: viz2021:13.36063,52.44674,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
-#: source_id: viz2021:13.361338,52.446986,04.04.2025,20:00 (bis 07.04.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
-#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
-#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1832086361215578310
-#: by: https://pbs.twimg.com/media/GWyr1-TXYAAdRMr?format=jpg&name=medium
-	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
-',
-         'from' => 1743631200,
-         'id' => 4074,
-         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 04.04.2025 20:00 bis 07.04.2025 04:00',
-         'type' => 'handicap',
-         'until' => 1743991200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7460,7 +7385,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
 #: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
-#: last_checked: 2025-03-26
+#: last_checked: 2025-04-04 (mapillary)
 #: next_check: 2025-05-31
 	q3::temp 10032,9456 10004,9268
 ',
@@ -7889,7 +7814,20 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
          'type' => 'handicap',
          'until' => 1751320800
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
+#: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert
+Dickensweg	q4::inwork -1304,11183 -1062,11214
+#: note: laut rbb nur bis 30.04.2025
+#: next_check: 2025-04-30
+Scottweg	q4::inwork -1317,11300 -966,11382
+',
+         'from' => 1739720880,
+         'id' => 4263,
+         'text' => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 16:48 bis 13.06.2025',
+         'type' => 'handicap',
+         'until' => 1749830400
+       },
        {
          'data' => '#: next_check_id: PLATANEN-2025
 #: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025)
@@ -7940,7 +7878,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 #: osm_watch: way id="275795707" version="3"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-04-02 vvv
+#: last_checked: 2025-04-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: note: kann offen sein, aber nicht immer
@@ -8118,18 +8056,7 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'type' => 'gesperrt',
          'until' => 1746889200
        },
-       {
-         'data' => '#: source_id: LS/223-P/25/019 (bis 07.04.2025)
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
-#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
-	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
-',
-         'from' => 1743631200,
-         'id' => 4288,
-         'text' => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 6.4.2025',
-         'type' => 'gesperrt',
-         'until' => 1743976800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025)
 	q4::inwork 3088,12094 2920,12070
@@ -8159,13 +8086,29 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238 (2018)
+#: by: https://www.bahninfo-forum.de/read.php?9,825093,825257#msg-825257 (laut Aushang ab 7.4.2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/klingsorstrasse-in-berlin-steglitz-fur-drei-monate-vollgesperrt-wasserbetriebe-tauschen-regenwasserkanal-aus-13490011.html (zwischen Telramundweg und Amfortasweg, bis 23.06.2025; keine Erwähnung einer Sanierung der Fahrbahn)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250406 (vorerst keine Sperrung)
+#: by: https://stadtrand-nachrichten.de/klingsorstrasse-verwirrung-um-baustelle-der-wasserbetriebe/ (erst ab dem 10. oder 11.04.2025)
+#: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
+Klingsorstr.	q4::inwork 5206,4432 5150,4345
+Dalandweg: Einbahnstraßenregelung, vermutlich nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
+',
+         'from' => 1744149600,
+         'id' => 4291,
+         'text' => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, voraussichtlich vom 10.04.2025 bis 23.06.2025',
+         'type' => 'handicap',
+         'until' => 1750716000
+       },
        {
          'data' => '#: source_id: viz2021:13.463843,52.485135,07.04.2025,07:00 (bis 10.04.2025)
 #: note: Verkehrsmeldung geht bis zum 8.4.2025 + zwei weitere Tage
 Puderstr.	q4::inwork 14492,8853 14525,8894 14567,8966
 #: note: vermutlich ist der gesperrte Abschnitt hier kürzer, deshalb q4 -> q3
-Stuckstr.	q3::inwork 14439,8987 14525,8894 14615,8799
+Stuckstr.	q3::inwork 14439,8987 14525,8894
+# REMOVED (hier möglicherweise nicht) --- Stuckstr.	q3::inwork 14525,8894 14615,8799
 ',
          'from' => 1743915600,
          'id' => 4292,

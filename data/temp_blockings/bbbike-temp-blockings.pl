@@ -29003,7 +29003,7 @@ EOF
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
-#: last_checked: 2025-02-08
+#: last_checked: 2025-04-07
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="39"
 #: osm_watch: way id="580507889" version="34"
@@ -30053,10 +30053,10 @@ EOF
 #: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
 #: source_id: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
-#: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025)
+#: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
 #: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025) (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025)
-#: source_id: viz2021:13.373428,52.515998,07.04.2025,12:00 (bis 07.04.2025)
+#: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
+#: source_id: viz2021:13.373428,52.515998,07.04.2025,12:00 (bis 07.04.2025) (inaktiv)
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -39860,14 +39860,26 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1703597005, # undef, # XXX
-       text  => 'Grabertstr. und Hanstedter Weg: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
+       until => $isodate2epoch->("2025-10-31 18:00:00"), # 1703597005, # undef, # XXX
+#      text  => 'Grabertstr. und Hanstedter Weg: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
+       text  => 'Grabertstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
        type  => 'handicap',
        data  => <<EOF,
-# REMOVED (mittlerweile ist nur die Diagonalverbindung Grabertstr. - Sembritzkistr. gesperrt (ohnehin nicht in den BBBike-Daten) --- #: note: Endedatum laut Baustellenschild der Wasserbetriebe --- #: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt --- #: osm_watch: way id="1197821336" version="1" --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: also_indoor: traffic (B[Grabertstr]) vvv --- #: last_checked: 2023-06-12 vvv --- #: check_frequency: 180d vvv --- #: next_check: 2025-10-31 vvv
+# REMOVED (mittlerweile ist nur die Diagonalverbindung Grabertstr. - Sembritzkistr. gesperrt (ohnehin nicht in den BBBike-Daten) --- 
+#: note: Endedatum laut Baustellenschild der Wasserbetriebe
+# REMOVED --- #: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt --- #: osm_watch: way id="1197821336" version="1" --- 
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
+#: also_indoor: traffic (T,H) vvv
+#: last_checked: 2025-04-06 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
+#: next_check: 2025-10-31 vvv
 Grabertstr.	q4::inwork 6923,5057 7030,4937
-Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
+#Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -42885,7 +42897,7 @@ EOF
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
-#: last_checked: 2025-03-03 (mapillary)
+#: last_checked: 2025-04-06 (bahninfo-forum)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -44127,7 +44139,7 @@ EOF
 #: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
 #: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
-#: source_id: viz2021:13.361338,52.446986,04.04.2025,20:00 (bis 07.04.2025)
+#: source_id: viz2021:13.361338,52.446986,04.04.2025,20:00 (bis 07.04.2025) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
 #: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
 #: by: https://www.youtube.com/watch?v=YI1O5phpGiE
@@ -45908,7 +45920,7 @@ EOF
 #: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...) (bis 28.03.2025 + ...) (inaktiv)
 #: source_id: bvg2024:x83#HIM_FREETEXT_260482 (kein Endedatum)
 #: source_id: viz2021:13.3156,52.4588,02.02.2025,18:17 (bis 28.02.2025) (inaktiv)
-#: source_id: viz2021:13.3156,52.4588,18.12.2024,18:17 (nur noch Verengung, bis 28.02.2025) (bis 04.04.2025) (bis 07.04.2025)
+#: source_id: viz2021:13.3156,52.4588,18.12.2024,18:17 (nur noch Verengung, bis 28.02.2025) (bis 04.04.2025) (bis 07.04.2025) (inaktiv)
 #: osm_watch: note 4441243 5
 #: osm_watch: note 4441280 1
 #: also_indoor: traffic (H,ex-G,B,T,W)
@@ -46105,7 +46117,7 @@ EOF
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
 #: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
-#: last_checked: 2025-03-26
+#: last_checked: 2025-04-04 (mapillary)
 #: next_check: 2025-05-31
 	q3::temp 10032,9456 10004,9268
 EOF
@@ -46685,12 +46697,16 @@ EOF
 EOF
      },
      { from  => 1739720880, # 2025-02-16 16:48
-       until => 1740076930, # 1745690400, # 2025-04-26 20:00
-       text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.02.2025 16:48 bis 26.04.2025 20:00',
+       until => $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
+       text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 16:48 bis 13.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
-	q4::inwork -1304,11183 -1062,11214
+#: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert
+Dickensweg	q4::inwork -1304,11183 -1062,11214
+#: note: laut rbb nur bis 30.04.2025
+#: next_check: 2025-04-30
+Scottweg	q4::inwork -1317,11300 -966,11382
 EOF
      },
      { from  => 1739772000, # 2025-02-17 07:00
@@ -46800,7 +46816,7 @@ EOF
 #: osm_watch: way id="275795707" version="3"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-04-02 vvv
+#: last_checked: 2025-04-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: note: kann offen sein, aber nicht immer
@@ -47065,15 +47081,16 @@ EOF
 Merler Weg	q4::inwork 18852,13269 19180,13219
 EOF
      },
-     { from  => 1743953696, # 1743890400, # 2025-04-06 00:00
-       until => 1743953696, # 1750716000, # 2025-06-24 00:00
-       text  => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, vom 07.04.2025 bis 23.06.2025',
+     { from  => $isodate2epoch->("2025-04-09 00:00:00"), # 1743953696, # 1743890400, # 2025-04-06 00:00
+       until => 1750716000, # 2025-06-24 00:00
+       text  => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, voraussichtlich vom 10.04.2025 bis 23.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238 (2018)
 #: by: https://www.bahninfo-forum.de/read.php?9,825093,825257#msg-825257 (laut Aushang ab 7.4.2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/klingsorstrasse-in-berlin-steglitz-fur-drei-monate-vollgesperrt-wasserbetriebe-tauschen-regenwasserkanal-aus-13490011.html (zwischen Telramundweg und Amfortasweg, bis 23.06.2025; keine Erwähnung einer Sanierung der Fahrbahn)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250406 (vorerst keine Sperrung)
+#: by: https://stadtrand-nachrichten.de/klingsorstrasse-verwirrung-um-baustelle-der-wasserbetriebe/ (erst ab dem 10. oder 11.04.2025)
 #: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
 Klingsorstr.	q4::inwork 5206,4432 5150,4345
 Dalandweg: Einbahnstraßenregelung, vermutlich nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
@@ -47088,7 +47105,8 @@ EOF
 #: note: Verkehrsmeldung geht bis zum 8.4.2025 + zwei weitere Tage
 Puderstr.	q4::inwork 14492,8853 14525,8894 14567,8966
 #: note: vermutlich ist der gesperrte Abschnitt hier kürzer, deshalb q4 -> q3
-Stuckstr.	q3::inwork 14439,8987 14525,8894 14615,8799
+Stuckstr.	q3::inwork 14439,8987 14525,8894
+# REMOVED (hier möglicherweise nicht) --- Stuckstr.	q3::inwork 14525,8894 14615,8799
 EOF
      },
     );
