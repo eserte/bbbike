@@ -2419,6 +2419,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 #: by: https://www.winzerfest-koepenick.de/?date=20230322
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311487.php
 #: by: https://www.winzerfest-koepenick.de/ (19.4. bis 21.4.2024) (25.04.2025 - 27.04.2025)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1549582.php
 # REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -4809,7 +4810,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025)
+#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
 #: next_check: 2025-04-09 (Änderung des Bauzustands, siehe auch DB-Seite) vvv
@@ -6741,7 +6742,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-01 vvv
+#: last_checked: 2025-04-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7502,19 +7503,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.319959,52.470975,16.12.2024,07:00 (hier nur Kfz, bis 14.03.2025) (bis 30.04.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1868530243469811893
-#: by: https://pbs.twimg.com/media/GercPIvWwAAA2u8?format=png&name=900x900
-#: note: laut VIZ-Korrespondenz gibt es eine gesonderte Umleitungsstrecke für den Radverkehr
-	q4::inwork; 4787,7213 4791,7090
-',
-         'from' => 1734242400,
-         'id' => 4231,
-         'text' => 'Laubacher Str.: Bauarbeiten zwischen Wiesbadener Str. und Bergheimer Platz, Sperrung Richtung Süden, vermutlich sind auch Radfahrer betroffen, vom 16.12.2024 07:00 bis 30.04.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1746025200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
@@ -8103,18 +8092,33 @@ Dalandweg: Einbahnstraßenregelung, vermutlich nicht für Radfahrer freigegeben	q4
          'until' => 1750716000
        },
        {
-         'data' => '#: source_id: viz2021:13.463843,52.485135,07.04.2025,07:00 (bis 10.04.2025)
+         'data' => '#: source_id: viz2021:13.463843,52.485135,07.04.2025,07:00 (bis 08.04.2025 oder 10.04.2025) (inaktiv)
+#: next_check: 2025-04-09 vvv
 #: note: Verkehrsmeldung geht bis zum 8.4.2025 + zwei weitere Tage
 Puderstr.	q4::inwork 14492,8853 14525,8894 14567,8966
 #: note: vermutlich ist der gesperrte Abschnitt hier kürzer, deshalb q4 -> q3
 Stuckstr.	q3::inwork 14439,8987 14525,8894
 # REMOVED (hier möglicherweise nicht) --- Stuckstr.	q3::inwork 14525,8894 14615,8799
+#: next_check ^^^
 ',
          'from' => 1743915600,
          'id' => 4292,
          'text' => 'Puderstr./Stuckstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, vom 07.04.2025 07:00 bis voraussichtlich 10.04.2025 17:00',
          'type' => 'handicap',
          'until' => 1744297200
+       },
+       {
+         'data' => '#: next_check_id: GITSCHINER-2025
+#: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
+#: last_checked: 2025-04-08
+#: also_indoor: traffic (none)
+	q4::inwork 11117,10326 11094,10261
+',
+         'from' => undef,
+         'id' => 4293,
+         'text' => 'Erkelenzdamm: in Höhe Wassertorplatz Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

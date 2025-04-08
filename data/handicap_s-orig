@@ -11,6 +11,7 @@
 ### Friedrichshain ###
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php (Bauende: voraussichtlich Anfang Juni 2025)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1549441.php (Querungshilfen im Bezirk, auch diese hier)
 #: also_indoor: traffic (ex-G,ex-W,B,T)
 #: osm_watch: note 3677862 12
 #: note: Arbeiten für eine neue Gehwegvorstreckung
@@ -39,7 +40,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-04-07
+#: last_checked: 2025-04-08
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -748,6 +749,12 @@ Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,99
 # 
 ### Kreuzberg ###
 # 
+#: next_check_id: GITSCHINER-2025
+#: last_checked: 2025-04-08
+#: next_check: 2025-05-31 (VIZ-Verkehrsmeldung)
+#: valid: -20250531
+Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
+# 
 # REMOVED (keine Baustelle mehr) --- #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv) (bis 01.11.2024) (bis 29.11.2024) (bis 31.01.2025) (inaktiv) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300 --- #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan) --- #: also_indoor: traffic (G,B,ex-W) --- #: last_checked: 2024-12-21 vvv --- #: next_check: 2025-12-19 vvv --- #: valid: -20250131 vvv --- Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294 --- Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (scheint vorfristig beendet worden zu sein) --- #: XXX Alexandrinenstraße (Kreuzberg) in beiden Richtungen, Kreuzung Ritterstraße: Leitungsarbeiten, Die Alexandrinenstraße ist von beiden Seiten von der Ritterstraße abgehängt, vom 11.12.2023 06:00 bis 29.12.2023 17:00 --- #: source_id: viz2021:13.403669,52.503381,11.12.2023,06:00 (bis 29.12.2023) (bis 29.02.2023) --- #: also_indoor: traffic (G,W)--- #: last_checked: 2024-01-08 --- #: check_frequency: 30d --- #: next_check: 2024-02-29 --- #: valid: -20240229 --- Alexandrinenstr.: Fahrbahn in Höhe Ritterstr. gesperrt	q2::inwork 10501,11056 10397,10852 10329,10723
 # REMOVED (beendet) --- #: note: kann außerhalb der Arbeitszeiten geöffnet sein (gesehen: 2021-10-19 gegen 19:00, 2021-11-09 gegen 18:10) --- #: last_checked: 2021-11-20 --- #: check_frequency: 14d --- Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
@@ -851,14 +858,14 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="16096289" version="33"
 #: osm_watch: way id="707100249" version="23"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
-#: last_checked: 2025-04-01 (daf)
+#: last_checked: 2025-04-08
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=759366#post759366
-#: last_checked: 2024-10-16
+#: last_checked: 2025-04-01 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 7952,11336 7934,11275
@@ -1354,6 +1361,7 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # 
 #: next_check_id: WEISSENHOEHER-2025
 #: note: Länge des gesperrten Bereichs geschätzt 50m, u.U. Umwege notwendig
+#: also_indoor: traffic (T)
 #: last_checked: 2025-03-12
 #: next_check: 2025-04-02
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
@@ -1927,7 +1935,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-03-15
+#: last_checked: 2025-04-08
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -3726,7 +3734,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-04-01
+#: last_checked: 2025-04-08
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-

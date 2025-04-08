@@ -1839,6 +1839,8 @@ Georg-Hermann-Allee: Straßenbahntrasse	3nocross -13418,1668 -13418,1576 -13420,1
 Georg-Hermann-Allee: Straßenbahntrasse	3nocross -13420,1478 -13422,1383 -13424,1290 -13429,1069
 #: by: mapillary
 Am Fährgut	1 -13585,3401 -13620,3388 -13635,3434 -13602,3448 -13585,3401
+#: note: keine echte Einbahnstraße, aber die Einfahrt von Nordwesten aus ist vermutlich nicht praktikabel, auch weil der Radverkehr eher über die Nebenstraße geführt wird
+Drewitzer Str.	1:igndisp -10811,-3857 -10793,-3868
 #: section ^^^
 ###################################################################### 
 #: section: Sperrungen anderswo in Brandenburg vvvvvvvvvvvvvvvvvvvvvvv
@@ -4128,7 +4130,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-04-01
+#: last_checked: 2025-04-08
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -5029,7 +5031,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670
 #: by: https://vergabekooperation.berlin/NetServer/TenderingProcedureDetails?function=_DownloadTenderDocument&documentOID=54321-NetParticipationCompetition-193d0416eb5-63ef0651bae7f098&Document=SU5GMS0wODI2LTIwMjRfVTEtVTRfUHJvamVrdHN0ZXVlcnVuZ19Wb3JoYWJlbi0gdW5kIExlaXN0dW5nc2Jlc2NocmVpYnVuZyAoTEIpX3YxLnBkZg (U1/U3 Ersatzneubau BW XII)
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="13"
-#: last_checked: 2025-03-10 (osm)
+#: last_checked: 2025-04-08
 #: check_frequency: 120d
 #: next_check: 2029-12-31 (pardok)
 #: priority: #A

@@ -22101,6 +22101,7 @@ EOF
 #: by: https://www.winzerfest-koepenick.de/?date=20230322
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311487.php
 #: by: https://www.winzerfest-koepenick.de/ (19.4. bis 21.4.2024) (25.04.2025 - 27.04.2025)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1549582.php
 # REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -30052,7 +30053,7 @@ EOF
 #: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
-#: source_id: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
+#: source_id[inactive]: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
 #: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
 #: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025) (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
@@ -36394,7 +36395,7 @@ EOF
 #: source_id: viz2021:13.492748,52.636622,19.11.2024,07:00 (für Kfz-Verkehr, beide Richtungen, bis 22.11.2024) (inaktiv)
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025)
+#: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
 #: next_check: 2025-04-09 (Änderung des Bauzustands, siehe auch DB-Seite) vvv
@@ -43916,7 +43917,7 @@ EOF
 #: by: https://wilhelmstadt-bewegt.de/ba3-weissenburger-adamstrasse/?proj=Umbau%20der%20Pichelsdorfer%20Stra%C3%9Fe&singlec=baustellen-ticker-pichelsdorfer-strasse (März bis Herbst 2024)
 #: by: https://wilhelmstadt-bewegt.de/wp-content/uploads/2024/02/230720_BA3_Infoflyer-Ausschnitt-1024x269.jpg (hier allerdings keine Sackgasse zu sehen)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1428086.php (18.03.2024 bis Herbst 2024)
-#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024) (bis 21.06.2024, weitere Bauabschnitte folgen) (ohne Verlängerung inaktiv) (bis 27.09.2024) (bis 31.12.2024) (bis 31.03.2025) (bis 08.04.2025 + ...)
+#: source_id: viz2021:13.197854,52.522094,02.05.2024,10:00 (bis 31.08.2024) (bis 21.06.2024, weitere Bauabschnitte folgen) (ohne Verlängerung inaktiv) (bis 27.09.2024) (bis 31.12.2024) (bis 31.03.2025) (bis 08.04.2025 + ...) (bis 30.06.2025 + ...)
 Franzstr.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3637,12668 -3446,12728
 Weißenburger Str.: Anbindung zur Pichelsdorfer Str. gesperrt	q4::inwork -3650,12762 -3739,12756
 EOF
@@ -44414,7 +44415,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-01 vvv
+#: last_checked: 2025-04-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45918,7 +45919,7 @@ EOF
 #: source_id: viz2021:13.3156,52.4588,12.09.2024,07:28 (bis 18.10.2024) (bis 20.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:x83#HIM_FREETEXT_238226
 #: source_id: viz2021:13.3156,52.4588,22.10.2024,18:34 (bis 31.01.2025) (bis 07.01.2025) (bis 10.01.2025 + weitere Arbeiten) (bis 31.01.2025 + ...) (bis 28.03.2025 + ...) (inaktiv)
-#: source_id: bvg2024:x83#HIM_FREETEXT_260482 (kein Endedatum)
+#: source_id[inactive]: bvg2024:x83#HIM_FREETEXT_260482 (kein Endedatum)
 #: source_id: viz2021:13.3156,52.4588,02.02.2025,18:17 (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.3156,52.4588,18.12.2024,18:17 (nur noch Verengung, bis 28.02.2025) (bis 04.04.2025) (bis 07.04.2025) (inaktiv)
 #: osm_watch: note 4441243 5
@@ -46296,11 +46297,11 @@ EOF
 EOF
      },
      { from  => 1734242400, # 2024-12-15 07:00
-       until => $isodate2epoch->("2025-04-30 17:00:00"), # 1741968000, # 2025-03-14 17:00
+       until => 1744133365, # $isodate2epoch->("2025-04-30 17:00:00"), # 1741968000, # 2025-03-14 17:00
        text  => 'Laubacher Str.: Bauarbeiten zwischen Wiesbadener Str. und Bergheimer Platz, Sperrung Richtung Süden, vermutlich sind auch Radfahrer betroffen, vom 16.12.2024 07:00 bis 30.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.319959,52.470975,16.12.2024,07:00 (hier nur Kfz, bis 14.03.2025) (bis 30.04.2025)
+#: source_id: viz2021:13.319959,52.470975,16.12.2024,07:00 (hier nur Kfz, bis 14.03.2025) (bis 30.04.2025) (vorfristig inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1868530243469811893
 #: by: https://pbs.twimg.com/media/GercPIvWwAAA2u8?format=png&name=900x900
 #: note: laut VIZ-Korrespondenz gibt es eine gesonderte Umleitungsstrecke für den Radverkehr
@@ -47044,13 +47045,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-04-03 00:00:00"),
-       until => $isodate2epoch->("2025-04-07 00:00:00"),
-       text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 6.4.2025',
+       until => $isodate2epoch->("2025-04-07 06:00:00"),
+       text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 7.4.2025 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/223-P/25/019 (bis 07.04.2025)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 EOF
      },
@@ -47101,12 +47103,26 @@ EOF
        text  => 'Puderstr./Stuckstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, vom 07.04.2025 07:00 bis voraussichtlich 10.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.463843,52.485135,07.04.2025,07:00 (bis 10.04.2025)
+#: source_id: viz2021:13.463843,52.485135,07.04.2025,07:00 (bis 08.04.2025 oder 10.04.2025) (inaktiv)
+#: next_check: 2025-04-09 vvv
 #: note: Verkehrsmeldung geht bis zum 8.4.2025 + zwei weitere Tage
 Puderstr.	q4::inwork 14492,8853 14525,8894 14567,8966
 #: note: vermutlich ist der gesperrte Abschnitt hier kürzer, deshalb q4 -> q3
 Stuckstr.	q3::inwork 14439,8987 14525,8894
 # REMOVED (hier möglicherweise nicht) --- Stuckstr.	q3::inwork 14525,8894 14615,8799
+#: next_check ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Erkelenzdamm: in Höhe Wassertorplatz Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: GITSCHINER-2025
+#: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
+#: last_checked: 2025-04-08
+#: also_indoor: traffic (none)
+	q4::inwork 11117,10326 11094,10261
 EOF
      },
     );
