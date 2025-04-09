@@ -305,6 +305,10 @@ install_old_perl_dependencies() {
 		/tmp/ci-helper-cpan-pm/ci-helper-cpan-pm --distroprefs=https://github.com/eserte/srezic-cpan-distroprefs --enable-sysdeps --no-sudo
 		# see https://rt.cpan.org/Ticket/Display.html?id=154926
 		cpan common::sense
+
+		# fix "Possible precedence problem between ! and numeric eq (==)" warning in Tk 804.036
+		# XXX remove once a newer Tk is released
+		cpanm --quiet --notest https://github.com/eserte/perl-tk.git@3a13aed7a07cd82347695b9595234f629803aef3
 	    ;;
 	esac
     fi
