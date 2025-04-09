@@ -32,6 +32,7 @@ my $pmake = get_pmake;
 ok $pmake, "pmake call worked, result is $pmake";
 
 {
+    my $save_pwd = save_pwd2;
     chdir "$FindBin::RealBin/.." or die $!;
     my $pmake_via_cmdline = IO::Pipe->new->reader
 	($^X, '-I.', '-MBBBikeBuildUtil=get_pmake', '-e', 'print get_pmake')
