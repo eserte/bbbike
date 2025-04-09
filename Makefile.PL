@@ -9,7 +9,7 @@ BEGIN {
 
 use strict;
 use FindBin;
-use lib $FindBin::RealBin;
+use lib $FindBin::RealBin, "$FindBin::RealBin/lib";
 
 use ExtUtils::MakeMaker;
 use ExtUtils::Manifest;
@@ -24,6 +24,9 @@ BEGIN {
 
 use BBBikeVar;
 use BBBikeBuildUtil qw(module_path monkeypatch_manifind);
+use Doit;
+use Doit::Util qw(get_os_release);
+no warnings 'qw'; # nullify Doit's activation of warnings
 
 my $action;
 GetOptions('action=s' => \$action)
@@ -32,6 +35,8 @@ GetOptions('action=s' => \$action)
 my $author = 'Slaven Rezic (' . $BBBike::EMAIL . ')',
 my $abstract = "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg";
 my($version_major, $version_minor) = $BBBike::VERSION =~ /^(\d+)\.(\d+)/;
+my $os_release = get_os_release;
+my $os_dist_version = ($os_release->{ID}||'unknown').':'.($os_release->{VERSION_ID}||'unknown');
 
 monkeypatch_manifind();
 
@@ -218,7 +223,9 @@ my @req_table =
    'Für das Parsen des ESRI-Shapefile-Formats'],
   [qw/XBase	0	all	0	base/,
    'Ebenfalls für das Parsen des ESRI-Shapefile-Formats'],
-  ($] >= 5.014 ? # does not build with older perls
+  ($] >= 5.014 # does not build with older perls
+   && $os_dist_version ne 'debian:10' # problem on debian:buster with building Alien::proj (cannot find sqlite)
+   ?
    [qw/Geo::LibProj::FFI	0	all	0	base/,
     'Für das Konvertieren von ESRI-Shapefiles']
    : ()
