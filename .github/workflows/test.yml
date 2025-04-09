@@ -8,6 +8,7 @@ on:
       - '*gitlab*'
       - '*doozer*'
   pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
