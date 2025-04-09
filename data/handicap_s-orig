@@ -15,7 +15,7 @@
 #: also_indoor: traffic (ex-G,ex-W,B,T)
 #: osm_watch: note 3677862 12
 #: note: Arbeiten für eine neue Gehwegvorstreckung
-#: last_checked: 2025-04-03
+#: last_checked: 2025-04-09
 #: check_frequency: 45d
 #: next_check: 2025-06-01 (BA-Artikel)
 Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgersteige	q4::inwork 14651,11666 14710,11626
@@ -31,7 +31,7 @@ Pufendorfstr.: 70m der Fahrbahn gesperrt, Ausweichen auf Bürgersteig	q3::inwork 
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-04-03
+#: last_checked: 2025-04-09
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-04-07
+#: last_checked: 2025-04-09
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -338,7 +338,8 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 ### Altglienicke ###
 # 
 #: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025) (bis 30.04.2025) (bis 11.04.2025) (bis 30.04.2025)
-#: source_id: bvg2024:160#HIM_FREETEXT_233161 (ohne Endedatum)
+#: source_id[inactive]: bvg2024:160#HIM_FREETEXT_233161 (ohne Endedatum)
+#: source_id: bvg2024:160#HIM_FREETEXT_233156 (ohne Endedatum)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nördlich Semmelweisstr. Anfang März 2025 offen, der südliche Abschnitt Ende April 2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20250308 (bis Ende April 2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1722238382229_wegedornbr_cke.png
@@ -827,7 +828,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: note 3913793 9
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
-#: last_checked: 2025-03-09
+#: last_checked: 2025-04-09 (webcam)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (caimmo website)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -1267,7 +1268,7 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2025-01-02 vvv
+#: last_checked: 2025-04-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -2007,7 +2008,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-03-26
+#: last_checked: 2025-04-09
 #: check_frequency: 30d
 #: next_check: 2025-04-26 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -3727,14 +3728,14 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (Am Seegraben - Schützenstr.): einige Fußgänger	q1 19996,-740 19978,-712
 #: note: Schranke ist manchmal offen, kann umfahren werden
 (an der BMW-Niederlassung): Parkverkehr, Schranke	q1 2102,11307 2180,11318 2219,11324
-(Grolmanstr./Goethestr. - Am Schillertheater): gemeinsamer Rad- und Gehweg, Fußgänger haben Vorrang	q1 4651,11368 4648,11445 4616,11507 4574,11587
+(Grolmanstr./Goethestr. - Am Schillertheater): gemeinsamer Rad- und Gehweg, Fußgänger haben Vorrang	q1 4651,11368 4648,11445 4636,11469 4616,11507 4592,11553 4574,11587
 (Verlängerung Hiddenseestr.): Fußgänger	q2 10960,17674 10969,17587
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
 Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-04-08
+#: last_checked: 2025-04-09
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-
@@ -4263,8 +4264,9 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://www.berliner-woche.de/spandau/c-bauen/bvg-will-bis-ende-oktober-arbeiten-am-u-bahnhof-rathaus-spandau-abschliessen_a325550
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/die-bvg-benoetigt-fast-zwei-jahre-fuer-den-einbau-des-neuen-aufzugs-am-u-bahnhof-altstadt-spandau_a375155 (vielleicht hängt es von den Aufzugarbeiten ab? Arbeiten bis Ende 2024)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/holle-auf-erden-fur-radfahrer-ist-diese-idee-vor-dem-rathaus-spandau-der-durchbruch-13388299.html (Umbau frühestens 2027?)
+#: by: https://www.tagesspiegel.de/die-losung-an-berlins-grossem-bvg-knoten-stadtrat-zeigt-erstmals-neue-fahrradbrucke-am-rathaus-spandau-13504444.html (kein Bautermin)
 #: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
-#: last_checked: 2025-03-18 (Tsp) vvv
+#: last_checked: 2025-04-08 (Tsp) vvv
 #: check_frequency: 360d vvv
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3511,14260 -3517,14218 -3552,14082
@@ -6708,7 +6710,8 @@ Fliegerhorstsiedlung: enge Straße	q1 -7330,7878 -7305,7838 -7266,7775 -7168,7825
 #: by: ^^^
 #: by: Holger Gaul: vvv
 #: note: wird vom Ordnungsamt kontrolliert
-Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q3- 5228,8729 5228,8703 5241,8692 5240,8637 5219,8635 5185,8647 5188,8694 5204,8702 5206,8731
+#: note: siehe auch temp_blockings-Eintrag (mit q4)
+Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q3- 5228,8729 5228,8703 5241,8692 5240,8637 5219,8635 5185,8647 5182,8701 5193,8711 5192,8737
 Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q3- 5219,8635 5212,8602
 #: by: ^^^
 #: by: Markus (Graf):

@@ -18464,7 +18464,7 @@ Route via An der Urania	2::temp 6824,10904 6873,11011 6882,11061 6880,11110 6851
 	3 8743,11489 8740,11524 8736,11557
 	3 7103,11247 6851,11346 6692,11365
 	3 6716,11439 6826,11479 6914,11487
-	3 6716,11439 6826,11479 6750,11550
+	3 6716,11439 6826,11479 6789,11499 6750,11550
 	3 9456,11513 9444,11616 9432,11702
 	3 8119,12414 8055,12186 8049,12140
 	3 8049,12140 8055,12186 8119,12414
@@ -18511,8 +18511,8 @@ Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
 	3 7429,10366 7413,10244 7384,10127
 	3 7429,12070 7383,12095 7031,12320
 	3 7384,10127 7413,10244 7429,10366
-	3 6750,11550 6826,11479 6716,11439
-	3 6750,11550 6826,11479 6914,11487
+	3 6750,11550 6789,11499 6826,11479 6716,11439
+	3 6750,11550 6789,11499 6826,11479 6914,11487
 	3 7849,10488 7689,10514 7478,10612
 	3 7115,11220 7004,11168 6880,11110 6841,11114
 	3 8391,12389 8344,12221 8327,12174
@@ -18533,7 +18533,7 @@ Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
 	3 7747,11075 7980,11070 8104,11037
 	3 6937,10407 7033,10396 7033,10328
 	3 6937,10407 7033,10396 7227,10489
-	3 6914,11487 6826,11479 6750,11550
+	3 6914,11487 6826,11479 6789,11499 6750,11550
 	3 6914,11487 6826,11479 6716,11439
 	3 9992,11682 10000,11691 9997,11713
 	3 6869,11567 6809,11570 6679,11602
@@ -18558,8 +18558,8 @@ Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
 # REMOVED ---	3 9331,11497 9268,11590 9234,11683
 # REMOVED ---	3 8599,11474 8596,11508 8592,11541
 # REMOVED ---	3 6540,11754 6778,11742 6980,11790
-# REMOVED ---	3 6750,11550 6826,11479 6914,11487
-# REMOVED ---	3 6750,11550 6826,11479 6716,11439
+# REMOVED ---	3 6750,11550 6789,11499 6826,11479 6914,11487
+# REMOVED ---	3 6750,11550 6789,11499 6826,11479 6716,11439
 # REMOVED ---	3 9432,11702 9444,11616 9456,11513
 # REMOVED ---	3 6742,11099 6873,11011 7002,11034
 # REMOVED ---	3 8327,12174 8344,12221 8391,12389
@@ -18603,7 +18603,7 @@ Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
 # REMOVED ---	3 9559,11715 9569,11631 9581,11523
 # REMOVED ---	3 9000,11727 9058,11564 9155,11283
 # REMOVED ---	3 9155,11283 9058,11564 9000,11727
-# REMOVED ---	3 6914,11487 6826,11479 6750,11550
+# REMOVED ---	3 6914,11487 6826,11479 6789,11499 6750,11550
 # REMOVED ---	3 6914,11487 6826,11479 6716,11439
 # REMOVED ---	3 9997,11713 10000,11691 9992,11682
 # REMOVED ---	3 6818,10725 6740,10755 6607,10801
@@ -18614,7 +18614,7 @@ Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
 # REMOVED ---	3 6468,10550 6532,10529 6602,10504 6636,10492
 # REMOVED ---	3 9692,11732 9701,11656 9702,11647
 # REMOVED ---	3 8049,12140 8055,12186 8119,12414
-# REMOVED ---	3 6716,11439 6826,11479 6750,11550
+# REMOVED ---	3 6716,11439 6826,11479 6789,11499 6750,11550
 # REMOVED ---	3 6716,11439 6826,11479 6914,11487
 EOF
      },
@@ -26699,8 +26699,8 @@ EOF
 	3 6980,11790 6778,11742 6540,11754
 	3 6679,11602 6809,11570 6869,11567
 	3 6869,11567 6809,11570 6679,11602
-	3 6750,11550 6826,11479 6914,11487
-	3 6914,11487 6826,11479 6750,11550
+	3 6750,11550 6789,11499 6826,11479 6914,11487
+	3 6914,11487 6826,11479 6789,11499 6750,11550
 EOF
      },
      { from  => 1473704824, # 2016-09-12 20:27
@@ -28884,7 +28884,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-03-20
+#: last_checked: 2025-04-09
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -36357,11 +36357,12 @@ EOF
 # REMOVED (alte Brücke nicht mehr zugänglich) ---	2::inwork -21227,-2017 -21125,-2012	
 EOF
      },
-     { from  => 1713897172, # 1652122429, # 2022-05-09 20:53
-       until => $isodate2epoch->("2025-04-10 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
+     { from  => $isodate2epoch->("2025-04-14 00:00:00"), # 1713897172, # 1652122429, # 2022-05-09 20:53
+       until => $isodate2epoch->("2025-09-15 17:00:00"), # $isodate2epoch->("2025-04-10 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023',
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 31.03.2025',
-       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis 10.04.2025',
+#      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis 10.04.2025',
+       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, auch für Fußgänger und Radfahrer, vom 15.04.2025 mittags bis voraussichtlich Mitte September 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -36381,6 +36382,7 @@ EOF
 #: by: https://pbs.twimg.com/media/Ggsmd-aWMAAlsTV?format=jpg&name=medium
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7303/docs/PL_berlin-gesundbrunnen-karow-bernau_wiltbergstrasse_sperrungen_20250326.pdf
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7303/docs/GR_-berlin-gesundbrunnen-karow-bernau_wiltbergstrasse_umleitung_20250327.pdf
+#: by: https://viz.berlin.de/aktuelle-meldungen/weiterer-bauablauf-bereich-wiltbergstrasse_poelnitzweg-in-buch/
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.492858,52.63663,09.05.2022,11:58 (inaktiv)
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
@@ -36397,12 +36399,13 @@ EOF
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
+#: XXX Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
-#: next_check: 2025-04-09 (Änderung des Bauzustands, siehe auch DB-Seite) vvv
+#: next_check: 2025-09-14 (VIZ-Seite --- vielleicht ein neuer Bauzustand?) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
-Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
-Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
-#	2::inwork 16166,25767 16121,25818
+# REMOVED --- Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
+# REMOVED --- Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
+	2::inwork 16166,25767 16121,25818
 #: next_check ^^^
 EOF
      },
@@ -38286,6 +38289,7 @@ EOF
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/barbarossadreieck-bau-geht-weiter_a412889
 #: by: https://www.deutsches-architekturforum.de/thread/15363-bv-sch%C3%B6neberger-eck-hochhaus-barbarossadreieck/?pageNo=1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_25_1539_1734_online.pdf (Grundstücksnummerierungen)
+#: by: https://entwicklungsstadt.de/12-etagen-wohn-und-gewerbeprojekt-schoeneberger-eck-soll-2025-fertig-sein/ (bis Mitte 2025)
 #: note: Halteverbotsschilder bis 31.12.2023, mittlerweile bis Juli 2024
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
 #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
@@ -38294,7 +38298,7 @@ EOF
 #: osm_watch: way id="1182385049" version="1"
 #: last_checked: 2025-03-05
 #: check_frequency: 90d
-#: next_check: 2025-07-01 (bw)
+#: next_check: 2025-07-01 (bw, entwicklungsstadt)
 	q3::inwork 6447,9661 6341,9546
 EOF
      },
@@ -38368,7 +38372,8 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Am Treptower Park: Rad- und Gehweg Richtung Kreuzberg wegen Bauarbeiten gesperrt',
+#      text  => 'Am Treptower Park: Rad- und Gehweg Richtung Kreuzberg wegen Bauarbeiten gesperrt',
+       text  => 'Am Treptower Park: Rad- und Gehweg Richtung Kreuzberg kann wegen Bauarbeiten gesperrt sein',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -38376,8 +38381,9 @@ EOF
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025) (inaktiv)
-#: last_checked: 2025-03-26 vvv
-#: check_frequency: 60d vvv
+#: note: mittlerweile kann man hier eigentlich ganz gut fahren (deshalb nun Konjunktiv im Text)
+#: last_checked: 2025-04-09 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2025-04-10 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
@@ -39612,7 +39618,7 @@ EOF
 #: also_indoor: traffic (B,T,ex-H,re-G,ex-W,A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
-#: last_checked: 2025-03-31 (traffic)
+#: last_checked: 2025-04-09
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -40084,6 +40090,7 @@ EOF
        text  => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, voraussichtlich bis 31.08.2025',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: WILTBERG-2022
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-300523/ (alte Sperrung)
 #: by: https://nitter.cz/VIZ_Berlin/status/1663489643629752320#m
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20250330 (bis 31. August 2025)
@@ -41808,7 +41815,7 @@ EOF
 #: also_indoor: traffic (ex-G,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
-#: last_checked: 2025-02-23 (architektur-urbanistik)
+#: last_checked: 2025-04-09
 #: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 EOF
@@ -41857,7 +41864,7 @@ EOF
 EOF
      },
      { from  => 1696309200, # 2023-10-03 07:00
-       until => $isodate2epoch->("2025-04-30 17:00:00"), # $isodate2epoch->("2024-05-04 17:00:00"), # 1700064000, # 2023-11-15 17:00
+       until => 1744202678, # $isodate2epoch->("2025-04-30 17:00:00"), # $isodate2epoch->("2024-05-04 17:00:00"), # 1700064000, # 2023-11-15 17:00
 #      text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 04.05.2024 17:00',
        text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.04.2025',
        type  => 'handicap',
@@ -42077,7 +42084,7 @@ EOF
      },
      { from  => undef, # 1698051600, # 2023-10-23 11:00
        until => 1723526964, # undef, # 1700780340, # 2023-11-23 23:59
-       #text  => 'Rungestr.: Anbindung Brückenstr. wegen Bauarbeiten gesperrt, vom 24.10.2023 11:00 bis 23.11.2023 23:59',
+#      text  => 'Rungestr.: Anbindung Brückenstr. wegen Bauarbeiten gesperrt, vom 24.10.2023 11:00 bis 23.11.2023 23:59',
        text  => 'Rungestr.: Anbindung Brückenstr. wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -42795,12 +42802,12 @@ EOF
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1750031927669608944#m (mögliche zusätzliche Einschränkung: Überqueren der Kurfürstenstr. an dieser Stelle möglicherweise nicht mehr möglich)
 #: by: https://www.deutsches-architekturforum.de/thread/13804-bauprojekte-an-der-urania-schillstra%C3%9Fe-kurf%C3%BCrstenstra%C3%9Fe/?postID=762284#post762284 (Büro-Neubau Equalizer, geplante Fertigstellung: 1. Quartal 2026)
 #: by: https://equalizer.berlin/
-#: also_indoor: webcam https://portal1944.webcam-profi.de/
+# REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
 #: last_checked: 2025-01-11 (architektur-urbanistik)
 #: check_frequency: 90d
-#: next_check: 2026-03-31
+#: next_check: 2026-03-31 (daf)
 	q4::inwork; 6681,10959 6607,10801
 EOF
      },
@@ -43214,13 +43221,13 @@ EOF
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
 #: osm_watch[closed]: note 4210969 6
-#: last_checked: 2025-03-12 (daf) vvv
+#: last_checked: 2025-04-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
 # REMOVED (laut osm westlich des Siemensstegs offen) ---	2::inwork 3836,12614 3867,12616 3888,12618 4030,12632 4078,12637 4131,12641
 	2::inwork 4131,12641 4162,12638 4299,12590 4340,12578 4441,12578 4529,12570
 	2::inwork 4441,12578 4441,12559
-Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4441,12559 4321,12566
+Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559 4321,12566
 # REMOVED (offen)	2::inwork 4529,12570 4575,12542 4642,12491
 # REMOVED (offen) --- Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
 #: next_check ^^^
@@ -45341,7 +45348,10 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9728-friedrichshain-west-westl-der-petersburger-und-warschauer-str/?postID=773638#post773638
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ehemalige-total-energies-tankstelle-ostbahnhof-holzmarktstra%C3%9Fe-36-42.1473/#post-24511
 #: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen.
-#: osm_watch: way id="482690912" version="6"
+# REMOVED --- #: osm_watch: way id="482690912" version="6"
+#: osm_watch: way id="189141737" version="7"
+#: osm_watch: way id="1225345724" version="1"
+#: osm_watch: way id="1356785471" version="2"
 #: last_checked: 2025-02-20 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 (entwicklungsstadt: Abriss der ehem. Tankstelle) vvv
@@ -45857,13 +45867,19 @@ EOF
 EOF
      },
      { from  => 1729461600, # 2024-10-21 00:00
-       until => 1740765216, # $isodate2epoch->("2025-02-28 23:59:59"), # 1735340400, # 2024-12-28 00:00
-       text  => 'Grolmanstr.: Sperrung zwischen Goethestr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Februar 2028',
+       until => undef, # 1740765216, # $isodate2epoch->("2025-02-28 23:59:59"), # 1735340400, # 2024-12-28 00:00
+       text  => 'Grolmanstr.: Bauarbeiten zwischen Goethestr. und Pestalozzistr., Sperrung der Fahrbahn, voraussichtlich bis Ende April 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
-#: by: rbb
-#: also_indoor: traffic (G,W)
-	q4::inwork 4690,11369 4775,11203
+#: by: rbb, wurde da aber mittlerweile entfernt
+#: also_indoor: traffic (ex-G,ex-W,B,T)
+#: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3
+#: note: laut Baustellenschild bis 04.2025
+#: add_fragezeichen: Wurden die Bauarbeiten beendet?
+#: last_checked: 2025-04-09
+#: check_frequency: 60d
+#: next_check: 2025-04-30
+	q3::inwork 4690,11369 4775,11203
 EOF
      },
      { from  => 1729533901, # 2024-10-21 20:05
@@ -46058,10 +46074,10 @@ EOF
 #: source_id: viz2021:13.299093,52.504261,23.01.2025,13:59 (zweifelhaft: "Brückenarbeiten", aber der Abschnitt stimmt; bis 31.03.2025) (inaktiv)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: der rbb-Eintrag, der bis zum 30.06.2025, wurde vorfristig am 01.04.2025 entfernt
-#: note: etwa 150m der Fahrbahn sind gesperrt (zurzeit östlicher Abschnitt)
-#: last_checked: 2025-03-16 (osm note)
+#: note: Halteverbotsschilder bis 30.06.2025
+#: last_checked: 2025-04-09
 # REMOVED --- #: check_frequency: 60d
-#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-12-31
 	q3::inwork 3041,10732 3295,10831
 EOF
@@ -46118,7 +46134,7 @@ EOF
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
 #: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
-#: last_checked: 2025-04-04 (mapillary)
+#: last_checked: 2025-04-09
 #: next_check: 2025-05-31
 	q3::temp 10032,9456 10004,9268
 EOF
@@ -46438,11 +46454,11 @@ EOF
      },
      { from  => 1737525600, # 2025-01-22 07:00
        until => 1748617200, # 2025-05-30 17:00
-       text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.01.2025 07:00 bis 30.05.2025 17:00',
+       text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, Gehweg für Radfahrer frei, vom 23.01.2025 07:00 bis 30.05.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025)
-	q4::inwork 2493,10675 2596,10663 2673,10670
+	q4::inwork 2493,10675 2596,10663 2673,10670 2698,10645
 EOF
      },
      { from  => undef, # 
@@ -47085,7 +47101,7 @@ EOF
      },
      { from  => $isodate2epoch->("2025-04-09 00:00:00"), # 1743953696, # 1743890400, # 2025-04-06 00:00
        until => 1750716000, # 2025-06-24 00:00
-       text  => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, voraussichtlich vom 10.04.2025 bis 23.06.2025',
+       text  => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, vom 10.04.2025 bis 23.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238 (2018)
@@ -47093,7 +47109,10 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/klingsorstrasse-in-berlin-steglitz-fur-drei-monate-vollgesperrt-wasserbetriebe-tauschen-regenwasserkanal-aus-13490011.html (zwischen Telramundweg und Amfortasweg, bis 23.06.2025; keine Erwähnung einer Sanierung der Fahrbahn)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250406 (vorerst keine Sperrung)
 #: by: https://stadtrand-nachrichten.de/klingsorstrasse-verwirrung-um-baustelle-der-wasserbetriebe/ (erst ab dem 10. oder 11.04.2025)
+#: by: http://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-klingsorstrasse-in-steglitz/ (ab 10.04.2025)
+#: by: http://viz.berlin.de/site/assets/files/1841/screenshot_2025-04-08_132327.542x0-is.png
 #: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
+#: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025)
 Klingsorstr.	q4::inwork 5206,4432 5150,4345
 Dalandweg: Einbahnstraßenregelung, vermutlich nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
 EOF
@@ -47104,13 +47123,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.463843,52.485135,07.04.2025,07:00 (bis 08.04.2025 oder 10.04.2025) (inaktiv)
-#: next_check: 2025-04-09 vvv
+#: last_checked: 2025-04-09 vvv
+#: next_check: 2025-04-10 vvv
 #: note: Verkehrsmeldung geht bis zum 8.4.2025 + zwei weitere Tage
-Puderstr.	q4::inwork 14492,8853 14525,8894 14567,8966
-#: note: vermutlich ist der gesperrte Abschnitt hier kürzer, deshalb q4 -> q3
-Stuckstr.	q3::inwork 14439,8987 14525,8894
-# REMOVED (hier möglicherweise nicht) --- Stuckstr.	q3::inwork 14525,8894 14615,8799
+Puderstr.	q3::inwork 14492,8853 14525,8894
+Puderstr.	q4::inwork 14525,8894 14567,8966
+#: note: nur die Kreuzung ist hier gesperrt, deshalb q4 -> q3
+Stuckstr.	q3::inwork 14439,8987 14525,8894 14615,8799
 #: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -47123,6 +47144,93 @@ EOF
 #: last_checked: 2025-04-08
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Gutenbergstr.: Einbahnstraßenregelung zwischen Englische Str. und Hannah-Karminski-Str., offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: GUTENBERG-2025
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
+#: XXX Möglicherweise im Zusammenhang mit der angrenzenden Hochbaustelle
+#: last_checked: 2025-04-09
+#: check_frequency: 90d
+	q4::inwork; 5518,12159 5317,12242
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Olivaer Platz: Radfahren in der Grünanlage verboten',
+       permanent => 1,
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Grünanlagenschild mit explizitem "Radfahren verboten"-Zusatzschild
+	q4 4360,10320 4352,10260
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schoelerpark: Radfahren verboten',
+       permanent => 1,
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Grünanlagenschild mit explizitem "Radfahren verboten"-Zusatzschild
+Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5228,8729 5228,8703 5241,8692 5240,8637 5219,8635 5185,8647 5182,8701 5193,8711 5192,8737
+Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219,8635 5212,8602
+EOF
+     },
+     { from  => 1744202737, # 2025-04-09 14:45
+       until => 1746050400, # 2025-05-01 00:00
+       text  => 'Bornstedter Str.: Bauarbeiten an der Anbindung Kurfüstendamm, Fahrbahn gesperrt, voraussichtlich bis 30.04.2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.288418,52.496596,14.03.2025,10:00 (bis 30.04.2025)
+	q4::inwork 2551,9995 2590,9949
+EOF
+     },
+     { from  => 1744203247, # 2025-04-09 14:54
+       until => $isodate2epoch->("2025-04-24 22:00:00"),
+       text  => 'Schwäbische Str.: Anbindung an die Grunewaldstr. gesperrt, voraussichtlich bis 24.4.2025, evtl. wird verlängert',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: GRUNEWALDSTR-2025
+#: source_id: viz2021:13.349444,52.48949,24.03.2025,07:00 (bis 24.04.2025)
+	q4::inwork 6851,9365 6921,9275
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Elßholzstr.: Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/grunewaldstra%C3%9Fe-8-neubau.1300/#post-24727
+#: osm_watch: way id="276210232" version="5"
+#: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
+#: last_checked: 2025-04-09
+#: check_frequency: 90d
+	q3::inwork; 7202,9329 7209,9507
+EOF
+     },
+     { from  => 1744128000, # 2025-04-08 18:00
+       until => $isodate2epoch->("2025-04-15 07:00:00"),
+       dont_check_date => 1,
+       text  => 'Pölnitzweg: Sperrung in Höhe Eisenbahnbrücke, auch für Fußgänger und Radfahrer, vom 10.04.2025 20:00 Uhr bis 15.04.2025 07:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: WILTBERG-2022
+#: by: https://viz.berlin.de/aktuelle-meldungen/weiterer-bauablauf-bereich-wiltbergstrasse_poelnitzweg-in-buch/
+#: source_id: viz2021:13.498256,52.640251,10.04.2025,20:00 (bis 15.04.2025)
+	2::inwork 16471,26234 16532,26174
+EOF
+     },
+     { from  => 1744524000, # 2025-04-13 08:00
+       until => 1748012400, # 2025-05-23 17:00
+       text  => 'Golzow - Joachimsthal: Bauarbeiten, Deckenerneuerung, Sperrung, 14.04.2025 08:00 Uhr bis 23.05.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/221-E/25/033 (bis 23.05.2025)
+	2::inwork 33219,61981 33413,61639 35000,60912 35215,60669 35255,60090 35405,59832 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
 EOF
      },
     );
