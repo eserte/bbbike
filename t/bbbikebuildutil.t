@@ -142,8 +142,12 @@ SKIP: {
 	ok BBBikeBuildUtil::is_same_file("$tmpdir/symlink", "$tmpdir/original"), 'same file for symlinks, reversed';
     }
 
-    link "$tmpdir/original", "$tmpdir/hardlink";
-    ok BBBikeBuildUtil::is_same_file("$tmpdir/original", "$tmpdir/hardlink"), 'same file for hardlinks';
+ SKIP: {
+	skip "Does not work on Windows", 1
+	    if $^O eq 'MSWin32';
+	link "$tmpdir/original", "$tmpdir/hardlink";
+	ok BBBikeBuildUtil::is_same_file("$tmpdir/original", "$tmpdir/hardlink"), 'same file for hardlinks';
+    }
 }
 
 SKIP: {

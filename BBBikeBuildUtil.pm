@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2017,2018,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2017,2018,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeBuildUtil;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 use Exporter 'import';
 @EXPORT_OK = qw(get_pmake run_pmake module_path module_version get_modern_perl monkeypatch_manifind is_system_perl);
@@ -179,17 +179,25 @@ sub is_same_file ($$) {
     my($file1, $file2) = @_;
     return 1 if $file1 eq $file2;
 
-    my @stat1 = stat($file1) or do { warn "Cannot stat $file1: $!"; return 0 };
-    my @stat2 = stat($file2) or do { warn "Cannot stat $file2: $!"; return 0 };
-
-    if ($stat1[0] == $stat2[0] && $stat1[1] == $stat2[1]) {
-	return 1; # hardlinked
-    } elsif (-l $file1 && readlink($file1) eq $file2) {
-	return 1; # symlinked
-    } elsif (-l $file2 && readlink($file2) eq $file1) {
-	return 1; # symlinked
+    if ($^O eq 'MSWin32') {
+	# dev+inode from stat() are not meaningful on Windows, so just
+	# try to make the paths canonical. This won't catch hardlinks
+	# or so.
+	require Cwd;
+	return Cwd::realpath($file1) eq Cwd::realpath($file2);
     } else {
-	return 0;
+	my @stat1 = stat($file1) or do { warn "Cannot stat $file1: $!"; return 0 };
+	my @stat2 = stat($file2) or do { warn "Cannot stat $file2: $!"; return 0 };
+
+	if ($stat1[0] == $stat2[0] && $stat1[1] == $stat2[1]) {
+	    return 1; # hardlinked
+	} elsif (-l $file1 && readlink($file1) eq $file2) {
+	    return 1; # symlinked
+	} elsif (-l $file2 && readlink($file2) eq $file1) {
+	    return 1; # symlinked
+	} else {
+	    return 0;
+	}
     }
 }
 
