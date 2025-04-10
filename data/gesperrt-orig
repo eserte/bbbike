@@ -216,11 +216,11 @@ Detmolder Str. (Nord)	1 4280,8188 4349,8118
 Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
+#: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
 #: last_checked: 2025-03-26
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-04-10 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-04-17 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
 Am Treptower Park	1 13860,9861 13795,9941
 # 
@@ -4130,7 +4130,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-10
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4448,7 +4448,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-10
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -5527,9 +5527,9 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,1
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="41"
+#: osm_watch: way id="186329816" version="42"
 #: also_indoor: traffic
-#: last_checked: 2025-02-11 vvv
+#: last_checked: 2025-04-09 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230

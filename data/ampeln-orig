@@ -21,7 +21,7 @@ Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alterna
 # 
 #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025)
 #: note: zuerst 10642,11901, mittlerweile nach Süden gewandert
-#: last_checked: 2025-04-01
+#: last_checked: 2025-04-10
 #: next_check: 2025-04-22
 #: valid: -20250422
 Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
@@ -61,7 +61,7 @@ Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
-#: last_checked: 2025-04-08
+#: last_checked: 2025-04-10
 #: next_check: 2025-04-23 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250423
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
@@ -1486,7 +1486,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 24654,11265
 	X 19994,12484
 # REMOVED (wieder "normal") --- #: XXX_prog: zurzeit eine Fußgängerampel mit Anforderung, östlich versetzt, lange Wartezeiten --- #: source_id: INKO_117292 --- #: source_id: INKO_104519 --- #: last_checked: 2015-10-31 --- #: check_frequency: 90d
-	X 4502,11740
+	X 4498,11740
 	X 3801,11858
 	X 3406,11849
 	X 1747,11719
@@ -2903,7 +2903,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 14252,1945
 #: note: Anforderungsampel
 	F 1892,13058
-	F 9474,16297
+# REMOVED (wurde mit Bau des Modalfilters entfernt) ---	F 9474,16297
 	F 12990,11006
 	X 21628,11384
 	X 21392,11486

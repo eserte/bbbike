@@ -40,7 +40,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu fr¸h bei der VIZ gemeldet? -> aktuell l‰uft wohl die Umsetzung (auch wenn man vor Ort auﬂer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-04-08
+#: last_checked: 2025-04-10
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
@@ -126,7 +126,7 @@ Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-06
+#: last_checked: 2025-04-10
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einm¸ndung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nˆrdlich und s¸dlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraﬂenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -337,9 +337,10 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 # 
 ### Altglienicke ###
 # 
-#: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025) (bis 30.04.2025) (bis 11.04.2025) (bis 30.04.2025)
+#: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025) (bis 30.04.2025) (bis 11.04.2025) (bis 30.04.2025) (bis 11.04.2025 + weitere Arbeiten)
 #: source_id[inactive]: bvg2024:160#HIM_FREETEXT_233161 (ohne Endedatum)
 #: source_id: bvg2024:160#HIM_FREETEXT_233156 (ohne Endedatum)
+#: source_id: viz2021:13.526157,52.423721,11.04.2025,20:00 (bis 31.05.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nˆrdlich Semmelweisstr. Anfang M‰rz 2025 offen, der s¸dliche Abschnitt Ende April 2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20250308 (bis Ende April 2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1722238382229_wegedornbr_cke.png
@@ -350,8 +351,8 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1548182.php (voraussichtlich bis Ende April 2025)
 #: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
 #: last_checked: 2024-12-27
-#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung, BA-Pressemitteilung)
-#: valid: -20250430
+#: next_check: 2025-05-31 (VIZ-Verkehrsmeldung)
+#: valid: -20250531
 Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18881,2062 18922,2238 18928,2319 18929,2454
 # 
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Kˆpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
@@ -402,31 +403,14 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-#: note: L‰nge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (?)
-#: last_checked: 2025-03-13
+#: note: L‰nge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (laut Baustellenschild)
+#: last_checked: 2025-04-10
 #: check_frequency 30d
-#: next_check: 2025-06-30 (Baustellenschild (?))
+#: next_check: 2025-06-30 (Baustellenschild)
 Burgstr.: Abschnitt mit Einbahnstraﬂenregelung	q3::inwork; 10166,12777 10132,12941
 # 
-#: next_check_id: TACHELES-2020
-#: also_indoor: traffic
-#: last_checked: 2025-03-10 (mapillary)
-#: check_frequency: 30d
-Johannisstr.: etwa 20m der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
-# REMOVED --- Johannisstr.: Einbahnstraﬂe	1s:q3:inwork 9385,13174 9254,13171
-# 
-# REMOVED --- #: XXX Laut Umleitungsschildern vom 19.7.2024 bis 30.8.2024
-# REMOVED --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1468227.php (Radverkehr wird ¸ber den Gehweg gef¸hrt)
-# REMOVED --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/schillingbruecke-voll-gesperrt_a421537
-# REMOVED --- #: source_id: bvg2024:140#3780ae13-a443-4ae7-ad58-90608cbd5ef1 (2024-07-19 - 2024-08-30, hier: f¸r Fuﬂg‰ngerverkehr frei)
-# REMOVED --- #: source_id: viz2021:13.429228,52.509161,19.07.2024,07:00 (bis 30.08.2024) (inaktiv)
-# REMOVED --- #: note: laut VIZ-Mail keine Sperrung f¸r den Rad- und Fuﬂverkehr; auﬂerdem wird hier als Beginn der 22.7.2024 (was passender w‰re, da Montag) erw‰hnt
-# REMOVED --- #: note: -> gemeinsamer Rad- und Gehweg, recht eng; morgens weniger Fuﬂg‰ngerverkehr, dann geht es
-# REMOVED --- #: last_checked: 2024-08-27
-# REMOVED --- #: next_check: 2024-08-30
-# REMOVED --- #: valid: -20240830
-# REMOVED --- Schillingbr¸cke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,11475
-# 
+# REMOVED (nicht mehr) --- #: next_check_id: TACHELES-2020 --- #: also_indoor: traffic --- #: last_checked: 2025-03-10 (mapillary) --- #: check_frequency: 30d --- Johannisstr.: etwa 20m der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174 --- Johannisstr.: Einbahnstraﬂe	1s:q3:inwork 9385,13174 9254,13171
+# REMOVED --- #: XXX Laut Umleitungsschildern vom 19.7.2024 bis 30.8.2024 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1468227.php (Radverkehr wird ¸ber den Gehweg gef¸hrt) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/schillingbruecke-voll-gesperrt_a421537 --- #: source_id: bvg2024:140#3780ae13-a443-4ae7-ad58-90608cbd5ef1 (2024-07-19 - 2024-08-30, hier: f¸r Fuﬂg‰ngerverkehr frei) --- #: source_id: viz2021:13.429228,52.509161,19.07.2024,07:00 (bis 30.08.2024) (inaktiv) --- #: note: laut VIZ-Mail keine Sperrung f¸r den Rad- und Fuﬂverkehr; auﬂerdem wird hier als Beginn der 22.7.2024 (was passender w‰re, da Montag) erw‰hnt --- #: note: -> gemeinsamer Rad- und Gehweg, recht eng; morgens weniger Fuﬂg‰ngerverkehr, dann geht es --- #: last_checked: 2024-08-27 --- #: next_check: 2024-08-30 --- #: valid: -20240830 --- Schillingbr¸cke: gemeinsamer Rad- und Gehweg, eng	q2::inwork 12143,11574 12092,11475
 # REMOVED --- #: XXX Oranienburger Straﬂe (Mitte) Richtung Monbijouplatz zwischen Groﬂe Pr‰sidentenstraﬂe und Groﬂe Hamburger Straﬂe: Gleisarbeiten, Vollsperrung f¸r den Kfz-Verkehr. Die Groﬂe Hamburger Straﬂe ist von der Oranienburger Straﬂe abgeh‰ngt (Sackgasse), vom 03.04.2024 07:00 bis 19.04.2024 17:00 --- #: source_id: viz2021:13.399767,52.523651,03.04.2024,07:00 (bis 19.04.2024) (bis 26.04.2024) (bis 24.04.2024) (inaktiv) --- #: also_indoor: traffic (H,G,B,W) --- #: last_checked: 2024-04-17 --- #: next_check: 2024-04-24 --- #: valid: -20240424 --- Oranienburger Str.: schmale Radfurt entlang einer Gleisbaustelle, vereinzelt Fuﬂg‰nger auf dem Radweg	q2+::inwork 10219,13102 10074,13103
 # REMOVED --- #: XXX Oranienburger Straﬂe (Mitte) in beiden Richtungen zwischen Tucholskystraﬂe und Krausnickstraﬂe: Gleisarbeiten, Vollsperrung f¸r den Kfz-Verkehr. Umleitungen sind ausgeschildert, vom 01.03.2024 07:00 bis 30.03.2024 17:00 --- #: source_id: viz2021:13.393215,52.524878,01.03.2024,07:00 (bis 30.03.2024) (bis 19.03.2024) (inaktiv) --- #: last_checked: 2024-03-15 (mapillary) --- #: next_check: 2024-03-19 --- #: valid: -20240319 --- Oranienburger Str.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg	q2::inwork; 9611,13245 9771,13182 9786,13178
 # REMOVED --- #: note: keine groﬂe Einschr‰nkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einm¸ndungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11054,11992 11111,12027
@@ -3735,7 +3719,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-10
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (adonum website)
 #: note: fr¸her: breiter Geh- und Radweg	q0-

@@ -28884,7 +28884,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-10
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28904,7 +28904,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018) --- #: add_fragezeichen: Sind die Bauarbeiten in der Straße "Am Schillertheater" beendet? --- #: also_indoor: traffic (G) --- #: priority: #B --- #: last_checked: 2018-11-25 --- #: check_frequency: 21d
-	q2::inwork; 4502,11740 4574,11587
+	q2::inwork; 4498,11740 4574,11587
 EOF
      },
      { from  => 1536530400, # 2018-09-10 00:00
@@ -30938,7 +30938,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (neue Baustellenampel in der Daimlerstr., bis Ende April 2025)
 #: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
-#: osm_watch: way id="200775245" version="13"
+# REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch: note 3210197 4
 #: last_checked: 2025-02-22
 # REMOVED --- #: check_frequency: 150d
@@ -38377,14 +38377,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
-#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025)
+#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025) (inaktiv)
 #: note: mittlerweile kann man hier eigentlich ganz gut fahren (deshalb nun Konjunktiv im Text)
 #: last_checked: 2025-04-09 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2025-04-10 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-04-17 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
 # REMOVED (mittlerweile ist das Absperrgitter weg) --- #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18) --- Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
@@ -39614,7 +39614,7 @@ EOF
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
-#: osm_watch: note 3834144 3
+#: osm_watch: note 3834144 4
 #: also_indoor: traffic (B,T,ex-H,re-G,ex-W,A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
@@ -44251,11 +44251,11 @@ EOF
 EOF
      },
      { from  => 1717909200, # 2024-06-09 07:00
-       until => $isodate2epoch->("2025-04-10 17:00:00"), # 1722265200, # 2024-07-29 17:00
-       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 10.04.2025 17:00',
+       until => $isodate2epoch->("2025-05-23 17:00:00"), # 1722265200, # 2024-07-29 17:00
+       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 23.05.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025)
+#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025)
 #: osm_watch: way id="1303423090" version="2"
 #: note: laut osm opening_date=2025-08-01
 	q3::inwork 10573,17566 10466,17464
@@ -44422,7 +44422,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-08 vvv
+#: last_checked: 2025-04-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -46559,14 +46559,14 @@ Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
 EOF
      },
      { from  => 1738562400, # 2025-02-03 07:00
-       until => 1744729200, # 2025-04-15 17:00
+       until => $isodate2epoch->("2025-05-23 17:00:00"), # 1744729200, # 2025-04-15 17:00
 #      text  => 'Eweststr.: Einbahnstraßenregelung, vom 04.02.2025 07:00 bis 15.04.2025 17:00',
-       text  => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (hier Gehweg für Radfahrer frei), vom 04.02.2025 07:00 bis 15.04.2025 17:00',
+       text  => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (hier Gehweg für Radfahrer frei), vom 04.02.2025 07:00 bis 23.05.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: note: außerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen?
 #: note: in der Eweststr. ist der Gehweg für Radfahrer frei (siehe Mapillary), deshalb q4 -> q3
-#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025)
+#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474
 #: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
 Pasewalker Str.	q3::inwork; 12121,20969 12158,21166
@@ -47221,6 +47221,7 @@ EOF
 #: next_check_id: WILTBERG-2022
 #: by: https://viz.berlin.de/aktuelle-meldungen/weiterer-bauablauf-bereich-wiltbergstrasse_poelnitzweg-in-buch/
 #: source_id: viz2021:13.498256,52.640251,10.04.2025,20:00 (bis 15.04.2025)
+#: source_id: viz2021:13.4977,52.64066,10.04.2025,20:00 (bis 15.04.2025)
 	2::inwork 16471,26234 16532,26174
 EOF
      },

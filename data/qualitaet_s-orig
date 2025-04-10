@@ -778,7 +778,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 # REMOVED (bereits asphaltierter Kreuzungsbereich) --- #: osm_watch: way id="4436949" version="20"
 #: osm_watch: way id="1101189359" version="6"
 #: osm_watch: way id="1101189360" version="5"
-#: osm_watch: note 4529248 3
+#: osm_watch: note 4529248 4
 #: last_checked: 2025-04-09
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 90d
@@ -1766,7 +1766,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblöcken, u.a. Bötzow-Kiez)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/kiezblocks-in-pruefung-winsviertel-boetzowkiez-und-gruene-stadt_a423747
 #: osm_watch: way id="4615063" version="37"
-#: last_checked: 2025-03-18
+#: last_checked: 2025-04-10
 #: check_frequency: 180d
 #: next_check: 2027-09-30 (infravelo)
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -11487,7 +11487,7 @@ Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780 19500,7719
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10613 (Antrag (zur Beleuchtung))
 #: osm_watch: note 4405725 6
 #: XXX wie sieht die Wegoberfläche nach den Sanierungsarbeiten aus? vermutlich asphaltiert
-#: last_checked: 2025-04-06
+#: last_checked: 2025-04-10
 #: check_frequency: 30d
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1- 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 Rudolf-Seiffert-Str.: Asphalt mit einigen Rissen und Schäden	Q1 14790,13639 14769,13569 14731,13576 14658,13283 14644,13223
@@ -12154,8 +12154,10 @@ Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1500791.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-pepp-fuer-gruenanlage_a429121
 #: XXX Umgestaltung (und Entsiegelung) bis April 2025 --- ändert sich etwas an den Wegen?
-#: last_checked: 2024-12-21
-#: next_check: 2025-04-30
+#: XXX Umbauarbeiten im östlichen Bereich, Weg wird neu gemacht, laut Aushang bis April 2025, wird aber vermutlich länger dauern
+#: last_checked: 2025-04-10
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-04-30
 (Alexandrinenstr. - Wassertorstr.): Asphalt mit einigen Schäden	Q1 10293,10645 10401,10601 10431,10606 10492,10582
 (Ossastr. - Rütlistr.): Asphalt	Q0 12623,9134 12554,9178
 (Bautzener Str. - Kolonnenstr.): Asphalt	Q0 8180,9099 8185,9083 8184,8902 8145,8773
@@ -13588,7 +13590,7 @@ Leonore-Goldschmidt-Str.: Steinplatten, etwas uneben	Q1+ 3224,8106 3326,8100
 #: by: osm, mapillary
 Kletterrosenweg: Verbundsteinpflaster	Q1+ 21382,149 21344,300
 (Seychellenring - Uferweg): unbefestigter Weg	Q2 -2524,19005 -2511,19004
-Straßenbahnwendeschleife Langenbeckstr.: Asphalti mit Rissen und Schäden	Q1+ 12925,13373 13081,13457
+Straßenbahnwendeschleife Langenbeckstr.: Asphalt mit Rissen und Schäden	Q1+ 12925,13373 13081,13457
 (Dolgenseestr., Erschließungsweg): Beton, Betonpflaster	Q0- 17288,9952 17412,9911
 Singerstr.: Asphalt mit Querrissen	Q1+ 11635,12398 11613,12408 11497,12463
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): glatt gepflastert	Q1 8099,13391 8106,13393 8111,13358 8119,13396 8174,13397

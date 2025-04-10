@@ -472,8 +472,8 @@ einige Meter asphaltiert, Rest Gehwegplatten	RW2; 1574,11379 1403,11428
 #: note: Richtung Heerstr. die Nebenfahrbahn benutzen
 	RW2; 1403,11428 1381,11335
 #: by: Stefan Klinkusch (teilweise Aufhebung der Benutzungspflicht) vvv
-	RW2;RW2 4737,11768 4502,11740
-	RW1;RW2 4502,11740 4337,11721
+	RW2;RW2 4737,11768 4498,11740
+	RW1;RW2 4498,11740 4337,11721
 	RW1;RW1 4337,11721 4194,11703 4122,11694 3969,11675 3897,11666 3843,11659 3689,11637 3554,11617 3441,11601 3320,11583 3159,11562 3069,11551 2764,11519 2609,11503 2391,11478 2371,11475 2282,11463 2191,11451
 	RW2;RW1 2191,11451 2095,11440
 	RW1; 2095,11440 1960,11426
@@ -540,7 +540,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-04-08 vvv
+#: last_checked: 2025-04-10 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -583,8 +583,8 @@ Gehwegplatten	RW1; 5139,9777 5052,9723 4976,9670
 	RW1; 4976,9670 5052,9723 5139,9777
 	RW1; 5139,9777 5219,9808 5435,9859 5467,9866
 teilweise Radweg auf der Fahrbahn hinter den parkenden Autos, Asphalt mit einigen Schäden	RW1;RW1 4976,9670 4858,9594 4699,9505 4657,9481 4601,9449 4517,9401
-Verbundsteinpflaster	RW1; 4517,9401 4507,9395 4415,9343 4342,9301 4224,9241 4096,9175 3981,9117 3919,9085
-	RW1; 3919,9085 3981,9117 4096,9175 4224,9241 4342,9301 4415,9343 4507,9395 4517,9401
+Verbundsteinpflaster	RW1; 4517,9401 4507,9395 4415,9343 4342,9301 4224,9241 4096,9175 3998,9125 3919,9085
+	RW1; 3919,9085 3998,9125 4096,9175 4224,9241 4342,9301 4415,9343 4507,9395 4517,9401
 #: note: Straßenbäume sind Platanen
 Verbundsteinpflaster, Wurzelhebungen	RW1; 3919,9085 3831,9052 3816,9052 3760,9052 3688,9051 3565,9057
 Poller	RW3; 3565,9057 3521,9059
@@ -1396,7 +1396,7 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 	RW1; 4672,8031 4581,8048 4461,8105
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
-#: by: https://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026)
 #: osm_watch: way id="963841938" version="6"
 #: last_checked: 2025-01-02
 #: check_frequency: 360d
@@ -1657,7 +1657,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: source_id: viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2025-03-29 vvv
+#: last_checked: 2025-04-10 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -1676,7 +1676,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="48"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-03-29 vvv
+#: last_checked: 2025-04-10 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -3390,7 +3390,7 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="318031558" version="15"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, bis Höhe Pasteurstr. bis auf die Deckschicht fertiggestellt; weiter nordöstlich wird noch gebaut vvv
-#: last_checked: 2025-03-29 vvv
+#: last_checked: 2025-04-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (BA Pankow) vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
@@ -3431,7 +3431,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="15"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2025-03-18 vvv
+#: last_checked: 2025-04-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 	RW1;RW1 13439,14673 13727,14207 13731,14200 13736,14192 13879,13967
