@@ -16520,7 +16520,7 @@ EOF
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
 #: last_checked: 2025-03-02
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2026-01-01
+#: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
 EOF
@@ -19796,12 +19796,12 @@ EOF
      { from  => $isodate2epoch->("2022-04-28 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-05-23 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 4, start => "2024-06-02T00:00:00"]],
-       recurrence_prewarn_days => 14, # weder Ort noch Termin bekannt
+       recurrences => [['yearly', days => 25, months => 4, start => "2025-06-02T00:00:00"]],
+#      recurrence_prewarn_days => 14, # weder Ort noch Termin bekannt
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2022 bis 22.05.2022',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
        data  => <<EOF,
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.915775.php (Absage 2020)
 #: by: https://www.wollenschlaeger-berlin.de/54-neukoellner-maientage/ (geplant: 28.4.2021 - 24.5.2021)
 #: by: https://www.berlin.de/events/2983315-2229501-neukoellner-maientage.html (geplant: 29. April bis 22. Mai 2022)
@@ -41227,12 +41227,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-04-03 00:00:00"), # 1743347400, # 2025-03-30 17:10, # $isodate2epoch->("2024-11-17 00:00:00"), # $isodate2epoch->("2024-09-13 00:00:00"), # 1691906400, # 2023-08-13 08:00
-       until => $isodate2epoch->("2025-04-14 17:00:00"), # 1743596434, # 1743803940, # 2025-04-04 23:59, # 1732913137, # $isodate2epoch->("2024-11-29 23:59:59"), # $isodate2epoch->("2024-09-20 20:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
+       until => $isodate2epoch->("2025-04-14 12:00:00"), # 1743596434, # 1743803940, # 2025-04-04 23:59, # 1732913137, # $isodate2epoch->("2024-11-29 23:59:59"), # $isodate2epoch->("2024-09-20 20:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
 #      text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 22.06.2024 17:00', # -> handicap_s-orig
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmale Schutztunnel existieren, bis 20.09.2024 20:00 Uhr',
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmale Schutztunnel existieren, vom 18.11.2024 bis 29.11.2024',
-       text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 04.04.2025 09:00 bis 14.04.2025 17:00',
+       text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 04.04.2025 09:00 bis 14.04.2025 12:00',
        type  => 'handicap',
 #      type  => 'gesperrt',
        data  => <<'EOF',
@@ -45274,11 +45274,12 @@ EOF
 #: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breitere-eingaenge-und-bessere-ausstattung-im-eingangsbereich-herrfurthstrasse-starten/ (bis Frühjahr 2025)
 #: by: https://www.berliner-zeitung.de/news/bauarbeiten-am-tempelhofer-feld-diese-eingangsbereiche-werden-erneuert-li.2274683
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
+#: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-04-06 (website) vvv
+#: last_checked: 2025-04-11 (website) vvv
 #: check_frequency: 14d vvv
-#: next_check: 2025-05-01 (presse-news) vvv
+#: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
 # REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
@@ -47221,7 +47222,7 @@ EOF
 #: next_check_id: WILTBERG-2022
 #: by: https://viz.berlin.de/aktuelle-meldungen/weiterer-bauablauf-bereich-wiltbergstrasse_poelnitzweg-in-buch/
 #: source_id: viz2021:13.498256,52.640251,10.04.2025,20:00 (bis 15.04.2025)
-#: source_id: viz2021:13.4977,52.64066,10.04.2025,20:00 (bis 15.04.2025)
+#: source_id: viz2021:13.4977,52.64066,10.04.2025,20:00 (bis 15.04.2025) (inaktiv)
 	2::inwork 16471,26234 16532,26174
 EOF
      },
@@ -47232,6 +47233,28 @@ EOF
        data  => <<EOF,
 #: source_id: LS/221-E/25/033 (bis 23.05.2025)
 	2::inwork 33219,61981 33413,61639 35000,60912 35215,60669 35255,60090 35405,59832 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Radickestr. und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
+#: also_indoor: traffic (G,B,T)
+#: note: Trafficmeldungen scheinen ungenau zu sein
+#: note: Sperrung im Lohnauer Steig fehlt bei BBBike
+#: next_check: 2025-05-07 (nächste Sperrung Freystadter Weg)
+#: XXX hier bis Mitte Juli 2025
+# REMOVED --- #: next_check: 2025-07-15
+Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
+#: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3
+Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
+#: note: voraussichtlich ab 09.04.2025
+Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
+#: note: voraussichtlich ab 09.04.2025
+Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
 EOF
      },
     );

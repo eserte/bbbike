@@ -4737,7 +4737,7 @@ Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 1637
 #: next_check_id: OSTBAHNHOF-2021
 #: last_checked: 2025-03-01
 #: check_frequency: 90d
-#: next_check: 2026-01-01
+#: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # 
 # REMOVED --- #: next_check_id: SPREEPARK-2022 --- #: by: https://ausschreibungen-deutschland.de/816165_Spreepark_Berlin_Erschliessung_Ost__Pionierweg_C1_2021_Berlin (u.a.: "Beleuchtung" (zurzeit nolighting), ~6 Monate) --- #: by: https://www.spreepark.berlin/konzept-und-grundlagen/news/detail/weitere-baumassnahmen-im-und-am-spreepark/ (Ausbesserung, Verringerung der Breite von 7 auf 4m, voraussichtlich bis Mai 2022) --- #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/der-pionierweg-wird-erneuert-und-erhaelt-eine-neue-beleuchtung-korrosionsschutz-fuer-mero-halle_a327800 --- #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (bis Mai 2022) --- #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511 --- #: by: https://www.deutsches-architekturforum.de/thread/14728-neue-pl%C3%A4ne-f%C3%BCr-den-spreepark/?postID=719337#post719337 --- # REMOVED (ja, eingetragen) --- #: XXX Wird der Weg nach den Bauarbeiten beleuchtet sein?
@@ -4753,35 +4753,10 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED (möglicherweise wieder offen) --- #: source_id: AdB/21-11-00133 (bis 15.11.2021) (inaktiv) --- #: source_id: AdB/21-11-00133 (bis 21.12.2021) (inaktiv) --- #: by: https://viz.berlin.de/2021/12/a10-a24/ (Öffnung vor Weihnachten 2021) --- #: by: https://hohen-neuendorf.de/de/stadt-leben/aktuelles/bruecken-bei-birkenwerder-inbetriebnahme-noch-2021 --- #: add_fragezeichen: Ist die Brücke mittlerweile wieder geöffnet? --- #: also_indoor: traffic (G) --- #: osm_watch: way id="926868384" version="1" --- #: osm_watch: way id="926868383" version="2" --- #: priority: #B --- #: next_check: 2021-12-21 --- Stolper Weg: Brücke über die A10 wird neu gebaut	2::inwork 514,32607 525,32437
 # REMOVED (entfernt) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX vermutlich wird die Straße dauerhaft verschwinden -> dann aus strassen-orig & Berlin.coords.data etc. entfernen --- #: last_checked: 2022-09-25 --- #: check_frequency: 180d --- #: next_check: 2024-12-31 --- Matthesstr.: Baustelle, keine Durchfahrt möglich	2::inwork 14185,9509 14172,9457
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-5-87B --- #: last_checked: 2021-09-04 vvv --- #: check_frequency: 180d vvv --- Pembabogen: durch Bauzäune abgesperrt	2::inwork -2750,19013 -2747,19074 --- #: XXX wobei auf der westlichen Seite keine Absperrung ist und die östliche Absperrung umfahrbar ist --- Tasmanienweg: durch Bauzäune abgesperrt	2::inwork -2747,19074 -2647,19070 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: HEBAMMENSTEIGBRUECKE-2021
-#: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf?start&ts=1355910105&file=11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf
-#: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 ("voraussichtlich ab 2019 neu gebaut")
-#: by: https://viz.berlin.de/2021/06/a114-vollsperrung/ (gesperrt seit 14.6.2021) (kein Fertigstellungdatum)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1707775993488855468#m (Brücke wird eingehoben)
-#: by: https://my.greenprofi.de/bauprojekte/1323594 (alte Ausschreibung, Bauausführung: 12 Monate)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1790700693709279405 (Einschränkung auf der A114 nur bis 21.05.2024)
-#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=765099#post765099
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1825419928171675942 (Einschränkung auf der A114 diese Woche)
-# REMOVED (im del-Changeset kommentiert) --- #: osm_watch: way id="298416172" version="9"
-# REMOVED --- #: osm_watch: way id="43205335" version="3"
-#: osm_watch: way id="298416172" version="15"
-#: osm_watch[closed]: note 4100166 2
-#: osm_watch: note 4382991 2
-#: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv)
-#: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv)
-#: XXX Rampen auf Westseite mit Verbundsteinpflaster, auf Ostseite mit welligen Asphalt, parallel zur Autobahn
-#: XXX mittlerweile (Nov 2024) noch nicht offiziell freigegeben, aber u.U. befahrbar
-#: last_checked: 2025-03-09 (mapillary)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2023-06-30
-Hebammensteigbrücke	2::inwork 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
+# REMOVED (offen) --- #: next_check_id: HEBAMMENSTEIGBRUECKE-2021 --- #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf?start&ts=1355910105&file=11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf --- #: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 ("voraussichtlich ab 2019 neu gebaut") --- #: by: https://viz.berlin.de/2021/06/a114-vollsperrung/ (gesperrt seit 14.6.2021) (kein Fertigstellungdatum) --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1707775993488855468#m (Brücke wird eingehoben) --- #: by: https://my.greenprofi.de/bauprojekte/1323594 (alte Ausschreibung, Bauausführung: 12 Monate) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1790700693709279405 (Einschränkung auf der A114 nur bis 21.05.2024) --- #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=765099#post765099 --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1825419928171675942 (Einschränkung auf der A114 diese Woche) --- # REMOVED (im del-Changeset kommentiert) --- #: osm_watch: way id="298416172" version="9" --- #: osm_watch: way id="43205335" version="3" --- #: osm_watch: way id="298416172" version="15" --- #: osm_watch[closed]: note 4100166 2 --- #: osm_watch: note 4382991 2 --- #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv) --- #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv) --- #: XXX Rampen auf Westseite mit Verbundsteinpflaster, auf Ostseite mit welligen Asphalt, parallel zur Autobahn --- #: XXX mittlerweile (Nov 2024) noch nicht offiziell freigegeben, aber u.U. befahrbar --- #: last_checked: 2025-03-09 (mapillary) --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-06-30 --- Hebammensteigbrücke	2::inwork 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
 # REMOVED (wieder offen) --- Radweg an der Panke	2::inwork 13031,21538 13075,21740 13078,21754
-# 
 # REMOVED (keine Einbahnstraße mehr) --- #: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung. --- #: osm_watch: way id="4045220" version="49" --- #: osm_watch: way id="938037386" version="3" --- #: osm_watch: way id="868103791" version="3" --- #: last_checked: 2023-03-24 --- #: check_frequency: 60d --- Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # REMOVED (laut osm wieder offen) --- #: next_check_id: TEGELERBRUECKE-2021 --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/ab-31-august-2023-rollt-der-verkehr-ueber-die-neue-tegeler-bruecke_a389844 (Abschluss bis Jahresende (2023)?) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/auf-der-neuen-bruecke-zwischen-tegel-und-siemensstadt-fliesst-der-verkehr_a391961 (Sperrung bis April 2024) --- #: by: https://www.deutsches-architekturforum.de/thread/14128-das-neue-gartenfeld-auf-insel-in-spandau-siemensstadt/?postID=746926#post746926 --- #: osm_watch: way id="930890136" version="22" --- #: last_checked: 2024-04-03 --- #: check_frequency: 180d --- #: next_check: 2023-12-01 --- #: next_check: 2024-04-30 --- Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -192,16054 -203,16064 -213,16059 -256,16093 -257,16103
-# 
 # REMOVED (aufgehoben) --- #: XXX bis wann geht die Einbahnstraßenregelung? --- #: also_indoor: traffic --- #: last_checked: 2021-07-21 --- Gotlindestr.: Einbahnstraßenregelung	1s:q4:inwork 16720,12614 16859,12613
 # REMOVED --- #: XXX bis wann geht die Einbahnstraßenregelung? --- #: last_checked: 2021-05-17 --- Rudi-Arndt-Str.: Einbahnstraßenregelung	1s:q4:inwork 13449,13892 13359,13832
 # REMOVED --- #: osm_watch: way id="871451762" version="1" --- #: last_checked: 2022-05-21 --- #: check_frequency: 7d --- Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
@@ -5132,6 +5107,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_16_1065_1112_online.pdf (Umlegungsverfahren (für den B-Plan))
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
 #: last_checked: 2025-03-25 (webcam)
 #: check_frequency: 90d

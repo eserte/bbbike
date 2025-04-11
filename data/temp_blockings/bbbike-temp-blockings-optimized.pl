@@ -1579,7 +1579,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
 #: last_checked: 2025-03-02
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2026-01-01
+#: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
 ',
@@ -6014,9 +6014,9 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 ',
          'from' => 1743631200,
          'id' => 3885,
-         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 04.04.2025 09:00 bis 14.04.2025 17:00',
+         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 04.04.2025 09:00 bis 14.04.2025 12:00',
          'type' => 'handicap',
-         'until' => 1744642800
+         'until' => 1744624800
        },
        undef,
        undef,
@@ -7054,11 +7054,12 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breitere-eingaenge-und-bessere-ausstattung-im-eingangsbereich-herrfurthstrasse-starten/ (bis Frühjahr 2025)
 #: by: https://www.berliner-zeitung.de/news/bauarbeiten-am-tempelhofer-feld-diese-eingangsbereiche-werden-erneuert-li.2274683
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
+#: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-04-06 (website) vvv
+#: last_checked: 2025-04-11 (website) vvv
 #: check_frequency: 14d vvv
-#: next_check: 2025-05-01 (presse-news) vvv
+#: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
 # REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
@@ -8197,7 +8198,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'data' => '#: next_check_id: WILTBERG-2022
 #: by: https://viz.berlin.de/aktuelle-meldungen/weiterer-bauablauf-bereich-wiltbergstrasse_poelnitzweg-in-buch/
 #: source_id: viz2021:13.498256,52.640251,10.04.2025,20:00 (bis 15.04.2025)
-#: source_id: viz2021:13.4977,52.64066,10.04.2025,20:00 (bis 15.04.2025)
+#: source_id: viz2021:13.4977,52.64066,10.04.2025,20:00 (bis 15.04.2025) (inaktiv)
 	2::inwork 16471,26234 16532,26174
 ',
          'dont_check_date' => 1,
@@ -8216,6 +8217,29 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'text' => 'Golzow - Joachimsthal: Bauarbeiten, Deckenerneuerung, Sperrung, 14.04.2025 08:00 Uhr bis 23.05.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1748012400
+       },
+       {
+         'data' => '#: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
+#: also_indoor: traffic (G,B,T)
+#: note: Trafficmeldungen scheinen ungenau zu sein
+#: note: Sperrung im Lohnauer Steig fehlt bei BBBike
+#: next_check: 2025-05-07 (nächste Sperrung Freystadter Weg)
+#: XXX hier bis Mitte Juli 2025
+# REMOVED --- #: next_check: 2025-07-15
+Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
+#: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3
+Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
+#: note: voraussichtlich ab 09.04.2025
+Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
+#: note: voraussichtlich ab 09.04.2025
+Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
+',
+         'from' => undef,
+         'id' => 4302,
+         'text' => 'Radickestr. und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

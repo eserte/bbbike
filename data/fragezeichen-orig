@@ -465,12 +465,13 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6834 (Antrag) (1. Zwischenbericht)
 #: by[nocache]: https://archive.ph/3iMDG
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/kastanienallee-soll-erneuert-werden_a419825
+#: by: https://www.tagesspiegel.de/berlin/bezirke/plotzlich-soll-alles-viel-langer-dauern-umbau-der-kastanienallee-in-berlin-pankow-startet-mit-grosser-uberraschung-13516918.html (Bauarbeiten ab Herbst 2025 zwischen Friedrich-Engels-Str. und Eschenallee, Bauzeit 3½ Jahre; während der Bauarbeiten Einbahnstraße Richtung Osten)
 #: source_id: 2147346774 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: source_id: viz2021:13.388829,52.59131,05.01.2021,07:00 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: osm_watch: way id="36954368" version="19"
 #: last_checked: 2025-02-23 (mapillary)
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2021-10-29
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2025-10-31
 Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904,20596 9027,20603 9073,20606 9162,20613 9175,20613 9227,20617 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
 # 
 # REMOVED --- #: XXX "ab 2017" --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-06-03-2019.pdf (geplante Maßnahme 2019) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.895829.php (Bauarbeiten ab März 2020 bis Ende August 2020) --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/neue-radwege-werden-gebaut_a253741 --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Fertigstellung) --- #: source_id: 2147341430 --- #: XXX zumindest Richtung Norden scheint was zu existieren, aber noch nicht komplett fertig (Autos parken noch drauf) --- #: XXX laut osm mittlerweile teilweise realisiert; im Südteil fehlt wohl noch was... --- #: osm_watch: way id="9711554" version="40" --- #: osm_watch: way id="29560375" version="20" --- #: osm_watch: way id="253493082" version="11" --- #: last_checked: 2020-07-10 (mapillary) --- #: check_frequency: 7d --- #: next_check: 2020-08-31
@@ -4874,6 +4875,7 @@ S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1473393.php (Fernwärmebauarbeiten bis November 2025)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/strassenbau-auf-hindenburgdamm-noch-bis-2026_a422458
 #: by: https://www.bew.berlin/aktuelles-und-presse/bauvorhaben-hindenburgdamm/
+#: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article408737310/krach-stau-wann-die-anwohner-am-hindenburgdamm-aufatmen-koennen.html (Fertigstellung der gesammten Trasse bis Ende 2026?)
 #: source_id: 2147347219 (Leitungsarbeiten bis Ende 2021; haben diese etwas mit der geplanten Busspur zu tun, oder verzögern sie die Einrichtung derselben?) (inaktiv)
 #: source_id: viz2021:13.315375,52.450057,04.12.2022,07:00 (Fernwärmebauarbeiten, bis 11.12.2023) (inaktiv)
 #: source_id: viz2021:13.315483,52.44521,09.10.2024,07:00 (Fernwärmebauarbeiten, bis 30.09.2025)
@@ -8320,7 +8322,7 @@ Thyrow - Siethen (L795): neuer Radweg auf der Westseite geplant	?::projected -62
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=67330
 #: by: https://www.o-sp.de/download/lbvbrandenburg/339789
-#: source_id: LS/221-F/24/011 (bis 12.04.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (inaktiv) (bis 11.04.2025)
+#: source_id: LS/221-F/24/011 (bis 12.04.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (inaktiv) (bis 11.04.2025) (inaktiv)
 #: source_id: LS/221-F/24/065 (bis 29.11.2024) (inaktiv)
 #: osm_watch: note 4475108 1
 #: next_check: 2025-04-11 (VIZ-Verkehrsmeldung)
@@ -8814,7 +8816,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: osm_watch: way id="1051634661" version="11"
 #: osm_watch[closed]: note 4668723 1
 #: XXX erste Pfosten stehen bereits
-#: last_checked: 2025-04-10
+#: last_checked: 2025-04-11
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
@@ -8823,12 +8825,15 @@ Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: note: erste Pfosten stehen bereits, teilweise mit zugehängten Schildern, außerdem erste Markierungen (Radspuren gegen die Einbahnstraßenrichtung); laut Aushängen im Februar (2025), ist aber anscheinend verzögert
-#: last_checked: 2025-04-10 vvv
+#: last_checked: 2025-04-11 vvv
 #: check_frequency: 10d vvv
 #: osm_watch: way id="1145133960" version="3"
-Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14468,11992 14589,11975
+Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14354,12012 14468,11992 14589,11975
 #: osm_watch: way id="1083747763" version="11"
 Colbestr.: Einbahnstraße für Kfz in Vorbereitung	? 14416,11815 14468,11992 14523,12183
+#: osm_watch: way id="1110066937" version="7"
+#: osm_watch: way id="1110066724" version="7"
+Mainzer Str.: Einbahnstraße für Kfz in Vorbereitung	? 14306,11889 14354,12012 14427,12199
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -8903,6 +8908,10 @@ Annenstr. [Wohngebiet]: Einbahnstraße für Kfz geplant	?::projected 11259,11391 1
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/
 #: XXX abschnittsweise Straßensperrungen zwischen Frühjahr 2024 und Ende 2025
 #: osm_watch: note 4082669 2
+#: osm_watch: way id="33057855" version="12"
+#: osm_watch: way id="33057862" version="21"
+#: osm_watch: way id="1009116415" version="9"
+#: osm_watch: way id="155605364" version="20"
 #: last_checked: 2025-03-04
 #: check_frequency: 60d
 #: next_check: 2025-04-29 (VIZ-Verkehrsmeldung zur Roseggerstr.)
@@ -10973,6 +10982,7 @@ Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 #: by: https://www.tagesspiegel.de/berlin/bezirke/industriegelande-in-berlin-marzahn-investor-kundigt-allen-gewerbetreibenden-13058854.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/knorr-bremse-areal.744/#post-24549
 #: by: https://www.kondorwessels.com/de/wir-bauen-fuer-menschen/konnekt (Fertigstellung des Quartiers 2033)
+#: by: https://entwicklungsstadt.de/geplante-chipperfield-hochhaeuser-in-marzahn-werden-deutlich-niedriger/
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2024-05-24 (mapillary)
 #: check_frequency: 720d
@@ -11402,6 +11412,7 @@ Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entst
 #: next_check: 2026-06-01 (BA-Pressemitteilung)
 Am Packereigraben: entsteht hier ein Uferweg?	?::projected 4593,22011 4509,21944 4366,21895 4340,21828 4236,21804 4215,21753 4190,21738
 # 
+#: next_check_id: SPREERADWEG-2025
 #: by: https://berliner-abendblatt.de/2021/10/01/spandau-brueckenschlag-fuer-radverkehr-an-der-spree/ (Planfeststellung ab Mitte 2022?)
 #: by: https://www.berliner-woche.de/westend/c-bauen/bruecke-soll-verbindung-zwischen-spandau-und-westend-verbessern_a324746
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/neue-bruecke-fuer-radfahrer-und-fussgaenger-ueber-die-spree_a325076
@@ -11411,6 +11422,7 @@ Am Packereigraben: entsteht hier ein Uferweg?	?::projected 4593,22011 4509,21944
 #: by: https://www.berliner-woche.de/spandau/c-bauen/architektenwettbewerb-fuer-the-hub-in-spandau-entschieden_a352127
 #: by: https://www.infravelo.de/projekte/brueckenbauwerke/bruecken-spree-rad-und-wanderweg/ (voraussichtlichter Baubeginn: 2025, Bauzeit 18 Monate)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_48_4373_4436_online.pdf (Benennung)
+#: by: https://www.morgenpost.de/berlin/article408755311/jahrzehntealter-plan-darum-kommt-der-spree-radweg-erstmal-nicht.html
 #: note: Lage: Spreeradweg am Grützmachergraben
 #: note: die Strecke ist auch im Radverkehrsplan Berlin (März 2018, Mai 2024) enthalten
 #: next_check: 2027-01-01 vvv
@@ -13147,6 +13159,7 @@ Straßen in Döberitz: genaue Straßennamen, Qualität?	? -12956,13814 -13017,13815 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9299 (Forderung nach einer Wegebeziehung)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9383 (Einwohnerfrage)
 #: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/baubeginn-fuer-turnhalle-im-juli_a349046 (Erwähnung eines Weges, vielleicht dieser hier? Fertigstellung im Sommer 2023)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_16_1065_1112_online.pdf (Straßenlandwidmung: Begradigung der Waldstraße am nördlichen Ende? Vrkehrsübergabe folgt noch)
 #: XXX laut Bebauungsplan 10-15 soll die Verbindung zwischen Chemnitzer Str. und Heerstr. gebaut werden (hier nur als "Fußweg" gekennzeichnet), außerdem soll die Waldstr. begradigt werden
 #: XXX am Sackgassenende Fichtestr. geht es noch ein paar Meter weiter zum Fahrradparkplatz der Kita; außerdem ist die "Trassenfreihaltung" sichtbar, aber es ist noch nichts passiert
 #: osm_watch: way id="285893839" version="6"
