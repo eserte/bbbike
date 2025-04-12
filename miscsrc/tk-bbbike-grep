@@ -216,12 +216,12 @@ sub call_emacsclient_with_byte_offset {
 	if (open my $fh, $filename) {
 	    my $first_line = <$fh>;
 	    if ($first_line !~ /utf-?8/i) { # just a heuristic to detect single byte encoding
-		$eval_code = qq{(progn (find-file "$filename") (goto-char $emacs_position))}; # XXX do not use byte-to-position, see https://debbugs.gnu.org/cgi/bugreport.cgi?bug=20783
+		$eval_code = qq{(progn (find-file "$filename") (goto-char $emacs_position) (x-focus-frame nil))}; # XXX do not use byte-to-position, see https://debbugs.gnu.org/cgi/bugreport.cgi?bug=20783
 	    }
 	}
     }
     if (!$eval_code) {
-	$eval_code = qq{(progn (find-file "$filename") (goto-char (byte-to-position $emacs_position)))};
+	$eval_code = qq{(progn (find-file "$filename") (goto-char (byte-to-position $emacs_position)) (x-focus-frame nil))};
     }
     my @cmd = ('emacsclient', '-n', '-e', $eval_code);
     warn "Run: @cmd" if $debug;
