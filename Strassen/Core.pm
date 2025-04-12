@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2014,2015,2016,2019,2021,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2014,2015,2016,2019,2021,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -28,7 +28,7 @@ use constant LAST => CAT;
 
 use constant UNDEF_RECORD => [undef, [], undef];
 
-$VERSION = '1.9903';
+$VERSION = '1.9904';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -741,7 +741,6 @@ sub append {
 
 sub get {
     my($self, $pos) = @_;
-    do { require Carp; Carp::cluck("negative index ($pos) in get"); return UNDEF_RECORD } if $pos < 0;
     my $line = $self->{Data}->[$pos];
     parse($line);
 }

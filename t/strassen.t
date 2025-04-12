@@ -145,11 +145,8 @@ EOF
     is($s->get(2)->[Strassen::NAME], 'Mehringdamm', 'get on another record');
     {
 	my @w; local $SIG{__WARN__} = sub { push @w, @_ };
-	{
-	    local $TODO = "Currently negative indices are not implemented";
-	    is_deeply($s->get(-1), $s->get(2), 'negative index should count from end');
-	}
-	like "@w", qr{\Qnegative index (-1) in get};
+	is_deeply($s->get(-1), $s->get(2), 'negative index should count from end');
+	is_deeply \@w, [], 'no warnings when getting by negative index';
     }
     is_deeply($s->get(4), [undef,[],undef], 'get past end');
     is(scalar @{$s->data}, 3, 'data length unchanged after get past end');
