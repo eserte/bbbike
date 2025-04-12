@@ -1879,8 +1879,8 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Alexander-von-Humboldt-Weg - Landschaftspark Johannisthal): Gehwegplatten	Q0 18689,3465 18633,3530
 (Eisenhutweg - Landschaftspark Johannisthal): Asphalt	Q0 18164,2712 18167,2724 18191,2822
 (Eisenhutweg - Landschaftspark Johannisthal): wassergebundene Decke	Q1 18191,2822 18229,2973
-(Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0 18229,2973 18228,2989 18046,3192
-(Landschaftspark Johannisthal): Asphalt	Q0 18046,3192 18031,3257 18027,3276
+(Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0 18229,2973 18228,2989 18042,3196
+(Landschaftspark Johannisthal): Asphalt	Q0 18042,3196 18031,3257 18027,3276
 (Landschaftspark Johannisthal): Asphalt, kurze Abschnitte mit Tennenbelag	Q0 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735
 (Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0 17976,3735 17975,3744 17953,3955
 (Groﬂ-Berliner Damm - Landschaftspark Johannisthal): Asphalt	Q0 18856,3783 18833,3781 18500,3782 18347,3947 18196,4106 18176,4105 18162,4105 18122,4074
@@ -3264,7 +3264,8 @@ M‰ckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,1
 Wˆrther Str.: aufgepflasterte Abschnitte	Q1 11247,14578 11317,14564
 Park am Karlsbad: wassergebundene Decke	Q1 8143,10903 8190,10960
 Singerstr.: Asphalt	Q0 11920,12266 12081,12236
-Puderstr.: Asphalt, einige Lˆcher	Q0 14614,9052 14567,8966 14525,8894
+Puderstr.: Asphalt, einige Lˆcher und Rillen	Q0; 14567,8966 14614,9052
+Puderstr.: Asphalt	Q0 14567,8966 14525,8894
 Puderstr.: Asphalt	Q0 14525,8894 14492,8853 14363,8738
 Upstallweg (Lichtenberg): Beton	Q0 17915,10350 17960,10378 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 Hˆnower Str.: Asphalt	Q0 18660,9410 18735,9421
@@ -7459,10 +7460,10 @@ Schneehuhnweg: Asphalt	Q0 16885,-75 16931,-76 16991,-81
 (Schneehuhnweg - Straﬂe 179): m‰ﬂiger Asphalt	Q2 16830,-75 16812,30
 (Schneehuhnweg - Schˆnefelder Str.): wassergebundene Decke	Q2 16991,-81 16992,-74 17109,-77 17122,-88 17168,-90 17191,-77
 Straﬂe 179 (Rudow): Asphalt	Q0 16642,393 16705,326 16770,192 16790,150 16812,30
-Straﬂe 181: Asphalt	Q0 16991,-81 16989,-147 17036,-421 17065,-589 17076,-644
-Straﬂe 183: Asphalt	Q0 16989,-147 17089,-141 17193,-109
+Straﬂe 181: Asphalt	Q0 16991,-81 16991,-89 16989,-147 17036,-421 17065,-589 17076,-644
+Straﬂe 183: Asphalt	Q0 16989,-147 17099,-140 17193,-109
 Straﬂe 184: Asphalt	Q0 17232,-559 17147,-573 17065,-589
-Straﬂe 182 (Rudow): Asphalt	Q0 17089,-141 17122,-270 17133,-404 17147,-573
+Straﬂe 182 (Rudow): Asphalt	Q0 17099,-140 17122,-270 17133,-404 17147,-573
 (Straﬂe 181 - Straﬂe 182): Asphalt	Q0 17036,-421 17133,-404
 K‰te-Frankenthal-Weg: Verbundsteinpflaster	Q1 17551,-373 17491,-412 17429,-453 17234,-574
 Elisabeth-Selbert-Str.: Asphalt	Q0 17491,-412 17418,-305 17306,-136
@@ -7677,14 +7678,15 @@ Herbert-Lewin-Platz: etwas unebenes Kleinsteinpflaster	Q1 5658,12082 5645,12058 
 Straﬂe 87 (Rosenthal): Platten	Q1 9091,20425 9025,20372
 Am Igelgrund: Verbundsteinpflaster	Q1 9068,20446 9126,20515
 Johannes-Kupke-Str.: Verbundsteinpflaster	Q1 8764,20799 8714,20766 8695,20770 8660,20751
-Semmelweisstr.: Beton	Q0 18922,2238 18965,2237 19019,2217 19198,2163
+Semmelweisstr.: Asphalt	Q0 18922,2238 18965,2237
+Semmelweisstr.: Beton	Q0 18965,2237 19019,2217 19198,2163
 (Widosteig - Bohnsdorfer Weg): unbefestigter Weg, teilweise sandig	Q3 19934,1102 19955,1158 19940,1265
 Bahnweg (Altglienicke): Asphalt	Q0 19659,-168 19509,-283
 (Blindschleichengang - Venusstr.): unbefestigte Straﬂe	Q2 19341,-129 19336,-59
 (Blindschleichengang - Venusstr.): unbefestigter Pfad	Q2 19336,-59 19331,73
 Siriusstr.: Verbundsteinpflaster	Q1 18997,-351 18990,-371 18950,-490 18928,-506 18904,-573
-(Kleine Lindenstr. - Business Park Berlin): Asphalt	Q0 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20833,-1298 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
-(Hufenweg Verl‰ngerung): unbefestigte Baustraﬂe	Q2 20814,-935 20813,-941 20779,-1195 20775,-1224 20799,-1272 20807,-1305
+(Kleine Lindenstr. - Business Park Berlin): Asphalt	Q0 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20817,-1301 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
+(Hufenweg Verl‰ngerung): unbefestigte Baustraﬂe	Q2 20814,-935 20813,-941 20779,-1195
 Hufenweg: Asphalt	Q0 20814,-935 20829,-773 20781,-580 20783,-528
 Ludwig-Prandtl-Str.: Asphalt	Q0 19626,-1318 19880,-1184 19924,-1157 20078,-1029 20274,-845
 Melitta-Schiller-Str.: Asphalt	Q0 20050,-1715 20038,-1474 20032,-1451 19880,-1184
@@ -11768,6 +11770,8 @@ Br¸ckenstr. (Steglitz): Mosaikpflaster	Q1 5812,4455 5821,4480
 Lynarstr. - Charlottenbrunner Str.: Verbundsteinpflaster/Mosaikpflaster	Q1 2674,9111 2706,9108
 Kaaden-Ring: unbefestigte Baustraﬂe	Q2 25149,10695 25329,10697 25415,10696 25415,10641 25332,10642 25329,10697
 (Gethsemanestr.): Asphalt	Q0 11191,15810 11210,15798 11225,15828 11204,15838 11191,15810
+(Siedlung 10): schlechtes Kopfsteinpflaster	Q3 15174,5467 15100,5469 15083,5479
+(Straﬂe 10): unbefestigte, etwas sandige Straﬂe	Q2 15083,5479 15039,5506 15012,5506
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-12
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -243,15 +243,15 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 ### Tempelhof ###
 # 
-#: next_check_id: BOELCKE-2025
-#: also_indoor: traffic (B,T,G) vvv
-#: last_checked: 2025-03-15 vvv
-#: check_frequency: 90d vvv
-Rumeyplan: Anbindung Boelckestr. wegen Bauarbeiten gesperrt	q4+::inwork 8796,7751 8686,7726
-Rumeyplan: Anbindung Boelckestr. wegen Bauarbeiten gesperrt	q4+::inwork 8690,7704 8812,7730
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
+# REMOVED --- #: next_check_id: BOELCKE-2025
+# REMOVED --- #: also_indoor: traffic (ex-B,ex-T,ex-G) vvv
+# REMOVED --- #: last_checked: 2025-03-15 vvv
+# REMOVED --- #: check_frequency: 90d vvv
+# REMOVED --- Rumeyplan: Anbindung Boelckestr. wegen Bauarbeiten gesperrt	q4+::inwork 8796,7751 8686,7726
+# REMOVED --- Rumeyplan: Anbindung Boelckestr. wegen Bauarbeiten gesperrt	q4+::inwork 8690,7704 8812,7730
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
+# REMOVED --- #: also_indoor ^^^
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.513299.php --- #: XXX laut fritz bis 10.03.2017, laut vmz bis Mitte März 2017 --- #: source_id: 2147340484 --- #: last_checked: 2016-09-14 --- #: next_check: 2017-03-10 --- #: priority: #A --- #: valid: -20170310 --- Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1439849150187806720 (voraussichtlich für drei Wochen) --- #: by: https://twitter.com/VIZ_Berlin/status/1439919999142043651 --- #: by: https://twitter.com/wasserbetriebe/status/1440980462776823808 (bereits am Sonntag offen) --- #: by: https://twitter.com/VIZ_Berlin/status/1440984451782164484 --- #: source_id: viz2021:13.385593,52.465718,18.09.2021,14:00 (noch kein Endedatum) (mittlerweile bis 26.9.2021) (mittlerweile bis 27.9.2021) --- #: priority: #A --- #: next_check: 2021-09-27 --- #: valid: -20210927 --- Tempelhofer Damm: Fahrbahn zwischen Alt-Tempelhof und Götzstr. Richtung Süden gesperrt	q4::inwork; 9249,6642 9254,6542
@@ -338,6 +338,7 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 # 
 ### Altglienicke ###
 # 
+#: next_check_id: WEGEDORN-2025
 #: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025) (bis 30.04.2025) (bis 11.04.2025) (bis 30.04.2025) (bis 11.04.2025 + weitere Arbeiten) (inaktiv)
 #: source_id[inactive]: bvg2024:160#HIM_FREETEXT_233161 (ohne Endedatum)
 #: source_id: bvg2024:160#HIM_FREETEXT_233156 (ohne Endedatum)
@@ -352,10 +353,11 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408692553/gesperrte-wegedornbruecke-jetzt-erklaert-sich-der-bezirk.html (bis Ende April 2025?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1548182.php (voraussichtlich bis Ende April 2025)
 #: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
-#: last_checked: 2024-12-27
+#: last_checked: 2025-04-12
 #: next_check: 2025-05-31 (VIZ-Verkehrsmeldung)
 #: valid: -20250531
-Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18881,2062 18922,2238 18928,2319 18929,2454
+Wegedornstr.: Bauarbeiten, Engstellen	q2::inwork 18881,2062 18922,2238
+# REMOVED (fertig) --- Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18922,2238 18928,2319 18929,2454
 # 
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
 # 
@@ -466,7 +468,7 @@ Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,129
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2025-04-06 (daf) vvv
+#: last_checked: 2025-04-10 (architektur-urbanistik) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="41"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -843,9 +845,9 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="16096289" version="33"
-#: osm_watch: way id="707100249" version="23"
+#: osm_watch: way id="707100249" version="24"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
-#: last_checked: 2025-04-08
+#: last_checked: 2025-04-11 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1146,7 +1148,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
 #: also_indoor: traffic (B,T,re-H)
-#: last_checked: 2025-03-31 (traffic)
+#: last_checked: 2025-04-12 (traffic)
 #: check_frequency: 14d (traffic)
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
@@ -1994,7 +1996,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-12
 #: check_frequency: 30d
 #: next_check: 2025-04-26 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -2372,7 +2374,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 #: osm_watch: note 4506575 1
 #: osm_watch: way id="529086013" version="3"
-#: last_checked: 2025-03-14 (daf)
+#: last_checked: 2025-04-05 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2025-04-15 (Halteverbotsschilder)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
@@ -4603,7 +4605,7 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Gehrensee - Grenzweg): einige Fußgänger	q1 21100,19107 21169,19146
 (Barnimer Dörferweg - Gehrensee): einige Fußgänger	q1 21035,19005 21040,19007 21015,19070
 #: note: Weg ist etwa 2m breit
-Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
+Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18042,3196 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 # REMOVED --- #: next_check_id: EINHEITSDENKMAL-2022 --- #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/ --- #: XXX außerdem prüfen: Wird diese Verbindung auch zur Fußgängerzone gehören? --- #: last_checked: 2023-06-15 --- #: check_frequency: 45d --- #: next_check: 2023-10-01 --- Schloßplatz: Fußgänger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10095,12392
 Schloßplatz: einige Fußgänger	q2 10174,12284 10095,12392
 Schloßplatz: einige Fußgänger	q2 10095,12392 10063,12438
@@ -5378,6 +5380,9 @@ Friedlander Str. - Köllnische Heide: schmal, unübersichtlich	q3 20574,4317 20520
 Simon-Dach-Str.: oft Engstellen durch Lieferverkehr	q2 14006,11843 13981,11746 13954,11647
 # 
 (Köpenicker Allee - Wiesengrund): enger Weg	q3 19813,8564 19761,8540 19760,8529 19752,8514
+# 
+#: XXX_prog: BS (ansonsten trotzdem q3)
+Windenweg: einige Fußgänger, halbhohe Borde	q3 16306,2364 16342,2338
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

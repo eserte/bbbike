@@ -3919,6 +3919,8 @@ Tor	BNP:10 5857,14985
 # REMOVED (s.u.) --- Tor	BNP:10 17059,8102
 Nalepastr.: Tor verschlossen	3 * 17059,8102 *
 # 
+Schranke	BNP:1::trailer=3 16991,-89
+# 
 #: section ^^^
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3997,8 +3999,8 @@ Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2:
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
-#: osm_watch: way id="1332697425" version="1"
-#: last_checked: 2025-04-01 (daf)
+#: osm_watch: way id="1332697425" version="2"
+#: last_checked: 2025-04-11 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
@@ -4205,12 +4207,12 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: next_check_id: BAB100-2022
 #: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
-#: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO), 2025-04-05 (Sa) 11:45 (Kiefholzstr.)
+#: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO), 2025-04-05 (Sa) 11:45 (Kiefholzstr.), 2025-04-12 (Sa) 10:18 (Kiefholzstr. NO)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags
-#: last_checked: 2025-04-09 vvv
+#: last_checked: 2025-04-12 vvv
 #: osm_watch: way id="1199463691" version="4"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -4672,7 +4674,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="16"
-#: last_checked: 2025-04-03 (luftbildsuche)
+#: last_checked: 2025-04-08 (architektur-urbanistik)
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
@@ -4912,7 +4914,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-12
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4925,7 +4927,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://entwicklungsstadt.de/bauvorhaben-so-ist-der-stand-bei-berlins-stillstand-projekten/
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2025-03-19 vvv
+#: last_checked: 2025-04-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5623,7 +5625,7 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: by: https://www.deutsches-architekturforum.de/thread/15410-dresden-carolabr%C3%BCcke-st-petersburger-stra%C3%9Fe-carolaplatz/?postID=771348#post771348
 #: by: https://www.dnn.de/lokales/dresden/carolabruecke-dresden-abriss-oder-erhalt-entscheidung-steht-STJQBOHKEJBS3CV72CDHOFCSCY.html (vermutlich Komplettabriss)
 #: by: https://www.n-tv.de/panorama/Dresdner-Carolabruecke-soll-bis-zum-Sommer-verschwinden-article25605881.html (Neubau ab 2027)
-#: osm_watch: way id="4214231" version="40"
+#: osm_watch: way id="4214231" version="41"
 #: osm_watch: way id="10368500" version="46"
 #: also_indoor: search Carolabrücke
 #: last_checked: 2025-04-06 (research)

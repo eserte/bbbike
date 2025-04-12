@@ -3701,7 +3701,43 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-teamstaffel.de/der-tag/strecke.html
+#: by: https://www.berliner-teamstaffel.de/event/strecke
+#: by: https://www.berliner-teamstaffel.de/
+#: source_id: 2147344332 (inaktiv)
+#: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023) (inaktiv)
+#: source_id: viz2021:13.362236,52.517659,06.06.2023,18:00 (John-Foster-Dulles-Allee, bis 10.06.2023) (inaktiv)
+	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
+	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
+	3 6689,12632 7031,12320 7051,12426
+	3 6689,12632 7031,12320 7001,12274
+	3 7654,12464 7627,12380 7603,12353
+	3 7001,12274 7031,12320 7051,12426
+	3 7001,12274 7031,12320 6689,12632
+	3 7051,12426 7031,12320 7001,12274
+	3 7051,12426 7031,12320 6689,12632
+	3 7603,12353 7627,12380 7654,12464
+',
+         'from' => 1748728800,
+         'id' => 3113,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              12,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 3. Juni 2025 bis 5. Juni 2025',
+         'type' => 'gesperrt',
+         'until' => 1749193200
+       },
        undef,
        undef,
        undef,
@@ -4657,18 +4693,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 227300117 (von 2022, inaktiv)
-#: source_id: 257309325 (bis 12.04.2025)
-	2::inwork 49004,64047 48516,64085 48151,64245
-',
-         'dont_check_date' => 1,
-         'from' => 1743890400,
-         'id' => 3526,
-         'text' => 'Herzsprung: Gleisbauarbeiten am Bahnübergang, Sperrung, evtl. sind auch Radfahrer betroffen, vom 07.04.2025 20:00 Uhr bis 08.04.2025 18:00 Uhr sowie vom 11.04.2025 20:00 Uhr bis 12.04.2025 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1744473600
-       },
+       undef,
        undef,
        undef,
        {
@@ -6495,7 +6520,7 @@ Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559 4321,125
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-03-08 (mapillary) vvv
+#: last_checked: 2025-04-10 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -6913,7 +6938,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        undef,
        {
          'data' => '#: osm_watch: way id="27457006" version="24"
-#: last_checked: 2025-03-18 (osm)
+#: last_checked: 2025-04-10 (mapillary)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -6936,15 +6961,17 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
          'data' => '#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
 #: osm_watch: note 4383533 3
 #: osm_watch: way id="37948631" version="9"
-#: last_checked: 2024-08-31 (mapillary)
-#: next_check: 2025-04-15
+#: also_indoor: traffic (H,G,B,T,A,W)
+#: last_checked: 2025-04-12 (traffic)
+#: check_frequency: 14d (traffic + altlandsberg website)
+#: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
 ',
          'from' => 1715637600,
          'id' => 4138,
          'text' => 'Buchholz - Wegendorf: Bauarbeiten, Sperrung, voraussichtlich bis zum Frühjahr 2025',
          'type' => 'gesperrt',
-         'until' => 1747324800
+         'until' => 1750435200
        },
        {
          'data' => '#: by: https://www.mercalisto.com/de/markt/78/wochenmarkt-cecilienplatz-ernst-bloch-strasse
@@ -6980,6 +7007,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
 #: by: https://www.tagesspiegel.de/berlin/start-der-kirschblutensaison-wo-es-in-berlin-am-schonsten-bluht-13420069.html (Erwähnung der Sperrung der "Kirschblütenallee", bis Ende 2025)
+#: by: https://gruen-berlin.de/projekt-meldung/berliner-mauerweg-vorbereitungen-fuer-massnahmen-am-japaneck-in-teltow (Hauptarbeiten ab März 2025)
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article408670731/warum-die-kirschbluetenallee-bis-jahresende-gesperrt-bleibt.html (Ende März 2025: noch keine Sperrung)
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
@@ -7233,7 +7261,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901514334443909380
-#: osm_watch: way id="336698811" version="7"
+#: osm_watch: way id="336698811" version="8"
 Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 #: osm_watch: way id="5057517" version="21"
 Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749

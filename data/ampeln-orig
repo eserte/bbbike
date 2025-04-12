@@ -153,6 +153,8 @@ Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 #: source_id: viz2021:13.483741,52.468,19.02.2025,07:00 (bis 30.04.2025)
 #: source_id: viz2021:13.483911,52.467829,19.02.2025,07:00 (bis 30.04.2025) (inaktiv)
 #: source_id: bvg2024:166#HIM_FREETEXT_267012 (kein Endedatum)
+#: note: L‰nge der Gegenverkehrsstrecke: etwa 70m
+#: last_checked: 2025-04-12
 #: next_check: 2025-04-30
 #: valid: -20250430
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 15928,6996
@@ -278,7 +280,7 @@ G¸rtelstr.	F::inwork 15153,11691
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2025-02-26
+#: last_checked: 2025-04-12
 #: check_frequency: 120d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 #: note: Anforderungsampel
@@ -286,7 +288,7 @@ S¸dostallee/Im Brombeerwinkel: provisorische Fuﬂg‰ngerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2025-02-26
+#: last_checked: 2025-04-12
 #: check_frequency: 120d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 S¸dostallee: provisorische Fuﬂg‰ngerampel	F::inwork 17128,5736
@@ -489,7 +491,7 @@ Straﬂe der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # 
 #: note: Anforderung f¸r Radfahrer in Richtung Nord -> S¸d, Richtung S¸d -> Nord keine Ampel
 #: osm_watch: node id="1646650915" version="4"
-#: last_checked: 2024-05-19 (kartaview)
+#: last_checked: 2025-04-12
 #: check_frequency: 180d
 Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 # 
@@ -4849,7 +4851,7 @@ Doppelte Bettelampel (beim ‹berqueren der Pudagla-Straﬂe)	X 52868,176203
 #: check_frequency: 90d
 	F0 18517,-4502
 #: osm_watch: node id="1736933178" version="6"
-#: last_checked: 2023-09-24
+#: last_checked: 2025-04-12
 #: check_frequency: 360d
 	X0 19131,-2145
 #: XXX ^^^

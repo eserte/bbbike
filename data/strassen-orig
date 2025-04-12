@@ -6215,6 +6215,8 @@ Chris-Gueffroy-Allee	N 15187,6245 15152,6204 15144,6160 15144,6054 15143,5936 15
 (Kurzer Weg (KGA Baumfreunde))	NN 15154,5706 15151,5746 15204,5752
 (Nelkenweg (KGA Baumfreunde))	NN 15241,5933 15246,5812 15252,5719
 #: note ^^^
+(Siedlung 10)	N 15174,5467 15100,5469 15083,5479
+(Straﬂe 10)	N 15083,5479 15039,5506 15012,5506
 Fliederstr. (Baumschulenweg)	N 15141,5774 15129,5792 15125,5869 15125,5913
 (Treppe zur Kirschallee)	NN 15141,5870 15133,5869 15125,5869
 #: note: Tempo 10
@@ -11018,7 +11020,7 @@ Ludwig-Prandtl-Str.	N 19626,-1318 19880,-1184 19924,-1157 20078,-1029 20274,-845
 Melitta-Schiller-Str.	N 20050,-1715 20038,-1474 20032,-1451 19880,-1184
 Gebr¸der-Hirth-Str.	N 19626,-1318 19714,-1529 19717,-1549 19725,-1704
 (Parkweg im Business Park Berlin)	NN 20799,-1272 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
-(Kleine Lindenstr. - Business Park Berlin)	NN 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20833,-1298 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
+(Kleine Lindenstr. - Business Park Berlin)	NN 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20817,-1301 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
 Mirabellenweg	N 19633,-314 19574,-306
 G‰rtnerweg	N 19607,-474 19633,-314 19643,-254 19672,-228
 Weidenweg (Altglienicke)	N 19780,-407 19794,-409 19879,-378 19941,-353 19974,-348 20051,-344
@@ -12565,9 +12567,10 @@ Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20783,-528 20781,-580 20829,-773 20814,-935
 #: XXX wird diese Straﬂe einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verl‰ngert?
 #: osm_watch: way id="27564863" version="23"
-#: last_checked: 2024-04-07
+#: last_checked: 2025-04-12
 #: check_frequency: 360d
-(Hufenweg Verl‰ngerung)	N 20814,-935 20813,-941 20779,-1195 20775,-1224 20799,-1272 20807,-1305
+(Hufenweg Verl‰ngerung)	N 20814,-935 20813,-941 20779,-1195
+# REMOVED (hier nun die Trasse der Rita-Maiburg-Str.) --- (Hufenweg Verl‰ngerung)	N 20779,-1195 20775,-1224 20799,-1272 20807,-1305
 Kleine Lindenstr.	N 20814,-935 21306,-975 21387,-1033 21459,-1086 21528,-1134
 (Kleine Lindenstr. - Schirmpilzstr.)	NN 21528,-1134 21548,-1158 21573,-1209
 Schirmpilzstr.	N 21573,-1209 21487,-1430 21447,-1556 21427,-1639 21409,-1717
@@ -13428,10 +13431,10 @@ Schneehuhnweg	NN 16931,-76 16991,-81
 Straﬂe 179 (Rudow)	N 16642,393 16705,326 16770,192 16790,150 16812,30
 Knollstr.	NN 17609,164 17726,242
 Knollstr.	N 17193,-109 17242,-80 17308,-36 17362,-1 17427,46 17490,89 17559,134 17609,164 17573,225 17603,246
-Straﬂe 181 (Rudow)	N 16991,-81 16989,-147 17036,-421 17065,-589 17076,-644
+Straﬂe 181 (Rudow)	N 16991,-81 16991,-89 16989,-147 17036,-421 17065,-589 17076,-644
 (Straﬂe 181 - Straﬂe 182)	N 17036,-421 17133,-404
-Straﬂe 182 (Rudow)	N 17089,-141 17122,-270 17133,-404 17147,-573
-Straﬂe 183	N 16989,-147 17089,-141 17193,-109
+Straﬂe 182 (Rudow)	N 17099,-140 17122,-270 17133,-404 17147,-573
+Straﬂe 183	N 16989,-147 17099,-140 17193,-109
 Straﬂe 184 (Rudow)	N 17232,-559 17147,-573 17065,-589
 #: XXX_osm: bei osm falsch geschrieben ("Nimitz")
 #: note: nachts beleuchtet
@@ -17734,7 +17737,7 @@ Gr¸nstr.	NN 22111,4562 22162,4546 22214,4548 22324,4586
 (Barbara-McClintock-Str. - Landschaftspark Johannisthal)	NN 18511,3290 18451,3352
 (Alexander-von-Humboldt-Weg - Landschaftspark Johannisthal)	NN 18689,3465 18633,3530
 (Eisenhutweg - Landschaftspark Johannisthal)	NN 18164,2712 18167,2724 18191,2822 18229,2973
-(Landschaftspark Johannisthal)	NN 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
+(Landschaftspark Johannisthal)	NN 18229,2973 18228,2989 18042,3196 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 (Segelfliegerdamm - Landschaftspark Johannisthal)	NN 17607,4068 17621,4063 17883,3976 17953,3955 18006,3992 18122,4074
 (Groﬂ-Berliner Damm - Landschaftspark Johannisthal)	NN 18856,3783 18833,3781 18500,3782 18347,3947 18196,4106 18176,4105 18162,4105 18122,4074
 #: note: bei DPAG wurde im Mitteilungsblatt 03/2018 von Walter zu Walther korrigiert
@@ -18188,7 +18191,7 @@ Rhˆnstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7090 (Vorlage zur Beschlussfassung)
 #: osm_watch: way id="59573616" version="4"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraﬂe entstehen (vermutlich m¸ssen alle abh‰ngigen Eintr‰ge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
-#: last_checked: 2025-02-01 (mapillary)
+#: last_checked: 2025-04-10 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (alte BA-Pressemitteilung, Baubeginn 2025)
 (Rhˆnstr. - Harzburger Str.)	NN 13598,21360 13709,21334

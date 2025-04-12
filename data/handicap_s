@@ -16,14 +16,12 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
-Rumeyplan: Anbindung Boelckestr. wegen Bauarbeiten gesperrt	q4::inwork 8796,7751 8686,7726
-Rumeyplan: Anbindung Boelckestr. wegen Bauarbeiten gesperrt	q4::inwork 8690,7704 8812,7730
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783
-Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18881,2062 18922,2238 18928,2319 18929,2454
+Wegedornstr.: Bauarbeiten, Engstellen	q2::inwork 18881,2062 18922,2238
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -2258,7 +2256,7 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Rund um den Gehrensee): einige Fußgänger	q1 20906,19284 20867,19159 20877,19112 20882,19055 20916,19053 21015,19070 21100,19107 21089,19215
 (Gehrensee - Grenzweg): einige Fußgänger	q1 21100,19107 21169,19146
 (Barnimer Dörferweg - Gehrensee): einige Fußgänger	q1 21035,19005 21040,19007 21015,19070
-Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
+Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18042,3196 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 Schloßplatz: einige Fußgänger	q2 10174,12284 10095,12392
 Schloßplatz: einige Fußgänger	q2 10095,12392 10063,12438
 (Lustgarten - Schloss): Fußgängerzone	q4 10152,12491 10168,12444
@@ -2669,6 +2667,7 @@ Friedlander Str. - Köllnische Heide: schmal, unübersichtlich	q3 20574,4317 20520
 (Blütenweißweg - Harnischweg): einige Fußgänger möglich	q1 21427,5347 21399,5336 21363,5336
 Simon-Dach-Str.: oft Engstellen durch Lieferverkehr	q2 14006,11843 13981,11746 13954,11647
 (Köpenicker Allee - Wiesengrund): enger Weg	q3 19813,8564 19761,8540 19760,8529 19752,8514
+Windenweg: einige Fußgänger, halbhohe Borde	q3 16306,2364 16342,2338
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

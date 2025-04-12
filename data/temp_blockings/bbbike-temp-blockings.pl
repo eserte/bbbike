@@ -30415,9 +30415,9 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-12 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
-       until => $isodate2epoch->("2024-05-17 09:00:00"), # 1560549599, # 2019-06-14 23:59
-       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 14. Mai 2024 bis 16. Mai 2024',
+     { from  => $isodate2epoch->("2025-06-01 00:00:00"), # $isodate2epoch->("2024-05-12 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
+       until => $isodate2epoch->("2025-06-06 09:00:00"), # $isodate2epoch->("2024-05-17 09:00:00"), # 1560549599, # 2019-06-14 23:59
+       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 3. Juni 2025 bis 5. Juni 2025',
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 5]],
        type  => 'gesperrt',
@@ -35987,7 +35987,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 227300117 (von 2022, inaktiv)
-#: source_id: 257309325 (bis 12.04.2025)
+#: source_id: 257309325 (bis 12.04.2025) (inaktiv)
 	2::inwork 49004,64047 48516,64085 48151,64245
 EOF
      },
@@ -43457,7 +43457,7 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-03-08 (mapillary) vvv
+#: last_checked: 2025-04-10 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="7"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -44913,7 +44913,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="27457006" version="24"
-#: last_checked: 2025-03-18 (osm)
+#: last_checked: 2025-04-10 (mapillary)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 EOF
@@ -45019,7 +45019,7 @@ EOF
 EOF
      },
      { from  => 1715637600, # 2024-05-14 00:00
-       until => $isodate2epoch->("2025-05-15 18:00:00"), # 1733007599, # 2024-11-30 23:59
+       until => $isodate2epoch->("2025-06-20 18:00:00"), # 1733007599, # 2024-11-30 23:59
 #      text  => 'Buchholz - Wegendorf: Bauarbeiten, Sperrung, voraussichtlich bis Ende November 2024',
        text  => 'Buchholz - Wegendorf: Bauarbeiten, Sperrung, voraussichtlich bis zum Frühjahr 2025',
        type  => 'gesperrt',
@@ -45027,8 +45027,10 @@ EOF
 #: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
 #: osm_watch: note 4383533 3
 #: osm_watch: way id="37948631" version="9"
-#: last_checked: 2024-08-31 (mapillary)
-#: next_check: 2025-04-15
+#: also_indoor: traffic (H,G,B,T,A,W)
+#: last_checked: 2025-04-12 (traffic)
+#: check_frequency: 14d (traffic + altlandsberg website)
+#: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
 EOF
      },
@@ -45097,6 +45099,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
 #: by: https://www.tagesspiegel.de/berlin/start-der-kirschblutensaison-wo-es-in-berlin-am-schonsten-bluht-13420069.html (Erwähnung der Sperrung der "Kirschblütenallee", bis Ende 2025)
+#: by: https://gruen-berlin.de/projekt-meldung/berliner-mauerweg-vorbereitungen-fuer-massnahmen-am-japaneck-in-teltow (Hauptarbeiten ab März 2025)
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article408670731/warum-die-kirschbluetenallee-bis-jahresende-gesperrt-bleibt.html (Ende März 2025: noch keine Sperrung)
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
@@ -45729,7 +45732,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901514334443909380
-#: osm_watch: way id="336698811" version="7"
+#: osm_watch: way id="336698811" version="8"
 Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 #: osm_watch: way id="5057517" version="21"
 Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749

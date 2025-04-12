@@ -1217,7 +1217,7 @@ Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 1
 #: note: Waltersdorfer Chaussee/Neuköllner Str., Richtung Norden
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
 #: XXX Inkonsistenz: Busspur ist für Radfahrer freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
-#: last_checked: 2024-12-18
+#: last_checked: 2025-04-12
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
@@ -1328,7 +1328,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-04-09 vvv
+#: last_checked: 2025-04-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3115,7 +3115,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-12
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -7408,12 +7408,13 @@ Radspur hinter den parkenden Autos	RW4; 8713,7423 8706,7585 8704,7603 8690,7704
 #: next_check_id: BOELCKE-2023
 #: next_check_id: BOELCKE-2025
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_267419 (kein Endedatum)
-#: source_id: bvg2024:140#HIM_FREETEXT_268851 (kein Endedatum)
+#: source_id[inactive]: bvg2024:140#HIM_FREETEXT_268851 (kein Endedatum)
 #: osm_watch: way id="1144979955" version="6"
 #: XXX Haltestellenkap Rumeyplan wird nun "richtig" gemacht; temporäres Überholverbot von Radfahrern
 #: historical_note: früher (bis Anfang 2025): asphaltierter Haltestellenkap, RW1; 
 #: last_checked: 2025-03-15
 #: check_frequency: 90d
+#: next_check: 2025-04-12 (traffic)
 	RW0; 8690,7704 8686,7726
 	RW4; 8686,7726 8642,7876 8627,7941
 Radspur hinter den parkenden Autos	RW4; 8627,7941 8623,8018 8620,8095

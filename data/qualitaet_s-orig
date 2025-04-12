@@ -2653,8 +2653,8 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Eisenhutweg - Landschaftspark Johannisthal): wassergebundene Decke	Q1+ 18191,2822 18229,2973
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.998669.php (Einbau "Tennenbelag", bis 13.11.2020) --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/wegsanierung-im-landschaftspark_a289111 --- #: XXX Qualität nach den Bauarbeiten überprüfen; während der Bauarbeiten ab 5.10.2020 abschnittsweise gesperrt, aber parallel verlaufender Weg existiert (und hier sind nicht so viele Routings) --- #: last_checked: 2020-11-15
 # REMOVED (Termin wurde nicht gehalten) --- #: next_check: 2020-11-13
-(Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0- 18229,2973 18228,2989 18046,3192
-(Landschaftspark Johannisthal): Asphalt	Q0 18046,3192 18031,3257 18027,3276
+(Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0- 18229,2973 18228,2989 18042,3196
+(Landschaftspark Johannisthal): Asphalt	Q0 18042,3196 18031,3257 18027,3276
 (Landschaftspark Johannisthal): Asphalt, kurze Abschnitte mit Tennenbelag	Q0- 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735
 (Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0- 17976,3735 17975,3744 17953,3955
 (Groß-Berliner Damm - Landschaftspark Johannisthal): Asphalt	Q0 18856,3783 18833,3781 18500,3782 18347,3947 18196,4106 18176,4105 18162,4105 18122,4074
@@ -3855,7 +3855,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="5"
 #: priority: #C
-#: last_checked: 2025-03-19
+#: last_checked: 2025-04-12
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -4453,9 +4453,9 @@ Wörther Str.: aufgepflasterte Abschnitte	Q1 11247,14578 11317,14564
 Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
 #: note: neu gemacht (Herbst 2014)
 Singerstr.: Asphalt	Q0 11920,12266 12081,12236
-#: XXX Fahrbahn wird gerade neu gemacht
-#: next_check: 2025-04-11
-Puderstr.: Asphalt, einige Löcher	Q0- 14614,9052 14567,8966 14525,8894
+Puderstr.: Asphalt, einige Löcher und Rillen	Q0-; 14567,8966 14614,9052
+#: historical_note: früher (bis Anfang April 2025): Asphalt, einige Löcher, Q0-
+Puderstr.: Asphalt	Q0 14567,8966 14525,8894
 Puderstr.: Asphalt	Q0 14525,8894 14492,8853 14363,8738
 Upstallweg (Lichtenberg): Beton	Q0 17915,10350 17960,10378 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 # REMOVED (teilweise) --- #: XXX hat sich hier die Qualität durch den Wohnungsneubau verbessert?
@@ -6011,7 +6011,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1266800.php
 #: XXX bleibt es hier beim Asphalt?
 #: priority: #C
-#: last_checked: 2025-02-21
+#: last_checked: 2025-04-12
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
@@ -9078,14 +9078,13 @@ Schneehuhnweg: Asphalt	Q0 16536,26 16777,-64
 Schneehuhnweg: Kopfsteinpflaster	Q2 16777,-64 16830,-75 16885,-75
 Schneehuhnweg: Asphalt	Q0 16885,-75 16931,-76 16991,-81
 (Schneehuhnweg - Straße 179): mäßiger Asphalt	Q2 16830,-75 16812,30
-#: by: mapillary
-#: XXX bei osm smoothness=bad, bei mapillary sah das nicht so schlecht aus, selbst überprüfen!
+#: note: früher vielleicht mal besser, mittlerweile uneben und der Feinschotter ist grob geworden
 (Schneehuhnweg - Schönefelder Str.): wassergebundene Decke	Q2+ 16991,-81 16992,-74 17109,-77 17122,-88 17168,-90 17191,-77
 Straße 179 (Rudow): Asphalt	Q0- 16642,393 16705,326 16770,192 16790,150 16812,30
-Straße 181: Asphalt	Q0 16991,-81 16989,-147 17036,-421 17065,-589 17076,-644
-Straße 183: Asphalt	Q0 16989,-147 17089,-141 17193,-109
+Straße 181: Asphalt	Q0 16991,-81 16991,-89 16989,-147 17036,-421 17065,-589 17076,-644
+Straße 183: Asphalt	Q0 16989,-147 17099,-140 17193,-109
 Straße 184: Asphalt	Q0 17232,-559 17147,-573 17065,-589
-Straße 182 (Rudow): Asphalt	Q0 17089,-141 17122,-270 17133,-404 17147,-573
+Straße 182 (Rudow): Asphalt	Q0 17099,-140 17122,-270 17133,-404 17147,-573
 (Straße 181 - Straße 182): Asphalt	Q0 17036,-421 17133,-404
 Käte-Frankenthal-Weg: Verbundsteinpflaster	Q1+ 17551,-373 17491,-412 17429,-453 17234,-574
 Elisabeth-Selbert-Str.: Asphalt	Q0 17491,-412 17418,-305 17306,-136
@@ -9324,14 +9323,17 @@ Herbert-Lewin-Platz: etwas unebenes Kleinsteinpflaster	Q1- 5658,12082 5645,12058
 Straße 87 (Rosenthal): Platten	Q1- 9091,20425 9025,20372
 Am Igelgrund: Verbundsteinpflaster	Q1+ 9068,20446 9126,20515
 Johannes-Kupke-Str.: Verbundsteinpflaster	Q1+ 8764,20799 8714,20766 8695,20770 8660,20751
-Semmelweisstr.: Beton	Q0- 18922,2238 18965,2237 19019,2217 19198,2163
+#: historical_note: früher (bis Frühjahr 2025): Beton, Q0-
+Semmelweisstr.: Asphalt	Q0 18922,2238 18965,2237
+Semmelweisstr.: Beton	Q0- 18965,2237 19019,2217 19198,2163
 (Widosteig - Bohnsdorfer Weg): unbefestigter Weg, teilweise sandig	Q3+ 19934,1102 19955,1158 19940,1265
 Bahnweg (Altglienicke): Asphalt	Q0- 19659,-168 19509,-283
 (Blindschleichengang - Venusstr.): unbefestigte Straße	Q2 19341,-129 19336,-59
 (Blindschleichengang - Venusstr.): unbefestigter Pfad	Q2 19336,-59 19331,73
 Siriusstr.: Verbundsteinpflaster	Q1 18997,-351 18990,-371 18950,-490 18928,-506 18904,-573
-(Kleine Lindenstr. - Business Park Berlin): Asphalt	Q0 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20833,-1298 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
-(Hufenweg Verlängerung): unbefestigte Baustraße	Q2 20814,-935 20813,-941 20779,-1195 20775,-1224 20799,-1272 20807,-1305
+(Kleine Lindenstr. - Business Park Berlin): Asphalt	Q0 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20817,-1301 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
+(Hufenweg Verlängerung): unbefestigte Baustraße	Q2 20814,-935 20813,-941 20779,-1195
+# REMOVED --- (Hufenweg Verlängerung): unbefestigte Baustraße	Q2 20779,-1195 20775,-1224 20799,-1272 20807,-1305
 Hufenweg: Asphalt	Q0 20814,-935 20829,-773 20781,-580 20783,-528
 Ludwig-Prandtl-Str.: Asphalt	Q0 19626,-1318 19880,-1184 19924,-1157 20078,-1029 20274,-845
 Melitta-Schiller-Str.: Asphalt	Q0 20050,-1715 20038,-1474 20032,-1451 19880,-1184
@@ -13472,7 +13474,7 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17639,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 17588,8413
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2025-04-03 (luftbildsuche)
+#: last_checked: 2025-04-08 (architektur-urbanistik)
 #: check_frequency: 90d
 An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
@@ -14082,6 +14084,9 @@ Lynarstr. - Charlottenbrunner Str.: Verbundsteinpflaster/Mosaikpflaster	Q1 2674,
 Kaaden-Ring: unbefestigte Baustraße	Q2 25149,10695 25329,10697 25415,10696 25415,10641 25332,10642 25329,10697
 # 
 (Gethsemanestr.): Asphalt	Q0 11191,15810 11210,15798 11225,15828 11204,15838 11191,15810
+# 
+(Siedlung 10): schlechtes Kopfsteinpflaster	Q3+ 15174,5467 15100,5469 15083,5479
+(Straße 10): unbefestigte, etwas sandige Straße	Q2 15083,5479 15039,5506 15012,5506
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -33933,5 +33938,6 @@ Einmündungsbereich asphaltiert	Q0 12822,10487
 Kreuzungsbereich asphaltiert	Q0 12147,8117
 Einmündungsbereich asphaltiert	Q0 4775,11203
 Einmündungsbereich asphaltiert	Q0 5164,8740
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 16599,1836
 #: ignore ^^^
 #: section ^^^
