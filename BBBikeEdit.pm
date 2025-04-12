@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -2351,6 +2351,7 @@ sub edit_temp_blockings {
     main::status_message("Can't find record number " . $click_info->line . " in " . $click_info->basefile, "die");
 }
 
+# $line is optional und may be missing or undef (starts editor without +$line)
 sub start_editor {
     my($file, $line, %options) = @_;
     my $pos = delete $options{pos};
@@ -2364,18 +2365,19 @@ sub start_editor {
 	       "emacsclient-snapshot", # https://www.emacswiki.org/emacs/EmacsSnapshotAndDebian
 	       "vi",                   # used within an xterm
 	      );
+    my @std_line_args = defined $line ? ('+'.$line) : ();
     for my $try (@try) {
 	my @cmd;
 	if      ($try =~ m{gnuclient} && BBBikeUtil::is_in_path($try)) {
-	    @cmd = ($try, '-q', '+'.$line, $file);
+	    @cmd = ($try, '-q', @std_line_args, $file);
 	} elsif ($try eq 'emacsclient-pos' && defined $pos && BBBikeUtil::is_in_path('emacsclient')) {
 	    @cmd = ('emacsclient', '-n', '--eval', qq{(progn (find-file "$file") (goto-char $pos) (select-frame-set-input-focus (window-frame)))});
 	} elsif ($try =~ m{emacsclient} && BBBikeUtil::is_in_path($try)) {
-	    @cmd = ($try, '-n', '+'.$line, $file);
+	    @cmd = ($try, '-n', @std_line_args, $file);
 	} elsif ($try eq 'vi' && BBBikeUtil::is_in_path($try) && BBBikeUtil::is_in_path("xterm")) {
-	    @cmd = ("xterm", "-e", "vi", "+".$line, $file);
+	    @cmd = ("xterm", "-e", "vi", @std_line_args, $file);
 	} elsif (BBBikeUtil::is_in_path($try)) {
-	    @cmd = ($try, "+".$line, $file);
+	    @cmd = ($try, @std_line_args, $file);
 	}
 	if (@cmd) {
 	    #warn "Run '@cmd'...\n";
