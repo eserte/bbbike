@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,7 +26,7 @@ use I18N::Langinfo qw(langinfo CODESET);
 use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
 use Strassen::Core;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 my $bbbike_datadir = bbbike_root . '/data';
 my $bbbike_aux_datadir = defined bbbike_aux_dir() ? bbbike_aux_dir() . '/bbd' : undef;
@@ -63,6 +63,7 @@ my $case_insens     = 1;
 my $limit;
 
 my $with_line_number;
+my $with_byte_offset;
 
 my $debug;
 sub debug ($) { warn "$_[0]\n" if $debug }
@@ -73,6 +74,7 @@ GetOptions(
 	   'fixed'                 => sub { $searchterm_type = 'fixed' },
 	   'case|case-sensitive|I' => sub { $case_insens = 0 },
 	   'n|line-number'         => \$with_line_number,
+	   'b|byte-offset'         => \$with_byte_offset,
 	   'limit=i'               => \$limit,
 	   'add-file=s'            => sub { push @search_file_defs, $_[1] },
 	   'add-file-with-encoding=s' => sub {
@@ -146,6 +148,10 @@ sub do_search {
 		if ($with_line_number) {
 		    $out .= "$.:";
 		}
+		if ($with_byte_offset) {
+		    $out .= tell($fh) - bytes::length($_) - 1 + $-[0]; # - 1 because of chomp
+		    $out .= ':';
+		}		    
 		$out .= "$_\n";
 		if (/^#\s*REMOVED/) {
 		    push @removed_lines, $out;
@@ -246,6 +252,10 @@ traditional L<grep(1)>.
 
 Output also line number of search hits after the filename. Useful for
 editors and IDEs, e.g. for emacs' grep-mode.
+
+=item C<-b> (alias: C<--byte-offset>)
+
+Output also the byte offset of search hits after the filename.
 
 =item C<--add-file I<filename>>
 
