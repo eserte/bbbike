@@ -27,6 +27,10 @@ my $current_url_filename;
 my $stay_on_top = 1;
 my $debug;
 
+# XXX actually it would be good if we could determine which emacs is available,
+# and switch on/off the bug handling
+my $WORKAROUND_EMACS_24_BUG = 1;
+
 my $mw = MainWindow->new;
 $mw->title("BBBike Grep");
 
@@ -128,7 +132,7 @@ sub run_grep {
     }
 	
     # XXX -limit 100 may be too small: /bahnhofstr/ has currently 317 matches
-    open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "-n", "--", $grep_word or die $!;
+    open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "--byte-offset", "--", $grep_word or die $!;
     binmode $fh, ':utf8';
     my @output = <$fh>;
     $rotext->delete('1.0', 'end');
@@ -137,13 +141,13 @@ sub run_grep {
 #warn "<$line>";
         if ($line =~ /^(.*?):(\d+):(.*)$/) {
             my $filename = $1;
-            my $line_number = $2;
+            my $byte_offset = $2;
             my $matching_text = $3;
 
 	    my $emacs_button = $rotext->Button(
 		-image => $emacs_p,
 	        -text => 'E',
-                -command => sub { call_emacsclient($filename, $line_number) },
+                -command => sub { call_emacsclient_with_byte_offset($filename, $byte_offset) },
 		-pady => 0,
 	    );
 	    $rotext->windowCreate('end', -window => $emacs_button);
@@ -199,9 +203,33 @@ sub run_grep {
 sub call_emacsclient {
     my($filename, $line_number) = @_;
     # Call emacsclient with filename and line number
-    my $cmd = "emacsclient -n +$line_number $filename";
-    warn "Run: $cmd" if $debug;
-    system($cmd);
+    my @cmd = ('emacsclient', '-n', "+$line_number", $filename);
+    warn "Run: @cmd" if $debug;
+    system(@cmd);
+}
+
+sub call_emacsclient_with_byte_offset {
+    my($filename, $byte_offset) = @_;
+    my $emacs_position = $byte_offset + 1;
+    my $eval_code;
+    if ($WORKAROUND_EMACS_24_BUG) {
+	if (open my $fh, $filename) {
+	    my $first_line = <$fh>;
+	    if ($first_line !~ /utf-?8/i) { # just a heuristic to detect single byte encoding
+		$eval_code = qq{(progn (find-file "$filename") (goto-char $emacs_position))}; # XXX do not use byte-to-position, see https://debbugs.gnu.org/cgi/bugreport.cgi?bug=20783
+	    }
+	}
+    }
+    if (!$eval_code) {
+	$eval_code = qq{(progn (find-file "$filename") (goto-char (byte-to-position $emacs_position)))};
+    }
+    my @cmd = ('emacsclient', '-n', '-e', $eval_code);
+    warn "Run: @cmd" if $debug;
+    if (eval { require IPC::Run; 1 }) {
+	IPC::Run::run(\@cmd, '>', '/dev/null'); # suppress output, as emacsclient -e will print the return value to stdout
+    } else {
+	system(@cmd);
+    }
 }
 
 sub call_bbbikeclient {
