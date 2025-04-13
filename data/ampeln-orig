@@ -214,7 +214,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
-#: last_checked: 2025-03-09
+#: last_checked: 2025-04-13 (daf)
 #: check_frequency: 180d
 #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	X::inwork 7873,12927
@@ -241,14 +241,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-04-05
+#: last_checked: 2025-04-13
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-04-05
+#: last_checked: 2025-04-13
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -2639,7 +2639,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED (wieder komplette Ampel) --- #: XXX zurzeit nur eine Fußgängerampel, nach den Bauarbeiten evtl. wieder eine volle Autoampel (X) --- #: last_checked: 2013-05-24 --- #: next_check: 2013-12-31 (Invalidenstr.)
 	X 8685,13728
 	X 11629,9086
-#: off: night (seen 2014-10-29 23:30), Sunday (seen 2015-11-01 15:00, 2018-12-09 14:00, 2020-12-20 11:30, 2022-08-14 12:15, 2023-11-19 12:05)
+#: off: night (seen 2014-10-29 23:30), Sunday (seen 2015-11-01 15:00, 2018-12-09 14:00, 2020-12-20 11:30, 2022-08-14 12:15, 2023-11-19 12:05, 2025-04-13 12:40)
 	X 15681,10801
 # REMOVED (seit 1.7.2004 gesperrt) ---	B 801,13323
 	X 21108,4725
@@ -3998,7 +3998,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
-#: last_checked: 2025-04-07
+#: last_checked: 2025-04-13
 #: check_frequency: 90d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

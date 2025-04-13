@@ -29350,8 +29350,8 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-03-16 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2025-04-13 vvv
+#: check_frequency: 30d vvv
 entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171 15154,9106 15190,9027
 Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
 Bulgarische Str. - Karpfenteich	2::inwork 15439,8839 15297,8921 15245,8916
@@ -36123,6 +36123,7 @@ EOF
 #: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/kalle-neukoelln-wird-nach-und-nach-bezogen_a413054
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/etliche-bueros-im-kalle-sind-bezogen-im-rest-des-komplexes-laufen-noch-die-bauarbeiten_a427858
+#: by: https://entwicklungsstadt.de/neuer-veranstaltungsort-an-der-karl-marx-strasse-smartvillage-startet-im-kalle-neukoelln/
 #: osm_watch: way id="734271970" version="7"
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="8"
@@ -37696,7 +37697,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-04-04
+#: last_checked: 2025-04-13
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40482,9 +40483,9 @@ EOF
 	q4::temp::play 7657,9942 7698,10147
 EOF
      },
-     { from  => $isodate2epoch->("2024-04-04 00:00:00"), # 1688594400, # 2023-07-06 00:00
-       until => $isodate2epoch->("2024-11-02 00:00:00"), # 1699052399, # 2023-11-03 23:59
-       text  => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2024 bis November 2024',
+     { from  => $isodate2epoch->("2025-04-03 00:00:00"), # 1688594400, # 2023-07-06 00:00
+       until => $isodate2epoch->("2025-11-08 00:00:00"), # 1699052399, # 2023-11-03 23:59
+       text  => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2024 bis November 2025',
        type  => 'handicap',
        recurring => 1,
        data  => <<EOF,
@@ -43459,9 +43460,9 @@ EOF
 #: also_indoor: traffic (B,G,T) vvv
 #: last_checked: 2025-04-10 (mapillary) vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="1156267450" version="7"
+#: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="28"
+#: osm_watch: way id="120633718" version="29"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch[closed]: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -45093,7 +45094,8 @@ EOF
      },
      { from  => 1727647200, # 2024-09-30 00:00
        until => undef, # XXX
-       text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem IV. Quartal 2024 (Stand Ende März 2025: Bauarbeiten haben noch nicht begonnen)',
+#      text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem IV. Quartal 2024 (Stand Ende März 2025: Bauarbeiten haben noch nicht begonnen)',
+       text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem 10.04.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
@@ -45101,14 +45103,16 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/start-der-kirschblutensaison-wo-es-in-berlin-am-schonsten-bluht-13420069.html (Erwähnung der Sperrung der "Kirschblütenallee", bis Ende 2025)
 #: by: https://gruen-berlin.de/projekt-meldung/berliner-mauerweg-vorbereitungen-fuer-massnahmen-am-japaneck-in-teltow (Hauptarbeiten ab März 2025)
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article408670731/warum-die-kirschbluetenallee-bis-jahresende-gesperrt-bleibt.html (Ende März 2025: noch keine Sperrung)
+#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-weitere-teilstrecke-im-sueden-berlins (Bauarbeiten ab 10.04.2025)
+#: by: https://www.stadtblatt-online.de/verkehr/berliner-mauerweg-baustart-fuer-weitere-teilstrecke-im-sueden-berlins/ (Bauarbeiten ab 11.04.2025)
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
 #: osm_watch: way id="27260309" version="18"
 #: osm_watch: way id="372791173" version="8"
 #: osm_watch: way id="27260312" version="23"
-#: add_fragezeichen: Haben die Bauarbeiten bereits begonnen?
-#: last_checked: 2025-03-30 (MoPo)
-#: check_frequency: 14d
+#: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
+#: last_checked: 2025-04-10 (Pressemitteilung von gruen-berlin)
+#: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 EOF
@@ -47258,6 +47262,15 @@ Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 2063
 Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
 #: note: voraussichtlich ab 09.04.2025
 Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
+EOF
+     },
+     { from  => 1744520400, # 2025-04-13 07:00
+       until => 1745420400, # 2025-04-23 17:00
+       text  => 'Stedingerweg: Bauarbeiten zwischen Kniprodestr. und Steengravenweg, Fahrbahn gesperrt, vom 14.04.2025 07:00 bis 23.04.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.452957,52.539018,14.04.2025,07:00 (Fahrbahnsanierung, auch der Radverkehr ist betroffen, bis 23.04.2025)
+	q4::inwork 13636,14900 13733,14813
 EOF
      },
     );
