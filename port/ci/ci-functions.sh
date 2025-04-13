@@ -18,6 +18,77 @@ wrapper() {
     set +x
 }
 
+debian_ubuntu_version() {
+    set +x
+    # Interleaved Debian/Ubuntu release codenames (ordered)
+    _DUV_ORDER="squeeze precise wheezy trusty jessie \
+xenial stretch bionic buster \
+focal bullseye jammy \
+bookworm noble trixie"
+
+    case "$1" in
+        lt|le|eq|ge|gt|ne) op="$1" ;;
+        *)
+            echo "Unsupported operator: $1" >&2
+	    set -x
+            return 2
+            ;;
+    esac
+
+    # Strip distro prefix if any (e.g. "ubuntu/focal" -> "focal")
+    target_codename=${2##*/}
+
+    # Cache the current codename from /etc/os-release
+    if [ -z "$CODENAME" ]; then
+        CODENAME=$(grep '^VERSION_CODENAME=' /etc/os-release | cut -d= -f2)
+        if [ -z "$CODENAME" ]; then
+            CODENAME=$(grep '^VERSION=' /etc/os-release | cut -d= -f2 | tr -d '"' | awk '{print tolower($NF)}')
+        fi
+    fi
+
+    # Simulate array index lookup via set + loop
+    _duv_get_index() {
+        name="$1"
+        idx=0
+        set -- $_DUV_ORDER
+        for codename; do
+            [ "$codename" = "$name" ] && echo "$idx" && return 0
+            idx=$((idx + 1))
+        done
+        echo "Unknown codename: $name" >&2
+        return 255
+    }
+
+    idx_self=$(_duv_get_index "$CODENAME")
+    if [ $? -ne 0 ]; then
+        set -x
+        return 2
+    fi
+
+    idx_target=$(_duv_get_index "$target_codename")
+    if [ $? -ne 0 ]; then
+        set -x
+        return 2
+    fi
+
+    result="0"
+    case "$op" in
+        lt) if [ "$idx_self" -lt "$idx_target" ]; then result="1"; fi ;;
+        le) if [ "$idx_self" -le "$idx_target" ]; then result="1"; fi ;;
+        eq) if [ "$idx_self" -eq "$idx_target" ]; then result="1"; fi ;;
+        ne) if [ "$idx_self" -ne "$idx_target" ]; then result="1"; fi ;;
+        ge) if [ "$idx_self" -ge "$idx_target" ]; then result="1"; fi ;;
+        gt) if [ "$idx_self" -gt "$idx_target" ]; then result="1"; fi ;;
+    esac
+    if [ "$result" -eq "1" ]; then
+	set -x
+        return 0
+    else
+	set -x
+        return 1
+    fi
+}
+
 ######################################################################
 # Functions for the before-install phase:
 
@@ -28,17 +99,18 @@ init_env_vars() {
     # The default www.cpan.org may not be the fastest one, and may
     # even cause problems if an IPv6 address is chosen...
     export PERL_CPANM_OPT="$PERL_CPANM_OPT --mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org"
-    CODENAME=$(lsb_release -c -s || perl -nle '/^VERSION_CODENAME="?([^"]+)/ and $codename=$1; /^VERSION="\d+ \((.*)\)/ and $maybe_codename=$1; END { print $codename // $maybe_codename }' /etc/os-release)
-    if [ "$CODENAME" = "" ]
+
+    if debian_ubuntu_version ge debian/squeeze
     then
-	if grep -q "Ubuntu 12.04" /etc/issue
+        # as a side-effect, CODENAME should be set
+	if [ "$CODENAME" = "" ]
 	then
-	    CODENAME=precise
-	else
-	    echo "WARNING: don't know what linux distribution is running. Possible failures are possible"
+	    echo "WARNING: don't know what linux distribution is running. Failures are possible."
 	fi
+	export CODENAME
+    else
+	echo "WARNING: cannot detect debian/ubuntu version. Failures are possible."
     fi
-    export CODENAME
 }
 
 init_perl() {
@@ -60,7 +132,7 @@ init_apt() {
     (cd /etc/apt/sources.list.d && sudo rm -f mongodb.list mongodb-org-4.0.list google-chrome.list cassandra.list github_git-lfs.list couchdb.list pgdg.list)
 
     # Needed since about 2022-11-20
-    if [ "$CODENAME" = "jessie" ]
+    if debian_ubuntu_version eq debian/jessie
     then
        echo "APT::Get::AllowUnauthenticated 1;" > /etc/apt/apt.conf.d/02allow-unsigned
     fi
@@ -130,29 +202,29 @@ init_apt() {
 # - sqlite3:                for Alien::sqlite
 # - curl:                   make sure it's available for downloading cpm
 install_non_perl_dependencies() {
-    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "buster" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
+    if debian_ubuntu_version ge ubuntu/precise
     then
 	javascript_package=rhino
     else
 	javascript_package=libmozjs-24-bin
     fi
-    # debian/stretch and ubuntu/xenial have both rhino and libmozjs-24-bin
+    # some distributions (e.e. debian/stretch and ubuntu/xenial) have both rhino and libmozjs-24-bin
 
-    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
+    if debian_ubuntu_version ge ubuntu/xenial
     then
 	libgd_dev_package=libgd-dev
     else
 	libgd_dev_package=libgd2-xpm-dev
     fi
 
-    if [ "$CODENAME" = "bionic" ]
+    if debian_ubuntu_version ge debian/buster
+    then
+	pdftk_package=pdftk-java
+    elif debian_ubuntu_version eq ubuntu/bionic
     then
 	# Not available anymore, see
 	# https://askubuntu.com/q/1028522
 	pdftk_package=
-    elif [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
-    then
-	pdftk_package=pdftk-java
     else
 	pdftk_package=pdftk
     fi
@@ -171,21 +243,21 @@ install_non_perl_dependencies() {
 	cpm_dep_packages=
     fi
 
-    if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]
+    if debian_ubuntu_version le ubuntu/trusty
     then
 	freebsdmake_package=freebsd-buildutils
     else
         freebsdmake_package=bmake
     fi
 
-    if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]
+    if debian_ubuntu_version le ubuntu/trusty
     then
 	dejavu_package=ttf-dejavu
     else
         dejavu_package=fonts-dejavu
     fi
 
-    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" ]
+    if debian_ubuntu_version ge ubuntu/xenial && debian_ubuntu_version le debian/buster
     then
 	# probably too old here for Alien::Proj, needs minimum 6.1
         libproj_packages=
@@ -236,12 +308,13 @@ install_perl_testonly_dependencies() {
 	fi
 	sudo apt-get install -y $apt_quiet --no-install-recommends $test_packages
     else
-	if [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
+	if debian_ubuntu_version ge debian/buster
 	then
 	    barcode_zbar_module="Barcode::ZBar"
 	else
-	    # Does not compile on older Linux distributions,
-	    barcode_zbar_module="Barcode::ZBar~<0.10"
+	    # 0.10 does not compile on older Linux distributions
+	    # And unfortunately something like Barcode::ZBar~<0.10 may fail, too.
+	    barcode_zbar_module="SPADIX/Barcode-ZBar-0.04.tar.gz"
 	fi
 	cpanm --quiet --notest --skip-satisfied Email::MIME HTML::TreeBuilder::XPath Imager::Image::Base $barcode_zbar_module
     fi
@@ -319,13 +392,13 @@ install_webserver_dependencies() {
     then
 	# install mod_perl
 	# probably valid also for all newer debians and ubuntus after jessie
-	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "jammy" -o "$CODENAME" = "bullseye" -o "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
+	if debian_ubuntu_version ge ubuntu/xenial
 	then
 	    sudo apt-get install -y $apt_quiet --no-install-recommends apache2
 	else
 	    sudo apt-get install -y $apt_quiet --no-install-recommends apache2-mpm-prefork
 	fi
-	if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]
+	if debian_ubuntu_version le ubuntu/trusty
 	then
 	    ## XXX trying to workaround frequent internal server errors
 	    #sudo a2dismod cgid && sudo a2dismod mpm_event && sudo a2enmod mpm_prefork && sudo a2enmod cgi
@@ -336,7 +409,7 @@ install_webserver_dependencies() {
 	then
 	    sudo apt-get install -y $apt_quiet --no-install-recommends libapache2-mod-perl2 libapache2-reload-perl
 	else
-	    if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]
+	    if debian_ubuntu_version le ubuntu/trusty
 	    then
 		sudo apt-get install -y $apt_quiet --no-install-recommends apache2-prefork-dev
 	    else
@@ -359,7 +432,7 @@ install_webserver_dependencies() {
 install_perl_dependencies() {
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
-	if [ "$CODENAME" = "precise" -o "$CODENAME" = "trusty" ]
+	if debian_ubuntu_version le ubuntu/trusty
 	then
 	    libinline_c_perl_package=
 	else
@@ -372,7 +445,7 @@ install_perl_dependencies() {
 	else
 	    additional_non_live_packages=libgd-svg-perl
 	fi
-	if [ "$CODENAME" = "bookworm" -o "$CODENAME" = "noble" ]
+	if debian_ubuntu_version ge debian/bookworm
 	then
 	    libgeo_distance_perl_package=libgeo-distance-perl
 	else
@@ -380,7 +453,7 @@ install_perl_dependencies() {
 	    libgeo_distance_perl_package=libgeo-distance-xs-perl
 	fi
 	sudo apt-get install -y $apt_quiet --no-install-recommends libapache-session-counted-perl libarchive-zip-perl libgd-gd2-perl libsvg-perl libobject-realize-later-perl libdb-file-lock-perl libpdf-create-perl libtext-csv-xs-perl libdbi-perl libdate-calc-perl libobject-iterate-perl libgeo-metar-perl libgeo-spacemanager-perl libimage-exiftool-perl libdatetime-format-iso8601-perl libdbd-xbase-perl libxml-libxml-perl libxml2-utils libxml-twig-perl libxml-simple-perl $libgeo_distance_perl_package libimage-info-perl libinline-perl $libinline_c_perl_package libtemplate-perl libyaml-libyaml-perl libclass-accessor-perl libdatetime-perl libstring-approx-perl libtext-unidecode-perl libipc-run-perl libjson-xs-perl libcairo-perl libpango-perl libmime-lite-perl libcdb-file-perl libmldbm-perl libpalm-palmdoc-perl libimager-qrcode-perl libtie-ixhash-perl libwww-mechanize-perl libhtml-format-perl libhtml-form-perl libwww-perl liblwp-protocol-https-perl $additional_non_live_packages
-	if [ "$CODENAME" = "precise" ]
+	if debian_ubuntu_version le ubuntu/precise
 	then
 	    # upgrade Archive::Zip (precise comes with 1.30) because
 	    # of mysterious problems with cgi-download.t
@@ -409,8 +482,8 @@ install_perl_dependencies() {
 	cpanm --quiet --notest 'Geo::Distance~!=0.21,!=0.22'
 
 	# Geo::Distance::XS is not available anymore on CPAN
-	# and must now be installed by specifying an exact version
-	cpanm --quiet --notest 'Geo::Distance::XS@0.13'
+	# and must now be installed from BackPAN
+	cpanm --quiet --notest GRAY/Geo-Distance-XS-0.13.tar.gz
 
 	if [ "$CPAN_INSTALLER" = "cpanm" ]
 	then
@@ -472,7 +545,7 @@ init_webserver_config() {
 	    sudo ln -s $CI_BUILD_DIR/cgi/httpd.conf /etc/apache2/sites-available/bbbike.conf
 	fi
 	sudo a2ensite bbbike.conf
-	if [ "$CODENAME" != "precise" ]
+	if debian_ubuntu_version gt ubuntu/precise
 	then
 	    sudo a2enmod remoteip
 	fi
@@ -514,7 +587,7 @@ install_selenium() {
 	wget -O /tmp/selenium-server-standalone-2.53.1.jar https://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar
 
 	# firefox package
-	if [ "$CODENAME" = "jessie" -o "$CODENAME" = "stretch" ]
+	if debian_ubuntu_version eq debian/jessie || debian_ubuntu_version eq debian/stretch
 	then
 	    apt_packages=firefox-esr
 	else
@@ -524,10 +597,10 @@ install_selenium() {
 	# java package (if not yet installed)
 	if ! which java >/dev/null 2>&1
 	then
-	    if [ "$CODENAME" = "precise" -o "$CODENAME" = "trusty" -o "$CODENAME" = "jessie" ]
+	    if debian_ubuntu_version le debian/jessie
 	    then
 		apt_packages+=" openjdk-7-jre-headless"
-	    elif [ "$CODENAME" = "stretch" ]
+	    elif debian_ubuntu_version eq debian/stretch
 	    then
 	        apt_packages+=" openjdk-8-jre-headless"
 	    else

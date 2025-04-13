@@ -495,9 +495,9 @@ EOF
 	($real_dist eq 'ubuntu' && $real_distver ne 'trusty') ||
 	$real_dist eq 'debian'
        ) {
-	# Lacking packages in precise and bionic (18.04) (and debian/stretch, lsb-release at least)
+	# Lacking packages in precise and bionic (18.04) (and possibly debian/stretch)
 	$dockerfile .= <<EOF;
-RUN apt-get install -qqy lsb-release sudo make
+RUN apt-get install -qqy sudo make
 EOF
     }
 
