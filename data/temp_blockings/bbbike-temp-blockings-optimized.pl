@@ -4784,7 +4784,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2025-04-02 vvv
+#: last_checked: 2025-04-11 (okas) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-27 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -4838,10 +4838,11 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.492718,52.636649,09.12.2024,07:00 (Vollsperrung für einen Tag, bis 10.12.2024) (inaktiv)
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
+#: source_id: viz2021:13.492668,52.636706,15.04.2025,12:00 (bis 12.09.2025 + weitere Bauphasen)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
-#: XXX Gesamtbaumaßnahme bis 2027
+#: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
-#: next_check: 2025-09-14 (VIZ-Seite --- vielleicht ein neuer Bauzustand?) vvv
+#: next_check: 2025-09-11 (VIZ-Verkehrsmeldung --- danach vielleicht ein neuer Bauzustand?) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 # REMOVED --- Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
 # REMOVED --- Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
@@ -4850,9 +4851,9 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 ',
          'from' => 1744581600,
          'id' => 3550,
-         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, auch für Fußgänger und Radfahrer, vom 15.04.2025 mittags bis voraussichtlich Mitte September 2025',
+         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, auch für Fußgänger und Radfahrer, vom 15.04.2025 mittags zunächst bis Mitte September 2025',
          'type' => 'gesperrt',
-         'until' => 1757948400
+         'until' => undef
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -5573,7 +5574,7 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
 #: osm_watch: way id="37861386" version="27"
 #: osm_watch: way id="1231148375" version="5"
 #: priority: #B
-#: last_checked: 2025-03-10 (okas)
+#: last_checked: 2025-04-11 (okas)
 #: check_frequency: 120d
 #: next_check: 2025-06-16 (DB website: nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -6024,38 +6025,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
-#: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
-#: source_id[inactive]: bvg2021:240#BVG326189_0
-#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
-#: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_238442
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
-#: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024) (inaktiv)
-#: source_id: bvg2024:194#HIM_FREETEXT_274938 (ab 4.4.2024, kein Endedatum)
-#: source_id: viz2021:13.483638,52.502149,04.04.2025,09:00 (Sperrung auch für den Radverkehr, aber nicht für den Fußverkehr, bis 14.04.2025) (inaktiv)
-#: source_id: viz2021:13.483638,52.502149,04.04.2025,07:00 (bis 14.04.2025)
-#: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1858351927509365099 (nur Kfz-Verkehr)
-#: osm_watch: way id="198589911" version="23"
-# REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
-# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
-#: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden; am 2025-04-04 ebenfalls zwei Schutztunnel, deshalb q4 -> q3
-	q3::inwork 15856,10821 15793,10814
-',
-         'from' => 1743631200,
-         'id' => 3885,
-         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 04.04.2025 09:00 bis 14.04.2025 12:00',
-         'type' => 'handicap',
-         'until' => 1744624800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6533,7 +6503,7 @@ Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559 4321,125
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-04-10 (mapillary) vvv
+#: last_checked: 2025-04-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -6619,7 +6589,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: also_indoor: traffic (B,T,ex-G)
 #: note: bei Bing & TomTom nur die östliche Anbindung als gesperrt markiert
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-03-16 (traffic) vvv
+#: last_checked: 2025-04-14 (traffic) vvv
 #: check_frequency: 30d vvv
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
@@ -8247,9 +8217,9 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'dont_check_date' => 1,
          'from' => 1744128000,
          'id' => 4300,
-         'text' => 'Pölnitzweg: Sperrung in Höhe Eisenbahnbrücke, auch für Fußgänger und Radfahrer, vom 10.04.2025 20:00 Uhr bis 15.04.2025 07:00 Uhr',
+         'text' => 'Pölnitzweg: Sperrung in Höhe Eisenbahnbrücke, auch für Fußgänger und Radfahrer, vom 10.04.2025 20:00 Uhr bis 15.04.2025 09:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1744693200
+         'until' => 1744700400
        },
        {
          'data' => '#: source_id: LS/221-E/25/033 (bis 23.05.2025)
@@ -8286,6 +8256,7 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
        },
        {
          'data' => '#: source_id: viz2021:13.452957,52.539018,14.04.2025,07:00 (Fahrbahnsanierung, auch der Radverkehr ist betroffen, bis 23.04.2025)
+#: source_id: viz2021:13.45393,52.53846,14.04.2025,07:00 (bis 23.04.2025)
 	q4::inwork 13636,14900 13733,14813
 ',
          'from' => 1744520400,

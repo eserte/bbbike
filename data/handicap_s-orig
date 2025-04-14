@@ -352,9 +352,11 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408689355/wirrwarr-um-die-wegedornbruecke-baustelle-wieder-verlaengert.html
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408692553/gesperrte-wegedornbruecke-jetzt-erklaert-sich-der-bezirk.html (bis Ende April 2025?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1548182.php (voraussichtlich bis Ende April 2025)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1551485.php (voraussichtlich bis Ende Mai 2025)
+#: by: https://viz.berlin.de/aktuelle-meldungen/grundhafte-erneuerung-der-wegedornstrasse-in-altglienicke/
 #: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
 #: last_checked: 2025-04-12
-#: next_check: 2025-05-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-05-31 (VIZ-Verkehrsmeldung, BA-Pressemitteilung)
 #: valid: -20250531
 Wegedornstr.: Bauarbeiten, Engstellen	q2::inwork 18881,2062 18922,2238
 # REMOVED (fertig) --- Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18922,2238 18928,2319 18929,2454
@@ -785,7 +787,7 @@ Bˆcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 1088
 #: next_check_id: HAEMMERLING-2022
 #: osm_watch: note 3949358 3
 #: osm_watch: way id="24695200" version="19"
-#: last_checked: 2025-04-02
+#: last_checked: 2025-04-11 (okas)
 #: check_frequency: 120d
 H‰mmerlingstr. - Alte Fˆrsterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
@@ -2368,10 +2370,13 @@ Buschrosenplatz: enge Straﬂe	q1 13002,5548 13054,5556 13075,5470
 #: by: https://www.deutsches-architekturforum.de/thread/15322-sch%C3%B6neberg-nord-n%C3%B6rdlich-der-hohenstaufen-pallas-und-goebenstra%C3%9Fe/?postID=773449#post773449
 #: by: https://www.bauwens.de/projects/nollendorfplatz
 #: by: https://entwicklungsstadt.de/neugestaltung-am-nollendorfplatz-buerogebaeude-entsteht-neben-metropol-theater/ (bis Mitte 2027)
+#: by: https://www.no6.berlin/
+#: by: https://www.no6.berlin/nolle-6 (Fertigstellung Q2/2027)
 #: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 #: osm_watch: note 4506575 1
 #: osm_watch: way id="529086013" version="3"
+#: osm_watch: way id="1377234658" version="1"
 #: last_checked: 2025-04-05 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2025-04-15 (Halteverbotsschilder)
@@ -4460,7 +4465,7 @@ Kissinger Str. (Schmargendorf): einige Fuﬂg‰nger	q2 3219,7987 3206,7988
 #: XXX laut osm Sperrung bis 2028
 #: osm_watch: way id="1238623806" version="3"
 #: osm_watch: way id="1168244288" version="3"
-#: last_checked: 2025-03-19 (daf)
+#: last_checked: 2025-04-14 (webcam)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 (S¸dstr., Virchow-Klinikum): Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6231,14952 6209,14948 6160,14927 6104,14937
@@ -5909,7 +5914,7 @@ Rossitter Weg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Schwarzer Weg): Fuﬂg‰nger	q2 4237,13231 4167,13375 4093,13429 3969,13487 3823,13540
 (Dahlienweg): Fuﬂg‰nger	q2 3823,13540 3829,13572 3833,13590
 (Lambertstr. - Lise-Meitner-Str.): Fuﬂg‰nger, schmal	q3 3508,13727 3713,13787
-(Bonhoefferufer - Tegeler Weg): Fuﬂg‰nger	q2 3154,12936 3164,13067
+(Bonhoefferufer - Tegeler Weg): Fuﬂg‰nger	q2 3133,13021 3112,13296
 Eosanderstr.: Fuﬂg‰nger	q1 3323,12615 3271,12609
 #: XXX_prog BS am s¸dlichen Ende (ansonsten bleibt's bei q2)
 Siemenssteg: Fuﬂg‰nger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12713 4124,12721

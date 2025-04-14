@@ -3171,6 +3171,7 @@ Herrfurthplatz: ein Abschnitt wird "eingezogen"; eventuell wird hier auch asphal
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrradinfrastruktur-hermannstrasse-weiterbau-bis-zur-werbellinstrasse/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fahrradweg-in-der-neukollner-hermannstrasse-ab-mitte-april-wird-am-nachsten-abschnitt-gebaut-13511791.html
 #: source_id: viz2021:13.426977,52.475675,14.04.2025,07:00 (Bauarbeiten zwischen Werbellinstr. und Leinestr., bis 27.06.2025)
+#: source_id: viz2021:13.4289,52.4719,14.04.2025,07:00 (bis 27.06.2025)
 #: osm_watch: way id="410242419" version="16"
 #: osm_watch: way id="860638046" version="12"
 #: last_checked: 2025-03-28
@@ -5947,6 +5948,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: by: https://www.berliner-zeitung.de/news/pankow-abriss-der-schoenhauser-allee-bruecke-verschiebt-sich-auf-2027-li.2258812
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6826 (Antrag)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schoenhauser-allee-bruecke/ (voraussichtliche Bauzeit: 2027 bis 2032)
+#: by: https://www.morgenpost.de/bezirke/pankow/article408766107/leichtfertige-planung-die-angst-vor-pankows-mammut-baustelle.html (ab 2027: Verlegung des Verkehrs auf die östliche Brückenhälfte)
 #: XXX wird es Einschränkungen geben?
 #: last_checked: 2024-07-13
 # REMOVED --- #: check_frequency: 360d
@@ -6099,11 +6101,12 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/strassenbahngleise-in-der-ehrlichstrasse-werden-erneuert_a416119 (kein Termin für Baubeginn)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zum-start-der-herbstferien/ (Ehrlichstr., 23.10.-13.12.2024)
 #: by: https://www.bahninfo-forum.de/read.php?9,695858,824707#msg-824707 (2026?)
+#: by: https://www.nd-aktuell.de/artikel/1190546.oepnv-bvg-keine-tram-von-friedrichshain-bis-karlshorst.html (2026?)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243332 (2024-11-11 - 2024-12-12)
 #: last_checked: 2025-04-13
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2024-10-23
+#: next_check: 2026-03-15 (bahninfo-forum, nd)
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17736,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 # 
 #: osm_watch: way id="621721786" version="3"
@@ -6699,7 +6702,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11669 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11725 (Antrag)
 #: also_indoor: webcam https://portal1467.webcam-profi.de/ (Oktober+Dezember 2024: 401)
-#: last_checked: 2025-04-04 (mapillary)
+#: last_checked: 2025-04-13 (daf)
 #: check_frequency: 270d
 #: next_check: 2025-12-31
 Kleinbeerenstr. - Großbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46-1	?::projected 8979,10485 9192,10528
@@ -7754,6 +7757,7 @@ Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 1
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (bauliche Umsetzung voraussichtlich 2021/2022)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7659 (Antrag für nicht näher bestimmte fehlende RVA) (außerdem allgemeiner Zweirichtungsverkehr geplant, auch für Kfz)
 #: by: https://www.infravelo.de/projekt/am-treptower-park/ (2. Quartal 2025 - 3. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025)
+#: by: https://www.morgenpost.de/bezirke/lichtenberg/article408769475/kein-geld-fuer-verkehrssicherheit-ost-bezirke-weisen-kritik-zurueck.html (Verzögerung, Umsetzung erst 2027-2028?)
 #: XXX mittlerweile wurde bereits im Zuge der Umgestaltung der Kreuzung Elsenstr./Am Treptower Park eine Radwegauffahrt gebaut; außerdem siehe provisorische Führung des Radverkehr Richtung Nordwesten
 #: last_checked: 2025-04-09
 #: check_frequency: 120d
@@ -7882,6 +7886,7 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16093,-613 16173
 #: by: https://www.nd-aktuell.de/artikel/1173566.strassenbahn-kein-ende-beim-tram-ausbau-der-bvg-zum-berliner-ostkreuz.html
 #: by: https://www.nd-aktuell.de/artikel/1185212.oeffentlicher-nahverkehr-oepnv-in-berlin-baurecht-fuer-neue-tramlinie-ist-da.html (Inbetriebnahme Mitte 2026?)
 #: by: https://entwicklungsstadt.de/fortschritt-in-der-parkstadt-karlshorst-gruenflaeche-mit-100-neuen-baeumen-eroeffnet-im-april/ (Erwähnung)
+#: by: https://www.nd-aktuell.de/artikel/1190546.oepnv-bvg-keine-tram-von-friedrichshain-bis-karlshorst.html (Inbetriebnahme nicht vor dem 2. Quartal 2026)
 #: XXX mittlerweile wegen Hochbauarbeiten nebenan ein paar Meter gemeinsamer Geh- und Radweg am Ende der Ehrlichstr. (ist mittlerweile vorbei; war aber vermutlich nur für den Hochbau nebenan)
 #: last_checked: 2025-04-13
 #: check_frequency: 180d
@@ -8324,10 +8329,10 @@ Thyrow - Siethen (L795): neuer Radweg auf der Westseite geplant	?::projected -62
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=67330
 #: by: https://www.o-sp.de/download/lbvbrandenburg/339789
-#: source_id: LS/221-F/24/011 (bis 12.04.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (inaktiv) (bis 11.04.2025) (inaktiv)
+#: source_id: LS/221-F/24/011 (bis 12.04.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (inaktiv) (bis 11.04.2025) (inaktiv) (bis 16.05.2025)
 #: source_id: LS/221-F/24/065 (bis 29.11.2024) (inaktiv)
 #: osm_watch: note 4475108 1
-#: next_check: 2025-04-11 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-05-16 (VIZ-Verkehrsmeldung)
 Knotenpunkt L23/L38: Kreisverkehr wird zu einer normalen Ampelkreuzung umgebaut	?::projected 39239,-987 39341,-1057 39441,-1117
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=53660

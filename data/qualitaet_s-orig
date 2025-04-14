@@ -170,10 +170,14 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung) (3. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2025 - 3. Quartal 2025)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-sitzung-vom-04072024-.pdf (4m breiter Asphaltstreifen, Bau für 2025 geplant)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1551519.php
 #: osm_watch: way id="102486250" version="26"
+#: osm_watch: note 4659483 4
+#: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
 #: last_checked: 2025-02-05
 #: check_frequency: 120d
-#: next_check: 2025-09-30 (infravelo)
+#: next_check: 2025-03-10 (osm note)
+# REMOVED --- #: next_check: 2025-09-30 (infravelo)
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
@@ -30796,8 +30800,8 @@ Tauroggener Str.: Asphalt	Q0 3460,13351 3429,13227 3400,13107 3337,12855
 #: confirmed_by: srt
 Fabriciusstr.: Asphalt	Q0 3159,13492 3194,13554 3262,13547 3371,13501
 Bonhoefferufer: Kleinkopfsteinpflaster	Q1 3444,12804 3398,12809
-Bonhoefferufer: Asphalt	Q0 3398,12809 3327,12818 3193,12857 3154,12936 3216,12994
-(Bonhoefferufer - Tegeler Weg): Parkweg	Q1 3154,12936 3164,13067
+Bonhoefferufer: Asphalt	Q0 3398,12809 3327,12818 3193,12857 3150,12927 3133,13021 3181,13044
+(Bonhoefferufer - Tegeler Weg): Parkweg	Q1 3133,13021 3112,13296
 Treseburger Str. (Charlottenburg): Asphalt	Q0 3842,12947 3842,13097
 #: confirmed_by: srt
 Ilsenburger Str. (Charlottenburg): Asphalt	Q0 3968,12947 3968,13024 3970,13097 3967,13218
