@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.36;
+$VERSION = 2.37;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1912,7 +1912,7 @@ sub showmap_url_gdi_berlin {
 	## es existieren mehrere Layer: "gestoert" und "ungestoert", aber oberflächlich gesehen sehen sie gleich aus
 	oepnv              => 'hintergrund_k5_grau,oepnv_ungestoert:d_tramlinien,oepnv_ungestoert:c_buslinien,oepnv_ungestoert:b_tramstopp,oepnv_ungestoert:a_busstopp',
 	fnp2015            => 'hintergrund_k5_grau,fnp_2015:0,fnp_2015:1',
-	fnpaktuell         => 'hintergrund_k5_grau,fnp_ak:0',
+	fnpaktuell         => 'hintergrund_k5_grau,fnp_ak:fnp_ak',
 	bplaene            => 'hintergrund_k5_grau,bplan:2,bplan:3,bplan:6,bplan:7',
 	fluralkis          => 'hintergrund_k5_farbe,alkis_flurstuecke:flurstuecke',
 	flurinspire        => 'hintergrund_k5_farbe,cp_alkis:CP.CadastralZoning,cp_alkis:CP.CadastralParcel',
