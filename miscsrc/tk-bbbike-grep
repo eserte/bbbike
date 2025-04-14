@@ -282,6 +282,7 @@ sub toggle_update_from_file {
 	}
 	return if $selection_content eq '';
 	$selection_content = url_normalizations($selection_content);
+	$selection_content = expand_short_link($selection_content);
 	if ($old_selection_content ne $selection_content) {
 	    $last_update_change = time;
 	    $old_selection_content = $selection_content;
@@ -373,5 +374,29 @@ sub url_normalizations {
     $url =~ s{(https://www.architektur-urbanistik.berlin/index.php\?threads/.*?/).*}{$1};
     $url =~ s{(https://www.bahninfo-forum.de/read.php\?\d+,\d+,).*}{$1};
     $url =~ s{(https://www.nd-aktuell.de/artikel/\d+\.).*}{$1};
+    $url;
+}
+
+{
+    my $ua;
+    sub _get_ua {
+	return $ua if $ua;
+	require LWP::UserAgent;
+	$ua = LWP::UserAgent->new;
+	$ua->timeout(10);
+	$ua->requests_redirectable([]); # need to find out the Location header of redirects
+	$ua;
+    }
+}
+
+sub expand_short_link {
+    my $url = shift;
+    if ($url =~ m{^https://t\.co/}) {
+	my $ua = _get_ua();
+	my $resp = $ua->get($url);
+	if (my $loc = $resp->header('location')) {
+	    return $loc;
+	}
+    }
     $url;
 }
