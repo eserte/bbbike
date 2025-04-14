@@ -47,6 +47,7 @@ GetOptions(\%opt,
 	   "infotobbd!",
 	   "info=s",
 	   "noempty",
+	   "geojson-name=s",
 	   "v+",
 	  )
     or die <<EOF;
@@ -57,12 +58,39 @@ usage: $0 [-i inputformat] -o outfile [-a|-append]
     [-info file]
     [-infotobbd]
     [-noempty]
+    [-geojson-name ...]
     [-v [-v ...]]
 EOF
 
 use vars qw($verbose);
 if ($opt{v}) {
     $verbose = $opt{v};
+}
+
+my $namecb;
+if ($opt{'geojson-name'}) {
+    my @path;
+    if ($opt{'geojson-name'} =~ /^\.(.*)/) {
+	@path = split /\./, $1;
+    }
+    if (!@path) {
+	die "-geojson-name has to be a path (e.g. .properties.street)\n";
+    }
+
+    my %warn_once;
+    $namecb = sub {
+	my $cursor = shift;
+	for my $i (0 .. $#path) {
+	    if (ref $cursor ne 'HASH') {
+		if (!$warn_once{nohash}) {
+		    warn "geojson-name: path @path cannot be resolved, feature " . (defined $cursor ? "'$cursor'" : '<undef>') . " is not a HASH\n";
+		    return '';
+		}
+	    }
+	    $cursor = $cursor->{$path[$i]};
+	}
+	defined $cursor ? $cursor : '';
+    };
 }
 
 my @download_dirs; @download_dirs = @{ $opt{dir} } if $opt{dir};
@@ -246,7 +274,7 @@ sub run_gpsbabel {
 		   | \.geojson$
 		   )
 	          }xi) {
-	my $s = eval { Strassen->new($file, name => $title, cat => $cat) };
+	my $s = eval { Strassen->new($file, ($namecb ? (namecb => $namecb) : (name => $title)), cat => $cat) };
 	if ($s) {
 	    $info->{handled_by} = ref $s;
 	    return $s;

@@ -47,4 +47,60 @@ EOF
 like $err, qr{.*_any2bbd\.trk\.\.\. OK \(Strassen::Gpsman\)};
 }
 
+{
+    my $tmp = File::Temp->new(SUFFIX => '_any2bbd.geojson');
+    $tmp->print(<<'EOF');
+{
+    "type": "FeatureCollection",
+    "name": "baustellen",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "street": "A100 (Stadtring)"
+            },
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [
+                            13.341823026264,
+                            52.47875402447307
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
+EOF
+    $tmp->close;
+
+    {
+	ok !run [@basecmd, '-geojson-name', 'wrongpath', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
+	like $err, qr{\Q-geojson-name has to be a path (e.g. .properties.street)}, 'expected error message';
+    }
+
+    {
+	ok run [@basecmd, '-geojson-name', '.not.existing', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
+	like $err, qr{\Qgeojson-name: path not existing cannot be resolved, feature <undef> is not a HASH}, 'expected warning message';
+	is $out, <<"EOF", 'expected geojson -> bbd conversion result (-geojson-name not used)';
+#: map: polar
+#: encoding: utf-8
+#:
+\tX 13.341823026264,52.4787540244731
+EOF
+    }
+
+    ok run [@basecmd, '-geojson-name', '.properties.street', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
+    is $out, <<"EOF", 'expected geojson -> bbd conversion result';
+#: map: polar
+#: encoding: utf-8
+#:
+A100 (Stadtring)\tX 13.341823026264,52.4787540244731
+EOF
+    like $err, qr{.*_any2bbd\.geojson\.\.\. OK \(Strassen::GeoJSON\)}, 'expected diagnostics';
+}
+
 __END__
