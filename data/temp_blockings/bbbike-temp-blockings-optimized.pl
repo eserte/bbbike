@@ -4087,7 +4087,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-04-05
+#: last_checked: 2025-04-13 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -5075,7 +5075,8 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
 #: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024) (inaktiv)
-#: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025)
+#: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -5091,9 +5092,9 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 ',
          'from' => 1736839577,
          'id' => 3605,
-         'text' => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 10.05.2025',
+         'text' => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 15.05.2025',
          'type' => 'handicap',
-         'until' => 1746889200
+         'until' => 1747321200
        },
        undef,
        undef,
@@ -6072,7 +6073,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-04-05
+#: last_checked: 2025-04-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -6744,7 +6745,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-10 vvv
+#: last_checked: 2025-04-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6994,6 +6995,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article408670731/warum-die-kirschbluetenallee-bis-jahresende-gesperrt-bleibt.html (Ende März 2025: noch keine Sperrung)
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-weitere-teilstrecke-im-sueden-berlins (Bauarbeiten ab 10.04.2025)
 #: by: https://www.stadtblatt-online.de/verkehr/berliner-mauerweg-baustart-fuer-weitere-teilstrecke-im-sueden-berlins/ (Bauarbeiten ab 11.04.2025)
+#: by: https://entwicklungsstadt.de/4-abschnitt-des-berliner-mauerwegs-wird-erneuert/
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
 #: osm_watch: way id="27260309" version="18"
@@ -7312,7 +7314,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
 #: also_indoor: traffic (G,H,B,T,W)
 #: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
-#: last_checked: 2025-04-02 (traffic)
+#: last_checked: 2025-04-15 (traffic)
 #: check_frequency: 14d (traffic)
 	q3::inwork 2453,9156 2576,9132
 # REMOVED ---	q4::inwork 2453,9156 2337,9178
@@ -7332,16 +7334,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 246430009 (bis 15.04.2025)
-	2::inwork 52061,34502 52842,34058
-',
-         'from' => 1730012400,
-         'id' => 4210,
-         'text' => 'Haselberg: Bauarbeiten, Sperrung, vom 28.10.2024 08:00 Uhr bis 15.04.2025 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1744725600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7378,16 +7371,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'type' => 'handicap',
          'until' => 1745963999
        },
-       {
-         'data' => '#: source_id: viz2021:13.31163,52.463224,13.11.2024,13:20 (hier nur Kfz-Verkehr, bis 15.04.2025)
-	q4::inwork 4298,6239 4221,6283 4173,6284
-',
-         'from' => 1731414000,
-         'id' => 4216,
-         'text' => 'Grillparzerstr.: Bauarbeiten zwischen Fritschweg und Paulsenstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.11.2024 13:20 bis 15.04.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1744729200
-       },
+       undef,
        {
          'data' => '#: by: https://www.luftbildsuche.de/info/luftbilder/neubau-wohn-geschftshauses-berlin-deutschland-652549.html
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12009 (Anfrage)
@@ -8042,16 +8026,7 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
          'type' => 'gesperrt',
          'until' => 1761318000
        },
-       {
-         'data' => '#: source_id: 256000419 (bis 15.04.2025)
-	2::inwork 25069,35558 25740,34997 26113,34734
-',
-         'from' => 1744261200,
-         'id' => 4285,
-         'text' => 'Rüdnitz: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 11.04.2025 07:00 Uhr bis 15.04.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1744729200
-       },
+       undef,
        {
          'data' => '#: source_id: 257300425 (bis 23.04.2025)
 	2::inwork 49584,69540 49463,69701 49250,70086
@@ -8207,20 +8182,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: WILTBERG-2022
-#: by: https://viz.berlin.de/aktuelle-meldungen/weiterer-bauablauf-bereich-wiltbergstrasse_poelnitzweg-in-buch/
-#: source_id: viz2021:13.498256,52.640251,10.04.2025,20:00 (bis 15.04.2025)
-#: source_id: viz2021:13.4977,52.64066,10.04.2025,20:00 (bis 15.04.2025) (inaktiv)
-	2::inwork 16471,26234 16532,26174
-',
-         'dont_check_date' => 1,
-         'from' => 1744128000,
-         'id' => 4300,
-         'text' => 'Pölnitzweg: Sperrung in Höhe Eisenbahnbrücke, auch für Fußgänger und Radfahrer, vom 10.04.2025 20:00 Uhr bis 15.04.2025 09:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1744700400
-       },
+       undef,
        {
          'data' => '#: source_id: LS/221-E/25/033 (bis 23.05.2025)
 	2::inwork 33219,61981 33413,61639 35000,60912 35215,60669 35255,60090 35405,59832 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
@@ -8256,7 +8218,7 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
        },
        {
          'data' => '#: source_id: viz2021:13.452957,52.539018,14.04.2025,07:00 (Fahrbahnsanierung, auch der Radverkehr ist betroffen, bis 23.04.2025)
-#: source_id: viz2021:13.45393,52.53846,14.04.2025,07:00 (bis 23.04.2025)
+#: source_id: viz2021:13.45393,52.53846,14.04.2025,07:00 (bis 23.04.2025) (inaktiv)
 	q4::inwork 13636,14900 13733,14813
 ',
          'from' => 1744520400,
@@ -8264,6 +8226,27 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'text' => 'Stedingerweg: Bauarbeiten zwischen Kniprodestr. und Steengravenweg, Fahrbahn gesperrt, vom 14.04.2025 07:00 bis 23.04.2025 17:00',
          'type' => 'handicap',
          'until' => 1745420400
+       },
+       {
+         'data' => '#: source_id: 257301352 (bis 27.06.2025)
+	2::inwork 55014,74593 54996,74647
+',
+         'from' => 1746338400,
+         'id' => 4304,
+         'text' => 'Pinnow: Sperrung der Brücke über die B2, 05.05.2025 08:00 Uhr bis 27.06.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1751036400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.33534,52.45856,15.04.2025,08:00 (auch Radverkehr, bis 28.05.2025)
+#: source_id: viz2021:13.33534,52.45929,15.04.2025,12:57 (bis 28.05.2025)
+	q4::inwork; 5851,5863 5850,5765
+',
+         'from' => 1744610400,
+         'id' => 4305,
+         'text' => 'Schönhauser Str.: Richtung Süden zwischen Friedrichsruher Str. und Bergstr. gesperrt, vom 15.04.2025 08:00 bis 28.05.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1748444400
        }
      
 );

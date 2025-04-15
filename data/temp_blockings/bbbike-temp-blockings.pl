@@ -18385,15 +18385,17 @@ EOF
        until => $isodate2epoch->("2022-05-22 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5, start => "2024-06-08T00:00:00"]], # kann auch erst im September stattfinden
-       source_id => 'http://www.erkner.de/271.html?date=20190415',
+       recurrence_prewarn_days => 14,
        text  => 'Erkner: Heimatfest, 20.5.2022 bis 22.5.2022',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.erkner.de/271.html?date=20190415
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
 #: by: https://www.erkner.de/erkner-kompakt/heimatfest/ (geplant vom 20. bis 22. Mai 2022)
 #: by: https://www.erkner.de/erkner-kompakt/heimatfest/?date=20230325 (findet 2023 wie 2022 nur im Rathauspark statt, also vermutlich keine Sperrung der Straße)
 #: by: https://www.erkner.de/freizeit-tourismus/stadtgeschichte-kultur/traditionelle-feste-and-veranstaltungen/heimatfest.html (24.-26.5.2024, nur im Rathauspark oder mit Sperrung der Straße?) (wohl nur im Rathauspark)
+#: by: https://www.erkner.de/freizeit-und-tourismus/stadtgeschichte-und-kultur/heimatfest.html (23. bis 25. Mai 2025)
 	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
@@ -32969,7 +32971,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-04-05
+#: last_checked: 2025-04-13 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -37290,15 +37292,16 @@ Mauerstr.	2::temp 9171,11777 9138,11872
 EOF
      },
      { from  => 1736839577, # 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2025-05-10 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       until => $isodate2epoch->("2025-05-15 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
 #      text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 08.03.2024',
-       text  => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 10.05.2025',
+       text  => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 15.05.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
 #: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024) (inaktiv)
-#: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025)
+#: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -41253,6 +41256,8 @@ EOF
 #: source_id: bvg2024:194#HIM_FREETEXT_274938 (ab 4.4.2024, kein Endedatum)
 #: source_id: viz2021:13.483638,52.502149,04.04.2025,09:00 (Sperrung auch für den Radverkehr, aber nicht für den Fußverkehr, bis 14.04.2025) (inaktiv)
 #: source_id: viz2021:13.483638,52.502149,04.04.2025,07:00 (bis 14.04.2025) (inaktiv)
+#: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (Gegenverkehrsregelung, bis 31.05.2025)
+#: source_id: viz2021:13.48146,52.50203,15.04.2025,14:15 (Gegenverkehrsregelung, bis 31.05.2025)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
@@ -41598,7 +41603,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-04-05
+#: last_checked: 2025-04-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -44424,7 +44429,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-10 vvv
+#: last_checked: 2025-04-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44509,7 +44514,7 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
-#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025) (bis 14.03.2025) (bis 18.03.2025) (bis 21.03.2025) (bis 15.04.2025)
+#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025) (bis 14.03.2025) (bis 18.03.2025) (bis 21.03.2025) (bis 15.04.2025) (bis 15.05.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr; mittlerweile (2024-12-03) ist die Radspur wieder nutzbar
 #: note: mittlerweile sind die Barrieren so weggeschoben, dass es keine Beeinträchtigungen mehr gibt
 # REMOVED --- #: last_checked: 2024-12-17 --- #: check_frequency: 14d
@@ -45106,6 +45111,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article408670731/warum-die-kirschbluetenallee-bis-jahresende-gesperrt-bleibt.html (Ende März 2025: noch keine Sperrung)
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-weitere-teilstrecke-im-sueden-berlins (Bauarbeiten ab 10.04.2025)
 #: by: https://www.stadtblatt-online.de/verkehr/berliner-mauerweg-baustart-fuer-weitere-teilstrecke-im-sueden-berlins/ (Bauarbeiten ab 11.04.2025)
+#: by: https://entwicklungsstadt.de/4-abschnitt-des-berliner-mauerwegs-wird-erneuert/
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
 #: osm_watch: way id="27260309" version="18"
@@ -45904,7 +45910,7 @@ EOF
 #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
 #: also_indoor: traffic (G,H,B,T,W)
 #: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
-#: last_checked: 2025-04-02 (traffic)
+#: last_checked: 2025-04-15 (traffic)
 #: check_frequency: 14d (traffic)
 	q3::inwork 2453,9156 2576,9132
 # REMOVED ---	q4::inwork 2453,9156 2337,9178
@@ -46030,7 +46036,7 @@ EOF
        text  => 'Haselberg: Bauarbeiten, Sperrung, vom 28.10.2024 08:00 Uhr bis 15.04.2025 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 246430009 (bis 15.04.2025)
+#: source_id: 246430009 (bis 15.04.2025) (inaktiv)
 	2::inwork 52061,34502 52842,34058
 EOF
      },
@@ -46110,7 +46116,7 @@ EOF
        text  => 'Grillparzerstr.: Bauarbeiten zwischen Fritschweg und Paulsenstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.11.2024 13:20 bis 15.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.31163,52.463224,13.11.2024,13:20 (hier nur Kfz-Verkehr, bis 15.04.2025)
+#: source_id: viz2021:13.31163,52.463224,13.11.2024,13:20 (hier nur Kfz-Verkehr, bis 15.04.2025) (inaktiv)
 	q4::inwork 4298,6239 4221,6283 4173,6284
 EOF
      },
@@ -47047,7 +47053,7 @@ EOF
        text  => 'Rüdnitz: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 11.04.2025 07:00 Uhr bis 15.04.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 256000419 (bis 15.04.2025)
+#: source_id: 256000419 (bis 15.04.2025) (inaktiv)
 	2::inwork 25069,35558 25740,34997 26113,34734
 EOF
      },
@@ -47229,7 +47235,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
 #: by: https://viz.berlin.de/aktuelle-meldungen/weiterer-bauablauf-bereich-wiltbergstrasse_poelnitzweg-in-buch/
-#: source_id: viz2021:13.498256,52.640251,10.04.2025,20:00 (bis 15.04.2025)
+#: source_id: viz2021:13.498256,52.640251,10.04.2025,20:00 (bis 15.04.2025) (inaktiv)
 #: source_id: viz2021:13.4977,52.64066,10.04.2025,20:00 (bis 15.04.2025) (inaktiv)
 	2::inwork 16471,26234 16532,26174
 EOF
@@ -47271,8 +47277,27 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.452957,52.539018,14.04.2025,07:00 (Fahrbahnsanierung, auch der Radverkehr ist betroffen, bis 23.04.2025)
-#: source_id: viz2021:13.45393,52.53846,14.04.2025,07:00 (bis 23.04.2025)
+#: source_id: viz2021:13.45393,52.53846,14.04.2025,07:00 (bis 23.04.2025) (inaktiv)
 	q4::inwork 13636,14900 13733,14813
+EOF
+     },
+     { from  => 1746338400, # 2025-05-04 08:00
+       until => 1751036400, # 2025-06-27 17:00
+       text  => 'Pinnow: Sperrung der Brücke über die B2, 05.05.2025 08:00 Uhr bis 27.06.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 257301352 (bis 27.06.2025)
+	2::inwork 55014,74593 54996,74647
+EOF
+     },
+     { from  => 1744610400, # 2025-04-14 08:00
+       until => 1748444400, # 2025-05-28 17:00
+       text  => 'Schönhauser Str.: Richtung Süden zwischen Friedrichsruher Str. und Bergstr. gesperrt, vom 15.04.2025 08:00 bis 28.05.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.33534,52.45856,15.04.2025,08:00 (auch Radverkehr, bis 28.05.2025)
+#: source_id: viz2021:13.33534,52.45929,15.04.2025,12:57 (bis 28.05.2025)
+	q4::inwork; 5851,5863 5850,5765
 EOF
      },
     );
