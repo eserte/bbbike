@@ -1299,7 +1299,7 @@ Bus 358	busroute_N 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 1
 #: XXX Wann ziehen die Gaslaternen um?
 #: osm_watch: note 2969085 6
 #: priority: #C
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-16
 #: check_frequency: 90d
 Gaslaternen-Freilichtmuseum Berlin	CS 5895,11692 5835,11768 5858,11863 5900,11913
 #: ignore ^^^
@@ -1522,6 +1522,7 @@ ausgeschildert Gaststätte Waldesgrund	CP2; 15642,5468 15711,5756
 ausgeschildert Richtung Britzer Garten	CP2; 10847,3154 10840,3048
 ausgeschildert Zur Wiltbergstr. 29, 29A, 29G	CP2; 16121,25818 16094,25776
 ausgeschildert Kolonie Spreegrund	CP2; 1110,13462 1111,13514
+#: note: und teilweise fälschlicherweise als "Gutsmuths Weg" ausgeschildert
 Gutsmuthsweg ist teilweise nicht ausgeschildert	CS -746,12432 -671,12311 -583,12151
 Prinz-Friedrich-Karl-Weg ist nicht ausgeschildert	CS -1132,12268 -1172,12336 -824,12557 -646,12658
 ausgeschildert nach Heinersdorf	CP2; 63464,78555 63559,78397
@@ -1763,7 +1764,7 @@ ausgeschildert nach Bernau	CP; 32543,18082 32537,18066 32519,18076
 ausgeschildert Sophie-Charlotte-Platz	CP; 3064,11657 3144,11659 3159,11562
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: last_checked: 2025-03-08 vvv
+#: last_checked: 2025-04-16 vvv
 #: check_frequency: 180d vvv
 # REMOVED (wieder da) --- #: note: hier ist das Schild wohl verloren gegangen? --- Henriette-Lustig-Str.: nicht ausgeschildert	CS 21476,5048 21611,5119
 Henriette-Lustig-Str.: nicht ausgeschildert	CS 21611,5119 21631,5079
@@ -1852,7 +1853,7 @@ Hochspannungsweg: nicht ausgeschildert, Feuerwehrzufahrt zum Britzer Garten	CP; 
 #: next_check_id: HANSPETERSPLATZ-2022
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1128830.php (Benennung eines Platzes nach Hans Peters)
 #: XXX wann wird der Platz ausgeschildert?
-#: last_checked: 2025-03-09
+#: last_checked: 2025-04-16
 #: check_frequency: 45d
 Hans-Peters-Platz: nicht ausgeschildert	CS 7739,14119 7679,14030
 # 

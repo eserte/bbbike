@@ -453,12 +453,14 @@ Tiergarten, Bellevueallee - Floraplatz: Parkweg	X 8016,11770 8020,11937 8022,120
 #: mud: 2024-04-03: feuchte Oberfläche, viele Pfützen	h=q2,wet 
 #: mud: 2024-06-28: leicht feuchtere Oberfläche und wenige Pfützen	h=q1,wet
 #: mud: 2025-04-09: trocken	h=q0
+#: mud: 2025-04-16: trocken	h=q0
 (Parkweg entlang der Tiergartenstr.): Parkweg	X 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553
 # 
 #: mud: 2024-04-03: feuchte Oberfläche, einige Pfützen	h=q1-,wet
 #: mud: 2024-06-28: leicht feuchtere Oberfläche und wenige Pfützen	h=q1+,wet
 #: mud: 2024-09-07: trocken	h=q0
 #: mud: 2025-04-09: trocken	h=q0
+#: mud: 2025-04-16: trocken	h=q0
 (Parkweg entlang der Tiergartenstr.): Parkweg	X 7713,11553 7621,11541 7463,11538 7359,11538 7220,11542 7111,11524 7080,11508 6966,11490 6844,11496 6826,11479
 # 
 #: mud: 2021-02-20: sehr matschig
@@ -598,6 +600,7 @@ Hausvaterweg: unbefestigte Straße	X 20281,18690 20347,18667
 #: mud: 2024-06-30: weitgehend trocken	h=q0
 #: mud: 2024-09-24: zahlreiche Pfützen	h=q3,wet
 #: mud: 2025-03-25: trocken	h=q0	note=Nur von der Rüdersdorfer Str. aus gesehen
+#: mud: 2025-04-16: trocken	h=q0	note=Nur von der Rüdersdorfer Str. aus gesehen
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): wassergebundene Decke	X 12944,11760 13052,11867
 # 
 #: mud: 2021-12-11: zahlreiche Pfützen
@@ -843,6 +846,7 @@ Kufsteiner Str.: glatter Parkweg	X 5913,8415 5917,8351 5918,8221
 Mohnblütenweg: unbefestigte Straße	X 21712,215 21688,312
 # 
 #: mud: 2024-02-17: zahlreiche Pfützen	h=q3,wet
+#: mud: 2025-04-16: trocken	h=q0
 Weg an der Havel: wassergebundene Decke	X -3529,13452 -3546,13503
 # 
 #: mud: 2024-04-03: einige Pfützen, leicht matschige Oberfläche	h=q2-,wet

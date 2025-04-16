@@ -175,7 +175,7 @@ Buchhorster Str.	1 7616,20633 7736,20598 7793,20580 7866,20556 7979,20528
 Handjerystr.	1 5641,7189 5624,7113 5565,7024
 Leuthener Str.	1 7494,8354 7578,8358
 Leuthener Str.	1 7716,8356 7640,8359
-Lüdenscheider Weg	1 -1389,15285 -1037,15482
+Lüdenscheider Weg	1 -1389,15285 -1371,15293 -1037,15482
 Büsingstr.	1 5215,6643 5210,6522
 Schrammstr.	1 4954,8454 4958,8355
 Stubbenkammerstr.	1 11631,15192 11801,15132
@@ -628,8 +628,8 @@ Landsberger Allee -> Landsberger Allee, Zufahrt zur Nebenfahrbahn: Mittelstreife
 Landsberger Allee, Zufahrt zur Nebenfahrbahn -> Landsberger Allee: Mittelstreifen	3::igndisp 16007,14367 16010,14326 16314,14361
 Mittelstreifen	3nocross::ignrte -1485,15463 -1389,15285 -1345,15060
 Daumstr. -> Goldbeckweg: Mittelstreifen	3::igndisp -1345,15060 -1389,15285 -1532,15225
-Lüdenscheider Weg -> Daumstr.: Mittelstreifen	3::igndisp -1037,15482 -1389,15285 -1345,15060
-Lüdenscheider Weg -> Goldbeckweg: Mittelstreifen	3::igndisp -1037,15482 -1389,15285 -1532,15225
+Lüdenscheider Weg -> Daumstr.: Mittelstreifen	3::igndisp -1371,15293 -1389,15285 -1345,15060
+Lüdenscheider Weg -> Goldbeckweg: Mittelstreifen	3::igndisp -1371,15293 -1389,15285 -1532,15225
 Goldbeckweg -> Daumstr.: Mittelstreifen	3::igndisp -1532,15225 -1389,15285 -1485,15463
 Germersheimer Weg	1 -4489,15014 -4507,15068 -4499,15152 -4497,15176 -4495,15198 -4466,15460
 Zweibrücker Str.	1 -4254,15813 -4283,15639 -4294,15525 -4308,15411
@@ -908,8 +908,8 @@ Guyotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11056,21978 10999,221
 Elisabethstr. (Spandau)	1 -3387,15410 -3451,15372 -3492,15331
 Eisenacher Str.	1 22899,15073 23113,15110
 Mittelstreifen	3nocross::ignrte -3009,17090 -3013,17024 -3017,16984 -3018,16974
-Streitstr. -> Chamissostr.: Mittelstreifen	3::igndisp -3013,17024 -3017,16984 -2838,16951
-Chamissostr. -> Streitstr.: Mittelstreifen	3::igndisp -2838,16951 -3017,16984 -3018,16974
+Streitstr. -> Chamissostr.: Mittelstreifen	3::igndisp -3013,17024 -3017,16984 -2955,16973
+Chamissostr. -> Streitstr.: Mittelstreifen	3::igndisp -2955,16973 -3017,16984 -3018,16974
 Straßenbahntrasse	3nocross::ignrte 18770,8898 18737,8686 18727,8634
 Treskowallee -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18778,8663
 Treskowallee -> Rheinsteinstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18865,8740
