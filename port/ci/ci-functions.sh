@@ -374,10 +374,11 @@ install_old_perl_dependencies() {
 	esac
 	case "$PERLBREW_PERL" in
 	    5.41)
-		git clone --depth=1 https://github.com/eserte/ci-helper-cpan-pm.git /tmp/ci-helper-cpan-pm
-		/tmp/ci-helper-cpan-pm/ci-helper-cpan-pm --distroprefs=https://github.com/eserte/srezic-cpan-distroprefs --enable-sysdeps --no-sudo
-		# see https://rt.cpan.org/Ticket/Display.html?id=154926
-		cpan common::sense
+		## not needed anymore with newer bleadperls (e.g. 5.41.10)
+		#git clone --depth=1 https://github.com/eserte/ci-helper-cpan-pm.git /tmp/ci-helper-cpan-pm
+		#/tmp/ci-helper-cpan-pm/ci-helper-cpan-pm --distroprefs=https://github.com/eserte/srezic-cpan-distroprefs --enable-sysdeps --no-sudo
+		## see https://rt.cpan.org/Ticket/Display.html?id=154926
+		#cpan common::sense
 
 		# fix "Possible precedence problem between ! and numeric eq (==)" warning in Tk 804.036
 		# XXX remove once a newer Tk is released
