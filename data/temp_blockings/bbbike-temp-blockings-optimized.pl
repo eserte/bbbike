@@ -3495,13 +3495,13 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
-#: last_checked: 2025-04-07
+#: last_checked: 2025-04-15 (mapillary)
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="39"
 #: osm_watch: way id="580507889" version="34"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-03-16
+#: last_checked: 2025-04-15 (mapillary)
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -3876,7 +3876,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-04-06 (traffic) vvv
+#: last_checked: 2025-04-17 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -5204,7 +5204,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-04-13
+#: last_checked: 2025-04-17
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5711,7 +5711,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 # REMOVED --- #: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt --- #: osm_watch: way id="1197821336" version="1" --- 
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
 #: also_indoor: traffic (T,H) vvv
-#: last_checked: 2025-04-06 (traffic) vvv
+#: last_checked: 2025-04-17 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 #: next_check: 2025-10-31 vvv
 Grabertstr.	q4::inwork 6923,5057 7030,4937
@@ -6383,7 +6383,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025) (bis 31.08.2025)
 #: note: eigentlich q4+::inwork;
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-03-31 vvv
+#: last_checked: 2025-04-15 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
@@ -6651,16 +6651,7 @@ Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 236320002 (bis 30.06.2024) (bis 02.08.2024) (bis 30.08.2024) (inaktiv) (bis 20.12.2024) (inaktiv) (bis 17.04.2025)
-	2::inwork -20067,17358 -20225,16739 -20329,16547 -20356,16401 -20332,16093
-',
-         'from' => 1730156400,
-         'id' => 4064,
-         'text' => 'Kuhdammweg - Am Umspannwerk: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 30.10.2024 08:00 Uhr bis 17.04.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1744902000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7100,7 +7091,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-04-11 (website) vvv
+#: last_checked: 2025-04-17 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7819,16 +7810,17 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
        },
        {
          'data' => '#: source_id: viz2021:13.42577,52.59492,16.02.2025,16:41 (bis 03.03.2025) (inaktiv)
-#: source_id: viz2021:13.42577,52.59492,03.03.2025,10:46 (bis 17.04.2025)
+#: source_id: viz2021:13.42577,52.59492,03.03.2025,10:46 (bis 17.04.2025) (inaktiv)
+#: source_id: viz2021:13.42577,52.59492,17.04.2025,08:23 (bis 09.05.2025)
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein, gesehen 2025-02-23 (So)
 	q4::inwork 11518,20894 11599,20973 11686,21058
 # REMOVED (hier nicht) ---	q4::inwork 11686,21058 11703,21097
 ',
          'from' => 1739634060,
          'id' => 4261,
-         'text' => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Marienstr. und Zimbelstr., vom 16.02.2025 bis 17.04.2025',
+         'text' => 'Schönhauser Str.: geplatzte Wasserleitung, Sperrung zwischen Marienstr. und Zimbelstr., vom 16.02.2025 bis 09.05.2025',
          'type' => 'handicap',
-         'until' => 1744927199
+         'until' => 1746827999
        },
        {
          'data' => '#: by: rbb (bis 17.03.2025) (bis 24.03.2025) (bis 28.04.2025)
@@ -7891,7 +7883,22 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# REMOVED --- #: also_indoor: traffic (ex-H,G[falsch],re-B,re-T)
+# REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-02-28 --- #: check_frequency: 10d --- #: next_check: 2025-03-28 (Halteverbotsschilder) ---	2::inwork 17587,9655 17668,9632 17777,9649
+# REMOVED --- #: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert --- q2::inwork 18266,9853 18066,9770 17920,9698
+#: also_indoor: traffic (none)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2025-04-17
+#: check_frequency: 14d
+Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
+',
+         'from' => undef,
+         'id' => 4270,
+         'text' => 'Friedenshorster Str.: Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: next_check_id: SPREEKUESTE-2025
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
@@ -8033,10 +8040,11 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/schutz-fur-den-berliner-plotzensee-hoherer-zaun-soll-wildbaden-verhindern-13321912.html
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1536289.php
+#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=777157#post777157 (Abschluss im Herbst 2025)
 #: note: Allerdings ist eine Umfahrung über den äußeren Uferweg möglich
-#: last_checked: 2025-03-20
+#: last_checked: 2025-04-17 (daf)
 #: check_frequency: 60d
-#: next_check: 2025-06-30
+#: next_check: 2025-09-30
 	2::inwork 5051,15508 5015,15564 5040,15606 5073,15611 5134,15565 5240,15444
 ',
          'from' => undef,
@@ -8096,7 +8104,7 @@ Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 #: osm_watch: way id="1374232475" version="1"
 #: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (H)
-#: last_checked: 2025-04-02
+#: last_checked: 2025-04-15 (mapillary)
 #: check_frequency: 90d
 Merler Weg	q4::inwork 18852,13269 19180,13219
 ',
@@ -8287,6 +8295,27 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'text' => 'Passenheimer Str.: Einbahnstraßenregelung, Richtung Norden offen, voraussichtlich bis Ende April 2025',
          'type' => 'handicap',
          'until' => 1746050399
+       },
+       {
+         'data' => '#: source_id: 256400412 (bis 23.05.2025)
+	2::inwork 65914,15828 65818,15731 65671,15534
+',
+         'from' => 1747803600,
+         'id' => 4307,
+         'text' => 'Bahnübergang Trebnitz: Sperrung, evtl. sind auch Radfahrer betroffen, 22.05.2025 07:00 Uhr bis 23.05.2025 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1748016000
+       },
+       {
+         'data' => '#: source_id: 256400409 (bis 26.05.2025)
+	2::inwork 62196,15316 62281,15513 62337,15670
+',
+         'dont_check_date' => 1,
+         'from' => 1747544400,
+         'id' => 4308,
+         'text' => 'Obersdorf, Bahnübergang: Sperrung, evtl. sind auch Radfahrer betroffen, am 19.05.2025 von 07:00 Uhr bis 14:00 Uhr und vom 24.05.2025 bis 26.05.2025 von 07:00 Uhr bis 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1748275200
        }
      
 );

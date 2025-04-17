@@ -213,7 +213,7 @@ Syringenplatz	F:P 13918,14425 14030,14438 14042,14249 14019,14265 13918,14425
 Volkspark Prenzlauer Berg	F:P 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14217,14206 14284,14469 14025,14519 14048,14703 14141,14838 14106,14857 14127,14900 14502,14678 14580,14636 14682,14572
 #: alias: Anton-Saefkow-Park
 Volkspark Anton Saefkow	F:P 13294,14515 13240,14460 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12780,14675 12700,14726 12575,14812 12528,14845 12547,14873 12613,14969 12664,14935 12608,14841 12864,14673 13126,14640 13256,14584 13294,14515
-Ernst-Thälmann-Park	F:P 12324,15061 12382,15025 12400,14965 12547,14873 12528,14845 12422,14692 12317,14535 11998,14709 12025,14775 12175,14690 12253,14680 12278,14768 12230,14794 12308,14950 12359,14884 12405,14922 12374,15011 12295,14995 12275,15056 12210,15097 12228,15137 12322,15088 12324,15061
+Ernst-Thälmann-Park	F:P 12324,15061 12382,15025 12400,14965 12547,14873 12528,14845 12422,14692 12317,14535 11998,14709 12031,14772 12175,14690 12253,14680 12278,14768 12230,14794 12308,14950 12359,14884 12405,14922 12374,15011 12295,14995 12275,15056 12210,15097 12228,15137 12322,15088 12324,15061
 Ernst-Thälmann-Park	F:P 12244,15190 12139,15242 12074,15161 11856,15299 11897,15438 12032,15351 12196,15279 12266,15248 12244,15190
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6728 (Antrag: Benennung zu "Ashkelon Platz" (ohne Bindestrich?))
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6908 (Vorlage zur Kenntnisnahme: Benennungsabsicht)
@@ -223,9 +223,9 @@ Ernst-Thälmann-Park	F:P 12244,15190 12139,15242 12074,15161 11856,15299 11897,1
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1526855.php ("feierliche Einweihung ... in den nächsten Wochen")
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7055 (Anfrage)
 #: XXX wird zu Ashkelon-Platz benannt --- wird es hier Schilder geben? Vielleicht nach der feierlichen Einweihung?
-#: last_checked: 2025-02-19
-#: check_frequency: 60d
-Park an der Diesterwegstraße	F:P 12025,14775 11896,14840 11864,14781 11998,14709 12025,14775
+#: last_checked: 2025-04-17 (indoor research)
+#: check_frequency: 30d (indoor research)
+Park an der Diesterwegstraße	F:P 12031,14772 11896,14840 11864,14781 11998,14709 12031,14772
 Mauerpark	F:P 9935,15620 10075,15637 9997,15884 9996,15901 10051,15916 10064,15920 10081,15853 10105,15752 10123,15681 10130,15653 10186,15481 10188,15474 10228,15488 10234,15490 10403,15007 10271,14950
 #: note: ehem. Güterbhf. Eberswalder Str.
 Mauerpark	F:P 10208,14922 10271,14950 9935,15620 9976,15546 10031,15395 10053,15214
@@ -1619,9 +1619,13 @@ Döberitzer Grünzug	F:P 7443,14107 7406,14181 7424,14191 7504,14070 7618,13902 
 Walslebener Platz	F:P 20272,10448 20262,10317 20261,10307 20352,10304 20357,10445 20272,10448
 Friedhof Lichtefelde	F:Cemetery 4119,4179 4251,4276 4337,4150 4201,4066 4119,4179
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7914 (Umbenennung in Erna-Proskauer-Park geplant)
+#: by: https://www.berliner-zeitung.de/news/tempelhof-schoeneberg-park-am-innsbrucker-platz-wird-nach-erna-proskauer-benannt-li.2316464
 #: last_checked: 2025-03-19 (BVV-Drucksache)
 #: check_frequency: 90d
 Grünanlage Innsbrucker Platz	F:P 6293,7875 6306,7864 6431,7883 6487,7916 6465,7940 6362,7934 6333,7927 6293,7875
+#: note: Parkanlage in der Parkstadt Karlshorst
+#: note: westlicher Abschnitt im April 2025 eröffnet 
+	F:P 17667,8766 17643,8769 17483,8768 17454,8747 17468,8722 17655,8719 17667,8766
 #############################################################################
 # Plätze (experimentell)
 # XXX_prog: es sollte unterschieden werden zwischen Flächen, die einfach

@@ -127,7 +127,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-11
+#: last_checked: 2025-04-17
 #: check_frequency: 14d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -376,7 +376,7 @@ Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer fr
 # REMOVED (nicht mehr) --- #: next_check_id: SWINEMUENDER-2023 --- #: add_fragezeichen: Gibt es Ramlerstr./Swinemünder Str. weiterhin Bauarbeiten? --- #: also_indoor: traffic (G[zu viel]) --- #: last_checked: 2024-02-13 --- Ramlerstr.: Fahrbahn an der Swinemünder Str. wegen Bauarbeiten gesperrt	q2::inwork 9646,15737 9666,15739 9844,15755
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
-#: osm_watch: way id="998905878" version="2"
+#: osm_watch: way id="998905878" version="3"
 #: last_checked: 2024-12-11
 #: check_frequency: 150d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
@@ -969,16 +969,17 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
 #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?)
-#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
+#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025) (bis 22.04.2025 + weitere Arbeiten)
 #: osm_watch: way id="640465875" version="15"
 #: last_checked: 2025-04-04 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-04-22 (VIZ-Verkehrsmeldung)
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025)
+#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025) (bis 22.04.2025 + weitere Arbeiten)
 #: source_id: bvg2024:m43#HIM_FREETEXT_224595 (30.05.2024 bis 31.08.2024) (mittlerweile bis 31.10.2024) (M43 rausgenommen) (M32 wieder reingenommen, kein Endedatum)
+#: source_id: bvg2024:m43#HIM_FREETEXT_277871 (2025-04-22 - ...)
 #: by: https://www.kms-sonne.de/baustellennews?date=20240416 (voraussichtlich ab Ende April 2024 bis April 2025) (mittlerweile Beginn auf Ende Mai 2024 verschoben)
 #: by: https://www.kms-sonne.de/assets/2024/04/Baustellenuebersicht-A4-04-2024-v3-Web.pdf
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/vollsperrung-auf-der-erkstrasse_a415525
@@ -991,7 +992,7 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: also_indoor: traffic (none)
 #: last_checked: 2025-04-13 (mapillary) vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-04-22 (VIZ-Verkehrsmeldung) vvv
 #: valid: -20250430 vvv
 Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwork 12765,8435 12598,8390
 # REMOVED ((noch?) nicht, evtl. bei Öffnung der Sonnenallee?) --- Anzengruberstr.: Einbahnstraßenregelung	q4::inwork; 12856,8344 12689,8289
@@ -1064,7 +1065,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-04-07
+#: last_checked: 2025-04-17
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -3498,6 +3499,7 @@ Preußensiedlung: einige Fußgänger	q1 20971,1046 20957,1043 20850,963
 (Bruno-Taut-Str. - Am Gartenstadtweg): Fußgänger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21723,605 21688,589 21673,590
 #: XXX_prog: BS südliches Ende, kann aber einige Meter weiter südlich umfahren werden, ansonsten: einige Fußgänger, q1
 Erieseering: Bordstein	q3 18141,10173 18132,10183
+#: note: Grünanlagen-Schild ohne Zusatzschild am südlichen Ende
 (Erieseering - am Tränkegraben): einige Fußgänger	q1 18132,10183 18114,10215 18085,10244 18076,10324 18042,10392 18039,10398 18026,10490 18034,10567
 #: note: am nördlichen Eingang existiert ein Schild "Radfahrer absteigen", aber am südlichen Ende fehlt so ein Schild
 (Zachertstr. - am Tränkegraben): Fußgänger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17900,10730 17892,10713 17870,10619
@@ -5282,6 +5284,8 @@ Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,1
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger	q1 17702,8855 17699,8843 17674,8738
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17668,8696
+(Weg in der Parkstadt Karlshorst): einige Fußgänger, Spielplatz in der Nachbarschaft	q2 17449,8720 17460,8735 17631,8743 17674,8738
+(Weg in der Parkstadt Karlshorst): einige Fußgänger	q1 17674,8738 17810,8700
 # 
 (Uferweg): einige Fußgänger	q2 11821,11733 11863,11670 11962,11596
 # 
