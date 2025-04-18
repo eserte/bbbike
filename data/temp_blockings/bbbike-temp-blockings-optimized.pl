@@ -4633,7 +4633,7 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
        {
          'data' => '#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt), 2023-12-26 (Mo, Weihnachten) 12:13 (100cm breiter Spalt, Torflügel ist fest verankert), 2024-04-23 (Di) 17:35 (Spalt, Mofa passt durch), 2024-08-18 (So) 13:20 (weiterhin 100cm breiter Spalt)
 #: osm_watch: node id="575826622" version="4" vvv
-#: last_checked: 2024-12-25 vvv
+#: last_checked: 2025-04-18 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -5510,10 +5510,10 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch[closed]: note 3631207 6
 #: osm_watch[closed]: note 3631209 6
-#: osm_watch: note 4556342 3
+#: osm_watch: note 4556342 4
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: priority: #A
-#: last_checked: 2025-01-08 vvv
+#: last_checked: 2025-04-17 (osm note) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-10-31 vvv
 #: osm_watch: way id="46907541" version="16"
@@ -6124,9 +6124,9 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
 #: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025)
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
-#: osm_watch: way id="23121446" version="34"
+#: osm_watch: way id="23121446" version="35"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-04-14 (mapillary) vvv
+#: last_checked: 2025-04-18 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -6684,7 +6684,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-04-06
+#: last_checked: 2025-04-18
 #: next_check: 2025-04-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -6940,8 +6940,8 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        undef,
        undef,
        {
-         'data' => '#: osm_watch: way id="27457006" version="24"
-#: last_checked: 2025-04-10 (mapillary)
+         'data' => '#: osm_watch: way id="27457006" version="25"
+#: last_checked: 2025-04-18 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -7539,11 +7539,11 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
 #: by: https://entwicklungsstadt.de/baustart-in-tempelhof-neues-klinikgebaeude-fuer-das-st-joseph-krankenhaus/ (bis Ende 2028, Verzögerungen möglich)
-#: note: Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
+#: note: Gesperrter Bereich ca. 80m. Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-04-16 (traffic)
+#: last_checked: 2025-04-18
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -7571,22 +7571,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => 1753999200
        },
-       {
-         'data' => '#: also_indoor: traffic (ex-H,T,B)
-#: note: Halteverbotsschilder bis 28.02.2025
-#: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2025-03-26
-# REMOVED --- #: check_frequency: 10d (traffic)
-#: check_frequency: 30d (outdoor checks)
-# REMOVED --- #: next_check: 2025-02-28 (Halteverbotsschilder)
-	q4::inwork 8842,8561 8916,8511
-',
-         'from' => undef,
-         'id' => 4237,
-         'text' => 'Bayernring: Bauarbeiten zwischen Manfred-von-Richthofen-Str. und Mussehlstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025) (bis 28.04.2025)
 #: last_checked: 2025-03-26 (mapillary)
@@ -7971,11 +7956,13 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
          'data' => '#: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025) (bis 28.04.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1898954467401175437
 #: by: https://pbs.twimg.com/media/Glc6s8uWAAAe6co?format=jpg&name=medium (kürzerer Baustellenbereich, nur bis etwas hinter Kavalierstr.?)
-	q4::inwork; 10680,18380 10710,18393 10784,18426 10934,18500 10958,18512 11001,18528
+#: by: https://www.bahninfo-forum.de/read.php?9,825696,826383#msg-826383 (gemeinsamer Rad- und Gehweg)
+#: note: q4 -> q3, da gemeinsamer Rad- und Gehweg, aber vermutlich gibt es hier noch Umwege/Engstellen
+	q3::inwork; 10680,18380 10710,18393 10784,18426 10934,18500 10958,18512 11001,18528
 ',
          'from' => 1741496400,
          'id' => 4277,
-         'text' => 'Breite Str.: Gleisbauarbeiten zwischen Berliner Str. und Stiftsweg/Hadlichstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 10.03.2025 06:00 bis 28.04.2025 17:00',
+         'text' => 'Breite Str.: Gleisbauarbeiten zwischen Berliner Str. und Stiftsweg/Hadlichstr., Sperrung der Fahrbahn, Radverkehr wird über den Bürgersteig geführt, vom 10.03.2025 06:00 bis 28.04.2025 17:00',
          'type' => 'handicap',
          'until' => 1745852400
        },

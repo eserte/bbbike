@@ -91,7 +91,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-04-08
+#: last_checked: 2025-04-18
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -1862,6 +1862,9 @@ Thorwaldsenstr. - Knausstr.	3 6168,6467 6071,6559 6083,6451
 #: note: für Fußgänger/Radfahrer Übergang mit Bordstein
 Manteuffelstr./zum Bosepark: Mittelstreifen	3nocross 8683,6326 8699,6468 8707,6537
 # 
+#: note: für Fußgänger/Radfahrer existiert ein Übergang
+Manteuffelstr./Friedrich-Karl-Str.: Mittelstreifen	3nocross 8600,5580 8601,5595 8613,5745
+# 
 #: note: im südlichen Strang auch ein explizites Fahrrad-verboten-Schild, aber ich 
 Im Marienpark: für Fahrzeuge verboten	2 8167,3641 8178,3591 8070,3563
 # 
@@ -2180,8 +2183,6 @@ Zentrum Schöneweide: nur bestimmter Lieferverkehr erlaubt	1 17612,5746 17656,570
 #: historical_note: wurde Anfang Dez 2024 eingerichtet
 Hirschberger Str.: Einfahrt verboten	1 14988,11130 15021,11152
 # 
-# REMOVED (mittlerweile als NN getaggt) --- Niederbarnimstr.: für Kfz verboten	2 14073,11995 14055,11964
-# 
 #: note: Radwegfurt existiert seit Herbst/Winter 2024
 Sonnenallee	3nocross 14617,7243 14693,7168 14752,7108 14803,7056
 #: note: Radwegfurt existiert
@@ -2204,4 +2205,15 @@ Fichtestr.	1 -14765,-2081 -14782,-1963
 Poller	3 * 21902,7684 *
 # 
 Bendastr., Britzkestr., Rungiusstr.	1 12782,6462 12794,6407 12921,6424 12965,6430 12979,6374 12981,6366
+# 
+#: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025)
+#: note: Radfahrer können die Fußgängerfurt nutzen
+Manteuffelstr./Burchardstr.: Mittelstreifendurchbruch geschlossen	3nocross 8739,6701 8722,6656 8707,6537
+# 
+######################################################################
+#: note: Ostkreuz-Kiez (ab Frühjahr 2025) vvv
+Weserstr.	1 14550,11732 14622,11685 14651,11666
+# REMOVED (mittlerweile als NN getaggt) --- Niederbarnimstr.: für Kfz verboten	2 14073,11995 14055,11964
+#: note ^^^
+######################################################################
 # 

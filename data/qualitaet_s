@@ -75,8 +75,8 @@ Jüterboger Str.: mäßiges Kopfsteinpflaster	Q2 10266,8946 9951,8965 9804,8963
 Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9170,9206 9150,9152 9125,9078 9115,9046
 Methfesselstr.: mäßiges Kopfsteinpflaster	Q2 9115,9046 9105,9018 9063,8935 8982,8781
 Wilhelmshöhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
-Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,6436 7227,6080
-Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2 7227,6080 7227,6058 7223,5890
+Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,6436 7227,6102
+Priesterweg: abgefrästes Kopfsteinpflaster	Q2 7227,6102 7227,6080 7227,6058 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0 7370,6451 7222,6458
 Hans-Baluschek-Park: Beton	Q0 7252,6080 7278,6101 7305,6183
@@ -1160,7 +1160,7 @@ Am Volkspark: Kopfsteinpflaster	Q2 5617,8258 5652,8234
 Am Volkspark: neu gemachter Parkweg	Q1 5730,8207 5918,8221
 Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11240,12368 11202,12426 11138,12604 11057,12715
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
-Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7227,6080 7252,6080 7252,6058 7227,6058
+Bahnhofvorplatz S-Bhf. Priesterweg: abgefrästes Kopfsteinpflaster	Q2 7227,6080 7252,6080 7252,6058 7227,6058
 Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 18007,8377 18037,8420 18072,8470 18151,8589 18272,8764
 Hegemeisterweg: Asphalt	Q0 17202,8391 17522,8220
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
@@ -1588,7 +1588,7 @@ Hobrechtstr.: mäßiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 11917,9663 11897,9754
 Hobrechtstr.: Asphalt	Q0 11880,9874 11897,9754
 Sanderstr.: Asphalt	Q0 11710,9628 11917,9663
-Sanderstr.: Asphalt mit einigen Schäden	Q0 11917,9663 12074,9689
+Sanderstr.: Asphalt	Q0 11917,9663 12074,9689
 Biebricher Str.: mäßiges Kopfsteinpflaster	Q2 11884,8492 12057,8529
 Mainzer Str.: schlechtes bis mäßiges Kopfsteinpflaster (auch bergab nur 15 km/h)	Q3 12063,8826 12057,8529 12083,8411 12104,8299
 Mainzer Str.: mäßiges Kopfsteinpflaster	Q2 12104,8299 12116,8247
@@ -7352,7 +7352,7 @@ Hasenheide: Parkweg	Q1 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11
 (Hasenheide, Weg am westlichen Rand): Asphalt	Q0 11182,8983 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Parkweg	Q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
 (Hasenheide, zwischen Jahnstr. und Columbiadamm): Verbundsteinpflaster	Q0 11449,9125 11439,9049 11406,8941
-(Hasenheide, zwischen Jahnstr. und Columbiadamm): wassergebundene Decke	Q1 11406,8941 11357,8738 11333,8582 11279,8489
+(Hasenheide, zwischen Jahnstr. und Columbiadamm): wassergebundene Decke, Unebenheiten	Q1 11406,8941 11357,8738 11333,8582 11279,8489
 (Hasenheide, zwischen Jahnstr. und Columbiadamm): Verbundsteinpflaster	Q0 11550,9104 11515,9066 11495,8985
 (Hasenheide, zwischen Jahnstr. und Columbiadamm): Kopfsteinpflaster	Q2 11495,8985 11484,8928
 (Hasenheide, zwischen Jahnstr. und Columbiadamm): wassergebundene Decke	Q1 11484,8928 11431,8678 11333,8582
@@ -11229,7 +11229,7 @@ Hönower Str.: Asphalt	Q0 24554,12100 24556,12056 24563,11980
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1 24563,11980 24575,11932
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9093,8665 9158,8706 9229,8718
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9229,8718 9158,8706 9093,8665
-Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q0; 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676
+Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676
 Schillingstr.: Asphalt	Q0 11635,12745 11596,12668 11562,12597
 Schillingstr.: Asphalt mit Querrissen	Q0 11562,12597 11497,12463
 (Verbindungschaussee - Dahlemer Feld, nördlicher Weg): Waldweg, Wurzeln	Q2 -1040,7550 -1248,7704
@@ -11781,6 +11781,7 @@ Kaaden-Ring: unbefestigte Baustraße	Q2 25149,10695 25329,10697 25415,10696 25415
 (Siedlung 10): schlechtes Kopfsteinpflaster	Q3 15174,5467 15100,5469 15083,5479
 (Straße 10): unbefestigte, etwas sandige Straße	Q2 15083,5479 15039,5506 15012,5506
 (Hanns-Braun-Str. - Friedrich-Friesen-Allee): Asphalt	Q0 -515,12407 -587,12529
+Friedrich-Karl-Str. (Tempelhof): Kopfsteinpflaster	Q2 8601,5595 8691,5587
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12425,7 +12426,7 @@ Bosestr.: unebenes Kleinsteinpflaster	Q2 8292,6331 8388,6322 8552,6319
 Bosestr.: Asphalt mit leichten Schäden	Q0 8553,6339 8683,6326
 Bosestr.: schlechtes Kopfsteinpflaster	Q3 8683,6326 8846,6303 8930,6295 8944,6293
 Borussiastr.: Asphalt	Q0 8653,6781 8750,6779 8846,6781 9046,6784 9245,6791 9511,6797 9706,6802
-Renate-Privatstr.: mäßiger Asphalt mit Schlaglöchern	Q1 8687,5554 8709,5732
+Renate-Privatstr.: mäßiger Asphalt mit Schlaglöchern	Q1 8687,5554 8691,5587 8709,5732
 Spiekermannstr.: Kopfsteinpflaster	Q2 11659,16457 11842,16493 11920,16508 12051,16535
 Kirschweg: Beton	Q0 13886,2653 13924,2604 13938,2586 13965,2544 13964,2447 13977,2398 14031,2373 14109,2369
 Krachtstr.: Asphalt	Q0 14817,10031 14844,10088 14920,10225

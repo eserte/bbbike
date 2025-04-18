@@ -2433,6 +2433,9 @@ Thorwaldsenstr. - Knausstr.	3 6168,6467 6071,6559 6083,6451
 Mittelstreifen	3nocross::ignrte 8683,6326 8699,6468 8707,6537
 Manteuffelstr. -> Manteuffelstr. (Tempelhof) [63-64d]: Mittelstreifen	3::igndisp 8707,6537 8699,6468 8823,6458
 Manteuffelstr. (Tempelhof) [63-64d] -> Manteuffelstr.: Mittelstreifen	3::igndisp 8823,6458 8699,6468 8683,6326
+Mittelstreifen	3nocross::ignrte 8600,5580 8601,5595 8613,5745
+Manteuffelstr. -> Friedrich-Karl-Str.: Mittelstreifen	3::igndisp 8613,5745 8601,5595 8691,5587
+Friedrich-Karl-Str. -> Manteuffelstr.: Mittelstreifen	3::igndisp 8691,5587 8601,5595 8600,5580
 Im Marienpark: für Fahrzeuge verboten	2 8167,3641 8178,3591 8070,3563
 Straßenbahntrasse	3nocross::ignrte 15066,14579 15120,14481 15168,14395
 Weißenseer Weg -> Anlieferung Hohenschönhauser Tor: Straßenbahntrasse	3::igndisp 15066,14579 15120,14481 15225,14545
@@ -2661,3 +2664,11 @@ Fichtestr.	1 -14765,-2081 -14782,-1963
 Poller	3 21816,7754 21902,7684 21978,7614
 Poller	3 21978,7614 21902,7684 21816,7754
 Bendastr., Britzkestr., Rungiusstr.	1 12782,6462 12794,6407 12921,6424 12965,6430 12979,6374 12981,6366
+Mittelstreifendurchbruch geschlossen	3nocross::ignrte 8739,6701 8722,6656 8707,6537
+Alt-Tempelhof -> Burchardstr.: Mittelstreifendurchbruch geschlossen	3::igndisp 8787,6660 8722,6656 8553,6665
+Alt-Tempelhof -> Manteuffelstr.: Mittelstreifendurchbruch geschlossen	3::igndisp 8787,6660 8722,6656 8707,6537
+Burchardstr. -> Alt-Tempelhof: Mittelstreifendurchbruch geschlossen	3::igndisp 8553,6665 8722,6656 8787,6660
+Burchardstr. -> Manteuffelstr.: Mittelstreifendurchbruch geschlossen	3::igndisp 8553,6665 8722,6656 8739,6701
+Manteuffelstr. -> Alt-Tempelhof: Mittelstreifendurchbruch geschlossen	3::igndisp 8739,6701 8722,6656 8787,6660
+Manteuffelstr. -> Burchardstr.: Mittelstreifendurchbruch geschlossen	3::igndisp 8707,6537 8722,6656 8553,6665
+Weserstr.	1 14550,11732 14622,11685 14651,11666
