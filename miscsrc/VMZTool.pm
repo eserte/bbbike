@@ -953,7 +953,14 @@ if ($do_test) {
 	$vmz_2021_file = "$samples_dir/viz-2021.json";
     }
     if ($do_biberurl) {
-	$biberfile  = "$samples_dir/biber.json";
+	my $pattern = "biber-????????.json";
+	my(@biberfiles) = sort { $b cmp $a } glob("$samples_dir/$pattern");
+	if (!@biberfiles) {
+	    warn "ERROR: no test biber file available in $samples_dir matching $pattern. Cannot test biber parsing";
+	    undef $biberfile;
+	} else {
+	    $biberfile  = $biberfiles[0];
+	}
     }
 } elsif ($do_fetch) {
     eval {
