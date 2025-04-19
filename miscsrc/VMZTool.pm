@@ -973,7 +973,14 @@ if ($do_test) {
 	$vmz_2020_file = "$samples_dir/viz-2020.json";
     }
     if ($do_vmz_2021_urls) {
-	$vmz_2021_file = "$samples_dir/viz-2021.json";
+	my $pattern = "viz-2021-????????.json";
+	my @vmz_2021_files = sort { $b cmp $a } glob("$samples_dir/$pattern");
+	if (!@vmz_2021_files) {
+	    warn "ERROR: no test viz-2021 file available in $samples_dir matching $pattern. Cannot test viz-2021 parsing";
+	    undef $vmz_2021_file;
+	} else {
+	    $vmz_2021_file = $vmz_2021_files[0];
+	}
     }
     if ($do_biberurl) {
 	my $pattern = "biber-????????.json";
