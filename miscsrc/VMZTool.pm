@@ -483,6 +483,7 @@ sub parse_biber {
 	if ($element->{details}) {
 	    $text .= "$element->{description}\n$element->{details}\n";
 	    $description_done++;
+	    $streets_done++; # added recently because in recent biber files, streets are always mentioned in details
 	} else {
 	    if ($element->{streets}) {
 		$text .= "@{ $element->{streets} }\n";
@@ -733,7 +734,7 @@ EOF
 	    $do_ignore = 1;
 	} elsif (grep { m{Tunnel Tiergarten Spreebogen} } grep { defined } @{ $rec->{strassen} }) { # Berlin specialities
 	    $do_ignore = 1;
-	} elsif ($rec->{place} eq 'Berlin') {
+	} elsif ($rec->{place} eq 'Berlin') { # XXX This is probably legacy, but can be kept to handle old vmz/viz files
 	    # special ignore detection for Berlin
 	    my @lines = split /\n/, $rec->{text};
 	    # remove all lines after (and including) "Strassen:"
