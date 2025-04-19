@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -876,11 +876,13 @@ sub action_forever_until_error {
     local @ARGV = @argv;
     my $allowed_errors = 1;
     my $forever_interval = 30;
+    my $verbose;
     GetOptions(
 	       "allowed-errors=i" => \$allowed_errors,
 	       "forever-interval=i" => \$forever_interval,
+	       "verbose|v!" => \$verbose,
 	      )
-	or die "usage?";
+	or error "usage: $0 forever_until_error [--verbose|-v] [--allowed-errors number] [--forever-interval seconds]";
     my @cmd = @ARGV;
 
     my @srcs = (
@@ -911,18 +913,77 @@ sub action_forever_until_error {
 	unlink ".check_forever.lck";
 	my $t0 = time;
 	print STDERR "wait...";
-	if ($^O eq q{linux}) {
-	    # XXX use system() once statusref is implemented
-	    $d->qx({quiet => 1, statusref => \my %status},
-		   qw(inotifywait -q -e close_write -e delete -e create -e moved_from -e moved_to -t), $forever_interval,
-		   @srcs,
-		  );
-	    exit 2 if ($status{signalnum}||0) == 2;
+	if ($^O eq q{linux} && eval { require Linux::Inotify2; 1 }) { 
+	    _inotifywait(\@srcs, verbose => $verbose);
 	} else {
 	    sleep $forever_interval;
 	}
 	my $t1 = time;
 	print STDERR "finished after " . s2ms($t1-$t0) . " minutes (at " . strftime("%F %T", localtime) . ")\n";
+    }
+}
+
+sub _inotifywait {
+    my($srcs_ref, %opts) = @_;
+    my $verbose = delete $opts{verbose};
+    my $timeout = delete $opts{timeout} || 3600;
+    error "Unhandled options: " . join(" ", %opts) if %opts;
+
+    my @files_to_watch = @$srcs_ref;
+
+    my $inotify = Linux::Inotify2->new or die "Cannot create inotify: $!";
+
+    # setup watches, first file, then directory
+    my %dir_basenames;
+    my %watched_files;
+    for my $file (@files_to_watch) {
+	my $abs = realpath($file) or do {
+	    warning "Can't resolve $file: $! (skipping)";
+	    next;
+	};
+	my ($dir, $base) = (dirname($abs), basename($abs));
+    
+	$dir_basenames{$dir} = 1;
+    
+	$inotify->watch($abs, Linux::Inotify2::IN_CLOSE_WRITE())
+	    or error "Can't watch $abs: $!";
+
+	$watched_files{$abs} = 1;
+	info "Now watching: $file" if $verbose;
+    }
+    for my $dir (keys %dir_basenames) {
+	$inotify->watch($dir, Linux::Inotify2::IN_MOVED_TO()|Linux::Inotify2::IN_CLOSE_WRITE())
+	    or error "Can't watch $dir: $!";
+	info "Now watching: $dir" if $verbose;
+    }
+
+ EVENT_LOOP: while (1) {
+	my @events;
+	unless (eval { @events = $inotify->read($timeout); 1 }) {
+	    next if $!{EINTR};  # Skip signal interruptions
+	    error "Event read failed: $!";
+	}
+
+	if ($timeout && !@events) {
+	    info "Timeout after $timeout seconds" if $verbose;
+	    last EVENT_LOOP;
+	}
+    
+	for my $e (@events) {
+	    my $file = $e->fullname;
+
+	    if (!$watched_files{$file}) {
+		info "DEBUG: ignore event for non-watched file $file";
+	    } else {
+		if ($e->IN_MOVED_TO) {
+		    info "File moved to: $file" if $verbose;
+		    last EVENT_LOOP;
+		} elsif ($e->IN_CLOSE_WRITE) {
+		    info "Write complete: $file" if $verbose;
+		    last EVENT_LOOP;
+		}
+	    }
+        }
     }
 }
 

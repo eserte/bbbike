@@ -1285,7 +1285,7 @@ CRON_WRAPPER=
 # line for more things to do...
 # Allow one error, and fail if the 2nd one is encountered
 check-forever:
-	-nice ${PERL} doit.pl forever_until_error --allowed-errors=1 --forever-interval=${FOREVER_INTERVAL} \
+	-nice ${PERL} doit.pl forever_until_error --verbose --allowed-errors=1 --forever-interval=${FOREVER_INTERVAL} \
 		${CRON_WRAPPER} ${MAKE} check all fragezeichen-outdoor-nextcheck fragezeichen-outdoor ${ADDITIONAL_CHECK_FOREVER_TARGETS}
 	@-alarm -nicedown
 	@-xterm-conf -deiconify -raise
