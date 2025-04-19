@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,8 @@ package VMZTool;
 
 use v5.10.0; # named captures, defined-or
 use strict;
-our $VERSION = '0.14';
+use warnings;
+our $VERSION = '0.15';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -726,11 +727,11 @@ EOF
 	# Check if record should be ignored
 	my $do_ignore = 0;
 	# XXX Leider können auch Einträge wie "Brücke ... über A10 voll gesperrt" fälschlicherweise ignoriert werden
-	if (grep { m{^A(\s|\d)} } @{ $rec->{strassen} }) {
+	if (grep { m{^A(\s|\d)} } grep { defined } @{ $rec->{strassen} }) {
 	    $do_ignore = 1;
 	} elsif (grep { m{^A\s*\d} } @{ $rec->{streets} || [] }) {
 	    $do_ignore = 1;
-	} elsif (grep { m{Tunnel Tiergarten Spreebogen} } @{ $rec->{strassen} }) { # Berlin specialities
+	} elsif (grep { m{Tunnel Tiergarten Spreebogen} } grep { defined } @{ $rec->{strassen} }) { # Berlin specialities
 	    $do_ignore = 1;
 	} elsif ($rec->{place} eq 'Berlin') {
 	    # special ignore detection for Berlin
@@ -812,11 +813,22 @@ EOF
 	}
 	$s .= join(", ", @attribs) . "¦" .
 	    ($rec->{place} ne 'Berlin' ? $rec->{place} . ": " : '') .
-		$text . "¦" . $id . "¦" . $rec->{map_url} . "¦" . ($self->{existsid_current}->{$id} ? 'INUSE' : $self->{existsid_old}->{$id} ? 'WAS_INUSE' : '') .
+		$text . "¦" . $id . "¦" . ($rec->{map_url} || '') . "¦" . ($self->{existsid_current}->{$id} ? 'INUSE' : $self->{existsid_old}->{$id} ? 'WAS_INUSE' : '') .
 		    "\tX @coords\n";
     };
     my %seen_id;
-    for my $place (sort { $place2rec->{$a}->[0]->{lon} <=> $place2rec->{$b}->[0]->{lon} } keys %$place2rec) {
+    for my $place (sort {
+	my $a_rec = $place2rec->{$a}->[0];
+	my $b_rec = $place2rec->{$b}->[0];
+	my $a_point = $a_rec->{points}->[0];
+	my $b_point = $b_rec->{points}->[0];
+	$a_point->{lon} <=> $b_point->{lon}
+	    || 
+	$a_point->{lat} <=> $b_point->{lat}
+	    ||
+	$a_rec->{place} cmp $b_rec->{place}
+	;
+    } keys %$place2rec) {
 	my $recs = $place2rec->{$place};
 	for my $rec (@$recs) {
 	    $seen_id{$rec->{id}}++;
