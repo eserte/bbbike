@@ -410,19 +410,30 @@ sub parse_biber {
     tie my %id2rec, 'Tie::IxHash';
     tie my %place2rec, 'Tie::IxHash';
 
-    my $get_all_validities = sub {
-	my($validities) = @_;
+    my $get_validity_info = sub {
+	my($element) = @_;
+	my($minTimeFrom, $maxTimeTo);
 	my %seen;
 	my @texts;
-	for my $validity (@$validities) {
+	for my $validity (
+	    # XXX following could be used to sort by date: sort { $a->{timeFrom} cmp $b->{timeFrom} }
+	    @{ $element->{validities} || [] },
+	    @{ $element->{validity} || [] },
+	) {
 	    my($timeFromGerman, $timeToGerman);
 	    my $timeFrom = $validity->{timeFrom};
 	    if ($timeFrom) {
 		$timeFromGerman = _iso2german_date($timeFrom);
+		if (!$minTimeFrom || $timeFrom lt $minTimeFrom) {
+		    $minTimeFrom = $timeFrom;
+		}
 	    }
 	    my $timeTo = $validity->{timeTo};
 	    if ($timeTo) {
 		$timeToGerman = _iso2german_date($timeTo);
+		if (!$maxTimeTo || $timeTo gt $maxTimeTo) {
+		    $maxTimeTo = $timeTo;
+		}
 	    }
 	    my $text;
 	    if ($timeFromGerman && !$timeToGerman) {
@@ -435,7 +446,11 @@ sub parse_biber {
 		push @texts, $text;
 	    }
 	}
-	join(", ", @texts) . "\n";
+	return {
+	    text        => join(", ", @texts),
+	    minTimeFrom => $minTimeFrom,
+	    maxTimeTo   => $maxTimeTo,
+	};
     };
 
     my $data = eval {
@@ -494,7 +509,12 @@ sub parse_biber {
 		$text .= "$element->{section}\n\n";
 	    }
 	}
-	$text .= $get_all_validities->($element->{validities});
+	my($minTimeFrom, $maxTimeTo);
+	{
+	    my $ret = $get_validity_info->($element);
+	    ($minTimeFrom, $maxTimeTo) = @{$ret}{qw(minTimeFrom maxTimeTo)};
+	    $text .= $ret->{text} . "\n";
+	}
 	if (!$description_done && $element->{description}) {
 	    $text .= $element->{description};
 	}
@@ -510,6 +530,8 @@ sub parse_biber {
 	     points  => $points,
 	     streets => $streets,
 	     text    => $text,
+	     minTimeFrom => $minTimeFrom,
+	     maxTimeTo   => $maxTimeTo,
 	    };
 	$id2rec{$id} = $rec;
 	push @{ $place2rec{$place} }, $rec;
