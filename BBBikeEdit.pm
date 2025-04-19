@@ -3901,16 +3901,8 @@ sub temp_blockings_editor {
     $fmt_b->configure
 	(-command => sub {
 	     my $btxt = $real_txt->get("1.0", "end");
-	     $btxt =~ s/^(?:NEW|CHANGED|UNCHANGED|REMOVED)(,\s+\((coords|text)\))?\s*//;
-	     $btxt =~ s/[;,]\s+(?:eine\s+)?umleitung\s+ist\s+(?:ausgeschildert|eingerichtet)//i;
-	     $btxt =~ s/[;,]\s+umleitung\s+(ausgeschildert|ausgewiesen)//i;
-	     $btxt =~ s/[;,]\s+umleitung//i;
-	     $btxt =~ s/[;,]\s+hohe\s+staugefahr//i;
-	     $btxt =~ s/(?<!^)(s)tra(ss|ß)e(?!\s+\d)/$1tr./gi; # straße -> str., except at beginning (Straße des 17. Juni) or for Nummernstraßen (Straße 42)
-	     $btxt =~ s/\s*\(\d{1,2}:\d{2}\)\s*$//; # seen in vmz records
-	     $btxt =~ s/\s*\z//;
 	     $real_txt->delete("1.0","end");
-	     $real_txt->insert("end", $btxt);
+	     $real_txt->insert("end", temp_blockings_editor_fmt_text($btxt));
 	 });
 
     $get_formatted = sub {
@@ -4111,6 +4103,22 @@ EOF
 		 $t->destroy;
 	     })->pack(-side => 'left', -fill => 'x', -expand => 1);
     }
+}
+
+sub temp_blockings_editor_fmt_text {
+    my $btxt = shift;
+    $btxt =~ s/^(?:NEW|CHANGED|UNCHANGED|REMOVED)(,\s+\((coords|text)\))?\s*//;
+    $btxt =~ s/[;,]\s+(?:eine\s+)?umleitung\s+ist\s+(?:ausgeschildert|eingerichtet)//i;
+    $btxt =~ s/[;,]\s+umleitung\s+(ausgeschildert|ausgewiesen)//i;
+    $btxt =~ s/[;,]\s+umleitung//i;
+    $btxt =~ s/[;,]\s+hohe\s+staugefahr//i;
+    $btxt =~ s/Im angegebenen Zeitraum kommt es zu Einschränkungen des Verkehrsraumes mit wechselseitiger Verkehrsführung in beiden Fahrtrichtungen\.\s+Der Verkehr wird mithilfe einer Ampel geregelt\.\s*/Gegenverkehrsregelung mit Ampel. /i;
+    $btxt =~ s/Im angegebenen Zeitraum kommt es zu Einschränkungen des Verkehrsraumes mit wechselseitiger Verkehrsführung in beiden Fahrtrichtungen\.\s*/Gegenverkehrsregelung. /i;
+    $btxt =~ s/Bitte beachten Sie die örtliche Beschilderung und Verkehrsführung\.\s*//i;
+    $btxt =~ s/(?<!^)(s)tra(ss|ß)e(?!\s+(?:des\s+)?\d|\S)/$1tr./gi; # straße -> str., except at beginning (Straße des 17. Juni) or for Nummernstraßen (Straße 42)
+    $btxt =~ s/\s*\(\d{1,2}:\d{2}\)\s*$//; # seen in vmz records
+    $btxt =~ s/\s*\z//;
+    $btxt;
 }
 
 sub temp_blockings_editor_preserve_data {
