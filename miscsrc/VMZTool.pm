@@ -50,6 +50,9 @@ use constant ISO8601_NOW => do {
     $s =~ s{(\d\d)(\d\d)$}{$1:$2};
     $s;
 };
+
+my $today = strftime "%F", localtime EPOCH_NOW; # may be overwritten using -test-today
+
 # Brandenburg
 use constant BIBER_URL => "https://biberweb.vmz.services/v3/incidents/biber?bbox=10.66,51.2,15.68,53.74&detail=HIGH&lang=de&timeFrom=" . uri_escape(ISO8601_NOW) . "&_=" . (EPOCH_NOW*1000);
 # Berlin
@@ -755,7 +758,6 @@ sub parse_vmz_2021 {
 sub as_bbd {
     my($self, $place2rec, $old_store) = @_;
     my $old_id2rec = $old_store ? $old_store->{id2rec} : undef;
-    my $today = strftime "%F", localtime EPOCH_NOW;
     my $s = <<'EOF';
 #: #: -*- coding: utf-8 -*-
 #: encoding: utf-8
@@ -942,6 +944,7 @@ GetOptions("oldstore=s" => \$old_store_file,
 	   "existsid-all=s" => \$existsid_all_file,
 	   "fetch!" => \$do_fetch,
 	   "test!" => \$do_test,
+	   "test-today=s" => \$today,
 	   "aspurls!" => \$do_aspurls,
 	   "vmz-2015-urls!" => \$do_vmz_2015_urls,
 	   "vmz-2020-urls!" => \$do_vmz_2020_urls,
