@@ -755,6 +755,7 @@ sub parse_vmz_2021 {
 sub as_bbd {
     my($self, $place2rec, $old_store) = @_;
     my $old_id2rec = $old_store ? $old_store->{id2rec} : undef;
+    my $today = strftime "%F", localtime EPOCH_NOW;
     my $s = <<'EOF';
 #: #: -*- coding: utf-8 -*-
 #: encoding: utf-8
@@ -839,6 +840,11 @@ EOF
 	    push @attribs, 'UNCHANGED';
 	} else {
 	    push @attribs, 'CHANGED';
+	}
+	if (!$is_removed) {
+	    if (defined $rec->{maxTimeTo} && $rec->{maxTimeTo} lt $today) { # ignore time part, ignore timezones
+		push @attribs, 'EXPIRED';
+	    }
 	}
 	my $text = $rec->{formatted_text} || $rec->{detailed_text} || $rec->{text};
 	$text =~ s{\n}{ }g;
