@@ -915,7 +915,7 @@ sub action_forever_until_error {
 	unlink ".check_forever.lck";
 	my $t0 = time;
 	print STDERR "wait...";
-	if ($^O eq q{linux} && eval { require Linux::Inotify2; 1 }) { 
+	if ($^O eq q{linux} && eval { require Linux::Inotify2; require IO::Select; 1 }) { 
 	    _inotifywait(\@srcs, verbose => $verbose, debug => $debug);
 	} else {
 	    sleep $forever_interval;
@@ -960,18 +960,22 @@ sub _inotifywait {
 	info "Now watching: $dir" if $verbose;
     }
 
+    my $sel = IO::Select->new;
+    $sel->add($inotify->fileno);
+
  EVENT_LOOP: while (1) {
+	my @ready = $sel->can_read($timeout);
+	if (!@ready) {
+	    info "Timeout after $timeout seconds" if $verbose;
+	    last EVENT_LOOP;
+	}
+ 
 	my @events;
-	unless (eval { @events = $inotify->read($timeout); 1 }) {
+	unless (eval { @events = $inotify->read; 1 }) {
 	    next if $!{EINTR};  # Skip signal interruptions
 	    error "Event read failed: $!";
 	}
 
-	if ($timeout && !@events) {
-	    info "Timeout after $timeout seconds" if $verbose;
-	    last EVENT_LOOP;
-	}
-    
 	for my $e (@events) {
 	    my $file = $e->fullname;
 
