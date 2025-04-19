@@ -682,7 +682,7 @@ sub parse_vmz_2021 {
 	}
 	$seen_id{$id} = 1;
 
-	my $validity = do {
+	my $validity_text = do {
 	    my $timeFrom = $properties->{validity}->{from};
 	    my $timeTo   = $properties->{validity}->{to};
 	    join(" ",
@@ -690,12 +690,27 @@ sub parse_vmz_2021 {
 		 (defined $timeTo   ? "bis " . $timeTo   : ()),
 		);
 	};
-	if (!$validity) {
+	if (!$validity_text) {
 	    warn "Cannot parse validity for id $id: $@";
 	}
 
+	my($minTimeFrom, $maxTimeTo);
+	for my $def (
+	    ['from', \$minTimeFrom],
+	    ['to',   \$maxTimeTo],
+	) {
+	    my($field, $ref) = @$def;
+	    if (defined $properties->{validity}->{$field}) {
+		if (my($d,$m,$y,$H,$M) = $properties->{validity}->{$field} =~ /^(\d{2})\.(\d{2})\.(\d{4}) (\d{2}):(\d{2})$/) {
+		    $$ref = "$y-$m-$d"."T"."$H:$M:00"; # without timezone -> local time
+		} else {
+		    warn "WARNING: Cannot parse German/European datetime '$properties->{validity}->{$field}', ignoring...\n";
+		}
+	    }
+	}
+
 	my $description = $properties->{content};
-	if ($validity) {
+	if ($validity_text) {
 	    # remove less accurate time from description
 	    $description =~ s{
 				 \s+
@@ -710,7 +725,7 @@ sub parse_vmz_2021 {
 	my $text =
 	    ($properties->{street} || "(!no street!)") . (defined $properties->{section} ? " $properties->{section}" : "") .
 	    (defined $description ? ":\n$description" : "\n") .
-	    (defined $validity ? ",\n$validity" : "") .
+	    (defined $validity_text ? ",\n$validity_text" : "") .
 	    "\n";
 
 	my $out_record =
@@ -721,6 +736,8 @@ sub parse_vmz_2021 {
 	      type     => $type,
 	      text     => $text,
 	      strassen => [ $properties->{street} ],
+	      minTimeFrom => $minTimeFrom,
+	      maxTimeTo   => $maxTimeTo,
 	    };
 
 	push @{ $place2rec{$place} }, $out_record;
