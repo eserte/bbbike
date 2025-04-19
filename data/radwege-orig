@@ -8369,14 +8369,16 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17963,6313
 #: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (bis 28.08.2023) (inaktiv)
 #: source_id: viz2021:13.513289,52.46651,31.08.2023,09:31 (bis 11.04.2024) (inaktiv)
 #: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023) (inaktiv)
-#: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
+#: XXX Bleiben die Radwege so, oder wird es (teilweise?) eine Grünbeschichtung geben? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="37"
-#: last_checked: 2025-03-16 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2025-04-18 (youtube) vvv
+#: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
-provisorische Radspur	RW4; 17919,6968 17945,6788
-provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17945,6788 17962,6674
+#: historical_note: früher (bis 2024/2025): provisorische Radspur
+Radspur	RW4; 17919,6968 17945,6788
+#: historical_note: früher (bis 2024/2025): provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern
+Radspur	RW4; 17945,6788 17962,6674
 # REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17985,6480 17991,6431
 # REMOVED --- provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17985,6480 17991,6431
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
@@ -8384,7 +8386,8 @@ provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 
 # REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17991,6431 17985,6480 17962,6674
 # REMOVED (mittlerweile komplett Radspur und war an einem So frei) --- #: note: erste Meter Gehweg für Radfahrer frei, dann Radspur mit Gelbmarkierung, wird aber durchgängig von parkenden Autos ignoriert
 	RW4; 17991,6431 17985,6480 17962,6674
-provisorische Radspur	RW4; 17962,6674 17945,6788 17919,6968
+#: historical_note: früher (bis 2024/2025): provisorische Radspur
+Radspur	RW4; 17962,6674 17945,6788 17919,6968
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
