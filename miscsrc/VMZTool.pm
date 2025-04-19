@@ -25,6 +25,7 @@ use HTML::Tree;
 use JSON::XS qw(decode_json);
 use LWP::UserAgent ();
 use POSIX qw(strftime);
+use Tie::IxHash ();
 use URI ();
 use URI::Escape qw(uri_escape);
 use URI::QueryParam ();
@@ -406,8 +407,8 @@ sub parse_berlin_summary {
 sub parse_biber {
     my($self, $biber_file) = @_;
 
-    my %id2rec;
-    my %place2rec;
+    tie my %id2rec, 'Tie::IxHash';
+    tie my %place2rec, 'Tie::IxHash';
 
     my $get_all_validities = sub {
 	my($validities) = @_;
@@ -608,8 +609,8 @@ sub parse_vmz_2021 {
 
     my $place = 'Berlin';
 
-    my %id2rec;
-    my %place2rec;
+    tie my %id2rec, 'Tie::IxHash';
+    tie my %place2rec, 'Tie::IxHash';
 
     if ($data->{type} ne 'FeatureCollection') {
 	die "Unexpected GeoJSON type '$data->{type}' (expected FeatureCollection)";
