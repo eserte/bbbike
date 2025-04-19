@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.21;
+$VERSION = 2.22;
 
 use File::Glob qw(bsd_glob);
 
@@ -1641,13 +1641,16 @@ sub show_any_diff {
     my $hide_ignored;
     {
 	my $ff = $t->Frame->pack(-fill => 'x');
-	$ff->Checkbutton(-text => "Hide ignored and unchanged",
+	$ff->Checkbutton(-text => "Hide ignored and hide unchanged non-expired",
 			 -variable => \$hide_ignored,
 			 -command => sub {
 			     my $hl = $f->Subwidget("Listbox");
 			     if ($hide_ignored) {
 				 for ($hl->info("children")) {
-				     if ($hl->entrycget($_, "-text") =~ /(ignore|unchanged)/i) {
+				     my $entrytext = $hl->entrycget($_, "-text");
+				     if ($entrytext =~ /ignore/i ||
+					 ($entrytext =~ /unchanged/i && $entrytext !~ /expired/i)
+				        ) {
 					 $hl->hide("entry", $_);
 				     }
 				 }
