@@ -877,12 +877,14 @@ sub action_forever_until_error {
     my $allowed_errors = 1;
     my $forever_interval = 30;
     my $verbose;
+    my $debug;
     GetOptions(
 	       "allowed-errors=i" => \$allowed_errors,
 	       "forever-interval=i" => \$forever_interval,
 	       "verbose|v!" => \$verbose,
+	       "debug!" => \$debug,
 	      )
-	or error "usage: $0 forever_until_error [--verbose|-v] [--allowed-errors number] [--forever-interval seconds]";
+	or error "usage: $0 forever_until_error [--verbose|-v] [--debug] [--allowed-errors number] [--forever-interval seconds]";
     my @cmd = @ARGV;
 
     my @srcs = (
@@ -914,7 +916,7 @@ sub action_forever_until_error {
 	my $t0 = time;
 	print STDERR "wait...";
 	if ($^O eq q{linux} && eval { require Linux::Inotify2; 1 }) { 
-	    _inotifywait(\@srcs, verbose => $verbose);
+	    _inotifywait(\@srcs, verbose => $verbose, debug => $debug);
 	} else {
 	    sleep $forever_interval;
 	}
@@ -926,6 +928,7 @@ sub action_forever_until_error {
 sub _inotifywait {
     my($srcs_ref, %opts) = @_;
     my $verbose = delete $opts{verbose};
+    my $debug   = delete $opts{debug};
     my $timeout = delete $opts{timeout} || 3600;
     error "Unhandled options: " . join(" ", %opts) if %opts;
 
@@ -973,7 +976,7 @@ sub _inotifywait {
 	    my $file = $e->fullname;
 
 	    if (!$watched_files{$file}) {
-		info "DEBUG: ignore event for non-watched file $file";
+		info "DEBUG: ignore event for non-watched file $file" if $debug;
 	    } else {
 		if ($e->IN_MOVED_TO) {
 		    info "File moved to: $file" if $verbose;
