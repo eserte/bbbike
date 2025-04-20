@@ -3357,7 +3357,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# REMOVED --- #: source_id: 2147342574 (inaktiv) --- #: note: laut fritz bis 14.09.2018, laut googlemaps sogar bis Anfang November 2018 --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/warten-auf-die-strassenbahn_a177965 (2018-09-17, danach noch weitere Einschränkungen) --- #: XXX_prog: eigentlich q3+ --- #: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)? --- #: priority: #A --- #: next_check: 2018-09-16 ---	q3::inwork; 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
+#: next_check_id: SCHEFFEL-2024
+Scheffelstr.	q3::inwork; 15357,12813 15233,12829 15169,12839
+',
+         'from' => 1745163713,
+         'id' => 2954,
+         'text' => 'Scheffelstr.: Bauarbeiten, Radwegführung auf engem Gehweg, voraussichtlich bis Ende Mai 2025',
+         'type' => 'handicap',
+         'until' => 1748707200
+       },
        undef,
        undef,
        undef,
@@ -3497,8 +3507,8 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
 #: last_checked: 2025-04-18 (youtube)
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="39"
-#: osm_watch: way id="580507889" version="34"
+#: osm_watch: way id="31525573" version="40"
+#: osm_watch: way id="580507889" version="35"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
 #: last_checked: 2025-04-18 (youtube)
@@ -6684,7 +6694,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-04-18
+#: last_checked: 2025-04-20
 #: next_check: 2025-04-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -7623,8 +7633,8 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (ex-G,ex-W)
 #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-03-18
-#: check_frequency: 29d (outdoor checks)
+#: last_checked: 2025-04-20
+#: check_frequency: 30d (outdoor checks)
 # REMOVED --- #: check_frequency: 14d (traffic)
 	q4::inwork 15769,14355 15841,14351
 ',

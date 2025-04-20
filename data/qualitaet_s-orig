@@ -174,7 +174,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://entwicklungsstadt.de/mehr-komfort-fuer-radverkehr-kopfsteinpflaster-am-priesterweg-geglaettet/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/billiger-und-umweltschonender-als-asphaltieren-berliner-kopfsteinpflaster-abgefrast-furs-huckelfreie-radfahren-13554001.html
 #: osm_watch: way id="102486250" version="26"
-#: osm_watch: note 4659483 5
+#: osm_watch: note 4659483 6
 # REMOVED (confirmed) --- --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
 #: last_checked: 2025-04-18
 #: check_frequency: 120d
@@ -4850,7 +4850,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wird hier saniert?
-#: last_checked: 2024-05-03
+#: last_checked: 2025-04-20
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
@@ -8953,7 +8953,7 @@ Dorfstr. (Wartenberg): rauer Asphalt	Q0- 18025,18858 18007,18938
 # REMOVED (Wurzelhebungen mit Verbundsteinpflaster "repariert") --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8220 --- #: XXX werden hier die Wurzelhebungen entfernt? --- #: next_check: 2020-06-28
 Pappelweg: Asphalt, kurze Verbundsteinpflasterabschnitte	Q0- 17679,19532 17842,20065
 Pappelweg: Trampelpfad, viele Wurzeln, stark bewachsen	Q3- 17842,20065 18042,20612 18061,20715
-Am Schilf: Verbundsteinpflaster	Q0- 18278,19051 18287,18999 18270,18947 18223,18961
+Am Schilf: Verbundsteinpflaster	Q0- 18278,19051 18287,18999 18270,18947 18257,18951 18223,18961
 Am Genossenschaftsring: Verbundsteinpflaster	Q0- 18179,19095 18152,19043 18132,18968 18218,18948 18223,18961 18254,19063
 Am Kletterplatz: Verbundsteinpflaster	Q0- 18100,19127 18078,19075 18152,19043
 Straße 10 (Wartenberg): Beton/Asphalt	Q1+ 18118,19394 18025,19433 17808,19508
@@ -13764,7 +13764,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2025-04-04 vvv
+#: last_checked: 2025-04-20 vvv
 #: check_frequency: 60d vvv
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^
@@ -21229,6 +21229,8 @@ Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17797,18675
 # REMOVED --- #: note: laut ADFC-Karte/neu schlechter als mäßig geeignet: --- #: XXX wird sich am Fahrbahnbelag was ändern? --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.559438.php --- #: source_id: 2147341173 --- #: source_id: LMS-BR_r_LMS-BR_93888 --- #: next_check: 2017-08-31
 #: corrected_by: srt (neu gemacht)
 Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17728,18985 17757,18991 17793,18999 17887,18975 17900,18972 17980,18947 18007,18938
+Dorfstr.: Beton	Q0 18257,18947 18234,18888 18189,18821
+Dorfstr.: alter Asphalt	Q1+ 18189,18821 18161,18814
 #: confirmed_by: srt
 Am Gutshof: Verbundsteinpflaster	Q0- 17730,18747 17813,18726 17817,18738 17824,18774 17837,18784 17854,18777
 #: corrected_by: srt (Verbundsteinpflaster -> ...)
@@ -26077,7 +26079,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="8"
-#: last_checked: 2025-02-09
+#: last_checked: 2025-04-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452

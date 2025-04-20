@@ -532,6 +532,10 @@ Freienbrinker Saum: die Straße führt am Waldrand entlang, in der Dunkelheit is
 # REMOVED (das gilt für das gesamte Märchenland, deshalb Kommentar entfernt) --- #: by: antje weiss dorn: --- Drosselbartweg: Radfahren erlaubt	CS 13899,18833 13909,18835 13953,18842 13967,18842 13993,18833 14061,18791 14206,18700 14218,18674 14222,18666
 (Seeburger Str./Seecktstr. - Bullengraben): Zufahrt über Supermarktparkplatz (Lidl)	CS; -4299,13304 -4372,13384
 # REMOVED (Haus existiert nicht mehr) --- Zur Pariser Str.: Hausdurchfahrt benutzen	CS; 5461,9923 5423,9932 5382,9942
+# 
+südwestlicher Vorplatz des S-Bahnhofs Wartenberg	CS 16939,18652 16998,18695
+nordöstlicher Vorplatz des S-Bahnhofs Wartenberg	CS 17077,18744 17109,18772
+# 
 #: section ^^^
 # 
 ######################################################################
@@ -2026,7 +2030,7 @@ Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wann sind die Straßen ausgeschildert? vvv
-#: last_checked: 2025-04-04 vvv
+#: last_checked: 2025-04-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED (ausgeschildert) --- #: note: nur ein kleines provisorisches Papierschild an der Kreuzung Ulrich-Plenzdorf-Str. hängt an der Hauswand --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15163,10758 15151,10699
 # REMOVED (ausgeschildert) --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15151,10699 15140,10647 15138,10638
@@ -2149,7 +2153,7 @@ ausgeschildert LEG Brandenburg	CP2; -8634,9626 -8595,9582
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/F79WiFP2abgRrV4KLrsX5olu6b3JLkHvrN4jHx9G/WMnlwMsx/03-Anlagen/02/LageplanASKultur.pdf (Lageplan)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_13_0789_0852_online.pdf (Erwähnung)
 # REMOVED --- #: XXX fehlt bei Berlin.coords.data (PLZ=13059 laut LOR und DPAG 12/2023) --- #: XXX geplante neue Privatstraße
-#: last_checked: 2025-01-07 (mapillary)
+#: last_checked: 2025-04-20
 #: check_frequency: 90d
 Neben dem Dorfteich: nichts ausgeschildert	CS 17757,18991 17748,18956 17766,18949 17759,18916
 # 
