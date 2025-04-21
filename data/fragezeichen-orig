@@ -1727,7 +1727,7 @@ Ernst-Reuter-Platz: Zweirichtungsradwege geplant	?::projected 4838,11697 4885,11
 #: osm_watch: way id="147557793" version="23"
 #: osm_watch: way id="891225245" version="10"
 #: osm_watch: way id="891225244" version="7"
-#: last_checked: 2025-03-12
+#: last_checked: 2025-04-21
 #: check_frequency: 120d
 Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19021,11675 18999,11705 19000,11719 19005,11767 19004,11780
 # 
@@ -2990,6 +2990,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022) (inaktiv) (bis 6.10.2024) (bis 31.10.2023) (bis 17.11.2023) (bis 23.11.2023) (bis 21.11.2023) (inaktiv)
 #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.03.2024) (inaktiv) (bis 01.07.2024) (bis 30.04.2025) (bis 22.04.2025 + weitere Arbeiten)
 #: source_id[inactive]: bvg2021:n7#BVG334407_0 (Sperrung der Karl-Marx-Str. ab 20.11.2023)
+#: source_id: viz2021:13.434693,52.481226,22.04.2025,11:00 (Sperrung stadtauswärts nur für den Kfz-Verkehr, bis 31.07.2025)
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2025-04-13 (mapillary)
@@ -3915,7 +3916,7 @@ Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,1133
 #: osm_watch: way id="1340601972" version="2"
 #: XXX Hier sind mittlerweile Bauarbeiten; offiziell "Verbot für Fahrzeuge aller Art, bis auf Anlieger", als Radfahrer kommt man eigentlich noch problemlos vorbei; außerdem nun "Gehweg, Radfahrer frei" im Bereich der Baustelle am Richard-Kolkwitz-Weg; mittlerweile wurde die zwischenzeitliche Sperrung wieder aufgehoben, aber evtl. kommt es in Zukunft wieder zu Sperrungen, deshalb Halbierung der check_frequency
 #: note: dieser Abschnitt wird auch "Beerfelder Str." heißen, siehe Amtsblatt 51/2024
-#: last_checked: 2025-03-12
+#: last_checked: 2025-04-21
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (website zwieseler-hof)
 Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler Str. und Verkehrsberuhigung der nördlichen Zwieseler Str. geplant	?::inwork 19810,10155 19790,10298 19704,10301 19711,10426
@@ -3925,7 +3926,7 @@ Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_08_0501_0548_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1340601973" version="2"
 #: XXX fehlt bei Berlin.coords.data
-#: last_checked: 2025-03-12
+#: last_checked: 2025-04-21
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (website zwieseler-hof)
 Zwieseler Hof: neue Straße geplant	?::inwork 19790,10298 19789,10403
@@ -5621,7 +5622,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516792.php (in Umsetzung bzw. kurz davor)
-#: last_checked: 2025-04-20 vvv
+#: last_checked: 2025-04-21 vvv
 #: check_frequency: 90d vvv
 Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 14988,10778 15004,10791 15019,10803
 #: check_frequency ^^^
@@ -6302,7 +6303,7 @@ Charlottenburger Chaussee: wird es hier auch eine Radwegsanierung geben?	? -772,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9776 (Beschlussempfehlung)
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/tempo-30-auf-der-lueckstrasse_a375677
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-21
 #: check_frequency: 180d
 Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
 # 
@@ -6313,7 +6314,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-21
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6327,7 +6328,7 @@ Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,1091
 # REMOVED --- (Hauptstr./Rummelsburger Ufer - Gustav-Tempel-Str.): ein asphaltierter Zweirichtungsradweg entsteht	?::inwork 15298,10682 15245,10719
 #: osm_watch: way id="176050265" version="12"
 #: osm_watch: way id="1099807542" version="7"
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-21
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (infravelo)
 Hauptstr. [Nebenfahrbahn]: wird hier eine Fahrradstraße eingerichtet (wo genau?)? was passiert mit der Einbahnstraßenregelung?	? 15298,10682 15332,10657 15392,10615
@@ -6356,7 +6357,7 @@ An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Buch
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-21
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
@@ -7616,7 +7617,7 @@ Niemannstr.: Teileinziehung geplant	? 14211,11229 14254,11377
 Simplonstr.: Teileinziehung geplant	? 14181,11434 14254,11377
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf
-#: last_checked: 2025-04-17 (Amtsblatt) vvv
+#: last_checked: 2025-04-21 vvv
 #: check_frequency: 30d vvv
 Simplonstr.: Teileinziehung geplant	? 13996,11631 13992,11605 14031,11569
 Gabriel-Max-Str.: Teileinziehung geplant	? 14065,11605 14049,11553
@@ -10283,7 +10284,7 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 # REMOVED (-> strassen-orig) --- Gustav-Tempel-Str.: zukünftiger Fahrbahnbelag unklar, noch nicht offiziell offen, vermutlich wird noch in Richtung Westen verlängert	? 15220,10682 15205,10616 15200,10600
 # REMOVED (-> strassen-orig) --- An den Eiswerken	? 15004,10791 14994,10732 14984,10677
 # REMOVED (-> strassen-orig) --- Paul-und-Paula-Promenade	? 14886,10748 14909,10732 14984,10677
-#: last_checked: 2025-04-20 vvv
+#: last_checked: 2025-04-21 vvv
 #: check_frequency: 90d vvv
 #: XXX beim DPAG-Mitteilungsblatt 6/2023 als "Paul-und Paula-Promenade" bezeichnet (ein Bindestrich weniger); PLZ=10317
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
@@ -12043,7 +12044,7 @@ Bebauungsplan 6-8: evtl. wird es einen Weg zwischen Hochstr. (Höhe Hasselfelder 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_35_2547_2610_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11607
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_04_0245_0352_online.pdf (Teileinziehung)
-#: osm_watch: way id="1122284350" version="2"
+#: osm_watch: way id="1122284350" version="3"
 #: last_checked: 2025-04-18
 Schönleinstr.: Teileinziehung	? 11541,9576 11594,9604
 # 

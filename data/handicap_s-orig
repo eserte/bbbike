@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-04-16
+#: last_checked: 2025-04-21
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -110,7 +110,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-04-12
+#: last_checked: 2025-04-21
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -697,7 +697,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025; nun bis 22.04.2025, allerdings laufen schon Asphaltierungs- und Pflasterarbeiten
 #: also_indoor: traffic (ex-G,B,T)
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
-#: last_checked: 2025-04-04 vvv
+#: last_checked: 2025-04-21 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2025-04-22 (Halteverbotsschilder) vvv
 # REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
@@ -1042,7 +1042,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="40"
 #: osm_watch: way id="1193560283" version="9"
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-21
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -1050,7 +1050,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-21
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1122,6 +1122,7 @@ Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,1493
 #: note: Halteverbotsschilder gelten bis zum 30.04.2026
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10359 (Antrag)
+#: osm_watch: way id="1275438996" version="3"
 #: osm_watch: way id="1262014804" version="1"
 #: osm_watch: note 4126168 2
 #: osm_watch: note 4126169 1
@@ -1340,9 +1341,12 @@ Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. 
 # 
 #: next_check_id: WEISSENHOEHER-2025
 #: note: Länge des gesperrten Bereichs geschätzt 50m, u.U. Umwege notwendig
+#: note: Halteverbotsschilder bis 19.12.2025
+#: osm_watch: note 4721088 1
 #: also_indoor: traffic (T)
-#: last_checked: 2025-03-12
-#: next_check: 2025-04-02
+#: last_checked: 2025-04-21
+#: check_frequency: 120d
+#: next_check: 2025-12-19 (Halteverbotsschilder)
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv

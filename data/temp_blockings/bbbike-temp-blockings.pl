@@ -37698,7 +37698,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40169,9 +40169,9 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-04-04
+#: last_checked: 2025-04-21
 #: check_frequency: 90d
-#: next_check: 2025-06-30
+#: next_check: 2025-06-30 (DB-Mail)
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
 #: osm_watch: way id="1025826786" version="13"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
@@ -46826,7 +46826,7 @@ EOF
 # REMOVED --- #: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert --- q2::inwork 18266,9853 18066,9770 17920,9698
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-21
 #: check_frequency: 14d
 Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 EOF

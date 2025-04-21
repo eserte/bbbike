@@ -179,7 +179,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-04-17 vvv
+#: last_checked: 2025-04-21 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -301,7 +301,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2025-03-24
+#: last_checked: 2025-04-21
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -4011,7 +4011,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 # 
 #: osm_watch[closed]: note 4165928 1
-#: last_checked: 2025-04-04
+#: last_checked: 2025-04-21
 #: check_frequency: 60d
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -4163,7 +4163,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: last_checked: 2025-04-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
-#: osm_watch: way id="1054783030" version="4"
+#: osm_watch: way id="1054783030" version="5"
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3:inwork 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q4:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 #: osm_watch: way id="154381294" version="21"
@@ -4182,11 +4182,11 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
 #: osm_watch: way id="1106303945" version="9"
-#: osm_watch: way id="4543436" version="40"
+#: osm_watch: way id="4543436" version="41"
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch: note 4126450 4
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2025-04-16
+#: last_checked: 2025-04-20 (osm)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4317,7 +4317,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="29"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-04-18 (youtube)
+#: last_checked: 2025-04-21
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4374,7 +4374,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-04-20
+#: last_checked: 2025-04-21
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4382,7 +4382,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-04-20 vvv
+#: last_checked: 2025-04-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4796,7 +4796,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="1171090939" version="5"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-21
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (howoge website)
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in Zukunft keinen Durchgang geben	2 16601,10650 16587,10613
@@ -5006,11 +5006,13 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670
 #: by: https://vergabekooperation.berlin/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-193785559fe-7cca7b7fb641dd39
 #: by: https://vergabekooperation.berlin/NetServer/TenderingProcedureDetails?function=_DownloadTenderDocument&documentOID=54321-NetParticipationCompetition-193d0416eb5-63ef0651bae7f098&Document=SU5GMS0wODI2LTIwMjRfVTEtVTRfUHJvamVrdHN0ZXVlcnVuZ19Wb3JoYWJlbi0gdW5kIExlaXN0dW5nc2Jlc2NocmVpYnVuZyAoTEIpX3YxLnBkZg (U1/U3 Ersatzneubau BW XII)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22047.pdf (Brückenneubau (Brücke XII): Februar 2028 bis Juni 2030)
+#: by: https://www.morgenpost.de/bezirke/mitte/article408819266/marode-u-bahn-viadukte-parallele-zu-a100-das-sagt-die-bvg.html (Baustelleneinfahrt über den Eingang Kurfürstenstr.?)
+#: by: https://gleisdreieck-blog.de/2025/01/19/der-neubau-des-staehlernen-viadukts-der-u1-im-gleisdreieck/
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="13"
 #: last_checked: 2025-04-08
 #: check_frequency: 120d
-#: next_check: 2030-06-30 (pardok)
+#: next_check: 2028-02-28 (pardok)
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
