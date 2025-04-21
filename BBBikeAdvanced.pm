@@ -2090,28 +2090,6 @@ sub advanced_coord_menu {
 	}
     }
     {
-	$obsolete_menu->checkbutton
-	    (-label => M"Point-Editor",
-	     -variable => \$special_edit,
-	     -onvalue => "point",
-	     -offvalue => "",
-	     -command => sub {
-		 if ($special_edit eq 'point') {
-		     require PointEdit;
-		     my $p = new MasterPunkte "$FindBin::RealBin/misc/masterpoints-orig";
-		     $p->read;
-		     if (!$net) { make_net() }
-		     all_crossings();
-		     $point_editor = new PointEdit
-			 MasterPunkte => $p,
-			     Net => $net,
-				 Crossings => $crossings,
-				     Top => $top;
-		 } elsif ($point_editor) {
-		     $point_editor->delete;
-		     undef $point_editor;
-		 }
-	     });
 	$obsolete_menu->command
 	    (-label => M"Beziehungs-Editor",
 	     -command => sub {

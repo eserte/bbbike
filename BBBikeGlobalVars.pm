@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2007,2008,2013,2014,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2007,2008,2013,2014,2016,2017,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = '1.76';
+$VERSION = '1.77';
 
 package main;
 
@@ -207,7 +207,7 @@ use vars qw($hs_check $plzmcmd $ampelstatus_label_text
 	    $center_loaded_route $zoom_loaded_route
 	    $zoom_new_route $zoom_new_route_chooseort
 	    $set_mode $init_with_edittools $texteditor $f8_editor
-	    $ps_image_res $point_editor $info_text
+	    $ps_image_res $info_text
 	    $mark_color $mark_color_overview $initial_plugins $initial_layers
 	    %info_plugins);
 use vars qw($export_txt_mode $export_txt_min_angle $gps_waypoints
@@ -292,7 +292,7 @@ use constant MINMEM        => 28000;
 # Map modes
 # Please don't change order to stay compatible with tkbabybike
 use enum qw(:MM_
-	    SEARCH INFO BUTTONPOINT USEREDIT DRAG EDITPOINT
+	    SEARCH INFO BUTTONPOINT USEREDIT DRAG
 	    SPECIALEDIT INSERTPOINT CREATERELATION
 	    CUSTOMCHOOSE CUSTOMCHOOSE_TAG
 	    BABYBIKE_SELECT BABYBIKE_BROWSE SCRIBBLE

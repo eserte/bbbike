@@ -8240,12 +8240,7 @@ sub set_route_point {
     if ($MM_DRAG_IS_OBSOLETE) {
 	$c->scan('mark', $e->x, $e->y);
     }
-    if ($map_mode eq MM_EDITPOINT) {
-	my(@tags) = $c->gettags('current');
-	if ($tags[0] eq 'pp' || $tags[0] =~ /^vf/ || $tags[0] =~ /^lsa/) {
-	    $point_editor->set($tags[1]);
-	}
-    } elsif ($map_mode eq MM_INSERTPOINT) {
+    if      ($map_mode eq MM_INSERTPOINT) {
 	insert_point_from_canvas($c);
     } elsif ($map_mode eq MM_CREATERELATION) {
 	create_relation_from_canvas($c);

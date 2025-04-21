@@ -68,7 +68,6 @@ for my $f (@files) {
 	    if $f =~ m{^( lib/TkChange.pm
 			| lib/AutoInstall/Tk.pm
                         | bbbike
-		        | PointEdit.pm
 			| GPS/GpsmanData/Tk.pm
 			| GPS/GpsmanData/TkViewer.pm
  			)$}x && !eval { require Tk };
@@ -227,11 +226,9 @@ EOF
 		     | Strassen/MapInfo.pm
 		     | lib/GD/Convert.pm
 		     | lib/Tk/StippleLine.pm
-		     | MasterPunkte.pm
 		     | Wizards.pm
 		     | cgi/configure-bbbike.cgi
 		     | Karte/SatmapGIF.pm
-		     | PointEdit.pm
 		     | Strassen/Storable.pm
 		     | BBBikeMenubar.pm
 		     | BBBikeEdit.pm
