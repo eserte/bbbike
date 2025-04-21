@@ -26,6 +26,7 @@ use lib (
 use Cwd qw(realpath);
 use File::Basename qw(basename);
 use Getopt::Long;
+use List::Util qw(max);
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
 use URI::Escape qw(uri_escape_utf8);
@@ -1034,6 +1035,7 @@ sub _make_dist_tag {
 		    return 0;
 		};
 		$out .= "** sorted by $sort_keys[0]\n";
+		my $filename_length = max map { length basename $_ } keys %planned_route_to_numbers;
 		for my $planned_route_file (sort { $custom_sort->($planned_route_to_numbers{$a}, $planned_route_to_numbers{$b}) } keys %planned_route_to_numbers) {
 		    my $numbers = $planned_route_to_numbers{$planned_route_file};
 		    # TODO routes are the ones which
@@ -1049,7 +1051,15 @@ sub _make_dist_tag {
 				'#D'
 			       );
 		    my $prio_string = $prio ? " [$prio]" : "";
-		    $out .= "*** $state$prio_string $planned_route_file (expired_and_open_prio=$numbers->{expired_and_open_priority_points} expired_and_open_count=$numbers->{expired_and_open_count} total_count=$numbers->{total_count} searches=$numbers->{searches} length=" . m2km($len,1) . " count_per_km=" . sprintf("%.2f", $expired_and_open_per_km) . ")\n";
+		    $out .= "*** $state$prio_string"
+			. sprintf(" %-${filename_length}s (", basename($planned_route_file))
+			. sprintf("expired_and_open_prio=%2d", $numbers->{expired_and_open_priority_points})
+			. sprintf(" expired_and_open_count=%2d", $numbers->{expired_and_open_count})
+			. sprintf(" total_count=%2d", $numbers->{total_count})
+			. sprintf(" searches=%6d", $numbers->{searches})
+			. sprintf(" length=%8s", m2km($len,1))
+			. " count_per_km=" . sprintf("%.2f", $expired_and_open_per_km)
+			. ")\n";
 		}
 	    }
 	}
