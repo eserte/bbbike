@@ -31,7 +31,7 @@ use Time::Local qw(timelocal);
 use URI::Escape qw(uri_escape_utf8);
 
 use BBBikeBuildUtil qw(get_pmake);
-use BBBikeUtil qw(int_round bbbike_root);
+use BBBikeUtil qw(int_round bbbike_root m2km);
 use Karte::Polar;
 use Karte::Standard;
 use Karte::UTM;
@@ -144,6 +144,7 @@ if ($plan_dir) {
 	push @str, $s;
 	my $last_pos = $#{$s->data};
 	$route_info{$name}->{type} = $s->get(0)->[Strassen::COORDS][0] eq $s->get($last_pos)->[Strassen::COORDS][-1] ? 'round-trip' : 'one-way';
+	$route_info{$name}->{len} = $route->len;
     }
     my $s = MultiStrassen->new(@str);
     $planned_points = $s->as_reverse_hash;
@@ -1039,6 +1040,8 @@ sub _make_dist_tag {
 		    # * have open questions
 		    # * one-way trips, so likely to be done for non-survey purposes
 		    my $state = $numbers->{expired_and_open_count} || $route_info{$planned_route_file}->{type} eq 'one-way' ? 'TODO' : 'DONE';
+		    my $len = $route_info{$planned_route_file}->{len};
+		    my $expired_and_open_per_km = $numbers->{expired_and_open_count} / ($len/1000);
 		    my $prio = (
 				$numbers->{expired_and_open_count} >= 10 ? '#A' :
 				$numbers->{expired_and_open_count} >= 5  ? '#B' :
@@ -1046,7 +1049,7 @@ sub _make_dist_tag {
 				'#D'
 			       );
 		    my $prio_string = $prio ? " [$prio]" : "";
-		    $out .= "*** $state$prio_string $planned_route_file (expired_and_open_prio=$numbers->{expired_and_open_priority_points} expired_and_open_count=$numbers->{expired_and_open_count} total_count=$numbers->{total_count} searches=$numbers->{searches})\n";
+		    $out .= "*** $state$prio_string $planned_route_file (expired_and_open_prio=$numbers->{expired_and_open_priority_points} expired_and_open_count=$numbers->{expired_and_open_count} total_count=$numbers->{total_count} searches=$numbers->{searches} length=" . m2km($len,1) . " count_per_km=" . sprintf("%.2f", $expired_and_open_per_km) . ")\n";
 		}
 	    }
 	}
