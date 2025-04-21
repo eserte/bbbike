@@ -884,7 +884,7 @@ sub action_forever_until_error {
 	       "verbose|v!" => \$verbose,
 	       "debug!" => \$debug,
 	      )
-	or error "usage: $0 forever_until_error [--verbose|-v] [--debug] [--allowed-errors number] [--forever-interval seconds]";
+	or error "usage: $0 forever_until_error [--verbose|-v] [--debug] [--allowed-errors number] [--forever-interval seconds] cmd";
     my @cmd = @ARGV;
 
     my @srcs = (
@@ -937,25 +937,30 @@ sub _inotifywait {
     my $inotify = Linux::Inotify2->new or die "Cannot create inotify: $!";
 
     # setup watches, first file, then directory
-    my %dir_basenames;
+    my %setup_dir_inotify;
     my %watched_files;
+    my %watched_dirs;
     for my $file (@files_to_watch) {
 	my $abs = realpath($file) or do {
 	    warning "Can't resolve $file: $! (skipping)";
 	    next;
 	};
-	my ($dir, $base) = (dirname($abs), basename($abs));
+	if (-d $abs) {
+	    $setup_dir_inotify{$abs} = 1;
+	    $watched_dirs{$abs} = 1;
+	} else {
+	    my $dir = dirname($abs);
+	    $setup_dir_inotify{$dir} = 1;
     
-	$dir_basenames{$dir} = 1;
-    
-	$inotify->watch($abs, Linux::Inotify2::IN_CLOSE_WRITE())
-	    or error "Can't watch $abs: $!";
+	    $inotify->watch($abs, Linux::Inotify2::IN_CLOSE_WRITE())
+		or error "Can't watch $abs: $!";
 
-	$watched_files{$abs} = 1;
-	info "Now watching: $file" if $verbose;
+	    $watched_files{$abs} = 1;
+	    info "Now watching: $file" if $verbose;
+	}
     }
-    for my $dir (keys %dir_basenames) {
-	$inotify->watch($dir, Linux::Inotify2::IN_MOVED_TO()|Linux::Inotify2::IN_CLOSE_WRITE())
+    for my $dir (keys %setup_dir_inotify) {
+	$inotify->watch($dir, Linux::Inotify2::IN_MOVED_TO()|Linux::Inotify2::IN_CLOSE_WRITE()|Linux::Inotify2::IN_DELETE())
 	    or error "Can't watch $dir: $!";
 	info "Now watching: $dir" if $verbose;
     }
@@ -978,8 +983,9 @@ sub _inotifywait {
 
 	for my $e (@events) {
 	    my $file = $e->fullname;
+	    my $dir = dirname($file);
 
-	    if (!$watched_files{$file}) {
+	    if (!$watched_files{$file} && !$watched_dirs{$dir}) {
 		info "DEBUG: ignore event for non-watched file $file" if $debug;
 	    } else {
 		if ($e->IN_MOVED_TO) {
@@ -987,6 +993,9 @@ sub _inotifywait {
 		    last EVENT_LOOP;
 		} elsif ($e->IN_CLOSE_WRITE) {
 		    info "Write complete: $file" if $verbose;
+		    last EVENT_LOOP;
+		} elsif ($e->IN_DELETE) {
+		    info "Deleted: $file" if $verbose;
 		    last EVENT_LOOP;
 		}
 	    }
