@@ -1787,6 +1787,10 @@ Potsdamer Damm	2 -5319,-3719 -5490,-3666 -5722,-3669 -6119,-3907 -6426,-4014
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
 Horstweg - Nuthestr.	2 -10495,-2787 -10324,-2937 -10250,-2857
 Kleine Gasse	1 -13272,-1168 -13287,-1231
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/rehrucken-in-der-spornstrasse-potsdams-einzige-denkmalgeschutzte-strasse-erneuert-13574632.html
+#: osm_watch: way id="9528682" version="17"
+#: osm_watch: note 4723096 1
+#: XXX f¸r Radfahrer mittlerweile in beide Richtungen befahrbar?
 Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straﬂe	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10250,-2857 -10321,-2800 -10547,-2606 -10604,-2567 -10900,-2386 -11007,-2259 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
@@ -3995,12 +3999,13 @@ Nordbahnstr.: tempor‰re Einbahnstraﬂenregelung	1::inwork 9383,17757 9544,17629
 Fuﬂg‰ngerbr¸cke ¸ber den Kˆnigsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-04-13 (bahninfo-forum)
+#: last_checked: 2025-04-20 (mapillary)
 #: check_frequency: 90d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, mˆglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-04-13 (bahninfo-forum)
+#: last_checked: 2025-04-20 (mapillary)
+#: check_frequency: 90d
 Mauerweg: wegen Bauarbeiten f¸r die Heidekrautbahn gesperrt, vermutlich nur tempor‰r	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
@@ -4134,7 +4139,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-04-15
+#: last_checked: 2025-04-22
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Kˆllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4160,7 +4165,7 @@ Am Alten Flugplatz: Straﬂe gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-04-15 vvv
+#: last_checked: 2025-04-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="5"
@@ -4285,7 +4290,7 @@ Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,90
 #: XXX nˆrdlicher Abschnitt vermutlich schon fertig (siehe Luftbild 2024) -> ja
 #: osm_watch: way id="1119861689" version="11"
 #: osm_watch: way id="1311919738" version="2"
-#: last_checked: 2025-01-12 (mapillary)
+#: last_checked: 2025-04-20 (mapillary)
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 90d
 An der Streuobstwiese: kann noch durch Bauz‰une abgesperrt sein	2::inwork 12628,22604 12668,22537
@@ -4303,8 +4308,8 @@ An der Streuobstwiese: kann noch durch Bauz‰une abgesperrt sein	2::inwork 12628,
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/gebaut-wird-in-holztafelbauweise_a339233 (bis Herbst 2024)
 #: by: https://www.dafmap.de/d/berlin.html?id=7898&mt=4&zoom=17
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/haeuser-fuer-kokoni-one-entstehen-in-holztafelbauweise_a358049
-#: XXX Wird die Straﬂe komplett aufgegeben?
-#: last_checked: 2025-01-12 (mapillary)
+#: XXX Wird die Straﬂe komplett aufgegeben? im April 2025 steht allerdings noch das Straﬂenschild
+#: last_checked: 2025-04-20 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-10-01
 Straﬂe 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
@@ -4651,9 +4656,9 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.rbb24.de/panorama/beitrag/2024/03/sankt-hedwigs-kathedrale-sanierung-wiedereroeffnung-umbau-24-november-berlin-mitte.html (Erˆffnung der Kathedrale am 24.11.2024)
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-oeffnet-nach-langer-sanierung-id248135
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-wird-nach-sanierung-wieder-eroeffnet-id270349 (Bernhard-Lichtenberg-Haus fr¸hestens Ende 2025 fertig)
-#: last_checked: 2025-03-13
+#: last_checked: 2025-04-22
 #: check_frequency: 90d
-#: next_check: 2025-12-31
+#: next_check: 2025-12-31 (berliner-abendblatt)
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 # 
 # REMOVED --- #: by: mapillary --- #: last_checked: 2022-02-05 (mapillary) --- #: check_frequency: 90d --- Ackerstr. (Schulzendorf): Hochbauarbeiten, Straﬂe gesperrt	2::inwork 22996,-4983 22962,-5193
@@ -4987,7 +4992,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: note 3954448 5
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2025-03-31
+#: last_checked: 2025-04-22
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-12-31

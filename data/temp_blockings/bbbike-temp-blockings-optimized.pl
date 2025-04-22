@@ -4739,7 +4739,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-05
+#: last_checked: 2025-04-20 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5894,7 +5894,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-03-15 (mapillary)
+#: last_checked: 2025-04-20 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -6276,7 +6276,20 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: KARLMARXSTR-2018
+# REMOVED --- #: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024) (inaktiv) --- #: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024) (vorfristig inaktiv) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/voruebergehend-einbahnstrasse_a400832 --- #: also_indoor: traffic (ex-G,ex-B,ex-W)  --- #: priority: #A --- #: next_check: 2024-03-11 --- Karl-Marx-Str.	q4::inwork; 12330,8636 12494,8501 --- Weichselstr.	q3::inwork 12330,8636 12392,8724
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1914549978975854961
+#: by: https://pbs.twimg.com/media/GoupswNXgAAe4tk?format=jpg&name=medium (auch Radfahrer sind betroffen; Umleitungsstrecke via Donaustr.)
+#: source_id: viz2021:13.434693,52.481226,22.04.2025,11:00 (hier: Sperrung stadtauswärts nur für den Kfz-Verkehr, bis 31.07.2025)
+Karl-Marx-Str.: zwischen Flughafenstr. und Neckarstr.	q4::inwork; 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390 12639,8344
+',
+         'from' => 1745186400,
+         'id' => 3971,
+         'text' => 'Karl-Marx-Str.: zwischen Flughafenstr. und Neckarstr. Sperrung Richtung Südosten, vom 22.04.2025 bis 30.07.2025',
+         'type' => 'handicap',
+         'until' => 1753977600
+       },
        undef,
        undef,
        undef,
@@ -6774,7 +6787,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-15 vvv
+#: last_checked: 2025-04-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7725,7 +7738,7 @@ Eweststr.	q3::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
 ',
          'from' => 1738562400,
          'id' => 4251,
-         'text' => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (hier Gehweg für Radfahrer frei), vom 04.02.2025 07:00 bis 23.05.2025 17:00',
+         'text' => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (Gehwege für Radfahrer frei), vom 04.02.2025 07:00 bis 23.05.2025 17:00',
          'type' => 'handicap',
          'until' => 1748012400
        },
@@ -8313,6 +8326,16 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'text' => 'Obersdorf, Bahnübergang: Sperrung, evtl. sind auch Radfahrer betroffen, am 19.05.2025 von 07:00 Uhr bis 14:00 Uhr und vom 24.05.2025 bis 26.05.2025 von 07:00 Uhr bis 18:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1748275200
+       },
+       {
+         'data' => '#: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025)
+	q4::inwork 2493,10675 2468,10780 2361,10941 2340,11056
+',
+         'from' => 1745211600,
+         'id' => 4309,
+         'text' => 'Herbartstr.: Bauarbeiten zwischen Dernburgstr. und Neue Kantstr., evtl. sind auch Radfahrer betroffen, vom 22.04.2025 07:00 bis 25.07.2025 23:59',
+         'type' => 'handicap',
+         'until' => 1753480740
        }
      
 );

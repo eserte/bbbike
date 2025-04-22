@@ -19,12 +19,13 @@
 #: valid: -20250530
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
-#: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025)
-#: note: zuerst 10642,11901, mittlerweile nach Süden gewandert
-#: last_checked: 2025-04-15
-#: next_check: 2025-05-14
-#: valid: -20250514
-Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
+# REMOVED (aber die nächste provisorische Ampel an der Kreuzung mit der Wallstr. ist in den Startlöchern)
+# REMOVED --- #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025)
+# REMOVED --- #: note: zuerst 10642,11901, mittlerweile nach Süden gewandert
+# REMOVED --- #: last_checked: 2025-04-22
+# REMOVED --- #: next_check: 2025-05-14
+# REMOVED --- #: valid: -20250514
+# REMOVED --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
 # 
 # REMOVED --- #: source_id: viz2021:13.486871,52.577222,11.11.2024,07:00 (bis 14.02.2025)
 # REMOVED --- #: note: Länge der Gegenverkehrsstrecke: 50m
@@ -38,11 +39,11 @@ Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
 #: valid: -20250731
 Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 # 
-#: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025)
+#: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025) (bis 16.06.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1894643566640861298
 #: by: https://pbs.twimg.com/media/GknmW6oW8AADYN1?format=jpg&name=medium
-#: next_check: 2025-04-30
-#: valid: -20250430
+#: next_check: 2025-06-16
+#: valid: -20250616
 Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 # 
 # REMOVED --- #: source_id[inactive]: bvg2024:184#HIM_FREETEXT_235819 (kein Endedatum) (bis 2025-03-19)
@@ -3498,7 +3499,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-03-31 vvv
+#: last_checked: 2025-04-22 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3937,7 +3938,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 1
-#: last_checked: 2025-02-23 (mapillary) vvv
+#: last_checked: 2025-04-20 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

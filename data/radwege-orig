@@ -940,7 +940,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8024,15401 8002,1534
 	RW1; 7998,15068 7911,15008
 	RW1;RW1 7198,18575 7197,18639 7209,18682 7248,18793 7329,18996 7466,19351
 	RW0;RW1 7466,19351 7481,19400
-	RW0;RW1 7504,19459 7512,19480
+	RW0;RW1 7504,19459 7507,19468 7512,19480
 	RW1;RW1 7512,19480 7540,19550
 	RW1; 7540,19550 7578,19648 7603,19713 7617,19748 7634,19793 7672,19869
 teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,19793 7617,19748 7603,19713 7578,19648 7540,19550
@@ -2946,8 +2946,8 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-03-28 vvv
-#: next_check: 2027-09-30 vvv
+#: last_checked: 2025-04-22 vvv
+#: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
 Bushaltestelle	RW5; 12295,12197 12305,12251
@@ -7613,7 +7613,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2025-04-05 vvv
+#: last_checked: 2025-04-20 (mapillary) vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7653,7 +7653,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2025-04-05
+#: last_checked: 2025-04-20 (mapillary)
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
@@ -8033,7 +8033,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-04-18
+#: last_checked: 2025-04-22
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
