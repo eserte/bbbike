@@ -1267,7 +1267,7 @@ Gotenstr. (Schöneberg)	N 7497,8168 7494,8354 7490,8593 7485,8777
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/verbindung-zwischen-zwei-s-bahnhoefen-soll-attraktiver-und-sicherer-werden_a430415
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wohn-und-beratungshaus-ella-barowsky-stra%C3%9Fe-gotenstra%C3%9Fe-am-stadtplatz-sch%C3%B6neberger-linse.1047/#post-24228 (Fertigstellung des Platzes erst 2028?)
 #: XXX Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?
-#: last_checked: 2025-03-02 (architektur-urbanistik)
+#: last_checked: 2025-04-23
 #: check_frequency: 180d
 (Gotenstr. - Ella-Barowsky-Str.)	NN 7497,7761 7551,7851
 # 
@@ -4077,7 +4077,7 @@ Prellerweg	H 6757,5858 6696,5854
 Kieler Str. (Steglitz)	NN 4998,5817 5030,5800
 Kieler Str. (Steglitz)	N 5030,5800 5141,5744 5223,5704
 Bergstr. (Steglitz)	H 6696,5854 6518,5837 6333,5819 6321,5818 6123,5798 6007,5785 5942,5775 5850,5765 5672,5751
-Bergstr. (Steglitz)	N 5672,5751 5581,5741 5464,5731 5280,5714 5223,5704
+Bergstr. (Steglitz)	N 5672,5751 5581,5741 5471,5732 5280,5714 5223,5704
 Altmarkstr.	N 6343,6297 6323,6270 6300,6214 6306,6124 6318,6006 6326,5912 6333,5819
 Friedrichsruher Str. (Steglitz)	N 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 Friedrichsruher Platz	NN 5942,5775 5935,5874
@@ -4125,7 +4125,7 @@ Straße 17 (Schöneberg)	NN 7307,7435 7296,7443
 (Tälchenweg)	NN 7666,7093 7344,6104 7296,5872
 (Bahnhofvorplatz S-Bhf. Priesterweg)	N 7227,6080 7252,6080 7252,6058 7227,6058
 Göttinger Str.	N 6494,6128 6501,6028 6508,5931 6518,5837
-Kniephofstr.	N 6501,6028 6318,6006 6226,5995 6124,5983 6001,5974 5847,5961 5699,5949 5593,5965 5460,5966
+Kniephofstr.	N 6501,6028 6318,6006 6226,5995 6124,5983 6001,5974 5847,5961 5699,5949 5593,5965 5465,5957
 Thorwaldsenstr. (Steglitz, Schöneberg)	H 6696,5854 6629,5946 6494,6128 6343,6297 6248,6388 6213,6423 6168,6467 6071,6559
 Saarstr.	H 5644,6936 5799,6841 5811,6833 5896,6785 5928,6768 5966,6747 6019,6710
 Knausstr. (Steglitz, Schöneberg)	H 6019,6710 6042,6686 6071,6559 6083,6451
@@ -4144,12 +4144,12 @@ Forststr. (Steglitz)	N 4730,6198 4511,6318 4379,6390 4290,6445 4178,6507 4054,65
 Schöneberger Str. (Steglitz)	H 5370,6486 5470,6423 5582,6360
 Feuerbachstr.	N 5244,6261 5390,6299 5560,6344 5582,6360
 Feuerbachstr.	H 5582,6360 5701,6386 5781,6404 5823,6413 6083,6451 6168,6467
-Feuerbachstr. [Platz]	N 5787,6389 5809,6383 5829,6397
-Körnerstr. (Steglitz)	N 5466,5523 5466,5622 5464,5731 5460,5966 5598,6136 5697,6276 5787,6389 5781,6404
+Feuerbachstr. [Platz]	N 5790,6385 5809,6383 5829,6397
+Körnerstr. (Steglitz)	N 5466,5523 5466,5622 5471,5732 5452,5936 5465,5957 5598,6136 5701,6273 5776,6367 5790,6385 5781,6404
 Körnerstr. (Steglitz)	N 5823,6413 5819,6428 5883,6519 5979,6646
 Körnerstr. (Steglitz)	NN 5979,6646 6019,6710
 Lenbachstr. (Steglitz)	N 5883,6519 6071,6559
-Poschingerstr.	N 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
+Poschingerstr.	N 5701,6273 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
 Rembrandtstr. (Schöneberg)	NN 6019,6710 6051,6758
 Rembrandtstr. (Schöneberg)	N 6051,6758 6122,6854 6143,6863
 Rembrandtstr. (Schöneberg)	N 6150,6895 6234,7020 6355,7184 6389,7196
@@ -5225,10 +5225,11 @@ Edithstr.	N 987,4293 1161,4419
 Juttastr.	N 1072,4542 949,4366
 Am Fischtal	N 354,4152 510,4202 593,4262 666,4339 691,4474 703,4511 723,4572 798,4766
 Am Waldfriedhof	N 922,4910 928,4996 938,5088 966,5151 1004,5194 1090,5268 1114,5290 1139,5308 1212,5353
-Potsdamer Str. (Zehlendorf)	HH 820,3081 669,3119 534,3149 452,3133 255,3085 161,3062 50,3031 -49,3003 -151,2975 -267,2945 -391,2914 -512,2883
+Potsdamer Str. (Zehlendorf)	HH 820,3081 786,3090 669,3119 534,3149 452,3133 255,3085 161,3062 50,3031 -49,3003 -151,2975 -267,2945 -391,2914 -512,2883
 Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee)	HH -512,2883 -563,2862 -726,2799 -739,2793 -870,2737 -984,2692 -1085,2653 -1249,2590 -1340,2554 -1626,2441 -1646,2434 -1959,2305 -2023,2279 -2074,2258 -2280,2177 -2550,2068 -2621,2022 -2671,1988 -2912,1829 -3011,1761 -3031,1747 -3077,1716 -3113,1692 -3184,1643 -3262,1588 -3353,1526 -3464,1452 -3567,1385 -3729,1297 -3890,1249 -4003,1234 -4497,1165 -4583,1185 -4803,1240 -4892,1267 -4944,1298
 Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee) [Nebenstraße]	N -3031,1747 -3040,1763 -3087,1734 -3241,1643
 Teltower Damm	H 820,3081 758,2870 718,2735 720,2718 749,2616 772,2538 790,2434 809,2309 824,2210 846,2130 980,1893 1025,1813 1080,1637 1142,1350 1181,1169 1207,1051 1248,871 1267,789 1286,704 1304,537 1322,352 1345,184 1368,-1 1375,-27 1402,-52 1453,-306 1464,-367
+Teltower Damm [Nebenfahrbahn]	N 712,2885 786,3090
 # REMOVED --- #: XXX hier wird eine Fußgängerzone entstehen, Radfahrer frei --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796927.php (Eröffnung am 9. April 2019) --- #: by: http://www.abendblatt-berlin.de/2019/04/04/eine-mini-fussgaengerzone-fuer-zehlendorf/ --- #: by: https://www.berliner-woche.de/c-verkehr/der-kleine-teltower-damm-wird-ab-9-april-zur-fussgaengerzone_a206998 --- #: by: https://www.stadtrand-nachrichten.de/kleiner-teltower-damm-wird-fussgaengerzone/ --- #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/erste-fussgaengerzone-im-altbezirk-eroeffnet_a209299 --- #: by: osm --- #: priority: #A --- #: next_check: 2019-04-09
 # REMOVED (wieer offen) --- #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/nach-einem-halben-jahr-wird-der-kleine-teltower-damm-wieder-einbahnstrasse_a236317 (Fußgängerzone soll wieder aufgehoben werden, Einbahnstraßenregelung wieder eingeführt werden) --- #: by: https://leute.tagesspiegel.de/steglitz-zehlendorf/macher/2019/10/10/98974/nach-sechs-monaten-kommt-das-aus-die-einzige-fussgaengerzone-des-bezirks-wird-wieder-zur-einbahnstrasse/ --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7368 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7400 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.880805.php (Umwandlung in eine Tempo-20-Zone mit alter Einbahnstraßenregelung, bis 24.01.2020) --- #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kleiner-teltower-damm-bezirksamt-kehrt-zur-einbahnstrassenregelung-zurueck_a248263 --- #: osm_watch: way id="148420864" version="12" --- #: last_checked: 2019-12-25 (osm) --- #: next_check: 2020-01-24
 #: note: 20er-Zone
@@ -5557,7 +5558,7 @@ Bergengruenstr.	NN -1349,2581 -1340,2554
 Eiderstedter Weg	N -2096,3402 -2038,3252 -1961,3021 -1951,2995 -1945,2975 -1858,2695
 Eitel-Fritz-Str.	N -1706,3311 -1633,3104 -1575,2934 -1533,2815
 Joachimstr. (Schlachtensee)	N -1654,2909 -1575,2934 -1500,2964
-Limastr.	N -1102,3345 -1122,3372 -1195,3503 -1204,3662 -1230,3780 -1277,3854 -1360,4014
+Limastr.	N -1102,3345 -1122,3372 -1195,3503 -1204,3662 -1230,3780 -1282,3868 -1360,4014
 Kleiststr. (Zehlendorf)	N -968,4184 -1032,3991 -1086,3907 -1230,3780
 Am Schlachtensee	N -1122,3372 -1161,3358 -1174,3365 -1291,3426 -1475,3552 -1624,3642 -1710,3676 -1787,3690 -1900,3700 -1986,3703 -2323,3598 -2365,3582 -2726,3432 -2948,3290 -3192,3129 -3291,3066 -3352,3071 -3400,3052 -3440,3015 -3450,3006
 Hoiruper Str.	N -3440,3015 -3515,3110
@@ -5584,7 +5585,8 @@ Schlickweg	N -1710,3676 -1683,3723 -1731,3833 -1734,3905
 (Schlickweg - Schlachtensee)	NN -1734,3905 -1720,3940 -1701,3980
 #: note: Beleuchtung vorhanden (by MichaelM)
 Rötheweg	NN -1449,3656 -1488,3750 -1550,3883 -1554,3889 -1621,3972
-Bogotastr.	N -1291,3426 -1319,3517 -1344,3600 -1348,3676 -1366,3747 -1394,3798 -1409,3834
+Bogotastr.	N -1291,3426 -1319,3517 -1344,3600 -1348,3676 -1366,3747 -1394,3798
+(Bogotastr. - Elvirasteig)	NN -1394,3798 -1409,3834
 Von-Luck-Str.	N -3225,2902 -3018,2712 -2910,2601 -2842,2506 -2784,2358 -2720,2200 -2674,2133 -2621,2022
 Jochen-Klepper-Weg	NN -3030,2266 -2784,2358 -2690,2385 -2372,2477
 Beskidenstr.	N -3030,2266 -3030,2349 -2989,2440 -2920,2472 -2842,2506 -2749,2548 -2637,2611 -2440,2760
@@ -5620,7 +5622,7 @@ Havelchaussee	H -2138,11772 -2155,11883 -2217,12116 -2223,12222 -2250,12500 -222
 (Zur Fähre nach Lindwerder)	N -3598,6572 -3669,6573
 Königsweg (Grunewald)	NN -927,6888 -913,6905 -643,7252 -363,7630 100,8339 425,8766
 Hüttenweg (Grunewald, Dahlem)	NN -1854,6898 -1521,6972 -1241,7017 -1006,6911 -927,6888
-Hüttenweg (Grunewald, Dahlem)	H -927,6888 -739,6838 -138,6681 218,6571 297,6541 441,6435 486,6404 605,6345 736,6217 869,6085 884,5974 894,5829 910,5654 948,5597 1022,5525 1067,5486 1212,5353 1333,5246 1385,5214 1443,5193 1486,5175 1514,5163 1573,5152
+Hüttenweg (Grunewald, Dahlem)	H -927,6888 -739,6838 -138,6681 218,6571 297,6541 441,6435 486,6404 605,6345 736,6217 869,6085 884,5974 894,5829 910,5654 948,5597 1009,5537 1091,5465 1212,5353 1333,5246 1385,5214 1443,5193 1486,5175 1514,5163 1573,5152
 Hüttenweg (Grunewald, Dahlem)	N 1573,5152 1964,5070
 Hüttenweg (Grunewald, Dahlem)	NN 1964,5070 2075,5075 2174,5081 2211,5120
 Hüttenweg (Grunewald, Dahlem)	NN 2211,5120 2232,5118 2279,5112 2313,5111
@@ -16330,7 +16332,7 @@ Balatonstr.	N 17479,10452 17741,10386 17791,10375 17915,10350 17946,10344 17960,
 Upstallweg (Friedrichsfelde)	NN 17915,10350 17960,10378 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 Bühler Weg	N 11216,1293 11250,1189 11636,955 11681,1031
 Battenheimer Weg	N 11762,1040 11681,1031 11393,1243
-Kirchstr. (Zehlendorf)	N 600,2922 758,2870
+Kirchstr. (Zehlendorf)	N 600,2922 712,2885 758,2870
 Max-Lingner-Str.	N 11069,17562 11073,17526 11088,17395 11094,17339 11116,17140
 (Max-Lingner-Str. - Maximilianstr.)	NN 11094,17339 10899,17331
 Basdorfer Str.	N 19880,15818 20102,15709 20133,15779
@@ -16549,7 +16551,7 @@ Apostel-Paulus-Str.	N 6442,9068 6366,9056 6276,9042 6214,9003
 #: XXX mögliche Umbenennung der Straße (z.B. nach Cécile Vogt)
 #: also_indoor: search Robert-Rössle-Straße
 #: osm_watch: way id="10951433" version="27"
-#: last_checked: 2025-03-26 (mapillary)
+#: last_checked: 2025-04-23 (indoor research)
 #: check_frequency: 30d (indoor research)
 Robert-Rössle-Str.	N 16521,24864 16681,24764 16719,24734
 Ernst-Ludwig-Heim-Str.	N 16681,24764 16613,24643 16487,24721
@@ -18492,7 +18494,7 @@ Steinstr. (Wannsee)	NH -7909,-2375 -7996,-2293
 Steinstr. (Wannsee)	N -7996,-2293 -8060,-2228
 Dalandweg	N 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
 (Paul-Schwarz-Promenade - Dalandweg)	NN 5387,4214 5385,4236
-Klopstockstr. (Zehlendorf, Schlachtensee)	N -1683,3723 -1629,3761 -1509,3740 -1488,3750 -1422,3785 -1394,3798 -1277,3854 -1174,4029 -1096,4267
+Klopstockstr. (Zehlendorf, Schlachtensee)	N -1683,3723 -1629,3761 -1509,3740 -1488,3750 -1422,3785 -1394,3798 -1282,3868 -1174,4029 -1096,4267
 Schillerstr. (Zehlendorf)	N -1013,3804 -1086,3907 -1174,4029 -1230,4078 -1323,4111
 # REMOVED (ja) --- #: add_fragezeichen: ist der Weg ausgeschildert? --- #: XXX laut DPAG-Mitteilungsblatt 12/2013 ist eine Adresse zur Argentinische Allee gewandert
 Erdmann-Graeser-Weg	NN -833,3619 -935,3706 -961,3737 -1013,3804
@@ -18608,13 +18610,13 @@ Ripleystr.	N 1569,4600 1482,4628 1448,4536
 (Weg über den FU-Campus)	NN 2085,4492 2273,4442 2292,4450 2323,4486 2383,4584 2388,4619 2381,4737 2334,4806 2295,4862 2302,4914
 (Weg über den FU-Campus)	NN 2273,4442 2267,4411 2254,4376
 Taylorstr.	N 1514,5163 1540,5258 1523,5332 1546,5461 1541,5499 1482,5525 1279,5435 1212,5353
-Flanaganstr.	N 1067,5486 1358,5618 1540,5752 1596,5754 1614,5738 1614,5711 1581,5524 1541,5499
-# REMOVED (existiert so nicht) --- Flanaganstr.	N 1482,5525 1482,5573 1461,5599 1424,5613 1358,5618
+Flanaganstr.	N 1091,5465 1150,5522 1562,5762 1596,5754 1614,5738 1614,5711 1581,5524 1541,5499
+# REMOVED (existiert so nicht) --- Flanaganstr.	N 1482,5525 1482,5573 1461,5599 1424,5613 1150,5522
 Flanaganstr.	N 1596,5754 1622,5794 1640,5876
 (Flanaganstr. - Clayallee)	NN 1614,5738 1736,5850
-(Waldweg parallel zur Flanaganstr. zwischen Hüttenweg und Im Jagen)	NN 1022,5525 1697,5938
-(Weg am Waldfriedhof Dahlem)	NN 1022,5525 820,5455
-(Weg an der Wilma-Rudolph-Schule)	NN 820,5455 541,5306
+(Waldweg parallel zur Flanaganstr. zwischen Hüttenweg und Im Jagen)	NN 1009,5537 1697,5938
+(Weg am Waldfriedhof Dahlem)	NN 1009,5537 844,5456 832,5460
+(Weg an der Wilma-Rudolph-Schule)	NN 832,5460 541,5306
 (Schulstr.)	N 1443,5193 1443,5279 1407,5298 1333,5246
 #: note: Privatstraße
 Fünf Morgen	N 1330,4924 1351,4949 1395,4965 1437,5015 1486,5175
@@ -19951,7 +19953,7 @@ Lotte-Lenya-Bogen	NN 5230,10919 5264,10921 5348,10960 5373,10981
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110819.1140.355461.html
 Yva-Bogen	NN 5373,10981 5426,11039 5459,11135
 #: note: parallel existiert noch eine Privatstraße zu einer kleinen Siedlung, diese Straße ist gepflastert
-Am Petersberg	NN 948,5597 820,5455
+Am Petersberg	NN 948,5597 832,5460
 Bambachstr.	N 12044,6707 12052,6660
 # REMOVED --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/neue-querverbindung-am-wendehammer_a219040 --- #: XXX hier gab es Bauarbeiten, hat sich am Weg was geändert?
 (Bambachstr. - Mariendorfer Weg)	NN 12052,6660 12059,6642 12092,6616 12155,6526 12155,6512

@@ -1043,6 +1043,9 @@ Puschkinstr. [Nebenstraße]	1s 14152,9746 14092,9773
 Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung	1s 2706,9108 2674,9111
 (Gethsemanestr.)	1 11191,15810 11204,15838 11225,15828 11210,15798 11191,15810
 Daumstr. [Radweg]	1 -1315,14912 -1336,14786
+Teltower Damm [Nebenfahrbahn]	1 786,3090 712,2885
+Mittelstreifen	3nocross::ignrte 669,3119 786,3090 820,3081
+Teltower Damm [Nebenfahrbahn] -> Potsdamer Str.: Mittelstreifen	3::igndisp 712,2885 786,3090 669,3119
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172

@@ -5366,7 +5366,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_84234_COPY_14',
        data  => <<EOF,
-	1::inwork 5464,5731 5581,5741
+	1::inwork 5471,5732 5581,5741
 EOF
      },
      { from  => 1153738269, # 2006-07-24 12:51
@@ -9057,7 +9057,7 @@ EOF
        source_id => 'IM_005827',
        data  => <<EOF,
 	2::inwork 297,6541 441,6435
-	2::inwork 1514,5163 1486,5175 1443,5193 1385,5214 1333,5246 1212,5353 1067,5486 1022,5525 948,5597 910,5654 894,5829 884,5974 869,6085 736,6217
+	2::inwork 1514,5163 1486,5175 1443,5193 1385,5214 1333,5246 1212,5353 1091,5465 1009,5537 948,5597 910,5654 894,5829 884,5974 869,6085 736,6217
 	2::inwork 486,6404 605,6345
 	2::inwork -138,6681 218,6571
 EOF
@@ -20626,7 +20626,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017848',
        data  => <<EOF,
-	q4::temp 758,2870 600,2922
+	q4::temp 758,2870 712,2885 600,2922
 EOF
      },
      { from  => 1316412000, # 2011-09-19 08:00
@@ -21604,7 +21604,7 @@ EOF
        source_id => 'IM_020306',
        data  => <<EOF,
 #: note: Fest findet auf der Fahrbahn statt, man kann nur schiebend die Gehwege benutzen
-	q4::temp 5464,5731 5280,5714
+	q4::temp 5471,5732 5280,5714
 EOF
      },
      { from  => $isodate2epoch->("2014-08-28 06:00:00"), # 1 Tag Vorlauf # 1347429180, # 2012-09-12 07:53
@@ -23815,13 +23815,13 @@ EOF
 	2::inwork 48229,74776 48296,74641
 EOF
      },
-     { from  => $isodate2epoch->("2024-04-30 00:00:00"),
-       until => $isodate2epoch->("2024-05-01 20:00:00"),
+     { from  => $isodate2epoch->("2025-04-30 00:00:00"),
+       until => $isodate2epoch->("2025-05-01 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
        recurrence_prewarn_days => 7,
 #      text  => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2023', # wenn größer: "Straße des 17. Juni und Ebertstraße"
-       text  => 'Rotes Rathaus: Veranstaltung (Kundgebung des DGB), Rathausstr. und Jüdenstr. könnten unpassierbar sein, am 1. Mai 2024',
+       text  => 'Rotes Rathaus: Veranstaltung (Kundgebung des DGB), Rathausstr. und Jüdenstr. könnten unpassierbar sein, am 1. Mai 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html
@@ -32341,7 +32341,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346016',
        data  => <<EOF,
-	q4::inwork 5464,5731 5280,5714
+	q4::inwork 5471,5732 5280,5714
 EOF
      },
      { from  => undef, # 1594232559, # 2020-07-08 20:22
@@ -36128,7 +36128,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-20 (mapillary)
+#: last_checked: 2025-04-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -37808,7 +37808,7 @@ EOF
 #: note: "Unsere Winterpause 2024 beginnt nach dem letzten Termin am 01. Dezember 2024. Danach sind wir wieder ab März 2025 am Start."
 #: note: "... ersten Flowmarkt am 23. März 2025 ..."
 #: XXX Wann ist Saisonbeginn und -ende?
-#: next_check: 2025-05-04
+#: next_check: 2025-11-01
 	q4::temp:clock 12412,9610 12250,9691
 EOF
      },
@@ -39879,7 +39879,7 @@ EOF
 # REMOVED --- #: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt --- #: osm_watch: way id="1197821336" version="1" --- 
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
 #: also_indoor: traffic (T,H) vvv
-#: last_checked: 2025-04-17 (traffic) vvv
+#: last_checked: 2025-04-23 vvv
 #: check_frequency: 14d (traffic) vvv
 #: next_check: 2025-10-31 vvv
 Grabertstr.	q4::inwork 6923,5057 7030,4937
@@ -44624,15 +44624,17 @@ EOF
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-03-26 vvv
+#: last_checked: 2025-04-23 vvv
 #: check_frequency: 21d vvv
 #: osm_watch: way id="26158804" version="25"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
 # REMOVED (hier mittlerweile offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5721,4356 5541,4305
 # REMOVED (hier mittlerweile offen) --- Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
-Weverpromenade: Umwege	q3::inwork 5541,4305 5721,4356
-Weverpromenade: Sperrung	2::inwork 5721,4356 5738,4361 5787,4400
-Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5774,4408 5787,4400 5865,4353
+#: note: durch den Umweg etwa 30m mehr, etwas enger und verwinkelt
+Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
+# REMOVED (hier nicht mehr) --- Weverpromenade: Sperrung	2::inwork 5721,4356 5738,4361 5787,4400
+# REMOVED (hier nicht mehr) --- Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5774,4408 5787,4400
+Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5787,4400 5865,4353
 #: last_checked ^^^
 #: check_frequency ^^^
 #: priority ^^^
@@ -44654,9 +44656,10 @@ EOF
 zwischen Hirschhorner Weg bis Wasserkäfersteig 19.09.2024 - 31.10.2024	q4::inwork -820,4772 -857,4725 -927,4638
 EOF
      },
-     { from  => $isodate2epoch->("2025-02-28 00:00:00"), # 1718628480, # 2024-06-17 14:48
-       until => $isodate2epoch->("2025-08-31 23:59:59"), # 1736339573, # undef, # $isodate2epoch->("2024-08-30 17:00:00"), # undef, # XXX
-       text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025 (Stand 26.03.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
+     { from  => undef, # $isodate2epoch->("2025-02-28 00:00:00"), # 1718628480, # 2024-06-17 14:48
+       until => undef, # $isodate2epoch->("2025-08-31 23:59:59"), # 1736339573, # undef, # $isodate2epoch->("2024-08-30 17:00:00"), # undef, # XXX
+#      text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025 (Stand 26.03.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
+       text  => 'Teltowkanaluferweg/Bäkebrücke: künftige Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke (Stand 23.04.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BAEKEBRUECKE-2022
@@ -44682,7 +44685,7 @@ EOF
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-#: last_checked: 2025-03-26 vvv
+#: last_checked: 2025-04-23 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2025-02-10 vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
@@ -45288,7 +45291,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-04-17 (website) vvv
+#: last_checked: 2025-04-23 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -46160,7 +46163,7 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-02-02
+#: last_checked: 2025-04-23
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -46401,7 +46404,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G,T,B,A)
-#: last_checked: 2025-03-26
+#: last_checked: 2025-04-23
 #: check_frequency: 120d
 #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545
@@ -46545,12 +46548,12 @@ EOF
 EOF
      },
      { from  => 1738350510, # 2025-01-31 20:08
-       until => 1745445600, # 2025-04-24 00:00
-       text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 23.04.2025',
+       until => $isodate2epoch->("2025-05-21 17:00:00"), # 1745445600, # 2025-04-24 00:00
+       text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 21.05.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: MARKGRAFEN-2025
-#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
+#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025)
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafendamm südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
@@ -46974,16 +46977,17 @@ EOF
      { from  => 1741586400, # 2025-03-10 07:00
        until => undef, # 1743778800, # 2025-04-04 17:00
 #      text  => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., vom 11.03.2025 07:00 bis 04.04.2025 17:00',
-       text  => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., mindestens bis zum 23.04.2025',
+       text  => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., mindestens bis zum 23.05.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1899342020227080235 (hier nur Kfz-Verkehr)
 #: by: https://pbs.twimg.com/media/GlsnQ01XwAAbqgj?format=jpg&name=medium (gesperrte Bereiche je 40m lang)
-#: next_check: 2025-04-23 vvv
-#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten)
+#: next_check: 2025-05-23 vvv
+#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 23.05.2025 + ...)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
-#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten)
-Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
+#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 24.04.2025 + ...)
+#: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten)
+#Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 #: next_check ^^^
 EOF
      },
@@ -47133,7 +47137,7 @@ EOF
 #: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
 #: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025)
 Klingsorstr.	q4::inwork 5206,4432 5150,4345
-Dalandweg: Einbahnstraßenregelung, vermutlich nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
+Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
 EOF
      },
      { from  => 1743915600, # 2025-04-06 07:00
@@ -47280,7 +47284,7 @@ EOF
        text  => 'Stedingerweg: Bauarbeiten zwischen Kniprodestr. und Steengravenweg, Fahrbahn gesperrt, vom 14.04.2025 07:00 bis 23.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.452957,52.539018,14.04.2025,07:00 (Fahrbahnsanierung, auch der Radverkehr ist betroffen, bis 23.04.2025)
+#: source_id: viz2021:13.452957,52.539018,14.04.2025,07:00 (Fahrbahnsanierung, auch der Radverkehr ist betroffen, bis 23.04.2025) (inaktiv)
 #: source_id: viz2021:13.45393,52.53846,14.04.2025,07:00 (bis 23.04.2025) (inaktiv)
 	q4::inwork 13636,14900 13733,14813
 EOF
@@ -47340,6 +47344,43 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025)
 	q4::inwork 2493,10675 2468,10780 2361,10941 2340,11056
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hampstedtstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (T)
+#: last_checked: 2025-04-23
+	q4::inwork 1532,2921 1641,2914
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Heesestr.: Sperrung der Fahrbahn an der Kreuzung Althoffstr., Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G,T)
+#: osm_watch: way id="1237862681" version="3"
+#: osm_watch: way id="4871838" version="28"
+#: osm_watch: way id="1237862680" version="2"
+#: osm_watch: note 4544910 5
+#: osm_watch: note 4544909 3
+#: osm_watch: note 4544105 3
+#: last_checked: 2025-04-23
+	q3::inwork 5280,5714 5276,5622 5274,5557
+EOF
+     },
+     { from  => 1745318220, # 2025-04-22 12:37
+       until => 1745877540, # 2025-04-28 23:59
+       text  => 'Sedanstr.: Wasserrohrbruch, Sperrung zwischen Birkbuschstr. und Johanna-Stegen-Straße, evtl. sind auch Radfahrer betroffen, vom 23.04.2025 12:37 bis 28.04.2025 23:59',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.33027,52.44531,23.04.2025,12:37 (bis 28.04.2025)
+	q4::inwork 5630,4476 5541,4305
 EOF
      },
     );

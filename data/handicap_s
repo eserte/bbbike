@@ -43,7 +43,7 @@ Matth‰ikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 79
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 B¸rgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
-Erkstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg, Umwege	q4::inwork 12765,8435 12598,8390
+Boddinstr.: Sperrung an der Karl-Marx-Str.	q3::inwork 12368,8356 12582,8408
 Rhinstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18024,13843 18050,13835 18134,13811 18198,13816
 Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 17155,11348
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
@@ -2671,6 +2671,8 @@ Simon-Dach-Str.: oft Engstellen durch Lieferverkehr	q2 14006,11843 13981,11746 1
 (Kˆpenicker Allee - Wiesengrund): enger Weg	q3 19813,8564 19761,8540 19760,8529 19752,8514
 Windenweg: einige Fuﬂg‰nger, halbhohe Borde	q3 16306,2364 16342,2338
 Uferweg am Salzhof: kurvenreich	q1 -1928,16423 -1937,16383 -1967,16380 -1962,16312
+In den Alboing‰rten: Fahrbahnanhebungen	q1 7936,6089 7739,6099 7646,6031 7638,5967
+(Bogotastr. - Elvirasteig): Gehweg, Bordsteine	q4 -1394,3798 -1409,3834
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2736,7 +2738,7 @@ Jeanne-Mammen-Bogen: Fuﬂg‰ngerzone	q3 4930,10903 5084,10890
 Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger, Radfahrer sollen schieben	q4 5370,2542 5471,2470
 Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10715,18965 10621,18837 10542,18749 10527,18718 10496,18704
-Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
+Poschingerstr.: enge Straﬂe	q1 5701,6273 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
 Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
 Georg-Lehnig-Str.: enge Straﬂe	q1 14551,13571 14527,13486 14447,13507
 Erich-Kuttner-Str.: enge Straﬂe	q1 14590,13560 14551,13571 14439,13600 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
@@ -2750,8 +2752,7 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q0 6904,20692 6930,20808 6943,20862
 (Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger, Kurven	q1 8834,19253 8830,19239
 (Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger	q0 8830,19239 8933,19179
 (Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger	q1 8933,19179 9022,19135 9159,19010 9446,18855 9458,18859
-(Weg am Waldfriedhof Dahlem): Kurven	q2 1022,5525 820,5455 541,5306
-(Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1022,5525 1697,5938
+(Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1009,5537 1697,5938
 (Breisgauer Str. - Parkplatz Einkaufszentrum): schmaler Fuﬂweg	q3 -2273,3460 -2211,3484 -2173,3513
 (Esplanade - Gr¸ntaler Str.): Zickzack-Kurs	q2 9980,16973 9880,16994 9846,16981
 L¸nette: Fuﬂg‰nger	q1 -1347,15506 -1349,15490 -1444,15443 -1485,15463
@@ -3265,7 +3266,7 @@ Nantesstr.: enge Straﬂe	q0 11200,21689 11255,22028 11231,22065 11073,22225
 Helgiweg: enge Straﬂe	q0 14459,18589 14517,18410
 Helgiweg: enge Straﬂe	q0 14533,18413 14565,18226 14576,18163 14595,18050
 Lummenweg: eng durch parkende Autos	q0 21879,2592 21919,2510 21939,2388
-Hermannstr. (Zehlendorf): enge Straﬂe	q1 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
+Hermannstr. (Zehlendorf): enge Straﬂe	q0 -1093,4529 -1025,4422 -947,4303 -851,4148 -843,4116
 Groﬂkopfstr.: enge Straﬂe (parkende Autos)	q0 5159,17726 5363,17667
 Privatstr. 7: enge Straﬂe	q1 16978,16915 17051,16923 17129,16922 17199,16907 17264,16892
 (Deutschhofer Allee - Unter den Birken): Fuﬂg‰nger, Hunde	q1 21978,8132 22077,8104 22181,8009 22631,7692
@@ -3360,7 +3361,7 @@ Fischtalpark: Fuﬂweg, Schwellen	q3 881,4429 809,4461 769,4480 703,4511
 Rˆtheweg: Fuﬂg‰nger	q1 -1449,3656 -1488,3750 -1550,3883 -1554,3889 -1621,3972
 Slatdorpweg: eng	q2 -1637,3596 -1503,3514 -1487,3505
 (G‰nsebl¸mchenweg - Parkplatz): Bordstein	q3 -1618,2137 -1612,2123
-Sprungschanzenweg: relativ enge Straﬂe	q1 563,5265 175,5126 144,5102
+Sprungschanzenweg: relativ enge Straﬂe	q0 563,5265 175,5126 144,5102
 Altenauer Weg: Bordsteinkante	q2 5406,1400 5435,1390
 Ladenstr.: Einkaufsstraﬂe, viele Fuﬂg‰nger, Radfahren verboten	q4 374,4779 169,4676
 Gelfertstr.	q0 2030,5833 1980,5663 1933,5477 1946,5385 1954,5328 1964,5196 1964,5070 1969,4978 1995,4947 2025,4935 2081,4940 2109,4929 2135,4903 2166,4858

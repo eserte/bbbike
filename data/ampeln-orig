@@ -6,6 +6,10 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten)
+#: next_check: 2025-05-15
+Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
+# 
 # REMOVED --- #: source_id: viz2021:13.202454,52.523618,18.03.2025,10:00 (bis 11.04.2025) (inaktiv)
 # REMOVED --- #: next_check: 2025-04-11
 # REMOVED --- #: valid: -20250411
@@ -58,13 +62,13 @@ Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 # REMOVED --- #: note: außerdem laut VIZ: Michaelkirchplatz/Heinrich-Heine-Platz (Mitte) Kreuzung Legiendamm: Kanalbauarbeiten, Gegenverkehrsregelung mit Baustellenampel, Anbindungen Legiendamm und nördlicher Michaelkirchpatz gesperrt, vom 15.10.2024 11:11 bis 28.10.2024 17:00 (aber als Radfahrer kann man die Ampel zum Überqueren nutzen) --- #: source_id: viz2021:13.41782,52.506594,15.10.2024,11:11 (bis 28.10.2024) (inaktiv) --- #: last_checked: 2024-10-15 (mapillary) --- #: next_check: 2024-10-28 --- #: valid: -20241028 --- Michaelkirchplatz: Gegenverkehrsregelung	X::inwork::alternating 11349,11227
 # 
 #: next_check_id: MARKGRAFEN-2025
-#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
+#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025)
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
 #: last_checked: 2025-04-10
-#: next_check: 2025-04-23 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20250423
+#: next_check: 2025-05-21 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250521
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
 # 
 #: next_check_id: RING-2025
@@ -104,7 +108,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # REMOVED (nun abgebaut) --- #: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325 --- #: last_checked: 2024-08-27 --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
 # 
 #: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2025-04-04 (mapillary)
+#: last_checked: 2025-04-23
 #: check_frequency: 45d
 #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
 #: valid: -20250430
@@ -2798,7 +2802,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-23
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299

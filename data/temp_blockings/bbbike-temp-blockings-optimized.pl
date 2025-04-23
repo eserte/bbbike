@@ -2807,7 +2807,46 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html
+#: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
+#: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20240421 (vor dem Roten Rathaus)
+#: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00
+#: source_id: viz2021:13.37688,52.51775,30.04.2022,12:00
+#: source_id: viz2021:13.36968,52.51571,30.04.2022,12:00
+#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
+# REMOVED (Pariser Platz) ---	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+# REMOVED (Pariser Platz) ---	2::temp 8573,12325 8540,12420
+# REMOVED (Pariser Platz) ---	2::temp 8303,12216 8344,12221 8538,12245 8592,12252
+# REMOVED (Pariser Platz) ---	2::temp 8089,12190 8214,12205
+# REMOVED (Pariser Platz) ---	3::temp 8391,12389 8344,12221 8327,12174
+# REMOVED (Pariser Platz) ---	3::temp 8327,12174 8344,12221 8391,12389
+Rathausstr.	2::temp 10599,12526 10696,12601
+Jüdenstr.	2::temp 10696,12601 10783,12502
+#: tempex ^^^
+',
+         'from' => 1745964000,
+         'id' => 2565,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 7,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              4,
+                              'start',
+                              '2021-05-03T00:00:00'
+                            ]
+                          ],
+         'text' => 'Rotes Rathaus: Veranstaltung (Kundgebung des DGB), Rathausstr. und Jüdenstr. könnten unpassierbar sein, am 1. Mai 2025',
+         'type' => 'gesperrt',
+         'until' => 1746122400
+       },
        undef,
        undef,
        undef,
@@ -4739,7 +4778,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-20 (mapillary)
+#: last_checked: 2025-04-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5261,7 +5300,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: note: "Unsere Winterpause 2024 beginnt nach dem letzten Termin am 01. Dezember 2024. Danach sind wir wieder ab März 2025 am Start."
 #: note: "... ersten Flowmarkt am 23. März 2025 ..."
 #: XXX Wann ist Saisonbeginn und -ende?
-#: next_check: 2025-05-04
+#: next_check: 2025-11-01
 	q4::temp:clock 12412,9610 12250,9691
 ',
          'from' => 1742598000,
@@ -5721,7 +5760,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 # REMOVED --- #: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt --- #: osm_watch: way id="1197821336" version="1" --- 
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
 #: also_indoor: traffic (T,H) vvv
-#: last_checked: 2025-04-17 (traffic) vvv
+#: last_checked: 2025-04-23 vvv
 #: check_frequency: 14d (traffic) vvv
 #: next_check: 2025-10-31 vvv
 Grabertstr.	q4::inwork 6923,5057 7030,4937
@@ -6840,15 +6879,17 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-03-26 vvv
+#: last_checked: 2025-04-23 vvv
 #: check_frequency: 21d vvv
 #: osm_watch: way id="26158804" version="25"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
 # REMOVED (hier mittlerweile offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5721,4356 5541,4305
 # REMOVED (hier mittlerweile offen) --- Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
-Weverpromenade: Umwege	q3::inwork 5541,4305 5721,4356
-Weverpromenade: Sperrung	2::inwork 5721,4356 5738,4361 5787,4400
-Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5774,4408 5787,4400 5865,4353
+#: note: durch den Umweg etwa 30m mehr, etwas enger und verwinkelt
+Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
+# REMOVED (hier nicht mehr) --- Weverpromenade: Sperrung	2::inwork 5721,4356 5738,4361 5787,4400
+# REMOVED (hier nicht mehr) --- Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5774,4408 5787,4400
+Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5787,4400 5865,4353
 #: last_checked ^^^
 #: check_frequency ^^^
 #: priority ^^^
@@ -6885,7 +6926,7 @@ Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5774,44
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-#: last_checked: 2025-03-26 vvv
+#: last_checked: 2025-04-23 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2025-02-10 vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
@@ -6902,11 +6943,11 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',
-         'from' => 1740697200,
+         'from' => undef,
          'id' => 4109,
-         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025 (Stand 26.03.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: künftige Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke (Stand 23.04.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
          'type' => 'gesperrt',
-         'until' => 1756677599
+         'until' => undef
        },
        {
          'data' => '	2::temp 5857,14985 5867,14993
@@ -7114,7 +7155,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-04-17 (website) vvv
+#: last_checked: 2025-04-23 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7455,7 +7496,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-02-02
+#: last_checked: 2025-04-23
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -7582,7 +7623,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        {
          'data' => '#: also_indoor: traffic (G,T,B,A)
-#: last_checked: 2025-03-26
+#: last_checked: 2025-04-23
 #: check_frequency: 120d
 #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545
@@ -7714,7 +7755,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: next_check_id: MARKGRAFEN-2025
-#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025)
+#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025)
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafendamm südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
@@ -7722,9 +7763,9 @@ Markgrafendamm nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
 ',
          'from' => 1738350510,
          'id' => 4249,
-         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 23.04.2025',
+         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 21.05.2025',
          'type' => 'handicap',
-         'until' => 1745445600
+         'until' => 1747839600
        },
        undef,
        {
@@ -8018,16 +8059,17 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1899342020227080235 (hier nur Kfz-Verkehr)
 #: by: https://pbs.twimg.com/media/GlsnQ01XwAAbqgj?format=jpg&name=medium (gesperrte Bereiche je 40m lang)
-#: next_check: 2025-04-23 vvv
-#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten)
+#: next_check: 2025-05-23 vvv
+#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 23.05.2025 + ...)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
-#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten)
-Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
+#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 24.04.2025 + ...)
+#: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten)
+#Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 #: next_check ^^^
 ',
          'from' => 1741586400,
          'id' => 4279,
-         'text' => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., mindestens bis zum 23.04.2025',
+         'text' => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., mindestens bis zum 23.05.2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8135,7 +8177,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
 #: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025)
 Klingsorstr.	q4::inwork 5206,4432 5150,4345
-Dalandweg: Einbahnstraßenregelung, vermutlich nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
+Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
 ',
          'from' => 1744149600,
          'id' => 4291,
@@ -8263,17 +8305,7 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.452957,52.539018,14.04.2025,07:00 (Fahrbahnsanierung, auch der Radverkehr ist betroffen, bis 23.04.2025)
-#: source_id: viz2021:13.45393,52.53846,14.04.2025,07:00 (bis 23.04.2025) (inaktiv)
-	q4::inwork 13636,14900 13733,14813
-',
-         'from' => 1744520400,
-         'id' => 4303,
-         'text' => 'Stedingerweg: Bauarbeiten zwischen Kniprodestr. und Steengravenweg, Fahrbahn gesperrt, vom 14.04.2025 07:00 bis 23.04.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1745420400
-       },
+       undef,
        {
          'data' => '#: source_id: 257301352 (bis 27.06.2025)
 	2::inwork 55014,74593 54996,74647
@@ -8336,6 +8368,46 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'text' => 'Herbartstr.: Bauarbeiten zwischen Dernburgstr. und Neue Kantstr., evtl. sind auch Radfahrer betroffen, vom 22.04.2025 07:00 bis 25.07.2025 23:59',
          'type' => 'handicap',
          'until' => 1753480740
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (T)
+#: last_checked: 2025-04-23
+	q4::inwork 1532,2921 1641,2914
+',
+         'from' => undef,
+         'id' => 4310,
+         'text' => 'Hampstedtstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G,T)
+#: osm_watch: way id="1237862681" version="3"
+#: osm_watch: way id="4871838" version="28"
+#: osm_watch: way id="1237862680" version="2"
+#: osm_watch: note 4544910 5
+#: osm_watch: note 4544909 3
+#: osm_watch: note 4544105 3
+#: last_checked: 2025-04-23
+	q3::inwork 5280,5714 5276,5622 5274,5557
+',
+         'from' => undef,
+         'id' => 4311,
+         'text' => 'Heesestr.: Sperrung der Fahrbahn an der Kreuzung Althoffstr., Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.33027,52.44531,23.04.2025,12:37 (bis 28.04.2025)
+	q4::inwork 5630,4476 5541,4305
+',
+         'from' => 1745318220,
+         'id' => 4312,
+         'text' => 'Sedanstr.: Wasserrohrbruch, Sperrung zwischen Birkbuschstr. und Johanna-Stegen-Straße, evtl. sind auch Radfahrer betroffen, vom 23.04.2025 12:37 bis 28.04.2025 23:59',
+         'type' => 'handicap',
+         'until' => 1745877540
        }
      
 );

@@ -218,7 +218,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-03-26
+#: last_checked: 2025-04-23
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-05-17 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -1730,6 +1730,9 @@ Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung	1s:q3 2706,9108 
 # 
 #: note: explizit Einfahrt verboten
 Daumstr. [Radweg]	1 -1315,14912 -1336,14786
+# 
+Teltower Damm [Nebenfahrbahn]	1 786,3090 712,2885
+Potsdamer Str.: Mittelstreifen	3nocross 669,3119 786,3090 820,3081
 # 
 #: section ^^^
 ######################################################################
@@ -4067,7 +4070,7 @@ Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7
 #: check_frequency: 180d
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 # 
-#: last_checked: 2024-07-17 vvv
+#: last_checked: 2025-04-19 (mapillary) vvv
 #: check_frequency: 360d vvv
 #: osm_watch: way id="741297435" version="11" brb
 Zum Feldrain (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130
@@ -4918,7 +4921,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
-#: last_checked: 2025-04-20
+#: last_checked: 2025-04-23
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4931,7 +4934,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://entwicklungsstadt.de/bauvorhaben-so-ist-der-stand-bei-berlins-stillstand-projekten/
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
-#: last_checked: 2025-04-12 vvv
+#: last_checked: 2025-04-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
