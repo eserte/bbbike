@@ -6,6 +6,11 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025)
+#: next_check: 2025-05-06
+#: valid: -20250506
+Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
+# 
 #: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten)
 #: next_check: 2025-05-15
 Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
@@ -23,13 +28,13 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 #: valid: -20250530
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
-# REMOVED (aber die nächste provisorische Ampel an der Kreuzung mit der Wallstr. ist in den Startlöchern)
-# REMOVED --- #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025)
-# REMOVED --- #: note: zuerst 10642,11901, mittlerweile nach Süden gewandert
-# REMOVED --- #: last_checked: 2025-04-22
-# REMOVED --- #: next_check: 2025-05-14
-# REMOVED --- #: valid: -20250514
-# REMOVED --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
+#: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025)
+#: last_checked: 2025-04-24
+#: next_check: 2025-05-14
+#: valid: -20250514
+# REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
+# REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
+Neue Roßstr./Wallstr.	X::inwork 10722,11816
 # 
 # REMOVED --- #: source_id: viz2021:13.486871,52.577222,11.11.2024,07:00 (bis 14.02.2025)
 # REMOVED --- #: note: Länge der Gegenverkehrsstrecke: 50m

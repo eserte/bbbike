@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-04-21
+#: last_checked: 2025-04-24
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -57,7 +57,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="15"
 #: osm_watch: way id="1072662717" version="17"
-#: last_checked: 2025-04-22
+#: last_checked: 2025-04-24
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -135,7 +135,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-03-01 vvv
+#: last_checked: 2025-04-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -3705,7 +3705,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-04-22
+#: last_checked: 2025-04-24
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-

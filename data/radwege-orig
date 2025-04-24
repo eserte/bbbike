@@ -540,7 +540,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-04-10 vvv
+#: last_checked: 2025-04-24 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1306,6 +1306,10 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848419541438894570 (Wochenendsperrung war wohl nur am Sa bis zum Nachmittag gewesen)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neuer-autobahntunnel-fuer-berlin-so-koennte-die-a100-die-spree-unterqueren-li.2278569 (neuer Überbau in der 2. Jahreshälfte 2025)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-bauen/drei-bezirke-warnen-vor-verkehrskollaps-ohne-elsenbruecke_a433101
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1554022.php (nur Autoverkehr)
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/elsenbruecke/vzp_bv-elsenbruecke_uml_vollsperrung-wartung.pdf
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/elsenbruecke/vzp_bv-elsenbruecke_bereich_friedrichshain_vollsperrung-wartung.pdf
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/elsenbruecke/vzp_bv-elsenbruecke_bereich_treptow_vollsperrung-wartung.pdf
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
 #: source_id: 2147346063 (inaktiv)
@@ -8616,14 +8620,15 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (Gitschiner/Alexandrinenstr., bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv) (bis 01.11.2024) (bis 29.11.2024) (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.399611,52.49841,08.10.2024,15:06 (bis 01.11.2024) (inaktiv)
 #: source_id: viz2021:13.40304,52.49845,31.07.2024,14:54 (bis 31.08.2024) (inaktiv)
-#: source_id: viz2021:13.408209,52.498506,23.04.2025,15:47 (bis 31.08.2025)
+#: source_id: viz2021:13.408209,52.498506,23.04.2025,15:47 (bis 31.08.2025) (inaktiv)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="34"
 #: osm_watch: way id="335487059" version="29"
 #: last_checked: 2025-04-08 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-06-30 (infravelo) vvv
+#: next_check: 2025-04-24 (VIZ-Verkehrsmeldung aufgehoben) vvv
+# REMOVED --- #: next_check: 2025-06-30 (infravelo) vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025)
 # REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle
 #: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;, danach provisorischer Radweg auf Hochbord

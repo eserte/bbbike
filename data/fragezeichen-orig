@@ -4046,9 +4046,10 @@ Grunewaldstr.: geschützter Radfahrstreifen von Kufsteiner Str./Bamberger Str. bi
 #: check_frequency ^^^
 #: next_check ^^^
 #: last_checked ^^^
-#: source_id: viz2021:13.349444,52.48949,24.03.2025,07:00 (bis 24.04.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.349444,52.48949,24.03.2025,07:00 (bis 24.04.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.35319,52.48988,24.03.2025,00:00 (bis 24.04.2025) (inaktiv)
 #: XXX zwischen Goltzstr. und Martin-Luther-Str. Richtung Westen in Bau
+#: note: bei rbb bis 09.07.2025 verlängert, bei VIZ nicht
 #: last_checked: 2025-04-09
 #: check_frequency: 60d
 #: next_check: 2025-09-30 (infravelo)
@@ -5636,7 +5637,7 @@ Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 1498
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2025-04-22
+#: last_checked: 2025-04-24
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
@@ -7320,7 +7321,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2025-04-10
+#: last_checked: 2025-04-24
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7587,7 +7588,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-04-22
+#: last_checked: 2025-04-24
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8155,7 +8156,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2025-04-22
+#: last_checked: 2025-04-24
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradastraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -11825,7 +11826,7 @@ Bebauungsplan 6-40 VE: wird hier der Park verkleinert?	? -2064,2244 -1997,2095 -
 #: osm_watch: way id="668307419" version="3"
 #: osm_watch: way id="1120450475" version="5"
 #: priority: #D
-#: last_checked: 2025-02-04
+#: last_checked: 2025-04-24
 #: check_frequency: 360d
 #: next_check: 2026-06-30 (Hochbau-Website + 3mo)
 Grünanlage neben dem Berghain: wann wird es hier eine benutzbare Grünfläche geben?	? 13015,11806 12971,11763 12998,11730 13037,11769 13015,11806

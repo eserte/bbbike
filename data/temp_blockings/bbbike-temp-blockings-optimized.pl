@@ -1577,7 +1577,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-03-02
+#: last_checked: 2025-04-24
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -5982,7 +5982,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
          'data' => '#: next_check_id: U6-2022
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
-#: source_id: viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025)
+#: source_id: viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv)
 #: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
 #: last_checked: 2024-08-21 (daf)
@@ -6826,7 +6826,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-22 vvv
+#: last_checked: 2025-04-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6902,53 +6902,7 @@ Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5787,44
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: BAEKEBRUECKE-2022
-#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/wasserstrassen-neubauamt-will-baekebruecke-2022-neu-errichten_a284203
-#: by: https://plus.tagesspiegel.de/berlin/neubau-der-bakebrucke-um-ein-jahr-verschoben-was-aus-zwolf-projekten-aus-dem-jahr-2021-wurde-351799.html (Neubau um ein Jahr verschoben)
-#: by: https://www.morgenpost.de/berlin/article234710931/60-Berliner-Bruecken-derzeit-nur-eingeschraenkt-nutzbar.html (hier wird auch die Techowbrücke erwähnt)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/marggraffbruecke-in-berlin-wird-eine-weitere-bruecke-abgerissen-li.207787
-#: by: https://www.berliner-zeitung.de/mensch-metropole/betonkrebs-und-risse-in-berlin-startet-das-naechste-grosse-brueckenbauprojekt-li.315212 (Erwähnung)
-#: by[removed]: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/08_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.html?nn=3289178 (Stand 1.3.2023)
-#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/09_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.html?nn=3289178 (umbenannt, weiterhin Stand 1.3.2023)
-#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/08_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.pdf?__blob=publicationFile&v=2 (Stand 1.3.2023, in Planung: Bäkebrücke, aber auch Knesebeckbrücke und Altglienicker Brücke)
-#: by: https://khp.berlin/referenzen/ingenieurbau/planungen/baekebruecke-in-berlin-lichterfelde/
-#: by: https://www.facebook.com/groups/274489925939434/posts/7611685488886471 (in einem Kommentar steht, dass Fußgänger rüberkommen)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/baekebruecke-wird-erneuert_a421024
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1526632.php (neue Sperrung des südlichen Teltowkanaluferwegs und der Bäkebrücke)
-#: by: https://www.berliner-zeitung.de/news/steglitz-zehlendorf-baekestrasse-in-lichterfelde-wegen-neuer-baustelle-bis-august-gesperrt-li.2292684
-#: by: https://www.tagesspiegel.de/berlin/bezirke/uferweg-am-teltowkanal-ab-mitte-februar-gesperrt-berliner-wasserbetriebe-erneuern-abwasserleitungen-13119478.html
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/promenade-komplett-gesperrt_a435194
-# REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
-#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
-#: also_indoor: search Bäkebrücke
-#: note: traffic natürlich nur die Bäkebrücke betreffend
-#: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
-#: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-#: last_checked: 2025-04-23 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2025-02-10 vvv
-# REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
-#: osm_watch: way id="5363433" version="26"
-#: osm_watch[closed]: note 4442541 4
-# REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
-Bäkebrücke: gesperrt	2::inwork 4587,3097 4659,3065
-# REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
-# REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4618,3135 4692,3225
-#: osm_watch: way id="121176503" version="11"
-Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4274,2717 4236,2678
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 4109,
-         'text' => 'Teltowkanaluferweg/Bäkebrücke: künftige Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke (Stand 23.04.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	2::temp 5857,14985 5867,14993
 ',
@@ -7029,7 +6983,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: note 4383533 3
 #: osm_watch: way id="37948631" version="9"
 #: also_indoor: traffic (H,G,B,T,A,W)
-#: last_checked: 2025-04-12 (traffic)
+#: last_checked: 2025-04-24 (traffic + altlandsberg website)
 #: check_frequency: 14d (traffic + altlandsberg website)
 #: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
@@ -7204,7 +7158,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
 #: osm_watch: way id="189141737" version="7"
 #: osm_watch: way id="1225345724" version="1"
 #: osm_watch: way id="1356785471" version="2"
-#: last_checked: 2025-02-20 vvv
+#: last_checked: 2025-04-24 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 (entwicklungsstadt: Abriss der ehem. Tankstelle) vvv
 	3 12207,11763 12132,11788 11966,11832
@@ -7637,9 +7591,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025) (bis 28.04.2025)
+         'data' => '#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025) (bis 28.04.2025) (bis 23.05.2025)
 #: last_checked: 2025-03-26 (mapillary)
-#: next_check: 2025-04-28 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-05-23 (VIZ-Verkehrsmeldung, evtl. wird verlängert?)
 # REMOVED --- #: next_check: 2025-06-30
 	q4::inwork; 11001,18528 11123,18343
 ',
@@ -8062,7 +8016,7 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 #: next_check: 2025-05-23 vvv
 #: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 23.05.2025 + ...)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
-#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 24.04.2025 + ...)
+#: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 24.04.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten)
 #Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 #: next_check ^^^
@@ -8116,16 +8070,7 @@ Einbecker Str.	q3::inwork; 17020,11748 17169,11677
          'until' => 1761318000
        },
        undef,
-       {
-         'data' => '#: source_id: 257300425 (bis 23.04.2025)
-	2::inwork 49584,69540 49463,69701 49250,70086
-',
-         'from' => 1745211600,
-         'id' => 4286,
-         'text' => 'Angermünde, Bahnübergang Prenzlauer Str.: Gleisbauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 22.04.2025 07:00 Uhr bis 23.04.2025 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1745431200
-       },
+       undef,
        {
          'data' => '#: source_id: LS/221-E/25/030 (bis 10.05.2025)
 	2::inwork 34802,45368 34613,45287 34518,45231 34093,44866 32572,43561 32518,43468 32401,42954 32348,42876 30754,42070
@@ -8248,7 +8193,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
        },
        {
          'data' => '#: next_check_id: GRUNEWALDSTR-2025
-#: source_id: viz2021:13.349444,52.48949,24.03.2025,07:00 (bis 24.04.2025)
+#: source_id: viz2021:13.349444,52.48949,24.03.2025,07:00 (bis 24.04.2025) (inaktiv)
 	q4::inwork 6851,9365 6921,9275
 ',
          'from' => 1744203247,
@@ -8408,6 +8353,16 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'text' => 'Sedanstr.: Wasserrohrbruch, Sperrung zwischen Birkbuschstr. und Johanna-Stegen-Straße, evtl. sind auch Radfahrer betroffen, vom 23.04.2025 12:37 bis 28.04.2025 23:59',
          'type' => 'handicap',
          'until' => 1745877540
+       },
+       {
+         'data' => '#: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten)
+	q4::inwork 8365,5502 8365,5418
+',
+         'from' => 1744520400,
+         'id' => 4313,
+         'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 13.06.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1749826800
        }
      
 );
