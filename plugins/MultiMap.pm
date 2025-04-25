@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.37;
+$VERSION = 2.38;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -265,11 +265,27 @@ sub register {
 	      tags => [qw(bicycle pubtrans)],
 	    };
 	$main::info_plugins{__PACKAGE__ . '_VIZ'} =
-	    { name => 'VIZ Berlin',
-	      callback => sub { showmap_viz(@_) },
-	      callback_3_std => sub { showmap_url_viz(@_) },
+	    { name => sub {
+		  my %args = @_;
+		  my $current_tag_filter = $args{current_tag_filter}||'';
+		  if ($current_tag_filter eq 'bicycle') {
+		      'DB Rad+ Verkehrsmengen 2024';
+		  } else {
+		      'VIZ Berlin',
+		  }
+	      },
+	      callback => sub {
+		  my %args = @_;
+		  my $current_tag_filter = $args{current_tag_filter}||'';
+		  if ($current_tag_filter eq 'bicycle') {
+		      showmap_viz(layers => 'radplus_2024', @_);
+		  } else {
+		      showmap_viz(@_);
+		  }
+	      },
+	      callback_3 => sub { show_viz_menu(@_) },
 	      ($images{VIZ} ? (icon => $images{VIZ}) : ()),
-	      tags => [qw(traffic)],
+	      tags => [qw(traffic bicycle)],
 	    };
 	$main::info_plugins{__PACKAGE__ . "_LGB"} =
 	    { name => "LGB Brandenburg Topo DTK10 (via mc)",
@@ -1929,20 +1945,22 @@ sub showmap_url_gdi_berlin {
     my $transparency = join ',', ("0") x $number_layerids;
 
     my($x,$y) = _wgs84_to_utm33U($args{py}, $args{px});
-    my $scale = sub {
-	local $_ = $args{mapscale_scale};
-	if    ($_ > 500_000*3/4) { 0 }
-	elsif ($_ > 250_000*3/4) { 1 }
-	elsif ($_ > 100_000*3/4) { 2 }
-	elsif ($_ >  50_000*3/4) { 3 }
-	elsif ($_ >  25_000*3/4) { 4 }
-	elsif ($_ >  10_000*3/4) { 5 }
-	elsif ($_ >   5_000*3/4) { 6 }
-	elsif ($_ >   2_500*3/4) { 7 }
-	elsif ($_ >   1_000*3/4) { 8 }
-	else                     { 9 }
-    }->();
+    my $scale = _gdi_scale($args{mapscale_scale});
     sprintf 'https://gdi.berlin.de/viewer/main/?Map/layerIds=%s&visibility=%s&transparency=%s&Map/center=[%s,%s]&Map/zoomLevel=%d', $layerids, $visibility, $transparency, $x, $y, $scale;
+}
+
+sub _gdi_scale {
+    local $_ = $_[0];
+    if    ($_ > 500_000*3/4) { 0 }
+    elsif ($_ > 250_000*3/4) { 1 }
+    elsif ($_ > 100_000*3/4) { 2 }
+    elsif ($_ >  50_000*3/4) { 3 }
+    elsif ($_ >  25_000*3/4) { 4 }
+    elsif ($_ >  10_000*3/4) { 5 }
+    elsif ($_ >   5_000*3/4) { 6 }
+    elsif ($_ >   2_500*3/4) { 7 }
+    elsif ($_ >   1_000*3/4) { 8 }
+    else                     { 9 }
 }
 
 sub showmap_gdi_berlin {
@@ -2310,16 +2328,75 @@ sub showmap_hierbautberlin {
 
 sub showmap_url_viz {
     my(%args) = @_;
+    my $layers = delete $args{layers} || 'default';
+
+    my $layerids = {
+	default      => 'basemap_raster_farbe,Verkehrslage,Baustellen_OCIT',
+	radplus_2024 => 'basemap_raster_farbe,radplus_2024',
+	radplus_2023 => 'basemap_raster_farbe,radplus_2023',
+    }->{$layers};
+    if (!$layerids) {
+	main::status_message('error', 'no layers found or invalid layers');
+	return;
+    }
+    my $number_layerids = scalar split /,/, $layerids;
+    my $visibility = join ',', ("true") x $number_layerids;
+    my $transparency = join ',', ("40", (("0") x ($number_layerids-1)));
+
     my($x,$y) = _wgs84_to_utm33U($args{py}, $args{px});
-    my $scale = 11; # XXX hardcoded for now
+    my $scale = _viz_scale($args{mapscale_scale});
     # note: when bookmarking then center has additional [...], but it works also without (and less problems regarding escaping or org-mode links)
-    sprintf 'https://viz.berlin.de/site/_masterportal/berlin/index.html?Map/layerIds=basemap_raster_farbe,Verkehrslage,Baustellen_OCIT&visibility=true,true,true&transparency=40,0,0&Map/center=%d,%d&Map/zoomLevel=%d', $x, $y, $scale;
+    sprintf 'https://viz.berlin.de/site/_masterportal/berlin/index.html?Map/layerIds=%s&visibility=%s&transparency=%s&Map/center=%d,%d&Map/zoomLevel=%d', $layerids, $visibility, $transparency, $x, $y, $scale;
+}
+
+sub _viz_scale {
+    local $_ = $_[0];
+    if    ($_ > 500_000*3/4) {  3 }
+    elsif ($_ > 250_000*3/4) {  4 }
+    elsif ($_ > 100_000*3/4) {  5 }
+    elsif ($_ >  50_000*3/4) {  6 }
+    elsif ($_ >  25_000*3/4) {  7 }
+    elsif ($_ >  10_000*3/4) {  8 }
+    elsif ($_ >   5_000*3/4) {  9 }
+    elsif ($_ >   2_500*3/4) { 10 }
+    elsif ($_ >   1_000*3/4) { 11 }
+    else                     { 12 }
 }
 
 sub showmap_viz {
     my(%args) = @_;
     my $url = showmap_url_viz(%args);
     start_browser($url);
+}
+
+sub show_viz_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_VIZ_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'VIZ Berlin',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => 'DB Rad+ 2024',
+	 -command => sub { showmap_viz(layers => 'radplus_2024', %args) },
+        );
+    $link_menu->command
+	(-label => 'DB Rad+ 2023',
+	 -command => sub { showmap_viz(layers => 'radplus_2023', %args) },
+        );
+    $link_menu->separator;
+    $link_menu->command
+	(-label => ($lang eq 'de' ? "Link kopieren" : 'Copy link'),
+	 -command => sub { _copy_link(showmap_url_viz(%args)) },
+     );
+
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
 }
 
 ######################################################################
