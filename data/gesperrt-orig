@@ -179,7 +179,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-04-21 vvv
+#: last_checked: 2025-04-26 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -218,7 +218,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-04-23
+#: last_checked: 2025-04-26
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-05-17 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -239,7 +239,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="21"
-#: last_checked: 2025-03-25 (mapillary)
+#: last_checked: 2025-04-25
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -1792,8 +1792,9 @@ Horstweg - Nuthestr.	2 -10495,-2787 -10324,-2937 -10250,-2857
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/rehrucken-in-der-spornstrasse-potsdams-einzige-denkmalgeschutzte-strasse-erneuert-13574632.html
 #: osm_watch: way id="9528682" version="17"
-#: osm_watch: note 4723096 1
+#: osm_watch: note 4723096 2
 #: XXX für Radfahrer mittlerweile in beide Richtungen befahrbar?
+#: next_check: 2025-09-01
 Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10250,-2857 -10321,-2800 -10547,-2606 -10604,-2567 -10900,-2386 -11007,-2259 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
@@ -2153,7 +2154,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: https://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="16"
-#: last_checked: 2025-03-05
+#: last_checked: 2025-04-23 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
@@ -3977,7 +3978,7 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1
 #: osm_watch: note 4545425 2
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
-#: last_checked: 2025-04-16
+#: last_checked: 2025-04-26
 #: check_frequency: 120d
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
@@ -3985,7 +3986,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
-#: last_checked: 2025-04-06 (bahninfo-forum) vvv
+#: last_checked: 2025-04-25 vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="5"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -4049,7 +4050,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: last_checked ^^^
 # 
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-04-07
+#: last_checked: 2025-04-26
 #: check_frequency: 45d
 Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
 # 
@@ -4424,7 +4425,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-26
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4503,7 +4504,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2025-02-11 (Baustraße existiert noch)
+#: last_checked: 2025-04-21 (architektur-urbanistik) (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23 (Amtsblatt)
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -4685,7 +4686,7 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: XXX Wird es einen Anschluss an den Traberweg geben?
 #: osm_watch: note 4522174 2
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-26
 #: check_frequency: 90d
 #: next_check: 2025-09-20 (entwicklungsstadt)
 Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700
@@ -4709,7 +4710,7 @@ Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 # REMOVED --- #: last_checked: 2024-12-27 --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen! --- #: note: Durchfahrt offiziell noch nicht erlaubt, aber hier parken schon Autos in der Parktaschen: q4 -> q3 --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q3:inwork 17753,8290 17771,8349 17794,8429
-#: last_checked: 2025-04-13
+#: last_checked: 2025-04-26
 # REMOVED --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17813,8508
 # REMOVED (weitgehend offen) --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
@@ -4772,7 +4773,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2025-04-09 vvv
+#: last_checked: 2025-04-25 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -4949,7 +4950,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: osm_watch: way id="54630384" version="13"
 #: osm_watch: way id="1339306638" version="2"
 #: XXX beide Wege gesperrt, nördlicher komplett und südlicher teilweise
-#: last_checked: 2025-02-21
+#: last_checked: 2025-04-26
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (BA-Pressemitteilung)
 Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
@@ -5130,7 +5131,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-04-16
+#: last_checked: 2025-04-26
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5138,7 +5139,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # 
 #: osm_watch: note 4480556 3
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-04-16
+#: last_checked: 2025-04-25 (traffic)
 #: check_frequency: 14d (traffic)
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 

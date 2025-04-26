@@ -3608,12 +3608,13 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171 15154,9106 15190,9027
 Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
 Bulgarische Str. - Karpfenteich	2::inwork 15439,8839 15297,8921 15245,8916
+Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,9542 14384,9565 14478,9545
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3027,
-         'text' => 'Treptower Park: einige Wege im südöstlichen Teil sind wegen Bauarbeiten gesperrt',
+         'text' => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4212,7 +4213,7 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 #: osm_watch: way id="362719487" version="12"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-03-14 (daf)
+#: last_checked: 2025-04-25
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website)
 	q4::inwork 6021,10405 6116,10688
@@ -5171,7 +5172,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2025-03-28
+#: last_checked: 2025-04-25
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (stories.bauhaus.de)
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -5253,7 +5254,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-04-21
+#: last_checked: 2025-04-26
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5434,7 +5435,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025) (inaktiv)
 #: note: mittlerweile kann man hier eigentlich ganz gut fahren (deshalb nun Konjunktiv im Text)
-#: last_checked: 2025-04-09 vvv
+#: last_checked: 2025-04-26 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-05-17 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
@@ -5480,8 +5481,8 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: also_indoor: traffic (re-W,re-G)
-#: last_checked: 2025-02-05
+#: also_indoor: traffic (re-W,ex-G,T)
+#: last_checked: 2025-04-25
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -6175,7 +6176,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="35"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-04-18 (osm) vvv
+#: last_checked: 2025-04-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -6428,7 +6429,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: XXX laut osm opening_date=2028
-#: last_checked: 2025-04-06 (bahninfo-forum)
+#: last_checked: 2025-04-25
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -6746,7 +6747,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: note: keine Freigabe der Gehwege für Radfahrer
 #: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
 #: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-04-20
+#: last_checked: 2025-04-25
 #: next_check: 2025-04-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork 15077,11910 15110,12107
 ',
@@ -6773,8 +6774,8 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        {
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025)
-#: osm_watch: way id="1303423090" version="2"
-#: note: laut osm opening_date=2025-08-01
+#: osm_watch: way id="1303423090" version="3"
+#: note: laut osm opening_date=2025-08-01; laut Baustellenschild der Wasserbetriebe bis Mai 2025
 	q3::inwork 10573,17566 10466,17464
 ',
          'from' => 1717909200,
@@ -7135,7 +7136,7 @@ Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-02-05
+#: last_checked: 2025-04-25
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -7158,7 +7159,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
 #: osm_watch: way id="189141737" version="7"
 #: osm_watch: way id="1225345724" version="1"
 #: osm_watch: way id="1356785471" version="2"
-#: last_checked: 2025-04-24 vvv
+#: last_checked: 2025-04-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 (entwicklungsstadt: Abriss der ehem. Tankstelle) vvv
 	3 12207,11763 12132,11788 11966,11832
@@ -7223,7 +7224,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="35"
 #: osm_watch[closed]: note 4536637 10
-#: last_checked: 2025-04-02 (mapillary) 
+#: last_checked: 2025-04-25
 #: next_check: 2025-06-14
 	2::inwork 9544,17629 9586,17665
 ',
@@ -7616,7 +7617,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: source_id: viz2021:13.298658,52.457781,22.01.2025,07:00 (bis 01.10.2025 + weitere Bauarbeiten bis 09/2025) (inaktiv)
-#: source_id: viz2021:13.298658,52.457781,03.02.2025,10:00 (bis 25.04.2025 + weitere Bauarbeiten bis 09/2025)
+#: source_id: viz2021:13.298658,52.457781,03.02.2025,10:00 (bis 25.04.2025 + weitere Bauarbeiten bis 09/2025) (bis 02.05.2025 + ...)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1881943627896922593
 #: by: https://pbs.twimg.com/media/Ghzqa-yXAAA6Iuk?format=jpg&name=large
 	q4::inwork 3355,5655 3346,5629
@@ -7686,16 +7687,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => 1746568740
        },
-       {
-         'data' => '#: source_id: viz2021:13.31084,52.470147,28.01.2025,07:00 (bis 13.03.2025) (bis 25.04.2025)
-	q4::inwork 4159,6890 4160,7043 4160,7278
-',
-         'from' => 1737957600,
-         'id' => 4247,
-         'text' => 'Johannisberger Str.: Bauarbeiten zwischen Wiesbadener Str. und Rüdesheimer Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 07:00 bis 25.04.2025',
-         'type' => 'handicap',
-         'until' => 1745618399
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (G,B,T,A)
 #: note: by rbb
@@ -7892,7 +7884,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED --- #: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert --- q2::inwork 18266,9853 18066,9770 17920,9698
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-04-21
+#: last_checked: 2025-04-26
 #: check_frequency: 14d
 Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 ',
@@ -8191,17 +8183,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'type' => 'handicap',
          'until' => 1746050400
        },
-       {
-         'data' => '#: next_check_id: GRUNEWALDSTR-2025
-#: source_id: viz2021:13.349444,52.48949,24.03.2025,07:00 (bis 24.04.2025) (inaktiv)
-	q4::inwork 6851,9365 6921,9275
-',
-         'from' => 1744203247,
-         'id' => 4298,
-         'text' => 'Schwäbische Str.: Anbindung an die Grunewaldstr. gesperrt, voraussichtlich bis 24.4.2025, evtl. wird verlängert',
-         'type' => 'handicap',
-         'until' => 1745524800
-       },
+       undef,
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/grunewaldstra%C3%9Fe-8-neubau.1300/#post-24727
 #: osm_watch: way id="276210232" version="5"
@@ -8306,7 +8288,9 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
        },
        {
          'data' => '#: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025)
-	q4::inwork 2493,10675 2468,10780 2361,10941 2340,11056
+#: note: an der Kantstr. steht ein Sackgassenschilder, Fußgänger/Radfahrer frei
+	q4::inwork 2493,10675 2468,10780
+# REMOVED (im nördlichen Abschnitt nicht) ---	q4::inwork 2468,10780 2361,10941 2340,11056
 ',
          'from' => 1745211600,
          'id' => 4309,
@@ -8329,9 +8313,10 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G,T)
-#: osm_watch: way id="1237862681" version="3"
+#: osm_watch: way id="1237862681" version="4"
 #: osm_watch: way id="4871838" version="28"
 #: osm_watch: way id="1237862680" version="2"
+#: osm_watch: way id="1237862682" version="2"
 #: osm_watch: note 4544910 5
 #: osm_watch: note 4544909 3
 #: osm_watch: note 4544105 3

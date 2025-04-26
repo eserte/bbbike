@@ -6,10 +6,21 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: GRUNEWALDSTR-2025
+#: source_id: viz2021:13.35635,52.49021,25.04.2025,10:06 (bis 15.05.2025)
+#: source_id: viz2021:13.356365,52.490201,24.04.2025,12:00 (bis 15.05.2025 + weitere Bauabschnitte)
+#: next_check: 2025-05-15
+# REMOVED --- #: valid: -20250515
+Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
+# 
 #: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025)
-#: next_check: 2025-05-06
-#: valid: -20250506
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lnmh7lfw4k2j
+#: next_check: 2025-05-06 vvv
+#: valid: -20250506 vvv
 Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
+Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 17037,4794
+#: valid ^^^
+#: next_check ^^^
 # 
 #: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten)
 #: next_check: 2025-05-15
@@ -29,7 +40,7 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
 #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025)
-#: last_checked: 2025-04-24
+#: last_checked: 2025-04-26
 #: next_check: 2025-05-14
 #: valid: -20250514
 # REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
@@ -87,7 +98,7 @@ Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 
 Ringstr.: Gegenverkehrsregelung	X::inwork::alternating 7874,4481
 # 
 #: next_check_id: PERLEBERGER-2024
-#: last_checked: 2025-03-09
+#: last_checked: 2025-04-25
 #: next_check: 2025-09-23
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
@@ -198,7 +209,7 @@ Möckernstr./nördlich Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternatin
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2025-04-14 (mapillary)
+#: last_checked: 2025-04-25
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -251,14 +262,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-04-21
+#: last_checked: 2025-04-26
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-04-21
+#: last_checked: 2025-04-26
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -473,7 +484,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 #: XXX Ampel wird vermutlich permanent gemacht
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (wird vermutlich permanent gemacht)
 #: osm_watch: node id="7978101859" version="1"
-#: last_checked: 2025-02-04 (mapillary)
+#: last_checked: 2025-04-22 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-28
 	X::inwork 10096,-2137
@@ -487,7 +498,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2025-03-13
+#: last_checked: 2025-04-25
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (Tsp)
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -4008,7 +4019,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-26
 #: check_frequency: 90d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

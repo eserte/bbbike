@@ -22,7 +22,7 @@ Pufendorfstr.: 70m der Fahrbahn gesperrt, Ausweichen auf Bürgersteig	q3::inwork 
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-04-19
+#: last_checked: 2025-04-25
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -76,7 +76,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2025-04-10 (daf)
+#: last_checked: 2025-04-26
 #: check_frequency: 90d
 #: next_check: 2026-08-22
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -110,7 +110,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-04-23
+#: last_checked: 2025-04-26
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -254,7 +254,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-04-13 vvv
+#: last_checked: 2025-04-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 (VIZ-Verkehrsmeldung) vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -269,7 +269,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="9"
-#: last_checked: 2025-01-27
+#: last_checked: 2025-04-17 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -694,12 +694,12 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Friedrichsfelde ###
 # 
-#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025; nun bis 22.04.2025, allerdings laufen schon Asphaltierungs- und Pflasterarbeiten
+#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025; nun bis 22.04.2025, allerdings laufen schon Asphaltierungs- und Pflasterarbeiten; nun Halteverbote bis 16.05.2025
 #: also_indoor: traffic (ex-G,B,T)
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: last_checked: 2025-04-21 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-04-22 (Halteverbotsschilder) vvv
+#: next_check: 2025-05-16 (Halteverbotsschilder) vvv
 # REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
 #: osm_watch[closed]: note 4145491 2
 Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956
@@ -1812,6 +1812,7 @@ Rosa-Luxemburg-Str.: Fußgänger, Bordsteine	q3 10695,12933 10685,12966
 #: note: ... und Sa 09:00-15:00 Bauernmarkt, aber keine zusätzlichen Behinderungen
 #: XXX_prog BS
 Lehniner Platz/Damaschkestr.: Gehweg, Bordsteine	q4 3562,10264 3492,10307
+#: note: Radfahrer sollen absteigen (Zusatzschild zum Achtung-Verkehrszeichen)
 Brücke Schönfließer Str.: Fußgänger	q3 10593,16037 10592,15968 10575,15968
 #: corrected_by: Sven Reimann ("Radfahren nicht erlaubt")
 (Kolonie Bornholm 1 und 2): Fußgänger, enger Weg, Radfahren nicht erlaubt, ggfs. schieben	q3+ 10209,16674 10190,16930
@@ -1972,11 +1973,12 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 # 
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
-#: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025)
+#: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-23
-#: check_frequency: 30d
-#: next_check: 2025-04-26 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-04-26
+#: check_frequency: 3d
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-04-26 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 
 Lausitzer Platz: Fußgängerzone, einige Bodenschwellen	q2 12197,10494 12172,10585
@@ -3738,7 +3740,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2025-02-26 vvv
+#: last_checked: 2025-04-26 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467

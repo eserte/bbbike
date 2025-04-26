@@ -250,7 +250,8 @@ Verbindungsweg Carlsgarten - Wuhlheide: Schotterweg	X 19340,7400 19321,7360 1925
 #: mud: 2020-03-28: keine Beeinträchtigungen	h=q0
 #: mud: 2022-04-24: keine Beeinträchtigungen	h=q0
 #: mud: 2023-07-09: keine Beeinträchtigungen	h=q0
-Wasserwerk Wuhlheide - S-Bhf. Wuhlheide: Waldweg	X 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
+#: mud: 2025-04-26: keine Beeinträchtigungen	h=q0
+Wasserwerk Wuhlheide - S-Bhf. Wuhlheide: Waldweg	X 19463,7117 19604,7079 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
 # 
 #: mud: 2020-03-28: trocken, es existieren einige sandige Stellen, die aber mit dem Normalrad noch unproblematisch sind
 #: mud: 2020-06-01: mehrere sandige Stellen, auch mit einem Normalrad nur 14km/h	h=q3+,dry
@@ -451,6 +452,7 @@ Tauernallee - Wildspitzweg (Buga-Eingang): fester Sandweg	X 10716,2597 10775,276
 #: mud: 2020-12-28: einige Pfützen
 #: mud: 2023-06-10: keine Beeinträchtigungen	h=q0
 #: mud: 2024-11-23: einige Pfützen	h=q2+,wet
+#: mud: 2025-04-26: keine Beeinträchtigungen	h=q0
 (Kolonie Sanssouci): wassergebundene Decke, Feinschotter	X 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
 # 
 #: mud: 2021-01-09: matschig, einige Pfützen
@@ -572,9 +574,11 @@ Treskowallee - Traberweg: fester Sandweg mit Schotter	X 18222,8103 18130,8386 18
 # 
 #: mud: 2021-04-15: trocken	h=q0
 #: mud: 2021-06-11: trocken	h=q0
-(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen möglich	X 19407,6660 19515,6934 19599,7075
+#: mud: 2025-04-26: trocken	h=q0
+(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen möglich	X 19407,6660 19515,6934 19562,7030 19604,7079
 # 
 #: mud: 2021-04-15: trocken	h=q0
+#: mud: 2025-04-26: trocken	h=q0
 (Weg in der Wuhlheide): Waldweg, ein paar Wurzeln	X 19515,6934 19691,6904 19895,6872 19914,6865
 # 
 #: mud: 2021-04-24: trocken	h=q0

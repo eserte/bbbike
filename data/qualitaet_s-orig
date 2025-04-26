@@ -300,7 +300,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-04-17
+#: last_checked: 2025-04-26
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -638,7 +638,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="20"
 #: osm_watch: way id="49180827" version="25"
-#: last_checked: 2025-04-14 (mapillary)
+#: last_checked: 2025-04-25
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -766,7 +766,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="27"
-#: last_checked: 2025-01-04
+#: last_checked: 2025-04-25
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-31
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
@@ -2533,7 +2533,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021)
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2025-02-15 (mapillary)
+#: last_checked: 2025-04-23 (mapillary)
 #: check_frequency: 90d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -4131,7 +4131,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/downloads/protokoll-des-fahrrat_231123.pdf (Erwähnung)
 #: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert?
 #: osm_watch: way id="100280204" version="11"
-#: last_checked: 2025-03-12
+#: last_checked: 2025-04-23 (architektur-urbanistik)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23363,11600 23225,11649
@@ -4537,6 +4537,9 @@ Plutoweg: Asphalt	Q0 31082,3366 30965,3391 30811,3416 30750,3468 30608,3617 3049
 Treptower Park: Asphalt	Q0 14318,9688 14316,9542 14347,9452 14398,9373
 Treptower Park: wassergebundene Decke	Q1 14398,9373 14485,9271 14531,9244
 Treptower Park: Asphalt	Q0 14398,9373 14382,9299
+#: next_check_id: TREPTOWERPARK-2025
+#: XXX Asphalt wird vermutlich zur wassergebundenen Decke
+#: last_checked: 2025-04-26
 Treptower Park: Asphalt, einige Wurzelschäden	Q1+ 14316,9542 14384,9565 14478,9545
 Treptower Park: wassergebundene Decke	Q1 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 Treptower Park: wassergebundene Decke	Q1 14705,9034 14644,9130 14628,9158 14612,9190 14531,9244
@@ -11177,8 +11180,8 @@ Fischerstr.: Asphaltschäden	Q1+ 16423,10259 16492,10163 16539,10097
 (Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1- 23402,3779 23368,3894
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 # REMOVED (Bauarbeiten beendet) --- #: XXX nach den Bauarbeiten wieder entfernen --- #: last_checked: 2013-08-03 --- #: next_check: 2013-10-03 --- (Umleitungsstrecke für das Paul-und-Paula-Ufer): Schotterweg	Q2+ 15056,10625 14930,10646
-(Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
-(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen möglich	Q2+ 19407,6660 19515,6934 19599,7075
+(Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19604,7079 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
+(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen möglich	Q2+ 19407,6660 19515,6934 19562,7030 19604,7079
 (Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19617,6208 19751,6514 19810,6634 19914,6865 19931,6903 19997,6935
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
@@ -13998,6 +14001,9 @@ Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 Hilde-Archenhold-Brücke: Asphalt	Q0 19300,4018 19358,4077
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19367,4061 19353,4047
 # 
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1554565.php (Sanierung der Fahrbahn, vom 5. bis 16. Mai 2025)
+#: add_fragezeichen: Ist die Fahrbahn nach der Sanierung besser geworden?
+#: next_check: 2025-05-16
 Ungarnstr.: Fahrbahn betoniert und Radweg mit Verbundsteinpflaster, beide mit Schäden und Unebenheiten	Q1 7666,16879 7583,16872 7394,16836 7267,16784 7177,16715 7106,16646 7056,16587
 # 
 Friedenauer Höhe: Asphalt	Q0 6293,7875 6263,7894 6178,7899
@@ -25646,8 +25652,8 @@ Elsenpfuhlstr.: Asphalt mit einigen Schäden	Q1+ 5422,19829 5428,19896 5405,20072
 Klausenburger Pfad: guter Asphalt	Q0 7199,-418 7110,-363 7030,-313 6985,-282 6885,-169 6867,-126
 # 
 #: by: Harald Seel:
-#: corrected_by: srt (schlechtes Kopfsteinpflaster Q3 -> welliges Kleinsteinpflaster Q2+)
-Steffelbauerstr.: welliges Kleinsteinpflaster	Q2+ 19403,5885 19495,6029 19521,6071 19561,6136 19578,6165
+#: corrected_by: srt (schlechtes Kopfsteinpflaster Q3 -> welliges Kleinsteinpflaster Q2+ -> Q2)
+Steffelbauerstr.: welliges Kleinsteinpflaster	Q2 19403,5885 19495,6029 19521,6071 19561,6136 19578,6165
 # 
 #: by: svea faber:
 #: note: "enge Straße", aber ohne weitere Kategorisierung -> ignore
@@ -34017,5 +34023,6 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2- -862,4542
 Kreuzungsbereich betoniert	Q0 -927,4638
 Einmündungsbereich asphaltiert	Q0 -326,5042
 Kreuzungsbereich asphaltiert	Q0 5471,5732
+Kreuzungsbereich mit Kleinsteinpflaster	Q2 19495,6029
 #: ignore ^^^
 #: section ^^^
