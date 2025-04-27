@@ -891,7 +891,7 @@ Hauptstr. (Schöneberg, Friedenau)	HH 6409,8026 6388,7999 6333,7927 6293,7875 627
 Akazienstr. (Schöneberg)	N 7201,8870 7101,9027 7029,9156 7007,9220 7001,9253 6994,9288
 #: osm.highway: service
 (Vorfahrt Apostel-Paulus-Kirche)	N 6921,9275 6935,9248 7001,9253
-Grunewaldstr. (Schöneberg)	H 7471,9360 7418,9366 7299,9346 7202,9329 7118,9315 6994,9288 6921,9275 6847,9261 6709,9234 6568,9211 6440,9192 6361,9175 6264,9156 6142,9134 6059,9118 5974,9100 5895,9083
+Grunewaldstr. (Schöneberg)	H 7471,9360 7418,9366 7299,9346 7202,9329 7118,9315 6994,9288 6921,9275 6847,9261 6709,9234 6568,9211 6440,9192 6399,9183 6361,9175 6264,9156 6142,9134 6059,9118 5974,9100 5895,9083
 Goltzstr. (Schöneberg)	N 6994,9288 7002,9526 7028,9678 7049,9833 7038,10088
 #: carriageway_width: 15m (Höhe Martin-Luther-Str., in Höhe Kalckreuthstr. 12m)
 Fuggerstr.	N 6719,10347 6628,10318 6487,10277 6239,10310 6118,10327
@@ -18724,7 +18724,7 @@ Herrfurthstr. (Steglitz)	N 4558,5863 4724,5782
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9364 (Antrag)
 #: XXX Umbenennung in Betty-Katz-Straße im Ausschuss und in der BVV beschlossen vvv
 #: last_checked: 2025-01-02 vvv
-#: check_frequency 120d vvv
+#: check_frequency 150d vvv
 Treitschkestr.	NN 5062,6295 4997,6331 4971,6345
 Treitschkestr.	N 4971,6345 4846,6417 4630,6534 4500,6612
 #: check_frequency ^^^
@@ -20870,13 +20870,13 @@ Boninstr. (Lichterfelde)	N 3945,1034 3892,999 3840,964
 (Rampe Hornstr. - Generalszug)	NN 8722,9743 8733,9841
 (A.T.U-Einfahrt - ALDI-Parkplatz)	N 8595,9495 8561,9482 8546,9468 8514,9470 8487,9405 8499,9253
 (Park am Gleisdreieck, Eingang Schöneberger Str.)	NN 8296,10438 8322,10451 8328,10485 8361,10491 8377,10502 8384,10507
-(Park am Gleisdreieck)	NN 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8211,10083
-(Park am Gleisdreieck, Weg über dem Tunnelmund)	NN 8265,10348 8315,10347
+(Park am Gleisdreieck)	NN 8278,10384 8264,10344 8261,10337 8252,10308 8256,10264 8264,10192 8211,10083
+(Park am Gleisdreieck, Weg über dem Tunnelmund)	NN 8190,10340 8264,10344 8315,10347
 (Park am Gleisdreieck, Eingang Schöneberger Ufer)	NN 8328,10831 8318,10738
 (Park am Gleisdreieck, Eingang Schöneberger Ufer)	NN 8358,10782 8350,10774 8341,10721
 (Park am Gleisdreieck, Eingang Schöneberger Ufer)	NN 8328,10831 8338,10765 8341,10721
 (Park am Gleisdreieck, Eingang Schöneberger Ufer)	NN 8350,10774 8338,10765 8318,10738
-(Park am Gleisdreieck, westlicher Weg)	NN 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
+(Park am Gleisdreieck, westlicher Weg)	NN 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8190,10340 8180,10282 8145,10090
 (Park am Gleisdreieck, Eingang Lützowstr.)	NN 8328,10585 8270,10613 8236,10623 8199,10634
 (Park am Gleisdreieck, Eingang Pohlstr.)	NN 8159,10430 8199,10424 8237,10418 8278,10384
 (Park am Gleisdreieck, Eingang Pohlstr.)	NN 8237,10418 8296,10438

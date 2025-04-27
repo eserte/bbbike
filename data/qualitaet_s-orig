@@ -173,7 +173,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1551519.php
 #: by: https://entwicklungsstadt.de/mehr-komfort-fuer-radverkehr-kopfsteinpflaster-am-priesterweg-geglaettet/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/billiger-und-umweltschonender-als-asphaltieren-berliner-kopfsteinpflaster-abgefrast-furs-huckelfreie-radfahren-13554001.html
-#: osm_watch: way id="102486250" version="26"
+#: osm_watch: way id="102486250" version="27"
 #: osm_watch: note 4659483 6
 # REMOVED (confirmed) --- --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
 #: last_checked: 2025-04-18
@@ -195,7 +195,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2025-04-08
+#: last_checked: 2025-04-27
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -504,8 +504,8 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 5 (Fahrradstraße?)
 #: last_checked: 2025-02-05 (mapillary) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2025-12-31 (infravelo) vvv
+#: check_frequency: 120d vvv
+#: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernen des Projekts) vvv
 #: osm_watch: way id="169459736" version="15"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 #: osm_watch: way id="25278674" version="23"
@@ -8677,7 +8677,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Yorckstr. - Park am Gleisdreieck): Beton	Q0 8358,9568 8357,9598 8353,9642 8350,9685 8349,9697
 (Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8467,9663 8489,9656 8540,9644
 (Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8341,10721 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8330,9610 8338,9593
-(Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
+(Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8190,10340 8180,10282 8145,10090
 (Park am Gleisdreieck, Generalszug): Beton	Q0 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
 (Park am Gleisdreieck, östlicher Weg): Kopfsteinpflaster	Q2 8775,10289 8780,10248 8726,10056
 (Park am Gleisdreieck, östlicher Weg): Asphalt	Q0 8726,10056 8652,9870
@@ -8688,8 +8688,8 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, südöstlicher Weg): Asphalt	Q0 8722,9743 8565,9657 8540,9644 8508,9551 8477,9562 8458,9566 8426,9572
 (Park am Gleisdreieck, südöstlicher Weg): glatt gepflastert	Q1 8426,9572 8396,9577
 (Rampe Hornstr. - Generalszug): Asphalt	Q0 8733,9841 8722,9743
-(Park am Gleisdreieck): Asphalt	Q0 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8211,10083
-(Park am Gleisdreieck, Weg über dem Tunnelmund): Asphalt	Q0 8265,10348 8315,10347
+(Park am Gleisdreieck): Asphalt	Q0 8278,10384 8264,10344 8261,10337 8252,10308 8256,10264 8264,10192 8211,10083
+(Park am Gleisdreieck, Weg über dem Tunnelmund): Asphalt	Q0 8190,10340 8264,10344 8315,10347
 (Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8328,10585 8270,10613
 (Park am Gleisdreieck, Eingang Lützowstr.): Beton	Q0 8270,10613 8236,10623 8199,10634
 (Park am Gleisdreieck, Eingang Pohlstr.): Beton	Q0 8159,10430 8199,10424 8237,10418 8278,10384
@@ -8702,7 +8702,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8256,10264
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8264,10192 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2025-01-31 vvv
+#: last_checked: 2025-04-27 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="531908445" version="12"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?

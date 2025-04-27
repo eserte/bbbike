@@ -995,7 +995,7 @@ Boddinstr.: Sperrung an der Karl-Marx-Str.	q3::inwork 12368,8356 12582,8408
 # 
 #: also_indoor: traffic (H,G,T)
 #: source_id: viz2021:13.518258,52.528778,01.04.2025,09:44 (hier nur Kfz-Verkehr, bis 30.04.2025)
-#: last_checked: 2025-04-06
+#: last_checked: 2025-04-27 (traffic)
 #: next_check: 2025-04-30 (Halteverbotsschilder)
 #: valid: -20250430
 Rhinstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18024,13843 18050,13835 18134,13811 18198,13816
@@ -1366,7 +1366,7 @@ Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11
 #: also_indoor: traffic (B,G,ex-H,T)
 #: note: Halteverbotsschilder bis 23.10.2024
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-04-23 (traffic) vvv
+#: last_checked: 2025-04-27 (traffic) vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: next_check: 2024-10-23 vvv
 # REMOVED --- #: valid: -20241023 vvv
@@ -1903,7 +1903,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-04-23
+#: last_checked: 2025-04-27
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -2352,14 +2352,14 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: by: https://entwicklungsstadt.de/neugestaltung-am-nollendorfplatz-buerogebaeude-entsteht-neben-metropol-theater/ (bis Mitte 2027)
 #: by: https://www.no6.berlin/
 #: by: https://www.no6.berlin/nolle-6 (Fertigstellung Q2/2027)
-#: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden
+#: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; mittlerweile bis Halteverbotsschilder bis 15.12.2025; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
-#: osm_watch: note 4506575 1
+#: osm_watch: note 4506575 2
 #: osm_watch: way id="529086013" version="3"
 #: osm_watch: way id="1377234658" version="1"
-#: last_checked: 2025-04-05 (architektur-urbanistik)
+#: last_checked: 2025-04-27
 #: check_frequency: 120d
-#: next_check: 2025-04-15 (Halteverbotsschilder)
+#: next_check: 2025-12-15 (Halteverbotsschilder)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
 # 
 #: XXX_prog BS: Bordstein am Blücherplatz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle
@@ -3426,9 +3426,9 @@ Gleisdreieckpark: flache Bordsteine, Spielplatz	q3 8296,10438 8237,10418
 #: XXX_prog BS zu beiden Seiten (aber flach!) (ansonsten entfernen)
 Gleisdreieckpark: flache Bordsteine	q1 8145,10090 8211,10083
 Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8211,10083 8276,10079
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8315,10347 8265,10348
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
-Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8358,10782 8350,10774 8341,10721 8328,10585 8296,10438 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8276,10079
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8315,10347 8264,10344 8190,10340
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8190,10340 8180,10282 8145,10090
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8358,10782 8350,10774 8341,10721 8328,10585 8296,10438 8278,10384 8264,10344 8261,10337 8252,10308 8256,10264 8264,10192 8276,10079
 Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8264,10192 8211,10083
 Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8350,10774 8338,10765 8318,10738
 Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8328,10831 8338,10765 8341,10721
@@ -3707,7 +3707,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-04-24
+#: last_checked: 2025-04-27
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-

@@ -349,7 +349,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-04-25 vvv
+#: last_checked: 2025-04-27 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1329,8 +1329,8 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.46341,52.496172,09.02.2024,06:00 (Wochenendsperrung für Kfz-Verkehr, bis 11.02.2024) (bis 14.02.2024) (inaktiv)
 #: source_id: viz2021:13.46469,52.49743,09.02.2024,06:00 (bis 11.02.2024) (inaktiv)
 #: source_id: viz2021:13.462768,52.495411,19.10.2024,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 20.10.2024) (inaktiv)
-#: source_id: viz2021:13.46264,52.49544,26.04.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 27.04.2025)
-#: source_id: viz2021:13.462865,52.495856,26.04.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 27.04.2025)
+#: source_id: viz2021:13.46264,52.49544,26.04.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 27.04.2025) (inaktiv)
+#: source_id: viz2021:13.462865,52.495856,26.04.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 27.04.2025) (inaktiv)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
@@ -7614,12 +7614,14 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str., Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung geben
-#: last_checked: 2025-03-04 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2025-04-23 vvv
+# REMOVED --- #: check_frequency: 60d vvv
+#: next_check: 2025-07-30 vvv
 # REMOVED (hier wegen der Bauarbeiten an der Erkstr. keine Radspur mehr) --- Gelbmarkierung	RW3; 12639,8344 12598,8390
 Gelbmarkierung	RW3; 12598,8390 12639,8344
 	RW4; 12639,8344 12689,8289 12714,8249
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
@@ -8212,7 +8214,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2025-04-25
+#: last_checked: 2025-04-27
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -9353,7 +9355,10 @@ Tempo 10	RW6;RW6 -7523,14969 -7387,14951
 Radspur hinter parkenden Autos	RW4; 5895,9083 5974,9100 6059,9118
 Leitboys	RW4; 6059,9118 6142,9134
 #: note: Grunewaldstr., Richtung Westen
-Radspur hinter parkenden Autos, Bushaltestellen	RW4; 6440,9192 6361,9175 6264,9156 6142,9134
+Nachtbushaltestelle	RW3; 6994,9288 6921,9275
+Radspur hinter parkenden Autos und Leitboys	RW4; 6921,9275 6847,9261 6709,9234 6568,9211 6440,9192
+Nachtbushaltestelle	RW3; 6440,9192 6399,9183
+Radspur hinter parkenden Autos und Leitboys, Nachtbushaltestelle	RW4; 6399,9183 6361,9175 6264,9156 6142,9134
 	RW4; 6142,9134 6059,9118
 Radspur hinter parkenden Autos	RW4; 6059,9118 5974,9100 5895,9083
 # 

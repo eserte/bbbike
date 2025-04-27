@@ -588,16 +588,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 256400293 (bis 27.04.2025)
-	2::inwork 35386,13954 35427,13624
-',
-         'from' => 1745553600,
-         'id' => 1263,
-         'text' => 'Petershagen/Eggersdorf, Bahnübergang: Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, 26.04.2025 06:00 Uhr bis 27.04.2025 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1745769600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1374,13 +1365,14 @@ Hauptallee	2::night -14389,-859 -14910,-903 -15684,-966
          'until' => undef
        },
        {
-         'data' => '#: tempex: (we, sa) T10-T15
+         'data' => '#: by: https://www.berlin.de/special/shopping/flohmaerkte/6875800-1724959-schoeneboerg-flowmarkt.html (2025: 13. April, 27. April, 11. Mai, 25. Mai, 08. Juni, 22. Juni, 06. Juli, 20. Juli, 14. September, 28. September, 12. Oktober, 26. Oktober)
+#: tempex: (we, sa) T10-T15
 	q4::temp:clock 7882,9490 7836,9413 7770,9395
 ',
          'from' => undef,
          'id' => 1817,
          'recurring' => 1,
-         'text' => 'Crellestr: Mi und Sa 10.00-15.00 Wochenmarkt, Behinderungen möglich',
+         'text' => 'Crellestr: Mi und Sa 10.00-15.00 Wochenmarkt; außerdem jeden 2. Sonntag von März bis Oktober 10.00-17.00 Flohmarkt; Behinderungen möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3926,7 +3918,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-04-17 (traffic) vvv
+#: last_checked: 2025-04-27 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -5246,7 +5238,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024)
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="14"
+#: osm_watch: way id="1117348911" version="15"
 #: also_indoor: traffic (G,ex-B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
@@ -5254,7 +5246,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-04-26
+#: last_checked: 2025-04-27 (osm)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5412,7 +5404,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2025-03-05
+#: last_checked: 2025-04-27
 #: check_frequency: 90d
 #: next_check: 2025-07-01 (bw, entwicklungsstadt)
 	q3::inwork 6447,9661 6341,9546
@@ -6145,12 +6137,12 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        {
          'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024) (inaktiv)
 #: source_id: viz2021:13.432599,52.479016,01.09.2023,07:00 (bis 30.03.2026)
-#: osm_watch: way id="1207706195" version="3"
+#: osm_watch: way id="1207706195" version="4"
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-04-13 (mapillary)
+#: last_checked: 2025-04-27 (osm)
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -6269,14 +6261,14 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        {
          'data' => '#: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024) (inaktiv) (bis 31.12.2024) (inaktiv)
-#: source_id: 246001315 (bis 08.11.2024) (bis 31.12.2024) (bis 30.04.2025)
+#: source_id: 246001315 (bis 08.11.2024) (bis 31.12.2024) (bis 30.04.2025) (bis 06.06.2025)
 	2::inwork 23015,30519 23113,30450
 ',
          'from' => 1705186800,
          'id' => 3947,
-         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung voraussichtlich bis Ende April 2025',
+         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung voraussichtlich bis 06.06.2025',
          'type' => 'gesperrt',
-         'until' => 1746025200
+         'until' => 1749222000
        },
        undef,
        undef,
@@ -6827,7 +6819,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-24 vvv
+#: last_checked: 2025-04-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6921,7 +6913,7 @@ Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5787,44
        undef,
        {
          'data' => '#: next_check_id: SCHILDOWER-2024
-#: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025)
+#: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025 + weitere Bauphasen)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1815251677278060801
 #: by: https://pbs.twimg.com/media/GS3L_VJWQAAhbAU?format=jpg&name=medium
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/arbeiten-an-der-schildower-strasse-dauern-18-monate_a421648
@@ -7013,17 +7005,18 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
-#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-i-start-bauarbeiten-am-gruenzug-am-buschgraben
+#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-i-start-bauarbeiten-am-gruenzug-am-buschgraben ("Die Fertigstellung des Abschnitts ist für Sommer 2025 geplant")
+#: by: https://gruen-berlin.de/fileadmin/user_upload/Downloads/mauerweg/gruenberlin_projekte_infrastruktur_mauerweg_plangrafik_buschgraben.pdf
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: next_check: 2025-05-01
+#: next_check: 2025-09-01
 	2::inwork -4,1133 25,1018 16,950 31,830 51,752 75,715 118,407 123,3
 ',
          'from' => 1725141600,
          'id' => 4143,
-         'text' => 'Mauerweg entlang des Buschgrabens: Bauarbeiten, Sperrung, voraussichtlich vom 02. September 2024 bis zum Frühjahr 2025',
+         'text' => 'Mauerweg entlang des Buschgrabens: Bauarbeiten, Sperrung, voraussichtlich vom 02. September 2024 bis zum Sommer 2025',
          'type' => 'gesperrt',
-         'until' => 1748707200
+         'until' => undef
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
@@ -7349,17 +7342,18 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'data' => '#: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
 #: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025) (inaktiv)
-#: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus
+#: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus; mittlerweile haben sich alle auf Wangenheimstr. - Paulsborner Str. geeinigt
 #: also_indoor: traffic (G,H,B,T,W)
 #: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
-#: last_checked: 2025-04-15 (traffic)
+#: last_checked: 2025-04-27 (traffic)
 #: check_frequency: 14d (traffic)
-	q3::inwork 2453,9156 2576,9132
+	q4::inwork 2576,9132 2674,9111
+# REMOVED (gewandert?) ---	q3::inwork 2453,9156 2576,9132
 # REMOVED ---	q4::inwork 2453,9156 2337,9178
 ',
          'from' => 1729533901,
          'id' => 4200,
-         'text' => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., evtl. auch bis Paulsborner Str., Ende der Bauarbeiten unbekannt',
+         'text' => 'Lynarstr.: Sperrung der Fahrbahn zwischen Wangenheimstr. und Paulsborner Str., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8126,7 +8120,7 @@ Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5
        {
          'data' => '#: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-04-08
+#: last_checked: 2025-04-27
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 ',
@@ -8188,7 +8182,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/grunewaldstra%C3%9Fe-8-neubau.1300/#post-24727
 #: osm_watch: way id="276210232" version="5"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-27
 #: check_frequency: 90d
 	q3::inwork; 7202,9329 7209,9507
 ',
@@ -8348,6 +8342,29 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 13.06.2025 17:00',
          'type' => 'handicap',
          'until' => 1749826800
+       },
+       {
+         'data' => '#: note: Halteverbotsschilder bis 14.06.2025
+#: also_indoor: traffic (G)
+#: last_checked: 2025-04-27
+#: next_check: 2025-06-14
+	q4::inwork 6351,9335 6446,9328
+',
+         'from' => 1745747126,
+         'id' => 4314,
+         'text' => 'Rosenheimer Str.: Fahrbahn zwischen Berchtesgadener Str. und Martin-Luther-Str. gesperrt, voraussichtlich bis 14.06.2025',
+         'type' => 'handicap',
+         'until' => 1749938400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.428865,52.484307,28.04.2025,07:00 (bis 28.02.2026)
+	q4::inwork 12150,8764 12165,8566
+',
+         'from' => 1745730000,
+         'id' => 4315,
+         'text' => 'Reuterstr.: Bauarbeiten, Anbindung an die Karl-Marx-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 28.04.2025 07:00 bis 28.02.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1772294400
        }
      
 );

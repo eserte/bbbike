@@ -9,6 +9,7 @@
 #: next_check_id: GRUNEWALDSTR-2025
 #: source_id: viz2021:13.35635,52.49021,25.04.2025,10:06 (bis 15.05.2025)
 #: source_id: viz2021:13.356365,52.490201,24.04.2025,12:00 (bis 15.05.2025 + weitere Bauabschnitte)
+#: last_checked: 2025-04-27
 #: next_check: 2025-05-15
 # REMOVED --- #: valid: -20250515
 Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
@@ -40,7 +41,7 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
 #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025)
-#: last_checked: 2025-04-26
+#: last_checked: 2025-04-27
 #: next_check: 2025-05-14
 #: valid: -20250514
 # REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
@@ -127,7 +128,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 #: last_checked: 2025-04-23
 #: check_frequency: 45d
 #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
-#: valid: -20250430
+# REMOVED (evtl. bleibt die Ampel bis zum Ende der Einbahnstraßenregelung in der Karl-Marx-Str. bestehen) --- #: valid: -20250430
 Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 # 
 # REMOVED (bei mapillary keine Gegenverkehrsregelung mit Ampel zu sehen) --- #: source_id: viz2021:13.353581,52.617702,28.05.2024,13:00 (bis 21.06.2024) (bis 19.07.2024)
@@ -199,9 +200,9 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 15928,6996
 #: source_id: viz2021:13.379736,52.496265,03.11.2023,10:00 (bis 23.04.2025) (bis 31.12.2025)
 #: note: gilt auch für Radfahrer (provisorische Radspur Richtung Norden, auch eine Fahrradampel an der Radspur Richtung Süden)
 #: note: etwa 40m nördlich des Punktes
-#: last_checked: 2025-04-08
+#: last_checked: 2025-04-27
 #: check_frequency: 90d
-#: next_check: 2025-12-31
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 #: valid: -20251231
 Möckernstr./nördlich Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternating 8784,9972
 # 
