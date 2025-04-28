@@ -106,11 +106,12 @@ Johanniterstr.	2::temp 10066,10071 9837,10117
 Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,9942
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-18 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-05-19 23:59:59"),
+     { from  => $isodate2epoch->("2025-06-07 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-06-08 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49, start => "2022-10-25T00:00:00"]], # Pfingstsonntag
-       text  => 'Karneval der Kulturen, 19.05.2024',
+#      text  => 'Karneval der Kulturen, 19.05.2024',
+       text  => 'Karneval der Kulturen, Sperrung der Frankfurter Allee und Karl-Marx-Allee zwischen Proskauer Str. und Berolinastr., am 08.06.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.karneval.berlin/ (früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite) (findet möglicherweise am 15. August 2021 statt)
@@ -119,43 +120,68 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/chialo-will-karneval-der-kulturen-sichern-id222039
 #: by: https://viz.berlin.de/2023/05/karneval-der-kulturen/
 #: by: https://www.tagesspiegel.de/berlin/umzug-durch-friedrichshain-und-mitte-karneval-der-kulturen-findet-2025-auf-der-frankfurter-allee-statt-13201078.html (Ringcenter bis Kino International)
-	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670
+## Kreuzberger Route (ganz früher)
 # REMOVED (2023 hier nicht) --- Yorckstr.	2::temp 9334,9670 9243,9696 9047,9750
 # REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
-	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
 # REMOVED ---	3 8774,9534 8777,9601 8778,9759 8778,9759 8779,9812
 # REMOVED ---	3 8779,9812 8778,9759 8778,9759 8777,9601 8774,9534
 # REMOVED ---	3 9000,9509 9032,9673 9047,9750 9078,9916
 # REMOVED ---	3 9078,9916 9047,9750 9032,9673 9000,9509
 # REMOVED (2023 hier nicht) --- Mehringdamm	3 9283,9487 9334,9670 9387,9804
 # REMOVED (2023 hier nicht) --- Mehringdamm	3 9387,9804 9334,9670 9283,9487
-	3 9524,9426 9552,9602 9588,9827
-	3 9588,9827 9552,9602 9524,9426
-	3 9650,9404 9676,9564 9705,9732
-	3 9705,9732 9676,9564 9650,9404
-	3 9767,9386 9790,9528 9820,9718
-	3 9820,9718 9790,9528 9767,9386
-	3 9892,9286 9927,9487 9957,9692
-	3 9957,9692 9927,9487 9892,9286
-	3 10004,9268 10032,9456 10067,9674
-	3 10067,9674 10032,9456 10004,9268
-	3 10123,9233 10198,9405 10306,9640
-	3 10306,9640 10198,9405 10123,9233
-	3 10547,9233 10564,9292 10580,9361
-	3 10580,9361 10564,9292 10547,9233
-	3 10705,9234 10713,9260 10749,9342
-	3 10749,9342 10713,9260 10705,9234
-	3 11141,9107 11136,9183 11208,9345 11274,9492
-	3 11274,9492 11208,9345 11136,9183 11141,9107
-	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
-	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1447817.php (2024; "Sperrung einzelner Eingänge des Volksparks Hasenheide")
-Hasenheide Eingang Lilienthalstr.	2 11708,8747 11768,8739
-Hasenheide Eingang Graefestr.	2 11136,9183 11141,9107
-Hasenheide Eingang Jahnstr. West	2 10709,9192 11111,9104
-Hasenheide Eingang Jahnstr. Ost	2 11515,9066 11550,9104
-Hasenheide Eingang Lucy-Lameck-Str.	2 11439,9049 11449,9125
-
+## Kreuzberger Route (früher)
+# REMOVED ---	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670
+# REMOVED ---	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
+# REMOVED ---	3 9524,9426 9552,9602 9588,9827
+# REMOVED ---	3 9588,9827 9552,9602 9524,9426
+# REMOVED ---	3 9650,9404 9676,9564 9705,9732
+# REMOVED ---	3 9705,9732 9676,9564 9650,9404
+# REMOVED ---	3 9767,9386 9790,9528 9820,9718
+# REMOVED ---	3 9820,9718 9790,9528 9767,9386
+# REMOVED ---	3 9892,9286 9927,9487 9957,9692
+# REMOVED ---	3 9957,9692 9927,9487 9892,9286
+# REMOVED ---	3 10004,9268 10032,9456 10067,9674
+# REMOVED ---	3 10067,9674 10032,9456 10004,9268
+# REMOVED ---	3 10123,9233 10198,9405 10306,9640
+# REMOVED ---	3 10306,9640 10198,9405 10123,9233
+# REMOVED ---	3 10547,9233 10564,9292 10580,9361
+# REMOVED ---	3 10580,9361 10564,9292 10547,9233
+# REMOVED ---	3 10705,9234 10713,9260 10749,9342
+# REMOVED ---	3 10749,9342 10713,9260 10705,9234
+# REMOVED ---	3 11141,9107 11136,9183 11208,9345 11274,9492
+# REMOVED ---	3 11274,9492 11208,9345 11136,9183 11141,9107
+# REMOVED ---	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
+# REMOVED ---	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
+# REMOVED --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1447817.php (2024; "Sperrung einzelner Eingänge des Volksparks Hasenheide")
+# REMOVED --- Hasenheide Eingang Lilienthalstr.	2 11708,8747 11768,8739
+# REMOVED --- Hasenheide Eingang Graefestr.	2 11136,9183 11141,9107
+# REMOVED --- Hasenheide Eingang Jahnstr. West	2 10709,9192 11111,9104
+# REMOVED --- Hasenheide Eingang Jahnstr. Ost	2 11515,9066 11550,9104
+# REMOVED --- Hasenheide Eingang Lucy-Lameck-Str.	2 11439,9049 11449,9125
+## Friedrichshainer Route
+	2::inwork 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595 11678,12727 11635,12745 11589,12768
+	2::inwork 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546 12134,12540 12352,12509 12592,12472 12603,12470
+	2::inwork 14280,12223 14208,12235 14020,12261 13885,12279 13785,12292 13543,12326 13448,12340 13163,12382 12929,12421 12878,12430 12848,12434 12816,12439
+	3 14073,11995 14208,12235 14229,12311
+	3 14229,12311 14208,12235 14073,11995
+	3 12573,12227 12592,12472 12632,12630
+	3 12632,12630 12592,12472 12573,12227
+	3 11596,12668 11635,12745 11645,12774
+	3 11645,12774 11635,12745 11596,12668
+	3 12891,12549 12878,12430 12950,12340
+	3 12891,12549 12878,12430 12862,12332
+	3 13476,12461 13448,12340 13430,12320
+	3 12355,12541 12352,12509 12339,12436
+	3 13430,12320 13448,12340 13476,12461
+	3 13745,12118 13785,12292 13732,12526
+	3 12339,12436 12352,12509 12355,12541
+	3 13552,12435 13543,12326 13556,12302
+	3 12950,12340 12878,12430 12891,12549
+	3 12950,12340 12878,12430 12862,12332
+	3 12862,12332 12878,12430 12950,12340
+	3 12862,12332 12878,12430 12891,12549
+	3 13556,12302 13543,12326 13552,12435
+	3 13732,12526 13785,12292 13745,12118
 EOF
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,6-1,19,6,0,0)),
@@ -659,11 +685,11 @@ EOF
        source_id => 'IM_015896',
        file  => 'badstr.bbd',
      },
-     { from  => $isodate2epoch->("2024-07-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-07-21 23:59:59"),
+     { from  => $isodate2epoch->("2025-07-18 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-07-20 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2021-10-25T00:00:00"]],
-       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (20.7.2024 und 21.7.2024)',
+       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (19.7.2025 und 20.7.2025)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.stadtfest.berlin/de/index.html
@@ -671,7 +697,7 @@ EOF
 #: by: https://www.stadtfest.berlin/de/index.html (2.+3. Oktober 2021)
 #: by: https://www.siegessaeule.de/magazin/lesbisch-schwules-stadtfest-2021-auf-der-kippe/ (Absage)
 #: by: https://www.stadtfest.berlin/de/index.html?date=20220515
-#: by: https://www.berlin.de/events/2094393-2229501-lesbischschwules-stadtfest.html
+#: by: https://www.berlin.de/events/2094393-2229501-lesbischschwules-stadtfest.html (19. Juli 2025 - 20. Juli 2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1814521868080050462
 #: by: https://pbs.twimg.com/media/GSsvMEiWsAALOVt?format=jpg&name=large
 	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
@@ -5462,13 +5488,17 @@ EOF
 	1::inwork 2655,3025 2632,2969 2625,2850
 EOF
      },
-     { from  => 1160591740, # 2006-10-11 20:35
-       until => 1161208800, # 2006-10-19 00:00
-       text  => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Fartrichtung gesperrt (bis 18.10.06)',
+     { from  => 1745823600, # 2025-04-28 09:00, # 1160591740, # 2006-10-11 20:35
+       until => 1746802800, # 2025-05-09 17:00, # 1161208800, # 2006-10-19 00:00
+#      text  => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Fahrtrichtung gesperrt (bis 18.10.06)',
+       text  => 'Ruschestr.: Anbindung Frankfurter Allee gesperrt, vom 29.04.2025 09:00 bis 09.05.2025 17:00',
        type  => 'gesperrt',
-       source_id => 'IM_003134',
        data  => <<EOF,
-	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
+#: source_id: IM_003134 (2006, inaktiv)
+# REMOVED (2006) ---	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
+#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025)
+#: note: laut rbb weitere Arbeiten im Anschluss
+	q4::inwork 15863,11992 15871,12060
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -6398,7 +6428,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html
 #: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
-#: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022)
+#: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025)
 #: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00 (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
 #: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
@@ -8303,7 +8333,7 @@ EOF
        text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (10. und 11. Mai 2025)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022)
+#: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025)
 #: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
@@ -14793,7 +14823,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
-#: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt's den Termin)
+#: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt's den Termin) (13. Juni 2025 - 15. Juni 2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211381.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1209970.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331265.php
@@ -18699,7 +18729,7 @@ EOF
 #: by: https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest
 #: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
 #: by: https://kreuzberg-festival.de/
-#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
+#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022) (27. bis 29. Juni 2025)
 #: by: https://nitter.net/VIZ_Berlin/status/1542565377942532096#m (auch Großbeerenstr.)
 #: by: https://berliner-abendblatt.de/2022/06/30/kreuzberg-festival-wir-haben-nicht-aufgegeben/
 #: historical_note: früher Bergmannstraßenfest, zwischenzeitlich Kreuzbergstraßenfest
@@ -22112,16 +22142,16 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2024-07-17 00:00:00"), # $isodate2epoch->("2023-07-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-07-21 20:00:00"), # $isodate2epoch->("2023-07-16 23:59:59"),
+     { from  => $isodate2epoch->("2025-07-23 00:00:00"), # $isodate2epoch->("2023-07-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-07-27 20:00:00"), # $isodate2epoch->("2023-07-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 7, start => "2020-10-25T00:00:00"]],
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (18.07.2024 bis 21.07.2024)',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (24.07.2025 bis 27.07.2025)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk
-#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021)
 #: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
+#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021) (24. Juli 2025 - 27. Juli 2025)
 #: by: https://berliner-abendblatt.de/2022/07/11/tegeler-hafenfest-startet-am-donnerstag/
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1310556.php
 #: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/gruenes-licht-fuer-tegeler-hafenfest-id216068
@@ -28884,7 +28914,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-04-10
+#: last_checked: 2025-04-28
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -36443,7 +36473,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1525328801823133698#m
-#: by: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html
+#: by: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html (17. Mai 2025)
 #: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1444072.php
@@ -37129,17 +37159,17 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 # REMOVED (nicht mehr) --- Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
 EOF
      },
-     { from  => $isodate2epoch->("2024-06-06 00:00:00"), # 1660168800, # 2022-08-11 00:00
-       until => $isodate2epoch->("2024-06-09 21:00:00"), # 1660514399, # 2022-08-14 23:59
+     { from  => $isodate2epoch->("2025-05-28 00:00:00"), # $isodate2epoch->("2024-06-06 00:00:00"), # 1660168800, # 2022-08-11 00:00
+       until => $isodate2epoch->("2025-06-01 20:00:00"), # $isodate2epoch->("2024-06-09 21:00:00"), # 1660514399, # 2022-08-14 23:59
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 6]], # kann im Juni oder August stattfinden
-       text  => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 7. bis 9. Juni 2024',
+       text  => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 29. Mai 2025 bis 1. Juni 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/08/03/spandauer-havelfest-nach-zwei-jahren-pause-zurueck/
 #: by: https://partner-fuer-spandau.de/veranstaltungen/spandauer-sommerklassiker-das-spandauer-havelfest/263
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11798 (Anfrage (findet 2023 nicht statt?))
-#: by: https://www.berlin.de/events/3467999-2229501-spandauer-havelfest.html (2024)
+#: by: https://www.berlin.de/events/3467999-2229501-spandauer-havelfest.html (2024) (29. Mai 2025 - 1. Juni 2025)
 	2::temp -2918,14496 -2964,14478 -3026,14358 -3054,14305 -3091,14220 -3135,14183 -3275,14114
 	2::temp -3054,14305 -3019,14286
 	2::temp -2964,14478 -2939,14433 -3019,14286 -3042,14255 -3059,14230 -3090,14198 -3153,14141 -3187,14116 -3291,14043 -3306,14035 -3345,13994
@@ -41486,12 +41516,12 @@ Edisonstr. (Nord): Länge des gesperrten Abschnitts etwa 80m	q3::inwork 17991,643
 EOF
      },
      { from  => 1689487200, # 2023-07-16 08:00
-       until => $isodate2epoch->("2025-04-30 16:00:00"), # $isodate2epoch->("2024-09-13 16:00:00"), # 1725112800, # 2024-08-31 16:00
+       until => $isodate2epoch->("2025-05-31 16:00:00"), # $isodate2epoch->("2024-09-13 16:00:00"), # 1725112800, # 2024-08-31 16:00
 #       text  => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, außerdem Einbahnstraßenregelung in der Hussitenstr., 17.07.2023 08:00 Uhr bis 13.09.2024 16:00 Uhr',
-       text  => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, bis 30.04.2025 16:00 Uhr',
+       text  => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, bis 31.05.2025 16:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv)
+#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv) (bis 31.05.2025)
 # REMOVED (hier nicht mehr) ---	q4::inwork 22917,30635 22770,30813
 # REMOVED (hier nicht) ---	q4::inwork 22770,30813 22690,30909
 # REMOVED (hier nicht mehr) ---	q4::inwork; 22850,30562 22917,30635
@@ -44428,7 +44458,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-27 vvv
+#: last_checked: 2025-04-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45461,15 +45491,16 @@ EOF
 	q4::inwork 13100,7626 13130,7633
 EOF
      },
-     { from  => 1726822800, # 2024-09-20 11:00
-       until => 1726941600, # 2024-09-21 20:00
+     { from  => $isodate2epoch->("2025-09-26 00:00:00"), # 1726822800, # 2024-09-20 11:00
+       until => $isodate2epoch->("2025-09-27 20:00:00"), # 1726941600, # 2024-09-21 20:00
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 9]],
-       text  => 'Tempelhofer Feld: Fest der Riesendrachen, Durchfahrt nicht oder nur sehr langsam möglich, am 21.9.2024 von 11:00 Uhr bis 20:00 Uhr',
+       text  => 'Tempelhofer Feld: Fest der Riesendrachen, Durchfahrt nicht oder nur sehr langsam möglich, am 27.9.2025 von 11:00 Uhr bis 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://stadtundland.de/unternehmen/presse/2014/mehr-als-50-000-besucher-erwartet-stadt-und-land-festival-der-riesendrachen-auf-dem-tempelhofer-feld-am-13-09-2014
 #: by: https://stadtundland.de/unternehmen/veranstaltungen/stadt-und-land-festival-der-riesendrachen
+#: by: https://www.berlin.de/events/2722189-2229501-festival-der-riesendrachen-tempelhofer-f.html (27. September 2025)
 #: source_id: viz2021:13.385777,52.474404,21.09.2024,10:00 (bis 21.09.2024) (inaktiv)
 	2::temp 9471,7703 9522,7624 9562,7796
 	2::temp 9474,7182 9545,7426 9592,7330
@@ -46727,7 +46758,7 @@ EOF
        data  => <<EOF,
 #: by: rbb (bis 17.03.2025) (bis 24.03.2025) (bis 28.04.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
-#: source_id: viz2021:13.452912,52.524174,17.02.2025,08:00 (bis 28.04.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.452912,52.524174,17.02.2025,08:00 (bis 28.04.2025 + weitere Arbeiten) (bis 29.04.2025 + ...)
 #: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich; am 2025-03-05 war gesperrt
 	q3::inwork 13741,13107 13692,13221 13644,13332
 EOF
@@ -46946,7 +46977,7 @@ EOF
        text  => 'Breite Str.: Gleisbauarbeiten zwischen Berliner Str. und Stiftsweg/Hadlichstr., Sperrung der Fahrbahn, Radverkehr wird über den Bürgersteig geführt, vom 10.03.2025 06:00 bis 28.04.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025) (bis 28.04.2025)
+#: source_id: viz2021:13.410613,52.571146,10.03.2025,06:00 (bis 11.04.2025) (bis 28.04.2025) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1898954467401175437
 #: by: https://pbs.twimg.com/media/Glc6s8uWAAAe6co?format=jpg&name=medium (kürzerer Baustellenbereich, nur bis etwas hinter Kavalierstr.?)
 #: by: https://www.bahninfo-forum.de/read.php?9,825696,826383#msg-826383 (gemeinsamer Rad- und Gehweg)
@@ -47209,11 +47240,11 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 EOF
      },
      { from  => 1744202737, # 2025-04-09 14:45
-       until => 1746050400, # 2025-05-01 00:00
-       text  => 'Bornstedter Str.: Bauarbeiten an der Anbindung Kurfüstendamm, Fahrbahn gesperrt, voraussichtlich bis 30.04.2025',
+       until => $isodate2epoch->("2025-05-22 17:00:00"), # 1746050400, # 2025-05-01 00:00
+       text  => 'Bornstedter Str.: Bauarbeiten an der Anbindung Kurfüstendamm, Fahrbahn gesperrt, voraussichtlich bis 22.05.2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.288418,52.496596,14.03.2025,10:00 (bis 30.04.2025)
+#: source_id: viz2021:13.288418,52.496596,14.03.2025,10:00 (bis 30.04.2025) (bis 22.05.2025)
 	q4::inwork 2551,9995 2590,9949
 EOF
      },
@@ -47419,6 +47450,15 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.428865,52.484307,28.04.2025,07:00 (bis 28.02.2026)
 	q4::inwork 12150,8764 12165,8566
+EOF
+     },
+     { from  => 1746338400, # 2025-05-04 08:00
+       until => 1750690800, # 2025-06-23 17:00
+       text  => 'K6330, Brücke bei Buckow: Bauarbeiten, Sperrung, 05.05.2025 08:00 Uhr bis 23.06.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 256300616 (bis 23.06.2025)
+	2::inwork -67835,19238 -68086,19042
 EOF
      },
     );
