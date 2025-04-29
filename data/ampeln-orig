@@ -105,12 +105,13 @@ Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
 # REMOVED (stehen noch, sind aber ausgeschaltet, wohl dauerhaft) --- #: next_check_id: OSTEND-2024 --- #: last_checked: 2024-11-06 vvv --- #: next_check: 2024-11-03 vvv --- #: valid: -20241103 vvv --- An der Wuhlheide/Rathenaustr.: Baustellenampel	X::inwork 19245,6379 --- An der Wuhlheide/Steffelbauerstr.: Baustellenampel östlich der Einmündung	F::inwork 19594,6155 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
-# REMOVED --- #: source_id: viz2021:13.58402,52.443878,20.08.2024,09:00 (bis 31.03.2025) (inaktiv)
-# REMOVED --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1825789868754219040
-# REMOVED --- #: by: https://pbs.twimg.com/media/GVVe5-VWoAAAD12?format=jpg&name=medium
-# REMOVED --- #: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20250331
-# REMOVED --- Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
+#: source_id: viz2021:13.58402,52.443878,20.08.2024,09:00 (bis 31.03.2025) (inaktiv)
+#: source_id: viz2021:13.584031,52.443916,30.04.2025,10:00 (bis 11.07.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1825789868754219040
+#: by: https://pbs.twimg.com/media/GVVe5-VWoAAAD12?format=jpg&name=medium
+#: next_check: 2025-07-11 (VIZ-Verkehrsmeldung)
+#: valid: -20250711
+Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
 # 
 # REMOVED (Ampelanlage steht noch, ist aber (dauerhaft?) ausgeschaltet) --- #: next_check_id: KOENIGSPLATZ-2024 --- #: last_checked: 2024-12-27 --- #: check_frequency: 30d --- #: next_check: 2024-12-12 --- #: valid: -20241212 --- Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
 # 
@@ -129,6 +130,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 #: check_frequency: 45d
 #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
 # REMOVED (evtl. bleibt die Ampel bis zum Ende der Einbahnstraßenregelung in der Karl-Marx-Str. bestehen) --- #: valid: -20250430
+#: valid: -20250731
 Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 # 
 # REMOVED (bei mapillary keine Gegenverkehrsregelung mit Ampel zu sehen) --- #: source_id: viz2021:13.353581,52.617702,28.05.2024,13:00 (bis 21.06.2024) (bis 19.07.2024)

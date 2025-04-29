@@ -5497,6 +5497,7 @@ EOF
 #: source_id: IM_003134 (2006, inaktiv)
 # REMOVED (2006) ---	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
 #: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025)
+#: source_id: viz2021:13.48439,52.5128,29.04.2025,09:00 (bis 09.05.2025)
 #: note: laut rbb weitere Arbeiten im Anschluss
 	q4::inwork 15863,11992 15871,12060
 EOF
@@ -18412,12 +18413,12 @@ EOF
 	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
      },
-     { from  => $isodate2epoch->("2022-05-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-05-22 04:00:00"), # bis in die Nacht hinein
+     { from  => $isodate2epoch->("2025-05-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-05-26 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5, start => "2024-06-08T00:00:00"]], # kann auch erst im September stattfinden
        recurrence_prewarn_days => 14,
-       text  => 'Erkner: Heimatfest, 20.5.2022 bis 22.5.2022',
+       text  => 'Erkner: Heimatfest, evtl. Sperrungen oder Einschränkungen möglich, 23.5.2025 bis 25.5.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.erkner.de/271.html?date=20190415
@@ -22365,9 +22366,10 @@ EOF
        text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, voraussichtlich am 01.06.2024',
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 5, start => "2021-10-01T00:00:00"]], # kann Ende Mai, Anfang Juni, Anfang Juli oder Ende August passieren
+       recurrence_prewarn_days => 14,
        type  => 'gesperrt',
-       source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
+#: by: http://www.xhain.info/termine/fiesta-kreutziga.htm
 #: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
 #: by: https://www.facebook.com/KreutzigerStrassenfest/posts/pfbid02u1jwCHS1jzLAUNvuRXbJd3tsDEyJavnjqAy9uE4a9eHTHCxd9QBAjayHHy1TqK5ul (3.6.2023)
 #: source_id: viz2021:13.45938,52.51251,01.06.2024,08:00 (bis 01.06.2024) (inaktiv)
@@ -22397,9 +22399,9 @@ EOF
 	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11309,19923 11423,19982 11555,20051
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-31 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-06-01 23:59:59"),
-       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2024',
+     { from  => $isodate2epoch->("2025-05-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-06-01 23:59:59"),
+       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 31. Mai 2025 und 1. Juni 2025',
        periodic => 1,
        recurrences => [["yearly", "days" => 30, "months" => 5, start => "2021-10-25T00:00:00"]],
        type  => 'gesperrt',
@@ -22410,6 +22412,7 @@ EOF
 #: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
 #: by: https://fez-berlin.de/fezveranstaltungen2023/kindertag
 #: by: https://fez-berlin.de/veranstaltungen2024/internationales-kindertagsfest
+#: by: https://fez-berlin.de/veranstaltungen2025/kindertagsfest (ganzes Wochenende, Sa+So)
 #: tempex: YYYY0531-YYYY0603 vvv
 	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
 	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
@@ -40201,11 +40204,11 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-04-21
+#: last_checked: 2025-04-29 (osm)
 #: check_frequency: 90d
 #: next_check: 2025-06-30 (DB-Mail)
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="13"
+#: osm_watch: way id="1025826786" version="14"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 EOF
      },
@@ -43493,7 +43496,7 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-04-11 (mapillary) vvv
+#: last_checked: 2025-04-26 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -43742,7 +43745,8 @@ EOF
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...)
+#: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,ex-G)
@@ -44458,7 +44462,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-28 vvv
+#: last_checked: 2025-04-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45723,12 +45727,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-03-16 00:00:00"), # 1728799200, # 2024-10-13 08:00
-       until => $isodate2epoch->("2025-04-30 18:00:00"), # 1734727692, # 1738944000, # 2025-02-07 17:00
+       until => $isodate2epoch->("2025-05-30 18:00:00"), # 1734727692, # 1738944000, # 2025-02-07 17:00
 #      text  => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 14.10.2024 08:00 Uhr bis 07.02.2025 17:00 Uhr',
-       text  => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 30.04.2025',
+       text  => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 30.05.2025',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/24/200 (bis 07.02.2025) (mittlerweile nur noch Wintersicherung mit einigen Einschränkungen, bis 30.04.2025) (Vollsperrung, bis 30.04.2025)
+#: source_id: LS/221-F/24/200 (bis 07.02.2025) (mittlerweile nur noch Wintersicherung mit einigen Einschränkungen, bis 30.04.2025) (Vollsperrung, bis 30.04.2025) (bis 30.05.2025)
 	2::inwork 36087,16319 36539,16154 38171,15125
 EOF
      },
@@ -45925,7 +45929,7 @@ EOF
 #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3
 #: note: laut Baustellenschild bis 04.2025
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-29 (traffic)
 #: check_frequency: 60d
 #: next_check: 2025-04-30
 	q3::inwork 4690,11369 4775,11203
@@ -46518,7 +46522,7 @@ EOF
 #: also_indoor: traffic (ex-G,ex-W)
 #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-04-20
+#: last_checked: 2025-04-26 (mapillary)
 #: check_frequency: 30d (outdoor checks)
 # REMOVED --- #: check_frequency: 14d (traffic)
 	q4::inwork 15769,14355 15841,14351
@@ -46758,8 +46762,11 @@ EOF
        data  => <<EOF,
 #: by: rbb (bis 17.03.2025) (bis 24.03.2025) (bis 28.04.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
-#: source_id: viz2021:13.452912,52.524174,17.02.2025,08:00 (bis 28.04.2025 + weitere Arbeiten) (bis 29.04.2025 + ...)
+#: source_id: viz2021:13.452912,52.524174,17.02.2025,08:00 (bis 28.04.2025 + weitere Arbeiten) (bis 29.04.2025 + ...) (inaktiv)
 #: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich; am 2025-03-05 war gesperrt
+#: also_indoor: traffic (none)
+#: add_fragezeichen: Wurden die Bauarbeiten bereits beendet?
+#: next_check: 2025-04-29
 	q3::inwork 13741,13107 13692,13221 13644,13332
 EOF
      },
@@ -47290,6 +47297,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/221-E/25/033 (bis 23.05.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~25-04-2025-l-23-zwischen-golzow-und-kreuzung-l238
 	2::inwork 33219,61981 33413,61639 35000,60912 35215,60669 35255,60090 35405,59832 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
 EOF
      },
@@ -47418,7 +47426,7 @@ EOF
        text  => 'Sedanstr.: Wasserrohrbruch, Sperrung zwischen Birkbuschstr. und Johanna-Stegen-Straße, evtl. sind auch Radfahrer betroffen, vom 23.04.2025 12:37 bis 28.04.2025 23:59',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.33027,52.44531,23.04.2025,12:37 (bis 28.04.2025)
+#: source_id: viz2021:13.33027,52.44531,23.04.2025,12:37 (bis 28.04.2025) (inaktiv)
 	q4::inwork 5630,4476 5541,4305
 EOF
      },
@@ -47459,6 +47467,25 @@ EOF
        data  => <<EOF,
 #: source_id: 256300616 (bis 23.06.2025)
 	2::inwork -67835,19238 -68086,19042
+EOF
+     },
+     { from  => 1746338400, # 2025-05-04 08:00
+       until => 1747407600, # 2025-05-16 17:00
+       text  => 'Falkensee - Alt Brieselang: Bauarbeiten, Sperrung, 05.05.2025 08:00 Uhr bis 16.05.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: LS/223-P/25/062 (bis 16.05.2025)
+	2::inwork -14661,21652 -15188,21966 -15440,22048
+EOF
+     },
+     { from  => 1746338400, # 2025-05-04 08:00
+       until => 1761926400, # 2025-10-31 17:00
+       text  => 'Fredersdorf-Vogelsdorf, Ernst-Thälmann-Str. und Fließstraße: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 05.05.2025 08:00 Uhr bis 31.10.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 256400530 (bis 31.10.2025)
+	2::inwork 33949,12447 33752,12593 34161,13153
+	2::inwork 33752,12593 33657,12479
 EOF
      },
     );

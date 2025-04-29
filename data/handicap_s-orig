@@ -57,7 +57,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="15"
 #: osm_watch: way id="1072662717" version="17"
-#: last_checked: 2025-04-28
+#: last_checked: 2025-04-29
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -269,7 +269,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="9"
-#: last_checked: 2025-04-17 (mapillary)
+#: last_checked: 2025-04-27 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -497,7 +497,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-04-16
+#: last_checked: 2025-04-29
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (rbb)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -993,7 +993,7 @@ Boddinstr.: Sperrung an der Karl-Marx-Str.	q3::inwork 12368,8356 12582,8408
 # 
 ### Lichtenberg ###
 # 
-#: also_indoor: traffic (H,G,T)
+#: also_indoor: traffic (ex-H,G,ex-T)
 #: source_id: viz2021:13.518258,52.528778,01.04.2025,09:44 (hier nur Kfz-Verkehr, bis 30.04.2025)
 #: last_checked: 2025-04-27 (traffic)
 #: next_check: 2025-04-30 (Halteverbotsschilder)
@@ -2724,7 +2724,7 @@ Wongrowitzer Steig: Bodenschwelle	q0 22474,7065 22358,7093
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Wirsitzer Weg: Bodenschwelle	q0 22448,6957 22641,6918
 # konflikt mit anderen Mittelheide-Eintrag! --- : XXX_prog: für Anhänger relevant (q1 oder so) --- Mittelheide: zwei Bodenschwellen	q0 23135,6500 23220,6520 23299,6541
-(Valeska-Gert-Str. - Am Postbahnhof): Fußgänger	q1 12807,11287 12713,11372
+(Valeska-Gert-Str. - Am Postbahnhof): Fußgänger	q1 12825,11316 12713,11372
 # REMOVED (mittlerweile existiert eine Radwegführung) --- #: XXX_prog BS: 2x Bordsteine --- Fritzi-Massary-Str: Bordsteine	q3 15428,6355 15452,6384
 #: XXX_prog BS: 2x Bordsteine (ansonsten q2)
 (Rotkehlchenweg - Kormoranweg): eng, einige Fußgänger, Bordsteine	q3 14099,3772 14189,3732
@@ -3706,7 +3706,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-04-28
+#: last_checked: 2025-04-29
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-

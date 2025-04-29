@@ -389,7 +389,7 @@ Große Präsidentenstr.	1 10105,13004 10219,13102
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1818150528448118831
 #: by: https://pbs.twimg.com/media/GTqgmAvWEAMTCD_?format=jpg&name=medium
-#: source_id: viz2021:13.312025,52.498061,30.07.2024,07:00 (Sackgasse, bis 28.02.2025) (keine Erwähnung der Sackgasse mehr, bis 30.04.2025)
+#: source_id: viz2021:13.312025,52.498061,30.07.2024,07:00 (Sackgasse, bis 28.02.2025) (keine Erwähnung der Sackgasse mehr, bis 30.04.2025) (bis 16.06.2025)
 #: osm_watch: way id="4437134" version="17"
 #: last_checked: 2025-04-09
 #: check_frequency: 120d
@@ -3978,7 +3978,7 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1
 #: osm_watch: note 4545425 2
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
-#: last_checked: 2025-04-26
+#: last_checked: 2025-04-29
 #: check_frequency: 120d
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
@@ -4169,7 +4169,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-04-28 vvv
+#: last_checked: 2025-04-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="5"
@@ -5123,7 +5123,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_16_1065_1112_online.pdf (Umlegungsverfahren (für den B-Plan))
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf (Umlegungsverfahren, Berichtigung)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2025-04-16
+#: last_checked: 2025-04-29
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5131,7 +5131,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-04-26
+#: last_checked: 2025-04-29
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5463,10 +5463,10 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2025-02-15
+#: last_checked: 2025-04-27 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-12-31
-Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
+Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,11316 12713,11372
 # 
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16 --- #: osm_watch: way id="276821479" version="5" --- #: XXX möglicherweise mittlerweile offen --- #: last_checked: 2023-01-11 --- #: check_frequency: 90d --- #: next_check: 2023-01-22 --- Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # REMOVED (Aufschüttung statt Brücke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352

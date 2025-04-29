@@ -739,6 +739,7 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
          'data' => '#: source_id: IM_003134 (2006, inaktiv)
 # REMOVED (2006) ---	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
 #: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025)
+#: source_id: viz2021:13.48439,52.5128,29.04.2025,09:00 (bis 09.05.2025)
 #: note: laut rbb weitere Arbeiten im Anschluss
 	q4::inwork 15863,11992 15871,12060
 ',
@@ -2751,7 +2752,35 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.erkner.de/271.html?date=20190415
+#: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
+#: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
+#: by: https://www.erkner.de/erkner-kompakt/heimatfest/ (geplant vom 20. bis 22. Mai 2022)
+#: by: https://www.erkner.de/erkner-kompakt/heimatfest/?date=20230325 (findet 2023 wie 2022 nur im Rathauspark statt, also vermutlich keine Sperrung der Straße)
+#: by: https://www.erkner.de/freizeit-tourismus/stadtgeschichte-kultur/traditionelle-feste-and-veranstaltungen/heimatfest.html (24.-26.5.2024, nur im Rathauspark oder mit Sperrung der Straße?) (wohl nur im Rathauspark)
+#: by: https://www.erkner.de/freizeit-und-tourismus/stadtgeschichte-und-kultur/heimatfest.html (23. bis 25. Mai 2025)
+	2::temp 34421,1950 34359,2165 34250,2546
+',
+         'from' => 1747864800,
+         'id' => 2078,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 14,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              5,
+                              'start',
+                              '2024-06-08T00:00:00'
+                            ]
+                          ],
+         'text' => 'Erkner: Heimatfest, evtl. Sperrungen oder Einschränkungen möglich, 23.5.2025 bis 25.5.2025',
+         'type' => 'gesperrt',
+         'until' => 1748224800
+       },
        undef,
        undef,
        undef,
@@ -3404,7 +3433,40 @@ Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mögliche Termine: 1.6.2021 + 6.6.2021)
+#: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
+#: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
+#: by: https://fez-berlin.de/fezveranstaltungen2023/kindertag
+#: by: https://fez-berlin.de/veranstaltungen2024/internationales-kindertagsfest
+#: by: https://fez-berlin.de/veranstaltungen2025/kindertagsfest (ganzes Wochenende, Sa+So)
+#: tempex: YYYY0531-YYYY0603 vvv
+	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
+	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
+	2::temp 20199,6318 20262,6493 20225,6631
+	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+	2::temp 19939,5999 20064,6290 20086,6307 20106,6357
+#: tempex ^^^
+',
+         'from' => 1748556000,
+         'id' => 2436,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              5,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
+         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 31. Mai 2025 und 1. Juni 2025',
+         'type' => 'gesperrt',
+         'until' => 1748815199
+       },
        undef,
        undef,
        {
@@ -6740,11 +6802,11 @@ Grabertstr.	q4::inwork 6923,5057 7030,4937
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-04-21
+#: last_checked: 2025-04-29 (osm)
 #: check_frequency: 90d
 #: next_check: 2025-06-30 (DB-Mail)
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="13"
+#: osm_watch: way id="1025826786" version="14"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 ',
          'from' => undef,
@@ -7468,7 +7530,7 @@ Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559 4321,125
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-04-11 (mapillary) vvv
+#: last_checked: 2025-04-26 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -7548,7 +7610,8 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...)
+#: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,ex-G)
@@ -7700,7 +7763,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-04-28 vvv
+#: last_checked: 2025-04-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8158,14 +8221,14 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/221-F/24/200 (bis 07.02.2025) (mittlerweile nur noch Wintersicherung mit einigen Einschränkungen, bis 30.04.2025) (Vollsperrung, bis 30.04.2025)
+         'data' => '#: source_id: LS/221-F/24/200 (bis 07.02.2025) (mittlerweile nur noch Wintersicherung mit einigen Einschränkungen, bis 30.04.2025) (Vollsperrung, bis 30.04.2025) (bis 30.05.2025)
 	2::inwork 36087,16319 36539,16154 38171,15125
 ',
          'from' => 1742079600,
          'id' => 4185,
-         'text' => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 30.04.2025',
+         'text' => 'Eggersdorf - Bruchmühle: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 30.05.2025',
          'type' => 'gesperrt',
-         'until' => 1746028800
+         'until' => 1748620800
        },
        {
          'data' => '#: source_id: LS/223-P/24/161 (bis 30.06.2025)
@@ -8235,7 +8298,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3
 #: note: laut Baustellenschild bis 04.2025
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-29 (traffic)
 #: check_frequency: 60d
 #: next_check: 2025-04-30
 	q3::inwork 4690,11369 4775,11203
@@ -8544,7 +8607,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (ex-G,ex-W)
 #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-04-20
+#: last_checked: 2025-04-26 (mapillary)
 #: check_frequency: 30d (outdoor checks)
 # REMOVED --- #: check_frequency: 14d (traffic)
 	q4::inwork 15769,14355 15841,14351
@@ -8722,8 +8785,11 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
        {
          'data' => '#: by: rbb (bis 17.03.2025) (bis 24.03.2025) (bis 28.04.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
-#: source_id: viz2021:13.452912,52.524174,17.02.2025,08:00 (bis 28.04.2025 + weitere Arbeiten) (bis 29.04.2025 + ...)
+#: source_id: viz2021:13.452912,52.524174,17.02.2025,08:00 (bis 28.04.2025 + weitere Arbeiten) (bis 29.04.2025 + ...) (inaktiv)
 #: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich; am 2025-03-05 war gesperrt
+#: also_indoor: traffic (none)
+#: add_fragezeichen: Wurden die Bauarbeiten bereits beendet?
+#: next_check: 2025-04-29
 	q3::inwork 13741,13107 13692,13221 13644,13332
 ',
          'from' => 1739574000,
@@ -9090,6 +9156,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
        undef,
        {
          'data' => '#: source_id: LS/221-E/25/033 (bis 23.05.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~25-04-2025-l-23-zwischen-golzow-und-kreuzung-l238
 	2::inwork 33219,61981 33413,61639 35000,60912 35215,60669 35255,60090 35405,59832 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
 ',
          'from' => 1744524000,
@@ -9218,16 +9285,7 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.33027,52.44531,23.04.2025,12:37 (bis 28.04.2025)
-	q4::inwork 5630,4476 5541,4305
-',
-         'from' => 1745318220,
-         'id' => 4312,
-         'text' => 'Sedanstr.: Wasserrohrbruch, Sperrung zwischen Birkbuschstr. und Johanna-Stegen-Straße, evtl. sind auch Radfahrer betroffen, vom 23.04.2025 12:37 bis 28.04.2025 23:59',
-         'type' => 'handicap',
-         'until' => 1745877540
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten)
 	q4::inwork 8365,5502 8365,5418
@@ -9270,6 +9328,27 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'text' => 'K6330, Brücke bei Buckow: Bauarbeiten, Sperrung, 05.05.2025 08:00 Uhr bis 23.06.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1750690800
+       },
+       {
+         'data' => '#: source_id: LS/223-P/25/062 (bis 16.05.2025)
+	2::inwork -14661,21652 -15188,21966 -15440,22048
+',
+         'from' => 1746338400,
+         'id' => 4317,
+         'text' => 'Falkensee - Alt Brieselang: Bauarbeiten, Sperrung, 05.05.2025 08:00 Uhr bis 16.05.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1747407600
+       },
+       {
+         'data' => '#: source_id: 256400530 (bis 31.10.2025)
+	2::inwork 33949,12447 33752,12593 34161,13153
+	2::inwork 33752,12593 33657,12479
+',
+         'from' => 1746338400,
+         'id' => 4318,
+         'text' => 'Fredersdorf-Vogelsdorf, Ernst-Thälmann-Str. und Fließstraße: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 05.05.2025 08:00 Uhr bis 31.10.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1761926400
        }
      
 );

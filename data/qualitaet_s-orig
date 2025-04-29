@@ -475,7 +475,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-04-28
+#: last_checked: 2025-04-29
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -6316,7 +6316,7 @@ Elsenallee: Asphalt	Q0 21379,9380 21265,9402 21094,9408
 Eichenallee: schlechtes Kopfsteinpflaster	Q3 21343,9546 21414,9545
 Eichenallee: schlechtes Kopfsteinpflaster	Q3 21097,9538 21253,9547
 Am Postbahnhof: Verbundsteinpflaster	Q0- 12638,11433 12594,11467
-(Valeska-Gert-Str. - Am Postbahnhof): Gehwegplatten	Q1+ 12807,11287 12713,11372
+(Valeska-Gert-Str. - Am Postbahnhof): Gehwegplatten	Q1+ 12825,11316 12713,11372
 #: note: hier ein bisschen besser als im restlichen Abschnitt
 Sperlingsweg: unbefestigte holprige Straße	Q2 14808,5202 14842,5128 14911,4996
 Sperlingsweg: unbefestigte holprige Straße	Q2- 14911,4996 14947,4961 14976,4935 14994,4913 15013,4886
@@ -11511,7 +11511,7 @@ Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780 19500,7719
 #: by: https://www.berliner-woche.de/fennpfuhl/c-umwelt/gruenzug-wird-umgestaltet_a413057
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10502 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10613 (Antrag (zur Beleuchtung))
-#: osm_watch: note 4405725 6
+#: osm_watch: note 4405725 7
 #: XXX wie sieht die Wegoberfläche nach den Sanierungsarbeiten aus? vermutlich asphaltiert
 #: last_checked: 2025-04-10
 #: check_frequency: 30d
@@ -29152,6 +29152,7 @@ Birkenstr. (Köpenick): Kopfsteinpflaster	Q2 23947,4673 23869,4733
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1492778.php (Sanierung bis 24.01.2025)
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/wegen-sanierung-gesperrt_a427384
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1516193.php (Verlängerung bis 30.04.2025)
+#: osm_watch: way id="4706337" version="15"
 #: note: zu wenig BBBike-Traffic für einen temp-blockings-Eintrag (<1/Monat)
 #: XXX Bleibt es nach der Sanierung beim Kleinsteinpflaster?
 #: next_check: 2025-04-30
