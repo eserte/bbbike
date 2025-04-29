@@ -519,6 +519,7 @@ ampeln:	ampeln-orig .check_daily
 	    ${GREPSTRASSEN} -v -catrx '^[FX]0' -preserveglobaldirectives | \
 	    ${PERL} -pe 's{::alternating}{}' | \
 	    ${CONVERT_ORIG} > ampeln~
+	[ -s ampeln~ ]
 	mv ampeln~ ampeln
 	-@$(READONLY) $@
 
