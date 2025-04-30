@@ -646,7 +646,7 @@
 	(if (not (search-forward-regexp "^\\([^:]+\\):\\([0-9]+\\)"))
 	    (error "Strange: can't find a grep result in " tempbuf)
 	  (let ((file (buffer-substring-no-properties (match-beginning 1) (match-end 1)))
-		(line (string-to-int (buffer-substring-no-properties (match-beginning 2) (match-end 2)))))
+		(line (string-to-number (buffer-substring-no-properties (match-beginning 2) (match-end 2)))))
 	    (find-file (concat (if (not (file-name-absolute-p file)) (concat bbbike-datadir "/")) file))
 	    (goto-line line)
 	    (if (not (search-forward-regexp "\\(version=\"\\|note [0-9]+ \\)" (line-end-position)))
