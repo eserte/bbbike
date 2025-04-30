@@ -209,10 +209,10 @@ rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/unpaved.bbd
 
 update-bbbike-aux-downloads:
-	cd ${BBBIKEAUXDIR}/downloads && ${MAKE}
+	cd ${BBBIKEAUXDIR}/downloads && ${MAKE} PERL=${PERL}
 
 update-bbbike-aux-bbd:
-	cd ${BBBIKEAUXDIR}/bbd && ${MAKE}
+	cd ${BBBIKEAUXDIR}/bbd && ${MAKE} PERL=${PERL}
 
 # popular targets
 fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
