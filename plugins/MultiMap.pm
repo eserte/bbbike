@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.38;
+$VERSION = 2.39;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -269,7 +269,7 @@ sub register {
 		  my %args = @_;
 		  my $current_tag_filter = $args{current_tag_filter}||'';
 		  if ($current_tag_filter eq 'bicycle') {
-		      'DB Rad+ Verkehrsmengen 2024';
+		      'DB Rad+ Verkehrsmengen (alle Jahre)';
 		  } else {
 		      'VIZ Berlin',
 		  }
@@ -278,7 +278,7 @@ sub register {
 		  my %args = @_;
 		  my $current_tag_filter = $args{current_tag_filter}||'';
 		  if ($current_tag_filter eq 'bicycle') {
-		      showmap_viz(layers => 'radplus_2024', @_);
+		      showmap_viz(layers => 'radplus_all', @_);
 		  } else {
 		      showmap_viz(@_);
 		  }
@@ -2332,6 +2332,7 @@ sub showmap_url_viz {
 
     my $layerids = {
 	default      => 'basemap_raster_farbe,Verkehrslage,Baustellen_OCIT',
+	radplus_all  => 'basemap_raster_farbe,radplus_2024,radplus_2023',
 	radplus_2024 => 'basemap_raster_farbe,radplus_2024',
 	radplus_2023 => 'basemap_raster_farbe,radplus_2023',
     }->{$layers};
@@ -2379,6 +2380,10 @@ sub show_viz_menu {
     }
     my $link_menu = $w->Menu(-title => 'VIZ Berlin',
 			     -tearoff => 0);
+    $link_menu->command
+	(-label => 'DB Rad+ (alle Jahre)',
+	 -command => sub { showmap_viz(layers => 'radplus_all', %args) },
+        );
     $link_menu->command
 	(-label => 'DB Rad+ 2024',
 	 -command => sub { showmap_viz(layers => 'radplus_2024', %args) },
