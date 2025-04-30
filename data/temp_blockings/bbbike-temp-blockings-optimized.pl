@@ -6451,7 +6451,20 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# REMOVED --- #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
+#: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=747210#post747210
+#: note: osm watches zu Bauarbeiten an den Nachbargrundstücken (ehemals Klinik + building:industrial)
+# REMOVED --- #: osm_watch: way id="156800019" version="6" --- #: osm_watch: way id="1219773996" version="1" --- #: also_indoor: traffic (none) --- #: last_checked: 2023-10-08 --- #: check_frequency: 30d
+#	2::inwork 12173,15040 12095,14888
+	q2::inwork 12173,15040 12095,14888
+',
+         'from' => undef,
+         'id' => 3707,
+         'text' => 'Ella-Kay-Str.: etwa 60m der Fahrbahn sind gesperrt, Engstelle, Ende der Bauarbeiten voraussichtlich am 31.05.2025',
+         'type' => 'gesperrt',
+         'until' => 1748707200
+       },
        undef,
        undef,
        undef,
@@ -7677,22 +7690,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.473127,52.513022,05.06.2024,07:00 (hier nur Kfz-Verkehr, bis 31.10.2024) (bis 31.12.2024) (bis 28.03.2025) (inaktiv) (bis 30.04.2025)
-#: osm_watch: note 4452464 4
-#: note: keine Freigabe der Gehwege für Radfahrer
-#: note: Halteverbotsschilder bis 31.12.2024, laut Vattenfall-Schild bis 01.2025, mittlerweile Halteverbotsschilder bis 28.03.2025
-#: note: der östliche Teil der Fahrbahn ist meistens (immer?) offen (Stand Mitte Juni 2024, Ende Juli 2024, Anfang August 2024, Ende August 2024, Anfang September 2024); mittlerweile ist die gesamte Breite der Fahrbahn an der Frankfurter Allee gesperrt (gesehen Mitte September 2024, Anfang Oktober 2024)
-#: last_checked: 2025-04-25
-#: next_check: 2025-04-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
-	q4::inwork 15077,11910 15110,12107
-',
-         'dont_check_date' => 1,
-         'from' => 1717538400,
-         'id' => 4079,
-         'text' => 'Jessnerstr.: Abschnitt der Fahrbahn zwischen Frankfurter Allee und Scharnweberstr. gesperrt, vom 05.06.2024 07:00 bis voraussichtlich 30.04.2025 17:00',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028)
@@ -7857,7 +7855,9 @@ Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5787,44
        undef,
        {
          'data' => '#: next_check_id: SCHILDOWER-2024
-#: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025 + weitere Bauphasen)
+#: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025 + weitere Bauphasen) (inaktiv)
+#: source_id: viz2021:13.32381,52.6249,30.04.2025,11:31 (Höhe Elsestr., bis 29.11.2025)
+#: source_id: viz2021:13.324736,52.625185,22.07.2024,07:00 (Elsestr. - Stadtgrenze, nur Kfz-Verkehr, bis 29.11.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1815251677278060801
 #: by: https://pbs.twimg.com/media/GS3L_VJWQAAhbAU?format=jpg&name=medium
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/arbeiten-an-der-schildower-strasse-dauern-18-monate_a421648
@@ -7866,13 +7866,14 @@ Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5787,44
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12985 (Einwohneranfrage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=13055 (Einwohneranfrage zur Einbahnstraßenregelung)
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
-#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-11-29 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="82451158" version="14"
 #: osm_watch: note 4444217 1
-Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233
-Schildower Str.	q4::inwork 4614,24233 4510,24170 4425,24067
-Bertastr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4448,24277 4510,24170 4613,24032
-Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24233 4565,24327
+Schildower Str. zwischen Elsestr. und Stadtgrenze	q4::inwork 4683,24275 4705,24284 4779,24321 4849,24335 4898,24351
+# REMOVED --- Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233
+# REMOVED (hier vermutlich beendet?) --- Schildower Str.	q4::inwork 4614,24233 4510,24170 4425,24067
+# REMOVED (hier vermutlich beendet?) --- Bertastr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4448,24277 4510,24170 4613,24032
+# REMOVED (hier vermutlich beendet?) --- Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24233 4565,24327
 Amandastr.: Einbahnstraßenregelung	q4::inwork; 4302,24291 4312,24323 4340,24413
 Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: next_check ^^^
@@ -8360,20 +8361,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: ROSEGGER-2024
-#: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
-#: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025)
-#: osm_watch: note 4524886 2
-# REMOVED (hier mittlerweile keine Bauarbeiten mehr) ---	q4::inwork 13205,8126 13277,8211
-	q4::inwork 13277,8211 13331,8283
-',
-         'from' => 1731304800,
-         'id' => 4215,
-         'text' => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Sonnenallee, Sperrung, auch Radfahrer sind betroffen, vom 12.11.2024 bis 29.04.2025',
-         'type' => 'handicap',
-         'until' => 1745963999
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.luftbildsuche.de/info/luftbilder/neubau-wohn-geschftshauses-berlin-deutschland-652549.html
@@ -8582,7 +8570,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: source_id: viz2021:13.298658,52.457781,22.01.2025,07:00 (bis 01.10.2025 + weitere Bauarbeiten bis 09/2025) (inaktiv)
-#: source_id: viz2021:13.298658,52.457781,03.02.2025,10:00 (bis 25.04.2025 + weitere Bauarbeiten bis 09/2025) (bis 02.05.2025 + ...)
+#: source_id: viz2021:13.298658,52.457781,03.02.2025,10:00 (bis 25.04.2025 + weitere Bauarbeiten bis 09/2025) (bis 02.05.2025 + ...) (bis 03.09.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1881943627896922593
 #: by: https://pbs.twimg.com/media/Ghzqa-yXAAA6Iuk?format=jpg&name=large
 	q4::inwork 3355,5655 3346,5629
@@ -8591,7 +8579,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'id' => 4241,
          'text' => 'Arnimallee: Fahrbahn an der Königin-Luise-Str. gesperrt, bis voraussichtlich September 2025',
          'type' => 'handicap',
-         'until' => 1759269600
+         'until' => 1756911600
        },
        {
          'data' => '#: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025)
@@ -8626,7 +8614,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-smetanastrasse-in-weissensee/
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025)
 #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-#: last_checked: 2025-03-18 vvv
+#: last_checked: 2025-04-30 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
 	q3::inwork; 14195,15604 14133,15773
@@ -8782,22 +8770,7 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
          'type' => 'handicap',
          'until' => 1746827999
        },
-       {
-         'data' => '#: by: rbb (bis 17.03.2025) (bis 24.03.2025) (bis 28.04.2025)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (bis Mitte März 2025, im Anschluss weitere Arbeiten bis Juni 2025)
-#: source_id: viz2021:13.452912,52.524174,17.02.2025,08:00 (bis 28.04.2025 + weitere Arbeiten) (bis 29.04.2025 + ...) (inaktiv)
-#: note: gesperrter Bereich ist nur etwa 50m lang (deshalb q4 -> q3); am 2025-02-19 war die Durchfahrt noch möglich; am 2025-03-05 war gesperrt
-#: also_indoor: traffic (none)
-#: add_fragezeichen: Wurden die Bauarbeiten bereits beendet?
-#: next_check: 2025-04-29
-	q3::inwork 13741,13107 13692,13221 13644,13332
-',
-         'from' => 1739574000,
-         'id' => 4262,
-         'text' => 'Ebertystr.: Sperrung der Fahrbahn Höhe Ebelingstr., vom 16.02.2025 08:00 bis Juni 2025',
-         'type' => 'handicap',
-         'until' => 1751320800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
 #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert
@@ -9349,6 +9322,24 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'text' => 'Fredersdorf-Vogelsdorf, Ernst-Thälmann-Str. und Fließstraße: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 05.05.2025 08:00 Uhr bis 31.10.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1761926400
+       },
+       {
+         'data' => '#: also_indoor: traffic (H,G,T,A,W)
+#: note: linker Bürgersteig weiterhin nutzbar
+#: last_checked: 2025-04-30 vvv
+#: check_frequency: 10d vvv
+#: next_check: 2025-07-11 (TomTom, ADFC) vvv
+Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
+Mollstr.: verschmutzte Fahrbahn	q3::inwork; 11913,13077 11841,13087
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 4319,
+         'text' => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

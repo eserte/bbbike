@@ -31,13 +31,13 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-04-24
+#: last_checked: 2025-04-30
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-03-29 vvv
+#: last_checked: 2025-04-30 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
@@ -1282,7 +1282,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 Gartenstr. (Weißensee): etwa 40m der Fahrbahn sind gesperrt	q3::inwork 14791,16445 14809,16525
 # 
 #: priority: #A
-#: last_checked: 2025-03-18
+#: last_checked: 2025-04-30
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Puccinistr.: Fahrbahn wegen Bauarbeiten gesperrt, südlicher Gehweg für Radfahrer frei	q2::inwork 13700,15501 13776,15546
@@ -1295,11 +1295,16 @@ Puccinistr.: Fahrbahn wegen Bauarbeiten gesperrt, südlicher Gehweg für Radfahrer
 #: by: https://www.frankschiffer.com/projekte/tor-zur-lehderstrasse/ (Fertigstellung 2024)
 #: osm_watch: way id="1170355847" version="1"
 #: osm_watch: way id="1170355851" version="1"
-#: last_checked: 2025-01-18
+#: last_checked: 2025-04-30
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2025-09-25
+#: next_check: 2025-09-25 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20241220
 Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
+# 
+#: last_checked: 2025-04-30
+#: next_check: 2025-06-13 (Halteverbotsschilder)
+#: valid: -20250613
+Streustr.: Straßenbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q3::inwork 12890,16121 12675,16214
 # 
 # REMOVED (Schranken eingetragen, mittlerweile keine Verbotsschilder mehr) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_31_3285_3340_online.pdf (Einziehung von öffentlichen Straßenland) --- #: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=752922#post752922 (angrenzendes Bauvorhaben) --- #: by: https://www.falkenberger134.de/ --- #: XXX Bleibt es bei der ausschließlichen Busfreigabe? Hier gibt es Schranken, sind diese manchmal geschlossen? --- # REMOVED --- #: osm_watch: way id="519370786" version="5" --- #: osm_watch: way id="1169861688" version="6" --- #: osm_watch: note 3678184 5 --- #: osm_watch: way id="1219613564" version="4" --- #: last_checked: 2024-02-02 --- #: check_frequency: 30d --- Falkenberger Str. - Hansastr: Fahrbahn nur für Linienverkehr frei	q4 15832,16846 15866,16823 15875,16816
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13639,16113 13479,16182

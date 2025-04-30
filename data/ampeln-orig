@@ -107,6 +107,7 @@ Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
 #: source_id: viz2021:13.58402,52.443878,20.08.2024,09:00 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.584031,52.443916,30.04.2025,10:00 (bis 11.07.2025)
+#: source_id: viz2021:13.584313,52.444031,30.04.2025,10:00 (bis 11.07.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1825789868754219040
 #: by: https://pbs.twimg.com/media/GVVe5-VWoAAAD12?format=jpg&name=medium
 #: next_check: 2025-07-11 (VIZ-Verkehrsmeldung)
@@ -174,14 +175,14 @@ Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 # REMOVED --- Grünauer Str./Werderstr.: Gegenverkehrsregelung	X::inwork::alternating 20028,1673
 # 
 # REMOVED (andere Stelle, 16425,6445) --- #: source_id: viz2021:13.490616,52.463117,15.04.2024,07:30 (bis 12.07.2024) (bis 24.07.2024) (inaktiv)
-#: source_id: viz2021:13.483741,52.468,19.02.2025,07:00 (bis 30.04.2025)
-#: source_id: viz2021:13.483911,52.467829,19.02.2025,07:00 (bis 30.04.2025) (inaktiv)
-#: source_id: bvg2024:166#HIM_FREETEXT_267012 (kein Endedatum)
-#: note: Länge der Gegenverkehrsstrecke: etwa 70m
-#: last_checked: 2025-04-12
-#: next_check: 2025-04-30
-#: valid: -20250430
-Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 15928,6996
+# REMOVED --- #: source_id: viz2021:13.483741,52.468,19.02.2025,07:00 (bis 30.04.2025) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.483911,52.467829,19.02.2025,07:00 (bis 30.04.2025) (inaktiv)
+# REMOVED --- #: source_id: bvg2024:166#HIM_FREETEXT_267012 (kein Endedatum)
+# REMOVED --- #: note: Länge der Gegenverkehrsstrecke: etwa 70m
+# REMOVED --- #: last_checked: 2025-04-12
+# REMOVED --- #: next_check: 2025-04-30
+# REMOVED --- #: valid: -20250430
+# REMOVED --- Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 15928,6996
 # 
 # REMOVED --- #: XXX Schnellerstraße (Niederschöneweide) in beiden Richtungen zwischen Rudower Straße und Köllnische Straße: Kabelschachtsanierung, Gegenverkehrsregelung durch Baustellenampel, vom 25.03.2024 11:00 bis 03.05.2024 17:00 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772165269927981192 --- #: by: https://pbs.twimg.com/media/GJSQEhiXwAAgVQE?format=jpg&name=large (außerdem Anbindung Rudower Str. (von Süden her) gesperrt) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784806818113327427 --- #: by: https://pbs.twimg.com/media/GMGdMBjXMAAwCqG?format=jpg&name=large --- #: source_id: viz2021:13.526211,52.452649,25.03.2024,11:00 (bis 03.05.2024) (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.529,52.452235,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.52392,52.45312,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: next_check: 2024-05-24 --- #: valid: -20240524 --- Schnellerstr./Köllnische Str.: Gegenverkehrsregelung	X::inwork::alternating 18955,5320
 # REMOVED --- #: XXX Mariendorfer Weg/Gottlieb-Dunkel-Straße (Neukölln) in beiden Richtungen Höhe Eschersheimer Straße: Fernwärmeleitungsbau, Gegenverkehrsregelung mit Baustellenampel, Anbindung Eschersheimer Straße gesperrt, vom 06.03.2024 12:00 bis 25.10.2024 17:00 --- #: source_id: viz2021:13.422144,52.462586,06.03.2024,12:00 (bis 25.10.2024) (inaktiv) --- #: source_id: viz2021:13.424532,52.463603,13.03.2024,09:00 (Verschwenkung östlich dieser Stelle, bis 03.06.2024) (bis 15.07.2024) (bis 18.09.2024) (bis 16.10.2024) --- #: note: die Radwege in der Eschersheimer Str. sind nicht gesperrt (Stand Mitte März 2024) --- #: note: zum Carl-Weder-Park kommt man mit einem kleinen Umweg via westlicher Ampel --- #: also_indoor: traffic (ex-H,G,T,B,W) --- #: last_checked: 2024-08-31 (traffic) --- #: check_frequency: 60d --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2024-10-16 --- #: valid: -20241016 --- Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	X::inwork::alternating 11740,6338

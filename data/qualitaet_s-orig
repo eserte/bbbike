@@ -1668,9 +1668,9 @@ Walkürenstr.: Kopfsteinpflaster	Q2 18022,9324 18006,9335 17720,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17720,9533 17549,9529
 (am Schloß Schönhausen): Kleinsteinpflaster	Q1- 10294,19298 10339,19179 10382,19066
 (am Schloß Schönhausen): Kleinsteinpflaster	Q1- 10339,19179 10249,19148
-#: XXX Nach den Bauarbeiten bessere Qualität?
-#: next_check: 2025-04-23
-Stedingerweg: Asphalt mit Schäden	Q1+ 13636,14900 13733,14813
+#: historical_note: früher (bis 23. April 2025): Asphalt mit Schäden, Q1+
+#: note: etwa 90m wurden saniert
+Stedingerweg: Asphalt	Q0 13636,14900 13733,14813
 Stedingerweg: Asphalt mit Schäden	Q1+ 13733,14813 13908,14654
 Stedingerweg: Asphalt	Q0+ 13908,14654 13933,14622 13947,14513
 Hauptstr: sandiger und hoplriger Fahrweg	Q3 9675,26957 9583,26769 9577,26725 9694,26558 9721,26449
@@ -1782,7 +1782,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblöcken, u.a. Bötzow-Kiez)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/kiezblocks-in-pruefung-winsviertel-boetzowkiez-und-gruene-stadt_a423747
 #: osm_watch: way id="4615063" version="37"
-#: last_checked: 2025-04-10
+#: last_checked: 2025-04-30
 #: check_frequency: 180d
 #: next_check: 2027-09-30 (infravelo)
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
