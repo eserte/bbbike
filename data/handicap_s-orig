@@ -229,6 +229,13 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 ### Tempelhof ###
 # 
+#: note: laut Baustellenschild bis Sommer (2025)
+#: last_checked: 2025-04-30
+#: check_frequency: 90d
+#: next_check: 2025-09-20 (Baustellenschild)
+#: valid: -20250920
+Südkreuz: Bauarbeiten, Engstellen	q3::inwork 7838,7848 7837,7899
+# 
 # REMOVED --- #: next_check_id: BOELCKE-2025
 # REMOVED --- #: also_indoor: traffic (ex-B,ex-T,ex-G) vvv
 # REMOVED --- #: last_checked: 2025-03-15 vvv
@@ -993,12 +1000,12 @@ Boddinstr.: Sperrung an der Karl-Marx-Str.	q3::inwork 12368,8356 12582,8408
 # 
 ### Lichtenberg ###
 # 
-#: also_indoor: traffic (ex-H,G,ex-T)
-#: source_id: viz2021:13.518258,52.528778,01.04.2025,09:44 (hier nur Kfz-Verkehr, bis 30.04.2025)
-#: last_checked: 2025-04-27 (traffic)
-#: next_check: 2025-04-30 (Halteverbotsschilder)
-#: valid: -20250430
-Rhinstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18024,13843 18050,13835 18134,13811 18198,13816
+# REMOVED --- #: also_indoor: traffic (ex-H,G,ex-T)
+# REMOVED --- #: source_id: viz2021:13.518258,52.528778,01.04.2025,09:44 (hier nur Kfz-Verkehr, bis 30.04.2025) (inaktiv)
+# REMOVED --- #: last_checked: 2025-04-27 (traffic)
+# REMOVED --- #: next_check: 2025-04-30 (Halteverbotsschilder)
+# REMOVED --- #: valid: -20250430
+# REMOVED --- Rhinstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18024,13843 18050,13835 18134,13811 18198,13816
 # 
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2025
 #: note: eigentlich gibt es auch Beschränkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt möglich
@@ -1980,7 +1987,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-26
+#: last_checked: 2025-04-30
 #: check_frequency: 30d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870

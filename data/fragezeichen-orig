@@ -2204,7 +2204,7 @@ Roedernallee: Sanierung des Radweges bzw. neue Radspuren waren vorgesehen	? 6392
 #: by: https://api.fixmyberlin.de/api/projects/335
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8753 (Antrag)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9104 (Antrag)
-#: osm_watch: way id="4441941" version="27"
+#: osm_watch: way id="4441941" version="28"
 #: last_checked: 2025-03-26 (mapillary)
 #: check_frequency: 360d
 Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7145,-961 -7066,-840 -7042,-724 -7069,-392 -7076,-227 -7067,-36 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310 -7167,362 -7180,378 -7178,377
@@ -2288,7 +2288,7 @@ Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projec
 #: source_id[inactive]: bvg2024:106#HIM_FREETEXT_235323 (Haltestellenverlegung ab 19.08.2024, evtl. im Zusammenhang mit der RVA?)
 #: source_id: viz2021:13.328651,52.529582,15.10.2024,07:00 (bis 29.10.2024) (bis 05.11.2024) (inaktiv)
 #: source_id: viz2021:13.328102,52.525936,05.11.2024,10:00 (Fahrbahninstandsetzung südl. der Turmstr., bis 13.12.2024) (bis 23.12.2024) (inaktiv)
-#: source_id: viz2021:13.328102,52.525936,28.01.2025,10:00 (Fahrbahninstandsetzung südl. der Turmstr., bis 30.04.2025)
+#: source_id: viz2021:13.328102,52.525936,28.01.2025,10:00 (Fahrbahninstandsetzung südl. der Turmstr., bis 30.04.2025) (inaktiv)
 #: osm_watch: way id="28497108" version="24"
 #: osm_watch: way id="1167737343" version="3"
 #: osm_watch: note 3933817 20
@@ -3450,11 +3450,12 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 #: next_check: 2025-09-01 (Tsp)
 BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14281,8444 14288,8341 14421,8032 14447,7901 14459,7763 14436,7611 14346,7377 14219,6838 14180,6755 14106,6663
 # 
+#: next_check_id: BAB100-2022
 #: XXX offene Fragen: wird es eine Anbindung zum Bahndamm Richtung Görlitzer Park geben (angedacht ist es, aber wird vermutlich nicht zeitig realisiert werden)? wird es eine Anbindung zur Beermannstr. geben? wird es eine Anbindung zu Am Treptower Park geben (hier eher nicht, der Platz scheint nicht zu reichen)?
 #: XXX außerdem wird es auch einen Betriebsweg auf der westlichen Seite geben, aber das wird wohl eine Sackgasse sein
 #: last_checked: 2025-04-09
 #: check_frequency: 90d
-#: next_check: 2025-06-30 (autobahn website)
+#: next_check: 2025-09-01 (Tsp)
 Betriebsweg Kiefholzstr. - Görlitzer Bahn/Beermannstr.	?::inwork 14137,8983 14173,9018 14144,9092 14129,9137 14117,9233 14082,9267 14088,9299 14131,9356 14135,9384 14119,9405 14131,9470
 # 
 # REMOVED --- #: last_checked: 2014-05-10 --- #: check_frequency: 100d --- #: XXX laut osm existiert der Weg schon --- #: by: http://www.potsdam.de/sites/default/files/documents/16297_amtsblatt_27-7_dsjs_final.pdf --- Uferweg zum Türkstr. (Potsdam)	?::inwork -11913,-1032 -11906,-989 -11866,-993 -11851,-962 -11821,-923
@@ -4545,7 +4546,7 @@ Wundtstr./Horstweg: "Qualifizierung" des Stadtplatzes; wird sich etwas für Radfa
 #: XXX Vorfahrt gegenüber der Tourcoingstr.
 #: XXX Einbahnstraße für Kfz bis Grillenweg, Richtung Süden/Westen frei
 #: osm_watch: way id="4674816" version="33"
-#: osm_watch: way id="558869710" version="6"
+#: osm_watch: way id="558869710" version="7"
 #: last_checked: 2025-01-15
 #: check_frequency: 180d
 # EMOVED (Stand März 2025: aktuell ausgesetzt) --- #: next_check: 2025-05-01
@@ -5299,7 +5300,7 @@ Hermann-Hesse-Str.: geschützte Radfahrstreifen geplant	?::projected 9870,19360 9
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_34_4647_4786_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_39_5323_5498_online.pdf (Berichtigung: Nachholung Rechtsmittelbelehrung)
 #: XXX hat das irgendwelche Konsequenzen?
-#: last_checked: 2025-02-05
+#: last_checked: 2025-04-30
 #: check_frequency: 180d
 Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 # 
@@ -8745,7 +8746,7 @@ Waldsassener Str./Tirschenreuther Ring: Zebrastreifen in Planung	? 6990,228 7014
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1519205.php
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24557
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bsr-zentrale-und-co-sch%C3%B6neberger-linse.1481/#post-24618
-#: last_checked: 2025-04-23
+#: last_checked: 2025-04-30
 #: check_frequency: 90d
 Ella-Barowsky-Str.: Umbauarbeiten, dabei entsteht ein Radweg	?::inwork 7499,7880 7537,7859 7551,7851 7621,7813 7632,7807 7696,7771
 # 
@@ -8755,7 +8756,7 @@ Ella-Barowsky-Str.: Umbauarbeiten, dabei entsteht ein Radweg	?::inwork 7499,7880
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bsr-zentrale-und-co-sch%C3%B6neberger-linse.1481/#post-24618
 #: by: https://entwicklungsstadt.de/baustelle-vorbereitet-baubeginn-ab-2026-so-plant-die-bsr-ihre-neue-zentrale-am-suedkreuz/ (bis 2028)
 #: XXX Bebauungsplan XI-231abb
-#: last_checked: 2025-04-23
+#: last_checked: 2025-04-30
 #: check_frequency: 720d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Quartiersweg - Wilhelm-Kabus-Str.: geplanter Geh- und Radweg	?::projected 7639,7974 7698,7923
@@ -10344,7 +10345,7 @@ Gewerbegebiet Glienicker Weg: hier enstehen Straßen, evtl. eine Bahnunterführung
 #: by: https://entwicklungsstadt.de/projekt-ringbahnhoefe-in-neukoelln-insolvenz-bremst-quartiersentwicklung/
 #: by: https://www.deutsches-architekturforum.de/thread/13323-stadtquartier-neue-ringbahnh%C3%B6fe-neuk%C3%B6lln-in-planung/?postID=769646#post769646
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/insolventes-bauprojekt-ringbahnhofe-wie-sich-ein-offentliches-versorgungswerk-in-neukolln-verzockte-13483702.html
-#: last_checked: 2025-03-26
+#: last_checked: 2025-04-30
 #: check_frequency: 720d
 ehemaliger Güterbahnhof Neukölln: Radweg geplant	?::projected 12704,6920 12696,6963 13058,7052
 # 
