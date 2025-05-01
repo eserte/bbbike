@@ -3717,46 +3717,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html
-#: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
-#: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20240421 (vor dem Roten Rathaus)
-#: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00
-#: source_id: viz2021:13.37688,52.51775,30.04.2022,12:00
-#: source_id: viz2021:13.36968,52.51571,30.04.2022,12:00
-#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
-# REMOVED (Pariser Platz) ---	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
-# REMOVED (Pariser Platz) ---	2::temp 8573,12325 8540,12420
-# REMOVED (Pariser Platz) ---	2::temp 8303,12216 8344,12221 8538,12245 8592,12252
-# REMOVED (Pariser Platz) ---	2::temp 8089,12190 8214,12205
-# REMOVED (Pariser Platz) ---	3::temp 8391,12389 8344,12221 8327,12174
-# REMOVED (Pariser Platz) ---	3::temp 8327,12174 8344,12221 8391,12389
-Rathausstr.	2::temp 10599,12526 10696,12601
-Jüdenstr.	2::temp 10696,12601 10783,12502
-#: tempex ^^^
-',
-         'from' => 1745964000,
-         'id' => 2565,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 7,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              4,
-                              'start',
-                              '2021-05-03T00:00:00'
-                            ]
-                          ],
-         'text' => 'Rotes Rathaus: Veranstaltung (Kundgebung des DGB), Rathausstr. und Jüdenstr. könnten unpassierbar sein, am 1. Mai 2025',
-         'type' => 'gesperrt',
-         'until' => 1746122400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5187,9 +5148,9 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: osm_watch: note 3914565 17
-#: last_checked: 2024-11-14 (indoor research)
-# REMOVED --- #: check_frequency: 120d
+#: osm_watch: note 3914565 18
+#: last_checked: 2025-05-01 (osm note)
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-09-22
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 ',
@@ -7919,10 +7880,10 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        undef,
        {
          'data' => '#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
-#: osm_watch: note 4383533 3
+#: osm_watch: note 4383533 4
 #: osm_watch: way id="37948631" version="9"
 #: also_indoor: traffic (H,G,B,T,A,W)
-#: last_checked: 2025-04-24 (traffic + altlandsberg website)
+#: last_checked: 2025-05-01 (osm note)
 #: check_frequency: 14d (traffic + altlandsberg website)
 #: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464

@@ -33659,9 +33659,9 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="2"
-#: osm_watch: note 3914565 17
-#: last_checked: 2024-11-14 (indoor research)
-# REMOVED --- #: check_frequency: 120d
+#: osm_watch: note 3914565 18
+#: last_checked: 2025-05-01 (osm note)
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-09-22
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 EOF
@@ -45073,10 +45073,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
-#: osm_watch: note 4383533 3
+#: osm_watch: note 4383533 4
 #: osm_watch: way id="37948631" version="9"
 #: also_indoor: traffic (H,G,B,T,A,W)
-#: last_checked: 2025-04-24 (traffic + altlandsberg website)
+#: last_checked: 2025-05-01 (osm note)
 #: check_frequency: 14d (traffic + altlandsberg website)
 #: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
