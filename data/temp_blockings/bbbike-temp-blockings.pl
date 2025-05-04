@@ -47163,10 +47163,10 @@ EOF
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
 #: osm_watch: way id="1089784248" version="3"
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
-#: osm_watch: way id="1374232475" version="1"
+#: osm_watch: way id="1374232475" version="2"
 #: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (H)
-#: last_checked: 2025-04-15 (mapillary)
+#: last_checked: 2025-05-02 (osm)
 #: check_frequency: 90d
 Merler Weg	q4::inwork 18852,13269 19180,13219
 EOF
@@ -47511,6 +47511,15 @@ Mollstr.: verschmutzte Fahrbahn	q3::inwork; 11913,13077 11841,13087
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+EOF
+     },
+     { from  => 1746334800, # 2025-05-04 07:00
+       until => 1761840000, # 2025-10-30 17:00
+       text  => 'Imbuschweg: Anbindung Johannisthaler Chaussee gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 30.10.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.457594,52.43103,05.05.2025,07:00 (bis 30.10.2025)
+	q4::inwork 14154,2923 14212,2865
 EOF
      },
     );
