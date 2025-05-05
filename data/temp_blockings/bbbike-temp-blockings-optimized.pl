@@ -2634,6 +2634,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12632
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12653
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_10_0665_0712_online.pdf (Teileinziehung von öffentlichem Straßenland - in den regulären Sitzungswochen des Deutschen Bundestages)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_19_1189_1244_online.pdf
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 ',
@@ -3399,36 +3400,7 @@ Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '# REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
-#: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
-#: by: https://www.family-and-friends-ev.de/?date=20210418 (4.-6. Juni 2021, dann aber vermutlich kein Maientanz")
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-vom-4-6-juni-2021 (2021 verschoben auf 29. April - 1. Mai 2022)
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-am-idyllischen-dorfteich-lichtenrade
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein (2024: 3. bis 5. Mai)
-#: by: https://www.family-and-friends-ev.de/1-4-mai-2025-kunst-trifft-wein (2025: 1. bis 4. Mai)
-# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
-	2::temp 11064,-1597 11054,-1659 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
-',
-         'from' => 1745964000,
-         'id' => 2431,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              4,
-                              'start',
-                              '2021-05-06T00:00:00'
-                            ]
-                          ],
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2025 bis 04.05.2025)',
-         'type' => 'handicap',
-         'until' => 1746395999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5650,7 +5622,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-23
+#: last_checked: 2025-05-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6664,29 +6636,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (mittlerweile ist nur die Diagonalverbindung Grabertstr. - Sembritzkistr. gesperrt (ohnehin nicht in den BBBike-Daten) --- 
-#: note: Endedatum laut Baustellenschild der Wasserbetriebe
-# REMOVED --- #: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt --- #: osm_watch: way id="1197821336" version="1" --- 
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: also_indoor: traffic (T,H) vvv
-#: last_checked: 2025-04-23 vvv
-#: check_frequency: 14d (traffic) vvv
-#: next_check: 2025-10-31 vvv
-Grabertstr.	q4::inwork 6923,5057 7030,4937
-#Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3784,
-         'text' => 'Grabertstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
-         'type' => 'handicap',
-         'until' => 1761930000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7204,11 +7154,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1746136800,
+         'from' => 1749160800,
          'id' => 3955,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 3.5.2025 bis 4.5.2025',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 7.6.2025 bis 9.6.2025',
          'type' => 'handicap',
-         'until' => 1746395999
+         'until' => 1749506399
        },
        undef,
        undef,
@@ -8010,7 +7960,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-04-23 vvv
+#: last_checked: 2025-05-05 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -8367,7 +8317,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-04-30
+#: last_checked: 2025-05-05
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -9127,6 +9077,7 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
        undef,
        {
          'data' => '#: source_id: 257301352 (bis 27.06.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~29-04-2025-b-2-brueckeninstandsetzung-pinnow
 	2::inwork 55014,74593 54996,74647
 ',
          'from' => 1746338400,
@@ -9146,7 +9097,17 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
          'type' => 'handicap',
          'until' => 1748444400
        },
-       undef,
+       {
+         'data' => '#: also_indoor: traffic (G,B,T,A)
+#: source_id: viz2021:13.231323,52.509328,25.11.2024,10:00 (hier nur Kfz-Verkehr, außerdem falsche Lage, bis 30.04.2025) (inaktiv) (bis 23.05.2025)
+	q4::inwork; -1398,11803 -1382,11736 -1375,11555 -1368,11525
+',
+         'from' => 1744806015,
+         'id' => 4306,
+         'text' => 'Passenheimer Str.: Einbahnstraßenregelung, Richtung Norden offen, voraussichtlich bis 23. Mai 2025',
+         'type' => 'handicap',
+         'until' => 1748012400
+       },
        {
          'data' => '#: source_id: 256400412 (bis 23.05.2025)
 	2::inwork 65914,15828 65818,15731 65671,15534
@@ -9257,6 +9218,7 @@ Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3
        },
        {
          'data' => '#: source_id: LS/223-P/25/062 (bis 16.05.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~29-04-2025-l-201-falkensee
 	2::inwork -14661,21652 -15188,21966 -15440,22048
 ',
          'from' => 1746338400,
@@ -9305,6 +9267,37 @@ Mollstr.: verschmutzte Fahrbahn	q3::inwork; 11913,13077 11841,13087
          'text' => 'Imbuschweg: Anbindung Johannisthaler Chaussee gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 30.10.2025 17:00',
          'type' => 'handicap',
          'until' => 1761840000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.332624,52.455792,05.05.2025,08:25 (bis 14.05.2025 + weitere Arbeiten)
+	q4::inwork 5588,5579 5675,5573
+	q4::inwork 5673,5664 5587,5655
+',
+         'from' => 1746339900,
+         'id' => 4321,
+         'text' => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, vom 05.05.2025 08:25 bis 14.05.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1747234800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.273769,52.482217,05.05.2025,07:00 (bis 23.05.2025)
+	q4::inwork 1606,8239 1624,8495
+',
+         'from' => 1746334800,
+         'id' => 4322,
+         'text' => 'Wernerstr.: Bauarbeiten, zwischen Richard-Strauss-Str. und Toni-Lessler-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 23.05.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1748012400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.31176,52.52457,05.05.2025,07:00 (bis 30.11.2025)
+	q4::inwork 4092,13021 4096,13095
+',
+         'from' => 1746334800,
+         'id' => 4323,
+         'text' => 'Wernigeroder Str.: Bauarbeiten, zwischen Nordhauser Str. und Harlingeroder Weg gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 bis 30.11.2025',
+         'type' => 'handicap',
+         'until' => 1764543540
        }
      
 );

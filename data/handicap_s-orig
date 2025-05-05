@@ -73,10 +73,11 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11464 (Anfrage)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_20_1183_1234_online.pdf (Einziehung einer Grünanlage (nördlich dieser Stelle))
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/howoge-legt-grundstein-fuer-modernes-heinrich-hertz-gymnasium_a420359 (Eröffnung im Herbst 2026)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-heinrich-hertz-gymnasium-am-ostbahnhof.1438/#post-25032
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2025-04-26
+#: last_checked: 2025-05-01 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-08-22
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -110,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-04-26
+#: last_checked: 2025-05-05
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -465,7 +466,7 @@ Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,129
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2025-04-10 (architektur-urbanistik) vvv
+#: last_checked: 2025-05-05 (daf) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="41"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -1127,8 +1128,8 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Marzahn ###
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
-#: also_indoor: traffic (B,T,ex-H)
-#: last_checked: 2025-04-23 (traffic)
+#: also_indoor: traffic (B,T,re-H)
+#: last_checked: 2025-05-05 (traffic)
 #: check_frequency: 14d (traffic)
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
@@ -1375,20 +1376,20 @@ Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11
 # 
 ### Lankwitz ###
 # 
-#: also_indoor: traffic (B,G,ex-H,T)
-#: note: Halteverbotsschilder bis 23.10.2024
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-04-27 (traffic) vvv
-#: check_frequency: 10d vvv
-# REMOVED --- #: next_check: 2024-10-23 vvv
-# REMOVED --- #: valid: -20241023 vvv
-Mozartstr./Calandrellistr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege	q2::inwork 5619,3958 5710,3751 5791,3563
-Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5549,3679 5710,3751 5954,3861
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: also_indoor: traffic (ex-B,G,ex-H,ex-T)
+# REMOVED --- #: note: Halteverbotsschilder bis 23.10.2024
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+# REMOVED --- #: last_checked: 2025-04-27 (traffic) vvv
+# REMOVED --- #: check_frequency: 10d vvv
+# REMOVED --- # REMOVED --- #: next_check: 2024-10-23 vvv
+# REMOVED --- # REMOVED --- #: valid: -20241023 vvv
+# REMOVED --- Mozartstr./Calandrellistr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege	q2::inwork 5619,3958 5710,3751 5791,3563
+# REMOVED --- Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5549,3679 5710,3751 5954,3861
+# REMOVED --- # REMOVED --- #: valid ^^^
+# REMOVED --- # REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
+# REMOVED --- #: add_fragezeichen ^^^
 # 
 ### Lichterfelde ###
 # 
@@ -1987,7 +1988,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-30
+#: last_checked: 2025-05-05
 #: check_frequency: 30d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870

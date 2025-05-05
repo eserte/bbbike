@@ -17840,6 +17840,7 @@ EOF
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12632
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12653
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_10_0665_0712_online.pdf (Teileinziehung von öffentlichem Straßenland - in den regulären Sitzungswochen des Deutschen Bundestages)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_19_1189_1244_online.pdf
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 EOF
@@ -36163,7 +36164,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-04-23
+#: last_checked: 2025-05-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -39906,7 +39907,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2025-10-31 18:00:00"), # 1703597005, # undef, # XXX
+       until => 1746469605, # $isodate2epoch->("2025-10-31 18:00:00"), # 1703597005, # undef, # XXX
 #      text  => 'Grabertstr. und Hanstedter Weg: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
        text  => 'Grabertstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Oktober 2025',
        type  => 'handicap',
@@ -39914,18 +39915,12 @@ EOF
 # REMOVED (mittlerweile ist nur die Diagonalverbindung Grabertstr. - Sembritzkistr. gesperrt (ohnehin nicht in den BBBike-Daten) --- 
 #: note: Endedatum laut Baustellenschild der Wasserbetriebe
 # REMOVED --- #: note: bei Bing mittlerweile der südliche Abschnitt der Grabertstr. (ab Karl-Fischer-Weg) gesperrt --- #: osm_watch: way id="1197821336" version="1" --- 
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: also_indoor: traffic (T,H) vvv
-#: last_checked: 2025-04-23 vvv
-#: check_frequency: 14d (traffic) vvv
-#: next_check: 2025-10-31 vvv
+#: also_indoor: traffic (ex-T,ex-H) vvv
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2025-05-05 (traffic) vvv --- #: check_frequency: 14d (traffic) vvv --- #: next_check: 2025-10-31 vvv
 Grabertstr.	q4::inwork 6923,5057 7030,4937
 #Hanstedter Weg	q4::inwork 6923,5057 6908,5053 6783,5011
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- : next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: also_indoor ^^^
-#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -45333,7 +45328,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-04-23 vvv
+#: last_checked: 2025-05-05 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -46210,7 +46205,7 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-04-30
+#: last_checked: 2025-05-05
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -47345,6 +47340,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 257301352 (bis 27.06.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~29-04-2025-b-2-brueckeninstandsetzung-pinnow
 	2::inwork 55014,74593 54996,74647
 EOF
      },
@@ -47359,12 +47355,12 @@ EOF
 EOF
      },
      { from  => 1744806015, # 2025-04-16 14:20
-       until => 1746050399, # 2025-04-30 23:59
-       text  => 'Passenheimer Str.: Einbahnstraßenregelung, Richtung Norden offen, voraussichtlich bis Ende April 2025',
+       until => $isodate2epoch->("2025-05-23 17:00:00"), # 1746050399, # 2025-04-30 23:59
+       text  => 'Passenheimer Str.: Einbahnstraßenregelung, Richtung Norden offen, voraussichtlich bis 23. Mai 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G,B,T,A)
-#: source_id: viz2021:13.231323,52.509328,25.11.2024,10:00 (hier nur Kfz-Verkehr, außerdem falsche Lage, bis 30.04.2025) (inaktiv)
+#: source_id: viz2021:13.231323,52.509328,25.11.2024,10:00 (hier nur Kfz-Verkehr, außerdem falsche Lage, bis 30.04.2025) (inaktiv) (bis 23.05.2025)
 	q4::inwork; -1398,11803 -1382,11736 -1375,11555 -1368,11525
 EOF
      },
@@ -47481,6 +47477,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/223-P/25/062 (bis 16.05.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~29-04-2025-l-201-falkensee
 	2::inwork -14661,21652 -15188,21966 -15440,22048
 EOF
      },
@@ -47520,6 +47517,34 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.457594,52.43103,05.05.2025,07:00 (bis 30.10.2025)
 	q4::inwork 14154,2923 14212,2865
+EOF
+     },
+     { from  => 1746339900, # 2025-05-04 08:25
+       until => 1747234800, # 2025-05-14 17:00
+       text  => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, vom 05.05.2025 08:25 bis 14.05.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.332624,52.455792,05.05.2025,08:25 (bis 14.05.2025 + weitere Arbeiten)
+	q4::inwork 5588,5579 5675,5573
+	q4::inwork 5673,5664 5587,5655
+EOF
+     },
+     { from  => 1746334800, # 2025-05-04 07:00
+       until => 1748012400, # 2025-05-23 17:00
+       text  => 'Wernerstr.: Bauarbeiten, zwischen Richard-Strauss-Str. und Toni-Lessler-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 23.05.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.273769,52.482217,05.05.2025,07:00 (bis 23.05.2025)
+	q4::inwork 1606,8239 1624,8495
+EOF
+     },
+     { from  => 1746334800, # 2025-05-04 07:00
+       until => 1764543540, # 2025-11-30 23:59
+       text  => 'Wernigeroder Str.: Bauarbeiten, zwischen Nordhauser Str. und Harlingeroder Weg gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 bis 30.11.2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.31176,52.52457,05.05.2025,07:00 (bis 30.11.2025)
+	q4::inwork 4092,13021 4096,13095
 EOF
      },
     );

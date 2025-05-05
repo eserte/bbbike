@@ -277,7 +277,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="12"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2025-04-08
+#: last_checked: 2025-05-05 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -350,7 +350,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-04-27 vvv
+#: last_checked: 2025-05-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1336,7 +1336,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-04-30 vvv
+#: last_checked: 2025-05-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1510,7 +1510,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="22"
-#: last_checked: 2025-04-23
+#: last_checked: 2025-05-05
 #: check_frequency: 120d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -3128,7 +3128,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-04-26
+#: last_checked: 2025-05-05
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3158,7 +3158,7 @@ Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei; die letzten 20 Meter 
 #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: XXX früherer Eintrag, wird vielleicht wieder hergestellt: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0;
-#: last_checked: 2025-04-26
+#: last_checked: 2025-05-05
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 13973,9465
