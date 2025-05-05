@@ -94,11 +94,11 @@ sub teaser {
 }
 
 sub teaser_sternfahrt_adfc {
-    my $out_of_date = $today gt "20240602";
+    my $out_of_date = $today gt "20250601";
     if (!$out_of_date) {
-	my $url = "https://berlin.adfc.de/artikel/adfc-sternfahrt-2024";
+	my $url = "https://berlin.adfc.de/sternfahrt";
 	<<EOF
-<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 2. Juni $year</div>
+<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 1. Juni $year</div>
 EOF
     } else {
 	();
