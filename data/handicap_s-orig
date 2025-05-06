@@ -136,7 +136,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-04-24 vvv
+#: last_checked: 2025-05-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -405,6 +405,13 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
+# 
+#: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025)
+#: last_checked: 2025-05-06
+#: next_check: 2025-05-14 (VIZ-Verkehrsmeldung)
+#: valid: -20250514
+Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
+# 
 #: note: Länge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (laut Baustellenschild)
 #: last_checked: 2025-04-16 (mapillary)
 #: check_frequency 30d
@@ -466,7 +473,7 @@ Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,129
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2025-05-05 (daf) vvv
+#: last_checked: 2025-05-06 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="41"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -4772,7 +4779,7 @@ Schulweg: einige Fußgänger	q3 12600,12860 12551,12785 12483,12682
 #: note: rechtliche Lage unklar, möglicherweise Gehweg
 Diestelmeyerstr.: einige Fußgänger	q3 12833,12920 12690,12769
 #: note: Verbot für Fahrzeuge aller Art, Betriebs- und Versorgungsdienst frei, keine anderen expliziten Verbote bzgl. Radfahrer
-(Sebastianstr./Alexandrinenstr. - Dresdener Str.): einige Fußgänger	q1 10826,11251 10907,11290 10957,11294 11000,11327
+(Sebastianstr./Alexandrinenstr. - Dresdener Str.): einige Fußgänger, Aufpflasterungen	q1- 10826,11251 10907,11290 10957,11294 11000,11327
 #: note: rechtliche Lage unklar, möglicherweise Gehweg
 Sokratesweg: einige Fußgänger	q2 18514,9552 18604,9535
 #: note: Radfahrer sollen hier absteigen

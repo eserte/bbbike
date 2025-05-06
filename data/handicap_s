@@ -25,6 +25,7 @@ Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer fr
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
+Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,12941
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -2353,7 +2354,7 @@ Blankensteinpark: Fußgänger, Radfahren nicht erlaubt	q4 14130,12926 14146,12921 
 Mendelssohnstr. [Wohngebiet]: einige Fußgänger	q2 11433,13389 11486,13350
 Schulweg: einige Fußgänger	q3 12600,12860 12551,12785 12483,12682
 Diestelmeyerstr.: einige Fußgänger	q3 12833,12920 12690,12769
-(Sebastianstr./Alexandrinenstr. - Dresdener Str.): einige Fußgänger	q1 10826,11251 10907,11290 10957,11294 11000,11327
+(Sebastianstr./Alexandrinenstr. - Dresdener Str.): einige Fußgänger, Aufpflasterungen	q1 10826,11251 10907,11290 10957,11294 11000,11327
 Sokratesweg: einige Fußgänger	q2 18514,9552 18604,9535
 Hans-Baluschek-Park: enge Rampe, Fußgänger	q2 7252,6080 7278,6101
 (nördlicher Otto-Weidt-Platz - Golda-Meir-Steg): Fußgänger	q2 7784,14147 7827,14152 7861,14133
@@ -3619,7 +3620,6 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einba
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Dolgenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17774,9934 17761,9971 17559,10024
 Am Wiesenrain: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 23931,5992 24122,6007
-Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 Wriezener Karree: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12959,11631 12728,11850
 Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 5521,8087 5522,8024
