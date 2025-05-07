@@ -3996,7 +3996,7 @@ neu asphaltiert	RW2; 22483,11261 22326,11266 22242,11269
 	RW2;RW2 24175,11265 24426,11265 24654,11265
 	RW2;RW2 24654,11265 24806,11261 24893,11252 25138,11215
 # 
-# REMOVED --- #: next_check_id: PILGRAMER-2019 --- #: XXX provisorische Wegführung während der Bauarbeiten vvv --- #: next_check: 2021-01-05 vvv --- #: valid: -20210105 vvv --- gemeinsamer Geh- und Radweg	RW2; 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 --- gemeinsamer Geh- und Radweg	RW2;RW8 25143,10961 25143,11108 25142,11142 25138,11215 --- #: valid ^^^ --- #: XXX wobei es nach den Arbeiten möglicherweise ganz anders aussehen wird --- #: last_checked: 2021-04-17 --- #: next_check: 2021-05-28
+# REMOVED --- #: next_check_id: PILGRAMER-2019 --- #: XXX provisorische Wegführung während der Bauarbeiten vvv --- #: next_check: 2021-01-05 vvv --- #: valid: -20210105 vvv --- gemeinsamer Geh- und Radweg	RW2; 25149,10702 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 --- gemeinsamer Geh- und Radweg	RW2;RW8 25143,10961 25143,11108 25142,11142 25138,11215 --- #: valid ^^^ --- #: XXX wobei es nach den Arbeiten möglicherweise ganz anders aussehen wird --- #: last_checked: 2021-04-17 --- #: next_check: 2021-05-28
 # REMOVED --- #: valid: 20210105-
 neu asphaltiert	RW1; 25142,11142 25138,11215
 neu asphaltiert	RW2; 25138,11215 25142,11142 25143,11108
@@ -4404,7 +4404,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: note: früher Richtung Norden benutzungspflichtiger Hochbord, mittlerweile Gehweg für Radfahrer frei
 #: osm_watch: way id="865716506" version="20"
-#: last_checked: 2025-01-07 (mapillary) vvv
+#: last_checked: 2025-05-07 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
@@ -7276,7 +7276,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2025-04-25 vvv
+#: last_checked: 2025-05-02 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv

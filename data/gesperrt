@@ -1042,10 +1042,11 @@ Eisenhutweg [Wohngebiet]	1 17569,2987 17471,2872 17688,2744 17741,2824
 Puschkinstr. [Nebenstraße]	1s 14152,9746 14092,9773
 Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung	1s 2706,9108 2674,9111
 (Gethsemanestr.)	1 11191,15810 11204,15838 11225,15828 11210,15798 11191,15810
-Daumstr. [Radweg]	1 -1315,14912 -1336,14786
+Daumstr. [Radweg]	1s -1315,14912 -1336,14786
 Teltower Damm [Nebenfahrbahn]	1 786,3090 712,2885
 Mittelstreifen	3nocross::ignrte 669,3119 786,3090 820,3081
 Teltower Damm [Nebenfahrbahn] -> Potsdamer Str.: Mittelstreifen	3::igndisp 712,2885 786,3090 669,3119
+Kreisverkehr Zur Alten Flussbadeanstalt	1 16389,9633 16388,9614 16376,9602 16355,9603 16355,9622 16368,9632 16389,9633
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3603,7 +3604,6 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700
 Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:inwork 17794,8429 17813,8508
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:inwork 8266,14346 8442,14456
-Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947

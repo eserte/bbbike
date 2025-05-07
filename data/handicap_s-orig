@@ -407,9 +407,10 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 # 
 #: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025)
+#: note: Halteverbotsschilder bis 30.05.2025
 #: last_checked: 2025-05-06
-#: next_check: 2025-05-14 (VIZ-Verkehrsmeldung)
-#: valid: -20250514
+#: next_check: 2025-05-30 (Halteverbotsschilder)
+#: valid: -20250530
 Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 # 
 #: note: Länge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (laut Baustellenschild)
@@ -709,22 +710,13 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Friedrichsfelde ###
 # 
-#: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025; nun bis 22.04.2025, allerdings laufen schon Asphaltierungs- und Pflasterarbeiten; nun Halteverbote bis 16.05.2025
-#: also_indoor: traffic (ex-G,B,T)
-#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
-#: last_checked: 2025-04-21 (traffic) vvv
-# REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2025-05-16 (Halteverbotsschilder) vvv
-# REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898
-#: osm_watch[closed]: note 4145491 2
-Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956
-# REMOVED --- #: osm_watch[closed]: note 4145495 1 --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17749,9811 17738,9922
-Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,9934 17838,9956 17958,10012
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+#: XXX Bis wann dauern die Bauarbeiten?
+#: last_checked: 2025-05-07
+#: next_check: 2025-06-06 (Halteverbotsschilder)
+#: valid: -20250606
+Dolgenseestr.: kurzer Abschnitt der Fahrbahn gesperrt	q3::inwork 17457,10083 17330,10117
 # 
+# REMOVED --- #: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025; nun bis 22.04.2025, allerdings laufen schon Asphaltierungs- und Pflasterarbeiten; nun Halteverbote bis 16.05.2025 --- #: also_indoor: traffic (ex-G,ex-B,ex-T) --- #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv --- #: last_checked: 2025-04-21 (traffic) vvv --- # REMOVED --- #: check_frequency: 30d vvv --- #: next_check: 2025-05-16 (Halteverbotsschilder) vvv --- # REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898 --- #: osm_watch[closed]: note 4145491 2 --- Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956 --- # REMOVED --- #: osm_watch[closed]: note 4145495 1 --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17749,9811 17738,9922 --- Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,9934 17838,9956 17958,10012 --- #: next_check ^^^ --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # REMOVED (laut mapillary weitgehend beendet) --- #: next_check_id: WALLENSTEIN-2020 --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-11-29 --- #: check_frequency: 10d --- # REMOVED --- #: next_check: 2020-11-16 --- # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
 # REMOVED (beendet, keine Besserung der Qualität) --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: XXX wird sich die Qualität des Asphalts nach den Bauarbeiten verbessern, zumindest in Richtung Nordwesten? --- #: last_checked: 2021-02-18 --- Wallensteinstr.: Bauarbeiten zwischen Sangeallee und Ilsestr., Einbahnstraßenregelung, Ausweichen auf engen Gehweg	q3::inwork; 18134,9080 18092,9141 18037,9195
 # REMOVED (beendet) --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2021-02-18 --- #: check_frequency: 7d --- Dolgenseestr.: Bauarbeiten nördlich des Hönower Weges, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q3::inwork 17404,9794 17391,9746 17383,9719
@@ -1039,7 +1031,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="40"
 #: osm_watch: way id="1193560283" version="9"
-#: last_checked: 2025-04-21
+#: last_checked: 2025-05-07
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -1047,7 +1039,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-04-21
+#: last_checked: 2025-05-07
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -5255,6 +5247,7 @@ Anna- und Hermann-Muthesius-Steig: einige Fußgänger, Bäume auf dem Weg	q2 -3126,
 # 
 Delmer Steig: einige Fußgänger	q2 11895,1489 11865,1564
 # 
+#: note: am steilen Abschnitt gibt es auch eine Treppe mit 5 Stufen
 (Theodorpark - Hultschiner Damm): kurvig, ein kurzer steiler Abschnitt	q2 24762,10850 24707,10862 24690,10859 24672,10867
 # 
 (Raoul-Wallenberg-Str. - Marzahner Promenade): Fußgänger, eng, Kurve	q3 20832,15981 20788,15968 20761,15940

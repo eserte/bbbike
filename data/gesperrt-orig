@@ -92,6 +92,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1501926.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-100ve/7-100-ve_3-2_vorhabenbezogener-bebauungsplan.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_04_0245_0352_online.pdf (B-Planänderung, der reduzierte Bereich wird zukünftig in 7-105 VE behandelt)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9682 (Antrag zum Verkehrskonzept)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="23"
 #: last_checked: 2025-01-08
@@ -179,7 +180,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-04-26 vvv
+#: last_checked: 2025-05-07 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -301,7 +302,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2025-04-21
+#: last_checked: 2025-05-07
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 Ontarioseestr.	1no 18585,10024 18411,10037
@@ -1728,11 +1729,13 @@ Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung	1s:q3 2706,9108 
 # 
 (Gethsemanestr.)	1 11191,15810 11204,15838 11225,15828 11210,15798 11191,15810
 # 
-#: note: explizit Einfahrt verboten
-Daumstr. [Radweg]	1 -1315,14912 -1336,14786
+#: note: explizit Einfahrt verboten, Gehweg existiert
+Daumstr. [Radweg]	1s:q4 -1315,14912 -1336,14786
 # 
 Teltower Damm [Nebenfahrbahn]	1 786,3090 712,2885
 Potsdamer Str.: Mittelstreifen	3nocross 669,3119 786,3090 820,3081
+# 
+Kreisverkehr Zur Alten Flussbadeanstalt	1 16389,9633 16388,9614 16376,9602 16355,9603 16355,9622 16368,9632 16389,9633
 # 
 #: section ^^^
 ######################################################################
@@ -3952,7 +3955,7 @@ Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13639,14133
 # 
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
-#: last_checked: 2025-04-17
+#: last_checked: 2025-05-07
 #: check_frequency: 120d
 #: next_check: 2026-05-01
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
@@ -4283,7 +4286,7 @@ Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nic
 #: next_check_id: PLANSTRASSE9-2023
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: osm_watch: way id="20420585" version="36"
-#: last_checked: 2025-03-16
+#: last_checked: 2025-05-07
 #: check_frequency: 60d
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
@@ -4337,7 +4340,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="29"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-04-21
+#: last_checked: 2025-05-07
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4436,7 +4439,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-04-26
+#: last_checked: 2025-05-07
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4612,7 +4615,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch: note 3831047 3
-#: last_checked: 2025-04-17
+#: last_checked: 2025-05-07
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -4687,12 +4690,12 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="16"
-#: last_checked: 2025-04-13
+#: last_checked: 2025-05-07
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="11"
-#: last_checked: 2025-04-13
+#: last_checked: 2025-05-07
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: XXX Wird es einen Anschluss an den Traberweg geben?
@@ -4721,7 +4724,7 @@ Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 # REMOVED --- #: last_checked: 2024-12-27 --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen! --- #: note: Durchfahrt offiziell noch nicht erlaubt, aber hier parken schon Autos in der Parktaschen: q4 -> q3 --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q3:inwork 17753,8290 17771,8349 17794,8429
-#: last_checked: 2025-04-26
+#: last_checked: 2025-05-07
 # REMOVED --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen!
 Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17813,8508
 # REMOVED (weitgehend offen) --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773
@@ -4745,13 +4748,7 @@ Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
 # 
 # REMOVED (weitgehend offen) -- #: next_check_id: SIEGFRIED-2021 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?) --- #: by: https://www.i-live-tempelhof.de/ (Erstbezug Anfang 2023) --- #: priority: #C --- #: last_checked: 2022-09-24 --- #: check_frequency: 120d --- (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
-# 
-#: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2025-04-17
-#: check_frequency: 60d
-Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
-# 
+# REMOVED (wieder offen) --- #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021 --- #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen --- #: last_checked: 2025-05-07 --- #: check_frequency: 60d --- Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # REMOVED (eröffnet) --- #: next_check_id: TEGELERBRUECKE-2021 --- #: last_checked: 2023-06-02 (mapillary) --- #: next_check: 2023-12-01 --- Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -233,15997 -236,16043 -226,16086
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
@@ -5648,7 +5645,7 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: by: https://www.dnn.de/lokales/dresden/carolabruecke-dresden-abriss-oder-erhalt-entscheidung-steht-STJQBOHKEJBS3CV72CDHOFCSCY.html (vermutlich Komplettabriss)
 #: by: https://www.n-tv.de/panorama/Dresdner-Carolabruecke-soll-bis-zum-Sommer-verschwinden-article25605881.html (Neubau ab 2027)
 #: osm_watch: way id="4214231" version="41"
-#: osm_watch: way id="10368500" version="46"
+#: osm_watch: way id="10368500" version="47"
 #: also_indoor: search Carolabrücke
 #: last_checked: 2025-04-06 (research)
 #: check_frequency: 180d

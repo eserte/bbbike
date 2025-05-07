@@ -1,6 +1,60 @@
-$#temp_blocking = 3;
+$#temp_blocking = 2;
 push @temp_blocking,
 (
+       {
+         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
+#: by: https://www.gratis-in-berlin.de/festivals/item/2009881-strassenfest-am-bluecherplatz-kreuzberg-karneval-der-kulturen (geplant 03.06.2022 bis 06.06.2022)
+#: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt --- gibt es überhaupt ein Straßenfest vorher?)
+#: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
+#: by: https://nitter.cz/VIZ_Berlin/status/1660949370760486913#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnd6Z2s0Ulh3QU1ZSWNJLmpwZw==
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1791092486695211121 (2024)
+#: by: https://pbs.twimg.com/media/GNmvjxnXgAE5jzf?format=jpg
+#: source_id: viz2021:13.3896,52.49594,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
+#: source_id: viz2021:13.39512,52.49691,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
+#: source_id: viz2021:13.39524,52.49454,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
+#: source_id: viz2021:13.389478,52.495996,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
+#: source_id: viz2021:13.3893,52.497538,16.05.2024,17:00 (bis 21.05.2024) (inaktiv)
+#: source_id: viz2021:13.395267,52.49454,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
+	2::temp 9521,10010 9827,10051
+	2::temp 9521,10010 9448,10014
+	2::temp 9599,10175 9687,10180 9825,10206
+	2::temp 9416,10196 9472,10182 9599,10175
+	2::temp 9579,10122 9536,10064
+	2::temp 9579,10122 9631,10142 9702,10129
+	2::temp 9837,10117 9827,10051
+	2::temp 9837,10117 9858,10199
+	2::temp 9599,10175 9579,10122
+	2::temp 9702,10129 9827,10051
+	2::temp 9702,10129 9816,10119
+	2::temp 9599,10175 9631,10142 9687,10180
+	2::temp 9825,10206 9865,10227 9948,10280
+	2::temp 9873,10285 9865,10227 9858,10199
+	2::temp 9825,10206 9858,10199
+	3 9922,10010 9827,10051 9837,9856
+	3 9837,9856 9827,10051 9922,10010
+	2::temp 9827,10051 9837,9856
+	2::temp 9837,9856 9723,9842
+# REMOVED (hier doch nicht) --- Baruther Str.	2::temp 9723,9842 9588,9827 9387,9804
+Johanniterstr.	2::temp 10066,10071 9837,10117
+Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,9942
+',
+         'from' => 1748988000,
+         'id' => 3,
+         'periodic' => 1,
+         'prewarn_days' => 2,
+         'recurrences' => [
+                            [
+                              'easter',
+                              47,
+                              'start',
+                              '2022-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Straßenfest rund um den Blücherplatz, 06.06.2025 bis 09.06.2025, Sperrungen fangen schon einen Tag vorher an',
+         'type' => 'gesperrt',
+         'until' => 1749528000
+       },
        {
          'data' => '#: by: https://www.karneval.berlin/ (früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite) (findet möglicherweise am 15. August 2021 statt)
 #: by: https://www.karneval.berlin/de/aktuell.html (fällt 2021 wieder aus)
@@ -4769,7 +4823,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-04-27 (traffic) vvv
+#: last_checked: 2025-05-07 vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -5119,7 +5173,7 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 #: also_indoor: traffic (none)
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
-#: osm_watch: way id="1060570985" version="2"
+#: osm_watch: way id="1060570985" version="3"
 #: osm_watch: note 3914565 18
 #: last_checked: 2025-05-01 (osm note)
 #: check_frequency: 60d
@@ -6122,7 +6176,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-04-27 (osm)
+#: last_checked: 2025-05-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6387,6 +6441,7 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
        {
          'data' => '# REMOVED --- #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=747210#post747210
+#: by: https://entwicklungsstadt.de/nachverdichtung-im-ernst-thaelmann-park-neues-wohnprojekt-ella-ii-geplant/ (Projekt in der Nachbarschaft)
 #: note: osm watches zu Bauarbeiten an den Nachbargrundstücken (ehemals Klinik + building:industrial)
 # REMOVED --- #: osm_watch: way id="156800019" version="6" --- #: osm_watch: way id="1219773996" version="1" --- #: also_indoor: traffic (none) --- #: last_checked: 2023-10-08 --- #: check_frequency: 30d
 #	2::inwork 12173,15040 12095,14888
@@ -8180,7 +8235,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        {
          'data' => '#: next_check_id: SCHWEDTER-2024
 # REMOVED --- #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
-#: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025)
+#: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025) (+ weitere Arbeiten)
 #: note: am 29.03.2025 (Sa) waren die Barrieren weggeschoben und eine Durchfahrt war inoffiziell möglich
 	q4::inwork 10530,14452 10506,14521 10472,14632
 ',
@@ -8543,16 +8598,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1764543600
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025)
-	q4::inwork 2396,9427 2467,9425 2592,9419
-',
-         'from' => 1737970440,
-         'id' => 4246,
-         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 10:34 bis 06.05.2025 23:59',
-         'type' => 'handicap',
-         'until' => 1746568740
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: traffic (G,B,T,A)
@@ -8738,7 +8784,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED --- #: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert --- q2::inwork 18266,9853 18066,9770 17920,9698
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-04-26
+#: last_checked: 2025-05-07
 #: check_frequency: 14d
 Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 ',
@@ -8832,7 +8878,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
 #: osm_watch: note 4317053 7
 #: osm_watch: way id="1149646787" version="5"
-#: last_checked: 2025-03-29
+#: last_checked: 2025-05-02 (mapillary)
 #: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 ',
@@ -8983,6 +9029,7 @@ Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5
 #: XXX Möglicherweise im Zusammenhang mit der angrenzenden Hochbaustelle
 #: last_checked: 2025-04-09
 #: check_frequency: 90d
+#: next_check: 2027-12-31 (entwicklungsstadt)
 	q4::inwork; 5518,12159 5317,12242
 ',
          'from' => undef,
@@ -9056,21 +9103,28 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: also_indoor: traffic (G,B,T)
 #: note: Trafficmeldungen scheinen ungenau zu sein
-#: note: Sperrung im Lohnauer Steig fehlt bei BBBike
-#: next_check: 2025-05-07 (nächste Sperrung Freystadter Weg)
+#: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen
+#: note: nächste Sperrung: Zinsgutstraße; Beginn voraussichtlich ab Mitte Mai 2025
+#: next_check: 2025-05-15 (nächste Sperrung Zinsgutstraße)
 #: XXX hier bis Mitte Juli 2025
 # REMOVED --- #: next_check: 2025-07-15
+#: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt?
 Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
+#: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben
+Radickestr.	q4::inwork 20683,3693 20776,3753
 #: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3
 Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
-#: note: voraussichtlich ab 09.04.2025
-Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
+# REMOVED (abgeschlossen) --- #: note: voraussichtlich ab 09.04.2025 --- Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
 #: note: voraussichtlich ab 09.04.2025
 Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
+#: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?)
+Wünschelburger Gang	q4::inwork 21008,4275 20917,4261 20850,4225 20829,4211
+#: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?)
+Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275 20981,4628 20981,4696 20994,4761
 ',
          'from' => undef,
          'id' => 4302,
-         'text' => 'Radickestr. und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen',
+         'text' => 'Radickestr., Freystadter Weg und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9299,6 +9353,29 @@ Mollstr.: verschmutzte Fahrbahn	q3::inwork; 11913,13077 11841,13087
          'text' => 'Wernigeroder Str.: Bauarbeiten, zwischen Nordhauser Str. und Harlingeroder Weg gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 bis 30.11.2025',
          'type' => 'handicap',
          'until' => 1764543540
+       },
+       {
+         'data' => '#: by: https://weddingweiser.de/wieder-kein-tramverkehr-monatelang/
+#: XXX ab wann? bereits ab dem 11.4.2025?
+#: last_checked: 2025-05-02 (mapillary)
+#: check_frequency: 30d
+Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307 9474,16297 9458,16180 9446,16060
+',
+         'from' => undef,
+         'id' => 4324,
+         'text' => 'Jüllicher Str.: Einbahnstraßenregelung, offen Richtung Norden, evtl. sind auch Radfahrer betroffen',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025)
+	q3::inwork 13511,17311 13754,17133
+',
+         'from' => 1746594000,
+         'id' => 4325,
+         'text' => 'Große Seestr.: Anbindung an die Roelckestr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.05.2025 07:00 bis 27.06.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1751036400
        }
      
 );

@@ -3007,7 +3007,7 @@ Münsterberger Weg: Kopfsteinpflaster	Q2 23558,11531 23526,11541 23430,11576 2336
 Münsterberger Weg: Asphalt	Q0 24172,11320 24029,11363
 Münsterberger Weg: Beton und Asphalt	Q0 23883,11416 24029,11363
 Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776
-Münsterberger Weg: wassergebundene Decke	Q1 22886,11776 22701,11843
+Münsterberger Weg: wassergebundene Decke, Unebenheiten	Q1 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940
 Münsterberger Weg: Asphalt	Q0 22408,11940 22266,11995
 Münsterberger Weg: Beton	Q0 22266,11995 22216,12019
@@ -3191,8 +3191,8 @@ Schmiedeberger Weg: Verbundsteinpflaster	Q0 18021,8976 17987,8954 17956,8935
 Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18070,8945 17929,8742
 Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18147,8895 18009,8687 17930,8567
 Hoher Wallgraben: Asphalt	Q0 17988,8350 17999,8336
-Hoher Wallgraben: Asphalt mit Schäden	Q2 17999,8336 18078,8112
-Hoher Wallgraben: Asphalt mit einigen Rissen	Q1 18078,8112 18101,8044
+Hoher Wallgraben: Asphalt	Q0 17999,8336 18078,8112
+Hoher Wallgraben: Asphalt	Q0 18078,8112 18101,8044
 (Hoher Wallgraben - Hegemeisterweg): Waldweg	Q2 18101,8044 18119,7996 18287,7815
 Am Ernst-Grube-Park: sehr gutes Verbundsteinpflaster	Q0 21025,5437 21057,5421 21070,5343 21090,5417 21143,5402
 Angersteinweg: Asphalt und Verbundsteinpflaster	Q0 21143,5402 21151,5412 21206,5420
@@ -4394,8 +4394,8 @@ Vierradener Weg: schlechtes Kopfsteinpflaster	Q3 24112,7907 24265,7879
 Donathstr.: Beton	Q0 24081,8048 24059,7918
 Pilgramer Str.: Beton	Q0 24137,8038 24112,7907
 Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 24112,7907 24087,7776 24074,7695
-Pilgramer Str.: Asphalt	Q0 25138,11215 25142,11142 25143,11108 25145,10961 25146,10904 25147,10841 25148,10769 25149,10744 25149,10731 25149,10695
-Pilgramer Str.: Beton	Q0 25149,10695 25150,10562 25150,10555
+Pilgramer Str.: Asphalt	Q0 25138,11215 25142,11142 25143,11108 25145,10961 25146,10904 25147,10841 25148,10769 25149,10744 25149,10731 25149,10702
+Pilgramer Str.: Beton	Q0 25149,10702 25150,10562 25150,10555
 Pilgramer Str.: Asphalt	Q0 25150,10555 25147,10487 25125,10435 25112,10415 25048,10317
 Pilgramer Str.: Asphalt	Q0 25048,10317 24984,10204
 Pilgramer Str.: schlechtes Kopfsteinpflaster	Q3 24984,10204 24923,10097 24854,9975 24793,9860 24713,9715 24617,9545 24566,9456
@@ -4428,7 +4428,7 @@ Karlstr. (Mahlsdorf): Beton	Q0 24820,10605 24916,10539 25029,10462 25112,10415
 Karlstr. (Mahlsdorf): Asphalt	Q0 25112,10415 25257,10326
 Banater Str.: Asphalt	Q0 25267,10351 25361,10321
 Iglauer Str.: Asphalt	Q0 25147,10487 25314,10463 25388,10447
-Straße 48 (Mahlsdorf): Asphalt	Q0 25149,10695 25089,10697
+Straße 48 (Mahlsdorf): Asphalt	Q0 25149,10702 25089,10697
 Gustavstr. (Mahlsdorf): Asphalt	Q0 24928,10737 25022,10715 25082,10714
 Lutherstr. (Mahlsdorf): Asphalt	Q0 24420,10029 24718,9966
 Jahnstr. (Mahlsdorf): Asphalt	Q0 24617,9545 24470,9628
@@ -9344,8 +9344,8 @@ Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19
 (Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0 21260,15209 21262,15271
 (Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0 21262,15271 21263,15291
 Dürerplatz: Verbundsteinpflaster	Q1 6234,7020 6276,6995
-Fischerstr.: Asphaltschäden	Q2 16404,10286 16423,10259
-Fischerstr.: Asphaltschäden	Q1 16423,10259 16492,10163 16539,10097
+Fischerstr.: Asphalt	Q0 16404,10286 16423,10259
+Fischerstr.: Asphalt	Q0 16423,10259 16492,10163 16539,10097
 (Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1 23402,3779 23368,3894
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1 19463,7117 19604,7079 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
@@ -11781,7 +11781,7 @@ Landsberger Alleee [Wohngebiet/Nebenfahrbahn]: Asphalt	Q0 15976,14472 16059,1448
 Brückenstr. (Steglitz): Asphalt	Q0 5728,4371 5774,4408 5812,4455
 Brückenstr. (Steglitz): Mosaikpflaster	Q1 5812,4455 5821,4480
 Lynarstr. - Charlottenbrunner Str.: Verbundsteinpflaster/Mosaikpflaster	Q1 2674,9111 2706,9108
-Kaaden-Ring: unbefestigte Baustraße	Q2 25149,10695 25329,10697 25415,10696 25415,10641 25332,10642 25329,10697
+Kaaden-Ring: Verbundsteinpflaster	Q1 25149,10702 25334,10701 25417,10704 25422,10643 25335,10643 25334,10701
 (Gethsemanestr.): Asphalt	Q0 11191,15810 11210,15798 11225,15828 11204,15838 11191,15810
 (Siedlung 10): schlechtes Kopfsteinpflaster	Q3 15174,5467 15100,5469 15083,5479
 (Straße 10): unbefestigte, etwas sandige Straße	Q2 15083,5479 15039,5506 15012,5506

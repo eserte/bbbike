@@ -4,11 +4,13 @@
 #: temporary vvv
 # 
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9197 (Beschlussempfehlung)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1548659.php (zunächst bis Ende 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/folgen-der-a100-bruckensperrung-einbahnstrasse-soll-den-schleichverkehr-in-berlin-westend-reduzieren-13491112.html
 #: osm_watch: way id="4609226" version="26"
 #: osm_watch: note 4705942 3
 #: source_id: viz2021:13.278443,52.516243,04.04.2025,08:00 (kein Endedatum)
+#: priority: #D
 #: last_checked: 2025-04-25
 #: next_check: 2025-12-31
 #: valid: -20251231
@@ -19,6 +21,7 @@ Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
 #: by: https://www.berlin.de/imgscaler/puEnoSEo41XwuEXS5hLP6sgP8vuUAy1VG38eHO7IOQQ/rbig2zu1/L3N5czExLXByb2QvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI1L21hcmdpbl8xMDAwXzUwMF9jMWI3M2Q0NDM4ZmI5OWM5Njc1OTM0N2RlMTkxMDIyZF92ZXJrZWhyc3plaWNoZW5wbGFuX2JhY3cuanBn.jpg
 #: by: https://www.tagesspiegel.de/berlin/bezirke/zu-viel-schleichverkehr-bezirk-ordnet-neue-einbahnstrassen-in-berlin-westend-an-13530130.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/temporare-einbahnstrassen-in-der-lindenallee-und-ahornallee/
+#: priority: #D vvv
 #: next_check: 2025-04-30 vvv
 #: valid: -20250430 vvv
 #: osm_watch: way id="38763874" version="13"
@@ -32,6 +35,7 @@ Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1768,12174 1788,12252 179
 Nußbaumallee - Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1732,12224 1788,12252
 #: valid ^^^
 #: next_check ^^^
+#: priority ^^^
 # 
 #: next_check_id: BHFBLANKENFELDE-2023
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (Beginn der Bauarbeiten)
