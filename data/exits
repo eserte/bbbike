@@ -1,223 +1,223 @@
-#:# -*- coding: iso-8859-1 -*-
+#: #: -*- coding: iso-8859-1 -*-
 #: title: Bahnhofsausgänge
 #:
-	X 7985,9576 8030,9667 8238,9660
-	X 8238,9660 8284,9612 8280,9528
-	X 7985,9576 7934,9478 7960,9466
-	X 7985,9576 7934,9478 7882,9490
-	X 7985,9576 8030,9667 7938,9694
-	X 7985,9576 8030,9667 8097,9650
-	X 8280,9528 8284,9588 8192,9619
-	X 8238,9660 8192,9619
-	X 8280,9528 8284,9588 8358,9568
-	X 7579,10400 7633,10394
-	X 7579,10400 7444,10479
-	X 6268,10614 6335,10589
-	X 6268,10614 6216,10614
-	X 6268,10614 6228,10646
-	X 5586,11074 5542,11075
-	X 5586,11074 5520,11186
-	X 5520,11186 5542,11075
-	X 5586,11074 5659,11000 5656,10876
-	X 5495,10797 5475,10808
-	X 5495,10797 5656,10876
-	X 2189,11092 2178,11040 2233,11049
-	X 2189,11092 2175,11037 2011,11046
-	X -1638,11411 -1475,11318 -1471,11416
-	X -1638,11411 -1468,11315 -1536,11176
-	X -649,13096 -624,13135 -772,13199
-	X -649,13096 -624,13135 -434,13056
-	X 2823,14355 2788,14364
-	X 2823,14355 2846,14373
-	X 3650,10915 3580,10891 3546,10962
-	X 3650,10915 3580,10891 3592,10869
-	X 3809,11037 3795,11098
-	X 3809,11037 3820,10987
-	X 6260,8516 6263,8456
-	X 6260,8516 6230,8602
-	X 6805,9248 6709,9234
-	X 6805,9248 6847,9261
-	X 8988,10323 8990,10295 9146,10284
-	X 8988,10323 8990,10295 8810,10305
-	X 8988,10323 8986,10350
-	X 8986,10350 8956,10349 8953,10366
-	X 8395,10394 8384,10507
-	X 9883,9494 9927,9487
-	X 9883,9494 9790,9528
-	X 10695,9315 10684,9295
-	X 13999,7541 13980,7548
-	X 13999,7541 14015,7631
-	X 13933,2673 13951,2697
-	X 13933,2673 13915,2673
-	X 14600,2157 14633,2145
-	X 16013,2050 16005,2058
-	X -12253,-1966 -12254,-1933 -12247,-1858
-	X -12253,-1966 -12254,-1933 -12478,-1879
-	X -12253,-1966 -12253,-1991 -12255,-2123
-	X -12253,-1966 -12253,-1991 -12253,-2052 -12223,-2062 -12210,-2086 -12213,-2131
-	X -10525,-1988 -10355,-1961 -10360,-1934
-	X -10525,-1988 -10596,-1999 -10588,-1975
-	X -8157,-1670 -8130,-1669 -8133,-1621
-	X -8107,-1587 -8061,-1580 -8077,-1533
-	X -4663,1451 -4691,1490 -4644,1514
-	X -4663,1451 -4691,1490 -4744,1466
-	X -4663,1451 -4635,1421 -4598,1382 -4579,1397
-	X -3692,2549 -3722,2571 -3693,2614
-	X -3692,2549 -3743,2585 -3736,2625
-	X -3776,2687 -3788,2596 -3743,2588 -3736,2625
-	X -3802,2500 -3788,2596 -3743,2588 -3736,2625
-	X -3776,2687 -3788,2596 -3743,2588 -3721,2569 -3693,2614
-	X -3802,2500 -3788,2596 -3743,2588 -3721,2569 -3693,2614
-	X 1751,3239 1709,3211 1687,3244
-	X 1751,3239 1709,3211 1724,3187
-	X 3960,4573 3878,4521 3898,4490
-	X 3960,4573 3878,4521 3867,4537
-	X 6945,8123 6978,8178 7001,8161
-	X 6945,8123 6978,8178 6935,8208
-	X 6945,8123 6820,8059 6792,8122
-	X 7847,7754 7896,7599 7854,7572
-	X 7847,7754 7897,7597 7854,7572
-	X 7847,7754 7802,7791 7774,7724
-	X 7847,7754 7897,7597 7934,7621
-	X 9120,7225 9243,7187 9242,7218
-	X 9120,7225 9234,7190 9231,7085
-	X 9120,7225 9231,7187 9242,7145
-	X 13054,12397 12878,12430
-	X 13054,12397 13163,12382
-	X 15175,12180 15177,12089
-	X 15177,12089 15110,12107
-	X 15177,12089 15361,12071
-	X 15205,12156 15175,12180
-	X 16796,11777 16866,11820
-	X 16796,11777 16815,11729
-	X 16866,11820 16962,11833
-	X 16866,11820 16737,11866
-	X 18295,12195 18296,12115
-	X 20717,12124 20624,12133
-	X 22121,12080 21971,12080 21972,12038
-	X 24944,15084 25017,15093 25025,15062
-	X 24944,15084 25017,15093 25006,15132
-	X 25962,15014 26014,15039
-	X 18518,16904 18557,16825 18587,16834
-	X 18518,16904 18557,16825 18478,16753
-	X 19672,15519 19650,15474
-	X 19367,13687 19415,13503
-	X 5171,19057 5181,19037
-	X 5410,19050 5425,19125 5459,19123 5448,19169
-	X 5429,19165 5434,19188 5445,19187 5448,19169
-	X 3650,10915 3769,10938 3765,10975 3820,10987
-	X 3481,10820 3592,10869
-	X 2706,9927 2674,9992 2694,10002
-	X 2706,9927 2674,9992 2590,9949
-	X 13482,11115 13454,11119
-	X 13482,11115 13527,11110
-	X 13482,11115 13498,11136
-	X 13571,11234 13505,11251 13493,11217
-	X 13571,11234 13505,11251 13541,11355
-	X 13571,11234 13538,11242 13524,11204
-	X 9181,12732 9153,12737 9171,12758
-	X 9181,12732 9153,12737 9117,12705
-	X 9306,12725 9303,12718
-	X 9306,12725 9313,12662
-	X 9313,12662 9303,12699 9181,12732
-	X 9303,12718 9303,12699 9181,12732
-	X 9306,12725 9303,12699 9181,12732
-	X 6252,7147 6179,7061 6160,7074
-	X 6252,7147 6179,7061 6234,7020
-	X -14241,-1889 -14351,-1882
-	X -8133,-1621 -8130,-1669 -7969,-1659
-	X -8157,-1670 -8072,-1665 -8073,-1635 -8048,-1628 -8061,-1579 -8107,-1587
-	X 731,9103 789,9046 884,8954
-	X 2268,10413 2240,10465 2219,10453 2203,10455
-	X 1321,10175 1234,10227 1247,10270
-	X 1321,10175 1303,10130
-	X 6516,12650 6604,12628 6689,12632
-	X 8007,13225 8015,13303
-	X 8007,13225 8011,13128
-	X 8007,13225 8030,13294
-	X 8030,13294 8015,13303
-	X 8030,13294 8102,13304
-	X 10295,12996 10312,12982
-	X 10295,12996 10287,13018 10339,13052
-	X 10295,12996 10287,13018 10185,12982
-	X 10295,12996 10287,13018 10289,13088
-	X 10856,12897 10880,12913 10849,12944
-	X 10856,12897 10830,12870 10801,12901
-	X 10856,12897 10880,12913 10970,12822
-	X 10856,12897 10830,12870 10923,12779
-	X 10856,12897 10947,12793 10967,12812
-	X 10967,12812 11068,12895
-	X 22121,12080 21971,12080 21970,12153
-	X 17607,18021 17675,17971
-	X 17585,17963 17607,18021
-	X 9299,15930 9183,15909
-	X 9299,15930 9477,15959 9506,15978 9494,15998
-	X 9299,15930 9477,15959 9506,15978 9646,15737
-	X 9299,15930 9363,15881
-	X 9363,15881 9242,15843
-	X 9363,15881 9552,15899 9646,15737
-	X 9363,15881 9552,15899 9494,15998
-	X 9217,8888 9225,9038
-	X 9217,8888 9229,8785
-	X 9396,9871 9444,9919
-	X 9396,9871 9334,9670
-	X 9582,10220 9596,10219 9593,10238
-	X 9582,10220 9596,10219 9599,10175
-	X 5404,7902 5471,7915
-	X 5404,7902 5405,7864 5458,7866
-	X 5404,7902 5350,7915
-	X 5404,7902 5354,7901 5346,7860
-	X -15875,-1719 -15783,-1777 -15763,-1762
-	X -15875,-1719 -15778,-1778 -15807,-1817
-	X 2478,20209 2429,20193 2480,20094
-	X 2480,20094 2420,20208 2384,20196
-	X 2480,20094 2420,20208 2384,20196
-	X -1717,24101 -1788,24187 -1746,24219
-	X 17765,5469 17791,5497 17722,5573
-	X 17886,5587 17791,5497 17722,5573
-	X 17634,5607 17663,5631 17722,5573
-	X 17696,5665 17663,5631 17722,5573
-	X -3436,25581 -3424,25549 -3368,25566
-	X -3368,25566 -3318,25584 -3343,25645
-	X 39947,102375 39968,102370 39985,102410
-	X 39949,102431 39983,102430 39985,102410
-	X 41367,91312 41387,91293 41460,91207
-	X 41421,91345 41413,91314 41460,91207
-	X 21285,4718 21332,4655
-	X 21287,4757 21268,4744 21285,4718
-	X 6303,3579 6371,3590
-	X 6460,3643 6371,3590
-	X 19929,-578 20033,-559
-	X 20127,-502 20100,-507 20106,-531 20033,-559
-	X 20172,-533 20112,-553 20105,-533 20033,-559
-	X 6564,19064 6564,19082 6626,19072
-	X 21101,291 21223,412 21199,437
-	X 21101,291 21223,412 21262,375
-	X 11343,12182 11343,12151 11398,12103
-	X 11325,12021 11343,12151 11398,12103
-	X 3664,23313 3679,23324 3606,23410
-	X 3737,23369 3680,23324 3606,23410
-	X 3490,23472 3538,23505 3606,23410
-	X 3590,23541 3538,23505 3606,23410
-	X 26040,-6233 25956,-6072
-	X 26382,-11815 26362,-11814 26365,-11882 26348,-11883
-	X 26300,-11864 26338,-11862 26339,-11881 26348,-11883
-	X -18711,-2 -18722,-67 -18731,-30
-	X -18746,5 -18755,-60 -18731,-30
-	X 1865,-1139 1937,-1127 1949,-1159 1989,-1151
-	X 19715,5403 19725,5371 19582,5323
-	X 19445,5271 19703,5336 19691,5357 19582,5323
-	X 19756,5313 19703,5336 19691,5357 19582,5323
-	X 44484,21068 44558,21218 44542,21259 44596,21287
-	X -17223,15157 -17222,15193 -17238,15196 -17224,15283 -17129,15268
-	X 3987,17808 4064,17787
-	X 4187,17765 4128,17780 4121,17764 4064,17787
-	X 4223,18982 4227,19001 4308,19008
-	X 4228,19024 4227,19001 4308,19008
-	X 43151,19585 43158,19660 43122,19681 43123,19721 43042,19752 43011,19676 42859,19608
-	X 43151,19585 43158,19660 43122,19681 43123,19721 43131,19792
-	X 10185,-2120 10191,-2135
-	X 21224,18519 21205,18487 21170,18504 21218,18601
-	X 21137,18520 21170,18504 21218,18601
-	X 21218,18601 21270,18695 21316,18672 21335,18679
-	X -764,38590 -705,38614 -672,38539
+S Yorckstr. (Großgörschenstr.) - U Yorckstr.	X 7985,9576 8030,9667 8238,9660
+U Yorckstr. - S Yorckstr.	X 8238,9660 8284,9612 8280,9528
+S Yorckstr. (Großgörschenstr.) - Großgörschenstr.	X 7985,9576 7934,9478 7960,9466
+S Yorckstr. (Großgörschenstr.) - Großgörschenstr./Crellestr./Mansteinstr.	X 7985,9576 7934,9478 7882,9490
+S Yorckstr. (Großgörschenstr.) - Yorckstr./Goebenstr. (Schöneberg)/Bülowstr. (Schöneberg)/Mansteinstr.	X 7985,9576 8030,9667 7938,9694
+S Yorckstr. (Großgörschenstr.) - Yorckstr./Katzlerstr.	X 7985,9576 8030,9667 8097,9650
+S Yorckstr. - Yorckstr./Bautzener Str./(Hellweg-Parkplatz)	X 8280,9528 8284,9588 8192,9619
+U Yorckstr. - Yorckstr./Bautzener Str./(Hellweg-Parkplatz)	X 8238,9660 8192,9619
+S Yorckstr. - Yorckstr./(Park am Gleisdreieck - Yorckstr.)	X 8280,9528 8284,9588 8358,9568
+U Kurfürstenstr. - Potsdamer Str. (Schöneberg, Tiergarten)/Kurfürstenstr. (Tiergarten, Schöneberg)	X 7579,10400 7633,10394
+U Kurfürstenstr. - Kurfürstenstr. (Tiergarten, Schöneberg)/Frobenstr. (Schöneberg)	X 7579,10400 7444,10479
+U Wittenbergplatz - Kleiststr. (Schöneberg)/Wittenbergplatz/Bayreuther Str.	X 6268,10614 6335,10589
+U Wittenbergplatz - Wittenbergplatz/Tauentzienstr./Ansbacher Str.	X 6268,10614 6216,10614
+U Wittenbergplatz - Wittenbergplatz/Tauentzienstr./Ansbacher Str.	X 6268,10614 6228,10646
+U Zoologischer Garten - Joachimsthaler Str. (Wilmersdorf, Charlottenburg)/Hardenbergstr./Hardenbergplatz	X 5586,11074 5542,11075
+U Zoologischer Garten - S Zoologischer Garten	X 5586,11074 5520,11186
+S Zoologischer Garten - Joachimsthaler Str. (Wilmersdorf, Charlottenburg)/Hardenbergstr./Hardenbergplatz	X 5520,11186 5542,11075
+U Zoologischer Garten - Kurfürstendamm/Breitscheidplatz	X 5586,11074 5659,11000 5656,10876
+U Kurfürstendamm - Kurfürstendamm/Joachimsthaler Str. (Wilmersdorf, Charlottenburg)/Grünfeld-Ecke	X 5495,10797 5475,10808
+U Kurfürstendamm - Kurfürstendamm/Breitscheidplatz	X 5495,10797 5656,10876
+S Messe Nord/ZOB (Witzleben) - Neue Kantstr./Wundtstr./Dernburgstr.	X 2189,11092 2178,11040 2233,11049
+S Messe Nord/ZOB (Witzleben) - Neue Kantstr./Masurenallee/Messedamm/Funkturm	X 2189,11092 2175,11037 2011,11046
+S Pichelsberg - Schirwindter Allee/Sarkauer Allee	X -1638,11411 -1475,11318 -1471,11416
+S Pichelsberg - Schirwindter Allee/Dickensweg	X -1638,11411 -1468,11315 -1536,11176
+U Ruhleben - Stendelweg/Charlottenburger Chaussee	X -649,13096 -624,13135 -772,13199
+U Ruhleben - Spandauer Damm/Rominter Allee/Charlottenburger Chaussee	X -649,13096 -624,13135 -434,13056
+U Jakob-Kaiser-Platz - Kurt-Schumacher-Damm/(Hofackerzeile - Kurt-Schumacher-Damm)/Kurt-Schumacher-Damm, linker Gehweg	X 2823,14355 2788,14364
+U Jakob-Kaiser-Platz - Kurt-Schumacher-Damm	X 2823,14355 2846,14373
+S Charlottenburg - Lewishamstr./Stuttgarter Platz/Kaiser-Friedrich-Str.	X 3650,10915 3580,10891 3546,10962
+S Charlottenburg - Lewishamstr.	X 3650,10915 3580,10891 3592,10869
+U Wilmersdorfer Str. - Kantstr. (Charlottenburg)/Wilmersdorfer Str.	X 3809,11037 3795,11098
+U Wilmersdorfer Str. - Stuttgarter Platz/Krumme Str. (Charlottenburg)/Wilmersdorfer Str.	X 3809,11037 3820,10987
+U Rathaus Schöneberg - Fritz-Elsas-Str./Innsbrucker Str.	X 6260,8516 6263,8456
+U Rathaus Schöneberg - Innsbrucker Str./Freiherr-vom-Stein-Str. (Schöneberg)	X 6260,8516 6230,8602
+U Eisenacher Str. - Grunewaldstr. (Schöneberg)/Eisenacher Str. (Schöneberg)	X 6805,9248 6709,9234
+U Eisenacher Str. - Grunewaldstr. (Schöneberg)/Klixstr. (Schöneberg)	X 6805,9248 6847,9261
+U Möckernbrücke (U7) - Großbeerenstr. (Kreuzberg)/Tempelhofer Ufer	X 8988,10323 8990,10295 9146,10284
+U Möckernbrücke (U7) - Möckernstr./Tempelhofer Ufer/Tempelhofer Ufer, linker Gehweg, ggfs. absteigen	X 8988,10323 8990,10295 8810,10305
+U Möckernbrücke (U7) - U Möckernbrücke (U1)	X 8988,10323 8986,10350
+U Möckernbrücke (U1) - Hallesches Ufer	X 8986,10350 8956,10349 8953,10366
+U Gleisdreieck - (Zufahrt "Gleis Park")/(Straße unter dem U-Bahnhof Gleisdreieck)/Schöneberger Str. (Kreuzberg)/Luckenwalder Str. (Kreuzberg)/(Park am Gleisdreieck, Eingang Schöneberger Str.)	X 8395,10394 8384,10507
+U Gneisenaustr. - Gneisenaustr./Mittenwalder Str. (Kreuzberg)	X 9883,9494 9927,9487
+U Gneisenaustr. - Gneisenaustr./Zossener Str. (Kreuzberg)	X 9883,9494 9790,9528
+Südstern - U Südstern	X 10695,9315 10684,9295
+S Sonnenallee - Saalestr./Siegfried-Aufhäuser-Platz	X 13999,7541 13980,7548
+S Sonnenallee - Sonnenallee/Saalestr.	X 13999,7541 14015,7631
+U Johannisthaler Chaussee - Johannisthaler Chaussee/(Johannisthaler Chaussee - Gutschmidtstr.)	X 13933,2673 13951,2697
+U Johannisthaler Chaussee - Johannisthaler Chaussee/(Johannisthaler Chaussee - Gutschmidtstr.)	X 13933,2673 13915,2673
+U Lipschitzallee - Lipschitzallee/Bat-Yam-Platz/(U Wutzkyallee - U Lipschitzallee)/Lipschitzplatz	X 14600,2157 14633,2145
+U Zwickauer Damm - (U Zwickauer Damm - U Wutzkyallee)	X 16013,2050 16005,2058
+S Potsdam Hauptbahnhof - Babelsberger Str. (Potsdam)	X -12253,-1966 -12254,-1933 -12247,-1858
+S Potsdam Hauptbahnhof - Lange Brücke (Potsdam)/Heinrich-Mann-Allee (Potsdam)/Babelsberger Str. (Potsdam)/Potsdam Hauptbahnhof (Potsdam)	X -12253,-1966 -12254,-1933 -12478,-1879
+S Potsdam Hauptbahnhof - Friedrich-Engels-Str. (Potsdam)	X -12253,-1966 -12253,-1991 -12255,-2123
+S Potsdam Hauptbahnhof - Friedrich-Engels-Str. (Potsdam)	X -12253,-1966 -12253,-1991 -12253,-2052 -12223,-2062 -12210,-2086 -12213,-2131
+S Babelsberg - Rudolf-Breitscheid-Str. (Potsdam)/Wattstr. (Potsdam)	X -10525,-1988 -10355,-1961 -10360,-1934
+S Babelsberg - Karl-Liebknecht-Str. (Potsdam)/Voltastr. (Potsdam)	X -10525,-1988 -10596,-1999 -10588,-1975
+Prof.-Dr.-Helmert-Str. (Potsdam)/(Universität Potsdam) (Potsdam) - Bhf. Griebnitzsee	X -8157,-1670 -8130,-1669 -8133,-1621
+S Griebnitzsee - Rudolf-Breitscheid-Str. [Bahnhofsvorfahrt] (Potsdam)	X -8107,-1587 -8061,-1580 -8077,-1533
+S Wannsee - Am Sandwerder/Kronprinzessinnenweg	X -4663,1451 -4691,1490 -4644,1514
+S Wannsee - Kronprinzessinnenweg/Gustav-Hartmann-Platz	X -4663,1451 -4691,1490 -4744,1466
+S Wannsee - Reichsbahnstr.	X -4663,1451 -4635,1421 -4598,1382 -4579,1397
+Alemannenstr. (Nikolassee)/Normannenstr. (Nikolassee)/Prinz-Friedrich-Leopold-Str./Hohenzollernplatz (Nikolassee) - S Nikolassee (Wannseebahn)	X -3692,2549 -3722,2571 -3693,2614
+Alemannenstr. (Nikolassee)/Normannenstr. (Nikolassee)/Prinz-Friedrich-Leopold-Str./Hohenzollernplatz (Nikolassee) - S Nikolassee	X -3692,2549 -3743,2585 -3736,2625
+Borussenstr./Rosemeyerweg - S Nikolassee	X -3776,2687 -3788,2596 -3743,2588 -3736,2625
+Borussenstr. - S Nikolassee	X -3802,2500 -3788,2596 -3743,2588 -3736,2625
+Borussenstr./Rosemeyerweg - S Nikolassee (Wannseebahn)	X -3776,2687 -3788,2596 -3743,2588 -3721,2569 -3693,2614
+Borussenstr. - S Nikolassee (Wannseebahn)	X -3802,2500 -3788,2596 -3743,2588 -3721,2569 -3693,2614
+S Sundgauer Str. - Sundgauer Str./(Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg)	X 1751,3239 1709,3211 1687,3244
+S Sundgauer Str. - Sundgauer Str./(Weg an der S-Bahn - Sundgauer Str.)	X 1751,3239 1709,3211 1724,3187
+S Botanischer Garten - Moltkestr./Neuchateller Str.	X 3960,4573 3878,4521 3898,4490
+S Botanischer Garten - Moltkestr./Enzianstr.	X 3960,4573 3878,4521 3867,4537
+S Schöneberg - Sachsendamm/Torgauer Str. (Schöneberg)	X 6945,8123 6978,8178 7001,8161
+S Schöneberg - Ebersstr./Dominicusstr./Sachsendamm/Sachsendamm: linker Gehweg	X 6945,8123 6978,8178 6935,8208
+S Schöneberg - Ebersstr./Gustav-Freytag-Str. (Schöneberg)	X 6945,8123 6820,8059 6792,8122
+S Südkreuz - Suadicanistr./(Bahnhof Südkreuz)	X 7847,7754 7896,7599 7854,7572
+S Südkreuz - Suadicanistr./(Bahnhof Südkreuz)	X 7847,7754 7897,7597 7854,7572
+S Südkreuz - Hildegard-Knef-Platz/(Hildegard-Knef-Platz - Lotte-Laserstein-Str.)/(Hans-Baluschek-Park - Südkreuz)	X 7847,7754 7802,7791 7774,7724
+S Südkreuz - (Bahnhof Südkreuz)/Erika-Gräfin-von-Brockdorff-Platz	X 7847,7754 7897,7597 7934,7621
+S Tempelhof - Tempelhofer Damm	X 9120,7225 9243,7187 9242,7218
+S Tempelhof - U Tempelhof	X 9120,7225 9234,7190 9231,7085
+S Tempelhof - Tempelhofer Damm	X 9120,7225 9231,7187 9242,7145
+U Weberwiese - Karl-Marx-Allee/Straße der Pariser Kommune/(Karl-Marx-Allee - Marchlewskistr.)	X 13054,12397 12878,12430
+U Weberwiese - Karl-Marx-Allee	X 13054,12397 13163,12382
+Rigaer Str. - U Frankfurter Allee	X 15175,12180 15177,12089
+U Frankfurter Allee - Frankfurter Allee/Pettenkoferstr./Jessnerstr.	X 15177,12089 15110,12107
+U Frankfurter Allee - Frankfurter Allee/Möllendorffstr./Gürtelstr. (Friedrichshain, Lichtenberg)	X 15177,12089 15361,12071
+S Frankfurter Allee - Rigaer Str.	X 15205,12156 15175,12180
+S Lichtenberg - U Lichtenberg	X 16796,11777 16866,11820
+S Lichtenberg - Weitlingstr./Eugeniu-Botnari-Platz	X 16796,11777 16815,11729
+U Lichtenberg - Frankfurter Allee/Monimbóplatz	X 16866,11820 16962,11833
+U Lichtenberg - Frankfurter Allee	X 16866,11820 16737,11866
+S Friedrichsfelde Ost - Seddiner Str.	X 18295,12195 18296,12115
+S Biesdorf - Oberfeldstr.	X 20717,12124 20624,12133
+S Wuhletal - (Unterführung Bhf. Wuhletal)	X 22121,12080 21971,12080 21972,12038
+U Louis-Lewin-Str. - Louis-Lewin-Str.	X 24944,15084 25017,15093 25025,15062
+U Louis-Lewin-Str. - Louis-Lewin-Str./Weißenfelser Str./Böhlener Str.	X 24944,15084 25017,15093 25006,15132
+U Hönow - (Louis-Lewin-Str. - U-Bhf. Hönow)/Böhlener Str./Mahlsdorfer Str. [zur Böhlener Str.] (Hönow)	X 25962,15014 26014,15039
+S Gehrenseestr. - Gehrenseestr.	X 18518,16904 18557,16825 18587,16834
+S Gehrenseestr. - Gehrenseestr./(Treppe zur Gehrenseestr.)	X 18518,16904 18557,16825 18478,16753
+(Fußgängerbrücke S-Bhf. Marzahn - Eastgate) - S Marzahn (Rampe am Wiesenburger Weg, Treppe oder Aufzug am Bahnsteig)	X 19672,15519 19650,15474
+S Springpfuhl - Allee der Kosmonauten	X 19367,13687 19415,13503
+S Karl-Bonhoeffer-Nervenklinik - Saalmannstr./Saalmannsteig (Treppe)	X 5171,19057 5181,19037
+Ollenhauerstr./Saalmannsteig/Oranienburger Str. (Wittenau) - U Karl-Bonhoeffer-Nervenklinik (Treppe oder Aufzug)	X 5410,19050 5425,19125 5459,19123 5448,19169
+Oranienburger Str. (Wittenau)/Blunckstr./(Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof) - U Karl-Bonhoeffer-Nervenklinik (Treppe)	X 5429,19165 5434,19188 5445,19187 5448,19169
+S Charlottenburg - Stuttgarter Platz/Krumme Str. (Charlottenburg)/Wilmersdorfer Str.	X 3650,10915 3769,10938 3765,10975 3820,10987
+Bhf. Berlin-Charlottenburg - Lewishamstr.	X 3481,10820 3592,10869
+S Halensee - Kurfürstendamm	X 2706,9927 2674,9992 2694,10002
+S Halensee - Kurfürstendamm/Bornstedter Str.	X 2706,9927 2674,9992 2590,9949
+U Warschauer Str. - Warschauer Str./(Warschauer Brücke - Tamara-Danz-Str.)	X 13482,11115 13454,11119
+U Warschauer Str. - Rudolfstr./Warschauer Platz (Treppe oder Aufzug)	X 13482,11115 13527,11110
+U Warschauer Str. - (Warschauer Brücke - Tamara-Danz-Str.) (ebenerdiger Zugang über flache Rampe existiert)	X 13482,11115 13498,11136
+S Warschauer Str. - Warschauer Str.	X 13571,11234 13505,11251 13493,11217
+S Warschauer Str. - Warschauer Str./Marchlewskistr.	X 13571,11234 13505,11251 13541,11355
+S Warschauer Str. - (Warschauer Brücke - Tamara-Danz-Str.)	X 13571,11234 13538,11242 13524,11204
+S Friedrichstr. - Reichstagufer/(Vorfahrt am Bahnhof Friedrichstr.)	X 9181,12732 9153,12737 9171,12758
+S Friedrichstr. - Reichstagufer/Georgenstr. (Mitte)	X 9181,12732 9153,12737 9117,12705
+U Friedrichstr. - Friedrichstr. (Mitte, Kreuzberg)/(Vorfahrt am Bahnhof Friedrichstr.)	X 9306,12725 9303,12718
+U Friedrichstr. - Friedrichstr. (Mitte, Kreuzberg)/Georgenstr. (Mitte)	X 9306,12725 9313,12662
+Friedrichstr. (Mitte, Kreuzberg)/Georgenstr. (Mitte) - S Friedrichstr.	X 9313,12662 9303,12699 9181,12732
+Friedrichstr. (Mitte, Kreuzberg)/(Vorfahrt am Bahnhof Friedrichstr.) - S Friedrichstr.	X 9303,12718 9303,12699 9181,12732
+U Friedrichstr. - S Friedrichstr.	X 9306,12725 9303,12699 9181,12732
+S Friedenau - (S-Bahnhofunterführung Friedenau)	X 6252,7147 6179,7061 6160,7074
+S Friedenau - Rembrandtstr. (Schöneberg)/Dürerplatz/(S-Bahnhofunterführung Friedenau)	X 6252,7147 6179,7061 6234,7020
+Bhf. Charlottenhof - Zeppelinstr. (Potsdam)/Gesundheitsweg (Potsdam)	X -14241,-1889 -14351,-1882
+Bhf. Griebnitzsee - Prof.-Dr.-Helmert-Str. (Potsdam)	X -8133,-1621 -8130,-1669 -7969,-1659
+Prof.-Dr.-Helmert-Str. (Potsdam)/(Universität Potsdam) (Potsdam) - S Griebnitzsee	X -8157,-1670 -8072,-1665 -8073,-1635 -8048,-1628 -8061,-1579 -8107,-1587
+Tunnel unter Bhf. Grunewald - Am Bahnhof Grunewald/Tunnel unter Bhf. Grunewald/Karmielplatz	X 731,9103 789,9046 884,8954
+S Westkreuz - Am Westkreuz	X 2268,10413 2240,10465 2219,10453 2203,10455
+S Messe Süd (Eichkamp) - Jafféstr.	X 1321,10175 1234,10227 1247,10270
+S Messe Süd (Eichkamp) - (Vorfahrt S-Bhf. Messe Süd)	X 1321,10175 1303,10130
+Bartningallee/Flensburger Str./(Am S-Bhf. Bellevue) - (Am S-Bhf. Bellevue)/Bellevue-Ufer/Gerickesteg/Holsteiner Ufer	X 6516,12650 6604,12628 6689,12632
+S Hauptbahnhof - Europaplatz	X 8007,13225 8015,13303
+S Hauptbahnhof - Washingtonplatz	X 8007,13225 8011,13128
+S Hauptbahnhof - U Hauptbahnhof	X 8007,13225 8030,13294
+U Hauptbahnhof - Europaplatz	X 8030,13294 8015,13303
+U Hauptbahnhof - Europaplatz/Friedrich-List-Ufer	X 8030,13294 8102,13304
+S Hackescher Markt - Henriette-Herz-Platz/Litfaß-Platz	X 10295,12996 10312,12982
+S Hackescher Markt - An der Spandauer Brücke/Dircksenstr./Am Zwirngraben	X 10295,12996 10287,13018 10339,13052
+S Hackescher Markt - Neue Promenade/Am Zwirngraben	X 10295,12996 10287,13018 10185,12982
+S Hackescher Markt - Neue Promenade/Hackescher Markt [An der Spandauer Brücke]/Zwirngrabendreieck	X 10295,12996 10287,13018 10289,13088
+S Alexanderplatz - Dircksenstr.	X 10856,12897 10880,12913 10849,12944
+S Alexanderplatz - Gontardstr./Panoramastr.	X 10856,12897 10830,12870 10801,12901
+S Alexanderplatz - Alexanderplatz/Dircksenstr.	X 10856,12897 10880,12913 10970,12822
+S Alexanderplatz - Rathausstr. (Mitte)/Alexanderplatz/Gontardstr.	X 10856,12897 10830,12870 10923,12779
+S Alexanderplatz - U Alexanderplatz (U5/U8)	X 10856,12897 10947,12793 10967,12812
+U Alexanderplatz (U5/U8) - U Alexanderplatz (U2)	X 10967,12812 11068,12895
+S Wuhletal - Altentreptower Str./(Unterführung Bhf. Wuhletal)	X 22121,12080 21971,12080 21970,12153
+S Hohenschönhausen - Falkenberger Chaussee	X 17607,18021 17675,17971
+(Weg auf dem Lärmschutzwall)/(Falkenberger Chaussee - Wartenberger Str.)/Wartenberger Str. - S Hohenschönhausen	X 17585,17963 17607,18021
+S Gesundbrunnen - Badstr./Hanne-Sobek-Platz	X 9299,15930 9183,15909
+S Gesundbrunnen - Bellermannstr./Swinemünder Str.	X 9299,15930 9477,15959 9506,15978 9494,15998
+S Gesundbrunnen - Swinemünder Str./Ramlerstr.	X 9299,15930 9477,15959 9506,15978 9646,15737
+S Gesundbrunnen - Bhf. Berlin-Gesundbrunnen	X 9299,15930 9363,15881
+Bhf. Berlin-Gesundbrunnen - Brunnenstr.	X 9363,15881 9242,15843
+Bhf. Berlin-Gesundbrunnen - Swinemünder Str./Ramlerstr.	X 9363,15881 9552,15899 9646,15737
+Bhf. Berlin-Gesundbrunnen - Bellermannstr./Swinemünder Str.	X 9363,15881 9552,15899 9494,15998
+U Platz der Luftbrücke - Mehringdamm	X 9217,8888 9225,9038
+U Platz der Luftbrücke - Dudenstr./Mehringdamm/Platz der Luftbrücke/Tempelhofer Damm	X 9217,8888 9229,8785
+U Mehringdamm - Mehringdamm	X 9396,9871 9444,9919
+U Mehringdamm - Mehringdamm/Yorckstr./Gneisenaustr.	X 9396,9871 9334,9670
+U Hallesches Tor - Hallesches Ufer/Hallesches Tor/Mehringplatz/Gitschiner Str.	X 9582,10220 9596,10219 9593,10238
+U Hallesches Tor - Blücherplatz/Tempelhofer Ufer/Hallesches Tor/Waterloo-Ufer	X 9582,10220 9596,10219 9599,10175
+S Bundesplatz - Bernhardstr./(Bernhardstr. - Bundesallee, Parkplatz)/(Bernhardstr. - Varziner Platz)	X 5404,7902 5471,7915
+S Bundesplatz - Varziner Str./Varziner Platz/Sieglindestr.	X 5404,7902 5405,7864 5458,7866
+S Bundesplatz - Bundesallee/(Bernhardstr. - Bundesallee, Parkplatz)	X 5404,7902 5350,7915
+S Bundesplatz - Bundesallee/Varziner Str./Südwestkorso	X 5404,7902 5354,7901 5346,7860
+Bhf. Park Sanssouci - Am Neuen Palais (Potsdam)/Am Wildpark (Potsdam)/Geschwister-Scholl-Str. (Potsdam)	X -15875,-1719 -15783,-1777 -15763,-1762
+Bhf. Park Sanssouci - Am Wildpark (Potsdam)	X -15875,-1719 -15778,-1778 -15807,-1817
+(Eschachstr./Gorkistr. - Leuenberger Zeile) - S Tegel	X 2478,20209 2429,20193 2480,20094
+S Tegel - (Vorfahrt S-Bhf. Tegel)	X 2480,20094 2420,20208 2384,20196
+S Tegel - (Vorfahrt S-Bhf. Tegel)	X 2480,20094 2420,20208 2384,20196
+S Heiligensee - Ruppiner Chaussee	X -1717,24101 -1788,24187 -1746,24219
+Sterndamm/(zum Fußgängertunnel S-Bhf. Schöneweide) - S Schöneweide (ohne Aufzug)	X 17765,5469 17791,5497 17722,5573
+Michael-Brückner-Str./Sterndamm - S Schöneweide (ohne Aufzug)	X 17886,5587 17791,5497 17722,5573
+(Fußgängertunnel S-Bhf. Schöneweide)/(zum Fußgängertunnel S-Bhf. Schöneweide)/(Straßenbahnwendeschleife Schöneweide, Überquerungsmöglichkeit) - S Schöneweide (Treppe, Aufzug existiert)	X 17634,5607 17663,5631 17722,5573
+(Fußgängertunnel S-Bhf. Schöneweide)/(zum Fußgängertunnel S-Bhf. Schöneweide) - S Schöneweide (Treppe, Aufzug existiert)	X 17696,5665 17663,5631 17722,5573
+Hennigsdorf, zum Bahnhof/Poststr. (Hennigsdorf) - S Hennigsdorf	X -3436,25581 -3424,25549 -3368,25566
+S Hennigsdorf - Am Bahndamm (Hennigsdorf)	X -3368,25566 -3318,25584 -3343,25645
+(Bahnhofsunterführung) (Prenzlau) - Bhf. Prenzlau	X 39947,102375 39968,102370 39985,102410
+Bahnhofsvorplatz (Prenzlau) - Bhf. Prenzlau (zum Bahnsteig Richtung Berlin auf gleichem Niveau, ansonsten Treppen/Aufzüge)	X 39949,102431 39983,102430 39985,102410
+Potzlow - Seehausen/Seehauen, Weg zum ehemaligen Bahnhof, Bahnsteig Richtung Angermünde - Bhf. Seehausen (Uckermark) (ebenerdig)	X 41367,91312 41387,91293 41460,91207
+Potzlow - Seehausen/Seehausen - Blankenburg/Seehausen - Berghausen - Bhf. Seehausen (Uckermark) (ebenerdig)	X 41421,91345 41413,91314 41460,91207
+S Spindlersfeld - Oberspreestr./Ottomar-Geschke-Str./Ottomar-Geschke-Str. [Radweg]/Ernst-Grube-Str. (ebenerdig)	X 21285,4718 21332,4655
+Ernst-Grube-Str. - S Spindlersfeld (kurze steile Rampe)	X 21287,4757 21268,4744 21285,4718
+Brucknerstr. - S Lankwitz (Rampe)	X 6303,3579 6371,3590
+Leonorenstr./Bernkastler Str. - S Lankwitz	X 6460,3643 6371,3590
+(Unterführung Grünbergallee) - S Grünbergallee (Rampe)	X 19929,-578 20033,-559
+Grünbergallee - S Grünbergallee (Treppen)	X 20127,-502 20100,-507 20106,-531 20033,-559
+(Bahnübergang Grünbergallee)/Schwalbenweg (Altglienicke) - S Grünbergallee (Treppen)	X 20172,-533 20112,-553 20105,-533 20033,-559
+(Roedernallee - S-Bhf. Alt-Reinickendorf)/(Freiheitsweg - S-Bhf. Alt-Reinickendorf)/(Unterführung S-Bhf. Alt-Reinickendorf) - S Alt-Reinickendorf	X 6564,19064 6564,19082 6626,19072
+S Altglienicke - (Fußgängerbrücke) (Aufzug existiert)	X 21101,291 21223,412 21199,437
+S Altglienicke - (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)/(Am Gartenstadtweg - Paradiesstr./Johannes-Tobei-Str.)/(Fußgängerbrücke) (Aufzug existiert)	X 21101,291 21223,412 21262,375
+Alexanderstr./Jannowitzbrücke - S Jannowitzbrücke (Aufzug existiert)	X 11343,12182 11343,12151 11398,12103
+Märkisches Ufer/Brückenstr. (Mitte)/Alexanderstr. - S Jannowitzbrücke (Aufzug existiert)	X 11325,12021 11343,12151 11398,12103
+(Unterführung S-Bhf. Hermsdorf) - S Hermsdorf	X 3664,23313 3679,23324 3606,23410
+(Unterführung S-Bhf. Hermsdorf) - S Hermsdorf	X 3737,23369 3680,23324 3606,23410
+Heinsestr./Max-Beckmann-Platz - S Hermsdorf (Aufzug existiert)	X 3490,23472 3538,23505 3606,23410
+(Bahnhofsplatz) - S Hermsdorf (Aufzug existiert)	X 3590,23541 3538,23505 3606,23410
+Dahlewitz - Zeuthen - S Zeuthen	X 26040,-6233 25956,-6072
+(Bahnhofsunterführung) (Königs Wusterhausen) - S Königs Wusterhausen (Aufzug existiert (2x) zum S-Bahnsteig)	X 26382,-11815 26362,-11814 26365,-11882 26348,-11883
+Maxim-Gorki-Str. (Königs Wusterhausen)/Bahnhofstr. (Königs Wusterhausen) - S Königs Wusterhausen (zum RE-Bahnsteig ebenerdig)	X 26300,-11864 26338,-11862 26339,-11881 26348,-11883
+Am Mühlenberg (Potsdam-Golm) - Bhf. Golm (Rampe)	X -18711,-2 -18722,-67 -18731,-30
+Am Mühlenberg (Potsdam-Golm) - Bhf. Golm (Rampe)	X -18746,5 -18755,-60 -18731,-30
+Gonfrevillestr. (Teltow) - S Teltow Stadt (Aufzug existiert)	X 1865,-1139 1937,-1127 1949,-1159 1989,-1151
+Alice-Archenhold-Weg - S Oberspree (Treppen)	X 19715,5403 19725,5371 19582,5323
+Oberspreestr./Oberspreestr. [Nebenfahrbahn]/Moosstr. - S Oberspree	X 19445,5271 19703,5336 19691,5357 19582,5323
+Johanna-Tesch-Str. - S Oberspree	X 19756,5313 19703,5336 19691,5357 19582,5323
+S Strausberg Nord - Prötzeler Chaussee (Strausberg)/Wilkendorfer Weg (Strausberg)/Am Flugplatz (Strausberg) (ebenerdig)	X 44484,21068 44558,21218 44542,21259 44596,21287
+(zum Bahnhof Elstal) - Bhf. Elstal (Treppen)	X -17223,15157 -17222,15193 -17238,15196 -17224,15283 -17129,15268
+(Uranusweg - U-Bhf. Scharnweberstr.)/(U-Bhf. Scharnweberstr. - Scharnweberstr.) - U Scharnweberstr. (Treppe, Aufzug existiert)	X 3987,17808 4064,17787
+General-Woyna-Str. - U Scharnweberstr. (Treppe)	X 4187,17765 4128,17780 4121,17764 4064,17787
+Eichborndamm/(Weg entlang des S-Bahndamms) - S Eichborndamm (Treppe, Aufzug existiert)	X 4223,18982 4227,19001 4308,19008
+Antonienstr./Eichborndamm/Miraustr. - S Eichborndamm (Treppe, Aufzug existiert)	X 4228,19024 4227,19001 4308,19008
+S Strausberg Stadt - An der Stadtmauer (Strausberg) (Treppe)	X 43151,19585 43158,19660 43122,19681 43123,19721 43042,19752 43011,19676 42859,19608
+S Strausberg Stadt - Phillip-Müller-Str. (Strausberg)/Hohensteiner Chaussee (Strausberg) (Treppe)	X 43151,19585 43158,19660 43122,19681 43123,19721 43131,19792
+S Lichtenrade - Bahnhofstr. (Lichtenrade)/Prinzessinnenstr. (Lichtenrade)	X 10185,-2120 10191,-2135
+(Zufahrt Bhf. Ahrensfelde) - S Ahrensfelde (Treppe)	X 21224,18519 21205,18487 21170,18504 21218,18601
+(Zufahrt Bhf. Ahrensfelde) - S Ahrensfelde (Treppe)	X 21137,18520 21170,18504 21218,18601
+S Ahrensfelde - Märkische Allee/Klandorfer Str. (ebenerdig)	X 21218,18601 21270,18695 21316,18672 21335,18679
+Bahnhofsplatz (Oranienburg)/Stralsunder Str. (Oranienburg)/Willy-Brandt-Str. (Oranienburg) - S Oranienburg (Treppe, Aufzug existiert)	X -764,38590 -705,38614 -672,38539
