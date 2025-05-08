@@ -796,9 +796,11 @@ mount:	strassen landstrassen landstrassen2 fragezeichen-cooked hoehe gesperrt
 	mv $@~ $@
 	-@$(READONLY) $@
 
+# Theoretically by using "-special exits" we have dependencies to strassen* and *bahnhof,
+# but as exits are rarely changing we omit these.
 exits:	exits-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT2HAFAS) $> > $@~
+	$(CONVERT_ORIG_FILE) -special exits $> > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
