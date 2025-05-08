@@ -5489,14 +5489,14 @@ EOF
 EOF
      },
      { from  => 1745823600, # 2025-04-28 09:00, # 1160591740, # 2006-10-11 20:35
-       until => 1746802800, # 2025-05-09 17:00, # 1161208800, # 2006-10-19 00:00
+       until => $isodate2epoch->("2025-05-13 17:00:00"), # 1746802800, # 2025-05-09 17:00, # 1161208800, # 2006-10-19 00:00
 #      text  => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Fahrtrichtung gesperrt (bis 18.10.06)',
-       text  => 'Ruschestr.: Anbindung Frankfurter Allee gesperrt, vom 29.04.2025 09:00 bis 09.05.2025 17:00',
+       text  => 'Ruschestr.: Anbindung Frankfurter Allee gesperrt, vom 29.04.2025 09:00 bis 13.05.2025 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: IM_003134 (2006, inaktiv)
 # REMOVED (2006) ---	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
-#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025)
+#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025) (bis 13.05.2025)
 #: source_id: viz2021:13.48439,52.5128,29.04.2025,09:00 (bis 09.05.2025) (inaktiv)
 #: note: laut rbb weitere Arbeiten im Anschluss
 	q4::inwork 15863,11992 15871,12060
@@ -19257,7 +19257,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_016525',
        data  => <<EOF,
-	2::inwork 21687,-3601 21722,-3421 21696,-2925 22001,-1632 22003,-1625
+	2::inwork 21687,-3601 21722,-3421 21696,-2925 21861,-2154 22001,-1632 22003,-1625
 EOF
      },
      { from  => 1288036570, # 2010-10-25 21:56
@@ -22456,6 +22456,7 @@ EOF
 #: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00 (inaktiv)
 #: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024) (inaktiv)
 #: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
+#: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -37166,7 +37167,7 @@ EOF
      { from  => $isodate2epoch->("2025-05-28 00:00:00"), # $isodate2epoch->("2024-06-06 00:00:00"), # 1660168800, # 2022-08-11 00:00
        until => $isodate2epoch->("2025-06-01 20:00:00"), # $isodate2epoch->("2024-06-09 21:00:00"), # 1660514399, # 2022-08-14 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 7, months => 6]], # kann im Juni oder August stattfinden
+       recurrences => [['yearly', days => 28, months => 5]], # kann im Juni oder August stattfinden, manchmal auch Ende Mai
        text  => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 29. Mai 2025 bis 1. Juni 2025',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -39656,10 +39657,10 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 4
-#: also_indoor: traffic (B,T,ex-H,re-G,ex-W,A)
+#: also_indoor: traffic (B,T,ex-H,ex-G,ex-W,A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
-#: last_checked: 2025-04-09
+#: last_checked: 2025-05-08 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -41431,12 +41432,12 @@ EOF
 	q4::inwork 4358,12365 4520,12358
 EOF
      },
-     { from  => 1742104800, # 2025-03-16 07:00, # $isodate2epoch->("2023-11-21 07:00:00"), # 1695667405, # 1692594000, # 2023-08-21 07:00
-       until => 1743177600, # 2025-03-28 17:00, # $isodate2epoch->("2024-01-09 17:00:00"), # 1697033485, # (keine Einschränkungen mehr gesehen) # $isodate2epoch->("2023-10-16 17:00:00"), # 1694639218, # 1694790000, # 2023-09-15 17:00
+     { from  => 1746680400, # 2025-05-08 07:00, # 1742104800, # 2025-03-16 07:00, # $isodate2epoch->("2023-11-21 07:00:00"), # 1695667405, # 1692594000, # 2023-08-21 07:00
+       until => 1749049200, # 2025-06-04 17:00, # 1743177600, # 2025-03-28 17:00, # $isodate2epoch->("2024-01-09 17:00:00"), # 1697033485, # (keine Einschränkungen mehr gesehen) # $isodate2epoch->("2023-10-16 17:00:00"), # 1694639218, # 1694790000, # 2023-09-15 17:00
 #      text  => 'Rosenthaler Str.: Gleisarbeiten zwischen Weinmeisterstr. und Neue Schönhauser Str., keine Freigabe für Radfahrer, außerdem Sperrung des Einmündungsbereichs Gipsstr., vom 22.11.2023 07:00 bis 09.01.2024 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten hinter der Einmündungs Neue Schönhauser Str., auch Radfahrer sind betroffen, vom 26.09.2023 06:00 bis 16.10.2023 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
-       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 07:00 bis 28.03.2025 17:00',
+       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 07:00 bis 04.06.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
@@ -41448,6 +41449,7 @@ EOF
 #: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
 #: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
 #: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025) (inaktiv)
+#: source_id: viz2021:13.403167,52.524701,09.05.2025,07:00 (hier nur Kfz-Verkehr, bis 04.06.2025)
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -42609,7 +42611,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408790142/bauprojekt-ruedigerstrasse-es-ist-einfach-unverhaeltnismaessig.html
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (ex-G,B,T) vvv
-#: last_checked: 2025-04-06 vvv
+#: last_checked: 2025-05-07 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d (outdoor) vvv
 # REMOVED --- #: check_frequency: 14d (traffic) vvv
 #: next_check: 2025-05-09 (Halteverbotsschilder) vvv
@@ -47120,11 +47122,11 @@ EOF
 EOF
      },
      { from  => 1743919200, # 2025-04-06 08:00
-       until => 1746889200, # 2025-05-10 17:00
-       text  => 'Melchow - Spechthausen: Deckenerneuerung, Sperrung, 07.04.2025 08:00 Uhr bis 10.05.2025 17:00 Uhr',
+       until => $isodate2epoch->("2025-05-16 17:00:00"), # 1746889200, # 2025-05-10 17:00
+       text  => 'Melchow - Spechthausen: Deckenerneuerung, Sperrung, 07.04.2025 08:00 Uhr bis 16.05.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/25/030 (bis 10.05.2025)
+#: source_id: LS/221-E/25/030 (bis 10.05.2025) (bis 16.05.2025)
 	2::inwork 34802,45368 34613,45287 34518,45231 34093,44866 32572,43561 32518,43468 32401,42954 32348,42876 30754,42070
 EOF
      },
@@ -47576,6 +47578,30 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025)
 	q3::inwork 13511,17311 13754,17133
+EOF
+     },
+     { from  => 1746687600, # 2025-05-08 09:00
+       until => 1760713200, # 2025-10-17 17:00
+       text  => 'Peschkestr.: Anbindung an die Rheinstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 09:00 bis 17.10.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.328715,52.465213,09.05.2025,09:00 (bis 17.10.2025)
+	q4::inwork 5535,6521 5424,6584
+EOF
+     },
+     { from  => 1746590400, # 2025-05-07 06:00
+       until => 1747152000, # 2025-05-13 18:00
+       text  => 'Straße der Pariser Kommune: zwischen An der Ostbahn und Am Ostbahnhof gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.05.2025 06:00 bis 13.05.2025 18:00',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: bvg2024:240#HIM_FREETEXT_280487 (2025-05-08 06:00:00 - ...)
+#: source_id: viz2021:13.436364,52.509832,08.05.2025,06:00 (nur Kfz-Verkehr betroffen, bis 13.05.2025)
+#: source_id: viz2021:13.43703,52.51043,08.05.2025,06:00 (hier ohne Verkehrsarten, bis 13.05.2025)
+#: by: https://fahrinfo.vbb.de/him-uploads/1745928597870_Kartenausschnitt_Strasse_der_Pariser_Kommune.png
+#: by: https://www.deutschebahn.com/de/presse/presse-regional/pr-berlin-de/aktuell/presseinformationen/Rote-Riesen-Bruecke-am-Ostbahnhof-wird-demontiert-Strassensperrungen-und-Fahrplanaenderungen-13373260 (weitere Sperrungen in den Tagen danach, angeblich nur für "KFZ")
+#: last_checked: 2025-05-06
+#: next_check: 2025-05-08
+	2::inwork 12543,11521 12645,11673
 EOF
      },
     );

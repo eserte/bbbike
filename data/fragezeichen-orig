@@ -1790,7 +1790,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: osm_watch: way id="93221335" version="27"
 #: osm_watch: note 4347252 8
 # REMOVED --- #: also_indoor: traffic (G,B,T,W) [alle ungenau/falsch]
-#: last_checked: 2025-04-18 (youtube)
+#: last_checked: 2025-05-07 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2025-06-30 (infravelo)
 Siegfriedstr.: Radstreifen mit Protektionselementen entsteht	?::inwork 16860,12861 16859,12752 16859,12683 16859,12613 16857,12600 16831,12419 16820,12339
@@ -5609,7 +5609,7 @@ Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßn
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: last_checked: 2025-04-20
 Simon-Bolivar-Str./Goeckestr.: entsteht hier ein neuer Zebrastreifen?	? 16104,14678 16128,14685 16152,14691
-#: last_checked: 2025-04-20
+#: last_checked: 2025-05-07 (mapillary)
 Werneuchener Str./Küstriner Str.: entsteht hier ein neuer Zebrastreifen?	? 16301,15247 16314,15223 16327,15193
 #: XXX Halteverbote bis zum 23.07.2025, evtl. im Zusammenhang mit dem geplanten Zebrastreifen? mittlerweile: verengte Fahrbahn wegen Bauarbeiten an der östlichen Straßenseite
 #: also_indoor: traffic (none)
@@ -8131,7 +8131,7 @@ Gehrenseebrücke: Neubau vorgesehen, dann vermutlich mit Radwegen	? 18316,16636 1
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=44529
 #: by: https://www.o-sp.de/download/lbvbrandenburg/229483
-#: source_id: LS/221-F/24/173 (Vorbereitungsarbeiten, bis 31.12.2024) (bis 31.08.2026) (bis 11.04.2025) (bis 23.05.2025)
+#: source_id: LS/221-F/24/173 (Vorbereitungsarbeiten, bis 31.12.2024) (bis 31.08.2026) (bis 11.04.2025) (bis 23.05.2025) (bis 04.07.2025)
 #: source_id: LS/221-F/24/167 (bis 15.11.2024) (inaktiv) (bis 31.12.2024) (bis 31.08.2026)
 #: XXX die Landesstraße wird senkrecht auf die Bundesstraße stoßen, Zweirichtungsradweg auf der östlichen Seite
 #: osm_watch: way id="346561721" version="7"
@@ -10405,16 +10405,17 @@ St. Jacobi-Kirchhof II - Ost: Teilfläche wird zurückgebaut	?::projected 12259,71
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1733021941785645320#m
 #: XXX außerdem neuer Kreisverkehr an der ex-B179
 #: XXX vermutlich wird während der Bauarbeiten der Radweg an der Waldstr. gesperrt werden (siehe temp-blockings-Eintrag)
-#: XXX wie geht's am Bauernweg Richtung Süden weiter?
-#: note: laut osm ab Q4 2023 bis Anfang 2026
+#: note: laut osm changeset 137874303 ab Q4 2023 bis Anfang 2026
 #: osm_watch: way id="1185492298" version="1"
 #: osm_watch: way id="1185492286" version="3"
+#: osm_watch: way id="1185492313" version="1"
 #: source_id: 101100026 (möglicherweise inaktiv)
 #: source_id: viz2021:13.56252,52.379717,26.01.2024,10:00 (bis 12.11.2024) (inaktiv)
-#: last_checked: 2024-05-14 (osm)
+#: source_id: viz2021:13.559867,52.397245,18.12.2024,10:00 (bis 30.06.2025)
+#: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 360d
-#: next_check: 2026-01-01
-A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21834,-2143 21522,-2233 21113,-2676
+#: next_check: 2026-01-01 (osm)
+A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21861,-2154 21660,-2143 21522,-2233 21113,-2676 21108,-3001 20900,-3106 20930,-3205 20951,-3603 20954,-3688 20891,-3816 20811,-3864 20711,-3869
 # 
 #: next_check_id: BUCKOWERFELDER-2024
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1710/nachricht6444.html
@@ -10456,7 +10457,6 @@ A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21834,-2143 2152
 An den Buckower Feldern: noch nicht gebaut oder freigegeben	?::inwork 12727,1074 12656,1019
 #: XXX: hier wird es möglicherweise eine Verbindung zum Buckower Damm geben
 #: osm_watch: way id="946008573" version="6"
-#: last_checked: 2025-02-08 (osm)
 In den Bauerngärten: noch nicht gebaut oder freigegeben	?::inwork 12713,962 12772,1019 12860,1082 12933,1101 12954,1105
 #: osm_watch: way id="946008576" version="6"
 An den Weiden: noch nicht gebaut oder freigegeben	?::inwork 12809,969 12879,1000 12946,1027
@@ -13217,6 +13217,14 @@ Weserstr. (Teltow): Fahrbahnbeschaffenheit?	? 347,-784 458,-885 528,-917 597,-94
 Havelstr. (Teltow): Fahrbahnbeschaffenheit im südöstlichen Abschnitt?	? 288,-1040 353,-1105 403,-1166 501,-1262 544,-1320
 Kleiststr. (Stahnsdorf): Fahrbahnbeschaffenheit im südlichen Abschnitt?	? -569,-1670 -497,-1802
 Bahnhofstr. (Stahnsdorf): Qualität des östlichen Endes?	? -2878,-3004 -2817,-2967 -2720,-2937 -2657,-2907
+#: XXX laut osm "sett"; mögliche Gehweg-Verbindung zur Kreuzung Bäkedamm/Zehlendorfer Damm
+Wilhelm-Külz-Str. (Stahnsdorf): Qualität? Genaue Lage?	? -2184,-1575 -2070,-1651 -1992,-1713 -1931,-1732 -1864,-1733 -1739,-1728
+#: XXX laut osm "sett", keine Freigabe für Radfahrer
+Dorfplatz (Stahnsdorf): Qualität? Einbahnstraße auch für Radfahrer gültig? Genaue Lage?	? -2070,-1651 -2132,-1760 -2288,-1905 -2242,-1933 -1992,-1713
+#: XXX laut osm "asphalt"
+Kirchstr. (Stahnsdorf): Qualität? Genaue Lage?	? -2242,-1933 -2230,-1967 -2101,-2061 -2023,-2143
+#: XXX laut osm "asphalt"
+Am Upstall (Stahnsdorf): Qualität? Genaue Lage?	? -2101,-2061 -2113,-2215 -2111,-2315
 # REMOVED (aufgenommen) --- #: XXX genaue Lage? --- #: XXX fehlt in Potsdam.coords.data: OT Golm, PLZ=14476 --- #: by: http://www.potsdam.de/sites/default/files/documents/endfassungab_nr._6l_pdmstadt2014.pdf --- Am Urnenfeld (Potsdam): Qualität?	? -18163,-1320 -18377,-1254 -18417,-1231 -18433,-1242 -18565,-1169 -18698,-1030 -18725,-827 -18682,-719
 #: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf
 #: XXX vermutlich asphaltiert
@@ -13327,6 +13335,7 @@ An den Koppeln (Teltow): Qualität?	? 2807,-987 2855,-1022 2940,-1031 3004,-1036 
 #: XXX vermutlich unbefestigt/Schotter --- die vorhandenen Mapillary-Aufnahmen sind zu unscharf; bei osm surface=compacted --- das kann aber sowohl unbefestigt als auch ordentliche wassergebundene Decke bedeuten
 Osdorfer Str. (Teltow): Qualität im östlichen Abschnitt?	? 3623,-384 3843,-401
 Robert-Koch-Str. (Teltow): Qualität im südlichen Abschnitt?	? 3696,-2361 3810,-2599 3772,-2823
+#: XXX laut osm "asphalt" und "paving_stones"
 Friedrich-Naumann-Str. (Stahnsdorf): Qualität des östlichen Abschnitts?	? -3410,-2654 -3317,-2742 -3209,-2797 -3008,-2767 -2835,-2726 -2766,-2683 -2706,-2640 -2632,-2591 -2590,-2557 -2416,-2394 -2394,-2378 -2275,-2314 -2113,-2215
 #: XXX laut osm Kopfsteinpflaster und unbefestigte Straße
 Am Wiesengrund (Kienwerder): Qualität des südlichen Abschnitts?	? -3835,-3613 -3867,-3713 -3915,-3906 -3911,-4055
