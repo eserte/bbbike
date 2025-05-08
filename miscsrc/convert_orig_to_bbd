@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2016,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # This will be the successor of convert2hafas, one day
@@ -169,6 +168,70 @@ sub special_as_of_handler {
 			$y);
 	    $r->[Strassen::NAME] .= " (Stand $date)"; # XXX other lang/english version?
 	}
+    }
+}
+
+{
+    my $init_done;
+    my %railway_stations;
+    my $street_crossings;
+
+    sub _init_special_exits_handler () {
+	require File::Basename;
+	require Strassen::Kreuzungen;
+	require Strassen::MultiStrassen;
+
+	my $datadir = File::Basename::dirname($f);
+
+	if (eval { require Tie::IxHash; 1 }) {
+	    tie %railway_stations, 'Tie::IxHash';
+	};
+
+	for my $def (
+	    # rationale for order:
+	    # S-Bahn first because it generates shorted names (just S instead of Bhf.)
+	    # U-Bahn last because it's probably less useful in Berlin than S-Bahn/Regionalbahn
+	    ["S",    "sbahnhof"],
+	    ["Bhf.", "rbahnhof"],
+	    ["U",    "ubahnhof"],
+	) {
+	    my($symbol, $basename) = @$def;
+	    my $file = "$datadir/$basename";
+	    next if !-f $file;
+	    $railway_stations{$symbol} = Kreuzungen->new_from_strassen(Strassen => Strassen->new($file));
+	}
+
+	my $street_str = MultiStrassen->new(grep { -f $_ } map { "$datadir/$_" } qw(strassen landstrassen landstrassen2));
+	$street_crossings = Kreuzungen->new(Strassen => $street_str, AllPoints => 1);
+
+	$init_done = 1;
+    }
+
+    sub special_exits_handler {
+	my($r, $dir) = @_;
+	_init_special_exits_handler if !$init_done;
+	my @p = ($r->[Strassen::COORDS][0], $r->[Strassen::COORDS][-1]);
+	my @names;
+	for my $p (@p) {
+	    my $name;
+	SEARCH_FOR_RAILWAY_STATION: for my $railway_symbol (keys %railway_stations) {
+		my $railway_stations = $railway_stations{$railway_symbol};
+		if ($railway_stations->crossing_exists($p)) {
+		    $name = "$railway_symbol " . join("/", @{$railway_stations->get($p)});
+		    last SEARCH_FOR_RAILWAY_STATION;
+		}
+	    }
+	    if (!$name) {
+		if ($street_crossings->crossing_exists($p)) {
+		    $name = join("/", @{$street_crossings->get($p)});
+		} else {
+		    $name = '...';
+		}
+	    }
+	    push @names, $name;
+	}
+
+	$r->[Strassen::NAME] = join(" - ", @names) . ($dir->{note} ? " (" . join("; ", @{ $dir->{note} }) . ")" : "");
     }
 }
 
