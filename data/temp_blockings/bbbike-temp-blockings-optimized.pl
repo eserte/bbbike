@@ -1169,6 +1169,8 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
        {
          'data' => '#: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025)
 #: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00
+#: source_id: viz2021:13.49144,52.42064,09.05.2025,19:00 (bis 11.05.2025)
+#: source_id: viz2021:13.49469,52.42125,09.05.2025,19:00 (bis 11.05.2025)
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
 ',
@@ -4000,7 +4002,38 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: STAATSBESUCH-HARDENBERGSTR
+#: next_check_id: STAATSBESUCH-WALDORFASTORIA
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/
+#: by: https://berliner-abendblatt.de/berlin-news/israels-ministerpraesident-in-berlin-grosses-polizeiaufgebot-id212454
+#: by: https://nitter.net/DasBoes/status/1636082561859350528#m (die Joachimsthaler ist entgegen der Karte in beiden Richtungen gesperrt)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_24_1479_1538_online.pdf
+#: by: https://www.tagesspiegel.de/berlin/grosse-verkehrseinschrankungen-in-berlin-erwartet-hohe-sicherheitsstufe-fur-ukraine-wiederaufbaukonferenz--polizei-im-grosseinsatz-11787479.html
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staatsbesuch-aenderungen-auf-bvg-linien_a417820
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1800101801108336978
+#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zur-ukraine-wiederaufbaukonferenz/ (2024-06)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
+#: by: https://www.tagesspiegel.de/berlin/israelischer-staatsprasident-besucht-berlin-verkehrseinschrankungen-am-sonntag-und-montag-in-mitte-und-charlottenburg-13667389.html
+#: source_id: viz2021:13.322084,52.512028,10.06.2024,13:00 (hier bereits ab Ernst-Reuter-Platz (bei rbb: Anlieger frei), bis 12.06.2024) (inaktiv)
+#: source_id: viz2021:13.331732,52.505347,10.06.2024,13:00 (bis 12.06.2024) (inaktiv)
+#: note: um das Hotel Waldorf Astoria herum
+# REMOVED (diesmal nicht) --- Hardenbergstr.	2::temp 5459,11135 5542,11075
+Hardenbergstr.	2::temp 5542,11075 5652,11004
+Kantstr.	2::temp 5652,11004 5613,10963 5488,10978
+# REMOVED (diesmal nicht) --- Joachimsthaler südl. Kantstr.	2::temp 5488,10978 5475,10808
+Budapester Str.	2::temp 5652,11004 5716,10978
+# REMOVED (diesmal nicht) --- Kantstr. westl. Joachimsthaler Str.	2::temp 5373,10981 5488,10978
+Joachimsthaler Str.	2::temp 5488,10978 5542,11075
+# REMOVED (diesmal nicht) --- Hardenbergplatz	3 5600,11114 5542,11075 5560,11124
+# REMOVED (diesmal nicht) ---	3 5560,11124 5542,11075 5600,11114
+',
+         'from' => 1746828000,
+         'id' => 2769,
+         'text' => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 11. Mai 2025, 20:00 Uhr bis zum 13. Mai 2025, 09:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1747119600
+       },
        undef,
        undef,
        undef,
@@ -4476,7 +4509,27 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: STAATSBESUCH-BELLEVUE
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf
+#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
+	2::temp 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320 6689,12632
+	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
+	3 7122,12384 7051,12426 6859,12567
+	3 6859,12567 7051,12426 7122,12384
+#: note: hier lagen Mitte Oktober 2024 Absperrgitter, evtl. in Vorbereitung auf den Staatsbesuch?
+	2::temp 6813,12617 6808,12604 6859,12567 7051,12426
+Bellevueallee (Zufahrt Spreeweg gesperrt)	2::temp 7031,12320 7383,12095
+Bremer Weg (Zufahrt zum Großen Stern gesperrt)	2::temp 6550,11954 6642,12010
+Bremer Weg (Zufahrt zum Großen Stern gesperrt)	2::temp 6884,12006 6828,12031
+',
+         'from' => 1746914400,
+         'id' => 3023,
+         'text' => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 12. Mai 2025 von 7.00 Uhr bis 24.00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1747087200
+       },
        undef,
        undef,
        undef,
@@ -6610,7 +6663,20 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: STAATSBESUCH-GLEIS17
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
+#: note: Staatsbesuch am Mahnmal "Gleis 17"
+	2::temp 731,8867 920,8895 870,8939 884,8954 901,8969 936,8933 1037,8884
+	2::temp 918,8795 920,8895 936,8933 1141,9078
+',
+         'from' => 1746914400,
+         'id' => 3748,
+         'text' => 'Karmielplatz am Bhf. Grunewald: wegen eines Staatsbesuchs sind Sperrungen möglich, am 12. Mai 2025, von 12:00 Uhr bis 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1747062000
+       },
        undef,
        undef,
        undef,
@@ -7042,6 +7108,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
 #: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025) (inaktiv)
 #: source_id: viz2021:13.403167,52.524701,09.05.2025,07:00 (hier nur Kfz-Verkehr, bis 04.06.2025)
+#: source_id: viz2021:13.40319,52.52474,09.05.2025,07:00 (bis 04.06.2025)
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -7192,14 +7259,14 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/222-C/23/138
+         'data' => '#: source_id: LS/222-C/23/138 (bis 30.05.2025) (bis 07.07.2025)
 	2::inwork 24027,-86688 23957,-86937 23869,-87065
 ',
          'from' => 1698566400,
          'id' => 3941,
-         'text' => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 30.05.2025 17:00 Uhr',
+         'text' => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 07.07.2025 17:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1748617200
+         'until' => 1751900400
        },
        undef,
        undef,
@@ -7318,12 +7385,13 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1750031927669608944#m (mögliche zusätzliche Einschränkung: Überqueren der Kurfürstenstr. an dieser Stelle möglicherweise nicht mehr möglich)
 #: by: https://www.deutsches-architekturforum.de/thread/13804-bauprojekte-an-der-urania-schillstra%C3%9Fe-kurf%C3%BCrstenstra%C3%9Fe/?postID=762284#post762284 (Büro-Neubau Equalizer, geplante Fertigstellung: 1. Quartal 2026)
 #: by: https://equalizer.berlin/
+#: by: https://entwicklungsstadt.de/tiergarten-hier-entstehen-zwei-hochhausprojekte-direkt-nebeneinander/ (Fertigstellung 2026)
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
 #: last_checked: 2025-01-11 (architektur-urbanistik)
 #: check_frequency: 90d
-#: next_check: 2026-03-31 (daf)
+#: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
 ',
          'from' => undef,
@@ -7442,6 +7510,8 @@ Gipsstr., etwa 30m	q2::inwork 10341,13376 10199,13446
 #: check_frequency: 90d vvv
 #: next_check: 2025-09-23 vvv
 #: osm_watch: note 4069677 10
+#: osm_watch: note 4115004 3
+#: osm_watch: note 4681980 2
 #: osm_watch: way id="375991056" version="17"
 #: osm_watch: way id="375958863" version="11"
 # REMOVED (hier existiert eine durchgängige Verbindung für Radfahrer, im Baustellenbereich meist als Radspur, kurzer Abschnitt als getrennter Rad/Gehweg) --- Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
@@ -7593,7 +7663,32 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'type' => 'gesperrt',
          'until' => 1767196800
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php (bis 30.04.2024)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782276897810076078
+#: by: https://pbs.twimg.com/media/GLiNYstXkAAufMY?format=jpg
+#: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/bauarbeiten-auf-der-heerstrasse_a427027
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1848230483064422642
+#: by: https://pbs.twimg.com/media/GaL2rpXW0AMZXNM?format=jpg&name=large
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1557975.php
+#: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024) (inaktiv)
+#: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024) (inaktiv)
+#: source_id: viz2021:13.57589,52.49118,22.04.2024,07:00 (bis 26.04.2024) (inaktiv)
+#: source_id: viz2021:13.57143,52.492403,21.10.2024,07:00 (hier nur Kfz-Verkehr, bis 01.11.2024) (inaktiv)
+# REMOVED ---	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
+# REMOVED --- Bergedorfer Str./An der Wuhle: Einbahnstraße	q4::inwork; 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592 21692,9727 21749,9856
+# REMOVED --- Tieflanfstr./Eschelberger Weg: Einbahnstraße	q4::inwork; 21842,9829 21822,9681 21954,9640 22116,9585
+# REMOVED --- Finkenstr./Adolf-Menzel-Str.: Sperrung des Kreuzungsbereichs	q3::inwork 21954,9640 21988,9766 22013,9919
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1491891.php
+# REMOVED ---	q4::inwork 21988,9766 21859,9822 21842,9829 21749,9856 21691,9874 21650,9884 21611,9893 --- An der Wuhle - Lammersdorfer Weg	3 21692,9727 21749,9856 21782,10007 --- Lammersdorfer Weg - An der Wuhle	3 21782,10007 21749,9856 21692,9727
+	q4::inwork 21749,9856 21691,9874 21650,9884 21611,9893 21594,9895
+',
+         'from' => 1746914400,
+         'id' => 4043,
+         'text' => 'Heerstr.: Bauarbeiten zwischen Lammersdorfer Weg und Dramburger Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12. Mai 2025 bis 16. Mai 2025',
+         'type' => 'handicap',
+         'until' => 1747411200
+       },
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php
@@ -7969,6 +8064,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="27260309" version="18"
 #: osm_watch: way id="372791173" version="8"
 #: osm_watch: way id="27260312" version="23"
+#: osm_watch: note 4673198 1
 #: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
 #: last_checked: 2025-04-10 (Pressemitteilung von gruen-berlin)
 #: check_frequency: 30d
@@ -7987,11 +8083,11 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        {
          'data' => '#: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
-#: osm_watch: way id="1083535036" version="9"
-#: osm_watch: way id="1119255054" version="7"
+#: osm_watch: way id="1083535036" version="10"
+#: osm_watch: way id="1119255054" version="8"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-03-29
+#: last_checked: 2025-05-08 (mapillary)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -8623,7 +8719,21 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1764543600
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
+#: note: bei rbb mittlerweile "Bis auf weiteres"
+#: also_indoor: traffic (H,T,A)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2025-05-09 (traffic)
+#: check_frequency: 10d
+	q4::inwork 2396,9427 2467,9425 2592,9419
+',
+         'from' => 1737970440,
+         'id' => 4246,
+         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung, evtl. sind auch Radfahrer betroffen, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: also_indoor: traffic (G,B,T,A)
@@ -9427,6 +9537,44 @@ Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,1
          'text' => 'Straße der Pariser Kommune: zwischen An der Ostbahn und Am Ostbahnhof gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.05.2025 06:00 bis 13.05.2025 18:00',
          'type' => 'gesperrt',
          'until' => 1747152000
+       },
+       {
+         'data' => '#: next_check_id: STAATSBESUCH-JAEGERSTR
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
+Mauerstr.	2::temp 9064,12156 9076,12054 9108,11961 9138,11872 9171,11777
+Jägerstr.	2::temp 9108,11961 9195,11972 9393,12000
+Taubenstr.	2::temp 9138,11872 9207,11880 9405,11903
+Glinkastr.	2::temp 9164,12172 9183,12076 9195,11972 9207,11880 9218,11793
+Französische Str.	2::temp 8901,12008 9076,12054 9183,12076 9384,12103
+',
+         'from' => 1746914400,
+         'id' => 4328,
+         'text' => 'Mauerstr./Jägerstr./Taubenstr./Glinkastr./Französische Str.: Staatsbesuch, Straßen gesperrt, am 12.05.2025 von 11:00 bis 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1747058400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.59872,52.50501,08.05.2025,09:57
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lopunzh3jc2v
+#: last_checked: 2025-05-09 (Verkehrsmeldung)
+#: check_frequency: 10d
+	q4::inwork 23679,11372 23654,11285 23648,11265
+',
+         'from' => 1746604620,
+         'id' => 4329,
+         'text' => 'Am Kornfeld: Havarie, zwischen Alt-Kaulsdorf und Hornsteiner Weg gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Sperrung unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.32151,52.47021,09.05.2025,20:05 (bis 30.05.2025)
+	q4::inwork 4885,6908 4883,7061
+',
+         'from' => 1746727500,
+         'id' => 4330,
+         'text' => 'Rheingaustr.: Sperrung zwischen Schwalbacher Str. und Hertelstraße, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 20:05 bis 30.05.2025 23:59',
+         'type' => 'handicap',
+         'until' => 1748642340
        }
      
 );

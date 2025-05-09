@@ -12186,6 +12186,7 @@ Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-pepp-fuer-gruenanlage_a429121
 #: XXX Umgestaltung (und Entsiegelung) bis April 2025 --- ändert sich etwas an den Wegen?
 #: XXX Umbauarbeiten im östlichen Bereich, Weg wird neu gemacht, laut Aushang bis April 2025, wird aber vermutlich länger dauern
+#: osm_watch: note 4706090 1
 #: last_checked: 2025-04-10
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-30
@@ -14009,7 +14010,7 @@ Hilde-Archenhold-Brücke: Asphalt	Q0 19300,4018 19358,4077
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1554565.php (Sanierung der Fahrbahn, vom 5. bis 16. Mai 2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3loflq5vxz22y (zwischen Indische Straße und Armenische Straße)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiaokwc2rpgouhywo26624dgjrar2vlqy54gnfzvshbmivwwpz4yqi@jpeg
-#: source_id: viz2021:13.357295,52.55613,05.05.2025,07:00 (bis 09.05.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.357295,52.55613,05.05.2025,07:00 (bis 09.05.2025 + weitere Arbeiten) (inaktiv)
 #: add_fragezeichen: Ist die Fahrbahn nach der Sanierung besser geworden?
 #: next_check: 2025-05-16
 Ungarnstr.: Fahrbahn betoniert und Radweg mit Verbundsteinpflaster, beide mit Schäden und Unebenheiten	Q1 7666,16879 7583,16872 7394,16836 7267,16784 7177,16715 7106,16646 7056,16587
@@ -14925,6 +14926,8 @@ Heerstr.: Asphalt	Q0 22129,9702 21988,9766
 # REMOVED --- #: XXX nach den Bauarbeiten asphaltiert? --- #: osm_watch: way id="42814694" version="20" --- #: next_check: 2024-11-01
 #: historical_note: früher (bis November 2024) Beton, Q0-
 Heerstr.: Asphalt	Q0 21988,9766 21859,9822 21842,9829 21749,9856
+#: XXX nach den Bauarbeiten vielleicht auch asphaltiert?
+#: next_check: 2025-05-16
 Heerstr.: Beton	Q0- 21749,9856 21691,9874 21650,9884 21611,9893
 Heesestr.: sehr guter Asphalt	Q0+ 21611,9893 21594,9895 21534,9901 21371,9923 21163,9956
 #: confirmed_by ^^^

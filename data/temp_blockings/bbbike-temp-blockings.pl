@@ -8336,6 +8336,8 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025)
 #: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00
+#: source_id: viz2021:13.49144,52.42064,09.05.2025,19:00 (bis 11.05.2025)
+#: source_id: viz2021:13.49469,52.42125,09.05.2025,19:00 (bis 11.05.2025)
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
 EOF
@@ -22950,7 +22952,7 @@ EOF
      },
      { from  => $isodate2epoch->("2024-09-04 00:00:00"), # 1377665400, # 2013-08-28 06:50
        until => $isodate2epoch->("2024-09-13 16:00:00"), # 1378407600, # 2013-09-05 21:00
-#       text  => 'Mauerstr. (Mitte): Veranstaltung, Fahrbahn zwischen Taubenstr. und Jägerstr. gesperrt (ggfs. auf Gehweg ausweichen), Einbiegen in die Jägerstr. nicht möglich, bis zum 05.09.2013',
+#      text  => 'Mauerstr. (Mitte): Veranstaltung, Fahrbahn zwischen Taubenstr. und Jägerstr. gesperrt (ggfs. auf Gehweg ausweichen), Einbiegen in die Jägerstr. nicht möglich, bis zum 05.09.2013',
        text  => 'Mauerstr./Jägerstr./Taubenstr.: Veranstaltung, Straßen gesperrt, vom 05.09.2024 06:00 Uhr bis 13.09.2024 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -26043,10 +26045,11 @@ EOF
 	3 5488,10978 5475,10808 5471,10719
 EOF
      },
-     { from  => $isodate2epoch->("2024-06-09 00:00:00"), # $isodate2epoch->("2023-03-14 12:00:00"), # 1455447600, # 2016-02-14 12:00
-       until => $isodate2epoch->("2024-06-11 18:00:00"), # $isodate2epoch->("2023-03-17 12:00:00"), # 1455642000, # 2016-02-16 18:00
-       #text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 15. März 2023, 12:00 Uhr bis zum 17. März 2023, 12:00 Uhr',
-       text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 10. Juni 2024, 13:00 Uhr bis zum 11. Juni 2024, 18:00 Uhr',
+     { from  => $isodate2epoch->("2025-05-10 00:00:00"), # $isodate2epoch->("2024-06-09 00:00:00"), # $isodate2epoch->("2023-03-14 12:00:00"), # 1455447600, # 2016-02-14 12:00
+       until => $isodate2epoch->("2025-05-13 09:00:00"), # $isodate2epoch->("2024-06-11 18:00:00"), # $isodate2epoch->("2023-03-17 12:00:00"), # 1455642000, # 2016-02-16 18:00
+#      text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 15. März 2023, 12:00 Uhr bis zum 17. März 2023, 12:00 Uhr',
+#      text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 10. Juni 2024, 13:00 Uhr bis zum 11. Juni 2024, 18:00 Uhr',
+       text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 11. Mai 2025, 20:00 Uhr bis zum 13. Mai 2025, 09:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: STAATSBESUCH-HARDENBERGSTR
@@ -26059,6 +26062,8 @@ EOF
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staatsbesuch-aenderungen-auf-bvg-linien_a417820
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1800101801108336978
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zur-ukraine-wiederaufbaukonferenz/ (2024-06)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
+#: by: https://www.tagesspiegel.de/berlin/israelischer-staatsprasident-besucht-berlin-verkehrseinschrankungen-am-sonntag-und-montag-in-mitte-und-charlottenburg-13667389.html
 #: source_id: viz2021:13.322084,52.512028,10.06.2024,13:00 (hier bereits ab Ernst-Reuter-Platz (bei rbb: Anlieger frei), bis 12.06.2024) (inaktiv)
 #: source_id: viz2021:13.331732,52.505347,10.06.2024,13:00 (bis 12.06.2024) (inaktiv)
 #: note: um das Hotel Waldorf Astoria herum
@@ -29274,25 +29279,26 @@ Promenade Schiffbauerdamm	2::temp 8498,12870 8529,12757
 (Spreeuferweg)	2::temp 7945,12878 7966,12913 8044,12989 8137,13024 8159,13032
 EOF
      },
-     { from  => $isodate2epoch->("2024-10-17 00:00:00"), # 1538024400, # 2018-09-27 07:00
-       until => $isodate2epoch->("2024-10-18 14:00:00"), # 1538171999, # 2018-09-28 23:59
-#       text  => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 28. September 2018 von 7.00 Uhr bis 24.00 Uhr',
-       text  => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 18. Oktober 2024 von 5.30 Uhr bis 14.00 Uhr',
+     { from  => $isodate2epoch->("2025-05-11 00:00:00"), # $isodate2epoch->("2024-10-17 00:00:00"), # 1538024400, # 2018-09-27 07:00
+       until => $isodate2epoch->("2025-05-13 00:00:00"), # $isodate2epoch->("2024-10-18 14:00:00"), # 1538171999, # 2018-09-28 23:59
+#      text  => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 28. September 2018 von 7.00 Uhr bis 24.00 Uhr',
+#      text  => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 18. Oktober 2024 von 5.30 Uhr bis 14.00 Uhr',
+       text  => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 12. Mai 2025 von 7.00 Uhr bis 24.00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: STAATSBESUCH-BELLEVUE
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf
 #: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
 	2::temp 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320 6689,12632
 	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
-	3 5900,11913 6164,11947 6642,12010 6550,11954
 	3 7122,12384 7051,12426 6859,12567
-	3 6884,12006 6828,12031 7026,12054
 	3 6859,12567 7051,12426 7122,12384
-	3 7026,12054 6828,12031 6884,12006
-	3 6550,11954 6642,12010 6164,11947 5900,11913
 #: note: hier lagen Mitte Oktober 2024 Absperrgitter, evtl. in Vorbereitung auf den Staatsbesuch?
 	2::temp 6813,12617 6808,12604 6859,12567 7051,12426
+Bellevueallee (Zufahrt Spreeweg gesperrt)	2::temp 7031,12320 7383,12095
+Bremer Weg (Zufahrt zum Großen Stern gesperrt)	2::temp 6550,11954 6642,12010
+Bremer Weg (Zufahrt zum Großen Stern gesperrt)	2::temp 6884,12006 6828,12031
 EOF
      },
      { from  => 1537999200, # 2018-09-27 00:00
@@ -39426,12 +39432,15 @@ EOF
 	2::inwork 13078,21754 13075,21740 13031,21538 12980,21411
 EOF
      },
-     { from  => 1678849200, # 2023-03-15 04:00
-       until => 1678971600, # 2023-03-16 14:00
-       text  => 'Karmielplatz am Bhf. Grunewald: wegen eines Staatsbesuchs sind Sperrungen möglich, am 16. März 2023, von 04:00 Uhr bis 14:00 Uhr',
+     { from  => $isodate2epoch->("2025-05-11 00:00:00"), # 1678849200, # 2023-03-15 04:00
+       until => $isodate2epoch->("2025-05-12 17:00:00"), # 1678971600, # 2023-03-16 14:00
+#      text  => 'Karmielplatz am Bhf. Grunewald: wegen eines Staatsbesuchs sind Sperrungen möglich, am 16. März 2023, von 04:00 Uhr bis 14:00 Uhr',
+       text  => 'Karmielplatz am Bhf. Grunewald: wegen eines Staatsbesuchs sind Sperrungen möglich, am 12. Mai 2025, von 12:00 Uhr bis 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: STAATSBESUCH-GLEIS17
 #: by: https://viz.berlin.de/2023/03/staatsbesuch/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
 #: note: Staatsbesuch am Mahnmal "Gleis 17"
 	2::temp 731,8867 920,8895 870,8939 884,8954 901,8969 936,8933 1037,8884
 	2::temp 918,8795 920,8895 936,8933 1141,9078
@@ -41450,6 +41459,7 @@ EOF
 #: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
 #: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025) (inaktiv)
 #: source_id: viz2021:13.403167,52.524701,09.05.2025,07:00 (hier nur Kfz-Verkehr, bis 04.06.2025)
+#: source_id: viz2021:13.40319,52.52474,09.05.2025,07:00 (bis 04.06.2025)
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -42060,11 +42070,11 @@ EOF
 EOF
      },
      { from  => 1698566400, # 2023-10-29 09:00
-       until => 1748617200, # 2025-05-30 17:00
-       text  => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 30.05.2025 17:00 Uhr',
+       until => $isodate2epoch->("2025-07-07 17:00:00"), # 1748617200, # 2025-05-30 17:00
+       text  => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 07.07.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/222-C/23/138
+#: source_id: LS/222-C/23/138 (bis 30.05.2025) (bis 07.07.2025)
 	2::inwork 24027,-86688 23957,-86937 23869,-87065
 EOF
      },
@@ -42841,12 +42851,13 @@ EOF
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1750031927669608944#m (mögliche zusätzliche Einschränkung: Überqueren der Kurfürstenstr. an dieser Stelle möglicherweise nicht mehr möglich)
 #: by: https://www.deutsches-architekturforum.de/thread/13804-bauprojekte-an-der-urania-schillstra%C3%9Fe-kurf%C3%BCrstenstra%C3%9Fe/?postID=762284#post762284 (Büro-Neubau Equalizer, geplante Fertigstellung: 1. Quartal 2026)
 #: by: https://equalizer.berlin/
+#: by: https://entwicklungsstadt.de/tiergarten-hier-entstehen-zwei-hochhausprojekte-direkt-nebeneinander/ (Fertigstellung 2026)
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
 #: last_checked: 2025-01-11 (architektur-urbanistik)
 #: check_frequency: 90d
-#: next_check: 2026-03-31 (daf)
+#: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
 EOF
      },
@@ -43097,6 +43108,8 @@ EOF
 #: check_frequency: 90d vvv
 #: next_check: 2025-09-23 vvv
 #: osm_watch: note 4069677 10
+#: osm_watch: note 4115004 3
+#: osm_watch: note 4681980 2
 #: osm_watch: way id="375991056" version="17"
 #: osm_watch: way id="375958863" version="11"
 # REMOVED (hier existiert eine durchgängige Verbindung für Radfahrer, im Baustellenbereich meist als Radspur, kurzer Abschnitt als getrennter Rad/Gehweg) --- Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
@@ -43649,10 +43662,11 @@ EOF
 	2::inwork 11448,28068 12126,27740
 EOF
      },
-     { from  => 1729375200, # 2024-10-20 00:00, # 1713650400, # 2024-04-21 00:00
-       until => 1730328627, # 1730501999, # 2024-11-01 23:59, # 1714514399, # 2024-04-30 23:59
-#       text  => 'Heerstr.: Bauarbeiten zwischen Tieflandstr. und Chemnitzer Str., Sperrung, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelungen in den umliegenden Straßen, vom 22. April 2024 bis 30. April 2024',
-       text  => 'Heerstr.: Bauarbeiten zwischen Finkenstr./Adolf-Menzel-Str. und Wuhlebrücke, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21. Oktober 2024 bis 1. November 2024',
+     { from  => $isodate2epoch->("2025-05-11 00:00:00"), # 1729375200, # 2024-10-20 00:00, # 1713650400, # 2024-04-21 00:00
+       until => $isodate2epoch->("2025-05-16 18:00:00"), # 1730328627, # 1730501999, # 2024-11-01 23:59, # 1714514399, # 2024-04-30 23:59
+#      text  => 'Heerstr.: Bauarbeiten zwischen Tieflandstr. und Chemnitzer Str., Sperrung, evtl. sind auch Radfahrer betroffen, außerdem Einbahnstraßenregelungen in den umliegenden Straßen, vom 22. April 2024 bis 30. April 2024',
+#      text  => 'Heerstr.: Bauarbeiten zwischen Finkenstr./Adolf-Menzel-Str. und Wuhlebrücke, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21. Oktober 2024 bis 1. November 2024',
+       text  => 'Heerstr.: Bauarbeiten zwischen Lammersdorfer Weg und Dramburger Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12. Mai 2025 bis 16. Mai 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php (bis 30.04.2024)
@@ -43661,6 +43675,7 @@ EOF
 #: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/bauarbeiten-auf-der-heerstrasse_a427027
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1848230483064422642
 #: by: https://pbs.twimg.com/media/GaL2rpXW0AMZXNM?format=jpg&name=large
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1557975.php
 #: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024) (inaktiv)
 #: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024) (inaktiv)
 #: source_id: viz2021:13.57589,52.49118,22.04.2024,07:00 (bis 26.04.2024) (inaktiv)
@@ -43670,9 +43685,8 @@ EOF
 # REMOVED --- Tieflanfstr./Eschelberger Weg: Einbahnstraße	q4::inwork; 21842,9829 21822,9681 21954,9640 22116,9585
 # REMOVED --- Finkenstr./Adolf-Menzel-Str.: Sperrung des Kreuzungsbereichs	q3::inwork 21954,9640 21988,9766 22013,9919
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1491891.php
-	q4::inwork 21988,9766 21859,9822 21842,9829 21749,9856 21691,9874 21650,9884 21611,9893
-An der Wuhle - Lammersdorfer Weg	3 21692,9727 21749,9856 21782,10007
-Lammersdorfer Weg - An der Wuhle	3 21782,10007 21749,9856 21692,9727
+# REMOVED ---	q4::inwork 21988,9766 21859,9822 21842,9829 21749,9856 21691,9874 21650,9884 21611,9893 --- An der Wuhle - Lammersdorfer Weg	3 21692,9727 21749,9856 21782,10007 --- Lammersdorfer Weg - An der Wuhle	3 21782,10007 21749,9856 21692,9727
+	q4::inwork 21749,9856 21691,9874 21650,9884 21611,9893 21594,9895
 EOF
      },
      { from  => 1713650400, # 2024-04-21 00:00
@@ -45157,6 +45171,7 @@ EOF
 #: osm_watch: way id="27260309" version="18"
 #: osm_watch: way id="372791173" version="8"
 #: osm_watch: way id="27260312" version="23"
+#: osm_watch: note 4673198 1
 #: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
 #: last_checked: 2025-04-10 (Pressemitteilung von gruen-berlin)
 #: check_frequency: 30d
@@ -45211,11 +45226,11 @@ EOF
        data  => <<EOF,
 #: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
-#: osm_watch: way id="1083535036" version="9"
-#: osm_watch: way id="1119255054" version="7"
+#: osm_watch: way id="1083535036" version="10"
+#: osm_watch: way id="1119255054" version="8"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-03-29
+#: last_checked: 2025-05-08 (mapillary)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -46565,11 +46580,17 @@ EOF
 EOF
      },
      { from  => 1737970440, # 2025-01-27 10:34
-       until => 1746568740, # 2025-05-06 23:59
-       text  => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 10:34 bis 06.05.2025 23:59',
+       until => undef, # 1746568740, # 2025-05-06 23:59
+#      text  => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 10:34 bis 06.05.2025 23:59',
+       text  => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung, evtl. sind auch Radfahrer betroffen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
+#: note: bei rbb mittlerweile "Bis auf weiteres"
+#: also_indoor: traffic (H,T,A)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2025-05-09 (traffic)
+#: check_frequency: 10d
 	q4::inwork 2396,9427 2467,9425 2592,9419
 EOF
      },
@@ -47602,6 +47623,41 @@ EOF
 #: last_checked: 2025-05-06
 #: next_check: 2025-05-08
 	2::inwork 12543,11521 12645,11673
+EOF
+     },
+     { from  => $isodate2epoch->("2025-05-11 00:00:00"), # 1377665400, # 2013-08-28 06:50
+       until => $isodate2epoch->("2025-05-12 16:00:00"), # 1378407600, # 2013-09-05 21:00
+       text  => 'Mauerstr./Jägerstr./Taubenstr./Glinkastr./Französische Str.: Staatsbesuch, Straßen gesperrt, am 12.05.2025 von 11:00 bis 16:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: STAATSBESUCH-JAEGERSTR
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
+Mauerstr.	2::temp 9064,12156 9076,12054 9108,11961 9138,11872 9171,11777
+Jägerstr.	2::temp 9108,11961 9195,11972 9393,12000
+Taubenstr.	2::temp 9138,11872 9207,11880 9405,11903
+Glinkastr.	2::temp 9164,12172 9183,12076 9195,11972 9207,11880 9218,11793
+Französische Str.	2::temp 8901,12008 9076,12054 9183,12076 9384,12103
+EOF
+     },
+     { from  => 1746604620, # 2025-05-07 09:57
+       until => undef, # XXX
+       text  => 'Am Kornfeld: Havarie, zwischen Alt-Kaulsdorf und Hornsteiner Weg gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Sperrung unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.59872,52.50501,08.05.2025,09:57
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lopunzh3jc2v
+#: last_checked: 2025-05-09 (Verkehrsmeldung)
+#: check_frequency: 10d
+	q4::inwork 23679,11372 23654,11285 23648,11265
+EOF
+     },
+     { from  => 1746727500, # 2025-05-08 20:05
+       until => 1748642340, # 2025-05-30 23:59
+       text  => 'Rheingaustr.: Sperrung zwischen Schwalbacher Str. und Hertelstraße, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 20:05 bis 30.05.2025 23:59',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.32151,52.47021,09.05.2025,20:05 (bis 30.05.2025)
+	q4::inwork 4885,6908 4883,7061
 EOF
      },
     );

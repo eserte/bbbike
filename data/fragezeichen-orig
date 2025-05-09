@@ -2294,9 +2294,10 @@ Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projec
 #: source_id: viz2021:13.328102,52.525936,28.01.2025,10:00 (Fahrbahninstandsetzung südl. der Turmstr., bis 30.04.2025) (inaktiv)
 #: osm_watch: way id="28497108" version="24"
 #: osm_watch: way id="1167737343" version="3"
-#: osm_watch: note 3933817 22
+#: osm_watch: note 3933817 23
 #: priority: #B
 #: note: mittlerweile (2024-11-28) Richtung Süden weitgehend markiert, ist aber insbesondere südlich der Turmstraße zugeparkt
+#: note: laut osm note "Anradeln" am 28.05.2025
 #: last_checked: 2025-03-20
 #: check_frequency: 45d
 #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
@@ -2556,6 +2557,7 @@ Schönstr.: Neubau	?::inwork 13630,16629 13794,16773
 # REMOVED (-> temp blockings) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020) --- #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101 --- #: last_checked: 2020-04-15 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2020-02-01 --- Schönstr.: Neubau geplant	?::projected 13996,16959 14136,17170
 # 
 #: next_check_id: SCHOEN-2022
+#: osm_watch: note 4518167 2
 #: last_checked: 2025-02-09
 #: check_frequency: 90d
 Schönstr.: Zebrastreifen in Bau	?::inwork 13815,16773 13794,16773 13798,16794
@@ -2822,12 +2824,13 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualitä
 #: by: https://www.howoge.de/immobiliensuche/neubauprojekte/anne-frank-strasse.html (Fertigstellung September 2026, 1. Bauabschnitt Juli 2025) (keine Termine mehr)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-wohngebiet-mehrfamilienhaussiedlung-hassoweg-nelkenweg-anne-frank-strasse-berlin-deutschland-637960.html
 #: by: https://entwicklungsstadt.de/altglienicke-richtfest-fuer-583-neue-howoge-mietwohnungen/
+#: by: https://entwicklungsstadt.de/frueher-als-geplant-211-wohnungen-in-treptow-koepenick-bezugsfertig/ (zweiter Bauabschnitt im Oktober 2025 fertig)
 #: osm_watch: way id="439663104" version="12"
-#: source_id: viz2021:13.534518,52.409337,28.04.2025,09:00 (Bau einer Tiefgaragenzufahrt, bis 09.05.2025) (bis 13.05.2025)
+#: source_id: viz2021:13.534518,52.409337,28.04.2025,09:00 (Bau einer Tiefgaragenzufahrt, bis 09.05.2025) (bis 13.05.2025) (bis 23.05.2025)
 #: XXX möglicherweise entsteht hier ein Geh/Radweg in N-S-Richtung
 #: last_checked: 2025-04-12
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-07-31
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2025-10-15 (entwicklungsstadt)
 Anne-Frank-Str./Nelkenweg/Mohnweg/Ortolfstr.: Bebauungsplan 9-56 VE	? 19525,526 19817,426 19803,374 19501,461 19525,526
 # 
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/B-XIII-102U.jpg
@@ -2967,7 +2970,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: osm_watch: way id="764003865" version="7"
 #: osm_watch: way id="764003862" version="23"
 #: priority: #D
-#: last_checked: 2025-04-05 (Radweg komplett fertig, Grünbeschichtung fehlt noch) vvv
+#: last_checked: 2025-05-07 (mapillary) (Radweg komplett fertig, Grünbeschichtung fehlt noch) vvv
 #: check_frequency: 60d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?; 11831,8989 11880,8955 11998,8872 12063,8826 12150,8764
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 12330,8636
@@ -4073,7 +4076,7 @@ Grunewaldstr.: geschützter Radfahrstreifen von Kufsteiner Str./Bamberger Str. bi
 #: osm_watch: way id="4531624" version="32"
 #: osm_watch: way id="4531625" version="32"
 #: osm_watch[closed]: note 4690883 2
-#: osm_watch: note 4728037 2
+#: osm_watch[closed]: note 4728037 2
 Grunewaldstr.: geschützter Radfahrstreifen von Martin-Luther-Str. bis Goltzstr., Richtung Osten fehlt noch	?::inwork; 6440,9192 6568,9211 6709,9234 6847,9261 6921,9275 6994,9288
 Grunewaldstr.: geschützter Radfahrstreifen von Goltzstr. bis Kleistpark geplant, teilweise schon in Bau	?::inwork 6994,9288 7118,9315 7202,9329 7299,9346 7418,9366 7471,9360
 #: next_check ^^^
@@ -5631,7 +5634,7 @@ Robert-Siewert-Str./Römerweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::proje
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/fussgaengerueberweg-fuer-grundschueler-gefordert_a437446 (hier: Höhe 77C)
 #: last_checked: 2025-02-23
 Schleizer Str./Arendsweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 17353,15006 17406,14986 17356,14966
-#: last_checked: 2025-04-06
+#: last_checked: 2025-05-07 (mapillary)
 Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 16239,12245 16255,12224 16278,12193
 #: check_frequency ^^^
 #: priority ^^^
@@ -5970,6 +5973,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6826 (Antrag)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schoenhauser-allee-bruecke/ (voraussichtliche Bauzeit: 2027 bis 2032)
 #: by: https://www.morgenpost.de/bezirke/pankow/article408766107/leichtfertige-planung-die-angst-vor-pankows-mammut-baustelle.html (ab 2027: Verlegung des Verkehrs auf die östliche Brückenhälfte)
+#: by: https://www.tagesspiegel.de/berlin/jahrelange-verkehrseinschrankungen-in-berlin-sperrungen-schon-ab-2025-so-lauft-der-brucken-abriss-an-der-schonhauser-allee-13647139.html
 #: XXX wird es Einschränkungen geben?
 #: last_checked: 2025-04-25
 # REMOVED --- #: check_frequency: 360d
@@ -6182,7 +6186,7 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 #: source_id: viz2021:13.493057,52.516212,14.10.2021,07:00 (Fahrbahnsanierungsarbeiten, bis 20.11.2021) (inaktiv)
 #: source_id: viz2021:13.490291,52.514628,15.08.2022,07:00 (Kanalarbeiten, bis 18.9.2022) (inaktiv)
 #: source_id: viz2021:13.489686,52.512256,03.09.2024,07:00 (Leitungsarbeiten, bis 18.10.2024) (inaktiv)
-#: last_checked: 2025-04-06
+#: last_checked: 2025-05-07 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2027-09-30 (infravelo)
 Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected 16485,12384 16397,12397 16276,12273 16255,12224 16248,12177 16223,11999 16214,11935
@@ -7029,7 +7033,7 @@ Bahnhof Köpenick: neuer Ostzugang	?::inwork 22700,6138 22700,6045 22624,6044
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5152
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/ein-radweg-fuer-die-muehlenstrasse_a279469 (Baubeginn ab 2022)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
-#: by: https://www.infravelo.de/projekt/muehlenstrasse/ (geschützter Radfahrstreifen in Planung, Bau 1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 4. Quartal 2023 - 3. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2025)
+#: by: https://www.infravelo.de/projekt/muehlenstrasse/ (geschützter Radfahrstreifen in Planung, Bau 1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 4. Quartal 2023 - 3. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2025) (von der Website ersatzlos entfernt)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5152&date=20210720 (Zwischenbericht) (Dez 2024: 5. Zwischenbericht)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll_fahrrat_pankow17-02-2021.pdf (Erwähnung)
 #: source_id: 2147345990 (Fahrbahnsanierungsarbeiten, vermutlich wird nichts für die Radverkehrsanlage gemacht) (möglicherweise inaktiv)
@@ -7038,7 +7042,7 @@ Bahnhof Köpenick: neuer Ostzugang	?::inwork 22700,6138 22700,6045 22624,6044
 #: osm_watch: way id="949605667" version="9"
 #: last_checked: 2025-04-25
 #: check_frequency: 360d
-#: next_check: 2025-12-31
+# REMOVED --- #: next_check: 2025-12-31 (infravelo)
 Mühlenstr.: Radstreifen geplant	?::projected 10228,18196 10347,17959 10448,17751 10495,17658 10573,17566 10647,17501 10670,17458 10679,17441 10690,17420 10706,17391 10758,17288 10807,17193 10846,17121 10862,17087 10927,17022
 # 
 #: next_check_id: SCHOENHOLZER-2022
@@ -8074,6 +8078,7 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.tagesspiegel.de/berlin/der-waisentunnel-bleibt-verwaist-planung-fur-berliner-problembaustelle-unter-der-spree-stockt-12997495.html (verschiebt sich auf unbestimmte Zeit)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-21170.pdf
 #: by: https://www.nd-aktuell.de/artikel/1189799.sanierung-berliner-u-bahn-geschichtstraechtiger-waisentunnel-vor-neubau.html
+#: by: https://www.nd-aktuell.de/artikel/1191086.bvg-oepnv-in-berlin-u-bahn-bleibt-hochrisikopatient.html (Baubeginn 2025?)
 #: last_checked: 2025-04-29 vvv
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2024-06-01 vvv
@@ -9168,6 +9173,7 @@ Harald-Juhnke-Platz: geplante Benennung	? 5048,10636 5069,10662 5095,10690
 #: by: https://stadtundland.de/unternehmen/presse/2024und2025/stadt-und-land-startet-anwohnerdialog-fruehe-beteiligung-zur-bebauung-der-ehemaligen-kaserne-hessenwinkel (ehemalige Ho-Chi-Minh-Kaserne; Baubeginn für Anfang der 2030er Jahre vorgesehen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1547525.php
 #: by: https://www.tagesspiegel.de/gestern-stechschritt-morgen-spielplatz-ehemalige-kaserne-in-berlin-rahnsdorf-wird-abgerissen-13508500.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1557967.php
 #: XXX geplant sind: Verlängerung der Wolfgang-Steinitz-Str., N-S-Anbindung zum Fürstenwalder Damm, Quartiersplatz
 #: last_checked: 2025-04-01 (Website zur frühzeitigen Beteiligung)
 # REMOVED --- #: check_frequency: 1000d
@@ -9220,6 +9226,14 @@ Römerweg - Cäsarstraße - Hentigstraße: Fahrradstraße wird eingerichtet	?::projec
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1557500.php (12. bis 23. Mai 2025, Sperrung auch für Radverkehr (allerdings sehr wenige Routings))
 #: next_check: 2025-05-23
 Maratstr.: Instandsetzung, danach bessere Qualität?	? 20361,14118 20371,14204
+# 
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11900 (Forderung: bis Ende 2024)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/kiezblock-antonkiez-1426658.php (Realisierung im Laufe des Jahres 2025)
+#: by: https://www.kiezblocks.de/anton/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
+#: note: Teil des Anton-Kiezblocks
+#: last_checked: 2025-05-08 (Amtsblatt)
+Maxstr.: Teileinziehung geplant	? 7738,15838 7781,15804
 # 
 #: section ^^^
 #: ignore ^^^
@@ -9871,10 +9885,10 @@ Parkanlage: wann wird der östliche/südöstliche Teil fertig? genaue Lage? Name?	?
 #: last_checked ^^^
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: source_id: viz2021:13.505797,52.484363,14.04.2025,09:00 (LSA-Neubau + Sperrung für Kfz-Verkehr Richtung Westen, bis 09.05.2025)
-#: osm_watch: note 4715040 1
+#: source_id: viz2021:13.505797,52.484363,14.04.2025,09:00 (LSA-Neubau + Sperrung für Kfz-Verkehr Richtung Westen, bis 09.05.2025) (bis 30.06.2025 + weitere Bauphasen)
+#: osm_watch: note 4715040 2
 #: last_checked: 2025-05-07
-# REMOVED --- #: next_check: 2025-05-09 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
 Blockdammweg/Hönower Wiesenweg: Neubau einer Ampel	?::inwork 17366,8824 17380,8858 17392,8891
 # 
 #: XXX Bebauungsplan 5-110
@@ -11077,6 +11091,7 @@ Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 #: by: https://www.kondorwessels.com/de/wir-bauen-fuer-menschen/konnekt (Fertigstellung des Quartiers 2033)
 #: by: https://entwicklungsstadt.de/geplante-chipperfield-hochhaeuser-in-marzahn-werden-deutlich-niedriger/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neues-viertel-auf-dem-knorr-bremse-areal-bekommt-berlin-marzahn-einen-weiteren-s-bahnhof-13612927.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf (Veröffentlichung eines Bebauungsplanentwurfs)
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2024-05-24 (mapillary)
 #: check_frequency: 720d
