@@ -13,16 +13,16 @@
 # REMOVED (vorfristig fertig geworden) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php (Bauende: voraussichtlich Anfang Juni 2025) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1549441.php (Querungshilfen im Bezirk, auch diese hier) --- #: also_indoor: traffic (ex-G,ex-W,B,T) --- #: osm_watch: note 3677862 12 --- #: note: Arbeiten für eine neue Gehwegvorstreckung --- #: last_checked: 2025-04-09 --- #: check_frequency: 45d --- #: next_check: 2025-06-01 (BA-Artikel) --- Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgersteige	q4::inwork 14651,11666 14710,11626
 # REMOVED (vorfristig fertig geworden) --- #: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025) (bis 18.04.2025) (zu spät inaktiv) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10) --- #: osm_watch: way id="1145213536" version="7" --- #: osm_watch: way id="1363264660" version="3" --- #: note: Halteverbotsschilder bis 18.04.2025 --- #: also_indoor: traffic (G,T) --- #: last_checked: 2025-03-28 (fast fertig) --- #: check_frequency: 3d --- #: next_check: 2025-04-18 (Halteverbotsschilder, VIZ-Verkehrsmeldung) --- #: valid: -20250418 --- Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
 # 
-#: by: https://pandion.de/wohnungsangebote/midtown/ (Fertigstellung ab März 2026)
-#: also_indoor: traffic (T,B,G)
-#: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
-#: last_checked: 2025-02-27
-#: next_check: 2025-10-31 (Halteverbotsschilder)
-Pufendorfstr.: 70m der Fahrbahn gesperrt, Ausweichen auf Bürgersteig	q3::inwork 12616,12844 12842,13070
+# REMOVED (nur noch Engstelle, keine Sperrung) --- #: by: https://pandion.de/wohnungsangebote/midtown/ (Fertigstellung ab März 2026)
+# REMOVED --- #: also_indoor: traffic (T,B,G)
+# REMOVED --- #: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
+# REMOVED --- #: last_checked: 2025-02-27
+# REMOVED --- #: next_check: 2025-10-31 (Halteverbotsschilder)
+# REMOVED --- Pufendorfstr.: 70m der Fahrbahn gesperrt, Ausweichen auf Bürgersteig	q3::inwork 12616,12844 12842,13070
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-04-25
+#: last_checked: 2025-05-09
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -56,8 +56,8 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="15"
-#: osm_watch: way id="1072662717" version="17"
-#: last_checked: 2025-04-29
+#: osm_watch: way id="1072662717" version="18"
+#: last_checked: 2025-05-09 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -77,7 +77,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2025-05-01 (architektur-urbanistik)
+#: last_checked: 2025-05-10
 #: check_frequency: 90d
 #: next_check: 2026-08-22
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -117,7 +117,13 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
-# REMOVED (mittlerweile ist eine schmale Fahrgasse frei) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage) --- #: also_indoor: traffic (none) --- #: last_checked: 2025-04-17 --- #: check_frequency: 14d --- Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
+#: note: zwischenzeitlich war an der Frankfurter Allee eine Fahrgasse frei (zumindest für Radfahrer benutzbar), mittlerweile wieder über die gesamte Fahrbahnbreite abgesperrt
+#: also_indoor: traffic (none)
+#: last_checked: 2025-05-09
+#: check_frequency: 14d
+Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
+# 
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
 # REMOVED --- #: by: https://nitter.cz/VIZ_Berlin/status/1660486892675301376#m (bis 26.05.2023) --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcWpYQ1gwQUFOOUg4LmpwZw== --- #: next_check: 2023-05-26 --- #: valid: -20230526 --- Kynaststr.: Fahrbahn hinter der Marktstr./Boxhagener Str. gesperrt	q3::inwork; 14988,11130 14950,11049
@@ -136,7 +142,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-05-06 vvv
+#: last_checked: 2025-05-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -315,6 +321,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1539372.php (Verschiebung: Fertigstellung im Sommer 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/marktplatz-in-treptow-kopenick-eroffnung-nach-umbau-verschiebt-sich-13344481.html
 #: by: https://entwicklungsstadt.de/marktplatz-adlershof-fertigstellung-und-einweihung-im-sommer-2025-geplant/
+#: by: https://www.berliner-zeitung.de/news/treptow-koepenick-darum-verzoegern-sich-die-bauarbeiten-auf-dem-marktplatz-adlershof-li.2323549
 #: XXX der nördliche Strang soll dauerhaft eingezogen werden
 #: osm_watch: way id="20554168" version="27"
 #: osm_watch: way id="1155308749" version="1"
@@ -844,7 +851,8 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="16096289" version="33"
 #: osm_watch: way id="707100249" version="24"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
-#: last_checked: 2025-04-11 (osm)
+#: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
+#: last_checked: 2025-05-09 (webcam)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1284,6 +1292,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1906560333424259228
 #: by: https://pbs.twimg.com/media/GnI-rLYXIAQAGQQ?format=png&name=900x900 (keine Ausnahme für Radfahrer)
 #: source_id: viz2021:13.470228,52.553487,31.03.2025,07:00 (nur Kfz-Verkehr, bis 30.06.2025)
+#: last_checked: 2025-05-10
 #: next_check: 2025-06-30
 #: valid: -20250630
 Gartenstr. (Weißensee): etwa 40m der Fahrbahn sind gesperrt	q3::inwork 14791,16445 14809,16525

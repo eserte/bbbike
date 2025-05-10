@@ -33230,6 +33230,7 @@ EOF
 #: osm_watch: note 4513116 3
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
 #: XXX zurzeit (2025-03) Asphaltierungsarbeiten
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-03-12
 #: check_frequency: 60d
 #: next_check: 2026-07-30
@@ -36930,7 +36931,7 @@ EOF
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2025-02-09 vvv
+#: last_checked: 2025-05-10 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-08-16 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
@@ -36941,7 +36942,8 @@ EOF
 # REMOVED (hier nicht mehr) ---	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
 #: osm_watch: way id="42990078" version="30"
-Schönstr. vor Kreuzungsbereich Amalienstr.	q4::inwork 13794,16773 13630,16629
+#: osm_watch: note 4444205 1
+Schönstr. zwischen Amalienstr. und Paul-Oestreich-Str.	q4::inwork 13794,16773 13630,16629
 #: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
 # REMOVED (hier nicht mehr) --- Amalienstr.	q4::inwork 13722,16843 13794,16773
 Amalienstr.	q4::inwork 13794,16773 13848,16721
@@ -37509,6 +37511,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/4756-erweiterung-bauhaus-archiv/?postID=742251#post742251
 #: by: https://www.bauhaus.de/de/bauhaus-archiv/7994_the_bauhaus_view/ (Eröffnung voraussichtlich 2025)
 #: by: https://stories.bauhaus.de/neubau/ (Wiedereröffnung 2025) (mittlerweile Wiedereröffnung 2027)
+#: by: https://entwicklungsstadt.de/tiergarten-wird-die-erweiterung-des-bauhaus-archivs-bis-herbst-2025-fertig/
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
@@ -42621,16 +42624,16 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408790142/bauprojekt-ruedigerstrasse-es-ist-einfach-unverhaeltnismaessig.html
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (ex-G,B,T) vvv
-#: last_checked: 2025-05-07 (mapillary) vvv
+#: last_checked: 2025-05-09 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d (outdoor) vvv
-# REMOVED --- #: check_frequency: 14d (traffic) vvv
-#: next_check: 2025-05-09 (Halteverbotsschilder) vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: next_check: 2025-05-09 (Halteverbotsschilder) vvv
 # REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
 Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056,12304
 # REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
 # REMOVED (alter Eintrag) --- Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
@@ -45956,7 +45959,7 @@ EOF
 EOF
      },
      { from  => 1729533901, # 2024-10-21 20:05
-       until => undef, # $isodate2epoch->("2025-01-23 13:00:00"), # 1737154800, # 2025-01-18 00:00
+       until => 1746876864, # undef, # $isodate2epoch->("2025-01-23 13:00:00"), # 1737154800, # 2025-01-18 00:00
 #      text  => 'Lynarstr.: Sperrung zwischen Humboldtstr. und Wangenheimstr., evtl. sind auch Radfahrer betroffen, bis 17.01.2025',
 #      text  => 'Lynarstr.: Sperrung zwischen Hubertusallee und Humboldtstr., evtl. sind auch Radfahrer betroffen, bis 23.01.2025',
 #      text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., evtl. auch bis Paulsborner Str., Ende der Bauarbeiten unbekannt',
@@ -45967,10 +45970,9 @@ EOF
 #: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025) (inaktiv)
 #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus; mittlerweile haben sich alle auf Wangenheimstr. - Paulsborner Str. geeinigt
-#: also_indoor: traffic (G,H,B,T,W)
+#: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W)
 #: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
-#: last_checked: 2025-04-27 (traffic)
-#: check_frequency: 14d (traffic)
+# REMOVED (bei den meisten Verkehrsquellen beendet) --- #: last_checked: 2025-05-10 --- #: check_frequency: 14d (traffic)
 	q4::inwork 2576,9132 2674,9111
 # REMOVED (gewandert?) ---	q3::inwork 2453,9156 2576,9132
 # REMOVED ---	q4::inwork 2453,9156 2337,9178
@@ -46775,7 +46777,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.42577,52.59492,16.02.2025,16:41 (bis 03.03.2025) (inaktiv)
 #: source_id: viz2021:13.42577,52.59492,03.03.2025,10:46 (bis 17.04.2025) (inaktiv)
-#: source_id: viz2021:13.42577,52.59492,17.04.2025,08:23 (bis 09.05.2025)
+#: source_id: viz2021:13.42577,52.59492,17.04.2025,08:23 (bis 09.05.2025) (inaktiv)
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein, gesehen 2025-02-23 (So)
 	q4::inwork 11518,20894 11599,20973 11686,21058
 # REMOVED (hier nicht) ---	q4::inwork 11686,21058 11703,21097
@@ -47611,7 +47613,7 @@ EOF
 EOF
      },
      { from  => 1746590400, # 2025-05-07 06:00
-       until => 1747152000, # 2025-05-13 18:00
+       until => 1746874691, # 1747152000, # 2025-05-13 18:00
        text  => 'Straße der Pariser Kommune: zwischen An der Ostbahn und Am Ostbahnhof gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.05.2025 06:00 bis 13.05.2025 18:00',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -47620,8 +47622,7 @@ EOF
 #: source_id: viz2021:13.43703,52.51043,08.05.2025,06:00 (hier ohne Verkehrsarten, bis 13.05.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1745928597870_Kartenausschnitt_Strasse_der_Pariser_Kommune.png
 #: by: https://www.deutschebahn.com/de/presse/presse-regional/pr-berlin-de/aktuell/presseinformationen/Rote-Riesen-Bruecke-am-Ostbahnhof-wird-demontiert-Strassensperrungen-und-Fahrplanaenderungen-13373260 (weitere Sperrungen in den Tagen danach, angeblich nur für "KFZ")
-#: last_checked: 2025-05-06
-#: next_check: 2025-05-08
+# REMOVED (von Norden explizit für Radfahrer frei, allerdings muss man mach der Brücke auf den linken Gehweg rauf, von Süden weiterhin der getrennte Rad/Gehweg gültig) --- #: last_checked: 2025-05-06 --- #: next_check: 2025-05-08
 	2::inwork 12543,11521 12645,11673
 EOF
      },
@@ -47658,6 +47659,22 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.32151,52.47021,09.05.2025,20:05 (bis 30.05.2025)
 	q4::inwork 4885,6908 4883,7061
+EOF
+     },
+     { from  => undef, # 2025-05-09 12:46
+       until => undef, # 2025-05-10 12:46
+       text  => 'Grünzug Rudolf-Seiffert-Straße: wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berliner-woche.de/fennpfuhl/c-umwelt/gruenzug-wird-umgestaltet_a413057
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10502 (Antrag)
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10613 (Antrag (zur Beleuchtung))
+#: osm_watch: note 4405725 7
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2025-05-10
+#: check_frequency: 21d
+#: next_check: 2025-06-30 (Baustellenschild)
+	2::inwork 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 EOF
      },
     );

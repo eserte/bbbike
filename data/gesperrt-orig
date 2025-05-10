@@ -613,8 +613,7 @@ Max-Eyth-Str.	1 2513,6581 2544,6546 2611,6495
 Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12485,3933
 #: confirmed_by: srt
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
-#: by: Ansgar Petters:
-Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
+# REMOVED (mittlerweile verkehrsberuhigter Bereich; Einbahnstraßenregelung wurde laut osm note abgeordnet) --- #: by: Ansgar Petters: --- Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
 # REMOVED (mittlerweile verkehrsberuhigter Bereich; Einbahnstraßenregelung wird wohl nicht mehr eingeführt) --- Brodersenstr.	1 6033,19611 5885,19920
 Autobahnausfahrt	1 4741,5309 4813,5350
 Kuhligkshofstr.	1 4813,5350 4851,5377
@@ -4072,8 +4071,8 @@ Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 172
 # 
 #: by: mapillary/mapilio
 #: add_fragezeichen: Ist die Straße noch wegen Bauarbeiten gesperrt?
-#: also_indoor: traffic (ex-G,W)
-#: last_checked: 2025-04-27 (traffic)
+#: also_indoor: traffic (re-G,W)
+#: last_checked: 2025-05-10 (traffic)
 #: check_frequency: 14d (traffic checks)
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 # 
@@ -4183,7 +4182,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-05-06 vvv
+#: last_checked: 2025-05-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="5"
@@ -4753,7 +4752,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-05-06
+#: last_checked: 2025-05-10
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4967,7 +4966,6 @@ Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 # REMOVED (Schranke wird nicht genutzt?) --- #: next_check_id: EUROPACITY-2015 --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-02-14 --- Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7734,13944 7820,13994
 # 
 #: next_check_id: EUROPACITY-2015
-# REMOVED (keine Direktansicht) --- #: by: https://quartier-heidestrasse.contempo-webcam.de/ (Webcam, keine Direktansicht)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Grundstücksnummerierung)
@@ -4978,9 +4976,9 @@ Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 #: by: #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_42_3163_3214_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
 #: source_id: viz2021:13.362267,52.536335,05.02.2024,07:00 (Leitungsarbeiten, in der Heidestr., bis 29.03.2024) (inaktiv)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
-#: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
+# REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2025-03-09
+#: last_checked: 2025-05-10 (webcam)
 #: check_frequency: 90d
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
 # REMOVED (offen) --- #: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken --- #: last_checked: 2024-06-30 (daf) vvv --- #: check_frequency: 45d vvv --- George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136 --- (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -5065,7 +5063,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="60333311" version="35"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="289966097" version="24"
 #: priority: #A
-#: last_checked: 2025-03-25 (webcam)
+#: last_checked: 2025-05-10 (webcam)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 # REMOVED (existiert nicht mehr) --- Grunerstr.: Straßenzug wird entfernt	2::inwork 10697,12303 10746,12364
@@ -5131,7 +5129,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_16_1065_1112_online.pdf (Umlegungsverfahren (für den B-Plan))
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf (Umlegungsverfahren, Berichtigung)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2025-04-29
+#: last_checked: 2025-05-10 (webcam)
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5139,7 +5137,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-04-29
+#: last_checked: 2025-05-10 (webcam)
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

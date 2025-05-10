@@ -277,7 +277,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="12"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2025-05-05 (daf)
+#: last_checked: 2025-05-09 (webcam)
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -1024,7 +1024,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2025-02-11
+#: last_checked: 2025-04-14 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -1805,7 +1805,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX wegen eines Fußgängerschutztunnels unter dem Estrel-Tower ist der vorhandene Radweg abgesperrt
 #: XXX später wieder herstellen: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14305,7415 14334,7395
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2025-04-15 (mapillary)
+#: last_checked: 2025-05-10 (webcam)
 #: check_frequency: 30d
 #: next_check: 2026-09-01 (estreltower website)
 Busspur ist immer gültig	RW5; 14174,7505 14305,7415 14334,7395
@@ -3013,8 +3013,8 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1; mittlerweile (Januar 2025) ist es wieder da
-#: last_checked: 2025-04-25
-#: check_frequency: 90d
+#: last_checked: 2025-05-10
+#: check_frequency: 60d
 #: next_check: 2026-12-31 (Tsp)
 	RW2; 12543,11521 12645,11673
 	RW3; 12645,11673 12660,11705 12676,11739 12728,11850 12758,11915
@@ -3403,13 +3403,13 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="318031558" version="15"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, bis Höhe Pasteurstr. bis auf die Deckschicht fertiggestellt; weiter nordöstlich wird noch gebaut vvv
-#: last_checked: 2025-04-10 vvv
+#: last_checked: 2025-05-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (BA Pankow) vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
 	RW0; 12640,13814 12701,13873 12766,13942
-#: note: hier existiert noch ein alter enger Radweg, der aber nicht weiter "beworben" wird
-Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
+#: historical_note: früher (bis 2024/2025): Busspur gilt Mo-Fr 6-18 Uhr, RW5; außerdem hat hier noch ein alter enger Radweg existiert, der aber nicht weiter "beworben" wurde
+	RW0; 12766,13942 12856,14042
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3444,7 +3444,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="15"
 #: osm_watch: way id="966685279" version="7"
-#: last_checked: 2025-04-30 vvv
+#: last_checked: 2025-05-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 	RW1;RW1 13439,14673 13727,14207 13731,14200 13736,14192 13879,13967
@@ -8054,7 +8054,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-04-29
+#: last_checked: 2025-05-10
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -9228,6 +9228,8 @@ verlängerte Suggestivstreifen am Anfang und Ende des Straßenabschnitts	RW0; 9183
 # 
 	RW6;RW6 5742,19840 5731,19824 5823,19544
 	RW6;RW6 5885,19920 6033,19611
+#: by: osm note
+	RW6;RW6 5929,19574 5897,19668 5858,19761 5803,19874
 # 
 Reste von sehr schmalen asphaltierten Radwegen erkennbar	RW0;RW0 3161,2482 3163,2598 3171,2848
 # 

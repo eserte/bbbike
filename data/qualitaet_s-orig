@@ -475,7 +475,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-04-29
+#: last_checked: 2025-05-10
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -1165,7 +1165,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2025-04-17
+#: last_checked: 2025-05-10
 #: check_frequency: 30d
 #: next_check: 2025-05-31 (osm note)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
@@ -1651,10 +1651,11 @@ Gleiwitzer Str.: neuer Asphalt	Q0 21146,9988 20947,9999
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12057 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1551118.php (Baustelle, Sperrung für Kfz-Verkehr, 28. April 2025 bis 12. Mai 2025)
 #: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article408794949/baustelle-und-halteverbot-in-gleiwitzer-strasse-das-hat-folgen.html
-#: source_id: bvg2024:190#HIM_FREETEXT_277867 (2025-04-25 - ...)
+#: source_id[closed]: bvg2024:190#HIM_FREETEXT_277867 (2025-04-25 - ...)
 #: osm_watch: note 3729559 9
 #: last_checked: 2025-05-07
-#: next_check: 2025-05-12 (BA-Pressemitteilung)
+# REMOVED --- #: next_check: 2025-05-12 (BA-Pressemitteilung)
+#: next_check: 2025-05-10 (BVG-Verkehrsmeldung entfernt)
 Gleiwitzer Str.: Asphalt mit unebenen Stellen	Q1+ 20947,9999 20703,10004
 Buchenhainer Str.: Asphalt	Q0 21164,8243 21325,8217
 Nitzwalder Str.: Asphalt	Q0 21325,8217 21461,8094 21535,8026
@@ -4854,7 +4855,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wird hier saniert?
-#: last_checked: 2025-04-20
+#: last_checked: 2025-05-10
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
@@ -11512,14 +11513,8 @@ Helsingforser Platz: Betonpflaster	Q0- 13473,11456 13427,11431
 Ritterlandweg [Wohngebiet]: schlechtes Kopfsteinpflaster	Q3 8315,17079 8346,17148
 Ritterlandweg [Wohngebiet]: Verbundsteinpflaster	Q1 8346,17148 8363,17192
 Alfred-Siggel-Weg: Verbundsteinpflaster	Q1 19406,7886 19550,7780 19500,7719
-#: by: https://www.berliner-woche.de/fennpfuhl/c-umwelt/gruenzug-wird-umgestaltet_a413057
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10502 (Antrag)
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10613 (Antrag (zur Beleuchtung))
-#: osm_watch: note 4405725 7
-#: XXX wie sieht die Wegoberfläche nach den Sanierungsarbeiten aus? vermutlich asphaltiert
-#: last_checked: 2025-04-10
-#: check_frequency: 30d
-(Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Beton mit einigen Hebungen	Q1- 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
+#: historical_note: früher (bis 2024/2025): Beton mit einigen Hebungen, Q1-
+(Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Asphalt	Q0 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 Rudolf-Seiffert-Str.: Asphalt mit einigen Rissen und Schäden	Q1 14790,13639 14769,13569 14731,13576 14658,13283 14644,13223
 Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7606,5939
 Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7615,5938
@@ -13109,7 +13104,7 @@ Fritzi-Massary-Str. [am Highdeck]: Asphalt	Q0 15361,6317 15360,6424
 Am Falkenberg [Wohngebietsstraße]: Beton	Q1+ 21902,877 21740,943 21721,939 21696,909
 Pieskower Weg: Beton	Q1+ 13224,15049 13204,15062 13105,15122
 #: note: früher: alte Gehwegplatten, Q1
-Einstein-Park: Betonplatten	Q0- 13163,14924 13207,14998 13204,15062
+Einstein-Park: Betonpflaster	Q0- 13163,14924 13207,14998 13204,15062
 Fredersdorfer Str.: Asphalt	Q0 12891,12008 12923,12043 13051,12167
 # REMOVED --- #: note: früher: Asphalt mit Rissen, Q0- --- #: XXX anscheinend bekommen einige Meter vor der Marchlewskistr. Kopfsteinpflaster, check! --- #: next_check: 2022-08-14
 Fredersdorfer Str.: Kopfsteinpflaster	Q2 13051,12167 13086,12186
@@ -17597,6 +17592,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: check_frequency: 90d vvv
 #: next_check: 2026-07-30 vvv
 #: osm_watch: way id="593503609" version="10"
+#: osm_watch: way id="40267304" version="17"
 #: last_checked: 2025-03-12
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553
 #: osm_watch: way id="24204822" version="29"
