@@ -29,6 +29,7 @@ use Strassen::Core;
 our $VERSION = '0.04';
 
 my $bbbike_datadir = bbbike_root . '/data';
+my $bbbike_miscdir = bbbike_root . '/misc';
 my $bbbike_aux_datadir = defined bbbike_aux_dir() ? bbbike_aux_dir() . '/bbd' : undef;
 
 my $codeset = langinfo(CODESET());
@@ -56,6 +57,7 @@ my @search_file_defs = (
 			(defined $bbbike_aux_datadir ? 
 			 ("$bbbike_aux_datadir/fragezeichen_lowprio.bbd") : ()
 			),
+			(grep { -f $_ } "$bbbike_miscdir/webcams.bbd"),
 		       );
 
 my $searchterm_type = 'fixed';
