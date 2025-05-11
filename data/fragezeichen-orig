@@ -6594,10 +6594,11 @@ Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projec
 #: by[nocache]: https://archive.is/tLaeV
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1504973.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_54_4143_4354_online.pdf (Planfeststellungsverfahren für das Straßenbahnvorhaben)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/barrierefreiheit-ladezonen-zweigleisige-tram-strassenumbau-im-berliner-sudosten-geplant-13666159.html (Baubeginn Ende 2027)
 #: osm_watch: way id="11389403" version="44"
 #: last_checked: 2025-02-26
 #: check_frequency: 540d
-#: next_check: 2027-01-01
+#: next_check: 2027-12-31 (Tsp)
 Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 19904,3464 20012,3532 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786 20449,3799 20546,3865 20637,3919 20679,3944 20772,3999 20788,4008 20834,4035 21053,4162 21129,4217 21146,4229
 #: by ^^^
 # 
@@ -8822,6 +8823,7 @@ Königsberger Str.: Verbreiterung und Erneuerung der Radwege	? 5256,2379 5229,239
 # 
 #: by: https://www.infravelo.de/projekt/radickestrasse/ (2. Quartal 2026 - 3. Quartal 2026)
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-weitere-massnahmen-fuer-den-fahrradverkehr-geplant-li.2275385 (Erwähnung)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/barrierefreiheit-ladezonen-zweigleisige-tram-strassenumbau-im-berliner-sudosten-geplant-13666159.html ("fahrradfreundliche Straße")
 #: next_check: 2026-09-30
 Radickestr.: Planung einer Fahrradstraße	? 20499,3572 20592,3633 20683,3693 20776,3753 20862,3824
 # 
@@ -9943,6 +9945,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 
 #: by: https://www.deutsches-architekturforum.de/thread/13529-waterkant-berlin-%C3%B6stliche-wasserstadt-spandau/?postID=750938#post750938
 #: by: https://www.berliner-woche.de/haselhorst/c-bauen/an-der-waterkant-wurde-der-grundstein-fuer-den-letzten-bauabschnitt-gelegt_a398419 (bis Ende 2026)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_13_0825_0920_online.pdf (eine von der Daumstr. abzweigende Straße soll "Am Salzhof" benannt werden, ist eine Straße hier damit gemeint? Benennung zum 5.4.2025)
+#: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/tausende-wohnungen-neu-gebaut-in-diesen-quartieren-konnen-berliner-bald-ein-neues-zuhause-finden-13648726.html
 #: source_id: viz2021:13.225604,52.552163,01.08.2024,08:00 (Leitungsbau, bis 18.10.2024) (bis 25.10.2024) (bis 13.12.2024) (bis 29.11.2024) (inaktiv) (bis 20.12.2024) (bis 10.01.2025) (bis 20.01.2025) (inaktiv)
 #: source_id: viz2021:13.225913,52.551143,16.09.2024,09:00 (Leitungsbau, bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.225913,52.551143,24.09.2024,09:00 (Fernwärmeleitungsbau, bis 18.11.2024) (bis 31.12.2024) (vorfristig inaktiv)
@@ -10468,6 +10471,7 @@ A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21861,-2154 2166
 #: by: https://entwicklungsstadt.de/nachhaltiges-bauen-auf-buckower-feldern-richtfest-fuer-wohngebaeude/
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-19896.pdf (Bezugsfertigkeit zwischen Ende 2024 und Anfang 2026)
 #: by: https://www.berliner-woche.de/buckow/c-bauen/im-sueden-neukoellns-ist-ein-neues-quartier-entstanden_a432048
+#: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/tausende-wohnungen-neu-gebaut-in-diesen-quartieren-konnen-berliner-bald-ein-neues-zuhause-finden-13648726.html (Abschnitte werden im Juni 2025 sowie Oktober 2025 fertig werden)
 # REMOVED --- #: XXX mögliche Straßennamen (laut bw) (mittlerweile im Amtsblatt bestätigt) (fehlen alle in Berlin.coords.data): --- #: XXX * An den Buckower Feldern (PLZ=12349) --- #: XXX * Gensweg (PLZ=12349) --- #: XXX * An den Weiden (PLZ=12349) --- #: XXX * Dyrekeweg (PLZ=12349) --- #: XXX * In den Bauerngärten (PLZ=12349) --- #: XXX sowie die Privatstraßen: --- #: XXX * Am Mühlanger (PLZ=12349) --- #: XXX * Knyphausenweg (PLZ=12349)
 #: osm_watch: way id="28319563" version="24"
 #: source_id: viz2021:13.436,52.41714,30.05.2024,06:00 (Wanderbaustelle, bis 31.08.2024) (inaktiv)
