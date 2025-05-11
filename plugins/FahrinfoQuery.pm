@@ -57,6 +57,8 @@ $data_source = "vbb";
 use vars qw($use_search);
 $use_search = 1 if !defined $use_search;
 
+use vars qw(@dep_board_urls);
+
 my $bbbike_root = bbbike_root;
 
 ######################################################################
@@ -219,6 +221,21 @@ sub choose {
 				 -width => 50,
 				 -height => $LIMIT_LB,
 				)->grid(-column => $col, -row => 1, -sticky => 'news');
+	my $start_lb_popup = $t->Menu(-tearoff => 0);
+	my $current_dep_board_url;
+	$start_lb_popup->add(
+	    'command',
+	    -label => M"Abfahrtstafel",
+	    -command => sub { show_departure_table($current_dep_board_url) }
+	);
+	my $start_lb_lb = $start_lb->Subwidget('scrolled');
+	$start_lb_lb->bind('<Button-3>' => sub {
+			       my $e = $_[0]->XEvent;
+			       my $index = $start_lb_lb->nearest($e->y);
+			       return unless defined $index;
+			       $current_dep_board_url = $dep_board_urls[$index];
+			       $start_lb_popup->Popup(-popover => 'cursor');
+			   });
 	$col++;
 	$f->Label(-text => M("Ziel"))->grid(-column => $col, -row => 0, -sticky => 'ew');
 	$goal_lb  = $f->Scrolled('Listbox',
@@ -240,15 +257,19 @@ sub choose {
     }
 
     my(@start_stops, @goal_stops);
-    for my $def ([\@start_stops, $start, $start_lb],
-		 [\@goal_stops,  $goal,  $goal_lb],
+    for my $def (['dep', \@start_stops, $start, $start_lb],
+		 ['arr', \@goal_stops,  $goal,  $goal_lb],
 		) {
-	my($stops, $coord, $lb) = @$def;
+	my($type, $stops, $coord, $lb) = @$def;
 	#@$stops = @{ $ms->nearest_point($coord, FullReturn => 1, AllReturn => 1) };
 	@$stops = get_nearest($ms, $coord);
 	if (!@$stops) {
 	    $lb->insert("end", "Nothing found!");
 	} else {
+	    if ($type eq 'dep') {
+		@dep_board_urls = ();
+	    }
+
 	    for my $stop (@$stops) {
 		my $r = $stop->{StreetObj};
 
@@ -277,6 +298,11 @@ sub choose {
 		$name .= s2ms($time) . " min";
 		$name .= "]";
 		$lb->insert('end', $name); # XXX show maybe on map, somehow?
+
+		if ($type eq 'dep') {
+		    my $dep_board_url = $stop->{DepBoardURL};
+		    push @dep_board_urls, $dep_board_url;
+		}
 	    }
 	    $lb->selectionSet(0);
 	}
@@ -340,6 +366,15 @@ sub choose {
 		      $_ =~ s{\s+\[.*\]$}{} for ($start_name, $goal_name);
 		      search($start_name, $goal_name);
 		  });
+}
+
+sub show_departure_table {
+    my($current_dep_board_url) = @_;
+    if (!defined $current_dep_board_url) {
+	main::status_message("Für diese Haltestelle existiert keine Abfahrtstafel-URL", "error");
+	return;
+    }
+    start_browser($current_dep_board_url);
 }
 
 sub search {
@@ -420,9 +455,17 @@ sub get_nearest {
 			    $search_res->prepend($x,$y);
 			}
 		    }
-		    my $line = {StreetObj => $r,
-				Dist      => $search_res ? $search_res->len : $as_the_bird_flies_dist,
-				Path      => $search_res ? $search_res->path : undef,
+		    my $dep_board_url;
+		    {
+			my $dir = $s->get_directives($n);
+			if ($dir && $dir->{url}) {
+			    $dep_board_url = $dir->{url}[0];
+			}
+		    }
+		    my $line = {StreetObj   => $r,
+				DepBoardURL => $dep_board_url,
+				Dist        => $search_res ? $search_res->len : $as_the_bird_flies_dist,
+				Path        => $search_res ? $search_res->path : undef,
 			       };
 		    push @res, $line;
 		}
@@ -540,7 +583,7 @@ sub get_data_object {
 	if (!_provide_vbb_stops) {
 	    return;
 	}
-	$obj = Strassen->new($openvbb_bbd_file);
+	$obj = Strassen->new($openvbb_bbd_file, UseLocalDirectives => 1);
     } else {
 	main::status_message("Unhandled data source '$data_source'", 'die');
     }
@@ -624,7 +667,7 @@ sub _extract_vbb_stops () {
 
 sub _convert_vbb_stops () {
     my $script = bbbike_root . '/miscsrc/vbb-stops-to-bbd.pl';
-    system("$^X $script --unique $openvbb_local_file > $openvbb_bbd_file~");
+    system("$^X $script --unique --add-dep-board-url $openvbb_local_file > $openvbb_bbd_file~");
     if ($? || !-s "$openvbb_bbd_file~") {
 	die "Failure to convert $openvbb_local_file to $openvbb_bbd_file~";
     }
