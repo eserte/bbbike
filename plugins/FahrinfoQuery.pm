@@ -624,7 +624,7 @@ sub _extract_vbb_stops () {
 
 sub _convert_vbb_stops () {
     my $script = bbbike_root . '/miscsrc/vbb-stops-to-bbd.pl';
-    system("$^X $script $openvbb_local_file > $openvbb_bbd_file~");
+    system("$^X $script --unique $openvbb_local_file > $openvbb_bbd_file~");
     if ($? || !-s "$openvbb_bbd_file~") {
 	die "Failure to convert $openvbb_local_file to $openvbb_bbd_file~";
     }

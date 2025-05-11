@@ -4,17 +4,20 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
 use FindBin;
+use Getopt::Long;
 use Text::CSV_XS ();
+
+GetOptions("unique!" => \my $unique)
+    or die "usage: $0 [--[no]unique] /path/to/stops.txt\n";
 
 my $infile = shift
     or die "Please provide path to stops.txt file as found in VBB-Fahrplandaten (try http://daten.berlin.de/datensaetze/vbb-fahrplandaten-dezember-2016-bis-august-2017 or so).\n";
@@ -29,10 +32,15 @@ print "#: encoding: utf8\n";
 print "#: map: polar\n";
 print "#:\n";
 
+my %seen;
 while (my $row = $csv->getline($fh)) {
     my %row;
     @row{@keys} = @$row;
-    print $row{'stop_name'}, "\t", "X", " ", $row{'stop_lon'}.','.$row{'stop_lat'}, "\n";
+    my $stop_name = $row{'stop_name'};
+    if ($unique && $seen{$stop_name}++) {
+	next;
+    }
+    print $stop_name, "\t", "X", " ", $row{'stop_lon'}.','.$row{'stop_lat'}, "\n";
 }
 $csv->eof or $csv->error_diag ();
 close $fh;
