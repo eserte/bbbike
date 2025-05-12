@@ -2091,7 +2091,9 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: next_check: 2025-04-01 vvv
 #: note: hier existieren bereits Straßen+Wege, aber sieht noch alles sehr privat aus
 #: last_checked: 2024-08-05 (daf)
+#: osm_watch: way id="385443436" version="5"
 Marienpark: Planstraße 1 geplant	?::projected 8178,3591 8200,3479 8263,3496 8235,3577
+#: osm_watch: way id="195081728" version="5"
 Marienpark: Straße geplant	?::projected 8163,3660 8116,3754
 #: next_check ^^^
 #: XXX ^^^
@@ -3561,7 +3563,7 @@ Burgfrauenstr./Fischgrundbrücke: Zebrastreifen geplant (entsteht hier noch ein w
 #: last_checked: 2024-03-26
 #: check_frequency: 360d
 #: next_check: 2024-12-31
-Lorenzstr./Jägerstr.: Fußgängerüberweg geplant	?::projected 5676,2260 5660,2219 5649,2182
+Lorenzstr./Jägerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 5676,2260 5660,2219 5649,2182
 # 
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf vvv
 #: priority: #D vvv
@@ -3743,53 +3745,6 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 #: next_check: 2028-06-01 (bw)
 Chemnitzer Str.: Verlegung der Straße, Radwege	?::projected  22436,11054 22483,11261
 # 
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20161104 vvv
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20190506 (auf unbestimmte Zeit verschoben)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20200720 (Bauende voraussichtlich Mitte 2025)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20250308 (Bauende voraussichtlich Anfang 2025)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.527802.php
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9600 (Frage; voraussichtlicher Baubeginn ist im IV. Quartal 2021; gesamte Baumaßnahme von Ende 2021 bis Ende 2025)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9711 (Einbahnstraßenregelung für Radfahrer bleibt)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1165515.php (Baubeginn 3. Kalenderwoche 2022)
-#: by: https://berliner-abendblatt.de/2022/01/14/bauarbeiten-in-wittenau/
-#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/strassen-werden-erneuert_a333635
-#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/im-schmitzweg-heiligental-und-brodersenstrasse-starten-langwierige-strassenbauarbeiten_a334127
-#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/probleme-fuer-den-pflegedienst_a336035
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10396 (Anfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10549 (mit Terminplan --- letzte Bauphase bis 28.02.2025; Fahrbahnbelag des Schmitzwegs (südlicher Abschnitt?) wird bis zum 24.08.2022 hergestellt)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10601 (Anfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10728 (Anfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10743 (Anfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10839 (Anfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10868 (Anfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11229 (Ersuchen)
-#: by: https://www.berliner-woche.de/wittenau/c-verkehr/brodersenstrasse-auf-400-meter-grundhaft-saniert_a423456
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12796 (Ersuchen zur nördlichen Brodersenstraße)
-#: also_indoor: url https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.527802.php
-#: XXX ursprüngliche Bauzeit: Frühjahr 2019 - Ende 2020; laut Baustellenschild der Wasserbetriebe bis April 2025 vvv
-#: XXX Bauphase 1 - westlicher Schmitzweg: 07.02.2022 - 31.10.2022 (Stand 2022-10-22: wird wohl verlängert werden) (mittlerweise bis 30.11.2022) (fertiggestellt)
-#: XXX Bauphase 2 - Brodersenstraße:       25.08.2022 - 26.10.2023 (Stand 2022-10-22: teilweise Bauarbeiten) (Stand 2023-03-18: Bauarbeiten, Fahrbahn gesperrt) (Stand 2024-04-17: halbe Straße fertig) (mittlerweile komplett fertig)
-#: XXX Bauphase 3 - nördlicher Schmitzweg: 31.10.2022 - 21.03.2024 (Stand 2024-04-17: fertig)
-#: XXX Bauphase 4 - Heiligental:           27.10.2023 - 28.02.2025 (Stand 2023-03-18: noch keine Bauarbeiten, aber Einbahnstraßenregelung wegen Sackgasse aufgehoben) (Stand 2025-01-15: Bauarbeiten, Durchfahrt verboten)
-#: note: Bauschild der Wasserbetriebe: bis April 2025
-#: XXX laut osm note sind die Bauarbeiten beendet; verkehrsberuhigter Bereich
-#: last_checked: 2025-01-15 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2025-04-30 vvv
-# REMOVED (hier Gehwegbereich, wohl keine Bauarbeiten) --- Schmitzweg: Neubau, danach bessere Qualität?	?::projected 5983,19974 5885,19920
-# REMOVED (fertig) --- Schmitzweg: Neubau, danach bessere Qualität?	?::inwork 5885,19920 5803,19874 5742,19840
-# REMOVED (hier fertig) --- Schmitzweg: Neubau, danach bessere Qualität?	?::projected 5742,19840 5731,19824 5823,19544
-#: osm_watch: note 4203058 5
-#: osm_watch: way id="4675279" version="15"
-Heiligental: Neubau, danach vermutlich bessere Qualität, vermutlich keine Einbahnstraße mehr	?::inwork 5929,19574 5897,19668 5858,19761 5803,19874
-# REMOVED (fertig laut Pressemeldung) --- Brodersenstr.: Neubau, danach vermutlich durchgängig Verbundsteinpflaster	?::inwork 6033,19611 5885,19920
-# REMOVED (hier außerhalb des Baubereichs) --- Brodersenstr.: Neubau, danach vermutlich durchgängig Verbundsteinpflaster	?::inwork 5885,19920 5804,20047
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: by ^^^
-# 
 # REMOVED (hier ist nun eine Schule) --- #: by: http://www.potsdam.de/sites/default/files/documents/16-_amtsblatt_nov16_dsjs_endfassung.pdf --- #: XXX B-Plan Nr. 52 --- #: osm_watch: way id="629214941" version="4" brb --- #: last_checked: 2019-08-10 --- #: check_frequency: 360d --- Rote Kaserne Ost (Potsdam): ändert sich hier an der Verkehrsflächen etwas?	?::projected -13087,1746 -12969,1800 -13058,1848 -12978,1899
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2016/ba_vorlage_0011_v_auswertung_beteilig_b_plan_xxi_41b.pdf
@@ -3963,7 +3918,7 @@ Bebauungsplan 4-67: wird der geschlossene Teil der Nußbaumallee geöffnet?	? 1113
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5132
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6140
 #: XXX diverse Anbindungen an kreuzende Straßen beachten; Grünfläche eintragen; ggfs. Sleipnerplatz erweitern
-#: last_checked: 2025-02-01 (mapillary)
+#: last_checked: 2025-05-10 (mapillary)
 #: check_frequency: 360d
 Bebauungsplan 3-69: ehem. Industriebahntrasse wird zum Rad/Gehweg	?::projected 12966,18587 12696,19334 12652,19460 12543,19760
 # 
@@ -5715,7 +5670,7 @@ Wiltbergstraße/Ludwig-Hofmann-Quartier: Zebrastreifen geplant	?::projected 15662
 #: next_check_id: SWINEMUENDER-2023
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: priority: #D
-#: last_checked: 2025-05-02 (mapillary)
+#: last_checked: 2025-05-10 (mapillary)
 #: check_frequency: 120d
 Swinemünder Str./Ramlerstr.: Zebrastreifen geplant	?::projected 9606,15753 9646,15737 9694,15718
 # 
@@ -5753,7 +5708,7 @@ Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,989
 #: last_checked: 2025-04-30
 #: next_check: 2026-06-13
 Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
-#: last_checked: 2025-03-04 (mapillary)
+#: last_checked: 2025-05-11 (mapillary)
 Schivelbeiner Str./Seelower Str.: Zebrastreifen geplant	?::projected 10767,16174 10739,16146 10708,16118
 #: note: in der Drucksache fälschlicherweise "Chatronstraße" (ohne r) geschrieben
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5734 (Antrag für einen Fußgängerüberweg am benachbarten Kalvinistenweg)
@@ -7080,7 +7035,7 @@ Schönholzer Weg: wird hier eine Radverkehrsanlage erstellt?	?::projected; 8196,2
 #: by: https://laborgh.com/projekte/schkeuditzer-strasse/
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/neubauprojekt-am-theaterplatz-hellersdorf-nimmt-naechste-huerde_a415096
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-neubau-wohnhauses-berlin-deutschland-662000.html (nördlich des Platzes?)
-#: osm_watch: note 4671481 3
+#: osm_watch: note 4671481 4
 #: XXX Bebauungsplan 10-110VE -> Bebauungsplan 10-110
 #: last_checked: 2025-03-03 (luftbildsuche)
 #: check_frequency: 360d
@@ -7635,13 +7590,13 @@ Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_41_3059_3162_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11608
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11736 (Einwohneranfrage: Umsetzung der Fußgängerzone Anfang 2025?)
-#: last_checked: 2025-04-18
+#: last_checked: 2025-05-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-15
 Niemannstr.: Teileinziehung geplant	? 14211,11229 14254,11377
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_14_0921_0992_online.pdf
-#: last_checked: 2025-04-18
+#: last_checked: 2025-05-11
 #: check_frequency: 30d
 Simplonstr.: Teileinziehung geplant	? 14181,11434 14254,11377
 # 
@@ -7701,6 +7656,7 @@ Wönnichstr.: Teileinziehung geplant	? 16977,11769 16915,11634
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Widmung einer öffentlichen Grün- und Erholungsanlage für den schon bestehenden östlich angrenzenden Uferweg)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/centrum-group-projekt-gutenbergstra%C3%9Fe-8-10.1070/#post-24817
 #: by: https://entwicklungsstadt.de/neues-quartier-am-wasser-spreesight-erhaelt-baugenehmigung-in-charlottenburg/ (bis 2027)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/spreesight-gutenbergstra%C3%9Fe-8-10.1070/page-2#post-25053
 #: osm_watch: way id="496771672" version="8"
 #: last_checked: 2025-04-09
 #: check_frequency: 360d
@@ -7709,9 +7665,10 @@ Uferweg an der Spree: soll hier entstehen	?::projected 5550,12238 5493,12244 541
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181452.php (März 2022: Aufstellungsbeschluss Bebauungsplan 4-80 B)
 #: by: https://entwicklungsstadt.de/bueroquartier-glance-in-neuen-haenden-bleibt-es-beim-urspruenglichen-plan/
+#: by: https://entwicklungsstadt.de/zwischen-stillstand-und-neustart-wie-es-um-berlins-signa-projekte-steht/ (kein Termin für das "Glance" genannt)
 #: osm_watch: way id="1026941524" version="1"
 #: last_checked: 2025-03-18 (daf)
-#: check_frequency: 360d
+#: check_frequency: 720d
 geplante Verlängerung des Uferwegs an der Spree	?::inwork 5287,12465 5282,12538 5306,12661
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14304-quartier-staytion-berlin-pankow-in-planung/?postID=699537#post699537 (Bauzeitraum bis voraussichtlich 2026)
@@ -8872,7 +8829,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: osm_watch: way id="1051634661" version="11"
 #: osm_watch[closed]: note 4668723 1
 #: XXX erste Pfosten stehen bereits
-#: last_checked: 2025-05-09
+#: last_checked: 2025-05-12
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2024-10-04
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,11964
@@ -8880,8 +8837,8 @@ Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1532095.php (Maßnahmen im Ostkreuz-Kiez ab Februar 2025)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
-#: note: erste Pfosten stehen bereits, teilweise mit zugehängten Schildern, außerdem erste Markierungen (Radspuren gegen die Einbahnstraßenrichtung); laut Aushängen im Februar (2025), ist aber anscheinend verzögert
-#: last_checked: 2025-05-10 vvv
+#: note: erste Pfosten stehen bereits, mit meist zugehängten Schildern, einige Schilder schon (illegal?) nicht mehr zugehangen, außerdem erste Markierungen (Radspuren gegen die Einbahnstraßenrichtung); laut Aushängen im Februar (2025) aktiv, ist aber offensichtlich verzögert
+#: last_checked: 2025-05-12 vvv
 #: check_frequency: 10d vvv
 #: osm_watch: way id="1145133960" version="3"
 Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14354,12012 14468,11992 14589,11975
@@ -9148,6 +9105,7 @@ Neues Ufer: verkehrsberuhigter Bereich geplant	? 4283,13660 4363,13336
 # REMOVED (Straßenschild existiert, und es ist wohl die südliche Fläche) --- #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12362 (Benennung zum 17. März 2025) --- #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1537247.php --- #: by: https://www.tagesspiegel.de/berlin/bezirke/ein-platz-fur-spandaus-dorfschulzen-kladows-dorfplatz-tragt-nun-den-namen-des-ex-burgermeisters-13384267.html --- #: next_check: 2025-03-17 --- #: XXX oder ist es die Grünfläche nördlich des Ritterfelddamms oder beide Grünflächen? --- Konrad-Birkholz-Platz: hängen hier Straßenschilder?	? -7160,5090 -7173,5035 -7134,5020 -7120,5076 -7160,5090
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1542218.php (bis 18.4.2025)
+#: osm_watch: way id="24555764" version="21"
 #: priority: #C
 #: next_check: 2025-04-18 (BA-Pressemitteilung)
 Am Ried: Umbau der Fahrbahn, in Zukunft versickerungsfähiges Pflaster	? 4622,23372 4829,23477
@@ -9244,6 +9202,11 @@ Maratstr.: Instandsetzung, danach bessere Qualität?	? 20361,14118 20371,14204
 #: note: Teil des Anton-Kiezblocks
 #: last_checked: 2025-05-08 (Amtsblatt)
 Maxstr.: Teileinziehung geplant	? 7738,15838 7781,15804
+# 
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-05-2025-b103-gantikow-bis-vehlow (Juli 2025 - Dezember 2026)
+#: by: https://www.ls.brandenburg.de/sixcms/media.php/9/Kartenausschnitt%20B103.png
+#: next_check: 2026-12-31
+Gantikow - Vehlow: Bau eines asphaltierten Radwegs (Westseite?)	? -61969,62314 -62264,62702 -62375,62930 -62549,63698 -62652,63877 -62911,64069 -63077,64306 -63485,65303 -63882,65722 -63957,66019 -64027,66282
 # 
 #: section ^^^
 #: ignore ^^^
@@ -11069,6 +11032,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/wohnungsbau-in-kreuzberg-stadtische-wbm-soll-behala-gelande-an-der-spree-entwickeln-12865831.html (Verlängerung nach Kreuzberg)
 #: by: https://entwicklungsstadt.de/nach-insolvenz-bauarbeiten-fuer-elements-am-berliner-spreeufer-laufen-wieder/
 #: by: https://entwicklungsstadt.de/tishman-speyer-uebernimmt-bauprojekt-elements-am-berliner-spreeufer/
+#: by: http://www.deal-magazin.com/news/143222/Tishman-Speyer-kauft-Buero--und-Wohnprojekt-Elements-in-Berlin (Erwähnung der Uferpromenade)
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: last_checked: 2025-05-06 vvv
 #: check_frequency: 120d vvv
@@ -11104,6 +11068,9 @@ Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 #: by: https://entwicklungsstadt.de/geplante-chipperfield-hochhaeuser-in-marzahn-werden-deutlich-niedriger/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neues-viertel-auf-dem-knorr-bremse-areal-bekommt-berlin-marzahn-einen-weiteren-s-bahnhof-13612927.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf (Veröffentlichung eines Bebauungsplanentwurfs)
+#: by: https://entwicklungsstadt.de/neubauquartier-in-marzahn-hellersdorf-planverfahren-fuer-georg-knorr-park-laeuft/
+#: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1557147.php
+#: by: https://datenbox.stadt-berlin.de/filr/public-link/file-download/8a8ae3ac95d6e94e0196a59351e50294/46599/-648915032502042839/00-01_B-Plan%20XXI-22-2_Planzeichnung.pdf (eine private Verkehrsfläche im NW-Teil sowie Geh-/Radweg in W-O-Richtung)
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2024-05-24 (mapillary)
 #: check_frequency: 720d
@@ -11544,6 +11511,7 @@ Am Packereigraben: entsteht hier ein Uferweg?	?::projected 4593,22011 4509,21944
 #: by: https://www.infravelo.de/projekte/brueckenbauwerke/bruecken-spree-rad-und-wanderweg/ (voraussichtlichter Baubeginn: 2025, Bauzeit 18 Monate)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_48_4373_4436_online.pdf (Benennung)
 #: by: https://www.morgenpost.de/berlin/article408755311/jahrzehntealter-plan-darum-kommt-der-spree-radweg-erstmal-nicht.html
+#: by: https://entwicklungsstadt.de/streit-um-den-spreeradweg-in-spandau-bund-fordert-eingreifen-des-senats/ (infravelo: Finanzierung nicht gesichert)
 #: note: Lage: Spreeradweg am Grützmachergraben
 #: note: die Strecke ist auch im Radverkehrsplan Berlin (März 2018, Mai 2024) enthalten
 #: next_check: 2027-01-01 vvv
@@ -11792,6 +11760,8 @@ Exilmuseum: in Planung, evtl. gibt es Änderungen an den Wegen/Straßen	?::project
 #: by: https://www.tagesspiegel.de/berlin/grosse-feier-fur-die-berliner-u-bahn-bis-ende-2030-soll-die-u3-bis-mexikoplatz-fahren-13603768.html
 #: by: https://www.tagesspiegel.de/berlin/einfach-dreist-die-bvg-feiert-die-verlangerung-der-berliner-u-bahn-linie-3--doch-es-gibt-kein-baurecht-13602997.html
 #: by: https://entwicklungsstadt.de/verlaengerung-der-u3-in-berlin-baubeginn-trotz-rechtlicher-unsicherheiten/
+#: by: https://www.tagesspiegel.de/berlin/verlangerung-der-berliner-u-bahn-linie-3-senat-schliesst-ein-scheitern-nicht-aus-13666486.html
+#: by: https://entwicklungsstadt.de/u-bahn-ausbau-und-wohnungsbau-krumme-lanke-wird-zur-grossbaustelle/
 #: next_check: 2030-12-31 (Tsp)
 U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,3442 -1105,3303
 # 

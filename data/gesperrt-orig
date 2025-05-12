@@ -4016,12 +4016,12 @@ Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-04-20 (mapillary)
+#: last_checked: 2025-05-11 (mapillary)
 #: check_frequency: 90d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-04-20 (mapillary)
+#: last_checked: 2025-05-11 (mapillary)
 #: check_frequency: 90d
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
@@ -4186,7 +4186,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: last_checked: 2025-05-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
-#: osm_watch: way id="1054783030" version="5"
+#: osm_watch: way id="1054783030" version="6"
 # REMOVED (das Schild wurde etwas verschoben) --- Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3:inwork 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q4:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 #: osm_watch: way id="154381294" version="21"
@@ -4222,6 +4222,7 @@ Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::i
 # 
 #: next_check_id: KANZLERPARK-2024
 #: note: ein längerer temp_blockings-Eintrag existiert ebenfalls
+#: osm_watch: way id="1263834183" version="1"
 #: last_checked: 2025-01-15 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
@@ -4937,15 +4938,16 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 # 
 #: next_check_id: MOLECULES-2025
 #: by: wosch
-#: by: https://www.agromex.de/projekte/the-molecules-berlin/ (Fertigstellung: IV. Quartal 2027)
+#: by: https://www.agromex.de/projekte/the-molecules-berlin/ (Fertigstellung: IV. Quartal 2027) (Fertigstellung: 06/2029)
 #: by: https://www.deutsches-architekturforum.de/thread/11157-agromex-projekt-fanny-zobel-stra%C3%9Fe-treptow-in-bau/?postID=748725#post748725
 #: by: https://dielinke.berlin/start/det/nachfrage-zur-beantwortung-der-schriftlichen-anfrage-scha-ix-0495-bauprojekt-fanny-zobel-strasse/ (weiterhin: Gesamtmaßnahme bis 2027)
 #: by: https://entwicklungsstadt.de/bauvorhaben-so-ist-der-stand-bei-berlins-stillstand-projekten/
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408887866/eine-spektakulaere-skyline-wo-berlin-drei-neue-hochhaeuser-bekommt.html (bis Ende 2029)
 #: confirmed_by: srt
-#: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024: 401) vvv
+#: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
 #: last_checked: 2025-04-23 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2027-12-31 (agromex website) vvv
+#: next_check: 2029-06-30 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
 #: next_check ^^^

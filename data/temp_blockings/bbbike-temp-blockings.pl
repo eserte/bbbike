@@ -8335,9 +8335,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025)
-#: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00
-#: source_id: viz2021:13.49144,52.42064,09.05.2025,19:00 (bis 11.05.2025)
-#: source_id: viz2021:13.49469,52.42125,09.05.2025,19:00 (bis 11.05.2025)
+#: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00 (inaktiv)
+#: source_id: viz2021:13.49144,52.42064,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
+#: source_id: viz2021:13.49469,52.42125,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
 EOF
@@ -22364,9 +22364,9 @@ EOF
 	2::temp 13886,10939 13856,10864
 EOF
      },
-     { from  => $isodate2epoch->("2024-05-31 20:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-06-02 02:00:00"), 
-       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, voraussichtlich am 01.06.2024',
+     { from  => $isodate2epoch->("2025-06-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-06-15 02:00:00"), 
+       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, voraussichtlich am 14.06.2025',
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 5, start => "2021-10-01T00:00:00"]], # kann Ende Mai, Anfang Juni, Anfang Juli oder Ende August passieren
        recurrence_prewarn_days => 14,
@@ -22375,6 +22375,7 @@ EOF
 #: by: http://www.xhain.info/termine/fiesta-kreutziga.htm
 #: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
 #: by: https://www.facebook.com/KreutzigerStrassenfest/posts/pfbid02u1jwCHS1jzLAUNvuRXbJd3tsDEyJavnjqAy9uE4a9eHTHCxd9QBAjayHHy1TqK5ul (3.6.2023)
+#: by: https://www.bandsintown.com/de/f/177283-fiesta-kreutziger-2025
 #: source_id: viz2021:13.45938,52.51251,01.06.2024,08:00 (bis 01.06.2024) (inaktiv)
 # REMOVED --- #: tempex: 20170630T2000-20170701T2359
 	2::temp 14161,11930 14274,12190
@@ -22458,7 +22459,7 @@ EOF
 #: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00 (inaktiv)
 #: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024) (inaktiv)
 #: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
-#: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025)
+#: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025) (inaktiv)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -33330,6 +33331,7 @@ EOF
 #: by[nocache]: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/verkauf-fur-1111-millionen-euro-geplant-zwei-weitere-signa-projekte-in-berlin-sind-insolvent-12120476.html
 #: by: https://www.presseportal.de/pm/163061/5863501 (Projekt P1; Fertigstellung bis Anfang 2027)
 #: by: https://www.quantum.ag/presseartikel/quantum-uebernimmt-berliner-projekt-p1
+#: by: https://entwicklungsstadt.de/zwischen-stillstand-und-neustart-wie-es-um-berlins-signa-projekte-steht/ (weiterhin bis Anfang 2027)
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="12"
@@ -33337,7 +33339,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2025-04-25
 #: check_frequency: 180d
-#: next_check: 2027-01-01 (presseportal website)
+#: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
 EOF
      },
@@ -34814,6 +34816,7 @@ EOF
 #: next_check_id: DRESDNERBAHN-2021
 #: by: https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
+#: osm_watch: way id="229990468" version="7"
 #: add_fragezeichen: Ist hier noch immer gesperrt?
 #: last_checked: 2025-01-08
 #: check_frequency: 120d
@@ -40492,7 +40495,7 @@ EOF
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-04-20 (mapillary)
+#: last_checked: 2025-05-11 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -42165,6 +42168,7 @@ EOF
        data  => <<EOF,
 #: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024) (inaktiv) (bis 31.12.2024) (inaktiv)
 #: source_id: 246001315 (bis 08.11.2024) (bis 31.12.2024) (bis 30.04.2025) (bis 06.06.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-05-2025-l30-bernau (Fertigstellung im Juni 2025)
 	2::inwork 23015,30519 23113,30450
 EOF
      },
@@ -43683,6 +43687,7 @@ EOF
 #: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024) (inaktiv)
 #: source_id: viz2021:13.57589,52.49118,22.04.2024,07:00 (bis 26.04.2024) (inaktiv)
 #: source_id: viz2021:13.57143,52.492403,21.10.2024,07:00 (hier nur Kfz-Verkehr, bis 01.11.2024) (inaktiv)
+#: source_id: viz2021:13.569868,52.492665,13.05.2025,07:00 (hier nur Kfz-Verkehr, bis 16.05.2025)
 # REMOVED ---	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
 # REMOVED --- Bergedorfer Str./An der Wuhle: Einbahnstraße	q4::inwork; 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592 21692,9727 21749,9856
 # REMOVED --- Tieflanfstr./Eschelberger Weg: Einbahnstraße	q4::inwork; 21842,9829 21822,9681 21954,9640 22116,9585
@@ -45934,11 +45939,11 @@ EOF
 EOF
      },
      { from  => 1731826800, # 2024-11-17 08:00, # 1729705680, # 1730012400, # 2024-10-27 08:00
-       until => 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
+       until => 1747075301, # 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
        text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.11.2024 08:00 Uhr bis 12.05.2026 16:00 Uhr', # verschoben?
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025)
+#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 EOF
      },
@@ -46491,7 +46496,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025) (bis 28.04.2025) (bis 23.05.2025)
-#: last_checked: 2025-03-26 (mapillary)
+#: last_checked: 2025-05-11 (mapillary)
 #: next_check: 2025-05-23 (VIZ-Verkehrsmeldung, evtl. wird verlängert?)
 # REMOVED --- #: next_check: 2025-06-30
 	q4::inwork; 11001,18528 11123,18343
@@ -47150,6 +47155,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/221-E/25/030 (bis 10.05.2025) (bis 16.05.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~08-05-2025-l200-zw-melchow-u-spechthausen
 	2::inwork 34802,45368 34613,45287 34518,45231 34093,44866 32572,43561 32518,43468 32401,42954 32348,42876 30754,42070
 EOF
      },
@@ -47589,7 +47595,7 @@ EOF
        data  => <<EOF,
 #: by: https://weddingweiser.de/wieder-kein-tramverkehr-monatelang/
 #: XXX ab wann? bereits ab dem 11.4.2025?
-#: last_checked: 2025-05-02 (mapillary)
+#: last_checked: 2025-05-10 (mapillary)
 #: check_frequency: 30d
 Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307 9474,16297 9458,16180 9446,16060
 EOF

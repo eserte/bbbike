@@ -624,7 +624,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2025-05-02 (mapillary)
+#: last_checked: 2025-05-10 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (infravelo)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -23371,7 +23371,8 @@ Hammerstr.: guter Asphalt	Q0- 1812,2160 1927,2570
 # 
 #: by: Ansgar Petters:
 #: confirmed_by: K. Rachner (mäßiger Asphalt, Q2)
-Heiligental: mäßiger Asphalt, Schlaglöcher	Q1- 5929,19574 5897,19668 5858,19761 5803,19874
+#: corrected_by: osm (mäßiger Asphalt, Schlaglöcher, Q1- -> ..., 2024/2025 neu gemacht)
+Heiligental: Verbundsteinpflaster	Q1+ 5929,19574 5897,19668 5858,19761 5803,19874
 # 
 #: by: Christian (wonnekneter)
 Kuhligkshofstr.: Asphalt	Q0 4991,5531 4905,5438 4851,5377 4813,5350
