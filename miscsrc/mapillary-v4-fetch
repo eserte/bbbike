@@ -155,6 +155,11 @@ if ($do_cache) {
 	*LWP::UserAgent::WithCache::set_cache = sub {
 	    my($self, $uri, $res) = @_;
 
+	    if ($res->header('X-Died')) {
+		warn "X-Died header encountered, do not write to cache...\n";
+		return;
+	    }
+
 	    my $expires = time + $cache_time;
 	    my $expires_formatted = HTTP::Date::time2str($expires);
 	    $res->header('Expires', $expires_formatted);
