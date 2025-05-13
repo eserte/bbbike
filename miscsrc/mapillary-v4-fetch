@@ -159,6 +159,10 @@ if ($do_cache) {
 		warn "X-Died header encountered, do not write to cache...\n";
 		return;
 	    }
+	    if ($res->header('Client-Aborted')) {
+		warn "Client-Aborted header encountered, do not write to cache...\n";
+		return;
+	    }
 
 	    my $expires = time + $cache_time;
 	    my $expires_formatted = HTTP::Date::time2str($expires);
