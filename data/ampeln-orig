@@ -20,17 +20,17 @@ Roelckestr./Große Seestr.: provisorische Ampel	X::inwork 13754,17133
 # REMOVED --- #: valid: -20250515
 Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
 # 
-#: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025)
+#: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025) (bis 22.05.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lnmh7lfw4k2j
-#: next_check: 2025-05-14 vvv
-#: valid: -20250514 vvv
+#: next_check: 2025-05-22 vvv
+#: valid: -20250522 vvv
 Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
 Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 17037,4794
 #: valid ^^^
 #: next_check ^^^
 # 
-#: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten)
-#: next_check: 2025-05-15
+#: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten) (bis 04.06.2025 + ...)
+#: next_check: 2025-06-04
 Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # 
 # REMOVED --- #: source_id: viz2021:13.202454,52.523618,18.03.2025,10:00 (bis 11.04.2025) (inaktiv)
@@ -46,10 +46,11 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 #: valid: -20250530
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
-#: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025)
+#: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025)
+#: source_id: viz2021:13.408041,52.512493,13.05.2025,13:14 (bis 20.05.2025)
 #: last_checked: 2025-04-28
-#: next_check: 2025-05-14
-#: valid: -20250514
+#: next_check: 2025-05-20
+#: valid: -20250520
 # REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
 # REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
 Neue Roßstr./Wallstr.	X::inwork 10722,11816
@@ -2823,7 +2824,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
@@ -3962,7 +3963,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
-#: osm_watch: note 4490020 1
+#: osm_watch: note 4490020 2
 #: last_checked: 2025-05-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208

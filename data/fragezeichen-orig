@@ -424,7 +424,7 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4963,7566
 #: source_id: 2147339938 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_91391 (möglicherweise inaktiv)
 #: source_id: viz2021:13.47342,52.481225,12.06.2023,09:00 (Kanalsanierung, bis 23.06.2023) (inaktiv)
-#: last_checked: 2025-04-15 (mapillary)
+#: last_checked: 2025-05-13
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
@@ -1551,7 +1551,7 @@ Mühlenstr.: Verbesserung der Radinfrastruktur -> evtl. Radspuren oder Asphaltier
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/umstrittener-radweg-durch-gemeindepark-wird-gebaut_a323963 (Bauarbeiten ab Mai 2022)
 #: XXX laut fixmyberlin "ready"; Anfang Juni 2022 waren keine Bauarbeiten sichtbar
 #: XXX Früher war geplant, Radroute B-L hier entlang zu führen, mittlerweile wurde die Radroute anders ausgeschildert (deshalb Erhöhung der check_frequency)
-#: osm_watch: way id="24971799" version="14"
+#: osm_watch: way id="24971799" version="15"
 #: last_checked: 2025-02-22
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 120d
@@ -1704,7 +1704,7 @@ Brandenburgische Str.: Radstreifen geplant (wo genau? oder die gesamte Strecke?)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/ehemaliger-fahr-rat-10-sitzung-am-24092019.pdf (außerdem Erwähnung eines Zweirichtungsradwegs bis zur Knesebeckstr.)
 #: osm_watch: way id="188441401" version="9"
 #: osm_watch: way id="171484595" version="15"
-#: osm_watch: way id="129621748" version="15"
+#: osm_watch: way id="129621748" version="16"
 #: source_id: 2147340011 (wahrscheinlich inaktiv)
 #: last_checked: 2025-04-25
 #: check_frequency: 90d
@@ -2111,9 +2111,9 @@ Marienpark: Straße geplant	?::projected 8163,3660 8116,3754
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 60d
-Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
+Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 13973,9465 13923,9405 13892,9365 13849,9310
 # 
 #: next_check_id: RUMMELSBURGERLANDSTR-2018
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
@@ -2296,7 +2296,7 @@ Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projec
 #: source_id: viz2021:13.328102,52.525936,28.01.2025,10:00 (Fahrbahninstandsetzung südl. der Turmstr., bis 30.04.2025) (inaktiv)
 #: osm_watch: way id="28497108" version="24"
 #: osm_watch: way id="1167737343" version="3"
-#: osm_watch: note 3933817 23
+#: osm_watch: note 3933817 24
 #: priority: #B
 #: note: mittlerweile (2024-11-28) Richtung Süden weitgehend markiert, ist aber insbesondere südlich der Turmstraße zugeparkt
 #: note: laut osm note "Anradeln" am 28.05.2025
@@ -3463,7 +3463,7 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14281,84
 #: next_check_id: BAB100-2022
 #: XXX offene Fragen: wird es eine Anbindung zum Bahndamm Richtung Görlitzer Park geben (angedacht ist es, aber wird vermutlich nicht zeitig realisiert werden)? wird es eine Anbindung zur Beermannstr. geben? wird es eine Anbindung zu Am Treptower Park geben (hier eher nicht, der Platz scheint nicht zu reichen)?
 #: XXX außerdem wird es auch einen Betriebsweg auf der westlichen Seite geben, aber das wird wohl eine Sackgasse sein
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 90d
 #: next_check: 2025-09-01 (Tsp)
 Betriebsweg Kiefholzstr. - Görlitzer Bahn/Beermannstr.	?::inwork 14137,8983 14173,9018 14144,9092 14129,9137 14117,9233 14082,9267 14088,9299 14131,9356 14135,9384 14119,9405 14131,9470
@@ -4887,7 +4887,7 @@ S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12
 #: check_frequency: 540d
 #: next_check: 2025-11-30
 Hindenburgdamm: Busspur zwischen Klingsorstr. und Händelplatz Richtung Norden war geplant	?; 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
-#: source_id: viz2021:13.253322,52.435257,31.03.2025,07:00 (Leitungsarbeiten bis 13.05.2025)
+#: source_id: viz2021:13.253322,52.435257,31.03.2025,07:00 (Leitungsarbeiten bis 13.05.2025) (bis 10.06.2025)
 #: osm_watch: way id="48988573" version="16"
 #: last_checked: 2025-04-23
 # REMOVED --- #: check_frequency: 30d
@@ -7762,21 +7762,21 @@ Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 1
 #: by: https://www.infravelo.de/projekt/am-treptower-park/ (2. Quartal 2025 - 3. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408769475/kein-geld-fuer-verkehrssicherheit-ost-bezirke-weisen-kritik-zurueck.html (Verzögerung, Umsetzung erst 2027-2028?)
 #: XXX mittlerweile wurde bereits im Zuge der Umgestaltung der Kreuzung Elsenstr./Am Treptower Park eine Radwegauffahrt gebaut; außerdem siehe provisorische Führung des Radverkehr Richtung Nordwesten
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (infravelo)
 Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 14031,9673 13860,9861
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: note: Radfahrer werden hier in beiden Richtungen überqueren dürfen; Richtung Nordwesten geht es weiter als Zweirichtungsradweg, zusätzlich zum normalen Radweg
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 60d
 Am Treptower Park: Bau einer Ampel	?::inwork 14244,9432 14242,9448 14239,9467
 # 
 #: next_check_id: TREPTOWERPARK-2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
 #: XXX Ist bei der Entsiegelung auch dieser Weg betroffen? Wird dieser Weg während der Bauarbeiten gesperrt sein? Mittlerweile: ein ca. 100m langer Abschnitt halbseitig gesperrt
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-11-01
 Treptower Park: Sanierung im südlichen Parkteil	?::projected 14318,9688 14316,9542 14347,9452 14398,9373 14382,9299
@@ -8496,8 +8496,8 @@ Brodowiner Ring - Hohensaatener Str.: Stadtplatz in Planung	? 22192,16165 22063,
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12810 (Anfrage)
 #: note: laut Mobilitätsrat Mitte wird die Maßnahme 2024 umgesetzt (siehe osm note)
 #: osm_watch: way id="4376904" version="23"
-#: osm_watch: note 3769887 10
-#: last_checked: 2025-04-01
+#: osm_watch: note 3769887 11
+#: last_checked: 2025-05-12 (osm note)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-03-01
 Helgoländer Ufer	? 6686,12768 6758,12681 6775,12661
@@ -8895,6 +8895,7 @@ Weichselstr.: Einbahnstraße für Kfz in Vorbereitung	? 14926,12129 14888,11934
 #: by: https://www.tagesspiegel.de/berlin/spatzen-brut-gewinnt-gegen-senat-gericht-bestatigt-abrisstopp-fur-jahnstadion-westtribune-13208161.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrich-ludwig-jahn-sportpark.734/#post-24561
 #: by: https://entwicklungsstadt.de/artenschutz-ignoriert-kritik-an-baumfaellungen-im-jahnsportpark/
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1558841.php (Beschluss des Bebauungsplans 3-87)
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: last_checked: 2025-03-29 vvv
@@ -10258,7 +10259,7 @@ Bebauungsplan 6-33 (Fubic): hier entstehen Straßen und Wege	?::projected 3357,47
 #: XXX - Willy-Brandt-Weg
 #: osm_watch: relation id="15676321" version="2"
 #: osm_watch: way id="34036043" version="27"
-#: osm_watch: way id="126600479" version="14"
+#: osm_watch: way id="126600479" version="17"
 #: osm_watch: node id="12161923827" version="1"
 # REMOVED --- #: osm_watch: node id="2429027268" version="2"
 #: osm_watch: node id="2429051385" version="1"
@@ -11039,7 +11040,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 2
 Uferweg geplant	?::projected 12010,11545 11962,11596
-#: osm_watch: way id="124182482" version="9"
+#: osm_watch: way id="124182482" version="10"
 Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -11071,6 +11072,7 @@ Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 #: by: https://entwicklungsstadt.de/neubauquartier-in-marzahn-hellersdorf-planverfahren-fuer-georg-knorr-park-laeuft/
 #: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1557147.php
 #: by: https://datenbox.stadt-berlin.de/filr/public-link/file-download/8a8ae3ac95d6e94e0196a59351e50294/46599/-648915032502042839/00-01_B-Plan%20XXI-22-2_Planzeichnung.pdf (eine private Verkehrsfläche im NW-Teil sowie Geh-/Radweg in W-O-Richtung)
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1559097.php (Beteiligung zum B-Plan XXI-22-2)
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2024-05-24 (mapillary)
 #: check_frequency: 720d
@@ -11252,7 +11254,7 @@ S-Bhf. Zehlendorf: neuer Zugang am Postplatz geplant	?::projected 644,2622 660,2
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
 #: XXX fehlt bei Berlin.coords.data (laut LOR und DPAG-Mitteilungsblatt PLZ=13059)
 #: XXX geplante neue Privatstraße
-#: osm_watch: way id="1041951087" version="3"
+#: osm_watch: way id="1041951087" version="4"
 #: last_checked: 2025-04-20
 #: check_frequency: 180d
 Zum Wartenberger Anger: genaue Lage, Qualität?	?::inwork 17713,18971 17687,18846 17753,18835 17813,18933
@@ -11725,11 +11727,12 @@ An der Kanalbrücke: befindet sich hier die Straße? Qualität?	? -18547,4524 -1847
 #: by: https://berliner-abendblatt.de/berlin-news/herta-mueller-exilmuseum-ist-verpflichtung-fuer-deutschland-id214221
 #: by: https://berliner-abendblatt.de/berlin-news/sechs-meter-hoher-turm-informiert-ueber-geplantes-exilmuseum-id227916
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/exilmuseum-berlin.951/#post-21587
-#: by: https://stiftung-exilmuseum.berlin/de/der-neubau/der-neubau (Baugenehmigung 2024, Eröffnung 2028) (mittlerweile wird mit der Baugenehmigung 2025 gerechnet)
+#: by: https://stiftung-exilmuseum.berlin/de/der-neubau/der-neubau (Baugenehmigung 2024, Eröffnung 2028) (mittlerweile wird mit der Baugenehmigung 2025 gerechnet) (keine Termine mehr)
+#: by: https://entwicklungsstadt.de/exilmuseum-berlin-ruth-ur-uebernimmt-leitung-museumsneubau-verzoegert/ (kein konkreter Zeitplan mehr)
 #: XXX Bebauungsplan VI-150g-1-1
 #: last_checked: 2025-01-31
-#: check_frequency: 300d
-#: next_check: 2028-03-15
+#: check_frequency: 720d
+#: next_check: 2028-03-15 (früheres Datum bei stiftung-exilmuseum.berlin) 
 Exilmuseum: in Planung, evtl. gibt es Änderungen an den Wegen/Straßen	?::projected 8916,10855 8947,10815 8987,10821
 # 
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/bau-der-u3-verlaengerung-soll-noch-in-dieser-legislatur-begonnen-werden_a349457

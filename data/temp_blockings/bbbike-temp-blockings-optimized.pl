@@ -792,16 +792,16 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
        {
          'data' => '#: source_id: IM_003134 (2006, inaktiv)
 # REMOVED (2006) ---	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
-#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025) (bis 13.05.2025)
+#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025) (bis 13.05.2025) (bis 06.06.2025)
 #: source_id: viz2021:13.48439,52.5128,29.04.2025,09:00 (bis 09.05.2025) (inaktiv)
 #: note: laut rbb weitere Arbeiten im Anschluss
 	q4::inwork 15863,11992 15871,12060
 ',
          'from' => 1745823600,
          'id' => 617,
-         'text' => 'Ruschestr.: Anbindung Frankfurter Allee gesperrt, vom 29.04.2025 09:00 bis 13.05.2025 17:00',
+         'text' => 'Ruschestr.: Anbindung Frankfurter Allee gesperrt, vom 29.04.2025 09:00 bis 06.06.2025 17:00',
          'type' => 'gesperrt',
-         'until' => 1747148400
+         'until' => 1749222000
        },
        undef,
        undef,
@@ -3943,38 +3943,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: STAATSBESUCH-HARDENBERGSTR
-#: next_check_id: STAATSBESUCH-WALDORFASTORIA
-#: by: https://viz.berlin.de/2023/03/staatsbesuch/
-#: by: https://berliner-abendblatt.de/berlin-news/israels-ministerpraesident-in-berlin-grosses-polizeiaufgebot-id212454
-#: by: https://nitter.net/DasBoes/status/1636082561859350528#m (die Joachimsthaler ist entgegen der Karte in beiden Richtungen gesperrt)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_24_1479_1538_online.pdf
-#: by: https://www.tagesspiegel.de/berlin/grosse-verkehrseinschrankungen-in-berlin-erwartet-hohe-sicherheitsstufe-fur-ukraine-wiederaufbaukonferenz--polizei-im-grosseinsatz-11787479.html
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staatsbesuch-aenderungen-auf-bvg-linien_a417820
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1800101801108336978
-#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zur-ukraine-wiederaufbaukonferenz/ (2024-06)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
-#: by: https://www.tagesspiegel.de/berlin/israelischer-staatsprasident-besucht-berlin-verkehrseinschrankungen-am-sonntag-und-montag-in-mitte-und-charlottenburg-13667389.html
-#: source_id: viz2021:13.322084,52.512028,10.06.2024,13:00 (hier bereits ab Ernst-Reuter-Platz (bei rbb: Anlieger frei), bis 12.06.2024) (inaktiv)
-#: source_id: viz2021:13.331732,52.505347,10.06.2024,13:00 (bis 12.06.2024) (inaktiv)
-#: note: um das Hotel Waldorf Astoria herum
-# REMOVED (diesmal nicht) --- Hardenbergstr.	2::temp 5459,11135 5542,11075
-Hardenbergstr.	2::temp 5542,11075 5652,11004
-Kantstr.	2::temp 5652,11004 5613,10963 5488,10978
-# REMOVED (diesmal nicht) --- Joachimsthaler südl. Kantstr.	2::temp 5488,10978 5475,10808
-Budapester Str.	2::temp 5652,11004 5716,10978
-# REMOVED (diesmal nicht) --- Kantstr. westl. Joachimsthaler Str.	2::temp 5373,10981 5488,10978
-Joachimsthaler Str.	2::temp 5488,10978 5542,11075
-# REMOVED (diesmal nicht) --- Hardenbergplatz	3 5600,11114 5542,11075 5560,11124
-# REMOVED (diesmal nicht) ---	3 5560,11124 5542,11075 5600,11114
-',
-         'from' => 1746828000,
-         'id' => 2769,
-         'text' => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 11. Mai 2025, 20:00 Uhr bis zum 13. Mai 2025, 09:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1747119600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4450,27 +4419,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: STAATSBESUCH-BELLEVUE
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf
-#: by: https://www.berlin.de/polizei/polizeimeldungen/2024/pressemitteilung.1494791.php
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
-	2::temp 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320 6689,12632
-	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
-	3 7122,12384 7051,12426 6859,12567
-	3 6859,12567 7051,12426 7122,12384
-#: note: hier lagen Mitte Oktober 2024 Absperrgitter, evtl. in Vorbereitung auf den Staatsbesuch?
-	2::temp 6813,12617 6808,12604 6859,12567 7051,12426
-Bellevueallee (Zufahrt Spreeweg gesperrt)	2::temp 7031,12320 7383,12095
-Bremer Weg (Zufahrt zum Großen Stern gesperrt)	2::temp 6550,11954 6642,12010
-Bremer Weg (Zufahrt zum Großen Stern gesperrt)	2::temp 6884,12006 6828,12031
-',
-         'from' => 1746914400,
-         'id' => 3023,
-         'text' => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 12. Mai 2025 von 7.00 Uhr bis 24.00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1747087200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4495,7 +4444,7 @@ Bremer Weg (Zufahrt zum Großen Stern gesperrt)	2::temp 6884,12006 6828,12031
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-04-13 vvv
+#: last_checked: 2025-05-13 vvv
 #: check_frequency: 30d vvv
 entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171 15154,9106 15190,9027
 Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
@@ -6048,7 +5997,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
 #: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024) (inaktiv)
 #: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025)
+#: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025) (bis 04.06.2025)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -6064,9 +6013,9 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 ',
          'from' => 1736839577,
          'id' => 3605,
-         'text' => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 15.05.2025',
+         'text' => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 04.06.2025',
          'type' => 'handicap',
-         'until' => 1747321200
+         'until' => 1749049200
        },
        undef,
        undef,
@@ -6352,14 +6301,14 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025)
-#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.04.2025)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025) (bis 19.09.2025)
+#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.04.2025) (bis 19.09.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025) (inaktiv)
 #: note: mittlerweile kann man hier eigentlich ganz gut fahren (deshalb nun Konjunktiv im Text)
-#: last_checked: 2025-04-26 vvv
+#: last_checked: 2025-05-13 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2025-05-17 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-09-19 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
 # REMOVED (mittlerweile ist das Absperrgitter weg) --- #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18) --- Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
@@ -6502,7 +6451,7 @@ nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::i
 #: last_checked: 2025-04-17 (osm note) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-10-31 vvv
-#: osm_watch: way id="46907541" version="16"
+#: osm_watch: way id="46907541" version="17"
 #: osm_watch: way id="1116849053" version="4"
 	2::inwork 3980,2102 4064,2293 4209,2641 4220,2664
 #: osm_watch: way id="77098244" version="19"
@@ -9356,14 +9305,15 @@ Mollstr.: verschmutzte Fahrbahn	q3::inwork; 11913,13077 11841,13087
        },
        {
          'data' => '#: source_id: viz2021:13.332624,52.455792,05.05.2025,08:25 (bis 14.05.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.332647,52.456942,14.05.2025,09:00 (bis 14.07.2025 + weitere Arbeiten)
 	q4::inwork 5588,5579 5675,5573
 	q4::inwork 5673,5664 5587,5655
 ',
          'from' => 1746339900,
          'id' => 4321,
-         'text' => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, vom 05.05.2025 08:25 bis 14.05.2025 17:00',
+         'text' => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, vom 05.05.2025 08:25 bis 14.07.2025 17:00',
          'type' => 'handicap',
-         'until' => 1747234800
+         'until' => 1752505200
        },
        {
          'data' => '#: source_id: viz2021:13.273769,52.482217,05.05.2025,07:00 (bis 23.05.2025)
@@ -9459,6 +9409,32 @@ Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,1
          'text' => 'Grünzug Rudolf-Seiffert-Straße: wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: http://spielstraßen.de/uebersicht.php?date=20250512
+	q4::temp::play 3320,11583 3287,11846
+',
+         'from' => 1747951200,
+         'id' => 4332,
+         'recurring' => 1,
+         'text' => 'Fritschestr.: zwischen Zillestr. und Gewerbehof samstags von 14 bis 18 Uhr temporäre Spielstraße, vom 24. Mai 2025 bis zum 21. Juni 2025',
+         'type' => 'handicap',
+         'until' => 1750543199
+       },
+       {
+         'data' => '#: source_id: viz2021:13.402728,52.516282,13.05.2025,09:00 (bis 14.05.2025)
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250512 (Sperrung am 13.5.2025 09:00-18:00 Uhr, sowie am 14.5.2025 von 06:00-17:00 Uhr)
+#: by: https://www.bmvg.de/de/aktuelles/mehr-als-1000-teilnehmer-zu-un-peacekeeping-ministerial-erwartet-5937272 (vermutete Veranstaltung; im Auswärtigen Amt)
+#: note: Die Spandauer Str. wurde als Parkplatzfläche benutzt, Polizeiautos haben die Einfahrt in die Straße versperrt, unklar, ob Radfahrer durchgekommen wären.
+Französische Str. - Rathausstr.	2::temp 9972,12184 10029,12208 10091,12232 10109,12238 10174,12284 10199,12251 10285,12306 10357,12356 10416,12394 10475,12438 10580,12513 10599,12526
+Breite Str.	2::temp 10285,12306 10383,12191 10480,12077 10512,12039
+Spandauer Str.	2::temp 10687,12421 10646,12470 10599,12526 10542,12587 10431,12709
+',
+         'from' => 1747033200,
+         'id' => 4333,
+         'text' => 'Französische Str., Schlossplatz, Breite Str., Rathausstr. und Spandauer Straße: Sperrung (Sicherheitskonferenz), evtl. sind auch Radfahrer betroffen, am 14.05.2025 von 06:00 bis 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1747234800
        }
      
 );

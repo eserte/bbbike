@@ -1336,7 +1336,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-05-05 vvv
+#: last_checked: 2025-05-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3128,7 +3128,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3150,18 +3150,17 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552
 	RW2; 14101,9794 14196,9749
 #: note ^^^
 	RW1; 14196,9749 14101,9794 13999,9842
-#: note: früher (vor 2020?) Mo-Fr 6-20 Uhr und Sa 8-14 Uhr vvv
-Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei	RW5; 13892,9365 13923,9405 13973,9465
-Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei; die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW5; 13973,9465 14089,9610
-#: note ^^^
+#: note: früher (vor 2020?) Mo-Fr 6-20 Uhr und Sa 8-14 Uhr
+Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei	RW5; 13892,9365 13923,9405 13973,9465 14060,9574
+asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: XXX früherer Eintrag, wird vielleicht wieder hergestellt: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0;
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
-provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 13973,9465
+provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 13973,9465
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
@@ -6374,12 +6373,12 @@ Grünbeschichtung	RW3; 5370,6486 5424,6584 5533,6753 5604,6870
 	RW6;RW6 3382,2216 3385,2341 3387,2473
 # 
 # REMOVED (alle Schilder hängen (auch wenn das letzte Zone-30-Schild noch nicht weg ist) --- #: next_check_id: HANDJERY-2023 --- #: by: http://www.berliner-woche.de/friedenau/verkehr/handjerystrasse-als-fahrradstrasse-d143459.html --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf ("derzeit nicht lösbar") --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (noch in Diskussion, vielleicht erstmal nur im südlichen Abschnitt am Sarrazinstr.?) --- #: by: https://www.berliner-woche.de/friedenau/c-verkehr/links-vor-rechts-und-poller-gegen-autos_a193594 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf --- #: by: https://api.fixmyberlin.de/api/projects/390 (planning, construction_completed: 2020) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.986631.php (Verkehrszählungen) --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/verkehrszaehlung-fuer-fahrradstrassen_a286312 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf --- #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Markierungsarbeiten im Frühjahr 2021 beauftragt) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8081 (Antrag) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8108 (Antrag) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-17-06-2021.pdf (Erwähnung) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8268 (Antrag) --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/sichere-handjerystrasse-fuer-alle_a346349 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217068.php (Informationsveranstaltung) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2022_02_22_protokoll_i._fahrrat_wp_xxi_mit_anhang.pdf --- #: by: https://berliner-abendblatt.de/2022/06/16/infotermine-zur-neuen-fahrradstrasse/ --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/artikel.1204994.php --- #: by: https://www.berliner-woche.de/friedenau/c-verkehr/infos-zur-neuen-fahrradstrasse_a349442 --- #: by: https://www.berliner-woche.de/friedenau/c-verkehr/handjerystrasse-wird-neu-aufgeteilt-proteste-gegen-parkplatzwegfall_a351707 (Bauarbeiten ab Herbst 2022 im nördlichen Bereich) --- #: by: https://www.infravelo.de/projekt/handjerystrasse/ (4. Quartal 2022 - 2. Quartal 2023) (1. Quartal 2023 - 3. Quartal 2023) (2. Quartal 2023 - 3. Quartal 2023) (3. Quartal 2023 - 3. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 1. Quartal 2024) (bis 2. Quartal 2024) --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/faktencheck-handjerystrasse_a356267 --- #: by: https://www.berliner-woche.de/friedenau/c-verkehr/handjerystrasse-antrag-abgelehnt_a356942 --- #: by: https://berliner-abendblatt.de/2022/09/08/handjerystrasse-wird-ab-herbst-zur-fahrradstrasse/ (nördlich Renée-Sintenis-Platz im Herbst 2022, südlich 2023) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4939 (Antrag) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8484 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6623 (Mitteilung zur Kenntnisnahme) --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/in-friedenau-ignorieren-spd-cdu-und-fdp-das-mobilitaetsgesetz_a360809 --- #: by: https://www.berliner-woche.de/friedenau/c-verkehr/mehr-parkplaetze-bleiben-erhalten_a360608 --- #: by: https://berliner-abendblatt.de/2022/10/18/fahrradstrasse-in-friedenau-kippt-das-verkehrsprojekt/ --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/parkplaetze-wichtiger-als-verkehrssicherheit_a363665 --- #: by: https://berliner-abendblatt.de/2022/11/14/fahrradstrasse-in-friedenau-radlobby-demonstriert-gegen-mogelpackung/ --- #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/spd-aengstlichkeit-statt-mobilitaetswende_a365864 --- #: by: https://www.berliner-woche.de/friedenau/c-verkehr/bundestagsabgeordneter-kritisiert-wegfall-von-parkplaetzen-an-der-handjerystrasse_a382441 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1372587.php (Bauarbeiten 23.10.2023 bis zum 04.11.2023) --- #: by: https://www.berliner-woche.de/friedenau/c-verkehr/umgestaltung-zur-fahrradstrasse_a395575 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9004 (Anfrage --- wird der verkehrsberuhigte Bereich wegfallen?) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-1-fahrrat-2024.pdf ("Amtshilfe") --- #: XXX wird auch der Abschnitt nördlich der Varziner Str. ausgeschildert? --- #: osm_watch: way id="83030876" version="25" --- #: osm_watch: way id="133988476" version="25" --- #: osm_watch: way id="1122482150" version="8" --- #: osm_watch: note 4082305 2 --- #: last_checked: 2024-03-22 --- #: check_frequency: 30d --- #: next_check: 2024-06-30
-	RW7;RW7 5630,7875 5632,8024
-	RW7;RW7 5636,7734 5632,7821 5630,7875
+	RW7;RW7 5635,7868 5632,8024
+	RW7;RW7 5636,7734 5635,7820 5635,7868
 #: historical_note: bis November/Dezember 2023 verkehrsberuhigter Bereich
-	RW7;RW7 5635,7660 5636,7685 5635,7718 5636,7734
-	RW7;RW7 5642,7255 5641,7332 5640,7435 5636,7540 5635,7660
-	RW7;RW7 5642,7255 5624,7244 5614,7223 5621,7204 5641,7189 5661,7202 5675,7224 5664,7244 5642,7255
+	RW7;RW7 5636,7660 5636,7685 5636,7718 5636,7734
+	RW7;RW7 5639,7253 5638,7332 5637,7435 5636,7540 5636,7660
+	RW7;RW7 5639,7253 5624,7244 5614,7223 5621,7204 5641,7189 5661,7202 5675,7224 5664,7244 5639,7253
 	RW7;RW7 5565,7024 5624,7113 5641,7189
 	RW7;RW7 5565,7024 5478,6959 5384,6933 5357,6932
 # 

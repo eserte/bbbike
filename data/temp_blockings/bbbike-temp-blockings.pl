@@ -3994,7 +3994,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002505',
        data  => <<EOF,
-	2 5810,7337 5641,7332
+	2 5810,7337 5638,7332
 EOF
      },
      { from  => 1141765814, # 2006-03-07 22:10
@@ -4003,7 +4003,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002505',
        data  => <<EOF,
-	1 5364,7330 5641,7332
+	1 5364,7330 5638,7332
 EOF
      },
      { from  => 1142118000, # 2006-03-12 00:00
@@ -5489,14 +5489,14 @@ EOF
 EOF
      },
      { from  => 1745823600, # 2025-04-28 09:00, # 1160591740, # 2006-10-11 20:35
-       until => $isodate2epoch->("2025-05-13 17:00:00"), # 1746802800, # 2025-05-09 17:00, # 1161208800, # 2006-10-19 00:00
+       until => $isodate2epoch->("2025-06-06 17:00:00"), # 1746802800, # 2025-05-09 17:00, # 1161208800, # 2006-10-19 00:00
 #      text  => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Fahrtrichtung gesperrt (bis 18.10.06)',
-       text  => 'Ruschestr.: Anbindung Frankfurter Allee gesperrt, vom 29.04.2025 09:00 bis 13.05.2025 17:00',
+       text  => 'Ruschestr.: Anbindung Frankfurter Allee gesperrt, vom 29.04.2025 09:00 bis 06.06.2025 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: IM_003134 (2006, inaktiv)
 # REMOVED (2006) ---	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
-#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025) (bis 13.05.2025)
+#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025) (bis 13.05.2025) (bis 06.06.2025)
 #: source_id: viz2021:13.48439,52.5128,29.04.2025,09:00 (bis 09.05.2025) (inaktiv)
 #: note: laut rbb weitere Arbeiten im Anschluss
 	q4::inwork 15863,11992 15871,12060
@@ -24173,7 +24173,7 @@ EOF
        data  => <<EOF,
 #: source_id: IM_022405
 #: note: Gehweg ist hier relativ breit
-	q3::inwork; 14089,9610 13973,9465 13923,9405
+	q3::inwork; 14089,9610 14060,9574 13973,9465 13923,9405
 	q4::inwork; 13923,9405 13892,9365 13849,9310 13766,9200
 	q4::inwork; 13489,9456 13602,9581 13642,9624 13704,9691 13860,9861
 EOF
@@ -24878,7 +24878,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
-	q4::inwork 5635,7660 5636,7540
+	q4::inwork 5636,7660 5636,7540
 EOF
      },
      { from  => 1416086295, # 2014-11-15 22:18
@@ -27782,13 +27782,13 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::bomb 5472,8024 5363,8024
-	2::bomb 5501,8253 5560,8204 5631,8141 5632,8024 5630,7875
-	2::bomb 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5812,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
+	2::bomb 5501,8253 5560,8204 5631,8141 5632,8024 5635,7868
+	2::bomb 5492,7543 5606,7651 5636,7660 5636,7540 5812,7536 5812,7662 5636,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
 	2::bomb 6241,7428 6239,7600 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6293,7875 6376,7944 6418,7958
 	2::bomb 5570,7939 5570,8024 5522,8024
 	2::bomb 5913,8415 5917,8351 5918,8221 5730,8207 5700,8241 5687,8280 5699,8308
 	2::bomb 6333,7708 6352,7523
-	2::bomb 5957,7773 5813,7774 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718 5636,7734 5632,7821 5630,7875 5517,7869 5511,7841 5636,7734
+	2::bomb 5957,7773 5813,7774 5812,7721 5772,7709 5722,7720 5685,7719 5636,7718 5636,7734 5635,7820 5635,7868 5517,7869 5511,7841 5636,7734
 	2::bomb 6163,7237 6166,7599 6166,7658 6144,7677 6118,7688 5956,7686 5812,7685
 	2::bomb 5560,8204 5519,8159 5521,8087 5522,8024 5472,8024 5471,7915
 	2::bomb 5660,8366 5652,8234 5651,8218 5631,8141 5808,8124 5801,8031 5697,8027 5632,8024 5570,8024
@@ -27797,7 +27797,7 @@ EOF
 	2::bomb 6271,7733 6332,7721 6410,7722
 	2::bomb 6289,7472 6272,7645
 	2::bomb 6181,8181 6257,8078 6261,8058 6260,8011 6388,7999 6333,7927 6293,7875
-	2::bomb 5636,7685 5635,7718
+	2::bomb 5636,7685 5636,7718
 	2::bomb 5458,7866 5492,7868 5517,7869
 	2::bomb 5911,8042 5801,8031
 	2::bomb 5651,8218 5730,8207
@@ -29392,7 +29392,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-04-13 vvv
+#: last_checked: 2025-05-13 vvv
 #: check_frequency: 30d vvv
 entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171 15154,9106 15190,9027
 Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
@@ -30881,9 +30881,9 @@ EOF
 #: also_indoor: traffic
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten in der Handjerystraße bereits beendet? vvv --- #: priority: #A vvv --- #: last_checked: 2019-12-08 vvv --- #: check_frequency: 14d vvv
 # REMOVED (nicht mehr) --- #: note: hier gibt's mittlerweile auch Drängelgitter
-	q3::inwork 5636,7734 5632,7821 5630,7875
-# REMOVED ---	q3::inwork 5630,7875 5632,8024
-# REMOVED (keine großen Einschränkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
+	q3::inwork 5636,7734 5635,7820 5635,7868
+# REMOVED ---	q3::inwork 5635,7868 5632,8024
+# REMOVED (keine großen Einschränkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5635,7868 5517,7869
 # REMOVED --- #: last_checked ^^^ --- #: check_frequency ^^^ --- #: priority ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
@@ -31610,7 +31610,7 @@ EOF
 # REMOVED --- #: next_check_id: PERELSPLATZ-2019 --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: last_checked: 2019-12-22 --- #: next_check: 2020-01-31
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.992535.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1072925.php (Teilöffnung)
-	2::inwork 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718
+	2::inwork 5812,7721 5772,7709 5722,7720 5685,7719 5636,7718
 EOF
      },
      { from  => 1713119808, # 1576623600, # 2019-12-18 00:00
@@ -37337,16 +37337,16 @@ Mauerstr.	2::temp 9171,11777 9138,11872
 EOF
      },
      { from  => 1736839577, # 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2025-05-15 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       until => $isodate2epoch->("2025-06-04 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
 #      text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 08.03.2024',
-       text  => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 15.05.2025',
+       text  => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 04.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
 #: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024) (inaktiv)
 #: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025)
+#: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025) (bis 04.06.2025)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -38428,14 +38428,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025)
-#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.04.2025)
+#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025) (bis 19.09.2025)
+#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.04.2025) (bis 19.09.2025)
 #: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
 #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025) (inaktiv)
 #: note: mittlerweile kann man hier eigentlich ganz gut fahren (deshalb nun Konjunktiv im Text)
-#: last_checked: 2025-04-26 vvv
+#: last_checked: 2025-05-13 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2025-05-17 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-09-19 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
 # REMOVED (mittlerweile ist das Absperrgitter weg) --- #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18) --- Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
@@ -39136,7 +39136,7 @@ EOF
 #: last_checked: 2025-04-17 (osm note) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-10-31 vvv
-#: osm_watch: way id="46907541" version="16"
+#: osm_watch: way id="46907541" version="17"
 #: osm_watch: way id="1116849053" version="4"
 	2::inwork 3980,2102 4064,2293 4209,2641 4220,2664
 #: osm_watch: way id="77098244" version="19"
@@ -41339,7 +41339,7 @@ EOF
      },
      { from  => 1718044283, # 1691899200, # 2023-08-13 06:00
        until => $isodate2epoch->("2024-09-20 18:00:00"), # 1692374400, # 2023-08-18 18:00
-       #text  => 'Schillerstr.: Bauarbeiten zwischen Fritschestr. und Kaiser-Friedrich-Str., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 18.08.2023 18:00',
+#      text  => 'Schillerstr.: Bauarbeiten zwischen Fritschestr. und Kaiser-Friedrich-Str., evtl. sind auch Radfahrer betroffen, vom 14.08.2023 06:00 bis 18.08.2023 18:00',
        text  => 'Fritschestr.: Bauarbeiten zwischen Schillerstr. und Pestalozzistr., evtl. sind auch Radfahrer betroffen, vom 10.06.2024 07:00 bis 20.09.2024 18:00',
        type  => 'handicap',
        data  => <<EOF,
@@ -41978,9 +41978,9 @@ EOF
 #: next_check_id: HANDJERY-2023
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1372587.php
 # REMOVED --- #: XXX Baustelle wandert --- #: next_check: 2023-11-01
-# bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5630,7875 5632,7821 5636,7734 5635,7718 5636,7685 5635,7660
-# bis Albestr. (25.-26.10.2023)	q4::inwork 5635,7660 5636,7540 5640,7435
-# bis Renée-Sintenis-Platz (27.-28.10.2023)	q4::inwork 5640,7435 5641,7332 5642,7255
+# bis Sarrazinstr. (23.-24.10.2023)	q4::inwork 5635,7868 5635,7820 5636,7734 5636,7718 5636,7685 5636,7660
+# bis Albestr. (25.-26.10.2023)	q4::inwork 5636,7660 5636,7540 5637,7435
+# bis Renée-Sintenis-Platz (27.-28.10.2023)	q4::inwork 5637,7435 5638,7332 5639,7253
 # bis Schmiljanstr. (30.10.-01.11.2023)	q4::inwork 5641,7189 5624,7113 5565,7024
 bis Bundesallee (02.-04.11.2023)	q4::inwork 5565,7024 5478,6959 5384,6933 5357,6932
 EOF
@@ -44994,7 +44994,7 @@ EOF
 #: source_id: viz2021:13.33276,52.47726,05.08.2024,07:00 (bis 25.10.2024) (inaktiv)
 #: also_indoor: traffic (H,G,B,T,W)
 # REMOVED (nein, nur der MIV) --- #: add_fragezeichen: Sind Radfahrer und Fußgänger von der Sperrung betroffen?
-	2::inwork 5630,7875 5632,8024
+	2::inwork 5635,7868 5632,8024
 EOF
      },
      { from  => undef, # 
@@ -47561,11 +47561,12 @@ EOF
 EOF
      },
      { from  => 1746339900, # 2025-05-04 08:25
-       until => 1747234800, # 2025-05-14 17:00
-       text  => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, vom 05.05.2025 08:25 bis 14.05.2025 17:00',
+       until => $isodate2epoch->("2025-07-14 17:00:00"), # 1747234800, # 2025-05-14 17:00
+       text  => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, vom 05.05.2025 08:25 bis 14.07.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.332624,52.455792,05.05.2025,08:25 (bis 14.05.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.332647,52.456942,14.05.2025,09:00 (bis 14.07.2025 + weitere Arbeiten)
 	q4::inwork 5588,5579 5675,5573
 	q4::inwork 5673,5664 5587,5655
 EOF
@@ -47623,9 +47624,9 @@ EOF
        text  => 'Straße der Pariser Kommune: zwischen An der Ostbahn und Am Ostbahnhof gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.05.2025 06:00 bis 13.05.2025 18:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: bvg2024:240#HIM_FREETEXT_280487 (2025-05-08 06:00:00 - ...)
-#: source_id: viz2021:13.436364,52.509832,08.05.2025,06:00 (nur Kfz-Verkehr betroffen, bis 13.05.2025)
-#: source_id: viz2021:13.43703,52.51043,08.05.2025,06:00 (hier ohne Verkehrsarten, bis 13.05.2025)
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_280487 (2025-05-08 06:00:00 - ...)
+#: source_id: viz2021:13.436364,52.509832,08.05.2025,06:00 (nur Kfz-Verkehr betroffen, bis 13.05.2025) (inaktiv)
+#: source_id: viz2021:13.43703,52.51043,08.05.2025,06:00 (hier ohne Verkehrsarten, bis 13.05.2025) (inaktiv)
 #: by: https://fahrinfo.vbb.de/him-uploads/1745928597870_Kartenausschnitt_Strasse_der_Pariser_Kommune.png
 #: by: https://www.deutschebahn.com/de/presse/presse-regional/pr-berlin-de/aktuell/presseinformationen/Rote-Riesen-Bruecke-am-Ostbahnhof-wird-demontiert-Strassensperrungen-und-Fahrplanaenderungen-13373260 (weitere Sperrungen in den Tagen danach, angeblich nur für "KFZ")
 # REMOVED (von Norden explizit für Radfahrer frei, allerdings muss man mach der Brücke auf den linken Gehweg rauf, von Süden weiterhin der getrennte Rad/Gehweg gültig) --- #: last_checked: 2025-05-06 --- #: next_check: 2025-05-08
@@ -47681,6 +47682,31 @@ EOF
 #: check_frequency: 21d
 #: next_check: 2025-06-30 (Baustellenschild)
 	2::inwork 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
+EOF
+     },
+     { from  => 1747951200, # 2025-05-23 00:00
+       until => 1750543199, # 2025-06-21 23:59
+       text  => 'Fritschestr.: zwischen Zillestr. und Gewerbehof samstags von 14 bis 18 Uhr temporäre Spielstraße, vom 24. Mai 2025 bis zum 21. Juni 2025',
+       type  => 'handicap',
+       recurring => 1,
+       data  => <<EOF,
+#: by: http://spielstraßen.de/uebersicht.php?date=20250512
+	q4::temp::play 3320,11583 3287,11846
+EOF
+     },
+     { from  => 1747033200, # 2025-05-12 09:00
+       until => 1747234800, # 2025-05-14 17:00
+#      text  => 'Französische Str., Schlossplatz, Breite Str., Rathausstr. und Spandauer Straße: Sperrung (Sicherheitskonferenz), evtl. sind auch Radfahrer betroffen, vom 13.05.2025 09:00 bis 14.05.2025 17:00',
+       text  => 'Französische Str., Schlossplatz, Breite Str., Rathausstr. und Spandauer Straße: Sperrung (Sicherheitskonferenz), evtl. sind auch Radfahrer betroffen, am 14.05.2025 von 06:00 bis 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.402728,52.516282,13.05.2025,09:00 (bis 14.05.2025)
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250512 (Sperrung am 13.5.2025 09:00-18:00 Uhr, sowie am 14.5.2025 von 06:00-17:00 Uhr)
+#: by: https://www.bmvg.de/de/aktuelles/mehr-als-1000-teilnehmer-zu-un-peacekeeping-ministerial-erwartet-5937272 (vermutete Veranstaltung; im Auswärtigen Amt)
+#: note: Die Spandauer Str. wurde als Parkplatzfläche benutzt, Polizeiautos haben die Einfahrt in die Straße versperrt, unklar, ob Radfahrer durchgekommen wären.
+Französische Str. - Rathausstr.	2::temp 9972,12184 10029,12208 10091,12232 10109,12238 10174,12284 10199,12251 10285,12306 10357,12356 10416,12394 10475,12438 10580,12513 10599,12526
+Breite Str.	2::temp 10285,12306 10383,12191 10480,12077 10512,12039
+Spandauer Str.	2::temp 10687,12421 10646,12470 10599,12526 10542,12587 10431,12709
 EOF
      },
     );

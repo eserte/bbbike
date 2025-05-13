@@ -111,7 +111,7 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -1221,7 +1221,7 @@ Eisenacher Str.: Umweg ¸ber Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 #: osm_watch: note 4610083 1
 #: note: L‰nge der Engstelle etwa 40m
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2025-01-26 (architektur-urbanistik)
+#: last_checked: 2025-05-13 (daf)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
@@ -1996,7 +1996,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 #: check_frequency: 30d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -2325,7 +2325,7 @@ Teltowkanalpromenade: eng, nicht anh‰ngertauglich	q2 2079,-12 1924,-188 1593,-31
 (Eitelstr. - Bahnhof Lichtenberg): Fuﬂg‰nger	q3 16717,11604 16759,11579
 Bennigsenstr.: enge Straﬂe	q0- 5813,7774 5957,7773 6195,7775 6209,7765
 #: note: Gr¸nanlage, f¸r Rad+Mofa verboten
-Perelsplatz: Fuﬂg‰nger, Radfahren verboten	q4 5812,7721 5772,7709 5722,7720 5685,7719 5635,7718
+Perelsplatz: Fuﬂg‰nger, Radfahren verboten	q4 5812,7721 5772,7709 5722,7720 5685,7719 5636,7718
 #: XXX_prog: BS (Bordstein zum S¸dwestkorso, Richtung S¸den kann der Bordstein zugeparkt sein) (ansonsten -> q2)
 Gustav-Rickelt-Weg: eng, Fuﬂg‰nger, Bordsteine	q3 4224,6718 4223,6796 4204,6826
 Unterf¸hrung unter der Stromstr.: Fuﬂg‰nger, eng	q2 6218,12975 6180,12972
@@ -5726,7 +5726,7 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 Retzdorffpromenade: Fuﬂg‰nger	q2 4886,6819 4985,6818
 #: by: Julie:
 #: corrected_by: srt (q4 -> q1, sp‰ter q1 -> q0- (policy))
-Albestr.: enge Straﬂe	q0- 5419,7464 5448,7436 5640,7435 5811,7433
+Albestr.: enge Straﬂe	q0- 5419,7464 5448,7436 5637,7435 5811,7433
 #: by: Michael Dinter:
 Leuthener Str.: enge Straﬂe	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 #: by: Wilfried Flade:

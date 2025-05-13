@@ -218,11 +218,11 @@ Detmolder Str. (Nord)	1 4280,8188 4349,8118
 Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025)
+#: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025) (bis 19.09.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-05-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-09-19 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
 Am Treptower Park	1 13860,9861 13795,9941
 # 
@@ -503,7 +503,7 @@ Stiftsweg	1s:q3 11001,18528 11239,18832 11263,18842
 #: note: zur Not könnte man entgegengesetzt auf dem Gehweg fahren, oder sogar auf dem für die Straßenbahn reservierten Fahrbahnteil
 Bleicheroder Str.	1 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 #: by: ^^^
-Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
+Renée-Sintenis-Platz	1 5639,7253 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5639,7253
 # REMOVED (offen) --- Spreepark	2 16028,8867 16086,8860 16129,8855
 #: by: Felix Schröder
 #: confirmed_by: srt
@@ -4021,6 +4021,7 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
+#: osm_watch: way id="1149630679" version="5"
 #: last_checked: 2025-05-11 (mapillary)
 #: check_frequency: 90d
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
@@ -4237,8 +4238,8 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
-#: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags
-#: last_checked: 2025-04-15 (mapillary) vvv
+#: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
+#: last_checked: 2025-05-13 vvv
 #: osm_watch: way id="1199463691" version="4"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -4527,7 +4528,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wexstra%C3%9Fe-27-bruchsaler-stra%C3%9Fe.1254/#post-19647
 #: by: https://www.deutsches-architekturforum.de/thread/14770-wilmersdorf-halensee-grunewald-schmargendorf-kleinere-projekte/?postID=757826#post757826
 #: source_id: viz2021:13.33184,52.48035,31.07.2023,06:00 (Komplettsperrung bis 04.08.2023) (inaktiv)
-#: source_id: viz2021:13.331534,52.478683,06.11.2024,07:00 (Bruchsaler Str. ist seit Dez 2024 Sackgasse, auch für Radfahrer? bis 31.12.2025) (bis 30.05.2025) (bis 28.08.2025)
+#: source_id: viz2021:13.331534,52.478683,06.11.2024,07:00 (Bruchsaler Str. ist seit Dez 2024 Sackgasse, auch für Radfahrer? bis 31.12.2025) (bis 30.05.2025) (bis 28.08.2025) (inaktiv)
 #: note: nur kurzer Einbahnstraßenabschnitt, etwa 20-30m; mittlerweile (Nov 2024) ist die Einbahnstraßenrichtung anders herum, evtl. wegen der Bauarbeiten in der Wexstr.?
 #: last_checked: 2025-04-06 (architektur-urbanistik)
 #: check_frequency: 60d
@@ -4917,7 +4918,7 @@ Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-05-05 vvv
+#: last_checked: 2025-05-13 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -4931,7 +4932,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-13
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-12-31
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -4945,7 +4946,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,1025
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408887866/eine-spektakulaere-skyline-wo-berlin-drei-neue-hochhaeuser-bekommt.html (bis Ende 2029)
 #: confirmed_by: srt
 #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
-#: last_checked: 2025-04-23 vvv
+#: last_checked: 2025-05-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-06-30 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
