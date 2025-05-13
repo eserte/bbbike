@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.39;
+$VERSION = 2.40;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -209,7 +209,7 @@ sub register {
     $main::info_plugins{__PACKAGE__ . "_Waze"} =
 	{ name => "Waze",
 	  callback => sub { showmap_waze(@_) },
-	  callback_3_std => sub { showmap_url_waze(@_) },
+	  callback_3 => sub { show_waze_menu(@_) },
 	  ($images{Waze} ? (icon => $images{Waze}) : ()),
 	  tags => [qw(traffic)],
 	};
@@ -1764,6 +1764,41 @@ sub showmap_waze {
     my(%args) = @_;
     my $url = showmap_url_waze(%args);
     start_browser($url);
+}
+
+sub showmap_waze_editor {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    # https://waze.com/en/editor?env=row&lat=52.51331&lon=13.43856&zoomLevel=16
+    my $url = sprintf 'https://waze.com/en/editor?env=row&lat=%s&lon=%s&zoomLevel=%d', $py, $px, $scale;
+    start_browser($url);
+}
+
+sub show_waze_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_Waze_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'Waze',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => "Editor",
+	 -command => sub { showmap_waze_editor(%args) },
+	);
+    $link_menu->command
+	(-label => "Link kopieren",
+	 -command => sub { _copy_link(showmap_url_waze(%args)) },
+	);
+
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
 }
 
 ######################################################################
