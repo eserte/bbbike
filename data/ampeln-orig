@@ -12,18 +12,18 @@
 #: valid: -20250627
 Roelckestr./Große Seestr.: provisorische Ampel	X::inwork 13754,17133
 # 
-#: next_check_id: GRUNEWALDSTR-2025
-#: source_id: viz2021:13.35635,52.49021,25.04.2025,10:06 (bis 15.05.2025) (inaktiv)
-#: source_id: viz2021:13.356365,52.490201,24.04.2025,12:00 (bis 15.05.2025 + weitere Bauabschnitte)
-#: last_checked: 2025-04-27
-#: next_check: 2025-05-15
-# REMOVED --- #: valid: -20250515
-Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
+# REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
+# REMOVED --- #: source_id: viz2021:13.35635,52.49021,25.04.2025,10:06 (bis 15.05.2025) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.356365,52.490201,24.04.2025,12:00 (bis 15.05.2025 + weitere Bauabschnitte) (inaktiv)
+# REMOVED --- #: last_checked: 2025-04-27
+# REMOVED --- #: next_check: 2025-05-15
+# REMOVED --- # REMOVED --- #: valid: -20250515
+# REMOVED --- Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
 # 
-#: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025) (bis 22.05.2025)
+#: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025) (bis 22.05.2025) (bis 24.06.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lnmh7lfw4k2j
-#: next_check: 2025-05-22 vvv
-#: valid: -20250522 vvv
+#: next_check: 2025-06-24 vvv
+#: valid: -20250624 vvv
 Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
 Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 17037,4794
 #: valid ^^^
@@ -47,7 +47,7 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
 #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025)
-#: source_id: viz2021:13.408041,52.512493,13.05.2025,13:14 (bis 20.05.2025)
+#: source_id: viz2021:13.408041,52.512493,13.05.2025,13:14 (bis 20.05.2025) (inaktiv)
 #: last_checked: 2025-04-28
 #: next_check: 2025-05-20
 #: valid: -20250520
@@ -99,7 +99,7 @@ Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 
 #: source_id: viz2021:13.36206,52.4473,24.07.2024,10:00 (bis 25.07.2025) (inaktiv)
 #: source_id: viz2021:13.363257,52.446918,24.07.2024,10:00 (bis 25.07.2025)
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-01-08
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 #: next_check: 2025-07-25
 #: valid: -20250725
@@ -490,7 +490,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: XXX Ampel wird vermutlich permanent gemacht
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (wird vermutlich permanent gemacht)
 #: osm_watch: node id="7978101859" version="1"
-#: last_checked: 2025-04-22 (mapillary)
+#: last_checked: 2025-05-12 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-28
 	X::inwork 10096,-2137
@@ -2148,7 +2148,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 5616,5182
 #: note: Anforderungsampel
-	F 5675,5470
+	F 5672,5469
 #: note: Anforderungsampel
 	F 5482,4965
 #: note: Anforderungsampel
@@ -2824,7 +2824,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-05-13
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
@@ -3930,7 +3930,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2025-03-28
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 	X::inwork 12185,7381

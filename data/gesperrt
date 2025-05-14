@@ -140,7 +140,7 @@ Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18029
 Hardenbergplatz	1 5542,11075 5560,11124 5600,11143 5627,11210 5618,11255 5666,11362 5698,11333 5600,11114 5542,11075
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8340,3242 8327,2987
-Dederingstr.	1 8455,2977 8476,3367
+Dederingstr.	1 8455,2979 8476,3367
 Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
 Quickborner Str.	1s 8016,21499 8078,21415 8162,21302
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
@@ -1046,6 +1046,8 @@ Teltower Damm [Nebenfahrbahn]	1 786,3090 712,2885
 Mittelstreifen	3nocross::ignrte 669,3119 786,3090 820,3081
 Teltower Damm [Nebenfahrbahn] -> Potsdamer Str.: Mittelstreifen	3::igndisp 712,2885 786,3090 669,3119
 Kreisverkehr Zur Alten Flussbadeanstalt	1 16389,9633 16388,9614 16376,9602 16355,9603 16355,9622 16368,9632 16389,9633
+Mittelstreifen	3nocross::ignrte 5643,5301 5610,5227 5583,5179
+Albrechtstr. -> Neue Filandastr.: Mittelstreifen	3::igndisp 5616,5182 5610,5227 5583,5179
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3716,7 +3718,7 @@ tragen (4 Stufen) oder schmale Rampe benutzen	0:5:-233 13009,14616
 tragen (3 Stufen) oder schmale Rampe benutzen	0:5:-244 12982,14629
 tragen (8 Stufen)	0:15:-185 5575,5801
 tragen (12 Stufen)	0:20:-142 5581,5828
-Althoffplatz	1 5675,5573 5588,5579 5588,5622 5587,5655 5673,5664
+Althoffplatz	1 5675,5573 5588,5579 5588,5622 5587,5655 5676,5664
 Elisenstr.: tragen (3 Stufen)	0:15:-167 5813,5354
 tragen (9 Stufen)	0:30:-165 5822,5388
 tragen (3 x 10 Stufen)	0:90:-236 5535,4756

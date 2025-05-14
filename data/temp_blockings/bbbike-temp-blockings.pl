@@ -22258,6 +22258,7 @@ EOF
 #: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
 #: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
 #: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/
 #: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023) (inaktiv)
 #: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024) (inaktiv)
@@ -23986,7 +23987,7 @@ EOF
        data  => <<EOF,
 	2::inwork 6124,5983 6124,5894 6123,5798 6007,5785 5942,5775
 	2::inwork 6123,5798 6104,5302
-	2::inwork 5699,5949 5847,5961 5845,6049 5748,6051 5699,5949 5674,5901 5677,5868 5679,5853 5682,5798 5672,5751 5673,5664 5675,5573 5838,5563 5840,5679 5673,5664
+	2::inwork 5699,5949 5847,5961 5845,6049 5748,6051 5699,5949 5674,5901 5677,5868 5679,5853 5682,5798 5672,5751 5676,5664 5675,5573 5838,5563 5840,5679 5676,5664
 	2::inwork 5672,5751 5850,5765 5851,5863 5694,5845
 	2::inwork 5845,6049 6008,6067 6001,5974 5847,5961 5851,5863 5935,5874 5942,5775 5850,5765 5840,5679
 	2::inwork 5993,5422 6009,5691 6007,5785 6007,5882 6001,5974 6124,5983 6116,6130
@@ -30983,9 +30984,9 @@ EOF
 #: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch: note 3210197 4
-#: last_checked: 2025-02-22
-# REMOVED --- #: check_frequency: 150d
-#: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-05-14
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -34818,7 +34819,7 @@ EOF
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: osm_watch: way id="229990468" version="7"
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2025-01-08
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 	2::inwork 7673,4223 7769,4315
@@ -36175,7 +36176,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36481,10 +36482,10 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-05-16 00:00:00"), # 1652421600, # 2022-05-13 08:00
-       until => $isodate2epoch->("2025-05-17 20:00:00"), # 1652562000, # 2022-05-14 23:00
+       until => $isodate2epoch->("2025-05-17 23:00:00"), # 1652562000, # 2022-05-14 23:00
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 5]],
-       text  => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 17.5.2025 von 13:00 bis 20:00 Uhr',
+       text  => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 17.5.2025 von 07:00 bis 23:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1525328801823133698#m
@@ -36492,6 +36493,7 @@ EOF
 #: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1444072.php
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/ (7 bis 23 Uhr, hier nur Kfz-Verkehr)
 Spreestr.	2::temp 17782,5698 17807,5730 17810,5736 17877,5860
 Schnellerstr.	2::temp 18013,5627 17916,5675 17807,5730
 Flutstr.	2::temp 17916,5675 17931,5695
@@ -37632,7 +37634,7 @@ EOF
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2025-02-04 (mapillary) vvv
+#: last_checked: 2025-05-12 (mapillary) vvv
 #: next_check: 2025-08-29 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
@@ -43516,7 +43518,7 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-04-26 (mapillary) vvv
+#: last_checked: 2025-05-12 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -43771,13 +43773,15 @@ EOF
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
-#: also_indoor: traffic (B,T,ex-G)
-#: note: bei Bing & TomTom nur die östliche Anbindung als gesperrt markiert
+#: also_indoor: traffic (B,T,re-G)
+#: note: bei Bing & TomTom & Google nur die östliche Anbindung als gesperrt markiert
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-04-14 (traffic) vvv
+#: last_checked: 2025-05-14 (traffic) vvv
 #: check_frequency: 30d vvv
+#: next_check: 2025-11-06 (VIZ-Verkehrsmeldung) vvv
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -43841,7 +43845,7 @@ EOF
 #: note: es existiert eine Umleitungsstrecke für Radfahrer
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-12-23 (traffic) --- #: check_frequency: 7d
 # REMOVED (hier wohl nicht mehr) ---	q4::inwork 5466,5523 5555,5508
-	q4::inwork 5555,5508 5676,5488
+	q4::inwork 5555,5508 5671,5489
 EOF
      },
      { from  => 1714860000, # 2024-05-05 00:00
@@ -44682,7 +44686,7 @@ EOF
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-04-23 vvv
+#: last_checked: 2025-05-14 vvv
 #: check_frequency: 21d vvv
 #: osm_watch: way id="26158804" version="25"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -45095,8 +45099,8 @@ EOF
 #: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
 #: osm_watch: note 4383533 4
 #: osm_watch: way id="37948631" version="9"
-#: also_indoor: traffic (H,G,B,T,A,W)
-#: last_checked: 2025-05-01 (osm note)
+#: also_indoor: traffic (ex-H,G,B,T,A,ex-W)
+#: last_checked: 2025-05-14 (traffic)
 #: check_frequency: 14d (traffic + altlandsberg website)
 #: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
@@ -45246,7 +45250,7 @@ EOF
      },
      { from  => 1724611975, # 2024-08-25 20:52
        until => undef, # 1735685999, # 2024-12-31 23:59
-       text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Mitte 2025',
+       text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Mitte oder sogar Ende 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.finowkanal.info/de/bautagebuch?date=20250117 (Bauarbeiten ... Schleusenpaket 1 ... voraussichtlich bis April 2026)
@@ -45260,7 +45264,7 @@ EOF
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-04-15 (osm note)
+#: last_checked: 2025-05-14 (research)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-01
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -46471,7 +46475,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G,T,B,A)
-#: last_checked: 2025-04-23
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545
@@ -47562,13 +47566,28 @@ EOF
      },
      { from  => 1746339900, # 2025-05-04 08:25
        until => $isodate2epoch->("2025-07-14 17:00:00"), # 1747234800, # 2025-05-14 17:00
-       text  => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, vom 05.05.2025 08:25 bis 14.07.2025 17:00',
+       text  => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, Überquerung der Filandastr. nicht möglich, vom 05.05.2025 08:25 bis 14.07.2025 17:00',
        type  => 'handicap',
+## below generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 5672,5751 5676,5664 5675,5573 5671,5489\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
-#: source_id: viz2021:13.332624,52.455792,05.05.2025,08:25 (bis 14.05.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.332624,52.455792,05.05.2025,08:25 (bis 14.05.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.332647,52.456942,14.05.2025,09:00 (bis 14.07.2025 + weitere Arbeiten)
+#: note: Außerdem: Gehweg Richtung Süden für Radfahrer frei; gesamte Fahrbahn Richtung Süden ist gegen den Bürgersteig abgesperrt
 	q4::inwork 5588,5579 5675,5573
-	q4::inwork 5673,5664 5587,5655
+	q4::inwork 5676,5664 5587,5655
+#	3nocross::ignrte 5672,5751 5676,5664 5675,5573 5671,5489
+Filandastr. -> Wuthenowstr.	3::inwork 5672,5751 5676,5664 5840,5679
+Filandastr. -> Althoffpl.	3::inwork 5675,5573 5676,5664 5587,5655
+Wuthenowstr. -> Filandastr.	3::inwork 5840,5679 5676,5664 5675,5573
+Wuthenowstr. -> Althoffpl.	3::inwork 5840,5679 5676,5664 5587,5655
+Althoffpl. -> Filandastr.	3::inwork 5587,5655 5676,5664 5672,5751
+Althoffpl. -> Wuthenowstr.	3::inwork 5587,5655 5676,5664 5840,5679
+Filandastr. -> Kantstr.	3::inwork 5676,5664 5675,5573 5838,5563
+Filandastr. -> Althoffpl.	3::inwork 5671,5489 5675,5573 5588,5579
+Althoffpl. -> Filandastr.	3::inwork 5588,5579 5675,5573 5676,5664
+Althoffpl. -> Kantstr.	3::inwork 5588,5579 5675,5573 5838,5563
+Kantstr. -> Filandastr.	3::inwork 5838,5563 5675,5573 5671,5489
+Kantstr. -> Althoffpl.	3::inwork 5838,5563 5675,5573 5588,5579
 EOF
      },
      { from  => 1746334800, # 2025-05-04 07:00
@@ -47654,7 +47673,9 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.59872,52.50501,08.05.2025,09:57
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lopunzh3jc2v
-#: last_checked: 2025-05-09 (Verkehrsmeldung)
+#: note: bei rbb mittlerweile entfernt
+#: also_indoor: traffic (H,G,T,A,W)
+#: last_checked: 2025-05-14 (traffic)
 #: check_frequency: 10d
 	q4::inwork 23679,11372 23654,11285 23648,11265
 EOF
@@ -47700,13 +47721,53 @@ EOF
        text  => 'Französische Str., Schlossplatz, Breite Str., Rathausstr. und Spandauer Straße: Sperrung (Sicherheitskonferenz), evtl. sind auch Radfahrer betroffen, am 14.05.2025 von 06:00 bis 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.402728,52.516282,13.05.2025,09:00 (bis 14.05.2025)
+#: source_id: viz2021:13.402728,52.516282,13.05.2025,09:00 (bis 14.05.2025) (inaktiv)
 #: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250512 (Sperrung am 13.5.2025 09:00-18:00 Uhr, sowie am 14.5.2025 von 06:00-17:00 Uhr)
 #: by: https://www.bmvg.de/de/aktuelles/mehr-als-1000-teilnehmer-zu-un-peacekeeping-ministerial-erwartet-5937272 (vermutete Veranstaltung; im Auswärtigen Amt)
-#: note: Die Spandauer Str. wurde als Parkplatzfläche benutzt, Polizeiautos haben die Einfahrt in die Straße versperrt, unklar, ob Radfahrer durchgekommen wären.
+#: note: Die Spandauer Str. wurde am 2025-05-13 nachmittags als Parkplatzfläche benutzt, Polizeiautos haben die Einfahrt in die Straße versperrt, unklar, ob Radfahrer durchgekommen wären.
+#: note: 2025-05-14 morgens: Spandauer Str. für Kfz gesperrt, Radfahrer kommen durch; Rathausstr. anscheinend ab Spandauer Str. gesperrt
 Französische Str. - Rathausstr.	2::temp 9972,12184 10029,12208 10091,12232 10109,12238 10174,12284 10199,12251 10285,12306 10357,12356 10416,12394 10475,12438 10580,12513 10599,12526
 Breite Str.	2::temp 10285,12306 10383,12191 10480,12077 10512,12039
 Spandauer Str.	2::temp 10687,12421 10646,12470 10599,12526 10542,12587 10431,12709
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Alexandrinenstr. - Wassertorstr.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2025-05-14
+#: check_frequency: 14d
+	2::inwork 10431,10606 10492,10582
+EOF
+     },
+     { from  => 1747223796, # 2025-05-14 13:56
+       until => 1761951600, # 2025-11-01 00:00
+       text  => 'Brandenburgische Str., Borstellstr.: Bauarbeiten, Fahrbahn gesperrt, vermutlich bis Oktober 2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2
+#: also_indoor: traffic (G,T[zu wenig])
+#: last_checked: 2025-05-14 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2025-10-31 (Baustellenschild) vvv
+Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
+Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Altes Gaswerk Mariendorf: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann.
+#: also_indoor: traffic (G)
+#: osm_watch: way id="1376570531" version="3"
+#: last_checked: 2025-05-14
+	2::inwork 8404,3648 8461,3410
 EOF
      },
     );

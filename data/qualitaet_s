@@ -1492,7 +1492,7 @@ Parforceweg: Waldweg	Q2 -1852,8155 -2038,8304 -2161,8354 -2388,8437
 Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33526,2771 33419,2765 33406,2738 33255,2762 33086,2790 33002,2826
 Schönhorster Str.: asphaltiert	Q0 29902,2379 29558,2261 29414,2373
 Südendstr.: glattes Pflaster	Q1 5274,5557 5115,5551
-Südendstr.: Asphalt	Q0 5274,5557 5466,5523 5555,5508 5676,5488 5709,5482
+Südendstr.: Asphalt	Q0 5274,5557 5466,5523 5555,5508 5671,5489 5709,5482
 Südendstr.: glattes Pflaster	Q1 5709,5482 5840,5456 5993,5422
 Am Teltowkanal: Parkweg mit schmalem Verbundsteinradweg	Q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095 8881,5143 9080,5225
 Am Teltowkanal: Verbundsteinpflaster	Q1 9080,5225 9171,5263 9196,5272
@@ -3435,8 +3435,9 @@ Moosrosenstr.: Beton	Q0 12727,5244 12726,5147
 Moosrosenstr.: Beton	Q0 12724,5051 12715,5033 12652,5006
 Thomashöhe: Verbundsteinpflaster	Q1 12685,7497 12682,7514 12672,7561
 Thomashöhe: Asphalt	Q0 12672,7561 12647,7672
-Lessinghöhe: Parkweg	Q1 12647,7672 12643,7714 12622,7796 12625,7829
-Lessinghöhe: Verbundsteinpflaster	Q1 12625,7829 12602,7907 12583,7974
+Lessinghöhe: Parkweg	Q1 12647,7672 12643,7714 12619,7809 12623,7833
+Lessinghöhe: Parkweg	Q1 12623,7833 12637,7845 12674,7852 12693,7841 12710,7814
+Lessinghöhe: Verbundsteinpflaster	Q1 12623,7833 12602,7907 12583,7974
 Elli-Voigt-Str.: Asphalt	Q0 15896,13760 15831,13760 15792,13764 15698,13765
 Elli-Voigt-Str.: Asphalt	Q0 15833,13596 15831,13760
 Elli-Voigt-Str.: Asphalt	Q0 15792,13764 15794,13975 15760,14036 15758,14088
@@ -3585,8 +3586,8 @@ Schmidt-Ott-Str.: Asphalt	Q0 4010,5888 4115,5804
 Schmidt-Ott-Str.: Kleinsteinpflaster	Q1 4115,5804 4258,5717
 Schmidt-Ott-Str.: Kopfsteinpflaster	Q1 4258,5717 4313,5682 4408,5622
 Dünther Str.: Asphalt	Q0 5268,5920 5234,6086
-Menckenstr.: Asphalt	Q0 5567,5864 5570,5913 5593,5965 5664,6082 5754,6238
-Kniephofstr.: Asphalt	Q0 5465,5957 5593,5965 5699,5949 5847,5961 6001,5974
+Menckenstr.: Asphalt	Q0 5567,5864 5570,5913 5597,5971 5664,6082 5754,6238
+Kniephofstr.: Asphalt	Q0 5465,5957 5597,5971 5699,5949 5847,5961 6001,5974
 Friedrichsruher Platz: Gehwegplatten	Q1 5942,5775 5935,5874
 Overbeckstr.: Asphalt	Q0 6861,6082 6736,6071
 Brüggemannstr.: Asphalt	Q0 6840,6308 6714,6293
@@ -10230,7 +10231,7 @@ Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11664,21246 11656,21309
 (Am Lehnshof - Tegeler Fließ): Verbundsteinpflaster	Q1 4336,22984 4332,22916
 (Am Tegeler Hafen - Tegeler Insel): glattes Betonpflaster und Moabiter Kissen	Q2 1788,20364 1778,20377 1756,20405
 Im Brachfeldwinkel: wassergebundene Decke	Q1 3024,21286 3068,21150
-Altes Gaswerk Mariendorf: Asphalt	Q0 8295,4303 8266,4221 8404,3648 8461,3410
+Altes Gaswerk Mariendorf: Asphalt	Q0 8295,4303 8266,4221 8347,3886 8404,3648 8461,3410
 Im Marienpark: mäßiges bis schlechtes Kopfsteinpflaster	Q3 8404,3648 8346,3633 8178,3591 8070,3563
 Im Marienpark: mäßiges bis schlechtes Kopfsteinpflaster	Q3 8178,3591 8167,3641
 Im Marienpark: Asphalt	Q0 8167,3641 8163,3660 8173,3672 8327,3706 8346,3633
@@ -10370,7 +10371,7 @@ Schwarzschildstr.: Betonpflaster	Q1 18766,2525 18759,2592
 zur Kieler Brücke: Kopfsteinpflaster	Q2 7804,14445 7780,14431
 Kieler Brücke: Holzbohlen	Q1 7780,14431 7740,14409
 (Am Märchenbrunnen): Betonplatten	Q1 11823,13635 11899,13750
-(Mariendorfer-Hafen-Weg - Im Marienpark): unbefestigter Weg	Q2 8016,3651 8035,3657
+(Mariendorfer-Hafen-Weg - Im Marienpark): wassergebundene Decke	Q1 8016,3651 8035,3657
 (Mariendorfer-Hafen-Weg - Im Marienpark): Kopfsteinpflaster	Q2 8035,3657 8046,3626 8070,3563
 Fregestr.: asphaltierter Radweg	Q0 5622,6400 5582,6360
 Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8187,13472 8183,13482 8141,13580 8103,13675
@@ -10731,8 +10732,8 @@ Im Lindenhof: Kleinsteinpflaster	Q2 17530,12620 17571,12557
 (Im Lindenhof - Am Städtischen Zentralfriedhof): unbefestigter Weg	Q2 17571,12557 17585,12539
 Heilbronner Str.: Gehwegplatten	Q0 6140,9338 6144,9295 6132,9246
 Heesestr.: Asphalt mit Kopfsteinpflasterabschnitten	Q1; 5280,5714 5276,5622 5274,5557
-Kitzingstr.: Beton	Q1 8752,2931 8572,2960 8455,2977
-Kitzingstr.: Asphalt	Q0 8455,2977 8327,2987
+Kitzingstr.: Beton	Q1 8752,2931 8572,2962 8455,2979
+Kitzingstr.: Asphalt	Q0 8455,2979 8327,2987
 Greinerstr.: Asphalt	Q0 8327,2987 8340,3242 8347,3382
 (Am Betriebsbahnhof Schöneweide): Asphalt, einige Schäden	Q1 18497,4529 18331,4744 18306,4753
 (Am Betriebsbahnhof Schöneweide): Asphalt	Q0 18306,4753 18254,4817 18226,4853
@@ -13194,7 +13195,7 @@ Mellener Str.: schlecht befahrbares Kopfsteinpflaster	Q3 10756,-2128 10763,-2276
 (Am Lichtenrader Graben): asphaltiert	Q0 10513,-1954 10537,-1943 10615,-1772 10695,-1515
 Mellener Str. - Lichtenrader Graben: Asphalt mit Unebenheiten	Q1 10772,-1770 10615,-1772
 Darmstädter Str.: sehr guter Asphalt	Q0 4456,10092 4623,10066
-Wuthenowstr.: Kleinsteinpflaster	Q2 5673,5664 5840,5679
+Wuthenowstr.: Kleinsteinpflaster	Q2 5676,5664 5840,5679
 Ufnaustr.: guter Asphalt	Q0 4421,13793 4455,13567
 Gewerbehof: Asphalt	Q0 -2669,13488 -2393,13414
 Pinnauweg: Asphalt	Q0 2219,1612 2043,1538 1943,1496 1975,1413
@@ -16723,7 +16724,7 @@ Breitkopfstr.: Gehwegplatten	Q1 7820,17549 7809,17708 7789,17853
 Breitkopfstr.: Asphalt	Q0 7789,17853 7772,17915
 Breitkopfstr.: Kleinsteinpflaster	Q1 7772,17915 7731,18012 7680,18106 7615,18204 7507,18372
 Breitkopfstr.: Asphalt	Q0 7507,18372 7460,18465 7419,18459 7391,18472 7377,18498 7372,18540 7399,18571 7445,18589 7434,18695
-Filandastr.: Kopfsteinpflaster	Q2 5671,5389 5637,5401 5527,5217
+Filandastr.: Kopfsteinpflaster	Q2 5666,5392 5637,5401 5527,5217
 Sarntaler Weg: guter Beton	Q0 5836,509 5742,671 5710,726 5781,770 5781,800
 Zerbster Str. (Hellersdorf): guter Beton	Q0 24451,15181 24413,15372 24357,15429 24346,15505 24324,15519 24169,15497
 Jaehnstr.: guter Asphalt	Q0 -478,3509 -575,3684
@@ -16865,7 +16866,7 @@ Privatstr. 12: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglöcher	Q2 171
 Falkenberger Chaussee - Pablo-Picasso-Str.: sehr guter Asphalt	Q0 17721,18001 17737,17987 17741,17946 17762,17928 17796,17892 17906,17746 17955,17783
 Heusingerstr.: guter Beton	Q0 8584,3133 8792,3082
 Porschestr.: Asphalt	Q0 8584,3133 8599,3441
-Porschestr.: Beton, teilweise mit Asphalt geflickt	Q0 8572,2960 8584,3133
+Porschestr.: Beton, teilweise mit Asphalt geflickt	Q0 8572,2962 8584,3133
 Opelweg: Verbundsteinpflaster	Q1 8906,2822 8828,2841
 Opelweg: Verbundsteinpflaster	Q1 8828,2841 8735,2866
 Bieler Str.: Kleinpflaster, relativ eben	Q1 6815,17871 6711,17839
@@ -17533,7 +17534,7 @@ Bautzener Platz: Gehwegplatten	Q1 8182,9240 8100,9240
 Bautzener Platz: Gehwegplatten	Q1 8102,9262 8183,9260
 Menckenstr.: Asphalt	Q1 5581,5741 5575,5801
 Althoffstr.: Kopfsteinpflaster	Q2 5276,5622 5466,5622 5588,5622
-Althoffplatz: Kopfsteinpflaster	Q1 5675,5573 5588,5579 5588,5622 5587,5655 5673,5664
+Althoffplatz: Kopfsteinpflaster	Q1 5675,5573 5588,5579 5588,5622 5587,5655 5676,5664
 Kantstr. (Steglitz): schlechtes Kopfsteinpflaster	Q3 5675,5573 5838,5563
 Lessingstr. (Steglitz): Kopfsteinpflaster	Q2 5850,5765 5840,5679 5838,5563 5840,5526
 Lessingstr. (Steglitz): Asphalt	Q0 5840,5526 5840,5456

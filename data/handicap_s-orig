@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-05-13
+#: last_checked: 2025-05-14
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -413,12 +413,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 # 
-#: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025)
-#: note: Halteverbotsschilder bis 30.05.2025
-#: last_checked: 2025-05-06
-#: next_check: 2025-05-30 (Halteverbotsschilder)
-#: valid: -20250530
-Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
+# REMOVED --- #: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025) (inaktiv)
+# REMOVED --- #: note: Halteverbotsschilder bis 30.05.2025
+# REMOVED --- #: last_checked: 2025-05-06
+# REMOVED --- #: next_check: 2025-05-30 (Halteverbotsschilder)
+# REMOVED --- #: valid: -20250530
+# REMOVED --- Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 # 
 #: note: Länge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (laut Baustellenschild)
 #: last_checked: 2025-04-16 (mapillary)
@@ -1244,7 +1244,7 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2025-04-09 vvv
+#: last_checked: 2025-05-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1643,7 +1643,8 @@ Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10319,15090 10240,153
 #: note: eher wenige Fußgänger, q3 wäre theoretisch möglich
 (Fußgängerbrücke Ostkreuz): Fußgänger	q4+ 14808,10978 14763,10987 14738,10892 14810,10832
 (Ringbahnsteig Ostkreuz): sehr viele Fußgänger	q4- 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
-Marheinekeplatz: Fußgänger, Brunnen	q3 9892,9286 9880,9233
+#: XXX_prog: BS am südlichen Ende, ansonsten trotzdem q3
+Marheinekeplatz: Fußgänger, Brunnen, Bordstein	q3 9892,9286 9880,9233
 #: note: zumindest auf der westlichen Seite existiert kein explizites Verbotsschild für Radfahrer, allerdings auch keine Freigabe unter dem Grünanlagenschild
 (Uferweg am Urbanhafen): Fußgänger	q2 11160,9932 11142,9939 10914,9925 10602,10006 10522,10056 10500,10081
 Bahnhofsgebäude, schieben	q4 7854,7572 7934,7621
@@ -1924,7 +1925,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-04-27
+#: last_checked: 2025-05-14
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -1996,7 +1997,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-05-13
+#: last_checked: 2025-05-14
 #: check_frequency: 30d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -2565,8 +2566,13 @@ Kienheideweg: Fußgänger	q1 13331,5640 13414,5655
 Kienheideweg - Buschkrugallee: Fußgänger	q1 13511,5675 13612,5698
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8119 (Antrag: Freigabe gefordert) vvv
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/rad-fahren-durch-den-park-erlauben_a362327
-Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12672,7561 12647,7672
-Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12643,7714 12622,7796 12625,7829 12602,7907 12583,7974
+#: historical_note: früher: Fußgänger, für Radfahrer verboten, ggfs. schieben vvv
+#: note: Radfahren erlaubt, Fußgänger haben Vorrang (per Markierung auf dem Weg in der Lessignhöhe, nördliches und südliches Ende) vvv
+Thomashöhe: Fußgänger	q2 12682,7514 12672,7561 12647,7672
+Lessinghöhe: Fußgänger	q2 12647,7672 12643,7714 12619,7809 12623,7833 12602,7907 12583,7974
+Lessinghöhe: Fußgänger	q2 12623,7833 12637,7845 12674,7852 12693,7841 12710,7814
+#: note ^^^
+#: historical_note ^^^
 #: by ^^^
 Elli-Voigt-Str.: vier Bodenwellen	q1- 15833,13596 15831,13760
 Elli-Voigt-Str.: zwei Bodenwellen	q1- 15792,13764 15794,13975
@@ -2627,9 +2633,9 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 (Ebersstr. - Cheruskerstr.): Fußgänger	q3 7353,8633 7371,8660 7382,8658
 #: note: per Piktogramm nicht für Radfahrer
 (Cheruskerpark): Fußgänger	q3 7353,8633 7291,8553
-(Cheruskerpark - Cheruskerstr.): Fußgänger	q1 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
-(Torgauer Str. - Cheruskerstr.): Fußgänger	q1 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
-(Torgauer Str. - Cheruskerpark): Fußgänger	q1 7374,8211 7372,8222 7351,8258 7353,8293
+(Cheruskerpark - Cheruskerstr.): Fußgänger	q2 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
+(Torgauer Str. - Cheruskerstr.): Fußgänger	q2 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
+(Torgauer Str. - Cheruskerpark): Fußgänger	q2 7374,8211 7372,8222 7351,8258 7353,8293
 (Bernhardstr. - Varziner Platz): S-Bahnunterführung, Fußgänger	q4 5471,7915 5475,7906 5492,7868
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): eng und kurvig	q3 17319,14159 17230,14206
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
@@ -5568,8 +5574,7 @@ Holwedestr.: schmale Straße	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,
 #: by: garci
 Am Schloßpark: eng bei Autoverkehr	q1 10775,19054 10715,18965 10621,18837 10542,18749 10527,18718 10496,18704
 # REMOVED (keine Behinderungen deswegen) --- #: by: anonymous --- (Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgelände	q1 4997,19849 5003,19833 5060,19699 5073,19656 5110,19665 5183,19454 5208,19378 5187,19368 5219,19285 5388,19186 5429,19165
-#: by: Daniel (dan.berlin):
-Poschingerstr.: enge Straße	q1 5701,6273 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
+# REMOVED (nicht bestätigt) --- #: by: Daniel (dan.berlin): --- Poschingerstr.: enge Straße	q1 5701,6273 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
 #: by: Manfred Köhnen:
 #: corrected_by: srt (q2 -> q1)
 Höltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
@@ -6106,7 +6111,7 @@ Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
 #: osm_watch: way id="114381362" version="14"
 #: osm_watch: way id="1100622078" version="7"
 #: osm_watch: way id="1100622082" version="7"
-#: last_checked: 2024-10-09
+#: last_checked: 2025-05-12 (mapillary)
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
 #: XXX ^^^

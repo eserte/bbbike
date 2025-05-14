@@ -189,19 +189,19 @@ Hohenfriedbergstr.	3 7790,9126 7790,8918 7791,8882
 Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8918 7707,8919
 Hohenfriedbergstr. - Brunhildstr.	3 7707,8919 7790,8918 7790,9126
 Olga-Benario-Prestes-Str.	1 12628,14650 12473,14763
-Filandastr.	3nocross::ignrte 5676,5488 5675,5573 5673,5664 5672,5751
-Filandastr. -> Kantstr.: Filandastr.	3::igndisp 5673,5664 5675,5573 5838,5563
-Filandastr. -> Althoffpl.: Filandastr.	3::igndisp 5676,5488 5675,5573 5588,5579
-Althoffpl. -> Filandastr.: Filandastr.	3::igndisp 5588,5579 5675,5573 5673,5664
+Filandastr.	3nocross::ignrte 5671,5489 5675,5573 5676,5664 5672,5751
+Filandastr. -> Kantstr.: Filandastr.	3::igndisp 5676,5664 5675,5573 5838,5563
+Filandastr. -> Althoffpl.: Filandastr.	3::igndisp 5671,5489 5675,5573 5588,5579
+Althoffpl. -> Filandastr.: Filandastr.	3::igndisp 5588,5579 5675,5573 5676,5664
 Althoffpl. -> Kantstr.: Filandastr.	3::igndisp 5588,5579 5675,5573 5838,5563
-Kantstr. -> Filandastr.: Filandastr.	3::igndisp 5838,5563 5675,5573 5676,5488
+Kantstr. -> Filandastr.: Filandastr.	3::igndisp 5838,5563 5675,5573 5671,5489
 Kantstr. -> Althoffpl.: Filandastr.	3::igndisp 5838,5563 5675,5573 5588,5579
-Filandastr. -> Wuthenowstr.: Filandastr.	3::igndisp 5672,5751 5673,5664 5840,5679
-Filandastr. -> Althoffpl.: Filandastr.	3::igndisp 5675,5573 5673,5664 5587,5655
-Wuthenowstr. -> Filandastr.: Filandastr.	3::igndisp 5840,5679 5673,5664 5675,5573
-Wuthenowstr. -> Althoffpl.: Filandastr.	3::igndisp 5840,5679 5673,5664 5587,5655
-Althoffpl. -> Filandastr.: Filandastr.	3::igndisp 5587,5655 5673,5664 5672,5751
-Althoffpl. -> Wuthenowstr.: Filandastr.	3::igndisp 5587,5655 5673,5664 5840,5679
+Filandastr. -> Wuthenowstr.: Filandastr.	3::igndisp 5672,5751 5676,5664 5840,5679
+Filandastr. -> Althoffpl.: Filandastr.	3::igndisp 5675,5573 5676,5664 5587,5655
+Wuthenowstr. -> Filandastr.: Filandastr.	3::igndisp 5840,5679 5676,5664 5675,5573
+Wuthenowstr. -> Althoffpl.: Filandastr.	3::igndisp 5840,5679 5676,5664 5587,5655
+Althoffpl. -> Filandastr.: Filandastr.	3::igndisp 5587,5655 5676,5664 5672,5751
+Althoffpl. -> Wuthenowstr.: Filandastr.	3::igndisp 5587,5655 5676,5664 5840,5679
 Gelnitzstr.	1 22885,5835 22900,5740
 Kurfürstendamm	3nocross::ignrte 2770,10024 2828,10040 2974,10081
 Kurfürstendamm -> Katharinenstr.: Kurfürstendamm	3::igndisp 2770,10024 2828,10040 2849,10445
@@ -1175,9 +1175,9 @@ Eisenbahnstr. (Fürstenwalde)	1 55401,-3599 55423,-3769 55456,-4023 55447,-4247
 Krebsgang	1 14693,7168 14792,7192
 Methfesselstr.: Durchfahrt gesperrt (Schranke)	3 9115,9046 9125,9078 9150,9152
 Methfesselstr.: Durchfahrt gesperrt (Schranke)	3 9150,9152 9125,9078 9115,9046
-Neue Filandastr./Filandatr.	3nocross::ignrte 5676,5488 5675,5470 5671,5389 5659,5313
-Filandastr. -> Neue Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5637,5401 5671,5389 5675,5470
-Neue Filandastr. -> Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5659,5313 5671,5389 5637,5401
+Neue Filandastr./Filandatr.	3nocross::ignrte 5671,5489 5672,5469 5666,5392 5643,5301
+Filandastr. -> Neue Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5637,5401 5666,5392 5672,5469
+Neue Filandastr. -> Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5643,5301 5666,5392 5637,5401
 Mittelstreifen	3nocross::ignrte 6005,16712 5923,16784 5894,16810 5772,16919
 Müllerstr. -> Liverpooler Str.: Mittelstreifen	3::igndisp 5894,16810 5923,16784 5995,16836
 Liverpooler Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5995,16836 5923,16784 6005,16712

@@ -371,6 +371,13 @@ Chausseestr.: Pförtnerampel	DH:tl 9044,13711 8992,13774 8935,13844
 #: note: Ampel am mittleren Punkt, gehört zur Ampelanlage Berliner Allee/Langhansstr.
 Antonplatz -> Berliner Allee: Fußgängerampel	DH:tl 13524,15786 13484,15893 13425,15846
 # 
+Hauptstr. -> Wielandstr.: Umweg zum Fußgängerübergang	DH:len=50 6144,7677 6082,7594 6081,7227
+Wielandstr. -> Hauptstr.: Mittelstreifen, zunächst den linken Gehweg benutzen	DH:h=q3,25 6081,7227 6082,7594 5955,7420
+# 
+Ellwanger Str. -> Attilastr.: Mittelstreifen, zunächst den linken Gehweg benutzen	DH:h=q3,40 7382,4503 7450,4397 7482,4416
+#Attilastr. -> Ellwanger Str.: Mittelstreifen, den linken Gehweg benutzen	DH:h=q3,100 7366,4345 7410,4373 7450,4397 7382,4503
+Attilastr. -> Ellwanger Str.: Mittelstreifen, Umweg bis zur Neckarsulmer Str.	DH:len=70 7366,4345 7410,4373 7450,4397 7382,4503
+# 
 ######################################################################
 # Vorübergehende Einschränkungen
 #

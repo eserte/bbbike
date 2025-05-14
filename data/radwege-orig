@@ -51,7 +51,7 @@
 #: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
-#: last_checked: 2025-02-04 (mapillary)
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung)
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -1336,7 +1336,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-05-13 vvv
+#: last_checked: 2025-05-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3128,7 +3128,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-05-13
+#: last_checked: 2025-05-14
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -7627,7 +7627,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2025-04-23 vvv
+#: last_checked: 2025-05-14 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7667,7 +7667,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2025-04-23
+#: last_checked: 2025-05-14
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
@@ -9060,18 +9060,17 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.37431,52.42642,24.01.2023,14:39 (bis 22.02.2023) (inaktiv)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025) (bis 28.02.2025) (bis 17.03.2025) (bis 26.03.2025 + ...) (inaktiv) vvv
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025) (bis 28.02.2025) (bis 17.03.2025) (bis 26.03.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
 #: source_id: viz2021:13.37431,52.42642,11.03.2025,14:27 (bis 26.03.2025) (inaktiv)
-#: last_checked: 2025-02-22 vvv
-# REMOVED -- #: check_frequency: 90d
-#: next_check: 2025-03-26 (VIZ-Verkehrsmeldung) vvv
-# REMOVED --- #: next_check: 2024-01-01
+#: last_checked: 2025-05-14 vvv
+#: check_frequency: 60d vvv
+# REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung) vvv
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 provisorische Radspur	RW4; 8579,2265 8560,2181 8490,2084
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
-#: source_id ^^^
 # 
 # REMOVED --- #: next_check_id: MOECKERN-2021 --- #: XXX Baumaßnahme 2.28 (Realisierung nach 2011)  --- #: by: https://api.fixmyberlin.de/api/plannings/23 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.920730.php (temporäre Radwege) --- #: by: https://api.fixmyberlin.de/api/projects/376 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006 --- #: by: https://abendblatt-berlin.de/2020/04/21/friedrichshain-kreuzberg-radwegprojekt-geht-weiter/ --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/die-meisten-temporaeren-radwege-sollen-bleiben_a263404 (Verzögerung) --- #: by: https://abendblatt-berlin.de/2020/05/24/kreuzberg-radwege-statt-parkplaetze/ (... im Juni (2020) umgesetzt werden) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.937004.php (hier wird eine permanente Lösung entstehen, 600m mit Pollern) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (außerdem: Verbreiterung des existierenden Radwegs in Richtung Norden (Stand Mai 2020)) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (verkehrsrechtliche Anordnung fehlt (Stand Oktober 2020)) --- #: by: http://www.infravelo.de/projekt/moeckernstrasse-ostseite/ (zwischen Yorckstr. und Hornstr. wird der Hochbordradweg saniert und verbreitert, bis 4. Quartal 2020) --- #: by: http://www.infravelo.de/projekt/moeckernstrasse-westseite/ (1. Quartal 2021, PBL) (alter Eintrag) --- #: by: http://www.infravelo.de/projekt/moeckernstrasse-westseite-2/ (3. Quartal 2021 - 4. Quartal 2021) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ostseite zwischen Hornstr. und Obentrautstr. wird auch saniert) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9983 (Frage) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10016 (Antrag, abgelehnt) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1137745.php (Poller) --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/poller-gegen-falschparker_a325790 --- #: source_id: viz2021:13.38022,52.49874,19.07.2021,07:00 (bis 20.9.2021) --- #: osm_watch: way id="240451922" version="23" --- #: XXX kommen hier noch Poller/Leitboys hin? -> es wurde nur zur Gehwegseite hin gepollert. Mehr kommt hier wohl nicht. --- #: last_checked: 2021-11-09 --- #: check_frequency: 30d --- #: next_check: 2021-10-22
 Grünbeschichtung	RW4; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
@@ -9344,8 +9343,7 @@ Tempo 10	RW6;RW6 -7628,15071 -7613,15192
 Tempo 10	RW6;RW6 -7523,14969 -7517,15052 -7511,15160
 Tempo 10	RW6;RW6 -7523,14969 -7387,14951
 #
-#: note: als Fahrrad*zone* ausgeschildert
-	RW7;RW7 6293,7875 6263,7894 6178,7899
+# REMOVED (mittlerweile wieder entfernt; Fußgänger dürfen hier nicht mehr laufen) --- #: note: als Fahrrad*zone* ausgeschildert ---	RW7;RW7 6293,7875 6263,7894 6178,7899
 # 
 	RW6;RW6 5799,7880 5800,7826
 # 

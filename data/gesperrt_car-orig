@@ -96,7 +96,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-14
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -250,7 +250,7 @@ Hohenfriedbergstr.	3 7790,9126 7790,8918 7791,8882
 Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8918 7707,8919
 Hohenfriedbergstr. - Brunhildstr.	3 7707,8919 7790,8918 7790,9126
 Olga-Benario-Prestes-Str.	1 12628,14650 12473,14763
-Filandastr.	3nocross 5676,5488 5675,5573 5673,5664 5672,5751
+Filandastr.	3nocross 5671,5489 5675,5573 5676,5664 5672,5751
 Gelnitzstr.	1 22885,5835 22900,5740
 Kurfürstendamm	3nocross 2770,10024 2828,10040 2974,10081
 Kurfürstendamm	3nocross 3111,10116 3189,10141 3289,10174 3374,10201
@@ -718,7 +718,7 @@ Eisenbahnstr. (Fürstenwalde)	1 55401,-3599 55423,-3769 55456,-4023 55447,-4247
 Krebsgang	1 14693,7168 14792,7192
 Methfesselstr.: Durchfahrt gesperrt (Schranke)	3 * 9125,9078 *
 #: note: Luftbild
-Neue Filandastr./Filandatr.	3nocross 5676,5488 5675,5470 5671,5389 5659,5313
+Neue Filandastr./Filandatr.	3nocross 5671,5489 5672,5469 5666,5392 5643,5301
 Müllerstr.: Mittelstreifen	3nocross 6005,16712 5923,16784 5894,16810 5772,16919
 #: note: Fußgängerfurt mit abgesenkten Bordsteinen existiert
 Müllerstr.: Mittelstreifen	3nocross 5490,17173 5589,17081 5772,16919
@@ -1187,7 +1187,7 @@ Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 # REMOVED --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4183&options=4 --- #: XXX: Wird die Einbahnstraßenregelung in der Hans-Sachs-Str. für Radfahrer aufgehoben? --- #: last_checked: 2012-09-05 (by Kay Leonhardt) --- #: next_check: 2012-12-15
 #: by: https://www.tagesspiegel.de/berlin/bezirke/einbahnstrasse-wird-umgedreht-kein-durchgangsverkehr-mehr-am-berliner-bahnhof-lichterfelde-west-12765722.html (Umsetzung in der ersten Jahreshälfte 2025)
 #: XXX wird die Einbahnstraßenregelung umgedreht?
-#: last_checked: 2025-04-06 (mapillary)
+#: last_checked: 2025-05-12 (mapillary)
 #: next_check: 2025-06-30 (Tsp)
 Hans-Sachs-Str.	1 3141,4023 3214,4066
 Anhaltinerstr.	1 682,2660 720,2718

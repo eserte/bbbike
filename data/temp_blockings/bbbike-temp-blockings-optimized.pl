@@ -3334,6 +3334,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 #: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
 #: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
 #: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/
 #: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023) (inaktiv)
 #: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024) (inaktiv)
@@ -4712,9 +4713,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch: note 3210197 4
-#: last_checked: 2025-02-22
-# REMOVED --- #: check_frequency: 150d
-#: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-05-14
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -5370,7 +5371,7 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: osm_watch: way id="229990468" version="7"
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2025-01-08
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 	2::inwork 7673,4223 7769,4315
@@ -5623,7 +5624,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 31.12.2024
 #: also_indoor: traffic (none)
-#: last_checked: 2025-05-05
+#: last_checked: 2025-05-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-31 (daf)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5771,6 +5772,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1444072.php
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/ (7 bis 23 Uhr, hier nur Kfz-Verkehr)
 Spreestr.	2::temp 17782,5698 17807,5730 17810,5736 17877,5860
 Schnellerstr.	2::temp 18013,5627 17916,5675 17807,5730
 Flutstr.	2::temp 17916,5675 17931,5695
@@ -5788,9 +5790,9 @@ Michael-Brückner-Platz	2::temp 17728,5756 17807,5730
                               5
                             ]
                           ],
-         'text' => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 17.5.2025 von 13:00 bis 20:00 Uhr',
+         'text' => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 17.5.2025 von 07:00 bis 23:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1747504800
+         'until' => 1747515600
        },
        undef,
        undef,
@@ -6067,7 +6069,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: last_checked: 2025-02-04 (mapillary) vvv
+#: last_checked: 2025-05-12 (mapillary) vvv
 #: next_check: 2025-08-29 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
@@ -7487,7 +7489,7 @@ Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559 4321,125
          'data' => '#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-04-26 (mapillary) vvv
+#: last_checked: 2025-05-12 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
@@ -7597,13 +7599,15 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
-#: also_indoor: traffic (B,T,ex-G)
-#: note: bei Bing & TomTom nur die östliche Anbindung als gesperrt markiert
+#: also_indoor: traffic (B,T,re-G)
+#: note: bei Bing & TomTom & Google nur die östliche Anbindung als gesperrt markiert
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-04-14 (traffic) vvv
+#: last_checked: 2025-05-14 (traffic) vvv
 #: check_frequency: 30d vvv
+#: next_check: 2025-11-06 (VIZ-Verkehrsmeldung) vvv
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -7785,7 +7789,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-04-23 vvv
+#: last_checked: 2025-05-14 vvv
 #: check_frequency: 21d vvv
 #: osm_watch: way id="26158804" version="25"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -7891,8 +7895,8 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
          'data' => '#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
 #: osm_watch: note 4383533 4
 #: osm_watch: way id="37948631" version="9"
-#: also_indoor: traffic (H,G,B,T,A,W)
-#: last_checked: 2025-05-01 (osm note)
+#: also_indoor: traffic (ex-H,G,B,T,A,ex-W)
+#: last_checked: 2025-05-14 (traffic)
 #: check_frequency: 14d (traffic + altlandsberg website)
 #: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
@@ -7995,14 +7999,14 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-04-15 (osm note)
+#: last_checked: 2025-05-14 (research)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-01
 	2::inwork 24769,48739 24781,48768 24766,48828
 ',
          'from' => 1724611975,
          'id' => 4149,
-         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Mitte 2025',
+         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Mitte oder sogar Ende 2025',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8477,7 +8481,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        {
          'data' => '#: also_indoor: traffic (G,T,B,A)
-#: last_checked: 2025-04-23
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545
@@ -9304,14 +9308,28 @@ Mollstr.: verschmutzte Fahrbahn	q3::inwork; 11913,13077 11841,13087
          'until' => 1761840000
        },
        {
-         'data' => '#: source_id: viz2021:13.332624,52.455792,05.05.2025,08:25 (bis 14.05.2025 + weitere Arbeiten)
+         'data' => '#: source_id: viz2021:13.332624,52.455792,05.05.2025,08:25 (bis 14.05.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.332647,52.456942,14.05.2025,09:00 (bis 14.07.2025 + weitere Arbeiten)
+#: note: Außerdem: Gehweg Richtung Süden für Radfahrer frei; gesamte Fahrbahn Richtung Süden ist gegen den Bürgersteig abgesperrt
 	q4::inwork 5588,5579 5675,5573
-	q4::inwork 5673,5664 5587,5655
+	q4::inwork 5676,5664 5587,5655
+#	3nocross::ignrte 5672,5751 5676,5664 5675,5573 5671,5489
+Filandastr. -> Wuthenowstr.	3::inwork 5672,5751 5676,5664 5840,5679
+Filandastr. -> Althoffpl.	3::inwork 5675,5573 5676,5664 5587,5655
+Wuthenowstr. -> Filandastr.	3::inwork 5840,5679 5676,5664 5675,5573
+Wuthenowstr. -> Althoffpl.	3::inwork 5840,5679 5676,5664 5587,5655
+Althoffpl. -> Filandastr.	3::inwork 5587,5655 5676,5664 5672,5751
+Althoffpl. -> Wuthenowstr.	3::inwork 5587,5655 5676,5664 5840,5679
+Filandastr. -> Kantstr.	3::inwork 5676,5664 5675,5573 5838,5563
+Filandastr. -> Althoffpl.	3::inwork 5671,5489 5675,5573 5588,5579
+Althoffpl. -> Filandastr.	3::inwork 5588,5579 5675,5573 5676,5664
+Althoffpl. -> Kantstr.	3::inwork 5588,5579 5675,5573 5838,5563
+Kantstr. -> Filandastr.	3::inwork 5838,5563 5675,5573 5671,5489
+Kantstr. -> Althoffpl.	3::inwork 5838,5563 5675,5573 5588,5579
 ',
          'from' => 1746339900,
          'id' => 4321,
-         'text' => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, vom 05.05.2025 08:25 bis 14.07.2025 17:00',
+         'text' => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, Überquerung der Filandastr. nicht möglich, vom 05.05.2025 08:25 bis 14.07.2025 17:00',
          'type' => 'handicap',
          'until' => 1752505200
        },
@@ -9373,7 +9391,9 @@ Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,1
        {
          'data' => '#: source_id: viz2021:13.59872,52.50501,08.05.2025,09:57
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lopunzh3jc2v
-#: last_checked: 2025-05-09 (Verkehrsmeldung)
+#: note: bei rbb mittlerweile entfernt
+#: also_indoor: traffic (H,G,T,A,W)
+#: last_checked: 2025-05-14 (traffic)
 #: check_frequency: 10d
 	q4::inwork 23679,11372 23654,11285 23648,11265
 ',
@@ -9421,20 +9441,48 @@ Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,1
          'type' => 'handicap',
          'until' => 1750543199
        },
+       undef,
        {
-         'data' => '#: source_id: viz2021:13.402728,52.516282,13.05.2025,09:00 (bis 14.05.2025)
-#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250512 (Sperrung am 13.5.2025 09:00-18:00 Uhr, sowie am 14.5.2025 von 06:00-17:00 Uhr)
-#: by: https://www.bmvg.de/de/aktuelles/mehr-als-1000-teilnehmer-zu-un-peacekeeping-ministerial-erwartet-5937272 (vermutete Veranstaltung; im Auswärtigen Amt)
-#: note: Die Spandauer Str. wurde als Parkplatzfläche benutzt, Polizeiautos haben die Einfahrt in die Straße versperrt, unklar, ob Radfahrer durchgekommen wären.
-Französische Str. - Rathausstr.	2::temp 9972,12184 10029,12208 10091,12232 10109,12238 10174,12284 10199,12251 10285,12306 10357,12356 10416,12394 10475,12438 10580,12513 10599,12526
-Breite Str.	2::temp 10285,12306 10383,12191 10480,12077 10512,12039
-Spandauer Str.	2::temp 10687,12421 10646,12470 10599,12526 10542,12587 10431,12709
+         'data' => '#: last_checked: 2025-05-14
+#: check_frequency: 14d
+	2::inwork 10431,10606 10492,10582
 ',
-         'from' => 1747033200,
-         'id' => 4333,
-         'text' => 'Französische Str., Schlossplatz, Breite Str., Rathausstr. und Spandauer Straße: Sperrung (Sicherheitskonferenz), evtl. sind auch Radfahrer betroffen, am 14.05.2025 von 06:00 bis 17:00 Uhr',
+         'from' => undef,
+         'id' => 4334,
+         'text' => 'Alexandrinenstr. - Wassertorstr.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
-         'until' => 1747234800
+         'until' => undef
+       },
+       {
+         'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2
+#: also_indoor: traffic (G,T[zu wenig])
+#: last_checked: 2025-05-14 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2025-10-31 (Baustellenschild) vvv
+Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
+Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1747223796,
+         'id' => 4335,
+         'text' => 'Brandenburgische Str., Borstellstr.: Bauarbeiten, Fahrbahn gesperrt, vermutlich bis Oktober 2025',
+         'type' => 'handicap',
+         'until' => 1761951600
+       },
+       {
+         'data' => '#: XXX Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann.
+#: also_indoor: traffic (G)
+#: osm_watch: way id="1376570531" version="3"
+#: last_checked: 2025-05-14
+	2::inwork 8404,3648 8461,3410
+',
+         'from' => undef,
+         'id' => 4336,
+         'text' => 'Altes Gaswerk Mariendorf: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

@@ -274,7 +274,7 @@ Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18029
 Hardenbergplatz	1 5542,11075 5560,11124 5600,11143 5627,11210 5618,11255 5666,11362 5698,11333 5600,11114 5542,11075
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8340,3242 8327,2987
-Dederingstr.	1 8455,2977 8476,3367
+Dederingstr.	1 8455,2979 8476,3367
 Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
 Quickborner Str.	1s:q4 8016,21499 8078,21415 8162,21302
 #: by: Jessaï Arakelian
@@ -1366,7 +1366,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/einbahnstrassenregelung-nicht-fuer-radler_a400589 (siehe Antrag oben)
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="20"
-#: last_checked: 2025-02-22
+#: last_checked: 2025-05-14
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
@@ -1736,6 +1736,8 @@ Teltower Damm [Nebenfahrbahn]	1 786,3090 712,2885
 Potsdamer Str.: Mittelstreifen	3nocross 669,3119 786,3090 820,3081
 # 
 Kreisverkehr Zur Alten Flussbadeanstalt	1 16389,9633 16388,9614 16376,9602 16355,9603 16355,9622 16368,9632 16389,9633
+# 
+Filandastr.: Mittelstreifen	3nocross 5643,5301 5610,5227 5583,5179
 # 
 #: section ^^^
 ######################################################################
@@ -4217,8 +4219,10 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 # 
 #: by: https://www.potsdam.de/de/stadtbad-park-babelsberg-baustart-im-september (bis Frühjahr 2025)
+#: by: https://entwicklungsstadt.de/stadtbad-park-babelsberg-eroeffnung-fuer-juli-2025-angekuendigt/
+#: osm_watch: way id="1212090206" version="2"
 #: last_checked: 2024-02-24
-#: next_check: 2025-05-15
+#: next_check: 2025-07-05 (entwicklungsstadt)
 Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::inwork -11486,-1008 -11452,-974
 # 
 #: next_check_id: KANZLERPARK-2024
@@ -4662,7 +4666,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: note: Dieser Eintrag existiert auch noch als aktiver bbbike-temp-blockings-Eintrag.
 #: osm_watch: way id="229990468" version="7"
-#: last_checked: 2025-01-08
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
@@ -4740,7 +4744,7 @@ Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17
 #: by: https://www.deutsches-architekturforum.de/thread/10894-projekte-rund-um-das-bnd-areal/?postID=742860#post742860 (laut Baustellenschild der Wasserbetriebe bis September 2026)
 #: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
-#: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025)
+#: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025) (bis 31.08.2026)
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
@@ -4918,7 +4922,7 @@ Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-05-13 vvv
+#: last_checked: 2025-05-14 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5067,7 +5071,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="60333311" version="35"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="289966097" version="24"
 #: priority: #A
-#: last_checked: 2025-05-10 (webcam)
+#: last_checked: 2025-05-14 (webcam)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 # REMOVED (existiert nicht mehr) --- Grunerstr.: Straßenzug wird entfernt	2::inwork 10697,12303 10746,12364
@@ -5133,7 +5137,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_16_1065_1112_online.pdf (Umlegungsverfahren (für den B-Plan))
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf (Umlegungsverfahren, Berichtigung)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2025-05-10 (webcam)
+#: last_checked: 2025-05-14 (webcam)
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5141,7 +5145,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-05-10 (webcam)
+#: last_checked: 2025-05-14 (webcam)
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5176,7 +5180,7 @@ Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,
 #: osm_watch: way id="588431071" version="8"
 #: osm_watch: way id="696227207" version="4"
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
-#: last_checked: 2025-01-08
+#: last_checked: 2025-05-14
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-08-05
 #: next_check: 2025-12-31
@@ -5742,7 +5746,7 @@ tragen (4 Stufen) oder schmale Rampe benutzen	0:5 13009,14616
 tragen (3 Stufen) oder schmale Rampe benutzen	0:5 12982,14629
 tragen (8 Stufen)	0:15 5575,5801
 tragen (12 Stufen)	0:20 5581,5828
-Althoffplatz	1 5675,5573 5588,5579 5588,5622 5587,5655 5673,5664
+Althoffplatz	1 5675,5573 5588,5579 5588,5622 5587,5655 5676,5664
 Elisenstr.: tragen (3 Stufen)	0:15 5813,5354
 tragen (9 Stufen)	0:30 5822,5388
 tragen (3 x 10 Stufen)	0:90 5535,4756
