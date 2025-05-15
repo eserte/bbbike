@@ -349,18 +349,18 @@ for my $file (@files) {
 	     # fresh Mapillary URL
 	     {
 		 my $date_from = $begincheck_date;
-		 push @extra_url_defs, ['Mapillary', 'https://www.mapillary.com/app/?lat='.$py.'&lng='.$px.'&z=15' . ($date_from ? '&dateFrom='.$date_from : '')];
+		 push @extra_url_defs, ['Mapillary', 'mapillary:lat='.$py.'&lng='.$px.'&z=15' . ($date_from ? '&dateFrom='.$date_from : '')];
 	     }
 
 	     if ($dir->{osm_watch}) {
 		 for my $osm_watch (@{ $dir->{osm_watch} }) {
 		     if ($osm_watch =~ m{^(\S+)\s+id="(\d+)"}) {
 			 my($type, $id) = ($1, $2);
-			 my $url = "https://www.openstreetmap.org/$type/$id";
+			 my $url = "osm:$type/$id";
 			 push @extra_url_defs, ["OSM-Watch", $url];
 		     } elsif ($osm_watch =~ m{^note\s+(\d+)}) {
 			 my($id) = ($1);
-			 my $url = "https://www.openstreetmap.org/note/$id";
+			 my $url = "osm:note/$id";
 			 push @extra_url_defs, ["OSM-Note", $url];
 		     } else {
 			 warn "Cannot parse osm_watch directive '$osm_watch'\n";
@@ -486,11 +486,11 @@ for my $file (@files) {
 		     push @layers, 'Y'; # CyclOSM
 		 }
 		 push @layers, 'N'; # always turn notes on
-		 push @extra_url_defs, ['OSM', 'https://www.openstreetmap.org/?mlat='.$py.'&mlon='.$px.'#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
+		 push @extra_url_defs, ['OSM', 'osm:?mlat='.$py.'&mlon='.$px.'#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
 	     }
 
 	     # BBBike Leaflet URL
-	     push @extra_url_defs, ['BBBike-Leaflet', 'http://www.bbbike.de/cgi-bin/bbbikeleaflet.cgi?zoom=16&coords=' . join('!', @{ $r->[Strassen::COORDS] })];
+	     push @extra_url_defs, ['BBBike-Leaflet', 'bbbikeleaflet:zoom=16&coords=' . join('!', @{ $r->[Strassen::COORDS] })];
 
 	     # Apple Maps URL
 	     push @extra_url_defs, ['Apple', sprintf('https://maps.apple.com/?ll=%s,%s&z=20&t=m',$py,$px)]; # interesting details like cycle lanes visible from zoom level 20 (assumed), however Apple Maps on iOS does not zoom that far initially
@@ -860,6 +860,9 @@ if ($expired_statistics_logfile) {
 #+OPTIONS: author:nil
 #+HTML_HEAD: <style>div.outline-3 { background: #EEE; margin-top:10px; margin-bottom:10px; padding-top:2px; padding-bottom:2px; } .timestamp { color: #6e6e6e; }</style>
 #+LINK: vizmap https://viz.berlin.de/site/_masterportal/berlin/index.html?Map/layerIds=basemap_raster_farbe,Verkehrslage,Baustellen_OCIT&visibility=true,true,true&transparency=40,0,0&Map/zoomLevel=11&Map/center=%s
+#+LINK: osm https://osm.org/%s
+#+LINK: mapillary https://www.mapillary.com/app/?%s
+#+LINK: bbbikeleaflet http://www.bbbike.de/cgi-bin/bbbikeleaflet.cgi?%s
 # Local variables:
 # compile-command: "$compile_command"
 # End:
