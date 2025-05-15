@@ -3338,6 +3338,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 #: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023) (inaktiv)
 #: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024) (inaktiv)
+#: source_id: viz2021:13.374677,52.516116,16.05.2025,12:00 (bis 18.05.2025)
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -3391,10 +3392,9 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (B,T)
-#: last_checked: 2025-04-16
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: check_frequency: 30d (outdoor)
+#: also_indoor: traffic (B,T,G)
+#: last_checked: 2025-05-15 (traffic)
+#: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
          'from' => 1719810000,
@@ -4712,7 +4712,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (neue Baustellenampel in der Daimlerstr., bis Ende April 2025)
 #: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
-#: osm_watch: note 3210197 4
+#: osm_watch: note 3210197 5
 #: last_checked: 2025-05-14
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -6301,29 +6301,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.458659,52.491036,01.08.2024,07:00 (bis 11.09.2024) (bis 31.12.2024) (bis 16.12.2024) (bis 27.01.2025) (bis 28.01.2025 + weitere Arbeiten) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025) (bis 19.09.2025)
-#: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 16.12.2024) (bis 27.01.2025) (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.04.2025) (bis 19.09.2025)
-#: source_id: viz2021:13.45767,52.49173,03.12.2024,13:55 (bis 16.12.2024) (inaktiv)
-#: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025) (inaktiv)
-#: note: mittlerweile kann man hier eigentlich ganz gut fahren (deshalb nun Konjunktiv im Text)
-#: last_checked: 2025-05-13 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2025-09-19 (VIZ-Verkehrsmeldung) vvv
-# REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14242,9448
-nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14242,9448 14185,9509 14089,9610
-# REMOVED (mittlerweile ist das Absperrgitter weg) --- #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18) --- Trampelpfad vom Treptower Park: Absperrung	2::inwork 14242,9448 14316,9542
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3675,
-         'text' => 'Am Treptower Park: Rad- und Gehweg Richtung Kreuzberg kann wegen Bauarbeiten gesperrt sein',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7011,7 +6989,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
        undef,
        undef,
        {
-         'data' => '#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv) (bis 31.05.2025)
+         'data' => '#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv) (bis 31.05.2025) (bis 06.06.2025)
 # REMOVED (hier nicht mehr) ---	q4::inwork 22917,30635 22770,30813
 # REMOVED (hier nicht) ---	q4::inwork 22770,30813 22690,30909
 # REMOVED (hier nicht mehr) ---	q4::inwork; 22850,30562 22917,30635
@@ -7019,9 +6997,9 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 ',
          'from' => 1689487200,
          'id' => 3902,
-         'text' => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, bis 31.05.2025 16:00 Uhr',
+         'text' => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, bis 06.06.2025 16:00 Uhr',
          'type' => 'handicap',
-         'until' => 1748700000
+         'until' => 1749218400
        },
        undef,
        undef,
@@ -7451,6 +7429,7 @@ nördliche Rathenower Str.: Überfahrt gesperrt	2::inwork 6730,14021 6719,14047
 #: note: zurzeit (2024-06) ist der Abschitt Siemenssteg und östlich Röntgenbrücke noch offen (aber ein Routing ist in BBBike nicht möglich, weil die Treppenzugänge fehlen)
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
 #: osm_watch[closed]: note 4210969 6
+#: add_fragezeichen: Sind die Bauarbeiten vollständig beendet? vvv
 #: last_checked: 2025-04-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
@@ -7463,12 +7442,13 @@ Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559 4321,125
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => 1709576392,
          'id' => 4016,
          'text' => 'Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, voraussichtlich bis Ende Mai 2025',
          'type' => 'gesperrt',
-         'until' => 1748728800
+         'until' => undef
        },
        undef,
        undef,
@@ -7548,33 +7528,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'type' => 'gesperrt',
          'until' => 1767196800
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php (bis 30.04.2024)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782276897810076078
-#: by: https://pbs.twimg.com/media/GLiNYstXkAAufMY?format=jpg
-#: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/bauarbeiten-auf-der-heerstrasse_a427027
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1848230483064422642
-#: by: https://pbs.twimg.com/media/GaL2rpXW0AMZXNM?format=jpg&name=large
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1557975.php
-#: source_id: viz2021:13.575882,52.491161,22.04.2024,07:00 (hier: Chemnitzer Str., nur Kfz-Verkehr, bis 24.04.2024) (inaktiv)
-#: source_id: viz2021:13.573669,52.491793,22.04.2024,07:00 (hier: Heerstr., nur Kfz-Verkehr, nur bis 26.04.2024) (inaktiv)
-#: source_id: viz2021:13.57589,52.49118,22.04.2024,07:00 (bis 26.04.2024) (inaktiv)
-#: source_id: viz2021:13.57143,52.492403,21.10.2024,07:00 (hier nur Kfz-Verkehr, bis 01.11.2024) (inaktiv)
-#: source_id: viz2021:13.569868,52.492665,13.05.2025,07:00 (hier nur Kfz-Verkehr, bis 16.05.2025)
-# REMOVED ---	q4::inwork 22129,9702 21988,9766 21859,9822 21842,9829
-# REMOVED --- Bergedorfer Str./An der Wuhle: Einbahnstraße	q4::inwork; 22103,9465 21915,9523 21806,9550 21695,9577 21635,9592 21692,9727 21749,9856
-# REMOVED --- Tieflanfstr./Eschelberger Weg: Einbahnstraße	q4::inwork; 21842,9829 21822,9681 21954,9640 22116,9585
-# REMOVED --- Finkenstr./Adolf-Menzel-Str.: Sperrung des Kreuzungsbereichs	q3::inwork 21954,9640 21988,9766 22013,9919
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1491891.php
-# REMOVED ---	q4::inwork 21988,9766 21859,9822 21842,9829 21749,9856 21691,9874 21650,9884 21611,9893 --- An der Wuhle - Lammersdorfer Weg	3 21692,9727 21749,9856 21782,10007 --- Lammersdorfer Weg - An der Wuhle	3 21782,10007 21749,9856 21692,9727
-	q4::inwork 21749,9856 21691,9874 21650,9884 21611,9893 21594,9895
-',
-         'from' => 1746914400,
-         'id' => 4043,
-         'text' => 'Heerstr.: Bauarbeiten zwischen Lammersdorfer Weg und Dramburger Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 12. Mai 2025 bis 16. Mai 2025',
-         'type' => 'handicap',
-         'until' => 1747411200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php
@@ -9083,13 +9037,14 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'until' => 1748012400
        },
        {
-         'data' => '#: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
+         'data' => '#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
+#: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen
 #: note: nächste Sperrung: Zinsgutstraße; Beginn voraussichtlich ab Mitte Mai 2025
-#: next_check: 2025-05-15 (nächste Sperrung Zinsgutstraße)
+#: note: übernächste Sperrungen: Gellertstr., Gutenbergstr.; Beginn voraussichtlich ab 21. Mai 2025
+#: next_check: 2025-05-19 (nächste Sperrung Zinsgutstraße)
 #: XXX hier bis Mitte Juli 2025
 # REMOVED --- #: next_check: 2025-07-15
 #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt?
@@ -9483,6 +9438,44 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
          'text' => 'Altes Gaswerk Mariendorf: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: note: laut rbb: 14. Mai, 06 Uhr bis 22. Mai, 18 Uhr
+#: note: Koppenstr. im Bereich der Unterführung explizit mit "Radfahrer frei"-Schildern versehen
+#: also_indoor: traffic (G,W,T[nur Koppenstr])
+Erich-Steinfurth-Str.: Fahrbahn per Vz 250 gesperrt	q3::inwork 12660,11705 12634,11705 12608,11692
+Erich-Steinfurth-Str.: Fahrbahn gesperrt, Bürgersteig frei	q4::inwork 12608,11692 12453,11790
+Erich-Steinfurth-Str.: im Bereich des Hermann-Stöhr-Platzes komplett gesperrt	2::inwork 12378,11806 12453,11790
+Hermann-Stöhr-Platz: Diagonalverbindung komplett gesperrt	2::inwork 12413,11901 12453,11790
+',
+         'from' => 1747108800,
+         'id' => 4337,
+         'text' => 'Erich-Steinfurth-Str., Hermann-Stöhr-Platz: Sperrungen, vom 14. Mai 2025 06:00 bis 22. Mai 2025 18:00',
+         'type' => 'gesperrt',
+         'until' => 1747929600
+       },
+       {
+         'data' => '#: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten)
+#: last_checked: 2025-05-15
+#: check_frequency: 30d
+#: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
+	q4::inwork; 15016,11431 14949,11474 14849,11539
+',
+         'from' => 1746939600,
+         'id' => 4338,
+         'text' => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, vom 12.05.2025 07:00 bis 28.07.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1753714800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.32289,52.499283,15.05.2025,07:00 (bis 24.06.2025)
+	q4::inwork 4930,10368 4910,10135
+',
+         'from' => 1747198800,
+         'id' => 4339,
+         'text' => 'Pfalzburger Str. (Wilmersdorf): Bauarbeiten zwischen Lietzenburger Str. und Ludwigkirchplatz, evtl. sind auch Radfahrer betroffen, vom 15.05.2025 07:00 bis 24.06.2025 23:59',
+         'type' => 'handicap',
+         'until' => 1750802340
        }
      
 );

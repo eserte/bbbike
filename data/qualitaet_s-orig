@@ -1165,9 +1165,9 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2025-05-10
+#: last_checked: 2025-05-15
 #: check_frequency: 30d
-#: next_check: 2025-05-31 (osm note)
+# REMOVED --- #: next_check: 2025-05-31 (osm note)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
 Seumestr.: Kopfsteinpflaster	Q2- 14395,11753 14358,11656 14305,11514 14254,11377
@@ -12183,7 +12183,7 @@ Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-pepp-fuer-gruenanlage_a429121
 #: XXX Umgestaltung (und Entsiegelung) bis April 2025 --- ändert sich etwas an den Wegen?
 #: XXX Umbauarbeiten im östlichen Bereich, Weg wird neu gemacht, laut Aushang bis April 2025, wird aber vermutlich länger dauern
-#: osm_watch: note 4706090 1
+#: osm_watch: note 4706090 2
 #: last_checked: 2025-05-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-30
@@ -13771,7 +13771,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2025-04-20 vvv
+#: last_checked: 2025-05-15 vvv
 #: check_frequency: 60d vvv
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^

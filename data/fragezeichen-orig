@@ -121,7 +121,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 90
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
 #: osm_watch: way id="667331289" version="7"
-#: last_checked: 2025-04-20
+#: last_checked: 2025-05-15
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -902,7 +902,7 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: next_check: 2025-06-11 (VIZ-Verkehrsmeldung)
 Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 # 
-# REMOVED (realisiert) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX AT.1 --- #: last_checked: 2021-07-21 (osm) --- #: check_frequency: 30d --- Am Treptower Park: Einrichtung einer Radverkehrsanlage geplant	?::projected; 14185,9509 14089,9610
+# REMOVED (realisiert) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX AT.1 --- #: last_checked: 2021-07-21 (osm) --- #: check_frequency: 30d --- Am Treptower Park: Einrichtung einer Radverkehrsanlage geplant	?::projected; 14185,9509 14149,9546 14089,9610
 # 
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf
@@ -2111,7 +2111,7 @@ Marienpark: Straße (asphaltiert) in Bau	?::inwork 8163,3660 8124,3706 8106,3745 
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2025-05-14
+#: last_checked: 2025-05-15
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -3464,10 +3464,10 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14281,84
 #: next_check_id: BAB100-2022
 #: XXX offene Fragen: wird es eine Anbindung zum Bahndamm Richtung Görlitzer Park geben (angedacht ist es, aber wird vermutlich nicht zeitig realisiert werden)? wird es eine Anbindung zur Beermannstr. geben? wird es eine Anbindung zu Am Treptower Park geben (hier eher nicht, der Platz scheint nicht zu reichen)?
 #: XXX außerdem wird es auch einen Betriebsweg auf der westlichen Seite geben, aber das wird wohl eine Sackgasse sein
-#: last_checked: 2025-05-13
+#: last_checked: 2025-05-15
 #: check_frequency: 90d
 #: next_check: 2025-09-01 (Tsp)
-Betriebsweg Kiefholzstr. - Görlitzer Bahn/Beermannstr.	?::inwork 14137,8983 14173,9018 14144,9092 14129,9137 14117,9233 14082,9267 14088,9299 14131,9356 14135,9384 14119,9405 14131,9470
+Betriebsweg Kiefholzstr. - Görlitzer Bahn/Beermannstr.	?::inwork 14137,8983 14173,9018 14144,9092 14129,9137 14117,9233 14082,9267 14088,9299 14131,9356 14135,9384 14119,9405 14149,9546
 # 
 # REMOVED --- #: last_checked: 2014-05-10 --- #: check_frequency: 100d --- #: XXX laut osm existiert der Weg schon --- #: by: http://www.potsdam.de/sites/default/files/documents/16297_amtsblatt_27-7_dsjs_final.pdf --- Uferweg zum Türkstr. (Potsdam)	?::inwork -11913,-1032 -11906,-989 -11866,-993 -11851,-962 -11821,-923
 # REMOVED --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (enthält Bebauungsplan Schiffbauergasse)  --- existiert hier ein Uferweg für Radfahrer? Qualität?	? -11821,-923 -11816,-903 -11836,-879 -11790,-812 -11751,-822 -11686,-765 -11622,-709 -11676,-627 -11753,-515 -11790,-537
@@ -4030,12 +4030,12 @@ Grunewaldstr.: geschützter Radfahrstreifen von Kufsteiner Str./Bamberger Str. bi
 #: last_checked ^^^
 #: source_id: viz2021:13.349444,52.48949,24.03.2025,07:00 (bis 24.04.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.35319,52.48988,24.03.2025,00:00 (bis 24.04.2025) (inaktiv)
-#: source_id: viz2021:13.356365,52.490201,14.05.2025,11:00 (bis 16.06.2025)
+#: source_id: viz2021:13.356365,52.490201,14.05.2025,11:00 (bis 16.06.2025) (bis 08.07.2025)
 #: XXX zwischen Goltzstr. und Martin-Luther-Str. Richtung Westen in Bau --- laut osm note mittlerweile fertig (teilweise fehlen noch Leitboys)
 #: note: bei rbb bis 09.07.2025 verlängert, bei VIZ nicht
 #: last_checked: 2025-04-27 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-06-16 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-07-08 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-09-30 (infravelo) vvv
 #: osm_watch: way id="4531624" version="32"
 #: osm_watch: way id="4531625" version="32"
@@ -5605,9 +5605,12 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516792.php (in Umsetzung bzw. kurz davor)
-#: last_checked: 2025-04-21 vvv
+#: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (hier: Höhe Ingrid-Reschke-Str., aber tatsächlich Höhe An den Eiswerken, bis 20.07.2025)
+#: last_checked: 2025-05-15 vvv
 #: check_frequency: 90d vvv
+#: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 14988,10778 15004,10791 15019,10803
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -6028,8 +6031,8 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2016
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="18"
-#: also_indoor: traffic
-#: last_checked: 2025-04-16 (traffic)
+#: also_indoor: traffic (none)
+#: last_checked: 2025-05-15 (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 60d (outdoor checks)
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -6294,7 +6297,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-05-07
+#: last_checked: 2025-05-15
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -7440,7 +7443,7 @@ Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltier
 # REMOVED --- #: osm_watch: node id="1650096479" version="8"
 #: osm_watch: way id="1168938182" version="5"
 #: also_indoor: search Wolziger_Zeile
-#: last_checked: 2025-04-16 (pardok)
+#: last_checked: 2025-05-15 (indoor research)
 #: check_frequency: 30d (indoor research)
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung (muss aber vermutlich verlängert werden))
@@ -7578,7 +7581,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-05-10
+#: last_checked: 2025-05-15
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -7604,7 +7607,7 @@ Niemannstr.: Teileinziehung geplant	? 14211,11229 14254,11377
 Simplonstr.: Teileinziehung geplant	? 14181,11434 14254,11377
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf
-#: last_checked: 2025-04-30 vvv
+#: last_checked: 2025-05-15 vvv
 #: check_frequency: 30d vvv
 Simplonstr.: Teileinziehung geplant	? 13996,11631 13992,11605 14031,11569
 Gabriel-Max-Str.: Teileinziehung geplant	? 14065,11605 14049,11553
@@ -7765,14 +7768,14 @@ Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 1
 #: by: https://www.infravelo.de/projekt/am-treptower-park/ (2. Quartal 2025 - 3. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408769475/kein-geld-fuer-verkehrssicherheit-ost-bezirke-weisen-kritik-zurueck.html (Verzögerung, Umsetzung erst 2027-2028?)
 #: XXX mittlerweile wurde bereits im Zuge der Umgestaltung der Kreuzung Elsenstr./Am Treptower Park eine Radwegauffahrt gebaut; außerdem siehe provisorische Führung des Radverkehr Richtung Nordwesten
-#: last_checked: 2025-05-13
+#: last_checked: 2025-05-15
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (infravelo)
 Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 14031,9673 13860,9861
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: note: Radfahrer werden hier in beiden Richtungen überqueren dürfen; Richtung Nordwesten geht es weiter als Zweirichtungsradweg, zusätzlich zum normalen Radweg
-#: last_checked: 2025-05-14
+#: last_checked: 2025-05-15
 #: check_frequency: 60d
 Am Treptower Park: Bau einer Ampel	?::inwork 14244,9432 14242,9448 14239,9467
 # 
@@ -8379,7 +8382,7 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20240925 (Eröffnung, davor Sperrung der B96 für den Straßenverkehr)
 #: XXX Wenn der Bahnübergang aufgegeben wird, dann müsste man den Rest auf N degradieren
 #: osm_watch: way id="1322461292" version="9" brb
-#: osm_watch: way id="538382840" version="16" brb
+#: osm_watch: way id="538382840" version="17" brb
 #: last_checked: 2024-11-11 (osm)
 ehemalige B246 (Zossen): wird der Bahnübergang aufgegeben?	? 13390,-20515 13412,-20513 13526,-20548
 # 
@@ -8841,7 +8844,7 @@ Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	? 14783,11949 14675,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: note: erste Pfosten stehen bereits, mit meist zugehängten Schildern, einige Schilder schon (illegal?) nicht mehr zugehangen, außerdem erste Markierungen (Radspuren gegen die Einbahnstraßenrichtung); laut Aushängen im Februar (2025) aktiv, ist aber offensichtlich verzögert
-#: last_checked: 2025-05-12 vvv
+#: last_checked: 2025-05-15 vvv
 #: check_frequency: 10d vvv
 #: osm_watch: way id="1145133960" version="3"
 Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14354,12012 14468,11992 14589,11975
@@ -8899,6 +8902,7 @@ Weichselstr.: Einbahnstraße für Kfz in Vorbereitung	? 14926,12129 14888,11934
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrich-ludwig-jahn-sportpark.734/#post-24561
 #: by: https://entwicklungsstadt.de/artenschutz-ignoriert-kritik-an-baumfaellungen-im-jahnsportpark/
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1558841.php (Beschluss des Bebauungsplans 3-87)
+#: by: https://entwicklungsstadt.de/neuer-jahnsportpark-senat-bringt-bebauungsplan-auf-den-weg/
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: last_checked: 2025-03-29 vvv
@@ -8997,7 +9001,7 @@ Straße 35: gibt es eine Straße mit diesem Namen hier? Qualtität?	? 30014,2781 30
 Spektegrabensteg: Neubau geplant	?::projected -7211,15920 -7277,15966
 # 
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025)
-#: last_checked: 2025-04-16
+#: last_checked: 2025-05-15 (indoor check)
 #: check_frequency: 30d (indoor checks)
 #: next_check: 2025-12-31 (SenMVKU website)
 Südparkbrücke: Neubau geplant	?::projected -4048,12107 -4033,12108
@@ -11413,11 +11417,12 @@ Knoten Marzahn: Neubau	?::inwork 19467,15045 19633,15098
 #: by: https://berliner-abendblatt.de/berlin-news/scholz-verzicht-auf-kanzleramt-erweiterung-waere-falsch-id230051
 #: by: https://entwicklungsstadt.de/erweiterung-bis-2027-das-bundeskanzleramt-waechst/
 #: by: https://entwicklungsstadt.de/erweiterung-des-kanzleramtes-bis-2028-baukosten-steigen-deutlich/
+#: by: https://www.tagesspiegel.de/berlin/gerade-in-krisenzeiten-das-kanzleramt-wird-weiter-ausgebaut-13694338.html
 #: XXX im Zuge des Bebauungsplans 1-106 (Moabiter Werder)
 #: XXX: laut BBR-Projektleitung sollen die Arbeiten (zumindest diejenigen, die die Uferwege beeinträchtigen?) im 2. Quartal 2026 abgeschlossen sein
 #: last_checked: 2025-03-03 (daf)
 #: check_frequency: 360d
-#: next_check: 2027-12-31 (entwicklungsstadt)
+#: next_check: 2028-12-31 (entwicklungsstadt, Tsp)
 Bundeskanzleramt: hier wird eine Brücke "für die Allgemeinheit" entstehen --- auch für Radfahrer nutzbar?	?::projected 7662,12624 7745,12625
 # 
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1110112.php

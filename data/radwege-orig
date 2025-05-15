@@ -1336,7 +1336,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-05-14 vvv
+#: last_checked: 2025-05-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1873,12 +1873,16 @@ asphaltiert	RW1; 27761,-3165 27721,-3164
 Verbundsteinpflaster	RW1; 15166,8489 15378,8668 15558,8820 15591,8848
 die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,8668
 # 
-#: historical_note: während der Bauarbeiten: Asphalt, provisorische Wegführung	RW8; 14089,9610 14185,9509 14242,9448
+#: historical_note: während der Bauarbeiten: Asphalt, provisorische Wegführung	RW8; 14089,9610 14149,9546 14185,9509 14242,9448
 #: historical_note: früher: Verbundsteinpflaster
-Asphalt, relativ breit	RW2; 14089,9610 14185,9509
+Asphalt, relativ breit	RW2; 14089,9610 14149,9546
+#: historical_note: früher: Verbundsteinpflaster
+#: note: Zweirichtungsradweg
+Asphalt, relativ breit	RW2; 14149,9546 14185,9509
 #: historical_note: früher: alter, schadhafter Asphalt
+#: note: Zweirichtungsradweg
 Asphalt, relativ breit	RW2; 14185,9509 14242,9448
-Asphalt, relativ breit	RW2; 14185,9509 14089,9610
+Asphalt, relativ breit	RW2; 14185,9509 14149,9546 14089,9610
 # 
 alter, schadhafter Asphalt	RW1; 14242,9448 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651
 Verbundsteinpflaster	RW1; 15002,8651 15070,8584 15079,8575 15166,8489
@@ -3013,8 +3017,8 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1; mittlerweile (Januar 2025) ist es wieder da
-#: last_checked: 2025-05-10
-#: check_frequency: 60d
+#: last_checked: 2025-05-15
+#: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 	RW2; 12543,11521 12645,11673
 	RW3; 12645,11673 12660,11705 12676,11739 12728,11850 12758,11915
@@ -3153,14 +3157,9 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552
 #: note: früher (vor 2020?) Mo-Fr 6-20 Uhr und Sa 8-14 Uhr
 Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei	RW5; 13892,9365 13923,9405 13973,9465 14060,9574
 asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
-#: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv)
-#: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
-#: XXX früherer Eintrag, wird vielleicht wieder hergestellt: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0;
-#: last_checked: 2025-05-13
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2024-12-31
-provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 13973,9465
+# REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
+#: historical_note: früher, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
+Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 14089,9610 14060,9574 13973,9465
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
@@ -5095,7 +5094,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 #: historical_note: früher: Gehweg für Radfahrer frei, älterer Asphalt, schmal
 #: historical_note: früher: stellenweise (etwa 100m) sollen Radfahrer absteigen
 #: XXX laut infravelo-Foto ist ein Radfahrstreifen auf der westlichen sowie ein asphaltierter Gehweg (Radfahrer frei in beiden Richtungen) auf der östlichen Seite entstanden
-#: osm_watch: way id="24403109" version="43"
+#: osm_watch: way id="24403109" version="44"
 #: last_checked: 2023-03-08 (mapillary)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2024-09-30

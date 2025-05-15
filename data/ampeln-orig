@@ -12,13 +12,14 @@
 #: valid: -20250627
 Roelckestr./Große Seestr.: provisorische Ampel	X::inwork 13754,17133
 # 
-# REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
-# REMOVED --- #: source_id: viz2021:13.35635,52.49021,25.04.2025,10:06 (bis 15.05.2025) (inaktiv)
-# REMOVED --- #: source_id: viz2021:13.356365,52.490201,24.04.2025,12:00 (bis 15.05.2025 + weitere Bauabschnitte) (inaktiv)
-# REMOVED --- #: last_checked: 2025-04-27
-# REMOVED --- #: next_check: 2025-05-15
-# REMOVED --- # REMOVED --- #: valid: -20250515
-# REMOVED --- Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
+#: next_check_id: GRUNEWALDSTR-2025
+#: source_id: viz2021:13.35635,52.49021,25.04.2025,10:06 (bis 15.05.2025) (inaktiv)
+#: source_id: viz2021:13.356365,52.490201,24.04.2025,12:00 (bis 15.05.2025 + weitere Bauabschnitte) (inaktiv)
+#: note: bei rbb bis 08.07.2025 verlängert
+#: last_checked: 2025-04-27
+#: next_check: 2025-07-08
+#: valid: -20250708
+Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
 # 
 #: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025) (bis 22.05.2025) (bis 24.06.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lnmh7lfw4k2j
@@ -30,6 +31,7 @@ Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 17037,4794
 #: next_check ^^^
 # 
 #: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten) (bis 04.06.2025 + ...)
+#: source_id: viz2021:13.26522,52.45642,15.05.2025,15:55 (bis 04.06.2025)
 #: next_check: 2025-06-04
 Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # 
@@ -274,14 +276,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-05-07
+#: last_checked: 2025-05-15
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-04-26
+#: last_checked: 2025-05-15
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -504,8 +506,8 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2025-05-10
-#: check_frequency: 60d
+#: last_checked: 2025-05-15
+#: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # 
@@ -2824,7 +2826,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-05-14
+#: last_checked: 2025-05-15
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
