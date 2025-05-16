@@ -28926,7 +28926,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-05-06
+#: last_checked: 2025-05-16
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -36494,9 +36494,11 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1444072.php
 #: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/ (7 bis 23 Uhr, hier nur Kfz-Verkehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpckiu26pk22
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid4uubfwzjppj4kxwi7podteh6y73tqqcct3aytuy3zkp65rhl4ta@jpeg
 Spreestr.	2::temp 17782,5698 17807,5730 17810,5736 17877,5860
 Schnellerstr.	2::temp 18013,5627 17916,5675 17807,5730
-Flutstr.	2::temp 17916,5675 17931,5695
+Flutstr.	2::temp 17916,5675 17931,5695 17980,5721
 Michael-Brückner-Platz	2::temp 17728,5756 17807,5730
 EOF
      },
@@ -44485,7 +44487,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-05-06 vvv
+#: last_checked: 2025-05-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45240,7 +45242,7 @@ EOF
 #: osm_watch: way id="1119255054" version="8"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-05-08 (mapillary)
+#: last_checked: 2025-05-16
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -47156,7 +47158,7 @@ EOF
        text  => 'Melchow - Spechthausen: Deckenerneuerung, Sperrung, 07.04.2025 08:00 Uhr bis 16.05.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/25/030 (bis 10.05.2025) (bis 16.05.2025)
+#: source_id: LS/221-E/25/030 (bis 10.05.2025) (bis 16.05.2025) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~08-05-2025-l200-zw-melchow-u-spechthausen
 	2::inwork 34802,45368 34613,45287 34518,45231 34093,44866 32572,43561 32518,43468 32401,42954 32348,42876 30754,42070
 EOF
@@ -47519,7 +47521,7 @@ EOF
        text  => 'Falkensee - Alt Brieselang: Bauarbeiten, Sperrung, 05.05.2025 08:00 Uhr bis 16.05.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/25/062 (bis 16.05.2025)
+#: source_id: LS/223-P/25/062 (bis 16.05.2025) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~29-04-2025-l-201-falkensee
 	2::inwork -14661,21652 -15188,21966 -15440,22048
 EOF
@@ -47544,11 +47546,12 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
-#: last_checked: 2025-05-06 vvv
+#: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
+#: last_checked: 2025-05-16 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
-Mollstr.: verschmutzte Fahrbahn	q3::inwork; 11913,13077 11841,13087
+Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

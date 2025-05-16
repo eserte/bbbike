@@ -187,7 +187,7 @@ Kieler Str. - Schloßstr.: linker Gehweg	DH:h=q3,30 5030,5800 4998,5817 4982,5789
 # 
 Hornstr. - Yorckstr.: linker Gehweg	DH:h=q3,50 8980,9751 9002,9731 9047,9750
 # 
-Sachsendamm - Torgauer Str.: linker Gehweg	DH:h=q3,80 6935,8208 7001,8161 7014,8165 7158,8208
+Dominicusstr. - Torgauer Str.: linker Gehweg	DH:h=q3,80 6935,8208 7001,8161 7014,8165 7158,8208
 # 
 Berliner Allee - Streustr.: linker Gehweg	DH:h=q3,40 13398,15826 13425,15846 13263,15930
 # 
@@ -540,7 +540,7 @@ Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen
 #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-03-29 vvv
+#: last_checked: 2025-05-16 vvv
 #: next_check: 2027-09-30 vvv
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13481,13128 13434,13234 13383,13349
@@ -583,11 +583,11 @@ Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 # REMOVED --- #: valid: -20250305
 # REMOVED --- Allee der Kosmonauten: Umweg von etwa 60m notwendig	DH:len=60:h=q3,60 18149,13505 18226,13506
 # 
-#: source_id: viz2021:13.384239,52.555888,18.02.2025,10:41 (bis 16.05.2025) (bis 30.05.2025)
+#: source_id: viz2021:13.384239,52.555888,18.02.2025,10:41 (bis 16.05.2025) (bis 30.05.2025) (bis 15.07.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/wasserrohrbruch-auf-der-osloer-strasse-in-gesundbrunnen/
 #: last_checked: 2025-04-02 (mapillary)
-#: next_check: 2025-05-30
-#: valid: -20250530
+#: next_check: 2025-07-15
+#: valid: -20250715
 Osloer Str.: Umweg von etwa 20m	DH:len=20:h=q2,20 9442,16610 9514,16603
 # 
 #: temporary ^^^

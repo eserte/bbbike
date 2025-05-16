@@ -94,6 +94,8 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_04_0245_0352_online.pdf (B-Planänderung, der reduzierte Bereich wird zukünftig in 7-105 VE behandelt)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9682 (Antrag zum Verkehrskonzept)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/protest-gegen-rucknahme-von-verkehrsberuhigung-initiativen-kritisieren-beschluss-in-berlin-schoneberg-13665511.html
+#: by: https://entwicklungsstadt.de/hochhaus-statt-tankstelle-oeffentlichkeitsbeteiligung-fuer-bueroprojekt-am-sachsendamm-gestartet/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_21_1285_1376_online.pdf (Straßenlandwidmung, kleine Fläche)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="23"
 #: last_checked: 2025-01-08
@@ -219,6 +221,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025) (bis 19.09.2025)
+#: source_id: viz2021:13.45427,52.4939,16.05.2025,14:26 (bis 19.09.2025)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
 #: last_checked: 2025-05-15
 # REMOVED --- #: check_frequency: 30d
@@ -2558,7 +2561,7 @@ Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21623,15357 21647,15496
 Blumberger Damm: Mittelstreifen	3nocross 21139,11830 21135,11799 21108,11628
 Rudower Chaussee: Straßenbahntrasse	3nocross 19206,2848 19242,2876 19324,2939
 Rudower Chaussee: Straßenbahntrasse	3nocross 19574,3186 19598,3212 19728,3351
-Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7001,8161 7073,8081
+Sachsendamm/Dominicusstr.: Mittelstreifen mit Geländer	3nocross 6935,8208 7001,8161 7073,8081
 Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11916,11846 11764,12001
 Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8380,8545
@@ -3993,7 +3996,7 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101 12946,1
 #: osm_watch: note 4545425 2
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
-#: last_checked: 2025-04-29
+#: last_checked: 2025-05-16
 #: check_frequency: 120d
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
@@ -4159,7 +4162,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-04-28
+#: last_checked: 2025-05-16
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4472,7 +4475,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-05-06
+#: last_checked: 2025-05-16
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -5011,7 +5014,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: note 3954448 5
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2025-05-06
+#: last_checked: 2025-05-16
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-12-31
@@ -5138,7 +5141,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_16_1065_1112_online.pdf (Umlegungsverfahren (für den B-Plan))
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf (Umlegungsverfahren, Berichtigung)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2025-05-14 (webcam)
+#: last_checked: 2025-05-16
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5146,7 +5149,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-05-14 (webcam)
+#: last_checked: 2025-05-16
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5154,7 +5157,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # 
 #: osm_watch: note 4480556 3
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-05-08 (traffic)
+#: last_checked: 2025-05-16
 #: check_frequency: 14d (traffic)
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 

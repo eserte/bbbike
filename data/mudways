@@ -154,7 +154,7 @@ Stadtpark Steglitz: Parkweg	X 5890,4674 5841,4557 5836,4469 5787,4400
 # REMOVED --- #: note: mittlerweile hat sich eine etwas breitere Spur neben dem eigentlichen Weg gebildet, die sowohl von Fußgängern als auch Radfahrern genutzt wird, sofern der Platz da ist
 #: mud: 2025-02-22: etwas matschige Oberfläche	note=Tauwetter, deshalb evtl. nicht mit der Bodenfeuchte zusammenhängend, ansonsten h=q2,wet
 #: mud: 2025-03-26: keine Beeinträchtigungen	h=q0
-#: mud: 2025-05-14: keine Beeinträchtigungen	h=q0
+#: mud: 2025-05-14: keine Beeinträchtigungen, etwas staubig	h=q0
 Weverpromenade: wassergebundene Decke	X 5787,4400 5738,4361 5721,4356 5541,4305
 # 
 # REMOVED (Sanierung Dez 2024/Jan 2025; ältere Einträge entfernt)
@@ -641,6 +641,7 @@ Hausvaterweg: unbefestigte Straße	X 20281,18690 20347,18667
 #: mud: 2023-10-21: etwas feuchtere Oberfläche, am Eingang Hermannstr. einige Pfützen	h=q2+,wet
 #: mud: 2024-05-12: keine Beeinträchtigungen	h=q0
 #: mud: 2024-08-02: keine Beeinträchtigungen	h=q0
+#: mud: 2025-05-14: keine Beeinträchtigungen, etwas staubig	h=q0
 (Weg am Friedhof): Parkweg	X 11608,7267 11687,7284 12185,7381
 # 
 #: mud: 2022-02-02: matschige Stellen und Pfützen	h=q2-,wet
@@ -931,5 +932,6 @@ Windhuker Str.: wassergebundene Decke	X 5426,16539 5712,16245 5748,16235
 #: mud: 2024-12-16: einige matschige Stellen und kleine Pfützen	h=q2,wet
 #: mud: 2025-02-04: feuchte Oberfläche und einige kleine Pfützen	h=q2+,wet
 #: mud: 2025-04-30: keine Beeinträchtigungen	h=q0
+#: mud: 2025-05-16: einige matschige Stellen und kleine Pfützen	note=Wäre eigentlich h=q2,wet, allerdings gab's einige Stunden vorher ein Gewitter mit Starkregen
 (Volkspark Friedrichshain): Parkweg	X 12161,13711 12145,13628
 # 
