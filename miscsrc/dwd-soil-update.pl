@@ -19,7 +19,7 @@ use File::Basename qw(basename);
 use File::Path qw(make_path);
 use Getopt::Long;
 use LWP::UserAgent;
-use IO::Uncompress::Gunzip;
+use IO::Uncompress::Gunzip qw($GunzipError);
 
 use lib "$FindBin::RealBin/..";
 
@@ -97,11 +97,24 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
 	print STDERR " historical file does not exist -> need update\n";
 	$need_update = 1;
     } else {
-	my $last_historical_line = `gunzip -c $historical_file | tail -1`;
+	my $last_historical_line = sub {
+	    my $fh = IO::Uncompress::Gunzip->new($historical_file)
+		or die "Can't gunzip $historical_file: $GunzipError\n";
+	    my $last_line;
+	    while(<$fh>) {
+		$last_line = $_;
+	    }
+	    $last_line;
+	}->();
 	my(undef, $historical_date) = split /;/, $last_historical_line;
 	my $historical_year = substr($historical_date, 0, 4);
-	my $recent_file = "$soil_dwd_dir/recent/derived_germany_soil_daily_recent_v2_${station}.txt.gz";
-	my $first_recent_line = `gunzip -c $recent_file | head -2 | tail -1`;
+	my $first_recent_line = sub {
+	    my $recent_file = "$soil_dwd_dir/recent/derived_germany_soil_daily_recent_v2_${station}.txt.gz";
+	    my $fh = IO::Uncompress::Gunzip->new($recent_file)
+		or die "Can't gunzip $recent_file: $GunzipError\n";
+	    <$fh>; # header
+	    scalar <$fh>; # first recent line
+	}->();
 	my(undef, $recent_date) = split /;/, $first_recent_line;
 	my $recent_year = substr($recent_date, 0, 4);
 	if ($recent_year - $historical_year != 1) {
@@ -131,7 +144,7 @@ chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 for my $station (sort {$a<=>$b} keys %stations) {
     my $f = "derived_germany_soil_daily_recent_v2_${station}.txt.gz";
     my $fh = IO::Uncompress::Gunzip->new($f)
-	or die "Can't gunzip $f (in directory $soil_dwd_dir/recent): $IO::Uncompress::Gunzip::GunzipError\n";
+	or die "Can't gunzip $f (in directory $soil_dwd_dir/recent): $GunzipError\n";
     my $got_line;
     while(<$fh>) {
 	chomp;
