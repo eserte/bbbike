@@ -1016,10 +1016,11 @@ Boddinstr.: Sperrung an der Karl-Marx-Str.	q3::inwork 12368,8356 12582,8408
 # REMOVED --- Rhinstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18024,13843 18050,13835 18134,13811 18198,13816
 # 
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2025
-#: note: eigentlich gibt es auch Beschränkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt möglich
-#: last_checked: 2025-04-04
+#: note: eigentlich gibt es auch Beschränkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt möglich; mittlerweile (Mitte Mai 2025) ist ein Abschnitt der Archenholdstr. gesperrt, Halteverbotsschilder bis 27.5.2025
+#: also_indoor: traffic (none)
+#: last_checked: 2025-05-17
 #: check_frequency: 45d
-#: next_check: 2025-06-01
+#: next_check: 2025-05-27 (Halteverbotsschilder)
 #: valid: -20250630
 Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 17155,11348
 # 
@@ -1047,7 +1048,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-05-07
+#: last_checked: 2025-05-17
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1135,8 +1136,8 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Marzahn ###
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
-#: also_indoor: traffic (B,T,re-H)
-#: last_checked: 2025-05-05 (traffic)
+#: also_indoor: traffic (B,T,ex-H)
+#: last_checked: 2025-05-17 (traffic)
 #: check_frequency: 14d (traffic)
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 

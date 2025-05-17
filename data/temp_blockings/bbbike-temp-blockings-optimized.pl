@@ -4712,7 +4712,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (neue Baustellenampel in der Daimlerstr., bis Ende April 2025)
 #: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
-#: osm_watch: note 3210197 5
+#: osm_watch: note 3210197 6
 #: last_checked: 2025-05-14
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -5775,6 +5775,8 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/ (7 bis 23 Uhr, hier nur Kfz-Verkehr)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpckiu26pk22
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid4uubfwzjppj4kxwi7podteh6y73tqqcct3aytuy3zkp65rhl4ta
+#: source_id: viz2021:13.51394,52.45526,17.05.2025,00:00 (bis 17.05.2025)
+#: source_id: viz2021:13.510985,52.455901,17.05.2025,00:00 (bis 17.05.2025)
 Spreestr.	2::temp 17782,5698 17807,5730 17810,5736 17877,5860
 Schnellerstr.	2::temp 18013,5627 17916,5675 17807,5730
 Flutstr.	2::temp 17916,5675 17931,5695 17980,5721
@@ -6129,7 +6131,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-05-07
+#: last_checked: 2025-05-17
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6707,13 +6709,12 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        undef,
        {
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: note: Am Alten Lokschuppen: am 2023-06-02 sind trotzdem Leute durchgelaufen und durchgefahren; am 2023-07-04 sind die Bauzäune undurchlässiger und erkennbar passieren Bauarbeiten
-#: note: Hauffstr.: Halteverbotsschilder an der Ecke Hauffstr./Spittastr. bis 31.10.2024; Durchgang bis zum Sporplatz+Spielplatz ist zurzeit vom Spittastr.-Ende noch möglich
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
+#: note: Hauffstr.: Stand Mitte Mai 2025: Durchfahrt an einem Samstag (außerhalb der Arbeitszeiten?) problemlos möglich, aber offiziell nur der Durchgang zum Sport/Spielplatz möglich
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-04-29 (osm)
-#: check_frequency: 90d
+#: last_checked: 2025-05-17
+#: check_frequency: 21d
 #: next_check: 2025-06-30 (DB-Mail)
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
 #: osm_watch: way id="1025826786" version="14"
@@ -7980,7 +7981,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-05-05 (website) vvv
+#: last_checked: 2025-05-17 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -8110,6 +8111,7 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
 #: by: https://viz.berlin.de/aktuelle-meldungen/neubau-der-bruecke-uber-die-wollankstrasse/ (weitere Vollsperrung von Mitte Juni bis Dezember 2025)
 #: by: https://www.tagesspiegel.de/berlin/schon-wieder-einen-monat-vollsperrung-diese-baustelle-im-berliner-norden-verlangt-allen-gute-nerven-ab-13314622.html
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250405 (nächste Sperrung Juni - Dez 2025)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250517 (nächste Sperrung 6. Juni 2025 - 1. Dez 2025)
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id[inactive]: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
 #: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
@@ -8122,12 +8124,12 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
 #: osm_watch: way id="23984383" version="35"
 #: osm_watch[closed]: note 4536637 10
 #: last_checked: 2025-04-25
-#: next_check: 2025-06-14
+#: next_check: 2025-06-06
 	2::inwork 9544,17629 9586,17665
 ',
-         'from' => 1749852000,
+         'from' => 1749074400,
          'id' => 4171,
-         'text' => 'Wollankstr.: Neubau der Bahnbrücke, voraussichtlich Vollsperrung vom 15.06.2025 bis 01.12.2025',
+         'text' => 'Wollankstr.: Neubau der Bahnbrücke, voraussichtlich Vollsperrung vom 06.06.2025 bis 01.12.2025',
          'type' => 'gesperrt',
          'until' => 1764608400
        },
@@ -8421,7 +8423,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-04-18
+#: last_checked: 2025-05-17
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -8539,9 +8541,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
 #: note: bei rbb mittlerweile "Bis auf weiteres"
-#: also_indoor: traffic (H,T,A)
+#: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-05-09 (traffic)
+#: last_checked: 2025-05-17 (traffic)
 #: check_frequency: 10d
 	q4::inwork 2396,9427 2467,9425 2592,9419
 ',
@@ -8831,13 +8833,15 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
        {
          'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1899342020227080235 (hier nur Kfz-Verkehr)
 #: by: https://pbs.twimg.com/media/GlsnQ01XwAAbqgj?format=jpg&name=medium (gesperrte Bereiche je 40m lang)
+#: last_checked: 2025-05-17 vvv
 #: next_check: 2025-05-23 vvv
 #: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 23.05.2025 + ...)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
 #: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 24.04.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten)
-#Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
+# REMOVED (hier nicht mehr) --- Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 #: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1741586400,
          'id' => 4279,
@@ -9141,7 +9145,7 @@ Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275 20981,4628 20981,469
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G,T)
-#: osm_watch: way id="1237862681" version="4"
+#: osm_watch: way id="1237862681" version="5"
 #: osm_watch: way id="4871838" version="28"
 #: osm_watch: way id="1237862680" version="2"
 #: osm_watch: way id="1237862682" version="2"
@@ -9459,6 +9463,39 @@ Hermann-Stöhr-Platz: Diagonalverbindung komplett gesperrt	2::inwork 12413,11901 
          'text' => 'Pfalzburger Str. (Wilmersdorf): Bauarbeiten zwischen Lietzenburger Str. und Ludwigkirchplatz, evtl. sind auch Radfahrer betroffen, vom 15.05.2025 07:00 bis 24.06.2025 23:59',
          'type' => 'handicap',
          'until' => 1750802340
+       },
+       {
+         'data' => '#: also_indoor: traffic (none)
+#: last_checked: 2025-05-17
+	q4::inwork 16915,11634 16977,11769
+',
+         'from' => undef,
+         'id' => 4340,
+         'text' => 'Wönnichstr.: Fahrbahn zwischen Einbecker Str. und Irenenstr. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: note: frühere Veranstaltungstage: 14.5.2022, ...
+#: by: https://www.berlin.de/events/7467849-2229501-viva-victoria-stadtteilfest-in-lichtenbe.html
+	q4::temp 15434,11086 15359,11115 15461,11313
+	q4::temp 15245,11162 15359,11115 15279,10862
+',
+         'from' => 1747396800,
+         'id' => 4341,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Pfarrstr. und Kaskelstr.: Straßenfest (Viva Victoria), am 17.5.2025 von 14 bis 22 Uhr',
+         'type' => 'handicap',
+         'until' => 1747512000
        }
      
 );
