@@ -19,6 +19,7 @@ use File::Basename qw(basename);
 use File::Path qw(make_path);
 use Getopt::Long;
 use LWP::UserAgent;
+use IO::Uncompress::Gunzip;
 
 use lib "$FindBin::RealBin/..";
 
@@ -38,11 +39,20 @@ my %stations = qw(
 
 my $q;
 my $soil_dwd_dir;
+my $for_date;
 GetOptions(
     "q|quiet" => \$q,
     "soil-dwd-dir=s" => \$soil_dwd_dir,
+    "date=s" => \$for_date,
 )
-    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory]\n";
+    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD]\n";
+
+if ($for_date) {
+    $for_date =~ s/-//g;
+    if ($for_date !~ /^\d{8}$/) {
+	die "--date value must by YYYY-MM-DD or YYYYMMDD\n";
+    }
+}
 
 if (bbbike_aux_dir) {
     $soil_dwd_dir = bbbike_aux_dir . "/data/soil_dwd";
@@ -119,9 +129,31 @@ my $date_index = 1;
 my $bf_index = 12;
 chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 for my $station (sort {$a<=>$b} keys %stations) {
-    chomp(my $last_line = `gunzip -c derived_germany_soil_daily_recent_v2_${station}.txt.gz | tail -1`);
-    my @f = split /;/, $last_line;
-    printf "%-12s: %s %s\n", $stations{$station}||$station, $f[$date_index], $f[$bf_index];
+    my $f = "derived_germany_soil_daily_recent_v2_${station}.txt.gz";
+    my $fh = IO::Uncompress::Gunzip->new($f)
+	or die "Can't gunzip $f (in directory $soil_dwd_dir/recent): $IO::Uncompress::Gunzip::GunzipError\n";
+    my $got_line;
+    while(<$fh>) {
+	chomp;
+	if (defined $for_date) {
+	    my @f = split /;/, $_;
+	    next if $f[$date_index] ne $for_date;
+	    $got_line = $_;
+	    last;
+	} else {
+	    if (eof $fh) {
+		$got_line = $_;
+		last;
+	    }
+	}
+    }
+    my $station_id = $stations{$station}||$station;
+    if (!$got_line) {
+	printf "%-12s: no data\n", $station_id;
+    } else {
+	my @f = split /;/, $got_line;
+	printf "%-12s: %s %s\n", $station_id, $f[$date_index], $f[$bf_index];
+    }
 }
 
 __END__
