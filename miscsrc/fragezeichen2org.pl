@@ -450,6 +450,7 @@ for my $file (@files) {
 			     push @extra_url_defs, ['BVG' . ($inactive ? '(inactive)' : ''), $bvg_url];
 			 }
 		     } elsif ($source_id =~ m{^viz2021:}) { # note: other VIZ id patterns (LS/..., LMS-...) cannot be used here due to lacking coordinates in the id
+			 my($px,$py) = ($px,$py);
 			 if ($source_id =~ m{^viz2021:(-?[\d\.]+),(-?[\d\.]+)}) {
 			     ($px,$py) = ($1,$2);
 			 }
