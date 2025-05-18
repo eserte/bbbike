@@ -57,7 +57,7 @@ $data_source = "vbb";
 use vars qw($use_search);
 $use_search = 1 if !defined $use_search;
 
-use vars qw(@dep_board_urls);
+use vars qw(@dep_infos);
 
 my $bbbike_root = bbbike_root;
 
@@ -222,19 +222,31 @@ sub choose {
 				 -height => $LIMIT_LB,
 				)->grid(-column => $col, -row => 1, -sticky => 'news');
 	my $start_lb_popup = $t->Menu(-tearoff => 0);
-	my $current_dep_board_url;
+	my $current_index;
 	$start_lb_popup->add(
 	    'command',
 	    -label => M"Abfahrtstafel",
-	    -command => sub { show_departure_table($current_dep_board_url) }
+	    -command => sub {
+		my $url = $dep_infos[$current_index]->{DepBoardURL};
+		show_departure_table($url);
+	    },
+	);
+	$start_lb_popup->add(
+	    'command',
+	    -label => M"bahn.expert (nur Bahnhöfe)",
+	    -command => sub {
+		my $station_name = $dep_infos[$current_index]->{StationName};
+		show_bahn_expert($station_name)
+	    },
 	);
 	my $start_lb_lb = $start_lb->Subwidget('scrolled');
 	$start_lb_lb->bind('<Button-3>' => sub {
 			       my $e = $_[0]->XEvent;
 			       my $index = $start_lb_lb->nearest($e->y);
-			       return unless defined $index;
-			       $current_dep_board_url = $dep_board_urls[$index];
-			       $start_lb_popup->Popup(-popover => 'cursor');
+			       $current_index = $index;
+			       if (defined $index) {
+				   $start_lb_popup->Popup(-popover => 'cursor');
+			       }
 			   });
 	$col++;
 	$f->Label(-text => M("Ziel"))->grid(-column => $col, -row => 0, -sticky => 'ew');
@@ -267,7 +279,7 @@ sub choose {
 	    $lb->insert("end", "Nothing found!");
 	} else {
 	    if ($type eq 'dep') {
-		@dep_board_urls = ();
+		@dep_infos = ();
 	    }
 
 	    for my $stop (@$stops) {
@@ -300,8 +312,17 @@ sub choose {
 		$lb->insert('end', $name); # XXX show maybe on map, somehow?
 
 		if ($type eq 'dep') {
-		    my $dep_board_url = $stop->{DepBoardURL};
-		    push @dep_board_urls, $dep_board_url;
+		    my $station_name = $r->[Strassen::NAME()];
+		    # some heuristics suitable for bahn.expert
+		    $station_name =~ s{^(S|U|S\+U)\s+}{};
+		    if ($station_name =~ s{\s+\((?<city>Berlin|Potsdam)\)$}{}) {
+			$station_name = "$+{city} $station_name";
+		    }
+		    $station_name =~ s{\s+Bhf$}{};
+		    push @dep_infos, {
+			DepBoardURL => $stop->{DepBoardURL},
+			StationName => $station_name,
+		    };
 		}
 	    }
 	    $lb->selectionSet(0);
@@ -375,6 +396,11 @@ sub show_departure_table {
 	return;
     }
     start_browser($current_dep_board_url);
+}
+
+sub show_bahn_expert {
+    my($station_name) = @_;
+    start_browser("https://bahn.expert/$station_name");
 }
 
 sub search {
