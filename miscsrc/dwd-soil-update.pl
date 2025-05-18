@@ -47,10 +47,10 @@ GetOptions(
     "date=s" => \$for_date,
     "as=s" => \$as,
 )
-    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD] [--as text|json]\n";
+    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD] [--as text|json|mapping]\n";
 
-$as =~ m{^(text|json)$}
-    or die "--as can only be text (default) or json\n";
+$as =~ m{^(text|json|mapping)$}
+    or die "--as can only be text (default) or json or mapping\n";
 if ($as eq 'json') {
     require JSON::PP;
 }
@@ -204,6 +204,9 @@ for my $station (sort {$a<=>$b} keys %stations) {
 
 if ($as eq 'json') {
     print JSON::PP::encode_json($res), "\n";
+} elsif ($as eq 'mapping') {
+    my $bf10_mapping = join(',', map { $_->{station_id}.':'.$_->{BF10} } grep { defined $_->{BF10} } values %$res);
+    print $bf10_mapping;
 }
 
 __END__
