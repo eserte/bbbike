@@ -1058,17 +1058,11 @@ EOF
 sub prepare_mudways_prognosis {
     require JSON::PP;
 
-    open my $fh, '-|', $^X, "$bbbike_rootdir/miscsrc/dwd-soil-update.pl", '-q', '--as', 'json';
-    my $dwd_soil_json = do { local $/; <$fh> };
-    my $dwd_soil_data = eval { JSON::PP::decode_json($dwd_soil_json) };
-    if (!$dwd_soil_json) {
-	main::status_message("Cannot get soil data from DWD: $@", "die");
-    }
-
-    my $bf10_mapping = join(',', map { $_->{station_id}.':'.$_->{BF10} } grep { defined $_->{BF10} } values %$dwd_soil_data);
+    my @cmd = ($^X, "$bbbike_rootdir/miscsrc/dwd-soil-update.pl", '-q', '--as', 'mapping');
+    open my $fh, '-|', @cmd;
+    my $bf10_mapping = do { local $/; <$fh> };
     if (!$bf10_mapping) {
-	warn "json data with soil information: $dwd_soil_json";
-	main::status_message("Cannot construct BF10 mapping (more information on STDERR)", "die");
+	main::status_message("Cannot get BF10 mapping running '@cmd'", "die");
     }
 
     # XXX some duplication in dwd-soil-update.pl
