@@ -13,10 +13,17 @@
 # 
 #: section Tiergarten vvv
 #: historical_note: früher http://www.webcam-berlin-tiergarten.de/
-https://www.youtube.com/watch?v=jAL268T1lFw	WC 5958,12035 6047,11955
-https://www.youtube.com/watch?v=iEDMWm0G3Io	WC 5953,12035 5852,11932
+#: note: im Mai 2025 meldet YouTube "This video isn't available anymore"
+#: osm_watch: node id="11076974072" version="1"
+#: osm_watch: node id="11076974073" version="1"
+#: osm_watch: note 4764694 1
+https://www.youtube.com/watch?v=jAL268T1lFw	WCbroken 5958,12035 6047,11955
+https://www.youtube.com/watch?v=iEDMWm0G3Io	WCbroken 5953,12035 5852,11932
 # 
-http://berlin-webcam.illustriertestadt.de/	WC 6692,11096 6787,11112
+#: note: Teilweise kaputt: Homepage liefert am 2025-05-18 ein Bild vom 2025-03-28. In der "24 h Gallery" sieht man aktuelle Bilder, allerdings nur als kleine Thumbnails.
+#: osm_watch: node id="11076112651" version="3"
+#: osm_watch: note 4764697 1
+http://berlin-webcam.illustriertestadt.de/	WCbroken 6692,11096 6787,11112
 # 
 #: note: letztes brauchbare Bild am 2024-05-15
 #: note: mittlerweile: Server quartier-heidestrasse.contempo-webcam.de existiert nicht mehr (Mai 2025)
@@ -36,6 +43,8 @@ https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php	WCbroken 7642,1432
 #: note: mittlerweile: Server quartier-heidestrasse.contempo-webcam.de existiert nicht mehr (Mai 2025)
 https://quartier-heidestrasse.contempo-webcam.de/kamera-5.php	WCbroken 7682,13984 7647,14041
 # 
+https://portal1915.webcam-profi.de/	WC 7374,14526 7418,14453
+# 
 https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 7988,13315 7990,13418
 #: section ^^^
 # 
@@ -47,7 +56,7 @@ https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 
 https://www.berlin.de/webcams/4350926-4350835-rbb-fernsehzentrum.html	WC 1674,11250 1712,11133
 # 
 #: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80
-#: note: Seite existiert noch, aber keine Webcam-Bilder (Stand 19.2.2022 + 17.11.2023 + 19.11.2024)
+#: note: Seite existiert noch, aber keine Webcam-Bilder (Stand 19.2.2022 + 17.11.2023 + 19.11.2024 + 18.05.2025)
 # früher: http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907
 # früher: http://www.olympiastadion-berlin.de/webcam3.php	WC -517,11940 -627,11928
 # früher: http://www.olympiastadion-berlin.de/webcam5.php	WC -1262,11788 -1185,11806
@@ -74,6 +83,7 @@ https://molkenmarkt02.hi-res-cam.com/	WC 10842,12260 10790,12346
 https://www.softed.de/unternehmen/webcam_berlin.aspx	WC 8483,12941 8417,12935
 # 
 #: note: schwenkt automatisch
+#: note: auch bei YouTube: https://www.youtube.com/watch?v=IRqboacDNFg
 https://www.parkinn-berlin.de/en/panorama-terrace/	WC 10913,13028 10805,12853
 # 
 #: note: Livestream wurde im April 2023 beendet
@@ -108,6 +118,7 @@ https://trockland.webcam-profi.de/berlin/pier6163/image.jpg	WCbroken 12770,10969
 #: note: existiert nicht mehr (2024-01-15)
 #: note: mittlerweile (2024-11-19) gibt es ein Foto aus dem Sommer (2024?)
 #: osm_watch: node id="9190626241" version="4"
+#: osm_watch: note 4261256 4
 https://www.finanzen.de/webcam	WCbroken 13440,10498 13368,10637
 #: section ^^^
 # 
@@ -122,6 +133,7 @@ https://www.finanzen.de/webcam	WCbroken 13440,10498 13368,10637
 #: historical_note: früher: http://www.grosser-kahnhafen.de/index.php?option=com_content&view=article&id=63:webcam-am-grossen-spreewaldhafen&catid=39&Itemid=94
 #: historical_note: früher: https://www.grosser-kahnhafen.de/service/webcam-wetter
 #: historical_note: früher: http://www.spreewaldwetter.de/webcams/#webcam-spreewaldhafen	WC 50962,-59025
+#: note: mittlerweile (Mai 2025) insgesamt vier Webcams aus Lübbenau
 https://www.spreewaelder-lichtnacht.de/spreewaldwetter/	WC 50962,-59025
 #: section ^^^
 #
@@ -284,7 +296,7 @@ https://www.spreewaelder-lichtnacht.de/spreewaldwetter/	WC 50962,-59025
 # REMOVED (Not found) --- https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E2DB1AD/	WC 14219,7573 14347,7416
 # REMOVED (Not found) --- https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E2DB1A7/	WC 14225,7573 14361,7621
 # 
-# REMOVED (last images: Feb 2021)
+# REMOVED (last images: Feb 2021) (das Archiv ist allerdings weiterhin aktiv, zuletzt im Mai 2025 geprüft)
 # REMOVED --- https://cam01.berlinerschloss-webcam.de/	WC 10166,12252 10199,12343
 # REMOVED --- https://cam02.berlinerschloss-webcam.de/	WC 10432,12384 10323,12384
 # REMOVED --- https://cam03.berlinerschloss-webcam.de/	WC 10281,12275 10243,12331
