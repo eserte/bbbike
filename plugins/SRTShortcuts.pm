@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.22;
+$VERSION = 2.23;
 
 use File::Glob qw(bsd_glob);
 
@@ -1056,20 +1056,19 @@ EOF
 }
 
 sub prepare_mudways_prognosis {
-    open my $fh, '-|', $^X, "$bbbike_rootdir/miscsrc/dwd-soil-update.pl", '-q';
-    my $dwd_soil = do { local $/; <$fh> };
-    print STDERR "Current soil data:\n", $dwd_soil;
+    require JSON::PP;
 
-    my $dwd_station = 'Dahlem';
-    my $bf10;
-    for my $line (split /\n/, $dwd_soil) {
-	if ($line =~ m{^\Q$dwd_station\E.*\s+(\d+)$}) {
-	    $bf10 = $1;
-	    last;
-	}
+    open my $fh, '-|', $^X, "$bbbike_rootdir/miscsrc/dwd-soil-update.pl", '-q', '--as', 'json';
+    my $dwd_soil_json = do { local $/; <$fh> };
+    my $dwd_soil_data = eval { JSON::PP::decode_json($dwd_soil_json) };
+    if (!$dwd_soil_json) {
+	main::status_message("Cannot get soil data from DWD: $@", "die");
     }
-    if (!defined $bf10) {
-	main::status_message("Cannot get soil data for DWD station '$dwd_station', please see stderr for more information", "die");
+
+    my $bf10_mapping = join(',', map { $_->{station_id}.':'.$_->{BF10} } grep { defined $_->{BF10} } values %$dwd_soil_data);
+    if (!$bf10_mapping) {
+	warn "json data with soil information: $dwd_soil_json";
+	main::status_message("Cannot construct BF10 mapping (more information on STDERR)", "die");
     }
 
     # XXX some duplication in dwd-soil-update.pl
@@ -1081,7 +1080,7 @@ sub prepare_mudways_prognosis {
     }
 
     system($^X, "$bbbike_rootdir/miscsrc/mudways-enrich.pl", "--soil-dwd-dir", $soil_dwd_dir); die $? if $? != 0;
-    system($^X, "$bbbike_rootdir/miscsrc/mudways-enriched-to-handicap.pl", "--bf10=$bf10", "-o", "/tmp/mudways_prognosis.bbd"); die $? if $? != 0;
+    system($^X, "$bbbike_rootdir/miscsrc/mudways-enriched-to-handicap.pl", "--bf10-mapping=$bf10_mapping", "-o", "/tmp/mudways_prognosis.bbd"); die $? if $? != 0;
 }
 
 sub add_keybindings {
