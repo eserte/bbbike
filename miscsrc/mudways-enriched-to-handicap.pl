@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -56,19 +56,30 @@ use Strassen::Core;
 sub usage (;$) {
     my $msg = shift;
     warn $msg, "\n" if $msg;
-    die "usage: $0 --bf10 soil_moisture_value [-o outfile]\n";
+    die "usage: $0 [--bf10 soil_moisture_value|--bf10-mapping stationid:bf10,...] [-o outfile]\n";
 }
 
 my $current_bf10;
+my $current_bf10_mapping;
+my $fallback_station = 433; # Berlin-Tempelhof XXX make configurable?
 GetOptions(
 	   "bf10=i" => \$current_bf10,
+	   "bf10-mapping=s" => \$current_bf10_mapping,
 	   "o|outfile=s" => \my $outfile,
 	   "consistency-check" => \my $do_consistency_check,
 	  )
     or usage;
+if (defined $current_bf10 && $current_bf10_mapping) {
+    die "Please specify either --bf10 or --bf10-mapping, not both\n";
+}
+my %current_bf10_mapping;
+if ($current_bf10_mapping) {
+    %current_bf10_mapping = split /[:,]/, $current_bf10_mapping;
+}
+
 if (!$do_consistency_check) {
-    usage "Please specify --bf10 option."
-	if !defined $current_bf10;
+    usage "Please specify --bf10 or --bf10-mapping option."
+	if !defined $current_bf10 && !%current_bf10_mapping;
 }
 
 my $today = strftime "%Y-%m-%d", localtime;
@@ -101,7 +112,14 @@ if (!$do_consistency_check) {
 	print "#:\n";
     }
 
-    print "# Angenommener BF10-Wert: $current_bf10\n";
+    if (%current_bf10_mapping) {
+	print "# Angenommene BF10-Werte:\n";
+	for my $station_id (sort {$a<=>$b} keys %current_bf10_mapping) {
+	    print "#   $station_id: $current_bf10_mapping{$station_id}\n";
+	}
+    } else {
+	print "# Angenommener BF10-Wert: $current_bf10\n";
+    }
     print "# \n";
 }
 
@@ -111,7 +129,16 @@ if (!$do_consistency_check) {
     $s->read_stream(sub {
         my($r, $dir, $linenumber) = @_;
 
-	my $best_mud_candidate = find_best_mud_candidate($dir->{mud}, $f, $linenumber);
+	my $soil_moisture_station_number = $dir->{soil_moisture_station_number}[0];
+	my $bf10 = $current_bf10_mapping{$soil_moisture_station_number};
+	if (!defined $bf10) {
+	    $bf10 = $current_bf10_mapping{$fallback_station};
+	    if (!defined $bf10) {
+		warn "Cannot get any suitable BD10 data, tried for station '$soil_moisture_station_number' and fallback station '$fallback_station', skipping line...";
+		return;
+	    }
+	}
+	my $best_mud_candidate = find_best_mud_candidate($dir->{mud}, $f, $linenumber, $bf10);
 	my $h_directed = $best_mud_candidate->{h} . ($r->[Strassen::CAT] =~ /;$/ ? ';' : '');
 
 	if ($dir->{source_file}) {
