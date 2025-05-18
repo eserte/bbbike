@@ -40,12 +40,20 @@ my %stations = qw(
 my $q;
 my $soil_dwd_dir;
 my $for_date;
+my $as = 'text';
 GetOptions(
     "q|quiet" => \$q,
     "soil-dwd-dir=s" => \$soil_dwd_dir,
     "date=s" => \$for_date,
+    "as=s" => \$as,
 )
-    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD]\n";
+    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD] [--as text|json]\n";
+
+$as =~ m{^(text|json)$}
+    or die "--as can only be text (default) or json\n";
+if ($as eq 'json') {
+    require JSON::PP;
+}
 
 if ($for_date) {
     $for_date =~ s/-//g;
@@ -135,6 +143,8 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
 }
 $pm and $pm->wait_all_children;
 
+my $res;
+
 # Note:
 # - for v1 files the BF10 field (index 11) was printed
 # - for v2 files the BFGL01_AG field (index 12) is printed
@@ -161,12 +171,39 @@ for my $station (sort {$a<=>$b} keys %stations) {
 	}
     }
     my $station_id = $stations{$station}||$station;
+    my $this_res;
+    if ($as ne 'text') {
+	$this_res->{station_id}   = $station;
+	$this_res->{station_name} = $stations{$station};
+    }
     if (!$got_line) {
-	printf "%-12s: no data\n", $station_id;
+	if ($as ne 'text') {
+	    if (defined $for_date) {
+		$this_res->{date} = $for_date;
+	    }
+	    $this_res->{BF10} = undef;
+	} else {
+	    printf "%-12s: no data\n", $station_id;
+	}
     } else {
 	my @f = split /;/, $got_line;
-	printf "%-12s: %s %s\n", $station_id, $f[$date_index], $f[$bf_index];
+	my $date = $f[$date_index];
+	my $bf10 = $f[$bf_index];
+	if ($as ne 'text') {
+	    $this_res->{date} = $date;
+	    $bf10 =~ s{\s+}{}g; $bf10 += 0;
+	    $this_res->{BF10} = $bf10;
+	} else {
+	    printf "%-12s: %s %s\n", $station_id, $date, $bf10;
+	}
     }
+    if ($as ne 'text') {
+	$res->{$station} = $this_res;
+    }
+}
+
+if ($as eq 'json') {
+    print JSON::PP::encode_json($res), "\n";
 }
 
 __END__
