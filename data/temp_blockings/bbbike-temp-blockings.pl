@@ -22262,7 +22262,7 @@ EOF
 #: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023) (inaktiv)
 #: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024) (inaktiv)
-#: source_id: viz2021:13.374677,52.516116,16.05.2025,12:00 (bis 18.05.2025)
+#: source_id: viz2021:13.374677,52.516116,16.05.2025,12:00 (bis 18.05.2025) (inaktiv)
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -31548,7 +31548,7 @@ EOF
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-05-07 vvv
+#: last_checked: 2025-05-18 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -36496,8 +36496,8 @@ EOF
 #: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/ (7 bis 23 Uhr, hier nur Kfz-Verkehr)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpckiu26pk22
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid4uubfwzjppj4kxwi7podteh6y73tqqcct3aytuy3zkp65rhl4ta@jpeg
-#: source_id: viz2021:13.51394,52.45526,17.05.2025,00:00 (bis 17.05.2025)
-#: source_id: viz2021:13.510985,52.455901,17.05.2025,00:00 (bis 17.05.2025)
+#: source_id: viz2021:13.51394,52.45526,17.05.2025,00:00 (bis 17.05.2025) (inaktiv)
+#: source_id: viz2021:13.510985,52.455901,17.05.2025,00:00 (bis 17.05.2025) (inaktiv)
 Spreestr.	2::temp 17782,5698 17807,5730 17810,5736 17877,5860
 Schnellerstr.	2::temp 18013,5627 17916,5675 17807,5730
 Flutstr.	2::temp 17916,5675 17931,5695 17980,5721

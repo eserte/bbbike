@@ -3329,55 +3329,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-frauenlauf.de/der-tag/strecke.html
-#: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
-#: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
-#: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
-#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/
-#: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023) (inaktiv)
-#: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024) (inaktiv)
-#: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024) (inaktiv)
-#: source_id: viz2021:13.374677,52.516116,16.05.2025,12:00 (bis 18.05.2025)
-# REMOVED --- #: tempex: 20170520 vvv
-	2::temp 8055,12186 8119,12414
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
-	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
-	2::temp 6778,11742 6980,11790 7058,11809 7173,11864 7182,11870 7200,11881 7240,11907 7449,11883
-	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7648,11708 7701,11798 7706,11878 7717,11918 7772,12040 7775,12114
-	2::temp 8026,11764 8016,11770 7793,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
-	2::temp 8522,12239 8466,12197
-	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
-	2::temp 7600,11513 7621,11541 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865
-	2::temp 8221,11885 8215,12156 8214,12205
-	2::temp 8244,11878 8327,12174 8344,12221
-	3 7429,12070 7383,12095 7031,12320
-	3 7875,12363 7822,12201 7816,12150 7823,12120
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1747382400,
-         'id' => 2427,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              5,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 17. Mai 2025',
-         'type' => 'gesperrt',
-         'until' => 1747540800
-       },
+       undef,
        undef,
        undef,
        {
@@ -4768,7 +4720,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-05-07 vvv
+#: last_checked: 2025-05-18 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -5766,38 +5718,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'until' => 1758904200
        },
        undef,
-       {
-         'data' => '#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1525328801823133698#m
-#: by: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html (17. Mai 2025)
-#: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1444072.php
-#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/ (7 bis 23 Uhr, hier nur Kfz-Verkehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpckiu26pk22
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid4uubfwzjppj4kxwi7podteh6y73tqqcct3aytuy3zkp65rhl4ta
-#: source_id: viz2021:13.51394,52.45526,17.05.2025,00:00 (bis 17.05.2025)
-#: source_id: viz2021:13.510985,52.455901,17.05.2025,00:00 (bis 17.05.2025)
-Spreestr.	2::temp 17782,5698 17807,5730 17810,5736 17877,5860
-Schnellerstr.	2::temp 18013,5627 17916,5675 17807,5730
-Flutstr.	2::temp 17916,5675 17931,5695 17980,5721
-Michael-Brückner-Platz	2::temp 17728,5756 17807,5730
-',
-         'from' => 1747346400,
-         'id' => 3553,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 17.5.2025 von 07:00 bis 23:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1747515600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9474,28 +9395,6 @@ Hermann-Stöhr-Platz: Diagonalverbindung komplett gesperrt	2::inwork 12413,11901 
          'text' => 'Wönnichstr.: Fahrbahn zwischen Einbecker Str. und Irenenstr. gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
-       },
-       {
-         'data' => '#: note: frühere Veranstaltungstage: 14.5.2022, ...
-#: by: https://www.berlin.de/events/7467849-2229501-viva-victoria-stadtteilfest-in-lichtenbe.html
-	q4::temp 15434,11086 15359,11115 15461,11313
-	q4::temp 15245,11162 15359,11115 15279,10862
-',
-         'from' => 1747396800,
-         'id' => 4341,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Pfarrstr. und Kaskelstr.: Straßenfest (Viva Victoria), am 17.5.2025 von 14 bis 22 Uhr',
-         'type' => 'handicap',
-         'until' => 1747512000
        }
      
 );
