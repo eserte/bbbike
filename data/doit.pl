@@ -960,7 +960,7 @@ sub _inotifywait {
 	}
     }
     for my $dir (keys %setup_dir_inotify) {
-	$inotify->watch($dir, Linux::Inotify2::IN_MOVED_TO()|Linux::Inotify2::IN_CLOSE_WRITE()|Linux::Inotify2::IN_DELETE())
+	$inotify->watch($dir, Linux::Inotify2::IN_MOVED_TO()|Linux::Inotify2::IN_CLOSE_WRITE()|Linux::Inotify2::IN_DELETE()|Linux::Inotify2::IN_MOVED_FROM())
 	    or error "Can't watch $dir: $!";
 	info "Now watching: $dir" if $verbose;
     }
@@ -969,6 +969,7 @@ sub _inotifywait {
     $sel->add($inotify->fileno);
 
  EVENT_LOOP: while (1) {
+	info "DEBUG: waiting for inotify event (with timeout ${timeout}s)" if $debug;
 	my @ready = $sel->can_read($timeout);
 	if (!@ready) {
 	    info "Timeout after $timeout seconds" if $verbose;
@@ -996,6 +997,9 @@ sub _inotifywait {
 		    last EVENT_LOOP;
 		} elsif ($e->IN_DELETE) {
 		    info "Deleted: $file" if $verbose;
+		    last EVENT_LOOP;
+		} elsif ($e->IN_MOVED_FROM) {
+		    info "File moved away: $file" if $verbose;
 		    last EVENT_LOOP;
 		}
 	    }
