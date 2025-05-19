@@ -16552,7 +16552,7 @@ EOF
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-05-06
+#: last_checked: 2025-05-19
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -36487,7 +36487,7 @@ EOF
        recurrences => [['yearly', days => 6, months => 5]],
        text  => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 17.5.2025 von 07:00 bis 23:00 Uhr',
        type  => 'gesperrt',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1525328801823133698#m
 #: by: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html (17. Mai 2025)
 #: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
@@ -36853,6 +36853,8 @@ EOF
 #: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,22.04.2024,06:00 (bis 25.04.2024) (inaktiv)
 #: source_id: viz2021:13.36259,52.505907,24.04.2024,18:00 (bis 24.04.2024) (inaktiv)
+#: source_id: viz2021:13.35107,52.51429,05.05.2025,22:00 (bis 30.05.2025)
+#: source_id: viz2021:13.366231,52.515535,20.05.2025,06:00 (bis 22.05.2025)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/ (21. Mai 2025)
@@ -43102,7 +43104,7 @@ EOF
        type  => 'handicap',
        data => <<EOF,
 #: next_check_id: PERLEBERGER-2024
-#: source_id: viz2021:13.350567,52.532479,14.02.2024,07:00 (bis 23.09.2025)
+#: source_id: viz2021:13.350567,52.532479,14.02.2024,07:00 (bis 23.09.2025) (bis 30.10.2025 + weitere Arbeiten)
 #: source_id: bvg2021:m27#BVG342288_0
 #: source_id: bvg2021:123#BVG342289_0
 #: source_id[inactive]: bvg2024:123#HIM_FREETEXT_222657
@@ -43114,7 +43116,7 @@ EOF
 #: priority: #B vvv
 #: last_checked: 2025-04-01 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-09-23 vvv
+#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: note 4069677 10
 #: osm_watch: note 4115004 3
 #: osm_watch: note 4681980 2
@@ -45357,10 +45359,13 @@ EOF
 #: by: https://www.berliner-zeitung.de/news/bauarbeiten-am-tempelhofer-feld-diese-eingangsbereiche-werden-erneuert-li.2274683
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
+#: by: https://entwicklungsstadt.de/tempelhofer-feld-arbeiten-am-eingang-crash-gate-starten/ (ab 20.05.2025)
+#: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-05-17 (website) vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2025-05-19 (website) vvv
+#: check_frequency: 1d vvv
+# REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
 # REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
@@ -45435,7 +45440,7 @@ EOF
 #: osm_watch: way id="189141737" version="7"
 #: osm_watch: way id="1225345724" version="1"
 #: osm_watch: way id="1356785471" version="2"
-#: last_checked: 2025-04-26 vvv
+#: last_checked: 2025-05-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 (entwicklungsstadt: Abriss der ehem. Tankstelle) vvv
 	3 12207,11763 12132,11788 11966,11832
@@ -47352,25 +47357,24 @@ EOF
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
 #: note: Trafficmeldungen scheinen ungenau zu sein
-#: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen
+#: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
 #: note: nächste Sperrung: Zinsgutstraße; Beginn voraussichtlich ab Mitte Mai 2025
-#: note: übernächste Sperrungen: Gellertstr., Gutenbergstr.; Beginn voraussichtlich ab 21. Mai 2025
-#: next_check: 2025-05-19 (nächste Sperrung Zinsgutstraße)
+#: note: übernächste Sperrungen: Flemmingstr.: Beginn voraussichtlich ab 21. Mai 2025; Gutenbergstr.: Termin folgt
+#: next_check: 2025-05-21 (nächste Sperrung Flemmingstr.)
 #: XXX hier bis Mitte Juli 2025
 # REMOVED --- #: next_check: 2025-07-15
-#: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt?
-Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
-#: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben
-Radickestr.	q4::inwork 20683,3693 20776,3753
-#: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3
-Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
+# REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
+# REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
+# REMOVED --- #: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3 --- Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
 # REMOVED (abgeschlossen) --- #: note: voraussichtlich ab 09.04.2025 --- Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
 #: note: voraussichtlich ab 09.04.2025
 Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
-#: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?)
+#: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt.
 Wünschelburger Gang	q4::inwork 21008,4275 20917,4261 20850,4225 20829,4211
 #: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?)
 Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275 20981,4628 20981,4696 20994,4761
+#: note: Beginn ab dem 19.05.2025 (aber wo genau?)
+Zinsgutstr.	q4::inwork 20679,3944 20862,3824 20919,3781 21049,3657 21119,3572 21156,3477
 EOF
      },
      { from  => 1744520400, # 2025-04-13 07:00
@@ -47832,6 +47836,63 @@ EOF
 #: by: https://www.berlin.de/events/7467849-2229501-viva-victoria-stadtteilfest-in-lichtenbe.html
 	q4::temp 15434,11086 15359,11115 15461,11313
 	q4::temp 15245,11162 15359,11115 15279,10862
+EOF
+     },
+     { from  => 1745933400, # 2025-04-29 15:30
+       until => undef, # XXX
+       text  => 'Treskowallee/Edisonstraße: Durchfahrt in Höhe Rummelsburger Straße/An der Wuhlheide gesperrt, auch Radfahrer sind betroffen, vom 30.04.2025 15:30',
+       type  => 'gesperrt',
+## below generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 17880,7311 18010,7133 18225,7004\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
+       data  => <<EOF,
+#: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum)
+#: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-wuhlheide-bruecke-sofortige-sperrung-verkehr-einsturzgefahr.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/
+#: last_checked: 2025-05-19 (VIZ-Verkehrsmeldung) vvv
+#	3nocross::ignrte 17880,7311 18010,7133 18225,7004
+Rummelsburger Str. -> Treskowallee	3::inwork 17847,7356 18010,7133 18086,7243
+Rummelsburger Str. -> Eichgestell	3::inwork 17847,7356 18010,7133 18079,7144
+Treskowallee -> Rummelsburger Str.	3::inwork 18086,7243 18010,7133 17847,7356
+Treskowallee -> Edisonstr.	3::inwork 18086,7243 18010,7133 17934,7029
+Treskowallee -> An der Wuhlheide	3::inwork 18086,7243 18010,7133 18225,7004
+Treskowallee -> Eichgestell	3::inwork 18086,7243 18010,7133 18079,7144
+Treskowallee -> Roedernstr.	3::inwork 18086,7243 18010,7133 18019,7071
+Edisonstr. -> Rummelsburger Str.	3::inwork 17934,7029 18010,7133 17847,7356
+Edisonstr. -> Treskowallee	3::inwork 17934,7029 18010,7133 18086,7243
+Edisonstr. -> Eichgestell	3::inwork 17934,7029 18010,7133 18079,7144
+An der Wuhlheide -> Rummelsburger Str.	3::inwork 18225,7004 18010,7133 17847,7356
+An der Wuhlheide -> Edisonstr.	3::inwork 18225,7004 18010,7133 17934,7029
+An der Wuhlheide -> Roedernstr.	3::inwork 18225,7004 18010,7133 18019,7071
+Eichgestell -> Rummelsburger Str.	3::inwork 18079,7144 18010,7133 17847,7356
+Eichgestell -> Edisonstr.	3::inwork 18079,7144 18010,7133 17934,7029
+Eichgestell -> An der Wuhlheide	3::inwork 18079,7144 18010,7133 18225,7004
+Eichgestell -> Roedernstr.	3::inwork 18079,7144 18010,7133 18019,7071
+Roedernstr. -> Rummelsburger Str.	3::inwork 18019,7071 18010,7133 17847,7356
+Roedernstr. -> Treskowallee	3::inwork 18019,7071 18010,7133 18086,7243
+Roedernstr. -> Edisonstr.	3::inwork 18019,7071 18010,7133 17934,7029
+Roedernstr. -> Eichgestell	3::inwork 18019,7071 18010,7133 18079,7144
+#: last_checked ^^^
+EOF
+     },
+     { from  => 1747803600, # 2025-05-21 07:00
+       until => 1750215600, # 2025-06-18 05:00
+       dont_check_date => 1,
+       text  => 'Angermünde, Eisenbahnüberführung Berliner Str.: Sperrung, evtl. sind auch Radfahrer betroffen, vom 22.05.2025, 07:00 Uhr bis 26.05.2025, 07:00 Uhr sowie vom 10.06.2025, 21:00 Uhr bis 18.06.2025, 05:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 257301425 (bis 18.06.2025)
+	2::inwork 49566,68311 49650,68406
+EOF
+     },
+     { from  => 1747562400, # 2025-05-18 12:00
+       until => 1750345200, # 2025-06-19 17:00
+       text  => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, vom 19.05.2025 12:00 bis 19.06.2025 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
+	q4::inwork; 2924,9391 2947,9367
+	q4::inwork 2947,9367 2978,9338 2977,9220
 EOF
      },
     );

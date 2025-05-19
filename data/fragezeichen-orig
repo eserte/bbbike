@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2025-05-14
+#: last_checked: 2025-05-19
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -2273,7 +2273,7 @@ Buckower Damm: Radfahrstreifen sollen entstehen	?::projected 12712,2378 12738,21
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_05.pdf
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_06.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1471213.php
-#: last_checked: 2025-05-14
+#: last_checked: 2025-05-19
 #: check_frequency: 180d
 #: next_check: 2025-09-30
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
@@ -2940,7 +2940,7 @@ Finsterwalder Str.: wird hier ein Zebrastreifen angelegt?	?::projected 6281,2178
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="28"
-#: last_checked: 2025-04-18
+#: last_checked: 2025-05-19
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12049,9781 12053,9793
 # 
@@ -5707,7 +5707,7 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 #: XXX hier waren Asphaltierungsarbeiten, vielleicht im Zusammenhang mit dem Zebrastreifen?
 # REMOVED --- #: note: Halteverbotsschilder bis 5.4.2024
 #: also_indoor: traffic (ex-B)
-#: last_checked: 2025-04-18
+#: last_checked: 2025-05-19
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-04-05
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
@@ -6963,6 +6963,7 @@ Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -
 #: by: https://entwicklungsstadt.de/neue-hauptverkehrsstrasse-durch-koepenicker-stadtquartier-geplant/
 #: by: https://www.bahninfo-forum.de/read.php?9,828217,828217#msg-828217
 #: by: https://www.nd-aktuell.de/artikel/1191281.wohnungsbau-berlin-klatsche-fuer-bauplaene-des-senats-am-gueterbahnhof-koepenick.html
+#: by: https://entwicklungsstadt.de/eisenbahn-bundesamt-bleibt-hart-keine-freigabe-fuer-berliner-bahnflaechen/
 #: XXX derzeitige Führung der projektierten Hauptstraße aus dem Karres en Brands-Masterplan entnommen; weitere Quariersstraßen entstehen (autoarm), außerdem ein Weg entlang der Bahnstrecke
 #: last_checked: 2025-03-18 (Pressemitteilung, entwicklungsstadt, Tsp)
 #: check_frequency: 720d
@@ -7167,7 +7168,7 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/zwischen-verzoegerung-und-hoffnung_a433308
 #: by: https://www.morgenpost.de/berlin/article409023035/u6-sanierung-in-tegel-fahrgaeste-brauchen-weiter-geduld.html (Fertigstellung der Brücke im Sommer 2025?)
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022) (inaktiv)
-#: source_id: viz2021:13.307035,52.568102,23.02.2023,07:00 (Verschwenkung, bis 13.10.2023) (bis 31.03.2024) (bis 28.03.2024) (bis 31.03.2025) (bis 30.05.2025)
+#: source_id: viz2021:13.307035,52.568102,23.02.2023,07:00 (Verschwenkung, bis 13.10.2023) (bis 31.03.2024) (bis 28.03.2024) (bis 31.03.2025) (bis 30.05.2025) (bis 12.06.2025)
 #: source_id[inactive]: bvg2021:u6#BVG311138_0
 #: source_id: bvg2021:u6#BVG346487_0
 #: source_id[inactive]: bvg2024:u6#HIM_FREETEXT_180208
@@ -7586,7 +7587,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-05-16
+#: last_checked: 2025-05-19
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -7612,7 +7613,7 @@ Niemannstr.: Teileinziehung geplant	? 14211,11229 14254,11377
 Simplonstr.: Teileinziehung geplant	? 14181,11434 14254,11377
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-05-19 vvv
 #: check_frequency: 30d vvv
 Simplonstr.: Teileinziehung geplant	? 13996,11631 13992,11605 14031,11569
 Gabriel-Max-Str.: Teileinziehung geplant	? 14065,11605 14049,11553
@@ -7842,7 +7843,7 @@ Paradiesstr.: evtl. werden hier noch Radwege als Zufahrt zur B96a erstellt, viel
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10587 (Anfrage)
-#: last_checked: 2025-05-14
+#: last_checked: 2025-05-19
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -11049,7 +11050,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://entwicklungsstadt.de/tishman-speyer-uebernimmt-bauprojekt-elements-am-berliner-spreeufer/
 #: by: http://www.deal-magazin.com/news/143222/Tishman-Speyer-kauft-Buero--und-Wohnprojekt-Elements-in-Berlin (Erwähnung der Uferpromenade)
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
-#: last_checked: 2025-05-06 vvv
+#: last_checked: 2025-05-19 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 2
@@ -12126,7 +12127,7 @@ Bebauungsplan 6-8: evtl. wird es einen Weg zwischen Hochstr. (Höhe Hasselfelder 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11607
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_04_0245_0352_online.pdf (Teileinziehung)
 #: osm_watch: way id="1122284350" version="3"
-#: last_checked: 2025-04-18
+#: last_checked: 2025-05-19
 Schönleinstr.: Teileinziehung	? 11541,9576 11594,9604
 # 
 #: XXX laut DPAG-Mitteilungsblatt "Schlossweg", PLZ=14476 (fehlt in Potsdam.coords.data)
