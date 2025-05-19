@@ -47842,16 +47842,15 @@ EOF
        until => undef, # XXX
        text  => 'Treskowallee/Edisonstraße: Durchfahrt in Höhe Rummelsburger Straße/An der Wuhlheide gesperrt, auch Radfahrer sind betroffen, vom 30.04.2025 15:30',
        type  => 'gesperrt',
-## below generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 17880,7311 18010,7133 18225,7004\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
+## below generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 17847,7356 18010,7133 18225,7004\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
 #: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-wuhlheide-bruecke-sofortige-sperrung-verkehr-einsturzgefahr.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/
 #: last_checked: 2025-05-19 (VIZ-Verkehrsmeldung) vvv
-#	3nocross::ignrte 17880,7311 18010,7133 18225,7004
+#	3nocross::ignrte 17847,7356 18010,7133 18225,7004
 Rummelsburger Str. -> Treskowallee	3::inwork 17847,7356 18010,7133 18086,7243
 Rummelsburger Str. -> Eichgestell	3::inwork 17847,7356 18010,7133 18079,7144
-Treskowallee -> Rummelsburger Str.	3::inwork 18086,7243 18010,7133 17847,7356
 Treskowallee -> Edisonstr.	3::inwork 18086,7243 18010,7133 17934,7029
 Treskowallee -> An der Wuhlheide	3::inwork 18086,7243 18010,7133 18225,7004
 Treskowallee -> Eichgestell	3::inwork 18086,7243 18010,7133 18079,7144
@@ -47859,10 +47858,8 @@ Treskowallee -> Roedernstr.	3::inwork 18086,7243 18010,7133 18019,7071
 Edisonstr. -> Rummelsburger Str.	3::inwork 17934,7029 18010,7133 17847,7356
 Edisonstr. -> Treskowallee	3::inwork 17934,7029 18010,7133 18086,7243
 Edisonstr. -> Eichgestell	3::inwork 17934,7029 18010,7133 18079,7144
-An der Wuhlheide -> Rummelsburger Str.	3::inwork 18225,7004 18010,7133 17847,7356
 An der Wuhlheide -> Edisonstr.	3::inwork 18225,7004 18010,7133 17934,7029
 An der Wuhlheide -> Roedernstr.	3::inwork 18225,7004 18010,7133 18019,7071
-Eichgestell -> Rummelsburger Str.	3::inwork 18079,7144 18010,7133 17847,7356
 Eichgestell -> Edisonstr.	3::inwork 18079,7144 18010,7133 17934,7029
 Eichgestell -> An der Wuhlheide	3::inwork 18079,7144 18010,7133 18225,7004
 Eichgestell -> Roedernstr.	3::inwork 18079,7144 18010,7133 18019,7071

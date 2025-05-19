@@ -9406,10 +9406,9 @@ Hermann-Stöhr-Platz: Diagonalverbindung komplett gesperrt	2::inwork 12413,11901 
 #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-wuhlheide-bruecke-sofortige-sperrung-verkehr-einsturzgefahr.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/
 #: last_checked: 2025-05-19 (VIZ-Verkehrsmeldung) vvv
-#	3nocross::ignrte 17880,7311 18010,7133 18225,7004
+#	3nocross::ignrte 17847,7356 18010,7133 18225,7004
 Rummelsburger Str. -> Treskowallee	3::inwork 17847,7356 18010,7133 18086,7243
 Rummelsburger Str. -> Eichgestell	3::inwork 17847,7356 18010,7133 18079,7144
-Treskowallee -> Rummelsburger Str.	3::inwork 18086,7243 18010,7133 17847,7356
 Treskowallee -> Edisonstr.	3::inwork 18086,7243 18010,7133 17934,7029
 Treskowallee -> An der Wuhlheide	3::inwork 18086,7243 18010,7133 18225,7004
 Treskowallee -> Eichgestell	3::inwork 18086,7243 18010,7133 18079,7144
@@ -9417,10 +9416,8 @@ Treskowallee -> Roedernstr.	3::inwork 18086,7243 18010,7133 18019,7071
 Edisonstr. -> Rummelsburger Str.	3::inwork 17934,7029 18010,7133 17847,7356
 Edisonstr. -> Treskowallee	3::inwork 17934,7029 18010,7133 18086,7243
 Edisonstr. -> Eichgestell	3::inwork 17934,7029 18010,7133 18079,7144
-An der Wuhlheide -> Rummelsburger Str.	3::inwork 18225,7004 18010,7133 17847,7356
 An der Wuhlheide -> Edisonstr.	3::inwork 18225,7004 18010,7133 17934,7029
 An der Wuhlheide -> Roedernstr.	3::inwork 18225,7004 18010,7133 18019,7071
-Eichgestell -> Rummelsburger Str.	3::inwork 18079,7144 18010,7133 17847,7356
 Eichgestell -> Edisonstr.	3::inwork 18079,7144 18010,7133 17934,7029
 Eichgestell -> An der Wuhlheide	3::inwork 18079,7144 18010,7133 18225,7004
 Eichgestell -> Roedernstr.	3::inwork 18079,7144 18010,7133 18019,7071
