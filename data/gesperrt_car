@@ -816,9 +816,13 @@ Ruhlebener Str. -> Tiefwerderweg: Mittelstreifen	3::igndisp -2937,13399 -2967,13
 Tiefwerderweg -> Ruhlebener Str.: Mittelstreifen	3::igndisp -2974,13188 -2967,13417 -2977,13424
 Baumgartensteg -> Ruhlebener Str.: Mittelstreifen	3::igndisp -2882,13474 -2937,13399 -2725,13287
 Ruhlebener Str. -> Baumgartensteg: Mittelstreifen	3::igndisp -2967,13417 -2937,13399 -2882,13474
-Brückenauffahrt	3nocross::ignrte 18492,6893 18404,6946 18225,7004 18010,7133
+Brückenauffahrt	3nocross::ignrte 18492,6893 18404,6946 18225,7004 18001,7121
+An der Wuhlheide -> An der Wuhlheide: Brückenauffahrt	3::igndisp 18001,7121 18225,7004 18019,7146
+An der Wuhlheide -> An der Wuhlheide: Brückenauffahrt	3::igndisp 18019,7146 18225,7004 18404,6946
+An der Wuhlheide -> Fontanestr.: Brückenauffahrt	3::igndisp 18019,7146 18225,7004 18240,6845
 An der Wuhlheide -> Fontanestr.: Brückenauffahrt	3::igndisp 18404,6946 18225,7004 18240,6845
-Fontanestr. -> An der Wuhlheide: Brückenauffahrt	3::igndisp 18240,6845 18225,7004 18010,7133
+Fontanestr. -> An der Wuhlheide: Brückenauffahrt	3::igndisp 18240,6845 18225,7004 18001,7121
+Fontanestr. -> An der Wuhlheide: Brückenauffahrt	3::igndisp 18240,6845 18225,7004 18019,7146
 Mittelstreifen	3nocross::ignrte 6304,16447 6201,16538 6098,16630
 Müllerstr. -> Sansibarstr.: Mittelstreifen	3::igndisp 6304,16447 6201,16538 6106,16433
 Müllerstr. -> Ofener Str.: Mittelstreifen	3::igndisp 6098,16630 6201,16538 6256,16601
@@ -2284,7 +2288,7 @@ Rudolf-Reusch-Str	1 15710,12365 15668,12304 15663,12270 15658,12231 15651,12214
 Eckertstr.	1 13598,12554 13585,12584
 Mittelstr.	1 15647,14693 15539,14493
 (Weydemeyerstr.): Absperrung	2 11925,12807 11971,12785
-Roedernstr.	1 18019,7071 18010,7133
+Roedernstr.	1 18019,7071 18001,7121
 Bellermannstr.: Poller	2 9248,16248 9259,16236
 Klever Str. -> Eulerstr.: Diagonalsperre	3 9301,16439 9376,16375 9320,16319
 Eulerstr. -> Klever Str.: Diagonalsperre	3 9320,16319 9376,16375 9301,16439

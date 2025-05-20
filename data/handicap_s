@@ -33,6 +33,8 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Dolgenseestr.: kurzer Abschnitt der Fahrbahn gesperrt	q3::inwork 17457,10083 17330,10117
+Rummelsburger Str.: eng, Fußgänger	q2::inwork; 18019,7146 17847,7356
+An der Wuhlheide: Engstellen neben dem Radweg	q1::inwork; 18001,7121 18225,7004
 Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
@@ -2671,6 +2673,7 @@ Windenweg: einige Fußgänger, halbhohe Borde	q3 16306,2364 16342,2338
 Uferweg am Salzhof: kurvenreich	q1 -1928,16423 -1937,16383 -1967,16380 -1962,16312
 In den Alboingärten: Fahrbahnanhebungen	q1 7936,6089 7739,6099 7646,6031 7638,5967
 (Bogotastr. - Elvirasteig): Gehweg, Bordsteine	q4 -1394,3798 -1409,3834
+Lindenallee (Friedrichshagen): zwei Bodenschwellen	q1 25294,5761 25479,5753
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3617,6 +3620,10 @@ Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::ig
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Dolgenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17774,9934 17761,9971 17559,10024
+An der Wuhlheide: Richtungsfahrbahn: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 18225,7004 18001,7121
+An der Wuhlheide: Richtungsfahrbahn: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 18019,7146 18225,7004
+Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 18001,7121 17847,7356
+Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17847,7356 18019,7146
 Am Wiesenrain: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 23931,5992 24122,6007
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 Wriezener Karree: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12959,11631 12728,11850

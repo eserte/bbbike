@@ -12,7 +12,7 @@
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
 #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025)
-#: source_id: viz2021:13.455059,52.559321,08.05.2025,07:00 (bis 27.06.2025)
+#: source_id: viz2021:13.455059,52.559321,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
 #: next_check: -2025-06-27
 #: valid: -20250627
 Roelckestr./Große Seestr.: provisorische Ampel	X::inwork 13754,17133
@@ -53,11 +53,11 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 #: valid: -20250530
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
-#: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025)
+#: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025) (bis 23.06.2025)
 #: source_id: viz2021:13.408041,52.512493,13.05.2025,13:14 (bis 20.05.2025) (inaktiv)
 #: last_checked: 2025-05-16
-#: next_check: 2025-05-20
-#: valid: -20250520
+#: next_check: 2025-06-23
+#: valid: -20250623
 # REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
 # REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
 Neue Roßstr./Wallstr.	X::inwork 10722,11816
@@ -93,12 +93,12 @@ Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 # REMOVED --- #: note: außerdem laut VIZ: Michaelkirchplatz/Heinrich-Heine-Platz (Mitte) Kreuzung Legiendamm: Kanalbauarbeiten, Gegenverkehrsregelung mit Baustellenampel, Anbindungen Legiendamm und nördlicher Michaelkirchpatz gesperrt, vom 15.10.2024 11:11 bis 28.10.2024 17:00 (aber als Radfahrer kann man die Ampel zum Überqueren nutzen) --- #: source_id: viz2021:13.41782,52.506594,15.10.2024,11:11 (bis 28.10.2024) (inaktiv) --- #: last_checked: 2024-10-15 (mapillary) --- #: next_check: 2024-10-28 --- #: valid: -20241028 --- Michaelkirchplatz: Gegenverkehrsregelung	X::inwork::alternating 11349,11227
 # 
 #: next_check_id: MARKGRAFEN-2025
-#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025)
+#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025)
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
 #: last_checked: 2025-04-10
-#: next_check: 2025-05-21 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-08-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250521
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
 # 
@@ -281,14 +281,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-05-17
+#: last_checked: 2025-05-20
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-05-15
+#: last_checked: 2025-05-20
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -355,7 +355,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2025-04-11 (okas) vvv
+#: last_checked: 2025-05-20 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: valid: -20251231 vvv
@@ -1511,7 +1511,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 20565,2754
 #: XXX_prog: Anforderung für rechtsabbiegende (?) Radfahrer aus Richtung Nordwesten
 	X 22162,1067
-	X 18010,7133
+	X 18001,7121
 #: XXX_prog für Radfahrer Richtung Süden zwei getrennt voneinander geschaltete Ampeln; Passierdauer für das "ordentliche" Linksabbiegen in die Griechische Allee bis zu 150 Sekunden
 	X 17962,6674
 	X 2723,4093

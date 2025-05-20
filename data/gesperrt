@@ -1619,8 +1619,8 @@ Am Nordgraben -> Elsenpfuhlstr.: Mittelstreifen	3::igndisp 5517,20120 5399,20106
 Mittelstreifen	3nocross::ignrte 7263,4281 7310,4308 7366,4345
 Attilastr. -> Ludwigsburger Weg: Mittelstreifen	3::igndisp 7263,4281 7310,4308 7250,4401
 Ludwigsburger Weg -> Attilastr.: Mittelstreifen	3::igndisp 7250,4401 7310,4308 7366,4345
-Straßenbahn	3nocross::ignrte 18010,7133 17934,7029 17919,6978
-Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18010,7133
+Straßenbahn	3nocross::ignrte 18001,7121 17934,7029 17919,6978
+Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18001,7121
 Edisonstr. -> Fuststr.: Straßenbahn	3::igndisp 17919,6978 17934,7029 17823,7203
 Straßenbahn	3nocross::ignrte 17919,6968 17945,6788 17962,6674
 Edisonstr. -> Roedernstr.: Straßenbahn	3::igndisp 17919,6968 17945,6788 17981,6793
@@ -1839,9 +1839,6 @@ Riesaer Str. -> Schönewalder Str.: Straßenbahntrasse	3::igndisp 24870,14244 2493
 Schönewalder Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24974,14355 24930,14225 24983,14208
 Riesaer Str. -> Mittweidaer Str.: Straßenbahntrasse	3::igndisp 25095,14171 24983,14208 24918,14008
 Mittweidaer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24918,14008 24983,14208 24930,14225
-wegen Überführung nicht überquerbar	3nocross::ignrte 17769,7465 17847,7356 18010,7133
-Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17833,7351 17847,7356 17769,7465
-Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18010,7133 17847,7356 17833,7351
 Mittelstreifen nicht passierbar	3nocross::ignrte 4600,8002 4711,8013 4786,8007
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3::igndisp 4572,7936 4711,8013 4672,8031
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4672,8031 4711,8013 4786,8007
@@ -1920,9 +1917,9 @@ Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	1::igndisp 3852,10236 3880,1
 Straßenbahntrasse	3nocross::ignrte 18809,9133 18790,9018 18770,8898
 Treskowallee -> Bopparder Str.: Straßenbahntrasse	3::igndisp 18809,9133 18790,9018 18881,9002
 Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,9018 18770,8898
-Straßenbahntrasse	3nocross::ignrte 18010,7133 18086,7243 18165,7371
+Straßenbahntrasse	3nocross::ignrte 18019,7146 18086,7243 18165,7371
 Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18165,7371 18086,7243 18186,7200
-Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18010,7133
+Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18019,7146
 Straßenbahntrasse	3nocross::ignrte 18876,9512 18867,9464 18834,9256 18809,9133
 Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18876,9512 18867,9464 18916,9468
 Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
@@ -2661,6 +2658,10 @@ Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,40
 Michelangelostr.: links abbiegen nicht möglich	3 13854,15129 13816,15137 13823,15111
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2326,25625 -2130,26026 -2146,26048
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2109,26055 -2130,26026 -2146,26048
+An der Wuhlheide: Richtungsfahrbahn	1s 18225,7004 18001,7121
+An der Wuhlheide: Richtungsfahrbahn	1s 18019,7146 18225,7004
+Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1s 18001,7121 17847,7356
+Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1s 17847,7356 18019,7146
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2947,6 +2948,7 @@ tragen (Treppe, 14 Stufen)	0:25:-170 18774,581
 tragen (Treppe)	0:45:-28 5946,12553
 tragen (Treppe)	0:45:-77 5936,12544
 tragen (verwinkelte Treppe, 5 Stufen)	0:15:-144 18257,18947
+tragen (Treppe, 10+9 Stufen)	0:25:-258 22110,2643
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382

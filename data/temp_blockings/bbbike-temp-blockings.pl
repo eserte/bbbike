@@ -36380,7 +36380,7 @@ EOF
 #: note: anscheinend Schubertstr. auch f¸r Fuﬂg‰nger gesperrt, hier gibt es keinen Gehweg (noch immer?); auﬂerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das ˆstliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, mˆglicherweise passierbar, So 2024-09-01 mittags mˆglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2025-04-11 (okas) vvv
+#: last_checked: 2025-05-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-27 (DB website: n‰chste Sperrung der H‰mmerlingstr.) vvv
 # REMOVED --- #: note: Unterf¸hrung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -36853,8 +36853,11 @@ EOF
 #: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,22.04.2024,06:00 (bis 25.04.2024) (inaktiv)
 #: source_id: viz2021:13.36259,52.505907,24.04.2024,18:00 (bis 24.04.2024) (inaktiv)
-#: source_id: viz2021:13.35107,52.51429,05.05.2025,22:00 (bis 30.05.2025)
+#: source_id: viz2021:13.35107,52.51429,05.05.2025,22:00 (bis 30.05.2025) (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,20.05.2025,06:00 (bis 22.05.2025)
+#: source_id: viz2021:13.35064,52.51395,20.05.2025,06:00 (bis 22.05.2025)
+#: source_id: viz2021:13.36259,52.505907,21.05.2025,17:00 (bis 21.05.2025)
+#: source_id: viz2021:13.370513,52.51724,20.05.2025,06:00 (bis 22.05.2025)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/ (21. Mai 2025)
@@ -37755,7 +37758,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "f¸r etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-05-17
+#: last_checked: 2025-05-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40156,8 +40159,11 @@ EOF
 #: last_checked: 2025-03-23 vvv
 #: next_check: 2025-08-31 (DB website) vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
-#: note: L‰nge der Einbahnstraﬂenregelung gesch‰tzte 100-200m
-	q3::inwork; 17101,26701 16532,26174
+#: note: L‰nge der Einbahnstraﬂenregelung gesch‰tzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m
+#: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025)
+#: next_check: 2025-10-06 (VIZ-Verkehrsmeldung)
+#	q3::inwork; 17101,26701 16532,26174
+	q3::inwork 17101,26701 16532,26174
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -41468,7 +41474,7 @@ EOF
 #: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 fr¸h)
 #: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025) (inaktiv)
 #: source_id: viz2021:13.403167,52.524701,09.05.2025,07:00 (hier nur Kfz-Verkehr, bis 04.06.2025)
-#: source_id: viz2021:13.40319,52.52474,09.05.2025,07:00 (bis 04.06.2025)
+#: source_id: viz2021:13.40319,52.52474,09.05.2025,07:00 (bis 04.06.2025) (inaktiv)
 # REMOVED --- #: note: offizielle Umleitungen f¸r Radfahrer: Richtung S¸den via Neue Schˆnhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt auﬂer f¸r Straﬂenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -42273,7 +42279,7 @@ EOF
 #: also_indoor: traffic (ex-H[zu wenig],G,ex-B[zu viel],ex-W[zu viel])
 #: note: bei rbb weiterhin bis 11.04.2024, sogar beide Richtungen
 # REMOVED (Fahrbahn nicht mehr gesperrt) --- #: last_checked: 2023-11-26 --- #: check_frequency: 30d --- #: next_check: 2023-12-04
-	q3::inwork; 18010,7133 17934,7029 17919,6978 17919,6968 17945,6788
+	q3::inwork; 18001,7121 17934,7029 17919,6978 17919,6968 17945,6788
 EOF
      },
      { do {
@@ -45363,7 +45369,7 @@ EOF
 #: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eing‰ngen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-05-19 (website) vvv
+#: last_checked: 2025-05-20 (website) vvv
 #: check_frequency: 1d vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
@@ -46632,12 +46638,12 @@ EOF
 EOF
      },
      { from  => 1738350510, # 2025-01-31 20:08
-       until => $isodate2epoch->("2025-05-21 17:00:00"), # 1745445600, # 2025-04-24 00:00
-       text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 21.05.2025',
+       until => $isodate2epoch->("2025-08-26 17:00:00"), # 1745445600, # 2025-04-24 00:00
+       text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 26.08.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: MARKGRAFEN-2025
-#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025)
+#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025)
 #: note: hier l‰ngerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafendamm s¸dlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
@@ -46913,7 +46919,7 @@ EOF
 # REMOVED --- #: note: L‰nge etwa 150m, B¸rgersteig existiert; mittlerweile um einen Block weiter verl‰ngert --- q2::inwork 18266,9853 18066,9770 17920,9698
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-05-07
+#: last_checked: 2025-05-20
 #: check_frequency: 14d
 Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 EOF
@@ -47350,7 +47356,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Radickestr., Freystadter Weg und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen',
+       text  => 'Radickestr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
@@ -47358,9 +47364,8 @@ EOF
 #: also_indoor: traffic (G,B,T)
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
-#: note: n‰chste Sperrung: Zinsgutstraﬂe; Beginn voraussichtlich ab Mitte Mai 2025
-#: note: ¸bern‰chste Sperrungen: Flemmingstr.: Beginn voraussichtlich ab 21. Mai 2025; Gutenbergstr.: Termin folgt
-#: next_check: 2025-05-21 (n‰chste Sperrung Flemmingstr.)
+#: note: n‰chste Sperrung: Radickestraﬂe Arndtstraﬂe bis Nipkowstraﬂe ab 26.05.2025
+#: next_check: 2025-05-25 (n‰chste Sperrung)
 #: XXX hier bis Mitte Juli 2025
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraﬂe und Zinsgutstraﬂe als "abgeschlossen" bezeichnet, aber der n‰chste Bauabschnitt enth‰lt auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
@@ -47375,6 +47380,10 @@ W¸nschelburger Gang	q4::inwork 21008,4275 20917,4261 20850,4225 20829,4211
 Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275 20981,4628 20981,4696 20994,4761
 #: note: Beginn ab dem 19.05.2025 (aber wo genau?)
 Zinsgutstr.	q4::inwork 20679,3944 20862,3824 20919,3781 21049,3657 21119,3572 21156,3477
+#: note: laut Haltestellenschilder vom 21.05.2025 07 Uhr bis 24.07.2025 17 Uhr
+Flemmingstr.	q4::inwork 21848,4882 21726,4537
+#: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt
+Flemmingstr.	q4::inwork 21848,4882 21856,4910
 EOF
      },
      { from  => 1744520400, # 2025-04-13 07:00
@@ -47678,15 +47687,16 @@ EOF
      },
      { from  => 1746604620, # 2025-05-07 09:57
        until => undef, # XXX
-       text  => 'Am Kornfeld: Havarie, zwischen Alt-Kaulsdorf und Hornsteiner Weg gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Sperrung unbekannt',
+       text  => 'Am Kornfeld: Havarie, zwischen Alt-Kaulsdorf und Hornsteiner Weg gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 20.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.59872,52.50501,08.05.2025,09:57
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lopunzh3jc2v
-#: note: bei rbb mittlerweile entfernt
+#: note: bei rbb mittlerweile entfernt; wieder da, mittlerweile bis 20.06.2025
 #: also_indoor: traffic (H,G,T,A,W)
 #: last_checked: 2025-05-14 (traffic)
 #: check_frequency: 10d
+#: next_check: 2025-06-20 (rbb)
 	q4::inwork 23679,11372 23654,11285 23648,11265
 EOF
      },
@@ -47842,9 +47852,8 @@ EOF
        until => undef, # XXX
        text  => 'Treskowallee/Edisonstraﬂe: Durchfahrt in Hˆhe Rummelsburger Straﬂe/An der Wuhlheide gesperrt, auch Radfahrer sind betroffen, vom 30.04.2025 15:30',
        type  => 'gesperrt',
-## below generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 17847,7356 18010,7133 18225,7004\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
-#: next_check_id: ANDERWUHLHEIDE-2025
+#: next_check_id: BRUECKEANDERWUHLHEIDE-2025
 #: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum)
 #: source_id: adac:922791900
 #: source_id: adac:1526844418
@@ -47855,27 +47864,9 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/brucke-an-der-berliner-wuhlheide-einsturzgefahrdet-bvg-und-autoverkehr-unter-bauwerk-gestoppt-13716016.html
 #: by: https://www.tagesspiegel.de/berlin/marode-brucke-stau-rund-um-gesperrte-brucke-an-der-wuhlheide-13720807.html
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409055253/einsturzgefahr-strasse-unter-bruecke-an-der-wuhlheide-gesperrt.html
-#: last_checked: 2025-05-19 (VIZ-Verkehrsmeldung) vvv
-#	3nocross::ignrte 17847,7356 18010,7133 18225,7004
-Rummelsburger Str. -> Treskowallee	3::inwork 17847,7356 18010,7133 18086,7243
-Rummelsburger Str. -> Eichgestell	3::inwork 17847,7356 18010,7133 18079,7144
-Treskowallee -> Edisonstr.	3::inwork 18086,7243 18010,7133 17934,7029
-Treskowallee -> An der Wuhlheide	3::inwork 18086,7243 18010,7133 18225,7004
-Treskowallee -> Eichgestell	3::inwork 18086,7243 18010,7133 18079,7144
-Treskowallee -> Roedernstr.	3::inwork 18086,7243 18010,7133 18019,7071
-Edisonstr. -> Rummelsburger Str.	3::inwork 17934,7029 18010,7133 17847,7356
-Edisonstr. -> Treskowallee	3::inwork 17934,7029 18010,7133 18086,7243
-Edisonstr. -> Eichgestell	3::inwork 17934,7029 18010,7133 18079,7144
-An der Wuhlheide -> Edisonstr.	3::inwork 18225,7004 18010,7133 17934,7029
-An der Wuhlheide -> Roedernstr.	3::inwork 18225,7004 18010,7133 18019,7071
-Eichgestell -> Edisonstr.	3::inwork 18079,7144 18010,7133 17934,7029
-Eichgestell -> An der Wuhlheide	3::inwork 18079,7144 18010,7133 18225,7004
-Eichgestell -> Roedernstr.	3::inwork 18079,7144 18010,7133 18019,7071
-Roedernstr. -> Rummelsburger Str.	3::inwork 18019,7071 18010,7133 17847,7356
-Roedernstr. -> Treskowallee	3::inwork 18019,7071 18010,7133 18086,7243
-Roedernstr. -> Edisonstr.	3::inwork 18019,7071 18010,7133 17934,7029
-Roedernstr. -> Eichgestell	3::inwork 18019,7071 18010,7133 18079,7144
-#: last_checked ^^^
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1561245.php
+#: last_checked: 2025-05-20
+unter der Br¸cke	2::inwork 18001,7121 18019,7146
 EOF
      },
      { from  => 1747803600, # 2025-05-21 07:00
@@ -47910,6 +47901,8 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/service/bevoelkerungsschutz/artikel.1561172.php
 #: by: https://www.tagesspiegel.de/potsdam/brandenburg/auch-berlin-betroffen-entscharfung-einer-250-kilo-bombe-in-teltow-am-mittwoch-13719928.html
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article409061939/bombenentschaerfung-in-teltow-betrifft-auch-berliner-der-sperrkreis.html
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1561185.php
+#: by: https://www.teltow.de/aktuelles/news/evakuierung-aufgrund-von-bombenentschaerfung-in-teltow.html
 Ostpreuﬂendamm	2::bomb 3808,1016 3655,752 3642,727 3596,655 3511,593 3497,583 3465,563
 (Ostpreuﬂendamm - Erbkaveln)	2::bomb 3642,727 3561,789 3550,810
 (Erbkaveln - Teltowkanaluferweg)	2::bomb 3550,810 3511,887

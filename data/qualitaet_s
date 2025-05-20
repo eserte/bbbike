@@ -1058,7 +1058,7 @@ Eichgestell: Asphalt, etwas rau	Q0 19587,6584 19407,6660
 Eichgestell: Asphalt	Q0 19407,6660 19052,6823
 Eichgestell: Parkweg, etwas Schotter	Q2 19052,6823 18944,6870 18186,7200
 Eichgestell: Parkweg, OK	Q1 18186,7200 18086,7243
-Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1 18186,7200 18134,7173 18079,7144 18010,7133
+Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1 18186,7200 18134,7173 18079,7144 18019,7146
 Sobernheimer Str.: Kopfsteinpflaster, teilweise mit Sandbanketten	Q2 27600,292 27667,368 27700,402 27734,437 27752,458 27783,493 27831,548 27932,665 27940,675 27961,699 28003,747 28051,803 28065,819 28188,962
 Zur Revierförsterei: Waldweg, neuer Schotter	Q1 28523,258 28521,300
 Zur Revierförsterei: Beton	Q0 28521,300 28519,337 28516,415 28538,452
@@ -1114,7 +1114,7 @@ Wulkower Str.: Asphalt	Q0 21009,10135 21009,10285
 Wulkower Str.: Asphalt	Q0 21009,10285 21009,10425 21015,10586 21025,10815 21032,11033
 Dornacher Str.: Asphalt	Q0 20947,10137 20947,9999 20948,9847
 Gleiwitzer Str.: neuer Asphalt	Q0 21146,9988 20947,9999
-Gleiwitzer Str.: Asphalt mit unebenen Stellen	Q1 20947,9999 20703,10004
+Gleiwitzer Str.: neuer Asphalt	Q0 20947,9999 20703,10004
 Buchenhainer Str.: Asphalt	Q0 21164,8243 21325,8217
 Nitzwalder Str.: Asphalt	Q0 21325,8217 21461,8094 21535,8026
 Nitzwalder Str.: Asphalt	Q0 21519,8006 21578,7947
@@ -1928,7 +1928,7 @@ Braunschweiger Ufer: Verbundsteinpflaster	Q1 13077,5893 13483,5973
 Braunschweiger Ufer: Parkweg	Q1 13077,5893 12722,5831
 Zeppelinstr.: Asphalt	Q0 18700,6604 18417,6775 18240,6845
 Zeppelinstr.: Asphalt	Q0 18240,6845 18041,6924 17919,6968
-Roedernstr.: Beton	Q0 18010,7133 18019,7071
+Roedernstr.: Beton	Q0 18001,7121 18019,7071
 Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 18019,7071 18041,6924
 Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 18041,6924 18059,6804 18068,6748
 (Roedernstr. - Edisonstr.): kleinteiliges, unebenes Kopfsteinpflaster	Q2 18059,6804 17981,6793
@@ -6518,7 +6518,8 @@ Elstersteg: Asphalt	Q0 21750,2593 21770,2535 21801,2480 21839,2419
 (Ammerseestr. - Waldstr.): Waldweg, teilweise etwas sandig	Q2 22166,1636 22222,1831
 Zur Uferbahn: unbefestigte Straße	Q2 23079,901 23045,880
 Zur Uferbahn: Asphalt	Q0 23045,880 22952,821 22902,796 22766,778
-(Zur Uferbahn - Adlergestell): Waldweg	Q1 22766,778 22567,879 22490,877 22351,862
+(Zur Uferbahn - Adlergestell): Waldweg	Q1 22766,778 22574,889 22490,877 22351,862
+(Zur Uferbahn - Libboldallee): Waldweg	Q1 22574,889 22466,967
 Laubnitzer Pfad: Asphalt	Q0 22995,745 23067,786
 Steinbindeweg: welliger Asphalt	Q1 23237,508 23137,650 23067,786 23085,898
 Straße 901: Asphalt mit Schäden	Q2 23501,797 23497,705 23469,640
@@ -10504,6 +10505,8 @@ Relingstr.: Betonpflaster	Q1 22195,2390 22287,2431 22358,2460
 (Am Ruderverein - Uferweg): Betonpflaster	Q1 22270,2549 22304,2570
 An der Dahme: Betonpflaster	Q1 22197,2612 22270,2549 22358,2460 22418,2390
 Gaffelsteig: Betonpflaster	Q1 22287,2431 22221,2520 22159,2585
+An der Brücke: Kleinsteinpflaster	Q1 22197,2612 22170,2631 22110,2643
+An der Brücke: Mosaikpflaster	Q1 22110,2643 22083,2637
 Ankerweg: Betonpflaster	Q1 22118,2559 22159,2585 22197,2612
 Clara-Müller-Jahnke-Str.: Betonpflaster	Q1 31971,3170 31799,3192 31800,3091 31810,3009 31965,2999
 (Clara-Müller-Jahnke-Str. - Einkaufszentrum Lagunenweg): Verbundsteinpflaster	Q1 31799,3192 31762,3202
@@ -11296,7 +11299,7 @@ Pembabogen: Betonpflaster	Q0 -2750,19013 -2747,19074 -2745,19146 -2647,19149 -25
 Tahitiweg: Betonpflaster	Q0 -2647,19149 -2647,19070 -2647,19009
 Tasmanienweg: Betonpflaster	Q0 -2747,19074 -2647,19070 -2547,19067
 Dernburgstr.: Verbundsteinpflaster	Q1 2673,10670 2596,10663
-(Libboldallee - Adlergestell): Waldweg	Q2 22583,1004 22312,919
+(Libboldallee - Adlergestell): Waldweg	Q2 22583,1004 22466,967 22312,919
 (Zechliner Str. - Neustrelitzer Str.): Verbundsteinpflaster	Q1 16281,14604 16323,14672
 Cecilienstr.: Asphalt, einige Schäden	Q0 20281,14012 20348,14005 20447,13995 20567,13983 20690,13972 20830,13960
 Johanneskirchplatz: gepflastert	Q2 3030,3276 3056,3290 3067,3319 3059,3339
@@ -12206,8 +12209,8 @@ Eschenstr.: sehr guter Asphalt	Q0 23031,9209 23018,9226 22947,9277 22830,9361 22
 Heerstr.: Beton mit Schäden/Asphalt	Q0 22366,9571 22274,9622 22129,9702
 Heerstr.: Asphalt	Q0 22129,9702 21988,9766
 Heerstr.: Asphalt	Q0 21988,9766 21859,9822 21842,9829 21749,9856
-Heerstr.: Beton	Q0 21749,9856 21691,9874 21650,9884 21611,9893
-Heesestr.: sehr guter Asphalt	Q0 21611,9893 21594,9895 21534,9901 21371,9923 21163,9956
+Heerstr.: Asphalt	Q0 21749,9856 21691,9874 21650,9884 21611,9893
+Heesestr.: Asphalt	Q0 21611,9893 21594,9895 21534,9901 21371,9923 21163,9956
 Parchimer Str.: guter Beton	Q1 22319,12637 22272,12610 22258,12573 22257,12481 22212,12422 22212,12403
 Parchimer Str.: schadhafter Beton	Q2 22212,12403 22215,12303 22225,12281
 Parchimer Str.: guter Beton	Q1 22225,12281 22292,12198
@@ -15639,7 +15642,7 @@ Teutonenstr. (Nikolassee): asphaltiert	Q0 -3740,2295 -3610,2237 -3519,2180
 Teutonenstr. (Nikolassee): schlechtes Kopfsteinpflaster	Q3 -3519,2180 -3409,2113 -3322,2029 -3249,2002
 Teutonenstr. (Nikolassee): asphaltiert	Q0 -3249,2002 -3237,1945
 Reinhardtstr. (Tempelhof): Asphalt	Q0 9154,6638 9136,6552 9150,6467 9141,6459 9143,6415
-Lahmertstr.: Asphalt	Q0 22328,2084 22236,2029 22220,2018 22130,1961
+Lahmertstr.: Asphalt	Q0 22324,2093 22236,2029 22220,2018 22130,1961
 (Lahmertstr. - Bohnsdorfer Str.): Waldweg	Q1 22130,1961 21997,1869
 Gondeker Str.: Asphalt	Q0 16346,6534 16481,6686
 Rudolf-Beyendorff-Ring: Asphalt	Q0 6196,2204 6257,2120 6223,2097 6170,2060 6150,2089 6201,2125 6223,2097
