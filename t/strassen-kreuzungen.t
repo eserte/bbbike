@@ -287,7 +287,7 @@ for my $kr ($kr1, $kr2) {
 #    }
     {
 	# Wuhlheide/Treskowallee/Eichgestell
-	my %situation = situation_at_point_inorder($kr, qw(17934,7029 18010,7133 18079,7144));
+	my %situation = situation_at_point_inorder($kr, qw(18001,7121 18019,7146 18079,7144));
 	is($situation{action}, 'half-right', q{using half-right});
     }
 
