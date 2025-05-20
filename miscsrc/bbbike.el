@@ -765,7 +765,8 @@
              (line-number (string-to-number (cadr parts))))
 	(if (get-buffer "*bbbike-grep-output*") (kill-buffer "*bbbike-grep-output*"))
         (find-file (concat bbbike-datadir "/" filename))
-        (goto-line line-number)))
+        (goto-line line-number)
+	(message "Found only one match for '%s'" search-term)))
      (t
       (let ((buffer (get-buffer-create "*bbbike-grep-output*")))
         (with-current-buffer buffer
