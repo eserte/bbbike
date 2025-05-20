@@ -47844,9 +47844,17 @@ EOF
        type  => 'gesperrt',
 ## below generated with: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 17847,7356 18010,7133 18225,7004\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
        data  => <<EOF,
+#: next_check_id: ANDERWUHLHEIDE-2025
 #: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum)
+#: source_id: adac:922791900
+#: source_id: adac:1526844418
+#: osm_watch: note 4767216 2
 #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-wuhlheide-bruecke-sofortige-sperrung-verkehr-einsturzgefahr.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/
+#: by: http://bvg.de/dam/jcr:2d8c755f-2c9c-44b8-b819-11bc2e3a1fda/TramMetro_Bauausschnitt%20Wuhlheide_2fassung.png
+#: by: https://www.tagesspiegel.de/berlin/brucke-an-der-berliner-wuhlheide-einsturzgefahrdet-bvg-und-autoverkehr-unter-bauwerk-gestoppt-13716016.html
+#: by: https://www.tagesspiegel.de/berlin/marode-brucke-stau-rund-um-gesperrte-brucke-an-der-wuhlheide-13720807.html
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409055253/einsturzgefahr-strasse-unter-bruecke-an-der-wuhlheide-gesperrt.html
 #: last_checked: 2025-05-19 (VIZ-Verkehrsmeldung) vvv
 #	3nocross::ignrte 17847,7356 18010,7133 18225,7004
 Rummelsburger Str. -> Treskowallee	3::inwork 17847,7356 18010,7133 18086,7243
@@ -47890,6 +47898,63 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
+EOF
+     },
+     { from  => $isodate2epoch->("2025-05-20 00:00:00"),
+       until => $isodate2epoch->("2025-05-21 16:00:00"),
+       text  => 'Bombenentschärfung in Lichterfelde-Süd/Teltow: 600 m großer Sperrkreis wird errichtet, voraussichtlich am 21. Mai 2025 ab 7:00 Uhr',
+       type  => 'gesperrt',
+# data erstellt mit dem folgenden Kommando:
+#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner =(printf "\tX 3188,739 3777,1137 4239,361 4085,-631 3538,-697 2802,419 3188,739\n") -onlyenclosed data/strassen data/landstrassen | perl -pe 's/\t\S+/\t2::bomb/' >| /tmp/bomb.bbd
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/service/bevoelkerungsschutz/artikel.1561172.php
+#: by: https://www.tagesspiegel.de/potsdam/brandenburg/auch-berlin-betroffen-entscharfung-einer-250-kilo-bombe-in-teltow-am-mittwoch-13719928.html
+#: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article409061939/bombenentschaerfung-in-teltow-betrifft-auch-berliner-der-sperrkreis.html
+Ostpreußendamm	2::bomb 3808,1016 3655,752 3642,727 3596,655 3511,593 3497,583 3465,563
+(Ostpreußendamm - Erbkaveln)	2::bomb 3642,727 3561,789 3550,810
+(Erbkaveln - Teltowkanaluferweg)	2::bomb 3550,810 3511,887
+(Réaumurstr. - Fürstenstr., S-Bahnunterführung)	2::bomb 4147,465 4137,468
+Fürstenstr. (Lichterfelde)	2::bomb 4122,421 4137,468 4143,500
+Feldstr. (Lichterfelde)	2::bomb 4143,500 4018,699 3951,798 3840,964 3808,1016
+Holtheimer Weg	2::bomb 4122,421 4068,406 3912,362 3791,338 3729,324 3676,311 3647,299
+(Holtheimer Weg - Grenzstreifen)	2::bomb 3647,299 3607,283
+Westfalenring	2::bomb 4068,406 4079,354 4066,277 4029,144 3939,109 3922,111 3837,166 3795,221 3729,324
+Gronauer Weg	2::bomb 3922,111 3916,-54
+Wormbacher Weg	2::bomb 3791,338 3782,397 3648,531
+Schwelmer Str.	2::bomb 3497,583 3569,469 3676,311
+Schöppinger Str.	2::bomb 3569,469 3648,531 3691,566
+Dorstener Str.	2::bomb 3691,566 3596,655
+Ahlener Weg	2::bomb 3721,195 3795,221 3849,250 3899,305 3912,362 3898,466
+Lippstädter Str.	2::bomb 3898,466 3834,502 3655,752
+(Mauerweg Lichterfelde)	2::bomb 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
+Lichterfelder Allee (Teltow)	2::bomb 3465,563 3412,534 3255,428 3177,374 2958,229
+Paul-Gerhardt-Str. (Teltow)	2::bomb 3412,534 3271,745
+Kantstr. (Teltow)	2::bomb 3721,195 3689,182 3485,102 3392,63 3324,34 3305,25 3263,7 3223,-10 3201,-19 3143,-53
+Osdorfer Str. (Teltow)	2::bomb 3843,-401 3623,-384 3423,-372 3411,-376 3403,-369 3356,-366 3341,-353 3331,-368
+Hannemannstr. (Teltow)	2::bomb 2841,411 2902,329 2958,229 3004,159 3067,63 3143,-53 3227,-180 3341,-353
+Max-Sabersky-Allee (Teltow)	2::bomb 3271,745 3095,640 3073,613 3058,576 3035,520 2971,373 2902,329
+Karl-Liebknecht-Steig (Teltow)	2::bomb 3035,520 3065,508 3107,436
+Maxim-Gorki-Str. (Teltow)	2::bomb 3177,374 3225,304 3314,179 3392,63 3476,-58 3579,-196 3621,-271
+Bruno-H.-Bürgel-Str. (Teltow)	2::bomb 3004,159 3059,195 3110,229 3167,264 3225,304 3304,356
+Gerhart-Hauptmann-Str. (Teltow)	2::bomb 3255,428 3304,356 3320,335 3404,211 3485,102 3556,-3 3654,-144 3720,-242
+Marienfelder Anger (Teltow)	2::bomb 3243,151 3314,179 3404,211 3490,241 3607,283
+Schillerstr. (Teltow)	2::bomb 3403,-104 3476,-58 3556,-3
+Schillerstr. (Teltow)	2::bomb 3556,-3 3767,66
+Goethesteig (Teltow)	2::bomb 3579,-196 3654,-144
+Goethestr. (Teltow)	2::bomb 3654,-144 3838,-83
+Wilhelm-Busch-Str. (Teltow)	2::bomb 3720,-242 3741,-313
+Wilhelm-Busch-Str. (Teltow)	2::bomb 3623,-384 3626,-346 3741,-313 3786,-300
+Zehnrutenweg (Teltow)	2::bomb 3411,-376 3539,-570 3561,-645
+Siegfriedstr. (Teltow)	2::bomb 4058,-437 4049,-470 4023,-562
+(Mauerweg - Siegfriedstr.) (Teltow)	2::bomb 4081,-425 4058,-437
+Siedlerweg (Teltow)	2::bomb 3539,-570 3666,-512
+Lessingstr. (Teltow)	2::bomb 3341,-353 3621,-271 3720,-242 3908,-187
+Heinrich-Zille-Str. (Teltow)	2::bomb 3059,195 3125,98 3201,-19
+Heinrich-Heine-Str. (Teltow)	2::bomb 3110,229 3179,131 3263,7
+Otto-Braune-Str. (Teltow)	2::bomb 3167,264 3231,168 3243,151 3324,34
+Leibnizstr. (Teltow)	2::bomb 3320,335 3402,390 3466,433
+(Leibnizstr. - Mauerweg) (Teltow)	2::bomb 3466,433 3480,441
+Emil-Fischer-Str. (Teltow)	2::bomb 3402,390 3466,299 3490,241
 EOF
      },
     );
