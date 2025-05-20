@@ -1653,42 +1653,44 @@ sub show_any_diff {
 				 }
 			     }
 			 })->pack(-anchor => "w", -side => 'left');
-	$ff->Button(-text => "Mark done",
-		    -command => sub {
-			my $ans = $t->messageBox(-message => "Mark file " . File::Basename::basename($file) . " as done?",
-						 -type => "YesNo",
-						 -icon => 'question',
-						);
-			if ($ans =~ m{yes}i) {
-			    add_done_file($vmz_lbvs_done_file, $file, $digest);
-			    if ($listener && Tk::Exists($listener)) {
-				fill_vmz_lbvs_files($listener);
-				$listener->raise;
-			    }
-			    if ($diff_type eq 'newvmz') {
-				{
-				    my @rename = ("$vmz_lbvs_directory/newvmz.yaml", "$vmz_lbvs_directory/newvmz.old.yaml");
-				    rename $rename[0], $rename[1]
-					or main::status_message("Cannot rename @rename: $!", "warn");
+	if ($diff_type ne 'adac') {
+	    $ff->Button(-text => "Mark done",
+			-command => sub {
+			    my $ans = $t->messageBox(-message => "Mark file " . File::Basename::basename($file) . " as done?",
+						     -type => "YesNo",
+						     -icon => 'question',
+						 );
+			    if ($ans =~ m{yes}i) {
+				add_done_file($vmz_lbvs_done_file, $file, $digest);
+				if ($listener && Tk::Exists($listener)) {
+				    fill_vmz_lbvs_files($listener);
+				    $listener->raise;
 				}
-				{
-				    my @rename = ("$vmz_lbvs_directory/newvmz.new.yaml", "$vmz_lbvs_directory/newvmz.yaml");
-				    rename $rename[0], $rename[1]
-					or main::status_message("Cannot rename @rename: $!", "warn");
+				if ($diff_type eq 'newvmz') {
+				    {
+					my @rename = ("$vmz_lbvs_directory/newvmz.yaml", "$vmz_lbvs_directory/newvmz.old.yaml");
+					rename $rename[0], $rename[1]
+					    or main::status_message("Cannot rename @rename: $!", "warn");
+				    }
+				    {
+					my @rename = ("$vmz_lbvs_directory/newvmz.new.yaml", "$vmz_lbvs_directory/newvmz.yaml");
+					rename $rename[0], $rename[1]
+					    or main::status_message("Cannot rename @rename: $!", "warn");
+				    }
+				    require File::Copy;
+				    require POSIX;
+				    my $today = POSIX::strftime("%Y%m%d", localtime);
+				    my $archive_dir = "$vmz_lbvs_directory/archive";
+				    mkdir $archive_dir if !-d $archive_dir;
+				    my @copy = ("$vmz_lbvs_directory/newvmz.yaml",
+						"$archive_dir/newvmz-$today.yaml");
+				    File::Copy::copy(@copy)
+					    or main::status_message("Cannot copy @copy: $!", "warn");
 				}
-				require File::Copy;
-				require POSIX;
-				my $today = POSIX::strftime("%Y%m%d", localtime);
-				my $archive_dir = "$vmz_lbvs_directory/archive";
-				mkdir $archive_dir if !-d $archive_dir;
-				my @copy = ("$vmz_lbvs_directory/newvmz.yaml",
-					    "$archive_dir/newvmz-$today.yaml");
-				File::Copy::copy(@copy)
-					or main::status_message("Cannot copy @copy: $!", "warn");
+				$t->destroy;
 			    }
-			    $t->destroy;
-			}
-		    })->pack(-anchor => 'e', -side => 'right');
+			})->pack(-anchor => 'e', -side => 'right');
+	}
     }
     $f = $t->Frame->pack(-fill => "both", -expand => 1);
 
