@@ -48,6 +48,7 @@
 (setq bbbike-sourceid-viz-format "https://viz.berlin.de/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_cmd=traffic&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_submenu=traffic_default&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiId=News_id_%s&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiCoordX=%f&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiCoordY=%f")
 
 (setq bbbike-viz2021-regexp "viz2021:[0-9.,:]+")
+(setq bbbike-adac-regexp "adac:[0-9]+")
 
 (defvar bbbike-mc-traffic-base-url "https://mc.bbbike.org/mc/?profile=traffic&zoom=15&") ; add "lat=52.518117&lon=13.498035" for a complete URL
 
@@ -696,7 +697,7 @@
 	source-id)
     (cond
      ((string-match "\t\\([A-Za-z0-9_/.-]+\\)\t\\(INUSE\\)?$" sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
-     ((string-match (concat "\\(" bbbike-viz2021-regexp "\\)") sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
+     ((string-match (concat "\\(" bbbike-viz2021-regexp "\\|" bbbike-adac-regexp "\\)") sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
      ((string-match "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/\\(.*\\)" sel) (setq source-id (concat "bvg2021:" (substring sel (match-beginning 1) (match-end 1)))))
      (t (error "No X selection or X selection does not contain a source-id")))
     (if (string-match " \\(bis [0-9][0-9]?\\.[0-9][0-9]?\\.[0-9][0-9][0-9][0-9]\\)" sel)
