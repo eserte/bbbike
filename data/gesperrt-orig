@@ -4202,7 +4202,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-05-15 vvv
+#: last_checked: 2025-05-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="6"
@@ -4242,13 +4242,12 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::inwork -11486,-1008 -11452,-974
 # 
 #: next_check_id: KANZLERPARK-2024
-#: note: ein längerer temp_blockings-Eintrag existiert ebenfalls
+#: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="1"
-#: last_checked: 2025-01-15 (mapillary)
+#: last_checked: 2025-05-21
 #: check_frequency: 120d
-#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
-#: valid: -20271231
+#: next_check: 2025-09-30 (Schilder vor Ort)
+#: valid: -20250930
 Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581 7447,12520
 # 
 #: next_check_id: BAB100-2022
@@ -4407,7 +4406,7 @@ An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22668,3125 22477,3109
 #: osm_watch: note 3977175 12
 #: osm_watch: way id="212107363" version="6"
 #: osm_watch: way id="212107362" version="6"
-#: last_checked: 2025-02-11
+#: last_checked: 2025-05-21
 #: check_frequency: 120d
 #: next_check: 2029-01-01
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
@@ -4467,17 +4466,20 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 # 
 #: next_check_id: KANZLERPARK-2024
 #: XXX Bauarbeiten am Kanzlerpark
+#: XXX nach den Bauarbeiten ggfs. Einbahnstraßenregelung in der Ingeborg-Drewitz-Allee wieder herstellen
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
-#: last_checked: 2025-03-10 (mapillary) vvv
+#: last_checked: 2025-05-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="256450718" version="7"
 (Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7789,12764 7649,12764
 #: osm_watch: way id="1081702032" version="3"
-(Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7588,12734 7819,12729
+(Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7362,12731 7377,12729 7542,12736 7588,12734 7819,12729
 #: osm_watch: way id="33913621" version="11"
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7418,12601 7377,12729
+Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,12754
+(Ingeborg-Drewitz-Allee - Alt-Moabit): wegen Bauarbeiten gesperrt	2::inwork 7588,12734 7623,12764
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4540,7 +4542,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2025-04-21 (architektur-urbanistik) (Baustraße existiert noch)
+#: last_checked: 2025-05-21 (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23 (Amtsblatt)
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -5027,7 +5029,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: note 3954448 5
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2025-05-16
+#: last_checked: 2025-05-21
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-12-31
@@ -5838,21 +5840,6 @@ Tor	BNP:0 3332,12742
 tragen (Treppe, 14 Stufen)	0:30 7931,12869
 # 
 Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
-# REMOVED --- Ingeborg-Drewitz-Allee	1 7386,12749 7541,12754
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Teileinziehung von Straßenland)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_21_3213_3356_online.pdf (mit Datum: 2.9.2019)
-#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/1-106/index.shtml
-#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/1-106/download/B-Plan1-106-Planzeichnung.pdf (verkehrsberuhigter Bereich)
-#: by: https://www.deutsches-architekturforum.de/thread/3898-erweiterungsbau-bundesinnenministerium-im-bau/?postID=659637#post659637
-#: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/index.shtml
-#: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/download/210225_Planzeichnung_1-106.pdf (verkehrsberuhigter Bereich)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/erweiterungsbau-bundesministerium-des-innern.562/#post-22257
-#: osm_watch: way id="257432926" version="11"
-#: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2025-05-03 (daf)
-#: check_frequency: 180d
-Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754 7556,12763
-# REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731
 Ingeborg-Drewitz-Allee	1 7362,12731 7343,12758
 # 
 tragen (Treppe, 7+8+9 Stufen)	0:30 5714,12279

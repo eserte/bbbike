@@ -789,20 +789,7 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: IM_003134 (2006, inaktiv)
-# REMOVED (2006) ---	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
-#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025) (bis 13.05.2025) (bis 06.06.2025)
-#: source_id: viz2021:13.48439,52.5128,29.04.2025,09:00 (bis 09.05.2025) (inaktiv)
-#: note: laut rbb weitere Arbeiten im Anschluss
-	q4::inwork 15863,11992 15871,12060
-',
-         'from' => 1745823600,
-         'id' => 617,
-         'text' => 'Ruschestr.: Anbindung Frankfurter Allee gesperrt, vom 29.04.2025 09:00 bis 06.06.2025 17:00',
-         'type' => 'gesperrt',
-         'until' => 1749222000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2788,7 +2775,201 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://csd-berlin.de/event-info-en/
+#: by: https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/gesamte-innenstadt-verkehrseinschrankungen-zum-christopher-street-day
+#: by: https://csd-berlin.de/ (24.7.2021, Route steht noch nicht fest)
+#: by: https://csd-berlin.de/csd-berlin-2021/demo-route-2/
+#: by: https://csd-berlin.de/demo-route-finale-2022/
+#: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
+#: by: https://csd-berlin.de/csd-berlin-2023/route-finale
+#: by: https://csd-berlin.de/route-finale
+#: by: https://www.berlin.de/events/3889775-2229501-pride-village-csd-finale.html
+#: source_id: viz2021:13.3899,52.51036,21.07.2023,19:32 (bis 22.07.2023) (inaktiv)
+	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396
+	2::temp 7033,10396 6937,10407 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6685,10690 6740,10755 6824,10904
+# Route via Karl-Heinrich-Ulrichs-Str.	2::temp 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904
+Route via An der Urania	2::temp 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6826,11479 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
+	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8546,12279 8570,12302
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165
+	3 8573,11404 8542,11502 8548,11571
+	3 8573,11404 8542,11502 8442,11555
+	3 9997,11713 10000,11691 9992,11682
+	3 8743,11489 8740,11524 8736,11557
+	3 7103,11247 6851,11346 6692,11365
+	3 6716,11439 6826,11479 6914,11487
+	3 6716,11439 6826,11479 6789,11499 6750,11550
+	3 9456,11513 9444,11616 9432,11702
+	3 8119,12414 8055,12186 8049,12140
+	3 8049,12140 8055,12186 8119,12414
+	3 8630,12310 8637,12258 8641,12227 8643,12208
+	3 6841,11114 6880,11110 7004,11168 7115,11220
+	3 6742,11099 6873,11011 7002,11034
+	3 8232,11414 8217,11455 8172,11679
+	3 8548,11571 8542,11502 8442,11555
+	3 8548,11571 8542,11502 8573,11404
+	3 7444,10479 7633,10394 7744,10372
+	3 7698,10147 7579,10183 7526,9969
+	3 8327,12174 8344,12221 8391,12389
+	3 7002,11034 6873,11011 6742,11099
+	3 8643,12208 8641,12227 8637,12258 8630,12310
+	3 7744,10372 7633,10394 7444,10479
+	3 9581,11523 9569,11631 9559,11715
+	3 9331,11497 9268,11590 9234,11683
+	3 9000,11727 9058,11564 9155,11283
+	3 6164,11947 6642,12010 6550,11954
+	3 8522,12239 8538,12245 8522,12187
+	3 8104,11037 7980,11070 7747,11075
+	3 7031,12320 7383,12095 7429,12070
+	3 9155,11283 9058,11564 9000,11727
+	3 7963,10716 7820,10768 7534,10850
+	3 7534,10850 7820,10768 7963,10716
+	3 8102,11099 8000,11137 7828,11133
+	3 6540,11754 6778,11742 6980,11790
+	3 8592,11541 8596,11508 8599,11474
+	3 7822,12201 7816,12150 7823,12120
+	3 8442,11555 8542,11502 8548,11571
+	3 8442,11555 8542,11502 8573,11404
+	3 7033,10328 7033,10396 6937,10407
+	3 7033,10328 7033,10396 7227,10489
+# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 7110,10613 6972,10665 6818,10725
+# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 6818,10725 6972,10665 7110,10613
+An der Urania/Kurfürstenstr.	3 6607,10801 6740,10755 6818,10725
+An der Urania/Kurfürstenstr.	3 6818,10725 6740,10755 6607,10801
+Eisenacher Str./Courbièrestr.	3 6719,10347 6753,10446 6743,10615
+Eisenacher Str./Courbièrestr.	3 6743,10615 6753,10446 6719,10347
+# Wichmannstr./Schillstr.	3 6681,10959 6824,10904 6740,10755
+# Wichmannstr./Schillstr.	3 6740,10755 6824,10904 6681,10959
+Wichmannstr./Lützowplatz	3 6681,10959 6824,10904 6918,10858
+Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
+	3 7429,10366 7413,10244 7384,10127
+	3 7429,12070 7383,12095 7031,12320
+	3 7384,10127 7413,10244 7429,10366
+	3 6750,11550 6789,11499 6826,11479 6716,11439
+	3 6750,11550 6789,11499 6826,11479 6914,11487
+	3 7849,10488 7689,10514 7478,10612
+	3 7115,11220 7004,11168 6880,11110 6841,11114
+	3 8391,12389 8344,12221 8327,12174
+	3 8736,11557 8740,11524 8743,11489
+	3 6980,11790 6778,11742 6540,11754
+	3 6679,11602 6809,11570 6869,11567
+	3 7823,12120 7816,12150 7822,12201
+	3 7828,11133 8000,11137 8102,11099
+	3 9559,11715 9569,11631 9581,11523
+	3 7526,9969 7579,10183 7698,10147
+	3 8522,12187 8538,12245 8522,12239
+	3 6692,11365 6851,11346 7103,11247
+	3 9234,11683 9268,11590 9331,11497
+	3 7209,10205 7238,10299 7275,10418
+	3 7275,10418 7238,10299 7209,10205
+	3 8599,11474 8596,11508 8592,11541
+	3 7478,10612 7689,10514 7849,10488
+	3 7747,11075 7980,11070 8104,11037
+	3 6937,10407 7033,10396 7033,10328
+	3 6937,10407 7033,10396 7227,10489
+	3 6914,11487 6826,11479 6789,11499 6750,11550
+	3 6914,11487 6826,11479 6716,11439
+	3 9992,11682 10000,11691 9997,11713
+	3 6869,11567 6809,11570 6679,11602
+	3 6550,11954 6642,12010 6164,11947
+	3 8172,11679 8217,11455 8232,11414
+	3 9692,11732 9701,11656 9702,11647
+	3 9432,11702 9444,11616 9456,11513
+	3 7227,10489 7033,10396 6937,10407
+	3 7227,10489 7033,10396 7033,10328
+	3 9702,11647 9701,11656 9692,11732
+# REMOVED ---	2::temp 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6778,11742 6809,11570 6826,11479 6851,11346 6880,11110 6882,11061 6873,11011 6824,10904 6740,10755 6685,10690 6532,10529 6494,10440
+# REMOVED ---	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+# REMOVED ---	3 8592,11541 8596,11508 8599,11474
+# REMOVED ---	3 9992,11682 10000,11691 9997,11713
+# REMOVED ---	3 6841,11114 6880,11110 7004,11168 7115,11220
+# REMOVED ---	3 9234,11683 9268,11590 9331,11497
+# REMOVED ---	3 6550,11954 6642,12010 6164,11947
+# REMOVED ---	3 7002,11034 6873,11011 6742,11099
+# REMOVED ---	3 7031,12320 7383,12095 7429,12070
+# REMOVED ---	3 8481,11638 8553,11638 8743,11663
+# REMOVED ---	3 6869,11567 6809,11570 6679,11602
+# REMOVED ---	3 9331,11497 9268,11590 9234,11683
+# REMOVED ---	3 8599,11474 8596,11508 8592,11541
+# REMOVED ---	3 6540,11754 6778,11742 6980,11790
+# REMOVED ---	3 6750,11550 6789,11499 6826,11479 6914,11487
+# REMOVED ---	3 6750,11550 6789,11499 6826,11479 6716,11439
+# REMOVED ---	3 9432,11702 9444,11616 9456,11513
+# REMOVED ---	3 6742,11099 6873,11011 7002,11034
+# REMOVED ---	3 8327,12174 8344,12221 8391,12389
+# REMOVED ---	3 8546,12279 8538,12245 8592,12252
+# REMOVED ---	3 8546,12279 8538,12245 8522,12239
+# REMOVED ---	3 8546,12279 8538,12245 8522,12187
+# REMOVED ---	3 7823,12120 7816,12150 7822,12201
+# REMOVED ---	3 8119,12414 8055,12186 8049,12140
+# REMOVED ---	3 7429,12070 7383,12095 7031,12320
+# REMOVED ---	3 8391,12389 8344,12221 8327,12174
+# REMOVED ---	3 6980,11790 6778,11742 6540,11754
+# REMOVED ---	3 8743,11663 8553,11638 8481,11638
+# REMOVED ---	3 8442,11555 8542,11502 8479,11493
+# REMOVED ---	3 8442,11555 8542,11502 8573,11404
+# REMOVED ---	3 9702,11647 9701,11656 9692,11732
+# REMOVED ---	3 7115,11220 7004,11168 6880,11110 6841,11114
+# REMOVED ---	3 7822,12201 7816,12150 7823,12120
+# REMOVED ---	3 6692,11365 6851,11346 7103,11247
+# REMOVED ---	3 6607,10801 6740,10755 6818,10725
+# REMOVED ---	3 6679,11602 6809,11570 6869,11567
+# REMOVED ---	3 7103,11247 6851,11346 6692,11365
+# REMOVED ---	3 6918,10858 6824,10904 6681,10959
+# REMOVED ---	3 9581,11523 9569,11631 9559,11715
+# REMOVED ---	3 6636,10492 6602,10504 6532,10529 6468,10550
+# REMOVED ---	3 9456,11513 9444,11616 9432,11702
+# REMOVED ---	3 8736,11557 8740,11524 8743,11489
+# REMOVED ---	3 8743,11489 8740,11524 8736,11557
+# REMOVED ---	3 8489,11782 8571,11846 8501,11815
+# REMOVED ---	3 8522,12187 8538,12245 8522,12239
+# REMOVED ---	3 8522,12187 8538,12245 8592,12252
+# REMOVED ---	3 8522,12187 8538,12245 8546,12279
+# REMOVED ---	3 8522,12239 8538,12245 8522,12187
+# REMOVED ---	3 8522,12239 8538,12245 8592,12252
+# REMOVED ---	3 8522,12239 8538,12245 8546,12279
+# REMOVED ---	3 8573,11404 8542,11502 8442,11555
+# REMOVED ---	3 8573,11404 8542,11502 8479,11493
+# REMOVED ---	3 8479,11493 8542,11502 8442,11555
+# REMOVED ---	3 8479,11493 8542,11502 8573,11404
+# REMOVED ---	3 8501,11815 8571,11846 8489,11782
+# REMOVED ---	3 6681,10959 6824,10904 6918,10858
+# REMOVED ---	3 9559,11715 9569,11631 9581,11523
+# REMOVED ---	3 9000,11727 9058,11564 9155,11283
+# REMOVED ---	3 9155,11283 9058,11564 9000,11727
+# REMOVED ---	3 6914,11487 6826,11479 6789,11499 6750,11550
+# REMOVED ---	3 6914,11487 6826,11479 6716,11439
+# REMOVED ---	3 9997,11713 10000,11691 9992,11682
+# REMOVED ---	3 6818,10725 6740,10755 6607,10801
+# REMOVED ---	3 8592,12252 8538,12245 8546,12279
+# REMOVED ---	3 8592,12252 8538,12245 8522,12239
+# REMOVED ---	3 8592,12252 8538,12245 8522,12187
+# REMOVED ---	3 6164,11947 6642,12010 6550,11954
+# REMOVED ---	3 6468,10550 6532,10529 6602,10504 6636,10492
+# REMOVED ---	3 9692,11732 9701,11656 9702,11647
+# REMOVED ---	3 8049,12140 8055,12186 8119,12414
+# REMOVED ---	3 6716,11439 6826,11479 6789,11499 6750,11550
+# REMOVED ---	3 6716,11439 6826,11479 6914,11487
+',
+         'from' => 1753394400,
+         'id' => 2083,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              6,
+                              'start',
+                              '2020-07-30T00:00:00'
+                            ]
+                          ],
+         'text' => 'CSD am 26.07.2025',
+         'type' => 'gesperrt',
+         'until' => 1753567199
+       },
        undef,
        undef,
        undef,
@@ -5795,19 +5976,22 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/ (21. Mai 2025)
+#: note: 2025 Sperrzaun entlang der Bellevueallee zwischen Straße des 17. Juni und Kemperplatz
 	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8055,12186 8119,12414
-	3 7822,12201 7816,12150 7823,12120
-	3 7429,12070 7383,12095 7031,12320
-	3 8049,12140 8055,12186 8119,12414
-	3 8327,12174 8344,12221 8391,12389
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12187 8538,12245 8522,12239
-	3 8119,12414 8055,12186 8049,12140
-	3 8391,12389 8344,12221 8327,12174
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201
+	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095
+# REMOVED (westlich der Bellevueallee nicht gesperrt) ---	2::temp 7383,12095 7026,12054 6828,12031
+# REMOVED (Überfahrt möglich) ---	3 7429,12070 7383,12095 7031,12320
+# REMOVED (Überfahrt möglich) ---	3 7031,12320 7383,12095 7429,12070
+Bremer Weg	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239 8538,12245
+	2::temp 7717,11918 7772,12040 7775,12114
+	2::temp 7793,11878 7822,11952 7832,12036 7823,12120 7816,12150
+	2::temp 8016,11770 8020,11937 8022,12016 8052,12033 8057,12065 8034,12093 8049,12140 8055,12186
+	2::temp 8034,12093 8004,12074 7999,12040 8022,12016
+	2::temp 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 8189,11722 8210,11775 8221,11876 8221,11885 8215,12156 8214,12205
+	2::temp 8210,11775 8244,11878 8327,12174 8344,12221
+	2::temp 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
 ',
          'from' => 1747627200,
          'id' => 3576,
@@ -5821,7 +6005,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
                               4
                             ]
                           ],
-         'text' => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, voraussichtlich vom 19.05.2025 bis 22.05.2025 08:00 ',
+         'text' => 'Straße des 17. Juni, Ebertstr. und östlicher Tiergarten: Vorbereitungen für den Berliner Firmenlauf, Straßen und Wege gesperrt, voraussichtlich vom 19.05.2025 bis 22.05.2025 08:00 ',
          'type' => 'gesperrt',
          'until' => 1747893600
        },
@@ -6621,6 +6805,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m
 #: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025)
+#: source_id: adac:1795606390
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung)
 #	q3::inwork; 17101,26701 16532,26174
 	q3::inwork 17101,26701 16532,26174
@@ -6913,7 +7098,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 ',
          'from' => 1746680400,
          'id' => 3898,
-         'text' => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 07:00 bis 04.06.2025 17:00',
+         'text' => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, vom 09.05.2025 07:00 bis 04.06.2025 17:00',
          'type' => 'handicap',
          'until' => 1749049200
        },
@@ -7338,15 +7523,15 @@ nördliche Rathenower Str.: Überfahrt gesperrt	2::inwork 6730,14021 6719,14047
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-03-10 (mapillary)
+#: last_checked: 2025-05-21
 #: check_frequency: 120d
-#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung, Schilder vor Ort)
+#: next_check: 2025-09-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
 	2::inwork 7772,12694 7521,12581
 ',
          'from' => 1708236000,
          'id' => 4010,
-         'text' => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende April 2025',
+         'text' => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende September 2025',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7475,39 +7660,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
-#: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
-#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...)
-#: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
-#: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
-#: also_indoor: traffic (B,T,re-G)
-#: note: bei Bing & TomTom & Google nur die östliche Anbindung als gesperrt markiert
-#: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-05-14 (traffic) vvv
-#: check_frequency: 30d vvv
-#: next_check: 2025-11-06 (VIZ-Verkehrsmeldung) vvv
-Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
-Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-# REMOVED ---	q4::inwork; 25050,13539 25163,13494
-# REMOVED ---	q3::inwork 25163,13494 25287,13464
-# REMOVED --- Uslarer Str.	q3::inwork; 24967,13438 25094,13362
-# REMOVED (möglicherweise entfernt, siehe traffic) --- #: XXX hier Halteverbotsschilder nur bis 20.12.2024 --- #: next_check: 2024-12-20 --- Karlshafener Str.	q4::inwork 24899,13007 25054,12926
-',
-         'from' => 1713942000,
-         'id' => 4048,
-         'text' => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
-         'type' => 'handicap',
-         'until' => 1747839600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7909,10 +8062,10 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: by: https://entwicklungsstadt.de/tempelhofer-feld-arbeiten-am-eingang-crash-gate-starten/ (ab 20.05.2025)
-#: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025)
+#: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025) (mittlerweile ab 22.05.2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-05-20 (website) vvv
+#: last_checked: 2025-05-21 (website) vvv
 #: check_frequency: 1d vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
@@ -8500,6 +8653,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025)
+#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025)
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafendamm südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
@@ -8515,7 +8669,7 @@ Markgrafendamm nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
        {
          'data' => '#: note: außerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen?
 #: note: in der Eweststr. ist der Gehweg für Radfahrer frei (siehe Mapillary), deshalb q4 -> q3
-#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025)
+#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025) (bis 20.06.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474
 #: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
 Pasewalker Str.	q3::inwork; 12121,20969 12158,21166
@@ -8523,9 +8677,9 @@ Eweststr.	q3::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
 ',
          'from' => 1738562400,
          'id' => 4251,
-         'text' => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (Gehwege für Radfahrer frei), vom 04.02.2025 07:00 bis 23.05.2025 17:00',
+         'text' => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (Gehwege für Radfahrer frei), vom 04.02.2025 07:00 bis 20.06.2025 17:00',
          'type' => 'handicap',
-         'until' => 1748012400
+         'until' => 1750431600
        },
        undef,
        undef,
@@ -8770,7 +8924,7 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 #: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 23.05.2025 + ...)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
 #: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 24.04.2025 + ...) (inaktiv)
-#: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten) (bis 10.07.2025 + ...)
 # REMOVED (hier nicht mehr) --- Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 #: next_check ^^^
 #: last_checked ^^^
@@ -8879,7 +9033,7 @@ Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5
        {
          'data' => '#: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-04-27
+#: last_checked: 2025-05-21
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 ',
@@ -8928,14 +9082,14 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.288418,52.496596,14.03.2025,10:00 (bis 30.04.2025) (bis 22.05.2025)
+         'data' => '#: source_id: viz2021:13.288418,52.496596,14.03.2025,10:00 (bis 30.04.2025) (bis 22.05.2025) (bis 23.05.2025)
 	q4::inwork 2551,9995 2590,9949
 ',
          'from' => 1744202737,
          'id' => 4297,
-         'text' => 'Bornstedter Str.: Bauarbeiten an der Anbindung Kurfüstendamm, Fahrbahn gesperrt, voraussichtlich bis 22.05.2025',
+         'text' => 'Bornstedter Str.: Bauarbeiten an der Anbindung Kurfüstendamm, Fahrbahn gesperrt, voraussichtlich bis 23.05.2025',
          'type' => 'handicap',
-         'until' => 1747926000
+         'until' => 1748012400
        },
        undef,
        {
@@ -9424,6 +9578,8 @@ Hermann-Stöhr-Platz: Diagonalverbindung komplett gesperrt	2::inwork 12413,11901 
 #: by: https://www.tagesspiegel.de/berlin/marode-brucke-stau-rund-um-gesperrte-brucke-an-der-wuhlheide-13720807.html
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409055253/einsturzgefahr-strasse-unter-bruecke-an-der-wuhlheide-gesperrt.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1561245.php
+#: by: https://entwicklungsstadt.de/oberschoeneweide-marode-autobruecke-wird-abgerissen-und-nicht-wieder-aufgebaut/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1562059.php
 #: last_checked: 2025-05-20
 unter der Brücke	2::inwork 18001,7121 18019,7146
 ',
@@ -9457,63 +9613,31 @@ unter der Brücke	2::inwork 18001,7121 18019,7146
          'type' => 'handicap',
          'until' => 1750345200
        },
+       undef,
        {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/service/bevoelkerungsschutz/artikel.1561172.php
-#: by: https://www.tagesspiegel.de/potsdam/brandenburg/auch-berlin-betroffen-entscharfung-einer-250-kilo-bombe-in-teltow-am-mittwoch-13719928.html
-#: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article409061939/bombenentschaerfung-in-teltow-betrifft-auch-berliner-der-sperrkreis.html
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1561185.php
-#: by: https://www.teltow.de/aktuelles/news/evakuierung-aufgrund-von-bombenentschaerfung-in-teltow.html
-Ostpreußendamm	2::bomb 3808,1016 3655,752 3642,727 3596,655 3511,593 3497,583 3465,563
-(Ostpreußendamm - Erbkaveln)	2::bomb 3642,727 3561,789 3550,810
-(Erbkaveln - Teltowkanaluferweg)	2::bomb 3550,810 3511,887
-(Réaumurstr. - Fürstenstr., S-Bahnunterführung)	2::bomb 4147,465 4137,468
-Fürstenstr. (Lichterfelde)	2::bomb 4122,421 4137,468 4143,500
-Feldstr. (Lichterfelde)	2::bomb 4143,500 4018,699 3951,798 3840,964 3808,1016
-Holtheimer Weg	2::bomb 4122,421 4068,406 3912,362 3791,338 3729,324 3676,311 3647,299
-(Holtheimer Weg - Grenzstreifen)	2::bomb 3647,299 3607,283
-Westfalenring	2::bomb 4068,406 4079,354 4066,277 4029,144 3939,109 3922,111 3837,166 3795,221 3729,324
-Gronauer Weg	2::bomb 3922,111 3916,-54
-Wormbacher Weg	2::bomb 3791,338 3782,397 3648,531
-Schwelmer Str.	2::bomb 3497,583 3569,469 3676,311
-Schöppinger Str.	2::bomb 3569,469 3648,531 3691,566
-Dorstener Str.	2::bomb 3691,566 3596,655
-Ahlener Weg	2::bomb 3721,195 3795,221 3849,250 3899,305 3912,362 3898,466
-Lippstädter Str.	2::bomb 3898,466 3834,502 3655,752
-(Mauerweg Lichterfelde)	2::bomb 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
-Lichterfelder Allee (Teltow)	2::bomb 3465,563 3412,534 3255,428 3177,374 2958,229
-Paul-Gerhardt-Str. (Teltow)	2::bomb 3412,534 3271,745
-Kantstr. (Teltow)	2::bomb 3721,195 3689,182 3485,102 3392,63 3324,34 3305,25 3263,7 3223,-10 3201,-19 3143,-53
-Osdorfer Str. (Teltow)	2::bomb 3843,-401 3623,-384 3423,-372 3411,-376 3403,-369 3356,-366 3341,-353 3331,-368
-Hannemannstr. (Teltow)	2::bomb 2841,411 2902,329 2958,229 3004,159 3067,63 3143,-53 3227,-180 3341,-353
-Max-Sabersky-Allee (Teltow)	2::bomb 3271,745 3095,640 3073,613 3058,576 3035,520 2971,373 2902,329
-Karl-Liebknecht-Steig (Teltow)	2::bomb 3035,520 3065,508 3107,436
-Maxim-Gorki-Str. (Teltow)	2::bomb 3177,374 3225,304 3314,179 3392,63 3476,-58 3579,-196 3621,-271
-Bruno-H.-Bürgel-Str. (Teltow)	2::bomb 3004,159 3059,195 3110,229 3167,264 3225,304 3304,356
-Gerhart-Hauptmann-Str. (Teltow)	2::bomb 3255,428 3304,356 3320,335 3404,211 3485,102 3556,-3 3654,-144 3720,-242
-Marienfelder Anger (Teltow)	2::bomb 3243,151 3314,179 3404,211 3490,241 3607,283
-Schillerstr. (Teltow)	2::bomb 3403,-104 3476,-58 3556,-3
-Schillerstr. (Teltow)	2::bomb 3556,-3 3767,66
-Goethesteig (Teltow)	2::bomb 3579,-196 3654,-144
-Goethestr. (Teltow)	2::bomb 3654,-144 3838,-83
-Wilhelm-Busch-Str. (Teltow)	2::bomb 3720,-242 3741,-313
-Wilhelm-Busch-Str. (Teltow)	2::bomb 3623,-384 3626,-346 3741,-313 3786,-300
-Zehnrutenweg (Teltow)	2::bomb 3411,-376 3539,-570 3561,-645
-Siegfriedstr. (Teltow)	2::bomb 4058,-437 4049,-470 4023,-562
-(Mauerweg - Siegfriedstr.) (Teltow)	2::bomb 4081,-425 4058,-437
-Siedlerweg (Teltow)	2::bomb 3539,-570 3666,-512
-Lessingstr. (Teltow)	2::bomb 3341,-353 3621,-271 3720,-242 3908,-187
-Heinrich-Zille-Str. (Teltow)	2::bomb 3059,195 3125,98 3201,-19
-Heinrich-Heine-Str. (Teltow)	2::bomb 3110,229 3179,131 3263,7
-Otto-Braune-Str. (Teltow)	2::bomb 3167,264 3231,168 3243,151 3324,34
-Leibnizstr. (Teltow)	2::bomb 3320,335 3402,390 3466,433
-(Leibnizstr. - Mauerweg) (Teltow)	2::bomb 3466,433 3480,441
-Emil-Fischer-Str. (Teltow)	2::bomb 3402,390 3466,299 3490,241
+         'data' => '#: source_id: viz2021:13.501283,52.560123,21.05.2025,07:00 (hier nur Kfz-Verkehr, bis 23.07.2025 + weitere Bauphasen)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpnptl6lls2o
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiebwxdqzzfbx4fuikq5twvb2ibrbfh7mzstw4rj6hwp7ucy4km2zi@jpeg (laut Verkehrszeichenplan keine Ausnahmen für Radfahrer)
+Malchower Weg	q4::inwork; 16887,17349 16905,17281 16915,17231
+#: note: nur wenige Meter, deshalb q3
+Drossener Str.: Einbahnstraßenregelung	q3::inwork; 16709,17177 16915,17231
+Privatstr. 2	q4::inwork 16905,17281 17028,17298
 ',
-         'from' => 1747692000,
-         'id' => 4345,
-         'text' => 'Bombenentschärfung in Lichterfelde-Süd/Teltow: 600 m großer Sperrkreis wird errichtet, voraussichtlich am 21. Mai 2025 ab 7:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1747836000
+         'from' => 1747717200,
+         'id' => 4346,
+         'text' => 'Malchower Weg: Leitungsarbeiten, Richtung Süden gesperrt, außerdem Anbindungen Drossener Str. und Privatstr. 2 gesperrt, vom 21.05.2025 07:00 bis 23.07.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1753282800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.353978,52.494742,16.05.2025,07:00 (bis 04.07.2025)
+	q4::inwork 7028,9678 7049,9833 7038,10088
+',
+         'from' => 1747285200,
+         'id' => 4347,
+         'text' => 'Goltzstr.: Anbindung an die Hohenstauffenstr./Pallasstr. unterbrochen, evtl. sind auch Radfahrer betroffen, vom 16.05.2025 07:00 bis 04.07.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1751641200
        }
      
 );

@@ -5489,14 +5489,14 @@ EOF
 EOF
      },
      { from  => 1745823600, # 2025-04-28 09:00, # 1160591740, # 2006-10-11 20:35
-       until => $isodate2epoch->("2025-06-06 17:00:00"), # 1746802800, # 2025-05-09 17:00, # 1161208800, # 2006-10-19 00:00
+       until => 1747850662, # $isodate2epoch->("2025-06-06 17:00:00"), # 1746802800, # 2025-05-09 17:00, # 1161208800, # 2006-10-19 00:00
 #      text  => 'Ruschestr. (Lichtenberg) in Richtung Frankfurter Allee, zwischen Normannenstr. und Frankfurter Allee Baustelle, Fahrtrichtung gesperrt (bis 18.10.06)',
        text  => 'Ruschestr.: Anbindung Frankfurter Allee gesperrt, vom 29.04.2025 09:00 bis 06.06.2025 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: IM_003134 (2006, inaktiv)
 # REMOVED (2006) ---	1::inwork 15904,12340 15896,12273 15889,12212 15886,12190 15879,12131 15871,12060 15863,11992
-#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025) (bis 13.05.2025) (bis 06.06.2025)
+#: source_id: viz2021:13.484406,52.51298,29.04.2025,09:00 (bis 09.05.2025) (bis 13.05.2025) (bis 06.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.48439,52.5128,29.04.2025,09:00 (bis 09.05.2025) (inaktiv)
 #: note: laut rbb weitere Arbeiten im Anschluss
 	q4::inwork 15863,11992 15871,12060
@@ -18470,16 +18470,16 @@ EOF
 	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => $isodate2epoch->("2024-07-26 00:00:00"), # 1658440800, # 2022-07-22 00:00
-       until => $isodate2epoch->("2024-07-27 23:59:59"), # 1658613599, # 2022-07-23 23:59
+     { from  => $isodate2epoch->("2025-07-25 00:00:00"), # 1658440800, # 2022-07-22 00:00
+       until => $isodate2epoch->("2025-07-26 23:59:59"), # 1658613599, # 2022-07-23 23:59
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 6, start => "2020-07-30T00:00:00"]], # Absage 2020
-       #recurrence_prewarn_days => -7,
-       source_id => 'https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html',
-       text  => 'CSD am 27. Juli 2024',
+#      recurrence_prewarn_days => -7,
+       text  => 'CSD am 26.07.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://csd-berlin.de/event-info-en/
+#: by: https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/gesamte-innenstadt-verkehrseinschrankungen-zum-christopher-street-day
 #: by: https://csd-berlin.de/ (24.7.2021, Route steht noch nicht fest)
 #: by: https://csd-berlin.de/csd-berlin-2021/demo-route-2/
@@ -36844,7 +36844,7 @@ EOF
        until => $isodate2epoch->("2025-05-22 08:00:00"), # $isodate2epoch->("2024-04-25 08:00:00"), # $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00 # ein Tag nach dem Event
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, voraussichtlich vom 19.05.2025 bis 22.05.2025 08:00 ',
+       text  => 'Straße des 17. Juni, Ebertstr. und östlicher Tiergarten: Vorbereitungen für den Berliner Firmenlauf, Straßen und Wege gesperrt, voraussichtlich vom 19.05.2025 bis 22.05.2025 08:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
@@ -36861,19 +36861,22 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/ (21. Mai 2025)
+#: note: 2025 Sperrzaun entlang der Bellevueallee zwischen Straße des 17. Juni und Kemperplatz
 	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8055,12186 8119,12414
-	3 7822,12201 7816,12150 7823,12120
-	3 7429,12070 7383,12095 7031,12320
-	3 8049,12140 8055,12186 8119,12414
-	3 8327,12174 8344,12221 8391,12389
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12187 8538,12245 8522,12239
-	3 8119,12414 8055,12186 8049,12140
-	3 8391,12389 8344,12221 8327,12174
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201
+	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095
+# REMOVED (westlich der Bellevueallee nicht gesperrt) ---	2::temp 7383,12095 7026,12054 6828,12031
+# REMOVED (Überfahrt möglich) ---	3 7429,12070 7383,12095 7031,12320
+# REMOVED (Überfahrt möglich) ---	3 7031,12320 7383,12095 7429,12070
+Bremer Weg	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239 8538,12245
+	2::temp 7717,11918 7772,12040 7775,12114
+	2::temp 7793,11878 7822,11952 7832,12036 7823,12120 7816,12150
+	2::temp 8016,11770 8020,11937 8022,12016 8052,12033 8057,12065 8034,12093 8049,12140 8055,12186
+	2::temp 8034,12093 8004,12074 7999,12040 8022,12016
+	2::temp 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 8189,11722 8210,11775 8221,11876 8221,11885 8215,12156 8214,12205
+	2::temp 8210,11775 8244,11878 8327,12174 8344,12221
+	2::temp 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
 EOF
      },
      { from  => 1656475200, # 2022-06-29 06:00
@@ -40161,6 +40164,7 @@ EOF
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m
 #: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025)
+#: source_id: adac:1795606390
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung)
 #	q3::inwork; 17101,26701 16532,26174
 	q3::inwork 17101,26701 16532,26174
@@ -41461,7 +41465,7 @@ EOF
 #      text  => 'Rosenthaler Str.: Gleisarbeiten zwischen Weinmeisterstr. und Neue Schönhauser Str., keine Freigabe für Radfahrer, außerdem Sperrung des Einmündungsbereichs Gipsstr., vom 22.11.2023 07:00 bis 09.01.2024 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten hinter der Einmündungs Neue Schönhauser Str., auch Radfahrer sind betroffen, vom 26.09.2023 06:00 bis 16.10.2023 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
-       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 07:00 bis 04.06.2025 17:00',
+       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, vom 09.05.2025 07:00 bis 04.06.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
@@ -43204,7 +43208,7 @@ EOF
      { from  => 1708236000, # 2024-02-18 07:00
        until => undef, # 1737734400, # 2025-01-24 17:00
 #      text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, vom 19.02.2024 07:00 bis 24.01.2025 17:00',
-       text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende April 2025',
+       text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende September 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KANZLERPARK-2024
@@ -43217,9 +43221,9 @@ EOF
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-03-10 (mapillary)
+#: last_checked: 2025-05-21
 #: check_frequency: 120d
-#: next_check: 2025-04-30 (VIZ-Verkehrsmeldung, Schilder vor Ort)
+#: next_check: 2025-09-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
 	2::inwork 7772,12694 7521,12581
 EOF
@@ -45366,10 +45370,10 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: by: https://entwicklungsstadt.de/tempelhofer-feld-arbeiten-am-eingang-crash-gate-starten/ (ab 20.05.2025)
-#: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025)
+#: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025) (mittlerweile ab 22.05.2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-05-20 (website) vvv
+#: last_checked: 2025-05-21 (website) vvv
 #: check_frequency: 1d vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
@@ -46644,6 +46648,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025)
+#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025)
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafendamm südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
@@ -46662,14 +46667,14 @@ Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
 EOF
      },
      { from  => 1738562400, # 2025-02-03 07:00
-       until => $isodate2epoch->("2025-05-23 17:00:00"), # 1744729200, # 2025-04-15 17:00
+       until => $isodate2epoch->("2025-06-20 17:00:00"), # 1744729200, # 2025-04-15 17:00
 #      text  => 'Eweststr.: Einbahnstraßenregelung, vom 04.02.2025 07:00 bis 15.04.2025 17:00',
-       text  => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (Gehwege für Radfahrer frei), vom 04.02.2025 07:00 bis 23.05.2025 17:00',
+       text  => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (Gehwege für Radfahrer frei), vom 04.02.2025 07:00 bis 20.06.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: note: außerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen?
 #: note: in der Eweststr. ist der Gehweg für Radfahrer frei (siehe Mapillary), deshalb q4 -> q3
-#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025)
+#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025) (bis 20.06.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474
 #: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
 Pasewalker Str.	q3::inwork; 12121,20969 12158,21166
@@ -47079,7 +47084,7 @@ EOF
 #: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 23.05.2025 + ...)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
 #: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 24.04.2025 + ...) (inaktiv)
-#: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten) (bis 10.07.2025 + ...)
 # REMOVED (hier nicht mehr) --- Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 #: next_check ^^^
 #: last_checked ^^^
@@ -47259,7 +47264,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-04-27
+#: last_checked: 2025-05-21
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 EOF
@@ -47300,11 +47305,11 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 EOF
      },
      { from  => 1744202737, # 2025-04-09 14:45
-       until => $isodate2epoch->("2025-05-22 17:00:00"), # 1746050400, # 2025-05-01 00:00
-       text  => 'Bornstedter Str.: Bauarbeiten an der Anbindung Kurfüstendamm, Fahrbahn gesperrt, voraussichtlich bis 22.05.2025',
+       until => $isodate2epoch->("2025-05-23 17:00:00"), # 1746050400, # 2025-05-01 00:00
+       text  => 'Bornstedter Str.: Bauarbeiten an der Anbindung Kurfüstendamm, Fahrbahn gesperrt, voraussichtlich bis 23.05.2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.288418,52.496596,14.03.2025,10:00 (bis 30.04.2025) (bis 22.05.2025)
+#: source_id: viz2021:13.288418,52.496596,14.03.2025,10:00 (bis 30.04.2025) (bis 22.05.2025) (bis 23.05.2025)
 	q4::inwork 2551,9995 2590,9949
 EOF
      },
@@ -47865,6 +47870,8 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/marode-brucke-stau-rund-um-gesperrte-brucke-an-der-wuhlheide-13720807.html
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409055253/einsturzgefahr-strasse-unter-bruecke-an-der-wuhlheide-gesperrt.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1561245.php
+#: by: https://entwicklungsstadt.de/oberschoeneweide-marode-autobruecke-wird-abgerissen-und-nicht-wieder-aufgebaut/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1562059.php
 #: last_checked: 2025-05-20
 unter der Brücke	2::inwork 18001,7121 18019,7146
 EOF
@@ -47903,6 +47910,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article409061939/bombenentschaerfung-in-teltow-betrifft-auch-berliner-der-sperrkreis.html
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1561185.php
 #: by: https://www.teltow.de/aktuelles/news/evakuierung-aufgrund-von-bombenentschaerfung-in-teltow.html
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1562157.php (Aufhebung des Sperrkreises um 15:20 Uhr)
 Ostpreußendamm	2::bomb 3808,1016 3655,752 3642,727 3596,655 3511,593 3497,583 3465,563
 (Ostpreußendamm - Erbkaveln)	2::bomb 3642,727 3561,789 3550,810
 (Erbkaveln - Teltowkanaluferweg)	2::bomb 3550,810 3511,887
@@ -47948,6 +47956,29 @@ Otto-Braune-Str. (Teltow)	2::bomb 3167,264 3231,168 3243,151 3324,34
 Leibnizstr. (Teltow)	2::bomb 3320,335 3402,390 3466,433
 (Leibnizstr. - Mauerweg) (Teltow)	2::bomb 3466,433 3480,441
 Emil-Fischer-Str. (Teltow)	2::bomb 3402,390 3466,299 3490,241
+EOF
+     },
+     { from  => 1747717200, # 2025-05-20 07:00
+       until => 1753282800, # 2025-07-23 17:00
+       text  => 'Malchower Weg: Leitungsarbeiten, Richtung Süden gesperrt, außerdem Anbindungen Drossener Str. und Privatstr. 2 gesperrt, vom 21.05.2025 07:00 bis 23.07.2025 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: viz2021:13.501283,52.560123,21.05.2025,07:00 (hier nur Kfz-Verkehr, bis 23.07.2025 + weitere Bauphasen)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpnptl6lls2o
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiebwxdqzzfbx4fuikq5twvb2ibrbfh7mzstw4rj6hwp7ucy4km2zi@jpeg (laut Verkehrszeichenplan keine Ausnahmen für Radfahrer)
+Malchower Weg	q4::inwork; 16887,17349 16905,17281 16915,17231
+#: note: nur wenige Meter, deshalb q3
+Drossener Str.: Einbahnstraßenregelung	q3::inwork; 16709,17177 16915,17231
+Privatstr. 2	q4::inwork 16905,17281 17028,17298
+EOF
+     },
+     { from  => 1747285200, # 2025-05-15 07:00
+       until => 1751641200, # 2025-07-04 17:00
+       text  => 'Goltzstr.: Anbindung an die Hohenstauffenstr./Pallasstr. unterbrochen, evtl. sind auch Radfahrer betroffen, vom 16.05.2025 07:00 bis 04.07.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.353978,52.494742,16.05.2025,07:00 (bis 04.07.2025)
+	q4::inwork 7028,9678 7049,9833 7038,10088
 EOF
      },
     );
