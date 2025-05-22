@@ -251,7 +251,7 @@ for my $sequence (@sequences) {
 	} @coords;
     }
     my($lng0,$lat0) = split /,/, $coords[0];
-    print $ofh "#: url: https://www.mapillary.com/app/user/$creator?pKey=$id&focus=photo&dateFrom=$start_date&dateTo=$end_date&z=15&lat=$lat0&lng=$lng0\n";
+    print $ofh "#: url: https://www.mapillary.com/app/user/$creator?pKey=$id&focus=photo&dateFrom=$start_date&dateTo=$end_date&z=15&lat=$lat0&lng=$lng0&all_coverage=false&my_coverage=false\n";
     print $ofh "$name\tX @coords\n";
 }
 
