@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-05-18
+#: last_checked: 2025-05-22
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -56,7 +56,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="16"
-#: osm_watch: way id="1072662717" version="18"
+#: osm_watch: way id="1072662717" version="19"
 #: last_checked: 2025-05-20 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-12-31
@@ -117,12 +117,12 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
-# REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
-# REMOVED --- #: note: zwischenzeitlich war an der Frankfurter Allee eine Fahrgasse frei (zumindest für Radfahrer benutzbar), mittlerweile wieder über die gesamte Fahrbahnbreite abgesperrt
-# REMOVED --- #: also_indoor: traffic (none)
-# REMOVED --- #: last_checked: 2025-05-18 (wieder offen (weil Sonntag oder generell?))
-# REMOVED --- #: check_frequency: 14d
-# REMOVED --- Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
+#: note: zwischenzeitlich war an der Frankfurter Allee eine Fahrgasse frei (zumindest für Radfahrer benutzbar), mittlerweile wieder über die gesamte Fahrbahnbreite abgesperrt
+#: also_indoor: traffic (none)
+#: last_checked: 2025-05-22
+#: check_frequency: 10d
+Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
@@ -1141,8 +1141,8 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Marzahn ###
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
-#: also_indoor: traffic (B,T,ex-H)
-#: last_checked: 2025-05-17 (traffic)
+#: also_indoor: traffic (B,T,ex-H,G)
+#: last_checked: 2025-05-22 (traffic)
 #: check_frequency: 14d (traffic)
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
@@ -5748,7 +5748,7 @@ Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 #: XXX nach den Bauarbeiten folgenden Eintrag reaktivieren: südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623
 #: last_checked: 2025-05-21
 #: check_frequency: 45d
-#: next_check: 2025-09-30
+#: next_check: 2025-10-30
 südliches Spreeufer: Engstelle zwischen HDKDW und Bundeskanzleramt	q3::inwork 7745,12603 7782,12623
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 #: by: Julia (jbrauch):

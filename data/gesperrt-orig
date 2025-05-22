@@ -2162,7 +2162,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: https://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="16"
-#: last_checked: 2025-04-23 (mapillary)
+#: last_checked: 2025-04-26 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
@@ -4092,7 +4092,7 @@ Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 172
 #: by: mapillary/mapilio
 #: add_fragezeichen: Ist die Straße noch wegen Bauarbeiten gesperrt?
 #: also_indoor: traffic (re-G,W)
-#: last_checked: 2025-05-10 (traffic)
+#: last_checked: 2025-05-22 (traffic)
 #: check_frequency: 14d (traffic checks)
 Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 # 
@@ -4246,8 +4246,8 @@ Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::i
 #: osm_watch: way id="1263834183" version="1"
 #: last_checked: 2025-05-21
 #: check_frequency: 120d
-#: next_check: 2025-09-30 (Schilder vor Ort)
-#: valid: -20250930
+#: next_check: 2025-10-30 (Schilder vor Ort)
+#: valid: -20251030
 Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581 7447,12520
 # 
 #: next_check_id: BAB100-2022
@@ -4361,7 +4361,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="29"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-05-07
+#: last_checked: 2025-05-20 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-06-06 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -5000,7 +5000,7 @@ Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_35_2301_2352_online.pdf (Straßenlandwidmung des schon eröffneten Abschnitts)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_53_4921_5172_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_31_2123_2242_online.pdf (Widmung von öffentlichen Straßenland, zweiter Bauabschnitt)
-#: by: #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_42_3163_3214_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_42_3163_3214_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
 #: source_id: viz2021:13.362267,52.536335,05.02.2024,07:00 (Leitungsarbeiten, in der Heidestr., bis 29.03.2024) (inaktiv)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
@@ -5172,7 +5172,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # 
 #: osm_watch: note 4480556 3
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-05-16
+#: last_checked: 2025-05-22 (traffic)
 #: check_frequency: 14d (traffic)
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 

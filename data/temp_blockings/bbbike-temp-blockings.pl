@@ -22326,7 +22326,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-05-15 (traffic)
+#: last_checked: 2025-05-22 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -29045,8 +29045,8 @@ EOF
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: priority: #B
-#: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent)
-#: last_checked: 2025-04-18 (youtube)
+#: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20) existiert das Radfahrer-verboten-Schild nicht mehr
+#: last_checked: 2025-05-20 (mapillary)
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="40"
 #: osm_watch: way id="580507889" version="35"
@@ -31548,7 +31548,7 @@ EOF
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
 #: also_indoor: traffic (B,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-05-18 (traffic) vvv
+#: last_checked: 2025-05-22 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
@@ -36854,10 +36854,10 @@ EOF
 #: source_id: viz2021:13.371607,52.515899,22.04.2024,06:00 (bis 25.04.2024) (inaktiv)
 #: source_id: viz2021:13.36259,52.505907,24.04.2024,18:00 (bis 24.04.2024) (inaktiv)
 #: source_id: viz2021:13.35107,52.51429,05.05.2025,22:00 (bis 30.05.2025) (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,20.05.2025,06:00 (bis 22.05.2025)
-#: source_id: viz2021:13.35064,52.51395,20.05.2025,06:00 (bis 22.05.2025)
-#: source_id: viz2021:13.36259,52.505907,21.05.2025,17:00 (bis 21.05.2025)
-#: source_id: viz2021:13.370513,52.51724,20.05.2025,06:00 (bis 22.05.2025)
+#: source_id: viz2021:13.366231,52.515535,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
+#: source_id: viz2021:13.35064,52.51395,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
+#: source_id: viz2021:13.36259,52.505907,21.05.2025,17:00 (bis 21.05.2025) (inaktiv)
+#: source_id: viz2021:13.370513,52.51724,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/ (21. Mai 2025)
@@ -37753,7 +37753,7 @@ EOF
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024)
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="15"
+#: osm_watch: way id="1117348911" version="16"
 #: also_indoor: traffic (G,ex-B[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
@@ -37761,7 +37761,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024)
 #: priority: #B
-#: last_checked: 2025-05-20
+#: last_checked: 2025-05-21 (osm)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-08-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -42641,7 +42641,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408790142/bauprojekt-ruedigerstrasse-es-ist-einfach-unverhaeltnismaessig.html
 #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv 
 #: also_indoor: traffic (ex-G,B,T) vvv
-#: last_checked: 2025-05-09 (traffic) vvv
+#: last_checked: 2025-05-22 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d (outdoor) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-05-09 (Halteverbotsschilder) vvv
@@ -43208,7 +43208,7 @@ EOF
      { from  => 1708236000, # 2024-02-18 07:00
        until => undef, # 1737734400, # 2025-01-24 17:00
 #      text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, vom 19.02.2024 07:00 bis 24.01.2025 17:00',
-       text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende September 2025',
+       text  => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende Oktober 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KANZLERPARK-2024
@@ -43223,7 +43223,7 @@ EOF
 #: priority: #A
 #: last_checked: 2025-05-21
 #: check_frequency: 120d
-#: next_check: 2025-09-30 (Schilder vor Ort)
+#: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
 	2::inwork 7772,12694 7521,12581
 EOF
@@ -43531,11 +43531,11 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-05-12 (mapillary) vvv
+#: last_checked: 2025-05-20 (osm) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="29"
+#: osm_watch: way id="120633718" version="30"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch[closed]: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -44329,11 +44329,11 @@ EOF
 EOF
      },
      { from  => 1717909200, # 2024-06-09 07:00
-       until => $isodate2epoch->("2025-05-23 17:00:00"), # 1722265200, # 2024-07-29 17:00
-       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 23.05.2025 17:00',
+       until => $isodate2epoch->("2025-07-02 17:00:00"), # 1722265200, # 2024-07-29 17:00
+       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 02.07.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025)
+#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025)
 #: osm_watch: way id="1303423090" version="3"
 #: note: laut osm opening_date=2025-08-01; laut Baustellenschild der Wasserbetriebe bis Mai 2025
 	q3::inwork 10573,17566 10466,17464
@@ -44585,7 +44585,7 @@ EOF
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805829089292665128
 #: by: https://pbs.twimg.com/media/GQ7a054WMAE2aSX?format=jpg&name=large
-#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025) (bis 14.03.2025) (bis 18.03.2025) (bis 21.03.2025) (bis 15.04.2025) (bis 15.05.2025) (bis 23.05.2025)
+#: source_id: viz2021:13.415011,52.515786,26.06.2024,07:00 (bis 28.02.2025) (bis 14.03.2025) (bis 18.03.2025) (bis 21.03.2025) (bis 15.04.2025) (bis 15.05.2025) (bis 23.05.2025) (bis 26.06.2025)
 #: note: mittlerweile (2024-09-02) gibt es im Zuge der Stralauer Str. Richtung Westen eine Führung über den Hochbord (getrennter Rad- und Gehweg) eine Verschwenkung (etwa 20m) in Höhe Dircksenstr.; viele Radfahrer fahren auf der Fahrbahn (die Richtung Westen verschwenkt wurde); mittlerweile (2024-10-10) keine Verschwenkung mehr; mittlerweile (2024-12-03) ist die Radspur wieder nutzbar
 #: note: mittlerweile sind die Barrieren so weggeschoben, dass es keine Beeinträchtigungen mehr gibt
 # REMOVED --- #: last_checked: 2024-12-17 --- #: check_frequency: 14d
@@ -45113,7 +45113,7 @@ EOF
 #: osm_watch: note 4383533 4
 #: osm_watch: way id="37948631" version="9"
 #: also_indoor: traffic (ex-H,G,B,T,A,ex-W)
-#: last_checked: 2025-05-14 (traffic)
+#: last_checked: 2025-05-22 (traffic)
 #: check_frequency: 14d (traffic + altlandsberg website)
 #: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
@@ -45373,7 +45373,7 @@ EOF
 #: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025) (mittlerweile ab 22.05.2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-05-21 (website) vvv
+#: last_checked: 2025-05-22 (website) vvv
 #: check_frequency: 1d vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
@@ -46236,6 +46236,8 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1503828.php (zunächst bis Ende Mai 2025)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
 #: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
+#: osm_watch: node id="5969555198" version="5"
+#: osm_watch: node id="11107173199" version="2"
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
 #: last_checked: 2025-04-09
 #: next_check: 2025-05-31
@@ -46512,11 +46514,11 @@ EOF
 EOF
      },
      { from  => 1737052224, # 2025-01-16 19:30
-       until => 1751320800, # 2025-07-01 00:00
+       until => 1747933974, # 1751320800, # 2025-07-01 00:00
        text  => 'Hadlichstr.: Einbahnstraßenregelung, vermutlich bis 30.06.2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025) (bis 28.04.2025) (bis 23.05.2025)
+#: source_id: viz2021:13.415855,52.57139,12.12.2024,07:00 (bis 11.04.2025) (bis 28.04.2025) (bis 23.05.2025) (inaktiv)
 #: last_checked: 2025-05-11 (mapillary)
 #: next_check: 2025-05-23 (VIZ-Verkehrsmeldung, evtl. wird verlängert?)
 # REMOVED --- #: next_check: 2025-06-30
@@ -46617,7 +46619,7 @@ EOF
 #: note: bei rbb mittlerweile "Bis auf weiteres"
 #: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-05-17 (traffic)
+#: last_checked: 2025-05-22 (traffic)
 #: check_frequency: 10d
 	q4::inwork 2396,9427 2467,9425 2592,9419
 EOF
@@ -47084,7 +47086,7 @@ EOF
 #: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 23.05.2025 + ...)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
 #: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 24.04.2025 + ...) (inaktiv)
-#: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten) (bis 10.07.2025 + ...)
+#: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten) (bis 10.07.2025 + ...) (inaktiv)
 # REMOVED (hier nicht mehr) --- Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
 #: next_check ^^^
 #: last_checked ^^^
@@ -47354,7 +47356,7 @@ EOF
        text  => 'Golzow - Joachimsthal: Bauarbeiten, Deckenerneuerung, Sperrung, 14.04.2025 08:00 Uhr bis 23.05.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/25/033 (bis 23.05.2025)
+#: source_id: LS/221-E/25/033 (bis 23.05.2025) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~25-04-2025-l-23-zwischen-golzow-und-kreuzung-l238
 	2::inwork 33219,61981 33413,61639 35000,60912 35215,60669 35255,60090 35405,59832 35962,59463 35809,59122 35755,58845 35950,58308 36151,57931 36230,57632 36686,57106 36621,56807
 EOF
@@ -47468,7 +47470,8 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T)
-#: last_checked: 2025-04-23
+#: last_checked: 2025-05-22 (traffic)
+#: check_frequency: 14d
 	q4::inwork 1532,2921 1641,2914
 EOF
      },
@@ -47478,7 +47481,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G,T)
+#: also_indoor: traffic (ex-G,T)
 #: osm_watch: way id="1237862681" version="5"
 #: osm_watch: way id="4871838" version="28"
 #: osm_watch: way id="1237862680" version="2"
@@ -47486,7 +47489,8 @@ EOF
 #: osm_watch: note 4544910 5
 #: osm_watch: note 4544909 3
 #: osm_watch: note 4544105 3
-#: last_checked: 2025-04-23
+#: last_checked: 2025-05-22 (traffic)
+#: check_frequency: 14d
 	q3::inwork 5280,5714 5276,5622 5274,5557
 EOF
      },
@@ -47699,7 +47703,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lopunzh3jc2v
 #: note: bei rbb mittlerweile entfernt; wieder da, mittlerweile bis 20.06.2025
 #: also_indoor: traffic (H,G,T,A,W)
-#: last_checked: 2025-05-14 (traffic)
+#: last_checked: 2025-05-22 (traffic)
 #: check_frequency: 10d
 #: next_check: 2025-06-20 (rbb)
 	q4::inwork 23679,11372 23654,11285 23648,11265
@@ -47722,7 +47726,7 @@ EOF
 #: by: https://www.berliner-woche.de/fennpfuhl/c-umwelt/gruenzug-wird-umgestaltet_a413057
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10502 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10613 (Antrag (zur Beleuchtung))
-#: osm_watch: note 4405725 7
+#: osm_watch: note 4405725 8
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-05-10
 #: check_frequency: 21d
@@ -47862,7 +47866,7 @@ EOF
 #: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum)
 #: source_id: adac:922791900
 #: source_id: adac:1526844418
-#: osm_watch: note 4767216 2
+#: osm_watch: note 4767216 4
 #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-wuhlheide-bruecke-sofortige-sperrung-verkehr-einsturzgefahr.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/
 #: by: http://bvg.de/dam/jcr:2d8c755f-2c9c-44b8-b819-11bc2e3a1fda/TramMetro_Bauausschnitt%20Wuhlheide_2fassung.png
@@ -47872,6 +47876,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1561245.php
 #: by: https://entwicklungsstadt.de/oberschoeneweide-marode-autobruecke-wird-abgerissen-und-nicht-wieder-aufgebaut/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1562059.php
+#: by: https://www.tagesspiegel.de/berlin/drucken-sie-uns-die-daumen-berlin-sucht-weiter-abrissunternehmen-fur-marode-wuhlheide-brucke-13728760.html
 #: last_checked: 2025-05-20
 unter der Brücke	2::inwork 18001,7121 18019,7146
 EOF
@@ -47964,6 +47969,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.501283,52.560123,21.05.2025,07:00 (hier nur Kfz-Verkehr, bis 23.07.2025 + weitere Bauphasen)
+#: source_id: adac:1670787902
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpnptl6lls2o
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiebwxdqzzfbx4fuikq5twvb2ibrbfh7mzstw4rj6hwp7ucy4km2zi@jpeg (laut Verkehrszeichenplan keine Ausnahmen für Radfahrer)
 Malchower Weg	q4::inwork; 16887,17349 16905,17281 16915,17231
@@ -47979,6 +47985,34 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.353978,52.494742,16.05.2025,07:00 (bis 04.07.2025)
 	q4::inwork 7028,9678 7049,9833 7038,10088
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Scharnweberstr.: provisorische Schulzone, Fahrbahn abgesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11603
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_46_3407_3446_online.pdf (Teileinziehung von Straßenland)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1505682.php (Maßnahmenstart im nördlichen Bereich im November 2024 --- Niederbarnimstraße, Einbahnstraßenregelungen (vielleicht die Colberstr.?) und dieser Abschnitt)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11772 (zur Nichtumsetzung 2024)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/poller-radwege-fussgangerzonen-grunes-bezirksamt-will-verkehr-im-friedrichshainer-kiez-umkrempeln-12965524.html (Erwähnung)
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/erste-autofreie-zonen-im-ostkreuz-kiez-umgesetzt_a433236
+#: by: https://www.berliner-zeitung.de/mensch-metropole/friedrichshain-kreuzberg-mehr-poller-weniger-parkplaetze-so-reagiert-der-bezirk-auf-die-heftige-kritik-li.2291235 (Frühjahr 2025)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1527821.php
+#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/informationen-zur-neuen-schulzone_a435248
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1561419.php (Beginn der baulichen Umsetzung)
+#: by: https://entwicklungsstadt.de/friedrichshain-schafft-erste-schulzone-mehr-sicherheit-vor-der-jane-goodall-grundschule/
+# REMOVED (deleted) --- #: osm_watch: way id="1051634661" version="11"
+#: osm_watch: way id="1388649610" version="1"
+#: osm_watch: note 4668723 4
+#: XXX zurzeit (noch?) keine Ausnahme für Radfahrer
+#: add_fragezeichen: Wird die Durchfahrt für Radfahrer möglich sein?
+#: last_checked: 2025-05-22
+#: check_frequency: 10d
+# REMOVED --- #: next_check: 2024-10-04
+Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	q4::temp 14783,11949 14675,11964
 EOF
      },
     );
