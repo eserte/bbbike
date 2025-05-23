@@ -128,7 +128,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="19"
-#: last_checked: 2025-05-14
+#: last_checked: 2025-05-23
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -946,7 +946,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2025-04-23
+#: last_checked: 2025-05-23
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -2532,7 +2532,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021)
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2025-04-23 (mapillary)
+#: last_checked: 2025-05-21 (mapillary)
 #: check_frequency: 90d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -6545,7 +6545,7 @@ Vogesenstr.: unbefestigte Straße	Q2 13351,21239 13368,21142
 #: note: Beleuchtung existiert
 Elsa-Rendschmidt-Weg: Asphalt	Q0 -1749,11403 -1711,11452 -1687,11458 -1663,11487 -1627,11465 -1593,11507 -1635,11535 -1750,11719
 Rollbergstr.: glatte Pflasterung	Q0- 12147,8117 12226,8137 12295,8154
-(Werbellinstr. 50 - Rollbergstr.): glatte Pflasterung	Q0- 12311,8084 12295,8154 12282,8204
+(Werbellinstr. 50 - Rollbergstr.): glatte Pflasterung	Q0- 12311,8084 12295,8154 12284,8195 12282,8204
 Michiganseestr.: Asphalt	Q0+; 17042,10269 17081,10415
 #: note: der breite Parkstreifen ist noch betoniert
 Michiganseestr.: Asphalt/Beton	Q0; 17081,10415 17042,10269
@@ -10759,6 +10759,9 @@ Grimmstr. [ehemaliges Urbankrankenhaus]: Asphalt	Q0 11072,9711 11040,9724 11030,
 (Dieffenbachstr. - ehemaliges Urbankrankenhaus): Verbundsteinpflaster	Q1 10926,9821 10919,9804 10899,9754
 (Vorfahrt am Bahnhof Friedrichstr.): Kleinsteinpflaster	Q1- 9171,12758 9303,12718
 Am Sudhaus: Verbundsteinpflaster	Q0- 12134,8172 12282,8204
+(Am Sudhaus - Isarstr.): Asphalt	Q0 12284,8195 12340,8208
+(Am Sudhaus - Isarstr.): Verbundsteinpflaster	Q1+ 12340,8208 12397,8221
+(Am Sudhaus - Isarstr.): Asphalt, teilweise Schotter	Q1- 12397,8221 12386,8274
 Treitschkestr.: Betonplatten	Q0 5062,6295 4997,6331 4971,6345 4846,6417
 (Schildhornstr. - Treitschkestr./Hackerstr.): Betonplatten	Q0 4937,6205 4997,6331 5015,6363 4999,6397
 An den Eldenaer Höfen: Verbundsteinpflaster	Q1+ 14449,12833 14480,12932

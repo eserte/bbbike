@@ -33013,7 +33013,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-04-13 (mapillary)
+#: last_checked: 2025-05-23
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -36161,7 +36161,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # 1651248083, # undef, # XXX
-#       text  => 'Ganghoferstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Ganghoferstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        text  => 'Ganghoferstr.: Einbahnstraße wegen Bauarbeiten, Gültigkeit für Radfahrer unklar',
        type  => 'handicap',
        data  => <<EOF,
@@ -36174,11 +36174,11 @@ EOF
 #: osm_watch: way id="734271970" version="7"
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="8"
-#: note: Halteverbotsschilder bis 31.12.2024
+#: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-05-14
+#: last_checked: 2025-05-23
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-03-31 (daf)
+#: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 EOF
@@ -45361,7 +45361,8 @@ EOF
 #      text  => 'Eingänge Allerstr. und Okerstr.: wegen Bauarbeiten gesperrt',
 #      text  => 'Eingang Kienitzer Str.: wegen Bauarbeiten gesperrt',
 #      text  => 'Tempelhofer Feld, Eingänge Herrfurthstr. und Leinestr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
-       text  => 'Tempelhofer Feld, Eingang Herrfurthstr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
+#      text  => 'Tempelhofer Feld, Eingang Herrfurthstr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
+       text  => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten Sperrung geplant (Stand 23.05.2025: noch keine Sperrung)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
@@ -45373,16 +45374,20 @@ EOF
 #: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025) (mittlerweile ab 22.05.2025)
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: last_checked: 2025-05-22 (website) vvv
-#: check_frequency: 1d vvv
+#: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
+#: last_checked: 2025-05-23 vvv
+#: check_frequency: 7d vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-10-01 (MoPo) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
 # REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
-#: osm_watch: note 4425036 1
-Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
-Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
+# REMOVED --- #: osm_watch: note 4425036 1
+# REMOVED --- Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
+# REMOVED --- Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
+Crashgate Richtung Rundkurs Südwest	2::inwork 11407,7198 11598,7264 11608,7267
+Crashgate	2::inwork 11598,7264 11596,7280 11593,7317 11589,7353
+Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
 # REMOVED (nicht mehr als gesperrt gelistet) --- Leinestr.	2::inwork 11558,7438 11547,7432
 #: next_check ^^^
 #: check_frequency ^^^
@@ -46650,7 +46655,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025)
-#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025)
+#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv)
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafendamm südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
@@ -47074,22 +47079,20 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 EOF
      },
      { from  => 1741586400, # 2025-03-10 07:00
-       until => undef, # 1743778800, # 2025-04-04 17:00
+       until => 1748024512, # undef, # 1743778800, # 2025-04-04 17:00
 #      text  => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., vom 11.03.2025 07:00 bis 04.04.2025 17:00',
        text  => 'Engstellen im Kreuzungsbereich Einbecker Str./Rosenfelder Str., mindestens bis zum 23.05.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1899342020227080235 (hier nur Kfz-Verkehr)
 #: by: https://pbs.twimg.com/media/GlsnQ01XwAAbqgj?format=jpg&name=medium (gesperrte Bereiche je 40m lang)
-#: last_checked: 2025-05-17 vvv
-#: next_check: 2025-05-23 vvv
-#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 23.05.2025 + ...)
+# REMOVED --- #: last_checked: 2025-05-17 vvv --- #: next_check: 2025-05-23 vvv
+#: source_id: viz2021:13.50344,52.509719,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 23.05.2025 + ...) (inaktiv)
 Einbecker Str.	q3::inwork; 17020,11748 17169,11677
 #: source_id: viz2021:13.503402,52.509569,11.03.2025,07:00 (hier nur Kfz-Verkehr, bis 04.04.2025) (bis 23.04.2025 + weitere Arbeiten) (bis 24.04.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.503544,52.509771,24.04.2025,08:00 (nur noch Verengung, bis 23.05.2025 + weitere Arbeiten) (bis 10.07.2025 + ...) (inaktiv)
 # REMOVED (hier nicht mehr) --- Rosenfelder Str.	q3::inwork; 17169,11677 17130,11599
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1742101200, # 2025-03-16 06:00
@@ -47311,7 +47314,7 @@ EOF
        text  => 'Bornstedter Str.: Bauarbeiten an der Anbindung Kurfüstendamm, Fahrbahn gesperrt, voraussichtlich bis 23.05.2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.288418,52.496596,14.03.2025,10:00 (bis 30.04.2025) (bis 22.05.2025) (bis 23.05.2025)
+#: source_id: viz2021:13.288418,52.496596,14.03.2025,10:00 (bis 30.04.2025) (bis 22.05.2025) (bis 23.05.2025) (inaktiv)
 	q4::inwork 2551,9995 2590,9949
 EOF
      },
@@ -47428,8 +47431,8 @@ EOF
        text  => 'Passenheimer Str.: Einbahnstraßenregelung, Richtung Norden offen, voraussichtlich bis 23. Mai 2025',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,B,T,A)
-#: source_id: viz2021:13.231323,52.509328,25.11.2024,10:00 (hier nur Kfz-Verkehr, außerdem falsche Lage, bis 30.04.2025) (inaktiv) (bis 23.05.2025)
+#: also_indoor: traffic (G,ex-B,ex-T,ex-A)
+#: source_id: viz2021:13.231323,52.509328,25.11.2024,10:00 (hier nur Kfz-Verkehr, außerdem falsche Lage, bis 30.04.2025) (inaktiv) (bis 23.05.2025) (inaktiv)
 	q4::inwork; -1398,11803 -1382,11736 -1375,11555 -1368,11525
 EOF
      },
@@ -47438,7 +47441,7 @@ EOF
        text  => 'Bahnübergang Trebnitz: Sperrung, evtl. sind auch Radfahrer betroffen, 22.05.2025 07:00 Uhr bis 23.05.2025 18:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 256400412 (bis 23.05.2025)
+#: source_id: 256400412 (bis 23.05.2025) (inaktiv)
 	2::inwork 65914,15828 65818,15731 65671,15534
 EOF
      },
@@ -47525,11 +47528,12 @@ EOF
 EOF
      },
      { from  => 1745730000, # 2025-04-27 07:00
-       until => 1772294400, # 2026-02-28 17:00
+       until => 1748023616, # 1772294400, # 2026-02-28 17:00
        text  => 'Reuterstr.: Bauarbeiten, Anbindung an die Karl-Marx-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 28.04.2025 07:00 bis 28.02.2026 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.428865,52.484307,28.04.2025,07:00 (bis 28.02.2026)
+#: note: da die Sperrung nur sehr kurz ist -> nicht-interaktiver handicap-Eintrag
 	q4::inwork 12150,8764 12165,8566
 EOF
      },
@@ -47623,7 +47627,7 @@ EOF
        text  => 'Wernerstr.: Bauarbeiten, zwischen Richard-Strauss-Str. und Toni-Lessler-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 23.05.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.273769,52.482217,05.05.2025,07:00 (bis 23.05.2025)
+#: source_id: viz2021:13.273769,52.482217,05.05.2025,07:00 (bis 23.05.2025) (inaktiv)
 	q4::inwork 1606,8239 1624,8495
 EOF
      },
@@ -47863,7 +47867,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
-#: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum)
+#: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum) (inaktiv)
+#: source_id: viz2021:13.514933,52.468582,19.05.2025,12:00 (kein Endedatum)
 #: source_id: adac:922791900
 #: source_id: adac:1526844418
 #: osm_watch: note 4767216 4
@@ -47877,7 +47882,9 @@ EOF
 #: by: https://entwicklungsstadt.de/oberschoeneweide-marode-autobruecke-wird-abgerissen-und-nicht-wieder-aufgebaut/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1562059.php
 #: by: https://www.tagesspiegel.de/berlin/drucken-sie-uns-die-daumen-berlin-sucht-weiter-abrissunternehmen-fur-marode-wuhlheide-brucke-13728760.html
+#: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich?
 #: last_checked: 2025-05-20
+#: next_check: 2025-05-31
 unter der Brücke	2::inwork 18001,7121 18019,7146
 EOF
      },
@@ -48004,6 +48011,7 @@ EOF
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/informationen-zur-neuen-schulzone_a435248
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1561419.php (Beginn der baulichen Umsetzung)
 #: by: https://entwicklungsstadt.de/friedrichshain-schafft-erste-schulzone-mehr-sicherheit-vor-der-jane-goodall-grundschule/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/vor-dieser-schule-in-berlin-sind-autos-verboten-tischtennis-und-blumen-statt-parkplatzen-13729912.html
 # REMOVED (deleted) --- #: osm_watch: way id="1051634661" version="11"
 #: osm_watch: way id="1388649610" version="1"
 #: osm_watch: note 4668723 4

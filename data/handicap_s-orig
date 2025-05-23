@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-05-20
+#: last_checked: 2025-05-23
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -911,6 +911,13 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 ### Neukölln ###
 # 
+#: source_id: viz2021:13.428865,52.484307,28.04.2025,07:00 (bis 28.02.2026)
+#: last_checked: 2025-05-23
+#: check_frequency: 120d
+#: next_check: 2026-02-28
+#: valid: -20260228
+Reuterstr.: Bauarbeiten an der Karl-Marx-Str., einige Meter der Fahrbahn sind gesperrt	q1-::inwork 12150,8764 12165,8566
+# 
 # REMOVED --- #: osm_watch: way id="1009116415" version="9"
 # REMOVED --- # REMOVED --- #: osm_watch: way id="1317391078" version="2"
 # REMOVED --- #: XXX evtl. gibt es vorher Arbeiten am Stromnetz siehe auch Fragezeichen zu "Umspannwerk Richardstraße"
@@ -1200,7 +1207,7 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # REMOVED --- #: next_check: 2025-07-31 vvv
 # REMOVED --- #: osm_watch: way id="175916583" version="11" --- Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 # REMOVED --- #: osm_watch: way id="26692569" version="17" --- Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2+::inwork; 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
-#: osm_watch: way id="1278425789" version="5"
+#: osm_watch: way id="1278425789" version="6"
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22899,15073 22726,15082 22599,15105 22577,15109
 Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 # REMOVED --- Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
@@ -2003,7 +2010,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-05-15
+#: last_checked: 2025-05-23
 #: check_frequency: 30d
 #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
@@ -5415,6 +5422,10 @@ In den Alboingärten: Fahrbahnanhebungen	q1+ 7936,6089 7739,6099 7646,6031 7638,5
 (Bogotastr. - Elvirasteig): Gehweg, Bordsteine	q4 -1394,3798 -1409,3834
 # 
 Lindenallee (Friedrichshagen): zwei Bodenschwellen	q1 25294,5761 25479,5753
+# 
+(Am Sudhaus - Isarstr.): einige Fußgänger	q2 12284,8195 12340,8208 12397,8221 12386,8274 12382,8292
+# 
+Flughafen Tempelhof, Eingang Herrfurthstr.: zahlreiche Bodenschwellen	q2 11439,7894 11460,7802
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
