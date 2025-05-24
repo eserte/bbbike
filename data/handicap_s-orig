@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu fr¸h bei der VIZ gemeldet? -> aktuell l‰uft wohl die Umsetzung (auch wenn man vor Ort auﬂer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-05-21
+#: last_checked: 2025-05-24
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
@@ -57,7 +57,7 @@ Kochhannstr.: ‹berquerung der Baustelle Petersburger Str. ¸ber schmale Fuﬂg‰nger
 #: note: f¸r Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="16"
 #: osm_watch: way id="1072662717" version="19"
-#: last_checked: 2025-05-20 (osm)
+#: last_checked: 2025-05-24
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -120,7 +120,7 @@ Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
 #: note: zwischenzeitlich war an der Frankfurter Allee eine Fahrgasse frei (zumindest f¸r Radfahrer benutzbar), mittlerweile wieder ¸ber die gesamte Fahrbahnbreite abgesperrt
 #: also_indoor: traffic (none)
-#: last_checked: 2025-05-22
+#: last_checked: 2025-05-24
 #: check_frequency: 10d
 Kinzigstr.: Bauarbeiten an der Einm¸ndung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
@@ -368,9 +368,12 @@ Wegedornstr.: Bauarbeiten, Engstellen	q2::inwork 18881,2062 18922,2238
 ### Wedding/Gesundbrunnen ###
 # 
 #: next_check_id: PEKINGERPLATZ-2025
+#: note: laut Baustellenschild bis XX/2026
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-04-16
-Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831
+#: last_checked: 2025-05-24
+#: check_frequency: 90d
+#: next_check: 2026-12-31
+Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782
 # 
 # REMOVED (minimale Einschr‰nkungen, lohnt keinen Eintrag) --- #: source_id: viz2021:13.348181,52.548416,19.03.2024,07:00 (bis 14.06.2024) --- #: source_id[inactive]: bvg2021:106#BVG344476_0 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1769960995177238968 --- #: by: https://pbs.twimg.com/media/GJAoTXpXgAAvNk_?format=jpg&name=large (nur Einschr‰nkungen an der s¸dlichen Fahrbahn) --- #: last_checked: 2024-06-05 --- #: next_check: 2024-06-14 --- #: valid: -20240614 --- Antwerpener Str.: Baustelle vor der Seestr., einige Meter muss geschoben werden	q2::inwork 6555,15827 6690,15671
 # REMOVED (nicht mehr) --- #: next_check_id: SWINEMUENDER-2023 --- #: add_fragezeichen: Gibt es Ramlerstr./Swinem¸nder Str. weiterhin Bauarbeiten? --- #: also_indoor: traffic (G[zu viel]) --- #: last_checked: 2024-02-13 --- Ramlerstr.: Fahrbahn an der Swinem¸nder Str. wegen Bauarbeiten gesperrt	q2::inwork 9646,15737 9666,15739 9844,15755
@@ -1030,6 +1033,7 @@ Boddinstr.: Sperrung an der Karl-Marx-Str.	q3::inwork 12368,8356 12582,8408
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2025
 #: note: eigentlich gibt es auch Beschr‰nkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt mˆglich; mittlerweile (Mitte Mai 2025) ist ein Abschnitt der Archenholdstr. gesperrt, Halteverbotsschilder bis 27.5.2025
 #: also_indoor: traffic (none)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-05-17
 #: check_frequency: 45d
 #: next_check: 2025-05-27 (Halteverbotsschilder)
@@ -1039,9 +1043,9 @@ Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 1715
 # REMOVED (fast fertig) --- #: last_checked: 2025-04-04 --- #: check_frequency: 21d --- Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-04-20
-#: check_frequency: 45d
-#: next_check: 2025-05-31 (BA Lichtenberg)
+#: last_checked: 2025-05-24
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2025-05-31 (BA Lichtenberg)
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
 # 
 # REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022 --- #: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_228154 (bis 31.08.2024) --- #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_228155 (bis 31.08.2024) --- #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 04.04.2025) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028 --- #: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fuﬂverkehr) --- #: also_indoor: traffic (H,G,W) --- #: priority: #A --- #: last_checked: 2024-06-17 --- #: next_check: 2024-06-22 --- #: valid: -20240622 --- #: valid: -20240831 --- Nˆldnerstr. : Bauarbeiten unter der Bahnbr¸cke zwischen Stadthausstr. und L¸ckstr., Fahrbahn gesperrt, Fuﬂg‰ngertunnel	q3::inwork 15856,10821 15793,10814
@@ -1124,7 +1128,8 @@ Gustav-Tempel-Str.: kurzes St¸ck B¸rgersteig	q3 15261,10738 15245,10719
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="14"
-#: last_checked: 2025-02-23
+#: osm_watch: note 3969997 12
+#: last_checked: 2025-05-24 (osm note)
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-06-02
 Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,14935 17638,14945
@@ -1134,7 +1139,7 @@ Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,1493
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10359 (Antrag)
 #: osm_watch: way id="1275438996" version="3"
 #: osm_watch: way id="1262014804" version="1"
-#: osm_watch: note 4126168 2
+#: osm_watch: note 4126168 3
 #: osm_watch[closed]: note 4126169 1
 #: priority: #C
 #: last_checked: 2025-04-20
@@ -1297,7 +1302,7 @@ Friedenauer Hˆhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: ERICHWEINERT-2018 --- #: osm_watch: way id="145122219" version="8" --- #: source_id: 2147344488 --- #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019 --- #: last_checked: 2019-08-16 vvv --- #: next_check: 2019-09-06 vvv --- #: valid: -20190906 vvv --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11404,16140 11295,16199 --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11337,16291 11295,16199 11253,16118 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (fertig) --- #: next_check_id: LICHTBURGRING-2017 --- #: osm_watch: way id="645183212" version="1" --- #: last_checked: 2018-12-28 --- Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
 # REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- J¸licher Str.: Einbahnstraﬂenregelung wegen Bauarbeiten an der Bˆsebr¸cke	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmˆer Str.: Einbahnstraﬂenregelung wegen Bauarbeiten an der Bˆsebr¸cke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10291,16193
-# REMOVED (nun offen, aber Bauarbeiten an der Kreuzung -> temp blockings) --- #: XXX mittlerweile bis zur H‰lfte offen --- #: last_checked: 2017-12-26 --- #: check_frequency: 14d --- F¸rstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 10320,14608 10472,14632
+# REMOVED (nun offen, aber Bauarbeiten an der Kreuzung -> temp blockings) --- #: XXX mittlerweile bis zur H‰lfte offen --- #: last_checked: 2017-12-26 --- #: check_frequency: 14d --- F¸rstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 10320,14608 10468,14636
 # 
 ### Weiﬂensee ###
 # 
@@ -1865,9 +1870,12 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 8467,11125 8410,11143
 # REMOVED (noch einige enge Stellen vorhanden) --- #: next_check_id: SPREERADWEGEINSTEINUFER-2014 --- #: XXX Bauarbeiten, wird der Weg sp‰ter breiter sein? --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr_rat_20_sitzung.pdf (Verbreiterungen) --- #: last_checked: 2017-08-16 --- #: check_frequency: 14d
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3370,12725 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4040,12632 4078,12637 4131,12641 4162,12638 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4040,12632 4078,12637 4131,12641 4162,12638 4213,12623 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): einige Fuﬂg‰nger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
-(Iburger Ufer - Spreeradweg): Rampe	q2 4085,12614 4084,12620 4042,12615 4040,12632
+#: note: Verschwenkungen
+(Iburger Ufer - Spreeradweg): Rampe, einige Fuﬂg‰nger	q2 4085,12614 4084,12620 4042,12615 4040,12632
+#: note: geradlinige Rampe
+(Iburger Ufer - Spreeradweg): einige Fuﬂg‰nger	q1 4160,12612 4213,12623
 #: note: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang
 Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q3 10166,12777 10105,12855 9955,12915 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 #: XXX_prog: BS an der Friedrichstr. (ansonsten trotzdem q3)
@@ -3680,7 +3688,7 @@ L¸bbener Str.: Fuﬂg‰nger	q3 12729,10515 12731,10547
 (Spreeuferweg - Wintersteinstr.): Fuﬂg‰nger, Bordstein	q3 3643,12671 3741,12607
 (Bornholmer Str. - Kolonnenweg): einige Fuﬂg‰nger	q1 10134,16534 10118,16561 10108,16576 9954,16590
 #: note: gemeinsamer Rad- und Gehweg, mit Vorrang f¸r Fuﬂg‰nger
-(Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fuﬂg‰nger	q2 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
+(Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fuﬂg‰nger	q2 14871,13135 14881,13144 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 # REMOVED --- #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html --- #: XXX der handicap_s-Eintrag wird wohl bleiben, q2 oder q1? --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d
 Helsingforser Str.: einige Fuﬂg‰nger	q1 13496,11384 13427,11431
 #: note: gemeinsamer Rad- und Gehweg
@@ -3746,7 +3754,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-05-16
+#: last_checked: 2025-05-24
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (adonum website)
 #: note: fr¸her: breiter Geh- und Radweg	q0-
@@ -5914,7 +5922,7 @@ Obstallee: Bodenschwellen, Fuﬂg‰nger, spielende Kinder	q3 -5437,12440 -5890,1257
 Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5400,12509 -5437,12440
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4267,11590 -4302,11669
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4310,11770 -4279,11862
-(Parkweg Swinem¸nder Str.): Fuﬂg‰nger	q1 10189,14649 10228,14564
+(Parkweg Swinem¸nder Str.): Fuﬂg‰nger	q1 10189,14649 10226,14568
 Lortzingstr.: Fuﬂg‰nger	q1 9898,15354 9853,15333 9814,15312
 Demminer Str. (Wedding): Fuﬂg‰nger	q1 9887,15153 9929,15174 9969,15191
 Strahlsunder Str.: Fuﬂg‰nger	q2 9918,14986 9843,14949 9718,14888

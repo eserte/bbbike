@@ -55,7 +55,7 @@ Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alterna
 # 
 #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025) (bis 23.06.2025)
 #: source_id: viz2021:13.408041,52.512493,13.05.2025,13:14 (bis 20.05.2025) (inaktiv)
-#: last_checked: 2025-05-16
+#: last_checked: 2025-05-24
 #: next_check: 2025-06-23
 #: valid: -20250623
 # REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
@@ -228,7 +228,7 @@ Möckernstr./nördlich Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternatin
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2025-04-25
+#: last_checked: 2025-05-24
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -267,7 +267,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2025-05-21
+#: last_checked: 2025-05-24
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -288,7 +288,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-05-20
+#: last_checked: 2025-05-24
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -2913,7 +2913,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 9410,14410
 	F 9870,14759
 	X 9621,14624
-	X 10170,14905
+	X 10168,14903
 #: note: keine Haltelinie für Radfahrer
 	F 10515,15045
 	X 21163,15289
@@ -3898,7 +3898,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2025-05-11 (mapillary)
+#: last_checked: 2025-05-24
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-15
 	X::inwork 8250,14672

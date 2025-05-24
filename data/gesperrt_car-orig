@@ -8,12 +8,12 @@
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1548659.php (zunächst bis Ende 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/folgen-der-a100-bruckensperrung-einbahnstrasse-soll-den-schleichverkehr-in-berlin-westend-reduzieren-13491112.html
 #: osm_watch: way id="4609226" version="26"
-#: osm_watch: note 4705942 3
+#: osm_watch: note 4705942 4
 #: source_id: viz2021:13.278443,52.516243,04.04.2025,08:00 (kein Endedatum)
 #: priority: #D
-#: last_checked: 2025-04-25
+#: last_checked: 2025-05-24
 #: next_check: 2025-12-31
-#: valid: -20251231
+# REMOVED --- #: valid: -20251231
 Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
 # 
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
@@ -22,19 +22,21 @@ Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
 #: by: https://www.tagesspiegel.de/berlin/bezirke/zu-viel-schleichverkehr-bezirk-ordnet-neue-einbahnstrassen-in-berlin-westend-an-13530130.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/temporare-einbahnstrassen-in-der-lindenallee-und-ahornallee/
 #: priority: #D vvv
-#: next_check: 2025-04-30 vvv
-#: valid: -20250430 vvv
+#: check_frequency: 120d vvv
+# REMOVED --- #: next_check: 2025-04-30 vvv
+# REMOVED --- #: valid: -20250430 vvv
 #: osm_watch: way id="38763874" version="13"
 #: source_id: viz2021:13.275802,52.518347,11.04.2025,17:48 (bis 30.04.2025) (inaktiv)
-#: last_checked: 2025-04-23 (mapillary)
+#: last_checked: 2025-05-24
 Lindenallee: temporäre Einbahnstraßenregelung für Kfz	1 1664,12332 1690,12407
 #: osm_watch: way id="1092670182" version="8"
-#: last_checked: 2025-04-23 (mapillary)
+#: last_checked: 2025-05-24
 Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1768,12174 1788,12252 1799,12291 1822,12372
 #: osm_watch: way id="4515884" version="16"
 Nußbaumallee - Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1732,12224 1788,12252
-#: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: priority ^^^
 # 
 #: next_check_id: BHFBLANKENFELDE-2023
@@ -2216,4 +2218,7 @@ Weserstr.	1 14550,11732 14622,11685 14651,11666
 # REMOVED (mittlerweile als NN getaggt) --- Niederbarnimstr.: für Kfz verboten	2 14073,11995 14055,11964
 #: note ^^^
 ######################################################################
+# 
+Schwedter Str.	1 10506,14521 10468,14636
+Schwedter Str.	1 10448,14707 10468,14636
 # 

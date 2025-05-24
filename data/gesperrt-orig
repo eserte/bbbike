@@ -3955,6 +3955,8 @@ Tor	BNP:10 5857,14985
 Nalepastr.: Tor verschlossen	3 * 17059,8102 *
 # 
 Schranke	BNP:1::trailer=3 16991,-89
+Schranke fast über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5::trailer=15 9135,14317
+Drängelgitter	BNP:3::trailer=10 14881,13144
 # 
 #: section ^^^
 ############################################################################
@@ -4176,7 +4178,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-05-16
+#: last_checked: 2025-05-24
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4229,7 +4231,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch: note 4126450 4
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2025-04-20 (osm)
+#: last_checked: 2025-05-24
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4491,7 +4493,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-05-16
+#: last_checked: 2025-05-24
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4819,7 +4821,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 # REMOVED (wieder offen) --- #: last_checked: 2021-07-17 --- #: check_frequency: 14d --- (Breiter Weg - Südostallee/Sterndamm): Durchgang ist wegen Bauarbeiten gesperrt	2::inwork 17538,5301 17601,5374
 # REMOVED (laut osm mittlerweile offen) --- #: next_check_id: NORD52-2019 --- #: last_checked: 2021-02-24 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2021-04-14 vvv --- #: osm_watch: way id="630987121" version="10" --- Ankerweg: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22118,2559 22159,2585 22197,2612 --- #: osm_watch: way id="353948101" version="11" --- An der Dahme: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22197,2612 22270,2549 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 --- #: by: https://www.berndalbers.com/krautstrasse-30-berlin (vielleicht verschwindet die Straße im Zuge dieses Neubaus?) --- #: by: https://www.deutsches-architekturforum.de/thread/14527-neubau-holzmarktstra%C3%9Fe-51-friedrichshain-in-planung/?postID=681293#post681293 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_39_3593_3676_online.pdf (Einziehung und Widmung einer Grünanlage)--- #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden--- #: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert; Ende März 2022: die komplette Straße existiert nicht mehr --- #: osm_watch: way id="25008069" version="15" --- #: last_checked: 2022-03-31 --- #: check_frequency: 90d --- # REMOVED (hier ist nichts mehr) --- Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 --- Mehlbeerenweg: Straße existiert nicht mehr	2::inwork 11923,11881 11940,11982
-# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/14299-wohnquartier-f%C3%BCrstenberger-stra%C3%9Fe-8-mitte-in-bau/?postID=686545#post686545 --- #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung) --- #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht --- #: osm_watch: way id="308312347" version="6" --- #: last_checked: 2022-11-30 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2022-08-15 --- Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
+# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/14299-wohnquartier-f%C3%BCrstenberger-stra%C3%9Fe-8-mitte-in-bau/?postID=686545#post686545 --- #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung) --- #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht --- #: osm_watch: way id="308312347" version="6" --- #: last_checked: 2022-11-30 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2022-08-15 --- Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10468,14636 10320,14608
 # 
 #: XXX Wird es nach den Bauarbeiten weiterhin eine Verbindung geben? (Auf den Visualisierungen ist es nicht ausgeschlossen...)
 #: by: https://www.deutsches-architekturforum.de/thread/11397-lichtenberg-kleinere-projekte/?postID=746476#post746476

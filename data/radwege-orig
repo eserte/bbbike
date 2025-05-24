@@ -230,7 +230,7 @@ Radweg nur aufgemalt	RW1; 6145,10975 6266,10927 6277,10924 6359,10891 6471,10851
 	RW2; 6058,10988 6145,10975
 Busspur gilt 7-22 Uhr	RW5; 5652,11004 5542,11075
 Busspur ist immer gültig	RW5; 5542,11075 5652,11004
-	RW1;RW8 6873,11011 6742,11099 6626,11178 6582,11202
+	RW1;RW9 6873,11011 6742,11099 6626,11178 6582,11202
 für Radfahrer freigegebene Busspur ist immer gültig	RW10; 6826,11479 6851,11346 6880,11110
 für Radfahrer freigegebene Busspur ist immer gültig	RW10; 6880,11110 6851,11346
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 6851,11346 6826,11479
@@ -986,7 +986,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-04-30
+#: last_checked: 2025-05-24
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -2962,7 +2962,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-05-19 vvv
+#: last_checked: 2025-05-24 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3321,7 +3321,7 @@ mit grüner Leitlinie	RW7;RW7 10777,13614 10872,13570 11059,13480 11104,13456
 	RW2;RW2 9224,14169 9272,14208
 #: by: mrt:
 #: confirmed_by: srt
-Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410 9472,14478 9621,14624 9800,14722 9870,14759 9924,14785 10003,14823 10085,14863 10170,14905 10208,14922 10235,14934 10297,14961 10354,14987
+Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410 9472,14478 9621,14624 9800,14722 9870,14759 9924,14785 10003,14823 10085,14863 10168,14903 10208,14922 10235,14934 10297,14961 10354,14987
 	RW1;RW1 10431,12709 10373,12776 10360,12793 10308,12859
 	RW3; 10923,13156 11033,13086 11139,13008
 #: note: die letzten Meter vor der Ampel mit Radwegschild
@@ -3502,13 +3502,16 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20, Sa+So 9-20 Uhr	RW1; 7383,765
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19, Sa 8-19 und So 7-15 Uhr	RW1; 5086,14504 5205,14253 5212,14154 5220,14043
 teilweise mit Pollern	RW3; 5220,14043 5225,13958 5231,13843
 	RW3; 5231,13843 5238,13714
-	RW4; 5238,13714 5248,13434
+	RW4; 5238,13714 5246,13488 5248,13434
 Radspur hinter den parkenden Autos	RW4; 5248,13434 5202,13266
 	RW4; 5202,13266 5199,13247
-	RW4?; 5199,13247 5202,13266 5248,13434
 Poller	RW4; 5199,13247 5166,13087
 #: note: Beusselstr. Richtung Norden
 Poller sowie Radspur hinter den parkenden Autos	RW4; 5166,13087 5199,13247
+	RW4; 5199,13247 5202,13266
+einige Poller am Anfang	RW4; 5202,13266 5248,13434
+Radspur mit Bushaltestelle	RW3; 5248,13434 5246,13488
+Poller	RW4; 5246,13488 5238,13714
 Busspur gilt Mo-Sa 7-20 Uhr	RW5; 5238,13714 5231,13843 5225,13958
 Gehwegplatten, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5220,14043 5212,14154
 asphaltiert, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5212,14154 5205,14253
@@ -6642,7 +6645,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2025-04-25 vvv
+#: last_checked: 2025-05-24 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
@@ -7936,7 +7939,7 @@ asphaltiert	RW1;RW1 18930,3703 19162,3935
 	RW6;RW6 17247,19212 17247,19229 17251,19264 17403,19313 17405,19252
 	RW6;RW6 17448,19243 17405,19252 17339,19231 17247,19229
 # REMOVED (existiert nicht mehr) --- Verbundsteinpflasterradweg	RW1; 5368,13406 5384,13555 --- Verbundsteinpflasterradweg	RW1; 5390,13616 5384,13555 5368,13406
-	RW6;RW6 10105,14608 10150,14525
+	RW6;RW6 10105,14608 10144,14528
 	RW6;RW6 14411,12951 14480,12932 14536,12916 14588,12901 14682,12874
 	RW6;RW6 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 #: note: Radweg etwas abseits der Straße im Wald
@@ -9094,11 +9097,20 @@ Grünbeschichtung	RW4; 12259,7164 12244,7205
 Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
-teilweise mit Pollern/Leitboys geschützte Radspur	RW4; 12158,7449 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696 12057,7744 12041,7788 12025,7852 12001,7937 11979,8014
+	RW3; 12158,7449 12123,7549
+Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696
+Grünbeschichtung	RW4; 12075,7696 12057,7744 12041,7788
+Poller	RW4; 12041,7788 12025,7852 12001,7937
+niedrige Protektionselemente	RW4; 12001,7937 11979,8014
 # 
 #: note: Hermannstr., Richtung Süden
 erste Meter noch ohne Radspur	RW0; 11979,8014 12001,7937
-teilweise mit Pollern/Leitboys geschützte Radspur	RW4?; 12001,7937 12025,7852 12041,7788 12057,7744 12075,7696 12081,7679 12090,7651 12121,7555 12123,7549 12158,7449
+Grünbeschichtung, einige Leitboys	RW4?; 12001,7937 12025,7852
+Leitboys, Grünbeschichtung, Poller	RW4?; 12025,7852 12041,7788 12057,7744
+Poller	RW4?; 12057,7744 12075,7696
+Grünbeschichtung	RW4?; 12075,7696 12081,7679 12090,7651
+Grünbeschichtung, Leitboys	RW4?; 12090,7651 12121,7555 12123,7549
+	RW4?; 12123,7549 12158,7449
 Markierung fehlt noch	RW0; 12158,7449 12185,7381
 #: note: ansonsten wäre es RW3
 provisorische Radspur, meistens zugeparkt	RW0; 12185,7381 12221,7271
@@ -9355,7 +9367,7 @@ Tempo 10	RW6;RW6 -7523,14969 -7387,14951
 # 
 	RW7;RW7 7259,14870 7409,14954 7461,14986 7624,15083 7694,15125 7745,15160
 # 
-	RW7;RW7 10530,14452 10567,14337 10629,14299
+	RW7;RW7 10468,14636 10506,14521 10530,14452 10567,14337 10629,14299
 # 
 #: note: Grunewaldstr., Richtung Osten
 Radspur hinter parkenden Autos	RW4; 5895,9083 5974,9100 6059,9118
