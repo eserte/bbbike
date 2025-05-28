@@ -47870,7 +47870,8 @@ EOF
      },
      { from  => 1745933400, # 2025-04-29 15:30
        until => undef, # XXX
-       text  => 'Treskowallee/Edisonstraße: Durchfahrt in Höhe Rummelsburger Straße/An der Wuhlheide gesperrt, auch Radfahrer sind betroffen, vom 30.04.2025 15:30',
+       dont_check_date => 1,
+       text  => 'Treskowallee/Edisonstraße: Durchfahrt in Höhe Rummelsburger Straße/An der Wuhlheide gesperrt, auch Radfahrer sind betroffen, vom 30.04.2025 15:30 bis voraussichtlich 29.05.2025 09:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
@@ -47891,7 +47892,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/drucken-sie-uns-die-daumen-berlin-sucht-weiter-abrissunternehmen-fur-marode-wuhlheide-brucke-13728760.html
 #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich?
 #: last_checked: 2025-05-20
-#: next_check: 2025-06-01
+#: next_check: 2025-05-29
 unter der Brücke	2::inwork 18001,7121 18019,7146
 EOF
      },

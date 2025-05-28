@@ -2742,35 +2742,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.erkner.de/271.html?date=20190415
-#: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
-#: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
-#: by: https://www.erkner.de/erkner-kompakt/heimatfest/ (geplant vom 20. bis 22. Mai 2022)
-#: by: https://www.erkner.de/erkner-kompakt/heimatfest/?date=20230325 (findet 2023 wie 2022 nur im Rathauspark statt, also vermutlich keine Sperrung der Straße)
-#: by: https://www.erkner.de/freizeit-tourismus/stadtgeschichte-kultur/traditionelle-feste-and-veranstaltungen/heimatfest.html (24.-26.5.2024, nur im Rathauspark oder mit Sperrung der Straße?) (wohl nur im Rathauspark)
-#: by: https://www.erkner.de/freizeit-und-tourismus/stadtgeschichte-und-kultur/heimatfest.html (23. bis 25. Mai 2025)
-	2::temp 34421,1950 34359,2165 34250,2546
-',
-         'from' => 1747864800,
-         'id' => 2078,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 14,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              5,
-                              'start',
-                              '2024-06-08T00:00:00'
-                            ]
-                          ],
-         'text' => 'Erkner: Heimatfest, evtl. Sperrungen oder Einschränkungen möglich, 23.5.2025 bis 25.5.2025',
-         'type' => 'gesperrt',
-         'until' => 1748224800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9068,30 +9040,10 @@ Radickestraße zwischen Arndtstraße und Nipkowstraße	q4::inwork 20592,3633 20499,
          'type' => 'gesperrt',
          'until' => 1751036400
        },
-       {
-         'data' => '#: source_id: viz2021:13.33534,52.45856,15.04.2025,08:00 (auch Radverkehr, bis 28.05.2025)
-#: source_id: viz2021:13.33534,52.45929,15.04.2025,12:57 (bis 28.05.2025) (inaktiv)
-	q4::inwork; 5851,5863 5850,5765
-',
-         'from' => 1744610400,
-         'id' => 4305,
-         'text' => 'Schönhauser Str.: Richtung Süden zwischen Friedrichsruher Str. und Bergstr. gesperrt, vom 15.04.2025 08:00 bis 28.05.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1748444400
-       },
        undef,
        undef,
-       {
-         'data' => '#: source_id: 256400409 (bis 26.05.2025)
-	2::inwork 62196,15316 62281,15513 62337,15670
-',
-         'dont_check_date' => 1,
-         'from' => 1747544400,
-         'id' => 4308,
-         'text' => 'Obersdorf, Bahnübergang: Sperrung, evtl. sind auch Radfahrer betroffen, am 19.05.2025 von 07:00 Uhr bis 14:00 Uhr und vom 24.05.2025 bis 26.05.2025 von 07:00 Uhr bis 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1748275200
-       },
+       undef,
+       undef,
        {
          'data' => '#: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025)
 #: note: an der Kantstr. steht ein Sackgassenschilder, Fußgänger/Radfahrer frei
@@ -9426,12 +9378,13 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
 #: by: https://www.tagesspiegel.de/berlin/drucken-sie-uns-die-daumen-berlin-sucht-weiter-abrissunternehmen-fur-marode-wuhlheide-brucke-13728760.html
 #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich?
 #: last_checked: 2025-05-20
-#: next_check: 2025-06-01
+#: next_check: 2025-05-29
 unter der Brücke	2::inwork 18001,7121 18019,7146
 ',
+         'dont_check_date' => 1,
          'from' => 1745933400,
          'id' => 4342,
-         'text' => 'Treskowallee/Edisonstraße: Durchfahrt in Höhe Rummelsburger Straße/An der Wuhlheide gesperrt, auch Radfahrer sind betroffen, vom 30.04.2025 15:30',
+         'text' => 'Treskowallee/Edisonstraße: Durchfahrt in Höhe Rummelsburger Straße/An der Wuhlheide gesperrt, auch Radfahrer sind betroffen, vom 30.04.2025 15:30 bis voraussichtlich 29.05.2025 09:00',
          'type' => 'gesperrt',
          'until' => undef
        },
