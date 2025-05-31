@@ -55,9 +55,9 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="16"
+#: osm_watch: way id="1072662716" version="17"
 #: osm_watch: way id="1072662717" version="19"
-#: last_checked: 2025-05-24
+#: last_checked: 2025-05-26 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -415,12 +415,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-#: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025) (vorfristig inaktiv)
-#: note: Halteverbotsschilder bis 30.05.2025; ist weiterhin aktiv, auch wenn die VIZ-Verkehrsmeldung entfernt wurde
-#: last_checked: 2025-05-21
-#: next_check: 2025-05-30 (Halteverbotsschilder)
-#: valid: -20250530
-Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
+# REMOVED --- #: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025) (vorfristig inaktiv)
+# REMOVED --- #: note: Halteverbotsschilder bis 30.05.2025; ist weiterhin aktiv, auch wenn die VIZ-Verkehrsmeldung entfernt wurde
+# REMOVED --- #: last_checked: 2025-05-21
+# REMOVED --- #: next_check: 2025-05-30 (Halteverbotsschilder)
+# REMOVED --- #: valid: -20250530
+# REMOVED --- Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 # 
 #: note: Länge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (laut Baustellenschild)
 #: last_checked: 2025-05-15 (mapillary)
@@ -752,8 +752,8 @@ An der Wuhlheide: Engstellen neben dem Radweg	q1::inwork; 18001,7121 18225,7004
 # 
 #: next_check_id: GITSCHINER-2025
 #: last_checked: 2025-05-21
-#: next_check: 2025-05-31 (VIZ-Verkehrsmeldung)
-#: valid: -20250531
+#: next_check: 2025-08-29 (VIZ-Verkehrsmeldung)
+#: valid: -20250829
 Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
 # 
 # REMOVED (keine Baustelle mehr) --- #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv) (bis 01.11.2024) (bis 29.11.2024) (bis 31.01.2025) (inaktiv) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300 --- #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan) --- #: also_indoor: traffic (G,B,ex-W) --- #: last_checked: 2024-12-21 vvv --- #: next_check: 2025-12-19 vvv --- #: valid: -20250131 vvv --- Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294 --- Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
@@ -860,14 +860,14 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="24"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-05-09 (webcam)
+#: last_checked: 2025-05-29 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=759366#post759366
-#: last_checked: 2025-04-01 (daf)
+#: last_checked: 2025-05-29 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 7952,11336 7934,11275
@@ -1129,7 +1129,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 #: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="14"
 #: osm_watch: note 3969997 12
-#: last_checked: 2025-05-24 (osm note)
+#: last_checked: 2025-05-24 (osm note, mapillary)
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-06-02
 Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,14935 17638,14945
@@ -2015,13 +2015,14 @@ Dieffenbachstr.: Bodenschwellen	q0- 11346,9655 11541,9576
 Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 # 
-#: XXX nach den Bauarbeiten wiederherstellen: Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
-#: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025)
-#: also_indoor: traffic (none)
-#: last_checked: 2025-05-23
-#: check_frequency: 30d
-#: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
-Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
+Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
+# REMOVED --- #: XXX nach den Bauarbeiten wiederherstellen: (s.o.)
+# REMOVED --- #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025) (inaktiv)
+# REMOVED --- #: also_indoor: traffic (none)
+# REMOVED --- #: last_checked: 2025-05-23
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 
 Lausitzer Platz: Fußgängerzone, einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: Fußgängerzone, Radfahrer frei, Bodenschwelle	q2 12274,10612 12172,10585

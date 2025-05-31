@@ -25,7 +25,6 @@ Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer fr
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (L¸tticher Str. - Luxemburger Str. (¸ber das Gel‰nde der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
-Neust‰dtische Kirchstraﬂe: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 9108,12635 9098,12687
 Burgstr.: Abschnitt mit Einbahnstraﬂenregelung	q3::inwork; 10166,12777 10132,12941
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -429,7 +428,7 @@ Barsekowstr.: Fuﬂg‰nger	q2 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655
 Dieffenbachstr.: Bodenschwellen	q0 11346,9655 11541,9576
 Oppelner Str.: Bodenschwellen	q0 12897,10439 12968,10564 12978,10581
-Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
+Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 Lausitzer Platz: Fuﬂg‰ngerzone, einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: Fuﬂg‰ngerzone, Radfahrer frei, Bodenschwelle	q2 12274,10612 12172,10585
 Lausitzer Platz: Fuﬂg‰ngerzone, einige Bodenschwellen	q2 12328,10442 12274,10612
@@ -3627,10 +3626,6 @@ Sewanstr. - Balatonstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::ig
 Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Dolgenseestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 17774,9934 17761,9971 17559,10024
-An der Wuhlheide: Richtungsfahrbahn: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 18225,7004 18001,7121
-An der Wuhlheide: Richtungsfahrbahn: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 18019,7146 18225,7004
-Rummelsburger Str. (Oberschˆneweide): Richtungsfahrbahn: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 18001,7121 17847,7356
-Rummelsburger Str. (Oberschˆneweide): Richtungsfahrbahn: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 17847,7356 18019,7146
 Am Wiesenrain: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 23931,5992 24122,6007
 Am Wriezener Bahnhof: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 Wriezener Karree: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 12959,11631 12728,11850

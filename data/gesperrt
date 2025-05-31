@@ -2658,10 +2658,10 @@ Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,40
 Michelangelostr.: links abbiegen nicht möglich	3 13854,15129 13816,15137 13823,15111
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2326,25625 -2130,26026 -2146,26048
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2109,26055 -2130,26026 -2146,26048
-An der Wuhlheide: Richtungsfahrbahn	1s 18225,7004 18001,7121
-An der Wuhlheide: Richtungsfahrbahn	1s 18019,7146 18225,7004
-Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1s 18001,7121 17847,7356
-Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1s 17847,7356 18019,7146
+An der Wuhlheide: Richtungsfahrbahn	1 18225,7004 18001,7121
+An der Wuhlheide: Richtungsfahrbahn	1 18019,7146 18225,7004
+Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1 18001,7121 17847,7356
+Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1 17847,7356 18019,7146
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -3535,6 +3535,7 @@ Nalepastr.: Tor verschlossen	3 17059,8097 17059,8102 17056,8159
 Schranke	BNP:1:0:trailer=3 16991,-89
 Schranke fast über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5:-232:trailer=15 9135,14317
 Drängelgitter	BNP:3:-131:trailer=10 14881,13144
+Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwork 11543,20272 11553,20253
 Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13639,14133 13715,14018
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
 Gounodstr.: Durchfahrt vor der Picasso-Grundschule wegen Bauarbeiten gesperrt	2::inwork 14251,15828 14366,15877

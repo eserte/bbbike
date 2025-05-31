@@ -2676,16 +2676,13 @@ Michelangelostr.: links abbiegen nicht möglich	3 13854,15129 13816,15137 13823,1
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2326,25625 -2130,26026 -2146,26048
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2109,26055 -2130,26026 -2146,26048
 # 
-#: next_check_id: BRUECKEANDERWUHLHEIDE-2025
-#: last_checked: 2025-05-20 vvv
-#: XXX wegen Umfahrung der gesperrten Unterführung 1 -> 1s:qX vvv
-An der Wuhlheide: Richtungsfahrbahn	1s:q4 18225,7004 18001,7121
-#: note: hier existiert eine Art Nebenfahrbahn, deshalb q3
-An der Wuhlheide: Richtungsfahrbahn	1s:q3 18019,7146 18225,7004
-Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1s:q4 18001,7121 17847,7356
-Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1s:q4 17847,7356 18019,7146
-#: XXX ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: BRUECKEANDERWUHLHEIDE-2025 --- #: last_checked: 2025-05-20 vvv --- #: XXX wegen Umfahrung der gesperrten Unterführung 1 -> 1s:qX vvv
+An der Wuhlheide: Richtungsfahrbahn	1 18225,7004 18001,7121
+# REMOVED --- #: note: hier existiert eine Art Nebenfahrbahn, deshalb q3
+An der Wuhlheide: Richtungsfahrbahn	1 18019,7146 18225,7004
+Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1 18001,7121 17847,7356
+Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1 17847,7356 18019,7146
+# REMOVED --- #: XXX ^^^ --- #: last_checked ^^^
 # 
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
@@ -3964,6 +3961,23 @@ Drängelgitter	BNP:3::trailer=10 14881,13144
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6808 (Vorlage zur Kenntnisnahme: Benennungsabsicht)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6885 (Vorlage zur Kenntnisnahme)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_26_1735_1790_online.pdf (Benennung von Straßenland)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_43_3215_3294_online.pdf (Grundstücksnummerierungen)
+# REMOVED --- #: XXX fehlt noch bei Berlin.coords.data, laut DPAG-Mitteilungsblatt PLZ=13156
+#: XXX Einzug der Mieter vorgesehen im September 2024
+#: XXX vermutlich keine Verbindung zur Straße 199 (laut Karte) -> allerdings könnte es eine Gehwegverbindung geben
+#: XXX mittlerweile (Mai 2025) sieht das Tor verschlossen aus, allerdings gibt es auch Bauarbeiten Richtung Straße 199
+# REMOVED --- #: XXX auf Luftbildern ist bereits eine Baustraße inklusive Verbindung zur Straße 199 zu erkennen; bei osm bereits eingetragen (zu früh!)
+#: osm_watch: way id="971973021" version="6"
+# REMOVED (landuse -> building, keine Beobachtung mehr sinnvoll) --- #: osm_watch: way id="234861531" version="4"
+#: last_checked: 2025-05-24 (mapillary)
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2024-09-15
+# REMOVED (realisiert) --- Rubinweg: neue Privatstraße entsteht	?::inwork 11495,20364 11543,20272
+Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwork 11543,20272 11553,20253
+# 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/scale-b%C3%BCroneubau-storkower-stra%C3%9Fe-142-146.864/page-4#post-24657
 #: XXX wird sich auch die Qualität der Fahrbahn verbessern?
 #: osm_watch: way id="1184177622" version="3"
@@ -4261,7 +4275,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-05-13 vvv
+#: last_checked: 2025-05-26 (daf) vvv
 #: osm_watch: way id="1199463691" version="4"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -4475,11 +4489,12 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: last_checked: 2025-05-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
-#: osm_watch: way id="256450718" version="7"
+#: osm_watch: way id="1357789475" version="5"
+# REMOVED (deleted) --- #: osm_watch: way id="256450718" version="7"
 (Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7789,12764 7649,12764
-#: osm_watch: way id="1081702032" version="3"
+# REMOVED (deleted) --- #: osm_watch: way id="1081702032" version="3"
 (Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7362,12731 7377,12729 7542,12736 7588,12734 7819,12729
-#: osm_watch: way id="33913621" version="11"
+# REMOVED (deleted) --- #: osm_watch: way id="33913621" version="11"
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7418,12601 7377,12729
 Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,12754
 (Ingeborg-Drewitz-Allee - Alt-Moabit): wegen Bauarbeiten gesperrt	2::inwork 7588,12734 7623,12764
@@ -5008,7 +5023,7 @@ Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2025-05-18 (webcam)
+#: last_checked: 2025-05-24 (daf)
 #: check_frequency: 90d
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
 # REMOVED (offen) --- #: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken --- #: last_checked: 2024-06-30 (daf) vvv --- #: check_frequency: 45d vvv --- George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136 --- (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257 --- #: check_frequency ^^^ --- #: last_checked ^^^

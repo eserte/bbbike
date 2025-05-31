@@ -37,10 +37,10 @@ BAB100	BAB 2225,12227 2372,11762 2338,11515 2170,11101 2021,10599 2009,10517
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1547574.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1548600.php
 #: by: https://www.autobahn.de/planen-bauen/projekt/ringbahnbruecke
-#: osm_watch: way id="227985279" version="13"
+#: osm_watch: way id="227985279" version="14"
 #: also_indoor: webcam https://www.youtube.com/watch?v=_IavCsnv6_o
 #: XXX Neubau der Ringbahnbrücke
-#: last_checked: 2025-04-14 (webcam)
+#: last_checked: 2025-05-31 (osm)
 #: check_frequency: 360d
 BAB100	BAB::inwork; 2009,10517 2058,10612 2117,10698 2165,10785 2175,10864 2183,10977 2207,11078 2353,11451 2379,11570 2403,11710 2409,11812 2399,11949 2388,11997
 # 
@@ -48,10 +48,10 @@ BAB100	BAB::inwork; 2009,10517 2058,10612 2117,10698 2165,10785 2175,10864 2183,
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bund-reisst-westendbruecke-auf-a100-in-charlottenburg-ab-li.2221431 (Pläne liegen aus)
 #: by: https://www.berliner-woche.de/westend/c-bauen/einwendungen-moeglich_a418011
 #: XXX Neubau der Westendbrücke (mit Verlagerung)
-#: osm_watch: way id="4495210" version="18"
+#: osm_watch: way id="4495210" version="19"
 #: osm_watch[closed]: note 4671906 7
 #: also_indoor: webcam https://stream.netco.de/LiveApp/play.html?name=iTJR0GlIYNRMVUYJ607204630991365&playOrder=hls (mittlerweile (2025-05-18) nicht mehr aktiv)
-#: last_checked: 2025-04-14 (webcam)
+#: last_checked: 2025-05-31 (osm)
 #: check_frequency: 360d
 BAB100 (Westendbrücke)	BAB::Br::inwork; 2388,11997 2332,12106 2248,12201
 # 
@@ -307,19 +307,7 @@ BAB 100 (Ausfahrt Gradestr.)	BAB; 11227,5403 11272,5277 11302,5098
 BAB 100 (Ausfahrt Gradestr.)	BAB 11227,5403 11096,5685
 BAB 100 (Ausfahrt Gradestr.)	BAB; 10791,6219 10850,6174 10972,6023 11096,5685
 BAB 100 (Ausfahrt Gradestr.)	BAB; 11096,5685 11072,5926 11096,6059 11085,6124 11043,6188 10977,6207 10791,6219
-#: next_check_id: BRUECKEANDERWUHLHEIDE-2025
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/ (seit 30.04.2025 gesperrt, wird zurückgebaut)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1555906.php
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lofj5hglw226
-#: by: https://www.tagesspiegel.de/berlin/vollsperrung-der-brucke-an-der-wuhlheide-gravierende-tragwerksschaden-in-treptow-kopenick-festgestellt-13619932.html
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408904799/wichtige-bruecke-in-berlin-ploetzlich-gesperrt-so-gross-ist-der-schaden.html
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1563306.php (Abriss möglichst bis Ende Mai 2025)
-#: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-bruecke-wuhlheide-abriss-schaeden-verkehr.html
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-an-der-wuhlheide/
-#: by: https://entwicklungsstadt.de/brueckenabriss-in-oberschoeneweide-rueckbau-startet-am-samstag/
-#: alias: Brücke an der Wuhlheide
-#: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30
-Hochstraße Rummelsburger Landstraße/An der Wuhlheide	BAB::Br::inwork 17880,7311 18010,7133 18225,7004
+# REMOVED (im Mai 2025 abgebrochen) --- #: next_check_id: BRUECKEANDERWUHLHEIDE-2025 --- #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/ (seit 30.04.2025 gesperrt, wird zurückgebaut) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1555906.php --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lofj5hglw226 --- #: by: https://www.tagesspiegel.de/berlin/vollsperrung-der-brucke-an-der-wuhlheide-gravierende-tragwerksschaden-in-treptow-kopenick-festgestellt-13619932.html --- #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408904799/wichtige-bruecke-in-berlin-ploetzlich-gesperrt-so-gross-ist-der-schaden.html --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1563306.php (Abriss möglichst bis Ende Mai 2025) --- #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-bruecke-wuhlheide-abriss-schaeden-verkehr.html --- #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-an-der-wuhlheide/ --- #: by: https://entwicklungsstadt.de/brueckenabriss-in-oberschoeneweide-rueckbau-startet-am-samstag/ --- #: alias: Brücke an der Wuhlheide --- #: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 --- Hochstraße Rummelsburger Landstraße/An der Wuhlheide	BAB::Br::inwork 17880,7311 18010,7133 18225,7004
 Adenauerplatztunnel	BAB::Tu 3697,10658 3697,10658 3747,10575 3817,10407 3852,10236 3902,10043 3921,9971
 Straßentunnel Alexanderplatz	BAB::Tu 10993,12667 11057,12715 11105,12764 11141,12806 11320,13095 11339,13124
 Tunnel Drakestr.	BAB::Tu 2876,4195 3188,4390

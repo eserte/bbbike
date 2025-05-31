@@ -507,9 +507,9 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: last_checked: 2025-05-24 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernen des Projekts) vvv
-#: osm_watch: way id="169459736" version="15"
+#: osm_watch: way id="169459736" version="16"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
-#: osm_watch: way id="25278674" version="23"
+#: osm_watch: way id="25278674" version="24"
 Gerichtstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
 #: next_check ^^^
 #: check_frequency ^^^
@@ -639,7 +639,7 @@ Fürstenberger Str.: Asphalt	Q0 10311,14613 10468,14636
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="20"
 #: osm_watch: way id="49180827" version="25"
-#: last_checked: 2025-04-25
+#: last_checked: 2025-05-24 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -743,8 +743,13 @@ Hertzbergstr.: Kopfsteinpflaster	Q2- 13423,7757 13416,7712
 Alt-Rudow: Asphalt	Q0 16975,1262 16849,1437
 Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2+ 11108,9187 11055,9539
 Alt-Kladow: Asphalt	Q0 -7170,4962 -7080,4896
+#: XXX ändert sich die Fahrbahnbeschaffenheit nach den Bauarbeiten? vvv
+#: source_id: viz2021:13.145424,52.452549,26.05.2025,08:00 (bis 20.06.2025)
+#: next_check: 2025-06-20 vvv
 Alt-Kladow: Kleinsteinpflaster	Q1- -7080,4896 -7038,4885 -6947,4861
 Alt-Kladow: schlechtes Kopfsteinpflaster	Q3+ -6947,4861 -6811,4893
+#: next_check ^^^
+#: XXX ^^^
 Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1 -8441,3918 -8401,3899 -8308,3902 -8255,3946
 Sakrower Kirchweg: Beton	Q1+ -8255,3946 -8162,4025
 Sakrower Kirchweg: Asphalt	Q0 -8162,4025 -7990,4086 -7914,4150 -7792,4249 -7714,4279
@@ -1024,7 +1029,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="26"
-#: last_checked: 2025-04-13 (mapillary)
+#: last_checked: 2025-05-24 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 

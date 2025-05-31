@@ -6319,7 +6319,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 # 
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
-#: osm_watch: way id="33712134" version="7"
+#: osm_watch: way id="33712134" version="8"
 #: last_checked: 2025-02-26
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
@@ -18732,10 +18732,11 @@ Herrfurthstr. (Steglitz)	N 4558,5863 4724,5782
 #: by: https://stadtrand-nachrichten.de/treitschkestrasse-umbenennung-ein-zweites-mal-beschlossen/
 #: by: https://stadtrand-nachrichten.de/habemus-betty-katz-strasse/ (Umbenennung von der BVV beschlossen)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9364 (Antrag)
+#: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin--steglitz-treitschkestrasse-umbenennung-name-bvv.html (Amtsblatteintrag im Juni 2025, Vollzug der Umbenennung im Oktober 2025 möglich)
 #: XXX Umbenennung in Betty-Katz-Straße im Ausschuss und in der BVV beschlossen vvv
 #: also_indoor: search Treitschkestraße
-#: last_checked: 2025-01-02 vvv
-#: check_frequency 150d vvv
+#: last_checked: 2025-05-26 (rbb) vvv
+#: check_frequency 30d vvv
 Treitschkestr.	NN 5062,6295 4997,6331 4971,6345
 Treitschkestr.	N 4971,6345 4846,6417 4630,6534 4500,6612
 #: check_frequency ^^^

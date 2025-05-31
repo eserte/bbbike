@@ -792,6 +792,8 @@ Schloßstr. (Einbahnstraße?)	? -14821,106013 -15004,105813 -15070,105705
 Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -14288,105530 -14242,105542
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
+# added from flaechen
+(Hängen bereits Schilder für den Susanne-und-Kurt-Crohn-Platz?)	? 11447,16507 11535,16498 11542,16384 11470,16394 11448,16398 11447,16507
 # added from qualitaet_s
 Neuer Steg: unbefestigter Weg (Ist hier auch asphaltiert?)	? 8277,19210 8209,19107
 Maximiliankorso: etwas brüchiger Asphalt (Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden?)	? 1738,25243 1857,25238 1960,25229 2083,25221 2164,25190 2216,25117
@@ -843,6 +845,8 @@ Götschendorf - Böckenberg: schlechte Qualität, teilweise Sand (wie ist die Quali
 (bei Götschendorf): mäßige Qualität (wie ist die Qualität des Weges hier?)	? 30027,76566 29951,76969 29769,77099 29507,77428 29458,77597
 Groß Friedenwalde - Flieth: Kopfsteinpflaster (wie schlecht ist das Kopfsteinpflaster hier?)	? 35740,80983 35815,81168 35815,81518 35894,81782
 Groß Friedenwalde - Flieth: Asphalt (ist hier tatsächlich asphaltiert?)	? 35894,81782 35998,82265 36009,82890 36430,83497 36578,83835 36590,84086 36693,84235 36676,84495 36696,84495
+# added from handicap_s
+Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt (Sind die Bauarbeiten beendet?)	? 17062,11130 17155,11348
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
@@ -872,6 +876,11 @@ Kurpromenade: Bauarbeiten, vermutlich Erneuerung der Fahrbahn (Wurde die Fahrbah
 Lemkestr.: zwischen Lenbachstr. und Frans-Hals-Str. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Lenbachstr., Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten beendet?)	? 25534,12763 25663,12927
 Steg am Krugpfuhl gesperrt, Ende der Sperrung unbekannt (Wann ist der Steg wieder offen?)	? 11162,22939 11150,22898
 Uranusweg: Fahrbahn unter der U-Bahnbrücke gesperrt, Engstelle (Besteht die Sperrung noch immer?)	? 4335,17642 4392,17777
+Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, voraussichtlich bis Ende Mai 2025 (Sind die Bauarbeiten vollständig beendet?)	? 4131,12641 4162,12638 4213,12623 4299,12590 4340,12578 4441,12578 4529,12570
+Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, voraussichtlich bis Ende Mai 2025 (Sind die Bauarbeiten vollständig beendet?)	? 4441,12578 4441,12559
+Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, voraussichtlich bis Ende Mai 2025 [Galvanistr. - Iburger Ufer (oberer Weg)] (Sind die Bauarbeiten vollständig beendet?)	? 4478,12537 4441,12559
+Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, voraussichtlich bis Ende Mai 2025 [(Iburger Ufer - Spreeradweg)] (Sind die Bauarbeiten vollständig beendet?)	? 4160,12612 4213,12623
 Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem 10.04.2025 (Ist der Mauerweg noch immer gesperrt?)	? 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
+Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten Sperrung geplant (Stand 23.05.2025: noch keine Sperrung) [Crashgate Richtung Rundkurs Südwest] (Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?)	? 11407,7198 11598,7264 11608,7267
 Hegemeisterbrücke: Neubau geplant, während der Bauzeit Sperrung der Brücke (Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?)	? 30081,5231 30081,5220
 Alexandrinenstr. - Wassertorstr.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten beendet?)	? 10431,10606 10492,10582
