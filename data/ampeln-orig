@@ -3533,7 +3533,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-05-21 vvv
+#: last_checked: 2025-05-31 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -5012,6 +5012,8 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	F -8691,86665
 #: note: Anforderungsampel
 	F -8708,86368
+#: note: Anforderungsampel beim Überqueren der B185
+	X -68766,-67664
 # 
 #: section: ^^^
 ################################################################################

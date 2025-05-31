@@ -11760,7 +11760,7 @@ Gockelweg [Stichstraße]: Verbundsteinpflaster	Q1+ 16173,-571 16145,-503 16119,-5
 (Königsheideweg - Südostallee): Asphalt	Q0 15788,5898 15881,5901 15967,5924 15964,5940
 #: next_check_id: PLANCK-2025
 #: historical_note: früher (bis 2024/2025): Pflasterung, alte Straßenbahnschienen, provisorische Asphaltstreifen, Q1
-#: last_checked: 2025-05-06
+#: last_checked: 2025-05-25
 Planckstr.: Asphalt, letzte Deckschicht fehlt	Q1 9402,12792 9386,12833 9375,12911
 Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1 12267,16946 12307,16950 12382,17006 12562,17135
 Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1+ 12562,17135 12768,17308 12780,17318 12865,17381 12976,17464 12998,17480
@@ -31538,14 +31538,17 @@ Gehrenseestr.: guter Asphalt	Q0 18487,16741 18324,16625
 #: by: https://blrm.eu/werkliste
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10236 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 (Vorlage zur Kenntnisnahme (B-Planentwurf))
+#: by: https://entwicklungsstadt.de/neubau-in-alt-hohenschoenhausen-450-wohnungen-an-der-detlevstrasse-geplant/ (Baustart (für das Hochbauvorhaben): IV. Quartal 2026, Fertigstellung Ende 2028)
 #: last_checked: 2025-02-12 vvv
 #: check_frequency: 360d vvv
+#: next_check: 2026-12-31 vvv
 #: corrected_by: srt (teilweise holpriger Asphalt, Q2 -> ...)
 #: osm_watch: way id="11644300" version="22"
 Detlevstr.: rauer Asphalt	Q1- 18471,16765 18487,16741 18439,16483
 #: confirmed_by: srt (changed wording: teilweise holpriger Asphalt -> ...)
 #: osm_watch: way id="1093572875" version="1"
 Detlevstr.: Asphalt mit erhebliche Hebungen	Q2- 18439,16483 18412,16334 18406,16295
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 

@@ -62,6 +62,7 @@ Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,99
 #: by: https://berliner-abendblatt.de/berlin-news/chialo-will-karneval-der-kulturen-sichern-id222039
 #: by: https://viz.berlin.de/2023/05/karneval-der-kulturen/
 #: by: https://www.tagesspiegel.de/berlin/umzug-durch-friedrichshain-und-mitte-karneval-der-kulturen-findet-2025-auf-der-frankfurter-allee-statt-13201078.html (Ringcenter bis Kino International)
+#: by: https://www.tagesspiegel.de/berlin/welche-herausforderungen-die-neue-route-bringt-das-andert-sich-2025-beim-karneval-der-kulturen-in-berlin-13760926.html
 ## Kreuzberger Route (ganz früher)
 # REMOVED (2023 hier nicht) --- Yorckstr.	2::temp 9334,9670 9243,9696 9047,9750
 # REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
@@ -6152,7 +6153,29 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: ALTEPOTSDAMER-2022
+#: by: https://www.berliner-zeitung.de/news/shopping-berlin-potsdamer-platz-arkaden-heissen-jetzt-the-playce-li.250487
+#: by: https://www.deutsches-architekturforum.de/thread/5528-rund-um-den-potsdamer-platz/?postID=726648#post726648
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Teileinziehung, Radverkehr wird möglich sein, eingezogener Bereich bis zur Schellingstr.)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_10_0929_1092_online.pdf (Teileinziehung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
+#: by: https://entwicklungsstadt.de/letzte-bauphase-am-potsdamer-platz-umbau-des-marlene-dietrich-platzes-gestartet/
+# REMOVED (Bauarbeiten beendet) --- #: XXX Wie lange dauern die Bauarbeiten an? Danach vermutlich auch Fußgängerzone, Radfahrer frei, wie im nordöstlichen Abschnitt auch -> handicap_s-Eintrag! --- #: last_checked: 2024-01-25 --- #: check_frequency: 14d
+# REMOVED --- #: next_check: 2023-09-15
+# REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
+# REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
+# REMOVED --- #: osm_watch: way id="1124627670" version="6" ---	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
+#: XXX Wie lange dauern die Bauarbeiten? Wo genau wird gebaut? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
+#: last_checked: 2025-05-29 (entwicklungsstadt)
+	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306 8232,11414
+',
+         'from' => undef,
+         'id' => 3626,
+         'text' => 'Marlene-Dietrich-Platz: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '# REMOVED (alte URL) --- #: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-charlottenburg-nord-westend-kleinere-projekte/?postID=721317#post721317

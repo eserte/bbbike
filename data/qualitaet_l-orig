@@ -3190,9 +3190,12 @@ Ritterstr. (Aken): Asphalt	Q0 -80218,-62918 -80290,-63189
 Ritterstr. (Aken): Kopfsteinpflaster	Q2 -80290,-63189 -80339,-63468
 Ritterstr. (Aken): Asphalt	Q0 -80339,-63468 -80364,-63559
 Aken - Mennewitz: mäßiges bis schlechtes Kopfsteinpflaster, Banketten sind vorhanden	Q3+ -81593,-64262 -82075,-64262
+Aken - Mennewitz: Asphalt	Q0 -82075,-64262 -83089,-64250
 Aken - Micheln: Asphalt	Q0 -82075,-64262 -82165,-64698 -82260,-64809 -82987,-65231 -83485,-65402 -84087,-65668 -84350,-65737 -84568,-65987 -84837,-66256 -85081,-67637 -85131,-67850 -85181,-67878 -85308,-67987 -85307,-68008
-Micheln - Köthen: mäßiges bis schlechtes Kopfsteinpflaster, Bankette auf der östlichen Seite ist vorhanden	Q3+ -85307,-68008 -85300,-68187 -85323,-68333 -85437,-69012 -85428,-69501 -85408,-69606
+Micheln - Köthen: mäßiges bis schlechtes Kopfsteinpflaster	Q3+; -85307,-68008 -85300,-68187 -85323,-68333 -85437,-69012 -85428,-69501 -85408,-69606
+Micheln - Köthen: mäßiges bis schlechtes Kopfsteinpflaster, uneben asphaltierte Bankette auf der östlichen Seite	Q2; -85408,-69606 -85428,-69501 -85437,-69012 -85323,-68333 -85300,-68187 -85307,-68008
 Micheln - Köthen: Asphalt	Q0 -85408,-69606 -85381,-69741 -85297,-69819 -85288,-69871 -85387,-70381 -85443,-71112 -85069,-71150 -85018,-71156 -84912,-71281 -84651,-71297
+Feldweg bei Elsdorf: schadhafter Asphalt	Q2 -85546,-71546 -85443,-71112
 Elsdorf - Köthen: Asphalt	Q0 -84651,-71297 -84650,-71364 -84656,-72200 -84636,-72443 -84578,-72801
 Goethestr.: Asphalt	Q0 -85625,-74762 -85668,-74729 -85735,-74788 -85710,-74891 -85669,-75008
 Alte Brücke (Zerbst): Gehwegplatten	Q0- -78035,-50401 -77993,-50699
@@ -6228,13 +6231,13 @@ Hagenstr.: Schotterstraße	Q2 4329,-925 4367,-1059
 Hagenstr.: unbefestigte Straße	Q2 4367,-1059 4366,-1171 4372,-1201
 (Mauerweg - Hagenstr.): alter brüchiger Asphalt	Q2 4406,-910 4329,-925
 Lutherplatz (Dessau): Kopfsteinpflaster	Q2 -67414,-66408 -67405,-66448 -67331,-66505 -67340,-66524 -67383,-66537
-Kochstedt - Libbesdorf: Asphalt	Q0 -74830,-70502 -75228,-70920 -75574,-71638 -75719,-71936 -75790,-72008
+Kochstedt - Libbesdorf: Asphalt	Q0 -74830,-70502 -75228,-70920 -75364,-71267 -75559,-71643 -75719,-71936 -75790,-72008
 Libbesdorf - Scheuder: Asphalt	Q0 -76719,-71563 -77645,-72257 -77695,-72296
 Scheuder: Kopfsteinpflaster mit Sandbanketten	Q3+; -77695,-72296 -77947,-72491 -78113,-72487 -78176,-72448
 Scheuder: Kopfsteinpflaster	Q3; -78176,-72448 -78113,-72487 -77947,-72491 -77695,-72296
 #: note: zumindest im südlichen Teil
 Würflau - Breesen: Asphalt	Q0 -79429,-71877 -79085,-73134
-Würflau - Breesen: Plattenweg	Q2 -79085,-73134 -79035,-73339
+Würflau - Breesen: Plattenweg	Q2+ -79085,-73134 -79035,-73339
 #: note: zumindest im nördlichen Teil
 Würflau - Breesen: Asphalt mit Schäden	Q1- -79035,-73339 -78965,-73633 -78985,-74354 -78650,-75062
 Scheuder - Merzien: Asphalt	Q0 -79035,-73339 -80202,-73761 -80458,-73962 -80501,-73968
@@ -9316,7 +9319,9 @@ Thomas-Müntzer-Str. (Dessau): Asphalt	Q0 -67335,-66799 -67261,-67119
 Kochstedt - B185: Asphalt	Q0 -73110,-70703 -73556,-70845 -74235,-70661 -74830,-70502 -75145,-70414
 Kochstedt - B185: Asphalt	Q0 -75145,-70414 -75292,-70310 -75590,-70212 -76316,-70019
 #: confirmed_by: srt
-Scheuder - Merzien: Asphalt	Q0 -78230,-72519 -78268,-72587 -78303,-72603 -78293,-72637 -78283,-72685 -78493,-72863 -78925,-73086 -79085,-73134
+Scheuder - Merzien: Asphalt	Q0 -78230,-72519 -78268,-72587 -78303,-72603 -78293,-72637
+#: corrected_by: srt (added "Wurzelschäden", Q0 -> Q1)
+Scheuder - Merzien: Asphalt mit Wurzelschäden	Q1 -78293,-72637 -78283,-72685 -78493,-72863 -78925,-73086 -79085,-73134
 Storkau - Lausigk: Kopfsteinpflaster	Q2 -77419,-75293 -77586,-74537 -77670,-73898
 Adolf-Hermann-Str. (Stolpe): Kopfsteinpflaster	Q3+ 237,28184 451,28174 524,28171
 Goethestr.: Asphalt	Q0 0,30042 -408,30276 -755,30473 -831,30493

@@ -3988,11 +3988,12 @@ Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwo
 #: check_frequency: 60d
 Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13639,14133 13715,14018
 # 
+#: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: last_checked: 2025-05-17
 #: check_frequency: 120d
-#: next_check: 2026-05-01
+#: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
 # 
 #: priority: #B
@@ -4486,7 +4487,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: XXX nach den Bauarbeiten ggfs. Einbahnstraßenregelung in der Ingeborg-Drewitz-Allee wieder herstellen
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
-#: last_checked: 2025-05-21 vvv
+#: last_checked: 2025-05-31 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="5"
@@ -4823,7 +4824,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2025-04-25 vvv
+#: last_checked: 2025-05-31 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -4970,11 +4971,12 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
 #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
 #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
+#: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
 #: last_checked: 2025-05-13
 # REMOVED --- #: check_frequency: 60d
-# REMOVED --- #: next_check: 2024-12-31
+#: next_check: 2025-05-30 (entwicklungsstadt)
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 # 
 #: next_check_id: MOLECULES-2025
@@ -5047,7 +5049,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: note 3954448 5
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2025-05-21
+#: last_checked: 2025-05-25
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-12-31
@@ -5190,7 +5192,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # 
 #: osm_watch: note 4480556 3
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-05-22 (traffic)
+#: last_checked: 2025-05-25
 #: check_frequency: 14d (traffic)
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 

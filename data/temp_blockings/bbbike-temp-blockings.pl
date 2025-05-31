@@ -120,6 +120,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/chialo-will-karneval-der-kulturen-sichern-id222039
 #: by: https://viz.berlin.de/2023/05/karneval-der-kulturen/
 #: by: https://www.tagesspiegel.de/berlin/umzug-durch-friedrichshain-und-mitte-karneval-der-kulturen-findet-2025-auf-der-frankfurter-allee-statt-13201078.html (Ringcenter bis Kino International)
+#: by: https://www.tagesspiegel.de/berlin/welche-herausforderungen-die-neue-route-bringt-das-andert-sich-2025-beim-karneval-der-kulturen-in-berlin-13760926.html
 ## Kreuzberger Route (ganz früher)
 # REMOVED (2023 hier nicht) --- Yorckstr.	2::temp 9334,9670 9243,9696 9047,9750
 # REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
@@ -37711,9 +37712,10 @@ EOF
 	2::inwork 7431,34989 7346,32257
 EOF
      },
-     { from  => 1663329224, # 2022-09-16 13:53
-       until => 1707053322, # undef, # 1670626800, # 2022-12-10 00:00
-       text  => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn zwischen Varian-Fry-Str. und Marlene-Dietrich-Platz gesperrt, Ende der Bauarbeiten unbekannt', # früher: 'voraussichtlich bis Dezember 2022'
+     { from  => undef, # 1663329224, # 2022-09-16 13:53
+       until => undef, # 1707053322, # undef, # 1670626800, # 2022-12-10 00:00
+#      text  => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn zwischen Varian-Fry-Str. und Marlene-Dietrich-Platz gesperrt, Ende der Bauarbeiten unbekannt', # früher: 'voraussichtlich bis Dezember 2022'
+       text  => 'Marlene-Dietrich-Platz: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
@@ -37722,12 +37724,15 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Teileinziehung, Radverkehr wird möglich sein, eingezogener Bereich bis zur Schellingstr.)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_10_0929_1092_online.pdf (Teileinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
+#: by: https://entwicklungsstadt.de/letzte-bauphase-am-potsdamer-platz-umbau-des-marlene-dietrich-platzes-gestartet/
 # REMOVED (Bauarbeiten beendet) --- #: XXX Wie lange dauern die Bauarbeiten an? Danach vermutlich auch Fußgängerzone, Radfahrer frei, wie im nordöstlichen Abschnitt auch -> handicap_s-Eintrag! --- #: last_checked: 2024-01-25 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2023-09-15
 # REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
-#: osm_watch: way id="1124627670" version="6"
-	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
+# REMOVED --- #: osm_watch: way id="1124627670" version="6" ---	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
+#: XXX Wie lange dauern die Bauarbeiten? Wo genau wird gebaut? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
+#: last_checked: 2025-05-29 (entwicklungsstadt)
+	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306 8232,11414
 EOF
      },
      { from  => undef, # 
@@ -47926,6 +47931,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/drucken-sie-uns-die-daumen-berlin-sucht-weiter-abrissunternehmen-fur-marode-wuhlheide-brucke-13728760.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1564820.php (Rückbau soll zum 27.06.2025 abgeschlossen sein)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-4#post-25201 (gemeinsamer Rad-/Gehweg)
+#: by: https://entwicklungsstadt.de/brueckenabriss-an-der-wuhlheide-erste-lockerungen-fuer-tram-und-rettungskraefte/
 # REMOVED --- #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich? --- #: last_checked: 2025-05-20 --- #: next_check: 2025-05-29
 unter der Brücke	2::inwork 18001,7121 18019,7146
 EOF
