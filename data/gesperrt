@@ -2278,10 +2278,10 @@ Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11315,13210 11399,13333 11
 Mollstr. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11451,13301 11399,13333 11315,13210
 Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11276,13408 11308,13389 11346,13441
 Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11346,13441 11308,13389 11399,13333
-Straßenbahntrasse	3nocross::ignrte 11706,13635 11652,13564 11561,13451 11539,13425 11525,13406 11486,13350 11451,13301
-Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11561,13451 11652,13564 11598,13598
+Straßenbahntrasse	3nocross::ignrte 11706,13635 11652,13564 11623,13528 11561,13451 11539,13425 11525,13406 11486,13350 11451,13301
+Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 11623,13528 11652,13564 11598,13598
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11598,13598 11652,13564 11706,13635
-Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3::igndisp 11652,13564 11561,13451 11608,13417
+Otto-Braun-Str. -> Barnimstr.: Straßenbahntrasse	3::igndisp 11623,13528 11561,13451 11608,13417
 Barnimstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11608,13417 11561,13451 11539,13425
 Otto-Braun-Str. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11525,13406 11539,13425 11490,13463
 Mendelssohnstr. -> Otto-Braun-Str.: Straßenbahntrasse	3::igndisp 11490,13463 11539,13425 11561,13451

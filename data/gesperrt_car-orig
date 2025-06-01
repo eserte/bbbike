@@ -11,7 +11,7 @@
 #: osm_watch: note 4705942 4
 #: source_id: viz2021:13.278443,52.516243,04.04.2025,08:00 (kein Endedatum)
 #: priority: #D
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-01
 #: next_check: 2025-12-31
 # REMOVED --- #: valid: -20251231
 Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
@@ -27,13 +27,14 @@ Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
 # REMOVED --- #: valid: -20250430 vvv
 #: osm_watch: way id="38763874" version="13"
 #: source_id: viz2021:13.275802,52.518347,11.04.2025,17:48 (bis 30.04.2025) (inaktiv)
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-01
 Lindenallee: temporäre Einbahnstraßenregelung für Kfz	1 1664,12332 1690,12407
 #: osm_watch: way id="1092670182" version="8"
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-01 vvv
 Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1768,12174 1788,12252 1799,12291 1822,12372
 #: osm_watch: way id="4515884" version="16"
 Nußbaumallee - Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1732,12224 1788,12252
+#: last_checked ^^^
 # REMOVED --- #: valid ^^^
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -955,7 +956,7 @@ Seestr.: Straßenbahntrasse	3nocross 7393,16566 7417,16587 7447,16613
 Groninger Str.: Sackgasse für Autos	3 7433,16375 7415,16502 7409,16542 7393,16566 *
 Florastr.: Poller	3 * 1938,28171 *
 Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
-Krumme Str.	1 4032,12167 3999,12050 3976,11869
+Krumme Str.	1 4032,12167 3992,12063 3976,11869
 Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,14749
 #: by: http://www.flickr.com/photos/lapidarium42/7708833948/in/pool-gwb
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf

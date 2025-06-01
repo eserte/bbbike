@@ -2732,7 +2732,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3440,7 +3440,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Mai 8.00 - 20.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Juni 8.00 - 20.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -4703,6 +4703,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023) (inaktiv)
 #: source_id: viz2021:13.362236,52.517659,06.06.2023,18:00 (John-Foster-Dulles-Allee, bis 10.06.2023) (inaktiv)
+#: source_id: viz2021:13.364825,52.517521,02.06.2025,18:00 (John-Foster-Dulles-Allee, bis 06.06.2025)
 	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
 	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
 	3 6689,12632 7031,12320 7051,12426
@@ -5036,37 +5037,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1111500.php
-#: by: https://viz.berlin.de/2023/05/wochenendverkehr-in-berlin-zum-dfb-pokalfinale-und-zur-adfc-sternfahrt/
-#: note: betroffene BVG-Linien fahren nicht zwischen 10h und 21h
-#: source_id: viz2021:13.491317,52.469108,12.06.2022,07:00 (inaktiv)
-#: source_id: viz2021:13.479325,52.484519,11.06.2022,13:00 (inaktiv)
-#: source_id: viz2021:13.479325,52.484519,12.06.2022,09:00 (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,11.06.2022,12:00 (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,11.06.2022,16:00 (inaktiv)
-#: source_id: viz2021:13.479413,52.484459,03.06.2023,12:00 (bis 05.06.2023) (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,03.06.2023,15:00 (bis 04.06.2023) (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,04.06.2023,07:00 (bis 04.06.2023) (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,01.06.2024,12:00 (bis 03.06.2024) (inaktiv)
-#: source_id: viz2021:13.47948,52.48449,01.06.2024,15:00 (bis 02.06.2024) (inaktiv)
-#: source_id: viz2021:13.479817,52.484127,31.05.2025,15:00 (bis 01.06.2025)
-#: source_id: viz2021:13.49328,52.4679,31.05.2025,06:00 (bis 01.06.2025)
-#: source_id: viz2021:13.4959,52.46614,31.05.2025,13:30 (bis 31.05.2025)
-	q4::temp 16507,7254 16428,7144
-	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
-	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
-	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16619,8606 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
-	q4::temp 15778,8990 15678,8911 15591,8848
-	q4::temp; 15591,8848 15534,8943 15445,9090 15440,9098 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
-',
-         'from' => 1748642400,
-         'id' => 3274,
-         'text' => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Puschkinallee, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 1.6.2025 07:00 bis 20:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1748800800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6025,32 +5996,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://berliner-abendblatt.de/2022/08/03/spandauer-havelfest-nach-zwei-jahren-pause-zurueck/
-#: by: https://partner-fuer-spandau.de/veranstaltungen/spandauer-sommerklassiker-das-spandauer-havelfest/263
-#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11798 (Anfrage (findet 2023 nicht statt?))
-#: by: https://www.berlin.de/events/3467999-2229501-spandauer-havelfest.html (2024) (29. Mai 2025 - 1. Juni 2025)
-	2::temp -2918,14496 -2964,14478 -3026,14358 -3054,14305 -3091,14220 -3135,14183 -3275,14114
-	2::temp -3054,14305 -3019,14286
-	2::temp -2964,14478 -2939,14433 -3019,14286 -3042,14255 -3059,14230 -3090,14198 -3153,14141 -3187,14116 -3291,14043 -3306,14035 -3345,13994
-	2::temp -3042,14255 -3091,14220
-',
-         'from' => 1748383200,
-         'id' => 3598,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              28,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 29. Mai 2025 bis 1. Juni 2025',
-         'type' => 'gesperrt',
-         'until' => 1748800800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6886,10 +6832,11 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
 #: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2025-03-17 (okas)
+#: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
+#: last_checked: 2025-06-01
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
-	q2::inwork 3213,18115 3420,18470
+	q3::inwork 3213,18115 3420,18470
 ',
          'from' => 1687609413,
          'id' => 3833,
@@ -6904,7 +6851,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id: viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv)
 #: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2024-08-21 (daf)
+#: last_checked: 2025-06-01
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3267,18767 3008,18464
@@ -6949,7 +6896,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
 #: note: Anfang März 2024: freitags kann man anscheinend auch schon früher (um 17h) hier langfahren; Mai 2025: donnerstags bereits um 16:40 Uhr
-#: last_checked: 2024-07-13 (mapillary)
+#: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -7119,7 +7066,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="35"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-05-24 (mapillary) vvv
+#: last_checked: 2025-06-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -7181,7 +7128,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: osm_watch: way id="279580369" version="8"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-01-15
+#: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 	q3::inwork 4335,17642 4392,17777
@@ -7482,7 +7429,7 @@ nördliche Rathenower Str.: Überfahrt gesperrt	2::inwork 6730,14021 6719,14047
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-05-21
+#: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -7506,25 +7453,26 @@ nördliche Rathenower Str.: Überfahrt gesperrt	2::inwork 6730,14021 6719,14047
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
 #: osm_watch[closed]: note 4210969 6
 #: add_fragezeichen: Sind die Bauarbeiten vollständig beendet? vvv
-#: last_checked: 2025-05-24 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
+#: last_checked: 2025-06-01 vvv
+#: check_frequency: 21d vvv
+# REMOVED --- #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
 # REMOVED (laut osm westlich des Siemensstegs offen) ---	2::inwork 3836,12614 3867,12616 3888,12618 4040,12632 4078,12637 4131,12641
-	2::inwork 4131,12641 4162,12638 4213,12623 4299,12590 4340,12578 4441,12578 4529,12570
-	2::inwork 4441,12578 4441,12559
-Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559
+	2::inwork 4131,12641 4162,12638 4225,12620 4299,12590 4340,12578 4441,12578
+# REMOVED (offen) ---	2::inwork 4441,12578 4529,12570
+# REMOVED (offen) ---	2::inwork 4441,12578 4441,12559
+# REMOVED (weitgehend offen, man kann an der Baustelle vorbei) --- Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559
 # REMOVED (offen) --- Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4441,12559 4321,12566
-(Iburger Ufer - Spreeradweg)	2::inwork 4160,12612 4213,12623
+(Iburger Ufer - Spreeradweg)	2::inwork 4160,12612 4225,12620
 # REMOVED (offen)	2::inwork 4529,12570 4575,12542 4642,12491
 # REMOVED (offen) --- Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',
          'from' => 1709576392,
          'id' => 4016,
-         'text' => 'Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, voraussichtlich bis Ende Mai 2025',
+         'text' => 'Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, geplant bis Ende Mai 2025 (Stand Anfang Juni 2026: noch immer nicht komplett fertig)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8240,7 +8188,21 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SCHWEDTER-2024
+# REMOVED --- #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
+#: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025) (+ weitere Arbeiten) (inaktiv)
+# REMOVED --- #: note: am 29.03.2025 (Sa) waren die Barrieren weggeschoben und eine Durchfahrt war inoffiziell möglich ---	q4::inwork 10530,14452 10506,14521 10468,14636
+#: last_checked: 2025-06-01 (von der Parallelstraße aus)
+#: next_check: 2025-06-30 (infravelo)
+	q4::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
+',
+         'from' => undef,
+         'id' => 4191,
+         'text' => 'Schwedter Str.: Bauarbeiten zwischen Fürstenberger Str. und Oderberger Str., wegen Bauarbeiten kann die Fahrbahn gesperrt sein, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -8696,6 +8658,7 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
        undef,
        {
          'data' => '#: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
+#: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr)
 #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert
 Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025
@@ -8704,7 +8667,7 @@ Scottweg	q4::inwork -1317,11300 -966,11382
 ',
          'from' => 1739720880,
          'id' => 4263,
-         'text' => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 16:48 bis 13.06.2025',
+         'text' => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 bis 13.06.2025',
          'type' => 'handicap',
          'until' => 1749830400
        },
@@ -9167,7 +9130,7 @@ Radickestraße zwischen Arndtstraße und Nipkowstraße	q4::inwork 20592,3633 20499,
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-05-24 vvv
+#: last_checked: 2025-06-01 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -9232,7 +9195,7 @@ Kantstr. -> Althoffpl.	3::inwork 5838,5563 5675,5573 5588,5579
        {
          'data' => '#: by: https://weddingweiser.de/wieder-kein-tramverkehr-monatelang/
 #: XXX ab wann? bereits ab dem 11.4.2025?
-#: last_checked: 2025-05-10 (mapillary)
+#: last_checked: 2025-06-01
 #: check_frequency: 30d
 Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307 9474,16297 9458,16180 9446,16060
 ',
@@ -9426,36 +9389,7 @@ Privatstr. 2	q4::inwork 16905,17281 17028,17298
          'type' => 'handicap',
          'until' => 1751641200
        },
-       {
-         'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11603
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_46_3407_3446_online.pdf (Teileinziehung von Straßenland)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1505682.php (Maßnahmenstart im nördlichen Bereich im November 2024 --- Niederbarnimstraße, Einbahnstraßenregelungen (vielleicht die Colberstr.?) und dieser Abschnitt)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11772 (zur Nichtumsetzung 2024)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/poller-radwege-fussgangerzonen-grunes-bezirksamt-will-verkehr-im-friedrichshainer-kiez-umkrempeln-12965524.html (Erwähnung)
-#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/erste-autofreie-zonen-im-ostkreuz-kiez-umgesetzt_a433236
-#: by: https://www.berliner-zeitung.de/mensch-metropole/friedrichshain-kreuzberg-mehr-poller-weniger-parkplaetze-so-reagiert-der-bezirk-auf-die-heftige-kritik-li.2291235 (Frühjahr 2025)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1527821.php
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/informationen-zur-neuen-schulzone_a435248
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1561419.php (Beginn der baulichen Umsetzung)
-#: by: https://entwicklungsstadt.de/friedrichshain-schafft-erste-schulzone-mehr-sicherheit-vor-der-jane-goodall-grundschule/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/vor-dieser-schule-in-berlin-sind-autos-verboten-tischtennis-und-blumen-statt-parkplatzen-13729912.html
-# REMOVED (deleted) --- #: osm_watch: way id="1051634661" version="11"
-#: osm_watch: way id="1388649610" version="1"
-#: osm_watch: note 4668723 4
-#: XXX zurzeit (noch?) keine Ausnahme für Radfahrer, evtl. weil noch Markierungsarbeiten erfolgen?
-#: add_fragezeichen: Wird die Durchfahrt für Radfahrer möglich sein?
-#: last_checked: 2025-05-24
-#: check_frequency: 10d
-# REMOVED --- #: next_check: 2024-10-04
-Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	q4::temp 14783,11949 14675,11964
-',
-         'from' => undef,
-         'id' => 4348,
-         'text' => 'Scharnweberstr.: provisorische Schulzone, Markierungsarbeiten, Fahrbahn abgesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.145424,52.452549,26.05.2025,08:00 (bis 20.06.2025)
 	q4::inwork -6811,4893 -6947,4861 -7038,4885 -7080,4896

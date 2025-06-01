@@ -2529,7 +2529,7 @@ Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11526,13252 11560,13232 11681,1
 Heerstr.: schlecht passierbar	3nocross -4078,11800 -4033,11786 -3820,11721 -3708,11686
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2523,5114 2560,5044 2577,4959 2596,4907
 Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11399,13333 11308,13389 11276,13408
-Otto-Braun-Str.: Straßenbahntrasse	3nocross 11706,13635 11652,13564 11561,13451 11539,13425 11525,13406 11486,13350 11451,13301
+Otto-Braun-Str.: Straßenbahntrasse	3nocross 11706,13635 11652,13564 11623,13528 11561,13451 11539,13425 11525,13406 11486,13350 11451,13301
 Otto-Braun-Str.: Straßenbahntrasse	3nocross 11451,13301 11369,13174 11320,13095
 Otto-Braun-Str.: Mittelstreifen	3nocross 11369,13174 11320,13095 11267,13012 11226,12945
 #: by: ^^^
@@ -4262,7 +4262,7 @@ Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::i
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="1"
-#: last_checked: 2025-05-21
+#: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 #: valid: -20251030
@@ -4487,7 +4487,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: XXX nach den Bauarbeiten ggfs. Einbahnstraßenregelung in der Ingeborg-Drewitz-Allee wieder herstellen
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
-#: last_checked: 2025-05-31 vvv
+#: last_checked: 2025-06-01 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="5"
@@ -4582,19 +4582,19 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2025-03-17 (okas)
+#: last_checked: 2025-06-01
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2026-10-01
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #
 #: next_check_id: U6-2022
-#: last_checked: 2025-01-15
+#: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
 # 
 #: next_check_id: U6-2022
-#: last_checked: 2025-01-15
+#: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929

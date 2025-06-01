@@ -845,7 +845,7 @@ Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 
 	RW1; 4016,17918 3930,17923
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2024-08-10 vvv
+#: last_checked: 2025-06-01 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2026-10-01 vvv
 	RW8; 3930,17923 3833,17929 3706,17931 3628,17935 3570,17938
@@ -861,7 +861,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 #: note: Scharnweberstraße/Seidelstr./Berliner Str., Richtung Wedding
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben; außerdem Zweirichtungsradweg im Bereich der Seidelstraßenbrücke vvv
-#: last_checked: 2025-01-15 vvv
+#: last_checked: 2025-06-01 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2026-10-01 vvv
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2015,20336 2044,20289 2109,20188 2169,20095 2224,20007 2268,19919
@@ -1024,7 +1024,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2025-05-24 (mapillary)
+#: last_checked: 2025-06-01
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -3334,13 +3334,14 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 # REMOVED (bleibt dabei, kein Platz mehr für eine Busspur) --- #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5; --- #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01) --- #: osm_watch: way id="187103792" version="10" --- #: source_id: 2147343199 --- #: last_checked: 2018-10-13 --- # REMOVED --- #: check_frequency: 14d --- #: next_check: 2018-10-18
 	RW4; 11451,13301 11369,13174
 #: historical_note: früher (bis Mitte Dezember 2024): Busspur gilt Mo-Fr 6-20 Uhr, im weiteren Verlauf immer gültig, RW5;
-	RW3; 11451,13301 11486,13350
+niedrige Protektion	RW4; 11451,13301 11486,13350
 Bushaltestelle	RW5; 11486,13350 11525,13406
-	RW4; 11525,13406 11539,13425 11561,13451 11652,13564
+niedrige Protektion	RW4; 11525,13406 11539,13425 11561,13451 11623,13528
+	RW4; 11623,13528 11652,13564
 	RW1; 11486,13350 11451,13301
 Fahrradschleuse	RW3; 11652,13564 11706,13635
 #: historical_note: früher (bis Mitte Dezember 2024): Busspur gilt 6-24 Uhr, RW5;
-	RW4; 11706,13635 11652,13564 11561,13451 11539,13425
+niedrige Protektion	RW4; 11706,13635 11652,13564 11623,13528 11561,13451 11539,13425
 Bushaltestelle	RW5; 11539,13425 11525,13406 11486,13350
 #: by: Christian Bewernitz
 #: confirmed_by: srt
@@ -3636,7 +3637,8 @@ die letzten Meter über Gehweg geführt	RW4; -6704,16179 -6722,16112
 	RW4?; -410,21496 -249,21420 -130,21396
 #: historical_note: früher (bis Ende 2023/Anfang 2024) Zweirichtungsradweg, (bis Mitte 2024) Gehweg für Radfahrer frei
 	RW4?; -130,21396 415,21334 469,21303 598,21257 886,21221 1293,21123
-	RW4?; 1293,21123 886,21221 598,21257 469,21303 415,21334 -130,21396 -249,21420 -410,21496 -459,21508
+	RW4; 1293,21123 886,21221 598,21257 469,21303 415,21334 -130,21396
+	RW4?; -130,21396 -249,21420 -410,21496 -459,21508
 	RW2;RW1 1293,21123 1445,21216
 Busspur ist immer gültig	RW5;RW5 2015,20336 1955,20435
 # REMOVED (keine Benutzungspflicht) --- #: XXX wird die Benutzungspflicht aufgehoben? --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3657 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3657 (Abordnung wird erfolgen) --- #: last_checked: 2015-09-12 --- #: check_frequency: 180d
@@ -7278,7 +7280,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2025-05-02 (mapillary) vvv
+#: last_checked: 2025-06-01 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -9105,13 +9107,13 @@ Poller	RW4; 12041,7788 12025,7852 12001,7937
 niedrige Protektionselemente	RW4; 12001,7937 11979,8014
 # 
 #: note: Hermannstr., Richtung Süden
-erste Meter noch ohne Radspur	RW0; 11979,8014 12001,7937
-Grünbeschichtung, einige Leitboys	RW4?; 12001,7937 12025,7852
-Leitboys, Grünbeschichtung, Poller	RW4?; 12025,7852 12041,7788 12057,7744
-Poller	RW4?; 12057,7744 12075,7696
-Grünbeschichtung	RW4?; 12075,7696 12081,7679 12090,7651
-Grünbeschichtung, Leitboys	RW4?; 12090,7651 12121,7555 12123,7549
-	RW4?; 12123,7549 12158,7449
+die ersten ca. 50 Meter ohne Radspur	RW0; 11979,8014 12001,7937
+Grünbeschichtung, einige Leitboys	RW4; 12001,7937 12025,7852
+Leitboys, Grünbeschichtung, Poller	RW4; 12025,7852 12041,7788 12057,7744
+Poller	RW4; 12057,7744 12075,7696
+Grünbeschichtung	RW4; 12075,7696 12081,7679 12090,7651
+Grünbeschichtung, einige Leitboys	RW4; 12090,7651 12121,7555 12123,7549
+	RW3; 12123,7549 12158,7449
 Markierung fehlt noch	RW0; 12158,7449 12185,7381
 #: note: ansonsten wäre es RW3
 provisorische Radspur, meistens zugeparkt	RW0; 12185,7381 12221,7271

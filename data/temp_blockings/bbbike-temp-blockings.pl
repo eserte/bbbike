@@ -30504,6 +30504,7 @@ EOF
 #: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023) (inaktiv)
 #: source_id: viz2021:13.362236,52.517659,06.06.2023,18:00 (John-Foster-Dulles-Allee, bis 10.06.2023) (inaktiv)
+#: source_id: viz2021:13.364825,52.517521,02.06.2025,18:00 (John-Foster-Dulles-Allee, bis 06.06.2025)
 	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
 	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
 	3 6689,12632 7031,12320 7051,12426
@@ -32703,9 +32704,9 @@ EOF
 #: source_id: viz2021:13.47948,52.48449,04.06.2023,07:00 (bis 04.06.2023) (inaktiv)
 #: source_id: viz2021:13.47948,52.48449,01.06.2024,12:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.47948,52.48449,01.06.2024,15:00 (bis 02.06.2024) (inaktiv)
-#: source_id: viz2021:13.479817,52.484127,31.05.2025,15:00 (bis 01.06.2025)
-#: source_id: viz2021:13.49328,52.4679,31.05.2025,06:00 (bis 01.06.2025)
-#: source_id: viz2021:13.4959,52.46614,31.05.2025,13:30 (bis 31.05.2025)
+#: source_id: viz2021:13.479817,52.484127,31.05.2025,15:00 (bis 01.06.2025) (inaktiv)
+#: source_id: viz2021:13.49328,52.4679,31.05.2025,06:00 (bis 01.06.2025) (inaktiv)
+#: source_id: viz2021:13.4959,52.46614,31.05.2025,13:30 (bis 31.05.2025) (inaktiv)
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
@@ -40629,10 +40630,11 @@ EOF
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
 #: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
-#: last_checked: 2025-03-17 (okas)
+#: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
+#: last_checked: 2025-06-01
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
-	q2::inwork 3213,18115 3420,18470
+	q3::inwork 3213,18115 3420,18470
 EOF
      },
      { from  => 1687609413, # 2023-06-24 14:23
@@ -40646,7 +40648,7 @@ EOF
 #: source_id: viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv)
 #: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2024-08-21 (daf)
+#: last_checked: 2025-06-01
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3267,18767 3008,18464
@@ -40854,7 +40856,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
 #: note: Anfang März 2024: freitags kann man anscheinend auch schon früher (um 17h) hier langfahren; Mai 2025: donnerstags bereits um 16:40 Uhr
-#: last_checked: 2024-07-13 (mapillary)
+#: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
@@ -41807,7 +41809,7 @@ EOF
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="35"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-05-24 (mapillary) vvv
+#: last_checked: 2025-06-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -42063,7 +42065,7 @@ EOF
 #: osm_watch: way id="279580369" version="8"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-01-15
+#: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 	q3::inwork 4335,17642 4392,17777
@@ -43261,7 +43263,7 @@ EOF
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-05-21
+#: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -43325,7 +43327,7 @@ EOF
 # 
      { from  => 1709576392, # 2024-03-04 19:19
        until => undef, # 1748728800, # 2025-06-01 00:00
-       text  => 'Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, voraussichtlich bis Ende Mai 2025',
+       text  => 'Spreeradweg: Bauarbeiten, Sperrungen im Bereich Iburger Ufer, geplant bis Ende Mai 2025 (Stand Anfang Juni 2026: noch immer nicht komplett fertig)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SPREERADWEGIBURGER-2024
@@ -43334,18 +43336,19 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/10386-gr%C3%BCne-wege-in-berlin-neu-oder-erneuert/?postID=759660#post759660
 #: osm_watch[closed]: note 4210969 6
 #: add_fragezeichen: Sind die Bauarbeiten vollständig beendet? vvv
-#: last_checked: 2025-05-24 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
+#: last_checked: 2025-06-01 vvv
+#: check_frequency: 21d vvv
+# REMOVED --- #: next_check: 2025-05-31 (BA-Pressemitteilung) vvv
 # REMOVED (laut osm westlich des Siemensstegs offen) ---	2::inwork 3836,12614 3867,12616 3888,12618 4040,12632 4078,12637 4131,12641
-	2::inwork 4131,12641 4162,12638 4213,12623 4299,12590 4340,12578 4441,12578 4529,12570
-	2::inwork 4441,12578 4441,12559
-Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559
+	2::inwork 4131,12641 4162,12638 4225,12620 4299,12590 4340,12578 4441,12578
+# REMOVED (offen) ---	2::inwork 4441,12578 4529,12570
+# REMOVED (offen) ---	2::inwork 4441,12578 4441,12559
+# REMOVED (weitgehend offen, man kann an der Baustelle vorbei) --- Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4478,12537 4441,12559
 # REMOVED (offen) --- Galvanistr. - Iburger Ufer (oberer Weg)	2::inwork 4441,12559 4321,12566
-(Iburger Ufer - Spreeradweg)	2::inwork 4160,12612 4213,12623
+(Iburger Ufer - Spreeradweg)	2::inwork 4160,12612 4225,12620
 # REMOVED (offen)	2::inwork 4529,12570 4575,12542 4642,12491
 # REMOVED (offen) --- Cauerstr. - Uferweg	2::inwork 4591,12511 4642,12491
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -45907,17 +45910,20 @@ EOF
 	q4::inwork 14440,15682 14653,15738
 EOF
      },
-     { from  => $isodate2epoch->("2025-03-24 00:00:00"), # undef, #
-       until => 1748091761, # $isodate2epoch->("2025-05-28 17:00:00"), # 1732213854, # undef, #
+     { from  => undef, # $isodate2epoch->("2025-03-24 00:00:00"), # undef, #
+       until => undef, # 1748091761, # $isodate2epoch->("2025-05-28 17:00:00"), # 1732213854, # undef, #
 #      text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Fürstenberger Str., wegen Bauarbeiten kann die Fahrbahn gesperrt sein, vom 24.03.2025 bis 28.05.2025',
+#      text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Fürstenberger Str., wegen Bauarbeiten kann die Fahrbahn gesperrt sein, vom 24.03.2025 bis 28.05.2025',
+      text  => 'Schwedter Str.: Bauarbeiten zwischen Fürstenberger Str. und Oderberger Str., wegen Bauarbeiten kann die Fahrbahn gesperrt sein, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHWEDTER-2024
 # REMOVED --- #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
 #: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025) (+ weitere Arbeiten) (inaktiv)
-#: note: am 29.03.2025 (Sa) waren die Barrieren weggeschoben und eine Durchfahrt war inoffiziell möglich
-	q4::inwork 10530,14452 10506,14521 10468,14636
+# REMOVED --- #: note: am 29.03.2025 (Sa) waren die Barrieren weggeschoben und eine Durchfahrt war inoffiziell möglich ---	q4::inwork 10530,14452 10506,14521 10468,14636
+#: last_checked: 2025-06-01 (von der Parallelstraße aus)
+#: next_check: 2025-06-30 (infravelo)
+	q4::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
 EOF
      },
      { from  => 1729400400, # 2024-10-20 07:00
@@ -46879,10 +46885,11 @@ EOF
      },
      { from  => 1739720880, # 2025-02-16 16:48
        until => $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
-       text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 16:48 bis 13.06.2025',
+       text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 bis 13.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
+#: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr)
 #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert
 Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025
@@ -47624,7 +47631,7 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-05-24 vvv
+#: last_checked: 2025-06-01 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -47694,7 +47701,7 @@ EOF
        data  => <<EOF,
 #: by: https://weddingweiser.de/wieder-kein-tramverkehr-monatelang/
 #: XXX ab wann? bereits ab dem 11.4.2025?
-#: last_checked: 2025-05-10 (mapillary)
+#: last_checked: 2025-06-01
 #: check_frequency: 30d
 Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307 9474,16297 9458,16180 9446,16060
 EOF
@@ -48043,31 +48050,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1748799832, # undef, # XXX
        text  => 'Scharnweberstr.: provisorische Schulzone, Markierungsarbeiten, Fahrbahn abgesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11603
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_46_3407_3446_online.pdf (Teileinziehung von Straßenland)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1505682.php (Maßnahmenstart im nördlichen Bereich im November 2024 --- Niederbarnimstraße, Einbahnstraßenregelungen (vielleicht die Colberstr.?) und dieser Abschnitt)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11772 (zur Nichtumsetzung 2024)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/poller-radwege-fussgangerzonen-grunes-bezirksamt-will-verkehr-im-friedrichshainer-kiez-umkrempeln-12965524.html (Erwähnung)
-#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/erste-autofreie-zonen-im-ostkreuz-kiez-umgesetzt_a433236
-#: by: https://www.berliner-zeitung.de/mensch-metropole/friedrichshain-kreuzberg-mehr-poller-weniger-parkplaetze-so-reagiert-der-bezirk-auf-die-heftige-kritik-li.2291235 (Frühjahr 2025)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1527821.php
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/informationen-zur-neuen-schulzone_a435248
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1561419.php (Beginn der baulichen Umsetzung)
-#: by: https://entwicklungsstadt.de/friedrichshain-schafft-erste-schulzone-mehr-sicherheit-vor-der-jane-goodall-grundschule/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/vor-dieser-schule-in-berlin-sind-autos-verboten-tischtennis-und-blumen-statt-parkplatzen-13729912.html
-# REMOVED (deleted) --- #: osm_watch: way id="1051634661" version="11"
-#: osm_watch: way id="1388649610" version="1"
-#: osm_watch: note 4668723 4
-#: XXX zurzeit (noch?) keine Ausnahme für Radfahrer, evtl. weil noch Markierungsarbeiten erfolgen?
-#: add_fragezeichen: Wird die Durchfahrt für Radfahrer möglich sein?
-#: last_checked: 2025-05-24
-#: check_frequency: 10d
-# REMOVED --- #: next_check: 2024-10-04
+#: note: siehe auch Eintrag in gesperrt_car-orig
 Scharnweberstr.: Einziehung zwischen Jungstr. und Finowstr.	q4::temp 14783,11949 14675,11964
 EOF
      },
