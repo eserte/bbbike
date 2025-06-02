@@ -428,7 +428,7 @@ Barsekowstr.: Fuﬂg‰nger	q2 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655
 Dieffenbachstr.: Bodenschwellen	q0 11346,9655 11541,9576
 Oppelner Str.: Bodenschwellen	q0 12897,10439 12968,10564 12978,10581
-Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
+Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 Lausitzer Platz: Fuﬂg‰ngerzone, einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: Fuﬂg‰ngerzone, Radfahrer frei, Bodenschwelle	q2 12274,10612 12172,10585
 Lausitzer Platz: Fuﬂg‰ngerzone, einige Bodenschwellen	q2 12328,10442 12274,10612
@@ -2348,8 +2348,9 @@ Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
 (Ludwig-Lesser-Park - Am Poloplatz): einige Fuﬂg‰nger	q1 2207,26090 2204,26290 2199,26440 2199,26450
 Osthafen: einige Fuﬂg‰nger	q1 13326,10765 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
 Osthafen: einige Fuﬂg‰nger	q1 13531,10673 13558,10704
-Osthafen: einige Fuﬂg‰nger	q1 14207,10338 14226,10387
+Osthafen: einige Fuﬂg‰nger, ‹berquerung einer Schiene notwendig	q3 14207,10338 14226,10387
 Osthafen: einige Fuﬂg‰nger, Engstelle mit Kette	q2 13835,10577 13805,10528
+(ehem. Osthafen - Stralauer Allee/Elsenbr¸cke): schmale Rampe	q4 14528,10245 14558,10264
 Wismarplatz: einige Fuﬂg‰nger	q1 14475,11778 14461,11738
 Bahndamm: einige Fuﬂg‰nger	q1 13966,9340 13934,9365 13476,9720 13282,9828 13207,9868 13146,9903 13141,9911
 zur Eisenbahnbr¸cke: einige Fuﬂg‰nger	q2 13207,9868 13259,9870 13302,9894
@@ -3467,7 +3468,7 @@ Reformationsplatz: Fuﬂg‰ngerzone	q4 -3107,14535 -3134,14513 -3150,14478 -3174,14
 Narzissenpfad: enge Straﬂe	q0 -7387,14951 -7523,14969
 (Pankeweg zwischen Pankstr. und Wiesenstr.): einige Fuﬂg‰nger	q1 8140,15859 8129,15701 8156,15614
 (Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7365,3199 7409,3331 7458,3451
-Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
+Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q0 2150,22464 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 (Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad	q3 7306,20635 7316,20623 7321,20588 7415,20617
 (Frithjofstr. - Rotkardinalweg): schmal, selten Fuﬂg‰nger	q2 12652,19460 12543,19760 12552,19765
 (Verl‰ngerung Senheimer Str.): teils enger Weg	q2 2560,26475 2493,26665 2434,26783 2384,26851 2303,26913
@@ -3697,7 +3698,7 @@ Greifswalder Str.: linker Gehweg bis zur Naugarder Str., ggfs. absteigen	q3::ign
 Buschkrugallee, linker Radweg	q1::igndisp; 14111,4181 14119,4153
 Michelangelostr., linker Gehweg	q3::igndisp; 13854,15129 13758,15009 13647,14912
 Adlergestell, linker Gehweg	q2::igndisp; 19348,4080 19472,3922
-Bundesallee/Spichernplatz, linker Gehweg bis Pariser Str.	q2::igndisp; 5435,9859 5423,9932
+Bundesallee/Spichernplatz, linker Gehweg bis Pariser Str.	q0::igndisp; 5435,9859 5423,9932
 Bundesallee/Spichernplatz, Radweg bis Nachodstr.	q0::igndisp; 5491,9935 5487,9864
 Buschkrugallee, linker Gehweg ab Fuﬂg‰ngerampel bis zur B¸rgerstr.	q4::igndisp; 13316,6320 13283,6354
 Otto-Suhr-Allee, linker Gehweg bis zur Fuﬂg‰ngerfurt	q3::igndisp; 4608,11935 4653,11896

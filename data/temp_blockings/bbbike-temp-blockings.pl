@@ -21110,10 +21110,10 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-04 00:00:00"), # 1336255200, # 2012-05-06 00:00
-       until => $isodate2epoch->("2025-06-11 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
+       until => undef, # $isodate2epoch->("2025-06-13 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #      text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
 #      text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
-       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Mitte Juni 2025',
+       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Mitte Juni 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
@@ -21122,12 +21122,13 @@ EOF
 #: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
-#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...)
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
 #: osm_watch: way id="152466403" version="21"
 #: osm_watch: note 4444162 2
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str. und Lianenweg, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle
+#: next_check: 2025-06-13 (VIZ-Verkehrsmeldung)
 	q4::inwork; 20302,1613 20028,1673 19898,1704 19766,1796
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 EOF
@@ -29420,12 +29421,14 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-05-13 vvv
+#: last_checked: 2025-06-02 vvv
 #: check_frequency: 30d vvv
-entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171 15154,9106 15190,9027
-Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
+# REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
+entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
+# REMOVED (hier mittlerweile wieder offen) --- Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
 Bulgarische Str. - Karpfenteich	2::inwork 15439,8839 15297,8921 15245,8916
 Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,9542 14384,9565 14478,9545
+Treptower Park - Am Treptower Park	2::inwork 14316,9542 14242,9448
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -40628,6 +40631,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025)
+#: source_id: adac:1512175170 (bis 31.12.2025)
 #: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
@@ -43598,7 +43602,7 @@ EOF
        text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025)
+#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025) (bis 06.06.2025)
 #: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
@@ -46845,7 +46849,8 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (Gesamtdauer der Arbeiten bis Mitte 2027)
 #: source_id: bvg2024:162#f0f63843-db69-4d37-8f71-963e4e85cebf (kein Endedatum)
 #: source_id: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
-#: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025)
+#: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
+#: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
 #: last_checked: 2025-03-08 vvv
 #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-11-30 (Ausschreibungsunterlagen)
@@ -47255,11 +47260,14 @@ EOF
      },
      { from  => 1743310800, # 2025-03-30 07:00
        until => 1749225600, # 2025-06-06 18:00
-       text  => 'Seelingstr.: an der Schloßstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2025 07:00 bis 06.06.2025 18:00',
+#      text  => 'Seelingstr.: an der Schloßstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2025 07:00 bis 06.06.2025 18:00',
+       text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025)
 	q4::inwork 3088,12094 2920,12070
+#: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025)
+	q4::inwork 2920,12070 2686,12051
 EOF
      },
      { from  => undef, # 
@@ -47471,11 +47479,11 @@ EOF
 EOF
      },
      { from  => 1744610400, # 2025-04-14 08:00
-       until => 1748444400, # 2025-05-28 17:00
-       text  => 'Schönhauser Str.: Richtung Süden zwischen Friedrichsruher Str. und Bergstr. gesperrt, vom 15.04.2025 08:00 bis 28.05.2025 17:00',
+       until => $isodate2epoch->("2025-06-27 17:00:00"), # 1748444400, # 2025-05-28 17:00
+       text  => 'Schönhauser Str.: Richtung Süden zwischen Friedrichsruher Str. und Bergstr. gesperrt, vom 15.04.2025 08:00 bis 27.06.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.33534,52.45856,15.04.2025,08:00 (auch Radverkehr, bis 28.05.2025) (inaktiv)
+#: source_id: viz2021:13.33534,52.45856,15.04.2025,08:00 (auch Radverkehr, bis 28.05.2025) (inaktiv) (bis 27.06.2025)
 #: source_id: viz2021:13.33534,52.45929,15.04.2025,12:57 (bis 28.05.2025) (inaktiv)
 	q4::inwork; 5851,5863 5850,5765
 EOF
@@ -47515,6 +47523,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025)
+#: source_id: viz2021:13.285979,52.505083,02.06.2025,07:00 (bis 13.06.2025)
 #: note: an der Kantstr. steht ein Sackgassenschilder, Fußgänger/Radfahrer frei
 	q4::inwork 2493,10675 2468,10780
 # REMOVED (im nördlichen Abschnitt nicht) ---	q4::inwork 2468,10780 2361,10941 2340,11056
@@ -47768,12 +47777,14 @@ EOF
 	q4::inwork 23679,11372 23654,11285 23648,11265
 EOF
      },
-     { from  => 1746727500, # 2025-05-08 20:05
-       until => 1748642340, # 2025-05-30 23:59
-       text  => 'Rheingaustr.: Sperrung zwischen Schwalbacher Str. und Hertelstraße, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 20:05 bis 30.05.2025 23:59',
+     { from  => $isodate2epoch->("2025-06-02 00:00:00"), # 1746727500, # 2025-05-08 20:05
+       until => $isodate2epoch->("2025-06-13 18:00:00"), # 1748642340, # 2025-05-30 23:59
+#      text  => 'Rheingaustr.: Sperrung zwischen Schwalbacher Str. und Hertelstraße, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 20:05 bis 30.05.2025 23:59',
+       text  => 'Rheingaustr.: Sperrung zwischen Schwalbacher Str. und Hertelstraße, evtl. sind auch Radfahrer betroffen, bis 13.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.32151,52.47021,09.05.2025,20:05 (bis 30.05.2025) (inaktiv)
+#: source_id: viz2021:13.32151,52.47021,02.06.2025,11:52 (bis 13.06.2025)
 	q4::inwork 4885,6908 4883,7061
 EOF
      },
@@ -48032,6 +48043,7 @@ EOF
        data  => <<'EOF',
 #: source_id: viz2021:13.501283,52.560123,21.05.2025,07:00 (hier nur Kfz-Verkehr, bis 23.07.2025 + weitere Bauphasen)
 #: source_id: adac:1670787902
+#: source_id: adac:193058608 (bis 23.07.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpnptl6lls2o
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiebwxdqzzfbx4fuikq5twvb2ibrbfh7mzstw4rj6hwp7ucy4km2zi@jpeg (laut Verkehrszeichenplan keine Ausnahmen für Radfahrer)
 Malchower Weg	q4::inwork; 16887,17349 16905,17281 16915,17231
@@ -48073,6 +48085,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.38869,52.50071,27.05.2025,13:00 (bis 18.07.2025)
+#: source_id: adac:2123001084 (bis 18.07.2025)
 	q4::inwork 9570,10566 9384,10536
 EOF
      },
@@ -48084,6 +48097,48 @@ EOF
 #: source_id: LS/221-E/25/053 (bis 13.06.2025)
 #: note: nicht ganz klar, ob die B166 oder der Lützlower Weg betroffen ist
 	2::inwork 52196,88644 52207,88708
+EOF
+     },
+     { from  => 1748754000, # 2025-06-01 07:00
+       until => 1750431600, # 2025-06-20 17:00
+       text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, vom 02.06.2025 07:00 bis 20.06.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025)
+# REMOVED (Einbahnstraße offen für Radfahrer) --- Bouchéstr.: geplante Sperrung (wegen der Umleitung?)	?; 13489,9456 13602,9581
+#: source_id: bvg2024:194#HIM_FREETEXT_286893
+#: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025)
+Karl-Kunger-Str.: Einfahrt Richtung Westen gesperrt (wenige Meter)	q3::inwork; 13614,9333 13489,9456
+#: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025)
+Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::inwork 13614,9333 13715,9455
+EOF
+     },
+     { from  => 1748754000, # 2025-06-01 07:00
+       until => 1827874740, # 2027-12-03 23:59
+       text  => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 03.12.2027 23:59',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027)
+#: note: die textuelle Beschreibung (zwischen Mecklenburgische Straße und Paretzer Straße) und Kartendarstellung (nur ein paar Meter im Kurvenbereich) passen nicht zusammen
+	q4::inwork 4581,8048 4461,8105 4457,8270
+EOF
+     },
+     { from  => 1748754000, # 2025-06-01 07:00
+       until => 1752875940, # 2025-07-18 23:59
+       text  => 'Homburger Str.: Bauarbeiten zwischen Laubacher Str. und Ahrweilerstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 18.07.2025 23:59',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.317914,52.473875,02.06.2025,07:00 (bis 18.07.2025)
+	q4::inwork 4785,7438 4599,7474
+EOF
+     },
+     { from  => 1748750400, # 2025-06-01 06:00
+       until => 1752962340, # 2025-07-19 23:59
+       text  => 'Lentzeallee: Bauarbeiten zwischen Gregor-Mendel-Str. und Magnolienring, Sperrung Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 19.07.2025 23:59',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.3034,52.46818,02.06.2025,06:00 (bis 19.07.2025)
+	q4::inwork; 3655,6811 3596,6828 3449,6863
 EOF
      },
     );

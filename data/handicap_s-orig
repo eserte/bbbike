@@ -111,7 +111,7 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-05-23
+#: last_checked: 2025-06-02
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -2015,14 +2015,14 @@ Dieffenbachstr.: Bodenschwellen	q0- 11346,9655 11541,9576
 Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schˆnleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 # 
-Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
-# REMOVED --- #: XXX nach den Bauarbeiten wiederherstellen: (s.o.)
-# REMOVED --- #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025) (inaktiv)
-# REMOVED --- #: also_indoor: traffic (none)
-# REMOVED --- #: last_checked: 2025-05-23
-# REMOVED --- #: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-05-30 (VIZ-Verkehrsmeldung)
-# REMOVED --- Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
+#: XXX nach den Bauarbeiten wiederherstellen:
+#: XXX Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
+#: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025) (inaktiv) (bis 12.06.2025)
+#: also_indoor: traffic (none)
+#: last_checked: 2025-06-02
+#: check_frequency: 30d
+#: next_check: 2025-06-12 (VIZ-Verkehrsmeldung)
+Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 
 Lausitzer Platz: Fuﬂg‰ngerzone, einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: Fuﬂg‰ngerzone, Radfahrer frei, Bodenschwelle	q2 12274,10612 12172,10585
@@ -4792,9 +4792,11 @@ Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
 #: note: rechtliche Lage unklar, teilweise werden die Wege auch von Autos befahren; Fuﬂg‰ngerfrequenz meist ¸berschaubar vvv
 Osthafen: einige Fuﬂg‰nger	q1 13326,10765 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
 Osthafen: einige Fuﬂg‰nger	q1 13531,10673 13558,10704
-Osthafen: einige Fuﬂg‰nger	q1 14207,10338 14226,10387
+#: XXX_prog BS: die Schiene kˆnnte man wie einen Bordstein behandeln, ansonsten q1
+Osthafen: einige Fuﬂg‰nger, ‹berquerung einer Schiene notwendig	q3 14207,10338 14226,10387
 Osthafen: einige Fuﬂg‰nger, Engstelle mit Kette	q2 13835,10577 13805,10528
 #: note ^^^
+(ehem. Osthafen - Stralauer Allee/Elsenbr¸cke): schmale Rampe	q4+ 14528,10245 14558,10264
 #: note: rechtliche Lage unklar, asphaltierter Verkehrsbereich, auﬂerhalb des ausgeschilderten Gr¸nanlagen-Bereichs
 Wismarplatz: einige Fuﬂg‰nger	q1 14475,11778 14461,11738
 Bahndamm: einige Fuﬂg‰nger	q1 13966,9340 13934,9365 13476,9720 13282,9828 13207,9868 13146,9903 13141,9911
@@ -7369,7 +7371,8 @@ Narzissenpfad: enge Straﬂe	q0- -7387,14951 -7523,14969
 (Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7365,3199 7409,3331 7458,3451
 # 
 #: by: Sigmount Kˆnigsberg
-Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
+#: corrected_by: srt (q1 -> q0-)
+Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q0- 2150,22464 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 # 
 #: by: Detlef Westphal
 (Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad	q3 7306,20635 7316,20623 7321,20588 7415,20617
