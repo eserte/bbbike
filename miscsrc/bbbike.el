@@ -700,7 +700,7 @@
      ((string-match (concat "\\(" bbbike-viz2021-regexp "\\|" bbbike-adac-regexp "\\)") sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
      ((string-match "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/\\(.*\\)" sel) (setq source-id (concat "bvg2021:" (substring sel (match-beginning 1) (match-end 1)))))
      (t (error "No X selection or X selection does not contain a source-id")))
-    (if (string-match " \\(bis [0-9][0-9]?\\.[0-9][0-9]?\\.[0-9][0-9][0-9][0-9]\\)" sel)
+    (if (string-match " \\(bis \\(voraussichtlich \\)?[0-9][0-9]?\\.[0-9][0-9]?\\.[0-9][0-9][0-9][0-9]\\)" sel)
 	(setq description (concat " (" (substring sel (match-beginning 1) (match-end 1)) ")")))
     (beginning-of-line)
     (insert (concat "#: source_id: " source-id description "\n"))))
