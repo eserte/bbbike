@@ -4445,7 +4445,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18871,9565 18876,9512
 #: osm_watch[closed]: note 3658253 6
-#: osm_watch: way id="192487145" version="33"
+#: osm_watch: way id="192487145" version="34"
 #: osm_watch: note 4481312 6
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
@@ -4510,13 +4510,14 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-06-02 vvv
+#: last_checked: 2025-06-03 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
 # REMOVED (hier mittlerweile wieder offen) --- Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
 Bulgarische Str. - Karpfenteich	2::inwork 15439,8839 15297,8921 15245,8916
 Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,9542 14384,9565 14478,9545
+#: XXX hier wird vermutlich eine wassergebundene Decke entstehen
 Treptower Park - Am Treptower Park	2::inwork 14316,9542 14242,9448
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5694,7 +5695,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-05-23
+#: last_checked: 2025-06-03
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5978,7 +5979,8 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022) (bis 26.1.2023) (bis 3.3.2023) (bis 13.4.2023) (bis 21.4.2023) (inaktiv)
 #: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024) (inaktiv)
 #: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025) (bis 04.06.2025)
+#: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025) (bis 04.06.2025) (inaktiv)
+#: source_id: viz2021:13.269411,52.454149,02.04.2025,07:00 (bis 03.07.2025)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -5991,13 +5993,14 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten hier beendet? Gibt es noch Einschränkungen für Radfahrer? --- #: next_check: 2024-03-08
 #	q4::inwork; 1333,5246 1385,5214 1443,5193 1486,5175 1514,5163 1573,5152
 # REMOVED (hier keine Einschränkung, siehe mapillary) ---	q2::inwork 1573,5152 1964,5070
-	q4::inwork; 1573,5152 1514,5163 1486,5175 1443,5193 1385,5214
+# REMOVED ---	q4::inwork; 1573,5152 1514,5163 1486,5175 1443,5193 1385,5214
+	q4::inwork; 1385,5214 1333,5246 1212,5353
 ',
          'from' => 1736839577,
          'id' => 3605,
-         'text' => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 04.06.2025',
+         'text' => 'Hüttenweg: zwischen Marshallstr. und Am Waldfriedhof Richtung Westen gesperrt, voraussichtlich bis 03.07.2025',
          'type' => 'handicap',
-         'until' => 1749049200
+         'until' => 1751554800
        },
        undef,
        undef,
@@ -6962,7 +6965,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id: viz2021:13.403621,52.525569,22.11.2023,07:00 (bis 09.01.2024) (inaktiv)
 #: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
 #: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025) (inaktiv)
-#: source_id: viz2021:13.403167,52.524701,09.05.2025,07:00 (hier nur Kfz-Verkehr, bis 04.06.2025)
+#: source_id: viz2021:13.403167,52.524701,09.05.2025,07:00 (hier nur Kfz-Verkehr, bis 04.06.2025) (bis 04.06.2026)
 #: source_id: viz2021:13.40319,52.52474,09.05.2025,07:00 (bis 04.06.2025) (inaktiv)
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
@@ -6974,9 +6977,9 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 ',
          'from' => 1746680400,
          'id' => 3898,
-         'text' => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, vom 09.05.2025 07:00 bis 04.06.2025 17:00',
+         'text' => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, voraussichtlich bis Juni 2026',
          'type' => 'handicap',
-         'until' => 1749049200
+         'until' => 1780585200
        },
        undef,
        undef,
@@ -7245,7 +7248,7 @@ Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-03
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
@@ -7488,7 +7491,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025) (bis 06.06.2025)
+         'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025) (bis 06.06.2025) (bis 01.08.2025)
 #: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
@@ -8889,7 +8892,7 @@ Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5
        {
          'data' => '#: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-05-21
+#: last_checked: 2025-06-03
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 ',
@@ -9463,6 +9466,33 @@ Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::
          'text' => 'Lentzeallee: Bauarbeiten zwischen Gregor-Mendel-Str. und Magnolienring, Sperrung Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 19.07.2025 23:59',
          'type' => 'handicap',
          'until' => 1752962340
+       },
+       {
+         'data' => '#: next_check_id: DONAU-2025
+#: next_check_id: ROSEGGER-2024
+#: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Frühjahr 2025 bis Ende 2025)
+#: note: Halteverbotsschilder ohne Enddatum
+#: last_checked: 2025-06-03
+#: check_frequency: 30d
+#: next_check: 2025-12-31
+	q4::inwork 13246,7961 13236,7970 13147,8056
+',
+         'from' => undef,
+         'id' => 4356,
+         'text' => 'Donaustr.: Fahrbahn zwischen Roseggerstr. und Wörnitzweg gesperrt, möglicherweise bis Ende 2025',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025)
+#: note: bei rbb "Einbahnstraßenregelung"
+Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
+',
+         'from' => 1748750400,
+         'id' => 4357,
+         'text' => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Leibnizstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
+         'type' => 'handicap',
+         'until' => 1757800740
        }
      
 );

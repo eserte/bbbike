@@ -350,7 +350,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-06-02 vvv
+#: last_checked: 2025-06-03 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1336,7 +1336,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-06-02 vvv
+#: last_checked: 2025-06-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2963,7 +2963,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-05-24 vvv
+#: last_checked: 2025-06-03 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3134,7 +3134,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-06-02
+#: last_checked: 2025-06-03
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5194,11 +5194,11 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: osm_watch: note 4530704 4
-#: osm_watch: way id="631069428" version="11"
-#: osm_watch: way id="151370228" version="17"
-#: osm_watch: way id="631069429" version="10"
-#: osm_watch: way id="631069427" version="11"
-#: osm_watch: way id="631069430" version="13"
+#: osm_watch: way id="631069428" version="12"
+#: osm_watch: way id="151370228" version="18"
+#: osm_watch: way id="631069429" version="11"
+#: osm_watch: way id="631069427" version="12"
+#: osm_watch: way id="631069430" version="14"
 #: note: Robert-Siewert-Str., Richtung Osten
 # REMOVED --- #: XXX Radweg wird vermutlich saniert --- #: last_checked: 2025-05-20 --- #: check_frequency: 90d
 #: historical_note: früher (bis 2025) Radweg antik und unbenutzbar
@@ -6648,7 +6648,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2025-05-24 vvv
+#: last_checked: 2025-06-03 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
@@ -7677,7 +7677,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2025-04-23 vvv
+#: last_checked: 2025-06-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8059,7 +8059,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-05-10
+#: last_checked: 2025-06-03
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -8222,7 +8222,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2025-05-21
+#: last_checked: 2025-06-03
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -8233,7 +8233,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
-#: last_checked: 2025-05-21 vvv
+#: last_checked: 2025-06-03 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-08-29 (VIZ-Verkehrsmeldung) vvv
 #XXX	RW4; 10975,10334 10871,10322
@@ -8641,7 +8641,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="34"
 #: osm_watch: way id="335487059" version="29"
-#: last_checked: 2025-05-21 vvv
+#: last_checked: 2025-06-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-04-24 (VIZ-Verkehrsmeldung aufgehoben) vvv
 #: next_check: 2025-06-30 (infravelo) vvv
@@ -8741,7 +8741,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/bezirke/radweg-und-brandschutz-in-der-berliner-kantstrasse-zwangsumzuge-doch-noch-nicht-vom-tisch-13294678.html
 #: by: https://entwicklungsstadt.de/radweg-in-der-kantstrasse-bezirk-und-senat-suchen-weiter-nach-einer-loesung/
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
-#: last_checked: 2025-05-25 vvv
+#: last_checked: 2025-06-03 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
