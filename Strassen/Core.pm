@@ -306,6 +306,12 @@ sub read_from_fh {
 
     local $STRICT = exists $self->{Strict} ? $self->{Strict} : $STRICT;
 
+    # create emacs-friendly error messages
+    my $error_locator = sub (;$) {
+	my $line = defined $_[0] ? $_[0] : $.;
+	($self->{File} ? "at " . $self->{File} : "at") . " line $line";
+    };
+
     local $_;
     while (<$fh>) {
 	if (/^\#:\s*([^\s:]+):?\s*(.*)$/) {
@@ -347,10 +353,10 @@ sub read_from_fh {
 				last SEARCH_DIRECTIVE;
 			    }
 			}
-			push @errors, "Unexpected closed directive '$directive' at line $."
-			    . ($self->{File} ? " in file " . $self->{File} : "")
-				. ", but expected one of: "
-				    . join(", ", map { "$block_directives[$_]->[0] (line $block_directives_line[$_])" } (0 .. $#block_directives));
+			push @errors, "Unexpected closed directive '$directive' "
+			    . $error_locator->()
+			    . ", but expected one of: "
+			    . join(", ", map { "$block_directives[$_]->[0] (line $block_directives_line[$_])" } (0 .. $#block_directives));
 		    }
 		} else {
 		    push @{ $line_directive{$directive} }, $value;
@@ -417,7 +423,7 @@ sub read_from_fh {
     if (@block_directives) {
 	my $msg = "The following block directives were not closed:";
 	for my $i (0 .. $#block_directives) {
-	    $msg .= " '@{$block_directives[$i]}' (start at line $block_directives_line[$i]" . ($self->{File} ? " in file " . $self->{File} : "") . ")";
+	    $msg .= " '@{$block_directives[$i]}' (start " . $error_locator->($block_directives_line[$i]) . ")";
 	}
 	die $msg, "\n";
     }

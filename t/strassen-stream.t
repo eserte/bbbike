@@ -27,7 +27,7 @@ BEGIN {
     }
 }
 
-plan tests => 28 * 2 + 3;
+plan tests => 28 * 2 + 9;
 
 my $complex_data = <<'EOF';
 #: title: Testing global directives
@@ -136,6 +136,59 @@ EOF
 				  },
 				 ])
 	or diag explain(\@comment_records);
+}
+
+######################################################################
+# various error conditions
+{
+    my $error_data = <<'EOF';
+#: 
+#: next_check: 1970-01-01 vvv
+Street A	H 1,1 2,2
+EOF
+    my $s_inmem = Strassen->new_data_string_stream($error_data);
+    eval { $s_inmem->read_stream(sub { }); };
+    like $@, qr{\QThe following block directives were not closed: 'next_check 1970-01-01' (start at line 2)}, 'expected error (directive not closed)';
+
+    my $s_file = Strassen->new_stream(makebbd($error_data));
+    eval { $s_file->read_stream(sub { }); };
+    like $@, qr{\QThe following block directives were not closed: 'next_check 1970-01-01' (start at \E.*\Q.bbd line 2)}, 'expected error (directive not closed), with file/line location';
+}
+
+{
+    local $Strassen::STRICT = 1;
+
+    my $error_data = <<'EOF';
+#: 
+Street A	H 1,1 2,2
+#: next_check ^^^
+EOF
+    my $s_inmem = Strassen->new_data_string_stream($error_data);
+    eval { $s_inmem->read_stream(sub { }); };
+    like $@, qr{\QUnexpected closed directive 'next_check' at line 3, but expected one of:}, 'expected error (unexpected closed directive)';
+
+    my $s_file = Strassen->new_stream(makebbd($error_data));
+    eval { $s_file->read_stream(sub { }); };
+    like $@, qr{\QUnexpected closed directive 'next_check' at \E.*\Q.bbd line 3, but expected one of:}, 'expected error (unexpected closed directive), with file/line location';
+}
+
+{
+    local $Strassen::STRICT = 1;
+
+    my $error_data = <<'EOF';
+#: 
+#: last_checked: 1970-01-01 vvv
+Street A	H 1,1 2,2
+#: next_check ^^^
+#: last_checked: ^^^
+EOF
+    my $s_inmem = Strassen->new_data_string_stream($error_data);
+    eval { $s_inmem->read_stream(sub { }); };
+    like $@, qr{\QUnexpected closed directive 'next_check' at line 4, but expected one of: last_checked}, 'expected error (unexpected closed directive)';
+
+    my $s_file = Strassen->new_stream(makebbd($error_data));
+    eval { $s_file->read_stream(sub { }); };
+    like $@, qr{\QUnexpected closed directive 'next_check' at \E.*\Q.bbd line 4, but expected one of: last_checked}, 'expected error (unexpected closed directive), with file/line location';
 }
 
 sub makebbd {
