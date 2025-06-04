@@ -301,7 +301,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-04-26
+#: last_checked: 2025-06-04
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -2415,7 +2415,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: XXX möglicherweise Änderung des Wegbelags
 #: osm_watch: way id="176112031" version="17"
 #: osm_watch: way id="640883366" version="6"
-#: last_checked: 2025-02-07
+#: last_checked: 2025-06-04
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15448,10397 15457,10342 15496,10277 15518,10234 15599,10206 15606,10179 15645,10147 15713,10035 15786,9957 15781,9933 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -4393,7 +4393,7 @@ Finkeldeweg: Asphalt	Q0 22820,3713 22823,3681 22834,3571 22928,3057 22962,2939 2
 Minkwitzweg: Asphalt	Q0 23112,2943 23247,2984 23370,3024
 Landgartenweg: Asphalt	Q0 23247,2984 23275,2881 23280,2829
 Landgartenweg: Beton	Q0 23280,2829 23291,2774
-Zur Nachtheide: Beton	Q0 22982,2418 23436,2525 23550,2528
+Zur Nachtheide: Beton	Q1+ 22982,2418 23091,2444 23436,2525 23550,2528
 Zur Nachtheide: unbefestigte Straße	Q2 23550,2528 23706,2525
 Am Kietzer Feld: Asphalt	Q0 23334,2191 23308,2191 23203,2176 23064,2147
 Am Wiesengraben: Asphalt	Q0 23308,2191 23275,2334
@@ -6559,7 +6559,10 @@ Michiganseestr.: Asphalt	Q0+; 17042,10269 17081,10415
 #: note: der breite Parkstreifen ist noch betoniert
 Michiganseestr.: Asphalt/Beton	Q0; 17081,10415 17042,10269
 Michiganseestr.: Beton	Q0- 17042,10269 17026,10199
-Dolomitenstr.: Beton	Q0- 17026,10199 17156,10164 17330,10117 17457,10083 17567,10055
+Dolomitenstr.: Beton	Q0- 17026,10199 17156,10164 17330,10117
+#: historical_note: der Verbundsteinpflasterabschnitt ist vermutlich im Mai/Juni 2025 entstanden
+Dolomitenstr.: Beton, kurzer Verbundsteinpflasterabschnitt	Q0- 17330,10117 17457,10083
+Dolomitenstr.: Beton	Q0- 17457,10083 17567,10055
 Dolgenseestr.: Beton	Q0- 17026,10199 17018,10122 17035,10079 17078,10038 17288,9952
 Dolgenseestr.: Beton	Q0- 17273,9880 17275,9892 17288,9952
 Dolgenseestr. [Wohngebiet]: Beton	Q1+ 17559,10024 17761,9971 17774,9934
@@ -12311,8 +12314,8 @@ Heckenrosenweg: unbefestigte Straße	Q2 10842,23773 10974,23534
 Feuerdornweg: unbefestigte Straße	Q2 11008,23572 10887,23796
 Kirschlorbeerweg: unbefestigte Straße	Q2 11069,23647 11028,23624 10927,23816
 # REMOVED (Fahrbahn ist OK) --- Gallwitzallee: schadhafter Radweg sowie Asphalt auf Fahrbahn mit Schäden	Q1 6844,1813 6799,1922 6759,2137
-# REMOVED --- (Parkplatz S-Bhf. Buckower Chaussee): Asphalt	Q0 9200,562 9218,458 9249,434 9296,335 9271,323
-# REMOVED --- (Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9271,323 9253,370 9178,556
+# REMOVED --- (Parkplatz S-Bhf. Buckower Chaussee): Asphalt	Q0 9200,562 9218,458 9249,434 9296,335 9310,245
+# REMOVED --- (Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9310,245 9253,370 9178,556
 Zachenberger Str.: Verbundsteinpflaster	Q1+ 19889,9400 19824,9405 19780,9409
 Am S-Bhf. Bellevue: Gehwegplatten	Q1 6689,12632 6516,12650
 Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
@@ -12770,7 +12773,7 @@ Kitzingstr.: Beton	Q1+ 8752,2931 8572,2962 8455,2979
 Kitzingstr.: Asphalt	Q0- 8455,2979 8327,2987
 Greinerstr.: Asphalt	Q0- 8327,2987 8340,3242 8347,3382
 # REMOVED --- (Landfliegerstr. - Am Betriebsbahnhof Schöneweide): Schotter	Q2+ 18228,4796 18254,4817
-(Am Betriebsbahnhof Schöneweide): Asphalt, einige Schäden	Q1 18497,4529 18331,4744 18306,4753
+(Am Betriebsbahnhof Schöneweide): schadhafter Asphalt	Q2+ 18441,4600 18331,4744 18306,4753
 (Am Betriebsbahnhof Schöneweide): Asphalt	Q0 18306,4753 18254,4817 18226,4853
 (Am Betriebsbahnhof Schöneweide): Asphalt, etwas wellig	Q1+ 18226,4853 18160,4940
 (Am Betriebsbahnhof Schöneweide): unbefestigte Straße, teilweise mit Feinschotter	Q2+ 18160,4940 18107,5011 17822,5409 17775,5392
@@ -13520,7 +13523,7 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17639,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 17588,8413
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2025-05-20
+#: last_checked: 2025-06-04
 #: check_frequency: 90d
 An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
@@ -14146,6 +14149,8 @@ Im Jagen (Grunewald): Kopfsteinpflaster	Q2 1746,5922 1697,5938 1577,5982 1375,61
 # 
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.): Verbundsteinpflaster	Q1 1061,21970 1069,21985 1135,22069
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.): gut befahrbarer Waldweg	Q1- 1135,22069 1245,22058 1527,22298 1622,22383
+# 
+(Wendenschloßstr. - Zur Nachtheide): Verbundsteinpflaster	Q0- 23019,2296 23121,2320 23091,2444
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -16268,7 +16273,7 @@ Dörfelweg: Asphalt	Q0 9730,-33 9593,-45 9507,-85
 #: confirmed_by: srt
 Eisnerstr.: Asphalt	Q0- 9507,-85 9653,-483 9698,-556
 #: confirmed_by: srt
-Eisnerstr. - S-Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q1+ 9507,-85 9473,-92 9271,323
+Eisnerstr. - S-Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q1+ 9507,-85 9473,-92 9310,245
 #: confirmed_by: srt
 (unter der S-Bahn): Verbundsteinpflaster	Q1 9699,-600 9562,-619 9520,-641
 #: corrected_by: srt (Verbundsteinpflaster/Beton -> Asphalt)
@@ -17115,7 +17120,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: osm_watch: way id="1009279082" version="6"
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2025-03-10
+#: last_checked: 2025-06-04
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764

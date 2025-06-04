@@ -33,9 +33,10 @@ Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-Dolgenseestr.: kurzer Abschnitt der Fahrbahn gesperrt	q3::inwork 17457,10083 17330,10117
-Rummelsburger Str.: eng, Fußgänger	q2::inwork; 18019,7146 17847,7356
+Rummelsburger Str.: Engstellen, einige Fußgänger	q3::inwork; 18019,7146 17847,7356
 An der Wuhlheide: Engstellen neben dem Radweg	q1::inwork; 18001,7121 18225,7004
+Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18019,7146 18001,7121
+Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 18001,7121 18019,7146
 Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
@@ -3645,7 +3646,6 @@ Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
 Buswendestelle Gensweg: gesperrt, ggfs. schieben	q4::igndisp 12673,1140 12609,1088 12588,1103
-Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt: gesperrt, ggfs. schieben	q3:inwork::igndisp 17794,8429 17813,8508
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003
 Treskowallee, linker Radweg	q0::igndisp; 18715,10003 18748,9922
@@ -3690,7 +3690,6 @@ Lichtenberger Brücke, linker Gehweg	q1::igndisp; 16818,11878 16978,11852
 Alexanderstr., linker Gehweg	q2::igndisp; 11329,12497 11353,12436
 Straße des 17. Juni, linker Geh/Radweg	q3::igndisp; 5813,11886 5758,11895
 Paul-Schneider-Str., linker Gehweg	q4::igndisp; 6613,3320 6653,3297 6712,3237
-Rummelsburger Str., linker Geh/Radweg	q3::igndisp; 17833,7351 17769,7465
 Falkenberger Chaussee, linker Geh/Radweg	q3::igndisp; 18521,18347 18601,18342
 Mollstr., linker Gehweg bis zur Fußgängerampel	q3::igndisp; 11736,13126 11723,13139
 Hindenburgdamm, linker Gehweg	q3::igndisp; 4596,3738 4617,3706

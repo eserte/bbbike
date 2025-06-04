@@ -6320,9 +6320,9 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="8"
-#: last_checked: 2025-02-26
+#: last_checked: 2025-06-04
 #: check_frequency: 90d
-(Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
+(Am Betriebsbahnhof Schöneweide)	N 18441,4600 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
 (am ehemaligen Bahnbetriebswerk Schöneweide)	NN 18601,4732 18487,4638
 # 
@@ -7370,7 +7370,7 @@ Schloßinsel Köpenick	NN 22093,4499 22087,4470 22084,4455 22076,4422
 (Rathaus Köpenick - Luisenhain)	NN 22138,4642 22074,4664
 (Uferweg)	NN 22433,4887 22326,4940 22310,4935 22241,4911 22204,4910 22180,4938 22146,4934 22131,4914 22153,4861 22153,4840
 (Freiheit/Lindenstr. - Uferweg)	NN 22196,4847 22204,4910
-Müggelheimer Str.	H 21789,4520 22071,4501 22093,4499 22132,4498 22269,4494 22341,4483 22383,4470 22419,4457 22451,4441 22556,4386 22674,4309 22713,4286 22812,4227 22888,4184 22907,4169 22949,4136 22965,4124
+Müggelheimer Str.	H 21789,4520 22071,4501 22093,4499 22132,4498 22216,4496 22269,4494 22341,4483 22383,4470 22419,4457 22451,4441 22556,4386 22674,4309 22713,4286 22812,4227 22888,4184 22907,4169 22949,4136 22965,4124
 Suermondtstr.	H 15843,16400 15866,16393 15918,16383 16099,16339 16263,16288 16416,16236 16476,16216 16520,16200 16653,16150 16753,16111 16880,16064 16961,16042
 (Suermondtstr. - Konrad-Wolf-Str.)	N 16753,16111 16719,16005 16799,15974 16842,15932
 Degnerstr.	N 16445,15590 16449,15604 16469,15659 16537,15827 16559,15896 16616,16046 16653,16150 16692,16253 16806,16496 16849,16551 17014,16724
@@ -7455,7 +7455,7 @@ Kinzerallee	N 22092,5673 22154,5659 22236,5633 22383,5611
 #: oldname: -20101101 Waldstr. (Köpenick)
 Zur Güterbahn	N 23346,5723 23328,5737 23327,5817
 Bellevuestr. (Köpenick)	NH 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
-Wendenschloßstr.	H 23451,4877 23388,4864 23059,4635 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22759,4430 22740,4415 22700,4351 22674,4309 22641,4095 22640,4081 22643,4058 22666,3888 22694,3693 22701,3643 22714,3558 22734,3433 22743,3377 22790,3135 22802,3081 22811,3037 22831,2915 22849,2856 22878,2758 22902,2681 22904,2675 22920,2622 22982,2418 22991,2387 23008,2331 23064,2147 23099,2031 23185,1649
+Wendenschloßstr.	H 23451,4877 23388,4864 23059,4635 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22759,4430 22740,4415 22700,4351 22674,4309 22641,4095 22640,4081 22643,4058 22666,3888 22694,3693 22701,3643 22714,3558 22734,3433 22743,3377 22790,3135 22802,3081 22811,3037 22831,2915 22849,2856 22878,2758 22902,2681 22904,2675 22920,2622 22982,2418 22991,2387 23008,2331 23019,2296 23064,2147 23099,2031 23185,1649
 Wendenschloßstr.	N 23185,1649 23214,1522 23243,1398 23295,1145
 #: XXX_osm: bei osm evtl. falsch geschrieben (kein ß)
 Am Schloßberg	N 22791,4457 22801,4443 22866,4352
@@ -7495,7 +7495,10 @@ Fehleweg	N 22962,2939 23025,2957
 Kürißweg	N 22823,3681 22903,3691
 Minkwitzweg	N 23112,2943 23247,2984 23370,3024
 Landgartenweg	N 23247,2984 23275,2881 23280,2829 23291,2774
-Zur Nachtheide	N 22982,2418 23436,2525 23550,2528 23706,2525
+Zur Nachtheide	N 22982,2418 23091,2444 23436,2525 23550,2528 23706,2525
+#: osm.highway: service
+#: note: Privatstraße
+(Wendenschloßstr. - Zur Nachtheide)	N 23019,2296 23121,2320 23091,2444
 Am Kietzer Feld	N 23334,2191 23308,2191 23203,2176 23064,2147
 Am Wiesengraben	N 23308,2191 23275,2334
 Igelsteig	N 23203,2176 23173,2315
@@ -14020,7 +14023,7 @@ An der Apostelkirche	N 7275,10418 7298,10430 7322,10495 7312,10505 7281,10510 72
 Lessingstr. (Lichtenrade)	N 10735,137 10613,108 10512,83 10425,67 10300,42 10169,20 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
 Dörfelweg	N 9730,-33 9593,-45 9507,-85
 Eisnerstr.	N 9507,-85 9653,-483 9698,-556
-# REMOVED (Bauarbeiten, evtl. sieht das danach alles anders aus) --- #: osm.highway: service --- (Parkplatz S-Bhf. Buckower Chaussee)	N 9218,458 9249,434 9296,335 9271,323
+# REMOVED (Bauarbeiten, evtl. sieht das danach alles anders aus) --- #: osm.highway: service --- (Parkplatz S-Bhf. Buckower Chaussee)	N 9218,458 9249,434 9296,335 9310,245
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-EISNER-2020
 #: next_check_id: BUCKOWERCHAUSSEE-2022
@@ -14028,10 +14031,11 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9438 (Antrag, wurde zurückgezogen, siehe nächster Antrag)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9546 (Antrag)
+#: osm_watch: way id="1325894268" version="3"
 #: historical_note: früher als "(Eisnerstr. - S-Bhf Buckower Chaussee)" bezeichnet
-#: last_checked: 2025-01-13 (okas)
+#: last_checked: 2025-06-02 (mapillary)
 #: check_frequency: 180d
-(ehemaliger Weg zum S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9271,323
+(ehemaliger Weg zum S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9310,245
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/GR_dresdner_bahn_wegefuehrung_buckower_chaussee_ab_20231010n.pdf (westl. Bahnsteig gesperrt, keine Änderung zur bisherigen Wegführung zu erkennen)
@@ -14050,7 +14054,7 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: next_check ^^^
 #: XXX ^^^
 # 
-# REMOVED (hier verläuft in Zukunft die Fernbahntrasse) --- #: osm.highway: service --- (Eisnerstr. - S-Bhf Buckower Chaussee)	N 9271,323 9253,370
+# REMOVED (hier verläuft in Zukunft die Fernbahntrasse) --- #: osm.highway: service --- (Eisnerstr. - S-Bhf Buckower Chaussee)	N 9310,245 9253,370
 # REMOVED (hier verläuft in Zukunft die Fernbahntrasse) --- (Eisnerstr. - S-Bhf Buckower Chaussee)" bezeichnet	NN 9253,370 9178,556
 (unter der S-Bahn)	NN 9699,-600 9562,-619 9520,-641
 Miethepfad	N 9520,-641 9561,-748 9598,-846
@@ -15964,7 +15968,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-05-20
+#: last_checked: 2025-06-04
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16354,7 +16358,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2025-05-20
+#: last_checked: 2025-06-04
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens

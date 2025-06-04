@@ -720,12 +720,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Friedrichsfelde ###
 # 
-#: XXX Bis wann dauern die Bauarbeiten?
-#: last_checked: 2025-05-07
-#: next_check: 2025-06-06 (Halteverbotsschilder)
-#: valid: -20250606
-Dolgenseestr.: kurzer Abschnitt der Fahrbahn gesperrt	q3::inwork 17457,10083 17330,10117
-# 
+# REMOVED --- #: XXX Bis wann dauern die Bauarbeiten? --- #: last_checked: 2025-05-07 --- #: next_check: 2025-06-06 (Halteverbotsschilder) --- #: valid: -20250606 --- Dolgenseestr.: kurzer Abschnitt der Fahrbahn gesperrt	q3::inwork 17457,10083 17330,10117
 # REMOVED --- #: note: Halteverbote bis 2024-06-07, Bauarbeiten dauern vermutlich viel länger; mittlerweile Halteverbote bis 2024-07-31; mittlerweile bis 2024-08-19; mittlerweile bis 2024-08-29; mittlerweile bis 2024-09-06 sowie mögliche Verlängerung bis 11.10.2024 (mit Verlagerung der Baustelle?); ja, Baustelle wurde verlagert; nun Halteverbote bis 2024-11-30; nun Halteverbote bis 10.01.2025; nun bis 28.02.2025; nun bis 28.03.2025; nun bis 22.04.2025, allerdings laufen schon Asphaltierungs- und Pflasterarbeiten; nun Halteverbote bis 16.05.2025 --- #: also_indoor: traffic (ex-G,ex-B,ex-T) --- #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv --- #: last_checked: 2025-04-21 (traffic) vvv --- # REMOVED --- #: check_frequency: 30d vvv --- #: next_check: 2025-05-16 (Halteverbotsschilder) vvv --- # REMOVED --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q2::inwork 17838,9956 17774,9934 17738,9922 17633,9898 --- #: osm_watch[closed]: note 4145491 2 --- Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17868,9823 17838,9956 --- # REMOVED --- #: osm_watch[closed]: note 4145495 1 --- Mellenseestr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 17749,9811 17738,9922 --- Mellenseestr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt	q3::inwork 17774,9934 17838,9956 17958,10012 --- #: next_check ^^^ --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # REMOVED (laut mapillary weitgehend beendet) --- #: next_check_id: WALLENSTEIN-2020 --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-11-29 --- #: check_frequency: 10d --- # REMOVED --- #: next_check: 2020-11-16 --- # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
 # REMOVED (beendet, keine Besserung der Qualität) --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: XXX wird sich die Qualität des Asphalts nach den Bauarbeiten verbessern, zumindest in Richtung Nordwesten? --- #: last_checked: 2021-02-18 --- Wallensteinstr.: Bauarbeiten zwischen Sangeallee und Ilsestr., Einbahnstraßenregelung, Ausweichen auf engen Gehweg	q3::inwork; 18134,9080 18092,9141 18037,9195
@@ -740,9 +735,11 @@ Dolgenseestr.: kurzer Abschnitt der Fahrbahn gesperrt	q3::inwork 17457,10083 173
 ### Oberschöneweide ###
 # 
 #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
-#: last_checked: 2025-05-20 vvv
-Rummelsburger Str.: eng, Fußgänger	q2::inwork; 18019,7146 17847,7356
+#: last_checked: 2025-06-04 vvv
+Rummelsburger Str.: Engstellen, einige Fußgänger	q3::inwork; 18019,7146 17847,7356
 An der Wuhlheide: Engstellen neben dem Radweg	q1::inwork; 18001,7121 18225,7004
+Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18019,7146 18001,7121
+Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 18001,7121 18019,7146
 #: last_checked ^^^
 # 
 # REMOVED (beendet) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: also_indoor: traffic (B,W,G,ex-H[ungenau]) vvv --- #: last_checked: 2023-09-12 vvv --- #: check_frequency: 14d vvv --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000 --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
@@ -1063,15 +1060,15 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="40"
 #: osm_watch: way id="1193560283" version="9"
-#: last_checked: 2025-05-07
+#: last_checked: 2025-06-04
 #: check_frequency: 90d
-#: next_check: 2025-06-06 (Halteverbotsschilder)
+#: next_check: 2025-06-30 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-05-17
+#: last_checked: 2025-06-04
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1160,8 +1157,8 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Marzahn ###
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
-#: also_indoor: traffic (B,T,ex-H,G)
-#: last_checked: 2025-05-22 (traffic)
+#: also_indoor: traffic (B,T,ex-H,ex-G)
+#: last_checked: 2025-06-04 (traffic)
 #: check_frequency: 14d (traffic)
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 

@@ -3207,7 +3207,7 @@ Finkeldeweg: Asphalt	Q0 22820,3713 22823,3681 22834,3571 22928,3057 22962,2939 2
 Minkwitzweg: Asphalt	Q0 23112,2943 23247,2984 23370,3024
 Landgartenweg: Asphalt	Q0 23247,2984 23275,2881 23280,2829
 Landgartenweg: Beton	Q0 23280,2829 23291,2774
-Zur Nachtheide: Beton	Q0 22982,2418 23436,2525 23550,2528
+Zur Nachtheide: Beton	Q1 22982,2418 23091,2444 23436,2525 23550,2528
 Zur Nachtheide: unbefestigte Straße	Q2 23550,2528 23706,2525
 Am Kietzer Feld: Asphalt	Q0 23334,2191 23308,2191 23203,2176 23064,2147
 Am Wiesengraben: Asphalt	Q0 23308,2191 23275,2334
@@ -5156,7 +5156,9 @@ Rollbergstr.: glatte Pflasterung	Q0 12147,8117 12226,8137 12295,8154
 Michiganseestr.: Asphalt	Q0; 17042,10269 17081,10415
 Michiganseestr.: Asphalt/Beton	Q0; 17081,10415 17042,10269
 Michiganseestr.: Beton	Q0 17042,10269 17026,10199
-Dolomitenstr.: Beton	Q0 17026,10199 17156,10164 17330,10117 17457,10083 17567,10055
+Dolomitenstr.: Beton	Q0 17026,10199 17156,10164 17330,10117
+Dolomitenstr.: Beton, kurzer Verbundsteinpflasterabschnitt	Q0 17330,10117 17457,10083
+Dolomitenstr.: Beton	Q0 17457,10083 17567,10055
 Dolgenseestr.: Beton	Q0 17026,10199 17018,10122 17035,10079 17078,10038 17288,9952
 Dolgenseestr.: Beton	Q0 17273,9880 17275,9892 17288,9952
 Dolgenseestr. [Wohngebiet]: Beton	Q1 17559,10024 17761,9971 17774,9934
@@ -10743,7 +10745,7 @@ Heesestr.: Asphalt mit Kopfsteinpflasterabschnitten	Q1; 5280,5714 5276,5622 5274
 Kitzingstr.: Beton	Q1 8752,2931 8572,2962 8455,2979
 Kitzingstr.: Asphalt	Q0 8455,2979 8327,2987
 Greinerstr.: Asphalt	Q0 8327,2987 8340,3242 8347,3382
-(Am Betriebsbahnhof Schöneweide): Asphalt, einige Schäden	Q1 18497,4529 18331,4744 18306,4753
+(Am Betriebsbahnhof Schöneweide): schadhafter Asphalt	Q2 18441,4600 18331,4744 18306,4753
 (Am Betriebsbahnhof Schöneweide): Asphalt	Q0 18306,4753 18254,4817 18226,4853
 (Am Betriebsbahnhof Schöneweide): Asphalt, etwas wellig	Q1 18226,4853 18160,4940
 (Am Betriebsbahnhof Schöneweide): unbefestigte Straße, teilweise mit Feinschotter	Q2 18160,4940 18107,5011 17822,5409 17775,5392
@@ -11801,6 +11803,7 @@ Friedrich-Karl-Str. (Tempelhof): Kopfsteinpflaster	Q2 8601,5595 8691,5587
 Im Jagen (Grunewald): Kopfsteinpflaster	Q2 1746,5922 1697,5938 1577,5982 1375,6138
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.): Verbundsteinpflaster	Q1 1061,21970 1069,21985 1135,22069
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.): gut befahrbarer Waldweg	Q1 1135,22069 1245,22058 1527,22298 1622,22383
+(Wendenschloßstr. - Zur Nachtheide): Verbundsteinpflaster	Q0 23019,2296 23121,2320 23091,2444
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12742,7 +12745,7 @@ Bornemannstr.: Kopfsteinpflaster	Q2 8187,15965 8014,16089
 Holsteinische Str.: Asphalt	Q0 5052,9723 5067,9679 5065,9418 5053,8979
 Dörfelweg: Asphalt	Q0 9730,-33 9593,-45 9507,-85
 Eisnerstr.: Asphalt	Q0 9507,-85 9653,-483 9698,-556
-Eisnerstr. - S-Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q1 9507,-85 9473,-92 9271,323
+Eisnerstr. - S-Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q1 9507,-85 9473,-92 9310,245
 (unter der S-Bahn): Verbundsteinpflaster	Q1 9699,-600 9562,-619 9520,-641
 Miethepfad: Asphalt	Q0 9520,-641 9561,-748 9598,-846
 Schulzendorfer Str.: Asphalt	Q0 -656,23011 -700,22998 -728,22990 -774,22977 -919,22943 -1104,22898 -1246,22864 -1309,22848 -1538,22800

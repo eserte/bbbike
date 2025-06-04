@@ -2006,9 +2006,9 @@ brüchiger Asphalt auf Fahrbahn	RW3; 17997,9929 18045,9917
 der alte Verbundsteinpflasterradweg existiert weiterhin und ist auch benutzbar	RW4; 18552,10135 18631,10167
 	RW1; 18631,10167 18552,10135
 	RW2; 22674,4309 22556,4386 22451,4441 22419,4457
-	RW1; 22419,4457 22383,4470 22341,4483 22269,4494 22132,4498
+	RW1; 22419,4457 22383,4470 22341,4483 22269,4494 22216,4496 22132,4498
 	RW2; 22093,4499 22071,4501 21789,4520
-	RW2; 21789,4520 22071,4501 22093,4499 22132,4498 22269,4494 22341,4483 22383,4470 22419,4457 22451,4441 22556,4386 22674,4309
+	RW2; 21789,4520 22071,4501 22093,4499 22132,4498 22216,4496 22269,4494 22341,4483 22383,4470 22419,4457 22451,4441 22556,4386 22674,4309
 #: note: Bushaltestelle auf den ersten Metern, aber trotzdem schon als Radspur ausgeschildert
 	RW4; 22674,4309 22713,4286 22812,4227
 	RW4; 22812,4227 22888,4184 22907,4169
@@ -2331,7 +2331,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-05-20 vvv
+#: last_checked: 2025-06-04 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17611,7690 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -4174,9 +4174,9 @@ Schild "Schritt fahren"	RW6; 9901,18522 10006,18502 10013,18545 9994,18595 9916,
 #: by: René (refan):
 #: confirmed_by: srt
 	RW2; 17886,5587 17808,5669 17782,5698 17728,5756
-Bushaltestelle mit Radspur, Grünbeschichtung	RW3; 17728,5756 17782,5698 17808,5669
+Busspur ist immer gültig	RW5; 17728,5756 17782,5698 17808,5669
 #: historical_note: früher auch mit Leitboys, wurden im September 2023 wieder abgebaut
-Grünbeschichtung	RW3; 17808,5669 17886,5587
+Grünbeschichtung	RW4; 17808,5669 17886,5587
 #: by: Matthias Dorschner:
 #: confirmed_by: srt
 	RW6;RW6 20458,18424 20448,18454 20512,18626 20533,18682 20553,18734 20586,18822
@@ -4511,7 +4511,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2025-01-29 vvv
+#: last_checked: 2025-06-04 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -4519,7 +4519,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 	RW3; 22743,3377 22790,3135
 	RW3; 22802,3081 22811,3037 22831,2915 22849,2856 22878,2758
 	RW3; 22920,2622 22982,2418 22991,2387
-	RW3; 23008,2331 23064,2147 23099,2031
+	RW3; 23008,2331 23019,2296 23064,2147 23099,2031
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4534,7 +4534,7 @@ asphaltiertes Straßenbahnkap	RW1; 22904,2675 22920,2622
 asphaltiertes Straßenbahnkap	RW1; 22991,2387 23008,2331
 #: note: in den Haltestellenbereichen teilweise mit Verbundsteinpflaster/Asphalt vvv
 Gehwegplatten	RW1; 23099,2031 23064,2147
-Gehwegplatten	RW2; 23064,2147 23008,2331 22991,2387 22982,2418
+Gehwegplatten	RW2; 23064,2147 23019,2296 23008,2331 22991,2387 22982,2418
 Gehwegplatten	RW1; 22982,2418 22920,2622 22904,2675 22902,2681 22878,2758 22849,2856 22831,2915 22811,3037 22802,3081 22790,3135 22743,3377 22734,3433 22714,3558 22701,3643 22694,3693 22666,3888
 #: note ^^^
 Gehweg für Radfahrer frei	RW1; 23099,2031 23185,1649 23214,1522
@@ -6568,7 +6568,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: by[nocache]: https://www.facebook.com/larsduesterhoeft1981/posts/pfbid0jyCzp1ULBQ8ZkAaVbTgcaNAcQpqMpfY61ePJ3Bzuyvt3Dg3ctbA8Rjej8xo7C7p9l (Freigabe für Kfz-Verkehr bis Ende 2024?)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (Einbahnstraße für MIV bis voraussichtlich März 2025) (mittlerweile bis Ende Mai 2025)
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-sterndamm-bleibt-auf-unbestimmte-zeit-gesperrt-li.2293446 (könnte bis 2026 dauern)
-#: last_checked: 2025-04-03 (krickstadt)
+#: last_checked: 2025-06-04
 #: check_frequency: 120d
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung, bvg)
 provisorische Radspur	RW4; 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
@@ -8395,10 +8395,11 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17963,6313
 #: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (bis 28.08.2023) (inaktiv)
 #: source_id: viz2021:13.513289,52.46651,31.08.2023,09:31 (bis 11.04.2024) (inaktiv)
 #: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023) (inaktiv)
-#: XXX Bleiben die Radwege so, oder wird es (teilweise?) eine Grünbeschichtung geben? vvv
+# REMOVED (vermutlich ja) --- #: XXX Bleiben die Radwege so, oder
+#: XXX wird es (teilweise?) eine Grünbeschichtung geben? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="38"
-#: last_checked: 2025-04-18 (youtube) vvv
+#: last_checked: 2025-06-04 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
 #: historical_note: früher (bis 2024/2025): provisorische Radspur
@@ -8740,6 +8741,10 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/platz-fuer-alle-auf-der-kantstrasse_a432687
 #: by: https://www.tagesspiegel.de/berlin/bezirke/radweg-und-brandschutz-in-der-berliner-kantstrasse-zwangsumzuge-doch-noch-nicht-vom-tisch-13294678.html
 #: by: https://entwicklungsstadt.de/radweg-in-der-kantstrasse-bezirk-und-senat-suchen-weiter-nach-einer-loesung/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1566659.php (Busspur in Mittellage und keine Radspur mehr?)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1566602.php
+#: by: https://entwicklungsstadt.de/neues-verkehrskonzept-fuer-kantstrasse-stoesst-auf-widerstand-im-bezirk/
+#: by: https://www.tagesspiegel.de/berlin/senat-ordnet-ruckbau-an-pop-up-radweg-in-der-berliner-kantstrasse-muss-weg-13800580.html
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: last_checked: 2025-06-03 vvv
 #: check_frequency: 45d vvv

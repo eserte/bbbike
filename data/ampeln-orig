@@ -6,6 +6,12 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: ALTSTADTKOEPENICK-2024
+#: last_checked: 2025-06-04
+#: check_frequency: 180d
+#: next_check_id: 2027-05-09 (Ausschreibungsunterlagen)
+Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
+# 
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025)
 #: next_check: 2025-06-19
 #: valid: -20250619
@@ -281,14 +287,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-05-20
+#: last_checked: 2025-06-04
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-04
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -3626,8 +3632,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 6960,13366
 # 
 #: by: mapillary
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/endlich-eine-neue-ampel-dieser-provisorische-zebrastreifen-im-berliner-westen-soll-im-sommer-verschwinden-13794124.html (zurzeit nur Zebrastreifen, neue Ampel wird im Sommer 2025 errichtet werden, leicht versetzt)
 #: note: Anforderungsampel
-	F -3693,13012
+#: next_check: 2025-09-01 (Tsp)
+	F0 -3693,13012
 	X 9934,2307
 	F 16487,17785
 #: off: Sunday (seen 2019-11-03 15:00)
@@ -4041,6 +4049,8 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: note: Anforderungsampel im Zuge der August-Froehlich-Str. und An der Werderlake
 	X 18199,1811
 # 
+#: note: Anforderungsampel
+#: XXX_prog gilt nicht für Radfahrer Richtung Norden
 	F 22902,2681
 # 
 #: section ^^^
