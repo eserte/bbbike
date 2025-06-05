@@ -2335,7 +2335,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17611,7690 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
-recht welliger Asphalt	RW1; 18019,7146 17847,7356 17769,7465
+recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2343,17 +2343,17 @@ recht welliger Asphalt	RW1; 18019,7146 17847,7356 17769,7465
 # REMOVED --- #: XXX danach den schon existierenden Eintrag wieder aktivieren ---	RW8; 17769,7465 17681,7589
 neu asphaltiert	RW1; 17769,7465 17681,7589
 # 
-Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18001,7121
+Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18010,7137
 # REMOVED (bestätigt) --- #: XXX Benutzungspflicht wird aufgehoben --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4770 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036541309630/541309630/00099460/60-Anlagen/04/B0670SB.pdf
 	RW1;RW1 18001,7121 17934,7029
-alter Asphalt, kein Unterstreifen gegen parkende Autos	RW1; 18001,7121 18225,7004 18404,6946 18492,6893 18771,6699 18948,6578 19245,6379 19276,6359 19405,6276 19578,6165 19594,6155 19759,6049 19957,5941
+alter Asphalt, kein Unterstreifen gegen parkende Autos	RW1; 18010,7137 18225,7004 18404,6946 18492,6893 18771,6699 18948,6578 19245,6379 19276,6359 19405,6276 19578,6165 19594,6155 19759,6049 19957,5941
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
 #: by: osm ("lane" Richtung Westen)
 #: confirmed_by: srt
 	RW3; 19957,5941 19759,6049 19594,6155 19578,6165 19405,6276 19276,6359 19245,6379 18948,6578 18771,6699 18492,6893 18404,6946 18225,7004
 #: note: Radspur wird auf der Nebenfahrbahn geführt
-die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18019,7146
+die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,7137
 Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 	RW3;RW3 13821,9340 13849,9310
 	RW4;RW4 13849,9310 14018,9118 14137,8983 14151,8967
@@ -2455,10 +2455,10 @@ neu asphaltiert	RW2; -6492,12574 -6275,12498 -6025,12419 -5518,12259
 	RW2; -7294,12833 -6675,12632
 	RW2;RW2 -7294,12833 -7344,12854 -7600,12934 -7716,12970
 #: by: Stefan Klinkusch (Benutzungspflicht) vvv
-	RW2;RW2 -7716,12970 -8040,13077 -8050,13080 -8313,13167 -8371,13186 -8784,13321
-	RW2; -8784,13321 -8892,13351 -9005,13354
-#: by: http://farm2.static.flickr.com/1088/815107029_6d7bfb8a42.jpg
-	RW2; -9005,13354 -8892,13351 -8784,13321
+	RW2; -7716,12970 -8040,13077 -8050,13080 -8313,13167
+neu asphaltiert, relativ breit	RW2; -8313,13167 -8371,13186 -8437,13208
+	RW2; -8437,13208 -8784,13321 -8892,13351 -9005,13354
+	RW2; -9005,13354 -8892,13351 -8784,13321 -8437,13208 -8371,13186 -8313,13167 -8050,13080 -8040,13077 -7716,12970
 #: by ^^^
 	RW1;RW1 3380,10373 3389,10567 3395,10704
 # 
@@ -3201,9 +3201,10 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 15950,12886 15912,13153
 Kleinkopfsteinpflaster	RW1;RW2 15563,12870 15516,12838
 	RW4; 14208,12235 14229,12311 14266,12446 14297,12553 14319,12629 14325,12648 14355,12752
 Grünbeschichtung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,12446 14229,12311 14208,12235
-#: historical_note: Verbundsteinpflaster, einige Wurzelhebungen; vemutlich 2022 oder 2023 ausgebessert
+#: historical_note: Verbundsteinpflaster, einige Wurzelhebungen; vermutlich 2022 oder 2023 ausgebessert
 asphaltiert, leicht uneben	RW1; 14836,12826 14830,12932 14795,13022
-Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
+#: historical_note: früher "einige Wurzelhebungen", aber mittlerweile (2025) scheint es nicht mehr schlimm zu sein
+Verbundsteinpflaster	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 # REMOVED (keine Verbesserung) --- #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen; mittlerweile keine Einbahnstraße mehr, Radweg wird wiederhergestellt --- #: last_checked: 2023-10-08 --- #: check_frequency: 7d
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
 # REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021) --- #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen --- #: XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt --- #: last_checked: 2023-04-18 --- #: check_frequency: 14d --- #: next_check: 2021-12-31
@@ -5313,12 +5314,12 @@ asphaltiert	RW1;RW1 -1102,3345 -1054,3328 -1026,3321
 etwa zur Hälfte neu asphaltiert, danach Verbundsteinpflaster	RW1; 17211,7280 17286,7173
 Verbundsteinpflaster	RW1; 17286,7173 17352,7051 17459,6854 17510,6751
 neu asphaltiert	RW1; 17286,7173 17211,7280
-	RW3;RW3 18001,7121 18019,7146
-asphaltiert, uneben	RW1; 18019,7146 18086,7243 18165,7371 18198,7425 18256,7520
+	RW3;RW1 18001,7121 18010,7137
+asphaltiert, uneben	RW1; 18010,7137 18086,7243 18165,7371 18198,7425 18256,7520
 Verbundsteinpflaster	RW1; 18256,7520 18267,7537 18382,7724 18406,7760 18471,7862 18577,8033
 neu asphaltiert	RW1; 18577,8033 18626,8114 18657,8163
 neu asphaltiert	RW2; 18657,8163 18672,8238
-	RW1; 18577,8033 18471,7862 18406,7760 18382,7724 18267,7537 18256,7520 18198,7425 18165,7371 18086,7243 18019,7146
+	RW1; 18577,8033 18471,7862 18406,7760 18382,7724 18267,7537 18256,7520 18198,7425 18165,7371 18086,7243 18010,7137
 	RW2; 18672,8238 18657,8163 18626,8114 18577,8033
 	RW2;RW1 18672,8238 18704,8427
 	RW1; 13265,5519 13305,5316

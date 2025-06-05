@@ -378,6 +378,9 @@ Ellwanger Str. -> Attilastr.: Mittelstreifen, zunächst den linken Gehweg benutze
 #Attilastr. -> Ellwanger Str.: Mittelstreifen, den linken Gehweg benutzen	DH:h=q3,100 7366,4345 7410,4373 7450,4397 7382,4503
 Attilastr. -> Ellwanger Str.: Mittelstreifen, Umweg bis zur Neckarsulmer Str.	DH:len=70 7366,4345 7410,4373 7450,4397 7382,4503
 # 
+#: note: siehe auch ampeln-Eintrag
+Zechliner Str. -> Landsberger Allee: sehr ungünstige Ampelschaltung	DH:t=120 16304,14434 16314,14361 16590,14386
+# 
 ######################################################################
 # Vorübergehende Einschränkungen
 #
@@ -498,7 +501,7 @@ Seidelstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 362
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-05-20 (mapillary) vvv
+#: last_checked: 2025-06-03 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 16747,6813 16720,6845

@@ -1619,7 +1619,9 @@ Am Nordgraben -> Elsenpfuhlstr.: Mittelstreifen	3::igndisp 5517,20120 5399,20106
 Mittelstreifen	3nocross::ignrte 7263,4281 7310,4308 7366,4345
 Attilastr. -> Ludwigsburger Weg: Mittelstreifen	3::igndisp 7263,4281 7310,4308 7250,4401
 Ludwigsburger Weg -> Attilastr.: Mittelstreifen	3::igndisp 7250,4401 7310,4308 7366,4345
-Straßenbahn	3nocross::ignrte 18001,7121 17934,7029 17919,6978
+Straßenbahn	3nocross::ignrte 18010,7137 18001,7121 17934,7029 17919,6978
+Treskowallee -> Roedernstr.: Straßenbahn	3::igndisp 18010,7137 18001,7121 18019,7071
+Roedernstr. -> Edisonstr.: Straßenbahn	3::igndisp 18019,7071 18001,7121 17934,7029
 Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18001,7121
 Edisonstr. -> Fuststr.: Straßenbahn	3::igndisp 17919,6978 17934,7029 17823,7203
 Straßenbahn	3nocross::ignrte 17919,6968 17945,6788 17962,6674
@@ -1917,9 +1919,9 @@ Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	1::igndisp 3852,10236 3880,1
 Straßenbahntrasse	3nocross::ignrte 18809,9133 18790,9018 18770,8898
 Treskowallee -> Bopparder Str.: Straßenbahntrasse	3::igndisp 18809,9133 18790,9018 18881,9002
 Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,9018 18770,8898
-Straßenbahntrasse	3nocross::ignrte 18019,7146 18086,7243 18165,7371
+Straßenbahntrasse	3nocross::ignrte 18010,7137 18086,7243 18165,7371
 Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18165,7371 18086,7243 18186,7200
-Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18019,7146
+Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18010,7137
 Straßenbahntrasse	3nocross::ignrte 18876,9512 18867,9464 18834,9256 18809,9133
 Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18876,9512 18867,9464 18916,9468
 Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
@@ -2658,10 +2660,6 @@ Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,40
 Michelangelostr.: links abbiegen nicht möglich	3 13854,15129 13816,15137 13823,15111
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2326,25625 -2130,26026 -2146,26048
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2109,26055 -2130,26026 -2146,26048
-An der Wuhlheide: Richtungsfahrbahn	1 18225,7004 18001,7121
-An der Wuhlheide: Richtungsfahrbahn	1 18019,7146 18225,7004
-Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1 18001,7121 17847,7356
-Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1 17847,7356 18019,7146
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -3538,7 +3536,6 @@ Drängelgitter	BNP:3:-131:trailer=10 14881,13144
 Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwork 11543,20272 11553,20253
 Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13639,14133 13715,14018
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
-Gounodstr.: Durchfahrt vor der Picasso-Grundschule wegen Bauarbeiten gesperrt	2::inwork 14251,15828 14366,15877
 An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
 Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12704,1102 12716,1088 12727,1074 12772,1019 12809,969
 Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12854,1121 12860,1082 12879,1000

@@ -1588,7 +1588,7 @@ Eichgestell: Asphalt, etwas rau	Q0- 19587,6584 19407,6660
 Eichgestell: Asphalt	Q0 19407,6660 19052,6823
 Eichgestell: Parkweg, etwas Schotter	Q2+ 19052,6823 18944,6870 18186,7200
 Eichgestell: Parkweg, OK	Q1- 18186,7200 18086,7243
-Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1- 18186,7200 18134,7173 18079,7144 18019,7146
+Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1- 18186,7200 18134,7173 18079,7144 18010,7137
 Sobernheimer Str.: Kopfsteinpflaster, teilweise mit Sandbanketten	Q2 27600,292 27667,368 27700,402 27734,437 27752,458 27783,493 27831,548 27932,665 27940,675 27961,699 28003,747 28051,803 28065,819 28188,962
 Zur Revierförsterei: Waldweg, neuer Schotter	Q1- 28523,258 28521,300
 Zur Revierförsterei: Beton	Q0- 28521,300 28519,337 28516,415 28538,452
@@ -9174,6 +9174,7 @@ Böcklerpark: Verbundsteinpflaster	Q1- 10917,10068 10863,10082 10802,10111 10794,
 (Bethanienpark): Verbundsteinpflaster	Q1 11668,10916 11589,10947
 (Straße der Pariser Kommune - Spreeufer): Kopfsteinpflaster	Q2 12497,11459 12441,11373
 Naumannstr.: Kopfsteinpflaster	Q1 7716,8370 7716,8356 7715,8308
+Rüdigerstr.: Beton mit Schäden	Q1 16397,12397 16259,12419
 #: note: Richtung Osten teilweise mit unebenem Asphaltstreifen 
 Rüdigerstr.: schlechtes Kopfsteinpflaster	Q3+ 16259,12419 16147,12434
 Rüdigerstr.: mäßiges Kopfsteinpflaster	Q2- 16147,12434 16080,12441
@@ -11040,7 +11041,10 @@ Lauinger Str.: Asphalt	Q0 21221,11398 21171,11336 21137,11294
 Am Römersgrün: Verbundsteinpflaster	Q1+ 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706
 Am Römersgrün: Verbundsteinpflaster	Q1+ 11725,3835 11742,3770 11703,3730
 #: note: es gibt noch eine Diagonalverbindung von der der Siegfriedstraße, welches aber nur ein enger, bewachsener Pfad ist
-(Siegfriedstr. - Landsberger Allee): Asphalt	Q0 16873,14236 16762,14237 16641,14329 16596,14367 16590,14386
+(Siegfriedstr. - Landsberger Allee): Asphalt	Q0 16873,14236 16762,14237
+#: historical_note: früher Asphalt Q0, musste 2025 degradiert werden
+(Siegfriedstr. - Landsberger Allee): Asphalt mit Wurzelhebungen	Q1+ 16762,14237 16641,14329
+(Siegfriedstr. - Landsberger Allee): Asphalt	Q0 16641,14329 16596,14367 16590,14386
 Kleistpark: Asphalt	Q0 7209,9507 7275,9506 7307,9528
 Kleistpark: Asphalt	Q0 7216,9657 7277,9652 7310,9622
 Kleistpark: Asphalt	Q0 7310,9622 7307,9528
@@ -11570,7 +11574,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2025-05-24 vvv
+#: last_checked: 2025-06-05 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -13191,7 +13195,7 @@ Münstersche Str.: Kopfsteinpflaster	Q2 3840,9683 3869,9699
 Münstersche Str.: Asphalt	Q0 3869,9699 3980,9761
 #: next_check_id: HEER-2020
 #: XXX nach der geplanten Sanierung hoffentlich asphaltiert
-#: last_checked: 2025-04-16
+#: last_checked: 2025-04-26 (mapilio)
 #: check_frequency: 360d
 Heerstr.: holprige, enge Radwege	Q1- -2317,11254 -2413,11283 -2476,11301 -2871,11423 -3069,11487
 (Parkweg im Zuge der Furkastr.): wassergebundene Decke	Q1- 10322,2815 10318,2839 10329,2882
@@ -13591,6 +13595,7 @@ In den Alboingärten: Betonpflaster	Q0- 7971,6087 7936,6089 7739,6099 7646,6031
 #: historical_note: früher: teilweise Betonpflaster, teilweise unbefestigte Baustraße, Q2
 In den Alboingärten: Betonpflaster	Q0- 7646,6031 7638,5967
 (Pieskower Weg - Hanns-Eisler-Str.): Verbundsteinpflaster, einige Aufpflasterungen	Q1 13224,15049 13249,15037 13270,15046 13295,15107 13313,15113 13324,15109
+(Pieskower Weg - Hanns-Eisler-Str.): Verbundsteinpflaster	Q1 13224,15049 13246,15065 13264,15094 13289,15149
 (Falkenberger Chaussee - Wartenberger Str.): Beton	Q0- 17577,17910 17521,17894 17568,17945
 (Falkenberger Chaussee - Wartenberger Str.): Asphalt	Q0 17568,17945 17585,17963
 Max-und Herta-Naujocks-Weg: wassergebundene Decke	Q1 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
@@ -15501,7 +15506,7 @@ Würmseestr.: guter Asphalt	Q0 22095,1572 22178,1589 22300,1627
 # 
 #: by: steffen (stache-bln): vvv
 #: corrected_by: srt (asphaltiert, Q0 -> ...)
-(Hanns-Eisler-Str. - Thomas-Mann-Str.): Asphalt mit Unebenheiten	Q1 13548,14980 13369,15083 13324,15109 13328,15127 13123,15244
+(Hanns-Eisler-Str. - Thomas-Mann-Str.): Asphalt mit Unebenheiten	Q1 13548,14980 13369,15083 13324,15109 13328,15127 13289,15149 13123,15244
 #: note: wahrscheinlich wie die anderen Straßen im Viertel vvv
 Aurikelweg: Asphalt	Q0 21878,11112 21956,11146
 Alpenveilchenweg: Asphalt	Q0 21953,10936 22035,10971
@@ -17206,7 +17211,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
 #: osm_watch: way id="1033468087" version="2"
-#: last_checked: 2025-03-18
+#: last_checked: 2025-06-05
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14906,15859 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt

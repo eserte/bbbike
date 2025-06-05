@@ -19,6 +19,8 @@ push @temp_blocking,
 #: source_id: viz2021:13.389478,52.495996,05.06.2025,10:00 (bis 10.06.2025)
 #: source_id: viz2021:13.391442,52.497337,05.06.2025,10:00 (bis 10.06.2025)
 #: source_id: viz2021:13.3951,52.496194,05.06.2025,10:00 (bis 10.06.2025)
+#: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025)
+#: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -8088,16 +8090,16 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
 #: source_id: viz2021:13.39343,52.564563,03.03.2025,06:00 (bis 28.03.2025) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,31.03.2025,11:00 (Baustellenampel Wollankstraße, bis 31.12.2025)
 #: source_id: viz2021:13.39427,52.56503,01.04.2025,08:23 (Baustellenampel Wollankstraße, bis 31.12.2025) (inaktiv)
+#: source_id: viz2021:13.39343,52.564563,06.06.2025,09:00 (bis 01.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="35"
 #: osm_watch[closed]: note 4536637 10
-#: last_checked: 2025-04-25
-#: next_check: 2025-06-06
+# REMOVED --- #: last_checked: 2025-04-25 --- #: next_check: 2025-06-06
 	2::inwork 9544,17629 9586,17665
 ',
          'from' => 1749074400,
          'id' => 4171,
-         'text' => 'Wollankstr.: Neubau der Bahnbrücke, voraussichtlich Vollsperrung vom 06.06.2025 bis 01.12.2025',
+         'text' => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 06.06.2025 bis 01.12.2025',
          'type' => 'gesperrt',
          'until' => 1764608400
        },
@@ -8452,21 +8454,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1803657600
        },
        undef,
-       {
-         'data' => '#: also_indoor: traffic (re-G,ex-W)
-#: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-05-24 (traffic)
-# REMOVED --- #: check_frequency: 30d (outdoor checks)
-#: check_frequency: 14d (traffic)
-	q4::inwork 15769,14355 15841,14351
-',
-         'from' => undef,
-         'id' => 4243,
-         'text' => 'Altenhofer Str. - Landsberger Allee [Nebenfahrbahn]: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-in-der-smetanastrasse_a434819
@@ -8960,9 +8948,11 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'data' => '#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
+#: source_id: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
+#: source_id: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
-#: note: nächste Sperrung: "Termin folgt"
+#: note: nächste Sperrung: "Termin folgt"; möglicherweise Änderungen in der Radickestr. (Bauarbeiten westlich der Nipkowstr.?) ab 10.6.2025?
 #: next_check: 2025-06-07 (gibt es eine nächste Sperrung?)
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
@@ -9509,6 +9499,16 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
          'text' => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, vom 04.06.2025 07:00 bis 21.08.2025 17:00',
          'type' => 'handicap',
          'until' => 1755788400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.485654,52.517757,02.06.2025,07:00 (hier nur Kfz-Verkehr, bis 04.07.2025)
+	q4::inwork; 15928,12483 15947,12626
+',
+         'from' => 1748754000,
+         'id' => 4359,
+         'text' => 'Ruschestr.: Bauarbeiten, Fahrbahn und Bürgersteig Richtung Vulkanstr. zwischen Kunzeweg und Gotlindstraße gesperrt, vom 02.06.2025 07:00 bis 04.07.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1751641200
        }
      
 );

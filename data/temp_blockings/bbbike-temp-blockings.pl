@@ -85,6 +85,8 @@ my $next_interval = sub {
 #: source_id: viz2021:13.389478,52.495996,05.06.2025,10:00 (bis 10.06.2025)
 #: source_id: viz2021:13.391442,52.497337,05.06.2025,10:00 (bis 10.06.2025)
 #: source_id: viz2021:13.3951,52.496194,05.06.2025,10:00 (bis 10.06.2025)
+#: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025)
+#: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -45650,7 +45652,7 @@ EOF
        until => $isodate2epoch->("2025-12-01 18:00:00"), # $isodate2epoch->("2025-03-28 23:59:59"), # $isodate2epoch->("2024-12-20 11:00:00"), # 1735232400, # 2024-12-26 18:00
 #      text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 26.11.2024 bis 20.12.2024',
 #      text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 03.03.2025 bis 28.03.2025',
-       text  => 'Wollankstr.: Neubau der Bahnbrücke, voraussichtlich Vollsperrung vom 06.06.2025 bis 01.12.2025',
+       text  => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 06.06.2025 bis 01.12.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLLANK-2024
@@ -45680,11 +45682,11 @@ EOF
 #: source_id: viz2021:13.39343,52.564563,03.03.2025,06:00 (bis 28.03.2025) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,31.03.2025,11:00 (Baustellenampel Wollankstraße, bis 31.12.2025)
 #: source_id: viz2021:13.39427,52.56503,01.04.2025,08:23 (Baustellenampel Wollankstraße, bis 31.12.2025) (inaktiv)
+#: source_id: viz2021:13.39343,52.564563,06.06.2025,09:00 (bis 01.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: osm_watch: way id="23984383" version="35"
 #: osm_watch[closed]: note 4536637 10
-#: last_checked: 2025-04-25
-#: next_check: 2025-06-06
+# REMOVED --- #: last_checked: 2025-04-25 --- #: next_check: 2025-06-06
 	2::inwork 9544,17629 9586,17665
 EOF
      },
@@ -46636,16 +46638,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1749143786, # undef, # XXX
        text  => 'Altenhofer Str. - Landsberger Allee [Nebenfahrbahn]: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (re-G,ex-W)
-#: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun.
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-05-24 (traffic)
-# REMOVED --- #: check_frequency: 30d (outdoor checks)
-#: check_frequency: 14d (traffic)
+# REMOVED --- #: XXX Möglicherweise haben diese Bauarbeiten auch was mit den Bauarbeiten der Wasserbetriebe in der Landsberger Allee zu tun. --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2025-05-24 (traffic) --- # REMOVED --- #: check_frequency: 30d (outdoor checks) --- #: check_frequency: 14d (traffic)
 	q4::inwork 15769,14355 15841,14351
 EOF
      },
@@ -47448,9 +47446,11 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
+#: source_id: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
+#: source_id: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
-#: note: nächste Sperrung: "Termin folgt"
+#: note: nächste Sperrung: "Termin folgt"; möglicherweise Änderungen in der Radickestr. (Bauarbeiten westlich der Nipkowstr.?) ab 10.6.2025?
 #: next_check: 2025-06-07 (gibt es eine nächste Sperrung?)
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
@@ -47952,7 +47952,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
 #: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.514933,52.468582,19.05.2025,12:00 (kein Endedatum)
+#: source_id: viz2021:13.514933,52.468582,19.05.2025,12:00 (kein Endedatum) (bis 06.06.2025)
 #: source_id: adac:922791900
 #: source_id: adac:1526844418
 #: osm_watch: note 4767216 14
@@ -47969,8 +47969,10 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1564820.php (Rückbau soll zum 27.06.2025 abgeschlossen sein)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-4#post-25201 (gemeinsamer Rad-/Gehweg)
 #: by: https://entwicklungsstadt.de/brueckenabriss-an-der-wuhlheide-erste-lockerungen-fuer-tram-und-rettungskraefte/ (erste Erleichterungen für MIV nicht vor dem 6.6.2025, Abschluss der Abrissarbeiten 27.6.2025)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/nach-brueckenabriss-an-der-wuhlheide-wann-die-autos-wieder-fahren-duerfen-li.2330621
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1567181.php
 # REMOVED --- #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich? --- #: last_checked: 2025-05-20 --- #: next_check: 2025-05-29
-unter der Brücke	2::inwork 18001,7121 18019,7146
+unter der Brücke	2::inwork 18001,7121 18010,7137
 EOF
      },
      { from  => 1747803600, # 2025-05-21 07:00
@@ -48197,6 +48199,15 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025)
 	q4::inwork; 5053,8979 5189,8983
+EOF
+     },
+     { from  => 1748754000, # 2025-06-01 07:00
+       until => 1751641200, # 2025-07-04 17:00
+       text  => 'Ruschestr.: Bauarbeiten, Fahrbahn und Bürgersteig Richtung Vulkanstr. zwischen Kunzeweg und Gotlindstraße gesperrt, vom 02.06.2025 07:00 bis 04.07.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.485654,52.517757,02.06.2025,07:00 (hier nur Kfz-Verkehr, bis 04.07.2025)
+	q4::inwork; 15928,12483 15947,12626
 EOF
      },
     );

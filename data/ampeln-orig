@@ -52,11 +52,11 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # REMOVED --- Weißenburger Str.: Gegenverkehrsregelung	X::inwork::alternating -3301,12864
 # 
 #: next_check_id: LIEBENWALDER-2025
-#: source_id: viz2021:13.499675,52.536712,18.03.2025,07:00 (bis 30.05.2025) (bis 06.06.2025)
+#: source_id: viz2021:13.499675,52.536712,18.03.2025,07:00 (bis 30.05.2025) (bis 06.06.2025) (bis 03.07.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901876221358625089
 #: by: https://pbs.twimg.com/media/GmQgEbLXAAIO1_l?format=jpg&name=4096x4096 (außerdem Einbahnstraßenregelung in der Heiligenstadter Str.)
-#: next_check: 2025-06-06 (VIZ-Verkehrsmeldung)
-#: valid: -20250606
+#: next_check: 2025-07-03 (VIZ-Verkehrsmeldung)
+#: valid: -20250703
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
 #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025) (bis 23.06.2025)
@@ -1517,7 +1517,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 20565,2754
 #: XXX_prog: Anforderung für rechtsabbiegende (?) Radfahrer aus Richtung Nordwesten
 	X 22162,1067
-	X 18001,7121
+	X 18010,7137
 #: XXX_prog für Radfahrer Richtung Süden zwei getrennt voneinander geschaltete Ampeln; Passierdauer für das "ordentliche" Linksabbiegen in die Griechische Allee bis zu 150 Sekunden
 	X 17962,6674
 	X 2723,4093
@@ -2412,6 +2412,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15912,13153
 	X 15850,14308
 #: note: Anforderungsampel für rechtsabbiegende Radfahrer in die Zechliner Str.
+#: note: von der Zechliner Str. ist auf der Fahrbahn nur das Rechtsabbiegen erlaubt; stattdessen Fußgängerampel nehmen, mit langen Wartezeiten, auf der Mittelinsel "gegenläufig" geschaltet (siehe auch handicap_directed-Eintrag)
 	X 16314,14361
 	F 15562,14869
 # REMOVED (Fußgängerampel ist jetzt etwas weiter südwestlich) ---	X 16331,15486

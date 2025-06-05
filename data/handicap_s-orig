@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-04
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -120,7 +120,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
 #: note: zwischenzeitlich war an der Frankfurter Allee eine Fahrgasse frei (zumindest für Radfahrer benutzbar), mittlerweile wieder über die gesamte Fahrbahnbreite abgesperrt
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-01
+#: last_checked: 2025-06-05
 #: check_frequency: 10d
 Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # 
@@ -268,7 +268,7 @@ Südkreuz: Bauarbeiten, Engstellen	q3::inwork 7838,7848 7837,7899
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-04-26 vvv
+#: last_checked: 2025-06-03 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 (VIZ-Verkehrsmeldung) vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -736,10 +736,12 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
 #: last_checked: 2025-06-04 vvv
-Rummelsburger Str.: Engstellen, einige Fußgänger	q3::inwork; 18019,7146 17847,7356
-An der Wuhlheide: Engstellen neben dem Radweg	q1::inwork; 18001,7121 18225,7004
-Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18019,7146 18001,7121
-Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 18001,7121 18019,7146
+#: next_check: 2025-06-07 (Freigabe des Kfz-Verkehrs, dann vielleicht auch keine Einschränkungen für den Radverkehr mehr?) vvv
+Rummelsburger Str.: Engstellen, einige Fußgänger	q3::inwork; 18010,7137 17847,7356
+An der Wuhlheide: Engstellen neben dem Radweg	q1::inwork; 18010,7137 18225,7004
+# REMOVED (ab 2025-06-06 14:00 Uhr wird der Kfz-Verkehr möglich sein, dann möglicherweise auch für den Radverkehr keine Einschränkungen mehr) --- Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18010,7137 18001,7121
+# REMOVED --- Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 18001,7121 18010,7137
+#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED (beendet) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: also_indoor: traffic (B,W,G,ex-H[ungenau]) vvv --- #: last_checked: 2023-09-12 vvv --- #: check_frequency: 14d vvv --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000 --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
@@ -1047,9 +1049,10 @@ Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 1715
 # REMOVED (fast fertig) --- #: last_checked: 2025-04-04 --- #: check_frequency: 21d --- Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-05-24
-#: check_frequency: 14d
+#: last_checked: 2025-06-05
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (BA Lichtenberg)
+#: next_check: 2025-06-30 (infravelo)
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
 # 
 # REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022 --- #: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_228154 (bis 31.08.2024) --- #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_228155 (bis 31.08.2024) --- #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 04.04.2025) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028 --- #: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fußverkehr) --- #: also_indoor: traffic (H,G,W) --- #: priority: #A --- #: last_checked: 2024-06-17 --- #: next_check: 2024-06-22 --- #: valid: -20240622 --- #: valid: -20240831 --- Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, Fußgängertunnel	q3::inwork 15856,10821 15793,10814
@@ -1319,12 +1322,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: valid: -20250630
 Gartenstr. (Weißensee): etwa 40m der Fahrbahn sind gesperrt	q3::inwork 14791,16445 14809,16525
 # 
-#: priority: #A
-#: last_checked: 2025-04-30
-#: check_frequency: 60d
-#: next_check: 2025-06-30 (Halteverbotsschilder)
-Puccinistr.: Fahrbahn wegen Bauarbeiten gesperrt, südlicher Gehweg für Radfahrer frei	q2::inwork 13700,15501 13776,15546
-# 
+# REMOVED (vorfristig fertig) --- #: priority: #A --- #: last_checked: 2025-06-05 --- #: check_frequency: 60d --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Puccinistr.: Fahrbahn wegen Bauarbeiten gesperrt, südlicher Gehweg für Radfahrer frei	q2::inwork 13700,15501 13776,15546
 # REMOVED --- #: note: Endedatum laut Halteverbotsschilder --- #: last_checked: 2024-07-16 --- #: next_check: 2024-07-15 --- #: valid: -20240715 --- Börnestr.: Bauarbeiten, einige Meter der Fahrbahn sind gesperrt	q3::inwork 13214,15830 13263,15930
 # 
 #: also_indoor: traffic (ex-G,B,ex-W,T)
@@ -4899,6 +4897,8 @@ Fürbringerstr.: asphaltierte Kissen (2x)	q1 9705,9732 9820,9718
 #: note: Ausschilderung existiert am westlichen Ende; am östlichen Ende nur ein Grünanlagenschild ohne Zusatzschilder
 Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307 12812,6343 12979,6374
 (Pieskower Weg - Hanns-Eisler-Str.): einige Fußgänger	q1 13224,15049 13249,15037 13270,15046 13295,15107 13313,15113 13324,15109
+#: XXX_prog BS (kerb_up Richtung Norden; ansonsten q1)
+(Pieskower Weg - Hanns-Eisler-Str.): einige Fußgänger, Bordstein	q3 13224,15049 13246,15065 13264,15094 13289,15149
 #: XXX_prog BS (ansonsten q3+)
 (Falkenberger Chaussee - Wartenberger Str.): Bordstein, Rampe	q4+ 17577,17910 17521,17894
 (Falkenberger Chaussee - Wartenberger Str.): Rampe	q3+ 17521,17894 17568,17945
@@ -6394,7 +6394,7 @@ Wegerichstr.: enge Straße	q1 16678,2330 16666,2437 16663,2450 16538,2543
 # 
 #: by: steffen (stache-bln):
 #: note: Radweg markiert
-(Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fußgänger	q0 13548,14980 13369,15083 13324,15109 13328,15127 13123,15244
+(Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fußgänger	q0 13548,14980 13369,15083 13324,15109 13328,15127 13289,15149 13123,15244
 # 
 #: by: Beate Voigt:
 Siegfried-Baruch-Weg: einige Fußgänger, recht eng	q2 7857,19693 7871,19698 7974,19739 8030,19762
