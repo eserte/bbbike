@@ -285,9 +285,15 @@ for my $kr ($kr1, $kr2) {
 #	my %situation = situation_at_point_inorder($kr, qw(10697,12303 10746,12364 10831,12371));
 #	is($situation{action}, 'half-right', q{Need some indication that it's not Stralauer Str. to the right, but the Platz});
 #    }
+## situation is changing too often here, use another more stable crossing
+#    {
+#	# Wuhlheide/Treskowallee/Eichgestell
+#	my %situation = situation_at_point_inorder($kr, qw(17990,7115 18010,7137 18079,7144));
+#	is($situation{action}, 'half-right', q{using half-right});
+#    }
     {
-	# Wuhlheide/Treskowallee/Eichgestell
-	my %situation = situation_at_point_inorder($kr, qw(18001,7121 18010,7137 18079,7144));
+	# Lisztstr./Sangeallee
+	my %situation = situation_at_point_inorder($kr, qw(18332,9356 18319,9218 18247,9158));
 	is($situation{action}, 'half-right', q{using half-right});
     }
 
