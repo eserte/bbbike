@@ -2296,7 +2296,7 @@ Allee der Kosmonauten: Straßenbahntrasse	3nocross 20262,14255 20249,14143 20235,
 Am Nordgraben: Mittelstreifen	3nocross 5201,20103 5299,20104 5399,20106 5517,20120
 #: note: Luftbild vvv
 Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7366,4345
-Edisonstr.: Straßenbahn	3nocross 18010,7137 18001,7121 17934,7029 17919,6978
+Edisonstr.: Straßenbahn	3nocross 18010,7137 17990,7115 17934,7029 17919,6978
 Edisonstr.: Straßenbahn	3nocross 17919,6968 17945,6788 17962,6674
 Falkenseer Chaussee: Mittelstreifen	3nocross -5036,15625 -5153,15658 -5370,15721 -5470,15750
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
@@ -2372,7 +2372,7 @@ Karl-Liebknecht-Str.: Straßenbahntrasse	3nocross 10923,13156 10976,13229 11012,1
 Riesaer Str.: Straßenbahntrasse	3nocross 24120,14526 24097,14575 24030,14717
 Riesaer Str.: Straßenbahntrasse	3nocross 24730,14288 24870,14244 24930,14225 24983,14208 25095,14171
 # REMOVED --- Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17568,7753 17611,7690 17681,7589 17769,7465
-# REMOVED (die Überführung ist Geschichte) --- Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17769,7465 17847,7356 18001,7121
+# REMOVED (die Überführung ist Geschichte) --- Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17769,7465 17847,7356 17990,7115
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4600,8002 4711,8013 4786,8007
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12123 18216,12209 18216,12239 18216,12262 18220,12450
 Rhinstr.: Straßenbahntrasse	3nocross 18176,14108 18178,14078 18181,14039 18198,13816
@@ -2677,10 +2677,10 @@ zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2326,25625 -2130,26026 -2146,260
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2109,26055 -2130,26026 -2146,26048
 # 
 # REMOVED --- # REMOVED --- #: next_check_id: BRUECKEANDERWUHLHEIDE-2025 --- #: last_checked: 2025-05-20 vvv --- #: XXX wegen Umfahrung der gesperrten Unterführung 1 -> 1s:qX vvv
-# REMOVED --- An der Wuhlheide: Richtungsfahrbahn	1 18225,7004 18001,7121
+# REMOVED --- An der Wuhlheide: Richtungsfahrbahn	1 18225,7004 17990,7115
 # REMOVED --- # REMOVED --- #: note: hier existiert eine Art Nebenfahrbahn, deshalb q3
 # REMOVED --- An der Wuhlheide: Richtungsfahrbahn	1 18010,7137 18225,7004
-# REMOVED --- Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1 18001,7121 17847,7356
+# REMOVED --- Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1 17990,7115 17847,7356
 # REMOVED --- Rummelsburger Str. (Oberschöneweide): Richtungsfahrbahn	1 17847,7356 18010,7137
 # REMOVED --- # REMOVED --- #: XXX ^^^ --- #: last_checked ^^^
 # 
@@ -4272,7 +4272,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-06-03 vvv
+#: last_checked: 2025-06-06 vvv
 #: osm_watch: way id="1199463691" version="4"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -4285,7 +4285,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 #: osm_watch: way id="1199465847" version="2"
 #: osm_watch: way id="801304797" version="4"
 #: XXX außerdem: wird es eine Anbindung an die Sonnenallee geben?
-Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14305,7415
+Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
 #: last_checked ^^^
 # 
 #: next_check_id: ANDERGAERTNEREI-2022
@@ -4780,7 +4780,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-05-15
+#: last_checked: 2025-06-04 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4923,7 +4923,7 @@ Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-05-14 vvv
+#: last_checked: 2025-06-06 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027

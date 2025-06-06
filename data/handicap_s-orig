@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-06
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -142,7 +142,7 @@ Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-05-21 vvv
+#: last_checked: 2025-06-04 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -322,6 +322,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: by: https://www.tagesspiegel.de/berlin/bezirke/marktplatz-in-treptow-kopenick-eroffnung-nach-umbau-verschiebt-sich-13344481.html
 #: by: https://entwicklungsstadt.de/marktplatz-adlershof-fertigstellung-und-einweihung-im-sommer-2025-geplant/
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-darum-verzoegern-sich-die-bauarbeiten-auf-dem-marktplatz-adlershof-li.2323549
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Teileinziehung von Straßenland, nördlicher Strang)
 #: XXX der nördliche Strang soll dauerhaft eingezogen werden
 #: osm_watch: way id="20554168" version="27"
 #: osm_watch: way id="1155308749" version="1"
@@ -424,7 +425,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 # 
 #: note: Länge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (laut Baustellenschild)
-#: last_checked: 2025-05-15 (mapillary)
+#: last_checked: 2025-06-04 (mapillary)
 #: check_frequency 30d
 #: next_check: 2025-06-30 (Baustellenschild)
 Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,12941
@@ -734,15 +735,15 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Oberschöneweide ###
 # 
-#: next_check_id: BRUECKEANDERWUHLHEIDE-2025
-#: last_checked: 2025-06-04 vvv
-#: next_check: 2025-06-07 (Freigabe des Kfz-Verkehrs, dann vielleicht auch keine Einschränkungen für den Radverkehr mehr?) vvv
-Rummelsburger Str.: Engstellen, einige Fußgänger	q3::inwork; 18010,7137 17847,7356
-An der Wuhlheide: Engstellen neben dem Radweg	q1::inwork; 18010,7137 18225,7004
-# REMOVED (ab 2025-06-06 14:00 Uhr wird der Kfz-Verkehr möglich sein, dann möglicherweise auch für den Radverkehr keine Einschränkungen mehr) --- Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18010,7137 18001,7121
-# REMOVED --- Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 18001,7121 18010,7137
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED (wenn der Kfz-Verkehr fahren darf, dann gibt's hoffentlich für den Radverkehr keine Einschränkungen mehr) --- #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
+# REMOVED --- #: last_checked: 2025-06-04 vvv
+# REMOVED --- #: next_check: 2025-06-07 (Freigabe des Kfz-Verkehrs, dann vielleicht auch keine Einschränkungen für den Radverkehr mehr?) vvv
+# REMOVED --- Rummelsburger Str.: Engstellen, einige Fußgänger	q3::inwork; 18010,7137 17847,7356
+# REMOVED --- An der Wuhlheide: Engstellen neben dem Radweg	q1::inwork; 18010,7137 18225,7004
+# REMOVED --- # REMOVED (ab 2025-06-06 14:00 Uhr wird der Kfz-Verkehr möglich sein, dann möglicherweise auch für den Radverkehr keine Einschränkungen mehr) --- Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18010,7137 17990,7115
+# REMOVED --- # REMOVED --- Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 17990,7115 18010,7137
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED (beendet) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: also_indoor: traffic (B,W,G,ex-H[ungenau]) vvv --- #: last_checked: 2023-09-12 vvv --- #: check_frequency: 14d vvv --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000 --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 # REMOVED (beendet) --- #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020 (Termin wurde nicht gehalten) --- #: last_checked: 2020-10-04 --- #: next_check: 2020-07-31 --- #: valid: -20200731 --- Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
@@ -921,7 +922,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 # 
 #: source_id: viz2021:13.428865,52.484307,28.04.2025,07:00 (bis 28.02.2026)
-#: last_checked: 2025-05-23
+#: last_checked: 2025-06-06
 #: check_frequency: 120d
 #: next_check: 2026-02-28
 #: valid: -20260228
@@ -982,7 +983,7 @@ Reuterstr.: Bauarbeiten an der Karl-Marx-Str., einige Meter der Fahrbahn sind ge
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2025-04-03 (architektur-urbanistik)
+#: last_checked: 2025-06-06
 #: check_frequency: 90d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
@@ -2021,7 +2022,7 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025) (inaktiv) (bis 12.06.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-06
 #: check_frequency: 30d
 #: next_check: 2025-06-12 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870

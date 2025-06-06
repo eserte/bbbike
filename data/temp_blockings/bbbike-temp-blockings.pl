@@ -85,8 +85,9 @@ my $next_interval = sub {
 #: source_id: viz2021:13.389478,52.495996,05.06.2025,10:00 (bis 10.06.2025)
 #: source_id: viz2021:13.391442,52.497337,05.06.2025,10:00 (bis 10.06.2025)
 #: source_id: viz2021:13.3951,52.496194,05.06.2025,10:00 (bis 10.06.2025)
-#: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025)
-#: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025)
+#: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.39594,52.49837,06.06.2025,12:00 (Lindenstr. bis Alte Jakobstr. gesperrt? bis 10.06.2025)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -13490,7 +13491,7 @@ EOF
        text  => 'Sperrung des Delfter Ufers. Ab Montag, dem 17.11.2008 wird für ca. vier Wochen ein Teilstück von ca. 250 m der Grünanlage Delfter Ufer in Höhe der Rudergesellschaft Wiking e.V. bis zum rückwärtigen Firmengelände Testorp gesperrt werden. Der Rad- und Fußweg kann in dieser Zeit nicht durchgängig genutzt werden. Ein Ausweichen ist über den Schwarzen Weg, Haarlemer Straße und wieder zurück zum Delfter Ufer über den Weg der Kolonie "Zum Siedlerheim" möglich.',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 13766,6019 14002,5936 14138,5818 14223,5658
+	2::inwork 13778,6018 13904,5983 14002,5936 14138,5818 14223,5658
 EOF
      },
      { from  => 1228340462, # 2008-12-03 22:41
@@ -22360,7 +22361,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-05 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -29428,7 +29429,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-06-03 vvv
+#: last_checked: 2025-06-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -30515,7 +30516,7 @@ EOF
 #: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023) (inaktiv)
 #: source_id: viz2021:13.362236,52.517659,06.06.2023,18:00 (John-Foster-Dulles-Allee, bis 10.06.2023) (inaktiv)
-#: source_id: viz2021:13.364825,52.517521,02.06.2025,18:00 (John-Foster-Dulles-Allee, bis 06.06.2025)
+#: source_id: viz2021:13.364825,52.517521,02.06.2025,18:00 (John-Foster-Dulles-Allee, bis 06.06.2025) (inaktiv)
 	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
 	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
 	3 6689,12632 7031,12320 7051,12426
@@ -35927,16 +35928,17 @@ EOF
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2025-03-28 vvv
+#: last_checked: 2025-06-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
+Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
 Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 13648,7284 13762,7321 13794,7333
 # REMOVED (frei) ---	2::inwork 13693,7228 13575,7200
-# REMOVED (mittlerweile frei) --- #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs ---	q4::inwork; 13484,7140 13575,7200 13627,7047
+# REMOVED (mittlerweile frei) --- #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs ---	q4::inwork; 13575,7200 13627,7047
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -37395,10 +37397,10 @@ Mauerstr.	2::temp 9171,11777 9138,11872
 EOF
      },
      { from  => 1736839577, # 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2025-07-03 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       until => $isodate2epoch->("2025-08-16 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
 #      text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 08.03.2024',
 #      text  => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 04.06.2025',
-       text  => 'Hüttenweg: zwischen Marshallstr. und Am Waldfriedhof Richtung Westen gesperrt, voraussichtlich bis 03.07.2025',
+       text  => 'Hüttenweg: zwischen Marshallstr. und Am Waldfriedhof Richtung Westen gesperrt, voraussichtlich bis Mitte August 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
@@ -37406,7 +37408,7 @@ EOF
 #: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024) (inaktiv)
 #: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025) (bis 04.06.2025) (inaktiv)
-#: source_id: viz2021:13.269411,52.454149,02.04.2025,07:00 (bis 03.07.2025)
+#: source_id: viz2021:13.269411,52.454149,02.04.2025,07:00 (bis 03.07.2025) (bis 16.08.2025)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -39734,10 +39736,10 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 4
-#: also_indoor: traffic (B,T,ex-H,ex-G,ex-W,A)
+#: also_indoor: traffic (B,T,ex-H,re-G,re-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
-#: last_checked: 2025-05-08 (traffic)
+#: last_checked: 2025-06-05 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -40728,7 +40730,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.378482,52.51322,30.06.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.379598,52.513471,04.06.2025,11:00 (nun auch Radverkehr, bis 06.06.2025)
+#: source_id: viz2021:13.379598,52.513471,04.06.2025,11:00 (nun auch Radverkehr, bis 06.06.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lqrj3rpl5s2m
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifyb63t5nk4gx7pcwqimvcu5puxj7vglsxspnyo47pasf553iju5u@jpeg
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreies7dsygvbmzyugj7lilblrvaym6kqwwd5mcqytzw2w6borruloka@jpeg
@@ -41613,7 +41615,7 @@ EOF
        text  => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, bis 06.06.2025 16:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv) (bis 31.05.2025) (bis 06.06.2025)
+#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv) (bis 31.05.2025) (bis 06.06.2025) (inaktiv)
 # REMOVED (hier nicht mehr) ---	q4::inwork 22917,30635 22770,30813
 # REMOVED (hier nicht) ---	q4::inwork 22770,30813 22690,30909
 # REMOVED (hier nicht mehr) ---	q4::inwork; 22850,30562 22917,30635
@@ -42240,7 +42242,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024) (inaktiv) (bis 31.12.2024) (inaktiv)
-#: source_id: 246001315 (bis 08.11.2024) (bis 31.12.2024) (bis 30.04.2025) (bis 06.06.2025)
+#: source_id: 246001315 (bis 08.11.2024) (bis 31.12.2024) (bis 30.04.2025) (bis 06.06.2025) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-05-2025-l30-bernau (Fertigstellung im Juni 2025)
 	2::inwork 23015,30519 23113,30450
 EOF
@@ -42343,7 +42345,7 @@ EOF
 #: also_indoor: traffic (ex-H[zu wenig],G,ex-B[zu viel],ex-W[zu viel])
 #: note: bei rbb weiterhin bis 11.04.2024, sogar beide Richtungen
 # REMOVED (Fahrbahn nicht mehr gesperrt) --- #: last_checked: 2023-11-26 --- #: check_frequency: 30d --- #: next_check: 2023-12-04
-	q3::inwork; 18001,7121 17934,7029 17919,6978 17919,6968 17945,6788
+	q3::inwork; 17990,7115 17934,7029 17919,6978 17919,6968 17945,6788
 EOF
      },
      { do {
@@ -43595,7 +43597,7 @@ EOF
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="30"
+#: osm_watch: way id="120633718" version="31"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch[closed]: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -45423,7 +45425,7 @@ EOF
 #      text  => 'Eingang Kienitzer Str.: wegen Bauarbeiten gesperrt',
 #      text  => 'Tempelhofer Feld, Eingänge Herrfurthstr. und Leinestr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
 #      text  => 'Tempelhofer Feld, Eingang Herrfurthstr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
-       text  => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten Sperrung geplant (Stand 23.05.2025: noch keine Sperrung)',
+       text  => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten Sperrung geplant (Stand Anfang Juni 2025: Crashgate ist gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
@@ -45436,16 +45438,16 @@ EOF
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-05-23 vvv
-#: check_frequency: 7d vvv
-# REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2025-10-01 (MoPo) vvv
+#: last_checked: 2025-06-06 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
 # REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
 # REMOVED --- #: osm_watch: note 4425036 1
 # REMOVED --- Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
-# REMOVED --- Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
+# REMOVED --- Eingangsbereich Herrfurthstr.	2::inwork 11418,8015 11439,7894 11460,7802
+Eingangsbereich Herrfurthstr., Restarbeiten	2::inwork 11458,7897 11490,7735
 Crashgate Richtung Rundkurs Südwest	2::inwork 11407,7198 11598,7264 11608,7267
 Crashgate	2::inwork 11598,7264 11596,7280 11593,7317 11589,7353
 Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
@@ -47194,15 +47196,13 @@ EOF
 EOF
      },
      { from  => 1742386162, # 2025-03-19 13:09
-       until => 1767221999, # 2025-12-31 23:59
+       until => 1749230858, # 1767221999, # 2025-12-31 23:59
        text  => 'Riesestr.: Hochbaustelle, Einbahnstraßenregelung, Richtung Süden offen, voraussichtlich bis Ende 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Länge der Einbahnstraßenregelung ca. 100m, deshalb q4 -> q3
 #: note: Richtung Norden gibt es ab Blaschkoallee einen Hochbordradweg, der sich nach einigen Metern "verliert", evtl. wird toleriert, dass Radfahrer weiter auf dem Hochbord fahren
-#: last_checked: 2025-03-19
-#: check_frequency: 60d
-#: next_check: 2025-12-31 (Halteverbotsschilder)
+# REMOVED (mittlerweile explizit Radfahrer frei; Halteverbotsschilder weiterhin bis Ende 2025) --- #: last_checked: 2025-03-19 --- #: check_frequency: 60d --- #: next_check: 2025-12-31 (Halteverbotsschilder)
 	q3::inwork; 13305,5316 13265,5519
 EOF
      },
@@ -47276,9 +47276,9 @@ EOF
        text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025)
+#: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv)
 	q4::inwork 3088,12094 2920,12070
-#: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025)
+#: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv)
 #: source_id: adac:8174832 (bis voraussichtlich 06.06.2025)
 	q4::inwork 2920,12070 2686,12051
 EOF
@@ -47451,7 +47451,7 @@ EOF
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
 #: note: nächste Sperrung: "Termin folgt"; möglicherweise Änderungen in der Radickestr. (Bauarbeiten westlich der Nipkowstr.?) ab 10.6.2025?
-#: next_check: 2025-06-07 (gibt es eine nächste Sperrung?)
+#: next_check: 2025-06-10 (gibt es eine nächste Sperrung?)
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
 # REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
@@ -47723,14 +47723,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1749235486, # undef, # XXX
        text  => 'Jüllicher Str.: Einbahnstraßenregelung, offen Richtung Norden, evtl. sind auch Radfahrer betroffen',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://weddingweiser.de/wieder-kein-tramverkehr-monatelang/
-#: XXX ab wann? bereits ab dem 11.4.2025?
-#: last_checked: 2025-06-01
-#: check_frequency: 30d
+# REMOVED (Einfahrt verboten mit Radfahrer-frei-Schildern (die Zusatzschilder fehlen allerdings an den Einbahnstraßenschildern) --- #: XXX ab wann? bereits ab dem 11.4.2025? --- #: last_checked: 2025-06-01 --- #: check_frequency: 30d
 Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307 9474,16297 9458,16180 9446,16060
 EOF
      },
@@ -47952,9 +47950,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
 #: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.514933,52.468582,19.05.2025,12:00 (kein Endedatum) (bis 06.06.2025)
+#: source_id: viz2021:13.514933,52.468582,19.05.2025,12:00 (kein Endedatum) (bis 06.06.2025) (inaktiv)
 #: source_id: adac:922791900
 #: source_id: adac:1526844418
+#: source_id: viz2021:13.514371,52.468805,06.06.2025,20:00 (Linksabbiegen nicht möglich, bis 27.06.2025)
 #: osm_watch: note 4767216 14
 #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-wuhlheide-bruecke-sofortige-sperrung-verkehr-einsturzgefahr.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/
@@ -47971,8 +47970,11 @@ EOF
 #: by: https://entwicklungsstadt.de/brueckenabriss-an-der-wuhlheide-erste-lockerungen-fuer-tram-und-rettungskraefte/ (erste Erleichterungen für MIV nicht vor dem 6.6.2025, Abschluss der Abrissarbeiten 27.6.2025)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/nach-brueckenabriss-an-der-wuhlheide-wann-die-autos-wieder-fahren-duerfen-li.2330621
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1567181.php
+#: by: https://entwicklungsstadt.de/im-video-so-wurde-der-brueckenabriss-in-oberschoeneweide-umgesetzt/
+#: by: https://www.rbb24.de/panorama/beitrag/2025/06/berlin-wuhlheide-bruecke-abriss-bau-autoverkehr.html
+#: by: https://viz.berlin.de/site/assets/files/1884/umleitung_rummelsburger_strasse.850x0-is.jpg (einzig verbliebene Umleitung)
 # REMOVED --- #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich? --- #: last_checked: 2025-05-20 --- #: next_check: 2025-05-29
-unter der Brücke	2::inwork 18001,7121 18010,7137
+unter der Brücke	2::inwork 17990,7115 18010,7137
 EOF
      },
      { from  => 1747803600, # 2025-05-21 07:00
@@ -48206,7 +48208,7 @@ EOF
        text  => 'Ruschestr.: Bauarbeiten, Fahrbahn und Bürgersteig Richtung Vulkanstr. zwischen Kunzeweg und Gotlindstraße gesperrt, vom 02.06.2025 07:00 bis 04.07.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.485654,52.517757,02.06.2025,07:00 (hier nur Kfz-Verkehr, bis 04.07.2025)
+#: source_id: viz2021:13.485654,52.517757,02.06.2025,07:00 (hier nur Kfz-Verkehr, bis 04.07.2025) (mittlerweile auch Radverkehr)
 	q4::inwork; 15928,12483 15947,12626
 EOF
      },

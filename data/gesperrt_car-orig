@@ -44,8 +44,8 @@ Nußbaumallee - Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1732,12224
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (Beginn der Bauarbeiten)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20230703/
 #: also_indoor: traffic (G,B,W)
-#: osm_watch: way id="1223345278" version="5"
-#: osm_watch: way id="1262225305" version="2"
+#: osm_watch: way id="1223345278" version="6"
+#: osm_watch: way id="1262225305" version="3"
 #: XXX Außerdem: der S-Bahnhof wird zukünftig wohl südlich des Bahnunterführung sein
 #: XXX Unterführung wird voraussichtlich im Sommer 2025 fertig sein
 #: XXX Eröffnung des Fußgängertunnels am 4.2.2025
@@ -94,7 +94,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-06
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -1653,7 +1653,7 @@ Mittelstr.	1 15647,14693 15539,14493
 (Weydemeyerstr.): Absperrung	2 11925,12807 11971,12785
 # 
 #: note: gilt eigentlich auch für Radfahrer, aber der gesperrte Abschnitt ist nur 5m lang
-Roedernstr.	1 18019,7071 18001,7121
+Roedernstr.	1 18019,7071 18012,7096 17990,7115
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1158412.php
 #: by: osm

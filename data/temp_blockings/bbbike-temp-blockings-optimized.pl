@@ -19,8 +19,9 @@ push @temp_blocking,
 #: source_id: viz2021:13.389478,52.495996,05.06.2025,10:00 (bis 10.06.2025)
 #: source_id: viz2021:13.391442,52.497337,05.06.2025,10:00 (bis 10.06.2025)
 #: source_id: viz2021:13.3951,52.496194,05.06.2025,10:00 (bis 10.06.2025)
-#: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025)
-#: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025)
+#: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.39594,52.49837,06.06.2025,12:00 (Lindenstr. bis Alte Jakobstr. gesperrt? bis 10.06.2025)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -3508,7 +3509,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-05 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -4517,7 +4518,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-06-03 vvv
+#: last_checked: 2025-06-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4671,44 +4672,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-teamstaffel.de/der-tag/strecke.html
-#: by: https://www.berliner-teamstaffel.de/event/strecke
-#: by: https://www.berliner-teamstaffel.de/
-#: source_id: 2147344332 (inaktiv)
-#: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
-#: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
-#: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023) (inaktiv)
-#: source_id: viz2021:13.362236,52.517659,06.06.2023,18:00 (John-Foster-Dulles-Allee, bis 10.06.2023) (inaktiv)
-#: source_id: viz2021:13.364825,52.517521,02.06.2025,18:00 (John-Foster-Dulles-Allee, bis 06.06.2025)
-	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
-	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
-	3 6689,12632 7031,12320 7051,12426
-	3 6689,12632 7031,12320 7001,12274
-	3 7654,12464 7627,12380 7603,12353
-	3 7001,12274 7031,12320 7051,12426
-	3 7001,12274 7031,12320 6689,12632
-	3 7051,12426 7031,12320 7001,12274
-	3 7051,12426 7031,12320 6689,12632
-	3 7603,12353 7627,12380 7654,12464
-',
-         'from' => 1748728800,
-         'id' => 3113,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              12,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 3. Juni 2025 bis 5. Juni 2025',
-         'type' => 'gesperrt',
-         'until' => 1749193200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5639,16 +5603,17 @@ Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2025-03-28 vvv
+#: last_checked: 2025-06-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
+Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
 Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 13648,7284 13762,7321 13794,7333
 # REMOVED (frei) ---	2::inwork 13693,7228 13575,7200
-# REMOVED (mittlerweile frei) --- #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs ---	q4::inwork; 13484,7140 13575,7200 13627,7047
+# REMOVED (mittlerweile frei) --- #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs ---	q4::inwork; 13575,7200 13627,7047
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5987,7 +5952,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.270564,52.453869,21.04.2023,09:00 (bis 20.06.2023) (bis 21.7.2023) (bis 22.8.2023) (bis 25.10.2023) (bis 9.12.2023) (bis 9.11.2023, im Anschluss folgen weitere Arbeiten) (bis 6.12.2023 + weitere Arbeiten) (bis 15.1.2024) (inaktiv) (bis 8.3.2024) (inaktiv)
 #: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025) (bis 04.06.2025) (inaktiv)
-#: source_id: viz2021:13.269411,52.454149,02.04.2025,07:00 (bis 03.07.2025)
+#: source_id: viz2021:13.269411,52.454149,02.04.2025,07:00 (bis 03.07.2025) (bis 16.08.2025)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -6005,9 +5970,9 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 ',
          'from' => 1736839577,
          'id' => 3605,
-         'text' => 'Hüttenweg: zwischen Marshallstr. und Am Waldfriedhof Richtung Westen gesperrt, voraussichtlich bis 03.07.2025',
+         'text' => 'Hüttenweg: zwischen Marshallstr. und Am Waldfriedhof Richtung Westen gesperrt, voraussichtlich bis Mitte August 2025',
          'type' => 'handicap',
-         'until' => 1751554800
+         'until' => 1755356400
        },
        undef,
        undef,
@@ -6572,10 +6537,10 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 4
-#: also_indoor: traffic (B,T,ex-H,ex-G,ex-W,A)
+#: also_indoor: traffic (B,T,ex-H,re-G,re-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
-#: last_checked: 2025-05-08 (traffic)
+#: last_checked: 2025-06-05 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -6847,20 +6812,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.378482,52.51322,30.06.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.379598,52.513471,04.06.2025,11:00 (nun auch Radverkehr, bis 06.06.2025)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lqrj3rpl5s2m
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifyb63t5nk4gx7pcwqimvcu5puxj7vglsxspnyo47pasf553iju5u@jpeg
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreies7dsygvbmzyugj7lilblrvaym6kqwwd5mcqytzw2w6borruloka@jpeg
-	q4::temp; 8577,11896 8783,11959
-',
-         'from' => 1748941200,
-         'id' => 3839,
-         'text' => 'Hannah-Arendt-Str.: Veranstaltung, Richtung Französische Str. zwischen Ebertstr. und Gertrud-Kolmar-Str. gesperrt, vom 04.06.2025 11:00 bis 06.06.2025 15:00',
-         'type' => 'handicap',
-         'until' => 1749214800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7004,19 +6956,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 236001332 (bis 31.08.2024) (bis 13.09.2024) (inaktiv) (bis 31.05.2025) (bis 06.06.2025)
-# REMOVED (hier nicht mehr) ---	q4::inwork 22917,30635 22770,30813
-# REMOVED (hier nicht) ---	q4::inwork 22770,30813 22690,30909
-# REMOVED (hier nicht mehr) ---	q4::inwork; 22850,30562 22917,30635
-	q4::inwork 22770,30813 22690,30909
-',
-         'from' => 1689487200,
-         'id' => 3902,
-         'text' => 'August-Bebel-Str. (Bernau): Bauarbeiten, Sperrung, bis 06.06.2025 16:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1749218400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7151,18 +7091,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 236001823 (bis 24.01.2024) (bis 30.08.2024) (inaktiv) (bis 31.12.2024) (inaktiv)
-#: source_id: 246001315 (bis 08.11.2024) (bis 31.12.2024) (bis 30.04.2025) (bis 06.06.2025)
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-05-2025-l30-bernau (Fertigstellung im Juni 2025)
-	2::inwork 23015,30519 23113,30450
-',
-         'from' => 1705186800,
-         'id' => 3947,
-         'text' => 'Bernau, Eisenbahnüberführung Börnicker Chaussee: Sperrung voraussichtlich bis 06.06.2025',
-         'type' => 'gesperrt',
-         'until' => 1749222000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7469,7 +7398,7 @@ nördliche Rathenower Str.: Überfahrt gesperrt	2::inwork 6730,14021 6719,14047
 #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="30"
+#: osm_watch: way id="120633718" version="31"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch[closed]: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
@@ -7946,16 +7875,16 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-05-23 vvv
-#: check_frequency: 7d vvv
-# REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2025-10-01 (MoPo) vvv
+#: last_checked: 2025-06-06 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
 # REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
 # REMOVED --- #: osm_watch: note 4425036 1
 # REMOVED --- Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
-# REMOVED --- Eingangsbereich Herrfurthstr	2::inwork 11418,8015 11439,7894 11460,7802
+# REMOVED --- Eingangsbereich Herrfurthstr.	2::inwork 11418,8015 11439,7894 11460,7802
+Eingangsbereich Herrfurthstr., Restarbeiten	2::inwork 11458,7897 11490,7735
 Crashgate Richtung Rundkurs Südwest	2::inwork 11407,7198 11598,7264 11608,7267
 Crashgate	2::inwork 11598,7264 11596,7280 11593,7317 11589,7353
 Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
@@ -7966,7 +7895,7 @@ Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
 ',
          'from' => undef,
          'id' => 4156,
-         'text' => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten Sperrung geplant (Stand 23.05.2025: noch keine Sperrung)',
+         'text' => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten Sperrung geplant (Stand Anfang Juni 2025: Crashgate ist gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8779,20 +8708,7 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Länge der Einbahnstraßenregelung ca. 100m, deshalb q4 -> q3
-#: note: Richtung Norden gibt es ab Blaschkoallee einen Hochbordradweg, der sich nach einigen Metern "verliert", evtl. wird toleriert, dass Radfahrer weiter auf dem Hochbord fahren
-#: last_checked: 2025-03-19
-#: check_frequency: 60d
-#: next_check: 2025-12-31 (Halteverbotsschilder)
-	q3::inwork; 13305,5316 13265,5519
-',
-         'from' => 1742386162,
-         'id' => 4282,
-         'text' => 'Riesestr.: Hochbaustelle, Einbahnstraßenregelung, Richtung Süden offen, voraussichtlich bis Ende 2025',
-         'type' => 'handicap',
-         'until' => 1767221999
-       },
+       undef,
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/schutz-fur-den-berliner-plotzensee-hoherer-zaun-soll-wildbaden-verhindern-13321912.html
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1536289.php
@@ -8823,19 +8739,7 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025)
-	q4::inwork 3088,12094 2920,12070
-#: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025)
-#: source_id: adac:8174832 (bis voraussichtlich 06.06.2025)
-	q4::inwork 2920,12070 2686,12051
-',
-         'from' => 1743310800,
-         'id' => 4289,
-         'text' => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
-         'type' => 'handicap',
-         'until' => 1749225600
-       },
+       undef,
        {
          'data' => '#: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
@@ -8953,7 +8857,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
 #: note: nächste Sperrung: "Termin folgt"; möglicherweise Änderungen in der Radickestr. (Bauarbeiten westlich der Nipkowstr.?) ab 10.6.2025?
-#: next_check: 2025-06-07 (gibt es eine nächste Sperrung?)
+#: next_check: 2025-06-10 (gibt es eine nächste Sperrung?)
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
 # REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
@@ -9171,19 +9075,7 @@ Kantstr. -> Althoffpl.	3::inwork 5838,5563 5675,5573 5588,5579
          'type' => 'handicap',
          'until' => 1764543540
        },
-       {
-         'data' => '#: by: https://weddingweiser.de/wieder-kein-tramverkehr-monatelang/
-#: XXX ab wann? bereits ab dem 11.4.2025?
-#: last_checked: 2025-06-01
-#: check_frequency: 30d
-Jüllicher Str.: mögliche Einbahnstraßenregelung	q4; 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307 9474,16297 9458,16180 9446,16060
-',
-         'from' => undef,
-         'id' => 4324,
-         'text' => 'Jüllicher Str.: Einbahnstraßenregelung, offen Richtung Norden, evtl. sind auch Radfahrer betroffen',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025)
 	q3::inwork 13511,17311 13754,17133
@@ -9501,7 +9393,7 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
          'until' => 1755788400
        },
        {
-         'data' => '#: source_id: viz2021:13.485654,52.517757,02.06.2025,07:00 (hier nur Kfz-Verkehr, bis 04.07.2025)
+         'data' => '#: source_id: viz2021:13.485654,52.517757,02.06.2025,07:00 (hier nur Kfz-Verkehr, bis 04.07.2025) (mittlerweile auch Radverkehr)
 	q4::inwork; 15928,12483 15947,12626
 ',
          'from' => 1748754000,

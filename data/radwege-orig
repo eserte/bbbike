@@ -1336,7 +1336,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-06-03 vvv
+#: last_checked: 2025-06-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1807,7 +1807,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX später wieder herstellen: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14305,7415 14334,7395
 #: source_id: viz2021:13.461293,52.471377,24.03.2025,07:00 (Leitungsarbeiten, bis 27.06.2025)
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2025-05-16 (webcam)
+#: last_checked: 2025-06-06
 #: check_frequency: 30d
 #: next_check: 2026-09-01 (estreltower website)
 Busspur ist immer gültig	RW5; 14174,7505 14305,7415 14334,7395
@@ -2345,7 +2345,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 # 
 Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18010,7137
 # REMOVED (bestätigt) --- #: XXX Benutzungspflicht wird aufgehoben --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4770 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036541309630/541309630/00099460/60-Anlagen/04/B0670SB.pdf
-	RW1;RW1 18001,7121 17934,7029
+	RW1;RW1 17990,7115 17934,7029
 alter Asphalt, kein Unterstreifen gegen parkende Autos	RW1; 18010,7137 18225,7004 18404,6946 18492,6893 18771,6699 18948,6578 19245,6379 19276,6359 19405,6276 19578,6165 19594,6155 19759,6049 19957,5941
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
@@ -3019,7 +3019,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1; mittlerweile (Januar 2025) ist es wieder da
-#: last_checked: 2025-05-15
+#: last_checked: 2025-06-04 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 	RW2; 12543,11521 12645,11673
@@ -3134,7 +3134,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-06
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3405,7 +3405,7 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="318031558" version="15"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, bis Höhe Pasteurstr. bis auf die Deckschicht fertiggestellt; weiter nordöstlich wird noch gebaut vvv
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-06-04 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (BA Pankow) vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
@@ -3444,8 +3444,8 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: source_id: viz2021:13.593488,52.449407,07.11.2022,15:00 (inaktiv)
 #: source_id: viz2021:13.45463,52.532024,04.11.2024,11:00 (bis 31.01.2025) (inaktiv) (bis 14.04.2025) (bis 30.04.2025) (bis 30.05.2025) (bis 30.06.2025)
 #: osm_watch: way id="420112505" version="13"
-#: osm_watch: way id="420112509" version="15"
-#: osm_watch: way id="966685279" version="7"
+#: osm_watch: way id="420112509" version="16"
+#: osm_watch: way id="966685279" version="8"
 #: last_checked: 2025-05-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
@@ -5314,7 +5314,7 @@ asphaltiert	RW1;RW1 -1102,3345 -1054,3328 -1026,3321
 etwa zur Hälfte neu asphaltiert, danach Verbundsteinpflaster	RW1; 17211,7280 17286,7173
 Verbundsteinpflaster	RW1; 17286,7173 17352,7051 17459,6854 17510,6751
 neu asphaltiert	RW1; 17286,7173 17211,7280
-	RW3;RW1 18001,7121 18010,7137
+	RW3;RW1 17990,7115 18010,7137
 asphaltiert, uneben	RW1; 18010,7137 18086,7243 18165,7371 18198,7425 18256,7520
 Verbundsteinpflaster	RW1; 18256,7520 18267,7537 18382,7724 18406,7760 18471,7862 18577,8033
 neu asphaltiert	RW1; 18577,8033 18626,8114 18657,8163

@@ -561,7 +561,7 @@ Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 1156
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866 (Antrag zum Radverkehr auf der Oderbrücke)
 #: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023) (inaktiv)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
-#: last_checked: 2025-05-14
+#: last_checked: 2025-06-06
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11593,7237 11607,7145 11617,7083 11652,6879
@@ -2739,7 +2739,7 @@ Braunschweiger Ufer: Parkweg	Q1 13077,5893 12722,5831
 Zeppelinstr.: Asphalt	Q0 18700,6604 18417,6775 18240,6845
 #: corrected_by: srt (von Kopfsteinpflaster Q2 -> Asphalt Q0)
 Zeppelinstr.: Asphalt	Q0 18240,6845 18041,6924 17919,6968
-Roedernstr.: Beton	Q0- 18001,7121 18019,7071
+Roedernstr.: Beton	Q0- 17990,7115 18012,7096 18019,7071
 Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2+ 18019,7071 18041,6924
 Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 18041,6924 18059,6804 18068,6748
 (Roedernstr. - Edisonstr.): kleinteiliges, unebenes Kopfsteinpflaster	Q2 18059,6804 17981,6793
@@ -2880,7 +2880,10 @@ Treseburger Ufer: wassergebundene Decke	Q1 12507,5860 12636,5896 12699,5909
 (Treseburger Ufer - Rungiusstr.): Kopfsteinpflaster	Q2 12699,5909 12736,5913
 # REMOVED --- #: XXX Asphalt durch Betonpflaster ersetzt --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2016/pressemitteilung.502417.php
 (Treseburger Ufer - Rungiusstr.): Betonpflaster	Q1+ 12736,5913 13064,5953
-Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q0- 13532,5987 13646,6019 13766,6019 14002,5936 14138,5818 14223,5658 14221,5626 14238,5596 14270,5572 14323,5455 14340,5406
+Delfter Ufer: glatt gepflastert	Q1- 13483,5973 13532,5987
+#: historical_note: früher Q0-, mittlerweile (2025) eher Q1+
+Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q1+ 13532,5987 13648,6013 13778,6018 13904,5983 14002,5936 14138,5818 14223,5658 14221,5626 14238,5596 14270,5572
+Delfter Ufer: guter Asphalt	Q0 14270,5572 14323,5455 14340,5406
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14323,5395 14236,5393
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14323,5455 14236,5393
 (Späthstr. - Weg an der Teltowkanalautobahn, Rampe): gutes Verbundsteinpflaster	Q0 14392,5453 14331,5613 14308,5627
@@ -13933,7 +13936,7 @@ Wallenbergstr.: Kopfsteinpflaster	Q2- 4453,8490 4457,8383 4473,8351
 (Weg entlang der A100, westliche Seite): Betonpflaster mit Fugen	Q1- 14264,8829 14274,8816 14278,8796 14287,8688
 (Weg entlang der A100, westliche Seite): Asphalt	Q0 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 (Weg entlang der A100, westliche Seite): Betonpflaster mit Fugen	Q1- 14375,8057 14406,8003 14410,7986
-(Weg entlang der A100, westliche Seite): Asphalt	Q0 14410,7986 14430,7891 14434,7707 14388,7549 14305,7415
+(Weg entlang der A100, westliche Seite): Asphalt	Q0 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
 # 
 (zu den Depotgebäuden): Asphalt	Q0 24700,5633 24716,5613 24734,5592 24733,5553
 (Fürstenwalder Damm - Müggelseedamm): Waldweg, etwas Split	Q1- 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943

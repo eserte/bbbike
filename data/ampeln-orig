@@ -52,11 +52,11 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # REMOVED --- Weißenburger Str.: Gegenverkehrsregelung	X::inwork::alternating -3301,12864
 # 
 #: next_check_id: LIEBENWALDER-2025
-#: source_id: viz2021:13.499675,52.536712,18.03.2025,07:00 (bis 30.05.2025) (bis 06.06.2025) (bis 03.07.2025)
+#: source_id: viz2021:13.499675,52.536712,18.03.2025,07:00 (bis 30.05.2025) (bis 06.06.2025) (bis 03.07.2025) (bis 11.07.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901876221358625089
 #: by: https://pbs.twimg.com/media/GmQgEbLXAAIO1_l?format=jpg&name=4096x4096 (außerdem Einbahnstraßenregelung in der Heiligenstadter Str.)
-#: next_check: 2025-07-03 (VIZ-Verkehrsmeldung)
-#: valid: -20250703
+#: next_check: 2025-07-11 (VIZ-Verkehrsmeldung)
+#: valid: -20250711
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
 #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025) (bis 23.06.2025)
@@ -103,6 +103,7 @@ Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
+#: by: https://entwicklungsstadt.de/gefaehrliche-kreuzung-in-kreuzung-rudi-dutschke-strasse-soll-sicherer-werden/
 #: last_checked: 2025-04-10
 #: next_check: 2025-08-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250521
@@ -517,7 +518,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2025-05-15
+#: last_checked: 2025-06-04 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -3732,7 +3733,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2025-04-15 (mapillary)
+#: last_checked: 2025-06-06
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3948,7 +3949,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2025-05-31 (mapillary)
+#: last_checked: 2025-06-06
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 	X::inwork 12185,7381

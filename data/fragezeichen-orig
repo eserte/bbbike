@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-06
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -2931,7 +2931,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: osm_watch: way id="764003865" version="7"
 #: osm_watch: way id="764003862" version="23"
 #: priority: #D
-#: last_checked: 2025-05-23 (Radweg komplett fertig, Grünbeschichtung fehlt noch) vvv
+#: last_checked: 2025-06-06 (Radweg komplett fertig, Grünbeschichtung fehlt noch) vvv
 #: check_frequency: 60d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?; 11831,8989 11880,8955 11998,8872 12063,8826 12150,8764
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 12330,8636
@@ -3076,7 +3076,7 @@ Gebrüder-Hirth-Str.: Verlängerung in Brandenburg geplant, wann wird die Straße f
 #: osm_watch: way id="901251939" version="4"
 #: osm_watch: way id="889203673" version="5"
 #: XXX Einbahnstraßenregelung fällt dann weg
-#: last_checked: 2025-05-31 (mapillary)
+#: last_checked: 2025-06-06
 #: check_frequency: 60d
 Herrfurthplatz: ein Abschnitt wird "eingezogen"; eventuell wird hier auch asphaltiert?	?::projected 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 # REMOVED (hier wohl nicht) --- Herrfurthplatz: ein Abschnitt wird "eingezogen"; eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964
@@ -3148,14 +3148,14 @@ Herrfurthplatz: ein Abschnitt wird "eingezogen"; eventuell wird hier auch asphal
 #: osm_watch: way id="410242419" version="17"
 #: osm_watch: way id="860638046" version="13"
 #: XXX weitgehend realisiert, nur im Bereich Thomasstraße fehlt noch die Markierung, außerdem kommt vielleicht noch eine Grünbeschichtung sowie einige Radwegschilder fehlen noch
-#: last_checked: 2025-05-31 (mapillary)
+#: last_checked: 2025-06-06
 #: check_frequency: 14d
 #: next_check: 2025-09-30 (infravelo)
 Hermannstr. (Thomasstr. - Werbellinstr.): Bau eines Radfahrstreifens, über längere Abschnitte als PBL	?::inwork 12185,7381 12158,7449 12123,7549 12090,7651 12081,7679 12075,7696 12057,7744 12041,7788 12025,7852 12001,7937 11979,8014
 #: by: https://www.infravelo.de/projekt/hermannstrasse-noerdliche-bauabschnitt/ (vermutlich auch eine Umbenennung, nördlich Werbellinstr., 3. Quartal 2023 - 3. Quartal 2023) (2. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 4. Quartal 2026)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php (anhand der Kilometerangabe hier vermutlich erst einmal nicht?)
 #: by: https://www.berliner-woche.de/bezirk-neukoelln/c-verkehr/senatorin-gibt-gruenes-licht-fuer-sonnenallee-und-hermannstrasse_a388366 (später)
-#: last_checked: 2025-05-31 (mapillary)
+#: last_checked: 2025-06-06
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (infravelo)
 Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstreifens	?::projected 11979,8014 11963,8074 11933,8198 11931,8206 11920,8252 11915,8279 11898,8362 11884,8492 11882,8519 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989
@@ -3209,7 +3209,7 @@ Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 13217,8493 13
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (3. Bauabschnitt (Innstr. - Ederstr.): bis Ende 2025) (mittlerweile voraussichtlich bis 2027)
 #: osm_watch: way id="839040274" version="8"
 #: osm_watch: way id="1136034132" version="5"
-#: last_checked: 2025-03-28
+#: last_checked: 2025-06-06
 #: next_check: 2027-12-31 (kms-sonne website)
 Ederstr.: Planung einer Fahrradstraße	?::projected 13946,7918 13919,7707
 # 
@@ -3229,7 +3229,7 @@ Weichselstr.: Umbau geplant	?::projected 12330,8636 12392,8724 12434,8776 12478,
 #: by: https://www.schillerpromenade.berlin/projekte/umgestaltung-oderstrasse/ (Einbahnstraßenkonzept für Kfz: ab Allerstr. Einbahnstraßen Richtung N+S)
 #: XXX siehe auch qualitaet_s-Eintrag für den nördlichen Abschnitt
 #: note: zurzeit (November 2023, Mai 2024) Bauarbeiten zwischen Okerstr. und Leinestr., Einbahnstraße Richtung Norden, offen für Radfahrer
-#: last_checked: 2025-05-31 (mapillary)
+#: last_checked: 2025-06-06
 #: check_frequency: 180d
 #: next_check: 2027-12-31
 Oderstr.: Planung einer Fahrradstraße (nördlicher Abschnitt)	?::projected 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438
@@ -3588,7 +3588,7 @@ Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,1271
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/sicherer-zur-neuen-schuldrehscheibe-kommen_a409193 (vielleicht sogar eine Fußgängerampel?)
 #: source_id: viz2021:13.439487,52.530759,03.07.2023,10:00 (bis 21.07.2023) (inaktiv)
 #: priority: #D
-#: last_checked: 2025-05-16
+#: last_checked: 2025-06-04 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-07-21
 Kniprodestr./Pasteurstr.: wird hier ein Zebrastreifen gebaut?	?::projected 12723,13934 12766,13942 12758,13896
@@ -3600,7 +3600,7 @@ Am Friedrichshain/Käthe-Niederkirchner-Str.: wird hier ein Zebrastreifen gebaut?
 # 
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7385 (Anordnung eines Fußgängerüberwegs)
 #: priority: #D
-#: last_checked: 2025-05-31 (mapillary)
+#: last_checked: 2025-06-06
 #: check_frequency: 90d
 Emser Str./Ilsestr.: wird hier ein Zebrastreifen gebaut?	? 12610,7104 12648,7080 12681,7068
 # 
@@ -5677,7 +5677,7 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 #: XXX hier waren Asphaltierungsarbeiten, vielleicht im Zusammenhang mit dem Zebrastreifen?
 # REMOVED --- #: note: Halteverbotsschilder bis 5.4.2024
 #: also_indoor: traffic (ex-B)
-#: last_checked: 2025-05-23
+#: last_checked: 2025-06-06
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-04-05
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
@@ -7084,7 +7084,7 @@ Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9
 #: by: https://entwicklungsstadt.de/neubau-niemetzstrassen-bruecke-einschraenkungen-noch-bis-2025/
 #: XXX laut Plänen wird es Richtung Norden eine Fahrradschleuse und Richtung Süden eine Radspur geben; vermutlich wird die Straße während der Bauarbeiten komplett gesperrt
 #: XXX laut Ausschilderung an der Sonnenallee Sperrung ab 21.2.2022 4:30 Uhr
-#: last_checked: 2025-02-10
+#: last_checked: 2025-06-06
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung)
 Niemetzstr.: EÜ wird erneuert, Fahrbahn wird abgesenkt	?::projected 13797,7267 13762,7321
@@ -7320,7 +7320,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1861648648997871936
 #: by: https://pbs.twimg.com/media/GdTPcnFWcAAclkJ?format=jpg&name=large
 #: source_id: viz2021:13.428044,52.51818,14.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis 11/2023) (bis 21.08.2023) (bis 31.08.2023) (bis 25.09.2023) (inaktiv)
-#: source_id: viz2021:13.430192,52.518226,27.11.2024,07:00 (Leitungsarbeiten in der Gegenrichtung, bis 26.03.2025) (bis 25.06.2025) (bis 06.06.2025)
+#: source_id: viz2021:13.430192,52.518226,27.11.2024,07:00 (Leitungsarbeiten in der Gegenrichtung, bis 26.03.2025) (bis 25.06.2025) (bis 06.06.2025) (inaktiv)
 #: note: ursprünglich geplant: Verbreiterung der Radwege
 #: XXX laut rbb und viz wird zwischen Koppenstr. und Straße der Pariser Kommune ein Radfahrstreifen eingerichtet (stimmt aber nicht)
 # REMOVED --- #: XXX in der Realität wird zurzeit zwischen Andreasstr. und der Koppenstr.; mittlerweile bis Straße der Pariser Kommune gearbeitet (Fahrspur abgesperrt, alter Radweg wird abgebrochen, provisorischer Radweg auf dem Gehweg)
@@ -7466,8 +7466,8 @@ Goerdelerdamm: teilweise Verbreiterung des Radwegs, vielleicht auch Asphaltierun
 #: source_id: viz2021:13.29383,52.519215,06.10.2021,14:00 (bis 14.2.2022, Gesamtbaumaßnahme bis Ende 2022) (inaktiv)
 #: source_id: viz2021:13.298076,52.519552,15.02.2022,10:00 (bis 25.4.2022) (mittlerweile inaktiv)
 #: osm_watch: note 4434294 6
-#: osm_watch: way id="1101200759" version="9"
-#: osm_watch: way id="428720064" version="19"
+#: osm_watch: way id="1101200759" version="10"
+#: osm_watch: way id="428720064" version="20"
 #: XXX Werden die temporären Radspuren permanent gemacht? Wird die Radspur noch verlängert?
 #: last_checked: 2025-05-24
 #: check_frequency: 90d
@@ -7656,6 +7656,7 @@ Antwerpener Str./Ostender Str.: Teileinziehung (Modalfilter?)	? 6756,15558 6794,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/centrum-group-projekt-gutenbergstra%C3%9Fe-8-10.1070/#post-24817
 #: by: https://entwicklungsstadt.de/neues-quartier-am-wasser-spreesight-erhaelt-baugenehmigung-in-charlottenburg/ (bis 2027)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/spreesight-gutenbergstra%C3%9Fe-8-10.1070/page-2#post-25053
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="496771672" version="8"
 #: last_checked: 2025-04-09
 #: check_frequency: 360d
@@ -7775,7 +7776,7 @@ Am Treptower Park: Bau einer Ampel	?::inwork 14244,9432 14242,9448 14239,9467
 #: next_check_id: TREPTOWERPARK-2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
 #: XXX Ist bei der Entsiegelung auch dieser Weg betroffen? Wird dieser Weg während der Bauarbeiten gesperrt sein? Mittlerweile: ein ca. 100m langer Abschnitt halbseitig gesperrt
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-06
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-11-01
 Treptower Park: Sanierung im südlichen Parkteil	?::projected 14318,9688 14316,9542 14347,9452 14398,9373 14382,9299
@@ -8989,7 +8990,7 @@ Südparkbrücke: Neubau geplant	?::projected -4048,12107 -4033,12108
 Östliche Bucher-Straßen-Brücke: Ersatzneubau geplant	?::projected 13045,23465 13080,23508
 # 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Umsetzung wird voraussichtlich Ende 2025/Anfang 2026)
-#: last_checked: 2025-03-19
+#: last_checked: 2025-06-06
 #: next_check: 2025-12-31 (berliner-zeitung)
 Blaschkoallee/Onkel-Bräsig-Str./Riesestr.: vermutlich entsteht hier eine Ampel	? 13347,5262 13327,5234 13303,5205
 # 
@@ -9098,7 +9099,7 @@ Am Ried: Umbau der Fahrbahn, in Zukunft versickerungsfähiges Pflaster	? 4622,233
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1542341.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1541398.php
 #: osm_watch: way id="1352120015" version="3"
-#: osm_watch: way id="4603200" version="28"
+#: osm_watch: way id="4603200" version="29"
 #: last_checked: 2025-06-01
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (entwicklungsstadt website)
@@ -9187,6 +9188,7 @@ Maratstr.: Instandsetzung, danach bessere Qualität?	? 20361,14118 20371,14204
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/kiezblock-antonkiez-1426658.php (Realisierung im Laufe des Jahres 2025)
 #: by: https://www.kiezblocks.de/anton/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
+#: osm_watch: way id="4555099" version="24"
 #: note: Teil des Anton-Kiezblocks
 #: last_checked: 2025-05-08 (Amtsblatt)
 Maxstr.: Teileinziehung geplant	? 7738,15838 7781,15804
@@ -9199,6 +9201,13 @@ Gantikow - Vehlow: Bau eines asphaltierten Radwegs (Westseite?)	? -61969,62314 -
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-05-2025-l167_steinstrasse-neuruppin (Fertigstellung ist für Juli 2027 geplant)
 #: next_check: 2027-07-31
 Steinstr. (Neuruppin): Erstellung eines Schutzstreifens	? -30936,57385 -30806,57284 -30682,57189 -30611,57193 -30550,57216 -30548,57214
+# 
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1567660.php (Umsetzung in der zweiten Jahreshälfte 2025)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1414263.php
+#: last_checked: 2025-05-24
+#: check_frequency: 90d
+#: next_check: 2025-12-31
+Nordufer: neue Fahrradstraße geplant	?::projected 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831 6929,14845 7000,14832 7129,14787
 # 
 #: section ^^^
 #: ignore ^^^
@@ -11003,7 +11012,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: http://www.deal-magazin.com/news/143222/Tishman-Speyer-kauft-Buero--und-Wohnprojekt-Elements-in-Berlin (Erwähnung der Uferpromenade)
 #: by: https://entwicklungsstadt.de/berlin-mitte-weiterbau-des-bauprojekts-elements-hat-fahrt-aufgenommen/ (Uferweg nicht Teil des Projekts)
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
-#: last_checked: 2025-05-31 vvv
+#: last_checked: 2025-06-04 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 2
@@ -12102,7 +12111,7 @@ Bebauungsplan 12-49a (Lübars): ändert sich etwas an den bestehenden Straßen?	? 6
 # 
 #: by: https://entwicklungsstadt.de/richtfest-nach-10-monaten-ist-greenpark-das-neue-vorbild-fuer-berlins-wohnungsbau/ (Fertigstellung 2026)
 #: osm_watch: way id="868042603" version="5"
-#: last_checked: 2025-05-15 (Richtfest)
+#: last_checked: 2025-06-06
 #: check_frequency: 270d
 #: next_check: 2026-12-31
 Greenpark: wird es hier öffentlich nutzbare Wege geben?	? 13155,5871 13187,5751 13528,5824 13470,5944 13155,5871
