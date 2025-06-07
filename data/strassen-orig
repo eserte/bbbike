@@ -4827,6 +4827,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: by: https://www.baustellen-doku.info/berlin_heidekrautbahn_reaktivierung_stammstrecke/20230214/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5195&date=20230401
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
+#: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=5195
 #: XXX: bleibt dieser Weg erhalten oder muss er der Heidekrautbahn weichen?
 #: XXX: Bebauungsplan 3-15b
 #: osm_watch: way id="31428032" version="18"
@@ -15966,7 +15967,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-06-04
+#: last_checked: 2025-06-07
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16349,6 +16350,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 (Tränkegraben - Volkradstr.)	NN 17249,10651 17298,10633 17329,10620 17363,10587 17422,10571
 #: osm.highway: service
 (Tränkegraben - Volkradstr.)	N 17422,10571 17503,10544
+# 
 #: next_check_id: ZUMBETRIEBSBHF-2017
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7121
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036637679537/637679537/00220602/02-Anlagen/01/1_Version_vom_03_07_2017.pdf (zweite Karte!)
@@ -16356,8 +16358,9 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2025-06-04
+#: last_checked: 2025-06-07
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
+# 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: entlang des Tränkegrabens
 Agnes-Kraus-Weg	NN 17156,10164 17157,10173 17143,10186 17144,10297 17163,10374 17239,10632 17249,10651 17255,10662 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
@@ -18765,6 +18768,7 @@ Herrfurthstr. (Steglitz)	N 4558,5863 4724,5782
 #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin--steglitz-treitschkestrasse-umbenennung-name-bvv.html (Amtsblatteintrag im Juni 2025, Vollzug der Umbenennung im Oktober 2025 möglich)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1567694.php (Wirksamkeit der Umbenennung 01.10.2025)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Umbenennung)
+#: by: https://entwicklungsstadt.de/umbenennung-mit-signalwirkung-treitschkestrasse-wird-betty-katz-strasse/
 #: XXX Umbenennung in Betty-Katz-Straße im Ausschuss und in der BVV beschlossen vvv
 #: also_indoor: search Treitschkestraße
 #: last_checked: 2025-05-26 (rbb) vvv
@@ -19831,7 +19835,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-06-03 vvv
+#: last_checked: 2025-06-07 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

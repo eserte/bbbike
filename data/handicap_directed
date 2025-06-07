@@ -228,3 +228,5 @@ Matternstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 Petersburger Str. - Ebelingstr.: Ebelingstr. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,124 13530,13014 13481,13128 13598,13180
 Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,115 13598,13180 13481,13128 13434,13234
 Osloer Str.: Umweg von etwa 20m	DH:len=20:h=q2,20 9442,16610 9514,16603
+Rummelsburger Str. -> Mentelinstr.: Bordstein, Umweg	DH:kerb_down:len=70 18010,7137 17847,7356 17833,7351
+Mentelinstr. -> Rummelsburger Str.: ein paar Meter auf dem linken Gehweg, Borstein	DH:h=q3,30:kerb_down 17833,7351 17847,7356 17769,7465

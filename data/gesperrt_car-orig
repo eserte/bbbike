@@ -7,6 +7,7 @@
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9197 (Beschlussempfehlung)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1548659.php (zun‰chst bis Ende 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/folgen-der-a100-bruckensperrung-einbahnstrasse-soll-den-schleichverkehr-in-berlin-westend-reduzieren-13491112.html
+#: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9197 (Vorlage zur Kenntnisnahme, kein Endedatum)
 #: osm_watch: way id="4609226" version="26"
 #: osm_watch: note 4705942 4
 #: source_id: viz2021:13.278443,52.516243,04.04.2025,08:00 (kein Endedatum)
@@ -21,6 +22,7 @@ Soorstr.: tempor‰re Einbahnstraﬂenregelung f¸r Kfz	1 1792,11889 1917,12367
 #: by: https://www.berlin.de/imgscaler/puEnoSEo41XwuEXS5hLP6sgP8vuUAy1VG38eHO7IOQQ/rbig2zu1/L3N5czExLXByb2QvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI1L21hcmdpbl8xMDAwXzUwMF9jMWI3M2Q0NDM4ZmI5OWM5Njc1OTM0N2RlMTkxMDIyZF92ZXJrZWhyc3plaWNoZW5wbGFuX2JhY3cuanBn.jpg
 #: by: https://www.tagesspiegel.de/berlin/bezirke/zu-viel-schleichverkehr-bezirk-ordnet-neue-einbahnstrassen-in-berlin-westend-an-13530130.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/temporare-einbahnstrassen-in-der-lindenallee-und-ahornallee/
+#: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9197 (Vorlage zur Kenntnisnahme, kein Endedatum)
 #: priority: #D vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2025-04-30 vvv
@@ -960,10 +962,12 @@ Krumme Str.	1 4032,12167 3992,12063 3976,11869
 Kirchplatz: gesperrt f¸r Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,14749
 #: by: http://www.flickr.com/photos/lapidarium42/7708833948/in/pool-gwb
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11971 (Einwohneranfrage -> "keine konkreten Planungen")
 #: osm_watch: way id="155071540" version="24"
 #: XXX wird hier in eine "echte Einbahnstraﬂe" umgewandelt?
-#: last_checked: 2025-03-28
-#: check_frequency: 60d
+#: last_checked: 2025-06-07
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 180d (weil es keine konkreten Planungen gibt)
 # REMOVED --- #: next_check: 2024-04-24
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
@@ -2224,4 +2228,6 @@ Schwedter Str.	1 10506,14521 10468,14636
 Schwedter Str.	1 10448,14707 10468,14636
 # 
 (Wendenschloﬂstr. - Zur Nachtheide)	1 23121,2320 23019,2296
+# 
+Rummelsburger Str./Mentelinstr.	3nocross 17769,7465 17847,7356 18010,7137
 # 

@@ -2674,3 +2674,6 @@ Weserstr.	1 14550,11732 14622,11685 14651,11666
 Schwedter Str.	1 10506,14521 10468,14636
 Schwedter Str.	1 10448,14707 10468,14636
 (Wendenschloßstr. - Zur Nachtheide)	1 23121,2320 23019,2296
+Rummelsburger Str./Mentelinstr.	3nocross::ignrte 17769,7465 17847,7356 18010,7137
+Mentelinstr. -> Rummelsburger Str.: Rummelsburger Str./Mentelinstr.	3::igndisp 17833,7351 17847,7356 17769,7465
+Rummelsburger Str. -> Mentelinstr.: Rummelsburger Str./Mentelinstr.	3::igndisp 18010,7137 17847,7356 17833,7351

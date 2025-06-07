@@ -501,7 +501,7 @@ Seidelstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 362
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-06-03 (mapillary) vvv
+#: last_checked: 2025-06-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 16747,6813 16720,6845
@@ -592,5 +592,13 @@ Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 #: next_check: 2025-07-15
 #: valid: -20250715
 Osloer Str.: Umweg von etwa 20m	DH:len=20:h=q2,20 9442,16610 9514,16603
+# 
+#: next_check_id: BRUECKEANDERWUHLHEIDE-2025
+#: last_checked: 2025-06-07 vvv
+#: next_check: 2025-06-27 vvv
+Rummelsburger Str. -> Mentelinstr.: Bordstein, Umweg	DH:kerb_down:len=70 18010,7137 17847,7356 17833,7351
+Mentelinstr. -> Rummelsburger Str.: ein paar Meter auf dem linken Gehweg, Borstein	DH:h=q3,30:kerb_down 17833,7351 17847,7356 17769,7465
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: temporary ^^^

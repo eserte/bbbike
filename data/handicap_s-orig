@@ -77,7 +77,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2025-05-21
+#: last_checked: 2025-06-07
 #: check_frequency: 90d
 #: next_check: 2026-08-22
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -268,7 +268,7 @@ Südkreuz: Bauarbeiten, Engstellen	q3::inwork 7838,7848 7837,7899
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-06-03 (mapillary) vvv
+#: last_checked: 2025-06-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-06-18 (VIZ-Verkehrsmeldung) vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -735,15 +735,17 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Oberschöneweide ###
 # 
-# REMOVED (wenn der Kfz-Verkehr fahren darf, dann gibt's hoffentlich für den Radverkehr keine Einschränkungen mehr) --- #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
-# REMOVED --- #: last_checked: 2025-06-04 vvv
-# REMOVED --- #: next_check: 2025-06-07 (Freigabe des Kfz-Verkehrs, dann vielleicht auch keine Einschränkungen für den Radverkehr mehr?) vvv
-# REMOVED --- Rummelsburger Str.: Engstellen, einige Fußgänger	q3::inwork; 18010,7137 17847,7356
-# REMOVED --- An der Wuhlheide: Engstellen neben dem Radweg	q1::inwork; 18010,7137 18225,7004
-# REMOVED --- # REMOVED (ab 2025-06-06 14:00 Uhr wird der Kfz-Verkehr möglich sein, dann möglicherweise auch für den Radverkehr keine Einschränkungen mehr) --- Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18010,7137 17990,7115
-# REMOVED --- # REMOVED --- Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 17990,7115 18010,7137
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: last_checked ^^^
+#: next_check_id: BRUECKEANDERWUHLHEIDE-2025
+#: last_checked: 2025-06-07 vvv
+#: check_frequency: 10d vvv
+#: next_check: 2025-06-27 vvv
+Rummelsburger Str.: Engstellen durch unnötige Absperrungen, einige Fußgänger	q2::inwork; 18010,7137 17847,7356
+An der Wuhlheide: Engstellen durch unnötige Absperrungen, einige Fußgänger	q1::inwork; 18010,7137 18225,7004
+# REMOVED (ab 2025-06-06 14:00 Uhr wird der Kfz-Verkehr möglich sein, dann möglicherweise auch für den Radverkehr keine Einschränkungen mehr) --- Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18010,7137 17990,7115
+# REMOVED --- Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 17990,7115 18010,7137
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (beendet) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: also_indoor: traffic (B,W,G,ex-H[ungenau]) vvv --- #: last_checked: 2023-09-12 vvv --- #: check_frequency: 14d vvv --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000 --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 # REMOVED (beendet) --- #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020 (Termin wurde nicht gehalten) --- #: last_checked: 2020-10-04 --- #: next_check: 2020-07-31 --- #: valid: -20200731 --- Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
@@ -5273,6 +5275,7 @@ Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 # 
 #: by: mapillary
 #: by: https://www.berliner-woche.de/pankow/c-bauen/baumfaellungen-fuer-radstellplaetze_a427150
+#: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=5131
 #: note: Ausschilderung: Privatgelände... Fahrrad fahren verboten...
 #: XXX zurzeit Umbauarbeiten, Fahrbahn gesperrt, laut Baustellenschild bis April 2025
 #: osm_watch: way id="542223826" version="15"
