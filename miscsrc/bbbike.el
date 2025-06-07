@@ -1066,8 +1066,34 @@
 (defun bbbike--normalize-url (url)
   (cond
    ((null url) url)
+   ; nitter may not work anymore
    ((string-match "^https://\\(?:nitter\\.net\\|nitter\\.cz\\|nitter\\.it\\|nitter\\.tux\\.pizza\\|nitter\\.perennialte\\.ch\\)\\(/.*/status/.*?\\)\\(?:#.*\\)?$" url) ; nitter -> twitter
     (concat "https://twitter.com" (match-string 1 url)))
+   ; BVV/BA Berlin changes
+   ((string-match "^https?://www\\.berlin\\.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-mitte.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-pankow.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-spandau.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-steglitz-zehlendorf.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://www\\.berlin\\.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
+    (concat "https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
    (t url)))
 
 ;;; make Mapillary URLs smaller
