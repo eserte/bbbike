@@ -1108,7 +1108,7 @@
                                       (mapcar
                                        (lambda (param)
                                          (when (string-match-p
-                                                (regexp-opt '("focus" "x" "y" "zoom" "pKey"))
+                                                (concat "^" (regexp-opt '("focus" "x" "y" "zoom" "pKey")) "$")
                                                 (car (split-string param "=")))
                                            param))
                                        params)))
