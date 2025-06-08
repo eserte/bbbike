@@ -209,6 +209,8 @@ Wielandstr. -> Hauptstr.: Mittelstreifen, zunächst den linken Gehweg benutzen	DH
 Ellwanger Str. -> Attilastr.: Mittelstreifen, zunächst den linken Gehweg benutzen	DH:h=q3,40 7382,4503 7450,4397 7482,4416
 Attilastr. -> Ellwanger Str.: Mittelstreifen, Umweg bis zur Neckarsulmer Str.	DH:len=70 7366,4345 7410,4373 7450,4397 7382,4503
 Zechliner Str. -> Landsberger Allee: sehr ungünstige Ampelschaltung	DH:t=120 16304,14434 16314,14361 16590,14386
+Brunnenstr. -> Humboldthain: Mittelstreifen, zunächst den linken Gehweg benutzen	DH:h=q3,30 9267,15790 9255,15816 9092,15789
+Humboldthain - Brunnenstr.: Mittelstreifen, Ampel zur rechten Hand benutzen	DH:tl:len=60 9092,15789 9255,15816 9242,15843
 Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21166,12023 21152,11945
 Südliche Blumberger-Damm-Brücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 21199,12258 21190,12193
 Landsberger Allee	DH:t=60 19205,14980 19196,14976 19200,14963

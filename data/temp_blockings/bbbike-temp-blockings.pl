@@ -14853,6 +14853,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1450216.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1538769.php (kein Umzug dieses Jahr)
 #: by: https://www.visitberlin.de/de/event/64-koepenicker-sommer
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409180385/volksfest-koepenicker-sommer-2025-steht-an-mit-diesen-aenderungen.html
 #: source_id: viz2021:13.57552,52.44722,13.06.2024,06:00 (hier auch Alt-Köpenick gesperrt, bis 17.06.2024) (inaktiv)
 #: note: früher auch "vielleicht auch Sperrung im Kietz (Kietzer Sommer)"
 # REMOVED (Kietzer Sommer) ---	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
@@ -14866,6 +14867,8 @@ EOF
 	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
 	2::temp 22284,4653 22355,4660
 	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
+Streetfood-Bereich am Kietzgrabensteg	2::temp 22514,4632 22531,4605
+Streetfood-Bereich am Amtswäldchen	2::temp 22458,4565 22531,4605 22585,4634
 # REMOVED ---	2::temp 22324,4586 22314,4604
 EOF
      },
@@ -22355,9 +22358,10 @@ EOF
      },
      { from  => 1719810000, # 2024-07-01 07:00, # undef, # 
        until => undef, # 1731652771, # $isodate2epoch->("2024-11-15 17:00:00"), # 1730822400, # 2024-11-05 17:00, # 1371066874, # undef, # XXX
-#       text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
-#       text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis voraussichtlich 15.11.2024 17:00',
-       text  => 'Kiautschoustr.: Bauarbeiten an der Tegeler Str., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
+#      text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis voraussichtlich 15.11.2024 17:00',
+#      text  => 'Kiautschoustr.: Bauarbeiten an der Tegeler Str., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Kiautschoustr.: Bauarbeiten zwischen Tegeler Str. und Samoastr., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
@@ -22372,7 +22376,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-06-05 (traffic)
+#: last_checked: 2025-06-08
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -46330,7 +46334,7 @@ EOF
 #: osm_watch: way id="1309204624" version="1"
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-03-12
+#: last_checked: 2025-06-08 (traffic)
 #: check_frequency: 90d (traffic check)
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 	q3::inwork; 23251,12146 23017,12177
@@ -46377,7 +46381,7 @@ EOF
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
 #: note: Aber eigentlich kann man die Fußgängerampel benutzen...
-#: last_checked: 2025-04-16 vvv
+#: last_checked: 2025-06-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 vvv
 #	q4::inwork; 8453,13611 8572,13671
@@ -47698,7 +47702,7 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-06-01 vvv
+#: last_checked: 2025-06-08 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -47944,7 +47948,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten)
-#: last_checked: 2025-05-15
+#: last_checked: 2025-06-08
 #: check_frequency: 30d
 #: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -48264,13 +48268,26 @@ EOF
      },
      { from  => 1749297422, # 2025-06-07 13:57
        until => 1755381600, # 2025-08-17 00:00
-       text  => 'Lange Str.: Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis 16.08.2025',
+       text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis 16.08.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (none)
 #: last_checked: 2025-06-07
 #: next_check: 2025-08-16 (Halteverbotsschilder)
 	q4::inwork; 12238,11931 12413,11901
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Lange Str.: zwischen Krautstr. und Andreasstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=779073#post779073 (nicht eindeutig; durchgestrichenes Radfahrer-frei-Schild)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
+#: also_indoor: traffic (none)
+#: last_checked: 2025-06-07
+#: check_frequency: 90d
+Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
 EOF
      },
     );

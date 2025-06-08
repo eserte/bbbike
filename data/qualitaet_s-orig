@@ -504,7 +504,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20241203-mobilitaetsrat-mitte-protokoll-barrierefrei-entwurf.pdf (Erwähnung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2025-05-24 vvv
+#: last_checked: 2025-06-08 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernen des Projekts) vvv
 #: osm_watch: way id="169459736" version="16"
@@ -1171,7 +1171,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (osm note)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
@@ -1754,8 +1754,11 @@ Kyllmannstr. (Lichterfelde): Kopfsteinpflaster	Q2 3500,4146 3467,4247
 #: confirmed_by: srt, mapillary
 Kyllmannstr. (Lichterfelde): Asphalt	Q0 3518,4106 3583,4011 3632,3943 3719,3806
 #: by: ^^^
-Maxstr.: mäßiges Kopfsteinpflaster	Q2 7781,15804 7738,15838
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Maxstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7781,15804 7738,15838
+#: confirmed_by: srt
 Maxstr.: Asphalt	Q0 7738,15838 7663,15906 7622,15946
+#: confirmed_by: srt
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7622,15946 7543,16016 7474,16086
 Genter Str.: Asphalt	Q0 7270,15307 7138,15437 7064,15515 7012,15571
 Genter Str.: mäßiges Kopfsteinpflaster	Q2 7012,15571 6919,15666 6802,15790 6661,15921
@@ -3405,8 +3408,9 @@ Köbisstr.: Gehwegplatten, einige Schäden	Q1+ 7103,11247 6851,11346
 zum Hiroshimasteg: Kleinsteinpflaster	Q1- 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188
 Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11917,11186 11944,11152
-(Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
-(Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
+(Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2 9255,15816 9092,15789
+(Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2+ 9092,15789 8934,15740
+Humboldtsteg: unebene Holzbohlen	Q2 8934,15740 8886,15799
 #: historical_note: früher (bis Frühjahr 2023) Kopfsteinpflaster, Q2
 Wasserweg: neu asphaltiert	Q0 15678,8911 15698,8903 15873,8884
 #: historical_note: früher (bis Frühjahr 2023) fester Sandweg, Q2
@@ -12326,7 +12330,7 @@ Kirschlorbeerweg: unbefestigte Straße	Q2 11069,23647 11028,23624 10927,23816
 # REMOVED --- (Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9310,245 9253,370 9178,556
 Zachenberger Str.: Verbundsteinpflaster	Q1+ 19889,9400 19824,9405 19780,9409
 Am S-Bhf. Bellevue: Gehwegplatten	Q1 6689,12632 6516,12650
-Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
+Gerichtstr.: Verbundsteinpflaster	Q1 7808,15417 7765,15417
 #: note: im Wendehammer
 Gerichtstr.: Kleinsteinpflaster	Q1 7765,15417 7723,15417
 Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
@@ -13364,7 +13368,7 @@ Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7739,14119 7784,14147 7875,14204
 # REMOVED (Fläche verkleinert und nun woanders) --- #: osm_watch: way id="642581102" version="11"
 #: osm_watch: way id="237716413" version="16"
 #: XXX bleibt hier der Asphalt oder kommt hier auch Kleinsteinpflaster hin?
-#: last_checked: 2025-04-16
+#: last_checked: 2025-06-08
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-10-31
 Otto-Weidt-Platz: Asphalt	Q0 7778,14059 7850,14100
@@ -13516,6 +13520,7 @@ Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7973,14195
 Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7968,14202
 #: historical_note: früher (bis Ende 2024) war die Wegführung etwas anders und der Weg asphaltiert
 (Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Kleinsteinpflaster	Q1 7861,14133 7818,14117 7778,14059
+(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Kleinsteinpflaster	Q1 7861,14133 7846,14110 7850,14100
 (Gewerbegebiet Glienicker Weg): Asphalt	Q0 20839,3163 20919,3082 21068,2926
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): wassergebundene Decke	Q1- 21440,300 21435,323
 Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
@@ -16904,6 +16909,7 @@ Fritschweg: Kopfsteinpflaster	Q2 4118,6091 4123,6163 4142,6166 4173,6284
 #: confirmed_by: srt
 Ludwig-Barnay-Platz: Asphalt	Q0 4352,6813 4482,6866
 Mülhauser Str.: Kopfsteinpflaster	Q2 11354,14187 11471,14143
+#: confirmed_by: srt
 Raabestr.: Kopfsteinpflaster	Q2 11465,14122 11657,14018
 Am Schülerheim: Kopfsteinpflaster	Q1 2140,5623 1980,5663
 Am Schülerheim: asphaltiert	Q0 1980,5663 1856,5689
@@ -34071,5 +34077,9 @@ Einmündungsbereich asphaltiert	Q0 -326,5042
 Kreuzungsbereich asphaltiert	Q0 5471,5732
 Kreuzungsbereich mit Kleinsteinpflaster	Q2 19495,6029
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 4441,12559
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 7543,16016
+Einmündungsbereich asphaltiert	Q0 7441,15909
+Kreuzungsbereich asphaltiert	Q0 7354,15817
+Kreuzungsbereich asphaltiert	Q0 7796,15590
 #: ignore ^^^
 #: section ^^^
