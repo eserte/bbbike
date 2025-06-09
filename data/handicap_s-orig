@@ -56,8 +56,8 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="17"
-#: osm_watch: way id="1072662717" version="19"
-#: last_checked: 2025-06-03
+#: osm_watch: way id="1072662717" version="20"
+#: last_checked: 2025-06-08 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -343,7 +343,7 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 #: next_check_id: WEGEDORN-2025
 #: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025) (bis 30.04.2025) (bis 11.04.2025) (bis 30.04.2025) (bis 11.04.2025 + weitere Arbeiten) (inaktiv)
 #: source_id[inactive]: bvg2024:160#HIM_FREETEXT_233161 (ohne Endedatum)
-#: source_id: bvg2024:160#HIM_FREETEXT_233156 (ohne Endedatum)
+#: source_id[inactive]: bvg2024:160#HIM_FREETEXT_233156 (ohne Endedatum)
 #: source_id: viz2021:13.526157,52.423721,11.04.2025,20:00 (bis 31.05.2025) (inaktiv)
 #: source_id: viz2021:13.526157,52.423721,11.04.2025,16:29 (zwischen Rudower und Semmelweisstr., bis 31.05.2025) (bis 30.06.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nördlich Semmelweisstr. Anfang März 2025 offen, der südliche Abschnitt Ende April 2025)
@@ -406,10 +406,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/burgsdorfstra%C3%9Fe-1-ruine.390/#post-24473
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12918 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12957 (Antrag: dauerhafte Sperrung der Straße)
-#: osm_watch: way id="549316654" version="38"
+#: osm_watch: way id="549316654" version="39"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-05-18 (osm)
+#: last_checked: 2025-06-09 (osm)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d
 #: valid: 20171026-
@@ -1138,10 +1138,10 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
 #: osm_watch: way id="914159830" version="8"
 #: osm_watch: way id="435611568" version="14"
-#: osm_watch: note 3969997 12
-#: last_checked: 2025-05-24 (osm note, mapillary)
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-06-02
+#: osm_watch: note 3969997 13
+#: last_checked: 2025-06-09
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-06-02
 Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,14935 17638,14945
 # 
 #: note: Halteverbotsschilder gelten bis zum 30.04.2026
@@ -1164,7 +1164,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
 #: also_indoor: traffic (B,T,ex-H,ex-G)
-#: last_checked: 2025-06-04 (traffic)
+#: last_checked: 2025-06-09
 #: check_frequency: 14d (traffic)
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
@@ -1216,7 +1216,7 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 #: source_id: viz2021:13.584338,52.539646,07.04.2025,10:00 (nur Kfz-Verkehr, bis 16.06.2025) (bis 17.06.2025 + weitere Arbeiten)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: osm_watch: note 3581028 7
-#: last_checked: 2025-04-02 vvv
+#: last_checked: 2025-06-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-31 (BVG-Meldung) vvv
 # REMOVED --- #: next_check: 2025-07-31 vvv
@@ -2168,7 +2168,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: by: https://www.nd-aktuell.de/artikel/1187963.bvg-oepnv-in-berlin-tram-in-der-investitionsfalle.html (2028/2029?)
 #: osm_watch: way id="223184082" version="8"
-#: last_checked: 2025-01-17
+#: last_checked: 2025-06-09
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -2830,6 +2830,7 @@ Kottesteig: Bordsteine, Fußgänger	q2 6868,5262 6820,5237 6806,5230
 (Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498
 (Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18644,17349 18650,17367 18708,17415 18737,17482 18756,17498 18784,17525 18831,17663 18937,17738 18991,17776 19045,17832 19097,17869 19110,18015 19127,18091 19213,18195 19236,18223 19251,18248 19249,18351 19265,18400 19291,18456
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19213,18195 18969,18448
+(Krugwiesen): Fußgänger	q1 18756,17498 18775,17479 18828,17463 18784,17525
 Stritteweg: vereinzelte Stufen und schmale Rampen	q3 -5236,11204 -5256,11142
 Künstlerweg: enge Straße	q1 -7418,7842 -7334,7703 -7258,7735 -7340,7873
 #: XXX_prog: Bordsteine (2x)
@@ -4836,8 +4837,8 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Fußweg zum Wohngebiet Sewanstr.): Fußgänger, Bordstein	q4 17882,10128 17889,10163 17883,10185
 #: note: Grünanlage, für Radfahrer freigegeben
 (Altonaer Str. - Händelallee): einige Fußgänger	q1 6354,12278 6280,12222
-(Fußgängerbrücke S-Bhf. Marzahn - Eastgate): Rampe	q3 19653,15544 19671,15561 19657,15527
-(Fußgängerbrücke S-Bhf. Marzahn - Eastgate): Fußgänger	q4 19657,15527 19672,15519 19687,15513 19767,15473
+(Fußgängerbrücke S-Bhf. Marzahn - Eastgate): Rampe	q3 19639,15519 19653,15530 19671,15561 19657,15527 19673,15560 19659,15525
+(Fußgängerbrücke S-Bhf. Marzahn - Eastgate): Fußgänger	q4 19659,15525 19672,15519 19687,15513 19797,15460
 (Fußgängerbrücke - Märkische Allee): Fußgänger	q3 19687,15513 19694,15529 19733,15511
 (Edeka-Parkplatz): Parkplatzverkehr	q2 18846,8616 18870,8646 18880,8689
 (Edeka-Parkplatz - Rheinsteinstr.): Fußgänger	q3 18880,8689 18865,8740
@@ -5452,6 +5453,8 @@ Flughafen Tempelhof, Eingang Herrfurthstr.: zahlreiche Bodenschwellen	q2 11418,8
 Loerkesteig: Bordstein	q2 2873,24313 2925,24350
 Loerkesteig: Bordstein	q3 2956,24373 2969,24382
 #: XXX_prog ^^^
+# 
+(Bitterfelder Str./Otto-Rosenberg-Str. - Weg entlang der S-Bahn): enger Trampelpfad	q3 19896,16611 19890,16559
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

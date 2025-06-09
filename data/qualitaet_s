@@ -5356,6 +5356,7 @@ Dorfstr. (Falkenberg): schlechtes Kopfsteinpflaster	Q3 19154,18498 19036,18521
 (Falkenberger Krugwiesen - Hohenschönhauser Str.): Verbundsteinpflaster	Q1 19772,18064 19679,18119 19410,18200 19293,18249 19251,18248
 (Falkenberger Krugwiesen - Passowstr.): wassergebundene Decke	Q1 18991,17776 18974,17796
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Verbundsteinpflaster	Q1 19213,18195 18969,18448
+(Krugwiesen): wassergebundene Decke	Q1 18756,17498 18775,17479 18828,17463 18784,17525
 Falkenberger Fußsteig: Asphalt, einige Wurzelhebungen	Q0 18922,18436 18761,18480 18507,18541 18215,18629
 (Falkenberger Fußsteig - Dorfstr./Wartenberg): Asphalt	Q0 18185,18641 18215,18629
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18737,18380 18761,18480 18864,18772
@@ -5406,7 +5407,9 @@ Leunaer Str.: Asphalt	Q0 20193,17196 20352,17118
 Premnitzer Str.: Asphalt	Q0 20137,17087 20363,16976
 Premnitzer Str.: Gras	Q3 20363,16976 20376,16970
 (Leunaer Str. - S-Bahnhof Mehrower Allee): Verbundsteinpflaster	Q1 20352,17118 20410,17093 20420,17110 20439,17103
-(Weg entlang der S-Bahn): Asphalt	Q0 20036,16299 20152,16512 20376,16970 20417,17060
+(Weg entlang der S-Bahn): Asphalt	Q0 20036,16299 20158,16519
+(Weg entlang der S-Bahn): Asphalt, einige Wurzelhebungen	Q0 20158,16519 20376,16970
+(Weg entlang der S-Bahn): Asphalt	Q0 20376,16970 20417,17060
 (Weg entlang der S-Bahn): Verbundsteinpflaster	Q1 20417,17060 20426,17078 20439,17103 20467,17151
 (Weg entlang der S-Bahn): Asphalt	Q0 20467,17151 20582,17392
 (Weg entlang der S-Bahn): wassergebundene Decke	Q1 20582,17392 20657,17543
@@ -7554,7 +7557,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 (Fischerstr. - Lückstr.): unbefestigter Weg, etwas Schotter	Q2 16404,10286 16488,10381 16516,10448
 (Fischerstr. - Lückstr.): Beton mit Schäden	Q2 16516,10448 16501,10460 16572,10613 16587,10613
 (Fischerstr. - Lückstr.): Beton mit Schäden	Q1 16587,10613 16601,10650
-(Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
+(Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): leicht unebener Asphalt	Q0 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
 Neue Jakobstr. [Wohngebiet]: Beton, Kopfsteinpflasterabschnitt	Q1 11131,11579 11081,11614
 Neue Jakobstr. [Wohngebiet]: Asphalt	Q0 11081,11614 11017,11658 10963,11695
@@ -10787,7 +10790,7 @@ Am Ortsrand: unbefestigte Straße	Q2 -4645,9365 -4760,9343
 (Zufahrtsstraße am Einkaufszentrum): Verbundsteinpflaster	Q1 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826
 (Zufahrtsstraße am Einkaufszentrum): Asphalt	Q0 9478,15826 9328,15806 9267,15790
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): Verbundsteinpflaster	Q1 9644,15780 9629,15803 9592,15800
-(Falkenberger Fußsteig - Hellersdorfer Weg): Schotterweg	Q2 19679,18119 19820,18091
+(Falkenberger Fußsteig - Hellersdorfer Weg): wassergebundene Decke	Q1 19679,18119 19736,18118 19765,18099 19820,18091
 Pommersche Str.: Kopfsteinpflaster	Q2 4351,9633 4224,9690
 Benno-König-Str.: Asphalt	Q0 18374,4307 18434,4363 18596,4517
 Wagner-Régeny-Allee: Asphalt	Q0 19162,3935 19130,3969 18596,4517 18487,4638 18296,4850
@@ -10886,7 +10889,8 @@ Metropolitan Park: unbefestigte Baustraße, Schotter	Q2 -8064,13534 -8088,13594
 Metropolitan Park: Asphalt	Q0 -8088,13594 -7984,13649 -7926,13709 -7893,13781 -7894,13878 -7928,13967 -8019,14036 -8095,14056 -8183,14041
 (Metropolitan Park - Brunsbütteler Damm): Asphalt	Q0 -7893,13781 -7720,13839
 (Einbecker Str. - Frankfurter Allee): geflickter Asphalt	Q1 17020,11748 17034,11797 17221,11777 17251,11789
-(Otto-Rosenberg-Str. - Weg entlang der S-Bahn): Asphalt	Q0 19872,16563 19890,16559 19931,16568 20152,16512
+(Otto-Rosenberg-Str. - Weg entlang der S-Bahn): Asphalt	Q0 19872,16563 19881,16561 19890,16559 19931,16568 20158,16519
+(Bitterfelder Str./Otto-Rosenberg-Str. - Weg entlang der S-Bahn): unbefestigt	Q2 19896,16611 19890,16559
 Märkische Allee [Wohngebiet]: Asphalt	Q0 20459,16697 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
 David-Friedländer-Weg: Betonpflaster	Q0 20727,18726 20901,18793 21038,18851 21036,18888 21028,18915 20998,18980
 Christian-Dohm-Weg: Betonpflaster	Q0 20760,18812 20894,18861 21028,18915
@@ -12052,7 +12056,7 @@ Auguststr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 22743,11540 22920,11552 
 Herweghstr.: mäßiges Kopfsteinpflaster	Q2 17476,4337 17261,4267
 Rotdornstr.: guter Asphalt	Q0 5139,7216 5141,7158 5121,7132 5081,7112
 Maratstr.: Asphalt	Q0 20156,12311 20170,12469 20197,12688 20230,12970 20237,13027 20263,13271 20290,13518 20321,13766 20348,14005
-Maratstr.: Asphalt mit Schäden	Q1 20348,14005 20361,14118 20371,14204 20376,14244
+Maratstr.: Asphalt	Q0 20348,14005 20361,14118 20371,14204 20376,14244
 Trachenbergring: Kleinsteinpflaster	Q1 8030,2423 8102,2647
 Trachenbergring: Beton	Q0 8102,2647 8136,2787 8208,2771 8235,2768 8257,2775 8308,2629 8348,2524 8289,2478 8164,2381 8129,2390
 Im Lesachtal: Verbundsteinpflaster	Q0 10349,2188 10428,2109 10466,2071 10517,2183 10549,2257
@@ -13290,8 +13294,10 @@ Lemkestr.: Asphalt	Q0 26610,14049 26464,13884
 Lemkestr.: Beton	Q0 26464,13884 26301,13691 26120,13486 25961,13304
 Lemkestr.: Asphalt	Q0; 25961,13304 25872,13191 25801,13101
 Lemkestr.: Kopfsteinpflaster	Q2; 25801,13101 25872,13191 25961,13304
-Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553
+Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25620,12872
+Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25534,12763 25363,12553
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
+Lemkestr.: Asphalt	Q0 25620,12872 25534,12763
 Lemkestr.: Asphalt	Q0 25363,12553 25191,12343
 Lemkestr.: Asphalt	Q0 25109,12196 25072,12107
 Stirnerstr.: guter Asphalt	Q0 5905,5088 6066,5045
@@ -16681,7 +16687,7 @@ Dualastr.: Beton mit einigen Schäden	Q0 6019,15841 5848,15685
 (Horterweg - Römerweg): mäßiger Asphalt	Q1 19005,9816 19003,9800 18999,9701
 Straße 156: Beton	Q0 17624,15767 17608,15676
 Straße 156: Asphalt	Q0 17608,15676 17570,15658
-Straße 156: unbefestigt	Q2 17570,15658 17532,15645
+Straße 156: neuer Asphalt	Q0 17570,15658 17532,15645
 Futhzeile: schlechtes Kopfsteinpflaster	Q3 12941,1256 13092,1265
 Am Heidehof: mäßiges Kopfsteinpflaster	Q2 -1612,2785 -1571,2669 -1410,2726
 Dohlenstr.: Verbundsteinpflaster	Q1 -1584,19363 -1557,19457

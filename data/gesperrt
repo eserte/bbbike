@@ -939,9 +939,9 @@ Schönegarten: verschlossenes Tor	3 7432,10546 7337,10587 7330,10590
 Parchimer Allee	1 14466,4624 14427,4571
 Parchimer Allee	1 14427,4571 14425,4593 14454,4626 14466,4624
 Feldrain	1s 25684,13172 25632,13214 25609,13232 25607,13459
-Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20397,16621 20382,16582 20358,16560 20328,16546 20230,16560
-Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20230,16560 20325,16551 20354,16563 20379,16585 20397,16621
-Bitterfelder Str. (Mittelstreifen)	3nocross::ignrte 20230,16560 20328,16546 20358,16560 20382,16582 20397,16621
+Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20390,16663 20397,16621 20382,16582 20358,16560 20328,16546 20230,16560
+Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20230,16560 20325,16551 20354,16563 20379,16585 20392,16621 20390,16663
+Bitterfelder Str. (Mittelstreifen)	3nocross::ignrte 20230,16560 20328,16546 20358,16560 20382,16582 20397,16621 20390,16663
 Zufahrt Bhf. Ahrensfelde	1 21251,18508 21224,18519 21285,18637 21309,18626
 Am Krusenick	1 22754,4919 22752,4957 22765,4956 22783,4943 22754,4919
 (Albrechtstr. - Neue Filandastr.)	1 5610,5227 5616,5182 5635,5145
@@ -2680,6 +2680,8 @@ abgeschlossenes Tor	3 20555,15 20561,17 20685,52
 abgeschlossenes Tor	3 20685,52 20561,17 20555,15
 Zaun, Durchfahrt für Radfahrer nicht möglich	3 -719,16608 -761,16641 -784,16658
 Zaun, Durchfahrt für Radfahrer nicht möglich	3 -784,16658 -761,16641 -719,16608
+(Otto-Rosenberg-Str. - Weg entlang der S-Bahn): abgeschlossenes Tor	3 19872,16563 19881,16561 19890,16559
+(Otto-Rosenberg-Str. - Weg entlang der S-Bahn): abgeschlossenes Tor	3 19890,16559 19881,16561 19872,16563
 tragen (ca. 33 Stufen)	0:30:-86 20661,12140
 tragen	0:30:5 20657,12101
 tragen (16 Stufen)	0:25:-233 20330,12025
@@ -3531,6 +3533,7 @@ Nalepastr.: Tor verschlossen	3 17059,8097 17059,8102 17056,8159
 Schranke	BNP:1:0:trailer=3 16991,-89
 Schranke fast über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5:-232:trailer=15 9135,14317
 Drängelgitter	BNP:3:-131:trailer=10 14881,13144
+Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
 Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwork 11543,20272 11553,20253
 Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13639,14133 13715,14018
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945

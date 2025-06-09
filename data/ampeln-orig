@@ -295,14 +295,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-06-04
+#: last_checked: 2025-06-09
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-06-04
+#: last_checked: 2025-06-09
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -486,10 +486,12 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2025-02-12 vvv
+#: last_checked: 2025-06-09 vvv
 #: check_frequency: 360d vvv
-#: next_check: 2025-06-30 (SenMVKU website) vvv
-#: valid: 20190603-20250630 vvv
+# REMOVED --- #: next_check: 2025-06-30 (SenMVKU website) vvv
+# REMOVED --- #: valid: 20190603-20250630 vvv
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
+#: valid: 20190603-20251231 vvv
 #: note: die beiden folgenden Punkte gehören eigentlich zu einer Ampelanlage
 	X::inwork 20891,17572
 	X::inwork 20895,17594
@@ -1787,6 +1789,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7111,12743
 #: note: Anforderung für linksabbiegende Radfahrer (Frankfurter Allee -> Atzpodienstr.)
 	X 16413,11906
+#: note: 2x Anforderung für linksabbiegende Radfahrer (Frankfurter Allee -> Buchberger Str.)
 	X 16368,11912
 	X 6757,13112
 	X 5975,13256
@@ -2875,6 +2878,8 @@ Industriebahn	B0 -2410,13746
 	X 19896,16611
 #: off: weekend (seen 2015-12-26 12:00)
 	X 19428,16692
+#: note: Anforderung (2x) bei Querung der Landsberger Allee
+#: note: Anforderung für Radfahrer beim Rechtsabbiegen aus der Hauptfahrbahn der Landsberger Allee
 	F 16010,14326
 	X 16819,15912
 	X -1564,14489
@@ -3916,7 +3921,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-07 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-15
 	X::inwork 8250,14672
@@ -3990,7 +3995,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 2
-#: last_checked: 2025-05-11 (mapillary) vvv
+#: last_checked: 2025-06-07 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

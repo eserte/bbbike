@@ -33283,22 +33283,24 @@ EOF
        until => $isodate2epoch->("2026-07-31 18:00:00"), # 1613921964, # (deaktiviert --- bei Mapillary nichts zu sehen) --- 1627682399, # 2021-07-30 23:59
 #      text  => 'Lemkestr.: zwischen Linderhofstr. und Sudermannstr., Sperrung der Fahrbahn, vom 14. Dezember 2020 bis voraussichtlich 30. Juli 2021 (außer über die Weihnachtsfeiertage)',
 #      text  => 'Lemkestr.: zwischen Lenbachstr. und Frans-Hals-Str. Bauarbeiten, Fahrbahn kann gesperrt sein, voraussichtlich bis Sommer 2026',
-       text  => 'Lemkestr.: zwischen Lenbachstr. und Frans-Hals-Str. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Lenbachstr., Ende der Bauarbeiten unbekannt',
+#      text  => 'Lemkestr.: zwischen Lenbachstr. und Frans-Hals-Str. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Lenbachstr., Ende der Bauarbeiten unbekannt',
+       text  => 'Lemkestr.: zwischen Sudermannstr. und Lenbachstr. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Sudermannstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LEMKE-2020
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php (alte Sperrung von 2020)
 # REMOVED (alter Abschnit) ---	q4::inwork 25191,12343 25363,12553
-#: osm_watch: note 4513116 3
+#: osm_watch: note 4513116 4
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
 #: XXX zurzeit (2025-03) Asphaltierungsarbeiten
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-03-12
-#: check_frequency: 60d
+#: last_checked: 2025-06-09
+#: check_frequency: 90d
 #: next_check: 2026-07-30
 # REMOVED (hier war noch nichts) ---	q4::inwork 25363,12553 25534,12763
-	q4::inwork 25534,12763 25663,12927
-Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
+# REMOVED (fertig) ---	q4::inwork 25534,12763 25620,12872 25663,12927 --- Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
+	q4::inwork 25534,12763 25363,12553
+Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 EOF
      },
      { from  => undef,
@@ -40594,7 +40596,7 @@ EOF
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-05-11 (mapillary)
+#: last_checked: 2025-06-07 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -43084,7 +43086,7 @@ EOF
 #: note: eigentlich q4+::inwork;
 #: note: laut Baustellenschild bis 15.9.2025
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-05-29 (daf) vvv
+#: last_checked: 2025-06-08 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
@@ -43868,10 +43870,11 @@ EOF
 EOF
      },
      { from  => 1713942000, # 2024-04-24 09:00
-       until => 1747839600, # 2025-05-21 17:00
+       until => undef, # 1747839600, # 2025-05-21 17:00
 #      text  => 'Am Rosenhag und Uslarer Str.: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
 #      text  => 'Am Lupinenfeld und Karlshafener Str.: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
-       text  => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
+#      text  => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
+       text  => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung in der Lübzer Str., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
@@ -43881,16 +43884,21 @@ EOF
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...)
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 11.06.2025 + weitere Arbeiten)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,re-G)
 #: note: bei Bing & TomTom & Google nur die östliche Anbindung als gesperrt markiert
+#: note: Außerdem gibt's eine Gegenverkehrsregelung: Richtung Süden müssen die Radfahrer den Bürgersteigradweg benutzen, Richtung Norden ist der vorhandene Bürgersteig abgesperrt und man ist von der Gegenverkehrsregelung betroffen
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-05-14 (traffic) vvv
+#: last_checked: 2025-06-09 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2025-11-06 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-06-11 (VIZ-Verkehrsmeldung) vvv
+#: note: nur wenige Meter
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
-Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
+# REMOVED (nicht (mehr?)) --- Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
+Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 24775,13218 24969,13129
+Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -45584,12 +45592,12 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicherweise mit Bauzäunen versperrt sein (Stand Januar 2025: nicht passierbar)',
+       text  => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicherweise mit Bauzäunen versperrt sein (Stand Juni 2025: nicht passierbar)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZURALTENBOERSE-2025
-#: last_checked: 2025-01-22
-#: check_frequency: 120d
+#: last_checked: 2025-06-09
+#: check_frequency: 180d
 Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 EOF
      },
@@ -45980,7 +45988,7 @@ EOF
 # REMOVED --- #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
 #: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025) (+ weitere Arbeiten) (inaktiv)
 # REMOVED --- #: note: am 29.03.2025 (Sa) waren die Barrieren weggeschoben und eine Durchfahrt war inoffiziell möglich ---	q4::inwork 10530,14452 10506,14521 10468,14636
-#: last_checked: 2025-06-01 (von der Parallelstraße aus)
+#: last_checked: 2025-06-07 (mapillary)
 #: next_check: 2025-06-30 (infravelo)
 	q4::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
 EOF
@@ -46334,7 +46342,7 @@ EOF
 #: osm_watch: way id="1309204624" version="1"
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-06-08 (traffic)
+#: last_checked: 2025-06-09
 #: check_frequency: 90d (traffic check)
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 	q3::inwork; 23251,12146 23017,12177
@@ -47321,7 +47329,7 @@ EOF
 #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv)
 	q4::inwork 3088,12094 2920,12070
 #: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv)
-#: source_id: adac:8174832 (bis voraussichtlich 06.06.2025)
+#: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv)
 	q4::inwork 2920,12070 2686,12051
 EOF
      },
@@ -47335,10 +47343,10 @@ EOF
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
 #: osm_watch: way id="1089784248" version="3"
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
-#: osm_watch: way id="1374232475" version="2"
+#: osm_watch: way id="1374232475" version="3"
 #: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (H)
-#: last_checked: 2025-05-02 (osm)
+#: last_checked: 2025-06-09
 #: check_frequency: 90d
 Merler Weg	q4::inwork 18852,13269 19180,13219
 EOF
@@ -47482,19 +47490,24 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Radickestr., Zinsgutstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen',
+       text  => 'Radickestr., Zinsgutstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
+#: note: Trafficmeldungen scheinen ungenau zu sein
+#: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
+#: note: nächste Sperrung: mehrere mit "Termin folgt"
+#: next_check: 2025-06-16 (gibt es eine nächste Sperrung?)
+#: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025)
 #: source_id: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraßenregelung in der Radickestraße?)
 #: source_id: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
-#: note: Trafficmeldungen scheinen ungenau zu sein
-#: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
-#: note: nächste Sperrung: "Termin folgt"; möglicherweise Änderungen in der Radickestr. (Bauarbeiten westlich der Nipkowstr.?) ab 10.6.2025?
-#: next_check: 2025-06-10 (gibt es eine nächste Sperrung?)
+#: note: Beginn ab 10. Juni 2025
+Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
+#: note: Beginn ab 26.05.2025
+Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
 # REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
@@ -47513,8 +47526,6 @@ Zinsgutstr.	q4::inwork 20679,3944 20862,3824
 Flemmingstr.	q4::inwork 21848,4882 21726,4537
 #: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt
 Flemmingstr.	q4::inwork 21848,4882 21856,4910
-#: note: Beginn ab 26.05.2025
-Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 EOF
      },
      { from  => 1744520400, # 2025-04-13 07:00
@@ -47948,7 +47959,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten)
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-09
 #: check_frequency: 30d
 #: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -47995,8 +48006,8 @@ EOF
 #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
 #: source_id: viz2021:13.514933,52.468582,30.04.2025,15:30 (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.514933,52.468582,19.05.2025,12:00 (kein Endedatum) (bis 06.06.2025) (inaktiv)
-#: source_id: adac:922791900
-#: source_id: adac:1526844418
+#: source_id: adac:922791900 (inaktiv)
+#: source_id: adac:1526844418 (inaktiv)
 #: source_id: viz2021:13.514371,52.468805,06.06.2025,20:00 (Linksabbiegen nicht möglich, bis 27.06.2025)
 #: osm_watch: note 4767216 14
 #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-wuhlheide-bruecke-sofortige-sperrung-verkehr-einsturzgefahr.html

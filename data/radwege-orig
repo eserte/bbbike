@@ -4336,7 +4336,7 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX Radwege werden neu gemacht vvv
-#: last_checked: 2025-04-02 vvv
+#: last_checked: 2025-06-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-07-31 (BVG-Meldung) vvv
 Gehweg für Radfahrer frei, Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082
@@ -5147,9 +5147,21 @@ Grünbeschichtung "light" (Rauten und einige längere Abschnitte)	RW4; 19924,11890
 Grünbeschichtung "light" (Rauten und einige längere Abschnitte)	RW4; 19924,11890 19900,11697 19908,11637 19936,11608 19999,11612 20026,11663 20064,11687 20114,11719
 Grünbeschichtung "light" (einige längere Abschnitte)	RW4; 19985,11727 20018,11698 20026,11663 19999,11612 19936,11608 19908,11637 19900,11697 19924,11890
 Grünbeschichtung "light" (Rauten)	RW4; 19924,11890 19934,11977
-Verbundsteinpflaster	RW1; 20323,16706 20390,16663 20397,16621 20379,16585 20354,16563 20325,16551
+Verbundsteinpflaster	RW1; 20323,16706 20390,16663
+#: next_check_id: BITTERFELDERBRUECKE-2025
+#: last_checked: 2025-05-08 (mapillary) vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
+#: XXX früher: Verbundsteinpflaster	RW1;
+#: osm_watch: way id="870445662" version="17"
+	RW0; 20390,16663 20392,16621 20379,16585 20354,16563 20325,16551
+#: XXX früher: Asphalt	RW1;
+#: osm_watch: way id="1389241596" version="1"
+	RW0; 20325,16551 20230,16560 20150,16572
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 Verbundsteinpflaster	RW1; 20328,16546 20358,16560 20382,16582 20397,16621 20390,16663 20323,16706
-Asphalt	RW1; 20325,16551 20230,16560 20150,16572
 Verbundsteinpflaster	RW1; 20150,16572 19896,16611
 	RW1; 19896,16611 19647,16633 19428,16692 18951,16847
 	RW1; 18875,16872 18951,16847 19428,16692 19647,16633 19896,16611
@@ -5353,7 +5365,9 @@ Gehwegplatten	RW1;RW1 15505,17967 15238,18015
 #: by: ^^^
 	RW1;RW1 15238,18015 15105,18040 15034,18051 15000,18056 14754,18054 14445,18010
 Gehweg für Radfahrer frei	RW1; 18106,19353 18143,19384 18544,19722
-	RW1;RW1 18316,16636 18179,16534 18165,16523 17970,16406 17895,16373 17640,16259
+Verbundsteinpflaster	RW1; 18316,16636 18179,16534 18165,16523 17970,16406 17895,16373 17640,16259
+Verbundsteinpflaster	RW1; 17640,16259 17895,16373 17970,16406 18165,16523
+Verbundsteinpflaster, einige Wurzelhebungen	RW1; 18165,16523 18179,16534 18316,16636
 	RW2;RW1 17640,16259 17516,16208
 gemeinsamer Geh- und Radweg, Betonplatten	RW2; 17418,16014 17419,16080 17425,16165
 	RW2; 17425,16165 17419,16080 17418,16014

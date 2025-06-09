@@ -62,104 +62,7 @@ Brachvogelstr.	2::temp 9858,10199 9884,10192 10069,10151
          'type' => 'gesperrt',
          'until' => 1749528000
        },
-       {
-         'data' => '#: by: https://www.karneval.berlin/ (früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite) (findet möglicherweise am 15. August 2021 statt)
-#: by: https://www.karneval.berlin/de/aktuell.html (fällt 2021 wieder aus)
-#: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
-#: by: https://berliner-abendblatt.de/berlin-news/chialo-will-karneval-der-kulturen-sichern-id222039
-#: by: https://viz.berlin.de/2023/05/karneval-der-kulturen/
-#: by: https://www.tagesspiegel.de/berlin/umzug-durch-friedrichshain-und-mitte-karneval-der-kulturen-findet-2025-auf-der-frankfurter-allee-statt-13201078.html (Ringcenter bis Kino International)
-#: by: https://www.tagesspiegel.de/berlin/welche-herausforderungen-die-neue-route-bringt-das-andert-sich-2025-beim-karneval-der-kulturen-in-berlin-13760926.html
-#: by: https://www.tagesspiegel.de/berlin/alle-zeiten-und-anreisemoglichkeiten-diese-strassen-sind-zum-karneval-der-kulturen-2025-in-berlin-gesperrt-13798822.html
-#: by: https://www2.karneval.berlin/fileadmin/user_upload/Bilder/Plaene/Lageplan_Umzug_Anwohnerflyer_WEB.png (Friedrichshainer Route 2025)
-## Kreuzberger Route (ganz früher)
-# REMOVED (2023 hier nicht) --- Yorckstr.	2::temp 9334,9670 9243,9696 9047,9750
-# REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
-# REMOVED ---	3 8774,9534 8777,9601 8778,9759 8778,9759 8779,9812
-# REMOVED ---	3 8779,9812 8778,9759 8778,9759 8777,9601 8774,9534
-# REMOVED ---	3 9000,9509 9032,9673 9047,9750 9078,9916
-# REMOVED ---	3 9078,9916 9047,9750 9032,9673 9000,9509
-# REMOVED (2023 hier nicht) --- Mehringdamm	3 9283,9487 9334,9670 9387,9804
-# REMOVED (2023 hier nicht) --- Mehringdamm	3 9387,9804 9334,9670 9283,9487
-## Kreuzberger Route (früher)
-# REMOVED ---	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670
-# REMOVED ---	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
-# REMOVED ---	3 9524,9426 9552,9602 9588,9827
-# REMOVED ---	3 9588,9827 9552,9602 9524,9426
-# REMOVED ---	3 9650,9404 9676,9564 9705,9732
-# REMOVED ---	3 9705,9732 9676,9564 9650,9404
-# REMOVED ---	3 9767,9386 9790,9528 9820,9718
-# REMOVED ---	3 9820,9718 9790,9528 9767,9386
-# REMOVED ---	3 9892,9286 9927,9487 9957,9692
-# REMOVED ---	3 9957,9692 9927,9487 9892,9286
-# REMOVED ---	3 10004,9268 10032,9456 10067,9674
-# REMOVED ---	3 10067,9674 10032,9456 10004,9268
-# REMOVED ---	3 10123,9233 10198,9405 10306,9640
-# REMOVED ---	3 10306,9640 10198,9405 10123,9233
-# REMOVED ---	3 10547,9233 10564,9292 10580,9361
-# REMOVED ---	3 10580,9361 10564,9292 10547,9233
-# REMOVED ---	3 10705,9234 10713,9260 10749,9342
-# REMOVED ---	3 10749,9342 10713,9260 10705,9234
-# REMOVED ---	3 11141,9107 11136,9183 11208,9345 11274,9492
-# REMOVED ---	3 11274,9492 11208,9345 11136,9183 11141,9107
-# REMOVED ---	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
-# REMOVED ---	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
-# REMOVED --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1447817.php (2024; "Sperrung einzelner Eingänge des Volksparks Hasenheide")
-# REMOVED --- Hasenheide Eingang Lilienthalstr.	2 11708,8747 11768,8739
-# REMOVED --- Hasenheide Eingang Graefestr.	2 11136,9183 11141,9107
-# REMOVED --- Hasenheide Eingang Jahnstr. West	2 10709,9192 11111,9104
-# REMOVED --- Hasenheide Eingang Jahnstr. Ost	2 11515,9066 11550,9104
-# REMOVED --- Hasenheide Eingang Lucy-Lameck-Str.	2 11439,9049 11449,9125
-## Friedrichshainer Route
-	2::temp 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595 11678,12727 11635,12745 11589,12768
-	2::temp 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546 12134,12540 12352,12509 12592,12472 12603,12470
-	2::temp 14280,12223 14208,12235 14020,12261 13885,12279 13785,12292 13543,12326 13448,12340 13163,12382 12929,12421 12878,12430 12848,12434 12816,12439
-	3::temp 14073,11995 14208,12235 14229,12311
-	3::temp 14229,12311 14208,12235 14073,11995
-	3::temp 12573,12227 12592,12472 12632,12630
-	3::temp 12632,12630 12592,12472 12573,12227
-	3::temp 11596,12668 11635,12745 11645,12774
-	3::temp 11645,12774 11635,12745 11596,12668
-	3::temp 12891,12549 12878,12430 12950,12340
-	3::temp 12891,12549 12878,12430 12862,12332
-	3::temp 13476,12461 13448,12340 13430,12320
-	3::temp 12355,12541 12352,12509 12339,12436
-	3::temp 13430,12320 13448,12340 13476,12461
-	3::temp 13745,12118 13785,12292 13732,12526
-	3::temp 12339,12436 12352,12509 12355,12541
-	3::temp 13552,12435 13543,12326 13556,12302
-	3::temp 12950,12340 12878,12430 12891,12549
-	3::temp 12950,12340 12878,12430 12862,12332
-	3::temp 12862,12332 12878,12430 12950,12340
-	3::temp 12862,12332 12878,12430 12891,12549
-	3::temp 13556,12302 13543,12326 13552,12435
-	3::temp 13732,12526 13785,12292 13745,12118
-Aufstellbereich bis zum S-Bhf. Frankfurter Allee	2::temp 15361,12071 15110,12107 14994,12121 14926,12129 14854,12137 14709,12156 14621,12168 14582,12174 14523,12183 14488,12188 14427,12197 14381,12205 14280,12223
-	3::temp 14538,12371 14488,12188 14427,12199
-	3::temp 14675,11964 14709,12156 14748,12314
-	3::temp 14427,12199 14488,12188 14538,12371
-	3::temp 14888,11934 14926,12129 15003,12241
-	3::temp 14748,12314 14709,12156 14675,11964
-	3::temp 15077,11910 15110,12107 15104,12216
-	3::temp 15104,12216 15110,12107 15077,11910
-	3::temp 15003,12241 14926,12129 14888,11934
-Auflösebereich bis zum Alexanderplatz	2::temp 11589,12768 11289,12908 11226,12945
-',
-         'from' => 1749247200,
-         'id' => 4,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'easter',
-                              49,
-                              'start',
-                              '2022-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Karneval der Kulturen, Sperrung der Frankfurter Allee und Karl-Marx-Allee zwischen Proskauer Str. und Berolinastr., am 08.06.2025',
-         'type' => 'gesperrt',
-         'until' => 1749419999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5065,20 +4968,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: LEMKE-2020
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php (alte Sperrung von 2020)
 # REMOVED (alter Abschnit) ---	q4::inwork 25191,12343 25363,12553
-#: osm_watch: note 4513116 3
+#: osm_watch: note 4513116 4
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
 #: XXX zurzeit (2025-03) Asphaltierungsarbeiten
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-03-12
-#: check_frequency: 60d
+#: last_checked: 2025-06-09
+#: check_frequency: 90d
 #: next_check: 2026-07-30
 # REMOVED (hier war noch nichts) ---	q4::inwork 25363,12553 25534,12763
-	q4::inwork 25534,12763 25663,12927
-Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
+# REMOVED (fertig) ---	q4::inwork 25534,12763 25620,12872 25663,12927 --- Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
+	q4::inwork 25534,12763 25363,12553
+Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 ',
          'from' => 1720994400,
          'id' => 3312,
-         'text' => 'Lemkestr.: zwischen Lenbachstr. und Frans-Hals-Str. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Lenbachstr., Ende der Bauarbeiten unbekannt',
+         'text' => 'Lemkestr.: zwischen Sudermannstr. und Lenbachstr. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Sudermannstr., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => 1785513600
        },
@@ -6815,7 +6719,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-05-11 (mapillary)
+#: last_checked: 2025-06-07 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -7310,7 +7214,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: note: eigentlich q4+::inwork;
 #: note: laut Baustellenschild bis 15.9.2025
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-05-29 (daf) vvv
+#: last_checked: 2025-06-08 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
@@ -7541,7 +7445,44 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
+#: source_id: viz2021:13.621388,52.52433,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
+#: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
+#: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
+#: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...)
+#: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 11.06.2025 + weitere Arbeiten)
+#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
+#: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
+#: also_indoor: traffic (B,T,re-G)
+#: note: bei Bing & TomTom & Google nur die östliche Anbindung als gesperrt markiert
+#: note: Außerdem gibt\'s eine Gegenverkehrsregelung: Richtung Süden müssen die Radfahrer den Bürgersteigradweg benutzen, Richtung Norden ist der vorhandene Bürgersteig abgesperrt und man ist von der Gegenverkehrsregelung betroffen
+#: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
+#: last_checked: 2025-06-09 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2025-06-11 (VIZ-Verkehrsmeldung) vvv
+#: note: nur wenige Meter
+Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
+# REMOVED (nicht (mehr?)) --- Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
+Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 24775,13218 24969,13129
+Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+# REMOVED ---	q4::inwork; 25050,13539 25163,13494
+# REMOVED ---	q3::inwork 25163,13494 25287,13464
+# REMOVED --- Uslarer Str.	q3::inwork; 24967,13438 25094,13362
+# REMOVED (möglicherweise entfernt, siehe traffic) --- #: XXX hier Halteverbotsschilder nur bis 20.12.2024 --- #: next_check: 2024-12-20 --- Karlshafener Str.	q4::inwork 24899,13007 25054,12926
+',
+         'from' => 1713942000,
+         'id' => 4048,
+         'text' => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung in der Lübzer Str., Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -8024,13 +7965,13 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        undef,
        {
          'data' => '#: next_check_id: ZURALTENBOERSE-2025
-#: last_checked: 2025-01-22
-#: check_frequency: 120d
+#: last_checked: 2025-06-09
+#: check_frequency: 180d
 Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 ',
          'from' => undef,
          'id' => 4163,
-         'text' => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicherweise mit Bauzäunen versperrt sein (Stand Januar 2025: nicht passierbar)',
+         'text' => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicherweise mit Bauzäunen versperrt sein (Stand Juni 2025: nicht passierbar)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8171,7 +8112,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 # REMOVED --- #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
 #: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025) (+ weitere Arbeiten) (inaktiv)
 # REMOVED --- #: note: am 29.03.2025 (Sa) waren die Barrieren weggeschoben und eine Durchfahrt war inoffiziell möglich ---	q4::inwork 10530,14452 10506,14521 10468,14636
-#: last_checked: 2025-06-01 (von der Parallelstraße aus)
+#: last_checked: 2025-06-07 (mapillary)
 #: next_check: 2025-06-30 (infravelo)
 	q4::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
 ',
@@ -8258,7 +8199,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: osm_watch: way id="1309204624" version="1"
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-06-08 (traffic)
+#: last_checked: 2025-06-09
 #: check_frequency: 90d (traffic check)
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 	q3::inwork; 23251,12146 23017,12177
@@ -8825,10 +8766,10 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
 #: osm_watch: way id="1089784248" version="3"
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
-#: osm_watch: way id="1374232475" version="2"
+#: osm_watch: way id="1374232475" version="3"
 #: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (H)
-#: last_checked: 2025-05-02 (osm)
+#: last_checked: 2025-06-09
 #: check_frequency: 90d
 Merler Weg	q4::inwork 18852,13269 19180,13219
 ',
@@ -8931,13 +8872,18 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'data' => '#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
+#: note: Trafficmeldungen scheinen ungenau zu sein
+#: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
+#: note: nächste Sperrung: mehrere mit "Termin folgt"
+#: next_check: 2025-06-16 (gibt es eine nächste Sperrung?)
+#: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025)
 #: source_id: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraßenregelung in der Radickestraße?)
 #: source_id: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
-#: note: Trafficmeldungen scheinen ungenau zu sein
-#: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
-#: note: nächste Sperrung: "Termin folgt"; möglicherweise Änderungen in der Radickestr. (Bauarbeiten westlich der Nipkowstr.?) ab 10.6.2025?
-#: next_check: 2025-06-10 (gibt es eine nächste Sperrung?)
+#: note: Beginn ab 10. Juni 2025
+Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
+#: note: Beginn ab 26.05.2025
+Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
 # REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
@@ -8956,12 +8902,10 @@ Zinsgutstr.	q4::inwork 20679,3944 20862,3824
 Flemmingstr.	q4::inwork 21848,4882 21726,4537
 #: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt
 Flemmingstr.	q4::inwork 21848,4882 21856,4910
-#: note: Beginn ab 26.05.2025
-Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 ',
          'from' => undef,
          'id' => 4302,
-         'text' => 'Radickestr., Zinsgutstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen',
+         'text' => 'Radickestr., Zinsgutstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9266,7 +9210,7 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
        undef,
        {
          'data' => '#: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten)
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-09
 #: check_frequency: 30d
 #: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
