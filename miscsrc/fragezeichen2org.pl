@@ -483,7 +483,7 @@ for my $file (@files) {
 		 my @layers;
 		 if ($subject =~ /zebrastreifen/i) {
 		     push @layers, 'C'; # OpenCycleMap has the best zebra rendering
-		 } elsif ($subject =~ /(radspur|radweg|radverkehrsanlage|busspur)/i) {
+		 } elsif ($subject =~ /(radspur|radstreifen|radweg|radverkehrsanlage|schutzstreifen|busspur)/i) {
 		     push @layers, 'Y'; # CyclOSM
 		 }
 		 push @layers, 'N'; # always turn notes on
