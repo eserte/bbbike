@@ -82,12 +82,12 @@ my $next_interval = sub {
 #: source_id: viz2021:13.389478,52.495996,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
 #: source_id: viz2021:13.3893,52.497538,16.05.2024,17:00 (bis 21.05.2024) (inaktiv)
 #: source_id: viz2021:13.395267,52.49454,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
-#: source_id: viz2021:13.389478,52.495996,05.06.2025,10:00 (bis 10.06.2025)
-#: source_id: viz2021:13.391442,52.497337,05.06.2025,10:00 (bis 10.06.2025)
-#: source_id: viz2021:13.3951,52.496194,05.06.2025,10:00 (bis 10.06.2025)
+#: source_id: viz2021:13.389478,52.495996,05.06.2025,10:00 (bis 10.06.2025) (inaktiv)
+#: source_id: viz2021:13.391442,52.497337,05.06.2025,10:00 (bis 10.06.2025) (inaktiv)
+#: source_id: viz2021:13.3951,52.496194,05.06.2025,10:00 (bis 10.06.2025) (inaktiv)
 #: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.39594,52.49837,06.06.2025,12:00 (Lindenstr. bis Alte Jakobstr. gesperrt? bis 10.06.2025)
+#: source_id: viz2021:13.39594,52.49837,06.06.2025,12:00 (Lindenstr. bis Alte Jakobstr. gesperrt? bis 10.06.2025) (inaktiv)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -40097,8 +40097,7 @@ EOF
 #: by: https://www.family-and-friends-ev.de/7-9-juni-2025-pfingsten-in-der-preussenallee
 #: source_id: viz2021:13.259512,52.513271,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
 #: source_id: viz2021:13.2597,52.51486,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
-#: source_id: viz2021:13.2597,52.51486,07.06.2025,05:00 (bis 09.06.2025)
-#: source_id: viz2021:13.2597,52.51486,07.06.2025,05:00 (bis 09.06.2025)
+#: source_id: viz2021:13.2597,52.51486,07.06.2025,05:00 (bis 09.06.2025) (inaktiv)
 # REMOVED (nicht an der Marathonallee, f‰ngt erst an der Bayernallee an) ---	2::temp 589,11953 577,11837
 	2::temp 577,11837 562,11710 560,11695 550,11607
 EOF
@@ -43066,6 +43065,7 @@ EOF
 #: osm_watch: way id="1244101968" version="6"
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
+#: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
 #: last_checked: 2025-04-25
 #: check_frequency: 120d
@@ -44608,7 +44608,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: f¸r den Kfz-Verkehr Einbahnstraﬂenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen f¸r Radfahrer
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-06-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45388,7 +45388,7 @@ EOF
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-05-14 (research)
+#: last_checked: 2025-06-10 (research)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-01
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -45734,6 +45734,7 @@ EOF
 #: source_id: viz2021:13.39427,52.56503,01.04.2025,08:23 (Baustellenampel Wollankstraﬂe, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,06.06.2025,09:00 (bis 01.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch tempor‰ren Eintrag in comments_trafficjam
+#: note: existiert nun auch in gesperrt-orig bis Anfang Dez 2025
 #: osm_watch: way id="23984383" version="35"
 #: osm_watch[closed]: note 4536637 10
 # REMOVED --- #: last_checked: 2025-04-25 --- #: next_check: 2025-06-06
@@ -47075,8 +47076,8 @@ EOF
 #: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
 #: note: nˆrdliches Tor offen, s¸dliches Tor nur geschlossen (aber nicht verschlossen) (gesehen 2025-03-10 Mo 17:25, 2025-03-24 17:32)
 #: note: nˆrdliches Tor geschlossen, s¸dliches Tor nicht gepr¸ft (gesehen 2025-03-08 Sa 11:30)
-#: osm_watch: way id="207757723" version="6"
-#: osm_watch: way id="275795707" version="3"
+#: osm_watch: way id="207757723" version="7"
+#: osm_watch: way id="275795707" version="4"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
 #: last_checked: 2025-06-04 vvv
@@ -47492,7 +47493,7 @@ EOF
        until => undef, # XXX
        text  => 'Radickestr., Zinsgutstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraﬂenregelungen',
        type  => 'handicap',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
@@ -47500,12 +47501,15 @@ EOF
 #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
 #: note: n‰chste Sperrung: mehrere mit "Termin folgt"
 #: next_check: 2025-06-16 (gibt es eine n‰chste Sperrung?)
-#: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025)
+#: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaﬂnahme bis Mitte 08/2025)
 #: source_id: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraﬂenregelung in der Radickestraﬂe?)
 #: source_id: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme f¸r Radfahrer, Anbindung Thomas-M¸ntzer-Str. betroffen)
 #: note: Beginn ab 10. Juni 2025
 Radickestraﬂe: Einbahnstraﬂe zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
+Thomas-M¸ntzer-Str.: Anbindung an die Radickestraﬂe gesperrt	q3::inwork 20149,3617 20299,3435
 #: note: Beginn ab 26.05.2025
 Radickestraﬂe: Einbahnstraﬂe zwischen Arndtstraﬂe und Nipkowstraﬂe, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 # REMOVED --- #: next_check: 2025-07-15

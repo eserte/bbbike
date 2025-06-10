@@ -1,137 +1,6 @@
-$#temp_blocking = 2;
+$#temp_blocking = 73;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
-#: by: https://www.gratis-in-berlin.de/festivals/item/2009881-strassenfest-am-bluecherplatz-kreuzberg-karneval-der-kulturen (geplant 03.06.2022 bis 06.06.2022)
-#: by: https://www.karneval.berlin/ (findet mˆglicherweise am 15. August 2021 statt --- gibt es ¸berhaupt ein Straﬂenfest vorher?)
-#: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
-#: by: https://nitter.cz/VIZ_Berlin/status/1660949370760486913#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnd6Z2s0Ulh3QU1ZSWNJLmpwZw==
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1791092486695211121 (2024)
-#: by: https://pbs.twimg.com/media/GNmvjxnXgAE5jzf?format=jpg
-#: source_id: viz2021:13.3896,52.49594,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.39512,52.49691,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.39524,52.49454,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.389478,52.495996,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
-#: source_id: viz2021:13.3893,52.497538,16.05.2024,17:00 (bis 21.05.2024) (inaktiv)
-#: source_id: viz2021:13.395267,52.49454,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
-#: source_id: viz2021:13.389478,52.495996,05.06.2025,10:00 (bis 10.06.2025)
-#: source_id: viz2021:13.391442,52.497337,05.06.2025,10:00 (bis 10.06.2025)
-#: source_id: viz2021:13.3951,52.496194,05.06.2025,10:00 (bis 10.06.2025)
-#: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.39594,52.49837,06.06.2025,12:00 (Lindenstr. bis Alte Jakobstr. gesperrt? bis 10.06.2025)
-	2::temp 9521,10010 9827,10051
-	2::temp 9521,10010 9448,10014
-	2::temp 9599,10175 9687,10180 9825,10206
-	2::temp 9416,10196 9472,10182 9599,10175
-	2::temp 9579,10122 9536,10064
-	2::temp 9579,10122 9631,10142 9702,10129
-	2::temp 9837,10117 9827,10051
-	2::temp 9837,10117 9858,10199
-	2::temp 9599,10175 9579,10122
-	2::temp 9702,10129 9827,10051
-	2::temp 9702,10129 9816,10119
-	2::temp 9599,10175 9631,10142 9687,10180
-	2::temp 9825,10206 9865,10227 9948,10280
-	2::temp 9873,10285 9865,10227 9858,10199
-	2::temp 9825,10206 9858,10199
-	3 9922,10010 9827,10051 9837,9856
-	3 9837,9856 9827,10051 9922,10010
-	2::temp 9827,10051 9837,9856
-	2::temp 9837,9856 9723,9842
-# REMOVED (hier doch nicht) --- Baruther Str.	2::temp 9723,9842 9588,9827 9387,9804
-Johanniterstr.	2::temp 10066,10071 9837,10117
-Bl¸cherstr. ˆstl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,9942
-Brachvogelstr.	2::temp 9858,10199 9884,10192 10069,10151
-',
-         'from' => 1748988000,
-         'id' => 3,
-         'periodic' => 1,
-         'prewarn_days' => 2,
-         'recurrences' => [
-                            [
-                              'easter',
-                              47,
-                              'start',
-                              '2022-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Straﬂenfest rund um den Bl¸cherplatz, 06.06.2025 bis 09.06.2025, Sperrungen fangen schon einen Tag vorher an',
-         'type' => 'gesperrt',
-         'until' => 1749528000
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.stadtfest.berlin/de/index.html
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
@@ -6561,35 +6430,7 @@ Mommsenstr., ˆstlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/1-wein-und-winzerfest-westend-baa4f759-86d7-46dc-a637-0f50e53fceac/
-#: by: https://nitter.cz/VIZ_Berlin/status/1662153122070790145#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
-#: by: https://www.family-and-friends-ev.de/?date=20240303
-#: by: https://www.family-and-friends-ev.de/7-9-juni-2025-pfingsten-in-der-preussenallee
-#: source_id: viz2021:13.259512,52.513271,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
-#: source_id: viz2021:13.2597,52.51486,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
-#: source_id: viz2021:13.2597,52.51486,07.06.2025,05:00 (bis 09.06.2025)
-#: source_id: viz2021:13.2597,52.51486,07.06.2025,05:00 (bis 09.06.2025)
-# REMOVED (nicht an der Marathonallee, f‰ngt erst an der Bayernallee an) ---	2::temp 589,11953 577,11837
-	2::temp 577,11837 562,11710 560,11695 550,11607
-',
-         'from' => 1749160800,
-         'id' => 3788,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Preuﬂenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn voraussichtlich zwischen Bayernallee und Badenallee gesperrt, vom 07.06.2025 bis 09.06.2025',
-         'type' => 'gesperrt',
-         'until' => 1749502800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7085,11 +6926,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1749160800,
+         'from' => 1751580000,
          'id' => 3955,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): n‰chster Termin 7.6.2025 bis 9.6.2025',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): n‰chster Termin 5.7.2025 bis 6.7.2025',
          'type' => 'handicap',
-         'until' => 1749506399
+         'until' => 1751839199
        },
        undef,
        undef,
@@ -7195,6 +7036,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1244101968" version="6"
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
+#: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
 #: last_checked: 2025-04-25
 #: check_frequency: 120d
@@ -7598,7 +7440,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: f¸r den Kfz-Verkehr Einbahnstraﬂenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen f¸r Radfahrer
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-06-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7865,7 +7707,7 @@ Seeblickstr.: Einbahnstraﬂenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-05-14 (research)
+#: last_checked: 2025-06-10 (research)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-01
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -8039,6 +7881,7 @@ sehr langsames Passieren am s¸dlichen Ausgang	q4::temp 9242,7286 9302,7294
 #: source_id: viz2021:13.39427,52.56503,01.04.2025,08:23 (Baustellenampel Wollankstraﬂe, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,06.06.2025,09:00 (bis 01.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch tempor‰ren Eintrag in comments_trafficjam
+#: note: existiert nun auch in gesperrt-orig bis Anfang Dez 2025
 #: osm_watch: way id="23984383" version="35"
 #: osm_watch[closed]: note 4536637 10
 # REMOVED --- #: last_checked: 2025-04-25 --- #: next_check: 2025-06-06
@@ -8642,8 +8485,8 @@ Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
 #: note: nˆrdliches Tor offen, s¸dliches Tor nur geschlossen (aber nicht verschlossen) (gesehen 2025-03-10 Mo 17:25, 2025-03-24 17:32)
 #: note: nˆrdliches Tor geschlossen, s¸dliches Tor nicht gepr¸ft (gesehen 2025-03-08 Sa 11:30)
-#: osm_watch: way id="207757723" version="6"
-#: osm_watch: way id="275795707" version="3"
+#: osm_watch: way id="207757723" version="7"
+#: osm_watch: way id="275795707" version="4"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
 #: last_checked: 2025-06-04 vvv
@@ -8876,12 +8719,15 @@ Schoelerpark: Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
 #: note: n‰chste Sperrung: mehrere mit "Termin folgt"
 #: next_check: 2025-06-16 (gibt es eine n‰chste Sperrung?)
-#: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025)
+#: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaﬂnahme bis Mitte 08/2025)
 #: source_id: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraﬂenregelung in der Radickestraﬂe?)
 #: source_id: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme f¸r Radfahrer, Anbindung Thomas-M¸ntzer-Str. betroffen)
 #: note: Beginn ab 10. Juni 2025
 Radickestraﬂe: Einbahnstraﬂe zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
+Thomas-M¸ntzer-Str.: Anbindung an die Radickestraﬂe gesperrt	q3::inwork 20149,3617 20299,3435
 #: note: Beginn ab 26.05.2025
 Radickestraﬂe: Einbahnstraﬂe zwischen Arndtstraﬂe und Nipkowstraﬂe, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 # REMOVED --- #: next_check: 2025-07-15

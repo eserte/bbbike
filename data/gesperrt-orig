@@ -4054,6 +4054,13 @@ Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
 Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 #: next_check ^^^
 #: last_checked ^^^
+#: note: existiert auch als temp_blockings-Eintrag
+#: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
+#: valid: -20251201
+Wollankstr.: Sperrung, auch für Fußgänger und Radfahrer	2::inwork 9544,17629 9586,17665
+#: note: existiert auch als temp_blockings-Eintrag
+#: next_check: 2025-12-01 (nach Wollankstraßen-Sperrung ggfs. wieder als temp_blockings-Eintrag führen?)
+Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten	2::inwork 9586,17665 9461,17795
 #: XXX ^^^
 # 
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-den-koenigsgraben/ (laut Bild schon abgebrochen; voraussichtliche Bauzeit: noch in Planung)
@@ -4204,7 +4211,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-10
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4231,7 +4238,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-06-03 vvv
+#: last_checked: 2025-06-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="6"
@@ -5090,7 +5097,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="60333311" version="35"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="289966097" version="24"
 #: priority: #A
-#: last_checked: 2025-05-14 (webcam)
+#: last_checked: 2025-06-10 (webcam)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 # REMOVED (existiert nicht mehr) --- Grunerstr.: Straßenzug wird entfernt	2::inwork 10697,12303 10746,12364
@@ -5156,7 +5163,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_16_1065_1112_online.pdf (Umlegungsverfahren (für den B-Plan))
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf (Umlegungsverfahren, Berichtigung)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-10 (webcam)
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5164,7 +5171,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-10
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5172,7 +5179,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # 
 #: osm_watch: note 4480556 3
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-06-07 (traffic)
+#: last_checked: 2025-06-10
 #: check_frequency: 14d (traffic)
 Dircksenstr.: Einbahnstraßenregelung	1s:q3:inwork 11057,12715 11138,12604 11202,12426
 # 
@@ -5644,7 +5651,7 @@ Löwenbrücke: Neubau	2:inwork 6417,11796 6438,11784
 # REMOVED --- #: osm_watch: way id="765539341" version="17" brb
 #: last_checked: 2025-02-10 (osm)
 #: check_frequency: 120d
-#: osm_watch: way id="1285592463" version="7" brb
+#: osm_watch: way id="1285592463" version="8" brb
 # REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12802,-1485 -12708,-1445
 #: XXX Evtl. heißt dieser Abschnitt "Alter Markt" (siehe osm)?
 #: osm_watch: way id="90781221" version="17" brb

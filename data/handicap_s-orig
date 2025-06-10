@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu fr¸h bei der VIZ gemeldet? -> aktuell l‰uft wohl die Umsetzung (auch wenn man vor Ort auﬂer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-10
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
@@ -485,7 +485,7 @@ Burgstr.: Abschnitt mit Einbahnstraﬂenregelung	q3::inwork; 10166,12777 10132,129
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2025-05-06 vvv
+#: last_checked: 2025-06-10 (osm) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="41"
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -501,7 +501,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 9011,12423 9028,123
 #: osm_watch: note 3469300 7
 #: osm_watch: way id="111833186" version="15"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
-#: osm_watch: way id="153698413" version="18"
+#: osm_watch: way id="153698413" version="19"
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -604,7 +604,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn f¸r die Straﬂensanierung 2026 (!))
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-06-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -3762,7 +3762,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-10
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (adonum website)
 #: note: fr¸her: breiter Geh- und Radweg	q0-
