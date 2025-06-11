@@ -145,7 +145,8 @@ Priesterweg (Güterfelde): guter Asphalt	Q0 -5511,-4384 -4957,-4360 -4661,-4172
 Neue Str.: Kopfsteinpflaster	Q2 -10884,-1653 -10969,-1586 -10984,-1574 -11056,-1528
 Neue Str.: Asphalt	Q0 -11056,-1528 -11090,-1506
 Nauen - Bredow: mäßiger Feldweg	Q2 -25082,21468 -24715,21432 -23061,20613 -22609,20276 -22390,19831 -22236,19745
-Brieselang - Falkensee: hauptsächlich gute Waldwege	Q1 -16876,18650 -16371,18491 -16106,18510 -15307,18254 -15003,18083 -14603,18132 -14277,18001
+Brieselang - Falkensee: hauptsächlich gute Waldwege	Q1 -16876,18650 -16371,18491 -16106,18510 -15307,18254 -15003,18083 -14603,18132
+Brieselang - Falkensee: Asphalt	Q0 -14603,18132 -14277,18001 -14244,17921 -14171,17894 -14216,17794
 ehem. Brieselang - Falkensee: hauptsächlich gute Waldwege	Q1 -14201,18031 -13736,18298 -13026,18545
 Hohensaaten - Oderberg: Verbundsteinpflaster	Q1 53191,51650 53440,51737
 Hohensaaten - Oderberg: Asphalt	Q0 53440,51737 53503,51745 53655,51729 53988,51726 54433,51638 54904,51602 54948,51580 55178,51582 55251,51651 55266,51719
@@ -3669,7 +3670,7 @@ Siegward-Sprotte-Str.: unbefestigt	Q2 -15413,452 -15380,689
 Siegward-Sprotte-Str.: Verbundsteinpflaster	Q1 -15380,689 -15368,717
 Florastr.: Asphalt	Q0 -16026,1044 -15982,1147 -15932,1238 -15859,1384 -15791,1523
 Florastr.: unbefestigte Straße	Q2 -15791,1523 -15692,1716
-Pannenbergstr.: Asphalt	Q0 -16470,1602 -16487,1548 -16477,1473 -16446,1426 -16394,1369 -16342,1324 -16275,1278 -16174,1220 -16046,1172 -15982,1147
+Pannenbergstr.: Asphalt	Q0 -16470,1602 -16487,1548 -16477,1473 -16446,1426 -16394,1369 -16342,1324 -16275,1278 -16174,1220 -16107,1195 -16046,1172 -15982,1147
 Haselnussring: Asphalt	Q0 -16174,1220 -16145,1272 -16129,1306 -16108,1349 -16048,1454
 Haselnussring: Asphalt	Q0 -16275,1278 -16160,1494
 Walnussring: Asphalt	Q0 -16477,1473 -16498,1444 -16549,1350 -16509,1329 -16492,1335 -16424,1300 -16371,1271 -16342,1324
@@ -4202,7 +4203,7 @@ Gagarinstr. (Potsdam): Beton	Q1 -8137,-2997 -8197,-3128 -8247,-3264
 Mozartstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -8127,-2925 -8137,-2997
 Bahnhofstr. (Potsdam): Asphalt	Q0 -8417,-2862 -8410,-2884 -8430,-2937 -8363,-3060 -8347,-3065 -8197,-3128
 Bahnhofstr. (Potsdam): Asphalt	Q1 -8197,-3128 -7934,-3226 -7923,-3230
-Heinrich-George-Str. (Potsdam): Asphalt	Q0 -9075,-2664 -9054,-2632 -9013,-2614
+Lotte-Loebinger-Str. (Potsdam): Asphalt	Q0 -9075,-2664 -9054,-2632 -9013,-2614
 Grünstr. (Potsdam): Asphalt	Q0 -9100,-2765 -9075,-2664
 Kleine Str. (Potsdam): Asphalt	Q0 -9206,-2461 -9254,-2605
 Weidendamm (Potsdam): Asphalt	Q0 -9511,-2718 -9462,-2540
@@ -7480,6 +7481,9 @@ Geraer Str. (Neuenhagen): unbefestigte Straße	Q2 29949,11390 29942,11284
 Tegeler Str.: Kleinsteinpflaster	Q2 -10088,17984 -10150,17988 -10292,17929 -10374,17869 -10417,17770
 Marwitzer Str.: Kleinsteinpflaster	Q2 -10530,17708 -10417,17770
 Marwitzer Str.: Asphalt	Q2 -10417,17770 -10344,17792 -10239,17791 -10114,17740
+Scharfschwerdtstr. (Hohen Neuendorf): Asphalt	Q0 1364,27953 1426,28065 1456,28125
+Scharfschwerdtstr. (Hohen Neuendorf): Kleinsteinpflaster	Q2 1456,28125 1453,28175 1448,28276 1432,28356
+Scharfschwerdtstr. (Hohen Neuendorf): schlechtes Kopfsteinpflaster	Q3 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808
 Drewitzer Str.: Asphalt	Q0 -10676,-3954 -10793,-3868
 Märkischer Platz (Dallgow-Döberitz): Kopfsteinpflaster	Q2 -13168,14956 -13169,14983 -13188,14999 -13188,15060 -13196,15067 -13204,15061 -13213,15000 -13235,14987 -13237,14962 -13205,14960 -13168,14956
 Märkischer Platz (Dallgow-Döberitz): Verbundsteinpflaster	Q1 -13205,14960 -13203,14979 -13188,14999

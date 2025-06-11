@@ -21132,10 +21132,10 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-04 00:00:00"), # 1336255200, # 2012-05-06 00:00
-       until => undef, # $isodate2epoch->("2025-06-13 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
+       until => undef, # $isodate2epoch->("2025-06-27 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #      text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
 #      text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
-       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Mitte Juni 2025, evtl. wird verlängert',
+       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Ende Juni 2025, voraussichtlich wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
@@ -21144,13 +21144,13 @@ EOF
 #: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
-#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...)
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
 #: osm_watch: way id="152466403" version="21"
 #: osm_watch: note 4444162 3
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str. und Lianenweg, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle
-#: next_check: 2025-06-13 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-06-27 (VIZ-Verkehrsmeldung)
 	q4::inwork; 20302,1613 20028,1673 19898,1704 19766,1796
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 EOF
@@ -29444,7 +29444,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-06-06 vvv
+#: last_checked: 2025-06-11 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -31175,7 +31175,7 @@ EOF
        data  => <<EOF,
 #: by: Tsp 2019-09-10
 #: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/1562-schienenersatzverkehr-auch-mit-schnellbussen (nicht für Fahrräder)
-# REMOVED (Teilstück existiert nicht mehr) ---	2::inwork 10259,-2660 10287,-2644 10307,-2633 10365,-2603 10382,-2598
+# REMOVED (Teilstück existiert nicht mehr) ---	2::inwork 10259,-2660 10287,-2644 10307,-2633 10334,-2618 10365,-2603 10382,-2598
 EOF
      },
      { from  => $isodate2epoch->("2019-09-23 12:00:00"), # 1568498400, # 2019-09-15 00:00
@@ -31951,7 +31951,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345675 (inaktiv)
-# REMOVED (Teilstück existiert nicht mehr) ---	q3::inwork 10365,-2603 10307,-2633 10287,-2644 10259,-2660
+# REMOVED (Teilstück existiert nicht mehr) ---	q3::inwork 10365,-2603 10334,-2618 10307,-2633 10287,-2644 10259,-2660
 EOF
      },
      { from  => undef, # 
@@ -35382,7 +35382,7 @@ EOF
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 # REMOVED (laut osm offen) --- #: add_fragezeichen: Ist die Unterführung noch immer gesperrt? --- #: last_checked: 2024-09-27 (youtube) --- #: check_frequency: 60d
-	2::inwork 9699,-600 9562,-619
+	2::inwork 9699,-600 9632,-608 9562,-619
 EOF
      },
      { from  => 1638385908, # 2021-12-01 20:11
@@ -37465,7 +37465,7 @@ EOF
      },
      { from  => 1719118800, # 2024-06-23 07:00, # 1661193050, # 2022-08-22 20:30
        until => 1720792800, # 2024-07-12 16:00, # 1664475355, # 1664575200, # 2022-10-01 00:00
-       #text  => 'Goslarer Ufer: Sperrung der Fahrbahn südlich der Gaußstr., evtl. sind auch Radfahrer betroffen, bis 30.09.2022',
+#      text  => 'Goslarer Ufer: Sperrung der Fahrbahn südlich der Gaußstr., evtl. sind auch Radfahrer betroffen, bis 30.09.2022',
        text  => 'Goslarer Ufer: Sperrung zwischen Gaußstr. und Kaiserin-Augusta-Allee, evtl. sind auch Radfahrer betroffen, vom 24.06.2024 07:00 bis 12.07.2024 16:00',
        type  => 'handicap',
        data  => <<EOF,
@@ -41861,7 +41861,7 @@ EOF
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025) (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
-#: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025)
+#: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="35"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
@@ -43882,24 +43882,24 @@ EOF
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 11.06.2025 + weitere Arbeiten)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,re-G)
 #: note: bei Bing & TomTom & Google nur die östliche Anbindung als gesperrt markiert
 #: note: Außerdem gibt's eine Gegenverkehrsregelung: Richtung Süden müssen die Radfahrer den Bürgersteigradweg benutzen, Richtung Norden ist der vorhandene Bürgersteig abgesperrt und man ist von der Gegenverkehrsregelung betroffen
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-06-09 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2025-06-11 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2025-06-11 (traffic) vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: next_check: 2025-06-11 (VIZ-Verkehrsmeldung) vvv
 #: note: nur wenige Meter
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 # REMOVED (nicht (mehr?)) --- Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
 Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 24775,13218 24969,13129
 Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -44768,7 +44768,7 @@ EOF
 #: note: 2024-09-18: Bauzäune sind weggeschoben
 # REMOVED --- #: osm_watch: way id="746470210" version="3"
 #: osm_watch: way id="1382537913" version="1"
-#: last_checked: 2025-03-27 (Pressemitteilung)
+#: last_checked: 2025-06-10 (daf)
 #: check_frequency: 120d
 #: next_check: 2025-10-31
 	2::inwork 4151,13961 4156,13914 4186,13710
@@ -44807,7 +44807,7 @@ EOF
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-05-14 vvv
+#: last_checked: 2025-06-11 vvv
 #: check_frequency: 21d vvv
 #: osm_watch: way id="26158804" version="25"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -47594,11 +47594,12 @@ EOF
 EOF
      },
      { from  => 1745211600, # 2025-04-21 07:00
-       until => 1753480740, # 2025-07-25 23:59
-       text  => 'Herbartstr.: Bauarbeiten zwischen Dernburgstr. und Neue Kantstr., evtl. sind auch Radfahrer betroffen, vom 22.04.2025 07:00 bis 25.07.2025 23:59',
+       until => $isodate2epoch->("2025-06-13 18:00:00"), # 1753480740, # 2025-07-25 23:59
+#      text  => 'Herbartstr.: Bauarbeiten zwischen Dernburgstr. und Neue Kantstr., evtl. sind auch Radfahrer betroffen, vom 22.04.2025 07:00 bis 25.07.2025 23:59',
+       text  => 'Herbartstr.: Bauarbeiten zwischen Dernburgstr. und Neue Kantstr., evtl. sind auch Radfahrer betroffen, bis 13.06.2025',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025)
+#: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025) (inaktiv)
 #: source_id: viz2021:13.285979,52.505083,02.06.2025,07:00 (bis 13.06.2025)
 #: source_id: adac:798121028 (bis voraussichtlich 13.06.2025)
 #: note: an der Kantstr. steht ein Sackgassenschilder, Fußgänger/Radfahrer frei

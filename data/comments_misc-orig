@@ -1184,7 +1184,9 @@ Bus 172	busroute_N 12938,1348 12790,1302 12657,1154 12588,1103 12538,1075 12403,
 Bus 172	busroute_N 10266,-1473 10460,-1471 10496,-1486 10508,-1511 10531,-1633 10539,-1689 10537,-1785 10513,-1954 10512,-1994 10507,-2016 10465,-2129
 Bus 172	busroute_N 10021,-1918 9959,-1918 9982,-1818
 Bus 175	busroute_N 9959,-1918 9853,-1921 9750,-1925 9648,-1928 9534,-1926 9428,-1892 9431,-1800 9443,-1626 9445,-1460 9457,-1329 9456,-1271 9379,-935
-Bus 175	busroute_N 10096,-2137 10173,-2402 10253,-2643 10287,-2644 10307,-2633 10365,-2603 10382,-2598 10420,-2644 10510,-2642 10638,-2638 10657,-2639 10678,-2640 10832,-2636 10949,-2635 11063,-2615 11308,-2535 11496,-2484 11706,-2409 11818,-2356 11882,-2326 12052,-2250 12122,-2219 12154,-2202 12082,-1908 12058,-1785 12050,-1715 12046,-1678 11778,-1706
+Bus 175	busroute_N 10310,-2136 10318,-2156 10404,-2404 10454,-2520 10505,-2552 10510,-2642
+# REMOVED (ehemalige Führung via Wolziger Zeile) --- Bus 175	busroute_N 10096,-2137 10173,-2402 10253,-2643 10287,-2644 10307,-2633 10334,-2618 10365,-2603 10382,-2598 10420,-2644 10510,-2642
+Bus 175	busroute_N 10510,-2642 10638,-2638 10657,-2639 10678,-2640 10832,-2636 10949,-2635 11063,-2615 11308,-2535 11496,-2484 11706,-2409 11818,-2356 11882,-2326 12052,-2250 12122,-2219 12154,-2202 12082,-1908 12058,-1785 12050,-1715 12046,-1678 11778,-1706
 Bus X76, ...	busroute_N 11778,-1706 11746,-1442 11739,-1384 11717,-1204
 Bus 373	busroute_N 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747 15799,1690 15729,1573 15719,1557 15688,1506 15670,1474 15641,1426 15880,1291 15984,1233 16142,1141 16282,1052 16342,959 16349,932
 Bus 271	busroute_N 15757,610 15810,525 15835,489 15944,368 15995,328 16035,298 16057,284 16130,239 16055,153 15966,52 15960,-10 15995,-115 16051,-264 16079,-337 16142,-414 16234,-450 16297,-468 16378,-489 16431,-311 16477,-160 16498,-92 16536,26 16590,216 16642,393 16726,642 16735,668 16779,775 16796,820 16813,865 16887,1051 16886,1094 16839,1162
@@ -1647,7 +1649,7 @@ Waldpromenade: nicht ausgeschildert	CS 23473,8114 23376,8186 23261,8274 23149,83
 # 
 (Friedrichstr. - Enckestr.): ausgeschildert Friedrichstrasse 23 23A 23B; entlang taz-Gebäude und Besselpark	CP2; 9537,10837 9666,10848
 # 
-#: last_checked: 2025-06-06
+#: last_checked: 2025-06-11
 #: check_frequency: 90d
 Mergenthalerring: Straße nicht ausgeschildert, Richtung "Elbekies" fahren	CP2; 14261,8851 14252,8829
 # 
@@ -2170,10 +2172,9 @@ Merkurstr.: nicht ausgeschildert	CP2; 4762,17484 4737,17385
 # 
 Stellerweg: erst einige Meter nach Beginn des Weges ausgeschildert	CP2; 14790,14656 14608,14701
 # 
-#: XXX evtl. nur provisorische Ausschilderung
-#: last_checked: 2025-02-21
-#: check_frequency: 90d
-Eisenhutweg [Wohngebiet]: ausgeschildert als Eisenhutweg 60,60A,60B,60C,62,62A,62B,64,66,70A,70B,70C	CP2; 17741,2824 17688,2744
+# REMOVED (nicht mehr provisorisch) --- #: XXX evtl. nur provisorische Ausschilderung --- #: last_checked: 2025-06-11 --- #: check_frequency: 90d
+#: historical_note: früher: Eisenhutweg [Wohngebiet]: ausgeschildert als Eisenhutweg 60,60A,60B,60C,62,62A,62B,64,66,70A,70B,70C
+Eisenhutweg [Wohngebiet]: ausgeschildert als Eisenhutweg 64,64A,64B,66,66A,66B,68,68A,68B,76,76A,76B	CP2; 17741,2824 17688,2744
 # 
 nicht ausgeschildert, Privatstraße	CS 21978,7614 21902,7684 21816,7754
 # 
@@ -2193,6 +2194,11 @@ provisorisch als "Platz An der Eiche" ausgeschildert	CS 19952,8174 19914,8150
 Anemonensteig: nicht ausgeschildert	CP2; 20014,8071 19980,8041
 Kuckuckweg: ausgeschildert, allerdings sieht man das Schild nur von der anderen Seite	CP 20187,8442 20224,8441 20226,8354
 Arenholzsteig: nicht ausgeschildert	CP2; 8496,6919 8481,6900
+Straße 478: ausgeschildert zum Bezirksamt Tempelhof-Schöneberg	CP2; 7781,-182 8054,-198
+#: note: den Radwegweiser müsste man zweiteilen: Schönefeld 12 via Mauerweg (jetzt falsch), (S) Lichtenrade 1,5 (richtig, kann bleiben); dann könnte man das B-L-Schild umhängen
+#: last_checked: 2025-06-11
+#: check_frequency: 180d
+falsche Ausschilderung der Berlin-Leipzig-Route (Mozartstr. statt Mauerweg)	CP2; 10467,-3201 10491,-3208
 # 
 #: section ^^^
 # DO NOT ADD ANYTHING AFTE THIS POINT!

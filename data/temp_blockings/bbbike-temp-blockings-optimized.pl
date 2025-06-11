@@ -3079,19 +3079,19 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://viz.berlin.de/site/assets/files/1481/grunauer_str-1.jpg
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
-#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...)
+#: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
 #: osm_watch: way id="152466403" version="21"
 #: osm_watch: note 4444162 3
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str. und Lianenweg, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle
-#: next_check: 2025-06-13 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-06-27 (VIZ-Verkehrsmeldung)
 	q4::inwork; 20302,1613 20028,1673 19898,1704 19766,1796
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 ',
          'from' => 1707001200,
          'id' => 2328,
-         'text' => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Mitte Juni 2025, evtl. wird verlängert',
+         'text' => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Ende Juni 2025, voraussichtlich wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4304,7 +4304,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-06-06 vvv
+#: last_checked: 2025-06-11 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -6813,7 +6813,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025) (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
-#: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025)
+#: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="35"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
@@ -7293,24 +7293,24 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.62176,52.52477,04.06.2024,09:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.621053,52.524031,09.07.2024,10:00 (bis 19.08.2024) (bis 02.09.2024) (bis 11.10.2024) (bis 17.10.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...)
+#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
-#: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 11.06.2025 + weitere Arbeiten)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,re-G)
 #: note: bei Bing & TomTom & Google nur die östliche Anbindung als gesperrt markiert
 #: note: Außerdem gibt\'s eine Gegenverkehrsregelung: Richtung Süden müssen die Radfahrer den Bürgersteigradweg benutzen, Richtung Norden ist der vorhandene Bürgersteig abgesperrt und man ist von der Gegenverkehrsregelung betroffen
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-06-09 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2025-06-11 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2025-06-11 (traffic) vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: next_check: 2025-06-11 (VIZ-Verkehrsmeldung) vvv
 #: note: nur wenige Meter
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 # REMOVED (nicht (mehr?)) --- Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
 Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 24775,13218 24969,13129
 Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -7475,7 +7475,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 #: note: 2024-09-18: Bauzäune sind weggeschoben
 # REMOVED --- #: osm_watch: way id="746470210" version="3"
 #: osm_watch: way id="1382537913" version="1"
-#: last_checked: 2025-03-27 (Pressemitteilung)
+#: last_checked: 2025-06-10 (daf)
 #: check_frequency: 120d
 #: next_check: 2025-10-31
 	2::inwork 4151,13961 4156,13914 4186,13710
@@ -7494,7 +7494,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-05-14 vvv
+#: last_checked: 2025-06-11 vvv
 #: check_frequency: 21d vvv
 #: osm_watch: way id="26158804" version="25"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -8783,7 +8783,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025)
+         'data' => '#: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025) (inaktiv)
 #: source_id: viz2021:13.285979,52.505083,02.06.2025,07:00 (bis 13.06.2025)
 #: source_id: adac:798121028 (bis voraussichtlich 13.06.2025)
 #: note: an der Kantstr. steht ein Sackgassenschilder, Fußgänger/Radfahrer frei
@@ -8792,9 +8792,9 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
 ',
          'from' => 1745211600,
          'id' => 4309,
-         'text' => 'Herbartstr.: Bauarbeiten zwischen Dernburgstr. und Neue Kantstr., evtl. sind auch Radfahrer betroffen, vom 22.04.2025 07:00 bis 25.07.2025 23:59',
+         'text' => 'Herbartstr.: Bauarbeiten zwischen Dernburgstr. und Neue Kantstr., evtl. sind auch Radfahrer betroffen, bis 13.06.2025',
          'type' => 'handicap',
-         'until' => 1753480740
+         'until' => 1749830400
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?

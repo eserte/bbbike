@@ -714,8 +714,9 @@ Straßenbahntrasse	3nocross::ignrte 13826,16026 13737,15994 13623,15954
 Berliner Allee -> Parkstr.: Straßenbahntrasse	3::igndisp 13623,15954 13737,15994 13713,16079
 Parkstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13713,16079 13737,15994 13826,16026
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
-Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10276,906
-Glaserweg -> Buckower Chaussee: Mittelstreifen	3::igndisp 10237,749 10187,872 10047,813
+Mittelstreifen (Durchfahrt nur für Radfahrer möglich)	3nocross::ignrte 10187,872 10276,906 10324,925
+Buckower Chaussee -> Heinitzweg: Mittelstreifen (Durchfahrt nur für Radfahrer möglich)	3::igndisp 10187,872 10276,906 10232,1015
+Heinitzweg -> Buckower Chaussee: Mittelstreifen (Durchfahrt nur für Radfahrer möglich)	3::igndisp 10232,1015 10276,906 10324,925
 Mittelstreifen	3nocross::ignrte 10485,807 10522,708 10534,674 10590,525
 Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3::igndisp 10522,708 10534,674 10726,739
 Lichtenrader Damm -> Feldstedter Weg: Mittelstreifen	3::igndisp 10590,525 10534,674 10423,636
@@ -723,6 +724,8 @@ Feldstedter Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10423,636 10534,
 Feldstedter Weg -> Reichnerweg: Mittelstreifen	3::igndisp 10423,636 10534,674 10726,739
 Reichnerweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10726,739 10534,674 10590,525
 Reichnerweg -> Feldstedter Weg: Mittelstreifen	3::igndisp 10726,739 10534,674 10423,636
+Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10276,906
+Glaserweg -> Buckower Chaussee: Mittelstreifen	3::igndisp 10237,749 10187,872 10047,813
 Mittelstreifen	3nocross::ignrte 10427,968 10485,807 10522,708 10534,674
 Lichtenrader Damm -> Baldersheimer Weg: Mittelstreifen	3::igndisp 10427,968 10485,807 10674,882
 Baldersheimer Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10674,882 10485,807 10522,708

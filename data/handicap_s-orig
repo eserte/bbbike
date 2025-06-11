@@ -43,7 +43,7 @@ Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027)
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
-#: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027)
+#: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
 #: next_check ^^^
 #: last_checked ^^^
@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-06-06
+#: last_checked: 2025-06-11
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -359,10 +359,11 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408788611/wegedornbruecke-wieder-frei-doch-es-stehen-noch-bauarbeiten-aus.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1566332.php (Abschluss bis Ende Juni 2025)
 #: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
-#: last_checked: 2025-04-12
+#: last_checked: 2025-06-11
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung, BA-Pressemitteilung)
 #: valid: -20250630
-Wegedornstr.: Bauarbeiten, Engstellen	q2::inwork 18881,2062 18922,2238
+Wegedornstr.: Bauarbeiten, Engstellen	q1::inwork 18881,2062 18922,2238
+# REMOVED (mittlerweile nicht mehr q2) --- Wegedornstr.: Bauarbeiten, Engstellen	q2::inwork 18881,2062 18922,2238
 # REMOVED (fertig) --- Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18922,2238 18928,2319 18929,2454
 # 
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
@@ -1407,20 +1408,7 @@ Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11
 # 
 ### Lankwitz ###
 # 
-# REMOVED --- #: also_indoor: traffic (ex-B,G,ex-H,ex-T)
-# REMOVED --- #: note: Halteverbotsschilder bis 23.10.2024
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-# REMOVED --- #: last_checked: 2025-04-27 (traffic) vvv
-# REMOVED --- #: check_frequency: 10d vvv
-# REMOVED --- # REMOVED --- #: next_check: 2024-10-23 vvv
-# REMOVED --- # REMOVED --- #: valid: -20241023 vvv
-# REMOVED --- Mozartstr./Calandrellistr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege	q2::inwork 5619,3958 5710,3751 5791,3563
-# REMOVED --- Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5549,3679 5710,3751 5954,3861
-# REMOVED --- # REMOVED --- #: valid ^^^
-# REMOVED --- # REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-# REMOVED --- #: last_checked ^^^
-# REMOVED --- #: add_fragezeichen ^^^
+# REMOVED --- #: also_indoor: traffic (ex-B,G,ex-H,ex-T) --- #: note: Halteverbotsschilder bis 23.10.2024 --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: last_checked: 2025-04-27 (traffic) vvv --- #: check_frequency: 10d vvv --- # REMOVED --- #: next_check: 2024-10-23 vvv --- # REMOVED --- #: valid: -20241023 vvv --- Mozartstr./Calandrellistr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege	q2::inwork 5619,3958 5710,3751 5791,3563 --- Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5549,3679 5710,3751 5954,3861 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 ### Lichterfelde ###
 # 
@@ -2022,11 +2010,11 @@ Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # 
 #: XXX nach den Bauarbeiten wiederherstellen:
 #: XXX Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
-#: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025) (inaktiv) (bis 12.06.2025)
+#: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025) (inaktiv) (bis 12.06.2025) (bis 25.07.2025)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-06
+#: last_checked: 2025-06-11
 #: check_frequency: 30d
-#: next_check: 2025-06-12 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-07-25 (VIZ-Verkehrsmeldung)
 Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
 # 
 Lausitzer Platz: Fußgängerzone, einige Bodenschwellen	q2 12197,10494 12172,10585
@@ -2373,7 +2361,7 @@ Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fußgänger	q1 12052,6660 12059,6642 12092,6616 12155,6526
 #: XXX_prog BS (Bordstein am Mariendorfer Weg, ansonsten mit dem anderen Fußgänger-Eintrag verknüpfen)
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
-Mauerweg: einige Fußgänger	q1 12984,1011 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: einige Fußgänger	q1 12984,1011 12886,968 12823,939 12731,893 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fußgänger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -2921,12 +2909,14 @@ Eingang Okerstr.: Bordstein	q2- 11527,7530 11540,7534
 Eingang Allerstr.: Bordstein	q3 11509,7636 11521,7638
 Tullaweg - An der Heilandsweide: Fußgänger	q1 8464,990 8492,1050
 (Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
-#: note: nicht klar, ob das Durchfahren verboten ist, auf der östlichen Seite kein Verbotsschild gesehen
+#: note: Grünanlagenschild ohne Zusatzschilder zum Radverkehr
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fußgänger	q1 7501,83 7520,76 7535,20 7559,14 7659,-112 7668,-138 7722,-180
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fußgänger	q1 7668,-138 7552,-67 7535,20
-(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): enger Weg	q3 7722,-180 7717,-285 7776,-283
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): enger Weg	q3 7722,-180 7718,-288 7749,-290 7776,-283
 (KGA Birkholz): einige Fußgänger	q1 7751,-920 7766,-920 7765,-898 7977,-864 8026,-859 8059,-1077 8063,-1107 8085,-1120
 (KGA Birkholz): einige Fußgänger	q1 7766,-920 8059,-1077
+#: note: am westlichen Ende Grünanlagenschild ohne Zusatzschilder zum Radverkehr, dafür aber "kein Mofa"; am östlichen Ende explizit als Gehweg und Radweg ausgeschildert
+(Straße 478 - Königsgraben): wenige Fußgänger	q0- 8585,-231 8054,-198
 Schäßburger Weg: enge Straße	q1+ 6963,-82 6983,-123 7040,-188 7090,-225 7127,-248
 (Lichterfelder Ring - Mauerweg): teilweise enger Weg	q2+ 6582,600 6598,536 6600,150
 #: note: Grünanlage, meist mit expliziten Radfahren-verboten-Zusatzschildern vvvv

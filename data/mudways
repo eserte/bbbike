@@ -146,6 +146,7 @@ Am Betriebsbahnhof Schöneweide: unbefestigt, mit vielen kleinen Kuhlen	X 18160,4
 #: mud: 2025-02-22: etwas matschige Oberfläche	note=Tauwetter, deshalb evtl. nicht mit der Bodenfeuchte zusammenhängend, ansonsten h=q2,wet
 #: mud: 2025-04-23: keine Beeinträchtigungen	h=q0
 #: mud: 2025-05-14: keine Beeinträchtigungen	h=q0
+#: mud: 2025-06-11: keine Beeinträchtigungen	h=q0
 Stadtpark Steglitz: Parkweg	X 5890,4674 5841,4557 5836,4469 5787,4400
 # 
 # REMOVED (Einträge vor der Sanierung 2024 entfernt)
@@ -156,6 +157,7 @@ Stadtpark Steglitz: Parkweg	X 5890,4674 5841,4557 5836,4469 5787,4400
 #: mud: 2025-02-22: etwas matschige Oberfläche	note=Tauwetter, deshalb evtl. nicht mit der Bodenfeuchte zusammenhängend, ansonsten h=q2,wet
 #: mud: 2025-03-26: keine Beeinträchtigungen	h=q0
 #: mud: 2025-05-14: keine Beeinträchtigungen, etwas staubig	h=q0
+#: mud: 2025-06-11: keine Beeinträchtigungen	h=q0
 Weverpromenade: wassergebundene Decke	X 5787,4400 5738,4361 5721,4356 5541,4305
 # 
 # REMOVED (Sanierung Dez 2024/Jan 2025; ältere Einträge entfernt)
@@ -797,6 +799,7 @@ Orankestrand: unbefestigter Weg	X 15731,16208 15664,16115 15592,16069 15479,1606
 #: mud: 2024-05-18: leicht sandig	h=q1+,dry
 #: mud: 2024-07-03: einige Pfützen und matschige Stellen	h=q2,wet
 #: mud: 2025-03-19: keine Beeinträchtigungen	h=q0
+#: mud: 2025-06-11: wenige Pfützen und feuchte Stellen in den Kuhlen	h=q1,wet
 Mauerweg: wassergebundene Decke	X 11596,583 11672,554 11802,554 11928,588 11956,599
 # 
 #: mud: 2024-05-29: einige Pfützen	h=q2,wet
@@ -805,6 +808,7 @@ Mauerweg: wassergebundene Decke	X 11596,583 11672,554 11802,554 11928,588 11956,
 # 
 #: mud: 2023-11-18: matschige Stellen	h=q3,wet
 #: mud: 2024-10-30: keine Beeinträchtigungen	h=q0
+#: mud: 2025-06-11: matschige Stellen, die meisten umfahrbar	h=q2,wet
 Stuthirtenweg: unbefestigter holpriger Weg	X 13040,1021 13113,1046 13181,1082
 # 
 #: mud: 2023-03-11: leicht matschige Oberfläche, einige teils größere Pfützen	h=q3,wet
@@ -956,4 +960,14 @@ Windhuker Str.: wassergebundene Decke	X 5426,16539 5712,16245 5748,16235
 # 
 #: mud: 2025-06-01: keine Beeinträchtigungen	h=q0
 Verlängerte Schulzendorfer Str.: gut befahrbarer Waldweg	X 2150,22464 2015,22435 1834,22421 1622,22383
+# 
+#: mud: 2025-06-11: einige matschige Stellen und Pfützen, alle umfahrbar	h=q1
+(Weg am ehem. Güteraußenring): wassergebundene Decke	X 9170,-673 9143,-667 8656,-736
+# 
+#: mud: 2025-06-11: keine Beeinträchtigungen	h=q0
+(Weg am ehem. Güteraußenring): wassergebundene Decke	X 9170,-673 9252,-667 9352,-643 9424,-608 9492,-538 9522,-533
+# 
+#: mud: 2025-06-11: einige Pfützen	h=q2
+#: note: zwar existiert ein Kleinsteinpflasterstreifen, aber dieser ist schmal
+(Weg am ehem. Güteraußenring): wassergebundene Decke	X 9522,-533 9562,-619
 # 

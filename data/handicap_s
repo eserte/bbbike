@@ -20,7 +20,7 @@ G¸ldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783
-Wegedornstr.: Bauarbeiten, Engstellen	q2::inwork 18881,2062 18922,2238
+Wegedornstr.: Bauarbeiten, Engstellen	q1::inwork 18881,2062 18922,2238
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (L¸tticher Str. - Luxemburger Str. (¸ber das Gel‰nde der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -656,7 +656,7 @@ Oberlandgarten: Fuﬂg‰nger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fuﬂg‰nger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fuﬂg‰nger	q1 12052,6660 12059,6642 12092,6616 12155,6526
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
-Mauerweg: einige Fuﬂg‰nger	q1 12984,1011 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: einige Fuﬂg‰nger	q1 12984,1011 12886,968 12823,939 12731,893 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fuﬂg‰nger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 Bayernring: enge Straﬂe	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -1038,9 +1038,10 @@ Tullaweg - An der Heilandsweide: Fuﬂg‰nger	q1 8464,990 8492,1050
 (Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7501,83 7520,76 7535,20 7559,14 7659,-112 7668,-138 7722,-180
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7668,-138 7552,-67 7535,20
-(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): enger Weg	q3 7722,-180 7717,-285 7776,-283
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): enger Weg	q3 7722,-180 7718,-288 7749,-290 7776,-283
 (KGA Birkholz): einige Fuﬂg‰nger	q1 7751,-920 7766,-920 7765,-898 7977,-864 8026,-859 8059,-1077 8063,-1107 8085,-1120
 (KGA Birkholz): einige Fuﬂg‰nger	q1 7766,-920 8059,-1077
+(Straﬂe 478 - Kˆnigsgraben): wenige Fuﬂg‰nger	q0 8585,-231 8054,-198
 Sch‰ﬂburger Weg: enge Straﬂe	q1 6963,-82 6983,-123 7040,-188 7090,-225 7127,-248
 (Lichterfelder Ring - Mauerweg): teilweise enger Weg	q2 6582,600 6598,536 6600,150
 (Malteserstr. - Kamenzer Damm): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 7438,1855 7592,1892 7619,1939 7628,1975 7648,2005 7649,2052 7659,2073 7650,2112

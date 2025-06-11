@@ -350,7 +350,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-06-03 vvv
+#: last_checked: 2025-06-11 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1219,7 +1219,7 @@ Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 1
 #: note: Waltersdorfer Chaussee/Neuköllner Str., Richtung Norden
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
 #: XXX Inkonsistenz: Busspur ist für Radfahrer freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
-#: last_checked: 2025-04-12
+#: last_checked: 2025-06-11
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
@@ -1336,7 +1336,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-06-06 vvv
+#: last_checked: 2025-06-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1510,7 +1510,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="22"
-#: last_checked: 2025-05-05
+#: last_checked: 2025-06-11
 #: check_frequency: 120d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -1942,7 +1942,7 @@ Verbundsteinpflaster	RW1; 6494,10440 6403,10424 6276,10401 6147,10383 6029,10356
 #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (Fahrbahnsanierung bis 30.11.2023) (bis 01.12.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="26"
 #: osm_watch: way id="458915639" version="7"
-#: last_checked: 2025-04-22 (mapillary) vvv
+#: last_checked: 2025-06-11 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070
@@ -3134,7 +3134,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-06-06
+#: last_checked: 2025-06-11
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -6583,7 +6583,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: by[nocache]: https://www.facebook.com/larsduesterhoeft1981/posts/pfbid0jyCzp1ULBQ8ZkAaVbTgcaNAcQpqMpfY61ePJ3Bzuyvt3Dg3ctbA8Rjej8xo7C7p9l (Freigabe für Kfz-Verkehr bis Ende 2024?)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (Einbahnstraße für MIV bis voraussichtlich März 2025) (mittlerweile bis Ende Mai 2025)
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-sterndamm-bleibt-auf-unbestimmte-zeit-gesperrt-li.2293446 (könnte bis 2026 dauern)
-#: last_checked: 2025-06-04
+#: last_checked: 2025-06-11
 #: check_frequency: 120d
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung, bvg)
 provisorische Radspur	RW4; 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
@@ -9440,4 +9440,7 @@ Verbundsteinpflaster	RW1; 4952,17122 4929,17069 4897,17040
 	RW3; 7834,7131 7932,7178
 # 
 	RW4?;RW4? -8371,13186 -8358,13340
+# 
+#: note: ... allerdings zu wenig, um als Radweg zu zählen
+die nördliche Fahrbahnseite hat einen Streifen mit einem anderen Rot mit Radfahr-Piktogrammen in beide Richtungen	RW0;RW0 7781,-182 8054,-198
 # 

@@ -2904,7 +2904,6 @@ Nachtalbenweg	N 14832,17867 14785,17896 14754,18054
 Nachtalbenweg	NN 14754,18054 14741,18063 14746,18072
 Nachtalbenweg	N 14746,18072 14731,18171 14728,18188 14718,18253 14711,18297 14682,18430 14653,18515 14643,18550 14611,18643 14570,18763 14565,18777
 Andersenweg	NN 14565,18777 14521,18907 14495,18956 14452,19020 14414,19063 14279,19144 14150,19226 14053,19280 14018,19292 13990,19302 13951,19312
-#: XXX_osm: meint "Reinicke" (added note)
 Reineke-Fuchs-Weg	N 14831,19009 14784,18995
 Reineke-Fuchs-Weg	NN 14784,18995 14698,18967 14651,18950 14603,18934 14558,18920 14521,18907 14481,18893 14422,18874 14394,18876 14359,18896 14324,18916 14189,19000 14059,19079 13971,19125 13936,19132 13909,19133
 Rotkäppchenweg	NN 14692,18823 14651,18950 14621,19025 14578,19089 14528,19140 14482,19174 14349,19255 14216,19338
@@ -2923,9 +2922,7 @@ Däumlingsweg (Stadtrandsiedlung Malchow)	NN 14348,18711 14316,18805 14301,18827 
 Eulenspiegelweg	NN 14265,18747 14248,18748 14092,18843 13989,18908 13962,18915
 Aschenbrödelweg	NN 14367,18849 14406,18731
 (Aschenbrödelweg - Reineke-Fuchs-Weg)	NN 14367,18849 14394,18876
-#: XXX_osm: missing in osm (added note)
 Schnatterinchenweg	NN 13995,18774 14057,18606
-#: XXX_osm: missing in osm (added note)
 Pittiplatschweg	NN 14064,18729 14106,18623
 Frau-Elster-Weg	NN 13953,18842 13948,18757 14011,18589
 Gnomenplatz	N 14682,18178 14702,18064
@@ -2991,7 +2988,6 @@ Lokistr.	N 12683,18597 12717,18662
 Donarstr.	N 12749,18564 12716,18581 12683,18597 12651,18613 12619,18612
 Hildestr.	N 12684,18859 12623,18756 12609,18730 12616,18630 12619,18612 12627,18506 12609,18470
 Sleipnerstr.	N 12261,19099 12510,18954 12684,18859 12829,18775
-#: XXX_osm: bei osm ohne Namen und zu kurz (added note)
 Straße 45 (Heinersdorf)	NN 12609,17405 12671,17528 12829,17626 12924,17676
 Straße 46 (Heinersdorf)	N 12630,17636 12587,17603
 Straße 46 (Heinersdorf)	NN 12587,17603 12505,17469 12500,17460
@@ -3328,13 +3324,13 @@ Eschenstr. (Baumschulenweg)	N 16031,4608 16203,4495
 (Schwarzer Weg)	N 16357,4346 16180,4461 16005,4576 15918,4636
 Tronjeweg	N 15887,4400 15930,4464 16005,4576
 Laurinsteg	N 15930,4464 15843,4524
-#: XXX_osm bei osm falsch ("Gunther") geschrieben? (added note)
-Gunterweg	N 15716,4255 15835,4437
+#: historical_note: bei BBBike bis 2025 fälschlicherweise als "Gunterweg" bezeichnet (warum?)
+Guntherweg	N 15716,4255 15835,4437
 Gernotweg	N 15768,4218 15887,4400
 Uteweg	N 15814,4158 15947,4361
 Gudrunweg	N 15868,4116 16001,4325
 Ortwinweg	N 15932,4082 16061,4285
-#: XXX_osm bei osm falsch ("Völkerweg") geschrieben? (added note)
+#: XXX_osm bei osm möglicherweise falsch ("Hauptweg"), der Volkerweg ist bei osm der Querweg (added note)
 Volkerweg	NN 16005,4012 16046,4073 16060,4093 16145,4217 16151,4226
 (Am Buckersberg - Volkerweg)	N 16090,4021 16039,4062
 Lokiweg	N 16180,4461 16061,4285
@@ -3342,7 +3338,6 @@ Mittelweg (Baumschulenweg)	N 16549,5015 16436,4844 16407,4800 16354,4720 16327,4
 Pflanzerweg	N 16382,4381 16292,4438 16203,4495
 Kleinbauersweg	N 16445,4454 16346,4520 16258,4578
 Heinrich-Sachs-Str.	N 16085,4692 16258,4578
-#: XXX_osm bei osm falsch geschrieben (nämlich zusammen)! (added note)
 Kurze Str. (Baumschulenweg)	N 16427,4334 16550,4529 16518,4551
 #: note: Straßenführung by Britta Hauchwitz:
 Aprikosensteig	N 15445,4878 15474,4845 15558,4758 15608,4722 15690,4668 15774,4612 15863,4554
@@ -3495,9 +3490,7 @@ Lindenblütenstr.	N 21703,388 21671,509 21657,580
 (Kirchsteig - Grünzug am Falkenberg)	N 21925,612 21879,557 21876,554 21905,510 21904,481 21886,466 21860,462 21774,412
 (Sternblütenweg - Grünzug am Falkenberg)	NN 21620,372 21621,360 21592,341
 (Weg)	NN 21860,462 21820,524 21777,591
-#: XXX_osm: bei osm teilweise mit oneway getaggt: stimmt das? kann mich nicht entsinnen...
 Am Gartenstadtweg	N 21527,547 21549,533 21592,547 21657,580 21673,590 21684,642 21613,667 21592,547
-#: XXX_osm: fehlt (added note)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036588619976/588619976/00082992/92-Anlagen/01/DRS0234VK.pdf (Bebauungsplan)
 Mohnblütenweg	N 21712,215 21688,312
 Zur Gartenstadt	N 21712,215 21742,115 21769,-30 21800,-109 21847,-303
@@ -3881,7 +3874,6 @@ Bistritzer Pfad	N 7087,-396 7110,-363 7146,-307
 Hermannstadter Weg	N 7005,-354 7030,-313 7090,-225 7143,-136 7201,-39
 Kronstadter Weg	N 6809,-152 6867,-126 6963,-82 7061,-38 7161,6 7181,-15 7201,-39
 Kronstadter Weg	N 7181,-15 7231,25
-#: XXX_osm: bei osm gibt es eine Verbindung zur Marienfelder Allee, die es in der Realität aber nicht gibt (Schallschutzmauer!) (added note)
 Schäßburger Weg	N 6963,-82 6983,-123 7040,-188 7090,-225 7127,-248 7225,-312
 Preßburger Pfad	N 7061,-38 7081,-76 7143,-136
 Baußnernweg	N 7201,-39 7277,-77 7397,-123
@@ -4175,7 +4167,7 @@ Wiesenweg (Lankwitz, Lichterfelde)	N 5447,3801 5390,3866 5400,3969 5405,4014
 Teltowkanalstr.	N 5624,4112 5524,4066 5458,4037 5405,4014
 Am Elsenbruch	N 5524,4066 5573,3960 5593,3935
 Nicolaistr.	N 6171,3400 6139,3473 6098,3548 6040,3675 5954,3861 5862,4062 5823,4150 5798,4207 5785,4236 5766,4279
-(Nicolaistr. - Dillgesstr.)	NN 6171,3400 6218,3302
+(Nicolaistr. - Dillgesstr.)	NN 6171,3400 6217,3326 6225,3300
 Waldmannstr.	N 6139,3473 5888,3343 5737,3264
 Humperdinckstr.	N 5783,3182 5933,3261 5988,3283 6039,3275
 Franzstr. (Lankwitz)	N 5559,3058 5776,3195
@@ -5266,7 +5258,6 @@ Wasserkäfersteig	N -927,4638 -862,4542 -755,4387
 (Vierlingpark, westlicher Weg)	NN -717,4115 -759,4239 -713,4426 -706,4465
 (Vierlingpark - Wasserkäfersteig)	NN -713,4426 -735,4407 -755,4387
 Hirschhorner Weg	N -820,4772 -793,4754 -741,4660 -753,4578 -760,4542 -763,4462
-#: XXX_osm: bei osm evtl. falsch geschrieben (Bürstedter statt Bürstadter) (added note)
 Bürstadter Weg	N -760,4542 -847,4553 -862,4542
 Lindenfelser Weg	NN -963,4869 -857,4725 -824,4682 -753,4578 -690,4519 -649,4484 -638,4413 -595,4385 -548,4326 -420,4159
 (Lindenfelser Weg - Alsbacher Weg)	NN -824,4682 -831,4636
@@ -5433,7 +5424,7 @@ Seydlitzstr. (Lankwitz)	N 6511,2284 6567,2194 6597,2157
 (Retzowstr. - Seydlitzstr.)	N 6391,2200 6511,2284
 Ingridpfad	N 6182,2737 6304,2825 6359,2875
 Saarburger Str.	N 6529,3480 6647,3523
-Charlottenstr. (Lankwitz)	N 5774,2785 5936,2977 6044,3110 6129,3203 6218,3302 6426,3425 6529,3480
+Charlottenstr. (Lankwitz)	N 5774,2785 5936,2977 6044,3110 6129,3203 6225,3300 6426,3425 6529,3480
 Elisabethstr. (Lankwitz)	N 5774,2785 5933,2859 6022,2901 6138,3022 6224,3112 6308,3204
 Amalienstr. (Lankwitz)	N 5831,2624 5774,2785
 Ruthstr.	N 6129,3203 6224,3112 6313,3028
@@ -5446,7 +5437,7 @@ Cecilienstr. (Lankwitz)	N 5933,2859 6002,2723
 Annastr.	N 5863,2825 5920,2693
 Annastr.	NN 5920,2693 5930,2671
 Thaliaweg	N 6638,3138 6482,3004
-Dillgesstr.	N 6218,3302 6308,3204 6401,3113 6456,3038 6482,3004 6514,2961 6592,2827
+Dillgesstr.	N 6225,3300 6308,3204 6401,3113 6456,3038 6482,3004 6514,2961 6592,2827
 Sibyllenstr.	N 6535,3243 6484,3292 6429,3286 6359,3256 6308,3204
 Reginenweg	NN 6484,3292 6482,3327 6431,3417 6426,3425
 Barbarastr.	N 6372,2856 6359,2875 6329,2916 6372,2959 6456,3038
@@ -6310,7 +6301,7 @@ Segelfliegerdamm	H 17490,3630 17522,3653 17552,3675 17585,3745 17592,3901 17607,
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036590665323/590665323/00106020/20-Anlagen/04/B0932SB.pdf (Ablehnung)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_42_4657_4844_online.pdf (Widmung von Straßenland)
 #: osm_watch: way id="40571026" version="13"
-#: last_checked: 2024-05-22
+#: last_checked: 2025-06-11
 #: check_frequency: 360d
 Segelfliegerdamm [Stichstraße]	N 17592,3901 17782,3880
 Alter Segelfliegerdamm	N 17585,3745 17471,3735
@@ -6931,12 +6922,12 @@ Kethelitzweg	N 24363,10818 24271,10528 24265,10421
 Am Barnim	N 24229,10843 24113,10462
 Großmannstr.	N 24404,10387 24369,10393 24265,10421 24113,10462
 Rosa-Valetti-Str.	N 24404,10387 24618,10601 24660,10643
-#: XXX_osm: bei osm ohne Straßennamen
 Margaretenstr. (Mahlsdorf)	N 24618,10601 24508,10654 24439,10688
-#: XXX_osm: bei osm ohne Straßennamen
-Parlerstr.	N 24369,10393 24508,10654 24528,10696
+#: osm.highway: service
+Margaretenstr. (Mahlsdorf) [8 & 9]	N 24508,10654 24528,10696
+Parlerstr.	N 24369,10393 24508,10654
 Parlerstr.	N 24186,10035 24263,10183 24333,10317 24404,10387
-(Parlerstr. - Elsenstr.)	NN 24528,10696 24571,10736 24593,10775
+(Margaretenstr./Parlerstr. - Elsenstr.)	NN 24528,10696 24571,10736 24593,10775
 Lavendelweg	N 24059,10225 23999,10004 23945,9790 23931,9741
 Georginenweg	N 23950,10250 23891,10027 23840,9819 23823,9759
 Balsaminenweg	N 23837,10279 23784,10051 23732,9850 23714,9776
@@ -7000,7 +6991,6 @@ Donathstr.	N 24081,8048 24059,7918
 Kiekemaler Str.	N 23949,7805 24087,7776 24238,7751
 Erich-Baron-Weg	N 24229,7700 24238,7751 24255,7821 24265,7879 24288,8008 24313,8170 24342,8321 24367,8497 24367,8632 24239,8701 24102,8772 23927,8864
 Ravensteinstr.	N 24391,7799 24312,7812 24255,7821
-#: XXX_osm: bei osm fängt die Fortsetzung Karl-Marx-Str. schon in Berlin an, das ist aber falsch
 Eberleinstr.	N 24767,7776 24800,7950 24812,7999
 Gerhart-Hauptmann-Str.	N 22988,8952 23071,9151
 Eschenstr. (Kaulsdorf, Mahlsdorf)	N 23031,9209 23018,9226 22947,9277 22830,9361 22718,9442 22666,9479 22548,9523 22473,9530 22458,9532 22413,9544 22402,9551
@@ -7316,7 +7306,7 @@ Biesenhorster Weg (Karlshorst)	N 19972,8935 19983,8861 20002,8730 20006,8706 200
 Drosselweg (Karlshorst)	N 19946,9328 20008,9340 20018,9262 20059,8951 20089,8706 20108,8583 20129,8444
 Amselweg (Karlshorst)	N 20091,9330 20150,8962 20172,8703 20173,8580 20174,8443
 Spechtweg (Karlshorst)	N 20006,8706 20089,8706 20172,8703
-#: XXX_osm: "Habichtweg" ohne "s", aber in der Realität mit "s"
+#: note: vor Ort (Straßenschild) mit Fugen-s ("Habichtsweg"), bei Geoportal Berlin und OSM ohne ("Habichtweg)", bei TomTom mit
 Habichtsweg (Karlshorst)	N 20108,8583 20173,8580
 Storchenweg (Karlshorst)	N 20187,8442 20190,8355
 Stieglitzweg (Karlshorst)	N 20058,8355 20110,8355 20144,8355 20190,8355 20226,8354 20260,8353 20319,8350
@@ -7490,7 +7480,6 @@ Bendigstr.	N 23431,2092 23448,2013 23497,1812
 Riebekeweg	N 23064,3614 23106,3445 23145,3290 23155,3251
 Lossowweg	N 23028,3216 23089,3231 23155,3251 23298,3295
 Finkeldeweg	N 22820,3713 22823,3681 22834,3571 22928,3057 22962,2939 22995,2823 23028,2706
-#: XXX_osm: fehlt bei osm
 Stahnweg	N 22995,2823 23063,2842
 Fehleweg	N 22962,2939 23025,2957
 Kürißweg	N 22823,3681 22903,3691
@@ -7543,7 +7532,6 @@ Enkenbacher Weg	N 27854,330 27734,437 27621,535 27548,598 27471,664 27393,732 27
 #: note: in manchem Kartenwerken als "Weg O" bezeichnet, vor Ort existieren keine Straßenschilder
 (Enkenbacher Weg - Weg B)	N 27621,535 27625,539 27812,756 27817,761
 Weg A (Müggelheim)	N 27783,792 27859,875 27929,955
-#: XXX_osm bei osm ohne Straßennamen?
 Weg B (Müggelheim)	N 27817,761 27895,848 27963,916
 Weg C	N 27855,731 27929,819 27988,884
 Weg D	N 27889,700 27965,787 28020,846
@@ -7553,10 +7541,8 @@ Weg J	N 27831,548 27757,613
 Weg K	N 27770,561 27744,531
 #: note: Privatstraße
 Weg L	N 27783,493 27744,531 27705,560
-#: XXX_osm fehlt bei osm
 #: note: Privatstraße
 Weg M	N 27873,353 27752,458
-#: XXX_osm fehlt bei osm
 #: note: Privatstraße
 Weg N	N 27825,295 27700,402
 #: note: Privatstraße
@@ -9983,6 +9969,7 @@ Kieselweg	N 10423,21701 10388,21801
 #: note: Beleuchtung existiert, inoffizielles Straßenschild existiert zumindest an der Dietzgenstr., betonierter Gehweg nicht benutzbar (zu schmal)
 #: osm.highway: service
 (Friedensweg)	N 11039,21632 10761,21535 10126,21314
+(Grenzweg KGA Daheim II)	N 10120,21464 10811,21705
 (Am Nordgraben)	N 10754,21732 10925,21689 11039,21632 11253,21364
 # REMOVED --- #: next_check_id: ANLAGEBUCHHOLZ-2015 --- #: add_fragezeichen: wurde die Straße bereits in Pfirsichblütenweg umbenannt? --- #: XXX Eintrag in Berlin.cooords.data fehlt (PLZ=13127, Ortsteil Französisch Buchholz) --- #: last_checked: 2015-07-19 --- #: check_frequency: 60d
 #: note: Privatweg in der Anlage Buchholz
@@ -11297,7 +11284,7 @@ Rehagener Str.	N 10657,-2639 10648,-2547 10638,-2452 10642,-2371 10631,-2130 106
 Klausdorfer Weg	N 10505,-2552 10648,-2547 10833,-2544 10989,-2543
 Rohrbachstr.	N 9658,-2640 9658,-2419 9650,-2135
 # REMOVED (früher bis 1.7.2024 Bahnübergang) --- Wolziger Zeile	N 10382,-2598 10365,-2603 10307,-2633
-Wolziger Zeile	N 10307,-2633 10287,-2644
+Wolziger Zeile	N 10334,-2618 10307,-2633 10287,-2644
 Wolziger Zeile	N 10259,-2660 10287,-2644 10253,-2643 10085,-2643 9969,-2643 9872,-2642 9762,-2642 9658,-2640 9608,-2642
 Hohenzollernstr. (Lichtenrade)	N 9559,-2417 9658,-2419 9756,-2415 9864,-2411 9967,-2408 10069,-2405 10173,-2402
 Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2128 10465,-2129 10310,-2136 10300,-2135 10258,-2135 10228,-2136 10191,-2135
@@ -12118,7 +12105,7 @@ Albanstr.	N 8971,864 8898,1042 8822,1238
 Tilkeroder Weg	N 7184,-441 7292,-526 7376,-593 7473,-669 7616,-790 7673,-839 7749,-857
 Pansfelder Weg	N 7292,-526 7384,-387 7536,-139
 Diedersdorfer Weg	N 7668,471 7810,424 7781,-182 7776,-283 7773,-344 7765,-525 7749,-857 7751,-920 7752,-949
-(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen)	NN 7776,-283 7717,-285 7722,-180 7668,-138 7552,-67 7535,20 7520,76 7501,83
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen)	NN 7776,-283 7749,-290 7718,-288 7722,-180 7668,-138 7552,-67 7535,20 7520,76 7501,83
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen)	NN 7668,-138 7659,-112 7559,14 7535,20
 (KGA Birkholz)	NN 7751,-920 7766,-920 7765,-898 7977,-864 8026,-859 8059,-1077 8063,-1107 8085,-1120
 (KGA Birkholz)	NN 7766,-920 8059,-1077
@@ -13339,7 +13326,7 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: XXX ändert sich durch die (teilweise?) Straßenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="9"
 #: osm_watch: way id="23106203" version="15"
-#: last_checked: 2024-10-30
+#: last_checked: 2025-06-11
 #: check_frequency: 150d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113
 #: note: Auf Brandenburger Seite verläuft gleich nebenan der Grenzweg
@@ -14061,7 +14048,7 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 # 
 # REMOVED (hier verläuft in Zukunft die Fernbahntrasse) --- #: osm.highway: service --- (Eisnerstr. - S-Bhf Buckower Chaussee)	N 9310,245 9253,370
 # REMOVED (hier verläuft in Zukunft die Fernbahntrasse) --- (Eisnerstr. - S-Bhf Buckower Chaussee)" bezeichnet	NN 9253,370 9178,556
-(unter der S-Bahn)	NN 9699,-600 9562,-619 9520,-641
+(unter der S-Bahn)	NN 9699,-600 9632,-608 9562,-619 9520,-641
 Miethepfad	N 9520,-641 9561,-748 9598,-846
 Poleigrund	N 9156,-883 9340,-829 9561,-748
 Nespersteig	N 9340,-829 9379,-935
@@ -18510,7 +18497,7 @@ Im Gestell	NN 371,4453 267,4375
 Eisvogelweg	N 691,4474 661,4492 635,4524 595,4594 542,4699 528,4747
 Auerhahnbalz	N 636,4765 650,4712 668,4653 697,4605 723,4572
 Waldhüterpfad	N 510,4202 371,4453 301,4643
-(Mauerweg)	NN 11742,-3336 11851,-3287 12268,-2294 12314,-2270 12344,-2173 12331,-2108 12276,-1885 12094,-1228 12061,-1186 12058,-1170 12064,-1120 11819,-286 11746,-62 11686,169 11698,390 11802,554 11928,588 11956,599 12014,620 12246,706 12557,799 12651,848 12984,1011
+(Mauerweg)	NN 11742,-3336 11851,-3287 12268,-2294 12314,-2270 12344,-2173 12331,-2108 12276,-1885 12094,-1228 12061,-1186 12058,-1170 12064,-1120 11819,-286 11746,-62 11686,169 11698,390 11802,554 11928,588 11956,599 12014,620 12246,706 12557,799 12651,848 12731,893 12823,939 12886,968 12984,1011
 Hellriegelstr.	N 2953,6743 3040,6800 3078,6837 3106,6900 3121,6953
 Gregor-Mendel-Str.	N 3664,6523 3650,6665 3655,6811
 Milowstr.	N 3826,6656 3650,6665
@@ -20745,7 +20732,7 @@ Heidenheimer Str.	N 3695,23160 3544,23179 3463,23194 3283,23217 3146,23217 3048,
 Schillingstr. (Reinickendorf)	N 4690,18185 4644,17978 4584,17704
 (Straße 478 - Königsgraben)	NN 8585,-231 8054,-198
 Straße 478	N 8054,-198 7781,-182
-(Parkweg am Königsgraben)	NN 8873,-1118 8869,-1090 8737,-1115 8679,-848 8680,-831 8690,-805 8692,-777 8687,-766 8659,-712 8645,-683 8630,-679 8592,-709 8574,-698 8585,-231 8574,-207 8561,-180 8579,153
+(Parkweg am Königsgraben)	NN 8873,-1118 8869,-1090 8737,-1115 8679,-848 8680,-831 8690,-805 8692,-777 8687,-766 8659,-712 8645,-683 8630,-679 8592,-709 8574,-698 8571,-588 8595,-259 8585,-231 8574,-207 8561,-180 8579,153
 (Parkweg am Königsgraben)	NN 8626,107 8631,31 8618,-45 8612,-162 8574,-207
 #: XXX_prog BS zur Motzener Str. (falls man nicht vom/zum Radweg will)
 #: note: 8583,310 ist nur ein "Stützpunkt"

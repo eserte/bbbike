@@ -185,7 +185,8 @@ Priesterweg: abgefrästes Kopfsteinpflaster	Q2+ 7227,6102 7227,6080 7227,6058 722
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
 Hans-Baluschek-Park: Beton	Q0- 7252,6080 7278,6101 7305,6183
-Hans-Baluschek-Park: Asphalt	Q0 7305,6183 7393,6452 7605,7109 7664,7283 7707,7383 7741,7479 7747,7521 7757,7563
+#: historical_note: früher Asphalt, Q0
+Hans-Baluschek-Park: Asphalt mit einigen Wurzelhebungen	Q0- 7305,6183 7393,6452 7605,7109 7664,7283 7707,7383 7741,7479 7747,7521 7757,7563
 Hans-Baluschek-Park - Südkreuz: Betonpflaster	Q0- 7757,7563 7777,7644 7789,7692 7792,7704 7789,7718 7774,7724
 (Lotte-Laserstein-Str. - Hans-Baluschek-Park): Betonpflaster	Q0- 7750,7658 7777,7644
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8041,9434 7960,9466
@@ -3784,12 +3785,14 @@ Paplitzer Str.: Kopfsteinpflaster	Q2 10722,-3191 10735,-3142
 Mauerweg: wassergebundene Decke	Q1 11802,554 11928,588 11956,599
 Mauerweg: Verbundsteinpflaster	Q1+ 11956,599 12014,620
 Mauerweg: wassergebundene Decke	Q1 12014,620 12246,706
-Mauerweg: Asphalt	Q0 12246,706 12557,799 12651,848 12984,1011
+Mauerweg: Asphalt	Q0 12246,706 12557,799 12651,848 12731,893 12823,939 12886,968 12984,1011
 # REMOVED --- #: XXX Geh- und Radweg / Verbindungsstück für den Berliner Mauerweg (ist dieser Abschnitt gemeint?) --- laut osm ist die Asphaltierung bereits passiert --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2019-2022) --- #: by: https://api.fixmyberlin.de/api/plannings/83 (Fertigstellung August 2019, + modaler Filter) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf (ist dieser Abschnitt bei der Widmung gemeint?) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.953546.php (wird asphaltiert und auf 3,5 bis 4m ausgebaut; Nutzung ab Frühling 2021 möglich) --- #: by: https://www.berliner-woche.de/buckow/c-verkehr/lueckenschluss-auf-dem-mauerweg_a279562 --- #: note: man könnte auch auf der parallel verlaufenden Straße in Brandenburg fahren, sehr guter Asphalt --- leider gibt es keine barrierefreie Verbindung zur Ringslebenstr. --- #: osm_watch: way id="631641753" version="6" --- #: last_checked: 2020-04-18 --- #: check_frequency: 90d --- #: next_check: 2020-08-28
 #: corrected_by: osm (unbefestigter Weg, Q2 -> ..., neu gemacht)
 #: confirmed_by: mapillary
 Ringslebenstr.: Asphalt	Q0 13805,1435 13850,1461
-Mauerweg: Asphalt	Q0 14430,1731 14626,1768 14682,1782 14716,1772 14755,1738 14858,1700 14876,1686 15058,1191 15056,1139 15200,737 15333,378 15423,150 15480,6 15538,-30 15571,-93
+#: historical_note: früher: Asphalt, Q0
+Mauerweg: unebener Asphalt	Q1+ 14430,1731 14626,1768 14682,1782
+Mauerweg: Asphalt	Q0 14682,1782 14716,1772 14755,1738 14858,1700 14876,1686 15058,1191 15056,1139 15200,737 15333,378 15423,150 15480,6 15538,-30 15571,-93
 #: by: rj
 Mauerweg: Asphalt	Q0 15571,-93 15613,-160 15640,-280
 Mauerweg - Am Rudower Fließ: Asphalt	Q0 15571,-93 15606,-104 15640,-149
@@ -6045,7 +6048,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1266800.php
 #: XXX bleibt es hier beim Asphalt?
 #: priority: #C
-#: last_checked: 2025-04-12
+#: last_checked: 2025-06-11
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
@@ -6355,7 +6358,7 @@ Gründerstr. (Baumschulenweg): unbefestigter Weg	Q2 16116,4741 16293,4630
 Eschenstr.: unbefestigter Weg	Q2 16031,4608 16203,4495
 Tronjeweg: unbefestigter Weg	Q2 15887,4400 15930,4464 16005,4576
 Laurinsteg: unbefestigter Weg	Q2 15930,4464 15843,4524
-Gunterweg: unbefestigter Weg	Q2 15716,4255 15835,4437
+Guntherweg: unbefestigter Weg	Q2 15716,4255 15835,4437
 Gernotweg: unbefestigter Weg	Q2 15768,4218 15887,4400
 Uteweg: unbefestigter Weg	Q2 15814,4158 15947,4361
 Gudrunweg: unbefestigter Weg	Q2 15868,4116 16001,4325
@@ -7281,8 +7284,9 @@ Domagkstr.: Beton	Q0 8031,1172 8163,1110 8263,1061
 Ahrensdorfer Str.: Asphalt	Q0 7602,305 7576,322 7458,283
 Ahrensdorfer Str.: Beton	Q0- 7458,283 7408,257 7344,261 7286,284
 Zernickstr.: Verbundsteinpflaster	Q1 7408,257 7391,347
-(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Kopfsteinpflaster	Q2 7776,-283 7717,-285
-(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Verbundsteinpflaster	Q1 7717,-285 7722,-180 7668,-138 7659,-112 7559,14 7535,20 7520,76 7501,83
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Kopfsteinpflaster	Q2 7776,-283 7749,-290
+#: historical_note: früher Verbundsteinpflaster, Q1
+(Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Verbundsteinpflaster mit Unebenheiten	Q1- 7749,-290 7718,-288 7722,-180 7668,-138 7659,-112 7559,14 7535,20 7520,76 7501,83
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Verbundsteinpflaster	Q1 7668,-138 7552,-67 7535,20
 (KGA Birkholz): Verbundsteinpflaster	Q1 7751,-920 7766,-920 7765,-898 7977,-864 8026,-859 8059,-1077 8063,-1107 8085,-1120
 (KGA Birkholz): Verbundsteinpflaster	Q1 7766,-920 8059,-1077
@@ -7965,7 +7969,7 @@ Mühlenstr.: Asphalt	Q0 6842,2995 6763,2879 6745,2848
 #: by: https://www.infravelo.de/projekt/muehlenstrasse-1/ (bis 2. Quartal 2022) ("abgeschlossen", tatsächlich fehlt dieses Teilstück in der Kartendarstellung)
 #: XXX Wird das Kopfsteinpflaster auch hier durch Asphalt ersetzt? Und bedeutet das, dass die Route durch den Gemeindepark nicht realisiert wird?
 #: osm_watch: way id="702312697" version="5"
-#: last_checked: 2025-02-22
+#: last_checked: 2025-06-11
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 Mühlenstr.: Kopfsteinpflaster	Q2+ 6745,2848 6665,2836
@@ -10848,7 +10852,7 @@ Gäßnerweg: Asphalt	Q0- 8551,6552 8553,6665
 (Lankwitzer Str. - Am Bahndamm): Asphalt	Q0 8145,3380 8106,3410
 #: XXX Baumaßnahme GL6.22 (Realisierung nach 2011)
 #: osm_watch: way id="25514283" version="15"
-#: last_checked: 2025-02-22
+#: last_checked: 2025-06-11
 #: check_frequency: 300d
 Waltershauser Str.: Mosaikpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6673,1748 6844,1813
 # REMOVED --- #: XXX Baumaßnahmen GL6.19 bis .21 (Realisierung bis 2011) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung) --- #: last_checked: 2019-10-11 --- #: check_frequency: 300d
@@ -10981,12 +10985,12 @@ Zwergasternweg: Verbundsteinpflaster	Q1 16254,3489 16338,3578 16344,3586
 (Sternliebweg - Am Teltowkanal): Verbundsteinpflaster	Q1 16227,3660 16233,3671
 (Geißbartweg - Am Teltowkanal): Verbundsteinpflaster	Q1 16167,3702 16175,3715
 (Mauerweg im Landschaftspark - Ostburger Weg): Betonpflaster	Q0- 18608,232 18305,660
-(Mauerweg im Landschaftspark - Ostburger Weg): Asphalt	Q0- 18305,660 18200,809
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1552752.php (Entsiegelungsmaßnahme, "derzeit", ohne Endedatum)
-#: osm_watch: note 4761491 1
-#: XXX nur dieser Abschnitt, oder auch die anderen Abschnitte?
-#: last_checked: 2025-04-17 (Pressemitteilung)
-(Mauerweg im Landschaftspark - Ostburger Weg): Asphalt mit vielen Wurzelschäden	Q2 18200,809 18128,910
+# REMOVED --- #: osm_watch: note 4761491 1 --- #: XXX nur dieser Abschnitt, oder auch die anderen Abschnitte? --- #: last_checked: 2025-04-17 (Pressemitteilung)
+#: historical_note: früher (bis Frühjahr 2025): Asphalt, Q0-
+(Mauerweg im Landschaftspark - Ostburger Weg): unebene wassergebundene Decke	Q2+ 18305,660 18200,809
+#: historical_note: früher (bis Frühjahr 2025): Asphalt mit vielen Wurzelschäden, Q2
+(Mauerweg im Landschaftspark - Ostburger Weg): unebene wassergebundene Decke	Q2+ 18200,809 18128,910
 Ortolfstr. [Wohngebiet]: Beton	Q1+ 19210,-85 19205,-219 19214,-313
 (Ortolfstr., Verbindungsweg): unbefestigter Weg	Q2 19214,-313 19026,-283
 (Preußensiedlung): wassergebundene Decke	Q1 20971,1046 20957,1043 20850,963
@@ -11828,6 +11832,7 @@ Schiefertonweg: unbefestigter Weg	Q2- 10290,21651 10269,21718 10248,21795
 Zechsteinweg: Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10379,21597 10350,21676
 Zechsteinweg: unbefestigter Weg	Q2- 10350,21676 10328,21737 10319,21774
 Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10423,21701 10388,21801
+(Grenzweg KGA Daheim II): Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10120,21464 10811,21705
 (Weg im Wustrower Park): Asphalt	Q0 17235,18352 17206,18332
 (Weg im Wustrower Park): wassergebundene Decke	Q1 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663
 (Weg im Wustrower Park): Gehwegplatten	Q0- 17021,18663 16939,18652
@@ -12730,7 +12735,8 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 (Finsterwalder Str. - Wittenauer Str.): unbefestigter Pfad	Q2- 6363,22419 6359,22452 6341,22496
 (Mauerweg nach Lübars): Asphalt	Q0 7813,21258 7937,21427 7991,21531
 Oppelner Str.: stellenweise Kleinpflastersteine	Q1+ 12897,10439 12968,10564 12978,10581
-Oppelner Str.: Asphaltschäden	Q1; 12767,10216 12897,10439
+#: historical_note: früher: Asphaltschäden, Q1;
+Oppelner Str.: Asphalt	Q0; 12767,10216 12897,10439
 Oppelner Str.: Asphalt	Q0; 12897,10439 12767,10216
 Boetticherstr.: Beton	Q0 2434,4299 2417,4327
 Bahndamm - Elsenstr.: unbefestigter Weg	Q2- 13953,9372 13923,9405
@@ -15280,7 +15286,7 @@ Rykestr.: Kopfsteinpflaster	Q2 11331,14350 11374,14363 11446,14508 11535,14688 1
 Fritz-Kirsch-Zeile: schlechtes Kopfsteinpflaster	Q3 17644,7219 17684,7233 17845,6986
 #: note: eingetragen: AM
 #: corrected_by: srt (Q1 -> Q0)
-Dillgesstr.: Asphalt	Q0 6218,3302 6308,3204 6401,3113 6456,3038 6482,3004 6514,2961 6592,2827
+Dillgesstr.: Asphalt	Q0 6225,3300 6308,3204 6401,3113 6456,3038 6482,3004 6514,2961 6592,2827
 #: by: ^^^
 #: by: osm:
 (Wernsdorfer Str. - ehemaliger Schmöckwitzwerdersteg): unbefestigt	Q2 30531,-3115 30508,-3189 30511,-3202
@@ -15531,7 +15537,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf ("Vorplanung")
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf (Asphaltierung geplant)
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/mehrheit-der-lokalpolitiker-fuer-netzausbau-cdu-abgeordneter-fuerchtet-wegfall-von-parkplaetzen_a406794 (Erwähnung)
-#: last_checked: 2024-05-18
+#: last_checked: 2025-06-11
 #: check_frequency: 360d
 #: osm_watch: way id="152177244" version="14"
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10510,-2642 10573,-2891 10606,-3017 10655,-3135 10735,-3142
@@ -16082,6 +16088,7 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10373,18887 10358,18882
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20210720 (Abschluss der Planung Anfang 2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20220724 (BPU 2022 anvisiert, außerdem Erwähnung der Planung in der Hermann-Hesse-Str.)
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erwähnung, außerdem Weiterführung der Fahrradstraße in der Waldstr.)
+#: by: https://www.morgenpost.de/bezirke/pankow/article409226405/berlin-pankow-aerger-um-holperpiste-fahrradprojekt-nach-zehn-jahren-gestoppt.html (aus finanziellen Gründen gestoppt)
 #: osm_watch: way id="4764684" version="32"
 #: osm_watch: way id="26790073" version="20"
 #: last_checked: 2025-04-20 (mapillary)
@@ -16291,7 +16298,10 @@ Eisnerstr.: Asphalt	Q0- 9507,-85 9653,-483 9698,-556
 #: confirmed_by: srt
 Eisnerstr. - S-Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen Beschädigungen durch Baumwurzeln	Q1+ 9507,-85 9473,-92 9310,245
 #: confirmed_by: srt
-(unter der S-Bahn): Verbundsteinpflaster	Q1 9699,-600 9562,-619 9520,-641
+(unter der S-Bahn): Verbundsteinpflaster	Q1+ 9699,-600 9632,-608
+#: confirmed_by: srt
+#: historical_note: früher Q1, evtl. nach den Bahnbauarbeiten neu gemacht und besser geworden?
+(unter der S-Bahn): Verbundsteinpflaster	Q0- 9632,-608 9562,-619 9520,-641
 #: corrected_by: srt (Verbundsteinpflaster/Beton -> Asphalt)
 Miethepfad: Asphalt	Q0 9520,-641 9561,-748 9598,-846
 #: by: ^^^
@@ -16316,7 +16326,7 @@ Dielingsgrund: gutes Verbundsteinpflaster	Q1 10590,525 10783,587
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/grundeigentuemer-kritisieren-die-bvv_a234142 (auch erwähnt hier: Schwedter Str.)
 #: XXX siehe auch Finanzplan Berlin 2019-2023, S. 232 im pdf)
 #: osm_watch: way id="156350665" version="12"
-#: last_checked: 2024-12-18
+#: last_checked: 2025-06-11
 #: check_frequency: 180d
 Dielingsgrund: glattes Kopfsteinpflaster, etwas wellig	Q2+ 10777,605 10880,633 11083,639
 #: by: ^^^
@@ -17990,11 +18000,12 @@ Markelstr.: asphaltiert	Q0 4894,6509 5020,6434 5269,6305
 # 
 #: by: René Hartmann: vvv
 #: corrected_by: Monika Winkel (Asphalt Q0 -> Kopfsteinpflaster Q2 ("kleinere Pflastersteine"))
-#: corrected_by: srt (-> )
+#: corrected_by: srt (-> ...)
 Neanderstr.: Asphalt/Beton	Q0- 9815,-805 9828,-768 9823,-641
-#: corrected_by: srt (gepflastert -> )
-Neanderstr.: holpriger Asphalt	Q1- 9823,-641 9822,-603 9820,-564
-Neanderstr.: gepflastert	Q2 9820,-564 9808,-339
+#: corrected_by: srt (gepflastert -> ...)
+Neanderstr.: holpriger Asphalt	Q1 9823,-641 9822,-603 9820,-564
+#: corrected_by: srt (gepflastert -> ...)
+Neanderstr.: glatt gepflastert	Q1- 9820,-564 9808,-339
 #: corrected_by: Monika Winkel (Asphalt Q0 -> Kopfsteinpflaster Q3)
 Neanderstr.: sehr schlechtes und welliges Kopfsteinpflaster	Q3 9808,-339 9812,-41 9826,48
 #: by: ^^^
@@ -19026,8 +19037,8 @@ Wunsiedeler Weg: Asphalt	Q0 7589,4008 7582,3885 7574,3795 7573,3698 7555,3632 75
 #: corrected_by: Stefan Willmes
 #: confirmed_by: srt
 Charlottenstr.: Kopfsteinpflaster	Q2 5774,2785 5936,2977
-#: confirmed_by: srt (zumindest das südwestliche Ende)
-Charlottenstr.: Asphalt	Q0 5936,2977 6044,3110 6129,3203 6218,3302 6426,3425 6529,3480
+#: confirmed_by: srt
+Charlottenstr.: Asphalt	Q0 5936,2977 6044,3110 6129,3203 6225,3300 6426,3425 6529,3480
 #: by: ^^^
 # 
 #: by: Sandra (sspp):
@@ -19117,7 +19128,7 @@ Nicolaistr.: Asphalt	Q2 5798,4207 5785,4236
 Nicolaistr.: Kopfsteinpflaster	Q2 5785,4236 5766,4279
 #: corrected_by ^^^
 #: corrected_by: srt ("gut geeignet" -> "Verbundsteinpflaster")
-(Nicolaistr. - Dillgesstr.): Verbundsteinpflaster	Q0- 6171,3400 6218,3302
+(Nicolaistr. - Dillgesstr.): Verbundsteinpflaster	Q0- 6171,3400 6217,3326 6225,3300
 #: by: ^^^
 # 
 #: by: Marco Schmidt vvv
@@ -19727,7 +19738,8 @@ Aubertstr.: guter Asphalt	Q0 11025,22504 11188,22742 11240,22803 11278,22848
 An der Havelspitze: Verbundsteinpflaster	Q1 -2335,16535 -2342,16369 -2287,16362 -2262,16443 -2220,16504 -2180,16566 -2137,16658 -2152,16737 -2122,16835 -2050,16934 -2044,17003
 # 
 #: by: Martina freier:
-Waldmannstr.: mäßiges Kopfsteinpflaster	Q2 6139,3473 5888,3343 5737,3264
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Waldmannstr.: unebenes Kleinsteinpflaster mit einigen Asphaltflicken	Q2 6139,3473 5888,3343 5737,3264
 # 
 #: by: Gérard Gold: vvv
 #: confirmed_by: srt
@@ -21122,7 +21134,9 @@ Lenbachstr. (Steglitz): Kopfsteinpflaster	Q2 5883,6519 6071,6559
 #: by: ^^^
 # 
 #: by: Roland (rol954): vvv
-Kruseweg: guter Beton	Q0 6755,627 6739,691 6779,816 6812,925
+#: corrected_by: srt (guter Beton, Q0 -> ...)
+#: note: möglicherweise überaspaltierter Beton?
+Kruseweg: Asphalt/Beton, einige Risse	Q0- 6755,627 6739,691 6779,816 6812,925
 #: note: rol954 (2x, beim ersten Mal Asphalt) und anonymous
 Greizer Str.: Beton	Q0 6592,882 6566,798 6579,740 6619,712 6739,691
 #: by: ^^^
@@ -32656,15 +32670,21 @@ Löwenbrucher Weg: Asphalt	Q0 10392,-2980 10272,-3027 10107,-3063 9924,-3068 9878
 (Blohmstr. - Diedersdorfer Str.): Asphalt mit Löchern und Unebenheiten	Q1- 8061,-1117 7752,-949
 (Dinnendahlstr. - Schichauweg): unbefestigter Waldweg	Q1 9139,-1350 8953,-1184 8882,-1142 8873,-1118
 (Mauerweg - Hohenzollernstr.): fester Waldweg	Q1 9506,-2421 9559,-2417
-(Straße 478 - Königsgraben): fester Parkweg	Q1 8585,-231 8054,-198
-Straße 478: Asphalt	Q0 8054,-198 7781,-182
+#: corrected_by: srt (fester Parkweg, Q1 -> ...)
+(Straße 478 - Königsgraben): Verbundsteinpflaster mit Unebenheiten	Q1- 8585,-231 8054,-198
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Straße 478: Verbundsteinpflaster	Q1 8054,-198 7781,-182
 #: corrected_by: srt (fester Parkweg mit Kopfsteinpflasterpassagen -> aufgesplittet) vvv
 (Parkweg am Königsgraben): fester Parkweg	Q1 8873,-1118 8869,-1090 8737,-1115 8679,-848
 (Parkweg am Königsgraben): Kleinsteinpflaster	Q1- 8679,-848 8680,-831 8690,-805 8692,-777 8687,-766
 (Parkweg am Königsgraben): Asphalt	Q0 8687,-766 8659,-712
-(Parkweg am Königsgraben): Kleinsteinpflaster	Q1- 8659,-712 8645,-683 8630,-679 8592,-709 8574,-698
-(Parkweg am Königsgraben): fester Parkweg	Q1 8574,-698 8585,-231 8574,-207 8561,-180 8579,153 8583,301 8583,310 8584,320
+(Parkweg am Königsgraben): Kleinsteinpflaster	Q1- 8659,-712 8645,-683 8630,-679 8592,-709 8574,-698 8571,-588
+(Parkweg am Königsgraben): fester Parkweg	Q1 8571,-588 8595,-259
+#: note: an den Rändern sind schmale Banketten entstanden
+(Parkweg am Königsgraben): schlechtes Feldsteinpflaster	Q3+ 8595,-259 8585,-231 8574,-207 8561,-180
+(Parkweg am Königsgraben): fester Parkweg	Q1 8561,-180 8579,153 8583,301 8583,310 8584,320
 #: corrected_by ^^^
+#: confirmed_by: srt
 (Parkweg am Königsgraben): fester Parkweg	Q1 8626,107 8631,31 8618,-45 8612,-162 8574,-207
 #: by:^^^
 # 
@@ -34086,5 +34106,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 7543,16016
 Einmündungsbereich asphaltiert	Q0 7441,15909
 Kreuzungsbereich asphaltiert	Q0 7354,15817
 Kreuzungsbereich asphaltiert	Q0 7796,15590
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 9808,-339
+Kreuzungsbereich mit unebenem Kleinsteinpflaster	Q2 5888,3343
+Einmündungsbereich asphaltiert	Q0 11083,639
 #: ignore ^^^
 #: section ^^^
