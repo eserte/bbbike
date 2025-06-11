@@ -55,6 +55,9 @@ eq_or_diff [_find_coords('https://de.mapy.cz/turisticka?l=0&x=13.3776989&y=52.51
 eq_or_diff [_find_coords('https://de.mapy.cz/turisticka?l=0&y=52.5162811&x=13.3776989&z=15')], [[8599,12255]];
 eq_or_diff [_find_coords('https://en.mapy.cz/zakladni?x=13.3776989&y=52.5162811&z=15')], [[8599,12255]];
 
+# HERE WeGo
+eq_or_diff [_find_coords('https://wego.here.com/?map=52.52908,13.38559,16.00')], [[9107,13688]];
+
 # image with gps data in exif
 SKIP: {
     skip "Image::ExifTool needed for parsing GPS position out of images", 1

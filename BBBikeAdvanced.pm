@@ -1454,6 +1454,21 @@ sub _find_coords {
 	    }
 	}
 
+	# HERE WeGo map URL, e.g.
+	# https://wego.here.com/?map=52.50765,13.46038,16.00
+	{
+	    my @_coords;
+	    while ($s =~ m{[?&]map=([-+]?[0-9\.]+),([-+]?[0-9\.]+),[0-9\.]+($|&)}g) {
+		my($y,$x) = ($1,$2);
+		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		push @_coords, [$x,$y];
+	    }
+	    if (@_coords) {
+		push @coords, @_coords;
+		return @coords; # shortcut search, lat,lon order may conflict with further regexps
+	    }
+	}
+
 	# DDD or BBBike coordinates
 	while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
 	    my($x,$y) = ($1,$2);
