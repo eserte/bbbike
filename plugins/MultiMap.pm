@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.40;
+$VERSION = 2.41;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -198,6 +198,13 @@ sub register {
 	  callback_3_std => sub { showmap_url_tomtom(@_) },
 	  ($images{TomTom} ? (icon => $images{TomTom}) : ()),
 	  tags => [qw(traffic)],
+	};
+    $main::info_plugins{__PACKAGE__ . "_HEREWeGo"} =
+	{ name => "HERE WeGo",
+	  callback => sub { showmap_herewego(@_) },
+	  callback_3_std => sub { showmap_url_herewego(@_) },
+	  ($images{HEREWeGo} ? (icon => $images{HEREWeGo}) : ()),
+	  # no traffic tag here, as "Map Compare (profile traffic)" shows the same data
 	};
     $main::info_plugins{__PACKAGE__ . "_ADAC"} =
 	{ name => "ADAC",
@@ -696,6 +703,35 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAYBQTFRF
 YgACRiZmFlY2dhCTgQmIOaBAACogyAUD0hABbgRQBwvwAMGD+/c4QQAsAGEwXAEZAxaAMBhsUVS4
 uXuAdPLAzYCCzWCBTXBruaAOW84JBfOgAgxz2cFgGszpDAxsIDCBASHQzwIEDEgCDBgCbczMzRAW
 ANziDx7V367aAAAAAElFTkSuQmCC
+EOF
+    }
+
+    if (!defined $images{HEREWeGo}) {
+	# Created with:
+        #   wget 'https://wego.here.com/favicon.png'
+        #   convert -resize 16x16 favicon.png favicon2.png
+        #   pngcrush -brute -reduce -rem allb -m 0 favicon2.png favicon3.png
+        #   base64 favicon3.png
+	$images{HEREWeGo} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAfhQTFRF
+AAAASIn/TIf/Rof7Soj9Sor7SZnxSov+SH7/SpD6SavrR4rxSKDvR6foCQA7RrLkQZ/ER7zfRszR
+R8jYStLXSNnSR8/WRtfNTtq+SNjNStrTSIr/Soj/TIb/RIb5SYj9Soj9Sor7Soj9R6PnSZX3So78
+SYr+So/6Sov8Son+Pm//SpL5So76Sor8SLziSaXuSp3zSZL0RofvSpn1SZT3R4byRF3pSJ3zSZf1
+SpP4So76RtPRSbfjSa/pOHe7MmCiS6TzSZ3yPX3QMmKnTLD7SaDwSZzzSZf2SZP5ScfaScDgKlSK
+RJnYSaftK1ePN3GpSartSaXuSaDwSZzzQoj9SNDWSMfZLX6eOHSsSbHoSq3sOYjEMWCYR6zgSa/p
+SarrSaTuQ4j5SdfUP7fCI017RanVSbbmSK7mJVSEQZnGSbfkSbLmSK3oQITpLFGKNW+gSb/gSbrj
+O4m+MWGWSbzhSLbjO5fsO4ywRLXKSMjbScPeSsPlOH2mQabAScXcSMDeP6XoRcfHR87PSMzYR8fc
+RsvNSM7XR8rZQ7rVRsvHSNfRSNXTSNHUSNrSSNbSSNLVRMLbRtjNSNbMtP8ASNfMSdnQStrTSY75
+R6DnSZj0RrHdMHanSaHvOH7DJk+BI0+ANGyhLlyQQ63OQJvASL/eSMjYSNHVSNHTeeMmWwAAAJd0
+Uk5TAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQcBAAYBBgwCUZwvM5xSABaJtAJX5vpeNcqX
+AhWe/e0CVuXoLzLK+2USnv7eV2HjtkLJ5EGc/eBNAen38rDI/O/Lqv3gTgF8gdX1/LOx9f3gTgE7
+7P6vM8fgTgF4//+xHTrt4E4BC6qxH2/gTgEDY5YhPqBLAQQGAAEHAdCV2LMAAACuSURBVBgZXcEh
+S0MBGADA74ILBrEJm0MYCy8KpqFxIEuuCIJFXPAHrAxNwhRlMDBaZEkQy6wDo2AS64IMYRqEIWI1
++La1dycyRIYIeT4UGP8trBK5It6tYVTCYllqmGjcmNlk/xZ7d+Zq6vrseDC3y/YA1UdT9w7ZekLl
+War3a+nAxgvWvXL9E5aPzCRDrr4jnCq/6TZLIzqTiHCJCy2cf0XKyjFnTmh/xpTIEBn/neolQoCl
+fVcAAAAASUVORK5CYII=
 EOF
     }
 
@@ -1734,6 +1770,22 @@ sub showmap_url_tomtom {
 sub showmap_tomtom {
     my(%args) = @_;
     my $url = showmap_url_tomtom(%args);
+    start_browser($url);
+}
+
+######################################################################
+# HERE We Go
+sub showmap_url_herewego {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://wego.here.com/?map=%.5f,%.5f,%.2f", $py, $px, $scale;
+}
+
+sub showmap_herewego {
+    my(%args) = @_;
+    my $url = showmap_url_herewego(%args);
     start_browser($url);
 }
 
