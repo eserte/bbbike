@@ -5454,7 +5454,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-12
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5477,7 +5477,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED --- #: next_check: 2023-07-31
 # REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: osm_watch: note 4794007 1
-#: last_checked: 2025-06-07 vvv
+#: last_checked: 2025-06-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege
@@ -6655,12 +6655,13 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/bauarbeiten-am-kronprinzessinnenweg-haben-begonnen_a398941
 #: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025) (inaktiv)
 #: source_id: viz2021:13.228732,52.464169,05.10.2023,07:00 (bis 31.08.2025)
-#: osm_watch: way id="50830991" version="26"
+#: osm_watch: way id="50830991" version="27"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
 #: note: Anfang März 2024: freitags kann man anscheinend auch schon früher (um 17h) hier langfahren; Mai 2025: donnerstags bereits um 16:40 Uhr
+#: XXX laut osm nun offen
 #: last_checked: 2025-06-01
-#: check_frequency: 120d
+#: check_frequency: 30d
 #: next_check: 2025-08-31
 	2::inwork -927,6888 -2218,5133 -3296,3686
 ',
@@ -7517,7 +7518,57 @@ Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5787,44
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: BAEKEBRUECKE-2022
+#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/wasserstrassen-neubauamt-will-baekebruecke-2022-neu-errichten_a284203
+#: by: https://plus.tagesspiegel.de/berlin/neubau-der-bakebrucke-um-ein-jahr-verschoben-was-aus-zwolf-projekten-aus-dem-jahr-2021-wurde-351799.html (Neubau um ein Jahr verschoben)
+#: by: https://www.morgenpost.de/berlin/article234710931/60-Berliner-Bruecken-derzeit-nur-eingeschraenkt-nutzbar.html (hier wird auch die Techowbrücke erwähnt)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/marggraffbruecke-in-berlin-wird-eine-weitere-bruecke-abgerissen-li.207787
+#: by: https://www.berliner-zeitung.de/mensch-metropole/betonkrebs-und-risse-in-berlin-startet-das-naechste-grosse-brueckenbauprojekt-li.315212 (Erwähnung)
+#: by[removed]: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/08_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.html?nn=3289178 (Stand 1.3.2023)
+#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/09_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.html?nn=3289178 (umbenannt, weiterhin Stand 1.3.2023)
+#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/04_Service/08_Aktuelle_Bauvorhaben/02_Bauvorhaben_Dritter/bauarbeiten_west_berlin.pdf?__blob=publicationFile&v=2 (Stand 1.3.2023, in Planung: Bäkebrücke, aber auch Knesebeckbrücke und Altglienicker Brücke)
+#: by: https://khp.berlin/referenzen/ingenieurbau/planungen/baekebruecke-in-berlin-lichterfelde/
+#: by: https://www.facebook.com/groups/274489925939434/posts/7611685488886471 (in einem Kommentar steht, dass Fußgänger rüberkommen)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1464257.php (Fußgänger können passieren, Radfahrer sollen eine Umleitung fahren; Ersatzneubau 2025-2027)
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/baekebruecke-wird-erneuert_a421024
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1526632.php (neue Sperrung des südlichen Teltowkanaluferwegs und der Bäkebrücke) (Pressemitteilung wurde mittlerweile entfernt)
+#: by: https://www.berliner-zeitung.de/news/steglitz-zehlendorf-baekestrasse-in-lichterfelde-wegen-neuer-baustelle-bis-august-gesperrt-li.2292684
+#: by: https://www.tagesspiegel.de/berlin/bezirke/uferweg-am-teltowkanal-ab-mitte-februar-gesperrt-berliner-wasserbetriebe-erneuern-abwasserleitungen-13119478.html
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/promenade-komplett-gesperrt_a435194
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1569509.php (neue Sperrung: 17.06. bis zum 19.12.2025)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/vz-plan-promenade-12207-berlin_umleitung_stand-040625.pdf
+# REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
+#: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
+#: also_indoor: search Bäkebrücke
+#: note: traffic natürlich nur die Bäkebrücke betreffend
+#: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
+#: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
+# REMOVED --- #: last_checked: 2025-04-23 vvv
+# REMOVED --- #: check_frequency: 14d vvv
+#: next_check: 2025-06-17 vvv
+# REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
+#: osm_watch: way id="5363433" version="26"
+#: osm_watch[closed]: note 4442541 4
+# REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
+#: note: laut BA-Pressemitteilung auch für den Radverkehr
+Bäkebrücke/Bäkestr.: Fahrbahn gesperrt, nördlicher Bürgersteig frei	q3::inwork 4659,3065 4587,3097 4411,3180
+# REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
+# REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4618,3135 4692,3225
+#: osm_watch: way id="121176503" version="11"
+#: note: laut BA-Pressemitteilung Umleitung via Eduard-Spranger-Promenade, aber diese ist für Radfahrer eigentlich nicht erlaubt?
+Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4274,2717 4236,2678
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => 1750024800,
+         'id' => 4109,
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., geplant vom 17.06.2025 bis 19.12.2025',
+         'type' => 'gesperrt',
+         'until' => 1766163600
+       },
        {
          'data' => '	2::temp 5857,14985 5867,14993
 ',
@@ -7880,6 +7931,7 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
 #: source_id: viz2021:13.39343,52.564563,31.03.2025,11:00 (Baustellenampel Wollankstraße, bis 31.12.2025)
 #: source_id: viz2021:13.39427,52.56503,01.04.2025,08:23 (Baustellenampel Wollankstraße, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,06.06.2025,09:00 (bis 01.12.2025)
+#: source_id: adac:310982460 (bis 01.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: note: existiert nun auch in gesperrt-orig bis Anfang Dez 2025
 #: osm_watch: way id="23984383" version="35"
@@ -8557,7 +8609,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
 #: osm_watch: note 4317053 7
 #: osm_watch: way id="1149646787" version="5"
-#: last_checked: 2025-05-02 (mapillary)
+#: last_checked: 2025-06-10 (mapillary)
 #: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 ',
@@ -8723,6 +8775,8 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: source_id: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraßenregelung in der Radickestraße?)
 #: source_id: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
+#: source_id: adac:210225916 (bis 18.07.2025)
+#: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 #: note: Beginn ab 10. Juni 2025
@@ -8831,14 +8885,14 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten)
+         'data' => '#: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...)
 	q4::inwork 8365,5502 8365,5418
 ',
          'from' => 1744520400,
          'id' => 4313,
-         'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 13.06.2025 17:00',
+         'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 11.07.2025 17:00',
          'type' => 'handicap',
-         'until' => 1749826800
+         'until' => 1752246000
        },
        {
          'data' => '#: note: Halteverbotsschilder bis 14.06.2025
@@ -9044,7 +9098,8 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
          'data' => '#: XXX Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann.
 #: also_indoor: traffic (G)
 #: osm_watch: way id="1376570531" version="3"
-#: last_checked: 2025-05-14
+#: last_checked: 2025-06-12 (traffic)
+#: check_frequency: 14d (traffic)
 	2::inwork 8404,3648 8461,3410
 ',
          'from' => undef,
@@ -9231,7 +9286,7 @@ Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::
 #: next_check_id: ROSEGGER-2024
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Frühjahr 2025 bis Ende 2025)
 #: note: Halteverbotsschilder ohne Enddatum
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-12
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	q4::inwork 13246,7961 13236,7970 13147,8056
@@ -9309,6 +9364,16 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'text' => 'Lange Str.: zwischen Krautstr. und Andreasstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: LS/221-F/25/045 (bis 13.06.2025)
+	2::inwork 58453,24209 58473,24656 58448,25456 58632,25849
+',
+         'from' => 1746943200,
+         'id' => 4363,
+         'text' => 'Reichenberg - Batzlow: Deckenerneuerung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 12.05.2025 08:00 Uhr bis 13.06.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1749826800
        }
      
 );

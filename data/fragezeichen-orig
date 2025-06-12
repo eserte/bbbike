@@ -540,8 +540,8 @@ Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623
 #: source_id: 2147344224 (bis Mitte Juni 2019) (es ist aber nichts passiert) (inaktiv)
 #: source_id: 2147345316 (bis Anfang Februar 2020) (inaktiv)
 #: source_id: viz2021:13.347482,52.450637,16.01.2023,07:00 (Schachtdeckelerneuerung, bis 3.2.2023) (inaktiv)
-#: osm_watch: way id="30190074" version="35"
-#: osm_watch: way id="1216937214" version="3"
+#: osm_watch: way id="30190074" version="36"
+#: osm_watch: way id="1216937214" version="4"
 #: last_checked: 2025-06-11
 #: check_frequency: 360d
 #: next_check: 2028-12-31 (infravelo)
@@ -890,7 +890,7 @@ Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf
 #: source_id: 2147342868 (inaktiv)
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-12
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -2098,7 +2098,7 @@ Marienpark: Straße (asphaltiert) in Bau	?::inwork 8163,3660 8124,3706 8106,3745 
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-12
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -3426,6 +3426,7 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 #: by: https://www.tagesspiegel.de/berlin/bezirke/trotz-angst-vor-mega-stau-in-berlin-treptow-autobahn-gmbh-halt-an-eroffnungstermin-der-a100-fest-13609027.html
 #: by: https://entwicklungsstadt.de/a100-trifft-treptower-park-neue-anschlussstelle-spaltet-berlin/
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9585 (Antrag)
+#: by: https://www.tagesspiegel.de/berlin/verlangerung-der-a100-durch-berlin-stau-auf-der-neuen-autobahn-wird-eingeplant-13837747.html
 #: source_id: viz2021:13.460605,52.471641,09.08.2024,07:00 (Bauarbeiten in der Sonnenallee, bis 27.09.2024) (bis 18.10.2024) (bis 29.11.2024) (bis 20.12.2024) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.460292,52.47175,05.06.2025,07:00 (Installation einer Ampelanlage in der Sonnenallee, bis 13.06.2025)
 #: XXX -> strassen_bab-orig, wenn fertig
@@ -4181,12 +4182,12 @@ Benekendorffstr.: wird hier eine Fahrradstraße ausgewiesen?	? 4616,22478 4716,22
 #: priority: #D vvv
 # REMOVED (keine baldige Realisierung zu erwarten) --- #: next_check: 2024-09-30 vvv
 #: XXX hier schon Richtung Osten realisiert
-#: last_checked: 2025-03-08 (mapillary)
+#: last_checked: 2025-06-10 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (berliner-zeitung)
 Grellstr.: Radspur wird mit Grünbeschichtung ausgeführt	?; 12704,15105 12417,15272 12325,15328 12245,15380 11941,15586
 #: XXX hier noch keine Bauarbeiten zu sehen
-#: last_checked: 2025-06-05
+#: last_checked: 2025-06-10 (mapillary)
 #: check_frequency: 120d
 Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673
 # REMOVED --- #: next_check ^^^
@@ -4234,7 +4235,7 @@ Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,
 #: source_id: viz2021:13.306132,52.523359,21.02.2025,11:09 (bis 14.03.2025) (inaktiv)
 #: osm_watch: way id="4410427" version="40"
 #: osm_watch: way id="1052921140" version="7"
-#: osm_watch: way id="31621016" version="34"
+#: osm_watch: way id="31621016" version="35"
 #: note: mittlerweile (2024-11-28) existiert zwischen Richard-Wagner-Platz und Brücke eine Grünbeschichtung, vor der Brücke (wo der Unfall war?) beidseitig ein paar Meter Poller; mittlerweile (Januar 2025) bis Mierendorffplatz weitgehend fertig
 #: note: Lise-Meitner-Straße mit Grünbeschichtung, zumindest teilweise, evtl. nun RW4, evtl. wurde auch asphaltiert
 #: last_checked: 2025-06-01
@@ -5328,7 +5329,7 @@ Stromstr.: Radverkehrsmaßnahme (Sanierung oder Radstreifen?)	?; 6164,12980 6183,
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erneuerung-sickingenstrasse-neues-ufer-1085906.php (bis 2024) (mittlerweile bis 2028)
 # REMOVED (realisiert) --- #: last_checked: 2019-07-13 (mapillary) (hier scheint es im Westabschnitt was zu geben) --- #: next_check: 2019-07-13 --- Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	? 4187,13704 4271,13735 4421,13793 4583,13845
-#: osm_watch: way id="203912354" version="22"
+#: osm_watch: way id="203912354" version="23"
 #: osm_watch: way id="1323283749" version="1"
 #: last_checked: 2025-05-24
 #: check_frequency: 360d
@@ -5365,7 +5366,7 @@ Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	?::projected 4583,13
 #: source_id: viz2021:13.349475,52.542176,20.06.2022,10:00 (bis 14.7.2022) (inaktiv)
 #: source_id: viz2021:13.346694,52.544122,09.08.2022,07:30 (Fahrbahnsanierung bis 6.9.2022) (bis 23.9.2022) (bis 30.9.2022) (bis 28.10.2022) (inaktiv)
 #: source_id: viz2021:13.345126,52.545327,06.02.2023,07:00 (Leitungsarbeiten bis 6.3.2023) (inaktiv)
-#: osm_watch: way id="222005890" version="28"
+#: osm_watch: way id="222005890" version="29"
 #: XXX Hochbauarbeiten sind mittlerweile beendet, aber der Lückenschluss ist (noch?) nicht erfolgt
 #: last_checked: 2025-04-26 (mapillary)
 #: check_frequency: 120d
@@ -5708,7 +5709,7 @@ Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,989
 #: last_checked: 2025-04-30
 #: next_check: 2026-06-13
 Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
-#: last_checked: 2025-05-11 (mapillary)
+#: last_checked: 2025-06-10 (mapillary)
 Schivelbeiner Str./Seelower Str.: Zebrastreifen geplant	?::projected 10767,16174 10739,16146 10708,16118
 #: note: in der Drucksache fälschlicherweise "Chatronstraße" (ohne r) geschrieben
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5734 (Antrag für einen Fußgängerüberweg am benachbarten Kalvinistenweg)
@@ -5730,7 +5731,7 @@ Lipschitzallee/Wildmeisterdamm: Zebrastreifen geplant	?::projected 14734,2337 14
 #: note: nicht in der sen/uvk-Liste aufgeführt
 #: last_checked: 2025-01-15
 Reginhardtstr. 172: Zebrastreifen geplant	?::projected 7804,18352 7861,18333 7830,18388
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-10 (mapillary)
 Schulzendorfer Str./Kunkelstr.: Zebrastreifen geplant	?::projected 8199,14942 8219,14908 8195,14867
 #: last_checked: 2025-06-05
 Pistoriusstr./Mirbachplatz (Westseite): Zebrastreifen geplant	?::projected 13319,16453 13331,16424 13307,16409
@@ -7209,9 +7210,9 @@ Landesstraße 30 (Woltersdorf und Rüdersdorf): wurde hier ein gemeinsamer Geh- un
 #: by: https://www.o-sp.de/download/lbvbrandenburg/254573
 #: by: https://www.o-sp.de/download/lbvbrandenburg/254578
 #: source_id: LS/721-F/22/001 (bis 14.9.2024) (inaktiv) (bis 14.09.2024) (inaktiv) (bis 31.01.2025) (inaktiv)
-#: source_id: LS/721-F/22/002 (bis 20.12.2024) (inaktiv) (bis 07.03.2025) (inaktiv) (bis 31.03.2025) (inaktiv)
+#: source_id: LS/721-F/22/002 (bis 20.12.2024) (inaktiv) (bis 07.03.2025) (inaktiv) (bis 31.03.2025) (inaktiv) (bis 04.07.2025)
 #: osm_watch: way id="4698246" version="9" brb
-#: next_check: 2025-03-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-07-04 (VIZ-Verkehrsmeldung)
 B158 Bad Freienwalde: bei der Instandsetzung sind möglicherweise Radspuren entstanden (oder existierten diese bereits?)	? 52984,42973 53249,43276 53317,43391
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31873
@@ -7458,7 +7459,7 @@ Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltier
 #: note: zukünftige Sperrung ist mittlerweile in temp_blockings eingetragen
 #: osm_watch: way id="22909864" version="26"
 # REMOVED --- #: osm_watch: node id="1650096479" version="8"
-#: osm_watch: way id="1168938182" version="6"
+#: osm_watch: way id="1168938182" version="7"
 #: also_indoor: search Wolziger_Zeile
 #: last_checked: 2025-06-11
 #: check_frequency: 30d (indoor research)
@@ -7805,14 +7806,14 @@ Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 1
 #: by: https://www.infravelo.de/projekt/am-treptower-park/ (2. Quartal 2025 - 3. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408769475/kein-geld-fuer-verkehrssicherheit-ost-bezirke-weisen-kritik-zurueck.html (Verzögerung, Umsetzung erst 2027-2028?)
 #: XXX mittlerweile wurde bereits im Zuge der Umgestaltung der Kreuzung Elsenstr./Am Treptower Park eine Radwegauffahrt gebaut; außerdem siehe provisorische Führung des Radverkehr Richtung Nordwesten
-#: last_checked: 2025-06-02
+#: last_checked: 2025-06-12
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (infravelo)
 Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 14031,9673 13860,9861
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: note: Radfahrer werden hier in beiden Richtungen überqueren dürfen; Richtung Nordwesten geht es weiter als Zweirichtungsradweg, zusätzlich zum normalen Radweg
-#: last_checked: 2025-06-03
+#: last_checked: 2025-06-12
 #: check_frequency: 60d
 Am Treptower Park: Bau einer Ampel	?::inwork 14244,9432 14242,9448 14239,9467
 # 
@@ -11308,7 +11309,7 @@ S-Bhf. Zehlendorf: neuer Zugang am Postplatz geplant	?::projected 644,2622 660,2
 #: XXX fehlt bei Berlin.coords.data (laut LOR und DPAG-Mitteilungsblatt PLZ=13059)
 #: XXX geplante neue Privatstraße
 #: osm_watch: way id="1041951087" version="4"
-#: last_checked: 2025-04-20
+#: last_checked: 2025-06-10 (mapillary)
 #: check_frequency: 180d
 Zum Wartenberger Anger: genaue Lage, Qualität?	?::inwork 17713,18971 17687,18846 17753,18835 17813,18933
 # 

@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-06-11
+#: last_checked: 2025-06-12
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -324,10 +324,11 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-darum-verzoegern-sich-die-bauarbeiten-auf-dem-marktplatz-adlershof-li.2323549
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Teileinziehung von Straßenland, nördlicher Strang)
 #: XXX der nördliche Strang soll dauerhaft eingezogen werden
-#: osm_watch: way id="20554168" version="27"
+#: XXX laut osm ist der nördliche Strang fertig und highway=pedestrian, allerdings ohne bicycle=yes
+#: osm_watch: way id="20554168" version="28"
 #: osm_watch: way id="1155308749" version="1"
 #: last_checked: 2025-05-03 (osm) vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 45d vvv
 #: next_check: 2025-09-01 (BA-Pressemitteilung) vvv
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
 # REMOVED (hier wieder offen) --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714
@@ -918,8 +919,8 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 ### Neukölln ###
 # 
-#: note: Einbahnstraßenschilder nur an der Elsenstr.; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2025-06-03
+#: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
+#: last_checked: 2025-06-12
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -2008,14 +2009,14 @@ Dieffenbachstr.: Bodenschwellen	q0- 11346,9655 11541,9576
 Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 # 
-#: XXX nach den Bauarbeiten wiederherstellen:
-#: XXX Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
-#: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025) (inaktiv) (bis 12.06.2025) (bis 25.07.2025)
-#: also_indoor: traffic (none)
-#: last_checked: 2025-06-11
-#: check_frequency: 30d
-#: next_check: 2025-07-25 (VIZ-Verkehrsmeldung)
-Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
+# REMOVED --- #: XXX nach den Bauarbeiten wiederherstellen:
+# REMOVED --- #: source_id: viz2021:13.460697,52.49394,15.10.2024,07:00 (bis 15.12.2024) (bis 15.03.2025) (bis 26.04.2025) (inaktiv) (bis 30.05.2025) (inaktiv) (bis 12.06.2025) (bis 25.07.2025)
+# REMOVED --- #: also_indoor: traffic (none)
+# REMOVED --- #: last_checked: 2025-06-12
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-07-25 (VIZ-Verkehrsmeldung)
+# REMOVED --- Martin-Hoffmann-Str.: Bauarbeiten, Anbindung an die Elsenstr. abgesperrt, Umwege	q3::inwork 14077,10016 14289,9870
+Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 # 
 Lausitzer Platz: Fußgängerzone, einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: Fußgängerzone, Radfahrer frei, Bodenschwelle	q2 12274,10612 12172,10585
@@ -7302,10 +7303,17 @@ Frommpromenade: enge Straße	q0- 5463,20461 5350,20495 5257,20551
 #: corrected_by: srt/policy (q2 -> q0-)
 Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 # 
-#: note: Wobei: bei der Sperrung des Teltowkanaluferwegs war hier die offizielle Umleitung für Fußgänger und Radfahrer
 #: by: Kay Leonhardt:
 #: confirmed_by: srt
-Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4659,3065 4866,3371
+Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4659,3065
+#: next_check_id: BAEKEBRUECKE-2022
+#: XXX: Wobei: bei der Sperrung des Teltowkanaluferwegs war hier die offizielle Umleitung für Fußgänger und Radfahrer
+#: next_check: 2025-06-17 vvv
+#: valid: !20250617-20251219
+Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
+#: valid: 20250617-20251219
+Eduard-Spranger-Promenade: Grünanlage, aber möglicherweise offizielle Umleitung für Radverkehr	q3 4317,2638 4659,3065
+#: next_check ^^^
 # 
 #: by: Karsten Denkler vvv
 #: corrected_by: srt (q1 -> q0-)
