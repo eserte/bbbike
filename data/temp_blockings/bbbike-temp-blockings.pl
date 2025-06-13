@@ -28977,7 +28977,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-13
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -35666,9 +35666,9 @@ EOF
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2025-05-29 (architektur-urbanistik)
-#: check_frequency: 60d
-#: next_check: 2025-06-30
+#: last_checked: 2025-06-13
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
 EOF
      },
@@ -37773,8 +37773,10 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
 # REMOVED --- #: osm_watch: way id="1124627670" version="6" ---	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
 #: XXX Wie lange dauern die Bauarbeiten? Wo genau wird gebaut? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
-#: last_checked: 2025-05-29 (entwicklungsstadt)
-	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306 8232,11414
+#: last_checked: 2025-06-13 vvv
+	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306
+	q3::inwork 8253,11306 8232,11414
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -40226,7 +40228,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-03-09
+#: last_checked: 2025-06-13
 #: check_frequency: 180d
 #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -41980,7 +41982,7 @@ EOF
 #: also_indoor: traffic (ex-G,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
-#: last_checked: 2025-05-24 (Sackgassenschild steht noch)
+#: last_checked: 2025-06-13
 #: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 EOF
@@ -43225,7 +43227,7 @@ EOF
 #: check_frequency: 90d vvv
 #: next_check: 2025-10-30 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: note 4069677 11
-#: osm_watch: note 4115004 3
+#: osm_watch[closed]: note 4115004 5
 #: osm_watch: note 4681980 2
 #: osm_watch: way id="375991056" version="18"
 #: osm_watch: way id="375958863" version="12"
@@ -44609,7 +44611,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-06-10 vvv
+#: last_checked: 2025-06-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -46688,13 +46690,15 @@ EOF
 	q4::inwork 3355,5655 3346,5629
 EOF
      },
-     { from  => 1737525600, # 2025-01-22 07:00
-       until => 1748617200, # 2025-05-30 17:00
-       text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, Gehweg für Radfahrer frei, vom 23.01.2025 07:00 bis 30.05.2025 17:00',
+     { from  => $isodate2epoch->("2025-06-13 00:00:00"), # 1737525600, # 2025-01-22 07:00
+       until => $isodate2epoch->("2025-06-30 17:00:00"), # 1748617200, # 2025-05-30 17:00
+#      text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, Gehweg für Radfahrer frei, vom 23.01.2025 07:00 bis 30.05.2025 17:00',
+       text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, vom 13.06.2025 07:00 bis 30.06.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025) (inaktiv)
-	q4::inwork 2493,10675 2596,10663 2673,10670 2698,10645
+#: source_id: viz2021:13.28749,52.50307,13.06.2025,07:00 (bis 30.06.2025)
+	q3::inwork 2493,10675 2596,10663 2673,10670 2698,10645
 EOF
      },
      { from  => undef, # 
@@ -46749,7 +46753,7 @@ EOF
 #: note: bei rbb mittlerweile "Bis auf weiteres"
 #: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-05-24 (traffic)
+#: last_checked: 2025-06-13 (traffic)
 #: check_frequency: 21d (traffic)
 #: next_check: 2025-08-19 (adac)
 	q4::inwork 2396,9427 2467,9425 2592,9419
@@ -47609,7 +47613,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025) (inaktiv)
-#: source_id: viz2021:13.285979,52.505083,02.06.2025,07:00 (bis 13.06.2025)
+#: source_id: viz2021:13.285979,52.505083,02.06.2025,07:00 (bis 13.06.2025) (inaktiv)
 #: source_id: adac:798121028 (bis voraussichtlich 13.06.2025)
 #: note: an der Kantstr. steht ein Sackgassenschilder, Fußgänger/Radfahrer frei
 	q4::inwork 2493,10675 2468,10780
@@ -47672,7 +47676,7 @@ EOF
        data  => <<EOF,
 #: note: Halteverbotsschilder bis 14.06.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2025-04-27
+#: last_checked: 2025-06-13 (traffic)
 #: next_check: 2025-06-14
 	q4::inwork 6351,9335 6446,9328
 EOF
@@ -47727,7 +47731,7 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-06-08 vvv
+#: last_checked: 2025-06-13 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -47855,8 +47859,8 @@ EOF
 #: source_id: adac:184667102 (bis 20.06.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lopunzh3jc2v
 #: note: bei rbb mittlerweile entfernt; wieder da, mittlerweile bis 20.06.2025
-#: also_indoor: traffic (H,G,T,A,W)
-#: last_checked: 2025-05-24 (traffic)
+#: also_indoor: traffic (H,G,ex-T,A,W)
+#: last_checked: 2025-06-13 (traffic)
 #: check_frequency: 21d
 #: next_check: 2025-06-20 (rbb, adac)
 	q4::inwork 23679,11372 23654,11285 23648,11265
@@ -47869,7 +47873,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.32151,52.47021,09.05.2025,20:05 (bis 30.05.2025) (inaktiv)
-#: source_id: viz2021:13.32151,52.47021,02.06.2025,11:52 (bis 13.06.2025)
+#: source_id: viz2021:13.32151,52.47021,02.06.2025,11:52 (bis 13.06.2025) (inaktiv)
 	q4::inwork 4885,6908 4883,7061
 EOF
      },
@@ -48188,7 +48192,7 @@ EOF
        text  => 'Lützlower Weg: Brückeninstandsetzungsarbeiten, Sperrung vom 02.06.2025 bis 13.06.2025',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/25/053 (bis 13.06.2025)
+#: source_id: LS/221-E/25/053 (bis 13.06.2025) (inaktiv)
 #: note: nicht ganz klar, ob die B166 oder der Lützlower Weg betroffen ist
 	2::inwork 52196,88644 52207,88708
 EOF
@@ -48322,7 +48326,7 @@ EOF
        text  => 'Reichenberg - Batzlow: Deckenerneuerung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 12.05.2025 08:00 Uhr bis 13.06.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-F/25/045 (bis 13.06.2025)
+#: source_id: LS/221-F/25/045 (bis 13.06.2025) (inaktiv)
 	2::inwork 58453,24209 58473,24656 58448,25456 58632,25849
 EOF
      },
