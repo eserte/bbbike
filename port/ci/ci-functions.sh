@@ -369,7 +369,7 @@ install_old_perl_dependencies() {
 		# Inline::C 0.77 (and probably newer) runs only on perl 5.10.0 and newer.
 		#
 		# non-commented modules increased the perl minimum version at some point in time
-		cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" HTML::Tagset~"<3.22"
+		cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" HTML::Tagset~"<3.22" XML::Twig~"<3.54"
 		;;
 	esac
 	case "$PERLBREW_PERL" in
