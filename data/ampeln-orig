@@ -8,7 +8,7 @@
 # 
 #: source_id: viz2021:13.390889,52.525514,01.04.2025,08:00 (bis 19.07.2025)
 #: note: Richtung Südosten auch Radwegführung auf dem Bürgersteig, Richting Nordwesten sollen Radfahrer via Tucholskystr. und Auguststr. fahren (wegen Tramschienen?!)
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-11 (mapillary)
 #: next_check: 2025-07-19 (VIZ-Verkehrsmeldung)
 #: valid: -20250719
 Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
@@ -290,21 +290,23 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # 
 # REMOVED --- #: next_check_id: ADELESCHREIBERKRIEGER-2014 --- #: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm --- #: source_id: viz2021:13.380011,52.520356,17.02.2023,12:00 (bis 31.03.2023) (inaktiv) --- #: source_id: viz2021:13.37994,52.52093,17.02.2023,12:00 (neuer Eintrag, bis 13.04.2023) (inaktiv) --- #: last_checked: 2023-04-18 --- #: check_frequency: 7d --- #: next_check: 2023-04-13 --- #: valid: -20230427 --- Gegenverkehrsregelung	X::inwork::alternating 8737,12757
 # 
+#: next_check_id: NEUEBAHNHOF-2025
 #: by: https://viz.berlin.de/2023/01/verkehrsvorschau-240123/ (Bedarfsampeln für Fußgänger, bis 2024)
 #: by: https://berliner-abendblatt.de/2023/01/24/bauarbeiten-staugefahr-in-der-guertelstrasse/
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.471417,52.507338,11.06.2025,07:00 (bis 31.03.2027)
-#: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
+# REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
+#: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-06-09
+#: last_checked: 2025-06-14
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-06-09
+#: last_checked: 2025-06-14
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -371,7 +373,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2025-05-20 vvv
+#: last_checked: 2025-06-13 (bahninfo-forum) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: valid: -20251231 vvv
@@ -3997,7 +3999,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 2
-#: last_checked: 2025-06-07 (mapillary) vvv
+#: last_checked: 2025-06-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
@@ -4058,7 +4060,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-14
 #: check_frequency: 90d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

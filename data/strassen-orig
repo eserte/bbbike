@@ -2429,7 +2429,7 @@ Stadthausstr.	N 15649,10922 15674,10851 15681,10801
 Archibaldweg	N 15674,10851 15777,10897 15820,10916 15870,10938 15886,10947 15945,10984 16034,11053 16160,11154
 Münsterlandstr.	N 16160,11154 16273,11113 16381,11080 16492,11042 16575,11013 16702,10972 16792,10945
 Münsterlandplatz	N 16719,11021 16590,11059
-Wönnichstr.	N 16597,10651 16702,10972 16719,11021 16785,11212 16856,11438 16887,11545 16915,11634 16977,11769
+Wönnichstr.	N 16597,10651 16702,10972 16719,11021 16785,11212 16856,11438 16887,11545 16915,11634 16957,11726 16977,11769
 Landsberger Allee	HH 12382,13097 12585,13118 12711,13150 12786,13185 12878,13229 12979,13280 13073,13329 13151,13367 13241,13415 13330,13468 13543,13568 13635,13605 13702,13634 13854,13701 13906,13722 14006,13761 14218,13834 14291,13862 14343,13882 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15588,14279 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823 19013,14905 19156,14953 19200,14963 19214,14966 19350,14997 19408,15007 19614,15061 19744,15128 19852,15201 19987,15280 20135,15364 20260,15434 20532,15564 20580,15586 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808 21951,15918 22109,15990 22131,16000 22495,16165 22631,16215 22696,16208 22739,16203 22760,16197 22771,16194
 Landsberger Allee	HH 19852,15201 19694,15141 19565,15106 19512,15092 19364,15045 19309,15023 19254,15000 19205,14980 19196,14976 19175,14968 19013,14905
 Landsberger Allee	HH 19200,14963 19254,15000
@@ -2650,8 +2650,8 @@ Britzer Damm	H 12576,6374 12588,6337 12595,6299 12597,6293 12618,6207 12628,6166
 Lahnstr.	H 13085,6925 13265,6972
 # REMOVED --- #: next_check_id: NEUKOELLNISCHEALLEE-2019 --- #: priority: #A vvv --- #: last_checked: 2023-08-23 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-06-30 vvv --- #: valid: -20230630 --- #: valid: -20230930 --- Lahnstr.	N 13265,6972 13336,6986 13500,7018 13627,7047 13891,7107 13928,7106 13970,7105 14011,7103 --- #: valid: !-20230630 --- #: valid: !-20230930
 Lahnstr.	H 13265,6972 13336,6986 13500,7018 13627,7047 13891,7107 13928,7106 13970,7105 14011,7103
-# REMOVED --- #: valid: -20230630 --- #: valid: -20230930 --- Neuköllnische Allee	N 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003 --- # REMOVED --- #: valid: !-20230630 --- #: valid: !-20230930
-Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
+# REMOVED --- #: valid: -20230630 --- #: valid: -20230930 --- Neuköllnische Allee	N 14011,7103 14069,7100 14196,7086 14291,7033 14344,7003 --- # REMOVED --- #: valid: !-20230630 --- #: valid: !-20230930
+Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14291,7033 14344,7003
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
 # 
@@ -11595,6 +11595,7 @@ Lauterplatz	NN 5799,7880 5707,7878
 #: by: https://the-friedenauer.de/ (geplante Fertigstellung: Q2 2027)
 #: by: https://www.berliner-woche.de/friedenau/c-bauen/buerokomplex-am-eingang-zum-neuen-wohnquartier_a437134
 #: by: https://entwicklungsstadt.de/neuer-buerokomplex-the-friedenauer-baubeginn-im-sommer-2025/
+#: by: https://entwicklungsstadt.de/gewerbeprojekt-bau-des-the-friedenauer-am-innsbrucker-platz-laeuft/
 #: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024) (bis 28.06.2024) (bis 23.04.2024, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.342764,52.477504,02.06.2025,10:00 (Leitungsbau in der Hauptstr., bis 21.07.2025)
 # REMOVED (eingetragen) --- #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
@@ -11726,7 +11727,9 @@ Friedrich-Stampfer-Str.	N 9388,10393 9527,10389
 Brandesstr.	N 9858,10350 9698,10348 9675,10351
 Siegfriedstr. (Lichtenberg)	NH 16852,14412 16873,14236 16881,14063 16875,13834 16868,13611 16866,13532
 Siegfriedstr. (Lichtenberg)	H 16866,13532 16865,13423 16863,13138 16865,13000 16860,12861 16859,12752 16859,12683 16859,12613 16857,12600 16831,12419 16820,12339
-Siegfriedstr. (Lichtenberg)	N 16820,12339 16794,12144 16764,11919
+Siegfriedstr. (Lichtenberg)	N 16820,12339 16801,12197 16794,12144 16764,11919
+#: osm.highway: service
+(Siegfriedshöfe)	N 16801,12197 16745,12213 16665,12218
 Bornitzstr.	N 16860,12861 16484,12871 16439,12872 16384,12874 16376,12874 16312,12876 16242,12878 16197,12880 16146,12881 16073,12883 15950,12886 15747,12880 15643,12875 15563,12870
 Bornitzstr. [76 A-D und 78 A-D]	N 16312,12876 16313,12762
 Bornitzstr. [82 A - 92 F]	N 16384,12874 16385,12825 16431,12825 16484,12825 16484,12871
@@ -11763,7 +11766,7 @@ Roedeliusplatz	N 16166,12292 16227,12281 16276,12273
 Glaschkestr.	N 16166,12292 16144,12388 16147,12434
 Atzpodienstr.	N 16576,12612 16564,12513 16509,12518 16485,12384
 Atzpodienstr.	H 16485,12384 16456,12191 16413,11906
-Wotanstr. (Lichtenberg)	N 16720,12614 16696,12437 16685,12358 16657,12165
+Wotanstr. (Lichtenberg)	N 16720,12614 16696,12437 16685,12358 16665,12218 16657,12165
 Freiastr.	N 16831,12419 16696,12437
 Zwickauer Damm	NH 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747 15799,1690 15729,1573 15719,1557 15688,1506 15670,1474 15641,1426
 Zwickauer Damm	N 15641,1426 15591,1332 15540,1239 15482,1138 15426,1041 15337,889 15272,778
@@ -13487,10 +13490,10 @@ Scharnweberstr. (Friedrichshain)	N 14354,12012 14468,11992 14589,11975 14675,119
 #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/vor-dieser-schule-in-berlin-sind-autos-verboten-tischtennis-und-blumen-statt-parkplatzen-13729912.html
 # REMOVED (deleted) --- #: osm_watch: way id="1051634661" version="11"
 #: osm_watch: way id="1388649610" version="2"
-#: osm_watch: note 4668723 5
+#: osm_watch: note 4668723 7
 # REMOVED (mittlerweile Poller, noch keine Ausschilderung) --- #: XXX zurzeit (noch?) keine Ausnahme für Radfahrer, evtl. weil noch Markierungsarbeiten erfolgen? --- 
 #: add_fragezeichen: Kommen noch die entsprechenden Schilder (Fußgängerzone, Radfahrer frei?)? Ist ein handicap_s-Eintrag notwendig?
-#: last_checked: 2025-06-05
+#: last_checked: 2025-06-14
 #: check_frequency: 14d
 #: historical_note: früher (bis Mai 2025) N
 Scharnweberstr. (Friedrichshain)	NN 14675,11964 14783,11949
@@ -15960,7 +15963,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-14
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16351,7 +16354,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-14
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
@@ -20771,6 +20774,7 @@ Nordkapstr.	N 10458,16509 10465,16656
 Schützenstr. (Mariendorf)	N 8581,4342 8569,4459 8561,4535 8546,4629
 Im Dohl	N -9063,5946 -8903,5930
 Waldallee	N -8917,5986 -8773,5998 -8646,6043 -8559,6107 -8465,6204 -8290,6307 -8205,6354
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_25_1605_1644_online.pdf (hier als "Waldallee" bezeichnet)
 (Verlängerte Waldallee)	NN -8917,5986 -8929,5984 -9025,5988 -9053,5992
 (Waldweg an der Schilfdachkirche)	NN -9078,5894 -8929,5876 -8825,5875 -8675,5907 -8582,5970 -8495,6059 -8385,6148 -8251,6214
 Gottfried-Arnold-Weg	N -8251,6214 -8157,6259

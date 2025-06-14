@@ -252,7 +252,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
 #: last_checked: 2025-04-26 (mapillary) vvv
-#: check_frequency: 50d vvv
+#: check_frequency: 60d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
 #: check_frequency ^^^
@@ -1041,7 +1041,7 @@ Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/gefahrlicher-zickzack-kurs-statt-sicherheit-wird-der-millionenteure-radstreifen-auf-der-schonhauser-allee-jetzt-wieder-demontiert-13841635.html
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-12 (mapillary)
 #: historical_note: früher: Gehwegplatten	RW2;
 #Radspur, niedrige Protektion	RW4;
 	RW2; 10941,15697 10953,15787
@@ -1667,7 +1667,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: source_id: viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-06-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -1686,7 +1686,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="49"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-06-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -2332,7 +2332,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-06-07 vvv
+#: last_checked: 2025-06-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17611,7690 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -3167,8 +3167,22 @@ Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 140
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
-relativ schmale Radspuren	RW3; 14945,11300 15016,11431 15055,11505 15106,11598 15153,11691 15202,11789 15256,11884
-relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691 15106,11598 15055,11505 15016,11431 14945,11300 14918,11249
+#: next_check_id: NEUEBAHNHOF-2025
+#: last_checked: 2025-06-14
+#: next_check: 2027-03-31
+#: valid: !20250611-20270331
+relativ schmale Radspuren	RW3; 14945,11300 15016,11431
+#: valid: 20250611-20270331
+Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
+relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598 15153,11691 15202,11789 15256,11884
+relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691 15106,11598 15055,11505 15016,11431
+#: next_check_id: NEUEBAHNHOF-2025
+#: last_checked: 2025-06-14
+#: next_check: 2027-03-31
+#: valid: !20250611-20270331
+relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
+#: valid: 20250611-20270331
+Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note ^^^
 	RW2; 15361,12071 15300,11965 15256,11884
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: 20190125-
@@ -3407,19 +3421,18 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="318031558" version="15"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, bis Höhe Pasteurstr. bis auf die Deckschicht fertiggestellt; weiter nordöstlich wird noch gebaut vvv
-#: last_checked: 2025-06-04 (mapillary) vvv
+#: last_checked: 2025-06-14 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (BA Pankow) vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
 	RW0; 12640,13814 12701,13873 12766,13942
 #: historical_note: früher (bis 2024/2025): Busspur gilt Mo-Fr 6-18 Uhr, RW5; außerdem hat hier noch ein alter enger Radweg existiert, der aber nicht weiter "beworben" wurde
-	RW0; 12766,13942 12856,14042
+	RW0; 12766,13942 12856,14042 12901,14093
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
-	RW1; 12856,14042 12901,14093
 	RW3; 12901,14093 12856,14042 12766,13942 12701,13873 12640,13814
 	RW4;RW3 12640,13814 12578,13800
 	RW3;RW3 12578,13800 12402,13762 12372,13755 12204,13719 12161,13711
@@ -4791,7 +4804,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-06-14 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -5315,7 +5328,7 @@ Grünbeschichtung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 	RW1;RW1 14011,7103 14069,7100
 # REMOVED (nur noch ein kleines Stück ohne Radweg) --- #: XXX Radweg wegen Bauarbeiten aufgehoben --- #: source_id: LMS-BR_r_LMS-BR_62750 --- #: source_id: 2147339827 --- #: XXX laut VMZ und fritz bis Ende 2017 --- #: last_checked: 2017-11-15 --- #: next_check: 2017-12-20
 	RW1;RW1 14069,7100 14196,7086
-neues, aber trotzdem etwas welliges Verbundsteinpflaster	RW1;RW1 14196,7086 14310,7022 14344,7003
+neues, aber trotzdem etwas welliges Verbundsteinpflaster	RW1;RW1 14196,7086 14291,7033 14344,7003
 	RW1; 14344,7003 14567,6810
 bestehender Radweg abgesperrt	RW0; 14567,6810 14344,7003
 Verbundsteinpflaster	RW1; 14567,6810 14724,6668 14843,6558 15026,6391 15135,6291 15187,6245 15300,6148 15332,6138
@@ -5387,7 +5400,7 @@ Grünbeschichtung, Leitboys	RW3; 16859,12683 16859,12613
 Grünbeschichtung, teilweise mit Leitboys	RW3; 16859,12613 16857,12600 16831,12419
 	RW3; 16831,12419 16820,12339
 #: note: Siegfriedstr., Richtung Norden
-Grünbeschichtung, teilweise mit Leitboys	RW3; 16820,12339 16831,12419 16857,12600 16859,12613
+Bushaltestelle, Grünbeschichtung, teilweise mit Leitboys	RW3; 16820,12339 16831,12419 16857,12600 16859,12613
 Grünbeschichtung	RW3; 16859,12613 16859,12683
 	RW0; 16859,12683 16859,12752
 	RW3; 16859,12752 16860,12861
@@ -7298,7 +7311,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2025-06-01 vvv
+#: last_checked: 2025-06-11 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -7757,13 +7770,13 @@ asphaltiertes Straßenbahnkap	RW1; 14661,12798 14731,12809
 	RW3; 15010,12855 15098,12849
 asphaltiertes Straßenbahnkap	RW1; 15098,12849 15117,12846 15169,12839
 relativ breit, Grünbeschichtung	RW3; 15169,12839 15233,12829 15357,12813
-relativ breit	RW4; 15357,12813 15367,12815 15417,12823
+relativ breit, Grünbeschichtung	RW4; 15357,12813 15367,12815 15417,12823
 asphaltiertes Straßenbahnkap	RW2; 15417,12823 15469,12831
-	RW3; 15469,12831 15516,12838
+Grünbeschichtung	RW4; 15469,12831 15516,12838
 #: note Scheffelstr./Eldenaer Str., Richtung Westen ##########
-	RW3; 15516,12838 15469,12831
+Grünbeschichtung	RW3; 15516,12838 15469,12831
 asphaltiertes Straßenbahnkap	RW2; 15469,12831 15417,12823
-	RW4; 15417,12823 15367,12815
+Grünbeschichtung	RW4; 15417,12823 15367,12815
 	RW3; 15367,12815 15357,12813 15233,12829
 	RW3; 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
@@ -8344,7 +8357,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2025-05-16
+#: last_checked: 2025-06-14
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8370,7 +8383,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-06-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2025-09-30 (infravelo) vvv

@@ -2682,3 +2682,10 @@ Rummelsburger Str./Mentelinstr.	3nocross::ignrte 17769,7465 17847,7356 18010,713
 Mentelinstr. -> Rummelsburger Str.: Rummelsburger Str./Mentelinstr.	3::igndisp 17833,7351 17847,7356 17769,7465
 Rummelsburger Str. -> Mentelinstr.: Rummelsburger Str./Mentelinstr.	3::igndisp 18010,7137 17847,7356 17833,7351
 Düsseldorfer Str.	1 5139,9777 5124,9803 4987,9850
+für Kfz gesperrt	3nocross::ignrte 10699,16492 10778,16485 11019,16465
+Bornholmer Str. -> Seelower Str.: für Kfz gesperrt	3::igndisp 11019,16465 10778,16485 10754,16305
+Bornholmer Str. -> Gotlandstr.: für Kfz gesperrt	3::igndisp 10699,16492 10778,16485 10793,16636
+Seelower Str. -> Bornholmer Str.: für Kfz gesperrt	3::igndisp 10754,16305 10778,16485 10699,16492
+Seelower Str. -> Gotlandstr.: für Kfz gesperrt	3::igndisp 10754,16305 10778,16485 10793,16636
+Gotlandstr. -> Bornholmer Str.: für Kfz gesperrt	3::igndisp 10793,16636 10778,16485 11019,16465
+Gotlandstr. -> Seelower Str.: für Kfz gesperrt	3::igndisp 10793,16636 10778,16485 10754,16305

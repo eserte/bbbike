@@ -11,7 +11,6 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4::inwork 12558,11920 12617,11888
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
-Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
 Südkreuz: Bauarbeiten, Engstellen	q3::inwork 7838,7848 7837,7899
@@ -33,7 +32,6 @@ Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-Rummelsburger Str.: Engstellen durch unnötige Absperrungen, einige Fußgänger	q2::inwork; 18010,7137 17847,7356
 An der Wuhlheide: Engstellen durch unnötige Absperrungen, einige Fußgänger	q1::inwork; 18010,7137 18225,7004
 Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
@@ -47,7 +45,7 @@ Reuterstr.: Bauarbeiten an der Karl-Marx-Str., einige Meter der Fahrbahn sind ge
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Boddinstr.: Sperrung an der Karl-Marx-Str.	q3::inwork 12368,8356 12582,8408
-Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 17155,11348
+Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
@@ -60,7 +58,6 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
 Gartenstr. (Weißensee): etwa 40m der Fahrbahn sind gesperrt	q3::inwork 14791,16445 14809,16525
-Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9200,562 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
@@ -2686,6 +2683,7 @@ Flughafen Tempelhof, Eingang Herrfurthstr.: zahlreiche Bodenschwellen	q2 11418,8
 Loerkesteig: Bordstein	q2 2873,24313 2925,24350
 Loerkesteig: Bordstein	q3 2956,24373 2969,24382
 (Bitterfelder Str./Otto-Rosenberg-Str. - Weg entlang der S-Bahn): enger Trampelpfad	q3 19896,16611 19890,16559
+(Siegfriedshöfe): Gewerbehof	q3 16801,12197 16745,12213 16665,12218
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

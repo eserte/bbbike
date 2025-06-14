@@ -183,7 +183,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-06-07 vvv
+#: last_checked: 2025-06-14 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -269,7 +269,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="5"
-#: last_checked: 2025-04-18 (youtube)
+#: last_checked: 2025-06-14
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -306,9 +306,9 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2025-06-04
-#: check_frequency: 90d
-#: next_check: 2025-06-30 (Halteverbotsschilder)
+#: last_checked: 2025-06-14
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Ontarioseestr.	1no 18585,10024 18411,10037
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18411,10037 18339,10048
 # 
@@ -454,6 +454,7 @@ Kavalierstr.	1 10621,18837 10721,18575
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
 #: osm_watch: way id="4637773" version="27"
+#: last_checked: 2025-06-11 (mapillary)
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
@@ -4046,7 +4047,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
-#: last_checked: 2025-04-25 vvv
+#: last_checked: 2025-06-11 (mapillary) vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="5"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -4397,9 +4398,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="29"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-06-04
-#: check_frequency: 90d
-#: next_check: 2025-06-30 (Halteverbotsschilder)
+#: last_checked: 2025-06-14
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
 # REMOVED (laut osm komplett offen)
@@ -4753,17 +4754,17 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="16"
-#: last_checked: 2025-05-20
+#: last_checked: 2025-06-14
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="11"
-#: last_checked: 2025-05-07
+#: last_checked: 2025-06-14
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: XXX Es wird einen Anschluss an den Traberweg geben.
 #: osm_watch: note 4522174 2
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-14
 #: check_frequency: 90d
 #: next_check: 2025-09-20 (entwicklungsstadt)
 Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700
@@ -5575,6 +5576,9 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 # REMOVED --- #: last_checked: 2017-10-11 --- Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10355,12551 10411,12471
 # 
 #: next_check_id: BER-20XX
+#: by: https://corporate.berlin-airport.de/de/real-estate/quartier-sxf-2-0.html (Quartier SXF 2.0)
+#: by: https://corporate.berlin-airport.de/de/real-estate/quartier-sxf-2-0/_jcr_content/root/responsivegrid/galleryteaser_copy_5/imagecarousel/galleryteasercarouse_1107974693.coreimg.jpeg/1748441611304/cobe-1.jpeg
+#: by: https://www.airliners.de/ber-entwickelt-gewerbegebiet-ehemaligem-terminal-5-gelaende/81314
 #: XXX möglicherweise bleibt das noch erhalten, solange es Terminal 5 gibt? Es gibt aber Kartenwerke (Pharus, Falk), bei denen die Jürgen-Schumann-Allee durchgängig ist
 #: last_checked: 2025-04-12
 # REMOVED --- #: next_check: 2020-10-31
@@ -5678,8 +5682,8 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: by: https://www.deutsches-architekturforum.de/thread/15410-dresden-carolabr%C3%BCcke-st-petersburger-stra%C3%9Fe-carolaplatz/?postID=771348#post771348
 #: by: https://www.dnn.de/lokales/dresden/carolabruecke-dresden-abriss-oder-erhalt-entscheidung-steht-STJQBOHKEJBS3CV72CDHOFCSCY.html (vermutlich Komplettabriss)
 #: by: https://www.n-tv.de/panorama/Dresdner-Carolabruecke-soll-bis-zum-Sommer-verschwinden-article25605881.html (Neubau ab 2027)
-#: osm_watch: way id="4214231" version="41"
-#: osm_watch: way id="10368500" version="47"
+#: osm_watch: way id="4214231" version="42"
+#: osm_watch: way id="10368500" version="48"
 #: also_indoor: search Carolabrücke
 #: last_checked: 2025-04-06 (research)
 #: check_frequency: 180d
@@ -5688,9 +5692,12 @@ Carolabrücke (Dresden): Brücke teilweise eingestürzt, der Rest ist gesperrt	2::i
 # 
 #: by: https://www.berliner-zeitung.de/news/sachsen-naechste-bruecke-muss-abgerissen-werden-li.2282916
 #: by: https://www.lasuv.sachsen.de/b-101-grossenhain-8358.html (wird abgerissen)
+#: by: https://www.mdr.de/nachrichten/sachsen/dresden/grossenhain-riesa/bahn-bruecke-sperrung-umleitung-strassenverkehr-102.html (Baustart September 2025, Brückenfreigabe 2027, evtl. schon früher)
+#: by: https://www.grossenhain.de/newsleser/wie-geht-es-mit-der-bruecke-an-der-b101-weiter.html
 #: osm_watch: way id="779202212" version="6"
-#: last_checked: 2024-12-18 (berliner-zeitung)
+#: last_checked: 2025-06-14 (indoor research)
 #: check_frequency: 180d
+#: next_check: 2027-01-01 (mdr: mögliche Brückenfreigabe)
 B101 südlich von Großenhain: Brücke gesperrt	2::inwork 21254,-125506 21046,-125633
 # 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

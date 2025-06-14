@@ -194,6 +194,7 @@ Spreewaldplatz	F:P 12292,10374 12243,10274 12341,10218 12292,10374
 #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/sicherheitszentrale-gastro-zaun-und-mehr-so-soll-der-gorlitzer-park-zum-park-mit-regeln-werden-13743046.html
 #: by: https://entwicklungsstadt.de/umzaeunung-des-goerlitzer-parks-bauauftrag-erteilt-sicherheitslage-angespannt/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/umstrittene-park-schliessung-in-kreuzberg-der-kampf-um-den-gorli-zaun-hat-begonnen-13793653.html
+#: by: https://checkpoint.tagesspiegel.de/telegramm/1F6m7Twz6LihPniZCgFHP0 (Zaunbau ab 23.06.2025)
 #: XXX Werden die Wege nachts (genaue Schließzeiten?) abgeschlossen sein? Oder wird das nur situationsbedingt (wann?) passieren?
 #: XXX Neue Lampen werden geplant -> nolighting-Einträge ggfs. prüfen.
 #: priority: #A
@@ -1541,7 +1542,7 @@ Franz-Mehring-Platz	F:P 12822,12067 12758,11915 12788,11898 12891,12008 12822,12
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_52_4789_4920_online.pdf (Benennung einer öffentlichen Grünanlage, tatsächlich ohne Bindestrich?)
 #: osm_watch: way id="759545001" version="4"
 #: XXX neuer Name: "Riwne Platz" (tatsächlich ohne Bindestrich?); bei osm schon eingetragen mit start_date:name=2023-11-24, hier mit Bindestrich
-#: last_checked: 2025-04-30
+#: last_checked: 2025-06-14
 #: check_frequency: 60d
 	F:P 13546,15464 13604,15430 13540,15329 13479,15361 13546,15464
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_30_3225_3284_online.pdf (Widmung als Grünanlage)
@@ -1609,14 +1610,13 @@ Borsigplatz	F:P -957,23810 -967,23798 -1007,23835 -983,23859 -943,23824 -957,238
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6940 (Vorlage zur Kenntnisnahme: Benennungsabsicht)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/RwVzirf1IMlETphjLEaxIntIfnlBhqYMk7gNl8iL/NQdabeQs/67-Dateien/image004.png
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7029 (Vorlage zur Kenntnisnahme: Benennung, weiterhin ohne Bindestrich)
-#: XXX vorgeschlagener Name: Rapoport Park (ohne Bindestrich?)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_18_1141_1188_online.pdf (Benennung, ohne Bindestrich)
 #: osm_watch: way id="43512780" version="4"
-#: also_indoor: search Rapoport_Park
-#: last_checked: 2025-04-25 (Amtsblatt)
-# REMOVED --- #: check_frequency: 90d
-#: check_frequency: 30d (Frist)
-	F:P 9785,19807 9864,19793 9878,19741 9813,19721 9785,19807
+#: XXX Wird hier noch ausgeschildert? Mit oder ohne Bindestrich?
+#: last_checked: 2025-06-12 (mapillary)
+#: check_frequency: 180d
+#: oldname: -20250425: namenslos>
+Rapoport Park	F:P 9785,19807 9864,19793 9878,19741 9813,19721 9785,19807
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_50_3591_3794_online.pdf
 Grünanlage Treue-Herzen-Pfuhl	F:P 17608,19054 17654,19052 17659,19175 17547,19190 17549,19120 17610,19116 17608,19054

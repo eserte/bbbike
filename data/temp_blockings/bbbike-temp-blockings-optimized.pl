@@ -4245,13 +4245,14 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20) existiert das Radfahrer-verboten-Schild nicht mehr
-#: last_checked: 2025-05-20 (mapillary)
-Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
+#: last_checked: 2025-06-14
+# REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
+Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="40"
 #: osm_watch: way id="580507889" version="35"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-04-18 (youtube)
+#: last_checked: 2025-06-14
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -4260,7 +4261,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 ',
          'from' => undef,
          'id' => 3007,
-         'text' => 'Treskowallee: Richtung Süden für Radfahrer verboten (Anlieger frei); Richtung Norden Gehweg mit Verschwenkungen und Bordsteinen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; Bauarbeiten bis Ende 2025',
+         'text' => 'Treskowallee: Richtung Norden Gehweg mit Verschwenkungen und Bordsteinen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; Bauarbeiten bis Ende 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4881,6 +4882,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: by: https://www.presseportal.de/pm/163061/5863501 (Projekt P1; Fertigstellung bis Anfang 2027)
 #: by: https://www.quantum.ag/presseartikel/quantum-uebernimmt-berliner-projekt-p1
 #: by: https://entwicklungsstadt.de/zwischen-stillstand-und-neustart-wie-es-um-berlins-signa-projekte-steht/ (weiterhin bis Anfang 2027)
+#: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="12"
@@ -5539,7 +5541,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2025-05-20 vvv
+#: last_checked: 2025-06-13 (bahninfo-forum) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-27 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -5922,7 +5924,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-14
 #: check_frequency: 30d
 #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6122,7 +6124,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #	q4::inwork 2484,25984 2490,26126 2531,26251
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2025-04-02 (mapillary)
+#: last_checked: 2025-06-11 (mapillary)
 #: next_check: 2025-06-30 (BA-Seite)
 Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,25666 2502,25544 2506,25398 2510,25350
 ',
@@ -6299,9 +6301,9 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 #: osm_watch: way id="37861386" version="27"
 #: osm_watch: way id="1231148375" version="5"
 #: priority: #B
-#: last_checked: 2025-04-11 (okas)
+#: last_checked: 2025-06-13 (bahninfo-forum)
 #: check_frequency: 120d
-#: next_check: 2025-06-16 (DB website: nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag)
+#: next_check: 2025-06-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
 ',
@@ -6495,7 +6497,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: note: Hauffstr.: Stand Mitte Mai 2025: Durchfahrt an einem Samstag (außerhalb der Arbeitszeiten?) problemlos möglich, aber offiziell nur der Durchgang zum Sport/Spielplatz möglich
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-14
 #: check_frequency: 21d
 #: next_check: 2025-06-30 (DB-Mail)
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -7363,7 +7365,16 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::temp::play 7177,16715 7150,16760 7144,16781 7147,16800
+',
+         'from' => 1749074400,
+         'id' => 4072,
+         'recurring' => 1,
+         'text' => 'Armenische Str.: zwischen Ungarnstr. und Sackgassenende am 1. und 3. Freitag im Monat zwischen 15:00 und 18:00 Uhr temporäre Spielstraße, Juni bis September',
+         'type' => 'handicap',
+         'until' => 1758297600
+       },
        undef,
        undef,
        undef,
@@ -7411,6 +7422,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: by: https://www.deutsches-architekturforum.de/thread/14764-reinickendorf-kleinere-projekte/?postID=766343#post766343 (Quartier Alt-Wittenau)
 #: by: https://www.gesobau.de/wohnungsbau/quartier-alt-wittenau/ (Bauphase bis Sommer 2026)
 #: by: https://entwicklungsstadt.de/baufortschritt-in-alt-wittenau-gesobau-quartier-nimmt-gestalt-an/ (Fertigstellung Sommer 2026)
+#: last_checked: 2025-06-11 (mapillary)
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 5476,20372 5801,20339
 ',
@@ -7736,7 +7748,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="1119255054" version="8"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-05-16
+#: last_checked: 2025-06-14
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -8241,10 +8253,10 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
 #: by: https://entwicklungsstadt.de/baustart-in-tempelhof-neues-klinikgebaeude-fuer-das-st-joseph-krankenhaus/ (bis Ende 2028, Verzögerungen möglich)
 #: note: Gesperrter Bereich ca. 80m. Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
-#: also_indoor: traffic (B,T)
+#: also_indoor: traffic (B,T,G[falsch])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-05-17
+#: last_checked: 2025-06-14 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -8512,15 +8524,17 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-02-28 --- #: check_frequency: 10d --- #: next_check: 2025-03-28 (Halteverbotsschilder) ---	2::inwork 17587,9655 17668,9632 17777,9649
 # REMOVED --- #: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert --- q2::inwork 18266,9853 18066,9770 17920,9698
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
+# REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: Auch der Gehwegbereich ist gesperrt
-#: last_checked: 2025-06-04
+#: also_indoor: traffic (T)
+#: last_checked: 2025-06-14
 #: check_frequency: 14d
-Ontarioseestr.	2::inwork 18339,10048 18411,10037
+#: next_check: 2025-07-03
+	2::inwork 17471,9688 17587,9655
 ',
          'from' => undef,
          'id' => 4270,
-         'text' => 'Ontarioseestr.: Straße gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang Juli 2025',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8882,15 +8896,16 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        {
          'data' => '#: note: Halteverbotsschilder bis 14.06.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2025-06-13 (traffic)
-#: next_check: 2025-06-14
+#: last_checked: 2025-06-14 (traffic)
+#: check_frequency: 7d (traffic)
+# REMOVED --- #: next_check: 2025-06-14
 	q4::inwork 6351,9335 6446,9328
 ',
          'from' => 1745747126,
          'id' => 4314,
-         'text' => 'Rosenheimer Str.: Fahrbahn zwischen Berchtesgadener Str. und Martin-Luther-Str. gesperrt, voraussichtlich bis 14.06.2025',
+         'text' => 'Rosenheimer Str.: Fahrbahn zwischen Berchtesgadener Str. und Martin-Luther-Str. gesperrt, voraussichtlich bis 14.06.2025, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1749938400
+         'until' => undef
        },
        undef,
        {
@@ -9086,7 +9101,7 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
        undef,
        {
          'data' => '#: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten)
-#: last_checked: 2025-06-09
+#: last_checked: 2025-06-14
 #: check_frequency: 30d
 #: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -9109,12 +9124,14 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
        },
        {
          'data' => '#: also_indoor: traffic (none)
-#: last_checked: 2025-05-17
-	q4::inwork 16915,11634 16977,11769
+#: last_checked: 2025-06-14
+#: check_frequency: 120d
+#: next_check: 2026-03-31 (Halteverbotsschilder)
+	q4::inwork 16915,11634 16957,11726
 ',
          'from' => undef,
          'id' => 4340,
-         'text' => 'Wönnichstr.: Fahrbahn zwischen Einbecker Str. und Irenenstr. gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Wönnichstr.: Fahrbahn zwischen Einbecker Str. und Irenenstr. gesperrt, voraussichtlich bis Frühjahr 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9320,7 +9337,7 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=779073#post779073 (nicht eindeutig; durchgestrichenes Radfahrer-frei-Schild)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-11 (mapillary)
 #: check_frequency: 90d
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
 ',

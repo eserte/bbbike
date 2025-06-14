@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-14
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -31,13 +31,13 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-06-10
+#: last_checked: 2025-06-14
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-06-14 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
@@ -117,13 +117,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage)
-#: note: zwischenzeitlich war an der Frankfurter Allee eine Fahrgasse frei (zumindest für Radfahrer benutzbar), mittlerweile wieder über die gesamte Fahrbahnbreite abgesperrt
-#: also_indoor: traffic (none)
-#: last_checked: 2025-06-08
-#: check_frequency: 10d
-Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
-# 
+# REMOVED (fertig) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage) --- #: note: zwischenzeitlich war an der Frankfurter Allee eine Fahrgasse frei (zumindest für Radfahrer benutzbar), mittlerweile wieder über die gesamte Fahrbahnbreite abgesperrt --- #: also_indoor: traffic (none) --- #: last_checked: 2025-06-08 --- #: check_frequency: 10d --- Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
 # REMOVED --- #: by: https://nitter.cz/VIZ_Berlin/status/1660486892675301376#m (bis 26.05.2023) --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndlcWpYQ1gwQUFOOUg4LmpwZw== --- #: next_check: 2023-05-26 --- #: valid: -20230526 --- Kynaststr.: Fahrbahn hinter der Marktstr./Boxhagener Str. gesperrt	q3::inwork; 14988,11130 14950,11049
@@ -487,7 +481,7 @@ Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,129
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise]) vvv
-#: last_checked: 2025-06-10 (osm) vvv
+#: last_checked: 2025-06-12 (architektur-urbanistik) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="41"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -738,10 +732,10 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Oberschöneweide ###
 # 
 #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
-#: last_checked: 2025-06-07 vvv
+#: last_checked: 2025-06-14 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-06-27 vvv
-Rummelsburger Str.: Engstellen durch unnötige Absperrungen, einige Fußgänger	q2::inwork; 18010,7137 17847,7356
+# REMOVED (hier kommt man eigentlich wieder gut vorbei) --- Rummelsburger Str.: Engstellen durch unnötige Absperrungen, einige Fußgänger	q2::inwork; 18010,7137 17847,7356
 An der Wuhlheide: Engstellen durch unnötige Absperrungen, einige Fußgänger	q1::inwork; 18010,7137 18225,7004
 # REMOVED (ab 2025-06-06 14:00 Uhr wird der Kfz-Verkehr möglich sein, dann möglicherweise auch für den Radverkehr keine Einschränkungen mehr) --- Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18010,7137 17990,7115
 # REMOVED --- Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 17990,7115 18010,7137
@@ -1045,16 +1039,18 @@ Boddinstr.: Sperrung an der Karl-Marx-Str.	q3::inwork 12368,8356 12582,8408
 #: note: eigentlich gibt es auch Beschränkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt möglich; mittlerweile (Mitte Mai 2025) ist ein Abschnitt der Archenholdstr. gesperrt, Halteverbotsschilder bis 27.5.2025
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-05-17
-#: check_frequency: 45d
-#: next_check: 2025-05-27 (Halteverbotsschilder)
-#: valid: -20250630
-Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 17155,11348
+#: last_checked: 2025-06-14
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-05-27 (Halteverbotsschilder)
+#: next_check: 2025-06-30 (Baustellenschild)
+# REMOVED --- #: valid: -20250630
+# REMOVED --- Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 17155,11348
+Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 # 
 # REMOVED (fast fertig) --- #: last_checked: 2025-04-04 --- #: check_frequency: 21d --- Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-06-05
+#: last_checked: 2025-06-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (BA Lichtenberg)
 #: next_check: 2025-06-30 (infravelo)
@@ -1068,9 +1064,9 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="40"
 #: osm_watch: way id="1193560283" version="9"
-#: last_checked: 2025-06-04
-#: check_frequency: 90d
-#: next_check: 2025-06-30 (Halteverbotsschilder)
+#: last_checked: 2025-06-14
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
@@ -1329,24 +1325,8 @@ Gartenstr. (Weißensee): etwa 40m der Fahrbahn sind gesperrt	q3::inwork 14791,164
 # 
 # REMOVED (vorfristig fertig) --- #: priority: #A --- #: last_checked: 2025-06-05 --- #: check_frequency: 60d --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Puccinistr.: Fahrbahn wegen Bauarbeiten gesperrt, südlicher Gehweg für Radfahrer frei	q2::inwork 13700,15501 13776,15546
 # REMOVED --- #: note: Endedatum laut Halteverbotsschilder --- #: last_checked: 2024-07-16 --- #: next_check: 2024-07-15 --- #: valid: -20240715 --- Börnestr.: Bauarbeiten, einige Meter der Fahrbahn sind gesperrt	q3::inwork 13214,15830 13263,15930
-# 
-#: also_indoor: traffic (ex-G,B,ex-W,T)
-#: note: Endedatum laut Halteverbotsschilder; Länge ca. 50-60m, mittlerweile Halteverbote bis 29.05.2025
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/hosemannstra%C3%9Fe-ecke-lehderstra%C3%9Fe-neubauten.1441/#post-23500
-#: by: https://www.frankschiffer.com/projekte/tor-zur-lehderstrasse/ (Fertigstellung 2024)
-#: osm_watch: way id="1170355847" version="1"
-#: osm_watch: way id="1170355851" version="1"
-#: last_checked: 2025-04-30
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2025-09-25 (Halteverbotsschilder)
-# REMOVED --- #: valid: -20241220
-Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
-# 
-#: last_checked: 2025-04-30
-#: next_check: 2025-06-13 (Halteverbotsschilder)
-#: valid: -20250613
-Streustr.: Straßenbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q3::inwork 12890,16121 12675,16214
-# 
+# REMOVED (Fahrbahn offen) --- #: also_indoor: traffic (ex-G,B,ex-W,T) --- #: note: Endedatum laut Halteverbotsschilder; Länge ca. 50-60m, mittlerweile Halteverbote bis 29.05.2025 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/hosemannstra%C3%9Fe-ecke-lehderstra%C3%9Fe-neubauten.1441/#post-23500 --- #: by: https://www.frankschiffer.com/projekte/tor-zur-lehderstrasse/ (Fertigstellung 2024) --- #: osm_watch: way id="1170355847" version="1" --- #: osm_watch: way id="1170355851" version="1" --- #: last_checked: 2025-04-30 --- # REMOVED --- #: check_frequency: 120d --- #: next_check: 2025-09-25 (Halteverbotsschilder) --- # REMOVED --- #: valid: -20241220 --- Lehderstr.: Hochbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q2::inwork 12842,16032 12466,16198
+# REMOVED (offen) --- #: last_checked: 2025-04-30 --- #: next_check: 2025-06-13 (Halteverbotsschilder) --- #: valid: -20250613 --- Streustr.: Straßenbauarbeiten, einige Meter der Fahrbahn westlich der Roelckestr. sind gesperrt	q3::inwork 12890,16121 12675,16214
 # REMOVED (Schranken eingetragen, mittlerweile keine Verbotsschilder mehr) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_31_3285_3340_online.pdf (Einziehung von öffentlichen Straßenland) --- #: by: https://www.deutsches-architekturforum.de/thread/13358-wei%C3%9Fensee-ot-von-pankow-kleinere-projekte/?postID=752922#post752922 (angrenzendes Bauvorhaben) --- #: by: https://www.falkenberger134.de/ --- #: XXX Bleibt es bei der ausschließlichen Busfreigabe? Hier gibt es Schranken, sind diese manchmal geschlossen? --- # REMOVED --- #: osm_watch: way id="519370786" version="5" --- #: osm_watch: way id="1169861688" version="6" --- #: osm_watch: note 3678184 5 --- #: osm_watch: way id="1219613564" version="4" --- #: last_checked: 2024-02-02 --- #: check_frequency: 30d --- Falkenberger Str. - Hansastr: Fahrbahn nur für Linienverkehr frei	q4 15832,16846 15866,16823 15875,16816
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13639,16113 13479,16182
 # REMOVED (fertig) --- #: by: https://charlieundderwundergarten.de/ (kein Fertigstellungsdatum) --- # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="1040605739" version="2" --- #: add_fragezeichen: Bis wann dauern die Bauarbeiten an? --- #: XXX laut osm opening_date=2023-12 --- #: last_checked: 2023-12-28 --- #: check_frequency: 30d --- #: next_check: 2023-12-31 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
@@ -5446,6 +5426,8 @@ Loerkesteig: Bordstein	q3 2956,24373 2969,24382
 #: XXX_prog ^^^
 # 
 (Bitterfelder Str./Otto-Rosenberg-Str. - Weg entlang der S-Bahn): enger Trampelpfad	q3 19896,16611 19890,16559
+# 
+(Siegfriedshöfe): Gewerbehof	q3 16801,12197 16745,12213 16665,12218
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

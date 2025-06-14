@@ -302,7 +302,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-14
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -505,7 +505,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20241203-mobilitaetsrat-mitte-protokoll-barrierefrei-entwurf.pdf (Erwähnung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2025-06-08 vvv
+#: last_checked: 2025-06-11 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernen des Projekts) vvv
 #: osm_watch: way id="169459736" version="16"
@@ -1172,7 +1172,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (osm note)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
@@ -1300,7 +1300,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218
 #: by: https://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025) (mittlerweile: 1. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2028 - 4. Quartal 2028) (gelöscht)
 #: by: https://www.stadtrand-nachrichten.de/radwegeausbau-steglitz-zehlendorf-berlin/ (Erwähnung)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
-#: osm_watch: way id="4810830" version="44"
+#: osm_watch: way id="4810830" version="45"
 #: last_checked: 2025-05-29 (mapillary)
 #: check_frequency: 720d
 #: next_check: 2028-12-31
@@ -1790,7 +1790,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblöcken, u.a. Bötzow-Kiez)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/kiezblocks-in-pruefung-winsviertel-boetzowkiez-und-gruene-stadt_a423747
 #: osm_watch: way id="4615063" version="37"
-#: last_checked: 2025-05-16
+#: last_checked: 2025-06-14
 #: check_frequency: 180d
 #: next_check: 2027-09-30 (infravelo)
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -1869,6 +1869,7 @@ Platanenstr.: gut befahrbare Betonplatten	Q1 8710,19550 8484,19401
 Platanenstr.: Asphalt	Q0 9498,19817 9349,19782 9177,19745 8977,19694 8956,19688 8779,19589 8710,19550
 #: next_check_id: PLATANEN-2025
 #: XXX Ist der Asphalt nach den Bauarbeiten besser?
+#: last_checked: 2025-06-12 (mapillary)
 #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung)
 #: corrected_by: srt (passabler Asphalt -> ...)
 Platanenstr.: Asphalt mit einigen Schäden	Q0-; 9498,19817 9824,19910
@@ -6883,7 +6884,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
 #: osm_watch: way id="4689097" version="33"
 #: XXX Wird hier die Fahrbahn saniert?
-#: last_checked: 2025-04-21
+#: last_checked: 2025-06-14
 #: check_frequency: 180d
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
@@ -11009,7 +11010,8 @@ westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinp
 (Erieseering - am Tränkegraben): Parkweg	Q1- 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tränkegraben): Beton	Q0- 17848,11204 17893,11146
 (Zachertstr. - am Tränkegraben): unbefestigt mit Pflasterreihen	Q2+ 17893,11146 17905,11122
-(Zachertstr. - am Tränkegraben): Asphalt	Q0 17905,11122 17924,10964 17915,10866 17900,10730 17892,10713 17870,10619
+#: historical_note: früher: Asphalt Q0
+(Zachertstr. - am Tränkegraben): Asphalt mit Unebenheiten und Schäden	Q1 17905,11122 17924,10964 17915,10866 17900,10730 17892,10713 17870,10619
 (Erieseering - Upstallweg): unbefestigt	Q2+ 18114,10215 18112,10281 18121,10314 18128,10343 18125,10364 18128,10389 18116,10403
 Schwarzmeerstr. [zur Rummelsburger Str.]: Asphalt	Q0 17751,10904 17763,10950 17676,10976
 Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]: Asphalt	Q0 17676,10976 17693,11035 17680,11058
@@ -14173,6 +14175,8 @@ Im Jagen (Grunewald): Kopfsteinpflaster	Q2 1746,5922 1697,5938 1577,5982 1375,61
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.): gut befahrbarer Waldweg	Q1- 1135,22069 1245,22058 1527,22298 1622,22383
 # 
 (Wendenschloßstr. - Zur Nachtheide): Verbundsteinpflaster	Q0- 23019,2296 23121,2320 23091,2444
+# 
+(Siegfriedshöfe): Asphalt und etwas Pflaster	Q1 16801,12197 16745,12213 16665,12218
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -19747,7 +19751,9 @@ Wönnichstr.: Asphalt	Q0 16597,10651 16702,10972
 #: corrected_by: srt (Kopfsteinpflaster -> )
 Wönnichstr.: Asphalt	Q0 16702,10972 16719,11021 16785,11212
 #: confirmed_by: srt (im südlichen Abschnitt)
-Wönnichstr.: Kopfsteinpflaster	Q2 16785,11212 16856,11438 16887,11545 16915,11634 16977,11769
+Wönnichstr.: Kopfsteinpflaster	Q2 16785,11212 16856,11438 16887,11545 16915,11634 16957,11726
+#: corrected_by: srt (Kopfsteinpflaster -> )
+Wönnichstr.: Asphalt	Q0 16957,11726 16977,11769
 #: by: ^^^
 # REMOVED (konnte ich nicht mehr bestätigen, 2011-01) --- #: by: Joerg Polzehl: --- Allee der Kosmonauten: Beton, starke Straßenschäden	Q1; 18234,13500 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467 19059,13474
 # 
@@ -20918,7 +20924,7 @@ Albert-Hößler-Str.: mit Teer verbundene Betonplatten	Q1 16097,11669 16083,11733 
 #: confirmed_by ^^^
 #: confirmed_by: srt:
 #: note: (Kommentar vom Autor) Ausweichmöglichkeit auf breitem Fußweg
-Wotanstr. (Lichtenberg): Kopfsteinpflaster	Q2 16720,12614 16696,12437 16685,12358 16657,12165
+Wotanstr. (Lichtenberg): Kopfsteinpflaster	Q2 16720,12614 16696,12437 16685,12358 16665,12218 16657,12165
 #: by: ^^^
 # 
 #: by: C. Appel:
@@ -32155,7 +32161,7 @@ Johannes-Zoschke-Str.: mäßiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/ausbau-der-rheinpfalzallee-auf-der-kippe_a387334 (Baubeginn 2025?)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/ausbau-der-rheinpfalzallee-sollte-laut-spd-dringend-in-die-investitionsplanung_a391367
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
-#: last_checked: 2025-04-18 (youtube) vvv
+#: last_checked: 2025-06-14 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-03-01 vvv
 #: confirmed_by: srt
