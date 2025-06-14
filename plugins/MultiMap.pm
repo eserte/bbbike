@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.41;
+$VERSION = 2.42;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -409,6 +409,16 @@ sub register {
 	  callback_3_std => sub { showmap_url_overture_maps(@_) },
 	  ($images{OvertureMaps} ? (icon => $images{OvertureMaps}) : ()),
         };
+    if ($is_berlin) {
+	my $default_data = [qw(radverkehrsnetz-vorrangnetz-mapillary-bedarf radverkehrsnetz-vorrangnetz)];
+	$main::info_plugins{__PACKAGE__ . '_TildaMapDe'} =
+	    { name => 'tilda - Radverkehrsnetz',
+	      callback => sub { showmap_tilda_geo_de(@_, data => $default_data) },
+	      callback_3_std => sub { showmap_url_tilda_geo_de(@_, data => $default_data) },
+	      # no icon available
+	      tags => [qw(bicycle)],
+	    };
+    }
     if ($is_berlin && $main::devel_host) {
 	$main::info_plugins{__PACKAGE__ . "_AllTrafficMaps"} =
 	    { name => "All Traffic Maps",
@@ -2626,6 +2636,24 @@ sub showmap_url_overture_maps {
 sub showmap_overture_maps {
     my(%args) = @_;
     my $url = showmap_url_overture_maps(%args);
+    start_browser($url);
+}
+
+######################################################################
+# tilda-geo.de
+
+sub showmap_url_tilda_geo_de {
+    my(%args) = @_;
+    my $data_q = $args{data} ? "&data=" . join(",", @{ $args{data} }) : "";
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://tilda-geo.de/regionen/berlin?map=%s/%s/%s%s&v=2", $scale, $py, $px, $data_q;
+}
+
+sub showmap_tilda_geo_de {
+    my(%args) = @_;
+    my $url = showmap_url_tilda_geo_de(%args);
     start_browser($url);
 }
 
