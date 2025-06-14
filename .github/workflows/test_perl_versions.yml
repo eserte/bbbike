@@ -23,9 +23,9 @@ jobs:
             bbbike_test_skip_mapserver: 1
           - perl_version:               5.16.3-buster
             bbbike_test_skip_mapserver: 1
-          - perl_version:               5.38.2-bookworm
+          - perl_version:               5.38.4-bookworm
             bbbike_test_skip_mapserver: 1
-          - perl_version:               5.40.0-bookworm
+          - perl_version:               5.40.2-bookworm
             bbbike_test_skip_mapserver: 1
           - perl_version:               5.41.13-bookworm
             bbbike_test_skip_mapserver: 1
