@@ -698,6 +698,14 @@ sub action_old_bbbike_data {
     for my $bbbike_ver ('3.16', '3.17', '3.18', 'future') {
 	my $bbbike_ver_dir = "$old_bbbike_data_dir/$bbbike_ver";
 	$d->mkdir($bbbike_ver_dir);
+	my %old_modified;
+	if (open my $fh, "$bbbike_ver_dir/.modified") {
+	    while(<$fh>) {
+		chomp;
+		my($relpath, $mtime, $md5) = split /\t/;
+		$old_modified{$relpath} = [$mtime, $md5];
+	    }
+	}
 	my @new_modified;
 	for my $file (@files) {
 	    my $destfile;
@@ -728,10 +736,15 @@ sub action_old_bbbike_data {
 		    copy_stat $file, $destfile;
 		}
 	    }
-	    # XXX efficiency: read old .modified and recalculate checksum only on changes
-	    my $md5 = $get_md5->($destfile);
-	    my $mtime = $file2md5{$file} eq $md5 ? $file2mtime{$file} : (stat($destfile))[9];
-	    push @new_modified, "data/$file\t$mtime\t$md5";
+	    my $relpath = "data/$file";
+	    if (!$changes && $old_modified{$relpath}) {
+		my($old_mtime, $old_md5) = @{ $old_modified{$relpath} };
+		push @new_modified, "$relpath\t$old_mtime\t$old_md5";
+	    } else {
+		my $md5 = $get_md5->($destfile);
+		my $mtime = $file2md5{$file} eq $md5 ? $file2mtime{$file} : (stat($destfile))[9];
+		push @new_modified, "$relpath\t$mtime\t$md5";
+	    }
 	}
 
 	if ($bbbike_ver_less_than->($bbbike_ver, 3.17)) {
