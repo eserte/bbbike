@@ -4502,7 +4502,7 @@ sub active_temp_blockings_for_date_dialog {
 	BBBike::check_bbbike_temp_blockings::load_file();
 	@future = BBBike::check_bbbike_temp_blockings::return_future();
     }
-    use Data::Dumper;warn Dumper \@future;
+    #use Data::Dumper;warn Dumper \@future;
 
     my $t = $top->Toplevel(-title => "Datum");
     $t->transient($top) if $transient;
