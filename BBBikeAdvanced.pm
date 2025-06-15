@@ -55,6 +55,7 @@ sub start_ptksh {
     my $perldir;
     TRY: {
 	# "local" probably does not work here, we're in a MainLoop...
+	no warnings 'once';
 	$Data::Dumper::Deparse = 1; # if I need a "ptksh" window, then I need more diagnostics!
 	$Data::Dumper::Sortkeys = 1;
 
