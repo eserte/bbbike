@@ -49,7 +49,7 @@ EOF
 
 sub usage_gui (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver bullseye|...] [--src local|github] [--bbbike-prog ...] [--bbbike-args "..."] [--branch ...]
+usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver bullseye|...] [--src local|github|github-fixed|github-archive|bbbike...deb] [--bbbike-prog ...] [--bbbike-args "..."] [--branch ...]
 	 [--no-feature-pdf] [--no-feature-svg] [-no-feature-remote]
 	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt] [--docker-image owner/name:tag] [--share-data-osm] [--hack-writable-data]
 
@@ -187,6 +187,8 @@ sub gui {
 
     my $docker_image = $opt{'docker-image'} // "$opt{dist}:$opt{distver}";
 
+    my $switched_user;
+
     my $dockerfile = <<EOF;
 FROM $docker_image
 EOF
@@ -198,7 +200,7 @@ EOF
     if ($^O ne 'MSWin32') {
 	my $uid = $<;
 	$username = (getpwuid($uid))[0];
-	if ($opt{distver} =~  m{^(noble|24\.04)$}) { # no adduser installed in default ubuntu:24.04 image
+	if ($opt{distver} =~  m{^(noble|24\.04|wheezy)$}) { # no adduser installed in default ubuntu:24.04 and debian:wheezy image
 	    $dockerfile .= <<"EOF";
 RUN useradd --non-unique --shell /bin/bash --uid $uid --comment '' --create-home $username
 RUN passwd -d $username
@@ -210,7 +212,7 @@ EOF
 	}
     }
 
-    if ($opt{src} =~ m{^(github|local)$}) {
+    if ($opt{src} =~ m{^(github|github-fixed|github-archive|local)$}) {
 	my @packages = qw(perl-tk);
 	my @optional_packages = ();
 	if ($opt{'feature-pdf'}) {
@@ -238,9 +240,12 @@ EOF
 	    # only capable displaying simple websites.
 	    push @optional_packages, qw(dillo);
 	}
-	if ($opt{src} eq 'github') {
+	if ($opt{src} =~ m{^(github|github-fixed)$}) {
 	    push @packages, 'git';
+	} elsif ($opt{src} eq 'github-archive') {
+	    push @packages, 'curl';
 	}
+
 	$dockerfile .= <<"EOF";
 RUN apt-get update && apt-get install -qqy @packages
 EOF
@@ -251,20 +256,42 @@ RUN apt-get install -qqy $optional_package || true
 EOF
 	    }
 	}
-	if ($opt{src} eq 'github') {
+	if ($opt{src} =~ m{^(github|github-fixed|github-archive)$}) {
 	    $dockerfile .= <<'EOF';
 RUN mkdir bbbike
 EOF
 	    if (defined $username) {
 		$dockerfile .= <<"EOF";
 RUN chown $username bbbike
+USER $username
 EOF
+		$switched_user = 1;
 	    }
 	    my $branch_args = '';
 	    if ($opt{branch}) {
 		$branch_args = " --branch $opt{branch}";
 	    }
-	    $docker_cmd = "git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args && bbbike/$opt{'bbbike-prog'} $opt{'bbbike-args'}";
+	    if ($opt{src} eq 'github-fixed') {
+		$dockerfile .= <<EOF;
+RUN git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args
+EOF
+		$docker_cmd = "bbbike/$opt{'bbbike-prog'} $opt{'bbbike-args'}";
+	    } elsif ($opt{src} eq 'github-archive') {
+		my $ref;
+		if (!$opt{branch}) {
+		    $ref = "heads/master";
+		} elsif ($opt{branch} =~ m{^(RELEASE_|v)\d+_\d+}) { # guessing: looks like a tag
+		    $ref = "tags/$opt{branch}";
+		} else {
+		    $ref = "heads/$opt{branch}";
+		}
+		$dockerfile .= <<EOF;
+RUN curl -s -L https://github.com/eserte/bbbike/archive/refs/$ref.tar.gz | tar xz --strip-components=1 -C bbbike
+EOF
+		$docker_cmd = "bbbike/$opt{'bbbike-prog'} $opt{'bbbike-args'}";
+	    } else {
+		$docker_cmd = "git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args && bbbike/$opt{'bbbike-prog'} $opt{'bbbike-args'}";
+	    }
 	} elsif ($opt{src} eq 'local') {
 	    $docker_cmd = "/bbbike/$opt{'bbbike-prog'} $opt{'bbbike-args'}";
 	}
@@ -298,7 +325,7 @@ EOF
 ENV DOCKER_BBBIKE 1
 EOF
 
-    if (defined $username) {
+    if (defined $username && !$switched_user) {
 	$dockerfile .= <<"EOF";
 USER $username
 EOF
@@ -1385,6 +1412,56 @@ a starman installation on the host C<bbbike-pps-jessie>:
     $BBBike::BBBIKE_UPDATE_WWW='http://bbbike-pps-jessie:5000/BBBike';
 
 Now you can use "Einstellungen > Daten-Update über das Internet".
+
+=head2 Run the GUI program using specified GitHub versions, branches, or commits
+
+Run with the latest version of BBBike on GitHub:
+
+    ./miscsrc/docker-bbbike gui --src github
+
+Note that the C<git-clone> is done during C<docker-run> time, so the
+contents are fetched at every invocation, but it's also guaranteed
+that the contents are fresh.
+
+Run with an arbitrary branch or tag:
+
+    ./miscsrc/docker-bbbike gui --src github-fixed --branch RELEASE_3_16 --dist debian --distver wheezy
+
+The C<git-clone> step is run during C<docker-build> time, so the
+contents are fixed in the docker image, which means faster startup
+time. Not suitable for movable branches or master.
+
+Run with an arbitrary branch or tag without using C<git-clone>:
+
+    ./miscsrc/docker-bbbike gui --src github-archive --branch RELEASE_3_16 --dist debian --distver wheezy
+
+The C<github-archive> method uses a C<curl> call to fetch a tarball
+which is immediately extracted. This means that the checkout does not
+have a C<.git> directory which may be benefitial in some cases (e.g.
+testing the data update functionality, which refuses to work if
+there's a C<.git> directory detected). As the C<github-fixed> method
+this is not suitable for movable branches or master.
+
+Here's a matrix overview of these options:
+
+ +-------------------+---------------------+----------------------+----------------------+
+ | Feature           | --src github        | --src github-fixed   | --src github-archive |
+ +-------------------+---------------------+----------------------+----------------------+
+ | Content fetching  | At docker-run       | At docker-build      | At docker-build      | 
+ |                   | (every invocation)  | (fixed in image)     | (fixed in image)     |
+ +-------------------+---------------------+----------------------+----------------------+
+ | Contents freshness| Always fresh        | Fixed, not fresh     | Fixed, not fresh     |
+ +-------------------+---------------------+----------------------+----------------------+
+ | Startup speed     | Slower              | Faster               | Faster               |
+ +-------------------+---------------------+----------------------+----------------------+
+ | .git directory    | Yes                 | Yes                  | No                   |
+ +-------------------+---------------------+----------------------+----------------------+
+ | Suitable for      | Movable branches,   | Fixed branches/tags  | Fixed branches/tags  |
+ |                   | master              |                      |                      |
+ +-------------------+---------------------+----------------------+----------------------+
+ | Data update       | Does not work       | Does not work        | Works                |
+ | functionality     |                     |                      |                      |
+ +-------------------+---------------------+----------------------+----------------------+
 
 =head1 SEE ALSO
 
