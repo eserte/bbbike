@@ -229,6 +229,7 @@ sub BBBikeGPS::draw_gpsman_data {
     require Data::Dumper;
     require BBBikeUtil;
     require Tk::Ruler;
+    require File::Glob;
 
     my $max_gap = DEFAULT_MAX_GAP;
     # continuous colors
@@ -392,6 +393,19 @@ sub BBBikeGPS::draw_gpsman_data {
 		    $l_then[5] == $l_now[5]) {
 		    # Current.gpx is from today
 		    return $f;
+		}
+	    }
+	    {
+		# try harder: check subdirectories under misc/gps_data
+		my $heute1 = POSIX::strftime("%Y-%m-%d", localtime);
+		my $heute2 = POSIX::strftime("%Y%m%d", localtime);
+		for my $f (
+		    File::Glob::bsd_glob("$gpsman_data_dir/*/*$heute1*.trk"),
+		    File::Glob::bsd_glob("$gpsman_data_dir/*/*$heute2*.trk"),
+		    File::Glob::bsd_glob("$gpsman_data_dir/*/*$heute1*.gpx"),
+		    File::Glob::bsd_glob("$gpsman_data_dir/*/*$heute2*.gpx"),
+		) {
+		    return $f if -r $f;
 		}
 	    }
 	    undef;
