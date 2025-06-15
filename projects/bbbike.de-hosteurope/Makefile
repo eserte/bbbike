@@ -221,6 +221,7 @@ TARGET=bbbike.hosteurope.herceg.de
       make(automatic-deployment-temp-blockings) || \
       make(automatic-deployment--check-prerequisites) || \
       make(after-deployment-set-tags) || \
+      make(check-pps) || \
       make(deploy-pps) || \
       make(test-pps) || \
       make(test-on-pps-full) || \
@@ -260,7 +261,7 @@ all:
 ######################################################################
 # Top level targets
 check:
-	${RSYNC} --dry-run ${RSYNC_ARGS} ${RSYNC_SRCDEST}
+	${RSYNC} -rl --dry-run --itemize-changes ${RSYNC_ARGS} ${RSYNC_SRCDEST}
 
 clean-cache-files-on-remote:
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
@@ -410,6 +411,9 @@ deploy-temp-blockings:	check-temp-blockings-integrity-pre \
 			prepare-bbbike-dist-data-temp-blockings-dir \
 			check-temp-blockings-integrity \
 			rsync-temp-blockings
+
+check-pps:
+			${MAKE} check TARGET=bbbike-pps-jessie
 
 test-pps:
 			${MAKE} test TARGET=bbbike-pps-jessie
