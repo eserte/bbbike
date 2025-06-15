@@ -11337,7 +11337,7 @@ sub activate_temp_blockings {
 	} else {
 	    $current_temp_blockings_ms = $ms;
 	    $current_temp_blockings_net = StrassenNetz->new($ms);
-	    $current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1);
+	    $current_temp_blockings_net->make_net_cat(-onewayhack => 1, -net2name => 1, -usecache => 0);
 	    $current_temp_blockings_net->make_sperre($ms, Type => ['wegfuehrung']);
 	    print STDERR "Aktuelle Sperrungen: " . join(", ", $ms->dependent_files) . "\n" if $verbose;
 	    add_temp_blockings_to_net();
