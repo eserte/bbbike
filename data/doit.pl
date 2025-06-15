@@ -653,24 +653,11 @@ sub action_old_bbbike_data {
 	  files     => qr{^(strassen|landstrassen|landstrassen2)$},
 	  action    => sub {
 	      my($src_file, $dest_file) = @_;
-	      if (_need_rebuild $dest_file, $src_file, $0) {
-		  open my $fh, '<', $src_file
-		      or error "Can't open $src_file: $!";
-		  my $changes = $d->file_atomic_write($dest_file,
-						      sub {
-							  my $ofh = shift;
-							  while(<$fh>) {
-							      s{\tNH }{\tN };
-							      print $ofh $_;
-							  }
-						      }, check_change => 1);
-		  if (!$changes) {
-		      $d->touch($dest_file); # so it's not rebuilt every time
-		  }
-		  $changes;
-	      } else {
-		  0;
-	      }
+	      _convert_bbd_line_by_subs(
+		  $d,
+		  $src_file, $dest_file,
+		  sub { s{\tNH }{\tN }; }
+	      );
 	  },
 	 },
 
@@ -759,6 +746,30 @@ sub action_old_bbbike_data {
 
 	$d->write_binary("$bbbike_ver_dir/.modified",
 			 join("\n", @new_modified) . "\n");
+    }
+}
+
+sub _convert_bbd_line_by_subs {
+    my($d, $src_file, $dest_file, @subs) = @_;
+    if (_need_rebuild $dest_file, $src_file, $0) {
+	open my $fh, '<', $src_file
+	    or error "Can't open $src_file: $!";
+	my $changes = $d->file_atomic_write($dest_file,
+					    sub {
+						my $ofh = shift;
+						while(<$fh>) {
+						    for my $sub (@subs) {
+							$sub->();
+						    }
+						    print $ofh $_;
+						}
+					    }, check_change => 1);
+	if (!$changes) {
+	    $d->touch($dest_file); # so it's not rebuilt every time
+	}
+	$changes;
+    } else {
+	0;
     }
 }
 
