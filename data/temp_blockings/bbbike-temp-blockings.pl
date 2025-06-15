@@ -31033,6 +31033,7 @@ EOF
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...) (bis 26.03.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.37619,52.425695,31.03.2025,09:00 (Baustellenampel in der Daimlerstr., bis 30.04.2025) (inaktiv)
+#: source_id: viz2021:13.374437,52.426331,16.06.2025,07:00 (Fahrbahnsanierung Daimlerstr., bis 21.06.2025)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -31605,15 +31606,15 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: next_check_id: MUENSTERBERGERWEG-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert? --- #: last_checked: 2020-10-31 --- #: check_frequency: 120d --- #: next_check: 2021-12-31
 #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
-#: also_indoor: traffic (B,T)
+#: also_indoor: traffic (ex-B,ex-T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-06-04 (traffic) vvv
+#: last_checked: 2025-06-14 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
-# REMOVED --- #: next_check: 2024-12-15 (Halteverbotsschilder) vvv
+#: next_check: 2025-06-14 (traffic) vvv
 Münsterberger Weg	2::inwork 24029,11363 24172,11320
 Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
 Münsterberger Weg	q3::inwork 24029,11363 23883,11416
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -43892,6 +43893,7 @@ EOF
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
+#: source_id: viz2021:13.620312,52.523169,16.06.2025,10:00 (nach Norden gewandert, bis 04.07.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,re-G)
@@ -43901,13 +43903,13 @@ EOF
 #: last_checked: 2025-06-11 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 14d (traffic) vvv
-# REMOVED --- #: next_check: 2025-06-11 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-06-16 (VIZ-Verkehrsmeldung) vvv
 #: note: nur wenige Meter
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 # REMOVED (nicht (mehr?)) --- Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
 Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 24775,13218 24969,13129
 Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -45237,7 +45239,7 @@ EOF
 #: osm_watch: note 4383533 4
 #: osm_watch: way id="37948631" version="9"
 #: also_indoor: traffic (ex-H,G,B,T,A,ex-W)
-#: last_checked: 2025-06-04 (traffic)
+#: last_checked: 2025-06-14 (traffic)
 #: check_frequency: 14d (traffic + altlandsberg website)
 #: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
@@ -45500,7 +45502,7 @@ EOF
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-06-06 vvv
+#: last_checked: 2025-06-14 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -46975,7 +46977,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
-#: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr)
+#: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
 #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt
 Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025
@@ -47520,7 +47522,7 @@ EOF
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
 #: note: nächste Sperrung: mehrere mit "Termin folgt"
-#: next_check: 2025-06-16 (gibt es eine nächste Sperrung?)
+#: next_check: 2025-06-20 (gibt es eine nächste Sperrung?)
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025)
 #: source_id: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraßenregelung in der Radickestraße?)
@@ -47623,21 +47625,18 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025) (inaktiv)
 #: source_id: viz2021:13.285979,52.505083,02.06.2025,07:00 (bis 13.06.2025) (inaktiv)
-#: source_id: adac:798121028 (bis voraussichtlich 13.06.2025)
+#: source_id: adac:798121028 (bis voraussichtlich 13.06.2025) (inaktiv)
 #: note: an der Kantstr. steht ein Sackgassenschilder, Fußgänger/Radfahrer frei
 	q4::inwork 2493,10675 2468,10780
 # REMOVED (im nördlichen Abschnitt nicht) ---	q4::inwork 2468,10780 2361,10941 2340,11056
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1749936767, # undef, # XXX
        text  => 'Hampstedtstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (T)
-#: last_checked: 2025-06-04 (traffic)
-#: check_frequency: 14d
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-T) --- #: last_checked: 2025-06-14 (traffic) --- #: check_frequency: 14d
 	q4::inwork 1532,2921 1641,2914
 EOF
      },
@@ -47655,7 +47654,7 @@ EOF
 #: osm_watch: note 4544910 5
 #: osm_watch: note 4544909 3
 #: osm_watch: note 4544105 3
-#: last_checked: 2025-06-04 (traffic)
+#: last_checked: 2025-06-14 (traffic)
 #: check_frequency: 14d
 	q3::inwork 5280,5714 5276,5622 5274,5557
 EOF
@@ -47820,6 +47819,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025)
+#: note: Sackgassenschild an der Gustav-Adolf-Str. zeigt nur "Fußgänger frei" an
 	q3::inwork 13511,17311 13754,17133
 EOF
      },

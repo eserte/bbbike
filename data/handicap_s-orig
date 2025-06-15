@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-15
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -7287,14 +7287,14 @@ Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 # 
 #: by: Kay Leonhardt:
 #: confirmed_by: srt
-Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4659,3065
+Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
 #: next_check_id: BAEKEBRUECKE-2022
 #: XXX: Wobei: bei der Sperrung des Teltowkanaluferwegs war hier die offizielle Umleitung für Fußgänger und Radfahrer
 #: next_check: 2025-06-17 vvv
 #: valid: !20250617-20251219
-Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
+Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4659,3065
 #: valid: 20250617-20251219
-Eduard-Spranger-Promenade: Grünanlage, aber möglicherweise offizielle Umleitung für Radverkehr	q3 4317,2638 4659,3065
+Eduard-Spranger-Promenade: Grünanlage, aber möglicherweise offizielle Umleitung für den Radverkehr	q2 4317,2638 4659,3065
 #: next_check ^^^
 # 
 #: by: Karsten Denkler vvv
