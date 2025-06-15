@@ -602,7 +602,8 @@ prepare-bbbike-dist-prog-bbbike-html:
 prepare-bbbike-dist-data:	prepare-bbbike-dist-data-datadir \
 				prepare-bbbike-dist-data-datadir-additional \
 				prepare-bbbike-dist-data-temp-blockings-dir \
-				prepare-bbbike-dist-data-teasers
+				prepare-bbbike-dist-data-teasers \
+				prepare-bbbike-dist-old-bbbike-data
 
 # Usually data/* is already hardlinked against the originals, so
 # no additional copying for data/* is necessary
@@ -625,6 +626,10 @@ prepare-bbbike-dist-data-temp-blockings-dir:
 prepare-bbbike-dist-data-teasers:
 	rm -f ${CURDIR}/cgi-bin/bbbike-teaser.pl
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike-teaser.pl
+
+prepare-bbbike-dist-old-bbbike-data:
+	rsync -a --itemize-changes --delete ${BBBIKE_ROOT_DIR}/tmp/old-bbbike-data/ \
+	    ${CURDIR}/BBBike/tmp/old-bbbike-data/
 
 prepare-mapserver-dist:	prepare-mapserver-dist-pre \
 			prepare-mapserver-dist-main \

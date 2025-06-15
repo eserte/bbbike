@@ -9,7 +9,10 @@ public/mapserver/brb/tmp/**
 htdocs/mapserver/brb/xxx-*.map
 public/mapserver/brb/xxx-*.map
 BBBike/tmp/berlin*
-BBBike/tmp/*
++ BBBike/tmp/
++ BBBike/tmp/old-bbbike-data/
++ BBBike/tmp/old-bbbike-data/**
+- BBBike/tmp/**
 routopedia/**
 etc/httpd*conf
 etc/brb.map-localinc
