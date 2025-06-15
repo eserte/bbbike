@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -51,7 +51,7 @@ sub usage_gui (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver bullseye|...] [--src local|github] [--bbbike-prog ...] [--bbbike-args "..."] [--branch ...]
 	 [--no-feature-pdf] [--no-feature-svg] [-no-feature-remote]
-	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt] [--docker-image owner/name:tag] [--share-data-osm]
+	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt] [--docker-image owner/name:tag] [--share-data-osm] [--hack-writable-data]
 
 Note that --install-suggests would install quite a lot...
 EOF
@@ -277,9 +277,21 @@ WORKDIR /tmp
 RUN apt-get update
 RUN sh install-deb $add_apt_args ./$base_src
 EOF
+	if ($opt{'hack-writable-data'}) {
+	    delete $opt{'hack-writable-data'};
+	    if (defined $username) {
+		$dockerfile .= <<EOF;
+RUN chown -R $username /usr/lib/BBBike/data
+EOF
+	    }
+	}
 	$docker_cmd = "$opt{'bbbike-prog'} $opt{'bbbike-args'}";
     } else {
 	usage "Invalid --src value '$opt{src}', only 'github', 'local' or a path to a .deb are possible";
+    }
+
+    if ($opt{'hack-writable-data'}) {
+	error "--hack-writable-data works only with --src *.deb";
     }
 
     $dockerfile .= <<'EOF';
@@ -1098,6 +1110,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'invalidate-apt' => 0,
 	       'docker-image' => undef,
 	       'share-data-osm' => 0,
+	       'hack-writable-data' => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -1116,6 +1129,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'invalidate-apt!',
 	       'docker-image=s',
 	       'share-data-osm!',
+	       'hack-writable-data!',
 	      )
 	or usage_gui;
     gui($doit, %opt);
@@ -1199,6 +1213,8 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
     usage "Unknown subcmd '$subcmd'";
 }
 __END__
+
+=encoding utf-8
 
 =head1 NAME
 
@@ -1351,6 +1367,24 @@ Create a debian package for an existing tarball:
 Run the cgi in a docker container:
 
     ./miscrc/docker-bbbike cgi --distver jessie
+
+=head1 HOWTOS
+
+=head2 Test data update using an older bbbike version
+
+Use an older .deb package and the option C<--hack-writable-data>
+(because F</usr/lib/BBBike/data> is not writable when installing from
+a debian package).
+
+    ./miscsrc/docker-bbbike gui --src ../bbbike-distfiles/bbbike_3.17-1_amd64.deb --bbbike-args="--no-www" --hack-writable-data
+
+If not the default live server should be used for updates, then open
+ptksh (Shift-P) and set another server. The following works for using
+a starman installation on the host C<bbbike-pps-jessie>:
+
+    $BBBike::BBBIKE_UPDATE_WWW='http://bbbike-pps-jessie:5000/BBBike';
+
+Now you can use "Einstellungen > Daten-Update über das Internet".
 
 =head1 SEE ALSO
 
