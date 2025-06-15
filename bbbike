@@ -11206,11 +11206,18 @@ sub get_temp_blockings_files {
 	   };
 }
 
+my $temp_blockings_valid_for; # undef means "now"
 sub activate_temp_blockings {
     my $do_show_active_temp_blockings = shift;
     my(%args) = @_;
+    if (defined $args{-now}) {
+	$temp_blockings_valid_for = $args{-now};
+    } else {
+	$temp_blockings_valid_for = undef;
+    }
     my $now = $args{-now} || time;
     my $from = $args{-from};
+
 
     my($temp_blockings_dir, $file, $optimized_file) =
 	@{ get_temp_blockings_files() }{qw(dir file optimized_file)};
@@ -11497,8 +11504,9 @@ sub check_path_in_blockings_net {
 }
 
 sub show_blockings {
+    my $title = defined $temp_blockings_valid_for ? M("Sperrungen für Datum").": ".POSIX::strftime("%Y-%m-%d", localtime $temp_blockings_valid_for) : M"Aktuelle Sperrungen";
     my $blockings_toplevel = redisplay_top($top, 'temp_blockings',
-					   -title => M"Aktuelle Sperrungen",
+					   -title => $title,
 					  );
     my $toplevel_width = int($top->screenwidth*0.7);
     if (!defined $blockings_toplevel) {

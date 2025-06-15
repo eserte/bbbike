@@ -4509,7 +4509,7 @@ sub active_temp_blockings_for_date_dialog {
     my $date = POSIX::strftime("%Y/%m/%d", localtime);
     {
 	my $f = $t->Frame->pack(-fill => "x");
-	Tk::grid($f->Label(-text => "Sperrungen für Datum: "),
+	Tk::grid($f->Label(-text => M("Sperrungen für Datum").": "),
 		 $f->DateEntry
 		 (-dateformat => 2,
 		  -weekstart => 1,
