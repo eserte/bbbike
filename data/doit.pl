@@ -757,13 +757,8 @@ sub action_old_bbbike_data {
 	    push @new_modified, "data/label\t$label_mtime\t$md5";
 	}
 
-	$d->file_atomic_write("$bbbike_ver_dir/.modified",
-			      sub {
-				  my $ofh = shift;
-				  for (@new_modified) {
-				      $ofh->print("$_\n");
-				  }
-			      }, check_change => 1);
+	$d->write_binary("$bbbike_ver_dir/.modified",
+			 join("\n", @new_modified) . "\n");
     }
 }
 
