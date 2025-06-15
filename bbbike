@@ -673,11 +673,11 @@ $save2_path = $home;
     if (!-d $cachedir) {
 	mkdir $cachedir, 0700;
     }
-    $cache_root = (-d $cachedir && -w $cachedir
-		   ? $cachedir
-		   : $tmpdir);
-    $Karte::cache_root = $cache_root;
-    $Strassen::Util::cachedir = $cache_root;
+    set_cache_dirs(
+	(-d $cachedir && -w $cachedir
+	? $cachedir
+	: $tmpdir)
+    );
 }
 
 {
@@ -5334,7 +5334,9 @@ sub handle_options {
 	  label => M"HTTP-Proxy (Format: http://host:port/)", var => \$proxy],
 	 ['cachedir','=s',undef,
 	  label => M"Cacheverzeichnis", subtype => 'dir',
-	  var => \$cache_root],
+	  var => \$cache_root,
+	  callback => sub { set_cache_dirs($cache_root) },
+         ],
 
 	 M"GPS",
 	 ['exporttxtmode','=i',EXPORT_TXT_SIMPLIFY_AUTO,
@@ -21387,6 +21389,13 @@ sub get_current_active_speed_kmh {
 }
 
 sub now_time_hires { Tk::timeofday() }
+
+sub set_cache_dirs {
+    my($dir) = @_;
+    $cache_root = $dir;
+    $Karte::cache_root = $dir;
+    $Strassen::Util::cachedir = $dir;
+}
 
 # evtl. utimes benutzen
 sub cache_decider_init { $cache_decider_time = now_time_hires() }
