@@ -661,6 +661,21 @@ sub action_old_bbbike_data {
 	  },
 	 },
 
+	 # note: bbbike 3.16 stops area rendering at the first occurrence of F:ex-Ae
+	 'flaechen-ex-Ae' =>
+	 {
+	  bbbikever => sub { $bbbike_ver_less_than->($_[0], 3.17) },
+	  files     => qr{^(flaechen)$},
+	  action    => sub {
+	      my($src_file, $dest_file) = @_;
+	      _convert_bbd_line_by_subs(
+		  $d,
+		  $src_file, $dest_file,
+		  sub { s{\tF:ex-Ae }{\tF:Ae }; }
+	      );
+	  },
+	 },
+
 	 'with-tendencies' =>
 	 {
 	  bbbikever => sub { $bbbike_ver_ge_than->($_[0], 3.19) },
