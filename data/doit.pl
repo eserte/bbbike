@@ -751,7 +751,8 @@ sub action_old_bbbike_data {
 	    my $destfile = "$bbbike_ver_dir/label";
 	    $d->copy("label", $destfile);
 	    my $label_mtime = 1099869060; # this is the mtime of label in BBBike-3.16/data/.modified
-	    $d->utime(undef, $label_mtime, $destfile);
+	    my $atime = (stat($destfile))[8]; # keep accesstime
+	    $d->utime($atime, $label_mtime, $destfile);
 	    my $md5 = $get_md5->($destfile);
 	    push @new_modified, "data/label\t$label_mtime\t$md5";
 	}
