@@ -1019,6 +1019,27 @@ sub next_neighbors {
     $self->neighbor_by_direction($center_p, $angle);
 }
 
+sub info {
+    my($self) = @_;
+    my $info = "object: $self\n";
+    if ($self->{Strassen}) {
+	my $strassen_info = $self->{Strassen}->info;
+	$strassen_info =~ s{^}{  }gm; # indent
+	$info .= "Strassen:\n$strassen_info";
+    } else {
+	$info .= "Strassen:\nundef/not set\n";
+    }
+    $info .= "Net size (source nodes only): " . (scalar keys %{ $self->{Net} || {} }) . "\n";
+    my @dependent_files = $self->dependent_files;
+    if (@dependent_files) {
+	$info .= "dependent_files:\n";
+	for my $dependent_file (@dependent_files) {
+	    $info .= "- $dependent_file\n";
+	}
+    }
+    $info;
+}
+
 1;
 
 __END__
