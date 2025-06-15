@@ -36029,8 +36029,8 @@ EOF
      },
      { from  => 1731879774, # 1730588460, # 2024-11-03 00:01, # $isodate2epoch->("2022-03-02 14:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2024-11-20 18:00:00"), # 1730952000, # 2024-11-07 05:00, # $isodate2epoch->("2022-03-07 12:00:00"),
-#       text  => 'Wuhletalstr.: Wuhletalbrücke wird abgebrochen, Sperrung, auch für Radfahrer und Fußgänger, vom 3.3.2022 14:00 bis 7.3.2022 12:00',
-#       text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, auch Radfahrer und Fußgänger sind betroffen, vom 04.11.2024 bis 07.11.2024 05:00',
+#      text  => 'Wuhletalstr.: Wuhletalbrücke wird abgebrochen, Sperrung, auch für Radfahrer und Fußgänger, vom 3.3.2022 14:00 bis 7.3.2022 12:00',
+#      text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, auch Radfahrer und Fußgänger sind betroffen, vom 04.11.2024 bis 07.11.2024 05:00',
        text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 18.11.2024 bis 20.11.2024 18:00',
        type  => 'gesperrt',
        data  => <<EOF,
