@@ -1676,52 +1676,7 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
-#: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt\'s den Termin) (13. Juni 2025 - 15. Juni 2025)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211381.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1209970.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1331265.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1450216.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1538769.php (kein Umzug dieses Jahr)
-#: by: https://www.visitberlin.de/de/event/64-koepenicker-sommer
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409180385/volksfest-koepenicker-sommer-2025-steht-an-mit-diesen-aenderungen.html
-#: source_id: viz2021:13.57552,52.44722,13.06.2024,06:00 (hier auch Alt-Köpenick gesperrt, bis 17.06.2024) (inaktiv)
-#: note: früher auch "vielleicht auch Sperrung im Kietz (Kietzer Sommer)"
-# REMOVED (Kietzer Sommer) ---	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
-# REMOVED (Alt-Köpenick nicht, die Straßenbahn fährt noch) ---	2::temp 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
-# REMOVED (Laurenzstr., 2022 nichts gesehen) ---	2::temp 22175,4730 22246,4711
-# REMOVED (Rosenstr., 2022 nichts gesehen) ---	2::temp 22144,4660 22212,4655 22284,4653
-# REMOVED (Böttcherstr., 2022 nichts gesehen) ---	2::temp 22212,4655 22214,4548
-	2::temp 22093,4499 22087,4470 22084,4455 22076,4422
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
-	2::temp 22138,4642 22074,4664
-	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
-	2::temp 22284,4653 22355,4660
-	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
-Streetfood-Bereich am Kietzgrabensteg	2::temp 22514,4632 22531,4605
-Streetfood-Bereich am Amtswäldchen	2::temp 22458,4565 22531,4605 22585,4634
-# REMOVED ---	2::temp 22324,4586 22314,4604
-',
-         'from' => 1749679200,
-         'id' => 1702,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz) (13.06.2025 - 15.06.2025)',
-         'type' => 'gesperrt',
-         'until' => 1750010400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5898,7 +5853,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-16
 #: check_frequency: 30d
 #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6471,11 +6426,11 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: note: Hauffstr.: Stand Mitte Mai 2025: Durchfahrt an einem Samstag (außerhalb der Arbeitszeiten?) problemlos möglich, aber offiziell nur der Durchgang zum Sport/Spielplatz möglich
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-16
 #: check_frequency: 21d
 #: next_check: 2025-06-30 (DB-Mail)
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="14"
+#: osm_watch: way id="1025826786" version="15"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 ',
          'from' => undef,
@@ -6794,9 +6749,9 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
 #: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
-#: osm_watch: way id="23121446" version="35"
+#: osm_watch: way id="23121446" version="36"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-06-01 vvv
+#: last_checked: 2025-06-15 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -7275,6 +7230,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
 #: source_id: viz2021:13.620312,52.523169,16.06.2025,10:00 (nach Norden gewandert, bis 04.07.2025)
+#: source_id: viz2021:13.61963,52.52253,16.06.2025,10:00 (bis 04.07.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,re-G)
@@ -7284,12 +7240,12 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: last_checked: 2025-06-11 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 14d (traffic) vvv
-#: next_check: 2025-06-16 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 #: note: nur wenige Meter
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 # REMOVED (nicht (mehr?)) --- Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
-Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 24775,13218 24969,13129
-Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
+# REMOVED (möglicherweise nicht mehr) --- Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 24775,13218 24969,13129
+# REMOVED (möglicherweise nicht mehr) --- Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7301,7 +7257,7 @@ Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
 ',
          'from' => 1713942000,
          'id' => 4048,
-         'text' => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung in der Lübzer Str., Ende der Bauarbeiten unbekannt',
+         'text' => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7529,6 +7485,7 @@ Am Eichgarten: Fahrbahn gesperrt, Ausweichen auf den Hochbord	q4::inwork 5787,44
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/vz-plan-promenade-12207-berlin_umleitung_stand-040625.pdf
 # REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
+#: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
@@ -8411,7 +8368,17 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.312019,52.487816,10.02.2025,07:00 (bis 03.03.2025) (inaktiv)
+#: note: bei rbb wieder da
+	q4::inwork 4181,8933 4198,9015
+',
+         'from' => 1750024800,
+         'id' => 4256,
+         'text' => 'Brienner Str.: Bauarbeiten zwischen Kaubstr. und Berliner Str., evtl. sind auch Radfahrer betroffen, bis 08.08.2025',
+         'type' => 'handicap',
+         'until' => 1754604000
+       },
        {
          'data' => '#: source_id: 256401910 (bis 28.11.2025)
 	2::inwork 41356,16225 41672,16084
@@ -8459,7 +8426,20 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
+#: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
+# REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
+#: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt
+# REMOVED --- #: next_check: 2025-04-30
+Scottweg	q4::inwork -1317,11300 -966,11382
+',
+         'from' => 1739720880,
+         'id' => 4263,
+         'text' => 'Scottweg: mögliche Sperrung; evtl. sind auch Radfahrer betroffen, bis 31.07.2025',
+         'type' => 'handicap',
+         'until' => 1753977600
+       },
        {
          'data' => '#: next_check_id: PLATANEN-2025
 #: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025)

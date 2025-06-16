@@ -3427,11 +3427,12 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 #: by: https://entwicklungsstadt.de/a100-trifft-treptower-park-neue-anschlussstelle-spaltet-berlin/
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9585 (Antrag)
 #: by: https://www.tagesspiegel.de/berlin/verlangerung-der-a100-durch-berlin-stau-auf-der-neuen-autobahn-wird-eingeplant-13837747.html
+#: by: https://entwicklungsstadt.de/a100-verlaengerung-bis-treptow-soll-ende-august-eroeffnet-werden/ (Ende August 2025 oder Anfang September 2025)
 #: source_id: viz2021:13.460605,52.471641,09.08.2024,07:00 (Bauarbeiten in der Sonnenallee, bis 27.09.2024) (bis 18.10.2024) (bis 29.11.2024) (bis 20.12.2024) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.460292,52.47175,05.06.2025,07:00 (Installation einer Ampelanlage in der Sonnenallee, bis 13.06.2025) (inaktiv)
 #: XXX -> strassen_bab-orig, wenn fertig
 #: XXX vermutlich wird es weitere begleitende Wege geben, die hoffentlich für Radfahrer befahrbar sein werden (bis zur Grenzallee? zwischen Kiefholzstr. und Görlitzer Damm auf der westlichen Seite der Autobahn?) (bis Am Treptower Park allerdings nicht, da ist kein Platz mehr übrig)
-#: next_check: 2025-09-01 (Tsp)
+#: next_check: 2025-08-31 (entwicklungsstadt)
 BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14281,8444 14288,8341 14421,8032 14447,7901 14459,7763 14436,7611 14346,7377 14219,6838 14180,6755 14106,6663
 # 
 #: next_check_id: BAB100-2022
@@ -4419,6 +4420,7 @@ Ludwigsluster Str.: Radweg wird neu gemacht (?)	? 22896,12827 22906,12766 22906,
 #: source_id: viz2021:13.580351,52.513472,07.08.2024,08:00 (Tiefbauarbeiten, vielleicht im Zuge der Radwegsanierung? bis 30.08.2024) (inaktiv) (bis 30.09.2024) (bis 01.10.2024) (inaktiv)
 #: source_id: viz2021:13.584575,52.515364,25.11.2024,08:00 (Gehwegarbeiten bis 20.12.2024 + weitere Arbeiten) (bis 30.04.2025 + ...) (bis 20.12.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.588522,52.517217,13.03.2025,09:00 (Gehwegarbeiten bis 30.04.2025) (bis 30.05.2025) (bis 31.05.2025) (bis 28.05.2025) (inaktiv)
+#: source_id: viz2021:13.585736,52.515889,17.06.2025,07:00 (Gehwegarbeiten bis 11.07.2025)
 #: osm_watch: way id="1218155180" version="1"
 #: last_checked: 2025-06-09
 #: check_frequency: 120d
@@ -5198,12 +5200,12 @@ Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	? 24895,13039 2489
 #: source_id[inactive]: bvg2024:191#HIM_FREETEXT_234444
 #: source_id[inactive]: bvg2024:192#HIM_FREETEXT_234443
 #: source_id[inactive]: bvg2024:191#f1fdb19d-cb51-437b-98fa-0daf0c29fe62
-#: osm_watch: note 4276325 13
+#: osm_watch: note 4276325 14
 #: osm_watch: node id="10750878558" version="4"
 #: priority: #D
 #: XXX zurzeit steht nur ein weggedrehter Mast ohne Schild
 #: note: nicht in der sen/uvk-Liste aufgeführt
-#: last_checked: 2025-06-09
+#: last_checked: 2025-06-16 (osm note)
 # REMOVED --- #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-05-01
 Marzahner Promenade: Zebrastreifen entsteht	?::inwork  20150,15492 20226,15512 20170,15456
@@ -5605,7 +5607,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516792.php (in Umsetzung bzw. kurz davor)
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (hier: Höhe Ingrid-Reschke-Str., aber tatsächlich Höhe An den Eiswerken, bis 20.07.2025)
-#: last_checked: 2025-06-03 vvv
+#: last_checked: 2025-06-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 14988,10778 15004,10791 15019,10803
@@ -6296,7 +6298,7 @@ Charlottenburger Chaussee: wird es hier auch eine Radwegsanierung geben?	? -772,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9776 (Beschlussempfehlung)
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/tempo-30-auf-der-lueckstrasse_a375677
-#: last_checked: 2025-05-17
+#: last_checked: 2025-06-16
 #: check_frequency: 180d
 Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
 # 
@@ -6307,7 +6309,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-16
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6321,7 +6323,7 @@ Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,1091
 # REMOVED --- (Hauptstr./Rummelsburger Ufer - Gustav-Tempel-Str.): ein asphaltierter Zweirichtungsradweg entsteht	?::inwork 15298,10682 15245,10719
 #: osm_watch: way id="176050265" version="12"
 #: osm_watch: way id="1099807542" version="7"
-#: last_checked: 2025-06-04
+#: last_checked: 2025-06-16
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (infravelo)
 Hauptstr. [Nebenfahrbahn]: wird hier eine Fahrradstraße eingerichtet (wo genau?)? was passiert mit der Einbahnstraßenregelung?	? 15298,10682 15332,10657 15392,10615
@@ -6350,7 +6352,7 @@ An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Buch
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
-#: last_checked: 2025-06-04
+#: last_checked: 2025-06-16
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
@@ -7550,6 +7552,7 @@ Hauffstr.: bauzeitliche Sperrung	? 15578,11241 15620,11210 15700,11128 15747,110
 #: by: https://berliner-abendblatt.de/2022/07/13/wieder-mehr-platz-am-schaefersee/
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1362455.php (2. Bauabschnitt bis Sommer 2024, danach kommt der 3. Bauabschnitt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12444 (2. Bauabschnitt bis Herbst 2024)
+#: by: https://entwicklungsstadt.de/schaefersee-in-reinickendorf-modernisierung-mit-neuem-uferweg-und-barrierefreiem-zugang/ (weiterhin 2. Bauabschnitt; 3. Bauabschnitt 2026)
 # REMOVED (realisiert) --- #: XXX Fertigstellung 2021 vvv --- #: last_checked: 2022-05-14 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-07-08 vvv --- Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7253,17467 7222,17471 7173,17591 7189,17666
 # REMOVED (fertig) --- Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7189,17666 7185,17681
 # REMOVED (realisiert) --- Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7185,17681 7173,17712
@@ -9152,9 +9155,11 @@ Kiautschoustr. im Bereich des Pekinger Platzes: Sperrung für den Kfz-Verkehr gep
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/bebauungsplan/bebauungsplan.1536761.php (Bebauungsplan 1-118)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/bebauungsplan/1-118_bebauungsplanentwurf.pdf
+#: by: https://www.tagesspiegel.de/themenspeziale/wohnen/neues-ufer-modernes-stadtquartier-am-charlottenburger-verbindungskanal-geplant-13806262.html (Bauzeit: 2027-2030?)
 #: note: falls der verkehrsberuhigte Bereich realisiert wird, könnte der Hochbordradweg eigentlich entfallen
 #: last_checked: 2025-05-24
 #: check_frequency: 720d
+#: next_check: 2030-12-31 (Tsp)
 Neues Ufer: verkehrsberuhigter Bereich geplant	? 4283,13660 4363,13336
 # 
 # REMOVED (Straßenschild existiert, und es ist wohl die südliche Fläche) --- #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12362 (Benennung zum 17. März 2025) --- #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1537247.php --- #: by: https://www.tagesspiegel.de/berlin/bezirke/ein-platz-fur-spandaus-dorfschulzen-kladows-dorfplatz-tragt-nun-den-namen-des-ex-burgermeisters-13384267.html --- #: next_check: 2025-03-17 --- #: XXX oder ist es die Grünfläche nördlich des Ritterfelddamms oder beide Grünflächen? --- Konrad-Birkholz-Platz: hängen hier Straßenschilder?	? -7160,5090 -7173,5035 -7134,5020 -7120,5076 -7160,5090
@@ -9186,7 +9191,7 @@ L77 Saarmund: Bau eines Radwegs	?::inwork -8988,-10047 -8759,-9987 -8645,-9915 -
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1547236.php (formaler Umbenennungsprozess beginnt, dauert 4 bis 6 Monate)
 #: by: https://www.tagesspiegel.de/berlin/er-sitzt-auf-einer-wolke-und-freut-sich-harald-juhnke-platz-kommt--aber-nicht-so-schnell-13465513.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_22_1377_1468_online.pdf (Umbenennung einer Straßenteilfläche am 1. September 2025)
-#: osm_watch: note 4673473 2
+#: osm_watch: note 4673473 3
 #: last_checked: 2025-06-13
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2025-09-01 (Amtsblatt)
@@ -10316,7 +10321,7 @@ Bebauungsplan 6-33 (Fubic): hier entstehen Straßen und Wege	?::projected 3357,47
 #: XXX - Willy-Brandt-Weg
 #: osm_watch: relation id="15676321" version="2"
 #: osm_watch: way id="34036043" version="27"
-#: osm_watch: way id="126600479" version="17"
+#: osm_watch: way id="126600479" version="18"
 #: osm_watch: node id="12161923827" version="1"
 # REMOVED --- #: osm_watch: node id="2429027268" version="2"
 #: osm_watch: node id="2429051385" version="1"
@@ -10382,7 +10387,7 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 # REMOVED (-> strassen-orig) --- Gustav-Tempel-Str.: zukünftiger Fahrbahnbelag unklar, noch nicht offiziell offen, vermutlich wird noch in Richtung Westen verlängert	? 15220,10682 15205,10616 15200,10600
 # REMOVED (-> strassen-orig) --- An den Eiswerken	? 15004,10791 14994,10732 14984,10677
 # REMOVED (-> strassen-orig) --- Paul-und-Paula-Promenade	? 14886,10748 14909,10732 14984,10677
-#: last_checked: 2025-06-03 vvv
+#: last_checked: 2025-06-16 vvv
 #: check_frequency: 90d vvv
 #: XXX beim DPAG-Mitteilungsblatt 6/2023 als "Paul-und Paula-Promenade" bezeichnet (ein Bindestrich weniger); PLZ=10317
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
@@ -11097,7 +11102,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: http://www.deal-magazin.com/news/143222/Tishman-Speyer-kauft-Buero--und-Wohnprojekt-Elements-in-Berlin (Erwähnung der Uferpromenade)
 #: by: https://entwicklungsstadt.de/berlin-mitte-weiterbau-des-bauprojekts-elements-hat-fahrt-aufgenommen/ (Uferweg nicht Teil des Projekts)
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
-#: last_checked: 2025-06-07 vvv
+#: last_checked: 2025-06-16 (daf) vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 2
@@ -11256,7 +11261,7 @@ unter der Salvador-Allende-Brücke: hier existiert ein asphaltierter und beleucht
 #: by: https://www.luftbildsuche.de/info/luftbilder/neubau-mehrfamilienhaus-wohnanlage-weisse-taube-ortsteil-hohenschnhausen-berlin-deutschland-656421.html
 #: XXX vermutlich wird es am westlichen Rand im Zuge der Hofheimer Str. einen Weg geben; unklar, ob es eine Verlängerung der Heldburger Str. geben wird
 #: osm_watch: way id="89803856" version="22"
-#: last_checked: 2025-04-03 (luftbildsuche)
+#: last_checked: 2025-06-12 (luftbildsuche)
 #: check_frequency: 360d
 #: next_check: 2026-09-30 (Gewobag)
 Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen oder Wege entstehen?	?::inwork 17636,14837 17633,14707 17763,14588
@@ -12180,9 +12185,10 @@ Schlossweg oder Schloßweg: genauer Name? Qualität?	? -17774,7003 -17691,7031
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_54_4143_4354_online.pdf (Benennung von Privatstraßen, mit Lageplan)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_15_0993_1064_online.pdf (Grundstücksnummern; Erwähnung der Planstraßen K und L)
 #: by: https://entwicklungsstadt.de/cite-foch-in-reinickendorf-so-sieht-es-aktuell-auf-dem-gelaende-aus/
+#: by: https://www.deutsches-architekturforum.de/thread/15267-bv-in-der-cit%C3%A9-foch-reinickendorf/?postID=779817#post779817
 #: XXX Privatstraßen; fehlen beide in Berlin.coords.data, laut DPAG-Mitteilungsblatt PLZ=13469 für beide vvv
-#: last_checked: 2025-04-02 (mapillary) vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2025-06-16 (daf) vvv
+#: check_frequency: 90d vvv
 #: osm_watch: way id="439884079" version="12"
 Rue Édith Piaf: genaue Lage? Fertigstellung? Qualität?	? 4444,21807 4421,21848 4239,21722
 #: osm_watch: way id="439885059" version="7"

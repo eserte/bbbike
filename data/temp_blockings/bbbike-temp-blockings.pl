@@ -14321,11 +14321,12 @@ EOF
      { from  => $isodate2epoch->("2023-05-12 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2023-05-14 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 7, months => 5, start => "2024-10-25T00:00:00"]],
-       recurrence_prewarn_days => -40,
+       recurrences => [['yearly', days => 7, months => 5, start => "2025-10-25T00:00:00"]],
+#      recurrence_prewarn_days => -40,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2023)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: note: Findet möglicherweise dauerhaft nicht mehr statt. Siehe stattdessen "Wein- und Winzerfest Westend"
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20210409 (geplant 8. und 9. Mai 2021)
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20210418 (erst 2022)
@@ -37847,7 +37848,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-16
 #: check_frequency: 30d
 #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40325,11 +40326,11 @@ EOF
 #: note: Hauffstr.: Stand Mitte Mai 2025: Durchfahrt an einem Samstag (außerhalb der Arbeitszeiten?) problemlos möglich, aber offiziell nur der Durchgang zum Sport/Spielplatz möglich
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-16
 #: check_frequency: 21d
 #: next_check: 2025-06-30 (DB-Mail)
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="14"
+#: osm_watch: way id="1025826786" version="15"
 Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
 EOF
      },
@@ -41872,9 +41873,9 @@ EOF
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029)
 #: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
-#: osm_watch: way id="23121446" version="35"
+#: osm_watch: way id="23121446" version="36"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-06-01 vvv
+#: last_checked: 2025-06-15 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -43883,7 +43884,8 @@ EOF
 #      text  => 'Am Rosenhag und Uslarer Str.: Bauarbeiten in Höhe Hönower Str. Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Einschränkungen für Radfahrer sind möglich, vom 25.04.2024 09:00 bis 21.05.2025 17:00',
 #      text  => 'Am Lupinenfeld und Karlshafener Str.: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
 #      text  => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung, möglicherweise bis Mitte 2025',
-       text  => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung in der Lübzer Str., Ende der Bauarbeiten unbekannt',
+#      text  => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung in der Lübzer Str., Ende der Bauarbeiten unbekannt',
+       text  => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.621753,52.524766,25.04.2024,09:00 (bis 21.05.2025) (bis 04.06.2024, Gesamtmaßnahme bis Mitte 2025) (inaktiv)
@@ -43894,6 +43896,7 @@ EOF
 #: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
 #: source_id: viz2021:13.620312,52.523169,16.06.2025,10:00 (nach Norden gewandert, bis 04.07.2025)
+#: source_id: viz2021:13.61963,52.52253,16.06.2025,10:00 (bis 04.07.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,re-G)
@@ -43903,12 +43906,12 @@ EOF
 #: last_checked: 2025-06-11 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 14d (traffic) vvv
-#: next_check: 2025-06-16 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 #: note: nur wenige Meter
 Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,13183
 # REMOVED (nicht (mehr?)) --- Am Lupinenfeld: Einbahnstraßenregelung	q4::inwork; 24879,13338 25031,13242
-Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 24775,13218 24969,13129
-Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
+# REMOVED (möglicherweise nicht mehr) --- Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 24775,13218 24969,13129
+# REMOVED (möglicherweise nicht mehr) --- Lübzer Str.: Einbahnstraßenregelung	q3::inwork; 25118,13041 24969,13129
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -44878,6 +44881,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/vz-plan-promenade-12207-berlin_umleitung_stand-040625.pdf
 # REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
+#: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
@@ -46876,12 +46880,14 @@ Seeweg (Weißensee): Grünanlage	q4 14485,16362 14480,16449
 Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 EOF
      },
-     { from  => 1739080800, # 2025-02-09 07:00
-       until => 1741017600, # 2025-03-03 17:00
-       text  => 'Brienner Str.: Bauarbeiten zwischen Kaubstr. und Berliner Str., evtl. sind auch Radfahrer betroffen, vom 10.02.2025 07:00 bis 03.03.2025 17:00',
+     { from  => $isodate2epoch->("2025-06-16 00:00:00"), # 1739080800, # 2025-02-09 07:00
+       until => $isodate2epoch->("2025-08-08 00:00:00"), # 1741017600, # 2025-03-03 17:00
+#      text  => 'Brienner Str.: Bauarbeiten zwischen Kaubstr. und Berliner Str., evtl. sind auch Radfahrer betroffen, vom 10.02.2025 07:00 bis 03.03.2025 17:00',
+       text  => 'Brienner Str.: Bauarbeiten zwischen Kaubstr. und Berliner Str., evtl. sind auch Radfahrer betroffen, bis 08.08.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.312019,52.487816,10.02.2025,07:00 (bis 03.03.2025) (inaktiv)
+#: note: bei rbb wieder da
 	q4::inwork 4181,8933 4198,9015
 EOF
      },
@@ -46972,15 +46978,15 @@ EOF
 EOF
      },
      { from  => 1739720880, # 2025-02-16 16:48
-       until => $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
-       text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 bis 13.06.2025',
+       until => $isodate2epoch->("2025-07-31 18:00:00"), # $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
+#      text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 bis 13.06.2025',
+       text  => 'Scottweg: mögliche Sperrung; evtl. sind auch Radfahrer betroffen, bis 31.07.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
 #: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
-#: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt
-Dickensweg	q4::inwork -1304,11183 -1062,11214
-#: note: laut rbb nur bis 30.04.2025
+# REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
+#: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt
 # REMOVED --- #: next_check: 2025-04-30
 Scottweg	q4::inwork -1317,11300 -966,11382
 EOF
@@ -48060,6 +48066,7 @@ EOF
 #: by: https://www.rbb24.de/panorama/beitrag/2025/06/berlin-wuhlheide-bruecke-abriss-bau-autoverkehr.html
 #: by: https://viz.berlin.de/site/assets/files/1884/umleitung_rummelsburger_strasse.850x0-is.jpg (einzig verbliebene Umleitung)
 #: by: https://www.tagesspiegel.de/berlin/nach-abriss-der-brucke-an-der-berliner-wuhlheide-jetzt-ist-doch-ein-neubau-im-gesprach-13826974.html
+#: by: https://entwicklungsstadt.de/wuhlheide-wird-die-abgerissene-bruecke-doch-wieder-aufgebaut/
 # REMOVED --- #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich? --- #: last_checked: 2025-05-20 --- #: next_check: 2025-05-29
 unter der Brücke	2::inwork 17990,7115 18010,7137
 EOF
