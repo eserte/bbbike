@@ -39371,7 +39371,7 @@ EOF
 #: priority: #B
 #: last_checked: 2025-06-13 (bahninfo-forum)
 #: check_frequency: 120d
-#: next_check: 2025-06-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag)
+#: next_check: 2025-08-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
 EOF
@@ -41315,12 +41315,13 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2024-10-22 00:00:00"), # $isodate2epoch->("2023-08-27 00:00:00"),
-       until => $isodate2epoch->("2024-11-04 20:00:00"), # 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
+     { from  => $isodate2epoch->("2025-08-17 00:00:00"), # $isodate2epoch->("2024-10-22 00:00:00"), # $isodate2epoch->("2023-08-27 00:00:00"),
+       until => $isodate2epoch->("2025-09-07 20:00:00"), # 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick, Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
-      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 23.10.2024 bis voraussichtlich 04.11.2024',
+#      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 23.10.2024 bis voraussichtlich 04.11.2024',
+       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, voraussichtlich vom 18.08.2025 bis 07.09.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -41334,6 +41335,8 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (nächste Sperrungen: 23.10.2024-04.11.2024 + 18.6.2025-7.7.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1495775.php
 #: by: https://forum-koepenick.de/sperrung-bahnhofstrasse-koepenick-bauarbeiten-umleitungen (nächste Sperrungen: 19.06.-07.07.2025 und 29.07.-08.08.2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/kiezkamera-treptow-kopenick-brunnensaison-mullproblem-kasernenabriss-und-mehr-13591522.html
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409203271/bahnhofstrasse-koepenick-angekuendigte-sperrung-verschoben.html (von 18.7.2025 (!) auf 18.8.2025 verschoben, Dauer unklar)
 # REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id[inactive]: bvg2021:269#BVG326513_0
 #: source_id[inactive]: bvg2021:63#BVG326792_0
@@ -44622,7 +44625,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-06-13 vvv
+#: last_checked: 2025-06-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -44882,6 +44885,8 @@ EOF
 # REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
 #: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025)
+#: source_id: adac:969740805 (bis 12.12.2025)
+#: source_id: adac:794067672 (bis 12.12.2025)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
@@ -44893,8 +44898,8 @@ EOF
 #: osm_watch: way id="5363433" version="26"
 #: osm_watch[closed]: note 4442541 4
 # REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
-#: note: laut BA-Pressemitteilung auch für den Radverkehr
-Bäkebrücke/Bäkestr.: Fahrbahn gesperrt, nördlicher Bürgersteig frei	q3::inwork 4659,3065 4587,3097 4411,3180
+#: note: laut BA-Pressemitteilung auch für den Radverkehr frei
+Bäkebrücke: Fahrbahn gesperrt, nördlicher Bürgersteig frei	q3::inwork 4659,3065 4587,3097
 # REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
 # REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4618,3135 4692,3225
 #: osm_watch: way id="121176503" version="11"
@@ -45324,12 +45329,12 @@ EOF
 #: by: https://entwicklungsstadt.de/4-abschnitt-des-berliner-mauerwegs-wird-erneuert/
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
-#: osm_watch: way id="27260309" version="18"
-#: osm_watch: way id="372791173" version="8"
-#: osm_watch: way id="27260312" version="23"
+#: osm_watch: way id="27260309" version="20"
+#: osm_watch: way id="372791173" version="10"
+#: osm_watch: way id="27260312" version="25"
 #: osm_watch: note 4673198 2
 #: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
-#: last_checked: 2025-04-10 (Pressemitteilung von gruen-berlin)
+#: last_checked: 2025-06-16 (osm)
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
@@ -45587,7 +45592,7 @@ EOF
 #: osm_watch: way id="189141737" version="7"
 #: osm_watch: way id="1225345724" version="1"
 #: osm_watch: way id="1356785471" version="2"
-#: last_checked: 2025-06-07 vvv
+#: last_checked: 2025-06-17 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-12-31 (entwicklungsstadt: Abriss der ehem. Tankstelle) vvv
 	3 12207,11763 12132,11788 11966,11832
@@ -46491,18 +46496,19 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1508313.php
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (voraussichtliche Bauzeit: 2024 bis 2025 für diese und weitere Brücken: Spektegrabensteg und Südparkbrücke)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (voraussichtliche Bauzeit: 2024 bis 2025 für diese und weitere Brücken: Spektegrabensteg und Südparkbrücke) (mittlerweile: 2025 bis 2026)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (alternative URL)
 #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/spektebruecke-gesperrt_a431036
 #: by: https://www.tagesspiegel.de/berlin/verkehrsbaustellen-in-spandau-von-morschen-holzbrucken-und-wilden-u-bahntraumen-12824615.html (neun Monate Bauzeit, voraussichtlich bis Ende 2025)
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12853 (Anfrage)
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12861 (Anfrage (Arbeiten wurden eingestellt?))
+#: by: https://www.morgenpost.de/bezirke/spandau/article409287700/brueckeneinsturz-am-spektesee-fussgaengerweg-komplett-gesperrt.html (mittlerweile zusammengebrochen)
 #: osm_watch[closed]: note 4537179 1
 #: osm_watch: way id="14438318" version="8"
 #: add_fragezeichen: Ist der Steg weiterhin gesperrt?
-#: last_checked: 2024-11-29 (Pressemitteilung)
+#: last_checked: 2025-06-17 (MoPo)
 #: check_frequency: 270d
-#: next_check: 2025-12-31
+#: next_check: 2026-12-31
 	2::inwork -7182,15524 -7228,15504
 EOF
      },
@@ -46881,12 +46887,13 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 EOF
      },
      { from  => $isodate2epoch->("2025-06-16 00:00:00"), # 1739080800, # 2025-02-09 07:00
-       until => $isodate2epoch->("2025-08-08 00:00:00"), # 1741017600, # 2025-03-03 17:00
+       until => $isodate2epoch->("2025-08-08 17:00:00"), # 1741017600, # 2025-03-03 17:00
 #      text  => 'Brienner Str.: Bauarbeiten zwischen Kaubstr. und Berliner Str., evtl. sind auch Radfahrer betroffen, vom 10.02.2025 07:00 bis 03.03.2025 17:00',
        text  => 'Brienner Str.: Bauarbeiten zwischen Kaubstr. und Berliner Str., evtl. sind auch Radfahrer betroffen, bis 08.08.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.312019,52.487816,10.02.2025,07:00 (bis 03.03.2025) (inaktiv)
+#: source_id: adac:966260874 (bis 08.08.2025)
 #: note: bei rbb wieder da
 	q4::inwork 4181,8933 4198,9015
 EOF
@@ -46978,13 +46985,14 @@ EOF
 EOF
      },
      { from  => 1739720880, # 2025-02-16 16:48
-       until => $isodate2epoch->("2025-07-31 18:00:00"), # $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
+       until => $isodate2epoch->("2025-07-31 17:00:00"), # $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
 #      text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 bis 13.06.2025',
        text  => 'Scottweg: mögliche Sperrung; evtl. sind auch Radfahrer betroffen, bis 31.07.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
 #: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
+#: source_id: adac:1389146504 (bis 31.07.2025)
 # REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt
 # REMOVED --- #: next_check: 2025-04-30
@@ -48322,7 +48330,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-07
+#: last_checked: 2025-06-17
 #: next_check: 2025-08-16 (Halteverbotsschilder)
 	q4::inwork; 12238,11931 12413,11901
 EOF
@@ -48335,7 +48343,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=779073#post779073 (nicht eindeutig; durchgestrichenes Radfahrer-frei-Schild)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-11 (mapillary)
+#: last_checked: 2025-06-17
 #: check_frequency: 90d
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
 EOF
@@ -48347,6 +48355,28 @@ EOF
        data  => <<EOF,
 #: source_id: LS/221-F/25/045 (bis 13.06.2025) (inaktiv)
 	2::inwork 58453,24209 58473,24656 58448,25456 58632,25849
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Wallstr. Höhe Märkisches Museum: Fahrbahn kann wegen Bauarbeiten für Radfahrer gesperrt sein, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: priority: #A
+#: last_checked: 2025-06-17
+#: check_frequency: 7d
+	q4::inwork 11160,12071 11111,12027 11054,11992
+EOF
+     },
+     { from  => 1750629600, # 2025-06-23 00:00
+       until => $isodate2epoch->("2025-06-26 18:00:00"),
+       text  => 'Grunewaldstr.: Fahrbahn Richtung Westen gesperrt, am 24.6.2025 und 26.6.2025, jeweils von ca. 7:00 bis 18:00 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: GRUNEWALDSTR-2025
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lrrxt3h6ls2h
+#: by: https://bsky.app/profile/infravelo.bsky.social/post/3lrqe23wgpc2r (war auch schon am 17.6.2025 aktiv, die Meldung kam zu spät)
+	q4::inwork; 7471,9360 7418,9366 7299,9346 7202,9329 7118,9315 6994,9288
 EOF
      },
     );
