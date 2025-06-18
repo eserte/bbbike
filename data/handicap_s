@@ -17,7 +17,7 @@ Südkreuz: Bauarbeiten, Engstellen	q3::inwork 7838,7848 7837,7899
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
-Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
+Marktplatz Adlershof: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 20290,3756 20336,3783
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783
 Wegedornstr.: Bauarbeiten, Engstellen	q1::inwork 18881,2062 18922,2238
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782
@@ -2684,6 +2684,8 @@ Loerkesteig: Bordstein	q2 2873,24313 2925,24350
 Loerkesteig: Bordstein	q3 2956,24373 2969,24382
 (Bitterfelder Str./Otto-Rosenberg-Str. - Weg entlang der S-Bahn): enger Trampelpfad	q3 19896,16611 19890,16559
 (Siegfriedshöfe): Gewerbehof	q3 16801,12197 16745,12213 16665,12218
+(An der Villa Bolle - Am Marienhain): Fußgänger	q3 22668,3125 22662,3200 22662,3205
+Straße 36: sehr schmal, kurvig	q4 30073,2814 30066,2831 30071,2843
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

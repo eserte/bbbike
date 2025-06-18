@@ -3810,7 +3810,7 @@ Ravensteiner Promenade: Asphalt	Q0 25260,7224 25262,7433
 (Woltersdorf - Rahnsdorf): Waldweg, einige sandige Stellen	Q2 32053,5870 31478,5635 31060,5489 30853,5453 30686,5428 30505,5474
 Hegemeisterweg (Rahnsdorf): Mosaikpflaster	Q1 30074,5402 30077,5331 30081,5231 30081,5220 30099,4732
 Hegemeisterweg (Rahnsdorf): unbefestigter Weg	Q1 30099,4732 30092,4666
-Hegemeisterweg (Rahnsdorf): unbefestigter Weg	Q1 30099,4732 30124,4664
+Hegemeisterweg (Rahnsdorf): Mosaikpflaster	Q1 30099,4732 30124,4664
 Steinfurther Weg: schlechtes Kopfsteinpflaster	Q3 30082,4506 30192,4487
 Hohenbinder Steig: Asphalt	Q0 30246,4287 30369,4697
 Fichtenauer Str.: Asphalt	Q0 30179,3966 30210,4046 30243,4143 30293,4290
@@ -4241,7 +4241,7 @@ Weg J: unbefestigte Straße	Q2 27831,548 27757,613
 Weg K: unbefestigte Straße	Q2 27770,561 27744,531
 Weg L: unbefestigte Straße	Q2 27783,493 27744,531 27705,560
 Weg M: unbefestigte Straße	Q2 27873,353 27752,458
-Weg N: unbefestigte Straße	Q2 27825,295 27700,402
+Weg N: unbefestigte Straße, kann etwas sandig sein	Q2 27825,295 27700,402
 Weg O: unbefestigte Straße	Q2 27757,613 27705,560
 Mittelbrunner Steig: Asphalt	Q0 27831,548 27893,490 27948,439
 Rodenbacher Gang: Asphalt	Q0 27893,490 28004,617
@@ -4341,7 +4341,7 @@ Hollstr.: schlechtes Kopfsteinpflaster	Q3 20035,4099 19974,4050 19947,4087 19917
 Genossenschaftsstr.: Beton	Q0 19921,4256 19963,4198
 Genossenschaftsstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 19963,4198 20035,4099 20067,4054
 Genossenschaftsstr.: schlechtes Kopfsteinpflaster	Q3 20067,4054 20145,3954 20290,3756
-Genossenschaftsstr.: Kopfsteinpflaster	Q2 20290,3756 20285,3739 20304,3714
+Genossenschaftsstr.: geglättetes Kopfsteinpflaster	Q2 20290,3756 20285,3739 20304,3714
 Marktplatz Adlershof: Kopfsteinpflaster	Q2 20290,3756 20336,3783
 Pfingstberggasse: Beton	Q0 19959,3891 20075,3979 20112,3932 20145,3954
 Eigenheimgasse: schlechtes Kopfsteinpflaster	Q3 19736,3858 19791,3849
@@ -5852,15 +5852,21 @@ Neuhelgoländer Weg: Beton	Q0 29546,2825 29438,2887 29370,2887
 Neuhelgoländer Weg: Asphalt	Q0 29546,2825 29551,2626 29532,2556 29414,2373
 Straße 41 (Müggelheim): fester Sandweg	Q2 30259,2396 30504,2798
 Zu den Müggelheimer Wiesen: Asphalt	Q0 29414,2373 29740,2454 29924,2520 29977,2511
-Zur Fähre: Asphalt	Q0 29968,2986 29985,2917 30014,2781 29977,2511
+Zur Fähre: unbefestigter Weg	Q2 29968,2986 29973,2963
+Zur Fähre: Asphalt	Q0 29973,2963 29983,2921 30012,2773 29977,2511
 Zu den Müggelheimer Wiesen [1-29]: teils fester, teils loser Sandweg	Q2 30259,2396 30070,2470
 Zu den Müggelheimer Wiesen [1-29]: fester Sandweg, holprig	Q2 30070,2470 29977,2511
-Am Bauersee (Müggelheim): Asphalt	Q0 29940,2852 29985,2917 30035,2923
-Straße 34 (Müggelheim): fester, holpriger Sandweg	Q2 30035,2923 30090,2923 30184,2888 30249,2848
-Straße 36 (Müggelheim): unbefestigter Weg, zweispurig	Q2 30047,2782 30090,2923
+Am Bauersee (Müggelheim): Asphalt	Q0 29940,2852 29983,2921 30035,2923
+Straße 34 (Müggelheim): unbefestigte Straße	Q2 30035,2923 30090,2923 30191,2883 30253,2845
+Straße 35 (Müggelheim): unbefestigte Straße	Q2 30012,2773 30060,2767 30135,2746
+Straße 36 (Müggelheim): Rasengittersteine	Q2 30060,2767 30073,2814
+Straße 36 (Müggelheim): unbefestigter Weg	Q2 30073,2814 30066,2831 30071,2843
+Straße 36 (Müggelheim): unbefestigter Weg, zweispurig	Q2 30071,2843 30090,2923
 Straße 36 (Müggelheim): Gras	Q3 30090,2923 30124,3011
-Straße 37: unbefestigter Weg	Q2 30131,2766 30184,2888 30237,2984
-Straße 38 (Müggelheim): unbefestigter Weg	Q2 30208,2757 30249,2848 30321,2982
+Straße 37: unbefestigter Weg	Q2 30145,2793 30191,2883 30220,2940
+Straße 38 (Müggelheim): unbefestigter Weg, zweispurig	Q2 30217,2776 30253,2845
+Straße 38 (Müggelheim): unbefestigter Weg	Q2 30253,2845 30284,2905
+Straße 38 (Müggelheim): unbefestigter Weg, Gras	Q2 30284,2905 30325,2983
 (Schönhorster Str. - Zur Fähre): Waldweg	Q2 30003,2406 30070,2470
 Straße 34 (Müggelheim): unbefestigte Straße	Q2 31113,2548 30964,2556
 Siedlung Schönhorst (Spreestr.): unbefestigte Straße	Q2 30944,2166 31093,2455 31115,2502 31113,2548
@@ -11637,8 +11643,9 @@ Helga-Hahnemann-Str.: Asphalt	Q0 18257,5743 18062,5856
 Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 (Havelländer Ring - Elfriede-Brüning-Str./Eva-Strittmatter-Str.): Asphalt	Q0 23387,15322 23404,15324 23418,15234
 (Eva-Strittmatter-Str. - Kastanienallee): Asphalt	Q0 23536,15252 23550,15261 23661,15282
-An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125 22477,3109
+An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125 22546,3115 22477,3109
 An der Villa Bolle: Verbundsteinpflaster	Q1 22668,3125 22674,3052
+(An der Villa Bolle - Am Marienhain): Verbundsteinpflaster	Q1 22668,3125 22662,3200 22662,3205
 Havelwerke: schlechtes Kopfsteinpflaster	Q3 -1945,15018 -1959,14962
 Havelwerke: Asphalt, kurze Kopfsteinpflasterabschnitte	Q1 -1959,14962 -2082,14997
 Havelwerke: Asphalt	Q0 -2082,14997 -2092,14963
@@ -13463,7 +13470,9 @@ Avenue Charles de Gaulle: Beton	Q0 4098,21809 4153,21742 4204,21705 4240,21690 4
 Avenue Charles de Gaulle: Asphalt	Q0 4290,21635 4305,21619 4343,21602 4380,21609 4497,21694 4525,21714 4631,21788 4698,21705 4747,21645 4778,21633
 Rue Montesquieu: Asphalt	Q0 4655,21939 4437,21775 4311,21681 4316,21633 4305,21619
 Rue Diderot: Asphalt	Q0 4525,21714 4596,21629
-(Weg parallel zur S-Bahn): Asphalt mit einigen Schäden, Verunreinigungen	Q1 26890,5858 27096,5828 28517,5605 29159,5517 29450,5435 30038,5338 30077,5331
+(Weg parallel zur S-Bahn): Asphalt mit einigen Schäden, Verunreinigungen	Q1 26890,5858 27096,5828 28655,5588
+(Weg parallel zur S-Bahn): Feinschotter	Q1 28655,5588 28709,5599 29145,5537 29176,5517
+(Weg parallel zur S-Bahn): Asphalt mit einigen Schäden, Verunreinigungen	Q1 29176,5517 29450,5435 30038,5338 30077,5331
 Burgwallstr.: unbefestigt	Q2 12952,21012 12993,21112 13065,21267
 Burgwallstr.: Kopfsteinpflaster	Q3 13065,21267 13107,21357
 Burgwallstr.: Asphalt	Q0 13107,21357 13136,21419 13158,21471 13171,21532 13177,21595
@@ -14422,7 +14431,8 @@ Mühltaler Str.: guter Asphalt	Q0 21759,7985 21914,7862 22070,7726 22244,7609 223
 Egersfelder Allee: guter Beton	Q0 21901,7548 21942,7571 21978,7614 22070,7726 22138,7830
 Falkstätter Str.: guter Asphalt	Q0 21415,8435 21480,8578 21576,8715 21625,8735 21703,8756 21819,8770 21867,8752
 Hoppendorfer Str.: guter Beton	Q0 21810,7749 21816,7754 21914,7862 21994,7949
-Helbigstr.: schlechtes Kopfsteinpflaster	Q3 20362,3750 20336,3783 20109,4087
+Helbigstr.: Kopfsteinpflaster	Q2 20362,3750 20336,3783
+Helbigstr.: schlechtes Kopfsteinpflaster	Q3 20336,3783 20109,4087
 (Am Spektesee, nördlicher Weg): wassergebundene Decke	Q1 -5694,15115 -5758,15153 -5707,15216 -5706,15255 -5732,15319
 (Am Spektesee, nördlicher Weg): Asphalt	Q0 -5732,15319 -5861,15342 -5936,15352 -5989,15390 -6018,15394 -6030,15396
 (Am Spektesee, nördlicher Weg): Verbundsteinpflaster	Q1 -6030,15396 -6054,15399 -6116,15407
@@ -18966,7 +18976,7 @@ Haeckelstr.: schlechtes Kopfsteinpflaster	Q3; 17468,3979 17379,3932
 Haeckelstr.: schlechtes Kopfsteinpflaster	Q3 17379,3932 17245,3895
 Gemeinschaftsstr.: Verbundsteinpflaster	Q1 19790,3893 19873,3898 19924,3939 19947,3957
 Gemeinschaftsstr.: Verbundsteinpflaster	Q1 19947,3957 20067,4054
-Gemeinschaftsstr.: mäßiges Kopfsteinpflaster	Q2 20067,4054 20109,4087
+Gemeinschaftsstr.: schlechtes Kopfsteinpflaster	Q3 20067,4054 20109,4087
 Löwenstammstr.: Asphalt	Q0 -7961,15552 -7865,15867
 Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q2 15945,10984 16192,10907 16349,10860 16425,10839
 Ibisweg: Asphalt	Q0 14854,4078 14573,3843

@@ -29106,7 +29106,7 @@ Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inw
 #: osm_watch: way id="580507889" version="35"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-18
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -31978,14 +31978,21 @@ EOF
 	q4::inwork; 3406,11849 3416,11768 3441,11601
 EOF
      },
-     { from  => 1687200191, # undef, # 
-       until => 1689428101, # undef, # 1592053810, # undef, # XXX
-       text  => 'Zobtener Str.: Bauarbeiten, 120m lange Engstelle, Straße kann auch komplett gesperrt sein',
+     { from  => undef, # 1687200191, # undef, # 
+       until => undef, # 1689428101, # undef, # 1592053810, # undef, # XXX
+#      text  => 'Zobtener Str.: Bauarbeiten, 120m lange Engstelle, Straße kann auch komplett gesperrt sein',
+       text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: offizielle Umleitung über Fischerstr.
-# REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig) --- #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet? --- #: priority: #A --- #: last_checked: 2023-07-09 --- #: check_frequency: 14d
-	2::inwork 16148,10329 16353,10207
+#: note: laut Bauarbeiter dauern die Bauarbeiten 6 (!) Monate (ab Juni 2025)
+# REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
+#: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
+#: priority: #A
+#: last_checked: 2025-06-18
+#: check_frequency: 10d
+	2::inwork 16539,10097 16353,10207 16148,10329 15758,10578
+# REMOVED ---	2::inwork 16148,10329 16353,10207
 # REMOVED ---	2::inwork 15758,10578 16148,10329
 # REMOVED ---	2::inwork 16353,10207 16539,10097
 EOF
@@ -36457,7 +36464,7 @@ EOF
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
-#: last_checked: 2025-06-13 (bahninfo-forum) vvv
+#: last_checked: 2025-06-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-27 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -39369,7 +39376,7 @@ EOF
 #: osm_watch: way id="37861386" version="27"
 #: osm_watch: way id="1231148375" version="5"
 #: priority: #B
-#: last_checked: 2025-06-13 (bahninfo-forum)
+#: last_checked: 2025-06-18
 #: check_frequency: 120d
 #: next_check: 2025-08-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -46008,14 +46015,14 @@ EOF
        until => undef, # 1748091761, # $isodate2epoch->("2025-05-28 17:00:00"), # 1732213854, # undef, #
 #      text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Fürstenberger Str., wegen Bauarbeiten kann die Fahrbahn gesperrt sein, vom 24.03.2025 bis 28.05.2025',
-      text  => 'Schwedter Str.: Bauarbeiten zwischen Fürstenberger Str. und Oderberger Str., wegen Bauarbeiten kann die Fahrbahn gesperrt sein, Ende der Bauarbeiten unbekannt',
+       text  => 'Schwedter Str.: Bauarbeiten zwischen Fürstenberger Str. und Oderberger Str., wegen Bauarbeiten kann die Fahrbahn gesperrt sein, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHWEDTER-2024
 # REMOVED --- #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
 #: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025) (+ weitere Arbeiten) (inaktiv)
 # REMOVED --- #: note: am 29.03.2025 (Sa) waren die Barrieren weggeschoben und eine Durchfahrt war inoffiziell möglich ---	q4::inwork 10530,14452 10506,14521 10468,14636
-#: last_checked: 2025-06-07 (mapillary)
+#: last_checked: 2025-06-16 (mapillary)
 #: next_check: 2025-06-30 (infravelo)
 	q4::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
 EOF
@@ -46513,16 +46520,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1750253932, # undef, # XXX
        text  => 'Hegemeisterbrücke: Neubau geplant, während der Bauzeit Sperrung der Brücke',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: HEGEMEISTERBRUECKE-2025
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hegemeisterbruecke/ (voraussichtliche Bauzeit: IV. Quartal 2024 bis III. Quartal 2025 (Stand Juni 2024))
 #: by: https://www.tagesschau.de/inland/regional/berlin/rbb-verkehrsverwaltung-63-berliner-bruecken-sind-in-schlechtem-zustand-100.html (2026?)
 #: osm_watch: way id="41523366" version="11"
 #: osm_watch: way id="636625917" version="5"
-#: add_fragezeichen: Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?
-#: last_checked: 2024-06-12 (webpage moddate)
+#: last_checked: 2025-06-18
+#: check_frequency: 360d
 	2::inwork 30081,5231 30081,5220
 EOF
      },
@@ -46938,7 +46946,8 @@ EOF
      { from  => 1739702908, # 2025-02-16 11:48
        until => undef, # 1764543600, # 2025-12-01 00:00
 #      text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Freiheit und Müggelheimer Str. gesperrt, 17.02.2025 bis 30.11.2025',
-       text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Freiheit und Müggelheimer Str. gesperrt, voraussichtlich bis November 2025',
+#      text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Freiheit und Müggelheimer Str. gesperrt, voraussichtlich bis November 2025',
+       text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Rosenstr. und Müggelheimer Str. gesperrt, geplant bis November 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ALTSTADTKOEPENICK-2024
@@ -46947,12 +46956,15 @@ EOF
 #: source_id: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
-#: last_checked: 2025-06-04 vvv
+#: last_checked: 2025-06-18 vvv
+#: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
-	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+# REMOVED (hier mittlerweile offen)	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660
+	q4::inwork 22144,4660 22138,4642 22111,4562
 Platzfläche	q3::inwork 22111,4562 22093,4499
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -47090,7 +47102,7 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T)
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-18
 #: check_frequency: 14d
 #: next_check: 2025-07-03
 	2::inwork 17471,9688 17587,9655
@@ -47529,6 +47541,7 @@ EOF
        until => undef, # XXX
        text  => 'Radickestr., Zinsgutstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
        type  => 'handicap',
+       accept_multi_feature_distance => 2000,
        data  => <<'EOF',
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
@@ -47545,11 +47558,13 @@ EOF
 #: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
-#: note: Beginn ab 10. Juni 2025
-Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
-Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
-#: note: Beginn ab 26.05.2025
-Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
+# REMOVED (ist gewandert?) --- #: note: Beginn ab 10. Juni 2025 --- Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
+#: note: Halteverbotsschilder bis 15.08.2025
+Radickestraße: Einbahnstraße zwischen Friedenstr. und Nipkowstr., offen Richtung Adlergestell	q4::inwork; 20366,3480 20451,3538 20499,3572
+Friedenstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20219,3661 20366,3480
+Sußer Grund: Anbindung an die Radickestraße gesperrt	q3::inwork 20304,3714 20451,3538
+# REMOVED --- Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
+# REMOVED --- #: note: Beginn ab 26.05.2025 --- Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
 # REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
@@ -48085,7 +48100,7 @@ EOF
        text  => 'Angermünde, Eisenbahnüberführung Berliner Str.: Sperrung, evtl. sind auch Radfahrer betroffen, vom 22.05.2025, 07:00 Uhr bis 26.05.2025, 07:00 Uhr sowie vom 10.06.2025, 21:00 Uhr bis 18.06.2025, 05:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 257301425 (bis 18.06.2025)
+#: source_id: 257301425 (bis 18.06.2025) (inaktiv)
 	2::inwork 49566,68311 49650,68406
 EOF
      },
@@ -48377,6 +48392,16 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lrrxt3h6ls2h
 #: by: https://bsky.app/profile/infravelo.bsky.social/post/3lrqe23wgpc2r (war auch schon am 17.6.2025 aktiv, die Meldung kam zu spät)
 	q4::inwork; 7471,9360 7418,9366 7299,9346 7202,9329 7118,9315 6994,9288
+EOF
+     },
+     { from  => 1751493600, # 2025-07-03 00:00
+       until => 1753480799, # 2025-07-25 23:59
+       text  => 'Wildensteiner Straße: Spielstraße zwischen Wandlitzstraße und Ehrlichstraße, freitags zwischen 14:00 und 18:00, vom 4. Juli 2025bis 25. Juli 2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1571253.php
+#: note: Länge der Sperrung 100m
+	q4::temp::play 18627,8475 18528,8331
 EOF
      },
     );

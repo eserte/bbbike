@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-06-15
+#: last_checked: 2025-06-18
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-06-16
+#: last_checked: 2025-06-18
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -264,7 +264,7 @@ Südkreuz: Bauarbeiten, Engstellen	q3::inwork 7838,7848 7837,7899
 #: next_check_id: MARGGRAFFBRUECKE-2023
 #: last_checked: 2025-06-07 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-06-18 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-08-31 (rbb-Verkehrsmeldung) vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
 #: also_indoor: traffic (B,T)
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
@@ -317,14 +317,13 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: by: https://entwicklungsstadt.de/marktplatz-adlershof-fertigstellung-und-einweihung-im-sommer-2025-geplant/
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-darum-verzoegern-sich-die-bauarbeiten-auf-dem-marktplatz-adlershof-li.2323549
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Teileinziehung von Straßenland, nördlicher Strang)
-#: XXX der nördliche Strang soll dauerhaft eingezogen werden
-#: XXX laut osm ist der nördliche Strang fertig und highway=pedestrian, allerdings ohne bicycle=yes
-#: osm_watch: way id="20554168" version="28"
+#: XXX der nördliche Strang soll dauerhaft eingezogen werden (Fußgängerzone? für Radfahrer frei?)
+#: osm_watch: way id="20554168" version="29"
 #: osm_watch: way id="1155308749" version="1"
-#: last_checked: 2025-05-03 (osm) vvv
+#: last_checked: 2025-06-18 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2025-09-01 (BA-Pressemitteilung) vvv
-Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20336,3783 20290,3756
+Marktplatz Adlershof: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 20290,3756 20336,3783
 # REMOVED (hier wieder offen) --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783
 #: next_check ^^^
@@ -732,7 +731,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Oberschöneweide ###
 # 
 #: next_check_id: BRUECKEANDERWUHLHEIDE-2025
-#: last_checked: 2025-06-14 vvv
+#: last_checked: 2025-06-18 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-06-27 vvv
 # REMOVED (hier kommt man eigentlich wieder gut vorbei) --- Rummelsburger Str.: Engstellen durch unnötige Absperrungen, einige Fußgänger	q2::inwork; 18010,7137 17847,7356
@@ -1072,7 +1071,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-06-16
+#: last_checked: 2025-06-18
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -3766,7 +3765,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2025-04-26 vvv
+#: last_checked: 2025-06-18 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -5428,6 +5427,10 @@ Loerkesteig: Bordstein	q3 2956,24373 2969,24382
 (Bitterfelder Str./Otto-Rosenberg-Str. - Weg entlang der S-Bahn): enger Trampelpfad	q3 19896,16611 19890,16559
 # 
 (Siegfriedshöfe): Gewerbehof	q3 16801,12197 16745,12213 16665,12218
+# 
+(An der Villa Bolle - Am Marienhain): Fußgänger	q3 22668,3125 22662,3200 22662,3205
+# 
+Straße 36: sehr schmal, kurvig	q4+ 30073,2814 30066,2831 30071,2843
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

@@ -302,7 +302,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-18
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -508,9 +508,9 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: last_checked: 2025-06-11 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernen des Projekts) vvv
-#: osm_watch: way id="169459736" version="16"
+#: osm_watch: way id="169459736" version="17"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
-#: osm_watch: way id="25278674" version="25"
+#: osm_watch: way id="25278674" version="26"
 Gerichtstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
 #: next_check ^^^
 #: check_frequency ^^^
@@ -4244,7 +4244,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="22"
 #: osm_watch: way id="1090076934" version="5"
 #: osm_watch: way id="1090076933" version="5"
-#: last_checked: 2025-03-16
+#: last_checked: 2025-06-18
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -5084,7 +5084,7 @@ Ravensteiner Promenade: Asphalt	Q0 25260,7224 25262,7433
 (Woltersdorf - Rahnsdorf): Waldweg, einige sandige Stellen	Q2- 32053,5870 31478,5635 31060,5489 30853,5453 30686,5428 30505,5474
 Hegemeisterweg (Rahnsdorf): Mosaikpflaster	Q1- 30074,5402 30077,5331 30081,5231 30081,5220 30099,4732
 Hegemeisterweg (Rahnsdorf): unbefestigter Weg	Q1- 30099,4732 30092,4666
-Hegemeisterweg (Rahnsdorf): unbefestigter Weg	Q1- 30099,4732 30124,4664
+Hegemeisterweg (Rahnsdorf): Mosaikpflaster	Q1- 30099,4732 30124,4664
 Steinfurther Weg: schlechtes Kopfsteinpflaster	Q3 30082,4506 30192,4487
 Hohenbinder Steig: Asphalt	Q0 30246,4287 30369,4697
 #: note: nach Süden hin extrapoliert
@@ -5541,7 +5541,7 @@ Weg J: unbefestigte Straße	Q2 27831,548 27757,613
 Weg K: unbefestigte Straße	Q2 27770,561 27744,531
 Weg L: unbefestigte Straße	Q2 27783,493 27744,531 27705,560
 Weg M: unbefestigte Straße	Q2 27873,353 27752,458
-Weg N: unbefestigte Straße	Q2 27825,295 27700,402
+Weg N: unbefestigte Straße, kann etwas sandig sein	Q2- 27825,295 27700,402
 Weg O: unbefestigte Straße	Q2 27757,613 27705,560
 Mittelbrunner Steig: Asphalt	Q0 27831,548 27893,490 27948,439
 Rodenbacher Gang: Asphalt	Q0 27893,490 28004,617
@@ -5664,11 +5664,12 @@ Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19294,5033 19236,5025
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19306,4969 19241,4958
 Husstr.: Asphalt mit einigen Schäden	Q1 19633,3751 19736,3858 19763,3959 19815,4148
 #: note: und auch keine Bürgersteige, auf die man ausweichen könnte
-Hollstr.: schlechtes Kopfsteinpflaster	Q3 20035,4099 19974,4050 19947,4087 19917,4168
+Hollstr.: schlechtes Kopfsteinpflaster	Q3+ 20035,4099 19974,4050 19947,4087 19917,4168
 Genossenschaftsstr.: Beton	Q0- 19921,4256 19963,4198
 Genossenschaftsstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 19963,4198 20035,4099 20067,4054
 Genossenschaftsstr.: schlechtes Kopfsteinpflaster	Q3 20067,4054 20145,3954 20290,3756
-Genossenschaftsstr.: Kopfsteinpflaster	Q2 20290,3756 20285,3739 20304,3714
+#: historical_note: früher (bis 2025) normales Kopfsteinpflaster
+Genossenschaftsstr.: geglättetes Kopfsteinpflaster	Q2+ 20290,3756 20285,3739 20304,3714
 Marktplatz Adlershof: Kopfsteinpflaster	Q2 20290,3756 20336,3783
 Pfingstberggasse: Beton	Q0 19959,3891 20075,3979 20112,3932 20145,3954
 Eigenheimgasse: schlechtes Kopfsteinpflaster	Q3 19736,3858 19791,3849
@@ -7360,15 +7361,21 @@ Neuhelgoländer Weg: Beton	Q0- 29546,2825 29438,2887 29370,2887
 Neuhelgoländer Weg: Asphalt	Q0 29546,2825 29551,2626 29532,2556 29414,2373
 Straße 41 (Müggelheim): fester Sandweg	Q2 30259,2396 30504,2798
 Zu den Müggelheimer Wiesen: Asphalt	Q0 29414,2373 29740,2454 29924,2520 29977,2511
-Zur Fähre: Asphalt	Q0 29968,2986 29985,2917 30014,2781 29977,2511
+Zur Fähre: unbefestigter Weg	Q2 29968,2986 29973,2963
+Zur Fähre: Asphalt	Q0 29973,2963 29983,2921 30012,2773 29977,2511
 Zu den Müggelheimer Wiesen [1-29]: teils fester, teils loser Sandweg	Q2- 30259,2396 30070,2470
 Zu den Müggelheimer Wiesen [1-29]: fester Sandweg, holprig	Q2 30070,2470 29977,2511
-Am Bauersee (Müggelheim): Asphalt	Q0 29940,2852 29985,2917 30035,2923
-Straße 34 (Müggelheim): fester, holpriger Sandweg	Q2 30035,2923 30090,2923 30184,2888 30249,2848
-Straße 36 (Müggelheim): unbefestigter Weg, zweispurig	Q2 30047,2782 30090,2923
-Straße 36 (Müggelheim): Gras	Q3 30090,2923 30124,3011
-Straße 37: unbefestigter Weg	Q2 30131,2766 30184,2888 30237,2984
-Straße 38 (Müggelheim): unbefestigter Weg	Q2 30208,2757 30249,2848 30321,2982
+Am Bauersee (Müggelheim): Asphalt	Q0 29940,2852 29983,2921 30035,2923
+Straße 34 (Müggelheim): unbefestigte Straße	Q2 30035,2923 30090,2923 30191,2883 30253,2845
+Straße 35 (Müggelheim): unbefestigte Straße	Q2 30012,2773 30060,2767 30135,2746
+Straße 36 (Müggelheim): Rasengittersteine	Q2 30060,2767 30073,2814
+Straße 36 (Müggelheim): unbefestigter Weg	Q2 30073,2814 30066,2831 30071,2843
+Straße 36 (Müggelheim): unbefestigter Weg, zweispurig	Q2 30071,2843 30090,2923
+Straße 36 (Müggelheim): Gras	Q3- 30090,2923 30124,3011
+Straße 37: unbefestigter Weg	Q2 30145,2793 30191,2883 30220,2940
+Straße 38 (Müggelheim): unbefestigter Weg, zweispurig	Q2 30217,2776 30253,2845
+Straße 38 (Müggelheim): unbefestigter Weg	Q2 30253,2845 30284,2905
+Straße 38 (Müggelheim): unbefestigter Weg, Gras	Q2- 30284,2905 30325,2983
 (Schönhorster Str. - Zur Fähre): Waldweg	Q2 30003,2406 30070,2470
 Straße 34 (Müggelheim): unbefestigte Straße	Q2 31113,2548 30964,2556
 Siedlung Schönhorst (Spreestr.): unbefestigte Straße	Q2 30944,2166 31093,2455 31115,2502 31113,2548
@@ -8350,7 +8357,7 @@ Hirtschulzstr.: schlechtes Kopfsteinpflaster	Q3 24316,12566 24195,12558 24077,12
 #: by: https://www.tagesspiegel.de/berlin/pendler-sollen-sicherer-zur-s-bahn-kommen-umbau-von-gefahrlichem-tram-anschluss-im-berliner-sudosten-dauert-noch-jahre-11218738.html (Baubeginn 4. Quartal 2026)
 #: by[nocache]: https://archive.ph/Itttn
 #: XXX Straßenbahnhaltestelle soll auf die Westseite verlegt werden; gemeinsamer Rad- und Gehweg bis zur Schöneicher Str. (Kaphaltestelle?); Kopfsteinpflaster wird durch Asphalt ersetzt; Fußgängerampel vor der Schöneicher Str.
-#: last_checked: 2024-03-20
+#: last_checked: 2025-06-18
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2028-01-01
 Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25601,6158 25584,6029
@@ -13859,8 +13866,9 @@ Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 (Havelländer Ring - Elfriede-Brüning-Str./Eva-Strittmatter-Str.): Asphalt	Q0 23387,15322 23404,15324 23418,15234
 (Eva-Strittmatter-Str. - Kastanienallee): Asphalt	Q0 23536,15252 23550,15261 23661,15282
 # 
-An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125 22477,3109
+An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125 22546,3115 22477,3109
 An der Villa Bolle: Verbundsteinpflaster	Q1+ 22668,3125 22674,3052
+(An der Villa Bolle - Am Marienhain): Verbundsteinpflaster	Q1+ 22668,3125 22662,3200 22662,3205
 # 
 Havelwerke: schlechtes Kopfsteinpflaster	Q3 -1945,15018 -1959,14962
 Havelwerke: Asphalt, kurze Kopfsteinpflasterabschnitte	Q1 -1959,14962 -2082,14997
@@ -18130,11 +18138,17 @@ Rue Montesquieu: Asphalt	Q0 4655,21939 4437,21775 4311,21681 4316,21633 4305,216
 Rue Diderot: Asphalt	Q0 4525,21714 4596,21629
 #: by: ^^^
 # 
-#: by: Ute (karoline):
+#: by: Ute (karoline): vvv
 #: corrected_by: srt (Asphalt, Q0 -> ...)
 #: note: auch laut ADFC-Karte gut befahrbar
 #: note: Asphalt ist stückweise weggebrochen; auf dem Weg können Zweige und kleinere Äste liegen
-(Weg parallel zur S-Bahn): Asphalt mit einigen Schäden, Verunreinigungen	Q1+ 26890,5858 27096,5828 28517,5605 29159,5517 29450,5435 30038,5338 30077,5331
+#: historical_note: bis 2025 Q1+, nun Q1
+(Weg parallel zur S-Bahn): Asphalt mit einigen Schäden, Verunreinigungen	Q1 26890,5858 27096,5828 28655,5588
+#: historical_note: früher befand sind der Weg etwas weiter südlich und war auch asphaltiert
+(Weg parallel zur S-Bahn): Feinschotter	Q1 28655,5588 28709,5599 29145,5537 29176,5517
+#: historical_note: bis 2025 Q1+, nun Q1
+(Weg parallel zur S-Bahn): Asphalt mit einigen Schäden, Verunreinigungen	Q1 29176,5517 29450,5435 30038,5338 30077,5331
+#: by ^^^
 # 
 #: by: David wolff:
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
@@ -21052,7 +21066,11 @@ Hoppendorfer Str.: guter Beton	Q0 21810,7749 21816,7754 21914,7862 21994,7949
 #: by: ^^^
 # 
 #: by: Ilona Lange:
-Helbigstr.: schlechtes Kopfsteinpflaster	Q3 20362,3750 20336,3783 20109,4087
+#: historical_note: früher (bis zu den Bauarbeiten 2025) schlechtes Kopfsteinpflaster, Q3
+Helbigstr.: Kopfsteinpflaster	Q2 20362,3750 20336,3783
+#: confirmed_by: srt
+#: note: der westliche Bürgersteig ist für die Gegend relativ breit und mit Verbundsteinpflaster versehen
+Helbigstr.: schlechtes Kopfsteinpflaster	Q3 20336,3783 20109,4087
 # 
 #: by: Marco Lukowicz: vvv
 #: corrected_by: srt (just wording, "sehr guter Schotterweg" -> ...)
@@ -22434,7 +22452,8 @@ Woltersdorfer Weg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 30092,4666 29982
 #: confirmed_by: srt (added "bis schlechtes")
 Freienbrinker Saum: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 30092,4666 30124,4664
 #: confirmed_by: srt
-Freienbrinker Saum: guter Asphalt	Q0 30124,4664 30254,4692 30369,4697 30478,4715 30527,4724 30588,4720 30636,4717 30686,4731 30810,4765 30857,4770 30913,4766 31011,4750 31118,4768 31209,4781 31224,4775 31311,4742 31339,4726 31364,4711 31424,4658
+#: historical_note: früher guter Asphalt, Q0, mittlerweile hat es etwas nachgelassen
+Freienbrinker Saum: guter Asphalt	Q0- 30124,4664 30254,4692 30369,4697 30478,4715 30527,4724 30588,4720 30636,4717 30686,4731 30810,4765 30857,4770 30913,4766 31011,4750 31118,4768 31209,4781 31224,4775 31311,4742 31339,4726 31364,4711 31424,4658
 #: by: ^^^
 # 
 #: by: Bodo Schlecht: vvv
@@ -32858,7 +32877,8 @@ Haeckelstr.: schlechtes Kopfsteinpflaster	Q3 17379,3932 17245,3895
 Gemeinschaftsstr.: Verbundsteinpflaster	Q1+ 19790,3893 19873,3898 19924,3939 19947,3957
 #: confirmed_by: srt
 Gemeinschaftsstr.: Verbundsteinpflaster	Q1 19947,3957 20067,4054
-Gemeinschaftsstr.: mäßiges Kopfsteinpflaster	Q2 20067,4054 20109,4087
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Gemeinschaftsstr.: schlechtes Kopfsteinpflaster	Q3+ 20067,4054 20109,4087
 #: corrected_by ^^^
 #: by: ^^^
 # 

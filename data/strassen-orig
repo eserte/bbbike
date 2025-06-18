@@ -3694,9 +3694,10 @@ Slevogtweg	N 23608,1210 23552,1468
 Falkendamm	N 23448,2013 23654,2051 23693,2061
 Hirtengarten	N 23654,2051 23634,2148 23638,2185
 Siegfried-Berger-Str.	N 22849,2856 22766,2838 22762,2859 22381,2834
-An der Villa Bolle	N 22790,3135 22668,3125 22477,3109
+An der Villa Bolle	N 22790,3135 22668,3125 22546,3115 22477,3109
 #: osm.highway: service
 An der Villa Bolle	N 22668,3125 22674,3052
+(An der Villa Bolle - Am Marienhain)	NN 22668,3125 22662,3200 22662,3205
 Niebergallstr.	N 23102,1637 23144,1439 23158,1379 23168,1335 23202,1192
 Peter-Gast-Weg	N 23144,1439 23030,1414
 Hugo-Wolf-Steig	N 23168,1335 23053,1308
@@ -7544,6 +7545,7 @@ Weg L	N 27783,493 27744,531 27705,560
 #: note: Privatstraße
 Weg M	N 27873,353 27752,458
 #: note: Privatstraße
+#: alias: Weg Nord
 Weg N	N 27825,295 27700,402
 #: note: Privatstraße
 Weg O	N 27757,613 27705,560
@@ -12151,17 +12153,22 @@ Dorfstr. (Rahnsdorf)	N 30319,3511 30293,3520 30267,3520 30240,3503 30224,3483 30
 Dorfstr. (Rahnsdorf)	N 29921,3079 29998,3170
 Kruggasse	NN 29959,3031 29921,3079
 Kruggasse	N 29921,3079 29902,3104
-Zur Fähre	N 29968,2986 29985,2917 30014,2781 29977,2511
+Zur Fähre	N 29968,2986 29973,2963 29983,2921 30012,2773 29977,2511
 (Schönhorster Str. - Zur Fähre)	NN 30003,2406 30070,2470
 #: note: bei osm im Mittelteil "Heuweg" genannt (aber es existieren keine Schilder)
 (Gosener Damm - Schönhorster Str.)	NN 28789,468 28799,482 29129,864 30284,1362 30565,1485 30611,1563 30877,2086 30944,2166
 #: oldname: Straße 34 (-2009)
-Am Bauersee (Müggelheim)	N 29940,2852 29985,2917 30035,2923
-Straße 34 (Müggelheim)	N 30035,2923 30090,2923 30184,2888 30249,2848
+Am Bauersee (Müggelheim)	N 29940,2852 29983,2921 30035,2923
+Straße 34 (Müggelheim)	N 30035,2923 30090,2923 30191,2883 30253,2845
 Straße 34 (Müggelheim)	N 31113,2548 30964,2556
-Straße 36 (Müggelheim)	N 30047,2782 30090,2923 30124,3011
-Straße 37	N 30131,2766 30184,2888 30237,2984
-Straße 38 (Müggelheim)	N 30208,2757 30249,2848 30321,2982
+#: XXX_osm: bei osm "Zur Fähre"
+Straße 35 (Müggelheim)	N 30012,2773 30060,2767 30135,2746
+Straße 36 (Müggelheim)	N 30060,2767 30073,2814
+Straße 36 (Müggelheim)	NN 30073,2814 30066,2831 30071,2843
+Straße 36 (Müggelheim)	N 30071,2843 30090,2923
+Straße 36 (Müggelheim)	NN 30090,2923 30124,3011
+Straße 37	N 30145,2793 30191,2883 30220,2940
+Straße 38 (Müggelheim)	N 30217,2776 30253,2845 30284,2905 30325,2983
 Zu den Müggelheimer Wiesen	N 29414,2373 29740,2454 29924,2520 29977,2511
 #: note: teilweise als "Straße 35" bezeichnet
 Zu den Müggelheimer Wiesen [1-29]	N 30259,2396 30070,2470 29977,2511
@@ -15963,7 +15970,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-18
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16354,7 +16361,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-18
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
@@ -18169,7 +18176,7 @@ Rue Lamartine	N 4437,21775 4497,21694
 (Weg in der Cité Foch)	NN 4650,21466 4634,21457 4589,21525
 (Weg in der Cité Foch - Place Molière)	NN 4510,21506 4455,21482 4414,21476 4382,21493
 Holstweg	N -1013,2579 -878,2265
-(Weg parallel zur S-Bahn)	NN 26890,5858 27096,5828 28517,5605 29159,5517 29450,5435 30038,5338 30077,5331
+(Weg parallel zur S-Bahn)	NN 26890,5858 27096,5828 28655,5588 28709,5599 29145,5537 29176,5517 29450,5435 30038,5338 30077,5331
 (Gelfertstr. - Faradayweg)	NN 2166,4858 2175,4845 2185,4831
 (Landoltwegbrücke)	NN 2280,4941 2292,4927 2302,4914
 Burgwallstr.	N 12952,21012 12993,21112 13065,21267 13107,21357 13136,21419 13158,21471 13171,21532 13177,21595 13182,21639 13193,21700 13220,21761 13270,21870 13315,21969 13392,22014 13505,22081 13609,22143 13682,22139 13748,22093
@@ -19174,7 +19181,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7343 (Antrag) (abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5TQj0X86Z3AV6QO6ibyHnoLSeLd4YmEqqKXJTU7c/vMYbgDSP/73-Anlagen/06/B1481SB.pdf (Schlussbericht)
-#: last_checked: 2025-03-10 (okas)
+#: last_checked: 2025-06-18
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044

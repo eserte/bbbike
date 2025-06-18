@@ -2040,7 +2040,7 @@ Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wann sind die Straßen ausgeschildert? vvv
-#: last_checked: 2025-06-16 vvv
+#: last_checked: 2025-06-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED (ausgeschildert) --- #: note: nur ein kleines provisorisches Papierschild an der Kreuzung Ulrich-Plenzdorf-Str. hängt an der Hauswand --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15163,10758 15151,10699
 # REMOVED (ausgeschildert) --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15151,10699 15140,10647 15138,10638
@@ -2123,8 +2123,9 @@ Hirzerweg: nicht ausgeschildert	CS 9359,3083 9392,2923 9386,2882 9416,2781
 # REMOVED (deleted) --- #: osm_watch: way id="1066944414" version="6"
 #: osm_watch: way id="1111504176" version="6"
 #: osm_watch: way id="1259033757" version="3"
-#: last_checked: 2024-07-14 (mapillary)
-#: check_frequency: 60d
+#: add_fragezeichen: Hängen mittlerweile Straßenschilder?
+#: last_checked: 2025-06-18
+#: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-12-31
 Clara-Müller-Jahnke-Str.: nicht ausgeschildert	CS 31971,3170 31799,3192 31800,3091 31810,3009 31965,2999
 # 
@@ -2203,6 +2204,10 @@ Straße 478: ausgeschildert zum Bezirksamt Tempelhof-Schöneberg	CP2; 7781,-182 
 #: last_checked: 2025-06-11
 #: check_frequency: 180d
 falsche Ausschilderung der Berlin-Leipzig-Route (Mozartstr. statt Mauerweg)	CP2; 10467,-3201 10491,-3208
+# 
+ausgeschildert: Str.35 zu den Nummern 24 A-C u. 26 A-D ( Karweg )	CP2; 30012,2773 30060,2767
+Straße 36: nicht ausgeschildert	CP2; 30060,2767 30073,2814
+Straße 36: nicht ausgeschildert	CP2; 30090,2923 30124,3011
 # 
 #: section ^^^
 # DO NOT ADD ANYTHING AFTE THIS POINT!

@@ -6,6 +6,15 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: note VIZ: Auf der Schnellerstraße und Oberspreestraße beginnen am Morgen Leitungsarbeiten. Bis Ende Juni ist die Oberspreestraße stadteinwärts zwischen Eisblumensteig und Bruno-Bürgel-Weg für den Kfz-Verkehr gesperrt (srt: für Radfahrer explizit offen). Eine Umleitung ist ausgeschildert. Zusätzlich regelt auf der Schnellerstraße in Höhe Bruno-Bürgel-Weg eine Baustellenampel wechselseitig den Verkehr.
+#: note: Gegenverkehrsstrecke etwa 85m
+#: note: laut rbb bis 25.06.2025
+#: source_id: adac:334064568 (bis voraussichtlich 25.06.2025)
+#: last_checked: 2025-06-18
+#: next_check: 2025-06-25
+#: valid: -20250625
+Oberspreestr./Schnellerstr./Bruno-Bürgel-Weg: Gegenverkehrsregelung	X::inwork::alternating 19328,5304
+# 
 #: source_id: viz2021:13.390889,52.525514,01.04.2025,08:00 (bis 19.07.2025)
 #: note: Richtung Südosten auch Radwegführung auf dem Bürgersteig, Richting Nordwesten sollen Radfahrer via Tucholskystr. und Auguststr. fahren (wegen Tramschienen?!)
 #: last_checked: 2025-06-11 (mapillary)
@@ -373,7 +382,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2025-06-13 (bahninfo-forum) vvv
+#: last_checked: 2025-06-18 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: valid: -20251231 vvv
