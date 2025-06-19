@@ -1172,7 +1172,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraﬂe) bis Mai 2025
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-19
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (osm note)
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
@@ -13374,20 +13374,8 @@ Bergiusstr. - Grenzallee: asphaltiert	Q0 14141,6623 14147,6652 14187,6704 14179,
 (Campus AF 60): Verbundsteinpflaster	Q1+ 18966,11676 18965,11692 18965,11706 18964,11719
 (Campus AF 60): Verbundsteinpflaster	Q1+ 18965,11692 18984,11719
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7739,14119 7784,14147 7875,14204
-#: next_check_id: EUROPACITY-2015
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
-#: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
-#: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=750664#post750664
-#: by: https://www.nachhaltige-erneuerung.berlin/tiergarten-nordring-heidestrasse/otto-weidt-platz
-#: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant)
-# REMOVED (deleted) --- #: osm_watch: way id="1010731431" version="8"
-# REMOVED (Fl‰che verkleinert und nun woanders) --- #: osm_watch: way id="642581102" version="11"
-#: osm_watch: way id="237716413" version="16"
-#: XXX bleibt hier der Asphalt oder kommt hier auch Kleinsteinpflaster hin?
-#: last_checked: 2025-06-08
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2024-10-31
-Otto-Weidt-Platz: Asphalt	Q0 7778,14059 7850,14100
+#: historical_note: bis Juni 2025 provisorisch asphaltiert (Asphalt, Q0)
+Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7778,14059 7850,14100
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7850,14100 7923,14142
 Am Bahnhof Wuhlheide: Betonpflaster	Q0- 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666

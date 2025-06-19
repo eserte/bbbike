@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-06-18
+#: last_checked: 2025-06-19
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 #: valid: -20250630
@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-06-17
+#: last_checked: 2025-06-19
 #: check_frequency: 60d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -1161,7 +1161,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 # 
 #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
 #: also_indoor: traffic (B,T,ex-H,ex-G)
-#: last_checked: 2025-06-09
+#: last_checked: 2025-06-18 (traffic)
 #: check_frequency: 14d (traffic)
 Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
@@ -5155,6 +5155,8 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 #: by: https://www.berliner-woche.de/mitte/c-umwelt/erste-gruene-gullys-in-der-singerstrasse-angelegt-50-weitere-sollen-folgen_a431305
 # REMOVED (Bauarbeiten beendet) --- #: XXX mittlerweile gibt es einige Sitzmöbel auf der Fahrbahn --- #: XXX Bauarbeiten an den Fahrbahnrändern; Absperrungen können früh zum Schulbeginn an beiden Enden der Fußgängerzone aufgestellt sein (einmalig am 2024-09-24 oder regelmäßig?) --- #: last_checked: 2024-11-28 --- #: check_frequency: 30d
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1+ 11635,12398 11845,12292
+# 
+Scharnweberstr.: Fußgängerzone für Radfahrer frei	q1+ 14675,11964 14783,11949
 # 
 #: note: Grünanlagenschild ohne Zusatzschilder
 Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031

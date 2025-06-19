@@ -3250,7 +3250,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-06-08
+#: last_checked: 2025-06-18 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -4579,11 +4579,14 @@ Münsterberger Weg	q3::inwork 24029,11363 23883,11416
        {
          'data' => '#: note: offizielle Umleitung über Fischerstr.
 #: note: laut Bauarbeiter dauern die Bauarbeiten 6 (!) Monate (ab Juni 2025)
+#: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
+#: osm_watch: note 4813149 1
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
 #: last_checked: 2025-06-18
-#: check_frequency: 10d
+#: check_frequency: 30d
+#: next_check: 2026-02-06
 	2::inwork 16539,10097 16353,10207 16148,10329 15758,10578
 # REMOVED ---	2::inwork 16148,10329 16353,10207
 # REMOVED ---	2::inwork 15758,10578 16148,10329
@@ -4591,9 +4594,9 @@ Münsterberger Weg	q3::inwork 24029,11363 23883,11416
 ',
          'from' => undef,
          'id' => 3222,
-         'text' => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis zum 06.02.2026',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1770397200
        },
        {
          'data' => '#: note: permanente Halteverbotsschilder
@@ -6580,7 +6583,20 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.378482,52.51322,30.06.2023,06:00 (inaktiv)
+#: source_id: viz2021:13.379598,52.513471,04.06.2025,11:00 (nun auch Radverkehr, bis 06.06.2025) (inaktiv)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lqrj3rpl5s2m
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifyb63t5nk4gx7pcwqimvcu5puxj7vglsxspnyo47pasf553iju5u@jpeg
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreies7dsygvbmzyugj7lilblrvaym6kqwwd5mcqytzw2w6borruloka@jpeg
+	q4::temp; 8577,11896 8783,11959
+',
+         'from' => 1750354277,
+         'id' => 3839,
+         'text' => 'Hannah-Arendt-Str.: Veranstaltung, Richtung Französische Str. zwischen Ebertstr. und Gertrud-Kolmar-Str. gesperrt, vom 20.06.2025 06:00 bis 24.06.2025 18:00',
+         'type' => 'handicap',
+         'until' => 1750780800
+       },
        undef,
        undef,
        undef,
@@ -7286,7 +7302,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
 #: source_id: viz2021:13.620312,52.523169,16.06.2025,10:00 (nach Norden gewandert, bis 04.07.2025)
-#: source_id: viz2021:13.61963,52.52253,16.06.2025,10:00 (bis 04.07.2025)
+#: source_id: viz2021:13.61963,52.52253,16.06.2025,10:00 (bis 04.07.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: also_indoor: traffic (B,T,re-G)
@@ -7657,10 +7673,10 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
          'data' => '#: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
 #: osm_watch: note 4383533 4
 #: osm_watch: way id="37948631" version="9"
-#: also_indoor: traffic (ex-H,G,B,T,A,ex-W)
-#: last_checked: 2025-06-14 (traffic)
-#: check_frequency: 14d (traffic + altlandsberg website)
-#: next_check: 2025-06-20
+#: also_indoor: traffic (ex-H,G,B,T,A,re-W)
+#: last_checked: 2025-06-19 (traffic)
+#: check_frequency: 10d (traffic + altlandsberg website)
+# REMOVED --- #: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
 ',
          'from' => 1715637600,
@@ -8511,8 +8527,9 @@ Scottweg	q4::inwork -1317,11300 -966,11382
          'data' => '#: by: https://www.tagesspiegel.de/berlin/anschlag-auf-israelische-botschaft-in-berlin-geplant-funf-festnahmen-nach-durchsuchungen-in-potsdam-13249681.html (vom 22.02.2025)
 #: osm_watch: note 4188310 4
 #: also_indoor: traffic (G,B,T,A,W)
-#: last_checked: 2025-02-22 (Tsp) vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2025-06-18 (traffic) vvv
+# REMOVED --- #: check_frequency: 120d vvv
+#: check_frequency: 30d (traffic) vvv
 Auguste-Viktoria-Str.	q4::temp 2664,8458 2670,8563
 Reinerzstr.	q4::temp 2670,8563 2566,8578
 #: check_frequency ^^^
@@ -8892,7 +8909,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        {
          'data' => '#: note: Halteverbotsschilder bis 14.06.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2025-06-14 (traffic)
+#: last_checked: 2025-06-18 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-06-14
 	q4::inwork 6351,9335 6446,9328
@@ -9136,17 +9153,25 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025)
+         'data' => '#: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
+#: also_indoor: traffic (T,G)
+#: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
+#: last_checked: 2025-06-19 (traffic) vvv
+#: check_frequency: 3d vvv
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
+         'dont_check_date' => 1,
          'from' => 1747562400,
          'id' => 4344,
-         'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, vom 19.05.2025 12:00 bis 19.06.2025 17:00',
+         'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, vom 19.05.2025 12:00 bis 19.06.2025 17:00, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1750345200
+         'until' => undef
        },
        undef,
        {

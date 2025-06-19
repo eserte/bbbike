@@ -1897,9 +1897,8 @@ Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 782
 (Heidestr. - Europaplatz Nord)	N 8071,13521 8010,13450
 # REMOVED (nicht mehr) --- #: note: blaues Straßenschild vvv
 Otto-Weidt-Platz	NN 7923,14142 7850,14100
-#: osm.highway: service
-#: note: Einfahrt verboten, Anlieger frei
-Otto-Weidt-Platz	N 7850,14100 7778,14059
+#: historical_note: früher osm.highway: service; Einfahrt verboten, Anlieger frei; cat=N
+Otto-Weidt-Platz	NN 7850,14100 7778,14059
 # REMOVED (nicht mehr) --- #: note ^^^
 Otto-Weidt-Platz	NN 7739,14119 7784,14147 7875,14204
 (nördlicher Otto-Weidt-Platz - Golda-Meir-Steg)	NN 7784,14147 7827,14152 7861,14133
@@ -13495,13 +13494,7 @@ Scharnweberstr. (Friedrichshain)	N 14354,12012 14468,11992 14589,11975 14675,119
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1561419.php (Beginn der baulichen Umsetzung)
 #: by: https://entwicklungsstadt.de/friedrichshain-schafft-erste-schulzone-mehr-sicherheit-vor-der-jane-goodall-grundschule/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/vor-dieser-schule-in-berlin-sind-autos-verboten-tischtennis-und-blumen-statt-parkplatzen-13729912.html
-# REMOVED (deleted) --- #: osm_watch: way id="1051634661" version="11"
-#: osm_watch: way id="1388649610" version="2"
-#: osm_watch: note 4668723 8
-# REMOVED (mittlerweile Poller, noch keine Ausschilderung) --- #: XXX zurzeit (noch?) keine Ausnahme für Radfahrer, evtl. weil noch Markierungsarbeiten erfolgen? --- 
-#: add_fragezeichen: Kommen noch die entsprechenden Schilder (Fußgängerzone, Radfahrer frei?)? Ist ein handicap_s-Eintrag notwendig?
-#: last_checked: 2025-06-14
-#: check_frequency: 14d
+# REMOVED (deleted) --- #: osm_watch: way id="1051634661" version="11" --- #: osm_watch: way id="1388649610" version="2" --- #: osm_watch: note 4668723 8 --- # REMOVED (mittlerweile Poller, noch keine Ausschilderung) --- #: XXX zurzeit (noch?) keine Ausnahme für Radfahrer, evtl. weil noch Markierungsarbeiten erfolgen? --- #: add_fragezeichen: Kommen noch die entsprechenden Schilder (Fußgängerzone, Radfahrer frei?)? Ist ein handicap_s-Eintrag notwendig? --- #: last_checked: 2025-06-14 --- #: check_frequency: 14d
 #: historical_note: früher (bis Mai 2025) N
 Scharnweberstr. (Friedrichshain)	NN 14675,11964 14783,11949
 Scharnweberstr. (Friedrichshain)	N 14783,11949 14888,11934
