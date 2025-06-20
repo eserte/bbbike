@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-06-18
+#: last_checked: 2025-06-20
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -264,7 +264,7 @@ Südkreuz: Bauarbeiten, Engstellen	q3::inwork 7838,7848 7837,7899
 #: next_check_id: MARGGRAFFBRUECKE-2023
 #: last_checked: 2025-06-07 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-08-31 (rbb-Verkehrsmeldung) vvv
+#: next_check: 2025-08-31 (rbb-Verkehrsmeldung, VIZ-Verkehrsmeldung) vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
 #: also_indoor: traffic (B,T)
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
@@ -384,7 +384,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2025-03-20
+#: last_checked: 2025-04-24 (orthofotos)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -919,7 +919,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 # 
 #: source_id: viz2021:13.428865,52.484307,28.04.2025,07:00 (bis 28.02.2026)
-#: last_checked: 2025-06-06
+#: last_checked: 2025-06-20
 #: check_frequency: 120d
 #: next_check: 2026-02-28
 #: valid: -20260228
@@ -5256,7 +5256,7 @@ Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 #: osm_watch: way id="542223826" version="15"
 #: osm_watch: way id="1294822443" version="1"
 #: historical_note: früher: Borkumstr.: Schulgelände	q2 11335,17807 11412,17823
-#: last_checked: 2025-01-18
+#: last_checked: 2025-04-24 (orthofotos)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2025-04-30
 Borkumstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11335,17807 11412,17823

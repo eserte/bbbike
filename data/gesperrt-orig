@@ -223,7 +223,7 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025) (bis 19.09.2025)
 #: source_id: viz2021:13.45427,52.4939,16.05.2025,14:26 (bis 19.09.2025) (inaktiv)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-06-12
+#: last_checked: 2025-06-20
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-09-19 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
@@ -4327,9 +4327,9 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 # REMOVED --- #: osm_watch: way id="271172796" version="6"
 # REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
 #: XXX Bebauungsplan 7-77VE: ggfs. gibt es hier noch weitere Straßen/Wegverbindungen (z.B. sieht man bei osm einen vollständigen Kreis)
-#: last_checked: 2025-03-16 (mapillary)
+#: last_checked: 2025-04-24 (orthofotos)
 #: check_frequency: 120d
-#: next_check: 2026-07-31 (bonovia website)
+#: next_check: 2026-07-31 (bonova website)
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_56_5397_5484_online.pdf (Straßenlandwidmung, nur für Fußgänger/Radfahrer)
@@ -5168,6 +5168,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berliner-woche.de/mitte/c-bauen/stiftung-mitte-berlin-veroeffentlicht-ergebnis-einer-umfrage-zur-gestaltung-der-innenstadt_a398281
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_16_1065_1112_online.pdf (Umlegungsverfahren (für den B-Plan))
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf (Umlegungsverfahren, Berichtigung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_26_1645_1696_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
 #: last_checked: 2025-06-10 (webcam)
 #: check_frequency: 90d
@@ -5627,7 +5628,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: osm_watch: node id="245006076" version="6"
 #: osm_watch: node id="245006075" version="7"
 #: osm_watch: way id="1272587928" version="2"
-#: last_checked: 2025-04-09
+#: last_checked: 2025-04-24 (orthofotos)
 # REMOVED --- #: check_frequency: 720d
 #: next_check: 2025-06-30 (Baustellenschild)
 Löwenbrücke: Neubau	2:inwork 6417,11796 6438,11784

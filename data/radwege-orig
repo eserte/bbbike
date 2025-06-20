@@ -350,7 +350,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-06-15 vvv
+#: last_checked: 2025-06-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1337,7 +1337,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-06-12 vvv
+#: last_checked: 2025-06-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1594,6 +1594,7 @@ Radweg stellenweise noch sichtbar, aber durch Baumscheiben unterbrochen	RW0; 111
 	RW2; 8098,13419 8057,13400 8003,13374 7901,13324 7842,13292 7816,13276 7759,13246
 asphaltiert	RW1; 19181,13485 19192,13350
 # 
+#: by: https://entwicklungsstadt.de/lehrter-campus-weiteres-grundstueck-am-berliner-hauptbahnhof-wird-bebaut/
 #: note: laut rbb ab 2022-05-19 09:00, bis Anfang 2025; mittlerweile bis 31.12.2024
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
@@ -3021,7 +3022,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1; mittlerweile (Januar 2025) ist es wieder da
-#: last_checked: 2025-06-04 (mapillary)
+#: last_checked: 2025-06-18 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 	RW2; 12543,11521 12645,11673
@@ -3136,7 +3137,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-06-12
+#: last_checked: 2025-06-20
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3162,8 +3163,10 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552
 Busspur ist immer gültig, Be/Entladen Mo-Fr 9-14 Uhr frei	RW5; 13892,9365 13923,9405 13973,9465 14060,9574
 asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
+#: last_checked: 2025-06-20
 #: historical_note: früher, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
-Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 14089,9610 14060,9574 13973,9465
+#: historical_note: ganz früher sowie bis Mitte Juni 2025: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr, RW0;
+provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 13973,9465
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
@@ -8258,14 +8261,14 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4; 11117,10326 10975,10334
 #: next_check_id: GITSCHINER-2025
-#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025)
+#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025)
 #: source_id: viz2021:13.410603,52.498491,30.01.2025,13:57 (bis 31.03.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
 #: last_checked: 2025-06-03 vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2025-08-29 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-06-23 (VIZ-Verkehrsmeldung) vvv
 #XXX	RW4; 10975,10334 10871,10322
 #XXX	RW4; 10871,10322 10975,10334
 Gehweg für Radfahrer frei	RW1; 10975,10334 10871,10322
@@ -8676,7 +8679,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-04-24 (VIZ-Verkehrsmeldung aufgehoben) vvv
 #: next_check: 2025-06-30 (infravelo) vvv
-#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025)
+#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025)
 # REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle
 #: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;, danach provisorischer Radweg auf Hochbord
 Gehweg für Radfahrer frei	RW1; 10871,10322 10708,10312
@@ -9150,8 +9153,7 @@ Leitboys, Grünbeschichtung, Poller	RW4; 12025,7852 12041,7788 12057,7744
 Poller	RW4; 12057,7744 12075,7696
 Grünbeschichtung	RW4; 12075,7696 12081,7679 12090,7651
 Grünbeschichtung, einige Leitboys	RW4; 12090,7651 12121,7555 12123,7549
-	RW3; 12123,7549 12158,7449
-Markierung fehlt noch	RW0; 12158,7449 12185,7381
+	RW3; 12123,7549 12158,7449 12185,7381
 #: note: ansonsten wäre es RW3
 provisorische Radspur, meistens zugeparkt	RW0; 12185,7381 12221,7271
 Radspur hinter parkenden Autos, Poller, Grünbeschichtung	RW4; 12221,7271 12244,7205
@@ -9457,6 +9459,7 @@ Verbundsteinpflaster	RW1; 4952,17122 4929,17069 4897,17040
 	RW3; 7834,7131 7932,7178
 # 
 	RW4?;RW4? -8371,13186 -8358,13340
+	RW4?; -8367,13409 -8358,13340
 # 
 #: note: ... allerdings zu wenig, um als Radweg zu zählen
 die nördliche Fahrbahnseite hat einen Streifen mit einem anderen Rot mit Radfahr-Piktogrammen in beide Richtungen	RW0;RW0 7781,-182 8054,-198

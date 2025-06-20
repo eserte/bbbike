@@ -80,14 +80,14 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 #: valid: -20250711
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
-#: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025) (bis 23.06.2025)
-#: source_id: viz2021:13.408041,52.512493,13.05.2025,13:14 (bis 20.05.2025) (inaktiv)
-#: last_checked: 2025-06-17
-#: next_check: 2025-06-23
-#: valid: -20250623
-# REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
-# REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
-Neue Roßstr./Wallstr.	X::inwork 10722,11816
+# REMOVED --- #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025) (bis 23.06.2025)
+# REMOVED --- #: source_id: viz2021:13.408041,52.512493,13.05.2025,13:14 (bis 20.05.2025) (inaktiv)
+# REMOVED --- #: last_checked: 2025-06-18 (mapillary)
+# REMOVED --- #: next_check: 2025-06-23
+# REMOVED --- #: valid: -20250623
+# REMOVED --- # REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10642,11901
+# REMOVED --- # REMOVED (gewandert) --- Fischerinsel: Gegenverkehrsregelung	X::inwork::alternating 10687,11853
+# REMOVED --- Neue Roßstr./Wallstr.	X::inwork 10722,11816
 # 
 # REMOVED --- #: source_id: viz2021:13.486871,52.577222,11.11.2024,07:00 (bis 14.02.2025)
 # REMOVED --- #: note: Länge der Gegenverkehrsstrecke: 50m
@@ -545,7 +545,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2025-06-04 (mapillary)
+#: last_checked: 2025-06-18 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -2868,7 +2868,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-06-12
+#: last_checked: 2025-06-20
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
@@ -3979,7 +3979,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2025-06-06
+#: last_checked: 2025-06-20
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 	X::inwork 12185,7381

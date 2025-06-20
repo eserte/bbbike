@@ -11554,12 +11554,14 @@ EOF
 	q4::inwork 9994,-8220 10115,-8276
 EOF
      },
-     { from  => 1206914400, # 2008-03-31 00:00
-       until => 1207346400, # 2008-04-05 00:00
-       text  => 'L 233 Bahnhofstraße Bahnübergang OD Rehfelde Arbeiten Bahnübergang Vollsperrung 01.04.2008-04.04.2008 ',
+     { from  => $isodate2epoch->("2025-06-29 00:00:00"), # 1206914400, # 2008-03-31 00:00
+       until => $isodate2epoch->("2025-07-12 22:00:00"), # 1207346400, # 2008-04-05 00:00
+#      text  => 'L 233 Bahnhofstraße Bahnübergang OD Rehfelde Arbeiten Bahnübergang Vollsperrung 01.04.2008-04.04.2008 ',
+       text  => 'Rehfelde: Bahnübergang gesperrt, evtl. sind auch Radfahrer betroffen, vom 30.06.2025 bis 12.07.2025',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 45856,14437 45740,14260
+#: source_id: 256400817 (bis 12.07.2025)
+	2::inwork 45856,14437 45740,14260 45732,14245
 EOF
      },
      { from  => 1207346400, # 2008-04-05 00:00
@@ -36278,7 +36280,7 @@ EOF
 # REMOVED --- #: next_check: 2023-07-31
 # REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: osm_watch: note 4794007 1
-#: last_checked: 2025-06-12 vvv
+#: last_checked: 2025-06-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege
@@ -36286,6 +36288,8 @@ Weserstr. zwischen Innstr. und Treptower Str.	q4::inwork 13217,8493 13384,8354 1
 #: source_id: bvg2024:171#HIM_FREETEXT_286260
 #: by: https://fahrinfo.vbb.de/him-uploads/1748254774225_Kartenausschnitt_Treptower_Str.png
 #: also_indoor: traffic (T)
+#: note: Länge der Sperrung ca. 50m
+#: XXX_prog: eigentlich q4+::inwork;
 Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: next_check ^^^
 #: check_frequency ^^^
@@ -37981,7 +37985,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2023/01/11/senat-plant-auszug-der-fluechtlinge-aus-terminals-in-tegel/ (bis Mitte März 2023; allerdings bleibt Terminal C möglicherweise weiterhin als Unterkunft erhalten)
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
-#: last_checked: 2024-09-18 vvv
+#: last_checked: 2025-04-24 (orthofotos) vvv
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="272993611" version="7"
@@ -40782,6 +40786,7 @@ EOF
        data  => <<'EOF',
 #: source_id: viz2021:13.378482,52.51322,30.06.2023,06:00 (inaktiv)
 #: source_id: viz2021:13.379598,52.513471,04.06.2025,11:00 (nun auch Radverkehr, bis 06.06.2025) (inaktiv)
+#: source_id: viz2021:13.37721,52.51308,20.06.2025,06:00 (bis 24.06.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lqrj3rpl5s2m
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifyb63t5nk4gx7pcwqimvcu5puxj7vglsxspnyo47pasf553iju5u@jpeg
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreies7dsygvbmzyugj7lilblrvaym6kqwwd5mcqytzw2w6borruloka@jpeg
@@ -40904,10 +40909,12 @@ Friedrichstr.: Sperrung wegen Aktion des WWF	q4::temp 9393,12000 9405,11903 9418
 EOF
      },
      { from  => 1695149689, # 1690581600, # 2023-07-29 00:00
-       until => $isodate2epoch->("2025-08-31 23:59:59"), # 1734822000, # 2024-12-22 00:00
-       prewarn_days => 16,
-       text  => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr, Bauarbeiten dauern bis Ende August 2025',
-       # (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024', # , Start der Bauarbeiten voraussichtlich am 5.10.2023
+       until => $isodate2epoch->("2025-07-11 18:00:00"), # $isodate2epoch->("2025-08-31 23:59:59"), # 1734822000, # 2024-12-22 00:00
+       dont_check_date => 1,
+#      prewarn_days => 16,
+#      (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024', # , Start der Bauarbeiten voraussichtlich am 5.10.2023
+#      text  => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr, Bauarbeiten dauern bis Ende August 2025',
+       text  => 'Kronprinzessinnenweg: Sperrung wegen Bauarbeiten der Wasserbetriebe zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr; außerdem Vollsperrung vom 30.06.2025 bis 11.07.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
@@ -40923,8 +40930,9 @@ EOF
 #: by: https://www.stadtrand-nachrichten.de/kronprinzessinnenweg-steglitz-zehlendorf-berlin/
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kronprinzessinnenweg-voll-gesperrt_a394925
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/bauarbeiten-am-kronprinzessinnenweg-haben-begonnen_a398941
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1572015.php (Abschluss der Bauarbeiten)
 #: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025) (inaktiv)
-#: source_id: viz2021:13.228732,52.464169,05.10.2023,07:00 (bis 31.08.2025)
+#: source_id: viz2021:13.228732,52.464169,05.10.2023,07:00 (bis 31.08.2025) (bis 30.06.2025 + weitere Arbeiten)
 #: osm_watch: way id="50830991" version="27"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
@@ -40932,7 +40940,7 @@ EOF
 #: XXX laut osm nun offen
 #: last_checked: 2025-06-01
 #: check_frequency: 30d
-#: next_check: 2025-08-31
+#: next_check: 2025-07-11 (BA-Pressemitteilung)
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
      },
@@ -45123,16 +45131,20 @@ EOF
 	2::inwork 11275,8387 11282,8428 11279,8489 11259,8591
 EOF
      },
-     { from  => 1722618239, # 2024-08-02 19:03
-       until => 1734532309, # undef, # 1726351200, # 2024-09-15 00:00
-#       text  => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, voraussichtlich bis 14.9.2024, evtl. wird verlängert',
-       text  => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, Ende der Bauarbeiten unbekannt',
+     { from  => 1750438004, # 1722618239, # 2024-08-02 19:03
+       until => undef, # 1734532309, # undef, # 1726351200, # 2024-09-15 00:00
+#      text  => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, voraussichtlich bis 14.9.2024, evtl. wird verlängert',
+#      text  => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, Ende der Bauarbeiten unbekannt',
+       text  => 'Rochowstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (H,B,T,G)
-#: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10.
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-12-18 --- #: check_frequency: 14d --- #: next_check: 2024-10-31
-	q4::inwork; 14103,10489 14170,10675
+# REMOVED --- #: also_indoor: traffic (H,B,T,G) --- #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10. --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-12-18 --- #: check_frequency: 14d --- #: next_check: 2024-10-31
+#	q4::inwork; 14103,10489 14170,10675
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (H,T)
+#: last_checked: 2025-06-20
+#: check_frequency: 14d
+	q4::inwork 14103,10489 14170,10675
 EOF
      },
      { from  => undef, # 
@@ -46513,6 +46525,7 @@ EOF
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12853 (Anfrage)
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12861 (Anfrage (Arbeiten wurden eingestellt?))
 #: by: https://www.morgenpost.de/bezirke/spandau/article409287700/brueckeneinsturz-am-spektesee-fussgaengerweg-komplett-gesperrt.html (mittlerweile zusammengebrochen)
+#: by: https://www.morgenpost.de/bezirke/spandau/article409294029/brandstiftung-verdacht-bei-eingestuerzter-spektesee-bruecke.html (Neubau beginnt in den kommenden Wochen (Stand Juni 2025))
 #: osm_watch[closed]: note 4537179 1
 #: osm_watch: way id="14438318" version="8"
 #: add_fragezeichen: Ist der Steg weiterhin gesperrt?
@@ -46840,7 +46853,7 @@ EOF
        data  => <<EOF,
 #: note: außerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen?
 #: note: in der Eweststr. ist der Gehweg für Radfahrer frei (siehe Mapillary), deshalb q4 -> q3
-#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025) (bis 20.06.2025)
+#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025) (bis 20.06.2025) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474
 #: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
 Pasewalker Str.	q3::inwork; 12121,20969 12158,21166
@@ -47230,8 +47243,9 @@ EOF
      },
      { from  => $isodate2epoch->("2025-03-15 00:00:00"), # 1741496400, # 2025-03-09 06:00
        prewarn_days => 2,
-       until => 1751554800, # 2025-07-03 17:00
-       text  => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, vom 17.03.2025 06:00 bis 03.07.2025 17:00',
+       until => $isodate2epoch->("2025-07-18 18:00:00"), # 1751554800, # 2025-07-03 17:00
+#      text  => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, vom 17.03.2025 06:00 bis 03.07.2025 17:00',
+       text  => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, vorraussichtlich bis 18.07.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-schwedter-steg-baustelle-prenzlauer-berg-id222297.html (Bauarbeiten sollen im August 2024 beginnen und 16 Wochen dauern)
@@ -47245,11 +47259,13 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/fussgangerbrucke-schwedter-steg-wird-fur-sanierung-gesperrt/
 #: by: https://www.tagesspiegel.de/berlin/fussgangerbrucke-in-pankow-wird-saniert-schwedter-steg-ab-17-marz-knappe-vier-monate-gesperrt-13343986.html
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901517353940390368
+#: by: https://www.morgenpost.de/bezirke/pankow/article409300680/berlin-prenzlauer-berg-angriffe-auf-gesperrte-bruecke-schwedter-steg-oeffnet-trotzdem.html (Eröffnung am 18.7.2025)
+#: by: https://www.tagesspiegel.de/berlin/schwedter-steg-in-berlin-voll-gesperrt-sanierung-am-mauerpark-verzogert-sich-wegen-vandalismus-13882870.html
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025)
 #: osm_watch: note 4317053 7
 #: osm_watch: way id="1149646787" version="5"
 #: last_checked: 2025-06-10 (mapillary)
-#: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite)
+#: next_check: 2025-07-03 (VIZ-Verkehrsmeldung, SenUMVK-Seite, aber siehe MoPo-Artikel)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 EOF
      },
@@ -47551,9 +47567,9 @@ EOF
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
 #: note: Trafficmeldungen scheinen ungenau zu sein
-#: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe
+#: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: nächste Sperrung: mehrere mit "Termin folgt"
-#: next_check: 2025-06-20 (gibt es eine nächste Sperrung?)
+#: next_check: 2025-07-01 (gibt es eine nächste Sperrung? Radickestr. voraussichtlich bis 18.07.2025 oder 15.08.2025)
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025)
 #: source_id: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraßenregelung in der Radickestraße?)
@@ -47773,7 +47789,7 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-06-13 vvv
+#: last_checked: 2025-06-18 (mapillary) vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -47894,18 +47910,16 @@ Französische Str.	2::temp 8901,12008 9076,12054 9183,12076 9384,12103
 EOF
      },
      { from  => 1746604620, # 2025-05-07 09:57
-       until => undef, # XXX
+       until => 1750441868, # undef, # XXX
        text  => 'Am Kornfeld: Havarie, zwischen Alt-Kaulsdorf und Hornsteiner Weg gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 20.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.59872,52.50501,08.05.2025,09:57
 #: source_id: adac:184667102 (bis 20.06.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lopunzh3jc2v
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lrzszpihoc2l (beendet)
 #: note: bei rbb mittlerweile entfernt; wieder da, mittlerweile bis 20.06.2025
-#: also_indoor: traffic (H,G,ex-T,A,W)
-#: last_checked: 2025-06-13 (traffic)
-#: check_frequency: 21d
-#: next_check: 2025-06-20 (rbb, adac)
+# REMOVED --- #: also_indoor: traffic (H,G,ex-T,A,W) --- #: last_checked: 2025-06-13 (traffic) --- #: check_frequency: 21d --- #: next_check: 2025-06-20 (rbb, adac)
 	q4::inwork 23679,11372 23654,11285 23648,11265
 EOF
      },
@@ -48227,7 +48241,7 @@ EOF
        text  => 'Alt-Kladow: Bauarbeiten zwischen Sakrower Kirchweg und Imchenplatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 26.05.2025 08:00 bis 20.06.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.145424,52.452549,26.05.2025,08:00 (bis 20.06.2025)
+#: source_id: viz2021:13.145424,52.452549,26.05.2025,08:00 (bis 20.06.2025) (inaktiv)
 	q4::inwork -6811,4893 -6947,4861 -7038,4885 -7080,4896
 EOF
      },
@@ -48252,17 +48266,17 @@ EOF
 EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
-       until => 1750431600, # 2025-06-20 17:00
-       text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, vom 02.06.2025 07:00 bis 20.06.2025 17:00',
+       until => $isodate2epoch->("2025-06-24 17:00:00"), # 1750431600, # 2025-06-20 17:00
+       text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, vom 02.06.2025 07:00 bis 24.06.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025)
+#: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025)
 # REMOVED (Einbahnstraße offen für Radfahrer) --- Bouchéstr.: geplante Sperrung (wegen der Umleitung?)	?; 13489,9456 13602,9581
 #: source_id: bvg2024:194#HIM_FREETEXT_286893
-#: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025)
+#: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025)
 #: source_id: adac:738022488 (bis 20.06.2025)
 Karl-Kunger-Str.: Einfahrt Richtung Westen gesperrt (wenige Meter)	q3::inwork; 13614,9333 13489,9456
-#: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025)
+#: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025)
 #: source_id: adac:90391862 (bis 20.06.2025)
 Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::inwork 13614,9333 13715,9455
 EOF
