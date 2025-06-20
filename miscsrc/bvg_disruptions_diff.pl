@@ -39,7 +39,7 @@ my $debug;
 my $ignore_boring = 1;
 my $use_wdiff;
 my $sort_by = 'date';
-my $show_reldate = 1;
+my $show_reldate = undef; # defaults to 1 if prereqs are met
 GetOptions(
 	   "old-version=s" => \$old_version,
 	   "new-version=i" => \$new_version,
@@ -61,10 +61,19 @@ $sort_by =~ m{^(date|title)$}
     or die "usage: allowed --sort-by are 'date' (default) and 'title'\n";
 my($sort_by_key1, $sort_by_key2) = ($sort_by eq 'title' ? qw(_title _date) : qw(_date _title));
 
-if ($show_reldate) {
-    require DateTime;
-    require DateTime::Format::ISO8601;
-    require DateTime::Format::Strptime;
+if ($show_reldate || !defined $show_reldate) {
+    eval {
+	require DateTime;
+	require DateTime::Format::ISO8601;
+	require DateTime::Format::Strptime;
+    };
+    if ($@) {
+	if ($show_reldate) {
+	    die $@;
+	}
+    } elsif (!defined $show_reldate) {
+	$show_reldate = 1;
+    }
 }
 
 my $sourceids = load_sourceids();
@@ -359,12 +368,6 @@ sub load_sourceids {
     }
     \%bvg_sourceids;
 }
-
-use strict;
-use warnings;
-use DateTime;
-use DateTime::Format::ISO8601;
-use DateTime::Format::Strptime;
 
 sub append_relative_date {
     my($datestr) = @_;
