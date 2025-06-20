@@ -357,10 +357,12 @@ function doLeaflet() {
     var cyclosmAttribution = '\u00a9 <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors. Tiles style by <a href="https://www.cyclosm.org">CyclOSM</a> hosted by <a href="https://openstreetmap.fr">OpenStreetMap France</a>';
     var cyclosmTileLayer = new L.TileLayer(cyclosmUrl, {maxZoom: 19, attribution: cyclosmAttribution});
 
-    var berlinAerialYear = '2024';
-    var berlinAerialVariant = '-dop20rgbi';
-    var berlinAerialNewestUrl = 'https://tiles.codefor.de/berlin-' + berlinAerialYear + berlinAerialVariant + '/{z}/{x}/{y}.png';
-    var berlinAerialAttribution = M("Kartendaten") + ': <a href="https://fbinter.stadt-berlin.de/fb/berlin/service_intern.jsp?id=a_luftbild' + berlinAerialYear + '_true_rgbi@senstadt&type=FEED">Geoportal Berlin / Digitale farbige TrueOrthophotos ' + berlinAerialYear + '</a>';
+    var berlinAerialYear = '2025';
+    //var berlinAerialVariant = '-dop20rgbi';
+    var berlinAerialVariant = '-dop20rgb';
+    var berlinAerialNewestUrl = 'https://tiles.codefor.de/berlin/geoportal/luftbilder/' + berlinAerialYear + berlinAerialVariant + '/{z}/{x}/{y}.png';
+    //var berlinAerialAttribution = M("Kartendaten") + ': <a href="https://fbinter.stadt-berlin.de/fb/berlin/service_intern.jsp?id=a_luftbild' + berlinAerialYear + '_true_rgbi@senstadt&type=FEED">Geoportal Berlin / Digitale farbige TrueOrthophotos ' + berlinAerialYear + '</a>';
+    var berlinAerialAttribution = M("Kartendaten") + ': Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin / Digitale farbige Orthophotos ' + berlinAerialYear + ' (DOP20RGB)';
     var berlinAerialTileLayer = new L.TileLayer(berlinAerialNewestUrl, {maxZoom: 20, attribution: berlinAerialAttribution});
 
     var bvgStadtplanUrl = 'https://stadtplan.bvg.de/api/data/20/{z}/{x}/{y}.png';
