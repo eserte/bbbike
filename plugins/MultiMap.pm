@@ -20,14 +20,14 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.42;
+$VERSION = 2.43;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
 use vars qw(%images);
 
 my $map_compare_use_bbbike_org = 1;
-my $newest_berlin_aerial_year = '2024'; # used in MapCompare and Rapid
+my $newest_berlin_aerial_year = '2025'; # used in MapCompare and possibly Rapid
 my $newest_berlin_aerial = 'berlin-historical-'.$newest_berlin_aerial_year;
 
 $main::devel_host = $main::devel_host if 0; # cease -w
@@ -1496,13 +1496,13 @@ sub show_mapcompare_menu {
 	     # whole of Brandenburg
 	     showmap_mapcompare
 		 (maps => [qw(
+				 berlin-historical-2025
 				 berlin-historical-2024
 				 berlin-historical-2023
 				 berlin-historical-2022
 				 berlin-historical-2021
 				 lgb-satellite-color
 				 berlin-historical-2019
-				 berlin-historical-2018
 				 google-satellite
 			    )],
 		  %args,
