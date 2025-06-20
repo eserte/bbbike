@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -39,6 +39,7 @@ my $debug;
 my $ignore_boring = 1;
 my $use_wdiff;
 my $sort_by = 'date';
+my $show_reldate = 1;
 GetOptions(
 	   "old-version=s" => \$old_version,
 	   "new-version=i" => \$new_version,
@@ -47,17 +48,24 @@ GetOptions(
 	   'as-yaml' => \my $as_yaml,
 	   "debug" => \$debug,
 	   "sort-by=s" => \$sort_by,
+	   'show-reldate!' => \$show_reldate,
 	   'json-file=s' => \$json_file,
 	  )
     or die <<'EOF';
 usage: $0 [--debug] [--ignore-boring]
-	[--old-version delta] [--new-version delta] [--wdiff] [--sort-by date|title]
+	[--old-version delta] [--new-version delta] [--wdiff] [--sort-by date|title] [--[no-]show-reldate]
 	[--json-file /path/to/gitversioned/bvg_disruptions.json]
 EOF
 
 $sort_by =~ m{^(date|title)$}
     or die "usage: allowed --sort-by are 'date' (default) and 'title'\n";
 my($sort_by_key1, $sort_by_key2) = ($sort_by eq 'title' ? qw(_title _date) : qw(_date _title));
+
+if ($show_reldate) {
+    require DateTime;
+    require DateTime::Format::ISO8601;
+    require DateTime::Format::Strptime;
+}
 
 my $sourceids = load_sourceids();
 
@@ -293,6 +301,7 @@ sub inject_date {
     if ($record->{startDate}) {
 	(my $startDate = $record->{startDate}) =~ s{\+\d+:\d+$}{};
 	$startDate =~ s{T}{ };
+	$startDate = append_relative_date($startDate) if $show_reldate;
 	$date .= $startDate;
     } else {
 	$date .= '...';
@@ -301,6 +310,7 @@ sub inject_date {
     if ($record->{endDate}) {
 	(my $endDate = $record->{endDate}) =~ s{\+\d+:\d+$}{};
 	$endDate =~ s{T}{ };
+	$endDate = append_relative_date($endDate) if $show_reldate;
 	$date .= $endDate;
     } else {
 	$date .= '...';
@@ -348,6 +358,61 @@ sub load_sourceids {
 	}
     }
     \%bvg_sourceids;
+}
+
+use strict;
+use warnings;
+use DateTime;
+use DateTime::Format::ISO8601;
+use DateTime::Format::Strptime;
+
+sub append_relative_date {
+    my($datestr) = @_;
+
+    # Normalize the input using DateTime parsers
+    my $dt;
+    if ($datestr =~ /T.*[+-]\d{2}:\d{2}$/) {
+        # ISO 8601 with timezone
+        eval {
+            $dt = DateTime::Format::ISO8601->parse_datetime($datestr);
+        };
+    } else {
+        # Assume format "YYYY-MM-DD HH:MM:SS"
+        my $strp = DateTime::Format::Strptime->new(
+            pattern   => '%F %T',
+            time_zone => 'floating'
+        );
+        eval {
+            $dt = $strp->parse_datetime($datestr);
+        };
+    }
+
+    if (!$dt) {
+        warn "Could not parse date: $datestr";
+        return $datestr;
+    }
+
+    # Convert to local date (drop time)
+    my $input_date = $dt->clone->truncate(to => 'day');
+    my $now = DateTime->now( time_zone => 'local' )->truncate(to => 'day');
+    my $delta_days = $input_date->delta_days($now)->in_units('days');
+
+    my $relative = '';
+    if ($delta_days == 0) {
+        $relative = 'today';
+    } elsif ($delta_days == 1) {
+	if ($input_date < $now) {
+	    $relative = 'yesterday';
+	} else {
+	    $relative = 'tomorrow';
+	}
+    } elsif ($input_date < $now) {
+        $relative = abs($delta_days) . ' days ago';
+    } else {
+        $relative = 'in ' . $delta_days . ' days';
+    }
+
+    return "$datestr ($relative)";
 }
 
 __END__
