@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.43;
+$VERSION = 2.44;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1982,6 +1982,10 @@ sub show_fis_broker_menu {
 	);
     $link_menu->separator;
     $link_menu->command
+	(-label => 'Orthophotos 2025',
+	 -command => sub { showmap_fis_broker(mapId => 'k_luftbild2025_rgbi@senstadt', %args) },
+	);
+    $link_menu->command
 	(-label => 'Orthophotos 2024',
 	 -command => sub { showmap_fis_broker(mapId => 'k_luftbild2024_true_rgbi@senstadt', %args) },
 	);
@@ -2030,6 +2034,7 @@ sub showmap_url_gdi_berlin {
 	fluralkis          => 'hintergrund_k5_farbe,alkis_flurstuecke:flurstuecke',
 	flurinspire        => 'hintergrund_k5_farbe,cp_alkis:CP.CadastralZoning,cp_alkis:CP.CadastralParcel',
 	gruenanlagen       => 'hintergrund_k5_grau,gruenanlagen:spielplaetze,gruenanlagen:gruenanlagen',
+	ortho2025          => 'hintergrund_k5_grau,dop_2025_fruehjahr:dop_2025',
 	ortho2024          => 'hintergrund_k5_grau,truedop_2024:truedop_2024',
 	ortho2023          => 'hintergrund_k5_grau,truedop_2023:truedop_2023',
     }->{$args{layers}};
@@ -2148,6 +2153,10 @@ sub show_gdi_berlin_menu {
 	 -command => sub { showmap_gdi_berlin(layers => 'gruenanlagen', %args) },
 	);
     $link_menu->separator;
+    $link_menu->command
+	(-label => 'Orthophotos 2025',
+	 -command => sub { showmap_gdi_berlin(layers => 'ortho2025', %args) },
+	);
     $link_menu->command
 	(-label => 'Orthophotos 2024',
 	 -command => sub { showmap_gdi_berlin(layers => 'ortho2024', %args) },
