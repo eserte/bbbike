@@ -21,7 +21,11 @@ use HTTP::Date qw(time2str str2time);
 use Plack::Request ();
 use Plack::Util ();
 
+use constant DEBUG => 0; # set manually if needed (and maybe restart apache/starman)
+BEGIN { *debug = DEBUG ? sub ($) { warn "DEBUG: $_[0]\n" } : sub ($) {} }
+
 my $bbbike_rootdir  = dirname(dirname(__FILE__));
+debug "bbbike_rootdir=$bbbike_rootdir";
 
 sub _not_modified {
     my($h, $filename) = @_;
@@ -50,7 +54,7 @@ my $app = sub {
 	if (-d "$old_data_dir/$bbbike_ver") {
 	    $use_data_dir = "$old_data_dir/$bbbike_ver";
 	} else {
-	    my @available_ver = map { s{.*/}{}; $_ } sort { $a <=> $b } bsd_glob("$old_data_dir/[0-9]*");
+	    my @available_ver = sort { $a <=> $b } map { s{.*/}{}; $_ } bsd_glob("$old_data_dir/[0-9]*");
 	    if (@available_ver) {
 		if ($bbbike_ver < $available_ver[0]) {
 		    $use_data_dir = "$old_data_dir/$available_ver[0]";
@@ -68,6 +72,7 @@ my $app = sub {
     if (!$use_data_dir) {
 	$use_data_dir = $normal_data_dir;
     }
+    debug "use_data_dir=$use_data_dir for ua=$ua";
 
     $filename =~ s{.*/data/}{};
     my $path = "$use_data_dir/$filename";
