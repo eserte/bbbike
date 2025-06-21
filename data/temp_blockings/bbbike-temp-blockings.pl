@@ -20497,7 +20497,7 @@ EOF
        type  => 'handicap',
        source_id => 'LS/S-SG33-W/11/303',
        data  => <<EOF,
-	q3::inwork; 26679,-8825 26589,-9108 26429,-9618 26381,-9753
+	q3::inwork; 26679,-8825 26589,-9108 26423,-9635 26381,-9753
 EOF
      },
      { from  => 1313270628, # 2011-08-13 23:23
@@ -29449,7 +29449,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-06-11 vvv
+#: last_checked: 2025-06-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -31036,7 +31036,7 @@ EOF
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...) (bis 26.03.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.37619,52.425695,31.03.2025,09:00 (Baustellenampel in der Daimlerstr., bis 30.04.2025) (inaktiv)
-#: source_id: viz2021:13.374437,52.426331,16.06.2025,07:00 (Fahrbahnsanierung Daimlerstr., bis 21.06.2025)
+#: source_id: viz2021:13.374437,52.426331,16.06.2025,07:00 (Fahrbahnsanierung Daimlerstr., bis 21.06.2025) (inaktiv)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -36251,6 +36251,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/kalle-neukoelln-wird-nach-und-nach-bezogen_a413054
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/etliche-bueros-im-kalle-sind-bezogen-im-rest-des-komplexes-laufen-noch-die-bauarbeiten_a427858
 #: by: https://entwicklungsstadt.de/neuer-veranstaltungsort-an-der-karl-marx-strasse-smartvillage-startet-im-kalle-neukoelln/
+#: by: https://entwicklungsstadt.de/neues-startup-zentrum-delta-campus-eroeffnet-im-kalle-neukoelln/
 #: osm_watch: way id="734271970" version="7"
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="8"
@@ -36914,9 +36915,9 @@ EOF
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/dahme-spreewald-kreisverkehr-storkower-strasse-in-kw-frei-neue-verkehrsfuehrung-GENTZWH5Y5EGBOEL2ARWQLLGOU.html (nur Kreisverkehr ist frei, Unterführung weiterhin erst im Herbst 2025)
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
-#: last_checked: 2025-02-17 (osm note)
+#: last_checked: 2025-06-21
 #: next_check: 2025-11-30 (maz)
-Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
+Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699 26399,-11735
 # REMOVED --- #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin --- #: last_checked: 2025-02-04 (mapillary) --- #: next_check: 2025-11-30 (maz) --- #: note: eigentlich 1s:q3 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
 EOF
      },
@@ -43343,7 +43344,7 @@ EOF
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025) (inaktiv) (bis 30.04.2025) (inaktiv)
 #: osm_watch[closed]: note 4125418 5
 #: osm_watch: way id="1258660768" version="2"
-#: osm_watch: way id="1259755317" version="2"
+#: osm_watch: way id="1259755317" version="3"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
@@ -43478,7 +43479,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 247200038 (bis 05.04.2024) (inaktiv)
-	2::inwork 13095,-20435 12837,-20379 12829,-20358 12779,-20362 12154,-20220
+	2::inwork 13095,-20435 12845,-20377 12836,-20360 12779,-20362 12154,-20220
 EOF
      },
      { from  => 1711234800, # 2024-03-24 00:00
@@ -45142,7 +45143,7 @@ EOF
 #	q4::inwork; 14103,10489 14170,10675
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (H,T)
-#: last_checked: 2025-06-20
+#: last_checked: 2025-06-21
 #: check_frequency: 14d
 	q4::inwork 14103,10489 14170,10675
 EOF
@@ -46423,7 +46424,7 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T)
-#: last_checked: 2025-05-05
+#: last_checked: 2025-06-21
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -48131,10 +48132,10 @@ EOF
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
-#: also_indoor: traffic (T,G)
+#: also_indoor: traffic (T,G,H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-06-19 (traffic) vvv
-#: check_frequency: 3d vvv
+#: last_checked: 2025-06-21 (traffic) vvv
+#: check_frequency: 4d vvv
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
 #: check_frequency ^^^

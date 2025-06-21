@@ -98,7 +98,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_21_1285_1376_online.pdf (Straßenlandwidmung, kleine Fläche)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="23"
-#: last_checked: 2025-01-08
+#: last_checked: 2025-06-21
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -1871,6 +1871,7 @@ Drewitzer Str.	1:igndisp -10811,-3857 -10793,-3868
 ###################################################################### 
 #: section: Sperrungen anderswo in Brandenburg vvvvvvvvvvvvvvvvvvvvvvv
 # 
+Bahnhofsplatz (Zossen)	1 13523,-20785 13491,-20796 13467,-20785 13460,-20681 13507,-20664
 Marienwerder, Kirche	1 22907,48770 22935,48771 22944,48746 22933,48718 22903,48724 22894,48744 22907,48770
 Heinrich-Dorrenbach-Str.	1s:q4 39533,14774 39578,14967
 Mahlsdorfer Str. [zur Böhlener Str.]	1 26014,15039 26093,15098
@@ -3093,7 +3094,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 tragen (6 Stufen)	0:15 4608,63927
 Treppe	0:40 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90 3514,24652
-tragen (Treppe, 18 Stufen, Kinderwagenrampe)	0:25 25902,-6006
+tragen oder schieben (Treppe, ca. 28 Stufen, Kinderwagenrampe)	0:30 25902,-6006
+tragen oder schieben (Treppe, ca. 28 Stufen, Kinderwagenrampe)	0:30 25928,-5990
 # REMOVED --- (seit Nov 2024 Rampe) --- tragen (Treppe, 19 Stufen)	0:25 25928,-5990
 tragen (Treppe)	0:120 -14199,-707
 #: note: zum RE-Bahnsteig sind es noch fünf zusätzliche Stufen, Aufzüge existieren
@@ -3998,7 +4000,7 @@ Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwo
 #: XXX wird sich auch die Qualität der Fahrbahn verbessern?
 #: osm_watch: way id="1184177622" version="3"
 #: osm_watch: way id="804682311" version="4"
-#: osm_watch: note 4734732 1
+#: osm_watch: note 4734732 4
 #: priority: #C
 #: last_checked: 2025-04-30
 #: check_frequency: 60d
@@ -4195,6 +4197,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1415395.php (Bauarbeiten voraussichtlich bis zum zweiten Quartal 2026)
 #: by: https://www.berliner-woche.de/karlshorst/c-bildung/start-fuer-den-bau-einer-integrierten-sekundarschule_a411179
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-schulgeb%C3%A4ude-in-modulbauweise-r%C3%B6merweg-39.1498/#post-25322
 #: osm_watch: way id="25796737" version="19"
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Nebau: Integrierte Sekundarschule (ISS) in Karlshorst
@@ -4280,7 +4283,7 @@ Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::i
 # 
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
-#: osm_watch: way id="1263834183" version="1"
+#: osm_watch: way id="1263834183" version="2"
 #: last_checked: 2025-06-01
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
@@ -4295,7 +4298,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-06-11 vvv
+#: last_checked: 2025-06-21 vvv
 #: osm_watch: way id="1199463691" version="4"
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -4708,11 +4711,11 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: osm_watch: way id="8042966" version="27"
 #: osm_watch: way id="8042965" version="25"
 #: osm_watch: way id="8043414" version="41"
-#: osm_watch: note 3248363 8
-#: last_checked: 2025-04-03 (osm)
+#: osm_watch: note 3248363 9
+#: last_checked: 2025-06-21
 #: next_check: 2025-11-30 (maz)
 #: valid: -20251130
-Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699
+Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699 26399,-11735
 # REMOVED (bei osm entfernt) --- #: osm_watch: way id="787699937" version="9" --- #: osm_watch: way id="280217696" version="11" --- #: last_checked: 2025-02-04 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2025-01-31 --- #: valid: -20250131 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
 # 
 # REMOVED (scheint offen zu sein) --- #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173 --- #: XXX culdesac-Eintrag für die Spreestr. anpassen! --- #: last_checked: 2022-10-05 --- #: check_frequency: 45d --- (Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
@@ -4951,7 +4954,7 @@ Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-06-11 vvv
+#: last_checked: 2025-06-21 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027

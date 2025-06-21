@@ -308,7 +308,7 @@ Woltersdorf - Schöneiche: Asphalt	Q0 33213,5929 33207,5820
 Neu-Zittau: Fahrbahn asphaltiert	Q0 33743,-1143 33742,-1197 33638,-1495
 Wernsdorf: Asphalt	Q0 31542,-3094 31492,-3156 31260,-3484 31171,-3550 30934,-3651 30893,-3670 30901,-3737 30880,-3864 30875,-3899
 Neue Mühle: Asphalt	Q0 27661,-11738 27649,-11766 27620,-11806 27541,-11868 27534,-11883 27543,-11912 27589,-11965 27571,-12069 27557,-12160 27519,-12365 27454,-12435
-# REMOVED (mittlerweile vermutlich asphaltiert) --- KW: Kopfsteinpflaster	Q2 26419,-12089 26418,-11850 26406,-11815 26397,-11721 26395,-11699
+# REMOVED (mittlerweile vermutlich asphaltiert) --- KW: Kopfsteinpflaster	Q2 26419,-12089 26418,-11850 26406,-11815 26399,-11735 26395,-11699
 # REMOVED (mittlerweile asphaltiert) --- KW: Kopfsteinpflaster	Q2 26178,-11660 26063,-11590 25939,-11559 25924,-11558 25859,-11559 25709,-11610 25618,-11642
 Ragow: Asphalt	Q0 20843,-12781 20528,-12859 20408,-13031 20134,-13333 19800,-13610 19494,-13746
 Ragow (Köpenicker Str.): Asphalt	Q0 20127,-12521 20408,-13031
@@ -879,7 +879,7 @@ Am Zwiebusch: unbefestigte Straße, teilweise sehr sandig und holprig	Q3 30411,-1
 Pätz: Asphalt, mit einigen Wurzelhebungen	Q1 27957,-20183 28009,-20086 28065,-19987
 Pätz: Verbundsteinpflaster	Q1+ 28065,-19987 28070,-19890
 Pätz: Kopfsteinpflaster	Q2- 28070,-19890 28071,-19862 28089,-19844 28164,-19771 28251,-19639 28304,-19608
-Pätz: Fahrbahn Kopfsteinpflaster, Radweg mit glatter Oberfläche	Q1 28304,-19608 28616,-19419
+Pätz: Fahrbahn Kopfsteinpflaster, Radweg mit glatter Oberfläche	Q1 28304,-19608 28534,-19468
 Groß-Köris - Motzen: Asphalt	Q0 27822,-24916 27768,-24799 27712,-24629 27657,-24389 27628,-24237 27375,-24125 27006,-23844 26315,-23321 26145,-23192 26096,-23160 26070,-23160
 Groß-Köris - Motzen: Plattenweg	Q2 26070,-23160 25912,-23133
 Groß-Köris - Motzen: schlechtes Kopfsteinpflaster	Q3 25912,-23133 25577,-23065
@@ -887,6 +887,7 @@ Groß-Köris - Motzen: Asphalt	Q0 25577,-23065 25386,-23059
 Groß-Köris - Motzen: schlechtes Kopfsteinpflaster	Q3 25386,-23059 25303,-23044
 Groß-Köris - Motzen: Plattenweg (Querplatten), sandige Banketten	Q2- 25303,-23044 24138,-22846 23775,-22788
 Groß-Köris - Motzen: Verbundsteinpflaster	Q1 23775,-22788 23482,-22742
+# 
 #: by: René (refan): vvv
 #: by: https://berliner-abendblatt.de/berlin-news/280-alte-baeume-sollen-ausbau-der-landesstrasse-401-weichen-id207807 (Planfeststellungsverfahren für die L401 bis II. Quartal 2023; möglicherweise Asphaltierung?)
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=39161
@@ -902,17 +903,24 @@ Groß-Köris - Motzen: Verbundsteinpflaster	Q1 23775,-22788 23482,-22742
 #: source_id: LS/222-W/24/007 (Baufeldfreimachung, bis 23.02.2024) (bis 29.02.2024) (inaktiv)
 #: source_id: LS/222-W/24/100 (07.10.2024 bis 30.04.2025) (bis 30.09.2025)
 #: also_indoor: traffic (none)
-#: note: Gehweg für Radfahrer frei, zumindest ab Schmöckwitzer Str.; ab Höhe Friedenstr. noch keine Bauarbeiten (Stand Feb 2025)
-#: last_checked: 2025-02-04 (mapillary)
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-09-30 (VIZ-Verkehrsmeldung)
-Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26787,-3194 26748,-3285 26651,-3554 26636,-3596 26562,-3781 26554,-3814 26482,-4108 26447,-4251 26319,-4776 26228,-5150 26259,-5681 26085,-5839 25996,-5921
-Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26376,-6676 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26782,-8032 26749,-8481 26727,-8668 26702,-8750 26679,-8825 26589,-9108 26429,-9618 26381,-9753 26365,-9875 26376,-9924 26386,-9964 26420,-10035 26434,-10054
+#: note: Gehweg für Radfahrer frei; ab Höhe Friedenstr. noch keine Bauarbeiten (Stand Juni 2025)
+#: last_checked: 2025-06-21 vvv
+# REMOVED --- #: check_frequency: 14d vvv
+#: next_check: 2025-09-30 (VIZ-Verkehrsmeldung) vvv
+Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26787,-3194
+Grünau - Zeuthen: gepflastert	Q1- 26562,-3781 26554,-3814 26482,-4108 26447,-4251 26319,-4776 26228,-5150 26259,-5681 26085,-5839 25996,-5921
+#: next_check ^^^
+#: last_checked ^^^
+#: historical_note: bis 2025 gepflastert (Kleinsteinpflaster), Q1-
+Grünau - Zeuthen: Asphalt	Q0 26787,-3194 26748,-3285 26651,-3554 26636,-3596 26562,-3781
+# 
+Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26376,-6676 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26782,-8032 26749,-8481 26727,-8668 26702,-8750 26679,-8825 26589,-9108 26423,-9635 26381,-9753 26365,-9875 26376,-9924 26386,-9964 26420,-10035 26434,-10054
 #: by: ^^^
 Friesenstr. (Zeuthen): Asphalt	Q0 25817,-5856 25782,-5801 25671,-5632 25652,-5602 25610,-5468 25600,-5426 25571,-5188 25572,-5126 25476,-4811 25448,-4785 25345,-4806 25183,-4565 25042,-4334
 Friesenstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 25817,-5856 25842,-5903 25893,-6002
 Heinrich-Heine-Str. (Zeuthen): Asphalt	Q0 25571,-5188 25623,-5181 25694,-5172 25760,-5191 25831,-5163 26305,-4773 26319,-4776
-Alte Poststr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 25996,-5921 25970,-5906 25855,-5792
+Alte Poststr. (Zeuthen): Kleinsteinpflaster	Q2+ 25996,-5921 25970,-5906
+Alte Poststr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 25970,-5906 25855,-5792
 Alte Poststr. (Zeuthen): Asphalt	Q0 25855,-5792 25831,-5743
 Alte Poststr. (Zeuthen): unbefestigte Straße	Q2 25831,-5743 25757,-5533 25733,-5240 25760,-5191
 Maxim-Gorki-Str. (Eichwalde): Asphalt	Q0- 26954,-3322 26849,-3323 26748,-3285 26654,-3234 26594,-3156 26565,-3054 26542,-2951
@@ -1035,7 +1043,8 @@ Badstr. (Pätz): Asphalt	Q0 28698,-19354 28766,-19444
 Badstr. (Pätz): Asphalt	Q0 28766,-19444 28812,-19558 28843,-19695
 Badstr. (Pätz): Verbundsteinpflaster	Q1+ 28843,-19695 28843,-19850 28918,-19941
 Waldweg Pätz - Bestensee: Verbundsteinpflaster	Q1 28853,-19212 28805,-19189 28868,-18929 28827,-18707
-Uferweg Pätz - Bestensee: Verbundsteinpflaster	Q0- 28827,-18707 28800,-18565 28667,-18389
+#: historical_note: ursprünglich Q0- eingetragen
+Uferweg Pätz - Bestensee: Verbundsteinpflaster	Q1+ 28827,-18707 28800,-18565 28667,-18389
 Uferweg Pätz - Bestensee: Waldweg, meist OK, teilweise eng	Q2 28667,-18389 28106,-18265 27898,-18103 27627,-18031 27599,-17988
 Mozartstr. (Bestensee): Asphalt	Q0 28046,-18007 28037,-17946 27971,-17847
 Mozartstr. (Bestensee): Asphalt	Q0 28279,-17744 27971,-17847 27913,-17868 27640,-17955 27605,-17958
@@ -1075,7 +1084,8 @@ Rudolf-Breitscheid-Str.: Verbundsteinpflaster	Q1+ 26469,-17688 26498,-17523 2651
 #: by: osm
 Rudolf-Breitscheid-Str.: Verbundsteinpflaster	Q1+ 26518,-17415 26504,-17242
 Schmiedeweg: Asphalt	Q0 26459,-17745 26354,-17641 26321,-17629 26297,-17628 26245,-17623
-Pätz - Bestensee: Verbundsteinpflaster	Q0- 28667,-18389 28651,-18369 28055,-18031 28011,-18007
+#: historical_note: ursprünglich Q0- eingetragen
+Pätz - Bestensee: Verbundsteinpflaster	Q1+ 28667,-18389 28651,-18369 28055,-18031 28011,-18007
 Mozartstr. (Bestensee) - neuer Waldweg Pätz: Schotterweg	Q2 28046,-18007 28055,-18031
 Groß Köris - Pätz: Kopfsteinpflaster	Q3+ 28391,-25727 28320,-25493 28318,-25324
 #: by: mapillary
@@ -1539,7 +1549,7 @@ Asphalt	Q0  20347,-2959 20339,-2932 20255,-2910 20179,-2853 20071,-2917 20285,-3
 # REMOVED (existiert nicht mehr) ---	Q0 20367,-3844 20431,-3776 20392,-3450 20236,-3167 19996,-2880
 	Q0 21205,-1763 21239,-1770 21250,-1782 21191,-1982 21062,-2006 21071,-2228 21088,-2461
 	Q0 21084,-4728 21217,-4729 21345,-4761 21548,-4786 21654,-4807 21764,-4869 22040,-5075 22136,-5009 22282,-4989 22389,-5159 22437,-5335 22469,-5470 22482,-5498 22547,-5556 22866,-5844 23035,-5990 23301,-6225 23417,-6330 23523,-6425 23704,-6589 23785,-6662 23875,-6743 23950,-6810 24034,-6887 24173,-7015 24246,-7081 24284,-7118 24356,-7159 24487,-7143 24602,-7131 24713,-7113 24710,-7147 24703,-7243 24700,-7331 24702,-7342 24722,-7523 24733,-7599 24773,-7883 24789,-8000 24802,-8072 24867,-8220 24912,-8323 24982,-8485 25063,-8673 25118,-8791 25192,-8936 25137,-9131 25278,-9181 25369,-9244 25502,-9335 25614,-9418 25779,-9534 25805,-9553 25991,-9671 26093,-9701 26208,-9801 26262,-9880 26262,-9940 26262,-10015 26285,-10054 26434,-10054
-	Q0 26434,-10054 26450,-10134 26453,-10235 26446,-10394 26466,-10409 26442,-10452 26429,-10647 26418,-10992 26281,-11160 26273,-11289 26267,-11381 26265,-11528 26178,-11660
+	Q0 26434,-10054 26450,-10134 26453,-10235 26446,-10394 26466,-10409 26442,-10452 26429,-10647 26418,-10992 26281,-11160 26273,-11289 26267,-11381 26265,-11528 26251,-11566 26178,-11660
 # REMOVED (conflict?) ---	Q0 27454,-12435 27519,-12365 27557,-12160 27571,-12069 27589,-11965 27543,-11912 27534,-11883 27541,-11868 27620,-11806 27649,-11766 27661,-11738
 #: by: mapillary
 asphaltiert	Q0 27719,-8666 27704,-8747
@@ -1578,7 +1588,7 @@ Asphalt	Q0 20738,-20432 21053,-20939 21352,-21050
 Kleinsteinpflaster	Q1- 21352,-21050 21373,-21059 21439,-21116 21596,-21270 21630,-21394 21724,-21513
 Asphalt	Q0 21724,-21513 21889,-21725 22106,-21965 22174,-22036 22514,-22358 23062,-23327 23250,-23459
 	Q0 23250,-23459 23018,-24570 22957,-25909 22956,-25970 22942,-26281 22886,-26512 22877,-26558 22937,-26767 23229,-26886 23567,-27139 23651,-27227 23676,-27424 23689,-27526 23715,-28019 23706,-28164 23667,-28778 23651,-29022 23596,-29215 23518,-29525 23754,-30273 23925,-30668 23962,-30831 24102,-30864 24203,-30854 24324,-30878 24407,-30857 24550,-30862 24931,-30787 25190,-30385 25240,-29746
-	Q0 28616,-19419 28698,-19354 28781,-19289 28853,-19212 29004,-18977
+Asphalt	Q0 28534,-19468 28616,-19419 28698,-19354 28781,-19289 28853,-19212 29004,-18977
 Verbundsteinpflaster	Q1+ 28781,-19289 28815,-19330 28962,-19221 29060,-19197
 Fahrbahn Asphalt	Q0 26273,-17430 26342,-17212 26431,-16931 26455,-16852 26583,-15677
 	Q0 -13775,4515 -13797,4523 -14244,5152 -14268,5197 -14404,5435 -14728,5709 -14769,5741 -15216,6079 -15355,6142 -15452,6185 -15594,6231 -15873,6262 -15898,6265 -16002,6340 -16104,6299 -16151,6261 -16349,5934 -16429,5740 -16566,5661 -17364,5667 -18598,5444
@@ -3570,13 +3580,9 @@ Asphalt	Q0 -84237,-48234 -84110,-48294 -83887,-48317 -82956,-49248 -82684,-49649
 Kopfsteinpflaster	Q2 59474,34284 59482,34218
 Asphalt	Q0 26070,-23160 25954,-22818
 #: by: https://www.meetingpoint-dahme-spreewald.de/neuigkeiten/artikel/166381-wildau-vollsperrung-des-westkorsos-ab-dem-1-juli-2024
-#: osm_watch: way id="1323098948" version="1"
-#: osm_watch: way id="7365259" version="17"
-#: osm_watch: way id="255274251" version="9"
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Besteht die Fahrbahn weiterhin aus Kleinkopfsteinpflaster?
-#: last_checked: 2024-07-17
-#: next_check: 2024-11-28
-Westkorso, Zeuthen: Kleinkopfsteinpflaster	Q1- 26033,-7207 26328,-7191 26430,-7173 26609,-7136
+# REMOVED --- #: osm_watch: way id="1323098948" version="1" --- #: osm_watch: way id="7365259" version="17" --- #: osm_watch: way id="255274251" version="9" --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Besteht die Fahrbahn weiterhin aus Kleinkopfsteinpflaster? --- #: last_checked: 2024-07-17 --- #: next_check: 2024-11-28
+#: historical_note: früher (bis 2024): Kleinkopfsteinpflaster, Q1-
+Westkorso, Zeuthen: Asphalt	Q0 26033,-7207 26328,-7191 26430,-7173 26594,-7138 26609,-7136
 Franz-Mehring-Str.: Asphalt	Q0 26644,-18866 26743,-18604 26782,-18462 26840,-18414 26766,-18117 26736,-17975
 Franz-Mehring-Str.: Kopfsteinpflaster	Q2 26736,-17975 26716,-17857
 #: note: Mittelteil ist interpoliert
@@ -3984,6 +3990,7 @@ Friedenstr. (Eichwalde): Asphalt	Q0 25322,-4042 25409,-4020 25423,-4016 25550,-3
 #: by: Detlef Westphal
 #: confirmed_by: srt
 Schillerstr. (Zeuthen): Asphalt	Q0 25761,-4276 25764,-4345 25793,-5002 25831,-5163
+Maxim-Gorki-Str. (Zeuthen): Asphalt	Q0 25866,-5210 26228,-5150
 Am Graben (Eichwalde): welliger Asphalt	Q1 25278,-3661 25365,-3880 25409,-4020
 Am Graben (Eichwalde): welliger Asphalt	Q1 25423,-4016 25379,-3876 25292,-3655
 Am Graben (Eichwalde): Verbundsteinpflaster	Q1+ 25199,-3451 25182,-3414
@@ -6511,7 +6518,7 @@ Hafenstr. (KW): Beton	Q0- 26758,-11747 26711,-11894
 Kiefernweg (KW): unbefestigte Straße, Schotter	Q2 26815,-11398 26706,-11374 26546,-11536
 Kleeweg (KW): unbefestigte Straße, Schotter	Q2 26789,-11547 26546,-11536
 (Kiefernweg - Parkplatz): wassergebundene Decke	Q1 26546,-11536 26515,-11563 26491,-11597
-(Parkplatz): Asphalt	Q0 26491,-11597 26469,-11589 26420,-11697 26420,-11718 26397,-11721
+(Parkplatz): Asphalt	Q0 26491,-11597 26469,-11589 26420,-11697 26429,-11729 26399,-11735
 Kirchplatz (KW): Kleinsteinpflaster	Q2+ 25939,-11559 25968,-11366
 Kirchplatz (KW): Asphalt	Q0 25968,-11366 25934,-11383 25924,-11558
 Köpenicker Str. (KW): Asphalt	Q0 25968,-11366 26032,-11334 26044,-11318 26149,-11189
@@ -7057,6 +7064,7 @@ Luisenhof: schlechtes Kopfsteinpflaster	Q3 42021,67414 42384,67180 43213,66757
 Altkünkendorf - Zuchenberg: Asphalt	Q0 45221,67532 45147,67327 45258,66931 45404,66638 45564,66546 45593,66529 45698,66496
 zum Strandbad Wolletzsee: Asphalt	Q0+ 46934,67928 46921,68106 46907,68292 46777,68397 46531,68674 46310,69090 46273,69208
 Oertelufer (Zossen): Asphalt	Q0 13730,-21079 13506,-21265 13467,-21298 13430,-21328
+Bahnhofsplatz (Zossen): Asphalt	Q0 13507,-20664 13460,-20681 13467,-20785 13491,-20796 13523,-20785
 Seeburger Chaussee - Ritterfelddamm: rauer und etwas unebener Asphalt	Q1 -8719,8161 -8709,8082 -8731,7816 -8756,7742
 Seeburger Chaussee - Ritterfelddamm: Waldweg	Q2 -8756,7742 -8797,7638
 Stegemannshof: Asphalt	Q0 43722,104284 43733,104260
@@ -9885,4 +9893,5 @@ Kreuzungsbereich asphaltiert	Q0 -12621,-359
 Wendehammerbereich asphaltiert	Q0 -11055,-1937
 #: by: mapillary
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 -11475,-2454
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 25970,-5906
 #: ignore ^^^

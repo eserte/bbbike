@@ -19,7 +19,7 @@ Oberspreestr./Schnellerstr./Bruno-Bürgel-Weg: Gegenverkehrsregelung	X::inwork::a
 # 
 #: source_id: viz2021:13.390889,52.525514,01.04.2025,08:00 (bis 19.07.2025)
 #: note: Richtung Südosten auch Radwegführung auf dem Bürgersteig, Richting Nordwesten sollen Radfahrer via Tucholskystr. und Auguststr. fahren (wegen Tramschienen?!)
-#: last_checked: 2025-06-11 (mapillary)
+#: last_checked: 2025-06-15 (mapillary)
 #: next_check: 2025-07-19 (VIZ-Verkehrsmeldung)
 #: valid: -20250719
 Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
@@ -352,7 +352,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2025-06-11
+#: last_checked: 2025-06-21
 #: check_frequency: 120d
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
 #: note: Anforderungsampel
@@ -360,7 +360,7 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2025-06-11
+#: last_checked: 2025-06-21
 #: check_frequency: 120d
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
@@ -4254,6 +4254,10 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: section ^^^
 ################################################################################
 #: section: Ampeln elsewhere vvv
+#: note: Anforderungsampel
+	F 13512,-20739
+#: note: Anforderungsampel
+	F 14410,-21227
 #: by: mapillary
 	X -13027,15439
 	X 31512,7971
@@ -4292,7 +4296,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 	X 226,-11083
 	X -74,-10823
 	X 13960,-21244
-#: off: 2023-06-04 (Sun) gegen 10 Uhr
+#: off: 2023-06-04 (Sun) gegen 10 Uhr, 2025-06-21 (Sat) gegen 14:30 Uhr
 	F 26589,-9108
 	X -8647,-41731
 	F -10116,-46120

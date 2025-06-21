@@ -1152,6 +1152,7 @@ Georg-Hermann-Allee -> Peter-Huchel-Str.: Straßenbahntrasse	3::igndisp -13422,13
 Peter-Huchel-Str. -> Georg-Hermann-Allee: Straßenbahntrasse	3::igndisp -13253,1310 -13424,1290 -13429,1069
 Am Fährgut	1 -13585,3401 -13620,3388 -13635,3434 -13602,3448 -13585,3401
 Drewitzer Str.	1:igndisp -10811,-3857 -10793,-3868
+Bahnhofsplatz (Zossen)	1 13523,-20785 13491,-20796 13467,-20785 13460,-20681 13507,-20664
 Marienwerder, Kirche	1 22907,48770 22935,48771 22944,48746 22933,48718 22903,48724 22894,48744 22907,48770
 Heinrich-Dorrenbach-Str.	1s 39533,14774 39578,14967
 Mahlsdorfer Str. [zur Böhlener Str.]	1 26014,15039 26093,15098
@@ -2920,7 +2921,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90:-44 3514,24652
-tragen (Treppe, 18 Stufen, Kinderwagenrampe)	0:25:-66 25902,-6006
+tragen oder schieben (Treppe, ca. 28 Stufen, Kinderwagenrampe)	0:30:-66 25902,-6006
+tragen oder schieben (Treppe, ca. 28 Stufen, Kinderwagenrampe)	0:30:-194 25928,-5990
 tragen (Treppe)	0:120:-184 -14199,-707
 tragen (Treppe, 22 Stufen)	0:30:87 26337,-11817
 tragen (Treppe, 47 Stufen, mit Schieberinne für Fahrräder)	0:60:8 8376,8813
@@ -3604,7 +3606,7 @@ Klixstr.: Einbahnstraße Richtung Norden	1s:inwork 3871,18144 3833,17929
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
-Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699
+Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699 26399,-11735
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413

@@ -1267,7 +1267,7 @@ Gotenstr. (Schöneberg)	N 7497,8168 7494,8354 7490,8593 7485,8777
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/verbindung-zwischen-zwei-s-bahnhoefen-soll-attraktiver-und-sicherer-werden_a430415
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wohn-und-beratungshaus-ella-barowsky-stra%C3%9Fe-gotenstra%C3%9Fe-am-stadtplatz-sch%C3%B6neberger-linse.1047/#post-24228 (Fertigstellung des Platzes erst 2028?)
 #: XXX Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?
-#: last_checked: 2025-04-23
+#: last_checked: 2025-06-21
 #: check_frequency: 180d
 (Gotenstr. - Ella-Barowsky-Str.)	NN 7497,7761 7551,7851
 # 
@@ -3564,7 +3564,9 @@ Biebersdorfer Weg	N 26780,-1468 26663,-1443 26566,-1406 26495,-1366 26448,-1326 
 Pretschener Weg	N 26566,-1406 26500,-1672 26465,-1810 26429,-1876
 Godbersenstr.	H 27112,-2764 27054,-2771 27006,-2778
 Godbersenstr.	N 27006,-2778 26201,-2845
-Lindenstr. (Schmöckwitz)	H 27006,-2778 26939,-2860 26931,-2871
+Lindenstr. (Schmöckwitz)	H 27006,-2778 26939,-2860
+#: note: auf westlicher Seite als "Zeuthener Str." ausgeschildert
+Lindenstr. (Schmöckwitz)	H 26939,-2860 26931,-2871
 #: note: dieser Abschnitt gehört zur Hälfte zu Eichwalde (vermutlich die Fahrbahn, Straßenschild ist Eichwalde-typisch) und zu Berlin (vermutlich der östliche Gehweg, BAMAG-U7-ähnliche Gaslaternen hier)
 Lindenstr. (Schmöckwitz)	N 26931,-2871 26954,-3322 26960,-3403 26913,-3613
 Jostweg (Köpenick)	N 21275,3607 21256,3640 21220,3642 21164,3812 21141,3958
@@ -6313,7 +6315,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="8"
-#: last_checked: 2025-06-04
+#: last_checked: 2025-06-21
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18441,4600 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
