@@ -196,6 +196,7 @@ EOF
     $dockerfile .= _dockerfile_fix_sources_list(\%opt);
     $dockerfile .= _dockerfile_apt_auth(\%opt);
 
+    # Use non-privileged user (same as host user) unless on Windows
     my $username;
     if ($^O ne 'MSWin32') {
 	my $uid = $<;
@@ -212,9 +213,11 @@ EOF
 	}
     }
 
+    # Gather required apt packages
+    my @packages;
+    my @optional_packages;
     if ($opt{src} =~ m{^(github|github-fixed|github-archive|local)$}) {
-	my @packages = qw(perl-tk);
-	my @optional_packages = ();
+	push @packages, qw(perl-tk);
 	if ($opt{'feature-pdf'}) {
 	    push @packages, qw(libcairo-perl libpango-perl);
 	}
@@ -245,7 +248,13 @@ EOF
 	} elsif ($opt{src} eq 'github-archive') {
 	    push @packages, 'curl';
 	}
+    }
+    if (defined $username) {
+	push @packages, 'sudo';
+    }
 
+    # Install packages (if any defined)
+    if (@packages || @optional_packages) {
 	$dockerfile .= <<"EOF";
 RUN apt-get update && apt-get install -qqy @packages
 EOF
@@ -256,6 +265,16 @@ RUN apt-get install -qqy $optional_package || true
 EOF
 	    }
 	}
+    }
+
+    # Setup sudoers
+    if (defined $username) {
+	$dockerfile .= <<"EOF";
+RUN echo "$username ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/$username && chmod 0440 /etc/sudoers.d/$username
+EOF
+    }
+
+    if ($opt{src} =~ m{^(github|github-fixed|github-archive|local)$}) {
 	if ($opt{src} =~ m{^(github|github-fixed|github-archive)$}) {
 	    $dockerfile .= <<'EOF';
 RUN mkdir bbbike
