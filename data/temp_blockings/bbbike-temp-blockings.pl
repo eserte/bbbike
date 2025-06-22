@@ -7026,18 +7026,20 @@ EOF
 	2::inwork 56925,41800 58564,43539
 EOF
      },
-     { from  => $isodate2epoch->("2025-01-20 00:00:00"), # 1191532790, # 2007-10-04 23:19
-       until => $isodate2epoch->("2025-01-22 19:00:00"), # 1196463599, # 2007-11-30 23:59
+     { from  => $isodate2epoch->("2025-06-24 00:00:00"), # $isodate2epoch->("2025-01-20 00:00:00"), # 1191532790, # 2007-10-04 23:19
+       until => $isodate2epoch->("2025-06-26 19:00:00"), # $isodate2epoch->("2025-01-22 19:00:00"), # 1196463599, # 2007-11-30 23:59
 #      text  => 'Gürtelstr. (Friedrichshain) Richtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
-       text  => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Kraneinsatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.01.2025 06:00 bis 22.01.2025 19:00',
+#      text  => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Kraneinsatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.01.2025 06:00 bis 22.01.2025 19:00',
+       text  => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Sperrung, auch Radfahrer sind betroffen, voraussichtlich am 25.06.2025 und 26.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: IM_004587 (von 2007, inaktiv)
 #	q4::inwork; 15361,12071 15300,11965 15256,11884 15202,11789 15153,11691 15106,11598
 #: source_id: viz2021:13.474178,52.510451,21.01.2025,06:00 (laut VIZ nur Kfz-Verkehr, aber vor Ort existiert eine Umleitung für Radfahrer, bis 22.01.2025) (inaktiv)
-#: note: bei rbb auch Radverkehr
+# REMOVED (alte Sperrung im Jan 2025) --- #: note: bei rbb auch Radverkehr
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1881328760085221600
 #: by: https://pbs.twimg.com/media/GhvShD_XwAAOtVh?format=jpg&name=medium
+#: next_check: 2025-06-24
 	q4::inwork 15202,11789 15153,11691 15106,11598
 EOF
      },
@@ -36040,11 +36042,12 @@ EOF
 # REMOVED --- #: last_checked ^^^
 EOF
      },
-     { from  => 1731879774, # 1730588460, # 2024-11-03 00:01, # $isodate2epoch->("2022-03-02 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-11-20 18:00:00"), # 1730952000, # 2024-11-07 05:00, # $isodate2epoch->("2022-03-07 12:00:00"),
+     { from  => 1750615266, # 1731879774, # 1730588460, # 2024-11-03 00:01, # $isodate2epoch->("2022-03-02 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-06-25 17:00:00"), # $isodate2epoch->("2024-11-20 18:00:00"), # 1730952000, # 2024-11-07 05:00, # $isodate2epoch->("2022-03-07 12:00:00"),
 #      text  => 'Wuhletalstr.: Wuhletalbrücke wird abgebrochen, Sperrung, auch für Radfahrer und Fußgänger, vom 3.3.2022 14:00 bis 7.3.2022 12:00',
 #      text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, auch Radfahrer und Fußgänger sind betroffen, vom 04.11.2024 bis 07.11.2024 05:00',
-       text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 18.11.2024 bis 20.11.2024 18:00',
+#      text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 18.11.2024 bis 20.11.2024 18:00',
+       text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 23.06.2025 08:00 bis 25.06.2025 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181336.php (2022er-Eintrag)
@@ -36055,6 +36058,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GbUIAkBW8AA3AGf?format=jpg&name=medium
 #: source_id: viz2021:13.559233,52.562465,18.11.2024,08:00 (keine Einschränkung auf Verkehrsarten erwähnt, bis 20.11.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1858396972723425477 (nur Kfz-Verkehr)
+#: source_id: viz2021:13.558515,52.562701,23.06.2025,08:00 (Vollsperrung, bis 25.06.2025)
 	2::inwork 20895,17594 20769,17650
 	2::inwork 20769,17650 20891,17572
 EOF
@@ -37986,7 +37990,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2023/01/11/senat-plant-auszug-der-fluechtlinge-aus-terminals-in-tegel/ (bis Mitte März 2023; allerdings bleibt Terminal C möglicherweise weiterhin als Unterkunft erhalten)
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
-#: last_checked: 2025-04-24 (orthofotos) vvv
+#: last_checked: 2025-03-05 (orthofotos) vvv
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="272993611" version="7"
@@ -43689,7 +43693,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 8
+#: osm_watch: note 4185183 9
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
@@ -47916,7 +47920,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.59872,52.50501,08.05.2025,09:57
-#: source_id: adac:184667102 (bis 20.06.2025)
+#: source_id: adac:184667102 (bis 20.06.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lopunzh3jc2v
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lrzszpihoc2l (beendet)
 #: note: bei rbb mittlerweile entfernt; wieder da, mittlerweile bis 20.06.2025
@@ -48036,7 +48040,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten)
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-22
 #: check_frequency: 30d
 #: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -48109,6 +48113,7 @@ EOF
 #: by: https://viz.berlin.de/site/assets/files/1884/umleitung_rummelsburger_strasse.850x0-is.jpg (einzig verbliebene Umleitung)
 #: by: https://www.tagesspiegel.de/berlin/nach-abriss-der-brucke-an-der-berliner-wuhlheide-jetzt-ist-doch-ein-neubau-im-gesprach-13826974.html
 #: by: https://entwicklungsstadt.de/wuhlheide-wird-die-abgerissene-bruecke-doch-wieder-aufgebaut/
+#: by: https://www.berliner-zeitung.de/mensch-metropole/nach-brueckenabriss-an-der-wuhlheide-was-der-senat-jetzt-als-naechstes-vorhat-li.2335157
 # REMOVED --- #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich? --- #: last_checked: 2025-05-20 --- #: next_check: 2025-05-29
 unter der Brücke	2::inwork 17990,7115 18010,7137
 EOF
@@ -48405,7 +48410,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: priority: #A
-#: last_checked: 2025-06-17
+#: last_checked: 2025-06-18 (mapillary)
 #: check_frequency: 7d
 	q4::inwork 11160,12071 11111,12027 11054,11992
 EOF

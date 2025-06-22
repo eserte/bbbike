@@ -1873,7 +1873,8 @@ asphaltiert	RW2;RW2 27633,-3118 27721,-3164
 asphaltiert	RW2; 27721,-3164 27761,-3165 27898,-3171
 	RW3; 27898,-3171 27761,-3165
 asphaltiert	RW1; 27761,-3165 27721,-3164
-	RW8;RW2 20565,2754 20868,2443 20928,2378 21041,2259 21055,2244 21242,2048 21388,1895
+Verbundsteinpflaster	RW8;RW2 20565,2754 20868,2443 20928,2378 21041,2259 21055,2244 21242,2048
+betoniert, unebene und schadhafte Stellen	RW8;RW2 21242,2048 21388,1895
 Verbundsteinpflaster	RW1; 15166,8489 15378,8668 15558,8820 15591,8848
 die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,8668
 # 
@@ -4428,6 +4429,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: note: früher Richtung Norden benutzungspflichtiger Hochbord, mittlerweile Gehweg für Radfahrer frei
 #: osm_watch: way id="865716506" version="20"
+#: osm_watch: note 4556943 2
 #: last_checked: 2025-05-07 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung) vvv
@@ -6134,7 +6136,8 @@ Gehweg für Radfahrer frei, eng	RW1; 19644,15320 19512,15092
 	RW1; 18929,2454 18656,2465 18484,2471
 #: note: hinter Lärmschutzwand zum Ernst-Ruska-Ufer
 sehr breiter Radweg, Verbundsteinpflaster	RW2; 18484,2471 18656,2465 18929,2454
-Verbundsteinpflaster	RW1;RW1 19574,3186 19695,3072 19743,3026 19878,2899 19983,2795 20119,2642 20283,2461
+Verbundsteinpflaster	RW1; 19574,3186 19695,3072 19743,3026 19878,2899 19983,2795 20119,2642 20283,2461
+unebenes Verbundsteinpflaster	RW1; 20283,2461 20119,2642 19983,2795 19878,2899 19743,3026 19695,3072 19574,3186
 #: by: Karin Millonig:
 	RW6;RW6 11765,1522 11744,1577 11724,1629
 	RW4;RW4 12721,15807 12532,15924
@@ -6601,7 +6604,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: by[nocache]: https://www.facebook.com/larsduesterhoeft1981/posts/pfbid0jyCzp1ULBQ8ZkAaVbTgcaNAcQpqMpfY61ePJ3Bzuyvt3Dg3ctbA8Rjej8xo7C7p9l (Freigabe für Kfz-Verkehr bis Ende 2024?)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (Einbahnstraße für MIV bis voraussichtlich März 2025) (mittlerweile bis Ende Mai 2025)
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-sterndamm-bleibt-auf-unbestimmte-zeit-gesperrt-li.2293446 (könnte bis 2026 dauern)
-#: last_checked: 2025-06-21
+#: last_checked: 2025-06-20 (krickstadt)
 #: check_frequency: 30d
 #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung, bvg)
 #: historical_note: zwischenzeitlich (bis Frühjahr 2025) provisorische Radspur, RW4;
@@ -8672,6 +8675,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.399611,52.49841,08.10.2024,15:06 (bis 01.11.2024) (inaktiv)
 #: source_id: viz2021:13.40304,52.49845,31.07.2024,14:54 (bis 31.08.2024) (inaktiv)
 #: source_id: viz2021:13.408209,52.498506,23.04.2025,15:47 (bis 31.08.2025) (inaktiv)
+#: source_id: viz2021:13.406638,52.498401,23.06.2025,12:00 (Fernwärmebauarbeiten, bis 12.09.2025)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="34"

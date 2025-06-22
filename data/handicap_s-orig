@@ -22,10 +22,10 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-06-19
-#: check_frequency: 60d
-#: next_check: 2025-06-30 (Halteverbotsschilder)
-#: valid: -20250630
+#: last_checked: 2025-06-22
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
+# REMOVED --- #: valid: -20250630
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 # 
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
@@ -384,7 +384,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2025-04-24 (orthofotos)
+#: last_checked: 2025-03-05 (orthofotos)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -724,7 +724,17 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Niederschöneweide ###
 # 
-# REMOVED (nur noch eine kleine Verschwenkung übrig, keine Engstellen mehr) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: next_check_id: STERNDAMM-2023 --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?) --- #: last_checked: 2024-08-17 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-08-15 vvv --- (hier verlaufen Fußgängerverkehr und Radverkehr getrennt) --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17822,5524 17765,5469 --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17754,5460 17736,5441 17695,5394 --- # REMOVED (hier keine mehr) --- Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17754,5460 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+#: next_check_id: SCHOENEWEIDE-2018
+#: next_check_id: STERNDAMM-2023
+#: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
+#: last_checked: 2025-06-20 (krickstadt) vvv
+#: check_frequency: 30d vvv
+Sterndamm: Engstellen, Behinderungen möglich	q3::inwork; 17886,5587 17822,5524 17765,5469
+# REMOVED Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17754,5460 17736,5441 17695,5394
+# REMOVED (hier keine mehr) --- Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17754,5460
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 # REMOVED --- #: next_check_id: SCHOENEWEIDE-2018 --- #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024) --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024) --- #: note: Da der Königsplatz am 6.7.2024 weiterhin gesperrt sein wird, wird es hier erstmal keinen Straßenbahnverkehr geben. --- #: also_indoor: traffic (H,W) --- #: last_checked: 2024-08-05 (krickstadt) vvv --- #: next_check: 2024-08-16 vvv --- #: valid: -20240817 vvv --- Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072 --- #: XXX hier kann man möglicherweise mittlerweile illegal abkürzen --- Michael-Brückner-Str.: Umwege an der Einmündung Brückenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (abgesperrt, wird vermutlich bald zurückgebaut) --- #: next_check_id: STERNDAMM-2020 --- #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: last_checked: 2021-10-02 --- #: check_frequency: 21d --- #: next_check: 2021-10-31 --- Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
@@ -1185,7 +1195,8 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1419174.php (Baumfällungen)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11496 (Anfrage)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1448969.php (zum Ersatzneubau der Hellersdorfer Brücken)
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hellersdorfer-bruecken/
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/hellersdorfer-bruecken/bauzeitliche-verkehrsfuehrung-fuss-radverkehr.png
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hellersdorfer-bruecken/ (Beginn Ende 2025, Bauzeitraum 1,5 Jahre, für den Fuß- und Radverkehr wird eine Behelfskonstruktion eingerichtet)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/hellersdorfer-bruecken/ (alternative URL)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-bauen/der-senat-stellt-planungen-fuer-ersatzbauwerk-ueber-die-wuhle-vor_a416776 (Sperrung 2025, Hilfsbrücke für Fußgänger+Radfahrer, Bauarbeiten bis Ende 2025)
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240724 (Umstellung der Verkehrsführung, weiterhin Sperrung bis Mitte 2025)
@@ -1212,7 +1223,8 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 #: source_id: viz2021:13.582334,52.539807,03.04.2025,10:00 (nur Kfz-Verkehr, bis 07.04.2025) (inaktiv)
 #: source_id: viz2021:13.584338,52.539646,07.04.2025,10:00 (nur Kfz-Verkehr, bis 16.06.2025) (bis 17.06.2025 + weitere Arbeiten) (bis 30.06.2025 + ...)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
-#: osm_watch: note 3581028 7
+#: note: Zusätzlich zu den Straßenbauarbeiten werden die Hellersdorfer Brücken neu gemacht (siehe SenUMVK-Seite), vermutlich Ende 2025 - Mitte 2027, mit Behelfsbrücke für den Fuß+Radverkehr
+#: osm_watch: note 3581028 11
 #: last_checked: 2025-06-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-07-31 (BVG-Meldung) vvv
@@ -5256,7 +5268,7 @@ Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 #: osm_watch: way id="542223826" version="15"
 #: osm_watch: way id="1294822443" version="1"
 #: historical_note: früher: Borkumstr.: Schulgelände	q2 11335,17807 11412,17823
-#: last_checked: 2025-04-24 (orthofotos)
+#: last_checked: 2025-03-05 (orthofotos)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2025-04-30
 Borkumstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11335,17807 11412,17823

@@ -760,7 +760,22 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: IM_004587 (von 2007, inaktiv)
+#	q4::inwork; 15361,12071 15300,11965 15256,11884 15202,11789 15153,11691 15106,11598
+#: source_id: viz2021:13.474178,52.510451,21.01.2025,06:00 (laut VIZ nur Kfz-Verkehr, aber vor Ort existiert eine Umleitung für Radfahrer, bis 22.01.2025) (inaktiv)
+# REMOVED (alte Sperrung im Jan 2025) --- #: note: bei rbb auch Radverkehr
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1881328760085221600
+#: by: https://pbs.twimg.com/media/GhvShD_XwAAOtVh?format=jpg&name=medium
+#: next_check: 2025-06-24
+	q4::inwork 15202,11789 15153,11691 15106,11598
+',
+         'from' => 1750716000,
+         'id' => 796,
+         'text' => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Sperrung, auch Radfahrer sind betroffen, voraussichtlich am 25.06.2025 und 26.06.2025',
+         'type' => 'handicap',
+         'until' => 1750957200
+       },
        undef,
        undef,
        undef,
@@ -5376,7 +5391,25 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181336.php (2022er-Eintrag)
+#: source_id: viz2021:13.55864,52.562688,03.03.2022,14:00 (inaktiv)
+#: by: https://twitter.com/VIZ_Berlin/status/1498672727842082819 (2022er-Eintrag)
+#: source_id: viz2021:13.559233,52.562465,04.11.2024,00:01 (bis 07.11.2024) (inaktiv)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1853120454648607073
+#: by: https://pbs.twimg.com/media/GbUIAkBW8AA3AGf?format=jpg&name=medium
+#: source_id: viz2021:13.559233,52.562465,18.11.2024,08:00 (keine Einschränkung auf Verkehrsarten erwähnt, bis 20.11.2024) (inaktiv)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1858396972723425477 (nur Kfz-Verkehr)
+#: source_id: viz2021:13.558515,52.562701,23.06.2025,08:00 (Vollsperrung, bis 25.06.2025)
+	2::inwork 20895,17594 20769,17650
+	2::inwork 20769,17650 20891,17572
+',
+         'from' => 1750615266,
+         'id' => 3522,
+         'text' => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 23.06.2025 08:00 bis 25.06.2025 17:00',
+         'type' => 'gesperrt',
+         'until' => 1750863600
+       },
        undef,
        undef,
        undef,
@@ -5948,7 +5981,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://berliner-abendblatt.de/2023/01/11/senat-plant-auszug-der-fluechtlinge-aus-terminals-in-tegel/ (bis Mitte März 2023; allerdings bleibt Terminal C möglicherweise weiterhin als Unterkunft erhalten)
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
-#: last_checked: 2025-04-24 (orthofotos) vvv
+#: last_checked: 2025-03-05 (orthofotos) vvv
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="272993611" version="7"
@@ -7260,7 +7293,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 8
+#: osm_watch: note 4185183 9
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
@@ -9041,17 +9074,7 @@ Kantstr. -> Althoffpl.	3::inwork 5838,5563 5675,5573 5588,5579
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://spielstraßen.de/uebersicht.php?date=20250512
-	q4::temp::play 3320,11583 3287,11846
-',
-         'from' => 1747951200,
-         'id' => 4332,
-         'recurring' => 1,
-         'text' => 'Fritschestr.: zwischen Zillestr. und Gewerbehof samstags von 14 bis 18 Uhr temporäre Spielstraße, vom 24. Mai 2025 bis zum 21. Juni 2025',
-         'type' => 'handicap',
-         'until' => 1750543199
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: LOBECKSPORTPLATZ-2025
@@ -9101,7 +9124,7 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
        undef,
        {
          'data' => '#: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten)
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-22
 #: check_frequency: 30d
 #: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -9339,7 +9362,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        undef,
        {
          'data' => '#: priority: #A
-#: last_checked: 2025-06-17
+#: last_checked: 2025-06-18 (mapillary)
 #: check_frequency: 7d
 	q4::inwork 11160,12071 11111,12027 11054,11992
 ',
