@@ -158,6 +158,7 @@ jobs:
         ./miscsrc/docker-bbbike test --dist ${{ matrix.dist }} --distver ${{ matrix.distver }} --src local --jobs 8 \
             --env BBBIKE_TEST_SKIP_MAPSERVER=${{ matrix.bbbike_test_skip_mapserver }} \
             --env USE_BBBIKE_PPA=${{ matrix.use_bbbike_ppa }} \
+            --env BBBIKE_TEST_GUI=1 \
             --env BBBIKE_TEST_SKIP_BBBIKE_DE=${BBBIKE_TEST_SKIP_BBBIKE_DE:-0} \
             --env BBBIKE_TEST_SKIP_BBBIKE_ORG=${BBBIKE_TEST_SKIP_BBBIKE_ORG:-0} \
             --build-env TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT=${{ env.TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT }}
