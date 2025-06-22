@@ -1489,11 +1489,27 @@ sub newvmz_process {
 	main::status_message("'$bbbike_rootdir/tmp/sourceid-current.yml' is not built!", "die");
     }
 
+    my $oldfile = "$vmz_lbvs_directory/newvmz.yaml";
+    {
+	my $latest_archive_file = (sort(bsd_glob("$vmz_lbvs_directory/archive/newvmz-*.yaml")))[-1];
+	if ($latest_archive_file && $latest_archive_file =~ m{/newvmz-(\d+)\.yaml$}) {
+	    my $latest_archive_date = $1;
+	    if (-e $oldfile) {
+		require POSIX;
+		my $oldfile_date = POSIX::strftime("%Y%m%d", localtime((stat($oldfile))[9]));
+		if ($oldfile_date && $oldfile_date lt $latest_archive_date) {
+		    warn "INFO: $latest_archive_date is younger than $oldfile, use it for comparison...\n";
+		    $oldfile = $latest_archive_file;
+		}
+	    }
+	}
+    }
+
     my $bbd = "$vmz_lbvs_directory/diffnewvmz.bbd";
     rename $bbd, "$vmz_lbvs_directory/diffnewvmz.old.bbd";
     my @cmd = ($^X, "$bbbike_rootdir/miscsrc/VMZTool.pm",
 	       @vmztool_args,
-	       "-oldstore", "$vmz_lbvs_directory/newvmz.yaml",
+	       "-oldstore", $oldfile,
 	       "-newstore", "$vmz_lbvs_directory/newvmz.new.yaml",
 	       "-outbbd", $bbd,
 	      );
