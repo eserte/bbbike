@@ -767,14 +767,14 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
 # REMOVED (alte Sperrung im Jan 2025) --- #: note: bei rbb auch Radverkehr
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1881328760085221600
 #: by: https://pbs.twimg.com/media/GhvShD_XwAAOtVh?format=jpg&name=medium
-#: next_check: 2025-06-24
+#: next_check: 2025-06-25
 	q4::inwork 15202,11789 15153,11691 15106,11598
 ',
-         'from' => 1750716000,
+         'from' => 1750802400,
          'id' => 796,
-         'text' => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Sperrung, auch Radfahrer sind betroffen, voraussichtlich am 25.06.2025 und 26.06.2025',
+         'text' => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Sperrung, auch Radfahrer sind betroffen, voraussichtlich am 26.06.2025 und 27.06.2025',
          'type' => 'handicap',
-         'until' => 1750957200
+         'until' => 1751043600
        },
        undef,
        undef,
@@ -1939,6 +1939,7 @@ Hauptallee	2::night -14389,-859 -14910,-903 -15684,-966
          'data' => '######################################################################
 # Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: tempex: (tu,fr) T08-T13
+#: note: Parkverbotsschilder zwischen Binger Str. und Gerolsteiner Str.
 	q4::temp:clock 4397,7380 4330,7382 4161,7388 4064,7396
 ',
          'from' => undef,
@@ -5296,7 +5297,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2025-06-13
+#: last_checked: 2025-06-22 (daf)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
@@ -5401,12 +5402,14 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: source_id: viz2021:13.559233,52.562465,18.11.2024,08:00 (keine Einschränkung auf Verkehrsarten erwähnt, bis 20.11.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1858396972723425477 (nur Kfz-Verkehr)
 #: source_id: viz2021:13.558515,52.562701,23.06.2025,08:00 (Vollsperrung, bis 25.06.2025)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsasx6rq7z2r
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibtz5k5fgbp4x24som7y4liviz3qmq22wtzang6ilmm76knuyhz3m@jpeg (leider unscharf)
 	2::inwork 20895,17594 20769,17650
 	2::inwork 20769,17650 20891,17572
 ',
          'from' => 1750615266,
          'id' => 3522,
-         'text' => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 23.06.2025 08:00 bis 25.06.2025 17:00',
+         'text' => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, auch Radfahrer und Fußgänger sind betroffen, vom 23.06.2025 08:00 bis 25.06.2025 17:00',
          'type' => 'gesperrt',
          'until' => 1750863600
        },
@@ -6077,9 +6080,9 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2025-04-27
-#: check_frequency: 90d
-#: next_check: 2025-07-01 (bw, entwicklungsstadt)
+#: last_checked: 2025-06-22 (daf)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-07-01 (bw, entwicklungsstadt)
 	q3::inwork 6447,9661 6341,9546
 ',
          'from' => undef,
@@ -6446,7 +6449,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-06-13
+#: last_checked: 2025-06-22 (daf)
 #: check_frequency: 180d
 #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -6676,7 +6679,8 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: XXX laut osm nun offen
 #: last_checked: 2025-06-01
 #: check_frequency: 30d
-#: next_check: 2025-07-11 (BA-Pressemitteilung)
+#: next_check: 2025-06-29 (Textänderung: nur noch Vollsperrung)
+# REMOVED --- #: next_check: 2025-07-11 (BA-Pressemitteilung)
 	2::inwork -927,6888 -2218,5133 -3296,3686
 ',
          'dont_check_date' => 1,
@@ -8743,25 +8747,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238 (2018)
-#: by: https://www.bahninfo-forum.de/read.php?9,825093,825257#msg-825257 (laut Aushang ab 7.4.2025)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/klingsorstrasse-in-berlin-steglitz-fur-drei-monate-vollgesperrt-wasserbetriebe-tauschen-regenwasserkanal-aus-13490011.html (zwischen Telramundweg und Amfortasweg, bis 23.06.2025; keine Erwähnung einer Sanierung der Fahrbahn)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250406 (vorerst keine Sperrung)
-#: by: https://stadtrand-nachrichten.de/klingsorstrasse-verwirrung-um-baustelle-der-wasserbetriebe/ (erst ab dem 10. oder 11.04.2025)
-#: by: http://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-klingsorstrasse-in-steglitz/ (ab 10.04.2025)
-#: by: http://viz.berlin.de/site/assets/files/1841/screenshot_2025-04-08_132327.542x0-is.png
-#: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
-#: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025)
-Klingsorstr.	q4::inwork 5206,4432 5150,4345
-Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
-',
-         'from' => 1744149600,
-         'id' => 4291,
-         'text' => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, vom 10.04.2025 bis 23.06.2025',
-         'type' => 'handicap',
-         'until' => 1750716000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: GITSCHINER-2025
@@ -8956,16 +8942,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: 256300616 (bis 23.06.2025)
-	2::inwork -67835,19238 -68086,19042
-',
-         'from' => 1746338400,
-         'id' => 4316,
-         'text' => 'K6330, Brücke bei Buckow: Bauarbeiten, Sperrung, 05.05.2025 08:00 Uhr bis 23.06.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1750690800
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: 256400530 (bis 31.10.2025)
@@ -9055,7 +9032,7 @@ Kantstr. -> Althoffpl.	3::inwork 5838,5563 5675,5573 5588,5579
 ',
          'from' => 1746594000,
          'id' => 4325,
-         'text' => 'Große Seestr.: Anbindung an die Roelckestr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.05.2025 07:00 bis 27.06.2025 17:00',
+         'text' => 'Große Seestr.: Anbindung an die Roelckestr. gesperrt, vom 08.05.2025 07:00 bis 27.06.2025 17:00',
          'type' => 'handicap',
          'until' => 1751036400
        },
@@ -9394,6 +9371,16 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'text' => 'Wildensteiner Straße: Spielstraße zwischen Wandlitzstraße und Ehrlichstraße, freitags zwischen 14:00 und 18:00, vom 4. Juli 2025bis 25. Juli 2025',
          'type' => 'handicap',
          'until' => 1753480799
+       },
+       {
+         'data' => '#: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025)
+	q4::inwork; 16397,12397 16485,12384 16583,12371
+',
+         'from' => 1750654800,
+         'id' => 4367,
+         'text' => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.06.2025 07:00 bis 11.07.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1752246000
        }
      
 );

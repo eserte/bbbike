@@ -3172,7 +3172,7 @@ provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beerman
 	RW6;RW6 14879,9961 14921,10047
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
-#: last_checked: 2025-06-18
+#: last_checked: 2025-06-23
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -3461,7 +3461,7 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: viz2021:13.593488,52.449407,07.11.2022,15:00 (inaktiv)
-#: source_id: viz2021:13.45463,52.532024,04.11.2024,11:00 (bis 31.01.2025) (inaktiv) (bis 14.04.2025) (bis 30.04.2025) (bis 30.05.2025) (bis 30.06.2025)
+#: source_id: viz2021:13.45463,52.532024,04.11.2024,11:00 (bis 31.01.2025) (inaktiv) (bis 14.04.2025) (bis 30.04.2025) (bis 30.05.2025) (bis 30.06.2025) (bis 10.07.2025)
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="16"
 #: osm_watch: way id="966685279" version="8"
@@ -5852,7 +5852,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
 #: osm_watch: way id="176753739" version="23"
-#: last_checked: 2025-05-14 (mapillary)
+#: last_checked: 2025-06-21 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -8265,7 +8265,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4; 11117,10326 10975,10334
 #: next_check_id: GITSCHINER-2025
-#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025)
+#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025) (inaktiv)
 #: source_id: viz2021:13.410603,52.498491,30.01.2025,13:57 (bis 31.03.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
@@ -8649,6 +8649,8 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/220824_mobilitaetswenderat_final.pdf (Fertigstellung Mitte 2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1521316.php (Abschluss im Frühjahr 2025)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-teils-verstetigt_a434211
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsapuz63e22u
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieo4f3jjnnylvgwommgakk7f4vyjutoxawpng7ortxeuxreu5pneu@jpeg (provisorische Radspur Richtung Westen vor der Prinzenstr. ist wieder aufgehoben)
 #: source_id: 2147340884 (inaktiv)
 #: source_id: 2147340970 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_90638 (inaktiv)
@@ -8684,12 +8686,13 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-04-24 (VIZ-Verkehrsmeldung aufgehoben) vvv
 #: next_check: 2025-06-30 (infravelo) vvv
-#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025)
+#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025) (inaktiv)
 # REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle
 #: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;, danach provisorischer Radweg auf Hochbord
 Gehweg für Radfahrer frei	RW1; 10871,10322 10708,10312
 #: source_id: viz2021:13.408209,52.498506,29.11.2024,17:06 (bis 31.12.2024) (inaktiv)
-provisorischer Radstreifen	RW4; 10708,10312 10605,10312
+#: historical_note: zwischenzeitlich (bis 23.06.2025) provisorischer Radstreifen, RW4;
+	RW0; 10708,10312 10605,10312
 provisorischer Radstreifen, kurzes Stück über Hochbord	RW4; 10605,10312 10708,10312 10871,10322
 #: historical_note: früher provisorisch geschützter Radstreifen, mittlerweile Engstelle (etwa 120m), Radfahrer überholen verboten, nun wieder teilweise provisorisch, teilweise schon mit Weißstrich markiert; dann wieder: provisorisch geschützter Radstreifen
 	RW3; 10363,10303 10122,10294
@@ -9144,6 +9147,8 @@ Radspur hinter parkenden Autos, Poller, Grünbeschichtung	RW4; 12291,7074 12259,7
 Grünbeschichtung	RW4; 12259,7164 12244,7205
 Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
+#: XXX wann wird hier die Radspur komplettiert?
+#: last_checked: 2025-06-22 (mapillary)
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
 	RW3; 12158,7449 12123,7549
 Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696

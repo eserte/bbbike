@@ -7026,11 +7026,11 @@ EOF
 	2::inwork 56925,41800 58564,43539
 EOF
      },
-     { from  => $isodate2epoch->("2025-06-24 00:00:00"), # $isodate2epoch->("2025-01-20 00:00:00"), # 1191532790, # 2007-10-04 23:19
-       until => $isodate2epoch->("2025-06-26 19:00:00"), # $isodate2epoch->("2025-01-22 19:00:00"), # 1196463599, # 2007-11-30 23:59
+     { from  => $isodate2epoch->("2025-06-25 00:00:00"), # $isodate2epoch->("2025-01-20 00:00:00"), # 1191532790, # 2007-10-04 23:19
+       until => $isodate2epoch->("2025-06-27 19:00:00"), # $isodate2epoch->("2025-01-22 19:00:00"), # 1196463599, # 2007-11-30 23:59
 #      text  => 'Gürtelstr. (Friedrichshain) Richtung Boxhagener Str. zwischen Frankfurter Allee und Oderstr. Baustelle, Fahrtrichtung gesperrt (bis 11.2007)',
 #      text  => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Kraneinsatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.01.2025 06:00 bis 22.01.2025 19:00',
-       text  => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Sperrung, auch Radfahrer sind betroffen, voraussichtlich am 25.06.2025 und 26.06.2025',
+       text  => 'Gürtelstr.: zwischen Dossestr. und Oderstr. Sperrung, auch Radfahrer sind betroffen, voraussichtlich am 26.06.2025 und 27.06.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: IM_004587 (von 2007, inaktiv)
@@ -7039,7 +7039,7 @@ EOF
 # REMOVED (alte Sperrung im Jan 2025) --- #: note: bei rbb auch Radverkehr
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1881328760085221600
 #: by: https://pbs.twimg.com/media/GhvShD_XwAAOtVh?format=jpg&name=medium
-#: next_check: 2025-06-24
+#: next_check: 2025-06-25
 	q4::inwork 15202,11789 15153,11691 15106,11598
 EOF
      },
@@ -15892,6 +15892,7 @@ EOF
 ######################################################################
 # Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: tempex: (tu,fr) T08-T13
+#: note: Parkverbotsschilder zwischen Binger Str. und Gerolsteiner Str.
 	q4::temp:clock 4397,7380 4330,7382 4161,7388 4064,7396
 EOF
      },
@@ -35685,7 +35686,7 @@ EOF
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2025-06-13
+#: last_checked: 2025-06-22 (daf)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
@@ -36047,9 +36048,9 @@ EOF
 #      text  => 'Wuhletalstr.: Wuhletalbrücke wird abgebrochen, Sperrung, auch für Radfahrer und Fußgänger, vom 3.3.2022 14:00 bis 7.3.2022 12:00',
 #      text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, auch Radfahrer und Fußgänger sind betroffen, vom 04.11.2024 bis 07.11.2024 05:00',
 #      text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 18.11.2024 bis 20.11.2024 18:00',
-       text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 23.06.2025 08:00 bis 25.06.2025 17:00',
+       text  => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, auch Radfahrer und Fußgänger sind betroffen, vom 23.06.2025 08:00 bis 25.06.2025 17:00',
        type  => 'gesperrt',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181336.php (2022er-Eintrag)
 #: source_id: viz2021:13.55864,52.562688,03.03.2022,14:00 (inaktiv)
 #: by: https://twitter.com/VIZ_Berlin/status/1498672727842082819 (2022er-Eintrag)
@@ -36059,6 +36060,8 @@ EOF
 #: source_id: viz2021:13.559233,52.562465,18.11.2024,08:00 (keine Einschränkung auf Verkehrsarten erwähnt, bis 20.11.2024) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1858396972723425477 (nur Kfz-Verkehr)
 #: source_id: viz2021:13.558515,52.562701,23.06.2025,08:00 (Vollsperrung, bis 25.06.2025)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsasx6rq7z2r
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibtz5k5fgbp4x24som7y4liviz3qmq22wtzang6ilmm76knuyhz3m@jpeg (leider unscharf)
 	2::inwork 20895,17594 20769,17650
 	2::inwork 20769,17650 20891,17572
 EOF
@@ -38467,9 +38470,9 @@ EOF
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2025-04-27
-#: check_frequency: 90d
-#: next_check: 2025-07-01 (bw, entwicklungsstadt)
+#: last_checked: 2025-06-22 (daf)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-07-01 (bw, entwicklungsstadt)
 	q3::inwork 6447,9661 6341,9546
 EOF
      },
@@ -40253,7 +40256,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-06-13
+#: last_checked: 2025-06-22 (daf)
 #: check_frequency: 180d
 #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -40945,7 +40948,8 @@ EOF
 #: XXX laut osm nun offen
 #: last_checked: 2025-06-01
 #: check_frequency: 30d
-#: next_check: 2025-07-11 (BA-Pressemitteilung)
+#: next_check: 2025-06-29 (Textänderung: nur noch Vollsperrung)
+# REMOVED --- #: next_check: 2025-07-11 (BA-Pressemitteilung)
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
      },
@@ -47426,7 +47430,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 EOF
      },
      { from  => $isodate2epoch->("2025-04-09 00:00:00"), # 1743953696, # 1743890400, # 2025-04-06 00:00
-       until => 1750716000, # 2025-06-24 00:00
+       until => 1750702259, # 1750716000, # 2025-06-24 00:00
        text  => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, vom 10.04.2025 bis 23.06.2025',
        type  => 'handicap',
        data  => <<EOF,
@@ -47438,7 +47442,7 @@ EOF
 #: by: http://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-klingsorstrasse-in-steglitz/ (ab 10.04.2025)
 #: by: http://viz.berlin.de/site/assets/files/1841/screenshot_2025-04-08_132327.542x0-is.png
 #: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
-#: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025)
+#: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025) (inaktiv)
 Klingsorstr.	q4::inwork 5206,4432 5150,4345
 Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
 EOF
@@ -47759,7 +47763,7 @@ EOF
        text  => 'K6330, Brücke bei Buckow: Bauarbeiten, Sperrung, 05.05.2025 08:00 Uhr bis 23.06.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 256300616 (bis 23.06.2025)
+#: source_id: 256300616 (bis 23.06.2025) (inaktiv)
 	2::inwork -67835,19238 -68086,19042
 EOF
      },
@@ -47869,7 +47873,8 @@ EOF
      },
      { from  => 1746594000, # 2025-05-07 07:00
        until => 1751036400, # 2025-06-27 17:00
-       text  => 'Große Seestr.: Anbindung an die Roelckestr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.05.2025 07:00 bis 27.06.2025 17:00',
+#      text  => 'Große Seestr.: Anbindung an die Roelckestr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.05.2025 07:00 bis 27.06.2025 17:00',
+       text  => 'Große Seestr.: Anbindung an die Roelckestr. gesperrt, vom 08.05.2025 07:00 bis 27.06.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025)
@@ -48091,7 +48096,7 @@ EOF
 #: source_id: viz2021:13.514933,52.468582,19.05.2025,12:00 (kein Endedatum) (bis 06.06.2025) (inaktiv)
 #: source_id: adac:922791900 (inaktiv)
 #: source_id: adac:1526844418 (inaktiv)
-#: source_id: viz2021:13.514371,52.468805,06.06.2025,20:00 (Linksabbiegen nicht möglich, bis 27.06.2025)
+#: source_id: viz2021:13.514371,52.468805,06.06.2025,20:00 (Linksabbiegen nicht möglich, bis 27.06.2025) (inaktiv)
 #: osm_watch: note 4767216 14
 #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-wuhlheide-bruecke-sofortige-sperrung-verkehr-einsturzgefahr.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/
@@ -48114,6 +48119,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/nach-abriss-der-brucke-an-der-berliner-wuhlheide-jetzt-ist-doch-ein-neubau-im-gesprach-13826974.html
 #: by: https://entwicklungsstadt.de/wuhlheide-wird-die-abgerissene-bruecke-doch-wieder-aufgebaut/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/nach-brueckenabriss-an-der-wuhlheide-was-der-senat-jetzt-als-naechstes-vorhat-li.2335157
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1572908.php
 # REMOVED --- #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich? --- #: last_checked: 2025-05-20 --- #: next_check: 2025-05-29
 unter der Brücke	2::inwork 17990,7115 18010,7137
 EOF
@@ -48434,6 +48440,15 @@ EOF
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1571253.php
 #: note: Länge der Sperrung 100m
 	q4::temp::play 18627,8475 18528,8331
+EOF
+     },
+     { from  => 1750654800, # 2025-06-23 07:00
+       until => 1752246000, # 2025-07-11 17:00
+       text  => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.06.2025 07:00 bis 11.07.2025 17:00',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025)
+	q4::inwork; 16397,12397 16485,12384 16583,12371
 EOF
      },
     );

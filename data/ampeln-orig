@@ -40,6 +40,7 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # 
 #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025)
 #: source_id: viz2021:13.455059,52.559321,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
+#: last_checked: 2025-06-21 (mapillary)
 #: next_check: -2025-06-27
 #: valid: -20250627
 Roelckestr./Große Seestr.: provisorische Ampel	X::inwork 13754,17133
@@ -53,10 +54,10 @@ Roelckestr./Große Seestr.: provisorische Ampel	X::inwork 13754,17133
 #: valid: -20250708
 Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
 # 
-#: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025) (bis 22.05.2025) (bis 24.06.2025)
+#: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025) (bis 22.05.2025) (bis 24.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lnmh7lfw4k2j
-#: next_check: 2025-06-24 vvv
-#: valid: -20250624 vvv
+#: next_check: 2025-07-11 vvv
+#: valid: -20250711 vvv
 Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
 Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 17037,4794
 #: valid ^^^
@@ -101,11 +102,11 @@ Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alterna
 #: valid: -20250731
 Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 # 
-#: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025) (bis 16.06.2025) (bis 30.06.2025)
+#: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025) (bis 16.06.2025) (bis 30.06.2025) (bis 24.06.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1894643566640861298
 #: by: https://pbs.twimg.com/media/GknmW6oW8AADYN1?format=jpg&name=medium
-#: next_check: 2025-06-30
-#: valid: -20250630
+#: next_check: 2025-06-24
+#: valid: -20250624
 Dorfstr./Hausvaterweg: Gegenverkehrsregelung	X::inwork::alternating 19782,18211
 # 
 # REMOVED --- #: source_id[inactive]: bvg2024:184#HIM_FREETEXT_235819 (kein Endedatum) (bis 2025-03-19)
@@ -283,7 +284,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
-#: last_checked: 2025-06-13
+#: last_checked: 2025-06-22 (daf)
 #: check_frequency: 180d
 #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	X::inwork 7873,12927
@@ -313,7 +314,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-06-22
+#: last_checked: 2025-06-23
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -3979,7 +3980,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2025-06-20
+#: last_checked: 2025-06-22 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 	X::inwork 12185,7381

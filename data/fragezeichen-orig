@@ -3156,7 +3156,7 @@ Herrfurthplatz: ein Abschnitt wird "eingezogen"; eventuell wird hier auch asphal
 #: osm_watch: way id="410242419" version="17"
 #: osm_watch: way id="860638046" version="13"
 #: XXX weitgehend realisiert, nur im Bereich Thomasstraße fehlt Richtung Norden noch die Markierung, außerdem kommt vielleicht noch eine Grünbeschichtung sowie einige Radwegschilder fehlen noch
-#: last_checked: 2025-06-20
+#: last_checked: 2025-06-22 (mapillary)
 #: check_frequency: 14d
 # REMOVED (abgeschlossen) --- #: next_check: 2025-09-30 (infravelo)
 Hermannstr. (Thomasstr. - Werbellinstr.): Bau eines Radfahrstreifens, über längere Abschnitte als PBL	?::inwork 12185,7381 12158,7449 12123,7549 12090,7651 12081,7679 12075,7696 12057,7744 12041,7788 12025,7852 12001,7937 11979,8014
@@ -3428,6 +3428,8 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9585 (Antrag)
 #: by: https://www.tagesspiegel.de/berlin/verlangerung-der-a100-durch-berlin-stau-auf-der-neuen-autobahn-wird-eingeplant-13837747.html
 #: by: https://entwicklungsstadt.de/a100-verlaengerung-bis-treptow-soll-ende-august-eroeffnet-werden/ (Ende August 2025 oder Anfang September 2025)
+#: by: https://www.morgenpost.de/berlin/article409323489/a100-verkehrschaos-noch-keine-ampelplanung-fuer-die-ersten-monate.html
+#: by: https://entwicklungsstadt.de/a100-bis-treptower-park-kritik-an-fehlender-ampelplanung-waechst/
 #: source_id: viz2021:13.460605,52.471641,09.08.2024,07:00 (Bauarbeiten in der Sonnenallee, bis 27.09.2024) (bis 18.10.2024) (bis 29.11.2024) (bis 20.12.2024) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.460292,52.47175,05.06.2025,07:00 (Installation einer Ampelanlage in der Sonnenallee, bis 13.06.2025) (inaktiv)
 #: XXX -> strassen_bab-orig, wenn fertig
@@ -4671,7 +4673,7 @@ Gothaer/Eisenacher Str.: Ampel wird gebaut	?::projected 22883,15091 22899,15073 
 #: note: laut rbbtext bis 31.3.2021
 #: source_id: 2147344451 (bis 28.2.2021) (inaktiv)
 #: osm_watch: way id="373625581" version="19"
-#: last_checked: 2025-03-05 (orthofotos)
+#: last_checked: 2025-06-21 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-06-30
 Britzer Damm: Busspur geplant	?::projected; 12564,4308 12547,4391 12731,4841
@@ -4683,7 +4685,7 @@ Britzer Damm: Busspur geplant	?::projected; 12564,4308 12547,4391 12731,4841
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/9gePsGoSM172PryleD0XuoBH4T9vqEjh8qteLGeO/RztWbeIU/10-Anlagen/02/810MA_0733_Busspur_Britzer_Damm.pdf
 #: by: https://www.berliner-zeitung.de/mensch-metropole/busspuren-in-gefahr-warum-in-berlin-noch-mehr-bvg-fahrstreifen-verschwinden-koennten-li.2206041 (Erwähnung)
 #: note: während der Sperrung Tempelhofer Weg/Gradestr. war in Richtung Süden ab Wussowstr. eine temporäre Busspur markiert, allerdings ohne Radfreigabe
-#: last_checked: 2025-03-05 (orthofotos)
+#: last_checked: 2025-06-22 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-06-30
 Britzer Damm (von Fulhamer Allee bis Hermannstraße): Busspur geplant, evtl. in beiden Richtungen	? 12731,4841 12885,5205 12883,5257 12841,5416 12812,5526 12798,5580 12794,5596 12789,5612 12722,5831 12699,5909 12644,6087 12628,6166 12618,6207 12597,6293 12595,6299 12588,6337 12576,6374
@@ -5714,8 +5716,9 @@ Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102
 # REMOVED --- #: next_check: 2024-04-05
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
 #: source_id: viz2021:13.441995,52.550324,05.12.2023,07:00 (Leitungsarbeiten (für den Zebrastreifen?), Gegenverkehrsregelung mit Ampel, bis 26.01.2024) (bis 01.03.2024) (inaktiv)
-#: last_checked: 2025-06-14
-Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
+#: last_checked: 2025-06-21 (mapillary)
+#: check_frequency: 60d
+Roelckestr./Streustr.: Zebrastreifen geplant	?::inwork 12882,16165 12890,16121 12906,16074
 #: last_checked: 2025-06-10 (mapillary)
 Schivelbeiner Str./Seelower Str.: Zebrastreifen geplant	?::projected 10767,16174 10739,16146 10708,16118
 #: note: in der Drucksache fälschlicherweise "Chatronstraße" (ohne r) geschrieben
@@ -6310,7 +6313,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-06-18
+#: last_checked: 2025-06-23
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -8865,7 +8868,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: note: erste Pfosten stehen bereits, mit meist zugehängten Schildern, einige Schilder schon (illegal?) nicht mehr zugehangen, außerdem erste Markierungen (Radspuren gegen die Einbahnstraßenrichtung); laut Aushängen im Februar (2025) aktiv, ist aber offensichtlich verzögert
-#: last_checked: 2025-06-22 vvv
+#: last_checked: 2025-06-23 vvv
 #: check_frequency: 10d vvv
 #: osm_watch: way id="1145133960" version="3"
 Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14354,12012 14468,11992 14589,11975
@@ -10458,7 +10461,7 @@ St. Jacobi-Kirchhof II - Ost: Teilfläche wird zurückgebaut	?::projected 12259,71
 #: osm_watch: way id="1185492313" version="1"
 #: source_id: 101100026 (möglicherweise inaktiv)
 #: source_id: viz2021:13.56252,52.379717,26.01.2024,10:00 (bis 12.11.2024) (inaktiv)
-#: source_id: viz2021:13.559867,52.397245,18.12.2024,10:00 (bis 30.06.2025)
+#: source_id: viz2021:13.559867,52.397245,18.12.2024,10:00 (bis 30.06.2025) (bis 25.07.2025)
 #: last_checked: 2024-10-08 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2026-01-01 (osm)
@@ -10540,7 +10543,8 @@ Bebauungsplan 8-84 (Koppelweg): neue Straße geplant	?::projected 11987,4329 1204
 #: by: https://www.berliner-woche.de/britz/c-bauen/wohnungsbau-in-mohriner-allee_a338963
 #: by: https://www.deutsches-architekturforum.de/thread/13768-neuk%C3%B6lln-kleinere-projekte/?postID=715010#post715010
 #: source_id: viz2021:13.424189,52.441641,14.03.2022,08:00 (Tiefbauarbeiten bis 14.4.2022; haben diese etwas mit dem Bauvorhaben zu tun?) (inaktiv)
-#: next_check: 2025-06-30
+#: last_checked: 2025-06-22 (großer Parkplatz hier) (mapillary)
+#: check_frequency: 360d
 Bebauungsplan XIV-256-2 (Mohriner Allee 70, 72, 72A): möglicherweise entsteht hier eine Erschließungsstraße	?::projected 11884,4018 11863,4101
 # 
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/bebauungsplan.1184212.php
@@ -11862,7 +11866,7 @@ Tempelhofer Weg/Britzer Damm: Bebauungsplan 8-98, werden hier Wege/Straßen entst
 #: by: https://www.deutsches-architekturforum.de/thread/14794-ulap-quartier-geplant/?postID=768618#post768618
 #: by: https://entwicklungsstadt.de/hauptbahnhof-landeslabor-wird-fuer-neues-stadtquartier-abgerissen/ (Rückbau bis Ende 2025; Bauzeit des ULAP-Quartiers 10 Jahre)
 #: XXX noch keine Termine
-#: last_checked: 2025-05-31
+#: last_checked: 2025-06-22 (daf)
 #: check_frequency: 720d
 ULAP-Quartier: wird es eine Verbindung unter der Stadtbahn geben?	? 7787,12994 7722,13060
 # 
@@ -13147,7 +13151,7 @@ Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 142
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14126,3225 14023,3276 13917,3335 13775,3500
 #: check_frequency ^^^
 #: last_checked ^^^
-#: last_checked: 2025-03-19
+#: last_checked: 2025-06-22 (mapillary)
 #: check_frequency: 180d
 Gutschmidtstr.: werden die Radwege asphaltiert oder saniert?	? 13775,3500 13710,3522 13623,3523 13526,3519
 #: XXX ^^^
