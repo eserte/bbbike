@@ -2747,12 +2747,12 @@ tragen	0:45 18661,4655
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: last_checked: 2024-07-03 vvv
-#: check_frequency: 360d vvv
-#: next_check: 2025-12-31 vvv
+# REMOVED --- #: check_frequency: 360d vvv
+#: next_check: 2025-09-20 (pardok) vvv
 tragen (2x15 Stufen) oder Aufzug	0:35 9209,417
 tragen (3x12 Stufen) oder Aufzug	0:35 9249,421
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 tragen (28 Stufen)	0:30 6138,12877
@@ -4002,8 +4002,9 @@ Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwo
 #: osm_watch: way id="804682311" version="4"
 #: osm_watch: note 4734732 4
 #: priority: #C
-#: last_checked: 2025-04-30
-#: check_frequency: 60d
+#: last_checked: 2025-06-10 (mapillary, Sackgassenschild)
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 60d
 Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13639,14133 13715,14018
 # 
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
@@ -4215,7 +4216,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-06-17
+#: last_checked: 2025-06-24
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4242,7 +4243,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-06-10 vvv
+#: last_checked: 2025-06-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="6"
@@ -4489,11 +4490,13 @@ Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,1067
 #: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1363169.php (Fertigstellung 1. Halbjahr 2026)
 #: by: https://entwicklungsstadt.de/mauerpark-am-falkplatz-nimmt-der-umbau-sichtbare-formen-an/ (Fertigstellung weiterhin erstes Halbjahr 2026)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1573145.php (Teilflächen fertiggestellt, restlicher Bereich bis Frühjahr 2026)
 #: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
 #: priority: #C
 #: last_checked: 2025-06-08
 #: check_frequency: 90d
-#: next_check: 2026-06-30 (BA, entwicklungsstadt)
+# REMOVED --- #: next_check: 2026-06-30 (BA, entwicklungsstadt)
+#: next_check: 2025-06-24 (BA-Pressemitteilung)
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
 #: next_check_id: LICHTENBERGERBRUECKEN-2022

@@ -6631,21 +6631,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.378482,52.51322,30.06.2023,06:00 (inaktiv)
-#: source_id: viz2021:13.379598,52.513471,04.06.2025,11:00 (nun auch Radverkehr, bis 06.06.2025) (inaktiv)
-#: source_id: viz2021:13.37721,52.51308,20.06.2025,06:00 (bis 24.06.2025)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lqrj3rpl5s2m
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifyb63t5nk4gx7pcwqimvcu5puxj7vglsxspnyo47pasf553iju5u@jpeg
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreies7dsygvbmzyugj7lilblrvaym6kqwwd5mcqytzw2w6borruloka@jpeg
-	q4::temp; 8577,11896 8783,11959
-',
-         'from' => 1750354277,
-         'id' => 3839,
-         'text' => 'Hannah-Arendt-Str.: Veranstaltung, Richtung Französische Str. zwischen Ebertstr. und Gertrud-Kolmar-Str. gesperrt, vom 20.06.2025 06:00 bis 24.06.2025 18:00',
-         'type' => 'handicap',
-         'until' => 1750780800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7356,11 +7342,11 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 #: source_id: viz2021:13.61963,52.52253,16.06.2025,10:00 (bis 04.07.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
-#: also_indoor: traffic (B,T,re-G)
+#: also_indoor: traffic (ex-B,ex-T,re-G)
 #: note: bei Bing & TomTom & Google nur die östliche Anbindung als gesperrt markiert
 #: note: Außerdem gibt\'s eine Gegenverkehrsregelung: Richtung Süden müssen die Radfahrer den Bürgersteigradweg benutzen, Richtung Norden ist der vorhandene Bürgersteig abgesperrt und man ist von der Gegenverkehrsregelung betroffen
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-06-11 (traffic) vvv
+#: last_checked: 2025-06-24 (traffic) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 14d (traffic) vvv
 #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
@@ -7380,7 +7366,7 @@ Am Lupinenfeld: Anbindung Hönower Str. gesperrt	q3::inwork 25031,13242 25138,131
 ',
          'from' => 1713942000,
          'id' => 4048,
-         'text' => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Am Lupinenfeld: Bauarbeiten, Fahrbahn gesperrt, möglicherweise bis 04.07.2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7509,7 +7495,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-06-17 vvv
+#: last_checked: 2025-06-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7856,7 +7842,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-06-14 vvv
+#: last_checked: 2025-06-24 (tempelhoferfeld website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -8343,7 +8329,8 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: source_id: viz2021:13.298658,52.457781,22.01.2025,07:00 (bis 01.10.2025 + weitere Bauarbeiten bis 09/2025) (inaktiv)
-#: source_id: viz2021:13.298658,52.457781,03.02.2025,10:00 (bis 25.04.2025 + weitere Bauarbeiten bis 09/2025) (bis 02.05.2025 + ...) (bis 03.09.2025)
+#: source_id: viz2021:13.298658,52.457781,03.02.2025,10:00 (bis 25.04.2025 + weitere Bauarbeiten bis 09/2025) (bis 02.05.2025 + ...) (bis 03.09.2025) (inaktiv)
+#: source_id: viz2021:13.297092,52.457823,16.06.2025,09:00 (bis 03.09.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1881943627896922593
 #: by: https://pbs.twimg.com/media/Ghzqa-yXAAA6Iuk?format=jpg&name=large
 #: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/zehn-wichtige-baustellen-in-steglitz-zehlendorf-das-sind-die-grunde-fur-die-buddelei-im-berliner-sudwesten-13797766.html (bis 26. Februar 2027)
@@ -8896,26 +8883,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        undef,
        undef,
        undef,
-       {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-G,T)
-#: osm_watch: way id="1237862681" version="5"
-#: osm_watch: way id="4871838" version="28"
-#: osm_watch: way id="1237862680" version="2"
-#: osm_watch: way id="1237862682" version="2"
-#: osm_watch: note 4544910 5
-#: osm_watch: note 4544909 3
-#: osm_watch: note 4544105 3
-#: last_checked: 2025-06-14 (traffic)
-#: check_frequency: 14d
-	q3::inwork 5280,5714 5276,5622 5274,5557
-',
-         'from' => undef,
-         'id' => 4311,
-         'text' => 'Heesestr.: Sperrung der Fahrbahn an der Kreuzung Althoffstr., Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...)
@@ -8930,7 +8898,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        {
          'data' => '#: note: Halteverbotsschilder bis 14.06.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2025-06-18 (traffic)
+#: last_checked: 2025-06-24 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-06-14
 	q4::inwork 6351,9335 6446,9328
@@ -9112,16 +9080,7 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
          'type' => 'handicap',
          'until' => 1753714800
        },
-       {
-         'data' => '#: source_id: viz2021:13.32289,52.499283,15.05.2025,07:00 (bis 24.06.2025)
-	q4::inwork 4930,10368 4910,10135
-',
-         'from' => 1747198800,
-         'id' => 4339,
-         'text' => 'Pfalzburger Str. (Wilmersdorf): Bauarbeiten zwischen Lietzenburger Str. und Ludwigkirchplatz, evtl. sind auch Radfahrer betroffen, vom 15.05.2025 07:00 bis 24.06.2025 23:59',
-         'type' => 'handicap',
-         'until' => 1750802340
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (none)
 #: last_checked: 2025-06-14
@@ -9142,9 +9101,9 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
          'data' => '#: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
-#: also_indoor: traffic (T,G,H)
+#: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-06-21 (traffic) vvv
+#: last_checked: 2025-06-24 (traffic) vvv
 #: check_frequency: 4d vvv
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
@@ -9202,21 +9161,24 @@ Privatstr. 2	q4::inwork 16905,17281 17028,17298
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025)
+         'data' => '#: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 28.11.2025)
 # REMOVED (Einbahnstraße offen für Radfahrer) --- Bouchéstr.: geplante Sperrung (wegen der Umleitung?)	?; 13489,9456 13602,9581
 #: source_id: bvg2024:194#HIM_FREETEXT_286893
-#: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025)
+#: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025)
 #: source_id: adac:738022488 (bis 20.06.2025)
 Karl-Kunger-Str.: Einfahrt Richtung Westen gesperrt (wenige Meter)	q3::inwork; 13614,9333 13489,9456
-#: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025)
+#: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (inaktiv)
 #: source_id: adac:90391862 (bis 20.06.2025)
+#: also_indoor: traffic (T,H)
+#: XXX Wurde diese Sperrung mittlerweile aufgehoben? (Bei VIZ und rbb nicht mehr gelistet)
+#: next_check: 2025-06-24
 Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::inwork 13614,9333 13715,9455
 ',
          'from' => 1748754000,
          'id' => 4352,
-         'text' => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, vom 02.06.2025 07:00 bis 24.06.2025 17:00',
+         'text' => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, voraussichtlich bis Ende September 2025',
          'type' => 'handicap',
-         'until' => 1750777200
+         'until' => 1759244400
        },
        {
          'data' => '#: source_id: viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027)
@@ -9338,14 +9300,15 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        },
        undef,
        {
-         'data' => '#: priority: #A
-#: last_checked: 2025-06-18 (mapillary)
+         'data' => '#: note: zurzeit (2025-06-24): Umleitung für Radfahrer via Brückenstr. - Köpenicker Str. - Inselstr., keine Absperrung auf beiden Seiten der Relation Wallstr. - Märkisches Ufer, aber Verbotsschilder stehen noch
+#: priority: #A
+#: last_checked: 2025-06-24
 #: check_frequency: 7d
 	q4::inwork 11160,12071 11111,12027 11054,11992
 ',
          'from' => undef,
          'id' => 4364,
-         'text' => 'Wallstr. Höhe Märkisches Museum: Fahrbahn kann wegen Bauarbeiten für Radfahrer gesperrt sein, Ende der Bauarbeiten unbekannt',
+         'text' => 'Wallstr. Höhe Märkisches Museum: Fahrbahn kann wegen Bauarbeiten für Radfahrer gesperrt sein',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9381,6 +9344,18 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'text' => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.06.2025 07:00 bis 11.07.2025 17:00',
          'type' => 'handicap',
          'until' => 1752246000
+       },
+       {
+         'data' => '	2::temp 21150,11925 21134,11913 21132,11943 21100,11960 20857,12027 20810,12031
+	2::temp 20857,12027 20835,11810 20831,11777 20825,11732 20764,11675
+	2::temp 20775,11801 20801,11797 20804,11813 20835,11810
+	2::temp 20807,12083 20857,12027
+',
+         'from' => undef,
+         'id' => 4368,
+         'text' => 'Park Biesdorf: wegen Sturmschäden gesperrt, voraussichtlich bis 25.06.2025',
+         'type' => 'gesperrt',
+         'until' => 1750874400
        }
      
 );

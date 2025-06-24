@@ -469,12 +469,13 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: by: https://www.morgenpost.de/bezirke/pankow/article408832731/berlin-lastwagen-stress-in-pankow-neubau-der-kastanienallee-zwingt-lkw-in-dieses-zentru.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/unterlassungsaufforderung-an-bezirksamt-berliner-anwohner-gehen-rechtlich-gegen-strassenausbau-fur-schwerlaster-vor-13788946.html
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7125 (Antrag)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/anwohner-blamieren-verkehrsbehorden-gutachten-mangelhaft-ausbau-der-kastanienallee-in-berlin-pankow-gestoppt-13899433.html (Baustart abgesagt)
 #: source_id: 2147346774 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: source_id: viz2021:13.388829,52.59131,05.01.2021,07:00 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: osm_watch: way id="36954368" version="19"
-#: last_checked: 2025-02-23 (mapillary)
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2025-10-31
+#: last_checked: 2025-06-23 (Tsp)
+#: check_frequency: 360d
+# REMOVED --- #: next_check: 2025-10-31
 Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904,20596 9027,20603 9073,20606 9162,20613 9175,20613 9227,20617 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
 # 
 # REMOVED --- #: XXX "ab 2017" --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-06-03-2019.pdf (geplante Maßnahme 2019) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.895829.php (Bauarbeiten ab März 2020 bis Ende August 2020) --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/neue-radwege-werden-gebaut_a253741 --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Fertigstellung) --- #: source_id: 2147341430 --- #: XXX zumindest Richtung Norden scheint was zu existieren, aber noch nicht komplett fertig (Autos parken noch drauf) --- #: XXX laut osm mittlerweile teilweise realisiert; im Südteil fehlt wohl noch was... --- #: osm_watch: way id="9711554" version="40" --- #: osm_watch: way id="29560375" version="20" --- #: osm_watch: way id="253493082" version="11" --- #: last_checked: 2020-07-10 (mapillary) --- #: check_frequency: 7d --- #: next_check: 2020-08-31
@@ -1025,6 +1026,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1385233.php
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-19040.pdf (Planung: Radspur ("sichere Führung") Richtung B96a, gemeinsamer oder getrennter Geh-/Radweg Richtung Johannisthal)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7908 (Antrag)
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide?date=20250624 (Freigabe für den MIV Ende Juli 2025)
 # REMOVED (404) --- #: by: http://www.johthal.de/instar-video.html (Webcam)
 #: source_id: 2147345841 (bis 30.9.2021) (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_204650_LMS-BR_72 (bis 30.9.2021) (inaktiv)
@@ -1034,7 +1036,8 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 #: XXX außerdem wird es für Rechtsabbieger Michael-Brückner-Str. -> Sterndamm einen asphaltierten Radweg geben
 #: last_checked: 2025-06-21
 #: check_frequency: 30d
-#: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-07-31 (BVG)
 # REMOVED (hier realisiert) --- Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17695,5394 17736,5441
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17736,5441 17754,5460 17765,5469 17822,5524 17886,5587
 # 
@@ -4010,7 +4013,7 @@ Gutenbergstr.: geplante Leitungsarbeiten, wird es Einschränkungen für Radfahrer 
 # REMOVED (es wurde erstmal nur der Parkstreifen neu gemacht) --- #: XXX in diesem Abschnitt evtl. schon eine Realisierung bis März 2024? (unklar) --- #: next_check: 2024-03-31
 #: priority: #B vvv
 #: last_checked: 2025-04-27 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 61d vvv
 #: next_check: 2025-09-30 (infravelo) vvv
 #: osm_watch: way id="37280436" version="22"
 #: osm_watch: way id="32879631" version="24"
@@ -4026,7 +4029,7 @@ Grunewaldstr.: geschützter Radfahrstreifen von Kufsteiner Str./Bamberger Str. bi
 #: XXX zwischen Goltzstr. und Martin-Luther-Str. Richtung Westen in Bau --- laut osm note mittlerweile fertig (teilweise fehlen noch Leitboys)
 #: note: bei rbb bis 09.07.2025 verlängert, bei VIZ nicht
 #: last_checked: 2025-04-27 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 61d vvv
 #: next_check: 2025-07-08 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-09-30 (infravelo) vvv
 #: osm_watch: way id="4531624" version="32"
@@ -5625,7 +5628,7 @@ Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 1498
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2025-06-18 (mapillary)
+#: last_checked: 2025-06-24
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
@@ -7389,7 +7392,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-06-17
+#: last_checked: 2025-06-24
 #: check_frequency: 30d
 #: next_check: 2025-06-30 (Halteverbotsschilder)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7611,7 +7614,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-06-17
+#: last_checked: 2025-06-24
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8216,7 +8219,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2025-06-17
+#: last_checked: 2025-06-24
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8301,9 +8304,8 @@ Forst, Cottbusser Str.: Schutzstreifen geplant	?::projected 94780,-71444 95299,-
 #: by: https://www.o-sp.de/download/lbvbrandenburg/348108
 #: by: https://www.o-sp.de/download/lbvbrandenburg/348110
 #: by: https://www.o-sp.de/download/lbvbrandenburg/348116
-#: last_checked: 2024-07-01 (mapillary)
-#: check_frequency: 360d (ggfs. hochsetzen)
-# REMOVED --- #: check_frequency: 90d (indoor research)
+#: last_checked: 2025-06-24 (osm)
+#: check_frequency: 90d (indoor research)
 Herzberg/Elster - Fermerswalde (B87): Radweg geplant	?::projected -1256,-81290 -2100,-84117 -2267,-84330
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=67155
@@ -10787,6 +10789,7 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: https://www.tagesspiegel.de/berlin/neue-schnellstrasse-durch-berlin-kosten-fur-das-land-haben-sich-auf-324-millionen-euro-verzehnfacht-13073716.html
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/kostenanteil-koennte-um-90-prozent-steigen_a435122
 #: by: https://www.tagesspiegel.de/berlin/der-berliner-osten-wurde-verkehrspolitisch-zuruckgeworfen-drei-spd-kandidaten-fordern-tempo-fur-tvo-schnellstrasse-13178224.html
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1573197.php
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/tangentiale-verbindung-ost/
 #: osm_watch: way id="154505652" version="17"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
