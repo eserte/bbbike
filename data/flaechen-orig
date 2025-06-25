@@ -197,10 +197,11 @@ Spreewaldplatz	F:P 12292,10374 12243,10274 12341,10218 12292,10374
 #: by: https://checkpoint.tagesspiegel.de/telegramm/1F6m7Twz6LihPniZCgFHP0 (Zaunbau ab 23.06.2025)
 #: by: https://entwicklungsstadt.de/trotz-kritik-bau-des-zauns-am-goerlitzer-park-beginnt-am-montag/
 #: by: https://www.tagesspiegel.de/berlin/im-sommer-eine-stunde-langer-diese-schliesszeiten-sollen-fur-den-gorlitzer-park-gelten-sobald-der-zaun-steht-13889521.html (geplante Öffnungszeiten: Sommer 6-23 Uhr, Winter 6-22 Uhr)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/bauarbeiten-am-gorlitzer-park-starten-zaun-gegner-protestieren-gegen-senatsplane-13901743.html
 #: XXX Werden die Wege nachts (genaue Schließzeiten?) abgeschlossen sein? Oder wird das nur situationsbedingt (wann?) passieren?
 #: XXX Neue Lampen werden geplant -> nolighting-Einträge ggfs. prüfen.
 #: priority: #A
-#: last_checked: 2025-06-20
+#: last_checked: 2025-06-25
 #: check_frequency: 30d
 #: next_check: 2025-12-31 (Tsp)
 Görlitzer Park	F:P 13220,9980 13162,9904 13139,9880 13086,9825 12932,9900 12983,10000 12881,10056 12829,9957 12814,9966 12341,10218 12397,10335 12317,10382 12309,10427 12348,10432 13220,9980
@@ -1362,7 +1363,7 @@ Stadion Lichterfelde	F:Sport 5167,3787 5119,3736 5005,3670 4871,3423 4843,3378 4
 Friedhof Grunewald-Forst	F:Cemetery -2736,9393 -2697,9367 -2635,9464 -2676,9489
 Paul-Zobel-Sportplatz	F:Sport 9239,18691 9214,18666 9056,18608 9008,18708 9201,18777 9239,18691
 Friedhof Pankow V	F:Cemetery 8402,19093 8412,19074 8462,19011 8633,19107 8582,19189 8402,19093
-Heidelberger Platz	F:P 4106,8031 4180,8098 4246,8000 4173,7993 4121,8016 4106,8031
+Heidelberger Platz	F:P 4106,8031 4180,8098 4227,8052 4246,8000 4173,7993 4121,8016 4106,8031
 KGA Bodenreform	F:Orchard 20263,2260 20269,2156 20464,2175 20550,2194 20793,2247 20895,2274 20810,2398 20496,2321 20499,2285 20303,2254 20282,2259
 Lortzingplatz	F:P 10007,-2836 10050,-2808 10077,-2789 10085,-2810 10130,-2932 10067,-2952 10067,-2952 10028,-2888 10007,-2836
 #: note: es existieren einige Wege im Park (vom Charakter her eher Waldwege), aber für Radfahrer explizit verboten
@@ -1849,7 +1850,7 @@ KGA Am Stadtpark	F:Orchard 5818,8354 5831,8358 5913,8415 5909,8509 5786,8609 579
 #: alias ^^^
 (Kolonien in Schmargendorf)	F:Orchard 3320,7515 3468,7455 3538,7515 3596,7566 3619,7587 3731,7689 3735,7792 3639,7800 3649,7992 3777,7984 3779,8105 3665,8131 3544,8159 3362,8200 3356,8106 3332,8107 3313,7777 3198,7787 3183,7563 3320,7515
 Kolonie Blaupunkt	F:Orchard 3544,8159 3551,8225 3668,8213 3665,8131
-(Sportgelände Wilmersdorf)	F:Sport 3668,8213 3675,8366 3834,8366 3831,8461 3495,8844 3489,8839 3456,8796 3331,8646 3295,8524 3137,8538 3131,8435 3117,8248 3362,8200 3544,8159 3551,8225 3668,8213
+(Sportgelände Wilmersdorf)	F:Sport 3668,8213 3675,8366 3834,8366 3831,8461 3495,8844 3490,8840 3456,8796 3331,8646 3295,8524 3137,8538 3131,8435 3117,8248 3362,8200 3544,8159 3551,8225 3668,8213
 Stern 1900	F:Sport 4347,6551 4423,6477 4500,6612 4528,6700 4528,6715 4404,6717
 #: alias: Katzbachstadion
 #: by: http://diskussionen.die-fans.de/nordostfussball/35511-kreuzberger-katzbachstadion-wird-umbenannt.html

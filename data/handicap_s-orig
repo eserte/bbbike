@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-06-21
+#: last_checked: 2025-06-25
 #: check_frequency: 45d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -432,18 +432,18 @@ Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,129
 # REMOVED --- #: note: keine große Einschränkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11054,11992 11111,12027
 # REMOVED (Sperrung wurde aufgehoben) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-22 --- Krausenstr.: Hochbauarbeiten, Fahrbahn zwischen Friedrichstr. und Mauerstr. gesperrt	q4::inwork 9456,11513 9331,11497
 # 
-# REMOVED --- #: next_check_id: ROTESRATHAUS-2023
-# REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-# REMOVED --- #: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon
-# REMOVED --- #: last_checked: 2024-09-05 (webcam) vvv
-# REMOVED --- #: next_check: 2024-09-06 vvv
-# REMOVED --- #: valid: -20240906 vvv
-# REMOVED --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
-# REMOVED --- #: note: eigentlich nur in Richtung W-O befahrbar
-# REMOVED --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: last_checked ^^^
+#: next_check_id: ROTESRATHAUS-2023
+#: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
+#: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon
+#: last_checked: 2024-09-05 (webcam) vvv
+#: next_check: 2025-06-26 vvv
+#: valid: -20250704 vvv
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
+#: note: eigentlich nur in Richtung W-O befahrbar
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED (hier keine Bauarbeiten mehr) --- #: next_check_id: PLDVEREINTENNATIONEN-2023 --- #: last_checked: 2023-08-09 --- #: check_frequency: 30d --- #: next_check: 2023-08-11 --- #: valid: -20230811 --- Platz der Vereinten Nationen: Anbindung Mollstr. gesperrt, Bordsteine, Engstellen	q4::inwork 11896,13075 11904,13052
 # REMOVED (mittlerweile wieder Führung via Fahrbahn trotz nicht ganz abgeschlossener Baustelle) --- #: source_id: viz2021:13.414995,52.527328,22.05.2023,06:00 (bis 09.06.2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1660510235155484672#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndldEE0b1dBQVU0VmE2LmpwZw== --- #: next_check: 2023-06-09 --- #: valid: -20230609 --- Mollstr.: Fahrbahnsanierungsarbeiten, Radfahrer werden über den Gehweg geführt	q1-::inwork; 11160,13492 11216,13451 11270,13412 11276,13408
@@ -758,11 +758,11 @@ An der Wuhlheide: Engstellen durch unnötige Absperrungen, einige Fußgänger	q1::i
 # 
 ### Kreuzberg ###
 # 
-#: next_check_id: GITSCHINER-2025
-#: last_checked: 2025-06-03
-#: next_check: 2025-08-29 (VIZ-Verkehrsmeldung)
-#: valid: -20250829
-Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
+# REMOVED --- #: next_check_id: GITSCHINER-2025
+# REMOVED --- #: last_checked: 2025-06-25
+# REMOVED --- #: next_check: 2025-08-29 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250829
+# REMOVED --- Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
 # 
 # REMOVED (keine Baustelle mehr) --- #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv) (bis 01.11.2024) (bis 29.11.2024) (bis 31.01.2025) (inaktiv) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300 --- #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan) --- #: also_indoor: traffic (G,B,ex-W) --- #: last_checked: 2024-12-21 vvv --- #: next_check: 2025-12-19 vvv --- #: valid: -20250131 vvv --- Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294 --- Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (scheint vorfristig beendet worden zu sein) --- #: XXX Alexandrinenstraße (Kreuzberg) in beiden Richtungen, Kreuzung Ritterstraße: Leitungsarbeiten, Die Alexandrinenstraße ist von beiden Seiten von der Ritterstraße abgehängt, vom 11.12.2023 06:00 bis 29.12.2023 17:00 --- #: source_id: viz2021:13.403669,52.503381,11.12.2023,06:00 (bis 29.12.2023) (bis 29.02.2023) --- #: also_indoor: traffic (G,W)--- #: last_checked: 2024-01-08 --- #: check_frequency: 30d --- #: next_check: 2024-02-29 --- #: valid: -20240229 --- Alexandrinenstr.: Fahrbahn in Höhe Ritterstr. gesperrt	q2::inwork 10501,11056 10397,10852 10329,10723
@@ -1325,14 +1325,14 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 ### Weißensee ###
 # 
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (nur Kfz-Verkehr, bis Ende Juni 2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1906560333424259228
-#: by: https://pbs.twimg.com/media/GnI-rLYXIAQAGQQ?format=png&name=900x900 (keine Ausnahme für Radfahrer)
-#: source_id: viz2021:13.470228,52.553487,31.03.2025,07:00 (nur Kfz-Verkehr, bis 30.06.2025)
-#: last_checked: 2025-05-10
-#: next_check: 2025-06-30
-#: valid: -20250630
-Gartenstr. (Weißensee): etwa 40m der Fahrbahn sind gesperrt	q3::inwork 14791,16445 14809,16525
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (nur Kfz-Verkehr, bis Ende Juni 2025)
+# REMOVED --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1906560333424259228
+# REMOVED --- #: by: https://pbs.twimg.com/media/GnI-rLYXIAQAGQQ?format=png&name=900x900 (keine Ausnahme für Radfahrer)
+# REMOVED --- #: source_id: viz2021:13.470228,52.553487,31.03.2025,07:00 (nur Kfz-Verkehr, bis 30.06.2025) (vorfristig inaktiv)
+# REMOVED --- #: last_checked: 2025-05-10
+# REMOVED --- #: next_check: 2025-06-30
+# REMOVED --- #: valid: -20250630
+# REMOVED --- Gartenstr. (Weißensee): etwa 40m der Fahrbahn sind gesperrt	q3::inwork 14791,16445 14809,16525
 # 
 # REMOVED (vorfristig fertig) --- #: priority: #A --- #: last_checked: 2025-06-05 --- #: check_frequency: 60d --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Puccinistr.: Fahrbahn wegen Bauarbeiten gesperrt, südlicher Gehweg für Radfahrer frei	q2::inwork 13700,15501 13776,15546
 # REMOVED --- #: note: Endedatum laut Halteverbotsschilder --- #: last_checked: 2024-07-16 --- #: next_check: 2024-07-15 --- #: valid: -20240715 --- Börnestr.: Bauarbeiten, einige Meter der Fahrbahn sind gesperrt	q3::inwork 13214,15830 13263,15930
@@ -1821,7 +1821,11 @@ Volkspark Wilmersdorf: einige Fußgänger	q1- 5761,8339 5699,8308 5687,8280 5700,8
 #: note: jeweils zwei Serpentinen pro Seite, großer Zeitverlust
 Bernburger Treppe: Rampen	q4+ 8536,11063 8525,11063 8526,11080 8515,11065 8519,11084 8484,11097 8478,11080 8479,11099 8470,11082 8454,11086
 (Buckower Ring - Cecilienstr.): Fußgänger, eng, einige Regenablaufrinnen	q2 21879,13515 21894,13514 21920,13680
-(Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
+(Hohenzollerndamm - Friedrichsruher Str./Charlottenbrunner Str.): enger Gehweg	q2 3379,8969 3336,9021
+#: XXX_prog: BS (ohne q2)
+(Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg, Bordstein	q3 3336,9021 3330,9028 3320,9029
+#: XXX_prog: BS (ohne q2)
+(Hohenzollerndamm - Charlottenbrunner Str.): Gehweg, Bordstein	q3 3336,9021 3315,9009
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
 Leon-Jessel-Platz: Fußgänger	q2 4700,9179 4735,9171 4755,9154
 #: note: mit Schild "Gehweg, Radfahrer frei"
@@ -1854,11 +1858,16 @@ Pfalzburger Str.: Gehweg, Radfahrer frei	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger, Radfahren nicht erlaubt	q3 8467,11125 8410,11143
 # REMOVED (noch einige enge Stellen vorhanden) --- #: next_check_id: SPREERADWEGEINSTEINUFER-2014 --- #: XXX Bauarbeiten, wird der Weg später breiter sein? --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr_rat_20_sitzung.pdf (Verbreiterungen) --- #: last_checked: 2017-08-16 --- #: check_frequency: 14d
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3370,12725 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491
-(Rad- und Wanderweg an Spree und Landwehrkanal): einige Fußgänger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3370,12725 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger	q1- 3748,12627 3836,12614 3867,12616 3888,12618 4040,12632 4078,12637
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, Engstelle	q3 4078,12637 4131,12641
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger	q1- 4131,12641 4162,12638 4225,12620 4281,12597
+#: note: unter der Röntgenbrücke
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, Engstelle	q3 4281,12597 4299,12590
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger	q1- 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
 #: note: Verschwenkungen
-(Iburger Ufer - Spreeradweg): Rampe, einige Fußgänger	q2 4085,12614 4084,12620 4042,12615 4040,12632
+(Iburger Ufer - Spreeradweg): Rampe, einige Fußgänger	q2 4085,12614 4084,12622 4041,12618 4040,12632
 #: note: geradlinige Rampe
 (Iburger Ufer - Spreeradweg): einige Fußgänger	q1 4160,12612 4225,12620
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
@@ -1931,7 +1940,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-05-14
+#: last_checked: 2025-06-25
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -2226,7 +2235,8 @@ Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
 # REMOVED (existiert nicht mehr?) --- #: note: explizites Schild mit einem durchgestrichenen Fahrrad nur von Süden her --- Am Bahndamm: teilweise enge Stellen, Fußgänger, Radfahren offiziell nicht erlaubt	q2; 7769,4315 7727,4418 7692,4464 7667,4549
 #: XXX_prog BS an der Attilastr., ansonsten bleibt es bei q2
 Am Bahndamm: teilweise enge Stellen, Fußgänger, Bordstein	q2 7667,4549 7692,4464 7727,4418 7769,4315
-Am Bahndamm: einige Fußgänger	q1 7769,4315 7795,4242 8016,3651 8106,3410
+#: note: kann im Sommer im südlichen Abschnitt ziemlich zugewachsen sein
+Am Bahndamm: einige Fußgänger, schmal	q2 7769,4315 7795,4242 8016,3651 8055,3547 8106,3410
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
@@ -2533,7 +2543,7 @@ Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 18039,10398 18116,10403
 Mayschweg: Fußgänger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fußgänger	q2 25571,4553 25658,4619
 Müggelpark: Fußgänger	q2 25695,4714 25658,4619 25656,4578 25772,4543
-(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuß- und Radweg	q1+ 3379,8969 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
+(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuß- und Radweg	q1+ 3379,8969 3490,8840 3521,8814 3570,8760 3650,8666 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
 Görresstr.: enge Straße	q1 5073,7660 5194,7540 5273,7460 5318,7424
 Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2; 7937,13126 8011,13128 8106,13130
@@ -5245,6 +5255,7 @@ Lugierring: einige Fußgänger	q2 20162,929 20116,836 20100,801
 Lugierring: einige Fußgänger	q2 20116,836 20142,824
 #: XXX bleibt es beim Provisorium?
 #: osm_watch: way id="1310915062" version="1"
+#: priority: #C
 #: last_checked: 2024-12-27
 #: check_frequency: 180d
 (Lugierring - Bohnsdorfer Weg): provisorisch, schmal	q3- 20162,929 20192,975
@@ -7204,9 +7215,16 @@ Hermesweg: einige Fußgänger	q1 6116,4707 6072,4606
 #: note: "Auf beiden Einfahrten stehen aber Schilder, dass Radfahren verboten ist."
 Reginenweg: Radfahren verboten, ggfs. schieben	q4 6484,3292 6482,3327 6431,3417 6426,3425
 #: confirmed_by: srt (außerdem: Bordstein)
-#: XXX_prog: BS, ansonsten q2
-Ruthstr.: Fußweg, Bordstein am Wendehammer	q3 6332,3007 6313,3028
-Brigittenstr.: Fußweg	q2 6208,2954 6222,2940
+#: XXX_prog: BS, ansonsten q3
+Ruthstr.: Fußweg, Bordstein am Wendehammer	q4+ 6332,3007 6313,3028
+#: confirmed_by: srt (außerdem: Bordsteine)
+#: XXX_prog: BS, ansonsten q3
+#: note: Bordstein an der Kaiser-Wilhelm-Str., am Wendehammer auch, falls man den westlichen Gehweg wählt, beim östlichen gibt es eine Bordsteinabsenkung
+Brigittenstr.: Fußweg, Bordsteine	q4+ 6200,2961 6222,2940
+#: confirmed_by: srt (außerdem: Bordsteine)
+#: XXX_prog: BS, ansonsten q3
+#: note: Bordstein an der Kaiser-Wilhelm-Str., am Wendehammer auch, falls man den östlichen Gehweg wählt, beim westlichen gibt es eine Bordsteinabsenkung
+Brigittenstr.: Fußweg, Bordsteine	q4+ 6222,2940 6244,2910
 #: by: ^^^
 # 
 #: by: Rudolf Kionke:
@@ -7306,13 +7324,15 @@ Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 #: confirmed_by: srt
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
 #: next_check_id: BAEKEBRUECKE-2022
-#: XXX: Wobei: bei der Sperrung des Teltowkanaluferwegs war hier die offizielle Umleitung für Fußgänger und Radfahrer
-#: next_check: 2025-06-17 vvv
+#: note: Bei Sperrungen des Teltowkanaluferwegs ist hier die offizielle Umleitung für Fußgänger und *Radfahrer*, trotz Grünanlage.
+#: last_checked: 2025-06-25 vvv
+#: next_check: 2025-12-19 vvv
 #: valid: !20250617-20251219
-Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4659,3065
+Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4328,2652 4659,3065
 #: valid: 20250617-20251219
-Eduard-Spranger-Promenade: Grünanlage, aber möglicherweise offizielle Umleitung für den Radverkehr	q2 4317,2638 4659,3065
+Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065
 #: next_check ^^^
+#: last_checked ^^^
 # 
 #: by: Karsten Denkler vvv
 #: corrected_by: srt (q1 -> q0-)

@@ -223,8 +223,8 @@ Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025) (bis 19.09.2025)
 #: source_id: viz2021:13.45427,52.4939,16.05.2025,14:26 (bis 19.09.2025) (inaktiv)
 #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-06-20
-# REMOVED --- #: check_frequency: 30d
+#: last_checked: 2025-06-25 (Markierungsarbeiten + Ampelarbeiten)
+#: check_frequency: 14d
 #: next_check: 2025-09-19 (VIZ-Verkehrsmeldung)
 Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
 Am Treptower Park	1 13860,9861 13795,9941
@@ -443,7 +443,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
 #: osm_watch: way id="27491366" version="17"
-#: last_checked: 2025-06-11
+#: last_checked: 2025-06-25
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
@@ -1718,6 +1718,7 @@ Minna-Cauer-Str.: Straßentunnel	3nocross 7901,13324 7895,13415 7907,13532
 #: next_check_id: ZURALTENBOERSE-2025
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10033 (Bebauungsplanverfahren XXI-40a)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
+#: by: https://pascalgrothe.de/stillstand-am-magerviehhof-wie-gehts-weiter-an-der-alten-boerse/ (Umwandlung zur öffentlichen Verkehrsfläche geplant)
 #: note: man kann hier schon entlangfahren, über Betriebsgeländestraßen unterschiedlicher Qualität; am südlichen Ende ist ein Tor, welches am 2023-01-21 geöffnet werden konnte; mittlerweile existiert kein Tor mehr (2024-09-08); 2025-01-22: wieder ein verschlossenes Tor; siehe auch gesperrt-orig-Eintrag
 #: osm_watch: way id="946443907" version="4"
 #: osm_watch: node id="12522972446" version="1"
@@ -4277,9 +4278,10 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 # 
 #: by: https://www.potsdam.de/de/stadtbad-park-babelsberg-baustart-im-september (bis Frühjahr 2025)
 #: by: https://entwicklungsstadt.de/stadtbad-park-babelsberg-eroeffnung-fuer-juli-2025-angekuendigt/
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/dieses-wochenende-ist-schlusselubergabe-strandbad-babelsberg-steht-vor-seiner-eroffnung-13901827.html
 #: osm_watch: way id="1212090206" version="2"
 #: last_checked: 2024-02-24
-#: next_check: 2025-07-05 (entwicklungsstadt)
+#: next_check: 2025-07-05 (entwicklungsstadt, Tsp)
 Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::inwork -11486,-1008 -11452,-974
 # 
 #: next_check_id: KANZLERPARK-2024
@@ -4454,7 +4456,6 @@ An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22546,3115 22477,3109
 #: next_check: 2029-01-01
 Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 # 
-# REMOVED (laut osm wieder offen) --- #: by: l.epp --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11479 (Instandsetzung frühestens 2025) --- #: confirmed_by: osm, srt --- #: osm_watch: note 3359195 7 --- #: osm_watch: way id="311338440" version="4" --- #: add_fragezeichen: Ist die Holzbohlenbrücke noch immer gesperrt? --- #: last_checked: 2023-06-24 --- #: check_frequency: 360d --- #: next_check: 2025-09-01 --- Flughafensee: Brücke gesperrt	2::inwork 2829,18126 2797,18126 2790,18139
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-am-franz-mehring-platz_a340931 --- #: by: https://www.competitionline.com/de/news/ergebnisse/neugestaltung-franz-mehring-platz-in-berlin-280286/prizegroup/1-preis-101800.html --- #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742 --- #: by: https://www.gm013.la/work/fmp --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593 --- #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können --- #: last_checked: 2023-06-20 --- #: check_frequency: 30d --- #: next_check: 2023-07-01 --- (Vorfahrt Neues-Deutschland-Gebäude): Bauarbeiten, südliches Ende kan mit Bauzäunen abgesperrt sein	2::inwork 12788,11898 12891,12008
 # REMOVED --- #: osm_watch: way id="1195364871" version="3" --- #: note: am 2023-04-25 gab es einen recht schmalen Durchgang, mit einem Fahrrad ist man noch gerade so durchgekommen; am 2023-05-04 auch der gleiche schmale Durchgang, aber ein davor geparktes Auto hätte vielleicht einiges an Rangierarbeit verursacht; am 2023-05-16 existiert wieder ein schmaler Durchgang -> von gesperrt nach handicap_s verschoben, am 2023-06-15 kein Kran mehr, aber nun wieder komplett gesperrt --- #: last_checked: 2023-09-21 --- Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,12094 10050,11942
 # 
@@ -4842,7 +4843,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2025-06-13 vvv
+#: last_checked: 2025-06-25 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5634,9 +5635,9 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: osm_watch: node id="245006076" version="6"
 #: osm_watch: node id="245006075" version="7"
 #: osm_watch: way id="1272587928" version="2"
-#: last_checked: 2025-04-09
+#: last_checked: 2025-06-25
 # REMOVED --- #: check_frequency: 720d
-#: next_check: 2025-06-30 (Baustellenschild)
+# REMOVED --- #: next_check: 2025-06-30 (Baustellenschild)
 Löwenbrücke: Neubau	2:inwork 6417,11796 6438,11784
 # 
 # REMOVED (-> temp blockings) --- #: last_checked: 2013-10-22 --- #: check_frequency: 540d --- Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129

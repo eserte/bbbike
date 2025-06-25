@@ -171,6 +171,7 @@ Weverpromenade: wassergebundene Decke	X 5787,4400 5738,4361 5721,4356 5541,4305
 #: mud: 2025-02-22: etwas matschige Oberfläche	note=Tauwetter, deshalb evtl. nicht mit der Bodenfeuchte zusammenhängend, ansonsten h=q2,wet
 #: mud: 2025-03-26: keine Beeinträchtigungen	h=q0
 #: mud: 2025-04-23: keine Beeinträchtigungen	h=q0
+#: mud: 2025-06-25: keine Beeinträchtigungen	h=q0
 Paul-Schwarz-Promenade: Parkweg	X 5018,3810 4947,3672 4910,3599 4822,3431
 # 
 #: mud: 2020-03-14: etwas feuchtere Oberfläche, aber keine Beeinträchtigungen	h=q0-,wet
@@ -178,6 +179,9 @@ Paul-Schwarz-Promenade: Parkweg	X 5018,3810 4947,3672 4910,3599 4822,3431
 #: mud: 2024-05-29: keine Beeinträchtigungen	h=q0
 #: mud: 2024-10-26: keine Beeinträchtigungen	h=q0
 Parkweg Schloßpark Lichterfelde: Parkweg	X 4910,3599 4858,3613 4815,3615 4754,3651 4723,3681 4694,3702 4657,3711 4617,3706 4611,3705 4603,3704
+# 
+#: mud: 2025-06-25: einige Pfützen	h=q3
+Parkweg Bäkepark: wassergebundene Decke	X 4873,4604 4957,4448
 # 
 #: mud: 2020-03-15: keine Beeinträchtigungen	h=q0
 Gebrüder-Grimm-Weg: fester Sandweg	X 14277,18684 14265,18747 14269,18812 14278,18840 14292,18863 14324,18916 14358,18973 14391,19026 14414,19063 14433,19093 14457,19132 14482,19174 14507,19214 14546,19286
@@ -827,7 +831,7 @@ Stuthirtenweg: unbefestigter holpriger Weg	X 13040,1021 13113,1046 13181,1082
 # 
 #: mud: 2023-03-11: zahlreiche teils große Pfützen	h=q3,wet
 #: mud: 2025-05-14: keine Beeinträchtigungen	h=q0
-Mariendorfer-Hafen-Weg: unbefestigter Weg, einige Stellen mit Schotter	X 8106,3410 8016,3651 7795,4242
+Mariendorfer-Hafen-Weg: unbefestigter Weg, einige Stellen mit Schotter	X 8106,3410 8055,3547 8016,3651 7795,4242
 # 
 #: mud: 2023-03-11: einige Pfützen	h=q2,wet
 #: mud: 2023-10-21: einige Pfützen, insbesondere im westlichen Abschnitt	h=q2,wet

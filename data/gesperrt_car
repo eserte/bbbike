@@ -1968,7 +1968,7 @@ Barsstr.	1 4324,8899 4327,8991 4325,9082 4325,9159 4339,9224 4377,9258
 Mansfelder Str.	1 4096,9175 4156,9120 4228,9093 4325,9082
 Königsmarckstr.	1 1971,7738 2088,7723
 Pücklerstr.	1 2576,7026 2688,7067
-Friedrichsruher Str.	1 3196,9193 3333,9026
+Friedrichsruher Str.	1 3196,9193 3316,9047
 Leistikowstr.	1 1188,11861 1133,11664
 In den Leonorengärten - Leonorenstr.	3 6363,4047 6295,4017 6315,3974
 In den Leonorengärten - Calandrellistr.	3 6363,4047 6295,4017 6141,3948
@@ -2440,6 +2440,7 @@ Mittelstreifen	3nocross::ignrte 8600,5580 8601,5595 8613,5745
 Manteuffelstr. -> Friedrich-Karl-Str.: Mittelstreifen	3::igndisp 8613,5745 8601,5595 8691,5587
 Friedrich-Karl-Str. -> Manteuffelstr.: Mittelstreifen	3::igndisp 8691,5587 8601,5595 8600,5580
 Im Marienpark: für Fahrzeuge verboten	2 8167,3641 8178,3591 8070,3563
+Im Marienpark: Lieferverkehr frei	2 8178,3591 8346,3633
 Straßenbahntrasse	3nocross::ignrte 15066,14579 15120,14481 15168,14395
 Weißenseer Weg -> Anlieferung Hohenschönhauser Tor: Straßenbahntrasse	3::igndisp 15066,14579 15120,14481 15225,14545
 Anlieferung Hohenschönhauser Tor -> Weißenseer Weg: Straßenbahntrasse	3::igndisp 15225,14545 15120,14481 15168,14395

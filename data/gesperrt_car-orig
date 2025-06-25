@@ -96,7 +96,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-06-20
+#: last_checked: 2025-06-25
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -1276,7 +1276,7 @@ Königsmarckstr.	1 1971,7738 2088,7723
 Pücklerstr.	1 2576,7026 2688,7067
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 #: by: osm
-Friedrichsruher Str.	1 3196,9193 3333,9026
+Friedrichsruher Str.	1 3196,9193 3316,9047
 # REMOVED (bezieht sich wohl nur auf die Straßen im Innenblock) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-sitzung-fahrrat-am-01-09-15.pdf --- #: by: osm --- Vesaliusstr.	1 11818,19089 11763,19191 11748,19235 11698,19489
 Leistikowstr.	1 1188,11861 1133,11664
 In den Leonorengärten - Leonorenstr.	3 6363,4047 6295,4017 6315,3974
@@ -1873,8 +1873,9 @@ Manteuffelstr./zum Bosepark: Mittelstreifen	3nocross 8683,6326 8699,6468 8707,65
 #: note: für Fußgänger/Radfahrer existiert ein Übergang
 Manteuffelstr./Friedrich-Karl-Str.: Mittelstreifen	3nocross 8600,5580 8601,5595 8613,5745
 # 
-#: note: im südlichen Strang auch ein explizites Fahrrad-verboten-Schild, aber ich 
+#: note: im südlichen Strang auch ein explizites Fahrrad-verboten-Schild
 Im Marienpark: für Fahrzeuge verboten	2 8167,3641 8178,3591 8070,3563
+Im Marienpark: Lieferverkehr frei	2 8178,3591 8346,3633
 # 
 #: note: für Fußgänger existiert ein gerade verlaufender Übergang
 Weißenseer Weg: Straßenbahntrasse	3nocross 15066,14579 15120,14481 15168,14395

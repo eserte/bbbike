@@ -232,3 +232,6 @@ Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 Osloer Str.: Umweg von etwa 20m	DH:len=20:h=q2,20 9442,16610 9514,16603
 Rummelsburger Str. -> Mentelinstr.: Bordstein, Umweg	DH:kerb_down:len=70 18010,7137 17847,7356 17833,7351
 Mentelinstr. -> Rummelsburger Str.: ein paar Meter auf dem linken Gehweg, Borstein	DH:h=q3,30:kerb_down 17833,7351 17847,7356 17769,7465
+Königsberger Str.: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4392,2628 4348,2627 4317,2638
+Königsberger Str. -> Drakestr.: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4233,2675 4170,2727 4011,2942
+Königsberger Str. -> Hindenburgdamm: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4233,2675 4170,2727 4411,3180

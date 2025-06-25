@@ -25,6 +25,8 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,12941
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
@@ -34,7 +36,6 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Sterndamm: Engstellen, Behinderungen möglich	q3::inwork; 17886,5587 17822,5524 17765,5469
 An der Wuhlheide: Engstellen durch unnötige Absperrungen, einige Fußgänger	q1::inwork; 18010,7137 18225,7004
-Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -58,7 +59,6 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
-Gartenstr. (Weißensee): etwa 40m der Fahrbahn sind gesperrt	q3::inwork 14791,16445 14809,16525
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9200,562 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
@@ -331,7 +331,9 @@ Volkspark Wilmersdorf: einige Fußgänger	q1 5761,8339 5699,8308 5687,8280 5700,82
 (Weg im Wustrower Park): eng und teilweise kurvenreich	q1 17235,18352 17206,18332
 Bernburger Treppe: Rampen	q4 8536,11063 8525,11063 8526,11080 8515,11065 8519,11084 8484,11097 8478,11080 8479,11099 8470,11082 8454,11086
 (Buckower Ring - Cecilienstr.): Fußgänger, eng, einige Regenablaufrinnen	q2 21879,13515 21894,13514 21920,13680
-(Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
+(Hohenzollerndamm - Friedrichsruher Str./Charlottenbrunner Str.): enger Gehweg	q2 3379,8969 3336,9021
+(Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg, Bordstein	q3 3336,9021 3330,9028 3320,9029
+(Hohenzollerndamm - Charlottenbrunner Str.): Gehweg, Bordstein	q3 3336,9021 3315,9009
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
 Leon-Jessel-Platz: Fußgänger	q2 4700,9179 4735,9171 4755,9154
 Nikolsburger Platz: Fußgänger	q2 5374,9619 5291,9675
@@ -351,10 +353,14 @@ Fuggerstr.: einige Fußgänger	q1 6118,10327 6073,10354 6029,10356
 Pfalzburger Str.: Gehweg, Radfahrer frei	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger, Radfahren nicht erlaubt	q3 8467,11125 8410,11143
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3370,12725 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491
-(Rad- und Wanderweg an Spree und Landwehrkanal): einige Fußgänger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
-(Iburger Ufer - Spreeradweg): Rampe, einige Fußgänger	q2 4085,12614 4084,12620 4042,12615 4040,12632
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3370,12725 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger	q1 3748,12627 3836,12614 3867,12616 3888,12618 4040,12632 4078,12637
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, Engstelle	q3 4078,12637 4131,12641
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger	q1 4131,12641 4162,12638 4225,12620 4281,12597
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, Engstelle	q3 4281,12597 4299,12590
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger	q1 4299,12590 4340,12578 4441,12578 4529,12570 4575,12542 4642,12491
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
+(Iburger Ufer - Spreeradweg): Rampe, einige Fußgänger	q2 4085,12614 4084,12622 4041,12618 4040,12632
 (Iburger Ufer - Spreeradweg): einige Fußgänger	q1 4160,12612 4225,12620
 Spreeufer: Fußgänger, besonders an schönen Tagen	q3 10166,12777 10105,12855 9955,12915 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 Spreeufer: Fußgänger, Bordstein	q3 9707,12974 9557,12992 9538,12993 9508,12991 9279,12953
@@ -566,7 +572,7 @@ Humboldtsteg: einige Fußgänger	q1 8934,15740 8886,15799
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
 (Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1 15353,11902 15307,11876 15327,11724 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
 Am Bahndamm: teilweise enge Stellen, Fußgänger, Bordstein	q2 7667,4549 7692,4464 7727,4418 7769,4315
-Am Bahndamm: einige Fußgänger	q1 7769,4315 7795,4242 8016,3651 8106,3410
+Am Bahndamm: einige Fußgänger, schmal	q2 7769,4315 7795,4242 8016,3651 8055,3547 8106,3410
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Teltowkanalpromenade: schmale und kurvige Unterführung	q2 4778,3352 4815,3382 4822,3431
@@ -761,7 +767,7 @@ Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 18039,10398 18116,10403
 Mayschweg: Fußgänger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fußgänger	q2 25571,4553 25658,4619
 Müggelpark: Fußgänger	q2 25695,4714 25658,4619 25656,4578 25772,4543
-(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuß- und Radweg	q1 3379,8969 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
+(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuß- und Radweg	q1 3379,8969 3490,8840 3521,8814 3570,8760 3650,8666 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
 Görresstr.: enge Straße	q1 5073,7660 5194,7540 5273,7460 5318,7424
 Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2; 7937,13126 8011,13128 8106,13130
@@ -3411,8 +3417,9 @@ Parkanlage: einige Fußgänger	q1 13261,20919 13289,21001 13285,21021
 Parkanlage: einige Fußgänger	q1 13312,20910 13289,21001
 Hermesweg: einige Fußgänger	q1 6116,4707 6072,4606
 Reginenweg: Radfahren verboten, ggfs. schieben	q4 6484,3292 6482,3327 6431,3417 6426,3425
-Ruthstr.: Fußweg, Bordstein am Wendehammer	q3 6332,3007 6313,3028
-Brigittenstr.: Fußweg	q2 6208,2954 6222,2940
+Ruthstr.: Fußweg, Bordstein am Wendehammer	q4 6332,3007 6313,3028
+Brigittenstr.: Fußweg, Bordsteine	q4 6200,2961 6222,2940
+Brigittenstr.: Fußweg, Bordsteine	q4 6222,2940 6244,2910
 (Oranienburger Str. - Wilhelm-Gericke-Str.): Fußweg, Bordstein	q2 5545,19909 5598,19912
 Siepesteig: enge Straße	q1 194,1055 115,1043 84,1174 91,1202
 Waldschluchtpfad: enge Straße	q0 -5064,6853 -5034,6933 -4806,6901
@@ -3441,7 +3448,7 @@ Jochen-Klepper-Weg: kombinierter Rad- und Fußweg, Fußgänger haben Vorrang	q1 -30
 Frommpromenade: enge Straße	q0 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straße	q0 6033,19611 5885,19920 5804,20047
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
-Eduard-Spranger-Promenade: Grünanlage, aber möglicherweise offizielle Umleitung für den Radverkehr	q2 4317,2638 4659,3065
+Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065
 Rosenplüterweg: enge Straße	q0 3657,26240 3431,26192 3328,26193
 Bulgenbachweg: enge Straße	q0 3431,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840
@@ -3734,3 +3741,4 @@ Molkenmarkt - Eiergasse: linker Gehweg	q4::igndisp; 10697,12303 10700,12316
 Nahmitzer Damm: linker Gehweg bis Parkweg im Fresepark	q4::igndisp; 8736,337 8583,301
 Nahmitzer Damm: linker Gehweg bis Ampel	q4::igndisp; 8583,301 8470,310 8382,347
 Minna-Cauer-Str.: linker Gehweg	q4::igndisp; 7901,13324 7873,13448
+Eduard-Spranger-Promenade - Königsberger Str./Giesensdorfer Str.: linker Gehweg	q4::igndisp; 4328,2652 4348,2627
