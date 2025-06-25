@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.44;
+$VERSION = 2.45;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -37,21 +37,6 @@ sub register {
     my $lang = $Msg::lang || 'de';
     my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
     # this order will be reflected in show_info
-    if (0 && $is_berlin) {
-	# XXX It seems that pharus abandoned all digital maps
-	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Web"} =
-	    { name => "Pharus (dein-plan, Web)",
-	      callback => sub { showmap_deinplan_web(@_) },
-	      callback_3_std => sub { showmap_url_deinplan_web(@_) },
-	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
-	    };
-	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Leaflet"} =
-	    { name => "Pharus (dein-plan, Leaflet, 2016)",
-	      callback => sub { showmap_deinplan_leaflet(@_) },
-	      callback_3_std => sub { showmap_url_deinplan_leaflet(@_) },
-	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
-	    };
-    }
     $main::info_plugins{__PACKAGE__ . "_WikiMapia"} =
 	{ name => "WikiMapia",
 	  callback => sub { showmap_wikimapia(@_) },
@@ -538,23 +523,6 @@ Yt0JKl8j4l4MZ3cMB7PxC0J0jHUwszyDW3b53POZ1t2tjGkFEMmuFMWPRUiHxKIYfleOhufeRgEr
 yyf/E4ENMEnDntSedR/8ZMcOF2gguTeJGyUggNTHOrBV//DH472TvfJGPHWOdcpaq9HRFYEEoaan
 fYVBqMKxnAKvJP/y8iZhkhTaUHY9Tf39uVqY7txZ/Tdwm6bxP8zO/lJbW1bt7Vl9/762ZZx/A84s
 RMCafb9MAAAAAElFTkSuQmCC
-EOF
-    }
-
-    if (!defined $images{Pharus}) {
-	# This is the favicon of www.berliner-stadtplan.com, run through "base64"
-	$images{Pharus} = $main::top->Photo
-	    (-format => 'png',
-	     -data => <<EOF);
-iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEXEtrz8+vzMusQTkyWU
-joz88mQA8gqknqS0qqykmpzM2uTMyrTsRjR0moyUknzMunzMyszUymzc5lzk1mx0tnzc7vT06lz/
-//8oqzT8AAAAAWJLR0QXC9aYjwAAAAd0SU1FB+AMEQ0THxP6s+0AAACbSURBVBjTJY7bAsIgDEMT
-2jDYHG6K/v+n2iIvTS+cBACLGegyI9ajWd0IVbOWfbNaKwmPYh3w6M32xsNSPRDFGuP2pEIactzL
-YMdTqeOPRJRjpwYuLqNbrwK8lY4OsrMptjqdHqyCPc6GpDnnFagE8QNI91zQtMVGqetve61gTQ0r
-2AxoRteXK7qEIMYqLD3vh+DwZiYcMR+R5AdYUAS1NmdRiQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAx
-Ni0xMi0xN1QxNDoxOToyMSswMTowMF/HH4gAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTAtMTEtMDhU
-MTE6NDQ6NTUrMDE6MDCRfW6PAAAAAElFTkSuQmCC
 EOF
     }
 
@@ -1585,57 +1553,6 @@ sub showmap_url_sbahnberlin {
 sub showmap_sbahnberlin {
     my(%args) = @_;
     my $url = showmap_url_sbahnberlin(%args);
-    start_browser($url);
-}
-
-######################################################################
-# dein-plan, Pharus
-
-sub showmap_url_deinplan_leaflet {
-    my(%args) = @_;
-    my $scale = int(17 - log(($args{mapscale_scale})/2863)/log(2) + 0.5);
-    if ($scale > 16) { $scale = 16 }
-    'http://m.deinplan.de/map.php#' . $scale . '/' . $args{py} . '/' . $args{px};
-}
-
-sub showmap_url_deinplan_web {
-    my(%args) = @_;
-    if (1) {
-	require Karte::Deinplan;
-	my($sx,$sy) = split /,/, $args{coords};
-	$Karte::Deinplan::obj = $Karte::Deinplan::obj if 0; # cease -w
-	my($x, $y) = map { int } $Karte::Deinplan::obj->standard2map($sx,$sy);
-	#my $urlfmt = "http://www.dein-plan.de/?location=|berlin|%d|%d";
-	my $urlfmt = "http://www.berliner-stadtplan.com/adresse/karte/berlin/pos/%d,%d.html";
-	sprintf($urlfmt, $x, $y);
-    } else {
-	# The x_wgs/y_wgs styled links do not work anymore (since Summer 2014),
-	# but would be preferred over the approximate pixel method above.
-	require Karte::Polar;
-	require URI::Escape;
-	my($px, $py) = ($args{px}, $args{py});
-	my $y_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($py))[1];
-	my $x_wgs = sprintf "%.2f", (Karte::Polar::ddd2dmm($px))[1];
-	my $message = $args{street};
-	if (!$message) {
-	    $message = " "; # avoid empty message
-	}
-	$message =~ s{[/?]}{ }g;
-	$message = URI::Escape::uri_escape($message);
-	my $urlfmt = "http://www.berliner-stadtplan.com/topic/bln/str/message/%s/x_wgs/%s/y_wgs/%s/size/800x600/from/bbbike.html";
-	sprintf($urlfmt, $message, $x_wgs, $y_wgs);
-    }
-}
-    
-sub showmap_deinplan_leaflet {
-    my(%args) = @_;
-    my $url = showmap_url_deinplan_leaflet(%args);
-    start_browser($url);
-}
-
-sub showmap_deinplan_web {
-    my(%args) = @_;
-    my $url = showmap_url_deinplan_web(%args);
     start_browser($url);
 }
 

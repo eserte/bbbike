@@ -36,7 +36,6 @@ sub preload {
 		    Potsdammap2002 Demap2002 Nbrbmap2004
 		    Satmap SatmapGIF GISmap Polar T99 T2001 GDF
                     GPS Soldner_alt Cityinfo PilotPl PilotPl12 Tk50
-		    Deinplan
 		   );
     }
     my $karte;

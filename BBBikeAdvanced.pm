@@ -1251,7 +1251,7 @@ sub parse_url_for_coords {
     } elsif ($url =~ m{ll=($float_qr),($float_qr)&}) { # e.g. geocaching.com/map
 	($y_ddd, $x_ddd) = ($1, $2);
 	$$detect_ref = 'geocaching' if $detect_ref;
-    } elsif ($url =~ m{\d+/($float_qr)/($float_qr)$}) { # Pharus, e.g. http://m.deinplan.de/map.php#16/52.532291/13.380783
+    } elsif ($url =~ m{\d+/($float_qr)/($float_qr)$}) { # old now non-existent Pharus URLs, e.g. http://m.deinplan.de/map.php#16/52.532291/13.380783
 	($y_ddd, $x_ddd) = ($1, $2);
 	$$detect_ref = 'pharus' if $detect_ref;
     } elsif ($url =~ m{wgs84=($float_qr)%2C($float_qr)}) { # bbbike cgi URL with WGS84 coords, e.g. http://bbbike.de/cgi-bin/bbbike.cgi?zielname=Glasower+Str+27&zielc_wgs84=13.43561%2C52.46460
