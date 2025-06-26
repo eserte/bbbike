@@ -6,16 +6,16 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
-#: note VIZ: Auf der Schnellerstraße und Oberspreestraße beginnen am Morgen Leitungsarbeiten. Bis Ende Juni ist die Oberspreestraße stadteinwärts zwischen Eisblumensteig und Bruno-Bürgel-Weg für den Kfz-Verkehr gesperrt (srt: für Radfahrer explizit offen). Eine Umleitung ist ausgeschildert. Zusätzlich regelt auf der Schnellerstraße in Höhe Bruno-Bürgel-Weg eine Baustellenampel wechselseitig den Verkehr.
-#: note: Gegenverkehrsstrecke etwa 85m
-#: note: laut rbb bis 25.06.2025
-#: source_id: adac:334064568 (bis voraussichtlich 25.06.2025)
-#: source_id: viz2021:13.536388,52.451486,18.06.2025,08:00 (bis 30.06.2025)
-#: source_id: viz2021:13.532564,52.452085,18.06.2025,08:00 (bis 30.06.2025)
-#: last_checked: 2025-06-18
-#: next_check: 2025-06-25 (ADAC-Verkehrsmeldung)
-#: valid: -20250630
-Oberspreestr./Schnellerstr./Bruno-Bürgel-Weg: Gegenverkehrsregelung	X::inwork::alternating 19328,5304
+# REMOVED --- #: note VIZ: Auf der Schnellerstraße und Oberspreestraße beginnen am Morgen Leitungsarbeiten. Bis Ende Juni ist die Oberspreestraße stadteinwärts zwischen Eisblumensteig und Bruno-Bürgel-Weg für den Kfz-Verkehr gesperrt (srt: für Radfahrer explizit offen). Eine Umleitung ist ausgeschildert. Zusätzlich regelt auf der Schnellerstraße in Höhe Bruno-Bürgel-Weg eine Baustellenampel wechselseitig den Verkehr.
+# REMOVED --- #: note: Gegenverkehrsstrecke etwa 85m
+# REMOVED --- #: note: laut rbb bis 25.06.2025
+# REMOVED --- #: source_id: adac:334064568 (bis voraussichtlich 25.06.2025) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.536388,52.451486,18.06.2025,08:00 (bis 30.06.2025)
+# REMOVED --- #: source_id: viz2021:13.532564,52.452085,18.06.2025,08:00 (bis 30.06.2025)
+# REMOVED --- #: last_checked: 2025-06-18
+# REMOVED --- #: next_check: 2025-06-25 (ADAC-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250630
+# REMOVED --- Oberspreestr./Schnellerstr./Bruno-Bürgel-Weg: Gegenverkehrsregelung	X::inwork::alternating 19328,5304
 # 
 #: source_id: viz2021:13.390889,52.525514,01.04.2025,08:00 (bis 19.07.2025)
 #: note: Richtung Südosten auch Radwegführung auf dem Bürgersteig, Richting Nordwesten sollen Radfahrer via Tucholskystr. und Auguststr. fahren (wegen Tramschienen?!)
@@ -313,9 +313,9 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.471417,52.507338,11.06.2025,07:00 (bis 31.03.2027)
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr.; Anforderungsampel
+#: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-06-23
+#: last_checked: 2025-06-26
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -3938,9 +3938,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11743 (Antrag)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/ampel-vor-der-grundschule_a376910
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1721436001623535938#m (Neubau einer Ampel)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsihknavns24
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreif47sv3n2ssmvgyrczxwo5wu7odor75cggl77dts6fzo4t2bg5cku@jpeg
 #: source_id: viz2021:13.37326,52.53807,06.11.2023,09:00 (bis 15.02.2024) (inaktiv)
 #: source_id: viz2021:13.373268,52.538065,06.11.2023,09:00 (provisorische Ampelanlage bis 15.02.2024) (inaktiv)
 #: source_id: viz2021:13.373342,52.538077,26.06.2025,09:00 (Einmündungsumbau, bis 15.08.2025)
+#: source_id: viz2021:13.373259,52.538069,26.06.2025,09:00 (bis 15.08.2025)
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel

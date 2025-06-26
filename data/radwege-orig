@@ -144,7 +144,7 @@ sehr schmal, Verbundsteinpflaster	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,735
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2025-04-18 vvv
+#: last_checked: 2025-06-24 (mapillary) vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -994,7 +994,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-05-24
+#: last_checked: 2025-06-26
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1519,7 +1519,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="22"
-#: last_checked: 2025-06-21
+#: last_checked: 2025-06-25 (mapillary)
 #: check_frequency: 120d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -1815,7 +1815,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: by: https://entwicklungsstadt.de/estrel-tower-berlins-hoechstes-gebaeude-kurz-vor-der-aeusseren-vollendung/
 #: XXX wegen eines Fußgängerschutztunnels unter dem Estrel-Tower ist der vorhandene Radweg abgesperrt
 #: XXX später wieder herstellen: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14305,7415 14334,7395
-#: source_id: viz2021:13.461293,52.471377,24.03.2025,07:00 (Leitungsarbeiten, bis 27.06.2025)
+#: source_id: viz2021:13.461293,52.471377,24.03.2025,07:00 (Leitungsarbeiten, bis 27.06.2025) (bis 11.07.2025)
 #: also_indoor: webcam https://portal1828.webcam-profi.de/ 
 #: last_checked: 2025-06-06
 #: check_frequency: 30d
@@ -1952,7 +1952,7 @@ Verbundsteinpflaster	RW1; 6494,10440 6403,10424 6276,10401 6147,10383 6029,10356
 #: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2022 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (bis 24.2.2023) (inaktiv)
 #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (Fahrbahnsanierung bis 30.11.2023) (bis 01.12.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="27"
-#: osm_watch: way id="458915639" version="7"
+#: osm_watch: way id="458915639" version="8"
 #: last_checked: 2025-06-25 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
@@ -3431,11 +3431,12 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1460688.php (Bau eines Hochbordradwegs, voraussichtlich 15. Juli 2024 bis 3. Quartal 2025)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/neuer-gehweg-fuer-kniprodestrasse_a419672
 #: by: https://entwicklungsstadt.de/pankow-so-sieht-der-baumlose-schulweg-zur-schuldrehscheibe-aus/
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1574427.php (Sperrung vom 2.-18. Juli 2025, Radfahrer & Linienverkehr frei)
 #: osm_watch: way id="318031558" version="15"
 #: osm_watch: way id="154261295" version="16"
 #: XXX Hier entsteht ein neuer asphaltierter Hochbordradweg, bis Höhe Pasteurstr. bis auf die Deckschicht fertiggestellt; weiter nordöstlich wird noch gebaut vvv
 #: last_checked: 2025-06-14 vvv
-#: check_frequency: 30d vvv
+#: check_frequency: 34d vvv
 #: next_check: 2025-09-30 (BA Pankow) vvv
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
 	RW0; 12640,13814 12701,13873 12766,13942
@@ -4434,14 +4435,15 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: by: https://pascalgrothe.de/endspurt-am-blumberger-damm-bruecke-kurz-vor-fertigstellung/
 #: source_id: viz2021:13.562831,52.51426,02.08.2021,12:02 (bis 01.06.2025) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025) (bis 30.11.2025) (bis 15.06.2023) (inaktiv)
-#: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025) (bis 30.11.2024, Gesamtbaumaßnahme bis 2025) (bis 30.06.2025)
+#: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025) (bis 30.11.2024, Gesamtbaumaßnahme bis 2025) (bis 30.06.2025) (bis 30.09.2025)
+#: source_id: viz2021:13.56197,52.51013,26.06.2025,16:24 (bis 30.09.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: note: früher Richtung Norden benutzungspflichtiger Hochbord, mittlerweile Gehweg für Radfahrer frei
 #: osm_watch: way id="865716506" version="20"
-#: osm_watch: note 4556943 2
+#: osm_watch: note 4556943 3
 #: last_checked: 2025-05-07 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-06-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-09-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
 # REMOVED (während der Bauarbeiten) --- Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193
 # REMOVED (während der Bauarbeiten) --- alter Beton	RW1; 21190,12193 21199,12258
@@ -8992,7 +8994,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.38458,52.45267,23.09.2024,17:00 (bis 01.11.2024) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
-#: last_checked: 2025-03-30 (mapillary) vvv
+#: last_checked: 2025-06-24 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -9079,7 +9081,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: osm_watch: way id="4357826" version="22"
 #: osm_watch: way id="354645907" version="19"
 #: osm_watch: way id="354645904" version="13"
-#: last_checked: 2025-04-23 vvv
+#: last_checked: 2025-06-24 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 	RW3; 8739,6701 8653,6781

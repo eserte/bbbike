@@ -2324,11 +2324,13 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 10890,-6119 11106,-5538
 Gehweg für Radfahrer frei, wassergebundene Decke	RW1; 11106,-5538 11081,-5416
 Verbundsteinpflaster	RW2; 10890,-6119 10869,-6174 10755,-6414
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 10755,-6414 10869,-6174 10890,-6119
-Gehweg für Radfahrer frei, Asphalt	RW1;RW1 10755,-6414 10636,-6703 10500,-7202
-Verbundsteinpflaster	RW; 10500,-7202 10456,-7522 10448,-7582
-Verbundsteinpflaster	RW; 10448,-7582 10171,-8159 10115,-8276
+#: historical_note: früher: Gehweg für Radfahrer frei, Asphalt, RW1;RW1
+gemeinsamer Geh- und Radweg, Asphalt	RW2;RW8 10755,-6414 10636,-6703 10500,-7202
+Verbundsteinpflaster	RW2; 10500,-7202 10456,-7522 10448,-7582
+Verbundsteinpflaster	RW1; 10448,-7582 10414,-7652
+Verbundsteinpflaster	RW2; 10414,-7652 10171,-8159 10115,-8276
 Verbundsteinpflaster	RW1; 10115,-8276 10171,-8159
-Verbundsteinpflaster	RW2; 10171,-8159 10448,-7582
+Verbundsteinpflaster	RW2; 10171,-8159 10414,-7652 10448,-7582
 Verbundsteinpflaster	RW1; 10448,-7582 10456,-7522
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 10456,-7522 10500,-7202
 Asphalt	RW8;RW2 -3848,-5359 -3851,-5870 -3616,-6170 -3462,-6437 -3110,-7314

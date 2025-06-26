@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-06-23
+#: last_checked: 2025-06-26
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -420,9 +420,9 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 # 
 #: note: Länge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (laut Baustellenschild)
-#: last_checked: 2025-06-11 (mapillary)
-#: check_frequency 30d
-#: next_check: 2025-06-30 (Baustellenschild)
+#: last_checked: 2025-06-24 (mapillary)
+#: check_frequency 14d
+# REMOVED --- #: next_check: 2025-06-30 (Baustellenschild)
 Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,12941
 # 
 # REMOVED (nicht mehr) --- #: next_check_id: TACHELES-2020 --- #: also_indoor: traffic --- #: last_checked: 2025-03-10 (mapillary) --- #: check_frequency: 30d --- Johannisstr.: etwa 20m der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174 --- Johannisstr.: Einbahnstraße	1s:q3:inwork 9385,13174 9254,13171
@@ -1256,9 +1256,9 @@ Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
 # REMOVED --- #: osm_watch: way id="1146544138" version="6"
 #: osm_watch: way id="1145470730" version="5"
 #: osm_watch: note 4610083 1
-#: note: Länge der Engstelle etwa 40m
+#: note: Länge der Engstelle nur etwa 40m-50m, deshalb q2 statt q3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2025-05-13 (daf)
+#: last_checked: 2025-06-25 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
@@ -2243,7 +2243,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/ (1. Quartal 2026: Einreichung der Planfeststellungsunterlagen) (2. Quartal 2029 - 3. Quartal 2031) (3. Quartal 2030 - 4. Quartal 2032)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
 #: osm_watch: way id="77098244" version="19"
-#: last_checked: 2025-01-08
+#: last_checked: 2025-06-25 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2026-03-31
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
@@ -2532,9 +2532,11 @@ Elsensteg: Fußgänger	q3 13368,8689 13379,8703
 Elsensteg: Fußgänger	q4 13379,8703 13397,8727
 Elsensteg: Fußgänger	q3 13397,8727 13405,8737
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
-#: XXX_prog BS an der Lückstr. (ansonsten wäre es q1)
-(Blockpark): Fußgänger, Bordstein	q2 16300,10753 16265,10681
-(Blockpark): Fußgänger	q1 16265,10681 16246,10641 16193,10593
+# REMOVED (man kann den Zebrastreifen mit Bordsteinabsenkung benutzen) --- #: XXX_prog BS an der Lückstr. (ansonsten wäre es q1)
+#: note: Grünanlagenschilder ohne Verbot für Radfahrer vvv
+(Blockpark): Fußgänger	q2 16300,10753 16265,10681
+(Blockpark): Fußgänger	q2 16265,10681 16246,10641 16193,10593
+#: note ^^^
 #: XXX_prog BS am Upstallweg, ansonsten entfernen
 Balatonstr.: Bordstein	q2 17960,10378 17946,10344
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17915,10350 17960,10378 18039,10398

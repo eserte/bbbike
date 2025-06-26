@@ -442,7 +442,6 @@ Gabelberger Str./Frankfurter Allee	3 14451,12396 14381,12207 14427,12199
 Mainzer Str./Frankfurter Allee	3nocross::ignrte 14381,12207 14427,12199 14488,12188
 Colbestr./Frankfurter Allee	3nocross::ignrte 14488,12188 14523,12183 14582,12174 14621,12168
 Colbestr. -> Frankfurter Allee: Colbestr./Frankfurter Allee	3::igndisp 14468,11992 14523,12183 14488,12188
-Frankfurter Allee -> Colbestr.: Colbestr./Frankfurter Allee	3::igndisp 14582,12174 14523,12183 14468,11992
 Kinzigstr./Frankfurter Allee	3nocross::ignrte 14523,12183 14582,12174 14621,12168 14709,12156
 Frankfurter Allee -> Kinzigstr.: Kinzigstr./Frankfurter Allee	3::igndisp 14709,12156 14621,12168 14589,11975
 Kinzigstr. -> Frankfurter Allee: Kinzigstr./Frankfurter Allee	3::igndisp 14589,11975 14621,12168 14582,12174
@@ -2680,6 +2679,15 @@ Jungstr./Oderstr.	3 14675,11964 14626,11869 14550,11732
 Jungstr./Oderstr.	3 14550,11732 14626,11869 14675,11964
 Jungstr. -> Oderstr.	3 14675,11964 14626,11869 14710,11824
 Oderstr. -> Jungstr.	3 14710,11824 14626,11869 14675,11964
+Colbestr.	1 14468,11992 14416,11815
+Colbestr.	1 14523,12183 14468,11992
+Scharnweberstr.	1 14468,11992 14354,12012
+Scharnweberstr.	1 14589,11975 14468,11992
+Colbestr./Scharnweberstr.	3 14354,12012 14468,11992 14589,11975
+Colbestr./Scharnweberstr.	3 14416,11815 14468,11992 14523,12183
+Mainzer Str.	1 14354,12012 14306,11889
+Mainzer Str.	1 14354,12012 14427,12197
+Kinzigstr.	1 14589,11975 14475,11778
 Schwedter Str.	1 10506,14521 10468,14636
 Schwedter Str.	1 10448,14707 10468,14636
 (Wendenschloßstr. - Zur Nachtheide)	1 23121,2320 23019,2296

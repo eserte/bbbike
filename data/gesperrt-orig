@@ -183,7 +183,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-06-16 vvv
+#: last_checked: 2025-06-26 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -4507,7 +4507,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-06-16
+#: last_checked: 2025-06-26
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -5134,30 +5134,6 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # REMOVED (offen) --- #: next_check_id: METROPOLITANPARK-2019 --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-08-23 --- #: check_frequency: 60d --- Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8095,14056 -8183,14041
 # REMOVED (bei osm nicht gesperrt) --- #: osm_watch: way id="686305629" version="2" --- #: last_checked: 2019-09-14 --- #: check_frequency: 90d --- Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
 # 
-#: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-# REMOVED --- #: check_frequency: 90d vvv
-# REMOVED (laut osm offen) --- #: osm_watch: way id="719023971" version="15" --- #: last_checked: 2024-03-04 (daf) --- Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
-# REMOVED --- #: osm_watch: way id="719023970" version="16"
-# REMOVED --- #: osm_watch: node id="11956061128" version="1"
-# REMOVED (offen) --- #: osm_watch: node id="9814568851" version="1" --- #: last_checked: 2024-12-04 vvv --- Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21355,5254 21386,5251 --- #: note: Bauzäune können weggeschoben sein (gesehen 2024-06-09, 2024-07-20), aber das sieht sehr nach Hochbaustelle aus --- #: osm_watch: way id="719023970" version="17" --- Am Kutscherhaus: Hochbaustelle	2::inwork 21386,5251 21514,5310 --- #: last_checked ^^^
-# REMOVED --- #: osm_watch: way id="729324149" version="9" --- #: osm_watch: way id="162120178" version="14" --- #: osm_watch: node id="6751063701" version="5"
-# REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
-# REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
-#: osm_watch: way id="719023969" version="14"
-#: last_checked: 2025-06-04
-#: check_frequency: 90d
-Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
-# REMOVED (mittlerweile ständig offen?) --- #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So), vermutlich auch am 2023-03-17 (Fr) --- #: osm_watch: way id="944115137" version="10" --- #: last_checked: 2023-03-17 --- Henriette-Lustig-Str.: Durchfahrt nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
-# REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
-# REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
-# REMOVED --- #: osm_watch: way id="1126013605" version="5"
-# REMOVED --- #: last_checked: 2023-07-09 --- Uferweg - Carl-Spindler-Str.: noch nicht offiziell geöffnet	2::inwork 21547,5245 21580,5259
-# REMOVED --- #: check_frequency ^^^
-#: XXX ^^^
-# REMOVED --- #: XXX Wird der Weg noch hergerichtet oder endgültig zurückgebaut? Laut osm existiert hier ein Rettungsweg, Rasengittersteine --- #: osm_watch: way id="152046369" version="15" --- #: priority: #C --- #: last_checked: 2023-04-16 (daf) --- #: check_frequency: 60d --- (Eiselenweg - Uferweg): gesperrt	2::inwork 21442,5414 21476,5434 21512,5404 21518,5389
-# REMOVED (hier mittlerweile offen, siehe mapillary) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21413,5180 21345,5157
-# 
 #: next_check_id: MOLKENMARKT-2021
 #: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
 #: by: https://www.tagesspiegel.de/berlin/molkenmarkt-umbau-der-berliner-mitte-beginnt/23858326.html
@@ -5593,7 +5569,7 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: by: https://corporate.berlin-airport.de/de/real-estate/quartier-sxf-2-0/_jcr_content/root/responsivegrid/galleryteaser_copy_5/imagecarousel/galleryteasercarouse_1107974693.coreimg.jpeg/1748441611304/cobe-1.jpeg
 #: by: https://www.airliners.de/ber-entwickelt-gewerbegebiet-ehemaligem-terminal-5-gelaende/81314
 #: XXX möglicherweise bleibt das noch erhalten, solange es Terminal 5 gibt? Es gibt aber Kartenwerke (Pharus, Falk), bei denen die Jürgen-Schumann-Allee durchgängig ist
-#: last_checked: 2025-04-12
+#: last_checked: 2025-06-22 (mapillary)
 # REMOVED --- #: next_check: 2020-10-31
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 210d
@@ -5695,8 +5671,8 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: by: https://www.deutsches-architekturforum.de/thread/15410-dresden-carolabr%C3%BCcke-st-petersburger-stra%C3%9Fe-carolaplatz/?postID=771348#post771348
 #: by: https://www.dnn.de/lokales/dresden/carolabruecke-dresden-abriss-oder-erhalt-entscheidung-steht-STJQBOHKEJBS3CV72CDHOFCSCY.html (vermutlich Komplettabriss)
 #: by: https://www.n-tv.de/panorama/Dresdner-Carolabruecke-soll-bis-zum-Sommer-verschwinden-article25605881.html (Neubau ab 2027)
-#: osm_watch: way id="4214231" version="43"
-#: osm_watch: way id="10368500" version="49"
+#: osm_watch: way id="4214231" version="44"
+#: osm_watch: way id="10368500" version="50"
 #: also_indoor: search Carolabrücke
 #: last_checked: 2025-04-06 (research)
 #: check_frequency: 180d
