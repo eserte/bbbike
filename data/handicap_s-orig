@@ -57,7 +57,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="17"
 #: osm_watch: way id="1072662717" version="20"
-#: last_checked: 2025-06-24
+#: last_checked: 2025-06-27
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -334,32 +334,6 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 # 
 ### Altglienicke ###
 # 
-#: next_check_id: WEGEDORN-2025
-#: source_id: viz2021:13.526576,52.425656,09.09.2024,08:24 (bis 28.02.2025) (bis 30.04.2025) (bis 31.03.2025) (bis 30.04.2025) (bis 11.04.2025) (bis 30.04.2025) (bis 11.04.2025 + weitere Arbeiten) (inaktiv)
-#: source_id[inactive]: bvg2024:160#HIM_FREETEXT_233161 (ohne Endedatum)
-#: source_id[inactive]: bvg2024:160#HIM_FREETEXT_233156 (ohne Endedatum)
-#: source_id: viz2021:13.526157,52.423721,11.04.2025,20:00 (bis 31.05.2025) (inaktiv)
-#: source_id: viz2021:13.526157,52.423721,11.04.2025,16:29 (zwischen Rudower und Semmelweisstr., bis 31.05.2025) (bis 30.06.2025)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529872.php (nördlich Semmelweisstr. Anfang März 2025 offen, der südliche Abschnitt Ende April 2025)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20250308 (bis Ende April 2025)
-#: by: https://fahrinfo.vbb.de/him-uploads/1722238382229_wegedornbr_cke.png
-#: by: https://fahrinfo.vbb.de/him-uploads/1722238635942_wegedornbr_cke.png
-#: by: https://www.berliner-zeitung.de/news/treptow-koepenick-bauchaos-an-der-wegedornbruecke-fertigstellung-erneut-verschoben-li.2311558
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408689355/wirrwarr-um-die-wegedornbruecke-baustelle-wieder-verlaengert.html
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408692553/gesperrte-wegedornbruecke-jetzt-erklaert-sich-der-bezirk.html (bis Ende April 2025?)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1548182.php (voraussichtlich bis Ende April 2025)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1551485.php (voraussichtlich bis Ende Mai 2025)
-#: by: https://viz.berlin.de/aktuelle-meldungen/grundhafte-erneuerung-der-wegedornstrasse-in-altglienicke/
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408788611/wegedornbruecke-wieder-frei-doch-es-stehen-noch-bauarbeiten-aus.html
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1566332.php (Abschluss bis Ende Juni 2025)
-#: also_indoor: traffic (H,G[zu kurz?],B,T,W[zu kurz?],A)
-#: last_checked: 2025-06-11
-#: next_check: 2025-06-30 (VIZ-Verkehrsmeldung, BA-Pressemitteilung)
-#: valid: -20250630
-Wegedornstr.: Bauarbeiten, Engstellen	q1::inwork 18881,2062 18922,2238
-# REMOVED (mittlerweile nicht mehr q2) --- Wegedornstr.: Bauarbeiten, Engstellen	q2::inwork 18881,2062 18922,2238
-# REMOVED (fertig) --- Wegedornstr.: Bauarbeiten, Engstellen, Umwege	q2::inwork 18922,2238 18928,2319 18929,2454
-# 
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
 # 
 ### Wedding/Gesundbrunnen ###
@@ -384,7 +358,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2025-03-05 (orthofotos)
+#: last_checked: 2025-03-04 (orthofotos)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -420,7 +394,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 # 
 #: note: Länge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (laut Baustellenschild)
-#: last_checked: 2025-06-24 (mapillary)
+#: last_checked: 2025-06-26 (mapillary)
 #: check_frequency 14d
 # REMOVED --- #: next_check: 2025-06-30 (Baustellenschild)
 Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,12941
@@ -3756,7 +3730,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-06-24
+#: last_checked: 2025-06-27
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-
@@ -5281,7 +5255,7 @@ Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 #: osm_watch: way id="542223826" version="15"
 #: osm_watch: way id="1294822443" version="1"
 #: historical_note: früher: Borkumstr.: Schulgelände	q2 11335,17807 11412,17823
-#: last_checked: 2025-03-05 (orthofotos)
+#: last_checked: 2025-03-04 (orthofotos)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2025-04-30
 Borkumstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11335,17807 11412,17823

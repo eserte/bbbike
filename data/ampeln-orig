@@ -6,6 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: LYNAR-2025
+#: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025)
+#: note: Gegenverkehrsstrecke über 50m, gilt auch für Radfahrer (trotz Radwege)
+#: next_check: 2025-07-18
+#: valid: -20250718
+Paulsborner Str./Auguste-Viktoria-Str./Lynarstr.: Gegenverkehrsstrecke	X::inwork::alternating 2708,9144
+# 
 # REMOVED --- #: note VIZ: Auf der Schnellerstraße und Oberspreestraße beginnen am Morgen Leitungsarbeiten. Bis Ende Juni ist die Oberspreestraße stadteinwärts zwischen Eisblumensteig und Bruno-Bürgel-Weg für den Kfz-Verkehr gesperrt (srt: für Radfahrer explizit offen). Eine Umleitung ist ausgeschildert. Zusätzlich regelt auf der Schnellerstraße in Höhe Bruno-Bürgel-Weg eine Baustellenampel wechselseitig den Verkehr.
 # REMOVED --- #: note: Gegenverkehrsstrecke etwa 85m
 # REMOVED --- #: note: laut rbb bis 25.06.2025
@@ -39,12 +46,12 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 # REMOVED --- #: valid: -20250619
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
-#: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025)
-#: source_id: viz2021:13.455059,52.559321,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
-#: last_checked: 2025-06-21 (mapillary)
-#: next_check: -2025-06-27
-#: valid: -20250627
-Roelckestr./Große Seestr.: provisorische Ampel	X::inwork 13754,17133
+# REMOVED --- #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.455059,52.559321,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
+# REMOVED --- #: last_checked: 2025-06-21 (mapillary)
+# REMOVED --- #: next_check: -2025-06-27
+# REMOVED --- #: valid: -20250627
+# REMOVED --- Roelckestr./Große Seestr.: provisorische Ampel	X::inwork 13754,17133
 # 
 #: next_check_id: GRUNEWALDSTR-2025
 #: source_id: viz2021:13.35635,52.49021,25.04.2025,10:06 (bis 15.05.2025) (inaktiv)
