@@ -44565,6 +44565,7 @@ EOF
 #: by: https://www.gesobau.de/wohnungsbau/quartier-alt-wittenau/ (Bauphase bis Sommer 2026)
 #: by: https://entwicklungsstadt.de/baufortschritt-in-alt-wittenau-gesobau-quartier-nimmt-gestalt-an/ (Fertigstellung Sommer 2026)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1574495.php
+#: by: https://entwicklungsstadt.de/richtfest-in-alt-wittenau-neues-wohnquartier-fuer-studierende-und-azubis/
 #: last_checked: 2025-06-11 (mapillary)
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 5476,20372 5801,20339
@@ -48119,6 +48120,7 @@ EOF
 #: by: https://entwicklungsstadt.de/wuhlheide-wird-die-abgerissene-bruecke-doch-wieder-aufgebaut/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/nach-brueckenabriss-an-der-wuhlheide-was-der-senat-jetzt-als-naechstes-vorhat-li.2335157
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1572908.php
+#: by: https://entwicklungsstadt.de/wuhlheide-bruecke-rueckbau-abgeschlossen-zukunft-offen/
 # REMOVED --- #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich? --- #: last_checked: 2025-05-20 --- #: next_check: 2025-05-29
 unter der Brücke	2::inwork 17990,7115 18010,7137
 EOF
@@ -48493,6 +48495,31 @@ EOF
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025)
 #: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025)
 	q4::inwork 12627,19317 12457,19248
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Tegeler Forst: wegen Sturmschäden gesperrt',
+       type  => 'gesperrt',
+# data erstellt mit dem folgenden Kommando:
+#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner =(printf "\tX -542,22993 -264,22750 540,22269 848,22116 1069,21985 1169,21907 1395,21487 1467,21273 1552,21194 1963,21605 2041,21659 2261,21689 2089,22550 2147,22882 2714,23220 2379,23682 2138,24135 326,23962 -38,23531\n") -onlyenclosed data/strassen data/landstrassen | perl -pe 's/\t\S+/\t2::temp/' >| /tmp/blocked.bbd
+       data  => <<EOF,
+#: by: https://viz.berlin.de/aktuelle-meldungen/massive-sturmschaden-tegeler-forst-bis-auf-weiteres-gesperrt/
+#: by: https://www.tagesspiegel.de/berlin/unwetter-in-berlin-tausende-baume-beschadigt--tegeler-forst-vorerst-gesperrt-13925098.html
+Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
+(Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1069,21985 1135,22069
+(Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1135,22069 1245,22058 1527,22298 1622,22383
+(Hermsdorfer Damm - Karolinenstr.)	2::temp 1928,21595 1859,21541
+(Waldweg über den Beyschlagtunnel)	2::temp 393,22408 421,22528 636,22658
+(Hermsdorfer Damm - Rote Chaussee)	2::temp 1859,21541 1610,21721 1566,21898 1556,22050 1579,22101 1595,22172 1588,22209 1569,22250 1527,22298 1499,22378 1415,22552 1435,22771 1460,22874 1476,22938 1567,23054 1566,23179 1534,23277 1479,23355 1394,23482 1003,23752 875,23836
+(Hermsdorfer Damm - Tegeler Forst)	2::temp 2072,21691 2046,21753 1977,21808 1882,21904 1855,21964 1726,22163 1627,22205 1569,22250
+(Schulzendorfer Str. - Am Buchenberg)	2::temp -429,23030 -423,23103 -190,23187 -108,23306 -38,23355 233,23442 558,23359 664,23416 737,23442 894,23477 1050,23447 1479,23355 1794,23255 2480,23264
+(Waldweg im Tegeler Forst)	2::temp 875,23836 728,23885
+(Waldweg im Tegeler Forst)	2::temp 1003,23752 1157,23752 1304,23736 1363,23746 1433,23738 1571,23786 1602,23775 1622,23726 1688,23698 1848,23679 1980,23711 2054,23741 2111,23703 2137,23626 2272,23574
+(Tegeler Forst)	2::temp 2088,22798 2047,22829
+(Tegeler Forst)	2::temp 1571,23786 1592,23808
+(Tegeler Forst - Ehrenpfortensteig)	2::temp 1567,23054 1581,22959 1661,22851 1760,22839 1897,22781 2088,22798
+(Rote Chaussee - Beyschlagtunnel)	2::temp 904,23964 875,23836 776,23745 711,23612 664,23416 656,23373 697,23257 695,23002 652,22855 667,22755 636,22658
 EOF
      },
     );
