@@ -9386,7 +9386,7 @@ EOF
        text  => 'B 246 Ernst-Thälmann-Str. OL Belzig, Höhe Gymnasium Kanalarbeiten Vollsperrung 19.07.2007-19.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -44481,-30188 -44189,-30306
+	q4::inwork -44481,-30188 -44440,-30023 -44220,-30148 -44134,-30175
 EOF
      },
      { from  => 1184222221, # 2007-07-12 08:37
@@ -21155,7 +21155,7 @@ EOF
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
 #: osm_watch: way id="152466403" version="21"
-#: osm_watch: note 4444162 3
+#: osm_watch: note 4444162 4
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str. und Lianenweg, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung)
@@ -29457,7 +29457,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-06-21 vvv
+#: last_checked: 2025-06-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -40756,7 +40756,7 @@ EOF
      { from  => 1750884815, # $isodate2epoch->("2024-08-29 00:00:00"), # undef, # 
        until => $isodate2epoch->("2025-07-04 18:00:00"), # 1725554996, # $isodate2epoch->("2024-09-06 23:59:59"), # 1688759535, # undef, # XXX
 #      text  => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 29.8.2024 für voraussichtlich 6.9.2024',
-       text  => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 26.6.2025 für voraussichtlich 4.7.2025',
+       text  => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 26.6.2025 bis voraussichtlich 4.7.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ROTESRATHAUS-2023
@@ -40768,6 +40768,7 @@ EOF
 #: note: war bereits am Abend des 5.9.2024 offen
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
 #: source_id: viz2021:13.40718,52.51839,26.06.2025,06:00 (bis 04.07.2025)
+#: note: 2025: die Jüdenstr. von Süden her mit Verbotsschild, Lieferverkehr frei, aber von Norden her offizielle Umleitung für den Radverkehr
 # REMOVED --- #: last_checked: 2024-09-05 (webcam) --- #: check_frequency: 3d --- #: next_check: 2024-09-06
 	2::temp 10696,12601 10599,12526
 EOF
@@ -40933,7 +40934,8 @@ EOF
 #      prewarn_days => 16,
 #      (Stand Mitte September 2023: noch keine Bauarbeiten und keine Sperrung)', # , voraussichtlich ab der zweiten Augusthälfte 2023 bis zum 21.12.2024', # , Start der Bauarbeiten voraussichtlich am 5.10.2023
 #      text  => 'Kronprinzessinnenweg: Sperrung zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr, Bauarbeiten dauern bis Ende August 2025',
-       text  => 'Kronprinzessinnenweg: Sperrung wegen Bauarbeiten der Wasserbetriebe zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr; außerdem Vollsperrung vom 30.06.2025 bis 11.07.2025',
+#      text  => 'Kronprinzessinnenweg: Sperrung wegen Bauarbeiten der Wasserbetriebe zwischen Havelchaussee und Hüttenweg, montags bis freitags 6 bis 18 Uhr; außerdem Vollsperrung vom 30.06.2025 bis 11.07.2025',
+       text  => 'Kronprinzessinnenweg: Sperrung wegen Asphaltierungsarbeiten zwischen Havelchaussee und Hüttenweg, vom 30.06.2025 bis 11.07.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
@@ -40958,8 +40960,8 @@ EOF
 #: note: Anfang März 2024: freitags kann man anscheinend auch schon früher (um 17h) hier langfahren; Mai 2025: donnerstags bereits um 16:40 Uhr
 #: XXX laut osm nun offen
 #: last_checked: 2025-06-01
-#: check_frequency: 30d
-#: next_check: 2025-06-29 (Textänderung: nur noch Vollsperrung)
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2025-07-11
 # REMOVED --- #: next_check: 2025-07-11 (BA-Pressemitteilung)
 	2::inwork -927,6888 -2218,5133 -3296,3686
 EOF
@@ -43672,27 +43674,23 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1751050067, # undef, # XXX
        text  => 'Wiesenstr./Uferstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv
 #: note: laut Schild der Wasserbetriebe bis August 2024
 #: also_indoor: traffic (B,G,T) vvv
-#: last_checked: 2025-05-24 (mapillary) vvv
-#: check_frequency: 60d vvv
+# REMOVED (laut osm beendet) --- #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv --- #: last_checked: 2025-05-24 (mapillary) vvv --- #: check_frequency: 60d vvv
 #: osm_watch: way id="1156267450" version="8"
 Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-#: osm_watch: way id="120633718" version="31"
+#: osm_watch: way id="120633718" version="32"
 Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 #: osm_watch[closed]: note 3816582 3
 Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
-#: osm_watch: note 3393893 7
+#: osm_watch[closed]: note 3393893 7
 Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: add_fragezeichen ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: also_indoor ^^^
-#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1711947600, # 2024-04-01 07:00
@@ -45160,8 +45158,8 @@ EOF
 #	q4::inwork; 14103,10489 14170,10675
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (H,T)
-#: last_checked: 2025-06-25 (Asphaltierungsarbeiten)
-#: check_frequency: 7d
+#: last_checked: 2025-06-28 (Asphaltierungsarbeiten fertig)
+#: check_frequency: 3d
 	q4::inwork 14103,10489 14170,10675
 EOF
      },
@@ -47545,7 +47543,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/grunewaldstra%C3%9Fe-8-neubau.1300/#post-24727
 #: osm_watch: way id="276210232" version="5"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2025-04-27
+#: last_checked: 2025-06-24 (architektur-urbanistik)
 #: check_frequency: 90d
 	q3::inwork; 7202,9329 7209,9507
 EOF
@@ -47805,7 +47803,7 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-06-27 (traffic) vvv
+#: last_checked: 2025-06-28 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -48288,9 +48286,9 @@ EOF
 EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
-       until => $isodate2epoch->("2025-09-30 17:00:00"), # 1750431600, # 2025-06-20 17:00
+       until => $isodate2epoch->("2025-11-28 17:00:00"), # 1750431600, # 2025-06-20 17:00
 #      text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, vom 02.06.2025 07:00 bis 24.06.2025 17:00',
-       text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, voraussichtlich bis Ende September 2025',
+       text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, voraussichtlich bis Ende September 2025, evtl. noch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 28.11.2025)
@@ -48298,15 +48296,19 @@ EOF
 #: source_id: bvg2024:194#HIM_FREETEXT_286893
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025)
 #: source_id: adac:738022488 (bis 20.06.2025)
+#: last_checked: 2025-06-25 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2025-09-30 (VIZ-Verkehrsmeldung) vvv
 Karl-Kunger-Str.: Einfahrt Richtung Westen gesperrt (wenige Meter)	q3::inwork; 13614,9333 13489,9456
 #: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (inaktiv)
 #: source_id: adac:90391862 (bis 20.06.2025) (inaktiv)
 #: also_indoor: traffic (T,H)
-#: XXX Wurde diese Sperrung mittlerweile aufgehoben? (Bei VIZ und rbb nicht mehr gelistet, vor Ort noch gesperrt)
-#: last_checked: 2025-06-25
-#: check_frequency: 3d
-# REMOVED --- #: next_check: 2025-06-24
+# REMOVED --- #: XXX Wurde diese Sperrung mittlerweile aufgehoben? (Bei VIZ und rbb nicht mehr gelistet, vor Ort noch gesperrt)
+#: note: Halteverbotsschilder bis 28.11.2025
 Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::inwork 13614,9333 13715,9455
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
@@ -48516,6 +48518,8 @@ EOF
 #: by: https://www.t-online.de/region/berlin/id_100793476/berlin-schweres-unwetter-tegeler-forst-gesperrt.html (Aufräumarbeiten können Wochen dauern)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574553.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
+#: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-in-parks-droht-am-freitag-lebensgefahr-feuerwehr-zahlt-mehr-als-860-einsatze-13921543.html
+#: by: https://www.tagesspiegel.de/berlin/die-baume-sind-umgefallen-wie-mikadostabchen-heftige-unwetterschaden-im-berliner-norden--reinickendorf-sperrt-alle-parks-und-spielplatze-13925935.html
 #: last_checked: 2025-06-27 (VIZ) vvv
 #: check_frequency: 3d vvv
 Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
@@ -48546,14 +48550,17 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee)
-#: last_checked: 2025-06-27 (SenUMVK) vvv
+#: source_id: adac:584917438 (Niederneuendorfer Allee)
+#: also_indoor: traffic (T,H[teilweise])
+#: last_checked: 2025-06-28 (research) vvv
 #: check_frequency: 3d vvv
+Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
+# REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
+Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
 (Uferweg an der Havel)	2::temp -2723,19255 -2746,19418 -2763,19450 -2780,19530 -2870,19589 -2905,19636 -2908,19715
-Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
 Radelandstr.	2::temp -6518,17539 -6608,17562
 (Radelandstr. - Mauerweg)	2::temp -6608,17562 -6910,17684 -6954,17688
 Oberjägerweg	2::temp -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113 -5209,19643 -5024,19831 -4844,20024 -4559,20331 -4485,20420
-Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
 Papenberger Weg	2::temp -2937,19008 -2904,19019
 (Niederneuendorfer Allee - Pappelweg)	2::temp -2821,18620 -2870,18553 -2919,18506 -2965,18488 -2987,18438
 (Mauerweg Spandau)	2::temp -2908,19715 -2966,19746 -3012,19757 -3161,19627

@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-06-23
+#: last_checked: 2025-06-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-06-25
+#: last_checked: 2025-06-28
 #: check_frequency: 45d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -277,7 +277,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="9"
-#: last_checked: 2025-04-27 (mapillary)
+#: last_checked: 2025-06-28
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -408,12 +408,13 @@ Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,129
 # 
 #: next_check_id: ROTESRATHAUS-2023
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon
-#: last_checked: 2024-09-05 (webcam) vvv
-#: next_check: 2025-06-26 vvv
+#: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon; 2025: 2025-06-28 war die Anrampung da
+#: last_checked: 2025-06-28 vvv
+#: next_check: 2025-07-04 vvv
 #: valid: -20250704 vvv
+#: note: eigentlich für Fußgänger verboten
 (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
-#: note: eigentlich nur in Richtung W-O befahrbar
+#: note: eigentlich nur in Richtung W-O befahrbar, deshalb q4
 (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
 #: valid ^^^
 #: next_check ^^^
@@ -701,9 +702,9 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: next_check_id: SCHOENEWEIDE-2018
 #: next_check_id: STERNDAMM-2023
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
-#: last_checked: 2025-06-20 (krickstadt) vvv
+#: last_checked: 2025-06-27 (krickstadt) vvv
 #: check_frequency: 30d vvv
-Sterndamm: Engstellen, Behinderungen möglich	q3::inwork; 17886,5587 17822,5524 17765,5469
+Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17822,5524 17765,5469
 # REMOVED Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17754,5460 17736,5441 17695,5394
 # REMOVED (hier keine mehr) --- Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17754,5460
 #: check_frequency ^^^
@@ -964,7 +965,7 @@ Reuterstr.: Bauarbeiten an der Karl-Marx-Str., einige Meter der Fahrbahn sind ge
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2025-06-06
+#: last_checked: 2025-06-26 (architektur-urbanistik)
 #: check_frequency: 90d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
@@ -1910,6 +1911,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: next_check_id: SPREEWALDBAD-2024
 #: by: https://www.berlinerbaeder.de/baeder/detail/wellenbad-am-spreewaldplatz/ (Bauarbeiten ab Ende Juni 2023 für 3½ Jahre)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/wellenbad-am-spreewaldplatz-schliesst-ende-juni_a374657 (bis Januar 2027)
+#: by: https://entwicklungsstadt.de/goerlitzer-park-neues-konzept-fuer-schwimmbad-am-spreewaldplatz/
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
