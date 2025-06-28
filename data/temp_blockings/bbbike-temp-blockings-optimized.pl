@@ -9251,6 +9251,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
 #: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-in-parks-droht-am-freitag-lebensgefahr-feuerwehr-zahlt-mehr-als-860-einsatze-13921543.html
 #: by: https://www.tagesspiegel.de/berlin/die-baume-sind-umgefallen-wie-mikadostabchen-heftige-unwetterschaden-im-berliner-norden--reinickendorf-sperrt-alle-parks-und-spielplatze-13925935.html
+#: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-einschrankungen-bei-der-s-bahn-aufgehoben--tegeler-forst-bleibt-gesperrt-13921543.html
 #: last_checked: 2025-06-27 (VIZ) vvv
 #: check_frequency: 3d vvv
 Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
@@ -9311,7 +9312,7 @@ Oberjägerweg	2::temp -4485,20420 -4053,20594
 ',
          'from' => undef,
          'id' => 4372,
-         'text' => 'Tegeler Forst: wegen Sturmschäden gesperrt',
+         'text' => 'Spandauer Forst: wegen Sturmschäden gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },

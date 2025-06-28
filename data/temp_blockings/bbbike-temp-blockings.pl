@@ -48520,6 +48520,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
 #: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-in-parks-droht-am-freitag-lebensgefahr-feuerwehr-zahlt-mehr-als-860-einsatze-13921543.html
 #: by: https://www.tagesspiegel.de/berlin/die-baume-sind-umgefallen-wie-mikadostabchen-heftige-unwetterschaden-im-berliner-norden--reinickendorf-sperrt-alle-parks-und-spielplatze-13925935.html
+#: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-einschrankungen-bei-der-s-bahn-aufgehoben--tegeler-forst-bleibt-gesperrt-13921543.html
 #: last_checked: 2025-06-27 (VIZ) vvv
 #: check_frequency: 3d vvv
 Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
@@ -48542,7 +48543,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Tegeler Forst: wegen Sturmschäden gesperrt',
+       text  => 'Spandauer Forst: wegen Sturmschäden gesperrt',
        type  => 'gesperrt',
 # data erstellt mit dem folgenden Kommando:
 #    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner =(printf "\tX -8125,19769 -6694,21170 -2758,20609 -2396,19250 -2933,19226 -2740,18550 -3253,18290 -3971,18501 -4135,18006 -4243,17771 -5010,17608 -6368,17879 -6519,17348 -6984,17415 -7099,19268 -7962,18960\n") -onlyenclosed data/strassen data/landstrassen | perl -pe 's/\t\S+/\t2::temp/' >| /tmp/blocked.bbd
