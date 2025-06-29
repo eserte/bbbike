@@ -2342,7 +2342,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-06-18 vvv
+#: last_checked: 2025-06-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17611,7690 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -4367,7 +4367,7 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 #: XXX Radwege werden neu gemacht vvv
 #: last_checked: 2025-06-09 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-07-31 (BVG-Meldung) vvv
+#: next_check: 2025-08-02 (VIZ-Verkehrsmeldung) vvv
 Gehweg für Radfahrer frei, Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082
 #: note: allerdings gibt es kein explizites Radfahrverbot auf der Fahrbahn
 Umleitung für Radfahrer über Nebenfahrbahn	RW10; 22726,15082 22899,15073
@@ -5358,8 +5358,10 @@ etwa zur Hälfte neu asphaltiert, danach Verbundsteinpflaster	RW1; 17211,7280 172
 Verbundsteinpflaster	RW1; 17286,7173 17352,7051 17459,6854 17510,6751
 neu asphaltiert	RW1; 17286,7173 17211,7280
 	RW3;RW1 17990,7115 18010,7137
-asphaltiert, uneben	RW1; 18010,7137 18086,7243 18165,7371 18198,7425 18256,7520
-Verbundsteinpflaster	RW1; 18256,7520 18267,7537 18382,7724 18406,7760 18471,7862 18577,8033
+asphaltiert, uneben	RW1; 18010,7137 18086,7243 18165,7371 18198,7425 18256,7520 18267,7537
+#: historical_note: früher (bis 2025): Verbundsteinpflaster
+neu asphaltiert, etwas breiter	RW1; 18267,7537 18382,7724 18406,7760
+Verbundsteinpflaster	RW1; 18406,7760 18471,7862 18577,8033
 neu asphaltiert	RW1; 18577,8033 18626,8114 18657,8163
 neu asphaltiert	RW2; 18657,8163 18672,8238
 	RW1; 18577,8033 18471,7862 18406,7760 18382,7724 18267,7537 18256,7520 18198,7425 18165,7371 18086,7243 18010,7137
@@ -7329,7 +7331,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2025-06-11 (mapillary) vvv
+#: last_checked: 2025-06-27 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -7834,7 +7836,7 @@ Bushaltestelle	RW5; 6814,13349 6756,13341
 #: by: ^^^
 	RW6;RW6 9936,14085 9901,14197 9856,14204 9769,14175 9750,14132
 # REMOVED (Bauarbeiten, existiert zurzeit nicht) ---	RW1; 14650,14322 14464,14216 14358,14155
-	RW6;RW6 19449,7669 19350,7741 19245,7577
+	RW6;RW6 19451,7666 19350,7741 19245,7577
 	RW6;RW6 7995,13537 8048,13578
 	RW6;RW6 12282,8204 12134,8172
 ab ca. Mitte des Abschnitts markiert, die letzten 5 Meter sogar benutzungspflichtig	RW3; 7600,8921 7563,8871

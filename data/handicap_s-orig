@@ -111,7 +111,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-06-28
+#: last_checked: 2025-06-29
 #: check_frequency: 45d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -715,18 +715,7 @@ Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17822,5524 1
 # 
 ### Oberschöneweide ###
 # 
-#: next_check_id: BRUECKEANDERWUHLHEIDE-2025
-#: last_checked: 2025-06-18 vvv
-#: check_frequency: 10d vvv
-#: next_check: 2025-06-27 vvv
-# REMOVED (hier kommt man eigentlich wieder gut vorbei) --- Rummelsburger Str.: Engstellen durch unnötige Absperrungen, einige Fußgänger	q2::inwork; 18010,7137 17847,7356
-An der Wuhlheide: Engstellen durch unnötige Absperrungen, einige Fußgänger	q1::inwork; 18010,7137 18225,7004
-# REMOVED (ab 2025-06-06 14:00 Uhr wird der Kfz-Verkehr möglich sein, dann möglicherweise auch für den Radverkehr keine Einschränkungen mehr) --- Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18010,7137 17990,7115
-# REMOVED --- Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 17990,7115 18010,7137
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: BRUECKEANDERWUHLHEIDE-2025 --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 10d vvv --- #: next_check: 2025-06-27 vvv --- # REMOVED (hier kommt man eigentlich wieder gut vorbei) --- Rummelsburger Str.: Engstellen durch unnötige Absperrungen, einige Fußgänger	q2::inwork; 18010,7137 17847,7356 --- An der Wuhlheide: Engstellen durch unnötige Absperrungen, einige Fußgänger	q1::inwork; 18010,7137 18225,7004 --- # REMOVED (ab 2025-06-06 14:00 Uhr wird der Kfz-Verkehr möglich sein, dann möglicherweise auch für den Radverkehr keine Einschränkungen mehr) --- Treskowallee - Edisonstr.: Wechsel auf die linke Seite, Umwege	q3::inwork; 18010,7137 17990,7115 --- # REMOVED --- Edisonstr. - Treskowallee: Bauarbeiten	q1::inwork; 17990,7115 18010,7137 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (beendet) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: also_indoor: traffic (B,W,G,ex-H[ungenau]) vvv --- #: last_checked: 2023-09-12 vvv --- #: check_frequency: 14d vvv --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 19033,6167 18970,6110 18861,6000 --- Rathenaustr./Plönzeile: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 18970,6110 18859,6198 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 # REMOVED (beendet) --- #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020 (Termin wurde nicht gehalten) --- #: last_checked: 2020-10-04 --- #: next_check: 2020-07-31 --- #: valid: -20200731 --- Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
 # REMOVED (BVG-Meldung ist weg) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?) --- #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bauverzug-am-abwasserkanal_a186365 (Ende Dezember 2018) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50363 (allerdings ist hier eine andere Baustelle beim 365er erwähnt, nur die Karte zeigt auch diese Baustelle) --- #: XXX laut googlemaps bis 23. September 2018; laut vmz bis Anfang Dezember 2018 --- #: also_indoor: traffic --- #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72 --- #: source_id: 2147342044 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-12-06 --- # REMOVED --- #: valid: -20181201 --- #: priority: #A --- Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
@@ -1056,7 +1045,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-06-18
+#: last_checked: 2025-06-29
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1197,12 +1186,13 @@ Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 #: source_id: bvg2024:195#HIM_FREETEXT_271433 (ohne Endedatum)
 #: source_id: viz2021:13.582334,52.539807,03.04.2025,10:00 (nur Kfz-Verkehr, bis 07.04.2025) (inaktiv)
 #: source_id: viz2021:13.584338,52.539646,07.04.2025,10:00 (nur Kfz-Verkehr, bis 16.06.2025) (bis 17.06.2025 + weitere Arbeiten) (bis 30.06.2025 + ...)
+#: source_id: viz2021:13.572984,52.540446,30.06.2025,10:00 (bis 02.08.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: note: Zusätzlich zu den Straßenbauarbeiten werden die Hellersdorfer Brücken neu gemacht (siehe SenUMVK-Seite), vermutlich Ende 2025 - Mitte 2027, mit Behelfsbrücke für den Fuß+Radverkehr
 #: osm_watch: note 3581028 14
 #: last_checked: 2025-06-09 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-07-31 (BVG-Meldung) vvv
+#: next_check: 2025-08-02 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-07-31 vvv
 # REMOVED --- #: osm_watch: way id="175916583" version="11" --- Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 # REMOVED --- #: osm_watch: way id="26692569" version="17" --- Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2+::inwork; 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213

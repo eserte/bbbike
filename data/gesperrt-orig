@@ -183,7 +183,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-06-26 vvv
+#: last_checked: 2025-06-29 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -4093,7 +4093,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 # 
 #: osm_watch[closed]: note 4165928 1
-#: last_checked: 2025-06-16
+#: last_checked: 2025-06-29
 #: check_frequency: 60d
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -4276,14 +4276,6 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
 Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 # 
-#: by: https://www.potsdam.de/de/stadtbad-park-babelsberg-baustart-im-september (bis Frühjahr 2025)
-#: by: https://entwicklungsstadt.de/stadtbad-park-babelsberg-eroeffnung-fuer-juli-2025-angekuendigt/
-#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/dieses-wochenende-ist-schlusselubergabe-strandbad-babelsberg-steht-vor-seiner-eroffnung-13901827.html
-#: osm_watch: way id="1212090206" version="2"
-#: last_checked: 2024-02-24
-#: next_check: 2025-07-05 (entwicklungsstadt, Tsp)
-Park Babelsberg, Uferweg: wegen Bauarbeiten für das neue Strandbad gesperrt	2::inwork -11486,-1008 -11452,-974
-# 
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="2"
@@ -4462,7 +4454,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-06-18
+#: last_checked: 2025-06-29
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4508,7 +4500,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-06-26
+#: last_checked: 2025-06-29
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4690,7 +4682,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: last_checked: 2025-06-18
+#: last_checked: 2025-06-29
 #: check_frequency: 180d
 #: next_check: 2027-06-30
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861

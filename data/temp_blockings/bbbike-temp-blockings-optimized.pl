@@ -4881,7 +4881,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: osm_watch: way id="362719487" version="12"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-06-07 (daf)
+#: last_checked: 2025-06-27 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
@@ -4938,6 +4938,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (voraussichtliche Freigabe im Herbst 2023)
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20231117 (voraussichtliche Freigabe Anfang 2024)
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240608 (voraussichtliche Freigabe Sommer 2024)
+#: by: https://www.blankenfelde-mahlow.de/planen-bauen/bauen/dresdner-bahn/ (Sperrzeit: Ende 2025)
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 #: XXX Wird nach der Wiedereröffnung der Kfz-Verkehr möglich sein? Dann: NN -> N!
@@ -4947,8 +4948,8 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: osm_watch: way id="1060570985" version="3"
 #: osm_watch: note 3914565 18
 #: last_checked: 2025-05-01 (osm note)
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2024-09-22
+#: check_frequency: 120d
+#: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 ',
          'from' => undef,
@@ -5901,7 +5902,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-06-26
+#: last_checked: 2025-06-29
 #: check_frequency: 30d
 #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6678,6 +6679,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1572015.php (Abschluss der Bauarbeiten)
 #: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025) (inaktiv)
 #: source_id: viz2021:13.228732,52.464169,05.10.2023,07:00 (bis 31.08.2025) (bis 30.06.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.229865,52.464817,30.06.2025,06:00 (bis 11.07.2025)
 #: osm_watch: way id="50830991" version="27"
 # REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
 #: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
@@ -6685,7 +6687,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: XXX laut osm nun offen
 #: last_checked: 2025-06-01
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-07-11
+#: next_check: 2025-07-11 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2025-07-11 (BA-Pressemitteilung)
 	2::inwork -927,6888 -2218,5133 -3296,3686
 ',
@@ -7807,7 +7809,7 @@ Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-04-25
+#: last_checked: 2025-06-27 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -8795,7 +8797,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        {
          'data' => '#: note: Halteverbotsschilder bis 14.06.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2025-06-24 (traffic)
+#: last_checked: 2025-06-29 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-06-14
 	q4::inwork 6351,9335 6446,9328
@@ -8825,6 +8827,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
 #: source_id: adac:1977697072 (Erwähnung des Gehwegs)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
+#: osm_watch: note 4734747 1
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
@@ -9252,10 +9255,12 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-in-parks-droht-am-freitag-lebensgefahr-feuerwehr-zahlt-mehr-als-860-einsatze-13921543.html
 #: by: https://www.tagesspiegel.de/berlin/die-baume-sind-umgefallen-wie-mikadostabchen-heftige-unwetterschaden-im-berliner-norden--reinickendorf-sperrt-alle-parks-und-spielplatze-13925935.html
 #: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-einschrankungen-bei-der-s-bahn-aufgehoben--tegeler-forst-bleibt-gesperrt-13921543.html
-#: last_checked: 2025-06-27 (VIZ) vvv
+#: by: https://taz.de/Sturmfolgen-im-Berliner-Nordwesten/!6096928/
+#: last_checked: 2025-06-29 (research) vvv
 #: check_frequency: 3d vvv
+#: note: nördlicher Abschnitt
 Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
-(Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1069,21985 1135,22069
+(Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1061,21970 1069,21985 1135,22069
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1135,22069 1245,22058 1527,22298 1622,22383
 (Hermsdorfer Damm - Karolinenstr.)	2::temp 1928,21595 1859,21541
 (Waldweg über den Beyschlagtunnel)	2::temp 393,22408 421,22528 636,22658
@@ -9268,6 +9273,24 @@ Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22
 (Tegeler Forst)	2::temp 1571,23786 1592,23808
 (Tegeler Forst - Ehrenpfortensteig)	2::temp 1567,23054 1581,22959 1661,22851 1760,22839 1897,22781 2088,22798
 (Rote Chaussee - Beyschlagtunnel)	2::temp 904,23964 875,23836 776,23745 711,23612 664,23416 656,23373 697,23257 695,23002 652,22855 667,22755 636,22658
+#: source_id: bvg2024:124#HIM_FREETEXT_290864
+#: note: Unklar, ob die Ruppiner Chausse betroffen ist
+Ruppiner Chaussee	2::temp 1445,21216 1427,21237 1347,21428 1254,21718 1146,21901 1061,21970 919,22068 488,22275 455,22285 355,22344
+#: note: südlicher Abschnitt --- unklar, ob dieser auch betroffen ist
+(Waldkauzstr., Verlängerung)	2::temp -884,19726 -671,19408 -547,19282 -538,19236 -595,19146 -646,19028 -629,18977
+(Schwarzer Weg - Waldkauzstr., Verbindung)	2::temp -519,19233 -538,19236
+# REMOVED (Zugang zum Segel-Club möglich?) --- Schwarzer Weg (Tegel)	2::temp 1119,21012 958,21006 892,20989 817,20953 625,20738 605,20714
+#: note: Unklar: offiziell wohl nicht abgesperrt, aber man kann von Forstarbeitern abgewiesen werden
+Schwarzer Weg (Tegel)	2::temp 605,20714 511,20600 436,20558 240,20457 195,20405 97,20103 6,19817 -13,19739 -51,19654 -134,19600 -305,19507 -519,19233 -585,19132 -620,19063 -629,18977 -629,18866 -639,18796 -754,18644 -847,18577 -869,18526 -885,18446 -930,18337 -968,18301 -1082,18165
+(Schwarzer Weg - Jörsstr.)	2::temp -847,18577 -932,18558 -1124,18480 -1307,18408
+(Zufahrt Restaurant Toulouse)	2::temp 6,19817 72,19790
+(Zufahrt Villa Borsig)	2::temp 436,20558 426,20420 443,20357 430,20338
+(Uferweg am Tegeler See)	2::temp -984,18136 -934,18284 -930,18337
+(Uferweg am Tegeler See)	2::temp -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790 119,19931 167,19978 193,20024 209,20083 226,20116 222,20175 248,20233 324,20350 430,20338
+(Mühlenweg)	2::temp -2043,20968 -1895,20953 -1760,20985 -1590,20948 -1082,20996 -889,20979 -750,20878 -329,20685 -105,20611 65,20594 462,20694 605,20714
+(Försterweg)	2::temp -2043,20968 -2101,20891 -1811,20818 -1292,20572 -1243,20471 -1050,20281 -871,20225 -842,20200 -716,20060 -516,19798 -303,19740
+(Waldweg im Tegeler Forst)	2::temp -1527,18645 -671,19408 -303,19740 -183,19831 97,20103
+(Försterweg - Schwarzer Weg)	2::temp -183,19831 -135,19832 6,19817
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -9282,8 +9305,8 @@ Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee)
 #: source_id: adac:584917438 (Niederneuendorfer Allee)
-#: also_indoor: traffic (T,H[teilweise])
-#: last_checked: 2025-06-28 (research) vvv
+#: also_indoor: traffic (T,H,G)
+#: last_checked: 2025-06-29 (research) vvv
 #: check_frequency: 3d vvv
 Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
 # REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
@@ -9340,6 +9363,31 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
          'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, vom 26.06.2025 16:19 bis 14.07.2025 23:59',
          'type' => 'gesperrt',
          'until' => 1752530340
+       },
+       {
+         'data' => '#: also_indoor: traffic (G,H,T)
+#: last_checked: 2025-06-29
+#: next_check: 2025-07-24 (Halteverbotsschilder)
+	q4::inwork; 17747,7322 17647,7280
+',
+         'from' => 1751183543,
+         'id' => 4375,
+         'text' => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Juli 2025',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
+#: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (bis 20.07.2025)
+#: last_checked: 2025-06-29
+#: next_check: 2025-07-20
+	q3::inwork 15004,10791 14994,10732
+',
+         'from' => 1751183917,
+         'id' => 4376,
+         'text' => 'An den Eiswerken: Bau einer Ampel, Fahrbahn gesperrt, Engstellen, geplant bis 20.07.2025',
+         'type' => 'handicap',
+         'until' => 1753048800
        }
      
 );
