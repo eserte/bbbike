@@ -1805,12 +1805,6 @@ Potsdamer Damm	2 -5319,-3719 -5490,-3666 -5722,-3669 -6119,-3907 -6426,-4014
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
 Horstweg - Nuthestr.	2 -10495,-2787 -10324,-2937 -10250,-2857
 Kleine Gasse	1 -13272,-1168 -13287,-1231
-#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/rehrucken-in-der-spornstrasse-potsdams-einzige-denkmalgeschutzte-strasse-erneuert-13574632.html
-#: osm_watch: way id="9528682" version="18"
-#: osm_watch: note 4723096 2
-#: XXX für Radfahrer mittlerweile in beide Richtungen befahrbar?
-#: next_check: 2025-09-01
-Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10250,-2857 -10321,-2800 -10547,-2606 -10604,-2567 -10900,-2386 -11007,-2259 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
@@ -4011,7 +4005,7 @@ Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13639,14133
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
-#: last_checked: 2025-06-18
+#: last_checked: 2025-06-30
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
@@ -5033,21 +5027,21 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 # REMOVED --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: XXX siehe auch strassen-orig-Eintrag --- #: last_checked: 2020-11-07 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2021-03-01 vvv --- #: valid: -20210301 vvv --- Bauarbeiten Golda-Meir-Steg	2::inwork 7965,14207 7973,14195 7972,14185 --- Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX hier ist ein Zirkus (?), bleibt das dauerhaft --- #: last_checked: 2020-02-22 --- Weg an der Trabrennbahn: gesperrt	2 18671,8092 18744,8121
 # 
-#: next_check_id: PLANCK-2025
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
-#: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
-#: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
-#: by: https://www.deutsches-architekturforum.de/thread/11167-admiralspalast-umbau-und-erweiterung-in-bau/?postID=744785#post744785 (Neubau der Planckstraße, bis IV. Quartal 2024)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-am-admiralspalast-planckstra%C3%9Fe.866/post-23402
-#: XXX wann sind die Bauarbeiten beendet?
-#: osm_watch: note 3954448 5
-#: osm_watch: way id="195397561" version="20"
-#: last_checked: 2025-06-13
-#: check_frequency: 30d
-# REMOVED --- #: check_frequency: 45d
-# REMOVED --- #: next_check: 2024-12-31
-Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670 9435,12698 9429,12728 9402,12792 9386,12833 9375,12911
-# REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
+# REMOVED --- #: next_check_id: PLANCK-2025
+# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
+# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
+# REMOVED --- #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
+# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/11167-admiralspalast-umbau-und-erweiterung-in-bau/?postID=744785#post744785 (Neubau der Planckstraße, bis IV. Quartal 2024)
+# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-am-admiralspalast-planckstra%C3%9Fe.866/post-23402
+# REMOVED --- #: XXX wann sind die Bauarbeiten beendet?
+# REMOVED --- #: osm_watch: note 3954448 6
+# REMOVED --- #: osm_watch: way id="195397561" version="20"
+# REMOVED --- #: last_checked: 2025-06-13
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- # REMOVED --- #: check_frequency: 45d
+# REMOVED --- # REMOVED --- #: next_check: 2024-12-31
+# REMOVED --- Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670 9435,12698 9429,12728 9402,12792 9386,12833 9375,12911
+# REMOVED --- # REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
 # 
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10973,12611 10951,12637
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- Tor	BNP:5 14692,10867
@@ -5594,7 +5588,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: osm_watch: node id="245006076" version="6"
 #: osm_watch: node id="245006075" version="7"
 #: osm_watch: way id="1272587928" version="2"
-#: last_checked: 2025-06-25
+#: last_checked: 2025-06-30 (daf)
 # REMOVED --- #: check_frequency: 720d
 # REMOVED --- #: next_check: 2025-06-30 (Baustellenschild)
 Löwenbrücke: Neubau	2:inwork 6417,11796 6438,11784

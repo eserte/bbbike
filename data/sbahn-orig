@@ -299,16 +299,17 @@ S9,S45	SC::Tu 15731,-4812 16358,-4962 16848,-4904 17808,-4496
 #: by: https://sbahn.berlin/aktuelles/artikel/interimsbahnhof-fuer-s15-wird-fertig-aber-s-bahnen-fahren-erst-2025/ (kein Termin mehr)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-s-bahn-strecke-fuer-berlin-darum-verzoegert-sich-die-eroeffnung-der-linie-s15-li.2301627 (Sep oder Dez 2025?)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/s15-verzoegert-sich-erneut_a436823
+#: by: https://www.tagesspiegel.de/berlin/fex-gestrichen-ersatzlinie-verzogert-sich-berlins-norden-wird-vom-flughafen-ber-abgehangt-13931149.html (Frühjahr 2026)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/webcam6.jpg (anscheinend seit Juni 2024 keine aktuellen Bilder mehr)
 #: osm_watch: note 4308592 5
 #: XXX ursprünglich geplant als S21, wird aber als Linie S15 eröffnet
 #: XXX 2025 noch kein Linienbetrieb auf dem Abzweig nach Westhafen
-#: last_checked: 2025-02-18 (sbahn website) vvv
-#: check_frequency: 210d vvv
-# REMOVED --- #: next_check: 2025-03-31 vvv
+#: last_checked: 2025-06-30 (Tsp) vvv
+# REMOVED --- #: check_frequency: 210d vvv
+#: next_check: 2026-06-01 vvv
 S15	SBau::Tu 8061,13303 7810,13720
 S15	SBau 7810,13720 7360,14411 7329,14630 7350,14803 7447,14907
 S15	SBau 7360,14411 7199,14524 7052,14556 6944,14562
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^

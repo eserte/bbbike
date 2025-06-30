@@ -322,14 +322,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-06-26
+#: last_checked: 2025-06-30
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-06-22
+#: last_checked: 2025-06-30
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -377,7 +377,7 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
-#: osm_watch: node id="9882573114" version="2"
+#: osm_watch: node id="9882573114" version="3"
 #: osm_watch: node id="7023223791" version="3"
 #: last_checked: 2025-04-21 (mapillary)
 #: check_frequency: 120d
@@ -3927,7 +3927,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: XXX Ausgeschaltet, weil die Zufahrt zum Tunnel gesperrt ist.
 #: last_checked: 2025-01-02
-#: check_frequency: 180d
+#: check_frequency: 210d
 #: next_check: 2028-01-01
 	F0 3944,6901
 #: by: mapillary
