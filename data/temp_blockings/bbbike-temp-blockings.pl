@@ -22384,7 +22384,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-06-18 (traffic)
+#: last_checked: 2025-07-01 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -43229,10 +43229,12 @@ EOF
 #: source_id: viz2021:13.302665,52.521272,12.08.2024,07:00 (bis 30.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.30625,52.52024,06.01.2025,06:46 (bis 30.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.30212,52.52129,10.03.2025,09:14 (bis 30.06.2025) (inaktiv)
-#: source_id: viz2021:13.30212,52.52129,26.06.2025,17:27 (bis 31.12.2025)
+#: source_id: viz2021:13.30212,52.52129,26.06.2025,17:27 (bis 31.12.2025) (vorfristig inaktiv)
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
+#: last_checked: 2025-07-01 (traffic)
+#: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
 	q4::inwork 3450,12722 3370,12725 3291,12721
 EOF
      },
@@ -43934,7 +43936,7 @@ EOF
 #: source_id: viz2021:13.620136,52.523103,17.10.2024,09:00 (bis 29.11.2024) (bis 28.11.2024, weitere Maßnahmen bis Mitte 2025) (inaktiv)
 #: source_id: viz2021:13.619636,52.522503,16.01.2025,13:00 (bis 03.03.2025 + Gesamtbaumaßnahme bis Mai 2025) (bis 26.03.2025 + ...) (bis 30.04.2025 + ...) (bis 11.06.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
-#: source_id: viz2021:13.620312,52.523169,16.06.2025,10:00 (nach Norden gewandert, bis 04.07.2025)
+#: source_id: viz2021:13.620312,52.523169,16.06.2025,10:00 (nach Norden gewandert, bis 04.07.2025) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,16.06.2025,10:00 (bis 04.07.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
@@ -44480,13 +44482,14 @@ EOF
 EOF
      },
      { from  => 1717909200, # 2024-06-09 07:00
-       until => $isodate2epoch->("2025-07-02 17:00:00"), # 1722265200, # 2024-07-29 17:00
-       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 02.07.2025 17:00',
+       until => $isodate2epoch->("2025-08-29 17:00:00"), # 1722265200, # 2024-07-29 17:00
+       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.08.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025)
+#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
+#: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025)
 #: osm_watch: way id="1303423090" version="3"
-#: note: laut osm opening_date=2025-08-01; laut Baustellenschild der Wasserbetriebe bis Mai 2025
+#: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025
 	q3::inwork 10573,17566 10466,17464
 EOF
      },
@@ -45153,16 +45156,18 @@ EOF
        until => undef, # 1734532309, # undef, # 1726351200, # 2024-09-15 00:00
 #      text  => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, voraussichtlich bis 14.9.2024, evtl. wird verlängert',
 #      text  => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, Ende der Bauarbeiten unbekannt',
-       text  => 'Rochowstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+#      text  => 'Rochowstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+       text  => 'Rochowstr.: Asphaltierungsarbeiten fertig, Fahrbahn aber weiterhin offiziell gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: also_indoor: traffic (H,B,T,G) --- #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10. --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-12-18 --- #: check_frequency: 14d --- #: next_check: 2024-10-31
 #	q4::inwork; 14103,10489 14170,10675
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: note: da die Asphaltierungsarbeiten fertig sind und nur die Absperrungen noch nicht entfernt, wird aus q4 -> q3
 #: also_indoor: traffic (H,T)
-#: last_checked: 2025-06-28 (Asphaltierungsarbeiten fertig)
+#: last_checked: 2025-07-01 (Asphaltierungsarbeiten fertig, nicht nicht offen)
 #: check_frequency: 3d
-	q4::inwork 14103,10489 14170,10675
+	q3::inwork 14103,10489 14170,10675
 EOF
      },
      { from  => undef, # 
@@ -45968,11 +45973,11 @@ EOF
 EOF
      },
      { from  => 1729404000, # 2024-10-20 08:00
-       until => 1751292000, # 2025-06-30 16:00
-       text  => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 30.06.2025 16:00 Uhr',
+       until => $isodate2epoch->("2025-07-07 17:00:00"), # 1751292000, # 2025-06-30 16:00
+       text  => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 07.07.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/161 (bis 30.06.2025)
+#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025)
 	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
 EOF
      },
@@ -47713,20 +47718,25 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1750741521, # undef, # XXX
-       text  => 'Heesestr.: Sperrung der Fahrbahn an der Kreuzung Althoffstr., Ende der Bauarbeiten unbekannt',
+       until => undef, # 1750741521, # undef, # XXX
+#      text  => 'Heesestr.: Sperrung der Fahrbahn an der Kreuzung Althoffstr., Ende der Bauarbeiten unbekannt',
+       text  => 'Heesestr./Südendstr.: Sperrung der Fahrbahn zwischen Althoffstr. und Südendstr. sowie im Kreuzungsbereich Südendstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (ex-G,T)
+#: also_indoor: traffic (re-G[teilweise],T[teilweise],W[teilweise])
 #: osm_watch: way id="1237862681" version="5"
-#: osm_watch: way id="4871838" version="28"
 #: osm_watch: way id="1237862680" version="2"
 #: osm_watch: way id="1237862682" version="2"
 #: osm_watch: note 4544910 5
 #: osm_watch: note 4544909 3
 #: osm_watch: note 4544105 3
+#: osm_watch: way id="4871838" version="29"
+#: osm_watch: way id="1237862688" version="2"
+#: osm_watch: note 4832179 4
 # REMOVED (nirgendwo mehr aufgezeichnet) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2025-06-14 (traffic) --- #: check_frequency: 14d
-	q3::inwork 5280,5714 5276,5622 5274,5557
+# REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
+	q4::inwork 5276,5622 5274,5557
+	q3::inwork 5274,5557 5466,5523
 EOF
      },
      { from  => 1745318220, # 2025-04-22 12:37
@@ -48161,15 +48171,19 @@ EOF
        data  => <<'EOF',
 #: next_check_id: PAULSBORNER-2025
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv)
+#: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 15.07.2025)
+#: source_id: viz2021:13.29402,52.48994,01.07.2025,10:03 (Salzbrunner Str., bis 15.07.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
 #: last_checked: 2025-06-26 (mapillary) vvv
-#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: check_frequency: 14d (traffic) vvv
+#: next_check: 2025-07-15 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 EOF
@@ -48537,6 +48551,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-einschrankungen-bei-der-s-bahn-aufgehoben--tegeler-forst-bleibt-gesperrt-13921543.html
 #: by: https://taz.de/Sturmfolgen-im-Berliner-Nordwesten/!6096928/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1575315.php (ab Mitte KW 27/2025 beginnen die Aufräumarbeiten im Waldbereich)
+#: by: https://www.tagesspiegel.de/berlin/aufraumarbeiten-nach-unwettern-in-berlin-tegeler-und-spandauer-forst-bleiben-wochenlang-gesperrt-13935625.html
 #: last_checked: 2025-06-30 (research) vvv
 #: check_frequency: 4d vvv
 #: note: nördlicher Abschnitt
@@ -48580,25 +48595,26 @@ EOF
        until => undef,
        text  => 'Spandauer Forst: wegen Sturmschäden gesperrt',
        type  => 'gesperrt',
+       accept_multi_feature_distance => 2000,
 # data erstellt mit dem folgenden Kommando:
 #    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner =(printf "\tX -8125,19769 -6694,21170 -2758,20609 -2396,19250 -2933,19226 -2740,18550 -3253,18290 -3971,18501 -4135,18006 -4243,17771 -5010,17608 -6368,17879 -6519,17348 -6984,17415 -7099,19268 -7962,18960\n") -onlyenclosed data/strassen data/landstrassen | perl -pe 's/\t\S+/\t2::temp/' >| /tmp/blocked.bbd
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
-#: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24
-#: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsvzp4wvrk2n (Hauptstraßen wieder offen)
+#: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee)
+#: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee)
-#: source_id: bvg2024:x36#HIM_FREETEXT_290574
+#: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-06-29 (research) vvv
+#: last_checked: 2025-07-01 (VIZ) vvv
 #: check_frequency: 3d vvv
-Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
+# REMOVED (wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
 # REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
-Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
+# REMOVED (wieder offen) --- Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
 (Uferweg an der Havel)	2::temp -2723,19255 -2746,19418 -2763,19450 -2780,19530 -2870,19589 -2905,19636 -2908,19715
 Radelandstr.	2::temp -6518,17539 -6608,17562
 (Radelandstr. - Mauerweg)	2::temp -6608,17562 -6910,17684 -6954,17688
 Oberjägerweg	2::temp -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113 -5209,19643 -5024,19831 -4844,20024 -4559,20331 -4485,20420
-Papenberger Weg	2::temp -2937,19008 -2904,19019
 (Niederneuendorfer Allee - Pappelweg)	2::temp -2821,18620 -2870,18553 -2919,18506 -2965,18488 -2987,18438
 (Mauerweg Spandau)	2::temp -2908,19715 -2966,19746 -3012,19757 -3161,19627
 #: note: bei Mapillary (2025-06-28) sind viele umgestürzte Bäume zu sehen
@@ -48663,6 +48679,17 @@ EOF
 #: last_checked: 2025-06-29
 #: next_check: 2025-07-20
 	q3::inwork 15004,10791 14994,10732
+EOF
+     },
+     { from  => $isodate2epoch->("2025-06-28 15:25:00"),
+       until => $isodate2epoch->("2025-07-04 18:00:00"),
+       text  => 'Schönhauser Str.: Wasserrohrbruch, Sperrung, bis zum 04.07.2025',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lssgcmy3zc22
+#: source_id: viz2021:13.380013,52.599631,28.06.2025,15:25 (hier nur Kfz-Verkehr, bis 04.07.2025) (nun auch Radverkehr)
+#: source_id: bvg2024:124#HIM_FREETEXT_290896
+	q4::inwork 8498,21578 8717,21429
 EOF
      },
     );

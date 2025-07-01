@@ -470,6 +470,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/unterlassungsaufforderung-an-bezirksamt-berliner-anwohner-gehen-rechtlich-gegen-strassenausbau-fur-schwerlaster-vor-13788946.html
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7125 (Antrag)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/anwohner-blamieren-verkehrsbehorden-gutachten-mangelhaft-ausbau-der-kastanienallee-in-berlin-pankow-gestoppt-13899433.html (Baustart abgesagt)
+#: by: https://www.morgenpost.de/bezirke/pankow/article409335167/verkehr-in-berlin-pankow-heilloser-streit-um-krisenprojekt-kastanienallee-aber-kein-abbruch.html
 #: source_id: 2147346774 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: source_id: viz2021:13.388829,52.59131,05.01.2021,07:00 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: osm_watch: way id="36954368" version="19"
@@ -1031,14 +1032,14 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 # REMOVED (404) --- #: by: http://www.johthal.de/instar-video.html (Webcam)
 #: source_id: 2147345841 (bis 30.9.2021) (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_204650_LMS-BR_72 (bis 30.9.2021) (inaktiv)
-#: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024) (bis 31.03.2025) (bis 18.02.2025) (bis 31.03.2025) (bis 30.05.2025) (bis 30.06.2025) (bis 31.07.2025)
+#: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024) (bis 31.03.2025) (bis 18.02.2025) (bis 31.03.2025) (bis 30.05.2025) (bis 30.06.2025) (bis 31.07.2025) (bis 07.08.2025)
 #: source_id: viz2021:13.51205,52.45485,14.06.2024,14:55 (bis 15.08.2024) (inaktiv)
 #: source_id: viz2021:13.51205,52.45485,18.02.2025,14:59 (bis 30.05.2025) (inaktiv)
 #: source_id: viz2021:13.51205,52.45485,25.06.2025,17:54 (bis 31.07.2025) (vorfristig inaktiv)
 #: XXX außerdem wird es für Rechtsabbieger Michael-Brückner-Str. -> Sterndamm einen asphaltierten Radweg geben
 #: last_checked: 2025-06-27 (krickstadt)
 #: check_frequency: 30d
-#: next_check: 2025-07-31 (BVG, VIZ-Verkehrsmeldung)
+#: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
 # REMOVED (hier realisiert) --- Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17695,5394 17736,5441
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17736,5441 17754,5460 17765,5469 17822,5524 17886,5587
 # 
@@ -7284,6 +7285,7 @@ Osdorfer Str.: neue parallele Straße wird gebaut, alte Straße wird zum Radweg	?:
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/hochhausplane-kommen-nicht-voran-berliner-senat-will-bezirk-beim-gleisdreieckpark-entmachten-13028740.html
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/hochhausplane-am-gleisdreieckpark-bahn-und-verkehrsverwaltung-widersprechen-investor-13110988.html
 #: by: https://entwicklungsstadt.de/urbane-mitte-senat-entmachtet-bezirk-und-denkt-ueber-wohnungen-nach/
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1575862.php
 #: last_checked: 2025-04-27
 #: check_frequency: 1080d
 Bebauungsplan VI-140cab "Urbane Mitte Süd" (zwischen Gleisdreieckpark und Technikmuseum): wird die Trebbiner Str. verlängert und entsteht eine Verbindung für Radfahrer? Genaue Lage?	? 8521,10268 8427,10120 8360,10133
@@ -9282,6 +9284,14 @@ Hegemeisterbrücke: Neubau geplant	? 30081,5231 30081,5220
 Flughafensee: Instandsetzung der Brücke geplant	? 2829,18126 2797,18126 2790,18139
 # 
 Bad Belzig: Straßennamen? Qualität? Einbahnstraßen auch für Radfahrer gültig?	? -44207,-30693 -44211,-30656 -44215,-30630 -44263,-30588 -44236,-30502 -44204,-30367 -44189,-30306 -44134,-30175
+# 
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/planckstrasse/
+#: osm_watch: note 3954448 9
+#: osm_watch: note 3954746 3
+#: osm_watch: way id="195397561" version="20"
+#: last_checked: 2025-06-30 (osm note)
+#: check_frequency: 14d
+Planckstr.: wird hier eine Fahrradstraße entstehen?	? 9376,12911 9375,12911 9386,12833 9402,12792 9429,12728 9435,12698 9441,12670
 # 
 #: section ^^^
 #: ignore ^^^
@@ -11917,7 +11927,7 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://entwicklungsstadt.de/grossprojekt-gartenfeld-bau-der-bruecke-ueber-den-schifffahrtskanal-startet-2025/
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12841 (Vorlage zur Kenntnisnahme)
 #: osm_watch: relation id="10290512" version="5"
-#: osm_watch: way id="1306187833" version="8"
+#: osm_watch: way id="1306187833" version="9"
 #: osm_watch: way id="1306187834" version="18"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
 #: last_checked: 2025-06-23 (osm)

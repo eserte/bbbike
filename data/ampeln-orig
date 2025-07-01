@@ -39,10 +39,12 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 # 
 #: next_check_id: PAULSBORNER-2025
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv)
+#: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 15.07.2025)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: last_checked: 2025-06-25
-#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: next_check: 2025-07-15 (VIZ-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20250619
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
@@ -364,7 +366,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: last_checked: 2025-06-21
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
-#: next_check: 2025-07-31 (BVG)
+#: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
 #: note: Anforderungsampel
 Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
@@ -373,7 +375,7 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 #: last_checked: 2025-06-21
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
-#: next_check: 2025-07-31 (BVG)
+#: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
 Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
@@ -430,7 +432,8 @@ Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
 #: note: Anforderungsampel, man bekommt zügig grün
-#: last_checked: 2025-03-08
+#: source_id: viz2021:13.56016,52.48441,01.07.2025,18:32 (Ampelanlage außer Betrieb (also existiert sie noch))
+#: last_checked: 2025-07-01 (VIZ-Verkehrsmeldung)
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
