@@ -23,7 +23,6 @@ Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer fr
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
-Burgstr.: Abschnitt mit Einbahnstraßenregelung	q3::inwork; 10166,12777 10132,12941
 (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
 (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
@@ -33,7 +32,6 @@ Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17822,5524 17765,5469
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -2623,7 +2621,7 @@ Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,1
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17668,8696
 (Weg in der Parkstadt Karlshorst): einige Fußgänger, Spielplatz in der Nachbarschaft	q2 17449,8720 17460,8735 17631,8743 17674,8738
-(Weg in der Parkstadt Karlshorst): einige Fußgänger	q1 17674,8738 17810,8700
+(Weg in der Parkstadt Karlshorst): einige Fußgänger	q1 17674,8738 17810,8700 17851,8662
 (Uferweg): einige Fußgänger	q2 11821,11733 11863,11670 11962,11596
 Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 25573,1609 25438,1638 25399,1629
 (Lea-Grundig-Str./Jan-Petersen-Str. - Radweg an der Straßenbahn): einige Fußgänger	q1 21031,16217 21000,16238
@@ -2692,6 +2690,7 @@ Loerkesteig: Bordstein	q3 2956,24373 2969,24382
 (Siegfriedshöfe): Gewerbehof	q3 16801,12197 16745,12213 16665,12218
 (An der Villa Bolle - Am Marienhain): Fußgänger	q3 22668,3125 22662,3200 22662,3205
 Straße 36: sehr schmal, kurvig	q4 30073,2814 30066,2831 30071,2843
+Edisonstr.: Straßenbahnhaltestelle, Fußgänger, eng	q2; 17979,6379 17963,6313
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

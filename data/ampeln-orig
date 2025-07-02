@@ -32,7 +32,7 @@ Paulsborner Str./Auguste-Viktoria-Str./Lynarstr.: Gegenverkehrsstrecke	X::inwork
 Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
-#: last_checked: 2025-06-04
+#: last_checked: 2025-07-02
 #: check_frequency: 180d
 #: next_check_id: 2027-05-09 (Ausschreibungsunterlagen)
 Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
@@ -73,9 +73,9 @@ Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 17037,4794
 #: valid ^^^
 #: next_check ^^^
 # 
-#: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten) (bis 04.06.2025 + ...) (bis 03.07.2025 + ...)
+#: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten) (bis 04.06.2025 + ...) (bis 03.07.2025 + ...) (bis 16.08.2025 + ...)
 #: source_id: viz2021:13.26522,52.45642,15.05.2025,15:55 (bis 04.06.2025) (inaktiv)
-#: next_check: 2025-07-03
+#: next_check: 2025-08-16
 Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # 
 # REMOVED --- #: source_id: viz2021:13.202454,52.523618,18.03.2025,10:00 (bis 11.04.2025) (inaktiv)
@@ -432,7 +432,7 @@ Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
 #: note: Anforderungsampel, man bekommt zügig grün
-#: source_id: viz2021:13.56016,52.48441,01.07.2025,18:32 (Ampelanlage außer Betrieb (also existiert sie noch))
+#: source_id: viz2021:13.56016,52.48441,01.07.2025,18:32 (Ampelanlage außer Betrieb (also existiert sie noch)) (inaktiv)
 #: last_checked: 2025-07-01 (VIZ-Verkehrsmeldung)
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
@@ -4092,7 +4092,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
-#: last_checked: 2025-06-14
+#: last_checked: 2025-07-02
 #: check_frequency: 90d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

@@ -3013,18 +3013,20 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
 #: osm_watch: way id="152466403" version="21"
-#: osm_watch: note 4444162 4
+#: osm_watch: note 4444162 5
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
-#: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str. und Lianenweg, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle
+#: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
+#: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung)
-	q4::inwork; 20302,1613 20028,1673 19898,1704 19766,1796
+#: historical_note: früher q4::inwork; aber es gilt wohl (mittleweile?) in beide Richtungen
+	q4::inwork 20302,1613 20028,1673 19898,1704 19766,1796
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 ',
          'from' => 1707001200,
          'id' => 2328,
-         'text' => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., bis Ende August 2025, voraussichtlich wird verlängert',
+         'text' => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., bis Ende August 2025, voraussichtlich wird bis Dezember 2025 verlängert',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1767200400
        },
        undef,
        undef,
@@ -4560,7 +4562,7 @@ Münsterberger Weg	q3::inwork 24029,11363 23883,11416
 #: osm_watch: note 4813149 1
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-06-26
+#: last_checked: 2025-07-02
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 	2::inwork 16539,10097 16353,10207 16148,10329 15758,10578
@@ -5835,7 +5837,7 @@ Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-06-30
+#: last_checked: 2025-07-02
 #: check_frequency: 30d
 #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6474,7 +6476,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (H,G,T,W)
-#: last_checked: 2025-06-26
+#: last_checked: 2025-07-02
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
@@ -6533,7 +6535,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
-#: last_checked: 2025-06-01
+#: last_checked: 2025-06-06 (okas)
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -7317,7 +7319,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        {
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025)
-#: osm_watch: way id="1303423090" version="3"
+#: osm_watch: way id="1303423090" version="4"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025
 	q3::inwork 10573,17566 10466,17464
 ',
@@ -7570,7 +7572,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #	q4::inwork; 14103,10489 14170,10675
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: da die Asphaltierungsarbeiten fertig sind und nur die Absperrungen noch nicht entfernt, wird aus q4 -> q3
-#: also_indoor: traffic (H,T)
+#: also_indoor: traffic (H,T,G)
 #: last_checked: 2025-07-01 (Asphaltierungsarbeiten fertig, nicht nicht offen)
 #: check_frequency: 3d
 	q3::inwork 14103,10489 14170,10675
@@ -7670,11 +7672,11 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        {
          'data' => '#: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
-#: osm_watch: way id="1083535036" version="10"
+#: osm_watch: way id="1083535036" version="11"
 #: osm_watch: way id="1119255054" version="8"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-06-14
+#: last_checked: 2025-06-30 (osm)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -8354,7 +8356,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 #: source_id: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
-#: last_checked: 2025-06-18 vvv
+#: last_checked: 2025-07-02 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
@@ -8430,11 +8432,12 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (T)
-#: last_checked: 2025-06-26
+#: also_indoor: traffic (T,H)
+#: last_checked: 2025-07-02
 #: check_frequency: 14d
 #: next_check: 2025-07-04 (Halteverbotsschilder)
-	2::inwork 17471,9688 17587,9655
+# REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
+	2::inwork 17587,9655 17668,9632
 ',
          'from' => undef,
          'id' => 4270,
@@ -8656,7 +8659,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Trafficmeldungen scheinen ungenau zu sein
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: nächste Sperrung: mehrere mit "Termin folgt"
-#: last_checked: 2025-06-30 (website) vvv
+#: last_checked: 2025-07-02 (Flemingstr.) vvv
 #: check_frequency: 7d (website checks) vvv
 #: next_check: 2025-07-18 (Radickestr., ADAC-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025)
@@ -8714,11 +8717,11 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        {
          'data' => '#: also_indoor: traffic (re-G[teilweise],T[teilweise],W[teilweise])
 #: osm_watch: way id="1237862681" version="5"
-#: osm_watch: way id="1237862680" version="2"
+#: osm_watch: way id="1237862680" version="3"
 #: osm_watch: way id="1237862682" version="2"
-#: osm_watch: note 4544910 5
-#: osm_watch: note 4544909 3
-#: osm_watch: note 4544105 3
+#: osm_watch[closed]: note 4544910 5
+#: osm_watch[closed]: note 4544909 3
+#: osm_watch[closed]: note 4544105 3
 #: osm_watch: way id="4871838" version="29"
 #: osm_watch: way id="1237862688" version="2"
 #: osm_watch: note 4832179 4
@@ -9223,6 +9226,8 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://taz.de/Sturmfolgen-im-Berliner-Nordwesten/!6096928/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1575315.php (ab Mitte KW 27/2025 beginnen die Aufräumarbeiten im Waldbereich)
 #: by: https://www.tagesspiegel.de/berlin/aufraumarbeiten-nach-unwettern-in-berlin-tegeler-und-spandauer-forst-bleiben-wochenlang-gesperrt-13935625.html
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1576243.php
+#: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/unwetter-hinterlasst-grosse-verwustung-im-berliner-norden-bezirk-reinickendorf-zahlt-750-schadensmeldungen-13951765.html
 #: last_checked: 2025-06-30 (research) vvv
 #: check_frequency: 4d vvv
 #: note: nördlicher Abschnitt
@@ -9250,7 +9255,7 @@ Ruppiner Chaussee	2::temp 1445,21216 1427,21237 1347,21428 1254,21718 1146,21901
 #: note: Unklar: offiziell wohl nicht abgesperrt, aber man kann von Forstarbeitern abgewiesen werden
 Schwarzer Weg (Tegel)	2::temp 605,20714 511,20600 436,20558 240,20457 195,20405 97,20103 6,19817 -13,19739 -51,19654 -134,19600 -305,19507 -519,19233 -585,19132 -620,19063 -629,18977 -629,18866 -639,18796 -754,18644 -847,18577 -869,18526 -885,18446 -930,18337 -968,18301 -1082,18165
 (Schwarzer Weg - Jörsstr.)	2::temp -847,18577 -932,18558 -1124,18480 -1307,18408
-(Zufahrt Restaurant Toulouse)	2::temp 6,19817 72,19790
+(Zufahrt ehemaliges Restaurant Toulouse)	2::temp 6,19817 72,19790
 (Zufahrt Villa Borsig)	2::temp 436,20558 426,20420 443,20357 430,20338
 (Uferweg am Tegeler See)	2::temp -984,18136 -934,18284 -930,18337
 (Uferweg am Tegeler See)	2::temp -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790 119,19931 167,19978 193,20024 209,20083 226,20116 222,20175 248,20233 324,20350 430,20338
@@ -9271,9 +9276,9 @@ Schwarzer Weg (Tegel)	2::temp 605,20714 511,20600 436,20558 240,20457 195,20405 
          'accept_multi_feature_distance' => 2000,
          'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsvzp4wvrk2n (Hauptstraßen wieder offen)
-#: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee)
+#: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
-#: source_id: adac:584917438 (Niederneuendorfer Allee)
+#: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: traffic (T,H,G)
 #: last_checked: 2025-07-01 (VIZ) vvv
@@ -9337,7 +9342,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        },
        {
          'data' => '#: also_indoor: traffic (G,H,T)
-#: last_checked: 2025-06-29
+#: last_checked: 2025-07-02
 #: next_check: 2025-07-24 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
 ',
@@ -9350,13 +9355,17 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (bis 20.07.2025)
-#: last_checked: 2025-06-29
+#: last_checked: 2025-07-02
 #: next_check: 2025-07-20
-	q3::inwork 15004,10791 14994,10732
+# REMOVED ---	q3::inwork 15004,10791 14994,10732
+## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\\t3nocross 15081,10775 15004,10791 14927,10807\\n") | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\'
+#       3nocross::ignrte 15081,10775 15004,10791 14927,10807
+Hauptstr. -> An den Eiswerken	3::inwork 15081,10775 15004,10791 14994,10732
+An den Eiswerken -> Hauptstr.	3::inwork 14994,10732 15004,10791 14927,10807
 ',
          'from' => 1751183917,
          'id' => 4376,
-         'text' => 'An den Eiswerken: Bau einer Ampel, Fahrbahn gesperrt, Engstellen, geplant bis 20.07.2025',
+         'text' => 'Haupstr./An den Eiswerken: Überfahrt gesperrt, möglicherweise bis 20.07.2025',
          'type' => 'handicap',
          'until' => 1753048800
        },
@@ -9371,6 +9380,30 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
          'text' => 'Schönhauser Str.: Wasserrohrbruch, Sperrung, bis zum 04.07.2025',
          'type' => 'handicap',
          'until' => 1751644800
+       },
+       {
+         'data' => '#: next_check_id: FUNKWERK-2025
+#: also_indoor: traffic (none)
+#: last_checked: 2025-07-02
+#: check_frequency: 60d
+#: next_check: 2025-10-31
+	q4::inwork 22456,3889 22666,3888
+',
+         'from' => 1750888800,
+         'id' => 4378,
+         'text' => 'Charlottenstr.: Fahrbahn zwischen Karlstr. und Wendenschloßstr. gesperrt, voraussichtlich bis Ende Oktober 2025',
+         'type' => 'handicap',
+         'until' => 1761930000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.466152,52.551312,05.05.2025,07:00 (bis 29.08.2025)
+	q4::inwork 14522,16260 14628,16249
+',
+         'from' => 1746334800,
+         'id' => 4379,
+         'text' => 'Gartenstr.: Anbindung Indira-Gandhi-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 29.08.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1756479600
        }
      
 );

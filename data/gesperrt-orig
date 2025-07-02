@@ -1320,7 +1320,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="14"
-#: last_checked: 2025-05-20
+#: last_checked: 2025-07-02
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1748,6 +1748,9 @@ Potsdamer Str.: Mittelstreifen	3nocross 669,3119 786,3090 820,3081
 Kreisverkehr Zur Alten Flussbadeanstalt	1 16389,9633 16388,9614 16376,9602 16355,9603 16355,9622 16368,9632 16389,9633
 # 
 Filandastr.: Mittelstreifen	3nocross 5643,5301 5610,5227 5583,5179
+# 
+#: note: Bordstein nur auf der südlichen Fahrbahnseite
+Rudower Str./Neudecker Weg: Bordstein, Grünstreifen	3nocross 18491,2128 18396,1990 18361,1926
 # 
 #: section ^^^
 ######################################################################
@@ -4235,6 +4238,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: by: https://edge.tech/de/buildings/edge-friedrichspark-berlin (Fertigstellung Q1 2026)
 #: by: https://entwicklungsstadt.de/neubauprojekt-an-der-strasse-der-pariser-kommune-nach-abriss-des-plattenbaus-startet-das-bauvorhaben/
 #: by: https://entwicklungsstadt.de/buerokomplex-edge-friedrichspark-installation-der-fassade-beginnt/
+#: by: https://entwicklungsstadt.de/friedrichshain-kreuzberg-fuenf-stadtentwicklungsprojekte-im-ueberblick/
 #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
@@ -4415,7 +4419,7 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 # 
 #: next_check_id: MARIENUFER-2023
 #: osm_watch: way id="1272560911" version="2"
-#: last_checked: 2025-06-18
+#: last_checked: 2025-07-02
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 # REMOVED (hier nicht mehr) --- An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22668,3125 22546,3115
@@ -4449,7 +4453,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-06-29
+#: last_checked: 2025-07-02
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4457,7 +4461,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-06-18 vvv
+#: last_checked: 2025-07-02 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4495,7 +4499,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-06-29
+#: last_checked: 2025-07-02
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4600,13 +4604,13 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2025-06-01
+#: last_checked: 2025-06-06 (okas)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2026-10-01
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #
 #: next_check_id: U6-2022
-#: last_checked: 2025-06-01
+#: last_checked: 2025-06-06 (okas)
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
@@ -4677,7 +4681,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: last_checked: 2025-06-29
+#: last_checked: 2025-07-02
 #: check_frequency: 180d
 #: next_check: 2027-06-30
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
@@ -4764,10 +4768,10 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: XXX Es wird einen Anschluss an den Traberweg geben.
 #: osm_watch: note 4522174 2
-#: last_checked: 2025-06-14
-#: check_frequency: 90d
+#: last_checked: 2025-07-02
+#: check_frequency: 60d
 #: next_check: 2025-09-20 (entwicklungsstadt)
-Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700
+Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700 17851,8662
 # REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17639,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17668,8696 17648,8626 17628,8556
 # REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
@@ -4803,7 +4807,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-06-04 (mapillary)
+#: last_checked: 2025-06-18 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673

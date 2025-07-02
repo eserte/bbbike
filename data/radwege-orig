@@ -853,7 +853,7 @@ Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 
 	RW1; 4016,17918 3930,17923
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2025-06-01 vvv
+#: last_checked: 2025-06-06 (okas) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2026-10-01 vvv
 	RW8; 3930,17923 3833,17929 3706,17931 3628,17935 3570,17938
@@ -2342,7 +2342,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-06-29 vvv
+#: last_checked: 2025-07-02 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17611,7690 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
@@ -4440,7 +4440,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: note: früher Richtung Norden benutzungspflichtiger Hochbord, mittlerweile Gehweg für Radfahrer frei
 #: osm_watch: way id="865716506" version="20"
-#: osm_watch: note 4556943 4
+#: osm_watch: note 4556943 6
 #: last_checked: 2025-06-28 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -4543,7 +4543,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2025-06-18 vvv
+#: last_checked: 2025-07-02 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -5679,6 +5679,7 @@ Verbundsteinpflaster	RW9;RW1 -8777,7386 -8675,7148 -8619,7012 -8606,6978 -8603,6
 #: historical_note: früher (bis 2024/2025): gemeinsamer Geh- und Radweg, RW2;
 	RW4; 17991,6431 17979,6379
 #: historical_note: früher (bis 2025/2025): gemeinsamer Geh- und Radweg
+#: note: siehe auch handicap_s-Eintrag
 getrennter Geh- und Radweg, Straßenbahnhaltestelle	RW2; 17979,6379 17963,6313
 gemeinsamer Geh- und Radweg	RW2; 17963,6313 17948,6248 17930,6175 17900,6072
 Gehweg für Radfahrer frei	RW1;RW1 27741,1394 27804,1337 27977,1187 28036,1136
@@ -5689,7 +5690,7 @@ Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 3082
 Verbundsteinpflaster	RW1;RW1 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228 22211,-324 22261,-464 22278,-570 22280,-663 22271,-717 22229,-897 22186,-1060 22146,-1183 22107,-1304 22068,-1422 22027,-1548
 Verbundsteinpflaster	RW1; 22027,-1548 22003,-1625
 	RW3; 22003,-1625 22027,-1548
-breiter Gehweg für Radfahrer frei	RW1; 22162,1067 22208,1103 22287,1165 22367,1230 22453,1294 22493,1325 22560,1377 22655,1450
+breiter Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 22162,1067 22208,1103 22287,1165 22367,1230 22453,1294 22493,1325 22560,1377 22655,1450
 Gehweg für Radfahrer frei	RW1; 22655,1450 22560,1377 22493,1325 22453,1294 22367,1230 22287,1165 22208,1103
 # REMOVED (hier gibt's kein Schild) --- Gehweg für Radfahrer frei	RW1; 22208,1103 22162,1067
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 22655,1450 22570,1607 22549,1644 22455,1812 22448,1824 22421,1872 22388,1947 22378,1970 22324,2093 22271,2214 22246,2272 22205,2367 22195,2390 22153,2482 22118,2559 22083,2637 22074,2656 22058,2700 22050,2736 22004,2904 21967,3102
@@ -6618,7 +6619,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (Einbahnstraße für MIV bis voraussichtlich März 2025) (mittlerweile bis Ende Mai 2025) (mittlerweile bis Ende Juli 2025)
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-sterndamm-bleibt-auf-unbestimmte-zeit-gesperrt-li.2293446 (könnte bis 2026 dauern)
 #: XXX wird vermutlich teilweise als asphaltierter Radweg ausgeführt werden
-#: last_checked: 2025-06-27 (krickstadt)
+#: last_checked: 2025-07-02
 #: check_frequency: 30d
 #: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
 provisorische Radspur	RW4; 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
@@ -8448,7 +8449,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17963,6313
 #: XXX wird es (teilweise?) eine Grünbeschichtung geben? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="38"
-#: last_checked: 2025-06-07 vvv
+#: last_checked: 2025-07-02 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
 #: historical_note: früher (bis 2024/2025): provisorische Radspur

@@ -1046,6 +1046,9 @@ Teltower Damm [Nebenfahrbahn] -> Potsdamer Str.: Mittelstreifen	3::igndisp 712,2
 Kreisverkehr Zur Alten Flussbadeanstalt	1 16389,9633 16388,9614 16376,9602 16355,9603 16355,9622 16368,9632 16389,9633
 Mittelstreifen	3nocross::ignrte 5643,5301 5610,5227 5583,5179
 Albrechtstr. -> Neue Filandastr.: Mittelstreifen	3::igndisp 5616,5182 5610,5227 5583,5179
+Bordstein, Grünstreifen	3nocross::ignrte 18491,2128 18396,1990 18361,1926
+Rudower Str. -> Mauerweg: Bordstein, Grünstreifen	3::igndisp 18491,2128 18396,1990 18470,1920
+Mauerweg -> Neudecker Weg: Bordstein, Grünstreifen	3::igndisp 18470,1920 18396,1990 18361,1926
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3609,7 +3612,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
-Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700
+Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700 17851,8662
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:inwork 8266,14346 8442,14456
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913

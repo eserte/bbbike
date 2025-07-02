@@ -1667,6 +1667,10 @@ Spreeufer	culdesac 18242,6067
 #: note: Es gibt zwar einen Trampelpfad zur Wagner-Régeny-Allee, aber dieser sieht recht illegal aus und man muss über einen Krötenzaun steigen.
 	culdesac 18441,4600
 Sackgasse an der Bahnstrecke	culdesac 10334,-2618
+östliches Sackgassenende	culdesac 18909,2324
+westliches Sackgassenende	culdesac 18711,2338
+#: note: allerdings ist die Grünanlage für Radfahrer verboten
+	culdesac_pseudo 18700,2282
 # 
 ######################################################################
 # culdesac entries which should remain invisible

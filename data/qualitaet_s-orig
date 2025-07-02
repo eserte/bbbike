@@ -302,7 +302,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-06-29
+#: last_checked: 2025-07-02
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -2428,7 +2428,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: XXX möglicherweise Änderung des Wegbelags
 #: osm_watch: way id="176112031" version="17"
 #: osm_watch: way id="640883366" version="6"
-#: last_checked: 2025-06-04
+#: last_checked: 2025-07-02
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15448,10397 15457,10342 15496,10277 15518,10234 15599,10206 15606,10179 15645,10147 15713,10035 15786,9957 15781,9933 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -5886,7 +5886,8 @@ Blütenauer Str.: Asphalt	Q0 21383,7872 21519,8006 21535,8026
 (Melli-Beese-Str. - Landschaftspark Johannisthal): Gehwegplatten	Q1 17880,3963 17883,3976
 Hanuschkestr.: Asphalt	Q0 17827,3549 17892,3550
 Hanuschkestr.: Asphalt	Q0 17892,3537 17974,3536
-Semmelweisstr.: Beton	Q0- 18922,2238 18847,2237 18741,2275 18700,2282
+Semmelweisstr.: Beton	Q0- 18922,2238 18847,2237
+Semmelweisstr.: Asphalt	Q0 18847,2237 18741,2275 18700,2282
 Iselersteig: Asphalt	Q0 18847,2237 18852,2328
 Zur Rothen Laake: Asphalt	Q0 18909,2324 18852,2328 18743,2336 18711,2338
 Am Glinigk: Asphalt	Q0 18741,2275 18743,2336
@@ -13546,12 +13547,12 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17639,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 17588,8413
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2025-06-04
+#: last_checked: 2025-07-02
 #: check_frequency: 90d
 An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17674,8738 17668,8696
-(Weg in der Parkstadt Karlshorst): Asphalt	Q0 17449,8720 17460,8735 17631,8743 17674,8738 17810,8700
+(Weg in der Parkstadt Karlshorst): Asphalt	Q0 17449,8720 17460,8735 17631,8743 17674,8738 17810,8700 17851,8662
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2024-03-09 (architektur-urbanistik) --- #: check_frequency: 30d
 Irmtraud-Morgner-Str.: Asphalt	Q0 17521,8549 17619,8558 17628,8556
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17639,8627
@@ -13812,7 +13813,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2025-06-16 vvv
+#: last_checked: 2025-07-02 vvv
 #: check_frequency: 60d vvv
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^
@@ -34140,5 +34141,7 @@ Einmündungsbereich asphaltiert	Q0 4225,12620
 Einmündungsbereich asphaltiert	Q0 4040,12632
 Einmündungsbereich mit Verbundsteinpflaster	Q0- 3093,9306
 Einmündungsbereich mit Verbundsteinpflaster	Q0- 3196,9193
+Einmündungsbereich betoniert	Q1+ 20138,1042
+Einmündungsbereich betoniert	Q1+ 19940,1265
 #: ignore ^^^
 #: section ^^^
