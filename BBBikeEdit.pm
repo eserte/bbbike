@@ -3989,7 +3989,7 @@ EOF
 	    }
 	    my $end_time_dmy_text = !$end_undef ? "(bis " . POSIX::strftime("%d.%m.%Y", localtime $end_time) . ")" : undef;
 	    $pl_entry .=
-		"       data  => <<EOF,\n" .
+		"       data  => <<'EOF',\n" .
 		(defined $source_id && $source_id !~ /^\s*$/
 		 ? "#: source_id: $source_id" . (defined $end_time_dmy_text ? " $end_time_dmy_text" : "") . "\n"
 		 : "") .
