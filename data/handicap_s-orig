@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-06-28
+#: last_checked: 2025-07-03
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -387,12 +387,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-# REMOVED --- #: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025) (vorfristig inaktiv)
-# REMOVED --- #: note: Halteverbotsschilder bis 30.05.2025; ist weiterhin aktiv, auch wenn die VIZ-Verkehrsmeldung entfernt wurde
-# REMOVED --- #: last_checked: 2025-05-21
-# REMOVED --- #: next_check: 2025-05-30 (Halteverbotsschilder)
-# REMOVED --- #: valid: -20250530
-# REMOVED --- Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
+# REMOVED --- #: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025) (vorfristig inaktiv) --- #: note: Halteverbotsschilder bis 30.05.2025; ist weiterhin aktiv, auch wenn die VIZ-Verkehrsmeldung entfernt wurde --- #: last_checked: 2025-05-21 --- #: next_check: 2025-05-30 (Halteverbotsschilder) --- #: valid: -20250530 --- Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 # 
 # REMOVED --- #: note: Länge etwa 75m; Arbeiten der Wasserbetriebe bis Juni 2025 (laut Baustellenschild)
 # REMOVED --- #: last_checked: 2025-07-01 (mapillary)
@@ -410,7 +405,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: ROTESRATHAUS-2023
 #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
 #: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon; 2025: 2025-06-28 war die Anrampung da
-#: last_checked: 2025-06-28 vvv
+#: last_checked: 2025-07-03 (webcam) vvv
 #: next_check: 2025-07-04 vvv
 #: valid: -20250704 vvv
 #: note: eigentlich für Fußgänger verboten
@@ -1271,7 +1266,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 ### Prenzlauer Berg ###
 # 
-# REMOVED (Hochbauarbeiten dauern noch an, aber die Sperrung wurde aufgehoben) --- #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
+# REMOVED (Hochbauarbeiten dauern noch an, aber die Sperrung wurde aufgehoben; Nachtrag: 2025-07-03: wieder Sperrung, aber auf eine Reaktivierung erstmal verzichtet) --- #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
 # REMOVED --- #: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
 # REMOVED --- #: osm_watch: way id="156800019" version="6"
 # REMOVED --- #: last_checked: 2024-08-21
@@ -3723,7 +3718,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-06-27
+#: last_checked: 2025-07-03
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-

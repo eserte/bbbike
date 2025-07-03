@@ -549,7 +549,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-06-17 vvv
+#: last_checked: 2025-07-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1606,7 +1606,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: note: laut rbb ab 2022-05-19 09:00, bis Anfang 2025; mittlerweile bis 31.12.2024
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
-#: last_checked: 2025-03-25 (mapillary)
+#: last_checked: 2025-07-03
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-01-31 (ex-VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
@@ -2976,7 +2976,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-06-27 vvv
+#: last_checked: 2025-07-03 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3475,13 +3475,17 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="16"
 #: osm_watch: way id="966685279" version="8"
-#: last_checked: 2025-06-10 (mapillary) vvv
+#: last_checked: 2025-07-03 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
-	RW1;RW1 13439,14673 13727,14207 13731,14200 13736,14192 13879,13967
-Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
+#: note: Storkower Str., Richtung Südosten
+alter Asphalt, Schäden, schmaler Unterstreifen gegen parkende Autos	RW1; 13439,14673 13727,14207 13731,14200 13736,14192
+#: historical_note: früher (bis etwa 2025): alter Asphalt, Schäden, schmaler Unterstreifen gegen parkende Autos
+neues Verbundsteinpflaster, trotzdem etwas uneben	RW1; 13736,14192 13879,13967
+alter Asphalt, Schäden, schmaler Unterstreifen gegen parkende Autos, Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
-	RW1; 14006,13761 13971,13818 13879,13967
+#: note: Storkower Str., Richtung Nordwesten
+alter Asphalt, Schäden, kein sichtbarer Unterstreifen gegen parkende Autos	RW1; 14006,13761 13971,13818 13879,13967 13736,14192 13731,14200 13727,14207 13439,14673
 #: last_checked ^^^
 #: check_frequency ^^^
 #: next_check ^^^
@@ -7873,7 +7877,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2025-05-24 (mapillary) vvv
+#: last_checked: 2025-07-03 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015

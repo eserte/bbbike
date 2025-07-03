@@ -40265,7 +40265,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-06-22 (daf)
+#: last_checked: 2025-07-03
 #: check_frequency: 180d
 #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -44662,7 +44662,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-06-27 vvv
+#: last_checked: 2025-07-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45514,13 +45514,15 @@ EOF
 	2::inwork 6007,4340 6147,4329 6210,4325
 EOF
      },
-     { from  => 1725206400, # 2024-09-01 18:00
-       until => 1726084800, # 2024-09-11 22:00
+     { from  => 1752516000, # 2025-07-14 20:00, # 1725206400, # 2024-09-01 18:00
+       until => 1752724800, # 2025-07-17 06:00, # 1726084800, # 2024-09-11 22:00
        dont_check_date => 1,
-       text  => 'Bahnübergang Friedersdorf: Sperrung, vom 02.09.2024 bis 04.09.2024 und vom 09.09.2024 bis 11.09.2024',
+#      text  => 'Bahnübergang Friedersdorf: Sperrung, vom 02.09.2024 bis 04.09.2024 und vom 09.09.2024 bis 11.09.2024',
+       text  => 'Bahnübergang Friedersdorf: Sperrung, vom 15.07.2025 20:00 Uhr bis 17.07.2025 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 246101061 (bis 11.09.2024) (inaktiv)
+#: source_id: 256100684 (bis 17.07.2025)
 	2::inwork 37257,-12796 37241,-12587 37189,-12000
 EOF
      },
@@ -46059,11 +46061,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHWEDTER-2024
-# REMOVED --- #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
+# REMOVED --- #: note: am 2024-11-03 (Sun) abends konnte man die Fahrbahn wieder benutzen (weggeschobene Absperrungen); Fahrradstraßenmarkierung weitgehend fertig
+# REMOVED --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
 #: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025) (+ weitere Arbeiten) (inaktiv)
 # REMOVED --- #: note: am 29.03.2025 (Sa) waren die Barrieren weggeschoben und eine Durchfahrt war inoffiziell möglich ---	q4::inwork 10530,14452 10506,14521 10468,14636
-#: last_checked: 2025-06-16 (mapillary)
-#: next_check: 2025-06-30 (infravelo)
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2025-07-03
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-06-30 (infravelo)
 	q4::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
 EOF
      },
@@ -46459,7 +46464,7 @@ EOF
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
 #: note: Aber eigentlich kann man die Fußgängerampel benutzen...
-#: last_checked: 2025-06-08 vvv
+#: last_checked: 2025-07-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 vvv
 #	q4::inwork; 8453,13611 8572,13671
@@ -46818,7 +46823,7 @@ EOF
 #: note: bei rbb mittlerweile "Bis auf weiteres"
 #: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-06-13 (traffic)
+#: last_checked: 2025-07-03 (traffic)
 #: check_frequency: 21d (traffic)
 #: next_check: 2025-08-19 (adac)
 	q4::inwork 2396,9427 2467,9425 2592,9419
@@ -47813,8 +47818,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2025-07-04 17:00:00"), # undef, # XXX
-       text  => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, voraussichtlich bis 4.7.2025',
+       until => undef, # $isodate2epoch->("2025-07-04 17:00:00"), # undef, # XXX
+       text  => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, voraussichtlich bis 4.7.2025, evtl. wird verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.427246,52.523159,30.04.2025,04:30 (bis 04.07.2025)
@@ -48442,9 +48447,11 @@ EOF
        data  => <<EOF,
 #: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=779073#post779073 (nicht eindeutig; durchgestrichenes Radfahrer-frei-Schild)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
+#: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: also_indoor: traffic (none)
 #: last_checked: 2025-06-17
 #: check_frequency: 90d
+#: next_check: 2026-12-31
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
 EOF
      },
@@ -48558,7 +48565,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1576243.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/unwetter-hinterlasst-grosse-verwustung-im-berliner-norden-bezirk-reinickendorf-zahlt-750-schadensmeldungen-13951765.html
 #: last_checked: 2025-06-30 (research) vvv
-#: check_frequency: 4d vvv
+#: check_frequency: 7d vvv
 #: note: nördlicher Abschnitt
 Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1061,21970 1069,21985 1135,22069
@@ -48612,7 +48619,7 @@ EOF
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: traffic (T,H,G)
 #: last_checked: 2025-07-01 (VIZ) vvv
-#: check_frequency: 3d vvv
+#: check_frequency: 7d vvv
 # REMOVED (wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
 # REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
 # REMOVED (wieder offen) --- Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
@@ -48697,6 +48704,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lssgcmy3zc22
+#: by: https://fahrinfo.vbb.de/him-uploads/1751524936932_Kartenausschnitt_Kastanienallee.png
 #: source_id: viz2021:13.380013,52.599631,28.06.2025,15:25 (hier nur Kfz-Verkehr, bis 04.07.2025) (nun auch Radverkehr)
 #: source_id: bvg2024:124#HIM_FREETEXT_290896
 	q4::inwork 8498,21578 8717,21429

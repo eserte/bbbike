@@ -3969,6 +3969,12 @@ Drängelgitter	BNP:3::trailer=10 14881,13144
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1576769.php (Arbeiten ab 7.7.2025, bislang mit Bauzäunen gesichert)
+#: priority: #C
+#: last_checked: 2025-07-03 (BA-Pressemitteilung)
+#: check_frequency: 180d
+unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
+# 
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026)
 #: osm_watch: way id="1087144824" version="7"
@@ -4000,10 +4006,10 @@ Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwo
 #: osm_watch: way id="804682311" version="4"
 #: osm_watch: note 4734732 4
 #: priority: #C
-#: last_checked: 2025-06-10 (mapillary, Sackgassenschild)
+#: last_checked: 2025-07-03
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 60d
-Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13639,14133 13715,14018
+Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13736,14192 13639,14133 13715,14018
 # 
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
@@ -4214,7 +4220,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-06-27
+#: last_checked: 2025-07-03
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4486,10 +4492,10 @@ Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,1067
 #: by: https://entwicklungsstadt.de/mauerpark-sanierung-erste-teilflaeche-in-pankow-vorzeitig-fertiggestellt/
 #: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
 #: priority: #C
-#: last_checked: 2025-06-08
+#: last_checked: 2025-07-03
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2026-06-30 (BA, entwicklungsstadt)
-#: next_check: 2025-06-24 (BA-Pressemitteilung)
+# REMOVED --- #: next_check: 2025-06-24 (BA-Pressemitteilung)
+#: next_check: 2026-06-30 (BA, entwicklungsstadt)
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -5032,21 +5038,21 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 # REMOVED --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: XXX siehe auch strassen-orig-Eintrag --- #: last_checked: 2020-11-07 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2021-03-01 vvv --- #: valid: -20210301 vvv --- Bauarbeiten Golda-Meir-Steg	2::inwork 7965,14207 7973,14195 7972,14185 --- Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX hier ist ein Zirkus (?), bleibt das dauerhaft --- #: last_checked: 2020-02-22 --- Weg an der Trabrennbahn: gesperrt	2 18671,8092 18744,8121
 # 
-# REMOVED --- #: next_check_id: PLANCK-2025
-# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
-# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
-# REMOVED --- #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
-# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/11167-admiralspalast-umbau-und-erweiterung-in-bau/?postID=744785#post744785 (Neubau der Planckstraße, bis IV. Quartal 2024)
-# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-am-admiralspalast-planckstra%C3%9Fe.866/post-23402
-# REMOVED --- #: XXX wann sind die Bauarbeiten beendet?
-# REMOVED --- #: osm_watch: note 3954448 9
-# REMOVED --- #: osm_watch: way id="195397561" version="20"
-# REMOVED --- #: last_checked: 2025-06-13
-# REMOVED --- #: check_frequency: 30d
-# REMOVED --- # REMOVED --- #: check_frequency: 45d
-# REMOVED --- # REMOVED --- #: next_check: 2024-12-31
-# REMOVED --- Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670 9435,12698 9429,12728 9402,12792 9386,12833 9375,12911
-# REMOVED --- # REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
+#: next_check_id: PLANCK-2025
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
+#: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
+#: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
+#: by: https://www.deutsches-architekturforum.de/thread/11167-admiralspalast-umbau-und-erweiterung-in-bau/?postID=744785#post744785 (Neubau der Planckstraße, bis IV. Quartal 2024)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-am-admiralspalast-planckstra%C3%9Fe.866/post-23402
+#: XXX wann sind die Bauarbeiten beendet?
+#: osm_watch: note 3954448 9
+#: osm_watch: way id="195397561" version="20"
+#: last_checked: 2025-07-03
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 45d
+# REMOVED --- #: next_check: 2024-12-31
+Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9441,12670 9435,12698 9429,12728 9402,12792 9386,12833 9375,12911
+# REMOVED --- #: check_frequency: 14d --- Planckstr.: Hochbauarbeiten, Fahrbahn gesperrt	1s:q4:inwork 9386,12833 9402,12792 9429,12728
 # 
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10973,12611 10951,12637
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- Tor	BNP:5 14692,10867
@@ -5532,7 +5538,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="43"
 #: also_indoor: traffic
-#: last_checked: 2025-06-30 (osm) vvv
+#: last_checked: 2025-07-03 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
@@ -5574,35 +5580,11 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 # REMOVED --- #: next_check_id: ADELESCHREIBERKRIEGER-2014 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021) --- #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/DBT/MELHErweiterung/melherweiterung.html (Fertigstellung bis III. Quartal 2021) --- #: by: https://www.berliner-woche.de/mitte/c-bauen/neubau-fuer-bundestag-soll-zum-jahresende-fertig-sein_a298094 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig) --- #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere) --- #: osm_watch: way id="158025179" version="11" --- #: last_checked: 2023-08-09 (mapillary, offen) --- #: check_frequency: 45d --- #: next_check: 2023-04-13 --- #: also_indoor: traffic (ex-G) --- Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8735,12780 8589,12772
 # REMOVED (wieder offen) --- #: also_indoor: traffic (G) --- Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
 # 
-#: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
-#: by: http://www.carsten-schatz.de/fileadmin/linksfraktion/ka/2015/S17-16825.pdf (kleine Anfrage)
-#: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf
-#: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: I/2019 bis IV/2019)
-#: by: https://www.welt.de/print/die_welt/debatte/article206334255/Platz-der-Republik-Ganz-grosser-Kaese.html (Baubeginn 2022?)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27501.pdf (Erwähnung; bis 2030)
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/loewenbruecke/ ("Voraussichtliche Bauzeit: noch in Planung") (Stand Juni 2023: weiterhin "noch in Planung")
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/loewenbruecke/ (geänderte URL)
-#: by: https://www.bz-berlin.de/berlin/mitte/berlin-bekommt-seine-loewenbruecke-wieder (Bauarbeiten voraussichtlich ab Sommer 2023 + 15 Monate Bauzeit)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1361549.php (Fertigstellung Ende 2024)
-#: by: https://www.berliner-woche.de/tiergarten/c-bauen/loewenbruecke-wird-bis-ende-2024-wieder-aufgebaut_a394430
-#: by: https://www.deutsches-architekturforum.de/thread/6927-rund-um-die-siegess%C3%A4ule-gro%C3%9Fer-tiergarten/?postID=763239#post763239 (Fertigstellung Q1 2025)
-#: by: https://www.morgenpost.de/bezirke/mitte/article407169185/neubau-der-loewenbruecke-im-tiergarten-endlich-gehtE28098s-voran.html (bis Anfang 2025)
-#: XXX: laut Baustellenschild bis II. Quartal 2025
-#: also_indoor: search Löwenbrücke Tiergarten
-#: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
-#: osm_watch: node id="245006076" version="6"
-#: osm_watch: node id="245006075" version="7"
-#: osm_watch: way id="1272587928" version="2"
-#: last_checked: 2025-06-30 (daf)
-# REMOVED --- #: check_frequency: 720d
-# REMOVED --- #: next_check: 2025-06-30 (Baustellenschild)
-Löwenbrücke: Neubau	2:inwork 6417,11796 6438,11784
-# 
 # REMOVED (-> temp blockings) --- #: last_checked: 2013-10-22 --- #: check_frequency: 540d --- Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2025-02-01 vvv
+#: last_checked: 2025-07-03 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
